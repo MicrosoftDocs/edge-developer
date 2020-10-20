@@ -3,7 +3,7 @@ description: Learn how to record heap snapshots with the Microsoft Edge DevTools
 title: How to Record Heap Snapshots
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -31,7 +31,7 @@ of your page.  Use it to take JavaScript heap \(JS heap\) snapshots, analyze mem
 
 ## Take a snapshot  
 
-On the **Memory** panel, choose **Take snapshot**, then click **Start**.  You may also press `Ctrl`+`E` \(Windows\) or `Cmd`+`E` \(macOS\).  
+On the **Memory** panel, choose **Take snapshot**, then choose **Start**.  You may also select `Ctrl`+`E` \(Windows, Linux\) or `Cmd`+`E` \(macOS\).  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="Select profiling type" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
    Select profiling type  
@@ -50,7 +50,7 @@ After the snapshot has been loaded into DevTools and has been parsed, the number
 
 ## Clear snapshots  
 
-Click **Clear all profiles** icon to remove snapshots \(both from DevTools and any memory associated with the renderer process\).  
+Choose **Clear all profiles** icon to remove snapshots \(both from DevTools and any memory associated with the renderer process\).  
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="Remove snapshots" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
    Remove snapshots  

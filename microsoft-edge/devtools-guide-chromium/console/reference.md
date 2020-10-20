@@ -3,7 +3,7 @@ description: A comprehensive reference on every feature and behavior related to 
 title: Console Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,25 +22,19 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
+# Console Reference  
 
+This page is a reference of features related to the Microsoft Edge DevTools Console.  It assumes that you are already familiar with using the Console to view logged messages and run JavaScript.  If not, navigate to [Get Started With Running JavaScript In The Console][DevToolsConsoleJavascript] and [Get Started With Logging Messages In The Console][DevToolsConsoleLog].  
 
+If you are looking for the API reference on functions like `console.log()` see [Console API Reference][DevToolsConsoleApi].  For the reference on functions like `monitorEvents()`, navigate to [Console Utilities API Reference][DevToolsConsoleUtilities].  
 
-
-# Console Reference   
-
-
-
-This page is a reference of features related to the Microsoft Edge DevTools Console.  It assumes that you are already familiar with using the Console to view logged messages and run JavaScript.  If not, see [Get Started With Running JavaScript In The Console][DevToolsConsoleJavascript] and [Get Started With Logging Messages In The Console][DevToolsConsoleLog].  
-
-If you are looking for the API reference on functions like `console.log()` see [Console API Reference][DevToolsConsoleApi].  For the reference on functions like `monitorEvents()`, see [Console Utilities API Reference][DevToolsConsoleUtilities].  
-
-## Open the Console   
+## Open the Console  
 
 You may open the Console as a [panel](#open-the-console-panel) or as a [tab in the Drawer](#open-the-console-tab-in-the-drawer).  
 
-### Open the Console panel   
+### Open the Console panel  
 
-Press `Control`+`Shift`+`J` \(Windows\) or `Command`+`Option`+`J` \(macOS\).  
+Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).  
 
 :::image type="complex" source="../media/console-hello-console.msft.png" alt-text="The Console panel" lightbox="../media/console-hello-console.msft.png":::
    The **Console** panel  
@@ -52,9 +46,9 @@ To open the Console panel from the [Command Menu][DevToolsCommandMenu], start ty
    The command to show the **Console** panel  
 :::image-end:::  
 
-### Open the Console tab in the Drawer   
+### Open the Console tab in the Drawer  
 
-Press `Escape` or click **Customize And Control DevTools** \(`...`\) and then select **Show console drawer**.  
+Select `Escape` or choose **Customize And Control DevTools** \(`...`\) and then choose **Show console drawer**.  
 
 :::image type="complex" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="Show console drawer" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
    **Show console drawer**  
@@ -72,9 +66,9 @@ To open the Console tab from the [Command Menu][DevToolsCommandMenu], start typi
    The command to show the **Console** tab in the **Drawer**  
 :::image-end:::  
 
-### Open Console Settings   
+### Open Console Settings  
 
-Click **Console Settings** \(![Console Settings][ImageSettingsButtonIcon]\).  
+Choose **Console Settings** \(![Console Settings icon][ImageSettingsButtonIcon]\).  
 
 :::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Console Settings" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **Console Settings**  
@@ -90,23 +84,23 @@ The links below explain each setting:
 *   [**Eager Evaluation**](#disable-eager-evaluation)  
 *   [**Autocomplete From History**](#disable-autocomplete-from-history)  
     
-### Open the Console Sidebar   
+### Open the Console Sidebar  
 
-Click **Show Console Sidebar** \(![Show Console Sidebar][ImageShowConsoleSidebarIcon]\) to show the Sidebar, which is useful for filtering.  
+Choose **Show Console Sidebar** \(![Show Console Sidebar][ImageShowConsoleSidebarIcon]\) to show the Sidebar, which is useful for filtering.  
 
 :::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Console Sidebar" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
    **Console** Sidebar  
 :::image-end:::  
 
-## View messages   
+## View messages  
 
 This section contains features that change how messages are presented in the Console.  See [View messages][DevToolsConsoleViewMessages] for a hands-on walkthrough.  
 
-### Disable message grouping   
+### Disable message grouping  
 
 [Open Console Settings](#open-console-settings) and disable **Group similar** to disable the default message grouping behavior of the Console.  See [Log XHR and Fetch requests](#log-xhr-and-fetch-requests) for an example.  
 
-### Log XHR and Fetch requests   
+### Log XHR and Fetch requests  
 
 [Open Console Settings](#open-console-settings) and enable **Log XMLHttpRequests** to log all `XMLHttpRequest` and `Fetch` requests to the Console as they happen.  
 
@@ -125,11 +119,11 @@ The top message in previous figure displays the default grouping behavior of the
 
 <!--todo: add example for ungrouping console items  -->  
 
-### Persist messages across page loads   
+### Persist messages across page loads  
 
 By default the Console clears whenever you load a new page.  To persist messages across page loads, [Open Console Settings](#open-console-settings) and then enable the **Preserve Log** checkbox.  
 
-### Hide network messages   
+### Hide network messages  
 
 By default the browser logs network messages to the **Console**.  In the following figure, the selected message represents an HTTP status code of `429`.  
 
@@ -141,19 +135,19 @@ To hide network messages:
 1.  [Open Console Settings](#open-console-settings).  
 1.  Enable the **Hide Network** checkbox.  
     
-## Filter messages   
+## Filter messages  
 
 There are many ways to filter out messages in the Console.  
 
-### Filter out browser messages   
+### Filter out browser messages  
 
-[Open the Console Sidebar](#open-the-console-sidebar) and click **User Messages** to only show messages that came from the JavaScript of the page.  
+[Open the Console Sidebar](#open-the-console-sidebar) and choose **User Messages** to only show messages that came from the JavaScript of the page.  
 
 :::image type="complex" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="View user messages" lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
    View user messages  
 :::image-end:::  
 
-### Filter by log level   
+### Filter by log level  
 
 DevTools assigns each `console.*` method a severity level.  There are 4 levels: `Verbose`, `Info`, `Warning`, and `Error`.  For example, `console.log()` is in the `Info` group, whereas `console.error()` is in the `Error` group.  The [Console API Reference][DevToolsConsoleApi] describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  You may hide any level of messages that you are not interested in.  For example, if you are only interested in `Error` messages, you may hide the other 3 groups.  
 
@@ -169,7 +163,7 @@ You may also filter by log level by [opening the Console Sidebar](#open-the-cons
    Use the Sidebar to view warnings  
 :::image-end:::  
 
-### Filter messages by URL   
+### Filter messages by URL  
 
 Type `url:` followed by a URL to only view messages that came from that URL.  After you type `url:` DevTools shows all relevant URLs.  Domains also work.  For example, if `https://example.com/a.js` and `https://example.com/b.js` are logging messages, `url:https://example.com` enables you to focus on the messages from these 2 scripts.  
 
@@ -189,11 +183,11 @@ You may also show messages from a single URL by [opening the Console Sidebar](#o
    View the messages that came from `wp-ad.min.js`  
 :::image-end:::  
 
-### Filter out messages from different contexts   
+### Filter out messages from different contexts  
 
 Suppose that you have an advertisement \(ad\) on your page.  The ad is embedded in an `<iframe>` and is generating a lot of messages in your Console.  Because the ad is running in a different [JavaScript context](#select-javascript-context), one way to hide the messages is to [open Console Settings](#open-console-settings) and enable the **Selected Context Only** checkbox.  
 
-### Filter out messages that do not match a regular expression pattern   
+### Filter out messages that do not match a regular expression pattern  
 
 Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** text box to filter out any messages that do not match that pattern.  DevTools checks if the pattern is found in the message text or the script that caused the message to be logged.  
 
@@ -201,23 +195,23 @@ Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** text box to
    Filter out any messages that do not match the `/[gm][ta][mi]/` regex expression  
 :::image-end:::  
 
-## Run JavaScript   
+## Run JavaScript  
 
 This section contains features related to running JavaScript in the Console.  See [Run JavaScript][DevToolsConsoleOverviewJavascript] for a hands-on walkthrough.  
 
-### Re-run expressions from history   
+### Re-run expressions from history  
 
-Press the `Up Arrow` key to cycle through the history of JavaScript expressions that you ran earlier in the Console.  Press `Enter` to run that expression again.  
+Press the `Up Arrow` key to cycle through the history of JavaScript expressions that you ran earlier in the Console.  Select `Enter` to run that expression again.  
 
-### Watch the value of an expression in real-time with Live Expressions   
+### Watch the value of an expression in real-time with Live Expressions  
 
 If you find yourself typing the same JavaScript expression in the Console repeatedly, you may find it easier to create a **Live Expression**.  With **Live Expressions** you type an expression once and then pin it to the top of your Console.  The value of the expression updates in near real-time.  See [Watch JavaScript Expression Values In Real-Time With Live Expressions][DevToolsConsoleLiveExpressions].  
 
-### Disable Eager Evaluation   
+### Disable Eager Evaluation  
 
 As you type JavaScript expressions in the Console, **Eager Evaluation** shows a preview of the return value for that expression.  [Open Console Settings](#open-console-settings) and disable the **Eager Evaluation** checkbox to turn off the return value previews.  
 
-### Disable autocomplete from history   
+### Disable autocomplete from history  
 
 As you type out an expression, the autocomplete popup window for the Console shows expressions that you ran earlier.  These expressions are prepended with the `>` character.  [Open Console Settings](#open-console-settings) and disable the **Autocomplete From History** checkbox to stop showing expressions from your history.  
 
@@ -228,7 +222,7 @@ As you type out an expression, the autocomplete popup window for the Console sho
    The autocomplete popup displays expressions from history  
 :::image-end:::  
 
-### Select JavaScript context   
+### Select JavaScript context  
 
 By default the **JavaScript Context** dropdown is set to **top**, which represents the [browsing context][MDNBrowsingContext] of the main document.  
 
@@ -242,21 +236,19 @@ Suppose you have an ad on your page embedded in an `<iframe>`.  You want to run 
    Select a different JavaScript context  
 :::image-end:::  
 
-## Clear the Console   
+## Clear the Console  
 
 You may use any of the following workflows to clear the Console:  
 
-*   Click **Clear Console** \(![Clear Console][ImageClearConsoleIcon]\).  
-*   Right-click a message and then select **Clear Console**.  
-*   Type `clear()` in the Console and then press `Enter`.  
-*   Call `console.clear()` from the JavaScript for your webpage.  
-*   Press `Control`+`L` while the Console is in focus.  
+*   Choose **Clear Console** \(![Clear Console][ImageClearConsoleIcon]\).  
+*   Right-click a message and then choose **Clear Console**.  
+*   Enter `clear()` in the Console and then select `Enter`.  
+*   Run `console.clear()` from the JavaScript for your webpage.  
+*   Select `Control`+`L` while the Console is in focus.  
     
-<!--
- 
+## Getting in touch with the Microsoft Edge DevTools team  
 
-  
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

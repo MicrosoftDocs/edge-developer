@@ -3,12 +3,11 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/05/2020
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
 ---
-
 # Experimental features  
 
 Microsoft Edge DevTools provide access to experimental features that are still in development.  You may test and [provide feedback](#providing-feedback-on-experimental-features) before each feature is released.  
@@ -20,7 +19,7 @@ While experimental features are available in all channels of Microsoft Edge, you
 To turn on \(or off\) experimental features in Microsoft Edge, use the following steps.  
 
 1.  [Open DevTools][DevtoolsOpen].  
-     *   Select `Control`+`Shift`+`I` \(Windows\) or `Command`+`Option`+`I` \(macOS\).  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
+     *   Select `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
 1.  Open the [Settings][DevToolsCustomizeSettings] pane.  
     *   Select `Shift`+`?`.  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
 1.  On the left side of the **Settings** pane, choose the **Experiments** section.  
@@ -190,7 +189,7 @@ After enabling the experiment, ensure you restart the DevTools.  To use the **Ne
 1.  Find the network request that you want to change and resend.  
 1.  Open the contextual menu \(right-click\), and choose **Edit and Replay**.  
 1.  When the **Network Console** opens, edit the network request information.  
-1.  Select **Send**.  
+1.  Choose **Send**.  
 
 :::image type="complex" source="./media/network-network-console.msft.png" alt-text="Network Console in the Console drawer" lightbox="./media/network-network-console.msft.png":::
    **Network Console** in the **Console** drawer  
