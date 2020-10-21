@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/20/2020 
+ms.date: 10/21/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -140,8 +140,8 @@ The two ways to toggle a persistent grid overlay.
     
 *   Open the new **Layout** panel located in the Elements tool, and choose the checkbox next to each Grid element you want to highlight.  
     
-    :::image type="complex" source="./media/grid-layout-zoom.msft.png" alt-text="Layout panel" lightbox="./media/grid-layout-zoom.msft.png":::
-       **Layout** panel  
+    :::image type="complex" source="./media/grid-layout-zoom.msft.png" alt-text="Layout panel in DevTools" lightbox="./media/grid-layout-zoom.msft.png":::
+       **Layout** panel in DevTools  
     :::image-end:::  
     
 #### Configuring persistent overlays  
@@ -218,9 +218,7 @@ After enabling the experiment, ensure you restart the DevTools.  To use **Source
 
 ### Enable keyboard shortcut editor
 
-With the **Enable keyboard shortcut editor** experiment turned on, you are now able to customize keyboard shortcuts for any action in the DevTools.  
-
-To customize the keyboard shortcut for a specific action, complete the following steps.
+With the **Enable keyboard shortcut editor** experiment turned on, you are now able to customize keyboard shortcuts for any action in the DevTools.  To customize the keyboard shortcut for a specific action, complete the following steps.  
 
 1.  [Open DevTools][DevtoolsOpenMain].  
 1.  Open [Settings][DevToolsCustomizeSettings].
@@ -252,7 +250,7 @@ On the **Shortcuts** page, the **Custom Keyboard Shortcut** \(![CustomKeyboardSh
 When you are editing the keyboard shortcuts for an action, to discard your changes, choose the X \(![XKeyboardShortcut][ImageXKeyboardShortcutIcon]\) icon.  To remove shortcuts for a specific action, choose the **Delete shortcut** \(![DeleteKeyboardShortcut][ImageDeleteKeyboardShortcutIcon]\) icon.  To add multiple shortcuts for an action, choose **Add a shortcut**.
 
 > [!NOTE]
-> If a keyboard shortcut is currently assigned to another action, you are not able to save it for a new action.  You must first delete the keyboard shortcut for old action and then add it to the new action that you want to customize.
+> If a keyboard shortcut is currently assigned to another action, you are not able to save it for a new action.  You must first delete the keyboard shortcut for the previous action and then add it to the new action.  
 
 ## Previous experimental features  
 

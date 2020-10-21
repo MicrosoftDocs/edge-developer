@@ -3,16 +3,14 @@ description: Match keyboard shortcuts in the DevTools to Visual Studio Code
 title: Customize keyboard shortcuts in the Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/09/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, custom, shortcuts, keyboard, visual studio code
 ---
 # Customize keyboard shortcuts in the Microsoft Edge DevTools  
 
-The **Shortcuts** page in [Settings][DevToolsCustomizeSettings] provides a list of [keyboard shortcuts in the DevTools][DevToolsShortcuts] and [features to customize the shortcuts](#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code).  
-
-To navigate to the **Shortcuts** page, complete the following steps.  
+The **Shortcuts** page in [Settings][DevToolsCustomizeSettings] provides a list of [keyboard shortcuts in the DevTools][DevToolsShortcuts] and [features to customize the shortcuts](#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code).  To navigate to the **Shortcuts** page, complete the following steps.  
 
 1.  [Open DevTools][DevtoolsOpenMain].  
 1.  Open [Settings][DevToolsCustomizeSettings].
@@ -34,7 +32,7 @@ To match the keyboard shortcuts in the Microsoft Edge DevTools for equivalent ac
        Match keyboard shortcuts in the DevTools to Visual Studio Code  
     :::image-end:::  
     
-For example, to pause or continue running a script in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows], you select `F5`.  With the **DevTools (Default)** preset, to pause or continue running a script, you select `F8`.  With the **Visual Studio Code** preset, you now also select `F5`, just like in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows].  
+For example, to pause or continue running a script in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows], you select `F5`.  With the **DevTools (Default)** preset, to pause or continue running a script, you select `F8`.  When you change the preset to **Visual Studio Code**, you now also select `F5`, just like in [Visual Studio Code][VisualStudioCodeShortcutsKeyboardWindows].  
 
 <!-- ## Edit shortcuts for any action in the DevTools -->
 

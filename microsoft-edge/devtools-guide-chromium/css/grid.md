@@ -3,7 +3,7 @@ description: Learn how to use Microsoft Edge DevTools to view and change the CSS
 title: Inspect CSS Grid in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/09/2020 
+ms.date: 10/21/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -11,9 +11,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Inspect CSS Grid  
 
-This article walks you through CSS grids on a webpage, examining them and debugging layout issues in the **Elements** panel of Microsoft Edge DevTools.  
+When you developing your website, you may use CSS grids to layout your HTML elements.  Webpages use CSS grids by applying `display: grid` or `display: inline-grid`. For more information, navigate to [CSS Grid Layout][MdnCssGridLayout].  This article walks you through finding CSS grids, debugging layout issues, overlay display settings, and grid overlays.  
 
-The examples used in the figures in this article are from the following two webpages.  
+The examples used in the figures in this article are taken from the following webpages.  
 
 *   [Fruit box][JecFyiDemoCssGridFruit]  
 *   [Snack box][JecFyiDemoCssGridSnack]  
@@ -37,74 +37,35 @@ Open the **Layout** pane.  When grids are included on a page, the **Layout** pan
 :::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="Layout pane" lightbox="../media/grid-layout-pane.msft.png":::
    **Layout** pane  
 :::image-end:::  
- 
 
-The **Grid** section in the **Layout** pane contains 2 sub sections:  
+The **Grid** section in the **Layout** pane contains the following 2 sub-sections.  
 
 *   Overlay display settings  
 *   Grid overlays  
 
-Verify the details for each of the sub-sections.  
+<!--  Verify the details for each of the sub-sections.  -->  
 
 ## Overlay display settings  
 
-The **Overlay display settings** consists of 2 parts:  
+The **Overlay display settings** consists of following 2 parts.  
 
-1.  A dropdown menu with options within:  
+*   Choose one of the following options from the dropdown menu.  
     
-    :::row:::
-       :::column span="":::
-          **Hide line labels**  
-       :::column-end:::
-       :::column span="":::
-          Hide the line labels for each grid overlay.  
-       :::column-end:::
-    :::row-end:::  
-    :::row:::
-       :::column span="":::
-          **Show lines number**  
-       :::column-end:::
-       :::column span="":::
-          Display the line numbers for each grid overlay \(selected by default\).  
-       :::column-end:::
-    :::row-end:::  
-    :::row:::
-       :::column span="":::
-          **Show line names**  
-       :::column-end:::
-       :::column span="":::
-          Display the line names for each grid overlay in the case of grids with line names.  
-       :::column-end:::
-    :::row-end:::  
+    | Line option | Details |  
+    |:--- |:--- |  
+    | **Hide line labels** | Hide the labels of the lines for each grid overlay. |  
+    | **Show line numbers** | Display the numbers of the lines for each grid overlay \(selected by default\). |  
+    | **Show line names** | Display the names of the lines for each grid overlay when names are provided. |  
     
-1.  Checkboxes with options within:  
+*  Choose the checkbox next the following options.  
     
-    :::row:::
-       :::column span="":::
-          **Show track sizes**  
-       :::column-end:::
-       :::column span="":::
-          Toggle to display or hide track sizes.  
-       :::column-end:::
-    :::row-end:::  
-    :::row:::
-       :::column span="":::
-          **Show area names**  
-       :::column-end:::
-       :::column span="":::
-          Toggle to display or hide area names, in the case of grids with named grid areas.  
-       :::column-end:::
-    :::row-end:::  
-    :::row:::
-       :::column span="":::
-          **Extend grid lines**  
-       :::column-end:::
-       :::column span="":::
-          By default, grid lines are only shown inside the element with `display: grid` or `display: inline-grid` set on it; when toggling the option on, the grid lines extend to the edge of the viewport along each axis.  
-       :::column-end:::
-    :::row-end:::  
+    | Option | Details |  
+    |:--- |:--- |  
+    | **Show track sizes**  | Display \(or hide\) the sizes of the tracks. |  
+    | **Show area names** | Display \(or hide\) the names of the area, when names are provided. |  
+    | **Extend grid lines** | Displays \(or hides\) the extensions of the grid dimensions along each axis.  By default, grid lines are only shown inside the element with `display: grid` or `display: inline-grid` set on it. |  
     
-Examine the settings in more detail.  
+The following sections provide details for each of the **Overlay display settings**.  
 
 ### Show line numbers  
 
@@ -126,7 +87,7 @@ Select **Hide line labels** to hide the line numbers.
 
 Select **Show line names** to view the line names instead of numbers.  In the example, 4 lines have names: `left`, `middle1`, `middle2`, and `right`.  
 
-In the demo, **orange** element spans from left to right, with CSS `grid-column: left / right`.  Showing line names make it easier to visualize the start and end position of the element.  
+In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  
 
 :::image type="complex" source="../media/grid-show-line-names.msft.png" alt-text="Show line names" lightbox="../media/grid-show-line-names.msft.png":::
    **Show line names**  
@@ -171,7 +132,7 @@ The row line labels display only computed sizes, since there are no row sizes de
 
 ### Show area names  
 
-To view the area names, enable the **Show area names** checkbox.  In the example, there are 3 areas in the grid - **top**, **bottom1** and **bottom2**.  
+To view the area names, enable the **Show area names** checkbox.  In the example, there are 3 areas in the grid: **top**, **bottom1** and **bottom2**.  
 
 :::image type="complex" source="../media/grid-show-area-names.msft.png" alt-text="Show area names" lightbox="../media/grid-show-area-names.msft.png":::
    **Show area names**  
@@ -191,7 +152,7 @@ The **Grid overlays** section contains a list of grids that are present on the p
 
 ### Enable overlay views of multiple grids  
 
-Enable overlay views of multiple grids.  In the example, there are 2 grid overlays enabled that are each represented with different colors.  
+To display the overlay grid for multiple grids, choose the checkbox next to each name of the grid.  In the example, there are 2 grid overlays enabled that are each represented with different colors.  
 
 *   `main`  
 *   `div.snack-box`  
@@ -202,7 +163,7 @@ Enable overlay views of multiple grids.  In the example, there are 2 grid overla
 
 ### Customize the grid overlay color  
 
-To customize each grid overlay color, select the color picker.  
+To open the color picker and customize the grid overlay color, choose the box next to the name of the grid overlay.  
 
 :::image type="complex" source="../media/grid-grid-overlays-color.msft.png" alt-text="Customize the grid overlay color" lightbox="../media/grid-grid-overlays-color.msft.png":::
    Customize the grid overlay color  
@@ -210,7 +171,7 @@ To customize each grid overlay color, select the color picker.
 
 ### Highlight the grid  
 
-Select the highlight icon to immediately highlight the HTML element, scroll to it in the page and select it in the **Elements** panel.  
+To highlight the HTML element in the **Elements** panel and scroll to it on the webpage, choose the **Show element in the Elements panel** \(![Show element in the Elements panel icon][ImageShowElementInElementsPanelIcon]\) icon.  
 
 :::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Highlight the grid" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
    Highlight the grid  
@@ -220,12 +181,18 @@ Select the highlight icon to immediately highlight the HTML element, scroll to i
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
+<!-- image links -->  
+
+[ImageShowElementInElementsPanelIcon]: ../media/show-element-in-element-panel-icon.msft.png  
+
 <!-- links -->  
 
 [DevtoolsGuideChromiumOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
 [JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "CSS grid | jec.fyi"  
 [JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "CSS grid | jec.fyi"  
+
+[MdnCssGridLayout]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout "CSS Grid Layout | MDN"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

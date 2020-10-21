@@ -3,7 +3,7 @@ description: Emulate Authenticators and Debug WebAuthn in Microsoft Edge DevTool
 title: Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/16/2020 
+ms.date: 10/21/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -54,7 +54,9 @@ The **Authenticator** section includes a **Credentials** table.  The table is em
 
 ### Register a new credential  
 
-1.  On the demo website, choose **Register new credential** to register a new credential.  
+To register a new credential, complete the following steps.
+
+1.  On the demo website, choose **Register new credential**.  
 1.  A new credential is now added to the **Credentials** table in the WebAuthn tab.  
     
     :::image type="complex" source="../media/webauthn-view-cred.msft.png" alt-text="View credentials" lightbox="../media/webauthn-view-cred.msft.png":::
@@ -73,7 +75,9 @@ To export or remove a credential, choose the **Export** or **Remove** button.
 
 ## Rename an authenticator  
 
-1.  To rename an authenticator, next to the authenticator name, choose the **Edit** button.  
+To rename an authenticator, complete the following steps.  
+
+1.  Next to the authenticator name, choose the **Edit** button.  
 1.  Edit the name, then choose **Enter** to save the changes.  
 
 :::image type="complex" source="../media/webauthn-rename.msft.png" alt-text="Rename an authenticator" lightbox="../media/webauthn-rename.msft.png":::
@@ -82,7 +86,7 @@ To export or remove a credential, choose the **Export** or **Remove** button.
 
 ## Set the active authenticator  
 
-A newly created authenticator is automatically activated.  DevTools supports only one active virtual authenticator at any point of time.  
+A newly created authenticator is automatically activated.  DevTools supports only one active virtual authenticator at any point of time.  If you remove the active authenticator, another authenticator is not automatically activated.  To use another virtual authenticator, choose the **Active** radio button next to the authenticator.  
 
 > [!NOTE]
 > If you remove the currently active authenticator, another authenticator that you added is not automatically activated.  To continue using virtual authenticators, next to the authenticator, choose the **Active** radio button.  
