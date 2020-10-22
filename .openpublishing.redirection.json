@@ -752,7 +752,467 @@
     },
     {
       "source_path": "microsoft-edge/hosting/webview2/reference/icorewebview2.md",
-      "redirect_url": "/microsoft-edge/webview2/reference/win32/0-9-488/icorewebview2",
+      "redirect_url": "/microsoft-edge/webview2/reference/win32/icorewebview2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515-reference-webview2.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538-reference-webview2.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628-reference-webview2.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/namespace-microsoft-web-webview2-core.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/namespace-microsoft-web-webview2-core.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/namespace-microsoft-web-webview2-core.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2acceleratorkeypressedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2contentloadingeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2contentloadingeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2controller.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2controller",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2deferral.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2deferral",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceivedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceivedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceiver.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceiver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2environment.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2environmentoptions.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2movefocusrequestedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2movefocusrequestedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2navigationcompletedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2navigationcompletedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2navigationstartingeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2navigationstartingeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2newwindowrequestedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2newwindowrequestedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2permissionrequestedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2physicalkeystatus.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2physicalkeystatus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2processfailedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2scriptdialogopeningeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2scriptdialogopeningeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2settings.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2sourcechangedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2sourcechangedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webmessagereceivedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515/microsoft-web-webview2-core-edgenotfoundexception.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.edgenotfoundexception",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2acceleratorkeypressedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2compositioncontroller.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2contentloadingeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2contentloadingeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2controller.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2controller",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2deferral.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2deferral",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceivedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceivedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceiver.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceiver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environment.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2environmentoptions.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2matrix4x4.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2matrix4x4",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2movefocusrequestedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2movefocusrequestedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2navigationcompletedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2navigationcompletedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2navigationstartingeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2navigationstartingeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2newwindowrequestedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2newwindowrequestedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2permissionrequestedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2physicalkeystatus.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2physicalkeystatus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2pointerinfo.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2pointerinfo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2processfailedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2scriptdialogopeningeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2scriptdialogopeningeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2settings.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2sourcechangedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2sourcechangedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webmessagereceivedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2webresourceresponsereceivedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponsereceivedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2windowfeatures.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2windowfeatures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-edgenotfoundexception.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.edgenotfoundexception",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2acceleratorkeypressedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2compositioncontroller.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2contentloadingeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2contentloadingeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2controller.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2controller",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2deferral.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2deferral",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceivedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceivedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2devtoolsprotocoleventreceiver.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceiver",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environment.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2environmentoptions.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2httpheaderscollectioniterator.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2httpheaderscollectioniterator",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2httprequestheaders.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2httprequestheaders",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2httpresponseheaders.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2httpresponseheaders",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2matrix4x4.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2matrix4x4",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2movefocusrequestedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2movefocusrequestedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2navigationcompletedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2navigationcompletedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2navigationstartingeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2navigationstartingeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2newwindowrequestedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2newwindowrequestedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2permissionrequestedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2physicalkeystatus.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2physicalkeystatus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2pointerinfo.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2pointerinfo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2processfailedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2scriptdialogopeningeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2scriptdialogopeningeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2settings.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2sourcechangedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2sourcechangedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2webmessagereceivedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webmessagereceivedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2webresourcerequest.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2webresourcerequestedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2webresourceresponse.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2webresourceresponsereceivedeventargs.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponsereceivedeventargs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-corewebview2windowfeatures.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.corewebview2windowfeatures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-628/microsoft-web-webview2-core-edgenotfoundexception.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.core.edgenotfoundexception",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/winforms/0-9-515-reference-webview2.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.winforms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/winforms/0-9-515/microsoft-web-webview2-winforms-webview2.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.winforms.webview2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/wpf/0-9-515-reference-webview2.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.wpf",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/wpf/0-9-515/microsoft-web-webview2-wpf-corewebview2creationproperties.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/webview2/reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md",
+      "redirect_url": "/dotnet/api/microsoft.web.webview2.wpf.webview2",
       "redirect_document_id": false
     },
     {
