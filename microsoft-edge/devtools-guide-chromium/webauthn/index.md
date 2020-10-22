@@ -3,7 +3,7 @@ description: Emulate Authenticators and Debug WebAuthn in Microsoft Edge DevTool
 title: Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/21/2020 
+ms.date: 10/22/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -11,11 +11,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools  
 
-Use the **WebAuthn** tool in Microsoft Edge DevTools to create and interact with software-based virtual authenticators.  
+Instead of debugging the Web Authentication of your website or app with physical authenticators, use the **WebAuthn** tool in Microsoft Edge DevTools to create and interact with software-based virtual authenticators.  
 
 ## Before you begin  
 
-A great place to get started with Web Authentication is the [Web Authentication API][GithubW3cWebauthn] specification.  
+A great place to get started with Web Authentication is the [Web Authentication API specification][GithubW3cWebauthn].  
 
 ## Set up the WebAuthn tool  
 
@@ -38,7 +38,15 @@ A great place to get started with Web Authentication is the [Web Authentication 
         **Enable virtual authenticator environment**  
     :::image-end:::  
     
-1.  In the **New authenticator** section, configure the options.  <!--todo @zoher which options - MDN?  -->  
+1.  In the **New authenticator** section, configure the following options.  
+    
+    | Option | Value | Details |  
+    |:--- |:--- |:--- |  
+    | `Protocol` | [ctap2][FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml] or [u2f][FidoallianceSpecsU2fV12Ps20170411OverviewHtml] | The protocol the virtual authenticator uses for encoding and decoding |  
+    | `Transport` |   `usb`, `nfc`, `ble`, or `internal` | The virtual authenticator simulates the selected transport for communicating with clients in order to obtain an assertion for a specific credential.  For more information, navigate to [Authenticator Transport Enumeration][GithubW3cWebauthnEnumTransport] |  
+    |  `Supports resident keys` | Turn on \(or off\) using the checkbox | Turn on if your web app relies on resident keys \(also known as client-side discoverable credentials\).  For more information, navigate to [Resident Key Requirement Enumeration][GithubW3cWebauthnEnumResidentkeyrequirement]. |  
+    | `Supports user verification` | Turn on \(or off\) using the checkbox | Turn on if your web app relies on local authorization using gesture modalities like touch plus pin code, password entry, or biometric recognition.  For more information, navigate to [User Verification][GithubW3cWebauthnEnumUserverification] |  
+    
 1.  Choose the **Add** button.  
 1.  A new section of your newly created authenticator is displayed.  
     
@@ -54,7 +62,7 @@ The **Authenticator** section includes a **Credentials** table.  The table is em
 
 ## Register a new credential  
 
-To register a new credential, complete the following steps.  <!--todo @zoher steps - MDN?  -->  
+To register a new credential, complete the following steps.  For more information about what the [Web Authentication API][GithubW3cWebauthn] is doing when registering a new credential, navigate to [Create a New Credential][GithubW3cWebauthnSctnCreatecredential].  
 
 1.  On the demo website, choose **Register new credential**.  
 1.  A new credential is now added to the **Credentials** table in the WebAuthn tool.  
@@ -63,7 +71,8 @@ To register a new credential, complete the following steps.  <!--todo @zoher ste
        View credentials  
     :::image-end:::  
     
-On the demo website, choose the **Authenticate** button.  Verify that the **Sign Count** of the credential in the **Credentials** table increased by 1, which displays the number of times the authentication is requested.  <!--todo @zoher sign count - MDN?  -->  
+On the demo website, choose the **Authenticate** button.  Verify that the [Sign Count](https://w3c.github.io/webauthn/#sctn-sign-counter) of the credential in the Credentials table increased by 1, which marks a successful [authenticatorGetAssertion](https://w3c.github.io/webauthn/#authenticatorgetassertion) operation.  
+On the demo website, choose the **Authenticate** button.  Verify that the [Sign Count][GithubW3cWebauthnSctnSignCounter] of the credential in the **Credentials** table increased by 1, which marks a successful [authenticatorGetAssertion][GithubW3cWebauthnAuthenticatorgetassertion] operation.  
 
 ## Export and remove credentials  
 
@@ -115,7 +124,30 @@ To remove a virtual authenticator, next to the authenticator, choose the **Remov
 
 [AppspotWebauthndemo]: https://webauthndemo.appspot.com "Webauthn demo | Appspot"  
 
-[GithubW3cWebauthn]: https://w3c.github.io/webauthn "Web Authentication | GitHub"  
+[FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml]: https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html "Client to Authenticator Protocol (CTAP) | fido alliance"  
+[FidoallianceSpecsU2fV12Ps20170411OverviewHtml]: https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-u2f-overview-v1.2-ps-20170411.html "Universal 2nd Factor (U2F) Overview | fido alliance"  
+
+[GithubW3cWebauthn]: https://w3c.github.io/webauthn "Web Authentication:
+An API for accessing Public Key Credentials
+Level 2 | GitHub"  
+[GithubW3cWebauthnAuthenticatorgetassertion]: https://w3c.github.io/webauthn#authenticatorgetassertion "The authenticatorGetAssertion Operation - Web Authentication:
+An API for accessing Public Key Credentials
+Level 2 | GitHub"  
+[GithubW3cWebauthnEnumTransport]: https://w3c.github.io/webauthn#enum-transport "Authenticator Transport Enumeration (enum AuthenticatorTransport) - Web Authentication:
+An API for accessing Public Key Credentials
+Level 2 | W3C"  
+[GithubW3cWebauthnEnumResidentkeyrequirement]: https://w3c.github.io/webauthn#enum-residentKeyRequirement "Resident Key Requirement Enumeration (enum ResidentKeyRequirement) - Web Authentication:
+An API for accessing Public Key Credentials
+Level 2 | W3C"  
+[GithubW3cWebauthnEnumUserverification]: https://w3c.github.io/webauthn#user-verification "User Verification - Web Authentication:
+An API for accessing Public Key Credentials
+Level 2 | W3C"  
+[GithubW3cWebauthnSctnCreatecredential]: https://w3c.github.io/webauthn#sctn-createCredential "Create a New Credential - PublicKeyCredential's [[Create]](origin, options, sameOriginWithAncestors) Method - Web Authentication:
+An API for accessing Public Key Credentials
+Level 2 | GitHub"  
+[GithubW3cWebauthnSctnSignCounter]: https://w3c.github.io/webauthn/#sctn-sign-counter "Signature Counter Considerations - Web Authentication:
+An API for accessing Public Key Credentials
+Level 2 | GitHub"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

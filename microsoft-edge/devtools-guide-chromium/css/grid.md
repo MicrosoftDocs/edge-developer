@@ -3,7 +3,7 @@ description: Learn how to use Microsoft Edge DevTools to view and change the CSS
 title: Inspect CSS Grid in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/21/2020 
+ms.date: 10/22/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Inspect CSS Grid  
 
-When you developing your website, you may use CSS grids to layout your HTML elements.  Webpages use CSS grids by applying `display: grid` or `display: inline-grid` CSS. For more information, navigate to [CSS Grid Layout][MdnCssGridLayout].  This article walks you through finding CSS grids, debugging layout issues, overlay display settings, and grid overlays.  
+When you developing your website, you may use CSS grids to layout your HTML elements.  Webpages use CSS grids by applying `display: grid` or `display: inline-grid` CSS. For more information, navigate to [CSS Grid Layout][MdnCssGridLayout].  This article walks you through identifying CSS grids on a website and debugging grid layout issues using customizable grid overlays.  
 
 The examples used in the figures in this article are taken from the following webpages.  
 
@@ -20,8 +20,7 @@ The examples used in the figures in this article are taken from the following we
 
 ## Before you begin  
 
-<!--todo: @zoher and @rachel verify and clean-up please -->  
-A great place to get started with CSS grids is the [][] article.  
+CSS Grid is a powerful layout paradigm for the web.  A great place to get started learning about CSS Grid and the many features is the [MDN CSS Grid Layout guide][MdnCssGridLayout].  
 
 ## Discover CSS grids  
 
@@ -76,8 +75,7 @@ The following sections provide details for each of the **Overlay display setting
 
 By default, the positive and negative line numbers are displayed on the grid overlay.  
 
-<!--todo: @rachel verify the link and text for negative -->  
-For more information about counting backwards \(negative numbers\) in the grid overlay, navigate to [Line-based placement with CSS Grid][MdnLineBasedPlacementCssGrid].  
+For more information about negative numbers in the grid overlay, navigate to [Line-based placement with CSS Grid][MdnLineBasedPlacementCssGrid].  
 
 :::image type="complex" source="../media/grid-show-line-numbers.msft.png" alt-text="Display line numbers" lightbox="../media/grid-show-line-numbers.msft.png":::
    Display line numbers  
@@ -106,11 +104,9 @@ In the demo, **orange** element spans from left to right, with `grid-column: lef
 
 ### Show track sizes  
 
-<!--todo: @rachel link and text for track size -->  
-
 Enable the **Show track sizes** checkbox to view the track sizes of the grid.  
 
-DevTools displays `[authored size]` and `[computed size]` \(\#fr &#x2022; \#\#px\) in each line label.  
+DevTools displays `[authored size]` and `[computed size]` in each line label.  
 
 | Size | Details |  
 |:--- |:--- |  
