@@ -3,7 +3,7 @@ description: New CSS Grid debugging tools, Webauthn tool, moveable tools, and Co
 title: What's new in DevTools (Microsoft Edge 87)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/21/2020
+ms.date: 10/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -87,13 +87,13 @@ The Microsoft Edge DevTools now support the following features for inspecting, v
 *   To enable persistent grid overlays, choose the grid icon next to a grid container element in the **Elements** tool or choose the grid in the **Layout** tool.  
 *   You may enable persistent overlays for multiple grids.  
 *   The new **Layout** tool allows you to easily toggle grid overlays and configure the appearance and the content for each.  
-
+    
 To review the history of this feature in the Chromium open-source project, navigate to Issue [#1047356][CR1047356].  The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new flexbox tooling features to DevTools.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1136394][CR1136394].  
-    
-    :::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Layout tool with grids" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
-       **Layout** tool with grids  
-    :::image-end:::  
-    
+
+:::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Layout tool with grids" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
+   **Layout** tool with grids  
+:::image-end:::  
+
 ## Customize keyboard shortcuts in Settings  
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature":::
