@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 10/21/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -25,7 +25,7 @@ To turn on \(or off\) experimental features in Microsoft Edge, use the following
 1.  On the left side of the **Settings** pane, choose the **Experiments** section.  
     
     :::image type="complex" source="./media/experiments-devtools.msft.png" alt-text="List of experiments in DevTools Settings" lightbox="./media/experiments-devtools.msft.png":::
-       List of experiments in DevTools Settings  
+       List of experiments in DevTools **Settings**  
     :::image-end:::  
     
 1.  On the **Experiments** page, scroll through the list of all available experimental features and choose the checkbox next to each feature that you want to test.  
@@ -46,6 +46,7 @@ The following sections describe the new experimental features that are available
 | [Enable webhint](#enable-webhint) | 85 or later |  
 | [Enable Network Console](#enable-network-console) | 85 or later |  
 | [Source Order Viewer](#source-order-viewer) | 86 or later |  
+| [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor) | 87 or later |  
 
 ### Emulation: Support dual screen mode  
 
@@ -86,7 +87,7 @@ To use the [CSS media screen-spanning feature][DualScreenDocsCssMedia] and [Java
 
 When you emulate the [Surface Duo][SurfaceDevicesDuo] in a dual-screen posture in Microsoft Edge, the seam \(the space between the two screens\) is drawn over your website or app.  
 
-The emulated display matches the way your website \(or app\) renders in the [Microsoft Edge Android app][GooglePlayMicrosoftEdge] on [Surface Duo][SurfaceDevicesDuo].  You may have to update your website \(or app\) to display better along the seam.  For more information about adapting your website \(or app\) to the seam, navigate to [How to work with the seam][DualScreenIntroductionHowWorkSeam] in the Surface Duo documentation.  
+The emulated display matches the way your website \(or app\) renders in the [Microsoft Edge Android app][GooglePlayMicrosoftEdge] running on [Surface Duo][SurfaceDevicesDuo].  You may have to update your website \(or app\) to display better along the seam.  For more information about adapting your website \(or app\) to the seam, navigate to [How to work with the seam][DualScreenIntroductionHowWorkSeam].  
 
 The [Device Toolbar][DevtoolsDeviceModeIndexSimulateMobileViewport] has additional features to help you test your website or app in multiple postures and orientations.  Choose **Rotate** \(![Rotate][ImageRotateIcon]\) to rotate the viewport to landscape orientation. Combine the feature with **Span** \(![Span][ImageSpanIcon]\) to toggle between single-screen or folded and dual-screen or unfolded postures.  Together, the features enable testing your website or app in all four possible postures and orientations.  
 
@@ -99,7 +100,8 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 <!-- Commenting out until the icon issue is fixed in Edge Canary
 The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, either choose the icon or navigate to `edge://flags` and toggle the flag.   -->  
 
-Here are additional resources that may help you enhance your website \(or app\) for dual-screen devices:
+Here are additional resources that may help you enhance your website \(or app\) for dual-screen devices.  
+
 *   For more information about web development on dual-screen devices, navigate to [Dual-screen web experiences][DualScreenWebIndex].  
 *   Install the [Surface Duo emulator][DualScreenAndroidUseEmulator].  It is different from the emulator in Microsoft Edge, emulates the Surface Duo running Android, and integrates with [Android Studio][AndroidDeveloperStudio].  For more information, navigate to [Get the Surface Duo SDK][DualScreenAndroidGetDuoSdk].  
 
@@ -110,7 +112,7 @@ Here are additional resources that may help you enhance your website \(or app\) 
 
 ### Enable new CSS grid debugging features  
 
-This experimental feature provides a number of new visualizations to help you debug CSS grid layouts.  To preview the latest experimental features, [enable this experiment](#turn-on-experimental-features) and reload DevTools.  This experiment is on by default in Edge 87 and later.  
+This experimental feature provides a number of new visualizations to help you debug CSS grid layouts.  To preview the latest experimental features, [enable this experiment](#turn-on-experimental-features) and reload DevTools.  This experiment is on by default in Microsoft Edge version 87 or later.  
 
 #### Viewing on-hover grid overlays with the Inspect tool  
 
@@ -122,29 +124,29 @@ The **Inspect** tool provides a quick way to identify and visualize CSS Grid lay
 
 #### Viewing persistent grid overlays  
 
-In Edge 86 and later, the experimental CSS grid feature also offers the option to enable persistent Grid overlays.  The persistent overlays provide several benefits.  
+In Microsoft Edge version 86 or later, the experimental CSS grid feature also offers the option to enable persistent Grid overlays.  The persistent overlays provide several benefits.  
 
 *   The persistent overlays remain visible on the page as you scroll, move your mouse, and use other features of the DevTools.  
-*   Multiple persistent overlays can be enabled at the same time, allowing you to review numerous grid layouts at once.  
-*   Persistent overlays offer many configuration options, such as hiding or showing grid area names, grid gaps, track sizes, and more.  
+*   Multiple persistent overlays can be enabled at the same time, allowing you to review several grid layouts at once.  
+*   Persistent overlays offer many configuration options, such as hiding or showing names in the grid area, grid gaps, track sizes, and so on.  
 
 The two ways to toggle a persistent grid overlay.  
 
-*   Choose the **Grid** lozenge next to any Grid element shown in the DOM tree of the **Elements** tool.  
+*   Choose the **Grid** oval icon next to any Grid element shown in the DOM tree of the **Elements** tool.  
     
-    :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="Grid lozenge in Elements tool" lightbox="./media/grid-adorner.msft.png":::
-       Grid lozenge in Elements tool  
+    :::image type="complex" source="./media/grid-adorner.msft.png" alt-text="Grid oval icon in Elements tool" lightbox="./media/grid-adorner.msft.png":::
+       Grid oval icon in **Elements** tool  
     :::image-end:::  
     
 *   Open the new **Layout** panel located in the Elements tool, and choose the checkbox next to each Grid element you want to highlight.  
     
-    :::image type="complex" source="./media/grid-layout-zoom.msft.png" alt-text="Layout panel" lightbox="./media/grid-layout-zoom.msft.png":::
-       Layout panel  
+    :::image type="complex" source="./media/grid-layout-zoom.msft.png" alt-text="Layout panel in DevTools" lightbox="./media/grid-layout-zoom.msft.png":::
+       **Layout** panel in DevTools  
     :::image-end:::  
     
 #### Configuring persistent overlays  
 
-The new **Layout** panel, located in the **Elements** tool alongside the **Styles** and **Computed** tabs in Edge 86 and later, surfaces configuration options for persistent overlays.  
+In Microsoft Edge version 86 or later, the new **Layout** panel is located in the **Elements** tool alongside the **Styles** and **Computed** tabs.  The **Layout** panel surfaces configuration options for persistent overlays.  
 
 :::image type="complex" source="./media/experiments-grid.msft.png" alt-text="CSS grid debugging feature" lightbox="./media/experiments-grid.msft.png":::
    CSS grid debugging feature  
@@ -171,7 +173,7 @@ Normally, tools such as **Elements** and **Network** may only open in the main p
 *   PWAs  
 *   other common web development issues  
 
-The [webhint][WebhintMain] experiment displays the webhint feedback in the [Issues][DevtoolsIssues] panel.  Select an issue to display solution documentation and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.  
+The [webhint][WebhintMain] experiment displays the webhint feedback in the [Issues][DevtoolsIssues] panel.  Choose an issue to display solution documentation and a list of the affected resources on your website.  Choose a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.  
 
 :::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel" lightbox="./media/experiments-webhint.msft.png":::
    webhint feedback in the **Issues** panel  
@@ -205,7 +207,7 @@ After enabling the experiment, ensure you restart the DevTools.  To use **Source
 
 1.  Open the **Elements** pane.  
 1.  Open the **Accessibility** pane in the drawer \(bottom\) panel.  
-1.  Under the **Source Order Viewer** section, select the **Show Source Order** checkbox.  
+1.  Under the **Source Order Viewer** section, choose the **Show Source Order** checkbox.  
 1.  Highlight any HTML element to display an overlay that the order in the page source.  
 
 :::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="./media/experiments-source-order-viewer.msft.png":::
@@ -213,6 +215,42 @@ After enabling the experiment, ensure you restart the DevTools.  To use **Source
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
+
+### Enable keyboard shortcut editor
+
+With the **Enable keyboard shortcut editor** experiment turned on, you are now able to customize keyboard shortcuts for any action in the DevTools.  To customize the keyboard shortcut for a specific action, complete the following steps.  
+
+1.  [Open DevTools][DevtoolsOpenMain].  
+1.  Open [Settings][DevToolsCustomizeSettings].
+    *   Select `Shift`+`?`.  
+1.  Navigate to the **Shortcuts** page.  
+1.  Choose the action you want to customize.  
+1.  Choose the **Edit** \(![EditKeyboardShortcut][ImageEditKeyboardShortcutIcon]\) icon.  
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Choose the action to customize from the Shortcuts page in Settings" lightbox="./media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+       Choose the action to customize from the **Shortcuts** page in [Settings][DevToolsCustomizeSettings]
+    :::image-end:::  
+    
+1.  On the keyboard, select the keys you want to bind to the action.
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Select the keys you want to assign to the action" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+       Select the keys you want to assign to the action
+    :::image-end:::  
+    
+1.  To save your new keyboard shortcut, choose the checkmark \(![CheckmarkKeyboardShortcut][ImageCheckmarkKeyboardShortcutIcon]\) icon.
+    
+    :::image type="complex" source="./media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Choose the checkmark icon to save your new keyboard shortcut" lightbox="./media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+       Choose the checkmark icon to save your new keyboard shortcut
+    :::image-end:::  
+    
+1.  Select your new keyboard shortcut to trigger the action in the DevTools.  
+    
+On the **Shortcuts** page, the **Custom Keyboard Shortcut** \(![CustomKeyboardShortcut][ImageCustomKeyboardShortcutIcon]\) icon displays keyboard shortcuts that you have customized.  To reset all shortcuts, choose **Restore default shortcuts**.  
+
+When you are editing the keyboard shortcuts for an action, to discard your changes, choose the X \(![XKeyboardShortcut][ImageXKeyboardShortcutIcon]\) icon.  To remove shortcuts for a specific action, choose the **Delete shortcut** \(![DeleteKeyboardShortcut][ImageDeleteKeyboardShortcutIcon]\) icon.  To add multiple shortcuts for an action, choose **Add a shortcut**.
+
+> [!NOTE]
+> If a keyboard shortcut is currently assigned to another action, you are not able to save it for a new action.  You must first delete the keyboard shortcut for the previous action and then add it to the new action.  
 
 ## Previous experimental features  
 
@@ -241,6 +279,11 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 [ImageRotateIcon]: ./media/rotate-dark-icon.msft.png  
 [ImageSpanIcon]: ./media/span-dark-icon.msft.png  
 [ImageExperimentalApisIcon]: ./media/experimental-apis-dark-icon.msft.png  
+[ImageEditKeyboardShortcutIcon]: ./media/edit-keyboard-shortcut-icon.msft.png  
+[ImageCheckmarkKeyboardShortcutIcon]: ./media/checkmark-keyboard-shortcut-icon.msft.png  
+[ImageCustomKeyboardShortcutIcon]: ./media/custom-keyboard-shortcut-icon.msft.png  
+[ImageDeleteKeyboardShortcutIcon]: ./media/delete-keyboard-shortcut-icon.msft.png  
+[ImageXKeyboardShortcutIcon]: ./media/discard-changes-keyboard-shortcut-icon.msft.png  
 
 <!-- links -->  
 
@@ -250,7 +293,8 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 [DevtoolsIssues]: ./issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
 [DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
 [DevtoolsOpen]: ./open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsOpenMain]: ./open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
 [DualScreenWebIndex]: /dual-screen/web/index "Dual-screen web experiences | Microsoft Docs"  
 [DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Get the Surface Duo emulator | Microsoft Docs"  
