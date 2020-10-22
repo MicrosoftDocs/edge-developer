@@ -20,7 +20,7 @@ To meet your translation needs, the Microsoft Edge DevTools team is focused on i
 *   The strings in the **Lighthouse** tool.  
 *   The term `service worker`.  
 *   Some of the **Network** tool filters such as `URL`, `XHR`, `JS`, and `CSS`.  
-*   The [$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject] Console Utilities API on localized version of the DevTools.  
+*   The [$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject] Console Utilities API.  
     
 [$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject] is now available in the [Console](/microsoft-edge/devtools-guide-chromium/console/index.md) for users on localized versions of the DevTools.   Thank you to the global developer community for helping improve localization of the Microsoft Edge DevTools.  Continue to [send feedback on localization quality](#getting-in-touch-with-microsoft-edge-devtools-team) to improve support for DevTools in all locales.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1136655][CR1136655].  
 
@@ -55,12 +55,12 @@ DevTools now supports moving tools between the top and bottom panels.  Customize
    Experimental feature  
 :::image-end:::  
 
-The **Network Console** tool improves compatibility with the [Postman v2.1][PostmanSchemaJsonCollectionv210Index] and [OpenAPI v2][SwaggerSpecificationV2] schemas.  For more information about the **Network Console**, navigate to [Network Console in the Microsoft Edge DevTools][DevtoolsExperimentalFeaturesEnableNetworkConsole].  This experiment now supports the following actions.  
+The **Network Console** tool now has improved compatibility with the [Postman v2.1][PostmanSchemaJsonCollectionv210Index] and [OpenAPI v2][SwaggerSpecificationV2] schemas.  To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable Network Console**.  For more information about the **Network Console**, navigate to [Enable Network Console experimental feature][DevtoolsExperimentalFeaturesEnableNetworkConsole].  This experiment now supports the following actions.  
 
-*   Save and export Collections and Environments using a new system.  
+*   Save and export Collections and Environments.  
 *   Edit and export sets of environment variables within the **Network Console** tool.  
     
-To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable Network Console**.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1093687][CR1093687].  
+To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1093687][CR1093687].  
 
 :::row:::
    :::column span="":::
@@ -81,14 +81,14 @@ To enable the experiment, navigate to [Turn on experimental features][DevtoolsEx
    Experimental feature  
 :::image-end:::  
 
-The Microsoft Edge DevTools now support the following features for inspecting, viewing, and debugging your CSS grids.  The features are turned on by default.  For more information about the features, navigate to [CSS grids][DevtoolsCssGrid].  
+The Microsoft Edge DevTools now support the following features for inspecting, viewing, and debugging your CSS grids.  
 
 *   Display a simplified grid overlay using the **Inspect** tool, or get more detailed information with persistent overlays.  
 *   To enable persistent grid overlays, choose the grid icon next to a grid container element in the **Elements** tool or choose the grid in the **Layout** tool.  
 *   You may enable persistent overlays for multiple grids.  
 *   The new **Layout** tool allows you to easily toggle grid overlays and configure the appearance and the content for each.  
     
-To review the history of this feature in the Chromium open-source project, navigate to Issue [#1047356][CR1047356].  The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new flexbox tooling features to DevTools.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1136394][CR1136394].  
+The features are turned on by default.  For more information about the features, navigate to [CSS grids][DevtoolsCssGrid].  To review the history of this feature in the Chromium open-source project, navigate to Issue [#1047356][CR1047356].  Additionally, the Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new flexbox tooling features to DevTools.  For updates on flexbox tooling in the Chromium open-source project, navigate to Issue [#1136394][CR1136394].  
 
 :::image type="complex" source="../../media/2020/10/grid-layout-pane.msft.png" alt-text="Layout tool with grids" lightbox="../../media/2020/10/grid-layout-pane.msft.png":::
    **Layout** tool with grids  
@@ -100,9 +100,9 @@ To review the history of this feature in the Chromium open-source project, navig
    Experimental feature  
 :::image-end:::  
 
-You are now able to customize the keyboard shortcut for any action in the DevTools.  Starting in Microsoft Edge version 84, you may choose between **Visual Studio Code** and **DevTools (default)** presets for [keyboard shortcuts][DevtoolsCustomizeShortcuts].  Starting in Microsoft Edge version 87, You may turn on the **Enable keyboard shortcut editor** experiment to further [customize keyboard shortcuts][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  
+You are now able to customize the keyboard shortcut for any action in the DevTools.  Since Microsoft Edge version 84, you are able to choose, you may choose between **Visual Studio Code** and **DevTools (default)** presets for [keyboard shortcuts][DevtoolsCustomizeShortcuts].  Starting in Microsoft Edge version 87, you may turn on the **Enable keyboard shortcut editor** experiment to further [customize keyboard shortcuts][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  
 
-To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, navigate to [Customize keyboard shortcuts in the Microsoft Edge DevTools][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#174309][CR174309].  
+To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, navigate to [Enable keyboard shortcut editor Experimental Feature][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#174309][CR174309].  
 
 :::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Custom shortcut for pausing a script" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
    Custom shortcut for pausing a script  
@@ -162,9 +162,9 @@ You are able to emulate authenticators and debug the [Web Authentication API][Gi
 
 ### Elements tool updates  
 
-#### View the Computed sidebar pane in the Styles tool  
+#### View the Computed sidebar pane in the Styles pane  
 
-Toggle the **Computed** pane in the **Styles** tool.  The **Computed** pane in the **Styles** tool is collapsed by default.  To toggle it, choose the button.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1073899][CR1073899].  
+Toggle the **Computed** pane in the **Styles** pane.  The **Computed** pane in the **Styles** pane is collapsed by default.  To toggle it, choose the button.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1073899][CR1073899].  
 
 :::row:::
    :::column span="":::
@@ -181,7 +181,7 @@ Toggle the **Computed** pane in the **Styles** tool.  The **Computed** pane in t
 
 #### Grouping CSS properties in the Computed panel  
 
-To view your applied CSS \(less scrolling\), group the CSS properties by categories in the **Computed** panel.  You may also selectively focus on a set of related properties while you inspect your CSS.  From the **Elements** tool, choose an element.  To group \(or ungroup\) the CSS properties, toggle the **Group** checkbox.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [#1096230][CR1096230], [#1084673][CR1084673], and [#1106251][CR1106251].  
+To view your applied CSS with less scrolling, group the CSS properties by categories in the **Computed** pane.  You may also selectively focus on a set of related properties while you inspect your CSS.  From the **Elements** tool, choose an element.  To group \(or ungroup\) the CSS properties, toggle the **Group** checkbox.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [#1096230][CR1096230], [#1084673][CR1084673], and [#1106251][CR1106251].  
 
 :::image type="complex" source="../../media/2020/10/grouping-css-prop.msft.png" alt-text="Grouping CSS properties" lightbox="../../media/2020/10/grouping-css-prop.msft.png":::
    Grouping CSS properties  
@@ -193,7 +193,7 @@ The **Lighthouse** tool is now running Lighthouse 6.4.  For a full list of chang
 
 ### performance.mark() events in the Timings section  
 
-The **Timings section** of a recording in the [Performance][DevtoolsGuideChromiumEvaluatePerformanceReference] tool now marks `performance.mark()` events.  To try this feature and measure your JavaScript code, add `performance.mark()` events to your JavaScript code.  Copy and paste the following code snippet to add markers before and after a `for` loop that iterate from 0 to 1000 using increments of 7.  
+The **Timings section** of a recording in the [Performance][DevtoolsGuideChromiumEvaluatePerformanceReference] tool now marks `performance.mark()` events.  To try this feature and measure the performance of your JavaScript code, add `performance.mark()` events to your code.  For example, the following code snippet adds markers before and after a `for` loop that iterates from 0 to 1000 using increments of 7.  
 
 ```javascript
 performance.mark('start');
@@ -221,26 +221,21 @@ To discover more special keywords such as `resource-type` and `url`, navigate to
 
 ### Frame details view updates  
 
-:::row:::
-   :::column span="":::
-      #### Display COEP and COOP reporting to endpoint  
-      
-      View the Cross-Origin Embedder Policy \(COEP\) and Cross-Origin Opener Policy \(COOP\) `reporting to` endpoint under the **Security & Isolation** section.  The [Reporting API][MdnReportingApi] defines `Report-To`, a new HTTP header, that gives you a way to specify server endpoints for the browser to which to send warnings and errors.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1051466][CR1051466].  
-      
-      :::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="The reporting to endpoint" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
-         The `reporting to` endpoint  
-      :::image-end:::  
-   :::column-end:::  
-   :::column span="":::
-      #### Display COEP and COOP report-only mode  
-      
-      DevTools now display `report-only` label for COEP and COOP that are set to `report-only` mode.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1051466][CR1051466].  
-      
-      :::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="The report-only mode label" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
-         The `report-only` mode label  
-      :::image-end:::  
-   :::column-end:::
-:::row-end:::  
+#### Display COEP and COOP reporting to endpoint  
+
+View the Cross-Origin Embedder Policy \(COEP\) and Cross-Origin Opener Policy \(COOP\) `reporting to` endpoint under the **Security & Isolation** section.  The [Reporting API][MdnReportingApi] defines `Report-To`, a new HTTP header, that gives you a way to specify the server endpoints for the browser to send warnings and errors.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1051466][CR1051466].  
+
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png" alt-text="The reporting to endpoint" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-1.msft.png":::
+   The `reporting to` endpoint  
+:::image-end:::  
+
+#### Display COEP and COOP report-only mode  
+
+DevTools now display the `report-only` label for COEP and COOP that are set to `report-only` mode.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1051466][CR1051466].  
+
+:::image type="complex" source="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png" alt-text="The report-only mode label" lightbox="../../media/2020/10/https_first_party_test_glitch_me_coop-2.msft.png":::
+   The `report-only` mode label  
+:::image-end:::  
 
 ### View and fix color contrast issues in the CSS Overview tool  
 
@@ -252,7 +247,7 @@ The **CSS Overview** tool now displays a list of elements on your page that have
 
 [CSS Overview Accessible Colors Demo][GlitchCssOverviewAccessibleColorsDemo]  
 
-To view a list of elements that have a color contrast issue, on **Contrast issues**, choose **Text**. To open the element in the **Elements** tool, choose an element in the list.  To help fix contrast issues, the Microsoft Edge DevTools [automatically provide color suggestions][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane].  To enable this experiment, under **Settings** > **Experiments**, choose the **CSS Overview** checkbox.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1120316][CR1120316].  
+To enable this experiment, under **Settings** > **Experiments**, choose the **CSS Overview** checkbox.  To view a list of elements that have a color contrast issue, on **Contrast issues**, choose **Text**.  To open the element in the **Elements** tool, choose an element in the list.  To help fix contrast issues, the Microsoft Edge DevTools [automatically provide color suggestions][DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane].  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1120316][CR1120316].  
 
 :::image type="complex" source="../../media/2020/10/css-overview.msft.png" alt-text="Low color contrast issues" lightbox="../../media/2020/10/css-overview.msft.png":::
    Low color contrast issues  
