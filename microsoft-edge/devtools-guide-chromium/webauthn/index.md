@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools  
 
-Instead of debugging the Web Authentication of your website or app with physical authenticators, use the **WebAuthn** tool in Microsoft Edge DevTools to create and interact with software-based virtual authenticators.  
+Instead of debugging Web Authentication in your website or app with physical authenticators, use the **WebAuthn** tool in Microsoft Edge DevTools to create and interact with software-based virtual authenticators.  
 
 ## Before you begin  
 
@@ -71,7 +71,6 @@ To register a new credential, complete the following steps.  For more informatio
        View credentials  
     :::image-end:::  
     
-On the demo website, choose the **Authenticate** button.  Verify that the [Sign Count](https://w3c.github.io/webauthn/#sctn-sign-counter) of the credential in the Credentials table increased by 1, which marks a successful [authenticatorGetAssertion](https://w3c.github.io/webauthn/#authenticatorgetassertion) operation.  
 On the demo website, choose the **Authenticate** button.  Verify that the [Sign Count][GithubW3cWebauthnSctnSignCounter] of the credential in the **Credentials** table increased by 1, which marks a successful [authenticatorGetAssertion][GithubW3cWebauthnAuthenticatorgetassertion] operation.  
 
 ## Export and remove credentials  
@@ -95,12 +94,10 @@ To rename an authenticator, complete the following steps.
 
 ## Set the active authenticator  
 
-A newly created authenticator is automatically activated.  DevTools supports only one active virtual authenticator at any point of time.  If you remove the active authenticator, another authenticator is not automatically activated.  To use another virtual authenticator, choose the **Active** radio button next to the authenticator.  
+A newly created authenticator is automatically activated.  To use another virtual authenticator, choose the **Active** radio button next to the authenticator.  
 
 > [!NOTE]
-> If you remove the currently active authenticator, another authenticator that you added is not automatically activated.  To continue using virtual authenticators, next to the authenticator, choose the **Active** radio button.  
-
-To set an authenticator as the active authenticator, next to the authenticator, choose the **Active** radio button.  
+> DevTools supports only one active virtual authenticator at any point of time.  If you remove the active authenticator, another authenticator is not automatically activated.  
 
 :::image type="complex" source="../media/webauthn-set-active.msft.png" alt-text="Set active authenticator" lightbox="../media/webauthn-set-active.msft.png":::
    Set active authenticator  

@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Inspect CSS Grid  
 
-When you are developing your website, you may use CSS grids to layout your HTML elements.  Webpages use CSS grids by applying `display: grid` or `display: inline-grid` CSS. For more information, navigate to [CSS Grid Layout][MdnCssGridLayout].  This article walks you through identifying CSS grids on a website and debugging grid layout issues using customizable grid overlays.  
+This article walks you through identifying CSS grids on a website and debugging grid layout issues using customizable grid overlays.  
 
 The examples used in the figures in this article are taken from the following webpages.  
 
@@ -20,7 +20,7 @@ The examples used in the figures in this article are taken from the following we
 
 ## Before you begin  
 
-CSS Grid is a powerful layout paradigm for the web.  A great place to get started learning about CSS Grid and the many features is the [MDN CSS Grid Layout guide][MdnCssGridLayout].  
+CSS Grid is a powerful layout paradigm for the web.  A great place to get started learning about CSS Grid and the many features is the [CSS Grid Layout guide][MdnCssGridLayout] on MDN.  
 
 ## Discover CSS grids  
 
