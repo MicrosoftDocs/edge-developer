@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Inspect CSS Grid  
 
-When you developing your website, you may use CSS grids to layout your HTML elements.  Webpages use CSS grids by applying `display: grid` or `display: inline-grid` CSS. For more information, navigate to [CSS Grid Layout][MdnCssGridLayout].  This article walks you through identifying CSS grids on a website and debugging grid layout issues using customizable grid overlays.  
+When you are developing your website, you may use CSS grids to layout your HTML elements.  Webpages use CSS grids by applying `display: grid` or `display: inline-grid` CSS. For more information, navigate to [CSS Grid Layout][MdnCssGridLayout].  This article walks you through identifying CSS grids on a website and debugging grid layout issues using customizable grid overlays.  
 
 The examples used in the figures in this article are taken from the following webpages.  
 
@@ -92,11 +92,11 @@ Select **Hide line labels** to hide the line numbers.
 ### Show line names  
 
 <!--todo: @rachel verify the link and text for line name -->  
-For more information about line names in the grid overlay, navigate to [Layout using named grid lines][MdnLayoutUsingNamedGridLines]
+For more information about line names in the grid overlay, navigate to [Layout using named grid lines][MdnLayoutUsingNamedGridLines].  
 
 Select **Show line names** to view the line names instead of numbers.  In the example, 4 lines have names: `left`, `middle1`, `middle2`, and `right`.  
 
-In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  
+<!--In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  -->  
 
 :::image type="complex" source="../media/grid-show-line-names.msft.png" alt-text="Show line names" lightbox="../media/grid-show-line-names.msft.png":::
    **Show line names**  
