@@ -13,36 +13,28 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
-<!--  Alternate title and issue  -->  
-:::row:::
-   :::column span="2":::
-      ## Improving DevTools localization with your feedback  
-   :::column-end:::
-   :::column span="1":::
-      To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1136655][CR1136655].  
-   :::column-end:::
-:::row-end:::  
+## Improving DevTools localization  
 
 To meet your translation needs, the Microsoft Edge DevTools team is focused on improving translation quality.  Starting in Microsoft Edge version 87, several strings and terms are locked and do not change even when the rest of the DevTools are displayed in other languages.  The list of affected strings and terms include the following.  
 
 *   The strings in the **Lighthouse** tool.  
 *   The term `service worker`.  
 *   Some of the **Network** tool filters such as `URL`, `XHR`, `JS`, and `CSS`.  
-*   The [$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject] Console Utilities API on localized version of the DevTools.  Fixed a bug that prevented the [$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject] Console Utilities API from displaying for some users on localized versions of the DevTools.  
-
-Thank you to the global developer community for helping improve localization of the Microsoft Edge DevTools.  Continue to [send feedback on localization quality](#getting-in-touch-with-microsoft-edge-devtools-team) to improve support for DevTools in all locales.  
+*   The [$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject] Console Utilities API on localized version of the DevTools.  
+    
+[$0][DevtoolsGuideChromiumConsoleUtilitiesRecentlySelectedElementJavascriptObject] is now available in the [Console](/microsoft-edge/devtools-guide-chromium/console/index.md) for users on localized versions of the DevTools.   Thank you to the global developer community for helping improve localization of the Microsoft Edge DevTools.  Continue to [send feedback on localization quality](#getting-in-touch-with-microsoft-edge-devtools-team) to improve support for DevTools in all locales.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1136655][CR1136655].  
 
 :::image type="complex" source="../../media/2020/10/bing-network-japanese.msft.png" alt-text="Network tool with non-localized filters" lightbox="../../media/2020/10/bing-network-japanese.msft.png":::
    **Network** pane with non-localized filters  
 :::image-end:::  
 
-## Move tools between top and bottom panel  
+## Move tools between top and bottom panels  
 
-DevTools now support moving tools in DevTools between the top and bottom panels.  View any combination of two tools at the same time.  For example, view the **Elements** and thew **Sources** tools at the same time \(by moving the **Sources** tool to the bottom\).  To review the history of this feature in the Chromium open-source project, navigate to Issue [#1075732][CR1075732].  
+DevTools now supports moving tools between the top and bottom panels.  Customize your DevTools and improve your productivity by viewing any combination of two tools at the same time.  For example, view the **Elements** and the **Sources** tools at the same time \(by moving the **Sources** tool to the bottom\).  To review the history of this feature in the Chromium open-source project, navigate to Issue [#1075732][CR1075732].  
 
 :::row:::
    :::column span="":::
-      To move any top tool the bottom, hover on a tab, open the contextual menu \(right-click\), and choose **Move to bottom**.  
+      To move any top tool to the bottom, hover on a tab, open the contextual menu \(right-click\), and choose **Move to bottom**.  
       
       :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="Move to bottom" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
          Move to bottom  
@@ -63,12 +55,12 @@ DevTools now support moving tools in DevTools between the top and bottom panels.
    Experimental feature  
 :::image-end:::  
 
-The **Network Console** tool improves compatibility with the [Postman v2.1][PostmanSchemaJsonCollectionv210Index] and [OpenAPI v2][SwaggerSpecificationV2] schemas.  This experiment now supports the following actions.  
+The **Network Console** tool improves compatibility with the [Postman v2.1][PostmanSchemaJsonCollectionv210Index] and [OpenAPI v2][SwaggerSpecificationV2] schemas.  For more information about the **Network Console**, navigate to [Network Console in the Microsoft Edge DevTools][DevtoolsExperimentalFeaturesEnableNetworkConsole].  This experiment now supports the following actions.  
 
 *   Save and export Collections and Environments using a new system.  
 *   Edit and export sets of environment variables within the **Network Console** tool.  
     
-To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about the **Network Console**, navigate to [Network Console in the Microsoft Edge DevTools][DevtoolsExperimentalFeaturesEnableNetworkConsole].  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1093687][CR1093687].  
+To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable Network Console**.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1093687][CR1093687].  
 
 :::row:::
    :::column span="":::
@@ -89,9 +81,7 @@ To enable the experiment, navigate to [Turn on experimental features][DevtoolsEx
    Experimental feature  
 :::image-end:::  
 
-The new CSS grid debugging features are now available in Microsoft Edge.  The features are turned on by default.  For more information about the features, navigate to [Enable new CSS grid debugging features][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures].  
-
-The Microsoft Edge DevTools now support the following features for inspecting, viewing, and debugging your [CSS grids][DevtoolsCssGrid].  
+The Microsoft Edge DevTools now support the following features for inspecting, viewing, and debugging your CSS grids.  The features are turned on by default.  For more information about the features, navigate to [CSS grids][DevtoolsCssGrid].  
 
 *   Display a simplified grid overlay using the **Inspect** tool, or get more detailed information with persistent overlays.  
 *   To enable persistent grid overlays, choose the grid icon next to a grid container element in the **Elements** tool or choose the grid in the **Layout** tool.  
@@ -343,6 +333,8 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [PostmanSchemaJsonCollectionv210Index]: https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html "Postman Collection Format v2.1.0 | Postman"  
 
 [SwaggerSpecificationV2]: https://swagger.io/specification/v2 "OpenAPI Specification | Swagger"  
+
+<!--[JecFyiDemoPerfMark]: https://jec.fyi/demo/perf-mark "" -->  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

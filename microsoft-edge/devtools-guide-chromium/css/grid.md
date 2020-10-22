@@ -11,12 +11,17 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Inspect CSS Grid  
 
-When you developing your website, you may use CSS grids to layout your HTML elements.  Webpages use CSS grids by applying `display: grid` or `display: inline-grid`. For more information, navigate to [CSS Grid Layout][MdnCssGridLayout].  This article walks you through finding CSS grids, debugging layout issues, overlay display settings, and grid overlays.  
+When you developing your website, you may use CSS grids to layout your HTML elements.  Webpages use CSS grids by applying `display: grid` or `display: inline-grid` CSS. For more information, navigate to [CSS Grid Layout][MdnCssGridLayout].  This article walks you through finding CSS grids, debugging layout issues, overlay display settings, and grid overlays.  
 
 The examples used in the figures in this article are taken from the following webpages.  
 
 *   [Fruit box][JecFyiDemoCssGridFruit]  
 *   [Snack box][JecFyiDemoCssGridSnack]  
+
+## Before you begin  
+
+<!--todo: @zoher and @rachel verify and clean-up please -->  
+A great place to get started with CSS grids is the [][] article.  
 
 ## Discover CSS grids  
 
@@ -43,7 +48,7 @@ The **Grid** section in the **Layout** pane contains the following 2 sub-section
 *   Overlay display settings  
 *   Grid overlays  
 
-<!--  Verify the details for each of the sub-sections.  -->  
+<!--todo: @zoher verify the details for each of the sub-sections.  -->  
 
 ## Overlay display settings  
 
@@ -63,13 +68,16 @@ The **Overlay display settings** consists of following 2 parts.
     |:--- |:--- |  
     | **Show track sizes**  | Display \(or hide\) the sizes of the tracks. |  
     | **Show area names** | Display \(or hide\) the names of the area, when names are provided. |  
-    | **Extend grid lines** | Displays \(or hides\) the extensions of the grid dimensions along each axis.  By default, grid lines are only shown inside the element with `display: grid` or `display: inline-grid` set on it. |  
+    | **Extend grid lines** | Displays \(or hides\) the extensions of the grid dimensions along each axis.  By default, grid lines are only shown inside the element with `display: grid` or `display: inline-grid` CSS set on it. |  
     
 The following sections provide details for each of the **Overlay display settings**.  
 
 ### Show line numbers  
 
 By default, the positive and negative line numbers are displayed on the grid overlay.  
+
+<!--todo: @rachel verify the link and text for negative -->  
+For more information about counting backwards \(negative numbers\) in the grid overlay, navigate to [Line-based placement with CSS Grid][MdnLineBasedPlacementCssGrid].  
 
 :::image type="complex" source="../media/grid-show-line-numbers.msft.png" alt-text="Display line numbers" lightbox="../media/grid-show-line-numbers.msft.png":::
    Display line numbers  
@@ -85,6 +93,9 @@ Select **Hide line labels** to hide the line numbers.
 
 ### Show line names  
 
+<!--todo: @rachel verify the link and text for line name -->  
+For more information about line names in the grid overlay, navigate to [Layout using named grid lines][MdnLayoutUsingNamedGridLines]
+
 Select **Show line names** to view the line names instead of numbers.  In the example, 4 lines have names: `left`, `middle1`, `middle2`, and `right`.  
 
 In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  
@@ -95,37 +106,31 @@ In the demo, **orange** element spans from left to right, with `grid-column: lef
 
 ### Show track sizes  
 
+<!--todo: @rachel link and text for track size -->  
+
 Enable the **Show track sizes** checkbox to view the track sizes of the grid.  
 
-DevTools displays `[authored size] - [computed size]` in each line label.  
+DevTools displays `[authored size]` and `[computed size]` \(\#fr &#x2022; \#\#px\) in each line label.  
 
-:::row:::
-   :::column span="":::
-      **Authored** size  
-   :::column-end:::
-   :::column span="":::
-      The size defined in stylesheet \(omitted if not defined\).  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      **Computed** size  
-   :::column-end:::
-   :::column span="":::
-      The actual size on screen.  
-   :::column-end:::
-:::row-end:::  
+| Size | Details |  
+|:--- |:--- |  
+| **authored size** | The size defined in stylesheet \(omitted if not defined\). |  
+| **computed size** | The actual size on screen. |  
 
-In the demo, the `snack-box` column sizes are defined in the CSS `grid-template-columns:1fr 2fr;`.  Therefore, the column line labels display both authored and computed sizes.  
+In the demo, the `snack-box` column sizes are defined in the `grid-template-columns:1fr 2fr;` CSS.  Therefore, the column line labels display both authored and computed sizes.  
 
-*   **1fr - 96.66px**  
-*   **2fr - 193.32px**  
-    
+| Track size | Authored size | Computed size |  
+|:--- |:--- |:--- |  
+| **1fr** &#x2022; **96.66px** | 1fr | 96.66px |  
+| **2fr** &#x2022; **193.32px** | 2fr | 193.32px |  
+
 The row line labels display only computed sizes, since there are no row sizes defined in the stylesheet.  
 
-*   **80px**  
-*   **80px**  
-    
+| Track size | Authored size | Computed size |  
+|:--- |:--- |:--- |  
+| **80px** | &nbsp;| 80px |  
+| **80px** | &nbsp;| 80px |  
+
 :::image type="complex" source="../media/grid-show-track-sizes.msft.png" alt-text="Show track sizes" lightbox="../media/grid-show-track-sizes.msft.png":::
    **Show track sizes**  
 :::image-end:::  
@@ -151,6 +156,8 @@ Enable the **Extend grid lines** checkbox to extend the grid lines to the edge o
 The **Grid overlays** section contains a list of grids that are present on the page, each with a checkbox, along with various options.  
 
 ### Enable overlay views of multiple grids  
+
+<!--todo: @zoher verify and provide updates -->  
 
 To display the overlay grid for multiple grids, choose the checkbox next to each name of the grid.  In the example, there are 2 grid overlays enabled that are each represented with different colors.  
 
@@ -193,6 +200,8 @@ To highlight the HTML element in the **Elements** panel and scroll to it on the 
 [JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "CSS grid | jec.fyi"  
 
 [MdnCssGridLayout]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout "CSS Grid Layout | MDN"  
+[MdnLayoutUsingNamedGridLines]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines "Layout using named grid lines | MDN"  
+[MdnLineBasedPlacementCssGrid]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid "Line-based placement with CSS Grid | MDN"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
