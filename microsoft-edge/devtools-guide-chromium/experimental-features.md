@@ -16,7 +16,7 @@ While experimental features are available in all channels of Microsoft Edge, you
 
 ## Turn on experimental features  
 
-To turn on \(or off\) experimental features in Microsoft Edge, use the following steps.  
+To turn on \(or off\) experimental features in Microsoft Edge, complete the following steps.  
 
 1.  [Open DevTools][DevtoolsOpen].  
      *   Select `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
@@ -47,6 +47,7 @@ The following sections describe the new experimental features that are available
 | [Enable Network Console](#enable-network-console) | 85 or later |  
 | [Source Order Viewer](#source-order-viewer) | 86 or later |  
 | [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor) | 87 or later |  
+| [Enable Composited Layers in 3D View][#enable-composited-layers-in-3d-view] | 87 or later |  
 
 ### Emulation: Support dual screen mode  
 
@@ -185,7 +186,7 @@ The [webhint][WebhintMain] experiment displays the webhint feedback in the [Issu
 
 **Network Console** is the working title of an experiment to make synthetic network requests over HTTP.  You may use the **Network Console** experiment to send web API requests.  
 
-After enabling the experiment, ensure you restart the DevTools.  To use the **Network Console**, use the following steps.  
+After enabling the experiment, ensure you restart the DevTools.  To use the **Network Console**, complete the following steps.  
 
 1.  Open the **Network** pane.  
 1.  Find the network request that you want to change and resend.  
@@ -203,7 +204,7 @@ After enabling the experiment, ensure you restart the DevTools.  To use the **Ne
 
 **Source Order Viewer** is an experiment that displays the order of elements in the page source.  The on-screen display order may differ from the order of the source, which confuses screen reader and keyboard users.  Use the **Source Order Viewer** experiment to find the differences between on-screen display order and the order of the source.  
 
-After enabling the experiment, ensure you restart the DevTools.  To use **Source Order Viewer**, use the following steps.  
+After enabling the experiment, ensure you restart the DevTools.  To use **Source Order Viewer**, complete the following steps.  
 
 1.  Open the **Elements** pane.  
 1.  Open the **Accessibility** pane in the drawer \(bottom\) panel.  
@@ -256,16 +257,16 @@ When you are editing the keyboard shortcuts for an action, to discard your chang
 
 ### Enable Composited Layers in 3D View
 
-You can now visualize Layers alongside z-indexes and the Document Object Model (DOM) to debug without switching contexts as often. We recognize that reducing context-switching is a major pain point, and we know it’s not always straightforward how the code we write affects our web applications.  We decided to combine 3D View with Composited Layers for a comprehensive visual debugging experience. 
-
-:::image type="complex" source="./media/experiments-layers.msft.png" alt-text="Composited Layers feature" lightbox="./media/experiments-layers.msft.png":::
-  Composited Layers feature  
-:::image-end:::  
-
-After enabling the experiment, ensure you restart the DevTools.  To use **Composited Layers**, use the following steps.  
+You may now visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View with Composited Layers are now combined.  After enabling the experiment, ensure you restart the DevTools.  To use **Composited Layers**, complete the following steps.  
 
 1.  Open the **3D View** pane in the drawer \(bottom\) panel.  
-1.  Select the **Composited Layers** pane.    
+1.  Select the **Composited Layers** pane.  
+
+:::image type="complex" source="./media/experiments-layers.msft.png" alt-text="Composited Layers pane" lightbox="./media/experiments-layers.msft.png":::
+  Composited Layers pane  
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 87 and later.  -->
 
 ## Previous experimental features  
 
