@@ -3,17 +3,16 @@ description: How to debug Microsoft Edge (Chromium) and Microsoft Edge (EdgeHTML
 title: Debug Microsoft Edge (Chromium) from VS Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2020
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger
 ---
-
 # Debugger For Microsoft Edge VS Code Extension  
 
 With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] VS Code extension, debug your front-end JavaScript code line by line and see `console.log()` statements directly from [Visual Studio Code][VisualstudioCode]!  
 
-:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="Debugger for Edge VS Code extension at work":::
+:::image type="complex" source="./media/debugger-for-edge.gif" alt-text="Debugger for Edge VS Code extension at work" lightbox="./media/debugger-for-edge.gif":::
    Debugger for Edge VS Code extension at work  
 :::image-end:::
 
@@ -42,7 +41,7 @@ If you press `F5` on Windows or macOS or select the green **Play** button again,
 
 ### Microsoft Edge (Chromium)  
 
-If you want to launch Microsoft Edge \(Chromium\), the next version of Microsoft Edge, instead of Microsoft Edge \(EdgeHTML\), simply add a `version` attribute to your existing configuration with the version of Microsoft Edge \(Chromium\) you want to launch \(`dev`, `beta`, or `canary`\). The following configuration below launches the Canary version of Microsoft Edge \(Chromium\).  
+If you want to launch Microsoft Edge \(Chromium\), the new Microsoft Edge, instead of Microsoft Edge \(EdgeHTML\), simply add a `version` attribute to your existing configuration with the version of Microsoft Edge \(Chromium\) you want to launch \(`dev`, `beta`, or `canary`\). The following configuration below launches the Canary version of Microsoft Edge \(Chromium\).  
 
 ```json
 {
