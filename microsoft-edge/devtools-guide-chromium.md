@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge (Chromium) Developer Tools
 title: Microsoft Edge (Chromium) Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/22/2020
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -17,11 +17,11 @@ As the web has grown in usage across an ever-widening array of device types, the
 
 If you are checking out Microsoft Edge and you mainly develop in a Chromium-based browser, you should feel right at home.  The Microsoft Edge \(Chromium\) Developer Tools function in the same way as the developer tools you already know and use.  For more information, see [What's new in the Microsoft Edge (Chromium) DevTools][DevtoolsGuideChromiumWhatsNewIndex].  
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="Microsoft Edge (Chromium) DevTools":::
+:::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="Microsoft Edge (Chromium) DevTools" lightbox="./devtools-guide-chromium/media/devtools.png":::
    Microsoft Edge (Chromium) DevTools  
 :::image-end:::  
 
-If you are checking out the next version of Microsoft Edge and you previously developed in Microsoft Edge \(EdgeHTML\), you now have some great new tools that should make it easier and faster to build and test your websites in Microsoft Edge!  
+If you are checking out the new Microsoft Edge and you previously developed in Microsoft Edge \(EdgeHTML\), you now have some great new tools that should make it easier and faster to build and test your websites in Microsoft Edge!  
 
 ## Open the DevTools  
 
@@ -45,7 +45,7 @@ If you want to see logs from your front-end JavaScript code or quickly run some 
 
 ## Core tools  
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Microsoft Edge (Chromium) DevTools core tools":::
+:::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Microsoft Edge (Chromium) DevTools core tools" lightbox="./devtools-guide-chromium/media/devtools-core-tools.png":::
    Microsoft Edge (Chromium) DevTools core tools  
 :::image-end::: 
 
@@ -74,7 +74,7 @@ You may have used extensions to the DevTools to help you diagnose and debug issu
 
 You may also add extensions from the [Chrome Web Store][GoogleChromeWebstoreExtensions].  
 
-:::image type="complex" source="./devtools-guide-chromium/media/allow-extensions-from-stores.png" alt-text="Chrome Web Store in Microsoft Edge":::
+:::image type="complex" source="./devtools-guide-chromium/media/allow-extensions-from-stores.png" alt-text="Chrome Web Store in Microsoft Edge" lightbox="./devtools-guide-chromium/media/allow-extensions-from-stores.png":::
    Chrome Web Store in Microsoft Edge  
 :::image-end:::  
 
@@ -85,7 +85,7 @@ At the top, select **Allow extensions from other stores** and then select **Allo
 
 Select **Add to Chrome** to add your DevTools extension to Microsoft Edge!  
 
-:::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="Adding extension from Chrome Web Store to Microsoft Edge":::
+:::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="Adding extension from Chrome Web Store to Microsoft Edge" lightbox="./devtools-guide-chromium/media/install-extension-from-chrome-store.png":::
    Adding extension from Chrome Web Store to Microsoft Edge  
 :::image-end:::  
 
