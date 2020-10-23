@@ -1,9 +1,9 @@
 ---
-description: A guide on how to open the Command Menu, run commands, see other actions, and more.
+description: A guide on how to open the Command Menu, run commands, review other actions, and more.
 title: Run Commands With The Microsoft Edge DevTools Command Menu
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,11 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-
-
-
-
-# Run Commands With The Microsoft Edge DevTools Command Menu   
+# Run Commands With The Microsoft Edge DevTools Command Menu  
 
   
 
@@ -36,15 +32,15 @@ The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI 
    Using the Command Menu to disable JavaScript  
 :::image-end:::  
 
-## Open the Command Menu   
+## Open the Command Menu  
 
-Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\). Or click **Customize And Control DevTools** `...` and then select **Run Command**.  
+Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\). Or choose **Customize And Control DevTools** `...` and then choose **Run Command**.  
 
 :::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Run Command" lightbox="../media/command-menu-options-run-command.msft.png":::
    Run Command  
 :::image-end:::  
 
-## See other available actions   
+## See other available actions  
 
 If you use the workflow outlined in [Open the Command Menu](#open-the-command-menu), the Command Menu opens with a `>` character pre-pended to the Command Menu text box.  
 
@@ -58,9 +54,9 @@ Delete the `>` character and type `?` to see other actions that are available fr
    Other available actions  
 :::image-end:::  
 
- 
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

@@ -3,7 +3,7 @@ description: How to view Web SQL data from the Application panel of Microsoft Ed
 title: View Web SQL Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,20 +22,14 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# View Web SQL data with Microsoft Edge DevTools   
-
-
+# View Web SQL data with Microsoft Edge DevTools  
 
 > [!WARNING]
 > The Web SQL specification is [not being maintained][W3CWebSQLStatus].  
 
 This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect Web SQL data.  
 
-## View Web SQL Data   
+## View Web SQL Data  
 
 1.  Select the **Sources** tab to open the **Sources** panel.  The **Manifest** pane usually opens by default.  
     
@@ -55,27 +49,27 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
        View the data of a Web SQL table  
     :::image-end:::  
     
-## Edit Web SQL data   
+## Edit Web SQL data  
 
 You are not able to edit Web SQL data when viewing a Web SQL table, such as in **Figure 3** above.  But you may run statements from the Web SQL Console that edit or delete tables.  See [Run Web SQL queries](#run-web-sql-queries).  
 
-## Run Web SQL queries   
+## Run Web SQL queries  
 
 1.  Select a database to open a console for that database.  
-1.  Type a Web SQL statement, then press `Enter` to run it.  
+1.  Type a Web SQL statement, then select `Enter` to run it.  
     
     :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Use the Web SQL Console to delete a row from a table" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
        Use the Web SQL Console to delete a row from a table  
     :::image-end:::  
     
-## Refresh a Web SQL table   
+## Refresh a Web SQL table  
 
 DevTools does not update tables in real-time.  To update the data in a table:  
 
 1.  [View the data in a Web SQL table](#view-web-sql-data).  
-1.  Select **Refresh** \(![Refresh][ImageRefreshIcon]\).  
+1.  Choose **Refresh** \(![Refresh][ImageRefreshIcon]\).  
     
-## Filter out columns in a Web SQL table   
+## Filter out columns in a Web SQL table  
 
 1.  [View the data in a Web SQL table](#view-web-sql-data).  
 1.  Use the **Visible columns** text box to specify what columns you want to show.  Provide the column names as a CSV list.  
@@ -84,7 +78,7 @@ DevTools does not update tables in real-time.  To update the data in a table:
        Use the **Visible Columns** text box to reduce the number of columns shown  
     :::image-end:::  
     
-## Delete all Web SQL data   
+## Delete all Web SQL data  
 
 1.  Open the **Clear Storage** pane.  
 1.  Make sure that the **Web SQL** checkbox is enabled.  
@@ -93,17 +87,15 @@ DevTools does not update tables in real-time.  To update the data in a table:
        The **Web SQL** checkbox  
     :::image-end:::  
     
-1.  Select **Clear site data**.  
+1.  Choose **Clear site data**.  
     
     :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="The Clear Site Data button" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
        The **Clear Site Data** button  
     :::image-end:::  
     
-<!--  
- 
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
--->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
