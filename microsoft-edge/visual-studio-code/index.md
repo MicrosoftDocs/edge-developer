@@ -3,7 +3,7 @@ description: Microsoft Edge (Chromium) and Visual Studio Code
 title: Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 010/23/2020
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger, webhint
