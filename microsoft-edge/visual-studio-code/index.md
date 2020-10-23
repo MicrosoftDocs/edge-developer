@@ -48,7 +48,7 @@ Search the Marketplace for the specific extension and select **Install**.
    :::column-end:::
 :::row-end:::  
 
-## [Debugger for Microsoft Edge](#tab/debugger/)  
+## Debugger for Microsoft Edge  
 
 With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio Code extension, debug your front-end JavaScript code line-by-line and see `console.log()` statements directly from [Visual Studio Code][VisualstudioCode]!  
       
@@ -58,7 +58,7 @@ Using the Debugger tool, you may launch or attach to both Microsoft Edge \(EdgeH
    Debugger for Edge Visual Studio Code extension in action
 :::image-end:::  
 
-## [Elements for Microsoft Edge](#tab/elements/)  
+## Elements for Microsoft Edge  
       
 With the [Elements for Microsoft Edge][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] Visual Studio Code extension, use the Elements tool of the Microsoft Edge browser from within Visual Studio Code.  By either launching or attaching, the Elements tool connects to an instance of Microsoft Edge, displays the runtime HTML structure, and allows you to alter the layout or fix styling issues.  
       
@@ -68,7 +68,7 @@ For more information, navigate to [Elements for Microsoft Edge Visual Studio Cod
    Elements for Edge Visual Studio Code extension in action
 :::image-end:::  
 
-## [webhint](#tab/webhint/)  
+## webhint  
       
 Use [webhint][WebhintMain], a customizable linting tool, to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.  It checks your code for best practices and common errors. The webhint open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation][OpenjsFoundation].  The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.  <!--Select the following image to see the extension in action.  -->  
       
@@ -79,8 +79,6 @@ Use [webhint][WebhintMain], a customizable linting tool, to improve the accessib
 Identify and fix problems in your HTML, CSS, JavaScript, TypeScript, and more by adding the [webhint extension for Visual Studio Code][VisualstudioMarketplaceWebhint].  Hints appear as inline underlines and are summarized in the **Problems** pane.  
       
 For more information, navigate to [How to use webhint in Visual Studio Code][VisualStudioCodeWebhint].  
-
-* * *  
 
 <!--links -->  
 
