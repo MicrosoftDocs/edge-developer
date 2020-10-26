@@ -3,7 +3,7 @@ description: A comprehensive reference of Microsoft Edge DevTools Network panel 
 title: Network Analysis reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/30/2020 
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -43,12 +43,12 @@ By default, DevTools record all network requests in the Network panel, so long a
 
 To stop recording requests, complete the following steps.  
 
-1.  Select **Stop recording network log** \(![Stop recording network log][ImageRecordOnIcon]\) on the **Network** panel.  It turns grey to indicate that DevTools is no longer recording requests.  
-1.  Press `Control`+`E` \(Windows\) or `Command`+`E` \(macOS\) while the **Network** panel is in focus.  
+1.  Choose **Stop recording network log** ![Stop recording network log][ImageRecordOnIcon] on the **Network** panel.  It turns grey to indicate that DevTools is no longer recording requests.  
+1.  Select `Control`+`E` \(Windows, Linux\) or `Command`+`E` \(macOS\) while the **Network** panel is in focus.  
 
 ### Clear requests  
 
-Select **Clear** \(![Clear][ImageClearIcon]\) on the Network panel to clear all requests from the Requests table.  
+Choose **Clear** \(![Clear][ImageClearIcon]\) on the Network panel to clear all requests from the Requests table.  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="The Clear button" lightbox="../media/network-network-clear-button.msft.png":::
    The **Clear** button  
@@ -66,7 +66,7 @@ To save requests across page loads, check the **Preserve log** checkbox on the N
 
 Capture screenshots to analyze what displays for users while waiting for your page to load.  
 
-To enable screenshots, select **Network settings** and select **Capture screenshots** checkbox on the **Network** panel.  
+To enable screenshots, choose **Network settings** and choose **Capture screenshots** checkbox on the **Network** panel.  
 
 Refresh the page while the **Network** panel is in focus to capture screenshots.  
 
@@ -82,7 +82,7 @@ After capturing a screenshot, you interact with it in the following ways.
 
 <!--  ### Replay XHR request  -->
 
-<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu \(right-click\), and select **Replay XHR**.  -->
+<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu \(right-click\), and choose **Replay XHR**.  -->
 
 <!--  
 :::image type="complex" source="../media/network-replay-xhr.msft.png" alt-text="Selecting Replay XHR" lightbox="../media/network-replay-xhr.msft.png":::
@@ -111,7 +111,7 @@ If you want to disable the cache while working in other DevTools panels, use the
 
 ### Manually clear the browser cache  
 
-To manually clear the browser cache at any time, open the contextual menu \(right-click\) anywhere in the Requests table and select **Clear Browser Cache**.  
+To manually clear the browser cache at any time, open the contextual menu \(right-click\) anywhere in the Requests table and choose **Clear Browser Cache**.  
 
 :::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="Selecting Clear Browser Cache" lightbox="../media/network-network-clear-browser-cache.msft.png":::
    Selecting **Clear Browser Cache**  
@@ -123,7 +123,7 @@ A new class of web apps, named [Progressive Web Apps][DevtoolsProgressiveWebApps
 
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
-Select the **Online** dropdown menu, search under **Presets**, and select **Offline** to simulate an offline network experience.  
+Select the **Online** dropdown menu, search under **Presets**, and choose **Offline** to simulate an offline network experience.  
 
 :::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="The Offline dropdown menu" lightbox="../media/network-network-offline-dropdown.msft.png":::
    The **Offline** dropdown menu  
@@ -152,7 +152,7 @@ If you want to throttle the network connection while working in other DevTools p
 
 ### Manually clear browser cookies  
 
-To manually clear browser cookies at any time, open the contextual menu \(right-click\) anywhere in the Requests table and select **Clear Browser Cookies**.  
+To manually clear browser cookies at any time, open the contextual menu \(right-click\) anywhere in the Requests table and choose **Clear Browser Cookies**.  
 
 :::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="Selecting Clear Browser Cookies" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
    Selecting **Clear Browser Cookies**  
@@ -288,7 +288,7 @@ To filter requests by request type, select the one of the following buttons on t
 If the buttons do not display, the **Filters** pane may be hidden.  
 For more information, navigate to [Hide the Filters pane](#hide-the-filters-pane).  
 
-To enable multiple type filters simultaneously, hold `Control` \(Windows\) or `Command` \(macOS\) and then select.  
+To enable multiple type filters simultaneously, hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and then select.  
 
 :::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Using the Type filters to display JS, CSS, and Document resources" lightbox="../media/network-network-type-filters.msft.png":::
    Using the Type filters to display JS, CSS, and Document resources  
@@ -458,7 +458,7 @@ Hover on the header of the Requests table, open the contextual menu \(right-clic
 
 #### Add custom columns  
 
-To add a custom column to the Requests table, hover on the header of the Requests table, open the contextual menu \(right-click\), and select **Response Headers** > **Manage Header Columns**.  
+To add a custom column to the Requests table, hover on the header of the Requests table, open the contextual menu \(right-click\), and choose **Response Headers** > **Manage Header Columns**.  
 
 :::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Adding a custom column to the Requests table" lightbox="../media/network-network-requests-add-custom.msft.png":::
    Adding a custom column to the Requests table  
@@ -544,7 +544,7 @@ To view HTTP header data about a request, use the following steps.
 By default, the Headers tab shows header names alphabetically.  To view the HTTP header names in the order received, use the following steps.  
 
 1.  Open the **Headers** tab for the request that interests you.  For more information, navigate to [View HTTP headers](#view-http-headers).  
-1.  Select **view source**, next to the **Request Header** or **Response Header** section.  
+1.  Choose **view source**, next to the **Request Header** or **Response Header** section.  
 
 ### View query string parameters  
 
@@ -562,14 +562,14 @@ To view the query string parameters of a URL in a human-readable format, use the
 To view the query string parameter source of a request, use the following steps.  
 
 1.  Go to the Query String Parameters section.  For more information, navigate to [View query string parameters](#view-query-string-parameters).  
-1.  Select **view source**.  
+1.  Choose **view source**.  
 
 #### View URL-encoded query string parameters  
 
 To view query string parameters in a human-readable format, but with encodings preserved, use the following steps.  
 
 1.  Go to the Query String Parameters section.  For more information, navigate to [View query string parameters](#view-query-string-parameters).  
-1.  Select **view URL encoded**.  
+1.  Choose **view URL encoded**.  
 
 ### View cookies  
 
@@ -801,7 +801,7 @@ Select the **Use large request rows** checkbox and then look at the bottom value
 To save all network requests to a HAR file, complete the following steps.  
 
 1.  Hover on any request in the Requests table and open the contextual menu \(right-click\).  
-1.  Select **Save as HAR with Content**.  DevTools saves all requests that have occurred since you opened DevTools to the HAR file.  You are not able to filter requests.  You are also not able to save a single request.  
+1.  Choose **Save as HAR with Content**.  DevTools saves all requests that have occurred since you opened DevTools to the HAR file.  You are not able to filter requests.  You are also not able to save a single request.  
 
 Once you save a HAR file, you may import it back into DevTools for analysis.  Just drag-and-drop the HAR file into the Requests table.  
 <!--For more information, navigate to also [HAR Analyzer][HARAnalyzer].  -->  
@@ -885,7 +885,7 @@ You may expand or collapse sections of the Network panel UI to focus important i
 ### Hide the Filters pane  
 
 By default, DevTools show the **Filters pane**.  
-Select **Filter** \(![Filter][ImageFilterIcon]\) to hide it.  
+Choose **Filter** \(![Filter][ImageFilterIcon]\) to hide it.  
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="The Hide Filters button" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    The Hide Filters button  
@@ -912,6 +912,10 @@ By default, DevTools show the **Overview pane**.  Deselect the **Show Overview**
 :::image type="complex" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="The Show Overview checkbox" lightbox="../media/network-network-requests-show-overview-off.msft.png":::
    The **Show Overview** checkbox  
 :::image-end:::  
+
+## Getting in touch with the Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

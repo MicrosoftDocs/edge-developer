@@ -3,7 +3,7 @@ description: Identify expensive functions using the Microsoft Edge DevTools Memo
 title: Speed Up JavaScript Runtime
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -41,7 +41,7 @@ If you notice jank in your JavaScript, collect a Sampling Profile.  Sampling Pro
 
 1.  Go to the **Memory** panel of DevTools.  
 1.  Select the **Allocation sampling** radio button.  
-1.  Select **Start**.  
+1.  Choose **Start**.  
 1.  Depending on what you are trying to analyze, you may either reload the page, interact with the page, or just let the page run.  
 1.  Select the **Stop** button when you are finished.  
     

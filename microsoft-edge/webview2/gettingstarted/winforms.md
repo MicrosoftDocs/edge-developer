@@ -1,18 +1,18 @@
 ---
-description: Host web content in your Windows Forms app with the Microsoft Edge WebView 2 control
-title: Microsoft Edge WebView 2 for Windows Forms apps
+description: Getting started guide with WebView2 for WinForms apps
+title: Getting started with WebView2 for WinForms apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2020
+ms.date: 10/15/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, winforms apps, winforms, edge, CoreWebView2, browser control, edge html, getting started, Getting Started, .NET, windows forms
 ---
 
-# Getting started with WebView2 in Windows Forms apps (Preview)  
+# Getting started with WebView2 in Windows Forms (Preview)  
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](/microsoft-edge/hosting/webview2/index).  For more information on individual APIs, see [API reference](../reference/dotnet/0-9-628-reference-webview2.md).  
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](/microsoft-edge/webview2/index).  For more information on individual APIs, see [API reference](/dotnet/api/microsoft.web.webview2.winforms).  
 
 ## Prerequisites  
 
@@ -46,8 +46,8 @@ Next add the WebView2 SDK to the project.  For the preview, install the WebView2
 
 1. Open the context menu on the project \(right-click\), and choose **Manage NuGet Packages...**.  
 
-    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Nuget":::
-       Nuget
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Manage NuGet Packages":::
+       Manage NuGet Packages
     :::image-end:::
 
 1. Enter `Microsoft.Web.WebView2` in the search bar.  Choose **Microsoft.Web.WebView2** from the search results.  
@@ -66,17 +66,23 @@ You are all set to start developing applications using the WebView2 API.  Select
 Next add a WebView to your application.  
 
 1. Open the **Windows Forms Designer**.  
-1. Search for **WebView2** in the **Toolbox**. Drag and drop the **WebView2** control into the Windows Forms App
-
-    ![toolbox](./media/winforms-toolbox.png)
+1. Search for **WebView2** in the **Toolbox**. Drag and drop the **WebView2** control into the Windows Forms App.
+    
+    :::image type="complex" source="./media/winforms-toolbox.png" alt-text="Toolbox displaying WebView2":::
+       Toolbox displaying WebView2
+    :::image-end:::  
 
 1. Change the `Name` property to `webView`.
-
-    ![toolbox](./media/winforms-properties.png)
+    
+    :::image type="complex" source="./media/winforms-properties.png" alt-text="Properties of the WebView2 control":::
+       Properties of the WebView2 control
+    :::image-end:::
 
 1. The `Source` property sets the initial URI displayed in the WebView2 control. Set the Source property to <https://www.microsoft.com>
-
-    ![toolbox](./media/winforms-source.png)
+    
+    :::image type="complex" source="./media/winforms-source.png" alt-text="The Source property of the WebView2 control":::
+       The Source property of the WebView2 control
+    :::image-end:::
 
 Select `F5` to build and run your project.  Confirm that your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).
 
@@ -292,7 +298,7 @@ Congratulations, you built your first WebView2 app!
 ## Next steps 
 
 * Checkout the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) for a comprehensive example of WebView2's capabilities
-* Checkout [API reference](../reference/winforms/0-9-515/microsoft-web-webview2-winforms-webview2.md) for more detailed information about our APIs
+* Checkout [API reference](/dotnet/api/microsoft.web.webview2.winforms.webview2) for more detailed information about our APIs
 * Checkout a list of [WebView2 Resources](../index.md#next-steps) to learn more about WebView2
 
 
