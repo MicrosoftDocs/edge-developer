@@ -29,7 +29,7 @@ If you find yourself running the same code in the [Console][DevtoolsConsoleIndex
 > [!NOTE]
 > Snippets are an alternative to [bookmarklets][WikiBookmarklet] with the difference that they only run in DevTools and are not limited to the allowed length of a URL.  
 
-Snippets are an excellent way to change a few things in a third party web site as your code is added to the current page and executed in its context. If you want to change existing code of a web page check out the [DevtoolsOverrides][SourcesOverrides] functionality in the [Sources][DevToolsSourcesPanel] panel.
+Snippets are an excellent way to change a few things in a third party web site as your code is added to the current page and executed in its context. If you want to change existing code of a web page check out the [Overrides][DevtoolsOverrides] functionality in the [Sources][DevToolsSourcesPanel] panel.
 
 For example, in the following figure shows the DevTools homepage on the left and some Snippet source code on the right.  
 
