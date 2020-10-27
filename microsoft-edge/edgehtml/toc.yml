@@ -1,9 +1,10 @@
 - name: Legacy Microsoft Edge documentation
   expanded: true
   items: 
-    - name: Dev guide (EdgeHtml)
-      href: dev-guide/index.md
+    - name: Legacy Dev guide
       items: 
+        - name: Dev guide (EdgeHtml) overview
+          href: dev-guide/index.md
         - name: What's new in EdgeHTML
           href: dev-guide/whats-new.md
           items: 
@@ -42,9 +43,11 @@
               href: dev-guide/windows-integration/web-authentication.md
             - name: Web Notifications API
               href: dev-guide/windows-integration/web-Notifications-API.md
-    - name: DevTools (EdgeHTML)
+    - name: Legacy DevTools
       href: devtools-guide/index.md
       items: 
+        - name: DevTools (EdgeHTML) overview
+          href: devtools-guide/index.md
         - name: What's new
           href: devtools-guide/whats-new.md
           items: 
@@ -92,9 +95,10 @@
           href: devtools-guide/service-workers.md
         - name: Emulation
           href: devtools-guide/emulation.md
-    - name: DevTools Protocol (EdgeHTML)
-      href: devtools-protocol/index.md
+    - name: Legacy DevTools Protocol
       items: 
+        - name: DevTools Protocol (EdgeHTML)
+          href: devtools-protocol/index.md
         - name: 0.1
           href: devtools-protocol/0.1/index.md
           items: 
@@ -139,9 +143,10 @@
                   href: devtools-protocol/0.2/domains/runtime.md
                 - name: Schema
                   href: devtools-protocol/0.2/domains/schema.md
-    - name: Extensions (EdgeHTML)
-      href: extensions/index.md
-      items: 
+    - name: Legacy Extensions
+      items:
+        - name: Extensions (EdgeHTML)
+          href: extensions/index.md
         - name: API support
           href: extensions/API-support.md
           items: 
@@ -196,13 +201,14 @@
           href: extensions/tips-and-tricks.md
         - name: Troubleshooting
           href: extensions/troubleshooting.md
-    - name: Hosting
+    - name: Legacy Hosting
       href: hosting/toc.md
-    - name: Performance analysis
+    - name: Legacy Performance analysis
       href: performance-analysis/index.md
-    - name: Progressive Web Apps (EdgeHTML)
-      href: progressive-web-apps/index.md
+    - name: Legacy Progressive Web Apps
       items: 
+        - name: Progressive Web Apps (EdgeHTML)
+          href: progressive-web-apps/index.md
         - name: Get started with PWAs (EdgeHTML)
           href: progressive-web-apps/get-started.md
         - name: Tailor your PWA for Windows
@@ -212,8 +218,10 @@
               href: progressive-web-apps/xbox-considerations.md
         - name: PWAs in the Microsoft Store
           href: progressive-web-apps/microsoft-store.md
-    - name: WebDriver (EdgeHTML)
-      href: webdriver/index.md
+    - name: Legacy WebDriver
+      items:
+        - name: WebDriver (EdgeHTML) overview
+          href: webdriver/index.md
     - name: Windows Runtime (WinRT)
       href: windows-runtime/toc.yml
       topicHref: windows-runtime/index.md
