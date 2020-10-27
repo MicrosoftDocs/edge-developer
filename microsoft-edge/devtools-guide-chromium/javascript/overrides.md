@@ -19,7 +19,7 @@ You can take any of the page resources of the current web site and store them lo
 
 ## Setting up your local folder to store Overrides
 
-1. In the sources panel you find several sections on the left hand side. If you can't see the **Overrides** option, click the ≫ icon to get there.
+1.  In the sources panel you find several sections on the left hand side. If you can't see the **Overrides** option, click the ≫ icon to get there.
 
     :::image type="complex" source="images/overrides-overflow-menu.png" alt-text="Sources Panel with not enough space to show the overrides option" lightbox="images/overrides-overflow-menu.png":::
       Sources Panel with not enough space to show the overrides option 
@@ -29,19 +29,19 @@ You can take any of the page resources of the current web site and store them lo
       Selecting the overrides option
     :::image-end:::  
 
-1. Once you selected the **Overrides** option you need to choose a folder on your local computer to store the files you want to replace. Click the "+ Select folder for overrides" to navigate to a folder. 
+1.  Once you selected the **Overrides** option you need to choose a folder on your local computer to store the files you want to replace. Click the "+ Select folder for overrides" to navigate to a folder. 
 
     :::image type="complex" source="images//overrides-select-folder.png" alt-text="Selecting a folder to use for overrides" lightbox="images//overrides-select-folder.png":::
       Selecting a folder to use for overrides 
     :::image-end:::  
 
-1. DevTools warns you that it requests full access to this folder and that you shouldn't reveal any sensitive information. Click **Allow** on the warning bar to grant access and it will go away. 
+1.  DevTools warns you that it requests full access to this folder and that you shouldn't reveal any sensitive information. Click **Allow** on the warning bar to grant access and it will go away. 
 
     :::image type="complex" source="images//overrides-give-access-to-folder.png" alt-text="Allowing DevTools access to folder" lightbox="images//overrides-give-access-to-folder":::
       Allowing DevTools access to folder 
     :::image-end:::  
 
-1. In the Overrides pane you will now see a checkbox allowing you to "Enable Local Overrides" and your overrides folder. Next to it is also an icon that allows you to delete your local overrides setup. You are now done setting up your folder and ready to replace live resources with local ones.
+1.  In the Overrides pane you will now see a checkbox allowing you to "Enable Local Overrides" and your overrides folder. Next to it is also an icon that allows you to delete your local overrides setup. You are now done setting up your folder and ready to replace live resources with local ones.
 
     :::image type="complex" source="images//overrides-folder-setup-complete.png" alt-text="Successful setup of an overrides folder" lightbox="images//overrides-folder-setup-complete.png":::
       Successful setup of an overrides folder 
