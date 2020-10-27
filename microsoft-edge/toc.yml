@@ -5,7 +5,7 @@
     # - name: Microsoft Edge developer documentation
     #   href: developer/index.yml
     - name: Accessibility
-      href: accessibility.md
+      href: accessibility/index.md
       items: 
         - name: Design
           href: accessibility/design.md
@@ -16,52 +16,11 @@
               href: accessibility/build/ARIA-and-UI-Automation.md
         - name: Test
           href: accessibility/test.md
-    - name: Dev guide
-      href: dev-guide.md
-      items: 
-        - name: What's new in EdgeHTML
-          href: dev-guide/whats-new.md
-          items: 
-            - name: EdgeHTML 17
-              href: dev-guide/whats-new/edgeHTML-17.md
-            - name: EdgeHTML 16
-              href: dev-guide/whats-new/edgeHTML-16.md
-            - name: EdgeHTML 15
-              href: dev-guide/whats-new/edgeHTML-15.md
-            - name: EdgeHTML 14
-              href: dev-guide/whats-new/edgeHTML-14.md
-            - name: EdgeHTML 13
-              href: dev-guide/whats-new/edgeHTML-13.md
-            - name: EdgeHTML 12
-              href: dev-guide/whats-new/edgeHTML-12.md
-              items: 
-                - name: JavaScript version information
-                  href: dev-guide/whats-new/javascript-version-information.md
-        - name: Browser features
-          href: dev-guide/browser-features.md
-          items: 
-            - name: Autoplay policies
-              href: dev-guide/browser-features/autoplay-policies.md
-            - name: Flash
-              href: dev-guide/browser-features/flash.md
-            - name: Reading view
-              href: dev-guide/browser-features/reading-view.md
-            - name: Search provider discovery
-              href: dev-guide/browser-features/search-provider-discovery.md
-        - name: Windows integration features
-          href: dev-guide/windows-integration.md
-          items: 
-            - name: Payment Request API
-              href: dev-guide/windows-integration/Payment-Request-API.md
-            - name: Web authentication
-              href: dev-guide/windows-integration/web-authentication.md
-            - name: Web Notifications API
-              href: dev-guide/windows-integration/web-Notifications-API.md
     - name: DevTools (Chromium)
-      href: devtools-guide-chromium.md
+      href: devtools-guide-chromium/index.md
       items: 
         - name: Open DevTools
-          href: devtools-guide-chromium/open.md
+          href: devtools-guide-chromium/open/index.md
         - name: What's new
           items: 
             - name: Microsoft Edge 87
@@ -79,9 +38,9 @@
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
         - name: Experimental features
-          href: devtools-guide-chromium/experimental-features.md
+          href: devtools-guide-chromium/experimental-features/index.md
         - name: IE mode
-          href: devtools-guide-chromium/ie-mode.md
+          href: devtools-guide-chromium/ie-mode/index.md
         - name: 3D view
           href: devtools-guide-chromium/3d-view/index.md
         - name: DevTools for beginners
@@ -181,7 +140,7 @@
             - name: Snippets
               href: devtools-guide-chromium/javascript/snippets.md
             - name: Sources panel overview
-              href: devtools-guide-chromium/sources.md
+              href: devtools-guide-chromium/sources/index.md
             - name: Debug background services
               href: devtools-guide-chromium/javascript/background-services.md
             - name: Guides
@@ -266,105 +225,8 @@
               href: devtools-guide-chromium/customize/localization.md
             - name: Shortcuts
               href: devtools-guide-chromium/customize/shortcuts.md
-    - name: DevTools (EdgeHTML)
-      href: devtools-guide.md
-      items: 
-        - name: What's new
-          href: devtools-guide/whats-new.md
-          items: 
-            - name: EdgeHTML 17
-              href: devtools-guide/whats-new/edgehtml-17.md
-            - name: EdgeHTML 16
-              href: devtools-guide/whats-new/edgehtml-16.md
-        - name: Elements
-          href: devtools-guide/elements.md
-          items: 
-            - name: Styles
-              href: devtools-guide/elements/styles.md
-            - name: Computed
-              href: devtools-guide/elements/computed.md
-            - name: Events
-              href: devtools-guide/elements/events.md
-            - name: DOM breakpoints
-              href: devtools-guide/elements/dom-breakpoints.md
-            - name: Fonts
-              href: devtools-guide/elements/fonts.md
-            - name: Accessibility
-              href: devtools-guide/elements/accessibility.md
-            - name: Changes
-              href: devtools-guide/elements/changes.md
-        - name: Console
-          href: devtools-guide/console.md
-          items: 
-            - name: Console API
-              href: devtools-guide/console/console-api.md
-            - name: Command line
-              href: devtools-guide/console/command-line.md
-            - name: Error and status codes
-              href: devtools-guide/console/error-and-status-codes.md
-        - name: Debugger
-          href: devtools-guide/debugger.md
-        - name: Network
-          href: devtools-guide/network.md
-        - name: Performance
-          href: devtools-guide/performance.md
-        - name: Memory
-          href: devtools-guide/memory.md
-        - name: Storage
-          href: devtools-guide/storage.md
-        - name: Service workers
-          href: devtools-guide/service-workers.md
-        - name: Emulation
-          href: devtools-guide/emulation.md
     - name: DevTools Protocol (Chromium)
-      href: devtools-protocol-chromium.md
-    - name: DevTools Protocol (EdgeHTML)
-      href: devtools-protocol/index.md
-      items: 
-        - name: 0.1
-          href: devtools-protocol/0.1/index.md
-          items: 
-            - name: Clients
-              href: devtools-protocol/0.1/clients.md
-            - name: HTTP endpoints
-              href: devtools-protocol/0.1/http.md
-            - name: Domains
-              href: devtools-protocol/0.1/domains/index.md
-              items: 
-                - name: Debugger
-                  href: devtools-protocol/0.1/domains/debugger.md
-                - name: Page
-                  href: devtools-protocol/0.1/domains/page.md
-                - name: Runtime
-                  href: devtools-protocol/0.1/domains/runtime.md
-                - name: Schema
-                  href: devtools-protocol/0.1/domains/schema.md
-        - name: 0.2
-          href: devtools-protocol/0.2/index.md
-          items: 
-            - name: Clients
-              href: devtools-protocol/0.2/clients.md
-            - name: HTTP endpoints
-              href: devtools-protocol/0.2/http.md
-            - name: Domains
-              href: devtools-protocol/0.2/domains/index.md
-              items: 
-                - name: CSS
-                  href: devtools-protocol/0.2/domains/css.md
-                - name: DOM
-                  href: devtools-protocol/0.2/domains/dom.md
-                - name: DOMDebugger
-                  href: devtools-protocol/0.2/domains/domdebugger.md
-                - name: Debugger
-                  href: devtools-protocol/0.2/domains/debugger.md
-                - name: Overlay
-                  href: devtools-protocol/0.2/domains/overlay.md
-                - name: Page
-                  href: devtools-protocol/0.2/domains/page.md
-                - name: Runtime
-                  href: devtools-protocol/0.2/domains/runtime.md
-                - name: Schema
-                  href: devtools-protocol/0.2/domains/schema.md
+      href: devtools-protocol-chromium/index.md
     - name: Extensions (Chromium)
       href: extensions-chromium/index.md
       items: 
@@ -416,69 +278,8 @@
               href: extensions-chromium/enterprise/match-patterns.md
             - name: Hosting and updating
               href: extensions-chromium/enterprise/hosting-and-updating.md
-    - name: Extensions (EdgeHTML)
-      href: extensions/index.md
-      items: 
-        - name: API support
-          href: extensions/API-support.md
-          items: 
-            - name: Extension API roadmap
-              href: extensions/API-support/extension-API-roadmap.md
-            - name: Supported APIs
-              href: extensions/API-support/supported-APIs.md
-            - name: Supported manifest keys
-              href: extensions/API-support/supported-manifest-keys.md
-              items: 
-                - name: JSON manifest example
-                  href: extensions/API-support/supported-manifest-keys/json-manifest-example.md
-        - name: Extensions for enterprise
-          href: extensions/extensions-for-enterprise.md
-        - name: Getting started
-          href: extensions/getting-started.md
-        - name: Guides
-          href: extensions/guides.md
-          items: 
-            - name: Accessibility
-              href: extensions/guides/accessibility.md
-            - name: Adding and removing extensions
-              href: extensions/guides/adding-and-removing-extensions.md
-            - name: Creating an extension
-              href: extensions/guides/creating-an-extension.md
-            - name: Debugging extensions
-              href: extensions/guides/debugging-extensions.md
-            - name: Design
-              href: extensions/guides/design.md
-            - name: Internationalization
-              href: extensions/guides/internationalization.md
-            - name: Native messaging
-              href: extensions/guides/native-messaging.md
-            - name: Packaging
-              href: extensions/guides/packaging.md
-              items: 
-                - name: Creating and testing extension packages
-                  href: extensions/guides/packaging/creating-and-testing-extension-packages.md
-                - name: Extensions in the Windows Dev Center
-                  href: extensions/guides/packaging/extensions-in-the-windows-dev-center.md
-                - name: Localizing extension packages
-                  href: extensions/guides/packaging/localizing-extension-packages.md
-                - name: Using ManifoldJS to package extensions
-                  href: extensions/guides/packaging/using-ManifoldJS-to-package-extensions.md
-                - name: Running the Windows App Certification Kit
-                  href: extensions/guides/packaging/running-the-windows-app-certification-kit.md
-            - name: Porting Chrome extensions
-              href: extensions/guides/porting-Chrome-extensions.md
-        - name: Microsoft browser extension policy
-          href: extensions/microsoft-browser-extension-policy.md
-        - name: Tips and tricks
-          href: extensions/tips-and-tricks.md
-        - name: Troubleshooting
-          href: extensions/troubleshooting.md
-    - name: Hosting
-      href: hosting/toc.md
     - name: Origin Trials
       href: origin-trials/index.md
-    - name: Performance analysis
-      href: performance-analysis.md
     - name: Privacy whitepaper
       href: privacy-whitepaper.md
     - name: Progressive Web Apps (Chromium)
@@ -492,18 +293,6 @@
           href: progressive-web-apps-chromium/serviceworker.md
         - name: Web app manifests
           href: progressive-web-apps-chromium/webappmanifests.md
-    - name: Progressive Web Apps (EdgeHTML)
-      href: progressive-web-apps-edgehtml/index.md
-      items: 
-        - name: Get started with PWAs (EdgeHTML)
-          href: progressive-web-apps-edgehtml/get-started.md
-        - name: Tailor your PWA for Windows
-          href: progressive-web-apps-edgehtml/windows-features.md
-          items: 
-            - name: PWAs for Xbox
-              href: progressive-web-apps-edgehtml/xbox-considerations.md
-        - name: PWAs in the Microsoft Store
-          href: progressive-web-apps-edgehtml/microsoft-store.md
     - name: Puppeteer
       href: puppeteer.md
     - name: Visual Studio
@@ -518,9 +307,7 @@
         - name: webhint
           href: visual-studio-code/webhint.md
     - name: WebDriver (Chromium)
-      href: webdriver-chromium.md
-    - name: WebDriver (EdgeHTML)
-      href: webdriver.md
+      href: webdriver-chromium/index.md
     - name: Web platform (Chromium)
       items: 
         - name: Site compatibility-impacting changes coming to Microsoft Edge
@@ -533,6 +320,5 @@
       href: webview2/toc.yml
     - name: WebVR developer guide
       href: /microsoft-edge/webvr/index
-    - name: Windows Runtime (WinRT)
-      href: windows-runtime/toc.yml
-      topicHref: windows-runtime/index.md
+    - name: Legacy 
+      href: edgehtml/toc.yml
