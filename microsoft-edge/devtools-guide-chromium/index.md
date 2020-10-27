@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-# Microsoft Edge (Chromium) Developer Tools  
+# Microsoft Edge (Chromium) Developer Tools overview  
 
 Microsoft Edge has adopted the Chromium open source project to create better web compatibility and less fragmentation of different underlying web platforms.  This change should make it easier for you to build and test your websites in Microsoft Edge and ensure that each works as expected even while viewed in a different Chromium-based browser \(such as Google Chrome, Vivaldi, Opera, or Brave\).  
 

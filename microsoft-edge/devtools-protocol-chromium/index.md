@@ -1,14 +1,13 @@
 ---
 description: Update to the Microsoft Edge DevTools Protocol
 title: Microsoft Edge DevTools Protocol Update
-author: zoherghadyali
-ms.author: zoghadya
-ms.date: 03/11/2019
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 10/27/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
-
-# Microsoft Edge (Chromium) DevTools Protocol
+# Microsoft Edge (Chromium) DevTools Protocol overview
 
 With the shift in the underlying web platform of Microsoft Edge to Chromium, the [Microsoft Edge (EdgeHTML) DevTools Protocol](./devtools-protocol/index.md) will not be receiving any further updates. The Microsoft Edge (Chromium) DevTools Protocol will match the APIs of the Chrome DevTools Protocol going forward. 
 

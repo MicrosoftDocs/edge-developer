@@ -3,14 +3,13 @@ description: Learn how to test your website or app in Microsoft Edge or automate
 title: WebDriver (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, html, css, javascript, developer, webdriver, selenium, testing, tools, automation, test
 ---
-
-# Use WebDriver (Chromium) for test automation  
+# Use WebDriver (Chromium) for test automation overview  
 
 WebDriver enables developers to create automated tests that simulate user interaction.  WebDriver tests and simulations differ from JavaScript unit tests because of the following reasons. 
 *   Accesses functionality and information not available to JavaScript running in browsers.  

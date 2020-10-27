@@ -5,8 +5,9 @@
     # - name: Microsoft Edge developer documentation
     #   href: developer/index.yml
     - name: Accessibility
-      href: accessibility/index.md
       items: 
+        - name: Accessibility overview
+          href: accessibility/index.md
         - name: Design
           href: accessibility/design.md
         - name: Build
@@ -17,8 +18,9 @@
         - name: Test
           href: accessibility/test.md
     - name: DevTools (Chromium)
-      href: devtools-guide-chromium/index.md
       items: 
+        - name: DevTools (Chromium) overview
+          href: devtools-guide-chromium/index.md
         - name: Open DevTools
           href: devtools-guide-chromium/open/index.md
         - name: What's new
@@ -65,7 +67,7 @@
               href: devtools-guide-chromium/css/print-preview.md
         - name: Console
           items: 
-            - name: Overview
+            - name: Console overview
               href: devtools-guide-chromium/console/index.md
             - name: Log messages
               href: devtools-guide-chromium/console/log.md
@@ -109,7 +111,7 @@
           href: devtools-guide-chromium/command-menu/index.md
         - name: Emulation
           items: 
-            - name: Overview
+            - name: Emulation overview
               href: devtools-guide-chromium/device-mode/index.md
             - name: Emulate and test other browsers
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
@@ -191,7 +193,7 @@
               href: devtools-guide-chromium/remote-debugging/windows.md
         - name: Memory
           items: 
-            - name: Overview
+            - name: Memory overview
               href: devtools-guide-chromium/memory-problems/index.md
             - name: Understand memory terminology
               href: devtools-guide-chromium/memory-problems/memory-101.md
@@ -215,7 +217,7 @@
           href: devtools-guide-chromium/resources/index.md
         - name: Customize
           items: 
-            - name: Overview
+            - name: Customize overview
               href: devtools-guide-chromium/customize/index.md
             - name: Dark theme
               href: devtools-guide-chromium/customize/dark-theme.md
@@ -226,10 +228,13 @@
             - name: Shortcuts
               href: devtools-guide-chromium/customize/shortcuts.md
     - name: DevTools Protocol (Chromium)
-      href: devtools-protocol-chromium/index.md
+      items:
+        - name: DevTools Protocol (Chromium) overview
+        href: devtools-protocol-chromium/index.md
     - name: Extensions (Chromium)
-      href: extensions-chromium/index.md
       items: 
+        - name: Extensions (Chromium) overview
+          href: extensions-chromium/index.md
         - name: Getting started
           items: 
             - name: Extension architecture
@@ -279,12 +284,17 @@
             - name: Hosting and updating
               href: extensions-chromium/enterprise/hosting-and-updating.md
     - name: Origin Trials
-      href: origin-trials/index.md
-    - name: Privacy whitepaper
-      href: privacy-whitepaper.md
-    - name: Progressive Web Apps (Chromium)
-      href: progressive-web-apps-chromium/index.md
       items:
+        - name: Origin Trials overview
+          href: origin-trials/index.md
+    - name: Privacy whitepaper
+      items:
+        - name: Privacy whitepaper
+          href: privacy-whitepaper/index.md
+    - name: Progressive Web Apps (Chromium)
+      items:
+        - name: Progressive Web Apps (Chromium) overview
+          href: progressive-web-apps-chromium/index.md
         - name: Get started with PWAs (Chromium)
           href: progressive-web-apps-chromium/get-started.md
         - name: Offline scenarios
@@ -294,20 +304,26 @@
         - name: Web app manifests
           href: progressive-web-apps-chromium/webappmanifests.md
     - name: Puppeteer
-      href: puppeteer.md
+      items:
+        - name: Puppeteer
+          href: puppeteer/index.md
     - name: Visual Studio
-      href: visual-studio/index.md
-    - name: Visual Studio Code
-      href: visual-studio-code/index.md
-      items: 
-        - name: Debugger for Edge
-          href: visual-studio-code/debugger-for-edge.md
-        - name: Microsoft Edge Devtools extension
-          href: visual-studio-code/microsoft-edge-devtools-extension.md
-        - name: webhint
-          href: visual-studio-code/webhint.md
+      items:
+        - name: Visual Studio overview
+          href: visual-studio/index.md
+        - name: Visual Studio Code overview
+          href: visual-studio-code/index.md
+          items: 
+            - name: Debugger for Edge extension
+              href: visual-studio-code/debugger-for-edge.md
+            - name: Microsoft Edge Devtools extension
+              href: visual-studio-code/microsoft-edge-devtools-extension.md
+            - name: webhint extension
+              href: visual-studio-code/webhint.md
     - name: WebDriver (Chromium)
-      href: webdriver-chromium/index.md
+      items:
+        - name: WebDriver (Chromium) overview
+          href: webdriver-chromium/index.md
     - name: Web platform (Chromium)
       items: 
         - name: Site compatibility-impacting changes coming to Microsoft Edge

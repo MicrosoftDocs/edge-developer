@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
 ---
-# Accessibility  
+# Accessibility overview  
 
 > "\[T\]he impact of disability is radically changed on the Web because the Web removes barriers to communication and interaction that many people face in the physical world." [(Accessibility | W3C)][W3CAccessibility]  
 

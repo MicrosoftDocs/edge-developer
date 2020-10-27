@@ -3,12 +3,11 @@ description: Microsoft Edge (Chromium) and Visual Studio
 title: Visual Studio
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/20/2019
+ms.date: 10/27/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs, visual studio, debugger
 ---
-
 # Visual Studio
 
 Microsoft [Visual Studio](https://visualstudio.microsoft.com/vs/) is an integrated development environment (IDE) that you can use to edit, debug, build, and publish your web applications. It is a feature-rich program that can be used for many aspects of your web development. Over and above the standard editor and debugger that most IDEs provide, Visual Studio includes compilers, code completion tools, graphical designers, and many more features to ease your development process. Head to [this page](https://visualstudio.microsoft.com/downloads/) to download Visual Studio if you aren't using it yet.

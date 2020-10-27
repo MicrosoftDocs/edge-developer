@@ -3,13 +3,12 @@ description: Host web content in your Win32, .NET, UWP applications with the Mic
 title: Microsoft Edge WebView2 Control
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 10/27/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, browser control, edge html, Windows Forms, WinForms, WPF, .NET, WinUI, Project Reunion
 ---
-
 # Introduction to Microsoft Edge WebView2  
 
 The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML, CSS, and JavaScript\) in your native applications.  The WebView2 control uses [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native applications.  With WebView2, you may embed web code in different parts of your native application, or build the entire native application within a single WebView.  For information on how to start building a WebView2 application, navigate to [Get Started](#getting-started).  

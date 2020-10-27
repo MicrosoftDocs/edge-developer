@@ -3,13 +3,12 @@ description: Microsoft Edge (Chromium) and Visual Studio Code
 title: Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/03/2020
+ms.date: 10/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger, webhint
 ---
-
-# Visual Studio Code  
+# Visual Studio Code overview  
 
 [Visual Studio Code][VisualStudioCodeDocs] is a lightweight, but powerful source code editor that runs on your desktop and is available for Windows, macOS, and Linux.  It comes with built-in support for JavaScript, TypeScript, and Node.js, so it is a great tool for web developers right out of the box!  If you are not using it yet, download [Visual Studio Code][VisualstudioCode].  
 
