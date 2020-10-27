@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge (Chromium) Developer Tools
 title: Microsoft Edge (Chromium) Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/22/2020
+ms.date: 10/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -64,7 +64,7 @@ The Microsoft Edge \(Chromium\) DevTools include the following panels.
     *   Fix each error.  
     *   Build a PWA.  
 
-[!INCLUDE [audits-panel-note](./devtools-guide-chromium/includes/audits-panel-note.md)]  
+[!INCLUDE [audits-panel-note](./includes/audits-panel-note.md)]  
 
 Please send your [feedback and feature requests](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
 
@@ -127,7 +127,7 @@ These shortcuts control the main DevTools window, work across all tools, or both
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](./devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
 If you want to preview the [latest features coming to the DevTools][DevtoolsGuideChromiumWhatsNewIndex], download [Microsoft Edge Canary][MicrosoftedgeinsiderDownload], which builds nightly.  
 

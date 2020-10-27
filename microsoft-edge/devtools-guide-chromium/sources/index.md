@@ -3,7 +3,7 @@ description: View and edit files, create Snippets, debug JavaScript, and set up 
 title: Sources panel overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 10/27/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -118,7 +118,7 @@ Navigate to [Edit Files With Workspaces][DevtoolsGuideChromiumWorkspacesIndex] t
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
