@@ -44,7 +44,6 @@
             - name: Web Notifications API
               href: dev-guide/windows-integration/web-Notifications-API.md
     - name: Legacy DevTools
-      href: devtools-guide/index.md
       items: 
         - name: DevTools (EdgeHTML) overview
           href: devtools-guide/index.md
