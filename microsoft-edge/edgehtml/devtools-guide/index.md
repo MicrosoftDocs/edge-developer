@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge (EdgeHTML) Developer Tools
 title: Microsoft Edge (EdgeHTML) Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -12,10 +12,9 @@ experimental: true
 experiment_id: "51fe4b97-3e55-41"
 ms.localizationpriority: high
 ---
-
 # Microsoft Edge (EdgeHTML) Developer Tools  
 
-[!INCLUDE [new-devtools-version-note](includes/new-devtools-version-note.md)]  
+[!INCLUDE [new-devtools-version-note](../includes/new-devtools-version-note.md)]  
 
 The Microsoft Edge \(EdgeHTML\) DevTools are built with [TypeScript][TypeScriptIndex], powered by [open source][GithubMicrosoftChakracore], optimized for modern front-end workflows, and now available as a [standalone Windows 10 app][MicrosoftStoreEdgeDevtoolsPreview] in the Microsoft Store!  
 
