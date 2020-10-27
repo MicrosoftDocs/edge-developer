@@ -47,7 +47,7 @@ The following sections describe the new experimental features that are available
 | [Enable Network Console](#enable-network-console) | 85 or later |  
 | [Source Order Viewer](#source-order-viewer) | 86 or later |  
 | [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor) | 87 or later |  
-| [Enable Composited Layers in 3D View][#enable-composited-layers-in-3d-view] | 87 or later |  
+| [Turn on Composited Layers in 3D View][#turn-on-composited-layers-in-3d-view] | 87 or later |  
 
 ### Emulation: Support dual screen mode  
 
@@ -255,7 +255,7 @@ When you are editing the keyboard shortcuts for an action, to discard your chang
 
 <!--Available in Microsoft Edge version 87 and later.  -->
 
-### Enable Composited Layers in 3D View
+### Turn on Composited Layers in 3D View
 
 You may now visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View with Composited Layers are now combined.  After enabling the experiment, ensure you restart the DevTools.  To use **Composited Layers**, complete the following steps.  
 
