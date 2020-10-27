@@ -1,6 +1,6 @@
-- name: Legacy Microsoft Edge documentation
-  expanded: true
-  items: 
+# - name: Legacy Microsoft Edge documentation
+#   expanded: true
+#   items: 
     - name: Legacy Dev guide
       items: 
         - name: Dev guide (EdgeHtml) overview
