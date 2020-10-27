@@ -1,5 +1,5 @@
 ---
-description: Reference for the Page Domain. Actions and events related to the inspected page belong to the page domain.
+description: DevTools Protocol Version 0.1 (EdgeHTML) Reference for the Page Domain. Actions and events related to the inspected page belong to the page domain.
 title: Page Domain - DevTools Protocol Version 0.1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel

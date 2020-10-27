@@ -1,4 +1,5 @@
 ---
+description: Special Error Properties from Asynchronous Windows Runtime Methods.
 title: "Special Error Properties from Asynchronous Windows Runtime Methods"
 ms.custom: ""
 ms.date: 07/29/2020

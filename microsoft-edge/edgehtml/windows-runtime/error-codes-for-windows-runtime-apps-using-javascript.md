@@ -1,4 +1,5 @@
 ---
+description: Error codes for Windows Runtime apps using JavaScript.
 title: "Error codes for Windows Runtime apps using JavaScript"
 ms.custom: ""
 ms.date: 07/29/2020

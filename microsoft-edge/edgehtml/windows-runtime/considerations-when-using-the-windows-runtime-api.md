@@ -1,4 +1,5 @@
 ---
+description: Considerations when Using the Windows Runtime API.
 title: "Considerations when Using the Windows Runtime API"
 ms.custom: ""
 ms.date: 07/29/2020

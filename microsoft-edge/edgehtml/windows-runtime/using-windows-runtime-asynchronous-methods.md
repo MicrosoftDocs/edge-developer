@@ -1,4 +1,5 @@
 ---
+description: Using Windows Runtime Asynchronous Methods.
 title: "Using Windows Runtime Asynchronous Methods"
 ms.custom: ""
 ms.date: 07/29/2020

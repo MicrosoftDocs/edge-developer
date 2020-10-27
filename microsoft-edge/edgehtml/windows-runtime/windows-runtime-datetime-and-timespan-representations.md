@@ -1,4 +1,5 @@
 ---
+description: Windows Runtime DateTime and TimeSpan Representations
 title: "Windows Runtime DateTime and TimeSpan Representations"
 ms.custom: ""
 ms.date: 07/29/2020

@@ -3,7 +3,7 @@ description: Use the Storage panel to inspect your web storage, IndexedDB, cooki
 title: DevTools - Storage
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 10/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, web storage, local storage, session storage, indexeddb, cookies, service worker, cache
@@ -27,7 +27,7 @@ Use the *Local Storage manager* and *Session Storage manager* to inspect and man
 
 The **Local Storage** and **Session Storage** folders inside the Storage panel's [*Resource picker*](./debugger.md#resource-picker) display a list of origins for the page. Selecting one of these frames opens up an editable table of the current key/value pairs set via [Window.localStorage](https://developer.mozilla.org/docs/Web/API/Window/localStorage) or [Window.sessionStorage](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage), respectively (and/or set directly from the  DevTools [Storage list](#storage-list)).
 
-![DevTools Cookies manager](./media/storage_web_storage.png)
+![DevTools Local Storage manager](./media/storage_web_storage.png)
 
 From the *Local Storage* and *Session Storage* tabs you can:
 

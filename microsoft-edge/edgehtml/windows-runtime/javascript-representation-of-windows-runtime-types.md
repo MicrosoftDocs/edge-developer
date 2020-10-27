@@ -1,4 +1,5 @@
 ---
+description: JavaScript Representation of Windows Runtime Types.
 title: "JavaScript Representation of Windows Runtime Types"
 ms.custom: ""
 ms.date: 07/29/2020

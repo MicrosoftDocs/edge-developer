@@ -1,4 +1,5 @@
 ---
+description: Handling Windows Runtime Events in JavaScript.
 title: "Handling Windows Runtime Events in JavaScript"
 ms.custom: ""
 ms.date: 07/29/2020
