@@ -180,6 +180,8 @@
               href: devtools-guide-chromium/javascript/reference.md
             - name: Snippets
               href: devtools-guide-chromium/javascript/snippets.md
+            - name: Overrides
+              href: devtools-guide-chromium/javascript/overrides.md
             - name: Sources panel overview
               href: devtools-guide-chromium/sources.md
             - name: Debug background services
