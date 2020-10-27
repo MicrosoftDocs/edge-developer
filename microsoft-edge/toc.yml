@@ -10,7 +10,7 @@
         - name: Design
           href: accessibility/design.md
         - name: Build
-          href: accessibility/build.md
+          href: accessibility/build/index.md
           items: 
             - name: ARIA and UI automation
               href: accessibility/build/ARIA-and-UI-Automation.md
