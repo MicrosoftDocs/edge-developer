@@ -163,7 +163,7 @@ See [Rename Snippets](#rename-snippets) if you'd like to give your new Snippet a
 
 [DevtoolsConsoleIndex]: ../console/index.md "Console overview | Microsoft Docs"  
 [DevToolsSourcesPanel]: ../sources.md "Sources panel overview | Microsoft Docs"  
-[DevtoolsOverrides]: ../overrides.md "Overrides | Microsoft Docs"  
+[DevtoolsOverrides]: ./overrides.md "Overrides | Microsoft Docs"  
 
 [MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Scratchpad | MDN"  
 [WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "Bookmarklet - Wikipedia"  

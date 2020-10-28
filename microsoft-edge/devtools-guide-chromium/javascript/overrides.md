@@ -37,7 +37,7 @@ You can take any of the page resources of the current web site and store them lo
 
 1.  DevTools warns you that it requests full access to this folder and that you shouldn't reveal any sensitive information. Click **Allow** on the warning bar to grant access and it will go away. 
 
-    :::image type="complex" source="images/overrides-give-access-to-folder.png" alt-text="Allowing DevTools access to folder" lightbox="images/overrides-give-access-to-folder":::
+    :::image type="complex" source="images/overrides-give-access-to-folder.png" alt-text="Allowing DevTools access to folder" lightbox="images/overrides-give-access-to-folder.png":::
       Allowing DevTools access to folder 
     :::image-end:::  
 
