@@ -24,8 +24,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Run snippets of JavaScript on any page with Microsoft Edge DevTools  
 
-If you find yourself running the same code in the [Console][DevtoolsConsoleIndex] repeatedly, consider saving the code as a Snippet instead.  Snippets are scripts that you author in the [Sources][DevToolsSourcesPanel] panel.  They have access to the JavaScript context of the page, and you can run them on any page.  Snippets are an alternative to [bookmarklets][WikiBookmarklet].  
-Firefox DevTools has a feature similar to Snippets called [Scratchpad][MDNScratchpad].  
+If you find yourself running the same code in the [Console][DevtoolsConsoleIndex] repeatedly, consider saving the code as a Snippet instead.  Snippets are scripts that you author in the [Sources][DevToolsSourcesPanel] panel. They have access to the JavaScript context of the page, and you can run them on any page. The security settings of most pages will disallow you to load other scripts in snippets. That's why all the code needs to be in one document.
+
+Snippets are an alternative to [bookmarklets][WikiBookmarklet] with the difference that they only run in DevTools and are not limited to the allowed length of a URL.  
+
+Snippets are an excellent way to change a few things in a third party web site as your code is added to the current page and executed in its context. If you want to change existing code of a web page check out the [Overrides][DevtoolsOverrides] functionality in the [Sources][DevToolsSourcesPanel] panel.
 
 For example, in the following figure shows the DevTools homepage on the left and some Snippet source code on the right.  
 
@@ -160,6 +163,7 @@ See [Rename Snippets](#rename-snippets) if you'd like to give your new Snippet a
 
 [DevtoolsConsoleIndex]: ../console/index.md "Console overview | Microsoft Docs"  
 [DevToolsSourcesPanel]: ../sources.md "Sources panel overview | Microsoft Docs"  
+[DevtoolsOverrides]: ./overrides.md "Overrides | Microsoft Docs"  
 
 [MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Scratchpad | MDN"  
 [WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "Bookmarklet - Wikipedia"  
