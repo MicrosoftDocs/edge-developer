@@ -45,7 +45,7 @@ The [Web Accessibility Initiative (WAI)][W3CWaiHome] provided bt the W3C is an e
 
 <!-- links -->  
 
-[AccessibilityBuild]: ./build.md "Building Accessible Websites | Microsoft Doc"  
+[AccessibilityBuild]: ./build/index.md "Building Accessible Websites | Microsoft Doc"  
 [AccessibilityDesign]: ./design.md "Designing Accessible Websites | Microsoft Doc"  
 [AccessibilityTest]: ./test.md "Accessibility Testing | Microsoft Docs"  
 
