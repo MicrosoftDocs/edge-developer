@@ -1,27 +1,25 @@
 ---
-title: What's new in EdgeHTML 18
 description: This guide provides an overview of the developer features and standards included in Microsoft Edge.
+title: What's new in EdgeHTML 18
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/06/2020
+ms.date: 10/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: edgehtml
 keywords: edge, web development, html, css, javascript, developer, devtools
 ms.custom: RS5
 ---
-
 # Microsoft Edge Developer Guide
 
 > [!TIP]
 > We've [partnered](https://blogs.windows.com/msedgedev/2017/10/18/documenting-web-together-mdn-web-docs/) with other browsers and the web community in adopting [MDN Web Docs](https://developer.mozilla.org/) as the definitive place for useful, unbiased, browser-agnostic documentation for current and emerging standards-based web technologies. You can find details about EdgeHTML API support directly in each page of the [MDN web reference library](https://developer.mozilla.org/docs/Web). Visit Microsoft Edge's [Platform status](https://developer.microsoft.com/microsoft-edge/platform/status/?q=edge%3AShipped%20edge%3APrefixed%20edge%3A'Preview%20Release) for the latest features supported in Microsoft Edge. 
 
-
 ## What's new in EdgeHTML 18
 
-EdgeHTML 18 includes the following new and updated features shipped in the current release of the Microsoft Edge platform, as of the [Windows 10 October 2018 Update](/windows/uwp/whats-new/windows-10-build-17763) (10/2018, Build 17763). For changes in specific [Windows Insider](https://insider.windows.com/) Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](./dev-guide/whats-new.md).
+EdgeHTML 18 includes the following new and updated features shipped in the current release of the Microsoft Edge platform, as of the [Windows 10 October 2018 Update](/windows/uwp/whats-new/windows-10-build-17763) (10/2018, Build 17763). For changes in specific [Windows Insider](https://insider.windows.com/) Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](./whats-new.md).
 
-Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_18](https://aka.ms/devguide_edgehtml_18).
+Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_18](./whats-new/edgehtml-18.md).
 
 ## New and updated features
 
@@ -29,7 +27,7 @@ Here's the permalink for the following list of changes: [https://aka.ms/devguide
 
 With the Windows 10 October 2018 Update, Microsoft Edge provides customers with the ability to personalize their browsing preferences on websites that autoplay media with sound in order to minimize distractions on the web and conserve bandwidth. Users can customize media behavior with both global and per-site autoplay controls. Additionally, Microsoft Edge automatically suppresses autoplay of media in background tabs.
 
-Check out the [Autoplay policies](./dev-guide/browser-features/autoplay-policies.md) guide for details and best practices to ensure a good user experience with media hosted on your site.
+Check out the [Autoplay policies](./browser-features/autoplay-policies.md) guide for details and best practices to ensure a good user experience with media hosted on your site.
 
 ### Chakra improvements
 
@@ -42,12 +40,11 @@ We've made further progress on our experimental [CSS Masking](https://developer.
 Additionally, Microsoft Edge now has support for [overflow-wrap](https://developer.mozilla.org/docs/Web/CSS/overflow-wrap
 ) and partial support for [overscroll-behavior](https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior) (`auto` and `contain` values).
 
-
 ### Developer Tools
 
 The latest update to Microsoft Edge DevTools adds a number of conveniences both to the UI and under the hood, including new dedicated panels for Service Workers and Storage, source file search tools in the Debugger, and new Edge DevTools Protocol domains for style/layout debugging and console APIs.
 
-[DevTools in the latest Windows 10 update (EdgeHTML 18)](./devtools-guide/whats-new.md) has all the details.
+[DevTools in the latest Windows 10 update (EdgeHTML 18)](../devtools-guide/whats-new.md) has all the details.
 
 ### Listening to your feedback
 
@@ -71,7 +68,7 @@ Windows.UI.WebUI.WebUIApplication.addEventListener("newwebuiviewcreated", newWeb
 
 #### Text scaling
 
-The Windows 10 October 2018 Update introduces the [*Make text bigger*](https://review.docs.microsoft.com/windows/uwp/design/input/text-scaling?branch=master#user-experience) setting for improved end-user accessibility, and PWAs installed on Windows (in addition UWP and most desktop apps) now support this feature automatically. For PWAs and WebView controls, text scale works the same way as DPI scaling. If a user changes both text scale and DPI scale, the result is the product of the two.
+The Windows 10 October 2018 Update introduces the [*Make text bigger*](/windows/uwp/design/input/text-scaling#user-experience) setting for improved end-user accessibility, and PWAs installed on Windows (in addition UWP and most desktop apps) now support this feature automatically. For PWAs and WebView controls, text scale works the same way as DPI scaling. If a user changes both text scale and DPI scale, the result is the product of the two.
 
  For design guidance, check out the [Text scaling](/windows/uwp/design/input/text-scaling) UWP guide on *Windows Dev Center*.
 
@@ -88,17 +85,17 @@ For more information, head over to the blog post [Introducing Web Authentication
 
 ### WebDriver
 
-WebDriver is now a [Windows Feature on Demand](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) (FoD) making it easier than ever to automate testing in Microsoft Edge and get the right version for your device. You will no longer need to match the build/branch/flavor manually when installing WebDriver, your [WebDriver](https://www.w3.org/TR/webdriver) will automatically update to match any new Windows 10 updates. 
+WebDriver is now a [Windows Feature on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) (FoD) making it easier than ever to automate testing in Microsoft Edge and get the right version for your device. You will no longer need to match the build/branch/flavor manually when installing WebDriver, your [WebDriver](https://www.w3.org/TR/webdriver) will automatically update to match any new Windows 10 updates. 
 
 You can install WebDriver by turning on Developer Mode, or install it as a standalone by going to Settings > Apps > Apps & features > Manage optional features. For more information, check out the [WebDriver announcement on the Windows Blog site](https://blogs.windows.com/msedgedev/2018/06/14/webdriver-w3c-recommendation-feature-on-demand).
 
 ### Web Notification properties
-Four new properties are now supported for web notifications: [`actions`](https://developer.mozilla.org/docs/Web/API/notification/actions), [`badge`](https://developer.mozilla.org/docs/Web/API/notification/badge), [`image`](https://developer.mozilla.org/docs/Web/API/notification/image), and  `maxActions`, improving our ability to create notifications on the web that are compatible with existing notification systems, while remaining platform-independent.
+Four new properties are now supported for web notifications: [`actions`](https://developer.mozilla.org/docs/Web/API/notification/actions), [`badge`](https://developer.mozilla.org/docs/Web/API/notification/badge), [`image`](https://developer.mozilla.org/docs/Web/API/notification/image), and `maxActions`, improving our ability to create notifications on the web that are compatible with existing notification systems, while remaining platform-independent.
 
 ### WebView
 
 #### Service workers
-[Service workers](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) are now supported in the WebView control, in addition to the Microsoft Edge browser and Windows 10 JavaScript apps. All flavors of the Microsoft Edge webview ([PWA](/microsoft-edge/hosting/webview), [UWP](/uwp/api/Windows.UI.Xaml.Controls.WebView), [Win32](/windows/communitytoolkit/controls/wpf-winforms/webview)) support service workers, however please be aware that the [Push API](https://developer.mozilla.org/docs/Web/API/Push_API) is not yet available for the UWP and Win32 versions.
+[Service workers](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) are now supported in the WebView control, in addition to the Microsoft Edge browser and Windows 10 JavaScript apps. All flavors of the Microsoft Edge webview ([PWA](../hosting/webview.md), [UWP](/uwp/api/Windows.UI.Xaml.Controls.WebView), [Win32](/windows/communitytoolkit/controls/wpf-winforms/webview)) support service workers, however please be aware that the [Push API](https://developer.mozilla.org/docs/Web/API/Push_API) is not yet available for the UWP and Win32 versions.
 
 x64 app architectures require *Neutral* (Any CPU) or *x64* packages, as service workers are not supported in WoW64 processes. (To conserve disk space, the WoW version of the required DLLs are not natively included in Windows.)
 
@@ -108,7 +105,7 @@ The EdgeHTML [WebViewControl](/windows/communitytoolkit/controls/wpf-winforms/we
 
 Additionally, you can now create a new WebViewControl as the opened window from [`window.open`](https://developer.mozilla.org/docs/Web/API/Window/open). The [`NewWindowRequested`](/uwp/api/windows.web.ui.iwebviewcontrol.newwindowrequested) event still notifies an app when script inside the WebViewControl calls window.open as it always has, but with EdgeHTML 18 its [`NewWindowRequestedEventArgs`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs) include the ability to take a deferral ([`GetDeferral`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.getdeferral)) in order to set a new WebViewControl ([`NewWindow`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.newwindow)) as the target for the window.open:
 
-```C#
+```csharp
 WebViewControlProcess wvProc;
 WebViewControl webView;
 
@@ -132,15 +129,13 @@ void OnWebViewControlNewWindowRequested(WebViewControl sender, WebViewControlNew
 String htmlContent = "<html><script>window.open('http://mydomain.com')</script><body></body></html>";
 
 webView.NavigateToString(htmlContent);
+```  
 
-```
-
-Lastly, power users might notice the apppearance of the *Desktop App Web Viewer* (previously named *Win32WebViewHost*), an internal system app representing the Win32 WebView, in the following places:
+Lastly, power users might notice the appearance of the *Desktop App Web Viewer* (previously named *Win32WebViewHost*), an internal system app representing the Win32 WebView, in the following places:
 - In the *Windows 10 Action Center*. The source of these notifications should be understood as from a WebView hosted from a Win32 app.
 - In the device access settings UI (*Settings->Privacy->Camera/Location/Microphone*). Disabling any of these settings denies access from all WebViews hosted in Win32 apps.
 
-![Desktop App Web Viewer device access setting](./dev-guide/media/desktop-app-web-viewer.png)
-
+![Desktop App Web Viewer device access setting](./media/desktop-app-web-viewer.png)
 
 ## Deprecated features
 
@@ -160,12 +155,12 @@ Check out the full list of new APIs in EdgeHTML 18. They are listed in the forma
 
 ## Previous EdgeHTML releases
 
-[EdgeHTML 13 / Windows build 10586 (11/2015)](https://aka.ms/devguide_edgehtml_13)
+[EdgeHTML 13 / Windows build 10586 (11/2015)](./whats-new/edgehtml-13.md)
 
-[EdgeHTML 14 / Windows build 14393 (8/2016)](https://aka.ms/devguide_edgehtml_14)
+[EdgeHTML 14 / Windows build 14393 (8/2016)](./whats-new/edgehtml-14.md)
 
-[EdgeHTML 15 / Windows build 15063 (4/2017)](https://aka.ms/devguide_edgehtml_15)
+[EdgeHTML 15 / Windows build 15063 (4/2017)](./whats-new/edgehtml-15.md)
 
-[EdgeHTML 16 / Windows build 16299 (10/2017)](https://aka.ms/devguide_edgehtml_16)
+[EdgeHTML 16 / Windows build 16299 (10/2017)](./whats-new/edgehtml-16.md)
 
-[EdgeHTML 17 / Windows build 17134 (04/2018)](https://aka.ms/devguide_edgehtml_17)
+[EdgeHTML 17 / Windows build 17134 (04/2018)](./whats-new/edgehtml-17.md)
