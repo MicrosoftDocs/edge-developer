@@ -1,5 +1,4 @@
 ---
-ms.assetid: 1e5c42a7-4604-46ac-ad7b-a65390e5b36a
 description: Learn how to build, design, and test accessible websites within Microsoft Edge.
 title: Accessibility
 author: MSEdgeTeam
@@ -7,6 +6,7 @@ ms.author: msedgedevrel
 ms.date: 04/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
+ms.assetid: 1e5c42a7-4604-46ac-ad7b-a65390e5b36a
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
 ---
 # Accessibility overview  
@@ -26,14 +26,12 @@ In Microsoft Edge, we introduced modern [UI Automation API][WindowsWin32AutoEntr
 The accessibility system in Microsoft Edge inherently supports modern web standards including ARIA, HTML5, and CSS3.  The following diagram of the simplified browser pipeline follows webpage content into an accessible presentation layer.  
 
 :::image type="complex" source="./media/accessibilityarchitecture.png" alt-text="Content transformed to the engine model is projected into visual and accessibility views that are presented either as visual or accessible presentation":::
-   Figure 1.  Content transformed to the engine model is projected into visual and accessibility views that are presented either as visual or accessible presentation
-:::image-end:::
-
-<!--![Figure 1.  Content transformed to the engine model is projected into visual and accessibility views that are presented either as visual or accessible presentation][ImageAccessibilityArchitecture]  -->  
+   Content transformed to the engine model is projected into visual and accessibility views that are presented either as visual or accessible presentation  
+:::image-end:::  
 
 The Microsoft Edge team works with the W3C and other browser vendors on an ongoing basis to ensure that new web platform features have sufficient built-in accessibility.  
 
-For information on which new HTML5 features are accessibly supported by Microsoft Edge, visit [HTML5Accessibility][HTML5Accessibility].  
+For information on which new HTML5 features are accessibly supported by Microsoft Edge, navigate to [HTML5Accessibility][HTML5Accessibility].  
 
 ## Resources  
 
@@ -45,20 +43,15 @@ The [Microsoft Windows UI Automation blog][ArchiveBlogsWinuiautomation] covers t
 
 The [Web Accessibility Initiative (WAI)][W3CWaiHome] provided bt the W3C is an effort to help improve the accessibility of the web.  The site provides a variety of resources for [Getting Started with Web Accessibility][W3CWaiGettingstartedOverview], [Designing for Inclusion][W3CWaiFundamentals], [tutorials and presentations][W3CWaiTeachAdvocate], and more.  
 
-
-<!-- image links -->  
-
-<!--[ImageAccessibilityArchitecture]: ./media/accessibilityarchitecture.png "Figure 1: Content transformed to the engine model is projected into visual and accessibility views that are presented either as visual or accessible presentation"  -->  
-
 <!-- links -->  
 
-[AccessibilityBuild]: ./accessibility/build.md "Building Accessible Websites"  
-[AccessibilityDesign]: ./accessibility/design.md "Designing Accessible Websites"  
-[AccessibilityTest]: ./accessibility/test.md "Accessibility Testing"  
+[AccessibilityBuild]: ./build.md "Building Accessible Websites | Microsoft Doc"  
+[AccessibilityDesign]: ./design.md "Designing Accessible Websites | Microsoft Doc"  
+[AccessibilityTest]: ./test.md "Accessibility Testing | Microsoft Docs"  
 
-[WindowsWin32AutoEntryui]: /windows/win32/winauto/entry-uiauto-win32 "UI Automation"  
+[WindowsWin32AutoEntryui]: /windows/win32/winauto/entry-uiauto-win32 "UI Automation | Microsoft Doc"  
 
-[ArchiveBlogsWinuiautomation]: /archive/blogs/winuiautomation/ "Microsoft Windows UI Automation Blog"  
+[ArchiveBlogsWinuiautomation]: /archive/blogs/winuiautomation/ "Microsoft Windows UI Automation Blog | Microsoft Doc"  
 
 [HTML5Accessibility]: https://html5accessibility.com "HTML5 Accessibility"  
 
