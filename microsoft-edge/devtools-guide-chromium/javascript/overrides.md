@@ -21,29 +21,29 @@ You can take any of the page resources of the current web site and store them lo
 
 1.  In the sources panel you find several sections on the left hand side. If you can't see the **Overrides** option, click the ≫ icon to get there.
 
-    :::image type="complex" source="../media/overrides-overflow-menu.msft.png" alt-text="Sources Panel with not enough space to show the overrides option" lightbox="../media/overrides-overflow-menu.msft.png":::
+    :::image type="complex" source="../media/javascript-overrides-overflow-menu.msft.png" alt-text="Sources Panel with not enough space to show the overrides option" lightbox="../media/javascript-overrides-overflow-menu.msft.png":::
       Sources Panel with not enough space to show the overrides option 
     :::image-end:::  
 
-    :::image type="complex" source="../media//overrides-menu.msft.png" alt-text="Selecting the overrides option" lightbox="../media/overrides-menu.msft.png":::
+    :::image type="complex" source="../media//overrides-menu.msft.png" alt-text="Selecting the overrides option" lightbox="../media/javascript-overrides-menu.msft.png":::
       Selecting the overrides option
     :::image-end:::  
 
 1.  Once you selected the **Overrides** option you need to choose a folder on your local computer to store the files you want to replace. Click the "+ Select folder for overrides" to navigate to a folder. 
 
-    :::image type="complex" source="../media/overrides-select-folder.msft.png" alt-text="Selecting a folder to use for overrides" lightbox="../media/overrides-select-folder.msft.png":::
+    :::image type="complex" source="../media/javascript-overrides-select-folder.msft.png" alt-text="Selecting a folder to use for overrides" lightbox="../media/javascript-overrides-select-folder.msft.png":::
       Selecting a folder to use for overrides 
     :::image-end:::  
 
 1.  DevTools warns you that it requests full access to this folder and that you shouldn't reveal any sensitive information. Click **Allow** on the warning bar to grant access and it will go away. 
 
-    :::image type="complex" source="../media/overrides-give-access-to-folder.msft.png" alt-text="Allowing DevTools access to folder" lightbox="../media/overrides-give-access-to-folder.msft.png":::
+    :::image type="complex" source="../media/javascript-overrides-give-access-to-folder.msft.png" alt-text="Allowing DevTools access to folder" lightbox="../media/javascript-overrides-give-access-to-folder.msft.png":::
       Allowing DevTools access to folder 
     :::image-end:::  
 
 1.  In the Overrides pane you will now see a checkbox allowing you to "Enable Local Overrides" and your overrides folder. Next to it is also an icon that allows you to delete your local overrides setup. You are now done setting up your folder and ready to replace live resources with local ones.
 
-    :::image type="complex" source="../media/overrides-folder-setup-complete.msft.png" alt-text="Successful setup of an overrides folder" lightbox="../media/overrides-folder-setup-complete.msft.png":::
+    :::image type="complex" source="../media/javascript-overrides-folder-setup-complete.msft.png" alt-text="Successful setup of an overrides folder" lightbox="../media/javascript-overrides-folder-setup-complete.msft.png":::
       Successful setup of an overrides folder 
     :::image-end:::  
 
@@ -51,41 +51,41 @@ You can take any of the page resources of the current web site and store them lo
   
 To add files to your overrides folder you can start by inspecting the page using the **Elements** tab. Click the name of the CSS file in the **Styles** inspector that you want to edit. 
 
-:::image type="complex" source="../media/overrides-select-css-file.msft.png" alt-text="Selecting a file in the styles inspector" lightbox="../media/overrides-select-css-file.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-select-css-file.msft.png" alt-text="Selecting a file in the styles inspector" lightbox="../media/javascript-overrides-select-css-file.msft.png":::
   Selecting a file in the styles inspector 
 :::image-end:::  
 
 This will take you to the **Sources** editor and open the file there. Right-click the file name in the tab and select "Save for overrides" from the menu. 
 
-:::image type="complex" source="../media/overrides-file-name.msft.png" alt-text="Right-click the name of the file in the sources editor to add it to overrides" lightbox="../media/overrides-file-name.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="Right-click the name of the file in the sources editor to add it to overrides" lightbox="../media/javascript-overrides-file-name.msft.png":::
   Right-click the name of the file in the sources editor to add it to overrides 
 :::image-end:::  
 
-:::image type="complex" source="../media/overrides-save-for-overrides.msft.png" alt-text="Select 'Save for overrides' from the context menu" lightbox="../media/overrides-save-for-overrides.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="Select 'Save for overrides' from the context menu" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
   Select 'Save for overrides' from the context menu 
 :::image-end:::  
 
 This will store the file in your overrides folder on your computer. You will see that DevTools creates a folder with the name of the URL of the file you stored and creates the correct folder structure inside it. The file name in the editor now also shows a purple dot, indicating that this is a local file and not a live one.
 
-:::image type="complex" source="../media/overrides-file-stored.msft.png" alt-text="Successfully stored the file in your overrides folder" lightbox="../media/overrides-file-stored.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-file-stored.msft.png" alt-text="Successfully stored the file in your overrides folder" lightbox="../media/javascript-overrides-file-stored.msft.png":::
   Successfully stored the file in your overrides folder 
 :::image-end:::  
 
 In this example we can now change the styles of the page to add a red border around the document by adding a `border: 10px solid firebrick` to the body element in the **Styles** editor. This automatically saves it to the file on your computer. If you reload the document, the border will show up. None of your work is lost.
 
-:::image type="complex" source="../media/overrides-changing-styles.msft.png" alt-text="Changing page styles persistantly by editing a file in your overrides folder" lightbox="../media/overrides-changing-styles.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-changing-styles.msft.png" alt-text="Changing page styles persistantly by editing a file in your overrides folder" lightbox="../media/javascript-overrides-changing-styles.msft.png":::
   Changing page styles persistantly by editing a file in your overrides folder 
 :::image-end:::  
 
 You can also pick any files in the Page section of the **Sources** tab, right-click it and add it to overrides. Again, files that are already in your overrides folder have a purple dot on their icon.
 
-:::image type="complex" source="../media/overrides-safe-from-sources.msft.png" alt-text="Selecting a file from the Sources pane for overrides" lightbox="../media/overrides-safe-from-sources.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="Selecting a file from the Sources pane for overrides" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
   Selecting a file from the Sources pane for overrides 
 :::image-end:::  
 
 Or you can select any file from the **Network** tab, right-click it and add it to overrides. Also notice that when overrides are in effect, the **Network** tab shows a warning icon reminding you that some files are coming from your computer and not the live site.
 
-:::image type="complex" source="../media/overrides-network.msft.png" alt-text="Selecting a file from the Network pane for overrides" lightbox="../media/overrides-network.msft.png":::
+:::image type="complex" source="../media/javascript-overrides-network.msft.png" alt-text="Selecting a file from the Network pane for overrides" lightbox="../media/javascript-overrides-network.msft.png":::
   Selecting a file from the Network pane for overrides 
 :::image-end:::  
 
@@ -99,6 +99,5 @@ You can use the editor provided with the **Sources** tab of DevTools or any edit
 
 <!-- links -->  
 
-[DevtoolsConsoleIndex]: ../console/index.md "Console overview | Microsoft Docs"  
 [DevToolsSourcesPanel]: ../sources.md "Sources panel overview | Microsoft Docs"  
 
