@@ -41,18 +41,12 @@
     },
     "fileMetadata": {
       "ms.technology":{
-        "dev-guide/**.md": "edgehtml",
-        "devtools-guide/**.md": "devtools",
         "devtools-guide-chromium/**.md": "devtools",
         "devtools-protocol/**.md": "devtools",
-        "extensions/**.md": "extensions",
         "extensions-chromium/**.md": "extensions",
-        "hosting/chakra-hosting/**.md": "chakra",
-        "hosting/webview/**.md": "webview",
         "webview2/**.md": "webview2",
-        "progressive-web-apps-edgehtml/**.md": "pwa",
         "progressive-web-apps-chromium/**.md": "pwa",
-        "windows-runtime/**.md": "windows-integration"
+        "edgehtml/**.md": "noindex, nofollow"
       }
     },
     "template": [
