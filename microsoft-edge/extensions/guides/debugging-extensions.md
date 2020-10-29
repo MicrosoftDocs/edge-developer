@@ -1,87 +1,122 @@
 ---
-description: With F12 Developer Tools, learn how to debug an extension's background script, content scripts, and extension pages.
-title: Extensions - Debugging
+description: The Overrides feature is a feature within the Sources tool of Microsoft Edge DevTools that allows you to copy webpage resources to your hard drive.  When you refresh the webpage, DevTools do not load the resource but replace it with your local copy instead.  
+title: Override webpage resources with local copies using Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/16/2019
+ms.date: 10/29/2020 
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge, web development, html, javascript, developer, debug, debugging
-ms.custom: seodec18
+keywords: microsoft edge, web development, f12 tools, devtools
 ---
+# Override webpage resources with local copies using Microsoft Edge DevTools  
 
-# Debugging extensions  
+Sometimes you need to fix a problem on a webpage that you do not have access to or fixes involve a slow and complex build process.  You may debug and fix all kind of problems in DevTools. But the problem is the changes do not persist.  After you refresh the file, all your work is gone.  
 
-[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
+The Overrides feature in the [Sources][DevToolsSourcesTool] tool helps you sole this problem.  
 
-You can debug your extensions in Microsoft Edge by using F12 Developer Tools.
+You may now take a resource of the current webpage and store it locally.  When you refresh the webpage, the browser does not load the resource from the server. instead the browser replaces it with your local copy of the resource.  
 
-The following video goes through a buggy Microsoft Edge extension, walking though each debugging scenario and fixing it up along the way. See the step-by-step instructions below for more info.
+## Setting up your local folder to store Overrides  
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Debugging-Microsoft-Edge-Extensions/player]
+1.  In the **Sources** tool, find several sections on the left-hand side.  If the **Overrides** option is not displayed, choose the `≫` icon to get there.  
+    
+    :::row:::
+       :::column span="":::
+          :::image type="complex" source="../media/javascript-overrides-overflow-menu.msft.png" alt-text="Sources tool with not enough space to show the overrides option" lightbox="../media/javascript-overrides-overflow-menu.msft.png":::
+             **Sources** tool with not enough space to show the overrides option  
+          :::image-end:::  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../media/javascript-overrides-menu.msft.png" alt-text="Choose the overrides option" lightbox="../media/javascript-overrides-menu.msft.png":::
+             Choose the overrides option  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::  
+    
+1.  After you choose the **Overrides** option, you must choose a folder on your local computer to store the resource files that you want to replace.  Choose the **+ Select folder for overrides** to search for a folder.  
+    
+    :::image type="complex" source="../media/javascript-overrides-select-folder.msft.png" alt-text="Choose a folder to use for overrides" lightbox="../media/javascript-overrides-select-folder.msft.png":::
+       Choose a folder to use for overrides  
+    :::image-end:::  
+    
+1.  DevTools warns you that must have full access to the folder and that you should not reveal any sensitive information.  On the warning bar, choose **Allow** to grant access.  
+    
+    :::image type="complex" source="../media/javascript-overrides-give-access-to-folder.msft.png" alt-text="grant DevTools access to folder" lightbox="../media/javascript-overrides-give-access-to-folder.msft.png":::
+       Grant DevTools access to folder  
+    :::image-end:::  
+    
+1.  In the **Overrides** pane, a checkbox should be displayed next to `Enable Local Overrides` and your overrides folder.  An icon is displayed next to it that allows you to delete your local overrides settings.  You are now done setting up your folder and ready to replace live resources with local ones.
+    
+    :::image type="complex" source="../media/javascript-overrides-folder-setup-complete.msft.png" alt-text="Successful set up of an overrides folder" lightbox="../media/javascript-overrides-folder-setup-complete.msft.png":::
+       Successful set up of an overrides folder  
+    :::image-end:::  
+    
+## Adding files to your Overrides folder  
+  
+To add files to your overrides folder, open the **Elements** tool and inspect the webpage.  To edit, in the **Styles** inspector, choose the name of the CSS file.  
 
+:::image type="complex" source="../media/javascript-overrides-select-css-file.msft.png" alt-text="Choose a file in the Styles inspector" lightbox="../media/javascript-overrides-select-css-file.msft.png":::
+   Choose a file in the **Styles** inspector  
+:::image-end:::  
 
-> [!NOTE]
-> In order to take advantage of extension debugging with F12, you must first turn on developer features in about:flags. See [Adding and removing extensions](./adding-and-removing-extensions.md) for details on how to do this.
+On the **Sources** editor, hover on the file name of your chosen file, open the contextual menu \(right-click\), and choose **Save for overrides**.  
 
+:::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="In the Sources editor, add the name of the file to overrides" lightbox="../media/javascript-overrides-file-name.msft.png":::
+   In the **Sources** editor, add the name of the file to overrides  
+:::image-end:::  
 
-## Background script debugging
-To start debugging the background script of your extension:
+:::image type="complex" source="../media/javascript-overrides-save-for-overrides.msft.png" alt-text="On the context menu, choose Save for overrides" lightbox="../media/javascript-overrides-save-for-overrides.msft.png":::
+   On the context menu, choose **Save for overrides**  
+:::image-end:::  
 
-1. Click on **More (...)** followed by **Extensions** to go into the extension pane.  
- ![more button](./../media/morebutton.png)
-2. Click on the extension that you want to debug.
-3. Click on the **Background page** link to bring up F12 for the background process.  
- ![selected extension view of options with inspect link](./../media/debug-inspect.png)
-4. Select the **Debugger** tab in F12.
-5. Navigate to and select your extension's background script.
-6. Place breakpoints for debugging by clicking to the left of the source code line number.  
- ![f12 console showing background script with break points](./../media/debug-f12-background.png)
-7. Select the **Console** tab and execute the command "`location.reload()`". This will re-execute the background script, allowing you to step through your code.  
- ![console with location.reload entered](./../media/debug-f12-background-console.png)
+The file is stored in your overrides folder.  Verify that DevTools create a folder that is named using the URL of the file with the correct directory structure.  The file is stored inside.  The file name in the editor now also shows a purple dot that indicates that the file is local and not a live one.  
 
+:::image type="complex" source="../media/javascript-overrides-file-stored.msft.png" alt-text="Successfully stored the file in your overrides folder" lightbox="../media/javascript-overrides-file-stored.msft.png":::
+   Successfully stored the file in your overrides folder  
+:::image-end:::  
 
-## Content script debugging
-To start debugging the content script of your extension:
+:::row:::
+   :::column span="":::
+      In the following example, you may now change the styles of the webpage.  To add a red border around the file, on the **Styles** editor, copy the following style, and add it to the body element.  
+      
+      ```css
+      border: 10px solid firebrick
+      ```  
+   :::column-end:::
+   :::column span="":::
+      The file is automatically saved on your computer.  If you refresh the file, the border is displayed and none of your work is lost.  
+      
+      :::image type="complex" source="../media/javascript-overrides-changing-styles.msft.png" alt-text="Change webpage styles persistently by editing a file in your overrides folder" lightbox="../media/javascript-overrides-changing-styles.msft.png":::
+         Change webpage styles persistently by editing a file in your overrides folder  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
-1. Launch F12 by either navigating to the **More (...)** button and selecting **"F12 Developer Tools"** or by pressing F12 on your keyboard.
-2. Navigate to and select your extension's content script. Content scripts for extensions currently running will be depicted by a different folder for each extension.
+:::row:::
+   :::column span="":::
+      On the **Sources** tool, in the **Page** section, hover on any file, open the contextual menu \(right-click\), and add it to overrides.  Again, files that are already in your overrides folder have a purple dot on the icon.  
+      
+      :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="Choose a file from the Sources tool for overrides" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
+         Choose a file from the **Sources** tool for overrides  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      Alternatively, on the **Network** tool, hover on any file, open the contextual menu \(right-click\), and add it to overrides.  When overrides are in effect, files that are located on your computer and not from the live webpage.  When overrides are in effect, on the **Network** tool, locate a warning icon next to the file name.  
+      
+      :::image type="complex" source="../media/javascript-overrides-network.msft.png" alt-text="Choose a file from the Network tool for overrides" lightbox="../media/javascript-overrides-network.msft.png":::
+         Choose a file from the **Network** tool for overrides  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
-    > [!NOTE]
-    > Only running content scripts will appear.
+## Two-way interaction of overrides  
 
-3. Place breakpoints for debugging by clicking to the left of the source code line number.  
- ![f12 with content script being debugged](./../media/debug-content-f12.png)
-4. Refresh the browser tab to begin stepping though your code.
+Use the editor provided with the **Sources** tool of DevTools or any editor you want to change the files.  Changes are synced across all the products that access the files in the overrides folder.  
 
+## Getting in touch with the Microsoft Edge DevTools team  
 
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
+<!-- links -->  
 
-## Extension page debugging
-
-There are two methods that can be used for accessing the source code of your extension page for debugging. One method applies to a variety of pages while the other only works for popup pages.
-
-### Debugging any extension page
-The following method works for all extension pages like the options page and popups:
-
-
-1. Right-click on the background of your page.
-2. Select **"View source"**.
-
-   ![popup debugging with f12](./../media/debug-popup-select.png)
-
-3. Once F12 opens, place breakpoints within the file you want to debug.
-
-   ![popup debugging with f12](./../media/debug-popup-f12.png)
-4. Select the **Console** tab and execute the command `location.reload()`. This will re-execute the page script, allowing you to step through your code.  
-
-   ![console with location.reload entered](./../media/debug-f12-background-console.png)
-
-### Debugging a popup extension page
-While the method for debugging extension pages also applies to popup extension pages, the following steps outline another way to debug your popup:
-
-1. Right-click your extension's icon.
-2. Select **"Inspect popup"**.
-
-   ![popup debug inspect](./../media/debug-popup-inspect.png)
-3. Follow steps 3 and 4 above for placing breakpoints and reloading the popup.
+[DevToolsSourcesTool]: ../sources.md "Sources tool overview | Microsoft Docs"  

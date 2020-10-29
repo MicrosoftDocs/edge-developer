@@ -1,39 +1,43 @@
 ---
-description: Reference for the Page Domain. Actions and events related to the inspected page belong to the page domain.
+description: DevTools Protocol Version 0.2 (EdgeHTML) reference for the Page Domain. Actions and events related to the inspected page belong to the page domain.
 title: Page Domain - DevTools Protocol Version 0.2 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 10/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
 # Page Domain - DevTools Protocol Version 0.2 (EdgeHTML)  
 
-Actions and events related to the inspected page belong to the page domain.
+Actions and events related to the inspected page belong to the page domain.  
 
-| | |
-|-|-|
-| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [navigate](#navigate), [getFrameTree](#getframetree) |
-| [**Events**](#events) | [frameAttached](#frameattached), [frameDetached](#framedetached), [frameNavigated](#framenavigated), [loadEventFired](#loadeventfired), [domContentEventFired](#domcontenteventfired) |
-| [**Types**](#types) | [FrameId](#frameid), [Frame](#frame), [FrameTree](#frametree) |
-## Methods
+|  |  |  
+|:--- |:--- |  
+| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [navigate](#navigate), [getFrameTree](#getframetree) |  
+| [**Events**](#events) | [frameAttached](#frameattached), [frameDetached](#framedetached), [frameNavigated](#framenavigated), [loadEventFired](#loadeventfired), [domContentEventFired](#domcontenteventfired) |  
+| [**Types**](#types) | [FrameId](#frameid), [Frame](#frame), [FrameTree](#frametree) |  
 
-### enable
-Enables page domain notifications.
+## Methods  
 
-</p>
+### enable  
 
----
-
-### disable
-Disables page domain notifications.
+Enables page domain notifications.  
 
 </p>
 
----
+---  
 
-### navigate
-Navigates current page to the given URL.
+### disable  
+
+Disables page domain notifications.  
+
+</p>
+
+---  
+
+### navigate  
+
+Navigates current page to the given URL.  
 
 <table>
     <thead>
@@ -74,10 +78,11 @@ Navigates current page to the given URL.
 </table>
 </p>
 
----
+---  
 
-### getFrameTree
-Returns present frame tree structure.
+### getFrameTree  
+
+Returns present frame tree structure.  
 
 <table>
     <thead>
@@ -97,12 +102,13 @@ Returns present frame tree structure.
 </table>
 </p>
 
----
+---  
 
-## Events
+## Events  
 
-### frameAttached
-Fired when frame has been attached to its parent.
+### frameAttached  
+
+Fired when frame has been attached to its parent.  
 
 <table>
     <thead>
@@ -132,10 +138,11 @@ Fired when frame has been attached to its parent.
 </table>
 </p>
 
----
+---  
 
-### frameDetached
-Fired when frame has been detached from its parent.
+### frameDetached  
+
+Fired when frame has been detached from its parent.  
 
 <table>
     <thead>
@@ -155,10 +162,11 @@ Fired when frame has been detached from its parent.
 </table>
 </p>
 
----
+---  
 
-### frameNavigated
-Fired once navigation of the frame has completed.
+### frameNavigated  
+
+Fired once navigation of the frame has completed.  
 
 <table>
     <thead>
@@ -178,33 +186,11 @@ Fired once navigation of the frame has completed.
 </table>
 </p>
 
----
+---  
 
-### loadEventFired
-Corresponds to the window.onload event.
+### loadEventFired  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>timestamp</td>
-            <td><code class="flyout">number</code></td>
-            <td>Number of milliseconds since epoch.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-
----
-
-### domContentEventFired
-Corresponds to the document.onDOMContentLoaded event.
+Corresponds to the window.onload event.  
 
 <table>
     <thead>
@@ -224,21 +210,45 @@ Corresponds to the document.onDOMContentLoaded event.
 </table>
 </p>
 
----
+---  
 
-## Types
+### domContentEventFired  
 
-### <a name="frameid"></a> FrameId `string`
+Corresponds to the document.onDOMContentLoaded event.  
 
-Unique frame identifier.
+<table>
+    <thead>
+        <tr>
+            <th>Parameters</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>timestamp</td>
+            <td><code class="flyout">number</code></td>
+            <td>Number of milliseconds since epoch.</td>
+        </tr>
+    </tbody>
+</table>
+</p>
+
+---  
+
+## Types  
+
+### <a name="frameid"></a> FrameId `string`  
+
+Unique frame identifier.  
 
 </p>
 
----
+---  
 
-### <a name="frame"></a> Frame `object`
+### <a name="frame"></a> Frame `object`  
 
-Information about the Frame on the Page.
+Information about the Frame on the Page.  
 
 <table>
     <thead>
@@ -283,11 +293,11 @@ Information about the Frame on the Page.
 </table>
 </p>
 
----
+---  
 
-### <a name="frametree"></a> FrameTree `object`
+### <a name="frametree"></a> FrameTree `object`  
 
-Information about the Frame hierarchy.
+Information about the Frame hierarchy.  
 
 <table>
     <thead>
@@ -312,4 +322,4 @@ Information about the Frame hierarchy.
 </table>
 </p>
 
----
+---  

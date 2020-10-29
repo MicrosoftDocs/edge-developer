@@ -1,24 +1,26 @@
 ---
-description: Reference for the Schema Domain. Provides information about the protocol schema.
+description: DevTools Protocol Version 0.2 (EdgeHTML) reference for the Schema Domain. Provides information about the protocol schema.
 title: Schema Domain - DevTools Protocol Version 0.2 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 10/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
 # Schema Domain - DevTools Protocol Version 0.2 (EdgeHTML)  
 
-Provides information about the protocol schema.
+Provides information about the protocol schema.  
 
-| | |
-|-|-|
-| [**Methods**](#methods) | [getDomains](#getdomains) |
-| [**Types**](#types) | [Domain](#domain) |
-## Methods
+|  |  |  
+|:--- |:--- |  
+| [**Methods**](#methods) | [getDomains](#getdomains) |  
+| [**Types**](#types) | [Domain](#domain) |  
 
-### getDomains
-Returns supported domains.
+## Methods  
+
+### getDomains  
+
+Returns supported domains.  
 
 <table>
     <thead>
@@ -38,13 +40,13 @@ Returns supported domains.
 </table>
 </p>
 
----
+---  
 
-## Types
+## Types  
 
-### <a name="domain"></a> Domain `object`
+### <a name="domain"></a> Domain `object`  
 
-Description of the protocol domain.
+Description of the protocol domain.  
 
 <table>
     <thead>
@@ -69,4 +71,4 @@ Description of the protocol domain.
 </table>
 </p>
 
----
+---  

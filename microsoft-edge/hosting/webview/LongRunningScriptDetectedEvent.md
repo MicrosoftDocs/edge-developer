@@ -1,9 +1,9 @@
 ---
-description: 
+description: LongRunningScriptDetectedEvent object
 title: LongRunningScriptDetectedEvent object
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 10/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge

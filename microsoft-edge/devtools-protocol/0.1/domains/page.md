@@ -1,37 +1,39 @@
 ---
-description: Reference for the Page Domain. Actions and events related to the inspected page belong to the page domain.
+description: DevTools Protocol Version 0.1 (EdgeHTML) reference for the Page Domain. Actions and events related to the inspected page belong to the page domain.
 title: Page Domain - DevTools Protocol Version 0.1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 10/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
 ---
 # Page Domain - DevTools Protocol Version 0.1 (EdgeHTML)  
 
-Actions and events related to the inspected page belong to the page domain.
+Actions and events related to the inspected page belong to the page domain.  
 
-| | |
-|-|-|
-| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [navigate](#navigate) |
-| [**Types**](#types) | [FrameId](#frameid) |
-## Methods
+|  |  |  
+|:--- |:--- |  
+| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [navigate](#navigate) |  
+| [**Types**](#types) | [FrameId](#frameid) |  
 
-### enable
-Enables page domain notifications.
+## Methods  
 
+### enable  
 
----
+Enables page domain notifications.  
 
-### disable
-Disables page domain notifications.
+---  
 
+### disable  
 
----
+Disables page domain notifications.  
 
-### navigate
-Navigates current page to the given URL.
+---  
+
+### navigate  
+
+Navigates current page to the given URL.  
 
 <table>
     <thead>
@@ -66,13 +68,12 @@ Navigates current page to the given URL.
     </tbody>
 </table>
 
----
+---  
 
-## Types
+## Types  
 
-### <a name="frameid"></a> FrameId `string`
+### <a name="frameid"></a> FrameId `string`  
 
-Unique frame identifier.
+Unique frame identifier.  
 
-
----
+---  

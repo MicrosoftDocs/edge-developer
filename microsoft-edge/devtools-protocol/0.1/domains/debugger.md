@@ -1,9 +1,9 @@
 ---
-description: Reference for the Debugger Domain. Debugger domain exposes JavaScript debugging capabilities. It allows setting and removing breakpoints, stepping through execution, exploring stack traces, etc.
+description: DevTools Protocol Version 0.1 (EdgeHTML) reference for the Debugger Domain. Debugger domain exposes JavaScript debugging capabilities. It allows setting and removing breakpoints, stepping through execution, exploring stack traces, etc.
 title: Debugger Domain - DevTools Protocol Version 0.1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 10/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
@@ -12,28 +12,29 @@ ms.custom: seodec18
   
 Debugger domain exposes JavaScript debugging capabilities. It allows setting and removing breakpoints, stepping through execution, exploring stack traces, etc.
 
-| | |
-|-|-|
-| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [getPossibleBreakpoints](#getpossiblebreakpoints), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [setBreakpoint](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [stepOver](#stepover), [stepInto](#stepinto), [stepOut](#stepout), [pause](#pause), [resume](#resume), [getScriptSource](#getscriptsource), [setPauseOnExceptions](#setpauseonexceptions), [evaluateOnCallFrame](#evaluateoncallframe), [setVariableValue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns), [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |
-| [**Events**](#events) | [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [paused](#paused), [resumed](#resumed) |
-| [**Types**](#types) | [BreakpointId](#breakpointid), [CallFrameId](#callframeid), [Location](#location), [BreakLocation](#breaklocation), [CallFrame](#callframe), [Scope](#scope) |
-| [**Dependencies**](#dependencies) | [Runtime](runtime.md) |
-## Methods
+|  |  |  
+|:--- |:--- |  
+| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [getPossibleBreakpoints](#getpossiblebreakpoints), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [setBreakpoint](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [stepOver](#stepover), [stepInto](#stepinto), [stepOut](#stepout), [pause](#pause), [resume](#resume), [getScriptSource](#getscriptsource), [setPauseOnExceptions](#setpauseonexceptions), [evaluateOnCallFrame](#evaluateoncallframe), [setVariableValue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns), [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |  
+| [**Events**](#events) | [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [paused](#paused), [resumed](#resumed) |  
+| [**Types**](#types) | [BreakpointId](#breakpointid), [CallFrameId](#callframeid), [Location](#location), [BreakLocation](#breaklocation), [CallFrame](#callframe), [Scope](#scope) |  
+| [**Dependencies**](#dependencies) | [Runtime](./runtime.md) |  
+
+## Methods  
 
 ### enable
-Enables debugger for the given page. Clients should not assume that the debugging has been enabled until the result for this command is received.
+Enables debugger for the given page. Clients should not assume that the debugging has been enabled until the result for this command is received.  
 
+---  
 
----
+### disable  
 
-### disable
-Disables debugger for given page.
+Disables debugger for given page.  
 
+---  
 
----
+### getPossibleBreakpoints  
 
-### getPossibleBreakpoints
-Returns possible locations for breakpoint. scriptId in start and end range locations should be the same.
+Returns possible locations for breakpoint. scriptId in start and end range locations should be the same.  
 
 <table>
     <thead>
@@ -73,10 +74,11 @@ Returns possible locations for breakpoint. scriptId in start and end range locat
     </tbody>
 </table>
 
----
+---  
 
-### setBreakpointsActive
-Activates / deactivates all breakpoints on the page.
+### setBreakpointsActive  
+
+Activates / deactivates all breakpoints on the page.  
 
 <table>
     <thead>
@@ -95,10 +97,11 @@ Activates / deactivates all breakpoints on the page.
     </tbody>
 </table>
 
----
+---  
 
-### setBreakpointByUrl
-Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this command is issued, all existing parsed scripts will have breakpoints resolved and returned in <code>locations</code> property. Further matching script parsing will result in subsequent <code>breakpointResolved</code> events issued. This logical breakpoint will survive page reloads.
+### setBreakpointByUrl  
+
+Sets JavaScript breakpoint at given location specified either by URL or URL regex. Once this command is issued, all existing parsed scripts will have breakpoints resolved and returned in <code>locations</code> property. Further matching script parsing will result in subsequent <code>breakpointResolved</code> events issued. This logical breakpoint will survive page reloads.  
 
 <table>
     <thead>
@@ -158,10 +161,11 @@ Sets JavaScript breakpoint at given location specified either by URL or URL rege
     </tbody>
 </table>
 
----
+---  
 
-### setBreakpoint
-Sets JavaScript breakpoint at a given location.
+### setBreakpoint  
+
+Sets JavaScript breakpoint at a given location.  
 
 <table>
     <thead>
@@ -206,10 +210,11 @@ Sets JavaScript breakpoint at a given location.
     </tbody>
 </table>
 
----
+---  
 
-### removeBreakpoint
-Removes JavaScript breakpoint.
+### removeBreakpoint  
+
+Removes JavaScript breakpoint.  
 
 <table>
     <thead>
@@ -228,40 +233,41 @@ Removes JavaScript breakpoint.
     </tbody>
 </table>
 
----
+---  
 
-### stepOver
-Steps over the statement.
+### stepOver  
 
+Steps over the statement.  
 
----
+---  
 
-### stepInto
-Steps into the function call.
+### stepInto  
 
+Steps into the function call.  
 
----
+---  
 
-### stepOut
-Steps out of the function call.
+### stepOut  
 
+Steps out of the function call.  
 
----
+---  
 
-### pause
-Stops on the next JavaScript statement.
+### pause  
 
+Stops on the next JavaScript statement.  
 
----
+---  
 
-### resume
-Resumes JavaScript execution.
+### resume  
 
+Resumes JavaScript execution.  
 
----
+---  
 
-### getScriptSource
-Returns source for the script with given id.
+### getScriptSource  
+
+Returns source for the script with given id.  
 
 <table>
     <thead>
@@ -296,10 +302,11 @@ Returns source for the script with given id.
     </tbody>
 </table>
 
----
+---  
 
-### setPauseOnExceptions
-Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or no exceptions. Initial pause on exceptions state is <code>none</code>.
+### setPauseOnExceptions  
+
+Defines pause on exceptions state. Can be set to stop on all exceptions, uncaught exceptions or no exceptions. Initial pause on exceptions state is <code>none</code>.  
 
 <table>
     <thead>
@@ -318,10 +325,11 @@ Defines pause on exceptions state. Can be set to stop on all exceptions, uncaugh
     </tbody>
 </table>
 
----
+---  
 
-### evaluateOnCallFrame
-Evaluates expression on a given call frame.
+### evaluateOnCallFrame  
+
+Evaluates expression on a given call frame.  
 
 <table>
     <thead>
@@ -361,10 +369,11 @@ Evaluates expression on a given call frame.
     </tbody>
 </table>
 
----
+---  
 
-### setVariableValue
-Changes value of variable in a callframe. Object-based scopes are not supported and must be mutated manually.
+### setVariableValue  
+
+Changes value of variable in a callframe. Object-based scopes are not supported and must be mutated manually.  
 
 <table>
     <thead>
@@ -398,10 +407,11 @@ Changes value of variable in a callframe. Object-based scopes are not supported 
     </tbody>
 </table>
 
----
+---  
 
-### setBlackboxPatterns
-<span><b>Experimental. </b></span>Replace previous blackbox patterns with passed ones. Forces backend to skip stepping/pausing in scripts with url matching one of the patterns. The debugger will try to leave blackboxed script by performing 'step in' several times, finally resorting to 'step out' if unsuccessful.
+### setBlackboxPatterns  
+
+<span><b>Experimental. </b></span>Replace previous blackbox patterns with passed ones. Forces backend to skip stepping/pausing in scripts with url matching one of the patterns. The debugger will try to leave blackboxed script by performing 'step in' several times, finally resorting to 'step out' if unsuccessful.  
 
 <table>
     <thead>
@@ -420,10 +430,11 @@ Changes value of variable in a callframe. Object-based scopes are not supported 
     </tbody>
 </table>
 
----
+---  
 
-### msSetDebuggerPropertyValue
-<span><b>Experimental. </b></span>Microsoft: Sets the specified debugger property to the specified value.
+### msSetDebuggerPropertyValue  
+
+<span><b>Experimental. </b></span>Microsoft: Sets the specified debugger property to the specified value.  
 
 <table>
     <thead>
@@ -447,12 +458,13 @@ Changes value of variable in a callframe. Object-based scopes are not supported 
     </tbody>
 </table>
 
----
+---  
 
-## Events
+## Events  
 
-### scriptParsed
-Fired when the script is parsed. This event is also fired for all known and uncollected scripts upon enabling debugger.
+### scriptParsed  
+
+Fired when the script is parsed. This event is also fired for all known and uncollected scripts upon enabling debugger.  
 
 <table>
     <thead>
@@ -531,10 +543,11 @@ Fired when the script is parsed. This event is also fired for all known and unco
     </tbody>
 </table>
 
----
+---  
 
-### breakpointResolved
-Fired when breakpoint is resolved to an actual script and location.
+### breakpointResolved  
+
+Fired when breakpoint is resolved to an actual script and location.  
 
 <table>
     <thead>
@@ -563,10 +576,11 @@ Fired when breakpoint is resolved to an actual script and location.
     </tbody>
 </table>
 
----
+---  
 
-### paused
-Fired when the debuggers breaks for a breakpoint or exception.
+### paused  
+
+Fired when the debuggers breaks for a breakpoint or exception.  
 
 <table>
     <thead>
@@ -600,33 +614,31 @@ Fired when the debuggers breaks for a breakpoint or exception.
     </tbody>
 </table>
 
----
+---  
 
-### resumed
-Fired when the debugger resumes execution.
+### resumed  
 
+Fired when the debugger resumes execution.  
 
----
+---  
 
-## Types
+## Types  
 
-### <a name="breakpointid"></a> BreakpointId `string`
+### <a name="breakpointid"></a> BreakpointId `string`  
 
-Breakpoint identifier.
+Breakpoint identifier.  
 
+---  
 
----
+### <a name="callframeid"></a> CallFrameId `string`  
 
-### <a name="callframeid"></a> CallFrameId `string`
+Call frame identifier.  
 
-Call frame identifier.
+---  
 
+### <a name="location"></a> Location `object`  
 
----
-
-### <a name="location"></a> Location `object`
-
-Location in the source code.
+Location in the source code.  
 
 <table>
     <thead>
@@ -660,11 +672,11 @@ Location in the source code.
     </tbody>
 </table>
 
----
+---  
 
-### <a name="breaklocation"></a> BreakLocation `object`
+### <a name="breaklocation"></a> BreakLocation `object`  
 
-Break location in the source code.
+Break location in the source code.  
 
 <table>
     <thead>
@@ -703,11 +715,11 @@ Break location in the source code.
     </tbody>
 </table>
 
----
+---  
 
-### <a name="callframe"></a> CallFrame `object`
+### <a name="callframe"></a> CallFrame `object`  
 
-JavaScript call frame. Array of call frames form the call stack.
+JavaScript call frame. Array of call frames form the call stack.  
 
 <table>
     <thead>
@@ -761,11 +773,11 @@ JavaScript call frame. Array of call frames form the call stack.
     </tbody>
 </table>
 
----
+---  
 
-### <a name="scope"></a> Scope `object`
+### <a name="scope"></a> Scope `object`  
 
-Scope description.
+Scope description.  
 
 <table>
     <thead>
@@ -804,8 +816,8 @@ Scope description.
     </tbody>
 </table>
 
----
+---  
 
-## Dependencies
+## Dependencies  
 
-[Runtime](runtime.md)
+[Runtime](./runtime.md)  

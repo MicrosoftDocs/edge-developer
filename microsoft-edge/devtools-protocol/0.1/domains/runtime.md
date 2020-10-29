@@ -1,38 +1,40 @@
 ---
-description: Reference for the Runtime Domain. Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects. Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference. Original objects are maintained in memory unless they are either explicitly released.
+description: DevTools Protocol Version 0.1 (EdgeHTML) reference for the Runtime Domain. Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects. Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference. Original objects are maintained in memory unless they are either explicitly released.
 title: Runtime Domain - DevTools Protocol Version 0.1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 10/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
 ---
 # Runtime Domain - DevTools Protocol Version 0.1 (EdgeHTML)  
 
-Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects. Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference. Original objects are maintained in memory unless they are either explicitly released.
+Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects. Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference. Original objects are maintained in memory unless they are either explicitly released.  
 
-| | |
-|-|-|
-| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [evaluate](#evaluate), [callFunctionOn](#callfunctionon), [getProperties](#getproperties) |
-| [**Events**](#events) | [executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown) |
-| [**Types**](#types) | [ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExceptionDetails](#exceptiondetails), [Timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace) |
-## Methods
+|  |  |  
+|:--- |:--- |  
+| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [evaluate](#evaluate), [callFunctionOn](#callfunctionon), [getProperties](#getproperties) |  
+| [**Events**](#events) | [executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown) |  
+| [**Types**](#types) | [ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExceptionDetails](#exceptiondetails), [Timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace) |  
 
-### enable
-Enables reporting of the <code>executionContextsCleared</code> event.
+## Methods  
 
+### enable  
 
----
+Enables reporting of the <code>executionContextsCleared</code> event.  
 
-### disable
-Disables reporting of the <code>executionContextsCleared</code> event.
+---  
 
+### disable  
 
----
+Disables reporting of the <code>executionContextsCleared</code> event.  
 
-### evaluate
-Evaluates expression on global object.
+---  
+
+### evaluate  
+
+Evaluates expression on global object.  
 
 <table>
     <thead>
@@ -87,10 +89,11 @@ Evaluates expression on global object.
     </tbody>
 </table>
 
----
+---  
 
-### callFunctionOn
-Calls function with given declaration on the given object. Object group of the result is inherited from the target object.
+### callFunctionOn  
+
+Calls function with given declaration on the given object. Object group of the result is inherited from the target object.  
 
 <table>
     <thead>
@@ -150,10 +153,11 @@ Calls function with given declaration on the given object. Object group of the r
     </tbody>
 </table>
 
----
+---  
 
-### getProperties
-Returns properties of a given object. Object group of the result is inherited from the target object.
+### getProperties  
+
+Returns properties of a given object. Object group of the result is inherited from the target object.  
 
 <table>
     <thead>
@@ -198,18 +202,19 @@ Returns properties of a given object. Object group of the result is inherited fr
     </tbody>
 </table>
 
----
+---  
 
-## Events
+## Events  
 
-### executionContextsCleared
-Issued when all executionContexts were cleared in browser
+### executionContextsCleared  
 
+Issued when all executionContexts were cleared in browser  
 
----
+---  
 
-### exceptionThrown
-Issued when exception was thrown and unhandled.
+### exceptionThrown  
+
+Issued when exception was thrown and unhandled.  
 
 <table>
     <thead>
@@ -233,36 +238,35 @@ Issued when exception was thrown and unhandled.
     </tbody>
 </table>
 
----
+---  
 
-## Types
+## Types  
 
-### <a name="scriptid"></a> ScriptId `string`
+### <a name="scriptid"></a> ScriptId `string`  
 
-Unique script identifier.
+Unique script identifier.  
 
+---  
 
----
+### <a name="remoteobjectid"></a> RemoteObjectId `string`  
 
-### <a name="remoteobjectid"></a> RemoteObjectId `string`
+Unique object identifier.  
 
-Unique object identifier.
+---  
 
+### <a name="unserializablevalue"></a> UnserializableValue `string`  
 
----
+Primitive value which cannot be JSON-stringified.  
 
-### <a name="unserializablevalue"></a> UnserializableValue `string`
+##### Allowed Values  
 
-Primitive value which cannot be JSON-stringified.
+Infinity, NaN, -Infinity, -0  
 
-##### Allowed Values
-Infinity, NaN, -Infinity, -0
+---  
 
----
+### <a name="remoteobject"></a> RemoteObject `object`  
 
-### <a name="remoteobject"></a> RemoteObject `object`
-
-Mirror object referencing original JavaScript object.
+Mirror object referencing original JavaScript object.  
 
 <table>
     <thead>
@@ -316,11 +320,11 @@ Mirror object referencing original JavaScript object.
     </tbody>
 </table>
 
----
+---  
 
-### <a name="propertydescriptor"></a> PropertyDescriptor `object`
+### <a name="propertydescriptor"></a> PropertyDescriptor `object`  
 
-Object property descriptor.
+Object property descriptor.  
 
 <table>
     <thead>
@@ -389,11 +393,11 @@ Object property descriptor.
     </tbody>
 </table>
 
----
+---  
 
-### <a name="callargument"></a> CallArgument `object`
+### <a name="callargument"></a> CallArgument `object`  
 
-Represents function call argument. Either remote object id <code>objectId</code>, primitive <code>value</code>, unserializable primitive value or neither of (for undefined) them should be specified.
+Represents function call argument. Either remote object id <code>objectId</code>, primitive <code>value</code>, unserializable primitive value or neither of (for undefined) them should be specified.  
 
 <table>
     <thead>
@@ -422,18 +426,17 @@ Represents function call argument. Either remote object id <code>objectId</code>
     </tbody>
 </table>
 
----
+---  
 
-### <a name="executioncontextid"></a> ExecutionContextId `integer`
+### <a name="executioncontextid"></a> ExecutionContextId `integer`  
 
-Id of an execution context.
+Id of an execution context.  
 
+---  
 
----
+### <a name="exceptiondetails"></a> ExceptionDetails `object`  
 
-### <a name="exceptiondetails"></a> ExceptionDetails `object`
-
-Detailed information about exception (or error) that was thrown during script compilation or execution.
+Detailed information about exception (or error) that was thrown during script compilation or execution.  
 
 <table>
     <thead>
@@ -492,18 +495,17 @@ Detailed information about exception (or error) that was thrown during script co
     </tbody>
 </table>
 
----
+---  
 
-### <a name="timestamp"></a> Timestamp `integer`
+### <a name="timestamp"></a> Timestamp `integer`  
 
-Number of milliseconds since epoch.
+Number of milliseconds since epoch.  
 
+---  
 
----
+### <a name="callframe"></a> CallFrame `object`  
 
-### <a name="callframe"></a> CallFrame `object`
-
-Stack entry for runtime errors and assertions.
+Stack entry for runtime errors and assertions.  
 
 <table>
     <thead>
@@ -542,11 +544,11 @@ Stack entry for runtime errors and assertions.
     </tbody>
 </table>
 
----
+---  
 
-### <a name="stacktrace"></a> StackTrace `object`
+### <a name="stacktrace"></a> StackTrace `object`  
 
-Call frames for assertions or error messages.
+Call frames for assertions or error messages.  
 
 <table>
     <thead>
@@ -575,4 +577,4 @@ Call frames for assertions or error messages.
     </tbody>
 </table>
 
----
+---  

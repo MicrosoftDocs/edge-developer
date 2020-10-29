@@ -1,39 +1,43 @@
 ---
-description: Reference for the Runtime Domain. Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects. Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference. Original objects are maintained in memory unless they are either explicitly released.
+description: DevTools Protocol Version 0.2 (EdgeHTML) reference for the Runtime Domain. Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects. Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference. Original objects are maintained in memory unless they are either explicitly released.
 title: Runtime Domain - DevTools Protocol Version 0.2 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 10/28/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
 # Runtime Domain - DevTools Protocol Version 0.2 (EdgeHTML)  
 
-Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects. Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference. Original objects are maintained in memory unless they are either explicitly released.
+Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects. Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference. Original objects are maintained in memory unless they are either explicitly released.  
 
-| | |
-|-|-|
-| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [evaluate](#evaluate), [callFunctionOn](#callfunctionon), [awaitPromise](#awaitpromise), [getProperties](#getproperties), [globalLexicalScopeNames](#globallexicalscopenames), [releaseObject](#releaseobject), [releaseObjectGroup](#releaseobjectgroup), [discardConsoleEntries](#discardconsoleentries) |
-| [**Events**](#events) | [executionContextCreated](#executioncontextcreated), [executionContextDestroyed](#executioncontextdestroyed), [executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown), [consoleAPICalled](#consoleapicalled) |
-| [**Types**](#types) | [ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExecutionContextDescription](#executioncontextdescription), [ExceptionDetails](#exceptiondetails), [Timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace) |
-## Methods
+|  |  |
+|:--- |:--- |  
+| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [evaluate](#evaluate), [callFunctionOn](#callfunctionon), [awaitPromise](#awaitpromise), [getProperties](#getproperties), [globalLexicalScopeNames](#globallexicalscopenames), [releaseObject](#releaseobject), [releaseObjectGroup](#releaseobjectgroup), [discardConsoleEntries](#discardconsoleentries) |  
+| [**Events**](#events) | [executionContextCreated](#executioncontextcreated), [executionContextDestroyed](#executioncontextdestroyed), [executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown), [consoleAPICalled](#consoleapicalled) |  
+| [**Types**](#types) | [ScriptId](#scriptid), [RemoteObjectId](#remoteobjectid), [UnserializableValue](#unserializablevalue), [RemoteObject](#remoteobject), [PropertyDescriptor](#propertydescriptor), [CallArgument](#callargument), [ExecutionContextId](#executioncontextid), [ExecutionContextDescription](#executioncontextdescription), [ExceptionDetails](#exceptiondetails), [Timestamp](#timestamp), [CallFrame](#callframe), [StackTrace](#stacktrace) |  
 
-### enable
-Enables reporting of the <code>executionContextCreated</code>, <code>executionContextDestroyed</code> and <code>executionContextsCleared</code> events. When the reporting gets enabled the <code>executionContextCreated</code> event will be sent immediately for each existing execution context.
+## Methods  
 
-</p>
+### enable  
 
----
-
-### disable
-Disables reporting of the <code>executionContextCreated</code>, <code>executionContextDestroyed</code> and <code>executionContextsCleared</code> events.
+Enables reporting of the <code>executionContextCreated</code>, <code>executionContextDestroyed</code> and <code>executionContextsCleared</code> events. When the reporting gets enabled the <code>executionContextCreated</code> event will be sent immediately for each existing execution context.  
 
 </p>
 
----
+---  
 
-### evaluate
-Evaluates expression on global object.
+### disable  
+
+Disables reporting of the <code>executionContextCreated</code>, <code>executionContextDestroyed</code> and <code>executionContextsCleared</code> events.  
+
+</p>
+
+---  
+
+### evaluate  
+
+Evaluates expression on global object.  
 
 <table>
     <thead>
@@ -99,10 +103,11 @@ Evaluates expression on global object.
 </table>
 </p>
 
----
+---  
 
-### callFunctionOn
-Calls function with given declaration on the given object. Object group of the result is inherited from the target object.
+### callFunctionOn  
+
+Calls function with given declaration on the given object. Object group of the result is inherited from the target object.  
 
 <table>
     <thead>
@@ -174,10 +179,11 @@ executionContextId or objectId should be specified.</td>
 </table>
 </p>
 
----
+---  
 
-### awaitPromise
-Add handler to promise with given promise object id.
+### awaitPromise  
+
+Add handler to promise with given promise object id.  
 
 <table>
     <thead>
@@ -218,10 +224,11 @@ Add handler to promise with given promise object id.
 </table>
 </p>
 
----
+---  
 
-### getProperties
-Returns properties of a given object. Object group of the result is inherited from the target object.
+### getProperties  
+
+Returns properties of a given object. Object group of the result is inherited from the target object.  
 
 <table>
     <thead>
@@ -267,10 +274,11 @@ Returns properties of a given object. Object group of the result is inherited fr
 </table>
 </p>
 
----
+---  
 
-### globalLexicalScopeNames
-Returns all let, const, and class variables from the console global scope.
+### globalLexicalScopeNames  
+
+Returns all let, const, and class variables from the console global scope.  
 
 <table>
     <thead>
@@ -290,10 +298,11 @@ Returns all let, const, and class variables from the console global scope.
 </table>
 </p>
 
----
+---  
 
-### releaseObject
-Releases remote object with given id.
+### releaseObject  
+
+Releases remote object with given id.  
 
 <table>
     <thead>
@@ -313,10 +322,11 @@ Releases remote object with given id.
 </table>
 </p>
 
----
+---  
 
-### releaseObjectGroup
-Releases all remote objects that belong to a given group.
+### releaseObjectGroup  
+
+Releases all remote objects that belong to a given group.  
 
 <table>
     <thead>
@@ -336,19 +346,21 @@ Releases all remote objects that belong to a given group.
 </table>
 </p>
 
----
+---  
 
-### discardConsoleEntries
-Discards collected exceptions and console API calls.
+### discardConsoleEntries  
+
+Discards collected exceptions and console API calls.  
 
 </p>
 
----
+---  
 
-## Events
+## Events  
 
-### executionContextCreated
-Issued when new execution context is created.
+### executionContextCreated  
+
+Issued when new execution context is created.  
 
 <table>
     <thead>
@@ -368,10 +380,11 @@ Issued when new execution context is created.
 </table>
 </p>
 
----
+---  
 
-### executionContextDestroyed
-Issued when execution context is destroyed.
+### executionContextDestroyed  
+
+Issued when execution context is destroyed.  
 
 <table>
     <thead>
@@ -391,17 +404,19 @@ Issued when execution context is destroyed.
 </table>
 </p>
 
----
+---  
 
-### executionContextsCleared
-Issued when all executionContexts were cleared in browser
+### executionContextsCleared  
+
+Issued when all executionContexts were cleared in browser  
 
 </p>
 
----
+---  
 
-### exceptionThrown
-Issued when exception was thrown and unhandled.
+### exceptionThrown  
+
+Issued when exception was thrown and unhandled.  
 
 <table>
     <thead>
@@ -426,10 +441,9 @@ Issued when exception was thrown and unhandled.
 </table>
 </p>
 
----
+---  
 
-### consoleAPICalled
-
+### consoleAPICalled  
 
 <table>
     <thead>
@@ -469,39 +483,41 @@ Issued when exception was thrown and unhandled.
 </table>
 </p>
 
----
+---  
 
-## Types
+## Types  
 
-### <a name="scriptid"></a> ScriptId `string`
+### <a name="scriptid"></a> ScriptId `string`  
 
-Unique script identifier.
-
-</p>
-
----
-
-### <a name="remoteobjectid"></a> RemoteObjectId `string`
-
-Unique object identifier.
+Unique script identifier.  
 
 </p>
 
----
+---  
 
-### <a name="unserializablevalue"></a> UnserializableValue `string`
+### <a name="remoteobjectid"></a> RemoteObjectId `string`  
 
-Primitive value which cannot be JSON-stringified.
+Unique object identifier.  
 
-##### Allowed Values
-Infinity, NaN, -Infinity, -0
 </p>
 
----
+---  
 
-### <a name="remoteobject"></a> RemoteObject `object`
+### <a name="unserializablevalue"></a> UnserializableValue `string`  
 
-Mirror object referencing original JavaScript object.
+Primitive value which cannot be JSON-stringified.  
+
+##### Allowed Values  
+
+Infinity, NaN, -Infinity, -0  
+
+</p>
+
+---  
+
+### <a name="remoteobject"></a> RemoteObject `object`  
+
+Mirror object referencing original JavaScript object.  
 
 <table>
     <thead>
@@ -556,11 +572,11 @@ Mirror object referencing original JavaScript object.
 </table>
 </p>
 
----
+---  
 
-### <a name="propertydescriptor"></a> PropertyDescriptor `object`
+### <a name="propertydescriptor"></a> PropertyDescriptor `object`  
 
-Object property descriptor.
+Object property descriptor.  
 
 <table>
     <thead>
@@ -630,11 +646,11 @@ Object property descriptor.
 </table>
 </p>
 
----
+---  
 
-### <a name="callargument"></a> CallArgument `object`
+### <a name="callargument"></a> CallArgument `object`  
 
-Represents function call argument. Either remote object id <code>objectId</code>, primitive <code>value</code>, unserializable primitive value or neither of (for undefined) them should be specified.
+Represents function call argument. Either remote object id <code>objectId</code>, primitive <code>value</code>, unserializable primitive value or neither of (for undefined) them should be specified.  
 
 <table>
     <thead>
@@ -664,19 +680,19 @@ Represents function call argument. Either remote object id <code>objectId</code>
 </table>
 </p>
 
----
+---  
 
-### <a name="executioncontextid"></a> ExecutionContextId `integer`
+### <a name="executioncontextid"></a> ExecutionContextId `integer`  
 
-Id of an execution context.
+Id of an execution context.  
 
 </p>
 
----
+---  
 
-### <a name="executioncontextdescription"></a> ExecutionContextDescription `object`
+### <a name="executioncontextdescription"></a> ExecutionContextDescription `object`  
 
-Description of an isolated world.
+Description of an isolated world.  
 
 <table>
     <thead>
@@ -707,11 +723,11 @@ script evaluation should be performed.</td>
 </table>
 </p>
 
----
+---  
 
-### <a name="exceptiondetails"></a> ExceptionDetails `object`
+### <a name="exceptiondetails"></a> ExceptionDetails `object`  
 
-Detailed information about exception (or error) that was thrown during script compilation or execution.
+Detailed information about exception (or error) that was thrown during script compilation or execution.  
 
 <table>
     <thead>
@@ -771,19 +787,19 @@ Detailed information about exception (or error) that was thrown during script co
 </table>
 </p>
 
----
+---  
 
-### <a name="timestamp"></a> Timestamp `integer`
+### <a name="timestamp"></a> Timestamp `integer`  
 
-Number of milliseconds since epoch.
+Number of milliseconds since epoch.  
 
 </p>
 
----
+---  
 
-### <a name="callframe"></a> CallFrame `object`
+### <a name="callframe"></a> CallFrame `object`  
 
-Stack entry for runtime errors and assertions.
+Stack entry for runtime errors and assertions.  
 
 <table>
     <thead>
@@ -823,11 +839,11 @@ Stack entry for runtime errors and assertions.
 </table>
 </p>
 
----
+---  
 
-### <a name="stacktrace"></a> StackTrace `object`
+### <a name="stacktrace"></a> StackTrace `object`  
 
-Call frames for assertions or error messages.
+Call frames for assertions or error messages.  
 
 <table>
     <thead>
@@ -857,4 +873,4 @@ Call frames for assertions or error messages.
 </table>
 </p>
 
----
+---  

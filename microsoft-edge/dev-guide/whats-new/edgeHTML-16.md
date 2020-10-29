@@ -1,13 +1,13 @@
 ---
-ms.assetid:  476c4b7a-be24-434b-a051-83f19d741aaf
-description:  This guide provides an overview of the developer features and standards included in Microsoft Edge.
+description: This guide provides an overview of the developer features and standards included in EdgeHTML 16.
 title: New features and APIs in EdgeHTML 16
-author:  MSEdgeTeam
-ms.author:  msedgedevrel
-ms.date:  07/28/2020
-ms.topic:  article
-ms.prod:  microsoft-edge
-keywords:  edge, web development, html, css, javascript, developer
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 07/28/2020
+ms.topic: article
+ms.prod: microsoft-edge
+ms.assetid: 476c4b7a-be24-434b-a051-83f19d741aaf
+keywords: edge, web development, html, css, javascript, developer
 ---
 # What's new in EdgeHTML 16  
 
