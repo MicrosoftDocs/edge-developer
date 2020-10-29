@@ -28,7 +28,7 @@ If you are running the same code in the [Console][DevtoolsConsoleIndex] repeated
 
 Snippets are an alternative to [bookmarklets][WikiBookmarklet] with the difference that Snippets only run in DevTools and are not limited to the allowed length of a URL.  
 
-Using Snippets is an excellent way to change a few things in a third party webpage.  Code changes in Snippets are added to the current webpage and run in the same context.  For more information about changing the existing code of a webpage, navigate to [Overrides][DevtoolsJavascriptOverrides].  
+Using Snippets is an excellent way to change a few things in a third-party webpage.  Code changes in Snippets are added to the current webpage and run in the same context.  For more information about changing the existing code of a webpage, navigate to [Overrides][DevtoolsJavascriptOverrides].  
 
 :::row:::
    :::column span="":::
@@ -73,11 +73,11 @@ The **Snippets** pane lists your Snippets.  When you want to edit a Snippet, you
        The **Sources** tool with the **Page** pane open on the left  
     :::image-end:::  
     
-1.  Choose the **Snippets** tab to open the **Snippets** pane.  You might need to choose **More Tabs** \(![More Tabs][ImageMoreTabsIcon]\) in order to access the **Snippets** option.  
+1.  Choose the **Snippets** tab to open the **Snippets** pane.  You may need to choose **More Tabs** \(![More Tabs][ImageMoreTabsIcon]\) to access the **Snippets** option.  
     
 ### Open the Snippets pane with the Command Menu  
 
-1.  Focus your cursor somewhere inside of DevTools.  
+1.  Focus your cursor somewhere in DevTools.  
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu.  
 1.  Type `Snippets`, choose **Show Snippets**, and then select `Enter` to run the command.  
     
@@ -99,7 +99,7 @@ The **Snippets** pane lists your Snippets.  When you want to edit a Snippet, you
     
 ### Create a Snippet through the Command Menu  
 
-1.  Focus your cursor somewhere inside of DevTools.  
+1.  Focus your cursor somewhere in DevTools.  
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu.  
 1.  Type `Snippet`, choose **Create new snippet**, then select `Enter` to run the command.  
     
@@ -112,14 +112,14 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
 ## Edit Snippets  
 
 1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
-1.  In the **Snippets** pane, choose the name of the Snippet that you want to edit in order to open it in the **Code Editor**.  
+1.  In the **Snippets** pane, choose the name of the Snippet that you want to edit.  It opens in the **Code Editor**.  
     
     :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="The Code Editor" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
        The **Code Editor**  
     :::image-end:::  
     
 1.  Use the **Code Editor** to add JavaScript to your Snippet.  
-1.  When an asterisk appears next to the name of your Snippet it means you have unsaved code.  Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save.  
+1.  When an asterisk appears next to the name of your Snippet, it means you have unsaved code.  Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save.  
     
     :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="An asterisk next to the Snippet name indicates unsaved code" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
        An asterisk next to the Snippet name indicates unsaved code  
@@ -135,7 +135,7 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
     
 ### Run a Snippet with the Command Menu  
 
-1.  Focus your cursor somewhere inside of DevTools.  
+1.  Focus your cursor somewhere in DevTools.  
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu.  
 1.  Delete the `>` character and type the `!` character followed by the name of the Snippet that you want to run.  
     

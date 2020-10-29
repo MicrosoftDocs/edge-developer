@@ -1,5 +1,5 @@
 ---
-description: Overrides is a feature within the Sources tool of Microsoft Edge DevTools that allows you to copy webpage resources to your hard drive.  When you refresh the webpage, DevTools does not load the resource but replace it with your local copy instead.  
+description: The Overrides feature is a feature within the Sources tool of Microsoft Edge DevTools that allows you to copy webpage resources to your hard drive.  When you refresh the webpage, DevTools do not load the resource but replace it with your local copy instead.  
 title: Override webpage resources with local copies using Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -10,15 +10,15 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Override webpage resources with local copies using Microsoft Edge DevTools  
 
-Sometimes you need to fix a problem on a webpage that you do not have access to or fixes involve a slow and complex build process.  You may debug and fix all kind of problems in the browser DevTools but the problem is that the changes do not persist.  After you refresh the file, all your work is gone.  
+Sometimes you need to fix a problem on a webpage that you do not have access to or fixes involve a slow and complex build process.  You may debug and fix all kind of problems in DevTools. But the problem is the changes do not persist.  After you refresh the file, all your work is gone.  
 
-The Overrides feature in the [Sources][DevToolsSourcesTool] tool helps you sole this problem.  
+The Overrides feature in the [Sources][DevToolsSourcesTool] tool helps you solve this problem.  
 
-You may now take a resource of the current webpage and store it locally.  When you refresh the webpage, the browser does not load the resource from the server. instead the browser replaces it with your local copy of the resource.  
+You may now take a resource of the current webpage and store it locally.  When you refresh the webpage, the browser does not load the resource from the server.  Instead the browser replaces it with your local copy of the resource.  
 
 ## Setting up your local folder to store Overrides  
 
-1.  In the **Sources** tool you find several sections on the left hand side.  If the **Overrides** option is not displayed, choose the `≫` icon to get there.  
+1.  In the **Sources** tool, find several sections on the left-hand side.  If the **Overrides** option is not displayed, choose the <code>&#x0226B;</code><!--`≫`--> icon to get there.  
     
     :::row:::
        :::column span="":::
@@ -45,7 +45,7 @@ You may now take a resource of the current webpage and store it locally.  When y
        Grant DevTools access to folder  
     :::image-end:::  
     
-1.  In the **Overrides** pane, a checkbox should be displayed next to `Enable Local Overrides` and your overrides folder.  Next to it is also an icon that allows you to delete your local overrides settings.  You are now done setting up your folder and ready to replace live resources with local ones.
+1.  In the **Overrides** pane, a checkbox should be displayed next to `Enable Local Overrides` and your overrides folder.  An icon is displayed next to it that allows you to delete your local overrides settings.  You are now done setting up your folder and ready to replace live resources with local ones.
     
     :::image type="complex" source="../media/javascript-overrides-folder-setup-complete.msft.png" alt-text="Successful set up of an overrides folder" lightbox="../media/javascript-overrides-folder-setup-complete.msft.png":::
        Successful set up of an overrides folder  
@@ -53,7 +53,7 @@ You may now take a resource of the current webpage and store it locally.  When y
     
 ## Adding files to your Overrides folder  
   
-To add files to your overrides folder, open the the **Elements** tool and inspect the webpage.  To edit, in the **Styles** inspector, choose the name of the CSS file.  
+To add files to your overrides folder, open the **Elements** tool and inspect the webpage.  To edit, choose the name of the CSS file in the **Styles** inspector.  
 
 :::image type="complex" source="../media/javascript-overrides-select-css-file.msft.png" alt-text="Choose a file in the Styles inspector" lightbox="../media/javascript-overrides-select-css-file.msft.png":::
    Choose a file in the **Styles** inspector  
@@ -69,7 +69,7 @@ On the **Sources** editor, hover on the file name of your chosen file, open the 
    On the context menu, choose **Save for overrides**  
 :::image-end:::  
 
-The file is stored in your overrides folder.  Verify that DevTools creates a folder with the name of the URL of the file that you stored and creates the correct directory structure inside of it.  The file name in the editor now also shows a purple dot that indicates that the file is local and not a live one.  
+The file is stored in your overrides folder.  Verify that DevTools create a folder that is named using the URL of the file with the correct directory structure.  The file is stored inside.  The file name in the editor now also shows a purple dot that indicates that the file is local and not a live one.  
 
 :::image type="complex" source="../media/javascript-overrides-file-stored.msft.png" alt-text="Successfully stored the file in your overrides folder" lightbox="../media/javascript-overrides-file-stored.msft.png":::
    Successfully stored the file in your overrides folder  
@@ -77,7 +77,7 @@ The file is stored in your overrides folder.  Verify that DevTools creates a fol
 
 :::row:::
    :::column span="":::
-      In the following example, you may now change the styles of the webpage to add a red border around the file by adding a the following style to the body element in the **Styles** editor.  
+      In the following example, you may now change the styles of the webpage.  To add a red border around the file, on the **Styles** editor, copy the following style, and add it to the body element.  
       
       ```css
       border: 10px solid firebrick
@@ -94,14 +94,14 @@ The file is stored in your overrides folder.  Verify that DevTools creates a fol
 
 :::row:::
    :::column span="":::
-      On the **Sources** tool, in the **Page** section, hover on the any file, open the contextual menu \(right-click\), and add it to overrides.  Again, files that are already in your overrides folder have a purple dot on the icon.  
+      On the **Sources** tool, in the **Page** section, hover on any file, open the contextual menu \(right-click\), and add it to overrides.  Again, files that are already in your overrides folder have a purple dot on the icon.  
       
       :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="Choose a file from the Sources tool for overrides" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
          Choose a file from the **Sources** tool for overrides  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      Alternatively, on the **Network** tool, hover on any file, open the contextual menu \(right-click\), and add it to overrides.  Also notice that when overrides are in effect, the **Network** tool shows a warning icon reminding you that some files are coming from your computer and not the live webpage.  
+      Alternatively, on the **Network** tool, hover on any file, open the contextual menu \(right-click\), and add it to overrides.  When overrides are in effect, files that are located on your computer and not from the live webpage.  When overrides are in effect, on the **Network** tool, locate a warning icon next to the file name.  
       
       :::image type="complex" source="../media/javascript-overrides-network.msft.png" alt-text="Choose a file from the Network tool for overrides" lightbox="../media/javascript-overrides-network.msft.png":::
          Choose a file from the **Network** tool for overrides  
@@ -109,7 +109,7 @@ The file is stored in your overrides folder.  Verify that DevTools creates a fol
    :::column-end:::
 :::row-end:::  
 
-## Two way interaction of overrides  
+## Two-way interaction of overrides  
 
 Use the editor provided with the **Sources** tool of DevTools or any editor you want to change the files.  Changes are synced across all the products that access the files in the overrides folder.  
 
