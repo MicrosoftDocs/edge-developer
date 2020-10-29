@@ -25,7 +25,7 @@ You can take any of the page resources of the current web site and store them lo
       Sources Panel with not enough space to show the overrides option 
     :::image-end:::  
 
-    :::image type="complex" source="../media//overrides-menu.msft.png" alt-text="Selecting the overrides option" lightbox="../media/javascript-overrides-menu.msft.png":::
+    :::image type="complex" source="../media/javascript-overrides-menu.msft.png" alt-text="Selecting the overrides option" lightbox="../media/javascript-overrides-menu.msft.png":::
       Selecting the overrides option
     :::image-end:::  
 
