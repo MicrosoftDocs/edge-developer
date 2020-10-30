@@ -81,7 +81,7 @@ Playwright launches Microsoft Edge, navigates to `https://www.microsoft.com/edge
     The `example.png` file produced by `example.js`  
 :::image-end:::  
 
-`example.js` is just a simple example of the automation and testing scenarios enabled by Playwright.  For more information about Playwright, navigate to the [Playwright website][PlaywrightMain].  Check out the  [Playwright repo][PlaywrightRepo] on GitHub and [file issues with your feedback on automating and testing your website or app with Playwright][PlaywrightRepoNewIssue].  
+`example.js` is just a simple demonstration of the automation and testing scenarios enabled by Playwright.  By changing `await chromium.launch()` to `await webkit.launch()` or `await firefox.launch()`, you would be able to take screenshots in two other browsers with another one-line code change.  For more information about Playwright, navigate to the [Playwright website][PlaywrightMain].  Check out the  [Playwright repo][PlaywrightRepo] on GitHub and [file issues with your feedback on automating and testing your website or app with Playwright][PlaywrightRepoNewIssue].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
