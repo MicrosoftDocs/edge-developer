@@ -2,7 +2,7 @@
 title: Simulate reduced motion using developer tools (CSS Prefers Reduced Motion)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/18/2020
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -23,13 +23,13 @@ Animation in web products may be an accessibility problem.  Operating Systems de
 Using the [Microsoft Edge DevTools][DevtoolsGuideChromiumMain], you may simulate this reduced motion setting without having to change your operating system.  
 
 1.  Open the **Command Menu**.  
-    1.  Press `Control`+`Shift`+`P`  on Windows or `Command`+`Shift`+`P` on macOS.  
+    1.  Select `Control`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS.  
         
         :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="The Command Menu" lightbox="../media/css-console-command-menu-rendering.msft.png":::
            The **Command Menu**  
-        :::image-end:::   
+        :::image-end:::  
         
-1.  Type `reduced`, to turn the simulation on and off.  Select the option and press `Enter`.  
+1.  Type `reduced`, to turn the simulation on and off.  Choose the option and select `Enter`.  
     
     :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="Turn on or off the prefers reduced motion setting from Command Menu" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
        Turn on or off the **prefers reduced motion** setting from **Command Menu**  

@@ -1,19 +1,20 @@
 ---
+description: Emulate vision deficiencies (color blindness) in Microsoft Edge DevTools
 title: Emulate vision deficiencies in Microsoft Edge DevTools(color blindness)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/29/2020
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-# Emulate vision deficiencies
+# Emulate vision deficiencies  
 
 To better meet the needs of your users with [color vision deficiency][ColorblindawarenessMain] \(color blindness\), [Microsoft Edge DevTools][MicrosoftEdgeDevTools] enable you to simulate specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories.  
 
 | Color vision deficiency | Details |  
 |:--- |:--- |  
-| Blurred vision | The user has difficulty focusing on fine details. |   
+| Blurred vision | The user has difficulty focusing on fine details. |  
 | Protanopia | The user is unable to perceive any red light. |  
 | Deuteranopia | The user is unable to perceive any green light. |  
 | Tritanopia | The user is unable to perceive any blue light. |  
@@ -23,17 +24,17 @@ To better meet the needs of your users with [color vision deficiency][Colorblind
 
 To simulate a vision deficiency being applied for your web product, open the [Rendering Tools][RenderingTools].  
 
-1.  Open the Rendering Tools by selecting the `...` menu item in the toolbar  
-1.  Select `More tools`  
-1.  Select `Rendering`  
+1.  Open the Rendering Tools by choosing the `...` menu item in the toolbar  
+1.  Choose **More tools**  
+1.  Choose **Rendering**  
     
     :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
        Opening the **Rendering Tools**  
     :::image-end:::  
-
+    
 The **Rendering** menu appears in the drawer.  
 
-1.  Scroll down to the `Emulate vision deficiencies` menu item and select the drop-down menu to display the options.  
+1.  Scroll down to the `Emulate vision deficiencies` menu item and choose the drop-down menu to display the options.  
     
     :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="The Emulate Vision Deficiencies menu on the Rendering drawer" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
        The **Emulate vision deficiencies** menu on the **Rendering** drawer  
@@ -45,7 +46,7 @@ The **Rendering** menu appears in the drawer.
        The **Emulate vision deficiencies** menu options  
     :::image-end:::  
     
-1.  The main windows displays the simulation of your selected option applied to the current page.  
+1.  The main windows displays the simulation of your chosen option applied to the current page.  
     
     :::row:::
        :::column span="":::
@@ -55,7 +56,7 @@ The **Rendering** menu appears in the drawer.
        :::column-end:::
        :::column span="":::
           :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Display using **Achromatopsia** simulation" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
-             Display using **Achromatopsia** simulation 
+             Display using **Achromatopsia** simulation  
           :::image-end:::  
        :::column-end:::
     :::row-end:::
@@ -64,13 +65,13 @@ The **Rendering** menu appears in the drawer.
 
 You may also use **Command Menu** to access the different simulations.  
 
-1.  Press `Control`+`Shift`+`P` \(Windows\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
+1.  Select `Control`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS to open the **Command Menu**.  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="The Command Menu" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        The **Command Menu**  
     :::image-end:::  
     
-1.  Type `emulate`, choose what you want to simulate and press `Enter`.  
+1.  Type `emulate`, choose what you want to simulate and select `Enter`.  
     
     :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="The different simulation options available in the Command Menu" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
        The different simulation options available in the **Command Menu**  
