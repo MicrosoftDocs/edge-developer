@@ -17,7 +17,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 *   [Clear some of the clutter on the DOM pane](#changing-your-view) or the [z-index pane](#change-the-scope-of-your-exploration)  
 *   [Pick the color scheme to best debug your DOM problems](#dom-color-type) or [z-index problems](#z-index-color-type)  
 
-If you want to explore an early prototype of 3D View project and run the code yourself, see [3D View Sample][GithubMicrosoftedgeDevtoolssamples3dview].  
+If you want to explore an early prototype of 3D View project and run the code yourself, navigate to [3D View Sample][GithubMicrosoftedgeDevtoolssamples3dview].  
 
 On the left side, there are two panes that you are able to use for your debugging experience.  
 
@@ -28,7 +28,7 @@ On the right side, the canvas displays your selections from the [Z-index](#z-ind
 
 ## Navigating the canvas  
 
-:::image type="complex" source="../media/canvas.png" alt-text="Canvas of 3D View" lightbox="../media/canvas.png":::
+:::image type="complex" source="../media/3d-view-canvas.msft.png" alt-text="Canvas of 3D View" lightbox="../media/3d-view-canvas.msft.png":::
    Canvas of 3D View  
 :::image-end:::  
 
@@ -45,7 +45,7 @@ On the right side, the canvas displays your selections from the [Z-index](#z-ind
 
 ### On-screen controls  
 
-:::image type="complex" source="../media/controls-small.png" alt-text="On-screen controls" lightbox="../media/controls-small.png":::
+:::image type="complex" source="../media/3d-view-controls-small.msft.png" alt-text="On-screen controls" lightbox="../media/3d-view-controls-small.msft.png":::
    On-screen controls  
 :::image-end:::  
 
@@ -54,7 +54,7 @@ On the right side, the canvas displays your selections from the [Z-index](#z-ind
 
 ## Z-index  
 
-:::image type="complex" source="../media/z-index-view-box.png" alt-text="Z-index view" lightbox="../media/z-index-view-box.png":::
+:::image type="complex" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Z-index view" lightbox="../media/3d-view-z-index-view-box.msft.png":::
    Z-index view  
 :::image-end:::  
 
@@ -88,7 +88,7 @@ The are the different visualizations you may use for the DOM in your canvas.  Wh
 
 ## 3D DOM  
 
-:::image type="complex" source="../media/dom-purple-box.png" alt-text="DOM view" lightbox="../media/dom-purple-box.png":::
+:::image type="complex" source="../media/3d-view-dom-purple-box.msft.png" alt-text="DOM view" lightbox="../media/3d-view-dom-purple-box.msft.png":::
    DOM view  
 :::image-end:::  
 
