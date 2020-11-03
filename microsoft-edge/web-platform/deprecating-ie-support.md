@@ -1,21 +1,21 @@
 ---
-description: Deprecating support for Internet Explorer by moving users to Microsoft Edge
-title: Deprecating support for Internet Explorer by moving users to Microsoft Edge
+description: Moving users to Microsoft Edge from Internet Explorer 
+title: Moving users to Microsoft Edge from Internet Explorer
 author: MSEdgeTeam
 ms.date: 11/03/2020
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, internet explorer
 ---
-# Deprecating support for Internet Explorer by moving users to Microsoft Edge
+# Moving users to Microsoft Edge from Internet Explorer 
 
-Many modern websites have designs that are incompatible with Internet Explorer \(IE\).  Whenever a user of IE visits an incompatible public site, the user may get a message that stating that the site is incompatible with the browser.  After the message is displayed, the user must manually switch to a different browser.  To minimize disruptions, starting with version 84, Microsoft Edge supports a new capability.  The new capability automatically redirect the user.  When a user navigates using IE to a site that is incompatible with IE, Windows automatically redirects the user to Microsoft Edge.  You can see what sites are on the list by navigating to https://edge.microsoft.com/neededge/v1.
+Many modern websites have designs that are incompatible with Internet Explorer \(IE\).  Whenever a user of IE visits an incompatible public site, the user may get a message  stating the site is incompatible with the browser.  After the message is displayed, the user must manually switch to a different browser.  To minimize disruptions, starting with version 84, Microsoft Edge supports a new capability.  The new capability automatically redirect the user.  When a user navigates using IE to a site that is incompatible with IE, Windows automatically redirects the user to Microsoft Edge.  You can see what sites are on the list by navigating to https://edge.microsoft.com/neededge/v1.
 
 This article describes the following concepts.  
 
 *   The user experience for redirection  
 *   How a site gets added to the IE compatibility list  
-*   How to get your site removed from the list  
+*   How to get your site added or removed from the list  
     
 ## Why is a site added to the CV List?  
 
