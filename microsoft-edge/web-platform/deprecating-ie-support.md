@@ -9,7 +9,7 @@ keywords: microsoft edge, compatibility, web platform, internet explorer
 ---
 # Moving users to Microsoft Edge from Internet Explorer 
 
-Many modern websites have designs that are incompatible with Internet Explorer \(IE\).  Whenever a user of IE visits an incompatible public site, the user may get a message  stating the site is incompatible with the browser.  After the message is displayed, the user must manually switch to a different browser.  To minimize disruptions, starting with version 84, Microsoft Edge supports a new capability.  The new capability automatically redirect the user.  When a user navigates using IE to a site that is incompatible with IE, Windows automatically redirects the user to Microsoft Edge.  You can see what sites are on the list by navigating to https://edge.microsoft.com/neededge/v1.
+Many modern websites have designs that are incompatible with Internet Explorer \(IE\).  Whenever a user of IE visits an incompatible public site, the user may get a message  stating the site is incompatible with the browser.  After the message is displayed, the user must manually switch to a different browser.  To minimize disruptions, starting with version 84, Microsoft Edge supports a new capability.  The new capability automatically redirect the user.  When a user navigates using IE to a site that is incompatible with IE, Windows automatically redirects the user to Microsoft Edge.  To review the sites on the list, navigate to [Need Edge list][MicrosoftEdgeNeededgeV1].
 
 This article describes the following concepts.  
 
@@ -44,3 +44,5 @@ Email the following information to [ietioedge@microsoft.com][MailtoMicrosoftIeti
 [MailtoMicrosoftIetioedge]: mailto:ietioedge@microsoft.com "Send an email to ietioedge@microsoft.com"  
 
 [MicrosoftOfficialHome]: https://www.microsoft.com "Microsoft Official Home"  
+
+[MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Need Edge list v1 xml | Microsoft Edge"  
