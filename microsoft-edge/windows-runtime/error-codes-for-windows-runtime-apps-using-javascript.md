@@ -2,7 +2,7 @@
 description: Error codes for Windows Runtime apps using JavaScript
 title: "Error codes for Windows Runtime apps using JavaScript"
 ms.custom: ""
-ms.date: 10/30/2020
+ms.date: 11/03/2020
 ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""

@@ -3,7 +3,7 @@ description: With F12 Developer Tools, learn how to debug an extension's backgro
 title: Debugging | Extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/30/2020
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, javascript, developer, debug, debugging
@@ -41,15 +41,15 @@ To start debugging the background script of your extension:
     
     ![f12 console showing background script with break points](../media/debug-f12-background.png)  
     
-1.  Select the **Console** tab and execute the command "`location.reload()`".  This will re-execute the background script, allowing you to step through your code.  
+1.  Select the **Console** tab and execute the `location.reload()` command.  This will re-execute the background script, allowing you to step through your code.  
     
     ![console with location.reload entered](../media/debug-f12-background-console.png)  
-
+    
 ## Content script debugging  
 
 To start debugging the content script of your extension:  
 
-1.  Launch F12 by either navigating to the **More (...)** button and selecting **"F12 Developer Tools"** or by pressing F12 on your keyboard.  
+1.  Launch F12 by either navigating to the **More (...)** button and selecting **F12 Developer Tools** or by pressing `F12` on your keyboard.  
 1.  Navigate to and select your extension's content script.  Content scripts for extensions currently running will be depicted by a different folder for each extension.  
     
     > [!NOTE]
@@ -70,7 +70,7 @@ There are two methods that can be used for accessing the source code of your ext
 The following method works for all extension pages like the options page and popups:  
 
 1.  Right-click on the background of your page.  
-1.  Select **"View source"**.  
+1.  Select **View source**.  
     
     ![Open popup debugging with f12](../media/debug-popup-select.png)  
     
@@ -79,15 +79,15 @@ The following method works for all extension pages like the options page and pop
     ![popup debugging with f12](../media/debug-popup-f12.png)  
     
 1.  Select the **Console** tab and execute the command `location.reload()`.  This will re-execute the page script, allowing you to step through your code.  
-   
-   ![console with location.reload entered](../media/debug-f12-background-console.png)  
-   
+    
+    ![console with location.reload entered](../media/debug-f12-background-console.png)  
+    
 ### Debugging a popup extension page  
 
 While the method for debugging extension pages also applies to popup extension pages, the following steps outline another way to debug your popup:  
 
 1.  Right-click your extension's icon.  
-1.  Select **"Inspect popup"**.  
+1.  Select **Inspect popup**.  
     
     ![popup debug inspect](../media/debug-popup-inspect.png)  
     

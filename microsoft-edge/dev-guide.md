@@ -3,7 +3,7 @@ description: This guide provides an overview of the developer features and stand
 author: MSEdgeTeam
 title: What's new in EdgeHTML 18
 ms.author: msedgedevrel
-ms.date: 10/28/2020
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: edgehtml
@@ -48,17 +48,17 @@ The latest update to Microsoft Edge DevTools adds a number of conveniences both 
 
 ### Listening to your feedback  
 
-We listen to your feedback and have implemented support for several requested APIs in EdgeHTML 18, including the [`DataTransfer.setDragImage()`](https://developer.mozilla.org/docs/Web/API/DataTransfer/setDragImage) method used to set a custom image when dragging and dropping, and [`secureConnectionStart`](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/secureConnectionStart), a property of the Performance Resource Timing API, which can be used for returning a timestamp immediately before the browser starts the handshake process to secure the current connection.  
+We listen to your feedback and have implemented support for several requested APIs in EdgeHTML 18, including the [DataTransfer.setDragImage()](https://developer.mozilla.org/docs/Web/API/DataTransfer/setDragImage) method used to set a custom image when dragging and dropping, and [secureConnectionStart](https://developer.mozilla.org/docs/Web/API/PerformanceResourceTiming/secureConnectionStart), a property of the Performance Resource Timing API, which can be used for returning a timestamp immediately before the browser starts the handshake process to secure the current connection.  
 
-In addition, no one likes enumerating the attributes collection, so we've added support for [`Element.getAttributeNames`](https://developer.mozilla.org/docs/Web/API/Element/getAttributeNames) to return the attribute names of the element as an Array of strings, as well as, [`Element.toggleAttribute`](https://developer.mozilla.org/docs/Web/API/Element/toggleAttribute) to toggle a boolean attribute \(removing if present and adding if not\).  
+In addition, no one likes enumerating the attributes collection, so we've added support for [Element.getAttributeNames](https://developer.mozilla.org/docs/Web/API/Element/getAttributeNames) to return the attribute names of the element as an Array of strings, as well as, [Element.toggleAttribute](https://developer.mozilla.org/docs/Web/API/Element/toggleAttribute) to toggle a boolean attribute \(removing if present and adding if not\).  
 
 ### Progressive Web Apps  
 
 #### Lifetime background script  
 
-Windows 10 JavaScript apps \(web apps running in a *WWAHost.exe* process\) now support an optional per-application background script that starts before any views are activated and runs for the duration of the process.  With this, you can monitor and modify navigations, track state across navigations, monitor navigation errors, and run code before views are activated.  
+Windows 10 JavaScript apps \(web apps running in a `WWAHost.exe` process\) now support an optional per-application background script that starts before any views are activated and runs for the duration of the process.  With this, you can monitor and modify navigations, track state across navigations, monitor navigation errors, and run code before views are activated.  
 
-When specified as the [`StartPage`](/uwp/schemas/appxpackage/appxmanifestschema2010-v2/element-application) in your [app manifest](/uwp/schemas/appxpackage/appx-package-manifest), each of the app's views \(windows\) are exposed to the script as instances of the new [`WebUIView`](/uwp/api/windows.ui.webui.webuiview) class, providing the same events, properties, and methods as a general \(Win32\) [WebView](/uwp/api/windows.web.ui.iwebviewcontrol).  Your script can listen for the [`NewWebUIViewCreated`](/uwp/api/windows.ui.webui.newwebuiviewcreatedeventargs) event to intercept control of the navigation for a new view:  
+When specified as the [StartPage](/uwp/schemas/appxpackage/appxmanifestschema2010-v2/element-application) in your [app manifest](/uwp/schemas/appxpackage/appx-package-manifest), each of the app's views \(windows\) are exposed to the script as instances of the new [WebUIView](/uwp/api/windows.ui.webui.webuiview) class, providing the same events, properties, and methods as a general \(Win32\) [WebView](/uwp/api/windows.web.ui.iwebviewcontrol).  Your script can listen for the [NewWebUIViewCreated](/uwp/api/windows.ui.webui.newwebuiviewcreatedeventargs) event to intercept control of the navigation for a new view:  
 
 ```javascript
 Windows.UI.WebUI.WebUIApplication.addEventListener("newwebuiviewcreated", newWebUIViewCreatedEventHandler);
@@ -68,14 +68,14 @@ Windows.UI.WebUI.WebUIApplication.addEventListener("newwebuiviewcreated", newWeb
 
 #### Text scaling  
 
-The Windows 10 October 2018 Update introduces the [*Make text bigger*](/windows/uwp/design/input/text-scaling#user-experience) setting for improved end-user accessibility, and PWAs installed on Windows \(in addition UWP and most desktop apps\) now support this feature automatically.  For PWAs and WebView controls, text scale works the same way as DPI scaling.  If a user changes both text scale and DPI scale, the result is the product of the two.  
+The Windows 10 October 2018 Update introduces the [Make text bigger](/windows/uwp/design/input/text-scaling#user-experience) setting for improved end-user accessibility, and PWAs installed on Windows \(in addition UWP and most desktop apps\) now support this feature automatically.  For PWAs and WebView controls, text scale works the same way as DPI scaling.  If a user changes both text scale and DPI scale, the result is the product of the two.  
 
  For design guidance, check out the [Text scaling](/windows/uwp/design/input/text-scaling) UWP guide on *Windows Dev Center*.  
 
 ### Service Worker updates  
 
-For a refresher on what Service Workers are and how they work, check out the [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) summary written by our partners over at MDN.  There were several updates to Microsoft Edge supporting Service Workers in EdgeHTML 18.  The `fetchEvent` enables the Service Worker to use [`preloadResponse`](https://developer.mozilla.org/docs/Web/API/FetchEvent) to promise a response, and the [`resultingClientId`](https://developer.mozilla.org/docs/Web/API/FetchEvent/clientId) to return the ID of the Client that the current service worker is controlling.  
-The [`NavigationPreloadManager`](https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager) interface provides methods for managing the preloading of resources, allowing you to make a request in parallel while a service worker is booting-up, avoiding any time delay.  Check out the [newly supported API properties](#new-apis-in-edgehtml-18) for the list of Service Worker preload methods and properties.  
+For a refresher on what Service Workers are and how they work, check out the [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) summary written by our partners over at MDN.  There were several updates to Microsoft Edge supporting Service Workers in EdgeHTML 18.  The `fetchEvent` enables the Service Worker to use [preloadResponse](https://developer.mozilla.org/docs/Web/API/FetchEvent) to promise a response, and the [resultingClientId](https://developer.mozilla.org/docs/Web/API/FetchEvent/clientId) to return the ID of the Client that the current service worker is controlling.  
+The [NavigationPreloadManager](https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager) interface provides methods for managing the preloading of resources, allowing you to make a request in parallel while a service worker is booting-up, avoiding any time delay.  Check out the [newly supported API properties](#new-apis-in-edgehtml-18) for the list of Service Worker preload methods and properties.  
 
 ### Web Authentication  
 
@@ -87,11 +87,11 @@ For more information, head over to the blog post [Introducing Web Authentication
 
 WebDriver is now a [Windows Feature on Demand](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) \(FoD\) making it easier than ever to automate testing in Microsoft Edge and get the right version for your device.  You will no longer need to match the build/branch/flavor manually when installing WebDriver, your [WebDriver](https://www.w3.org/TR/webdriver) will automatically update to match any new Windows 10 updates.  
 
-You can install WebDriver by turning on Developer Mode, or install it as a standalone by going to Settings > Apps > Apps & features > Manage optional features.  For more information, check out the [WebDriver announcement on the Windows Blog site](https://blogs.windows.com/msedgedev/2018/06/14/webdriver-w3c-recommendation-feature-on-demand).  
+You can install WebDriver by turning on Developer Mode, or install it as a standalone by going to **Settings** > **Apps** > **Apps & features** > **Manage optional features**.  For more information, check out the [WebDriver announcement on the Windows Blog site](https://blogs.windows.com/msedgedev/2018/06/14/webdriver-w3c-recommendation-feature-on-demand).  
 
 ### Web Notification properties  
 
-Four new properties are now supported for web notifications: [`actions`](https://developer.mozilla.org/docs/Web/API/notification/actions), [`badge`](https://developer.mozilla.org/docs/Web/API/notification/badge), [`image`](https://developer.mozilla.org/docs/Web/API/notification/image), and  `maxActions`, improving our ability to create notifications on the web that are compatible with existing notification systems, while remaining platform-independent.  
+Four new properties are now supported for web notifications:  [actions](https://developer.mozilla.org/docs/Web/API/notification/actions), [badge](https://developer.mozilla.org/docs/Web/API/notification/badge), [image](https://developer.mozilla.org/docs/Web/API/notification/image), and  `maxActions`, improving our ability to create notifications on the web that are compatible with existing notification systems, while remaining platform-independent.  
 
 ### WebView  
 
@@ -99,13 +99,13 @@ Four new properties are now supported for web notifications: [`actions`](https:/
 
 [Service workers](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) are now supported in the WebView control, in addition to the Microsoft Edge browser and Windows 10 JavaScript apps.  All flavors of the Microsoft Edge webview \([PWA](/microsoft-edge/hosting/webview), [UWP](/uwp/api/Windows.UI.Xaml.Controls.WebView), [Win32](/windows/communitytoolkit/controls/wpf-winforms/webview)\) support service workers, however please be aware that the [Push API](https://developer.mozilla.org/docs/Web/API/Push_API) is not yet available for the UWP and Win32 versions.  
 
-x64 app architectures require *Neutral* \(Any CPU\) or *x64* packages, as service workers are not supported in WoW64 processes.  \(To conserve disk space, the WoW version of the required DLLs are not natively included in Windows.\)  
+x64 app architectures require Neutral \(Any CPU\) or x64 packages, as service workers are not supported in WoW64 processes.  \(To conserve disk space, the WoW version of the required DLLs are not natively included in Windows.\)  
 
 #### Win32 WebView updates  
 
-The EdgeHTML [WebViewControl](/windows/communitytoolkit/controls/wpf-winforms/webview) for Windows desktop \(Win32\) apps has been updated with several new features, including the ability to inject script upon page load before any other scripts on the page are run \([`AddInitializeScript`](/uwp/api/windows.web.ui.interop.webviewcontrol.addinitializescript)\) and know when a particular WebViewControl receives or loses focus \([`GotFocus`](/uwp/api/windows.web.ui.interop.webviewcontrol.gotfocus)/[`LostFocus`](/uwp/api/windows.web.ui.interop.webviewcontrol.lostfocus)\).  
+The EdgeHTML [WebViewControl](/windows/communitytoolkit/controls/wpf-winforms/webview) for Windows desktop \(Win32\) apps has been updated with several new features, including the ability to inject script upon page load before any other scripts on the page are run \([AddInitializeScript](/uwp/api/windows.web.ui.interop.webviewcontrol.addinitializescript)\) and know when a particular WebViewControl receives or loses focus \([GotFocus](/uwp/api/windows.web.ui.interop.webviewcontrol.gotfocus)/[LostFocus](/uwp/api/windows.web.ui.interop.webviewcontrol.lostfocus)\).  
 
-Additionally, you can now create a new WebViewControl as the opened window from [`window.open`](https://developer.mozilla.org/docs/Web/API/Window/open).  The [`NewWindowRequested`](/uwp/api/windows.web.ui.iwebviewcontrol.newwindowrequested) event still notifies an app when script inside the WebViewControl calls window.open as it always has, but with EdgeHTML 18 its [`NewWindowRequestedEventArgs`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs) include the ability to take a deferral \([`GetDeferral`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.getdeferral)\) in order to set a new WebViewControl \([`NewWindow`](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.newwindow)\) as the target for the window.open:  
+Additionally, you can now create a new WebViewControl as the opened window from [window.open](https://developer.mozilla.org/docs/Web/API/Window/open).  The [NewWindowRequested](/uwp/api/windows.web.ui.iwebviewcontrol.newwindowrequested) event still notifies an app when script inside the WebViewControl calls window.open as it always has, but with EdgeHTML 18 its [NewWindowRequestedEventArgs](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs) include the ability to take a deferral \([GetDeferral](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.getdeferral)\) in order to set a new WebViewControl \([NewWindow](/uwp/api/windows.web.ui.webviewcontrolnewwindowrequestedeventargs.newwindow)\) as the target for the window.open:  
 
 ```csharp
 WebViewControlProcess wvProc;
@@ -133,10 +133,10 @@ String htmlContent = "<html><script>window.open('http://mydomain.com')</script><
 webView.NavigateToString(htmlContent);
 ```  
 
-Lastly, power users might notice the apppearance of the *Desktop App Web Viewer* \(previously named *Win32WebViewHost*\), an internal system app representing the Win32 WebView, in the following places:  
+Lastly, power users might notice the apppearance of the Desktop App Web Viewer \(previously named Win32WebViewHost\), an internal system app representing the Win32 WebView, in the following places:  
 
-*   In the *Windows 10 Action Center*.  The source of these notifications should be understood as from a WebView hosted from a Win32 app.  
-*   In the device access settings UI \(*Settings->Privacy->Camera/Location/Microphone*\).  Disabling any of these settings denies access from all WebViews hosted in Win32 apps.  
+*   In the Windows 10 Action Center.  The source of these notifications should be understood as from a WebView hosted from a Win32 app.  
+*   In the device access settings UI \(`Settings` > `Privacy` > `Camera/Location/Microphone`\).  Disabling any of these settings denies access from all WebViews hosted in Win32 apps.  
 
 ![Desktop App Web Viewer device access setting](./dev-guide/media/desktop-app-web-viewer.png)  
 

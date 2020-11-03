@@ -3,7 +3,7 @@ description: DevTools Protocol Version 0.1 (EdgeHTML) reference for the Schema D
 title: Schema Domain - DevTools Protocol Version 0.1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/28/2020
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
@@ -14,8 +14,8 @@ Provides information about the protocol schema.
 
 |  |  |  
 |:--- |:--- |  
-| [**Methods**](#methods) | [getDomains](#getdomains) |  
-| [**Types**](#types) | [Domain](#domain) |  
+| [Methods](#methods) | [getDomains](#getdomains) |  
+| [Types](#types) | [Domain](#domain) |  
 
 ## Methods  
 
@@ -23,51 +23,23 @@ Provides information about the protocol schema.
 
 Returns supported domains.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Returns</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>domains</td>
-            <td><a href="#domain"><code class="flyout">Domain[]</code></a></td>
-            <td>List of supported domains.</td>
-        </tr>
-    </tbody>
-</table>
+| Returns |  |  |  
+|:--- |:--- |:--- |  
+| domains | [Domain[]](#domain) | List of supported domains. |  
 
 ---  
 
 ## Types  
 
-### <a name="domain"></a> Domain `object`  
+### Domain object  
+
+<a name="domain"></a>  
 
 Description of the protocol domain.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Properties</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>name</td>
-            <td><code class="flyout">string</code></td>
-            <td>Domain name.</td>
-        </tr>
-        <tr>
-            <td>version</td>
-            <td><code class="flyout">string</code></td>
-            <td>Domain version.</td>
-        </tr>
-    </tbody>
-</table>
+| Properties |  |  |  
+|:--- |:--- |:--- |  
+| name | `string` | Domain name. |  
+| version | `string` | Domain version. |  
 
 ---  

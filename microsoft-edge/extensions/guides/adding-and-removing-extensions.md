@@ -3,7 +3,7 @@ description: Learn how to add and remove extensions, as well as move an extensio
 title: Adding and removing extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/28/2020
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, extension
@@ -14,7 +14,7 @@ ms.localizationpriority: high
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-Microsoft Edge support for extensions was introduced in the **Windows 10 Anniversary Update**. If you're developing a Microsoft Edge extension and want to load it up, or if you already have and now want to remove it, check out the steps below.  
+Microsoft Edge support for extensions was introduced in the **Windows 10 Anniversary Update**.  If you're developing a Microsoft Edge extension and want to load it up, or if you already have and now want to remove it, check out the steps below.  
 Also included are details on how to change your extension icon's location in the browser.  
 
 ## Adding an extension  
@@ -49,7 +49,7 @@ Also included are details on how to change your extension icon's location in the
 ![extension in extension pane](../media/sideload-extension-installed.png)  
 
 > [!NOTE]
-> Unsigned extensions are automatically turned off on subsequent launches of Microsoft Edge. When the browser enters an idle state (after approximately 10 seconds of inactivity) you will see the following notification at the bottom of the window. ![risky notification](../media/riskynotification.png) To turn on the unsigned extensions, click "Turn on anyway".  
+> Unsigned extensions are automatically turned off on subsequent launches of Microsoft Edge.  When the browser enters an idle state \(after approximately 10 seconds of inactivity\) you will see the following notification at the bottom of the window.  ![risky notification](../media/riskynotification.png) To turn on the unsigned extensions, click **Turn on anyway**.  
 
 ## Moving the extension button  
 

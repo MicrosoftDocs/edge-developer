@@ -3,7 +3,7 @@ description: Microsoft Edge (Chromium) and Visual Studio
 title: Visual Studio
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/30/2020
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs, visual studio, debugger
@@ -44,7 +44,7 @@ Provide a **Project name** for your new project and choose **Create**.  For the 
 
 ### Launch Microsoft Edge from Visual Studio  
 
-Once your project has been created, open **ClientApp/src/components/Counter.js**.  Now, tell Visual Studio to debug JavaScript by choosing the dropdown next to the green **Play** button and **IIS Express**.  
+Once your project has been created, open `ClientApp/src/components/Counter.js`.  Now, tell Visual Studio to debug JavaScript by choosing the dropdown next to the green **Play** button and **IIS Express**.  
 
 :::image type="complex" source="./media/vs-dropdown.png" alt-text="The dropdown next to the green Play button and IIS Express" lightbox="./media/vs-dropdown.png":::
    The dropdown next to the green **Play** button and **IIS Express**  
@@ -85,7 +85,7 @@ Now switch back to the instance of Microsoft Edge that Visual Studio launched.  
    The Counter page in our ASP.NET Core web app  
 :::image-end:::  
 
-The JavaScript debugger in Visual Studio is going to hit the breakpoint you set in **Counter.js**.  Visual Studio has now paused execution of the JavaScript running in Microsoft Edge and you may step through the script line-by-line.  
+The JavaScript debugger in Visual Studio is going to hit the breakpoint you set in `Counter.js`.  Visual Studio has now paused execution of the JavaScript running in Microsoft Edge and you may step through the script line-by-line.  
 
 :::image type="complex" source="./media/hit-breakpoint.png" alt-text="Visual Studio pausing JavaScript running in Microsoft Edge" lightbox="./media/hit-breakpoint.png":::
    Visual Studio pausing JavaScript running in Microsoft Edge  

@@ -3,12 +3,11 @@ description: LongRunningScriptDetectedEvent object
 title: LongRunningScriptDetectedEvent object
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/28/2020
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
 ---
-
 # LongRunningScriptDetectedEvent object  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  

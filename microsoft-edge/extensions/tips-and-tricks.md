@@ -3,7 +3,7 @@ description: Learn about some handy tips and tricks regarding Microsoft Edge ext
 title: Tips and tricks | Extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/30/2020
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, extensions
@@ -30,7 +30,7 @@ Microsoft Edge extensions also have an additional set of policies to follow seen
 
 ## Improve your extension’s discoverability in the Microsoft Store  
 
-You can add keywords to your extension submission to improve its discoverability through searches.  For example, "Microsoft Edge Extensions" and "name of my extension".  
+You can add keywords to your extension submission to improve its discoverability through searches.  For example, `Microsoft Edge Extensions` and `name of my extension`.  
 
 This can be done in the Windows Dev Center under the description section of your extension.  These keywords will need to be added for every language your extension supports.  
 
@@ -38,13 +38,15 @@ This can be done in the Windows Dev Center under the description section of your
 
 ## Automate your submission to the Microsoft Store  
 
-You can automate and streamline your submissions to the Microsoft Store by using the new Microsoft Store Submission API, which allows you to update apps/games, add-ons (in-app purchases), and package flights through a REST API.  Check out the [documentation and samples](/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services) or use the open source [Submission API VSTS extension](https://github.com/Microsoft/windows-dev-center-vsts-extension) to get started.  
+You can automate and streamline your submissions to the Microsoft Store by using the new Microsoft Store Submission API, which allows you to update apps/games, add-ons \(in-app purchases\), and package flights through a REST API.  Check out the [documentation and samples](/windows/uwp/monetize/create-and-manage-submissions-using-windows-store-services) or use the open source [Submission API VSTS extension](https://github.com/Microsoft/windows-dev-center-vsts-extension) to get started.  
 
 ## Use the Windows Feedback Hub to gather feedback/reviews/feature requests  
 
 You can direct users to the Windows Feedback Hub subcategory for your extension by embedding a link that points to it.  This link will need to be created using the following format:  
 
-`feedback-hub://?tabid=2&appid=<PFN>!App`  
+```text
+feedback-hub://?tabid=2&appid=<PFN>!App
+```  
 
 You will need to substitute `<PFN>` with the Package Family Name of you extension.  This can be found under the **App identity** section for your extension in the Windows Dev Center.  
 

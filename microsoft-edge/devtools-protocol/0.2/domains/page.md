@@ -3,7 +3,7 @@ description: DevTools Protocol Version 0.2 (EdgeHTML) reference for the Page Dom
 title: Page Domain - DevTools Protocol Version 0.2 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/28/2020
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
@@ -13,9 +13,9 @@ Actions and events related to the inspected page belong to the page domain.
 
 |  |  |  
 |:--- |:--- |  
-| [**Methods**](#methods) | [enable](#enable), [disable](#disable), [navigate](#navigate), [getFrameTree](#getframetree) |  
-| [**Events**](#events) | [frameAttached](#frameattached), [frameDetached](#framedetached), [frameNavigated](#framenavigated), [loadEventFired](#loadeventfired), [domContentEventFired](#domcontenteventfired) |  
-| [**Types**](#types) | [FrameId](#frameid), [Frame](#frame), [FrameTree](#frametree) |  
+| [Methods](#methods) | [enable](#enable), [disable](#disable), [navigate](#navigate), [getFrameTree](#getframetree) |  
+| [Events](#events) | [frameAttached](#frameattached), [frameDetached](#framedetached), [frameNavigated](#framenavigated), [loadEventFired](#loadeventfired), [domContentEventFired](#domcontenteventfired) |  
+| [Types](#types) | [FrameId](#frameid), [Frame](#frame), [FrameTree](#frametree) |  
 
 ## Methods  
 
@@ -23,7 +23,7 @@ Actions and events related to the inspected page belong to the page domain.
 
 Enables page domain notifications.  
 
-</p>
+&nbsp;  
 
 ---  
 
@@ -31,7 +31,7 @@ Enables page domain notifications.
 
 Disables page domain notifications.  
 
-</p>
+&nbsp;  
 
 ---  
 
@@ -39,44 +39,14 @@ Disables page domain notifications.
 
 Navigates current page to the given URL.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>URL to navigate the page to.</td>
-        </tr>
-        <tr>
-            <td>frameId <br/> <i>optional</i></td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Frame id to navigate. If not specified, will navigate the top page.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Returns</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Frame id that will be navigated.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+| Parameters |  |  |  
+|:--- |:--- |:--- |  
+| url | `string` | URL to navigate the page to. |  
+| frameId \(optional\) | [FrameId](#frameid) | Frame id to navigate.  If not specified, will navigate the top page. |  
+
+| Returns |  |  |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | Frame id that will be navigated. |  
 
 ---  
 
@@ -84,23 +54,9 @@ Navigates current page to the given URL.
 
 Returns present frame tree structure.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Returns</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameTree</td>
-            <td><a href="#frametree"><code class="flyout">FrameTree</code></a></td>
-            <td>Present frame tree structure.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+| Returns |  |  |  
+|:--- |:--- |:--- |  
+| frameTree | [FrameTree](#frametree) | Present frame tree structure. |  
 
 ---  
 
@@ -110,33 +66,11 @@ Returns present frame tree structure.
 
 Fired when frame has been attached to its parent.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Id of the frame that has been attached.</td>
-        </tr>
-        <tr>
-            <td>parentFrameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Parent frame identifier.</td>
-        </tr>
-        <tr>
-            <td>stack <br/> <i>optional</i></td>
-            <td><a href="runtime.md#stacktrace"><code class="flyout">Runtime.StackTrace</code></a></td>
-            <td>JavaScript stack trace of when frame was attached, only set if frame initiated from script.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+| Parameters |  |  |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | Id of the frame that has been attached. |  
+| parentFrameId | [FrameId](#frameid) | Parent frame identifier. |  
+| stack \(optional\) | [Runtime.StackTrace](./runtime.md#stacktrace) | JavaScript stack trace of when frame was attached, only set if frame initiated from script. |  
 
 ---  
 
@@ -144,23 +78,9 @@ Fired when frame has been attached to its parent.
 
 Fired when frame has been detached from its parent.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Id of the frame that has been detached.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+| Parameters |  |  |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | ID of the frame that has been detached. |  
 
 ---  
 
@@ -168,158 +88,70 @@ Fired when frame has been detached from its parent.
 
 Fired once navigation of the frame has completed.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frame</td>
-            <td><a href="#frame"><code class="flyout">Frame</code></a></td>
-            <td>Frame object.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+| Parameters |  |  |  
+|:--- |:--- |:--- |  
+| frame | [Frame](#frame) | Frame object. |  
 
 ---  
 
 ### loadEventFired  
 
-Corresponds to the window.onload event.  
+Corresponds to the `window.onload` event.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>timestamp</td>
-            <td><code class="flyout">number</code></td>
-            <td>Number of milliseconds since epoch.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+| Parameters |  |  |  
+|:--- |:--- |:--- |  
+| timestamp | `number` | Number of milliseconds since epoch. |  
 
 ---  
 
 ### domContentEventFired  
 
-Corresponds to the document.onDOMContentLoaded event.  
+Corresponds to the `document.onDOMContentLoaded` event.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>timestamp</td>
-            <td><code class="flyout">number</code></td>
-            <td>Number of milliseconds since epoch.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+| Parameters |  |  |  
+|:--- |:--- |:--- |  
+| timestamp | `number` | Number of milliseconds since epoch. |  
 
 ---  
 
 ## Types  
 
-### <a name="frameid"></a> FrameId `string`  
+### FrameId string  
+
+<a name="frameid"></a>  
 
 Unique frame identifier.  
 
-</p>
+&nbsp;  
 
 ---  
 
-### <a name="frame"></a> Frame `object`  
+### Frame object  
+
+<a name="frame"></a>  
 
 Information about the Frame on the Page.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Properties</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>id</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Frame unique identifier.</td>
-        </tr>
-        <tr>
-            <td>parentId <br/> <i>optional</i></td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td>Parent frame unique identifier.</td>
-        </tr>
-        <tr>
-            <td>name <br/> <i>optional</i></td>
-            <td><code class="flyout">string</code></td>
-            <td>Frame's name as specified in the tag.</td>
-        </tr>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>Frame document's URL.</td>
-        </tr>
-        <tr>
-            <td>securityOrigin</td>
-            <td><code class="flyout">string</code></td>
-            <td>Frame document's security origin.</td>
-        </tr>
-        <tr>
-            <td>mimeType</td>
-            <td><code class="flyout">string</code></td>
-            <td>Frame document's mimeType as determined by the browser.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+| Properties |  |  |  
+|:--- |:--- |:--- |  
+| id | [FrameId](#frameid) | Frame unique identifier. |  
+| parentId \(optional\) | [FrameId](#frameid) | Parent frame unique identifier. |  
+| name \(optional\) | `string` | Frame's name as specified in the tag. |  
+| url | `string` | Frame document's URL. |  
+| securityOrigin | `string` | Frame document's security origin. |  
+| mimeType | `string` | Frame document's mimeType as determined by the browser. |  
 
 ---  
 
-### <a name="frametree"></a> FrameTree `object`  
+### FrameTree object  
+
+<a name="frametree"></a>  
 
 Information about the Frame hierarchy.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Properties</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frame</td>
-            <td><a href="#frame"><code class="flyout">Frame</code></a></td>
-            <td>Frame information for this tree item.</td>
-        </tr>
-        <tr>
-            <td>childFrames <br/> <i>optional</i></td>
-            <td><a href="#frametree"><code class="flyout">FrameTree[]</code></a></td>
-            <td>Child frames.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
+| Properties |  |  |  
+|:--- |:--- |:--- |  
+| frame | [Frame](#frame) | Frame information for this tree item. |  
+| childFrames \(optional\) | [FrameTree[]](#frametree) | Child frames. |  
 
 ---  

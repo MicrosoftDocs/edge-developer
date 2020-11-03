@@ -1,7 +1,7 @@
 ---
 description: JavaScript Runtime hosting
 title: "JavaScript Runtime Hosting"
-ms.date: 10/28/2020
+ms.date: 11/03/2020
 ms.prod: microsoft-edge
 ms.topic: "article"
 ms.assetid: d6615079-2df7-420f-a126-077e7d42486c

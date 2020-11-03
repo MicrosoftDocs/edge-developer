@@ -3,7 +3,7 @@ description: This guide provides an overview of the developer features and stand
 title: New features and APIs in EdgeHTML 16
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/28/2020
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.assetid: 476c4b7a-be24-434b-a051-83f19d741aaf
@@ -86,7 +86,7 @@ For guides and demos, head over to the [WebVR Developer Guide](/microsoft-edge/w
 Here's the full list of new APIs in EdgeHTML 16.  They are listed in the format of `[interface name].[api name]`.
 
 > [!NOTE] 
-> Although the following APIs are exposed in the DOM, the end-to-end behavior of some might still be in development.  Refer to  [Microsoft Edge platform status](https://developer.microsoft.com/microsoft-edge/platform/status) for the official word on feature support.  
+> Although the following APIs are exposed in the DOM, the end-to-end behavior of some might still be in development.  Refer to [Microsoft Edge platform status](https://developer.microsoft.com/microsoft-edge/platform/status) for the official word on feature support.  
 
 ---  
 

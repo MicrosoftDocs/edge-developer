@@ -3,7 +3,7 @@ description: DevTools Protocol Version 0.1 (EdgeHTML) reference for the Page Dom
 title: Page Domain - DevTools Protocol Version 0.1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/28/2020
+ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
@@ -23,11 +23,15 @@ Actions and events related to the inspected page belong to the page domain.
 
 Enables page domain notifications.  
 
+&nbsp;  
+
 ---  
 
 ### disable  
 
 Disables page domain notifications.  
+
+&nbsp;  
 
 ---  
 
@@ -35,45 +39,24 @@ Disables page domain notifications.
 
 Navigates current page to the given URL.  
 
-<table>
-    <thead>
-        <tr>
-            <th>Parameters</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>url</td>
-            <td><code class="flyout">string</code></td>
-            <td>URL to navigate the page to.</td>
-        </tr>
-    </tbody>
-</table>
-<table>
-    <thead>
-        <tr>
-            <th>Returns</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>frameId</td>
-            <td><a href="#frameid"><code class="flyout">FrameId</code></a></td>
-            <td><span><b>Experimental. </b></span>Frame id that will be navigated.</td>
-        </tr>
-    </tbody>
-</table>
+| Parameters |  |  |  
+|:--- |:--- |:--- |  
+| url | `string` | URL to navigate the page to. |  
+
+| Returns |  |  |  
+|:--- |:--- |:--- |  
+| frameId | [FrameId](#frameid) | **Experimental**.  Frame ID that will be navigated. |  
 
 ---  
 
 ## Types  
 
-### <a name="frameid"></a> FrameId `string`  
+### FrameId string  
+
+<a name="frameid"></a>  
 
 Unique frame identifier.  
+
+&nbsp;  
 
 ---  

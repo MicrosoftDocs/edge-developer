@@ -2,7 +2,7 @@
 description: Using the Windows Runtime in JavaScript
 title: "Using the Windows Runtime in JavaScript"
 ms.custom: ""
-ms.date: 10/30/2020
+ms.date: 11/03/2020
 ms.prod: microsoft-edge
 ms.reviewer: ""
 ms.suite: ""
@@ -57,7 +57,7 @@ Casing conventions for Windows Runtime features in JavaScript differ slightly fr
     ```javascript
     dataTransferManager.ontargetapplicationchosen;
     ```  
-
+    
 ## See also  
 
 [Considerations when Using the Windows Runtime API][WindowsRuntimeConsiderationsApi]  
@@ -66,7 +66,7 @@ Casing conventions for Windows Runtime features in JavaScript differ slightly fr
 [JavaScript Representation of Windows Runtime Types][WindowsRuntimeJavascriptTypes]   
 [JavaScript Projection of Windows Runtime DateTime and TimeSpan][WindowsRuntimeDatetimeTimespan]  
 
-<!-- links  -->  
+<!-- links -->  
 
 [WindowsRuntimeConsiderationsApi]: ./considerations-when-using-the-windows-runtime-api.md "Considerations when Using the Windows Runtime API | Microsoft Docs"  
 [WindowsRuntimeEventsJavascript]: ./handling-windows-runtime-events-in-javascript.md "Handling Windows Runtime Events in JavaScript | Microsoft Docs"  
