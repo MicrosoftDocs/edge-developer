@@ -527,7 +527,7 @@
       items: 
         - name: Site compatibility-impacting changes coming to Microsoft Edge
           href: web-platform/site-impacting-changes.md
-        - name: Deprecating support for Internet Explorer
+        - name: Moving users to Microsoft Edge from IE
           href: web-platform/deprecating-ie-support.md
         - name: Tracking prevention in Microsoft Edge
           href: web-platform/tracking-prevention.md
