@@ -3,7 +3,7 @@ description: Versioning Models used for Microsoft Edge WebView2
 title: Versioning of Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -11,7 +11,14 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 ---
 # Understand WebView2 SDK versions  
 
-To develop a WebView2 application, you must install either the [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] or a [non-stable Microsoft Edge channel][MicrosoftedgeinsiderDownload].  The minimum version that's required is included in the NuGet package version of the SDK.  For example, if you use the `SDK package version 0.9.488`, then you must install either the [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] or a [non-stable Microsoft Edge channel][MicrosoftedgeinsiderDownload] with a build number of 488 or later.  The minimum version required is also specified in the WebView2 [Release Notes][Releasenotes].  New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge \(Chromium\) browser, which is approximately every six weeks.  
+To develop a WebView2 application, you must install either the [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] or a [non-stable Microsoft Edge channel][MicrosoftedgeinsiderDownload].  To determine the minimum version that's required chose the most recent of:
+
+1. The version of the last breaking change. This version will be specified in the WebView2 [Release Notes][Releasenotes]. As of GA, you must install either the [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] or a [non-stable Microsoft Edge channel][MicrosoftedgeinsiderDownload] with a build number of **86.0.622.22** or later.
+
+1. The minimum version required by the interfaces your application uses. This can be done [programmatically](#matching-webview2-runtime-versions) or by looking up the minimum required version in the reference documentation.
+
+> [!NOTE]
+> New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge \(Chromium\) browser, which is approximately every six weeks.  
 
 > [!IMPORTANT]
 > When developing Evergreen WebView2 applications, regularly test your application against the latest versions of the WebView2 Runtime and non-stable Microsoft Edge browsers.  Because the web platform is constantly evolving, regular testing is the best way to ensure your application performs as intended.  

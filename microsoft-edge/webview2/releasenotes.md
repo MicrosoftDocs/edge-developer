@@ -3,7 +3,7 @@ description: Release notes for Microsoft Edge WebView2 SDK
 title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -24,7 +24,7 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 
 Release Date: Oct 19, 2020  
 
-[NuGet package][NuGetGallery1.0.674-prerelease] \| minimum Microsoft Edge version 88.0.674.0.
+[NuGet package][NuGetGallery1.0.674-prerelease] \| minimum WebView2 Runtime version 88.0.674.0.
 
 #### General
 
