@@ -12,7 +12,7 @@ ms.custom: seodec18
 
 Runtime domain exposes JavaScript runtime by means of remote evaluation and mirror objects.  Evaluation results are returned as mirror object that expose object type, string representation and unique identifier that can be used for further object reference.  Original objects are maintained in memory unless they are either explicitly released.  
 
-|  |  |  
+| Classification | Members |  
 |:--- |:--- |  
 | [Methods](#methods) | [enable](#enable), [disable](#disable), [evaluate](#evaluate), [callFunctionOn](#callfunctionon), [getProperties](#getproperties) |  
 | [Events](#events) | [executionContextsCleared](#executioncontextscleared), [exceptionThrown](#exceptionthrown) |  
@@ -40,7 +40,7 @@ Disables reporting of the `executionContextsCleared` event.
 
 Evaluates expression on global object.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | expression | `string` | Expression to evaluate. |  
 | silent \(optional\) | `boolean` | In silent mode exceptions thrown during evaluation are not reported and do not pause execution.  Overrides `setPauseOnException` state. |  
@@ -48,7 +48,7 @@ Evaluates expression on global object.
 | returnByValue \(optional\) | `boolean` | Whether the result is expected to be a JSON object that should be sent by value. |  
 | awaitPromise \(optional\) | `boolean` | Whether execution should `await` for resulting value and return once awaited promise is resolved. |  
 
-| Returns |  |  |  
+| Returns | Type | Details |  
 |:--- |:--- |:--- |  
 | result | [RemoteObject](#remoteobject) | Evaluation result. |  
 
@@ -58,7 +58,7 @@ Evaluates expression on global object.
 
 Calls function with given declaration on the given object.  Object group of the result is inherited from the target object.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | functionDeclaration | `string` | Declaration of the function to call. |  
 | objectId \(optional\) | [RemoteObjectId](#remoteobjectid) | Identifier of the object to call function on.  Either `objectId` or `executionContextId` should be specified.  objectId must be from the Runtime.evaluate() function. |  
@@ -67,7 +67,7 @@ Calls function with given declaration on the given object.  Object group of the 
 | returnByValue \(optional\) | `boolean` | Whether the result is expected to be a JSON object which should be sent by value. |  
 | awaitPromise \(optional\) | `boolean` | Whether execution should `await` for resulting value and return once awaited promise is resolved. |  
 
-| Returns |  |  |  
+| Returns | Type | Details |  
 |:--- |:--- |:--- |  
 | result | [RemoteObject](#remoteobject) | Call result. |  
 
@@ -77,13 +77,13 @@ Calls function with given declaration on the given object.  Object group of the 
 
 Returns properties of a given object.  Object group of the result is inherited from the target object.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | objectId | [RemoteObjectId](#remoteobjectid) | Identifier of the object to return properties for.  `objectId` must be from the `Debugger.evaluateOnCallFrame()` function. |  
 | ownProperties \(optional\) | `boolean` | If `true`, returns properties belonging only to the element itself, not to its prototype chain. |  
 | accessorPropertiesOnly \(optional\) | `boolean` | **Experimental**.  If `true`, returns accessor properties \(with getter/setter\) only; internal properties are not returned either. |  
 
-| Returns |  |  |  
+| Returns | Type | Details |  
 |:--- |:--- |:--- |  
 | result | [PropertyDescriptor[]](#propertydescriptor) | Object properties. |  
 
@@ -103,7 +103,7 @@ Issued when all executionContexts were cleared in browser.
 
 Issued when exception was thrown and unhandled.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | timestamp | [Timestamp](#timestamp) | Timestamp of the exception. |  
 | exceptionDetails | [ExceptionDetails](#exceptiondetails) | &nbsp; |  
@@ -150,7 +150,7 @@ Primitive value which cannot be JSON-stringified.
 
 Mirror object referencing original JavaScript object.  
 
-| Properties |  |  |  
+| Properties | Type | Details |  
 |:--- |:--- |:--- |  
 | type | `string` | Object type.  Allowed values:  `object`, `function`, `undefined`, `string`, `number`, `boolean`, and `symbol` |  
 | subtype \(optional\) | `string` | Object subtype hint.  Specified for `object` type values only.  Allowed values:  `null`, `error`, and `promise` |  
@@ -169,7 +169,7 @@ Mirror object referencing original JavaScript object.
 
 Object property descriptor.  
 
-| Properties |  |  |  
+| Properties | Type | Details |  
 |:--- |:--- |:--- |  
 | name | `string` | Property name or symbol description. |  
 | value \(optional\) | [RemoteObject](#remoteobject) | The value associated with the property. |  
@@ -191,7 +191,7 @@ Object property descriptor.
 
 Represents function call argument.  Either remote object ID `value`, unserializable primitive value or neither of \(for undefined\) them should be specified.  
 
-| Properties |  |  |  
+| Properties | Type | Details |  
 |:--- |:--- |:--- |  
 | value \(optional\) | `any` | Primitive value or serializable javascript object. |  
 | unserializableValue \(optional\) | [UnserializableValue](#unserializablevalue) | Primitive value which can not be JSON-stringified. |  
@@ -215,7 +215,7 @@ ID of an execution context.
 
 Detailed information about exception \(or error\) that was thrown during script compilation or execution.  
 
-| Properties |  |  |  
+| Properties | Type | Details |  
 |:--- |:--- |:--- |  
 | exceptionId | `integer` | Exception ID. |  
 | text | `string` | Exception text, which should be used together with exception object when available. |  
@@ -245,7 +245,7 @@ Number of milliseconds since epoch.
 
 Stack entry for runtime errors and assertions.  
 
-| Properties |  |  |  
+| Properties | Type | Details |  
 |:--- |:--- |:--- |  
 | functionName | `string` | JavaScript function name. |  
 | scriptId | [ScriptId](#scriptid) | JavaScript script ID. |  
@@ -261,7 +261,7 @@ Stack entry for runtime errors and assertions.
 
 Call frames for assertions or error messages.  
 
-| Properties |  |  |  
+| Properties | Type | Details |  
 |:--- |:--- |:--- |  
 | description \(optional\) | `string` | String label of this stack trace.  For async traces this may be a name of the function that initiated the async call. |  
 | callFrames | [CallFrame[]](#callframe) | JavaScript function name. |  

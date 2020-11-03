@@ -11,7 +11,7 @@ ms.prod: microsoft-edge
 
 Actions and events related to the inspected page belong to the page domain.  
 
-|  |  |  
+| Classification | Members |  
 |:--- |:--- |  
 | [Methods](#methods) | [enable](#enable), [disable](#disable), [navigate](#navigate), [getFrameTree](#getframetree) |  
 | [Events](#events) | [frameAttached](#frameattached), [frameDetached](#framedetached), [frameNavigated](#framenavigated), [loadEventFired](#loadeventfired), [domContentEventFired](#domcontenteventfired) |  
@@ -39,12 +39,12 @@ Disables page domain notifications.
 
 Navigates current page to the given URL.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | url | `string` | URL to navigate the page to. |  
 | frameId \(optional\) | [FrameId](#frameid) | Frame id to navigate.  If not specified, will navigate the top page. |  
 
-| Returns |  |  |  
+| Returns | Type | Details |  
 |:--- |:--- |:--- |  
 | frameId | [FrameId](#frameid) | Frame id that will be navigated. |  
 
@@ -54,7 +54,7 @@ Navigates current page to the given URL.
 
 Returns present frame tree structure.  
 
-| Returns |  |  |  
+| Returns | Type | Details |  
 |:--- |:--- |:--- |  
 | frameTree | [FrameTree](#frametree) | Present frame tree structure. |  
 
@@ -66,7 +66,7 @@ Returns present frame tree structure.
 
 Fired when frame has been attached to its parent.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | frameId | [FrameId](#frameid) | Id of the frame that has been attached. |  
 | parentFrameId | [FrameId](#frameid) | Parent frame identifier. |  
@@ -78,7 +78,7 @@ Fired when frame has been attached to its parent.
 
 Fired when frame has been detached from its parent.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | frameId | [FrameId](#frameid) | ID of the frame that has been detached. |  
 
@@ -88,7 +88,7 @@ Fired when frame has been detached from its parent.
 
 Fired once navigation of the frame has completed.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | frame | [Frame](#frame) | Frame object. |  
 
@@ -98,7 +98,7 @@ Fired once navigation of the frame has completed.
 
 Corresponds to the `window.onload` event.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | timestamp | `number` | Number of milliseconds since epoch. |  
 
@@ -108,7 +108,7 @@ Corresponds to the `window.onload` event.
 
 Corresponds to the `document.onDOMContentLoaded` event.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | timestamp | `number` | Number of milliseconds since epoch. |  
 
@@ -132,7 +132,7 @@ Unique frame identifier.
 
 Information about the Frame on the Page.  
 
-| Properties |  |  |  
+| Properties | Type | Details |  
 |:--- |:--- |:--- |  
 | id | [FrameId](#frameid) | Frame unique identifier. |  
 | parentId \(optional\) | [FrameId](#frameid) | Parent frame unique identifier. |  
@@ -149,7 +149,7 @@ Information about the Frame on the Page.
 
 Information about the Frame hierarchy.  
 
-| Properties |  |  |  
+| Properties | Type | Details |  
 |:--- |:--- |:--- |  
 | frame | [Frame](#frame) | Frame information for this tree item. |  
 | childFrames \(optional\) | [FrameTree[]](#frametree) | Child frames. |  

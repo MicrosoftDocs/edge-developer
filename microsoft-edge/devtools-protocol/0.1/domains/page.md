@@ -12,7 +12,7 @@ ms.custom: seodec18
 
 Actions and events related to the inspected page belong to the page domain.  
 
-|  |  |  
+| Classification | Members |  
 |:--- |:--- |  
 | [**Methods**](#methods) | [enable](#enable), [disable](#disable), [navigate](#navigate) |  
 | [**Types**](#types) | [FrameId](#frameid) |  
@@ -39,11 +39,11 @@ Disables page domain notifications.
 
 Navigates current page to the given URL.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | url | `string` | URL to navigate the page to. |  
 
-| Returns |  |  |  
+| Returns | Type | Details |  
 |:--- |:--- |:--- |  
 | frameId | [FrameId](#frameid) | **Experimental**.  Frame ID that will be navigated. |  
 

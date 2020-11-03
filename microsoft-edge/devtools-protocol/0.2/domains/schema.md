@@ -11,7 +11,7 @@ ms.prod: microsoft-edge
 
 Provides information about the protocol schema.  
 
-|  |  |  
+| Classification | Members |  
 |:--- |:--- |  
 | [Methods](#methods) | [getDomains](#getdomains) |  
 | [Types](#types) | [Domain object](#domain) |  
@@ -22,7 +22,7 @@ Provides information about the protocol schema.
 
 Returns supported domains.  
 
-| Returns |  |  |  
+| Returns | Type | Details |  
 |:--- |:--- |:--- |  
 | domains | [Domain[]](#domain) | List of supported domains. |  
 
@@ -36,7 +36,7 @@ Returns supported domains.
 
 Description of the protocol domain.  
 
-| Properties |  |  |  
+| Properties | Type | Details |  
 |:--- |:--- |:--- |  
 | name | `string` | Domain name. |  
 | version | `string` | Domain version. |  

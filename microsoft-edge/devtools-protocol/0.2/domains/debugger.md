@@ -12,7 +12,7 @@ ms.custom: seodec18
 
 Debugger domain exposes JavaScript debugging capabilities. It allows setting and removing breakpoints, stepping through execution, exploring stack traces, etc.
 
-|  |  |  
+| Classification | Members |  
 |:--- |:--- |  
 | [**Methods**](#methods) | [enable](#enable), [disable](#disable), [getPossibleBreakpoints](#getpossiblebreakpoints), [setBreakpointsActive](#setbreakpointsactive), [setBreakpointByUrl](#setbreakpointbyurl), [setBreakpoint](#setbreakpoint), [removeBreakpoint](#removebreakpoint), [stepOver](#stepover), [stepInto](#stepinto), [stepOut](#stepout), [pause](#pause), [resume](#resume), [getScriptSource](#getscriptsource), [setPauseOnExceptions](#setpauseonexceptions), [evaluateOnCallFrame](#evaluateoncallframe), [setVariableValue](#setvariablevalue), [setBlackboxPatterns](#setblackboxpatterns), [msSetDebuggerPropertyValue](#mssetdebuggerpropertyvalue) |  
 | [**Events**](#events) | [scriptParsed](#scriptparsed), [breakpointResolved](#breakpointresolved), [paused](#paused), [resumed](#resumed) |  
@@ -41,12 +41,12 @@ Disables debugger for given page.
 
 Returns possible locations for breakpoint. scriptId in start and end range locations should be the same.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | start | [Location](#location) | Start of range to search possible breakpoint locations in. |  
 | end | [Location](#location) | End of range to search possible breakpoint locations in \(excluding\).  When not specified, end of scripts is used as end of range. |  
 
-| Returns |  |  |  
+| Returns | Type | Details |  
 |:--- |:--- |:--- |  
 | locations | [BreakLocation](#breaklocation) | List of the possible breakpoint locations. |  
 
@@ -56,7 +56,7 @@ Returns possible locations for breakpoint. scriptId in start and end range locat
 
 Activates / deactivates all breakpoints on the page.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | active | `boolean` | New value for breakpoints active state. | 
 
@@ -66,7 +66,7 @@ Activates / deactivates all breakpoints on the page.
 
 Sets JavaScript breakpoint at given location specified either by URL or URL regex.  Once this command is issued, all existing parsed scripts will have breakpoints resolved and returned in `locations` property.  Further matching script parsing will result in subsequent `breakpointResolved` events issued.  This logical breakpoint will survive page reloads.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | lineNumber | `integer` | Line number to set breakpoint at. | 
 | url \(optional\) | `string` | URL of the resources to set breakpoint on. |  
@@ -74,7 +74,7 @@ Sets JavaScript breakpoint at given location specified either by URL or URL rege
 | columnNumber \(optional\) | `integer` | Offset in the line to set breakpoint at. |  
 | condition \(optional\) | `string` | Expression to use as a breakpoint condition. When specified, debugger will only stop on the breakpoint if this expression evaluates to true. |  
 
-| Returns |  |  |  
+| Returns | Type | Details |  
 |:--- |:--- |:--- |  
 | breakpointId | [BreakpointId](#breakpointid) | ID of the created breakpoint for further reference. |  
 | locations | [Location[]](#location) | List of the locations this breakpoint resolved into upon addition. |  
@@ -85,12 +85,12 @@ Sets JavaScript breakpoint at given location specified either by URL or URL rege
 
 Sets JavaScript breakpoint at a given location.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | location | [Location](#location) | Location to set breakpoint in. |  
 | condition \(optional\) | `string` | Expression to use as a breakpoint condition.  When specified, debugger will only stop on the breakpoint if this expression evaluates to true. |  
 
-| Returns |  |  |  
+| Returns | Type | Details |  
 |:--- |:--- |:--- |  
 | breakpointId | [BreakpointId](#breakpointid) | ID of the created breakpoint for further reference. |  
 | actualLocation | [Location](#location) | Location this breakpoint resolved into. |  
@@ -101,7 +101,7 @@ Sets JavaScript breakpoint at a given location.
 
 Removes JavaScript breakpoint.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | breakpointId | [BreakpointId](#breakpointid) | &nbsp; |  
 
@@ -151,11 +151,11 @@ Resumes JavaScript execution.
 
 Returns source for the script with given id.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | scriptId | [Runtime.ScriptId](./runtime.md#scriptid) | ID of the script to get source for. |  
 
-| Returns |  |  |  
+| Returns | Type | Details |  
 |:--- |:--- |:--- |  
 | scriptSource | `string` | Script source. | 
 
@@ -165,7 +165,7 @@ Returns source for the script with given id.
 
 Defines pause on exceptions state.  Can be set to stop on all exceptions, uncaught exceptions or no exceptions.  Initial pause on exceptions state is `none`.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | state | `string` | Pause on exceptions mode.  Allowed values:  `none`, `uncaught`, `all` |  
 
@@ -175,12 +175,12 @@ Defines pause on exceptions state.  Can be set to stop on all exceptions, uncaug
 
 Evaluates expression on a given call frame.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | callFrameId | [CallFrameId](#callframeid) | Call frame identifier to evaluate on. |  
 | expression | `string` | Expression to evaluate. | 
 
-| Returns |  |  |  
+| Returns | Type | Details |  
 |:--- |:--- |:--- |  
 | result | [Runtime.RemoteObject](./runtime.md#remoteobject) | Object wrapper for the evaluation result. |  
 
@@ -190,7 +190,7 @@ Evaluates expression on a given call frame.
 
 Changes value of variable in a callframe.  Object-based scopes are not supported and must be mutated manually.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | scopeNumber | `integer` | 0-based number of scope as was listed in scope chain.  Only `local`, `closure`, and `catch` scope types are allowed.  Other scopes could be manipulated manually. | 
 | variableName | `string` | Variable name. | 
@@ -204,7 +204,7 @@ Changes value of variable in a callframe.  Object-based scopes are not supported
 **Experimental**.  Replace previous blackbox patterns with passed ones.  Forces backend to skip stepping/pausing in scripts with url matching one of the patterns.  The debugger will try to leave blackboxed script by performing 'step in' several times, finally resorting to 'step out' if unsuccessful.  
 
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | patterns | `string[]` | Array of regexps that will be used to check script url for blackbox state. | 
 
@@ -214,7 +214,7 @@ Changes value of variable in a callframe.  Object-based scopes are not supported
 
 **Experimental**.  Microsoft: Sets the specified debugger property to the specified value.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | debuggerPropertyId | string | Microsoft:  The property id \(i.e. `msDebuggerPropertyId`\) to set. | 
 | newValue | `string` | &nbsp; |  
@@ -227,7 +227,7 @@ Changes value of variable in a callframe.  Object-based scopes are not supported
 
 Fired when the script is parsed. This event is also fired for all known and uncollected scripts upon enabling debugger.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | scriptId | [Runtime.ScriptId](./runtime.md#scriptid) | Identifier of the script parsed. |  
 | url | `string` | URL or name of the script parsed \(if any\). | 
@@ -249,7 +249,7 @@ Fired when the script is parsed. This event is also fired for all known and unco
 
 Fired when breakpoint is resolved to an actual script and location.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | breakpointId | [BreakpointId](#breakpointid) | Breakpoint unique identifier. |  
 | location | [Location](#location) | Actual breakpoint location. |  
@@ -261,7 +261,7 @@ Fired when breakpoint is resolved to an actual script and location.
 
 Fired when the debuggers breaks for a breakpoint or exception.  
 
-| Parameters |  |  |  
+| Parameters | Type | Details |  
 |:--- |:--- |:--- |  
 | callFrames | [CallFrame[]](#callframe) | Call stack the debugger stopped on. |  
 | reason | `string` |  Pause reason.  Allowed values:  `breakpoint`, `step`, `exception`, `other`, and `EventListener` |  
@@ -307,7 +307,7 @@ Call frame identifier.
 
 Location in the source code.  
 
-| Properties |  |  |  
+| Properties | Type | Details |  
 |:--- |:--- |:--- |  
 | scriptId | [Runtime.ScriptId](./runtime.md#scriptid) | Script identifier as reported in the `Debugger.scriptParsed`. |  
 | lineNumber | `integer` | Line number in the script \(0-based\). |  
@@ -322,7 +322,7 @@ Location in the source code.
 
 Break location in the source code.  
 
-| Properties |  |  |  
+| Properties | Type | Details |  
 |:--- |:--- |:--- |  
 | scriptId | [Runtime.ScriptId](./runtime.md#scriptid) | Script identifier as reported in the `Debugger.scriptParsed`. |  
 | lineNumber | `integer` | Line number in the script \(0-based\). |  
@@ -338,7 +338,7 @@ Break location in the source code.
 
 JavaScript call frame. Array of call frames form the call stack.  
 
-| Properties |  |  |  
+| Properties | Type | Details |  
 |:--- |:--- |:--- |  
 | callFrameId | [CallFrameId](#callframeid) | Call frame identifier.  This identifier is only valid while the debugger is paused. |  
 | functionName | `string` | Name of the JavaScript function called on this call frame. |  
@@ -357,7 +357,7 @@ JavaScript call frame. Array of call frames form the call stack.
 
 Scope description.  
 
-| Properties |  |  |  
+| Properties | Type | Details |  
 |:--- |:--- |:--- |  
 | type | `string` | Scope type.  Allowed values:  `global`, `local`, `with`, `closure`, `catch`, `block`, `script`, `eval`, `module`, and `return` |  
 | object | [Runtime.RemoteObject](./runtime.md#remoteobject) | Object representing the scope.  For `global` and `with` scopes it represents the actual object; for the rest of the scopes, it is artificial transient object enumerating scope variables as its properties. |  
