@@ -28,7 +28,7 @@ The IE compatibility List only adds a website when the following actions occur.
 
 The IE compatibility list is an XML file on [microsoft.com][MicrosoftOfficialHome].  The list is regularly updated in response to user's and website developers requests to have websites added or removed.  Updates to the list are automatically downloaded on user's machine.  
 
-Email the following information to [ietioedge@microsoft.com][MailtoMicrosoftIetioedge] for your website to be added or removed from the IE compatibility list.    
+Email the following information to [ietoedge@microsoft.com][MailtoMicrosoftIetoedge] for your website to be added or removed from the IE compatibility list.    
 
 *   Owner name  
 *   Corporate title  
@@ -41,7 +41,7 @@ Email the following information to [ietioedge@microsoft.com][MailtoMicrosoftIeti
     
 <!-- links -->  
 
-[MailtoMicrosoftIetioedge]: mailto:ietioedge@microsoft.com "Send an email to ietioedge@microsoft.com"  
+[MailtoMicrosoftIetoedge]: mailto:ietoedge@microsoft.com "Send an email to ietoedge@microsoft.com"  
 
 [MicrosoftOfficialHome]: https://www.microsoft.com "Microsoft Official Home"  
 
