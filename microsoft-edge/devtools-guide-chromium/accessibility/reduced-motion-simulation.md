@@ -1,4 +1,5 @@
 ---
+description: Simulate reduced motion using developer tools.  CSS prefers reduced motion.
 title: Simulate reduced motion using developer tools (CSS Prefers Reduced Motion)
 author: MSEdgeTeam
 ms.author: msedgedevrel

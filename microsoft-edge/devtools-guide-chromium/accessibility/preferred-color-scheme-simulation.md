@@ -1,5 +1,6 @@
 ---
-title: Force Microsoft Edge DevTools Into Color Scheme Preview Mode (CSS Prefers Color Scheme)
+description: Force Microsoft Edge DevTools into Color Scheme Preview mode.  CSS prefers color scheme.
+title: Force Microsoft Edge DevTools into Color Scheme Preview mode (CSS Prefers Color Scheme)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 11/03/2020

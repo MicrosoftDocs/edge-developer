@@ -1,4 +1,5 @@
 ---
+description: Change DevTools language settings.
 title: Change DevTools language settings
 author: MSEdgeTeam
 ms.author: msedgedevrel
