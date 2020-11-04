@@ -2,7 +2,7 @@
 description: Moving users to Microsoft Edge from Internet Explorer 
 title: Moving users to Microsoft Edge from Internet Explorer
 author: MSEdgeTeam
-ms.date: 11/03/2020
+ms.date: 11/04/2020
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, internet explorer
@@ -33,11 +33,11 @@ Email the following information to [ietioedge@microsoft.com][MailtoMicrosoftIeti
 *   Owner name  
 *   Corporate title  
 *   Email address  
-*   Telephone number  
 *   Company name  
 *   Street address  
 *   Website address  
-*   Target platform \(desktop, phone, Xbox\)  
+<!--  *   Telephone number  -->  
+<!--  *   Target platform \(desktop, phone, Xbox\)  -->  
     
 <!-- links -->  
 
