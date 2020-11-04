@@ -14,8 +14,8 @@ Many modern websites have designs that are incompatible with Internet Explorer \
 This article describes the following concepts.  
 
 *   The user experience for redirection  
-*   How a site gets added to the IE compatibility list  
-*   How to get your site added or removed from the list  
+*   How to add your site to the IE compatibility list  
+*   How to remove your site from the IE compatibility list  
     
 ## Why is a site added to the IE compatibility list?  
 
