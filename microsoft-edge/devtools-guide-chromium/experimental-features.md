@@ -259,8 +259,12 @@ When you are editing the keyboard shortcuts for an action, to discard your chang
 
 You may now visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View with Composited Layers are now combined.  After enabling the experiment, ensure you restart the DevTools.  To use **Composited Layers**, complete the following steps.  
 
+1.  Navigate to a Progressive Web App (PWA)-enabled website like twitter.com
+1.  Select the **+** circle in the browser to install the Twitter PWA. If it is already set up, open the app as usual.
+1.  Navigate to the Developer Tools with **F12**
 1.  Open the **3D View** pane in the drawer \(bottom\) panel.  
 1.  Select the **Composited Layers** pane.  
+1.  You will be able to see all the painted layers of the application. Try this with your own web applications!
 
 :::image type="complex" source="./media/experiments-layers.msft.png" alt-text="Composited Layers pane" lightbox="./media/experiments-layers.msft.png":::
   Composited Layers pane  
