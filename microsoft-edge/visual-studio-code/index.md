@@ -35,7 +35,7 @@ Search the Marketplace for the specific extension and choose **Install**.
       :::image type="complex" source="./media/visual-studio-code-extension-microsoft-edge-tools-for-visual-studio-code.msft.png" alt-text="Microsoft Edge Tools for Visual Studio Code Visual Studio Code extension" lightbox="./media/visual-studio-code-extension-microsoft-edge-tools-for-visual-studio-code.msft.png":::
          **Microsoft Edge Tools for Visual Studio Code** Visual Studio Code extension  
       :::image-end:::  
-      [Microsoft Edge Tools](#elements-for-microsoft-edge)  
+      [Microsoft Edge Tools for Visual Studio Code](#microsoft-edge-tools-for-visual-studio-code)  
    :::column-end:::
    :::column span="1":::
       :::image type="complex" source="./media/visual-studio-code-extension-webhint.msft.png" alt-text="webhint Visual Studio Code extension" lightbox="./media/visual-studio-code-extension-webhint.msft.png":::
