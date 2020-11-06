@@ -76,7 +76,7 @@ node example.js
 
 Playwright launches Microsoft Edge, navigates to `https://www.microsoft.com/edge`, and saves a screenshot of the page.  You may customize the page size with [page.setViewportSize()][PlaywrightAPIPageSetViewport].  
 
-:::image type="complex" source="./media/playwright-example.png" alt-text="The example.png file produced by example.js" lightbox="./media/playwright-example.png":::
+:::image type="complex" source="../media/playwright-example.png" alt-text="The example.png file produced by example.js" lightbox="../media/playwright-example.png":::
     The `example.png` file produced by `example.js`  
 :::image-end:::  
 
@@ -90,12 +90,12 @@ For more information about Playwright, navigate to the [Playwright website][Play
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](./devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](../devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[WebdriverChromiumMain]: ./webdriver-chromium.md "WebDriver (Chromium) | Microsoft Docs"  
-[PuppeteerMain]: ./puppeteer.md "Puppeteer | Microsoft Docs"  
+[WebdriverChromiumMain]: ../webdriver-chromium.md "WebDriver (Chromium) | Microsoft Docs"  
+[PuppeteerMain]: ../puppeteer.md "Puppeteer | Microsoft Docs"  
 
 [MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge: Making the web better through more open-source collaboration | Microsoft Experience Blog"  
 
