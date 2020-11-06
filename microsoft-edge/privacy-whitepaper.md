@@ -3,7 +3,7 @@ description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/07/2020
+ms.date: 11/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, privacy, whitepaper, trust
@@ -43,7 +43,7 @@ Data collected by other search providers follow the privacy policy of the compan
 
 ## Autofill  
 
-Autofill in Microsoft Edge helps you be more productive by letting you save passwords, payment info, addresses, and other form entry data.  When you visit a site and start to fill out a form, Microsoft Edge uses form fill info to match your saved autofill data to the form.  Microsoft Edge offers form entry data you previously saved when you encounter similar forms.  Passwords and credit card info are only saved with your explicit permission for each password and card.  
+Autofill in Microsoft Edge helps you be more productive by letting you save passwords, payment info, addresses, and other form entry data like birthday.  When you visit a site and start to fill out a form, Microsoft Edge uses form fill info to match your saved autofill data to the form.  Microsoft Edge offers form entry data you previously saved when you encounter similar forms.  Passwords and credit card info are only saved with your explicit permission for each password and card.  
 
 Addresses and other form entries are saved by default.  To disable saving and autofill of address and other form data, go to `edge://settings/addresses` and turn off the **Save and fill addresses**setting .  
 
@@ -68,8 +68,6 @@ You may collect sites, text and images on the web, and organize the content with
 Every 24 hours Microsoft Edge downloads a list of supported sites for which special entity extraction templates exists.  The templates are specific to each website.  When you create a new item in your collection, Microsoft Edge verifies that the site from which you are creating the new collection item is on the list of supported sites.  If the site is on the list, Microsoft Edge pings the entity extraction service for the template of the specific site.  No user identifiers are associated with the request to the service.  The template attempts to identify the name, price, ratings, primary image, and other data about the item being collected.  If the site from which you are creating a new collection item is not on the supported list site, Microsoft Edge does not download a template.  The templates enable the creation of all collection items locally on the device.  No data about the collection items are sent to the service to create the collection.  
 
 To delete the templates stored on the device and clear the cache data, go to `edge://settings/privacy` and under **Clear browsing data** next to **Clear browsing data now** select the **Choose what to clear** button, select the desired time range and type of data, then select the **Clear now** button.  Another way to delete cached data, go to `edge://settings/clearBrowserData` select the desired time range and type of data, then select the **Clear now** button.  
-
-To help you get the best deal while shopping and using Collections, if you add products to your Collections, Microsoft Edge will offer the ability to compare the product price to other retailers.  If you select Compare price to other retailers Microsoft Edge will send the product name, shopping domain, price and other product details about the product to Bing to compare prices to other retailers.  The product information in Collections will be sent over HTTPS. These HTTPS calls do not contain any user identifiers.  
 
 To If you turn on the **Show suggestions from Pinterest in Collections** setting, If you want to see Collections performs a Microsoft Bing search using the title of your collection to find relevant Pinterest Topic pages.  Microsoft Edge does not send data about your collections to Pinterest.  To remove the suggestions and stop searches for Pinterest Topic pages, go to `edge://settings/privacy` and turn off the **Show suggestions from Pinterest in Collections** setting.  
 
@@ -373,6 +371,20 @@ By default, your current DNS service provider is used to avoid disruptions to yo
 
 Secure DNS is off by default for managed machines that are part of an organization but it can be configured using administrative policies. InPrivate browsing uses the secure DNS setting of the profile from which the InPrivate session was launched. Guest mode will always use your current service provider.
 
+## Shopping
+
+Microsoft Edge helps you find coupons and better prices while shopping online.  To help you find coupons while shopping online, Microsoft Edge downloads a list of shopping domains locally to the client from the Microsoft shopping service.  When you go to a website, Microsoft Edge locally determines if the site you're on is a shopping domain.  If the site is determined to be a shopping domain, Microsoft Edge will send the URL scrubbed of personally identifiable information to the Microsoft shopping service.  The shopping service will return any available coupons for that site.  
+
+When you're applying coupons, cookies will be stored on your device to correctly attribute the coupon provider.  Cookies will be saved by our trusted coupon providers only after a coupon is successfully applied on the cart.  After the coupons are applied, info about the success of the coupons will be sent back to the Microsoft shopping service to help us understand which coupons are successful and which failed.  Data sent to the Microsoft shopping service is sent over HTTPS with a randomly generated identifier which changes per coupon lookup.  
+
+:::image type="complex" source="./media/whitepaper-media/shopping.png" alt-text="Shopping and coupons" lightbox="./media/whitepaper-media/shopping.png":::
+   Shopping and coupons  
+:::image-end:::  
+
+To help you find the best price while shopping online and using Collections, Microsoft Edge determines locally if the page or collection item you're viewing is a product detail page.  If you're looking at a product detail page, Microsoft Edge sends the details of the product to the shopping service, including the URL scrubbed of personally identifiable information, price, product image, product name, ratings, and reviews, along with info about Microsoft Edge and your operating system version.  This data is sent over HTTPS with a randomly generated identifier.  The Microsoft shopping service will return prices from other retailers for the product you're viewing.  
+
+The shopping service is turned on by default for all users.  You can turn off shopping in Microsoft Edge by going to `edge://settings/privacy` and turning off **Save time and money with Shopping in Microsoft Edge**.  InPrivate browsing uses the shopping setting of the profile from which the InPrivate session was launched.  
+
 ## Sign in and Identity  
 
 Signing into Microsoft Edge provides additional features to make the browser more productive for you.  To sign you in seamlessly, when you first launch Microsoft Edge, it attempts to detect your identity from the operating system.  If Microsoft Edge detects your identity from the operating system but you do not want to remain signed into Microsoft Edge, go to `edge://settings/profiles` and either sign out or remove your profile.  To sign into Microsoft Edge, your identity in not detected from the operating system, go to `edge://settings/profiles`.  
@@ -427,7 +439,7 @@ To help resolve URL typos in the address bar that result in a website error, Mic
 
 ## Sync  
 
-Signing into Microsoft Edge with a Microsoft account allows you to sync your browsing data across all your signed-in versions of Microsoft Edge.  You may sync your favorites, settings, form fill data \(addresses and more\), passwords, extensions, and collections.  You must allow permission to turn on sync in Microsoft Edge, and each synced data type may be turned on or off individually.  Favorites includes any tabs you previously set aside in the legacy version of Microsoft Edge, which sync along with the rest of your favorites.  Deleted or modified favorites or other data from one signed-in version of Microsoft Edge sync to all other signed-in versions of Microsoft Edge where sync is turned on.  To manage sync configurations, go to `edge://settings/profiles/sync`.  Your sync settings may be managed by your organization.
+Signing into Microsoft Edge with a Microsoft account allows you to sync your browsing data across all your signed-in versions of Microsoft Edge.  You may sync your browsing history, favorites, settings, form fill data \(addresses and more\), passwords, extensions, and collections.  You must allow permission to turn on sync in Microsoft Edge, and each synced data type may be turned on or off individually.  Favorites includes any tabs you previously set aside in the legacy version of Microsoft Edge, which sync along with the rest of your favorites.  Deleted or modified favorites or other data from one signed-in version of Microsoft Edge sync to all other signed-in versions of Microsoft Edge where sync is turned on.  To manage sync configurations, go to `edge://settings/profiles/sync`.  Your sync settings may be managed by your organization.
 
 :::image type="complex" source="./media/whitepaper-media/sync.png" alt-text="Image of sync setting being set to on" lightbox="./media/whitepaper-media/sync.png":::
    Sync setting is on
