@@ -24,7 +24,7 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 
 Release Date: Oct 19, 2020  
 
-[NuGet package][NuGetGallery1.0.674-prerelease] \| minimum WebView2 Runtime version 88.0.674.0.
+[NuGet package][NuGetGallery1.0.674-prerelease] \| minimum WebView2 Runtime version 86.0.616.0.
 
 #### General
 
@@ -55,7 +55,7 @@ Release Date: Oct 19, 2020
 
 Release Date: Oct 19, 2020  
 
-[NuGet package][NuGetGallery1.0.622.22] \| minimum WebView2 Runtime version 86.0.622.22.  
+[NuGet package][NuGetGallery1.0.622.22] \| minimum WebView2 Runtime version 86.0.616.0.  
 
 #### General  
 
@@ -69,7 +69,7 @@ Release Date: Oct 19, 2020
 
 Release Date: Sept 10, 2020  
 
-[NuGet package][NuGetGallery0.9.628-prerelease] \| minimum Microsoft Edge version 87.0.628.0.  
+[NuGet package][NuGetGallery0.9.628-prerelease] \| minimum Microsoft Edge version 86.0.616.0.  
 
 > [!IMPORTANT]
 > **Announcement**:  This prerelease continues to release based upon the Microsoft Edge 87 Branch.  In the future, the prerelease SDK release matches the Microsoft Edge Canary build and the normal release is synchronized with Microsoft Edge Stable.  
@@ -89,7 +89,7 @@ Release Date: Sept 10, 2020
 
 Release Date: Sept 10, 2020  
 
-[NuGet package][NuGetGallery0.9.622.11] \| minimum WebView2 Runtime version 86.0.622.11.  
+[NuGet package][NuGetGallery0.9.622.11] \| minimum WebView2 Runtime version 86.0.616.0.  
 
 #### General  
 
