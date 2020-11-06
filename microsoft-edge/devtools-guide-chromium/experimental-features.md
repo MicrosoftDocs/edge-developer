@@ -47,7 +47,7 @@ The following sections describe the new experimental features that are available
 | [Enable Network Console](#enable-network-console) | 85 or later |  
 | [Source Order Viewer](#source-order-viewer) | 86 or later |  
 | [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor) | 87 or later |  
-| [Turn on Composited Layers in 3D View][#turn-on-composited-layers-in-3d-view] | 87 or later |  
+| [Turn on Composited Layers in 3D View](#turn-on-composited-layers-in-3d-view) | 87 or later |  
 
 ### Emulation: Support dual screen mode  
 
