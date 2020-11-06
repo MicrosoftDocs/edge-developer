@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/21/2020 
+ms.date: 11/06/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -171,7 +171,7 @@ Normally, tools such as **Elements** and **Network** may only open in the main p
 *   cross-browser compatibility  
 *   security  
 *   performance  
-*   PWAs  
+*   Progressive Web Apps (PWAs)  
 *   other common web development issues  
 
 The [webhint][WebhintMain] experiment displays the webhint feedback in the [Issues][DevtoolsIssues] panel.  Choose an issue to display solution documentation and a list of the affected resources on your website.  Choose a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.  
@@ -257,20 +257,20 @@ When you are editing the keyboard shortcuts for an action, to discard your chang
 
 ### Turn on Composited Layers in 3D View
 
-You may now visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View with Composited Layers are now combined.  After enabling the experiment, ensure you restart the DevTools.  To use **Composited Layers**, complete the following steps.  
+You may now visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.  After enabling the experiment, ensure you restart the DevTools.  To use **Composited Layers**, complete the following steps.  
 
-1.  Navigate to a Progressive Web App (PWA)-enabled website like twitter.com
-1.  Select the **+** circle in the browser to install the Twitter PWA. If it is already set up, open the app as usual.
-1.  Navigate to the Developer Tools with **F12**
-1.  Open the **3D View** pane in the drawer \(bottom\) panel.  
-1.  Select the **Composited Layers** pane.  
-1.  You will be able to see all the painted layers of the application. Try this with your own web applications!
+<!--1.  Navigate to a PWA-enabled website such as `twitter.com`.  
+1.  Choose the **Install ...** \(![Install PWA icon](./media/install-pwa-icon.msft.png)\) icon to install the Twitter PWA.  If it is already set up, open the app as usual.  
+1.  Open the Devtools.  -->  
+1.  On the drawer, choose the **3D View** tool.  
+1.  Open the **Composited Layers** pane.  
+1.  All of the painted layers of the app are displayed.  Try this feature with your own web apps.  
 
 :::image type="complex" source="./media/experiments-layers.msft.png" alt-text="Composited Layers pane" lightbox="./media/experiments-layers.msft.png":::
-  Composited Layers pane  
+   **Composited Layers** pane  
 :::image-end:::  
 
-<!--Available in Microsoft Edge version 87 and later.  -->
+<!--Available in Microsoft Edge version 87 and later.  -->  
 
 ## Previous experimental features  
 
