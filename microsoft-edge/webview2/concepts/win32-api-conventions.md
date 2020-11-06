@@ -3,18 +3,36 @@ description: Win32 C++ WebView2 API Conventions
 title: Win32 C++ WebView2 API Conventions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 11/05/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
-
 # Win32 C++ WebView2 API conventions  
 
-## Async Methods  
+:::row:::
+   :::column span="1":::
+      Supported platforms:
+   :::column-end:::
+   :::column span="2":::
+      Win32
+   :::column-end:::
+:::row-end:::  
 
-Asynchronous methods in the WebView2 Win32 C++ API use a delegate interface to callback to you to indicate when the async method has completed, the success or failure code, and for some, the result of the asynchronous method.  The final parameter for all asynchronous methods is a pointer to a delegate interface of which you provide an implementation.  
+## Prerequisites  
+
+*   Experience using Win32 API  
+
+## Async methods  
+
+Asynchronous methods in the WebView2 Win32 C++ API use a delegate interface to contact you for the following reasons.  
+
+*   The async method has completed.  
+*   The success or failure code.  
+*   The result of the asynchronous method.  
+
+The final parameter for all asynchronous methods is a pointer to a delegate interface of which you provide an implementation.  
 
 The delegate interface has a single `Invoke` method that takes as a first parameter an `HRESULT` of the success or failure code.  Additionally there may be a second parameter that is the result of the method if the method has a result.  For example, the [ICoreWebView2::CapturePreview][Webview2ReferenceWin32Icorewebview2CapturePreview] method takes as the final parameter an `ICoreWebView2CapturePreviewCompletedHandler` pointer.  To send a `CapturePreview` method request, you provide an instance of the `ICoreWebView2CapturePreviewCompletedHandler` pointer that you implement.  The following code snippet uses one method to implement.  
 
@@ -24,9 +42,9 @@ HRESULT Invoke(HRESULT result)
 
 You implement the `Invoke` method and `CoreWebView2` requests your `Invoke` method when `CapturePreview` request completes.  The single parameter is the `HRESULT` describing the success or failure code of the `CapturePreview` request.  
 
-Or for `ICoreWebView2::ExecuteScript`, you provide an instance of `ICoreWebView2ExecuteScriptCompletedHandler` which has an `Invoke` method that provides you with the success or failure code of the `ExecuteScript` request as well as the second parameter `resultObjectAsJson` which is the JSON of the result of running the script.  
+Alternately, for `ICoreWebView2::ExecuteScript`, you provide an instance that has an `Invoke` method that provides you with the success or failure code of the `ExecuteScript` request.  Also provide the second parameter that is the JSON of the result of running the script.  
 
-You may manually implement the `CompleteHandler` delegate interfaces, or you may use the [WRL Callback function][CppCxWrlCallbackFunction].  The Callback function is used throughout the following WebView2 code snippet.  
+You may manually implement the `CompleteHandler` delegate interfaces, or you may use the [Callback function (WRL)][CppCxWrlCallbackFunction].  The Callback function is used throughout the following WebView2 code snippet.  
 
 ```cpp
 void ScriptComponent::InjectScript()
@@ -55,13 +73,15 @@ void ScriptComponent::InjectScript()
 
 ## Events  
 
-Events in the WebView2 Win32 C++ API use the `add_EventName` and `remove_EventName` method pair to subscribe and unsubscribe from events.  The `add_EventName` method takes an event handler delegate interface and gives back an `EventRegistrationToken` as an out parameter.  The `remove_EventName` method takes an `EventRegistrationToken` and unsubscribes the corresponding event subscription.  
+Events in the WebView2 Win32 C++ API use the `add_EventName` and `remove_EventName` method pair to subscribe and unsubscribe from events.  The `add_EventName` method takes an event handler delegate interface and gives back an `EventRegistrationToken` as an output parameter.  The `remove_EventName` method takes an `EventRegistrationToken` and unsubscribes the corresponding event subscription.  
 
-Event handler delegate interfaces work very similarly to the async method completed handler delegate interfaces.  You implement the event handler delegate interface and `CoreWebView2` sends a callback whenever the event fires.  Every event handler delegate interface has a single `Invoke` method that has a sender parameter followed by an event args parameter.  The sender is the instance of the object on which you subscribed for events.  The event args parameter is an interface that contains information about the currently firing event.  
+Event handler delegate interfaces work similarly to the async method completed handler delegate interfaces.  You implement the event handler delegate interface and `CoreWebView2` sends a callback whenever the event fires.  Every event handler delegate interface has a single `Invoke` method that has a sender parameter followed by an event args parameter.  The sender is the instance of the object on which you subscribed for events.  The event args parameter is an interface that contains information about the currently firing event.  
 
-For instance the `NavigationCompleted` event on `ICoreWebView2` has the `ICoreWebView2::add_NavigationCompleted` and `ICoreWebView2::remove_NavigationCompleted` method pair.  When you request add you provide an instance of `ICoreWebView2NavigationCompletedEventHandler` in which you previously implemented `Invoke` method.  When the `NavigationCompleted` event fires, your `Invoke` method is requested.  The first parameter is the `ICoreWebView2` which is firing the `NavigationCompleted` event.  The second parameter is the `ICoreWebView2NavigationCompletedEventArgs` which contains information about if the navigation completed successfully and so on.  
+For instance, the `NavigationCompleted` event on `ICoreWebView2` has the `ICoreWebView2::add_NavigationCompleted` and `ICoreWebView2::remove_NavigationCompleted` method pair.  When you send a request, you provide an instance of `ICoreWebView2NavigationCompletedEventHandler` in which you previously implemented `Invoke` method.  When the `NavigationCompleted` event fires, your `Invoke` method is requested.  The first parameter runs the `NavigationCompleted` event.  The second parameter contains information about if the navigation completed successfully and so on.  
 
-Similarly to the async method completed handler delegate interface you are able to implement it yourself directly, or you may use the WRL Callback function that is used in the following WebView2 code snippet.  
+Similar to the async method completed handler delegate interface, you may implement it yourself directly, or you may use the WRL Callback function that is used in the following WebView2 code snippet.  
+
+<!-- todo: what is async method completed handler delegate interface?  -->  
 
 ```cpp
 // Register a handler for the NavigationCompleted event.
@@ -94,13 +114,13 @@ CHECK_FAILURE(m_webView->add_NavigationCompleted(
 
 ## Strings  
 
-String out parameters are `LPWSTR` null-terminated strings.  The requester allocates the string using `CoTaskMemAlloc`.  Ownership is transferred to the requester and it is up to the requester to free the memory using `CoTaskMemFree`.  
+String output parameters are `LPWSTR` null-terminated strings.  The requester provides the string using `CoTaskMemAlloc`.  Ownership is transferred to the requester and it is up to the requester to free the memory using `CoTaskMemFree`.  
 
-String in parameters are `LPCWSTR` null-terminated strings.  The requester ensures the string is valid for the duration of the synchronous function request.  If the receiver must retain that value to some point after the function request completes, the receiver must allocate an associated copy of the string value.  
+String input parameters are `LPCWSTR` null-terminated strings.  The requester ensures the string is valid for the duration of the synchronous function request.  If the receiver must store the value to some point after the function request completes, the receiver must give an associated copy of the string value.  
 
 ## URI and JSON parsing  
 
-Various methods provide or accept URIs and JSON as strings.  Please use your own preferred library for parsing and generating the strings.  
+Various methods provide or accept URIs and JSON as strings.  Use your preferred library for parsing and generating the strings.  
 
 If WinRT is available for your app, you may use the `RuntimeClass_Windows_Data_Json_JsonObject` and `IJsonObjectStatics` methods to parse or produce JSON strings or `RuntimeClass_Windows_Foundation_Uri` and `IUriRuntimeClassFactory` methods to parse and produce URIs.  Both of methods work in Win32 apps.  
 
@@ -110,8 +130,21 @@ If you use `IUri` and `CreateUri` to parse URIs, you may want to use the followi
 Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 ```  
 
+## See also  
+
+*   To Get Started using WebView2 Win32 C/C++, navigate to [Getting started with WebView2][Webview2IndexGettingStarted] guides.  
+*   For more detailed information about WebView2 APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2WpfWebview2].  
+
+## Getting in touch with the Microsoft Edge WebView team  
+
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
+
 <!-- links -->  
+
+[Webview2GettingstartedWin32]: ../gettingstarted/win32.md "Getting started with WebView2 | Microsoft Docs"  
 
 [Webview2ReferenceWin32Icorewebview2CapturePreview]: /microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview "CapturePreview - interface ICoreWebView2 | Microsoft Docs"  
 
 [CppCxWrlCallbackFunction]: /cpp/cppcx/wrl/callback-function-wrl "Callback Function (WRL) | Microsoft Docs"  
+
+[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 Class | Microsoft Docs"  
