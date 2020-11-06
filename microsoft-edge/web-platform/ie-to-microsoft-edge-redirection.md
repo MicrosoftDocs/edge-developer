@@ -14,8 +14,7 @@ Many modern websites have designs that are incompatible with Internet Explorer \
 This article describes the following concepts.  
 
 *   The user experience for redirection  
-*   How to add your website to the IE compatibility list  
-*   How to remove your website from the IE compatibility list  
+*   How to request an update to the list
     
 ## Why is a website added to the IE compatibility list?  
 
@@ -36,6 +35,8 @@ Email the following information to [ietoedge@microsoft.com][MailtoMicrosoftIetoe
 *   Company name  
 *   Street address  
 *   Website address  
+
+Note, the IE compatibility list is designed to work with public sites only.
 <!--  *   Telephone number  -->  
 <!--  *   Target platform \(desktop, phone, Xbox\)  -->  
     
