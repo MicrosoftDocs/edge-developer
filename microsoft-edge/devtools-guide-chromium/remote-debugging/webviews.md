@@ -1,8 +1,9 @@
 ---
+description: Debug WebViews in your native Android apps using Microsoft Edge Developer Tools.
 title: Remote Debugging WebViews
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/04/2019
+ms.date: 11/06/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -20,28 +21,21 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
-
-
-
-
-# Remote Debugging WebViews   
-
-
+# Remote Debugging WebViews  
 
 Debug WebViews in your native Android apps using Microsoft Edge Developer Tools.  
 
-On Android 4.4 \(KitKat\) or later, use DevTools to debug WebView content in native Android applications.  
+On Android 4.4 \(KitKat\) or later, use DevTools to debug WebView content in native Android apps.  
 
-### TL;DR   
+### Summary  
 
 *   Enable WebView debugging in your native Android app; debug WebViews in Microsoft Edge DevTools.  
-*   Access list of debug-enabled WebViews via `edge://inspect`.  
+*   Access list of debug-enabled WebViews using `edge://inspect`.  
 *   Debugging WebViews is the same as debugging a web page through [remote debugging][RemoteDebuggingGettingStarted].  
 
 ## Configure WebViews for debugging  
 
-WebView debugging must be enabled from within your application.  To enable WebView debugging, call the static method [setWebContentsDebuggingEnabled][AndroidDeveloperWebViewsSetWebContentsDebuggingEnabled] on the WebView class.  
+WebView debugging must be enabled from within your app.  To enable WebView debugging, run the [setWebContentsDebuggingEnabled][AndroidDeveloperWebViewsSetWebContentsDebuggingEnabled] static method on the `WebView` class.  
 
 ```java
 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -49,10 +43,10 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 }
 ```  
 
-This setting applies to all of the WebViews of the application.  
+This setting applies to all of the WebViews of the app.  
 
 > [!TIP]
-> WebView debugging is not affected by the state of the `debuggable` flag in the manifest of the application.  If you want to enable WebView debugging only when `debuggable` is `true`, test the flag at runtime.  
+> WebView debugging is not affected by the state of the `debuggable` flag in the manifest of the app.  If you want to enable WebView debugging only when `debuggable` flag is `true`, test the flag at runtime.  
 > 
 > ```java
 > if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -63,16 +57,16 @@ This setting applies to all of the WebViews of the application.
 
 ## Open a WebView in DevTools  
 
-The `edge://inspect` page displays a list of debug-enabled WebViews on your device.  
+To display a list of debug-enabled WebViews on your device, navigate to `edge://inspect`.  
 
-To start debugging, click **inspect** below the WebView you want to debug.  Use DevTools as you would for a remote browser tab.  
+To start debugging, under the WebView you want to debug, choose **inspect**.  Use DevTools in the same way that you do a remote browser tab.  
 
 <!--
-> ##### Figure 1  
-> Inspecting elements in a WebView  
-> ![Inspecting elements in a WebView][ImageWebviewDebugging]  
+:::image type="complex" source=".images/webview-debugging.msft.png" alt-text="Inspecting elements in a WebView" lightbox=".images/webview-debugging.msft.png":::
+   Inspecting elements in a WebView  
+:::image-end:::  
 
-The gray graphics listed with the WebView represent its size and position relative to the device's screen.  If your WebViews have titles set, the titles are listed as well.  
+The gray graphics listed with the WebView represent its size and position relative to the screen of the device.  If your WebViews have titles set, the titles are listed as well.  
 -->  
 
 ## Troubleshooting  
@@ -82,17 +76,13 @@ Your WebViews are not displayed on the `edge://inspect` page?
 *   Verify that WebView debugging is enabled for your app.  
 *   On your device, open the app with the WebView you want to debug.  Then, refresh the `edge://inspect` page.  
 
- 
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
-
-<!-- image links -->  
-
-[ImageWebviewDebugging]: images/webview-debugging.msft.png "Figure 1: Inspecting elements in a WebView"  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[RemoteDebuggingGettingStarted]: index.md "Get Started with Remote Debugging Android Devices"  
+[RemoteDebuggingGettingStarted]: ./index.md "Get Started with Remote Debugging Android Devices | Microsoft Docs"  
 
 [AndroidDeveloperWebViewsSetWebContentsDebuggingEnabled]: https://developer.android.com/reference/android/webkit/WebView.html#setWebContentsDebuggingEnabled(boolean) "setWebContentsDebuggingEnabled - WebView | Android Developers"  
 

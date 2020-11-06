@@ -1,48 +1,87 @@
 ---
 description: IE mode and the Microsoft Edge (Chromium) DevTools
 title: Internet Explorer mode and the DevTools
-author: robpaveza
-ms.author: ropaveza
-ms.date: 03/10/2019
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 09/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, ie11, internet explorer 11, ie mode
 ---
 
-# Internet Explorer mode and the DevTools
+# Internet Explorer mode and the DevTools  
 
-This document describes how Internet Explorer mode (IE mode) integrates with the Microsoft Edge (Chromium) DevTools.
+This article describes how Internet Explorer mode \(IE mode\) integrates with the Microsoft Edge \(Chromium\) DevTools.  
 
-## Understanding IE mode
+## Understanding IE mode  
 
-IE mode is a mechanism by which enterprises may specify a set of web sites that, until now, only worked in Internet Explorer 11. When these web sites are viewed in Microsoft Edge (Chromium), a full instance of Internet Explorer 11 is running and rendered within the tab. This allows enterprises to manage compatibility for IE document modes, ActiveX controls, and other legacy components that are currently not compatible with any modern web browsers.
+IE mode allows enterprises to specify a list of web sites that only work in Internet Explorer 11.  When you navigate to these web sites in Microsoft Edge \(Chromium\), an instance of Internet Explorer 11 runs and renders the site in a tab.  The functionality allows enterprises to manage compatibility with technologies that are currently not compatible with any modern web browsers.  Support for the following technologies is included in IE mode.  
 
-Within IE mode, the rendering process is entirely based in Internet Explorer 11. The Microsoft Edge (Chromium) manager process manages the lifetime of the rendering process, but it is constrained to the tab's lifetime on a given site or application. When a tab is rendering in IE mode, a badge appears in the address bar for the given tab:
+*   IE document modes  
+*   ActiveX controls  
+*   other legacy components  
 
-![IE mode badge in the address bar](./media/ie-mode-badge.png)
+In IE mode, the rendering process is based on Internet Explorer 11.  The Microsoft Edge \(Chromium\) process manager handles the lifetime of the rendering process.  It is constrained to the lifetime of the tab for a specific site \(or app\).  When a tab renders in IE mode, a badge appears in the address bar for the specific tab.  
 
-IE mode is currently available on Windows 10 Version 1903 (May 2019 Update) but is coming soon to all supported Windows platforms.
+:::image type="complex" source="./media/ie-mode-badge.msft.png" alt-text="IE mode badge in the address bar" lightbox="./media/ie-mode-badge.msft.png":::
+   IE mode badge in the address bar  
+:::image-end:::  
 
-## Launching the DevTools on a tab in IE mode
+IE mode is currently available on Windows 10 Version 1903 \(May 2019 Update\), but is coming soon to all supported Windows platforms.  
 
-If you are trying to view the document mode of a web site in IE mode, you can click on the badge in the address bar.
+## Launching the DevTools on a tab in IE mode  
 
-![View document mode via IE mode badge](./media/ie-mode-badge-doc-mode.png)
+If you are trying to view the document mode of a web site in IE mode, choose the badge in the address bar.  
 
-While on a tab in IE mode, the DevTools will not work. Pressing `F12` or `Ctrl`+`Shift`+`I` will only launch a blank instance of the Microsoft Edge (Chromium) DevTools with a message that reads: "Developer Tools are not available in Internet Explorer mode. To debug the page, open it in Internet Explorer 11." **View Source** will launch Notepad and **Inspect Element** will not be visible in the context menu in IE mode.
+:::image type="complex" source="./media/ie-mode-badge-doc-mode.msft.png" alt-text="View document mode using IE mode badge" lightbox="./media/ie-mode-badge-doc-mode.msft.png":::
+   View document mode using IE mode badge  
+:::image-end:::  
 
-This is because a number of components in the DevTools (like the Network and Performance tools) would break when the rendering engine switches from Chromium to Internet Explorer 11 in IE mode. To give us feedback, click the `:)` icon.
+If a tab is using IE mode, the DevTools do not work and the following conditions occur.
 
-![DevTools launched in IE mode](./media/ie-mode-devtools.png)
+*   If you select `F12` or select `Ctrl`+`Shift`+`I`, a blank instance of the Microsoft Edge \(Chromium\) DevTools is launched displays the following message.  
+    
+    ```text
+    Developer Tools are not available in Internet Explorer mode.  To debug the page, open it in Internet Explorer 11.
+    ```  
+    
+*   If you open a contextual menu \(right-click\) and choose **View Source**, Notepad is launched.  
+*   If you open a contextual menu \(right-click\), the **Inspect Element** is not visible.  
 
-If you are developing or maintaining an Internet Explorer 11-based web site or application, we recommend navigating to the same page in Internet Explorer 11. On Windows 10, you can find the shortcut for Internet Explorer 11 on the Start Menu underneath Windows Accessories. On Windows 7, you can find Internet Explorer 11 on the main Start Menu. You can then launch the Internet Explorer DevTools by pressing `F12` or clicking **Inspect element** in the context menu. To learn more about how to use those tools, click [here](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85)).
+The reason that a number of the tools within the DevTools \(like the **Network** and **Performance** tools\) do not work is the rendering engine switches from Chromium to Internet Explorer 11 in IE mode.  To provide feedback, navigate to [Getting in touch with the Microsoft Edge DevTools team](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
 
-## Remote debugging and IE mode
+:::image type="complex" source="./media/ie-mode-devtools.msft.png" alt-text="DevTools launched in IE mode" lightbox="./media/ie-mode-devtools.msft.png":::
+   DevTools launched in IE mode  
+:::image-end:::  
 
-You can launch Microsoft Edge (Chromium) with remote debugging enabled, which is typically how tools like Visual Studio or VS Code launch Edge, from the command line:
+To test your Internet Explorer 11-based website \(or app\) in Internet Explorer 11 and IE mode, perform the following steps.  
 
-`start msedge --remote-debugging-port=9222`
+1.  Open Internet Explorer 11.  
+    *   On Windows 10, locate the shortcut for Internet Explorer 11.
+        1.  **Start Menu** > **Windows Accessories** > **Internet Explorer 11**.  
+    *   On Windows 7, locate Internet Explorer 11.
+        1.  **Start Menu** > **Internet Explorer 11**.  
+1.  In Internet Explorer 11, open the same webpage.  
+1.  Launch the Internet Explorer DevTools.  
+    *   Select `F12`.  
+    *   Hover anywhere, open a contextual menu \(right-click\), and choose **Inspect element**.  For more information about how to use those tools, navigate to [Using the F12 developer tools][PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326].  
 
-When Microsoft Edge (Chromium) is launched with this command line argument, IE mode will be unavailable. You can still navigate to web sites or applications that would otherwise be in IE mode but the content will render via Chromium, not Internet Explorer 11. You can expect that the parts of those pages that rely on IE11, like ActiveX controls, will not render correctly. The IE mode badge will no longer appear in the address bar.
+## Remote debugging and IE mode  
 
-IE mode will remain unavailable until you completely close Microsoft Edge (Chromium).
+Launch Microsoft Edge \(Chromium\) with remote debugging turned on from the command-line interface.  Visual Studio, Visual Studio Code, and other development tools typically run a command to launch Microsoft Edge.  The following command launches Microsoft Edge with the remote debugging port set to `9222`.  
+
+```shell
+start msedge --remote-debugging-port=9222
+```  
+
+After you launch Microsoft Edge \(Chromium\) using a command-line argument, IE mode is unavailable.  You may still navigate to websites \(or apps\) that would otherwise display in IE mode. The website \(or app\) content renders using Chromium, not Internet Explorer 11.  Expect the parts of the pages that rely on IE11, such as ActiveX controls, to not render correctly.  The IE mode badge does not appear in the address bar.  
+
+IE mode remains unavailable until you completely close and restart Microsoft Edge \(Chromium\).  
+
+## Getting in touch with the Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
+
+<!-- links -->  
+
+[PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326]: /previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85) "Using the F12 developer tools | Microsoft Docs"  
