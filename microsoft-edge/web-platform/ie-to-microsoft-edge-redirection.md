@@ -2,7 +2,7 @@
 description: Moving users to Microsoft Edge from Internet Explorer 
 title: Moving users to Microsoft Edge from Internet Explorer
 author: MSEdgeTeam
-ms.date: 11/04/2020
+ms.date: 11/06/2020
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, internet explorer
@@ -14,7 +14,7 @@ Many modern websites have designs that are incompatible with Internet Explorer \
 This article describes the following concepts.  
 
 *   The user experience for redirection  
-*   How to request an update to the list
+*   How to request an update to the list  
     
 ## Why is a website added to the IE compatibility list?  
 
@@ -25,7 +25,7 @@ The IE compatibility List only adds a website when the following actions occur.
     
 ## Update the IE compatibility list  
 
-The IE compatibility list is an XML file on [microsoft.com][MicrosoftOfficialHome].  The list is regularly updated in response to user's and website developers requests to have websites added or removed.  Updates to the list are automatically downloaded to user machines.  
+The IE compatibility list is an XML file on [microsoft.com][MicrosoftOfficialHome].  The list is regularly updated in response to user and website developer requests to have websites added or removed.  Updates to the list are automatically downloaded to user machines.  
 
 Email the following information to [ietoedge@microsoft.com][MailtoMicrosoftIetoedge] for your website to be added or removed from the IE compatibility list.    
 
@@ -35,11 +35,10 @@ Email the following information to [ietoedge@microsoft.com][MailtoMicrosoftIetoe
 *   Company name  
 *   Street address  
 *   Website address  
-
-Note, the IE compatibility list is designed to work with public sites only.
-<!--  *   Telephone number  -->  
-<!--  *   Target platform \(desktop, phone, Xbox\)  -->  
     
+> [!NOTE]
+> The IE compatibility list is designed to work with public sites only.  
+
 <!-- links -->  
 
 [MailtoMicrosoftIetoedge]: mailto:ietoedge@microsoft.com "Send an email to ietoedge@microsoft.com"  
