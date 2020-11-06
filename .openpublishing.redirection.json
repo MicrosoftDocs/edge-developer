@@ -1,8 +1,13 @@
 {
-  "redirections": [
+"redirections": [
     {
       "source_path": "microsoft-edge/extensions/microsoft-browser-extension-policy.md",
       "redirect_url": "https://docs.microsoft.com/legal/microsoft-edge/microsoft-browser-extension-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-edge/visual-studio-code/elements-for-edge.md",
+      "redirect_url": "/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension",
       "redirect_document_id": false
     },
     {

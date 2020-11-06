@@ -64,6 +64,8 @@
           href: devtools-guide-chromium/open.md
         - name: What's new
           items: 
+            - name: Microsoft Edge 87
+              href: devtools-guide-chromium/whats-new/2020/10/devtools.md
             - name: Microsoft Edge 86
               href: devtools-guide-chromium/whats-new/2020/08/devtools.md
             - name: Microsoft Edge 85
@@ -98,6 +100,8 @@
               href: devtools-guide-chromium/coverage/index.md
             - name: Inspect animations
               href: devtools-guide-chromium/inspect-styles/animations.md
+            - name: Inspect CSS grid
+              href: devtools-guide-chromium/css/grid.md
             - name: Force DevTools into Print Preview mode
               href: devtools-guide-chromium/css/print-preview.md
         - name: Console
@@ -176,6 +180,8 @@
               href: devtools-guide-chromium/javascript/reference.md
             - name: Snippets
               href: devtools-guide-chromium/javascript/snippets.md
+            - name: Overrides
+              href: devtools-guide-chromium/javascript/overrides.md
             - name: Sources panel overview
               href: devtools-guide-chromium/sources.md
             - name: Debug background services
@@ -238,6 +244,8 @@
               href: devtools-guide-chromium/memory-problems/allocation-profiler.md
         - name: Media
           href: devtools-guide-chromium/media-panel/index.md
+        - name: WebAuthn
+          href: devtools-guide-chromium/WebAuthn/index.md
         - name: Workspaces
           href: devtools-guide-chromium/workspaces/index.md
         - name: Progressive web apps
@@ -509,8 +517,8 @@
       items: 
         - name: Debugger for Edge
           href: visual-studio-code/debugger-for-edge.md
-        - name: Elements for Edge
-          href: visual-studio-code/elements-for-edge.md
+        - name: Microsoft Edge Devtools extension
+          href: visual-studio-code/microsoft-edge-devtools-extension.md
         - name: webhint
           href: visual-studio-code/webhint.md
     - name: WebDriver (Chromium)
@@ -521,6 +529,8 @@
       items: 
         - name: Site compatibility-impacting changes coming to Microsoft Edge
           href: web-platform/site-impacting-changes.md
+        - name: Moving users to Microsoft Edge from IE
+          href: web-platform/ie-to-microsoft-edge-redirection.md
         - name: Tracking prevention in Microsoft Edge
           href: web-platform/tracking-prevention.md
         - name: Microsoft Edge user agent string
