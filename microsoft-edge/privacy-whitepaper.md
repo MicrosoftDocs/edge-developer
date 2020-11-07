@@ -43,7 +43,7 @@ Data collected by other search providers follow the privacy policy of the compan
 
 ## Autofill  
 
-Autofill in Microsoft Edge helps you be more productive by letting you save passwords, payment info, addresses, and other form entry data like birthday.  When you visit a site and start to fill out a form, Microsoft Edge uses form fill info to match your saved autofill data to the form.  Microsoft Edge offers form entry data you previously saved when you encounter similar forms.  Passwords and credit card info are only saved with your explicit permission for each password and card.  
+Autofill in Microsoft Edge helps you be more productive by letting you save passwords, payment information, addresses, and other form entry data, for example birthdays.  When you visit a site and start to fill out a form, Microsoft Edge uses form fill info to match your saved autofill data to the form.  Microsoft Edge offers form entry data you previously saved when you encounter similar forms.  Passwords and credit card info are only saved with your explicit permission for each password and card.  
 
 Addresses and other form entries are saved by default.  To disable saving and autofill of address and other form data, go to `edge://settings/addresses` and turn off the **Save and fill addresses**setting .  
 
