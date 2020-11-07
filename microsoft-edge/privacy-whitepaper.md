@@ -383,7 +383,7 @@ When you're applying coupons, cookies will be stored on your device to correctly
 
 To help you find the best price while shopping online and using Collections, Microsoft Edge determines locally if the page or collection item you're viewing is a product detail page.  If you're looking at a product detail page, Microsoft Edge sends the details of the product to the shopping service, including the URL scrubbed of personally identifiable information, price, product image, product name, ratings, and reviews, along with info about Microsoft Edge and your operating system version.  This data is sent over HTTPS with a randomly generated identifier.  The Microsoft shopping service will return prices from other retailers for the product you're viewing.  
 
-The shopping service is turned on by default for all users.  You can turn off shopping in Microsoft Edge by going to `edge://settings/privacy` and turning off **Save time and money with Shopping in Microsoft Edge**.  InPrivate browsing uses the shopping setting of the profile from which the InPrivate session was launched.  
+The shopping service is turned on by default for all users.  To change the shopping setting in Microsoft Edge, navigate to `edge://settings/privacy`, and then turn off **Save time and money with Shopping in Microsoft Edge**.  InPrivate browsing uses the shopping setting of the profile that launched the InPrivate session.  
 
 ## Sign in and Identity  
 
