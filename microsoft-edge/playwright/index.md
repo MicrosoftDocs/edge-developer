@@ -28,7 +28,7 @@ npm i playwright
 ## Launch Microsoft Edge with Playwright  
 
 > [!NOTE]
-> [Playwright][PlaywrightMain] requires Node.js version 10.17 or above. Run `node -v` from the command line to ensure you have a compatible version of Node.js.  The browser binaries for Chromium, Firefox and WebKit work across Windows, macOS, and Linux. Fore more information, navigate to [Playwright System Requirements][PlaywrightSystemRequirements].  
+> [Playwright][PlaywrightMain] requires Node.js version 10.17 or above. Run `node -v` from the command line to ensure you have a compatible version of Node.js.  The browser binaries for Chromium, Firefox and WebKit work across Windows, macOS, and Linux. For more information, navigate to [Playwright System Requirements][PlaywrightSystemRequirements].  
 
 Playwright should be familiar to users of other browser-testing frameworks like [WebDriver][WebDriverChromiumMain] or [Puppeteer][PuppeteerMain].  You create an instance of the browser, open a page, and then manipulate it with the [Playwright API][PlaywrightAPIReference].  In the following code snippet, Playwright launches Microsoft Edge \(Chromium\), navigates to `https://www.microsoft.com/edge`, and saves a screenshot as `example.png`.  
 
