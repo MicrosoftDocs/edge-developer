@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, developer, tools, automation, test, p
 
 [Playwright][PlaywrightMain] is a [Node.js][NodejsMain] library to automate [Chromium][ChromiumHome], [Firefox][FirefoxMain], and [WebKit][WebKitMain] with a single API.  Playwright is built to enable cross-browser web automation that is ever-green, capable, reliable, and fast.  Since [Microsoft Edge is built on the open-source Chromium web platform][MicrosoftBlogsWindowsExperience20181206], Playwright is also able to automate Microsoft Edge.  
 
-Playwright launches [headless browsers][WikiHeadlessBrowser] by default.  What this means is that it does not display a UI, instead you must use the command line.  You may also configure Playwright to run full \(non-headless\) Microsoft Edge or Chromium as well.  
+Playwright launches [headless browsers][WikiHeadlessBrowser] by default.  Headless browsers do not display a UI, so instead you must use the command line.  You may also configure Playwright to run full \(non-headless\) Microsoft Edge as well.  
 
 By default, when you install Playwright, the installer downloads [Chromium][ChromiumHome], [Firefox][FirefoxMain], and [WebKit][WebKitMain].  If you have Microsoft Edge \(Chromium\) installed as well, Playwright just needs a one-line code change to test your website or app in Microsoft Edge.  To download Microsoft Edge \(Chromium\), navigate to [Download Microsoft Edge][MicrosoftEdgeDownload].  
 
@@ -80,7 +80,7 @@ Playwright launches Microsoft Edge, navigates to `https://www.microsoft.com/edge
     The `example.png` file produced by `example.js`  
 :::image-end:::  
 
-`example.js` is just a simple demonstration of the automation and testing scenarios enabled by Playwright.  To take screenshots in web browsers, change the following code.  
+`example.js` is just a simple demonstration of the automation and testing scenarios enabled by Playwright.  To take screenshots in multiple web browsers, change the following code.  
 
 *   Chromium  `await chromium.launch()`  
 *   Firefox  `await firefox.launch()`  
