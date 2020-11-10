@@ -52,6 +52,33 @@ Go to [The Roles Model](https://www.w3.org/TR/wai-aria-1.1/#roles) by the W3C to
 
 For more information on ARIA, see the ARIA in the [Resources](#resources) section.
 
+## Assistive Technology Compatibility Testing
+The best way to ensure that your website will work with different assistive technologies, like screen readers, is to test with them. For example, assistive technology compatibility testing can catch bugs where Microsoft Edge has correctly mapped a HTML5 element or ARIA attribute to Microsoft UI Automation, but the assistive technology hasn't yet added support for interacting with that particular UI Automation API. From an end user's perspective, it doesn't matter whether your website doesn't work because of an issue in their browser or assistive technology — it's broken for them in either case.
+
+Similarly, different browsers may map elements to platform accessibility APIs differently than Microsoft Edge, so it's important to consider them as well while building your interface.
+
+WebAIM's conducts surveys with [screen reader](https://webaim.org/projects/screenreadersurvey8/) and [low vision](https://webaim.org/projects/lowvisionsurvey2/) users that can help you decide what assistive technologies and browsers you want to test with.
+
+### Learning How to Test
+Assistive technologies are sophisticated tools. Don't assume you can immediately start testing with an assistive technology without learning about how it works first. Learning to test with a screen reader can be an especially steep learning curve — a novice screen reader user may think they're encoutering a screen reader bug when they're actually misusing the screen reader.
+
+For more information on learning to test with assistive technologies, check out [Testing with Screen Readers](https://webaim.org/articles/screenreader_testing/) by WebAIM.
+
+### Testing Locally
+Most devices you already own include assistive technology that's built-in to the OS. Windows includes the [Windows Narrator](https://support.microsoft.com/help/22798/windows-10-narrator-get-started) screen reader and [Windows Magnifier](https://support.microsoft.com/en-us/windows/use-magnifier-to-make-things-on-the-screen-easier-to-see-414948ba-8b1c-d3bd-8615-0e5e32204198). 3rd party assistive technologies like [NVDA](https://www.nvaccess.org/about-nvda/), [JAWS](https://www.freedomscientific.com/products/software/jaws/), and [ZoomText](https://www.freedomscientific.com/products/software/zoomtext/) are available to download. MacOS includes the [VoiceOver](https://www.apple.com/accessibility/mac/vision/) screen reader, and iOS, Android, and Linux all support a variety of assistive technologies.
+
+### Testing in Virtual Machines and Emulators
+If you are on a Mac and want to test with an assistive technology only available for Windows, like Windows Narrator or NVDA, you can create a Windows virtual machine. Virtual machines with Microsoft Edge (EdgeHTML) and IE are available for VirtualBox and VMWare on the [download page](https://developer.microsoft.com/microsoft-edge/tools/vms).
+
+[Android Studio](https://developer.android.com/sdk/installing/studio.html) includes an emulator that can be used to test assistive technologies in the [Android Accessibility Suite](https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback). Follow the instructions to [set up a virtual device](https://developer.android.com/tools/devices/managing-avds.html) and [start the emulator](https://developer.android.com/tools/devices/emulator.html), then install Android Accessibility Suite from the Google Play store.
+
+Note that the iOS Simulator does not currently include VoiceOver.
+
+### Cloud-based Testing Tools
+If an assistive technology is not available on your OS or not possible to install on a virtual machine or emulator, cloud-based assistive technology testing tools are the next best thing.
+
+*   [Assistiv Labs (commercial)](https://assistivlabs.com) allows you to manually test with assistive technologies through any modern web browser. You select an assistive technology and browser and it connects you with a virtual machine, emulator, or real device with which you may interact.
+
 ## Resources
 
 ### Accessibility Basics
