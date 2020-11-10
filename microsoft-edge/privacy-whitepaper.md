@@ -43,7 +43,7 @@ Data collected by other search providers follow the privacy policy of the compan
 
 ## Autofill  
 
-Autofill in Microsoft Edge helps you be more productive by letting you save passwords, payment info, addresses, and other form entry data like birthday.  When you visit a site and start to fill out a form, Microsoft Edge uses form fill info to match your saved autofill data to the form.  Microsoft Edge offers form entry data you previously saved when you encounter similar forms.  Passwords and credit card info are only saved with your explicit permission for each password and card.  
+Autofill in Microsoft Edge helps you be more productive by letting you save passwords, payment information, addresses, and other form entry data, for example birthdays.  When you visit a site and start to fill out a form, Microsoft Edge uses form fill info to match your saved autofill data to the form.  Microsoft Edge offers form entry data you previously saved when you encounter similar forms.  Passwords and credit card info are only saved with your explicit permission for each password and card.  
 
 Addresses and other form entries are saved by default.  To disable saving and autofill of address and other form data, go to `edge://settings/addresses` and turn off the **Save and fill addresses** setting.  
 
@@ -375,7 +375,7 @@ Secure DNS is off by default for managed machines that are part of an organizati
 
 Microsoft Edge helps you find coupons and better prices while shopping online.  To help you find coupons while shopping online, Microsoft Edge downloads a list of shopping domains locally to the client from the Microsoft shopping service.  When you go to a website, Microsoft Edge locally determines if the site you're on is a shopping domain.  If the site is determined to be a shopping domain, Microsoft Edge will send the URL scrubbed of personally identifiable information to the Microsoft shopping service.  The shopping service will return any available coupons for that site.  
 
-When you're applying coupons, cookies will be stored on your device to correctly attribute the coupon provider.  Cookies will be saved by our trusted coupon providers only after a coupon is successfully applied on the cart.  After the coupons are applied, info about the success of the coupons will be sent back to the Microsoft shopping service to help us understand which coupons are successful and which failed.  Data sent to the Microsoft shopping service is sent over HTTPS with a randomly generated identifier that changes per coupon lookup.  
+When you're applying coupons, cookies will be stored on your device to correctly attribute the coupon provider.  Cookies will be saved by our trusted coupon providers only after a coupon is successfully applied on the cart.  After the coupons are applied, information about the success of the coupons will be sent back to the Microsoft shopping service to help us understand which coupons succeeded or failed.  Data sent to the Microsoft shopping service is sent over HTTPS with a randomly generated identifier which changes per coupon lookup.  
 
 :::image type="complex" source="./media/whitepaper-media/shopping.png" alt-text="Shopping and coupons" lightbox="./media/whitepaper-media/shopping.png":::
    Shopping and coupons  
@@ -383,7 +383,7 @@ When you're applying coupons, cookies will be stored on your device to correctly
 
 To help you find the best price while shopping online and using Collections, Microsoft Edge determines locally if the page or collection item you're viewing is a product detail page.  If you're looking at a product detail page, Microsoft Edge sends the details of the product to the shopping service, including the URL scrubbed of personally identifiable information, price, product image, product name, ratings, and reviews, along with info about Microsoft Edge and your operating system version.  This data is sent over HTTPS with a randomly generated identifier.  The Microsoft shopping service will return prices from other retailers for the product you're viewing.  
 
-The shopping service is turned on by default for all users.  You can turn off shopping in Microsoft Edge by going to `edge://settings/privacy` and turning off **Save time and money with Shopping in Microsoft Edge**.  InPrivate browsing uses the shopping setting of the profile from which the InPrivate session was launched.  
+The shopping service is turned on by default for all users.  To change the shopping setting in Microsoft Edge, navigate to `edge://settings/privacy`, and then turn off **Save time and money with Shopping in Microsoft Edge**.  InPrivate browsing uses the shopping setting of the profile that launched the InPrivate session.  
 
 ## Sign in and Identity  
 
