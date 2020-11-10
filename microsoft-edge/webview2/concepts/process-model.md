@@ -1,9 +1,9 @@
 ---
 description: Process model
-title: Process model
+title: Process model | WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/05/2020
+ms.date: 11/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -28,21 +28,34 @@ One browser process is associated with the renderer processes and other utility 
    Process 1  
 :::image-end:::  
 
-One browser process is specified per user data folder.  Any later request process that specifies the same user data folder uses the same browser process. If a request process specifies a different user data folder, it runs under the browser process for the other user data folder.  In summary, one browser process may be serving multiple request processes and one request process may be using multiple browser processes.  
+A browser process is associated with only one user data folder.  A request process may specify more than one user data folder.  A request process that specifies more than one user data folder is associated with the same number of browser processes.  
+For example, a request process that requests access to two user data folders uses two browser processes.  
 
 :::image type="complex" source="../media/process-model-2.png" alt-text="Process 2" lightbox="../media/process-model-2.png":::
    Process 2  
 :::image-end:::  
 
-A browser process has some number of associated renderer processes.  The browser processes are created as required to service potentially multiple frames in different instances of WebView2.  The number of renderer processes varies based on the website isolation browser feature and the number of distinct disconnected origins rendered in associated instances of WebView2.  The website isolation browser feature is described in the previous content.  
+A browser process is associated with several renderer processes.  A WebView 2 instance creates a browser process to service frames.  A browser process may be associated with multiple frames.  A browser process may be associated with different instances of WebView2.  The number of render processes varies based on the following conditions.  
+
+*   Use of the website isolation feature in your browser.  
+*   The number of distinct disconnected origins rendered in associated instances of WebView2.  
+
+The website isolation browser feature is described in the previous content. 
+<!--todo:  which previous content?  -->  
+ 
 
 The `CoreWebView2Environment` represents a user data folder and browser process.  The `CoreWebView2` does not directly correspond to any one set of processes since various renderer processes are used by a WebView2 depending on website isolation as previously described.  
 
-React to crashes and hangs in the browser and renderer processes using the `ProcessFailed` event of `CoreWebView2`.  
+To react to crashes and hangs in the browser and renderer processes, use the `ProcessFailed` event of `CoreWebView2`.  
 
-Safely shut down associated browser and renderer processes using the `Close` method of `CoreWebView2Controller`.  
+To safely shut down associated browser and renderer processes, use the `Close` method of `CoreWebView2Controller`.  
 
-To open the Browser Task Manager window from the **DevTools** window of a WebView2 instance, you may select `Shift`+`Escape` or hover on the DevTools window title bar, open the contextual menu \(right-click\), and choose `Browser task manager`.  All processes associated with the browser process of your WebView2 are displayed including associated purposes.  
+To open the Browser Task Manager window from the **DevTools** window of a WebView2 instance, complete on of the following actions.  
+
+*   Select `Shift`+`Escape`.  
+*   Hover on the DevTools window title bar, open the contextual menu \(right-click\), and choose `Browser task manager`.  
+
+All processes associated with the browser process of your WebView2 are displayed including associated purposes.  
 
 ## See also  
 

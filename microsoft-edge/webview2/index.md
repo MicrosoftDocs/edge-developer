@@ -3,7 +3,7 @@ description: Host web content in your Win32, .NET, UWP apps with the Microsoft E
 title: Microsoft Edge WebView2 Control
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/05/2020
+ms.date: 11/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -11,7 +11,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 ---
 # Introduction to Microsoft Edge WebView2  
 
-The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML, CSS, and JavaScript\) in your native apps.  The WebView2 control uses [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native apps.  With WebView2, you may embed web code in different parts of your native app.  You may also build the entire native app within a single WebView instance.  For information on how to start building a WebView2 app, navigate to [Get Started](#getting-started).  
+The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML, CSS, and JavaScript\) in your native apps.  The WebView2 control uses [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native apps.  With WebView2, you may embed web code in different parts of your native app.  Build all of the native app within a single WebView instance.  For information on how to start building a WebView2 app, navigate to [Get Started](#getting-started).  
 
 :::image type="complex" source="./media/WebView2/whatwebview.png" alt-text="What is WebView?" lightbox="./media/WebView2/whatwebview.png":::
    What is WebView?  
@@ -19,7 +19,7 @@ The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML
 
 ## Hybrid app approach  
 
-Developers often have to decide between building a web app or a native app.  The decision hinges on the trade-off between reach and power.  Web apps allow for a broad reach.  As a Web developer, you may reuse most, if not all of your code, across all different platforms.  Native apps, however, use the capabilities of the entire native platform.  
+Developers must often decide between building a web app or a native app.  The decision hinges on the trade-off between reach and power.  Web apps allow for a broad reach.  As a Web developer, you may reuse most of your code across different platforms.  To access the all capabilities of a native platform, use a native app.  
 
 :::image type="complex" source="./media/WebView2/webnative.png" alt-text="Web native" lightbox="./media/WebView2/webnative.png":::
    Web native  
@@ -52,7 +52,7 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
    :::column span="1":::
       :::image type="icon" source="./media/webview-reasons-windows-7-8-10-support.msft.png":::  
       **Windows 7, 8, and 10 support**  
-      Support for a consistent user experience across Windows 7, 8, and 10.  
+      Support for a consistent user experience across Windows 7, Windows 8, and Windows 10.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -69,7 +69,7 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
    :::column span="1":::
       :::image type="icon" source="./media/webview-reasons-microsoft-support.msft.png":::  
       **Microsoft support**  
-      Microsoft provides support and adds new feature requests when WebView2 releases at GA.  
+      Microsoft provides support and adds new feature requests when WebView2 releases at Generally Availability \(GA\).  
    :::column-end:::
 :::row-end:::  
 :::row:::

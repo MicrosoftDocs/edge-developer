@@ -1,9 +1,9 @@
 ---
 description: Threading model
-title: Threading model
+title: Threading model | WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/05/2020
+ms.date: 11/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -24,23 +24,24 @@ The WebView2 control is based on the [Component Object Model (COM)][WindowsWin32
 
 ## Thread safety  
 
-The WebView2 must be created on a UI thread.  Specifically a thread with a message pump.  All callbacks occur on that thread and requests into the WebView2 must be done on that thread.  It is not safe to use the WebView2 from another thread.  
+The WebView2 must be created on a UI thread.  Specifically, a thread with a message pump.  All callbacks occur on that thread and requests into the WebView2 must be done on that thread.  It is not safe to use the WebView2 from another thread.  
 
 The only exception is for the `Content` property of `CoreWebView2WebResourceRequest`.  The `Content` property stream is read from a background thread.  The stream should be agile or be created from a background STA to prevent performance impact to the UI thread.  
 
 ## Re-entrancy  
 
-Callbacks including event handlers and completion handlers run serially.  If you run an event handler and begin a message loop, all other event handlers or completion callbacks are unable to run in a re-entrant manner.  
+Callbacks including event handlers and completion handlers run serially.  
+After you run an event handler and begin a message loop, you are unable to run any event handler or completion callback in a re-entrant manner.  
 
 ## Deferrals  
 
-Some WebView2 events read values set on the related event args or start some action after the event handler completes.  If you also need to run an asynchronous operation such an event handler, use the `GetDeferral` method on the event args of the associated events.  The returned `Deferral` object ensures the event handler is not considered complete until the `Complete` method of the `Deferral` is requested.  
+Some WebView2 events read values set on the related event arguments or start some action after the event handler completes.  If you also need to run an asynchronous operation such an event handler, use the `GetDeferral` method on the event arguments of the associated events.  The returned `Deferral` object ensures the event handler is not considered complete until the `Complete` method of the `Deferral` is requested.  
 
 For instance, you may use the `NewWindowRequested` event to provide a `CoreWebView2` to connect as a child window when the event handler completes.  But if you need to asynchronously create the `CoreWebView2`, request the `GetDeferral` method on the `NewWindowRequestedEventArgs`.  After you have asynchronously created the `CoreWebView2` and set the `NewWindow` property on the `NewWindowRequestedEventArgs`, request `Complete` on the `Deferral` object be returned using the `GetDeferral` method.  
 
 ## See also  
 
-*   To Get Started using WebView2, navigate to [WebView2 Getting Started Guides][Webview2IndexGettingStarted] guides.  
+*   To get started using WebView2, navigate to [WebView2 Getting Started Guides][Webview2IndexGettingStarted] guides.  
 *   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] on GitHub.  
 *   For more detailed information about WebView2 APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2WpfWebview2].  
 *   For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].  

@@ -3,7 +3,7 @@ description: Win32 C++ WebView2 API Conventions
 title: Win32 C++ WebView2 API Conventions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/05/2020
+ms.date: 11/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -34,7 +34,7 @@ Asynchronous methods in the WebView2 Win32 C++ API use a delegate interface to c
 
 The final parameter for all asynchronous methods is a pointer to a delegate interface of which you provide an implementation.  
 
-The delegate interface has a single `Invoke` method that takes as a first parameter an `HRESULT` of the success or failure code.  Additionally there may be a second parameter that is the result of the method if the method has a result.  For example, the [ICoreWebView2::CapturePreview][Webview2ReferenceWin32Icorewebview2CapturePreview] method takes as the final parameter an `ICoreWebView2CapturePreviewCompletedHandler` pointer.  To send a `CapturePreview` method request, you provide an instance of the `ICoreWebView2CapturePreviewCompletedHandler` pointer that you implement.  The following code snippet uses one method to implement.  
+The delegate interface has a single `Invoke` method that takes as a first parameter an `HRESULT` of the success or failure code.  Additionally, there may be a second parameter that is the result of the method if the method has a result.  For example, the [ICoreWebView2::CapturePreview][Webview2ReferenceWin32Icorewebview2CapturePreview] method takes as the final parameter an `ICoreWebView2CapturePreviewCompletedHandler` pointer.  To send a `CapturePreview` method request, you provide an instance of the `ICoreWebView2CapturePreviewCompletedHandler` pointer that you implement.  The following code snippet uses one method to implement.  
 
 ```cpp
 HRESULT Invoke(HRESULT result)
@@ -44,7 +44,7 @@ You implement the `Invoke` method and `CoreWebView2` requests your `Invoke` meth
 
 Alternately, for `ICoreWebView2::ExecuteScript`, you provide an instance that has an `Invoke` method that provides you with the success or failure code of the `ExecuteScript` request.  Also provide the second parameter that is the JSON of the result of running the script.  
 
-You may manually implement the `CompleteHandler` delegate interfaces, or you may use the [Callback function (WRL)][CppCxWrlCallbackFunction].  The Callback function is used throughout the following WebView2 code snippet.  
+You may manually implement the `CompleteHandler` delegate interfaces, or you may use the [Callback function (WRL)][CppCxWrlCallbackFunction].  The [Callback function (WRL)][CppCxWrlCallbackFunction] is used throughout the following WebView2 code snippet.  
 
 ```cpp
 void ScriptComponent::InjectScript()
@@ -73,15 +73,18 @@ void ScriptComponent::InjectScript()
 
 ## Events  
 
-Events in the WebView2 Win32 C++ API use the `add_EventName` and `remove_EventName` method pair to subscribe and unsubscribe from events.  The `add_EventName` method takes an event handler delegate interface and gives back an `EventRegistrationToken` as an output parameter.  The `remove_EventName` method takes an `EventRegistrationToken` and unsubscribes the corresponding event subscription.  
+Events in the WebView2 Win32 C++ API use the `add_EventName` and `remove_EventName` method pair to subscribe and unsubscribe from events.  The `add_EventName` method takes an event handler delegate interface and gives back an `EventRegistrationToken` token as an output parameter.  The `remove_EventName` method takes an `EventRegistrationToken` token and unsubscribes the corresponding event subscription.  
 
-Event handler delegate interfaces work similarly to the async method completed handler delegate interfaces.  You implement the event handler delegate interface and `CoreWebView2` sends a callback whenever the event fires.  Every event handler delegate interface has a single `Invoke` method that has a sender parameter followed by an event args parameter.  The sender is the instance of the object on which you subscribed for events.  The event args parameter is an interface that contains information about the currently firing event.  
+Event handler delegate interfaces work similarly to the async method completed handler delegate interfaces.  You implement the event handler delegate interface and `CoreWebView2` sends a callback whenever the event runs.  Every event handler delegate interface has a single `Invoke` method that has a sender parameter followed by an event args parameter.  The sender is the instance of the object on which you subscribed for events.  The event args parameter is an interface that contains information about the currently firing event.  
 
-For instance, the `NavigationCompleted` event on `ICoreWebView2` has the `ICoreWebView2::add_NavigationCompleted` and `ICoreWebView2::remove_NavigationCompleted` method pair.  When you send a request, you provide an instance of `ICoreWebView2NavigationCompletedEventHandler` in which you previously implemented `Invoke` method.  When the `NavigationCompleted` event fires, your `Invoke` method is requested.  The first parameter runs the `NavigationCompleted` event.  The second parameter contains information about if the navigation completed successfully and so on.  
+For instance, the `NavigationCompleted` event on `ICoreWebView2` has the `ICoreWebView2::add_NavigationCompleted` and `ICoreWebView2::remove_NavigationCompleted` method pair.  When you send a request, you provide an instance of `ICoreWebView2NavigationCompletedEventHandler` in which you previously implemented `Invoke` method.  When the `NavigationCompleted` event runs, your `Invoke` method is requested.  The first parameter runs the `NavigationCompleted` event.  The second parameter contains information about if the navigation completed successfully and so on.  
 
-Similar to the async method completed handler delegate interface, you may implement it yourself directly, or you may use the WRL Callback function that is used in the following WebView2 code snippet.  
+Similar to the async method completed handler delegate interface, use one of the following actions to set it up.  
 
-<!-- todo: what is async method completed handler delegate interface?  -->  
+*   Implement it directly.  
+*   Use the [Callback function (WRL)][CppCxWrlCallbackFunction] function that is used in the following WebView2 code snippet.  
+
+<!-- todo:  what is async method completed handler delegate interface?  Is there a shorter name for it?  -->  
 
 ```cpp
 // Register a handler for the NavigationCompleted event.
@@ -132,7 +135,7 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 ## See also  
 
-*   To Get Started using WebView2 Win32 C/C++, navigate to [Getting started with WebView2][Webview2IndexGettingStarted] guides.  
+*   To get started using WebView2 Win32 C/C++, navigate to [Getting started with WebView2][Webview2IndexGettingStarted] guides.  
 *   For more detailed information about WebView2 APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2WpfWebview2].  
 
 ## Getting in touch with the Microsoft Edge WebView team  

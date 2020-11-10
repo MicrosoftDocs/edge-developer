@@ -1,9 +1,9 @@
 ---
 description: Navigation
-title: Navigation
+title: Navigation | WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/05/2020
+ms.date: 11/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -48,7 +48,7 @@ The normal sequence of navigation events is `NavigationStarting`, `SourceChanged
 
 Track navigation events to each new document using the navigation ID \(`NavigationId` event\).  The `NavigationId` event of WebView changes every time a successful navigation to a new document completes.  
 
- Navigation events with different instances of `NavigationId` event may overlap.  For instance, when you start a navigation event, you have to wait for the related `NavigationStarting` event.  If you then start another navigation, you should see the `NavigationStarting` event for the first navigate followed by the `NavigationStarting` event for the second navigate, followed by the `NavigationCompleted` event for the first navigation and then all the rest of the appropriate navigation events for the second navigation.  
+ Navigation events with different instances of `NavigationId` event may overlap.  For instance, when you start a navigation event, you must wait for the related `NavigationStarting` event.  If you then start another navigation, you should see the `NavigationStarting` event for the first navigate followed by the `NavigationStarting` event for the second navigate, followed by the `NavigationCompleted` event for the first navigation and then all the rest of the appropriate navigation events for the second navigation.  
  
  In error cases, there may or may not be a `ContentLoading` event depending on whether the navigation is continued to an error page.  
  
@@ -60,7 +60,7 @@ To monitor or cancel navigation events inside subframes in a WebView2 instance, 
 
 ## See also  
 
-*   To Get Started using WebView2, navigate to [WebView2 Getting Started Guides][Webview2IndexGettingStarted] guides.  
+*   To get started using WebView2, navigate to [WebView2 Getting Started Guides][Webview2IndexGettingStarted] guides.  
 *   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] on GitHub.  
 *   For more detailed information about WebView2 APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2WpfWebview2].  
 *   For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].  
