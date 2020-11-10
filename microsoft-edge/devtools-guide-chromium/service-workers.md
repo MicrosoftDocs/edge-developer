@@ -11,13 +11,13 @@ keywords: microsoft edge, web development, f12 tools, devtools, service worker, 
 # Service Worker Improvements  
 Learn more about your [service workers][MDNServiceWorkerAPI] and the network requests that pass through them with our **service worker improvements** in the **Network**, **Application**, and **Sources** panes. With these changes, you can do the following tasks.
 
-+ Debug based on Service Worker timelines.
++ Debug based on Service Worker timelines:
 
    startup of a request and how long the bootstrap took
 
    service worker registration updates
 
-   fetch event handler execution of a request
+   [fetch event][MDNFetchEventAPI] handler execution of a request
 
    all the fetch events executed for loading a client.
 + Explore the execution details of fetch event handlers, install event handlers, and activate event handlers.
@@ -72,3 +72,4 @@ The Microsoft Edge Devtools team is working on adding more functionality for you
 <!-- links -->  
 [MDNServiceWorkerAPI]: https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API "service workers | MDN"  
 [MDNPWA]: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps "progressive web applications (PWA) | MDN"  
+[MDNFetchEventAPI]: https://developer.mozilla.org/en-US/docs/Web/API/FetchEvent
