@@ -3,7 +3,7 @@ description: Automate and test the WebView2 Control using Microsoft Edge Driver
 title: Automating and Testing WebView2 with Microsoft Edge Driver
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2020
+ms.date: 11/10/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -16,9 +16,9 @@ Because WebView2 utilizes the Chromium web platform, WebView2 developers can tak
 
 Here's how to get started:
 
-## Step 1: Download WebView2API Sample
+## Step 1: Download WebView2API Sample  
 
-If you do not have an existing WebView2 project, download our [WebView2API Sample application](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample#webview2-api-sample), a comprehensive sample of the latest WebView2 SDK. Please double check that you have satisfied these [prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/WebView2APISample#prerequisites).
+If you do not have an existing WebView2 project, download our [WebView2API Sample application](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample), a comprehensive sample of the latest WebView2 SDK.  Please double check that you have satisfied these [prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#prerequisites).  
 
 Once you have cloned the repo, build the project in Visual Studio. It should look like the following:
 
