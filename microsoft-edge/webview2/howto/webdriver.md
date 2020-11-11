@@ -96,7 +96,7 @@ At this point you should have Microsoft Edge installed, built a WebView2 project
         EdgeOptions edgeOptions = new EdgeOptions(false, "webview2");
     ```  
     
-    The `EdgeOptions` object takes in following two parameters.  
+    The `EdgeOptions` object takes in the following two parameters.  
     
     | Parameter | Details |    
     |:--- |:--- |  
