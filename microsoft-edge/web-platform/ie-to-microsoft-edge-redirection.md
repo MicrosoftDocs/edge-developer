@@ -2,12 +2,12 @@
 description: Moving users to Microsoft Edge from Internet Explorer 
 title: Moving users to Microsoft Edge from Internet Explorer
 author: MSEdgeTeam
-ms.date: 11/06/2020
+ms.date: 11/12/2020
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, internet explorer
 ---
-# Moving users to Microsoft Edge from Internet Explorer 
+# Moving users to Microsoft Edge from Internet Explorer  
 
 Many modern websites have designs that are incompatible with Internet Explorer \(IE\).  When an IE user visits an incompatible public website, the user may get a message.  The message states that the website is incompatible with the browser.  After the message is displayed, the user is expected to manually switch to a modern browser.  To minimize disruptions, starting with version 84, Microsoft Edge supports a new capability that automatically redirects users.  When an IE user navigates to a website that is incompatible with IE, Windows automatically redirects the user to Microsoft Edge.  To review the websites on the list, navigate to [Need Microsoft Edge list][MicrosoftEdgeNeededgeV1].
 
@@ -17,7 +17,7 @@ This article describes the following concepts.
 *   The user experience for redirection  
 *   Request an update to the list  
     
-## Why a website is added to the IE compatibility list?  
+## Why is a website added to the IE compatibility list?  
 
 The IE compatibility List only adds a website when the following actions occur.  
 
@@ -26,26 +26,53 @@ The IE compatibility List only adds a website when the following actions occur.
 
 ## Redirection experience
 
-On redirection to Microsoft Edge, users are shown the one-time dialog in the next screenshot. This dialog explains why they're getting redirected and prompts for consent to copy their browsing data and preferences from Internet Explorer to Microsoft Edge. The following browsing data will be imported: Favorites, Passwords, Search engines, open tabs, History, settings, cookies, and the Home Page.
+On redirection to Microsoft Edge, the user is shown the one-time dialog in the next screenshot.  The dialog provides the user with the following information.  
 
-![Browsing notification and prompt to import data and preferences.](media/edge-learnmore-neededge/neededge-dialog1.png)
+*   It explains why the website is being redirected.  
+*   It prompts the user for consent to copy browsing data and preferences from IE to Microsoft Edge.  
 
-Even if they don't give their consent by checking "Always bring over my browsing data and preferences from Internet Explorer", they can click **Continue browsing** to continue their session.
+:::row:::
+   :::column span="":::
+      The following browsing data is imported.  
+      
+      *   Favorites  
+      *   Passwords  
+      *   Search engines  
+      *   Open tabs  
+      *   History  
+      *   Settings  
+      *   Cookies  
+      *   The Home Page  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/neededge-dialog1.msft.png" alt-text="Browsing notification and prompt to import data and preferences" lightbox="../media/neededge-dialog1.msft.png":::
+         Browsing notification and prompt to import data and preferences  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::
 
-Finally, a website incompatibility banner, shown in the next screenshot, appears below the address bar for every redirection.
+If the user does not consent by choosing the **Always bring over my browsing data and preferences from Internet Explorer** checkbox, the user may choose **Continue browsing** to continue the browsing session.  
 
-![Notification about modern sites and prompt to set Microsoft Edge as default browser or explore Microsoft Edge.](media/edge-learnmore-neededge/neededge-banner.png)
+Finally, a website incompatibility banner is displayed under the address bar for each redirection.  An example of a website incompatibility banner is displayed in following figure.
 
-The website incompatibility banner:
+:::image type="complex" source="../media/neededge-banner.msft.png" alt-text="Notification about modern sites and prompt to set Microsoft Edge as default browser or explore Microsoft Edge" lightbox="../media/neededge-banner.msft.png":::
+   Notification about modern sites and prompt to set Microsoft Edge as default browser or explore Microsoft Edge  
+:::image-end:::
 
-- encourages the user to switch to Microsoft Edge
-- offers to make Microsoft Edge as the default browser
-- gives the user the option to explore Microsoft Edge
+The website incompatibility banner provides the following details to the user.  
 
-When a site is redirected from Internet Explorer to Microsoft Edge, the Internet Explorer tab that started loading the site is closed if it had no prior content. Otherwise, the active tab view goes to a  Microsoft [support](https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554?ui=en-US&rs=en-US&ad=US) page that explains why the site was redirected to Microsoft Edge.
+*   Recommends that the user to switch to Microsoft Edge.  
+*   Offers to set Microsoft Edge as the default browser.  
+*   Gives the user the option to explore Microsoft Edge.    
+    
+When a website is redirected from Internet Explorer to Microsoft Edge, one of the following actions occurs.
+
+*   If the active IE tab had no prior content, it is closed.  
+*   If the active IE tab had prior content, it navigates to the [Microsoft support page that explains why the website was redirected to Microsoft Edge][MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer].  
 
 > [!NOTE]
 > After 
+<!--todo:  Is there more content for this note?  -->  
 
 ## Request an update to the IE compatibility list  
 
@@ -70,3 +97,5 @@ Email the following information to [ietoedge@microsoft.com][MailtoMicrosoftIetoe
 [MicrosoftOfficialHome]: https://www.microsoft.com "Microsoft Official Home"  
 
 [MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Need Microsoft Edge list v1 xml | Microsoft Edge"  
+
+[MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]: https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554?ui=en-US&rs=en-US&ad=US "The website you were trying to reach doesn't work with Internet Explorer | Microsoft Office Support"  
