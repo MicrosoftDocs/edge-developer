@@ -13,17 +13,41 @@ Many modern websites have designs that are incompatible with Internet Explorer \
 
 This article describes the following concepts.  
 
+*   Why a website is added to the list  
 *   The user experience for redirection  
-*   How to request an update to the list  
+*   Request an update to the list  
     
-## Why is a website added to the IE compatibility list?  
+## Why a website is added to the IE compatibility list?  
 
 The IE compatibility List only adds a website when the following actions occur.  
 
 *   Shows an IE user a message suggesting the user should use a different browser for compatibility reasons.  
 *   Owner requests to add the website to the IE compatibility list.  
-    
-## Update the IE compatibility list  
+
+## Redirection experience
+
+On redirection to Microsoft Edge, users are shown the one-time dialog in the next screenshot. This dialog explains why they're getting redirected and prompts for consent to copy their browsing data and preferences from Internet Explorer to Microsoft Edge. The following browsing data will be imported: Favorites, Passwords, Search engines, open tabs, History, settings, cookies, and the Home Page.
+
+![Browsing notification and prompt to import data and preferences.](media/edge-learnmore-neededge/neededge-dialog1.png)
+
+Even if they don't give their consent by checking "Always bring over my browsing data and preferences from Internet Explorer", they can click **Continue browsing** to continue their session.
+
+Finally, a website incompatibility banner, shown in the next screenshot, appears below the address bar for every redirection.
+
+![Notification about modern sites and prompt to set Microsoft Edge as default browser or explore Microsoft Edge.](media/edge-learnmore-neededge/neededge-banner.png)
+
+The website incompatibility banner:
+
+- encourages the user to switch to Microsoft Edge
+- offers to make Microsoft Edge as the default browser
+- gives the user the option to explore Microsoft Edge
+
+When a site is redirected from Internet Explorer to Microsoft Edge, the Internet Explorer tab that started loading the site is closed if it had no prior content. Otherwise, the active tab view goes to a  Microsoft [support](https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554?ui=en-US&rs=en-US&ad=US) page that explains why the site was redirected to Microsoft Edge.
+
+> [!NOTE]
+> After 
+
+## Request an update to the IE compatibility list  
 
 The IE compatibility list is an XML file on [microsoft.com][MicrosoftOfficialHome].  The list is regularly updated in response to user and website developer requests to have websites added or removed.  Updates to the list are automatically downloaded to user machines.  
 
