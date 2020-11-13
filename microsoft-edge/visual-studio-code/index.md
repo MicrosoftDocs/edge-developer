@@ -3,7 +3,7 @@ description: Microsoft Edge (Chromium) and Visual Studio Code
 title: Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/06/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger, webhint
@@ -66,9 +66,9 @@ With the [Microsoft Edge Tools for Visual Studio Code][VisualstudioMarketplaceMi
 *   Update the layout.  
 *   Fix styling issues.  
     
-For more information, navigate to [Microsoft Edge Tools for Visual Studio Code Visual Studio Code extension][VisualStudioCodeMicrosoftEdgeDevtoolsExtension].  Choose the following image to see the extension in action.  
+For more information, navigate to [Microsoft Edge Tools for Visual Studio Code Visual Studio Code extension][VisualStudioCodeMicrosoftEdgeDevtoolsExtension].  <!--Choose the following image to see the extension in action.  -->  
       
-:::image type="content" source="./media/elements-for-edge.png" alt-text="Microsoft Edge Tools for Visual Studio Code Visual Studio Code extension in action" lightbox="./media/elements-for-edge.gif":::  
+:::image type="content" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="Microsoft Edge Tools for Visual Studio Code Visual Studio Code extension in action" lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::  
    **Microsoft Edge Tools for Visual Studio Code** Visual Studio Code extension in action
 :::image-end:::  
 
