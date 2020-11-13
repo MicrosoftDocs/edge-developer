@@ -101,13 +101,15 @@ You are able to run WebView2 applications on the following versions of Windows.
 
 *   Windows 10  
 *   Windows 8.1  
-*   Windows 8  
-*   Windows 7  
+*   Windows 7**  
 *   Windows Server 2019  
 *   Windows Server 2016  
 *   Windows Server 2012  
 *   Windows Server 2012R2  
-*   Windows Server 2008 R2  
+*   Windows Server 2008 R2**  
+
+> [!IMPORTANT]
+> WebView2 support for Windows 7 and Windows Server 2008 R2 will follow the same support cycle as Microsoft Edge browser. Navigate to [here][EdgeOSSupport] for more details.   
 
 ## Next steps  
 
@@ -152,3 +154,5 @@ For more information on how to build and deploy WebView2 applications, review th
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider"  
 
 [NugetPackagesMicrosoftWebWebView2]: https://www.nuget.org/packages/Microsoft.Web.WebView2 "Microsoft.Web.WebView2 | NuGet Gallery"  
+
+[EdgeOSSupport]: https://docs.microsoft.com/deployedge/microsoft-edge-supported-operating-systems "Microsoft Edge supported Operating Systems"  
