@@ -142,9 +142,9 @@ Compared to the Evergreen Runtime, Fixed Version does not have an installation p
     ```
 *   PlayReady should be working now on end user device. In the Fixed Version folder's Security tab, it should include permissions for `ALL APPLICATION PACKAGES` and `ALL RESTRICTED APPLICATION PACKAGES`.
 
-        :::image type="complex" source="../media/PlayReadyPermission.png" alt-text="Permission for PlayReady" lightbox="../media/PlayReadyPermission.png":::
-            Permission for PlayReady
-        :::image-end:::  
+    :::image type="complex" source="../media/PlayReadyPermission.png" alt-text="Permission for PlayReady" lightbox="../media/PlayReadyPermission.png":::
+        Permission for PlayReady
+    :::image-end:::  
 
 <!-- links -->  
 
