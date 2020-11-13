@@ -1,10 +1,10 @@
 ---
 ms.assetid: 1b3ebc25-d023-4f23-bbba-dce066c20de8
 description: Walk through how best practices and Accessible Rich Internet Applications (ARIA) can come together to create an accessible website.
-title: Accessibility - Build
+title: Build | Accessibility
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
+ms.date: 11/13/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
@@ -52,32 +52,43 @@ Go to [The Roles Model](https://www.w3.org/TR/wai-aria-1.1/#roles) by the W3C to
 
 For more information on ARIA, see the ARIA in the [Resources](#resources) section.
 
-## Assistive Technology Compatibility Testing
-Verifying that the website you're building works with real assistive technologies is the best way to ensure a good experience for your users with disabilities. Since many assistive technologies make use of the keyboard, testing your website's keyboard accessibility is a good place to start. [Keyboard compatibility testing](https://www.w3.org/WAI/perspective-videos/keyboard/) checks to make sure that users can access all interactive controls without a mouse. Microsoft [Accessibility Insights for Web](https://accessibilityinsights.io/docs/en/web/overview/) is a browser extension for Microsoft Edge and Chrome that can guide you and catch several common issues.
+## Assistive Technology Compatibility Testing  
 
-Once you're confident your website works well with keyboard, try it with other assistive technologies, like screen readers. This can uncover issues in your HTML, ARIA, and CSS usage or an assistive technology's level of support for a feature or technique. Similarly, different browsers may map elements to platform accessibility APIs differently than Microsoft Edge, so it's important to consider them as well while building your interface.
+Verifying that the website you are building works with real assistive technologies is the best way to ensure a good experience for your users with disabilities.  Since many assistive technologies make use of the keyboard, testing the keyboard accessibility of your website is a good place to start.  [Keyboard compatibility testing][W3cPerspectiveVideosKeyboard] validates that users have access to all interactive controls without requiring a mouse.  Microsoft [Accessibility Insights for Web][AccessibilityinsightsWebOverview] is a browser extension for Microsoft Edge and Chrome that guides you and reveals several common issues.  
 
-WebAIM conducts surveys with [screen reader](https://webaim.org/projects/screenreadersurvey8/) and [low vision](https://webaim.org/projects/lowvisionsurvey2/) users that can help you decide what assistive technologies and browsers you want to test with.
+Once you are confident that your website works well with a keyboard, try it with other assistive technologies, such as screen readers.  It uncover issues in the following.
 
-### Learning How to Test
-Assistive technologies are sophisticated tools. Don't assume you can immediately start testing with an assistive technology without learning about how it works first. Learning to test with a screen reader can be an especially steep learning curve — a novice screen reader user may think they're encoutering a screen reader bug when they're actually misusing the screen reader.
+*   Your HTML, ARIA, and CSS.  
+*   The level of support of an assistive technology for a feature or technique.  
+    
+Different browsers may map elements to platform accessibility APIs differently than Microsoft Edge.  While building your interface, it is important to consider each difference.  
 
-For more information on learning to test with assistive technologies, check out [Testing with Screen Readers](https://webaim.org/articles/screenreader_testing/) by WebAIM.
+WebAIM conducts surveys with [screen reader][WebaimProjectsScreenreadersurvey8] and [low vision][WebaimProjectsLowvisionsurvey2] users that help you decide which assistive technologies and browsers you want to test.  
 
-### Testing Locally
-Most devices you already own include assistive technology that's built-in to the OS. Windows includes the [Windows Narrator](https://support.microsoft.com/help/22798/windows-10-narrator-get-started) screen reader and [Windows Magnifier](https://support.microsoft.com/en-us/windows/use-magnifier-to-make-things-on-the-screen-easier-to-see-414948ba-8b1c-d3bd-8615-0e5e32204198). 3rd party assistive technologies like [NVDA](https://www.nvaccess.org/about-nvda/), [JAWS](https://www.freedomscientific.com/products/software/jaws/), and [ZoomText](https://www.freedomscientific.com/products/software/zoomtext/) are available to download. MacOS includes the [VoiceOver](https://www.apple.com/accessibility/mac/vision/) screen reader, and iOS, Android, and Linux all support a variety of assistive technologies.
+### Learning How to Test  
 
-### Testing in Virtual Machines and Emulators
-If you are on a Mac and want to test with an assistive technology only available for Windows, like Windows Narrator or NVDA, you can create a Windows virtual machine. Virtual machines with Microsoft Edge (EdgeHTML) and IE are available for VirtualBox and VMWare on the [download page](https://developer.microsoft.com/microsoft-edge/tools/vms).
+Assistive technologies are sophisticated tools.  Do not assume that you are able to immediately start testing with an assistive technology without first learning about how it works.  Learning to test with a screen reader has an especially steep learning curve.  A novice screen reader user may assume that a screen reader bug has occurred while the issue is related to misuse of the screen reader.  
 
-[Android Studio](https://developer.android.com/sdk/installing/studio.html) includes an emulator that can be used to test assistive technologies in the [Android Accessibility Suite](https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback). Follow the instructions to [set up a virtual device](https://developer.android.com/tools/devices/managing-avds.html) and [start the emulator](https://developer.android.com/tools/devices/emulator.html), then install Android Accessibility Suite from the Google Play store.
+For more information about learning to test with assistive technologies, navigate to [Testing with Screen Readers][WebaimArticlesScreenreaderTesting] on WebAIM.  
 
-Note that the iOS Simulator does not currently include VoiceOver.
+### Testing Locally  
 
-### Cloud-based Testing Tools
-If an assistive technology is not available on your OS or not possible to install on a virtual machine or emulator, cloud-based assistive technology testing tools are the next best thing.
+Most devices include assistive technology that is built-in to the OS.  Microsoft Windows includes the [Windows Narrator][MicrosoftSupport22798] screen reader and [Windows Magnifier][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198].  3rd party assistive technologies like [NVDA][NvaccessAboutNvda], [FreedomscientificSoftwareJaws], and [ZoomText][FreedomscientificSoftwareZoomtext] are available to download.  Apple macOS includes the [VoiceOver][AppleAccessibilityMacVision] screen reader.  And iOS, Android, and Linux all support a variety of assistive technologies.  
 
-*   [Assistiv Labs (commercial)](https://assistivlabs.com) allows you to manually test with assistive technologies through any modern web browser. You select an assistive technology and browser and it connects you with a virtual machine, emulator, or real device with which you may interact.
+### Testing in Virtual Machines and Emulators  
+
+Under macOS, if you want to test with an assistive technology only available for Windows, like Windows Narrator or NVDA, create a Windows virtual machine.  Virtual machines with Microsoft Edge \(EdgeHTML\) and IE are available for VirtualBox and VMWare on the [Virtual Machines download page][MicrosoftDeveloperEdgeVms].  
+
+[Android Studio][AndroidDeveloperSdkInstallingStudioHtml] includes an emulator that for you to test assistive technologies in the [Android Accessibility Suite][GooglePlayStoreAndroidAccessibilitySuite].  Follow the instructions to [set up a virtual device][AndroidDeveloperDevicesManagingAvdsHtml] and [start the emulator][AndroidDeveloperDevicesEmulatorHtml], then install [Android Accessibility Suite][GooglePlayStoreAndroidAccessibilitySuite] from the GooglePlay store.  
+
+> [!NOTE]
+> The iOS Simulator does not currently include VoiceOver.  
+
+### Cloud-based Testing Tools  
+
+If an assistive technology is not available on your OS or you not possible to install one on a virtual machine or emulator, cloud-based assistive technology testing tools are the next best thing.  
+
+*   [Assistiv Labs (commercial)][AssistivlabsMain] enables you to manually test with assistive technologies through any modern web browser.  Choose an assistive technology and browser and it connects you with a virtual machine, emulator, or real device with which you may interact.  
 
 ## Resources
 
@@ -163,3 +174,35 @@ A list of web accessibility evaluation tools to help determine if websites meet 
 
 #### [Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone](https://w3.org/WAI/perspectives/)
 A series of short situational videos by the W3C about the impact of accessibility and the benefits for everyone.
+
+<!-- links -->  
+
+<!--todo: link updates and acrolinx  -->  
+
+[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Virtual Machines | Microsoft Edge Developer"  
+
+[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "Complete guide to Narrator | Microsoft Support"  
+[MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]: https://support.microsoft.com/windows/414948ba-8b1c-d3bd-8615-0e5e32204198 "Use Magnifier to make things on the screen easier to see | Microsoft Support"  
+
+[AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "Accessibility Insights for Web | Accessibility Insights"  
+
+[AndroidDeveloperDevicesManagingAvdsHtml]: https://developer.android.com/tools/devices/managing-avds.html "Create and manage virtual devices | Android Developers"  
+[AndroidDeveloperDevicesEmulatorHtml]: https://developer.android.com/tools/devices/emulator.html "Run apps on the Android Emulator | Android Developers"  
+[AndroidDeveloperSdkInstallingStudioHtml]: https://developer.android.com/sdk/installing/studio.html "Download Android Studio | Android Developers"  
+
+[AppleAccessibilityMacVision]: https://www.apple.com/accessibility/mac/vision "Vision Accessibility - Mac | Apple"  
+
+[AssistivlabsMain]: https://assistivlabs.com "Assistiv Labs"  
+
+[FreedomscientificSoftwareJaws]: https://www.freedomscientific.com/products/software/jaws "JAWS® | Freedom Scientific"  
+[FreedomscientificSoftwareZoomtext]: https://www.freedomscientific.com/products/software/zoomtext "ZoomText | Freedom Scientific"  
+
+[GooglePlayStoreAndroidAccessibilitySuite]: https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback "Android Accessibility Suite | GooglePlay Store"  
+
+[NvaccessAboutNvda]: https://www.nvaccess.org/about-nvda "About NVDA | NV Access"  
+
+[W3cPerspectiveVideosKeyboard]: https://www.w3.org/WAI/perspective-videos/keyboard "Keyboard Compatibility | W3C"  
+
+[WebaimProjectsLowvisionsurvey2]: https://webaim.org/projects/lowvisionsurvey2 "Survey of Users with Low Vision #2 Results | WebAIM"  
+[WebaimProjectsScreenreadersurvey8]: https://webaim.org/projects/screenreadersurvey8 "Screen Reader User Survey #8 Results | WebAIM"  
+[WebaimArticlesScreenreaderTesting]: https://webaim.org/articles/screenreader_testing "Testing with Screen Readers | WebAIM"  
