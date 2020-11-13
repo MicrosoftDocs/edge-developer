@@ -109,7 +109,7 @@ You are able to run WebView2 applications on the following versions of Windows.
 *   Windows Server 2008 R2**  
 
 > [!IMPORTANT]
-> WebView2 support for Windows 7 and Windows Server 2008 R2 will follow the same support cycle as Microsoft Edge browser. Navigate to [here][EdgeOSSupport] for more details.   
+> ** WebView2 support for Windows 7 and Windows Server 2008 R2 will follow the same support cycle as Microsoft Edge browser. Navigate to [here][EdgeOSSupport] for more details.   
 
 ## Next steps  
 
