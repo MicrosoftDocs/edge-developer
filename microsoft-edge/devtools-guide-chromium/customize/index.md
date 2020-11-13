@@ -59,8 +59,8 @@ By default, some tools open in the main panel, while others appear in the **Draw
 
 You are able to move tools between the main panel and the drawer. With a tab focused, use the context menu to select "Move to top" or "Move to bottom."
 
-:::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="The button to open Drawer tabs" lightbox="../media/move-from-drawer.msft.png":::
-   The button to open **Drawer** tabs  
+:::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="The menu that appears to move tabs between the main panel and the drawer" lightbox="../media/move-from-drawer.msft.png":::
+   The menu that appears to move tabs between the main panel and the **Drawer**.  
 :::image-end:::
 
 ## Reorder panels  
