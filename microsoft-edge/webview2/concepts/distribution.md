@@ -3,7 +3,7 @@ description: Distribution options when releasing an app using Microsoft Edge Web
 title: Distribution of Microsoft Edge WebView2 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 11/13/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -131,22 +131,20 @@ To use the Fixed Version mode,
 
 ### Known issues for Fixed Version
 
-Compared to the Evergreen Runtime, Fixed Version does not have an installation process, which causes [Microsoft PlayReady][MicrosoftPlayReady] to not work out of the box. Developer may mitigate this by,
+Compared to the Evergreen Runtime, Fixed Version does not have an installation process, which causes [Microsoft PlayReady][MicrosoftPlayReady] to not work out of the box. Developer may mitigate this by completing the following steps,
 
-*   Get the path to your Fixed Version package, e.g. `D:\myapp\Microsoft.WebView2.FixedVersionRuntime.87.0.664.8.x64`
-*   Run these commands in command line,
+*   Locate the path where you deploy the Fixed Version package on end user device, e.g. `D:\myapp\Microsoft.WebView2.FixedVersionRuntime.87.0.664.8.x64`
+*   Run these commands on end user device,
 
     ```
     icacls {Fixed Version path} /grant *S-1-15-2-2:(OI)(CI)(RX)
     icacls {Fixed Version path} /grant *S-1-15-2-1:(OI)(CI)(RX)
     ```
-*   Check your Fixed Version folder's Security tab and make sure it includes permissions for `ALL APPLICATION PACKAGES` and `ALL RESTRICTED APPLICATION PACKAGES`.
+*   PlayReady should be working now on end user device. In the Fixed Version folder's Security tab, it should include permissions for `ALL APPLICATION PACKAGES` and `ALL RESTRICTED APPLICATION PACKAGES`.
 
         :::image type="complex" source="../media/PlayReadyPermission.png" alt-text="Permission for PlayReady" lightbox="../media/PlayReadyPermission.png":::
             Permission for PlayReady
         :::image-end:::  
-
-*   PlayReady should be working now. Package the Fixed Version binaries with your application.
 
 <!-- links -->  
 
