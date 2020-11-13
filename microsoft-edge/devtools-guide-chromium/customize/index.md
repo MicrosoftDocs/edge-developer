@@ -43,7 +43,7 @@ To open Settings, do one of the following:
     
 ## Drawer  
 
-The **Drawer** contains many hidden features.  
+The **Drawer** is a second panel where tools of your choosing can reside.  
 
 Select `Escape` to open or close the **Drawer**.  
 
@@ -51,11 +51,17 @@ Select `Escape` to open or close the **Drawer**.
    The **Drawer**  
 :::image-end:::  
 
-Choose **More** \(![More][ImageMoreIcon]\) to open other **Drawer** tabs.  
+By default, some tools open in the main panel, while others appear in the **Drawer**. Choose **More** \(![More][ImageMoreIcon]\) to open a tool in the **Drawer**.  
 
 :::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="The button to open Drawer tabs" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
    The button to open **Drawer** tabs  
 :::image-end:::  
+
+You are able to move tools between the main panel and the drawer. With a tab focused, use the context menu to select "Move to top" or "Move to bottom."
+
+:::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="The button to open Drawer tabs" lightbox="../media/move-from-drawer.msft.png":::
+   The button to open **Drawer** tabs  
+:::image-end:::
 
 ## Reorder panels  
 
