@@ -128,7 +128,26 @@ To use the Fixed Version mode,
         *   Set the `CreationProperties` \([WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Creationproperties]/[WinForms][ReferenceWinFormsMicrosoftWebWebview2WinFormsWebview2]\) property on the WebView2 element.  Use the `BrowserExecutableFolder` member in the `CoreWebView2CreationProperties` \([WPF][ReferenceWpfMicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties]/[WinForms][ReferenceWinFormsMicrosoftWebWebview2WinForms]\) class to indicate the path to the Fixed Version binaries.  
         *   Use `EnsureCoreWebView2Async` \([WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]/[WinForms][ReferenceWinformsMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]\) to specify the environment.  Use the `browserExecutableFolder` parameter in [CoreWebView2Environment.CreateAsync][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentCreateasync] to indicate the path to the Fixed Version binaries.  
 *   Package and ship the Fixed Version binaries with your app.  Update the binaries as appropriate.  
-    
+
+### Known issues for Fixed Version
+
+Compared to the Evergreen Runtime, Fixed Version does not have an installation process, which causes [Microsoft PlayReady][MicrosoftPlayReady] to not work out of the box. Developer may mitigate this by,
+
+*   Get the path to your Fixed Version package, e.g. `D:\myapp\Microsoft.WebView2.FixedVersionRuntime.87.0.664.8.x64`
+*   Run these commands in command line,
+
+    ```
+    icacls {Fixed Version path} /grant *S-1-15-2-2:(OI)(CI)(RX)
+    icacls {Fixed Version path} /grant *S-1-15-2-1:(OI)(CI)(RX)
+    ```
+*   Check your Fixed Version folder's Security tab and make sure it includes permissions for `ALL APPLICATION PACKAGES` and `ALL RESTRICTED APPLICATION PACKAGES`.
+
+        :::image type="complex" source="../media/PlayReadyPermission.png" alt-text="Permission for PlayReady" lightbox="../media/PlayReadyPermission.png":::
+            Permission for PlayReady
+        :::image-end:::  
+
+*   PlayReady should be working now. Package the Fixed Version binaries with your application.
+
 <!-- links -->  
 
 [ConceptsVersioning]: ./versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
@@ -162,3 +181,5 @@ To use the Fixed Version mode,
 [DownloadNonstableEdge]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"  
 
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback | GitHub"  
+
+[MicrosoftPlayReady]: https://www.microsoft.com/playready/ "Microsoft PlayReady"  
