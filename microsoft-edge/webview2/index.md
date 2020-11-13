@@ -105,7 +105,7 @@ You are able to run WebView2 applications on the following versions of Windows.
 *   Windows Server 2019  
 *   Windows Server 2016  
 *   Windows Server 2012  
-*   Windows Server 2012R2  
+*   Windows Server 2012 R2  
 *   Windows Server 2008 R2**  
 
 > [!IMPORTANT]
