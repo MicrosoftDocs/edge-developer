@@ -203,6 +203,6 @@ A series of short situational videos by the W3C about the impact of accessibilit
 
 [W3cPerspectiveVideosKeyboard]: https://www.w3.org/WAI/perspective-videos/keyboard "Keyboard Compatibility | W3C"  
 
-[WebaimProjectsLowvisionsurvey2]: https://webaim.org/projects/lowvisionsurvey2 "Survey of Users with Low Vision #2 Results | WebAIM"  
-[WebaimProjectsScreenreadersurvey8]: https://webaim.org/projects/screenreadersurvey8 "Screen Reader User Survey #8 Results | WebAIM"  
+[WebaimProjectsLowvisionsurvey2]: https://webaim.org/projects/lowvisionsurvey2 "Survey of Users with Low Vision \#2 Results | WebAIM"  
+[WebaimProjectsScreenreadersurvey8]: https://webaim.org/projects/screenreadersurvey8 "Screen Reader User Survey \#8 Results | WebAIM"  
 [WebaimArticlesScreenreaderTesting]: https://webaim.org/articles/screenreader_testing "Testing with Screen Readers | WebAIM"  
