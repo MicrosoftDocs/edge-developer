@@ -62,10 +62,18 @@ If you have an online-only deployment scenario where end users are assumed to ha
 1.  During your app setup, ensure the Runtime is already installed.  To  verify, complete one of the following actions.  
     *   Inspect if the `pv (REG_SZ)` regkey exists and is not `null` or empty.  Find  `pv (REG_SZ)` at the following location.  
         
+    On 64-bit Windows,
+
         ```text
         HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
         ```
-          
+
+    On 32-bit Windows,
+    
+        ```text
+        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+        ```
+
     *   Run [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] and ensure the `versionInfo` is `NULL`.  
 1.  If the Runtime isn't installed, use the link to programmatically download the bootstrapper.  
 1.  Invoke the bootstrapper from an elevated process or command prompt with `MicrosoftEdgeWebview2Setup.exe /silent /install` for silent install.  
@@ -86,9 +94,17 @@ If you have an offline deployment scenario where app deployment has to work enti
 1.  Include the installer in your app installer or updater.  
 1.  During your app setup, ensure the Runtime is already installed.  To  verify, complete one of the following actions.  
     *   Inspect if the `pv (REG_SZ)` regkey exists and is not `null` or empty.  Find  `pv (REG_SZ)` at the following location.  
-        
+
+    On 64-bit Windows,
+
         ```text
         HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+        ```
+
+    On 32-bit Windows,
+
+        ```text
+        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
         ```
           
     *   Run [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] and ensure the `versionInfo` is `NULL`.  
