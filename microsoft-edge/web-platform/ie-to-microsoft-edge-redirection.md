@@ -2,7 +2,7 @@
 description: Moving users to Microsoft Edge from Internet Explorer 
 title: Moving users to Microsoft Edge from Internet Explorer
 author: MSEdgeTeam
-ms.date: 11/12/2020
+ms.date: 11/13/2020
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, internet explorer
@@ -71,8 +71,7 @@ When a website is redirected from Internet Explorer to Microso
 *   If the active IE tab had prior content, it navigates to the [Microsoft support page that explains why the website was redirected to Microsoft Edge][MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer].  
 
 > [!NOTE]
-> After 
-<!--todo:  Is there more content for this note?  -->  
+> After a redirection, users may continue to use IE for websites that are not on the IE compatibility list.  
 
 ## Request an update to the IE compatibility list  
 
