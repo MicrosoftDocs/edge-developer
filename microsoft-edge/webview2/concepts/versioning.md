@@ -9,21 +9,11 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
-# Understand WebView2 SDK versions  
+# Understand WebView2 SDK versions
 
-To develop a WebView2 application, you must install either the [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] or a [non-stable Microsoft Edge channel][MicrosoftedgeinsiderDownload].  The minimum version required is specified in the WebView2 [Release Notes][Releasenotes]. For example, for SDK version [1.0.622.22](https://docs.microsoft.com/microsoft-edge/webview2/releasenotes#1062222), you must install either the [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] or a [non-stable Microsoft Edge channel][MicrosoftedgeinsiderDownload] with a build number of **86.0.616.0** or later.
+New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge \(Chromium\) browser, which is approximately every six weeks.  
 
-However, new interfaces and APIs are added in later SDK versions. If your app depends on an API added in a later version, then your app may depend on a version of the runtime greater than the SDK's minimum version.
-
-You can find the minimum version required by an interface of API [programmatically](#matching-webview2-runtime-versions) or by looking up the minimum required version in the reference documentation.
-
-> [!NOTE]
-> New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge \(Chromium\) browser, which is approximately every six weeks.  
-
-> [!IMPORTANT]
-> When developing Evergreen WebView2 applications, regularly test your application against the latest versions of the WebView2 Runtime and non-stable Microsoft Edge browsers.  Because the web platform is constantly evolving, regular testing is the best way to ensure your application performs as intended.  
-
-## Release and prerelease package  
+### Release and prerelease package  
 
 The WebView2 NuGet package contains both a release and pre-release package.  
 
@@ -34,29 +24,44 @@ The prerelease package is a superset of the release package with the additional 
 *   .NET APIs: [WPF][DotnetMicrosoftWebWebview2WpfNamespace], [WinForms][DotnetMicrosoftWebWebview2WinformsNamespace], and [Core][DotnetMicrosoftWebWebview2CoreNamespace]  
 *   Experimental APIs:  For more information, navigate to the [Experimental APIs](#experimental-apis) section.  
 
-## Experimental APIs  
+### Experimental APIs  
 
 The WebView team is testing experimental APIs that may be included in future releases.  The experimental APIs are marked as `experimental` in the SDK.  Experimental APIs may ship as fully stable APIs in the release package.  You can evaluate the Experimental APIs and share feedback using the [WebView feedback repo][GithubMicrosoftedgeWebviewfeedback].  
 
+
+
 > [!CAUTION]
-> Avoid using the experimental APIs in production apps.  
+> Experimental APIs may be introduced, modified, and removed from SDK to SDK.  Experimental APIs may not be available in your installed version of the WebView2 Runtime.  Avoid using the experimental APIs in production apps.  
+
+### Roadmap  
+
+The release package contains all of the stable, supported Win32 C/C++ APIs.  In the future, the release package will contain all stable, supported .NET APIs when they are made generally available.  The prerelease package contains experimental APIs that are subject to change based upon your feedback and shared insights. 
 
 ## Matching WebView2 Runtime versions  
+To develop a WebView2 application, you must install either the [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] or a [non-stable Microsoft Edge channel][MicrosoftedgeinsiderDownload]. There are two things to take into account when determining the minimum version of the [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] required.
 
-When writing a WebView2 app using a particular SDK version, users of your app may run it with several compatible versions of the WebView2 Runtime.  The WebView team is working on a compatible WebView2 Runtime version that contains non-experimental APIs from previous versions of the Runtime and new non-experimental APIs.  
+1. **The minimum required version of the SDK:** This is specified in the WebView2 [Release Notes][Releasenotes]. For example, for SDK version [1.0.622.22](https://docs.microsoft.com/microsoft-edge/webview2/releasenotes#1062222), you must install either the [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] or a [non-stable Microsoft Edge channel][MicrosoftedgeinsiderDownload] with a build number of **86.0.616.0** or later. The minimum version required will only change when there is a breaking change in the web platform.
+
+2. **The minimum required version for the interfaces and APIs you depend on:** New interfaces and APIs are added periodically to WebView2. Different APIs and interfaces within an SDK require different versions of the WebView2 Runtime depending on when they were introduced. For example, an API or interface added in SDK version [1.0.622.22](https://docs.microsoft.com/microsoft-edge/webview2/releasenotes#1062222) will have a minimum WebView2 Runtime requirement of **86.0.616.0**. An API or interface added in a subsequent SDK release will have a minimum WebView2 Runtime requirement that corresponds to the version of the Runtime that is released with that version of the SDK. You can find the minimum WebView2 Runtime version required by an interface or API [programmatically](#determining-interface-and-api-WebView2-Runtime requirement).
+
+> [!IMPORTANT]
+> When developing Evergreen WebView2 applications, regularly test your application against the latest versions of the WebView2 Runtime and non-stable Microsoft Edge browsers.  Because the web platform is constantly evolving, regular testing is the best way to ensure your application performs as intended.  
+
+> [!NOTE]
+> By default, the WebView2 Runtime updates automatically to the latest version. However, there are scenarios where users may control the WebView2 Runtime update cycle which can cause application compatibility issues. 
+
+### Determining interface and API WebView2 Runtime requirement
 
 Depending on which SDK you use, consider the following items: 
 
-*   **Win32 C/C++**.  When using `QueryInterface` to obtain a new interface, check for a return value of `E_NOINTERFACE`.  This value may indicate that the WebView2 Runtime is a previous version, and doesn't support that interface.  
+*   **Win32 C/C++**.  When using `QueryInterface` to obtain a new interface, check for a return value of `E_NOINTERFACE`.  This value may indicate that the WebView2 Runtime is a previous version, and doesn't support that interface. Checkout the WebView2API Sample for an [example](https://github.com/MicrosoftEdge/WebView2Samples/blob/8ec7de9d3e80a942bc7025cffad98eee75e11e64/SampleApps/WebView2APISample/AppWindow.cpp#L622) of how this works.
 *   **.NET and WinUI**.  Check for a `No such interface supported` exception when using methods, properties, and events that were added to more recent SDKs.  This exception may occur when the WebView2 Runtime is a previous version, and doesn't support those APIs.  
 
 If an API is unavailable, consider removing the associated feature, or inform your users that they need to update their version of the WebView2 Runtime.  
 
-Experimental APIs may be introduced, modified, and removed from SDK to SDK.  Experimental APIs may not be available in your installed version of the WebView2 Runtime.  
 
-## Roadmap  
 
-The release package contains all of the stable, supported Win32 C/C++ APIs.  In the future, the release package will contain all stable, supported .NET APIs when they are made generally available.  The prerelease package contains experimental APIs that are subject to change based upon your feedback and shared insights.  
+ 
 
 <!--## Versioning  
 
