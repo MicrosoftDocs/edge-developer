@@ -22,7 +22,8 @@ The web is constantly evolving to improve the user experience, security, and pri
 | Block mixed content downloads | [Chrome+1](#release-comments) \(Edge v86\)  |  | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, including the planned timeline by Google for this change, navigate to the [Google security blog entry][GoogleBlogSecurity20200206].  The Microsoft rollout schedule on file types to warn or block is planned for one release after Chrome.  |  
 | Deprecate AppCache | [Chrome+1](#release-comments) \(Edge v86\)  |  | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, navigate to the [WebDev documentation][WebDevAppCacheRemoval].  The Microsoft rollout schedule for deprecation is planned for one release after Chrome.  Requesting an [AppCache OriginTrial Token][AppCacheOriginTrial] allows sites to continue to use the deprecated API until Edge v90.  |  
 | Removal of Adobe Flash | Edge v88  |  | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, navigate to the [Adobe Flash Chromium Roadmap][ChromiumFlashRoadmapSupportRemoved].  | 
-| Turn off and remove FTP | Edge v88  | Edge Beta v87 | In Edge Beta v87, FTP support is turned off by default; in Edge Stable v87 it will remain enabled.  In Edge v88, FTP support is removed entirely.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, navigate to the [Chrome Platform Status Entry][ChromePlatformStatus6246151319715840].  Enterprises which have sites that still require FTP support can continue to use FTP by configuring the site to use [IE mode](https://docs.microsoft.com/deployedge/edge-ie-mode).  |   
+| Turn off and remove FTP | Edge v88  | Edge Beta v87 | In Edge Beta v87, FTP support is turned off by default; in Edge Stable v87 it will remain enabled.  In Edge v88, FTP support is removed entirely.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, navigate to the [Chrome Platform Status Entry][ChromePlatformStatus6246151319715840].  Enterprises which have sites that still require FTP support can continue to use FTP by configuring the site to use [IE mode](https://docs.microsoft.com/deployedge/edge-ie-mode).  | 
+| Autoupgrade mixed content images | Edge v88  |  | Non-secure (HTTP) references to images will be automatically upgraded to HTTPS; if the image is not available over HTTPS, the image download will fail. A [Group Policy][InsecureContentAllowedPolicy] is available to control this feature. This change is happening in the Chromium project, on which Microsoft Edge is based. For more information, navigate to the [Chrome Platform Status entry][ChromePlatformStatus4926989725073408].|  
 
 ##### Release comments  
 
@@ -46,11 +47,13 @@ The web is constantly evolving to improve the user experience, security, and pri
 <!-- links -->  
 
 [DeployedEdgePoliciesSSLMinVersion]: /deployedge/microsoft-edge-policies#sslversionmin "SSLVersionMin - Microsoft Edge - Policies | Microsoft Docs"  
+[InsecureContentAllowedPolicy]:  /deployedge/microsoft-edge-policies#insecurecontentallowedforurls "InscureContentAllowedForUrls - Microsoft Edge - Policies | Microsoft Docs"
 
 [ChromePlatformStatus4664843055398912]: https://www.chromestatus.com/feature/4664843055398912 "Disallow sync XHR in page dismissal JavaScript | Chrome Platform Status"  
 [ChromePlatformStatus5088147346030592]: https://www.chromestatus.com/feature/5088147346030592 "Cookies default to SameSite=Lax | Chrome Platform Status"  
 [ChromePlatformStatus6251880185331712]: https://www.chromestatus.com/feature/6251880185331712 "Referrer Policy: Default to strict-origin-when-cross-origin | Chrome Platform Status"  
 [ChromePlatformStatus6246151319715840]: https://chromestatus.com/feature/6246151319715840 "Deprecate FTP support | Chrome Platform Status"
+[ChromePlatformStatus4926989725073408]: https://chromestatus.com/feature/4926989725073408 "Autoupgrade Image Mixed Contetn | Chrome Platform Status"
 
 [ChromiumFlashRoadmapSupportRemoved]: https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021- "Flash Support Removed from Chromium (Target: Chrome 88+ - Jan 2021) - Flash Roadmap | Chromium Projects"  
 
