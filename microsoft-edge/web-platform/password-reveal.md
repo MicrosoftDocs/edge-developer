@@ -1,6 +1,6 @@
 ---
 description: This page provides guidance on controlling the display of the password reveal button
-title: Customizing the Password Reveal Button
+title: Customizing the password reveal button
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 11/17/2020
@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, password reveal, eye icon
 ---
-# Customizing the Password Reveal Button
+# Customizing the password reveal button
 
 The `password` input type in Microsoft Edge includes a “password reveal” button. This control enables users to verify they entered their password correctly in the password field. Once the user has entered text in the field, they may tap/click the button or press `Alt+F8` to toggle visibility of their input:
 
