@@ -12,11 +12,11 @@ keywords: microsoft edge, compatibility, web platform, password reveal, eye icon
 
 The `password` input type in Microsoft Edge includes a “password reveal” button. This control enables users to verify they entered their password correctly in the password field. Once the user has entered text in the field, they may tap/click the button or press `Alt+F8` to toggle visibility of their input:
 
-![A password field with dots hiding entered characters. An icon shaped like an eye is displayed within the right-hand side of the field.](/media/password-eye.png)
+![A password field with dots hiding entered characters. An icon shaped like an eye is displayed within the right-hand side of the field.](../media/web-platform/password-reveal/password-eye.png)
 
 _The password reveal button appears upon text entry._
 
-![The eye icon in the same password field now has a stroke through it, and the characters are revealed.](/media/password-toggled.png)
+![The eye icon in the same password field now has a stroke through it, and the characters are revealed.](../media/web-platform/password-reveal/password-toggled.png)
 
 _Invoking the button turns the obfuscated dots into whatever the user typed into the field._
 
