@@ -20,7 +20,7 @@ _The password reveal button appears upon text entry._
 
 _Invoking the button turns the obfuscated dots into whatever the user typed into the field._
 
-By default, the password reveal button is inserted into the Shadow DOM of all HTML inputs of `type="password"`. As of Microsoft Edge v87, users or [enterprises](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#passwordrevealenabled) may disable this feature globally. Web designers and developers should expect most Microsoft Edge users to have the default experience.
+By default, the password reveal button is inserted into the Shadow DOM of all HTML inputs of `type="password"`. As of Microsoft Edge v87, users or [enterprises](https://docs.microsoft.com/deployedge/microsoft-edge-policies#passwordrevealenabled) may disable this feature globally. Web designers and developers should expect most Microsoft Edge users to have the default experience.
 
 ## Removing the browser’s password reveal control
 
