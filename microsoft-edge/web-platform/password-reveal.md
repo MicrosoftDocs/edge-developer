@@ -20,7 +20,7 @@ _The password reveal button appears upon text entry._
 
 _Invoking the button turns the obfuscated dots into whatever the user typed into the field._
 
-By default, the password reveal button is inserted into the Shadow DOM of all HTML inputs of `type="password"`. As of Microsoft Edge v87, users or enterprises may disable this feature globally. Web designers and developers should expect most Microsoft Edge users to have the default experience.
+By default, the password reveal button is inserted into the Shadow DOM of all HTML inputs of `type="password"`. As of Microsoft Edge v87, users or [enterprises](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#passwordrevealenabled) may disable this feature globally. Web designers and developers should expect most Microsoft Edge users to have the default experience.
 
 ## Removing the browser’s password reveal control
 
@@ -36,29 +36,28 @@ However, we recommend that most websites take advantage of the browser’s passw
 
 ## Customizing control styling
 
-Web developers can instead tweak the button’s styling so it better matches the website’s visual language:
+Web developers can instead tweak the button’s styling so it better matches the website’s visual language. For example:
 
 ```
 ::-ms-reveal {
   border: 1px solid transparent;
   border-radius: 50%;
   box-shadow: 0 0 3px currentColor;
-  /* And so on… */
 }
 ```
 
 Some notes on styling:
 
-* The browser’s “eye” iconography is implemented as a background image. To add a background color to the button, use the CSS `background-color` property instead of the `background` shorthand.
-* Web developers may adjust the size and scale of the password reveal button, but the password reveal button will be clipped by the bounds of the password input control.
-* The password reveal control does not have a “toggled” state that is exposed to web developers.
+* The browser’s “eye” iconography is implemented as a background image. To add a background color to the button, use the CSS `background-color` property instead of the `background` shorthand property.
+* Web developers may adjust the size and scale of the password reveal button, but the button will be clipped by the bounds of the password input control (if applicable).
+* There are currently no state selectors available to style the button’s “toggled” state.
 
 ## Visibility of the control
 
-While testing the password reveal button, it may be helpful to understand in which circumstances the button is displayed. The password reveal control is not available until the user enters text into the field, and as added security precautions:
+While trying out the password reveal button, it may be helpful to understand in which circumstances the button is displayed. The password reveal control is not available until the user enters text into the field, and as added security precautions:
 
 * The button is removed if focus moves from the field.
 * The button is removed if scripts modify the password field.
-* If the button is dismissed at all, the entire contents of the password field must be removed in order to bring the button back (preventing someone from making a minor adjustment in order to view the password).
+* If the button is removed at any point, the entire contents of the password field must also be removed in order to bring the button back (preventing someone from making a minor adjustment in order to view the password).
 
 The password reveal button is not available in fields which have been autofilled via the browser’s password manager.
