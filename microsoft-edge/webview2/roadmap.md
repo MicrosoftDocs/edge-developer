@@ -66,7 +66,7 @@ The Win32 C/C++ SDK has reached GA.
 
 ### .NET  
 
-The .NET SDK wraps has reached GA. 
+The .NET SDK has reached GA. 
 
 ### WinUI 3.0  
 

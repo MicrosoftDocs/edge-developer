@@ -60,7 +60,7 @@ Start with a basic desktop project containing a single main window.
     
 ## Step 2 - Install WebView2 SDK  
 
-Next add the WebView2 SDK to the project using Nuget.  
+Next add the WebView2 SDK to the project using NuGet.  
 
 1.  Open the context menu on the project \(right-click\), and select **Manage NuGet Packages...**.  
     

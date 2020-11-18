@@ -109,7 +109,7 @@ Non-stable Microsoft Edge channels \(Beta/Dev/Canary\) provide a sneak peek into
 For constrained environments with strict compatibility requirements, consider using the Fixed Version distribution mode.  Select and package a specific version of the WebView2 Runtime using the Fixed Version distribution mode.  You may specify the timing of Runtime updates for your app.  The Fixed Version distribution mode doesn't receive any automatic updates. You should plan to update your app and the Runtime.  
 
 > [!NOTE] 
-> The Fixed Version distribution mode was previously named bring-your-own.  
+> The Fixed Version distribution mode was previously called bring-your-own.  
 
 To use the Fixed Version mode,  
 
