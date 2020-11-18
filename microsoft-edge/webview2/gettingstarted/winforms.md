@@ -54,7 +54,7 @@ Next add the WebView2 SDK to the project using NuGet.
 
     ![nuget](./media/installnuget.png)
 
-You are all set to start developing applications using the WebView2 API.  Select `F5` to build and run the project.  The running project displays an empty window.  
+You're all set to start developing applications using the WebView2 API.  Select `F5` to build and run the project.  The running project displays an empty window.  
 
 ![emptyApp](./media/winforms-emptyApp.png)
 
@@ -92,11 +92,11 @@ Select `F5` to build and run your project.  Confirm that your WebView2 control d
 
 Add a few more controls to your Windows Forms from the toolbox, and then handle window resize events appropriately.
 
-1. In the **Windows Forms Designer** open the **Toolbox**
+1. In the **Windows Forms Designer**, open the **Toolbox**
 1. Drag and Drop a **TextBox** into the Windows Forms App. Name the **TextBox** `addressBar` in the **Properties Tab**.
 1. Drag and Drop a **Button** into the Windows Forms App. Change the text in the **Button** to `Go!` and name the **Button** `goButton` in the **Properties Tab**.
 
-    The app should look like the following in the designer:
+    The app should look like the following image in the designer.
     
     ![designer](./media/winforms-designer.png)
 
@@ -143,7 +143,7 @@ Add the ability to allow users to change the URL that the WebView2 control displ
     }
     ```  
 
-Select `F5` to build and run your project.  Enter a new URL in the address bar, and click **Go**.  For example, enter `https://www.bing.com`.  Confirm that the WebView2 control navigates to the URL.  
+Select `F5` to build and run your project.  Enter a new URL in the address bar, and select **Go**.  For example, enter `https://www.bing.com`.  Confirm that the WebView2 control navigates to the URL.  
 
 > [!NOTE]
 > Ensure a complete URL is entered in the address bar. An `ArgumentException` is thrown if the URL does not start with `http://` or `https://`
@@ -152,7 +152,7 @@ Select `F5` to build and run your project.  Enter a new URL in the address bar, 
 
 ## Step 6 - Navigation events  
 
-The application that hosts WebView2 controls listens to the following events that are raised by the WebView2 control during navigation to web pages.  
+During webpage navigation, the WebView2 control raises events. The application that hosts WebView2 controls listens for the following events.  
 
 * `NavigationStarting`  
 * `SourceChanged`  
@@ -172,9 +172,9 @@ When an error occurs, the following events are raised and may depend on navigati
 * `ContentLoading`  
 * `HistoryChanged`  
 
-When there is an HTTP redirect, there are multiple `NavigationStarting` events.  
+When there's an HTTP redirect, there are multiple `NavigationStarting` events.  
 
-To demonstrate how to use these events, start by registering a handler for `NavigationStarting` that cancels any requests that do not use HTTPS.  
+To demonstrate how to use these events, start by registering a handler for `NavigationStarting` that cancels any requests that don't use HTTPS.  
 
 In `Form1.cs`, modify the constructor as shown below and add the `EnsureHttps` function.  
 
@@ -203,7 +203,7 @@ Select `F5` to build and run your project. Confirm that when navigating to an HT
 
 ## Step 7 - Scripting  
 
-You may use host applications to inject JavaScript code into WebView2 controls at runtime.  The injected JavaScript applies to all new top level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run after creation of the global object, and before any other script included in the HTML document is run.  
+You may use host applications to inject JavaScript code into WebView2 controls at runtime.  The injected JavaScript applies to all new top-level documents and any child frames, until the JavaScript is removed.  The injected JavaScript is run after creation of the global object, and before any scripts included in the HTML document.  
 
 You can use scripting to alert the user when navigating to a non-HTTPS site.  Modify the `EnsureHttps` function so that it injects script into the web content using the [ExecuteScriptAsync]() method.  
 
@@ -219,7 +219,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 }
 ```  
 
-Select `F5` to build and run your project.  Confirm that the application displays an alert when you navigate to a site that does not use HTTPS.  
+Select `F5` to build and run your project.  Confirm that the application displays an alert when you navigate to a site that doesn't use HTTPS.  
 
 ![https](./media/winforms-https.png)
 
@@ -251,7 +251,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
     }
     ```  
 
-1. After **CoreWebView2** is initialized, register an event handler to respond to `WebMessageReceived`.  In `Form1.cs` update `InitializeAsync` and add `UpdateAddressBar` using the following code snippet.  
+1. After **CoreWebView2** is initialized, register an event handler to respond to `WebMessageReceived`.  In `Form1.cs`, update `InitializeAsync` and add `UpdateAddressBar` using the following code snippet.  
 
     ```csharp
     async void InitializeAsync()
@@ -294,9 +294,11 @@ Congratulations, you built your first WebView2 app!
 
 ## Next steps 
 
-* Checkout the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) for a comprehensive example of WebView2's capabilities
-* Checkout [API reference](/dotnet/api/microsoft.web.webview2.winforms.webview2) for more detailed information about our APIs
-* Checkout a list of [WebView2 Resources](../index.md#next-steps) to learn more about WebView2
+To continue learning more about WebView2, navigate to the following resources.
+
+* The [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) has a comprehensive example of WebView2's capabilities.
+* The [API reference](/dotnet/api/microsoft.web.webview2.winforms.webview2) for more detailed information about our APIs.
+* [WebView2 Resources](../index.md#next-steps).
 
 
 ## Getting in touch with the Microsoft Edge WebView team  
