@@ -3,7 +3,7 @@ description: Getting started guide with WebView2 for WinForms apps
 title: Getting started with WebView2 for WinForms apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/10/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
