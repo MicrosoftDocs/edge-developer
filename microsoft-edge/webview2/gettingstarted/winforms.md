@@ -10,9 +10,9 @@ ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, winforms apps, winforms, edge, CoreWebView2, browser control, edge html, getting started, Getting Started, .NET, windows forms
 ---
 
-# Getting started with WebView2 in Windows Forms (Preview)  
+# Getting started with WebView2 in Windows Forms
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](/microsoft-edge/webview2/index).  For more information on individual APIs, see [API reference](/dotnet/api/microsoft.web.webview2.winforms).  
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2](/microsoft-edge/webview2/index).  For more information on individual APIs, see [API reference](/dotnet/api/microsoft.web.webview2.winforms).  
 
 ## Prerequisites  
 
@@ -42,7 +42,7 @@ Start with a basic desktop project containing a single main window.
 
 ## Step 2 - Install WebView2 SDK
 
-Next add the WebView2 SDK to the project.  For the preview, install the WebView2 SDK using Nuget.  
+Next add the WebView2 SDK to the project using Nuget.
 
 1. Open the context menu on the project \(right-click\), and choose **Manage NuGet Packages...**.  
 
@@ -51,9 +51,6 @@ Next add the WebView2 SDK to the project.  For the preview, install the WebView2
     :::image-end:::
 
 1. Enter `Microsoft.Web.WebView2` in the search bar.  Choose **Microsoft.Web.WebView2** from the search results.  
-
-    > [!IMPORTANT]
-    > Ensure you check **Include prerelease**, select a prerelease package in **Version**, and then choose **Install**.  
 
     ![nuget](./media/installnuget.png)
 

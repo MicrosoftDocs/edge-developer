@@ -93,8 +93,9 @@ The [WebView2 Samples][GithubMicrosoftedgeWebview2samples] repository contains s
 A General Availability \(GA\) or Preview version is available on the following programming environments.  
 
 *   Win32 C/C++ \(GA\)
-*   .NET Framework 4.6.2 or later \(Preview\) 
-*   .NET Core 3.0 or later \(Preview\)
+*   .NET Framework 4.6.2 or later
+*   .NET Core 3.1 or later
+*   .NET 5
 *   [WinUI 3.0][UwpToolkitsWinui3] \(Preview\)
 
 You are able to run WebView2 applications on the following versions of Windows.  
@@ -123,7 +124,8 @@ For more information on how to build and deploy WebView2 applications, review th
 #### How-To guides  
 
 *   [How to Debug with WebView2][Webview2HowtoDebug]  
-*   [Automating and testing WebView2 with Microsoft Edge Driver][Webview2HowtoWebdriver]  
+*   [Automating and testing WebView2 with Microsoft Edge Driver][Webview2HowtoWebdriver]
+
 
 ## Getting in touch with the Microsoft Edge WebView team  
 

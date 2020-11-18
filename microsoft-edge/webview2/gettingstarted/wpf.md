@@ -10,9 +10,9 @@ ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView2, browser control, edge html, getting started, Getting Started, .NET
 ---
 
-# Getting started with WebView2 in WPF (Preview)
+# Getting started with WebView2 in WPF
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](../index.md).  For more information on individual APIs, see [API reference](/dotnet/api/microsoft.web.webview2.wpf).  
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2](../index.md).  For more information on individual APIs, see [API reference](/dotnet/api/microsoft.web.webview2.wpf).  
 
 ## Prerequisites  
 
@@ -60,7 +60,7 @@ Start with a basic desktop project containing a single main window.
     
 ## Step 2 - Install WebView2 SDK  
 
-Next add the WebView2 SDK to the project.  For the preview, install the WebView2 SDK using Nuget.  
+Next add the WebView2 SDK to the project using Nuget.  
 
 1.  Open the context menu on the project \(right-click\), and select **Manage NuGet Packages...**.  
     
@@ -69,10 +69,7 @@ Next add the WebView2 SDK to the project.  For the preview, install the WebView2
     :::image-end:::
     
 1.  Enter `Microsoft.Web.WebView2` in the search bar.  Select **Microsoft.Web.WebView2** from the search results.  
-
-    > [!IMPORTANT]
-    > Ensure you check **Include prerelease**, select a prerelease package in **Version**, and then choose **Install**.  
-  
+   
      ![nuget](./media/installnuget.PNG)
     
     You are all set to start developing applications using the WebView2 API.  Select `F5` to build and run the project.  The running project displays an empty window.  
