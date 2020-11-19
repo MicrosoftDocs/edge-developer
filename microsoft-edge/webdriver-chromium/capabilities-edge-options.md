@@ -30,7 +30,7 @@ var driver = new EdgeDriver(options);
 To use a capability that does not yet have a convenience method, you can use the `AddAdditionalCapability` method. To use this method you need to know the name of the capability and the type of value it takes. See the full list below.
 
 ```csharp
-options.AddAdditionalCapability("wdpAddress", "remotehost:9222");
+options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 ```
 
 ## Recognized Capabilities
