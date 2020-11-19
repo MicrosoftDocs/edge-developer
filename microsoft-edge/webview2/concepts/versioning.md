@@ -48,7 +48,7 @@ If WebView2 Runtime updates are stopped, ensure you understand the minimum versi
 2. The minimum required version of the NuGet package that's required to support the interfaces and APIs used in your app. New interfaces and APIs are added periodically to WebView2. APIs and interfaces bundled in an SDK will require different versions of the WebView2 Runtime because they were added to the SDK at different times.  The required WebView2 Runtime version matches the build number, the third number, of the SDK version the API was first introduced in. For example, a new API or interface added in SDK version [1.0.622.22](https://docs.microsoft.com/microsoft-edge/webview2/releasenotes#1062222) will need the WebView2 Runtime version: 86.0.**622**.0. An API or interface added in a subsequent SDK release requires the WebView2 Runtime that has the same version number as the SDK. You can determine if the WebView2 Runtime version supports an interface or API [programmatically](#determine-webview2-runtime-requirement).
 
 > [!IMPORTANT]
-> When developing Evergreen WebView2 applications, regularly test your application against the latest versions of the WebView2 Runtime and non-stable Microsoft Edge browsers.  Because the web platform is constantly evolving, regular testing is the best way to ensure your application performs as intended.  
+> When developing [Evergreen WebView2 applications](distribution.md#evergreen-distribution-mode), regularly test your application against the latest versions of the WebView2 Runtime and non-stable Microsoft Edge browsers.  Because the web platform is constantly evolving, regular testing is the best way to ensure your application performs as intended.  
 
 ### Determine WebView2 Runtime requirement
 
