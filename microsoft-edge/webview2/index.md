@@ -3,7 +3,7 @@ description: Host web content in your Win32, .NET, UWP applications with the Mic
 title: Microsoft Edge WebView2 Control
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/13/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -108,7 +108,7 @@ You are able to run WebView2 applications on the following versions of Windows.
 *   Windows Server 2008 R2 \*\*  
 
 > [!IMPORTANT]
-> \*\* WebView2 support for Windows 7 and Windows Server 2008 R2 is planned during the same support cycle as Microsoft Edge browser.  For more information, navigate to [Microsoft Edge supported Operating Systems][DeployedgeMicrosoftEdgeSupportedOS].  
+> \*\* WebView2 support for Windows 7 and Windows Server 2008 R2 has the same support cycle as Microsoft Edge.  For more information, navigate to [Microsoft Edge supported Operating Systems][DeployedgeMicrosoftEdgeSupportedOS].  
 
 ## Next steps  
 
