@@ -17,8 +17,51 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 > [!NOTE]
 > Re-compile your app after updating the NuGet package.  
 
+
+## 1.0.702-prerelease  
+
+Release Date: Nov 20, 2020  
+
+[NuGet package][NuGetGallery1.0.702-prerelease] \| minimum Microsoft Edge version 88.0.702.0.
+
+#### General
+
+###### Features
+* Added support for Drag & Drop within WebView2.
+* Added APIs to handle DPI support.
+    * Added [RasterizationScale](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.702-prerelease&preserve-view=true#get_rasterizationscale) property to change the DPI scale for WebView content and UI popups, and associated [RasterizationScaleChanged](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.702-prerelease&preserve-view=true#add_rasterizationscalechanged) event.
+    * Added [ShouldDetectMonitorScaleChanges](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.702-prerelease&preserve-view=true#/get_ShouldDetectMonitorScaleChanges) property to automatically update RasterizationScale property if needed.
+    * Added [BoundsMode property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.702-prerelease&preserve-view=true#/get_BoundsMode) to specify that the bounds are logic pixels and allow WebView to use the RasterizationScale for WebView2 pixel display, and have WebView apply the RasterizationScale to the Bounds to get the physical size
+
+#### .NET  
+
+###### Features
+* Enabled WinForms designer in .NET Core 3.1+ and .NET 5.
+
+###### Github & Bugfixes
+* Added [AcceleratorKeyPressedEvent](/dotnet/api/microsoft.web.webview2.wpf.webview2.) to support AcceleratorKey press in WebView2. \([\#288][GithubMicrosoftedgeWebviewfeedbackIssue288]\)  
+* Removed unnecessary files from being output to WebView2 folders.  \([\#461][GithubMicrosoftedgeWebviewfeedbackIssue461]\)  
+ 
+## 1.0.664.34  
+
+Release Date: Nov 20, 2020  
+
+[NuGet package][NuGetGallery1.0.664.34] \| minimum WebView2 Runtime version 86.0.664.34.  
+
+#### General  
+
 > [!IMPORTANT]
-> While WebView2 is a preview, the .NET APIs are in the `prerelease package`.  
+> **Announcement**: .NET WPF/WinForms WebView2 is now Generally Available (GA). Starting with this release, Release SDKs will be forward-compatible. See [GA announcement blog post](https://aka.ms/wv2gablogpost) for more details.
+
+
+###### Features
+* .NET WPF/WinForms WebView2 is now Generally Available (GA).
+* Fixed Distribution (Bring-your-own) mode has reached GA.
+
+#### .NET  
+
+###### Github & Bugfixes
+* CoreWebView2NewWindowRequestedEventArgs.Handled prevents new window from being opened   \([\#549][GithubMicrosoftedgeWebviewfeedbackIssue549]\) and \([\#560][GithubMicrosoftedgeWebviewfeedbackIssue560]\).  
 
 ## 1.0.674-prerelease  
 
@@ -468,12 +511,15 @@ Initial developer preview release.
 [GithubMicrosoftedgeWebviewfeedbackIssue228]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/228 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 228"
 [GithubMicrosoftedgeWebviewfeedbackIssue235]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/235 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 235"
 [GithubMicrosoftedgeWebviewfeedbackIssue250]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/250 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 250"
+[GithubMicrosoftedgeWebviewfeedbackIssue288]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/288 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 288"
 [GithubMicrosoftedgeWebviewfeedbackIssue293]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/293 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 293"
 [GithubMicrosoftedgeWebviewfeedbackIssue318]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/318 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 318"  
 [GithubMicrosoftedgeWebviewfeedbackIssue382]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/382 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 382"  
 [GithubMicrosoftedgeWebviewfeedbackIssue431]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/431 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 431"  
 [GithubMicrosoftedgeWebviewfeedbackIssue432]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/432 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 432"  
-
+[GithubMicrosoftedgeWebviewfeedbackIssue461]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/461 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 461"  
+[GithubMicrosoftedgeWebviewfeedbackIssue549]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/549 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 549"  
+[GithubMicrosoftedgeWebviewfeedbackIssue560]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/560 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 560"  
 
 [GithubMicrosoftedgeWebview2AnnouncementIssue2]:  https://github.com/MicrosoftEdge/WebView2Announcement/issues/2 "Announcement repo for MicrosoftEdge/WebViewAnnouncement Issue 2"  
 
@@ -495,5 +541,6 @@ Initial developer preview release.
 [NuGetGallery0.9.579]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.579 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.579"
 [NuGetGallery0.9.622.11]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.622.11 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.622.11"
 [NuGetGallery1.0.622.22]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.622.22 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.622.22"
+[NuGetGallery1.0.664.34]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.664.34 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.664.34"
 [NuGetGallery0.9.628-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.628-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v0.9.628 prerelease"  
 [NuGetGallery1.0.674-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.674-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.674 prerelease"  
