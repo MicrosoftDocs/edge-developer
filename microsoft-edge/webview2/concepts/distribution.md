@@ -3,7 +3,7 @@ description: Distribution options when releasing an app using Microsoft Edge Web
 title: Distribution of Microsoft Edge WebView2 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 11/13/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -62,10 +62,18 @@ If you have an online-only deployment scenario where end users are assumed to ha
 1.  During your app setup, ensure the Runtime is already installed.  To  verify, complete one of the following actions.  
     *   Inspect if the `pv (REG_SZ)` regkey exists and is not `null` or empty.  Find  `pv (REG_SZ)` at the following location.  
         
+        On 64-bit Windows  
+        
         ```text
         HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
-        ```
-          
+        ```  
+        
+        On 32-bit Windows  
+        
+        ```text
+        HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+        ```  
+        
     *   Run [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] and ensure the `versionInfo` is `NULL`.  
 1.  If the Runtime isn't installed, use the link to programmatically download the bootstrapper.  
 1.  Invoke the bootstrapper from an elevated process or command prompt with `MicrosoftEdgeWebview2Setup.exe /silent /install` for silent install.  
@@ -87,10 +95,18 @@ If you have an offline deployment scenario where app deployment has to work enti
 1.  During your app setup, ensure the Runtime is already installed.  To  verify, complete one of the following actions.  
     *   Inspect if the `pv (REG_SZ)` regkey exists and is not `null` or empty.  Find  `pv (REG_SZ)` at the following location.  
         
+        On 64-bit Windows  
+        
         ```text
         HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
-        ```
-          
+        ```  
+        
+        On 32-bit Windows  
+        
+        ```text
+        HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+        ```  
+        
     *   Run [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] and ensure the `versionInfo` is `NULL`.  
 1.  If the Runtime isn't installed, run the standalone installer.  If you want to run a silent installation, either run the installer from an elevated process or copy and run the following command.  
     
@@ -98,11 +114,11 @@ If you have an offline deployment scenario where app deployment has to work enti
     MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install
     ```  
     
-### Stay compatible in Evergreen mode
+### Stay compatible in Evergreen mode  
 
-The Web is constantly evolving. The Evergreen WebView2 Runtime is kept up-to-date to provide you with the latest features and security fixes.  To ensure your app stays compatible with the web, we recommend you set up testing infrastructure.
+The Web is constantly evolving. The Evergreen WebView2 Runtime is kept up-to-date to provide you with the latest features and security fixes.  To ensure your app stays compatible with the web, we recommend you set up testing infrastructure.  
 
-Non-stable Microsoft Edge channels \(Beta/Dev/Canary\) provide a sneak peek into what is coming next into WebView2 Runtime.  Just like developing websites for Microsoft Edge, we recommend that you test your WebView2 app regularly.  Test your WebView2 app against one of the non-stable channels, and update your app or [report issues][GithubMicrosoftedgeWebviewfeedback] if issues arise. Typically Dev and Beta are the recommended channels.  To help you decide which channel is right, navigate to [Overview of the Microsoft Edge channels][DeployEdgeMicrosoftEdgeChannels].  You can download the [non-stable Microsoft Edge channel][DownloadNonstableEdge] on your test environment, and use `regkey` or environment variables to indicate the channel preference for your testing app.  For more information, navigate to [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions].  You may also use [WebDriver][HowtoWebdriver] to automate WebView2 testing.
+Non-stable Microsoft Edge channels \(Beta/Dev/Canary\) provide a sneak peek into what is coming next into WebView2 Runtime.  Just like developing websites for Microsoft Edge, we recommend that you test your WebView2 app regularly.  Test your WebView2 app against one of the non-stable channels, and update your app or [report issues][GithubMicrosoftedgeWebviewfeedback] if issues arise. Typically Dev and Beta are the recommended channels.  To help you decide which channel is right, navigate to [Overview of the Microsoft Edge channels][DeployEdgeMicrosoftEdgeChannels].  You can download the [non-stable Microsoft Edge channel][DownloadNonstableEdge] on your test environment, and use `regkey` or environment variables to indicate the channel preference for your testing app.  For more information, navigate to [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions].  You may also use [WebDriver][HowtoWebdriver] to automate WebView2 testing.  
 
 ## Fixed Version distribution mode  
 
@@ -111,7 +127,7 @@ Non-stable Microsoft Edge channels \(Beta/Dev/Canary\) provide a sneak peek into
 
 The Fixed Version distribution mode was previously named bring-your-own.  
 
-For constrained environments with strict compatibility requirements, consider using the Fixed Version distribution mode.  Select and package a specific version of the WebView2 Runtime using the Fixed Version distribution mode.  You may specify the timing of Runtime updates for your app.  The Fixed Version distribution mode doesn't receive any automatic updates. You should plan to update your app and the Runtime.  
+For constrained environments with strict compatibility requirements, consider using the Fixed Version distribution mode.  Choose and package a specific version of the WebView2 Runtime using the Fixed Version distribution mode.  You may specify the timing of Runtime updates for your app.  The Fixed Version distribution mode doesn't receive any automatic updates. You should plan to update your app and the Runtime.  
 
 To use the Fixed Version mode,  
 
@@ -131,33 +147,24 @@ To use the Fixed Version mode,
 <!-- links -->  
 
 [ConceptsVersioning]: ./versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
-
 [HowtoWebdriver]: ../howto/webdriver.md "Automating and testing WebView2 with Microsoft Edge Driver | Microsoft Docs"  
+
+[ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"  
+[ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring]: /microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString - Globals | Microsoft Docs"  
 
 [DeployEdgeMicrosoftEdgeChannels]: /deployedge/microsoft-edge-channels "Overview of the Microsoft Edge channels | Microsoft Docs"  
 
 [ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentCreateasync]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync "CreateAsync - Microsoft.Web.WebView2.Core.CoreWebView2Environment class | Microsoft Docs"  
-
 [ReferenceWpfMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async "EnsureCoreWebView2Async -Microsoft.Web.WebView2.Wpf.WebView2 class | Microsoft Docs"  
-
 [ReferenceWinformsMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async "EnsureCoreWebView2Async - Microsoft.Web.WebView2.WinForms.WebView2 class | Microsoft Docs"  
-
 [ReferenceWpfMicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties]: /dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties "CoreWebView2CreationProperties - Microsoft.Web.WebView2.Wpf.CoreWebView2CreationProperties class | Microsoft Docs"  
-
 [ReferenceWinFormsMicrosoftWebWebview2WinForms]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms class | Microsoft Docs"  
-
 [ReferenceWpfMicrosoftWebWebview2WpfWebview2Creationproperties]: /dotnet/api/microsoft.web.webview2.wpf.webview2.creationproperties "CreationProperties - Microsoft.Web.WebView2.Wpf.WebView2 class | Microsoft Docs"  
-
 [ReferenceWinFormsMicrosoftWebWebview2WinFormsWebview2]: /dotnet/api/microsoft.web.webview2.winforms.webview2 "Microsoft.Web.WebView2.WinForms.WebView2 class | Microsoft Docs"  
 
-[ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"  
-
-[ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring]: /microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString - Globals | Microsoft Docs"  
-
-[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 Installer"  
-
-[InstallerSample]: https://aka.ms/wv2installersample "WebView2 Installer Sample"  
+[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 Installer | Microsoft Developer"  
 
 [DownloadNonstableEdge]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"  
 
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback | GitHub"  
+[InstallerSample]: https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment "WebView2 Installer Sample | GitHub"  
