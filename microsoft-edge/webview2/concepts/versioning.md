@@ -50,7 +50,7 @@ If WebView2 Runtime updates are stopped, ensure you understand the minimum versi
 > [!IMPORTANT]
 > When developing Evergreen WebView2 applications, regularly test your application against the latest versions of the WebView2 Runtime and non-stable Microsoft Edge browsers.  Because the web platform is constantly evolving, regular testing is the best way to ensure your application performs as intended.  
 
-### Determining WebView2 Runtime requirement
+### Determine WebView2 Runtime requirements
 
 Depending on which SDK you use, consider the following items: 
 
