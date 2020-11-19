@@ -80,7 +80,7 @@ This is a list of all of the Edge-specific capabilities that EdgeDriver returns 
 | msedge.msedgedriverVersion | string | version of EdgeDriver |
 | msedge.userDataDir | string | path to user data directory that Edge is using |
 
-[RemoteDebuggingWindows]: https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/remote-debugging/windows
+[RemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md
 [Selenium]: https://www.selenium.dev/
 [SeleniumDocumentation]: https://www.selenium.dev/documentation
 [WebDriverSpec]: https://www.w3.org/TR/webdriver/
