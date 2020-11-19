@@ -3,7 +3,7 @@ description: Versioning Models used for Microsoft Edge WebView2
 title: Versioning of Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/28/2020
+ms.date: 11/18/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
