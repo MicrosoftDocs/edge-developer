@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/27/2020 
+ms.date: 11/06/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -16,7 +16,7 @@ While experimental features are available in all channels of Microsoft Edge, you
 
 ## Turn on experimental features  
 
-To turn on \(or off\) experimental features in Microsoft Edge, use the following steps.  
+To turn on \(or off\) experimental features in Microsoft Edge, complete the following steps.  
 
 1.  [Open DevTools][DevtoolsOpen].  
      *   Select `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
@@ -47,6 +47,7 @@ The following sections describe the new experimental features that are available
 | [Enable Network Console](#enable-network-console) | 85 or later |  
 | [Source Order Viewer](#source-order-viewer) | 86 or later |  
 | [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor) | 87 or later |  
+| [Turn on Composited Layers in 3D View](#turn-on-composited-layers-in-3d-view) | 87 or later |  
 
 ### Emulation: Support dual screen mode  
 
@@ -170,7 +171,7 @@ Normally, tools such as **Elements** and **Network** may only open in the main p
 *   cross-browser compatibility  
 *   security  
 *   performance  
-*   PWAs  
+*   Progressive Web Apps (PWAs)  
 *   other common web development issues  
 
 The [webhint][WebhintMain] experiment displays the webhint feedback in the [Issues][DevtoolsIssues] panel.  Choose an issue to display solution documentation and a list of the affected resources on your website.  Choose a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.  
@@ -185,7 +186,7 @@ The [webhint][WebhintMain] experiment displays the webhint feedback in the [Issu
 
 **Network Console** is the working title of an experiment to make synthetic network requests over HTTP.  You may use the **Network Console** experiment to send web API requests.  
 
-After enabling the experiment, ensure you restart the DevTools.  To use the **Network Console**, use the following steps.  
+After enabling the experiment, ensure you restart the DevTools.  To use the **Network Console**, complete the following steps.  
 
 1.  Open the **Network** pane.  
 1.  Find the network request that you want to change and resend.  
@@ -203,7 +204,7 @@ After enabling the experiment, ensure you restart the DevTools.  To use the **Ne
 
 **Source Order Viewer** is an experiment that displays the order of elements in the page source.  The on-screen display order may differ from the order of the source, which confuses screen reader and keyboard users.  Use the **Source Order Viewer** experiment to find the differences between on-screen display order and the order of the source.  
 
-After enabling the experiment, ensure you restart the DevTools.  To use **Source Order Viewer**, use the following steps.  
+After enabling the experiment, ensure you restart the DevTools.  To use **Source Order Viewer**, complete the following steps.  
 
 1.  Open the **Elements** pane.  
 1.  Open the **Accessibility** pane in the drawer \(bottom\) panel.  
@@ -251,6 +252,25 @@ When you are editing the keyboard shortcuts for an action, to discard your chang
 
 > [!NOTE]
 > If a keyboard shortcut is currently assigned to another action, you are not able to save it for a new action.  You must first delete the keyboard shortcut for the previous action and then add it to the new action.  
+
+<!--Available in Microsoft Edge version 87 and later.  -->
+
+### Turn on Composited Layers in 3D View
+
+You may now visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.  After enabling the experiment, ensure you restart the DevTools.  To use **Composited Layers**, complete the following steps.  
+
+<!--1.  Navigate to a PWA-enabled website such as `twitter.com`.  
+1.  Choose the **Install ...** \(![Install PWA icon](./media/install-pwa-icon.msft.png)\) icon to install the Twitter PWA.  If it is already set up, open the app as usual.  
+1.  Open the Devtools.  -->  
+1.  On the drawer, choose the **3D View** tool.  
+1.  Open the **Composited Layers** pane.  
+1.  All of the painted layers of the app are displayed.  Try this feature with your own web apps.  
+
+:::image type="complex" source="./media/experiments-layers.msft.png" alt-text="Composited Layers pane" lightbox="./media/experiments-layers.msft.png":::
+   **Composited Layers** pane  
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 87 and later.  -->  
 
 ## Previous experimental features  
 

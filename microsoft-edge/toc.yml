@@ -141,6 +141,8 @@
               href: devtools-guide-chromium/javascript/reference.md
             - name: Snippets
               href: devtools-guide-chromium/javascript/snippets.md
+            - name: Overrides
+              href: devtools-guide-chromium/javascript/overrides.md
             - name: Sources panel overview
               href: devtools-guide-chromium/sources/index.md
             - name: Debug background services
@@ -303,6 +305,20 @@
           href: progressive-web-apps-chromium/serviceworker.md
         - name: Web app manifests
           href: progressive-web-apps-chromium/webappmanifests.md
+    - name: Progressive Web Apps (EdgeHTML)
+      href: progressive-web-apps-edgehtml/index.md
+      items: 
+        - name: Get started with PWAs (EdgeHTML)
+          href: progressive-web-apps-edgehtml/get-started.md
+        - name: Tailor your PWA for Windows
+          href: progressive-web-apps-edgehtml/windows-features.md
+          items: 
+            - name: PWAs for Xbox
+              href: progressive-web-apps-edgehtml/xbox-considerations.md
+        - name: PWAs in the Microsoft Store
+          href: progressive-web-apps-edgehtml/microsoft-store.md
+    - name: Playwright
+      href: playwright/index.md
     - name: Puppeteer
       items:
         - name: Puppeteer overview
@@ -328,6 +344,8 @@
       items: 
         - name: Site compatibility-impacting changes coming to Microsoft Edge
           href: web-platform/site-impacting-changes.md
+        - name: Moving users to Microsoft Edge from IE
+          href: web-platform/ie-to-microsoft-edge-redirection.md
         - name: Tracking prevention in Microsoft Edge
           href: web-platform/tracking-prevention.md
         - name: Microsoft Edge user agent string
