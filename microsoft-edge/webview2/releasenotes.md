@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Release notes for WebView2 SDK  
 
-The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a six week cadence.  Review the following content for up-to-date information about product announcements, additions and modifications to the API surface, and breaking changes.  
+The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a six-week cadence.  Review the following content for up-to-date information about product announcements, additions and modifications to the API surface, and breaking changes.  
 
 > [!NOTE]
 > Re-compile your app after updating the NuGet package.  
@@ -45,7 +45,7 @@ Release Date: Nov 20, 2020
 * Enabled WinForms designer in .NET Core 3.1+ and .NET 5.
 * Improved .NET cookie management.  \([\#611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
 
-###### Github & Bugfixes
+###### Bugfixes
 
 * Added [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.wpf.webview2.acceleratorkeypressed) event to support AcceleratorKey press in WebView2. \([\#288][GithubMicrosoftedgeWebviewfeedbackIssue288]\).  
 * Removed unnecessary files from being output to WebView2 folders.  \([\#461][GithubMicrosoftedgeWebviewfeedbackIssue461]\).  
@@ -70,7 +70,7 @@ Release Date: Nov 20, 2020
 
 #### .NET  
 
-###### Github & Bugfixes
+###### Bugfixes
 
 * CoreWebView2NewWindowRequestedEventArgs.Handled prevents new window from being opened   \([\#549][GithubMicrosoftedgeWebviewfeedbackIssue549]\) and \([\#560][GithubMicrosoftedgeWebviewfeedbackIssue560]\).  
 
