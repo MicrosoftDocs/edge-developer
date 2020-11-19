@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 # Release notes for WebView2 SDK  
 
-The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a six week cadence.  Review the following content for up-to-date information about product announcements, additions and modifications to the API surface, and breaking changes.  
+The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six week cadence.  Review the following content for up-to-date information on product announcements, additions, modifications, and breaking changes to the APIs.  
 
 > [!NOTE]
 > Re-compile your app after updating the NuGet package.  
@@ -22,7 +22,7 @@ The WebView2 team is delivering updates to the [WebView2 SDK][NuGetGallery] on a
 
 ## 1.0.674-prerelease  
 
-Release Date: Oct 19, 2020  
+Release Date: October 19, 2020  
 
 [NuGet package][NuGetGallery1.0.674-prerelease] \| minimum WebView2 Runtime version 86.0.616.0.
 
@@ -53,16 +53,16 @@ Release Date: Oct 19, 2020
  
 ## 1.0.622.22  
 
-Release Date: Oct 19, 2020  
+Release Date: October 19, 2020  
 
 [NuGet package][NuGetGallery1.0.622.22] \| minimum WebView2 Runtime version 86.0.616.0.  
 
 #### General  
 
 > [!IMPORTANT]
-> **Announcement**: Win32 C/C++ WebView2 is now Generally Available (GA). Starting with this release, Release SDKs will be forward-compatible. See [GA announcement blog post](https://aka.ms/wv2gablogpost) for more details.
+> **Announcement**: Win32 C/C++ WebView2 is now Generally Available (GA). Starting with this release, Release SDKs will be forward-compatible. For more information, navigate to [GA announcement blog post](https://aka.ms/wv2gablogpost) for more details.
 
-* [Evergreen WebView2 Runtime and installer][Webview2ConceptsDistributionUnderstandRuntimeInstaller] is GA. Bootstrapper, downlink link for the Bootstrapper, and Standalone Installer for the Evergreen Runtime are available [here](https://developer.microsoft.com/microsoft-edge/webview2/). Sample code for the installation workflow is also available in the [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain]. 
+* [Evergreen WebView2 Runtime and installer][Webview2ConceptsDistributionUnderstandRuntimeInstaller] are GA. Bootstrapper, downlink link for the Bootstrapper, and Standalone Installer for the Evergreen Runtime are available [here](https://developer.microsoft.com/microsoft-edge/webview2/). Sample code for the installation workflow is also available in the [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain]. 
 * [Fixed Version mode][Webview2ConceptsDistributionFixedVersionMode] is available for developer preview.
 
 ## 0.9.628-prerelease  
@@ -101,7 +101,7 @@ Release Date: Sept 10, 2020
 *   Updated `ICoreWebView2NewWindowRequestedEventArgs` to include [WindowFeatures][ReferenceWin32Icorewebview2newwindowrequestedeventargsGetWindowfeatures09622] property, and the associated [ICoreWebView2WindowFeatures][ReferenceWin32Icorewebview2windowfeatures09622].  \([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).  
 *   Updated `System.Windows.Rect`  to use `System.Drawing.Rectangle` instead of `System.Windows.Rect` \([\#235][GithubMicrosoftedgeWebviewfeedbackIssue235]\).  
 *   Updated NewWindowRequested event to handle `window.open()` request without parameters.  \([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).  
-*   [AdditionalBrowserArguments][ReferenceWin32Icorewebview2environmentoptionsPutAdditionalbrowserarguments09622] set using `ICoreWebView2EnvironmentOptions` are not overridden with environment variable nor registry value.  For more information, navigate to [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32IdlCreatecorewebview2environmentwithoptions09622].  
+*   [AdditionalBrowserArguments][ReferenceWin32Icorewebview2environmentoptionsPutAdditionalbrowserarguments09622] set using `ICoreWebView2EnvironmentOptions` aren't overridden with environment variables or registry values.  For more information, navigate to [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32IdlCreatecorewebview2environmentwithoptions09622].  
 
 ## 0.9.579  
 
@@ -126,7 +126,7 @@ Release Date: July 20, 2020
 
 *   Added WebView worker thread improvements.  \([\#318][GithubMicrosoftedgeWebviewfeedbackIssue318]\).  
 *   Disabled popup blocker in WebView.  For more information, navigate to the [IsUserInitiated][ReferenceWin32Icorewebview2newwindowrequestedeventargsGetIsuserinitiated09538] property in the `NewWindowRequested` event.  
-*   Ensured WebView navigation starting event is fired for `about:blank`.  Now, `NavigationStarting` events are fired for all navigation, but cancellations for `about:blank` or iframe srcdoc is not supported and ignored.  
+*   Ensured WebView navigation starting event is fired for `about:blank`.  Now, `NavigationStarting` events are fired for all navigation, but cancellations for `about:blank` or iframe srcdoc aren't supported and ignored.  
 *   Blocked `edge:// URI` scheme in WebView.  
 *   Added experimental [IsSingleSignOnUsingOSPrimaryAccountEnabled][ReferenceWin32Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled09538] property on WebView2 environment options to enable conditional access for WebView.  
 *   Added experimental [WebResourceResponseReceived][ReferenceWin32Icorewebview2experimentalAddWebresourceresponsereceived09538] event that fires after the WebView has received and processed the response for a WebResource request.  Authentication headers, if any, are included in the response object.  
@@ -153,7 +153,7 @@ Release Date: July 20, 2020
 *   > [!IMPORTANT]
     > **Breaking Change**:  In order to ensure the WebView2 API aligns with the Windows API naming conventions, the WebView team updated the names of the following.  
     > *   [AreRemoteObjectsAllowed][ReferenceWin32Icorewebview2settingsGetAreremoteobjectsallowed09488] is now [AreHostObjectsAllowed][ReferenceWin32Icorewebview2settingsGetArehostobjectsallowed09538].  
-*   Updated [AddHostObjectToScript][ReferenceWin32Icorewebview2Addhostobjecttoscript09538] to ensure original host object serializer markers are set to the proxy objects and serialized back as a host object when passed as a parameter in the JavaScript callback \([#148][GithubMicrosoftedgeWebviewfeedbackIssue148]\).  
+*   Updated [AddHostObjectToScript][ReferenceWin32Icorewebview2Addhostobjecttoscript09538] to ensure original host object serializer markers are set to the proxy objects, and serialized back as a host object when passed as a parameter in the JavaScript callback \([#148][GithubMicrosoftedgeWebviewfeedbackIssue148]\).  
 
 #### .NET (0.9.538 pre-release)  
 
@@ -169,8 +169,8 @@ Release Date: July 20, 2020
 
 *   > [!IMPORTANT]
     > **Announcement**:  WebView2 now supports Windows Forms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **pre-release package**.  
-*   For more information about building WPF applications and the WebView2 [WPF Reference][DotnetApiMicrosoftWebWebview2Wpf] for WPF-specific APIs, navigate to [WPF Getting Started Guide][GettingstartedWpf].  
-*   For more information about building Windows Forms applications and the WebView2 [Windows Forms Reference][DotnetApiMicrosoftWebWebview2Winforms] for Windows Forms specific APIs, navigate to [Windows Forms Getting Started Guide][GettingstartedWinforms].  
+*   For more information about building WPF applications, navigate to the [WPF Getting Started Guide][GettingstartedWpf] and the WebView2 [WPF Reference][DotnetApiMicrosoftWebWebview2Wpf] for WPF-specific APIs.  
+*   For more information about building Windows Forms applications, navigate to the [Windows Forms Getting Started Guide][GettingstartedWinforms] and the WebView2 [Windows Forms Reference][DotnetApiMicrosoftWebWebview2Winforms] for Windows Forms specific APIs.  
 *   For more information about the CoreWebView2 APIs, navigate to [.NET Reference][DotnetApiMicrosoftWebWebview2Core].  
 *   > [!CAUTION]
     > **Known Issues**:  The WebView team is aware of some issues in the pre-release that are being resolved in future releases.  
@@ -216,7 +216,7 @@ Release Date: July 20, 2020
 
 [NuGet package][NuGetGallery0.9.430] \| minimum Microsoft Edge version 82.0.430.0.  
 
-The WebView2 SDK is the official Win32 C++ Beta version, which incorporates several feature requests from feedback.  The WebView team tries to limit the number of releases with breaking changes, but as general availability is approached the Beta release is used to incorporate several major breaking changes in one go.  
+The WebView2 SDK is the official Win32 C++ Beta version, which incorporates several feature requests from feedback.  The WebView team tries to limit the number of releases with breaking changes. As we approach general availability, several major breaking changes will be incorporated in the Beta release.  
 
 *   > [!IMPORTANT]
     > **Breaking Change**:  As the final release approaches the WebView team renamed the prefix *IWebView2WebView*   to *ICoreWebView2*   in order to make sure the WebView2 API aligns with the Windows API naming convention.  Additionally, in order to leverage the WebView2 SDK from UI frameworks, the WebView team separated `ICoreWebView2` into [ICoreWebView2][ReferenceWin32Icorewebview209430] and [ICoreWebView2Host][ReferenceWin32Icorewebview2host09430].  `ICoreWebView2Host` supports resizing, showing and hiding, focusing, and other functionality related to windowing and composition.  ICoreWebView2 supports all other WebView2 functionality.  To learn more about incorporating the changes, navigate to the WebView2 [pull request][GithubMicrosoftedgeWebview2samplesPr17] in the WebView2 [APISample][GithubMicrosoftedgeWebview2samplesMain] project.  
@@ -225,10 +225,10 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 *   Added support for ARM64 architecture.  
 *   Added Soft Input Panel \(SIP\) support for touch screen devices.  
 *   Added support for Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and Windows Server 2016.  
-*   Added [NotifyParentWindowPositionChanged][ReferenceWin32Icorewebview2hostNotifyparentwindowpositionchanged09430] which allows for the status bar to follow the window in windowed mode.  The change must also be implemented in windowless mode in order for accessibility features to work.  
-*   Added [AreRemoteObjectsAllowed][ReferenceWin32Icorewebview2settingsGetAreremoteobjectsallowed09430] setting to globally control whether a page may be accessed by any remote objects.  By default, `AreRemoteObjectsAllowed` is enabled, meaning remote objects added by [AddRemoteObject][ReferenceWin32Icorewebview2Addremoteobject09430] are accessible from the page.  When `AreRemoteObjectsAllowed` is disabled, the objects are not accessible from the page.  Changes are applied on the next navigation event.  
+*   Added [NotifyParentWindowPositionChanged][ReferenceWin32Icorewebview2hostNotifyparentwindowpositionchanged09430], which allows for the status bar to follow the window in windowed mode.  Also, implement this change in windowless mode in order for accessibility features to work.  
+*   Added [AreRemoteObjectsAllowed][ReferenceWin32Icorewebview2settingsGetAreremoteobjectsallowed09430] setting to globally control whether a page may be accessed by any remote objects.  By default, `AreRemoteObjectsAllowed` is enabled, meaning remote objects added by [AddRemoteObject][ReferenceWin32Icorewebview2Addremoteobject09430] are accessible from the page.  When `AreRemoteObjectsAllowed` is disabled, the objects aren't accessible from the page.  Changes are applied on the next navigation event.  
 *   Added [IsZoomControlEnabled][ReferenceWin32Icorewebview2settingsGetIszoomcontrolenabled09430] setting to prevent users from impacting the zoom of the WebView using `ctrl`+`+` and `ctrl`+`-` \(or `ctrl`+ mouse wheel\).  Zoom may still be set using [put_ZoomFactor][ReferenceWin32Icorewebview2hostPutZoomfactor09430] when the setting is disabled.  
-*   Changed ZoomFactor to only apply to the current WebView.  Zoom changes to the current WebView do not impact other WebViews that you have navigated to the same site of origin.  For more information, navigate to [get_ZoomFactor][ReferenceWin32Icorewebview2hostGetZoomfactor09430].  
+*   Changed ZoomFactor to only apply to the current WebView.  Zoom changes to the current WebView don't impact other WebViews that you've navigated to the same site of origin.  For more information, navigate to [get_ZoomFactor][ReferenceWin32Icorewebview2hostGetZoomfactor09430].  
 *   Hid ZoomView UI for WebView \([#95][GithubMicrosoftedgeWebviewfeedbackIssue95]\).  
 *   Added [SetBoundsAndZoomFactor][ReferenceWin32Icorewebview2hostSetboundsandzoomfactor09430].  Now, you may set the zoom factor and bounds of a WebView at the same time.  
 *   Added [WindowCloseRequested][ReferenceWin32Icorewebview2AddWindowcloserequested09430] event.  For more information, navigate to [add_WindowCloseRequested][ReferenceWin32Icorewebview2AddWindowcloserequested09430] \([#119][GithubMicrosoftedgeWebviewfeedbackIssue119]\).  
@@ -275,10 +275,10 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 *   Added `GetWebView2BrowserVersionInfo` API \([\#18][GithubMicrosoftedgeWebviewfeedbackIssue18]\).  
 *   Added `NewWindowRequested` event.  
 *   Updated `CreateWebView2EnvironmentWithDetails` function to remove `releaseChannelPreference`.  For more information about the `CreateWebView2EnvironmentWithDetails` function, navigate to [CreateWebView2EnvironmentWithDetails][ReferenceWin32WebView2IdlCreatewebview2environmentwithdetails08190].  The registry and environment variable override is still supported.  The default channel preference is used unless overridden.  
-    During the channel search, the WebView team skips any older channel version that is not compatible with the WebView2 SDK.  
+    During the channel search, the WebView team skips any previous channel version that isn't compatible with the WebView2 SDK.  
     The WebView team selects the more stable channel to ensure the most consistent behaviors for the end user.  When you test with latest Canary builds, you should create a script to set the `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` environment variable to `1` before launching the app.  
 *   Updated the `CreateWebView2EnvironmentWithDetails` function with logic for selecting `userDataFolder` when not specified.  For more information about the `CreateWebView2EnvironmentWithDetails` function, navigate to [CreateWebView2EnvironmentWithDetails][ReferenceWin32WebView2IdlCreatewebview2environmentwithdetails08190].  If you previously used the default `userDataFolder` location, when you switch to the new SDK the default `userDataFolder` is reset \(set to a new location in the host code directory\) and your state is also reset.  
-    If the host process does not have permission to write to the specified directory, the `CreateWebView2EnvironmentWithDetails` function may fail.  You may copy the data from the old user data directory to the new directory.  
+    If the host process doesn't have permission to write to the specified directory, the `CreateWebView2EnvironmentWithDetails` function may fail.  You may copy the data from the old user data directory to the new directory.  
 
 ## 0.8.230  
 
@@ -292,14 +292,14 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 
 [NuGet package][NuGetGallery0.8.190] \| minimum Microsoft Edge version 77.0.190.0.  
 
-*   Added `get_AreDevToolsEnabled`/`put_AreDevToolsEnabled` to control if users are able to open DevTools \([\#16][GithubMicrosoftedgeWebviewfeedbackIssue16]\).  
+*   Added `get_AreDevToolsEnabled`/`put_AreDevToolsEnabled` to control if users can open DevTools \([\#16][GithubMicrosoftedgeWebviewfeedbackIssue16]\).  
 *   Added `get_IsStatusBarEnabled`/`put_IsStatusBarEnabled` to control if the status bar is displayed \([\#19][GithubMicrosoftedgeWebviewfeedbackIssue19]\).  
 *   Added `get_CanGoBack`/`GoBack`/`get_CanGoForward`/`GoForward` for going back and forward through navigation history.  
 *   Added HTTP header types \(`IWebView2HttpHeadersCollectionIterator`/`IWebView2HttpRequestHeaders`/`IWebView2HttpRequestHeaders`\) for viewing and modifying HTTP headers in WebView.  
 *   Added 32-bit WebView support on 64-bit machines \([\#13][GithubMicrosoftedgeWebviewfeedbackIssue13]\).  
 *   Added WebView IDL to the SDK \([\#14][GithubMicrosoftedgeWebviewfeedbackIssue14]\).  
 *   Added lib to support `IID\_\*` interface id objects \([\#12][GithubMicrosoftedgeWebviewfeedbackIssue12]\).  
-*   Added include path, linking, and auto-copying of DLL files to NuGet `TARGET` file in SDK.  
+*   Added include path, linking, and autocopying of DLL files to NuGet `TARGET` file in SDK.  
 *   Enabled requesting `window.open()` in script.  
 
 ## 0.8.149  

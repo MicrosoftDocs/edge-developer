@@ -26,7 +26,7 @@ The prerelease package is a superset of the release package with the additional 
 
 ### Roadmap  
 
-The release package contains all of the stable, supported Win32 C/C++ APIs.  In the future, the release package will contain all stable, supported .NET APIs when they are made generally available.  The prerelease package contains experimental APIs that are subject to change based upon your feedback and shared insights. 
+The release package contains all of the stable, supported Win32 C/C++ APIs.  In the future, the release package will contain all stable, supported .NET APIs when they're made generally available.  The prerelease package contains experimental APIs that are subject to change based on your feedback. 
 
 ## Experimental APIs  
 
@@ -39,13 +39,13 @@ The WebView team is seeking feedback on experimental APIs that may be included i
 > Experimental APIs may not be available in your installed version of the WebView2 Runtime.  
 
 ## Matching WebView2 Runtime versions  
-WebView2 applications require users to install a [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2]. By default, the WebView2 Runtime updates automatically to the latest version. However, there are scenarios where users may halt the WebView2 Runtime update cycle which can cause application compatibility issues.
+WebView2 applications require users to install a [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2]. The WebView2 Runtime updates automatically to the latest version that's available. In some scenarios, users may need to stop automatic WebView2 Runtime updates, which can cause application compatibility issues.
 
-If the WebView2 update cycle is halted, it is important to understand the minimum version of the [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] required for your application. There are two things to take into account:  
+If WebView2 Runtime updates are stopped, ensure you understand the minimum version of the [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] that's required by your application. Consider the following two items:  
 
-1. **The minimum required version of the SDK:** This is specified in the WebView2 [Release Notes][Releasenotes]. For example, for SDK version [1.0.622.22](https://docs.microsoft.com/microsoft-edge/webview2/releasenotes#1062222), you must install either the [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] or a [non-stable Microsoft Edge channel][MicrosoftedgeinsiderDownload] with a build number of **86.0.616.0** or later. The minimum version required will only change when there is a breaking change in the web platform.
+1. **The minimum required version of the SDK:** This information is specified in the WebView2 [Release Notes][Releasenotes]. For example, for SDK version [1.0.622.22](https://docs.microsoft.com/microsoft-edge/webview2/releasenotes#1062222), you must install either the [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] or a [non-stable Microsoft Edge channel][MicrosoftedgeinsiderDownload] with a build number of **86.0.616.0** or later. The minimum version required will only change when there's a breaking change in the web platform.
 
-2. **The minimum required version for the interfaces and APIs you depend on:** New interfaces and APIs are added periodically to WebView2. Different APIs and interfaces within an SDK require different versions of the WebView2 Runtime depending on when they were introduced. For example, a new API or interface added in SDK version [1.0.622.22](https://docs.microsoft.com/microsoft-edge/webview2/releasenotes#1062222) will have a minimum WebView2 Runtime requirement that corresponds to the build number of the package number: **86.0.622.0**. An API or interface added in a subsequent SDK release will have a minimum WebView2 Runtime requirement that corresponds to the version of the Runtime that is released with that version of the SDK. You can determine if the WebView2 Runtime version supports an interface or API [programmatically](#determining-interface-and-api-WebView2-Runtime requirement).
+2. **The minimum required version for the interfaces and APIs you depend on:** New interfaces and APIs are added periodically to WebView2. Different APIs and interfaces within an SDK require different versions of the WebView2 Runtime depending on when they were introduced. For example, a new API or interface added in SDK version [1.0.622.22](https://docs.microsoft.com/microsoft-edge/webview2/releasenotes#1062222) will have a minimum WebView2 Runtime requirement that corresponds to the build number of the package number: **86.0.622.0**. An API or interface added in a subsequent SDK release requires the WebView2 Runtime that has the same version number as the SDK. You can determine if the WebView2 Runtime version supports an interface or API [programmatically](#determining-interface-and-api-WebView2-Runtime requirement).
 
 > [!IMPORTANT]
 > When developing Evergreen WebView2 applications, regularly test your application against the latest versions of the WebView2 Runtime and non-stable Microsoft Edge browsers.  Because the web platform is constantly evolving, regular testing is the best way to ensure your application performs as intended.  
@@ -54,7 +54,7 @@ If the WebView2 update cycle is halted, it is important to understand the minimu
 
 Depending on which SDK you use, consider the following items: 
 
-*   **Win32 C/C++**.  When using `QueryInterface` to obtain a new interface, check for a return value of `E_NOINTERFACE`.  This value may indicate that the WebView2 Runtime is a previous version, and doesn't support that interface. Checkout the WebView2API Sample for an [example](https://github.com/MicrosoftEdge/WebView2Samples/blob/8ec7de9d3e80a942bc7025cffad98eee75e11e64/SampleApps/WebView2APISample/AppWindow.cpp#L622) of how this works.
+*   **Win32 C/C++**.  When using `QueryInterface` to obtain a new interface, check for a return value of `E_NOINTERFACE`.  This value may indicate that the WebView2 Runtime is a previous version, and doesn't support that interface. Navigate to the WebView2API Sample for an [example](https://github.com/MicrosoftEdge/WebView2Samples/blob/8ec7de9d3e80a942bc7025cffad98eee75e11e64/SampleApps/WebView2APISample/AppWindow.cpp#L622) of how this works.
 *   **.NET and WinUI**.  Check for a `No such interface supported` exception when using methods, properties, and events that were added to more recent SDKs.  This exception may occur when the WebView2 Runtime is a previous version, and doesn't support those APIs.  
 
 If an API is unavailable, consider removing the associated feature, or inform your users that they need to update their version of the WebView2 Runtime.  
