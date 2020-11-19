@@ -42,7 +42,7 @@ If you press `F5` on Windows or macOS or select the green **Play** button again,
 
 ### Microsoft Edge (Chromium)  
 
-If you want to launch Microsoft Edge \(Chromium\), the next version of Microsoft Edge, instead of Microsoft Edge \(EdgeHTML\), simply add a `version` attribute to your existing configuration with the version of Microsoft Edge \(Chromium\) you want to launch \(`dev`, `beta`, or `canary`\). The following configuration below launches the Canary version of Microsoft Edge \(Chromium\).  
+If you want to launch Microsoft Edge \(Chromium\), the next version of Microsoft Edge, instead of Microsoft Edge \(EdgeHTML\), simply add a `version` attribute to your existing configuration with the version of Microsoft Edge \(Chromium\) you want to launch \(`stable`, `dev`, `beta`, or `canary`\). The following configuration below launches the Canary version of Microsoft Edge \(Chromium\).  
 
 ```json
 {
