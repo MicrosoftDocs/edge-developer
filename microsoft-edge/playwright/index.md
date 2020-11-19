@@ -94,7 +94,7 @@ For more information about Playwright, navigate to the [Playwright website][Play
 
 <!-- links -->  
 
-[WebdriverChromiumMain]: ../webdriver-chromium.md "WebDriver (Chromium) | Microsoft Docs"  
+[WebdriverChromiumMain]: ../webdriver-chromium "WebDriver (Chromium) | Microsoft Docs"  
 [PuppeteerMain]: ../puppeteer.md "Puppeteer | Microsoft Docs"  
 
 [MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge: Making the web better through more open-source collaboration | Microsoft Experience Blog"  

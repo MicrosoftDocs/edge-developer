@@ -128,7 +128,7 @@ The Microsoft Edge Developer team is eager to hear your feedback about using Pup
 
 <!-- links -->  
 
-[WebdriverChromiumMain]: ./webdriver-chromium.md "WebDriver (Chromium)"  
+[WebdriverChromiumMain]: ./webdriver-chromium "WebDriver (Chromium)"  
 [WebdriverEdgehtmlMain]: ./webdriver.md "WebDriver (EdgeHTML)"  
 
 [GithubChromedevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Chrome DevTools Protocol Viewer | GitHub"  
