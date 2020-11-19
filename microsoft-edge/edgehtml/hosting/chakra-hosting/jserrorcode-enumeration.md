@@ -1,12 +1,7 @@
 ---
 description: "An error code returned from a Chakra hosting API."
 title: "JsErrorCode Enumeration | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsErrorCode"
@@ -16,9 +11,11 @@ ms.assetid: 4902f3f3-47a5-4e74-9c29-f96eeecbcda9
 caps.latest.revision: 15
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsErrorCode Enumeration
+
 An error code returned from a Chakra hosting API.  
   
 ## Syntax  

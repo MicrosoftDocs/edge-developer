@@ -1,12 +1,7 @@
 ---
 description: "Initializes the passed in `VARIANT` as a projection of a JavaScript value."
 title: "JsValueToVariant Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsValueToVariant"
@@ -16,9 +11,11 @@ ms.assetid: 070244be-a69d-4b78-971b-69c0579c03cf
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsValueToVariant Function
+
 Initializes the passed in `VARIANT` as a projection of a JavaScript value.  
   
 ## Syntax  

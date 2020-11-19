@@ -4,13 +4,13 @@ description: Learn how to localize your Microsoft Edge extension package so that
 title: Localizing extension packages
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Localizing Microsoft Edge extensions for Windows and the Microsoft Store  
 
 [!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  

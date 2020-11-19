@@ -4,10 +4,11 @@ description: Learn how the Web Notifications API can be used to let websites sen
 title: Web Notifications API - Dev guide
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Web Notifications API  
 

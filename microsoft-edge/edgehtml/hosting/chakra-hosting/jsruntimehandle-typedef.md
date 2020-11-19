@@ -1,20 +1,17 @@
 ---
 description: "A handle to a Chakra runtime."
 title: "JsRuntimeHandle Typedef | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 69e59bfd-9b0e-4710-9aa8-fbd6844171bc
 caps.latest.revision: 6
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsRuntimeHandle Typedef
+
 A handle to a Chakra runtime.  
   
 ## Syntax  

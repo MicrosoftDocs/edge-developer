@@ -1,13 +1,8 @@
 ---
 description: Considerations when Using the Windows Runtime API.
 title: "Considerations when Using the Windows Runtime API"
-ms.custom: ""
-ms.date: 07/29/2020
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: "windows-integration"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "JavaScript, Windows Runtime API"
@@ -15,7 +10,8 @@ ms.assetid: 2f56d70c-c80d-4876-8e6a-8ae031d31c22
 caps.latest.revision: 8
 author: MSEdgeTeam
 ms.author: msedgedevrel
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Considerations when using the Windows Runtime API  
 

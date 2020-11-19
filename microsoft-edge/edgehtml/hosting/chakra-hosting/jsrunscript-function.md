@@ -1,12 +1,7 @@
 ---
 description: "Executes a script."
 title: "JsRunScript Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsRunScript"
@@ -16,9 +11,11 @@ ms.assetid: 8d6b8c9a-af3a-4e21-a330-5a6b535423a3
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsRunScript Function
+
 Executes a script.  
   
 ## Syntax  

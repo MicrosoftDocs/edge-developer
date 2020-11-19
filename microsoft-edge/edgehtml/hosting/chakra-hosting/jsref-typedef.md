@@ -1,20 +1,17 @@
 ---
 description: "A reference to an object owned by the Chakra garbage collector."
 title: "JsRef Typedef | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 6aafc39f-6b9c-457f-8bf0-48831bffe9b8
 caps.latest.revision: 6
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsRef Typedef
+
 A reference to an object owned by the Chakra garbage collector.  
   
 ## Syntax  

@@ -1,20 +1,17 @@
 ---
 description: "Obtains the underlying memory storage used by a DataView."
 title: "JsGetDataViewStorage Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 7c2180e0-51d5-4cc8-ad21-8bf29ff7c583
 caps.latest.revision: 2
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsGetDataViewStorage Function
+
 Obtains the underlying memory storage used by a `DataView`.  
   
 ## Syntax  

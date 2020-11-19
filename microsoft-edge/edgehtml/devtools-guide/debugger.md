@@ -3,13 +3,13 @@ description: Use the Debugger to step through and troubleshoot your code.
 title: Debugger - DevTools (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugging, breakpoints, watches, service workers, cache api, web storage, cookies
 ms.custom: seodec18
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Debugger - DevTools (EdgeHTML)
 
 Use the **Debugger** to step through code, set watches and breakpoints, live edit your code and inspect your caches. Test and troubleshoot your code by:

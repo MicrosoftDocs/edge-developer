@@ -1,12 +1,7 @@
 ---
 description: "Gets the global object in the current script context."
 title: "JsGetGlobalObject Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsGetGlobalObject"
@@ -16,9 +11,11 @@ ms.assetid: d3e91e64-1ca3-4d2b-aada-725ded0fd0b1
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsGetGlobalObject Function
+
 Gets the global object in the current script context.  
   
 ## Syntax  

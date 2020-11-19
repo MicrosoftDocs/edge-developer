@@ -1,12 +1,7 @@
 ---
 description: "Invokes a function."
 title: "JsCallFunction Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsCallFunction"
@@ -16,9 +11,11 @@ ms.assetid: 8a1dca72-d720-4a28-a86e-6809465006fe
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsCallFunction Function
+
 Invokes a function.  
   
 ## Syntax  

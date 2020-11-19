@@ -3,12 +3,12 @@ description: Microsoft Edge DevTools Protocol Version 0.1 supports the following
 title: DevTools Protocol Version 0.1 Clients (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # DevTools Protocol Version 0.1 Clients (EdgeHTML)  
 
 > [!NOTE]

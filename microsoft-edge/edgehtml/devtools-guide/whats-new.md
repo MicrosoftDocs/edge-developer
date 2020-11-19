@@ -3,13 +3,13 @@ description: See what's new in the Microsoft Edge DevTools in the Windows 10 Oct
 title: What's new in the Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, edgehtml 18
 ms.custom: RS5, seodec18
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # DevTools in the latest Windows 10 update (EdgeHTML 18)
 
 The latest update to Microsoft Edge DevTools adds a number of conveniences both to the UI and under the hood, including new dedicated panels for [*Service Workers*](#service-workers-panel) and [*Storage*](#storage-panel), source [file search](#source-file-search-tools) tools in the Debugger, and new [Edge DevTools Protocol domains](#edge-devtools-protocol-updates) for style/layout debugging and console APIs.

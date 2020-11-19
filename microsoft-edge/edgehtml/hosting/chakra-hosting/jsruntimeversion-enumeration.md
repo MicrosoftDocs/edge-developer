@@ -1,12 +1,7 @@
 ---
 description: "Version of the runtime."
 title: "JsRuntimeVersion Enumeration | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsRuntimeVersion"
@@ -16,9 +11,11 @@ ms.assetid: 3de69423-3bee-4d20-8ae7-2cf56c848be7
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsRuntimeVersion Enumeration
+
 Version of the runtime.  
   
 ## Syntax  

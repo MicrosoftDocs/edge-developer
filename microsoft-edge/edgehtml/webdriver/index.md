@@ -4,14 +4,15 @@ description: Learn how to get started with WebDriver, a wire protocol that allow
 title: WebDriver (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: edge, web development, html, css, javascript, developer, webdriver, selenium, testing
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # WebDriver (EdgeHTML)
+
 The W3C [WebDriver](https://www.w3.org/TR/webdriver/) API is a platform and language-neutral interface and wire protocol allowing programs or scripts to control the behavior of a web browser.
 
 WebDriver enables developers to create automated tests that simulate user interaction. This is different from JavaScript unit tests because WebDriver has access to functionality and information that JavaScript running in the browser doesn't, and it can more accurately simulate user events or OS-level events. WebDriver can also manage testing across multiple windows, tabs and webpages in a single test session.

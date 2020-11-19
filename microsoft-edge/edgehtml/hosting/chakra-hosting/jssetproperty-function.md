@@ -1,12 +1,7 @@
 ---
 description: "Puts an object's property."
 title: "JsSetProperty Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsSetProperty"
@@ -16,9 +11,11 @@ ms.assetid: 2c36bebf-ec86-425c-8131-2dd75fd30f40
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsSetProperty Function
+
 Puts an object's property.  
   
 ## Syntax  

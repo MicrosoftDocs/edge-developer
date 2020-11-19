@@ -4,14 +4,13 @@ description: Reference to common Console codes and suggested fixes
 title: DevTools - Console error and status codes
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/10/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, console codes
 ms.custom: seodec18
-ms.localizationpriority: high
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Console error and status codes  
 
 This reference helps you interpret error and status messages from the  DevTools [Console](../console.md).  Use the following table to look up codes by their prefix \(where "x" represents a 0&ndash;9 digit number\):

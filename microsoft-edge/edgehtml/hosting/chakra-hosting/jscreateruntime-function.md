@@ -1,12 +1,7 @@
 ---
 description: "Creates a new runtime."
 title: "JsCreateRuntime Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsCreateRuntime"
@@ -16,9 +11,11 @@ ms.assetid: 92d09b89-6593-4d73-a562-88f9fec10228
 caps.latest.revision: 15
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsCreateRuntime Function
+
 Creates a new runtime.
   
 ## Syntax  

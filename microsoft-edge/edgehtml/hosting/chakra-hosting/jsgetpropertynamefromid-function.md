@@ -1,12 +1,7 @@
 ---
 description: "Gets the name associated with the property ID."
 title: "JsGetPropertyNameFromId Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsGetPropertyNameFromId"
@@ -16,9 +11,11 @@ ms.assetid: b4ca442c-573d-4bc3-adf7-1b8d48480b3a
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsGetPropertyNameFromId Function
+
 Gets the name associated with the property ID.  
   
 ## Syntax  

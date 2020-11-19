@@ -1,20 +1,17 @@
 ---
 description: "Gets the property ID associated with the symbol."
 title: "JsGetPropertyIdFromSymbol Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 190fe4b9-352e-4b10-9d0e-6c6bbd6363e8
 caps.latest.revision: 2
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsGetPropertyIdFromSymbol Function
+
 Gets the property ID associated with the symbol.  
   
 ## Syntax  

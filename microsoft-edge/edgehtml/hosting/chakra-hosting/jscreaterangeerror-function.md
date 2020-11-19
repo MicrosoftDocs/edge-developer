@@ -1,12 +1,7 @@
 ---
 description: "Creates a new JavaScript RangeError error object."
 title: "JsCreateRangeError Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsCreateRangeError"
@@ -16,9 +11,11 @@ ms.assetid: 0ab05de7-57af-4cfd-9aa5-0a69a893cc97
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsCreateRangeError Function
+
 Creates a new JavaScript RangeError error object.
   
 ## Syntax  

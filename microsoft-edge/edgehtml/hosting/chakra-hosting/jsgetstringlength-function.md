@@ -1,12 +1,7 @@
 ---
 description: "Gets the length of a string value."
 title: "JsGetStringLength Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsGetStringLength"
@@ -16,9 +11,11 @@ ms.assetid: e9f9f28c-e644-439c-aee5-7ce362f71347
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsGetStringLength Function
+
 Gets the length of a string value.  
   
 ## Syntax  

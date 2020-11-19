@@ -4,13 +4,13 @@ description: Learn about how to package up your Microsoft Edge extension manuall
 title: Creating and testing extension packages
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, packaging
 ms.custom: seodec18
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Creating and testing a Microsoft Edge extension AppX package  
 
 [!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  

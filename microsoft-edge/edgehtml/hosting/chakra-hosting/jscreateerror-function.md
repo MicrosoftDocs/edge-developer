@@ -1,12 +1,7 @@
 ---
 description: "Creates a new JavaScript error object."
 title: "JsCreateError Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsCreateError"
@@ -16,9 +11,11 @@ ms.assetid: dadbcac8-c56f-4f30-ba00-2d284daee191
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsCreateError Function
+
 Creates a new JavaScript error object.  
   
 ## Syntax  

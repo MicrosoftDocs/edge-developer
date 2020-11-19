@@ -1,13 +1,8 @@
 ---
 description: Windows Runtime DateTime and TimeSpan Representations
 title: "Windows Runtime DateTime and TimeSpan Representations"
-ms.custom: ""
-ms.date: 07/29/2020
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: "windows-integration"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "JavaScript, Windows Runtime dates and times"
@@ -17,7 +12,8 @@ ms.assetid: 9743e9ac-9054-463e-8264-427183e4905f
 caps.latest.revision: 9
 author: MSEdgeTeam
 ms.author: msedgedevrel
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Windows Runtime DateTime and TimeSpan representations  
 

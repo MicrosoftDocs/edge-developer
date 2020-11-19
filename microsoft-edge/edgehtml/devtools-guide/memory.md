@@ -3,13 +3,13 @@ description: Use the Memory panel to
 title: DevTools - Memory
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, memory, heap, GC, garbage collection, retained size, dominators
 ms.custom: seodec18
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Memory
 
 Use the **Memory** panel to measure your use of system resources and compare heap snapshots at different states of code execution. With it, you can:

@@ -1,20 +1,17 @@
 ---
 description: "A function callback."
 title: "JsNativeFunction Typedef | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 56ef6cdf-4ca9-4f7c-b953-e661addb1a8e
 caps.latest.revision: 5
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsNativeFunction Typedef
+
 A function callback.  
   
 ## Syntax  

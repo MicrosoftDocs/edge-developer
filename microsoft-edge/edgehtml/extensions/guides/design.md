@@ -3,12 +3,12 @@ description: Learn about the various design aspects and UI behavior to consider 
 title: Extensions - Design
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, javascript, design, icons, developer
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Design Guidelines For Microsoft Edge Extensions  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  

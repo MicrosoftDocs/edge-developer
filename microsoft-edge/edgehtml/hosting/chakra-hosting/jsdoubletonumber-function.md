@@ -1,12 +1,7 @@
 ---
 description: "Creates a number value from a double value."
 title: "JsDoubleToNumber Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsDoubleToNumber"
@@ -16,9 +11,11 @@ ms.assetid: 43eb2ee1-2789-4302-954e-c4087e1ee786
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsDoubleToNumber Function
+
 Creates a number value from a `double` value.  
   
 ## Syntax  

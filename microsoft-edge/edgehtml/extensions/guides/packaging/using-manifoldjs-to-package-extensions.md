@@ -4,13 +4,13 @@ description: See how to package your Microsoft Edge extension in a snap with Man
 title: Using ManifoldJS to package extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Using ManifoldJS to create extension AppX packages  
 
 [!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  

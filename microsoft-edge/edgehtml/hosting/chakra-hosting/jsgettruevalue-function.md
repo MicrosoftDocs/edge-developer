@@ -1,12 +1,7 @@
 ---
 description: "Gets the value of `true` in the current script context."
 title: "JsGetTrueValue Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsGetTrueValue"
@@ -16,9 +11,11 @@ ms.assetid: c2a56d48-344b-492b-90b8-f570710f8310
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsGetTrueValue Function
+
 Gets the value of `true` in the current script context.  
   
 ## Syntax  

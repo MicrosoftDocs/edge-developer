@@ -1,19 +1,15 @@
 ---
 description: Special Error Properties from Asynchronous Windows Runtime Methods.
 title: "Special Error Properties from Asynchronous Windows Runtime Methods"
-ms.custom: ""
-ms.date: 07/29/2020
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: "windows-integration"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 45155584-06d8-4e7f-93a6-8564a93f643d
 caps.latest.revision: 4
 author: MSEdgeTeam
 ms.author: msedgedevrel
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Special error properties from asynchronous Windows Runtime methods  
 

@@ -1,20 +1,17 @@
 ---
 description: "Called by the runtime to load the source code of the serialized script. The caller must keep the script buffer valid until the `JsSerializedScriptUnloadCallback`."
 title: "JsSerializedScriptLoadSourceCallback Typedef | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 9406c488-76ac-49e5-b305-39751f3412ea
 caps.latest.revision: 3
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsSerializedScriptLoadSourceCallback Typedef
+
 Called by the runtime to load the source code of the serialized script. The caller must keep the script buffer valid until the `JsSerializedScriptUnloadCallback`.  
   
 ## Syntax  

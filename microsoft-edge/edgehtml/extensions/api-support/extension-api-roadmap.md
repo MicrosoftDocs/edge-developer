@@ -3,13 +3,13 @@ description: Find information on current progress towards completing the Microso
 title: Extensions API roadmap
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, api, extensions, javascript, developer
 ms.custom: seodec18
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Microsoft Edge extension API roadmap  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
@@ -40,4 +40,3 @@ In addition to web APIs, the extension API allows extensions to achieve deeper i
 | webNavigation |                           Used to receive notifications about the status of navigation requests in-flight.                            | Supported — Microsoft Edge (38) / Windows 10 (14393) |
 |  webRequest   |        Enables use of the webRequest API to observe and analyze traffic and to intercept, block, or modify requests in-flight.        | Supported — Microsoft Edge (38) / Windows 10 (14393) |
 |    windows    |                              Interacts with the browser by creating, modifying, and rearranging windows.                              | Supported — Microsoft Edge (38) / Windows 10 (14393) |
-

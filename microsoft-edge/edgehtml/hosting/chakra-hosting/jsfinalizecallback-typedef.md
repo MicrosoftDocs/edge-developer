@@ -1,20 +1,17 @@
 ---
 description: "A finalizer callback."
 title: "JsFinalizeCallback Typedef | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: aa7a0269-b9d4-4717-97ac-8da7eb6ced15
 caps.latest.revision: 6
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsFinalizeCallback Typedef
+
 A finalizer callback.  
   
 ## Syntax  

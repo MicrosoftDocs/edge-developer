@@ -1,12 +1,7 @@
 ---
 description: "Sets the current script context on the thread."
 title: "JsSetCurrentContext Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsSetCurrentContext"
@@ -16,9 +11,11 @@ ms.assetid: 603cc94c-6585-411b-89f9-c6f144e2aa30
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsSetCurrentContext Function
+
 Sets the current script context on the thread.  
   
 ## Syntax  

@@ -4,12 +4,12 @@ description: Get the answers to common questions you may have while loading unpa
 title: Extensions - Troubleshooting
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/16/2019
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Troubleshooting  
 
 [!INCLUDE [deprecation-note](includes/deprecation-note.md)]  

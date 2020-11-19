@@ -1,12 +1,7 @@
 ---
 description: "Creates a string value from a string pointer."
 title: "JsPointerToString Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsPointerToString"
@@ -16,9 +11,11 @@ ms.assetid: c71ce07e-4359-450c-afbf-a6ab7d48dddf
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsPointerToString Function
+
 Creates a string value from a string pointer.  
   
 ## Syntax  

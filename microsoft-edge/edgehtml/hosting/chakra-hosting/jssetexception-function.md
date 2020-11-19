@@ -1,12 +1,7 @@
 ---
 description: "Sets the runtime of the current context to an exception state."
 title: "JsSetException Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsSetException"
@@ -16,9 +11,11 @@ ms.assetid: c528793a-2e1b-4ee1-bd2e-e63fd547dc40
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsSetException Function
+
 Sets the runtime of the current context to an exception state.  
   
 ## Syntax  

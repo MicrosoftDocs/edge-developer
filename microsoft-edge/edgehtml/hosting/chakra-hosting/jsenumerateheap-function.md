@@ -1,12 +1,7 @@
 ---
 description: "Enumerates the heap of the current context."
 title: "JsEnumerateHeap Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsEnumerateHeap"
@@ -16,9 +11,11 @@ ms.assetid: 3e518e0b-b959-4686-899c-83e6b1946c9d
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsEnumerateHeap Function
+
 Enumerates the heap of the current context.  
   
 ## Syntax  

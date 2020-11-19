@@ -1,20 +1,17 @@
 ---
 description: "A promise continuation callback."
 title: "JsPromiseContinuationCallback Typedef | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 51a3fd02-9668-4cf7-bb0b-e1fd03b2528f
 caps.latest.revision: 3
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsPromiseContinuationCallback Typedef
+
 A promise continuation callback.  
   
 ## Syntax  

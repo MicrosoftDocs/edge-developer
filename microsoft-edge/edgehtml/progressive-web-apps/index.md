@@ -3,13 +3,13 @@ description: Progressive Web Apps run natively on Windows 10.  Here is everythin
 title: Progressive Web Apps (EdgeHTML) on Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Progressive Web Apps (EdgeHTML) on Windows  
 
 With [Progressive Web Apps][MDNApps] \(or simply PWAs\) you do not have to decide between using open web technologies for cross-platform interoperability and providing your users with a native app-like experience customized for their device.  That is because PWAs are just websites that are [progressively enhanced][AListApartUnderstandingProgressiveEnhancement] to function like native apps on supporting platforms.  The qualities of a PWA combine the best of the web and native apps.  

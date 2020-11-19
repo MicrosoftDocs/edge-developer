@@ -1,20 +1,17 @@
 ---
 description: "Creates a number value from an `int` value."
 title: "JsIntToNumber Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 1393c4ac-7189-4e9c-8e54-b0e041c22112
 caps.latest.revision: 4
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsIntToNumber Function
+
 Creates a number value from an `int` value.  
   
 ## Syntax  

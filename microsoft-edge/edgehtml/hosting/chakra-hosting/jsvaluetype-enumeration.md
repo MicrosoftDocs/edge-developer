@@ -1,12 +1,7 @@
 ---
 description: "The JavaScript type of a JsValueRef."
 title: "JsValueType Enumeration | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsValueType"
@@ -16,9 +11,11 @@ ms.assetid: 6645e723-e554-41fc-b622-ab54ee044b3d
 caps.latest.revision: 16
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsValueType Enumeration
+
 The JavaScript type of a JsValueRef.  
   
 ## Syntax  

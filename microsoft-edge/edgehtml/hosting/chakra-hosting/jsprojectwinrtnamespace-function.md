@@ -1,20 +1,17 @@
 ---
 description: "Project a WinRT namespace."
 title: "JsProjectWinRTNamespace Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 8a23c154-df4b-4ce3-9fef-f41f90acdb87
 caps.latest.revision: 5
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsProjectWinRTNamespace Function
+
 Project a WinRT namespace.  
   
 ## Syntax  

@@ -1,12 +1,7 @@
 ---
 description: "Determines whether an object has a property."
 title: "JsHasProperty Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsHasProperty"
@@ -16,9 +11,11 @@ ms.assetid: 26c94c3d-aae6-4257-8644-df63c7e714fb
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsHasProperty Function
+
 Determines whether an object has a property.  
   
 ## Syntax  

@@ -1,20 +1,17 @@
 ---
 description: "Retrieves the `int` value of a number value."
 title: "JsNumberToInt Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 8b9256d6-76ac-4c74-a97c-fbb16c13f5f5
 caps.latest.revision: 2
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsNumberToInt Function
+
 Retrieves the `int` value of a number value.  
   
 ## Syntax  

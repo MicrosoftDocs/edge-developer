@@ -4,10 +4,11 @@ description: Guides for browser features in Microsoft Edge.
 title: Browser - Dev guide
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Browser features  
 

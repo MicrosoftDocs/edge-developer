@@ -4,12 +4,12 @@ description: Learn about how you can use native messaging to have your extension
 title: Extensions - Packaging
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Packaging Microsoft Edge extensions  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  

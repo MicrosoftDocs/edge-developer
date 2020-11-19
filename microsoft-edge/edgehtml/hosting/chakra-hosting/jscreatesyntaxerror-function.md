@@ -1,12 +1,7 @@
 ---
 description: "Creates a new JavaScript SyntaxError error object."
 title: "JsCreateSyntaxError Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsCreateSyntaxError"
@@ -16,9 +11,11 @@ ms.assetid: 839845fc-60c4-4ffc-bfcc-fd7a8f06126f
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsCreateSyntaxError Function
+
 Creates a new JavaScript SyntaxError error object.  
   
 ## Syntax  

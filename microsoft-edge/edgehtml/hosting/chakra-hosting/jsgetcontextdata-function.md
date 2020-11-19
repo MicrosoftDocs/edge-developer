@@ -1,20 +1,17 @@
 ---
 description: "Gets the internal data set on JsrtContext."
 title: "JsGetContextData Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f5d7e446-267a-4a80-a427-6e1b95a3391b
 caps.latest.revision: 4
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsGetContextData Function
+
 Gets the internal data set on JsrtContext.  
   
 ## Syntax  

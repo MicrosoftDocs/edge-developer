@@ -1,13 +1,8 @@
 ---
 description: Using Windows Runtime Asynchronous Methods.
 title: "Using Windows Runtime Asynchronous Methods"
-ms.custom: ""
-ms.date: 07/29/2020
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: "windows-integration"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "JavaScript, Windows Runtime asynchronous methods"
@@ -15,7 +10,8 @@ ms.assetid: 70756833-44f7-4383-827f-2ac781558082
 caps.latest.revision: 15
 author: MSEdgeTeam
 ms.author: msedgedevrel
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Using Windows Runtime asynchronous methods  
 

@@ -1,12 +1,13 @@
 ---
 title: "JavaScript Runtime Hosting"
-ms.date: 06/08/2020
 ms.prod: microsoft-edge
 ms.topic: "article"
 ms.assetid: d6615079-2df7-420f-a126-077e7d42486c
 caps.latest.revision: 6
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---  
 # JavaScript runtime hosting  
 

@@ -1,12 +1,7 @@
 ---
 description: "Runs a serialized script."
 title: "JsRunSerializedScript Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsRunSerializedScript"
@@ -16,9 +11,11 @@ ms.assetid: 3fd3f6f1-eb3e-4751-92a5-c93b1035f3b2
 caps.latest.revision: 13
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsRunSerializedScript Function
+
 Runs a serialized script.  
   
 ## Syntax  

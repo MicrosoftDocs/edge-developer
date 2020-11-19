@@ -1,12 +1,7 @@
 ---
 description: "Attributes of a runtime. "
 title: "JsRuntimeAttributes Enumeration | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsRuntimeAttributes"
@@ -16,9 +11,11 @@ ms.assetid: f76d82e9-a695-4d6a-96c1-b3a4d27fed68
 caps.latest.revision: 14
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsRuntimeAttributes Enumeration
+
 Attributes of a runtime.  
   
 ## Syntax  

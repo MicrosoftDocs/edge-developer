@@ -1,20 +1,17 @@
 ---
 description: "Creates a JavaScript typed array object."
 title: "JsCreateTypedArray Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 937a2a91-6f5f-4aaa-a018-d3089702bf36
 caps.latest.revision: 2
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsCreateTypedArray Function
+
 Creates a JavaScript typed array object.  
   
 ## Syntax  

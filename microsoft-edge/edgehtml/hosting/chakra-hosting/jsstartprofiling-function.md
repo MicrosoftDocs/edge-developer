@@ -1,12 +1,7 @@
 ---
 description: "Starts profiling in the current context."
 title: "JsStartProfiling Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsStartProfiling"
@@ -16,9 +11,11 @@ ms.assetid: 638da395-42dd-4fc5-b581-819e647e887d
 caps.latest.revision: 13
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsStartProfiling Function
+
 Starts profiling in the current context.  
   
 ## Syntax  

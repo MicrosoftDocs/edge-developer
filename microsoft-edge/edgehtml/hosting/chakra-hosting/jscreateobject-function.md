@@ -1,12 +1,7 @@
 ---
 description: "Creates a new object."
 title: "JsCreateObject Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsCreateObject"
@@ -16,9 +11,11 @@ ms.assetid: 6c1d01a4-9254-443e-b974-6f0b0c861ca2
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsCreateObject Function
+
 Creates a new object.
   
 ## Syntax  

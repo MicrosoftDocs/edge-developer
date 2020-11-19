@@ -3,13 +3,13 @@ description: Use the Fonts pane to inspect fonts used on the page
 title: DevTools - Elements - Fonts
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, elements, fonts, @font-face
 ms.custom: seodec18
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Fonts
 
 View information about your CSS `@font-face` rules, including where fonts are being loaded (*Local* or *Network*) and how many characters on the page are using them.

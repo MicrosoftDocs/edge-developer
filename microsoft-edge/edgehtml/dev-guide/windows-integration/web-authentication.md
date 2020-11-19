@@ -4,11 +4,12 @@ description: Learn how the Web Authentication API can enable web applications to
 title: Web Authentication - Dev guide  
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: windows-integration
 keywords: edge, web development, html, css, javascript, developer
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Web Authentication and Windows Hello  
 

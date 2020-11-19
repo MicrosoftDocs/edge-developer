@@ -1,12 +1,7 @@
 ---
 description: "Retrieves the `double` value of a number value."
 title: "JsNumberToDouble Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsNumberToDouble"
@@ -16,9 +11,11 @@ ms.assetid: 5f52e8b6-2b70-49a3-879a-bd83ebf2ac33
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsNumberToDouble Function
+
 Retrieves the `double` value of a number value.  
   
 ## Syntax  

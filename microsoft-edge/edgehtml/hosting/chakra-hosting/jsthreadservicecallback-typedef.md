@@ -1,20 +1,17 @@
 ---
 description: "A thread service callback."
 title: "JsThreadServiceCallback Typedef | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: dbe67be5-418a-4f66-8b68-b38078a6d140
 caps.latest.revision: 6
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsThreadServiceCallback Typedef
+
 A thread service callback.  
   
 ## Syntax  

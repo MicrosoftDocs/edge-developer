@@ -3,10 +3,11 @@ title: MSApp API reference
 description: Provides helper functions that enable you to create Blob and MSStream objects.  MSApp objects and members are supported for Windows apps using JavaScript.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/29/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: MSapp, PWA, file upload, Blog, MSStream, windows 10 apps, uwp, edge
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # MSApp  
 

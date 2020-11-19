@@ -1,12 +1,7 @@
 ---
 description: "Returns the exception that caused the runtime of the current context to be in the exception state and resets the exception state for that runtime."
 title: "JsGetAndClearException Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsGetAndClearException"
@@ -16,9 +11,11 @@ ms.assetid: 6aec8a88-41ee-47f6-b5f4-32f3cae6bb7b
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsGetAndClearException Function
+
 Returns the exception that caused the runtime of the current context to be in the exception state and resets the exception state for that runtime.  
   
 ## Syntax  

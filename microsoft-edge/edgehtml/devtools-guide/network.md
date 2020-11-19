@@ -3,13 +3,13 @@ description: Use the Network panel to monitor and profile page resource requests
 title: DevTools - Network
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, network, load time, http, https, browser cache, HAR
 ms.custom: seodec18
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Network
 
 Use the **Network** panel to monitor, inspect and profile the requests and responses sent over the wire. With it, you can:

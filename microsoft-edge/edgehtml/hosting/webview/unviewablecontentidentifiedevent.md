@@ -3,12 +3,12 @@ description: Indicates the webview is attempting to download an unsupported file
 title: UnviewableContentIdentifiedEvent object
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # UnviewableContentIdentifiedEvent object  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  

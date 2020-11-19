@@ -1,12 +1,7 @@
 ---
 description: "Returns a value that indicates whether the heap of the current context is being enumerated."
 title: "JsIsEnumeratingHeap Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsIsEnumeratingHeap"
@@ -16,9 +11,11 @@ ms.assetid: 5d14518e-3153-43f2-9a9c-068580cbd54f
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsIsEnumeratingHeap Function
+
 Returns a value that indicates whether the heap of the current context is being enumerated.  
   
 ## Syntax  

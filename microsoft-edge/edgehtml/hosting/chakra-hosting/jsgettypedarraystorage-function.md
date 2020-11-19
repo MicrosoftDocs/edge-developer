@@ -1,20 +1,17 @@
 ---
 description: "Obtains the underlying memory storage used by a typed array."
 title: "JsGetTypedArrayStorage Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 52e4ac5f-cc71-456d-95de-a48f7327503d
 caps.latest.revision: 2
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsGetTypedArrayStorage Function
+
 Obtains the underlying memory storage used by a typed array.  
   
 ## Syntax  

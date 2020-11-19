@@ -3,13 +3,13 @@ description: Use the Console API to programmatically debug and profile your code
 title: DevTools - Console - Console API
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, console api
 ms.custom: seodec18
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Console API
 
 The *Console API* provides command-line and programmatic access to the  DevTools Console through the global `console` object, allowing you to:

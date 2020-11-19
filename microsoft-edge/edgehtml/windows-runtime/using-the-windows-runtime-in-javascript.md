@@ -1,13 +1,8 @@
 ---
 description: Using the Windows Runtime in JavaScript.
 title: "Using the Windows Runtime in JavaScript"
-ms.custom: ""
-ms.date: 07/29/2020
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: "windows-integration"
-ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
   - "JavaScript, Windows Runtime"
@@ -15,7 +10,8 @@ ms.assetid: 90658546-f746-4e34-a7d1-71cf9ee322a2
 caps.latest.revision: 16
 author: MSEdgeTeam
 ms.author: msedgedevrel
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Using the Windows Runtime in JavaScript  
 

@@ -1,20 +1,17 @@
 ---
 description: "Gets the list of all symbol properties on the object."
 title: "JsGetOwnPropertySymbols Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 57c431e3-de0b-4ed0-b750-87a86448daff
 caps.latest.revision: 2
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsGetOwnPropertySymbols Function
+
 Gets the list of all symbol properties on the object.  
   
 ## Syntax  

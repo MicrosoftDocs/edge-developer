@@ -3,12 +3,12 @@ description: Progressively enhance your PWA for Windows with native app features
 title: Tailor your PWA (EdgeHTML) for Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/03/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, WinRT, UWP, EdgeHTML
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Tailor your PWA (EdgeHTML) for Windows  
 
 PWAs installed on Windows 10 enjoy [all the benefits][PwaIndexWindows10] of running as [Universal Windows Platform \(UWP\)][WindowsUWPGetStartedGuide] apps, including protection through Windows app sandboxing security and full access to [Windows Runtime \(WinRT\))][UwpApiIndex] APIs, including those for:  
@@ -341,4 +341,4 @@ And when you are ready, here is how \(and why!\) to [Submit your PWA to the Micr
 [MicrosoftSupportWindowsAppPermissions]: https://support.microsoft.com/help/10557/windows-10-app-permissions "App permissions"  
 [MicrosoftVisualStudioDownloads]: https://visualstudio.microsoft.com/downloads "Downloads"  
 [MicrosoftVisualStudioPreview]: https://visualstudio.microsoft.com/vs/preview "Visual Studio Preview"  
-[PreviousVSDownloads]: https://visualstudio.microsoft.com/vs/older-downloads/ "Visual Studio downloads"
+[PreviousVSDownloads]: https://visualstudio.microsoft.com/vs/older-downloads/ "Visual Studio downloads"  

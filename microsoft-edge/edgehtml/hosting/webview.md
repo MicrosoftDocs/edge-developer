@@ -3,13 +3,13 @@ description: Host web content in your Windows 10 app with the WebView (EdgeHTML)
 title: Microsoft Edge WebView for Windows 10 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/08/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: x-ms-webview, MSHTMLWebViewElement, webview, windows 10 apps, uwp, edge
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # WebView (EdgeHTML) for Windows 10 apps  
 
 [!INCLUDE [deprecation-note](./includes/deprecation-note.md)]  

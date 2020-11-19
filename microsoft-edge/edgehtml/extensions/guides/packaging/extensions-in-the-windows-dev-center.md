@@ -3,13 +3,13 @@ description: Learn how to sign up for a Windows Developer account and reserve a 
 title: Extensions in Partner Center
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/05/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Registering for a Windows Developer account and reserving names in Partner Center  
 
 [!INCLUDE [deprecation-note](../../includes/deprecation-note.md)]  

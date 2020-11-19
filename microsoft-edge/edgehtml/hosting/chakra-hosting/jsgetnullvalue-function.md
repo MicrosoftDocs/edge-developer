@@ -1,12 +1,7 @@
 ---
 description: "Gets the value of `null` in the current script context."
 title: "JsGetNullValue Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsGetNullValue"
@@ -16,9 +11,11 @@ ms.assetid: 132a1496-8dfe-4d3c-a8f8-389f5b0b50d2
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsGetNullValue Function
+
 Gets the value of `null` in the current script context.  
   
 ## Syntax  

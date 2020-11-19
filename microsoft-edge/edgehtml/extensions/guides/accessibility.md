@@ -4,12 +4,12 @@ description: To ensure your extension’s icon is visible while in both light an
 title: Accessibility - Extensions (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Accessibility - Extensions (EdgeHTML)  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  

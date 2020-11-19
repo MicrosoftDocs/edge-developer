@@ -1,12 +1,7 @@
 ---
 description: "An invalid runtime handle."
 title: "JS_INVALID_RUNTIME_HANDLE Constant | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JS_INVALID_RUNTIME_HANDLE"
@@ -16,9 +11,11 @@ ms.assetid: ee8c9439-7422-457a-b924-98cf5f126c8c
 caps.latest.revision: 13
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JS_INVALID_RUNTIME_HANDLE Constant
+
 An invalid runtime handle.  
   
 ## Syntax  

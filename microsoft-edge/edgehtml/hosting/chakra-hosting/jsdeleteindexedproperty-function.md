@@ -1,12 +1,7 @@
 ---
 description: "Delete the value at the specified index of an object."
 title: "JsDeleteIndexedProperty Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsDeleteIndexedProperty"
@@ -16,9 +11,11 @@ ms.assetid: cc876839-2ecd-41a8-82d0-c19b3de944e3
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsDeleteIndexedProperty Function
+
 Delete the value at the specified index of an object.  
   
 ## Syntax  

@@ -1,12 +1,7 @@
 ---
 description: "Determines whether an object is an external object."
 title: "JsHasExternalData Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsHasExternalData"
@@ -16,9 +11,11 @@ ms.assetid: a077e3ac-4f6f-4d94-8398-f1b5cc4c18e0
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsHasExternalData Function
+
 Determines whether an object is an external object.  
   
 ## Syntax  

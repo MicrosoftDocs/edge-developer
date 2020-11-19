@@ -1,20 +1,17 @@
 ---
 description: "A callback called before collecting an object."
 title: "JsObjectBeforeCollectCallback Typedef | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: f21a064a-579f-44cb-9d21-76b62e8c18f5
 caps.latest.revision: 3
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsObjectBeforeCollectCallback Typedef
+
 A callback called before collecting an object.  
   
 ## Syntax  

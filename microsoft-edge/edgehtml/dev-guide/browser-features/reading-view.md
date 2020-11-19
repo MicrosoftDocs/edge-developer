@@ -4,10 +4,11 @@ description: See how Microsoft Edge provides a reading view for webpages to enab
 title: Reading view - Dev guide
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/28/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Reading view  
 

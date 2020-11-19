@@ -1,12 +1,7 @@
 ---
 description: "Parses a serialized script and returns a function representing the script."
 title: "JsParseSerializedScript Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsParseSerializedScript"
@@ -16,9 +11,11 @@ ms.assetid: 40d0c7c4-fd5b-46ed-9e65-38c2db2fc859
 caps.latest.revision: 13
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsParseSerializedScript Function
+
 Parses a serialized script and returns a function representing the script.  
   
 ## Syntax  

@@ -1,12 +1,7 @@
 ---
 description: "Retrieves the string pointer of a string value."
 title: "JsStringToPointer Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsStringToPointer"
@@ -16,9 +11,11 @@ ms.assetid: c7aa7a09-489d-4435-8f8a-aeb62f8875ae
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsStringToPointer Function
+
 Retrieves the string pointer of a string value.  
   
 ## Syntax  

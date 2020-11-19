@@ -1,13 +1,14 @@
 ---
 title: JavaScript version information
 description: Compare JavaScript support across Microsoft Edge, Microsoft Store apps, and Internet Explorer
-ms.date: 07/28/2020
 ms.prod: microsoft-edge
 ms.topic: language-reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
 keywords: edge, ie, chakra, jscript, wwa, store apps
 ms.custom: seodec18
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JavaScript version information  
 

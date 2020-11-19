@@ -3,11 +3,12 @@ description: This guide provides an overview of the developer features and stand
 title: New features and APIs in EdgeHTML 15
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # What's new in EdgeHTML 15  
 

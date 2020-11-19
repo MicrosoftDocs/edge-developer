@@ -1,20 +1,17 @@
 ---
 description: "Sets the callback to be used in order to invoke a projection completion back to the callers required thread."
 title: "JsSetProjectionEnqueueCallback Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: c751ccef-20d2-4d41-9568-1c54adf47cdf
 caps.latest.revision: 4
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsSetProjectionEnqueueCallback Function
+
 Sets the callback to be used in order to invoke a projection completion back to the callers required thread.  
   
 ## Syntax  

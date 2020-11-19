@@ -1,12 +1,7 @@
 ---
 description: "Returns the prototype of an object."
 title: "JsGetPrototype Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsGetPrototype"
@@ -16,9 +11,11 @@ ms.assetid: 05d743fc-103e-4a92-86f2-a063f39a2a6f
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsGetPrototype Function
+
 Returns the prototype of an object.  
   
 ## Syntax  

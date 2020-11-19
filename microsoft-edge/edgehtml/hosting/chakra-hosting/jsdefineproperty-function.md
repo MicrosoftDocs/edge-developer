@@ -1,12 +1,7 @@
 ---
 description: "Defines a new object's own property from a property descriptor."
 title: "JsDefineProperty Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsDefineProperty"
@@ -16,9 +11,11 @@ ms.assetid: b2cf48d6-eb40-457c-aa8b-b16a50dc5d6a
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsDefineProperty Function
+
 Defines a new object's own property from a property descriptor.  
   
 ## Syntax  

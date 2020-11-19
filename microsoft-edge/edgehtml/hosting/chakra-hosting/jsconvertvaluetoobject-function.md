@@ -1,12 +1,7 @@
 ---
 description: "Converts the value to object using standard JavaScript semantics."
 title: "JsConvertValueToObject Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsConvertValueToObject"
@@ -16,9 +11,11 @@ ms.assetid: 6528b28a-1d2b-417f-bf78-bf05547c52e1
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsConvertValueToObject Function
+
 Converts the value to object using standard JavaScript semantics.  
   
 ## Syntax  

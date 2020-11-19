@@ -1,12 +1,7 @@
 ---
 description: "Serializes a parsed script to a buffer than can be reused."
 title: "JsSerializeScript Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsSerializeScript"
@@ -16,9 +11,11 @@ ms.assetid: ca42c194-e1c1-407d-b542-b9d494e3ac4e
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsSerializeScript Function
+
 Serializes a parsed script to a buffer than can be reused.  
   
 ## Syntax  

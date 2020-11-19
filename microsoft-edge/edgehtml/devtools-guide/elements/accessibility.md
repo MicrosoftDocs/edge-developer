@@ -3,13 +3,13 @@ description: Use the Accessibility tools to view verify and test page accessibil
 title: Accessibility - DevTools (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, elements, accessibility
 ms.custom: seodec18
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Accessibility - DevTools (EdgeHTML)  
 
 View the accessible properties assigned to the selected element. Hover over any of the property names for a description of how it's used by assistive technologies. You can also right-click any property to copy its value to the clipboard.

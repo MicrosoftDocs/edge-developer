@@ -1,13 +1,15 @@
 ---
 description: Reference for the Overlay Domain. Overlay domain exposes visual adornments and node selection interaction
 title: Overlay Domain - DevTools Protocol Version 0.2
-author: pelavall
-ms.author: pelavall
-ms.date: 8/17/2018
+author: MSEdgeTeam
+ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Overlay
+
 Overlay domain exposes visual adornments and node selection interaction
 
 | | |

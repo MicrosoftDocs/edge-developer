@@ -1,12 +1,7 @@
 ---
 description: "Disposes a runtime."
 title: "JsDisposeRuntime Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsDisposeRuntime"
@@ -16,9 +11,11 @@ ms.assetid: 0aefde3f-7250-48be-afc5-53ea85c12f30
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsDisposeRuntime Function
+
 Disposes a runtime.  
   
 ## Syntax  

@@ -1,12 +1,7 @@
 ---
 description: "Creates a script context for running scripts."
 title: "JsCreateContext Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsCreateContext"
@@ -16,9 +11,11 @@ ms.assetid: aceca043-2c73-4029-a06c-8ad6695109cf
 caps.latest.revision: 15
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsCreateContext Function
+
 Creates a script context for running scripts.  
   
 ## Syntax  

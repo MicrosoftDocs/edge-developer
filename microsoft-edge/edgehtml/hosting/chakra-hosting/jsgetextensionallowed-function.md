@@ -1,12 +1,7 @@
 ---
 description: "Returns a value that indicates whether an object is extensible or not."
 title: "JsGetExtensionAllowed Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsGetExtensionAllowed"
@@ -16,9 +11,11 @@ ms.assetid: 839054a1-d643-47d9-89db-6a015bba0d91
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsGetExtensionAllowed Function
+
 Returns a value that indicates whether an object is extensible or not.  
   
 ## Syntax  

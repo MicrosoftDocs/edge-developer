@@ -3,9 +3,10 @@ description: DevTools Protocol Version 0.2 (EdgeHTML) Reference for the Page Dom
 title: Page Domain - DevTools Protocol Version 0.2 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
 ms.topic: reference
 ms.prod: microsoft-edge
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Page Domain - DevTools Protocol Version 0.2 (EdgeHTML)  
 

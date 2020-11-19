@@ -1,12 +1,7 @@
 ---
 description: "Gets the current script context on the thread."
 title: "JsGetCurrentContext Function | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
 ms.prod: microsoft-edge
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: 
   - "jsrt/JsGetCurrentContext"
@@ -16,9 +11,11 @@ ms.assetid: dd5fe0fa-d1e5-4af6-809e-e655a27519b5
 caps.latest.revision: 12
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-manager: ""
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JsGetCurrentContext Function
+
 Gets the current script context on the thread.  
   
 ## Syntax  

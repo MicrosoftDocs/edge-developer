@@ -3,14 +3,15 @@ description: Use the Styles pane to view and edit currently applied styles and p
 title: DevTools - Elements - Styles
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/10/2017
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, elements, styles, pseudo state, pseudo classe, pseudo element
 ms.custom: seodec18
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
-
 # Styles
+
 View and edit the currently applied styles, organized by stylesheet.  As you make changes to your properties, a colored indicator bar will appear for changed (yellow), added (green), and deleted (red) properties.
 
 ![Styles pane](../media/elements_styles.png)

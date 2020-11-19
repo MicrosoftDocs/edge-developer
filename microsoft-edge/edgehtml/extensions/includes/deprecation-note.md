@@ -3,7 +3,8 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 04/17/2020
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 > [!NOTE]
 > This documentation is for extensions for the [legacy version of Microsoft Edge][MicrosoftSupportEdgeLegacy]. For information on the new Microsoft Edge, see [Microsoft Edge (Chromium) Extensions][MicrosoftEdgeExtensionsChromiumIndex].

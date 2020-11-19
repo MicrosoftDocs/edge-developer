@@ -3,11 +3,12 @@ description: Guides for Windows integration features in Microsoft Edge.
 title: Windows integration features - Dev guide
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/28/2020
 ms.topic: article
 ms.technology: windows-integration
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
+ms.date: 11/19/2020
+ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Windows integration features  
 
