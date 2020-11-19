@@ -115,7 +115,7 @@ For constrained environments with strict compatibility requirements, consider us
 To use the Fixed Version mode, complete the following actions
 
 1.  [Download][Webview2Installer] the Fixed Version package. 
-1.  Decompress the package using command line `expand {path to the package} -F:* {path to the destination folder}` or with tools such as WinRAR. Avoid decompressing through the File Explorer as it may not generate the right folder structure.  
+1.  Decompress the package using command line `expand {path to the package} -F:* {path to the destination folder}` or with tools such as WinRAR. Avoid decompressing through the File Explorer as it may not generate the correct folder structure.  
 1.  Include the decompressed Fixed Version binaries in your project.  
 1.  Indicate the path to the Fixed Version binaries when creating the WebView2 environment.  
     *   For Win32 C/C++, you may create the environment using the [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions] function.  Use the `browserExecutableFolder` parameter to indicate the path to the folder containing `msedgewebview2.exe`.  
