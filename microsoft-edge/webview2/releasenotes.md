@@ -17,8 +17,62 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six week cadence
 > [!NOTE]
 > Re-compile your app after updating the NuGet package.  
 
+## 1.0.702-prerelease  
+
+Release Date: Nov 20, 2020  
+
+[NuGet package][NuGetGallery1.0.702-prerelease] \| minimum Microsoft Edge version 88.0.702.0.
+
+#### General
+
+###### Features
+
+* Added [WebView2 Group Policies][DeployedgeMicrosoftEdgeWebviewPolicies]. For more information on best practices, navigate to [group policies for WebView2][Webview2ConceptsEnterpriseGroupPoliciesForWebview2].
+* > [!IMPORTANT]
+  > **Breaking Change**:  Old registry location `{Root}\Software\Policies\Microsoft\EmbeddedBrowserWebView\LoaderOverride\{AppId}` has been deprecated.
+* Added support for [Drag & Drop][ReferenceWin32Icorewebview2experimentalcompositioncontroller3] within WebView2.
+* Added APIs to handle DPI support.
+    * Added [RasterizationScale](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.702-prerelease&preserve-view=true#get_rasterizationscale) property to change the DPI scale for WebView content and UI popups, and associated [RasterizationScaleChanged](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.702-prerelease&preserve-view=true#add_rasterizationscalechanged) event.
+    * Added [ShouldDetectMonitorScaleChanges](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.702-prerelease&preserve-view=true#get_ShouldDetectMonitorScaleChanges) property to automatically update RasterizationScale property if needed.
+    * Added [BoundsMode property](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontroller?view=webview2-1.0.702-prerelease&preserve-view=true#get_BoundsMode) to specify that the bounds are logic pixels and allow WebView to use the RasterizationScale for WebView2 pixel display, and have WebView apply the RasterizationScale to the Bounds to get the physical size.
+* Updated NewWindowRequested event to handle Ctrl+click and Shift+click.  \([\#168][GithubMicrosoftedgeWebviewfeedbackIssue168] & [\#371][GithubMicrosoftedgeWebviewfeedbackIssue371]\).  
+
+#### .NET  
+
+###### Features
+
+* Enabled WinForms designer in .NET Core 3.1+ and .NET 5.
+* Improved .NET cookie management.  \([\#611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
+
+###### Bugfixes
+
+* Added [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.wpf.webview2.acceleratorkeypressed) event to support AcceleratorKey press in WebView2. \([\#288][GithubMicrosoftedgeWebviewfeedbackIssue288]\).  
+* Removed unnecessary files from being output to WebView2 folders.  \([\#461][GithubMicrosoftedgeWebviewfeedbackIssue461]\).  
+* Improved host object API.  \([\#335][GithubMicrosoftedgeWebviewfeedbackIssue335] & [\#525][GithubMicrosoftedgeWebviewfeedbackIssue525]\).  
+ 
+## 1.0.664.34  
+
+Release Date: Nov 20, 2020  
+
+[NuGet package][NuGetGallery1.0.664.34] \| minimum WebView2 Runtime version 86.0.664.34.  
+
+#### General  
+
 > [!IMPORTANT]
-> While WebView2 is a preview, the .NET APIs are in the `prerelease package`.  
+> **Announcement**: .NET WPF/WinForms WebView2 is now Generally Available (GA). Starting with this release, Release SDKs will be forward-compatible. See [GA announcement blog post](https://aka.ms/wv2gablogpost) for more details.
+
+
+###### Features
+
+* .NET WPF/WinForms WebView2 is now Generally Available (GA).
+* Fixed Distribution (Bring-your-own) mode has reached GA.
+
+#### .NET  
+
+###### Bugfixes
+
+* CoreWebView2NewWindowRequestedEventArgs.Handled prevents new window from being opened   \([\#549][GithubMicrosoftedgeWebviewfeedbackIssue549]\) and \([\#560][GithubMicrosoftedgeWebviewfeedbackIssue560]\).  
+
 
 ## 1.0.674-prerelease  
 
@@ -314,6 +368,7 @@ Initial developer preview release.
 [ConceptsDistributionEvergreenMode]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution mode - Distribution of applications using WebView2 | Microsoft Docs"  
 [Webview2ConceptsDistributionFixedVersionMode]: ./concepts/distribution.md#fixed-version-distribution-mode "Fixed Version distribution mode - Distribution of applications using WebView2 | Microsoft Docs"  
 [Webview2ConceptsDistributionUnderstandRuntimeInstaller]: ./concepts/distribution.md#understanding-the-webview2-runtime "Understand the WebView2 Runtime and installer - Distribution of applications using WebView2 | Microsoft Docs"  
+[Webview2ConceptsEnterpriseGroupPoliciesForWebview2]: ./concepts/enterprise.md#group-policies-for-webview2 "Group policies for WebView2 - Managing WebView2 applications | Microsoft Docs"  
 [ConceptsVersioning]: ./concepts/versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
 [ConceptsVersioningExperimentalApis]: ./concepts/versioning.md#experimental-apis "Experimental APIs - Understanding browser versions and WebView2 | Microsoft Docs"  
 [GettingstartedWinforms]: ./gettingstarted/winforms.md "Getting started with WebView2 in Windows Forms apps | Microsoft Docs"  
@@ -426,6 +481,8 @@ Initial developer preview release.
 [ReferenceWin32Icorewebview2experimentalwebresourceresponseview10674]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourceresponseview?view=webview2-1.0.674-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalWebResourceResponseView | Microsoft Docs"  
 [ReferenceWin32Icorewebview2experimentalwebresourceresponseviewGetcontent10674]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalwebresourceresponseview?view=webview2-1.0.674-prerelease&preserve-view=true#getcontent "GetContent - interface ICoreWebView2ExperimentalWebResourceResponseView | Microsoft Docs"  
 
+[ReferenceWin32Icorewebview2experimentalcompositioncontroller3]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller3?view=webview2-1.0.702-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalCompositionController3 | Microsoft Docs"  
+
 [DeployedgeMicrosoftEdgePolicies]: /deployedge/microsoft-edge-policies "Microsoft Edge - Policies | Microsoft Docs"  
 [DeployedgeMicrosoftEdgeWebviewPolicies]: /deployedge/microsoft-edge-webview-policies "Microsoft Edge WebView2 - Policies | Microsoft Docs"  
 
@@ -458,6 +515,7 @@ Initial developer preview release.
 [GithubMicrosoftedgeWebviewfeedbackIssue119]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/119 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 119"
 [GithubMicrosoftedgeWebviewfeedbackIssue131]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/131 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 131"
 [GithubMicrosoftedgeWebviewfeedbackIssue148]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/148 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 148"  
+[GithubMicrosoftedgeWebviewfeedbackIssue168]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/168 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 168"  
 [GithubMicrosoftedgeWebviewfeedbackIssue177]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/177 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 177"
 [GithubMicrosoftedgeWebviewfeedbackIssue179]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/179 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 179"
 [GithubMicrosoftedgeWebviewfeedbackIssue181]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/181 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 181"
@@ -468,12 +526,19 @@ Initial developer preview release.
 [GithubMicrosoftedgeWebviewfeedbackIssue228]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/228 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 228"
 [GithubMicrosoftedgeWebviewfeedbackIssue235]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/235 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 235"
 [GithubMicrosoftedgeWebviewfeedbackIssue250]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/250 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 250"
+[GithubMicrosoftedgeWebviewfeedbackIssue288]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/288 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 288"
 [GithubMicrosoftedgeWebviewfeedbackIssue293]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/293 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 293"
 [GithubMicrosoftedgeWebviewfeedbackIssue318]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/318 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 318"  
+[GithubMicrosoftedgeWebviewfeedbackIssue335]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/335 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 335"  
+[GithubMicrosoftedgeWebviewfeedbackIssue371]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/371 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 371"  
 [GithubMicrosoftedgeWebviewfeedbackIssue382]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/382 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 382"  
 [GithubMicrosoftedgeWebviewfeedbackIssue431]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/431 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 431"  
 [GithubMicrosoftedgeWebviewfeedbackIssue432]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/432 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 432"  
-
+[GithubMicrosoftedgeWebviewfeedbackIssue461]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/461 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 461"  
+[GithubMicrosoftedgeWebviewfeedbackIssue525]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/525 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 525"  
+[GithubMicrosoftedgeWebviewfeedbackIssue549]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/549 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 549"  
+[GithubMicrosoftedgeWebviewfeedbackIssue560]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/560 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 560"  
+[GithubMicrosoftedgeWebviewfeedbackIssue611]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/611 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 611"  
 
 [GithubMicrosoftedgeWebview2AnnouncementIssue2]:  https://github.com/MicrosoftEdge/WebView2Announcement/issues/2 "Announcement repo for MicrosoftEdge/WebViewAnnouncement Issue 2"  
 
@@ -495,5 +560,7 @@ Initial developer preview release.
 [NuGetGallery0.9.579]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.579 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.579"
 [NuGetGallery0.9.622.11]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.622.11 "NuGet Gallery | Microsoft.Web.WebView2 v0.9.622.11"
 [NuGetGallery1.0.622.22]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.622.22 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.622.22"
+[NuGetGallery1.0.664.34]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.664.34 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.664.34"
 [NuGetGallery0.9.628-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.628-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v0.9.628 prerelease"  
 [NuGetGallery1.0.674-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.674-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.674 prerelease"  
+[NuGetGallery1.0.702-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.702-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.702 prerelease"  
