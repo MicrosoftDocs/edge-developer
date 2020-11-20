@@ -67,11 +67,7 @@ Release Date: November 20, 2020
 #### General  
 
 > [!IMPORTANT]
-> **Announcement**: .NET WPF/WinForms WebView2 is now Generally Available \(GA\).  Starting with this release, Release SDKs are forward-compatible.  
-
-<!-->
-For more details, navigate to [GA announcement blog post][WindowsBlogsMsedgedevEdgeWebview2GeneralAvailability].  
--->
+> **Announcement**: .NET WPF/WinForms WebView2 is now Generally Available \(GA\).  Starting with this release, Release SDKs are forward-compatible. For more details, navigate to [GA announcement blog post](https://devblogs.microsoft.com/dotnet/announcing-general-availability-for-microsoft-edge-webview2-for-net-and-fixed-distribution-method/).  
 
 ###### Features  
 
