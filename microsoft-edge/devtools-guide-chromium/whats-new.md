@@ -18,7 +18,7 @@ If you are checking out Microsoft Edge and you mainly develop in a Chromium-base
 
 ![Microsoft Edge (Chromium) DevTools](./media/devtools.png)
 
-If you are checking out the the new Microsoft Edge and you mainly developed in Microsoft Edge (EdgeHTML), we have got some great new tools that we hope will make it easier and faster for you to build and test your web sites in Microsoft Edge! To learn more about these new tools, check out [The Microsoft Edge (Chromium) DevTools Guide](../devtools-guide-chromium.md).
+If you are checking out the new Microsoft Edge and you mainly developed in Microsoft Edge (EdgeHTML), we have got some great new tools that we hope will make it easier and faster for you to build and test your web sites in Microsoft Edge! To learn more about these new tools, check out [The Microsoft Edge (Chromium) DevTools Guide](../devtools-guide-chromium.md).
 
 ## New dark and light themes for the DevTools
 
