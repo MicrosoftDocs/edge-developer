@@ -19,7 +19,7 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 
 ## 1.0.709-prerelease  
 
-Release Date: November 20, 2020  
+Release Date: November 23, 2020  
 
 [NuGet package][NuGetGallery1.0.709-prerelease] \| minimum Microsoft Edge version 88.0.709.0.  
 
