@@ -28,7 +28,7 @@ Ensure you install the following list of pre-requisites before proceeding with t
 
     To build C++ apps, you must also include the following workloads:
     - Desktop development with C++
-    - The *C++ (v142) Universal Windows Platform tools* optional component for the Universal Windows Platform workload (see "Installation Details" under the "Universal Windows Platform development" section, on the right pane)
+    - The *C++ (v142) Universal Windows Platform tools* optional component for the Universal Windows Platform workload. For more information,  navigate to Installation Details under the Universal Windows Platform development section, on the right pane.
 4.   Make sure your system has a NuGet package source enabled for **nuget.org**. For more information, see [Common NuGet configurations](/nuget/consume-packages/configuring-nuget-behavior) and [Windows Community Toolkit](#windows-community-toolkit).
 
 5.   Download and install the [WinUI 3 Preview 3 VSIX package](https://aka.ms/winui3/preview3-download). This adds both the WinUI 3 project templates and the NuGet package containing the WinUI 3 libraries to Visual Studio 2019.
