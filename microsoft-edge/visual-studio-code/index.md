@@ -53,7 +53,7 @@ With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftE
       
 Using the Debugger tool, you may launch or attach to both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\).  For a walkthrough of debugging Microsoft Edge from Visual Studio Code and sample `launch.json` configurations, navigate to [Debugger For Microsoft Edge Visual Studio Code Extension][VisualStudioCodeDebuggerEdge].  Choose the following image to see the extension in action.  
 
-:::image type="complex" source="./media/debugger-for-edge.png" alt-text="Debugger for Edge Visual Studio Code extension in action" lightbox="./media/debugger-for-edge.gif":::  
+:::image type="complex" source="./media/debugger-for-edge.png" alt-text="Debugger for Edge Visual Studio Code extension in action" lightbox="./media/debugger-for-edge.gif":::
    **Debugger for Microsoft Edge** Visual Studio Code extension in action  
 :::image-end:::  
 
@@ -68,7 +68,7 @@ With the [Microsoft Edge Tools for Visual Studio Code][VisualstudioMarketplaceMi
     
 For more information, navigate to [Microsoft Edge Tools for Visual Studio Code Visual Studio Code extension][VisualStudioCodeMicrosoftEdgeDevtoolsExtension].  <!--Choose the following image to see the extension in action.  -->  
       
-:::image type="content" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="Microsoft Edge Tools for Visual Studio Code Visual Studio Code extension in action" lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::  
+:::image type="content" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="Microsoft Edge Tools for Visual Studio Code Visual Studio Code extension in action" lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::
    **Microsoft Edge Tools for Visual Studio Code** Visual Studio Code extension in action  
 :::image-end:::  
 
@@ -84,9 +84,9 @@ Use [webhint][WebhintMain], a customizable linting tool, to improve the followin
 
 It checks your code for coding practices and common errors. The webhint open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation][OpenjsFoundation].  The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.  <!--Choose the following image to see the extension in action.  -->  
       
-:::image type="content" source="./media/webhint-extension.png" alt-text="Screenshot of webhint Visual Studio Code extension" lightbox="./media/webhint-extension.png":::  
-   Screenshot of **webhint** Visual Studio Code extension
-:::image-end:::
+:::image type="content" source="./media/webhint-extension.png" alt-text="Screenshot of webhint Visual Studio Code extension" lightbox="./media/webhint-extension.png":::
+   Screenshot of **webhint** Visual Studio Code extension  
+:::image-end:::  
       
 Identify and fix problems in your website by adding the [webhint extension for Visual Studio Code][VisualstudioMarketplaceWebhint].  Hints examine HTML, CSS, JavaScript, TypeScript, and more.  Hints appear as inline underlines and are summarized in the **Problems** pane.  
       
