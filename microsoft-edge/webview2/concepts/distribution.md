@@ -119,14 +119,12 @@ The Web is constantly evolving.  The Evergreen WebView2 Runtime is kept up to da
 
 Non-stable Microsoft Edge channels \(Beta/Dev/Canary\) provide a sneak peek into what is coming next into WebView2 Runtime.  Just like developing websites for Microsoft Edge, you should test your WebView2 app regularly.  Test your WebView2 app against one of the non-stable channels, and update your app or [report issues][GithubMicrosoftedgeWebviewfeedback] if issues arise. Typically Dev and Beta are the recommended channels.  To help you decide which channel is right, navigate to [Overview of the Microsoft Edge channels][DeployEdgeMicrosoftEdgeChannels].  You may download the [non-stable Microsoft Edge channel][DownloadNonstableEdge] on your test environment, and use `regkey` or environment variables to indicate the channel preference for your testing app.  For more information, navigate to [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions].  You may also use [WebDriver][HowtoWebdriver] to automate WebView2 testing.
 
-## Fixed Version distribution mode  
-
-> [!NOTE]
-> The Fixed Version distribution mode is in Public Preview.  
-
-The Fixed Version distribution mode was previously named bring-your-own.  
+## Fixed Version distribution mode   
 
 For constrained environments with strict compatibility requirements, consider using the Fixed Version distribution mode.  Choose and package a specific version of the WebView2 Runtime using the Fixed Version distribution mode.  You may specify the timing of Runtime updates for your app.  The Fixed Version distribution mode does not receive any automatic updates. Plan to update your app and the Runtime.  
+
+> [!NOTE] 
+> The Fixed Version distribution mode was previously called bring-your-own.  
 
 To use the Fixed Version mode, complete the following actions
 
