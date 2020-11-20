@@ -3,7 +3,7 @@ description: A list of ways to customize Microsoft Edge DevTools
 title: Customize Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 11/20/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -24,54 +24,61 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Customize Microsoft Edge DevTools  
 
-  
-
 This page lists the ways to customize Microsoft Edge DevTools.  
 
 ## Settings  
 
 **Settings** > **Preferences** contains many options for customizing DevTools.  
 
-To open Settings, do one of the following:  
+To open Settings, complete one of the following actions.  
 
 *   Select `F1` while DevTools is in focus.  
 *   Open the **Main Menu** and then choose **Settings**.  
     
-    :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Settings" lightbox="../media/customize-settings-preferences.msft.png":::
-       **Settings**  
-    :::image-end:::  
-    
+:::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Settings" lightbox="../media/customize-settings-preferences.msft.png":::
+   **Settings**  
+:::image-end:::  
+
 ## Drawer  
 
-The **Drawer** is a second panel where tools of your choosing can reside.  
+The **Drawer** is a second panel where tools of your choosing are displayed.  
 
-Select `Escape` to open or close the **Drawer**.  
+To open \(or close\) the **Drawer**, select `Escape`.  
 
 :::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="The Drawer" lightbox="../media/customize-drawer-open.msft.png":::
    The **Drawer**  
 :::image-end:::  
 
-By default, some tools open in the main panel, while others appear in the **Drawer**. Choose **More** \(![More][ImageMoreIcon]\) to open a tool in the **Drawer**.  
+By default, some tools open in the main panel, while others appear in the **Drawer**.  Choose **More** \(`...`) to open a tool in the **Drawer**.  
 
-:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="The button to open Drawer tabs" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
-   The button to open **Drawer** tabs  
+:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="The button to open the Drawer" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
+   The button to open the **Drawer**  
 :::image-end:::  
 
-You are able to move tools between the main panel and the drawer. With a tab focused, use the context menu to select "Move to top" or "Move to bottom."
+You may move tools between the main panel and the drawer.  
 
-:::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="The menu that appears to move tabs between the main panel and the drawer" lightbox="../media/move-from-drawer.msft.png":::
-   The menu that appears to move tabs between the main panel and the **Drawer**.  
-:::image-end:::
+*   To move a tool from the drawer to the main panel, hover on a tool, open the contextual menu \(right-click\) and choose **Move to top**.  
+    
+    :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="Move tool from the Drawer to the main panel" lightbox="../media/move-from-drawer.msft.png":::
+       Move tool from the **Drawer** to the main panel  
+    :::image-end:::  
+    
+*   To move a tool from the main panel to the drawer, hover on a tool, open the contextual menu \(right-click\) and choose **Move to bottom**.  
+    
+    :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="Move tool from the main panel to the Drawer" lightbox="../media/move-to-drawer.msft.png":::
+       Move tool from the main panel to the **Drawer**
+    :::image-end:::  
+    
 
 ## Reorder panels  
 
-Click and drag a panel tab to change its ordering.  Your custom tab order persists across DevTools sessions.  
+Choose and drag a tool to change the ordering.  Your custom tool order persists across DevTools sessions.  
 
 > [!NOTE]
-> By default, the **Network** panel tab is usually the fourth from the left.  In the following figure, the **Network** panel is the first from the left.  
+> By default, the **Network** tool is usually the fourth from the left.  In the following figure, the **Network** panel is the first from the left.  
 
-:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="A DevTools window with a custom panel tab ordering" lightbox="../media/customize-network-first-position.msft.png":::
-   A DevTools window with a custom panel tab ordering  
+:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Custom order of Devtools in a panel" lightbox="../media/customize-network-first-position.msft.png":::
+   Custom order of Devtools in a panel  
 :::image-end:::  
 
 ## Change DevTools placement  
