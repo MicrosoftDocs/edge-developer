@@ -3,7 +3,7 @@ description: Microsoft Edge (Chromium) and Visual Studio Code
 title: Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/13/2020
+ms.date: 11/20/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger, webhint
@@ -54,7 +54,7 @@ With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftE
 Using the Debugger tool, you may launch or attach to both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\).  For a walkthrough of debugging Microsoft Edge from Visual Studio Code and sample `launch.json` configurations, navigate to [Debugger For Microsoft Edge Visual Studio Code Extension][VisualStudioCodeDebuggerEdge].  Choose the following image to see the extension in action.  
 
 :::image type="complex" source="./media/debugger-for-edge.png" alt-text="Debugger for Edge Visual Studio Code extension in action" lightbox="./media/debugger-for-edge.gif":::  
-   **Debugger for Microsoft Edge** Visual Studio Code extension in action
+   **Debugger for Microsoft Edge** Visual Studio Code extension in action  
 :::image-end:::  
 
 ## Microsoft Edge Tools for Visual Studio Code
@@ -69,7 +69,7 @@ With the [Microsoft Edge Tools for Visual Studio Code][VisualstudioMarketplaceMi
 For more information, navigate to [Microsoft Edge Tools for Visual Studio Code Visual Studio Code extension][VisualStudioCodeMicrosoftEdgeDevtoolsExtension].  <!--Choose the following image to see the extension in action.  -->  
       
 :::image type="content" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="Microsoft Edge Tools for Visual Studio Code Visual Studio Code extension in action" lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::  
-   **Microsoft Edge Tools for Visual Studio Code** Visual Studio Code extension in action
+   **Microsoft Edge Tools for Visual Studio Code** Visual Studio Code extension in action  
 :::image-end:::  
 
 ## webhint  
