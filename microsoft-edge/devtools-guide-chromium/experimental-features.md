@@ -282,8 +282,7 @@ To copy response property values to your clipboard, complete the following actio
     *   Form Data
     *   Query String Parameters
     *   Request Headers
-    *   Response Headers
-1.  Hover on a property value.  
+    *   Response Headers  
 1.  Open the contextual menu \(right-click\).  
 1.  Choose **Copy value**.  
 1.  The value is copied.  Paste the value into any editor, such as Visual Studio Code, to review the copied values.
