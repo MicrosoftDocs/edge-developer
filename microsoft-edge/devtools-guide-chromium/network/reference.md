@@ -876,7 +876,15 @@ Under the **Name** column of the Requests table, hover on a request, open the co
 
 :::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Selecting Copy Response" lightbox="../media/network-network-requests-copy-response.msft.png":::
    Selecting **Copy Response**  
-:::image-end:::  
+:::image-end::: 
+
+###Copy Network header response
+
+Select a network request and navigate to the Headers pane. Choose the response content you’re interested in copying, right-click for the context menu. Select Copy Value.
+
+:::image type="complex" source="../media/header-copy-value.png" alt-text="Copy Value context menu" lightbox="../media/header-copy-value.png":::
+   Copy Value context menu  
+:::image-end::: 
 
 ## Change the layout of the Network panel  
 
