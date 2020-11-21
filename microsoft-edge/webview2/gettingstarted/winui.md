@@ -18,24 +18,27 @@ In this article, get started creating your first WebView2 app with WinUI3 and le
 
 Ensure you install the following list of pre-requisites before proceeding with the following article.  
 
-1.   Windows 10 version 1803 \(build 17134\) or later.  For more information, see [Windows Update: FAQ][MicrosoftSupport12373].  
-2.   [Microsoft Edge (Chromium) Canary channel][MicrosoftedgeinsiderDownload] on Windows 10, Windows 8.1, or Windows 7.  
-3.   Visual Studio 2019, version 16.9 Preview.  For more information, see [Windows UI Library 3 Preview 3][WindowsAppsWinui3ConfigureYourDevEnvironment].  
+1.  Windows 10 version 1803 \(build 17134\) or later.  For more information, see [Windows Update: FAQ][MicrosoftSupport12373].  
+1.  [Microsoft Edge (Chromium) Canary channel][MicrosoftedgeinsiderDownload] on Windows 10, Windows 8.1, or Windows 7.  
+1.  Visual Studio 2019, version 16.9 Preview.  For more information, see [Windows UI Library 3 Preview 3][WindowsAppsWinui3ConfigureYourDevEnvironment].  
+    
+    You must include the following workloads when installing Visual Studio.  
+    
+    *   .NET Desktop Development (this also installs .NET 5)  
+    *   Universal Windows Platform development  
+    
+    To build C++ apps, you must also include the following workloads.  
+    
+    *   Desktop development with C++
+    *   The C++ (v142) Universal Windows Platform tools optional component for the Universal Windows Platform workload. For more information,  navigate to Installation Details under the Universal Windows Platform development section, on the right pane.
 
-    You must include the following workloads when installing Visual Studio:
-    - .NET Desktop Development (this also installs .NET 5)
-    - Universal Windows Platform development
+1.  Make sure your system has a NuGet package source enabled for nuget.org. For more information, navigate to [Common NuGet configurations](/nuget/consume-packages/configuring-nuget-behavior) and [Windows Community Toolkit](#windows-community-toolkit).  
 
-    To build C++ apps, you must also include the following workloads:
-    - Desktop development with C++
-    - The *C++ (v142) Universal Windows Platform tools* optional component for the Universal Windows Platform workload. For more information,  navigate to Installation Details under the Universal Windows Platform development section, on the right pane.
-4.   Make sure your system has a NuGet package source enabled for **nuget.org**. For more information, see [Common NuGet configurations](/nuget/consume-packages/configuring-nuget-behavior) and [Windows Community Toolkit](#windows-community-toolkit).
-
-5.   Download and install the [WinUI 3 Preview 3 VSIX package](https://aka.ms/winui3/preview3-download). This adds both the WinUI 3 project templates and the NuGet package containing the WinUI 3 libraries to Visual Studio 2019.
+1.  Download and install the [WinUI 3 Preview 3 VSIX package](https://marketplace.visualstudio.com/items?itemName=Microsoft-WinUI.WinUIProjectTemplates). This adds both the WinUI 3 project templates and the NuGet package containing the WinUI 3 libraries to Visual Studio 2019.  
 
     For instructions on how to add the VSIX package to Visual Studio, see [Finding and Using Visual Studio Extensions](/visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box).
 
-6.   Enable [Developer Mode][WindowsUwpGetStartedEnableYourDeviceForDevelopment] to ensure you have access to all developer-specific Visual Studio features.  
+1.  Enable [Developer Mode][WindowsUwpGetStartedEnableYourDeviceForDevelopment] to ensure you have access to all developer-specific Visual Studio features.  
 
 ## Step 1 - Create Project  
 
