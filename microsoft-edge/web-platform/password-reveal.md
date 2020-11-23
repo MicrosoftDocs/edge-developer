@@ -46,7 +46,7 @@ Web developers can instead tweak the button’s styling so it better matches the
 }
 ```
 
-Some notes on styling:
+The following list describes some things to keep in mind when styling the password reveal button:
 
 * The browser’s “eye” iconography is implemented as a background image. To add a background color to the button, use the CSS `background-color` property instead of the `background` shorthand property.
 * Web developers may adjust the size and scale of the password reveal button, but the button will be clipped by the bounds of the password input control (if applicable).
