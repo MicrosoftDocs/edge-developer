@@ -52,16 +52,12 @@ The following list describes some things to keep in mind when styling the passwo
 * Web developers may adjust the size and scale of the password reveal button, but the button will be clipped by the bounds of the password input control (if applicable).
 * There are currently no state selectors available to style the toggled state of the button.
 
-
 ## Visibility of the control
 
 While trying out the password reveal button, it may be helpful to understand when the button is displayed. The password reveal control is not available until the user enters text into the password field. Also, for added security:
 
-
 * The button is removed if focus moves away from the password field.
-
 * The button is removed if scripts modify the password field.
 * If the button is removed at any point, the entire contents of the password field must be deleted before the button is displayed again. This feature prevents someone from making a minor adjustment in order to view the password.
-
 
 The password reveal button is not available in fields which have been autofilled via the browser’s password manager.
