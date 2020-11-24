@@ -38,12 +38,12 @@ For standard capabilities that `EdgeDriver` accepts, navigate to [Selenium docum
 
 ## EdgeOptions object  
 
-Most Microsoft Edge-specific capabilities are exposed through the `EdgeOptions` object.  In some languages, the capabilities are implemented by the `EdgeOptions` class.  In other languages, the capabilities are stored under the `ms:edgeOptions` dictionary in specific capabilities.  
+Most Microsoft Edge-specific capabilities are exposed through the `EdgeOptions` object.  In some languages, the capabilities are implemented by the `EdgeOptions` class.  In other languages, the capabilities are stored under the `ms:edgeOptions` dictionary in `DesiredCapabilities`.  
 
 | Capability | Type | Default value | Details |  
 |:--- |:--- |:--- |:--- |  
 | args | list of strings |  | List of command-line arguments to use when starting Microsoft Edge.  Arguments with an associated value should be separated by a `=` sign \(for example, `['start-maximized', 'user-data-dir=/tmp/temp_profile']`\).  |  
-| binary | string |  | Path to the Microsoft Edge runtime to use\ \(on macOS, the path should be the actual binary, not just the app.  for example, `/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge`\).  |  
+| binary | string |  | Path to the Microsoft Edge binary to use \(on macOS, the path should be the actual binary, not just the app.  for example, `/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge`\).  |  
 | extensions | list of strings |  | A list of extensions to install on startup.  Each item in the list should be a base-64 encoded packed extension \(`.crx`\).  |  
 | localState | dictionary |  | A dictionary with each entry consisting of the name of the preference and its value.  The preferences are applied to the Local State file in the user data folder.  |  
 | prefs | dictionary |  | A dictionary with each entry consisting of the name of the preference and its value.  The preferences are only applied to the user profile in use.  For examples, navigate to the `Preferences` file in the user data directory of Microsoft Edge.  |  
