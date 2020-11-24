@@ -40,7 +40,7 @@ landingContent:
 
   # Card
   - title: Legacy Microsoft Edge Documentation
-    linksLists:
+    linkLists:
       - linkListType: overview
         links:
           - text: Dev Guide (EdgeHTML)
