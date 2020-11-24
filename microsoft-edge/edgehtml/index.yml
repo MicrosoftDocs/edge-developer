@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Legacy Microsoft Edge documentation
-summary: Legacy Microsoft Edge documentation.  
+summary: Thank you for your interest in Microsoft Edge.  The legacy Microsoft Edge has been replaced with new Microsoft Edge documentation.
 
 metadata:
   title: Legacy Microsoft Edge documentation
@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 11/23/2020
+  ms.date: 11/24/2020
 
 # linkListType: architecture | concept | deploy | download | 
 #               get-started | how-to-guide | learn | overview | 
@@ -21,41 +21,97 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About new Microsoft Edge
+  - title: New Microsoft Edge developer documentation
     linkLists:
       - linkListType: overview
         links:
-          - text: DevTools (Chromium) overview
+          - text: New Microsoft Edge DevTools overview
             url: /microsoft-edge/devtools-guide-chromium
-          - text: DevTools Protocol (Chromium)
+          - text: New Microsoft Edge DevTools Protocol overview
             url: /microsoft-edge/devtools-protocol-chromium
-          - text: Interop (Site compatibility)
-            url: /microsoft-edge/web-platform/site-impacting-changes
-          - text: Microsoft Edge (Chromium) Extensions overview
-            url: /microsoft-edge/extensions-chromium/index
-          - text: Progressive Web App (Chromium) overview
-            url: /microsoft-edge/extensions-chromium/index
+
+  # Card
+  - title: New Microsoft Edge Extensions documentation
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: New Microsoft Edge Extensions overview
+            url: /microsoft-edge/microsoft-edge/extensions-chromium/index
+
+  # Card
+  - title: New Microsoft Edge PWA documentation
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: New Microsoft Progressive Web Apps overview
+            url: /microsoft-edge/progressive-web-apps-chromium/index
+
+  # Card
+  - title: New WebView documentation
+    linkLists:
+      - linkListType: overview
+        links:
           - text: WebView2 overview
             url: /microsoft-edge/webview2/index
 
   # Card
-  - title: Legacy Microsoft Edge Documentation
+  - title: New Microsoft Edge Technologies
     linkLists:
       - linkListType: overview
         links:
-          - text: Dev Guide (EdgeHTML)
-            url: ./edgehtml/dev-guide
-          - text: DevTools (EdgeHTML)
-            url: ./edgehtml/devtools-guide
-          - text: DevTools Protocol (EdgeHTML)
-            url: ./edgehtml/devtools-protocol/index
-          - text: Extensions (EdgeHTML)
-            url: ./edgehtml/extensions/index
-          - text: Getting Started with PWAs (EdgeHTML)
-            url:  ./edgehtml/progressive-web-apps-edgehtml/get-started
-          - text: JavaScript Runtime Hosting
-            url: ./edgehtml/hosting/javascript-runtime-hosting
-          - text: WebVR Developer Guide
-            url: ./edgehtml/webvr/index
+          - text: Interoperability (Site compatibility)
+            url: /microsoft-edge/web-platform/site-impacting-changes
+          - text: WebDriver
+            url: /microsoft-edge/webdriver-chromium/index
+
+  # Card
+  - title: Legacy Microsoft Edge developer documentation
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Legacy developer guide
+            url: ./edgehtml/dev-guide/index.md
+          - text: Legacy DevTools overview
+            url: ./edgehtml/devtools-guide/index.md
+          - text: Legacy DevTools Protocol overview
+            url: ./edgehtml/devtools-protocol/index.md
+
+  # Card
+  - title: Legacy Microsoft Edge Extensions documentation
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Legacy Microsoft Edge Extensions overview
+            url: ./edgehtml/extensions/index.md
+
+  # Card
+  - title: Legacy Microsoft Edge PWA documentation
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Legacy Microsoft Progressive Web Apps overview
+            url:  ./edgehtml/progressive-web-apps/index.md
+
+  # Card
+  - title: Legacy WebView documentation
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Legacy Microsoft Edge WebView
+            url: ./edgehtml/hosting/webview/index.md
+
+  # Card
+  - title: Legacy Microsoft Edge Technologies
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Legacy JavaScript runtime hosting
+            url: ./edgehtml/hosting/chakra-hosting/index.md
+          - text: Legacy Performance Analysis
+            url: ./edgehtml/performance-analysis/index.md
+          - text: Legacy WebDriver
+            url: ./edgehtml/webdriver/index.md
+          - text: WebVR
+            url: /microsoft-edge/webvr/index
           - text: Windows Runtime (WinRT)
-            url: ./edgehtml/windows-runtime
+            url: ./edgehtml/windows-runtime/index.md
