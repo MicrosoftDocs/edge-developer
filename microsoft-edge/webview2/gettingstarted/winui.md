@@ -3,55 +3,68 @@ description: Getting started guide with WebView2 for WinUI apps
 title: Getting started with WebView2 for WinUI apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 11/20/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWebView2, browser control, edge html, getting started, Getting Started, .NET
 ---
+# Getting started with WebView2 in WinUI 3 (Preview)  
 
-# Getting started with WebView2 in WinUI3 (Preview)  
-
-In this article, get started creating your first WebView2 app with WinUI3 and learn about the main features of [Introduction to Microsoft Edge WebView2 (Preview)][Webview2Index].  For more information on individual APIs, see [API reference][GithubMicrosoftUiXamlSpecsWebview2].  
+In this article, learn how to create your first WebView2 app and about the main features of [Introduction to Microsoft Edge WebView2 (Preview)][Webview2Index].  Your first WebView2 app uses WinUI3.  For more information on individual APIs, navigate to [API reference][GithubMicrosoftUiXamlSpecsWebview2].  
 
 ## Prerequisites  
 
 Ensure you install the following list of pre-requisites before proceeding with the following article.  
 
-*   Windows 10 version 1803 \(build 17134\) or later.  For more information, see [Windows Update: FAQ][MicrosoftSupport12373].  
-*   [Microsoft Edge (Chromium) Canary channel][MicrosoftedgeinsiderDownload] on Windows 10, Windows 8.1, or Windows 7.  
-*   Visual Studio 2019, version 16.7 Preview 1.  For more information, see [Windows UI Library 3 Preview 2 (July 2020)][WindowsAppsWinui3ConfigureYourDevEnvironment].  
-*   Both the [x64][WindowsDotnetcliBlobCoreSdk50100Preview4202681X64] and [x86][WindowsDotnetcliBlobCoreSdk50100Preview4202681X86] versions of .NET 5 Preview 4.  
-*   [WinUI 3 Project Templates][VisualstudioMarketplaceWinUiprojecttemplates] extension for Visual Studio 2019.  
-Ensure you [Enable Developer Mode][WindowsUwpGetStartedEnableYourDeviceForDevelopment] to ensure you have access to all Visual Studio features.  
-
+1.  Windows 10 version 1803 \(build 17134\) or later.  For more information, navigate to [Windows Update: FAQ][MicrosoftSupport12373].  
+1.  [Microsoft Edge (Chromium) Canary channel][MicrosoftedgeinsiderDownload] on Windows 10, Windows 8.1, or Windows 7.  
+1.  Visual Studio 2019, version 16.9 Preview.  For more information, navigate to [Windows UI Library 3 Preview 3][WindowsAppsWinui3ConfigureYourDevEnvironment].  
+    
+    Include the following workloads when you install Visual Studio.  
+    
+    *   .NET Desktop Development \(the installer also installs .NET 5\)  
+    *   Universal Windows Platform development  
+        
+    To build C++ apps, you must also include the following workloads.  
+    
+    *   Desktop development with C++  
+    *   The C++ (v142) Universal Windows Platform tools optional component for the Universal Windows Platform workload.  For more information,  navigate to Installation Details under the Universal Windows Platform development section, on the right pane.  
+        
+1.  Make sure your system has a NuGet package source enabled for [nuget.org][NugetHome].  For more information, navigate to [Common NuGet configurations][NugetConsumePackagesConfiguringNugetBehavior] and [Windows Community Toolkit][WindowsCommunitytoolkit].  
+1.  Download and install the [WinUI 3 Preview 3 VSIX package][VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates].  The installer adds both the WinUI 3 project templates and the NuGet package containing the WinUI 3 libraries to Visual Studio 2019.  
+    
+    For instructions on how to add the VSIX package to Visual Studio, navigate to [Finding and Using Visual Studio Extensions][VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox].
+    
+1.  Enable [Developer Mode][WindowsUwpGetStartedEnableYourDeviceForDevelopment] to ensure you have access to all developer-specific Visual Studio features.  
+    
 ## Step 1 - Create Project  
 
 Start with a basic desktop project containing a single main window.  
 
-1.  In Visual Studio, select **Create a new project**.  
-1.  In the project drop-down, select **C#**, **Windows**, and **WinUI** respectively.  
+1.  In Visual Studio, choose **Create a new project**.  
+1.  In the project drop-down, choose **C#**, **Windows**, and **WinUI** respectively.  
     
-    :::image type="complex" source="./media/winui-gettingstarted-selections.png" alt-text="Visual studio project creation dialog for  WinUI" lightbox="./media/winui-gettingstarted-selections.png":::
-       Visual studio project creation dialog for WinUI  
+    :::image type="complex" source="./media/winui-gettingstarted-selections.png" alt-text="Create a new WinUI project using Visual Studio" lightbox="./media/winui-gettingstarted-selections.png":::
+        Create a new WinUI project using Visual Studio
     :::image-end:::  
     
 1.  Choose **Blank App, Packaged (WinUI in Desktop)**, and then choose **Next**.  
-1.  Enter a project name, choose other options as needed, and then select **Create**.  
-1.  In **New Universal Windows Platform Project**, select the following values, and then choose **OK**:  
-    *   Target version: **Windows 10, version 1903 (build 18362)** or later.  
-    *   Minimum version: **Windows 10, version 1803 (build 17134)**.  
+1.  Enter a project name, choose other options as needed, and then choose **Create**.  
+1.  In **New Universal Windows Platform Project**, choose the following values, and then choose **OK**.  
+    *   **Target version**:  **Windows 10, version 1903 (build 18362)** or later  
+    *   **Minimum version**:  **Windows 10, version 1803 (build 17134)**  
     
-    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="The New Universal Windows Platform Project dialog with selected values for Target version and Minimum version." lightbox="./media/winui-gettingstarted-projecttype.png":::
-       The New Universal Windows Platform Project dialog with selected values for Target version and Minimum version.
+    :::image type="complex" source="./media/winui-gettingstarted-projecttype.png" alt-text="The New Universal Windows Platform Project dialog with chosen values for Target version and Minimum version." lightbox="./media/winui-gettingstarted-projecttype.png":::
+       The New Universal Windows Platform Project dialog with chosen values for Target version and Minimum version.
     :::image-end:::  
     
 1.  In the Solution Explorer, two projects are generated.  
-    *   **Your project name (Desktop)**. This project contains the code for your app.  **App.xaml.cs** defines an `Application` class that represents your app instance. **MainWindow.xaml.cs** defines a `MainWindow` class that represents the main window displayed by your app instance.  These classes derive from types in the `Microsoft.UI.Xaml` namespace of WinUI.  
+    *   **Your project name (Desktop)**.  This project contains the code for your app.  **App.xaml.cs** defines an `Application` class that represents your app instance.  **MainWindow.xaml.cs** defines a `MainWindow` class that represents the main window displayed by your app instance.  These classes derive from types in the `Microsoft.UI.Xaml` namespace of WinUI.  
     
-    *   **Your project name (Package)**.  This project is a Windows Application Packaging Project that is configured to build the app into an MSIX package for deployment.  The project contains the package manifest for your app, and it is the startup project for your solution by default. For more information, see [Set up your desktop application for MSIX packaging in Visual Studio][WindowsMsixDesktopToUwpPackagingDotNet] and [Package manifest schema reference for Windows 10][UwpSchemasAppxpackageUapmanifestRoot].
+    *   **Your project name (Package)**.  This project is a Windows Application Packaging Project that is configured to build the app into an MSIX package for deployment.  The project contains the package manifest for your app, and it is the startup project for your solution by default.  For more information, navigate to [Set up your desktop application for MSIX packaging in Visual Studio][WindowsMsixDesktopToUwpPackagingDotNet] and [Package manifest schema reference for Windows 10][UwpSchemasAppxpackageUapmanifestRoot].
     
-1.  In the Solution Explorer, open **MainWindow.xaml** to display the code.  Select `F5` to run your project and show a window with a button.  
+1.  In the Solution Explorer, to display the code, open `MainWindow.xaml` file.  Select `F5` to run your project and show a window with a button.  
     
 ## Step 2 - Add a WebView2 control to your project  
 
@@ -118,9 +131,9 @@ Next add a WebView2 control to your project.
     
 ## Step 3 - Add navigation controls  
 
-Allow users to control the web page that is displayed in your WebView2 control by adding an address bar to your app. 
+Allow users to control the web page that is displayed in your WebView2 control by adding an address bar to your app.  
 
-1.  In **MainWindow.xaml**, copy and paste the following code snippet inside the `Grid` element that contains the `WebView2` element.  
+1.  In `MainWindow.xaml`, copy and paste the following code snippet inside the `Grid` element that contains the `WebView2` element.  
     
     ```xml
         <TextBox Name="addressBar" Grid.Column="0"/>
@@ -150,7 +163,7 @@ Allow users to control the web page that is displayed in your WebView2 control b
     </Grid>
     ```  
     
-1.  In **MainWindow.xaml.cs**, copy the following code snippet to `myButton_Click`, which navigates the WebView2 control to the URL entered in the address bar.  
+1.  In `MainWindow.xaml.cs`, copy the following code snippet to `myButton_Click`, which navigates the WebView2 control to the URL entered in the address bar.  
     
     ```csharp
     private void myButton_Click(object sender, RoutedEventArgs e)
@@ -167,10 +180,10 @@ Allow users to control the web page that is displayed in your WebView2 control b
     }
     ```  
     
-    Select `F5` to build and run your project.  Enter a new URL in the address bar, and then select **Go**.  For example, enter `https://www.bing.com`. 
+    Select `F5` to build and run your project.  Enter a new URL in the address bar, and then choose **Go**.  For example, enter `https://www.bing.com`.  
     
     > [!NOTE]
-    > Ensure you use complete URLs in the address bar. `ArgumentException` exceptions are thrown if the URL does not start with `http://` or `https://`.  
+    > Ensure you use complete URLs in the address bar.  `ArgumentException` exceptions are thrown if the URL does not start with `http://` or `https://`.  
     
     :::image type="complex" source="./media/winui-gettingstarted-bing.png" alt-text="Bing.com" lightbox="./media/winui-gettingstarted-bing.png":::
        Bing.com  
@@ -189,7 +202,7 @@ Applications that host WebView2 controls listen for the following events that ar
 > [!NOTE]
 > HTTP redirects raise multiple `NavigationStarting` events.  
 
-For more information, see [Navigation Events][Webviews2ConceptsNavigationEvents].  
+For more information, navigate to [Navigation Events][Webviews2ConceptsNavigationEvents].  
 
 When errors occur, the following events are raised and may navigate to an error page.  
 
@@ -197,7 +210,7 @@ When errors occur, the following events are raised and may navigate to an error 
 *   `ContentLoading`  
 *   `HistoryChanged`  
      
-As an example of how to use the events, register a handler for `NavigationStarting` that cancels any requests that don't use HTTPS. In `MainWindow.xaml.cs`, modify the constructor to register `EnsureHttps`, and add the `EnsureHttps` function so that it matches the following code snippet.  
+As an example of how to use the events, register a handler for `NavigationStarting` that cancels any request that does not use HTTPS.  In `MainWindow.xaml.cs`, modify the constructor to register `EnsureHttps`, and add the `EnsureHttps` function so that it matches the following code snippet.  
 
 ```csharp
 public MainWindow()
@@ -224,9 +237,12 @@ Select `F5` to build and run your project.  Confirm that navigation is blocked t
 
 ## Step 5 - Scripting  
 
-Host applications may inject JavaScript code into WebView2 controls at runtime.  The injected JavaScript applies to all new top level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run after creation of the global object, and before any other script included in the HTML document is run.  
+Host applications may inject JavaScript code into WebView2 controls at runtime.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run with specific timing.  
 
-As an example, add scripts send an alert when a user navigates to non-HTTPS sites.  Modify the `EnsureHttps` function to inject a script into the web content using [ExecuteScriptAsync][Webviews2ReferenceWpfMicrosoftWebExecutescriptasync].  
+*   Run it after the creation of the global object.  
+*   Run it before any other script included in the HTML document is run.  
+
+As an example, add scripts send an alert when a user navigates to non-HTTPS sites.  Modify the `EnsureHttps` function to inject a script into the web content that uses [ExecuteScriptAsync][Webviews2ReferenceWpfMicrosoftWebExecutescriptasync].  
 
 ```csharp
 private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs args)
@@ -254,12 +270,12 @@ Congratulations, you built your first WebView2 app.
 
 ## Next Steps  
 
-Our team is currently building more WebView2 APIs.  For more information on the current state of WebView2 APIs, see the [WebView2 spec][GithubMicrosoftUiXamlSpecsWebview2].  
+Our team is currently building more WebView2 APIs.  For more information on the current state of WebView2 APIs, navigate to the [WebView2 spec][GithubMicrosoftUiXamlSpecsWebview2].  
 
 > [!NOTE]
-> The WinRT CoreWebView2 object may not be available at the time the WebView2 APIs ship. To understand which APIs are available to WebView2 controls, see [WebView2 Spec][GithubMicrosoftUiXamlSpecsWebview2] for a list of the APIs that are available. 
+> The WinRT CoreWebView2 object may not be available at the time the WebView2 APIs ship.  To understand which APIs are available to WebView2 controls, navigate to [WebView2 Spec][GithubMicrosoftUiXamlSpecsWebview2] for a list of the APIs that are available.  
 
-For more information about WebView2 capabilities, see [WebView2 Concepts and How-To guides][Webview2IndexNextSteps], and the [WebView2 samples repo][GithubMicrosoftedgeWebview2samplesMain].  
+For more information about WebView2 capabilities, navigate to [WebView2 Concepts and How-To guides][Webview2IndexNextSteps] and the [WebView2 samples repo][GithubMicrosoftedgeWebview2samplesMain].  
 
 ## Getting in touch with the Microsoft Edge WebView team  
 
@@ -272,9 +288,14 @@ For more information about WebView2 capabilities, see [WebView2 Concepts and How
 [Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"  
 [Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.ExecuteScriptAsync(String) Method (Microsoft.Web.WebView2.Wpf) | Microsoft Docs"  
 
+[NugetConsumePackagesConfiguringNugetBehavior]: /nuget/consume-packages/configuring-nuget-behavior "Common NuGet configurations | Microsoft Docs"  
+
 [UwpSchemasAppxpackageUapmanifestRoot]: /uwp/schemas/appxpackage/uapmanifestschema/schema-root "Package manifest schema reference for Windows 10 | Microsoft Docs"  
 
+[VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "Install without using the Manage Extensions dialog box - Manage extensions for Visual Studio | Microsoft Docs"  
+
 [WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/winui/winui3#configure-your-dev-environment "Configure your dev environment - Windows UI Library 3.0 Preview 1 (May 2020) | Microsoft Docs"  
+[WindowsCommunitytoolkit]: /windows/communitytoolkit "Windows Community Toolkit Documentation | Microsoft Docs"  
 [WindowsMsixDesktopToUwpPackagingDotNet]: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net "Set up your desktop application for MSIX packaging in Visual Studio | Microsoft Docs"  
 [WindowsUwpGetStartedEnableYourDeviceForDevelopment]: /windows/uwp/get-started/enable-your-device-for-development "Enable your device for development | Microsoft Docs"  
 
@@ -289,8 +310,10 @@ For more information about WebView2 capabilities, see [WebView2 Concepts and How
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"  
 
+[NugetHome]: https://nuget.org "Home | NuGet Gallery"  
+
 [WindowsDotnetcliBlobCoreSdk50100Preview4202681X86]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x86.exe "Download dotnet-sdk-5.0.100-preview.4.20268.1-win-x86.exe"  
 
 [WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe " dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe"  
 
-[VisualstudioMarketplaceWinUiprojecttemplates]: https://marketplace.visualstudio.com/items?itemName=Microsoft-WinUI.WinUIProjectTemplates "WinUI 3 Project Templates"  
+[VisualstudioMarketplaceMicrosoftWinuiWinuiprojecttemplates]: https://marketplace.visualstudio.com/items?itemName=Microsoft-WinUI.WinUIProjectTemplates "WinUI 3 Project Templates | Visual Studio Marketplace"  
