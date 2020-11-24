@@ -66,11 +66,17 @@ landingContent:
         links:
           - text: New Microsoft Edge Interoperability (Site compatibility)
             url: /microsoft-edge/web-platform/site-impacting-changes
-          # - text: New Microsoft Edge WebDriver
-          #   url: /microsoft-edge/webdriver-chromium/index
 
   # Card
-  - title: Legacy Microsoft Edge documentation
+  - title: New Microsoft Edge technologies
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: New Microsoft Edge WebDriver
+            url: /microsoft-edge/webdriver-chromium/index
+
+  # Card
+  - title: Legacy Microsoft Edge developer documentation
     linkLists:
       - linkListType: overview
         links:
@@ -80,17 +86,41 @@ landingContent:
             url: ./edgehtml/devtools-guide/index.md
           - text: Legacy Microsoft Edge Developer Tools Protocol overview
             url: ./edgehtml/devtools-protocol/index.md
+
+  # Card
+  - title: Legacy Microsoft Edge Extensions documentation
+    linkLists:
+      - linkListType: overview
+        links:
           - text: Legacy Microsoft Edge Extensions overview
             url: ./edgehtml/extensions/index.md
+
+  # Card
+  - title: Legacy Microsoft Edge PWA documentation
+    linkLists:
+      - linkListType: overview
+        links:
           - text: Legacy Microsoft Edge Progressive Web Apps overview
-            url: ./edgehtml/progressive-web-apps/index.md
+            url:  ./edgehtml/progressive-web-apps/index.md
+
+  # Card
+  - title: Legacy WebView documentation
+    linkLists:
+      - linkListType: overview
+        links:
           - text: Legacy Microsoft Edge WebView overview
             url: ./edgehtml/hosting/webview/index.md
+
+  # Card
+  - title: Legacy Microsoft Edge Technologies
+    linkLists:
+      - linkListType: overview
+        links:
           - text: Legacy Microsoft Edge JavaScript runtime hosting overview
             url: ./edgehtml/hosting/chakra-hosting/index.md
-          - text: Legacy Performance Analysis overview
+          - text: Legacy Microsoft Edge Performance Analysis overview
             url: ./edgehtml/performance-analysis/index.md
-          - text: Legacy WebDriver overview
+          - text: Legacy Microsoft Edge WebDriver overview
             url: ./edgehtml/webdriver/index.md
           - text: WebVR
             url: /microsoft-edge/webvr/index
