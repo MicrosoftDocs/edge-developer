@@ -3,18 +3,17 @@ description: Use Puppeteer to automate and test in Microsoft Edge
 title: Puppeteer
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 11/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, developer, tools, automation, test
 ---
-
 # Puppeteer  
 
-[Puppeteer][PuppeteerMain] is a [Node][NodejsMain] library which provides a high-level API to control Microsoft Edge \(Chromium\) over the [DevTools Protocol][GithubChromedevtoolsProtocol].  Puppeteer runs [headless][WikiHeadlessBrowser] by default, which means that you do not see a UI, and instead must use the command-line.  You may also configure Puppeteer to run full \(non-headless\) Microsoft Edge or Chromium as well.  
+[Puppeteer][PuppeteerMain] is a [Node][NodejsMain] library which provides a high-level API to control Microsoft Edge \(Chromium\) over the [DevTools Protocol][GithubChromedevtoolsProtocol].  Puppeteer runs [headless][WikiHeadlessBrowser] by default, which means that you a UI is not displayed, and instead must use the command-line.  You may also configure Puppeteer to run full \(non-headless\) Microsoft Edge or Chromium as well.  
 
-By default, when you install Puppeteer, the installer downloads a recent version of [Chromium][ChromiumHome], the open-source browser that [Microsoft Edge is also built upon][MicrosoftBlogsWindowsExperience20181206].  If you have Microsoft Edge \(Chromium\) installed, you may use [puppeteer-core][PuppeteerApivscore].  `puppeteer-core` is a lightweight version of Puppeteer that launches an existing browser installation, like Microsoft Edge \(Chromium\).  To download Microsoft Edge \(Chromium\), see [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload].
+By default, when you install Puppeteer, the installer downloads a recent version of [Chromium][ChromiumHome], the open-source browser that [Microsoft Edge is also built upon][MicrosoftBlogsWindowsExperience20181206].  If you have Microsoft Edge \(Chromium\) installed, you may use [puppeteer-core][PuppeteerApivscore].  `puppeteer-core` is a lightweight version of Puppeteer that launches an existing browser installation, like Microsoft Edge \(Chromium\).  To download Microsoft Edge \(Chromium\), navigate to [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload].  
 
 ## Installing puppeteer-core  
 
@@ -93,7 +92,7 @@ node example.js
 > ![The example.png file produced by example.js](./media/puppeteer-example.png)  
 -->  
 
-This is just a simple example of the automation and testing scenarios enabled by Puppeteer and `puppeteer-core`.  For more information about Puppeteer and how it works, see [Puppeteer][PuppeteerMain].  
+This is just a simple example of the automation and testing scenarios enabled by Puppeteer and `puppeteer-core`.  For more information about Puppeteer and how it works, navigate to [Puppeteer][PuppeteerMain].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
@@ -124,8 +123,6 @@ The Microsoft Edge Developer team is eager to hear your feedback about using Pup
 *   [page.setViewport() on Puppeteer][PuppeteerApipagesetviewport]  
 *   [Headless browser on Wikipedia][WikiHeadlessBrowser]  -->  
 
-<!-- image links -->  
-
 <!-- links -->  
 
 [WebdriverChromiumMain]: ./webdriver-chromium "WebDriver (Chromium)"  
@@ -141,7 +138,7 @@ The Microsoft Edge Developer team is eager to hear your feedback about using Pup
 
 [NodejsMain]: https://nodejs.org "Node.js"  
 
-[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "npm | Edge Paths"
+[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "npm | Edge Paths"  
 
 [PuppeteerMain]: https://pptr.dev "Puppeteer"  
 [PuppeteerApivscore]: https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core "puppeteer vs. puppeteer-core | Puppeteer"  
