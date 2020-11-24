@@ -43,15 +43,15 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: New Microsoft Progressive Web Apps overview
+          - text: New Microsoft Edge Progressive Web Apps overview
             url: /microsoft-edge/progressive-web-apps-chromium/index
 
   # Card
-  - title: New WebView documentation
+  - title: New Microsoft Edge WebView documentation
     linkLists:
       - linkListType: overview
         links:
-          - text: WebView2 overview
+          - text: New Microsoft EdgeWebView2 overview
             url: /microsoft-edge/webview2/index
 
   # Card
@@ -59,9 +59,9 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Interoperability (Site compatibility)
+          - text: New Microsoft Edge Interoperability (Site compatibility)
             url: /microsoft-edge/web-platform/site-impacting-changes
-          - text: WebDriver
+          - text: New Microsoft Edge WebDriver
             url: /microsoft-edge/webdriver-chromium/index
 
   # Card
