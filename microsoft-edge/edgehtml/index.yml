@@ -1,0 +1,61 @@
+### YamlMime:Landing
+
+title: Legacy Microsoft Edge documentation
+summary: Legacy Microsoft Edge documentation.  
+
+metadata:
+  title: Legacy Microsoft Edge documentation
+  description: Legacy Microsoft Edge documentation.  Content for Microsoft Edge (edgeHTML).
+  brand: m365
+  ms.topic: hub-page
+  author: MSEdgeTeam
+  ms.author: msedgedevrel
+  ms.date: 11/23/2020
+
+# linkListType: architecture | concept | deploy | download | 
+#               get-started | how-to-guide | learn | overview | 
+#               quickstart | reference | sample | tutorial | 
+#               video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About new Microsoft Edge
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: DevTools (Chromium) overview
+            url: /microsoft-edge/devtools-guide-chromium
+          - text: DevTools Protocol (Chromium)
+            url: /microsoft-edge/devtools-protocol-chromium
+          - text: Interop (Site compatibility)
+            url: /microsoft-edge/web-platform/site-impacting-changes
+          - text: Microsoft Edge (Chromium) Extensions overview
+            url: /microsoft-edge/extensions-chromium/index
+          - text: Progressive Web App (Chromium) overview
+            url: /microsoft-edge/extensions-chromium/index
+          - text: WebView2 overview
+            url: /microsoft-edge/webview2/index
+
+  # Card
+  - title: Legacy Microsoft Edge Documentation
+    linksLists:
+      - linkListType: overview
+        links:
+          - text: Dev Guide (EdgeHTML)
+            url: ./edgehtml/dev-guide
+          - text: DevTools (EdgeHTML)
+            url: ./edgehtml/devtools-guide
+          - text: DevTools Protocol (EdgeHTML)
+            url: ./edgehtml/devtools-protocol/index
+          - text: Extensions (EdgeHTML)
+            url: ./edgehtml/extensions/index
+          - text: Getting Started with PWAs (EdgeHTML)
+            url:  ./edgehtml/progressive-web-apps-edgehtml/get-started
+          - text: JavaScript Runtime Hosting
+            url: ./edgehtml/hosting/javascript-runtime-hosting
+          - text: WebVR Developer Guide
+            url: ./edgehtml/webvr/index
+          - text: Windows Runtime (WinRT)
+            url: ./edgehtml/windows-runtime
