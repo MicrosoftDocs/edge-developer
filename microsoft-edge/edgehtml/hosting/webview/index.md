@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: x-ms-webview, MSHTMLWebViewElement, webview, windows 10 apps, uwp, edge
-ms.date: 11/19/2020
+ms.date: 11/24/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # WebView (EdgeHTML) for Windows 10 apps  
@@ -70,7 +70,7 @@ x64 app architectures require Neutral (Any CPU) or x64 packages, as service work
 
 ### Threading model and reliability  
 
-Creating a WebView via `document.createElement("x-ms-webview")` or via `<x-ms-webview>` markup creates a WebView on a new unique thread in the app's process.  Running on a new unique thread means that long running script from one WebView is unable to hang the app or other WebViews.  Creating a WebView via the `new MSWebView()` constructor creates a WebView in a separate WebView process.  Running in a unique process means that in addition to protection from long running script, the app is also protected from web content that crashes the WebView process.  Creating a WebView via the [`MSWebViewProcess.createWebViewAsync`](./webview/MSWebViewProcess.md#createwebviewasync) method also creates a WebView in a separate process but allows the caller more control over process settings and grouping WebViews in WebView processes.  See `MSWebViewProcess` for more information.  
+Creating a WebView via `document.createElement("x-ms-webview")` or via `<x-ms-webview>` markup creates a WebView on a new unique thread in the app's process.  Running on a new unique thread means that long running script from one WebView is unable to hang the app or other WebViews.  Creating a WebView via the `new MSWebView()` constructor creates a WebView in a separate WebView process.  Running in a unique process means that in addition to protection from long running script, the app is also protected from web content that crashes the WebView process.  Creating a WebView via the [`MSWebViewProcess.createWebViewAsync`](./MSWebViewProcess.md#createwebviewasync) method also creates a WebView in a separate process but allows the caller more control over process settings and grouping WebViews in WebView processes.  See `MSWebViewProcess` for more information.  
 
 ### WinRT API access  
 
@@ -110,7 +110,7 @@ webview.removeEventListener("departingFocus", handler);
 
 |            |      |  
 |:--- |:--- |  
-| **Interface** | [FocusNavigationEvent](./webview/FocusNavigationEvent.md) |  
+| **Interface** | [FocusNavigationEvent](./FocusNavigationEvent.md) |  
 | **Synchronous** | Yes |   
 | **Bubbles** | Yes |  
 | **Cancelable** | No |  
@@ -162,7 +162,7 @@ webview.removeEventListener("MSWebViewContentLoading", handler);
 
 |  |  |  
 |:--- |:--- |  
-| **Interface** | [NavigationEvent](./webview/NavigationEvent.md) |  
+| **Interface** | [NavigationEvent](./NavigationEvent.md) |  
 | **Synchronous** | Yes  |  
 | **Bubbles** | No |   
 | **Cancelable** | No |  
@@ -183,7 +183,7 @@ webview.removeEventListener("MSWebViewDOMContentLoaded", handler);
 
 |  |  |  
 |:--- |:--- |  
-| **Interface** | [NavigationEvent](./webview/NavigationEvent.md) |  
+| **Interface** | [NavigationEvent](./NavigationEvent.md) |  
 | **Synchronous** |Yes |  
 | **Bubbles** | No |  
 | **Cancelable** | No |   
@@ -204,7 +204,7 @@ webview.removeEventListener("MSWebViewFrameContentLoading", handler);
 
 |  |  |  
 |:--- |:--- |  
-| **Interface** | [NavigationEvent](./webview/NavigationEvent.md) |  
+| **Interface** | [NavigationEvent](./NavigationEvent.md) |  
 | **Synchronous** | Yes |  
 | **Bubbles** | No |  
 | **Cancelable** | No |   
@@ -225,7 +225,7 @@ webview.removeEventListener("MSWebViewFrameDOMContentLoaded", handler);
 
 |  |  |  
 |:--- |:--- |  
-| **Interface** | [NavigationEvent](./webview/NavigationEvent.md) |  
+| **Interface** | [NavigationEvent](./NavigationEvent.md) |  
 | **Synchronous** | Yes |  
 | **Bubbles** | No |   
 | **Cancelable** | No |  
@@ -246,7 +246,7 @@ webview.removeEventListener("MSWebViewFrameNavigationCompleted", handler);
 
 |  |  |  
 |:--- |:--- |  
-| **Interface** | [NavigationCompletedEvent](./webview/NavigationCompletedEvent.md) |  
+| **Interface** | [NavigationCompletedEvent](./NavigationCompletedEvent.md) |  
 | **Synchronous** | Yes |  
 | **Bubbles** | No |   
 | **Cancelable** | No |  
@@ -272,7 +272,7 @@ webview.removeEventListener("MSWebViewFrameNavigationStarting", frameNavigationS
 
 |  |  |
 |:--- |:--- |  
-| **Interface** | [NavigationEvent](./webview/NavigationEvent.md) |  
+| **Interface** | [NavigationEvent](./NavigationEvent.md) |  
 | **Synchronous** | Yes |  
 | **Bubbles** |No |   
 | **Cancelable** | Yes |  
@@ -298,7 +298,7 @@ webview.removeEventListener("MSWebViewLongRunningScriptDetected", handler);
 
 |  |  |  
 |:--- |:--- |  
-| **Interface** | [LongRunningScriptDetectedEvent](./webview/LongRunningScriptDetectedEvent.md) |  
+| **Interface** | [LongRunningScriptDetectedEvent](./LongRunningScriptDetectedEvent.md) |  
 | **Synchronous** | Yes |  
 | **Bubbles** | No |  
 | **Cancelable** | No |  
@@ -333,7 +333,7 @@ webview.removeEventListener("MSWebViewNavigationCompleted", handler);
 
 |  |  |  
 |:--- |:--- |  
-| **Interface** | [NavigationCompletedEvent](./webview/NavigationCompletedEvent.md) |  
+| **Interface** | [NavigationCompletedEvent](./NavigationCompletedEvent.md) |  
 | **Synchronous** | Yes |  
 | **Bubbles** | No |   
 | **Cancelable** | No |  
@@ -359,7 +359,7 @@ webview.removeEventListener("MSWebViewNavigationStarting", navigationStartingHan
 
 |  |  |  
 |:--- |:--- |  
-| **Interface** | [NavigationEvent](./webview/NavigationEvent.md) |  
+| **Interface** | [NavigationEvent](./NavigationEvent.md) |  
 | **Synchronous** | No |  
 | **Bubbles** | Yes |   
 | **Cancelable** | Yes |  
@@ -389,7 +389,7 @@ webview.removeEventListener("MSWebViewNewWindowRequested", handler);
 
 |  |  |  
 |:---|:--- |  
-| **Interface** | [NavigationEventWithReferrer](./webview/NavigationEventWithReferrer.md) |  
+| **Interface** | [NavigationEventWithReferrer](./NavigationEventWithReferrer.md) |  
 | **Synchronous** | Yes |  
 | **Bubbles** | No |  
 | **Cancelable** | Yes |  
@@ -444,7 +444,7 @@ webview.removeEventListener("MSWebViewPermissionRequested", handler);
 
 |  |  |  
 |:--- |:--- |  
-| **Interface** | [PermissionRequestedEvent](./webview/PermissionRequestedEvent.md) |  
+| **Interface** | [PermissionRequestedEvent](./PermissionRequestedEvent.md) |  
 | **Synchronous** | Yes |  
 | **Bubbles** | No |   
 | **Cancelable** | No |  
@@ -521,7 +521,7 @@ webview.removeEventListener("MSWebViewWebResourceRequested", handler);
 
 |  |  |  
 |:--- |:--- |  
-| **Interface** | [WebResourceRequestedEvent](./webview/WebResourceRequestedEvent.md) |  
+| **Interface** | [WebResourceRequestedEvent](./WebResourceRequestedEvent.md) |  
 | **Synchronous** | Yes |  
 | **Bubbles** | No |   
 | **Cancelable** | No |  
@@ -552,7 +552,7 @@ webview.addEventListener("MSWebViewNavigationCompleted", () => {
 
 |  |  |  
 |:--- |:--- |  
-| **Interface** | [ScriptNotifyEvent](./webview/ScriptNotifyEvent.md) |  
+| **Interface** | [ScriptNotifyEvent](./ScriptNotifyEvent.md) |  
 | **Synchronous** | Yes |  
 | **Bubbles** | No |  
 | **Cancelable** | No |  
@@ -594,7 +594,7 @@ webview.removeEventListener("MSWebViewUnsupportedUriSchemeIdentified", handler);
 
 |  |  |  
 |:--- |:--- |  
-| **Interface** | [NavigationEvent](./webview/NavigationEvent.md) |  
+| **Interface** | [NavigationEvent](./NavigationEvent.md) |  
 | **Synchronous** | Yes |  
 | **Bubbles** | No |  
 | **Cancelable** | Yes |  
@@ -619,7 +619,7 @@ webview.removeEventListener("MSWebViewUnviewableContentIdentified", handler);
 
 |  |  |  
 |:--- |:--- |  
-| **Interface** | [UnviewableContentIdentifiedEvent](./webview/UnviewableContentIdentifiedEvent.md) |  
+| **Interface** | [UnviewableContentIdentifiedEvent](./UnviewableContentIdentifiedEvent.md) |  
 | **Synchronous** | Yes |  
 | **Bubbles** | No |   
 | **Cancelable** | No |  
@@ -726,7 +726,7 @@ This method has no parameters.
 
 Type: **MSWebViewAsyncOperation**  
 
-An **MSWebViewAsyncOperation** object that, when it completes, provides a **Blob** object that contains the image.  When using **capturePreviewToBlobAsync**, you need to define success and error handlers after defining the operation.  After applying the event handlers, call the start method on the [MSWebViewAsyncOperation](./webview/MSWebViewAsyncOperation.md) object to execute the operation.  
+An **MSWebViewAsyncOperation** object that, when it completes, provides a **Blob** object that contains the image.  When using **capturePreviewToBlobAsync**, you need to define success and error handlers after defining the operation.  After applying the event handlers, call the start method on the [MSWebViewAsyncOperation](./MSWebViewAsyncOperation.md) object to execute the operation.  
 
 ### captureSelectedContentToDataPackageAsync  
 
@@ -811,7 +811,7 @@ This method has no parameters.
 
 #### Return value  
 
-Type: [DeferredPermissionRequest](./webview/DeferredPermissionRequest.md)  
+Type: [DeferredPermissionRequest](./DeferredPermissionRequest.md)  
 
 The specified deferred permission request.  
 
@@ -841,7 +841,7 @@ var deferredPermissionRequest = x-ms-webview.getDeferredPermissionRequestById(id
 
 #### Return value  
 
-Type: [DeferredPermissionRequest](./webview/DeferredPermissionRequest.md)  
+Type: [DeferredPermissionRequest](./DeferredPermissionRequest.md)  
 
 The specified deferred permission request.  
 
@@ -1128,11 +1128,11 @@ webview.process = process;
 
 #### Property value  
 
-Type: [MSWebViewProcess](./webview/MSWebViewProcess.md)  
+Type: [MSWebViewProcess](./MSWebViewProcess.md)  
 
 ### settings  
 
-Gets a [MSWebViewSettings](./webview/MSWebViewSettings.md) object that contains properties to enable or disable **webview** features.  
+Gets a [MSWebViewSettings](./MSWebViewSettings.md) object that contains properties to enable or disable **webview** features.  
 
 This property is read-only.  
 
@@ -1143,9 +1143,9 @@ webview.settings = settings;
 
 #### Property value  
 
-Type: [MSWebViewSettings](./webview/MSWebViewSettings.md)  
+Type: [MSWebViewSettings](./MSWebViewSettings.md)  
 
-A [MSWebViewSettings](./webview/MSWebViewSettings.md) object that contains properties to enable or disable **webview** features.  
+A [MSWebViewSettings](./MSWebViewSettings.md) object that contains properties to enable or disable **webview** features.  
 
 ### src  
 
