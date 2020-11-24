@@ -12,7 +12,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 ---
 # WebView (EdgeHTML) for Windows 10 apps  
 
-[!INCLUDE [deprecation-note](./includes/deprecation-note.md)]  
+[!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
 The WebView (EdgeHTML) control enables you to host web content in your Windows 10 app.  
 
