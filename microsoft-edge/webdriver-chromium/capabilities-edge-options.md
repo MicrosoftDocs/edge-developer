@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 
 Capabilities are options that you use to customize and configure an `EdgeDriver` session.  This article documents all `EdgeDriver` supported capabilities and how to use each one.  
 
-WebDriver language bindings provide ways to pass capabilities to `EdgeDriver`.  The exact mechanism differs by the language binding used.  In [SeleniumMain][SeleniumMain], the capability is provided through the `EdgeOptions` class.  
+WebDriver language bindings provide ways to pass capabilities to `EdgeDriver`.  The exact mechanism differs by the language binding used.  In [Selenium][SeleniumMain], the capability is provided through the `EdgeOptions` class.  
 
 ## Using the EdgeOptions class  
 
