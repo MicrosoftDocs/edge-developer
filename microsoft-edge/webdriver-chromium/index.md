@@ -14,7 +14,7 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 WebDriver enables developers to create automated tests that simulate user interaction.  WebDriver tests and simulations differ from JavaScript unit tests because of the following reasons. 
 *   Accesses functionality and information not available to JavaScript running in browsers.  
 *   Simulates user events or OS-level events more accurately.  
-*   Manages testing across multiple windows, tabs, and webpages in a single test session.  
+*   Manages the tests for multiple windows, tabs, and webpages in a single test session.  
 *   Runs multiple sessions of Microsoft Edge on a specific machine.  
 
 The following section describes how to get started with WebDriver for Microsoft Edge \(Chromium\).  
@@ -27,13 +27,13 @@ Ensure you install [Microsoft Edge (Chromium)][MicrosoftEdge].  To confirm that 
 
 To begin automating tests, use the following steps to ensure that the WebDriver version you install matches your browser version.  
 
-1.  Navigate to `edge://settings/help` to get the version of Edge.  
+1.  Navigate to `edge://settings/help` to get the version of Microsoft Edge.  
     
     :::image type="complex" source="../media/webdriver-chromium/edge-version.png" alt-text="The build number for Microsoft Edge Canary on January 14, 2020" lightbox="../media/webdriver-chromium/edge-version.png":::
        The build number for Microsoft Edge Canary on January 14, 2020  
     :::image-end:::  
     
-1.  Navigate to the [Microsoft Edge Driver downloads][MicrosoftDeveloperEdgeToolsWebdriverDownloads] page and download the driver that matches the Edge version number.  
+1.  Navigate to the [Microsoft Edge Driver downloads][MicrosoftDeveloperEdgeToolsWebdriverDownloads] page and download the driver that matches the version number of Microsoft Edge.  
     
     :::image type="complex" source="../media/webdriver-chromium/edge-driver-install.png" alt-text="The Downloads section of the Microsoft Edge Driver page" lightbox="../media/webdriver-chromium/edge-driver-install.png":::
        The Downloads section of the [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] page  
@@ -46,7 +46,7 @@ To begin automating tests, use the following steps to ensure that the WebDriver 
 
 The last component you must download is a language-specific client driver to translate your code \(Python, Java, C\#, Ruby, JavaScript\) into commands the Microsoft Edge Driver runs in Microsoft Edge \(Chromium\).  
 
-[Download the WebDriver language binding of your choice][SeleniumDownloads].  The Microsoft Edge team recommends [Selenium 4.00-alpha05][NugetPackagesSeleniumWebdriver400alpha05] or later, because it supports Microsoft Edge \(Chromium\).  However, you are able to control Microsoft Edge \(Chromium\) in all older versions of Selenium, including the current stable Selenium 3 release.  
+[Download the WebDriver language binding of your choice][SeleniumDownloads].  The Microsoft Edge team recommends [Selenium 4.00-alpha05][NugetPackagesSeleniumWebdriver400alpha05] or later, because it supports Microsoft Edge \(Chromium\).  However, you may control Microsoft Edge \(Chromium\) in all older versions of Selenium, including the current stable Selenium 3 release.  
 
 > [!IMPORTANT]
 > If you were previously automating or testing Microsoft Edge \(Chromium\) using `ChromeDriver` and `ChromeOptions` classes, your WebDriver code does not run on Microsoft Edge Version 80 or later.  To solve this problem, update your tests to use the `EdgeOptions` class and install [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver].  
@@ -91,7 +91,7 @@ You may run the following examples using either Selenium 3 or 4.  To use with Se
 
 ### Basic Usage  
 
-To use with Microsoft Edge \(EdgeHTML\), simply create a default instance of the `EdgeDriver` class.  
+To use with Microsoft Edge \(EdgeHTML\), create a default instance of the `EdgeDriver` class.  
 
 #### [C#](#tab/c-sharp/)  
 
@@ -241,7 +241,7 @@ driver = Edge(service_args = service_args)
 
 <a id="customizing-microsoft-edge-driver-services-code"></a>  
 
-When using JavaScript, create and configure a `Service` with the `ServiceBuilder` class.  You may optionally pass the `Service` object to the `Driver` object which starts and stops the service for you.  
+When using JavaScript, create and configure a `Service` with the `ServiceBuilder` class.  Optionally, you may pass the `Service` object to the `Driver` object, which starts \(and stops\) the service for you.  
 To configure the `Service`, run additional methods in the `ServiceBuilder` class before using the `build()` method.  Then pass the `service` as a parameter in the `Driver.createSession()` method.  
 
 ```javascript
@@ -253,7 +253,7 @@ let driver = edge.Driver.createSession(options, service);
 
 ### Use Chromium-Specific Options  
 
-If you set the `UseChromium` property to `true`, you are able to use the `EdgeOptions` class to access the same [Chromium-specific properties and methods][SeleniumWebDriverChromeoptionsClass] as when you automate other Chromium browsers.  
+If you set the `UseChromium` property to `true`, you may use the `EdgeOptions` class to access the same [Chromium-specific properties and methods][SeleniumWebDriverChromeoptionsClass] as when you automate other Chromium browsers.  
 
 #### [C#](#tab/c-sharp/)  
 
@@ -317,7 +317,7 @@ For more information, see [container on Docker Hub][DockerHubMsedgedriver].
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
-The Microsoft Edge team is eager to hear your feedback about using WebDriver, Selenium, and Microsoft Edge.  Use the **Feedback** icon in the Microsoft Edge DevTools or tweet [@EdgeDevTools][TwitterTweetEdgeDevTools] to let the team know what you think.  
+The Microsoft Edge team is eager to hear your feedback about using WebDriver, Selenium, and Microsoft Edge.  To let the team know what you think, choose the **Send Feedback** icon in the Microsoft Edge DevTools or send a tweet [@EdgeDevTools][TwitterTweetEdgeDevTools].  
 
 :::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
    The **Send Feedback** icon in the Microsoft Edge DevTools  
