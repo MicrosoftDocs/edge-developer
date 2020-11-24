@@ -3,59 +3,60 @@ description: All about 3D View and how to use it.
 title: 3D View
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 11/23/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-
 # 3D View  
 
 Use the **3D View** to debug your web application by navigating through the [Document Object Model (DOM)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.  With it you are able to perform the following tasks.  
 
 *   [Explore the web page translated into a 3D perspective](#3d-dom)  
 *   [Debug based on z-index stacking context](#z-index)  
+*   [Access the Layers tool functionality from 3D View with composited layers](#composited-layers)
 *   [Clear some of the clutter on the DOM pane](#changing-your-view) or the [z-index pane](#change-the-scope-of-your-exploration)  
 *   [Pick the color scheme to best debug your DOM problems](#dom-color-type) or [z-index problems](#z-index-color-type)  
 
-If you want to explore an early prototype of 3D View project and run the code yourself, see [3D View Sample][GithubMicrosoftedgeDevtoolssamples3dview].   
+If you want to explore an early prototype of 3D View project and run the code yourself, navigate to [3D View Sample][GithubMicrosoftedgeDevtoolssamples3dview].  
 
-On the left side, there are two panes that you are able to use for your debugging experience.  
+On the left side, there are three panes that you are able to use for your debugging experience.  
 
 1.  The [Z-index](#z-index) pane.  Navigate through the different elements in the web application with the z-index context in mind.  The **Z-index** pane is the default pane.  
-1.  The [3D DOM](#3d-dom) pane.  Explore the DOM as a whole with all the elements at your fingertips.  To access the pane, select on the **DOM** pane next to the **Z-index** pane.  
-    
-On the right side, the canvas displays your selections from the [Z-index](#z-index) or [3D DOM](#3d-dom).  
+1.  The [3D DOM](#3d-dom) pane.  Explore the DOM as a whole with all the elements at your fingertips.  To access the pane, choose the **DOM** pane next to the **Z-index** pane.  
+1.  The [Composited Layers](#composited-layers) pane. Adding another 3D element creates a more comprehensive experience from a Layers perspective. This pane is next to the **DOM** pane.
+
+On the right side, the canvas displays your selections from the [Z-index](#z-index), [3D DOM](#3d-dom), or [Composited Layers](#composited-layers).  
 
 ## Navigating the canvas  
 
-:::image type="complex" source="../media/canvas.png" alt-text="Canvas of 3D View" lightbox="../media/canvas.png":::
+:::image type="complex" source="../media/3d-view-canvas.msft.png" alt-text="Canvas of 3D View" lightbox="../media/3d-view-canvas.msft.png":::
    Canvas of 3D View  
 :::image-end:::  
 
 ### Keyboard shortcuts  
 
-*   Rotate the DOM:  To rotate horizontally, press the `left-arrow` and `right-arrow` keys.  To rotate vertically, press the `up-arrow` and `down-arrow` keys.  
-*   Navigate the DOM:  To move through the adjacent elements, select an element and press the `up-arrow` and `down-arrow` keys.  
+*   Rotate the DOM:  To rotate horizontally, select the `left-arrow` and `right-arrow` keys.  To rotate vertically, select the `up-arrow` and `down-arrow` keys.  
+*   Navigate the DOM:  To move through the adjacent elements, choose an element and select the `up-arrow` and `down-arrow` keys.  
 
 ### Mouse controls  
 
-*   Rotate the DOM:  Select and drag around the canvas space.  
+*   Rotate the DOM:  choose and drag around the canvas space.  
 *   Pan around the DOM:  Open the contextual menu \(right-click\) and drag in the direction you want the DOM to move.  
 *   Zoom:  Drag two fingers across the touchpad or use the scroll wheel on your mouse.  
 
 ### On-screen controls  
 
-:::image type="complex" source="../media/controls-small.png" alt-text="On-screen controls" lightbox="../media/controls-small.png":::
+:::image type="complex" source="../media/3d-view-controls-small.msft.png" alt-text="On-screen controls" lightbox="../media/3d-view-controls-small.msft.png":::
    On-screen controls  
 :::image-end:::  
 
-*   Reset the canvas view to the original view:  Select the **Reset camera** button, or select the **Reset elements in view and re-center camera** \(sideways refresh icon\) button.  
-*   Refresh the canvas \(for example, if the browser changed or you switched to a device emulator view\):  Select the **Retake snapshot** button or select the **Take new snapshot** button \(refresh icon\).  
+*   Reset the canvas view to the original view:  Choose the **Reset camera** button, or choose the **Reset elements in view and re-center camera** \(sideways refresh icon\) button.  
+*   Refresh the canvas \(for example, if the browser changed or you switched to a device emulator view\):  Choose the **Retake snapshot** button or choose the **Take new snapshot** button \(refresh icon\).  
 
 ## Z-index  
 
-:::image type="complex" source="../media/z-index-view-box.png" alt-text="Z-index view" lightbox="../media/z-index-view-box.png":::
+:::image type="complex" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Z-index view" lightbox="../media/3d-view-z-index-view-box.msft.png":::
    Z-index view  
 :::image-end:::  
 
@@ -63,7 +64,7 @@ While the **Z-index** pane has shared features with the **3D DOM** pane, the pan
 
 ### Highlight elements with stacking context  
 
-The **Highlight elements with stacking context** setting allows you to turn on \(and off\) the z-index tags for the elements on the canvas.  The checkbox is selected by default.  
+The **Highlight elements with stacking context** setting allows you to turn on \(and off\) the z-index tags for the elements on the canvas.  The checkbox is chosen by default.  
 
 ### Change the scope of your exploration  
 
@@ -73,23 +74,23 @@ The **Show only elements with stacking context** button removes elements without
 
 The **Isolate selected element** button is essentially three buttons in one.  There are two checkboxes below the **Isolate selected element** button:  The **Show all parents** checkbox and **Keep only parents with new stacking context** checkbox.  
 
-The **Show all parents** checkbox is selected by default.  If you select an element on the canvas pane and select **Isolate selected element** button, the canvas only displays the element and any parents.  
+The **Show all parents** checkbox is chosen by default.  If you choose an element on the canvas pane and choose **Isolate selected element** button, the canvas only displays the element and any parents.  
 
-If you select the **Keep only parents with new stacking context** checkbox, and select **Isolate selected element** button, the canvas only displays the element and the parents that have a new stacking context.  
+If you choose the **Keep only parents with new stacking context** checkbox, and choose **Isolate selected element** button, the canvas only displays the element and the parents that have a new stacking context.  
 
-If you deselect both of the checkboxes and select **Isolate selected element** button, the canvas only displays the element you chose in the first place.  
+If you deselect both of the checkboxes and choose **Isolate selected element** button, the canvas only displays the element you chose in the first place.  
 
-At the very bottom of the **3D DOM** panel, locate the **Hide elements with the same paint order as their parent** checkbox.  Selecting and deselecting the checkbox refreshes the elements based on your selection.  If selected, elements that share paint order are flattened to the parent.  
+At the very bottom of the **3D DOM** panel, locate the **Hide elements with the same paint order as their parent** checkbox.  Choosing and deselecting the checkbox refreshes the elements based on your choice.  If chosen, elements that share paint order are flattened to the parent.  
 
 The options are meant to clear up some of the clutter that more complex web pages create in your canvas.  
 
 ### Z-index color type  
 
-The are the different visualizations you may use for the DOM in your canvas.  Whether you use it for fun or because the visualizations help you visualize the DOM better, The DevTools has three different colorways as well as a **background color** setting.  The radio buttons allow you to toggle through the options and pick the color type most appropriate for your project \(or that you like the most\).  
+The are the different visualizations you may use for the DOM in your canvas.  Whether you use it for fun or because the visualizations help you visualize the DOM better, The DevTools has different colorways as well as a **Use background color** setting.  The **Z-index** pane shares the **Purple to White** and **Background Color** with the **3D DOM** pane. Given the added visual element of the z-index labels, we received feedback that led us to cut back on the number of color options. We believe that the simplicity improves the z-index debugging experience. The radio buttons allow you to toggle through the options and pick the color type most appropriate for your project \(or that you like the most\).  
 
 ## 3D DOM  
 
-:::image type="complex" source="../media/dom-purple-box.png" alt-text="DOM view" lightbox="../media/dom-purple-box.png":::
+:::image type="complex" source="../media/3d-view-dom-purple-box.msft.png" alt-text="DOM view" lightbox="../media/3d-view-dom-purple-box.msft.png":::
    DOM view  
 :::image-end:::  
 
@@ -97,17 +98,25 @@ If you want to take more of a general debugging view, rather than the z-index ex
 
 ### Changing your view  
 
-On the **3D DOM** pane, the **Isolate selected element** button has **Include children** and **Include parents** checkboxes.  By default both checkboxes are selected, which means that selecting the **Isolate selected element** button after selecting an element on the canvas should display the element chosen, the parents of the element, and the children of the element.  Deselecting the **Include children** checkbox and selecting the **Isolate selected element** button again should display the selected element and the parents of the element.  If you select the **Include children** checkbox and deselect the **Include parents** checkbox before selecting **Isolate selected element** button, the canvas then displays the element and any children.  If you deselect both checkboxes and select **Isolate selected element** button, the canvas only displays the element you previously selected.  
+On the **3D DOM** pane, the **Isolate selected element** button has **Include children** and **Include parents** checkboxes.  By default both checkboxes are chosen, which means that choosing the **Isolate selected element** button after choosing an element on the canvas should display the element chosen, the parents of the element, and the children of the element.  Deselecting the **Include children** checkbox and choosing the **Isolate selected element** button again should display the chosen element and the parents of the element.  If you choose the **Include children** checkbox and deselect the **Include parents** checkbox before choosing **Isolate selected element** button, the canvas then displays the element and any children.  If you deselect both checkboxes and choose **Isolate selected element** button, the canvas only displays the element you previously chosen.  
 
 A slider on the control pane titled **Nesting level for page** with a number next to it.  The number indicates the number of layers for the document.  Dragging the slider to the left causes the outermost layers to peel away until you are left with a nesting level set to 1, which displays only the furthest back element in the DOM.  Dragging the slider allows you to remove some of the clutter if you are trying to get a closer look at what is happening in the lower levels.  
 
 ### DOM color type  
 
-In addition to the **Heatmap - Purple to White**, **Heatmap - Blue to Yellow**, **Heatmap - Rainbow**, and **Use background color** radio buttons, there is **Use screen texture**.  The screen texture adds context to your debugging experience by displaying the content from the web page directly onto the elements.  On the **3D DOM** pane, the  **color type** setting is still a work in progress, since some websites have a harder time rendering screen texture in the 3D View.  
+The **3D DOM** pane provides three different colorways—**Heatmap - Purple to White**, **Heatmap - Blue to Yellow**, **Heatmap - Rainbow**—as well as a **Use background color** setting and **Use screen texture**. The screen texture adds context to your debugging experience by displaying the content from the web page directly onto the elements.  
+
+##Composited layers
+
+:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Composited layers" lightbox="../media/experiments-layers.msft.png":::
+   Composited Layers  
+:::image-end:::  
+
+The **Composited Layers** pane brings you the elements of the **Layers** tool without changing contexts. You can still access the Details of each of the Layers and have the **Slow scroll rects** and **Paint**.
 
 ## Getting in touch with the Microsoft Edge DevTools team
 
-The Microsoft Edge Devtools team is working on the UI and adding more functionality to the 3D View based on asks from users like you.  Please send your feedback to help improve the Microsoft Edge DevTools.  Simply select the feedback icon in the DevTools or press `Alt`+`Shift`+`I` \(Windows\) or press `Option`+`Shift`+`I` \(macOS\) and enter any feedback or feature requests you have for the DevTools.  
+The Microsoft Edge Devtools team is working on the UI and adding more functionality to the 3D View based on asks from users like you.  Please send your feedback to help improve the Microsoft Edge DevTools.  Simply choose the **Send Feedback** icon in the DevTools or select `Alt`+`Shift`+`I` on Windows or `Option`+`Shift`+`I` on macOS and enter any feedback or feature requests you have for the DevTools.  
 
 <!-- links -->  
 
