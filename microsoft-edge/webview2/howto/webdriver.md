@@ -3,7 +3,7 @@ description: Automate and test the WebView2 Control using Microsoft Edge Driver
 title: Automating and Testing WebView2 with Microsoft Edge Driver
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/11/2020
+ms.date: 11/24/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -11,7 +11,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, I
 ---
 # Automating and testing WebView2 with Microsoft Edge Driver  
 
-Because WebView2 uses the Chromium web platform, WebView2 developers \(you\) may take advantage of standard web tooling for debugging and automation.  Selenium is one such tool.  It implements the W3C [WebDriver][W3cWebdriver2] API.  You may use Selenium to create automated tests to simulate user interactions.  
+Because WebView2 uses the Microsoft Edge \(Chromium\) web platform, WebView2 developers \(you\) may take advantage of standard web tooling for debugging and automation.  Selenium is one such tool.  It implements the W3C [WebDriver][W3cWebdriver2] API.  You may use Selenium to create automated tests to simulate user interactions.  
 
 Get started with the following steps.  
 
@@ -29,11 +29,11 @@ Once you have cloned the repo, build the project in Visual Studio.  It should lo
 
 Follow the instructions to install [Microsoft Edge Driver][WebdriverChromiumDownloadMicrosoftEdgeDriver] the browser-specific driver required by Selenium to automate and test WebView2.  
 
-Ensure that the version of Microsoft Edge Driver matches the version of Microsoft Edge that you app uses.  For the WebView2API Sample to work, make sure that your version of Microsoft Edge is greater than or equal than the supported version of the latest WebView2 SDK release.  To locate the latest WebView2 SDK release, navigate to [WebView2 release notes][Webview2Releasenotes].  To find out what version of Microsoft Edge you currently have, navigate to `edge://settings/help`.  
+Ensure that the version of Microsoft Edge Driver matches the version of WebView2 Runtime that you app uses.  For the WebView2API Sample to work, make sure that your version of WebView2 Runtime is greater than or equal than the supported version of the latest WebView2 SDK release.  To locate the latest WebView2 SDK release, navigate to [WebView2 release notes][Webview2Releasenotes].  To find out what version of WebView2 Runtime you currently have, navigate to `edge://settings/help`.  
 
 ## Step 3: Add Selenium to the WebView2API Sample  
 
-At this point you should have Microsoft Edge installed, built a WebView2 project, and installed Microsoft Edge Driver.  Now, get started using Selenium.  
+At this point you should have WebView2 Runtime installed, built a WebView2 project, and installed Microsoft Edge Driver.  Now, get started using Selenium.  
 
 > [!NOTE]
 > Selenium supports C\#, Java, Python, Javascript, and Ruby.  However, the following guide is written using C\#.  
@@ -84,7 +84,7 @@ At this point you should have Microsoft Edge installed, built a WebView2 project
     using System.Threading.Tasks;
     ```  
     
-## Step 4: Drive WebView2 with Selenium and Microsoft EdgeDriver  
+## Step 4: Drive WebView2 with Selenium and Microsoft Edge Driver  
 
 1.  First, create the `EdgeOptions` object, by copying the following code snippet.  
     
