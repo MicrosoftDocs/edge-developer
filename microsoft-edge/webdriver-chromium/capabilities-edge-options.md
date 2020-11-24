@@ -57,7 +57,7 @@ Most Microsoft Edge-specific capabilities are exposed through the `EdgeOptions` 
 | wdpAddress | string |  | An address of a Windows Device Portal server to which you connect, in the form of `hostname/ip:port`, for example  `127.0.0.1:50080`.  For more information, navigate to [Remote Debugging - Windows 10 devices][DevtoolsRemoteDebuggingWindows].  |  
 | wdpUsername | string |  | Optional username to use when connecting to a Windows Device Portal server.  Required if the server has authentication enabled.  |  
 | wdpPassword | string |  | Optional password to use when connecting to a Windows Device Portal server.  Required if the server has authentication enabled.  |  
-| windowsApp | string |  | Application user model ID of a Microsoft Edge application package to launch, for example `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE`.  Use the value instead of binary when connecting to a Windows 10X device or emulator using Windows Device Portal.  |  
+| windowsApp | string |  | Application user model ID of a Microsoft Edge application package to launch, for example `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE`.  Use `windowsApp` instead of `binary` when connecting to a Windows 10X device or emulator using Windows Device Portal.  |  
 
 ## perfLoggingPrefs object  
 
