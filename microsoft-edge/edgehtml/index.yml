@@ -21,12 +21,17 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: New Microsoft Edge developer documentation
+  - title: New Microsoft Edge Developer Tools documentation
     linkLists:
       - linkListType: overview
         links:
           - text: New Microsoft Edge DevTools overview
             url: /microsoft-edge/devtools-guide-chromium
+
+  - title: New Microsoft Edge Developer Tools Protocol documentation
+    linkLists:
+      - linkListType: overview
+        links:
           - text: New Microsoft Edge DevTools Protocol overview
             url: /microsoft-edge/devtools-protocol-chromium
 
