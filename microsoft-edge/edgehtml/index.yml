@@ -60,63 +60,39 @@ landingContent:
             url: /microsoft-edge/webview2/index
 
   # Card
-  - title: New Microsoft Edge Technologies
+  - title: New Microsoft Edge compatibility
     linkLists:
       - linkListType: overview
         links:
           - text: New Microsoft Edge Interoperability (Site compatibility)
             url: /microsoft-edge/web-platform/site-impacting-changes
-          - text: New Microsoft Edge WebDriver
-            url: /microsoft-edge/webdriver-chromium/index
+          # - text: New Microsoft Edge WebDriver
+          #   url: /microsoft-edge/webdriver-chromium/index
 
   # Card
-  - title: Legacy Microsoft Edge developer documentation
+  - title: Legacy Microsoft Edge documentation
     linkLists:
       - linkListType: overview
         links:
-          - text: Legacy developer guide
+          - text: Legacy Microsoft Edge developer guide
             url: ./edgehtml/dev-guide/index.md
-          - text: Legacy DevTools overview
+          - text: Legacy Microsoft Edge Developer Tools overview
             url: ./edgehtml/devtools-guide/index.md
-          - text: Legacy DevTools Protocol overview
+          - text: Legacy Microsoft Edge Developer Tools Protocol overview
             url: ./edgehtml/devtools-protocol/index.md
-
-  # Card
-  - title: Legacy Microsoft Edge Extensions documentation
-    linkLists:
-      - linkListType: overview
-        links:
           - text: Legacy Microsoft Edge Extensions overview
             url: ./edgehtml/extensions/index.md
-
-  # Card
-  - title: Legacy Microsoft Edge PWA documentation
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Legacy Microsoft Progressive Web Apps overview
-            url:  ./edgehtml/progressive-web-apps/index.md
-
-  # Card
-  - title: Legacy WebView documentation
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Legacy Microsoft Edge WebView
+          - text: Legacy Microsoft Edge Progressive Web Apps overview
+            url: ./edgehtml/progressive-web-apps/index.md
+          - text: Legacy Microsoft Edge WebView overview
             url: ./edgehtml/hosting/webview/index.md
-
-  # Card
-  - title: Legacy Microsoft Edge Technologies
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Legacy JavaScript runtime hosting
+          - text: Legacy Microsoft Edge JavaScript runtime hosting overview
             url: ./edgehtml/hosting/chakra-hosting/index.md
-          - text: Legacy Performance Analysis
+          - text: Legacy Performance Analysis overview
             url: ./edgehtml/performance-analysis/index.md
-          - text: Legacy WebDriver
+          - text: Legacy WebDriver overview
             url: ./edgehtml/webdriver/index.md
           - text: WebVR
             url: /microsoft-edge/webvr/index
-          - text: Windows Runtime (WinRT)
+          - text: Windows Runtime (WinRT) overview
             url: ./edgehtml/windows-runtime/index.md
