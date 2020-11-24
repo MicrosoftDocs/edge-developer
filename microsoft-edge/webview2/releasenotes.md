@@ -20,7 +20,7 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 
 Release Date: November 23, 2020  
 
-[NuGet package][NuGetGallery1.0.707-prerelease] \| minimum Microsoft Edge version 89.0.707.0.  
+[NuGet package][NuGetGallery1.0.707-prerelease] \| minimum Microsoft Edge version 86.0.616.0.  
 
 #### General  
 
@@ -47,6 +47,7 @@ Release Date: November 23, 2020
 
 * Enabled WinForms designer in .NET Core 3.1+ and .NET 5.  
 * Improved .NET cookie management.  \([\#611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
+* Renamed CoreWebView2Ready to [CoreWebView2InitializationCompleted](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2initializationcompletedeventargs?view=WebView2-dotnet-1.0.707-prerelease).
 
 ###### Bug fixes
 
@@ -58,7 +59,7 @@ Release Date: November 23, 2020
 
 Release Date: November 20, 2020  
 
-[NuGet package][NuGetGallery1.0.664.37] \| minimum WebView2 Runtime version 86.0.664.37.  
+[NuGet package][NuGetGallery1.0.664.37] \| minimum WebView2 Runtime version 86.0.616.0.  
 
 #### General  
 
