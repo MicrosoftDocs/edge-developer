@@ -17,12 +17,13 @@ New versions of the WebView2 SDK are shipped at the same general cadence as the 
 
 The WebView2 NuGet package contains both a release and pre-release package.  
 
-The release package is forward compatible and contains the [Win32 C/C++ APIs][ReferenceWin32].  APIs in this SDK are fully supported.  
+The **release package** is forward compatible and contains the components listed below:
+*   [Win32 C/C++ APIs][ReferenceWin32]
+*   .NET APIs: [WPF][DotnetMicrosoftWebWebview2WpfNamespace], [WinForms][DotnetMicrosoftWebWebview2WinformsNamespace], and [Core][DotnetMicrosoftWebWebview2CoreNamespace].  
 
-The prerelease package is a superset of the release package with the additional components listed below.  
+APIs in this SDK are fully supported.  
 
-*   .NET APIs: [WPF][DotnetMicrosoftWebWebview2WpfNamespace], [WinForms][DotnetMicrosoftWebWebview2WinformsNamespace], and [Core][DotnetMicrosoftWebWebview2CoreNamespace]  
-*   Experimental APIs:  For more information, navigate to the [Experimental APIs](#experimental-apis) section.  
+The **prerelease package** is a superset of the release package with [Experimental APIs](#experimental-apis). 
 
 ### Roadmap  
 
