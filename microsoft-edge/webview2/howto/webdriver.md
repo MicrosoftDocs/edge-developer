@@ -3,7 +3,7 @@ description: Automate and test the WebView2 Control using Microsoft Edge Driver
 title: Automating and Testing WebView2 with Microsoft Edge Driver
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/24/2020
+ms.date: 11/25/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -15,9 +15,9 @@ Because WebView2 uses the Microsoft Edge \(Chromium\) web platform, WebView2 dev
 
 Get started with the following steps.  
 
-## Step 1: Download WebView2API Sample  
+## Step 1:  Download WebView2API Sample  
 
-If you do not have an existing WebView2 project, download the [WebView2API Sample app][GithubMicrosoftedgewebview2samplesSampleappsWebview2apisample], a comprehensive sample of the latest WebView2 SDK.  Ensure you have satisfied the [prerequisites for the WebView2API Sample app][GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisamplePrerequisites]. 
+If you do not have an existing WebView2 project, download the [WebView2API Sample app][GithubMicrosoftedgewebview2samplesSampleappsWebview2apisample], a comprehensive sample of the latest WebView2 SDK.  Ensure you have satisfied the [prerequisites for the WebView2API Sample app][GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisamplePrerequisites].  
 
 Once you have cloned the repo, build the project in Visual Studio.  It should look like the following figure.  
 
@@ -25,13 +25,13 @@ Once you have cloned the repo, build the project in Visual Studio.  It should lo
    WebView2API Sample app  
 :::image-end:::  
 
-## Step 2: Install Microsoft Edge Driver  
+## Step 2:  Install Microsoft Edge Driver  
 
 Follow the instructions to install [Microsoft Edge Driver][WebdriverChromiumDownloadMicrosoftEdgeDriver] the browser-specific driver required by Selenium to automate and test WebView2.  
 
 Ensure that the version of Microsoft Edge Driver matches the version of WebView2 Runtime that you app uses.  For the WebView2API Sample to work, make sure that your version of WebView2 Runtime is greater than or equal than the supported version of the latest WebView2 SDK release.  To locate the latest WebView2 SDK release, navigate to [WebView2 release notes][Webview2Releasenotes].  To find out what version of WebView2 Runtime you currently have, navigate to `edge://settings/help`.  
 
-## Step 3: Add Selenium to the WebView2API Sample  
+## Step 3:  Add Selenium to the WebView2API Sample  
 
 At this point you should have WebView2 Runtime installed, built a WebView2 project, and installed Microsoft Edge Driver.  Now, get started using Selenium.  
 
@@ -64,7 +64,7 @@ At this point you should have WebView2 Runtime installed, built a WebView2 proje
        Download NuGet package  
     :::image-end:::  
     
-1.  Enter **Selenium.WebDriver** in the search bar, choose **Selenium.WebDriver** from the results, and make sure to checkmark the box next to **include pre-release**. On the right-hand side window, ensure the **Version** is set to **install 4.0.0-alpha04** or later and choose **Install**.  Nuget downloads Selenium to your machine.  
+1.  Enter `Selenium.WebDriver` in the search bar, choose **Selenium.WebDriver** from the results, and make sure to checkmark the box next to **include pre-release**.  On the right-hand side window, ensure the **Version** is set to **install 4.0.0-alpha04** or later and choose **Install**.  NuGet downloads Selenium to your machine.  
     
     To learn more about the Selenium.WebDriver NuGet package, navigate to [Selenium.WebDriver 4.0.0-alpha04][NugetSeleniumWebdriver400Alpha04].  
     
@@ -152,8 +152,8 @@ Congratulations.  You have successfully automated a WebView2 project and driven 
 
 <!-- links -->  
 
-[WebdriverChromium]: ../../webdriver-chromium.md "Use WebDriver (Chromium) for test automation | Microsoft Docs"  
-[WebdriverChromiumDownloadMicrosoftEdgeDriver]: ../../webdriver-chromium.md#download-microsoft-edge-driver "Download Microsoft Edge Driver - Use WebDriver (Chromium) for test automation | Microsoft Docs"  
+[WebdriverChromium]: ../../webdriver-chromium/index.md "Use WebDriver (Chromium) for test automation | Microsoft Docs"  
+[WebdriverChromiumDownloadMicrosoftEdgeDriver]: ../../webdriver-chromium/index.md#download-microsoft-edge-driver "Download Microsoft Edge Driver - Use WebDriver (Chromium) for test automation | Microsoft Docs"  
 [WebViewIndex]: ../index.md "Introduction to Microsoft Edge WebView2 - Microsoft Docs"  
 [Webview2Releasenotes]: ../releasenotes.md "Release notes for WebView2 SDK | Microsoft Docs"  
 
