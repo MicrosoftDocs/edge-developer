@@ -47,7 +47,7 @@ Release Date: November 23, 2020
 
 *   Enabled WinForms designer in .NET Core 3.1+ and .NET 5.  
 *   Improved .NET cookie management.  \([\#611][GithubMicrosoftedgeWebviewfeedbackIssue611]\).  
-*   Renamed CoreWebView2Ready to [CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs].
+*   Renamed `CoreWebView2Ready` to [CoreWebView2InitializationCompleted][DotnetApiMicrosoftWebWebview2Corewebview2initializationcompletedeventargs].
 
 ###### Bug fixes
 
