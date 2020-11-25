@@ -3,7 +3,7 @@ description: Learn how to test your website or app in Microsoft Edge or automate
 title: WebDriver (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/24/2020
+ms.date: 11/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -11,12 +11,13 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 ---
 # Use WebDriver (Chromium) for test automation  
 
-WebDriver enables developers to create automated tests that simulate user interaction.  WebDriver tests and simulations differ from JavaScript unit tests because of the following reasons. 
+WebDriver enables you \(developers\) to create automated tests that simulate user interaction.  WebDriver tests and simulations differ from JavaScript unit tests because of the following reasons.  
+
 *   Accesses functionality and information not available to JavaScript running in browsers.  
 *   Simulates user events or OS-level events more accurately.  
 *   Manages multiple windows, tabs, and webpages in a single test session.  
 *   Runs multiple sessions of Microsoft Edge on a specific machine.  
-
+    
 The following section describes how to get started with WebDriver for Microsoft Edge \(Chromium\).  
 
 ## Install Microsoft Edge (Chromium)  
@@ -41,7 +42,7 @@ To begin automating tests, use the following steps to ensure that the WebDriver 
     
     > [!NOTE] 
     > For more information about test automation using Microsoft Edge \(EdgeHTML\), see [Microsoft WebDriver for Microsoft Edge (EdgeHTML)][Webdriver].  
-
+    
 ## Choose a WebDriver language binding  
 
 The last component you must download is a language-specific client driver to translate your code \(Python, Java, C\#, Ruby, JavaScript\) into commands the Microsoft Edge Driver runs in Microsoft Edge \(Chromium\).  
@@ -322,8 +323,6 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 :::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
    The **Send Feedback** icon in the Microsoft Edge DevTools  
 :::image-end:::  
-
-<!-- image links -->  
 
 <!-- links -->  
 

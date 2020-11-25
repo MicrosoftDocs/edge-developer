@@ -3,7 +3,7 @@ description: A reference for WebDriver capabilities and Microsoft Edge-specific 
 title: Capabilities and EdgeOptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/24/2020
+ms.date: 11/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -11,13 +11,13 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 ---
 # Capabilities and EdgeOptions  
 
-Capabilities are options that you may use to customize and configure an `EdgeDriver` session.  To start an `EdgeDriver` session, navigate to [Driving Microsoft Edge][DrivingEdgeWebDriverIndex].  This article documents all supported capabilities for [Microsoft Edge][DownloadEdgeWebDriverIndex] and additional details for passing these capabilities to an `EdgeDriver` session.  
+Capabilities are options that you may use to customize and configure an `EdgeDriver` session.  To start an `EdgeDriver` session, navigate to [Driving Microsoft Edge][DrivingEdgeWebDriverIndex].  This article documents all supported capabilities for [Microsoft Edge][DownloadEdgeWebDriverIndex] and additional details for passing the capabilities to an `EdgeDriver` session.  
 
 WebDriver language bindings provide ways to pass capabilities to `EdgeDriver`.  The exact mechanism depends on [the language binding you choose][ChooseLanguageBindingWebDriverIndex].  In [Selenium][SeleniumMain], capabilities are provided through the `EdgeOptions` class.  
 
 ## Using the EdgeOptions class  
 
-Create an instance of `EdgeOptions`, which has convenient methods for setting Microsoft Edge-specific capabilities. Once you have configured the `EdgeOptions` object, pass `EdgeOptions` into the `EdgeDriver` constructor.  
+Create an instance of `EdgeOptions`, which has convenient methods for setting Microsoft Edge-specific capabilities.  Once you have configured the `EdgeOptions` object, pass `EdgeOptions` into the `EdgeDriver` constructor.  
 
 ```csharp
 var options = new EdgeOptions();
@@ -47,7 +47,7 @@ Most Microsoft Edge-specific capabilities are exposed through the `EdgeOptions` 
 | extensions | list of strings |  | A list of extensions to install on startup.  Each item in the list should be a base-64 encoded packed extension \(`.crx`\).  |  
 | localState | dictionary |  | A dictionary with each entry consisting of the name of the preference and its value.  The preferences are applied to the Local State file in the user data folder.  |  
 | prefs | dictionary |  | A dictionary with each entry consisting of the name of the preference and its value.  The preferences are only applied to the user profile in use.  For examples, navigate to the `Preferences` file in the user data directory of Microsoft Edge.  |  
-| detach | boolean | false | If false, Microsoft Edge quits when `EdgeDriver` ends, whether the session quit or not.  If true, Microsoft Edge only quits if the session is quit \(or closed\).  **NOTE**: If true, and the session is not quit, `EdgeDriver` does not clean up the temporary user data directory used by the Microsoft Edge instance.  |  
+| detach | boolean | false | If false, Microsoft Edge quits when `EdgeDriver` ends, whether the session quit or not.  If true, Microsoft Edge only quits if the session is quit \(or closed\).  **NOTE**:  If true, and the session is not quit, `EdgeDriver` does not clean up the temporary user data directory used by the Microsoft Edge instance.  |  
 | debuggerAddress | string |  | An address of a debugger server to connect to, in the form of <hostname/ip:port>, for example  `127.0.0.1:38947`.  |
 | excludeSwitches | list of strings |  | List of Microsoft Edge command line switches to exclude that EdgeDriver by default passes when starting Microsoft Edge.  Do not prefix switches with `--`.  |  
 | minidumpPath | string |  | Directory to store Microsoft Edge minidumps.  \(Supported only on Linux.\) |  
@@ -57,11 +57,11 @@ Most Microsoft Edge-specific capabilities are exposed through the `EdgeOptions` 
 | wdpAddress | string |  | An address of a Windows Device Portal server to which you connect, in the form of `hostname/ip:port`, for example  `127.0.0.1:50080`.  For more information, navigate to [Remote Debugging - Windows 10 devices][DevtoolsRemoteDebuggingWindows].  |  
 | wdpUsername | string |  | Optional username to use when connecting to a Windows Device Portal server.  Required if the server has authentication enabled.  |  
 | wdpPassword | string |  | Optional password to use when connecting to a Windows Device Portal server.  Required if the server has authentication enabled.  |  
-| windowsApp | string |  | Application user model ID of a Microsoft Edge application package to launch, for example `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE`.  Use `windowsApp` instead of `binary` when connecting to a Windows 10X device or emulator using Windows Device Portal.  |  
+| windowsApp | string |  | Application user model ID of a Microsoft Edge app package to launch, for example `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE`.  Use `windowsApp` instead of `binary` when connecting to a Windows 10X device or emulator using Windows Device Portal.  |  
 
 ## perfLoggingPrefs object  
 
-The `perfLoggingPrefs` dictionary has the following format \(all keys are optional\):  
+The `perfLoggingPrefs` dictionary has the following format \(all keys are optional\).  
 
 | Key | Type | Default value | Details |  
 |:--- |:--- |:--- |:--- |  
@@ -89,4 +89,4 @@ The following list contains all of the Microsoft Edge-specific capabilities that
 [SeleniumMain]: https://www.selenium.dev "SeleniumHQ Browser Automation"  
 [SharedCapabilitiesSeleniumDocumentation]: https://www.selenium.dev/documentation/en/driver_idiosyncrasies/shared_capabilities/ "Shared capabilities | Selenium Documentation"   
 
-[CapabilitiesW3cWebdriver]: https://www.w3.org/TR/webdriver/#capabilities "Capabilities | WebDriver W3C specification"   
+[CapabilitiesW3cWebdriver]: https://www.w3.org/TR/webdriver/#capabilities "Capabilities - WebDriver specification | W3C"   

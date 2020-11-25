@@ -3,7 +3,7 @@ description: Use Puppeteer to automate and test in Microsoft Edge
 title: Puppeteer
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/24/2020
+ms.date: 11/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -80,7 +80,7 @@ Now run `example.js` from the command line.
 node example.js
 ```  
 
-`puppeteer-core` launches Microsoft Edge, navigates to `https://www.microsoftedgeinsider.com`, and saves an 800 px by 600 px screenshot of the webpage.  Customize the screenshot size with [page.setViewport()][PuppeteerApipagesetviewport].  
+`puppeteer-core` launches Microsoft Edge, navigates to `https://www.microsoftedgeinsider.com`, and saves an 800-px-by-600-px screenshot of the webpage.  Customize the screenshot size with [page.setViewport()][PuppeteerApipagesetviewport].  
 
 :::image type="complex" source="./media/puppeteer-example.png" alt-text="The example.png file produced by example.js" lightbox="./media/puppeteer-example.png":::
    The `example.png` file produced by `example.js`  
@@ -102,7 +102,7 @@ The Microsoft Edge Developer team is eager to hear your feedback about using Pup
 *   [WebDriver (Chromium)][WebdriverChromiumMain]  
 *   [WebDriver (EdgeHTML)][WebdriverEdgehtmlMain]  
 *   [Chrome DevTools Protocol Viewer on GitHub][GithubChromedevtoolsProtocol]  
-*   [Microsoft Edge: Making the web better through more open source collaboration on Microsoft Experience Blog][MicrosoftBlogsWindowsExperience20181206]  
+*   [Microsoft Edge:  Making the web better through more open source collaboration on Microsoft Experience Blog][MicrosoftBlogsWindowsExperience20181206]  
 *   [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload]  
 *   [Chromium on The Chromium Projects][ChromiumHome]  
 *   [Node.js][NodejsMain]  
@@ -118,7 +118,7 @@ The Microsoft Edge Developer team is eager to hear your feedback about using Pup
 
 [GithubChromedevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Chrome DevTools Protocol Viewer | GitHub"  
 
-[MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge: Making the web better through more open-source collaboration | Microsoft Experience Blog"  
+[MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge:  Making the web better through more open-source collaboration | Microsoft Experience Blog"  
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"  
 
