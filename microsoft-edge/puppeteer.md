@@ -34,7 +34,7 @@ yarn add puppeteer-core
 
 `puppeteer-core` should be familiar to users of other browser-testing frameworks like [WebDriver][WebDriverEdgehtmlMain].  You create an instance of the browser, open a page, and then manipulate it with the Puppeteer API.  In the following code sample, `puppeteer-core` launches Microsoft Edge \(Chromium\), navigates to `https://www.microsoftedgeinsider.com`, and saves a screenshot as `example.png`.  
 
-Copy the code sample below and save it as `example.js`.  
+Copy the following code snippet and save it as `example.js`.  
 
 ```javascript
 const puppeteer = require('puppeteer-core');
@@ -74,13 +74,13 @@ Finally, set `executablePath: EDGE_PATH` in `example.js`.  Save your changes.
 > [!NOTE]
 > Microsoft Edge \(EdgeHTML\) does not work with `puppeteer-core`.  You must install the [Microsoft Edge Insider channels][MicrosoftedgeinsiderDownload] to continue following this example.  
 
-Now run `example.js` from the command line.  
+Now, run `example.js` from the command line.  
 
 ```shell
 node example.js
 ```  
 
-`puppeteer-core` launches Microsoft Edge, navigates to `https://www.microsoftedgeinsider.com`, and saves an 800-px-by-600-px screenshot of the webpage.  Customize the screenshot size with [page.setViewport()][PuppeteerApipagesetviewport].  
+`puppeteer-core` launches Microsoft Edge, navigates to `https://www.microsoftedgeinsider.com`, and saves a screenshot of the webpage.  Customize the screenshot size with [page.setViewport()][PuppeteerApipagesetviewport].  
 
 :::image type="complex" source="./media/puppeteer-example.png" alt-text="The example.png file produced by example.js" lightbox="./media/puppeteer-example.png":::
    The `example.png` file produced by `example.js`  
