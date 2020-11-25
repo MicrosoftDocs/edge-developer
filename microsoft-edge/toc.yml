@@ -524,7 +524,10 @@
         - name: webhint
           href: visual-studio-code/webhint.md
     - name: WebDriver (Chromium)
-      href: webdriver-chromium.md
+      href: webdriver-chromium/index.md
+      items:
+        - name: Capabilities & EdgeOptions
+          href: webdriver-chromium/capabilities-edge-options.md
     - name: WebDriver (EdgeHTML)
       href: webdriver.md
     - name: Web platform (Chromium)
