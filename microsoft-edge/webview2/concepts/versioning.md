@@ -27,7 +27,7 @@ The **prerelease package** is a superset of the release package with [Experiment
 
 ### Roadmap  
 
-The release package contains all of the stable, supported Win32 C/C++ APIs.  In the future, the release package will contain all stable, supported .NET APIs when they're made generally available.  The prerelease package contains experimental APIs that are subject to change based on your feedback. 
+The release package contains all of the stable, supported Win32 C/C++ and .NET APIs.  The prerelease package contains experimental APIs that are subject to change based on your feedback. 
 
 ## Experimental APIs  
 
