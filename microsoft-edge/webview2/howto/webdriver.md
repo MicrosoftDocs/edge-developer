@@ -152,8 +152,8 @@ Congratulations.  You have successfully automated a WebView2 project and driven 
 
 <!-- links -->  
 
-[WebdriverChromium]: ../../webdriver-chromium.md "Use WebDriver (Chromium) for test automation | Microsoft Docs"  
-[WebdriverChromiumDownloadMicrosoftEdgeDriver]: ../../webdriver-chromium.md#download-microsoft-edge-driver "Download Microsoft Edge Driver - Use WebDriver (Chromium) for test automation | Microsoft Docs"  
+[WebdriverChromium]: ../../webdriver-chromium/index.md "Use WebDriver (Chromium) for test automation | Microsoft Docs"  
+[WebdriverChromiumDownloadMicrosoftEdgeDriver]: ../../webdriver-chromium/index.md#download-microsoft-edge-driver "Download Microsoft Edge Driver - Use WebDriver (Chromium) for test automation | Microsoft Docs"  
 [WebViewIndex]: ../index.md "Introduction to Microsoft Edge WebView2 - Microsoft Docs"  
 [Webview2Releasenotes]: ../releasenotes.md "Release notes for WebView2 SDK | Microsoft Docs"  
 
