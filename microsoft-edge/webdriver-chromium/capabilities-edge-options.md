@@ -11,13 +11,13 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 ---
 # Capabilities and EdgeOptions  
 
-Capabilities are options that you use to customize and configure an `EdgeDriver` session.  This article documents all `EdgeDriver` supported capabilities and how to use each one.  
+Capabilities are options that you may use to customize and configure an `EdgeDriver` session.  To start an `EdgeDriver` session, navigate to [Driving Microsoft Edge][DrivingEdgeWebDriverIndex].  This article documents all supported capabilities for [Microsoft Edge][DownloadEdgeWebDriverIndex] and additional details for passing these capabilities to an `EdgeDriver` session.  
 
-WebDriver language bindings provide ways to pass capabilities to `EdgeDriver`.  The exact mechanism differs by the language binding used.  In [Selenium][SeleniumMain], the capability is provided through the `EdgeOptions` class.  
+WebDriver language bindings provide ways to pass capabilities to `EdgeDriver`.  The exact mechanism depends on [the language binding you choose][ChooseLanguageBindingWebDriverIndex].  In [Selenium][SeleniumMain], capabilities are provided through the `EdgeOptions` class.  
 
 ## Using the EdgeOptions class  
 
-Create an instance of `EdgeOptions`, which has convenient methods for setting EdgeDriver-specific capabilities.  To pass the `EdgeOptions` object into the `EdgeDriver` constructor, copy and run the following code snippet.  
+Create an instance of `EdgeOptions`, which has convenient methods for setting Microsoft Edge-specific capabilities. Once you have configured the `EdgeOptions` object, pass `EdgeOptions` into the `EdgeDriver` constructor.  
 
 ```csharp
 var options = new EdgeOptions();
@@ -26,7 +26,7 @@ options.AddExtensions("/path/to/extension.crx");
 var driver = new EdgeDriver(options);
 ```  
 
-To use a capability that does not yet have a convenience method, run the `AddAdditionalCapability` method.  To use the method, you must know the name of the capability and the type of value it accepts.  To review the full list, navigate to [EdgeOptions object](#edgeoptions-object).  
+For capabilities that do not yet have a convenient method, use the `AddAdditionalCapability` method.  You must know the name of the capability and the type of value it accepts.  To review the full list, navigate to [EdgeOptions object](#edgeoptions-object).  
 
 ```csharp
 options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
@@ -34,7 +34,7 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 
 ## Recognized Capabilities  
 
-For standard capabilities that `EdgeDriver` accepts, navigate to [Selenium documentation][SeleniumDocumentation] and [W3C WebDriver standard][W3cWebdriver].  This article only lists capabilities specific to Microsoft Edge \(Chromium\).  
+For standard capabilities that `EdgeDriver` accepts, navigate to [Selenium documentation][SharedCapabilitiesSeleniumDocumentation] and the [W3C WebDriver standard][CapabilitiesW3cWebdriver].  This article only lists capabilities specific to Microsoft Edge.  
 
 ## EdgeOptions object  
 
@@ -82,8 +82,11 @@ The following list contains all of the Microsoft Edge-specific capabilities that
 <!-- links -->  
 
 [DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Get Started with Remote Debugging Windows 10 Devices | Microsoft Docs"  
+[DrivingEdgeWebDriverIndex]: ./index.md#driving-microsoft-edge-chromium "Driving Microsoft Edge (Chromium) | Microsoft Docs"    
+[DownloadEdgeWebDriverIndex]: ./index.md#install-microsoft-edge-chromium "Install Microsoft Edge (Chromium) | Microsoft Docs"  
+[ChooseLanguageBindingWebDriverIndex]: ./index.md#choose-a-webdriver-language-binding "Choose a WebDriver language binding | Microsoft Docs"
 
 [SeleniumMain]: https://www.selenium.dev "SeleniumHQ Browser Automation"  
-[SeleniumDocumentation]: https://www.selenium.dev/documentation "Documentation | SeleniumHQ Browser Automation"   
+[SharedCapabilitiesSeleniumDocumentation]: https://www.selenium.dev/documentation/en/driver_idiosyncrasies/shared_capabilities/ "Shared capabilities | Selenium Documentation"   
 
-[W3cWebdriver]: https://w3.org/TR/webdriver "WebDriver | W3C"   
+[CapabilitiesW3cWebdriver]: https://www.w3.org/TR/webdriver/#capabilities "Capabilities | WebDriver W3C specification"   

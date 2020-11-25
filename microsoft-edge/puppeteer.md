@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, developer, tools, automation, test
 ---
 # Puppeteer  
 
-[Puppeteer][PuppeteerMain] is a [Node][NodejsMain] library.  It provides a high-level API to control Microsoft Edge \(Chromium\) using the [DevTools Protocol][GithubChromedevtoolsProtocol].  Puppeteer runs [headless][WikiHeadlessBrowser] by default, which means a UI is not displayed, and instead must use the command line.  You may also configure Puppeteer to run full \(non-headless\) Microsoft Edge or Chromium as well.  
+[Puppeteer][PuppeteerMain] is a [Node][NodejsMain] library that provides a high-level API to control Microsoft Edge \(Chromium\) using the [DevTools Protocol][GithubChromedevtoolsProtocol].  Puppeteer launches [headless browsers][WikiHeadlessBrowser] by default.  Headless browsers do not display a UI, so instead you must use the command line.  You may also configure Puppeteer to run full \(non-headless\) Microsoft Edge as well.  
 
 By default, when you install Puppeteer, the installer downloads a recent version of [Chromium][ChromiumHome], the open-source browser that [Microsoft Edge is also built upon][MicrosoftBlogsWindowsExperience20181206].  If you have Microsoft Edge \(Chromium\) installed, you may use [puppeteer-core][PuppeteerApivscore].  `puppeteer-core` is a lightweight version of Puppeteer that launches an existing browser installation, like Microsoft Edge \(Chromium\).  To download Microsoft Edge \(Chromium\), navigate to [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload].  
 
@@ -32,7 +32,7 @@ yarn add puppeteer-core
 > [!NOTE]
 > `puppeteer-core` relies on Node v8.9.0 or later.  The example below uses `async`/`await` which is only supported in Node v7.6.0 or later.  Run `node -v` from the command-line to ensure you have a compatible version of Node.js.  
 
-`puppeteer-core` should be familiar to users of other browser-testing-frameworks like [WebDriver][WebDriverEdgehtmlMain].  You create an instance of the browser, open a page, and then manipulate it with the Puppeteer API.  In the following code sample, `puppeteer-core` launches Microsoft Edge \(Chromium\), navigates to `https://www.microsoftedgeinsider.com`, and saves a screenshot as `example.png`.  
+`puppeteer-core` should be familiar to users of other browser-testing frameworks like [WebDriver][WebDriverEdgehtmlMain].  You create an instance of the browser, open a page, and then manipulate it with the Puppeteer API.  In the following code sample, `puppeteer-core` launches Microsoft Edge \(Chromium\), navigates to `https://www.microsoftedgeinsider.com`, and saves a screenshot as `example.png`.  
 
 Copy the code sample below and save it as `example.js`.  
 
@@ -80,7 +80,7 @@ Now run `example.js` from the command line.
 node example.js
 ```  
 
-`puppeteer-core` launches Microsoft Edge, navigates to `https://www.microsoftedgeinsider.com`, and saves an 800-px-x-600-px screenshot of the webpage.  Customize the webpage size with [page.setViewport()][PuppeteerApipagesetviewport].  
+`puppeteer-core` launches Microsoft Edge, navigates to `https://www.microsoftedgeinsider.com`, and saves an 800 px by 600 px screenshot of the webpage.  Customize the screenshot size with [page.setViewport()][PuppeteerApipagesetviewport].  
 
 :::image type="complex" source="./media/puppeteer-example.png" alt-text="The example.png file produced by example.js" lightbox="./media/puppeteer-example.png":::
    The `example.png` file produced by `example.js`  

@@ -14,14 +14,14 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 WebDriver enables developers to create automated tests that simulate user interaction.  WebDriver tests and simulations differ from JavaScript unit tests because of the following reasons. 
 *   Accesses functionality and information not available to JavaScript running in browsers.  
 *   Simulates user events or OS-level events more accurately.  
-*   Manages the tests for multiple windows, tabs, and webpages in a single test session.  
+*   Manages multiple windows, tabs, and webpages in a single test session.  
 *   Runs multiple sessions of Microsoft Edge on a specific machine.  
 
 The following section describes how to get started with WebDriver for Microsoft Edge \(Chromium\).  
 
 ## Install Microsoft Edge (Chromium)  
 
-Ensure you install [Microsoft Edge (Chromium)][MicrosoftEdge].  To confirm that you have Microsoft Edge\ (Chromium\) installed, navigate to `edge://settings/help`, and verify the version number is Version 75 or later.  
+Ensure you install [Microsoft Edge (Chromium)][MicrosoftEdge].  To confirm that you have Microsoft Edge \(Chromium\) installed, navigate to `edge://settings/help`, and verify the version number is Version 75 or later.  
 
 ## Download Microsoft Edge Driver  
 
@@ -159,7 +159,7 @@ let driver = edge.Driver.createSession(options);
 * * *  
 
 > [!NOTE]
-> If the [DeveloperToolsAvailability][DeployedgePoliciesDevelopertoolsavailability] policy is set to `2`, [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] is not be able to drive [Microsoft Edge (Chromium)][MicrosoftEdge] because the driver uses the [Microsoft Edge DevTools][DevToolsMain].  Ensure you set the [DeveloperToolsAvailability][DeployedgePoliciesDevelopertoolsavailability] policy to `0` or `1` to automate [Microsoft Edge (Chromium)][MicrosoftEdge].  
+> If your IT admin has set the [DeveloperToolsAvailability][DeployedgePoliciesDevelopertoolsavailability] policy to `2`, [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] is not be able to drive [Microsoft Edge (Chromium)][MicrosoftEdge] because the driver uses the [Microsoft Edge DevTools][DevToolsMain].  Ensure the [DeveloperToolsAvailability][DeployedgePoliciesDevelopertoolsavailability] policy is set to `0` or `1` to automate [Microsoft Edge (Chromium)][MicrosoftEdge].  
 
 ### Choosing Specific Browser Binaries (Chromium-Only)  
 
