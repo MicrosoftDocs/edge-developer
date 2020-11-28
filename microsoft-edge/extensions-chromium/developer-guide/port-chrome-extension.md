@@ -10,11 +10,11 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 ---
 # Port your extension  
 
-Microsoft Edge helps you port your Chrome extension with minimal changes.  The Extension APIs and manifest keys supported by Chrome are code-compatible with Microsoft Edge.  For a list of APIs supported by Microsoft Edge, navigate to [API support][ExtensionApiSupport].  
+Microsoft Edge allows you to port your Chrome extension with minimal changes.  The Extension APIs and manifest keys supported by Chrome are code-compatible with Microsoft Edge.  For a list of APIs supported by Microsoft Edge, navigate to [API support][ExtensionApiSupport].  
 
 To port your Chrome extension, complete the following steps.  
 
-1.  Review the Chrome extension APIs used in your extensions with the [supported APIs][ExtensionApiSupport] list.  
+1.  Review the Chrome extension APIs used in your extensions with the Microsoft Edge [supported APIs][ExtensionApiSupport] list.  
     
     > [!NOTE]
     > If your extension uses APIs that are not supported by Microsoft Edge, it may not port directly.  
