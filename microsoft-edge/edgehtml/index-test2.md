@@ -3,7 +3,7 @@ description: Legacy Microsoft Edge documentation.  Content for Microsoft Edge (e
 title: Legacy Microsoft Edge documentation
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/23/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -20,29 +20,51 @@ Thank you for your interest in Microsoft Edge.
 
 :::row:::
    :::column span="":::
-      [New Microsoft Edge DevTools overview][DevtoolsGuideChromiumMain]  
+      [Microsoft Edge DevTools overview][DevtoolsGuideChromiumMain]  
    :::column-end:::
    :::column span="":::
-      [New Microsoft Edge DevTools Protocol overview][DevtoolsProtocolChromiumMain]  
+      [Microsoft Edge DevTools Protocol overview][DevtoolsProtocolChromiumMain]  
    :::column-end:::
    :::column span="":::
-      [New Microsoft Edge Extensions overview][ExtensionsChromiumIndex]  
+      [Microsoft Edge Extensions overview][ExtensionsChromiumIndex]  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      [New Microsoft Edge Progressive Web Apps overview][ProgressiveWebAppsChromiumIndex]  
+      [Microsoft Edge Progressive Web Apps overview][ProgressiveWebAppsChromiumIndex]  
    :::column-end:::
    :::column span="":::
       [New Microsoft EdgeWebView2 overview][Webview2Index]  
    :::column-end:::
    :::column span="":::
-      [New Microsoft Edge Interoperability (Site compatibility)][WebPlatformSiteImpactingChanges]  
+      [Microsoft Edge Interoperability (Site compatibility)][WebPlatformSiteImpactingChanges]  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      [New Microsoft Edge WebDriver][WebdriverChromiumIndex]  
+      [Microsoft Edge WebDriver][WebdriverChromiumIndex]  
+   :::column-end:::
+   :::column span="":::
+      &nbsp;  
+   :::column-end:::
+   :::column span="":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      &nbsp;  
+   :::column-end:::
+   :::column span="":::
+      &nbsp;  
+   :::column-end:::
+   :::column span="":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      &nbsp;  
    :::column-end:::
    :::column span="":::
       &nbsp;  
@@ -54,37 +76,40 @@ Thank you for your interest in Microsoft Edge.
 
 ## Legacy Microsoft Edge documentation  
 
+this is deprecated and legacy content for content new content go to  
+by chromium category  
+
 :::row:::
    :::column span="":::
-      [Legacy Microsoft Edge developer guide][EdgehtmlDevGuideIndex]  
+      [Microsoft Edge developer guide][EdgehtmlDevGuideIndex]  
    :::column-end:::
    :::column span="":::
-      [Legacy Microsoft Edge Developer Tools overview][EdgehtmlDevtoolsGuideIndex]  
+      [Microsoft Edge Developer Tools overview][EdgehtmlDevtoolsGuideIndex]  
    :::column-end:::
    :::column span="":::
-      [Legacy Microsoft Edge Developer Tools Protocol overview][EdgehtmlDevtoolsProtocolIndex]  
+      [Microsoft Edge Developer Tools Protocol overview][EdgehtmlDevtoolsProtocolIndex]  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      [Legacy Microsoft Edge Extensions overview][EdgehtmlExtensionsIndex]  
+      [Microsoft Edge Extensions overview][EdgehtmlExtensionsIndex]  
    :::column-end:::
    :::column span="":::
-      [Legacy Microsoft Edge Progressive Web Apps overview][EdgehtmlProgressiveWebAppsIndex]  
+      [Microsoft Edge Progressive Web Apps overview][EdgehtmlProgressiveWebAppsIndex]  
    :::column-end:::
    :::column span="":::
-      [Legacy Microsoft Edge WebView overview][EdgehtmlHostingWebviewIndex]  
+      [Microsoft Edge WebView overview][EdgehtmlHostingWebviewIndex]  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      [Legacy Microsoft Edge JavaScript runtime hosting overview][EdgehtmlHostingJavascriptRuntimeHostingIndex]  
+      [Microsoft Edge JavaScript runtime hosting overview][EdgehtmlHostingJavascriptRuntimeHostingIndex]  
    :::column-end:::
    :::column span="":::
-      [Legacy Microsoft Edge Performance Analysis overview][EdgehtmlPerformanceAnalysisIndex]  
+      [Microsoft Edge Performance Analysis overview][EdgehtmlPerformanceAnalysisIndex]  
    :::column-end:::
    :::column span="":::
-      [Legacy Microsoft Edge WebDriver overview][EdgehtmlWebdriverIndex]  
+      [Microsoft Edge WebDriver overview][EdgehtmlWebdriverIndex]  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -102,7 +127,7 @@ Thank you for your interest in Microsoft Edge.
 <!-- links -->  
 
 [DevtoolsGuideChromiumMain]: ../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools overview | Microsoft Docs"  
-[DevtoolsProtocolChromiumMain]: ../devtools-protocol-chromium/index.md "New Microsoft Edge DevTools Protocol overviewMicrosoft Edge (Chromium) DevTools Protocol overview | Microsoft Docs"  
+[DevtoolsProtocolChromiumMain]: ../devtools-protocol-chromium/index.md "Microsoft Edge (Chromium) DevTools Protocol overview | Microsoft Docs"  
 [EdgehtmlDevGuideIndex]: ./dev-guide/index.md "Microsoft Edge Developer Guide | Microsoft Docs"  
 [EdgehtmlDevtoolsGuideIndex]: ./devtools-guide/index.md "Microsoft Edge (EdgeHTML) Developer Tools | Microsoft Docs"  
 [EdgehtmlDevtoolsProtocolIndex]: ./devtools-protocol/index.md "Microsoft Edge (EdgeHTML) DevTools Protocol | Microsoft Docs"  
