@@ -56,7 +56,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft EdgeWebView2 overview
+          - text: Microsoft Edge WebView2 overview
             url: /microsoft-edge/webview2/index
 
   # Card
