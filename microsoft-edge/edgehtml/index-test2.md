@@ -73,7 +73,6 @@ Thank you for your interest in Microsoft Edge.
       &nbsp;  
    :::column-end:::
 :::row-end:::  
-:::row-end:::  
 :::row:::
    :::column span="":::
       &nbsp;  
@@ -84,7 +83,6 @@ Thank you for your interest in Microsoft Edge.
    :::column span="":::
       &nbsp;  
    :::column-end:::
-:::row-end:::  
 :::row-end:::  
 :::row:::
    :::column span="":::
