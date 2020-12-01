@@ -98,7 +98,7 @@ Thank you for your interest in Microsoft Edge.
 
 ## Legacy Microsoft Edge documentation  
 
-This is deprecated and legacy content.  For new content, navigate to the associated [Chromium category](#new-microsoft-edge-documentation)  
+This is deprecated and legacy content.  For new content, navigate to the associated [Chromium category](#new-microsoft-edge-documentation).  
 
 :::row:::
    :::column span="":::
