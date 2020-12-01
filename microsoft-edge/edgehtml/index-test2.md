@@ -73,11 +73,34 @@ Thank you for your interest in Microsoft Edge.
       &nbsp;  
    :::column-end:::
 :::row-end:::  
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      &nbsp;  
+   :::column-end:::
+   :::column span="":::
+      &nbsp;  
+   :::column-end:::
+   :::column span="":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      &nbsp;  
+   :::column-end:::
+   :::column span="":::
+      &nbsp;  
+   :::column-end:::
+   :::column span="":::
+      &nbsp;  
+   :::column-end:::
+:::row-end:::  
 
 ## Legacy Microsoft Edge documentation  
 
-this is deprecated and legacy content for content new content go to  
-by chromium category  
+This is deprecated and legacy content.  For new content, navigate to the associated [Chromium category](#new-microsoft-edge-documentation)  
 
 :::row:::
    :::column span="":::
