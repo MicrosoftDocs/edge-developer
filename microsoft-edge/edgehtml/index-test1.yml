@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 11/24/2020
+  ms.date: 12/01/2020
 
 # linkListType: architecture | concept | deploy | download | 
 #               get-started | how-to-guide | learn | overview | 
@@ -25,14 +25,14 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: New Microsoft Edge DevTools overview
+          - text: Microsoft Edge DevTools overview
             url: /microsoft-edge/devtools-guide-chromium
 
   - title: New Microsoft Edge Developer Tools Protocol documentation
     linkLists:
       - linkListType: overview
         links:
-          - text: New Microsoft Edge DevTools Protocol overview
+          - text: Microsoft Edge DevTools Protocol overview
             url: /microsoft-edge/devtools-protocol-chromium
 
   # Card
@@ -40,7 +40,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: New Microsoft Edge Extensions overview
+          - text: Microsoft Edge Extensions overview
             url: /microsoft-edge/microsoft-edge/extensions-chromium/index
 
   # Card
@@ -48,7 +48,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: New Microsoft Edge Progressive Web Apps overview
+          - text: Microsoft Edge Progressive Web Apps overview
             url: /microsoft-edge/progressive-web-apps-chromium/index
 
   # Card
@@ -56,7 +56,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: New Microsoft EdgeWebView2 overview
+          - text: Microsoft EdgeWebView2 overview
             url: /microsoft-edge/webview2/index
 
   # Card
@@ -64,7 +64,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: New Microsoft Edge Interoperability (Site compatibility)
+          - text: Microsoft Edge Interoperability (Site compatibility)
             url: /microsoft-edge/web-platform/site-impacting-changes
 
   # Card
@@ -72,7 +72,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: New Microsoft Edge WebDriver
+          - text: Microsoft Edge WebDriver
             url: /microsoft-edge/webdriver-chromium/index
 
   # Card
@@ -80,11 +80,11 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Legacy Microsoft Edge developer guide
+          - text: Microsoft Edge developer guide
             url: ./edgehtml/dev-guide/index.md
-          - text: Legacy Microsoft Edge Developer Tools overview
+          - text: Microsoft Edge Developer Tools overview
             url: ./edgehtml/devtools-guide/index.md
-          - text: Legacy Microsoft Edge Developer Tools Protocol overview
+          - text: Microsoft Edge Developer Tools Protocol overview
             url: ./edgehtml/devtools-protocol/index.md
 
   # Card
@@ -92,7 +92,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Legacy Microsoft Edge Extensions overview
+          - text: Microsoft Edge Extensions overview
             url: ./edgehtml/extensions/index.md
 
   # Card
@@ -100,7 +100,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Legacy Microsoft Edge Progressive Web Apps overview
+          - text: Microsoft Edge Progressive Web Apps overview
             url:  ./edgehtml/progressive-web-apps/index.md
 
   # Card
@@ -108,7 +108,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Legacy Microsoft Edge WebView overview
+          - text: Microsoft Edge WebView overview
             url: ./edgehtml/hosting/webview/index.md
 
   # Card
@@ -116,11 +116,11 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Legacy Microsoft Edge JavaScript runtime hosting overview
+          - text: Microsoft Edge JavaScript runtime hosting overview
             url: ./edgehtml/hosting/chakra-hosting/index.md
-          - text: Legacy Microsoft Edge Performance Analysis overview
+          - text: Microsoft Edge Performance Analysis overview
             url: ./edgehtml/performance-analysis/index.md
-          - text: Legacy Microsoft Edge WebDriver overview
+          - text: Microsoft Edge WebDriver overview
             url: ./edgehtml/webdriver/index.md
           - text: WebVR
             url: /microsoft-edge/webvr/index
