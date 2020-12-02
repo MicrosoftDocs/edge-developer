@@ -15,6 +15,17 @@ Thank you for your interest in Microsoft Edge.  The following article summarizes
 
 ## New Microsoft Edge documentation  
 
+| Feature | Details |  
+|:--- |:--- |  
+| [Microsoft Edge DevTools overview][DevtoolsGuideChromiumMain]   |  |  
+| [Microsoft Edge DevTools Protocol overview][DevtoolsProtocolChromiumMain]   |  |  
+| [Microsoft Edge Extensions overview][ExtensionsChromiumIndex]   |  |  
+| [Microsoft Edge Progressive Web Apps overview][ProgressiveWebAppsChromiumIndex]   |  |  
+| [New Microsoft Edge WebView2 overview][Webview2Index]   |  |  
+| [Microsoft Edge Interoperability (Site compatibility)][WebPlatformSiteImpactingChanges]   |  |  
+| [Microsoft Edge WebDriver][WebdriverChromiumIndex]   |  |  
+
+<!--  
 :::row:::
    :::column span="":::
       [Microsoft Edge DevTools overview][DevtoolsGuideChromiumMain]  
@@ -48,14 +59,30 @@ Thank you for your interest in Microsoft Edge.  The following article summarizes
       &nbsp;  
    :::column-end:::
 :::row-end:::  
+-->  
 
 ## Legacy Microsoft Edge documentation  
 
-This is deprecated and legacy content.  For new content, navigate to the associated [Chromium category](#new-microsoft-edge-documentation).  
+<!--  This is deprecated and legacy content.  For new content, navigate to the associated [Chromium category](#new-microsoft-edge-documentation).  -->  
 
 > [!IMPORTANT]
 > The legacy Microsoft Edge has been replaced with new Microsoft Edge documentation.  
 
+| Feature | Details |  
+|:--- |:--- |  
+| [Microsoft Edge developer guide][EdgehtmlDevGuideIndex]   |  |  
+| [Microsoft Edge Developer Tools overview][EdgehtmlDevtoolsGuideIndex]   |  |  
+| [Microsoft Edge Developer Tools Protocol overview][EdgehtmlDevtoolsProtocolIndex]   |  |  
+| [Microsoft Edge Extensions overview][EdgehtmlExtensionsIndex]   |  |  
+| [Microsoft Edge Progressive Web Apps overview][EdgehtmlProgressiveWebAppsIndex]   |  |  
+| [Microsoft Edge WebView overview][EdgehtmlHostingWebviewIndex]   |  |  
+| [Microsoft Edge JavaScript runtime hosting overview][EdgehtmlHostingJavascriptRuntimeHostingIndex]   |  |  
+| [Microsoft Edge Performance Analysis overview][EdgehtmlPerformanceAnalysisIndex]   |  |  
+| [Microsoft Edge WebDriver overview][EdgehtmlWebdriverIndex]   |  |  
+| [WebVR][WebvrIndex]   |  |  
+| [Windows Runtime (WinRT) overview][EdgehtmlWindowsRuntimeIndex]   |  |  
+
+<!--  
 :::row:::
    :::column span="":::
       [Microsoft Edge developer guide][EdgehtmlDevGuideIndex]  
@@ -100,6 +127,7 @@ This is deprecated and legacy content.  For new content, navigate to the associa
       &nbsp;  
    :::column-end:::
 :::row-end:::  
+-->  
 
 <!-- links -->  
 
