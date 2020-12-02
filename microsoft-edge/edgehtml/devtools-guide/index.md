@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, f12 tools, devtools
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Microsoft Edge (EdgeHTML) Developer Tools  
@@ -20,7 +20,7 @@ For more on the latest features, check out [DevTools in the latest update of Win
 
 ## Core tools  
 
-:::image type="complex" source="./devtools-guide/media/devtools.png" alt-text="Microsoft Edge (EdgeHTML) DevTools":::
+:::image type="complex" source="./media/devtools.png" alt-text="Microsoft Edge (EdgeHTML) DevTools":::
    Microsoft Edge (EdgeHTML) DevTools
 :::image-end:::
 
@@ -52,7 +52,7 @@ The **Microsoft Edge \(EdgeHTML\) DevTools** are [now available][DevtoolsGuideEd
 
 To debug a page locally, simply launch the Microsoft Edge DevTools app.  The **Local** panel of the chooser displays all of the active EdgeHTML content processes, including open Edge browser tabs, running [PWAs][PwasEdgehtmlIndex] \(`WWAHost.exe` processes\), and [webview][HostingWebview] controls.  Select your desired target to attach and open a new tab instance of the DevTools.  
 
-:::image type="complex" source="./devtools-guide/media/chooser_local.png" alt-text="DevTools app Local panel":::
+:::image type="complex" source=".//media/chooser_local.png" alt-text="DevTools app Local panel":::
    DevTools app Local panel
 :::image-end:::
 
@@ -64,7 +64,7 @@ The Microsoft Edge DevTools app introduces basic support for debugging pages on 
 
 To get started, check out the [*Microsoft Edge DevTools*][DevtoolsProtocolEdgehtmlClientsEdgePreview] section of the [DevTools Protocol][DevtoolsProtocolEdgehtmlIndex] docs.  
 
-:::image type="complex" source="./devtools-guide/media/chooser_remote.png" alt-text="DevTools app Remote panel":::
+:::image type="complex" source="./media/chooser_remote.png" alt-text="DevTools app Remote panel":::
    DevTools app Remote panel
 :::image-end:::
 
