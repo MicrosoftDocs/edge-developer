@@ -137,15 +137,15 @@ Here is the current status of Microsoft Store support for PWAs on Windows 10:
 
 <!-- links -->  
 
-[DevToolsProtocolClientsEdgeDevToolsPreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Microsoft Edge DevTools Preview - DevTools Protocol Clients"  
-[DevToolsGuideEmulation]: ../devtools-guide/emulation.md "Emulation"  
-[DevGuideWhatsNewEdgeHtml17]: ../dev-guide/whats-new/edgehtml-17.md "What's new in EdgeHTML 17"  
-[DevGuideWhatsNewEdgeHtml14]: ../dev-guide/whats-new/edgehtml-14.md "What's New in EdgeHTML 14"  
-[PwaChromiumIndex]: ../progressive-web-apps-chromium/index.md "Progressive Web Apps (Chromium) on Windows"  
-[PwaEdgehtmlGetStarted]: ../progressive-web-apps-edgehtml/get-started.md "Get started with Progressive Web Apps (EdgeHTML)"  
-[PwaEdgehtmlMicrosoftStore]: ../progressive-web-apps/microsoft-store.md "Progressive Web Apps in the Microsoft Store"
-[PwaEdgehtmlMicrosoftStoreCriteriaAutomaticSubmission]: ../progressive-web-apps/microsoft-store.md#criteria-for-automatic-submission "Criteria for automatic submission - Progressive Web Apps in the Microsoft Store"  
-[PwaEdgehtmlMicrosoftStoreImportingBing]: microsoft-store.md#automatic-pwa-importing-with-bing "Automatic PWA importing with Bing - Progressive Web Apps (EdgeHTML) in the Microsoft Store"  
+[DevToolsProtocolClientsEdgeDevToolsPreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Microsoft Edge DevTools Preview - DevTools Protocol Clients | Microsoft Docs"  
+[DevToolsGuideEmulation]: ../devtools-guide/emulation.md "Emulation | Microsoft Docs"  
+[DevGuideWhatsNewEdgeHtml17]: ../dev-guide/whats-new/edgehtml-17.md "What's new in EdgeHTML 17 | Microsoft Docs"  
+[DevGuideWhatsNewEdgeHtml14]: ../dev-guide/whats-new/edgehtml-14.md "What's New in EdgeHTML 14 | Microsoft Docs"  
+[PwaChromiumIndex]: ../../progressive-web-apps-chromium/index.md "Progressive Web Apps (Chromium) on Windows | Microsoft Docs"  
+[PwaEdgehtmlGetStarted]: ../progressive-web-apps/get-started.md "Get started with Progressive Web Apps (EdgeHTML) | Microsoft Docs"  
+[PwaEdgehtmlMicrosoftStore]: ../progressive-web-apps/microsoft-store.md "Progressive Web Apps in the Microsoft Store | Microsoft Docs"
+[PwaEdgehtmlMicrosoftStoreCriteriaAutomaticSubmission]: ../progressive-web-apps/microsoft-store.md#criteria-for-automatic-submission "Criteria for automatic submission - Progressive Web Apps in the Microsoft Store | Microsoft Docs"  
+[PwaEdgehtmlMicrosoftStoreImportingBing]: ./microsoft-store.md#automatic-pwa-importing-with-bing "Automatic PWA importing with Bing - Progressive Web Apps (EdgeHTML) in the Microsoft Store | Microsoft Docs"  
 
 
 [WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Windows Push Notification Services \(WNS\) overview"  

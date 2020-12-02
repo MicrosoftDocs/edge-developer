@@ -52,7 +52,7 @@ var result = MSApp.method;
 
 :::row:::
    :::column span="":::
-      Clears cache and indexedDB data for the app or [WebView](../../webview/index.md).  
+      Clears cache and indexedDB data for the app or [WebView](../../hosting/webview/index.md).  
    :::column-end:::
    :::column span="":::
       ```javascript

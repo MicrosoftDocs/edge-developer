@@ -3,14 +3,13 @@ description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/06/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, privacy, whitepaper, trust
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
 ---
-
 # Microsoft Edge Privacy Whitepaper  
 
 Our browser privacy promise is to provide you with the protection, transparency, control, and respect you deserve.  To uphold commitments to give you transparency into Microsoft products, the Microsoft Edge team provided a privacy whitepaper that explains how Microsoft Edge features and services work and how each may affect your privacy.  The goal of the Microsoft Edge team is to give you a full understanding into how your data is used, how to control the different features, and how to manage your collected data, so you have the info you need to make the right privacy decisions for you.  
@@ -320,7 +319,7 @@ Your browsing history is collected and used for personalization only if all four
 *   The user has granted permission for the collection and use of the data for personalization.  
 *   The user's group policies managed by the organization \(employer, school, and so on\) allow personalization.  
 *   The user is not using the browser in Guest mode or InPrivate.  
-
+    
 Your browsing history and other relevant data is transferred over HTTPS and attached to your Microsoft account info.  Your browsing history is stored on secure Microsoft servers.  You may view and delete previously shared browsing history by going to the [Microsoft privacy dashboard][MicrosoftAccountPrivacy].  Your browsing history is stored on secure Microsoft servers for up to 45 days.  After 45 days the data is deleted and not used for personalization.  
 
 You may modify your interests or opt-out of personalized ads from the [Ad settings][MicrosoftAccountPrivacyAdSettings] on the [Microsoft privacy dashboard][MicrosoftAccountPrivacy].  
@@ -343,7 +342,6 @@ However, users are able to easily switch between existing profiles in Microsoft 
 Guest mode is a temporary instance of a fresh profile.  It allows you to browse on another user's device without modifying the signed-in profile.  Browsing data from Guest mode such as favorites, browsing history, passwords, and form fill data does not persist after you close all Guest mode windows.  Downloaded files are stored on the device, but the history of the downloads is deleted.  Guest mode allows you to browse the web without being signed into other sites automatically.  Microsoft Edge does not send websites any info to indicate that the user is browsing in Guest mode.  When you use Guest mode, permission to collect diagnostic data about how you use the browser and websites you visit is taken from the profile of Microsoft Edge from which the Guest mode session was launched.  All browsing data for the specific Guest mode session is cleared after all Guest windows are closed.  
 
 InPrivate browsing is a private browsing mode in which no browsing history, download history, cookies and site data, and form fill data are remembered.  Microsoft Edge saves downloaded files as well as any new favorites created while browsing InPrivate.  By default, while browsing InPrivate, Microsoft does not collect any info about websites you visit for product improvement purposes.  Your school, workplace, or internet service provider may still be able to see your browsing activity.  Browsing data for the specific InPrivate session is cleared after all InPrivate windows are closed.  When using the Windows Input Method Editor \(IME\) keyboard for typing and inking, data may be collected to improve language recognition and suggestion capabilities.  To stop inking and typing data from being collected by Microsoft while using the Windows IME keyboard in InPrivate and normal browsing windows, open **Start** > **Settings** > **Privacy** and select **Inking & typing personalization**.  For more information about InPrivate browsing, see [Browse InPrivate in Microsoft Edge][MicrosoftSupport4533513].  
-  
 
 ## Read aloud  
 
@@ -377,7 +375,7 @@ Microsoft Edge helps you find coupons and better prices while shopping online.  
 
 When you're applying coupons, cookies will be stored on your device to correctly attribute the coupon provider.  Cookies will be saved by our trusted coupon providers only after a coupon is successfully applied on the cart.  After the coupons are applied, information about the success of the coupons will be sent back to the Microsoft shopping service to help us understand which coupons succeeded or failed.  Data sent to the Microsoft shopping service is sent over HTTPS with a randomly generated identifier which changes per coupon lookup.  
 
-:::image type="complex" source="./media/whitepaper-media/shopping.png" alt-text="Shopping and coupons" lightbox="./media/whitepaper-media/shopping.png":::
+:::image type="complex" source="./media/shopping.png" alt-text="Shopping and coupons" lightbox="./media/shopping.png":::
    Shopping and coupons  
 :::image-end:::  
 

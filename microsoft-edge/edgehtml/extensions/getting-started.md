@@ -36,7 +36,7 @@ Do you have a question that you can't find an answer to in the documentation? We
 
 ## Testing your extension
 
-As of the Windows Anniversary Update, [Microsoft WebDriver](../dev-guide/tools/webdriver.md) supports the automated side loading of extensions in Microsoft Edge sessions. This will allow you to write simple tests to ensure that any extension that is meant to modify a page does so in the expected manner. You can find more info on how to do this in our [testing guide](./guides/packaging/creating-and-testing-extension-packages.md#automated-testing-with-webdriver). Also, stay tuned for updates as we plan to add more extension-specific features to Microsoft WebDriver in the future.
+As of the Windows Anniversary Update, [Microsoft WebDriver](../webdriver/index.md) supports the automated side loading of extensions in Microsoft Edge sessions. This will allow you to write simple tests to ensure that any extension that is meant to modify a page does so in the expected manner. You can find more info on how to do this in our [testing guide](./guides/packaging/creating-and-testing-extension-packages.md#automated-testing-with-webdriver). Also, stay tuned for updates as we plan to add more extension-specific features to Microsoft WebDriver in the future.
 
 ## Adding the final touches
 

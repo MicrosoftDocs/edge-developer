@@ -3,7 +3,7 @@ description: Learn how to test your website or app in Microsoft Edge or automate
 title: WebDriver (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/27/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -30,17 +30,19 @@ To begin automating tests, use the following steps to ensure that the WebDriver 
 1.  Go to `edge://settings/help` to get the version of Edge.  
     
     :::image type="complex" source="./media/edge-version.png" alt-text="The build number for Microsoft Edge Canary on January 14, 2020":::
-       Figure 1.  The build number for Microsoft Edge Canary on January 14, 2020
+       The build number for Microsoft Edge Canary on January 14, 2020
     :::image-end:::  
     
 1.  Navigate to the [Microsoft Edge Driver downloads][MicrosoftDeveloperEdgeToolsWebdriverDownloads] page and download the driver that matches the Edge version number.  
     
     :::image type="complex" source="./media/edge-driver-install.png" alt-text="The Downloads section of the Microsoft Edge Driver page":::
-       Figure 2.  The Downloads section of the [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] page
+       The Downloads section of the [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] page
     :::image-end:::  
     
+    <!--  
     > [!NOTE] 
     > For more information about test automation using Microsoft Edge (EdgeHTML), see [Microsoft WebDriver for Microsoft Edge (EdgeHTML)][Webdriver].  
+    -->  
 
 ## Choose a WebDriver language binding  
 
@@ -318,17 +320,14 @@ For more information, see [container on Docker Hub][DockerHubMsedgedriver].
 
 The Microsoft Edge team is eager to hear your feedback about using WebDriver, Selenium, and Microsoft Edge.  Use the **Feedback** icon in the Microsoft Edge DevTools or tweet [@EdgeDevTools][TwitterTweetEdgeDevTools] to let the team know what you think.  
 
-
-:::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools":::
+:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
    The **Send Feedback** icon in the Microsoft Edge DevTools  
 :::image-end:::  
 
-<!-- image links -->  
-
 <!-- links -->  
 
-[DevToolsMain]: ./devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
-[Webdriver]: ./webdriver.md "WebDriver (EdgeHTML) | Microsoft Docs"  
+[DevToolsMain]: ../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
+[Webdriver]: ../webdriver/index.md "WebDriver (EdgeHTML) | Microsoft Docs"  
 
 [DeployedgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability - Microsoft Edge - Policies | Microsoft Docs"  
 

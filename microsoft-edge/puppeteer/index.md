@@ -3,7 +3,7 @@ description: Use Puppeteer to automate and test in Microsoft Edge
 title: Puppeteer
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/27/2020
+ms.date: 12/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -32,7 +32,7 @@ yarn add puppeteer-core
 > [!NOTE]
 > `puppeteer-core` relies on Node v8.9.0 or later.  The example below uses `async`/`await` which is only supported in Node v7.6.0 or later.  Run `node -v` from the command-line to ensure you have a compatible version of Node.js.  
 
-`puppeteer-core` should be familiar to users of other browser-testing-frameworks like [WebDriver][WebDriverEdgehtmlMain].  You create an instance of the browser, open a page, and then manipulate it with the Puppeteer API.  In the following code sample, `puppeteer-core` launches Microsoft Edge \(Chromium\), navigates to `https://www.microsoftedgeinsider.com`, and saves a screenshot as `example.png`.  
+`puppeteer-core` should be familiar to users of other browser-testing-frameworks like [WebDriver][WebdriverChromiumMain].  You create an instance of the browser, open a page, and then manipulate it with the Puppeteer API.  In the following code sample, `puppeteer-core` launches Microsoft Edge \(Chromium\), navigates to `https://www.microsoftedgeinsider.com`, and saves a screenshot as `example.png`.  
 
 Copy the code sample below and save it as `example.js`.  
 
@@ -86,28 +86,15 @@ node example.js
    Figure 1:  The `example.png` file produced by `example.js`  
 :::image-end:::  
 
-<!--  
-> ##### Figure 1  
-> The `example.png` file produced by `example.js`  
-> ![The example.png file produced by example.js](./media/puppeteer-example.png)  
--->  
-
 This is just a simple example of the automation and testing scenarios enabled by Puppeteer and `puppeteer-core`.  For more information about Puppeteer and how it works, see [Puppeteer][PuppeteerMain].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 The Microsoft Edge Developer team is eager to hear your feedback about using Puppeteer, `puppeteer-core`, and Microsoft Edge.  Use the **Send Feedback** icon in the Microsoft Edge DevTools or tweet [@EdgeDevTools][TwitterIntentTweetEdgedevtools] to let the Microsoft Edge team know what you think.  
 
-
-:::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools":::
+:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
    The **Send Feedback** icon in the Microsoft Edge DevTools  
 :::image-end:::  
-
-<!--  
-> ##### Figure 2  
-> The **Feedback** icon in the Microsoft Edge DevTools  
-> ![The Feedback icon in the Microsoft Edge DevTools](./devtools-guide-chromium/media/devtools-feedback.png)  
--->  
 
 <!--## See also  
 
@@ -123,12 +110,10 @@ The Microsoft Edge Developer team is eager to hear your feedback about using Pup
 *   [page.setViewport() on Puppeteer][PuppeteerApipagesetviewport]  
 *   [Headless browser on Wikipedia][WikiHeadlessBrowser]  -->  
 
-<!-- image links -->  
-
 <!-- links -->  
 
-[WebdriverChromiumMain]: ./webdriver-chromium.md "WebDriver (Chromium)"  
-[WebdriverEdgehtmlMain]: ./webdriver.md "WebDriver (EdgeHTML)"  
+[WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver (Chromium) | Microsoft Docs"  
+<!--  [WebdriverEdgehtmlMain]: ../edgehtml/webdriver/index.md "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
 
 [GithubChromedevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Chrome DevTools Protocol Viewer | GitHub"  
 

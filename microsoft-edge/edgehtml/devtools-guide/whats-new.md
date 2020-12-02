@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, edgehtml 18
 ms.custom: RS5, seodec18
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # DevTools in the latest Windows 10 update (EdgeHTML 18)
@@ -18,7 +18,7 @@ Here are the latest Microsoft Edge DevTools features available now in the [Windo
 
 ## DevTools app
 
-We've updated the standalone [Microsoft Edge DevTools Preview app](../devtools-guide.md#microsoft-store-app). The latest release includes remote debugging access to core funtionality in the [**Debugger**](./debugger.md), [**Elements**](./elements.md) (for read-only operations), and [**Console**](./console.md) panels.
+We've updated the standalone [Microsoft Edge DevTools Preview app](./index.md#microsoft-store-app). The latest release includes remote debugging access to core funtionality in the [**Debugger**](./debugger.md), [**Elements**](./elements.md) (for read-only operations), and [**Console**](./console.md) panels.
 
 ## Service Workers panel
 
