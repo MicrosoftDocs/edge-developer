@@ -196,8 +196,8 @@
                   href: extensions/guides/packaging/running-the-windows-app-certification-kit.md
             - name: Porting Chrome extensions
               href: extensions/guides/porting-Chrome-extensions.md
-        - name: Microsoft browser extension policy
-          href: extensions/microsoft-browser-extension-policy.md
+        # - name: Microsoft browser extension policy
+        #   href: extensions/microsoft-browser-extension-policy.md
         - name: Tips and tricks
           href: extensions/tips-and-tricks.md
         - name: Troubleshooting
