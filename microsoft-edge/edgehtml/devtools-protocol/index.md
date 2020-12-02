@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Microsoft Edge (EdgeHTML) DevTools Protocol
@@ -25,7 +25,7 @@ Here's how to attach a custom tooling client to the DevTools Server in Microsoft
 
 1. Launch Microsoft Edge (EdgeHTML) with the remote debugging port open, specifying the URL you wish to open. For example:
 
-    ```
+    ```shell
     MicrosoftEdge.exe --devtools-server-port 9222 https://www.bing.com
     ```
 
@@ -35,7 +35,7 @@ Here's how to attach a custom tooling client to the DevTools Server in Microsoft
 
 2. Use this [HTTP endpoint](0.2/http.md) to get a list of attachable page targets:
 
-    ```
+    ```http
     http://localhost:9222/json/list
     ```
 
