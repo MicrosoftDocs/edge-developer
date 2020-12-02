@@ -17,13 +17,13 @@ Thank you for your interest in Microsoft Edge.  The following article summarizes
 
 | Feature | Details |  
 |:--- |:--- |  
-| [Microsoft Edge DevTools overview][DevtoolsGuideChromiumMain]   |  |  
-| [Microsoft Edge DevTools Protocol overview][DevtoolsProtocolChromiumMain]   |  |  
-| [Microsoft Edge Extensions overview][ExtensionsChromiumIndex]   |  |  
-| [Microsoft Edge Progressive Web Apps overview][ProgressiveWebAppsChromiumIndex]   |  |  
-| [New Microsoft Edge WebView2 overview][Webview2Index]   |  |  
-| [Microsoft Edge Interoperability (Site compatibility)][WebPlatformSiteImpactingChanges]   |  |  
-| [Microsoft Edge WebDriver][WebdriverChromiumIndex]   |  |  
+| [Microsoft Edge DevTools overview][DevtoolsGuideChromiumMain] (recommended) | Get to know the Microsoft Edge \(Chromium\) Developer Tools. |  
+| [Microsoft Edge DevTools Protocol overview][DevtoolsProtocolChromiumMain] (recommended) | Update to the Microsoft Edge DevTools Protocol. |  
+| [Microsoft Edge Extensions overview][ExtensionsChromiumIndex] (recommended) | The overview for the Microsoft Edge \(Chromium\) Extensions. Build and publish browser extensions in general. |  
+| [Microsoft Edge Progressive Web Apps overview][ProgressiveWebAppsChromiumIndex] (recommended) | Progressive Web Apps \(Chromium\) run natively on Windows 10.  Everything you need to know as a web developer. |  
+| [New Microsoft Edge WebView2 overview][Webview2Index] (recommended) | Host web content in your Win32, .NET, and UWP apps with the Microsoft Edge WebView2 control. |  
+| [Microsoft Edge Interoperability (Site compatibility)][WebPlatformSiteImpactingChanges] (recommended) | Provides a summary of high-impact changes that may impact site compatibility. |  
+| [Microsoft Edge WebDriver][WebdriverChromiumIndex] (recommended) | Learn how to test your website or app in Microsoft Edge or automate the browser with WebDriver. |  
 
 <!--  
 :::row:::
@@ -70,17 +70,17 @@ Thank you for your interest in Microsoft Edge.  The following article summarizes
 
 | Feature | Details |  
 |:--- |:--- |  
-| [Microsoft Edge developer guide][EdgehtmlDevGuideIndex]   |  |  
-| [Microsoft Edge Developer Tools overview][EdgehtmlDevtoolsGuideIndex]   |  |  
-| [Microsoft Edge Developer Tools Protocol overview][EdgehtmlDevtoolsProtocolIndex]   |  |  
-| [Microsoft Edge Extensions overview][EdgehtmlExtensionsIndex]   |  |  
-| [Microsoft Edge Progressive Web Apps overview][EdgehtmlProgressiveWebAppsIndex]   |  |  
-| [Microsoft Edge WebView overview][EdgehtmlHostingWebviewIndex]   |  |  
-| [Microsoft Edge JavaScript runtime hosting overview][EdgehtmlHostingJavascriptRuntimeHostingIndex]   |  |  
-| [Microsoft Edge Performance Analysis overview][EdgehtmlPerformanceAnalysisIndex]   |  |  
-| [Microsoft Edge WebDriver overview][EdgehtmlWebdriverIndex]   |  |  
-| [WebVR][WebvrIndex]   |  |  
-| [Windows Runtime (WinRT) overview][EdgehtmlWindowsRuntimeIndex]   |  |  
+| [Microsoft Edge developer guide][EdgehtmlDevGuideIndex] (not recommended) | This article provides an overview of the developer features and standards included in Microsoft Edge. |  
+| [Microsoft Edge Developer Tools overview][EdgehtmlDevtoolsGuideIndex] (not recommended) | Get to know the Microsoft Edge \(EdgeHTML\) Developer Tools. |  
+| [Microsoft Edge Developer Tools Protocol overview][EdgehtmlDevtoolsProtocolIndex] (not recommended) | Use the Microsoft Edge DevTools Protocol to inspect and debug the Microsoft Edge \(EdgeHTML\) browser. |  
+| [Microsoft Edge Extensions overview][EdgehtmlExtensionsIndex] (not recommended) | Learn how to develop Microsoft Edge extensions.  These small programs are used to add new features to Microsoft Edge or modify existing functionality. |  
+| [Microsoft Edge Progressive Web Apps overview][EdgehtmlProgressiveWebAppsIndex] (not recommended) | A Progressive Web App runs natively on Windows 10.  Everything you need to know as a web developer. |  
+| [Microsoft Edge WebView overview][EdgehtmlHostingWebviewIndex] (not recommended) | Host web content in your Windows 10 app with the WebView \(EdgeHTML\) control. |  
+| [Microsoft Edge JavaScript runtime hosting overview][EdgehtmlHostingJavascriptRuntimeHostingIndex] (not recommended) | The JavaScript Runtime \(JsRT\) APIs provide a way for desktop, Windows Store, and server-side apps.  The APIs run on the Windows operating system to add scripting capabilities to an app using the standards-based Chakra JavaScript engine.   The Chakra JavaScript engine is also utilized by legacy Microsoft Edge and Internet Explorer. |  
+| [Microsoft Edge Performance Analysis overview][EdgehtmlPerformanceAnalysisIndex] (not recommended) | Use F12 developer tools to analyze the general performance of websites. |  
+| [Microsoft Edge WebDriver overview][EdgehtmlWebdriverIndex] (not recommended) | Learn how to get started with WebDriver.  WebDriver is a wire protocol that allows programs and scripts to control the behavior of your web browser. |  
+| [WebVR][WebvrIndex] (not recommended) | WebVR is an open standard JavaScript API that makes it possible to experience immersive 3D Virtual Reality \(VR\) apps using a web browser like Microsoft Edge and a supported VR headset. |  
+| [Windows Runtime (WinRT) overview][EdgehtmlWindowsRuntimeIndex] (not recommended) | Use the Windows Runtime \(WinRT\) to call native Windows APIs from your JavaScript app. |  
 
 <!--  
 :::row:::
