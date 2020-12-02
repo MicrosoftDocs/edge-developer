@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # PermissionRequestedEvent object  
@@ -57,6 +57,6 @@ webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEven
 
 ### permissionRequest  
 
-Returns a **[PermissionRequest](permissionrequest.md)** object that represents the end-user permission request made by content of the [webview](../webview.md).  
+Returns a **[PermissionRequest](permissionrequest.md)** object that represents the end-user permission request made by content of the [webview](../webview/index.md).  
 
 This property is read-only.  

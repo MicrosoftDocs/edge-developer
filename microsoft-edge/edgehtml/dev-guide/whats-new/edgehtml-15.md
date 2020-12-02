@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # What's new in EdgeHTML 15  
@@ -79,9 +79,11 @@ For more info, see [Introducing WebRTC 1.0 and interoperable real-time communica
 
 Microsoft Edge now has support for [WebVR](https://immersive-web.github.io/webxr), an experimental API that connects Windows Mixed Reality head mounted displays and Microsoft Edge.  This connection enables VR content to be experienced within a website, meaning immersive VR experiences are no longer limited to desktop applications.  
 
-Virtual reality in Microsoft Edge is powered by WebGL, a JavaScript API for rendering 3D and 2D graphics.  WebGL applications and applications built with WebGL libraries like BabylonJS are supported.  Once connected, WebVR sends visuals corresponding to the position and sensor information around the headset.  The WebVR API also supports spatial controllers thanks to an extension to the [Gamepad API](../dom/gamepad-api.md).  This API is on by default, so no need to toggle a flag.  
+Virtual reality in Microsoft Edge is powered by WebGL, a JavaScript API for rendering 3D and 2D graphics.  WebGL applications and applications built with WebGL libraries like BabylonJS are supported.  Once connected, WebVR sends visuals corresponding to the position and sensor information around the headset.  The WebVR API also supports spatial controllers thanks to an extension to the **Gamepad API**.  This API is on by default, so no need to toggle a flag.  
 
-See the [WebVR API reference](/previous-versions//mt806281(v=vs.85)) and [Gamepad API reference](https://developer.mozilla.org/docs/Web/API/Gamepad_API) for details.  
+<!--  Virtual reality in Microsoft Edge is powered by WebGL, a JavaScript API for rendering 3D and 2D graphics.  WebGL applications and applications built with WebGL libraries like BabylonJS are supported.  Once connected, WebVR sends visuals corresponding to the position and sensor information around the headset.  The WebVR API also supports spatial controllers thanks to an extension to the [Gamepad API](../dom/gamepad-api.md).  This API is on by default, so no need to toggle a flag.  -->  
+
+See the [WebVR API reference](/previous-versions/mt806281(v=vs.85)) and [Gamepad API reference](https://developer.mozilla.org/docs/Web/API/Gamepad_API) for details.  
 
  > [!NOTE] 
  > Since the WebVR spec is still in development, Microsoft Edge's implementation may change later down the line.  
@@ -97,7 +99,7 @@ Sites already using CSP 1 should continue to work with Microsoft Edge support fo
       New directives  
    :::column-end:::
    :::column span="2":::
-      `base-uri`, `child-src`, `form-action`, `frame-ancestors` and `plugin-types`.  See [Microsoft Edge supported CSP directives](../security/content-security-policy.md) for more.  
+      `base-uri`, `child-src`, `form-action`, `frame-ancestors` and `plugin-types`.  <!--  See [Microsoft Edge supported CSP directives](../security/content-security-policy.md) for more.  -->  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -105,7 +107,7 @@ Sites already using CSP 1 should continue to work with Microsoft Edge support fo
       Workers support  
    :::column-end:::
    :::column span="2":::
-      Background worker scripts are governed by their own policy, separate from the policy of the document loading them.  As with host documents, you can set the CSP for a worker in the response header.  Also new in CSP 2 is that  `allow-scripts` and `allow-same-origin` flags of the `sandbox` directive now affect worker thread creation.  
+      Background worker scripts are governed by their own policy, separate from the policy of the document loading them.  As with host documents, you can set the CSP for a worker in the response header.  Also new in CSP 2 is that `allow-scripts` and `allow-same-origin` flags of the `sandbox` directive now affect worker thread creation.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -127,9 +129,11 @@ Sites already using CSP 1 should continue to work with Microsoft Edge support fo
 
 ### Web Authentication  
 
-Microsoft Edge support for the emerging [Web Authentication API](../device/web-authentication.md) using [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) biometrics has been updated with the following changes:  
+Microsoft Edge support for the emerging **Web Authentication API** using [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) biometrics has been updated with the following changes:  
 
-*   The initial implementation of the experimental Web Authentication API introduced in [EdgeHTML 14](https://blogs.windows.com/msedgedev/2016/08/04) \(Windows 10 Anniversary Update, build 10240, 7/2016\) was exposed through MS- prefixed APIs \(the [MSCredentials](/previous-versions//mt697639(v=vs.85)) interface\).  While these APIs are still available in EdgeHTML 15, they are now deprecated in favor of the non-prefixed, standards-based APIs and behaviors defined in a more [recent snapshot](https://w3.org/TR/2016/WD-webauthn-20160928) of the specification, and are likely to continue changing as the spec matures toward standardization.  
+<!--  Microsoft Edge support for the emerging [Web Authentication API](../device/web-authentication.md) using [Windows Hello](https://www.microsoft.com/windows/comprehensive-security) biometrics has been updated with the following changes:  -->  
+
+*   The initial implementation of the experimental Web Authentication API introduced in [EdgeHTML 14](https://blogs.windows.com/msedgedev/2016/08/04) \(Windows 10 Anniversary Update, build 10240, 7/2016\) was exposed through MS- prefixed APIs \(the [MSCredentials](/previous-versions/mt697639(v=vs.85)) interface\).  While these APIs are still available in EdgeHTML 15, they are now deprecated in favor of the non-prefixed, standards-based APIs and behaviors defined in a more [recent snapshot](https://w3.org/TR/2016/WD-webauthn-20160928) of the specification, and are likely to continue changing as the spec matures toward standardization.  
 
 *   The latest Microsoft Edge implementation is turned off by default and ships behind a flag \(type `about:flags` in your address bar to turn on the feature\).  
 
@@ -156,7 +160,7 @@ EdgeHTML 15 brings a handful of WebDriver updates including support for the sile
 | GET | /session/{session id}/window | [Get Window Handle](https://w3c.github.io/webdriver/webdriver-spec.html#get-window-handle) |  
 | GET | /session/{session id}/window/handles | [Get Window Handles](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-window-handles) |  
 
-For more info and the status of other WebDriver features, check out [WebDriver](../../webdriver.md).  
+For more info and the status of other WebDriver features, check out [WebDriver](../../webdriver/index.md).  
 
 ## New APIs in EdgeHTML 15  
 

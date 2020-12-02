@@ -6,14 +6,14 @@ ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # UnviewableContentIdentifiedEvent object  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-Indicates the [webview](../webview.md) is attempting to navigate to a file of an unsupported content type.  
+Indicates the [webview](../webview/index.md) is attempting to navigate to a file of an unsupported content type.  
 
 ## Properties  
 
@@ -33,7 +33,7 @@ Type: **DOMString**
 
 ### referer  
 
-The Uniform Resource Identifier (URI) of the page in the [webview](../webview.md) requesting navigation.  
+The Uniform Resource Identifier (URI) of the page in the [webview](../webview/index.md) requesting navigation.  
 
 This property is read-only.  
 

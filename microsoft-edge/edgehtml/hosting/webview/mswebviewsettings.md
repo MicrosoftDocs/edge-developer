@@ -6,20 +6,20 @@ ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # MSWebViewSettings object  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-Defines properties that enable or disable [webview](../webview.md) features.  
+Defines properties that enable or disable [webview](../webview/index.md) features.  
 
 ## Properties  
 
 ### isIndexedDBEnabled  
 
-Gets or sets a value that indicates whether the use of IndexedDB is allowed in the [webview](../webview.md).  
+Gets or sets a value that indicates whether the use of IndexedDB is allowed in the [webview](../webview/index.md).  
 
 ```javascript
 var isIndexedDBEnabled = MSWebViewSettings.isIndexedDBEnabled;
@@ -34,7 +34,7 @@ Type: **boolean**
 
 ### isJavaScriptEnabled  
 
-Gets or sets a value that indicates whether the use of JavaScript is allowed in the [webview](../webview.md).  
+Gets or sets a value that indicates whether the use of JavaScript is allowed in the [webview](../webview/index.md).  
 
 ```javascript
 var isJavaScriptEnabled = MSWebViewSettings.isJavaScriptEnabled;
@@ -45,11 +45,11 @@ MSWebViewSettings.isJavaScriptEnabled = isJavaScriptEnabled;
 
 Type: **boolean**  
 
-**True** JavaScript is allowed in the [webview](../webview.md); otherwise, **false**.  
+**True** JavaScript is allowed in the [webview](../webview/index.md); otherwise, **false**.  
 
 ### isScriptNotifyAllowed  
 
-Gets or sets a value that indicates whether the use of [ScriptNotifyEvent](ScriptNotifyEvent.md) is allowed in the [webview](../webview.md).  
+Gets or sets a value that indicates whether the use of [ScriptNotifyEvent](ScriptNotifyEvent.md) is allowed in the [webview](../webview/index.md).  
 
 ```javascript
 var isScriptNotifyAllowed = MSWebViewSettings.isScriptNotifyAllowed;
@@ -60,4 +60,4 @@ MSWebViewSettings.isScriptNotifyAllowed = isScriptNotifyAllowed;
 
 Type: **boolean**  
 
-**True** [ScriptNotifyEvent](ScriptNotifyEvent.md) is allowed in the [webview](../webview.md); otherwise, **false**.  
+**True** [ScriptNotifyEvent](ScriptNotifyEvent.md) is allowed in the [webview](../webview/index.md); otherwise, **false**.  

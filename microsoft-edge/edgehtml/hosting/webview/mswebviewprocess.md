@@ -6,14 +6,14 @@ ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # MSWebViewProcess object  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-Represents a [webview](../webview.md) process.  
+Represents a [webview](../webview/index.md) process.  
 
 ```javascript
 var wvprocess = new MSWebViewProcess();
@@ -37,7 +37,7 @@ Type: **DOMString**
 
 ### isPrivateNetworkClientServerCapabilityEnabled  
 
-Gets a value indicating whether the [webview](../webview.md) process has the *Private Networks (Client & Server)* Universal Windows [App capability declaration](/windows/uwp/packaging/app-capability-declarations) enabled in the app manifest.  
+Gets a value indicating whether the [webview](../webview/index.md) process has the *Private Networks (Client & Server)* Universal Windows [App capability declaration](/windows/uwp/packaging/app-capability-declarations) enabled in the app manifest.  
 
 ```javascript
 var privateNetwork = wvprocess.isPrivateNetworkClientServerCapabilityEnabled;
@@ -53,7 +53,7 @@ Type: **Boolean**
 
 ### CreateWebViewAsync  
 
-Creates a [webview](../webview.md) in a specific process.  
+Creates a [webview](../webview/index.md) in a specific process.  
 
 ```javascript
 wvprocess.createWebviewAsync();

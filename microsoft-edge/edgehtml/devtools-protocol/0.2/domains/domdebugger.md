@@ -3,10 +3,9 @@ description: Reference for the DOMDebugger Domain. DOM debugging allows setting 
 title: DOMDebugger Domain - DevTools Protocol Version 0.2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 8/17/2018
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # DOMDebugger

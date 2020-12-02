@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, what's new in edge, new APIs in edge, edgehtml, edgehtml preview builds
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # What's new in EdgeHTML  
@@ -15,9 +15,9 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 Get the latest EdgeHTML features and APIs by becoming a [Windows Insider](https://insider.windows.com)!  The [Windows Insider Program](https://insider.windows.com) provides the latest Windows 10 builds as soon as they're available.  
 
-Head over to the [Dev Guide](../dev-guide.md) to see the new features and APIs shipped in the current release of the Microsoft Edge platform, EdgeHTML 18 \(Build 17763\).  
+Head over to the [Dev Guide](../dev-guide/index.md) to see the new features and APIs shipped in the current release of the Microsoft Edge platform, EdgeHTML 18 \(Build 17763\).  
 
-Below are new and updated EdgeHTML APIs in Windows 10 Preview Builds. They are listed in the format of `[interface name].[api name]`.  For a full list of new Microsoft Edge and platform features, check out [Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog) or head over to the [Dev Guide](../dev-guide.md) to see new features and APIs shipped in the current stable release of the Microsoft Edge platform, EdgeHTML 18.   
+Below are new and updated EdgeHTML APIs in Windows 10 Preview Builds. They are listed in the format of `[interface name].[api name]`.  For a full list of new Microsoft Edge and platform features, check out [Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog) or head over to the [Dev Guide](../dev-guide/index.md) to see new features and APIs shipped in the current stable release of the Microsoft Edge platform, EdgeHTML 18.   
 
 > [!WARNING] 
 > Some information relates to pre-released product which may be substantially modified before it's commercially released.  Microsoft makes no warranties, express or implied, with respect to the information provided here.  

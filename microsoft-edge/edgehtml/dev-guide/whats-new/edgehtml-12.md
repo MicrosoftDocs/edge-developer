@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # What's new in EdgeHTML 12  
@@ -111,7 +111,7 @@ Microsoft Edge introduces support for the [W3C Web Audio API](https://webaudio.g
 
 ### Web Driver  
 
-The [W3C WebDriver API](https://w3.org/TR/webdriver) is a platform and language-neutral interface and wire protocol allowing programs or scripts to control the behavior of a web browser.  WebDriver enables developers to create automated tests that simulate user interaction.  This is different from JavaScript unit tests because WebDriver has access to functionality and information that JavaScript running in the browser doesn't, and it can more accurately simulate user events or OS-level events.  WebDriver can also manage testing across multiple windows, tabs and webpages in a single test session.  For more information on how to get started with WebDriver for Microsoft Edge, check out [WebDriver](../../webdriver.md).  
+The [W3C WebDriver API](https://w3.org/TR/webdriver) is a platform and language-neutral interface and wire protocol allowing programs or scripts to control the behavior of a web browser.  WebDriver enables developers to create automated tests that simulate user interaction.  This is different from JavaScript unit tests because WebDriver has access to functionality and information that JavaScript running in the browser doesn't, and it can more accurately simulate user events or OS-level events.  WebDriver can also manage testing across multiple windows, tabs and webpages in a single test session.  For more information on how to get started with WebDriver for Microsoft Edge, check out [WebDriver](../../webdriver/index.md).  
 
 ## New APIs in EdgeHTML 12  
 

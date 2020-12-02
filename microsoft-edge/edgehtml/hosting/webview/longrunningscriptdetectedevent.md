@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # LongRunningScriptDetectedEvent object  
@@ -19,7 +19,7 @@ Provides information for [MSWebViewLongRunningScriptDetected](../webview.md#mswe
 
 ### executionTime  
 
-Gets the number of milliseconds that the [webview](../webview.md) element has been executing a long-running script.  
+Gets the number of milliseconds that the [webview](../webview/index.md) element has been executing a long-running script.  
 
 ```javascript
 var executionTime = LongRunningScriptDetectedEvent.executionTime;
@@ -31,7 +31,7 @@ Type: **long**
 
 ### stopPageScriptExecution  
 
-Stops a long-running script executing in the [webview](../webview.md) element.  
+Stops a long-running script executing in the [webview](../webview/index.md) element.  
 
 ```javascript
 var stopPageScriptExecution = LongRunningScriptDetectedEvent.stopPageScriptExecution;

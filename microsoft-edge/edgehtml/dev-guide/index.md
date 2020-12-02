@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: edgehtml
 keywords: edge, web development, html, css, javascript, developer, devtools
 ms.custom: RS5
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Microsoft Edge Developer Guide
@@ -20,7 +20,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 EdgeHTML 18 includes the following new and updated features shipped in the current release of the Microsoft Edge platform, as of the [Windows 10 October 2018 Update](/windows/uwp/whats-new/windows-10-build-17763) (10/2018, Build 17763). For changes in specific [Windows Insider](https://insider.windows.com/) Preview builds, see the [Microsoft Edge Changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/) and [What's New in EdgeHTML](./whats-new.md).
 
-Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_18](./whats-new/edgehtml-18.md).
+Here's the permalink for the following list of changes: [https://aka.ms/devguide_edgehtml_18](./whats-new.md).
 
 ## New and updated features
 
@@ -96,7 +96,7 @@ Four new properties are now supported for web notifications: [`actions`](https:/
 ### WebView
 
 #### Service workers
-[Service workers](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) are now supported in the WebView control, in addition to the Microsoft Edge browser and Windows 10 JavaScript apps. All flavors of the Microsoft Edge webview ([PWA](../hosting/webview.md), [UWP](/uwp/api/Windows.UI.Xaml.Controls.WebView), [Win32](/windows/communitytoolkit/controls/wpf-winforms/webview)) support service workers, however please be aware that the [Push API](https://developer.mozilla.org/docs/Web/API/Push_API) is not yet available for the UWP and Win32 versions.
+[Service workers](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) are now supported in the WebView control, in addition to the Microsoft Edge browser and Windows 10 JavaScript apps. All flavors of the Microsoft Edge webview ([PWA](../hosting/webview/index.md), [UWP](/uwp/api/Windows.UI.Xaml.Controls.WebView), [Win32](/windows/communitytoolkit/controls/wpf-winforms/webview)) support service workers, however please be aware that the [Push API](https://developer.mozilla.org/docs/Web/API/Push_API) is not yet available for the UWP and Win32 versions.
 
 x64 app architectures require *Neutral* (Any CPU) or *x64* packages, as service workers are not supported in WoW64 processes. (To conserve disk space, the WoW version of the required DLLs are not natively included in Windows.)
 

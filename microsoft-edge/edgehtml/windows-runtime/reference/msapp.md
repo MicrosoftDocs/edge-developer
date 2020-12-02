@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: MSapp, PWA, file upload, Blog, MSStream, windows 10 apps, uwp, edge
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # MSApp  
@@ -52,7 +52,7 @@ var result = MSApp.method;
 
 :::row:::
    :::column span="":::
-      Clears cache and indexedDB data for the app or [WebView](../../webview.md).  
+      Clears cache and indexedDB data for the app or [WebView](../../webview/index.md).  
    :::column-end:::
    :::column span="":::
       ```javascript

@@ -139,7 +139,7 @@ Thank you for your interest in Microsoft Edge.  The following article summarizes
 [EdgehtmlExtensionsIndex]: ./extensions/index.md "Microsoft Edge (EdgeHTML) extensions | Microsoft Docs"  
 [EdgehtmlProgressiveWebAppsIndex]: ./progressive-web-apps/index.md "Progressive Web Apps (EdgeHTML) on Windows | Microsoft Docs"  
 [EdgehtmlHostingWebviewIndex]: ./hosting/webview/index.md "WebView (EdgeHTML) for Windows 10 apps | Microsoft Docs"  
-[EdgehtmlHostingJavascriptRuntimeHostingIndex]: ./hosting/javascript-runtime-hosting/index.md "JavaScript runtime hosting | Microsoft Docs"  
+[EdgehtmlHostingJavascriptRuntimeHostingIndex]: ./hosting/javascript-runtime-hosting.md "JavaScript runtime hosting | Microsoft Docs"  
 [EdgehtmlPerformanceAnalysisIndex]: ./performance-analysis/index.md "Performance Analysis | Microsoft Docs"  
 [EdgehtmlWebdriverIndex]: ./webdriver/index.md "WebDriver (EdgeHTML) | Microsoft Docs"  
 [EdgehtmlWindowsRuntimeIndex]: ./windows-runtime/index.md "Windows Runtime (WinRT) for JavaScript | Microsoft Docs"  

@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # What's new in EdgeHTML 17  
@@ -21,7 +21,7 @@ Here's the permalink for the following list of changes: [https://aka.ms/devguide
 
 ### ARIA 1.1 Roles, States, and Events  
 
-EdgeHTML 17 adds support for various roles, states, and properties from the [Accessible Rich Internet Applications (WAI-ARIA) 1.1 specification](https://w3.org/TR/wai-aria-1.1), including [feed](https://www.w3.org/TR/wai-aria-1.1#feed), [form](https://www.w3.org/TR/wai-aria-1.1#form), [aria-haspopup](https://w3.org/TR/wai-aria-1.1#aria-haspopup), [aria-placeholder](https://w3.org/TR/wai-aria-1.1#aria-placeholder), and many more; find a [full list of ARIA updates in the changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/desktop/17134/?compareWith=16299).  With this update, EdgeHTML 17 now supports all roles and attributes defined in WAI-ARIA 1.1.  Check out the [Accessibility](../../accessibility.md) docs for more information about accessibility in Microsoft Edge.  
+EdgeHTML 17 adds support for various roles, states, and properties from the [Accessible Rich Internet Applications (WAI-ARIA) 1.1 specification](https://w3.org/TR/wai-aria-1.1), including [feed](https://www.w3.org/TR/wai-aria-1.1#feed), [form](https://www.w3.org/TR/wai-aria-1.1#form), [aria-haspopup](https://w3.org/TR/wai-aria-1.1#aria-haspopup), [aria-placeholder](https://w3.org/TR/wai-aria-1.1#aria-placeholder), and many more; find a [full list of ARIA updates in the changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/desktop/17134/?compareWith=16299).  With this update, EdgeHTML 17 now supports all roles and attributes defined in WAI-ARIA 1.1.  <!--  Check out the [Accessibility](../../accessibility.md) docs for more information about accessibility in Microsoft Edge.  -->  
 
 ### CSS masking  
 
@@ -108,7 +108,7 @@ PWAs are simply web apps that are [progressively enhanced](https://en.wikipedia.
 
 Beyond PWAs, Service Workers and the Cache API allow developers the ability to intercept network requests and respond from the cache.  A website need not even been a full-blow web app to take advantage of the Service Worker cache for fine-tined page load performance and reliability, as well as the ability to provide an offline experience during periods of no internet or poor-quality connection.  
 
-Head over to our [Progressive Web Apps on Windows](../../progressive-web-apps-edgehtml/index.md) docs to learn more about Service Workers and details about PWAs on Windows 10.  
+Head over to our [Progressive Web Apps on Windows](../../progressive-web-apps/index.md) docs to learn more about Service Workers and details about PWAs on Windows 10.  
 
 ### Web Security  
 
