@@ -283,6 +283,6 @@ additionalContent:
             # - text: Windows Runtime (WinRT)
             #   url: /microsoft-edge/windows-runtime
             - name: Legacy Microsoft Edge documentation - test one
-              href: edgehtml/index-test1.yml
+              url: /microsoft-edge/edgehtml/index-test1
             - name: Legacy Microsoft Edge documentation - test two
-              href: edgehtml/index-test2.md
+              url: /microsoft-edge/edgehtml/index-test2
