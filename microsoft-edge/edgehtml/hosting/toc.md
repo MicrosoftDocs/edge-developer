@@ -148,7 +148,7 @@
 ### [JsStringToPointer Function](chakra-hosting/jsstringtopointer-function.md)
 ### [JsValueToVariant Function](chakra-hosting/jsvaluetovariant-function.md)
 ### [JsVariantToValue Function](chakra-hosting/jsvarianttovalue-function.md)
-# [WebView (EdgeHTML)](webview.md)
+# [WebView (EdgeHTML)](webview/index.md)
 ## [DeferredPermissionRequest](webview/DeferredPermissionRequest.md)
 ## [FocusNavigationEvent](webview/FocusNavigationEvent.md)
 ## [LongRunningScriptDetectedEvent](webview/LongRunningScriptDetectedEvent.md)
