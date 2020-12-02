@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 12/01/2020
+  ms.date: 12/02/2020
 
 # linkListType: architecture | concept | deploy | download | 
 #               get-started | how-to-guide | learn | overview | 
@@ -20,64 +20,64 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Microsoft Edge Developer Tools documentation
+  - title: Developer Tools
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft Edge DevTools overview (recommended)
+          - text: DevTools overview (recommended)
             url: /microsoft-edge/devtools-guide-chromium
-          - text: Microsoft Edge developer guide (not recommended)
+          - text: Developer guide (not recommended)
             url: ./dev-guide/index.md
-          - text: Microsoft Edge Developer Tools overview (not recommended)
+          - text: Developer Tools overview (not recommended)
             url: ./devtools-guide/index.md
 
-  - title: Microsoft Edge Developer Tools Protocol documentation
+  - title: Developer Tools Protocol
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft Edge DevTools Protocol overview (recommended)
+          - text: DevTools Protocol overview (recommended)
             url: /microsoft-edge/devtools-protocol-chromium
-          - text: Microsoft Edge Developer Tools Protocol overview (not recommended)
+          - text: Developer Tools Protocol overview (not recommended)
             url: ./devtools-protocol/index.md
 
   # Card
-  - title: Microsoft Edge Extensions documentation
+  - title: Extensions
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft Edge Extensions overview (recommended)
+          - text: Extensions overview (recommended)
             url: /microsoft-edge/microsoft-edge/extensions-chromium/index
-          - text: Microsoft Edge Extensions overview (not recommended)
+          - text: Extensions overview (not recommended)
             url: ./extensions/index.md
 
   # Card
-  - title: Microsoft Edge PWA documentation
+  - title: Progressive Web App
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft Edge Progressive Web Apps overview (recommended)
+          - text: Progressive Web Apps overview (recommended)
             url: /microsoft-edge/progressive-web-apps-chromium/index
-          - text: Microsoft Edge Progressive Web Apps overview (not recommended)
+          - text: Progressive Web Apps overview (not recommended)
             url: ./progressive-web-apps/index.md
 
   # Card
-  - title: Microsoft Edge WebView documentation
+  - title: WebView
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft Edge WebView2 overview (recommended)
+          - text: WebView2 overview (recommended)
             url: /microsoft-edge/webview2/index
-          - text: Microsoft Edge WebView overview (not recommended)
+          - text: WebView overview (not recommended)
             url: ./hosting/webview/index.md
 
   # Card
-  - title: Microsoft Edge compatibility
+  - title: Site compatibility
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft Edge Interoperability (Site compatibility) (recommended)
+          - text: Site compatibility (recommended)
             url: /microsoft-edge/web-platform/site-impacting-changes
-          - text: Microsoft Edge Performance Analysis overview (not recommended)
+          - text: Performance Analysis overview (not recommended)
             url: ./performance-analysis/index.md
 
   # Card
@@ -85,11 +85,11 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft Edge WebDriver (recommended)
+          - text: WebDriver overview (recommended)
             url: /microsoft-edge/webdriver-chromium/index
-          - text: Microsoft Edge WebDriver overview (not recommended)
+          - text: WebDriver overview (not recommended)
             url: ./webdriver/index.md
-          - text: Microsoft Edge JavaScript runtime hosting overview (not recommended)
+          - text: JavaScript runtime hosting overview (not recommended)
             url: ./hosting/chakra-hosting/index.md
           - text: WebVR (not recommended)
             url: /microsoft-edge/webvr/index
