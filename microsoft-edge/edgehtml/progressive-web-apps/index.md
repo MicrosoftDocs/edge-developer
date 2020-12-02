@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Progressive Web Apps (EdgeHTML) on Windows  
@@ -74,26 +74,26 @@ When you build a Progressive Web App to take advantage of Windows 10, you are ab
 
 To run as a PWA, your server-hosted web app at minimum requires:  
 
-*   [X] [HTTPS][WikiHttps].  Protect your users by providing a secure connection for server/app communication.  Service workers and other PWA technologies only work with web resources served over a secure connection \(or from `localhost` for debugging purposes\).  
+*   [HTTPS][WikiHttps].  Protect your users by providing a secure connection for server/app communication.  Service workers and other PWA technologies only work with web resources served over a secure connection \(or from `localhost` for debugging purposes\).  
   
-*   [X] [Service workers][MDNServiceWorkerApi].  Use service worker threads to act as network proxies between your server and client app in order to provide offline support, resource caching, push notifications, background data sync, and page load perf optimizations.  
+*   [Service workers][MDNServiceWorkerApi].  Use service worker threads to act as network proxies between your server and client app in order to provide offline support, resource caching, push notifications, background data sync, and page load perf optimizations.  
 
-*   [X] [Web app manifest][MDNWebAppManifest].  Provide a JSON-based metadata file describing key information about your web app \(such as icons, language, and URL entry point\) so that Windows 10 and other host platforms are able to provide your PWA users with an installable, native app-like experience.  Associating your site with a web app manifest makes it eligible for [automatic inclusion in the Microsoft Store][PwaEdgehtmlMicrosoftStoreImportingBing] through the Bing indexing service.  
+*   [Web app manifest][MDNWebAppManifest].  Provide a JSON-based metadata file describing key information about your web app \(such as icons, language, and URL entry point\) so that Windows 10 and other host platforms are able to provide your PWA users with an installable, native app-like experience.  Associating your site with a web app manifest makes it eligible for [automatic inclusion in the Microsoft Store][PwaEdgehtmlMicrosoftStoreImportingBing] through the Bing indexing service.  
 
 To be a great PWA, your app also needs:  
 
-*   [X] [Cross-browser compatibility][MDNCrossBrowserTesting].  Ensure your PWA works by [testing][MicrosoftDeveloperEdgeToolsRemote] in different browsers and environments.  On Windows 10, be sure to test your app both in the Microsoft Edge browser and also in the full PWA experience: as an installed, standalone Windows 10 app \(powered by the EdgeHTML engine\).  
+*   [Cross-browser compatibility][MDNCrossBrowserTesting].  Ensure your PWA works by [testing][MicrosoftDeveloperEdgeToolsRemote] in different browsers and environments.  On Windows 10, be sure to test your app both in the Microsoft Edge browser and also in the full PWA experience: as an installed, standalone Windows 10 app \(powered by the EdgeHTML engine\).  
   
-*   [X] [Responsive design][WikiResponsiveWebDesign].  Employ fluid layouts and flexible images with CSS [grid][MDNCssGridLayout] and/or [flexbox][MDNCssFlexibleBoxLayout], [media queries][MDNMediaQueries], and [responsive images[MDNResponsiveImages] to adapt your UX to your user's device.  Use device [emulation tools][DevToolsGuideEmulation] from your browser to test locally, or set up a [remote debugging session][DevToolsProtocolClientsEdgeDevToolsPreview] to test directly on a target device.  On Windows 10, PWAs \(EdgeHTML\) are able to also be [tailored for form factors][WindowsUWPDesignDevicesIndex] beyond desktop, phone and tablet, including: [Xbox and TV][WindowsUWPDesignDevicesDesigningTv], [Surface Hub][MicrosoftDeveloperWindowsSurfaceHub], and [Windows Mixed Reality][MicrosoftDeveloperWindowsMixedReality] devices.  
+*   [Responsive design][WikiResponsiveWebDesign].  Employ fluid layouts and flexible images with CSS [grid][MDNCssGridLayout] and/or [flexbox][MDNCssFlexibleBoxLayout], [media queries][MDNMediaQueries], and [responsive images[MDNResponsiveImages] to adapt your UX to your user's device.  Use device [emulation tools][DevToolsGuideEmulation] from your browser to test locally, or set up a [remote debugging session][DevToolsProtocolClientsEdgeDevToolsPreview] to test directly on a target device.  On Windows 10, PWAs \(EdgeHTML\) are able to also be [tailored for form factors][WindowsUWPDesignDevicesIndex] beyond desktop, phone and tablet, including: [Xbox and TV][WindowsUWPDesignDevicesDesigningTv], [Surface Hub][MicrosoftDeveloperWindowsSurfaceHub], and [Windows Mixed Reality][MicrosoftDeveloperWindowsMixedReality] devices.  
   
-*   [X] [Deep linking][WikiDeepLinking].  Route each page of your site to a unique URL so existing users may help you engage an even broader audience through social media sharing.  
+*   [Deep linking][WikiDeepLinking].  Route each page of your site to a unique URL so existing users may help you engage an even broader audience through social media sharing.  
 
-*   [X] [Best practices][Webhint].  Use code quality tools like the [webhint][Webhint] linter to optimize the efficiency, robustness, safety, and accessibility of your app.  
+*   [Best practices][Webhint].  Use code quality tools like the [webhint][Webhint] linter to optimize the efficiency, robustness, safety, and accessibility of your app.  
 
 To submit your Progressive Web App to the [Microsoft Store][MicrosoftDeveloperStore], you must have:  
 
-*   [X] A [Microsoft developer account][WindowsUWPPublishDeveloperAccount]  
-*   [X] Completed [steps for publishing a Windows app][WindowsUWPPublishIndex]  
+*   A [Microsoft developer account][WindowsUWPPublishDeveloperAccount]  
+*   Completed [steps for publishing a Windows app][WindowsUWPPublishIndex]  
 
 In the coming months, existing PWAs on the web meeting [specific criteria][PwaEdgehtmlMicrosoftStoreCriteriaAutomaticSubmission] are auto-indexed by the Bing search engine into the Microsoft Store \(where developers are able to directly manage them for their Windows 10 audience\).  
 
