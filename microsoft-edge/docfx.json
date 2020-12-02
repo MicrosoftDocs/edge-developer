@@ -46,7 +46,7 @@
         "extensions-chromium/**.md": "extensions",
         "webview2/**.md": "webview2",
         "progressive-web-apps-chromium/**.md": "pwa",
-        "edgehtml/**.md": "noindex, nofollow"
+        "edgehtml/**.md": ""
       }
     },
     "template": [
