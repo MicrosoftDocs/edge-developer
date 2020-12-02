@@ -1,6 +1,8 @@
 - name: Legacy Microsoft Edge documentation
-#   expanded: true
-#   items: 
+  href: index-test1.yml
+#  href: index-test2.md
+  expanded: true
+  items: 
     - name: Legacy Dev guide
       items: 
         - name: Dev guide (EdgeHtml) overview
