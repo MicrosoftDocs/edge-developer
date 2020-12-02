@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 10/14/2020
+  ms.date: 12/02/2020
   ms.localizationpriority: high
 
 # highlightedContent section (optional)
@@ -160,7 +160,7 @@ additionalContent:
               url: /microsoft-edge/webdriver-chromium
             - text: Puppeteer
               url: /microsoft-edge/puppeteer
-            - text: Interop (Site compatibility)
+            - text: Site compatibility
               url: /microsoft-edge/web-platform/site-impacting-changes
             - text: webhint
               url: https://webhint.io/docs/user-guide
@@ -266,19 +266,23 @@ additionalContent:
         # Card
         - title: Microsoft Edge Legacy Documentation
           links:
-            - text: Dev Guide (EdgeHTML)
-              url: /microsoft-edge/dev-guide
-            - text: DevTools (EdgeHTML)
-              url: /microsoft-edge/devtools-guide
-            - text: DevTools Protocol (EdgeHTML)
-              url: /microsoft-edge/devtools-protocol/index
-            - text: Extensions (EdgeHTML)
-              url: /microsoft-edge/extensions/index
-            - text: Getting Started with PWAs (EdgeHTML)
-              url: /microsoft-edge/progressive-web-apps-edgehtml/get-started
-            - text: JavaScript Runtime Hosting
-              url: /microsoft-edge/hosting/javascript-runtime-hosting
-            - text: WebVR Developer Guide
-              url: /microsoft-edge/webvr/index
-            - text: Windows Runtime (WinRT)
-              url: /microsoft-edge/windows-runtime
+            # - text: Dev Guide (EdgeHTML)
+            #   url: /microsoft-edge/dev-guide
+            # - text: DevTools (EdgeHTML)
+            #   url: /microsoft-edge/devtools-guide
+            # - text: DevTools Protocol (EdgeHTML)
+            #   url: /microsoft-edge/devtools-protocol/index
+            # - text: Extensions (EdgeHTML)
+            #   url: /microsoft-edge/extensions/index
+            # - text: Getting Started with PWAs (EdgeHTML)
+            #   url: /microsoft-edge/progressive-web-apps-edgehtml/get-started
+            # - text: JavaScript Runtime Hosting
+            #   url: /microsoft-edge/hosting/javascript-runtime-hosting
+            # - text: WebVR Developer Guide
+            #   url: /microsoft-edge/webvr/index
+            # - text: Windows Runtime (WinRT)
+            #   url: /microsoft-edge/windows-runtime
+            - name: Legacy Microsoft Edge documentation - test one
+              href: edgehtml/index-test1.yml
+            - name: Legacy Microsoft Edge documentation - test two
+              href: edgehtml/index-test2.md
