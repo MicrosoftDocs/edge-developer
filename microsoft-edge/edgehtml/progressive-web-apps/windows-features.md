@@ -300,7 +300,7 @@ And when you are ready, here is how \(and why!\) to [Submit your PWA to the Micr
 [PwaGetStarted]: ./get-started.md "Get started with Progressive Web Apps | Microsoft Docs"  
 [PwaIndexWindows10]: ./index.md#pwas-on-windows-10-edgehtml "PWAs on Windows 10 (EdgeHTML) - Progressive Web Apps on Windows | Microsoft Docs"  
 [DevToolsGuide]: ../devtools-guide/index.md "Microsoft Edge (EdgeHTML) Developer Tools | Microsoft Docs"  
-[DevToolsGuideMicrosoftStoreApp]: ../devtools-guide.md#microsoft-store-app "Microsoft Store app - Microsoft Edge (EdgeHTML) Developer Tools | Microsoft Docs"  
+[DevToolsGuideMicrosoftStoreApp]: ../devtools-guide/index.md#microsoft-store-app "Microsoft Store app - Microsoft Edge (EdgeHTML) Developer Tools | Microsoft Docs"  
 [DevToolsGuideServiceWorkers]: ../devtools-guide/service-workers.md "Service Workers | Microsoft Docs"  
 [DevToolsProtocol01ClientsEdgePreview]: ../devtools-protocol/0.1/clients.md#microsoft-edge-devtools-preview "Microsoft Edge DevTools Preview - DevTools Protocol Clients | Microsoft Docs"  
 [DevGuideWhatsNew]: ../dev-guide/whats-new.md "What's New in EdgeHTML | Microsoft Docs"  

@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: x-ms-webview, MSHTMLWebViewElement, webview, windows 10 apps, uwp, edge
-ms.date: 11/24/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # WebView (EdgeHTML) for Windows 10 apps  
@@ -712,7 +712,7 @@ webview.navigateToLocalStreamUri(localStreamUri, streamResolver); //Load the loc
 
 ### capturePreviewToBlobAsync  
 
-Creates an image of the current [webview element](./webview.md) and write it to the specified image element.  
+Creates an image of the current [webview element](./index.md) and write it to the specified image element.  
 
 ```javascript
 var capturePreviewToBlobAsync = webview.capturePreviewToBlobAsync();
