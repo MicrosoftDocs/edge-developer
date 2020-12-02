@@ -11,10 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Legacy Microsoft Edge documentation  
 
-Thank you for your interest in Microsoft Edge.  
-
-> [!IMPORTANT]
-> The legacy Microsoft Edge has been replaced with new Microsoft Edge documentation.  
+Thank you for your interest in Microsoft Edge.  The following article summarizes legacy content, which is no longer being updated.  The new Microsoft Edge content replaces the legacy content and is marked as recommended for each card.  
 
 ## New Microsoft Edge documentation  
 
@@ -34,7 +31,7 @@ Thank you for your interest in Microsoft Edge.
       [Microsoft Edge Progressive Web Apps overview][ProgressiveWebAppsChromiumIndex]  
    :::column-end:::
    :::column span="":::
-      [New Microsoft EdgeWebView2 overview][Webview2Index]  
+      [New Microsoft Edge WebView2 overview][Webview2Index]  
    :::column-end:::
    :::column span="":::
       [Microsoft Edge Interoperability (Site compatibility)][WebPlatformSiteImpactingChanges]  
@@ -51,54 +48,13 @@ Thank you for your interest in Microsoft Edge.
       &nbsp;  
    :::column-end:::
 :::row-end:::  
-:::row:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-:::row-end:::  
 
 ## Legacy Microsoft Edge documentation  
 
 This is deprecated and legacy content.  For new content, navigate to the associated [Chromium category](#new-microsoft-edge-documentation).  
+
+> [!IMPORTANT]
+> The legacy Microsoft Edge has been replaced with new Microsoft Edge documentation.  
 
 :::row:::
    :::column span="":::
