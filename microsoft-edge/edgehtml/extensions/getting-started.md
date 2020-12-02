@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, extensions
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Getting started with extensions  
@@ -62,7 +62,9 @@ The first step of the publishing process is to make sure your extension conforms
 
 Once you've confirmed that your extension follows the policies, you will need to register for a [developer account in Partner Center and reserve the name of your extension](./guides/packaging/extensions-in-the-windows-dev-center.md). Then, you'll need to submit a request via our [extension submission form](https://aka.ms/extension-request) in order to request permission to publish to the Microsoft Store. If you try to submit your extension AppX without first obtaining permission, you'll receive the following error:
 
-`Package acceptance validation error: com.microsoft.edge.extension is a reserved extension type. Your app does not have permission to use this extension type.`
+```text
+Package acceptance validation error: com.microsoft.edge.extension is a reserved extension type. Your app does not have permission to use this extension type.
+```  
 
 Once you've submitted a request, we'll receive a notification and will try to get to your submission as soon as possible. This may take a bit due to the high volume of submissions we've received, but we'll notify you via email the moment you're approved! Once you've received the mail, you'll be able to submit your extension AppX to the Microsoft Store via Partner Center. Please note that you do not have to sign your AppX before submitting it; the Microsoft Store ingestion process will take care of that for you!
  
