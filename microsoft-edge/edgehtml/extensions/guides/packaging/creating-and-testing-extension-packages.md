@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, packaging
 ms.custom: seodec18
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Creating and testing a Microsoft Edge extension AppX package  
@@ -21,8 +21,6 @@ If you already know how Microsoft Edge extension AppXs are created, you can skip
 
 > [!NOTE]
 > Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. Once you've created, packaged and tested your extension, please submit a request on our [extension submission form](https://aka.ms/extension-request).
-
-
 
 ## Preparing the submission folder
 
@@ -93,31 +91,30 @@ Developers can use the following template for their AppXManifest.xml file:
  </Application>
 </Applications>
 </Package>
-```
+```  
 
 #### App identity template values
 Once you've [reserved the name of your extension](./extensions-in-the-windows-dev-center.md#name-reservation) through the Windows Dev Center, you'll be able to find the necessary package identity information needed to replace the following values in AppXManifest.xml:
 
-- `Name`
-- `Publisher`
-- `DisplayName`
-- `PublisherDisplayName`
+-   `Name`
+-   `Publisher`
+-   `DisplayName`
+-   `PublisherDisplayName`
 
 You can access your App identity page using the following steps:
 
-1. Navigate to [Windows Dev Center](https://developer.microsoft.com/windows/).
-2. Sign in to your developer account.
-3. Navigate to the Dashboard.
-4. Select the name of your extension.
-
-   ![extension list](./../../media/select-app.png)
-5. Navigate to the App identity page which is under the App management section (after you've registered your app).
-
-   ![app identity page](./../../media/app-identity.png)
-
-
+1.  Navigate to [Windows Dev Center](https://developer.microsoft.com/windows/).
+2.  Sign in to your developer account.
+3.  Navigate to the Dashboard.
+4.  Select the name of your extension.
+    
+    ![extension list](./../../media/select-app.png)
+    
+5.  Navigate to the App identity page which is under the App management section (after you've registered your app).
+    
+    ![app identity page](./../../media/app-identity.png)
+    
 You can now populate the AppXManifest template with values from the App identity page, as indicated in the template:
-
 
 ```xml
 <Identity
@@ -130,34 +127,33 @@ You can now populate the AppXManifest template with values from the App identity
   <PublisherDisplayName>abigailc</PublisherDisplayName>
   <Logo>[REPLACE WITH RELATIVE PATH TO 50x50 ICON]</Logo>
 </Properties>
-```
+```  
 
 #### JSON manifest template values
 Some values in the AppXManifest need to match those that are defined in the JSON manifest. Please update the following values in appxmanifest.xml based on your extension JSON manifest:
 
-- `Version` - This is the version listed in your extension's JSON manifest. The string needs to match the X.X.X.X format where the last integer has to be 0. E.g. 1.2.3.0
-
-   ```xml
-   <Identity
-     Name="37369abigailc.MyExtension"
-     Publisher="CN=732F2E5E-B9A6-4243-85F6-A4210F57AA10"
-     Version="1.0.0.0" />
-   ```
-
-- `Description` - This is a copy of the description in your extension's JSON manifest.
-
-  ```xml
-  <uap:VisualElements
-    AppListEntry="none"
-    DisplayName="My Extension"
-    Square150x150Logo="[REPLACE WITH RELATIVE PATH TO 150x150 ICON]"
-    Square44x44Logo="[REPLACE WITH RELATIVE PATH TO 44x44 ICON]"
-    Description="This extension will allow you to quickly print by clicking the browser action."
-    BackgroundColor="white">
-  </uap:VisualElements>
-  ```
-
-
+-   `Version` - This is the version listed in your extension's JSON manifest. The string needs to match the X.X.X.X format where the last integer has to be 0. E.g. 1.2.3.0
+    
+    ```xml
+    <Identity
+         Name="37369abigailc.MyExtension"
+         Publisher="CN=732F2E5E-B9A6-4243-85F6-A4210F57AA10"
+         Version="1.0.0.0" />
+    ```  
+    
+-   `Description` - This is a copy of the description in your extension's JSON manifest.
+    
+    ```xml
+    <uap:VisualElements
+         AppListEntry="none"
+         DisplayName="My Extension"
+         Square150x150Logo="[REPLACE WITH RELATIVE PATH TO 150x150 ICON]"
+         Square44x44Logo="[REPLACE WITH RELATIVE PATH TO 44x44 ICON]"
+         Description="This extension will allow you to quickly print by clicking the browser action."
+         BackgroundColor="white">
+    </uap:VisualElements>
+    ```  
+    
 ### Assets folder
 
 Within the Assets folder you will need three different icon sizes. These icons will be used in the Microsoft Store and the Windows UI. For more information on these icons, see the [Design](./../design.md#icons-for-packaging) guide.
@@ -166,30 +162,28 @@ Within the Assets folder you will need three different icon sizes. These icons w
 
 Once you've created the necessary UI assets, update AppXManifest.xml to point to the correct files:
 
-- 44x44
-
-   ```xml
-   Square44x44Logo="Assets/icon_44.png"
-   ```
-
-- 50x50
-
-  ```xml
-   <Logo>Assets/icon_50.png</Logo>
-  ```
-
-- 150x150
-
-  ```xml
-  Square150x150Logo="Assets/icon_150.png"
-  ```
-
-
+-   44x44
+    
+    ```xml
+    Square44x44Logo="Assets/icon_44.png"
+    ```  
+    
+-   50x50
+    
+    ```xml
+    <Logo>Assets/icon_50.png</Logo>
+    ```  
+    
+-   150x150
+    
+    ```xml
+    Square150x150Logo="Assets/icon_150.png"
+    ```  
+    
 ### Extension folder
 Copy your extension files (keeping the folder structure) into the Extension folder. Make sure `manifest.json` is at the root your Extension folder.
 
 ![extension folder with all extension files in it](./../../media/extension-folder.png)
-
 
 ### Supporting more than one locale
 If your extension supports more than one language, you may want to configure the AppX package with all the locales that you need so that the correct localized icon and description appear in the Microsoft Store. See [Localizing extension packages](./localizing-extension-packages.md) for more information.
@@ -213,15 +207,15 @@ You may want to unpack a previously generated AppX and use it as a starting poin
 
 To do this, you can execute the following command to unpack the AppX package of your Microsoft Edge extension:
 
-`[Path to makeappx] makeappx unpack /v /p [Path to appx file you want to unpack] /d [Path to the location where you want to create the package folder]`
+```shell
+[Path to makeappx] makeappx unpack /v /p [Path to appx file you want to unpack] /d [Path to the location where you want to create the package folder]
+```  
 
 This should look something like this when filled out:
 
-`C:\Program Files (x86)\Windows Kits\10\bin\x64>makeappx.exe unpack /v /p "C:\Extension\MyExtension.appx" /d "C:\Extension\My Extension"`
-
-
-
-
+```text
+C:\Program Files (x86)\Windows Kits\10\bin\x64>makeappx.exe unpack /v /p "C:\Extension\MyExtension.appx" /d "C:\Extension\My Extension"
+```  
 
 ## Testing an AppX package
 
@@ -239,20 +233,28 @@ After you've signed the package with the certificate that you created, the certi
 To install certificates with WindowsCertutil.exe, run Cmd.exe as administrator
 and run the following command:
 
-`Certutil -addStore TrustedPeople MyKey.cer`
+```shell
+Certutil -addStore TrustedPeople MyKey.cer
+```  
 
 Once the certificates are no longer in use, it is recommended that you remove them by running the following command from an administrator command prompt:
 
-`Certutil -delStore TrustedPeople certID`
+```shell
+Certutil -delStore TrustedPeople certID
+```  
 
 The certID is the serial number of the certificate. To determine the certificate serial number, run the following command:
 
-`Certutil -store TrustedPeople`
+```shell
+Certutil -store TrustedPeople
+```  
 
 ### Deploying
 You can deploy the Microsoft Edge Extension AppX package by running the following command in PowerShell (as administrator):
 
-`Add-AppxPackage [path to AppX]`
+```powershell
+Add-AppxPackage [path to AppX]
+```  
 
 ## Automated testing with WebDriver
 
