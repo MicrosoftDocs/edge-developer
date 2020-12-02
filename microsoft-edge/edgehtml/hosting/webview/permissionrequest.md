@@ -6,14 +6,14 @@ ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # PermissionRequest object  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-Provides information about a permission request. This object is available from the permissionRequest property of the event args from the [MSWebViewPermissionRequested](../webview.md#mswebviewpermissionrequested) webview event.  
+Provides information about a permission request. This object is available from the permissionRequest property of the event args from the [MSWebViewPermissionRequested](../webview/index.md#mswebviewpermissionrequested) webview event.  
 
 ```javascript
 webview.addEventListener("MSWebViewPermissionRequested", permissionRequestedEventArgs => {

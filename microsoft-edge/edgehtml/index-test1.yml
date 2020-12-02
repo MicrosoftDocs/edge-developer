@@ -90,7 +90,7 @@ landingContent:
           - text: WebDriver overview (not recommended)
             url: ./webdriver/index.md
           - text: JavaScript runtime hosting overview (not recommended)
-            url: ./hosting/chakra-hosting/index.md
+            url: ./hosting/javascript-runtime-hosting.md
           - text: WebVR (not recommended)
             url: /microsoft-edge/webvr/index
           - text: Windows Runtime (WinRT) overview (not recommended)

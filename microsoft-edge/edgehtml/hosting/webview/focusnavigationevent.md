@@ -6,14 +6,14 @@ ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: webview, windows 10 apps, uwp, edge
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # FocusNavigationEvent object  
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-The dispatched object from [**NavigateFocus**](../webview.md#navigatefocus)/[**DepartingFocus**](../webview.md#departingfocus) containing the [**NavigationReason**](#navigationreason) and location.  
+The dispatched object from [**NavigateFocus**](../webview/index.md#navigatefocus)/[**DepartingFocus**](../webview/index.md#departingfocus) containing the [**NavigationReason**](#navigationreason) and location.  
 
 ## Methods  
 

@@ -13,7 +13,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 [!INCLUDE [deprecation-note](../includes/deprecation-note.md)]  
 
-Provides information for [MSWebViewLongRunningScriptDetected](../webview.md#mswebviewlongrunningscriptdetected).  
+Provides information for [MSWebViewLongRunningScriptDetected](../webview/index.md#mswebviewlongrunningscriptdetected).  
 
 ## Properties  
 
