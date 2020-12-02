@@ -7,7 +7,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 keywords: edge, ie, chakra, jscript, wwa, store apps
 ms.custom: seodec18
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JavaScript version information  
@@ -19,7 +19,7 @@ JavaScript support varies across Microsoft Edge, Microsoft Store apps, and diffe
 The following table summarizes the JavaScript support across Internet Explorer, Microsoft Edge, and Microsoft Store apps.  
   
 > [!IMPORTANT]
-> Experimental features \(enabled from `about:flags`\) are indicated by `Exp.` In some cases, Store apps support varies between Windows 8 \(v8\) and Windows 10 \(v10\) apps, and Windows desktop \(Win\) and Windows Phone \(Phone\), as indicated.  
+> Experimental features \(enabled from `about:flags`\) are indicated by `Exp`. In some cases, Store apps support varies between Windows 8 \(v8\) and Windows 10 \(v10\) apps, and Windows desktop \(Win\) and Windows Phone \(Phone\), as indicated.  
   
  | Language element | Quirks, IE 6 Standards, IE 7 Standards | IE 8 Standards | IE 9 Standards | IE 10 Standards | IE 11 Standards | Microsoft Edge | Store apps |  
  |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |  
