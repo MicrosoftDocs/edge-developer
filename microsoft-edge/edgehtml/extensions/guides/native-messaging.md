@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, native, messaging, uwp
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Native messaging in Microsoft Edge  
@@ -23,7 +23,6 @@ With the Windows 10 Creators Update, Microsoft Edge extensions are able to use n
  Microsoft Edge's native messaging architecture leverages the existing [`AppService`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.aspx) API as the underlying inter-process communication (IPC) infrastructure. UWP apps use the `AppService` API to communicate with one another. Because of this, Microsoft Edge extensions can now communicate with UWP apps.
 
 ![native messaging architecture](./../media/native-messaging-architecture.png)
-
 
 ### When and when not to use native messaging
 
@@ -62,7 +61,6 @@ This section details the differences between how Chrome and Microsoft Edge handl
 ### Registration and host manifest
 In order for your app to be recognized by your extension as a native messaging host, it will need to be registered.
 
-
 For [Chrome native messaging](https://developer.chrome.com/extensions/nativeMessaging) host registration, your app needs to install a manifest file anywhere in the Windows file system that defines the native messaging host configuration.
 
 The following JSON is an example of how the config file can be set up:
@@ -77,21 +75,27 @@ The following JSON is an example of how the config file can be set up:
       "chrome-extension://knldjmfmopnpolahpmmgbagdohdnhkik/"
     ]
 }
-```
+```  
 
 To install this file, the app would need to:
 
-1. Register the manifest file in a predefined location in the registry that defines the host configuration:
-   - `HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.my_company.my_application`
-
-     or
-   - `HKEY_CURRENT_USER\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.my_company.my_application`
-
-2. Set the default value of that key to the full path to the manifest file, e.g.  `[HKEY_CURRENT_USER\Software\Google\Chrome\NativeMessagingHosts\com.my_company.my_application] @="C:\\path\\to\\nmh-manifest.json"`
-
-
-
-
+1.  Register the manifest file in a predefined location in the registry that defines the host configuration:
+    -   ```text
+        HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.my_company.my_application
+        ```  
+        
+        or
+        
+    -   ```text
+        HKEY_CURRENT_USER\SOFTWARE\Google\Chrome\NativeMessagingHosts\com.my_company.my_application
+        ```  
+        
+2.  Set the default value of that key to the full path to the manifest file, e.g. 
+    
+    ```text
+    [HKEY_CURRENT_USER\Software\Google\Chrome\NativeMessagingHosts\com.my_company.my_application] @="C:\\path\\to\\nmh-manifest.json"
+    ```  
+    
 For Microsoft Edge, in order to register an [`AppService`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.aspx)(native messaging host) you'll need to include the UWP companion app in the same package as your extension and specify the [AppService extension](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) in your project's `Package.appxmanifest` file. The `EntryPoint` and `Name` attributes can be configured by you:
 
 ```xml
@@ -129,9 +133,7 @@ OnBackgroundActivated(BackgroundActivatedEventArgs args)
         }
     }
 }
-```
-
-
+```  
 
 ### Message sending
 
@@ -141,7 +143,7 @@ Chrome extensions initiate a message using the [`runtime.sendNativeMessage`](htt
 
 ```javascript
 chrome.runtime.sendNativeMessage(string application, object message, function responseCallback)
-```
+```  
 
 The first parameter is the name of the native host, which Chrome looks up in the registry for the manifest. The manifest specifies the .exe that Chrome will launch in a sandbox, and the message is sent using std i/o. 
 Extensions can also establish a persistent channel using the `runtime.connectNative` API, which takes the name of the native host as the only parameter. 
@@ -153,16 +155,11 @@ This means that Microsoft Edge will use the same Package Family Name as the exte
 > [!NOTE]
 > This will not be easily converted by the [Microsoft Edge Extension Toolkit](./porting-chrome-extensions.md). Any extensions that specifies the `"nativeMessaging"` permission will be flagged as requiring manual conversion for this component.
 
-
-
-
-
 ### Communication protocol
 
 Communication protocol for native messaging determines how messages are formatted before sending.
 
 Chrome starts each native messaging host in a separate process and communicates with it using standard input and standard output. The same format is used to send messages in both directions: each message is serialized using JSON, UTF-8 encoded and is preceded with 32-bit message length in native byte order.
-
 
 For Microsoft Edge, the background task/main app that implements the app service will be started by the platform. On startup, the background task's `Run` method will be invoked:  
 
@@ -178,7 +175,7 @@ public void Run(IBackgroundTaskInstance taskInstance)
     appServiceconnection = details.AppServiceConnection;
     appServiceconnection.RequestReceived += OnRequestReceived;
 }
-```
+```  
 
 When your extension sends a message to your UWP app, the [`onRequestReceived`](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.appservice.appserviceconnection.requestreceived) event will be raised. This JSON formatted message will then be stringified into the first KeyValue pair of a [`ValueSet`](https://msdn.microsoft.com/library/windows/apps/dn636131) object. :
 
@@ -189,7 +186,7 @@ AppServiceRequestReceivedEventArgs args)
 {
     ...
 }
-```
+```  
 
 When your UWP app sends a response back to your extension, a [`KeyValuePair`](https://msdn.microsoft.com/library/windows/apps/5tbh8a42) will be added to the `ValueSet` object. The `Key` property will be ignored by Microsoft Edge, but the `Value` property will contain a valid JSON string.
 
@@ -204,15 +201,13 @@ Microsoft Edge uses the [`AppServiceRequest`](https://msdn.microsoft.com/library
 Messages that are sent back and forth between an extension and an app have different message size limitations in place for Chrome and Microsoft Edge.
 
 Chrome has the following message size limitations:
-- Single message limit from native messaging host: 1 MB
-- Single message limit sent to native messaging host: 4 GB
-
+-   Single message limit from native messaging host: 1 MB
+-   Single message limit sent to native messaging host: 4 GB
+    
 For Microsoft Edge, while `AppService` has no limit on message size (dependent on memory), Microsoft Edge protects itself against misbehaving native apps by imposing the following message size limits:
-- Single message limit from UWP app to extension: 1 MB
-- Single message limit from extension to UWP app: 100 MB
-
-
-
+-   Single message limit from UWP app to extension: 1 MB
+-   Single message limit from extension to UWP app: 100 MB
+    
 ### Native messaging connections
 
 There are two types of connections for native messaging; persistent and non-persistent.
@@ -232,7 +227,7 @@ this.inventoryService.AppServiceName = "com.microsoft.inventory";
 this.inventoryService.PackageFamilyName = "replace with the Package Family Name";  
 var status = await
 this.inventoryService.OpenAsync();
-```
+```  
 
 #### Non-persistent
 
@@ -249,12 +244,11 @@ using (var connection = new AppServiceConnection())
     AppServiceConnectionStatus status = await connection.OpenAsync();
     AppServiceResponse response = await connection.SendMessageAsync(inputs);
 }
-```
+```  
 
 ### Permission
 
 In order to enable native messaging use with your extension, for both Chrome and Microsoft Edge you'll need to declare the `"nativeMessaging"` permission in you `manifest.json` file.
-
 
 ## App services
 This section details the impact app services has on Microsoft Edge native messaging performance and memory.
@@ -265,26 +259,23 @@ App services are "sponsored" by the foreground app that calls them which for nat
 
 In regards to latency, app services use named pipes that, after initial connection, allow two apps to directly communicate. This method of communication produces low latency. Devices with slow CPUs will experience some initial latency after starting up the process that hosts the app service (~80ms to startup the background task on some devices). After start-up, performance on slow CPU devices should be good. 
 
-
 ### Memory
 The memory allocated to an app service is taken out of the quota allocated to Microsoft Edge. This means that if Microsoft Edge starts too many app services there is a possibility that they could run out of memory. The usual background task memory caps are enforced on app services. For instance, on a 512MB device an app service background task can be no larger than 16MB. This number goes up as the devices scale up.
-
 
 ## Creating an extension with native messaging
 
 In order to test native messaging, your extension needs a Package Family Name. Microsoft Edge uses this to determine the native message host identity, which means your extension should be packaged. 
 
-
 To create your extension with native messaging in Visual Studio:
 
-1. Create a UWP project in Visual Studio.
-2. [Add `AppService` to your UWP app](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service).
-   - You can optionally [configure `AppService` to be hosted in the main app](https://msdn.microsoft.com/windows/uwp/launch-resume/convert-app-service-in-process) instead of as a background task at this point.
-3. Build and test your UWP project.
-   - You can optionally add a [Desktop Bridge component](#adding-a-desktop-bridge-component).
-4. Create a Microsoft Edge extension that uses native messaging to communicate with the UWP companion app. The extension files can be added into a folder named `Extension` in the UWP project. All of the files underneath this folder, including subfolders, need to have their properties configured such that `Build Action=Content` and `Copy to Output Directory=Copy Always`. Make sure `manifest.json` is also configured with these properties.
-5. Modify the `package.manifest.xml` file in the project to include extension metadata and convert it to a headless app by adding `AppListEntry="none"`:
-
+1.  Create a UWP project in Visual Studio.
+2.  [Add `AppService` to your UWP app](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service).
+    -   You can optionally [configure `AppService` to be hosted in the main app](https://msdn.microsoft.com/windows/uwp/launch-resume/convert-app-service-in-process) instead of as a background task at this point.
+3.  Build and test your UWP project.
+    -   You can optionally add a [Desktop Bridge component](#adding-a-desktop-bridge-component).
+4.  Create a Microsoft Edge extension that uses native messaging to communicate with the UWP companion app. The extension files can be added into a folder named `Extension` in the UWP project. All of the files underneath this folder, including subfolders, need to have their properties configured such that `Build Action=Content` and `Copy to Output Directory=Copy Always`. Make sure `manifest.json` is also configured with these properties.
+5.  Modify the `package.manifest.xml` file in the project to include extension metadata and convert it to a headless app by adding `AppListEntry="none"`:
+    
     ```xml
     <Package
     xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" 
@@ -319,30 +310,28 @@ To create your extension with native messaging in Visual Studio:
           </Extensions>
     </Application>
     ```
-
-6. Use the `AppService` name configured for the UWP in the native messaging APIs.
-7. Build and [deploy](#deploying) the UWP project (with the optional Desktop Bridge component).
-8. [Package](#packaging) your native messaging extension once it's ready for Store submission
-
+    
+6.  Use the `AppService` name configured for the UWP in the native messaging APIs.
+7.  Build and [deploy](#deploying) the UWP project (with the optional Desktop Bridge component).
+8.  [Package](#packaging) your native messaging extension once it's ready for Store submission
+    
 > [!NOTE]
 > Reference the [Demos](#demos) section for an example of a complete native messaging extension.
-
 
 ## Adding a Desktop Bridge component 
 If you want to add a Desktop Bridge component to your package, you'll need to create and build your Win32 project in Visual Studio. For info on how to convert your win32 app to UWP, see [Porting apps to Windows 10 via Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root). Once built in Visual Studio, you can add the Win32 executable to the package by doing the following steps:
 
-1. Add the Win32 project to the same solution as the UWP project. 
-
-2. Set the Win32 project as a dependent project for the UWP project:
-
+1.  Add the Win32 project to the same solution as the UWP project. 
+2.  Set the Win32 project as a dependent project for the UWP project:
+    
     ![setting up project dependencies](./../media/project-dependencies.PNG)
-
-3. Create a `Win32` folder within the UWP project. Copy the necessary binaries for the `Win32` project to this folder. Configure the properties of all the binaries such that `Build Action=Content` and `Copy to Output Directory=Copy Always`.
-
+    
+3.  Create a `Win32` folder within the UWP project. Copy the necessary binaries for the `Win32` project to this folder. Configure the properties of all the binaries such that `Build Action=Content` and `Copy to Output Directory=Copy Always`.
+    
     ![folder with win32 and UWP app files in it](./../media/desktop-bridge.png)
-
-4. Modify the UWP project file to copy all the necessary binaries for the `Win32` project into this folder using PostBuild event command. This ensures that the updated binaries are being copied to the folder every time the solution is rebuilt.
-
+    
+4.  Modify the UWP project file to copy all the necessary binaries for the `Win32` project into this folder using PostBuild event command. This ensures that the updated binaries are being copied to the folder every time the solution is rebuilt.
+    
     ```xml
     <Target Name="AfterBuild">
     <Copy SourceFiles="..\PasswordInputProtection\bin\$(Configuration)\PasswordInputProtection.exe" DestinationFolder="win32" />
@@ -350,17 +339,16 @@ If you want to add a Desktop Bridge component to your package, you'll need to cr
     <Copy SourceFiles="..\PasswordInputProtection\bin\$(Configuration)\PasswordInputProtection.pdb" DestinationFolder="win32" />
     </Target>
     ```
-
-
-5. Modify `package.manifest.xml` by adding the `<desktop:Extension>` element to the `<Extensions>` element:
-
+    
+5.  Modify `package.manifest.xml` by adding the `<desktop:Extension>` element to the `<Extensions>` element:
+    
     ```xml
     <Extensions>
     <desktop:Extension Category="windows.fullTrustProcess"Executable="Win32\PasswordInputProtection.exe"
     xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10" />
     </Extensions>
     ```
-
+    
 ## Deploying
 Once you have configured your UWP project (and optionally Win32 project) as outlined above, you are ready to deploy the solution using Visual Studio.
 
@@ -375,9 +363,7 @@ Once the solution is correctly deployed, you should see your extension in Micros
 > [!NOTE]
 > Submitting a Microsoft Edge extension to the Microsoft Store is currently a restricted capability. [Reach out to us](https://aka.ms/extension-request) with your requests to be a part of the Microsoft Store, and we'll consider you for a future update.
 
-
 You can generate a Store package for submission to the Windows Dev Center using built-in Visual Studio functionality:
-
 
 ![Creating Store package](../media/create-store-package.PNG)
 
@@ -394,11 +380,10 @@ The UWP app will launch when the extension tries to connect to it using [native 
 1.  In Visual Studio, right click your UWP app project
 2.  Select Properties
 3.  Check "Do not launch, but debug my code when it starts"
-
+    
     ![selecting do not launch box](../media/native-message-do-not-launch.png)
-
+    
 In Visual Studio you can now set breakpoints in the code where you want to debug, then launch the debugger by pressing F5. Once you interact with the extension to connect to the UWP app, Visual Studio will automatically attach to the process.
-
 
 ### Debugging the Desktop Bridge
 Even though there are various [methods for debugging a Desktop Bridge](https://msdn.microsoft.com/windows/uwp/porting/desktop-to-uwp-debug) (converted Win32 app), the only one applicable for this scenarios is the PLMDebug option. You could also add debugging code to the startup function to perform a wait for a specific time, allowing you to attach Visual Studio to the process.
