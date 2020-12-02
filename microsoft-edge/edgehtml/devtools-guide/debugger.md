@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, debugger, debugging, breakpoints, watches, service workers, cache api, web storage, cookies
 ms.custom: seodec18
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Debugger - DevTools (EdgeHTML)
@@ -68,7 +68,7 @@ Please be aware of the following constraints:
 - Edits are saved in memory and flushed when the document is reloaded, thus you won't be able to run edits inside a `DOMContentLoaded` handler, for example
 - Currently there's no way (such as a **Save As** option) to save your edits to disk from the DevTools
 
-### 2.Code formatting
+### 2. Code formatting
 
 Use these controls to format minified code for better readability as you debug:
 
