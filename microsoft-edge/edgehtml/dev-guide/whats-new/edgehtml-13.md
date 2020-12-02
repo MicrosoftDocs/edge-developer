@@ -1,12 +1,12 @@
 ---
-description:  This page provides an overview of what's new in EdgeHTML 13.
+description: This page provides an overview of what's new in EdgeHTML 13.
 title: New features and APIs in EdgeHTML 13
-author:  MSEdgeTeam
-ms.author:  msedgedevrel
-ms.topic:  article
-ms.prod:  microsoft-edge
-keywords:  edge, web development, html, css, javascript, developer
-ms.date: 11/19/2020
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: edge, web development, html, css, javascript, developer
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # What's new in EdgeHTML 13  
@@ -63,7 +63,7 @@ Enabled with `about:flags`
 
 The following features introduced in EdgeHTML 13 improve user input:  
 
-*   [<meter> element](https://developer.microsoft.com/microsoft-edge/platform/status/meterelement)  
+*   [\<meter\> element](https://developer.microsoft.com/microsoft-edge/platform/status/meterelement)  
 *   [oninvalid event handler for the element document and window](https://developer.microsoft.com/microsoft-edge/platform/status/oninvalideventhandler)  
 
 ### Pointer Lock  
