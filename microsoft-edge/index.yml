@@ -282,7 +282,7 @@ additionalContent:
             #   url: /microsoft-edge/webvr/index
             # - text: Windows Runtime (WinRT)
             #   url: /microsoft-edge/windows-runtime
-            - name: Legacy Microsoft Edge documentation - test one
+            - text: Test one
               url: /microsoft-edge/edgehtml/index-test1
-            - name: Legacy Microsoft Edge documentation - test two
+            - text: Test two
               url: /microsoft-edge/edgehtml/index-test2
