@@ -7,7 +7,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
-ms.date: 11/19/2020
+ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Search provider discovery  
@@ -16,7 +16,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 Rich search integration is built into the Microsoft Edge address bar, including search suggestions, results from the web, your browsing history, and favorites.  Microsoft Edge follows the [OpenSearch 1.1](https://github.com/dewitt/opensearch/blob/master/opensearch-1-1-draft-6.md) specification to discover and use web search providers.  If you are a search provider, here's how to ensure that Microsoft Edge supports your service.  
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > For user security and privacy, Microsoft Edge requires all searches be conducted over SSL.  
 
 The following resources must be specified as `https` URLs to enable Microsoft Edge integration of your search engine:  
@@ -24,7 +24,7 @@ The following resources must be specified as `https` URLs to enable Microsoft Ed
 *   The site that contains the reference to the description document  
 *   The URL to the description document itself  
 *   The search query template  
-
+    
 1.  Provide an OpenSearch description file, which contains the name of the search provider, and the template to use to construct the search.  Here is an example document:  
     
     ```html
