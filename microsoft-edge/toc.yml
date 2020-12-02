@@ -354,5 +354,7 @@
       href: webview2/toc.yml
     - name: WebVR developer guide
       href: /microsoft-edge/webvr/index
-    - name: Legacy Microsoft Edge documentation
+    - name: Legacy Microsoft Edge documentation - test one
+      href: edgehtml/index-test1.yml
+    - name: Legacy Microsoft Edge documentation - test two
       href: edgehtml/index-test2.md
