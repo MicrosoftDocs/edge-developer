@@ -72,9 +72,18 @@ You may now visualize Layers alongside z-index values and the Document Object Mo
 
 In the **Styles** tool, CSS variables now link directly to each definition.  Linking allows you to easily view or change CSS variable definitions.  For more information about CSS variable, navigate to [Using CSS custom properties (variables)][MdnUsingCssCustomProperties].  
 
-:::image type="complex" source="../../media/2020/11/css-variable-support.msft.png" alt-text="CSS variable linked to style" lightbox="../../media/2020/11/css-variable-support.msft.png":::
-   CSS variable linked to style  
-:::image-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2020/11/css-variable-support.msft.png" alt-text="CSS variable linked to style" lightbox="../../media/2020/11/css-variable-support.msft.png":::
+         CSS variable linked to style  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2020/11/css-variable-support-target.msft.png" alt-text="CSS variable linked to style target" lightbox="../../media/2020/11/css-variable-support-target.msft.png":::
+         CSS variable linked to style target  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::
 
 ## Service worker debugging improvements  
 
@@ -190,7 +199,9 @@ DevTools now have better support for CSS angle debugging.  When an HTML element 
 
 <!--todo:  add link when css angle clock section exists.  -->  
 
-The following CSS angle is used for the example.
+The following CSS angle is used for the example.  
+
+<!--- demo:  https://codepen.io/zoherghadyali/full/XWKwxBy  -->  
 
 ```css
 background: linear-gradient(100deg, lightblue, pink);
@@ -251,18 +262,18 @@ To review real-time updates on this feature in the Chromium open-source project,
 
 #### Display opener frame details for opened windows  
 
-DevTools now organizes opened [Windows][MdnWindowConstructors] under the relevant parent [frame][MdnWindowFrames]. For example, if the `top` frame opens a Window to `https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium`, then the Window appears under `top` in the **Frames** list.  
+DevTools now organizes opened [Windows][MdnWindowConstructors] under the relevant parent [frame][MdnWindowFrames]. For example, if the `top` frame opens a `Window` to `https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium`, then the `Window` appears under `top` in the **Frames** list.  
 
 To reveal the frame responsible for opening another Window in the **Elements** tool, complete the following actions.  
 
 1.  Open the **Frames** tree.  
-1.  Expand **Opened Windows** and choose the Window for the parent frame you want to know.  
+1.  Expand **Opened Windows** and choose the `Window` for the parent frame you want to know.  
 1.  Choose the **Opener Frame** link.  
 
-The details are displayed about which frame caused the opening of another Window.  To reveal the opener in the **Elements** tool, complete the following actions.  
+The details are displayed about which frame caused the opening of another `Window`.  To reveal the opener in the **Elements** tool, complete the following actions.  
 
 1.  Open the **Frames** tree.  
-1.  Choose an opened window to open the window details.  
+1.  Choose an opened window to open the `Window` details.  
 1.  Choose the **Opener Frame** link.  
     
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1107766][CR1107766].  
