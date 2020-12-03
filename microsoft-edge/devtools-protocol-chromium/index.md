@@ -3,7 +3,7 @@ description: Update to the Microsoft Edge DevTools Protocol
 title: Microsoft Edge DevTools Protocol Update
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/27/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
@@ -23,19 +23,19 @@ Here's how to attach a custom tooling client to the DevTools Server in Microsoft
 1.  Ensure all instances of Microsoft Edge \(Chromium\) are closed.  
 1.  Launch Microsoft Edge \(Chromium\) with the remote debugging port:. 
     
-    ```
+    ```shell
     msedge.exe --remote-debugging-port=9222
     ```  
     
 1.  Optionally, you can start a separate instance of Edge using a distinct user profile if desired.  
     
-    ```
+    ```shell
     msedge.exe --user-data-dir=<some directory>
     ```  
     
 1.  Next, use the HTTP `list` endpoint to get a list of attachable page targets.  
     
-    ```
+    ```http
     http://localhost:9222/json/list
     ```  
     
@@ -124,7 +124,7 @@ The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/app
 
 ### /msedge/json/list  
 
-Provides a candidate list of all `msedge.exe` processes \(including [PWAs](../../progressive-web-apps-chromium/index.md) and all tabs in all instances of Microsoft Edge\) on the Windows 10 device for debugging.  
+Provides a candidate list of all `msedge.exe` processes \(including [PWAs](../progressive-web-apps-chromium/index.md) and all tabs in all instances of Microsoft Edge\) on the Windows 10 device for debugging.  
 
 **Parameters**  
 
