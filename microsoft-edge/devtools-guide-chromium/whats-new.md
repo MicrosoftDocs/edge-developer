@@ -3,15 +3,14 @@ description: Features added to the Microsoft Edge (Chromium) DevTools in March 2
 title: What's new in the Microsoft Edge (Chromium) DevTools in March 2019
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2020
+ms.date: 10/23/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-
 # What's new in the Microsoft Edge (Chromium) DevTools
 
-Thank you so much for trying out a preview of the next version of Microsoft Edge! With this release, we've undertaken a major shift in the underlying web platform of Microsoft Edge by adopting the Chromium open source project. With this change, it will be easier for you to build and test your web sites in Microsoft Edge and ensure they will still work as expected even if your users are browsing in a different Chromium-based browser, like Google Chrome, Vivaldi, Opera, or Brave.
+Thank you so much for trying out a preview of the new Microsoft Edge! With this release, we've undertaken a major shift in the underlying web platform of Microsoft Edge by adopting the Chromium open source project. With this change, it will be easier for you to build and test your web sites in Microsoft Edge and ensure they will still work as expected even if your users are browsing in a different Chromium-based browser, like Google Chrome, Vivaldi, Opera, or Brave.
 
 ## The new Microsoft Edge (Chromium) DevTools
 
@@ -19,7 +18,7 @@ If you are checking out Microsoft Edge and you mainly develop in a Chromium-base
 
 ![Microsoft Edge (Chromium) DevTools](./media/devtools.png)
 
-If you are checking out the next version of Microsoft Edge and you mainly developed in Microsoft Edge (EdgeHTML), we have got some great new tools that we hope will make it easier and faster for you to build and test your web sites in Microsoft Edge! To learn more about these new tools, check out [The Microsoft Edge (Chromium) DevTools Guide](../devtools-guide-chromium.md).
+If you are checking out the new Microsoft Edge and you mainly developed in Microsoft Edge (EdgeHTML), we have got some great new tools that we hope will make it easier and faster for you to build and test your web sites in Microsoft Edge! To learn more about these new tools, check out [The Microsoft Edge (Chromium) DevTools Guide](../devtools-guide-chromium.md).
 
 ## New dark and light themes for the DevTools
 
@@ -53,7 +52,7 @@ For more information, check out [how to debug Microsoft Edge (Chromium) from VS 
 
 With the shift in the underlying web platform of Microsoft Edge, the Edge DevTools Protocol will not be receiving any further updates. The Microsoft Edge (Chromium) DevTools will use the Chrome DevTools Protocol or CDP. To reference documentation on the domains and methods in CDP, please refer to [the CDP viewer](https://chromedevtools.github.io/devtools-protocol/tot/Accessibility).
 
-In the next version of Microsoft Edge, any methods that are prefixed with `ms` will not be supported. To learn more about how to use CDP in Microsoft Edge (Chromium), please refer to [DevTools Protocol (Chromium)](../devtools-protocol-chromium.md).
+In the new Microsoft Edge, any methods that are prefixed with `ms` will not be supported. To learn more about how to use CDP in Microsoft Edge (Chromium), please refer to [DevTools Protocol (Chromium)](../devtools-protocol-chromium.md).
 
 ## Known issues
 
