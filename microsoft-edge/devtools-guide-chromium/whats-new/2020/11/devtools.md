@@ -3,7 +3,7 @@ description: New CSS angle visualization tools, emulate unsupported image types 
 title: What's new in DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/01/2020
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -20,7 +20,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Microsoft Edge Dev is now supported on Ubuntu, Debian, Fedora, and openSUSE distributions.  Download and install the Microsoft Edge Dev `.deb` or `.rpm` package directly from the [Microsoft Edge Insider site][MicrosoftinsiderDownloadPlatformLinux] or use the standard package management tools of your Linux distribution.  
 
-If you are using a Linux environment in your continuous integration and delivery \(CI/CD\) solutions, Microsoft Edge Driver is also available on Linux.  Navigate to the [Microsoft Edge Driver Downloads page][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads] to download Microsoft Edge Driver.  For help with automating Microsoft Edge Dev along with Microsoft Edge Driver, navigate to [Use WebDriver (Chromium) for test automation][WebDriverChromiumMain].  
+If you are using a Linux environment in your continuous integration and delivery \(CI/CD\) solutions, Microsoft Edge Driver is also available on Linux.  To get started automating Microsoft Edge Dev with Microsoft Edge Driver, navigate to [Microsoft Edge Driver Downloads page][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads].  For help with automating Microsoft Edge Dev along with Microsoft Edge Driver, navigate to [Use WebDriver (Chromium) for test automation][WebDriverChromiumMain].  
 
 :::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="Microsoft Edge on Linux" lightbox="../../media/2020/11/edge-on-linux.msft.png":::
    Microsoft Edge on Linux  
@@ -31,20 +31,14 @@ If you are using a Linux environment in your continuous integration and delivery
 <!-- Title: Improvements to Issues tool and webhint integration  -->  
 <!-- Subtitle: Categories and third-party filtering make it easier to survey issues in the Issues tool.  Issues surfaced by webhint now have improved code snippets and documentation links to help you fix problems in your website.  -->  
 
-[webhint][WebhintMain] is an open-source tool that provides real-time feedback for websites and local webpages.  Starting with Microsoft Edge version 85, [webhint][WebhintMain] is included in Microsoft Edge DevTools.  It provides real-time feedback on your code in the following areas.  
+[webhint][WebhintMain] is an open-source tool that provides real-time feedback for websites and local webpages.  Starting with [Microsoft Edge version 85][WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel], review [webhint][WebhintMain] feedback in the [Issues][DevtoolsIssuesIndex] tool.  Issues that appear in the **Issues** tool are now easier to review with the addition of the following categories.  
 
-*   Accessibility  
-*   Cross-browser compatibility  
-*   PWA debugging  
-    
-Review webhint feedback in the [Issues][DevtoolsIssuesIndex] tool.  Issues that appear in the **Issues** tool are now easier to review with the addition of the following categories.  
-
-*   Accessibility  
-*   Compatibility  
-*   Performance  
-*   Pitfalls  
-*   PWA  
-*   Security  
+*   [Accessibility][WebhintUserGuideHintsAccessibility]  
+*   [Compatibility][WebhintUserGuideHintsAccessibility]  
+*   [Performance][WebhintUserGuideHintsPerformance]  
+*   [Pitfalls][WebhintUserGuideHintsPitfalls]  
+*   [PWA][WebhintUserGuideHintsPwa]  
+*   [Security][WebhintUserGuideHintsSecurity]  
     
 You are now able to filter out third-party issues using a new checkbox.  The filter functionality helps you hide issues related to code from third-party libraries or other sources.  To help you review issues revealed by [webhint][WebhintMain], the **Issues** tool now displays the following information.  
 
@@ -52,6 +46,10 @@ You are now able to filter out third-party issues using a new checkbox.  The fil
 *   Links to other relevant panels.  
 *   Links to documentation to help you fix problems in your website.  
     
+:::image type="complex" source="../../media/2020/11/issues-webhints.msft.png" alt-text="Issues tool" lightbox="../../media/2020/11/issues-webhints.msft.png":::
+   **Issues** tool  
+:::image-end:::  
+
 ## Composited Layers are now in 3D View  
 
 <!-- Title: 3D View is now integrated with Composited Layers  -->  
@@ -62,7 +60,7 @@ You are now able to filter out third-party issues using a new checkbox.  The fil
 You may now visualize Layers alongside z-index values and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  For a comprehensive visual debugging experience, the [3D View and Composited Layers are now combined][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView].  
 
 :::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Composited Layers pane" lightbox="../../media/2020/11/experiments-layers.msft.png":::
-   Composited Layers pane  
+   **Composited Layers** pane  
 :::image-end:::  
 
 ## Quickly view CSS variable definitions in Styles pane  
@@ -70,12 +68,12 @@ You may now visualize Layers alongside z-index values and the Document Object Mo
 <!-- Title: Jump to CSS variable definitions  -->  
 <!-- Subtitle: Choose any CSS variable to navigate directly to the definition in the Styles tool. -->  
 
-In the **Styles** tool, CSS variables now link directly to each definition.  Linking allows you to easily view or change CSS variable definitions.  For more information about CSS variable, navigate to [Using CSS custom properties (variables)][MdnUsingCssCustomProperties].  
+In the **Styles** pane, [CSS variables][MdnUsingCssCustomProperties] now link directly to each definition.  Choose the variable to easily view or change the CSS variable definition.  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/css-variable-support.msft.png" alt-text="CSS variable linked to style" lightbox="../../media/2020/11/css-variable-support.msft.png":::
-         CSS variable linked to style  
+      :::image type="complex" source="../../media/2020/11/css-variable-support.msft.png" alt-text="CSS variable linked to the style" lightbox="../../media/2020/11/css-variable-support.msft.png":::
+         CSS variable linked to the style  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
@@ -83,15 +81,45 @@ In the **Styles** tool, CSS variables now link directly to each definition.  Lin
          CSS variable linked to style target  
       :::image-end:::  
    :::column-end:::
-:::row-end:::
+:::row-end:::  
 
 ## Service worker debugging improvements  
 
 <!-- Title:  Service worker debugging improvements in the Network, Application, and Sources tools  -->  
 <!-- Subtitle:  Making service workers easier to debug for progressive web applications and more.  -->  
 
-The following new features help you build your [PWA][ProgressiveWebAppsChromiumIndex].  The features help you debug when your service worker is expectedly not working and you have difficulty debugging.  Use the following features the next time you are debugging service workers in the **Network**, **Application**, and **Sources** tools.  Request routing displays the `startup` and `fetch` events based on the network requests that run through service workers.  The timelines are accessed from either the **Application** or **Network** tool.  The timelines help when you are having trouble with service workers and want to see if something is wrong with the `startup` or `fetch` event.
+The following new features in the [Network](#network-tool), [Application](#application-tool), and [Sources](#sources-tool) tools help you build your [PWA][ProgressiveWebAppsChromiumIndex].  Use the following features when you have difficulty debugging your service worker.  
 
+Request routing displays the `startup` and `fetch` events based on the network requests that run through service workers.  The timelines are accessed from either the **Application** or **Network** tool.  The timelines help when you are having trouble with service workers and want to see if something is wrong with the `startup` or `fetch` event.  
+
+### Application tool  
+
+*   Explore the runtime details associated with service workers and related fetch events.  
+    
+<!-- Title: Open Network tool from the Service Workers pane  -->  
+<!-- Subtitle: Display additional context when debugging a service worker.  -->  
+
+View all service worker request routing information with the new **Network requests** link.  To display additional context when debugging the service worker, complete the following actions.  
+
+1.  Navigate to **Application** > **Service Workers**.  
+1.  Choose **Network requests**.  
+    
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Open Network tool from the Service Workers pane" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
+       Open **Network** tool from the **Service Workers** pane
+    :::image-end:::  
+    
+1.  The **Network** tool opens in the **drawer** and displays all service worker-related network requests.  The network requests are filtered using `is:service-worker-intercepted`.  
+    
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="Network tool in drawer" lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
+       **Network** tool in **drawer**  
+    :::image-end:::
+    
+1. To return the **Network** tool to the top panel, close the **drawer**.  
+    
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-return.msft.png" alt-text="Close the drawer to return Network tool" lightbox="../../media/2020/11/service-worker-application-network-return.msft.png":::
+       Close the **drawer** to return **Network** tool  
+    :::image-end:::  
+    
 ### Network tool  
 
 Debug network requests that run through service workers.  You may also open the context from the **Application** tool.  
@@ -102,49 +130,36 @@ Debug network requests that run through service workers.  You may also open the 
     *   The runtime of a request using the fetch event handler.  
     *   The runtime of all fetch events for loading a client.  
         
-### Application tool  
-
-*   Explore the runtime details associated with service workers and related fetch events.  
-
-#### Open Network tool from the Service Workers pane  
-
-<!-- Title: Open Network tool from the Service Workers pane  -->  
-<!-- Subtitle: Display additional context when debugging a service worker.  -->  
-
-View all service worker request routing information with the new **Network requests** link.  To display additional context when debugging the service worker, complete the following actions.  
-
-1.  Open the **Application** tool.  
-1.  Under **Application** section, choose **Service Workers**.  
-1.  Choose **Network requests**.  
-1.  The **Network** tool opens in the bottom panel and display all service worker-related network requests.  
-    
-The network requests are filtered using `is:service-worker-intercepted`.  <!--  To review the history of this feature in the Chromium open-source project, navigate to Issue N/A.  -->  
-
-<!--todo:  need to capture a new figure  -->  
-:::image type="complex" source="../../media/2020/11/sw-network-request.msft.png" alt-text="Open Network tool from the Service Workers" lightbox="../../media/2020/11/sw-network-request.msft.png":::
-   Open **Network** tool from the **Service Workers** pane  
-:::image-end:::  
-    
 ### Sources tool  
 
 *   Step into and out of fetch event handler with page script information.  
+    
+    :::row:::
+       :::column span="":::
+          :::image type="complex" source="../../media/2020/11/service-worker-sources-set-breakpoint.msft.png" alt-text="Set a breakpoint" lightbox="../../media/2020/11/service-worker-sources-set-breakpoint.msft.png":::
+             Set a breakpoint  
+          :::image-end:::  
+       :::column-end:::
+       :::column span="":::
+          :::image type="complex" source="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png" alt-text="Review a breakpoint" lightbox="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png":::
+             Review a breakpoint  
+          :::image-end:::  
+       :::column-end:::
+    :::row-end:::  
     
 ## Copy property value of a network request  
 
 <!-- Title: Copy response JSON in Network tool using the contextual menu  -->  
 <!-- Subtitle:  The Network tool now has a more consistent UX.  Easily copy the JSON response using the contextual menu.  -->  
 
-In the **Network** tool, copy the property value of a network request using the new **Copy value** option.  The property value is copied as a decoded JSON value.  
+In the **Network** tool, copy the property value of a network request using the new **Copy value** option.  The property value is copied as a decoded JSON value.  In previous versions of Microsoft Edge, you had to copy a value using one of the following actions.  
 
-> [!NOTE]
-> In previous versions of Microsoft Edge, you had to copy a value using one of the following actions.  
-> *   Select the entire text and copy it.  
-> *   Storing the value as global variable, as applicable, and copy it from console.  
-
+*   Highlight the entire text and copy it.  
+*   Store the value as global variable, as applicable, and copy it from console.  
+    
 To copy the property value to your clipboard, complete the following actions.  
 
-1.  Open the **Network** tool.  
-1.  Choose the **Headers** pane.  
+1.  Navigate to **Network** > **Headers**.  
 1.  Open one of the following header sections.  
     *   Request payload \(JSON\)
     *   Form Data
@@ -159,12 +174,12 @@ To review the history of this feature in the Chromium open-source project, navig
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/copy-prop-value.msft.png" alt-text="Copy property value" lightbox="../../media/2020/11/copy-prop-value.msft.png":::
+      :::image type="complex" source="../../media/2020/11/copy-property-value.msft.png" alt-text="Copy property value" lightbox="../../media/2020/11/copy-property-value.msft.png":::
          Copy property value in DevTools  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/copy-prop-value.msft.png" alt-text="Copy property value" lightbox="../../media/2020/11/copy-prop-value.msft.png":::
+      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Copy property value" lightbox="../../media/2020/11/paste-property-value.msft.png":::
          Paste property value in Visual Studio Code  
       :::image-end:::  
    :::column-end:::
@@ -179,14 +194,14 @@ To review the history of this feature in the Chromium open-source project, navig
 
 To set a shortcut for an action in the DevTools, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments**  and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, navigate to [Enable keyboard shortcut editor Experimental feature][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #174309][CR174309].  
 
-[Since Microsoft Edge version 87, you may customize keyboard shortcuts for any action in DevTools][DevtoolsWhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings].  In Microsoft Edge Version 88, you may now create multi-press keyboard shortcuts, or chords.  To customize a multi-press keyboard shortcut, navigate to **Settings** > **Shortcuts**, hover on a command, and choose the **Edit** button \(pen icon\).  To review the history of this feature in the Chromium open-source project, navigate to Issue [174309][CR174309].  
+[Since Microsoft Edge version 87][WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings], you may customize keyboard shortcuts for any action in DevTools.  In Microsoft Edge Version 88, you may now create multi-press keyboard shortcuts, or chords.  To customize a multi-press keyboard shortcut, navigate to **Settings** > **Shortcuts**, hover on a command, and choose the **Edit** button \(pen icon\).  To review the history of this feature in the Chromium open-source project, navigate to Issue [174309][CR174309].  
 
 <!--  > [!NOTE]
 > To turn on the experiment, choose **Settings** > **Experiments** and turn on the **Enable keyboard shortcut editor** checkbox.  -->  
 
 <!--todo:  need to capture a new figure  -->  
-:::image type="complex" source="../../media/2020/11/keyboard-shortcuts.msft.png" alt-text="Chords keyboard shortcuts" lightbox="../../media/2020/11/keyboard-shortcuts.msft.png":::
-   Chords keyboard shortcuts  
+:::image type="complex" source="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png" alt-text="Chords keyboard shortcuts" lightbox="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png":::
+   Multi-press keyboard shortcuts  
 :::image-end:::  
 
 ## Announcements from the Chromium project  
@@ -201,14 +216,11 @@ DevTools now have better support for CSS angle debugging.  When an HTML element 
 
 The following CSS angle is used for the example.  
 
-<!--- demo:  https://codepen.io/zoherghadyali/full/XWKwxBy  -->  
-
 ```css
 background: linear-gradient(100deg, lightblue, pink);
 ```  
 
-<!--todo:  need to capture a new figure  -->  
-:::image type="complex" source="../../media/2020/11/angle.msft.png" alt-text="CSS angle" lightbox="../../media/2020/11/angle.msft.png":::
+:::image type="complex" source="../../media/2020/11/css-angle.msft.png" alt-text="CSS angle" lightbox="../../media/2020/11/css-angle.msft.png":::
    CSS angle  
 :::image-end:::  
 
@@ -300,7 +312,6 @@ To review the history of this feature in the Chromium open-source project, navig
 
 Use this feature to review the value of a WebAssembly \(Wasm\) variable when your code is paused.  To display the current value of a variable, hover on a variable.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [1058836][CR1058836] and [1071432][CR1071432].  
 
-<!--todo:  need to capture a new figure  -->  
 :::image type="complex" source="../../media/2020/11/wasm-mouseover.msft.png" alt-text="Preview Wasm variable on mouseover" lightbox="../../media/2020/11/wasm-mouseover.msft.png":::
    Preview Wasm variable on mouseover  
 :::image-end:::  
@@ -331,11 +342,12 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
 [WebDriverChromiumMain]: /microsoft-edge/webdriver-chromium "Use WebDriver (Chromium) for test automation | Microsoft Docs"  
 
-[DevtoolsWhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools#customize-keyboard-shortcuts-in-settings "Customize keyboard shortcuts in Settings - What's New In DevTools (Microsoft Edge 87) | Microsoft Docs"  
-
 <!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: /microsoft-edge/devtools-guide-chromium/css/reference#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->  
 
-[ProgressiveWebAppsChromiumIndex]: https://docs.microsoft.com/microsoft-edge/progressive-web-apps-chromium/index "Progressive Web Apps on Windows | Microsoft Docs"  
+[ProgressiveWebAppsChromiumIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Progressive Web Apps on Windows | Microsoft Docs"  
+
+[WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools#customize-keyboard-shortcuts-in-settings "Customize keyboard shortcuts in Settings - What's New In DevTools (Microsoft Edge 87) | Microsoft Docs"  
+[WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#webhint-feedback-in-the-issues-panel "webhint feedback in the Issues panel - What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"  
 
 [MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "Download WebDriver | Microsoft Developer"  
 
@@ -375,6 +387,12 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [MdnWindoworworkerglobalscopeCrossoriginisolated]: https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated "WindowOrWorkerGlobalScope.crossOriginIsolated | MDN"  
 
 [WebhintMain]: https://webhint.io "webhint"  
+[WebhintUserGuideHintsAccessibility]: https://webhint.io/docs/user-guide/hints/accessibility "Accessibility | webhint"  
+[WebhintUserGuideHintsCompatibility]: https://webhint.io/docs/user-guide/hints/compatibility "Compatibility | webhint"  
+[WebhintUserGuideHintsPerformance]: https://webhint.io/docs/user-guide/hints/performance "Performance | webhint"  
+[WebhintUserGuideHintsPitfalls]: https://webhint.io/docs/user-guide/hints/pitfalls "Pitfalls | webhint"  
+[WebhintUserGuideHintsPwa]: https://webhint.io/docs/user-guide/hints/pwa "PWA | webhint"  
+[WebhintUserGuideHintsSecurity]: https://webhint.io/docs/user-guide/hints/security "Security | webhint"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
