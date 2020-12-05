@@ -21,7 +21,7 @@ Thank you for your interest in Microsoft Edge.  The following article summarizes
 | [DevTools Protocol overview][DevtoolsProtocolChromiumMain] \(recommended\) | Update to the Microsoft Edge DevTools Protocol. |  
 | [Extensions overview][ExtensionsChromiumIndex] \(recommended\) | The overview for the Microsoft Edge \(Chromium\) Extensions. Build and publish browser extensions in general. |  
 | [Progressive Web Apps overview][ProgressiveWebAppsChromiumIndex] \(recommended\) | Progressive Web Apps \(Chromium\) run natively on Windows 10.  Everything you need to know as a web developer. |  
-| [New Microsoft Edge WebView2 overview][Webview2Index] \(recommended\) | Host web content in your Win32, .NET, and UWP apps with the Microsoft Edge WebView2 control. |  
+| [WebView2 overview][Webview2Index] \(recommended\) | Host web content in your Win32, .NET, and UWP apps with the Microsoft Edge WebView2 control. |  
 | [Interoperability (Site compatibility)][WebPlatformSiteImpactingChanges] \(recommended\) | Provides a summary of high-impact changes that may impact site compatibility. |  
 | [WebDriver][WebdriverChromiumIndex] \(recommended\) | Learn how to test your website or app in Microsoft Edge or automate the browser with WebDriver. |  
 
