@@ -26,9 +26,9 @@ landingContent:
         links:
           - text: DevTools overview (recommended)
             url: /microsoft-edge/devtools-guide-chromium
-          - text: Developer guide (not recommended)
+          - text: Developer guide (Legacy - not recommended)
             url: ./dev-guide/index.md
-          - text: Developer Tools overview (not recommended)
+          - text: Developer Tools overview (Legacy - not recommended)
             url: ./devtools-guide/index.md
 
   - title: Developer Tools Protocol
@@ -37,7 +37,7 @@ landingContent:
         links:
           - text: DevTools Protocol overview (recommended)
             url: /microsoft-edge/devtools-protocol-chromium
-          - text: Developer Tools Protocol overview (not recommended)
+          - text: Developer Tools Protocol overview (Legacy - not recommended)
             url: ./devtools-protocol/index.md
 
   # Card
@@ -47,7 +47,7 @@ landingContent:
         links:
           - text: Extensions overview (recommended)
             url: /microsoft-edge/extensions-chromium/index
-          - text: Extensions overview (not recommended)
+          - text: Extensions overview (Legacy - not recommended)
             url: ./extensions/index.md
 
   # Card
@@ -57,7 +57,7 @@ landingContent:
         links:
           - text: Progressive Web Apps overview (recommended)
             url: /microsoft-edge/progressive-web-apps-chromium/index
-          - text: Progressive Web Apps overview (not recommended)
+          - text: Progressive Web Apps overview (Legacy - not recommended)
             url: ./progressive-web-apps/index.md
 
   # Card
@@ -67,7 +67,7 @@ landingContent:
         links:
           - text: WebView2 overview (recommended)
             url: /microsoft-edge/webview2/index
-          - text: WebView overview (not recommended)
+          - text: WebView overview (Legacy - not recommended)
             url: ./hosting/webview/index.md
 
   # Card
@@ -77,7 +77,7 @@ landingContent:
         links:
           - text: Site compatibility (recommended)
             url: /microsoft-edge/web-platform/site-impacting-changes
-          - text: Performance Analysis overview (not recommended)
+          - text: Performance Analysis overview (Legacy - not recommended)
             url: ./performance-analysis/index.md
 
   # Card
@@ -87,11 +87,11 @@ landingContent:
         links:
           - text: WebDriver overview (recommended)
             url: /microsoft-edge/webdriver-chromium/index
-          - text: WebDriver overview (not recommended)
+          - text: WebDriver overview (Legacy - not recommended)
             url: ./webdriver/index.md
-          - text: JavaScript runtime hosting overview (not recommended)
+          - text: JavaScript runtime hosting overview (Legacy - not recommended)
             url: ./hosting/javascript-runtime-hosting.md
-          - text: WebVR (not recommended)
+          - text: WebVR (Legacy - not recommended)
             url: /microsoft-edge/webvr/index
-          - text: Windows Runtime (WinRT) overview (not recommended)
+          - text: Windows Runtime (WinRT) overview (Legacy - not recommended)
             url: ./windows-runtime/index.md
