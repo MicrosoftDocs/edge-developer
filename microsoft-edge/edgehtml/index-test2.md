@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Legacy Microsoft Edge documentation  
 
-Thank you for your interest in Microsoft Edge.  The following article summarizes legacy content, which is no longer being updated.  The new Microsoft Edge content replaces the legacy content and is marked as recommended for each card.  
+Thank you for your interest in Microsoft Edge.  The following article summarizes legacy content, which is no longer being updated.  The new Microsoft Edge content replaces the legacy content and is marked as recommended in the following tables.  
 
 ## New Microsoft Edge documentation  
 
