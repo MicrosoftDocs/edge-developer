@@ -3,7 +3,7 @@ description: Legacy Microsoft Edge documentation.  Content for Microsoft Edge (e
 title: Legacy Microsoft Edge documentation
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/02/2020
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -70,7 +70,7 @@ Thank you for your interest in Microsoft Edge.  The following article summarizes
 
 | Feature | Details |  
 |:--- |:--- |  
-| [developer guide][EdgehtmlDevGuideIndex] \(not recommended\) | This article provides an overview of the developer features and standards included in Microsoft Edge. |  
+| [Developer guide][EdgehtmlDevGuideIndex] \(not recommended\) | This article provides an overview of the developer features and standards included in Microsoft Edge. |  
 | [Developer Tools overview][EdgehtmlDevtoolsGuideIndex] \(not recommended\) | Get to know the Microsoft Edge \(EdgeHTML\) Developer Tools. |  
 | [Developer Tools Protocol overview][EdgehtmlDevtoolsProtocolIndex] \(not recommended\) | Use the Microsoft Edge DevTools Protocol to inspect and debug the Microsoft Edge \(EdgeHTML\) browser. |  
 | [Extensions overview][EdgehtmlExtensionsIndex] \(not recommended\) | Learn how to develop Microsoft Edge extensions.  These small programs are used to add new features to Microsoft Edge or modify existing functionality. |  

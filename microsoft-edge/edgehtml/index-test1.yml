@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 12/02/2020
+  ms.date: 12/04/2020
 
 # linkListType: architecture | concept | deploy | download | 
 #               get-started | how-to-guide | learn | overview | 
@@ -46,7 +46,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Extensions overview (recommended)
-            url: /microsoft-edge/microsoft-edge/extensions-chromium/index
+            url: /microsoft-edge/extensions-chromium/index
           - text: Extensions overview (not recommended)
             url: ./extensions/index.md
 
