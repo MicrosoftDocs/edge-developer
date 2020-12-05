@@ -3,7 +3,7 @@ description: Use Playwright to automate and test in Microsoft Edge
 title: Playwright
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/06/2020
+ms.date: 11/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -103,11 +103,11 @@ For more information about Playwright, navigate to the [Playwright website][Play
 
 [ChromiumHome]: https://www.chromium.org/Home "Chromium | The Chromium Projects"  
 
-[FirefoxMain]: https://www.mozilla.org/firefox "Mozilla Firefox"
+[FirefoxMain]: https://www.mozilla.org/firefox "Mozilla Firefox"  
 
 [NodejsMain]: https://nodejs.org "Node.js"  
 
-[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "edge-paths | npm"
+[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "edge-paths | npm"  
 
 [PlaywrightMain]: https://playwright.dev "Playwright"  
 [PlaywrightAPIReference]: https://playwright.dev#?path=docs/api.md "Playwright API Reference"  
@@ -117,6 +117,6 @@ For more information about Playwright, navigate to the [Playwright website][Play
 [PlaywrightRepo]: https://github.com/microsoft/playwright "Playwright | GitHub"  
 [PlaywrightRepoNewIssue]: https://github.com/microsoft/playwright/issues/new/choose "New issue in Playwright repo | GitHub"  
 
-[WebKitMain]: https://webkit.org "WebKit"
+[WebKitMain]: https://webkit.org "WebKit"  
 
 [WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "Headless browser | Wikipedia"  
