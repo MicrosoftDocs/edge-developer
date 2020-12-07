@@ -84,6 +84,8 @@
           href: devtools-guide-chromium/ie-mode.md
         - name: 3D view
           href: devtools-guide-chromium/3d-view/index.md
+        - name: Service workers
+          href: devtools-guide-chromium/service-workers/index.md
         - name: DevTools for beginners
           items: 
             - name: HTML and the DOM
@@ -180,6 +182,8 @@
               href: devtools-guide-chromium/javascript/reference.md
             - name: Snippets
               href: devtools-guide-chromium/javascript/snippets.md
+            - name: Overrides
+              href: devtools-guide-chromium/javascript/overrides.md
             - name: Sources panel overview
               href: devtools-guide-chromium/sources.md
             - name: Debug background services
@@ -504,6 +508,8 @@
               href: progressive-web-apps-edgehtml/xbox-considerations.md
         - name: PWAs in the Microsoft Store
           href: progressive-web-apps-edgehtml/microsoft-store.md
+    - name: Playwright
+      href: playwright/index.md
     - name: Puppeteer
       href: puppeteer.md
     - name: Visual Studio
@@ -518,13 +524,19 @@
         - name: webhint
           href: visual-studio-code/webhint.md
     - name: WebDriver (Chromium)
-      href: webdriver-chromium.md
+      items:
+        - name: Getting started
+          href: webdriver-chromium/index.md
+        - name: Capabilities & EdgeOptions
+          href: webdriver-chromium/capabilities-edge-options.md
     - name: WebDriver (EdgeHTML)
       href: webdriver.md
     - name: Web platform (Chromium)
       items: 
         - name: Site compatibility-impacting changes coming to Microsoft Edge
           href: web-platform/site-impacting-changes.md
+        - name: Moving users to Microsoft Edge from IE
+          href: web-platform/ie-to-microsoft-edge-redirection.md
         - name: Tracking prevention in Microsoft Edge
           href: web-platform/tracking-prevention.md
         - name: Microsoft Edge user agent string
