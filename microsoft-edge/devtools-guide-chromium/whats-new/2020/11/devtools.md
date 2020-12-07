@@ -3,7 +3,7 @@ description: New CSS angle visualization tools, emulate unsupported image types 
 title: What's new in DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/04/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -94,8 +94,6 @@ Request routing displays the `startup` and `fetch` events based on the network r
 
 ### Application tool  
 
-*   Explore the runtime details associated with service workers and related fetch events.  
-    
 <!-- Title: Open Network tool from the Service Workers pane  -->  
 <!-- Subtitle: Display additional context when debugging a service worker.  -->  
 
@@ -122,27 +120,30 @@ View all service worker request routing information with the new **Network reque
     
 ### Network tool  
 
-Debug network requests that run through service workers.  You may also open the context from the **Application** tool.  
+Debug network requests that run through service workers.  You may also open network requests from the **Application** tool.  For each request, Devtools display the following information in **Timing** pane.  
 
-*   Debug based upon service worker timelines.  
-    *   The start of a request and duration of the bootstrap.  
-    *   Update to service worker registration.  
-    *   The runtime of a request using the fetch event handler.  
-    *   The runtime of all fetch events for loading a client.  
-        
+*   The start of a request and duration of the bootstrap.  
+*   Changes to service worker registration.  
+*   The runtime of a `fetch` event handler.  
+*   The runtime of all `fetch` events for loading a client.  
+    
+:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Timing pane" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
+   **Timing** pane  
+:::image-end:::  
+
 ### Sources tool  
 
-*   Step into and out of fetch event handler with page script information.  
-    
-    :::row:::
-       :::column span="":::
-          :::image type="complex" source="../../media/2020/11/service-worker-sources-set-breakpoint.msft.png" alt-text="Set a breakpoint" lightbox="../../media/2020/11/service-worker-sources-set-breakpoint.msft.png":::
-             Set a breakpoint  
+Step into and out of `fetch` event handler with page script information.  In Microsoft Edge version 88, you may search the call stack for the page that originated the request that run through the service worker.  
+
+:::row:::
+   :::column span="":::
+          :::image type="complex" source="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png" alt-text="Behavior in previous versions" lightbox="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png":::
+             Behavior in previous versions  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png" alt-text="Review a breakpoint" lightbox="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png":::
-             Review a breakpoint  
+          :::image type="complex" source="../../media/2020/11/service-worker-sources-call-stack-target.msft.png" alt-text="Behavior in version 88" lightbox="../../media/2020/11/service-worker-sources-call-stack-target.msft.png":::
+             Behavior in version 88  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
@@ -192,14 +193,8 @@ To review the history of this feature in the Chromium open-source project, navig
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-To set a shortcut for an action in the DevTools, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments**  and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, navigate to [Enable keyboard shortcut editor Experimental feature][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #174309][CR174309].  
+[Since Microsoft Edge version 87][WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings], you may customize keyboard shortcuts for any action in DevTools.  In Microsoft Edge version 88, you may now create multi-press keyboard shortcuts.  To set a shortcut for an action in the DevTools, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments**  and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, navigate to [Enable keyboard shortcut editor Experimental feature][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #174309][CR174309].  
 
-[Since Microsoft Edge version 87][WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings], you may customize keyboard shortcuts for any action in DevTools.  In Microsoft Edge Version 88, you may now create multi-press keyboard shortcuts, or chords.  To customize a multi-press keyboard shortcut, navigate to **Settings** > **Shortcuts**, hover on a command, and choose the **Edit** button \(pen icon\).  To review the history of this feature in the Chromium open-source project, navigate to Issue [174309][CR174309].  
-
-<!--  > [!NOTE]
-> To turn on the experiment, choose **Settings** > **Experiments** and turn on the **Enable keyboard shortcut editor** checkbox.  -->  
-
-<!--todo:  need to capture a new figure  -->  
 :::image type="complex" source="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png" alt-text="Chords keyboard shortcuts" lightbox="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png":::
    Multi-press keyboard shortcuts  
 :::image-end:::  
@@ -259,7 +254,7 @@ The cross-origin isolated status is now displayed under the **Security & Isolati
 
 #### New Web Workers information in the Frame details view  
 
-DevTools now organizes web workers under the relevant parent frame.  For example, if the `someName` frame creates `dedicatedWorker.js`, then `dedicatedWorker.js` appears under `someName` in the **Frames** list.  To view the details of the web worker, complete the following actions.  
+DevTools now organizes web workers under the relevant parent frame.  For example, if the `someName` frame creates `worker.js`, then `worker.js` appears under `someName` in the **Frames** list.  To view the details of the web worker, complete the following actions.  
 
 1.  Open **Application** tool.  
 1.  Expand a frame that contains web workers.  
@@ -268,13 +263,13 @@ DevTools now organizes web workers under the relevant parent frame.  For example
     
 To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [1122507][CR1122507] and [1051466][CR1051466].  
 
-:::image type="complex" source="../../media/2020/11/frame-worker.msft.png" alt-text="Web workers information" lightbox="../../media/2020/11/frame-worker.msft.png":::
+:::image type="complex" source="../../media/2020/11/application-frames-service-workers.msft.png" alt-text="Web workers information" lightbox="../../media/2020/11/application-frames-service-workers.msft.png":::
    Web workers information  
 :::image-end:::  
 
 #### Display opener frame details for opened windows  
 
-DevTools now organizes opened [Windows][MdnWindowConstructors] under the relevant parent [frame][MdnWindowFrames]. For example, if the `top` frame opens a `Window` to `https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium`, then the `Window` appears under `top` in the **Frames** list.  
+DevTools now organizes opened [Windows][MdnWindowConstructors] under the relevant parent [frame][MdnWindowFrames].  For example, if the `top` frame opens a `Window` to `https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium`, then the `Window` appears under `top` in the **Frames** list.  
 
 To reveal the frame responsible for opening another Window in the **Elements** tool, complete the following actions.  
 
@@ -290,9 +285,8 @@ The details are displayed about which frame caused the opening of another `Windo
     
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1107766][CR1107766].  
 
-<!--todo:  need to capture a new figure  -->  
-:::image type="complex" source="../../media/2020/11/frame-opener.msft.png" alt-text="Opener frame details" lightbox="../../media/2020/11/frame-opener.msft.png":::
-   Opener frame details  
+:::image type="complex" source="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png" alt-text="Opened frame details" lightbox="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png":::
+   Opened frame details  
 :::image-end:::  
 
 ### Copy stacktrace for network initiator  
