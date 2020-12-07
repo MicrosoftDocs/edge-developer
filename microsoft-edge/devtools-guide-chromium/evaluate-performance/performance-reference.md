@@ -1,8 +1,9 @@
 ---
+description: The timeline events mode displays all events triggered while making a recording.  Use the timeline event reference to learn more about each timeline event type.
 title: Timeline Event Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/29/2020
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,14 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# Timeline Event Reference   
-
-
-
+# Timeline Event Reference  
 
 The timeline events mode displays all events triggered while making a recording.  Use the timeline event reference to learn more about each timeline event type.  
 
@@ -142,11 +136,9 @@ This section lists events that belong to Painting category and their properties.
 | Location | For Paint events, the x and y coordinates of the paint rectangle. |  
 | Dimensions | For Paint events, the height and width of the painted region. |  
 
- 
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
-
-<!-- image links -->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->
 

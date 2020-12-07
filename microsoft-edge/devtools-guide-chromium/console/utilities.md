@@ -1,11 +1,12 @@
 ---
-title:  Console Utilities API Reference
-author:  MSEdgeTeam
-ms.author:  msedgedevrel
-ms.date: 06/10/2020
-ms.topic:  article
-ms.prod:  microsoft-edge
-keywords:  microsoft edge, web development, f12 tools, devtools
+description: A reference of convenience commands available in the Microsoft Edge DevTools Console.
+title: Console Utilities API Reference
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 10/19/2020 
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: microsoft edge, web development, f12 tools, devtools
 ---
 <!-- Copyright Kayce Basques 
 
@@ -116,7 +117,7 @@ In the following figure, a reference to the first `<img>` element in the documen
    Figure 5:  The `$('img')`  
 :::image-end:::  
 
-Hover on the returned result, open the contextual menu \(right-click\), and select **Reveal in Elements Panel** to find it in the DOM or **Scroll in to View** to show it on the page.  
+Hover on the returned result, open the contextual menu \(right-click\), and choose **Reveal in Elements Panel** to find it in the DOM or **Scroll in to View** to show it on the page.  
 
 In the following figure, a reference to the currently selected element is returned and the src property is displayed.  
 
@@ -172,7 +173,7 @@ for (each in images) {
 :::image-end:::  
 
 > [!NOTE]
-> Press `Shift`+`Enter` in the console to start a new line without running the script.  
+> Select `Shift`+`Enter` in the console to start a new line without running the script.  
 
 ## XPath  
 
@@ -253,7 +254,7 @@ debug("debug");
 
 Use `undebug(method)` to stop breaking on the method, or use the UI to disable all breakpoints.  
 
-For more information on breakpoints, see [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints].  
+For more information on breakpoints, navigate to [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints].  
 
 ## dir  
 
@@ -274,7 +275,7 @@ dir(document.head);
    Figure 14:  Logging `document.head` with `dir()` method  
 :::image-end:::  
 
-For more information, see the [`console.dir()`][DevToolsConsoleApiConsoleDirObject] entry in the Console API.  
+For more information, navigate to [`console.dir()`][DevToolsConsoleApiConsoleDirObject] entry in the Console API.  
 
 ## dirxml  
 
@@ -343,7 +344,7 @@ Returns an array containing the names of the properties belonging to the specifi
 For example, suppose your application defined the following object.  
 
 ```console
-var player1 = { "name":  "Ted", "level": 42 }
+var player1 =   
 ```  
 
 In the following code samples and figure, the result assumes `player1` was defined in the global namespace \(for simplicity\) prior to typing `keys(player1)` and `values(player1)` in the console.  
@@ -599,6 +600,10 @@ Returns an array containing the values of all properties belonging to the specif
 ```console
 values(object);
 ```  
+
+## Getting in touch with the Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 

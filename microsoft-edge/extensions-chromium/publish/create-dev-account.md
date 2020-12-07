@@ -3,9 +3,9 @@ description: Learn how to register to a developer account to publish extensions 
 title: Register as a Microsoft Edge extension developer to publish extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/15/2020
+ms.date: 09/15/2020
 ms.topic: conceptual
-ms.prod: microsoft-edge-chromium
+ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
 ---
 

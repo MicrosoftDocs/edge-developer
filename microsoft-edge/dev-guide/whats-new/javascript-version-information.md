@@ -1,7 +1,7 @@
 ---
-title: JavaScript Version Information
+title: JavaScript version information
 description: Compare JavaScript support across Microsoft Edge, Microsoft Store apps, and Internet Explorer
-ms.date: 03/05/2020
+ms.date: 07/28/2020
 ms.prod: microsoft-edge
 ms.topic: language-reference
 author: MSEdgeTeam
@@ -9,16 +9,18 @@ ms.author: msedgedevrel
 keywords: edge, ie, chakra, jscript, wwa, store apps
 ms.custom: seodec18
 ---
-# JavaScript Version Information  
+# JavaScript version information  
 
-JavaScript support varies across Microsoft Edge, Microsoft Store apps, and different document modes of Internet Explorer. For more information about IE document code versioning, see [*Defining Document Compatibility*](https://go.microsoft.com/fwlink/p/?LinkId=208537).  
+[!INCLUDE [deprecation-note](../../includes/legacy-edge-note.md)]  
+
+JavaScript support varies across Microsoft Edge, Microsoft Store apps, and different document modes of Internet Explorer \(IE\). For more information about IE document code versioning, see [Defining Document Compatibility](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)).  
 
 The following table summarizes the JavaScript support across Internet Explorer, Microsoft Edge, and Microsoft Store apps.  
   
 > [!IMPORTANT]
-> Experimental features \(enabled from *about:flags*\) are indicated by "Exp." In some cases, *Store apps* support varies between Windows 8 \(v8\) and Windows 10 \(v10\) apps, and Windows desktop \(Win\) and Windows Phone \(Phone\), as indicated.  
+> Experimental features \(enabled from `about:flags`\) are indicated by `Exp.` In some cases, Store apps support varies between Windows 8 \(v8\) and Windows 10 \(v10\) apps, and Windows desktop \(Win\) and Windows Phone \(Phone\), as indicated.  
   
- | Language element | Quirks, Internet Explorer 6 Standards, Internet Explorer 7 Standards | Internet Explorer 8 Standards | Internet Explorer 9 Standards | Internet Explorer 10 Standards | Internet Explorer 11 Standards | Microsoft Edge | Store apps |  
+ | Language element | Quirks, IE 6 Standards, IE 7 Standards | IE 8 Standards | IE 9 Standards | IE 10 Standards | IE 11 Standards | Microsoft Edge | Store apps |  
  |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |  
 | [__proto\_\_ Property (Object)](/scripting/javascript/reference/proto-property-object-javascript) | N | N | N | N | Y | Y | v8 (Win): N <br /> v8.1 (Win): Y <br /> v8.1 (Phone): Y |  
 | [$1...$9 Properties (RegExp)](/scripting/javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript) | Y | Y | Y | Y | Y | Y | Y |  
