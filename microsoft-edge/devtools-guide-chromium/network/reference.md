@@ -3,7 +3,7 @@ description: A comprehensive reference of Microsoft Edge DevTools Network panel 
 title: Network Analysis reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/23/2020 
+ms.date: 12/07/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -25,11 +25,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 # Network Analysis reference  
 
 Discover new ways to analyze how your page loads in this comprehensive reference of Microsoft Edge DevTools network analysis features.  
-
-<!--
-> [!NOTE]
-> This reference is based on Microsoft Edge 58.  If you use another version of Microsoft Edge, the UI, and features of DevTools may be different.  To verify which version of Microsoft Edge you are running, navigate to `edge://help`.  
--->
 
 ## Record network requests  
 
@@ -818,7 +813,17 @@ Once you save a HAR file, you may import it back into DevTools for analysis.  Ju
 
 Under the **Name** column of the Requests table, hover on a request, open the contextual menu \(right-click\), hover on **Copy**, and choose one of the following options.  
 
-<!--- todo: format into table-->
+| Name | Details |  
+|:--- |:--- |  
+| **Copy Link Address** | Copy the URL of the request to the clipboard. |  
+| **Copy Response** | Copy the response body to the clipboard. |  
+| **Copy as Fetch** | &nbsp; |  
+| **Copy as cURL** | Copy the request as a cURL command. |  
+| **Copy All as Fetch** | &nbsp; |  
+| **Copy All as cURL** | Copy all requests as a chain of cURL commands. |  
+| **Copy All as HAR** | Copy all requests as HAR data. |  
+
+<!--
 :::row:::
    :::column span="1":::
       **Copy Link Address**  
@@ -875,12 +880,13 @@ Under the **Name** column of the Requests table, hover on a request, open the co
       Copy all requests as HAR data.  
    :::column-end:::
 :::row-end:::  
+-->  
 
 :::image type="complex" source="../media/network-network-requests-copy-response.msft.png" alt-text="Choose Copy Response" lightbox="../media/network-network-requests-copy-response.msft.png":::
    Choose **Copy Response**  
 :::image-end:::  
 
-### Copy formatted response JSON to the clipboard   
+### Copy formatted response JSON to the clipboard  
 
 Choose a network request and navigate to the **Headers** pane.  To copy the JSON value of a response, hover on the response content, open the contextual menu \(right-click\), and choose **Copy Value**.  
 
@@ -893,7 +899,7 @@ Choose a network request and navigate to the **Headers** pane.  To copy the JSON
    :::column span="":::
         :::image type="complex" source="../media/header-copy-value-paste-vscode.msft.png" alt-text="Visual Studio Code with formatted response JSON" lightbox="../media/header-copy-value.msft.png":::
           Pasting formatted response JSON in Visual Studio Code  
-        :::image-end:::    
+        :::image-end:::  
    :::column-end:::
 :::row-end:::  
 

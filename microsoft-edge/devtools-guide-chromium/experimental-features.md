@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/23/2020 
+ms.date: 12/07/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -269,8 +269,6 @@ You may now visualize Layers alongside z-indexes and the Document Object Model \
 
 <!--Available in Microsoft Edge version 87 and later.  -->  
 
-<!--Available in Microsoft Edge version 88 and later.  -->  
-    
 ## Previous experimental features  
 
 *   [3D View][Devtools3dViewIndex] is now available and turned on by default in Microsoft Edge version 83 or later.  
