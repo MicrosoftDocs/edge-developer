@@ -1,9 +1,9 @@
 ---
-description: New CSS angle visualization tools, emulate unsupported image types and storage quota, new Web Vitals lane, and more.
+description: Microsoft Edge on Linux, improved webhint tips in the Issues tool, new service worker debugging features, and more.
 title: What's new in DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/07/2020
+ms.date: 12/08/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,8 +22,8 @@ Microsoft Edge Dev is now supported on Ubuntu, Debian, Fedora, and openSUSE dist
 
 If you are using a Linux environment in your continuous integration and delivery \(CI/CD\) solutions, Microsoft Edge Driver is also available on Linux.  To get started automating Microsoft Edge Dev with Microsoft Edge Driver, navigate to [Microsoft Edge Driver Downloads page][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads].  For help with automating Microsoft Edge Dev along with Microsoft Edge Driver, navigate to [Use WebDriver (Chromium) for test automation][WebDriverChromiumMain].  
 
-:::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="Microsoft Edge on Linux" lightbox="../../media/2020/11/edge-on-linux.msft.png":::
-   Microsoft Edge on Linux  
+:::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="Display Devtools in Microsoft Edge on Linux" lightbox="../../media/2020/11/edge-on-linux.msft.png":::
+   Display Devtools in Microsoft Edge on Linux  
 :::image-end:::  
 
 ## Improved webhint and platform tips in the Issues tool  
@@ -31,10 +31,10 @@ If you are using a Linux environment in your continuous integration and delivery
 <!-- Title: Improvements to Issues tool and webhint integration  -->  
 <!-- Subtitle: Categories and third-party filtering make it easier to survey issues in the Issues tool.  Issues surfaced by webhint now have improved code snippets and documentation links to help you fix problems in your website.  -->  
 
-[webhint][WebhintMain] is an open-source tool that provides real-time feedback for websites and local webpages.  Starting with [Microsoft Edge version 85][WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel], review [webhint][WebhintMain] feedback in the [Issues][DevtoolsIssuesIndex] tool.  Issues that appear in the **Issues** tool are now easier to review with the addition of the following categories.  
+[webhint][WebhintMain] is an open-source tool that provides real-time feedback for websites and local webpages.  Starting with [Microsoft Edge version 85][WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel], review webhint feedback in the [Issues][DevtoolsIssuesIndex] tool.  Issues that appear in the **Issues** tool are now easier to review with the addition of the following categories.  
 
 *   [Accessibility][WebhintUserGuideHintsAccessibility]  
-*   [Compatibility][WebhintUserGuideHintsAccessibility]  
+*   [Compatibility][WebhintUserGuideHintsCompatibility]  
 *   [Performance][WebhintUserGuideHintsPerformance]  
 *   [Pitfalls][WebhintUserGuideHintsPitfalls]  
 *   [PWA][WebhintUserGuideHintsPwa]  
@@ -57,19 +57,22 @@ You are now able to filter out third-party issues using a new checkbox.  The fil
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-You may now visualize Layers alongside z-index values and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  For a comprehensive visual debugging experience, the [3D View and Composited Layers are now combined][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView].  
+You may now visualize **Layers** content alongside z-index values and the Document Object Model \(DOM\).  This feature helps you debug without switching between the [3D view][Devtools3dViewIndex] and **Layers** tools as often.  For a comprehensive visual debugging experience, the [3D View and Composited Layers are now combined][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView].  
 
 :::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Composited Layers pane" lightbox="../../media/2020/11/experiments-layers.msft.png":::
    **Composited Layers** pane  
 :::image-end:::  
 
-## Quickly view CSS variable definitions in Styles pane  
+## CSS variable definitions in Styles pane  
 
 <!-- Title: Jump to CSS variable definitions  -->  
 <!-- Subtitle: Choose any CSS variable to navigate directly to the definition in the Styles tool. -->  
 
-In the **Styles** pane, [CSS variables][MdnUsingCssCustomProperties] now link directly to each definition.  Choose the variable to easily view or change the CSS variable definition.  
+In the **Styles** pane, [CSS variables][MdnUsingCssCustomProperties] now link directly to each definition.  Choose the variable to easily view or change the CSS variable definition.  In the example, DevTools displays the CSS attributes for the `body` element.  To display the variable definition for the `--theme-body-background` CSS variable, complete the following actions.  
 
+1.  In the **Styles** pane, choose `var(--theme-body-background)`.  
+1.  The **Styles** pane now displays the definition of the `--theme-body-background` CSS variable.  
+    
 :::row:::
    :::column span="":::
       :::image type="complex" source="../../media/2020/11/css-variable-support.msft.png" alt-text="CSS variable linked to the style" lightbox="../../media/2020/11/css-variable-support.msft.png":::
@@ -120,7 +123,7 @@ View all service worker request routing information with the new **Network reque
     
 ### Network tool  
 
-Debug network requests that run through service workers.  You may also open network requests from the **Application** tool.  For each request, DevTools display the following information in [Timing][DevtoolsNetworkReferenceViewTimingBreakdownRequest] pane.  
+Debug network requests that run through service workers.  You may also open network requests from the **Application** tool.  For each request, DevTools display the following information in the [Timing][DevtoolsNetworkReferenceViewTimingBreakdownRequest] pane.  
 
 *   The start of a request and duration of the bootstrap.  
 *   Changes to service worker registration.  
@@ -156,7 +159,7 @@ In previous versions of Microsoft Edge, when you debugged JavaScript in your ser
 In the **Network** tool, copy the property value of a network request using the new **Copy value** option.  The property value is copied as a decoded JSON value.  In previous versions of Microsoft Edge, you had to copy a value using one of the following actions.  
 
 *   Highlight the entire text and copy it.  
-*   Store the value as global variable, as applicable, and copy it from console.  
+*   Store the value as global variable, as applicable, and copy it from the DevTools [Console][DevtoolsConsoleIndex].  
     
 To copy the property value to your clipboard, complete the following actions.  
 
@@ -294,7 +297,7 @@ To review the history of this feature in the Chromium open-source project, navig
 To copy the stacktrace to your clipboard, complete the following actions.  
 
 1.  Open the contextual menu \(right-click\).  
-1.  Choose **Copy stacktrace**.  
+1.  Choose **Copy** > **Copy stacktrace**.  
     
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1139615][CR1139615].
 
@@ -329,6 +332,8 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 <!-- links -->  
 
+[Devtools3dViewIndex]: /microsoft-edge/devtools-guide-chromium/3d-view/index "3D View | Microsoft Docs"  
+[DevtoolsConsoleIndex]: /microsoft-edge/devtools-guide-chromium/console/index "Console Overview | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  
