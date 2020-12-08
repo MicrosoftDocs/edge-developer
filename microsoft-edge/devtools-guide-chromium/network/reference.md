@@ -3,7 +3,7 @@ description: A comprehensive reference of Microsoft Edge DevTools Network panel 
 title: Network Analysis reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/07/2020 
+ms.date: 12/08/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -897,7 +897,7 @@ Choose a network request and navigate to the **Headers** pane.  To copy the JSON
         :::image-end:::  
    :::column-end:::
    :::column span="":::
-        :::image type="complex" source="../media/header-copy-value-paste-vscode.msft.png" alt-text="Visual Studio Code with formatted response JSON" lightbox="../media/header-copy-value.msft.png":::
+        :::image type="complex" source="../media/header-copy-value-paste-vscode.msft.png" alt-text="Visual Studio Code with formatted response JSON" lightbox="../media/header-copy-value-paste-vscode.msft.png":::
           Pasting formatted response JSON in Visual Studio Code  
         :::image-end:::  
    :::column-end:::
