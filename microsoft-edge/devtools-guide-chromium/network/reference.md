@@ -118,7 +118,7 @@ A new class of web apps, named [Progressive Web Apps][DevtoolsProgressiveWebApps
 
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
-CHoose the **Online** dropdown menu, search under **Presets**, and choose **Offline** to simulate an offline network experience.  
+Choose the **Online** dropdown menu, search under **Presets**, and choose **Offline** to simulate an offline network experience.  
 
 :::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="The Offline dropdown menu" lightbox="../media/network-network-offline-dropdown.msft.png":::
    The **Offline** dropdown menu  
@@ -888,7 +888,7 @@ Under the **Name** column of the Requests table, hover on a request, open the co
 
 ### Copy formatted response JSON to the clipboard  
 
-Choose a network request and navigate to the **Headers** pane.  To copy the JSON value of a response, hover on the response content, open the contextual menu \(right-click\), and choose **Copy Value**.  
+Choose a network request and navigate to the **Headers** pane.  To copy the JSON value of a response, navigate to **Request payload**, hover on the JSON response content, open the contextual menu \(right-click\), and choose **Copy Value**.  
 
 :::row:::
    :::column span="":::
@@ -903,6 +903,8 @@ Choose a network request and navigate to the **Headers** pane.  To copy the JSON
    :::column-end:::
 :::row-end:::  
 
+### Copy property values from network requests to your clipboard  
+
 To copy property values from network requests to your clipboard, complete the following actions.  
 
 1.  Open the **Headers** pane.  
@@ -912,9 +914,7 @@ To copy property values from network requests to your clipboard, complete the fo
     *   Query String Parameters  
     *   Request Headers  
     *   Response Headers  
-1.  Open the contextual menu \(right-click\).  
-1.  Choose **Copy value**.  
-1.  The value is copied.  Paste the value into any editor, such as Visual Studio Code, to review the copied values.  
+1.  Open the contextual menu \(right-click\) > **Copy value**.  You can now paste the value into any editor to review it.  
 
 ## Change the layout of the Network panel  
 
