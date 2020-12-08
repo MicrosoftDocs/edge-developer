@@ -48,7 +48,6 @@ The following sections describe the new experimental features that are available
 | [Source Order Viewer](#source-order-viewer) | 86 or later |  
 | [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor) | 87 or later |  
 | [Turn on Composited Layers in 3D View](#turn-on-composited-layers-in-3d-view) | 87 or later |  
-| [Copy response JSON in Network tool using the contextual menu](#copy-response-json-in-network-tool-using-the-contextual-menu) | 88 or later |  
 
 ### Emulation: Support dual screen mode  
 
@@ -269,22 +268,6 @@ You may now visualize Layers alongside z-indexes and the Document Object Model \
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 87 and later.  -->  
-
-### Copy response JSON in Network tool using the contextual menu  
-
-To copy response property values to your clipboard, complete the following actions.  
-
-1.  Open the **Network** tool.  
-1.  Choose the **Headers** pane.  
-1.  Open one of the following header sections.  
-    *   Request payload \(JSON\)  
-    *   Form Data  
-    *   Query String Parameters  
-    *   Request Headers  
-    *   Response Headers  
-1.  Open the contextual menu \(right-click\).  
-1.  Choose **Copy value**.  
-1.  The value is copied.  Paste the value into any editor, such as Visual Studio Code, to review the copied values.  
 
 <!--Available in Microsoft Edge version 88 and later.  -->  
     

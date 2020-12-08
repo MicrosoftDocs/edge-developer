@@ -818,6 +818,7 @@ Once you save a HAR file, you may import it back into DevTools for analysis.  Ju
 
 Under the **Name** column of the Requests table, hover on a request, open the contextual menu \(right-click\), hover on **Copy**, and choose one of the following options.  
 
+<!--- todo: format into table-->
 :::row:::
    :::column span="1":::
       **Copy Link Address**  
@@ -879,13 +880,35 @@ Under the **Name** column of the Requests table, hover on a request, open the co
    Choose **Copy Response**  
 :::image-end:::  
 
-### Copy Network header response  
+### Copy formatted response JSON to the clipboard   
 
-Choose a network request and navigate to the **Headers** pane.  To copy the JSOn value of a response, hover on the response content, open the contextual menu \(right-click\), and choose **Copy Value**.  
+Choose a network request and navigate to the **Headers** pane.  To copy the JSON value of a response, hover on the response content, open the contextual menu \(right-click\), and choose **Copy Value**.  
 
-:::image type="complex" source="../media/header-copy-value.msft.png" alt-text="Copy Value in contextual menu" lightbox="../media/header-copy-value.msft.png":::
-   **Copy Value** in contextual menu  
-:::image-end:::  
+:::row:::
+   :::column span="":::
+        :::image type="complex" source="../media/header-copy-value.msft.png" alt-text="Copy Value in contextual menu" lightbox="../media/header-copy-value.msft.png":::
+          **Copy Value** in contextual menu  
+        :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+        :::image type="complex" source="../media/header-copy-value-paste-vscode.msft.png" alt-text="Visual Studio Code with formatted response JSON" lightbox="../media/header-copy-value.msft.png":::
+          Pasting formatted response JSON in Visual Studio Code  
+        :::image-end:::    
+   :::column-end:::
+:::row-end:::  
+
+To copy property values from network requests to your clipboard, complete the following actions.  
+
+1.  Open the **Headers** pane.  
+1.  Open one of the following header sections.  
+    *   Request payload \(JSON\)  
+    *   Form Data  
+    *   Query String Parameters  
+    *   Request Headers  
+    *   Response Headers  
+1.  Open the contextual menu \(right-click\).  
+1.  Choose **Copy value**.  
+1.  The value is copied.  Paste the value into any editor, such as Visual Studio Code, to review the copied values.  
 
 ## Change the layout of the Network panel  
 
