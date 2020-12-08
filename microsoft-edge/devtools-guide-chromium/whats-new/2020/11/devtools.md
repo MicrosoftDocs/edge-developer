@@ -120,7 +120,7 @@ View all service worker request routing information with the new **Network reque
     
 ### Network tool  
 
-Debug network requests that run through service workers.  You may also open network requests from the **Application** tool.  For each request, Devtools display the following information in **Timing** pane.  
+Debug network requests that run through service workers.  You may also open network requests from the **Application** tool.  For each request, DevTools display the following information in [Timing][DevtoolsNetworkReferenceViewTimingBreakdownRequest] pane.  
 
 *   The start of a request and duration of the bootstrap.  
 *   Changes to service worker registration.  
@@ -133,7 +133,7 @@ Debug network requests that run through service workers.  You may also open netw
 
 ### Sources tool  
 
-Step into and out of `fetch` event handler with page script information.  In Microsoft Edge version 88, you may search the call stack for the page that originated the request that run through the service worker.  
+In previous versions of Microsoft Edge, when you debugged JavaScript in your service worker only the call stack of your service worker code was displayed.  In Microsoft Edge 88, more of the call stack is displayed, including requests that run through the service worker from the webpage.  
 
 :::row:::
    :::column span="":::
@@ -334,6 +334,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  
 [DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  
 [DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
+[DevtoolsNetworkReferenceViewTimingBreakdownRequest]: /microsoft-edge/devtools-guide-chromium/network/reference#view-the-timing-breakdown-of-a-request "View the timing breakdown of a request - Network Analysis reference | Microsoft Docs"  
 [WebDriverChromiumMain]: /microsoft-edge/webdriver-chromium "Use WebDriver (Chromium) for test automation | Microsoft Docs"  
 
 <!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: /microsoft-edge/devtools-guide-chromium/css/reference#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->  
