@@ -538,6 +538,8 @@ When you open the **Color Picker**, the **Eyedropper** \(![Eyedropper][ImageEyed
        Using the Eyedropper  
     :::image-end:::  
     
+<!--todo:  add the section on the Angle clock section for What's New 88.  -->  
+
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
