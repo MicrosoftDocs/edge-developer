@@ -3,7 +3,7 @@ description: Microsoft Edge on Linux, improved webhint tips in the Issues tool, 
 title: What's new in DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/08/2020
+ms.date: 12/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -138,21 +138,23 @@ Debug network requests that run through service workers.  You may also open netw
 
 ### Sources tool  
 
-In previous versions of Microsoft Edge, the level of depth in the call stack displayed requests that run through the service worker from the JavaScript file.  In Microsoft Edge 88, the call stack now displays requests that run through the service worker from the webpage and the JavaScript file.  <!--  The requests are actually intercepted by the service worker.  -->  To locate the initiator of the request, use the call stack of your JavaScript code in the service worker.  The call stack in the following figures includes the service worker for JavaScript file and the original webpage request.  In the second figure, the call stack is chosen and opened the webpage that made the request.  
+In previous versions of Microsoft Edge, the level of depth in the call stack was limited to the JavaScript code in your service worker.  In Microsoft Edge 88, the call stack now displays the initiator of requests that run through your service worker.  
+
+To locate the initiator of the request, use the call stack of your JavaScript code in the service worker.  The call stack in the following figures starts with the JavaScript code in your service worker and displays a reference to the original webpage request as `(index):157`.  In the second figure, the reference is chosen and opened the initiator that made the request.  The initiator in the second figure is the webpage.  
 
 :::row:::
    :::column span="":::
-          :::image type="complex" source="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png" alt-text="The service-worker.js file and call stack highlighting request originator" lightbox="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png":::
-             The `service-worker.js` file and call stack highlighting request originator  
-          :::image-end:::  
-       :::column-end:::
-       :::column span="":::
-          :::image type="complex" source="../../media/2020/11/service-worker-sources-call-stack-target.msft.png" alt-text="The (index) webpage is the request initiator" lightbox="../../media/2020/11/service-worker-sources-call-stack-target.msft.png":::
-             The `(index)` webpage is the request initiator  
-          :::image-end:::  
-       :::column-end:::
-    :::row-end:::  
-    
+      :::image type="complex" source="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png" alt-text="The service-worker.js file and call stack highlighting request originator" lightbox="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png":::
+         The `service-worker.js` file and call stack highlighting request originator  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2020/11/service-worker-sources-call-stack-target.msft.png" alt-text="The (index) webpage is the request initiator" lightbox="../../media/2020/11/service-worker-sources-call-stack-target.msft.png":::
+         The `(index)` webpage is the request initiator  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+
 ## Copy property value of a network request  
 
 <!-- Title: Copy response JSON in Network tool using the contextual menu  -->  
@@ -163,9 +165,7 @@ In the **Network** tool, copy the property value of a network request using the 
 *   Highlight the entire text and copy it.  
 *   Store the value as global variable, as applicable, and copy it from the DevTools [Console][DevtoolsConsoleIndex].  
     
-To copy the property value to your clipboard, navigate to [Copy formatted response JSON to the clipboard][DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard].  
-
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1132084][CR1132084].  
+To copy the property value to your clipboard, navigate to [Copy formatted response JSON to the clipboard][DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1132084][CR1132084].  
 
 :::row:::
    :::column span="":::
