@@ -3,7 +3,7 @@ description: Legacy Microsoft Edge documentation.  Content for Microsoft Edge (e
 title: Legacy Microsoft Edge documentation
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/04/2020
+ms.date: 12/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Legacy Microsoft Edge documentation  
 
-Thank you for your interest in Microsoft Edge.  The following article summarizes legacy content, which is no longer being updated.  The new Microsoft Edge content replaces the legacy content and is marked as recommended in the following tables.  
+Thank you for your interest in Microsoft Edge.  The following article summarizes content for the legacy product, which is no longer being updated.  The new Microsoft Edge content replaces the content for the legacy product and is marked as recommended in the following tables.  
 
 ## New Microsoft Edge documentation  
 
@@ -19,7 +19,7 @@ Thank you for your interest in Microsoft Edge.  The following article summarizes
 |:--- |:--- |  
 | [DevTools overview][DevtoolsGuideChromiumMain] \(recommended\) | Get to know the Microsoft Edge \(Chromium\) Developer Tools. |  
 | [DevTools Protocol overview][DevtoolsProtocolChromiumMain] \(recommended\) | Update to the Microsoft Edge DevTools Protocol. |  
-| [Extensions overview][ExtensionsChromiumIndex] \(recommended\) | The overview for the Microsoft Edge \(Chromium\) Extensions. Build and publish browser extensions in general. |  
+| [Extensions overview][ExtensionsChromiumIndex] \(recommended\) | The overview for the Microsoft Edge \(Chromium\) Extensions.  Build and publish browser extensions in general. |  
 | [Progressive Web Apps overview][ProgressiveWebAppsChromiumIndex] \(recommended\) | Progressive Web Apps \(Chromium\) run natively on Windows 10.  Everything you need to know as a web developer. |  
 | [WebView2 overview][Webview2Index] \(recommended\) | Host web content in your Win32, .NET, and UWP apps with the Microsoft Edge WebView2 control. |  
 | [Interoperability (Site compatibility)][WebPlatformSiteImpactingChanges] \(recommended\) | Provides a summary of high-impact changes that may impact site compatibility. |  
@@ -66,14 +66,14 @@ Thank you for your interest in Microsoft Edge.  The following article summarizes
 <!--  This is deprecated and legacy content.  For new content, navigate to the associated [Chromium category](#new-microsoft-edge-documentation).  -->  
 
 > [!IMPORTANT]
-> The legacy Microsoft Edge has been replaced with new Microsoft Edge documentation.  
+> The legacy Microsoft Edge has been replaced with new Microsoft Edge.  
 
 | Feature | Details |  
 |:--- |:--- |  
 | [Developer guide][EdgehtmlDevGuideIndex] \(not recommended\) | This article provides an overview of the developer features and standards included in Microsoft Edge. |  
 | [Developer Tools overview][EdgehtmlDevtoolsGuideIndex] \(not recommended\) | Get to know the Microsoft Edge \(EdgeHTML\) Developer Tools. |  
 | [Developer Tools Protocol overview][EdgehtmlDevtoolsProtocolIndex] \(not recommended\) | Use the Microsoft Edge DevTools Protocol to inspect and debug the Microsoft Edge \(EdgeHTML\) browser. |  
-| [Extensions overview][EdgehtmlExtensionsIndex] \(not recommended\) | Learn how to develop Microsoft Edge extensions.  These small programs are used to add new features to Microsoft Edge or modify existing functionality. |  
+| [Extensions overview][EdgehtmlExtensionsIndex] \(not recommended\) | Learn how to develop Microsoft Edge extensions.  The small programs are used to add new features to Microsoft Edge or modify existing functionality. |  
 | [Progressive Web Apps overview][EdgehtmlProgressiveWebAppsIndex] \(not recommended\) | A Progressive Web App runs natively on Windows 10.  Everything you need to know as a web developer. |  
 | [WebView overview][EdgehtmlHostingWebviewIndex] \(not recommended\) | Host web content in your Windows 10 app with the WebView \(EdgeHTML\) control. |  
 | [JavaScript runtime hosting overview][EdgehtmlHostingJavascriptRuntimeHostingIndex] \(not recommended\) | The JavaScript Runtime \(JsRT\) APIs provide a way for desktop, Windows Store, and server-side apps.  The APIs run on the Windows operating system to add scripting capabilities to an app using the standards-based Chakra JavaScript engine.   The Chakra JavaScript engine is also utilized by legacy Microsoft Edge and Internet Explorer. |  
