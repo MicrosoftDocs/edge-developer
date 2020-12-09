@@ -138,8 +138,7 @@ Debug network requests that run through service workers.  You may also open netw
 
 ### Sources tool  
 
-In previous versions of Microsoft Edge, the additional level of depth in the call stack is not displayed when you debug JavaScript in your service worker.  
-In Microsoft Edge 88, more of the call stack is displayed.  The call stack now includes requests that run through the service worker from the webpage and the JavaScript file.  The requests are actually intercepted by the service worker.  The call stack in both figures includes the service worker for JavaScript file and the original webpage request.  In the second image, the call stack is chosen and opened the webpage that made the request.  To locate the initiator of the request, use the call stack of your JavaScript code in the service worker.  
+In previous versions of Microsoft Edge, the level of depth in the call stack displayed requests that run through the service worker from the JavaScript file.  In Microsoft Edge 88, the call stack now displays requests that run through the service worker from the webpage and the JavaScript file.  <!--  The requests are actually intercepted by the service worker.  -->  To locate the initiator of the request, use the call stack of your JavaScript code in the service worker.  The call stack in the following figures includes the service worker for JavaScript file and the original webpage request.  In the second figure, the call stack is chosen and opened the webpage that made the request.  
 
 :::row:::
    :::column span="":::
