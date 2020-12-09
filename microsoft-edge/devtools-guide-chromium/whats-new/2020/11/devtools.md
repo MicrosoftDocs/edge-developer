@@ -22,8 +22,8 @@ Microsoft Edge Dev is now supported on Ubuntu, Debian, Fedora, and openSUSE dist
 
 If you are using a Linux environment in your continuous integration and delivery \(CI/CD\) solutions, Microsoft Edge Driver is also available on Linux.  To get started automating Microsoft Edge Dev with Microsoft Edge Driver, navigate to [Microsoft Edge Driver Downloads page][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads].  For help with automating Microsoft Edge Dev along with Microsoft Edge Driver, navigate to [Use WebDriver (Chromium) for test automation][WebDriverChromiumMain].  
 
-:::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="Display Devtools in Microsoft Edge on Linux" lightbox="../../media/2020/11/edge-on-linux.msft.png":::
-   Display Devtools in Microsoft Edge on Linux  
+:::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="DevTools in Microsoft Edge on Linux" lightbox="../../media/2020/11/edge-on-linux.msft.png":::
+   DevTools in Microsoft Edge on Linux  
 :::image-end:::  
 
 ## Improved webhint and platform tips in the Issues tool  
@@ -31,7 +31,7 @@ If you are using a Linux environment in your continuous integration and delivery
 <!-- Title: Improvements to Issues tool and webhint integration  -->  
 <!-- Subtitle: Categories and third-party filtering make it easier to survey issues in the Issues tool.  Issues surfaced by webhint now have improved code snippets and documentation links to help you fix problems in your website.  -->  
 
-[webhint][WebhintMain] is an open-source tool that provides real-time feedback for websites and local webpages.  Starting with [Microsoft Edge version 85][WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel], review webhint feedback in the [Issues][DevtoolsIssuesIndex] tool.  Issues that appear in the **Issues** tool are now easier to review with the addition of the following categories.  
+An open-source tool, [webhint][WebhintMain], provides real-time feedback for websites and local webpages.  Starting with [Microsoft Edge version 85][WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel], review webhint feedback in the [Issues][DevtoolsIssuesIndex] tool.  Issues that appear in the **Issues** tool are now easier to review with the addition of the following categories.  
 
 *   [Accessibility][WebhintUserGuideHintsAccessibility]  
 *   [Compatibility][WebhintUserGuideHintsCompatibility]  
@@ -40,7 +40,9 @@ If you are using a Linux environment in your continuous integration and delivery
 *   [PWA][WebhintUserGuideHintsPwa]  
 *   [Security][WebhintUserGuideHintsSecurity]  
     
-You are now able to filter out third-party issues using a new checkbox.  The filter functionality helps you hide issues related to code from third-party libraries or other sources.  To help you review issues revealed by [webhint][WebhintMain], the **Issues** tool now displays the following information.  
+You are now able to filter out third-party issues using a new checkbox.  The filter functionality helps you hide issues related to code from third-party libraries or other sources.  
+
+To help you review issues revealed by [webhint][WebhintMain], the **Issues** tool now displays the following information.  
 
 *   Improved code snippets.  
 *   Links to other relevant panels.  
@@ -136,17 +138,18 @@ Debug network requests that run through service workers.  You may also open netw
 
 ### Sources tool  
 
-In previous versions of Microsoft Edge, when you debugged JavaScript in your service worker only the call stack of your service worker code was displayed.  In Microsoft Edge 88, more of the call stack is displayed, including requests that run through the service worker from the webpage.  
+In previous versions of Microsoft Edge, the additional level of depth in the call stack is not displayed when you debug JavaScript in your service worker.  
+In Microsoft Edge 88, more of the call stack is displayed.  The call stack now includes requests that run through the service worker from the webpage and the JavaScript file.  The requests are actually intercepted by the service worker.  The call stack in both figures includes the service worker for JavaScript file and the original webpage request.  In the second image, the call stack is chosen and opened the webpage that made the request.  To locate the initiator of the request, use the call stack of your JavaScript code in the service worker.  
 
 :::row:::
    :::column span="":::
-          :::image type="complex" source="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png" alt-text="Behavior in previous versions" lightbox="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png":::
-             Behavior in previous versions  
+          :::image type="complex" source="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png" alt-text="The service-worker.js file and call stack highlighting request originator" lightbox="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png":::
+             The `service-worker.js` file and call stack highlighting request originator  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../../media/2020/11/service-worker-sources-call-stack-target.msft.png" alt-text="Behavior in version 88" lightbox="../../media/2020/11/service-worker-sources-call-stack-target.msft.png":::
-             Behavior in version 88  
+          :::image type="complex" source="../../media/2020/11/service-worker-sources-call-stack-target.msft.png" alt-text="The (index) webpage is the request initiator" lightbox="../../media/2020/11/service-worker-sources-call-stack-target.msft.png":::
+             The `(index)` webpage is the request initiator  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
@@ -161,19 +164,8 @@ In the **Network** tool, copy the property value of a network request using the 
 *   Highlight the entire text and copy it.  
 *   Store the value as global variable, as applicable, and copy it from the DevTools [Console][DevtoolsConsoleIndex].  
     
-To copy the property value to your clipboard, complete the following actions.  
+To copy the property value to your clipboard, navigate to [Copy formatted response JSON to the clipboard][DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard].  
 
-1.  Navigate to **Network** > **Headers**.  
-1.  Open one of the following header sections.  
-    *   Request payload \(JSON\)
-    *   Form Data
-    *   Query String Parameters
-    *   Request Headers
-    *   Response Headers
-1.  Open the contextual menu \(right-click\).  
-1.  Choose **Copy value**.  
-1.  The value is copied.  Paste the value into any editor, such as Visual Studio Code, to review it.  
-    
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1132084][CR1132084].  
 
 :::row:::
@@ -196,7 +188,9 @@ To review the history of this feature in the Chromium open-source project, navig
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-[Since Microsoft Edge version 87][WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings], you may customize keyboard shortcuts for any action in DevTools.  In Microsoft Edge version 88, you may now create multi-press keyboard shortcuts.  To set a shortcut for an action in the DevTools, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments**  and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, navigate to [Enable keyboard shortcut editor Experimental feature][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #174309][CR174309].  
+[Since Microsoft Edge version 87][WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings], you may customize keyboard shortcuts for any action in DevTools.  In Microsoft Edge version 88, you may now create multi-press keyboard shortcuts.  To set a shortcut for an action in the DevTools, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments**  and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, navigate to [Enable keyboard shortcut editor Experimental feature][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  
+
+For example, the red highlight displays a multi-press keyboard shortcut customized for the **Start recording events** action.  To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #174309][CR174309].  
 
 :::image type="complex" source="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png" alt-text="Chords keyboard shortcuts" lightbox="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png":::
    Multi-press keyboard shortcuts  
@@ -339,6 +333,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  
 [DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  
 [DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
+[DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: /microsoft-edge/devtools-guide-chromium/network/reference#copy-formatted-response-json-to-the-clipboard "Copy formatted response JSON to the clipboard - Network Analysis reference | Microsoft Docs"  
 [DevtoolsNetworkReferenceViewTimingBreakdownRequest]: /microsoft-edge/devtools-guide-chromium/network/reference#view-the-timing-breakdown-of-a-request "View the timing breakdown of a request - Network Analysis reference | Microsoft Docs"  
 [WebDriverChromiumMain]: /microsoft-edge/webdriver-chromium "Use WebDriver (Chromium) for test automation | Microsoft Docs"  
 
