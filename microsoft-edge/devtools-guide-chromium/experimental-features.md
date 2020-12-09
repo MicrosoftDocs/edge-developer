@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/06/2020 
+ms.date: 12/07/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -19,7 +19,7 @@ While experimental features are available in all channels of Microsoft Edge, you
 To turn on \(or off\) experimental features in Microsoft Edge, complete the following steps.  
 
 1.  [Open DevTools][DevtoolsOpen].  
-     *   Select `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
+    *   Select `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
 1.  Open the [Settings][DevToolsCustomizeSettings] pane.  
     *   Select `Shift`+`?`.  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
 1.  On the left side of the **Settings** pane, choose the **Experiments** section.  
@@ -30,7 +30,7 @@ To turn on \(or off\) experimental features in Microsoft Edge, complete the foll
     
 1.  On the **Experiments** page, scroll through the list of all available experimental features and choose the checkbox next to each feature that you want to test.  
 1.  Close and reopen Microsoft Edge DevTools.  
-
+    
 > [!NOTE]
 > Experimental features are constantly being updated and may cause performance issues.  To turn off an experimental feature, open the **Experiments** page and clear the checkbox of the experimental feature that you want to turn off.  
 
@@ -55,7 +55,7 @@ Provides additional features for emulating two new dual-screen and foldable devi
 
 *   [Surface Duo][SurfaceDevicesDuo]  
 *   [Samsung Galaxy Fold][SamsungMobileGalaxyFold]  
-
+    
 Emulate the devices and toggle between the following postures.  
 
 *   single-screen or folded posture  
@@ -74,7 +74,7 @@ To use the [CSS media screen-spanning feature][DualScreenDocsCssMedia] and [Java
 1.  Navigate to `edge://flags`.  
 1.  In the **Search flags** textbox, enter `Experimental Web Platform features`, choose the **Experimental Web Platform features** flag, and change **Disabled** to **Enabled**.  
 1.  Restart Microsoft Edge.  
-
+    
 :::image type="complex" source="./media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Enable the Experimental Web Platform features flag" lightbox="./media/experiments-dual-screen-emulation.msft.png":::
    Enable the Experimental Web Platform features flag  
 :::image-end:::  
@@ -105,7 +105,7 @@ Here are additional resources that may help you enhance your website \(or app\) 
 
 *   For more information about web development on dual-screen devices, navigate to [Dual-screen web experiences][DualScreenWebIndex].  
 *   Install the [Surface Duo emulator][DualScreenAndroidUseEmulator].  It is different from the emulator in Microsoft Edge, emulates the Surface Duo running Android, and integrates with [Android Studio][AndroidDeveloperStudio].  For more information, navigate to [Get the Surface Duo SDK][DualScreenAndroidGetDuoSdk].  
-
+    
 > [!NOTE]
 > The following is a list of current known issues.  
 > 
@@ -130,7 +130,7 @@ In Microsoft Edge version 86 or later, the experimental CSS grid feature also of
 *   The persistent overlays remain visible on the page as you scroll, move your mouse, and use other features of the DevTools.  
 *   Multiple persistent overlays can be enabled at the same time, allowing you to review several grid layouts at once.  
 *   Persistent overlays offer many configuration options, such as hiding or showing names in the grid area, grid gaps, track sizes, and so on.  
-
+    
 The two ways to toggle a persistent grid overlay.  
 
 *   Choose the **Grid** oval icon next to any Grid element shown in the DOM tree of the **Elements** tool.  
@@ -173,7 +173,7 @@ Normally, tools such as **Elements** and **Network** may only open in the main p
 *   performance  
 *   Progressive Web Apps (PWAs)  
 *   other common web development issues  
-
+    
 The [webhint][WebhintMain] experiment displays the webhint feedback in the [Issues][DevtoolsIssues] panel.  Choose an issue to display solution documentation and a list of the affected resources on your website.  Choose a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.  
 
 :::image type="complex" source="./media/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel" lightbox="./media/experiments-webhint.msft.png":::
@@ -193,7 +193,7 @@ After enabling the experiment, ensure you restart the DevTools.  To use the **Ne
 1.  Open the contextual menu \(right-click\), and choose **Edit and Replay**.  
 1.  When the **Network Console** opens, edit the network request information.  
 1.  Choose **Send**.  
-
+    
 :::image type="complex" source="./media/network-network-console.msft.png" alt-text="Network Console in the Console drawer" lightbox="./media/network-network-console.msft.png":::
    **Network Console** in the **Console** drawer  
 :::image-end:::  
@@ -210,7 +210,7 @@ After enabling the experiment, ensure you restart the DevTools.  To use **Source
 1.  Open the **Accessibility** pane in the drawer \(bottom\) panel.  
 1.  Under the **Source Order Viewer** section, choose the **Show Source Order** checkbox.  
 1.  Highlight any HTML element to display an overlay that the order in the page source.  
-
+    
 :::image type="complex" source="./media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="./media/experiments-source-order-viewer.msft.png":::
    **Source Order Viewer** in the **Accessibility** pane  
 :::image-end:::  
@@ -259,13 +259,10 @@ When you are editing the keyboard shortcuts for an action, to discard your chang
 
 You may now visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.  After enabling the experiment, ensure you restart the DevTools.  To use **Composited Layers**, complete the following steps.  
 
-<!--1.  Navigate to a PWA-enabled website such as `twitter.com`.  
-1.  Choose the **Install ...** \(![Install PWA icon](./media/install-pwa-icon.msft.png)\) icon to install the Twitter PWA.  If it is already set up, open the app as usual.  
-1.  Open the Devtools.  -->  
 1.  On the drawer, choose the **3D View** tool.  
 1.  Open the **Composited Layers** pane.  
 1.  All of the painted layers of the app are displayed.  Try this feature with your own web apps.  
-
+    
 :::image type="complex" source="./media/experiments-layers.msft.png" alt-text="Composited Layers pane" lightbox="./media/experiments-layers.msft.png":::
    **Composited Layers** pane  
 :::image-end:::  
