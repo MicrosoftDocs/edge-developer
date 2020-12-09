@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 12/02/2020
+  ms.date: 12/09/2020
   ms.localizationpriority: high
 
 # highlightedContent section (optional)
@@ -264,25 +264,7 @@ additionalContent:
             - text: Privacy Whitepaper
               url: /microsoft-edge/privacy-whitepaper
         # Card
-        - title: Microsoft Edge Legacy Documentation
+        - title: Microsoft Edge Legacy documentation
           links:
-            # - text: Dev Guide (EdgeHTML)
-            #   url: /microsoft-edge/dev-guide
-            # - text: DevTools (EdgeHTML)
-            #   url: /microsoft-edge/devtools-guide
-            # - text: DevTools Protocol (EdgeHTML)
-            #   url: /microsoft-edge/devtools-protocol/index
-            # - text: Extensions (EdgeHTML)
-            #   url: /microsoft-edge/extensions/index
-            # - text: Getting Started with PWAs (EdgeHTML)
-            #   url: /microsoft-edge/progressive-web-apps-edgehtml/get-started
-            # - text: JavaScript Runtime Hosting
-            #   url: /microsoft-edge/hosting/javascript-runtime-hosting
-            # - text: WebVR Developer Guide
-            #   url: /microsoft-edge/webvr/index
-            # - text: Windows Runtime (WinRT)
-            #   url: /microsoft-edge/windows-runtime
-            - text: Test one
-              url: /microsoft-edge/edgehtml/index-test1
-            - text: Test two
-              url: /microsoft-edge/edgehtml/index-test2
+            - text: Microsoft Edge Legacy documentation
+              url: /microsoft-edge/edgehtml/index
