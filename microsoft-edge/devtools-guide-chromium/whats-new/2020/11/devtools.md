@@ -169,12 +169,12 @@ To copy the property value to your clipboard, navigate to [Copy formatted respon
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/copy-property-value.msft.png" alt-text="Copy property value" lightbox="../../media/2020/11/copy-property-value.msft.png":::
+      :::image type="complex" source="../../media/2020/11/copy-property-value.msft.png" alt-text="Copy property value in DevTools" lightbox="../../media/2020/11/copy-property-value.msft.png":::
          Copy property value in DevTools  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Copy property value" lightbox="../../media/2020/11/paste-property-value.msft.png":::
+      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Paste property value in Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
          Paste property value in Visual Studio Code  
       :::image-end:::  
    :::column-end:::
