@@ -1,6 +1,5 @@
 # - name: Legacy Microsoft Edge documentation
-#   href: index-test1.yml
-#  href: index-test2.md
+#   href: index.md
   expanded: true
   items: 
     - name: Legacy Dev guide
