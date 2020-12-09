@@ -892,12 +892,12 @@ Choose a network request and navigate to the **Headers** pane.  To copy the JSON
 
 :::row:::
    :::column span="":::
-        :::image type="complex" source="../media/header-copy-value.msft.png" alt-text="Copy Value in contextual menu" lightbox="../media/header-copy-value.msft.png":::
+        :::image type="complex" source="../media/network-header-copy-property-value.msft.png" alt-text="Copy Value in contextual menu" lightbox="../media/network-header-copy-property-value.msft.png":::
           **Copy Value** in contextual menu  
         :::image-end:::  
    :::column-end:::
    :::column span="":::
-        :::image type="complex" source="../media/header-copy-value-paste-vscode.msft.png" alt-text="Visual Studio Code with formatted response JSON" lightbox="../media/header-copy-value-paste-vscode.msft.png":::
+        :::image type="complex" source="../media/network-header-paste-property-value.msft.png" alt-text="Visual Studio Code with formatted response JSON" lightbox="../media/network-header-paste-property-value.msft.png":::
           Pasting formatted response JSON in Visual Studio Code  
         :::image-end:::  
    :::column-end:::
@@ -915,7 +915,7 @@ To copy property values from network requests to your clipboard, complete the fo
     *   Request Headers  
     *   Response Headers  
 1.  Open the contextual menu \(right-click\) > **Copy value**.  You can now paste the value into any editor to review it.  
-
+    
 ## Change the layout of the Network panel  
 
 You may expand or collapse sections of the **Network** panel UI to focus important information.  
