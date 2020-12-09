@@ -3,7 +3,7 @@ description: Distribution options when releasing an app using Microsoft Edge Web
 title: Distribution of Microsoft Edge WebView2 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
+ms.date: 11/23/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -70,7 +70,7 @@ If you have an online-only deployment scenario where users are assumed to have i
         On 32-bit Windows  
         
         ```text
-        HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
         ```  
         
     *   Run [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] and ensure the `versionInfo` is `NULL`.  
@@ -103,7 +103,7 @@ If you have an offline deployment scenario where app deployment has to work enti
         On 32-bit Windows  
         
         ```text
-        HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
         ```  
         
     *   Run [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] and ensure the `versionInfo` is `NULL`.  
@@ -189,6 +189,6 @@ Compared to the Evergreen Runtime, Fixed Version does not have an installation p
 
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback | GitHub"  
 
-[GitHubMicrosoftMicrosoftEdgeWebView2SamplesWebview2Deployment]: https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment "WebView2 Deployment - MicrosoftEdge/WebView2Samples | GitHub"  
+[GitHubMicrosoftEdgeWebView2SamplesWebview2Deployment]: https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment "WebView2 Deployment - MicrosoftEdge/WebView2Samples | GitHub"  
 
 [MicrosoftPlayReady]: https://www.microsoft.com/playready "Microsoft PlayReady"  

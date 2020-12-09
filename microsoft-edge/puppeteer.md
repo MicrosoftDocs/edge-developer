@@ -3,18 +3,17 @@ description: Use Puppeteer to automate and test in Microsoft Edge
 title: Puppeteer
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 11/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, developer, tools, automation, test
 ---
-
 # Puppeteer  
 
-[Puppeteer][PuppeteerMain] is a [Node][NodejsMain] library which provides a high-level API to control Microsoft Edge \(Chromium\) over the [DevTools Protocol][GithubChromedevtoolsProtocol].  Puppeteer runs [headless][WikiHeadlessBrowser] by default, which means that you do not see a UI, and instead must use the command-line.  You may also configure Puppeteer to run full \(non-headless\) Microsoft Edge or Chromium as well.  
+[Puppeteer][PuppeteerMain] is a [Node][NodejsMain] library that provides a high-level API to control Microsoft Edge \(Chromium\) using the [DevTools Protocol][GithubChromedevtoolsProtocol].  Puppeteer launches [headless browsers][WikiHeadlessBrowser] by default.  Headless browsers do not display a UI, so instead you must use the command line.  You may also configure Puppeteer to run full \(non-headless\) Microsoft Edge as well.  
 
-By default, when you install Puppeteer, the installer downloads a recent version of [Chromium][ChromiumHome], the open-source browser that [Microsoft Edge is also built upon][MicrosoftBlogsWindowsExperience20181206].  If you have Microsoft Edge \(Chromium\) installed, you may use [puppeteer-core][PuppeteerApivscore].  `puppeteer-core` is a lightweight version of Puppeteer that launches an existing browser installation, like Microsoft Edge \(Chromium\).  To download Microsoft Edge \(Chromium\), see [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload].
+By default, when you install Puppeteer, the installer downloads a recent version of [Chromium][ChromiumHome], the open-source browser that [Microsoft Edge is also built upon][MicrosoftBlogsWindowsExperience20181206].  If you have Microsoft Edge \(Chromium\) installed, you may use [puppeteer-core][PuppeteerApivscore].  `puppeteer-core` is a lightweight version of Puppeteer that launches an existing browser installation, like Microsoft Edge \(Chromium\).  To download Microsoft Edge \(Chromium\), navigate to [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload].  
 
 ## Installing puppeteer-core  
 
@@ -33,9 +32,9 @@ yarn add puppeteer-core
 > [!NOTE]
 > `puppeteer-core` relies on Node v8.9.0 or later.  The example below uses `async`/`await` which is only supported in Node v7.6.0 or later.  Run `node -v` from the command-line to ensure you have a compatible version of Node.js.  
 
-`puppeteer-core` should be familiar to users of other browser-testing-frameworks like [WebDriver][WebDriverEdgehtmlMain].  You create an instance of the browser, open a page, and then manipulate it with the Puppeteer API.  In the following code sample, `puppeteer-core` launches Microsoft Edge \(Chromium\), navigates to `https://www.microsoftedgeinsider.com`, and saves a screenshot as `example.png`.  
+`puppeteer-core` should be familiar to users of other browser-testing frameworks like [WebDriver][WebDriverEdgehtmlMain].  You create an instance of the browser, open a page, and then manipulate it with the Puppeteer API.  In the following code sample, `puppeteer-core` launches Microsoft Edge \(Chromium\), navigates to `https://www.microsoftedgeinsider.com`, and saves a screenshot as `example.png`.  
 
-Copy the code sample below and save it as `example.js`.  
+Copy the following code snippet and save it as `example.js`.  
 
 ```javascript
 const puppeteer = require('puppeteer-core');
@@ -75,47 +74,35 @@ Finally, set `executablePath: EDGE_PATH` in `example.js`.  Save your changes.
 > [!NOTE]
 > Microsoft Edge \(EdgeHTML\) does not work with `puppeteer-core`.  You must install the [Microsoft Edge Insider channels][MicrosoftedgeinsiderDownload] to continue following this example.  
 
-Now run `example.js` from the command-line.  
+Now, run `example.js` from the command line.  
 
 ```shell
 node example.js
 ```  
 
-`puppeteer-core` launches Microsoft Edge, navigates to `https://www.microsoftedgeinsider.com` and saves an 800px x 600px screenshot of the page.  You are able to customize the page size with [page.setViewport()][PuppeteerApipagesetviewport].  
+`puppeteer-core` launches Microsoft Edge, navigates to `https://www.microsoftedgeinsider.com`, and saves a screenshot of the webpage.  Customize the screenshot size with [page.setViewport()][PuppeteerApipagesetviewport].  
 
-:::image type="complex" source="./media/puppeteer-example.png" alt-text="The example.png file produced by example.js":::
-   Figure 1:  The `example.png` file produced by `example.js`  
+:::image type="complex" source="./media/puppeteer-example.png" alt-text="The example.png file produced by example.js" lightbox="./media/puppeteer-example.png":::
+   The `example.png` file produced by `example.js`  
 :::image-end:::  
 
-<!--  
-> ##### Figure 1  
-> The `example.png` file produced by `example.js`  
-> ![The example.png file produced by example.js](./media/puppeteer-example.png)  
--->  
-
-This is just a simple example of the automation and testing scenarios enabled by Puppeteer and `puppeteer-core`.  For more information about Puppeteer and how it works, see [Puppeteer][PuppeteerMain].  
+The following simple example uses automation and testing scenarios enabled by Puppeteer and `puppeteer-core`.  For more information about Puppeteer and how it works, navigate to [Puppeteer][PuppeteerMain].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 The Microsoft Edge Developer team is eager to hear your feedback about using Puppeteer, `puppeteer-core`, and Microsoft Edge.  Use the **Send Feedback** icon in the Microsoft Edge DevTools or tweet [@EdgeDevTools][TwitterIntentTweetEdgedevtools] to let the Microsoft Edge team know what you think.  
 
 
-:::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools":::
+:::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools" lightbox="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
    The **Send Feedback** icon in the Microsoft Edge DevTools  
 :::image-end:::  
-
-<!--  
-> ##### Figure 2  
-> The **Feedback** icon in the Microsoft Edge DevTools  
-> ![The Feedback icon in the Microsoft Edge DevTools](./devtools-guide-chromium/media/devtools-feedback.png)  
--->  
 
 <!--## See also  
 
 *   [WebDriver (Chromium)][WebdriverChromiumMain]  
 *   [WebDriver (EdgeHTML)][WebdriverEdgehtmlMain]  
 *   [Chrome DevTools Protocol Viewer on GitHub][GithubChromedevtoolsProtocol]  
-*   [Microsoft Edge: Making the web better through more open source collaboration on Microsoft Experience Blog][MicrosoftBlogsWindowsExperience20181206]  
+*   [Microsoft Edge:  Making the web better through more open source collaboration on Microsoft Experience Blog][MicrosoftBlogsWindowsExperience20181206]  
 *   [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload]  
 *   [Chromium on The Chromium Projects][ChromiumHome]  
 *   [Node.js][NodejsMain]  
@@ -124,16 +111,14 @@ The Microsoft Edge Developer team is eager to hear your feedback about using Pup
 *   [page.setViewport() on Puppeteer][PuppeteerApipagesetviewport]  
 *   [Headless browser on Wikipedia][WikiHeadlessBrowser]  -->  
 
-<!-- image links -->  
-
 <!-- links -->  
 
-[WebdriverChromiumMain]: ./webdriver-chromium.md "WebDriver (Chromium)"  
-[WebdriverEdgehtmlMain]: ./webdriver.md "WebDriver (EdgeHTML)"  
+[WebdriverChromiumMain]: ./webdriver-chromium "WebDriver (Chromium) | Microsoft Docs"  
+[WebdriverEdgehtmlMain]: ./webdriver.md "WebDriver (EdgeHTML) | Microsoft Docs"  
 
 [GithubChromedevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Chrome DevTools Protocol Viewer | GitHub"  
 
-[MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge: Making the web better through more open source collaboration | Microsoft Experience Blog"  
+[MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge:  Making the web better through more open-source collaboration | Microsoft Experience Blog"  
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"  
 
@@ -141,7 +126,7 @@ The Microsoft Edge Developer team is eager to hear your feedback about using Pup
 
 [NodejsMain]: https://nodejs.org "Node.js"  
 
-[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "npm | Edge Paths"
+[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "Edge Paths | npm"  
 
 [PuppeteerMain]: https://pptr.dev "Puppeteer"  
 [PuppeteerApivscore]: https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core "puppeteer vs. puppeteer-core | Puppeteer"  
