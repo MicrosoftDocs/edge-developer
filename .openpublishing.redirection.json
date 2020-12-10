@@ -1,6 +1,5 @@
 {
   "redirections": [
-      /* redirect to Microsoft Docs */
       {
         "source_path": "microsoft-edge/extensions/microsoft-browser-extension-policy.md",
         "redirect_url": "https://docs.microsoft.com/legal/microsoft-edge/microsoft-browser-extension-policy",
@@ -16,7 +15,6 @@
         "redirect_url": "https://docs.microsoft.com/legal/microsoft-edge/microsoft-edge-devtools-license-terms",
         "redirect_document_id": false
       },
-      /* redirect to MDN */
       {
         "source_path": "microsoft-edge/dev-guide/css/animations.md",
         "redirect_url": "https://developer.mozilla.org/docs/Web/CSS/CSS_Animations/Using_CSS_animations",
@@ -412,7 +410,6 @@
         "redirect_url": "https://developer.mozilla.org/docs/Web/API/Web_Storage_API",
         "redirect_document_id": false
       },
-      /* redirects to webview2 conceptual */
       {
         "source_path": "microsoft-edge/hosting/webview2.md",
         "redirect_url": "/microsoft-edge/webview2/index",
@@ -438,7 +435,6 @@
         "redirect_url": "/microsoft-edge/webview2/webview2-api-reference",
         "redirect_document_id": false
       },
-      /* redirects to webview2 dotnet reference */
       {
         "source_path": "microsoft-edge/webview2/reference/dotnet/0-9-515-reference-webview2.md",
         "redirect_url": "/dotnet/api/microsoft.web.webview2.core",
@@ -899,25 +895,21 @@
         "redirect_url": "/dotnet/api/microsoft.web.webview2.wpf.webview2",
         "redirect_document_id": false
       },
-      /* redirect to extensions */
       {
         "source_path": "microsoft-edge/extensions-chromium/publish/upload-video.md",
         "redirect_url": "/microsoft-edge/extensions-chromium/publish/publish-extension",
         "redirect_document_id": false
       },
-      /* redirect to pwas */
       {
         "source_path": "microsoft-edge/progressive-web-apps/index.md",
         "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/index",
         "redirect_document_id": false
       },
-      /* redirect to visual studio code */
       {
         "source_path": "microsoft-edge/visual-studio-code/elements-for-edge.md",
         "redirect_url": "/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension",
         "redirect_document_id": false
       },
-      /* move to edgehtml */
       {
         "source_path": "microsoft-edge/dev-guide.md",
         "redirect_url": "/microsoft-edge/edgehtml/index",
