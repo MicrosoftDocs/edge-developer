@@ -3,7 +3,7 @@ description: Use the Issues tool to find and fix problems with your website.
 title: Find and fix problems with the Microsoft Edge DevTools Issues tool 
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 12/11/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -40,7 +40,7 @@ The **Issues** tool in Microsoft Edge DevTools reduces the notification fatigue 
 1.  [Open DevTools][DevtoolsOpen].  
 1.  :::row:::
        :::column span="":::
-          Select the **Go to Issues** button in the yellow warning bar.  
+          Choose the **Go to Issues** button in the yellow warning bar.  
           
           :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media/issues-open-issues-tab.msft.png":::
              The **Go to Issues** button in the yellow warning bar when Issues are detected.  
@@ -110,7 +110,7 @@ The **Issues** tool in the DevTools Drawer presents warnings in a structured, ag
 
 <!-- links -->  
 
-[DevtoolsOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
 [GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "SameSite cookie tests | Glitch"  
 

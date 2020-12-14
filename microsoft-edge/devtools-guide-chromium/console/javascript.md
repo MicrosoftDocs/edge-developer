@@ -3,7 +3,7 @@ description: Learn how to run JavaScript in the Console.
 title: Get Started With Running JavaScript In The Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 12/11/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -62,7 +62,7 @@ When building or debugging a page, it is often useful to run statements in the *
     
 ## Run arbitrary JavaScript that is not related to the page  
 
-Sometimes, you just want a code playground where you are able to test some code, or try out new JavaScript features you are not familiar with.  The Console is a perfect place for these kinds of experiments.  
+Sometimes, you just want a code playground where you are able to test some code, or try out new JavaScript features you are not familiar with.  The **Console** is a perfect place for these kinds of experiments.  
 
 1.  Type `5 + 15` in the Console and select `Enter` to evaluate the expression. The Console prints out the result of the expression below your code.  In the following figure, your **Console** should display the result after evaluating the expression.  
 
@@ -116,7 +116,7 @@ For more information about the convenience functions, navigate to [Console Utili
 [DevToolsConsoleLoggingMessages]: ./log.md "Get started with logging messages in the Console | Microsoft Docs"  
 [DevToolsConsoleReference]: ./reference.md#run-javascript "Console reference | Microsoft Docs"  
 [DevToolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
-[DevToolsJavascriptIndex]: ../javascript/index.md "Get started with debugging JavaScript in Microsoft Edge DevTools"  
+[DevToolsJavascriptIndex]: ../javascript/index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
 
 [2alityExpressionsVersusStatements]: https://2ality.com/2012/09/expressions-vs-statements.html "Expressions versus statements in JavaScript"  
 
