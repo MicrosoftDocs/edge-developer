@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
-ms.date: 11/19/2020
+ms.date: 12/15/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Localizing Microsoft Edge extensions for Windows and the Microsoft Store  
@@ -50,7 +50,7 @@ Once you've uploaded your extension, the final step is to [localize the name and
 Your extension's "Supported languages" list in the Microsoft Store is generated based on its AppXManifest values. This list is specified using the `Resource` element.
 
 
-![settings image](./../../media/language-app-details.png)
+![settings image - language app details](./../../media/language-app-details.png)
 
 To specify the list of languages that are supported by your extension, you can add a `Resource` element in the format seen below (this `Resource` element will show support for English, German, and French in the Microsoft Store):
 
@@ -232,7 +232,7 @@ If you are only interested in providing a localized name and description for the
 
 Once you've reserved additional localized names, you can create an updated submission. In the description section you can manage additional languages for your Microsoft Store listing:
 
-![japanese app description](./../../media/manage-description-languages.png)
+![japanese app description - manage](./../../media/manage-description-languages.png)
 
 Once you've selected "Manage additional languages", you'll get to select which languages you want to add to your Microsoft Store listing. The new language will show up as 'Additional description language' in the "Description" section.
 
