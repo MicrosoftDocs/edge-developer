@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, extensions
-ms.date: 12/02/2020
+ms.date: 12/15/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Tips and tricks  
@@ -35,7 +35,7 @@ You can add keywords to your extension submission to improve its discoverability
 
 This can be done in the Windows Dev Center under the description section of your extension. These keywords will need to be added for every language your extension supports.
 
-![Submitting a response to a review](./media/keywords.png)
+![Submitting a response to a review - keywords](./media/keywords.png)
 
 ## Automate your submission to the Microsoft Store
 
