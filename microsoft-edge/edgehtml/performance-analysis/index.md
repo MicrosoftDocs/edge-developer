@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 ms.assetid: 7a5f9fd0-90a9-43db-b271-178c06da5896
 keywords: edge, web development, html, css, javascript, developer
-ms.date: 11/19/2020
+ms.date: 12/15/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Performance Analysis  
@@ -57,11 +57,11 @@ Launch the Windows Performance Recorder and ensure that **More options** toggle 
 
 Click **Start** to begin recording.  The tool will report the size of the buffer it is using to help you anticipate the size of the generated file.  Perform the user scenario you want to measure, then click **Save** to stop the recording and save the trace.  Saving immediately after finishing your scenario will help minimize the size of the trace file.  
 
-![Windows Performance Record Start](./media/wprui-recording.png)  
+![Windows Performance Record Start - recording](./media/wprui-recording.png)  
 
 The WPR tool will indicate that your trace information was saved successfully:  
 
-![Windows Performance Record Start](./media/wprui-savecomplete.png)  
+![Windows Performance Record Start - save complete](./media/wprui-savecomplete.png)  
 
 ## Analyzing a trace  
 
