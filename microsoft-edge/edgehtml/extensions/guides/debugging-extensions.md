@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, javascript, developer, debug, debugging
 ms.custom: seodec18
-ms.date: 11/19/2020
+ms.date: 12/15/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Debugging extensions  
@@ -68,7 +68,7 @@ The following method works for all extension pages like the options page and pop
 1. Right-click on the background of your page.
 2. Select **"View source"**.
 
-   ![popup debugging with f12](./../media/debug-popup-select.png)
+   ![popup debugging with f12 - select](./../media/debug-popup-select.png)
 
 3. Once F12 opens, place breakpoints within the file you want to debug.
 
