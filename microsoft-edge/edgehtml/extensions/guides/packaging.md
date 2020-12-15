@@ -1,13 +1,13 @@
 ---
 ms.assetid: f3560505-e01f-47e5-9ad6-7a419f060fc2
-description: Learn about how you can use native messaging to have your extension communicate with a companion UWP app.
+description: Learn about how to package your extension.
 title: Extensions - Packaging
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer
-ms.date: 11/19/2020
+ms.date: 12/15/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Packaging Microsoft Edge extensions  
