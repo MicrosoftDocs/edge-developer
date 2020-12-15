@@ -1,4 +1,5 @@
 ---
+description: The JavaScript Runtime (JsRT) APIs provide a way for desktop, Windows Store, and server-side applications running on the Windows operating system to add scripting capabilities to an app by using the standards-based Chakra JavaScript engine that is also utilized by Microsoft Edge and Internet Explorer.
 title: "JavaScript Runtime Hosting"
 ms.prod: microsoft-edge
 ms.topic: "article"
@@ -6,7 +7,7 @@ ms.assetid: d6615079-2df7-420f-a126-077e7d42486c
 caps.latest.revision: 6
 author: "MSEdgeTeam"
 ms.author: "msedgedevrel"
-ms.date: 12/02/2020
+ms.date: 12/15/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---  
 # JavaScript runtime hosting  
