@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, extension
 ms.custom: seodec18
-ms.date: 11/19/2020
+ms.date: 12/15/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Adding, moving, and removing extensions for Microsoft Edge  
@@ -55,7 +55,7 @@ Also included are details on how to change your extension icon's location in the
 ## Moving the extension button
 Depending on your extension's settings, it could appear in the **More (...)** menu.
 
-   ![actions menu](./../media/browseraction.png)  
+   ![actions menu - browser](./../media/browseraction.png)  
 
 
 If you want to move the button out of this menu for easier access:
@@ -64,7 +64,7 @@ If you want to move the button out of this menu for easier access:
 
 2. Select **Show button next to address bar**.
 
-   ![actions menu](./../media/browseraction_contextmenu.png)  
+   ![actions menu - browser contextual menu](./../media/browseraction_contextmenu.png)  
 
 Alternatively, you may do this from the extensions details page:
 
@@ -87,6 +87,6 @@ Alternatively, you may do this from the extensions details page:
 
 4. Right-click the extension you want to remove and select **Remove**, or select the extension and click the **Remove** button.
 
-   ![actions menu](./../media/remove.png)  
+   ![actions menu - remove](./../media/remove.png)  
 
 **The extension should disappear from the list in Microsoft Edge.**
