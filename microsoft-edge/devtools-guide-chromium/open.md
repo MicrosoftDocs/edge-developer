@@ -114,15 +114,13 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 
 If you do not want selecting `F12` to open the DevTools, complete the following actions.
 
-Select the ... icon (the Settings and more icon).
-
 1.  Select the  `...` icon \(the **Settings and more** icon\) > **Settings**.  
 1.  In the **Search settings** textbox, enter **Developer Tools**.
     :::image type="complex" source="./media/devtools-f12-setting-on.msft.png" alt-text="The Open the DevTools when the F12 key is pressed setting" lightbox="./media/devtools-f12-setting-on.msft.png":::
       The **Open the DevTools when the F12 key is pressed** setting
     :::image-end:::  
 1.  Select the **Open the DevTools when the F12 key is pressed** toggle to turn it off.
-    :::image type="complex" source="./media/devtools-f12-setting-off.msft.png" alt-text="Turning the 'Open the DevTools when the F12 key is pressed' setting off" lightbox="./media/devtools-f12-setting-on.msft.png":::
+    :::image type="complex" source="./media/devtools-f12-setting-off.msft.png" alt-text="Turning the 'Open the DevTools when the F12 key is pressed' setting off" lightbox="./media/devtools-f12-setting-off.msft.png":::
       The **Open the DevTools when the F12 key is pressed** setting is turned off  
     :::image-end:::  
 1.  Select `F12`. The DevTools no longer open.
