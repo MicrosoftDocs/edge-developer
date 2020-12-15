@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, UWP, Xbox, Xbox One, TVJS
-ms.date: 12/02/2020
+ms.date: 12/15/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Progressive Web Apps for Xbox One  
@@ -63,7 +63,7 @@ The free, full-featured [Visual Studio Community 2017](https://visualstudio.micr
 
 1.  Follow the steps to [set up and run your PWA as a Universal Windows app](/microsoft-edge/progressive-web-apps-edgehtml/windows-features#set-up-and-run-your-universal-windows-app). With this, you'll have a fully functioning Windows 10 app capable of accessing Universal Windows APIs.
 2.  You can now deploy and debug your PWA (as a UWP app) on the Xbox One (as with any other Windows 10 remote device) using the [Visual Studio remote debugger](/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine?view=vs-2017
-). Alternately, you can install your PWA using the [Device Portal for Xbox](/windows/uwp/debug-test-perf/device-portal-xbox) using the following steps.
+&preserve-view=true). Alternately, you can install your PWA using the [Device Portal for Xbox](/windows/uwp/debug-test-perf/device-portal-xbox) using the following steps.
 3.  From the Device Portal for Xbox, go to Home > My games & apps > Add, choose the option to upload *App Package and Dependencies*.
 4.  Navigate to the package folder you generated for your app in Step 1 and select the *.appx* file for upload. The [*.appx* file](/windows/uwp/packaging/packaging-uwp-apps) is a UWP app package file that can be sideloaded on any device for testing purposes.
 5.  Next tap the **Dependencies** button and select the *dependencies* sub-folder for your app and upload each one. This step is only required for deploying apps from the Device Portal for Xbox. Visual Studio delivers dependencies when remote debugging and the end user's machine will already have these installed when delivered from the Microsoft Store.
