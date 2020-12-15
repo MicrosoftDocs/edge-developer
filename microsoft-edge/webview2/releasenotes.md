@@ -48,7 +48,7 @@ Release Date: December 8, 2020
     * [NavigateWithWebResourceRequest API](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2environment2?view=webview2-1.0.721-prerelease#createwebresourcerequest)
     * [Cookie management API](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2cookiemanager?view=webview2-1.0.721-prerelease)
     * [DOMContentLoaded API](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease#add_domcontentloaded)
-    * Exposed [environment property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease#get_environment) from ICoreWebView2
+    * [WebView Environment property](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease#get_environment) from ICoreWebView2
 
 #### .NET  
 
