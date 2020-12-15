@@ -108,6 +108,8 @@ Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
 microsoft-edge-dev --auto-open-devtools-for-tabs
 ```  
 
+* * *  
+
 ## Turn off F12 opening DevTools  
 
 If you do not want `F12` to open the DevTools, complete the following actions.
