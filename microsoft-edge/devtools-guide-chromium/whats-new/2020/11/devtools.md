@@ -197,10 +197,10 @@ For example, the red highlight displays a multi-press keyboard shortcut customiz
 
 ## DevTools now match browser language  
 
-In Microsoft Edge version 87, if the **Match browser language** setting was turned on in [DevTools Settings][DevtoolsCustomizeIndexSettings], DevTools did not match the browser language.  In Microsoft Edge version 88, DevTools now matches the browser language if the **Match browser language** setting is turned on.  For more information about the **Match browser language** DevTools Setting, navigate to [Change DevTools language settings][DevtoolsCustomizeLocalization].  
+In Microsoft Edge version 87, if you turned on the **Match browser language** setting in [DevTools Settings][DevtoolsCustomizeIndexSettings], DevTools did not match the browser language.  In Microsoft Edge version 88, DevTools now matches the browser language if you turn on the **Match browser language** setting.  For more information about the **Match browser language** DevTools Setting, navigate to [Change DevTools language settings][DevtoolsCustomizeLocalization].  
 
-:::image type="complex" source="../../media/2020/11/match-browser-language-setting.msft.png" alt-text="Match browser language DevTools setting in German" lightbox="../../media/2020/11/match-browser-language-setting.msft.png":::
-   **Match browser language** DevTools setting in German  
+:::image type="complex" source="../../media/2020/11/startpage-devtools-settings-japanese.msft.png" alt-text="Match browser language DevTools setting in Japanese" lightbox="../../media/2020/11/startpage-devtools-settings-japanese.msft.png":::
+   **Match browser language** DevTools setting in Japanese  
 :::image-end:::  
 
 ## Announcements from the Chromium project  
