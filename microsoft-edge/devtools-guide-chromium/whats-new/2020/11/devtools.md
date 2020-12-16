@@ -3,7 +3,7 @@ description: Microsoft Edge on Linux, improved webhint tips in the Issues tool, 
 title: What's new in DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -195,6 +195,14 @@ For example, the red highlight displays a multi-press keyboard shortcut customiz
    Multi-press keyboard shortcuts  
 :::image-end:::  
 
+## DevTools now match browser language  
+
+In Microsoft Edge version 87, if you turned on the **Match browser language** setting in [DevTools Settings][DevtoolsCustomizeIndexSettings], DevTools did not match the browser language.  In Microsoft Edge version 88, DevTools now matches the browser language if you turn on the **Match browser language** setting.  For more information about the **Match browser language** DevTools Setting, navigate to [Change DevTools language settings][DevtoolsCustomizeLocalization].  
+
+:::image type="complex" source="../../media/2020/11/startpage-devtools-settings-japanese.msft.png" alt-text="Match browser language DevTools setting in Japanese" lightbox="../../media/2020/11/startpage-devtools-settings-japanese.msft.png":::
+   **Match browser language** DevTools setting in Japanese  
+:::image-end:::  
+
 ## Announcements from the Chromium project  
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
@@ -328,6 +336,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [Devtools3dViewIndex]: /microsoft-edge/devtools-guide-chromium/3d-view/index "3D View | Microsoft Docs"  
 [DevtoolsConsoleIndex]: /microsoft-edge/devtools-guide-chromium/console/index "Console Overview | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeLocalization]: /microsoft-edge/devtools-guide-chromium/customize/localization "Change DevTools language settings | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  
 [DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  
