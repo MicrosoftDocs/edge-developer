@@ -1,11 +1,11 @@
 ---
-description: DevTools Protocol Version 0.1 (EdgeHTML) Reference for the Schema Domain. Provides information about the protocol schema.
+description: DevTools Protocol Version 0.2 (EdgeHTML) Reference for the Schema Domain. Provides information about the protocol schema.
 title: Schema Domain - DevTools Protocol Version 0.2 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.date: 11/19/2020
+ms.date: 12/16/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Schema Domain - DevTools Protocol Version 0.2 (EdgeHTML)  
