@@ -233,10 +233,8 @@
               href: devtools-guide-chromium/customize/localization.md
             - name: Shortcuts
               href: devtools-guide-chromium/customize/shortcuts.md
-    - name: DevTools Protocol
-      items:
-        - name: DevTools Protocol overview
-          href: devtools-protocol-chromium/index.md
+    - name: DevTools Protocol overview
+      href: devtools-protocol-chromium/index.md
     - name: Extensions
       items: 
         - name: Extensions overview
@@ -289,14 +287,10 @@
               href: extensions-chromium/enterprise/match-patterns.md
             - name: Hosting and updating
               href: extensions-chromium/enterprise/hosting-and-updating.md
-    - name: Origin Trials
-      items:
-        - name: Origin Trials overview
-          href: origin-trials/index.md
+    - name: Origin Trials overview
+      href: origin-trials/index.md
     - name: Privacy whitepaper
-      items:
-        - name: Privacy whitepaper
-          href: privacy-whitepaper/index.md
+      href: privacy-whitepaper/index.md
     - name: Progressive Web Apps
       items:
         - name: Progressive Web Apps overview
@@ -309,29 +303,28 @@
           href: progressive-web-apps-chromium/serviceworker.md
         - name: Web app manifests
           href: progressive-web-apps-chromium/webappmanifests.md
-    - name: Playwright
+    - name: Playwright overview
       href: playwright/index.md
-    - name: Puppeteer
+    - name: Puppeteer overview
+      href: puppeteer/index.md
+    - name: Visual Studio overview
+      href: visual-studio/index.md
+    - name: Visual Studio Code
       items:
-        - name: Puppeteer overview
-          href: puppeteer/index.md
-    - name: Visual Studio
-      items:
-        - name: Visual Studio overview
-          href: visual-studio/index.md
         - name: Visual Studio Code overview
           href: visual-studio-code/index.md
-          items: 
-            - name: Debugger for Edge extension
-              href: visual-studio-code/debugger-for-edge.md
-            - name: Microsoft Edge Devtools extension
-              href: visual-studio-code/microsoft-edge-devtools-extension.md
-            - name: webhint extension
-              href: visual-studio-code/webhint.md
+        - name: Debugger for Edge extension
+          href: visual-studio-code/debugger-for-edge.md
+        - name: Microsoft Edge Devtools extension
+          href: visual-studio-code/microsoft-edge-devtools-extension.md
+        - name: webhint extension
+          href: visual-studio-code/webhint.md
     - name: WebDriver
       items:
         - name: WebDriver overview
           href: webdriver-chromium/index.md
+        - name: Capabilities and EdgeOptions
+          href: webdriver-chromium/capabilities-edge-options.md
     - name: Web platform
       items: 
         - name: Site compatibility-impacting changes coming to Microsoft Edge
