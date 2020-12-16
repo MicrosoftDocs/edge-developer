@@ -3,7 +3,7 @@ description: Microsoft Edge on Linux, improved webhint tips in the Issues tool, 
 title: What's new in DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -197,11 +197,10 @@ For example, the red highlight displays a multi-press keyboard shortcut customiz
 
 ## DevTools now match browser language  
 
-In Microsoft Edge version 87, DevTools did not match the browser language even if the **Match browser language** setting was turned on in [DevTools Settings][DevtoolsSettingsIndex].  In Microsoft Edge version 88, DevTools will now match the browser language as long as the **Match browser language** setting is turned on.  Navigate to `edge://settings/languages` to set the language for the browser.  If you open DevTools, they will match the language you set for the browser.  For more information about the **Match browser language** DevTools Setting, navigate to [Change DevTools language settings
-][DevtoolsLocalization].  
+In Microsoft Edge version 87, if the **Match browser language** setting was turned on in [DevTools Settings][DevtoolsCustomizeIndexSettings], DevTools did not match the browser language.  In Microsoft Edge version 88, after the **Match browser language** setting is turned on, DevTools now matches the browser language.  <!--To set the language for the browser, navigate to `edge://settings/languages`.  Open DevTools to display the language that you set for the browser.  -->  For more information about the **Match browser language** DevTools Setting, navigate to [Change DevTools language settings][DevtoolsCustomizeLocalization].  
 
-:::image type="complex" source="../../media/2020/01/localized-devtools.msft.png" alt-text="DevTools in German" lightbox="../../media/2020/01/localized-devtools.msft.png":::
-   DevTools in German  
+:::image type="complex" source="../../media/2020/11/startpage-devtools-japanese.msft.png" alt-text="DevTools in Japanese" lightbox="../../media/2020/11/startpage-devtools-japanese.msft.png":::
+   DevTools in Japanese  
 :::image-end:::  
 
 ## Announcements from the Chromium project  
@@ -337,14 +336,13 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [Devtools3dViewIndex]: /microsoft-edge/devtools-guide-chromium/3d-view/index "3D View | Microsoft Docs"  
 [DevtoolsConsoleIndex]: /microsoft-edge/devtools-guide-chromium/console/index "Console Overview | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeLocalization]: /microsoft-edge/devtools-guide-chromium/customize/localization "Change DevTools language settings | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: /microsoft-edge/devtools-guide-chromium/experimental-features#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  
 [DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  
 [DevtoolsIssuesIndex]: /microsoft-edge/devtools-guide-chromium/issues/index "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
-[DevtoolsLocalization]: /microsoft-edge/devtools-guide-chromium/customize/localization "Change DevTools language settings | Microsoft Docs"
 [DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: /microsoft-edge/devtools-guide-chromium/network/reference#copy-formatted-response-json-to-the-clipboard "Copy formatted response JSON to the clipboard - Network Analysis reference | Microsoft Docs"  
 [DevtoolsNetworkReferenceViewTimingBreakdownRequest]: /microsoft-edge/devtools-guide-chromium/network/reference#view-the-timing-breakdown-of-a-request "View the timing breakdown of a request - Network Analysis reference | Microsoft Docs"  
-[DevtoolsSettingsIndex]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Settings - Customize Microsoft Edge DevTools | Mirosoft Docs"
 [WebDriverChromiumMain]: /microsoft-edge/webdriver-chromium "Use WebDriver (Chromium) for test automation | Microsoft Docs"  
 
 <!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: /microsoft-edge/devtools-guide-chromium/css/reference#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->  
