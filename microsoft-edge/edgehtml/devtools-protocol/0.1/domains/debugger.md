@@ -1,12 +1,12 @@
 ---
-description: DevTools Protocol Version 0.2 (EdgeHTML) Reference for the Debugger Domain. Debugger domain exposes JavaScript debugging capabilities. It allows setting and removing breakpoints, stepping through execution, exploring stack traces, etc.
+description: DevTools Protocol Version 0.1 (EdgeHTML) Reference for the Debugger Domain. Debugger domain exposes JavaScript debugging capabilities. It allows setting and removing breakpoints, stepping through execution, exploring stack traces, etc.
 title: Debugger Domain - DevTools Protocol Version 0.1 (EdgeHTML)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.date: 11/19/2020
+ms.date: 12/16/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Debugger Domain - DevTools Protocol Version 0.1 (EdgeHTML)  
