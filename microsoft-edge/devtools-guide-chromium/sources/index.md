@@ -3,7 +3,7 @@ description: Display and edit files, create Snippets, debug JavaScript, and set 
 title: Sources panel overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020 
+ms.date: 12/17/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -122,7 +122,7 @@ Navigate to [Edit Files With Workspaces][DevtoolsGuideChromiumWorkspacesIndex] t
 
 <!-- image links -->  
 
-[ImageRunIcon]: ./media/run-snippet-icon.msft.png  
+[ImageRunIcon]: ../media/run-snippet-icon.msft.png  
 
 <!-- links -->  
 
