@@ -3,12 +3,11 @@ description: This guide gives you an overview of PWA basics and tools for buildi
 title: Get started with Progressive Web Apps (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/01/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, service worker, push
 ---
-
 # Get started with Progressive Web Apps (Chromium)  
 
 Progressive Web Apps \(PWAs\) are web apps that are [progressively enhanced][WikiProgressiveEnhancement].  The progressive enhancements include app-like features, such as installation, offline support, and push notifications.  You may also package your PWA for app stores.  Possible app stores include the Microsoft Store, Google Play, Mac App Store, and more.  The Microsoft Store is the commercial app store built into Windows 10.  
@@ -22,7 +21,7 @@ The following guide gives you an overview of PWA basics by creating a simple web
 
 *   Use [Visual Studio Code][VisualstudioCodeMain] to edit your PWA source code.  
 *   Use [Node.js][NodejsMain] as your local web server.  
-
+    
 ## Create a basic web app  
 
 To create an empty web app, follow the steps in [Node Express App Generator][ExpressjsApplicationGenerator], and name your app `MySamplePwa`.  
@@ -113,7 +112,7 @@ Service workers are background tasks that intercept network requests from your w
 *   Running background fetch tasks  
 *   Badging icons  
 *   and more  
-
+    
 Service workers are defined in a special JavaScript file.  For more information, navigate to [Using Service Workers][MDNUsingServiceWorkers] and [Service Worker API][MDNServiceWorkerApi].  
 
 To build a service worker in your project, use the **Cache-first network** service worker recipe from [PWA Builder][PwaBuilderServiceWorker].  
@@ -122,9 +121,8 @@ To build a service worker in your project, use the **Cache-first network** servi
     
     *   `pwabuilder-sw-register.js`  
     *   `pwabuilder-sw.js`  
-    
+        
 1.  Copy the downloaded files to the `public` folder in your web app project.  
-    
 1.  In Visual Studio Code, open `/public/index.html` and add the following code snippet inside the `<head>` tag.  
     
     ```html
@@ -142,7 +140,7 @@ Use the following steps to confirm that your service worker runs.
     ```
     
 1.  In Microsoft Edge, select `F12` to open the Microsoft Edge DevTools.  Select **Application**, then **Service Workers** to view the service workers.  If the service worker is not displayed, refresh the page.  
-     
+    
     :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Microsoft Edge DevTools Service Worker overview" lightbox="./media/devtools-sw-overview.png":::
        Microsoft Edge DevTools Service Worker overview
     :::image-end:::
@@ -285,6 +283,7 @@ To test push notifications for your PWA, complete the following steps.
     :::image-end:::
     
 1.  Simulate a server-side push notification.  With your PWA opened at `http://localhost:3000` in your browser, select `F12` to open the DevTools.  Choose **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.  
+    
     :::row:::
        :::column span="":::
           A push notification should display near the taskbar.  
@@ -312,7 +311,7 @@ The following steps include additional tasks to help you understand building rea
 *   Deep-linking  
 *   [Cross-browser testing][BrowserStackTestEdgeBrowser]  
 *   Implement validation and testing practices such as [Webhint][Webhint]  
-   
+    
 ## See also  
 
 *   [Progressive Web Apps on MDN web docs][MDNProgressiveWebApps]  
@@ -334,7 +333,7 @@ The following steps include additional tasks to help you understand building rea
 
 <!-- links -->  
 
-<!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps-edgehtml/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
+<!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
 
 [VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "Deploy a Node.js app to Azure with Visual Studio Code | Microsoft Docs"  
 

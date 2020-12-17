@@ -3,7 +3,7 @@ description: How to view and change IndexedDB data with the Application panel an
 title: View And Change IndexedDB Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 12/11/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -28,13 +28,13 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 ## View IndexedDB data  
 
-1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane usually opens by default.  
+1.  Choose the **Application** tab to open the **Application** tool.  The **Manifest** pane usually opens by default.  
     
     :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest-empty.msft.png":::
        The **Manifest** pane  
     :::image-end:::  
     
-1.  Expand the **IndexedDB** menu to see which databases are available.  
+1.  Expand the **IndexedDB** menu to review which databases are available.  
     
     :::image type="complex" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="The IndexedDB menu" lightbox="../media/storage-application-storage-indexeddb.msft.png":::
        The **IndexedDB** menu  
@@ -45,33 +45,33 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
     *   **title** and **body** are [indexes][MDNUsingIndexedDBUsingIndex].  
     
     > [!NOTE]
-    > **Known Limitation**  Third-party databases are not visible.  For example, if you use an `<iframe>` to embed an ad on your page, and your ad network uses IndexedDB, the IndexedDB data for your ad network is not be visible.  See [issue #943770][ChromiumIssue943770].  
+    > **Known Limitation**  Third-party databases are not visible.  For example, if you use an `<iframe>` to embed an ad on your page, and your ad network uses IndexedDB, the IndexedDB data for your ad network is not be visible.  Navigate to [issue #943770][ChromiumIssue943770].  
     
-1.  Select a database to see the origin and version number.  
+1.  Choose a database to review the origin and version number.  
     
     :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db.msft.png" alt-text="The notes database" lightbox="../media/storage-application-storage-indexeddb-notes_db.msft.png":::
        The **notes** database  
     :::image-end:::  
     
-1.  Select an object store to see the key-value pairs.  
+1.  Choose an object store to review the key-value pairs.  
     
     > [!NOTE]
-    > IndexedDB data does not update in real-time.  See [Refresh IndexedDB data](#refresh-indexeddb-data).  
+    > IndexedDB data does not update in real-time.  Navigate to [Refresh IndexedDB data](#refresh-indexeddb-data).  
     
     :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png" alt-text="The notes object store" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png":::
        The **notes** object store  
     :::image-end:::  
     
     *   **Total entries** is the total number of key-value pairs in the object store.  
-    *   **Key generator value** is the next available key.  This field is only shown when using [key generators][MDNBasicConceptsKeyGenerator].  
+    *   **Key generator value** is the next available key.  The field is only shown when using [key generators][MDNBasicConceptsKeyGenerator].  
     
-1.  Select a cell in the **Value** column to expand that value.  
+1.  Choose a cell in the **Value** column to expand the value.  
     
     :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png" alt-text="View an IndexedDB value" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png":::
        View an **IndexedDB** value  
     :::image-end:::  
     
-1.  Select an index, such as **title** or **body** in the following figure, to sort the object store according to the values of that index.  
+1.  Choose an index, such as **title** or **body** in the following figure, to sort the object store according to the values of that index.  
    
     :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="Sort an object store by an index" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
        Sort an object store by an index  
@@ -79,7 +79,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
     
 ## Refresh IndexedDB data  
 
-IndexedDB values in the **Application** panel do not update in real-time.  Choose **Refresh** \(![Refresh][ImageReloadIcon]\) when viewing an object store to refresh the data, or view a database and choose **Refresh database** to refresh all data.  
+IndexedDB values in the **Application** tool do not update in real-time.  Choose **Refresh** \(![Refresh][ImageReloadIcon]\) when viewing an object store to refresh the data, or view a database and choose **Refresh database** to refresh all data.  
 
 :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="View a database" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
    View a database  
@@ -87,7 +87,7 @@ IndexedDB values in the **Application** panel do not update in real-time.  Choos
 
 ## Edit IndexedDB data  
 
-IndexedDB keys and values are not editable from the **Application** panel.  Since DevTools has access to page context, however, you may run JavaScript code within DevTools to edit IndexedDB data.  
+IndexedDB keys and values are not editable from the **Application** tool.  Since DevTools has access to page context, however, you may run JavaScript code within DevTools to edit IndexedDB data.  
 
 ### Edit IndexedDB data with Snippets  
 
@@ -157,7 +157,7 @@ IndexedDB keys and values are not editable from the **Application** panel.  Sinc
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
 [DevtoolsJavascriptSnippets]: ../javascript/snippets.md "Run snippets of JavaScript on any page with Microsoft Edge DevTools | Microsoft Docs"  
 
 [ChromiumIssue943770]: https://crbug.com/943770 "943770 - DevTools: Show iframe IndexedDB databases - chromium - Monorail"  

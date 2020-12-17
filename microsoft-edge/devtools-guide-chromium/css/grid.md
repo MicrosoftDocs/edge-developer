@@ -3,7 +3,7 @@ description: Learn how to use Microsoft Edge DevTools to view and change the CSS
 title: Inspect CSS Grid in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/22/2020 
+ms.date: 12/11/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -91,7 +91,6 @@ Select **Hide line labels** to hide the line numbers.
 
 ### Show line names  
 
-<!--todo: @rachel verify the link and text for line name -->  
 For more information about line names in the grid overlay, navigate to [Layout using named grid lines][MdnLayoutUsingNamedGridLines].  
 
 Select **Show line names** to view the line names instead of numbers.  In the example, 4 lines have names: `left`, `middle1`, `middle2`, and `right`.  
@@ -153,8 +152,6 @@ The **Grid overlays** section contains a list of grids that are present on the p
 
 ### Enable overlay views of multiple grids  
 
-<!--todo: @zoher verify and provide updates -->  
-
 To display the overlay grid for multiple grids, choose the checkbox next to each name of the grid.  In the example, there are 2 grid overlays enabled that are each represented with different colors.  
 
 *   `main`  
@@ -190,7 +187,7 @@ To highlight the HTML element in the **Elements** panel and scroll to it on the 
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
 [JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "CSS grid | jec.fyi"  
 [JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "CSS grid | jec.fyi"  
