@@ -10,50 +10,43 @@ keywords: microsoft edge, compatibility, web platform, password reveal, eye icon
 ---
 # Customizing the password reveal button  
 
-The `password` input type in Microsoft Edge includes a **password reveal** button.  This control enables your user to verify the password is entered correctly in the **password** field.  After a user has entered text in the **password** field, the user may choose the **password reveal** button or select `Alt`+`F8` to toggle visibility of their input:  
+The `password` input type in Microsoft Edge includes a **password reveal** button.  This control enables a user to verify their password is entered correctly in the **password** field.  After a user has entered text in the **password** field, they may choose the **password reveal** button or select `Alt`+`F8` to toggle visibility of their input:  
 
 :::row:::
    :::column span="":::
-      A **password** field with dots hiding the characters entered by a user.  An icon shaped like an eye is displayed within the right-hand side of the **password** field.  
+      The password reveal button appears during text entry
       
-      :::image type="complex" source="../media/web-platform/password-reveal/password-eye.png" alt-text="The password reveal button appears during text entry" lightbox="../media/web-platform/password-reveal/password-eye.png":::
-         The **password reveal** button appears during text entry  
+      :::image type="complex" source="../media/web-platform/password-reveal/password-eye.png" alt-text="A **password** field with dots hiding the characters entered by a user.  An icon shaped like an eye is displayed within the right-hand side of the **password** field.  " lightbox="../media/web-platform/password-reveal/password-eye.png":::
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      The eye icon in the same **password** field now has a stroke through it, and the characters are revealed.
+      Invoke the password reveal button to turn the obfuscated dots into original the user input
       
-      :::image type="complex" source="../media/web-platform/password-reveal/password-toggled.png" alt-text="Invoke the password reveal button to turn the obfuscated dots into original the user input" lightbox="../media/web-platform/password-reveal/password-toggled.png":::
-         Invoke the **password reveal** button to turn the obfuscated dots into original the user input  
+      :::image type="complex" source="../media/web-platform/password-reveal/password-toggled.png" alt-text="The eye icon in the same **password** field now has a stroke through it, and the characters are revealed." lightbox="../media/web-platform/password-reveal/password-toggled.png":::
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
+By default, the **password reveal** button is inserted into the Shadow DOM of all HTML `input`s with `type` set to `"password"`.  Starting with Microsoft Edge Version 87, users or [enterprises][DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled] may disable this feature globally.  Web designers and developers should expect most Microsoft Edge users to have the default experience.  
 
 
+## Removing the browser's password reveal control
 
+Web developers may completely remove the browser's **password reveal** control by targeting the `::-ms-reveal` pseudo element.  
 
-
-By default, the **password reveal** button is inserted into the Shadow DOM of all HTML inputs of that have `type` set to `"password"`.  Starting with Microsoft Edge Version 87, users or [enterprises][DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled] may disable this feature globally.  Web designers and developers should expect most Microsoft Edge users to have the default experience.  
-
-
-## Removing the password reveal control of the browser  
-
-You \(the web developer\) may completely remove the **password reveal** control of the browser \(for example, instead of using your **password reveal** control\) by targeting the `::-ms-reveal` pseudo element.  
-
-```javascript
+```css
 ::-ms-reveal {
     display: none;
 }
 ```  
 
-However, you should take advantage **password reveal** button of the browser on your website.  The behavior of the **password reveal** control has important [security measures](#visibility-of-the-control) built into it.  
+However, web developers should consider taking advantage of the browser's **password reveal** button. The native **password reveal** control has important [security measures](#visibility-of-the-control) built into its behavior.  
 
 ## Customizing control styling  
 
-You may instead modify the styling of the **password reveal** button to better matches the visual language of the website.  The following code snippet implements a modification.  
+Instead of fully removing the control, web developers can instead modify the styling of the **password reveal** button to better match the visual language of the website. The following snippet provides an example of such styling.  
 
-```javascript
+```css
 ::-ms-reveal {
     border: 1px solid transparent;
     border-radius: 50%;
@@ -61,21 +54,21 @@ You may instead modify the styling of the **password reveal** button to better m
 }
 ```  
 
-The following list describes some things to keep in mind when styling the **password reveal** button.  
+There are a few things to keep in mind when styling the **password reveal** button:  
 
-*   The **eye** iconography of the browser is implemented as a background image.  To add a background color to the **password reveal** button, use the CSS `background-color` property instead of the `background` shorthand property.  
-*   You may adjust the size and scale of the **password reveal** button, but it is limited to the bounds of the password input control \(if applicable\).  
-*   No current state selectors are available to style the toggled state of the **password reveal** button.  
+*   The browser's **eye** iconography is implemented as a background image.  To add a background color to the **password reveal** button, use the CSS `background-color` property instead of the `background` shorthand property.  
+*   Developers may adjust the size and scale of the **password reveal** button, but any overflow \(if applicable\) past the bounds of the password input control will be hidden.  
+*   At present, no state selectors are available to style the toggled state of the **password reveal** button.  
     
 ## Visibility of the control  
 
-While trying out the **password reveal** button, you should understand when it is displayed.  The **password reveal** control is not available until the user enters text into the **password** field.  For added security, the following actions may occur.  
+The **password reveal** button is not available until the user enters text into the **password** field. The button is suppressed in the following scenarios, in order to help keep the user's password entry secure.
 
 *   The **password reveal** button is removed if focus moves away from the **password** field.  
 *   The **password reveal** button is removed if scripts modify the **password** field.  
-*   If a user removes the **password reveal** button, the user must delete the content of the **password** field before the **password reveal** button displays again.  The feature prevents changes that may display the password.  
+*   If a user removes the **password reveal** button, the user must delete the content of the **password** field before the **password reveal** button displays again.  This feature prevents someone from making a minor adjustment in order to view the password, should the user step away from an unlocked device.
     
-The **password reveal** button is not available in fields that are autofilled using the  password manager of the browser.  
+The **password reveal** button is not available in fields that are autofilled using the browser's password manager.  
 
 <!-- links -->  
 
