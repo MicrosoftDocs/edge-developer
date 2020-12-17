@@ -210,15 +210,15 @@
         - name: Media
           href: devtools-guide-chromium/media-panel/index.md
         - name: WebAuthn
-          href: devtools-guide-chromium/WebAuthn/index.md
+          href: devtools-guide-chromium/webauthn/index.md
         - name: Workspaces
           href: devtools-guide-chromium/workspaces/index.md
         - name: Progressive web apps
-          href: devtools-guide-chromium/progressive-web-apps.md
+          href: devtools-guide-chromium/progressive-web-apps/index.md
         - name: Security
           href: devtools-guide-chromium/security/index.md
         - name: Keyboard shortcuts
-          href: devtools-guide-chromium/shortcuts.md
+          href: devtools-guide-chromium/shortcuts/index.md
         - name: Resources
           href: devtools-guide-chromium/resources/index.md
         - name: Customize
