@@ -3,14 +3,14 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 09/01/2020 
+ms.date: 12/09/2020 
 ---
 Use the following options to discuss the new features and changes in the post, or anything else related to DevTools.  
 
 *   Send your feedback using the **Send Feedback** icon in DevTools.  
 *   Tweet at [@EdgeDevTools][PostTweetEdgeDevTools].  
 *   Submit a suggestion to [The Web We Want][TheWebWeWant].  
-*   File bugs on this article using the [Feedback](#feedback) section.  
+*   To file bugs about this article, use the following **Feedback** section.  
 
 :::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
    The **Send Feedback** icon in Microsoft Edge DevTools  

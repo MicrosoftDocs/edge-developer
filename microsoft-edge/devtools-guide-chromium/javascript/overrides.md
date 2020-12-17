@@ -3,7 +3,7 @@ description: The Overrides feature is a feature within the Sources tool of Micro
 title: Override webpage resources with local copies using Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/29/2020 
+ms.date: 12/11/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -119,4 +119,4 @@ Use the editor provided with the **Sources** tool of DevTools or any editor you 
 
 <!-- links -->  
 
-[DevToolsSourcesTool]: ../sources.md "Sources tool overview | Microsoft Docs"  
+[DevToolsSourcesTool]: ../sources/index.md "Sources tool overview | Microsoft Docs"  

@@ -1,53 +1,43 @@
 ---
-description: Process of porting Chrome Extension to Microsoft Edge.
-title: Port Chrome Extension To Microsoft (Chromium)Edge
+description: Process of porting Chrome extension to Microsoft Edge.
+title: Port Chrome extension To Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 11/25/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ---
+# Port your extension  
 
-# Port Chrome Extension To Microsoft \(Chromium\) Edge  
+Microsoft Edge allows you to port your Chrome extension with minimal changes.  The Extension APIs and manifest keys supported by Chrome are code-compatible with Microsoft Edge.  For a list of APIs supported by Microsoft Edge, navigate to [API support][ExtensionApiSupport].  
 
-The process of porting a Chrome Extension to Microsoft Edge is very straightforward.  Extensions written for Chromium, in most cases, run on Microsoft Edge with minimal changes.  The Extension APIs and manifest keys supported by Chrome are code-compatible with Microsoft Edge.  However, Microsoft Edge does not support the following Extension APIs:  
+To port your Chrome extension, complete the following steps.  
 
-*   `chrome.gcm`  
-*   `chrome.identity.getAccounts`  
-*   `chrome.identity.getAuthToken`  
-*   `chrome.instanceID`  
-
-> [!Note]
-> The user must be signed into Microsoft Edge using an MSA or AAD account in order to use the `chrome.identity.getProfileUserInfo` API.  If the user is signed into Microsoft Edge using **On-premise AD**, the API returns `null` for the email and ID values.  
-
-> [!IMPORTANT]
-> **Payments**:  Microsoft Edge does not directly support an Extension that uses [Chrome Web Store payments][ChromeDeveloperWebStorePayments] due to the requirement to use the `identity.getAuthtoken` request to get the token for signed-in users to send the REST-based licensing API request.  Microsoft Edge does not support the `getAuthtoken` request, so this flow does not work.  
-
-To port your Chrome Extension, follow these steps:  
-
-1.  Review the Chrome Extension APIs used in your Extensions.  If you are using features or APIs that are not supported by Microsoft Edge, you may not be able to port your Extension.  
+1.  Review the Chrome extension APIs used in your extensions with the Microsoft Edge extensions [supported APIs][ExtensionApiSupport] list.  
     
     > [!NOTE]
-    > The `getAuthToken` API does not work with Microsoft Edge, however you may use `launchWebAuthFlow` to fetch an OAuth2 token to authenticate users.  
+    > If your extension uses APIs that are not supported by Microsoft Edge, it may not port directly.  
     
-1.  If you are using `Chrome` in the name or description of your Extension, re-brand the Extension for `Microsoft Edge`.  You must pass the certification process.  
-    
-1.  Test your Extension to check if it works in Microsoft Edge.  The first step to do this is to ensure that you have Extension developer features turned on.  This enables you to side load Extension files in Microsoft Edge so that you are able to test your Extension while developing it.  
-    
-1.  If you have any issues, debug your Extensions in Microsoft Edge by using the DevTools, or [contact us][mailtoExtensionPartnerOpsMicrosoft].  
-    
-1.  Now your Extension is finally polished up and ready to be packaged.  If you wish to prepare for submission to the Microsoft Edge Addons catalog \(Microsoft Edge Addons\), you do not need to package your Extension.  Further, follow our [publishing guidelines][ExtensionsPublishExtension] to publish your Extension on Microsoft Edge Addons.  
+1.  If the name `Chrome` is being used in either the name or the description of the extension, rebrand the extension for `Microsoft Edge`.  This step is required to pass the certification process.  
+1.  Test your extension to check if it works in Microsoft Edge by [sideloading your extension][ExtensionsGettingStartedExtensionSideloading].  
+1.  If you face any issues, you may debug your extensions in Microsoft Edge by using the DevTools, or [contact us][mailtoExtensionMicrosoft].  
+1.  Follow the [publishing guidelines][ExtensionsPublishPublishExtension] to publish your extension on Microsoft Edge Add-ons store.  
     
     > [!NOTE]
-    > If your Extension exchanges messages with a native application using `chrome.runtime.connectNative` API, ensure that you set `allowedorigins` to "`extension://[Microsoft-Catalog-extensionID]`" in your native messaging host manifest file.  This enables the app to identify the Extension.  
+    > If the extension exchanges messages with a native app using `chrome.runtime.connectNative` API, ensure that you set `allowed_origins` to `extension://[Microsoft-Catalog-extensionID]` in your native messaging host manifest file.  This enables the app to identify the extension.  
+    
+## Next steps  
 
-<!-- image links -->  
+Once your extension package is ready to be published to Microsoft Edge add-ons store, [create a developer account][ExtensionsPublishCreateDevAccount] and [publish your extension][ExtensionsPublishPublishExtension].  
 
 <!-- links -->  
 
-[ExtensionsPublishExtension]: ../publish/publish-extension.md "Publish An Extension"  
+[ExtensionApiSupport]: ./api-support.md "API support | Microsoft Docs"  
+[ExtensionsGettingStartedExtensionSideloading]: ../getting-started/extension-sideloading.md "Sideload your extension | Microsoft Docs"  
+[ExtensionsPublishCreateDevAccount]: ../publish/create-dev-account.md "Developer registration | Microsoft Docs"  
+[ExtensionsPublishPublishExtension]: ../publish/publish-extension.md "Publish your extension | Microsoft Docs"  
 
-[mailtoExtensionPartnerOpsMicrosoft]: mailto:extensionpartnerops@microsoft.com "ExtensionPartnerOps@microsoft.com"  
+[ChromeDeveloperWebStorePayments]: https://developer.chrome.com/webstore/one_time_payments "One-Time Payments | Chrome Developer"  
 
-[ChromeDeveloperWebStorePayments]: https://developer.chrome.com/webstore/one_time_payments "One-Time Payments - Google Chrome"  
+[mailtoExtensionMicrosoft]: mailto:ext_dev_support@microsoft.com "ext_dev_support@microsoft.com"  

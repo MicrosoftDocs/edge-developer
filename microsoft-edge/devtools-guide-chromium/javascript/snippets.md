@@ -3,7 +3,7 @@ description: Snippets are small scripts that you may author and run within the S
 title: Run Snippets Of JavaScript On Any Page With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/29/2020 
+ms.date: 12/11/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -167,7 +167,7 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
 <!-- links -->  
 
 [DevtoolsConsoleIndex]: ../console/index.md "Console overview | Microsoft Docs"  
-[DevToolsSourcesTool]: ../sources.md "Sources tool overview | Microsoft Docs"  
+[DevToolsSourcesTool]: ../sources/index.md "Sources tool overview | Microsoft Docs"  
 [DevtoolsJavascriptOverrides]: ./overrides.md "Overrides | Microsoft Docs"  
 
 [MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Scratchpad | MDN"  
