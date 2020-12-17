@@ -3,7 +3,7 @@ description: A tutorial on the most popular network-related features in Microsof
 title: Inspect Network Activity In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 12/11/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -44,7 +44,7 @@ In general, use the Network panel when you need to make sure that resources are 
 *   Making sure that resources are actually being uploaded or downloaded at all.  
 *   Inspecting the properties of an individual resource, such as the HTTP headers, content, size, and so on.  
     
-If you are looking for ways to improve page load performance, **do not** start with the Network panel.  There are many types of load performance issues that are not related to network activity.  Start with the Audits panel because it gives you targeted suggestions on how to improve your page.  See [Optimize Website Speed][DevtoolsSpeedGetStarted].  
+If you are looking for ways to improve page load performance, **do not** start with the **Network** tool.  There are many types of load performance issues that are not related to network activity.  Start with the Audits panel because it gives you targeted suggestions on how to improve your page.  Navigate to [Optimize Website Speed][DevtoolsSpeedGetStarted].  
 
 ## Open the Network panel  
 
@@ -65,7 +65,7 @@ To get the most out of this tutorial, open up the demo and try out the features 
     -->
     
 1.  [Open DevTools][DevToolsOpen] by pressing `Control`+`Shift`+`J` \(Windows, Linux\) or
-   `Command`+`Option`+`J` \(macOS\).  The **Console** panel opens.  
+   `Command`+`Option`+`J` \(macOS\).  The **Console** tool opens.  
     
     :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="The Console" lightbox="../media/network-glitch-console.msft.png":::
        The **Console**  
@@ -122,7 +122,7 @@ To view the network activity that a page causes:
 The columns of the Network Log are configurable.  You may hide columns that you are not using.  
 There are also many columns that are hidden by default which you may find useful.  
 
-1.  Right-click the header of the Network Log table and choose **Domain**.  The domain of each resource is now shown.  
+1.  Hover on the header of the Network Log table, open the contextual menu \(right-click\), and choose **Domain**.  The domain of each resource is now shown.  
     
     :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Enable the Domain column" lightbox="../media/network-glitch-network-edit-column.msft.png":::
        Enable the Domain column  
@@ -135,7 +135,7 @@ There are also many columns that are hidden by default which you may find useful
 
 The network connection of the computer that you use to build sites is probably faster than the network connections of the mobile devices of your users.  By throttling the page, you get a better idea of how long a page takes to load on a mobile device.  
 
-1.  Select the **Throttling** dropdown, which is set to **Online** by default.  
+1.  Choose the **Throttling** dropdown, which is set to **Online** by default.  
     
     :::image type="complex" source="../media/network-glitch-network-throttling.msft.png" alt-text="Enable throttling" lightbox="../media/network-glitch-network-throttling.msft.png":::
        Enable throttling  
@@ -162,51 +162,51 @@ The network connection of the computer that you use to build sites is probably f
 
 Screenshots let you see how a page looked over time while it was loading.  
 
-1.  Select \(![Network settings][ImageSettingsIcon]\) and select the **Capture screenshots** checkbox.
-1.  Reload the page again via the **Empty Cache And Hard Reload** workflow.  See [Simulate a slower connection](#simulate-a-slower-network-connection) if you need a reminder on how to do this.  
+1.  Choose \(![Network settings][ImageSettingsIcon]\) and turn on the **Capture screenshots** checkbox.
+1.  Refresh the page again using the **Empty Cache And Hard Reload** workflow.  Navigate to [Simulate a slower connection](#simulate-a-slower-network-connection) if you need a reminder on how to do this.  
     The Screenshots pane provides thumbnails of how the page looked at various points during the loading process.  
     
     :::image type="complex" source="../media/network-glitch-network-screenshots.msft.png" alt-text="Screenshots of the page load" lightbox="../media/network-glitch-network-screenshots.msft.png":::
        Screenshots of the page load  
     :::image-end:::  
     
-1.  Select the first thumbnail.  DevTools shows you what network activity was occurring at that moment in time.  
+1.  Choose the first thumbnail.  DevTools shows you what network activity was occurring at that moment in time.  
     
     :::image type="complex" source="../media/network-glitch-network-screenshots-first.msft.png" alt-text="The network activity that was happening during the first screenshot" lightbox="../media/network-glitch-network-screenshots-first.msft.png":::
        The network activity that was happening during the first screenshot  
     :::image-end:::  
     
-1.  Select \(![Network settings][ImageSettingsIcon]\) again and deselect the **Capture screenshots** checkbox to close the Screenshots pane.
-1.  Reload the page again.  
+1.  Choose \(![Network settings][ImageSettingsIcon]\) again and turn off the **Capture screenshots** checkbox to close the Screenshots pane.
+1.  Refresh the page again.  
     
 ## Inspect the details of the resource  
 
-Select a resource to learn more information about it.  Try it now:  
+Choose a resource to learn more information about it.  Try it now:  
 
-1.  Select `getstarted.html`.  The **Headers** tab is shown.  Use this tab to inspect HTTP headers.  
+1.  Choose `getstarted.html`.  The **Headers** tab is shown.  Use this tab to inspect HTTP headers.  
     
     :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="The Headers tab" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
        The **Headers** tab  
     :::image-end:::  
     
-1.  Select the **Preview** tab.  A basic rendering of the HTML is shown.  
+1.  Choose the **Preview** tab.  A basic rendering of the HTML is shown.  
     
     :::image type="complex" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="The Preview tab" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
        The **Preview** tab  
     :::image-end:::  
     
-    This tab is helpful when an API returns an error code in HTML.  You may find it easier to read the rendered HTML than the HTML source code, or when you inspect images.  
+    The tab is helpful when an API returns an error code in HTML.  You may find it easier to read the rendered HTML than the HTML source code, or when you inspect images.  
 
-1.  Select the **Response** tab.  The HTML source code is shown.  
+1.  Choose the **Response** tab.  The HTML source code is shown.  
     
     :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="The Response tab" lightbox="../media/network-glitch-network-resources-response.msft.png":::
        The **Response** tab  
     :::image-end:::  
     
     > [!TIP]
-    > When a file is minified, selecting the **Format** \(![Format][ImageFormatIcon]\) button at the bottom of the **Response** tab re-formats the contents of the file for readability.  
+    > When a file is minified, choose the **Format** \(![Format][ImageFormatIcon]\) button at the bottom of the **Response** tab to re-format the contents of the file for readability.  
     
-1.  Select the **Timing** tab.  A breakdown of the network activity for this resource is shown.  
+1.  Choose the **Timing** tab.  A breakdown of the network activity for the resource is displayed.  
     
     :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="The Timing tab" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
        The **Timing** tab  
@@ -238,7 +238,7 @@ For example, suppose you want to verify that your resources are using reasonable
        Search results for `Cache-Control`  
     :::image-end:::  
     
-1.  Select a result to view the resource in which the result was found.  If you are looking at the details of the resource, select a result to go directly to it.  For example, if the query was found in a header, the Headers tab opens.   If the query was found in content, the **Response** tab opens.  
+1.  Choose a result to view the resource in which the result was found.  If you are looking at the details of the resource, select a result to go directly to it.  For example, if the query was found in a header, the Headers tab opens.   If the query was found in content, the **Response** tab opens.  
     
     :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="A search result highlighted in the Headers tab" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
        A search result highlighted in the **Headers** tab  
@@ -252,14 +252,13 @@ For example, suppose you want to verify that your resources are using reasonable
     
 ## Filter resources  
 
-DevTools provides numerous workflows for filtering out resources that are not relevant to the
-task at hand.  
+DevTools provides numerous workflows for filtering out resources that are not relevant to the task at hand.  
 
 :::image type="complex" source="../media/network-glitch-network-filter-empty.msft.png" alt-text="The Filters toolbar" lightbox="../media/network-glitch-network-filter-empty.msft.png":::
    The **Filters** toolbar  
 :::image-end:::  
 
-The **Filters** toolbar should be enabled by default.  If not:  
+The **Filters** toolbar should be turned on by default.  If not:  
 
 1.  Choose **Filter** \(![Filter][ImageFilterIcon]\) to show it.  
     
@@ -380,7 +379,7 @@ Navigate to the [Network Reference][DevtoolsNetworkReference] to discover more D
 [DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Filter requests - Network analysis reference | Microsoft Docs"  
 [DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "Hide the Overview pane - Network analysis reference | Microsoft Docs"
 [DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "Filter requests by properties - Network analysis reference | Microsoft Docs"
-[DevToolsOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimize website speed with Microsoft Edge DevTools | Microsoft Docs"  
 
 [GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "Inspect Network Activity Demo | Glitch"  

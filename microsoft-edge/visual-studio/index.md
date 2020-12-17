@@ -3,12 +3,11 @@ description: Microsoft Edge (Chromium) and Visual Studio
 title: Visual Studio
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/20/2019
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs, visual studio, debugger
 ---
-
 # Visual Studio
 
 Microsoft [Visual Studio](https://visualstudio.microsoft.com/vs/) is an integrated development environment (IDE) that you can use to edit, debug, build, and publish your web applications. It is a feature-rich program that can be used for many aspects of your web development. Over and above the standard editor and debugger that most IDEs provide, Visual Studio includes compilers, code completion tools, graphical designers, and many more features to ease your development process. Head to [this page](https://visualstudio.microsoft.com/downloads/) to download Visual Studio if you aren't using it yet.
@@ -77,7 +76,7 @@ The JavaScript debugger in Visual Studio is going to hit the breakpoint we set i
 > Visual Studio pausing JavaScript running in Microsoft Edge
 > ![Visual Studio pausing JavaScript running in Microsoft Edge](./media/hit-breakpoint.png)  
 
-This example was just a minor demonstration of the functionality available in Visual Studio. Learn more about all the things you can do in Visual Studio 2019 by reading [their documentation](https://docs.microsoft.com/visualstudio/windows/?view=vs-2019).
+This example was just a minor demonstration of the functionality available in Visual Studio. Learn more about all the things you can do in Visual Studio 2019 by reading [their documentation](/visualstudio/windows/?view=vs-2019&preserve-view=true).
 
 ## Attach to Microsoft Edge
 In the previous workflow, Visual Studio launches Microsoft Edge. With this workflow, you will be able to attach the Visual Studio debugger to an already running instance of Microsoft Edge. 

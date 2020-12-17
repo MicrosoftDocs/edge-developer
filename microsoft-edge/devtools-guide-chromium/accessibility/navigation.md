@@ -3,7 +3,7 @@ description: A guide on navigating Microsoft Edge DevTools using assistive techn
 title: Navigate Microsoft Edge DevTools with assistive technology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 12/11/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -24,7 +24,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Navigate Microsoft Edge DevTools with assistive technology  
 
-The following article aims to help users who primarily rely on assistive technology like screen readers access and use [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] is a suite of web developer tools built into the Microsoft Edge browser.  If you are looking for DevTools features related to improving the accessibility of a web page,  see [Accessibility Reference][DevtoolsAccessibilityReference].  
+The following article aims to help users who primarily rely on assistive technology like screen readers access and use [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] is a suite of web developer tools built into the Microsoft Edge browser.  If you are looking for DevTools features related to improving the accessibility of a web page,  navigate to [Accessibility Reference][DevtoolsAccessibilityReference].  
 
 The accessibility of DevTools is a work-in-progress.  Some panels and tabs work better with assistive technology than others.  This guide walks you through the panels which are the most accessible and highlights specific issues you may encounter along the way.  
 
@@ -38,7 +38,7 @@ For example:
 *   The [Console panel][DevtoolsConsoleIndex] lets you read JavaScript logs and live edit objects.  
 
 Within the content area of each panel, there are a number of different tools, often referred to as tabs or panes in the documentation.  
-For instance, the **Elements** panel contains additional tabs to inspect event listeners, the accessibility tree, and much more.  The distinction between tabs and panes is somewhat arbitrary.  The only reason you may see one term or the other is to maintain consistency with the rest of the official DevTools documentation.  
+For instance, the **Elements** panel contains additional tabs to inspect event listeners, the accessibility tree, and much more.  The distinction between tabs and panes is somewhat arbitrary.  The only reason you may review one term or the other is to maintain consistency with the rest of the official DevTools documentation.  
 
 ## Keyboard shortcuts  
 
@@ -167,7 +167,7 @@ To toggle the state of an element, such as `:active` or `:focus`:
 
 Adjacent to the **Toggle Element State** button is the **Element Classes** button.  To move the focus to it, select `Tab` and select `Enter`.  Focus moves into an edit text field labeled **Add New Class**.  
 
-The **Element Classes** button is primarily used for adding existing classes to an element.  For example, if your stylesheet contained a helper class named `.clearfix` you may select `.` inside of the edit text field to see a suggestion list of classes and use the `Down Arrow` to find the `.clearfix` suggestion.  Or type the class name out yourself and select `Enter` to apply it.  
+The **Element Classes** button is primarily used for adding existing classes to an element.  For example, if your stylesheet contained a helper class named `.clearfix` you may select `.` inside of the edit text field to display a suggestion list of classes and use the `Down Arrow` to find the `.clearfix` suggestion.  Or type the class name out yourself and select `Enter` to apply it.  
 
 #### Add a new style rule  
 
@@ -240,7 +240,7 @@ To run a new audit, use `Shift`+`Tab` to exit the report and look for the **Perf
 
 [DevtoolsAccessibilityReference]: ./reference.md "Accessibility reference | Microsoft Docs"  
 [DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference | Microsoft Docs"  
-[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsConsoleIndex]: ../console/index.md "Console Overview | Microsoft Docs"  
 [DevtoolsCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
@@ -248,9 +248,9 @@ To run a new audit, use `Shift`+`Tab` to exit the report and look for the **Perf
 <!--[DevtoolsDomIndex]: ../dom/index.md "Get started with viewing and changing the DOM | Microsoft Docs"  -->  
 [DevtoolsDomIndexViewDomNodes]: ../dom/index.md#view-dom-nodes "View DOM nodes - Get started with viewing and changing the DOM | Microsoft Docs"  
 [DevtoolsDomIndexNavigateDomTreeKeyboard]: ../dom/index.md#navigate-the-dom-tree-with-a-keyboard "Navigate the DOM Tree with a keyboard - Get started with viewing and changing the DOM | Microsoft Docs"  
-[DevtoolsOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsShortcuts]: ../shortcuts.md "Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
-[DevtoolsShortcutsStylesPaneKeyboard]: ../shortcuts.md#styles-pane-keyboard-shortcuts "Styles pane keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
+[DevtoolsOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
+[DevtoolsShortcutsStylesPaneKeyboard]: ../shortcuts/index.md#styles-pane-keyboard-shortcuts "Styles pane keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
 
 [ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "Issue 868480 - Expose ARIA trees as tables in Mac accessibility"  
 
