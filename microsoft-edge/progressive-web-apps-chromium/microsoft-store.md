@@ -1,5 +1,5 @@
 ---
-description: Reach the world of Windows 10 customers by distributing your PWA through the Microsoft Store
+description: Make your PWA more discoverable by publishing in the Microsoft Store
 title: Progressive Web Apps in the Microsoft Store
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -25,9 +25,9 @@ To publish your PWA to the Microsoft Store, no code changes are required. Instea
 
 ## Create an app reservation
 
-[Windows Partner Center](https://partner.microsoft.com/en-us/dashboard/windows/overview) is the hub for submitting apps to the Microsoft Store.
+[Windows Partner Center](https://partner.microsoft.com/dashboard/windows/overview) is the hub for submitting apps to the Microsoft Store.
 
-Sign in to Windows Partner Center with your Microsoft account, then go to the [Partner Center Dashboard](https://partner.microsoft.com/en-us/dashboard/home) to see your enrolled programs. If `Windows & Xbox` is listed, you're already enrolled. If not, choose `Add program`:
+Sign in to Windows Partner Center with your Microsoft account, then go to the [Partner Center Dashboard](https://partner.microsoft.com/dashboard/home) to see your enrolled programs. If `Windows & Xbox` is listed, you're already enrolled. If not, choose `Add program`:
 
 ![Windows Partner Center dashboard, adding a program](./images/windows-partner-center-add-program.png)
 
@@ -61,7 +61,7 @@ Choose `Done`, then `Download` to download your Windows app package. Your downlo
 
 Now that you have your *.msixbundle* app package, we can submit it to the Store.
 
-Go to [Windows Partner Center](https://partner.microsoft.com/en-us/dashboard/windows/overview) and select your app, then `Start your Submission`:
+Go to [Windows Partner Center](https://partner.microsoft.com/dashboard/windows/overview) and select your app, then `Start your Submission`:
 
 ![Starting a new app submission on Windows Partner Center](./images/windows-partner-center-start-submission.png)
 
