@@ -1,9 +1,9 @@
 ---
-description: View and edit files, create Snippets, debug JavaScript, and set up Workspaces in the Sources panel of Microsoft Edge DevTools.
+description: Display and edit files, create Snippets, debug JavaScript, and set up Workspaces in the Sources panel of Microsoft Edge DevTools.
 title: Sources panel overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/27/2020 
+ms.date: 12/17/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -26,15 +26,15 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Use the Microsoft Edge DevTools **Sources** panel to perform the following actions.  
 
-*   [View files](#view-files).  
+*   [Display files](#display-files).  
 *   [Edit CSS and JavaScript](#edit-css-and-javascript).  
-*   [Create and save **Snippets** of JavaScript](#create-save-and-run-snippets), which you may run on any page.  **Snippets** are similar to bookmarklets.  
+*   [Create and save **Snippets** of JavaScript](#create-save-and-run-snippets), which you may run on any webpage.  **Snippets** are similar to bookmarklets.  
 *   [Debug JavaScript](#debug-javascript).  
 *   [Set up a Workspace](#set-up-a-workspace), so that changes you make in DevTools get saved to the code on your file system.  
     
-## View files  
+## Display files  
 
-Use the **Page** pane to view all of the resources that the page has loaded.
+Use the **Page** pane to display all of the resources that the page has loaded.
 
 :::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="The Page pane" lightbox="../media/sources-page-pane.msft.png":::
    The **Page** pane  
@@ -45,10 +45,10 @@ How the **Page** pane is organized:
 *   The second-level, such as `docs.microsoft.com` in the previous figure, represents an [origin][HtmlstandardOrigin].  
 *   The third-level, fourth-level, and so on, represent directories and resources that were loaded from that origin.  For example, in the previous figure the full path to the resource `devtools-guide-chromium` is `docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium`  
     
-Click a file in the **Page** pane to view the contents in the **Editor** pane.  You may view any type of file.  For images, a preview of the image is displayed.  
+Choose a file in the **Page** pane to display the contents in the **Editor** pane.  You may display any type of file.  For images, a preview of the image is displayed.  
 
-:::image type="complex" source="../media/sources-editor-pane.msft.png" alt-text="View the contents of a4d10f71.index-docs.js in the Editor pane" lightbox="../media/sources-editor-pane.msft.png":::
-   View the contents of `a4d10f71.index-docs.js` in the **Editor** pane  
+:::image type="complex" source="../media/sources-editor-pane.msft.png" alt-text="Display the contents of a4d10f71.index-docs.js in the Editor pane" lightbox="../media/sources-editor-pane.msft.png":::
+   Display the contents of `a4d10f71.index-docs.js` in the **Editor** pane  
 :::image-end:::  
 
 ## Edit CSS and JavaScript  
@@ -77,7 +77,7 @@ DevTools erases your CSS and JavaScript changes when you reload the page.  Navig
 
 ## Create, save, and run Snippets  
 
-Snippets are scripts which you may run on any page.  Imagine that you repeatedly type out the following code in the **Console**, in order to insert the jQuery library into a page, so that you may run jQuery commands from the **Console**:  
+Snippets are scripts which you may run on any page.  Imagine that you repeatedly type out the following code in the **Console**, in order to insert the jQuery library into a page, so that you may run jQuery commands from the **Console**.  
 
 ```javascript
 let script = document.createElement('script');
@@ -96,13 +96,13 @@ Instead, you may save this code in a **Snippet** and run it with a couple of but
 To run a **Snippet**:
 
 *   Open the file using the **Snippets** pane, and choose **Run** \(![The Run button][ImageRunIcon]\).  
-*   Open the **[Command Menu][DevtoolsGuideChromiumCommandMenuIndex]**, delete the `>` character, type `!`, type the name of your **Snippet**, then select `Enter`.  
+*   Open the [Command Menu][DevtoolsGuideChromiumCommandMenuIndex], delete the `>` character, type `!`, type the name of your **Snippet**, and then select `Enter`.  
     
 Navigate to [Run Snippets Of Code From Any Page][DevtoolsGuideChromiumJavascriptSnippets] to learn more.
 
 ## Debug JavaScript  
 
-Rather than using `console.log()` to infer where your JavaScript is going wrong, consider using the Microsoft Edge DevTools debugging tools, instead.  The general idea is to set a breakpoint, which is an intentional stopping place in your code, and then step through the runtime of your code, one line at a time.  As you step through the code, you may view and change the values of all currently-defined properties and variables, run JavaScript in the **Console**, and more.
+Rather than using `console.log()` to infer where your JavaScript is going wrong, consider using the Microsoft Edge DevTools debugging tools, instead.  The general idea is to set a breakpoint, which is an intentional stopping place in your code, and then step through the runtime of your code, one line at a time.  As you step through the code, you may display and change the values of all currently-defined properties and variables, run JavaScript in the **Console**, and more.
 
 Navigate to [Get Started With Debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] to learn the basics of debugging in DevTools.
 
@@ -112,7 +112,7 @@ Navigate to [Get Started With Debugging JavaScript][DevtoolsGuideChromiumJavascr
 
 ## Set up a Workspace  
 
-By default, when you edit a file in the **Sources** panel, those changes are lost when you reload the page.  **Workspaces** enable you to save the changes that you make in DevTools to your file system.  Essentially, DevTools is able to be used as your code editor.
+By default, when you edit a file in the **Sources** tool, those changes are lost when you reload the page.  **Workspaces** enable you to save the changes that you make in DevTools to your file system.  Essentially, DevTools is able to be used as your code editor.
 
 Navigate to [Edit Files With Workspaces][DevtoolsGuideChromiumWorkspacesIndex] to get started.
 
@@ -122,16 +122,16 @@ Navigate to [Edit Files With Workspaces][DevtoolsGuideChromiumWorkspacesIndex] t
 
 <!-- image links -->  
 
-[ImageRunIcon]: ./media/run-snippet-icon.msft.png  
+[ImageRunIcon]: ../media/run-snippet-icon.msft.png  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumCommandMenuIndex]: ./command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu"  
-[DevtoolsGuideChromiumJavascriptIndex]: ./javascript/index.md "Get Started with Debugging JavaScript in Microsoft Edge DevTools"  
-[DevtoolsGuideChromiumJavascriptSnippets]: ./javascript/snippets.md "Run Snippets Of JavaScript On Any Page With Microsoft Edge DevTools"  
-[DevtoolsGuideChromiumWorkspacesIndex]: ./workspaces/index.md "Edit Files With Workspaces"  
+[DevtoolsGuideChromiumCommandMenuIndex]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
+[DevtoolsGuideChromiumJavascriptIndex]: ../javascript/index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumJavascriptSnippets]: ../javascript/snippets.md "Run snippets of JavaScript on any page with Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumWorkspacesIndex]: ../workspaces/index.md "Edit files with Workspaces | Microsoft Docs"  
 
-[HtmlstandardOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin "Origin - HTML Standard"  
+[HtmlstandardOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin "Origin | HTML Standard"  
 
 [W3CHtml4Frames]: https://w3.org/TR/html401/present/frames.html "Frames | W3C"  
 

@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/07/2020 
+ms.date: 12/17/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -18,7 +18,7 @@ While experimental features are available in all channels of Microsoft Edge, you
 
 To turn on \(or off\) experimental features in Microsoft Edge, complete the following steps.  
 
-1.  [Open DevTools][DevtoolsOpen].  
+1.  [Open DevTools][DevtoolsOpenMain].  
     *   Select `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
 1.  Open the [Settings][DevToolsCustomizeSettings] pane.  
     *   Select `Shift`+`?`.  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
@@ -58,8 +58,8 @@ Provides additional features for emulating two new dual-screen and foldable devi
     
 Emulate the devices and toggle between the following postures.  
 
-*   single-screen or folded posture  
-*   dual-screen or unfolded posture  
+*   Single-screen or folded posture  
+*   Dual-screen or unfolded posture  
     
 [Enable experimental Web Platform APIs](#enable-experimental-apis) and use the [CSS media screen-spanning feature][DualScreenDocsCssMedia] and [JavaScript getWindowSegments API][DualScreenDocsJSAPI] to enhance your website \(or app\) for dual-screen and foldable devices.  
 
@@ -74,7 +74,7 @@ To use the [CSS media screen-spanning feature][DualScreenDocsCssMedia] and [Java
 1.  Navigate to `edge://flags`.  
 1.  In the **Search flags** textbox, enter `Experimental Web Platform features`, choose the **Experimental Web Platform features** flag, and change **Disabled** to **Enabled**.  
 1.  Restart Microsoft Edge.  
-
+    
 :::image type="complex" source="../media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Enable the Experimental Web Platform features flag" lightbox="../media/experiments-dual-screen-emulation.msft.png":::
    Enable the Experimental Web Platform features flag  
 :::image-end:::  
@@ -117,10 +117,10 @@ This experimental feature provides a number of new visualizations to help you de
 
 #### Viewing on-hover grid overlays with the Inspect tool  
 
-The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Choose the **Inspect** \(![Inspect](./media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  Then, hover over a Grid element on the website you are debugging.  Outlines are displayed around the grid, and shading indicates the location of grid gaps if present.  
+The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Choose the **Inspect** \(![Inspect][ImageInspectIcon]\) icon in the top-left corner of DevTools.  Then, hover over a Grid element on the website you are debugging.  Outlines are displayed around the grid, and shading indicates the location of grid gaps if present.  
 
 :::image type="complex" source="../media/grid-inspect.msft.png" alt-text="Viewing grids with the Inspect tool" lightbox="../media/grid-inspect.msft.png":::
-   Viewing grids with the Inspect tool  
+   Viewing grids with the **Inspect** tool  
 :::image-end:::  
 
 #### Viewing persistent grid overlays  
@@ -193,7 +193,7 @@ After enabling the experiment, ensure you restart the DevTools.  To use the **Ne
 1.  Open the contextual menu \(right-click\), and choose **Edit and Replay**.  
 1.  When the **Network Console** opens, edit the network request information.  
 1.  Choose **Send**.  
-
+    
 :::image type="complex" source="../media/network-network-console.msft.png" alt-text="Network Console in the Console drawer" lightbox="../media/network-network-console.msft.png":::
    **Network Console** in the **Console** drawer  
 :::image-end:::  
@@ -210,7 +210,7 @@ After enabling the experiment, ensure you restart the DevTools.  To use **Source
 1.  Open the **Accessibility** pane in the drawer \(bottom\) panel.  
 1.  Under the **Source Order Viewer** section, choose the **Show Source Order** checkbox.  
 1.  Highlight any HTML element to display an overlay that the order in the page source.  
-
+    
 :::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
    **Source Order Viewer** in the **Accessibility** pane  
 :::image-end:::  
@@ -263,7 +263,7 @@ You may now visualize Layers alongside z-indexes and the Document Object Model \
 1.  Open the **Composited Layers** pane.  
 1.  All of the painted layers of the app are displayed.  Try this feature with your own web apps.  
     
-:::image type="complex" source="./media/experiments-layers.msft.png" alt-text="Composited Layers pane" lightbox="./media/experiments-layers.msft.png":::
+:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Composited Layers pane" lightbox="../media/experiments-layers.msft.png":::
    **Composited Layers** pane  
 :::image-end:::  
 
@@ -273,14 +273,14 @@ You may now visualize Layers alongside z-indexes and the Document Object Model \
 
 *   [3D View][Devtools3dViewIndex] is now available and turned on by default in Microsoft Edge version 83 or later.  
 *   [Customize Keyboard Shortcuts][DevtoolsCustomKeyboardShortcuts] is now available and turned on by default in Microsoft Edge version 86 or later.  
-    
+
 ## Providing feedback on experimental features  
 
 To provide feedback on Microsoft Edge DevTools experiments, or anything else related to DevTools.  
 
 *   Send your feedback using the **Send Feedback** icon in the DevTools  
 *   Tweet at [@EdgeDevTools][TwitterEdgedevtools]  
-    
+
 :::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in Microsoft Edge DevTools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
    The **Send Feedback** icon in Microsoft Edge DevTools  
 :::image-end:::  
@@ -288,30 +288,30 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 <!--  
 ## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 -->  
 
 <!-- image links -->  
 
-[ImageRotateIcon]: ./media/rotate-dark-icon.msft.png  
-[ImageSpanIcon]: ./media/span-dark-icon.msft.png  
-[ImageExperimentalApisIcon]: ./media/experimental-apis-dark-icon.msft.png  
-[ImageEditKeyboardShortcutIcon]: ./media/edit-keyboard-shortcut-icon.msft.png  
-[ImageCheckmarkKeyboardShortcutIcon]: ./media/checkmark-keyboard-shortcut-icon.msft.png  
-[ImageCustomKeyboardShortcutIcon]: ./media/custom-keyboard-shortcut-icon.msft.png  
-[ImageDeleteKeyboardShortcutIcon]: ./media/delete-keyboard-shortcut-icon.msft.png  
-[ImageXKeyboardShortcutIcon]: ./media/discard-changes-keyboard-shortcut-icon.msft.png  
+[ImageCheckmarkKeyboardShortcutIcon]: ../media/checkmark-keyboard-shortcut-icon.msft.png  
+[ImageCustomKeyboardShortcutIcon]: ../media/custom-keyboard-shortcut-icon.msft.png  
+[ImageDeleteKeyboardShortcutIcon]: ../media/delete-keyboard-shortcut-icon.msft.png  
+[ImageEditKeyboardShortcutIcon]: ../media/edit-keyboard-shortcut-icon.msft.png  
+[ImageExperimentalApisIcon]: ../media/experimental-apis-dark-icon.msft.png  
+[ImageInspectIcon]: ../media/inspect-icon.msft.png  
+[ImageRotateIcon]: ../media/rotate-dark-icon.msft.png  
+[ImageSpanIcon]: ../media/span-dark-icon.msft.png  
+[ImageXKeyboardShortcutIcon]: ../media/discard-changes-keyboard-shortcut-icon.msft.png  
 
 <!-- links -->  
 
-[Devtools3dViewIndex]: ./3d-view/index.md "3D View | Microsoft Docs"  
-[DevToolsCustomizeSettings]: ./customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeIndexSimulateMobileViewport]: ./device-mode/index.md#simulate-a-mobile-viewport "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools | Microsoft Edge"  
-[DevtoolsIssues]: ./issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
-[DevToolsShortcuts]: ./shortcuts.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
-[DevtoolsOpen]: ./open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomKeyboardShortcuts]: ./customize/shortcuts.md "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsOpenMain]: ./open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+[Devtools3dViewIndex]: ../3d-view/index.md "3D View | Microsoft Docs"  
+[DevToolsCustomizeSettings]: ../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools | Microsoft Edge"  
+[DevtoolsIssues]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
+[DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
+[DevtoolsCustomKeyboardShortcuts]: ../customize/shortcuts.md "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsOpenMain]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
 [DualScreenWebIndex]: /dual-screen/web/index "Dual-screen web experiences | Microsoft Docs"  
 [DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Get the Surface Duo emulator | Microsoft Docs"  

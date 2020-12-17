@@ -3,12 +3,11 @@ description: IE mode and the Microsoft Edge (Chromium) DevTools
 title: Internet Explorer mode and the DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/27/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, ie11, internet explorer 11, ie mode
 ---
-
 # Internet Explorer mode and the DevTools  
 
 This article describes how Internet Explorer mode \(IE mode\) integrates with the Microsoft Edge \(Chromium\) DevTools.  
@@ -74,7 +73,7 @@ Launch Microsoft Edge \(Chromium\) with remote debugging turned on from the comm
 start msedge --remote-debugging-port=9222
 ```  
 
-After you launch Microsoft Edge \(Chromium\) using a command-line argument, IE mode is unavailable.  You may still navigate to websites \(or apps\) that would otherwise display in IE mode. The website \(or app\) content renders using Chromium, not Internet Explorer 11.  Expect the parts of the pages that rely on IE11, such as ActiveX controls, to not render correctly.  The IE mode badge does not appear in the address bar.  
+After you launch Microsoft Edge \(Chromium\) using a command-line argument, IE mode is unavailable.  You may still navigate to websites \(or apps\) that would otherwise display in IE mode.  The website \(or app\) content renders using Chromium, not Internet Explorer 11.  Expect the parts of the webpages that rely on IE11, such as ActiveX controls, to not render correctly.  The IE mode badge does not appear in the address bar.  
 
 IE mode remains unavailable until you completely close and restart Microsoft Edge \(Chromium\).  
 

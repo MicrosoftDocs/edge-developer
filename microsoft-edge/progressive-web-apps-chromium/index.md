@@ -3,7 +3,7 @@ description: Progressive Web Apps (Chromium) run natively on Windows 10.  Here i
 title: Progressive Web Apps on Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/02/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
@@ -199,7 +199,7 @@ To be a great PWA, your app must also meet the following requirements.
 [DevtoolsRemoteDebuggingIndex]: ../devtools-guide-chromium/remote-debugging/index.md "Get started with remote debugging Android devices | Microsoft Docs"  
 [DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Get Started with Remote Debugging Windows 10 Devices | Microsoft Docs"  
 [DevToolsGuideDeviceModeTestingOtherBrowsers]: ../devtools-guide-chromium/device-mode/testing-other-browsers.md "Emulate and test other browsers | Microsoft Docs"  
-[DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps.md "Debug Progressive Web Apps | Microsoft Docs"  
+[DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps/index.md "Debug Progressive Web Apps | Microsoft Docs"  
 <!--[DevGuideWhatsNewEdgeHtml17]: ../dev-guide/whats-new/edgehtml-17.md "What's new in EdgeHTML 17 | Microsoft Docs"  -->  
 <!--[DevGuideWhatsNewEdgeHtml14]: ../dev-guide/whats-new/edgehtml-14.md "What's New in EdgeHTML 14 | Microsoft Docs"  -->  
 [PwaEdgehtmlIndex]: ../edgehtml/progressive-web-apps/index.md "Progressive Web Apps (EdgeHTML) on Windows | Microsoft Docs"  

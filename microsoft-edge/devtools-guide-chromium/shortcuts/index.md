@@ -3,7 +3,7 @@ description: The canonical documentation for Microsoft Edge DevTools keyboard sh
 title: Microsoft Edge DevTools Keyboard Shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 12/17/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -20,14 +20,14 @@ keywords: microsoft edge, web development, f12 tools, devtools
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
-   limitations under the License. -->
+   limitations under the License.  -->
 
 # Microsoft Edge DevTools keyboard shortcuts  
 
 This article is a reference of keyboard shortcuts in Microsoft Edge DevTools.
 
-You can also find shortcuts in tooltips. Hover over a UI element of DevTools
-to display the tooltip. If the element has a shortcut, the tooltip includes it.
+You can also find shortcuts in tooltips.  Hover over a UI element of DevTools
+to display the tooltip.  If the element has a shortcut, the tooltip includes it.
 
 ## Keyboard shortcuts for opening DevTools  
 
@@ -73,8 +73,8 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Undo change | `Control`+`Z` | `Command`+`Z` |  
 | Redo change | `Control`+`Y` | `Command`+`Shift`+`Z` |  
 | Select the element above / below the currently selected element | `Up Arrow` / `Down Arrow` | `Up Arrow` / `Down Arrow` |  
-| Expand the currently selected node. If the node is already expanded, this shortcut selects the element below it | `Right Arrow` | `Right Arrow` |  
-| Collapse the currently selected node. If the node is already collapsed, this shortcut selects the element above it | `Left Arrow` | `Left Arrow` |  
+| Expand the currently selected node.  If the node is already expanded, this shortcut selects the element below it | `Right Arrow` | `Right Arrow` |  
+| Collapse the currently selected node.  If the node is already collapsed, this shortcut selects the element above it | `Left Arrow` | `Left Arrow` |  
 | Expand or collapse the currently selected node and all of the children | Hold `Control`+`Alt`, then choose the **arrow** icon next to the name of the element | Hold `Option`, then choose the **arrow** icon next to the name of the element |  
 | Toggle **Edit Attributes** mode on the currently selected element | `Enter` | `Enter` |  
 | Select the next / previous attribute after entering **Edit Attributes** mode | `Tab` / `Shift`+`Tab` | `Tab` / `Shift`+`Tab` |  
@@ -108,7 +108,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Go to line | `Control`+`G` | `Control`+`G` |  
 | Jump to a line number of the currently open file | Select `Control`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:` followed by the line number, then select `Enter` | Select `Command`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:` followed by the line number, then select `Enter` |  
 | Jump to a column of the currently open file \(for example line 5, column 9\) | Select `Control`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:`, then the line number, then another `:`, then the column number, then select `Enter` | Select `Command`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:`, then the line number, then another `:`, then the column number, then select `Enter` |  
-| Go to a function declaration, if the current file is HTML or a script. <br /> Go to a rule set, if the current file is a stylesheet. | Select `Control`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options | Select `Command`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options |  
+| Go to a function declaration, if the current file is HTML or a script.  <br />  Go to a rule set, if the current file is a stylesheet.  | Select `Control`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options | Select `Command`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options |  
 | Close the active tab | `Alt`+`W` | `Option`+`W` |  
 
 ### Code Editor keyboard shortcuts  
@@ -118,8 +118,8 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Delete all characters in the last word, up to the cursor | `Control`+`Delete` | `Option`+`Delete` |  
 | Add or remove a [line-of-code breakpoint][DevtoolsJavascriptBreakpointsLOC] | Focus your cursor on the line, then select `Control`+`B` | Focus your cursor on the line, then select `Command`+`B` |  
 | Go to matching bracket | `Control`+`M` | `Control`+`M` |  
-| Toggle single-line comment. If multiple lines are selected, DevTools add a comment to the start of each line | `Control`+`/` | `Command`+`/` |  
-| Select / de-select the next occurrence of whatever word the cursor is on. Each occurrence is highlighted simultaneously | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |  
+| Toggle single-line comment.  If multiple lines are selected, DevTools add a comment to the start of each line | `Control`+`/` | `Command`+`/` |  
+| Select / de-select the next occurrence of whatever word the cursor is on.  Each occurrence is highlighted simultaneously | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |  
 
 ## Performance panel keyboard shortcuts  
 
@@ -151,19 +151,19 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
-[ImageExpandIcon]: ./media/expand-icon.msft.png  
+[ImageExpandIcon]: ../media/expand-icon.msft.png  
 
 <!-- links -->  
 
-[DevtoolsCommandMenuIndex]: ./command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
-[DevtoolsCustomizeIndexDrawer]: ./customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeIndexPlacement]: ./customize/index.md#change-devtools-placement "Change DevTools placement - Customize Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeIndex]: ./device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsJavascriptBreakpointsLOC]: ./javascript/breakpoints.md#line-of-code-breakpoints "Line-of-code breakpoints - How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
+[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "Change DevTools placement - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsJavascriptBreakpointsLOC]: ../javascript/breakpoints.md#line-of-code-breakpoints "Line-of-code breakpoints - How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"  
 
 <!--[201705ReleaseNotesContinue]: whats-new/2017/05/devtools-release-notes#continue  -->  
 

@@ -3,7 +3,7 @@ description: All of the ways that you open the Microsoft Edge DevTools.
 title: Open Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/27/2020 
+ms.date: 12/11/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -33,11 +33,11 @@ Each of the following tasks enable you to inspect the styles or attributes of a 
 *   Hover on the element, open the contextual menu \(right-click\), and choose **Inspect**.  
 *   Select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Option`+`C` \(macOS\).  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  
 
-:::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text="The **Inspect** option" lightbox="../media/bing-right-click-inspect.msft.png":::
+:::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text="The Inspect option" lightbox="../media/bing-right-click-inspect.msft.png":::
    The **Inspect** option  
 :::image-end:::  
 
-<!--See [Get Started With Viewing And Changing CSS][GetStartedCSS].  -->  
+<!--Navigate to [Get Started With Viewing And Changing CSS][GetStartedCSS].  -->  
 
 ## Open the Console panel  
 
@@ -116,8 +116,8 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 
 <!-- links -->  
 
-[DevToolsConsoleIndex]: ./console/index.md "Console Overview | Microsoft Docs"  
-[DevtoolsShortcuts]: ./shortcuts.md "Microsoft Edge DevTools keyboard shortcuts - Microsoft Docs"  
+[DevToolsConsoleIndex]: ../console/index.md "Console Overview | Microsoft Docs"  
+[DevtoolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts - Microsoft Docs"  
 
 <!--[ConsoleGetStarted]: /microsoft-edge/devtools-guide-chromium/console/get-started ""  -->  
 <!--[GetStartedCSS]: /microsoft-edge/devtools-guide-chromium/css "CSS"  -->

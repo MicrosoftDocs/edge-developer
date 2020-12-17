@@ -3,7 +3,7 @@ description: How to debug Background Fetch, Background Sync, Notifications, and 
 title: Debug Background Services With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 12/11/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -46,7 +46,7 @@ The **Background Fetch API** enables a **service worker** to reliably download l
 <!--Todo: add background fetch api section when available -->  
 
 1.  [Open DevTools][OpenDevTools].  
-1.  Open the **Application** panel.  
+1.  Open the **Application** tool.  
 1.  Open the **Background Fetch** pane.  
     
     :::image type="complex" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="The Background Fetch pane" lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
@@ -73,7 +73,7 @@ The **Background Sync API** enables an offline **service worker** to send data t
 <!--Todo: add background sync api section when available -->  
 
 1.  [Open DevTools][OpenDevTools].  
-1.  Open the **Application** panel.  
+1.  Open the **Application** tool.  
 1.  Open the **Background Sync** pane.  
     
     :::image type="complex" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="The Background Sync pane" lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
@@ -98,7 +98,7 @@ The **Background Sync API** enables an offline **service worker** to send data t
 After a **service worker** has received a [Push Message][MDNPush] from a server, the service worker uses the [Notifications API][MDNNotifications] to display the data to a user.  To log Notifications for 3 days, even when DevTools is not open:  
 
 1.  [Open DevTools][OpenDevTools].  
-1.  Open the **Application** panel.  
+1.  Open the **Application** tool.  
 1.  Open the **Notifications** pane.  
     
     :::image type="complex" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="The Notifications pane" lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
@@ -123,7 +123,7 @@ After a **service worker** has received a [Push Message][MDNPush] from a server,
 To display a push notification to a user, a **service worker** must first use the [Push Message API][MDNPush] to receive data from a server.  When the service worker is ready to display the notification, it uses the [Notifications API][MDNNotifications].  To log Push Messages for 3 days, even when DevTools is not open:  
 
 1.  [Open DevTools][OpenDevTools].  
-1.  Open the **Application** panel.  
+1.  Open the **Application** tool.  
 1.  Open the **Push Messaging** pane.  
     
     :::image type="complex" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="Open the Push Messaging pane" lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
@@ -156,7 +156,7 @@ To display a push notification to a user, a **service worker** must first use th
 <!--[BackgroundFetchAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2018/12/background-fetch.md "Background Fetch API"  -->  
 <!--[BackgroundSyncAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2015/12/background-sync.md  "Background Sync API"  -->
 
-[OpenDevTools]: ../open.md "Open Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[OpenDevTools]: ../open/index.md "Open Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
 [MDNNotifications]: https://developer.mozilla.org/docs/Web/API/Notifications_API "Notifications API | MDN"  
 [MDNPush]: https://developer.mozilla.org/docs/Web/API/Push_API "Push API | MDN"  

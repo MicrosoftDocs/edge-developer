@@ -3,7 +3,7 @@ description: Use Allocation instrumentation on timeline to find objects that are
 title: How to Use Allocation Instrumentation on Timeline
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 12/11/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -85,7 +85,7 @@ You are able to view memory allocation by JavaScript function.  For more informa
 
 <!-- links -->  
 
-[DevToolsOpenIndex]: ../open.md "Open Microsoft Edge (Chromium) DevTools | Microsoft Docs"
+[DevToolsOpenIndex]: ../open/index.md "Open Microsoft Edge (Chromium) DevTools | Microsoft Docs"
 [DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Investigate memory allocation by function - Fix Memory Problems | Microsoft Docs"  
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->  
