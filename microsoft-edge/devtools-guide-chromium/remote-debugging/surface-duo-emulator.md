@@ -80,7 +80,7 @@ The web is a great platform for the new class of foldable and dual-screen device
 <!-- links -->  
 
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
-[ProgressiveWebAppsIndex]: ../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"  
+[ProgressiveWebAppsIndex]: ../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"  
 [DevtoolsRemoteDebuggingMain]: ./index.md "Get started with remote debugging Android devices | Microsoft Docs"  
 [DevtoolsRemoteDebuggingIndexTroubleshootingDevtoolsIsNotDetectingAndroidDevice]: ./index.md#troubleshooting-devtools-is-not-detecting-the-android-device "Troubleshooting: DevTools is not detecting the Android device - Get started with remote debugging Android devices | Microsoft Docs"  
 
