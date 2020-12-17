@@ -3,7 +3,7 @@ description: Use the Media Panel to view information and debug the media players
 title: View and debug media players information
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/08/2020 
+ms.date: 12/11/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -98,7 +98,7 @@ You may choose to hide \(or show\) each media player for an easier debugging exp
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open.md "Open Microsoft Edge DevTools"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Open Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
 
 [DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Get started with remote debugging Android devices | Microsoft Docs"  
 

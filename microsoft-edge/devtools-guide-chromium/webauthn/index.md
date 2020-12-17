@@ -3,7 +3,7 @@ description: Emulate Authenticators and Debug WebAuthn in Microsoft Edge DevTool
 title: Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/22/2020 
+ms.date: 12/11/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -31,7 +31,7 @@ A great place to get started with Web Authentication is the [Web Authentication 
        **WebAuthn** tool  
     :::image-end:::  
     
-1.  In the **WebAuthn** tool, choose the checkbox next to **Enable virtual authenticator environment**.  
+1.  In the **WebAuthn** tool, turn on **Enable virtual authenticator environment** checkbox.  
 1.  After it is enabled, a new section named **New authenticator** is displayed.  
     
     :::image type="complex" source="../media/webauthn-enable-virtual-auth.msft.png" alt-text="Enable virtual authenticator environment" lightbox="../media/webauthn-enable-virtual-auth.msft.png":::
@@ -117,7 +117,7 @@ To remove a virtual authenticator, next to the authenticator, choose the **Remov
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
 [AppspotWebauthndemo]: https://webauthndemo.appspot.com "Webauthn demo | Appspot"  
 
