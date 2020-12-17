@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020 
+ms.date: 12/17/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -117,7 +117,7 @@ This experimental feature provides a number of new visualizations to help you de
 
 #### Viewing on-hover grid overlays with the Inspect tool  
 
-The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Choose the **Inspect** \(![Inspect](./media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  Then, hover over a Grid element on the website you are debugging.  Outlines are displayed around the grid, and shading indicates the location of grid gaps if present.  
+The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Choose the **Inspect** \(![Inspect][ImageInspectIcon]\) icon in the top-left corner of DevTools.  Then, hover over a Grid element on the website you are debugging.  Outlines are displayed around the grid, and shading indicates the location of grid gaps if present.  
 
 :::image type="complex" source="../media/grid-inspect.msft.png" alt-text="Viewing grids with the Inspect tool" lightbox="../media/grid-inspect.msft.png":::
    Viewing grids with the **Inspect** tool  
@@ -293,13 +293,14 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 
 <!-- image links -->  
 
-[ImageRotateIcon]: ../media/rotate-dark-icon.msft.png  
-[ImageSpanIcon]: ../media/span-dark-icon.msft.png  
-[ImageExperimentalApisIcon]: ../media/experimental-apis-dark-icon.msft.png  
-[ImageEditKeyboardShortcutIcon]: ../media/edit-keyboard-shortcut-icon.msft.png  
 [ImageCheckmarkKeyboardShortcutIcon]: ../media/checkmark-keyboard-shortcut-icon.msft.png  
 [ImageCustomKeyboardShortcutIcon]: ../media/custom-keyboard-shortcut-icon.msft.png  
 [ImageDeleteKeyboardShortcutIcon]: ../media/delete-keyboard-shortcut-icon.msft.png  
+[ImageEditKeyboardShortcutIcon]: ../media/edit-keyboard-shortcut-icon.msft.png  
+[ImageExperimentalApisIcon]: ../media/experimental-apis-dark-icon.msft.png  
+[ImageInspectIcon]: ../media/inspect-icon.msft.png  
+[ImageRotateIcon]: ../media/rotate-dark-icon.msft.png  
+[ImageSpanIcon]: ../media/span-dark-icon.msft.png  
 [ImageXKeyboardShortcutIcon]: ../media/discard-changes-keyboard-shortcut-icon.msft.png  
 
 <!-- links -->  
@@ -309,7 +310,7 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools | Microsoft Edge"  
 [DevtoolsIssues]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
 [DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
-[DevtoolsCustomKeyboardShortcuts]: ../customiz./shortcuts/index.md "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomKeyboardShortcuts]: ../customize/shortcuts.md "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsOpenMain]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
 [DualScreenWebIndex]: /dual-screen/web/index "Dual-screen web experiences | Microsoft Docs"  
