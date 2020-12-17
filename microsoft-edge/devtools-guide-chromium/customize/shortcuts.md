@@ -3,7 +3,7 @@ description: Match keyboard shortcuts in the DevTools to Visual Studio Code
 title: Customize keyboard shortcuts in the Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/21/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, custom, shortcuts, keyboard, visual studio code
@@ -39,7 +39,8 @@ For example, to pause or continue running a script in [Visual Studio Code][Visua
 <!-- links -->  
 
 [DevToolsCustomizeSettings]: ./index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsOpenMain]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsShortcuts]: ../shortcuts.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
+[DevtoolsOpenMain]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
+
 [VisualStudioCode]: https://code.visualstudio.com "Microsoft Visual Studio Code"  
 [VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Keyboard shortcuts for Windows | Microsoft Visual Studio Code"  

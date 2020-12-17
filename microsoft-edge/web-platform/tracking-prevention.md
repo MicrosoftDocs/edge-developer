@@ -3,7 +3,7 @@ description: This page provides documentation on the Microsoft Edge (Chromium) t
 title: Tracking Prevention in Microsoft Edge (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/05/2020
+ms.date: 10/27/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, tracking prevention, trackers, cookies, storage, ad blocking, tracker blocking, tracking protection
@@ -169,8 +169,8 @@ That being said, the **Block** and **Allow** options on the `edge://settings/con
 
 <!-- image links -->  
 
-[ImageThreeSettingsTrackingPrevention]: ../media/web-platform/tracking-prevention/tracking-prevention-settings.png  
-[ImageBlockedTrackersPageInfoFlyout]: ../media/web-platform/tracking-prevention/page-info-flyout.png  
+[ImageThreeSettingsTrackingPrevention]: ./media/tracking-prevention-settings.png  
+[ImageBlockedTrackersPageInfoFlyout]: ./media/page-info-flyout.png  
 
 <!-- links -->  
 

@@ -3,7 +3,7 @@ description: Learn how to debug WebView2 controls.
 title: Get started debugging WebView2 applications
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -21,7 +21,7 @@ Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to de
 *   Select `F12`.  
 *   Select `Ctrl`+`Shift`+`I`.  
 *   Open the context menu \(right-click\) and choose `Inspect`.  
-
+    
 For more information, see [DevTools overview][DevtoolsGuideChromiumMain].  
 
 :::image type="complex" source="./media/f12.png" alt-text="DevTools debugging" lightbox="./media/f12.png":::
@@ -40,15 +40,15 @@ Before you begin, ensure the following requirements are met.
 *   To debug scripts, the app must be launched from within Visual Studio.  
 *   You cannot attach a debugger to a running WebView2 process.  
 *   Install Visual Studio 2019 version 16.4 Preview 2 or later.  
-
+    
 Install and set up the script debugger tools in Visual Studio.  
 
 1.  Complete the following actions to install the **JavaScript diagnostics** component in **Desktop development with C++**.  
-
-    1. In the Windows Explorer bar, type `Visual Studio Installer`.  
-    1. Choose **Visual Studio Installer** to open it.  
-    1. In the Visual Studio Installer, on the installed version, choose the **More** button, and then choose **Modify**.  
-    1. In Visual Studio, under **Workloads**, choose the **Desktop Development in C++** setting.  
+    
+    1.  In the Windows Explorer bar, type `Visual Studio Installer`.  
+    1.  Choose **Visual Studio Installer** to open it.  
+    1.  In the Visual Studio Installer, on the installed version, choose the **More** button, and then choose **Modify**.  
+    1.  In Visual Studio, under **Workloads**, choose the **Desktop Development in C++** setting.  
         
         :::image type="complex" source="./media/workloads.png" alt-text="Visual Studio Modifying Workloads Screen" lightbox="./media/workloads.png":::
             Visual Studio Modifying Workloads Screen
@@ -99,7 +99,7 @@ Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.
 In Visual Studio Code, complete the following actions to debug your code. 
 
 1.  Your project is required to have a `launch.json` file.  If your project doesn't have a `launch.json` file, copy the following code snippet and create a new `launch.json` file.  
-        
+    
     ```json
         "name": "Hello debug world",
         "type": "pwa-msedge",
@@ -112,7 +112,7 @@ In Visual Studio Code, complete the following actions to debug your code.
         },
         "useWebView": true,
     ```  
-        
+    
 1.  To set a breakpoint in your source code, hover on the line, and select `F9`
     
     :::image type="complex" source="./media/breakpointvs.png" alt-text="Breakpoint is set in Visual Studio Code" lightbox="./media/breakpointvs.png":::
@@ -139,7 +139,7 @@ In Visual Studio Code, complete the following actions to debug your code.
 **Advanced Settings**:  
 
 *   Targeted Webview debugging. 
-
+    
     In some WebView2 applications, you may use more than one WebView2 control. To pick the WebView2 control to debug in this situation you can use targeted webview2 debugging 
     
     Open `launch.json` and complete the following actions to use targeted Webview debugging.  
@@ -166,7 +166,7 @@ In Visual Studio Code, complete the following actions to debug your code.
 *   Debug running processes  
     
     You may need to attach the debugger to running WebView2 processes. To do that, in `launch.json`, update the `request` parameter to `attach`.
-        
+    
     ```json
         "name": "Hello debugging world",
         "type": "pwa-msedge",
@@ -178,7 +178,7 @@ In Visual Studio Code, complete the following actions to debug your code.
         },
         "useWebView": true
     ```  
-        
+    
     Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a Chrome Developer Protocol (CDP) port open, before starting the debugger.  
     
 *   Debug tracing options  
@@ -186,8 +186,6 @@ In Visual Studio Code, complete the following actions to debug your code.
     Add the `trace` parameter to launch.json to enable debug tracing.  
     
     1.  Add `trace` parameter.  
-        
- 
         
         :::row:::
            :::column span="":::
@@ -230,13 +228,10 @@ In Visual Studio Code, complete the following actions to debug your code.
 *   Troubleshooting the debugger  
     
     You may encounter the following scenarios when using the debugger.  
-
+    
     *   The debugger doesn't stop at the breakpoint, and you have debug output.  To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.  The debugger doesn't perform source path mapping.  
     *   You can't attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  For more information, see [additionalBrowserArguments for dotnet][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] and [additionalBrowserArguments for Win32][Webview2ReferenceWin32Webview2IdlParameters].  
     
-* * *  
-
-
 * * *  
 
 ## See also  
@@ -245,14 +240,14 @@ In Visual Studio Code, complete the following actions to debug your code.
 *   For a comprehensive example of WebView2 capabilities, see the [WebView2Samples][GithubMicrosoftedgeWebview2samples] repo on GitHub.
 *   For more detailed information about WebView2 APIs, see [API reference][Webview2ApiReference].
 *   For more information about WebView2, see [WebView2 Resources][Webview2MainNextSteps].
-
+    
 ## Getting in touch with the Microsoft Edge WebView team  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools"  
+[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
 [Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: /dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments "CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
 [Webview2ReferenceWin32Webview2IdlParameters]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions  "CreateCoreWebView2Environment - Globals | Microsoft Docs"  

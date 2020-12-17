@@ -3,7 +3,7 @@ description: A reference on all the ways to record and analyze performance in Mi
 title: Performance Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 12/11/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -35,7 +35,7 @@ Navigate to [Get Started With Analyzing Runtime Performance][DevtoolsEvaluatePer
 Record runtime performance when you want to analyze the performance of a page as it is running, as opposed to loading.  
 
 1.  Go to the page that you want to analyze.  
-1.  Click the **Performance** tab in DevTools.  
+1.  Choose the **Performance** tab in DevTools.  
 1.  Choose **Record** \(![Record icon][ImageRecordIcon]\).  
     
     :::image type="complex" source="../media/evaluate-performance-performance-record-highlight.msft.png" alt-text="Record" lightbox="../media/evaluate-performance-performance-record-highlight.msft.png":::
@@ -65,7 +65,7 @@ DevTools automatically zooms in on the portion of the recording where most of th
 
 ### Capture screenshots while recording  
 
-Enable the **Screenshots** checkbox to capture a screenshot of every frame while recording.  
+Turn on the **Screenshots** checkbox to capture a screenshot of every frame while recording.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-capture-screenshots-checkbox.msft.png" alt-text="The Screenshots checkbox" lightbox="../media/evaluate-performance-performance-capture-screenshots-checkbox.msft.png":::
    The **Screenshots** checkbox  
@@ -94,7 +94,7 @@ Choose **Capture settings** \(![Capture settings][ImageCaptureSettingsIcon]\) to
 By default, the **Main** section of a recording displays detailed call stacks of JavaScript functions that were called during the recording.  To disable these call stacks:  
 
 1.  Open the **Capture settings** menu.  Navigate to [Show recording settings](#show-recording-settings).  
-1.  Enable the **Disable JavaScript Samples** checkbox.  
+1.  Turn on the **Disable JavaScript Samples** checkbox.  
 1.  Take a recording of the page.  
     
 The following 2 figures display the difference between disabling and enabling JavaScript samples.  The **Main** section of the recording is much shorter when sampling is disabled, because it omits all of the JavaScript call stacks.  
@@ -106,8 +106,8 @@ The following 2 figures display the difference between disabling and enabling Ja
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off.msft.png" alt-text="An example of a recording when JS samples are enabled" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off.msft.png":::
-         An example of a recording when JS samples are enabled  
+      :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off.msft.png" alt-text="An example of a recording when JS samples are turned on" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off.msft.png":::
+         An example of a recording when JS samples are turned on  
       :::image-end:::  
    :::column-end:::
 :::row-end:::
@@ -128,7 +128,7 @@ To throttle the CPU while recording:
     
 Throttling is relative to the capabilities of your computer.  For example, the **2x slowdown** option makes your CPU operate 2 times slower than normal.  DevTools do not truly simulate the CPUs of mobile devices, because the architecture of mobile devices is very different from that of desktops and laptops.  
 
-### Enable advanced paint instrumentation  
+### Turn on advanced paint instrumentation  
 
 To view detailed paint instrumentation:  
 
@@ -139,7 +139,7 @@ To learn how to interact with the paint information, navigate to [View layers](#
 
 ## Save a recording  
 
-To save a recording, right-click and choose **Save Profile**.  
+To save a recording, open the contextual menu \(right-click\), and choose **Save Profile**.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png" alt-text="Save Profile" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png":::
    **Save Profile**  
@@ -147,7 +147,7 @@ To save a recording, right-click and choose **Save Profile**.
 
 ## Load a recording  
 
-To load a recording, right-click and choose **Load Profile**.  
+To load a recording, open the contextual menu \(right-click\), and choose **Load Profile**.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png" alt-text="Load Profile" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png":::
    **Load Profile**  
@@ -175,15 +175,15 @@ Drag your mouse left or right across the **Overview** to select a portion of a r
 
 To select a portion using the keyboard:  
 
-1.  Click on the background of the **Main** section, or any of the sections next to it, such as **Interactions**, **Network**, or **GPU**.  This keyboard workflow only works when one of these sections is in focus.  
+1.  Choose the background of the **Main** section, or any of the sections next to it, such as **Interactions**, **Network**, or **GPU**.  This keyboard workflow only works when one of these sections is in focus.  
 1.  Use the `W`, `A`, `S`, `D` keys to zoom in, move left, zoom out, and move right, respectively.  
 
-To select a portion using a trackpad:  
+To select a portion using a trackpad, complete the following actions.  
 
 1.  Hover your mouse over the **Overview** section or the **Details** section.  The **Overview** section is the area containing the **FPS**, **CPU**, and **NET** charts.  The **Details** section is the area containing the **Main** section, the **Interactions** section, and so on.  
 1.  Using two fingers, swipe up to zoom out, swipe left to move left, swipe down to zoom in, and swipe right to move right.  
 
-To scroll a long flame chart in the **Main** section or any of the neighbors, click and hold while dragging up and down.  Drag left and right to move what portion of the recording is selected.  
+To scroll a long flame chart in the **Main** section or any of the neighbors, choose and hold while dragging up and down.  Drag left and right to move what portion of the recording is chosen.  
 
 ### Search activities  
 
@@ -213,7 +213,7 @@ Use the **Main** section to view activity that occurred on the main thread of th
    The **Main** section  
 :::image-end:::  
 
-Click on an event to view more information about it in the **Summary** tab.  DevTools outlines the selected event.  
+Choose an event to view more information about it in the **Summary** tab.  DevTools outlines the selected event.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-summary-me.msft.png" alt-text="More information about the anonymous function in the Summary tab" lightbox="../media/evaluate-performance-performance-summary-me.msft.png":::
    More information about the `anonymous` function in the **Summary** tab  
@@ -225,11 +225,11 @@ DevTools represents main thread activity with a flame chart.  The x-axis represe
    A flame chart  
 :::image-end:::  
 
-In the previous figure, a `click` event caused a `Function Call` in `activitytabs.js` on line 53.  Below `Function Call` you see that an anonymous function was called.  The anonymous function called `a`, which called `wait`, which called `Minor GC`.  
+In the previous figure, a `click` event caused a `Function Call` in `activitytabs.js` on line 53.  Below `Function Call`, review that an anonymous function was run.  The anonymous function requested `a`, which requested `wait`, which requested `Minor GC`.  
 
-DevTools assigns scripts random colors.  In the previous figure, function calls from one script are colored light green.  Calls from another script are colored beige.  The darker yellow represents scripting activity, and the purple event represents rendering activity.  These darker yellow and purple events are consistent across all recordings.  
+DevTools assigns scripts random colors.  In the previous figure, function requests from one script are colored light green.  Requests from another script are colored beige.  The darker yellow represents scripting activity, and the purple event represents rendering activity.  These darker yellow and purple events are consistent across all recordings.  
 
-Navigate to [Disable JavaScript samples](#disable-javascript-samples) if you want to hide the detailed flame chart of JavaScript calls.  When JS samples are disabled, you only see high-level events such as `Event: click` and `Function Call` from the previous figure.  
+Navigate to [Disable JavaScript samples](#disable-javascript-samples) if you want to hide the detailed flame chart of JavaScript requests.  When JS samples are disabled, only high-level events such as `Event: click` and `Function Call` from the previous figure `str` displayed.  
 
 ### View activities in a table  
 
@@ -246,7 +246,7 @@ After recording a page, you do not need to rely solely on the **Main** section t
 
 Here is an explanation of the **root activities** concept that is mentioned in the **Call Tree** tab, **Bottom-Up** tab, and **Event Log** sections.  
 
-Root activities are those which cause the browser to do some work.  For example, when you click a page, the browser fires an `Event` activity as the root activity.  That `Event` might cause a handler to run, and so on.  
+Root activities are those which cause the browser to do some work.  For example, when you choose a webpage, the browser runs an `Event` activity as the root activity.  That `Event` may cause a handler to run, and so on.  
 
 In the flame chart of the **Main** section, root activities are at the top of the chart.  In the **Call Tree** and **Event Log** tabs, root activities are the top-level items.  
 
@@ -272,7 +272,7 @@ Use the **Filter** text box to filter events by activity name.
 
 By default the **Grouping** menu is set to **No Grouping**.  Use the **Grouping** menu to sort the activity table based on various criteria.  
 
-Choose **Show Heaviest Stack** \(![Show Heaviest Stack][ImageShowHeaviestStackIcon]\) to reveal another table to the right of the **Activity** table.  Click on an activity to populate the **Heaviest Stack** table.  The **Heaviest Stack** table shows you which children of the selected activity took the longest time to run.  
+Choose **Show Heaviest Stack** \(![Show Heaviest Stack][ImageShowHeaviestStackIcon]\) to reveal another table to the right of the **Activity** table.  Choose an activity to populate the **Heaviest Stack** table.  The **Heaviest Stack** table displays which children of the selected activity took the longest time to run.  
 
 #### The Bottom-Up tab  
 
@@ -284,7 +284,7 @@ The **Bottom-Up** tab only displays activities during the selected portion of th
    The **Bottom-Up** tab  
 :::image-end:::  
 
-In the **Main** section flame chart of the previous figure, navigate to that almost practically all of the time was spent running `Parse HTML`.  The top activity in the **Bottom-Up** tab of the previous figure is `Parse HTML`.  <!--In the flame chart of the previous figure, the yellow below the calls to `wait` are actually thousands of `Minor GC` calls.  -->  Navigate to in the **Bottom-Up** tab, the next most expensive activity is `Layout`.  
+In the **Main** section flame chart of the previous figure, navigate to that almost practically all of the time was spent running `Parse HTML`.  The top activity in the **Bottom-Up** tab of the previous figure is `Parse HTML`.  <!--In the flame chart of the previous figure, the yellow below the calls to `wait` are actually thousands of `Minor GC` calls.  -->  Navigate to the **Bottom-Up** tab, the next most expensive activity is `Layout`.  
 
 The **Self Time** column represents the aggregated time spent directly in that activity, across all of the occurrences.  
 
@@ -340,7 +340,7 @@ Use the **Interactions** section to find and analyze user interactions that happ
 
 A red line at the bottom of an interaction represents time spent waiting for the main thread.  
 
-Click an interaction to view more information about it in the **Summary** tab.  
+Choose an interaction to view more information about it in the **Summary** tab.  
 
 ### Analyze frames per second (FPS)  
 
@@ -371,7 +371,7 @@ Hover over a frame to view a tooltip with more information about it.
    Hover over a frame  
 :::image-end:::  
 
-Click on a frame to view even more information about the frame in the **Summary** tab.  DevTools outlines the selected frame in blue.  
+Choose a frame to view more information about the frame in the **Summary** tab.  DevTools outlines the selected frame in blue.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-frames-summary.msft.png" alt-text="View a frame in the Summary tab" lightbox="../media/evaluate-performance-performance-frames-summary.msft.png":::
    View a frame in the **Summary** tab  
@@ -392,7 +392,7 @@ Requests are color-coded as follows:
 *   JS: Yellow  
 *   Images: Green  
     
-Click on a request to view more information about it in the **Summary** tab.  For example, in the previous figure, the **Summary** tab is displaying more information about the blue request that is selected in the **Network** section.  
+Choose a request to view more information about it in the **Summary** tab.  For example, in the previous figure, the **Summary** tab is displaying more information about the blue request that is selected in the **Network** section.  
 
 A darker-blue square in the top-left of a request means it is a higher-priority request.  A lighter-blue square means lower-priority.  For example, in the previous figure, the blue, selected request is higher-priority, and the green one below it is lower-priority.  
 
@@ -418,7 +418,7 @@ In the 1st of the following figures, the request for `www.bing.com` is represent
 
 ### View memory metrics  
 
-Enable the **Memory** checkbox to view memory metrics from the last recording.  
+Turn on the **Memory** checkbox to view memory metrics from the last recording.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-memory-highlight.msft.png" alt-text="The Memory checkbox" lightbox="../media/evaluate-performance-performance-memory-highlight.msft.png":::
    The **Memory** checkbox  
@@ -437,7 +437,7 @@ The chart only displays the region of the recording that is currently selected. 
 
 ### View the duration of a portion of a recording  
 
-When analyzing a section like **Network** or **Main**, sometimes you need a more precise estimate of how long certain events took.  Hold `Shift`, click and hold, and drag left or right to select a portion of the recording.  At the bottom of your selection, DevTools shows how long that portion took.  
+When analyzing a section like **Network** or **Main**, sometimes you need a more precise estimate of how long certain events took.  Hold `Shift`, choose and hold, and drag left or right to select a portion of the recording.  At the bottom of your selection, DevTools shows how long that portion took.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-main-duration.msft.png" alt-text="View the duration of a portion of a recording" lightbox="../media/evaluate-performance-performance-main-duration.msft.png":::
    View the duration of a portion of a recording  
@@ -445,7 +445,7 @@ When analyzing a section like **Network** or **Main**, sometimes you need a more
 
 ### View a screenshot  
 
-Navigate to [Capture screenshots while recording](#capture-screenshots-while-recording) to learn how to enable screenshots.  
+Navigate to [Capture screenshots while recording](#capture-screenshots-while-recording) to learn how to turn on screenshots.  
 
 Hover over the **Overview** to view a screenshot of how the page looked during that moment of the recording.  The **Overview** is the section that contains the **CPU**, **FPS**, and **NET** charts.  
 
@@ -453,13 +453,13 @@ Hover over the **Overview** to view a screenshot of how the page looked during t
    View a screenshot  
 :::image-end:::  
 
-You may also view screenshots by clicking a frame in the **Frames** section.  DevTools displays a small version of the screenshot in the **Summary** tab.  
+You may also view screenshots by choosing a frame in the **Frames** section.  DevTools displays a small version of the screenshot in the **Summary** tab.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-summary-preview.msft.png" alt-text="View a screenshot in the Summary tab" lightbox="../media/evaluate-performance-performance-summary-preview.msft.png":::
    View a screenshot in the **Summary** tab  
 :::image-end:::  
 
-Click the thumbnail in the **Summary** tab to zoom in on the screenshot.  
+Choose the thumbnail in the **Summary** tab to zoom in on the screenshot.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-summary-preview-select.msft.png" alt-text="Zoom into a screenshot from the Summary tab" lightbox="../media/evaluate-performance-performance-summary-preview-select.msft.png":::
    Zoom into a screenshot from the **Summary** tab  
@@ -469,7 +469,7 @@ Click the thumbnail in the **Summary** tab to zoom in on the screenshot.
 
 To view advanced layers information about a frame:  
 
-1.  [Enable advanced paint instrumentation](#enable-advanced-paint-instrumentation).  
+1.  [Turn on advanced paint instrumentation](#turn-on-advanced-paint-instrumentation).  
 1.  Select a frame in the **Frames** section.  DevTools displays information about the layers in the new **Layers** tab, next to the **Event Log** tab.  
     
     :::image type="complex" source="../media/evaluate-performance-layers-all.msft.png" alt-text="The Layers pane" lightbox="../media/evaluate-performance-layers-all.msft.png":::
@@ -492,7 +492,7 @@ To move the diagram:
 
 To view advanced information about a paint event:  
 
-1.  [Enable advanced paint instrumentation](#enable-advanced-paint-instrumentation).  
+1.  [Turn on](#turn-on-advanced-paint-instrumentation).  
 1.  Select a **Paint** event in the **Main** section.  
     
     :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="The Paint Profiler tab" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
@@ -517,7 +517,7 @@ To open the **Rendering** tab:
 The **FPS meter** is an overlay that appears in the top-right corner of your viewport.  It provides a realtime estimate of FPS as the page runs.  To open the **FPS meter**:  
 
 1.  Open the **Rendering** tab.  Na [Analyze rendering performance with the Rendering tab](#analyze-rendering-performance-with-the-rendering-tab).  
-1.  Enable the **FPS Meter** checkbox.  
+1.  Turn on the **FPS Meter** checkbox.  
     
     :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png" alt-text="The FPS meter" lightbox="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png":::
        The **FPS meter**  
@@ -527,10 +527,10 @@ The **FPS meter** is an overlay that appears in the top-right corner of your vie
 
 Use Paint Flashing to get a realtime view of all paint events on the page.  Whenever a part of the page gets re-painted, DevTools outlines that section in green.  
 
-To enable Paint Flashing:  
+To turn on Paint Flashing, complete the following actions.  
 
 1.  Open the **Rendering** tab.  Navigate to [Analyze rendering performance with the Rendering tab](#analyze-rendering-performance-with-the-rendering-tab).  
-1.  Enable the **Paint Flashing** checkbox.  
+1.  Turn on the **Paint Flashing** checkbox.  
     
     :::image type="complex" source="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png" alt-text="Paint Flashing" lightbox="../media/evaluate-performance-jank-console-rendering-paint-flashing.msft.png":::
        **Paint Flashing**  
@@ -540,10 +540,10 @@ To enable Paint Flashing:
 
 Use **Layer Borders** to view an overlay of layer borders and tiles on top of the page.  
 
-To enable Layer Borders:  
+To turn on Layer Borders, complete the following actions,  
 
 1.  Open the **Rendering** tab.  Navigate to [Analyze rendering performance with the Rendering tab](#analyze-rendering-performance-with-the-rendering-tab).  
-1.  Enable the **Layer Borders** checkbox.  
+1.  Turn on the **Layer Borders** checkbox.  
     
     :::image type="complex" source="../media/evaluate-performance-devtools-console-rendering-layer-borders.msft.png" alt-text="Layer Borders" lightbox="../media/evaluate-performance-devtools-console-rendering-layer-borders.msft.png":::
        **Layer Borders**  
@@ -556,10 +556,10 @@ Navigate to the comments in [debug_colors.cc][ChromiumDebugColors] for an explan
 Use Scrolling Performance Issues to identify elements of the page that have event listeners related to scrolling that may harm the performance of the page.  
 DevTools outlines the potentially-problematic elements in teal.  
 
-To view scroll performance issues:  
+To view scroll performance issues, complete the following actions. 
 
 1.  Open the **Rendering** tab.  Navigate to [Analyze rendering performance with the Rendering tab](#analyze-rendering-performance-with-the-rendering-tab).  
-1.  Enable the **Scrolling Performance Issues** checkbox.  
+1.  Turn on the **Scrolling Performance Issues** checkbox.  
     
     :::image type="complex" source="../media/evaluate-performance-bing-console-drawer-rendering-scrolling-performance-issues.msft.png" alt-text="Scrolling Performance Issues indicates that non-layer viewport-constrained objects may harm scroll performance" lightbox="../media/evaluate-performance-bing-console-drawer-rendering-scrolling-performance-issues.msft.png":::
        **Scrolling Performance Issues** indicates that non-layer viewport-constrained objects may harm scroll performance  
@@ -587,7 +587,7 @@ To view scroll performance issues:
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
 [DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "Open the Command Menu - Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceGettingStarted]: ./index.md "Get started with analyzing runtime performance | Microsoft Docs"  
 
