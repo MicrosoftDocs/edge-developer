@@ -1,8 +1,9 @@
 ---
+description: Learn how to use Microsoft Edge and DevTools to find memory issues that affect page performance, including memory leaks, memory bloat, and frequent garbage collections.
 title: Fix Memory Problems
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/10/2020
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -58,7 +59,7 @@ The key here is to use the RAIL model and focus on your users.  Find out what de
 
 Use the Microsoft Edge Browser Task Manager as a starting point to your memory issue investigation.  The Microsoft Edge Browser Task Manager is a realtime monitor that tells you how much memory a page is currently using.  
 
-1.  Press `Shift`+`Esc` or go to the Microsoft Edge main menu and select **More tools** > **Browser Task Manager** to open the Microsoft Edge Browser Task Manager.  
+1.  Select `Shift`+`Esc` or go to the Microsoft Edge main menu and choose **More tools** > **Browser Task Manager** to open the Microsoft Edge Browser Task Manager.  
     
     :::image type="complex" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="Opening the Microsoft Edge Browser Task Manager" lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
        Figure 1:  Opening the Microsoft Edge Browser Task Manager  
@@ -229,6 +230,10 @@ If your page appears to pause frequently, then you may have garbage collection i
 You are able to use either the Microsoft Edge Browser Task Manager or Performance memory recordings to spot frequent garbage collection.  In the Microsoft Edge Browser Task Manager, frequently rising and falling **Memory** or **JavaScript Memory** values represent frequent garbage collection.  In Performance recordings, frequent changes \(rising and falling\) to the JS heap or node count graphs indicate frequent garbage collection.  
 
 After you have identified the problem, you are able to use an **Allocation instrumentation on timeline** recording to find out where memory is being allocated and which functions are causing the allocations.  
+
+## Getting in touch with the Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 

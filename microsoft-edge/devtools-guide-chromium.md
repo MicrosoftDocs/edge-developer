@@ -3,13 +3,12 @@ description: Get to know the Microsoft Edge (Chromium) Developer Tools
 title: Microsoft Edge (Chromium) Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/28/2020
+ms.date: 12/09/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-
 # Microsoft Edge (Chromium) Developer Tools  
 
 Microsoft Edge has adopted the Chromium open source project to create better web compatibility and less fragmentation of different underlying web platforms.  This change should make it easier for you to build and test your websites in Microsoft Edge and ensure that each works as expected even while viewed in a different Chromium-based browser \(such as Google Chrome, Vivaldi, Opera, or Brave\).  
@@ -18,15 +17,16 @@ As the web has grown in usage across an ever-widening array of device types, the
 
 If you are checking out Microsoft Edge and you mainly develop in a Chromium-based browser, you should feel right at home.  The Microsoft Edge \(Chromium\) Developer Tools function in the same way as the developer tools you already know and use.  For more information, see [What's new in the Microsoft Edge (Chromium) DevTools][DevtoolsGuideChromiumWhatsNewIndex].  
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="Microsoft Edge (Chromium) DevTools":::
-   Microsoft Edge (Chromium) DevTools
-:::image-end:::
+:::image type="complex" source="./devtools-guide-chromium/media/devtools.png" alt-text="Microsoft Edge (Chromium) DevTools" lightbox="./devtools-guide-chromium/media/devtools.png":::
+   Microsoft Edge (Chromium) DevTools  
+:::image-end:::  
 
-If you are checking out the next version of Microsoft Edge and you previously developed in Microsoft Edge \(EdgeHTML\), you now have some great new tools that should make it easier and faster to build and test your websites in Microsoft Edge!  
+If you are checking out the new Microsoft Edge and you previously developed in Microsoft Edge \(EdgeHTML\), you now have some great new tools that should make it easier and faster to build and test your websites in Microsoft Edge!  
 
 ## Open the DevTools  
 
 If you have never used the DevTools before, the Microsoft Edge Developer Tools are a set of tools built directly into the Microsoft Edge browser.  With these DevTools, you are able to do the following.  
+
 *   Inspect and make changes to your HTML website  
 *   Edit CSS and instantly see preview how your website renders  
 *   See all the `console.log()` statements from your front-end JavaScript code  
@@ -35,20 +35,22 @@ If you have never used the DevTools before, the Microsoft Edge Developer Tools a
 all directly within the browser.  These are just examples of some of the features the DevTools provide to make it easier and faster for you to build and test your websites in Microsoft Edge.  
 
 To open the DevTools  
+
 *   press `F12` 
-*   press `Ctrl`+`Shift`+`I` on Windows \(`Command`+`Option`+`I` on macOS\)  
+*   press `Ctrl`+`Shift`+`I` on Windows/Linux \(`Command`+`Option`+`I` on macOS\)  
 
-If you want to see the HTML or CSS for an element on your site, right-click the element and select **Inspect** to jump into the Elements panel.  You may also press `Ctrl`+`Shift`+`C` on Windows \(`Command`+`Option`+`C` on macOS\) to open the DevTools in **Inspect Element Mode** which lets you select an element on the site and see the HTML and CSS in the **Elements** panel.  
+If you want to see the HTML or CSS for an element on your site, right-click the element and select **Inspect** to jump into the Elements panel.  You may also press `Ctrl`+`Shift`+`C` on Windows/Linux \(`Command`+`Option`+`C` on macOS\) to open the DevTools in **Inspect Element Mode** which lets you select an element on the site and see the HTML and CSS in the **Elements** panel.  
 
-If you want to see logs from your front-end JavaScript code or quickly run some script, press `Ctrl`+`Shift`+`J` on Windows \(`Command`+`Option`+`J` on macOS\) to launch the Console panel in the DevTools.  
+If you want to see logs from your front-end JavaScript code or quickly run some script, press `Ctrl`+`Shift`+`J` on Windows/Linux or `Command`+`Option`+`J` on macOS to launch the Console panel in the DevTools.  
 
 ## Core tools  
 
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Microsoft Edge (Chromium) DevTools core tools":::
-   Microsoft Edge (Chromium) DevTools core tools
-:::image-end:::
+:::image type="complex" source="./devtools-guide-chromium/media/devtools-core-tools.png" alt-text="Microsoft Edge (Chromium) DevTools core tools" lightbox="./devtools-guide-chromium/media/devtools-core-tools.png":::
+   Microsoft Edge (Chromium) DevTools core tools  
+:::image-end::: 
 
 The Microsoft Edge \(Chromium\) DevTools include the following panels.  
+
 *   An **Elements** panel to edit HTML and CSS, inspect accessibility properties, view event listeners, and set DOM mutation breakpoints  
 *   A **Console** to view and filter log messages, inspect JavaScript objects and DOM nodes, and run JavaScript in the context of the selected window or frame  
 *   A **Sources** panel to open and live edit your code, set breakpoints, step through code, and see the state of your website one line of JavaScript at a time  
@@ -64,7 +66,7 @@ The Microsoft Edge \(Chromium\) DevTools include the following panels.
 
 [!INCLUDE [audits-panel-note](./devtools-guide-chromium/includes/audits-panel-note.md)]  
 
-Please send your [feedback and feature requests](#getting-in-touch-with-the-microsoft-edge-devtools-team)!  
+Please send your [feedback and feature requests](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
 
 ## Extensions  
 
@@ -72,9 +74,9 @@ You may have used extensions to the DevTools to help you diagnose and debug issu
 
 You may also add extensions from the [Chrome Web Store][GoogleChromeWebstoreExtensions].  
 
-:::image type="complex" source="./devtools-guide-chromium/media/allow-extensions-from-stores.png" alt-text="Chrome Web Store in Microsoft Edge":::
-   Chrome Web Store in Microsoft Edge
-:::image-end:::
+:::image type="complex" source="./devtools-guide-chromium/media/allow-extensions-from-stores.png" alt-text="Chrome Web Store in Microsoft Edge" lightbox="./devtools-guide-chromium/media/allow-extensions-from-stores.png":::
+   Chrome Web Store in Microsoft Edge  
+:::image-end:::  
 
 At the top, select **Allow extensions from other stores** and then select **Allow** in the dialog that appears.  
 
@@ -83,15 +85,15 @@ At the top, select **Allow extensions from other stores** and then select **Allo
 
 Select **Add to Chrome** to add your DevTools extension to Microsoft Edge!  
 
-:::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="Adding extension from Chrome Web Store to Microsoft Edge":::
-   Adding extension from Chrome Web Store to Microsoft Edge
-:::image-end:::
+:::image type="complex" source="./devtools-guide-chromium/media/install-extension-from-chrome-store.png" alt-text="Adding extension from Chrome Web Store to Microsoft Edge" lightbox="./devtools-guide-chromium/media/install-extension-from-chrome-store.png":::
+   Adding extension from Chrome Web Store to Microsoft Edge  
+:::image-end:::  
 
 ## Shortcuts  
 
 These shortcuts control the main DevTools window, work across all tools, or both.  
 
-| Action | Windows | macOS |  
+| Action | Windows/Linux | macOS |  
 |:--- |:--- | :--- |  
 | Show/Hide DevTools \(opens to last viewed panel\) | `F12` or `Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | Show the Console panel | `Ctrl`+`Shift`+`J` | `Command`+`Option`+`J` |  
@@ -116,7 +118,7 @@ These shortcuts control the main DevTools window, work across all tools, or both
 | Show non-editable HTML source code in a new tab | `Ctrl`+`U` | N/A |  
 
 > [!NOTE]
-> If you are debugging and paused at a breakpoint, the **Refresh**shortcut resumes the runtime first.  
+> If you are debugging and paused at a breakpoint, the **Refresh** shortcut resumes the runtime first.  
 
 ## See also  
 
@@ -125,20 +127,14 @@ These shortcuts control the main DevTools window, work across all tools, or both
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
-Please send your feedback, so the Microsoft Edge team continues improving the Microsoft Edge DevTools for you!  Simply select the **Feedback** icon in the DevTools or press `Alt`+`Shift`+`I` on Windows \(`Option`+`Shift`+`I` on macOS\) and enter any feedback or feature requests you have for the DevTools.  
-
-:::image type="complex" source="./devtools-guide-chromium/media/devtools-feedback.png" alt-text="Give feedback on Microsoft Edge":::
-   Give feedback on Microsoft Edge
-:::image-end:::
+[!INCLUDE [contact DevTools team note](./devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
 
 If you want to preview the [latest features coming to the DevTools][DevtoolsGuideChromiumWhatsNewIndex], download [Microsoft Edge Canary][MicrosoftedgeinsiderDownload], which builds nightly.  
-
-<!-- image links -->  
 
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools for Beginners: Get Started with HTML and the DOM | Microsoft Docs"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools "What's new in the Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools "What's new in the Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Microsoft Edge (Chromium) DevTools Protocol | Microsoft Docs"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge Add-ons"  

@@ -1,65 +1,65 @@
 ---
-description: Host web content in your Win32 app with the Microsoft Edge WebView 2 control
+description: Getting started guide with WebView2 for Win32 apps
 title: Getting started with WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/30/2020
+ms.date: 10/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
 
-# Getting started with WebView2 (developer preview)  
+# Getting started with WebView2  
 
-The following content walks you through the commonly used functionalities of [WebView2 (developer preview)][Webview2Index] and provides a starting  point for creating your first WebView2 app.  For more information about individual WebView2 APIs, see [API reference][Webview2ReferenceWin3209538].  
+The following content walks you through the commonly used functionalities of [WebView2][Webview2Index] and provides a starting point for creating your first WebView2 app.  For more information about individual WebView2 APIs, see [API reference][Webview2ReferenceWin32].  
 
 ## Prerequisites  
 
-*   [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).  
+*   [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).  
     
     > [!NOTE]
     > The WebView team recommends using the Canary channel and the minimum required version is 82.0.488.0.  
     
 *   [Visual Studio][MicrosoftVisualstudioMain] 2015 or later with C++ support installed.  
 
-## Step 1 - Create a single window win32 app  
+## Step 1 - Create a single-window win32 app  
 
-Start with a basic desktop project containing a single main window.  To better focus the walkthrough, you are using modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)][CppWindowsWalkthroughCreatingDesktopApplication] for your sample app.  To download the modified sample and get started, see [WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].  
+Start with a basic desktop project that contains a single main window.  To better focus the walkthrough, you are using modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)][CppWindowsWalkthroughCreatingDesktopApplication] for your sample app.  To download the modified sample and get started, navigate to [WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].  
 
 In Visual Studio, open `WebView2GettingStarted.sln`.  If you are using an older version of Visual Studio, hover on the **WebView2GettingStarted** project, open the contextual menu \(right-click\), and select **Properties**.  Under **Configuration Properties** > **General**, modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and Visual Studio toolset \(VS toolset\) available to you.  
 
-:::image type="complex" source="../media/tool-version.png" alt-text="Tool version":::
+:::image type="complex" source="../media/tool-version.png" alt-text="Tool version" lightbox="../media/tool-version.png":::
    Tool version  
 :::image-end:::  
 
-Visual Studio may show some errors due to missing WebView2 header file, which should go away after Step 2 is completed.  
+Visual Studio may show some errors because of the missing WebView2 header file, which should go away after Step 2 is completed.  
 
 ## Step 2 - Install WebView2 SDK  
 
-Add the WebView2 SDK into the project.  For the developer preview, you may install the Win32 SDK using Nuget.  
+Add the WebView2 SDK into the project.  You may install the Win32 SDK using NuGet.  
 
-1.  Hover on the project, open the contextual menu \(right-click\), and select **Manage Nuget Packages**.  
+1.  Hover on the project, open the contextual menu \(right-click\), and select **Manage NuGet Packages**.  
     
-    :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="Manage Nuget packages":::
-       Manage Nuget packages  
+    :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="Manage NuGet packages" lightbox="../media/manage-nuget-packages.png":::
+       Manage NuGet packages  
     :::image-end:::  
     
 1.  Install the Windows Implementation Library.  
-    1.  Enter `Microsoft.Windows.ImplementationLibrary` in the search bar, select **Microsoft.Windows.ImplementationLibrary** from the results, and select **Install** in the right-hand side window.  Nuget downloads the SDK to your machine.  
+    1.  Enter `Microsoft.Windows.ImplementationLibrary` in the search bar, select **Microsoft.Windows.ImplementationLibrary** from the results, and select **Install** in the right-hand side window.  NuGet downloads the SDK to your machine.  
         
         > [!NOTE] 
         > The [Windows Implementation Library][GithubMicrosoftWilMain] and [Windows Runtime C++ Template Library][CppCxWrlTemplateLibraryVS2019] are optional and were added to make working with COM easier for the example.  
         
-        :::image type="complex" source="../media/wil.png" alt-text="Windows Implementation Library":::
+        :::image type="complex" source="../media/wil.png" alt-text="Windows Implementation Library" lightbox="../media/wil.png":::
            Windows Implementation Library  
         :::image-end:::  
         
 1.  Install the WebView2 SDK.  
-    1.  Enter `Microsoft.Web.WebView2` in the search bar, select **Microsoft.Web.WebView2** from the results, and select **Install** in the right-hand side window.  Nuget downloads the SDK to your machine.  
+    1.  Enter `Microsoft.Web.WebView2` in the search bar, select **Microsoft.Web.WebView2** from the results, and select **Install** in the right-hand side window.  NuGet downloads the SDK to your machine.  
         
-        :::image type="complex" source="../media/nuget.png" alt-text="Nuget":::
-           Nuget
+        :::image type="complex" source="../media/nuget.png" alt-text="Nuget Package Manager" lightbox="../media/nuget.png":::
+           Nuget Package Manager
         :::image-end:::  
         
 1.  Add WebView2 header to your project.  
@@ -89,9 +89,9 @@ You are all set to use and build against the WebView2 API.
 
 ### Build your empty sample app  
 
-Press `F5` to build and run the sample app.  You should see an app displaying an empty window.  
+Select `F5` to build and run the sample app.  An app displaying an empty window appears.  
 
-:::image type="complex" source="../media/empty-app.png" alt-text="Empty app":::
+:::image type="complex" source="../media/empty-app.png" alt-text="Empty app" lightbox="../media/empty-app.png":::
    Empty app  
 :::image-end:::  
 
@@ -146,12 +146,11 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
     }).Get());
 ```  
 
-
 ### Build your Bing sample app  
 
-Press `F5` to build and run the app.  Now you have a WebView window displaying the Bing page.  
+Select `F5` to build and run the app.  Now you have a WebView window displaying the Bing page.  
 
-:::image type="complex" source="../media/bing-window.png" alt-text="Bing window":::
+:::image type="complex" source="../media/bing-window.png" alt-text="Bing window" lightbox="../media/bing-window.png":::
    Bing window  
 :::image-end:::  
 
@@ -165,9 +164,9 @@ The WebView team already covered navigating to URL using the `ICoreWebView2::Nav
 1.  `HistoryChanged`   
 1.  `NavigationCompleted`   
 
-For more information, see [Navigation events][Webview2ConceptsNavigationEvents].  
+For more information, navigate to [Navigation events][Webview2ConceptsNavigationEvents].  
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="Navigation events":::
+:::image type="complex" source="../media/navigation-events.png" alt-text="Navigation events" lightbox="../media/navigation-events.png":::
    Navigation events  
 :::image-end:::  
 
@@ -177,9 +176,9 @@ In error cases, one or more of the following events may occur depending on wheth
 *   `ContentLoading`  
 *   `HistoryChanged`
 
-In case of an HTTP redirect, there are multiple `NavigationStarting` events in a row.  
+If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.  
 
-As an example of utilizing the events, register a handler for the `NavigationStarting` event to cancel any non-https requests.  Copy the following code snippet and paste into `HelloWebView.cpp`.  
+As an example of using the events, register a handler for the `NavigationStarting` event to cancel any non-https requests.  Copy the following code snippet and paste into `HelloWebView.cpp`.  
 
 ```cpp
 // register an ICoreWebView2NavigationStartingEventHandler to cancel any non-https navigation
@@ -201,7 +200,7 @@ Now the app is not navigating to any non-https sites.  You may use similar mecha
 
 ## Step 5 - Scripting  
 
-The hosting app may also inject JavaScript into WebView.  You may task WebView to run arbitrary JavaScript or add initialization scripts.  Added initialization scripts apply to all future top level document and child frame navigation until removed, and run after the global object has been created and before any other script included by the HTML document is run.  
+The hosting app may also inject JavaScript into WebView.  You may task WebView to run arbitrary JavaScript or add initialization scripts.  Added initialization scripts apply to all future top-level document and child frame navigation until removed.  The initialization scripts run after creating the global object and before running any other script included by the HTML document.  
 
 Copy the following code snippet and paste into `HelloWebView.cpp`.  
 
@@ -217,14 +216,14 @@ webviewWindow->ExecuteScript(L"window.document.URL;", Callback<ICoreWebView2Exec
     }).Get());
 ```  
 
-Now WebView should always freezes the `Object` object and returns the page document once.  
+Now, WebView should always freeze the `Object` object and returns the page document once.  
 
 > [!NOTE] 
 > The script injection APIs \(and some other WebView2 APIs\) are asynchronous, you should use callbacks if code is must be run in a specific order.  
 
 ## Step 6 - Communication between host and web content  
 
-The host and the web content may also communicate with each other through the `postMessage` method.  The web content running within a WebView may post to the host through the `window.chrome.webview.postMessage` method, and the message is handled by any registered the `ICoreWebView2WebMessageReceivedEventHandler` event handler on the host.  Likewise, the host may message the web content through `ICoreWebView2::PostWebMessageAsString` or `ICoreWebView2::PostWebMessageAsJSON` method, which is caught by handlers added from `window.chrome.webview.addEventListener` listener.  The communication mechanism allows the web content to utilize native capabilities by passing messages to ask the host to call native APIs.  
+The host and the web content may also communicate with each other through the `postMessage` method.  The web content running within a WebView may post to the host through the `window.chrome.webview.postMessage` method, and the message is handled by any registered the `ICoreWebView2WebMessageReceivedEventHandler` event handler on the host.  Likewise, the host may message the web content through `ICoreWebView2::PostWebMessageAsString` or `ICoreWebView2::PostWebMessageAsJSON` method, which is caught by handlers added from `window.chrome.webview.addEventListener` listener.  The communication mechanism allows the web content to use native capabilities by passing messages to ask the host to run native APIs.  
 
 As an example to understand the mechanism, the following steps occur when you try printing out the document URL in WebView.  
 
@@ -259,13 +258,13 @@ nullptr);
 
 ### Build your show URL sample app  
 
-Press `F5` to build and run the app.  You should see the URL in a pop-up window prior to navigating to a page.  
+Select `F5` to build and run the app.  The URL appears in a pop-up window before navigating to a page.  
 
-:::image type="complex" source="../media/show-url.png" alt-text="Show url":::
+:::image type="complex" source="../media/show-url.png" alt-text="Show url" lightbox="../media/show-url.png":::
    Show url  
 :::image-end:::  
 
-Congratulations, you just built your first WebView2 app!  
+Congratulations, you just built your first WebView2 app.  
 
 ## Next steps  
 
@@ -273,22 +272,22 @@ Many of the WebView2 functionalities that are not covered on this page, the foll
 
 ### See also  
 
-*   For a comprehensive example of WebView2 capabilities, see [WebView2 API Sample][GithubMicrosoftedgeWebview2samplesApisample].  
-*   For a sample application built using WebView2, see [WebView2Browser][GithubMicrosoftedgeWebview2browser].  
-*   For detailed information about the WebView2 API, see [API reference][Webview2ReferenceWin3209538].  
+*   For a comprehensive example of WebView2 capabilities, navigate to [WebView2 API Sample][GithubMicrosoftedgeWebview2samplesApisample].  
+*   For a sample application built using WebView2, navigate to [WebView2Browser][GithubMicrosoftedgeWebview2browser].  
+*   For detailed information about the WebView2 API, navigate to [API reference][Webview2ReferenceWin32].  
 
-## Getting in touch with the WebView2 team  
+## Getting in touch with the Microsoft Edge WebView team  
 
-Help build a richer WebView2 experience by sharing your feedback!  Visit the [feedback repo][GithubMicrosoftedgeWebviewfeedback] on GitHub to submit feature requests or bug reports or search for known issues.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
 [Webview2Index]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
-[Webview2ReferenceWin3209538]: ../reference/win32/0-9-538-reference-webview2.md "Reference (WebView2) | Microsoft Docs"  
+[Webview2ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ Reference | Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"  
 
-[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019 "Windows Runtime C++ Template Library (WRL) | Microsoft Docs"  
-[CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019 "Walkthrough: Create a traditional Windows Desktop application (C++) | Microsoft Docs"  
+[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true "Windows Runtime C++ Template Library (WRL) | Microsoft Docs"  
+[CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019&preserve-view=true "Walkthrough: Create a traditional Windows Desktop application (C++) | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2browser]: https://github.com/MicrosoftEdge/WebView2Browser "WebView2Browser - MicrosoftEdge/WebView2Browser | GitHub"  
 
@@ -302,3 +301,5 @@ Help build a richer WebView2 experience by sharing your feedback!  Visit the [fe
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"  
 
 [MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
+
+[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 Installer"  

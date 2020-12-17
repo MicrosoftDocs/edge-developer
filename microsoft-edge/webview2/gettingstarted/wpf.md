@@ -1,24 +1,24 @@
 ---
-description: Host web content in your WPF app with the Microsoft Edge WebView 2 control
-title: Microsoft Edge WebView 2 for WPF apps
+description: Getting started guide with WebView2 for WPF apps
+title: Getting started with WebView2 for WPF apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView2, browser control, edge html, getting started, Getting Started, .NET
 ---
 
-# Getting started with WebView2 in WPF (Preview)
+# Getting started with WebView2 in WPF
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2 (preview)](../index.md).  For more information on individual APIs, see [API reference](../reference/dotnet/0-9-515-reference-webview2.md).  
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2](../index.md).  For more information on individual APIs, see [API reference](/dotnet/api/microsoft.web.webview2.wpf).  
 
 ## Prerequisites  
 
 Ensure you installed the following list of pre-requisites before proceeding:  
 
-* [Microsoft Edge (Chromium) Canary channel](https://www.microsoftedgeinsider.com/download) installed on Windows 10, Windows 8.1, or Windows 7.  
+* [WebView2 Runtime][Webview2Installer] or any [non-stable Microsoft Edge (Chromium) Canary channel](https://www.microsoftedgeinsider.com/download) installed on Windows 10, Windows 8.1, or Windows 7.  
 * [Visual Studio](https://visualstudio.microsoft.com) 2017 or later.  
 
 ## Step 1 - Create a single window application  
@@ -60,22 +60,19 @@ Start with a basic desktop project containing a single main window.
     
 ## Step 2 - Install WebView2 SDK  
 
-Next add the WebView2 SDK to the project.  For the preview, install the WebView2 SDK using Nuget.  
+Next add the WebView2 SDK to the project using NuGet.  
 
 1.  Open the context menu on the project \(right-click\), and select **Manage NuGet Packages...**.  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Nuget":::
-       Nuget
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="NuGet":::
+       NuGet
     :::image-end:::
     
 1.  Enter `Microsoft.Web.WebView2` in the search bar.  Select **Microsoft.Web.WebView2** from the search results.  
-
-    > [!IMPORTANT]
-    > Ensure you check **Include prerelease**, select a prerelease package in **Version**, and then choose **Install**.  
-  
+   
      ![nuget](./media/installnuget.PNG)
     
-    You are all set to start developing applications using the WebView2 API.  Select `F5` to build and run the project.  The running project displays an empty window.  
+    You're all set to start developing applications using the WebView2 API.  Select `F5` to build and run the project.  The running project displays an empty window.  
     
     :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="Empty app":::
        Empty app
@@ -188,7 +185,7 @@ Add the ability to allow users to change the URL that the WebView2 control displ
     
 ## Step 5 - Navigation events  
 
-The application that hosts WebView2 controls listens to the following events that are raised by the WebView2 control during navigation to web pages.  
+During webpage navigation, the WebView2 control raises events. The application that hosts WebView2 controls listens for the following events.  
 
 *   `NavigationStarting`  
 *   `SourceChanged`  
@@ -208,9 +205,9 @@ When an error occurs, the following events are raised and may depend on navigati
 *   `ContentLoading`  
 *   `HistoryChanged`  
 
-When there is an HTTP redirect, there are multiple `NavigationStarting` events.  
+When there's an HTTP redirect, there are multiple `NavigationStarting` events.  
 
-To demonstrate how to use these events, start by registering a handler for `NavigationStarting` that cancels any requests that do not use HTTPS.  
+To demonstrate how to use these events, start by registering a handler for `NavigationStarting` that cancels any requests that don't use HTTPS.  
 
 In `MainWindow.xaml.cs`, modify the constructor as shown below and add the `EnsureHttps` function.  
 
@@ -237,9 +234,9 @@ Press `F5` to build and run your project.  Confirm that when navigating to an HT
 
 ## Step 6 - Scripting  
 
-You may use host applications to inject JavaScript code into WebView2 controls at runtime.  The injected JavaScript applies to all new top level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run after creation of the global object, and before any other script included in the HTML document is run.  
+You may use host applications to inject JavaScript code into WebView2 controls at runtime.  The injected JavaScript applies to all new top-level documents and any child frames, until the JavaScript is removed.  The injected JavaScript is run after creation of the global object, and before any scripts included in the HTML document.  
 
-You can use scripting to alert the user when navigating to a non-HTTPS site.  Modify the `EnsureHttps` function so that it injects script into the web content using the [ExecuteScriptAsync](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#executescriptasync) method.  
+You can use scripting to alert the user when navigating to a non-HTTPS site.  Modify the `EnsureHttps` function so that it injects script into the web content using the [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) method.  
 
 ```csharp
 void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
@@ -253,7 +250,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 }
 ```  
 
-Press `F5` to build and run your project.  Confirm that the application displays an alert when you navigate to a site that does not use HTTPS.  
+Press `F5` to build and run your project.  Confirm that the application displays an alert when you navigate to a site that doesn't use HTTPS.  
 
 :::image type="complex" source="./media/wpf-gettingstarted-https.png" alt-text="HTTPS":::
    HTTPS
@@ -270,7 +267,7 @@ This communication mechanism allows web content to pass messages to the host usi
 
 In your project, when the WebView2 control navigates to a URL, it displays the URL in the address bar and alerts the user of the URL displayed in the WebView2 control.  
 
-1.  In **MainWindow.xaml.cs**, update your constructor and create an `InitializeAsync` function as shown in the following code snippet.  The `InitializeAsync` function awaits [EnsureCoreWebView2Async](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md#ensurecorewebview2async) because the initialization of `CoreWebView2` is asynchronous.  
+1.  In **MainWindow.xaml.cs**, update your constructor and create an `InitializeAsync` function as shown in the following code snippet.  The `InitializeAsync` function awaits [EnsureCoreWebView2Async](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async) because the initialization of `CoreWebView2` is asynchronous.  
     
     ```csharp
     public MainWindow()
@@ -286,7 +283,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
     }
     ```  
     
-1.  After **CoreWebView2** is initialized, register an event handler to respond to `WebMessageReceived`.  In **MainWindow.xaml.cs** update `InitializeAsync` and add `UpdateAddressBar` using the following code snippet.  
+1.  After **CoreWebView2** is initialized, register an event handler to respond to `WebMessageReceived`.  In **MainWindow.xaml.cs**, update `InitializeAsync` and add `UpdateAddressBar` using the following code snippet.  
     
     ```csharp
     async void InitializeAsync()
@@ -321,7 +318,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
     }
     ```  
     
-    Press `F5` to build and run the app.  Now the address bar displays the URI in the WebView and when you successfully navigate to a new URI, the WebView alerts the user of the URI displayed in the WebView.  
+    Press `F5` to build and run the app.  Now, the address bar displays the URI in the WebView2 control. When you successfully navigate to a new URI, the WebView2 control alerts the user of the URI that's displayed in the WebView2 control.  
     
     :::image type="complex" source="./media/wpf-gettingstarted-searchbar.png" alt-text="addressBar":::
        addressBar
@@ -332,9 +329,14 @@ Congratulations, you built your first WebView2 app!
 ## Next steps  
 
 *   For a comprehensive example of WebView2 capabilities, see [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) on GitHub.  
-*   For more detailed information about WebView2 APIs, see [API reference](../reference/wpf/0-9-515/microsoft-web-webview2-wpf-webview2.md).  
+*   For more detailed information about WebView2 APIs, see [API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2).  
 *   For more information about  WebView2, see [WebView2 Resources](../index.md#next-steps).  
 
 ## Getting in touch with the Microsoft Edge WebView team  
 
-Help build a richer WebView2 experience by sharing your feedback!  Visit the Microsoft Edge WebView [feedback repo](https://github.com/MicrosoftEdge/WebViewFeedback) to submit feature requests or bug reports or search for known issues.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
+
+
+<!-- links -->  
+
+[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 Installer" 

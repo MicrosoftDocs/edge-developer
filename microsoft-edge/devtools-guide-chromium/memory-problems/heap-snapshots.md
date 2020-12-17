@@ -1,8 +1,9 @@
 ---
+description: Learn how to record heap snapshots with the Microsoft Edge DevTools heap profiler and find memory leaks.
 title: How to Record Heap Snapshots
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/03/2020
+ms.date: 10/19/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,13 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-
-
-
-
-# How to Record Heap Snapshots   
-
-
+# How to record heap snapshots  
 
 Learn how to record heap snapshots with the Microsoft Edge DevTools heap profiler and find memory leaks.  
 
@@ -36,30 +31,30 @@ of your page.  Use it to take JavaScript heap \(JS heap\) snapshots, analyze mem
 
 ## Take a snapshot  
 
-On the **Memory** panel, choose **Take snapshot**, then click **Start**.  You may also press `Ctrl`+`E` \(Windows\) or `Cmd`+`E` \(macOS\).  
+On the **Memory** panel, choose **Take snapshot**, then choose **Start**.  You may also select `Ctrl`+`E` \(Windows, Linux\) or `Cmd`+`E` \(macOS\).  
 
-> ##### Figure 1  
-> Select profiling type  
-> ![Select profiling type][ImageProfilingType]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="Select profiling type" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
+   Select profiling type  
+:::image-end:::  
 
 **Snapshots** are initially stored in the renderer process memory.  Snapshots are transferred to the DevTools on demand, when you click on the snapshot icon to view it.  
 
 After the snapshot has been loaded into DevTools and has been parsed, the number below the snapshot title appears and shows the [total size of the reachable JavaScript objects][DevtoolsMemoryProblems101ObjectSizes].  
 
-> ##### Figure 2  
-> Total size of reachable objects  
-> ![Total size of reachable objects][ImageTotalSize]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png" alt-text="Total size of reachable objects" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png":::
+   Total size of reachable objects  
+:::image-end:::  
 
 > [!NOTE]
 > Only reachable objects are included in snapshots.  Also, taking a snapshot always starts with a garbage collection.  
 
 ## Clear snapshots  
 
-Click **Clear all profiles** icon to remove snapshots \(both from DevTools and any memory associated with the renderer process\).  
+Choose **Clear all profiles** icon to remove snapshots \(both from DevTools and any memory associated with the renderer process\).  
 
-> ##### Figure 3  
-> Remove snapshots  
-> ![Remove snapshots][ImageRemoveSnapshots]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="Remove snapshots" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
+   Remove snapshots  
+:::image-end:::  
 
 Closing the DevTools window does not delete profiles from the memory associated with the renderer process.  When reopening DevTools, all previously taken snapshots reappear in the list of snapshots.  
 
@@ -80,9 +75,9 @@ View snapshots from different perspectives for different tasks.
 
 To switch between views, use the selector at the top of the view.  
 
-> ##### Figure 4  
-> Switch views selector  
-> ![Switch views selector][ImageSwitchViews]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png" alt-text="Switch views selector" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png":::
+   Switch views selector  
+:::image-end:::  
 
 > [!NOTE]
 > Not all properties are stored on the JavaScript heap.  Properties implemented using getters that run native code are not captured.  Also, non-string values such as numbers are not captured.  
@@ -91,9 +86,9 @@ To switch between views, use the selector at the top of the view.
 
 Initially, a snapshot opens in the Summary view, displaying object totals, which may be expanded to show instances:  
 
-> ##### Figure 5  
-> Summary view  
-> ![Summary view][ImageSummaryView]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Summary view" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
+   **Summary** view  
+:::image-end:::  
 
 Top-level entries are "total" lines.  
 
@@ -112,9 +107,9 @@ Remember that yellow objects have JavaScript references and red objects are deta
 
 **What do the various constructor \(group\) entries in the Heap profiler correspond to?**  
 
-> ##### Figure 6  
-> Constructor groups  
-> ![Constructor groups][ImageConstructorGroups]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="Constructor groups" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
+   **Constructor** groups  
+:::image-end:::  
 
 | Constructor \(group\) entry | Description |  
 |:--- |:--- |  
@@ -135,12 +130,12 @@ Find leaked objects by comparing multiple snapshots to each other.  To verify th
 1.  Perform an operation \(interact with a page in some way that you believe to be causing a leak\).  
 1.  Perform a reverse operation \(do the opposite interaction and repeat it a few times\).  
 1.  Take a second heap snapshot and change the view of this one to **Comparison**, comparing it to **Snapshot 1**.  
-
+    
 In the **Comparison** view, the difference between two snapshots is displayed.  When expanding a total entry, added and deleted object instances are shown.  
 
-> ##### Figure 7  
-> Comparison view  
-> ![Comparison view][ImageComparisonView]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png" alt-text="Comparison view" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png":::
+   **Comparison** view  
+:::image-end:::  
 
 <!--todo: add HeapProfilingComparison section when available  -->  
 
@@ -154,9 +149,9 @@ The **Containment** view is essentially a "bird's eye view" of the objects struc
 | **GC roots** | The actual GC roots used by the garbage of the VM.  GC roots are comprised of built-in object maps, symbol tables, VM thread stacks, compilation caches, handle scopes, and global handles.  |  
 | **Native objects** | Browser objects "pushed" inside the JavaScript virtual machine \(JavaScript VM\) to allow automation, for example, DOM nodes, CSS rules.  |  
 
-> ##### Figure 8  
-> Containment view  
-> ![Containment view][ImageContainmentView]  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png" alt-text="Containment view" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png":::
+   **Containment** view  
+:::image-end:::  
 
 <!--todo: add heap profiling containment section when available  -->  
 
@@ -173,7 +168,7 @@ The **Containment** view is essentially a "bird's eye view" of the objects struc
 > }
 > ```  
 > 
-> This example uses named functions:  
+> The followingcode snippet uses named functions.  
 > 
 > ```javascript
 > function createLargeClosure() {
@@ -186,9 +181,9 @@ The **Containment** view is essentially a "bird's eye view" of the objects struc
 > ```  
 > 
 > <!--  
-> > ##### old Figure 9  
-> > Name functions to distinguish between closures  
-> > ![Name functions to distinguish between closures][ImageDomLeaks]  
+> :::image type="complex" source="../media/memory-problems-domleaks.msft.png" alt-text="Name functions to distinguish between closures" lightbox="../media/memory-problems-domleaks.msft.png":::
+>    Name functions to distinguish between closures  
+> :::image-end:::  
 > -->  
 > 
 > > [!NOTE]
@@ -235,9 +230,9 @@ leafRef = null;
 
 The `#leaf` maintains a reference to the relevant parent \(parentNode\) and recursively up to `#tree`, so only when leafRef is nullified is the WHOLE tree under `#tree` a candidate for GC.  
 
-> ##### Figure 9  
-> DOM subtrees  
-> ![DOM subtrees][ImageTreeGc]  
+:::image type="complex" source="../media/memory-problems-tree-gc.msft.png" alt-text="DOM subtrees" lightbox="../media/memory-problems-tree-gc.msft.png":::
+   DOM subtrees  
+:::image-end:::  
 
 > [!NOTE]
 > Examples:  Try this example of a [leaking DOM node][GlitchDevtoolsMemoryExample06] to understand where it may leak and how to detect it.  You may also look at this example of [DOM leaks being bigger than expected][GlitchDevtoolsMemoryExample09].  
@@ -251,27 +246,14 @@ To read more about DOM leaks and memory analysis fundamentals checkout [Finding 
 
 <!--todo: add heap profiling dom leaks section when available  -->  
 
-<!--## Feedback   -->  
+## Getting in touch with the Microsoft Edge DevTools team  
 
-
-
-<!-- image links -->  
-
-[ImageProfilingType]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png "Figure 1: Select profiling type"  
-[ImageTotalSize]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png "Figure 2: Total size of reachable objects"  
-[ImageRemoveSnapshots]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png "Figure 3: Remove snapshots"  
-[ImageSwitchViews]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png "Figure 4: Switch views selector"  
-[ImageSummaryView]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png "Figure 5: Summary view"  
-[ImageConstructorGroups]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png "Figure 6: Constructor groups"  
-[ImageComparisonView]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png "Figure 7: Comparison view"  
-[ImageContainmentView]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png "Figure 8: Containment view"  
-<!--[ImageDomLeaks]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-domleaks.msft.png "old Figure 9: Name functions to distinguish between closures"  -->  
-[ImageTreeGc]: /microsoft-edge/devtools-guide-chromium/media/memory-problems-tree-gc.msft.png "Figure 9: DOM subtrees"  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsMemoryProblems101ObjectSizes]: /microsoft-edge/devtools-guide-chromium/memory-problems/memory-101#object-sizes "Object sizes - Memory Terminology"  
-[DevtoolsMemoryProblems101ObjectsRetainingTree]: /microsoft-edge/devtools-guide-chromium/memory-problems/memory-101#objects-retaining-tree "Objects retaining tree - Memory Terminology"  
+[DevtoolsMemoryProblems101ObjectSizes]: ./memory-101.md#object-sizes "Object sizes - Memory Terminology | Microsoft Docs"  
+[DevtoolsMemoryProblems101ObjectsRetainingTree]: ./memory-101.md#objects-retaining-tree "Objects retaining tree - Memory Terminology | Microsoft Docs"  
 
 <!--[DevToolsHeapProfilingComparison]: https://developer.alphabet.com/devtools/docs/heap-profiling-comparison ""  -->  
 <!--[DevToolsHeapProfilingContainment]: https://developer.alphabet.com/devtools/docs/heap-profiling-containment ""  -->  

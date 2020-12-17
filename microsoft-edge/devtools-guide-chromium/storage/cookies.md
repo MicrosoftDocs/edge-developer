@@ -1,8 +1,9 @@
 ---
+description: Learn how to view, edit, and delete the HTTP cookies for a page using Microsoft Edge DevTools.
 title: View, Edit, And Delete Cookies With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/11/2020
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -74,17 +75,21 @@ Double-click a field to edit it.
 
 ## Delete cookies  
 
-Select a cookie and select **Delete Selected** ![Delete Selected][ImageDeleteIcon]  to delete the specific cookie.  
+Select a cookie and choose **Delete Selected** ![Delete Selected][ImageDeleteIcon]  to delete the specific cookie.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Deleting a specific cookie" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
    Figure 5:  Deleting a specific cookie  
 :::image-end:::  
 
-Select **Clear All** ![Clear All][ImageClearIcon]  to delete all cookies.  
+Choose **Clear All** ![Clear All][ImageClearIcon]  to delete all cookies.  
 
 :::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Clearing all cookies" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
    Figure 6:  Clearing all cookies  
 :::image-end:::  
+
+## Getting in touch with the Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- image links -->  
 
