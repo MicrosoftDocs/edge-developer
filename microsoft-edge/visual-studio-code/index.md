@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger, webhint
 ---
-# Visual Studio Code  
+# Visual Studio Code overview  
 
 [Visual Studio Code][VisualStudioCodeDocs] is a lightweight, but powerful source code editor.  [Visual Studio Code][VisualStudioCodeDocs] is available for Windows, Linux, and macOS.  It includes built-in support for JavaScript, TypeScript, and Node.js, so it is a great tool for web developers before you customize it.  If you are not using it yet, download [Visual Studio Code][VisualstudioCode].  
 
