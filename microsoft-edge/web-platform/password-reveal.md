@@ -1,38 +1,39 @@
 ---
-description: This page provides guidance on controlling the display of the password reveal button
-title: Customizing the password reveal button
+description: Provides guidance on customizing the display of the password reveal button
+title: Customize the password reveal button
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/25/2020
+ms.date: 12/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, password reveal, eye icon
 ---
-# Customizing the password reveal button  
+# Customize the password reveal button  
 
-The `password` input type in Microsoft Edge includes a **password reveal** button.  This control enables a user to verify their password is entered correctly in the **password** field.  After a user has entered text in the **password** field, they may choose the **password reveal** button or select `Alt`+`F8` to toggle visibility of their input:  
+The `password` input type in Microsoft Edge includes a **password reveal** button.  A user may choose the password input control to reveal the **password** field.  The revealed **password** field helps the user verify if the password is correctly.  After a user has entered text in the **password** field, a user may choose the **password reveal** button or select `Alt`+`F8` to toggle visibility of the input.  
 
 :::row:::
    :::column span="":::
-      The password reveal button appears during text entry
+      A **password** field with dots hiding the characters entered by a user.  An eye-shaped icon displays to the right of the **password** field.
       
-      :::image type="complex" source="../media/web-platform/password-reveal/password-eye.png" alt-text="A **password** field with dots hiding the characters entered by a user.  An icon shaped like an eye is displayed within the right-hand side of the **password** field.  " lightbox="../media/web-platform/password-reveal/password-eye.png":::
+      :::image type="complex" source="../media/web-platform/password-reveal/password-eye.png" alt-text="The password reveal button is displayed next to the dots that hide the password text" lightbox="../media/web-platform/password-reveal/password-eye.png":::
+         The password reveal button is displayed next to the dots that hide the password text  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      Invoke the password reveal button to turn the obfuscated dots into original the user input
+      Choose the password reveal button to change the eye icon to an eye icon with a slash through it, and to reveal the original password text.  
       
-      :::image type="complex" source="../media/web-platform/password-reveal/password-toggled.png" alt-text="The eye icon in the same **password** field now has a stroke through it, and the characters are revealed." lightbox="../media/web-platform/password-reveal/password-toggled.png":::
+      :::image type="complex" source="../media/web-platform/password-reveal/password-toggled.png" alt-text="The password reveal button has a slash on it and the original password text is displayed" lightbox="../media/web-platform/password-reveal/password-toggled.png":::
+         The password reveal button has a slash on it and the original password text is displayed
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-By default, the **password reveal** button is inserted into the Shadow DOM of all HTML `input`s with `type` set to `"password"`.  Starting with Microsoft Edge Version 87, users or [enterprises][DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled] may disable this feature globally.  Web designers and developers should expect most Microsoft Edge users to have the default experience.  
+By default, the **password reveal** button inserts into the Shadow DOM of all HTML `input` instances with the `type` set to `"password"`.  Starting with Microsoft Edge Version 87, users or [enterprises][DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled] may disable this feature globally.  You, web designers and developers, should expect most Microsoft Edge users to have the default experience.  
 
+## Remove the password reveal control  
 
-## Removing the browser's password reveal control
-
-Web developers may completely remove the browser's **password reveal** control by targeting the `::-ms-reveal` pseudo element.  
+You may completely remove the **password reveal** button by targeting the `::-ms-reveal` pseudo element.  
 
 ```css
 ::-ms-reveal {
@@ -40,11 +41,11 @@ Web developers may completely remove the browser's **password reveal** control b
 }
 ```  
 
-However, web developers should consider taking advantage of the browser's **password reveal** button. The native **password reveal** control has important [security measures](#visibility-of-the-control) built into its behavior.  
+However, you should consider taking advantage of the **password reveal** button.  The native **password reveal** button has important [security measures](#visibility-of-the-control) built into the behavior.  
 
-## Customizing control styling  
+## Customize the control style  
 
-Instead of fully removing the control, web developers can instead modify the styling of the **password reveal** button to better match the visual language of the website. The following snippet provides an example of such styling.  
+Instead of fully removing the control, you may instead modify the styling of the **password reveal** button to better match the visual language of the website.  The following snippet provides an example of such styling.  
 
 ```css
 ::-ms-reveal {
@@ -54,21 +55,28 @@ Instead of fully removing the control, web developers can instead modify the sty
 }
 ```  
 
-There are a few things to keep in mind when styling the **password reveal** button:  
+Keep the following things in mind when you style the **password reveal** button.  
 
-*   The browser's **eye** iconography is implemented as a background image.  To add a background color to the **password reveal** button, use the CSS `background-color` property instead of the `background` shorthand property.  
-*   Developers may adjust the size and scale of the **password reveal** button, but any overflow \(if applicable\) past the bounds of the password input control will be hidden.  
-*   At present, no state selectors are available to style the toggled state of the **password reveal** button.  
+*   The eye icon implements as a background image.  To add a background color to the **password reveal** button, use the CSS `background-color` property instead of the `background` shorthand property.  
+*   You may adjust the size and scale of the **password reveal** button.  
+    
+    > [!NOTE]
+    >The browser hides any overflow outside of the bounds of the password input control.  
+    
+*   Currently, no state selectors are available to style the toggled state of the **password reveal** button.  
     
 ## Visibility of the control  
 
-The **password reveal** button is not available until the user enters text into the **password** field. The button is suppressed in the following scenarios, in order to help keep the user's password entry secure.
+The **password reveal** button is unavailable until the user enters text into the **password** field.  To help keep the user's password entry secure, the browser suppresses the button in the following scenarios.
 
-*   The **password reveal** button is removed if focus moves away from the **password** field.  
-*   The **password reveal** button is removed if scripts modify the **password** field.  
-*   If a user removes the **password reveal** button, the user must delete the content of the **password** field before the **password reveal** button displays again.  This feature prevents someone from making a minor adjustment in order to view the password, should the user step away from an unlocked device.
+*   If focus moves away from the **password** field, the browser removes the **password reveal** button.  
+*   If scripts modify the **password** field, the browser removes the **password reveal** button.  
+*   If a user removes the **password reveal** button, the user must delete the contents of the **password** field before the **password reveal** button displays again.  
     
-The **password reveal** button is not available in fields that are autofilled using the browser's password manager.  
+    > [!NOTE]
+    > This feature prevents someone from making a minor adjustment to view the password, should the user step away from an unlocked device.
+    
+The **password reveal** button is unavailable if the **password** field autofills using the password manager.  
 
 <!-- links -->  
 
