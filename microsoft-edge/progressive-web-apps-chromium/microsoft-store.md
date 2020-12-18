@@ -3,70 +3,129 @@ description: Make your PWA more discoverable by publishing in the Microsoft Stor
 title: Publish Your Progressive Web App to the Microsoft Store
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/16/2020
+ms.date: 12/18/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, Microsoft Store
 ---
+# Publish Your Progressive Web App to the Microsoft Store  
 
-# Publish Your Progressive Web App to the Microsoft Store
+Publishing your Progressive Web App \(PWA\) to the [Microsoft Store][WindowsUwpPublishIndex] brings the following advantages.  
 
-Publishing your Progressive Web App (PWA) to the [Microsoft Store](https://developer.microsoft.com/store) brings a number of advantages:
+:::row:::
+   :::column span="1":::
+      **Discoverability**  
+   :::column-end:::
+   :::column span="2":::
+      Users naturally look for apps in the app store.  By publishing to the Microsoft Store, millions of Windows users may discover your PWA alongside other Windows apps.  The Store showcases apps through categories, curated collections, and more.  The app discovery portals provide an easy browsing and shopping experience for potential users of your app.  You may even [enhance your Store listing][WindowsUwpPublishAppScreenshotsImages] with screenshots, a hero image, and video trailers.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Trustworthiness**  
+   :::column-end:::
+   :::column span="2":::
+      Windows customers know they may trust their Microsoft Store purchases and downloads, because they adhere to the rigorous Microsoft [quality and safety standards][LegalWindowsAgreementsStorePolicies].  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **Easy install**  
+   :::column-end:::
+   :::column span="2":::
+      The Microsoft Store provides a consistent and user-friendly install experience across [all Windows 10 apps][MicrosoftStoreAppsWindows].  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      **App analytics**  
+   :::column-end:::
+   :::column span="2":::
+      The [Windows Partner Center dashboard][WindowsUwpPublishIndex] provides you with [detailed analytics][WindowsUwpPublishAnalytics] about your app health, usage, and more.  
+   :::column-end:::
+:::row-end:::  
 
-- **Discoverability** - Users naturally look for apps in the app store. By publishing to the Microsoft Store, millions of Windows users can discover your PWA alongside other Windows apps. The Store showcases apps through categories, curated collections, and more. These app discovery portals provide an easy browsing and shopping experience for potential users of your app. You can even [enhance your Store listing](/windows/uwp/publish/app-screenshots-and-images) with screenshots, a hero image, and video trailers.
+<!--  
+*   **Discoverability** - Users naturally look for apps in the app store.  By publishing to the Microsoft Store, millions of Windows users may discover your PWA alongside other Windows apps.  The Store showcases apps through categories, curated collections, and more.  The app discovery portals provide an easy browsing and shopping experience for potential users of your app.  You may even [enhance your Store listing][WindowsUwpPublishAppScreenshotsImages] with screenshots, a hero image, and video trailers.  
+*   **Trustworthiness** - Windows customers know they are able to trust their Microsoft Store purchases and downloads, because they adhere to the rigorous Microsoft [quality and safety standards][LegalWindowsAgreementsStorePolicies].  
+*   **Easy install** - The Microsoft Store provides a consistent and user-friendly install experience across [all Windows 10 apps][MicrosoftStoreAppsWindows].  
+*   **App analytics** - The [Windows Partner Center dashboard][WindowsUwpPublishIndex] provides you with [detailed analytics][WindowsUwpPublishAnalytics] about your app health, usage, and more.  
+-->  
 
-- **Trustworthiness** - Windows customers know they can trust their Microsoft Store purchases and downloads because they adhere to Microsoft's rigorous [quality and safety standards](/legal/windows/agreements/store-policies).
+To publish your PWA to the Microsoft Store, no code changes are required.  Instead, you create an app reservation, package your PWA, and submit your package to the Store.  The following sections explain the steps.   
 
-- **Easy install** - The Microsoft Store provides a consistent and user-friendly install experience across [all Windows 10 apps](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps).
+## Create an app reservation  
 
-- **App analytics** - The [Windows Partner Center dashboard](/windows/uwp/publish/using-the-windows-dev-center-dashboard) provides you with [detailed analytics](/windows/uwp/publish/analytics) about your app health, usage, and more.
+[Windows Partner Center][MicrosoftPartnerDashboardWindowsOverview] is the hub for submitting apps to the Microsoft Store.  
 
-To publish your PWA to the Microsoft Store, no code changes are required. Instead, you'll create an app reservation, package your PWA, and submit your package to the Store. These steps are explained below. 
+Sign into Windows Partner Center with your Microsoft account, then navigate to the [Partner Center Dashboard][MicrosoftPartnerDashboardHome] to display your enrolled programs.  If `Windows & Xbox` is listed, your app is already enrolled.  If not, choose `Add program`.  
 
-## Create an app reservation
+:::image type="complex" source="./media/windows-partner-center-add-program.msft.png" alt-text="Windows Partner Center dashboard, add a program" lightbox="./media/windows-partner-center-add-program.msft.png":::
+   Windows Partner Center dashboard, add a program  
+:::image-end:::  
 
-[Windows Partner Center](https://partner.microsoft.com/dashboard/windows/overview) is the hub for submitting apps to the Microsoft Store.
+Then, under `Windows & Xbox`, choose `Get started` and follow the prompts to enroll in the developer program.  
 
-Sign in to Windows Partner Center with your Microsoft account, then go to the [Partner Center Dashboard](https://partner.microsoft.com/dashboard/home) to see your enrolled programs. If `Windows & Xbox` is listed, you're already enrolled. If not, choose `Add program`:
+Now that your app is enrolled in the app developer program, you may create an app reservation.  Under `Windows & Xbox`, choose `Overview` > `Create a new app`.  
 
-![Windows Partner Center dashboard, adding a program](./images/windows-partner-center-add-program.png)
+:::image type="complex" source="./media/windows-partner-center-create-app.msft.png" alt-text="Create an app reservation in Windows Partner Center" lightbox="./media/windows-partner-center-create-app.msft.png":::
+   Create an app reservation in Windows Partner Center  
+:::image-end:::  
 
-Then, under `Windows & Xbox`, choose `Get started` and follow the prompts to enroll in the developer program.
+Type your PWA name in the prompt, and choose `Reserve product name` to complete your app reservation.  
 
-Now that you're enrolled in the app developer program, you'll create an app reservation. Under `Windows & Xbox`, choose `Overview`, then `Create a new app`:
+Lastly, you need to grab your publisher details for use in the next step.  Choose `Product management` > `Product Identity`.  
 
-![Creating an app reservation in Windows Partner Center](./images/windows-partner-center-create-app.png)
+:::image type="complex" source="./media/windows-partner-center-publisher-info.msft.png" alt-text="Copy publisher information from Windows Partner Center" lightbox="./media/windows-partner-center-publisher-info.msft.png":::
+   Copy publisher information from Windows Partner Center  
+:::image-end:::  
 
-Type your PWA name in the prompt, and choose `Reserve product name` to complete your app reservation.
+Here, your **Package ID**, **Publisher ID**, and **Publisher Display Name** are displayed.  Save or copy the values to use in the next step.  
 
-Lastly, you'll need to grab your publisher details for use in the next step. Choose `Product management`, then `Product Identity`:
+## Package your PWA  
 
-![Copying publisher info from Windows Partner Center](./images/windows-partner-center-publisher-info.png)
+Next, you generate a Windows app package for your PWA.  
 
-Here you'll see your Package ID, Publisher ID, and Publisher Display Name. Save or copy these values, we'll use them in the next step.
+Your app package is an `.msixbundle` file that contains the metadata of your app including the name, description, icons, and so on.  It uses the [Hosted App Model][WindowsBlogWindowsdeveloperHostedAppModel], with Microsoft Edge powering your PWA.  In this model, your PWA may use modern web capabilities while functioning as a Windows app.  Modern web capabilities include service worker, offline, push notifications, badging, and more.  
 
-## Package your PWA
+To generate an app package, navigate to [PWA Builder][PwabuilderMain] and enter the URL of your PWA.  Choose `Start` > `Build My PWA` > `Windows` > `Options`.  Paste the values you saved for **Package ID**, **Publisher ID**, and **Publisher Display Name** from the preview step.  
 
-Next, you'll generate a Windows app package for your PWA. 
+:::image type="complex" source="./media/pwabuilder-publisher-info.msft.png" alt-text="Paste publisher information into PWABuilder" lightbox="./media/pwabuilder-publisher-info.msft.png":::
+   Paste publisher information into PWABuilder  
+:::image-end:::  
 
-Your app package will be an *.msixbundle* file containing the metadata of your app: name, description, icons, and so on. It will use the [Hosted App Model](https://blogs.windows.com/windowsdeveloper/2020/03/19/hosted-app-model/), with Chromium-based Edge powering your PWA. In this model, your PWA can use modern web capabilities--like service worker, offline, push notifications, badging, and more--while functioning as a Windows app.
+Choose `Done`, then `Download` to download your Windows app package.  Your download is a .zip archive containing an `.msixbundle` file that may be submitted to the Store in the next step.  
 
-To generate an app package, go to [PWA Builder](https://www.pwabuilder.com) and enter your PWA's URL. Select `Start`, then `Build My PWA`. Choose `Windows`, then `Options`. Paste in the Package ID, Publisher ID, and Publisher Display Name you saved in the preview step:
+### Submit your app package to the Store  
 
-![Pasting publisher info into PWABuilder](./images/pwabuilder-publisher-info.png)
+Now that you have your `.msixbundle` app package, you may submit it to the Store.  
 
-Choose `Done`, then `Download` to download your Windows app package. Your download is a zip archive containing an *.msixbundle* file that can be submitted to the Store in the next step.
+Navigate to [Windows Partner Center][MicrosoftPartnerDashboardWindowsOverview] and choose your app, then `Start your Submission`.  
 
-### Submit your app package to the Store
+:::image type="complex" source="./media/windows-partner-center-start-submission.msft.png" alt-text="Start a new app submission on Windows Partner Center" lightbox="./media/windows-partner-center-start-submission.msft.png":::
+   Start a new app submission on Windows Partner Center  
+:::image-end:::  
 
-Now that you have your *.msixbundle* app package, we can submit it to the Store.
+Prompts for information about your app, like pricing, age rating, and more are displayed.  Complete the prompts.  
 
-Go to [Windows Partner Center](https://partner.microsoft.com/dashboard/windows/overview) and select your app, then `Start your Submission`:
+When asked for `Packages`, choose the `.msixbundle` file generated in the previous step.  
 
-![Starting a new app submission on Windows Partner Center](./images/windows-partner-center-start-submission.png)
+When your submission is complete, your app is reviewed, typically within between 24 and 48 hours.  Upon approval, your PWA is available in the Microsoft Store.  
 
-You'll be prompted for information about your app, like pricing, age rating, and more. Complete these prompts. 
+<!-- links -->  
 
-When asked for `Packages`, choose the *.msixbundle* file generated in the previous step.
+[LegalWindowsAgreementsStorePolicies]: /legal/windows/agreements/store-policies "Microsoft Store Policies | Microsoft Docs"  
 
-When your submission is complete, your app will be reviewed, typically within 24-48 hours. Upon approval, your PWA will be available in the Microsoft Store.
+[WindowsUwpPublishAnalytics]: /windows/uwp/publish/analytics "Analyze app performance | Microsoft Docs"  
+[WindowsUwpPublishAppScreenshotsImages]: /windows/uwp/publish/app-screenshots-and-images "App screenshots, images, and trailers | Microsoft Docs"  
+[WindowsUwpPublishIndex]: /windows/uwp/publish/index "Publish Windows apps and games | Microsoft Docs"  
+
+[MicrosoftPartnerDashboardHome]: https://partner.microsoft.com/dashboard/home "Home | Microsoft Partner Center"  
+[MicrosoftPartnerDashboardWindowsOverview]: https://partner.microsoft.com/dashboard/windows/overview "Resources for partners | Microsoft Partner Center"  
+
+[MicrosoftStoreAppsWindows]: https://www.microsoft.com/store/apps/windows "Windows Apps | Microsoft Store"  
+
+[WindowsBlogWindowsdeveloperHostedAppModel]: https://blogs.windows.com/windowsdeveloper/hosted-app-model "Hosted App Model | Windows Developer Blog"  
+
+[PwabuilderMain]: https://www.pwabuilder.com "PWABuilder"  
+
