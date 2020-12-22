@@ -335,9 +335,10 @@
           href: web-platform/tracking-prevention.md
         - name: Microsoft Edge user agent string
           href: web-platform/user-agent-string.md
-    - name: WebView2
-      href: webview2/index.md
+    - name: WebView2 
       items:
+        - name: WebView2 overview
+          href: webview2/index.md
         - name: Getting started
           items:
             - name: Win32
