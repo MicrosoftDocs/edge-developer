@@ -3,7 +3,7 @@ description: Microsoft Edge (Chromium) and Visual Studio Code
 title: Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/20/2020
+ms.date: 12/22/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger, webhint
@@ -49,11 +49,17 @@ Search the Marketplace for the specific extension and choose **Install**.
 
 With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio Code extension, debug your front-end JavaScript code line-by-line and see `console.log()` statements directly from [Visual Studio Code][VisualstudioCode].  
       
-Using the Debugger tool, you may launch or attach to both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\).  For a walkthrough of debugging Microsoft Edge from Visual Studio Code and sample `launch.json` configurations, navigate to [Debugger For Microsoft Edge Visual Studio Code Extension][VisualStudioCodeDebuggerEdge].  Choose the following image to see the extension in action.  
+Using the Debugger tool, you may launch or attach to both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\).  For a walkthrough of debugging Microsoft Edge from Visual Studio Code and sample `launch.json` configurations, navigate to [Debugger For Microsoft Edge Visual Studio Code Extension][VisualStudioCodeDebuggerEdge].  <!--  Choose the following image to see the extension in action.  -->  
 
+:::image type="complex" source="./media/debugger-for-edge.png" alt-text="Debugger for Edge Visual Studio Code extension" lightbox="./media/debugger-for-edge.png":::
+   **Debugger for Microsoft Edge** Visual Studio Code extension  
+:::image-end:::  
+
+<!--  
 :::image type="complex" source="./media/debugger-for-edge.png" alt-text="Debugger for Edge Visual Studio Code extension in action" lightbox="./media/debugger-for-edge.gif":::
    **Debugger for Microsoft Edge** Visual Studio Code extension in action  
 :::image-end:::  
+-->  
 
 ## Microsoft Edge Tools for Visual Studio Code
 
@@ -104,5 +110,6 @@ For more information, navigate to [How to use webhint in Visual Studio Code][Vis
 
 [VisualstudioMarketplaceWebhint]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint | Visual Studio Marketplace"  
 
-[WebhintMain]:  https://webhint.io "webhint"  
 [OpenjsFoundation]:  https://openjsf.org "OpenJS Foundation"  
+
+[WebhintMain]:  https://webhint.io "webhint"  
