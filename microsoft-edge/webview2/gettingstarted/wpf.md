@@ -176,14 +176,14 @@ Add the ability to allow users to change the URL that the WebView2 control displ
     ```  
     
  1.  Select `F5` to build and run your project.  Enter a new URL in the address bar, and choose **Go**.  For example, enter `https://www.bing.com`.  Confirm that the WebView2 control navigates to the URL.  
-    
-    > [!NOTE]
-    > Make sure a complete URL is entered in the address bar.  An `ArgumentException` is thrown if the URL does not start with `http://` or `https://`.  
-    
-    :::image type="complex" source="./media/wpf-gettingstarted-bing.png" alt-text="Bing":::
-       Bing
-    :::image-end:::
-    
+     
+     > [!NOTE]
+     > Make sure a complete URL is entered in the address bar.  An `ArgumentException` is thrown if the URL does not start with `http://` or `https://`.  
+     
+     :::image type="complex" source="./media/wpf-gettingstarted-bing.png" alt-text="Bing":::
+        Bing
+     :::image-end:::
+     
 ## Step 5 - Navigation events  
 
 During webpage navigation, the WebView2 control raises events.  The app that hosts WebView2 controls listens for the following events.  
