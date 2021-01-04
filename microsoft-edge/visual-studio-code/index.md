@@ -3,7 +3,7 @@ description: Microsoft Edge (Chromium) and Visual Studio Code
 title: Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/22/2020
+ms.date: 01/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger, webhint
@@ -14,7 +14,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual 
 
 ## Extensions  
 
-<!--todo: We want to put something like the tiles for extensions Visual Studio Code uses on this page https://code.visualstudio.com/Docs#top-extensions but I don't think this is a markdown page.  I think it's a web page.  I couldn't find anything in https://github.com/Microsoft/vscode-docs that looks like this page. In the meantime, here's what I've come up with: -->  
+<!--todo:  Put something like the tiles for extensions Visual Studio Code uses on the https://code.visualstudio.com/Docs#top-extensions page, but I do not think it is a markdown page.  I think it is a web page.  I could not find anything in https://github.com/Microsoft/vscode-docs that looks like the page.  -->  
 
 To acquire any of the extensions highlighted below, navigate to Extensions \(select `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS\) in Visual Studio Code.  
 
@@ -51,7 +51,7 @@ With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftE
       
 Using the Debugger tool, you may launch or attach to both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\).  For a walkthrough of debugging Microsoft Edge from Visual Studio Code and sample `launch.json` configurations, navigate to [Debugger For Microsoft Edge Visual Studio Code Extension][VisualStudioCodeDebuggerEdge].  <!--  Choose the following image to see the extension in action.  -->  
 
-:::image type="complex" source="./media/debugger-for-edge.png" alt-text="Debugger for Edge Visual Studio Code extension" lightbox="./media/debugger-for-edge.png":::
+:::image type="complex" source="./media/debugger-for-edge.msft.png" alt-text="Debugger for Microsoft Edge Visual Studio Code extension" lightbox="./media/debugger-for-edge.msft.png":::
    **Debugger for Microsoft Edge** Visual Studio Code extension  
 :::image-end:::  
 
