@@ -10,36 +10,22 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Editing CSS font settings in the styles pane (experimental) 
 
-Animation in web products may be an accessibility problem.  Operating Systems deal with the problem by including an option to turn off animations to avoid user confusion and potential health related problems such as triggering seizures.  On the web, you may use the [prefers-reduced-motion][MDNPrefersReducedMotion] CSS Media Query to detect if users prefer to not see any animations.  In your product, you may wrap your animation code in a test to avoid animations showing up for the affected users.  
+Typography on the web is an important part of the user experience. CSS has evolved in this space a lot in the recent years. The biggest trick is to make sure you allow for flexibility. You want to ensure that text is readable and can be zoomed and you shouldn't rely on certain fonts to be available but instead use fallback options to display when your favorite font isn't available.
 
-```css
-@media (prefers-reduced-motion: reduce) {
-  /* in case the .header element has an animation, turn it off */
-  .header {
-    animation: none;
-  }
-}
-```  
+CSS allows you to define fonts as font families and there are dozens of different CSS units available to define the size of text. You also have several CSS properties that affect font-size, spacing, line height and other typographic features. This can become hard to grasp which is why there is now a font editor in the styles pane.
 
-Using the [Microsoft Edge DevTools][DevtoolsIndex], you may simulate this reduced motion setting without having to change your operating system.  
+> [!NOTE]
+> Currently this is an [experimental feature](DevtoolsExperiments) and you need to enable it for developer tools. 
 
-1.  Open the **Command Menu**.  
-    1.  Select `Control`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS.  
-        
-        :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="The Command Menu" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-           The **Command Menu**  
-        :::image-end:::  
-        
-1.  Type `reduced`, to turn the simulation on and off.  Choose the option and select `Enter`.  
-    
-    :::image type="complex" source="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png" alt-text="Turn on or off the prefers reduced motion setting from Command Menu" lightbox="../media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png":::
-       Turn on or off the **prefers reduced motion** setting from **Command Menu**  
-    :::image-end:::  
-    
-1.  Refresh the current page to test whether your animations are turned off or visible.  
-    
+Any CSS section of the styles pane that has font definitions and the inline styles section shows a font icon that allows you to open the font editor. 
+
+:::image type="complex" source="../media/font-editor-icon.msft.png" alt-text="The icon in the styles pane indicating that you can edit font settings" lightbox="../media/font-editor-icon.msft.png":::
+The icon in the styles pane indicating that you can edit font settings
+:::image-end:::  
+
 <!-- links -->  
 
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsExperiments]: ../experimental-features/index.md "Microsoft Edge (Chromium) Developer Tools Experimental Features| Microsoft Docs"  
 
 [MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "prefers-reduced-motion | MDN"  
