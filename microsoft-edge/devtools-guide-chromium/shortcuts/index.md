@@ -3,7 +3,7 @@ description: The canonical documentation for Microsoft Edge DevTools keyboard sh
 title: Microsoft Edge DevTools Keyboard Shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -26,7 +26,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This article is a reference of keyboard shortcuts in Microsoft Edge DevTools.
 
-You can also find shortcuts in tooltips.  Hover over a UI element of DevTools
+You may also find shortcuts in tooltips.  Hover over a UI element of DevTools
 to display the tooltip.  If the element has a shortcut, the tooltip includes it.
 
 ## Keyboard shortcuts for opening DevTools  
@@ -53,8 +53,8 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Toggle **Inspect Element Mode** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Open the [Command Menu][DevtoolsCommandMenuIndex] | `Control`+`Shift`+`P` | `Command`+`Shift`+`P` |  
 | Toggle the [Drawer][DevtoolsCustomizeIndexDrawer] | `Escape` | `Escape` |  
-| Normal reload | `F5` or `Control`+`R` | `Command`+`R` |  
-| Hard reload | `Control`+`F5` or `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
+| Normal refresh | `F5` or `Control`+`R` | `Command`+`R` |  
+| Hard refresh | `Control`+`F5` or `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | Search for text within the current panel.  Not supported in the **Audits**, **Application**, and **Security** panels | `Control`+`F` | `Command`+`F` |  
 | Opens the **Search** tab in the [Drawer][DevtoolsCustomizeIndexDrawer], which lets you search for text across all loaded resources | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
 | Open a file in the **Sources** panel | `Control`+`O` or `Control`+`P` | `Command`+`O` or `Command`+`P` |  
@@ -119,7 +119,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Add or remove a [line-of-code breakpoint][DevtoolsJavascriptBreakpointsLOC] | Focus your cursor on the line, then select `Control`+`B` | Focus your cursor on the line, then select `Command`+`B` |  
 | Go to matching bracket | `Control`+`M` | `Control`+`M` |  
 | Toggle single-line comment.  If multiple lines are selected, DevTools add a comment to the start of each line | `Control`+`/` | `Command`+`/` |  
-| Select / de-select the next occurrence of whatever word the cursor is on.  Each occurrence is highlighted simultaneously | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |  
+| Turn on or off the next occurrence of whatever word the cursor is on.  Each occurrence is highlighted simultaneously | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |  
 
 ## Performance panel keyboard shortcuts  
 

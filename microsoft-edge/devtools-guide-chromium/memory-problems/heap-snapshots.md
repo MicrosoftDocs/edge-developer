@@ -3,7 +3,7 @@ description: Learn how to record heap snapshots with the Microsoft Edge DevTools
 title: How to Record Heap Snapshots
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -33,11 +33,11 @@ of your page.  Use it to take JavaScript heap \(JS heap\) snapshots, analyze mem
 
 On the **Memory** panel, choose **Take snapshot**, then choose **Start**.  You may also select `Ctrl`+`E` \(Windows, Linux\) or `Cmd`+`E` \(macOS\).  
 
-:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="Select profiling type" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
-   Select profiling type  
+:::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="Choose profiling type" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
+   Choose profiling type  
 :::image-end:::  
 
-**Snapshots** are initially stored in the renderer process memory.  Snapshots are transferred to the DevTools on demand, when you click on the snapshot icon to view it.  
+**Snapshots** are initially stored in the renderer process memory.  Snapshots are transferred to the DevTools on demand, when you choose on the snapshot icon to view it.  
 
 After the snapshot has been loaded into DevTools and has been parsed, the number below the snapshot title appears and shows the [total size of the reachable JavaScript objects][DevtoolsMemoryProblems101ObjectSizes].  
 
@@ -113,7 +113,7 @@ Remember that yellow objects have JavaScript references and red objects are deta
 
 | Constructor \(group\) entry | Description |  
 |:--- |:--- |  
-| **\(global property\)** | The intermediate objects between a global object \(like `window`\) and an object referenced by it.  If an object is created using a constructor `Person` and is held by a global object, the retaining path would look like `[global] > \(global property\) > Person`.  This contrasts with the norm, where objects directly reference each other.  Intermediate objects exist for performance reasons.  Globals are modified regularly and property access optimizations do a good job for non-global objects are not applicable for globals.  |  
+| **\(global property\)** | The intermediate objects between a global object \(like `window`\) and an object referenced by it.  If an object is created using a constructor `Person` and is held by a global object, the retaining path may be represented as `[global] > \(global property\) > Person`.  This contrasts with the norm, where objects directly reference each other.  Intermediate objects exist for performance reasons.  Globals are modified regularly and property access optimizations do a good job for non-global objects are not applicable for globals.  |  
 | **\(roots\)** | The root entries in the retaining tree view are the entities that have references to the selected object.  The entries may also be references created by the engine for engine-specific purposes.  The engine has caches which reference objects, but all such references are weak and do not prevent an object from being collected given that there are no truly strong references.  |  
 | **\(closure\)** | A count of references to a group of objects through function closures.  |  
 | **\(array, string, number, regexp\)** | A list of object types with properties which reference an Array, String, Number, or regular expression.  |  

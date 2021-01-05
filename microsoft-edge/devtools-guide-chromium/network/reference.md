@@ -3,7 +3,7 @@ description: A comprehensive reference of Microsoft Edge DevTools Network panel 
 title: Network Analysis reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -897,8 +897,8 @@ Choose a network request and navigate to the **Headers** pane.  To copy the JSON
         :::image-end:::  
    :::column-end:::
    :::column span="":::
-        :::image type="complex" source="../media/network-header-paste-property-value.msft.png" alt-text="Visual Studio Code with formatted response JSON" lightbox="../media/network-header-paste-property-value.msft.png":::
-          Pasting formatted response JSON in Visual Studio Code  
+        :::image type="complex" source="../media/network-header-paste-property-value.msft.png" alt-text="Microsoft Visual Studio Code with formatted response JSON" lightbox="../media/network-header-paste-property-value.msft.png":::
+          Pasting formatted response JSON in Microsoft Visual Studio Code  
         :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -914,7 +914,7 @@ To copy property values from network requests to your clipboard, complete the fo
     *   Query String Parameters  
     *   Request Headers  
     *   Response Headers  
-1.  Open the contextual menu \(right-click\) > **Copy value**.  You can now paste the value into any editor to review it.  
+1.  Open the contextual menu \(right-click\) > **Copy value**.  You may now paste the value into any editor to review it.  
     
 ## Change the layout of the Network panel  
 

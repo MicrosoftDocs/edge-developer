@@ -3,7 +3,7 @@ description: Inspect and modify animations with the Microsoft Edge DevTools  Ani
 title: Inspect animations
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -76,7 +76,7 @@ The Animation Inspector is grouped into four main sections \(or panes\).  This g
 | Index | Pane | Description |  
 |:--- |:--- |:--- |  
 | 1 | **Controls** | From here you may clear all currently captured Animation Groups, or change the speed of the currently selected Animation Group. |  
-| 2 | **Overview** | Select an Animation Group here to inspect and modify it in the **Details** pane. |  
+| 2 | **Overview** | Choose an Animation Group here to inspect and modify it in the **Details** pane. |  
 | 3 | **Timeline** | Pause and start an animation from here, or jump to a specific point in the animation. |  
 | 4 | **Details** | Inspect and modify the currently selected Animation Group. |  
 
@@ -84,7 +84,7 @@ The Animation Inspector is grouped into four main sections \(or panes\).  This g
    Annotated Animation Inspector  
 :::image-end:::  
 
-To capture an animation, just perform the interaction that triggers the animation while the Animation Inspector is open.  If an animation is triggered on page load, reload the page with the Animation Inspector open to detect the animation.  
+To capture an animation, just perform the interaction that triggers the animation while the Animation Inspector is open.  If an animation is triggered on page load, refresh the page with the Animation Inspector open to detect the animation.  
 
 <!--  old link: <video src="animations/capture-animations.mp4" autoplay loop muted controls></video>  -->  
 
@@ -97,18 +97,18 @@ To capture an animation, just perform the interaction that triggers the animatio
 After you capture an animation, there are a few ways to replay it:  
 
 *   Hover over the thumbnail in the **Overview** pane to view a preview of it.  
-*   Select the Animation Group from the **Overview** pane \(so that it is displayed in the **Details** pane\) and press the **replay** \(![replay icon][ImageReplayButtonIcon]\) icon.  The animation is replayed in the viewport.  Click on the **animation speed** \(![animation speed icons][ImageAnimationSpeedButtonsIcon]\) icons to change the preview speed of the currently selected Animation Group.  You may use the red vertical bar to change your current position.  
-*   Click and drag the red vertical bar to scrub the viewport animation.  
+*   Choose the Animation Group from the **Overview** pane \(so that it is displayed in the **Details** pane\) and choose the **replay** \(![replay icon][ImageReplayButtonIcon]\) icon.  The animation is replayed in the viewport.  Choose the **animation speed** \(![animation speed icons][ImageAnimationSpeedButtonsIcon]\) icons to change the preview speed of the currently selected Animation Group.  You may use the red vertical bar to change your current position.  
+*   Choose and drag the red vertical bar to scrub the viewport animation.  
     
 ### View animation details  
 
-After you capture an Animation Group, click on it from the **Overview** pane to view the details.  In the **Details** pane each individual animation is assigned the a row.  
+After you capture an Animation Group, choose on it from the **Overview** pane to view the details.  In the **Details** pane each individual animation is assigned the a row.  
 
 :::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Animation Group details" lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
    Animation Group details  
 :::image-end:::  
 
-Hover over an animation to highlight it in the viewport.  Click on the animation to select it in the **Elements** panel.  
+Hover over an animation to highlight it in the viewport.  Choose the animation to select it in the **Elements** panel.  
 
 :::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Hover over the animation to highlight it in viewport" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
    Hover over the animation to highlight it in viewport  
@@ -140,19 +140,19 @@ In the following figure, the original animation is represented.
    Original animation before modification  
 :::image-end:::  
 
-To change the duration of an animation, click and drag the first or last circle.  
+To change the duration of an animation, choose and drag the first or last circle.  
 
 :::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="Modified duration" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
    Modified duration  
 :::image-end:::  
 
-If the animation defines any keyframe rules, then these are represented as white inner circles.  Click and drag one of these to change the timing of the keyframe.  
+If the animation defines any keyframe rules, then these are represented as white inner circles.  Choose and drag one of these to change the timing of the keyframe.  
 
 :::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="Modified keyframe" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
    Modified keyframe  
 :::image-end:::  
 
-To add a delay to an animation, click and drag it anywhere except the circles.  
+To add a delay to an animation, choose and drag it anywhere except the circles.  
 
 :::image type="complex" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="Modified delay" lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
    Modified delay  

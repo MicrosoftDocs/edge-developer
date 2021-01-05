@@ -3,7 +3,7 @@ description: Match keyboard shortcuts to Visual Studio Code, emulate Surface Duo
 title: What's new in DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/08/2020
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -17,7 +17,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 ### Match keyboard shortcuts in DevTools to Visual Studio Code  
 
-In Microsoft Edge 86, you may match keyboard shortcuts in the DevTools to your shortcuts in [Visual Studio Code][VisualStudioCode]. 
+In Microsoft Edge 86, you may match keyboard shortcuts in the DevTools to your shortcuts in [Microsoft Visual Studio Code][VisualStudioCode].  
 
 :::image type="complex" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
    Match keyboard shortcuts in the DevTools to Visual Studio Code  
@@ -354,7 +354,7 @@ Chromium issue: [#1051466][CR1051466]
 
 DevTools now provides color suggestions for low color contrast text.  
 
-In the example below, `h1` has low contrast text.  To fix it, open the color picker of the `color` property in the **Styles** pane.  After you expand the **Contrast ratio** section, DevTools provides AA and AAA color suggestions.  Select the suggested color to apply the color.  
+In the example below, `h1` has low contrast text.  To fix it, open the color picker of the `color` property in the **Styles** pane.  After you expand the **Contrast ratio** section, DevTools provides AA and AAA color suggestions.  Choose the suggested color to apply the color.  
 
 :::image type="complex" source="../../media/2020/08/contrast-color-suggestion.msft.png" alt-text="Color picker suggests AA and AAA color suggestions" lightbox="../../media/2020/08/contrast-color-suggestion.msft.png":::
    Color picker suggests AA and AAA color suggestions  
@@ -390,7 +390,7 @@ Chromium issue: [#1103854][CR1103854]
 
 Imported font faces are now added to the list of CSS autocompletion when editing the `font-family` property in the **Styles** pane.  
 
-For example, if `monospace` is a custom font installed on the local machine, it's displayed in the CSS completion list. In previous versions of Microsoft Edge, the font wasn't displayed.
+For example, if `monospace` is a custom font installed on the local machine, it displays in the CSS completion list.  In previous versions of Microsoft Edge, the font was not displayed.
 
 :::image type="complex" source="../../media/2020/08/font-auto-complete.msft.png" alt-text="Autocomplete custom fonts" lightbox="../../media/2020/08/font-auto-complete.msft.png":::
    Autocomplete custom fonts  

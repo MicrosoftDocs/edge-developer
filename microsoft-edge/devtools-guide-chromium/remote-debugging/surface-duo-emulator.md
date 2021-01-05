@@ -3,7 +3,7 @@ description: Get started with Remote Debugging Surface Duo emulators.
 title: Get Started with Remote Debugging Surface Duo emulators
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, remote debugging, android, surface duo
@@ -67,7 +67,7 @@ From the list of open tabs running on the emulator, choose **inspect** on the ta
 
 ## Additional Resources  
 
-The web is a great platform for the new class of foldable and dual-screen devices because you can write your HTML, CSS, and JavaScript once and have it look great across single-screen, dual-screen, and foldable devices.  For more information, see these additional resources to get started building web content for these new devices.  
+The web is a great platform for the new class of foldable and dual-screen devices because you may write your HTML, CSS, and JavaScript once and have it look great across single-screen, dual-screen, and foldable devices.  For more information, see these additional resources to get started building web content for these new devices.  
 
 *   [Documentation for creating apps on dual-screen devices][DualScreenIndex]  
 *   [The Microsoft Edge web platform explainer for new APIs to build web experiences on foldable and dual-screen devices][GithubMicrosoftedgeMsedgeexplainersFoldablesExplainer]  

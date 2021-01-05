@@ -3,7 +3,7 @@ description: Learn how to use Microsoft Edge DevTools to find and fix JavaScript
 title: Get Started with Debugging JavaScript in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -46,13 +46,13 @@ Finding a series of actions that consistently reproduces a bug is always the fir
 
 DevTools provides a lot of different tools for different tasks, such as changing CSS, profiling page load performance, and monitoring network requests.  The **Sources** panel is where you debug JavaScript.  
 
-1.  Open DevTools by pressing `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\) .  This shortcut opens the **Console** panel.  
+1.  To open DevTools, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\) .  This shortcut opens the **Console** panel.  
     
     :::image type="complex" source="../media/javascript-console-empty.msft.png" alt-text="The Console panel" lightbox="../media/javascript-console-empty.msft.png":::
        The **Console** panel  
     :::image-end:::  
     
-1.  Click the **Sources** tab.  
+1.  Choose the **Sources** tab.  
     
     :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="The Sources panel" lightbox="../media/javascript-sources-sections.msft.png":::
        The **Sources** panel  
@@ -86,7 +86,7 @@ function updateLabel() {
 
 The `console.log()` method may get the job done, but **breakpoints** are able to get it done faster.  A breakpoint lets you pause your code in the middle of the runtime, and examine all values at that moment in time.  Breakpoints have a few advantages over the `console.log()` method:  
 
-*   With `console.log()`, you need to manually open the source code, find the relevant code, insert the `console.log()` statements, and then reload the page in order to see the messages in the Console.  With breakpoints, you may pause on the relevant code without even knowing how the code is structured.  
+*   With `console.log()`, you need to manually open the source code, find the relevant code, insert the `console.log()` statements, and then refresh the page in order to see the messages in the **Console**.  With breakpoints, you may pause on the relevant code without even knowing how the code is structured.  
 *   In your `console.log()` statements you need to explicitly specify each value that you want to inspect.  With breakpoints, DevTools shows you the values of all variables at that moment in time.  Sometimes there are variables affecting your code that you are not even aware of.  
 
 In short, breakpoints may help you find and fix bugs faster than the `console.log()` method.  
@@ -97,7 +97,7 @@ If you take a step back and think about how the app works, you are able to make 
 1.  Next to the **Mouse** event category, choose **Expand** \(![Expand icon][ImageExpandIcon]\).  DevTools reveals a list of mouse events, such as **click** and **mousedown**.  Each event has a checkbox next to it.  
 1.  Check the **click** checkbox.  DevTools is now set up to automatically pause when *any* `click` event listener runs.  
     
-    :::image type="complex" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="The click checkbox is enabled" lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="The choose checkbox is enabled" lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
        The **click** checkbox is enabled  
     :::image-end:::  
     
@@ -107,7 +107,7 @@ If you take a step back and think about how the app works, you are able to make 
     if (inputsAreEmpty()) {
     ```  
     
-    If you pause on a different line of code, press **Resume Script Execution** \(![Resume Script Execution][ImageResumeIcon]\) until you pause on the correct line.  
+    If you pause on a different line of code, choose **Resume Script Execution** \(![Resume Script Execution][ImageResumeIcon]\) until you pause on the correct line.  
     
     > [!NOTE]
     > If you paused on a different line, you have a browser extension that registers a `click` event listener on every page that you visit.  You were paused in the `click` listener of the extension.  If you use InPrivate Mode to **browse in private**, which disables all extensions, you may see that you pause on the desired line of code every time.  
@@ -143,7 +143,7 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
     label.textContent = addend1 + ' + ' + addend2 + ' = ' + sum;
     ```  
     
-1.  To the left of the code you see the line number of this particular line of code, which is **33**.  Click on **33**.  DevTools puts a red icon to the left of **33**.  This means that there is a line-of-code breakpoint on this line.  DevTools now always pauses before this line of code is run.  
+1.  To the left of the code you see the line number of this particular line of code, which is **33**.  Choose **33**.  DevTools puts a red icon to the left of **33**.  This means that there is a line-of-code breakpoint on this line.  DevTools now always pauses before this line of code is run.  
 1.  Choose **Resume script execution** \(![Resume script execution][ImageResumeIcon]\).  The script continues running until it reaches line 33.  On lines 30, 31, and 32, DevTools prints out the values of `addend1`, `addend2`, and `sum` to the right of the semi-colon on each line.  
     
     :::image type="complex" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="DevTools pauses on the line-of-code breakpoint on line 32" lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
@@ -166,7 +166,7 @@ When you pause on a line of code, the **Scope** pane shows you what local and gl
 
 The **Watch Expressions** tab lets you monitor the values of variables over time.  As the name implies, Watch Expressions are not just limited to variables.  You are able to store any valid JavaScript expression in a Watch Expression.  Try it now:  
 
-1.  Click the **Watch** tab.  
+1.  Choose the **Watch** tab.  
 1.  Choose **Add Expression** \(![Add Expression][ImageAddIcon]\).  
 1.  Type `typeof sum`.  
 1.  Select `Enter`.  DevTools shows `typeof sum: "string"`.  The value to the right of the colon is the result of your Watch Expression.  

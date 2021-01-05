@@ -3,7 +3,7 @@ description: Display and edit files, create Snippets, debug JavaScript, and set 
 title: Sources panel overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020 
+ms.date: 01/05/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -67,13 +67,13 @@ That change should take effect immediately.
    Edit CSS in the **Editor** pane to change the text color of the subtitle to red  
 :::image-end:::  
 
-CSS changes take effect immediately, no save needed.  For JavaScript changes to take effect, select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\).  DevTools does not re-run a script, so the only JavaScript changes that take effect are those that you make inside of functions.  For example, in the following figure, notice how `console.log('A')` does not run, whereas `console.log('B')` does.  If DevTools re-runs the entire script after making the change, then the text `A` would have been logged to the **Console**.  
+CSS changes take effect immediately, no save needed.  For JavaScript changes to take effect, select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\).  DevTools does not re-run a script, so the only JavaScript changes that take effect are those that you make inside of functions.  For example, in the following figure, notice how `console.log('A')` does not run, whereas `console.log('B')` does.  If DevTools re-runs the entire script after making the change, then the text `A` is logged to the **Console**.  
 
 :::image type="complex" source="../media/edit-js.msft.png" alt-text="Editing JavaScript in the Editor pane" lightbox="../media/edit-js.msft.png":::
    Editing JavaScript in the **Editor** pane  
 :::image-end:::  
 
-DevTools erases your CSS and JavaScript changes when you reload the page.  Navigate to [Set up a Workspace](#set-up-a-workspace) to learn how to save the changes to your file system.  
+DevTools erases your CSS and JavaScript changes when you refresh the page.  Navigate to [Set up a Workspace](#set-up-a-workspace) to learn how to save the changes to your file system.  
 
 ## Create, save, and run Snippets  
 
@@ -112,7 +112,7 @@ Navigate to [Get Started With Debugging JavaScript][DevtoolsGuideChromiumJavascr
 
 ## Set up a Workspace  
 
-By default, when you edit a file in the **Sources** tool, those changes are lost when you reload the page.  **Workspaces** enable you to save the changes that you make in DevTools to your file system.  Essentially, DevTools is able to be used as your code editor.
+By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.  **Workspaces** enable you to save the changes that you make in DevTools to your file system.  Essentially, DevTools is able to be used as your code editor.
 
 Navigate to [Edit Files With Workspaces][DevtoolsGuideChromiumWorkspacesIndex] to get started.
 

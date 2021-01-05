@@ -3,7 +3,7 @@ description: Organize resources by frame, domain, type, or other criteria.
 title: View Page Resources With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -40,7 +40,7 @@ When you know the name of the resource that you want to inspect, the **Command M
        The **Open File** dialog  
     :::image-end:::  
     
-1.  Select the file from the dropdown, or start typing the filename and select `Enter` once the correct file is highlighted in the autocomplete box.  
+1.  Choose the file from the dropdown, or start typing the filename and select `Enter` once the correct file is highlighted in the autocomplete box.  
     
     :::image type="complex" source="../media/resources-command-menu-file-search.msft.png" alt-text="Type a filename in the Open File dialog" lightbox="../media/resources-command-menu-file-search.msft.png":::
        Type a filename in the **Open File** dialog  
@@ -56,7 +56,7 @@ Navigate to [Inspect the details of a resource][DevtoolsNetworkInspectDetailsRes
 
 ### Reveal resources in the Network panel from other panels  
 
-The [Browse resources](#browse-resources) section below shows you how to view resources from various parts of the DevTools UI.  If you ever want to inspect a resource in the **Network** panel, right-click the resource and choose **Reveal in Network panel**.  
+The [Browse resources](#browse-resources) section below shows you how to view resources from various parts of the DevTools UI.  If you ever want to inspect a resource in the **Network** panel,  hover on the resource, open the contextual menu \(right-click\), and choose **Reveal in Network panel**.  
 
 :::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Reveal in Network panel" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **Reveal in Network panel**  
@@ -76,8 +76,8 @@ Navigate to [Log network activity][DevtoolsNetworkLogActivity].
 
 To view the resources of a page organized by directory:  
 
-1.  Click the **Sources** tab to open the **Sources** panel.  
-1.  Click the **Page** tab to show the resources of the page.  The **Page** pane opens.  
+1.  Choose the **Sources** tab to open the **Sources** panel.  
+1.  Choose the **Page** tab to show the resources of the page.  The **Page** pane opens.  
     
     :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="The Page pane" lightbox="../media/resources-sources-page-empty.msft.png":::
        The **Page** pane  
@@ -93,7 +93,7 @@ To view the resources of a page organized by directory:
     | `(index)` | The main HTML document. |  
     | `sw.js` | A service worker runtime context. |  
     
-1.  Click a resource to view it in the **Editor**.  
+1.  Choose a resource to view it in the **Editor**.  
     
     :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="View a file in the Editor" lightbox="../media/resources-sources-page-resource.msft.png":::
        View a file in the **Editor**  
@@ -120,7 +120,7 @@ By default the **Page** pane groups resources by directory.  To disable this gro
 
 To group resources together based on their file type:  
 
-1.  Click the **Application** tab.  The **Application** panel opens.  By default the **Manifest** pane usually opens first.  
+1.  Choose the **Application** tab.  The **Application** panel opens.  By default the **Manifest** pane usually opens first.  
     
     :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="The Application panel" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
        The **Application** panel  
@@ -133,7 +133,7 @@ To group resources together based on their file type:
     :::image-end:::  
     
 1.  Expand the sections in which you are interested.  
-1.  Click a resource to view it.  
+1.  Choose a resource to view it.  
     
     :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="View a resource in the Application panel" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
        View a resource in the **Application** panel  

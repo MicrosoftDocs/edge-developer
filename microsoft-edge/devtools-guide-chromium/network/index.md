@@ -3,7 +3,7 @@ description: A tutorial on the most popular network-related features in Microsof
 title: Inspect Network Activity In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -64,7 +64,7 @@ To get the most out of this tutorial, open up the demo and try out the features 
     :::image-end:::  
     -->
     
-1.  [Open DevTools][DevToolsOpen] by pressing `Control`+`Shift`+`J` \(Windows, Linux\) or
+1.  To [Open DevTools][DevToolsOpen], select `Control`+`Shift`+`J` \(Windows, Linux\) or
    `Command`+`Option`+`J` \(macOS\).  The **Console** tool opens.  
     
     :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="The Console" lightbox="../media/network-glitch-console.msft.png":::
@@ -77,7 +77,7 @@ To get the most out of this tutorial, open up the demo and try out the features 
        DevTools docked to the bottom of the window  
     :::image-end:::  
     
-1.  Select the **Network** tab.  The **Network** panel opens.  
+1.  Choose the **Network** tab.  The **Network** panel opens.  
     
     :::image type="complex" source="../media/network-glitch-network-bottom.msft.png" alt-text="Console tool in the DevTools docked to the bottom of the window" lightbox="../media/network-glitch-network-bottom.msft.png":::
        **Console** tool in the DevTools docked to the bottom of the window  
@@ -89,7 +89,7 @@ Right now the Network panel is empty.  DevTools only logs network activity after
 
 To view the network activity that a page causes:  
 
-1.  Reload the page.  The Network panel logs all network activity in the **Network Log**.  
+1.  Refresh the page.  The Network panel logs all network activity in the **Network Log**.  
     
     :::image type="complex" source="../media/network-glitch-network.msft.png" alt-text="The Network Log" lightbox="../media/network-glitch-network.msft.png":::
        The **Network Log**  
@@ -101,7 +101,7 @@ To view the network activity that a page causes:
 
     *   **Status**.  The HTTP status code for response.  
     *   **Type**.  The resource type.  
-    *   **Initiator**.  The cause of the resource request.  Selecting a link in the Initiator column takes you to the source code that caused the request.  
+    *   **Initiator**.  The cause of the resource request.  CHoosing a link in the Initiator column takes you to the source code that caused the request.  
     *   **Time**.  The duration of the request.  
     *   **Waterfall**.  A graphical representation of the different stages of the request.  Hover over a Waterfall to see a breakdown.  
     
@@ -111,7 +111,7 @@ To view the network activity that a page causes:
 1.  After you open DevTools, it records network activity in the Network Log.  
     To demonstrate this, first look at the bottom of the **Network Log** and make a mental note of the last activity.  
 1.  Now, select the **Get Data** button in the demo.  
-1.  Look at the bottom of the **Network Log** again.  You should see a new resource called `getstarted.json`.  Selecting the **Get Data** button caused the page to request this file.  
+1.  Look at the bottom of the **Network Log** again.  You should see a new resource called `getstarted.json`.  To cause the webpage to request the file, choose the **Get Data** button.  
     
     :::image type="complex" source="../media/network-glitch-network-new-resource.msft.png" alt-text="A new resource in the Network Log" lightbox="../media/network-glitch-network-new-resource.msft.png":::
        A new resource in the **Network Log**  
@@ -143,8 +143,8 @@ The network connection of the computer that you use to build sites is probably f
     
 1.  Choose **Slow 3G**.  
     
-    :::image type="complex" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="Select Slow 3G" lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
-       Select Slow 3G  
+    :::image type="complex" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="Choose Slow 3G" lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
+       Choose Slow 3G  
     :::image-end:::  
     
 1.  Long-press **Reload** \(![Reload][ImageRefreshIcon]\) and then choose **Empty Cache And Hard Reload**.  
@@ -278,7 +278,7 @@ The **Filter** text box supports many different types of filtering.
        A regular expression filter  
     :::image-end:::  
     
-1.  Type `-main.css`.  DevTools filters out `main.css`.  If any other file matched the pattern they would also be filtered out.  
+1.  Type `-main.css`.  DevTools filters out `main.css`.  If any file matches the pattern, tit is also filtered out.  
     
     :::image type="complex" source="../media/network-glitch-network-filter-negative-statement.msft.png" alt-text="A negative filter" lightbox="../media/network-glitch-network-filter-negative-statement.msft.png":::
        A negative filter  
@@ -338,7 +338,7 @@ How does a page look and behave when some of the page resources are not availabl
     :::image-end:::  
     
 1.  Choose **Add**.  
-1.  Reload the page.  As expected, the styling of the page is slightly messed up because the main stylesheet has been blocked.  
+1.  Refresh the page.  As expected, the styling of the page is slightly messed up because the main stylesheet has been blocked.  
     
     > [!NOTE]
     > The `main.css` row in the Network Log.  The red text means that the resource was blocked.

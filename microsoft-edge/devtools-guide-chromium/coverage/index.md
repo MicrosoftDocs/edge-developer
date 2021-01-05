@@ -3,7 +3,7 @@ description: How to find and analyze unused JavaScript and CSS code in Microsoft
 title: Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -65,14 +65,14 @@ This stylesheet does not just include the code for the button component.  It con
     
 ## Record code coverage  
 
-1.  Click one of the following buttons in the **Coverage** tab:  
+1.  Choose one of the following buttons in the **Coverage** tab:  
     *   Choose **Start Instrumenting Coverage And Reload Page** \(![Start Instrumenting Coverage And Reload Page][ImageReloadIcon]\) if you want to see what code is needed to load the page.  
     *   Choose **Instrument Coverage** \(![Instrument Coverage][ImageRecordIcon]\) if you want to see what code is used after interacting with the page.  
 1.  Choose **Stop Instrumenting Coverage And Show Results** \(![Stop Instrumenting Coverage And Show Results][ImageStopIcon]\) when you want to stop recording code coverage.  
     
 ## Analyze code coverage  
 
-The table in the **Coverage** tab shows you what resources were analyzed, and how much code is used within each resource.  Click a row to open that resource in the **Sources** panel and see a line-by-line breakdown of used code and unused code.  
+The table in the **Coverage** tab shows you what resources were analyzed, and how much code is used within each resource.  Choose a row to open that resource in the **Sources** panel and see a line-by-line breakdown of used code and unused code.  
 
 :::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="A code coverage report" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
    A code coverage report  

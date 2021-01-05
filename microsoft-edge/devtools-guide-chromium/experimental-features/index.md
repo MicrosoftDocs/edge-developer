@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -128,7 +128,7 @@ The **Inspect** tool provides a quick way to identify and visualize CSS Grid lay
 In Microsoft Edge version 86 or later, the experimental CSS grid feature also offers the option to enable persistent Grid overlays.  The persistent overlays provide several benefits.  
 
 *   The persistent overlays remain visible on the page as you scroll, move your mouse, and use other features of the DevTools.  
-*   Multiple persistent overlays can be enabled at the same time, allowing you to review several grid layouts at once.  
+*   Multiple persistent overlays may be turned on at the same time, allowing you to review several grid layouts at once.  
 *   Persistent overlays offer many configuration options, such as hiding or showing names in the grid area, grid gaps, track sizes, and so on.  
     
 The two ways to toggle a persistent grid overlay.  
@@ -234,8 +234,8 @@ With the **Enable keyboard shortcut editor** experiment turned on, you are now a
     
 1.  On the keyboard, select the keys you want to bind to the action.
     
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Select the keys you want to assign to the action" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
-       Select the keys you want to assign to the action
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Choose the keys you want to assign to the action" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+       Choose the keys you want to assign to the action
     :::image-end:::  
     
 1.  To save your new keyboard shortcut, choose the checkmark \(![CheckmarkKeyboardShortcut][ImageCheckmarkKeyboardShortcutIcon]\) icon.

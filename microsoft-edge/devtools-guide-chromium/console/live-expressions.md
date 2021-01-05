@@ -3,7 +3,7 @@ description: If you find yourself typing the same JavaScript expressions into th
 title: Watch JavaScript Expression Values In Real-Time With Live Expressions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -24,7 +24,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Watch JavaScript Expression Values In Real-Time With Live Expressions  
 
-If you find yourself typing the same JavaScript expression in the Console repeatedly, you might find it easier to create a **Live Expression**.  With **Live Expressions** you type an expression once and then pin it to the top of your Console.  The value of the expression updates in near real-time.  
+If you find yourself typing the same JavaScript expression in the Console repeatedly, you may find it easier to create a **Live Expression**.  With **Live Expressions** you type an expression once and then pin it to the top of your Console.  The value of the expression updates in near real-time.  
 
 ## Create a Live Expression  
 

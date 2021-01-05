@@ -3,7 +3,7 @@ description: The timeline events mode displays all events triggered while making
 title: Timeline Event Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -74,7 +74,7 @@ This section lists events that belong to the Scripting category and their proper
 | Animation Frame Fired | A scheduled animation frame fired, and its callback handler invoked. |  
 | Cancel Animation Frame |  A scheduled animation frame was canceled. |  
 | GC Event |  Garbage collection occurred. |  
-| DOMContentLoaded |  The [DOMContentLoaded event][MDNWindowDOMContentLoadedEvent] was fired by the browser.  This event is fired when all of the page's DOM content has been loaded and parsed. |  
+| DOMContentLoaded |  The [DOMContentLoaded event][MDNWindowDOMContentLoadedEvent] was fired by the browser.  This event is fired when all of the DOM content of the page is loaded and parsed. |  
 | Evaluate Script | A script was evaluated. |  
 | Event | A JavaScript event \(for example, `mousedown`, or `key`\). |  
 | Function Call | A top-level JavaScript function call was made \(only appears when browser enters JavaScript engine\). |  

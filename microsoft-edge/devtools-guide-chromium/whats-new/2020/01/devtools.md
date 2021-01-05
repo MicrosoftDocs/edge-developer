@@ -3,7 +3,7 @@ description: 3D View, Visual Studio integration with Microsoft Edge, and more.
 title: What's new in DevTools (Microsoft Edge 81)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/11/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -26,7 +26,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 ## Announcements from the Microsoft Edge DevTools team  
 
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! Check them out to try new features in the DevTools, Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].  
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].  
 
 ### Accessibility improvements to the DevTools  
 
@@ -38,7 +38,7 @@ The DevTools team has contributed 170 changes to Chromium to address high-impact
 
 Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.  
 
-If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
+If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 Chromium issue [#963183][CR963183]  
 
@@ -99,7 +99,7 @@ Many developers use other developer tools, like StackOverflow and Visual Studio 
 
 The DevTools automatically match the language you use for Microsoft Edge in `edge://settings/languages`.  
 
-If you want Microsoft Edge to be in one language and your DevTools to remain in English, press `F1` in the DevTools to open [Settings][Settings] and disable **Match browser language**.  
+If you want Microsoft Edge to be in one language and your DevTools to remain in English, select `F1` in the DevTools to open [Settings][Settings] and disable **Match browser language**.  
 
 :::image type="complex" source="../../images/2020/01/localized-devtools.msft.png" alt-text="The DevTools in German" lightbox="../../images/2020/01/localized-devtools.msft.png":::
    The DevTools in German  
@@ -107,7 +107,7 @@ If you want Microsoft Edge to be in one language and your DevTools to remain in 
 
 **Console** messages are not localized.  Only the strings used in the DevTools UI are displayed in the language you use for Microsoft Edge.  
 
-If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or click the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon.  
+If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or choose the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon.  
 
 Chromium issue [#941561][CR941561]  
 
@@ -129,9 +129,9 @@ Use the **3D View** to debug your web application by navigating through the [Doc
    The 3D View in the DevTools  
 :::image-end:::  
 
-To access the 3D View, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
+To access the 3D View, select `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
 
-We're working on the UI and adding more functionality to the 3D View, so please send us your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team).  
+The Microsoft Edge team is working with the Chromium team on the UI and adding more functionality to the 3D View, so please send your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team).  
 
 Chromium issue [#987787][CR987787]  
 
@@ -161,7 +161,7 @@ For more information, check out [how to debug Microsoft Edge from Visual Studio 
 
 #### webhint  
 
-The [webhint][VisualStudioMarketplaceWebhintExtension] Visual Studio Code extension uses `webhint` to improve your web page while you're writing it! This extension runs and reports diagnostics on your workspace files based on `webhint` analysis.  
+The [webhint][VisualStudioMarketplaceWebhintExtension] Visual Studio Code extension uses `webhint` to improve your web page while you are writing it.  This extension runs and reports diagnostics on your workspace files based on `webhint` analysis.  
 
 :::image type="complex" source="../../images/2020/01/webhint-vscode-extension.msft.png" alt-text="The webhint Visual Studio Code extension analyzing a .tsx file in Visual Studio Code" lightbox="../../images/2020/01/webhint-vscode-extension.msft.png":::
    The webhint Visual Studio Code extension analyzing a `.tsx` file in Visual Studio Code  
@@ -181,10 +181,10 @@ In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to d
 
 ### Tracking prevention Console messages  
 
-Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you haven't visited before.  The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.  To give you more insight into the compatibility of your web page when certain trackers are blocked, we've also added warning messages in the Console when a tracker is blocked.  
+Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you have not visited before.  The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.  To give you more insight into the compatibility of your web page when certain trackers are blocked, warning messages were added in the **Console** when a tracker is blocked.  
 
 :::image type="complex" source="../../images/2020/01/tracking-prevention.msft.png" alt-text="Messages in the Console when tracking prevention blocks access to storage for a tracker" lightbox="../../images/2020/01/tracking-prevention.msft.png":::
-   Messages in the Console when tracking prevention blocks access to storage for a tracker  
+   Messages in the **Console** when tracking prevention blocks access to storage for a tracker  
 :::image-end:::  
 
 [Read more about tracking prevention and the balance between privacy and web compatibility][TrackingPrevention].  
@@ -201,7 +201,7 @@ After [enabling the Device Toolbar][DeviceToolbar], simulate the dimensions of a
    Simulating a Moto G4 viewport  
 :::image-end:::  
 
-Click [Show Device Frame][DeviceFrame] to show the Moto G4 hardware around the viewport.  
+Choose [Show Device Frame][DeviceFrame] to show the Moto G4 hardware around the viewport.  
 
 :::image type="complex" source="../../images/2020/01/motog4frame.msft.png" alt-text="Showing the Moto G4 hardware" lightbox="../../images/2020/01/motog4frame.msft.png":::
    Showing the Moto G4 hardware  
@@ -245,7 +245,7 @@ All cells in the Cookie tables are editable now, except cells in the **Size** co
 
 #### Copy as Node.js fetch to include cookie data  
 
-Right-click a network request and select **Copy** > **Copy as Node.js fetch** to get a `fetch` expression that includes cookie data.  
+To get a `fetch` expression that includes cookie data, hover on a network request, open the contextual menu \(right-click\), and choose **Copy** > **Copy as Node.js fetch**.  
 
 :::image type="complex" source="../../images/2020/01/fetchcookies.msft.png" alt-text="Copy as Node.js fetch" lightbox="../../images/2020/01/fetchcookies.msft.png":::
    Copy as Node.js fetch  
@@ -337,7 +337,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [CR924693]: https://crbug.com/924693 "Feature Request: Add Moto G4 To Device Mode List | Chromium Bugs"  
 [CR1030258]: https://crbug.com/1030258 "CR 1030258 | Chromium Bugs"  
 [CR1026879]: https://crbug.com/1026879 "Cookie tab in the dev console doesn't show priority anymore | Chromium Bugs"  
-[CR1029826]: https://crbug.com/1029826 "network tab -> right click to request -> copy -> copy as fetch does not copy cookies | Chromium Bugs"  
+[CR1029826]: https://crbug.com/1029826 "network tab -> right choose to request -> copy -> copy as fetch does not copy cookies | Chromium Bugs"  
 [CR985402]: https://crbug.com/985402 "web app manifest icon error strings are confusing | Chromium Bugs"  
 [CR963183]: https://crbug.com/963183 "DevTools are not WCAG compliant | Chromium Bugs"  
 [CR941561]: https://crbug.com/941561 "Localizability of the DevTools | Chromium Bugs"  

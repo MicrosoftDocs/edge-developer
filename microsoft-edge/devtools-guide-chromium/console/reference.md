@@ -3,7 +3,7 @@ description: A comprehensive reference on every feature and behavior related to 
 title: Console Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -151,13 +151,13 @@ There are many ways to filter out messages in the Console.
 
 DevTools assigns each `console.*` method a severity level.  There are 4 levels: `Verbose`, `Info`, `Warning`, and `Error`.  For example, `console.log()` is in the `Info` group, whereas `console.error()` is in the `Error` group.  The [Console API Reference][DevToolsConsoleApi] describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  You may hide any level of messages that you are not interested in.  For example, if you are only interested in `Error` messages, you may hide the other 3 groups.  
 
-Click the **Log Levels** dropdown to enable or disable `Verbose`, `Info`, `Warning` or `Error` messages.  
+Choose the **Log Levels** dropdown to enable or disable `Verbose`, `Info`, `Warning` or `Error` messages.  
 
 :::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="The Log Levels dropdown" lightbox="../media/console-log-level-default-levels.msft.png":::
    The **Log Levels** dropdown  
 :::image-end:::  
 
-You may also filter by log level by [opening the Console Sidebar](#open-the-console-sidebar) and then clicking **Errors**, **Warnings**, **Info**, or **Verbose**.  
+You may also filter by log level by [opening the Console Sidebar](#open-the-console-sidebar) and thenchoosing **Errors**, **Warnings**, **Info**, or **Verbose**.  
 
 :::image type="complex" source="../media/console-sidebar-warnings.msft.png" alt-text="Use the Sidebar to view warnings" lightbox="../media/console-sidebar-warnings.msft.png":::
    Use the Sidebar to view warnings  
@@ -177,7 +177,7 @@ Type `-url:` to hide messages from that URL.  This is called a negative URL filt
    A negative URL filter that hides all messages that match the `https://b.wal.co` URL
 :::image-end:::  
 
-You may also show messages from a single URL by [opening the Console Sidebar](#open-the-console-sidebar), expanding the **User Messages** section, and then clicking the URL of the script containing the messages on which you want to focus.  
+You may also show messages from a single URL by [opening the Console Sidebar](#open-the-console-sidebar), expanding the **User Messages** section, and thenchoosing the URL of the script containing the messages on which you want to focus.  
 
 :::image type="complex" source="../media/console-filter-text-specified.msft.png" alt-text="View the messages that came from wp-ad.min.js" lightbox="../media/console-filter-text-specified.msft.png":::
    View the messages that came from `wp-ad.min.js`  
@@ -185,7 +185,7 @@ You may also show messages from a single URL by [opening the Console Sidebar](#o
 
 ### Filter out messages from different contexts  
 
-Suppose that you have an advertisement \(ad\) on your page.  The ad is embedded in an `<iframe>` and is generating a lot of messages in your Console.  Because the ad is running in a different [JavaScript context](#select-javascript-context), one way to hide the messages is to [open Console Settings](#open-console-settings) and enable the **Selected Context Only** checkbox.  
+Suppose that you have an advertisement \(ad\) on your page.  The ad is embedded in an `<iframe>` and is generating a lot of messages in your Console.  Because the ad is running in a different [JavaScript context](#select-javascript-context), one way to hide the messages is to [open Console Settings](#open-console-settings) and turn on the **Selected Context Only** checkbox.  
 
 ### Filter out messages that do not match a regular expression pattern  
 
@@ -201,7 +201,7 @@ This section contains features related to running JavaScript in the Console.  Se
 
 ### Re-run expressions from history  
 
-Press the `Up Arrow` key to cycle through the history of JavaScript expressions that you ran earlier in the Console.  Select `Enter` to run that expression again.  
+Select the `Up Arrow` key to cycle through the history of JavaScript expressions that you ran earlier in the Console.  Select `Enter` to run that expression again.  
 
 ### Watch the value of an expression in real-time with Live Expressions  
 
@@ -232,8 +232,8 @@ By default the **JavaScript Context** dropdown is set to **top**, which represen
 
 Suppose you have an ad on your page embedded in an `<iframe>`.  You want to run JavaScript in order to tweak the DOM of the ad.  You should first select the browsing context of the ad from the **JavaScript Context** dropdown.  
 
-:::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Select a different JavaScript context" lightbox="../media/console-dom-level-multiple.msft.png":::
-   Select a different JavaScript context  
+:::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Choose a different JavaScript context" lightbox="../media/console-dom-level-multiple.msft.png":::
+   Choose a different JavaScript context  
 :::image-end:::  
 
 ## Clear the Console  
@@ -241,10 +241,10 @@ Suppose you have an ad on your page embedded in an `<iframe>`.  You want to run 
 You may use any of the following workflows to clear the Console:  
 
 *   Choose **Clear Console** \(![Clear Console][ImageClearConsoleIcon]\).  
-*   Right-click a message and then choose **Clear Console**.  
-*   Enter `clear()` in the Console and then select `Enter`.  
+*   Hover on a message, open the contextual menu \(righ-click\), and choose **Clear Console**.  
+*   Enter `clear()` in the **Console** and select `Enter`.  
 *   Run `console.clear()` from the JavaScript for your webpage.  
-*   Select `Control`+`L` while the Console is in focus.  
+*   Select `Control`+`L` while the **Console** is in focus.  
     
 ## Getting in touch with the Microsoft Edge DevTools team  
 

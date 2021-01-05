@@ -3,7 +3,7 @@ description: Emulate color vision deficiencies, Dock To Left in the Command Menu
 title: What's new in DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/11/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -30,7 +30,7 @@ Here are the new features available in the DevTools in Microsoft Edge 83.
 
 ## Announcements from the Microsoft Edge DevTools team  
 
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! Check them out to try new features in the DevTools, Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].  
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].  
 
 ### Remotely debug Microsoft Edge on Windows 10 Devices  
 
@@ -40,7 +40,7 @@ The [Remote Tools for Microsoft Edge \(Beta\)][RemoteTools] app is now available
    The [Remote Tools for Microsoft Edge (Beta)][RemoteTools] app available in the [Microsoft Store][MicrosoftStore]  
 :::image-end:::  
 
-[Read our guide for setting up your Windows 10 device and your development machine for remote debugging][DevtoolsRemoteDebuggingWindows].  Let us know about your remote debugging experience by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
+[Read our guide for setting up your Windows 10 device and your development machine for remote debugging][DevtoolsRemoteDebuggingWindows].  Let us know about your remote debugging experience by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 ### New ways to access Settings  
 
@@ -100,7 +100,7 @@ Chromium issue [#1050999][CR1050999]
 
 The **Changes tool** tracks any changes you have made to CSS or JavaScript in the DevTools.  You are able to use the **Changes tool** to quickly see all your changes and take those back to your editor/IDE.  
 
-Open the **Changes tool** by pressing `Ctrl`+`Shift`+`P` in the DevTools to open the [Command Menu][DevToolsCommandMenuIndex] and typing `changes`.  Select and run the **Show Changes** command to open the **Changes tool** in the DevTools drawer.  
+To open the **Changes tool**, select `Ctrl`+`Shift`+`P` in the DevTools to open the [Command Menu][DevToolsCommandMenuIndex] and type `changes`.  choose and run the **Show Changes** command to open the **Changes tool** in the DevTools drawer.  
 
 When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to see all of your minified code.  Starting in Microsoft Edge 83, you may now scroll horizontally using the arrow keys on your keyboard.  
 
@@ -108,7 +108,7 @@ When you have made a change to a minified file, the **Changes tool** enables you
    In Microsoft Edge 83, you may scroll horizontally with the arrow keys to see the changes you made to your minified code in the **Changes tool**  
 :::image-end:::  
 
-If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
+If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 Chromium issue [#963183][CR963183]  
 
@@ -134,11 +134,11 @@ DevTools is able to emulate blurred vision and the following [types of color vis
 | Achromatopsia | The inability to perceive any color, except for shades of grey \(extremely rare\). |  
 
 Less extreme versions of these color vision deficiencies exist, and in fact they are more common.  
-For example, protanomaly is a reduced sensitivity to red light (as opposed to protanopia, which is the complete inability to perceive red light). However, these -omaly vision deficiencies are not as clearly defined: every person with such a vision deficiency is different and might see things differently (being able to perceive more/less of the relevant colors).  
+For example, protanomaly is a reduced sensitivity to red light (as opposed to protanopia, which is the complete inability to perceive red light). However, these **-omaly** vision deficiencies are not as clearly defined:  every person with such a vision deficiency is different and may see things differently \(being able to perceive more/less of the relevant colors\).  
 
 By designing for the more extreme simulations in DevTools, your web apps are guaranteed to be accessible to people with protanomaly, deuteranomaly, tritanomaly, and achromatomaly as well.  
 
-Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 Chromium issue [#1003700][CR1003700]  
 
@@ -178,7 +178,7 @@ The **Response Headers** section of the **Headers** tab provides more guidance o
    More guidance in the **Response Headers** section  
 :::image-end:::  
 
-Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 Chromium issue [#1051466][CR1051466]  
 
@@ -212,7 +212,7 @@ Open the [Command Menu][DevToolsCommandMenuIndex] and run the `Dock to left` com
 > [!NOTE]
 > The **Dock to left** feature has been available since Microsoft Edge 75, but it was previously only accessible from the [Main Menu][DevtoolsCustomizePlacementsChangeMainMenu].  The new feature in Microsoft Edge 83 is that you may now access this feature from the Command Menu.  
 
-Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 Chromium issue [#1011679][CR1011679]  
 
@@ -229,13 +229,13 @@ The DevTools team frequently got feedback from web developers that while it was 
 
 ### Delete all Local Overrides in a folder  
 
-After setting up **Local Overrides** you may right-click a folder and select the new **Delete all overrides** option to delete all Local Overrides in that folder.  
+After setting up **Local Overrides** you may hover on a directory, open the contextual menu \(right-click\), and choose the new **Delete all overrides** option to delete all Local Overrides in that folder.  
 
 :::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="Delete all overrides" lightbox="../../media/2020/03/overrides.msft.png":::
    Delete all overrides  
 :::image-end:::  
 
-Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 Chromium issue [#1016501][CR1016501]  
 
@@ -249,7 +249,7 @@ You have been able to [visualize Long Tasks in the Performance panel][DevtoolsEv
    The new Long Task UI  
 :::image-end:::  
 
-Send your feedback by [tweeting][PostTweetEdgeDevTools] or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
+Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 Chromium issue [#1054447][CR1054447]  
 

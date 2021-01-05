@@ -3,7 +3,7 @@ description: A guide on how to open the Command Menu, run commands, review other
 title: Run Commands With The Microsoft Edge DevTools Command Menu
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -24,9 +24,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Run Commands With The Microsoft Edge DevTools Command Menu  
 
-  
-
-The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks, such as [disabling JavaScript][JavascriptDisable].  You may be familiar with a similar feature in Visual Studio Code called the [Command Palette][VisualStudioCodeUICommandPalette], which was the original inspiration for the Command Menu.  
+The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks, such as [disabling JavaScript][JavascriptDisable].  You may be familiar with a similar feature in Microsoft Visual Studio Code called the [Command Palette][VisualStudioCodeUICommandPalette], which was the original inspiration for the Command Menu.  
 
 :::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Using the Command Menu to disable JavaScript" lightbox="../media/command-menu-run-command-java.msft.png":::
    Using the Command Menu to disable JavaScript  
@@ -34,7 +32,7 @@ The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI 
 
 ## Open the Command Menu  
 
-Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\). Or choose **Customize And Control DevTools** `...` and then choose **Run Command**.  
+Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\). Or choose **Customize And Control DevTools** \(`...`\) > **Run Command**.  
 
 :::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Run Command" lightbox="../media/command-menu-options-run-command.msft.png":::
    Run Command  

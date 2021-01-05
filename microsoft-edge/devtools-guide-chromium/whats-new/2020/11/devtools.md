@@ -3,7 +3,7 @@ description: Microsoft Edge on Linux, improved webhint tips in the Issues tool, 
 title: What's new in DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/15/2020
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -174,8 +174,8 @@ To copy the property value to your clipboard, navigate to [Copy formatted respon
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Paste property value in Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
-         Paste property value in Visual Studio Code  
+      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Paste property value in Microsoft Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
+         Paste property value in Microsoft Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  

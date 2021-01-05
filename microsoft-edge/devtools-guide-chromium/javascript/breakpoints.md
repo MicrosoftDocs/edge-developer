@@ -3,7 +3,7 @@ description: Learn about all the ways you are able to pause your code in Microso
 title: How To Pause Your Code With Breakpoints In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -43,10 +43,10 @@ Use a line-of-code breakpoint when you know the exact region of code that you ne
 
 To set a line-of-code breakpoint in DevTools:  
 
-1.  Click the **Sources** tab.  
+1.  Choose the **Sources** tab.  
 1.  Open the file containing the line of code on which you want to break.  
 1.  Go the line of code.  
-1.  To the left of the line of code is the line number column.  Click on it.  A red icon appears next to the line number column.  
+1.  To the left of the line of code is the line number column.  Choose it.  A red icon appears next to the line number column.  
     
     :::image type="complex" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="A line-of-code breakpoint" lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
        A line-of-code breakpoint  
@@ -69,10 +69,10 @@ Use a conditional line-of-code breakpoint when you know the exact region of code
 
 To set a conditional line-of-code breakpoint:  
 
-1.  Click the **Sources** tab.  
+1.  Choose the **Sources** tab.  
 1.  Open the file containing the line of code on which you want to break.  
 1.  Go the line of code.  
-1.  To the left of the line of code is the line number column.  Right-click the line number.  
+1.  To the left of the line of code is the line number column.  Hover on the line number and open the contextual menu \(right-click\).  
 1.  Choose **Add conditional breakpoint**.  A dialog displays underneath the line of code.  
 1.  Enter your condition in the dialog.  
 1.  Select `Enter` to activate the breakpoint.  An icon next to the line number column.  
@@ -90,8 +90,8 @@ Use the **Breakpoints** pane to disable or remove line-of-code breakpoints from 
 :::image-end:::  
 
 *   Check the checkbox next to an entry to disable that breakpoint.  
-*   Right-click an entry to remove that breakpoint.  
-*   Right-click anywhere in the **Breakpoints** pane to deactivate all breakpoints, disable all breakpoints, or remove all breakpoints.  Disabling all breakpoints is equivalent to unchecking each one.  Deactivating all breakpoints instructs DevTools to ignore all line-of-code breakpoints, but to also maintain the enabled state so that each are in the same state as before when you reactivate each one.  
+*   Hover on an entry and open the contextual menu \(right-click\) to remove that breakpoint.  
+*   Hover anywhere in the **Breakpoints** pane and open the contextual menu \(right-click\) to deactivate all breakpoints, disable all breakpoints, or remove all breakpoints.  Disabling all breakpoints is equivalent to unchecking each one.  Deactivating all breakpoints instructs DevTools to ignore all line-of-code breakpoints, but to also maintain the enabled state so that each are in the same state as before when you reactivate each one.  
     
     :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="Deactivated breakpoints in the Breakpoints pane" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
        Deactivated breakpoints in the **Breakpoints** pane  
@@ -103,9 +103,9 @@ Use a DOM change breakpoint when you want to pause on the code that changes a DO
 
 To set a DOM change breakpoint:  
 
-1.  Click the **Elements** tab.  
+1.  Choose the **Elements** tab.  
 1.  Go the element on which you want to set the breakpoint.  
-1.  Right-click the element.  
+1.  Hover on the element and open the contextual menu \(right-click\).  
 1.  Hover over **Break on**, then choose **Subtree modifications**, **Attribute modifications**, or **Node removal**.  
     
     :::image type="complex" source="../media/javascript-elements-break-on-subtree-modifications.msft.png" alt-text="The context menu for creating a DOM change breakpoint" lightbox="../media/javascript-elements-break-on-subtree-modifications.msft.png":::
@@ -129,7 +129,7 @@ One example of when this is helpful is when you see that your page is requesting
 
 To set an XHR breakpoint:  
 
-1.  Click the **Sources** tab.  
+1.  Choose the **Sources** tab.  
 1.  Expand the **XHR Breakpoints** pane.  
 1.  Choose **Add breakpoint**.  
 1.  Enter the string which you want to break on.  DevTools pauses when this string is present anywhere in an XHR request URL.  
@@ -143,7 +143,7 @@ To set an XHR breakpoint:
 
 Use event listener breakpoints when you want to pause on the event listener code that runs after an event is fired.  You are able to select specific events, such as `click`, or categories of events, such as all mouse events.  
 
-1.  Click the **Sources** tab.  
+1.  Choose the **Sources** tab.  
 1.  Expand the **Event Listener Breakpoints** pane.  DevTools shows a list of event categories, such as **Animation**.  
 1.  Check one of these categories to pause whenever any event from that category is fired, or expand the category and check a specific event.  
     
@@ -155,7 +155,7 @@ Use event listener breakpoints when you want to pause on the event listener code
 
 Use exception breakpoints when you want to pause on the line of code that is throwing a caught or uncaught exception.  
 
-1.  Click the **Sources** tab.  
+1.  Choose the **Sources** tab.  
 1.  Choose **Pause on exceptions** \(![Pause on exceptions][ImagePauseOnExceptionsIcon]\).  The icon turns blue when enabled.  
     
     :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="The Pause on exceptions button" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::

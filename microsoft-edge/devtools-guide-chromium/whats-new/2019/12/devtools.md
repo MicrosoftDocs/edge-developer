@@ -3,7 +3,7 @@ description: Accessibility improvements, using the DevTools in other languages, 
 title: What's new in DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/11/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -26,7 +26,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 ## Announcements from the Microsoft Edge DevTools team  
 
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! Check them out to try new features in the DevTools, Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].  
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].  
 
 ### Accessibility improvements to the DevTools  
 
@@ -38,7 +38,7 @@ The DevTools team has contributed 170 changes to Chromium to address high-impact
 
 Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.  
 
-If you use screen readers or the keyboard to navigate around the DevTools, send your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
+If you use screen readers or the keyboard to navigate around the DevTools, send your feedback by [tweeting][PostTweetEdgeDevTools] at us orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
 
 Chromium issue [#963183][CR963183]  
 
@@ -97,13 +97,13 @@ Many developers use other developer tools, like StackOverflow and Visual Studio 
 | Russian – русский | Spanish - español |  
 -->  
 
-Navigate to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**.  Also set the **Developer Tools experiments** flag to **Enabled**.  Restart Microsoft Edge and open the DevTools.  <!-- Press `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  The DevTools match the language you use for Microsoft Edge in `edge://settings/languages`.  
+Navigate to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**.  Also set the **Developer Tools experiments** flag to **Enabled**.  Restart Microsoft Edge and open the DevTools.  <!-- Select `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  The DevTools match the language you use for Microsoft Edge in `edge://settings/languages`.  
 
 :::image type="complex" source="../../images/2019/12/localized-devtools.msft.png" alt-text="The DevTools in German" lightbox="../../images/2019/12/localized-devtools.msft.png":::
    The DevTools in German  
 :::image-end:::  
 
-If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or click the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon.  
+If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or choose the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon.  
 
 Chromium issue [#941561][CR941561]  
 
@@ -125,7 +125,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
    The **3D View** in the DevTools  
 :::image-end:::  
 
-To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Press `F1` in the DevTools or go to **Settings**, navigate to **Experiments** section, and check the **Enable 3D View** checkbox.  Now, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
+To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Select `F1` in the DevTools or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.  Now, select `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.  
 
 We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team).  
 
@@ -165,8 +165,9 @@ The [webhint][VisualStudioMarketplaceWebhintExtension] Visual Studio Code extens
 
 [Learn more about the Visual Studio Code webhint extension][WebhintVisualStudioCodeExtension].  
 
-### Visual Studio integration
-In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to debug JavaScript running in Microsoft Edge.  [Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out!  
+### Visual Studio integration  
+
+In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to debug JavaScript running in Microsoft Edge.  [Download Visual Studio 2019][MicrosoftVisualStudioDownloads] to try this feature out.  
 
 :::image type="complex" source="../../images/2019/12/vs.msft.png" alt-text="Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta" lightbox="../../images/2019/12/vs.msft.png":::
    Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta  
@@ -176,7 +177,7 @@ In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to d
 
 ### Tracking prevention Console messages  
 
-Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you haven't visited before.  The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.  To give you more insight into the compatibility of your web page when certain trackers are blocked, we've also added warning messages in the Console when a tracker is blocked.  
+Tracking prevention is a unique feature in Microsoft Edge that blocks you from being tracked by a website before you visited it.  The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.  To give you more insight into the compatibility of your web page when certain trackers are blocked, The Microsoft Edge team added warning messages in the **Console** when a tracker is blocked.  
 
 :::image type="complex" source="../../images/2019/12/tracking-prevention.msft.png" alt-text="Messages in the Console when tracking prevention blocks access to storage for a tracker" lightbox="../../images/2019/12/tracking-prevention.msft.png":::
    Messages in the **Console** when tracking prevention blocks access to storage for a tracker  
@@ -233,7 +234,7 @@ You are now able to view the initiators and dependencies of a network request as
    A Request Initiator Chain in the **Initiator** tab  
 :::image-end:::  
 
-After [logging network activity in the Network panel][DevToolsNetworkIndex], click a resource and then go to the **Initiator** tab to view the **Request Initiator Chain**:  
+After [logging network activity in the Network panel][DevToolsNetworkIndex], choose a resource and then go to the **Initiator** tab to view the **Request Initiator Chain**:  
 
 *   The **inspected resource** is bold.  In the screenshot above, `ai.2.min.js` is the inspected resource.  
 *   The resources above the inspected resource are the **initiators**.  In the screenshot above, `https://www.microsoftedgeinsider.com` is the initiator of `ai.2.min.js`.  In other words, `https://www.microsoftedgeinsider.com` caused the network request for `ai.2.min.js`.  
@@ -246,7 +247,7 @@ Chromium issue [#842488][CR842488]
 
 #### Highlight the selected network request in the Overview  
 
-After you click a network resource in order to inspect it, the Network panel now puts a blue border around that resource in the **Overview**.  This is able to help you detect if the network request is happening earlier or later than expected.  
+After you choose a network resource in order to inspect it, the Network panel now puts a blue border around that resource in the **Overview**.  This is able to help you detect if the network request is happening earlier or later than expected.  
 
 :::image type="complex" source="../../images/2019/12/overview.msft.png" alt-text="The Overview pane highlighting the inspected resource" lightbox="../../images/2019/12/overview.msft.png":::
    The **Overview** pane highlighting the inspected resource  
@@ -262,7 +263,7 @@ Use the new **Path** and **URL** columns in the **Network** panel to see the abs
    The new Path and URL columns in the **Network** panel  
 :::image-end:::  
 
-Right-click the **Waterfall** table header and select **Path** or **URL** to show the new columns.  
+To display the new columns, hover on the **Waterfall** table header, open the contextual menu \(righ-click\), and choose **Path** or **URL**.  
 
 Chromium issue [#993366][CR993366]  
 
@@ -306,9 +307,9 @@ The [Coverage tab][DevToolsCoverageIndex] has a new dropdown menu that lets you 
    The coverage mode dropdown menu  
 :::image-end:::  
 
-#### Coverage must now be initiated by a page reload  
+#### Coverage must now be initiated by a page refresh  
 
-Toggling code coverage without a page reload has been removed because the coverage data was unreliable.  For example, a function may be reported as unused if the runtime was a long time ago and the V8 garbage collector has cleaned it up.  
+Toggling code coverage without a page refresh has been removed because the coverage data was unreliable.  For example, a function may be reported as unused if the runtime was a long time ago and the V8 garbage collector has cleaned it up.  
 
 Chromium issue [#1004203][CR1004203]  
 
@@ -319,12 +320,6 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 ## Getting in touch with Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
-
-<!--<<../../_shared/devtools-feedback.md>> -->
-
-<!--<<../../_shared/canary.md>> -->
-
-<!--<<../../_shared/discover.md>> -->
 
 <!-- image links -->  
 

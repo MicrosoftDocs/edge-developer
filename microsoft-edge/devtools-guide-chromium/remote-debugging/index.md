@@ -3,7 +3,7 @@ description: Remote debug live content on an Android device from a Windows or ma
 title: Get Started with Remote Debugging Android Devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -91,7 +91,7 @@ Use the following tips to help you troubleshoot if the **Allow USB Debugging** p
 *   Setting the USB mode for Android to PTP.  For more information, navigate to [Galaxy S4 does not show Authorize USB debugging dialog box][StackexchangeAndroid101933].  
 *   Choose **Revoke USB Debugging Authorizations** from the **Developer Options** screen on your Android device to reset it to a fresh state.  
 
-If you find a solution that is not mentioned on this page or in [DevTools Devices does not detect device when plugged in][Stackoverflow21925992] on Stack Overflow, please add your solution to the Stack Overflow question<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
+If you find a solution that is not mentioned on this page or in [DevTools Devices does not detect device when plugged in][Stackoverflow21925992] on Stack Overflow, please add your solution to the Stack Overflow question<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->.  
 
 ## Step 2: Debug content on your Android device from your development machine  
 
@@ -131,7 +131,7 @@ Choose **Toggle Screencast** \(![Toggle Screencast][ImageToggleScreencastIcon]\)
 
 You are able to interact with the screencast in the following ways.  
 
-*   Clicks are translated into taps, firing proper touch events on the device.  
+*   Chooses are translated into taps, firing proper touch events on the device.  
 *   Keystrokes on your computer are sent to the device.  
 *   To simulate a pinch gesture, hold `Shift` while dragging.  
 *   To scroll, use your trackpad or mouse wheel, or fling with your mouse pointer.

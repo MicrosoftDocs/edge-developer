@@ -3,7 +3,7 @@ description: Learn how to evaluate runtime performance in Microsoft Edge DevTool
 title: Get Started With Analyzing Runtime Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -149,13 +149,13 @@ Another handy tool is the FPS meter, which provides real-time estimates for FPS 
        The **FPS meter**  
         :::image-end:::  
     
-1.  Disable the **FPS Meter** and select `Escape` to close the **Rendering** tab.  You are not using **FPS Meter** in this tutorial.  
+1.  Turn off the **FPS Meter** and select `Escape` to close the **Rendering** tab.  You are not using **FPS Meter** in this tutorial.  
     
 ### Find the bottleneck  
 
 After you measured and verified that the animation is not performing well, the next step is to answer the question "why?".  
 
-1.  When no events are selected, the **Summary** tab shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.  
+1.  When no events are chosen, the **Summary** tab shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="The Summary tab" lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
        The **Summary** tab  
@@ -167,7 +167,7 @@ After you measured and verified that the animation is not performing well, the n
        The **Main** section  
     :::image-end:::  
     
-1.  There is a lot of data in the recording.  To Zoom into a single event; choose, hold, and dragg your cursor over the **Overview**, which is the section that includes the **FPS**, **CPU**, and **NET** charts.  The **Main** section and **Summary** tab only display information for the selected portion of the recording.  
+1.  There is a lot of data in the recording.  To Zoom into a single event; choose, hold, and dragg your cursor over the **Overview**, which is the section that includes the **FPS**, **CPU**, and **NET** charts.  The **Main** section and **Summary** tab only display information for the chosen portion of the recording.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Zoom into an event" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
        Zoom into an event  
@@ -188,7 +188,7 @@ After you measured and verified that the animation is not performing well, the n
     :::image-end:::  
     
     > [!NOTE]
-    > After selecting an event, use the arrow keys to select the events next to it.  
+    > After choosing an event, use the arrow keys to select the events next to it.  
     
 1.  Under the **app.update** event, there is a bunch of purple events.  If each purple event was wider, it looks as though each one may have a red triangle on it.  
 1.  Choose one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** tab.  Indeed, there is a warning about forced reflows \(another word for layout\).  

@@ -3,7 +3,7 @@ description: A reference on all the ways to record and analyze performance in Mi
 title: Performance Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -155,7 +155,7 @@ To load a recording, open the contextual menu \(right-click\), and choose **Load
 
 ## Clear the previous recording  
 
-After making a recording, press **Clear recording** \(![Clear recording icon][ImageClearRecordingIcon]\) to clear that recording from the **Performance** panel.  
+After making a recording, choose **Clear recording** \(![Clear recording icon][ImageClearRecordingIcon]\) to clear that recording from the **Performance** panel.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png" alt-text="Clear recording" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png":::
    **Clear recording**  
@@ -200,10 +200,10 @@ To navigate activities that match your query:
 
 To modify query settings:  
 
-*   Press **Case sensitive** \(![Case sensitive][ImageSearchCaseIcon]\) to make the query case sensitive.  
-*   Press **Regex** \(![Regex][ImageSearchRegexIcon]\) to use a regular expression in your query.  
+*   Choose **Case sensitive** \(![Case sensitive][ImageSearchCaseIcon]\) to make the query case sensitive.  
+*   Choose **Regex** \(![Regex][ImageSearchRegexIcon]\) to use a regular expression in your query.  
 
-To hide the search box, press **Cancel**.  
+To hide the search box, choose **Cancel**.  
 
 ### View main thread activity  
 
@@ -229,7 +229,7 @@ In the previous figure, a `click` event caused a `Function Call` in `activitytab
 
 DevTools assigns scripts random colors.  In the previous figure, function requests from one script are colored light green.  Requests from another script are colored beige.  The darker yellow represents scripting activity, and the purple event represents rendering activity.  These darker yellow and purple events are consistent across all recordings.  
 
-Navigate to [Disable JavaScript samples](#disable-javascript-samples) if you want to hide the detailed flame chart of JavaScript requests.  When JS samples are disabled, only high-level events such as `Event: click` and `Function Call` from the previous figure `str` displayed.  
+Navigate to [Disable JavaScript samples](#disable-javascript-samples) if you want to hide the detailed flame chart of JavaScript requests.  When JS samples are disabled, only high-level events such as `Event: choose` and `Function Call` from the previous figure `str` displayed.  
 
 ### View activities in a table  
 
@@ -470,7 +470,7 @@ Choose the thumbnail in the **Summary** tab to zoom in on the screenshot.
 To view advanced layers information about a frame:  
 
 1.  [Turn on advanced paint instrumentation](#turn-on-advanced-paint-instrumentation).  
-1.  Select a frame in the **Frames** section.  DevTools displays information about the layers in the new **Layers** tab, next to the **Event Log** tab.  
+1.  Choose a frame in the **Frames** section.  DevTools displays information about the layers in the new **Layers** tab, next to the **Event Log** tab.  
     
     :::image type="complex" source="../media/evaluate-performance-layers-all.msft.png" alt-text="The Layers pane" lightbox="../media/evaluate-performance-layers-all.msft.png":::
        The **Layers** pane  
@@ -493,7 +493,7 @@ To move the diagram:
 To view advanced information about a paint event:  
 
 1.  [Turn on](#turn-on-advanced-paint-instrumentation).  
-1.  Select a **Paint** event in the **Main** section.  
+1.  Choose a **Paint** event in the **Main** section.  
     
     :::image type="complex" source="../media/evaluate-performance-paint-profiler.msft.png" alt-text="The Paint Profiler tab" lightbox="../media/evaluate-performance-paint-profiler.msft.png":::
        The **Paint Profiler** tab  

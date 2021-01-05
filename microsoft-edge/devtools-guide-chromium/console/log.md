@@ -3,7 +3,7 @@ description: Learn how to log messages to the Console.
 title: Get Started With Logging Messages In The Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020 
+ms.date: 01/05/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -247,7 +247,7 @@ When you want to only view the messages that came from a certain URL, use the **
     
 ### Filter by user messages  
 
-Earlier, when you choose **Log Info**, a script named `console.log('Hello, Console!')` in order to log the message to the Console.  Messages logged from JavaScript like this are named **user messages**.  In contrast, when you choose **Cause 404**, the browser logs an `Error`-level message stating that the requested resource could not be found.  Messages like that are considered **browser messages**.  Use the **Sidebar** to filter out browser messages and only show user messages.  
+Earlier, when you choose **Log Info**, a script named `console.log('Hello, Console!')` in order to log the message to the Console.  Messages logged from JavaScript like this are named **user messages**.  In contrast, when you choose **Cause 404**, the browser logs an `Error`-level message stating that the requested resource is not found.  Messages like that are considered **browser messages**.  Use the **Sidebar** to filter out browser messages and only show user messages.  
 
 1.  Choose **9 User Messages**.  The browser messages are hidden.  
     

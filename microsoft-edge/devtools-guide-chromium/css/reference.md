@@ -3,7 +3,7 @@ description: Discover new workflows for viewing and changing CSS in Microsoft Ed
 title: CSS Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -28,7 +28,7 @@ Discover new workflows in the following comprehensive reference of Microsoft Edg
 
 See [Get Started with Viewing and Changing CSS][DevToolsCSSGetStarted] to learn the basics.  
 
-## Select an element  
+## Choose an element  
 
 The **Elements** panel of DevTools lets you view or change the CSS of one element at a time.  The selected element is highlighted in the **DOM Tree**.  The styles of the element are shown in the **Styles** pane.  See [View the CSS for an element][DevToolsCSSGetStartedTutorial] for a tutorial.  
 

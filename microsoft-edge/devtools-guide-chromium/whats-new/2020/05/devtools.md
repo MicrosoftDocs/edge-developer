@@ -3,7 +3,7 @@ description: Use the DevTools in Windows high contrast mode, match keyboard shor
 title: What's new in DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/11/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -26,7 +26,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 ## Announcements from the Microsoft Edge DevTools team  
 
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team! Check them out to try new features in the DevTools, Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].  
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].  
 
 ### Use the DevTools in Windows high contrast mode
 
@@ -36,7 +36,7 @@ The Microsoft Edge DevTools are now displayed in high contrast mode when Windows
    The Microsoft Edge DevTools in high contrast mode  
 :::image-end:::  
 
-[Follow the instructions to turn on high contrast mode in Windows][MicrosoftSupportWindows10HighContrastMode].  Open the DevTools in Microsoft Edge by pressing `F12` or `Ctrl`+`Shift`+`I`.  The DevTools are displayed in high contrast mode.  
+[Follow the instructions to turn on high contrast mode in Windows][MicrosoftSupportWindows10HighContrastMode].  To open the DevTools in Microsoft Edge, select `F12` or `Ctrl`+`Shift`+`I`.  The DevTools are displayed in high contrast mode.  
 
 > [!NOTE]
 > The Microsoft Edge DevTools currently support high contrast mode on Windows but not on macOS. 
@@ -51,9 +51,9 @@ From your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team) and th
    The Microsoft Edge DevTools in high contrast mode  
 :::image-end:::  
 
-To try the experiment, open DevTools Settings by pressing `?` or selecting the ![DevTools Settings icon][ImageSettingsIcon] icon in the top-right corner of the DevTools.  Navigate to the **Experiments** section and check **Enable custom keyboard shortcuts settings tab (requires reload)**.  Now reload the DevTools, open Settings again, and navigate to the **Shortcuts** section.  
+To try the experiment, open DevTools Settings by selecting `?` or choosing the ![DevTools Settings icon][ImageSettingsIcon] icon in the top-right corner of the DevTools.  Navigate to the **Experiments** section and check **Enable custom keyboard shortcuts settings tab (requires reload)**.  Now reload the DevTools, open Settings again, and navigate to the **Shortcuts** section.  
 
-Select **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in Visual Studio Code.  
+Choose **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in Visual Studio Code.  
 
 For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VSCodeShortcuts] is `F5`.  With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8` but with the **Visual Studio Code** preset, that shortcut is now also `F5`.  
 
@@ -77,11 +77,11 @@ The `edge://inspect` page in a desktop instance of [Microsoft Edge][DesktopEdge]
    The `edge://inspect` page displays a list of the open tabs in the Microsoft Edge app running on the emulator
 :::image-end:::  
 
-Selecting **inspect** for the tab or PWA that you want to debug opens the [Microsoft Edge DevTools][DevToolsChromiumGuide].  [Follow the step-by-step guide to remotely debug your web content on the Surface Duo emulator][DevToolsRemoteDebugDuoEmulator].  
+Choose **inspect** for the tab or PWA that you want to debug to open the [Microsoft Edge DevTools][DevToolsChromiumGuide].  [Follow the step-by-step guide to remotely debug your web content on the Surface Duo emulator][DevToolsRemoteDebugDuoEmulator].  
 
 ### Resize the DevTools drawer more easily  
 
-In Microsoft Edge 83 or earlier, you were only able to resize the [DevTools Drawer][DevToolsDrawer] by hovering inside the Drawer's toolbar.  The Drawer behaved differently than the other resize controls for panes in the DevTools where you hover over the border of the pane to resize it.  Select the following image to see how resizing the Drawer worked in version 83 or earlier of Microsoft Edge.  
+In Microsoft Edge 83 or earlier, you were only able to resize the [DevTools Drawer][DevToolsDrawer] by hovering inside the toolbar of the Drawer.  The Drawer behaved differently than the other resize controls for panes in the DevTools where you hover over the border of the pane to resize it.  Choose the following image to display how resizing the Drawer worked in version 83 or earlier of Microsoft Edge.  
 
 :::image type="complex" source="../../media/2020/05/drawer-83.msft.png" alt-text="Resizing the DevTools Drawer in Microsoft Edge 83" lightbox="../../media/2020/05/drawer-83.msft.gif":::
    Resizing the DevTools Drawer in Microsoft Edge 83
@@ -89,7 +89,7 @@ In Microsoft Edge 83 or earlier, you were only able to resize the [DevTools Draw
 
 <!--todo:  create png that represents the gif information  -->  
 
-Starting with Microsoft Edge 84, you are now able to resize the Drawer by hovering over the border of the Drawer.  This change aligns the behavior resizing the DevTools Drawer with the way you resize other panes in the DevTools.  Select the following image to see resizing in action in Microsoft Edge 84.  
+Starting with Microsoft Edge 84, you are now able to resize the Drawer by hovering over the border of the Drawer.  This change aligns the behavior resizing the DevTools Drawer with the way you resize other panes in the DevTools.  Choose the following image to display resizing in action in Microsoft Edge 84.  
 
 :::image type="complex" source="../../media/2020/05/drawer-84.msft.png" alt-text="Resizing the DevTools Drawer in Microsoft Edge 84" lightbox="../../media/2020/05/drawer-84.msft.gif":::
    Resizing the DevTools Drawer in Microsoft Edge 84
@@ -103,8 +103,8 @@ Chromium issue [#1076112][CR1076112]
 
 When remote debugging an [Android device][DevToolsRemoteDebugAndroid], a [Windows 10 device][DevToolsRemoteDebugWindows], or a [Surface Duo emulator][DevToolsRemoteDebugDuoEmulator], you are able to toggle screencasting with the ![Toggle Screencast][ImageScreencastingIcon] icon in the top-left corner of the DevTools.  With screencasting enabled, you are able to navigate the tab in Microsoft Edge on the remote device from the DevTools window.  In Microsoft Edge 84, these navigation buttons are now also keyboard accessible.  
 
-:::image type="complex" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="Pressing Shift+Tab from the screencasted URL bar shows focus on the Refresh button" lightbox="../../media/2020/05/screencasting-nav.msft.png":::
-   Pressing `Shift`+`Tab` from the screencasted URL bar shows focus on the **Refresh** button
+:::image type="complex" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="Select Shift+Tab from the screencasted URL bar shows focus on the Refresh button" lightbox="../../media/2020/05/screencasting-nav.msft.png":::
+   Select `Shift`+`Tab` from the screencasted URL bar shows focus on the **Refresh** button
 :::image-end:::  
 
 Chromium issue [#1081486][CR1081486]  
@@ -179,7 +179,7 @@ The new **Experience** section of the **Performance** panel helps you detect lay
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->  
 <!--todo:  add link layout shifts (WebdevCls) when section is live  -->  
 
-Select the **Layout Shift** event to see the details of the layout shift in the **Summary** pane.  Hover over the **Moved from** and **Moved to** fields to visualize where the layout shift occurred.  
+Choose the **Layout Shift** event to see the details of the layout shift in the **Summary** pane.  Hover over the **Moved from** and **Moved to** fields to visualize where the layout shift occurred.  
 
 :::image type="complex" source="../../media/2020/05/cls.msft.png" alt-text="The details of a layout shift" lightbox="../../media/2020/05/cls.msft.png":::
    The details of a layout shift  

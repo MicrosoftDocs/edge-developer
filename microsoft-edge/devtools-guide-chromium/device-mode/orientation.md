@@ -3,7 +3,7 @@ description: Open the Sensors tab and go to the Orientation section.
 title: Simulate Device Orientation With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -39,8 +39,8 @@ Complete the following actions to simulate different device orientations from Mi
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="Select Portrait upside down from the Orientation list" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
-             Select `Portrait upside down` from the **Orientation** list  
+          :::image type="complex" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="Choose Portrait upside down from the Orientation list" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
+             Choose `Portrait upside down` from the **Orientation** list  
           :::image-end:::  
        :::column-end:::
        :::column span="":::

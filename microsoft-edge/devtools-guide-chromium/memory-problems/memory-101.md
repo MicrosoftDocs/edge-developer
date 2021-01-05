@@ -3,7 +3,7 @@ description: This section describes common terms used in memory analysis, and is
 title: Memory Terminology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 01/05/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -30,7 +30,7 @@ The terms and notions described here refer to the [Memory panel][DevtoolsMemoryP
 
 ## Object sizes  
 
-Think of memory as a graph with primitive types \(like numbers and strings\) and objects \(associative arrays\).  It might visually be represented as a graph with a number of interconnected points as follows:  
+Think of memory as a graph with primitive types \(like numbers and strings\) and objects \(associative arrays\).  It may display as a graph with a number of interconnected points such as following figure.  
 
 :::image type="complex" source="../media/memory-problems-thinkgraph.msft.png" alt-text="Visual representation of memory" lightbox="../media/memory-problems-thinkgraph.msft.png":::
    Visual representation of memory  
@@ -144,7 +144,7 @@ Memory for new JavaScript objects is allocated from a dedicated JavaScript heap 
 
 Anything not in the JavaScript heap is called a **native object**.  Native objects, in contrast to heap objects, are not managed by the V8 garbage collector throughout their lifetime, and may only be accessed from JavaScript using the JavaScript wrapper object.  
 
-**Cons string** is an object that consists of pairs of strings stored and then joined, and is a result of concatenation.  The joining of the **cons string** contents occurs only as needed. An example would be when a substring of a joined string needs to be constructed.
+**Cons string** is an object that consists of pairs of strings stored and then joined, and is a result of concatenation.  The joining of the **cons string** contents occurs only as needed.  For example, when a substring of a joined string needs to be constructed.
 
 For example, if you concatenate `a` and `b`, you get a string `(a, b)` which represents the result of concatenation.  If you later concatenated `d` with that result, you get another **cons string**: `((a, b, d)`.  
 

@@ -3,7 +3,7 @@ description: Your job does not end with ensuring your site runs great across Mic
 title: Emulate and Test Other Browsers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -61,7 +61,7 @@ Device simulators and emulators simulate not just the browser environment but th
 At the moment, there is no way to install Microsoft Edge on an Android emulator.  However, you may use the Android Browser, the Chromium Content Shell, and Firefox for Android which we review later in this guide.  Chromium Content Shell runs the same Chromium rendering engine as Microsoft Edge, but comes without any of the browser specific features.  
 
 The Android emulator comes with the Android SDK which you need to download as part of [Android Studio][AndroidStudioDownload].  Then follow the instructions to [set up a virtual device][AndroidStudioCreateManageVirtualDevices] and [start the emulator][AndroidStudioRunAppsAndroidEmulator].  
-Once your emulator is booted, click on the Browser icon, and test your site on the old Stock Browser for Android.  
+Once your emulator is booted, choose on the Browser icon, and test your site on the old Stock Browser for Android.  
 
 #### Chromium content shell on Android  
 
@@ -106,7 +106,7 @@ The iOS simulator for Mac OS X comes with Xcode, which you [install from the App
 When you are done, learn how to work with the simulator through [Apple Developer documentation][AppleSimulatorHelp].  
 
 > [!NOTE]
-> To avoid having to open Xcode every time you want to use the iOS Simulator, open it, then right-click the iOS Simulator icon in your dock and choose **Keep in Dock**.  Now just click this icon whenever you need it.  
+> To avoid having to open Xcode every time you want to use the iOS Simulator, open it, hover on the iOS Simulator icon in your dock, open the contextual menu \(right-click\), and choose **Keep in Dock**.  Now just choose the icon whenever you need it.  
 
 ###  Microsoft Edge (EdgeHTML)  
 

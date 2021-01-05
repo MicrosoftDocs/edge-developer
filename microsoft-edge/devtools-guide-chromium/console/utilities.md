@@ -3,7 +3,7 @@ description: A reference of convenience commands available in the Microsoft Edge
 title: Console Utilities API Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -51,7 +51,7 @@ In the following figure, the evaluated expression initially contains an array of
    Figure 2:  `$_` changes when new commands are evaluated  
 :::image-end:::  
 
-## Recently Selected Element Or JavaScript Object  
+## Recently Chosen Element Or JavaScript Object  
 
 ```console
 $0
@@ -142,7 +142,7 @@ In the following figure, the first `img` element is found after the `title--imag
 $$(selector, [startNode])
 ```  
 
-Returns an array of elements that match the specified CSS selector.  This method is equivalent to calling the [document.querySelectorAll()][MDNDocumentQuerySelectorAll] method.  
+Returns an array of elements that match the specified CSS selector.  This method is equivalent to running the [document.querySelectorAll()][MDNDocumentQuerySelectorAll] method.  
 
 In the following code sample and figure, use `$$()` to create an array of all `<img>` elements in the current document and display the value of the `src` property for each element.  
 

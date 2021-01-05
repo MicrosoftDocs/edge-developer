@@ -3,7 +3,7 @@ description: Users expects interactive and smooth pages.  Each stage in the pixe
 title: Analyze Runtime Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,7 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Analyze runtime performance 
+# Analyze runtime performance  
 
 Users expects interactive and smooth pages.  Each stage in the pixel pipeline represents an opportunity to introduce jank.  Learn about tools and strategies to identify and fix common problems that slow down runtime performance.  
 
@@ -76,7 +76,7 @@ Take a recording in the **Performance** panel.  Check the recording for large `R
 
 <!--todo: add Recording section when available  -->  
 
-Click on a `Recalculate Style` event to view more information about it in the **Details** pane.  If the style changes are taking a long time, that is a performance hit.  If the style calculations are affecting a large number of elements, that is another area with room for improvement.  
+Choose a `Recalculate Style` event to view more information about it in the **Details** pane.  If the style changes are taking a long time, that is a performance hit.  If the style calculations are affecting a large number of elements, that is another area with room for improvement.  
 
 :::image type="complex" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="Long recalculate style" lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
    Long recalculate style  

@@ -3,7 +3,7 @@ description: Use the Media Panel to view information and debug the media players
 title: View and debug media players information
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -31,7 +31,7 @@ The **Media** panel is the main place in DevTools for inspecting the media playe
     [Maximizing productivity with the Edge Developer Tools][BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]  
     
 1.  Under the **Players** menu, a media player is displayed.  
-1.  Select the player.  The **Properties** tab displays the properties of the media player.  
+1.  Choose the player.  The **Properties** tab displays the properties of the media player.  
     
     :::image type="complex" source="../media/media-panel-view.msft.png" alt-text="Media properties" lightbox="../media/media-panel-view.msft.png":::
        Media properties  

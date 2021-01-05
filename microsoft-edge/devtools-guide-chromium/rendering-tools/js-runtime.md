@@ -3,7 +3,7 @@ description: Identify expensive functions using the Microsoft Edge DevTools Memo
 title: Speed Up JavaScript Runtime
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -40,10 +40,10 @@ Identify expensive functions using the **Memory** panel.
 If you notice jank in your JavaScript, collect a Sampling Profile.  Sampling Profiles show where running time is spent on functions in your page.  
 
 1.  Go to the **Memory** panel of DevTools.  
-1.  Select the **Allocation sampling** radio button.  
+1.  Choose the **Allocation sampling** radio button.  
 1.  Choose **Start**.  
-1.  Depending on what you are trying to analyze, you may either reload the page, interact with the page, or just let the page run.  
-1.  Select the **Stop** button when you are finished.  
+1.  Depending on what you are trying to analyze, you may either refresh the page, interact with the page, or just let the page run.  
+1.  Choose the **Stop** button when you are finished.  
     
 > [!NOTE]
 > You may also use the [Console Utilities API][DevtoolsConsoleUtilities] to record and group profiles from the command line.  
@@ -80,7 +80,7 @@ To change the sorting order, select the dropdown menu next to the **focus select
 
 To exclude a function from your Sampling Profile, select it and then select the **exclude selected function** \(![exclude selected function][ImageExcludeIcon]\) button.  The requesting function \(parent\) of the excluded function \(child\) is charged with the allocated memory assigned to the excluded function \(child\).  
 
-Select the **restore all functions** \(![restore all functions][ImageRestoreIcon]\) button to restore all excluded functions back into the recording.  
+Choose the **restore all functions** \(![restore all functions][ImageRestoreIcon]\) button to restore all excluded functions back into the recording.  
 
 ## View Sampling Profile as Chart  
 
@@ -109,7 +109,7 @@ A tall call stack is not necessarily significant, it just means that a lot of fu
 
 ### Zoom in on specific parts of recording  
 
-Select, hold, and drag your mouse left and right across the overview to zoom in on particular parts of the call stack.  After you zoom, the call stack automatically displays the portion of the recording that you selected.  
+Choose, hold, and drag your mouse left and right across the overview to zoom in on particular parts of the call stack.  After you zoom, the call stack automatically displays the portion of the recording that you selected.  
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png" alt-text="Chart zoomed" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png":::
    Chart zoomed  
@@ -117,7 +117,7 @@ Select, hold, and drag your mouse left and right across the overview to zoom in 
 
 ### View function details  
 
-Select on a function to view the definition in the **Sources** panel.  
+Choose a function to view the definition in the **Sources** panel.  
 
 Hover over a function to display the name and timing data.  The following information is provided.  
 

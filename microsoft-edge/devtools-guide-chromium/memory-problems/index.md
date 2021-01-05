@@ -3,7 +3,7 @@ description: Learn how to use Microsoft Edge and DevTools to find memory issues 
 title: Fix Memory Problems
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -87,7 +87,7 @@ You may also use the Performance panel as another starting point in your investi
 1.  [Make a recording][DevtoolsEvaluatePerformanceReferenceRecord].  
 
 > [!TIP]
-> It is a good practice to start and end your recording with a forced garbage collection.  Select the **collect garbage** ![force garbage collection][ImageForceGarbageCollectionIcon] button while recording to force garbage collection.  
+> It is a good practice to start and end your recording with a forced garbage collection.  To force garbage collection, choose the **collect garbage** ![force garbage collection][ImageForceGarbageCollectionIcon] button while recording.  
 
 To demonstrate memory recordings, consider the code below:  
 
@@ -102,7 +102,7 @@ function grow() {
 document.getElementById('grow').addEventListener('click', grow);
 ```  
 
-Every time that the button referenced in the code is pressed, ten thousand `div` nodes are appended to the document body, and a string of one million `x` characters is pushed onto the `x` array.  Running the previous code sample produces a recording in the **Performance** panel like the following figure.  
+Every time that the button referenced in the code is chosen, ten thousand `div` nodes are appended to the document body, and a string of one million `x` characters is pushed onto the `x` array.  Running the previous code sample produces a recording in the **Performance** panel like the following figure.  
 
 :::image type="complex" source="../media/memory-problems-glitch-example-1-performance-memory.msft.png" alt-text="Simple growth" lightbox="../media/memory-problems-glitch-example-1-performance-memory.msft.png":::
    Figure 3:  Simple growth  
@@ -110,7 +110,7 @@ Every time that the button referenced in the code is pressed, ten thousand `div`
 
 First, an explanation of the user interface.  The **HEAP** graph in the **Overview** pane \(below **NET**\) represents the JS heap.  Below the **Overview** pane is the **Counter** pane.  Here you are able to see memory usage broken down by JS heap \(same as **HEAP** graph in the **Overview** pane\), documents, DOM nodes, listeners, and GPU memory.  Disabling a checkbox hides it from the graph.  
 
-Now, an analysis of the code compared with the previous figure.  If you look at the node counter \(the green graph\) you are able to see that it matches up cleanly with the code.  The node count increases in discrete steps.  You may presume that each increase in the node count is a call to `grow()`.  The JS heap graph \(the blue graph\) is not as straightforward.  In keeping with best practices, the first dip is actually a forced garbage collection \(achieved by pressing the  **collect garbage** ![force garbage collection][ImageForceGarbageCollectionIcon] button\).  As the recording progresses you are able to see that the JS heap size spikes.  This is natural and expected:  the JavaScript code is creating the DOM nodes on every button press and doing a lot of work when it creates the string of one million characters.  The key thing here is the fact that the JS heap ends higher than it began \(the "beginning" here being the point after the forced garbage collection\).  In the real world, if you saw this pattern of increasing JS heap size or node size, it may potentially define a memory leak.  
+Now, an analysis of the code compared with the previous figure.  If you look at the node counter \(the green graph\) you are able to see that it matches up cleanly with the code.  The node count increases in discrete steps.  You may presume that each increase in the node count is a call to `grow()`.  The JS heap graph \(the blue graph\) is not as straightforward.  In keeping with best practices, the first dip is actually a forced garbage collection \(choose the  **collect garbage** ![force garbage collection][ImageForceGarbageCollectionIcon] button\).  As the recording progresses you are able to see that the JS heap size spikes.  This is natural and expected:  the JavaScript code is creating the DOM nodes on every button you choose and doing a lot of work when it creates the string of one million characters.  The key thing here is the fact that the JS heap ends higher than it began \(the "beginning" here being the point after the forced garbage collection\).  In the real world, if you saw this pattern of increasing JS heap size or node size, it may potentially define a memory leak.  
 
 <!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->  
 
@@ -134,11 +134,11 @@ function create() {
 document.getElementById('create').addEventListener('click', create);
 ```  
 
-Selecting the button referenced in the code creates a `ul` node with ten `li` children.  The nodes are referenced by the code but do not exist in the DOM tree, so each is detached.  
+Choosing the button referenced in the code creates a `ul` node with ten `li` children.  The nodes are referenced by the code but do not exist in the DOM tree, so each is detached.  
 
 Heap snapshots are one way to identify detached nodes.  As the name implies, heap snapshots show you how memory is distributed among the JS objects and DOM nodes for your page at the point of time of the snapshot.  
 
-To create a snapshot, open DevTools and go to the **Memory** panel, select the **Heap snapshot** radio button, and then press the **Take snapshot** button.  
+To create a snapshot, open DevTools and go to the **Memory** panel, choose the **Heap snapshot** radio button > **Take snapshot** button.  
 
 :::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png" alt-text="Take heap snapshot" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png":::
    Figure 4:  Take heap snapshot  
@@ -160,7 +160,7 @@ Expand the carats to investigate a detached tree.
 
 <!--Nodes highlighted yellow have direct references to them from the JavaScript code.  Nodes highlighted red do not have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node is not alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.  -->
 
-Select a node to investigate it further.  In the **Objects** pane you are able to see more information about the code that is referencing it.  For example, in the following figure you are able to see that the `detachedNodes` variable is referencing the node.  To fix this particular memory leak, you should study the code that uses the `detachedUNode` variable and ensure that the reference to the node is removed when it is no longer needed.  
+Choose a node to investigate it further.  In the **Objects** pane, you may review more information about the code that is referencing it.  For example, in the following figure you are able to see that the `detachedNodes` variable is referencing the node.  To fix this particular memory leak, you should study the code that uses the `detachedUNode` variable and ensure that the reference to the node is removed when it is no longer needed.  
 
 :::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png" alt-text="Investigating a node" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png":::
    Figure 7:  Investigating a node  
@@ -184,7 +184,7 @@ document.getElementById('grow').addEventListener('click', grow);
 
 Every time that the button referenced in the code is pushed, a string of one million characters is added to the `x` array.  
 
-To record an Allocation instrumentation on timeline, open DevTools, go to the **Memory** panel, select the **Allocation instrumentation on timeline** radio button, press the **Start** button, perform the action that you suspect is causing the memory leak, and then press the **Stop recording heap profile** ![stop recording][ImageStopRecordingIcon] button when you are done.  
+To record an Allocation instrumentation on timeline, open DevTools, go to the **Memory** panel, choose the **Allocation instrumentation on timeline** radio button, choose the **Start** button, perform the action that you suspect is causing the memory leak, and then choose the **Stop recording heap profile** ![stop recording][ImageStopRecordingIcon] button when you are done.  
 
 As you are recording, notice if any blue bars show up on the Allocation instrumentation on timeline, like in the following figure.  
 
@@ -212,10 +212,10 @@ Use the **Allocation sampling** profiling type to view memory allocation by Java
    Figure 11:  Record Allocation sampling  
 :::image-end:::  
 
-1.  Select the **Allocation sampling** radio button.  If there is a worker on the page, you are able to select that as the profiling target using the dropdown menu next to the **Start** button.  
-1.  Press the **Start** button.  
-1.  Perform the actions on the page which you want to investigate.  
-1.  Press the **Stop** button when you have finished all of your actions.  
+1.  Choose the **Allocation sampling** radio button.  If there is a worker on the page, you are able to select that as the profiling target using the dropdown menu next to the **Start** button.  
+1.  Choose the **Start** button.  
+1.  Complete the actions on the webpage which you want to investigate.  
+1.  Choose the **Stop** button when you have finished all of your actions.  
 
 DevTools shows you a breakdown of memory allocation by function.  The default view is **Heavy (Bottom Up)**, which displays the functions that allocated the most memory at the top.  
 

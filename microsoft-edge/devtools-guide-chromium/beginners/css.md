@@ -3,7 +3,7 @@ description: Get Started with CSS
 title: "DevTools for beginners: Get started with CSS"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web developement, f12 tools, devtools
@@ -148,7 +148,7 @@ In a previous code snippet, an inline style applied a style to a single `<p>` ta
 </p>
 ```  
 
-What if you wanted all of the `<p>` elements on your webpage to be styled the same way?  You would have to copy and paste the code into every single `<p>` tag on your site.  That is a lot of time and effort.  And, if you needed to make an edit, you would have to change every tag again.  Complete the following actions to use an **Internal stylesheet** to write your CSS once so that it applies to multiple elements.  
+What if you wanted all of the `<p>` elements on your webpage to be styled the same way?  You have to copy and paste the code into every single `<p>` tag on your site.  That is a lot of time and effort.  And, if you needed to make an edit, you have to change every tag again.  Complete the following actions to use an **Internal stylesheet** to write your CSS once so that it applies to multiple elements.  
 
 1.  In the live tab, choose **Contact** to go to the contact page.  Notice the font of **Home** and **Contact**.  
     
@@ -382,9 +382,9 @@ In a previous step, you added the following code snippet as an internal styleshe
 ...
 ```  
 
-What if you wanted to style `index.html` the same way?  What if you had a large number of pages to which you wanted to apply your styles?  You would have to copy and paste the internal stylesheet into every single web page on your site.  Complete the following actions to add an **External stylesheet** to allow you to write your CSS once and apply it to multiple pages.  
+What if you wanted to style `index.html` the same way?  What if you had a large number of pages to which you wanted to apply your styles?  You have to copy and paste the internal stylesheet into every single web page on your site.  Complete the following actions to add an **External stylesheet** to allow you to write your CSS once and apply it to multiple pages.  
 
-1.  First, reload the live tab to remove the changes that you made in DevTools.  
+1.  First, refresh the live tab to remove the changes that you made in DevTools.  
     
     :::image type="complex" source="../media/beginners-css-external1.msft.png" alt-text=" After you refresh the page, the changes that were made in DevTools are gone" lightbox="../media/beginners-css-external1.msft.png":::
         After you refresh the page, the changes that were made in DevTools are gone  

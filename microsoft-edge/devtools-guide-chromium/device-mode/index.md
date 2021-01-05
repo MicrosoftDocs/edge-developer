@@ -3,7 +3,7 @@ description: Use virtual devices in Microsoft Edge to build mobile-first website
 title: Emulate Mobile Devices in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile
@@ -84,8 +84,8 @@ The following table describes the differences between the available device type 
 | Option | Rendering method | Cursor icon | Events triggered |  
 |:--- |:--- |:--- |:--- |  
 | Mobile | Mobile | Circle | touch |  
-| Mobile \(no touch\) | Mobile | Normal | click |  
-| Desktop | Desktop | Normal | click |  
+| Mobile \(no touch\) | Mobile | Normal | choose |  
+| Desktop | Desktop | Normal | choose |  
 | Desktop \(touch\) | Desktop | Circle | touch |  
 
 > [!NOTE]
@@ -147,7 +147,7 @@ If the mobile device option that you need is not included on the default list, y
 
 1.  Choose the **Device** list > **Edit**.  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Select Edit" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Choose Edit" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
        Choose **Edit**  
     :::image-end:::  
     

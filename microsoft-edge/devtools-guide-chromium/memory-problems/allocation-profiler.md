@@ -3,7 +3,7 @@ description: Use Allocation instrumentation on timeline to find objects that are
 title: How to Use Allocation Instrumentation on Timeline
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -65,7 +65,7 @@ The height of each bar corresponds to the size of the recently allocated objects
 :::image-end:::  
 
 <!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->  
-<!--todo: redo figure 4 with multiple click actions  -->  
+<!--todo: redo figure 4 with multiple choose actions  -->  
 
 You are able to use the sliders in the timeline above to zoom into that particular snapshot and review the objects that were recently allocated at that point:  
 
@@ -73,7 +73,7 @@ You are able to use the sliders in the timeline above to zoom into that particul
    Zoom into snapshot  
 :::image-end:::  
 
-Clicking on a specific object in the heap shows the retaining tree in the bottom portion of the heap snapshot.  Examining the retaining path to the object should give you enough information to understand why the object was not collected, and you should make the necessary code changes to remove the unnecessary reference.  
+Choosing on a specific object in the heap shows the retaining tree in the bottom portion of the heap snapshot.  Examining the retaining path to the object should give you enough information to understand why the object was not collected, and you should make the necessary code changes to remove the unnecessary reference.  
 
 ## View memory allocation by function  
 

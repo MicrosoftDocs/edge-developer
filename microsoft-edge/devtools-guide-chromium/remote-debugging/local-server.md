@@ -3,7 +3,7 @@ description: Host a site on a development machine web server, and then access th
 title: Access Local Servers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -90,7 +90,7 @@ Next, you need to configure your Android device to communicate with the proxy se
     
 1.  Choose **Modify network**.  
 1.  Choose **Advanced options**.  The proxy settings display.  
-1.  Select the **Proxy** menu and choose **Manual**.  
+1.  Choose the **Proxy** menu and choose **Manual**.  
 1.  For the **Proxy hostname** field, enter `localhost`.  
 1.  For the **Proxy port** field, enter the port number that you entered for **device port** in the previous section.  
 1.  Choose **Save**.  
