@@ -108,12 +108,12 @@ If you find a solution that is not mentioned on this page or in [DevTools Device
 <!-- The version of Microsoft Edge running on your Android device determines the version of DevTools that opens on your development machine.  
     So, if your Android device is running a very old version of Microsoft Edge, the DevTools instance may look very different than what you are used to.   -->
 
-### More actions: focus, reload, or close a tab  
+### More actions: focus, refresh, or close a tab  
 
-Choose **focus tab**, **reload**, or **close** next to the tab that you want to focus, reload, or close.  
+Choose **focus tab**, **reload**, or **close** next to the tab that you want to focus, refresh, or close.  
 
-:::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png" alt-text="The buttons for focusing, reloading, or closing a tab" lightbox="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png":::
-   Figure 4.  The buttons for focusing, reloading, or closing a tab  
+:::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png" alt-text="The buttons for focusing, refreshing, or closing a tab" lightbox="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png":::
+   Figure 4.  The buttons for focusing, refreshing, or closing a tab  
 :::image-end:::  
 
 ### Inspect elements  

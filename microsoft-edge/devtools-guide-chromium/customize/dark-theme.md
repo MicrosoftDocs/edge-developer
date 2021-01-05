@@ -32,7 +32,7 @@ You may enable dark theme in [Settings](#set-up-dark-theme-from-settings) or the
 
 ## Set up dark theme from Settings  
 
-1.  Choose **Customize And Control DevTools** \(`...`\) > **Settings**.  You may also open **Settings** by pressing `F1`.  
+1.  Choose **Customize And Control DevTools** \(`...`\) > **Settings**.  You may also open **Settings** by selecting `F1`.  
     
     :::image type="complex" source="../media/customize-options-settings.msft.png" alt-text="Open Settings" lightbox="../media/customize-options-settings.msft.png":::
        Open **Settings**  
