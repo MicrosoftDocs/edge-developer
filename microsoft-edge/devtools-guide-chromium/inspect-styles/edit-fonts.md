@@ -15,20 +15,22 @@ Typography on the web is an important part of the user experience. CSS has evolv
 CSS allows you to define fonts as font families and there are dozens of different CSS units available to define the size of text. You also have several CSS properties that affect font-size, spacing, line height and other typographic features. This can become hard to grasp which is why there is now a font editor in the styles pane. It allows you to tweak typography and see the changes live in the browser. This allows you to fine-tune your font settings without in-depth knowledge of the necessary CSS.
 
 > [!WARNING]
-> Currently this is an [experimental feature](DevtoolsExperiments) and you need to enable it for developer tools. 
-Click the cog icon top right in the developer tools and enable on the "Enable new Font Editor tool within the Styles Pane" setting. :::image type="complex" source="../media/font-editor-turn-on-experiment.msft.png" alt-text="Turning on the font editor experiment" lightbox="../media/font-editor-turn-on-experiment"::: Turning on the font editor experiment :::image-end::: Once you restart developer tools, the functionality will be available.  
+> Currently this is an experimental feature and you need to enable it for developer tools. 
+Click the cog icon top right in the developer tools and enable on the "Enable new Font Editor tool within the Styles Pane" setting. ![Turning on the font editor experiment](../media/font-editor-turn-on-experiment.msft.png)Once you restart developer tools, the functionality will be available.  
 
-Any CSS section of the styles pane that has font definitions and the inline styles section shows a font icon that allows you to open the font editor. 
+Any CSS section of the styles pane that has font definitions and the inline styles section shows a font icon that allows you to open the font editor.
 
 :::image type="complex" source="../media/font-editor-icon.msft.png" alt-text="The icon in the styles pane indicating that you can edit font settings" lightbox="../media/font-editor-icon.msft.png":::
 The icon in the styles pane indicating that you can edit font settings
 :::image-end:::  
 
-Once you click on the font icon, you get the font editor.
+Once you click on the font icon, you get the font editor. 
 
 :::image type="complex" source="../media/font-editor-open.msft.png" alt-text="The font editor open on top of the styles pane" lightbox="../media/font-editor-open.msft.png":::
 The font editor open on top of the styles pane
 :::image-end:::  
+
+All the form fields in the editor are populated by the settings in that block of CSS. In this case, there is a `line-height` definition of `160%`, which means the text field shows `160`, the unit dropdown is at `%` and the slider at the appropriate place. The sliders and text fields are synced, which means that when you change either, the other will reflect that value.
 
 The editor consists of two parts: the Font Family Selector and the CSS properties editor.
 
