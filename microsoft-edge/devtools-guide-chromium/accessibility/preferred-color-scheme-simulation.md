@@ -1,5 +1,5 @@
 ---
-Description: Force Microsoft Edge DevTools into Color Scheme Preview mode.
+description: Force Microsoft Edge DevTools into Color Scheme Preview mode.
 title: Force Microsoft Edge DevTools Into Color Scheme Preview Mode (CSS Prefers Color Scheme)
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,6 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-
 # Dark or Light Color Scheme simulation  
 
 Operating systems have a way to display any application in darker or lighter colors.  Having a web product that has a light theme in a dark mode operating system is grating and may be an accessibility issue for some users.  On the web, you may use the [prefers-color-scheme][MDNPrefersColorScheme] CSS Media Query to detect if users prefer to display your product in a darker or lighter color scheme.  Use [Microsoft Edge DevTools][DevtoolsGuideChromiumMain] to simulate a change from dark to light mode without having to change the entire operating system.  

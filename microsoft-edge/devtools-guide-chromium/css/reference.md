@@ -67,7 +67,7 @@ If the stylesheet is minified, navigate to [Make a minified file readable][DevTo
 
 The **Styles** tab shows you all of the rules that apply to an element, including declarations that have been overridden.  When you are not interested in overridden declarations, use the **Computed** tab to view only the CSS that is actually being applied to an element.  
 
-1.  [Select an element](#select-an-element).  
+1.  [Select an element](#choose-an-element).  
 1.  Navigate to the **Computed** tab in the **Elements** panel.  
 
 > [!NOTE]
@@ -127,7 +127,7 @@ To also search inherited properties in the **Computed** tab, check the **Show Al
 
 Complete the following actions to toggle a pseudo-class like `:active`, `:focus`, `:hover`, or `:visited`.  
 
-1.  [Select an element](#select-an-element).  
+1.  [Select an element](#choose-an-element).  
 1.  On the **Elements** panel, navigate to the **Styles** tab.  
 1.  Choose **:hov**.  
 1.  Check the pseudo-class that you want to enable.  
@@ -207,7 +207,7 @@ If you are debugging any styles of the element and you need to specifically test
 
 Complete the following actions to add an inline declaration.  
 
-1.  [Select an element](#select-an-element).  
+1.  [Select an element](#choose-an-element).  
 1.  In the **Styles** pane, choose between the brackets of the **element.style** section.  The cursor focuses, allowing you to enter text.  
 1.  Enter a property name and select `Enter`.  
 1.  Enter a valid value for that property and select `Enter`.  In the **DOM Tree**, verify that a `style` attribute has been added to the element.  
@@ -223,7 +223,7 @@ Complete the following actions to add an inline declaration.
 
 Complete the following actions to add a declaration to an existing style rule.  
 
-1.  [Select an element](#select-an-element).  
+1.  [Select an element](#choose-an-element).  
 1.  In the **Styles** pane, choose between the brackets of the style rule to which you want to add the declaration.  The cursor focuses, allowing you to enter text.  
 1.  Enter a property name and select `Enter`.  
 1.  Enter a valid value for that property and select `Enter`.  
@@ -255,7 +255,7 @@ Decrementing also works.  Just replace each instance of `Up` mentioned above wit
 
 Complete the following actions to add a class to an element.  
 
-1.  [Select the element](#select-an-element) in the **DOM Tree**.  
+1.  [Select the element](#choose-an-element) in the **DOM Tree**.  
 1.  Choose **.cls**.  
 1.  Enter the name of the class in the **Add New Class** text box.  
 1.  Select `Enter`.  
@@ -268,7 +268,7 @@ Complete the following actions to add a class to an element.
 
 Complete the following actions to enable or disable a class on an element.  
 
-1.  [Select the element](#select-an-element) in the **DOM Tree**.  
+1.  [Select the element](#choose-an-element) in the **DOM Tree**.  
 1.  Open the **Element Classes** pane.  Navigate to [Add a class to an element](#add-a-class-to-an-element).  Below the **Add New Class** text box are all of the classes applied to the specific element.  
 1.  Toggle the checkbox next to the class that you want to turn on or off.  
 
@@ -276,7 +276,7 @@ Complete the following actions to enable or disable a class on an element.
 
 Complete the following actions to add a new style rule.  
 
-1.  [Select an element](#select-an-element).  
+1.  [Select an element](#choose-an-element).  
 1.  Choose **New Style Rule** \(![New Style Rule][ImageNewStyleRuleIcon]\).  DevTools inserts a new rule beneath the **element.style** rule.  
 
 > [!NOTE]
@@ -337,7 +337,7 @@ Complete the following actions to reveal the **More Actions** toolbar.
 
 Complete the folllwoing actions to toggle a single declaration on \(or off\).  
 
-1.  [Select an element](#select-an-element).  
+1.  [Select an element](#choose-an-element).  
 1.  In the **Styles** pane, hover over the rule that defines the declaration.  A checkbox appears next to each declaration.  
 1.  Check \(or uncheck\) the checkbox next to the declaration.  When you uncheck a declaration, DevTools crosses it out to indicate that it is no longer active.  
 
@@ -402,7 +402,7 @@ The **Color Picker** provides a GUI for changing `color` and `background-color` 
 
 Complete the following actions to open the **Color Picker**.  
 
-1.  [Select an element](#select-an-element).  
+1.  [Select an element](#choose-an-element).  
 1.  In the **Styles** tab, find the `color`, `background-color`, or similar declaration that you want to change.  To the left of the `color`, `background-color`, or similar value, there is a small square which is a preview of the color.  
     
     > [!NOTE]

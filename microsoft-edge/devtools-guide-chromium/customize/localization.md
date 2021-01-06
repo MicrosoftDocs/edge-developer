@@ -53,7 +53,7 @@ Your Developer Tools matches your browser language by default, if it is one of t
    :::column-end:::
 :::row-end:::  
 
-:::image type="complex" source="./media/localization-jp.msft.png" alt-text="DevTools in Japanese" lightbox="./media/localization-jp.msft.png":::
+:::image type="complex" source="../media/localization-jp.msft.png" alt-text="DevTools in Japanese" lightbox="../media/localization-jp.msft.png":::
    DevTools in Japanese  
 :::image-end:::  
 
