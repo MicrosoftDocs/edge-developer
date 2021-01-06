@@ -3,7 +3,7 @@ description: Your job does not end with ensuring your site runs great across Mic
 title: Emulate and Test Other Browsers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -34,7 +34,7 @@ Your job does not end with ensuring your site runs great across Microsoft Edge a
 
 ## Browser emulators  
 
-Browser emulators are great for testing the responsiveness of a site, but each does not emulate differences in API, CSS support, and certain behaviors that you see on a mobile browser.  Test your site on browsers running on real devices to be certain everything behaves as expected.  
+Browser emulators are great for testing the responsiveness of a site, but each does not emulate differences in API, CSS support, and certain behaviors that is displayed on a mobile browser.  Test your site on browsers running on real devices to be certain everything behaves as expected.  
 
 ### Firefox Responsive Design View  
 
@@ -122,7 +122,7 @@ If you are not able to use the emulators and do not have access to real devices,
 
 *   [BrowserStack (commercial)][BrowserStack] is the easiest to use for manual testing.  You select an operating system, select your browser version and device type, select a URL to browse, and it spins up a hosted virtual machine with which you may interact.  You are able to also run multiple emulators in the same screen, enabling you to test the look and feel of your app across multiple devices at the same time.  
 *   [SauceLabs (commercial)][SauceLabs] enables you to run unit tests inside of an emulator, which may be really useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You are also able to do manual testing with your site.  
-*   [Device Anywhere (commercial)][AppExperience] does not use emulators but real devices which you are able to control remotely.  This is very useful in the event where you need to reproduce a problem on a specific device and are not able to see the bug using any of the options in the previous guides.  
+*   [Device Anywhere (commercial)][AppExperience] does not use emulators but real devices which you are able to control remotely.  This is very useful in the event where you need to reproduce a problem on a specific device and may not display the bug using any of the options in the previous guides.  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

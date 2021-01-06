@@ -3,7 +3,7 @@ description: Use virtual devices in Microsoft Edge to build mobile-first website
 title: Emulate Mobile Devices in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile
@@ -79,7 +79,7 @@ Use the **Device Type** list to simulate a mobile device or desktop device.
    The **Device Type** list  
 :::image-end:::  
 
-The following table describes the differences between the available device type options.  The Rendering method column refers to whether Microsoft Edge renders the page as a mobile or desktop viewport.  The Cursor icon column refers to what type of cursor you see when you hover on the page.  The Events triggered column refers to whether the page triggers `touch` or `click` events when you interact with the page.  
+The following table describes the differences between the available device type options.  The Rendering method column refers to whether Microsoft Edge renders the page as a mobile or desktop viewport.  The Cursor icon column refers to what type of cursor is displayed when you hover on the page.  The Events triggered column refers to whether the page triggers `touch` or `click` events when you interact with the page.  
 
 | Option | Rendering method | Cursor icon | Events triggered |  
 |:--- |:--- |:--- |:--- |  
@@ -116,7 +116,7 @@ Test your webpage in landscape orientation.
    The **Device Toolbar**  
 :::image-end:::  
 
-For more information, go to [Set orientation](#set-orientation).  
+For more information, navigate to [Set orientation](#set-orientation).  
 
 #### Show device frame  
 
@@ -126,7 +126,7 @@ Display the physical device frame around the viewport when you simulate the dime
 1.  Choose **Show device frame**.  
 
 > [!NOTE]
-> If you do not see a device frame for a particular device, it means that DevTools does not have art for that option.  
+> If a device frame for a particular device is not displayed, it means that DevTools does not have art for the option.  
 
 :::row:::
    :::column span="":::

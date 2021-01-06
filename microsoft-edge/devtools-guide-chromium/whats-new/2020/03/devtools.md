@@ -3,7 +3,7 @@ description: Emulate color vision deficiencies, Dock To Left in the Command Menu
 title: What's new in DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -34,7 +34,7 @@ The following sections are a list of announcements you may have missed from the 
 
 ### Remotely debug Microsoft Edge on Windows 10 Devices  
 
-The [Remote Tools for Microsoft Edge \(Beta\)][RemoteTools] app is now available in the [Microsoft Store][MicrosoftStore].  Using this app, which extends the [Windows Device Portal][WindowsUwpDebugTestPerfDevicePortal], you are able to connect from the instance of Microsoft Edge running on your development machine to a remote Windows 10 device, see a list of targets \(all tabs in Microsoft Edge and [PWAs][PprgressiveWebAppsChromiumIndex] open on the Windows 10 device\), and use the DevTools on your development machine against a target running on the remote Windows 10 device.  
+The [Remote Tools for Microsoft Edge \(Beta\)][RemoteTools] app is now available in the [Microsoft Store][MicrosoftStore].  Using this app, which extends the [Windows Device Portal][WindowsUwpDebugTestPerfDevicePortal], you are able to connect from the instance of Microsoft Edge running on your development machine to a remote Windows 10 device, display a list of targets \(all tabs in Microsoft Edge and [PWAs][PprgressiveWebAppsChromiumIndex] open on the Windows 10 device\), and use the DevTools on your development machine against a target running on the remote Windows 10 device.  
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/remote-tools.msft.png":::
    The [Remote Tools for Microsoft Edge (Beta)][RemoteTools] app available in the [Microsoft Store][MicrosoftStore]  
@@ -44,7 +44,7 @@ The [Remote Tools for Microsoft Edge \(Beta\)][RemoteTools] app is now available
 
 ### New ways to access Settings  
 
-There are tons of settings for the DevTools that you are able to customize to make the DevTools look, feel, and work the way you need. In Microsoft Edge 83, accessing [Settings][DevtoolsCustomizeIndexSettings] in the DevTools is now much easier. Open Settings with the gear icon next to Console alerts and the main menu.  
+There are tons of settings for the DevTools that you are able to customize to make the DevTools look, feel, and work the way you need. In Microsoft Edge 83, accessing [Settings][DevtoolsCustomizeIndexSettings] in the DevTools is now much easier.  Open Settings with the gear icon next to Console alerts and the main menu.  
 
 :::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="The gear icon opens Settings in the DevTools" lightbox="../../media/2020/03/settings.msft.png":::
    The gear icon opens **Settings** in the DevTools  
@@ -88,7 +88,7 @@ In Microsoft Edge 81 and earlier, the **Properties tab** in the [Elements panel]
    In Microsoft Edge 81 and earlier, the **Properties tab** was blank after a page refresh  
 :::image-end:::  
 
-In Microsoft Edge 83, you are now able to see the properties of the currently-selected element after a page refresh in the **Properties tab**.  
+In Microsoft Edge 83, you are now able to display the properties of the currently-selected element after a page refresh in the **Properties tab**.  
 
 :::image type="complex" source="../../media/2020/03/properties-in-82.msft.png" alt-text="In Microsoft Edge 83, the Properties tab displays the properties of the currently-selected element after a page refresh" lightbox="../../media/2020/03/properties-in-82.msft.png":::
    In Microsoft Edge 83, the **Properties tab** displays the properties of the currently-selected element after a page refresh  
@@ -98,14 +98,14 @@ Chromium issue [#1050999][CR1050999]
 
 ### Use the arrow keys to scroll in the Changes tool  
 
-The **Changes tool** tracks any changes you have made to CSS or JavaScript in the DevTools.  You are able to use the **Changes tool** to quickly see all your changes and take those back to your editor/IDE.  
+The **Changes tool** tracks any changes you have made to CSS or JavaScript in the DevTools.  You are able to use the **Changes tool** to quickly display all your changes and take those back to your editor/IDE.  
 
 To open the **Changes tool**, select `Ctrl`+`Shift`+`P` in the DevTools to open the [Command Menu][DevToolsCommandMenuIndex] and type `changes`.  choose and run the **Show Changes** command to open the **Changes tool** in the DevTools drawer.  
 
-When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to see all of your minified code.  Starting in Microsoft Edge 83, you may now scroll horizontally using the arrow keys on your keyboard.  
+When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to display all of your minified code.  Starting in Microsoft Edge 83, you may now scroll horizontally using the arrow keys on your keyboard.  
 
-:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="In Microsoft Edge 83, you may scroll horizontally with the arrow keys to see your minified code in the Changes tool" lightbox="../../media/2020/03/changes.msft.png":::
-   In Microsoft Edge 83, you may scroll horizontally with the arrow keys to see the changes you made to your minified code in the **Changes tool**  
+:::image type="complex" source="../../media/2020/03/changes.msft.png" alt-text="In Microsoft Edge 83, you may scroll horizontally with the arrow keys to display your minified code in the Changes tool" lightbox="../../media/2020/03/changes.msft.png":::
+   In Microsoft Edge 83, you may scroll horizontally with the arrow keys to display the changes you made to your minified code in the **Changes tool**  
 :::image-end:::  
 
 If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!  
@@ -158,7 +158,7 @@ Emulate locales by setting a location in **Sensors** > **Location**. [Open the *
    Emulating a locale  
 :::image-end:::  
 
-To try a demo, see [Locale-dependent code example][MathiasByensLocaleDemo].
+To try a demo, navigate to [Locale-dependent code example][MathiasByensLocaleDemo].
 
 Chromium issue [#1051822][CR1051822]
 

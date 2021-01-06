@@ -3,7 +3,7 @@ description: Accessibility improvements, using the DevTools in other languages, 
 title: What's new in DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -97,7 +97,7 @@ Many developers use other developer tools, like StackOverflow and Visual Studio 
 | Russian – русский | Spanish - español |  
 -->  
 
-Navigate to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**.  Also set the **Developer Tools experiments** flag to **Enabled**.  Restart Microsoft Edge and open the DevTools.  <!-- Select `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  The DevTools match the language you use for Microsoft Edge in `edge://settings/languages`.  
+Navigate to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**.  Also set the **Developer Tools experiments** flag to **Enabled**.  Restart Microsoft Edge and open the DevTools.  <!-- Select `F1` in the DevTools or navigate to Settings > Experiments and check the **Match browser language** checkbox.  -->  The DevTools match the language you use for Microsoft Edge in `edge://settings/languages`.  
 
 :::image type="complex" source="../../images/2019/12/localized-devtools.msft.png" alt-text="The DevTools in German" lightbox="../../images/2019/12/localized-devtools.msft.png":::
    The DevTools in German  
@@ -234,14 +234,14 @@ You are now able to view the initiators and dependencies of a network request as
    A Request Initiator Chain in the **Initiator** tab  
 :::image-end:::  
 
-After [logging network activity in the Network panel][DevToolsNetworkIndex], choose a resource and then go to the **Initiator** tab to view the **Request Initiator Chain**:  
+After [logging network activity in the Network panel][DevToolsNetworkIndex], choose a resource and then navigate to the **Initiator** tab to view the **Request Initiator Chain**:  
 
 *   The **inspected resource** is bold.  In the screenshot above, `ai.2.min.js` is the inspected resource.  
 *   The resources above the inspected resource are the **initiators**.  In the screenshot above, `https://www.microsoftedgeinsider.com` is the initiator of `ai.2.min.js`.  In other words, `https://www.microsoftedgeinsider.com` caused the network request for `ai.2.min.js`.  
 *   The resources below the inspected resource are the **dependencies**.  In the screenshot above, `https://dc.services.visualstudio.com/v2/track` is a dependency of `ai.2.min.js`.  In other words, `ai.2.min.js` caused the network request for `https://dc.services.visualstudio.com/v2/track`.  
 
 > [!NOTE]
-> Initiator and dependency information may also be accessed by holding `Shift` and then hovering over network resources.  See [View initiators and dependencies][DevToolsNetworkReferenceViewInitiatorsDependencies].  
+> Initiator and dependency information may also be accessed by holding `Shift` and then hovering over network resources.  Navigate to [View initiators and dependencies][DevToolsNetworkReferenceViewInitiatorsDependencies].  
 
 Chromium issue [#842488][CR842488]  
 
@@ -257,7 +257,7 @@ Chromium issue [#988253][CR988253]
 
 #### URL and path columns in the Network panel  
 
-Use the new **Path** and **URL** columns in the **Network** panel to see the absolute path or full URL of each network resource.  
+Use the new **Path** and **URL** columns in the **Network** panel to display the absolute path or full URL of each network resource.  
 
 :::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text="The new Path and URL columns in the Network panel" lightbox="../../images/2019/12/columns.msft.png":::
    The new Path and URL columns in the **Network** panel  
@@ -288,7 +288,7 @@ Chromium issue [#1029031][CR1029031]
 
 #### New configuration UI  
 
-The configuration UI has a new, responsive design, and the throttling configuration options have been simplified.  See [Audits Panel Throttling][GitHubGoogleChromeDevToolsAuditsPanelThrottling] for more information on the throttling UI changes.  
+The configuration UI has a new, responsive design, and the throttling configuration options have been simplified.  For more information on the throttling UI changes, navigate to [Audits Panel Throttling][GitHubGoogleChromeDevToolsAuditsPanelThrottling].  
 
 :::image type="complex" source="../../images/2019/12/start.msft.png" alt-text="The new configuration UI" lightbox="../../images/2019/12/start.msft.png":::
    The new configuration UI  
@@ -301,7 +301,7 @@ The configuration UI has a new, responsive design, and the throttling configurat
 The [Coverage tab][DevToolsCoverageIndex] has a new dropdown menu that lets you specify whether code coverage data should be collected **per function** or **per block**.  **Per block** coverage is more detailed but also far more expensive to collect.  DevTools uses **per function** coverage by default now.  
 
 > [!CAUTION]
-> You may see large code coverage differences in HTML files depending on whether you use **per function** or **per block** mode.  When using **per function** mode, inline scripts in HTML files are treated as functions.  If the script runs at all then DevTools marks the entire script as used code.  Only if the script does not run at all does DevTools mark the script as unused code.  
+> You may notice large code coverage differences in HTML files depending on whether you use **per function** or **per block** mode.  When using **per function** mode, inline scripts in HTML files are treated as functions.  If the script runs at all then DevTools marks the entire script as used code.  Only if the script does not run at all does DevTools mark the script as unused code.  
 
 :::image type="complex" source="../../images/2019/12/modes.msft.png" alt-text="The coverage mode dropdown menu" lightbox="../../images/2019/12/modes.msft.png":::
    The coverage mode dropdown menu  

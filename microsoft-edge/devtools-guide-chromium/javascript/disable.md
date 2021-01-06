@@ -3,7 +3,7 @@ description: Open the Command Menu and run the "Disable JavaScript" command.
 title: Disable JavaScript With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -24,7 +24,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Disable JavaScript With Microsoft Edge DevTools  
 
-Complete the following actions to see how a web page looks and behaves when JavaScript is disabled.  
+Complete the following actions to display how a webpage looks and behaves when JavaScript is disabled.  
 
 1.  [Open Microsoft Edge DevTools][DevToolsOpen].  
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
@@ -47,7 +47,7 @@ Complete the following actions to see how a web page looks and behaves when Java
     
 JavaScript remains disabled in the tab for as long as you have DevTools open.  
 
-You may want to refresh the page to see if and how the page depends on JavaScript while loading.  
+You may want to refresh the page to review if and how the webpage depends on JavaScript while loading.  
 
 To re-enable JavaScript, complete the following actions.  
 

@@ -3,7 +3,7 @@ description: 3D View, Visual Studio integration with Microsoft Edge, and more.
 title: What's new in DevTools (Microsoft Edge 81)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -237,7 +237,7 @@ Chromium issue [#1026879][CR1026879]
 
 #### Edit all cookie values  
 
-All cells in the Cookie tables are editable now, except cells in the **Size** column because that column represents the network size of the cookie, in bytes.  See [Fields][CookiesFields] for an explanation of each column.  
+All cells in the Cookie tables are editable now, except cells in the **Size** column because that column represents the network size of the cookie, in bytes.  For an explanation of each column, navigate to [Fields][CookiesFields].  
 
 :::image type="complex" source="../../images/2020/01/editcookie.msft.png" alt-text="Editing a cookie value" lightbox="../../images/2020/01/editcookie.msft.png":::
    Editing a cookie value  
@@ -263,17 +263,17 @@ Previously, the Manifest pane in the Application panel sent its own requests in 
 
 Chromium issue [#985402][CR985402]  
 
-### Hover over CSS content properties to see unescaped values  
+### Hover on CSS content properties to display unescaped values  
 
-Hover over the value of a `content` property to see the unescaped version of the value.  
+Hover on the value of a `content` property to display the unescaped version of the value.  
 
-For example, in this [demo][CSSContentDemo] when you inspect the `p::after` pseudo-element you see an escaped string in the Styles pane:  
+For example, in this [demo][CSSContentDemo] when you inspect the `p::after` pseudo-element an escaped string is displayed in the **Styles** pane:  
 
 :::image type="complex" source="../../images/2020/01/escapedstring.msft.png" alt-text="The escaped string" lightbox="../../images/2020/01/escapedstring.msft.png":::
    The escaped string  
 :::image-end:::  
 
-When you hover over the `content` value you see the unescaped value:  
+When you hover on the `content` value, the unescaped value is displayed.  
 
 :::image type="complex" source="../../images/2020/01/unescapedstring.msft.png" alt-text="The unescaped value" lightbox="../../images/2020/01/unescapedstring.msft.png":::
    The unescaped value  

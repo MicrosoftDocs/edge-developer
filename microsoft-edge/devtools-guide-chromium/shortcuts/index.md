@@ -3,7 +3,7 @@ description: The canonical documentation for Microsoft Edge DevTools keyboard sh
 title: Microsoft Edge DevTools Keyboard Shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -85,7 +85,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 | Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
-| Go to the line where a property value is declared | Hold `Control`, then select the property value | Hold `Command`, then select the property value |  
+| Navigate to the line where a property value is declared | Hold `Control`, then select the property value | Hold `Command`, then select the property value |  
 | Cycle through the RBGA, HSLA, and Hex representations of a color value | Hold `Shift`, then choose the **Color Preview** box next to the value | Hold `Shift`, then choose the **Color Preview** box next to the value |  
 | Select the next / previous property or value | Choose a property name or value, then select `Tab` / `Shift`+`Tab` | Choose a property name or value, then select `Tab` / `Shift`+`Tab` |  
 | Increment / decrement a property value by 0.1 | Choose a value, then select `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | Choose a value, then select `Option`+`Up Arrow` / Option+Down Arrow |  
@@ -105,10 +105,10 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Select the call frame below / above the currently selected frame | `Control`+`.` / `Control`+`,` | `Control`+`.` / `Control`+`,` |  
 | Save changes to local modifications | `Control`+`S` | `Command`+`S` |  
 | Save all changes | `Control`+`Alt`+`S` | `Command`+`Option`+`S` |  
-| Go to line | `Control`+`G` | `Control`+`G` |  
+| Navigate to line | `Control`+`G` | `Control`+`G` |  
 | Jump to a line number of the currently open file | Select `Control`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:` followed by the line number, then select `Enter` | Select `Command`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:` followed by the line number, then select `Enter` |  
 | Jump to a column of the currently open file \(for example line 5, column 9\) | Select `Control`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:`, then the line number, then another `:`, then the column number, then select `Enter` | Select `Command`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:`, then the line number, then another `:`, then the column number, then select `Enter` |  
-| Go to a function declaration, if the current file is HTML or a script.  <br />  Go to a rule set, if the current file is a stylesheet.  | Select `Control`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options | Select `Command`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options |  
+| Navigate to a function declaration, if the current file is HTML or a script.  <br />  Navigate to a rule set, if the current file is a stylesheet.  | Select `Control`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options | Select `Command`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options |  
 | Close the active tab | `Alt`+`W` | `Option`+`W` |  
 
 ### Code Editor keyboard shortcuts  
@@ -117,7 +117,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 |:--- |:--- |:--- |  
 | Delete all characters in the last word, up to the cursor | `Control`+`Delete` | `Option`+`Delete` |  
 | Add or remove a [line-of-code breakpoint][DevtoolsJavascriptBreakpointsLOC] | Focus your cursor on the line, then select `Control`+`B` | Focus your cursor on the line, then select `Command`+`B` |  
-| Go to matching bracket | `Control`+`M` | `Control`+`M` |  
+| Navigate to matching bracket | `Control`+`M` | `Control`+`M` |  
 | Toggle single-line comment.  If multiple lines are selected, DevTools add a comment to the start of each line | `Control`+`/` | `Command`+`/` |  
 | Turn on or off the next occurrence of whatever word the cursor is on.  Each occurrence is highlighted simultaneously | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |  
 

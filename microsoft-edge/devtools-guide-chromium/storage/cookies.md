@@ -3,7 +3,7 @@ description: Learn how to view, edit, and delete the HTTP cookies for a page usi
 title: View, Edit, And Delete Cookies With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -24,7 +24,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # View, edit, and delete cookies with Microsoft Edge DevTools  
 
-[HTTP Cookies][MDNHTTPCookies] are mainly used to manage user sessions, store user personalization preferences, and track user behavior.  Cookies are also the cause of all of the annoying "this page uses cookies" consent forms that you see across the web.  The following guide teaches you how to view, edit, and delete the HTTP cookies for a page with [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
+[HTTP Cookies][MDNHTTPCookies] are mainly used to manage user sessions, store user personalization preferences, and track user behavior.  Cookies are also the cause of all of the annoying **this page uses cookies** consent forms that are found across the web.  The following guide teaches you how to view, edit, and delete the HTTP cookies for a webpage with [Microsoft Edge DevTools][MicrosoftEdgeDevTools].  
 
 ## Open the Cookies pane  
 
@@ -47,12 +47,12 @@ The **Cookies** table contains the following fields.
 
 *   **Name**.  The name of the cookie.  
 *   **Value**.  The value of the cookie.  
-*   **Domain**.  The hosts that are allowed to receive the cookie.  See [Scope of cookies][MDNHTTPCookiesScope].  
-*   **Path**.  The URL that must exist in the requested URL in order to send the `Cookie` header.  See [Scope of cookies][MDNHTTPCookiesScope].  
-*   **Expires / Max-Age**.  The expiration date or maximum age of the cookie.  See [Permanent cookies][MDNHTTPCookiesPermanent].  For [session cookies][MDNHTTPCookiesSession] this value is always `Session`.  
+*   **Domain**.  The hosts that are allowed to receive the cookie.  Navigate to [Scope of cookies][MDNHTTPCookiesScope].  
+*   **Path**.  The URL that must exist in the requested URL in order to send the `Cookie` header.  Navigate to [Scope of cookies][MDNHTTPCookiesScope].  
+*   **Expires / Max-Age**.  The expiration date or maximum age of the cookie.  Navigate to [Permanent cookies][MDNHTTPCookiesPermanent].  For [session cookies][MDNHTTPCookiesSession] this value is always `Session`.  
 *   **Size**.  The size, in bytes, of the cookie.  
-*   **HTTP**.  If true, this field indicates that the cookie should only be used over HTTP and JavaScript modification is not allowed.  See [HttpOnly cookies][MDNHTTPCookiesSecure].  
-*   **Secure**.  If true, this field indicates that the cookie must be sent to the server only over a secure, HTTPS connection.  See [Secure cookies][MDNHTTPCookiesSecure].  
+*   **HTTP**.  If true, this field indicates that the cookie should only be used over HTTP and JavaScript modification is not allowed.  Navigate to [HttpOnly cookies][MDNHTTPCookiesSecure].  
+*   **Secure**.  If true, this field indicates that the cookie must be sent to the server only over a secure, HTTPS connection.  Navigate to [Secure cookies][MDNHTTPCookiesSecure].  
 *   **SameSite**.  Contains `strict` or `lax` if the cookie is using the experimental [Samesite][MDNHTTPCookiesSamesite] attribute.  
 *   **Priority**.  Contains `low`, `medium` \(default\), or `high` if the cookie is using the deprecated [cookie Priority][ChromiumIssue232693] attribute.
 

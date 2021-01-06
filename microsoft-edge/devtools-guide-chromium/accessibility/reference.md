@@ -3,7 +3,7 @@ description: A comprehensive reference of accessibility features in Microsoft Ed
 title: Accessibility Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -31,7 +31,7 @@ This page is a comprehensive reference of accessibility features in Microsoft Ed
     
 The purpose of this reference is to help you discover all of the tools available in DevTools that help you examine the accessibility of a page.  
 
-See [Navigating Microsoft Edge DevTools With Assistive Technology][DevtoolsAccessibilityNavigation] if you are looking for help on navigating DevTools with an assistive technology like a screen reader.  
+If you are looking for help on navigating DevTools with an assistive technology like a screen reader, navigate to [Navigating Microsoft Edge DevTools With Assistive Technology][DevtoolsAccessibilityNavigation].  
 
 ## Overview of accessibility features in Microsoft Edge DevTools  
 
@@ -42,7 +42,7 @@ When determining whether a page is accessible, you need to have 2 general questi
 1.  Are you able to navigate the page with a keyboard or [screen reader][MDNScreenReader]?  
 1.  Are the elements of the page properly marked up for screen readers?  
     
-In general, DevTools should help you fix errors related to question #2, because these errors are easy to detect in an automated fashion.  Question #1 is just as important, but unfortunately DevTools does not help you there.  The only way to find errors related to question #1 is to try using a page with a keyboard or screen reader yourself.  <!--See [How To Do An Accessibility Review][AccessibilityReview] to learn more.  -->  
+In general, DevTools should help you fix errors related to question #2, because these errors are easy to detect in an automated fashion.  Question #1 is just as important, but unfortunately DevTools does not help you there.  The only way to find errors related to question #1 is to try using a page with a keyboard or screen reader yourself.  <!--To learn more, navigate to [How To Do An Accessibility Review][AccessibilityReview].  -->  
 
 <!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
 
@@ -54,11 +54,11 @@ In general, DevTools should help you fix errors related to question #2, because 
 In general, use the Audits panel to determine if:  
 
 *   A page is properly marked up for screen readers.  
-*   The text elements on a page have sufficient contrast ratios.  See [View the contrast ratio of a text element in the Color Picker](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
+*   The text elements on a page have sufficient contrast ratios.  Navigate to [View the contrast ratio of a text element in the Color Picker](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
 
 To audit a page:  
 
-1.  Go to the URL that you want to audit.  
+1.  Navigate to the URL that you want to audit.  
 1.  In DevTools, choose the **Audits** tab.  DevTools shows you various configuration options.  
     
     :::image type="complex" source="../media/accessibility-audits-pane.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-audits-pane.msft.png":::
@@ -174,7 +174,7 @@ The Color Picker helps you verify that your text meets recommended contrast rati
        The **Contrast Ratio** section of the Color Picker shows 2 checkmarks and a value of `13.97`  
     :::image-end:::  
     
-1.  Choose the **Contrast Ratio** section to see more information.  A line appears in the visual picker at the top of the Color Picker.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color does not meet recommendations, then anything on the same side also does not meet recommendations.  
+1.  For more information, choose the **Contrast Ratio** section.  A line appears in the visual picker at the top of the Color Picker.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color does not meet recommendations, then anything on the same side also does not meet recommendations.  
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="The Contrast Ratio Line in the visual picker" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
        The **Contrast Ratio** Line in the visual picker  

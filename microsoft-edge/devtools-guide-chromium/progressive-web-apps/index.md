@@ -3,7 +3,7 @@ description: Use the Application panel to inspect, modify, and debug web app man
 title: Debug Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -140,7 +140,7 @@ The **Cache Storage** pane provides a read-only list of resources that have been
 :::image-end:::  
 
 > [!NOTE]
-> The first time you open a cache and add a resource to it, DevTools may not detect the change.  Refresh the page and you should see the cache.  
+> The first time you open a cache and add a resource to it, DevTools may not detect the change.  Refresh the page and to display the cache.  
 
 If you have two or more caches open, the caches display under the following **Cache Storage** dropdown.  
 

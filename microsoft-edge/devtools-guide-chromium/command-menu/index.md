@@ -3,7 +3,7 @@ description: A guide on how to open the Command Menu, run commands, review other
 title: Run Commands With The Microsoft Edge DevTools Command Menu
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -38,7 +38,7 @@ Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS
    Run Command  
 :::image-end:::  
 
-## See other available actions  
+## Display other available actions  
 
 If you use the workflow outlined in [Open the Command Menu](#open-the-command-menu), the Command Menu opens with a `>` character pre-pended to the Command Menu text box.  
 
@@ -46,7 +46,7 @@ If you use the workflow outlined in [Open the Command Menu](#open-the-command-me
    The command character  
 :::image-end:::  
 
-Delete the `>` character and type `?` to see other actions that are available from the Command Menu.  
+Delete the `>` character and type `?` to display other actions that are available from the Command Menu.  
 
 :::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Other available actions" lightbox="../media/command-menu-help.msft.png":::
    Other available actions  

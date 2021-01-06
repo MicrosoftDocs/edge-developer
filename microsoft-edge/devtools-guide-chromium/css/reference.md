@@ -3,7 +3,7 @@ description: Discover new workflows for viewing and changing CSS in Microsoft Ed
 title: CSS Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -26,11 +26,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.  
 
-See [Get Started with Viewing and Changing CSS][DevToolsCSSGetStarted] to learn the basics.  
+To learn the basics, navigate to [Get Started with Viewing and Changing CSS][DevToolsCSSGetStarted].  
 
 ## Choose an element  
 
-The **Elements** panel of DevTools lets you view or change the CSS of one element at a time.  The selected element is highlighted in the **DOM Tree**.  The styles of the element are shown in the **Styles** pane.  See [View the CSS for an element][DevToolsCSSGetStartedTutorial] for a tutorial.  
+The **Elements** panel of DevTools lets you view or change the CSS of one element at a time.  The selected element is highlighted in the **DOM Tree**.  The styles of the element are shown in the **Styles** pane.  For a tutorial, navigate to [View the CSS for an element][DevToolsCSSGetStartedTutorial].  
 
 > [!NOTE]
 > In the following figure, the `h1` element that is highlighted in the **DOM Tree** is the selected element.  On the right, the styles of the element are shown in the **Styles** pane.  On the left, the element is highlighted in the viewport, but only because the mouse is currently hovering over it in the **DOM Tree**.  
@@ -68,12 +68,12 @@ If the stylesheet is minified, navigate to [Make a minified file readable][DevTo
 The **Styles** tab shows you all of the rules that apply to an element, including declarations that have been overridden.  When you are not interested in overridden declarations, use the **Computed** tab to view only the CSS that is actually being applied to an element.  
 
 1.  [Select an element](#select-an-element).  
-1.  Go to the **Computed** tab in the **Elements** panel.  
+1.  Navigate to the **Computed** tab in the **Elements** panel.  
 
 > [!NOTE]
 > On a wide DevTools window, the **Computed** tab does not exist.  The contents of the **Computed** tab are shown on the **Styles** tab.  
 
-Inherited properties are opaque.  Check the **Show All** checkbox to see all inherited values.  
+Inherited properties are opaque.  To display all inherited values, select the **Show All** checkbox.  
 
 > [!NOTE]
 > In the following figure, the **Computed** tab shows the CSS properties being applied to the currently-selected `h1` element.  
@@ -84,15 +84,15 @@ Inherited properties are opaque.  Check the **Show All** checkbox to see all inh
 
 ### View CSS properties in alphabetical order  
 
-Use the **Computed** tab.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).  
+Use the **Computed** tab.  Navigate to [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).  
 
 ### View inherited CSS properties  
 
-Check the **Show All** checkbox in the **Computed** tab.  See [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).  
+Check the **Show All** checkbox in the **Computed** tab.  Navigate to [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).  
 
 ### View the box model for an element  
 
-To view [the box model][MDNBoxModel] of an element, go to the **Styles** tab.  If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the tab.  
+To view [the box model][MDNBoxModel] of an element, navigate to the **Styles** tab.  If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the tab.  
 
 Choose and edit on a value to change a value.  
 
@@ -128,7 +128,7 @@ To also search inherited properties in the **Computed** tab, check the **Show Al
 Complete the following actions to toggle a pseudo-class like `:active`, `:focus`, `:hover`, or `:visited`.  
 
 1.  [Select an element](#select-an-element).  
-1.  On the **Elements** panel, go to the **Styles** tab.  
+1.  On the **Elements** panel, navigate to the **Styles** tab.  
 1.  Choose **:hov**.  
 1.  Check the pseudo-class that you want to enable.  
 
@@ -175,7 +175,7 @@ The Coverage tab shows you what CSS a page actually uses.
        An overview of how much CSS \(and JavaScript\) is used and unused  
     :::image-end:::  
 
-1.  Choose a CSS file to see a line-by-line breakdown of what CSS it uses.  
+1.  To display a line-by-line breakdown of what CSS is used, choose a CSS file.  
     
     > [!NOTE]
     > In the following figure, lines 145 to 147 and 149 to 151 of `b66bc881.site-ltr.css` are unused, whereas lines 163 to 166 are used.  
@@ -186,7 +186,7 @@ The Coverage tab shows you what CSS a page actually uses.
     
 ### Force print preview mode  
 
-See [Force DevTools into Print Preview mode][DevToolsCssPrintPreview].  
+Navigate to [Force DevTools into Print Preview mode][DevToolsCssPrintPreview].  
 
 ## Change CSS  
 
@@ -234,7 +234,7 @@ Complete the following actions to add a declaration to an existing style rule.
 
 ### Change a declaration name or value  
 
-Choose and edit the name or value of a declaration to change it.  See [Change declaration values with keyboard shortcuts](#change-declaration-values-with-keyboard-shortcuts) for shortcuts for quickly incrementing or decrementing a value by `0.1`, `1`, `10`, or `100` units.  
+Choose and edit the name or value of a declaration to change it.  For shortcuts for quickly incrementing or decrementing a value by `0.1`, `1`, `10`, or `100` units, navigate to [Change declaration values with keyboard shortcuts](#change-declaration-values-with-keyboard-shortcuts).  
 
 :::image type="complex" source="../media/css-elements-styles-border-bottom-style-dropdown.msft.png" alt-text="Changing the value of a declaration" lightbox="../media/css-elements-styles-border-bottom-style-dropdown.msft.png":::
    Change the value of the `border-bottom-style` declaration  
@@ -269,8 +269,8 @@ Complete the following actions to add a class to an element.
 Complete the following actions to enable or disable a class on an element.  
 
 1.  [Select the element](#select-an-element) in the **DOM Tree**.  
-1.  Open the **Element Classes** pane.  See [Add a class to an element](#add-a-class-to-an-element).  Below the **Add New Class** text box are all of the classes that are being applied to the specific element.  
-1.  Toggle the checkbox next to the class that you want to enable or disable.  
+1.  Open the **Element Classes** pane.  Navigate to [Add a class to an element](#add-a-class-to-an-element).  Below the **Add New Class** text box are all of the classes applied to the specific element.  
+1.  Toggle the checkbox next to the class that you want to turn on or off.  
 
 ### Add a style rule  
 

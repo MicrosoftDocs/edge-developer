@@ -3,7 +3,7 @@ description: Get started with Remote Debugging Windows 10 devices
 title: Get Started with Remote Debugging Windows 10 Devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, remote, debugging, windows 10, windows, device portal
@@ -51,12 +51,12 @@ Launch the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44z
 
 If you are on a WiFi network, ensure the network is marked as either **Domain** or **Private**.  You may verify the state by opening the **Windows Security** app, choosing on **Firewall & network protection** and checking if your network is listed as a **Domain** network or **Private** network.  
 
-If it is listed as **Public**, go to **Settings** > **Network & Internet** > **Wi-Fi**, choose on your network and toggle the **Network profile** button to **Private**.  
+If it is listed as **Public**, navigate to **Settings** > **Network & Internet** > **Wi-Fi**, choose on your network and toggle the **Network profile** button to **Private**.  
 
 Now, open the **Settings** app.  In **Find a setting**, enter `Developer settings` and choose it.  Toggle on **Developer Mode**.  You may now turn on the **Device Portal** by setting **Turn on remote diagnostics over local area network connections** to **On**.  You may then optionally turn **Authentication** on so that the client \(debugger\) device must provide the correct credentials to connect to this device.  
 
 > [!NOTE]
-> If **Turn on remote diagnostics over local area network connections.** was previously turned on, you must turn it off and turn it on again for **Device Portal** to work with the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt].  If you do not see a **For developers** section in **Settings**, **Device Portal** may already be turned on so try restarting the Windows 10 device instead.
+> If **Turn on remote diagnostics over local area network connections.** was previously turned on, you must turn it off and turn it on again for **Device Portal** to work with the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt].  If  a **For developers** section is not displayed in **Settings**, **Device Portal** may already be turned on so try restarting the Windows 10 device instead.
 
 :::image type="complex" source="../media/remote-debugging-windows-media-host-settings.msft.png" alt-text="The Settings app with Developer Mode and Device Portal configured" lightbox="../media/remote-debugging-windows-media-host-settings.msft.png":::
    The **Settings** app with **Developer Mode** and **Device Portal** configured  
@@ -101,7 +101,7 @@ Choose **Install certificate...**, ensure that **Current User** is turned on, an
 Now, when connecting to the host \(debuggee\) machine from the client \(debugger\) machine using the `edge://inspect` page, you must use a different `connection port` value.  By default, for desktop Windows, the Device Portal uses `50080` as the `connection port` for `http`.  For `https`, the Device Portal uses `50043` so follow this pattern: https://`IP address`:`50043` on the `edge://inspect` page.  [Read more about the default ports used by Device Portal][WindowsUwpDebugTestPerfDevicePortalSetup].  
 
 > [!NOTE]
-> The default port for `http` is `50080` and the default port for `https` is `50043` but this is not always the case as Device Portal on desktop claims ports in the ephemeral range \(\>50,000\) to prevent collisions with existing port claims on the device.  To learn more, see the [Port Settings][WindowsUwpDebugTestPerfDevicePortalDesktopRegistryBasedConfigurationForDevicePortal] section for Device Portal on Windows desktop.  
+> The default port for `http` is `50080` and the default port for `https` is `50043` but this is not always the case as Device Portal on desktop claims ports in the ephemeral range \(\>50,000\) to prevent collisions with existing port claims on the device.  To learn more, navigate to the  [Port Settings][WindowsUwpDebugTestPerfDevicePortalDesktopRegistryBasedConfigurationForDevicePortal] section for Device Portal on Windows desktop.  
 
 ## Step 3: Debug content on the host from the client  
 
@@ -119,7 +119,7 @@ Determine the content you want to debug and choose **inspect**.  The Microsoft E
 
 ### Inspect elements  
 
-For example, try inspecting an element.  Go to the **Elements** panel of your DevTools instance on the client, and hover over an element to highlight it in the viewport of the host device.  
+For example, try inspecting an element.  Navigate to the **Elements** panel of your DevTools instance on the client, and hover over an element to highlight it in the viewport of the host device.  
 
 You may also tap an element on your host device screen to choose it in the **Elements** panel.  Choose **Select Element** on your DevTools instance on the client, and then tap the element on your host device screen.  
 

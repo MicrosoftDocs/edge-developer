@@ -3,7 +3,7 @@ description: A reference on all the ways to record and analyze performance in Mi
 title: Performance Analysis Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -34,7 +34,7 @@ Navigate to [Get Started With Analyzing Runtime Performance][DevtoolsEvaluatePer
 
 Record runtime performance when you want to analyze the performance of a page as it is running, as opposed to loading.  
 
-1.  Go to the page that you want to analyze.  
+1.  Navigate to the page that you want to analyze.  
 1.  Choose the **Performance** tab in DevTools.  
 1.  Choose **Record** \(![Record icon][ImageRecordIcon]\).  
     
@@ -49,7 +49,7 @@ Record runtime performance when you want to analyze the performance of a page as
 
 Record load performance when you want to analyze the performance of a page as it is loading, as opposed to running.  
 
-1.  Go to the page that you want to analyze.  
+1.  Navigate to the page that you want to analyze.  
 1.  Open the **Performance** panel of DevTools.  
 1.  Choose **Refresh page** \(![Refresh Page][ImageRefreshPageIcon]\).  DevTools records performance metrics while the page refreshes and then automatically stops the recording a couple seconds after the load finishes.  
     

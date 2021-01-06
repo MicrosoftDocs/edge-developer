@@ -3,7 +3,7 @@ description: The main uses of the Microsoft Edge DevTools Console are logging me
 title: Console Overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -26,11 +26,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
   
 
-This page explains how the Microsoft Edge DevTools Console makes it easier to develop web pages.  The Console has 2 main uses: [viewing logged messages](#viewing-logged-messages) and [running JavaScript](#running-javascript).  
+This page explains how the Microsoft Edge DevTools Console makes it easier to develop web pages.  The **Console** has 2 main uses: [viewing logged messages](#viewing-logged-messages) and [running JavaScript](#running-javascript).  
 
 ## Viewing logged messages  
 
-Web developers often log messages to the Console to make sure that their JavaScript is working as expected.  To log a message, you insert an expression like `console.log('Hello, Console!')` into your JavaScript.  When the browser runs your JavaScript and sees an expression like that, it logs the message to the Console.  
+Web developers often log messages to the Console to make sure that their JavaScript is working as expected.  To log a message, you insert an expression like `console.log('Hello, Console!')` into your JavaScript.  When the browser runs your JavaScript and processes an expression like it, the browser logs the message to the **Console**.  
 
 :::row:::
    :::column span="":::
@@ -80,7 +80,7 @@ Web developers log messages for the following 2 general reasons.
 *   Making sure that code is running in the right order.  
 *   Inspecting the values of variables at a certain moment in time.  
 
-See [Get Started With Logging Messages][DevtoolsConsoleLoggingMessages] to get hands-on experience with logging.  See the [Console API Reference][DevToolsConsoleAPI] to browse the full list of `console` methods.  The main difference between the methods is how the data being logged is displayed.  
+To get hands-on experience with logging, navigate to [Get Started With Logging Messages][DevtoolsConsoleLoggingMessages].  To browse the full list of `console` methods, navigate to the [Console API Reference][DevToolsConsoleAPI].  The main difference between the methods is how the data being logged is displayed.  
 
 ## Running JavaScript  
 

@@ -3,7 +3,7 @@ description: Learn how to use Microsoft Edge DevTools to find and fix JavaScript
 title: Get Started with Debugging JavaScript in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -86,7 +86,7 @@ function updateLabel() {
 
 The `console.log()` method may get the job done, but **breakpoints** are able to get it done faster.  A breakpoint lets you pause your code in the middle of the runtime, and examine all values at that moment in time.  Breakpoints have a few advantages over the `console.log()` method:  
 
-*   With `console.log()`, you need to manually open the source code, find the relevant code, insert the `console.log()` statements, and then refresh the page in order to see the messages in the **Console**.  With breakpoints, you may pause on the relevant code without even knowing how the code is structured.  
+*   With `console.log()`, you need to manually open the source code, find the relevant code, insert the `console.log()` statements, and then refresh the webpage in order to display the messages in the **Console**.  With breakpoints, you may pause on the relevant code without even knowing how the code is structured.  
 *   In your `console.log()` statements you need to explicitly specify each value that you want to inspect.  With breakpoints, DevTools shows you the values of all variables at that moment in time.  Sometimes there are variables affecting your code that you are not even aware of.  
 
 In short, breakpoints may help you find and fix bugs faster than the `console.log()` method.  
@@ -110,11 +110,11 @@ If you take a step back and think about how the app works, you are able to make 
     If you pause on a different line of code, choose **Resume Script Execution** \(![Resume Script Execution][ImageResumeIcon]\) until you pause on the correct line.  
     
     > [!NOTE]
-    > If you paused on a different line, you have a browser extension that registers a `click` event listener on every page that you visit.  You were paused in the `click` listener of the extension.  If you use InPrivate Mode to **browse in private**, which disables all extensions, you may see that you pause on the desired line of code every time.  
+    > If you paused on a different line, you have a browser extension that registers a `click` event listener on every page that you visit.  You were paused in the `click` listener of the extension.  If you use InPrivate Mode to **browse in private**, which disables all extensions, the code should pause on the desired line of code every time.  
 
 <!--todo: add inprivate section when available -->  
 
-**Event Listener Breakpoints** are just one of many types of breakpoints available in DevTools.  It is worth memorizing all the different types, because each type ultimately helps you debug different scenarios as quickly as possible.  <!--See [Pause Your Code With Breakpoints][JSBreakpoints] to learn when and how to use each type.  -->  
+**Event Listener Breakpoints** are just one of many types of breakpoints available in DevTools.  It is worth memorizing all the different types, because each type ultimately helps you debug different scenarios as quickly as possible.  <!--To learn more when and how to use each type, navigate to [Pause Your Code With Breakpoints][JSBreakpoints] to learn.  -->  
 
 ## Step 4: Step through the code  
 
@@ -131,7 +131,7 @@ One common cause of bugs is when a script runs in the wrong order.  Stepping thr
     
 1.  On the **Sources** panel of DevTools, choose **Step into next function call** \(![Step into next function call][ImageIntoIcon]\) to step through the runtime of the `updateLabel()` function, one line at a time.  
     
-That is the basic idea of stepping through code.  If you look at the code in `get-started.js`, you see that the bug is probably somewhere in the `updateLabel()` function.  Rather than stepping through every line of code, you may use another type of breakpoint to pause the code closer to the probable location of the bug.  
+That is the basic idea of stepping through code.  If you review the code in `get-started.js`, the bug is probably somewhere in the `updateLabel()` function.  Rather than stepping through every line of code, you may use another type of breakpoint to pause the code closer to the probable location of the bug.  
 
 ## Step 5: Set a line-of-code breakpoint  
 
@@ -143,7 +143,7 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
     label.textContent = addend1 + ' + ' + addend2 + ' = ' + sum;
     ```  
     
-1.  To the left of the code you see the line number of this particular line of code, which is **33**.  Choose **33**.  DevTools puts a red icon to the left of **33**.  This means that there is a line-of-code breakpoint on this line.  DevTools now always pauses before this line of code is run.  
+1.  To the left of the code, the line number of this particular line of code is displayed, which is **33**.  Choose **33**.  DevTools puts a red icon to the left of **33**.  This means that there is a line-of-code breakpoint on this line.  DevTools now always pauses before this line of code is run.  
 1.  Choose **Resume script execution** \(![Resume script execution][ImageResumeIcon]\).  The script continues running until it reaches line 33.  On lines 30, 31, and 32, DevTools prints out the values of `addend1`, `addend2`, and `sum` to the right of the semi-colon on each line.  
     
     :::image type="complex" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="DevTools pauses on the line-of-code breakpoint on line 32" lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
@@ -215,9 +215,9 @@ This tutorial only showed you two ways to set breakpoints.  DevTools offers many
 *   Breakpoints on caught or uncaught exceptions.  
 *   XHR breakpoints that are triggered when the requested URL matches a substring that you provide.  
     
-For more information about when and how to use each type, go to [Pause Your Code With Breakpoints][DevtoolsJavscriptBreakpoints].  
+For more information about when and how to use each type, navigate to [Pause Your Code With Breakpoints][DevtoolsJavscriptBreakpoints].  
 
-There are a couple of code stepping controls that were not explained in this tutorial.  For more information, go to [Step over line of code][DevtoolsJavascriptReferenceStepThroughCode].  
+There are a couple of code stepping controls that were not explained in this tutorial.  For more information, navigate to [Step over line of code][DevtoolsJavascriptReferenceStepThroughCode].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

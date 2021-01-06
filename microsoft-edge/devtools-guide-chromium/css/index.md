@@ -3,7 +3,7 @@ description: Learn how to use Microsoft Edge DevTools to view and change the CSS
 title: Get Started With Viewing And Changing CSS
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -53,7 +53,7 @@ Complete these interactive tutorials to learn the basics of viewing and changing
     1.  In the `Inspect Me!` element, find the `aloha` class rule.  
         
         > [!NOTE]
-        > You see this rule because it is being applied to the `Inspect Me!` element.  
+        > This rule is displayed, because it is being applied to the `Inspect Me!` element.  
         
     1.  In the `aloha` class, find the value for the `padding` style and copy it.  
         
@@ -74,7 +74,7 @@ Use the **Styles** tab when you want to change or add CSS declarations to an ele
 1.  Hover on the `Add A Background Color To Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.  
 1.  Choose `element.style` near the top of the **Styles** tab.  
 1.  Type `background-color` and select `Enter`.  
-1.  Type `honeydew` and select `Enter`.  In the **DOM Tree** you should see that an inline style declaration was applied to the element.  
+1.  Type `honeydew` and select `Enter`.  In the **DOM Tree**, an inline style declaration applied to the element is displayed.  
     
     :::image type="complex" source="../media/css-elements-add-background-color-to-me-styles-p.msft.png" alt-text="Add a CSS declaration to the element using the Styles tab" lightbox="../media/css-elements-add-background-color-to-me-styles-p.msft.png":::
        The `background-color:honeydew` declaration is applied to the element using the `element.style` section of the **Styles** tab  
@@ -82,7 +82,7 @@ Use the **Styles** tab when you want to change or add CSS declarations to an ele
     
 ## Add a CSS class to an element  
 
-Use the **Styles** tab to see how an element looks when a CSS class is applied to or removed from an element.  
+To display how an element looks when a CSS class is applied to or removed from an element, navigate to the **Styles** tab.  
 
 > [!NOTE]
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.  
@@ -125,7 +125,7 @@ Use the **Box Model** interactive diagram in the **Styles** tab to change the wi
 1.  In the **Box Model** diagram in the **Styles** tab, hover over **padding**.  The padding of an element is highlighted in the viewport.  
 
     > [!NOTE]
-    > Depending on the size of your DevTools window, you may need to scroll to the bottom of the **Styles** tab to see the **Box Model**.  
+    > Depending on the size of your DevTools window, you may need to scroll to the bottom of the **Styles** tab to display the **Box Model**.  
 
 1.  Double-click the left margin in the **Box Model**, which currently has a value of `-` meaning that the element does not have a left-margin.  
 1.  Type `100px` and select `Enter`.  The **Box Model** defaults to pixels, but it also accepts other values, such as `25%`, or `10vw`.  
@@ -155,13 +155,13 @@ If you want to debug or test the Media Queries you defined in your CSS, use the 
        Open the device toolbar  
     :::image-end:::  
     
-1.  With the device toolbar open, select the `...` menu on the top-right and choose **View Media Queries**.  You should see colored bars above the display of the page that represent the different media queries.  
+1.  With the device toolbar open, select the `...` menu on the top-right and choose **View Media Queries**.  The colored bars displayed above the webpage represent the different media queries.  
     
     :::image type="complex" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="Show Media Queries in Device Toolbar" lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
        Show Media Queries in Device Toolbar  
     :::image-end:::  
     
-1.  Hover on the boundaries in the bars to see the values of the different media queries.  Choose each to resize the web page to match.  
+1.  Hover on the boundaries in the bars to display the values of the different media queries.  Choose each to resize the web page to match.  
     
     :::image type="complex" source="../media/css-elements-media-queries-select-bar.msft.png" alt-text="Choose Media Query from preview bar" lightbox="../media/css-elements-media-queries-select-bar.msft.png":::
        Choose Media Query from preview bar  

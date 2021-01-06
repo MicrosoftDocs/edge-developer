@@ -3,7 +3,7 @@ description: Learn how to evaluate runtime performance in Microsoft Edge DevTool
 title: Get Started With Analyzing Runtime Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -111,13 +111,13 @@ After you record the performance of the page, measure the quality of the perform
 
 The main metric for measuring the performance of any animation is frames per second \(FPS\).  Users are happy when animations run at 60 FPS.  
 
-1.  Look at the **FPS** chart.  Whenever you see a red bar above **FPS**, it means that the framerate dropped so low that it is probably harming the user experience.  In general, the higher the green bar, the higher the FPS.  
+1.  Review the **FPS** chart.  Whenever a red bar is displayed above **FPS**, it means that the framerate dropped so low that it is probably harming the user experience.  In general, the higher the green bar, the higher the FPS.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-fps-chart.msft.png" alt-text="The FPS chart" lightbox="../media/evaluate-performance-performance-fps-chart.msft.png":::
        The **FPS** chart  
     :::image-end:::  
     
-1.  Below the **FPS** chart you see the **CPU** chart.  The colors in the **CPU** chart correspond to the colors in the **Summary** tab, at the bottom of the Performance panel.  The fact that the **CPU** chart is full of color means that the CPU was maxed out during the recording.  Whenever you see the CPU maxed out for long periods, it is a cue to find ways to do less work.  
+1.  Below the **FPS** chart, the **CPU** chart is displayed.  The colors in the **CPU** chart correspond to the colors in the **Summary** tab, at the bottom of the Performance panel.  The fact that the **CPU** chart is full of color means that the CPU was maxed out during the recording.  Whenever the CPU maxed out for long periods, it is an indicator that you should find ways to do less work.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="The CPU chart and Summary tab" lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
        The **CPU** chart and **Summary** tab  
@@ -135,7 +135,7 @@ The main metric for measuring the performance of any animation is frames per sec
        Hover on a frame  
     :::image-end:::  
     
-Of course, you should see that the page is not performing well.  But in real scenarios, it may not be so clear, so having all of the tools to make measurements comes in handy.  
+Of course, the display indicates that the webpage is not performing well.  But in real scenarios, it may not be so clear, so having all of the tools to make measurements comes in handy.  
 
 #### Bonus: Open the FPS meter  
 
@@ -161,7 +161,7 @@ After you measured and verified that the animation is not performing well, the n
        The **Summary** tab  
     :::image-end:::  
     
-1.  Expand the **Main** section.  DevTools shows you a flame chart of activity on the main thread, over time.  The x-axis represents the recording, over time.  Each bar represents an event.  A wider bar means that event took longer.  The y-axis represents the call stack.  When you see events stacked on top of each other, it means the upper events caused the lower events.  
+1.  Expand the **Main** section.  DevTools shows you a flame chart of activity on the main thread, over time.  The x-axis represents the recording, over time.  Each bar represents an event.  A wider bar means that event took longer.  The y-axis represents the call stack.  When events are stacked on top of each other, it means the upper events caused the lower events.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-main.msft.png" alt-text="The Main section" lightbox="../media/evaluate-performance-performance-main.msft.png":::
        The **Main** section  
@@ -176,7 +176,7 @@ After you measured and verified that the animation is not performing well, the n
     > [!NOTE]
     > Another way to zoom, focus the **Main** section, choose the background or an event, and select `W`, `A`, `S`, or `D`.  
     
-    1.  Focus on the red triangle in the top-right of the **Animation Frame Fired** event.  Whenever you see a red triangle, it is a warning that there may be an issue related to the event.  
+    1.  Focus on the red triangle in the top-right of the **Animation Frame Fired** event.  Whenever a red triangle is displayed, it is a warning that there may be an issue related to the event.  
     
     > [!NOTE]
     > The **Animation Frame Fired** event occurs whenever a [`requestAnimationFrame()` callback][MDNWebRequestAnimationFrame] is run.  
@@ -200,7 +200,7 @@ After you measured and verified that the animation is not performing well, the n
     :::image-end:::  
     
     > [!NOTE]
-    > The problem with the code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page.  Because the styles changed, the browser does not know if each icon position changed, so it has to re-layout the icon in order to compute the new position.  <!--  > See [Avoid forced synchronous layouts][RenderingAvoidSynchronousLayouts] to learn more.  -->
+    > The problem with the code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page.  Because the styles changed, the browser does not know if each icon position changed, so it has to re-layout the icon in order to compute the new position.  <!--  > To learn more, navigate to [Avoid forced synchronous layouts][RenderingAvoidSynchronousLayouts].  -->
     
 <!-- todo: add layouts section when available -->
 
@@ -208,17 +208,17 @@ That was a lot to learn.  You now have a solid foundation in the basic workflow 
 
 ### Bonus: Analyze the optimized version  
 
-Using the workflows and tools that you just learned, choose **Optimize** on the demo to enable the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, you are able to see that the optimized version of the app does much less work, resulting in better performance.  
+Using the workflows and tools that you just learned, choose **Optimize** on the demo to enable the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.  
 
 > [!NOTE]
-> Even the optimized version is not great, because it manipulates the `top` property of every icon.  A better approach is to stick to properties that only affect compositing.  <!--  > See [Use transform and opacity changes for animations][RenderingCompositor] for more information.  -->  
+> Even the optimized version is not great, because it manipulates the `top` property of every icon.  A better approach is to stick to properties that only affect compositing.  <!--  > For more information, navigate to [Use transform and opacity changes for animations][RenderingCompositor].  -->  
 
 <!--todo: add rendering section when available -->
 
 ## Next steps
 
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.  
-See [Measure Performance With The RAIL Model][RAIL] to learn more.  -->  
+To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->  
 
 To get more comfortable with the Performance panel, practice makes perfect.  Try profiling your pages and analyzing the results.  If you have any questions about your results, use the **Send Feedback** icon, select `Alt`+`Shift`+`I` \(Windows, Linux\), select `Option`+`Shift`+`I` \(macOS\), or [tweet the DevTools team][TwitterEdgeDevtools].  Include screenshots or links to reproducible pages, if possible.  
 

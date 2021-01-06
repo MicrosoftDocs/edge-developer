@@ -3,7 +3,7 @@ description: Microsoft Edge on Linux, improved webhint tips in the Issues tool, 
 title: What's new in DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -95,7 +95,7 @@ In the **Styles** pane, [CSS variables][MdnUsingCssCustomProperties] now link di
 
 The following new features in the [Network](#network-tool), [Application](#application-tool), and [Sources](#sources-tool) tools help you build your [PWA][ProgressiveWebAppsChromiumIndex].  Use the following features when you have difficulty debugging your service worker.  
 
-Request routing displays the `startup` and `fetch` events based on the network requests that run through service workers.  The timelines are accessed from either the **Application** or **Network** tool.  The timelines help when you are having trouble with service workers and want to see if something is wrong with the `startup` or `fetch` event.  
+Request routing displays the `startup` and `fetch` events based on the network requests that run through service workers.  The timelines are accessed from either the **Application** or **Network** tool.  The timelines help when you are having trouble with service workers and want to display if something is wrong with the `startup` or `fetch` event.  
 
 ### Application tool  
 

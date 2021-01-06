@@ -3,7 +3,7 @@ description: This section describes common terms used in memory analysis, and is
 title: Memory Terminology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021 
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -88,7 +88,7 @@ The heap is a network of interconnected objects.  In the mathematical world, thi
 *   **Nodes** \(or **objects**\) are labelled using the name of the **constructor** function that was used to build them.  
 *   **Edges** are labelled using the names of **properties**.  
 
-Learn [how to record a profile using the Heap Profiler][DevtoolsMemoryProblemsHeapSnapshots].  In the following figure, some of the eye-catching things that you may see in the Heap Snapshot recording in the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots] include distance:  the distance from the Garbage Collector \(GC\) root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that is something worth investigating.  
+Learn [how to record a profile using the Heap Profiler][DevtoolsMemoryProblemsHeapSnapshots].  In the following figure, some of the notable things in the Heap Snapshot recording in the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots] include distance:  the distance from the Garbage Collector \(GC\) root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that is something worth investigating.  
 
 :::image type="complex" source="../media/memory-problems-root.msft.png" alt-text="Distance from root" lightbox="../media/memory-problems-root.msft.png":::
    Distance from root  

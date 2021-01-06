@@ -3,7 +3,7 @@ description: Identify expensive functions using the Microsoft Edge DevTools Memo
 title: Speed Up JavaScript Runtime
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -39,7 +39,7 @@ Identify expensive functions using the **Memory** panel.
 
 If you notice jank in your JavaScript, collect a Sampling Profile.  Sampling Profiles show where running time is spent on functions in your page.  
 
-1.  Go to the **Memory** panel of DevTools.  
+1.  Navigate to the **Memory** panel of DevTools.  
 1.  Choose the **Allocation sampling** radio button.  
 1.  Choose **Start**.  
 1.  Depending on what you are trying to analyze, you may either refresh the page, interact with the page, or just let the page run.  
@@ -52,7 +52,7 @@ If you notice jank in your JavaScript, collect a Sampling Profile.  Sampling Pro
 
 When you finish recording, DevTools automatically populates the **Memory** panel under **SAMPLING PROFILES** with the data from your recording.  
 
-The default view is **Heavy \(Bottom Up\)**.  This view enables you to see which functions had the most impact on performance and examine the calling paths to those functions.  
+The default view is **Heavy \(Bottom Up\)**.  This view allows you to review which functions had the most impact on performance and examine the requesting path for each function.  
 
 ### Change sort order  
 
@@ -99,7 +99,7 @@ The flame chart is split into two parts.
 | 1 | Overview | A birds-eye view of the entire recording.  The height of the bars correspond to the depth of the call stack.  So, the higher the bar, the deeper the call stack.  |  
 | 2 | Call Stacks | This is an in-depth view of the functions that were called during the recording.  The horizontal axis is time and vertical axis is the call stack.  The stacks are organized top-down.  So, the function on top called the one below it, and so on.  |  
 
-Functions are colored randomly.  There is no correlation to the colors used in the other panels.  However, functions are always colored the same across invocations so that you are able to see patterns in each runtime.  
+Functions are colored randomly.  There is no correlation to the colors used in the other panels.  However, functions are always colored the same across invocations so that you may observe patterns in each runtime.  
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="Annotated flame chart" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
    Annotated flame chart  

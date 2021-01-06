@@ -3,7 +3,7 @@ description: Learn how to use Microsoft Edge and DevTools to find memory issues 
 title: Fix Memory Problems
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -59,7 +59,7 @@ The key here is to use the RAIL model and focus on your users.  Find out what de
 
 Use the Microsoft Edge Browser Task Manager as a starting point to your memory issue investigation.  The Microsoft Edge Browser Task Manager is a realtime monitor that tells you how much memory a page is currently using.  
 
-1.  Select `Shift`+`Esc` or go to the Microsoft Edge main menu and choose **More tools** > **Browser Task Manager** to open the Microsoft Edge Browser Task Manager.  
+1.  Select `Shift`+`Esc` or navigate to the Microsoft Edge main menu and choose **More tools** > **Browser Task Manager** to open the Microsoft Edge Browser Task Manager.  
     
     :::image type="complex" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="Opening the Microsoft Edge Browser Task Manager" lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
        Figure 1:  Opening the Microsoft Edge Browser Task Manager  
@@ -108,9 +108,9 @@ Every time that the button referenced in the code is chosen, ten thousand `div` 
    Figure 3:  Simple growth  
 :::image-end:::  
 
-First, an explanation of the user interface.  The **HEAP** graph in the **Overview** pane \(below **NET**\) represents the JS heap.  Below the **Overview** pane is the **Counter** pane.  Here you are able to see memory usage broken down by JS heap \(same as **HEAP** graph in the **Overview** pane\), documents, DOM nodes, listeners, and GPU memory.  Disabling a checkbox hides it from the graph.  
+First, an explanation of the user interface.  The **HEAP** graph in the **Overview** pane \(below **NET**\) represents the JS heap.  Below the **Overview** pane is the **Counter** pane.  The memory usage is broken down by JS heap \(same as **HEAP** graph in the **Overview** pane\), documents, DOM nodes, listeners, and GPU memory.  Turn off a checkbox to hide it from the graph.  
 
-Now, an analysis of the code compared with the previous figure.  If you look at the node counter \(the green graph\) you are able to see that it matches up cleanly with the code.  The node count increases in discrete steps.  You may presume that each increase in the node count is a call to `grow()`.  The JS heap graph \(the blue graph\) is not as straightforward.  In keeping with best practices, the first dip is actually a forced garbage collection \(choose the  **collect garbage** ![force garbage collection][ImageForceGarbageCollectionIcon] button\).  As the recording progresses you are able to see that the JS heap size spikes.  This is natural and expected:  the JavaScript code is creating the DOM nodes on every button you choose and doing a lot of work when it creates the string of one million characters.  The key thing here is the fact that the JS heap ends higher than it began \(the "beginning" here being the point after the forced garbage collection\).  In the real world, if you saw this pattern of increasing JS heap size or node size, it may potentially define a memory leak.  
+Now, an analysis of the code compared with the previous figure.  If you review the node counter \(the green graph\), it matches up cleanly with the code.  The node count increases in discrete steps.  You may presume that each increase in the node count is a call to `grow()`.  The JS heap graph \(the blue graph\) is not as straightforward.  In keeping with best practices, the first dip is actually a forced garbage collection \(choose the  **collect garbage** ![force garbage collection][ImageForceGarbageCollectionIcon] button\).  As the recording progresses, the JS heap size spikes are displayed.  This is natural and expected:  the JavaScript code is creating the DOM nodes on every button you choose and doing a lot of work when it creates the string of one million characters.  The key thing here is the fact that the JS heap ends higher than it began \(the "beginning" here being the point after the forced garbage collection\).  In the real world, if you saw this pattern of increasing JS heap size or node size, it may potentially define a memory leak.  
 
 <!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->  
 
@@ -138,7 +138,7 @@ Choosing the button referenced in the code creates a `ul` node with ten `li` chi
 
 Heap snapshots are one way to identify detached nodes.  As the name implies, heap snapshots show you how memory is distributed among the JS objects and DOM nodes for your page at the point of time of the snapshot.  
 
-To create a snapshot, open DevTools and go to the **Memory** panel, choose the **Heap snapshot** radio button > **Take snapshot** button.  
+To create a snapshot, open DevTools and navigate to the **Memory** panel, choose the **Heap snapshot** radio button > **Take snapshot** button.  
 
 :::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png" alt-text="Take heap snapshot" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png":::
    Figure 4:  Take heap snapshot  
@@ -160,7 +160,7 @@ Expand the carats to investigate a detached tree.
 
 <!--Nodes highlighted yellow have direct references to them from the JavaScript code.  Nodes highlighted red do not have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node is not alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.  -->
 
-Choose a node to investigate it further.  In the **Objects** pane, you may review more information about the code that is referencing it.  For example, in the following figure you are able to see that the `detachedNodes` variable is referencing the node.  To fix this particular memory leak, you should study the code that uses the `detachedUNode` variable and ensure that the reference to the node is removed when it is no longer needed.  
+Choose a node to investigate it further.  In the **Objects** pane, you may review more information about the code that is referencing it.  For example, in the following figure, the `detachedNodes` variable is referencing the node.  To fix the particular memory leak, you should study the code that uses the `detachedUNode` variable and ensure that the reference to the node is removed when it is no longer needed.  
 
 :::image type="complex" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png" alt-text="Investigating a node" lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png":::
    Figure 7:  Investigating a node  
@@ -184,7 +184,7 @@ document.getElementById('grow').addEventListener('click', grow);
 
 Every time that the button referenced in the code is pushed, a string of one million characters is added to the `x` array.  
 
-To record an Allocation instrumentation on timeline, open DevTools, go to the **Memory** panel, choose the **Allocation instrumentation on timeline** radio button, choose the **Start** button, perform the action that you suspect is causing the memory leak, and then choose the **Stop recording heap profile** ![stop recording][ImageStopRecordingIcon] button when you are done.  
+To record an Allocation instrumentation on timeline, open DevTools, navigate to the **Memory** panel, choose the **Allocation instrumentation on timeline** radio button, choose the **Start** button, perform the action that you suspect is causing the memory leak, and then choose the **Stop recording heap profile** ![stop recording][ImageStopRecordingIcon] button when you are done.  
 
 As you are recording, notice if any blue bars show up on the Allocation instrumentation on timeline, like in the following figure.  
 
@@ -198,7 +198,7 @@ Those blue bars represent new memory allocations.  Those new memory allocations 
    Figure 9:  Zoomed allocation timeline  
 :::image-end:::  
 
-Expand the object and select the value to view more details in the **Object** pane.  For example, in the following figure, by viewing the details of the object that was newly allocated, you should be able to see that it was allocated to the `x` variable in the `Window` scope.  
+Expand the object and select the value to view more details in the **Object** pane.  For example, in the following figure, in the details of the newly allocated object indicates that it was allocated to the `x` variable in the `Window` scope.  
 
 :::image type="complex" source="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png" alt-text="Object details" lightbox="../media/memory-problems-glitch-example-13-allocation-timeline-snapshot-focused-constructor-expanded.msft.png":::
    Figure 10:  Object details  

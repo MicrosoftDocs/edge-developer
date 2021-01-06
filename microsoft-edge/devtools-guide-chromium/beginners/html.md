@@ -3,7 +3,7 @@ description: Get Started with HTML and the DOM
 title: "DevTools for beginners: Get started with HTML and the DOM"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web developement, f12 tools, devtools
@@ -38,7 +38,7 @@ You are going to learn web development by actually building your own website.  B
 
 By the end of this tutorial, you should understand the following topics.  
 
-*   How HTML and the DOM create the content that you see on webpages.  
+*   How HTML and the DOM create the content that are displayed on webpages.  
 *   How Microsoft Edge DevTools may help you experiment with HTML and DOM changes.  
 *   The difference between HTML and the DOM.  
 
@@ -175,13 +175,13 @@ Your site is pretty empty.  Follow the steps below to add some content to it.
     
 ## Experiment with content changes in Microsoft Edge DevTools  
 
-If you were developing a big page with a lot of HTML, it is somewhat tedious to go back-and-forth between the editor tab and the live tab hundreds of times in order to see your changes, especially if you are unsure what exactly to put on the page.  Microsoft Edge DevTools helps you experiment with content changes without ever leaving the **live tab**.  
+If you were developing a big page with a lot of HTML, it is somewhat tedious to go back-and-forth between the editor tab and the live tab hundreds of times in order to display your changes, especially if you are unsure what exactly to put on the page.  Microsoft Edge DevTools helps you experiment with content changes without ever leaving the **live tab**.  
 
 ### Learn the difference between HTML and the DOM  
 
 Before you start editing your content from Microsoft Edge DevTools, you should understand the difference between HTML and the DOM.  The best way to learn is by example:  
 
-1.  Go to the **live tab**.  At the bottom of your page you see the text `A new element!?!`.  
+1.  Navigate to the **live tab**.  At the bottom of your page, the text `A new element!?!` is displayed.  
     
     :::image type="complex" source="../media/beginners-html-dom1.msft.png" alt-text="At the bottom of the page the text A new element!?! is displayed" lightbox="../media/beginners-html-dom1.msft.png":::
        At the bottom of the page the text `A new element!?!` is displayed  

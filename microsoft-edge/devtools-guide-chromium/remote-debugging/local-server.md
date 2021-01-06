@@ -3,7 +3,7 @@ description: Host a site on a development machine web server, and then access th
 title: Access Local Servers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -39,7 +39,7 @@ Port forwarding enables your Android device to access content that is being host
 
 To enable port forwarding:  
 
-1.  Set up [remote debugging][RemoteDebuggingGettingStarted] between your development machine and your Android device.  When you are finished, you should see your Android device in the left-hand menu of the **Inspect Devices** dialog and a **Connected** status indicator.  
+1.  Set up [remote debugging][RemoteDebuggingGettingStarted] between your development machine and your Android device.  When you are finished, your Android device should be displayed in the left-hand menu of the **Inspect Devices** dialog and a **Connected** status indicator.  
 1.  In the **Inspect Devices** dialog in DevTools, enable **Port forwarding**.  
 1.  Choose **Add rule**.  
     
@@ -51,7 +51,7 @@ To enable port forwarding:
 1.  In the **Local address** textbox on the right, enter the IP address or hostname on which your site is hosted on the web server running in your development machine, followed by the port number.  For example, if your site is running on `localhost:7331` enter `localhost:7331`.  
 1.  Choose **Add**.  
     
-Port forwarding is now set up.  See the status indicator for the port forward on the tab on your device within the **Inspect Devices** dialog.  
+Port forwarding is now set up.  Review the status indicator for the port forward on the tab on your device within the **Inspect Devices** dialog.  
 
 :::image type="complex" source="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png" alt-text="Port forwarding status" lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-5000-edge-user-agent.msft.png":::
    Port forwarding status  
@@ -82,7 +82,7 @@ To set up port forwarding to a proxy:
 
 Next, you need to configure your Android device to communicate with the proxy server.  
 
-1.  On your Android device go to **Settings** > **Wi-Fi**.  
+1.  On your Android device, navigate to **Settings** > **Wi-Fi**.  
 1.  Long-press the name of the network to which you are currently connected.  
     
     > [!NOTE]

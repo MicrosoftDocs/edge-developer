@@ -3,7 +3,7 @@ description: A comprehensive reference on every feature and behavior related to 
 title: Console Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -26,7 +26,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This page is a reference of features related to the Microsoft Edge DevTools Console.  It assumes that you are already familiar with using the Console to view logged messages and run JavaScript.  If not, navigate to [Get Started With Running JavaScript In The Console][DevToolsConsoleJavascript] and [Get Started With Logging Messages In The Console][DevToolsConsoleLog].  
 
-If you are looking for the API reference on functions like `console.log()` see [Console API Reference][DevToolsConsoleApi].  For the reference on functions like `monitorEvents()`, navigate to [Console Utilities API Reference][DevToolsConsoleUtilities].  
+If you are looking for the API reference on functions like `console.log()`, navigate to [Console API Reference][DevToolsConsoleApi].  For the reference on functions like `monitorEvents()`, navigate to [Console Utilities API Reference][DevToolsConsoleUtilities].  
 
 ## Open the Console  
 
@@ -94,11 +94,11 @@ Choose **Show Console Sidebar** \(![Show Console Sidebar][ImageShowConsoleSideba
 
 ## View messages  
 
-This section contains features that change how messages are presented in the Console.  See [View messages][DevToolsConsoleViewMessages] for a hands-on walkthrough.  
+This section contains features that change how messages are presented in the Console.  For a hands-on walkthrough, navigate to [View messages][DevToolsConsoleViewMessages].  
 
 ### Disable message grouping  
 
-[Open Console Settings](#open-console-settings) and disable **Group similar** to disable the default message grouping behavior of the Console.  See [Log XHR and Fetch requests](#log-xhr-and-fetch-requests) for an example.  
+[Open Console Settings](#open-console-settings) and disable **Group similar** to disable the default message grouping behavior of the Console.  For an example, navigate to [Log XHR and Fetch requests](#log-xhr-and-fetch-requests).  
 
 ### Log XHR and Fetch requests  
 
@@ -197,7 +197,7 @@ Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** text box to
 
 ## Run JavaScript  
 
-This section contains features related to running JavaScript in the Console.  See [Run JavaScript][DevToolsConsoleOverviewJavascript] for a hands-on walkthrough.  
+This section contains features related to running JavaScript in the Console.  For a hands-on walkthrough, navigate to [Run JavaScript][DevToolsConsoleOverviewJavascript].  
 
 ### Re-run expressions from history  
 
@@ -205,7 +205,7 @@ Select the `Up Arrow` key to cycle through the history of JavaScript expressions
 
 ### Watch the value of an expression in real-time with Live Expressions  
 
-If you find yourself typing the same JavaScript expression in the Console repeatedly, you may find it easier to create a **Live Expression**.  With **Live Expressions** you type an expression once and then pin it to the top of your Console.  The value of the expression updates in near real-time.  See [Watch JavaScript Expression Values In Real-Time With Live Expressions][DevToolsConsoleLiveExpressions].  
+If you find yourself typing the same JavaScript expression in the Console repeatedly, you may find it easier to create a **Live Expression**.  With **Live Expressions** you type an expression once and then pin it to the top of your Console.  The value of the expression updates in near real-time.  Navigate to [Watch JavaScript Expression Values In Real-Time With Live Expressions][DevToolsConsoleLiveExpressions].  
 
 ### Disable Eager Evaluation  
 

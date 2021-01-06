@@ -3,7 +3,7 @@ description: Open the "Rendering" tab and select "Emulate CSS media" > "print".
 title: Force Microsoft Edge DevTools Into Print Preview Mode (CSS Print Media Type)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021 
+ms.date: 01/06/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

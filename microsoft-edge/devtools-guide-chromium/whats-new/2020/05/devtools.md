@@ -3,7 +3,7 @@ description: Use the DevTools in Windows high contrast mode, match keyboard shor
 title: What's new in DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -125,9 +125,9 @@ The following sections announce additional features available in Microsoft Edge 
 
 ### Fix site issues with the new Issues tool in the DevTools Drawer
 
-The new **Issues** tool in the DevTools Drawer was built to help reduce the notification fatigue and clutter of the **Console**.  Currently, the **Console** is the central place for website developers, libraries, frameworks, and Microsoft Edge to log messages, warnings, and errors.  The **Issues** tool aggregates warnings from the browser in a structured, aggregated, and actionable way, links to affected resources within Microsoft Edge DevTools, and provides guidance on how to fix the issues.  Over time, you should see more and more warnings in Microsoft Edge surfacing in the **Issues** tool rather than the **Console**, which should help reduce the clutter in the **Console**.  
+The new **Issues** tool in the DevTools Drawer was built to help reduce the notification fatigue and clutter of the **Console**.  Currently, the **Console** is the central place for website developers, libraries, frameworks, and Microsoft Edge to log messages, warnings, and errors.  The **Issues** tool aggregates warnings from the browser in a structured, aggregated, and actionable way, links to affected resources within Microsoft Edge DevTools, and provides guidance on how to fix the issues.  Over time, more and more warnings are surfaced in Microsoft Edge in the **Issues** tool rather than the **Console**, which should help reduce the clutter in the **Console**.  
 
-To get started, see [Find And Fix Problems With The Microsoft Edge DevTools Issues tool][DevtoolsIssuesIndex].  
+To get started, navigate to [Find And Fix Problems With The Microsoft Edge DevTools Issues tool][DevtoolsIssuesIndex].  
 
 :::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="The Issues tool in the DevTools Drawer" lightbox="../../media/2020/05/issues.msft.png":::
    The **Issues** tool in the DevTools Drawer  
@@ -164,7 +164,7 @@ To get Total Blocking Time information, do not use the **Refresh Page** ![Refres
 
 Instead, select **Record** ![Record icon][ImageRecordIcon], manually reload the page, wait for the page to load, and then stop recording.  
 
-If you see `Total Blocking Time: Unavailable`, Microsoft Edge DevTools did not get the required information from the internal profiling data in Microsoft Edge.  
+If `Total Blocking Time: Unavailable` is displayed, Microsoft Edge DevTools did not get the required information from the internal profiling data in Microsoft Edge.  
 
 :::image type="complex" source="../../media/2020/05/tbt.msft.png" alt-text="Total Blocking Time information in the footer of a Performance panel recording" lightbox="../../media/2020/05/tbt.msft.png":::
    Total Blocking Time information in the footer of a **Performance** panel recording  
@@ -179,7 +179,7 @@ The new **Experience** section of the **Performance** panel helps you detect lay
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->  
 <!--todo:  add link layout shifts (WebdevCls) when section is live  -->  
 
-Choose the **Layout Shift** event to see the details of the layout shift in the **Summary** pane.  Hover over the **Moved from** and **Moved to** fields to visualize where the layout shift occurred.  
+Choose the **Layout Shift** event to display the details of the layout shift in the **Summary** pane.  Hover over the **Moved from** and **Moved to** fields to visualize where the layout shift occurred.  
 
 :::image type="complex" source="../../media/2020/05/cls.msft.png" alt-text="The details of a layout shift" lightbox="../../media/2020/05/cls.msft.png":::
    The details of a layout shift  
@@ -193,7 +193,7 @@ When logging a `Promise`, the **Console** incorrectly provided `PromiseStatus` v
    An example of the **Console** using the old `resolved` terminology  
 :::image-end:::  
 
-The **Console** now uses the term `fulfilled`, which aligns with the `Promise` specification.  For more information about the `Promise` specification, see [States and Fates on GitHub](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md).  
+The **Console** now uses the term `fulfilled`, which aligns with the `Promise` specification.  For more information about the `Promise` specification, navigate to [States and Fates on GitHub](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md).  
 
 :::image type="complex" source="../../media/2020/05/fulfilled.msft.png" alt-text="An example of the Console using the new fulfilled terminology" lightbox="../../media/2020/05/fulfilled.msft.png":::
   An example of the **Console** using the new `fulfilled` terminology  
@@ -215,7 +215,7 @@ Chromium issue [#1075437][CR1075437]
 
 #### Image previews  
 
-Hover over a `background-image` value in the **Styles** pane to see a preview of the image in a tooltip.  
+Hover over a `background-image` value in the **Styles** pane to display a preview of the image in a tooltip.  
 
 :::image type="complex" source="../../media/2020/05/image-preview.msft.png" alt-text="Hovering over a background-image value" lightbox="../../media/2020/05/image-preview.msft.png":::
   Hovering over a `background-image` value  
@@ -228,17 +228,17 @@ Chromium issue [#1040019][CR1040019]
 [CSS Color Module Level 4][CSSWGDraftsColor4Changes3] specifies that color functions, such as `rgb()`, should support space-separated
 arguments.  For example, `rgb(0, 0, 0)` is equivalent to `rbg(0 0 0)`.  
 
-When you choose colors with the [Color Picker][DevtoolsCssReferenceColorPicker] or alternate between color representations in the **Styles** pane by holding `Shift` and selecting the `background-color` value, you should see the space-separated argument syntax.  
+When you choose colors with the [Color Picker][DevtoolsCssReferenceColorPicker] or alternate between color representations in the **Styles** pane by holding `Shift` and selecting the `background-color` value, the space-separated argument syntax is displayed.  
 
 :::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="Using space-separated arguments in the Styles pane" lightbox="../../media/2020/05/color.msft.png":::
   Using space-separated arguments in the **Styles** pane  
 :::image-end:::  
 
-You should also see the syntax in the **Computed** pane and the **Inspect Mode** tooltip.  
+You should also display the syntax in the **Computed** pane and the **Inspect Mode** tooltip.  
 
 Microsoft Edge DevTools is using the new syntax because upcoming CSS features such as [color()][CSSWGDraftsColor4Property] do not support the deprecated comma-separated argument syntax.  
 
-The space-separated argument syntax has been supported in most browsers for a while.  For more information, see [Can I use: Space-separated functional color notations?][CaniuseMDNSpaceSeparatedFunctionalColorNotations]  
+The space-separated argument syntax has been supported in most browsers for a while.  For more information, navigate to [Can I use: Space-separated functional color notations?][CaniuseMDNSpaceSeparatedFunctionalColorNotations]  
 
 Chromium issue [#1072952][CR1072952]  
 
@@ -259,7 +259,7 @@ The **Properties** pane in the **Elements** panel is deprecated.  Run `console.d
 
 App shortcuts help users quickly start common or recommended tasks within a web app.  The app shortcuts menu is shown only for [Progressive Web Apps][PwaIndex] that are installed on the user's desktop or mobile device.  
 
-<!--For more information, see [Get things done quickly with app shortcuts][WebdevAppShortcuts].  -->  
+<!--For more information, navigate to [Get things done quickly with app shortcuts][WebdevAppShortcuts].  -->  
 
 <!--todo:  add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->  
 

@@ -3,7 +3,7 @@ description: A comprehensive reference of Microsoft Edge DevTools Network panel 
 title: Network Analysis reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -546,7 +546,7 @@ By default, the Headers tab shows header names alphabetically.  To dsiplay the H
 To display the query string parameters of a URL in a human-readable format, use the following steps.  
 
 1.  Open the **Headers** tab for the request that interests you.  For more information, navigate to [Display HTTP headers](#display-http-headers).  
-1.  Go to the **Query String Parameters** section.  
+1.  Navigate to the **Query String Parameters** section.  
 
 :::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="The Query String Parameters section" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
    The **Query String Parameters** section  
@@ -556,14 +556,14 @@ To display the query string parameters of a URL in a human-readable format, use 
 
 To display the query string parameter source of a request, use the following steps.  
 
-1.  Go to the Query String Parameters section.  For more information, navigate to [Display query string parameters](#display-query-string-parameters).  
+1.  Navigate to the Query String Parameters section.  For more information, navigate to [Display query string parameters](#display-query-string-parameters).  
 1.  Choose **view source**.  
 
 #### Display URL-encoded query string parameters  
 
 To display query string parameters in a human-readable format, but with encodings preserved, use the following steps.  
 
-1.  Go to the Query String Parameters section.  For more information, navigate to [Display query string parameters](#display-query-string-parameters).  
+1.  Navigate to the Query String Parameters section.  For more information, navigate to [Display query string parameters](#display-query-string-parameters).  
 1.  Choose **view URL encoded**.  
 
 ### Display cookies  

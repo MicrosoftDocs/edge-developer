@@ -3,7 +3,7 @@ description: Learn how to save changes made within DevTools to disk.
 title: Edit files with Workspaces
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -58,7 +58,7 @@ Workspaces is known to not work with the following framework.
     
 ## Related feature: Local overrides  
 
-**Local Overrides** is another DevTools feature that is similar to Workspaces.  Use Local Overrides when you want to experiment with changes to a page, and you need to see the changes across page loads, but you do not care about mapping your changes to the source code of the page.  
+**Local Overrides** is another DevTools feature that is similar to Workspaces.  Use Local Overrides when you want to experiment with changes to a webpage, and you need to display the changes across webpage loads, but you do not care about mapping your changes to the source code of the webpage.  
 
 <!--Todo: add section when content is ready  -->  
 
@@ -103,7 +103,7 @@ Complete the following actions, to get hands-on experience with Workspaces.
        :::column-end:::
     :::row-end:::  
     
-1.  Open a tab in Microsoft Edge and go to locally-hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number][WikiPortURLs] may be different.  
+1.  Open a tab in Microsoft Edge and navigate to locally-hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number][WikiPortURLs] may be different.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="The demo" lightbox="../media/workspaces-workspaces-demo.msft.png":::
        The demo  
@@ -146,7 +146,7 @@ Complete the following actions, to get hands-on experience with Workspaces.
     
 1.  Choose the **Elements** tab.  
 1.  Change the value of the `color` property of the `<h1>` element to your favorite color.  
-    Remember that you need to choose the `<h1>` element in the **DOM Tree** in order to see the CSS rules applied to it in the **Styles** pane.  The green dot next to `styles.css:1` means that any change that you make are mapped to `~/Desktop/app/styles.css`.  
+    Remember that you need to choose the `<h1>` element in the **DOM Tree** in order to display the CSS rules applied to it in the **Styles** pane.  The green dot next to `styles.css:1` means that any change that you make are mapped to `~/Desktop/app/styles.css`.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="The green indicator that the file is linked" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
        The green indicator that the file is linked  
@@ -183,11 +183,11 @@ The DOM tree is not html.
 > [!NOTE]
 > This section describes why the workflow from [Try changing html from the Elements panel](#try-changing-html-from-the-elements-panel) does not work.  You should skip this section if you do not care why.  
 
-*   The tree of nodes that you see on the **Elements** panel represents the [DOM][MDNWebAPIsDOM] of the page.  
+*   The tree of nodes that are displayed on the **Elements** panel represents the [DOM][MDNWebAPIsDOM] of the page.  
 *   To display a page, a browser fetches html over the network, parses the html, and then converts it into a tree of DOM nodes.  
 *   If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes.  CSS may change the DOM, too, using the [`content`][MDNCSSContent] property.  
 *   The browser eventually uses the DOM to determine what content it should present to browser users.  
-*   Therefore, the final state of the page that users see may be very different from the html that the browser fetched.  
+*   Therefore, the final state of the webpage displayed for users may be very different from the html that the browser fetched.  
 *   This makes it difficult for DevTools to resolve where a change made in the **Elements** panel should be saved, because the DOM is affected by HTML, JavaScript, and CSS.  
 
 In short, the **DOM Tree** `!==` HTML.  
@@ -200,7 +200,7 @@ If you want to save a change to the html of the page, do it using the **Sources*
 1.  Choose the **Sources** tab.  
 1.  Choose the **Page** tab.  
 1.  Choose **(index)**.  The HTML for the page opens.  
-1.  Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  See the following figure.  
+1.  Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  Review the following figure.  
 1.  Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.  
 1.  Refresh the page.  The `<h1>` element is still displaying the new text.  
     
@@ -222,7 +222,7 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
        Open the **Quick Source** tab using **Command Menu**  
     :::image-end:::  
     
-1.  Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  See the following figure.  
+1.  Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  Review the following figure.  
 1.  Type `script`, then choose **app/script.js**.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Open script.js using the Open File dialog" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::

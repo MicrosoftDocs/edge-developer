@@ -3,7 +3,7 @@ description: Discover new debugging workflows in this comprehensive reference of
 title: JavaScript Debugging Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -26,13 +26,13 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Discover new debugging workflows with the following comprehensive reference of Microsoft Edge DevTools debugging features.  
 
-See [Get Started With Debugging JavaScript In Microsoft Edge DevTools][DevToolsJavascriptGetStarted] to learn the basics of debugging.  
+To learn the basics of debugging, navigate to [Get Started With Debugging JavaScript In Microsoft Edge DevTools][DevToolsJavascriptGetStarted].  
 
 ## Pause code with breakpoints  
 
 Set a breakpoint so that you are able to pause your code in the middle of the runtime.  
 
-See [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints] to learn how to set breakpoints.  
+To learn how to set breakpoints, navigate to [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints].  
 
 ## Step through code  
 
@@ -260,7 +260,7 @@ Complete the following actions to mark a script as **Library code** from the **C
 Complete the following actions to mark a single script or pattern of scripts from **Settings**.  
 
 1.  Open [Settings][DevToolsCustomize].  
-1.  Go to the **Library code** tab.  
+1.  Navigate to the **Library code** tab.  
 1.  Choose **Add pattern**.  
 1.  Enter the script name or a regex pattern of script names to mark as **Library code**.  
 1.  Choose **Add**.  
@@ -273,7 +273,7 @@ Complete the following actions to mark a single script or pattern of scripts fro
 
 If you find yourself running the same debug code in the Console over and over, consider Snippets.  Snippets are runtime scripts that you author, store, and run within DevTools.  
 
-See [Run Snippets of Code From Any Page][DevToolsJavascriptSnippets] to learn more.  
+To learn more, navigate to [Run Snippets of Code From Any Page][DevToolsJavascriptSnippets].  
 
 ## Watch the values of custom JavaScript expressions  
 

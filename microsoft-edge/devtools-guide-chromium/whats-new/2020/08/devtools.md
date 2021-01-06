@@ -3,7 +3,7 @@ description: Match keyboard shortcuts to Visual Studio Code, emulate Surface Duo
 title: What's new in DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -62,7 +62,7 @@ Thank you for the positive feedback about the improved CSS grid overlays.  The C
 :::image-end:::  
 
 > [!NOTE]
-> For more information about grid overlays, go to [CSS grid debugging features][DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures].  
+> For more information about grid overlays, navigate to [CSS grid debugging features][DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures].  
 
 The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on additional features.  The new features include multiple overlays that are persistent and configurable from a new **Layout** pane on the **Elements** panel.  
 
@@ -179,7 +179,7 @@ To open the new **Media** panel, complete the following step.
        New **Media** panel  
     :::image-end:::  
 
-Before the new **Media** panel in DevTools, the logging and debug information about video players was located under the **Recent Players** setting.  To open the **Recent Players** setting, go to `edge://media-internals` and choose the **Players** tab.  
+Before the new **Media** panel in DevTools, the logging and debug information about video players was located under the **Recent Players** setting.  To open the **Recent Players** setting, navigate to `edge://media-internals` and choose the **Players** tab.  
 
 View live content and inspect potential issues more quickly, including the following examples.  
 
@@ -254,7 +254,7 @@ Chromium issue: [#1090802][CR1090802]
 ### Emulate prefers-reduced-data  
 
 > [!NOTE]
-> In Microsoft Edge 86, to enable this feature, go to `edge://flags#enable-experimental-web-platform-features` and turn on the **Experimental Web Platform features** flag.  The emulation option is only displayed if the flag is enabled.  
+> In Microsoft Edge 86, to enable this feature, navigate to `edge://flags#enable-experimental-web-platform-features` and turn on the **Experimental Web Platform features** flag.  The emulation option is only displayed if the flag is enabled.  
 
 The [prefers-reduced-data][CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData] media query detects user content preferences for reduced data.  If selected, the user receives alternate page content that uses less data.  
 
@@ -279,13 +279,13 @@ Chromium issues: [1086817][CR1086817], [1080569][CR1080569]
 
 ### Lighthouse 6.2 in the Lighthouse panel  
 
-The **Lighthouse** panel is now running Lighthouse 6.2.  For a full list of changes, go to the [Lighthouse release notes][GithubGooglechromeLighthouseV620].  
+The **Lighthouse** panel is now running Lighthouse 6.2.  For a full list of changes, navigate to the [Lighthouse release notes][GithubGooglechromeLighthouseV620].  
 
 Chromium issue: [#772558][CR772558]  
 
 ### Deprecation of other origins listing in the Service Workers pane  
 
-DevTools now provides a link from the **Service workers** pane \(**Application** panel > **Service workers** pane\) to view the full list of service workers from other origins.  To access the list without opening the DevTools, go to `edge://service-worker-internals/?devtools`.  
+DevTools now provides a link from the **Service workers** pane \(**Application** panel > **Service workers** pane\) to view the full list of service workers from other origins.  To access the list without opening the DevTools, navigate to `edge://service-worker-internals/?devtools`.  
 
 Previously DevTools displayed a list nested under the **Application** panel > **Service workers** pane.  
 

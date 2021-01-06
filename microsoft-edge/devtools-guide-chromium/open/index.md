@@ -3,7 +3,7 @@ description: All of the ways that you open the Microsoft Edge DevTools.
 title: Open Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -37,7 +37,7 @@ Each of the following tasks enable you to inspect the styles or attributes of a 
    The **Inspect** option  
 :::image-end:::  
 
-<!--See [Get Started With Viewing And Changing CSS][GetStartedCSS].  -->  
+<!--Navigate to [Get Started With Viewing And Changing CSS][GetStartedCSS].  -->  
 
 ## Open the Console panel  
 
@@ -50,7 +50,7 @@ Each of the following tasks enable you to open the [Console][DevtoolsConsoleInde
 
 *   To jump straight into the [Console][DevtoolsConsoleIndex] pane, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].  
 
-<!--See [Get Started With The Console][ConsoleGetStarted].  -->
+<!--Navigate to [Get Started With The Console][ConsoleGetStarted].  -->
 
 ## Open the previous panel  
 

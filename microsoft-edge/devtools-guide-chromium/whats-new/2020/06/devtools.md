@@ -3,7 +3,7 @@ description: CSS grid debugging features, Edit and Replay requests with the Netw
 title: What's new in DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -28,9 +28,9 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
 :::image-end:::  
 
 > [!NOTE]
-> To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.  
+> To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.  
 > 
-> To try out the experiment with a sample, see [CSS Grid planner example][CodepenRachelweilYzwBzKM].  
+> To try out the experiment with a sample, navigate to [CSS Grid planner example][CodepenRachelweilYzwBzKM].  
 
 Chromium issue [#1047356][CR1047356]  
 
@@ -46,7 +46,7 @@ You are now able to use **Edit and Replay** on requests in the [Network Log][Dev
    Edit and Replay a request in the [NetworkLog][DevtoolsNetworkIndexLogActivity] with the **Network Console**  
 :::image-end:::  
 
-A new panel, the **Network Console** opens in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer] and automatically populates with information for the HTTP request.  To see the response returned from the server, edit the request \(if needed\) and select **Send**.  
+A new panel, the **Network Console** opens in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer] and automatically populates with information for the HTTP request.  To display the response returned from the server, edit the request \(if needed\) and select **Send**.  
 
 You may also use the **Network Console** to create and send HTTP requests directly from the DevTools.  
 
@@ -55,12 +55,12 @@ You may also use the **Network Console** to create and send HTTP requests direct
 :::image-end:::  
 
 > [!TIP]
-> To see **Network Console** in the main \(top\) panel instead of the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], see [moving tools between panels](#move-tools-between-panels).  
+> To display **Network Console** in the main \(top\) panel instead of the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], navigate to [moving tools between panels](#move-tools-between-panels).  
 
 > [!NOTE]
-> To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable Network Console**.  
+> To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and choose the checkbox next to **Enable Network Console**.  
 > 
-> Open the [Network Log][DevtoolsNetworkIndexLogActivity], open the contextual menu \(right-click\), and select **Edit and Replay**.  
+> Open the [Network Log][DevtoolsNetworkIndexLogActivity], open the contextual menu \(right-click\), and choose **Edit and Replay**.  
 
 Chromium issue [#1093687][CR1093687]  
 
@@ -72,10 +72,10 @@ The **Timing** tab of the **Network** panel now includes `respondWith` service w
    The `respondWith` service worker event in the **Timing** tab of the **Network** panel  
 :::image-end:::  
 
-Expand **Response received** to see additional information from the `fetch` response like `CacheStorageCacheName`, `serviceWorkerResponseSource`, and `ResponseTime`.  
+Expand **Response received** to display additional information from the `fetch` response like `CacheStorageCacheName`, `serviceWorkerResponseSource`, and `ResponseTime`.  
 
-:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Expand Response received to see additional information from the fetch response" lightbox="../../media/2020/06/timing-tab2.msft.png":::
-   Expand **Response received** to see additional information from the `fetch` response  
+:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Expand Response received to display additional information from the fetch response" lightbox="../../media/2020/06/timing-tab2.msft.png":::
+   Expand **Response received** to display additional information from the `fetch` response  
 :::image-end:::  
 
 Chromium issue [#1066579][CR1066579]  
@@ -86,16 +86,16 @@ Chromium issue [#1066579][CR1066579]
    Experimental feature  
 :::image-end:::  
 
-[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  You are now able to see webhint feedback in the [Issues][DevtoolsIssues] panel.  
+[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  To review webhint feedback in the [Issues][DevtoolsIssues] panel.  
 
 :::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
    webhint feedback in the Issues panel  
 :::image-end:::  
 
 > [!NOTE]
-> To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable webhint**.  
+> To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and choose the checkbox next to **Enable webhint**.  
 > 
-> Open the [Issues][DevtoolsIssues] panel to see feedback from webhint.  
+> Open the [Issues][DevtoolsIssues] panel to display feedback from webhint.  
 
 Chromium issue [#1070378][CR1070378]  
 
@@ -107,24 +107,24 @@ Chromium issue [#1070378][CR1070378]
 
 Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  You are now able to customize your DevTools layout by moving tools between the top and bottom panels.  
 
-:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Moving tabs between panels" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
-   Moving tabs between panels  
+:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Move tabs between panels" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
+   Move tabs between panels  
 :::image-end:::  
 
 > [!NOTE]
-> To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable support to move tabs between panels**.  
+> To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and choose the checkbox next to **Enable support to move tabs between panels**.  
 
 Chromium issue [#897944][CR897944]  
 
 ### Improved Initiator tooltip in the Network panel  
 
-In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log][DevtoolsNetworkIndexLogActivity] displayed with a horizontal scrollbar.  You were only able to see the call stack that initiated the request by scrolling horizontally in the tooltip.  
+In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log][DevtoolsNetworkIndexLogActivity] displayed with a horizontal scrollbar.  You were only able to display the call stack that initiated the request by scrolling horizontally in the tooltip.  
 
 :::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="The Initiator tooltip in Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
    The Initiator tooltip in Microsoft Edge 84  
 :::image-end:::  
 
-Starting with Microsoft Edge 85, you are now able to see the Initiator call stack in the tooltip without scrolling horizontally.  
+Starting with Microsoft Edge 85, you are now able to display the Initiator call stack in the tooltip without scrolling horizontally.  
 
 :::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="The Initiator tooltip in Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
    The Initiator tooltip in Microsoft Edge 85
@@ -154,7 +154,7 @@ Chromium issue [#946975][CR946975]
 
 ### Lighthouse 6 in the Lighthouse panel  
 
-The **Lighthouse** panel is now running Lighthouse 6.  For a full list of all changes, see [v6.0.0 release notes][GithubGoogleChromeLighthouse600].  
+The **Lighthouse** panel is now running Lighthouse 6.  For a full list of all changes, navigate to [v6.0.0 release notes][GithubGoogleChromeLighthouse600].  
 
 Lighthouse 6.0 introduces three new metrics to the report:  Largest Contentful Paint \(LCP\), Cumulative Layout Shift \(CLS\), and Total Blocking Time \(TBT\).  
 
@@ -164,7 +164,7 @@ Chromium issue [#772558][CR772558]
 
 #### First Meaningful Paint deprecation  
 
-First Meaningful Paint \(FMP\) is deprecated in Lighthouse 6.0.  FMP has also been removed from the **Performance** panel.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--See [First Meaningful Paint][WebDevFirstMeaningfulPaint] for an explanation of why it was deprecated.  -->  
+First Meaningful Paint \(FMP\) is deprecated in Lighthouse 6.0.  FMP has also been removed from the **Performance** panel.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->  
 
 <!--todo: add Largest Contentful Paint when section available  -->  
 <!--todo: add First Meaningful Paint link and note when available  -->  

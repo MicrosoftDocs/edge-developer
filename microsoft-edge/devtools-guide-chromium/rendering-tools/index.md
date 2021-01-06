@@ -3,7 +3,7 @@ description: Users expects interactive and smooth pages.  Each stage in the pixe
 title: Analyze Runtime Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -52,10 +52,10 @@ The following table describes some common JavaScript problems and potential solu
 
 | Problem | Example | Solution |  
 |:--- |:--- |:--- |  
-| Expensive input handlers affecting response or animation.  | Touch, parallax scrolling.  | Let the browser handle touch and scrolls, or bind the listener as late as possible.  See [Expensive Input Handlers in Paul Lewis' runtime performance checklist][WebPerformanceCalendarRuntimeChecklist].  |  
+| Expensive input handlers affecting response or animation.  | Touch, parallax scrolling.  | Let the browser handle touch and scrolls, or bind the listener as late as possible.  Navigate to [Expensive Input Handlers in Paul Lewis' runtime performance checklist][WebPerformanceCalendarRuntimeChecklist].  |  
 | Badly-timed JavaScript affecting response, animation, load.  | User scrolls right after page load, setTimeout / setInterval.  | Optimize JavaScript runtime: use `requestAnimationFrame`, spread DOM manipulation over frames, use [Web Workers][MDNUsingWebWorkers].  |  
-| Long-running JavaScript affecting response.  | The [DOMContentLoaded event][MDNUsingWebWorkers] stalls as it is swamped with JS work.  | Move pure computational work to [Web Workers][MDNUsingWebWorkers].  If you need DOM access, use `requestAnimationFrame`.  <!--See also [Optimize JavaScript Execution][WebFundamentalsPerformanceRenderingOptimizeJavascriptRuntime].  -->  |  
-| Garbage-y scripts affecting response or animation.  | Garbage collection may happen anywhere.  | Write less garbage-y scripts.  See [Garbage Collection in Animation in Paul Lewis' runtime performance checklist][WebPerformanceCalendarRuntimeChecklist].  |  
+| Long-running JavaScript affecting response.  | The [DOMContentLoaded event][MDNUsingWebWorkers] stalls as it is swamped with JS work.  | Move pure computational work to [Web Workers][MDNUsingWebWorkers].  If you need DOM access, use `requestAnimationFrame`.  <!--Navigate to [Optimize JavaScript Execution][WebFundamentalsPerformanceRenderingOptimizeJavascriptRuntime].  -->  |  
+| Garbage-y scripts affecting response or animation.  | Garbage collection may happen anywhere.  | Write less garbage-y scripts.  Navigate to [Garbage Collection in Animation in Paul Lewis' runtime performance checklist][WebPerformanceCalendarRuntimeChecklist].  |  
 
 <!--todo: add Optimize JavaScript runtime section when available  -->  
 
@@ -85,7 +85,7 @@ Choose a `Recalculate Style` event to view more information about it in the **De
 To reduce the impact of `Recalculate Style` events:  
 
 *   Use the [CSS Triggers][CssTriggers] to learn which CSS properties trigger layout, paint, and composite.  These properties have the worst impact on rendering performance.  
-*   Switch to properties that have less impact.  <!--See [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties] for more guidance.  -->  
+*   Switch to properties that have less impact.  <!--For more guidance, navigate to [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  
     
 <!--todo: add Stick to compositor-only properties and manage layer count section when available -->  
 
@@ -129,7 +129,7 @@ The **Performance** pane identifies when a page causes forced synchronous layout
    Forced synchronous layout  
 :::image-end:::  
 
-"Layout thrashing" is a repetition of forced synchronous layout conditions.  This occurs when JavaScript writes and reads from the DOM repeatedly, which forces the browser to recalculate the layout over and over.  To identify layout thrashing, look for a pattern of multiple forced synchronous layout warnings.  See the previous figure.  
+"Layout thrashing" is a repetition of forced synchronous layout conditions.  This occurs when JavaScript writes and reads from the DOM repeatedly, which forces the browser to recalculate the layout over and over.  To identify layout thrashing, look for a pattern of multiple forced synchronous layout warnings.  Review the previous figure.  
 
 ### Layout: Problems  
 
@@ -137,16 +137,16 @@ The following table describes some common layout problems and potential solution
 
 | Problem | Example | Solution |  
 |:--- |:--- |:--- |  
-| Forced synchronous layout affecting response or animation.  | Forcing the browser to perform layout earlier in the pixel pipeline, resulting in repeating steps in the rendering process.  | Batch your style reads first, then do any writes.  <!--See also [Avoid large, complex layouts and layout thrashing][WebFundamentalsPerformanceRenderingAvoidLargeComplexLayouts].  -->  |  
+| Forced synchronous layout affecting response or animation.  | Forcing the browser to perform layout earlier in the pixel pipeline, resulting in repeating steps in the rendering process.  | Batch your style reads first, then do any writes.  <!--Navigate to [Avoid large, complex layouts and layout thrashing][WebFundamentalsPerformanceRenderingAvoidLargeComplexLayouts].  -->  |  
 | Layout thrashing affecting response or animation.  | A loop that puts the browser into a read-write-read-write cycle, forcing the browser to recalculate layout over and over again.  | Automatically batch read-write operations using [FastDom library][GitHubWilsonpageFastdom].  |  
 
 <!--todo: add Avoid CSS that triggers layouts (Avoid large, complex layouts and layout thrashing) section when available -->  
 
 ## Paint and composite  
 
-Paint is the process of filling in pixels.  It is often the most costly part of the rendering process.  If you noticed that your page is janky in any way, it is likely that you have paint problems.  
+Paint is the process of filling in pixels.  It is often the most costly part of the rendering process.  If you noticed that your page is not working as designed in any way, it is likely that you have paint problems.  
 
-Compositing is where the painted parts of the page are put together for displaying on screen.  For the most part, if you stick to compositor-only properties and avoid paint altogether, you should see a major improvement in performance, but you need to watch out for excessive layer counts.  <!--See also [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  
+Compositing is where the painted parts of the page are put together for displaying on screen.  For the most part, if you stick to compositor-only properties and avoid paint altogether, you should notice a major improvement in performance, but you need to watch out for excessive layer counts.  <!--Navigate to [Stick to compositor-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
@@ -171,8 +171,8 @@ The following table describes some common paint and composite problems and poten
 
 | Problem | Example | Solution |  
 |:--- |:--- |:--- |  
-| Paint storms affecting response or animation.  | Big paint areas or expensive paints affecting response or animation.  | Avoid paint, promote elements that are moving to their own layer, use transforms and opacity.  <!--See [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
-| Layer explosions affecting animations.  | Overpromotion of too many elements with `translateZ(0)` greatly affects animation performance.  | Promote to layers sparingly, and only when you know it offers tangible improvements.  <!--See [Stick to composite-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  |  
+| Paint storms affecting response or animation.  | Big paint areas or expensive paints affecting response or animation.  | Avoid paint, promote elements that are moving to their own layer, use transforms and opacity.  <!--Navigate to [Simplify paint complexity and reduce paint areas][WebFundamentalsPerformanceRenderingSimplifyPaintComplexity].  -->  |  
+| Layer explosions affecting animations.  | Overpromotion of too many elements with `translateZ(0)` greatly affects animation performance.  | Promote to layers sparingly, and only when you know it offers tangible improvements.  <!--Navigate to [Stick to composite-only properties and manage layer count][WebFundamentalsPerformanceRenderingCompositorOnlyProperties].  -->  |  
 
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->  
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  

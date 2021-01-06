@@ -3,7 +3,7 @@ description: Use the Console API to write messages to the Console.
 title: Console API Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -231,7 +231,7 @@ Same as the [log](#log) method, except the group is initially collapsed when it 
 console.groupEnd(label)
 ```  
 
-Stops visually grouping messages.  See the [group](#group) method.  
+Stops visually grouping messages.  Navigate to the [group](#group) method.  
 
 ---  
 
@@ -339,7 +339,7 @@ console.timeEnd([label])
 
 [Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
-Stops a timer.  See the [time](#time) method.  
+Stops a timer.  Navigate to the [time](#time) method.  
 
 ---  
 

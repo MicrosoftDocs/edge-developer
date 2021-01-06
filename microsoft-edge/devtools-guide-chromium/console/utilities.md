@@ -3,7 +3,7 @@ description: A reference of convenience commands available in the Microsoft Edge
 title: Console Utilities API Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -29,7 +29,7 @@ The Console Utilities API contains a collection of convenience commands for perf
 > [!WARNING]
 > The following commands only work in the Microsoft Edge DevTools Console.  The commands do not work if run from your scripts.  
 
-Looking for `console.log()`, `console.error()`, and the rest of the `console.*` methods?  See [Console API Reference][DevToolsConsoleApi].  
+For the `console.log()` and `console.error()` methods the rest of the `console.*` methods, navigate to [Console API Reference][DevToolsConsoleApi].  
 
 ## Recently Evaluated Expression  
 
@@ -283,7 +283,7 @@ For more information, navigate to [`console.dir()`][DevToolsConsoleApiConsoleDir
 dirxml(object)
 ```  
 
-Prints an XML representation of the specified object, as seen in the **Elements** tab.  This method is equivalent to the [console.dirxml()][MDNConsoleDirxml] method.  
+Prints an XML representation of the specified object, as displayed in the **Elements** tab.  This method is equivalent to the [console.dirxml()][MDNConsoleDirxml] method.  
 
 ## inspect  
 
@@ -386,7 +386,7 @@ Use `unmonitor(method)` to cease monitoring.
 monitorEvents(object[, events])
 ```  
 
-When one of the specified events occurs on the specified object, the event object is logged to the console.  You may specify a single event to monitor, an array of events, or one of the generic events types that are mapped to a predefined collection of events.  See the following code sample and figure.  
+When one of the specified events occurs on the specified object, the event object is logged to the console.  You may specify a single event to monitor, an array of events, or one of the generic events types that are mapped to a predefined collection of events.  Review the following code sample and figure.  
 
 The following monitors all resize events on the window object.  
 
@@ -431,7 +431,7 @@ In the following figure the sample output after typing a character in the text f
 profile([name])
 ```  
 
-Starts a JavaScript CPU profiling session with an optional name.  The [profileEnd()](#profileend) method completes the profile and displays the results in the **Memory** panel.  <!--See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
+Starts a JavaScript CPU profiling session with an optional name.  The [profileEnd()](#profileend) method completes the profile and displays the results in the **Memory** panel.  <!--Navigate to [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
 
 1.  Run the `profile()` method to start profiling.  
     
@@ -459,7 +459,7 @@ profileEnd('B');
 profileEnd([name])
 ```  
 
-Completes a JavaScript CPU profiling session and displays the results in the **Memory** panel.  You must be running the [profile()](#profile) method.  <!--See also [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
+Completes a JavaScript CPU profiling session and displays the results in the **Memory** panel.  You must be running the [profile()](#profile) method.  <!--Navigate to [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
 
 1.  Run the [profile()](#profile) method to start profiling.  
 1.  Run the `profileEnd()` method to stop profiling and display the results in the **Memory** panel.  

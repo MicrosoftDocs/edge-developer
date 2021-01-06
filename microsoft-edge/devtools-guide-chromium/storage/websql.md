@@ -3,7 +3,7 @@ description: How to view Web SQL data from the Application panel of Microsoft Ed
 title: View Web SQL Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -51,7 +51,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
     
 ## Edit Web SQL data  
 
-You are not able to edit Web SQL data when viewing a Web SQL table, such as in previous above.  But you may run statements from the Web SQL Console that edit or delete tables.  See [Run Web SQL queries](#run-web-sql-queries).  
+You are not able to edit Web SQL data when viewing a Web SQL table, such as in previous above.  But you may run statements from the Web SQL Console that edit or delete tables.  Navigate to [Run Web SQL queries](#run-web-sql-queries).  
 
 ## Run Web SQL queries  
 

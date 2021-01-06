@@ -3,7 +3,7 @@ description: Learn how to use Microsoft Edge DevTools to find ways to make your 
 title: Optimize Website Speed With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -101,12 +101,12 @@ The baseline is a record of how the site performed before you made any performan
     
 1.  Match your audit configuration settings to those in the previous figure.  Here is an explanation of the different options:  
     
-    *   **Device**.  Setting to **Mobile** changes the user agent string and simulates a mobile viewport.  Setting to **Desktop** pretty much just disables the **Mobile** changes.  
-    *   **Audits**.  Disabling a category prevents the Audits panel from running those audits, and excludes those audits from your report.  Leave the other categories enabled, if you want to see the types of recommendations that are provide.  Disabling categories slightly speeds up the auditing process.  
-    *   **Throttling**.  Setting to **Simulated Slow 4G, 4x CPU Slowdown** simulates the typical conditions of browsing on a mobile device.  It is named "simulated" because the Audits panel does not actually throttle during the auditing process.  Instead, it just extrapolates how long the page takes to load under mobile conditions.  The **Applied...** setting, on the other hand, actually throttles your CPU and network, with the tradeoff of a longer auditing process.  
-    *   **Clear Storage**.  Enabling this checkbox clears all storage associated with the page before every audit.  Leave this setting on if you want to audit how first-time visitors experience your site.  Disable this setting when you want the repeat-visit experience.  
+    *   **Device**.  Set to **Mobile** changes the user agent string and simulates a mobile viewport.  Set to **Desktop** pretty much just turns off the **Mobile** changes.  
+    *   **Audits**.  Turn off a category to prevent the **Audits** panel from running those audits, and excludes those audits from your report.  Leave the other categories Turned on, if you want to display the types of recommendations that are provided.  Turn off categories to slightly speed up the auditing process.  
+    *   **Throttling**.  Set to **Simulated Slow 4G, 4x CPU Slowdown** simulates the typical conditions of browsing on a mobile device.  It is named "simulated" because the Audits panel does not actually throttle during the auditing process.  Instead, it just extrapolates how long the page takes to load under mobile conditions.  The **Applied...** setting, on the other hand, actually throttles your CPU and network, with the tradeoff of a longer auditing process.  
+    *   **Clear Storage**.  Turn on the checkbox to clear all storage associated with the page before every audit.  Leave this setting on if you want to audit how first-time visitors experience your site.  Turn off this setting when you want the repeat-visit experience.  
     
-1.  Choose **Run Audits**.  After 10 to 30 seconds, the Audits panel shows you a report of the performance of the site.  
+1.  Choose **Run Audits**.  After 10 to 30 seconds, the **Audits** panel displays a report of the performance of the site.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed.msft.png" alt-text="The report for the Audits panel of the performance of the site" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed.msft.png":::
        The report for the Audits panel of the performance of the site  
@@ -125,7 +125,7 @@ If you ever get an error in your Audits panel report, try running the demo tab f
 
 ### Understand your report  
 
-The number at the top of your report is the overall performance score for the site.  Later, as you make changes to the code, you should see this number rise.  A higher score means better performance.  
+The number at the top of your report is the overall performance score for the site.  Later, as you make changes to the code, the number displayed should rise.  A higher score means better performance.  
 
 :::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-metrics-highlighted.msft.png" alt-text="The overall performance score" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-metrics-highlighted.msft.png":::
    The overall performance score  
@@ -137,7 +137,7 @@ The **Metrics** section provides quantitative measurements of the performance of
    The **Metrics** section  
 :::image-end:::  
 
-Choose the highlighted toggle button in the following figure to see a description for each metric, and choose **Learn More** to read documentation about it.  
+Choose the highlighted toggle button in the following figure to display a description for each metric, and choose **Learn More** to read documentation about it.  
 
 :::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png" alt-text="Choose the highlighted toggle button to expand the Metrics items" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png":::
    Choose the highlighted toggle button to expand the Metrics items  
@@ -161,7 +161,7 @@ Choose an opportunity to learn more about it.
    **Eliminate render-blocking resources** opportunity  
 :::image-end:::  
 
-Choose **Learn More** to see documentation about why an opportunity is important, and specific recommendations on how to fix it.  
+Choose **Learn More** to display documentation about why an opportunity is important, and specific recommendations on how to fix it.  
 
 :::image type="complex" source="../media/speed-web-dev-performance-audits.msft.png" alt-text="Documentation for the Eliminate render-blocking resources opportunity" lightbox="../media/speed-web-dev-performance-audits.msft.png":::
    Documentation for the **Eliminate render-blocking resources** opportunity  
@@ -204,23 +204,23 @@ Before you enable compression, here are a couple of ways to manually check wheth
        Large rows in the network requests table  
     :::image-end:::  
     
-1.  If you do not see the **Size** column in the table of network requests, choose the table header and then choose **Size**.  
+1.  If the **Size** column in the table of network requests is not displayed, choose the table header > **Size**.  
 
 Each **Size** cell shows two values.  The top value is the size of the downloaded resource.  
 The bottom value is the size of the uncompressed resource.  If the two values are the same, then the resource is not being compressed when it is sent over the network.  For example, in the previous figure, the top and bottom values for `bundle.js` are `1.2 MB` and `1.2 MB`.  
 
 Check for compression by inspecting the HTTP headers of a resource:  
 
-1.  Choose **bundle.js**.  
+1.  Choose `bundle.js`.  
 1.  Choose the **Headers** tab.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png" alt-text="The Headers tab" lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png":::
        The **Headers** tab  
     :::image-end:::  
     
-1.  Search the **Response Headers** section for a `content-encoding` header.  You should not see one, meaning that `bundle.js` was not compressed.  When a resource is compressed, this header is usually set to `gzip`, `deflate`, or `br`.  See [Directives][MDNContentEncodingDirectives] for an explanation of these values.  
+1.  Search the **Response Headers** section for a `content-encoding` header.  A `content-encoding` heading is not displayed, meaning that `bundle.js` was not compressed.  When a resource is compressed, this header is usually set to `gzip`, `deflate`, or `br`.  For an explanation of the values, navigate to [Directives][MDNContentEncodingDirectives].  
 
-Enough with the explanations.  Time to make some changes!  Enable text compression by adding a couple of lines of code:  
+Enough with the explanations.  Time to make some changes.  Enable text compression by adding a couple of lines of code:  
 
 1.  In the editor tab, choose **server.js**.  
     
@@ -290,7 +290,7 @@ Most servers really do have simple fixes like this for enabling compression!  Ju
 
 Your report indicates that avoiding enormous network payloads is one of the top opportunities for improving the performance of the page.  Resizing images helps reduce the size of the network payload.  If your user is viewing your images on a mobile device screen that is 500-pixels-wide, there is really no point in sending a 1500-pixel-wide image.  Ideally, you send a 500-pixel-wide image, at most.  
 
-1.  In your report, choose **Avoid enormous network payloads** to see which images should be resized.  It looks like 2 of the jpg files are over 2000 KB, which is bigger than necessary.  
+1.  In your report, choose **Avoid enormous network payloads** to display which images should be resized.  It looks like 2 of the jpg files are over 2000 KB, which is bigger than necessary.  
     
     <!--
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png" alt-text="Details about the properly size images opportunity" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png":::
@@ -300,13 +300,13 @@ Your report indicates that avoiding enormous network payloads is one of the top 
     
 1.  Back in the editor tab, open `src/model.js`.  
 1.  Replace `const dir = 'big'` with `const dir = 'small'`.  This directory contains copies of the same images which have been resized.  
-1.  Audit the page again to see how this change affects load performance.  
+1.  Audit the page again to display how the change affects load performance.  
     
     :::image type="complex" source="../media/speed-glitch-compression-small-images-audits-performance.msft.png" alt-text="An Audits report after resizing images" lightbox="../media/speed-glitch-compression-small-images-audits-performance.msft.png":::
        An Audits report after resizing images  
     :::image-end:::  
     
-Looks like the change only has a minor affect on the overall performance score.  However, one thing that the score does not show clearly is how much network data you are saving your users.  The total size of the old photos was around 5.3 megabytes, whereas now it is only about 0.18 megabytes.  
+The change displays only has a minor affect on the overall performance score.  However, one thing that the score does not show clearly is how much network data you are saving your users.  The total size of the old photos was around 5.3 megabytes, whereas now it is only about 0.18 megabytes.  
 
 #### Resizing images in the real world  
 
@@ -314,13 +314,13 @@ For a small app, doing a one-off resize like this may be good enough.  But for a
 
 *   Resize images during your build process.  
 *   Create multiple sizes of each image during the build process and then use `srcset` in your code.  At runtime, the browser takes care of choosing which size is best for the device.  
-    <!--See [Relative-sized images][relative].  -->
+    <!--Navigate to [Relative-sized images][relative].  -->
     
 <!--[relative]: /web/fundamentals/design-and-ux/responsive/images#relative_sized_images  -->  
 
 *   Use an image CDN that lets you dynamically resize an image when you request it.  
 *   At the very least, optimize each image.  This may create huge savings.  
-  Optimization is when you run an image through a special program that reduces the size of the image file.  See [Essential Image Optimization][EssentialImageOptimization] for more tips.  
+  Optimization is when you run an image through a special program that reduces the size of the image file.  For more tips, navigate to [Essential Image Optimization][EssentialImageOptimization].  
     
 ### Eliminate render-blocking resources  
 
@@ -330,7 +330,7 @@ A render-blocking resource is an external JavaScript or CSS file that the browse
 
 The first task, then, is to find code that you do not need to run on page load.  
 
-1.  Choose **Eliminate render-blocking resources** to see the resources that are blocking:  
+1.  Choose **Eliminate render-blocking resources** to display the resources that are blocking:  
     `lodash.js` and `jquery.js`.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png" alt-text="More information about the Eliminate render-blocking resources opportunity" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png":::
@@ -406,7 +406,7 @@ The **Critical Rendering Path** refers to the code that you need to load a page.
 
 <!--[CRP]: /web/fundamentals/performance/critical-rendering-path/  -->  
 
-*   It is unlikely that you are able to find scripts that you are able to remove outright, but you may find many scripts that you do not need to request during the page load, and instead may be requested asynchronously.  <!--See [Using async or defer][async].  -->  
+*   It is unlikely that you are able to find scripts that you are able to remove outright, but you may find many scripts that you do not need to request during the page load, and instead may be requested asynchronously.  <!--Navigate to [Using async or defer][async].  -->  
 *   If you are using a framework, check if it has a production mode.  This mode may use a feature such as [tree shaking][WebpackTreeShaking] in order to eliminate unnecessary code that is blocking the critical render.  
     
 <!--[async]: /web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer  -->  
@@ -428,7 +428,7 @@ The goal is to use the Performance panel to analyze what work the main thread is
        The **Performance** panel trace of the page load  
     :::image-end:::  
     
-The trace shows activity chronologically, from left to right.  The FPS, CPU, and NET charts at the top give you an overview of frames per second, CPU activity, and network activity.  The block of yellow selected that you see in the figure after the following, the CPU was completely busy with scripting activity.  This is a clue that you may be able to speed up page load by doing less JavaScript work.  
+The trace shows activity chronologically, from left to right.  The FPS, CPU, and NET charts at the top give you an overview of frames per second, CPU activity, and network activity.  The block of yellow highlighted in the figure after the next, the CPU was completely busy with scripting activity.  This is a clue that you may be able to speed up page load by doing less JavaScript work.  
 
 :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png" alt-text="The Overview section of the trace" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png":::
    The Overview section of the trace  
@@ -458,7 +458,7 @@ Investigate the trace to find ways to do less JavaScript work:
     > [!NOTE]
     > Although the requests that your framework makes are usually out of your control, sometimes you may structure your app in a way that causes the framework to run inefficiently.  Restructuring your app to use the framework efficiently is a way to do less main thread work.  However, this requires a deep understanding of how your framework works, and what kind of changes you make in your own code in order to use the framework more efficiently.  
     
-1.  Expand the **Bottom-Up** section.  This tab breaks down what activities took up the most time.  If you do not see anything in the Bottom-Up section, choose the label for **Main** section.  The **Bottom-Up** section only shows information for whatever activity, or group of activity, you have currently selected.  For example, if you chose on one of the `mineBitcoin` activities, the **Bottom-Up** section is only going to show information for that one activity.  
+1.  Expand the **Bottom-Up** section.  This tab breaks down what activities took up the most time.  If nothing is displayed in the Bottom-Up section, choose the label for **Main** section.  The **Bottom-Up** section only shows information for whatever activity, or group of activity, you have currently selected.  For example, if you chose one of the `mineBitcoin` activities, the **Bottom-Up** section is only going to show information for that one activity.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png" alt-text="The Bottom-Up tab" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png":::
        The **Bottom-Up** tab  
@@ -466,7 +466,7 @@ Investigate the trace to find ways to do less JavaScript work:
     
 The **Self Time** column shows you how much time was spent directly in each activity.  For example, in the following figure, about 63% of main thread time was spent on the `mineBitcoin` function.  
 
-Time to see whether using production mode and reducing JavaScript activity may speed up the page load.  Start with production mode:  
+Time to review whether using production mode and reducing JavaScript activity may speed up the page load.  Start with production mode:  
 
 1.  In the editor tab, open `webpack.config.js`.  
 1.  Change `"mode":"development"` to `"mode":"production"`.  
@@ -491,7 +491,7 @@ Reduce JavaScript activity by removing the request to `mineBitcoin`:
 Looks like that last change caused a massive jump in performance!  
 
 > [!NOTE]
-> This section provided a rather brief introduction to the Performance panel.  See [Performance Analysis Reference][DevtoolsEvaluatePerformanceReference] to learn more about how to analyze page performance.  
+> This section provided a rather brief introduction to the Performance panel.  To learn more about how to analyze page performance, navigate to [Performance Analysis Reference][DevtoolsEvaluatePerformanceReference].  
 
 <!--todo: add section when available -->  
 
@@ -504,7 +504,7 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 ## Summary  
 
 *   Whenever you set out to optimize the load performance of a site, always start with an audit.  The audit establishes a baseline, and gives you tips on how to improve.  
-*   Make one change at a time, and audit the page after each change in order to see how that isolated change affects performance.  
+*   Make one change at a time, and audit the webpage after each change in order to display how that isolated change affects performance.  
 
 <!--
 ## Next steps  

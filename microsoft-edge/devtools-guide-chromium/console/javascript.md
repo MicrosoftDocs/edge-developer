@@ -3,7 +3,7 @@ description: Learn how to run JavaScript in the Console.
 title: Get Started With Running JavaScript In The Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020 
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -58,7 +58,7 @@ When building or debugging a page, it is often useful to run statements in the *
        How the **Console** looks after evaluating the expression  
     :::image-end:::  
     
-    Below the code that you evaluated you see `"Hello, Console!"`.  Recall the 4 steps of REPL: read, evaluate, print, loop.  After evaluating your code, a REPL prints the result of the expression.  So `"Hello, Console!"` must be the result of evaluating `document.getElementById('hello').textContent = 'Hello, Console!'`.  
+    `"Hello, Console!"`, is displayed below the code that you evaluated.  Remember the 4 steps of REPL: read, evaluate, print, loop.  After evaluating your code, a REPL prints the result of the expression.  So `"Hello, Console!"` must be the result of evaluating `document.getElementById('hello').textContent = 'Hello, Console!'`.  
     
 ## Run arbitrary JavaScript that is not related to the page  
 
@@ -93,7 +93,7 @@ Sometimes, you just want a code playground where you are able to test some code,
 
 ## Next steps  
 
-<!--See [Run JavaScript][DevToolsConsoleReference] to explore more features related to running JavaScript in the Console.  -->  
+<!--To explore more features related to running JavaScript in the **Console**, navigate to [Run JavaScript][DevToolsConsoleReference].  -->  
 
 <!--todo: add console reference (run javascript) section when available  -->  
 

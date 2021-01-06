@@ -3,7 +3,7 @@ description: Learn how to record heap snapshots with the Microsoft Edge DevTools
 title: How to Record Heap Snapshots
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -27,7 +27,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 Learn how to record heap snapshots with the Microsoft Edge DevTools heap profiler and find memory leaks.  
 
 The Microsoft Edge DevTools heap profiler shows memory distribution by the JavaScript objects and related DOM nodes
-of your page.  Use it to take JavaScript heap \(JS heap\) snapshots, analyze memory graphs, compare snapshots, and find memory leaks.  See also [Objects retaining tree][DevtoolsMemoryProblems101ObjectsRetainingTree].  
+of your page.  Use it to take JavaScript heap \(JS heap\) snapshots, analyze memory graphs, compare snapshots, and find memory leaks.  Navigate to [Objects retaining tree][DevtoolsMemoryProblems101ObjectsRetainingTree].  
 
 ## Take a snapshot  
 
@@ -59,7 +59,7 @@ Choose **Clear all profiles** icon to remove snapshots \(both from DevTools and 
 Closing the DevTools window does not delete profiles from the memory associated with the renderer process.  When reopening DevTools, all previously taken snapshots reappear in the list of snapshots.  
 
 > [!NOTE]
-> Try out this example of [scattered objects][GlitchDevtoolsMemoryExample03] and profile it using the Heap Profiler.  You should see a number of \(object\) item allocations.  
+> Try out this example of [scattered objects][GlitchDevtoolsMemoryExample03] and profile it using the Heap Profiler.  A number of \(object\) item allocations are displayed.  
 
 ## View snapshots  
 
@@ -96,8 +96,8 @@ Top-level entries are "total" lines.
 |:--- |:--- |  
 | **Constructor** | Represents all objects created using this constructor.  |  
 | **Distance** | displays the distance to the root using the shortest simple path of nodes.  |  
-| **Shallow size** | Displays the sum of shallow sizes of all objects created by a certain constructor function.  The shallow size is the size of memory held by an object \(generally, arrays and strings have larger shallow sizes\).  See also [Object sizes][DevtoolsMemoryProblems101ObjectSizes].  |  
-| **Retained size** | Displays the maximum retained size among the same set of objects.  The size of memory that you are able to free after an object is deleted \(and the dependents are made no longer reachable\) is called the retained size.  See also [Object sizes][DevtoolsMemoryProblems101ObjectSizes].  |  
+| **Shallow size** | Displays the sum of shallow sizes of all objects created by a certain constructor function.  The shallow size is the size of memory held by an object \(generally, arrays and strings have larger shallow sizes\).  Navigate to [Object sizes][DevtoolsMemoryProblems101ObjectSizes].  |  
+| **Retained size** | Displays the maximum retained size among the same set of objects.  The size of memory that you are able to free after an object is deleted \(and the dependents are made no longer reachable\) is called the retained size.  Navigate to [Object sizes][DevtoolsMemoryProblems101ObjectSizes].  |  
 
 <!--| **Number of object instances** | Displayed in the # column.  |  -->  
 

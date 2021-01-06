@@ -3,7 +3,7 @@ description: A tutorial on the most popular network-related features in Microsof
 title: Inspect Network Activity In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -27,7 +27,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 This is a hands-on tutorial of some of the most commonly-used DevTools features related
 to inspecting network activity for a page.  
 
-See [Network Reference][DevtoolsNetworkReference] if you want to browse features instead.  
+If you want to browse features, navigate to [Network Reference][DevtoolsNetworkReference].  
 
 <!--TODO: This entire section needs a Microsoft Edge DevTools re-write  -->
 
@@ -103,15 +103,15 @@ To view the network activity that a page causes:
     *   **Type**.  The resource type.  
     *   **Initiator**.  The cause of the resource request.  CHoosing a link in the Initiator column takes you to the source code that caused the request.  
     *   **Time**.  The duration of the request.  
-    *   **Waterfall**.  A graphical representation of the different stages of the request.  Hover over a Waterfall to see a breakdown.  
+    *   **Waterfall**.  A graphical representation of the different stages of the request.  To display a breakdown, hover on a Waterfall.  
     
     > [!NOTE]
-    > The graph above the Network Log is called the Overview.  You will not use the Overview graph in this tutorial, so you may hide it.  See [Hide the Overview pane][DevtoolsReferenceHideOverview].
+    > The graph above the Network Log is called the Overview.  You will not use the Overview graph in this tutorial, so you may hide it.  Navigate to [Hide the Overview pane][DevtoolsReferenceHideOverview].
     
 1.  After you open DevTools, it records network activity in the Network Log.  
     To demonstrate this, first look at the bottom of the **Network Log** and make a mental note of the last activity.  
 1.  Now, select the **Get Data** button in the demo.  
-1.  Look at the bottom of the **Network Log** again.  You should see a new resource called `getstarted.json`.  To cause the webpage to request the file, choose the **Get Data** button.  
+1.  Look at the bottom of the **Network Log** again.  A new resource named `getstarted.json` is displayed.  To cause the webpage to request the file, choose the **Get Data** button.  
     
     :::image type="complex" source="../media/network-glitch-network-new-resource.msft.png" alt-text="A new resource in the Network Log" lightbox="../media/network-glitch-network-new-resource.msft.png":::
        A new resource in the **Network Log**  
@@ -129,7 +129,7 @@ There are also many columns that are hidden by default which you may find useful
     :::image-end:::  
     
     > [!TIP]
-    > See the full URL of a resource by hovering over the cell in the **Name** column.  
+    > To review the full URL of a resource, hover on the cell in the **Name** column.  
     
 ## Simulate a slower network connection  
 
@@ -153,14 +153,14 @@ The network connection of the computer that you use to build sites is probably f
        **Empty Cache And Hard Reload**  
     :::image-end:::  
     
-    On repeat visits, the browser usually serves some files from the [cache][MDNHTTPCache], which speeds up the page load.  **Empty Cache And Hard Reload** forces the browser to go the network for all resources.  This is helpful when you want to see how a first-time visitor experiences a page load.  
+    On repeat visits, the browser usually serves some files from the [cache][MDNHTTPCache], which speeds up the page load.  **Empty Cache And Hard Reload** forces the browser to go the network for all resources.  Use it to display how a first-time visitor experiences a page load.  
     
     > [!NOTE]
     > The **Empty Cache And Hard Reload** workflow is only available when DevTools is open.  
     
 ## Capture screenshots  
 
-Screenshots let you see how a page looked over time while it was loading.  
+Screenshots display how a webpage looks over time while it loads.  
 
 1.  Choose \(![Network settings][ImageSettingsIcon]\) and turn on the **Capture screenshots** checkbox.
 1.  Refresh the page again using the **Empty Cache And Hard Reload** workflow.  Navigate to [Simulate a slower connection](#simulate-a-slower-network-connection) if you need a reminder on how to do this.  
@@ -290,7 +290,7 @@ The **Filter** text box supports many different types of filtering.
        A property filter  
     :::image-end:::  
     
-    See [Filter requests by properties][DevtoolsReferenceProperty] for the full list of filterable properties.  
+    For the full list of filterable properties, navigate to [Filter requests by properties][DevtoolsReferenceProperty].  
     
 1.  Clear the **Filter** text box of any text.  
     
@@ -304,15 +304,15 @@ To focus in on a certain type of file, such as stylesheets:
        Show CSS files only  
     :::image-end:::  
     
-1.  To also see scripts, hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and then choose **JS**.  
+1.  To also display scripts, select and hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and then choose **JS**.  
     
     :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="Show CSS and JS files only" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
        Show CSS and JS files only  
     :::image-end:::  
     
-1.  Choose **All** to remove the filters and see all resources again.  
+1.  To remove the filters and display all resources again, choose **All**.  
     
-See [Filter requests][DevtoolsNetworkReferenceFilter] for other filtering workflows.  
+For other filtering workflows, navigate to [Filter requests][DevtoolsNetworkReferenceFilter].  
 
 ## Block requests  
 

@@ -3,7 +3,7 @@ description: Remote debug live content on an Android device from a Windows or ma
 title: Get Started with Remote Debugging Android Devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -118,7 +118,7 @@ Choose **focus tab**, **reload**, or **close** next to the tab that you want to 
 
 ### Inspect elements  
 
-Go to the **Elements** panel of your DevTools instance, and hover over an element to highlight it in the viewport of your Android device.  
+Navigate to the **Elements** panel of your DevTools instance, and hover over an element to highlight it in the viewport of your Android device.  
 
 You may also select an element on your Android device screen to select it in the **Elements** panel.  Choose **Select Element** \(![Select Element][ImageSelectElementIcon]\) icon on your DevTools instance, and then select the element on your Android device screen.  
 

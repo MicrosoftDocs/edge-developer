@@ -3,7 +3,7 @@ description: Learn about all the ways you are able to pause your code in Microso
 title: How To Pause Your Code With Breakpoints In Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/05/2021
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -125,7 +125,7 @@ Use an XHR breakpoint when you want to break when the request URL of an XHR cont
 > [!NOTE]
 > This feature also works with [Fetch API][MDNFetchApi] requests.  
 
-One example of when this is helpful is when you see that your page is requesting an incorrect URL, and you want to quickly find the AJAX or Fetch source code that is causing the incorrect request.  
+One example of when this is helpful is when your webpage is requesting an incorrect URL, and you want to quickly find the AJAX or Fetch source code that is causing the incorrect request.  
 
 To set an XHR breakpoint:  
 
