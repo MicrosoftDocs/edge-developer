@@ -3,12 +3,11 @@ description: Microsoft Edge Addons Catalog Developer Policies.
 title: Microsoft Edge Addons Catalog Developer Policies
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ---
-
 # Microsoft Edge Addons Catalog Developer Policies  
 
 ## Introduction and Objective of this document  
@@ -221,7 +220,7 @@ If your Extension displays ads, all content displayed must conform to the advert
 
 #### 1.10.3 Quality of advertising  
 
-*   The primary purpose of your Extension must not be to get users to click ads.  
+*   The primary purpose of your Extension must not be convincing users to open ads.  
 *   Your Extension must not do anything that interferes with or diminishes the visibility, value, or quality of any ads that it does display.  
 
 #### 1.10.4 Promotions  
@@ -315,9 +314,7 @@ If your Extension provides content \(such as user-generated, retail, or other we
 
 ### 2.13 Videos  
 
-If you submit a promotional video in the listing, it should follow all the content guidelines mentioned in this policy.  If you choose to provide a YouTube link, you must ensure that advertisements are disabled for the specific videos that you want to embed.  For more information about how ads are enabled and disabled on YouTube, see [support.google.com/youtube/answer/2531367?ref_topic=7072227][GoogleYoutubeAnswer2531367Topic7072227] and [support.google.com/youtube/answer/132596][GoogleYoutubeAnswer132596].  
-
-<!-- image links -->  
+If you submit a promotional video in the listing, it should follow all the content guidelines mentioned in this policy.  If you choose to provide a YouTube link, you must ensure that advertisements are disabled for the specific videos that you want to embed.  For more information about how ads are enabled and disabled on YouTube, navigate to [support.google.com/youtube/answer/2531367?ref_topic=7072227][GoogleYoutubeAnswer2531367Topic7072227] and [support.google.com/youtube/answer/132596][GoogleYoutubeAnswer132596].  
 
 <!-- links -->  
 

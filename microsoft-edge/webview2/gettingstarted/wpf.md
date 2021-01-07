@@ -3,16 +3,15 @@ description: Getting started guide with WebView2 for WPF apps
 title: Getting started with WebView2 for WPF apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView2, browser control, edge html, getting started, Getting Started, .NET
 ---
-
 # Getting started with WebView2 in WPF
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2](../index.md).  For more information on individual APIs, see [API reference](/dotnet/api/microsoft.web.webview2.wpf).  
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2](../index.md).  For more information on individual APIs, navigate to [API reference](/dotnet/api/microsoft.web.webview2.wpf).  
 
 ## Prerequisites  
 
@@ -119,7 +118,7 @@ Next add a WebView to your application.
     </DockPanel>
     ```  
     
-1.  Press `F5` to build and run your project.  Confirm that your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).  
+1.  Select `F5` to build and run your project.  Confirm that your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).  
     
     :::image type="complex" source="./media/wpf-gettingstarted-microsoft.png" alt-text="Microsoft.com":::
        Microsoft.com
@@ -174,7 +173,7 @@ Add the ability to allow users to change the URL that the WebView2 control displ
     }
     ```  
     
-    Press `F5` to build and run your project.  Enter a new URL in the address bar, and select **Go**.  For example, enter `https://www.bing.com`.  Confirm that the WebView2 control navigates to the URL.  
+    Select `F5` to build and run your project.  Enter a new URL in the address bar, and select **Go**.  For example, enter `https://www.bing.com`.  Confirm that the WebView2 control navigates to the URL.  
     
     > [!NOTE]
     > Make sure a complete URL is entered in the address bar.  An `ArgumentException` is thrown if the URL does not start with `http://` or `https://`.  
@@ -193,7 +192,7 @@ During webpage navigation, the WebView2 control raises events. The application t
 *   `HistoryChanged`  
 *   `NavigationCompleted`  
 
-For more information, see [Navigation Events](../concepts/navigation-events.md).  
+For more information, navigate to [Navigation Events](../concepts/navigation-events.md).  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="Navigation events":::
    Navigation events
@@ -230,7 +229,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 In the constructor, EnsureHttps is registered as the event handler on the `NavigationStarting` event on the WebView2 control.  
 
-Press `F5` to build and run your project.  Confirm that when navigating to an HTTP site, the WebView **remains unchanged**.  However, the WebView navigates to HTTPS sites.  
+Select `F5` to build and run your project.  Confirm that when navigating to an HTTP site, the WebView **remains unchanged**.  However, the WebView navigates to HTTPS sites.  
 
 ## Step 6 - Scripting  
 
@@ -250,7 +249,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 }
 ```  
 
-Press `F5` to build and run your project.  Confirm that the application displays an alert when you navigate to a site that doesn't use HTTPS.  
+Select `F5` to build and run your project.  Confirm that the application displays an alert when you navigate to a site that doesn't use HTTPS.  
 
 :::image type="complex" source="./media/wpf-gettingstarted-https.png" alt-text="HTTPS":::
    HTTPS
@@ -318,7 +317,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
     }
     ```  
     
-    Press `F5` to build and run the app.  Now, the address bar displays the URI in the WebView2 control. When you successfully navigate to a new URI, the WebView2 control alerts the user of the URI that's displayed in the WebView2 control.  
+    Select `F5` to build and run the app.  Now, the address bar displays the URI in the WebView2 control. When you successfully navigate to a new URI, the WebView2 control alerts the user of the URI that's displayed in the WebView2 control.  
     
     :::image type="complex" source="./media/wpf-gettingstarted-searchbar.png" alt-text="addressBar":::
        addressBar
@@ -328,9 +327,9 @@ Congratulations, you built your first WebView2 app!
 
 ## Next steps  
 
-*   For a comprehensive example of WebView2 capabilities, see [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) on GitHub.  
-*   For more detailed information about WebView2 APIs, see [API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2).  
-*   For more information about  WebView2, see [WebView2 Resources](../index.md#next-steps).  
+*   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) on GitHub.  
+*   For more detailed information about WebView2 APIs, navigate to [API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2).  
+*   For more information about  WebView2, navigate to [WebView2 Resources](../index.md#next-steps).  
 
 ## Getting in touch with the Microsoft Edge WebView team  
 

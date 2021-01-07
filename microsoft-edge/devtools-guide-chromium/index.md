@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge (Chromium) Developer Tools
 title: Microsoft Edge (Chromium) Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -39,7 +39,7 @@ To open the DevTools
 *   Select `F12` 
 *   Select `Ctrl`+`Shift`+`I` on Windows/Linux \(`Command`+`Option`+`I` on macOS\)  
     
-If you want to see the HTML or CSS for an element on your site, right-click the element and select **Inspect** to jump into the Elements panel.  You may also press `Ctrl`+`Shift`+`C` on Windows/Linux \(`Command`+`Option`+`C` on macOS\) to open the DevTools in **Inspect Element Mode** which lets you select an element on the site and see the HTML and CSS in the **Elements** panel.  
+If you want to see the HTML or CSS for an element on your site, hover on the element, open the contextual menu \(right-click\), and select **Inspect** to jump into the Elements panel.  You may also select `Ctrl`+`Shift`+`C` on Windows/Linux \(`Command`+`Option`+`C` on macOS\) to open the DevTools in **Inspect Element Mode** which lets you select an element on the site and see the HTML and CSS in the **Elements** panel.  
 
 If you want to see logs from your front-end JavaScript code or quickly run some script, select `Ctrl`+`Shift`+`J` on Windows/Linux or `Command`+`Option`+`J` on macOS to launch the **Console** panel in the DevTools.  
 
@@ -97,7 +97,7 @@ These shortcuts control the main DevTools window, work across all tools, or both
 |:--- |:--- | :--- |  
 | Show/Hide DevTools \(opens to last viewed panel\) | `F12` or `Ctrl`+`Shift`+`I` | `Command`+`Option`+`I` |  
 | Show the Console panel | `Ctrl`+`Shift`+`J` | `Command`+`Option`+`J` |  
-| Show the DevTools in **Inspect Element Mode** which lets you choose an element on the site and see the HTML and CSS in the **Elements** panel | `Ctrl`+`Shift`+`C` | `Command`+`Option`+`C` |  
+| Show the DevTools in **Inspect Element Mode** which lets you choose an element on the site and display the HTML and CSS in the **Elements** panel | `Ctrl`+`Shift`+`C` | `Command`+`Option`+`C` |  
 | Show Settings | `?` or `Fn`+`F1` | `?` or `Fn`+`F1` |  
 | Show the next panel | `Ctrl`+`]` | `Command`+`]` |  
 | Show the previous panel | `Ctrl`+`[` | `Command`+`[` |  
@@ -106,15 +106,15 @@ These shortcuts control the main DevTools window, work across all tools, or both
 | Toggle **Inspect Element Mode** which lets you select an element on the site and see the HTML and CSS in the **Elements** panel | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |  
 | Show the Command Menu | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |  
 | Show/Hide the Drawer | `Esc` | `Esc` |  
-| Refresh.  Fefreshes the page using the cache.  | `F5` or `Ctrl`+`R` | `Command`+`R` |  
-| Hard Refresh.  Forces Microsoft Edge to download resources again and reload.  It is possible that the used resources may come from a cached version | `Ctrl`+`F5` or `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
+| Refresh.  Refreshes the page using the cache.  | `F5` or `Ctrl`+`R` | `Command`+`R` |  
+| Hard Refresh.  Forces Microsoft Edge to download resources again and refresh.  It is possible that the used resources may come from a cached version | `Ctrl`+`F5` or `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | Search for text within the current panel.  Not supported in the Audits, Application, and Security panels | `Ctrl`+`F` | `Command`+`F` |  
 | Show the Search panel in the Drawer, which lets you search for text across all loaded resources | `Ctrl`+`Shift`+`F` | `Command`+`Option`+`F` |  
 | Open a file in the Sources panel | `Ctrl`+`O` or `Ctrl`+`P` | `Command`+`O` or `Command`+`P` |  
 | Zoom in | `Ctrl`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Zoom out | `Ctrl`+`-` | `Command`+`-` |  
 | Restore default zoom level | `Ctrl`+`0` | `Command`+`0` |  
-| Run snippet | `Ctrl`+`O` or `Ctrl`+`P`, type `!` followed by the name of the script, then press `Enter` | Press `Command`+`O` or `Command`+`P`, type `!` followed by the name of the script, then press `Enter` |  
+| Run snippet | `Ctrl`+`O` or `Ctrl`+`P`, type `!` followed by the name of the script, then select `Enter` | Select `Command`+`O` or `Command`+`P`, type `!` followed by the name of the script, then select `Enter` |  
 | Show non-editable HTML source code in a new tab | `Ctrl`+`U` | N/A |  
 
 > [!NOTE]

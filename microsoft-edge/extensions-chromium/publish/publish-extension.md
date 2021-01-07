@@ -3,7 +3,7 @@ description: Publish Microsoft Edge (Chromium) extensions to Microsoft Edge add-
 title: Publish your extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -16,7 +16,7 @@ Publishing your extension to the Microsoft Edge add-ons catalog increases the re
 
 ## Before you begin  
 
-At this point, you should have a working prototype of your extension ready.  For information on how to create an extension, refer to the [Getting started tutorial][ExtensionsGettingStarted].  
+At this point, you should have a working prototype of your extension ready.  For information on how to create an extension, navigate to the [Getting started tutorial][ExtensionsGettingStarted].  
 
 To publish your extension to the Microsoft Edge add-ons website, you must have an active developer account on [Partner Center][MicrosoftPartnerCenter].  To open a new developer account and register to the Microsoft Edge add-ons program, follow the process mentioned in the [Developer registration][DeveloperRegistration] guide.  
 
@@ -24,12 +24,12 @@ Create a zip file that represents your extension package.  Your extension packag
 
 *   The extension manifest specifying details like the name of the extension, short description, permissions, and default language.  
 *   Images and other files required by your extension.  
-
+    
 The following fields in the manifest are automatically included in your store listing details and are not able to be modified from the store listings page, which is described later in this topic.  Ensure the fields are filled-out to match your preferred display on the store details page, before uploading your package to Partner Center.  For an example of the code required for the manifest file, review the manifest file basics.  
 
 *   `Name` field in the manifest file, which is the **Display name** on the store details page.  
 *   `Description` field in the manifest file, which is the **Short description** on the store details page.  Provide a short, catchy description to display at the top of the listing for your extension.  When included, the short description specified in the extension manifest file is displayed in your store listing.  If a short description is not included in the manifest file, the first few lines of Description are displayed.  You should provide a brief description to avoid content repetition on your store listing page.  
-
+    
 ## Submit your extension to Microsoft Edge add-ons store  
 
 To submit your extension to [Partner Center][MicrosoftPartnerCenter], use the following steps.  
@@ -54,10 +54,9 @@ Choose one of the following visibility options to define if your extension is di
 
 *   `Public` \(default\)  
     Public allows extensions to be discoverable to everyone through search, browsing in the Microsoft Edge add-ons catalog, or using the listing URL to your extension in the Microsoft Edge add-ons store.  The listing URL is available on your Partner Center dashboard on the Extension **Overview** page.  
-
 *   `Hidden`  
     Hidden removes extensions from search results or browsing in the Microsoft Edge add-ons catalog.  To distribute hidden extensions in the Microsoft Edge add-ons store, you must share the listing URL to the extension with your customers.  
-
+    
 > [!NOTE]
 > You may change the visibility of your extension from **Public** to **Hidden**.  Users who installed your extension while the visibility was set to public retain access to your extension and receive any updates you make available through the Microsoft Edge add-ons website.  
 
@@ -78,12 +77,12 @@ On the **Properties page**, enter the following information to specify propertie
 |:--- |:--- |  
 | Category \(required\) | The category that best describes your extension.  Listing your extension in the right category helps users find your extension easily and understand more about it.  |  
 | Privacy policy requirements \(required\) | Indicate if your extension accesses, collects, or transmits any personal information.  Your extension may fail the certification step if you choose **Yes** and you do not provide a `Privacy policy URL`.  |  
-| Privacy policy URL | A valid privacy policy URL to communicate how your extension complies with privacy laws and regulations.  You are responsible for ensuring your extension complies with privacy laws and regulations, and for providing a valid privacy policy URL, if necessary.  Provide a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension.  To determine if your extension requires a privacy policy, go to [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement] and [Microsoft Edge add-ons catalog developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |  
+| Privacy policy URL | A valid privacy policy URL to communicate how your extension complies with privacy laws and regulations.  You are responsible for ensuring your extension complies with privacy laws and regulations, and for providing a valid privacy policy URL, if necessary.  Provide a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension.  To determine if your extension requires a privacy policy, navigate to [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement] and [Microsoft Edge add-ons catalog developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |  
 | Website URL | A web page that provides additional information about your extension.  The `Website URL` must point to a page on your own website, not the web listing for your extension in the Microsoft Edge add-ons catalog.  The `Website URL` helps users learn more about your extension, its features, and any other relevant information.  |  
 | Support contact details | The URL to your support webpage, or the email address to contact your support team.  |  
-| Mature content | Checkbox to specify if your extension includes mature content.  Extension rating helps determine the appropriate age group of the target audience of your extension.  To help determine if your extension has mature content, go to [Microsoft Edge add-ons catalog developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |  
+| Mature content | Checkbox to specify if your extension includes mature content.  Extension rating helps determine the appropriate age group of the target audience of your extension.  To help determine if your extension has mature content, navigate to [Microsoft Edge add-ons catalog developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |  
 
-Select **Save** to continue to the **Store listings** section.  
+Choose **Save** to continue to the **Store listings** section.  
 
 #### Step 5: Add Store listing details for your extension  
 
@@ -110,8 +109,8 @@ The information provided in the following section is displayed to users that vis
 Ensure your video meets the following requirements.  
 
 *   Verify that the content of the YouTube video complies with the [Microsoft Edge Addons Catalog Developer Policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies] topic.  
-*   Turn off advertisements on your video.  For more information, go to [Set your default ad formats][GoogleYoutubeAnswer2531367Topic7072227] and [Ads on embedded videos][GoogleYoutubeAnswer132596].  
-*   Turn on embedding for your videos.  For more information, go to [Embed videos & playlists][GoogleYoutubeAnswer171780].  
+*   Turn off advertisements on your video.  For more information, navigate to [Set your default ad formats][GoogleYoutubeAnswer2531367Topic7072227] and [Ads on embedded videos][GoogleYoutubeAnswer132596].  
+*   Turn on embedding for your videos.  For more information, navigate to [Embed videos & playlists][GoogleYoutubeAnswer171780].  
 
 Perform the following steps to submit the YouTube video URL of your video.  
 
@@ -119,14 +118,14 @@ Perform the following steps to submit the YouTube video URL of your video.
 1.  Under the video, choose **Share** > **Embed**.  
 1.  Copy the HTML code that is displayed.  
 1.  On the store listing details page, paste the HTML code in the `YouTube video URL` field.  
-
+    
 ##### Search terms requirements  
 
 Search terms must meet the following requirements.  
 
 *   You may enter search terms to use up to a maximum of 21 words.  Whether used as single words, phrases, or a combination of both, you are only allowed a maximum of 21 words.  
 *   Up to a maximum of seven search terms:  single word or phrases.  Each search term has a character limit of 30 characters.  
-
+    
 #### Step 6: Complete your submission  
 
 On the **Submit your extension** page, add notes for certification to help test your extension.  
@@ -142,7 +141,7 @@ Ensure you include the following information, as necessary.
 *   Expected differences in functionality based on region or other user settings.  
 *   If your submission is an update to an existing extension, include information about the changes made to the extension.  
 *   Any additional information that testers must understand about your submission.  
-
+    
 After providing the information, select **Publish** to submit your extension to the Microsoft Edge add-ons catalog.  Your submission proceeds to the certification step.  The certification process may take up to seven business days after your submission.  
 
 When your submission passes certification, your extension is published in the Microsoft Edge add-ons catalog.  The status of your extension in the Partner Center dashboard changes to `In the Store`.  
@@ -163,7 +162,7 @@ When your submission passes certification, your extension is published in the Mi
 
 [ExtensionsSupportForm]: https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "Extensions New Support Request | Microsoft Support"  
 
-[GoogleYoutubeAnswer2531367Topic7072227]: https://support.google.com/youtube/answer/2531367?ref_topic=7072227 "Set your default ad formats - YouTube Help"  
+[GoogleYoutubeAnswer2531367Topic7072227]: https://support.google.com/youtube/answer/2531367?ref_topic=7072227 "Set your default ad formats | YouTube Help"  
 
-[GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Ads on embedded videos - YouTube Help"
-[GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "Embed videos & playlists - YouTube Help"  
+[GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Ads on embedded videos | YouTube Help"
+[GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "Embed videos & playlists | YouTube Help"  

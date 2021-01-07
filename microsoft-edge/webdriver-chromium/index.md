@@ -3,7 +3,7 @@ description: Learn how to test your website or app in Microsoft Edge or automate
 title: WebDriver (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/02/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -42,9 +42,9 @@ To begin automating tests, use the following steps to ensure that the WebDriver 
     
     <!--  
     > [!NOTE] 
-    > For more information about test automation using Microsoft Edge (EdgeHTML), see [Microsoft WebDriver for Microsoft Edge (EdgeHTML)][Webdriver].  
+    > For more information about test automation using Microsoft Edge (EdgeHTML), navigate to [Microsoft WebDriver for Microsoft Edge (EdgeHTML)][Webdriver].  
     -->  
-
+    
 ## Choose a WebDriver language binding  
 
 The last component you must download is a language-specific client driver to translate your code \(Python, Java, C\#, Ruby, JavaScript\) into commands the Microsoft Edge Driver runs in Microsoft Edge \(Chromium\).  
@@ -306,7 +306,7 @@ If you use [Chocolatey][Chocolatey] as your package manager, install the Microso
 choco install selenium-chromium-edge-driver
 ```  
 
-For more information, see [Selenium Chromium Edge Driver on Chocolatey][ChocolateyPackagesSeleniumChromiumEdgeDriver].  
+For more information, navigate to [Selenium Chromium Edge Driver on Chocolatey][ChocolateyPackagesSeleniumChromiumEdgeDriver].  
 
 ### Docker  
 
@@ -316,7 +316,7 @@ If you use [Docker][DockerHub], download a pre-configured image with Microsoft E
 docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 ```  
 
-For more information, see [container on Docker Hub][DockerHubMsedgedriver].  
+For more information, navigate to [container on Docker Hub][DockerHubMsedgedriver].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

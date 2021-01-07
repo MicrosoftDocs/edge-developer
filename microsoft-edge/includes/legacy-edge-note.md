@@ -3,11 +3,11 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 07/28/2020
+ms.date: 01/07/2021
 ---
 
 > [!NOTE]
-> This documentation targets the [legacy version of Microsoft Edge][MicrosoftSupport44533505].  For information on the new Microsoft Edge, see [Microsoft Edge (Chromium) DevTools][DevtoolsGuideChromium].  
+> This documentation targets the [legacy version of Microsoft Edge][MicrosoftSupport44533505].  For information on the new Microsoft Edge, navigate to [Microsoft Edge (Chromium) DevTools][DevtoolsGuideChromium].  
 
 <!-- links -->  
 

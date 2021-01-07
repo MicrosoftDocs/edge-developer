@@ -3,16 +3,15 @@ description: Getting started guide with WebView2 for Win32 apps
 title: Getting started with WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
-
 # Getting started with WebView2  
 
-The following content walks you through the commonly used functionalities of [WebView2][Webview2Index] and provides a starting point for creating your first WebView2 app.  For more information about individual WebView2 APIs, see [API reference][Webview2ReferenceWin32].  
+The following content walks you through the commonly used functionalities of [WebView2][Webview2Index] and provides a starting point for creating your first WebView2 app.  For more information about individual WebView2 APIs, navigate to [API reference][Webview2ReferenceWin32].  
 
 ## Prerequisites  
 
@@ -21,13 +20,13 @@ The following content walks you through the commonly used functionalities of [We
     > [!NOTE]
     > The WebView team recommends using the Canary channel and the minimum required version is 82.0.488.0.  
     
-*   [Visual Studio][MicrosoftVisualstudioMain] 2015 or later with C++ support installed.  
+*   [Microsoft Visual Studio][MicrosoftVisualstudioMain] 2015 or later with C++ support installed.  
 
 ## Step 1 - Create a single-window win32 app  
 
 Start with a basic desktop project that contains a single main window.  To better focus the walkthrough, you are using modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)][CppWindowsWalkthroughCreatingDesktopApplication] for your sample app.  To download the modified sample and get started, navigate to [WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].  
 
-In Visual Studio, open `WebView2GettingStarted.sln`.  If you are using an older version of Visual Studio, hover on the **WebView2GettingStarted** project, open the contextual menu \(right-click\), and select **Properties**.  Under **Configuration Properties** > **General**, modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and Visual Studio toolset \(VS toolset\) available to you.  
+In Visual Studio, open `WebView2GettingStarted.sln`.  If you are using an older version of Visual Studio, hover on the **WebView2GettingStarted** project, open the contextual menu \(right-click\), and select **Properties**.  Under **Configuration Properties** > **General**, modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and Visual Studio toolset available to you.  
 
 :::image type="complex" source="../media/tool-version.png" alt-text="Tool version" lightbox="../media/tool-version.png":::
    Tool version  
