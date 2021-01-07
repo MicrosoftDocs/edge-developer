@@ -118,7 +118,7 @@ Choose **focus tab**, **reload**, or **close** next to the tab that you want to 
 
 ### Inspect elements  
 
-Navigate to the **Elements** panel of your DevTools instance, and hover over an element to highlight it in the viewport of your Android device.  
+Navigate to the **Elements** panel of your DevTools instance, and hover on an element to highlight it in the viewport of your Android device.  
 
 You may also select an element on your Android device screen to select it in the **Elements** panel.  Choose **Select Element** \(![Select Element][ImageSelectElementIcon]\) icon on your DevTools instance, and then select the element on your Android device screen.  
 

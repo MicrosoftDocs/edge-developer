@@ -365,10 +365,10 @@ A red bar above the **FPS** chart is a warning that the frame rate dropped so lo
 
 The **Frames** section tells you exactly how long a particular frame took.  
 
-Hover over a frame to view a tooltip with more information about it.  
+Hover on a frame to view a tooltip with more information about it.  
 
-:::image type="complex" source="../media/evaluate-performance-performance-frames-hover.msft.png" alt-text="Hover over a frame" lightbox="../media/evaluate-performance-performance-frames-hover.msft.png":::
-   Hover over a frame  
+:::image type="complex" source="../media/evaluate-performance-performance-frames-hover.msft.png" alt-text="Hover on a frame" lightbox="../media/evaluate-performance-performance-frames-hover.msft.png":::
+   Hover on a frame  
 :::image-end:::  
 
 Choose a frame to view more information about the frame in the **Summary** tab.  DevTools outlines the selected frame in blue.  
@@ -447,7 +447,7 @@ When analyzing a section like **Network** or **Main**, sometimes you need a more
 
 Navigate to [Capture screenshots while recording](#capture-screenshots-while-recording) to learn how to turn on screenshots.  
 
-Hover over the **Overview** to view a screenshot of how the page looked during that moment of the recording.  The **Overview** is the section that contains the **CPU**, **FPS**, and **NET** charts.  
+Hover on the **Overview** to view a screenshot of how the page looked during that moment of the recording.  The **Overview** is the section that contains the **CPU**, **FPS**, and **NET** charts.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-screenshots-hover.msft.png" alt-text="View a screenshot" lightbox="../media/evaluate-performance-performance-screenshots-hover.msft.png":::
    View a screenshot  
@@ -476,7 +476,7 @@ To view advanced layers information about a frame:
        The **Layers** pane  
     :::image-end:::  
     
-Hover over a layer to highlight it in the diagram.  
+Hover on a layer to highlight it in the diagram.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png" alt-text="Highlight a layer" lightbox="../media/evaluate-performance-performance-frames-document-nav-bar-highlighted.msft.png":::
    Highlight a layer  

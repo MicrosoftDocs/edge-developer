@@ -285,7 +285,7 @@ Use the **Watch** pane to watch the values of custom expressions.  You may watch
 
 *   Choose the **Add Expression** \(![Add Expression][ImageAddExpressionIcon]\) button to create a new watch expression.  
 *   Choose the **Refresh** \(![Refresh][ImageRefreshIcon]\) button to refresh the values of all existing expressions.  Values automatically refresh while stepping through code.  
-*   Hover over an expression and choose the **Delete Expression** \(![Delete Expression][ImageDeleteExpressionIcon]\) button to delete it.  
+*   Hover on an expression and choose the **Delete Expression** \(![Delete Expression][ImageDeleteExpressionIcon]\) button to delete it.  
 
 ## Make a minified file readable  
 

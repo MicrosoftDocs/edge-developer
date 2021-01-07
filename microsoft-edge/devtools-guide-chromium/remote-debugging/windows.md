@@ -119,7 +119,7 @@ Determine the content you want to debug and choose **inspect**.  The Microsoft E
 
 ### Inspect elements  
 
-For example, try inspecting an element.  Navigate to the **Elements** panel of your DevTools instance on the client, and hover over an element to highlight it in the viewport of the host device.  
+For example, try inspecting an element.  Navigate to the **Elements** panel of your DevTools instance on the client, and hover on an element to highlight it in the viewport of the host device.  
 
 You may also tap an element on your host device screen to choose it in the **Elements** panel.  Choose **Select Element** on your DevTools instance on the client, and then tap the element on your host device screen.  
 

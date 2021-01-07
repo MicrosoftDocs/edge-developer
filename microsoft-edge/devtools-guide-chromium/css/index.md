@@ -104,7 +104,7 @@ Use the **Styles** tab to permanently apply a CSS pseudostate to an element.  De
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.  
 
 1.  [Open CSS Examples](#open-css-examples).  
-1.  Hover over the `Hover Over Me!` text.  The background color changes.  
+1.  Hover on the `Hover Over Me!` text.  The background color changes.  
 1.  Hover on the `Hover Over Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.  
 1.  In the **Styles** tab, choose **:hov**.  
 1.  Check the **:hover** checkbox.  The background color changes like before, even though you are not actually hovering over the element.  
@@ -122,7 +122,7 @@ Use the **Box Model** interactive diagram in the **Styles** tab to change the wi
 
 1.  [Open CSS Examples](#open-css-examples).  
 1.  Hover on the `Change My Margin!` text, open the contextual menu \(right-click\), and choose **Inspect**.  
-1.  In the **Box Model** diagram in the **Styles** tab, hover over **padding**.  The padding of an element is highlighted in the viewport.  
+1.  In the **Box Model** diagram in the **Styles** tab, hover on **padding**.  The padding of an element is highlighted in the viewport.  
 
     > [!NOTE]
     > Depending on the size of your DevTools window, you may need to scroll to the bottom of the **Styles** tab to display the **Box Model**.  
@@ -132,8 +132,8 @@ Use the **Box Model** interactive diagram in the **Styles** tab to change the wi
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/css-elements-change-my-margin-styles-padding.msft.png" alt-text="Hover over the padding of the element" lightbox="../media/css-elements-change-my-margin-styles-padding.msft.png":::
-             Hover over the padding of the element  
+          :::image type="complex" source="../media/css-elements-change-my-margin-styles-padding.msft.png" alt-text="Hover on the padding of the element" lightbox="../media/css-elements-change-my-margin-styles-padding.msft.png":::
+             Hover on the padding of the element  
           :::image-end:::  
        :::column-end:::
        :::column span="":::

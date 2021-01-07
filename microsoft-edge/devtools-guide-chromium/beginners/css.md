@@ -360,8 +360,8 @@ Complete the following actions to add new rulesets in DevTools.
     
 1.  Hover your mouse over the **Home** link.  The background of the link turns green.  
     
-    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="Hover over the Home link to reveal its green background" lightbox="../media/beginners-css-rule5.msft.png":::
-       Hover over the Home link to reveal its green background  
+    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="Hover on the Home link to reveal its green background" lightbox="../media/beginners-css-rule5.msft.png":::
+       Hover on the Home link to reveal its green background  
     :::image-end:::  
     
 ## Re-use styles across pages with external stylesheets  

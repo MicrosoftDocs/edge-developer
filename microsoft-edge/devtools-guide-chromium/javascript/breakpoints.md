@@ -106,7 +106,7 @@ To set a DOM change breakpoint:
 1.  Choose the **Elements** tab.  
 1.  Go the element on which you want to set the breakpoint.  
 1.  Hover on the element and open the contextual menu \(right-click\).  
-1.  Hover over **Break on**, then choose **Subtree modifications**, **Attribute modifications**, or **Node removal**.  
+1.  Hover on **Break on**, then choose **Subtree modifications**, **Attribute modifications**, or **Node removal**.  
     
     :::image type="complex" source="../media/javascript-elements-break-on-subtree-modifications.msft.png" alt-text="The context menu for creating a DOM change breakpoint" lightbox="../media/javascript-elements-break-on-subtree-modifications.msft.png":::
        The context menu for creating a DOM change breakpoint  

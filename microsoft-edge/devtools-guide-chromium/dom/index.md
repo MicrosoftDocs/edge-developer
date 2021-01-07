@@ -185,7 +185,7 @@ Drag nodes to reorder them.
 You are able to force nodes to remain in states including `:active`, `:hover`, `:focus`, `:visited`, and `:focus-within`.  
 
 1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Force state**, hover over **The Lord of the Flies**.  The background color becomes orange.  
+1.  Under **Force state**, hover on **The Lord of the Flies**.  The background color becomes orange.  
     1.  Hover on **The Lord of the Flies**, open the contextual menu \(right-click\), and choose **Inspect**.  
     1.  Hover on `<li class="demo--hover">The Lord of the Flies</li>`, open the contextual menu \(right-click\), and choose **Force State** > **:hover**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.  The background color remains orange even though you are not actually hovering over the node.  
 
@@ -229,7 +229,7 @@ When you inspect a node, the `== $0` text next to the node means that you may re
             The result of the first `$0` expression in the **Console**  
         :::image-end:::  
         
-    1.  Hover over the result.  The node is highlighted in the viewport.  
+    1.  Hover on the result.  The node is highlighted in the viewport.  
     1.  Choose `<li>Dune</li>` in the DOM Tree, type `$0` in the Console again, and then select `Enter` again.  Now, `$0` evaluates to `<li>Dune</li>`.  
         
         :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png" alt-text="The result of the second $0 expression in the Console" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png":::

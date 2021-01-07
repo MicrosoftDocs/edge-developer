@@ -119,7 +119,7 @@ Choose, hold, and drag your mouse left and right across the overview to zoom in 
 
 Choose a function to view the definition in the **Sources** panel.  
 
-Hover over a function to display the name and timing data.  The following information is provided.  
+Hover on a function to display the name and timing data.  The following information is provided.  
 
 | Detail | Description |  
 |:--- |:--- |  

@@ -26,7 +26,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This article is a reference of keyboard shortcuts in Microsoft Edge DevTools.
 
-You may also find shortcuts in tooltips.  Hover over a UI element of DevTools
+You may also find shortcuts in tooltips.  Hover on a UI element of DevTools
 to display the tooltip.  If the element has a shortcut, the tooltip includes it.
 
 ## Keyboard shortcuts for opening DevTools  

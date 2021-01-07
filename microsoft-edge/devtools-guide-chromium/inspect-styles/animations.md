@@ -96,7 +96,7 @@ To capture an animation, just perform the interaction that triggers the animatio
 
 After you capture an animation, there are a few ways to replay it:  
 
-*   Hover over the thumbnail in the **Overview** pane to view a preview of it.  
+*   Hover on the thumbnail in the **Overview** pane to view a preview of it.  
 *   Choose the Animation Group from the **Overview** pane \(so that it is displayed in the **Details** pane\) and choose the **replay** \(![replay icon][ImageReplayButtonIcon]\) icon.  The animation is replayed in the viewport.  Choose the **animation speed** \(![animation speed icons][ImageAnimationSpeedButtonsIcon]\) icons to change the preview speed of the currently selected Animation Group.  You may use the red vertical bar to change your current position.  
 *   Choose and drag the red vertical bar to scrub the viewport animation.  
     
@@ -108,10 +108,10 @@ After you capture an Animation Group, choose on it from the **Overview** pane to
    Animation Group details  
 :::image-end:::  
 
-Hover over an animation to highlight it in the viewport.  Choose the animation to select it in the **Elements** panel.  
+Hover on an animation to highlight it in the viewport.  Choose the animation to select it in the **Elements** panel.  
 
-:::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Hover over the animation to highlight it in viewport" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
-   Hover over the animation to highlight it in viewport  
+:::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Hover on the animation to highlight it in viewport" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
+   Hover on the animation to highlight it in viewport  
 :::image-end:::  
 
 The leftmost, darker section of an animation is the definition.  The right, more faded section represents iterations.  For example, in the following figure, sections two and three represent iterations of section one.  

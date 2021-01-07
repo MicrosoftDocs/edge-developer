@@ -298,7 +298,7 @@ When [adding a new style rule](#add-a-style-rule), choose and hold **New Style R
 
 Complete the following actions to add a style rule to a specific location in the **Styles** tab.  
 
-1.  Hover over the style rule that is directly above where you want to add your new style rule.  
+1.  Hover on the style rule that is directly above where you want to add your new style rule.  
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).  
 1.  Choose **Insert Style Rule Below** \(![Insert Style Rule Below icon][ImageNewStyleRuleIcon]\).  
 
@@ -315,16 +315,16 @@ The **More Actions** toolbar lets you perform the following actions.
 
 Complete the following actions to reveal the **More Actions** toolbar.  
 
-1.  In the **Styles** tab, hover over a style rule.  **More Actions** \(`...`\) is revealed in the bottom-right of the style rule section.  
+1.  In the **Styles** tab, hover on a style rule.  **More Actions** \(`...`\) is revealed in the bottom-right of the style rule section.  
     
     > [!NOTE]
-    > In the following figure, hover over the `.header-holder.has-default-focus` style rule and **More Actions** is revealed in the bottom-right of the style rule section.  
+    > In the following figure, hover on the `.header-holder.has-default-focus` style rule and **More Actions** is revealed in the bottom-right of the style rule section.  
     
     :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="Reveal More Actions" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
        Reveal **More Actions** \(`...`\)  
     :::image-end:::  
     
-1.  Hover over **More Actions** \(`...`\) to reveal the actions mentioned above.  
+1.  Hover on **More Actions** \(`...`\) to reveal the actions mentioned above.  
     
     > [!NOTE]
     > The **Insert Style Rule Below** action is revealed after hovering over **More Actions**.  
@@ -338,7 +338,7 @@ Complete the following actions to reveal the **More Actions** toolbar.
 Complete the folllwoing actions to toggle a single declaration on \(or off\).  
 
 1.  [Select an element](#choose-an-element).  
-1.  In the **Styles** pane, hover over the rule that defines the declaration.  A checkbox appears next to each declaration.  
+1.  In the **Styles** pane, hover on the rule that defines the declaration.  A checkbox appears next to each declaration.  
 1.  Check \(or uncheck\) the checkbox next to the declaration.  When you uncheck a declaration, DevTools crosses it out to indicate that it is no longer active.  
 
 > [!NOTE]
@@ -352,7 +352,7 @@ Complete the folllwoing actions to toggle a single declaration on \(or off\).
 
 Complete the following actions to add a `background-color` declaration to an element.  
 
-1.  Hover over the style rule that you want to add the `background-color` declaration to.  
+1.  Hover on the style rule that you want to add the `background-color` declaration to.  
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).  
 1.  Choose **Add Background Color** \(![Add Background Color icon][ImageAddBackgroundColorIcon]\).  
 
@@ -364,7 +364,7 @@ Complete the following actions to add a `background-color` declaration to an ele
 
 Complete the following actions to add a `color` declaration to an element.  
 
-1.  Hover over the style rule that you want to add the `color` declaration to.  
+1.  Hover on the style rule that you want to add the `color` declaration to.  
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).  
 1.  Choose **Add Color** \(![Add Color icon][ImageAddColorIcon]\).  
 
@@ -376,7 +376,7 @@ Complete the following actions to add a `color` declaration to an element.
 
 Complete the follwoing actions to add a `box-shadow` declaration to an element.  
 
-1.  Hover over the style rule that you want to add the `box-shadow` declaration to.  
+1.  Hover on the style rule that you want to add the `box-shadow` declaration to.  
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).  
 1.  Choose **Add Box Shadow** \(![Add Box Shadow icon][ImageAddBoxShadowIcon]\).  
 
@@ -388,7 +388,7 @@ Complete the follwoing actions to add a `box-shadow` declaration to an element.
 
 Complete the following actions to add a `text-shadow` declaration to an element.  
 
-1.  Hover over the style rule that you want to add the `text-shadow` declaration to.  
+1.  Hover on the style rule that you want to add the `text-shadow` declaration to.  
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).  
 1.  Choose **Add Text Shadow** \(![Add Text Shadow icon][ImageAddTextShadowIcon]\).  
 
@@ -528,7 +528,7 @@ The following figure and list descries of each of the UI elements of the **Color
 
 When you open the **Color Picker**, the **Eyedropper** \(![Eyedropper][ImageEyedropperIcon]\) is on by default.  Complete the following actions to change the selected color to some other color on the page.  
 
-1.  Hover over the target color in the viewport.  
+1.  Hover on the target color in the viewport.  
 1.  Choose to confirm.  
     
     > [!NOTE]

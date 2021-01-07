@@ -81,7 +81,7 @@ Choose **inspect** for the tab or PWA that you want to debug to open the [Micros
 
 ### Resize the DevTools drawer more easily  
 
-In Microsoft Edge 83 or earlier, you were only able to resize the [DevTools Drawer][DevToolsDrawer] by hovering inside the toolbar of the Drawer.  The Drawer behaved differently than the other resize controls for panes in the DevTools where you hover over the border of the pane to resize it.  Choose the following image to display how resizing the Drawer worked in version 83 or earlier of Microsoft Edge.  
+In Microsoft Edge 83 or earlier, you were only able to resize the [DevTools Drawer][DevToolsDrawer] by hovering inside the toolbar of the Drawer.  The Drawer behaved differently than the other resize controls for panes in the DevTools where you hover on the border of the pane to resize it.  Choose the following image to display how resizing the Drawer worked in version 83 or earlier of Microsoft Edge.  
 
 :::image type="complex" source="../../media/2020/05/drawer-83.msft.png" alt-text="Resizing the DevTools Drawer in Microsoft Edge 83" lightbox="../../media/2020/05/drawer-83.msft.gif":::
    Resizing the DevTools Drawer in Microsoft Edge 83
@@ -179,7 +179,7 @@ The new **Experience** section of the **Performance** panel helps you detect lay
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->  
 <!--todo:  add link layout shifts (WebdevCls) when section is live  -->  
 
-Choose the **Layout Shift** event to display the details of the layout shift in the **Summary** pane.  Hover over the **Moved from** and **Moved to** fields to visualize where the layout shift occurred.  
+Choose the **Layout Shift** event to display the details of the layout shift in the **Summary** pane.  Hover on the **Moved from** and **Moved to** fields to visualize where the layout shift occurred.  
 
 :::image type="complex" source="../../media/2020/05/cls.msft.png" alt-text="The details of a layout shift" lightbox="../../media/2020/05/cls.msft.png":::
    The details of a layout shift  
@@ -215,7 +215,7 @@ Chromium issue [#1075437][CR1075437]
 
 #### Image previews  
 
-Hover over a `background-image` value in the **Styles** pane to display a preview of the image in a tooltip.  
+Hover on a `background-image` value in the **Styles** pane to display a preview of the image in a tooltip.  
 
 :::image type="complex" source="../../media/2020/05/image-preview.msft.png" alt-text="Hovering over a background-image value" lightbox="../../media/2020/05/image-preview.msft.png":::
   Hovering over a `background-image` value  
