@@ -3,7 +3,7 @@ description: Simulate reduced motion using developer tools.
 title: Simulate reduced motion using developer tools (CSS Prefers Reduced Motion)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2021
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

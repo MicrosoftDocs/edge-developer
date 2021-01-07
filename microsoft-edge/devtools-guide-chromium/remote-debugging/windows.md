@@ -3,7 +3,7 @@ description: Get started with Remote Debugging Windows 10 devices
 title: Get Started with Remote Debugging Windows 10 Devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2021
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, remote, debugging, windows 10, windows, device portal

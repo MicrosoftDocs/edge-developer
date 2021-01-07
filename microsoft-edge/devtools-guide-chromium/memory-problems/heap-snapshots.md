@@ -3,7 +3,7 @@ description: Learn how to record heap snapshots with the Microsoft Edge DevTools
 title: How to Record Heap Snapshots
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/06/2021
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
