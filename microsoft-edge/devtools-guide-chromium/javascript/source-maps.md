@@ -44,7 +44,7 @@ This article explains how to interact with JavaScript Source Maps in the DevTool
 
 ## Use a supported preprocessor  
 
-You need to use a minifier that is capable of creating source maps.  <!--For the most popular options, navigate to preprocessor support section.  -->  For an extended view, navigate to [Source maps: languages, tools and other info][GitHubWikiSourceMapsLanguagesTools] wiki page.  
+Use a minifier that is capable of creating source maps.  <!--For the most popular options, navigate to preprocessor support section.  -->  For an extended view, navigate to [Source maps: languages, tools and other info][GitHubWikiSourceMapsLanguagesTools] wiki page.  
 
 <!--todo: add link to display the preprocessor support section when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->  
@@ -57,13 +57,13 @@ The following types of preprocessors are commonly used in combination with Sourc
     
 ## Source Maps in DevTools Sources panel  
 
-Source Maps from preprocessors cause DevTools to load your original files in addition to your minified ones.  You then use the originals to set breakpoints and step through code.  Meanwhile, Microsoft Edge is actually running your minified code.  This gives you the illusion of running a development site in production.  
+Source Maps from preprocessors cause DevTools to load your original files in addition to your minified ones.  You then use the originals to set breakpoints and step through code.  Meanwhile, Microsoft Edge is actually running your minified code.  The running of the code gives you the illusion of running a development site in production.  
 
-When running Source Maps in DevTools, you should notice that the JavaScript is not compiled and all of the individual JavaScript files it references are displayed.  This is using source mapping, but behind the scenes actually runs the compiled code.  Any errors, logs, and breakpoints map to the dev code for awesome debugging!  So in effect it gives you the illusion that you are running a dev site in production.  
+When running Source Maps in DevTools, you should notice that the JavaScript is not compiled and all of the individual JavaScript files it references are displayed.  Source Maps in DevTools is using source mapping, but the underlying functionality actually runs the compiled code.  Any errors, logs, and breakpoints map to the dev code for awesome debugging.  So in effect it gives you the illusion that you are running a dev site in production.  
 
 ### Enable Source Maps in settings  
 
-Source Maps are enabled by default <!--\(as of Microsoft Edge 39\)-->, but if you want to double-check or enable them; first open DevTools, choose **Customize and control DevTools** \(`...`\) > **Settings**.  On the **Preferences** pane, under **Sources**, turn on **Enable JavaScript Source Maps**.  You may also turn on the **Enable CSS Source Maps**.  
+Source Maps are enabled by default<!-- \(as of Microsoft Edge 39\)-->, but if you want to double-check or enable them; first open DevTools, choose **Customize and control DevTools** \(`...`\) > **Settings**.  On the **Preferences** pane, under **Sources**, turn on **Enable JavaScript Source Maps**.  You may also turn on the **Enable CSS Source Maps**.  
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Enable Source Maps" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
    **Enable JavaScript Source Maps**  
@@ -81,9 +81,9 @@ When debugging your code and Source Maps enabled, Source Maps show in two places
 
 ## @sourceURL and displayName  
 
-While not part of the Source Map spec, the `@sourceURL` allows you to make development much easier when working with evals.  This helper looks very similar to the `//# sourceMappingURL` property and is actually mentioned in the Source Map V3 specifications.  
+While not part of the Source Map spec, the `@sourceURL` allows you to make development much easier when working with evals.  The helper is displayed similar to the `//# sourceMappingURL` property and is mentioned in the Source Map V3 specifications.  
 
-By including the following special comment in your code, which is be evaled, you are able to name evals and inline scripts and styles so each appears as more logical names in your DevTools.  
+By including the following special comment in your code, which is evaled, you are able to name evals and inline scripts and styles so each appears as more logical names in your DevTools.  
 
 ```javascript
 //# sourceURL=source.coffee
@@ -100,7 +100,7 @@ Complete the following actions.
 1.  Choose the **compile** button.  
 1.  An alert appears with the evaluated sum from the CoffeeScript source.  
     
-If you expand the **Sources** sub-panel you now display a new file with the custom filename you entered earlier.  If you double-click to view this file it contains the compiled JavaScript for the original source.  On the last line, however, is a `// @sourceURL` comment indicating the original source file.  This may help you with debugging while working with language abstractions.  
+If you expand the **Sources** sub-panel you now display a new file with the custom filename you entered earlier.  If you double-click to view this file, it contains the compiled JavaScript for the original source.  On the last line, however, is a `// @sourceURL` comment indicating the original source file.  This may help you with debugging while working with language abstractions.  
 
 :::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Work with sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
    Work with `sourceURL`  
