@@ -46,7 +46,6 @@ The following sections describe the new experimental features that are available
 | [Enable webhint](#enable-webhint) | 85 or later |  
 | [Enable Network Console](#enable-network-console) | 85 or later |  
 | [Source Order Viewer](#source-order-viewer) | 86 or later |  
-| [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor) | 87 or later |  
 | [Turn on Composited Layers in 3D View](#turn-on-composited-layers-in-3d-view) | 87 or later |  
 
 ### Emulation: Support dual screen mode  
@@ -217,44 +216,6 @@ After enabling the experiment, ensure you restart the DevTools.  To use **Source
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
 
-### Enable keyboard shortcut editor
-
-With the **Enable keyboard shortcut editor** experiment turned on, you are now able to customize keyboard shortcuts for any action in the DevTools.  To customize the keyboard shortcut for a specific action, complete the following steps.  
-
-1.  [Open DevTools][DevtoolsOpenMain].  
-1.  Open [Settings][DevToolsCustomizeSettings].
-    *   Select `Shift`+`?`.  
-1.  Navigate to the **Shortcuts** page.  
-1.  Choose the action you want to customize.  
-1.  Choose the **Edit** \(![EditKeyboardShortcut][ImageEditKeyboardShortcutIcon]\) icon.  
-    
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Choose the action to customize from the Shortcuts page in Settings" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
-       Choose the action to customize from the **Shortcuts** page in [Settings][DevToolsCustomizeSettings]
-    :::image-end:::  
-    
-1.  On the keyboard, select the keys you want to bind to the action.
-    
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Select the keys you want to assign to the action" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
-       Select the keys you want to assign to the action
-    :::image-end:::  
-    
-1.  To save your new keyboard shortcut, choose the checkmark \(![CheckmarkKeyboardShortcut][ImageCheckmarkKeyboardShortcutIcon]\) icon.
-    
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Choose the checkmark icon to save your new keyboard shortcut" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
-       Choose the checkmark icon to save your new keyboard shortcut
-    :::image-end:::  
-    
-1.  Select your new keyboard shortcut to trigger the action in the DevTools.  
-    
-On the **Shortcuts** page, the **Custom Keyboard Shortcut** \(![CustomKeyboardShortcut][ImageCustomKeyboardShortcutIcon]\) icon displays keyboard shortcuts that you have customized.  To reset all shortcuts, choose **Restore default shortcuts**.  
-
-When you are editing the keyboard shortcuts for an action, to discard your changes, choose the X \(![XKeyboardShortcut][ImageXKeyboardShortcutIcon]\) icon.  To remove shortcuts for a specific action, choose the **Delete shortcut** \(![DeleteKeyboardShortcut][ImageDeleteKeyboardShortcutIcon]\) icon.  To add multiple shortcuts for an action, choose **Add a shortcut**.
-
-> [!NOTE]
-> If a keyboard shortcut is currently assigned to another action, you are not able to save it for a new action.  You must first delete the keyboard shortcut for the previous action and then add it to the new action.  
-
-<!--Available in Microsoft Edge version 87 and later.  -->
-
 ### Turn on Composited Layers in 3D View
 
 You may now visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.  After enabling the experiment, ensure you restart the DevTools.  To use **Composited Layers**, complete the following steps.  
@@ -272,7 +233,8 @@ You may now visualize Layers alongside z-indexes and the Document Object Model \
 ## Previous experimental features  
 
 *   [3D View][Devtools3dViewIndex] is now available and turned on by default in Microsoft Edge version 83 or later.  
-*   [Customize Keyboard Shortcuts][DevtoolsCustomKeyboardShortcuts] is now available and turned on by default in Microsoft Edge version 86 or later.  
+*   [Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code][DevtoolsCustomKeyboardShortcutsMatch] is now available and turned on by default in Microsoft Edge version 86 or later.  
+*   [Edit keyboard shortcuts for any action in the DevTools][DevtoolsCustomKeyboardShortcutsEdit] is now available and turned on by default in Microsoft Edge version 89 or later.  
 
 ## Providing feedback on experimental features  
 
@@ -310,7 +272,8 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools | Microsoft Edge"  
 [DevtoolsIssues]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
 [DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
-[DevtoolsCustomKeyboardShortcuts]: ../customize/shortcuts.md "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomKeyboardShortcutsMatch]: ../customize/shortcuts.md#match-keyboard-shortcuts-in-the-devtools-to-microsoft-visual-studio-code "Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code | Microsoft Docs"  
+[DevtoolsCustomKeyboardShortcutsEdit]: ../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Edit keyboard shortcuts for any action in the DevTools | Microsoft Docs"  
 [DevtoolsOpenMain]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
 [DualScreenWebIndex]: /dual-screen/web/index "Dual-screen web experiences | Microsoft Docs"  
