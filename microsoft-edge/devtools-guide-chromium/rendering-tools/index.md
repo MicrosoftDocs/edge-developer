@@ -3,7 +3,7 @@ description: Users expects interactive and smooth pages.  Each stage in the pixe
 title: Analyze Runtime Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020 
+ms.date: 12/17/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -184,7 +184,7 @@ The following table describes some common paint and composite problems and poten
 <!-- links -->  
 
 [DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Speed up JavaScript runtime | Microsoft Docs"  
-[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#enable-advanced-paint-instrumentation "Enable advanced paint instrumentation - Performance analysis reference | Microsoft Docs"
+[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "Turn on advanced paint instrumentation - Performance analysis reference | Microsoft Docs"
 
 <!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: ./rendering-tools/forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts | Microsoft Docs"  -->  
 
