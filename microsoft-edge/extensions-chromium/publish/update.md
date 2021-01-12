@@ -11,7 +11,7 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 
 # Update An Extension Listing  
 
-Update an existing listing in Microsoft Edge Addons catalog \(Microsoft Edge Addons\).  You may change a published Extension at any time.  While you are updating, you do not have to update the entire Extension to make few changes such as updating description or logo.  But if you update your Extension package, just remember to increase the version number each time.  
+Update an existing listing in Microsoft Edge Add-ons catalog \(Microsoft Edge Add-ons\).  You may change a published Extension at any time.  While you are updating, you do not have to update the entire Extension to make few changes such as updating description or logo.  But if you update your Extension package, just remember to increase the version number each time.  
 
 ## Update an already published Extension  
 
@@ -25,7 +25,7 @@ To update your listing, follow these steps:
 > [!NOTE]
 > The duration of the update publishing process ranges from a few hours to few days.  
 
-Once the `Status` column displays `In the store`, your Extension update is available in Microsoft Edge Addons.  
+Once the `Status` column displays `In the store`, your Extension update is available in Microsoft Edge Add-ons.  
 
 ## Update an Extension during certification step  
 
@@ -44,17 +44,17 @@ To edit your submission, you may follow these steps:
 > [!NOTE]
 > The duration of the update publishing process ranges from a few hours to few days.  
 
-Once the `Status` column displays `In the store`, your Extension update is available in Microsoft Edge Addons.  
+Once the `Status` column displays `In the store`, your Extension update is available in Microsoft Edge Add-ons.  
 
-## Remove your Extension from Microsoft Edge Addons  
+## Remove your Extension from Microsoft Edge Add-ons  
 
-To remove your Extension from Microsoft Edge Addons, do the following:  
+To remove your Extension from Microsoft Edge Add-ons, do the following:  
 
 1.  Go to your [developer dashboard][MicrosoftPartnerCenter].  From the **Overview** page, click the listing which you want to remove.  
 1.  Open **Extension Overview** page of your listing.  
-1.  Click **Unpublish**.  This unpublishes the listing from Microsoft Edge Addons.  
+1.  Click **Unpublish**.  This unpublishes the listing from Microsoft Edge Add-ons.  
 
-These steps remove the Extension from Microsoft Edge Addons, that means new users are not able to find your Extension or install it, but users who already installed the Extension may continue to use it.  
+These steps remove the Extension from Microsoft Edge Add-ons, that means new users are not able to find your Extension or install it, but users who already installed the Extension may continue to use it.  
 
 <!-- image links -->  
 

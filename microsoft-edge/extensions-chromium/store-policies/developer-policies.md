@@ -1,6 +1,6 @@
 ---
-description: Microsoft Edge Addons Catalog Developer Policies.
-title: Microsoft Edge Addons Catalog Developer Policies
+description: Microsoft Edge Add-ons Catalog Developer Policies.
+title: Microsoft Edge Add-ons Catalog Developer Policies
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2020
@@ -9,21 +9,21 @@ ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ---
 
-# Microsoft Edge Addons Catalog Developer Policies  
+# Microsoft Edge Add-ons Catalog Developer Policies  
 
 ## Introduction and Objective of this document  
 
-Thank you for your interest in developing Extensions for the Microsoft Edge Addons catalog.  The Microsoft Edge Addons Catalog Developer Policies \(Addons Catalog Developer Policies\) apply to your Extensions, including your submission of Extensions through [Partner Center][MicrosoftPartnerCenter] and the provision of such Extensions through the Microsoft Edge Addons.  
+Thank you for your interest in developing Extensions for the Microsoft Edge Add-ons catalog.  The Microsoft Edge Add-ons Catalog Developer Policies \(Addons Catalog Developer Policies\) apply to your Extensions, including your submission of Extensions through [Partner Center][MicrosoftPartnerCenter] and the provision of such Extensions through the Microsoft Edge Add-ons.  
 
 ## Principles  
 
 A few principles to get you started:  
 
-*   You should offer unique and distinct value within your Extensions for Microsoft Edge.  Provide a compelling reason to download your Extensions from the Microsoft Edge Addons catalog \(Microsoft Edge Addons\).  
+*   You should offer unique and distinct value within your Extensions for Microsoft Edge.  Provide a compelling reason to download your Extensions from the Microsoft Edge Add-ons catalog \(Microsoft Edge Add-ons\).  
 *   You must not mislead our joint users about what your Extension does, who is offering it, and so on.  
-*   You must not attempt to cheat users, the system or the ecosystem.  There is no place in our Microsoft Edge Addons for any kind of fraud; be it ratings and review manipulation, credit card fraud or other fraudulent activity.  
+*   You must not attempt to cheat users, the system or the ecosystem.  There is no place in our Microsoft Edge Add-ons for any kind of fraud; be it ratings and review manipulation, credit card fraud or other fraudulent activity.  
 
-Adhering to these Addons Catalog Developer Policies should help you make choices that enhance the appeal and audience of your Extension.  
+Adhering to these Add-ons Catalog Developer Policies should help you make choices that enhance the appeal and audience of your Extension.  
 
 Your Extensions are crucial to the experience of hundreds of millions of users.  We look forward to experiencing what you create and are thrilled to help deliver your Extensions to the world.  
 
@@ -51,7 +51,7 @@ Search terms may not exceed seven unique terms and should be relevant to your Ex
 
 #### 1.1.5 Provide appropriate details  
 
-You must provide distinct and informative details about your Extension and the functionality in listing \(metadata\) for your Extension.  Your Extension must provide a valuable and quality user experience.  Your Extension must also have an active presence in Microsoft Edge Addons.  
+You must provide distinct and informative details about your Extension and the functionality in listing \(metadata\) for your Extension.  Your Extension must provide a valuable and quality user experience.  Your Extension must also have an active presence in Microsoft Edge Add-ons.  
 
 #### 1.1.6 Stability and Performance  
 
@@ -88,7 +88,7 @@ Your Extension may depend on non-integrated software \(such as another product, 
 
 #### 1.2.4 Extensions Update  
 
-Unless otherwise permitted by Microsoft, your Extensions must be updated only through Microsoft Edge Addons.  
+Unless otherwise permitted by Microsoft, your Extensions must be updated only through Microsoft Edge Add-ons.  
 
 ### 1.3 Product is Testable  
 The Extension must be testable.  If it is not possible to test your Extension for any reason, including, but not limited to, the items below, your Extension may fail this requirement.  
@@ -192,7 +192,7 @@ If your product uses MPNS or WNS to transmit notifications, it must comply with 
 
 #### 1.9.1 General Guidance  
 
-Notifications provided through WNS or MPNS are considered product content and are subject to all Addons Catalog Developer Policies.  
+Notifications provided through WNS or MPNS are considered product content and are subject to all Add-ons Catalog Developer Policies.  
 
 #### 1.9.2 Ownership of notifications  
 
@@ -204,7 +204,7 @@ You must not include in a notification any information users may reasonably cons
 
 #### 1.9.4 Purpose of notifications  
 
-Notifications sent from your Extension must relate to that Extension or to other Extensions you publish in Microsoft Edge Addons catalog and must not include promotional messages of any kind that are not related to your Extensions.  
+Notifications sent from your Extension must relate to that Extension or to other Extensions you publish in Microsoft Edge Add-ons catalog and must not include promotional messages of any kind that are not related to your Extensions.  
 
 ### 1.10 Advertising Conduct and Content  
 
@@ -238,7 +238,7 @@ If your Extension is directed at children under the age of 13, as defined in the
 
 ## 2 Content Policies  
 
-The following policies apply to content and metadata \(including publisher name, Extension name, Extension icon, Extension description, Extension screenshots, Extension trailers and trailer thumbnails, and any other Extension metadata\) offered for distribution in Microsoft Edge Addons.  Content means the images, sounds, videos and text contained in the Extension, the tiles, notifications, error messages or ads exposed through your Extension, and anything delivered from a server or to which the Extension connects.  Because Extensions and Microsoft Edge Addons are used around the world, these requirements are interpreted and applied in the context of regional and cultural norms.  
+The following policies apply to content and metadata \(including publisher name, Extension name, Extension icon, Extension description, Extension screenshots, Extension trailers and trailer thumbnails, and any other Extension metadata\) offered for distribution in Microsoft Edge Add-ons.  Content means the images, sounds, videos and text contained in the Extension, the tiles, notifications, error messages or ads exposed through your Extension, and anything delivered from a server or to which the Extension connects.  Because Extensions and Microsoft Edge Add-ons are used around the world, these requirements are interpreted and applied in the context of regional and cultural norms.  
 
 ### 2.1 Content Requirements for Microsoft Edge Addon Catalog Listing  
 
@@ -307,7 +307,7 @@ Content that is offensive in any country/region to which your Extension is targe
 
 #### 2.12.1 Mature Content  
 
-When you submit your Extension to [Partner Center][MicrosoftPartnerCenter], you must indicate whether your Extension displays content that should be marked "Mature".  When determining the rating for your Extension, consider all the content in your app, including user generated content and ads, and to the content that your Extension links.  If you indicate that your Extension does not contain any "Mature" content, you are responsible for maintaining the accuracy of this rating.  Regardless of the rating given to your Extension, it must still adhere to all the content requirements of Microsoft Edge Addons Developer policies  
+When you submit your Extension to [Partner Center][MicrosoftPartnerCenter], you must indicate whether your Extension displays content that should be marked "Mature".  When determining the rating for your Extension, consider all the content in your app, including user generated content and ads, and to the content that your Extension links.  If you indicate that your Extension does not contain any "Mature" content, you are responsible for maintaining the accuracy of this rating.  Regardless of the rating given to your Extension, it must still adhere to all the content requirements of Microsoft Edge Add-ons Developer policies  
 
 #### 2.12.2 Ratings Change  
 
