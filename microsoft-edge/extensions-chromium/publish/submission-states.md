@@ -1,5 +1,5 @@
 ---
-description: The steps to create Microsoft Edge Addons developer account on Partner center.
+description: The steps to create Microsoft Edge Add-ons developer account on Partner center.
 title: Extension submission states and overview
 author: MSEdgeTeam
 ms.author: msedgedevrel

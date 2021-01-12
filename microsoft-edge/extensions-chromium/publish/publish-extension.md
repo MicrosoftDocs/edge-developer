@@ -109,7 +109,7 @@ The information provided in the following section is displayed to users that vis
 
 Ensure your video meets the following requirements.  
 
-*   Verify that the content of the YouTube video complies with the [Microsoft Edge Addons Catalog Developer Policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies] topic.  
+*   Verify that the content of the YouTube video complies with the [Microsoft Edge Add-ons Catalog Developer Policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies] topic.  
 *   Turn off advertisements on your video.  For more information, go to [Set your default ad formats][GoogleYoutubeAnswer2531367Topic7072227] and [Ads on embedded videos][GoogleYoutubeAnswer132596].  
 *   Turn on embedding for your videos.  For more information, go to [Embed videos & playlists][GoogleYoutubeAnswer171780].  
 
@@ -155,7 +155,7 @@ When your submission passes certification, your extension is published in the Mi
 [ExtensionsGettingStarted]: ../getting-started/index.md "Getting Started With Microsoft Edge (Chromium) Extensions | Microsoft Docs"  
 [DeveloperRegistration]: ./create-dev-account.md "Register as a Microsoft Edge extensions developer | Microsoft Docs"  
 [PortChromiumExtension]: ../developer-guide/port-chrome-extension.md "Port your Chromium extension to Microsoft Edge | Microsoft Docs"  
-[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Addons Catalog Developer Policies | Microsoft Docs"  
+[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Add-ons Catalog Developer Policies | Microsoft Docs"  
 
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"  
 
