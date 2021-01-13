@@ -10,27 +10,29 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Editing CSS font settings in the styles pane (experimental) 
 
-Typography on the web is an important part of the user experience. CSS has evolved in this space a lot in the recent years. The biggest trick is to make sure you allow for flexibility. You want to ensure that text is readable and can be zoomed and you shouldn't rely on certain fonts to be available but instead use fallback options to display when your favorite font isn't available.
+Typography on the web is an important part of the user experience and CSS has evolved in this space a lot in the recent years.
 
-CSS allows you to define fonts as font families and there are dozens of different CSS units available to define the size of text. You also have several CSS properties that affect font-size, spacing, line height and other typographic features. This can become hard to grasp which is why there is now a font editor in the styles pane. It allows you to tweak typography and see the changes live in the browser. This allows you to fine-tune your font settings without in-depth knowledge of the necessary CSS.
+The biggest trick is to make sure you allow for flexibility. You want to ensure that text is easy to read using size and line-height. Readers will also need to resize it. You also shouldn't rely on certain fonts to be available but instead use fallback options to display when your favorite font isn't available.
+
+CSS allows you to define fonts as font families. There are dozens of different CSS units available to define the size of text. You also have several CSS properties that affect font-size, spacing, line height, and other typographic features. To make it easier to deal with typography, we now have a font editor in the styles pane. It allows you to tweak typography and see the changes live in the browser. You can fine-tune your font settings without in-depth knowledge of the necessary CSS.
 
 > [!WARNING]
 > Currently this is an experimental feature and you need to enable it for developer tools. 
 Click the cog icon top right in the developer tools and enable on the "Enable new Font Editor tool within the Styles Pane" setting. ![Turning on the font editor experiment](../media/font-editor-turn-on-experiment.msft.png)Once you restart developer tools, the functionality will be available.  
 
-Any CSS section of the styles pane that has font definitions and the inline styles section shows a font icon that allows you to open the font editor.
+Any CSS section of the styles pane with font definitions and the inline styles section now shows a font icon. Clicking the icon opens the font editor.
 
-:::image type="complex" source="../media/font-editor-icon.msft.png" alt-text="The icon in the styles pane indicating that you can edit font settings" lightbox="../media/font-editor-icon.msft.png":::
-The icon in the styles pane indicating that you can edit font settings
+:::image type="complex" source="../media/font-editor-icon.msft.png" alt-text="The icon in the styles pane to edit font settings" lightbox="../media/font-editor-icon.msft.png":::
+The icon in the styles pane to edit font settings
 :::image-end:::  
 
-Once you click on the font icon, you get the font editor. 
+Once you select on the font icon, you get the font editor. 
 
 :::image type="complex" source="../media/font-editor-open.msft.png" alt-text="The font editor open on top of the styles pane" lightbox="../media/font-editor-open.msft.png":::
 The font editor open on top of the styles pane
 :::image-end:::  
 
-All the form fields in the editor are populated by the settings in that block of CSS. In this case, there is a `line-height` definition of `160%`, which means the text field shows `160`, the unit dropdown is at `%` and the slider at the appropriate place. The sliders and text fields are synced, which means that when you change either, the other will reflect that value.
+All the form fields in the editor are populated by the settings in that block of CSS. In this case, there's a `line-height` definition of `160%`, which means the text field shows `160`, the unit dropdown is at `%` and the slider at the appropriate place. The sliders and text fields are synced.
 
 The editor consists of two parts: the Font Family Selector and the CSS properties editor.
 
@@ -50,9 +52,9 @@ The fonts are organized in three different groups:
 1. Computed fonts - the ones currently available in the style sheet
 1. System fonts - fonts that are available on the current operating system
 1. Generic font families - like `serif` or `sans-serif`
-1. Global values - `inherit`, `initial` and `unset` 
+1. Global values - `inherit`, `initial`,  and `unset` 
 
-Once you selected a font, you get another drodown menu. You remove a font by clicking the waste basket icon.
+Once you selected a font, you get another dropdown menu. You remove a font by clicking the waste basket icon.
 
 :::image type="complex" source="../media/font-editor-defining-fonts.msft.png" alt-text="The font editor with a defined list of fonts and fallback fonts" lightbox="../media/font-editor-defining-fonts.msft.png":::
 The font editor with a defined list of fonts and fallback fonts
@@ -69,7 +71,7 @@ Deleting a font from the list by clicking the waste basket icon
 
 You can tweak CSS font properties in the lower part of the font editor.
 
-Here you can change the font size, line height, font weight and letter spacing using sliders and see the changes live in the browser window.
+Here you can change the font size, line height, font weight, and letter spacing using sliders and see the changes live in the browser window.
 
 :::image type="complex" source="../media/font-editor-css-properties.msft.png" alt-text="The font editor open on top of the styles pane with the CSS properties highlighted" lightbox="../media/font-editor-font-family.msft.png":::
 The font editor open on top of the styles pane with the CSS properties highlighted
@@ -83,15 +85,15 @@ For example, you can use the tool on this web site, and you use the slider to `1
 Setting the font size to 16 pixels
 :::image-end:::
 
-If you now use the unit dropdown and select "em" as the value, you will get the result that 16 pixels in this case is the equivalent of `1em`.
+If you now use the unit dropdown and select "em" as the value, you'll get the result that 16 pixels in this case is the equivalent of `1em`.
 
 :::image type="complex" source="../media/font-editor-converted-to-em.msft.png" alt-text="Using the unit dropdown to convert to em" lightbox="../media/font-editor-converted-to-em.msft.png":::
 Using the unit dropdown to convert to em
 :::image-end:::
 
-By default, the unit dropdown will offer you all the commonly used numeric CSS units to choose from for font size, line height, font weight and spacing. This also allows you to not use the sliders but arrow up and down to fine-tune your settings. 
+The unit dropdown offers you all the commonly used numeric CSS units by default. Font size, line height, font weight, and spacing have different units. You can use the sliders for broader changes, and the arrow up and down keys to fine-tune your settings. 
 
-As these CSS properties also come with preset keywords, you can switch to them by clicking the double arrow icon on the right hand. For example, for font size these are `xx-small` to `xx-large` as well as `inherit`, `initial` and `unset`.
+As these CSS properties also come with preset keywords. You can switch to them by clicking the double arrow icon on the right-hand side. For example, for font size `xx-small` to `xx-large` and the presets `inherit`, `initial` and `unset`.
 
 :::image type="complex" source="../media/font-editor-preset-font-sizes.msft.png" alt-text="Switching to the preset keyword interface" lightbox="../media/font-editor-preset-font-sizes.msft.png":::
 Switching to the preset keyword interface
@@ -101,7 +103,7 @@ Clicking the double arrow again will get you back to the slider and numeric unit
 
 ## What are you missing?
 
-We keep iterating on this feature to make it better for you and would love to learn more about your issues with CSS typography. Please get in contact and tell us what would make this tool even more useful.
+We keep iterating on this feature to make it better for you. We'd love to learn more about your issues with CSS typography. Get in contact and tell us what would make this tool even more useful.
 
 <!-- links -->  
 
