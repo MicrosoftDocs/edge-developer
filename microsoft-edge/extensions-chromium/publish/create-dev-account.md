@@ -21,7 +21,7 @@ To submit your extension to the Microsoft Edge add-ons website, you must be regi
 If you do not have an account or if you have an existing commercial account with Partner Center, you must create a new [Microsoft account (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] to register with the Microsoft Edge program.  To create a Microsoft account \(Outlook/live/Hotmail\), visit [account.microsoft.com][MicrosoftAccount] and select **Create a Microsoft account**.  If you are registered on the Partner center with a developer account, use the corresponding Microsoft account \(MSA\) to sign-in, and then enroll in the Microsoft Edge program.  
 
 > [!NOTE]
-> Today the Microsoft Edge extensions does not support signing up with a work or school account.  In the future, the Microsoft Edge extensions team plans to support linking AAD tenants to MSA accounts for extension management.  
+> Today Microsoft Edge extensions does not support signing up with a work or school account.  In the future, the Microsoft Edge extensions team plans to support linking AAD tenants to MSA accounts for extension management.  
 
 ## Enroll in the Microsoft Edge program on Partner Center  
 
