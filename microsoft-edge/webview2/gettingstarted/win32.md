@@ -11,7 +11,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 ---
 # Getting started with WebView2  
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][Webview2Index].  For more information about individual WebView2 APIs, navigate to [API reference][Webview2ReferenceWin32].  
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  For more information about individual WebView2 APIs, navigate to [API reference][Webview2ReferenceWin32].  
 
 ## Prerequisites  
 
@@ -295,7 +295,8 @@ Many of the WebView2 functionalities are not covered on this article, the follow
 
 <!-- links -->  
 
-[Webview2Index]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Microsoft Edge Developer"  
+
 [Webview2ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ Reference | Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"  
 
@@ -305,6 +306,8 @@ Many of the WebView2 functionalities are not covered on this article, the follow
 [GithubMicrosoftedgeWebview2browser]: https://github.com/MicrosoftEdge/WebView2Browser "WebView2Browser - MicrosoftEdge/WebView2Browser | GitHub"  
 
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"  
+
+[GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
 
 [GithubMicrosoftedgeWebview2samplesApisample]: https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md "WebView2 API Sample - MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebview2samplesGettingStartedGuide]: https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  

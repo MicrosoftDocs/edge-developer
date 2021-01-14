@@ -3,7 +3,7 @@ description: Getting started guide with WebView2 for WPF apps
 title: Getting started with WebView2 for WPF apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/13/2021
+ms.date: 01/14/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -11,7 +11,7 @@ keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView
 ---
 # Getting started with WebView2 in WPF
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][Webview2Index].  For more information on individual APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2Wpf].  
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  For more information on individual APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2Wpf].  
 
 ## Prerequisites  
 
@@ -62,8 +62,8 @@ Use NuGet to add the WebView2 SDK to the project.
 
 1.  Open the context menu on the project \(right-click\) and choose **Manage NuGet Packages...**.  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="NuGet":::
-       NuGet
+    :::image type="complex" source="./media/wpf-gettingstarted-mngnuget.png" alt-text="Manage NuGet packages":::
+       Manage NuGet packages
     :::image-end:::
     
 1.  In the search bar, type `Microsoft.Web.WebView2` > choose **Microsoft.Web.WebView2**.  
@@ -119,7 +119,7 @@ Next add a WebView to your app.
     </DockPanel>
     ```  
     
-1.  To build and run the project, select `F5`  Ensure your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).  
+1.  To build and run the project, select `F5`  Ensure your WebView2 control displays [https://www.microsoft.com][MicrosoftMain].  
     
     :::image type="complex" source="./media/wpf-gettingstarted-microsoft.png" alt-text="Microsoft.com":::
        Microsoft.com
@@ -193,7 +193,7 @@ During webpage navigation, the WebView2 control raises events.  The app that hos
 *   `HistoryChanged`  
 *   `NavigationCompleted`  
 
-For more information, navigate to [Navigation Events](../concepts/navigation-events.md).  
+For more information, navigate to [Navigation Events][Webview2ConceptsNavigationEvents].  
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="Navigation events":::
    Navigation events
@@ -210,7 +210,7 @@ When an error occurs, the following events are raised and may depend on navigati
 
 To demonstrate how to use the events, register a handler for `NavigationStarting` that cancels any non-HTTPS requests.  
 
-In `MainWindow.xaml.cs`, modify the constructor to match the following code snippet and add the `EnsureHttps` function.  
+In the `MainWindow.xaml.cs` file, modify the constructor to match the following code snippet and add the `EnsureHttps` function.  
 
 ```csharp
 public MainWindow()
@@ -231,7 +231,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 In the constructor, EnsureHttps is registered as the event handler on the `NavigationStarting` event on the WebView2 control.  
 
-To build and run the project, select `F5`.  Ensure when navigating to an HTTP site, the WebView **remains unchanged**.  However, the WebView navigates to HTTPS sites.  
+To build and run the project, select `F5`.  Ensure when navigating to an HTTP site, the WebView remains unchanged.  However, the WebView navigates to HTTPS sites.  
 
 ## Step 6 - Scripting  
 
@@ -271,7 +271,7 @@ The communication mechanism passes messages from web content to the host using n
 
 In your project, when the WebView2 control navigates to a URL, it displays the URL in the address bar and alerts the user of the URL displayed in the WebView2 control.  
 
-1.  In `MainWindow.xaml.cs`, update your constructor and create an `InitializeAsync` function to match the following code snippet.  The `InitializeAsync` function awaits [EnsureCoreWebView2Async](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async) because the initialization of `CoreWebView2` is asynchronous.  
+1.  In the `MainWindow.xaml.cs` file, update your constructor and create an `InitializeAsync` function to match the following code snippet.  The `InitializeAsync` function awaits [EnsureCoreWebView2Async](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async) because the initialization of `CoreWebView2` is asynchronous.  
     
     ```csharp
     public MainWindow()
@@ -308,7 +308,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
     1.  Injects a script to the web content that registers a handler to print message from the host.  
     1.  Injects a script to the web content that posts the URL to the host.  
         
-    In `MainWindow.xaml.cs`, update `InitializeAsync` to match the following code snippet.  
+    In the `MainWindow.xaml.cs` file, update `InitializeAsync` to match the following code snippet.  
     
     ```csharp
     async void InitializeAsync()
@@ -335,7 +335,7 @@ To continue learning more about WebView2, navigate to the following resources.
 
 ### See also  
 
-*   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) on GitHub.  
+*   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain] on GitHub.  
 *   For more detailed information about WebView2 API, navigate to [API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2).  
 *   For more information about  WebView2, navigate to [WebView2 Resources](../index.md#next-steps).  
 
@@ -345,12 +345,21 @@ To continue learning more about WebView2, navigate to the following resources.
 
 <!-- links -->  
 
-[Webview2Index]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
+[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 Installer" 
+ 
+[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2Wpf]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf Namespace | Microsoft Docs"  
+[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 Class | Microsoft Docs"  
+[DotnetApiMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async "WebView2.EnsureCoreWebView2Async(CoreWebView2Environment) Method | Microsoft Docs"  
+[DotnetApiMicrosoftWebWebview2WpfWebview2Executescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.ExecuteScriptAsync(String) Method | Microsoft Docs"  
 
-[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 Installer" 
+[GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
+
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Microsoft Edge Developer"  
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"  
 
-[MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
+[MicrosoftMain]: https://www.microsoft.com "Microsoft"  
+
+[MicrosoftVisualStudioMain]: https://visualstudio.microsoft.com "Microsoft Visual Studio"  

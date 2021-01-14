@@ -3,7 +3,7 @@ description: Getting started guide with WebView2 for WinUI apps
 title: Getting started with WebView2 for WinUI apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/13/2021
+ms.date: 01/14/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -11,7 +11,7 @@ keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWeb
 ---
 # Getting started with WebView2 in WinUI 3 (Preview)  
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][Webview2Index].  Your first WebView2 app uses WinUI3.  For more information on individual APIs, navigate to [API reference][GithubMicrosoftUiXamlSpecsWebview2].  
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Your first WebView2 app uses WinUI3.  For more information on individual APIs, navigate to [API reference][GithubMicrosoftUiXamlSpecsWebview2].  
 
 ## Prerequisites  
 
@@ -135,14 +135,14 @@ Add a WebView2 control to your project.
 
 To allow users to control the webpage that is displayed in your WebView2 control, add an address bar to your app.  
 
-1.  In the `MainWindow.xaml` file, copy and paste the following code snippet inside the `Grid` element that contains the `WebView2` element.  
+1.  In the `MainWindow.xaml` file, copy and paste the following code snippet inside the `<Grid>` element that contains the `WebView2` element.  
     
     ```xml
         <TextBox Name="addressBar" Grid.Column="0"/>
         <Button x:Name="myButton" Grid.Column="1" Click="myButton_Click">Go</Button>
     ```  
     
-    Ensure your `Grid` element in the `MainWindow.xaml` file is similar to the following code snippet.  
+    Ensure your `<Grid>` element in the `MainWindow.xaml` file is similar to the following code snippet.  
     
     ```xml
     <Grid>
@@ -290,7 +290,7 @@ To continue learning more about WebView2, navigate to the following resources.
 
 <!-- links -->  
 
-[Webview2Index]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 [Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"  
 [Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.ExecuteScriptAsync(String) Method (Microsoft.Web.WebView2.Wpf) | Microsoft Docs"  
