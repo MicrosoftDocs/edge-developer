@@ -11,12 +11,26 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 
 # Contact Edge extension support
 
-For any issues related to certification write to us at support [here][ExtensionsSupportForm].
+## Contact us for any issues or feedback
 
-If you have any issues or feedback regarding your publishing experience via Partner Center, write to us at [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
+1. For any issues related to certification write to us at support [here][ExtensionsSupportForm].
+1. If you have any issues or feedback regarding your publishing experience via Partner Center, write to us at [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
+1. To feature your extension in a collection on the Edge Add-ons home page - submit a request using [this][CollectionsForm] form. 
 
-To feature your extension on a collection on the Edge Add-ons home page - submit a request using [this][CollectionsForm] form. 
 
+## Report abuse and copyright infringement
+1. If you find something in the Edge add-ons store that violates the [Microsoft Edge add-ons store policies][EdgeAddonsPolicies], or trademark or copyright infringement, let us know.
+1. If an extension isn’t working well, let the developer know. In the Edge add-ons store, open the item and click **Support**.
+1. To leave a rating or feedback, open an item in the Edge add-ons store and click **Reviews**.
+
+### Report abuse
+1. Sign in to the Edge add-ons store.
+1. Click the item you want to report.
+1. In the window that appears, near the bottom right, click **Report Abuse**.
+1. Fill out the form, then click **Submit**.
+
+### Report copyright or trademark infringement
+If you think an item in the Edge add-ons store violates a copyright or trademark, fill out [this][EdgeInfringmentReport] form. Our team will review your report and take any necessary action.
 
 <!-- links -->  
 
@@ -24,3 +38,7 @@ To feature your extension on a collection on the Edge Add-ons home page - submit
 [ExtensionsSupportForm]: https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "Extensions New Support Request | Microsoft Support"  
 
 [CollectionsForm]: https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u "Submit a request to feature in Collections"
+
+[EdgeInfringmentReport]: https://www.microsoft.com/info/Marketplace.html "Report copyright or trademark Infringement"
+
+[EdgeAddonsPolicies]: ../store-policies/ada-addendum.md "App Developer Agreement Addendum for Microsoft Edge program users"
