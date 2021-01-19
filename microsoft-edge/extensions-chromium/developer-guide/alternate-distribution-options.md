@@ -9,36 +9,41 @@ ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
 ---
 
-# Alternative extension distributing methods  
+# Alternative extension distribution methods  
 
 All Edge extensions must be distributed either directly via the Edge add-ons store or via using the methods described below. There may be scenarios in which a developer may want to distribute their extension via some alternative methods. There are typically two such use cases.
 1. An extension is associated with another software and should be installed whenever the user installs that software.
 1. A network admin wants to distribute an extension throughout their organization.
  
 
-An extension which is not installed from the Edge add-ons store is called an _external installation_. Microsoft Edge supports the following alternative extension installation methods:  
-
-1. Using the Windows registry (Windows only)
-1. Using a preferences JSON file (for Mac OS X and Linux only)
-
-
 ## Before you begin
 
-Publish the extension in the Microsoft Edge Add-ons or package a .crx file and make sure that it installs successfully. If installing from an `update_URL`, ensure that the extension is properly hosted.
+Before you begin, publish the extension in the Microsoft Edge Add-ons or package a .crx file and make sure that it installs successfully. If installing from an `update_URL`, ensure that the extension is properly hosted.
 
 Before you edit the preferences file or the registry, make a note of the following:
 1. The intended location of the extension's .crx file, or the `update_URL` from which it is served.
 1. The extension's version (from the manifest file or the edge://extensions page).
 1. The extension's ID (from the edge://extensions page when you've loaded the packed extension).
 
+
+
+
+## Alternative methods of distributing an extension
+
+An extension which is not installed from the Edge add-ons store is called an _external installation_. Microsoft Edge supports the following alternative extension installation methods:  
+
+1. Using the Windows registry (Windows only)
+1. Using a preferences JSON file (for Mac OS X and Linux only)
+
 The following examples assume the version is 1.0 and the ID is aaaaaaaaaabbbbbbbbbbcccccccccc.
 
-## Using the Windows registry \(Windows only\)
+
+### 1. Using the Windows registry \(Windows only\)
 
 1. Find or create the following key in the registry:  
     *   32-bit Windows:  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`  
     *   64-bit Windows:  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`  
-2. Create a new key \(folder\) under the **Extensions** key with the same name as the ID of your extension \(for example, `aaaaaaaaaabbbbbbbbbbcccccccccc`\).  
+2. Create a new key \(folder\) under the **Extensions** key with the same name as the ID of your extension \(for example, aaaaaaaaaabbbbbbbbbbcccccccccc\).  
 3. In your extension key, create a property, `update_url`, and set it to the value: `https://edge.microsoft.com/extensionwebstorebase/v1/crx`,  \(this points to the crx of your extension in the Microsoft Edge Add-ons store\). If you want to install an extension from the Chrome Web Store, please provide the Chrome Web Store update URL, `https://clients2.google.com/service/update2/crx`.  
     
     ```javascript
@@ -51,17 +56,18 @@ The following examples assume the version is 1.0 and the ID is aaaaaaaaaabbbbbbb
 
 
 
-## Using a preferences file
+### 2. Using a preferences file
 
 1. If you are installing from a file on Linux, make the .crx extension file available to the machine you want to install the extension on. (Copy it to a local directory or to a network share for example, \\server\share\extension.crx or /home/share/extension.crx.)
 2. Create a file with the following name in one of the folders listed below: aaaaaaaaaabbbbbbbbbbcccccccccc.json where the file name (without the extension) corresponds to your extension's ID. The location depends on the operating system.
-    * Mac OS X: 
-User specific: `~USERNAME/Library/Application Support/Microsoft Edge/External Extensions/`
-All users: `/Library/Application Support/Microsoft/Edge/External Extensions/`
-The external extension file for all users is read only if every directory in the path is owned by the user root, has the group admin or wheel, and is not world writable. The path must also be free of symbolic links. These restrictions prevent an unprivileged user from causing extensions to be installed for all users.
-    * Linux:
-User specific: `~/.config/microsoft-edge/External Extensions/`
-All users: `/usr/share/microsoft-edge/extensions/`
+    * **Mac OS X**
+        * User specific: `~USERNAME/Library/Application Support/Microsoft Edge/External Extensions/`
+        * All users: `/Library/Application Support/Microsoft/Edge/External Extensions/`
+    
+        The external extension file for all users is read only if every directory in the path is owned by the user root, has the group admin or wheel, and is not world writable. The path must also be free of symbolic links. These restrictions prevent an unprivileged user from causing extensions to be installed for all users.
+    * **Linux**
+        * User specific: `~/.config/microsoft-edge/External Extensions/`
+        * All users: `/usr/share/microsoft-edge/extensions/`
 
 3. Linux only: If you are installing from a file, specify the extension's location and version with fields named "external_crx" and "external_version" in the file created above. You need to escape each \ character in the location. For example, \\server\share\extension.crx would be "\\\\server\\share\\extension.crx".
     
@@ -72,7 +78,7 @@ All users: `/usr/share/microsoft-edge/extensions/`
     }
     ```
 
-4. If you are installing from an update URL, specify the extension's update URL with field name "external_update_url".
+4. If you are installing from an `update_URL`, specify the extension's update URL with field name "external_update_url".
 5. Example of installation from local .crx file (Linux only):
 
     ```javascript
@@ -109,15 +115,16 @@ Microsoft Edge scans the metadata entries in the registry each time the browser 
 
 To update your extension to a new version, update the file, and then update the version in the registry.  
 
-To uninstall your extension \(for example, if your software is uninstalled\), remove your preference file \(`aaaaaaaaaabbbbbbbbbbcccccccccc.json`\) or the metadata from the registry.  
+To uninstall your extension \(for example, if your software is uninstalled\), remove your preference file \(aaaaaaaaaabbbbbbbbbbcccccccccc.json\) or the metadata from the registry.  
+
+
 
 <!-- image links -->  
 
 <!-- links -->  
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developer.chrome.com/apps/external_extensions).  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL]. The original page is found [here](https://developer.chrome.com/apps/external_extensions).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
