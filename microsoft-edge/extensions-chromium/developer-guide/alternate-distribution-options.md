@@ -58,7 +58,7 @@ The following examples assume the version is 1.0 and the ID is aaaaaaaaaabbbbbbb
 
 ### 2. Using a preferences file
 
-1. If you are installing from a file on Linux, make the .crx extension file available to the machine you want to install the extension on. (Copy it to a local directory or to a network share for example, \\server\share\extension.crx or /home/share/extension.crx.)
+1. If you are installing from a file on Linux, make the .crx extension file available to the machine you want to install the extension on. (Copy it to a local directory or to a network share for example, \\\server\share\extension.crx or /home/share/extension.crx.)
 2. Create a file with the following name in one of the folders listed below: aaaaaaaaaabbbbbbbbbbcccccccccc.json where the file name (without the extension) corresponds to your extension's ID. The location depends on the operating system.
     * **Mac OS X**
         * User specific: `~USERNAME/Library/Application Support/Microsoft Edge/External Extensions/`
@@ -69,7 +69,7 @@ The following examples assume the version is 1.0 and the ID is aaaaaaaaaabbbbbbb
         * User specific: `~/.config/microsoft-edge/External Extensions/`
         * All users: `/usr/share/microsoft-edge/extensions/`
 
-3. Linux only: If you are installing from a file, specify the extension's location and version with fields named "external_crx" and "external_version" in the file created above. You need to escape each \ character in the location. For example, \\server\share\extension.crx would be "\\\\server\\share\\extension.crx".
+3. Linux only: If you are installing from a file, specify the extension's location and version with fields named "external_crx" and "external_version" in the file created above.
     
     ```javascript
     {
