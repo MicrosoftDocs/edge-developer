@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer, support
 ---
 
-## Contact Edge extension support
+# Contact Edge extension support
 
 For any issues related to certification write to us at support [here][ExtensionsSupportForm].
 
