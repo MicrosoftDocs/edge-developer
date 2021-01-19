@@ -18,18 +18,7 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 1. To feature your extension in a collection on the Edge Add-ons home page - submit a request using [this][CollectionsForm] form. 
 
 
-## Report abuse and copyright infringement
-1. If you find something in the Edge add-ons store that violates the [Microsoft Edge add-ons store policies][EdgeAddonsPolicies], or trademark or copyright infringement, let us know.
-1. If an extension isn’t working well, let the developer know. In the Edge add-ons store, open the item and click **Support**.
-1. To leave a rating or feedback, open an item in the Edge add-ons store and click **Reviews**.
-
-### Report abuse
-1. Sign in to the Edge add-ons store.
-1. Click the item you want to report.
-1. In the window that appears, near the bottom right, click **Report Abuse**.
-1. Fill out the form, then click **Submit**.
-
-### Report copyright or trademark infringement
+## Report copyright or trademark infringement
 If you think an item in the Edge add-ons store violates a copyright or trademark, fill out [this][EdgeInfringmentReport] form. Our team will review your report and take any necessary action.
 
 <!-- links -->  
