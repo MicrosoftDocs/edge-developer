@@ -41,13 +41,14 @@ The following sections describe the new experimental features that are available
 | Experimental feature | Microsoft Edge version |  
 |:--- |:--- |  
 | [Emulation: Support dual screen mode](#emulation-support-dual-screen-mode) | 84 or later |  
-| [Enable new CSS grid debugging features](#enable-new-css-grid-debugging-features) | 85 or later |  
 | [Enable support to move tabs between panels](#enable-support-to-move-tabs-between-panels) | 85 or later |  
 | [Enable webhint](#enable-webhint) | 85 or later |  
 | [Enable Network Console](#enable-network-console) | 85 or later |  
 | [Source Order Viewer](#source-order-viewer) | 86 or later |  
 | [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor) | 87 or later |  
-| [Turn on Composited Layers in 3D View](#turn-on-composited-layers-in-3d-view) | 87 or later |  
+| [Turn on Composited Layers in 3D View](#turn-on-composited-layers-in-3d-view) | 87 or later | 
+| [Enable + button tab menus to open more tools](#enable-+-button-tab-menus-to-open-more-tools) | 89 or later | 
+| [Enable Welcome tab](#enable-welcome-tab) | 89 or later |
 
 ### Emulation: Support dual screen mode  
 
@@ -269,10 +270,34 @@ You may now visualize Layers alongside z-indexes and the Document Object Model \
 
 <!--Available in Microsoft Edge version 87 and later.  -->  
 
+### Enable + button tab menus to open more tools
+
+This experiment provides a new way to open more tools in DevTools. After turning on the experiment and reloading DevTools, a plus (+) will appear to the right of the tab group along the top of the DevTools. Select this + button to open a menu of other tools to open.
+    
+:::image type="complex" source="../media/experiments-plus-button.msft.png" alt-text="The + button tab menu appears to the right of the tab group" lightbox="../media/experiments-plus-button.msft.png":::
+   The + button tab menu appears to the right of the tab group
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 89 and later.  -->  
+### Enable Welcome tab
+
+This experiment replaces the **What's New** tab with **Welcome**. The new **Welcome** tool provides the same content but with a refreshed design and additional links to documentation and ways to contact the Edge DevTools team. 
+
+**Welcome** will automatically open after each Edge update to show the latest features and release notes for Edge DevTools. Toggle the checkbox at the top of the **Welcome** page to turn off this feature.
+
+This experiment is on by default but can be turned off to return to the classic **What's New** tab.
+    
+:::image type="complex" source="../media/experiments-welcome.msft.png" alt-text="Welcome tool" lightbox="../media/experiments-welcome.msft.png":::
+   **Welcome** tool  
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 89 and later.  -->  
+
 ## Previous experimental features  
 
 *   [3D View][Devtools3dViewIndex] is now available and turned on by default in Microsoft Edge version 83 or later.  
 *   [Customize Keyboard Shortcuts][DevtoolsCustomKeyboardShortcuts] is now available and turned on by default in Microsoft Edge version 86 or later.  
+* [Enable new CSS grid debugging features][DevtoolsCssGrid] is now available and turned on by default in Microsoft Edge version 89 or later.
 
 ## Providing feedback on experimental features  
 
@@ -307,6 +332,7 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 
 [Devtools3dViewIndex]: ../3d-view/index.md "3D View | Microsoft Docs"  
 [DevToolsCustomizeSettings]: ../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCssGrid]: ../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools | Microsoft Edge"  
 [DevtoolsIssues]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
 [DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
