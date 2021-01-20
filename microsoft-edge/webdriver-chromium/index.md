@@ -76,6 +76,24 @@ Use [pip][PythonPip] to install the [msedge-selenium-tools][PythonSeleniumTools]
 pip install msedge-selenium-tools selenium==3.141
 ```  
 
+#### [Java](#tab/java/)
+
+<a id="selenium-tools-install"></a>  
+
+Add [msedge-selenium-tools-java](https://search.maven.org/search?q=a:msedge-selenium-tools-java) as a dependency using Maven:
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>com.microsoft.edge</groupId>
+        <artifactId>msedge-selenium-tools-java</artifactId>
+        <version>3.141.0</version>
+    </dependency>
+</dependencies>
+```
+
+The Java package is also available for direct download on the Selenium Tools for Microsoft Edge [Releases][GithubMicrosoftEdgeSeleniumToolsReleases] page.
+
 #### [JavaScript](#tab/javascript/)  
 
 <a id="selenium-tools-install"></a>  
@@ -148,6 +166,16 @@ options.use_chromium = True
 driver = Edge(options)
 ```  
 
+#### [Java](#tab/java/)  
+
+<a id="driving-microsoft-edge-chromium-code"></a>  
+
+The `EdgeDriver` class included in either Selenium 4 or Selenium Tools for Microsoft Edge supports Microsoft Edge (Chromium) only and can be used without `EdgeOptions`.
+
+```java
+EdgeDriver driver = new EdgeDriver();
+```
+
 #### [JavaScript](#tab/javascript/)  
 
 <a id="driving-microsoft-edge-chromium-code"></a>  
@@ -192,6 +220,17 @@ options.binary_location = r"C:\Program Files (x86)\Microsoft\Edge Beta\Applicati
 driver = Edge(options)
 ```  
 
+#### [Java](#tab/java/)  
+
+<a id="choosing-specific-browser-binaries-chrome-only-code"></a>  
+
+```java
+EdgeOptions options = new EdgeOptions();
+options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge Beta\\Application\\msedge.exe");
+
+EdgeDriver driver = new EdgeDriver(options);
+```
+
 #### [JavaScript](#tab/javascript/)  
 
 <a id="choosing-specific-browser-binaries-chrome-only-code"></a>  
@@ -199,7 +238,7 @@ driver = Edge(options)
 ```javascript
 let options = new edge.Options();
 options.setEdgeChromium(true);
-options.setBinaryPath("C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe");
+options.setBinaryPath("C:\\Program Files (x86)\\Microsoft\\Edge Beta\\Application\\msedge.exe");
 
 let driver = edge.Driver.createSession(options);
 ```  
@@ -240,6 +279,17 @@ service_args = ['--verbose']
 driver = Edge(service_args = service_args)
 ```  
 
+#### [Java](#tab/java/)  
+
+<a id="customizing-microsoft-edge-driver-services-code"></a>  
+
+```java
+System.setProperty("webdriver.edge.verboseLogging", "true");
+EdgeDriverService service = EdgeDriverService.createDefaultService();
+EdgeOptions options = new EdgeOptions();
+EdgeDriver driver = new EdgeDriver(service, options);
+```
+
 #### [JavaScript](#tab/javascript/)  
 
 <a id="customizing-microsoft-edge-driver-services-code"></a>  
@@ -279,6 +329,16 @@ options.use_chromium = True
 options.add_argument("headless")
 options.add_argument("disable-gpu")
 ```  
+
+#### [Java](#tab/java/)  
+
+<a id="using-chromium-specific-options-code"></a>  
+
+```java
+EdgeOptions options = new EdgeOptions();
+options.addArguments("headless");
+options.addArguments("disable-gpu");
+```
 
 #### [JavaScript](#tab/javascript/)  
 
@@ -340,6 +400,7 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 [DockerHubMsedgedriver]: https://hub.docker.com/_/microsoft-msedge-msedgedriver?tab=description "msedgedriver | Docker hub"  
 
 [GithubMicrosoftEdgeSeleniumTools]: https://github.com/microsoft/edge-selenium-tools "microsoft/edge-selenium-tools | GitHub"  
+[GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases/latest "microsoft/edge-selenium-tools | GitHub"  
 [GithubSeleniumHq]: https://github.com/SeleniumHQ/selenium "SeleniumHQ/selenium | GitHub"  
 
 [JavaScriptnpm]: https://www.npmjs.com/ "npm"  
