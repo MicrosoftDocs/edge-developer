@@ -110,35 +110,6 @@ npm install @microsoft/edge-selenium-tools selenium-webdriver
 
 You may run the following examples using either Selenium 3 or 4.  To use with Selenium 3, the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] package must be installed.  
 
-### Basic Usage  
-
-To use with Microsoft Edge \(EdgeHTML\), create a default instance of the `EdgeDriver` class.  
-
-#### [C#](#tab/c-sharp/)  
-
-<a id="basic-usage-code"></a>  
-
-```csharp
-var driver = new EdgeDriver();
-```  
-
-#### [Python](#tab/python/)  
-
-<a id="basic-usage-code"></a>  
-
-```python
-driver = Edge()
-```  
-
-#### [JavaScript](#tab/javascript/)  
-
-<a id="basic-usage-code"></a>  
-
-```javascript
-let driver = edge.Driver.createSession();
-```  
-
-* * *  
 
 ### Driving Microsoft Edge (Chromium)  
 
@@ -170,7 +141,7 @@ driver = Edge(options)
 
 <a id="driving-microsoft-edge-chromium-code"></a>  
 
-The `EdgeDriver` class included in either Selenium 4 or Selenium Tools for Microsoft Edge supports Microsoft Edge (Chromium) only and can be used without `EdgeOptions`.
+The `EdgeDriver` class supports Microsoft Edge (Chromium) only and can be used without `EdgeOptions`.
 
 ```java
 EdgeDriver driver = new EdgeDriver();
@@ -253,7 +224,7 @@ let driver = edge.Driver.createSession(options);
 
 When an `EdgeDriver` class instance is created using `EdgeOptions` class, it creates and launches the appropriate `EdgeDriverService` class for either Microsoft Edge \(EdgeHTML\) or Microsoft Edge \(Chromium\).  
 
-If you want to create an `EdgeDriverService`, create one configured for Microsoft Edge \(Chromium\) using the `CreateChromiumService()` method.  You may find it useful for additional customizations like enabling verbose log output in the following code.  
+If you want to create an `EdgeDriverService`, create one configured for Microsoft Edge \(Chromium\) using the `CreateChromiumService()` method.  You may find it useful for extra customizations like enabling verbose log output in the following code.  
 
 ```csharp
 using (var service = EdgeDriverService.CreateChromiumService())
@@ -272,7 +243,7 @@ using (var service = EdgeDriverService.CreateChromiumService())
 
 <a id="customizing-microsoft-edge-driver-services-code"></a>  
 
-When using Python, the `Edge` object creates and manages the `EdgeService`.  To configure the `EdgeService`, pass additional arguments to the `Edge` object as indicated in the following code.  
+When using Python, the `Edge` object creates and manages the `EdgeService`.  To configure the `EdgeService`, pass extra arguments to the `Edge` object as indicated in the following code.  
 
 ```python
 service_args = ['--verbose']
@@ -295,7 +266,7 @@ EdgeDriver driver = new EdgeDriver(service, options);
 <a id="customizing-microsoft-edge-driver-services-code"></a>  
 
 When using JavaScript, create and configure a `Service` with the `ServiceBuilder` class.  Optionally, you may pass the `Service` object to the `Driver` object, which starts \(and stops\) the service for you.  
-To configure the `Service`, run additional methods in the `ServiceBuilder` class before using the `build()` method.  Then pass the `service` as a parameter in the `Driver.createSession()` method.  
+To configure the `Service`, run other methods in the `ServiceBuilder` class before using the `build()` method.  Then pass the `service` as a parameter in the `Driver.createSession()` method.  
 
 ```javascript
 let service = new edge.ServiceBuilder().enableVerboseLogging().build();
@@ -356,7 +327,7 @@ options.addArguments("disable-gpu");
 > [!NOTE]
 > If the `UseChromium` property is set to `true`, you are not able to use properties and methods for Microsoft Edge \(EdgeHTML\).  
 
-## Additional WebDriver installation options  
+## More WebDriver installation options  
 
 ### Chocolatey  
 
