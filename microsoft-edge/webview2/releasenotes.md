@@ -25,7 +25,7 @@ Release Date: January 25, 2021
 #### General  
 
 > [!IMPORTANT]
->  **Breaking Change**: WebView2 pre-release package 0.9.430 has been deprecated. Please discontinue development with this packages.  
+>  **Breaking Change**: WebView2 pre-release package 0.9.430 has been deprecated, and will be removed the upcoming release. Please discontinue development with this packages.  
 
 ###### Features  
 *   Disabled Edge Shopping feature in WebView2. 
