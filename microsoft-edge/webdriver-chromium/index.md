@@ -3,7 +3,7 @@ description: Learn how to test your website or app in Microsoft Edge or automate
 title: WebDriver (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/02/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -52,7 +52,7 @@ The last component you must download is a language-specific client driver to tra
 [Download the WebDriver language binding of your choice][SeleniumDownloads].  The Microsoft Edge team recommends [Selenium 4.00-alpha07][NugetPackagesSeleniumWebdriver400alpha07] or later, because it supports Microsoft Edge \(Chromium\).  However, you may control Microsoft Edge \(Chromium\) in all older versions of Selenium, including the current stable Selenium 3 release.  
 
 > [!IMPORTANT]
-> If you were previously automating or testing Microsoft Edge \(Chromium\) using `ChromeDriver` and `ChromeOptions` classes, your WebDriver code does not run on Microsoft Edge Version 80 or later.  To solve this problem, update your tests to use the `EdgeOptions` class and install [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver].  
+> If you were previously automating or testing Microsoft Edge \(Chromium\) using `ChromeDriver` and `ChromeOptions` classes, your WebDriver code does not run on Microsoft Edge Version 80 or later.  To solve this problem, update your tests to use the `EdgeOptions` class and download [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver].  
 
 ### Use Selenium 3  
 
@@ -80,7 +80,7 @@ pip install msedge-selenium-tools selenium==3.141
 
 <a id="selenium-tools-install"></a>  
 
-Add [msedge-selenium-tools-java](https://search.maven.org/search?q=a:msedge-selenium-tools-java) as a dependency using Maven:
+Add [msedge-selenium-tools-java][SonatypeMavenRepositorySearch] as a dependency using Maven:
 
 ```xml
 <dependencies>
@@ -92,7 +92,7 @@ Add [msedge-selenium-tools-java](https://search.maven.org/search?q=a:msedge-sele
 </dependencies>
 ```
 
-The Java package is also available for direct download on the Selenium Tools for Microsoft Edge [Releases][GithubMicrosoftEdgeSeleniumToolsReleases] page.
+The Java package is also available to download directly on the [Selenium Tools for Microsoft Edge Releases page][GithubMicrosoftEdgeSeleniumToolsReleases].
 
 #### [JavaScript](#tab/javascript/)  
 
@@ -347,7 +347,7 @@ If you use [Docker][DockerHub], download a pre-configured image with Microsoft E
 docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 ```  
 
-For more information, see [container on Docker Hub][DockerHubMsedgedriver].  
+For more information, navigate to the [msedgedriver container on Docker Hub][DockerHubMsedgedriver].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
@@ -397,6 +397,8 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 
 [SeleniumHQ]: https://www.selenium.dev "SeleniumHQ"  
 [SeleniumDownloads]: https://selenium.dev/downloads "Downloads | Selenium"  
+
+[SonatypeMavenRepositorySearch]: https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java/3.141.0/jar "sonatype Maven Central Repository Search | com.microsoft.edge:msedge-selenium-tools-java"
 
 [TwitterTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a tweet"  
 
