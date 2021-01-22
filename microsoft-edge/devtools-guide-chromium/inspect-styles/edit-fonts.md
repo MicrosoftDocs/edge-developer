@@ -1,6 +1,6 @@
 ---
-description: Learn how to change CSS font Styles and settings using the Styles pane in Microsoft Edge DevTools.
-title: Edit CSS font Styles and settings in the Styles pane in DevTools
+description: Learn how to change CSS font styles and settings using the Styles pane in Microsoft Edge DevTools.
+title: Edit CSS font styles and settings in the Styles pane in DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/21/2021
