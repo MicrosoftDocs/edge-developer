@@ -31,7 +31,7 @@ Release Date: January 25, 2021
 *   Disabled Edge Shopping feature in WebView2. 
 *   Added [TrySuspend & Resume][ReferenceWin32Icorewebview210774PreReleaseTrySuspendResume] method that lets you suspend and resume a WebView. 
 *   Added [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210774PreReleaseSetVirtualHostNameToFolderMapping] method that maps between a virtual host name and a folder path. 
-*   Added [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210774PreReleaseDefaultBackgroundColor] property that lets you set the background color and transparency.   \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue549]\)
+*   Added [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210774PreReleaseDefaultBackgroundColor] property that lets you set the background color and transparency.   \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue414]\)
 *   Added [UserAgent][ReferenceWin32Icorewebview2experimentalsettings10774PreReleaseGetUserAgent] property that lets you get and set the User Agent.\([\#122][GithubMicrosoftedgeWebviewfeedbackIssue549]\)
 
 *   Added Visual hosting support through the ICoreWebView2CompositionController interface, created using the new CreateCoreWebView2CompositionController API on ICoreWebView2Environment3.
@@ -655,4 +655,3 @@ Initial developer preview release.
 [ReferenceWin32Icorewebview2experimentalsettings10774PreReleaseGetUserAgent]: /microsoft-edge/webview2/reference/win32/icorewebview2/icorewebview2experimentalsettingsget_useragent "get_UserAgent - interface ICoreWebView2ExperimentalSettings | Microsoft Docs"
 [ReferenceWin32Icorewebview210774PreReleaseSetVirtualHostNameToFolderMapping]: /microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.774-prerelease&preserve-view=true#SetVirtualHostNameToFolderMapping "SetVirtualHostNameToFolderMapping - interface ICoreWebView2_3 | Microsoft Docs" 
 [ReferenceWin32Icorewebview2controllerViewWebview210774PreReleaseDefaultBackgroundColor]: //microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.774-prerelease&preserve-view=true#defaultbackgroundcolor "DefaultBackgroundColor - interface ICoreWebView2Controller2 | Microsoft Docs"
-
