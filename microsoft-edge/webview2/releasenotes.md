@@ -16,7 +16,7 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 > [!NOTE]
 > Re-compile your app after updating the NuGet package.  
 
-## 1.0.774-prerelease  
+## 1.0.773-prerelease  
 
 Release Date: January 25, 2021  
 
@@ -655,5 +655,4 @@ Initial developer preview release.
 [ReferenceWin32Icorewebview2experimentalsettings10774PreReleaseGetUserAgent]: /microsoft-edge/webview2/reference/win32/icorewebview2/icorewebview2experimentalsettingsget_useragent "get_UserAgent - interface ICoreWebView2ExperimentalSettings | Microsoft Docs"
 [ReferenceWin32Icorewebview210774PreReleaseSetVirtualHostNameToFolderMapping]: /microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.774-prerelease&preserve-view=true#SetVirtualHostNameToFolderMapping "SetVirtualHostNameToFolderMapping - interface ICoreWebView2_3 | Microsoft Docs" 
 [ReferenceWin32Icorewebview2controllerViewWebview210774PreReleaseDefaultBackgroundColor]: //microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.774-prerelease&preserve-view=true#defaultbackgroundcolor "DefaultBackgroundColor - interface ICoreWebView2Controller2 | Microsoft Docs"
-
 
