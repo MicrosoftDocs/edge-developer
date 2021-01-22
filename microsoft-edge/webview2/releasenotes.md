@@ -33,7 +33,7 @@ Release Date: January 25, 2021
 *   Added [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210774PreReleaseSetVirtualHostNameToFolderMapping] method that maps between a virtual host name and a folder path. 
 *   Added [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210774PreReleaseDefaultBackgroundColor] property that lets you set the background color and transparency.   \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue414]\)
 *   Added [UserAgent][ReferenceWin32Icorewebview2experimentalsettings10774PreReleaseGetUserAgent] property that lets you get and set the User Agent.\([\#122][GithubMicrosoftedgeWebviewfeedbackIssue549]\)
-
+*   Updated CreateCookieWithCookie to become CopyCookie.
 *   Added Visual hosting support through the ICoreWebView2CompositionController interface, created using the new CreateCoreWebView2CompositionController API on ICoreWebView2Environment3.
 
 
