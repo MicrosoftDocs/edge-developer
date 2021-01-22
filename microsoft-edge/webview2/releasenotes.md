@@ -3,7 +3,7 @@ description: Release notes for Microsoft Edge WebView2 SDK
 title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/08/2020
+ms.date: 01/25/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -15,6 +15,51 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 
 > [!NOTE]
 > Re-compile your app after updating the NuGet package.  
+
+## 1.0.774-prerelease  
+
+Release Date: January 25, 2021  
+
+[NuGet package][NuGetGallery1.0.774-prerelease] \| minimum Microsoft Edge version 86.0.616.0.  
+
+#### General  
+
+> [!IMPORTANT]
+>  **Breaking Change**: WebView2 pre-release package 0.9.430 has been deprecated. Please discontinue development with this packages.  
+
+###### Features  
+*   Disabled Edge Shopping feature in WebView2. 
+*   Added [TrySuspend & Resume][ReferenceWin32Icorewebview210774PreReleaseTrySuspendResume] method that lets you suspend and resume a WebView. 
+*   Added [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210774PreReleaseSetVirtualHostNameToFolderMapping] method that maps between a virtual host name and a folder path. 
+*   Added [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210774PreReleaseDefaultBackgroundColor] property that lets you set the background color and transparency.   \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue549]\)
+*   Added [UserAgent][ReferenceWin32Icorewebview2experimentalsettings10774PreReleaseGetUserAgent] property that lets you get and set the User Agent.\([\#122][GithubMicrosoftedgeWebviewfeedbackIssue549]\)
+
+*   Added Visual hosting support through the ICoreWebView2CompositionController interface, created using the new CreateCoreWebView2CompositionController API on ICoreWebView2Environment3.
+
+
+###### Bug fixes
+*   Disabled context menu in PDF viewer when `AreDefaultContextMenusEnabled` is `false`.  \([\#605][GithubMicrosoftedgeWebviewfeedbackIssue605]\).  
+*   Fixed a bug that `E_NOINTERFACE` is returned when querying `ICoreWebView2` for `ICoreWebView2Experimental`.  \([\#691][GithubMicrosoftedgeWebviewfeedbackIssue691]\).  
+*   Fixed a bug that the navigation with malformed uri is not cancelled when `CoreWebView2NavigationStartingEventArgs.Cancel` is `false`.  \([\#400][GithubMicrosoftedgeWebviewfeedbackIssue400]\).  
+*   Fixed a bug that `window.print()` does not work with a pop-up window when an event handler is attached to `NewWindowRequested` event.  \([\#409][GithubMicrosoftedgeWebviewfeedbackIssue409]\).  
+*   Fixed Dynamic DPI issue when moving between monitors. \([\#58][GithubMicrosoftedgeWebviewfeedbackIssue549]\)
+
+###### Promotions  
+*   Promoted the following experimental changes to stable:
+    * Visual Hosting APIs.
+    * URI Protocol Scheme.
+
+#### .NET  
+
+###### Bug fixes
+* Fixed bug in WPF that was crashing webview on closing window with F4.  \([\#399][GithubMicrosoftedgeWebviewfeedbackIssue399]\)
+* Fixed WebView2 initialization screen to be transparent, instead of gray.   \([\#196][GithubMicrosoftedgeWebviewfeedbackIssue196]\)
+
+## 1.0.705.51  
+
+Release Date: January 25, 2021  
+
+[NuGet package][NuGetGallery1.0.705.51] \| minimum WebView2 Runtime version 86.0.616.0.  
 
 ## 1.0.721-prerelease  
 
@@ -597,4 +642,18 @@ Initial developer preview release.
 [CookiemanagementAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2cookiemanager?view=webview2-1.0.721-prerelease&preserve-view=true "ICoreWebView2CookieManager | Microsoft Docs"
 [DOMContentLoadedAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease#add_domcontentloaded&preserve-view=true "add_DOMContentLoaded - interface ICoreWebView2_2 | Microsoft Docs"
 [WebViewEnvironmentproperty]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease#get_environment&preserve-view=true "ICoreWebView2CookieManager | Microsoft Docs"
+
+[GithubMicrosoftedgeWebviewfeedbackIssue196]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/196 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 196" 
+[GithubMicrosoftedgeWebviewfeedbackIssue399]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/399 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 399" 
+[GithubMicrosoftedgeWebviewfeedbackIssue400]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/400 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 400"  
+[GithubMicrosoftedgeWebviewfeedbackIssue409]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/409 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 409" 
+[GithubMicrosoftedgeWebviewfeedbackIssue605]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/605 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 605"  
+[GithubMicrosoftedgeWebviewfeedbackIssue691]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/691 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 691" 
+[NuGetGallery1.0.705.51]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.705.51 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.705.51"
+[NuGetGallery1.0.774-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.774-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.774 prerelease"  
+[ReferenceWin32Icorewebview210774PreReleaseTrySuspendResume]: /microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.774-prerelease&preserve-view=true#TrySuspend "TrySuspend - interface ICoreWebview2_3 | Microsoft Docs"
+[ReferenceWin32Icorewebview2experimentalsettings10774PreReleaseGetUserAgent]: /microsoft-edge/webview2/reference/win32/icorewebview2/icorewebview2experimentalsettingsget_useragent "get_UserAgent - interface ICoreWebView2ExperimentalSettings | Microsoft Docs"
+[ReferenceWin32Icorewebview210774PreReleaseSetVirtualHostNameToFolderMapping]: /microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.774-prerelease&preserve-view=true#SetVirtualHostNameToFolderMapping "SetVirtualHostNameToFolderMapping - interface ICoreWebView2_3 | Microsoft Docs" 
+[ReferenceWin32Icorewebview2controllerViewWebview210774PreReleaseDefaultBackgroundColor]: //microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.774-prerelease&preserve-view=true#defaultbackgroundcolor "DefaultBackgroundColor - interface ICoreWebView2Controller2 | Microsoft Docs"
+
 
