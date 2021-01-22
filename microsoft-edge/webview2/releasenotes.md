@@ -16,6 +16,10 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 > [!NOTE]
 > Re-compile your app after updating the NuGet package.  
 
+
+> [!NOTE]
+> Please note Minimum Edge version is for supporting running WebView. Some APIs are defined in newer interfaces. Please ensure you are using the proper runtime version for prerelease package APIs. You may also use Microsoft Edge Canary channel to ensure the APIs are supported.
+
 ## 1.0.773-prerelease  
 
 Release Date: January 25, 2021  
@@ -28,7 +32,6 @@ Release Date: January 25, 2021
 >  **Breaking Change**: WebView2 pre-release package 0.9.430 has been deprecated, and will be removed the upcoming release. Please discontinue development with this packages.  
 
 ###### Features  
-*   Disabled Edge Shopping feature in WebView2. 
 *   Added [TrySuspend & Resume][ReferenceWin32Icorewebview210774PreReleaseTrySuspendResume] method that lets you suspend and resume a WebView. 
 *   Added [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210774PreReleaseSetVirtualHostNameToFolderMapping] method that maps between a virtual host name and a folder path. 
 *   Added [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210774PreReleaseDefaultBackgroundColor] property that lets you set the background color and transparency.   \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue414]\)
@@ -38,6 +41,7 @@ Release Date: January 25, 2021
 
 
 ###### Bug fixes
+*   Disabled Edge Shopping feature in WebView2. 
 *   Disabled context menu in PDF viewer when `AreDefaultContextMenusEnabled` is `false`.  \([\#605][GithubMicrosoftedgeWebviewfeedbackIssue605]\).  
 *   Fixed a bug that `E_NOINTERFACE` is returned when querying `ICoreWebView2` for `ICoreWebView2Experimental`.  \([\#691][GithubMicrosoftedgeWebviewfeedbackIssue691]\).  
 *   Fixed a bug that the navigation with malformed uri is not cancelled when `CoreWebView2NavigationStartingEventArgs.Cancel` is `false`.  \([\#400][GithubMicrosoftedgeWebviewfeedbackIssue400]\).  
@@ -47,7 +51,10 @@ Release Date: January 25, 2021
 ###### Promotions  
 *   Promoted the following experimental changes to stable:
     * Visual Hosting APIs.
-    * URI Protocol Scheme.
+    * [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210774PreReleaseSetVirtualHostNameToFolderMapping]
+    * [TrySuspend & Resume][ReferenceWin32Icorewebview210774PreReleaseTrySuspendResume]
+    * [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210774PreReleaseDefaultBackgroundColor]
+
 
 #### .NET  
 
