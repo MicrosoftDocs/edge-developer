@@ -76,11 +76,11 @@ Use [pip][PythonPip] to install the [msedge-selenium-tools][PythonSeleniumTools]
 pip install msedge-selenium-tools selenium==3.141
 ```  
 
-#### [Java](#tab/java/)
+#### [Java](#tab/java/)  
 
 <a id="selenium-tools-install"></a>  
 
-Add [msedge-selenium-tools-java][SonatypeMavenRepositorySearch] as a dependency using Maven:
+Add [msedge-selenium-tools-java][SonatypeMavenRepositorySearch] as a dependency using Maven:  
 
 ```xml
 <dependencies>
@@ -90,9 +90,9 @@ Add [msedge-selenium-tools-java][SonatypeMavenRepositorySearch] as a dependency 
         <version>3.141.0</version>
     </dependency>
 </dependencies>
-```
+```  
 
-The Java package is also available to download directly on the [Selenium Tools for Microsoft Edge Releases page][GithubMicrosoftEdgeSeleniumToolsReleases].
+The Java package is also available to download directly on the [Selenium Tools for Microsoft Edge Releases page][GithubMicrosoftEdgeSeleniumToolsReleases].  
 
 #### [JavaScript](#tab/javascript/)  
 
@@ -106,10 +106,9 @@ npm install @microsoft/edge-selenium-tools selenium-webdriver
 
 * * *  
 
-## Use Microsoft Edge (Chromium) with WebDriver
+## Use Microsoft Edge (Chromium) with WebDriver  
 
 You may run the following examples using either Selenium 3 or 4.  To use with Selenium 3, the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] package must be installed.  
-
 
 ### Driving Microsoft Edge (Chromium)  
 
@@ -141,11 +140,11 @@ driver = Edge(options)
 
 <a id="driving-microsoft-edge-chromium-code"></a>  
 
-The `EdgeDriver` class supports Microsoft Edge (Chromium) only and can be used without `EdgeOptions`.
+The `EdgeDriver` class supports Microsoft Edge (Chromium) only and can be used without `EdgeOptions`.  
 
 ```java
 EdgeDriver driver = new EdgeDriver();
-```
+```  
 
 #### [JavaScript](#tab/javascript/)  
 
@@ -161,7 +160,7 @@ let driver = edge.Driver.createSession(options);
 * * *  
 
 > [!NOTE]
-> If your IT admin has set the [DeveloperToolsAvailability][DeployedgePoliciesDevelopertoolsavailability] policy to `2`, [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] is not be able to drive [Microsoft Edge (Chromium)][MicrosoftEdge] because the driver uses the [Microsoft Edge DevTools][DevToolsMain].  Ensure the [DeveloperToolsAvailability][DeployedgePoliciesDevelopertoolsavailability] policy is set to `0` or `1` to automate [Microsoft Edge (Chromium)][MicrosoftEdge].  
+> If your IT admin has set the [DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability] policy to `2`, [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] is not be able to drive [Microsoft Edge (Chromium)][MicrosoftEdge] because the driver uses the [Microsoft Edge DevTools][DevtoolsIndex].  Ensure the [DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability] policy is set to `0` or `1` to automate [Microsoft Edge (Chromium)][MicrosoftEdge].  
 
 ### Choosing Specific Browser Binaries (Chromium-Only)  
 
@@ -200,7 +199,7 @@ EdgeOptions options = new EdgeOptions();
 options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge Beta\\Application\\msedge.exe");
 
 EdgeDriver driver = new EdgeDriver(options);
-```
+```  
 
 #### [JavaScript](#tab/javascript/)  
 
@@ -236,7 +235,7 @@ using (var service = EdgeDriverService.CreateChromiumService())
 ```  
 
 > [!NOTE] 
->You do not need to provide the `EdgeOptions` object when passing `EdgeDriverService` to the `EdgeDriver` instance. The `EdgeDriver` class uses the default options for either Microsoft Edge \(EdgeHTML\) or Microsoft Edge \(Chromium\) depending on the service you provide.  
+>You do not need to provide the `EdgeOptions` object when passing `EdgeDriverService` to the `EdgeDriver` instance.  The `EdgeDriver` class uses the default options for either Microsoft Edge \(EdgeHTML\) or Microsoft Edge \(Chromium\) depending on the service you provide.  
 > However, if you want to provide both `EdgeDriverService` and `EdgeOptions` classes, ensure that both are configured for the same version of Microsoft Edge.  For example, it is not possible to use a default Microsoft Edge \(EdgeHTML\) `EdgeDriverService` class and Chromium properties in the `EdgeOptions` class.  The `EdgeDriver` class throws an error to prevent using different versions.  
 
 #### [Python](#tab/python/)  
@@ -259,7 +258,7 @@ System.setProperty("webdriver.edge.verboseLogging", "true");
 EdgeDriverService service = EdgeDriverService.createDefaultService();
 EdgeOptions options = new EdgeOptions();
 EdgeDriver driver = new EdgeDriver(service, options);
-```
+```  
 
 #### [JavaScript](#tab/javascript/)  
 
@@ -277,7 +276,7 @@ let driver = edge.Driver.createSession(options, service);
 
 ### Use Chromium-Specific Options  
 
-If you set the `UseChromium` property to `true`, you may use the `EdgeOptions` class to access the same [Chromium-specific properties and methods][CapabilitiesAndEdgeOptions] as when you automate other Chromium browsers.  
+If you set the `UseChromium` property to `true`, you may use the `EdgeOptions` class to access the same [Chromium-specific properties and methods][WebdriverCapabilitiesEdgeOptions] as when you automate other Chromium browsers.  
 
 #### [C#](#tab/c-sharp/)  
 
@@ -309,7 +308,7 @@ options.add_argument("disable-gpu")
 EdgeOptions options = new EdgeOptions();
 options.addArguments("headless");
 options.addArguments("disable-gpu");
-```
+```  
 
 #### [JavaScript](#tab/javascript/)  
 
@@ -320,7 +319,7 @@ let options = new edge.Options();
 options.setEdgeChromium(true);
 options.addArguments("headless");
 options.addArguments("disable-gpu");
-```
+```  
 
 * * *  
 
@@ -351,7 +350,7 @@ For more information, navigate to the [msedgedriver container on Docker Hub][Doc
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
-The Microsoft Edge team is eager to hear your feedback about using WebDriver, Selenium, and Microsoft Edge.  To let the team know what you think, choose the **Send Feedback** icon in the Microsoft Edge DevTools or send a tweet [@EdgeDevTools][TwitterTweetEdgeDevTools].  
+The Microsoft Edge team is eager to hear your feedback about using WebDriver, Selenium, and Microsoft Edge.  To send the team your questions and comments, choose the **Send Feedback** icon in the Microsoft Edge DevTools or send a tweet [@EdgeDevTools][TwitterTweetEdgeDevTools].  
 
 :::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
    The **Send Feedback** icon in the Microsoft Edge DevTools  
@@ -359,11 +358,11 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 
 <!-- links -->  
 
-[DevToolsMain]: ../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
-[CapabilitiesAndEdgeOptions]: ./capabilities-edge-options.md "Capabilities and EdgeOptions | Microsoft Docs"
-[Webdriver]: ../webdriver/index.md "WebDriver (EdgeHTML) | Microsoft Docs"  
+[DevtoolsIndex]: ../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[WebdriverCapabilitiesEdgeOptions]: ./capabilities-edge-options.md "Capabilities and EdgeOptions | Microsoft Docs"  
+<!--[Webdriver]: ../edgehtml/webdriver/index.md "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
 
-[DeployedgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability - Microsoft Edge - Policies | Microsoft Docs"  
+[DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability - Microsoft Edge - Policies | Microsoft Docs"  
 
 [Chocolatey]: https://chocolatey.org "Chocolatey | Chocolatey Software"  
 [ChocolateyPackagesSeleniumChromiumEdgeDriver]: https://chocolatey.org/packages/selenium-chromium-edge-driver "Selenium Chromium Edge Driver | Chocolatey"  
@@ -372,7 +371,7 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 [DockerHubMsedgedriver]: https://hub.docker.com/_/microsoft-msedge-msedgedriver?tab=description "msedgedriver | Docker hub"  
 
 [GithubMicrosoftEdgeSeleniumTools]: https://github.com/microsoft/edge-selenium-tools "microsoft/edge-selenium-tools | GitHub"  
-[GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases/latest "microsoft/edge-selenium-tools | GitHub"  
+[GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases "microsoft/edge-selenium-tools | GitHub"  
 [GithubSeleniumHq]: https://github.com/SeleniumHQ/selenium "SeleniumHQ/selenium | GitHub"  
 
 [JavaScriptnpm]: https://www.npmjs.com/ "npm"  
