@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 ---
 # Selenium Tools release signing  
 
-This article provides the public signing keys for [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] releases.  Copy the following keys and validate packages provided by the [Microsoft Edge Developer Tools team][TwitterEdgeDevTools].  
+This article provides the public signing key for [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] releases.  Use the following keys to validate packages provided by the [Microsoft Edge Developer Tools team][TwitterEdgeDevTools].  
 
 ## Java releases  
 

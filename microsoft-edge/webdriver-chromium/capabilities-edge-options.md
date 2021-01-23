@@ -26,7 +26,7 @@ options.AddExtensions("/path/to/extension.crx");
 var driver = new EdgeDriver(options);
 ```  
 
-For capabilities that not yet associated with a convenient method, use the `AddAdditionalCapability` method.  Use the correct name of the capability and know the type of value it accepts.  To review the full list, navigate to [EdgeOptions object](#edgeoptions-object).  
+For capabilities that don't yet have an associated convenience method, use the `AddAdditionalCapability` method.  Pass the full name of the capability and a value with the correct type.  To review the full list of accepted capabilities and value types, navigate to [EdgeOptions object](#edgeoptions-object).  
 
 ```csharp
 options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
@@ -47,7 +47,7 @@ Most Microsoft Edge-specific capabilities are exposed through the `EdgeOptions` 
 | extensions | list of strings |  | A list of extensions to install on startup.  Each item in the list should be a base-64 encoded packed extension \(`.crx`\). |  
 | localState | dictionary |  | A dictionary with each entry consisting of the name of the preference and the value.  The preferences are applied to the Local State file in the `user data folder`. |  
 | prefs | dictionary |  | A dictionary with each entry consisting of the name of the preference and the value.  The preferences are only applied to the user profile in use.  For examples, navigate to the `Preferences` file in the `user data folder` of Microsoft Edge. |  
-| detach | boolean | `false` | If `false`, Microsoft Edge quits when `EdgeDriver` ends, whether the session quit or not.  If true, Microsoft Edge only quits if the session is quit \(or closed\).  **NOTE**:  If `true`, and the session is active, `EdgeDriver` fails to clean up the temporary `user data folder` used by the Microsoft Edge instance. |  
+| detach | boolean | `false` | If `false`, Microsoft Edge quits when the WebDriver service shuts down, even if the WebDriver local end hasn't closed the session.  If `true`, Microsoft Edge only quits if the WebDriver local end closes the session.  **NOTE**:  If `true`, and the WebDriver local end does not close the session, `EdgeDriver` will not clean up the temporary `user data folder` used by the Microsoft Edge instance. |  
 | debuggerAddress | string |  | An address of a debugger server to which to connect, in the form of <hostname/ip:port>, for example `127.0.0.1:38947`. |
 | excludeSwitches | list of strings |  | List of Microsoft Edge command line switches to exclude that EdgeDriver by default passes when starting Microsoft Edge.  Avoid the `--` prefix for switches. |  
 | minidumpPath | string |  | Directory to store Microsoft Edge minidumps.  \(Supported only on Linux.\) |  
