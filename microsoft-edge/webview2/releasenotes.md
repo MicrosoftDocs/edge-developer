@@ -37,7 +37,8 @@ Release Date: January 25, 2021
 *   Added [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210773PreReleaseDefaultBackgroundColor] property to set the background color and transparency.  \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue414]\)  
 *   Added [UserAgent][ReferenceWin32Icorewebview2experimentalsettings10773PreReleaseGetUserAgent] property to get and set the User Agent.\([\#122][GithubMicrosoftedgeWebviewfeedbackIssue549]\)
 *   Updated `CreateCookieWithCookie` to become `CopyCookie`.  
-*   Added Visual hosting support through the `ICoreWebView2CompositionController` interface, created using the new `CreateCoreWebView2CompositionController` API on `ICoreWebView2Environment3`.  
+*   Added Visual hosting support through the [ICoreWebView2CompositionController][ReferenceWin32Icorewebview2controllerViewWebview210773CompositionController] interface, created using the new `CreateCoreWebView2CompositionController` API on `ICoreWebView2Environment3`. 
+
     
 ###### Bug fixes  
 
@@ -648,7 +649,6 @@ Initial developer preview release.
 [NuGetGallery0.9.628-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/0.9.628-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v0.9.628 prerelease"  
 [NuGetGallery1.0.674-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.674-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.674 prerelease"  
 [NuGetGallery1.0.721-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.721-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.721 prerelease"  
-
 [WindowsBlogsMsedgedevEdgeWebview2GeneralAvailability]: https://blogs.windows.com/msedgedev/edge-webview2-general-availability "Announcing Microsoft Edge WebView2 General Availability | Microsoft Edge Blog"  
 
 [WebResourceResponseReceivedAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease#add_webresourceresponsereceived&preserve-view=true "add_WebResourceResponseReceived - interface ICoreWebView2 | Microsoft Docs"
@@ -663,9 +663,10 @@ Initial developer preview release.
 [GithubMicrosoftedgeWebviewfeedbackIssue409]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/409 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 409" 
 [GithubMicrosoftedgeWebviewfeedbackIssue605]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/605 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 605"  
 [GithubMicrosoftedgeWebviewfeedbackIssue691]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/691 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 691" 
-[NuGetGallery1.0.705.51]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.705.51 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.705.51"
+[NuGetGallery1.0.705.50]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.705.50 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.705.50"
 [NuGetGallery1.0.773-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.773-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.773 prerelease"  
 [ReferenceWin32Icorewebview210773PreReleaseTrySuspendResume]: /microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.773-prerelease&preserve-view=true#TrySuspend "TrySuspend - interface ICoreWebview2_3 | Microsoft Docs"
 [ReferenceWin32Icorewebview2experimentalsettings10773PreReleaseGetUserAgent]: /microsoft-edge/webview2/reference/win32/icorewebview2/icorewebview2experimentalsettingsget_useragent "get_UserAgent - interface ICoreWebView2ExperimentalSettings | Microsoft Docs"
 [ReferenceWin32Icorewebview210773PreReleaseSetVirtualHostNameToFolderMapping]: /microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.773-prerelease&preserve-view=true#SetVirtualHostNameToFolderMapping "SetVirtualHostNameToFolderMapping - interface ICoreWebView2_3 | Microsoft Docs" 
 [ReferenceWin32Icorewebview2controllerViewWebview210773PreReleaseDefaultBackgroundColor]: //microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.773-prerelease&preserve-view=true#defaultbackgroundcolor "DefaultBackgroundColor - interface ICoreWebView2Controller2 | Microsoft Docs"
+[ReferenceWin32Icorewebview2controllerViewWebview210773CompositionController]:  //microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.773-prerelease&preserve-view=true
