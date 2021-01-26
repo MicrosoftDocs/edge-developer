@@ -53,8 +53,6 @@ Release Date: January 25, 2021
     *   [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210773PreReleaseSetVirtualHostNameToFolderMapping]  
     *   [TrySuspend and Resume][ReferenceWin32Icorewebview210773PreReleaseTrySuspendResume] 
     *   [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210773PreReleaseDefaultBackgroundColor]  
-    > [!NOTE]
-    > TrySuspend and Resume and DefaultBackgroundColor are APIs that are fast-tracked into stable. There are no experimental versions of these APIs. 
     
 #### .NET  
 
