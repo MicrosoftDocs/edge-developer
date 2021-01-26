@@ -350,6 +350,10 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 
 For more information, navigate to the [msedgedriver container on Docker Hub][DockerHubMsedgedriver].  
 
+## Next steps
+
+To learn more about WebDriver and how to write automated WebDriver tests using Selenium, navigate to the [SeleniumDocumentation][Selenium documentation].  
+
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 The Microsoft Edge team is eager to hear your feedback about using WebDriver, Selenium, and Microsoft Edge.  To send the team your questions and comments, choose the **Send Feedback** icon in the Microsoft Edge DevTools or send a tweet [@EdgeDevTools][TwitterTweetEdgeDevTools].  
@@ -397,6 +401,7 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 [PythonSelenium]: https://pypi.org/project/selenium/ "selenium | PyPI"
 
 [SeleniumHQ]: https://www.selenium.dev "SeleniumHQ"  
+[SeleniumDocumentation]: https://www.selenium.dev/documentation "The Selenium Browser Automation Project :: Documentation for Selenium"  
 [SeleniumDownloads]: https://selenium.dev/downloads "Downloads | Selenium"  
 
 [SonatypeMavenRepositorySearch]: https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java/3.141.0/jar "sonatype Maven Central Repository Search | com.microsoft.edge:msedge-selenium-tools-java"
