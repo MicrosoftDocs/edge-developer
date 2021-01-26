@@ -1,6 +1,6 @@
 ---
 description: Learn how to test your website or app in Microsoft Edge or automate the browser with WebDriver.
-title: WebDriver (Chromium)
+title: Use WebDriver (Chromium) for test automation  
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/22/2021
@@ -9,9 +9,9 @@ ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, html, css, javascript, developer, webdriver, selenium, testing, tools, automation, test
 ---
-# WebDriver (Chromium)  
+# Use WebDriver (Chromium) for test automation  
 
-WebDriver enables you \(developers\) to create automated tests that simulate user interaction.  WebDriver tests and simulations differ from JavaScript unit tests because of the following reasons.  
+WebDriver allows developers to create automated tests that simulate user interaction.  WebDriver tests and simulations differ from JavaScript unit tests because WebDriver:  
 
 *   Accesses functionality and information not available to JavaScript running in browsers.  
 *   Simulates user events or OS-level events more accurately.  
@@ -80,16 +80,14 @@ pip install msedge-selenium-tools selenium==3.141
 
 <a id="selenium-tools-install"></a>  
 
-Add [msedge-selenium-tools-java][SonatypeMavenRepositorySearch] as a dependency using Maven:  
+If your Java project uses Maven, add [msedge-selenium-tools-java][SonatypeMavenRepositorySearch] by coping the following dependency to your `pom.xml` file:  
 
 ```xml
-<dependencies>
-    <dependency>
-        <groupId>com.microsoft.edge</groupId>
-        <artifactId>msedge-selenium-tools-java</artifactId>
-        <version>3.141.0</version>
-    </dependency>
-</dependencies>
+<dependency>
+    <groupId>com.microsoft.edge</groupId>
+    <artifactId>msedge-selenium-tools-java</artifactId>
+    <version>[3.141.0,)</version>
+</dependency>
 ```  
 
 The Java package is also available to download directly on the [Selenium Tools for Microsoft Edge Releases page][GithubMicrosoftEdgeSeleniumToolsReleases].  
@@ -110,9 +108,9 @@ npm install @microsoft/edge-selenium-tools selenium-webdriver
 
 You may run the following examples using either Selenium 3 or 4.  To use with Selenium 3, the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] package must be installed.  
 
-### Driving Microsoft Edge (Chromium)  
+### Automating Microsoft Edge (Chromium)  
 
-To drive Microsoft Edge \(Chromium\), create a new `EdgeDriver` class and pass it the `EdgeOptions` object with the `UseChromium` property set to `true`.  
+To automate Microsoft Edge \(Chromium\), create a new `EdgeDriver` class and pass it the `EdgeOptions` object with the `UseChromium` property set to `true`.  
 
 #### [C#](#tab/c-sharp/)  
 
@@ -140,7 +138,7 @@ driver = Edge(options)
 
 <a id="driving-microsoft-edge-chromium-code"></a>  
 
-The `EdgeDriver` class supports Microsoft Edge (Chromium) only and can be used without `EdgeOptions`.  
+The `EdgeDriver` class supports Microsoft Edge (Chromium) only, and does not support Microsoft Edge (EdgeHTML). For basic usage, you may create an `EdgeDriver` without providing `EdgeOptions`.  
 
 ```java
 EdgeDriver driver = new EdgeDriver();
@@ -160,7 +158,7 @@ let driver = edge.Driver.createSession(options);
 * * *  
 
 > [!NOTE]
-> If your IT admin has set the [DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability] policy to `2`, [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] is not be able to drive [Microsoft Edge (Chromium)][MicrosoftEdge] because the driver uses the [Microsoft Edge DevTools][DevtoolsIndex].  Ensure the [DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability] policy is set to `0` or `1` to automate [Microsoft Edge (Chromium)][MicrosoftEdge].  
+> If your IT admin has set the [DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability] policy to `2`, [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] is not be able to drive Microsoft Edge (Chromium) because the driver uses the [Microsoft Edge DevTools][DevtoolsIndex].  Ensure the [DeveloperToolsAvailability][DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability] policy is set to `0` or `1` to automate Microsoft Edge (Chromium).  
 
 ### Choosing Specific Browser Binaries (Chromium-Only)  
 
@@ -223,7 +221,7 @@ let driver = edge.Driver.createSession(options);
 
 When an `EdgeDriver` class instance is created using `EdgeOptions` class, it creates and launches the appropriate `EdgeDriverService` class for either Microsoft Edge \(EdgeHTML\) or Microsoft Edge \(Chromium\).  
 
-If you want to create an `EdgeDriverService`, create one configured for Microsoft Edge \(Chromium\) using the `CreateChromiumService()` method.  You may find it useful for extra customizations like enabling verbose log output in the following code.  
+If you want to create an `EdgeDriverService`, create one configured for Microsoft Edge \(Chromium\) using the `CreateChromiumService()` method.  You may find it useful when you need to add customizations. For example, the following code starts verbose log output.  
 
 ```csharp
 using (var service = EdgeDriverService.CreateChromiumService())
@@ -242,7 +240,7 @@ using (var service = EdgeDriverService.CreateChromiumService())
 
 <a id="customizing-microsoft-edge-driver-services-code"></a>  
 
-When using Python, the `Edge` object creates and manages the `EdgeService`.  To configure the `EdgeService`, pass extra arguments to the `Edge` object as indicated in the following code.  
+When using Python, the `Edge` object creates and manages the `EdgeService`.  To configure the `EdgeService`, pass additional arguments to the `Edge` object as indicated in the following code.  
 
 ```python
 service_args = ['--verbose']
@@ -252,6 +250,8 @@ driver = Edge(service_args = service_args)
 #### [Java](#tab/java/)  
 
 <a id="customizing-microsoft-edge-driver-services-code"></a>  
+
+Use the `createDefaultService()` method to create an `EdgeDriverService` configured for Microsoft Edge \(Chromium\). Driver services in Java are customized using Java system properties. For example, the following code uses the `"webdriver.edge.verboseLogging"` property to enable verbose log output. 
 
 ```java
 System.setProperty("webdriver.edge.verboseLogging", "true");
@@ -265,7 +265,7 @@ EdgeDriver driver = new EdgeDriver(service, options);
 <a id="customizing-microsoft-edge-driver-services-code"></a>  
 
 When using JavaScript, create and configure a `Service` with the `ServiceBuilder` class.  Optionally, you may pass the `Service` object to the `Driver` object, which starts \(and stops\) the service for you.  
-To configure the `Service`, run other methods in the `ServiceBuilder` class before using the `build()` method.  Then pass the `service` as a parameter in the `Driver.createSession()` method.  
+To configure the `Service`, run another method in the `ServiceBuilder` class before using the `build()` method.  Then pass the `service` as a parameter in the `Driver.createSession()` method.  
 
 ```javascript
 let service = new edge.ServiceBuilder().enableVerboseLogging().build();
@@ -276,7 +276,7 @@ let driver = edge.Driver.createSession(options, service);
 
 ### Use Chromium-Specific Options  
 
-If you set the `UseChromium` property to `true`, you may use the `EdgeOptions` class to access the same [Chromium-specific properties and methods][WebdriverCapabilitiesEdgeOptions] as when you automate other Chromium browsers.  
+If you set the `UseChromium` property to `true`, you may use the `EdgeOptions` class to access the same [Chromium-specific properties and methods][WebdriverCapabilitiesEdgeOptions] that are used when automating other Chromium browsers.  
 
 #### [C#](#tab/c-sharp/)  
 
@@ -326,7 +326,7 @@ options.addArguments("disable-gpu");
 > [!NOTE]
 > If the `UseChromium` property is set to `true`, you are not able to use properties and methods for Microsoft Edge \(EdgeHTML\).  
 
-## More WebDriver installation options  
+## Additional WebDriver installation options  
 
 ### Chocolatey  
 
