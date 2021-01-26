@@ -104,13 +104,15 @@ npm install @microsoft/edge-selenium-tools selenium-webdriver
 
 * * *  
 
-## Use Microsoft Edge (Chromium) with WebDriver  
+## Automate Microsoft Edge (Chromium) with WebDriver  
 
-You may run the following examples using either Selenium 3 or 4.  To use with Selenium 3, the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] package must be installed.  
+To automate a browser using WebDriver, you must first start a WebDriver session using your preferred WebDriver language binding.  A session is a single running instance of a browser that can be controlled using WebDriver commands.  Starting a WebDriver session launches a new browser instance.  The browser that was launched will remain open until you close the WebDriver session.  
+
+The following content walks you through using Selenium to start a WebDriver session with Microsoft Edge \(Chromium\).  You may run theses examples using either Selenium 3 or 4.  To use with Selenium 3, the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] package must be installed.  
 
 ### Automating Microsoft Edge (Chromium)  
 
-To automate Microsoft Edge \(Chromium\), create a new `EdgeDriver` class and pass it the `EdgeOptions` object with the `UseChromium` property set to `true`.  
+Selenium uses the `EdgeDriver` class to manage a Microsoft Edge \(Chromium\) session. To start a session and automate Microsoft Edge \(Chromium\), create a new `EdgeDriver` object and pass it an `EdgeOptions` object with the `UseChromium` property set to `true`.  
 
 #### [C#](#tab/c-sharp/)  
 
@@ -162,7 +164,7 @@ let driver = edge.Driver.createSession(options);
 
 ### Choosing Specific Browser Binaries (Chromium-Only)  
 
-You may use the `EdgeOptions` class with specific binaries of Microsoft Edge \(Chromium\).  For example, you may run tests using the [Microsoft Edge preview channels][MicrosoftedgeinsiderDownload] such as Microsoft Edge Beta.  
+You may start a WebDriver session with specific Microsoft Edge \(Chromium\) binaries.  For example, you may run tests using the [Microsoft Edge preview channels][MicrosoftedgeinsiderDownload] such as Microsoft Edge Beta.  
 
 #### [C#](#tab/c-sharp/)  
 
