@@ -11,13 +11,13 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 ---
 # Selenium Tools release signing  
 
-This article provides the public signing key for [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] releases.  Use the following keys to validate packages provided by the [Microsoft Edge Developer Tools team][TwitterEdgeDevTools].  
-
-## Java releases  
+This article provides the public key to use when verifying the signature of releases of the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools].  
 
 The [Java releases][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] of [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] are signed using [GPG][Gnupg].  
 
-### Public key  
+Use the following keys to validate packages provided by the [Microsoft Edge Developer Tools team][TwitterEdgeDevTools].
+
+## Public key for validating Selenium Tools for Microsoft Edge  
 
 - **Public Key ID**: Microsoft Edge Developer Tools Team <EdgeDevToolsOSS@microsoft.com>  
 - **Public Key Fingerprint**: `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`  
