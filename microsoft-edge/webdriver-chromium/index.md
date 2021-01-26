@@ -352,7 +352,7 @@ For more information, navigate to the [msedgedriver container on Docker Hub][Doc
 
 ## Next steps
 
-To learn more about WebDriver and how to write automated WebDriver tests using Selenium, navigate to the [SeleniumDocumentation][Selenium documentation].  
+To learn more about WebDriver and how to write automated WebDriver tests using Selenium, navigate to the [Selenium documentation][SeleniumDocumentation].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
