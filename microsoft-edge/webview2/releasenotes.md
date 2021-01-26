@@ -196,7 +196,7 @@ Release Date: October 19, 2020
 
 Release Date: September 10, 2020  
 
-[NuGet package][NuGetGallery0.9.622.11] \| WebView2 Runtime version 86.0.616.0 or newer  
+[NuGet package][NuGetGallery0.9.622.11] \| WebView2 Runtime version 86.0.616.0 or newer.  
 
 #### General  
 
