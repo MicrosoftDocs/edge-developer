@@ -44,7 +44,7 @@ Release Date: January 25, 2021
 *   Fixed a bug that returned `E_NOINTERFACE` when querying `ICoreWebView2` for `ICoreWebView2Experimental`.  \([\#691][GithubMicrosoftedgeWebviewfeedbackIssue691]\).  
 *   Fixed a bug that allowed navigation with malformed URIs when `CoreWebView2NavigationStartingEventArgs.Cancel` was set to `false`.  \([\#400][GithubMicrosoftedgeWebviewfeedbackIssue400]\).  
 *   Fixed a bug that blocked `window.print()` on pop-up windows with event handlers attached to `NewWindowRequested` events.  \([\#409][GithubMicrosoftedgeWebviewfeedbackIssue409]\).  
-*   Fixed Dynamic DPI issue when moving apps between different monitors. \([\#58][GithubMicrosoftedgeWebviewfeedbackIssue549]\)  
+*   Fixed Dynamic DPI issue when moving apps between different monitors. \([\#58][GithubMicrosoftedgeWebviewfeedbackIssue58]\)  
     
 ##### Promotions  
 
