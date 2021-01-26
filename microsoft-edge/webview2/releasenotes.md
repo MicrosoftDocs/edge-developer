@@ -32,7 +32,7 @@ Release Date: January 25, 2021
 *   Added [TrySuspend and Resume][ReferenceWin32Icorewebview210773PreReleaseTrySuspendResume] method to suspend and resume a WebView.  
 *   Added [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210773PreReleaseSetVirtualHostNameToFolderMapping] method that maps between a virtual host name and a directory path.  
 *   Added [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210773PreReleaseDefaultBackgroundColor] property to set the background color and transparency.  \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue414]\)  
-*   Added [UserAgent][ReferenceWin32Icorewebview2experimentalsettings10773PreReleaseGetUserAgent] property to get and set the User Agent.\([\#122][GithubMicrosoftedgeWebviewfeedbackIssue549]\)
+*   Added [UserAgent][ReferenceWin32Icorewebview2experimentalsettings10773PreReleaseGetUserAgent] property to get and set the User Agent.\([\#122][GithubMicrosoftedgeWebviewfeedbackIssue122]\)
 *   Updated `CreateCookieWithCookie` to become `CopyCookie`.  
 *   Added Visual hosting support through the [ICoreWebView2CompositionController][ReferenceWin32Icorewebview2controllerViewWebview210773CompositionController] interface, created using the new `CreateCoreWebView2CompositionController` API on `ICoreWebView2Environment3`. 
 
