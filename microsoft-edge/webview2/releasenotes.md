@@ -32,7 +32,7 @@ Release Date: January 25, 2021
 *   Added [TrySuspend and Resume][ReferenceWin32Icorewebview210773PreReleaseTrySuspendResume] method to suspend and resume WebViews.  
 *   Added [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210773PreReleaseSetVirtualHostNameToFolderMapping] method that maps a virtual host name to a directory path.  
 *   Added the [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210773PreReleaseDefaultBackgroundColor] property to set the background color and transparency.  \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue414]\)  
-*   Added [UserAgent][ReferenceWin32Icorewebview2experimentalsettings10773PreReleaseGetUserAgent] property to get and set the User Agent.\([\#122][GithubMicrosoftedgeWebviewfeedbackIssue122]\)
+*   Added the [UserAgent][ReferenceWin32Icorewebview2experimentalsettings10773PreReleaseGetUserAgent] property to get or set the User Agent.\([\#122][GithubMicrosoftedgeWebviewfeedbackIssue549]\)
 *   Replaced the `CreateCookieWithCookie` method with the `CopyCookie` method.  
 *   Added visual hosting support using the [ICoreWebView2CompositionController][ReferenceWin32Icorewebview2controllerViewWebview210773CompositionController] interface, which is created using the new `CreateCoreWebView2CompositionController` method from `ICoreWebView2Environment3`. 
 
@@ -71,7 +71,7 @@ Release Date: January 25, 2021
 
 ##### Promotions  
 
-*   Promoted the following experimental changes to stable.  
+*   The following experimental APIs are now promoted to Stable.  
     *   [WebResourceResponseReceived API][WebResourceResponseReceivedAPI]  
     *   [NavigateWithWebResourceRequest API][NavigateWithWebResourceRequestAPI]  
     *   [Cookie management API][CookiemanagementAPI]  
@@ -105,7 +105,7 @@ Release Date: December 8, 2020
     *   Added [ShouldDetectMonitorScaleChanges][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetShouldDetectMonitorScaleChanges] property to automatically update `RasterizationScale` property if needed.  
     *   Added [BoundsMode property][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetBoundsMode] to specify that the bounds are logic pixels and allow WebView to use the `RasterizationScale` for WebView2 pixel display, and have WebView apply the `RasterizationScale` to the `Bounds` to get the physical size.  
 *   Updated `NewWindowRequested` event to handle `Ctrl`+`click` and `Shift`+`click`.  \([\#168][GithubMicrosoftedgeWebviewfeedbackIssue168] and [\#371][GithubMicrosoftedgeWebviewfeedbackIssue371]\).  
-*   Promoted the following experimental changes to stable.  
+*   The following experimental APIs are now promoted to Stable.  
     *   [WebResourceResponseReceived API][WebResourceResponseReceivedAPI]  
     *   [NavigateWithWebResourceRequest API][NavigateWithWebResourceRequestAPI]  
     *   [Cookie management API][CookiemanagementAPI]  
@@ -656,6 +656,7 @@ Initial developer preview release.
 [DOMContentLoadedAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease#add_domcontentloaded&preserve-view=true "add_DOMContentLoaded - interface ICoreWebView2_2 | Microsoft Docs"
 [WebViewEnvironmentproperty]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease#get_environment&preserve-view=true "ICoreWebView2CookieManager | Microsoft Docs"
 
+[GithubMicrosoftedgeWebviewfeedbackIssue122]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/122 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 122" 
 [GithubMicrosoftedgeWebviewfeedbackIssue196]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/196 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 196" 
 [GithubMicrosoftedgeWebviewfeedbackIssue399]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/399 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 399" 
 [GithubMicrosoftedgeWebviewfeedbackIssue400]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/400 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 400"  
@@ -669,4 +670,4 @@ Initial developer preview release.
 [ReferenceWin32Icorewebview2experimentalsettings10773PreReleaseGetUserAgent]: /microsoft-edge/webview2/reference/win32/icorewebview2/icorewebview2experimentalsettingsget_useragent "get_UserAgent - interface ICoreWebView2ExperimentalSettings | Microsoft Docs"
 [ReferenceWin32Icorewebview210773PreReleaseSetVirtualHostNameToFolderMapping]: /microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.773-prerelease&preserve-view=true#SetVirtualHostNameToFolderMapping "SetVirtualHostNameToFolderMapping - interface ICoreWebView2_3 | Microsoft Docs" 
 [ReferenceWin32Icorewebview2controllerViewWebview210773PreReleaseDefaultBackgroundColor]: /microsoft-edge/webview2/reference/win32/icorewebview2controller?view=webview2-1.0.773-prerelease&preserve-view=true#defaultbackgroundcolor "DefaultBackgroundColor - interface ICoreWebView2Controller2 | Microsoft Docs"
-[ReferenceWin32Icorewebview2controllerViewWebview210773CompositionController]:  //microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.773-prerelease&preserve-view=true
+[ReferenceWin32Icorewebview2controllerViewWebview210773CompositionController]:  /microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.773-prerelease&preserve-view=true
