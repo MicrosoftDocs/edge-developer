@@ -14,7 +14,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence.  Review the following content for up-to-date information on product announcements, additions, modifications, and breaking changes to the APIs.  
 
 > [!NOTE]
-> Re-compile your app after updating the NuGet package. The team reccomends using the Canary channel for development in prerelease packages, and the evergreen runtime for release packages. For more information, navigate to [Versioning][VersioningDoc].  
+> Ensure you re-compile your app after updating the NuGet package. The team recommends using the Canary channel when developing using the prerelease packages, and the evergreen runtime when using released packages. For more information, navigate to [Versioning][VersioningDoc].  
  
 ## 1.0.773-prerelease  
 
@@ -25,30 +25,30 @@ Release Date: January 25, 2021
 ### General  
 
 > [!IMPORTANT]
-> WebView2 pre-release package 0.9.430 is deprecated, and is being removed the upcoming release.  Discontinue development with it.  
+> WebView2 pre-release package 0.9.430 is deprecated, and is being removed from the upcoming release.  If your WebView app uses the package, we recommend updating to a newer package.  
 
 ##### Features  
 
-*   Added [TrySuspend and Resume][ReferenceWin32Icorewebview210773PreReleaseTrySuspendResume] method to suspend and resume a WebView.  
-*   Added [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210773PreReleaseSetVirtualHostNameToFolderMapping] method that maps between a virtual host name and a directory path.  
-*   Added [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210773PreReleaseDefaultBackgroundColor] property to set the background color and transparency.  \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue414]\)  
+*   Added [TrySuspend and Resume][ReferenceWin32Icorewebview210773PreReleaseTrySuspendResume] method to suspend and resume WebViews.  
+*   Added [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210773PreReleaseSetVirtualHostNameToFolderMapping] method that maps a virtual host name to a directory path.  
+*   Added the [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210773PreReleaseDefaultBackgroundColor] property to set the background color and transparency.  \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue414]\)  
 *   Added [UserAgent][ReferenceWin32Icorewebview2experimentalsettings10773PreReleaseGetUserAgent] property to get and set the User Agent.\([\#122][GithubMicrosoftedgeWebviewfeedbackIssue122]\)
-*   Updated `CreateCookieWithCookie` to become `CopyCookie`.  
-*   Added Visual hosting support through the [ICoreWebView2CompositionController][ReferenceWin32Icorewebview2controllerViewWebview210773CompositionController] interface, created using the new `CreateCoreWebView2CompositionController` API on `ICoreWebView2Environment3`. 
+*   Replaced the `CreateCookieWithCookie` method with the `CopyCookie` method.  
+*   Added visual hosting support using the [ICoreWebView2CompositionController][ReferenceWin32Icorewebview2controllerViewWebview210773CompositionController] interface, which is created using the new `CreateCoreWebView2CompositionController` method from `ICoreWebView2Environment3`. 
 
     
 ##### Bug fixes  
 
 *   Turned off the Microsoft Edge Shopping feature in WebView2.  
-*   Turned off the context menu in PDF viewer when `AreDefaultContextMenusEnabled` is `false`.  \([\#605][GithubMicrosoftedgeWebviewfeedbackIssue605]\).  
-*   Fixed a bug that `E_NOINTERFACE` is returned when querying `ICoreWebView2` for `ICoreWebView2Experimental`.  \([\#691][GithubMicrosoftedgeWebviewfeedbackIssue691]\).  
-*   Fixed a bug that the navigation with malformed uri is not canceled when `CoreWebView2NavigationStartingEventArgs.Cancel` is `false`.  \([\#400][GithubMicrosoftedgeWebviewfeedbackIssue400]\).  
-*   Fixed a bug that `window.print()` does not work with a pop-up window when an event handler is attached to `NewWindowRequested` event.  \([\#409][GithubMicrosoftedgeWebviewfeedbackIssue409]\).  
-*   Fixed Dynamic DPI issue when moving between monitors. \([\#58][GithubMicrosoftedgeWebviewfeedbackIssue549]\)  
+*   Turned off the context menu in the PDF viewer when `AreDefaultContextMenusEnabled` is `false`.  \([\#605][GithubMicrosoftedgeWebviewfeedbackIssue605]\).  
+*   Fixed a bug that returned `E_NOINTERFACE` when querying `ICoreWebView2` for `ICoreWebView2Experimental`.  \([\#691][GithubMicrosoftedgeWebviewfeedbackIssue691]\).  
+*   Fixed a bug that allowed navigation with malformed URIs when `CoreWebView2NavigationStartingEventArgs.Cancel` was set to `false`.  \([\#400][GithubMicrosoftedgeWebviewfeedbackIssue400]\).  
+*   Fixed a bug that blocked `window.print()` on pop-up windows with event handlers attached to `NewWindowRequested` events.  \([\#409][GithubMicrosoftedgeWebviewfeedbackIssue409]\).  
+*   Fixed Dynamic DPI issue when moving apps between different monitors. \([\#58][GithubMicrosoftedgeWebviewfeedbackIssue549]\)  
     
 ##### Promotions  
 
-*   Promoted the following experimental changes to stable.  
+*   The following experimental APIs are now promoted to Stable.  
     *   Visual Hosting APIs.  
     *   [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210773PreReleaseSetVirtualHostNameToFolderMapping]  
     *   [TrySuspend and Resume][ReferenceWin32Icorewebview210773PreReleaseTrySuspendResume] 
@@ -60,8 +60,8 @@ Release Date: January 25, 2021
 
 ##### Bug fixes  
 
-*   Fixed bug in WPF that was crashing webview on closing window with F4.  \([\#399][GithubMicrosoftedgeWebviewfeedbackIssue399]\)
-*   Fixed WebView2 initialization screen to be transparent, instead of gray.  \([\#196][GithubMicrosoftedgeWebviewfeedbackIssue196]\)
+*   Fixed bug that crashed WebView apps that use the WPF SDK. The crash occurred when windows were closed using the F4 key.  \([\#399][GithubMicrosoftedgeWebviewfeedbackIssue399]\)
+*   The WebView2 initialization screen is now transparent, instead of gray.  \([\#196][GithubMicrosoftedgeWebviewfeedbackIssue196]\)
     
 ## 1.0.705.50  
 
@@ -130,12 +130,12 @@ Release Date: December 8, 2020
 
 Release Date: November 20, 2020  
 
-[NuGet package][NuGetGallery1.0.664.37] \| WebView2 Runtime version 86.0.616.0 or newer  
+[NuGet package][NuGetGallery1.0.664.37] \| WebView2 Runtime version 86.0.616.0 or newer.  
 
 #### General  
 
 > [!IMPORTANT]
-> **Announcement**:  .NET WPF/WinForms WebView2 is now Generally Available \(GA\).  Starting this release, Release SDKs are forward-compatible.  For more details, navigate to [GA announcement blog post][MicrosoftDevblogDotnetAnnouncingGeneralAvailabilityForMicrosoftEdgeWebview2ForNetFixedDistributionMethod].  
+> **Announcement**:  .NET WPF/WinForms WebView2 SDKs are now Generally Available \(GA\).  Starting with this release, Release SDKs are forward-compatible.  For more details, navigate to [GA announcement blog post][MicrosoftDevblogDotnetAnnouncingGeneralAvailabilityForMicrosoftEdgeWebview2ForNetFixedDistributionMethod].  
 
 ###### Features  
 
@@ -152,7 +152,7 @@ Release Date: November 20, 2020
 
 Release Date: October 19, 2020  
 
-[NuGet package][NuGetGallery1.0.674-prerelease] \| WebView2 Runtime version 86.0.616.0 or newer  
+[NuGet package][NuGetGallery1.0.674-prerelease] \| WebView2 Runtime version 86.0.616.0 or newer.  
 
 #### General  
 
@@ -182,7 +182,7 @@ Release Date: October 19, 2020
 
 Release Date: October 19, 2020  
 
-[NuGet package][NuGetGallery1.0.622.22] \| WebView2 Runtime version 86.0.616.0 or newer  
+[NuGet package][NuGetGallery1.0.622.22] \| WebView2 Runtime version 86.0.616.0 or newer.  
 
 #### General  
 
