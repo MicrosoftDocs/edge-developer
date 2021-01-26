@@ -83,7 +83,7 @@ The following list contains all of the Microsoft Edge-specific capabilities that
 
 [DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Get started with Remote Debugging Windows 10 devices | Microsoft Docs"  
 [WebdriverIndexChooseWebdriverLanguageBinding]: ./index.md#choose-a-webdriver-language-binding "Choose a WebDriver language binding - WebDriver (Chromium) | Microsoft Docs"
-[WebdriverIndexDrivingMicrosoftEdgeChromium]: ./index.md#driving-microsoft-edge-chromium "Automating Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"    
+[WebdriverIndexDrivingMicrosoftEdgeChromium]: ./index.md#automating-microsoft-edge-chromium "Automating Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"    
 [WebdriverIndexInstallMicrosoftEdgeChromium]: ./index.md#install-microsoft-edge-chromium "Install Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"  
 
 [SeleniumMain]: https://www.selenium.dev "SeleniumHQ Browser Automation"  
