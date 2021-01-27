@@ -30,10 +30,10 @@ Before you edit the preferences file or the registry, make a note of the followi
 
 ## Alternative methods of distributing an extension
 
-An extension which is not installed from the Edge add-ons store is called an _external installation_. Microsoft Edge supports the following alternative extension installation methods:  
+An extension that is not installed from the Edge add-ons store is called an _external installation_. Microsoft Edge supports the following alternative extension installation methods:  
 
 1. Using the Windows registry (Windows only)
-1. Using a preferences JSON file (for Mac OS X and Linux only)
+1. Using a preferences JSON file (for MacOS X and Linux only)
 
 The following examples assume the version is 1.0 and the ID is aaaaaaaaaabbbbbbbbbbcccccccccc.
 
@@ -44,7 +44,7 @@ The following examples assume the version is 1.0 and the ID is aaaaaaaaaabbbbbbb
     *   32-bit Windows:  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`  
     *   64-bit Windows:  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`  
 2. Create a new key \(folder\) under the **Extensions** key with the same name as the ID of your extension \(for example, aaaaaaaaaabbbbbbbbbbcccccccccc\).  
-3. In your extension key, create a property, `update_url`, and set it to the value: `https://edge.microsoft.com/extensionwebstorebase/v1/crx`,  \(this points to the crx of your extension in the Microsoft Edge Add-ons store\). If you want to install an extension from the Chrome Web Store, please provide the Chrome Web Store update URL, `https://clients2.google.com/service/update2/crx`.  
+3. In your extension key, create a property, `update_url`, and set it to the value: `https://edge.microsoft.com/extensionwebstorebase/v1/crx`,  \(this points to the CRX of your extension in the Microsoft Edge Add-ons store\). If you want to install an extension from the Chrome Web Store, do provide the Chrome Web Store update URL, `https://clients2.google.com/service/update2/crx`.  
     
     ```javascript
     {
