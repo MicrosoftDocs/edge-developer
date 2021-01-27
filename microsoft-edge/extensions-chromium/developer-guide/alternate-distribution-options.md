@@ -22,7 +22,7 @@ Microsoft Edge supports installing an Extension hosted at an `update_URL`.  On W
 
 ## Using the Windows registry  
 
-First, publish the Extension in the Microsoft Edge Add-ons, or package a .crx file and make sure that it installs successfully.  
+First, publish the Extension in the Microsoft Edge Add-ons, or package the CRX file and make sure that it installs successfully.  
 
 The steps to install Extension via registry in windows are:  
 
@@ -30,7 +30,7 @@ The steps to install Extension via registry in windows are:
     *   32-bit Windows:  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`  
     *   64-bit Windows:  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`  
 *   Create a new key \(folder\) under the Extensions key with the same name as the ID of your Extension \(for example, `aaaaaaaaaabbbbbbbbbbcccccccccc`\).  
-*   In your Extension key, create a property, `update_url`, and set it to the value: `https://edge.microsoft.com/extensionwebstorebase/v1/crx`,  \(this points to the crx of your extension in the Microsoft Edge Add-ons\). If you want to install an extension from the Chrome Web Store, please provide the Chrome Web Store update URL, `https://clients2.google.com/service/update2/crx`.  
+*   In your Extension key, create a property, `update_url`, and set it to the value: `https://edge.microsoft.com/extensionwebstorebase/v1/crx`,  \(this value points to the CRX of your extension in the Microsoft Edge Add-ons\). If you want to install an extension from the Chrome Web Store, provide the Chrome Web Store update URL, `https://clients2.google.com/service/update2/crx`.  
     
     ```javascript
     {
