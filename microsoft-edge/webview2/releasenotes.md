@@ -233,7 +233,7 @@ Release Date: July 20, 2020
 *   Added WebView worker thread improvements.  \([\#318][GithubMicrosoftedgeWebviewfeedbackIssue318]\).  
 *   Turned off the popup blocker in WebView.  For more information, navigate to the [IsUserInitiated][ReferenceWin32Icorewebview2newwindowrequestedeventargsGetIsuserinitiated09538] property in the `NewWindowRequested` event.  
 *   Ensured WebView navigation starting event is run for `about:blank`.  Now, `NavigationStarting` events are run for all navigation, but cancellations for `about:blank` or iframe `srcdoc` aren't supported and ignored.  
-*   Blocked `edge://` URI scheme in WebView.  
+*   Blocked some `edge://` URI schemes in WebView.  
 *   Added experimental [IsSingleSignOnUsingOSPrimaryAccountEnabled][ReferenceWin32Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled09538] property on WebView2 environment options to turn on conditional access for WebView.  
 *   Added experimental [WebResourceResponseReceived][ReferenceWin32Icorewebview2experimentalAddWebresourceresponsereceived09538] event that fires after the WebView has received and processed the response for a WebResource request.  Authentication headers, if any, are included in the response object.  
     
