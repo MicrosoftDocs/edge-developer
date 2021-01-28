@@ -1,9 +1,9 @@
 ---
-description: Simulate reduced motion using developer tools.  CSS prefers reduced motion.
+description: Simulate reduced motion using developer tools.
 title: Simulate reduced motion using developer tools (CSS Prefers Reduced Motion)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/03/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,7 +21,7 @@ Animation in web products may be an accessibility problem.  Operating Systems de
 }
 ```  
 
-Using the [Microsoft Edge DevTools][DevtoolsGuideChromiumMain], you may simulate this reduced motion setting without having to change your operating system.  
+Using the [Microsoft Edge DevTools][DevtoolsIndex], you may simulate this reduced motion setting without having to change your operating system.  
 
 1.  Open the **Command Menu**.  
     1.  Select `Control`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS.  
@@ -38,13 +38,8 @@ Using the [Microsoft Edge DevTools][DevtoolsGuideChromiumMain], you may simulate
     
 1.  Refresh the current page to test whether your animations are turned off or visible.  
     
-<!-- image links -->  
-
-[ImageCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-console-command-menu-rendering.msft.png "Figure 1: The Command Menu"  
-[ImageToggleReducedMotionFromCommandMenu]: /microsoft-edge/devtools-guide-chromium/media/css-elements-styles-qs-select-reduced-motion-command-menu.msft.png "Figure 2: Toggle reduced motion from command palette"
-
 <!-- links -->  
 
-[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools  Microsoft | Microsoft Docs"  
+[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
-[MDNPrefersReducedMotion]: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion "prefers-reduced-motion | MDN"  
+[MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "prefers-reduced-motion | MDN"  

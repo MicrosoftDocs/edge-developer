@@ -1,16 +1,16 @@
 ---
-description: Emulate vision deficiencies (color blindness) in Microsoft Edge DevTools
-title: Emulate vision deficiencies in Microsoft Edge DevTools(color blindness)
+description: Emulate vision deficiencies in Microsoft Edge DevTools.
+title: Emulate vision deficiencies in Microsoft Edge DevTools (color blindness)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/03/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-# Emulate vision deficiencies  
+# Emulate vision deficiencies
 
-To better meet the needs of your users with [color vision deficiency][ColorblindawarenessMain] \(color blindness\), [Microsoft Edge DevTools][MicrosoftEdgeDevTools] enable you to simulate specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories.  
+To better meet the needs of your users with [color vision deficiency][ColorblindawarenessMain] \(color blindness\), [Microsoft Edge DevTools][DevtoolsIndex] enable you to simulate specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories.  
 
 | Color vision deficiency | Details |  
 |:--- |:--- |  
@@ -22,16 +22,16 @@ To better meet the needs of your users with [color vision deficiency][Colorblind
 
 ## Navigate to the Rendering Tools  
 
-To simulate a vision deficiency being applied for your web product, open the [Rendering Tools][RenderingTools].  
+To simulate a vision deficiency being applied for your web product, open the [Rendering Tools][DevtoolsRenderingToolsIndex].  
 
-1.  Open the Rendering Tools by choosing the `...` menu item in the toolbar  
+1.  To open the Rendering Tools, choose the `...` menu item in the toolbar  
 1.  Choose **More tools**  
 1.  Choose **Rendering**  
     
     :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
        Opening the **Rendering Tools**  
     :::image-end:::  
-    
+
 The **Rendering** menu appears in the drawer.  
 
 1.  Scroll down to the `Emulate vision deficiencies` menu item and choose the drop-down menu to display the options.  
@@ -56,7 +56,7 @@ The **Rendering** menu appears in the drawer.
        :::column-end:::
        :::column span="":::
           :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Display using **Achromatopsia** simulation" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
-             Display using **Achromatopsia** simulation  
+             Display using **Achromatopsia** simulation 
           :::image-end:::  
        :::column-end:::
     :::row-end:::
@@ -65,7 +65,7 @@ The **Rendering** menu appears in the drawer.
 
 You may also use **Command Menu** to access the different simulations.  
 
-1.  Select `Control`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS to open the **Command Menu**.  
+1.  Select `Control`+`Shift`+`P` \(Windows/Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="The Command Menu" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        The **Command Menu**  
@@ -82,7 +82,10 @@ You may also use **Command Menu** to access the different simulations.
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
+[DevToolsMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools"  
+[DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analyze runtime performance | Microsoft Docs"  
+
 [ColorblindawarenessMain]: http://www.colourblindawareness.org "The Colour Blind Awareness organisation"  
+
 [AmfcbMain]: https://www.amfcb.org "The American Foundation for the Color Blind (AFCB)"  
-[RenderingTools]: /microsoft-edge/devtools-guide-chromium/rendering-tools "Microsoft Edge (Chromium) Rendering Tools"  
+

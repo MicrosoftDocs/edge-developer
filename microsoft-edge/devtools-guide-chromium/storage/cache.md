@@ -3,7 +3,7 @@ description: How to view Cache data from the Application panel of Microsoft Edge
 title: View Cache Data With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -26,7 +26,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect [Cache][MDNCache] data.  
 
-If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the guide you want.  Look for the information in the **Size** column of the **Network Log**.  See [Log network activity][DevtoolsNetworkLogActivity].  
+If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the guide you want.  Look for the information in the **Size** column of the **Network Log**.  Navigate to [Log network activity][DevtoolsNetworkLogActivity].  
 
 ## View cache data  
 
@@ -117,7 +117,7 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
 [DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Log network activity | Microsoft Docs"  
 
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"  
