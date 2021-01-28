@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020 
+ms.date: 01/27/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -40,15 +40,15 @@ The following sections describe the new experimental features that are available
 
 | Experimental feature | Microsoft Edge version |  
 |:--- |:--- |  
-| [Emulation: Support dual screen mode](#emulation-support-dual-screen-mode) | 84 or later |    
+| [Emulation: Support dual screen mode](#emulation-support-dual-screen-mode) | 84 or later |  
 | [Enable webhint](#enable-webhint) | 85 or later |  
 | [Enable Network Console](#enable-network-console) | 85 or later |  
 | [Source Order Viewer](#source-order-viewer) | 86 or later |  
 | [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor) | 87 or later |  
-| [Turn on Composited Layers in 3D View](#turn-on-composited-layers-in-3d-view) | 87 or later | 
-| [Enable new CSS Flexbox debugging features](#enable-new-css-flexbox-debugging-features) | 89 or later |
-| [Enable + button tab menus to open more tools](#enable-+-button-tab-menus-to-open-more-tools) | 89 or later | 
-| [Enable Welcome tab](#enable-welcome-tab) | 89 or later |
+| [Turn on Composited Layers in 3D View](#turn-on-composited-layers-in-3d-view) | 87 or later |  
+| [Enable new CSS Flexbox debugging features](#enable-new-css-flexbox-debugging-features) | 89 or later |  
+| [Enable + button tab menus to open more tools](#enable-+-button-tab-menus-to-open-more-tools) | 89 or later |  
+| [Enable Welcome tab](#enable-welcome-tab) | 89 or later |  
 
 ### Emulation: Support dual screen mode  
 
@@ -115,7 +115,7 @@ Here are additional resources that may help you enhance your website \(or app\) 
 
 ### Enable support to move tabs between panels  
 
-Normally, tools such as **Elements** and **Network** may only open in the main panel that is located at the top of the DevTools.  Tools like **3D View** and **Issues** which normally only open in the **Drawer** panel that is located at the bottom of the DevTools.  After you choose the experiment, you may move tools between the top and bottom panels.  To move a tool, hover on the tab, open the contextual menu \(right-click\), and choose **Move to top** or **Move to bottom**.   This experiment allows you to customize your DevTools layout.  To show or hide the **Drawer** panel, select `Escape`.  
+Normally, tools such as **Elements** and **Network** may only open in the main panel that is located at the top of the DevTools.  Tools like **3D View** and **Issues** which normally only open in the **Drawer** panel that is located at the bottom of the DevTools.  After you choose the experiment, you may move tools between the top and bottom panels.  To move a tool, hover on the tab, open the contextual menu \(right-click\), and choose **Move to top** or **Move to bottom**.   This experiment allows you to customize your DevTools layout.  To display or hide the **Drawer** panel, select `Escape`.  
 
 :::image type="complex" source="../media/experiments-move-panels.msft.png" alt-text="Moving tabs between panels" lightbox="../media/experiments-move-panels.msft.png":::
    Moving tabs between panels  
@@ -182,40 +182,40 @@ After enabling the experiment, ensure you restart the DevTools.  To use **Source
 With the **Enable keyboard shortcut editor** experiment turned on, you are now able to customize keyboard shortcuts for any action in the DevTools.  To customize the keyboard shortcut for a specific action, complete the following steps.  
 
 1.  [Open DevTools][DevtoolsOpenMain].  
-1.  Open [Settings][DevToolsCustomizeSettings].
+1.  Open [Settings][DevToolsCustomizeSettings].  
     *   Select `Shift`+`?`.  
 1.  Navigate to the **Shortcuts** page.  
 1.  Choose the action you want to customize.  
 1.  Choose the **Edit** \(![EditKeyboardShortcut][ImageEditKeyboardShortcutIcon]\) icon.  
     
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Choose the action to customize from the Shortcuts page in Settings" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
-       Choose the action to customize from the **Shortcuts** page in [Settings][DevToolsCustomizeSettings]
+       Choose the action to customize from the **Shortcuts** page in [Settings][DevToolsCustomizeSettings]  
     :::image-end:::  
     
-1.  On the keyboard, select the keys you want to bind to the action.
+1.  On the keyboard, select the keys you want to bind to the action.  
     
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Select the keys you want to assign to the action" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
-       Select the keys you want to assign to the action
+       Select the keys you want to assign to the action  
     :::image-end:::  
     
-1.  To save your new keyboard shortcut, choose the checkmark \(![CheckmarkKeyboardShortcut][ImageCheckmarkKeyboardShortcutIcon]\) icon.
+1.  To save your new keyboard shortcut, choose the checkmark \(![CheckmarkKeyboardShortcut][ImageCheckmarkKeyboardShortcutIcon]\) icon.  
     
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Choose the checkmark icon to save your new keyboard shortcut" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
-       Choose the checkmark icon to save your new keyboard shortcut
+       Choose the checkmark icon to save your new keyboard shortcut  
     :::image-end:::  
     
 1.  Select your new keyboard shortcut to trigger the action in the DevTools.  
     
 On the **Shortcuts** page, the **Custom Keyboard Shortcut** \(![CustomKeyboardShortcut][ImageCustomKeyboardShortcutIcon]\) icon displays keyboard shortcuts that you have customized.  To reset all shortcuts, choose **Restore default shortcuts**.  
 
-When you are editing the keyboard shortcuts for an action, to discard your changes, choose the X \(![XKeyboardShortcut][ImageXKeyboardShortcutIcon]\) icon.  To remove shortcuts for a specific action, choose the **Delete shortcut** \(![DeleteKeyboardShortcut][ImageDeleteKeyboardShortcutIcon]\) icon.  To add multiple shortcuts for an action, choose **Add a shortcut**.
+When you are editing the keyboard shortcuts for an action, to discard your changes, choose the X \(![XKeyboardShortcut][ImageXKeyboardShortcutIcon]\) icon.  To remove shortcuts for a specific action, choose the **Delete shortcut** \(![DeleteKeyboardShortcut][ImageDeleteKeyboardShortcutIcon]\) icon.  To add multiple shortcuts for an action, choose **Add a shortcut**.  
 
 > [!NOTE]
 > If a keyboard shortcut is currently assigned to another action, you are not able to save it for a new action.  You must first delete the keyboard shortcut for the previous action and then add it to the new action.  
 
 <!--Available in Microsoft Edge version 87 and later.  -->
 
-### Turn on Composited Layers in 3D View
+### Turn on Composited Layers in 3D View  
 
 You may now visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.  After enabling the experiment, ensure you restart the DevTools.  To use **Composited Layers**, complete the following steps.  
 
@@ -227,10 +227,9 @@ You may now visualize Layers alongside z-indexes and the Document Object Model \
    **Composited Layers** pane  
 :::image-end:::  
 
-
 ### Enable new CSS flexbox debugging features  
 
-This experimental feature provides a number of new visualizations to help you debug CSS flexbox layouts.  To preview the latest experimental features, [enable this experiment](#turn-on-experimental-features) and reload DevTools.
+This experimental feature provides a number of new visualizations to help you debug CSS flexbox layouts.  To preview the latest experimental features, [enable this experiment](#turn-on-experimental-features) and reload DevTools.  
 
 #### Viewing on-hover flexbox overlays with the Inspect tool  
 
@@ -250,7 +249,7 @@ In Microsoft Edge version 89 or later, the experimental CSS flexbox feature also
     
 The two ways to toggle a persistent flexbox overlay.  
 
-*   Choose the **Flexbox** oval icon next to any flexbox container shown in the DOM tree of the **Elements** tool.  
+*   Choose the **Flexbox** oval icon next to any flexbox container displayed in the DOM tree of the **Elements** tool.  
     
 *   Open the new **Layout** panel located in the Elements tool, and choose the checkbox next to each flexbox container you want to highlight.  
     
@@ -270,20 +269,23 @@ The **Layout** panel is located in the **Elements** tool alongside the **Styles*
 
 ### Enable + button tab menus to open more tools
 
-This experiment provides a new way to open more tools in DevTools. After turning on the experiment and reloading DevTools, a plus (+) will appear to the right of the tab group along the top of the DevTools. Select this + button to open a menu of other tools to open.
+After you turn on this experiment, a plus sign \(`+`\) displays to the right of the tab group.  To display a list of other tools that you may add to the tab bar, choose the **More Tools** \(`+`\) icon.  
+
+This experiment provides a new way to open more tools in DevTools.  After you turn on this experiment and reload DevTools, a plus sign \(`+`\) displays to the right of the tab group. along the top of the DevTools.  To display a list of other tools that you may add to the tab bar, choose the **More Tools** \(`+`\) icon.  
     
-:::image type="complex" source="../media/experiments-plus-button.msft.png" alt-text="The + button tab menu appears to the right of the tab group" lightbox="../media/experiments-plus-button.msft.png":::
-   The + button tab menu appears to the right of the tab group
+:::image type="complex" source="../media/experiments-plus-button.msft.png" alt-text="More Tools in the top pane" lightbox="../media/experiments-plus-button.msft.png":::
+   **More Tools** in the top pane
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 89 and later.  -->  
+
 ### Enable Welcome tab
 
-This experiment replaces the **What's New** tab with **Welcome**. The new **Welcome** tool provides the same content but with a refreshed design and additional links to documentation and ways to contact the Edge DevTools team. 
+This experiment replaces the **What's New** tool with the **Welcome** tool.  The **Welcome** tool provides the same content with a refreshed design and additional links to documentation and ways to contact the Edge DevTools team.  
 
-**Welcome** will automatically open after each Edge update to show the latest features and release notes for Edge DevTools. Toggle the checkbox at the top of the **Welcome** page to turn off this feature.
+**Welcome** automatically opens after each update of Microsoft Edge update to display the latest features and release notes for Microsoft Edge DevTools.  To display the **Welcome** tool after each update, in the **Welcome** tool, choose the checkbox next to **Open tab after each update**.  
 
-This experiment is on by default but can be turned off to return to the classic **What's New** tab.
+If you prefer the original **What's New** tool, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments** and remove the checkbox next to **Enable Welcome tab**.  
     
 :::image type="complex" source="../media/experiments-welcome.msft.png" alt-text="Welcome tool" lightbox="../media/experiments-welcome.msft.png":::
    **Welcome** tool  
@@ -294,9 +296,9 @@ This experiment is on by default but can be turned off to return to the classic 
 ## Previous experimental features  
 
 *   [3D View][Devtools3dViewIndex] is now available by default in Microsoft Edge version 83 or later.  
-*   [Enable support to move tabs between panels][DevtoolsMoveTabs] is now available and in Microsoft Edge version 85 or later.
+*   [Enable support to move tabs between panels][DevtoolsMoveTabs] is now available and in Microsoft Edge version 85 or later.  
 *   [Customize Keyboard Shortcuts][DevtoolsCustomKeyboardShortcuts] is now turned on by default in Microsoft Edge version 86 or later.  
-* [Enable new CSS grid debugging features][DevtoolsCssGrid] is now turned on by default in Microsoft Edge version 89 or later.
+* [Enable new CSS grid debugging features][DevtoolsCssGrid] is now turned on by default in Microsoft Edge version 89 or later.  
 
 ## Providing feedback on experimental features  
 
@@ -346,8 +348,7 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 [DualScreenDocsCssMedia]: /dual-screen/web/css-media-spanning "CSS media screen-spanning feature for dual-screen detection | Microsoft Docs"  
 [DualScreenDocsJSAPI]: /dual-screen/web/javascript-getwindowsegments "The getWindowSegments JavaScript API for dual-screen devices | Microsoft Docs"  
 
-[RemoteDesktopClientDocs]: /windows-server/remote/remote-desktop-services/clients/remote-desktop-clients "Remote Desktop clients
- | Microsoft Docs"
+[RemoteDesktopClientDocs]: /windows-server/remote/remote-desktop-services/clients/remote-desktop-clients "Remote Desktop clients | Microsoft Docs"
 
 [MicrosoftEdge]: https://www.microsoft.com/edge "Microsoft Edge"  
 
