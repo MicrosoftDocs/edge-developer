@@ -72,7 +72,12 @@ Use NuGet to add the WebView2 SDK to the project.
 Add a WebView to your app.  
 
 1.  Open the **Windows Forms Designer**.  
-1.  Search for **WebView2** in the **Toolbox**.  Drag and drop the **WebView2** control into the Windows Forms App.
+1.  Search for **WebView2** in the **Toolbox**.  
+    
+    > [!NOTE]
+    > If you are using Visual Studio 2017, by default **WebView2** may not display in the **Toolbox**.  To enable the behavior, choose **Tools** > **Options** > **General** > set the **Automatically Populate Toolbox** setting to `True`.  
+    
+    Drag and drop the **WebView2** control into the Windows Forms App.
     
     :::image type="complex" source="./media/winforms-toolbox.png" alt-text="Toolbox displaying WebView2":::
        Toolbox displaying WebView2
