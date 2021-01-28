@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020 
+ms.date: 01/27/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -255,15 +255,10 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 
 <!-- image links -->  
 
-[ImageCheckmarkKeyboardShortcutIcon]: ../media/checkmark-keyboard-shortcut-icon.msft.png  
-[ImageCustomKeyboardShortcutIcon]: ../media/custom-keyboard-shortcut-icon.msft.png  
-[ImageDeleteKeyboardShortcutIcon]: ../media/delete-keyboard-shortcut-icon.msft.png  
-[ImageEditKeyboardShortcutIcon]: ../media/edit-keyboard-shortcut-icon.msft.png  
 [ImageExperimentalApisIcon]: ../media/experimental-apis-dark-icon.msft.png  
 [ImageInspectIcon]: ../media/inspect-icon.msft.png  
 [ImageRotateIcon]: ../media/rotate-dark-icon.msft.png  
 [ImageSpanIcon]: ../media/span-dark-icon.msft.png  
-[ImageXKeyboardShortcutIcon]: ../media/discard-changes-keyboard-shortcut-icon.msft.png  
 
 <!-- links -->  
 
