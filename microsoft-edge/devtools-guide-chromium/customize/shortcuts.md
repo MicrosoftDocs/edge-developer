@@ -3,7 +3,7 @@ description: Match keyboard shortcuts in the DevTools to Visual Studio Code
 title: Customize keyboard shortcuts in the Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/27/2021
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, custom, shortcuts, keyboard, visual studio code
@@ -23,7 +23,7 @@ The **Shortcuts** page in [Settings][DevToolsCustomizeSettings] provides a list 
     
 ## Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code  
 
-To match the keyboard shortcuts in the Microsoft Edge DevTools for equivalent actions in [Visual Studio Code][VisualStudioCode], complete the following steps.  
+To match the keyboard shortcut in the Microsoft Edge DevTools for equivalent action in [Visual Studio Code][VisualStudioCode], complete the following steps.  
 
 1.  On the [Shortcuts](#customize-keyboard-shortcuts-in-the-microsoft-edge-devtools) page.  
 1.  Choose the **Match shortcuts from preset** dropdown and change **DevTools (Default)** to **Visual Studio Code**.  
@@ -39,14 +39,15 @@ For example, to pause or continue running a script in [Visual Studio Code][Visua
 To customize the keyboard shortcut for a specific action in DevTools, complete the following steps.  
 
 1.  On the [Shortcuts](#customize-keyboard-shortcuts-in-the-microsoft-edge-devtools) page.  
-1.  Choose the action you want to customize.  
+1.  Choose the action you want to customize.  For example, in the Debugger section, find and select the **Pause script execution** action.
 1.  Choose the **Edit** \(![EditKeyboardShortcut][ImageEditKeyboardShortcutIcon]\) icon.  
     
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Choose the action to customize from the Shortcuts page in Settings" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        Choose the action to customize from the [Shortcuts](#customize-keyboard-shortcuts-in-the-microsoft-edge-devtools) page in [Settings][DevToolsCustomizeSettings]  
     :::image-end:::  
     
-1.  On the keyboard, select the keys you want to bind to the action.
+1.  To bind to the shortcut keys to the action, ensure the textbox next has focus, and then use the keyboard to select the shortcut keys.  
+1.  To bind more than one shortcut combination to an action, choose **Add a shortcut**, ensure the textbox next has focus, and then use the keyboard to select the shortcut keys.  
     
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Select the keys you want to assign to the action" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
        Select the keys you want to assign to the action  
@@ -62,10 +63,10 @@ To customize the keyboard shortcut for a specific action in DevTools, complete t
     
 On the [Shortcuts](#customize-keyboard-shortcuts-in-the-microsoft-edge-devtools) page, the **Custom Keyboard Shortcut** \(![CustomKeyboardShortcut][ImageCustomKeyboardShortcutIcon]\) icon displays keyboard shortcuts that you have customized.  To reset all shortcuts, choose **Restore default shortcuts**.  
 
-When you are editing the keyboard shortcuts for an action, to discard your changes, choose the X \(![XKeyboardShortcut][ImageXKeyboardShortcutIcon]\) icon.  To remove shortcuts for a specific action, choose the **Delete shortcut** \(![DeleteKeyboardShortcut][ImageDeleteKeyboardShortcutIcon]\) icon.  To add multiple shortcuts for an action, choose **Add a shortcut**.  
+When you are editing the keyboard shortcuts for an action, to discard your changes, choose the X \(![XKeyboardShortcut][ImageXKeyboardShortcutIcon]\) icon.  To remove shortcuts for a specific action, choose the **Delete shortcut** \(![DeleteKeyboardShortcut][ImageDeleteKeyboardShortcutIcon]\) icon.  
 
 > [!NOTE]
-> If a keyboard shortcut is currently assigned to another action, you are not able to save it for a new action.  You must first delete the keyboard shortcut for the previous action and then add it to the new action.  
+> If a keyboard shortcut is currently assigned to one action, you are blocked from saving it to another action.  Instead, delete the keyboard shortcut from the previous action, and then add it to the new action.
 
 <!-- image links -->  
 
