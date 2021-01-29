@@ -3,7 +3,7 @@ description: A reference for WebDriver capabilities and Microsoft Edge-specific 
 title: Capabilities and EdgeOptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/22/2021
+ms.date: 01/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -26,7 +26,7 @@ options.AddExtensions("/path/to/extension.crx");
 var driver = new EdgeDriver(options);
 ```  
 
-To use capabilities that don't have an associated convenience method, use the `AddAdditionalCapability` method.  You must to pass the full name of the capability and a value with the correct type.  To review the full list of accepted capabilities and value types, navigate to [EdgeOptions object](#edgeoptions-object).  
+To use capabilities that don't have an associated convenience method, use the `AddAdditionalCapability` method.  You must pass the full name of the capability and a value with the correct type.  To review the full list of accepted capabilities and value types, navigate to [EdgeOptions object](#edgeoptions-object).  
 
 ```csharp
 options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
@@ -45,7 +45,7 @@ Most Microsoft Edge-specific capabilities are exposed through the `EdgeOptions` 
 | args | list of strings |  | List of command-line arguments to use when starting Microsoft Edge.  Arguments with an associated value should be separated by a `=` sign \(for example, `['start-maximized', 'user-data-dir=/tmp/temp_profile']`\). |  
 | binary | string |  | Path to the Microsoft Edge binary to use \(on macOS, the path should be the actual binary, not just the app.  for example, `/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge`\). |  
 | debuggerAddress | string |  | An address of a debugger server to which to connect, in the form of `hostname/ip:port`, for example `127.0.0.1:38947`. |
-| detach | boolean | `false` | If `false`, Microsoft Edge quits when the WebDriver service shuts down, even if the WebDriver local end hasn't closed the session.  If `true`, Microsoft Edge only quits if the WebDriver local end closes the session.  If `true`, and the WebDriver local end does not close the session, `EdgeDriver` will not clean up the temporary user data folder used by the Microsoft Edge instance. |  
+| detach | boolean | `false` | If `false`, Microsoft Edge quits when the WebDriver service shuts down, even if the WebDriver local end hasn't closed the session.  If `true`, Microsoft Edge only quits if the WebDriver local end closes the session.  If `true`, and the WebDriver local end does not close the session, `EdgeDriver` does not clean up the temporary user data folder used by the Microsoft Edge instance. |  
 | excludeSwitches | list of strings |  | List of Microsoft Edge command line switches to exclude that EdgeDriver by default passes when starting Microsoft Edge.  Avoid the `--` prefix for switches. |  
 | extensions | list of strings |  | A list of extensions to install on startup.  Each item in the list should be a base-64 encoded packed extension \(`.crx`\). |  
 | localState | dictionary |  | A dictionary with each entry consisting of the name of the preference and the value.  The preferences are applied to the Local State file in the user data folder. |  

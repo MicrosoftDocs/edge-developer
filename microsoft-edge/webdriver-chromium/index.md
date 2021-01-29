@@ -3,7 +3,7 @@ description: Learn how to test your website or app in Microsoft Edge or automate
 title: Use WebDriver (Chromium) for test automation  
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/22/2021
+ms.date: 01/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -58,7 +58,7 @@ The last component you must download is a language-specific client driver to tra
 
 If you already use [Selenium 3][SeleniumHQ], you may have existing browser tests and want to add coverage for Microsoft Edge \(Chromium\) without changing your version of Selenium.  To use [Selenium 3][SeleniumHQ] to write automated tests for both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\), install the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] package to use the updated driver.  The `EdgeDriver` and `EdgeDriverService` classes included in the tools are fully compatible with the built-in equivalents in Selenium 4.  
 
-Use the following steps to add the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] and [Selenium 3][SeleniumHQ] to your project.
+Use the following steps to add the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] and [Selenium 3][SeleniumHQ] to your project.  
 
 #### [C#](#tab/c-sharp/)  
 
@@ -106,7 +106,7 @@ npm install @microsoft/edge-selenium-tools selenium-webdriver
 
 ## Automate Microsoft Edge (Chromium) with WebDriver  
 
-To automate a browser using WebDriver, you must first start a WebDriver session using your preferred WebDriver language binding.  A session is a single running instance of a browser that can be controlled using WebDriver commands.  Starting a WebDriver session launches a new browser instance.  The browser that was launched will remain open until you close the WebDriver session.  
+To automate a browser using WebDriver, you must first start a WebDriver session using your preferred WebDriver language binding.  A session is a single running instance of a browser that can be controlled using WebDriver commands.  Starting a WebDriver session launches a new browser instance.  The browser that is launched remains open until you close the WebDriver session.  
 
 The following content walks you through using Selenium to start a WebDriver session with Microsoft Edge \(Chromium\).  You may run theses examples using either Selenium 3 or 4.  To use with Selenium 3, the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] package must be installed.  
 
@@ -235,7 +235,7 @@ using (var service = EdgeDriverService.CreateChromiumService())
 ```  
 
 > [!NOTE] 
->You do not need to provide the `EdgeOptions` object when passing `EdgeDriverService` to the `EdgeDriver` instance.  The `EdgeDriver` class uses the default options for either Microsoft Edge \(EdgeHTML\) or Microsoft Edge \(Chromium\) depending on the service you provide.  
+>You do not need to provide the `EdgeOptions` object when passing `EdgeDriverService` to the `EdgeDriver` instance.  The `EdgeDriver` class uses the default options for either Microsoft Edge \(EdgeHTML\) or Microsoft Edge \(Chromium\) based on the service you provide.  
 > However, if you want to provide both `EdgeDriverService` and `EdgeOptions` classes, ensure that both are configured for the same version of Microsoft Edge.  For example, it is not possible to use a default Microsoft Edge \(EdgeHTML\) `EdgeDriverService` class and Chromium properties in the `EdgeOptions` class.  The `EdgeDriver` class throws an error to prevent using different versions.  
 
 #### [Python](#tab/python/)  
@@ -253,7 +253,7 @@ driver = Edge(service_args = service_args)
 
 <a id="customizing-microsoft-edge-driver-services-code"></a>  
 
-Use the `createDefaultService()` method to create an `EdgeDriverService` configured for Microsoft Edge \(Chromium\). Driver services in Java are customized using Java system properties. For example, the following code uses the `"webdriver.edge.verboseLogging"` property to enable verbose log output. 
+Use the `createDefaultService()` method to create an `EdgeDriverService` configured for Microsoft Edge \(Chromium\). Driver services in Java are customized using Java system properties. For example, the following code uses the `"webdriver.edge.verboseLogging"` property to enable verbose log output.  
 
 ```java
 System.setProperty("webdriver.edge.verboseLogging", "true");

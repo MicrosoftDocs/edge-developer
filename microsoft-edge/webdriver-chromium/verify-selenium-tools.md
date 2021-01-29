@@ -3,13 +3,13 @@ description: Information about verifying the GPG signature for Selenium Tools fo
 title: Verifying downloads of Selenium Tools for Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/22/2021
+ms.date: 01/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, html, css, javascript, developer, webdriver, selenium, testing, tools, automation, test
 ---
-# Verifying downloads of Selenium Tools for Microsoft Edge  
+# Verify downloads of Selenium Tools for Microsoft Edge  
 
 This article provides the public key to use when verifying the signature of releases of the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases].  
 
@@ -19,8 +19,8 @@ Use the following keys to verify the signature of packages provided by the [Micr
 
 ## Public key for verifying Selenium Tools for Microsoft Edge  
 
-- **Public Key ID**: Microsoft Edge Developer Tools Team <EdgeDevToolsOSS@microsoft.com>  
-- **Public Key Fingerprint**: `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`  
+*   **Public Key ID**: Microsoft Edge Developer Tools Team [EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)  
+*   **Public Key Fingerprint**: `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`  
 
 ```output
 -----BEGIN PGP PUBLIC KEY BLOCK-----
