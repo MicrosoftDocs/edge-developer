@@ -20,7 +20,7 @@ If you are a developer who wants to distribute extensions as part of the install
 
 Ensure your extension is published to the Microsoft Edge Add-ons catalog, or package the CRX file and install the extension using the CRX file on the client.  
 
-The steps to install extensions using the registry in Windows are:  
+The steps to install extensions using the registry on Windows are:  
 
 1.   Find or create the following key in the registry:  
      *   32-bit Windows:  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`  
@@ -28,7 +28,7 @@ The steps to install extensions using the registry in Windows are:
 1.   Create a new key, or folder, under the `Extensions` key with the same name as the ID of your extension. For example, the ID may be `aaaaaaaaaabbbbbbbbbbcccccccccc`.  
 1.   In the new key, create a property called `update_url`, and set the value to the following JSON code. If your CRX is in the Microsoft Edge Add-ons catalog, use `https://edge.microsoft.com/extensionwebstorebase/v1/crx` for the value of `update_url`. If your extension is in the Chrome Web Store, use `https://clients2.google.com/service/update2/crx`.  
     
-```javascript
+```JSON  
 {
     "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
 }
