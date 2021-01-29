@@ -325,8 +325,8 @@
           href: webdriver-chromium/index.md
         - name: Capabilities and EdgeOptions
           href: webdriver-chromium/capabilities-edge-options.md
-        - name: Selenium Tools Release Signing
-          href: webdriver-chromium/release-signing.md
+        - name: Verifying downloads of Selenium Tools for Microsoft Edge
+          href: webdriver-chromium/verify-selenium-tools.md
     - name: Web platform
       items: 
         - name: Site compatibility-impacting changes coming to Microsoft Edge

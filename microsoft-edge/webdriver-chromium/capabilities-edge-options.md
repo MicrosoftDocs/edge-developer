@@ -26,7 +26,7 @@ options.AddExtensions("/path/to/extension.crx");
 var driver = new EdgeDriver(options);
 ```  
 
-To use capabilities that don't have an associated convenience method, use the `AddAdditionalCapability` method.  You'll need to pass the full name of the capability and a value with the correct type.  To review the full list of accepted capabilities and value types, navigate to [EdgeOptions object](#edgeoptions-object).  
+To use capabilities that don't have an associated convenience method, use the `AddAdditionalCapability` method.  You must to pass the full name of the capability and a value with the correct type.  To review the full list of accepted capabilities and value types, navigate to [EdgeOptions object](#edgeoptions-object).  
 
 ```csharp
 options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
