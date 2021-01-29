@@ -28,7 +28,7 @@ The steps to install extensions using the registry on Windows are:
 1.   Create a new key, or folder, under the `Extensions` key with the same name as the ID of your extension. For example, the ID may be `aaaaaaaaaabbbbbbbbbbcccccccccc`.  
 1.   In the new key, create a property called `update_url`, and set the value to the following JSON code. If your CRX is in the Microsoft Edge Add-ons catalog, use `https://edge.microsoft.com/extensionwebstorebase/v1/crx` for the value of `update_url`. If your extension is in the Chrome Web Store, use `https://clients2.google.com/service/update2/crx`.  
     
-```JSON  
+```json  
 {
     "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
 }
