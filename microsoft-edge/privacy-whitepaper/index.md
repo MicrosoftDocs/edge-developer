@@ -141,7 +141,7 @@ When returning the media license, a media identifier is created which is unique 
 To disable all DRM and content protections, go to `edge://settings/content/protectedContent` and turn off the **Allow sites to play protected content (recommended)** and **Allow identifiers for protected content (computer restart may be required)** settings.  
 
 *   Turning off the **Allow sites to play protected content** setting disables playback for CDM-based DRM systems such as PlayReady and Widevine, but not for non-CDM-based systems like Flash Access DRM.  To manage Flash site permissions, go to `edge://settings/content/flash`.  Turning off the setting causes media functionality to stop working properly.  
-*   Turning off the **Allow identifiers for protected content** setting prevents the creation of identifiers for Flash Access DRM and prevents Widevine from periodically fetching updates from Google.  Turning odd the setting may cause some media functionality on some sites to stop working properly.  
+*   Turning off the **Allow identifiers for protected content** setting prevents the creation of identifiers for Flash Access DRM and prevents Widevine from periodically fetching updates from Google.  Turning off the setting may cause some media functionality on some sites to stop working properly.  
 
 ## Do Not Track  
 
