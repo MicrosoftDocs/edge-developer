@@ -14,7 +14,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence.  Review the following content for up-to-date information on product announcements, additions, modifications, and breaking changes to the APIs.  
 
 > [!NOTE]
-> Ensure you re-compile your app after updating the NuGet package. The team recommends using the Canary channel when developing using the prerelease packages, and the evergreen runtime when using released packages. For more information, navigate to [Versioning][VersioningDoc].  
+> Ensure you re-compile your app after updating the NuGet package.  The team recommends using the Canary channel when developing using the prerelease packages, and the evergreen runtime when using released packages.  For more information, navigate to [Versioning][VersioningDoc].  
  
 ## 1.0.781-prerelease  
 
@@ -31,10 +31,10 @@ Release Date: January 29, 2021
 
 *   Added [TrySuspend and Resume][ReferenceWin32Icorewebview210781PreReleaseTrySuspendResume] method to suspend and resume WebViews.  
 *   Added [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210781PreReleaseSetVirtualHostNameToFolderMapping] method that maps a virtual host name to a directory path.  
-*   Added the [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210781PreReleaseDefaultBackgroundColor] property to set the background color and transparency.  \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue414]\)  
+*   Added the [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210781PreReleaseDefaultBackgroundColor] property to set the color and alpha-channel of the background.  \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue414]\)  
 *   Added the [UserAgent][ReferenceWin32Icorewebview2experimentalsettings10781PreReleaseGetUserAgent] property to get or set the User Agent.\([\#122][GithubMicrosoftedgeWebviewfeedbackIssue549]\)
 *   Replaced the `CreateCookieWithCookie` method with the `CopyCookie` method.  
-*   Added visual hosting support using the [ICoreWebView2CompositionController][ReferenceWin32Icorewebview2controllerViewWebview210781CompositionController] interface, which is created using the new `CreateCoreWebView2CompositionController` method from `ICoreWebView2Environment3`. 
+*   Added visual hosting support using the [ICoreWebView2CompositionController][ReferenceWin32Icorewebview2controllerViewWebview210781CompositionController] interface, which is created using the new `CreateCoreWebView2CompositionController` method from `ICoreWebView2Environment3`.  
 
     
 ##### Bug fixes  
@@ -44,7 +44,7 @@ Release Date: January 29, 2021
 *   Fixed a bug that returned `E_NOINTERFACE` when querying `ICoreWebView2` for `ICoreWebView2Experimental`.  \([\#691][GithubMicrosoftedgeWebviewfeedbackIssue691]\).  
 *   Fixed a bug that allowed navigation with malformed URIs when `CoreWebView2NavigationStartingEventArgs.Cancel` was set to `false`.  \([\#400][GithubMicrosoftedgeWebviewfeedbackIssue400]\).  
 *   Fixed a bug that blocked `window.print()` on pop-up windows with event handlers attached to `NewWindowRequested` events.  \([\#409][GithubMicrosoftedgeWebviewfeedbackIssue409]\).  
-*   Fixed Dynamic DPI issue when moving apps between different monitors. \([\#58][GithubMicrosoftedgeWebviewfeedbackIssue58]\)  
+*   Fixed Dynamic DPI issue when moving apps between different monitors.  \([\#58][GithubMicrosoftedgeWebviewfeedbackIssue58]\)  
 *   Improved the `HRESULT`s passed by [ICoreWebView2WebResourceResponseViewGetContentCompletedHandler::Invoke][ReferenceWin32Icorewebview2webresourceresponseviewgetcontentcompletedhandlerInvoke10781].  
     
 ##### Promotions  
@@ -59,7 +59,7 @@ Release Date: January 29, 2021
 
 ##### Bug fixes  
 
-*   Fixed bug that crashed WebView apps that use the WPF SDK. The crash occurred when windows were closed using the F4 key.  \([\#399][GithubMicrosoftedgeWebviewfeedbackIssue399]\)
+*   Fixed bug that crashed WebView apps that use the WPF SDK.  The crash occurred when windows were closed using the F4 key.  \([\#399][GithubMicrosoftedgeWebviewfeedbackIssue399]\)
 *   The WebView2 initialization screen is now transparent, instead of gray.  \([\#196][GithubMicrosoftedgeWebviewfeedbackIssue196]\)
     
 ## 1.0.705.50  
@@ -86,7 +86,7 @@ Release Date: December 8, 2020
 #### General  
 
 > [!IMPORTANT]
-> **Breaking Change**:  WebView2 pre-release packages 1.0.707 and 0.9.628 have been deprecated. Please discontinue development with these packages.  
+> **Breaking Change**:  WebView2 pre-release packages 1.0.707 and 0.9.628 are deprecated.  Please discontinue development with these packages.  
 
 ###### Features  
 
@@ -102,7 +102,7 @@ Release Date: December 8, 2020
 *   Added APIs to handle DPI support.  
     *   Added [RasterizationScale][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetRasterizationscale] property to change the DPI scale for WebView content and UI popups, and associated [RasterizationScaleChanged][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseAddRasterizationscalechanged] event.  
     *   Added [ShouldDetectMonitorScaleChanges][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetShouldDetectMonitorScaleChanges] property to automatically update `RasterizationScale` property if needed.  
-    *   Added [BoundsMode property][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetBoundsMode] to specify that the bounds are logic pixels and allow WebView to use the `RasterizationScale` for WebView2 pixel display, and have WebView apply the `RasterizationScale` to the `Bounds` to get the physical size.  
+    *   Added [BoundsMode property][ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetBoundsMode] to specify that the bounds are logic pixels and allow WebView to use `RasterizationScale` for WebView2 pixel display, and WebView use the `RasterizationScale` with the `Bounds` to get the physical size.  
 *   Updated `NewWindowRequested` event to handle `Ctrl`+`click` and `Shift`+`click`.  \([\#168][GithubMicrosoftedgeWebviewfeedbackIssue168] and [\#371][GithubMicrosoftedgeWebviewfeedbackIssue371]\).  
 *   The following experimental APIs are now promoted to Stable.  
     *   [WebResourceResponseReceived API][WebResourceResponseReceivedAPI]  
@@ -139,7 +139,7 @@ Release Date: November 20, 2020
 ###### Features  
 
 *   .NET WPF/WinForms WebView2 is now Generally Available \(GA\).  
-*   Fixed Distribution \(Bring-your-own\) mode reached GA. 
+*   Fixed Distribution \(Bring-your-own\) mode reached GA.  
     
 #### .NET  
 
@@ -159,21 +159,21 @@ Release Date: October 19, 2020
 *   Added [DOMContentLoaded][ReferenceWin32Icorewebview2experimentalAddDomcontentloaded10674] event that runs when the initial HTML document is loaded and parsed.  
 *   Added the [Environment][ReferenceWin32Icorewebview2experimentalGetEnvironment10674] property on WebView2.  This property exposes the WebView2 environment where an instance of WebView2 was created.  
 *   Added [cookie management][ReferenceWin32Icorewebview2experimentalGetCookiemanager10674] APIs that allow developers to authenticate the WebView2 session, or retrieve cookies from WebView to authenticate other tools.  The Webview team is planning to make language or framework-specific improvements.  For more information, navigate to [API Review: Cookie Management][GithubMicrosoftedgeWebview2AnnouncementIssue2].  
-*   Updated the [WebResourceResponseReceived][ReferenceWin32Icorewebview2experimentalAddWebresourceresponsereceived10674] event, and added immutable [WebResourceResponseView][ReferenceWin32Icorewebview2experimentalwebresourceresponseview10674] and [WebResourceResponseReceivedEventArgs::PopulateResponseContent][ReferenceWin32Icorewebview2experimentalwebresourceresponsereceivedeventargsPopulateresponsecontent09628] to become [WebResourceResponseView::GetContent][ReferenceWin32Icorewebview2experimentalwebresourceresponseviewGetcontent10674].  
+*   Updated the [WebResourceResponseReceived][ReferenceWin32Icorewebview2experimentalAddWebresourceresponsereceived10674] event, and added immutable [WebResourceResponseView][ReferenceWin32Icorewebview2experimentalwebresourceresponseview10674] and [WebResourceResponseReceivedEventArgs::PopulateResponseContent][ReferenceWin32Icorewebview2experimentalwebresourceresponsereceivedeventargsPopulateresponsecontent09628] to [WebResourceResponseView::GetContent][ReferenceWin32Icorewebview2experimentalwebresourceresponseviewGetcontent10674].  
 *   Turned off [Microsoft Defender Application Guard (WDAG)][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10] in WebView2.  
 *   Added [SystemCursorId][ReferenceWin32Icorewebview2experimentalcompositioncontroller2GetSystemcursorid10674] for Visual Hosting.  
 *   Added bug fixed for Input Method in Visual Hosting.  
-*   Developers no longer have to include version.lib when using WebView2 static library.  
+*   Removed include requirement for `version.lib` when using WebView2 static library.  
     
 #### .NET  
 
 *   Updated [CoreWebView2][DotnetApiMicrosoftWebWebview2CoreCorewebview2] class to expose the `CoreWebView2Environment` variable.  
-*   Changed implementations of custom EventArgs classes in `Microsoft.Web.WebView2.Core` namespace to be subclasses of [System.EventArgs][DotnetApiSystemEventargs] or [System.ComponentModel.CancelEventArgs][DotnetApiSystemComponentmodelCancelEventargs].  \([\#250][GithubMicrosoftedgeWebviewfeedbackIssue250]\)  
+*   Changed implementations of custom EventArgs classes in `Microsoft.Web.WebView2.Core` namespace to subclasses of [System.EventArgs][DotnetApiSystemEventargs] or [System.ComponentModel.CancelEventArgs][DotnetApiSystemComponentmodelCancelEventargs].  \([\#250][GithubMicrosoftedgeWebviewfeedbackIssue250]\)  
 *   Added support for [CoreWebView2CreationProperties][DotnetApiMicrosoftWebWebview2Winforms] in WinForms.  \([\#204][GithubMicrosoftedgeWebviewfeedbackIssue204]\)
 *   Added [WebResourceRequested][DotnetApiMicrosoftWebWebview2CoreCorewebview2Webresourcerequested] .NET APIs.  \([\#219][GithubMicrosoftedgeWebviewfeedbackIssue219]\).  
 *   Updated WinForms Designer [Source][DotnetApiMicrosoftWebWebview2WinformsWebview2Source] property to default or reset to null.  \([\#177][GithubMicrosoftedgeWebviewfeedbackIssue177]\).  
 *   Updated WebView2 bounds in WebView2.Init() to support DPI modes that are less than 100%.  \([\#432][GithubMicrosoftedgeWebviewfeedbackIssue432]\).  
-*   Updated [BuildWindowCore][DotnetApiMicrosoftWebWebview2WpfWebview2Buildwindowcore] and [DestroyWindowCore][DotnetApiMicrosoftWebWebview2WpfWebview2Destroywindowcore] to be more robust.  \([\#382][GithubMicrosoftedgeWebviewfeedbackIssue382]\).  
+*   Updated [BuildWindowCore][DotnetApiMicrosoftWebWebview2WpfWebview2Buildwindowcore] and [DestroyWindowCore][DotnetApiMicrosoftWebWebview2WpfWebview2Destroywindowcore] to increase robustness.  \([\#382][GithubMicrosoftedgeWebviewfeedbackIssue382]\).  
 *   Updated .NET Loader base to load on process bit instead of operating system architecture.  \([\#431][GithubMicrosoftedgeWebviewfeedbackIssue431]\).  
 *   Renamed `EdgeNotFoundExpection` to [WebView2RuntimeNotFoundException][DotnetApiMicrosoftWebWebview2CoreWebview2runtimenotfoundexception].  
     
@@ -236,7 +236,7 @@ Release Date: July 20, 2020
 *   Ensured WebView navigation starting event is run for `about:blank`.  Now, `NavigationStarting` events are run for all navigation, but cancellations for `about:blank` or iframe `srcdoc` aren't supported and ignored.  
 *   Blocked some `edge://` URI schemes in WebView.  
 *   Added experimental [IsSingleSignOnUsingOSPrimaryAccountEnabled][ReferenceWin32Icorewebview2experimentaloptionsGetIssinglesignonusingosprimaryaccountenabled09538] property on WebView2 environment options to turn on conditional access for WebView.  
-*   Added experimental [WebResourceResponseReceived][ReferenceWin32Icorewebview2experimentalAddWebresourceresponsereceived09538] event that fires after the WebView has received and processed the response for a WebResource request.  Authentication headers, if any, are included in the response object.  
+*   Added experimental [WebResourceResponseReceived][ReferenceWin32Icorewebview2experimentalAddWebresourceresponsereceived09538] event that runs after the WebView receives and processes the response from a WebResource request.  Authentication headers, if any, are included in the response object.  
     
 #### .NET  
 
