@@ -3,7 +3,7 @@ description: Getting started guide with WebView2 for WPF apps
 title: Getting started with WebView2 for WPF apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/18/2021
+ms.date: 01/29/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -344,8 +344,6 @@ To continue learning more about WebView2, navigate to the following resources.
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
-
-[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 Installer" 
  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"  
 
@@ -363,3 +361,5 @@ To continue learning more about WebView2, navigate to the following resources.
 [MicrosoftMain]: https://www.microsoft.com "Microsoft"  
 
 [MicrosoftVisualStudioMain]: https://visualstudio.microsoft.com "Microsoft Visual Studio"  
+
+[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 Installer" 

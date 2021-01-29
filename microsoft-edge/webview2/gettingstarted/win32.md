@@ -3,7 +3,7 @@ description: Getting started guide with WebView2 for Win32 apps
 title: Getting started with WebView2 for Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/13/2021
+ms.date: 01/29/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -28,7 +28,7 @@ Ensure you install the following list of pre-requisites before proceeding.
 
 Start with a basic desktop project that contains a single main window.  
 
-. [IMPORTANT]
+> [!IMPORTANT]
 > To better focus the walkthrough, use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)][CppWindowsWalkthroughCreatingDesktopApplication] for your sample app.  To download the modified sample and get started, navigate to [WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].  
 
 1.  In Visual Studio, open `WebView2GettingStarted.sln`.  
