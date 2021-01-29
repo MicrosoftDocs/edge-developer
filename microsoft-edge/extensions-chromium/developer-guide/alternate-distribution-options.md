@@ -11,7 +11,7 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 
 # Alternate methods to distribute extensions  
 
-If you are a developer who wants to distribute extensions as part of the installation process for other software, or a network admin that wants to distribute extensions throughout their organization, Microsoft Edge supports installation on Windows using the Windows registry. Microsoft Edge supports installing an extension hosted at a URL, which will be referred to as `update_URL`.  On Windows, the `update_URL` must point to the Microsoft Edge Add-ons catalog where the extension must be hosted.  
+If you are a developer who wants to distribute extensions as part of the installation process for other software, or a network admin that wants to distribute extensions to your organization, Microsoft Edge supports installation on Windows using the Windows registry. Microsoft Edge supports installing an extension hosted at a URL, which will be referred to as `update_URL`.  On Windows, the `update_URL` must point to the Microsoft Edge Add-ons catalog where the extension must be hosted.  
 
 > [!NOTE]
 > External installation of extensions using a JSON file for macOS <!--and Linux--> for preferences is not supported.  This feature support will soon be available.
@@ -33,7 +33,7 @@ The steps to install extensions using the registry on Windows are:
     "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
 }
 ```  
-
+  
 1.   Launch the browser and go to `edge://extensions` to confirm that the extension is listed.  
 
 ## Update or uninstall extensions from the Windows registry  
