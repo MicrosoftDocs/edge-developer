@@ -19,7 +19,7 @@ The normal sequence of navigation events is `NavigationStarting`, `SourceChanged
 | 1 | `NavigationStarting`  |  WebView2 starts to navigate and the navigation results in a network request.  The host is able to disallow the request during the event.  |  
 | 2 | `SourceChanged`  |  The source of WebView2 changes to a new URL.  The event may result from a navigation that does not cause a network request such as a fragment navigation.  |  
 | 3 | `HistoryChanged`  |  The history of WebView2 updates as a result of the navigation.  |  
-| 4 | `ContentLoading`  |  WebView starts loading content for the new page.  |  
+| 4 | `ContentLoading`  |  WebView2 starts loading content for the new page.  |  
 | 5 | `NavigationCompleted`  |  WebView2 completes loading content on the new page.  |  
 
 Track `navigations` to each new document using the navigation ID \(`NavigationId`\).  The `NavigationId` of WebView changes every time there is a successful navigation to a new document.
