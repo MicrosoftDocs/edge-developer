@@ -60,7 +60,7 @@ To edit your extension, you may follow these steps:
 
 ## Remove your extension from Microsoft Edge Add-ons store
 
-To remove your Extension from Microsoft Edge Add-ons store, follow the below steps:  
+The following steps describe how to remove your extension from the Microsoft Edge Add-ons store.  
 
 1.  Go to your [developer dashboard][MicrosoftPartnerCenter].  From the Dashboard page, click the listing which you want to remove.  
 1.  Open **Extension Overview** page of your listing.  
