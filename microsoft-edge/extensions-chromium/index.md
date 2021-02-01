@@ -22,7 +22,7 @@ An extension is structured similar to a regular web app.  At a minimum, it inclu
 
 ## Basic guidance  
 
-Some of the most popular browsers to build extensions for include Safari, Firefox, Chrome, Opera, Brave, and Microsoft Edge.  Great places to begin your extension development tutorials and documentation research are sites hosted by the browser organizations.  The following table is not definitive, use it as a helpful starting point.  
+Some of the most popular browsers to build extensions for include Safari, Firefox, Chrome, Opera, Brave, and Microsoft Edge.  Great places to begin your extension development tutorials and documentation research are sites hosted by the browser organizations.  The following table is not definitive, and may be used as a starting point.  
 
 | Web browser | Chromium-based? | Extension development homepage |  
 |:--- |:--- |:--- |  
