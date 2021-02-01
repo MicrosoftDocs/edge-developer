@@ -64,7 +64,7 @@ The following steps describe how to remove your extension from the Microsoft Edg
 
 1.  Go to your [developer dashboard][MicrosoftPartnerCenter].  From the Dashboard page, select the listing to remove.  
 1.  Open **Extension Overview** page of your listing.  
-1.  Click on **Unpublish** which unpublishes the listing from Microsoft Edge Add-ons.  
+1.  Select **Unpublish** to remove the listing from the Microsoft Edge Add-ons store.  
 
 Your extension is now removed from the Microsoft Edge Add-ons store. Users who already installed your extension may continue to use it, but new users will not be able to find it.  
 
