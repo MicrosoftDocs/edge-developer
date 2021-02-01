@@ -14,7 +14,7 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 You can choose to update a submitted extension or remove a published extension listing from Microsoft Edge Add-ons store at any point in time. 
 
 
-## Update your extension on Microsoft Edge add-ons store
+## Update your extension on the Microsoft Edge add-ons store
 
 > [!NOTE]
 > The duration of the certification process for an extension update ranges from a few hours to few days.
