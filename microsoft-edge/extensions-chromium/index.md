@@ -67,7 +67,7 @@ Users may need to install your extension in different browsers. In this scenario
 
 ### Migrate an existing extension to Microsoft Edge  
 
-If you have already developed an extension for another Chromium browser and you can choose to submit it to Microsoft Edge. You do not need to rewrite your extensions, do ensure it works on Microsoft Edge.  Migrating existing Chromium extensions to other Chromium browsers is straightforward as long as the APIs you use or necessary alternatives are available on different browsers.  
+If you have already developed an extension for another Chromium browser, you can submit it to the Microsoft Edge Add-ons store. You do not need to rewrite your extension, and must verify that it works in Microsoft Edge.  When migrating existing Chromium extensions to other Chromium browsers, ensure the same APIs or alternatives are available in your target browser.  
 
 For more information on porting your Chrome extension to Microsoft Edge, see [Port Chrome extensions to Microsoft (Chromium) Edge][ExtensionsChromiumDeveloperGuidePortChrome]. Once you have ported your extension to the target browser, the next step is to publish it.  
 
