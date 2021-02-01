@@ -80,7 +80,7 @@ To submit your extension to the store, you must meet the following requirements.
 *   An archive \(.zip\) file that contains your code files.  
 *   All required visual assets, which includes a logo and small promotional tile.  
 *   Optional promotional media, such as screenshots, promotional tiles, and a video URL.
-*   Information describing your extension such as the name, short description, a privacy policy link.
+*   Information describing your extension such as the name, short description, and a privacy policy link.
 
 > [!NOTE]
 > Different stores may have different submission requirements.  The above list summarizes the [requirements][ExtensionsChromiumPublish] for publishing an extension to Microsoft Edge.  
