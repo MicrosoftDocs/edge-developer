@@ -63,7 +63,7 @@ You may submit and seek browser extensions in the following browser stores.
 
 Some stores allow you to download listed extensions from other browsers.  However, cross-browser access is not guaranteed by browser stores.  To ensure your users are able to find your extension in different browsers, you should maintain a listing on each browser extension store.  
 
-An extension may have overlapping audiences that often use multiple browsers. You may discover that it should target a new audience. For this, existing Chromium extensions may be migrated from one browser to another.  
+Users may need to install your extension in different browsers. In this scenario, existing Chromium extensions may be migrated from one browser to another.  
 
 ### Migrate an existing extension to Microsoft Edge  
 
