@@ -29,7 +29,7 @@ To update your extension on the store, you may follow these steps:
 1.  Once the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons store.  
 
 
-### Update your extension during certification step
+### Update your extension during the certification step
 
 You may edit and update your extension submission when the extension is in certification stage before it is published to the store.  You may check the status of your extension on the Dashboard associated with your listing on [Partner Center][MicrosoftPartnerCenter].
 
