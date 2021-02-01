@@ -38,7 +38,7 @@ Some of the most popular browsers to build extensions for include Safari, Firefo
 
 ## Why Chromium?
 
-If your goal is to publish your extension to as many browser extensions stores as possible, it must be modified for multiple versions in order to target and run in each distinct browser environment.  [Safari extensions][AppleDeveloperSafariservicesAppExtensions], unlike other extension types, may use both web and native code to communicate with counterpart native applications.  [Firefox extensions][MDNWebextensions] share more  with the other extension types but there are also some [differences][ExtensionworkshopPorting] to consider.  However, there is some good news; the last four browsers in the chart above are able to use the same code package and minimize the requirement to alter and maintain parallel versions.  This is because the browsers are based on the [Chromium open-source project][ChromiumHome].  
+If your goal is to publish your extension to as many browser extensions stores as possible, it must be modified for multiple versions in order to target and run in each distinct browser environment.  For example, [Safari extensions][AppleDeveloperSafariservicesAppExtensions] may use both web and native code to communicate with counterpart native applications.  The last four browsers in the previous table use the same code package, and minimizes the requirement to maintain parallel versions.  These browsers are based on the [Chromium open-source project][ChromiumHome].  
 
 Creating a Chromium extension enables you to write the least amount of code to maximize both the number of extension stores you are targeting and ultimately the number of users that are able to find and acquire your extension.  
 
