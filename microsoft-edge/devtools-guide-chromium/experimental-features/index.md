@@ -233,7 +233,7 @@ This experiment helps you visualize Layers alongside z-indexes and the Document 
 
 This experimental feature provides many new visualizations to help you debug CSS flexbox layouts.  To preview the latest experimental features, [turn on this experiment](#turn-on-experimental-features) and reload DevTools.  
 
-#### Displaying persistent overlays on a flexbox with the Inspect tool  
+#### Display persistent overlays on a flexbox with the Inspect tool  
 
 The **Inspect** tool provides a quick way to identify and visualize CSS flexbox layouts in a website by hovering on them with the mouse.  Choose the **Inspect** \(![Inspect][ImageInspectIcon]\) icon in the top-left corner of DevTools.  Then, while debugging the website, hover on a flex container to display outlines around the flex container.  
 
