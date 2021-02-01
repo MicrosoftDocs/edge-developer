@@ -78,7 +78,7 @@ To get started publishing your extension to Microsoft Edge, you must [register f
 To submit your extension to the store, you must meet the following requirements.  
 
 *   An archive \(.zip\) file that contains your code files.  
-*   All required visual assets, which include a logo and small promotional tile.  
+*   All required visual assets, which includes a logo and small promotional tile.  
 *   Optional promotional media, such as screenshots, promotional tiles, a video URL.
 *   Information describing your extension such as the name, short description, a privacy policy link.
 
