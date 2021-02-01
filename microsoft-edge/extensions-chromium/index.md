@@ -10,7 +10,7 @@ keywords: edge, extensions development, browser extensions, addons, partner cent
 ---
 # Overview of Microsoft Edge (Chromium) Extensions
 
-An extension is a small program that you \(the developer\) may use to either add new features to Microsoft Edge \(Chromium\) or modify the existing functionality.  An extension is intended to improve a user's day-to-day browsing experience by providing niche functionality that is important to targeted audiences.  
+An extension is a small program that developers may use to either add new features to Microsoft Edge \(Chromium\) or modify the existing functionality.  An extension is intended to improve a user's day-to-day browsing experience by providing niche functionality that is important to a target audience.  
 
 You may create extensions if your idea or product depends on the availability of a specific web browser or augments the browsing experience where the functionality that you want to provide extends existing websites.  Examples of companion experiences include ad blockers and password managers.  
 
