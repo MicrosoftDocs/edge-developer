@@ -24,10 +24,7 @@ There are two scenarios when you don't need to host your extension in the Micros
 
 ## Updating  
 
-The Microsoft Edge browser periodically checks for new versions of installed Extensions and updates each without user intervention.  
-
-> [!NOTE]
-> Steps to update an Extension on Microsoft Edge Add-ons are planned be added.  
+The Microsoft Edge browser periodically checks for new versions of installed Extensions and updates each without user intervention.
 
 <!-- image links -->
 
