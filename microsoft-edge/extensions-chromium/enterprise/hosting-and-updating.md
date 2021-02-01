@@ -17,7 +17,7 @@ Most Extensions are hosted in the [Microsoft Edge Insider Addons catalog \(Micro
 
 All extensions are distributed to users as a special ZIP file with a .crx suffix.  Extensions hosted in the Microsoft Edge Add-ons store are uploaded as .zip files. The publishing process automatically converts the .zip file into a .crx file.  
 
-There are two exceptions to the Microsoft Edge Add-ons hosting rule:  
+There are two scenarios when you don't need to host your extension in the Microsoft Edge Add-ons store:  
 
 1.  Extensions that are distributed through the Enterprise policy.  
 1.  Unpacked Extension directories from a local machine while in developer mode.  
