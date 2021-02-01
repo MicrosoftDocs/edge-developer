@@ -3,7 +3,7 @@ description: Learn how to change CSS font styles and settings using the Styles p
 title: Edit CSS font styles and settings in the Styles pane in DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/27/2021
+ms.date: 02/01/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -43,7 +43,7 @@ The **Font Editor** consists of two parts:  the Font Family selector, and the CS
 
 The Font Family selector is the upper part of the visual **Font Editor**.  To choose the fonts of the CSS rule, in the CSS editor, use the Font Family selector.  You may choose main and fallback fonts for each CSS rule  
 
-:::image type="complex" source="../media/font-editor-font-family.msft.png" alt-text="The Font Editor open on top of the Styles pane with the family selector highlighted" lightbox="../media/font-editor-css-properties.msft.png":::
+:::image type="complex" source="../media/font-editor-font-family.msft.png" alt-text="The Font Editor open on top of the Styles pane with the family selector highlighted" lightbox="../media/font-editor-font-family.msft.png":::
    The **Font Editor** open on top of the **Styles** pane with the family selector highlighted  
 :::image-end:::  
 
@@ -53,8 +53,8 @@ Choose the Font Family dropdown to choose from a list of fonts.  Fonts are organ
 1.  System fonts, which are the fonts that are available on the current operating system.  
 1.  Generic font families, such as `serif` or `sans-serif`.  
 1.  Global values, such as `inherit`, `initial`, and `unset`.  
-
-:::image type="complex" source="../media/font-editor-font-family-list.msft.png" alt-text="The font editor open on top of the Styles pane with the family selector highlighted" lightbox="../media/font-editor-css-properties.msft.png":::
+    
+:::image type="complex" source="../media/font-editor-font-family-list.msft.png" alt-text="The font editor open on top of the Styles pane with the family selector highlighted" lightbox="../media/font-editor-font-family-list.msft.png":::
    The **Font Editor** open on top of the **Styles** pane with the family selector highlighted  
 :::image-end:::  
 
@@ -71,7 +71,7 @@ After you choose a font, another dropdown menu is displayed for you to choose fa
 
 You may change CSS font properties in the lower part of the visual **Font Editor**.  You may change the font size, line height, font weight, and letter spacing using any of the UI controls.  Your changes are applied immediately in the browser.  
 
-:::image type="complex" source="../media/font-editor-css-properties.msft.png" alt-text="The font editor open on top of the Styles pane with the CSS properties highlighted" lightbox="../media/font-editor-font-family.msft.png":::
+:::image type="complex" source="../media/font-editor-css-properties.msft.png" alt-text="The font editor open on top of the Styles pane with the CSS properties highlighted" lightbox="../media/font-editor-css-properties.msft.png":::
    The **Font Editor** open on top of the **Styles** pane with the CSS properties highlighted  
 :::image-end:::  
 
