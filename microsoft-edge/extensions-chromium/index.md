@@ -14,7 +14,7 @@ An extension is a small program that you \(the developer\) may use to either add
 
 You may create extensions if your idea or product depends on the availability of a specific web browser or augments the browsing experience where the functionality that you want to provide extends existing websites.  Examples of companion experiences include ad blockers and password managers.  
 
-An extension is structured similar to a regular web app.  At a minimum, it includes an app manifest JSON file that contains basic platform information, a JavaScript file to define functionality, and an HTML and CSS file to determine the look of the user interface \(as required\). To work directly with part of the browser, such as a window or tab, you must send API requests and often reference the browser by name.  
+An extension is structured similar to a regular web app.  At a minimum, it includes an app manifest JSON file that contains basic platform information, a JavaScript file to define functionality, and HTML and CSS files to define the user interface. To work directly with part of the browser, such as a window or tab, you must send API requests and often reference the browser by name.  
 
 :::image type="complex" source="./media/example-extension-screenshot.png" alt-text="A Microsoft Edge (Chromium) extension":::
   A Microsoft Edge \(Chromium\) extension  
