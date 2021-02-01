@@ -19,7 +19,7 @@ You can choose to update a submitted extension or remove a published extension l
 > [!NOTE]
 > The duration of the certification process for an extension update ranges from a few hours to few days.
 
-### Update an already published extension
+### Update an existing extension in the Microsoft Store
 
 To update your extension on the store, you may follow these steps:
 
