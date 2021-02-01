@@ -73,7 +73,7 @@ For more information on porting your Chrome extension to Microsoft Edge, see [Po
 
 ### Publishing to the Microsoft Edge add-ons website  
 
-To get started publishing your extension to Microsoft Edge, you must [register for a developer account][MicrosoftDeveloperRegistration] with an MSA email account \(@outlook.com, @live.com, and so on\) to submit your extension listing in the store.  When choosing an email address to register, consider if you must transfer or share ownership of the extension with others in your organization.  After registration is complete, you may create a new extension submission to the store.  
+To get started publishing your extension to Microsoft Edge, you must [register for a developer account][MicrosoftDeveloperRegistration] with an MSA email account \(@outlook.com, @live.com, and so on\) to submit your extension listing to the store.  When choosing an email address to register, consider if you must transfer or share ownership of the extension with others in your organization.  After registration is complete, you may create a new extension submission to the store.  
 
 To submit your extension to the store, you must meet the following requirements.  
 
