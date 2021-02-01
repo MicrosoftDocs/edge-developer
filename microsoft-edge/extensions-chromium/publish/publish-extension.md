@@ -87,7 +87,7 @@ On the **Properties page**, enter the following information to specify propertie
 Select **Save** to continue to the **Store listings** section.
 
 > [!Important]
-> Your developer/organization name submitted at the time of registration, website URL and the support contact details are displayed to the users on the Edge add-ons store.
+> Your developer/organization name, website URL, and support contact details that were submitted during registration are displayed to users on the Microsoft Edge add-ons store.
   
 
 #### Step 5: Add Store listing details for your extension  
