@@ -1,5 +1,5 @@
 ---
-description: Use virtual devices in Microsoft Edge to build mobile-first websites.
+description: Use virtual devices in Microsoft Edge to enhance your website for dual-screen and foldable devices.
 title: Emulate dual-screen and foldable devices in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -61,7 +61,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperiment
 > [!NOTE]
 > The following is a list of current known issues.  
 > 
-> *   When using a [Microsoft Remote Desktop client][RemoteDesktopClientDocs] to connect to a remote PC and emulate the [Surface Duo][SurfaceDevicesDuo] or [Samsung Galaxy Fold][SamsungMobileGalaxyFold], the pointer may shake or stutter.  If you run into the issue, [send feedback](#providing-feedback-on-experimental-features).  
+> *   When using a [Microsoft Remote Desktop client][RemoteDesktopClientDocs] to connect to a remote PC and emulate the [Surface Duo][SurfaceDevicesDuo] or [Samsung Galaxy Fold][SamsungMobileGalaxyFold], the pointer may shake or stutter.  If you run into the issue, [send feedback](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
 
 ## Additional Resources  
 
