@@ -64,7 +64,7 @@ To edit your extension, you may follow these steps:
 
 
 
-## Remove your extension from Microsoft Edge Add-ons store
+## Remove extensions from the Microsoft Edge Add-ons store
 
 The following steps describe how to remove your extension from the Microsoft Edge Add-ons store.  
 
