@@ -31,7 +31,7 @@ To update your extension on the store, you may follow these steps:
 
 ### Update your extension during the certification step
 
-You may edit and update your extension submission when the extension is in certification stage before it is published to the store.  You may check the status of your extension on the Dashboard associated with your listing on [Partner Center][MicrosoftPartnerCenter].
+You may update your extension submission when the extension is in the certification stage and before it is published to the Microsoft Store.  To check the status of your extension, go to the dashboard associated with your listing on [Partner Center][MicrosoftPartnerCenter].
 
 The following list describes three scenarios in which updates are needed to extensions.
 
