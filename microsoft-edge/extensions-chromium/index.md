@@ -1,6 +1,6 @@
 ---
 description: An overview of building and publishing Microsoft Edge (Chromium) Extensions.
-title: Microsoft Edge (Chromium) Extensions
+title: Overview of Microsoft Edge (Chromium) Extensions 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 10/27/2020
