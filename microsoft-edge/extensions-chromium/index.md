@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge, extensions development, browser extensions, addons, partner center, developer, chromium extensions
 ---
-# Microsoft Edge (Chromium) Extensions overview 
+# Overview of Microsoft Edge (Chromium) Extensions
 
 An extension is a small program that you \(the developer\) may use to either add new features to Microsoft Edge \(Chromium\) or modify the existing functionality.  An extension is intended to improve a user's day-to-day browsing experience by providing niche functionality that is important to targeted audiences.  
 
