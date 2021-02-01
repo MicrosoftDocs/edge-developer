@@ -23,7 +23,7 @@ In the **Account details** section, you see the status and type of your account.
 
 The **Contact info** section displays the details you provided when setting up your account.  We use this information to contact you about your account.  The publisher display name that is displayed to users in the Microsoft Edge Add-ons store is also located here. 
   
-Edit this section if any of your contact details has changed. Click **Update** \(or select **Contact info** in the left navigation menu\), make your changes, and then click **Save**.  
+Edit this section if your contact information has changed. Select **Update**, or select **Contact info** in the left navigation menu, make your changes, and then select **Save**.  
 
 Changing any of your contact details may require us to verify your account again, especially if you have a company account.  Your verification status returns to `Pending` while the review is in process.  The duration of the verification process ranges from a few days to a couple of weeks, and your company may receive a phone call from our verification partner.  
 
