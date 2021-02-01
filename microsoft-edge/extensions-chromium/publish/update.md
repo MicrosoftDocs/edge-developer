@@ -1,5 +1,5 @@
 ---
-description: The process of updating or removing extension on Microsoft Store.
+description: The process of updating or removing extensions from the Microsoft Store.
 title: Update An Extension Listing
 author: MSEdgeTeam
 ms.author: msedgedevrel
