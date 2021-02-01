@@ -53,7 +53,7 @@ To edit your submission, you may follow these steps:
 
 ### Update your extension after it has failed the certification
 
-You can update your extension and submit an update incorporating the certification feedback after your extension has failed the certification process.
+After your extension has failed the certification process, you need to update your extension and resubmit your extension that incorporates the feedback.
 
 To edit your extension, you may follow these steps:
 
