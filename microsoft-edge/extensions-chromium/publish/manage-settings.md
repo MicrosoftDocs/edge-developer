@@ -33,7 +33,7 @@ Review the following settings in the Account settings section.
 
 | Account Settings | Description |  
 |:--- |:--- |  
-| Verification status | When your account is undergoing the verification process \(example, when you first sign up or after you have updated your contact info\), you can view your verification status here. |  
+| Verification status | Review your verification status when your account is going through the verification process. For example, your account is verified when you first sign up for an account, or after you update your contact information. |  
 | Programs | View details about the programs in which you have enrolled and find other programs that may be of interest to you.  
 | Agreements | View the agreements that your account has accepted. |  
 
