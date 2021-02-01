@@ -11,7 +11,7 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 
 # Manage Account Settings  
 
-Manage the setting for your Microsoft Edge Developer account.  You view and update your account settings and Profile details in the Account setting section of the [Partner Center][MicrosoftPartnerCenter].  
+You can manage the account settings and profile details of your Microsoft Edge Developer account in the Account setting section of the [Partner Center][MicrosoftPartnerCenter].  
 
 ## Account settings  
 
