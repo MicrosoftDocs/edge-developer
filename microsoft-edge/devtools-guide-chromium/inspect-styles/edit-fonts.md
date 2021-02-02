@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-# Edit CSS font styles and settings in the Styles pane in DevTools
+# Edit CSS font styles and settings in the Styles pane  
 
 :::image type="icon" source="../media/experimental-tag-14px.msft.png":::
 
@@ -41,21 +41,21 @@ The **Font Editor** consists of two parts:  the Font Family selector, and the CS
 
 ## The Font Family selector  
 
-The Font Family selector is the upper part of the visual **Font Editor**.  To choose the fonts of the CSS rule, in the CSS editor, use the Font Family selector.  You may choose main and fallback fonts for each CSS rule  
+The Font Family selector is the upper part of the visual **Font Editor**.  To choose the fonts of the CSS rule, in the CSS editor, use the **Font Family** selector.  You may choose main and fallback fonts for each CSS rule.  
 
-:::image type="complex" source="../media/font-editor-font-family.msft.png" alt-text="The Font Editor open on top of the Styles pane with the family selector highlighted" lightbox="../media/font-editor-font-family.msft.png":::
-   The **Font Editor** open on top of the **Styles** pane with the family selector highlighted  
+:::image type="complex" source="../media/font-editor-font-family.msft.png" alt-text="The Font Editor open on top of the Styles pane with the Font Family selector highlighted" lightbox="../media/font-editor-font-family.msft.png":::
+   The **Font Editor** open on top of the **Styles** pane with the **Font Family** selector highlighted  
 :::image-end:::  
 
-Choose the Font Family dropdown to choose from a list of fonts.  Fonts are organized into four groups:
+Use the **Font Family** dropdown to choose from a list of fonts.  Fonts are organized into four groups.  
 
 1.  Computed fonts, which are the fonts available in the stylesheet in the **Styles** pane.  
 1.  System fonts, which are the fonts that are available on the current operating system.  
 1.  Generic font families, such as `serif` or `sans-serif`.  
 1.  Global values, such as `inherit`, `initial`, and `unset`.  
     
-:::image type="complex" source="../media/font-editor-font-family-list.msft.png" alt-text="The font editor open on top of the Styles pane with the family selector highlighted" lightbox="../media/font-editor-font-family-list.msft.png":::
-   The **Font Editor** open on top of the **Styles** pane with the family selector highlighted  
+:::image type="complex" source="../media/font-editor-font-family-list.msft.png" alt-text="The font editor open on top of the Styles pane with the Font Family selector highlighted" lightbox="../media/font-editor-font-family-list.msft.png":::
+   The **Font Editor** open on top of the **Styles** pane with the **Font Family** selector highlighted  
 :::image-end:::  
 
 After you choose a font, another dropdown menu is displayed for you to choose fallback fonts.  You may choose up to eight fallback fonts.  To remove a font, choose the **Delete Font Family** icon.  
@@ -75,7 +75,7 @@ You may change CSS font properties in the lower part of the visual **Font Editor
    The **Font Editor** open on top of the **Styles** pane with the CSS properties highlighted  
 :::image-end:::  
 
-You may also convert CSS units using the visual **Font Editor**.  For example, you may use the tool on a CSS rule where the **Font Size** slider is initially set to `16 pixels`.  Now, choose the unit dropdown and choose the value `em`.  The `1 em` displayed is equal to `16 pixels`.  
+You may also convert CSS units using the visual **Font Editor**.  For example, you may use the tool on a CSS rule where the **Font Size** slider is initially set to `16 pixels`.  Now, use the unit dropdown and choose the value `em`.  The `1 em` displayed is equal to `16 pixels`.  
 
 :::row:::
    :::column span="":::
