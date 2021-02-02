@@ -296,18 +296,6 @@ The network emulation option **Online** is now renamed to **No Throttling**.  To
 
 #### Copy object in the Console and Sources tool  
 
-You may now copy object values in the **Console** and **Sources** tools.  The ability to copy object values is useful when working with large objects, such as a long array.  To copy an object, complete one of the following actions.  
-
-*   In the **Sources** tool, hover on an object, open the contextual menu \(right-click\), and then choose **Copy object**.  
-*   In the **Console** tool, hover on an object, open the contextual menu \(right-click\), and then choose **Copy object**.  
-    
-:::image type="complex" source="../../media/2021/01/console-copy-object.msft.png" alt-text="Copy object in the Console" lightbox="../../media/2021/01/console-copy-object.msft.png":::
-   Copy object in the **Console**  
-:::image-end:::  
-
-To review the history of this feature in the Chromium open-source project, navigate to Issues [1148353][CR1148353] and [1149859][CR1149859].  
-
-<!--  
 You may now copy object values in the **Console** and **Sources** tools.  The ability to copy object values is useful when working with large objects, such as a long array.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1148353][CR1148353] and [1149859][CR1149859].  
 
 :::row:::
@@ -319,14 +307,13 @@ You may now copy object values in the **Console** and **Sources** tools.  The ab
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      In the **Sources** tool, hover on an object, open the contextual menu \(right-click\), and then choose **Copy object**.  
+      In the **Sources** tool, on a breakpoint, hover on an object, in the **Object** popup window, highlight an object, open the contextual menu \(right-click\), and then choose **Copy object**.  
       
-      :::image type="complex" source="../../media/2021/01/copy-object-sources.msft.png" alt-text="Copy object in Sources" lightbox="../../media/2021/01/copy-object-sources.msft.png":::
+      :::image type="complex" source="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png" alt-text="Copy object in Sources" lightbox="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png":::
          Copy object in **Sources**  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
--->  
 
 #### Copy file name in the Sources tool and Styles pane  
 
