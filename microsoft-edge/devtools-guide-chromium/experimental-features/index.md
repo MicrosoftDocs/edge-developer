@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/01/2021
+ms.date: 02/02/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -229,30 +229,30 @@ This experiment helps you visualize Layers alongside z-indexes and the Document 
    **Composited Layers** pane  
 :::image-end:::  
 
-### Turn on new CSS flexbox debugging features  
+### Turn on new CSS Flexbox debugging features  
 
-This experimental feature provides many new visualizations to help you debug CSS flexbox layouts.  To preview the latest experimental features, [turn on this experiment](#turn-on-experimental-features) and reload DevTools.  
+This experimental feature provides many new visualizations to help you debug CSS Flexbox layouts.  To preview the latest experimental features, [turn on this experiment](#turn-on-experimental-features) and reload DevTools.  
 
-#### Display persistent overlays on a flexbox with the Inspect tool  
+#### Display persistent overlays on Flexbox layouts with the Inspect tool  
 
-The **Inspect** tool provides a quick way to identify and visualize CSS flexbox layouts in a website by hovering on them with the mouse.  Choose the **Inspect** \(![Inspect][ImageInspectIcon]\) icon in the top-left corner of DevTools.  Then, while debugging the website, hover on a flex container to display outlines around the flex container.  
+The **Inspect** tool provides a quick way to identify and visualize CSS Flexbox layouts in a website by hovering on them with the mouse.  Choose the **Inspect** \(![Inspect][ImageInspectIcon]\) icon in the top-left corner of DevTools.  Then, while debugging the website, hover on a flex container to display outlines around the flex container.  
 
-:::image type="complex" source="../media/flexbox-hover.msft.png" alt-text="Displaying flexbox containers with the Inspect tool" lightbox="../media/flexbox-hover.msft.png":::
-   Displaying flexbox containers with the **Inspect** tool  
+:::image type="complex" source="../media/flexbox-hover.msft.png" alt-text="Display Flexbox containers with the Inspect tool" lightbox="../media/flexbox-hover.msft.png":::
+   Display Flexbox containers with the **Inspect** tool  
 :::image-end:::  
 
-#### Display persistent overlays on a flexbox  
+#### Display persistent overlays on Flexbox layouts  
 
-In Microsoft Edge version 89 or later, the experimental CSS flexbox feature also offers the option to turn on persistent overlays on a flexbox.  Persistent overlays provide the following benefits.  
+In Microsoft Edge version 89 or later, the experimental CSS Flexbox feature also offers the option to turn on persistent overlays on Flexbox layouts.  Persistent overlays provide the following benefits.  
 
 *   Persistent overlays remain visible on the webpage as you scroll, move your mouse, and use other features of the DevTools.
-*   Multiple persistent overlays may be used at the same time, to allow you to review several flexbox layouts at once.  
+*   Multiple persistent overlays may be used at the same time, to allow you to review several Flexbox layouts at once.  
 *   Persistent overlays offer color configuration options.  
     
-To toggle persistent overlays on a flexbox, use one of following actions.  
+To toggle persistent overlays on Flexbox layout, use one of following actions.  
 
-*   Choose the **Flexbox** oval icon next to any flexbox container displayed in the DOM tree of the **Elements** tool.  
-*   Open the new **Layout** panel located in the **Elements** tool, and choose the checkbox next to each flexbox container you want to highlight.  
+*   Choose the **Flexbox** oval icon next to any Flexbox container displayed in the DOM tree of the **Elements** tool.  
+*   Open the new **Layout** panel located in the **Elements** tool, and choose the checkbox next to each Flexbox container you want to highlight.  
     
 :::image type="complex" source="../media/flexbox-overlay.msft.png" alt-text="Flex icons and Layout panel in DevTools" lightbox="../media/flexbox-overlay.msft.png":::
    Flex icons and **Layout** panel in DevTools  
@@ -260,7 +260,7 @@ To toggle persistent overlays on a flexbox, use one of following actions.
     
 #### Configure persistent overlays  
 
-To configure options for persistent overlays for CSS grid or flexbox, use the **Layout** pane.  The **Layout** pane is located in the **Elements** tool next to the **Styles** and **Computed** panes.  
+To configure options for persistent overlays for CSS grids or Flexbox layouts, use the **Layout** pane.  The **Layout** pane is located in the **Elements** tool next to the **Styles** and **Computed** panes.  
 
 :::image type="complex" source="../media/flexbox-layout.msft.png" alt-text="Layout panel" lightbox="../media/flexbox-layout.msft.png":::
    Layout panel  
