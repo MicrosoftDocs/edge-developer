@@ -30,9 +30,9 @@ Release Date: January 29, 2021
 ##### Features  
 
 *   Added [TrySuspend and Resume][ReferenceWin32Icorewebview210781PreReleaseTrySuspendResume] method to suspend and resume WebViews.  
-*   Added [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210781PreReleaseSetVirtualHostNameToFolderMapping] method that maps a virtual host name to a directory path.  
-*   Added the [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210781PreReleaseDefaultBackgroundColor] property to set the color and alpha-channel of the background.  \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue414]\)  
-*   Added the [UserAgent][ReferenceWin32Icorewebview2experimentalsettings10781PreReleaseGetUserAgent] property to get or set the User Agent. \([\#122][GithubMicrosoftedgeWebviewfeedbackIssue122]\)
+*   Added [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210781PreReleaseSetVirtualHostNameToFolderMapping] method that maps a virtual host name to a directory path.  \([\#37][GithubMicrosoftedgeWebviewfeedbackIssue37], [\#161][GithubMicrosoftedgeWebviewfeedbackIssue161], and [\#212][GithubMicrosoftedgeWebviewfeedbackIssue212]\).  
+*   Added the [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210781PreReleaseDefaultBackgroundColor] property to set the color and alpha-channel of the background.  \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue414]\).  
+*   Added the [UserAgent][ReferenceWin32Icorewebview2experimentalsettings10781PreReleaseGetUserAgent] property to get or set the User Agent.  \([\#122][GithubMicrosoftedgeWebviewfeedbackIssue122]\).
 *   Replaced the `CreateCookieWithCookie` method with the `CopyCookie` method.  
 *   Added visual hosting support using the [ICoreWebView2CompositionController][ReferenceWin32Icorewebview2controllerViewWebview210781CompositionController] interface, which is created using the new `CreateCoreWebView2CompositionController` method from `ICoreWebView2Environment3`.  
 
@@ -52,15 +52,15 @@ Release Date: January 29, 2021
 *   The following experimental APIs are now promoted to Stable.  
     *   Visual Hosting APIs.  
     *   [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210781PreReleaseSetVirtualHostNameToFolderMapping]  
-    *   [TrySuspend and Resume][ReferenceWin32Icorewebview210781PreReleaseTrySuspendResume] 
+    *   [TrySuspend and Resume][ReferenceWin32Icorewebview210781PreReleaseTrySuspendResume]  
     *   [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210781PreReleaseDefaultBackgroundColor]  
     
 #### .NET  
 
 ##### Bug fixes  
 
-*   Fixed bug that crashed WebView apps that use the WPF SDK.  The crash occurred when windows were closed using the F4 key.  \([\#399][GithubMicrosoftedgeWebviewfeedbackIssue399]\)
-*   The WebView2 initialization screen is now transparent, instead of gray.  \([\#196][GithubMicrosoftedgeWebviewfeedbackIssue196]\)
+*   Fixed bug that crashed WebView apps that use the WPF SDK.  The crash occurred when windows were closed using the F4 key.  \([\#399][GithubMicrosoftedgeWebviewfeedbackIssue399]\).  
+*   The WebView2 initialization screen is now transparent, instead of gray.  \([\#196][GithubMicrosoftedgeWebviewfeedbackIssue196]\).  
     
 ## 1.0.705.50  
 
@@ -145,7 +145,7 @@ Release Date: November 20, 2020
 
 ###### Bug fixes  
 
-*   `CoreWebView2NewWindowRequestedEventArgs.Handled` prevents new window from being opened \([\#549][GithubMicrosoftedgeWebviewfeedbackIssue549]\) and \([\#560][GithubMicrosoftedgeWebviewfeedbackIssue560]\).  
+*   `CoreWebView2NewWindowRequestedEventArgs.Handled` prevents new window from being opened.  \([\#549][GithubMicrosoftedgeWebviewfeedbackIssue549] and [\#560][GithubMicrosoftedgeWebviewfeedbackIssue560]\).  
     
 ## 1.0.674-prerelease  
 
@@ -655,9 +655,13 @@ Initial developer preview release.
 [DOMContentLoadedAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease#add_domcontentloaded&preserve-view=true "add_DOMContentLoaded - interface ICoreWebView2_2 | Microsoft Docs"
 [WebViewEnvironmentproperty]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease#get_environment&preserve-view=true "ICoreWebView2CookieManager | Microsoft Docs"
 
+[GithubMicrosoftedgeWebviewfeedbackIssue37]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/37 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 37" 
 [GithubMicrosoftedgeWebviewfeedbackIssue58]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/58 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 58" 
 [GithubMicrosoftedgeWebviewfeedbackIssue122]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/122 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 122" 
+[GithubMicrosoftedgeWebviewfeedbackIssue161]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/161 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 161" 
 [GithubMicrosoftedgeWebviewfeedbackIssue196]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/196 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 196" 
+[GithubMicrosoftedgeWebviewfeedbackIssue205]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/205 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 205" 
+[GithubMicrosoftedgeWebviewfeedbackIssue212]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/212 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 212" 
 [GithubMicrosoftedgeWebviewfeedbackIssue399]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/399 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 399" 
 [GithubMicrosoftedgeWebviewfeedbackIssue400]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/400 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 400"  
 [GithubMicrosoftedgeWebviewfeedbackIssue409]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/409 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 409" 
