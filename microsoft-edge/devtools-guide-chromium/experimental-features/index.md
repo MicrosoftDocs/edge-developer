@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020 
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -48,6 +48,7 @@ The following sections describe the new experimental features that are available
 | [Source Order Viewer](#source-order-viewer) | 86 or later |  
 | [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor) | 87 or later |  
 | [Turn on Composited Layers in 3D View](#turn-on-composited-layers-in-3d-view) | 87 or later |  
+| [Enable new Font Editor tool within the Styles pane](#) | 89 or later |  
 
 ### Emulation: Support dual screen mode  
 
@@ -186,7 +187,7 @@ The [webhint][WebhintMain] experiment displays the webhint feedback in the [Issu
 
 **Network Console** is the working title of an experiment to make synthetic network requests over HTTP.  You may use the **Network Console** experiment to send web API requests.  
 
-After enabling the experiment, ensure you restart the DevTools.  To use the **Network Console**, complete the following steps.  
+After you turn on the experiment, ensure you restart the DevTools.  To use the **Network Console**, complete the following steps.  
 
 1.  Open the **Network** pane.  
 1.  Find the network request that you want to change and resend.  
@@ -204,9 +205,9 @@ After enabling the experiment, ensure you restart the DevTools.  To use the **Ne
 
 **Source Order Viewer** is an experiment that displays the order of elements in the page source.  The on-screen display order may differ from the order of the source, which confuses screen reader and keyboard users.  Use the **Source Order Viewer** experiment to find the differences between on-screen display order and the order of the source.  
 
-After enabling the experiment, ensure you restart the DevTools.  To use **Source Order Viewer**, complete the following steps.  
+After you turn on the experiment, ensure you restart the DevTools.  To use **Source Order Viewer**, complete the following steps.  
 
-1.  Open the **Elements** pane.  
+1.  Open the **Elements** tool.  
 1.  Open the **Accessibility** pane in the drawer \(bottom\) panel.  
 1.  Under the **Source Order Viewer** section, choose the **Show Source Order** checkbox.  
 1.  Highlight any HTML element to display an overlay that the order in the page source.  
@@ -257,7 +258,9 @@ When you are editing the keyboard shortcuts for an action, to discard your chang
 
 ### Turn on Composited Layers in 3D View
 
-You may now visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.  After enabling the experiment, ensure you restart the DevTools.  To use **Composited Layers**, complete the following steps.  
+You may now visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.  
+
+After you turn on the experiment, ensure you restart the DevTools.  To use **Composited Layers**, complete the following steps.  
 
 1.  On the drawer, choose the **3D View** tool.  
 1.  Open the **Composited Layers** pane.  
@@ -268,6 +271,29 @@ You may now visualize Layers alongside z-indexes and the Document Object Model \
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 87 and later.  -->  
+
+### Enable new Font Editor tool within the Styles pane  
+
+You may now use the new visual [Font Editor][DevtoolsInspectStylesEditFonts] to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you complete the following actions.  
+
+*   Switch between units for different font properties  
+*   Switch between keywords for different font properties  
+*   Convert units  
+*   Generate accurate CSS code  
+    
+After you turn on the experiment, ensure you restart the DevTools.  To use the new visual **Font Editor**, complete the following steps.  
+
+1.  Open the **Elements** tool.  
+1.  Open the **Styles** pane.  
+1.  Choose the **Font Editor** icon.  
+    
+For more information about the new visual **Font Editor**, navigate to [Edit CSS font styles and settings in the Styles pane in DevTools][DevtoolsInspectStylesEditFonts].  
+
+:::image type="complex" source="../media/font-editor-open.msft.png" alt-text="The visual Font Editor pane is highlighted" lightbox="../media/font-editor-open.msft.png":::
+   The visual **Font Editor** pane is highlighted  
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 89 and later.  -->  
 
 ## Previous experimental features  
 
@@ -308,6 +334,7 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 [Devtools3dViewIndex]: ../3d-view/index.md "3D View | Microsoft Docs"  
 [DevToolsCustomizeSettings]: ../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools | Microsoft Edge"  
+[DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts "Edit CSS font styles and settings in the Styles pane in DevTools | Microsoft Docs"  
 [DevtoolsIssues]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
 [DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
 [DevtoolsCustomKeyboardShortcuts]: ../customize/shortcuts.md "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  

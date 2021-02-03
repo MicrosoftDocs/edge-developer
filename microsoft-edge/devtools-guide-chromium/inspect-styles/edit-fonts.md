@@ -3,7 +3,7 @@ description: Learn how to change CSS font styles and settings using the Styles p
 title: Edit CSS font styles and settings in the Styles pane in DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/01/2021
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
