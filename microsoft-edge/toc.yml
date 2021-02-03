@@ -117,6 +117,8 @@
           items: 
             - name: Emulation overview
               href: devtools-guide-chromium/device-mode/index.md
+            - name: Emulate dual-screen and foldable devices
+              href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
             - name: Emulate and test other browsers
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
             - name: Guides
@@ -325,6 +327,8 @@
           href: webdriver-chromium/index.md
         - name: Capabilities and EdgeOptions
           href: webdriver-chromium/capabilities-edge-options.md
+        - name: Verifying downloads of Selenium Tools for Microsoft Edge
+          href: webdriver-chromium/verify-selenium-tools.md
     - name: Web platform
       items: 
         - name: Site compatibility-impacting changes coming to Microsoft Edge

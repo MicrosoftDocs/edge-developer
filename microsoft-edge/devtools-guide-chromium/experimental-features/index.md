@@ -192,13 +192,11 @@ To discard your changes while you edit the keyboard shortcuts for an action, cho
 > [!NOTE]
 > If a keyboard shortcut is currently assigned to another action, you may not save it for a new action.  You must first delete the keyboard shortcut for the previous action and then add it to the new action.  
 
-<!--Available in Microsoft Edge version 87 and later.  -->
+<!--Available in Microsoft Edge version 87 and later.  -->  
 
 ### Enable Composited Layers in 3D View  
 
-You may now visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.  
-
-After you turn on the experiment, ensure you restart the DevTools.  To use **Composited Layers**, complete the following steps.  
+This experiment helps you visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  You may not recognize how your code affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.  After enabling the experiment, ensure you restart the DevTools.  To use **Composited Layers**, complete the following steps.  
 
 1.  On the drawer, choose the **3D View** tool.  
 1.  Open the **Composited Layers** pane.  
@@ -208,7 +206,7 @@ After you turn on the experiment, ensure you restart the DevTools.  To use **Com
    **Composited Layers** pane  
 :::image-end:::  
 
-### Enable new CSS Flexbox debugging features  
+<!--Available in Microsoft Edge version 87 and later.  -->  
 
 ### Enable new Font Editor tool within the Styles pane  
 
@@ -232,6 +230,10 @@ For more information about the new visual **Font Editor**, navigate to [Edit CSS
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 89 and later.  -->  
+
+### Enable new CSS Flexbox debugging features  
+
+This experimental feature provides many new visualizations to help you debug CSS Flexbox layouts.  To preview the latest experimental features, [turn on this experiment](#turn-on-experimental-features) and reload DevTools.  
 
 #### Display persistent overlays on Flexbox layouts with the Inspect tool  
 
