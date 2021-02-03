@@ -117,6 +117,8 @@
           items: 
             - name: Emulation overview
               href: devtools-guide-chromium/device-mode/index.md
+            - name: Emulate dual-screen and foldable devices
+              href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
             - name: Emulate and test other browsers
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
             - name: Guides
