@@ -3,7 +3,7 @@ description: The What's New tool is now Welcome, Visual Font Editor in the Style
 title: What's new in DevTools (Microsoft Edge 89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/02/2021
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -48,7 +48,7 @@ To turn on this experiment, navigate to [Settings][DevtoolsCustomizeIndexSetting
 
 ## CSS Flexbox debugging tools  
 
-Flexbox features are in active development.  To turn on the experiment for the following two features, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments** and choose the checkbox next to **Enable new CSS Flexbox debugging features**.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1136394][CR1136394] and [1139949][CR1139949].  
+Flexbox debugging features are in active development.  To turn on the experiment for the following two features, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments** and choose the checkbox next to **Enable new CSS Flexbox debugging features**.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1136394][CR1136394] and [1139949][CR1139949].  
 
 ### New Flexbox (flex) icon help identify and display flex containers  
 
@@ -57,19 +57,23 @@ Flexbox features are in active development.  To turn on the experiment for the f
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-In the **Elements** tool, the new Flexbox (flex) icon helps you identify Flexbox containers in your code.  Choose the Flexbox (flex) icon to turn on or off the on-page overlay that outlines a Flexbox container.  You may customize the color of the overlay in the **Layout** pane, which is located next to **Styles** and **Computed**.  Flexbox debugging features are in active development.  
+In the **Elements** tool, the new Flexbox (flex) icon helps you identify Flexbox containers in your code.  Choose the Flexbox \(flex\) icon to turn on or off the [overlay effect][W3schoolsHowtoHowtoCssOverlay] that outlines a Flexbox container.  You may customize the color of the overlay in the **Layout** pane, which is located next to **Styles** and **Computed**.  
 
 :::row:::
    :::column span="":::
-      To turn on and off the on-page overlay that outlines the Flexbox container, choose the Flexbox \(`flex`\) icon.  
-      
+      To turn on and off the overlay effect that outlines the Flexbox container, choose the Flexbox \(`flex`\) icon.  
+   :::column-end:::
+   :::column span="":::
+      You may customize the color of the overlay in the **Layout** pane next to **Styles** and **Computed**.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
       :::image type="complex" source="../../media/2021/01/elements-flex-container.msft.png" alt-text="The Flexbox (flex) icon and webpage highlighted" lightbox="../../media/2021/01/elements-flex-container.msft.png":::
          The **Flexbox** \(`flex`\) icon and webpage highlighted
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      You may customize the color of the overlay in the **Layout** pane next to **Styles** and **Computed**.  
-      
       :::image type="complex" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="The Flexbox overlays highlighted in the Layout pane" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
          The **Flexbox overlays** highlighted in the **Layout** pane  
       :::image-end:::  
@@ -88,19 +92,23 @@ When you edit CSS for your Flexbox layout, CSS autocompletes in the **Styles** p
 :::row:::
    :::column span="":::
       The autocomplete menu now displays icons that indicate the effect of alignment properties such as `align-content` and `align-items`.  
-      
+   :::column-end:::
+   :::column span="":::
+      Additionally, DevTools now displays a guiding line to help you better review the `align-items` CSS property.  The `gap` CSS property is supported as well.  In the following figure, the `gap` CSS property is set to `gap: 12px;` and the hatching pattern for each gap is displayed.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
       :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Autocomplete menu highlighted for CSS properties that start with align-" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
          Autocomplete menu highlighted for CSS properties that start with `align-`  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      Additionally, DevTools now displays a guiding line to help you better review the `align-items` CSS property.  The `gap` CSS property is supported as well.  The `gap` CSS property is set to `gap: 12px;` and the hatching pattern for each gap is displayed.  
-      
       :::image type="complex" source="../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png" alt-text="Flexbox gap in CSS properties and webpage highlighted" lightbox="../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png":::
          Flexbox `gap` in CSS properties and webpage highlighted  
       :::image-end:::  
    :::column-end:::
-:::row-end:::
+:::row-end:::  
 
 ## Add tools quickly with new More Tools button  
 
@@ -108,8 +116,6 @@ When you edit CSS for your Flexbox layout, CSS autocompletes in the **Styles** p
 <!--  Subtitle: A convenient way to open new tools in Microsoft Edge DevTools -->  
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
-
-<!--todo:  title from Rachel  -->  
 
 You now have a new way to open more tools in the Microsoft Edge DevTools.  After you turn on this experiment, the **More Tools** icon displays as a plus sign (`+`) to the right of the main panel.  To display a list of other tools to add to the main panel, choose the **More Tools** \(`+`\) icon.  To turn on this experiment, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments**, and then choose the checkbox next to **Enable + button tab menus to open more tools**.  
 
@@ -122,7 +128,9 @@ You now have a new way to open more tools in the Microsoft Edge DevTools.  After
 <!--  Title: Assistive technologies now announce position and count of CSS suggestions  -->  
 <!--  Subtitle: CSS suggestions are now easier to navigate using screen readers -->  
 
-A user of assistive technologies may now navigate CSS suggestions in the **Styles** pane.  In Microsoft Edge version 88 and earlier, your assistive technology announced `Suggestion` as a user navigated through the list of suggestions when editing CSS in the **Styles** pane.  In Microsoft Edge version 89, a user of assistive technology now hears the position and count of the current suggestion.  Each suggestion is announced as the user navigates through the list of suggestions, such as Suggestion 3 of 5.  To learn more about writing CSS in the DevTools, navigate to [Change CSS][DevtoolsCssReferenceChangeCss].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1157329][CR1157329].  
+When you edit CSS, you get a dropdown of features.  This feature was not available to users of assistive technologies, since it is announced in Microsoft Edge version 89.  A user of assistive technologies may now navigate CSS suggestions in the **Styles** pane.  In Microsoft Edge version 88 and earlier, assistive technology announced `Suggestion` as a user navigated through the list of suggestions when editing CSS in the **Styles** pane.  In Microsoft Edge version 89, a user of assistive technology now hears the position and count of the current suggestion.  Each suggestion is announced as the user navigates through the list of suggestions, such as Suggestion 3 of 5.  To learn more about writing CSS in the DevTools, navigate to [Change CSS][DevtoolsCssReferenceChangeCss].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1157329][CR1157329].  
+
+<!--To view a video that displays and reads aloud several suggestions with this experiment turned on, navigate to [Voiceover announcing devtools options](https://youtu.be/9TcUpleEwwA) on YouTube.  -->  
 
 The following video link displays and reads aloud several suggestions with this experiment turned on.  
 
@@ -133,7 +141,7 @@ The following video link displays and reads aloud several suggestions with this 
 <!--  Title: Emulate new dual-screen and foldable devices  -->  
 <!--  Subtitle: Test the appearance and feel of your website or app with Surface Duo and Samsung Galaxy Fold emulators -->  
 
-This feature is now available by default in Microsoft Edge version 89.  Test the appearance of your website or app on the following devices in Microsoft Edge.  
+Test the appearance of your website or app on the following devices in Microsoft Edge.  
 
 *   [Surface Duo][MicrosoftSurfaceDevicesSurfaceDuo]  
 *   [Samsung Galaxy Fold][SamsungUsMobileGalaxyFold]  
@@ -153,7 +161,7 @@ To review the history of this feature in the Chromium open-source project, navig
 
 ## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.2  
 
-The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extension version 1.1.2 for Microsoft Visual Studio Code has the following changes since the previous release.  It is regularly updated automatically.  
+The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extension version 1.1.2 for Microsoft Visual Studio Code has the following changes since the previous release.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.2, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  
 
 *   Added a **Close instance** button to each item on the target list \([#248][GithubMicrosoftVscodeEdgeDevtoolsPull248]\)  
 *   Bumped [Microsoft Edge DevTools][DevtoolsMain] version from 84.0.522.63 to [85.0.564.40][DevtoolsWhatsNew85] \([#235][GithubMicrosoftVscodeEdgeDevtoolsPull235]\)  
@@ -178,7 +186,7 @@ In Microsoft Edge version 89, node screenshots are more accurate, capturing the 
 
 #### Support forcing the :target CSS state  
 
-You may now use DevTools to force the [:target][MdnDocsWebCssTarget] CSS pseudo-class.  The `:target` pseudo-class is triggered when a unique element \(the target element\) has an `id` that matches a fragment of the URL.  For example, the `http://www.example.com/index.html#section2` URL triggers the `:target` pseudo-class on an HTML element with `id="section2"`.  To try a demo, navigate to [CSS :target demo][GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtml] and open DevTools.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1156628][CR1156628].  
+You may now use DevTools to force the [:target][MdnDocsWebCssTarget] CSS pseudo-class.  The `:target` pseudo-class is triggered when a unique element \(the target element\) has an `id` that matches a fragment of the URL.  For example, the `http://www.example.com/index.html#section1` URL triggers the `:target` pseudo-class on an HTML element with `id="section1"`.  To try a demo with section 1 highlighted, navigate to [CSS :target demo][GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtmlSection1].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1156628][CR1156628].  
 
 :::row:::
    :::column span="":::
@@ -211,7 +219,7 @@ The **Styles** pane now displays color pickers for custom CSS properties.  To cy
 
 #### Copy CSS classes and properties  
 
-You may now copy CSS properties quicker with a few new shortcuts.  In the **Elements** tool, choose an element.  To copy the value, in the **Styles** pane, hover on a CSS class or a CSS property, open a contextual menu \(right-click\), and choose the copy option.  
+You may now copy CSS properties quicker with a few new options in the contextual menu.  In the **Elements** tool, choose an element.  To copy the value, in the **Styles** pane, hover on a CSS class or a CSS property, open a contextual menu \(right-click\), and choose the copy option.  
 
 :::row:::
    :::column span="":::
@@ -222,10 +230,6 @@ You may now copy CSS properties quicker with a few new shortcuts.  In the **Elem
       | **Copy selector** | Copy the current selector name. |  
       | **Copy rule** | Copy the rule of the current selector. |  
       | **Copy all declarations** | Copy all declarations under the current rule, including non-valid and prefixed properties. |  
-          
-      :::image type="complex" source="../../media/2021/01/copy-css-class.msft.png" alt-text="Copy options for a CSS class in the contextual menu" lightbox="../../media/2021/01/copy-css-class.msft.png":::
-         Copy options for a CSS class in the contextual menu  
-      :::image-end:::  
    :::column-end:::
    :::column span="":::
       Copy options for a CSS property.  
@@ -235,7 +239,15 @@ You may now copy CSS properties quicker with a few new shortcuts.  In the **Elem
       | **Copy declaration** | Copy the declaration of the current line. |  
       | **Copy property** | Copy the property of the current line. |  
       | **Copy value** | Copy the value of the current line. |  
-          
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2021/01/copy-css-class.msft.png" alt-text="Copy options for a CSS class in the contextual menu" lightbox="../../media/2021/01/copy-css-class.msft.png":::
+         Copy options for a CSS class in the contextual menu  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
       :::image type="complex" source="../../media/2021/01/copy-css-property-cropped.msft.png" alt-text="Copy options for a CSS property in the contextual menu" lightbox="../../media/2021/01/copy-css-property.msft.png":::
          Copy options for a CSS property in the contextual menu  
       :::image-end:::  
@@ -256,7 +268,7 @@ You may now opt to display the URL-decoded cookies value in the **Cookies** pane
 
 #### Filter and clear visible cookies  
 
-In Microsoft Edge version 88 or earlier, your only option was **Clear all cookies** button.  In Microsoft Edge version 89, you may now choose **Clear filtered cookies** to delete only the filtered cookies.  To filter cookies, navigate to **Application** > **Cookies**, and type in the **Filter** textbox.  To delete the displayed cookies, choose the **Clear filtered cookies** button.  To display all other cookies, clear the filter text.  To review the history of this feature in the Chromium open-source project, navigate to Issue [978059][CR978059].  
+In Microsoft Edge version 88 or earlier, the **Application** tool only provided a way to clear all cookies with the **Clear all cookies** button.  In Microsoft Edge version 89, you may now choose **Clear filtered cookies** to delete only the filtered cookies.  To filter cookies, navigate to **Application** > **Cookies**, and type in the **Filter** textbox.  To delete the displayed cookies, choose the **Clear filtered cookies** button.  To display all other cookies, clear the filter text.  To review the history of this feature in the Chromium open-source project, navigate to Issue [978059][CR978059].  
 
 :::image type="complex" source="../../media/2021/01/application-cookies-clear-filtered-cookies.msft.png" alt-text="Clear only visible cookies" lightbox="../../media/2021/01/application-cookies-clear-filtered-cookies.msft.png":::
    Clear only visible cookies  
@@ -270,13 +282,13 @@ To clear website data and all cookies, navigate to **Application** > **Storage**
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1012337][CR1012337].  
 
-    :::image type="complex" source="../../media/2021/01/application-storage-clear-site-data-including-third-party-cookies.msft.png" alt-text="Option to clear third-party cookies" lightbox="../../media/2021/01/application-storage-clear-site-data-including-third-party-cookies.msft.png":::
-       Option to clear third-party cookies  
-    :::image-end:::  
+:::image type="complex" source="../../media/2021/01/application-storage-clear-site-data-including-third-party-cookies.msft.png" alt-text="Option to clear third-party cookies" lightbox="../../media/2021/01/application-storage-clear-site-data-including-third-party-cookies.msft.png":::
+   Option to clear third-party cookies  
+:::image-end:::  
 
 ### Network tool updates  
 
-#### Persist record network log setting  
+#### Persist Record network log setting  
 
 In Microsoft Edge version 88 or earlier, DevTools reset the **Record network log** setting when a webpage refreshes.  In Microsoft Edge version 89, DevTools now persist the **Record network log** setting.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1122580][CR1122580].  
 
@@ -296,19 +308,23 @@ The network emulation option **Online** is now renamed to **No Throttling**.  To
 
 #### Copy object in the Console and Sources tool  
 
-You may now copy object values in the **Console** and **Sources** tools.  The ability to copy object values is useful when working with large objects, such as a long array.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1148353][CR1148353] and [1149859][CR1149859].  
+You may now copy object values in the **Console** and **Sources** tools.  The ability to copy object values is useful when working with large objects.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1148353][CR1148353] and [1149859][CR1149859].  
 
 :::row:::
    :::column span="":::
       In the **Console** tool, hover on an object, open the contextual menu \(right-click\), and then choose **Copy object**.  
-      
+   :::column-end:::
+   :::column span="":::
+      In the **Sources** tool, on a breakpoint, hover on an object, in the **Object** popup window, highlight an object, open the contextual menu \(right-click\), and then choose **Copy object**.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
       :::image type="complex" source="../../media/2021/01/console-copy-object.msft.png" alt-text="Copy object in the Console" lightbox="../../media/2021/01/console-copy-object.msft.png":::
          Copy object in the **Console**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      In the **Sources** tool, on a breakpoint, hover on an object, in the **Object** popup window, highlight an object, open the contextual menu \(right-click\), and then choose **Copy object**.  
-      
       :::image type="complex" source="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png" alt-text="Copy object in Sources" lightbox="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png":::
          Copy object in **Sources**  
       :::image-end:::  
@@ -321,15 +337,19 @@ You may now copy a file name using the contextual menu.  To review the history o
 
 :::row:::
    :::column span="":::
-      In the **Sources** tool, hover on a file name, open the contextual menu \(right-click\), and then choose **Copy a file name**.  
-      
+      In the **Sources** tool, hover on a file name, open the contextual menu \(right-click\), and then choose **Copy file name**.  
+   :::column-end:::
+   :::column span="":::
+      In the **Elements** tool > **Styles** pane, hover on a file name, open the contextual menu \(right-click\), and then choose **Copy file name**.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
       :::image type="complex" source="../../media/2021/01/sources-copy-file-name.msft.png" alt-text="Copy file name in Sources" lightbox="../../media/2021/01/sources-copy-file-name.msft.png":::
          Copy file name in **Sources**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      In the **Elements** tool > **Styles** pane, hover on a file name, open the contextual menu \(right-click\), and then choose **Copy a file name**.  
-      
       :::image type="complex" source="../../media/2021/01/elements-styles-copy-file-name.msft.png" alt-text="Copy file name in Styles pane" lightbox="../../media/2021/01/elements-styles-copy-file-name.msft.png":::
          Copy file name in **Styles** pane  
       :::image-end:::  
@@ -340,7 +360,7 @@ You may now copy a file name using the contextual menu.  To review the history o
 
 #### Service Workers information in Frame details  
 
-DevTools now lists a dedicated service worker under the parent frame that creates it.  To display the service worker details, navigate to **Application** > **Frames** > **Service Workers** and then choose a service worker.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1122507][CR1122507].  
+DevTools now lists a dedicated service worker under the parent frame.  In the following figure, service worker details are displayed.  To display the service worker details, navigate to **Application** > **Frames** > `top` > **Service Workers** and then choose a service worker.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1122507][CR1122507].  
 
 :::image type="complex" source="../../media/2021/01/application-frames-service-workers-details.msft.png" alt-text="Service Workers information in the Frames details" lightbox="../../media/2021/01/application-frames-service-workers-details.msft.png":::
    **Service Workers** information in the **Frames** details  
@@ -366,11 +386,11 @@ When you [analyze load performance in the Performance tool][DevtoolsEvaluatePerf
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-The [Advanced Perceptual Contrast Algorithm (APCA)][GithubW3cSilverGuidelinesMethodsMethodFontCharacteristicContrastHtml] replaces the [AA][W3cWaiWcag21QuickrefContrastMinimum]/[AAA][W3cWaiWcag21QuickrefContrastEnhanced] guidelines contrast ratio in the [Color Picker][DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker].  [APCA][GithubW3cSilverGuidelinesMethodsMethodFontCharacteristicContrastHtml] is a new way to compute contrast based on modern research on color perception.  Compared to [AA][W3cWaiWcag21QuickrefContrastMinimum]/[AAA][W3cWaiWcag21QuickrefContrastEnhanced] guidelines, [APCA][GithubW3cSilverGuidelinesMethodsMethodFontCharacteristicContrastHtml] is more context-dependent.  The contrast is calculated based on the following spatial properties of the text, color, and context.  
+The [Advanced Perceptual Contrast Algorithm (APCA)][GithubW3cSilverGuidelinesMethodsMethodFontCharacteristicContrastHtml] replaces the [AA][W3cWaiWcag21QuickrefContrastMinimum]/[AAA][W3cWaiWcag21QuickrefContrastEnhanced] guidelines contrast ratio in the [Color Picker][DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker].  APCA is a new way to compute contrast.  It is based on modern research on color perception.  Compared to AA/AAA guidelines, APCA is more context-dependent.  The contrast is calculated based on the following spatial properties of the text, color, and context.  
 
-*   Spatial properties of text include font weight and size.  
-*   Spatial properties of color include perceived contrast between text and background.  
-*   Spatial properties of context include ambient light, surroundings, and intended purpose.  
+*   Spatial properties of text that include font weight and size.  
+*   Spatial properties of color that include perceived contrast between text and background.  
+*   Spatial properties of context that include ambient light, surroundings, and intended purpose.  
     
 To turn on this experiment, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments**  and choose the checkbox next to **Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1121900][CR1121900].  
 
@@ -404,7 +424,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "CSS media screen-spanning feature for dual-screen detection | Microsoft Docs"  
 [DualScreenWebJavascriptGetwindowsegments]: /dual-screen/web/javascript-getwindowsegments "The getWindowSegments JavaScript API for dual-screen devices | Microsoft Docs"  
 
-[GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtml]: https://microsoftedge.github.io/DevToolsSamples/whats-new/89/target-css-demo.html "CSS :target demo for What's New in DevTools (Microsoft Edge 89) | GitHub"  
+[GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtmlSection1]: https://microsoftedge.github.io/DevToolsSamples/whats-new/89/target-css-demo.html#section-1 "Section 1 - CSS :target demo for What's New in DevTools (Microsoft Edge 89) | GitHub"  
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
 [GithubMicrosoftVscodeEdgeDevtoolsPull229]: https://github.com/microsoft/vscode-edge-devtools/pull/229 "Pull 229: Implementing dropdown in settings to change themes | GitHub"  
 [GithubMicrosoftVscodeEdgeDevtoolsPull233]: https://github.com/microsoft/vscode-edge-devtools/pull/233 "Pull 233: Including Debugger for Microsoft Edge as a dependency | GitHub"  
@@ -416,6 +436,8 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [MicrosoftSurfaceDevicesSurfaceDuo]: https://www.microsoft.com/surface/devices/surface-duo "New Surface Duo | Microsoft"  
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
+
+[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Update an extension manually - Extension Marketplace | Visual Studio Code"  
 
 [VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code | Visual Studio Marketplace"  
 [VisualstudioMarketplaceMsjsdiagDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Debugger for Microsoft Edge | Visual Studio Marketplace"  
@@ -457,6 +479,8 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [MdnDocsWebCssTarget]: https://developer.mozilla.org/docs/web/css/:target ":target | MDN"  
 
 [SamsungUsMobileGalaxyFold]: https://www.samsung.com/us/mobile/galaxy-fold "Galaxy Fold | Samsung US"  
+
+[W3schoolsHowtoHowtoCssOverlay]: https://www.w3schools.com/howto/howto_css_overlay.asp "How To Create an Overlay Effect | W3C"  
 
 [W3cWaiWcag21QuickrefContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref#contrast-enhanced "Contrast (Enhanced) - How to Meet WCAG (Quick Reference) | W3C"  
 [W3cWaiWcag21QuickrefContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref#contrast-minimum "Contrast (Minimum) - How to Meet WCAG (Quick Reference) | W3C"  
