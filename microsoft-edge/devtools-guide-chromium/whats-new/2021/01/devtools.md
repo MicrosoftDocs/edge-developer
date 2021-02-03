@@ -298,7 +298,7 @@ In Microsoft Edge version 88 or earlier, DevTools reset the **Record network log
 
 The network emulation option **Online** is now renamed to **No Throttling**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1028078][CR1028078].  
 
-:::image type="complex" source="../../media/2021/01/network-no-throttling.msft.png" alt-text="No throttling option" lightbox="../../media/2021/01/network-no-throttling.msft.png.msft.png":::
+:::image type="complex" source="../../media/2021/01/network-no-throttling.msft.png" alt-text="No throttling option" lightbox="../../media/2021/01/network-no-throttling.msft.png":::
    **No throttling** option  
 :::image-end:::  
 
@@ -392,7 +392,7 @@ The [Advanced Perceptual Contrast Algorithm (APCA)][GithubW3cSilverGuidelinesMet
     
 To turn on this experiment, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments**  and choose the checkbox next to **Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1121900][CR1121900].  
 
-:::image type="complex" source="../../media/2021/01/advanced-perceptual-contrast-algorithm.msft.png" alt-text="APCA in the Color Picker" lightbox="../../media/advanced-perceptual-contrast-algorithm.msft.png":::
+:::image type="complex" source="../../media/2021/01/advanced-perceptual-contrast-algorithm.msft.png" alt-text="APCA in the Color Picker" lightbox="../../media/2021/01/advanced-perceptual-contrast-algorithm.msft.png":::
    APCA in the Color Picker  
 :::image-end:::  
 
