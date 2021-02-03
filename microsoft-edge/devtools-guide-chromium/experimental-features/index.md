@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/02/2020 
+ms.date: 02/03/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -43,11 +43,11 @@ The following sections describe the new experimental features that are available
 | [Enable webhint](#enable-webhint) | 85 or later |  
 | [Enable Network Console](#enable-network-console) | 85 or later |  
 | [Source Order Viewer](#source-order-viewer) | 86 or later |  
-| [Turn on keyboard shortcut editor](#turn-on-keyboard-shortcut-editor) | 87 or later |  
-| [Turn on Composited Layers in 3D View](#turn-on-composited-layers-in-3d-view) | 87 or later |  
-| [Turn on new CSS Flexbox debugging features](#turn-on-new-css-flexbox-debugging-features) | 89 or later |  
-| [Turn on + button tab menus to open more tools](#turn-on-+-button-tab-menus-to-open-more-tools) | 89 or later |  
-| [Turn on Welcome tab](#turn-on-welcome-tool) | 89 or later |  
+| [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor) | 87 or later |  
+| [Enable Composited Layers in 3D View](#enable-composited-layers-in-3d-view) | 87 or later |  
+| [Enable new CSS Flexbox debugging features](#enable-new-css-flexbox-debugging-features) | 89 or later |  
+| [Enable + button tab menus to open more tools](#enable-+-button-tab-menus-to-open-more-tools) | 89 or later |  
+| [Enable Welcome tab](#enable-welcome-tool) | 89 or later |  
 
 ### Enable new CSS grid debugging features  
 
@@ -101,7 +101,7 @@ Normally, tools such as **Elements** and **Network** may only open in the main p
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
-### Turn on webhint  
+### Enable webhint  
 
 [webhint][WebhintMain] is an open-source tool that provides real-time feedback for websites and local webpages.  The type of feedback provided by [webhint][WebhintMain].  
 
@@ -120,7 +120,7 @@ The [webhint][WebhintMain] experiment displays the webhint feedback in the [Issu
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
-### Turn on Network Console  
+### Enable Network Console  
 
 **Network Console** is the working title of an experiment to make synthetic network requests over HTTP.  You may use the **Network Console** experiment to send web API requests.  
 
@@ -155,7 +155,7 @@ After enabling the experiment, ensure you restart the DevTools.  To use **Source
 
 <!--Available in Microsoft Edge version 86 and later.  -->  
 
-### Turn on keyboard shortcut editor
+### Enable keyboard shortcut editor
 
 With the **Enable keyboard shortcut editor** experiment turned on, you may customize keyboard shortcuts for any action in the DevTools.  To customize the keyboard shortcut for a specific action, complete the following steps.  
 
@@ -193,7 +193,7 @@ To discard your changes while you edit the keyboard shortcuts for an action, cho
 
 <!--Available in Microsoft Edge version 87 and later.  -->
 
-### Turn on Composited Layers in 3D View  
+### Enable Composited Layers in 3D View  
 
 This experiment helps you visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  You may not recognize how your code affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.  After enabling the experiment, ensure you restart the DevTools.  To use **Composited Layers**, complete the following steps.  
 
@@ -205,7 +205,7 @@ This experiment helps you visualize Layers alongside z-indexes and the Document 
    **Composited Layers** pane  
 :::image-end:::  
 
-### Turn on new CSS Flexbox debugging features  
+### Enable new CSS Flexbox debugging features  
 
 This experimental feature provides many new visualizations to help you debug CSS Flexbox layouts.  To preview the latest experimental features, [turn on this experiment](#turn-on-experimental-features) and reload DevTools.  
 
@@ -244,9 +244,9 @@ To configure options for persistent overlays for CSS grids or Flexbox layouts, u
 
 <!--Available in Microsoft Edge version 89 and later.  -->  
 
-### Turn on More Tools to quickly open tools
+### Enable + button tab menus to open more tools  
 
-You may now open more tools using the new **More Tools** \(`+`\) icon.  After you turn on this experiment and reload DevTools, a plus sign \(`+`\) displays to the right of the tab group at the top of the DevTools.  To display a list of other tools that you may add to the tab bar, choose the new **More Tools** \(`+`\) icon.  
+You may now open more tools using the new **More Tools** \(`+`\) icon.  After you turn on the **Enable + button tab menus to open more tools** experiment and reload DevTools, a plus sign \(`+`\) displays to the right of the tab group at the top of the DevTools.  To display a list of other tools that you may add to the tab bar, choose the new **More Tools** \(`+`\) icon.  
 
 :::image type="complex" source="../media/experiments-more-tools-button.msft.png" alt-text="More Tools in the top pane" lightbox="../media/experiments-more-tools-button.msft.png":::
    **More Tools** in the top pane
@@ -254,7 +254,7 @@ You may now open more tools using the new **More Tools** \(`+`\) icon.  After yo
 
 <!--Available in Microsoft Edge version 89 and later.  -->  
 
-### Turn on Welcome tool
+### Enable Welcome tool
 
 This experiment replaces the **What's New** tool with the new **Welcome** tool.  It displays a refreshed design for the following content.  
 
