@@ -196,7 +196,9 @@ To discard your changes while you edit the keyboard shortcuts for an action, cho
 
 ### Enable Composited Layers in 3D View  
 
-This experiment helps you visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  You may not recognize how your code affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.  After enabling the experiment, ensure you restart the DevTools.  To use **Composited Layers**, complete the following steps.  
+You may now visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.  
+
+After you turn on the experiment, ensure you restart the DevTools.  To use **Composited Layers**, complete the following steps.  
 
 1.  On the drawer, choose the **3D View** tool.  
 1.  Open the **Composited Layers** pane.  
