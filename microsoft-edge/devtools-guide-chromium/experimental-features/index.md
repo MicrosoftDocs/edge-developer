@@ -45,6 +45,7 @@ The following sections describe the new experimental features that are available
 | [Source Order Viewer](#source-order-viewer) | 86 or later |  
 | [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor) | 87 or later |  
 | [Enable Composited Layers in 3D View](#enable-composited-layers-in-3d-view) | 87 or later |  
+| [Enable new Font Editor tool within the Styles pane](#) | 89 or later |  
 | [Enable new CSS Flexbox debugging features](#enable-new-css-flexbox-debugging-features) | 89 or later |  
 | [Enable + button tab menus to open more tools](#enable--button-tab-menus-to-open-more-tools) | 89 or later |  
 | [Enable Welcome tab](#enable-welcome-tool) | 89 or later |  
@@ -55,7 +56,7 @@ This experimental feature provides a number of new visualizations to help you de
 
 #### Viewing on-hover grid overlays with the Inspect tool  
 
-The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Choose the **Inspect** \(![Inspect][ImageInspectIcon]\) icon in the top-left corner of DevTools.  Then, hover over a Grid element on the website you are debugging.  Outlines are displayed around the grid, and shading indicates the location of grid gaps if present.  
+The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Choose the **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  Then, hover over a Grid element on the website you are debugging.  Outlines are displayed around the grid, and shading indicates the location of grid gaps if present.  
 
 :::image type="complex" source="../media/grid-inspect.msft.png" alt-text="Viewing grids with the Inspect tool" lightbox="../media/grid-inspect.msft.png":::
    Viewing grids with the **Inspect** tool  
@@ -124,7 +125,7 @@ The [webhint][WebhintMain] experiment displays the webhint feedback in the [Issu
 
 **Network Console** is the working title of an experiment to make synthetic network requests over HTTP.  You may use the **Network Console** experiment to send web API requests.  
 
-After enabling the experiment, ensure you restart the DevTools.  To use the **Network Console**, complete the following steps.  
+After you turn on the experiment, ensure you restart the DevTools.  To use the **Network Console**, complete the following steps.  
 
 1.  Open the **Network** pane.  
 1.  Find the network request that you want to change and resend.  
@@ -142,9 +143,9 @@ After enabling the experiment, ensure you restart the DevTools.  To use the **Ne
 
 **Source Order Viewer** is an experiment that displays the order of elements in the webpage source.  The on-screen display order may differ from the order of the source, which confuses screen reader and keyboard users.  Use the **Source Order Viewer** experiment to find the differences between on-screen display order and the order of the source.  
 
-After enabling the experiment, ensure you restart the DevTools.  To use **Source Order Viewer**, complete the following steps.  
+After you turn on the experiment, ensure you restart the DevTools.  To use **Source Order Viewer**, complete the following steps.  
 
-1.  Open the **Elements** pane.  
+1.  Open the **Elements** tool.  
 1.  Open the **Accessibility** pane in the drawer \(bottom\) panel.  
 1.  Under the **Source Order Viewer** section, choose the **Show Source Order** checkbox.  
 1.  Highlight any HTML element to display an overlay that the order in the webpage source.  
@@ -164,7 +165,7 @@ With the **Enable keyboard shortcut editor** experiment turned on, you may custo
     *   Select `Shift`+`?`.  
 1.  Navigate to the **Shortcuts** page.  
 1.  Choose the action you want to customize.  
-1.  Choose the **Edit** \(![EditKeyboardShortcut][ImageEditKeyboardShortcutIcon]\) icon.  
+1.  Choose the **Edit** \(![EditKeyboardShortcut](../media/edit-keyboard-shortcut-icon.msft.png)\) icon.  
     
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Choose the action to customize from the Shortcuts page in Settings" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        Choose the action to customize from the **Shortcuts** page in [Settings][DevToolsCustomizeIndexSettings]  
@@ -176,7 +177,7 @@ With the **Enable keyboard shortcut editor** experiment turned on, you may custo
        Select the keys to assign to the action  
     :::image-end:::  
     
-1.  To save your new keyboard shortcut, choose the checkmark \(![CheckmarkKeyboardShortcut][ImageCheckmarkKeyboardShortcutIcon]\) icon.  
+1.  To save your new keyboard shortcut, choose the checkmark \(![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)\) icon.  
     
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Choose the checkmark icon to save your new keyboard shortcut" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
        Choose the checkmark icon to save your new keyboard shortcut  
@@ -184,14 +185,14 @@ With the **Enable keyboard shortcut editor** experiment turned on, you may custo
     
 1.  Select your new keyboard shortcut to trigger the action in the DevTools.  
     
-On the **Shortcuts** page, the **Custom Keyboard Shortcut** \(![CustomKeyboardShortcut][ImageCustomKeyboardShortcutIcon]\) icon displays keyboard shortcuts you customized.  To reset all shortcuts, choose **Restore default shortcuts**.  
+On the **Shortcuts** page, the **Custom Keyboard Shortcut** \(![CustomKeyboardShortcut](../media/custom-keyboard-shortcut-icon.msft.png)\) icon displays keyboard shortcuts you customized.  To reset all shortcuts, choose **Restore default shortcuts**.  
 
-To discard your changes while you edit the keyboard shortcuts for an action, choose the X \(![XKeyboardShortcut][ImageXKeyboardShortcutIcon]\) icon.  To remove shortcuts for a specific action, choose the **Delete shortcut** \(![DeleteKeyboardShortcut][ImageDeleteKeyboardShortcutIcon]\) icon.  To add multiple shortcuts for an action, choose **Add a shortcut**.  
+To discard your changes while you edit the keyboard shortcuts for an action, choose the X \(![XKeyboardShortcut](../media/discard-changes-keyboard-shortcut-icon.msft.png)\) icon.  To remove shortcuts for a specific action, choose the **Delete shortcut** \(![DeleteKeyboardShortcut](../media/delete-keyboard-shortcut-icon.msft.png)\) icon.  To add multiple shortcuts for an action, choose **Add a shortcut**.  
 
 > [!NOTE]
 > If a keyboard shortcut is currently assigned to another action, you may not save it for a new action.  You must first delete the keyboard shortcut for the previous action and then add it to the new action.  
 
-<!--Available in Microsoft Edge version 87 and later.  -->
+<!--Available in Microsoft Edge version 87 and later.  -->  
 
 ### Enable Composited Layers in 3D View  
 
@@ -205,13 +206,38 @@ This experiment helps you visualize Layers alongside z-indexes and the Document 
    **Composited Layers** pane  
 :::image-end:::  
 
+<!--Available in Microsoft Edge version 87 and later.  -->  
+
+### Enable new Font Editor tool within the Styles pane  
+
+You may now use the new visual [Font Editor][DevtoolsInspectStylesEditFonts] to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you complete the following actions.  
+
+*   Switch between units for different font properties  
+*   Switch between keywords for different font properties  
+*   Convert units  
+*   Generate accurate CSS code  
+    
+After you turn on the experiment, ensure you restart the DevTools.  To use the new visual **Font Editor**, complete the following steps.  
+
+1.  Open the **Elements** tool.  
+1.  Open the **Styles** pane.  
+1.  Choose the **Font Editor** icon.  
+    
+For more information about the new visual **Font Editor**, navigate to [Edit CSS font styles and settings in the Styles pane in DevTools][DevtoolsInspectStylesEditFonts].  
+
+:::image type="complex" source="../media/font-editor-open.msft.png" alt-text="The visual Font Editor pane is highlighted" lightbox="../media/font-editor-open.msft.png":::
+   The visual **Font Editor** pane is highlighted  
+:::image-end:::  
+
+<!--Available in Microsoft Edge version 89 and later.  -->  
+
 ### Enable new CSS Flexbox debugging features  
 
 This experimental feature provides many new visualizations to help you debug CSS Flexbox layouts.  To preview the latest experimental features, [turn on this experiment](#turn-on-experimental-features) and reload DevTools.  
 
 #### Display persistent overlays on Flexbox layouts with the Inspect tool  
 
-The **Inspect** tool provides a quick way to identify and visualize CSS Flexbox layouts in a website by hovering on them with the mouse.  Choose the **Inspect** \(![Inspect][ImageInspectIcon]\) icon in the top-left corner of DevTools.  Then, while debugging the website, hover on a flex container to display outlines around the flex container.  
+The **Inspect** tool provides a quick way to identify and visualize CSS Flexbox layouts in a website by hovering on them with the mouse.  Choose the **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  Then, while debugging the website, hover on a flex container to display outlines around the flex container.  
 
 :::image type="complex" source="../media/flexbox-hover.msft.png" alt-text="Display Flexbox containers with the Inspect tool" lightbox="../media/flexbox-hover.msft.png":::
    Display Flexbox containers with the **Inspect** tool  
@@ -275,11 +301,11 @@ If you prefer the original **What's New** tool, navigate to [Settings][DevtoolsC
 
 ## Previous experimental features  
 
-*   [3D View][Devtools3dViewIndex] is now available by default in Microsoft Edge version 83 or later.  
-*   [Turn on support to move tabs between panels][DevtoolsMoveTabs] is now available and in Microsoft Edge version 85 or later.  
-*   [Customize Keyboard Shortcuts][DevtoolsCustomKeyboardShortcuts] is now turned on by default in Microsoft Edge version 86 or later.  
+*   [3D View][Devtools3dViewIndex] is now available and turned on by default in Microsoft Edge version 83 or later.  
+*   [Turn on support to move tabs between panels][DevtoolsMoveTabs] is now available and turned on by default in Microsoft Edge version 85 or later.  
+*   [Customize Keyboard Shortcuts][DevtoolsCustomKeyboardShortcuts] is now available and turned on by default in Microsoft Edge version 86 or later.  
 *   [Emulation: Support dual screen mode][DevtoolsDeviceModeDualScreenAndFoldables] is now available and turned on by default in Microsoft Edge version 89 or later.  
-*   [Turn on new CSS grid debugging features][DevtoolsCssGrid] is now turned on by default in Microsoft Edge version 89 or later.  
+*   [Turn on new CSS grid debugging features][DevtoolsCssGrid] is now available and turned on by default in Microsoft Edge version 89 or later.  
     
 ## Providing feedback on experimental features  
 
@@ -298,18 +324,6 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 -->  
 
-<!-- image links -->  
-
-[ImageCheckmarkKeyboardShortcutIcon]: ../media/checkmark-keyboard-shortcut-icon.msft.png  
-[ImageCustomKeyboardShortcutIcon]: ../media/custom-keyboard-shortcut-icon.msft.png  
-[ImageDeleteKeyboardShortcutIcon]: ../media/delete-keyboard-shortcut-icon.msft.png  
-[ImageEditKeyboardShortcutIcon]: ../media/edit-keyboard-shortcut-icon.msft.png  
-[ImageExperimentalApisIcon]: ../media/experimental-apis-dark-icon.msft.png  
-[ImageInspectIcon]: ../media/inspect-icon.msft.png  
-[ImageRotateIcon]: ../media/rotate-dark-icon.msft.png  
-[ImageSpanIcon]: ../media/span-dark-icon.msft.png  
-[ImageXKeyboardShortcutIcon]: ../media/discard-changes-keyboard-shortcut-icon.msft.png  
-
 <!-- links -->  
 
 [Devtools3dViewIndex]: ../3d-view/index.md "3D View | Microsoft Docs"  
@@ -317,6 +331,7 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 [DevtoolsMoveTabs]: ../customize/index.md "Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools | Microsoft Edge"  
+[DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Edit CSS font styles and settings in the Styles pane in DevTools | Microsoft Docs"  
 [DevtoolsIssues]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
 [DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
 [DevtoolsCustomKeyboardShortcuts]: ../customize/shortcuts.md "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
