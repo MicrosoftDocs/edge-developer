@@ -46,7 +46,7 @@ The following sections describe the new experimental features that are available
 | [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor) | 87 or later |  
 | [Enable Composited Layers in 3D View](#enable-composited-layers-in-3d-view) | 87 or later |  
 | [Enable new CSS Flexbox debugging features](#enable-new-css-flexbox-debugging-features) | 89 or later |  
-| [Enable + button tab menus to open more tools](#enable-+-button-tab-menus-to-open-more-tools) | 89 or later |  
+| [Enable + button tab menus to open more tools](#enable--button-tab-menus-to-open-more-tools) | 89 or later |  
 | [Enable Welcome tab](#enable-welcome-tool) | 89 or later |  
 
 ### Enable new CSS grid debugging features  
