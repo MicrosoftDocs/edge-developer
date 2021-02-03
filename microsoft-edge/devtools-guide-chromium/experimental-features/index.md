@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/02/2021
+ms.date: 02/02/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -40,9 +40,8 @@ The following sections describe the new experimental features that are available
 
 | Experimental feature | Microsoft Edge version |  
 |:--- |:--- |  
-| [Emulation: Support dual screen mode](#emulation-support-dual-screen-mode) | 84 or later |  
-| [Turn on webhint](#turn-on-webhint) | 85 or later |  
-| [Turn on Network Console](#turn-on-network-console) | 85 or later |  
+| [Enable webhint](#enable-webhint) | 85 or later |  
+| [Enable Network Console](#enable-network-console) | 85 or later |  
 | [Source Order Viewer](#source-order-viewer) | 86 or later |  
 | [Turn on keyboard shortcut editor](#turn-on-keyboard-shortcut-editor) | 87 or later |  
 | [Turn on Composited Layers in 3D View](#turn-on-composited-layers-in-3d-view) | 87 or later |  
@@ -50,72 +49,49 @@ The following sections describe the new experimental features that are available
 | [Turn on + button tab menus to open more tools](#turn-on-+-button-tab-menus-to-open-more-tools) | 89 or later |  
 | [Turn on Welcome tab](#turn-on-welcome-tool) | 89 or later |  
 
-### Emulation: Support dual screen mode  
+### Enable new CSS grid debugging features  
 
-Provides more features for emulating two new dual-screen and foldable devices in Microsoft Edge.  
+This experimental feature provides a number of new visualizations to help you debug CSS grid layouts.  To preview the latest experimental features, [enable this experiment](#turn-on-experimental-features) and reload DevTools.  This experiment is on by default in Microsoft Edge version 87 or later.  
 
-*   [Surface Duo][SurfaceDevicesDuo]  
-*   [Samsung Galaxy Fold][SamsungMobileGalaxyFold]  
-    
-Emulate the devices and toggle between the following postures.  
+#### Viewing on-hover grid overlays with the Inspect tool  
 
-*   Single-screen or folded posture  
-*   Dual-screen or unfolded posture  
-    
-To enhance your website \(or app\) for dual-screen and foldable devices, complete the following actions.  
+The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Choose the **Inspect** \(![Inspect][ImageInspectIcon]\) icon in the top-left corner of DevTools.  Then, hover over a Grid element on the website you are debugging.  Outlines are displayed around the grid, and shading indicates the location of grid gaps if present.  
 
-1.  [Turn on experimental Web Platform APIs](#turn-on-experimental-apis).  
-1.  Use the [CSS media screen-spanning feature][DualScreenDocsCssMedia] and [JavaScript getWindowSegments API][DualScreenDocsJSAPI].  
-    
-:::image type="complex" source="../media/experiments-surface-duo-emulation.msft.png" alt-text="Emulate Surface Duo in Microsoft Edge" lightbox="../media/experiments-surface-duo-emulation.msft.png":::  
-   Emulate Surface Duo in Microsoft Edge  
+:::image type="complex" source="../media/grid-inspect.msft.png" alt-text="Viewing grids with the Inspect tool" lightbox="../media/grid-inspect.msft.png":::
+   Viewing grids with the **Inspect** tool  
 :::image-end:::  
 
-#### Turn on experimental APIs  
+#### Viewing persistent grid overlays  
 
-To use the [CSS media screen-spanning feature][DualScreenDocsCssMedia] and [JavaScript getWindowSegments API][DualScreenDocsJSAPI], turn on the `Experimental Web Platform features` flag in Microsoft Edge.  Complete the following steps.  
+In Microsoft Edge version 86 or later, the experimental CSS grid feature also offers the option to enable persistent Grid overlays.  The persistent overlays provide several benefits.  
 
-1.  Navigate to `edge://flags`.  
-1.  In the **Search flags** textbox, enter `Experimental Web Platform features`, choose the **Experimental Web Platform features** flag, and change **Disabled** to **Enabled**.  
-1.  Restart Microsoft Edge.  
+*   The persistent overlays remain visible on the page as you scroll, move your mouse, and use other features of the DevTools.  
+*   Multiple persistent overlays can be enabled at the same time, allowing you to review several grid layouts at once.  
+*   Persistent overlays offer many configuration options, such as hiding or showing names in the grid area, grid gaps, track sizes, and so on.  
     
-:::image type="complex" source="../media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Turn on the Experimental Web Platform features flag" lightbox="../media/experiments-dual-screen-emulation.msft.png":::
-   Turn on the Experimental Web Platform features flag  
+The two ways to toggle a persistent grid overlay.  
+
+*   Choose the **Grid** oval icon next to any Grid element shown in the DOM tree of the **Elements** tool.  
+    
+    :::image type="complex" source="../media/grid-adorner.msft.png" alt-text="Grid oval icon in Elements tool" lightbox="../media/grid-adorner.msft.png":::
+       Grid oval icon in **Elements** tool  
+    :::image-end:::  
+    
+*   Open the new **Layout** panel located in the Elements tool, and choose the checkbox next to each Grid element you want to highlight.  
+    
+    :::image type="complex" source="../media/grid-layout-zoom.msft.png" alt-text="Layout panel in DevTools" lightbox="../media/grid-layout-zoom.msft.png":::
+       **Layout** panel in DevTools  
+    :::image-end:::  
+    
+#### Configuring persistent overlays  
+
+In Microsoft Edge version 86 or later, the new **Layout** panel is located in the **Elements** tool alongside the **Styles** and **Computed** tabs.  The **Layout** panel surfaces configuration options for persistent overlays.  
+
+:::image type="complex" source="../media/experiments-grid.msft.png" alt-text="CSS grid debugging feature" lightbox="../media/experiments-grid.msft.png":::
+   CSS grid debugging feature  
 :::image-end:::  
 
-> [!NOTE]
-> If you are using [CSS media queries][DualScreenDocsCssMedia] or the [JavaScript Windows Segment Enumeration API][DualScreenDocsJSAPI] to enhance your website or app for the [Surface Duo][SurfaceDevicesDuo], you must also turn on the **Experimental Web Platform features** flag in the [Android Microsoft Edge app][GooglePlayMicrosoftEdge] on your [Surface Duo][SurfaceDevicesDuo] device.  
-> 
-> If the **Experimental Web Platform features** flag is turned on in [desktop Microsoft Edge][MicrosoftEdge] and turned off in the [Android Microsoft Edge app][GooglePlayMicrosoftEdge], the behavior of your website or app in the Surface Duo emulator in desktop Microsoft Edge does not match with the [Android Microsoft Edge app][GooglePlayMicrosoftEdge] on [Surface Duo][SurfaceDevicesDuo].  Ensure that the flags are matching across Android and desktop Microsoft Edge to successfully use the Surface Duo emulator in [desktop Microsoft Edge][MicrosoftEdge].  
-
-#### Testing on foldable and dual-screen devices  
-
-When you emulate the [Surface Duo][SurfaceDevicesDuo] in a dual-screen posture in Microsoft Edge, the seam \(the space between the two screens\) is drawn on your website or app.  
-
-The emulated display matches the way your webpage \(or app\) renders in the [Microsoft Edge Android app][GooglePlayMicrosoftEdge] running on [Surface Duo][SurfaceDevicesDuo].  You may have to change your website \(or app\) to display better along the seam.  For more information about adapting your website \(or app\) to the seam, navigate to [How to work with the seam][DualScreenIntroductionHowWorkSeam].  
-
-The [Device Toolbar][DevtoolsDeviceModeIndexSimulateMobileViewport] has extra features to help you test your website or app in multiple postures and orientations.  Choose **Rotate** \(![Rotate][ImageRotateIcon]\) to rotate the viewport to landscape orientation. Combine the feature with **Span** \(![Span][ImageSpanIcon]\) to toggle between single-screen or folded and dual-screen or unfolded postures.  Together, the features allow testing your website or app in all four possible postures and orientations.  
-
-:::image type="complex" source="../media/experiments-dual-screen-emulation-rotate-span.msft.png" alt-text="Matrix of postures and orientations for dual-screen and foldable devices" lightbox="../media/experiments-dual-screen-emulation-rotate-span.msft.png":::
-   Matrix of postures and orientations for dual-screen and foldable devices  
-:::image-end:::  
-
-The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon isn't highlighted.  To turn on \(or off\) the flag, navigate to `edge://flags` and toggle the flag.  
-
-<!-- Commenting out until the icon issue is fixed in Edge Canary
-The **Experimental Web Platform features** \(![ExperimentalApis][ImageExperimentalApisIcon]\) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon is not highlighted.  To turn on \(or off\) the flag, either choose the icon or navigate to `edge://flags` and toggle the flag.   -->  
-
-Here are other resources that may help you enhance your website \(or app\) for dual-screen devices.  
-
-*   For more information about web development on dual-screen devices, navigate to [Dual-screen web experiences][DualScreenWebIndex].  
-*   Install the [Surface Duo emulator][DualScreenAndroidUseEmulator].  It diffs from the emulator in Microsoft Edge, emulates the Surface Duo running Android, and integrates with [Android Studio][AndroidDeveloperStudio].  For more information, navigate to [Get the Surface Duo SDK][DualScreenAndroidGetDuoSdk].  
-    
-> [!NOTE]
-> The following is a list of current known issues.  
-> 
-> *   When using a [Microsoft Remote Desktop client][RemoteDesktopClientDocs] to connect to a remote PC and emulate the [Surface Duo][SurfaceDevicesDuo] or [Samsung Galaxy Fold][SamsungMobileGalaxyFold], the pointer may shake or stutter.  If you run into the issue, [send feedback](#providing-feedback-on-experimental-features).  
-
-### Turn on support to move tabs between panels  
+### Enable support to move tabs between panels  
 
 Normally, tools such as **Elements** and **Network** may only open in the main panel that is located at the top of the DevTools.  Tools like **3D View** and **Issues** which normally only open in the **Drawer** panel that is located at the bottom of the DevTools.  After you choose the experiment, you may move tools between the top and bottom panels.  To move a tool, hover on the tab, open the contextual menu \(right-click\), and choose **Move to top** or **Move to bottom**.   This experiment allows you to customize your DevTools layout.  To display or hide the **Drawer** panel, select `Escape`.  
 
@@ -257,7 +233,7 @@ To toggle persistent overlays on Flexbox layout, use one of following actions.
 :::image type="complex" source="../media/flexbox-overlay.msft.png" alt-text="Flex icons and Layout panel in DevTools" lightbox="../media/flexbox-overlay.msft.png":::
    Flex icons and **Layout** panel in DevTools  
 :::image-end:::  
-    
+
 #### Configure persistent overlays  
 
 To configure options for persistent overlays for CSS grids or Flexbox layouts, use the **Layout** pane.  The **Layout** pane is located in the **Elements** tool next to the **Styles** and **Computed** panes.  
@@ -302,6 +278,7 @@ If you prefer the original **What's New** tool, navigate to [Settings][DevtoolsC
 *   [3D View][Devtools3dViewIndex] is now available by default in Microsoft Edge version 83 or later.  
 *   [Turn on support to move tabs between panels][DevtoolsMoveTabs] is now available and in Microsoft Edge version 85 or later.  
 *   [Customize Keyboard Shortcuts][DevtoolsCustomKeyboardShortcuts] is now turned on by default in Microsoft Edge version 86 or later.  
+*   [Emulation: Support dual screen mode][DevtoolsDeviceModeDualScreenAndFoldables] is now available and turned on by default in Microsoft Edge version 89 or later.  
 *   [Turn on new CSS grid debugging features][DevtoolsCssGrid] is now turned on by default in Microsoft Edge version 89 or later.  
     
 ## Providing feedback on experimental features  
@@ -336,11 +313,11 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 <!-- links -->  
 
 [Devtools3dViewIndex]: ../3d-view/index.md "3D View | Microsoft Docs"  
+[DevtoolsCssGrid]: ../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsMoveTabs]: ../customize/index.md "Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCssGrid]: ../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools | Microsoft Edge"  
 [DevtoolsIssues]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
-[DevtoolsMoveTabs]: ../customize/index.md "Customize Microsoft Edge DevTools | Microsoft Docs"
 [DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
 [DevtoolsCustomKeyboardShortcuts]: ../customize/shortcuts.md "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsOpenMain]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
@@ -363,6 +340,7 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 [GooglePlayMicrosoftEdge]: https://play.google.com/store/apps/details?id=com.microsoft.emmx "Microsoft Edge | Google Play"  
 
 [SamsungMobileGalaxyFold]: https://www.samsung.com/mobile/galaxy-fold/ "Galaxy Fold | Samsung"  
+[DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "Emulate dual-screen and foldable devices in Microsoft Edge DevTools | Microsoft Docs"
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
 
