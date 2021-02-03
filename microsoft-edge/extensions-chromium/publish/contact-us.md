@@ -13,7 +13,7 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 
 ## Contact us for any issues or feedback
 
-1. For any issues related to certification write to us at support [here][ExtensionsSupportForm].
+1. For any issues related to certification, please submit a [New Support Request][ExtensionsSupportForm].
 1. If you have any issues or feedback regarding your publishing experience using Partner Center, write to us at [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
 1. To feature your extension in a collection on the Edge Add-ons home page, submit your request using the [Submit a request to add an extension to the collections on the MS Edge Add-ons home page][CollectionsForm] form. 
 
