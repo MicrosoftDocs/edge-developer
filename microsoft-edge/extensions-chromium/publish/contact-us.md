@@ -19,7 +19,7 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 
 
 ## Report copyright or trademark infringement
-If you think an item in the Edge add-ons store violates a copyright or trademark, fill out [this][EdgeInfringmentReport] form. Our team will review your report and take any necessary action.
+If you think an item in the Edge add-ons store violates a copyright or trademark, fill out the [Notices of Infringement][EdgeInfringmentReport] form. Our team will review your report and take any necessary action.
 
 <!-- links -->  
 
