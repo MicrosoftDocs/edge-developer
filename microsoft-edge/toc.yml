@@ -25,6 +25,8 @@
           href: devtools-guide-chromium/open/index.md
         - name: What's new
           items: 
+            - name: Microsoft Edge 89
+              href: devtools-guide-chromium/whats-new/2021/01/devtools.md
             - name: Microsoft Edge 88
               href: devtools-guide-chromium/whats-new/2020/11/devtools.md
             - name: Microsoft Edge 87
@@ -65,6 +67,8 @@
               href: devtools-guide-chromium/coverage/index.md
             - name: Inspect animations
               href: devtools-guide-chromium/inspect-styles/animations.md
+            - name: Edit CSS font styles and settings
+              href: devtools-guide-chromium/inspect-styles/edit-fonts.md
             - name: Inspect CSS grid
               href: devtools-guide-chromium/css/grid.md
             - name: Force DevTools into Print Preview mode
