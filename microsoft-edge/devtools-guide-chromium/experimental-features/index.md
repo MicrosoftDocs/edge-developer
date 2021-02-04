@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/03/2020 
+ms.date: 02/04/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -45,7 +45,7 @@ The following sections describe the new experimental features that are available
 | [Source Order Viewer](#source-order-viewer) | 86 or later |  
 | [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor) | 87 or later |  
 | [Enable Composited Layers in 3D View](#enable-composited-layers-in-3d-view) | 87 or later |  
-| [Enable new Font Editor tool within the Styles pane](#) | 89 or later |  
+| [Enable new Font Editor tool within the Styles pane](#enable-new-font-editor-tool-within-the-styles-pane) | 89 or later |  
 | [Enable new CSS Flexbox debugging features](#enable-new-css-flexbox-debugging-features) | 89 or later |  
 | [Enable + button tab menus to open more tools](#enable--button-tab-menus-to-open-more-tools) | 89 or later |  
 | [Enable Welcome tab](#enable-welcome-tool) | 89 or later |  
