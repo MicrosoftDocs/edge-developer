@@ -94,7 +94,7 @@ conceptualContent:
       links:
         - itemType: reference
           text: Security
-          url: /deployedge/security-overview
+          url: /deployedge/ms-edge-security-for-business
         - itemType: reference
           text: Privacy
           url: /deployedge/microsoft-edge-enterprise-privacy-settings
