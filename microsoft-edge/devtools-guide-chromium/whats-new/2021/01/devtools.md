@@ -50,7 +50,7 @@ To turn on this experiment, navigate to [Settings][DevtoolsCustomizeIndexSetting
 
 Flexbox debugging features are in active development.  To turn on the experiment for the following two features, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments** and choose the checkbox next to **Enable new CSS Flexbox debugging features**.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1136394][CR1136394] and [1139949][CR1139949].  
 
-### New Flexbox (flex) icon help identify and display flex containers  
+### New Flexbox (flex) icon helps identify and display flex containers  
 
 <!--  Title: Display Flexbox containers with Flexbox (flex) icon  -->  
 <!--  Subtitle: New Flexbox (flex) icon in the Elements tool help you identify Flexbox containers in your code.  When toggled, the adorner displays and hides outlines of the flex container to help you debug the layout -->  
