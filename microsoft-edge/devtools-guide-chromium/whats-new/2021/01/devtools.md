@@ -3,7 +3,7 @@ description: The What's New tool is now Welcome, Visual Font Editor in the Style
 title: What's new in DevTools (Microsoft Edge 89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/03/2021
+ms.date: 02/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -130,11 +130,15 @@ You now have a new way to open more tools in the Microsoft Edge DevTools.  After
 
 When you edit CSS, you get a dropdown of features.  This feature was not available to users of assistive technologies, since it is announced in Microsoft Edge version 89.  A user of assistive technologies may now navigate CSS suggestions in the **Styles** pane.  In Microsoft Edge version 88 and earlier, assistive technology announced `Suggestion` as a user navigated through the list of suggestions when editing CSS in the **Styles** pane.  In Microsoft Edge version 89, a user of assistive technology now hears the position and count of the current suggestion.  Each suggestion is announced as the user navigates through the list of suggestions, such as Suggestion 3 of 5.  To learn more about writing CSS in the DevTools, navigate to [Change CSS][DevtoolsCssReferenceChangeCss].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1157329][CR1157329].  
 
-<!--To view a video that displays and reads aloud several suggestions with this experiment turned on, navigate to [Voiceover announcing devtools options](https://youtu.be/9TcUpleEwwA) on YouTube.  -->  
+To view a video that displays and reads aloud several suggestions with this experiment turned on, navigate to [Voiceover announcing devtools options](https://youtu.be/9TcUpleEwwA) on YouTube.  
 
-The following video link displays and reads aloud several suggestions with this experiment turned on.  
+:::image type="complex" source="../../media/2021/01/announce-css-suggestion.msft.png" alt-text="The suggestion highlighted in the Styles pane" lightbox="../../media/2021/01/announce-css-suggestion.msft.png":::
+   The `suggestion` list highlighted in the **Styles** pane  
+:::image-end:::  
 
-> [!VIDEO https://youtu.be/9TcUpleEwwA]  
+<!--The following video link displays and reads aloud several suggestions with this experiment turned on.  -->  
+
+<!--> [!VIDEO https://youtu.be/9TcUpleEwwA]  -->
 
 ## Emulate Surface Duo and Samsung Galaxy Fold  
 
