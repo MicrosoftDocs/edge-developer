@@ -3,7 +3,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 11/19/2020
+ms.date: 02/04/2021
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 > [!NOTE]
@@ -14,8 +14,6 @@ ROBOTS: NOINDEX,NOFOLLOW
 > 
 > With this announcement, Microsoft is no longer accepting new extensions for the [legacy version of Microsoft Edge][MicrosoftSupportEdgeLegacy]. If you own an Extension for the legacy version, you should begin the process of porting your Extension to the new Microsoft Edge.  The new Microsoft Edge is based on Chromium, so Extensions designed for the legacy version of Microsoft Edge do not work with the new version.  
 > 
-
-<!-- image links -->  
 
 <!-- links -->  
 
