@@ -1,40 +1,36 @@
 ---
 description: Contact support information for Microsoft Edge extension development.
-title: Contact Edge extensions support
+title: Contact Microsoft Edge extensions support
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/19/2021
+ms.date: 02/05/2021
 ms.topic: support
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer, support
 ---
+# Contact Microsoft Edge extension support  
 
-# Contact Microsoft Edge extension support
+## Request help for any issues or submit feedback  
 
-## Contact us for any issues or feedback
+1.  After you submit your extension using Partner Center and you have a question about the review or certification status of it, navigate to [New Support Request][MicrosoftSupportSupportrequestformE7a381be9c9aFafbEd76262bc93fd9e4] and complete the form.  
+1.  If your extension isn't working with Microsoft Edge as you expect or you have a question about how to develop an extension, navigate to [Supported APIs for Microsoft Edge extensions][ExtensionsDeveloperGuideApiSupport] and [Port Chromium extensions to Microsoft Edge][ExtensionsDeveloperGuidePortChromeExtension].  For any other questions, send an email to [ext_dev_support@microsoft.com][MailtoExtDevSupportMicrosoft].  
+1.  If you face any issues while you submit your extension to Partner Center, navigate to [Publish your extension][ExtensionsPublishPublishExtension].  If you have other questions or want to send feedback about your publishing experience, send an email to [ext_dev_support@microsoft.com][MailtoExtDevSupportMicrosoft].  
+1.  To feature your extension in a collection on the Microsoft Edge Add-ons catalog, navigate to [Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page][OfficeFormsPagesResponsepageAspxV4j5cvggr0grqy180bhbrw01uwybfaxnna1zkp3x2vun0ibsu1ymeu3vfy0vurrodewsjgwu00yry4u] and complete the form.   
+    
+## Report copyright or trademark infringement  
 
-1. If you have submitted an extension via the Partner Center and have a question related to its review/certification status, please submit a [New Support Request][ExtensionsSupportForm].
-1. If your extension is not working as expected with Microsoft Edge or you have a question regarding how to develop an extension, refer to the following documentation links - [Supported APIs for Microsoft Edge extensions][SupportedAPIs] and [Port Chromium extensions to Microsoft Edge][PortExtension]. For any other questions, write to us at [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
-1. If you are facing any issues while submitting your extension to the Partner Center, review the documentation to [Publish your extension][ExtPublishing]. If that does not answer your question or you have a feedback regarding your publishing experience, write to us at [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
-1. To feature your extension in a collection on the Edge Add-ons home page, submit your request using the [Submit a request to add an extension to the collections on the MS Edge Add-ons home page][CollectionsForm] form. 
-
-
-## Report copyright or trademark infringement
-If you think an item in the Microsoft Edge add-ons store violates a copyright or trademark, fill out the [Notices of Infringement][EdgeInfringmentReport] form. Our team will review your report and take any necessary action.
+If you think an item in the Microsoft Edge add-ons catalog violates a copyright or trademark, navigate to [Notices of Infringement][MicrosoftInfoMarketplaceHtml] and complete the form.  The Microsoft Edge extensions team reviews your report and then takes the necessary action.  
 
 <!-- links -->  
 
+[ExtensionsDeveloperGuideApiSupport]: ../developer-guide/api-support.md "Supported APIs for Microsoft Edge extensions | Microsoft Docs"  
+[ExtensionsDeveloperGuidePortChromeExtension]: ../developer-guide/port-chrome-extension.md "Port your extension | Microsoft Docs"  
+[ExtensionsPublishPublishExtension]: ./publish-extension.md "Publish your extension | Microsoft Docs"  
 
-[ExtensionsSupportForm]: https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "Extensions New Support Request | Microsoft Support"  
+[MicrosoftInfoMarketplaceHtml]: https://www.microsoft.com/info/Marketplace.html "Notices of Infringement | Microsoft"  
 
-[CollectionsForm]: https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u "Submit a request to feature in Collections"
+[MicrosoftSupportSupportrequestformE7a381be9c9aFafbEd76262bc93fd9e4]: https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "Extensions New Support Request | Microsoft Support"  
 
-[EdgeInfringmentReport]: https://www.microsoft.com/info/Marketplace.html "Report copyright or trademark Infringement"
+[OfficeFormsPagesResponsepageAspxV4j5cvggr0grqy180bhbrw01uwybfaxnna1zkp3x2vun0ibsu1ymeu3vfy0vurrodewsjgwu00yry4u]: https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u "Submit a request to add an extension to the collections on the MS Edge Add-ons home page | Microsoft Office Forms"  
 
-[EdgeAddonsPolicies]: ../store-policies/ada-addendum.md "App Developer Agreement Addendum for Microsoft Edge program users"
-
-[SupportedAPIs]: ../developer-guide/api-support.md "Supported APIs"
-
-[PortExtension]: ../developer-guide/port-chrome-extension.md "Port your Chromium extension to Microsoft Edge"
-
-[ExtPublishing]: ./publish-extension.md "Publish your extension to Microsoft Edge add-ons store"
+[MailtoExtDevSupportMicrosoft]: mailto:ext_dev_support@microsoft.com "Send an email to ext_dev_support@microsoft.com"  
