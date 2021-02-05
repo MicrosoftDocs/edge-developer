@@ -1,36 +1,33 @@
 ---
-description: Extensions enterprise documentation for Edge (Chromium) Extensions.
+description: Extensions enterprise documentation for Microsoft Edge (Chromium) Extensions.
 title: Hosting and Updating
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ---
-
 # Web Store Hosting and Updating  
 
-Most Extensions are hosted in the [Microsoft Edge Insider Addons catalog \(Microsoft Edge Insider Addons\)][MicrosoftStoreExtensions] to best protect users from malicious Extensions.  
+Most extensions are hosted in the [Microsoft Edge Insider Addons catalog (Microsoft Edge Insider Addons)][MicrosoftStoreExtensions] to best protect users from malicious Extensions.  
 
 ## Hosting  
 
-All extensions are distributed to users as a special ZIP file with a .crx suffix.  Extensions hosted in the Microsoft Edge Add-ons store are uploaded as .zip files. The publishing process automatically converts the .zip file into a .crx file.  
+All extensions are distributed to users as a special archive \(`.zip`\) file with a `.crx` suffix.  Extensions hosted in the Microsoft Edge Add-ons store are uploaded as `.zip` files.  The publishing process automatically converts the `.zip` file into a `.crx` file.  
 
-There are two scenarios when you don't need to host your extension in the Microsoft Edge Add-ons store:  
+The following two scenarios don't require you to host your extension in the Microsoft Edge Add-ons store.  
 
-1.  Extensions that are distributed through the Enterprise policy.  
-1.  Unpacked Extension directories from a local machine while in developer mode.  
+*   Extensions distributed through the Enterprise policy.  
+*   Unpacked extension directories from a local machine while in developer mode.  
 
 ## Updating  
 
-The Microsoft Edge browser periodically checks for new versions of installed Extensions and updates each without user intervention.
-
-<!-- image links -->
+The Microsoft Edge browser periodically checks for new versions of installed extensions and updates each without user intervention.  
 
 <!-- links -->  
 
-[MicrosoftStoreExtensions]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions "Extensions - Microsoft Edge Insider Addons"  
+[MicrosoftStoreExtensions]: https://microsoftedge.microsoft.com/insider-addons/category/EdgeExtensions "Extensions - Microsoft Edge Insider Addons | Microsoft"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
