@@ -15,6 +15,7 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 
 1. If you have submitted an extension via the Partner Center and have a question related to its review/certification status, please submit a [New Support Request][ExtensionsSupportForm].
 1. If your extension is not working as expected with Microsoft Edge or you have a question regarding how to develop an extension, refer to the following documentation links - [Supported APIs for Microsoft Edge extensions][SupportedAPIs] and [Port Chromium extensions to Microsoft Edge][PortExtension]. For any other questions, write to us at [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
+1. If you are facing any issues while submitting your extension to the Partner Center, review the documentation to [Publish your extension][ExtPublishing]. If that does not answer your question or you have a feedback regarding your publishing experience, write to us at [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
 1. To feature your extension in a collection on the Edge Add-ons home page, submit your request using the [Submit a request to add an extension to the collections on the MS Edge Add-ons home page][CollectionsForm] form. 
 
 
@@ -35,3 +36,5 @@ If you think an item in the Microsoft Edge add-ons store violates a copyright or
 [SupportedAPIs]: ../developer-guide/api-support.md "Supported APIs"
 
 [PortExtension]: ../developer-guide/port-chrome-extension.md "Port your Chromium extension to Microsoft Edge"
+
+[ExtPublishing]: ./publish-extension.md "Publish your extension to Microsoft Edge add-ons store"
