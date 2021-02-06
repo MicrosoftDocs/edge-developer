@@ -3,13 +3,12 @@ description: Navigation
 title: Navigation
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 02/05/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
-
 # Navigation events  
 
 The normal sequence of navigation events is `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`.  The following events describe the state of WebView2 during each navigation.  
