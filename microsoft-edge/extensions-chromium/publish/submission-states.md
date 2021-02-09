@@ -10,7 +10,7 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 ---
 # Submission states for extensions in the store  
 
-The overview page on the Partner Center displays the state of your extension in the overall submission flow.  
+The overview page on the Partner Center displays the state of your extension in the overall submission flow.  This article describes the different states your extension may be in at any time during the submission and certification process.  
 
 | # |  State |  Details |  
 |:--- |:--- |:--- |  
