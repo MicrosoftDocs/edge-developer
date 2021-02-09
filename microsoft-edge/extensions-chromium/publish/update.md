@@ -10,7 +10,7 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 ---
 # Update or remove your extension  
 
-You may update a submitted extension or remove a published extension listing from Microsoft Edge Add-ons store at any time.  
+You may update a submitted extension or remove a published extension listing from the Microsoft Edge Add-ons store at any time.  
 
 ## Update your extension on the Microsoft Edge Add-ons store  
 
