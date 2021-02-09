@@ -10,7 +10,7 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 ---
 # Web Store Hosting and Updating  
 
-Most extensions are hosted in the [Microsoft Edge Insider Addons catalog (Microsoft Edge Insider Addons)][MicrosoftStoreExtensions] to best protect users from malicious Extensions.  
+Most extensions are published to the [Microsoft Edge Add-ons store][MicrosoftStoreExtensions] to protect users from malicious extensions.  
 
 ## Hosting  
 
