@@ -1,6 +1,6 @@
 ---
-description: Extensions enterprise documentation for Microsoft Edge (Chromium) Extensions.
-title: Hosting and Updating
+description: Host and publish extensions in the enterprise for Microsoft Edge (Chromium).
+title: Publish and update extensions in the Microsoft Edge Add-ons store
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/04/2021
