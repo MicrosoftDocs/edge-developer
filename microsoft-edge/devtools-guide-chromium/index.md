@@ -41,7 +41,7 @@ To open the DevTools
     
 If you want to see the HTML or CSS for an element on your site, right-click the element and choose **Inspect** to jump into the **Elements** tool.  To open the DevTools in **Inspect Element Mode**, select `Ctrl`+`Shift`+`C` \(Windows/Linux\)  or `Command`+`Option`+`C` \(macOS\). the **Inspect Element Mode** allows you to choose an element on the webpage and display the HTML and CSS in the **Elements** tool.  
 
-If you want to review logs from your front-end JavaScript code or quickly run some script, open the **Console**.   to launch the **Console** tool in the DevTools, select `Ctrl`+`Shift`+`J` \(Windows/Linux\) or `Command`+`Option`+`J` \(macOS\).  
+If you want to review logs from your front-end JavaScript code or quickly run some script, open the **Console**.   To launch the **Console** tool in the DevTools, select `Ctrl`+`Shift`+`J` \(Windows/Linux\) or `Command`+`Option`+`J` \(macOS\).  
 
 ## Core tools  
 
