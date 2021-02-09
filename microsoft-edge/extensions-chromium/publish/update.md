@@ -35,7 +35,6 @@ You may still update your extension submission in the following timeframe.
 
 To check the status of your extension, navigate to the dashboard associated with your listing on [Partner Center][MicrosoftPartnerCenter].  
 
-The following list describes three scenarios in which you should update your extension.  
 
     
 To edit your submission, complete the following steps.  
