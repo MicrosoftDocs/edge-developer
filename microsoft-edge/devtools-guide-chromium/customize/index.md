@@ -3,7 +3,7 @@ description: A list of ways to customize Microsoft Edge DevTools
 title: Customize Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 01/22/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -49,7 +49,7 @@ To open \(or close\) the **Drawer**, select `Escape`.
    The **Drawer**  
 :::image-end:::  
 
-By default, some tools open in the main panel, while others appear in the **Drawer**.  Choose **More** \(`...`) to open a tool in the **Drawer**.  
+By default, some tools open in the main panel, while others appear in the **Drawer**.  Choose **More** \(`...`\) to open a tool in the **Drawer**.  
 
 :::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="The button to open the Drawer" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
    The button to open the **Drawer**  
