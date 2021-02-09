@@ -1,6 +1,6 @@
 ---
 description: Learn about the different states when submitting extensions to the store.
-title: Extension submission states and overview
+title: Submission states for extensions in the store
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/04/2021
