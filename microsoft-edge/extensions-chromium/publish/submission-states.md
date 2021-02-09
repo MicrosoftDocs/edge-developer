@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ---
-# Extension submission states and overview  
+# Submission states for extensions in the store  
 
 The overview page on the Partner Center displays the state of your extension in the overall submission flow.  
 
