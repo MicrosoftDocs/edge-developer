@@ -21,7 +21,7 @@ The following two scenarios don't require you to publish your extension in the M
 *   Extensions distributed using Enterprise policy.  
 *   Using unpacked extension directories on a local machine when Microsoft Edge is in developer mode.  
 
-## Updating  
+## Updates to extensions
 
 The Microsoft Edge browser periodically checks for new versions of installed extensions and updates each without user intervention.  
 
