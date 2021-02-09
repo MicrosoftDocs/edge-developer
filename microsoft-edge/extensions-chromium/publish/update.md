@@ -58,7 +58,7 @@ After your extension failed the certification process, you need to update your e
 
 To edit your extension, complete the following steps.  
 
-1.  Navigate to your [developer dashboard][MicrosoftPartnerCenter] and choose the extension that failed the certification and you wish to update.  
+1.  Navigate to your [developer dashboard][MicrosoftPartnerCenter] and choose the extension that failed the certification process.  
 1.  Update either the extension package or the metadata incorporating the feedback received from the certification process.  If you update the extension package, ensure that you increase the version in the manifest file.  
 1.  After making changes, choose **Save** > **Publish**.  
     
