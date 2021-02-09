@@ -3,7 +3,7 @@ description: Learn how to use Microsoft Edge DevTools to find and fix JavaScript
 title: Get Started with Debugging JavaScript in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/26/2021 
+ms.date: 02/09/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -20,15 +20,14 @@ keywords: microsoft edge, web development, f12 tools, devtools
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
-   limitations under the License.  -->
-
+   limitations under the License.  -->  
 # Get started with debugging JavaScript in Microsoft Edge DevTools  
 
 This article teaches you the basic workflow for debugging any JavaScript issue in DevTools.  
 
 ## Step 1: Reproduce the bug  
 
-Finding a series of actions that consistently reproduces a bug is always the first step to debugging.  
+Finding a series of actions that consistently reproduce a bug is always the first step to debugging.  
 
 1.  Choose **Open Demo**.  Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and open the demo in a new browser tab.  
     
@@ -95,7 +94,7 @@ If you step back and think about how the app works, you may make an educated gue
 
 1.  In the **JavaScript Debugging** pane, choose **Event Listener Breakpoints** to expand the section.  DevTools reveals a list of expandable event categories, such as **Animation** and **Clipboard**.  
 1.  Next to the **Mouse** event category, choose **Expand** \(![Expand icon][ImageExpandIcon]\).  DevTools reveals a list of mouse events, such as **click** and **mousedown**.  Each event has a checkbox next to it.  
-1.  Check the **click** checkbox.  DevTools is now set up to automatically pause when any `click` event listener runs.  
+1.  Choose the checkbox next to **click**.  DevTools is now set up to automatically pause when any `click` event listener runs.  
     
     :::image type="complex" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="Choose the checkbox next to click" lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
        Choose the checkbox next to **click**  
@@ -156,7 +155,7 @@ The values of `addend1`, `addend2`, and `sum` look suspicious.  The values are w
 
 ### Method 1: The Scope pane  
 
-If you pause on a line of code, the **Scope** pane displays the local and global variables that are currently defined, along with the value of each variable.  It also displays closure variables, as applicable.  Double-click a variable value to edit it.  If you are not paused on a line of code, the **Scope** pane is empty.  
+If you pause on a line of code, the **Scope** pane displays the local and global variables that are currently defined, along with the value of each variable.  It also displays closure variables, as applicable.  Double-click a variable value to edit it.  If you don't pause on a line of code, the **Scope** pane is empty.  
 
 :::image type="complex" source="../media/javascript-sources-breakpoint-paused-scope.msft.png" alt-text="The Scope pane" lightbox="../media/javascript-sources-breakpoint-paused-scope.msft.png":::
    The **Scope** pane  
@@ -164,7 +163,7 @@ If you pause on a line of code, the **Scope** pane displays the local and global
 
 ### Method 2: Watch Expressions  
 
-The **Watch Expressions** pane lets you monitor the values of variables over time.  As the name implies, **Watch Expressions** are not limited to variables.  You may store any valid JavaScript expression in a **Watch Expression**.  Try it now.  
+The **Watch Expressions** pane lets you monitor the values of variables over time.  As the name implies, **Watch Expressions** aren't limited to variables.  You may store any valid JavaScript expression in a **Watch Expression**.  Try it now.  
 
 1.  Choose the **Watch** pane.  
 1.  Choose **Add Expression** \(![Add Expression][ImageAddIcon]\).  
@@ -217,7 +216,7 @@ This article only taught you two ways to set breakpoints.  DevTools offers many 
     
 For more information about when and how to use each type, navigate to [Pause Your Code With Breakpoints][DevtoolsJavscriptBreakpoints].  
 
-There are a couple of code stepping controls that were not explained in this article.  For more information, navigate to [Step over line of code][DevtoolsJavascriptReferenceStepThroughCode].  
+A couple of code stepping controls aren't explained in this article.  For more information, navigate to [Step over line of code][DevtoolsJavascriptReferenceStepThroughCode].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
