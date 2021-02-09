@@ -23,7 +23,7 @@ To update your extension on the store, complete the following steps.
 
 1.  Navigate to your [developer dashboard][MicrosoftPartnerCenter] and choose the extension that you wish to update.  
 1.  Update either the extension package or the metadata of the extension.  If you update the extension package, ensure that you increase the version in the manifest file to match changes since the previous package version.  
-1.  After you make the changes, choose **Save** > **Publish**.  The action updates your extension listing, and starts a certification process.  
+1.  After you make the changes, choose **Save** > **Publish** to update your extension listing, and start the certification process.  
 1.  After the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons store.  
     
 ### Update your extension during the certification step  
