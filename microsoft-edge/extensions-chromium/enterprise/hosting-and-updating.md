@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ---
-# Web Store Hosting and Updating  
+# Publish and update extensions in the Microsoft Edge Add-ons store  
 
 Most extensions are published to the [Microsoft Edge Add-ons store][MicrosoftStoreExtensions] to protect users from malicious extensions.  
 
