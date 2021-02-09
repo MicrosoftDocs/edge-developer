@@ -30,8 +30,6 @@ To update your extension on the store, complete the following steps.
 
 You may still update your extension submission in the following timeframe.  
 
-*   After it enters the certification stage  
-*   Before it publishes in the Microsoft Edge Add-ons store  
 
 To check the status of your extension, navigate to the dashboard associated with your listing on [Partner Center][MicrosoftPartnerCenter].  
 
