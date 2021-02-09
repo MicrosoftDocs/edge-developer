@@ -16,7 +16,7 @@ Most extensions are published to the [Microsoft Edge Add-ons store][MicrosoftSto
 
 All extensions are distributed to users as a special archive \(`.zip`\) file with a `.crx` suffix.  Extensions published to the Microsoft Edge Add-ons store are uploaded as `.zip` files.  The publishing process automatically converts the `.zip` file into a `.crx` file.  
 
-The following two scenarios don't require you to host your extension in the Microsoft Edge Add-ons store.  
+The following two scenarios don't require you to publish your extension in the Microsoft Edge Add-ons store.  
 
 *   Extensions distributed through the Enterprise policy.  
 *   Unpacked extension directories from a local machine while in developer mode.  
