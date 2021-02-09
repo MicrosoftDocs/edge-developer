@@ -44,8 +44,7 @@ The following list describes three scenarios in which you should update your ext
 To edit your submission, complete the following steps.  
 
 1.  Navigate to your [developer dashboard][MicrosoftPartnerCenter] and choose the extension that you wish to update.  The information you filled out during the previous submission is displayed.  
-1.  To open the **Extension overview** section, use the left navigation bar.  
-    *   To cancel the current submission, choose **Cancel submission**.  
+1.  To open the **Extension overview** section, use the left navigation bar.  To cancel the current submission, choose **Cancel submission**.  
 1.  Move to other sections and update either the extension package or the metadata of the extension.  If you update the extension package, ensure that you increase the version in the manifest file to match changes since the previous package version.  
 1.  After making changes, choose **Save** > **Publish**.  
     
