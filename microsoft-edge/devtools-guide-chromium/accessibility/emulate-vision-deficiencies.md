@@ -3,14 +3,14 @@ description: Emulate vision deficiencies in Microsoft Edge DevTools.
 title: Emulate vision deficiencies in Microsoft Edge DevTools (color blindness)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Emulate vision deficiencies
 
-To better meet the needs of your users with [color vision deficiency][ColorblindawarenessMain] \(color blindness\), [Microsoft Edge DevTools][DevtoolsIndex] enable you to simulate specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories.  
+To better meet the needs of your users with [color vision deficiency][ColorblindawarenessMain] \(color blindness\), [Microsoft Edge DevTools][DevtoolsIndex] allow you to simulate specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories.  
 
 | Color vision deficiency | Details |  
 |:--- |:--- |  
@@ -65,13 +65,13 @@ The **Rendering** menu appears in the drawer.
 
 You may also use **Command Menu** to access the different simulations.  
 
-1.  To open the **Command Menu**, select `Control`+`Shift`+`P` \(Windows/Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
+1.  Select `Control`+`Shift`+`P` \(Windows/Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="The Command Menu" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        The **Command Menu**  
     :::image-end:::  
     
-1.  Type `emulate`, choose what you want to simulate and select `Enter`.  
+1.  Type `emulate`, choose what you want to simulate and choose `Enter`.  
     
     :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="The different simulation options available in the Command Menu" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
        The different simulation options available in the **Command Menu**  
@@ -82,10 +82,9 @@ You may also use **Command Menu** to access the different simulations.
 
 <!-- links -->  
 
-[DevToolsMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools"  
+[DevToolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analyze runtime performance | Microsoft Docs"  
 
 [ColorblindawarenessMain]: http://www.colourblindawareness.org "The Colour Blind Awareness organisation"  
 
 [AmfcbMain]: https://www.amfcb.org "The American Foundation for the Color Blind (AFCB)"  
-

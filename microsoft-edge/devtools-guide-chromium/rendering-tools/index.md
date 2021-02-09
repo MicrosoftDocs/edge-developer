@@ -3,7 +3,7 @@ description: Users expects interactive and smooth pages.  Each stage in the pixe
 title: Analyze Runtime Performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020 
+ms.date: 02/09/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,7 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Analyze runtime performance 
+# Analyze runtime performance  
 
 Users expects interactive and smooth pages.  Each stage in the pixel pipeline represents an opportunity to introduce jank.  Learn about tools and strategies to identify and fix common problems that slow down runtime performance.  
 
