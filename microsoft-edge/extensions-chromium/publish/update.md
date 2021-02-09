@@ -28,7 +28,7 @@ To update your extension on the store, complete the following steps.
     
 ### Update your extension during the certification step  
 
-You may still update your extension submission in the following timeframe.  
+While your extension is still in the certification stage, and before it gets published to the Microsoft Edge Add-ons store, you may update it. If your extension fails the certification process, you may also need to update your extension.    
 
 
 To check the status of your extension, navigate to the dashboard associated with your listing on [Partner Center][MicrosoftPartnerCenter].  
