@@ -1,5 +1,5 @@
 ---
-description: Learn how to create a Microsoft Edge Add-ons developer account on Partner center.
+description: Learn about the different states when submitting extensions to the store.
 title: Extension submission states and overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
