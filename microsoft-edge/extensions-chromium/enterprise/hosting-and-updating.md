@@ -18,7 +18,7 @@ All extensions are distributed to users as a special archive \(`.zip`\) file wit
 
 The following two scenarios don't require you to publish your extension in the Microsoft Edge Add-ons store.  
 
-*   Extensions distributed through the Enterprise policy.  
+*   Extensions distributed using Enterprise policy.  
 *   Unpacked extension directories from a local machine while in developer mode.  
 
 ## Updating  
