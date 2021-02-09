@@ -15,7 +15,7 @@ You may update a submitted extension or remove a published extension listing fro
 ## Update your extension on the Microsoft Edge Add-ons store  
 
 > [!NOTE]
-> The duration of the certification process for an extension update ranges from a few hours to few days.  
+> The duration of the certification process for an update to an extension may take from a few hours to few days.  
 
 ### Update an existing extension in the Microsoft Store  
 
