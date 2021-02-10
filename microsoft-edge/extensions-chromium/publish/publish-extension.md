@@ -150,7 +150,7 @@ After providing the information, choose **Publish** to submit your extension to 
 When your submission passes certification, your extension is published in the Microsoft Edge add-ons catalog.  The status of your extension in the Partner Center dashboard changes to `In the Store`.  
 
 > [!NOTE]
-> If you face any issues in the submission or registration process, file a support ticket on [Extensions New Support Request][ExtensionsSupportForm] or send an email to [ext_dev_support@microsoft.com][MailtoExtDevSupportMicrosoftCom].  
+> If you encounter any issues in the submission or registration process, file a support ticket on [Extensions New Support Request][ExtensionsSupportForm] or send an email to [ext_dev_support@microsoft.com][MailtoExtDevSupportMicrosoftCom].  
 
 <!-- links -->  
 
