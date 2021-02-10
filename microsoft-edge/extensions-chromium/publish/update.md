@@ -1,12 +1,12 @@
 ---
-description: The process of updating or removing extensions from the Microsoft Store
+description: The process of updating or removing extensions from the Microsoft Edge Add-ons store
 title: Update An Extension Listing
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
+keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
 ---
 # Update or remove your extension  
 
@@ -17,7 +17,7 @@ You may update a submitted extension or remove a published extension listing fro
 > [!NOTE]
 > The duration of the certification process for an update to an extension may take from a few hours to few days.  
 
-### Update an existing extension in the Microsoft Store  
+### Update an existing extension in the Microsoft Edge Add-ons store  
 
 To update your extension on the store, complete the following steps.  
 
