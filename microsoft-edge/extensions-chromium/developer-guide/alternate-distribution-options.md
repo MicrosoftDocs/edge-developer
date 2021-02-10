@@ -3,7 +3,7 @@ description: Learn how to distribute extensions using alternate methods that don
 title: Alternate method to distribute extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/04/2021
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
@@ -13,7 +13,7 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 Generally, extensions are distributed through the Microsoft Edge add-ons store. There are some scenarios where developers may need to distribute extensions using alternate methods. For example:
 
 1.  The extension is associated with other software, and it should be installed together with the rest of the bundled software.   
-1. Network administrators want to distribute an extension throughout their organization.   
+1.  Network administrators want to distribute an extension throughout their organization.   
 
 Extensions that are not loaded from the Edge add-ons store are referred to as externally installed extensions. The following list provides alternate methods of distributing externally installed extensions. 
 
