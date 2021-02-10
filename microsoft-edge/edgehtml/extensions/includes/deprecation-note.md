@@ -3,7 +3,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.prod: microsoft-edge
 ms.topic: include
-ms.date: 02/04/2021
+ms.date: 02/10/2021
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 > [!NOTE]
