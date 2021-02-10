@@ -25,7 +25,7 @@ Release Date: February 10, 2021
 ### General  
 
 > [!IMPORTANT]
-> **Breaking Change**:  WebView2 pre-release packages 1.0.781 is deprecated.  Please discontinue development with this package.  
+> **Breaking Change**:  WebView2 pre-release package 1.0.781 is deprecated.  Please discontinue development with this package.  
 
 > [!IMPORTANT]
 > WebView2 pre-release package 0.9.430 is deprecated, and is being removed from the upcoming release.  If your WebView app uses the package, we recommend updating to a newer package.  
