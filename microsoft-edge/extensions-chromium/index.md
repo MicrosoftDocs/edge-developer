@@ -3,7 +3,7 @@ description: An overview of building and publishing Microsoft Edge (Chromium) Ex
 title: Overview of Microsoft Edge (Chromium) Extensions 
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/04/2021
+ms.date: 02/10/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge, extensions development, browser extensions, addons, partner center, developer, chromium extensions
@@ -27,7 +27,7 @@ An extension is structured similar to a regular web app.  At a minimum, it shoul
 
 To work directly with part of the browser, such as a window or tab, you must send API requests and often reference the browser by name.  
 
-:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="A Microsoft Edge (Chromium) extension":::
+:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="A Microsoft Edge (Chromium) extension" lightbox="./media/example-extension-screenshot.png":::
   A Microsoft Edge \(Chromium\) extension  
 :::image-end:::  
 
