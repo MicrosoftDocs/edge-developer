@@ -3,7 +3,7 @@ description: Publish Microsoft Edge (Chromium) extensions to Microsoft Edge add-
 title: Publish your extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/04/2021
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
