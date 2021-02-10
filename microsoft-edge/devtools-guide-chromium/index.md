@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge (Chromium) Developer Tools
 title: Microsoft Edge (Chromium) Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/05/2021
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
