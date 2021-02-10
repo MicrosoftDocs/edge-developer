@@ -3,7 +3,7 @@ description: Release notes for Microsoft Edge WebView2 SDK
 title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/01/2021
+ms.date: 02/10/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -16,25 +16,28 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 > [!NOTE]
 > Ensure you re-compile your app after updating the NuGet package.  The team recommends using the Canary channel when developing using the prerelease packages, and the evergreen runtime when using released packages.  For more information, navigate to [Versioning][VersioningDoc].  
  
-## 1.0.781-prerelease  
+## 1.0.790-prerelease  
 
-Release Date: January 29, 2021  
+Release Date: February 10, 2021  
 
-[NuGet package][NuGetGallery1.0.781-prerelease] \| Microsoft Edge version 86.0.616.0 or newer  
+[NuGet package][NuGetGallery1.0.790-prerelease] \| Microsoft Edge version 86.0.616.0 or newer  
 
 ### General  
+
+> [!IMPORTANT]
+> **Breaking Change**:  WebView2 pre-release package 1.0.781 is deprecated.  Please discontinue development with this package.  
 
 > [!IMPORTANT]
 > WebView2 pre-release package 0.9.430 is deprecated, and is being removed from the upcoming release.  If your WebView app uses the package, we recommend updating to a newer package.  
 
 ##### Features  
 
-*   Added [TrySuspend and Resume][ReferenceWin32Icorewebview210781PreReleaseTrySuspendResume] method to suspend and resume WebViews.  
-*   Added [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210781PreReleaseSetVirtualHostNameToFolderMapping] method that maps a virtual host name to a directory path.  \([\#37][GithubMicrosoftedgeWebviewfeedbackIssue37], [\#161][GithubMicrosoftedgeWebviewfeedbackIssue161], and [\#212][GithubMicrosoftedgeWebviewfeedbackIssue212]\).  
-*   Added the [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210781PreReleaseDefaultBackgroundColor] property to set the color and alpha-channel of the background.  \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue414]\).  
-*   Added the [UserAgent][ReferenceWin32Icorewebview2experimentalsettings10781PreReleaseGetUserAgent] property to get or set the User Agent.  \([\#122][GithubMicrosoftedgeWebviewfeedbackIssue122]\).
+*   Added [TrySuspend and Resume][ReferenceWin32Icorewebview210790PreReleaseTrySuspendResume] method to suspend and resume WebViews.  
+*   Added [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210790PreReleaseSetVirtualHostNameToFolderMapping] method that maps a virtual host name to a directory path.  \([\#37][GithubMicrosoftedgeWebviewfeedbackIssue37], [\#161][GithubMicrosoftedgeWebviewfeedbackIssue161], and [\#212][GithubMicrosoftedgeWebviewfeedbackIssue212]\).  
+*   Added the [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210790PreReleaseDefaultBackgroundColor] property to set the color and alpha-channel of the background.  \([\#414][GithubMicrosoftedgeWebviewfeedbackIssue414]\).  
+*   Added the [UserAgent][ReferenceWin32Icorewebview2experimentalsettings10790PreReleaseGetUserAgent] property to get or set the User Agent.  \([\#122][GithubMicrosoftedgeWebviewfeedbackIssue122]\).
 *   Replaced the `CreateCookieWithCookie` method with the `CopyCookie` method.  
-*   Added visual hosting support using the [ICoreWebView2CompositionController][ReferenceWin32Icorewebview2controllerViewWebview210781CompositionController] interface, which is created using the new `CreateCoreWebView2CompositionController` method from `ICoreWebView2Environment3`.  
+*   Added visual hosting support using the [ICoreWebView2CompositionController][ReferenceWin32Icorewebview2controllerViewWebview210790CompositionController] interface, which is created using the new `CreateCoreWebView2CompositionController` method from `ICoreWebView2Environment3`.  
 
     
 ##### Bug fixes  
@@ -45,15 +48,15 @@ Release Date: January 29, 2021
 *   Fixed a bug that allowed navigation with malformed URIs when `CoreWebView2NavigationStartingEventArgs.Cancel` was set to `false`.  \([\#400][GithubMicrosoftedgeWebviewfeedbackIssue400]\).  
 *   Fixed a bug that blocked `window.print()` on pop-up windows with event handlers attached to `NewWindowRequested` events.  \([\#409][GithubMicrosoftedgeWebviewfeedbackIssue409]\).  
 *   Fixed Dynamic DPI issue when moving apps between different monitors.  \([\#58][GithubMicrosoftedgeWebviewfeedbackIssue58]\)  
-*   Improved the `HRESULT`s passed by [ICoreWebView2WebResourceResponseViewGetContentCompletedHandler::Invoke][ReferenceWin32Icorewebview2webresourceresponseviewgetcontentcompletedhandlerInvoke10781].  
+*   Improved the `HRESULT`s passed by [ICoreWebView2WebResourceResponseViewGetContentCompletedHandler::Invoke][ReferenceWin32Icorewebview2webresourceresponseviewgetcontentcompletedhandlerInvoke10790].  
     
 ##### Promotions  
 
 *   The following experimental APIs are now promoted to Stable.  
     *   Visual Hosting APIs.  
-    *   [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210781PreReleaseSetVirtualHostNameToFolderMapping]  
-    *   [TrySuspend and Resume][ReferenceWin32Icorewebview210781PreReleaseTrySuspendResume]  
-    *   [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210781PreReleaseDefaultBackgroundColor]  
+    *   [SetVirtualHostNameToFolderMapping][ReferenceWin32Icorewebview210790PreReleaseSetVirtualHostNameToFolderMapping]  
+    *   [TrySuspend and Resume][ReferenceWin32Icorewebview210790PreReleaseTrySuspendResume]  
+    *   [DefaultBackgroundColor][ReferenceWin32Icorewebview2controllerViewWebview210790PreReleaseDefaultBackgroundColor]  
     
 #### .NET  
 
@@ -669,10 +672,10 @@ Initial developer preview release.
 [GithubMicrosoftedgeWebviewfeedbackIssue691]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/691 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 691" 
 [GithubMicrosoftedgeWebviewfeedbackIssue414]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/414 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 414" 
 [NuGetGallery1.0.705.50]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.705.50 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.705.50"
-[NuGetGallery1.0.781-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.781-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.781 prerelease"  
-[ReferenceWin32Icorewebview210781PreReleaseTrySuspendResume]: /microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.781-prerelease&preserve-view=true#trysuspend "TrySuspend - interface ICoreWebview2_3 | Microsoft Docs"  
-[ReferenceWin32Icorewebview2experimentalsettings10781PreReleaseGetUserAgent]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings?view=webview2-1.0.781-prerelease#get_useragent "get_UserAgent - interface ICoreWebView2ExperimentalSettings | Microsoft Docs"  
-[ReferenceWin32Icorewebview210781PreReleaseSetVirtualHostNameToFolderMapping]: /microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.781-prerelease&preserve-view=true#setvirtualhostnametofoldermapping "SetVirtualHostNameToFolderMapping - interface ICoreWebView2_3 | Microsoft Docs"   
-[ReferenceWin32Icorewebview2controllerViewWebview210781PreReleaseDefaultBackgroundColor]: /microsoft-edge/webview2/reference/win32/icorewebview2controller2?view=webview2-1.0.781-prerelease&preserve-view=true#get_defaultbackgroundcolor "get_DefaultBackgroundColor - interface ICoreWebView2Controller2 | Microsoft Docs"  
-[ReferenceWin32Icorewebview2controllerViewWebview210781CompositionController]:  /microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.781-prerelease&preserve-view=true "interface ICoreWebView2CompositionController | Microsoft Docs"  
-[ReferenceWin32Icorewebview2webresourceresponseviewgetcontentcompletedhandlerInvoke10781]: /microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponseviewgetcontentcompletedhandler?view=webview2-1.0.781-prerelease&preserve-view=true#invoke "Invoke - interface ICoreWebView2WebResourceResponseViewGetContentCompletedHandler | Microsoft Docs"  
+[NuGetGallery1.0.790-prerelease]:  https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.790-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.790 prerelease"  
+[ReferenceWin32Icorewebview210790PreReleaseTrySuspendResume]: /microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.790-prerelease&preserve-view=true#trysuspend "TrySuspend - interface ICoreWebview2_3 | Microsoft Docs"  
+[ReferenceWin32Icorewebview2experimentalsettings10790PreReleaseGetUserAgent]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings?view=webview2-1.0.790-prerelease&preserve-view=true#get_useragent "get_UserAgent - interface ICoreWebView2ExperimentalSettings | Microsoft Docs"  
+[ReferenceWin32Icorewebview210790PreReleaseSetVirtualHostNameToFolderMapping]: /microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.790-prerelease&preserve-view=true#setvirtualhostnametofoldermapping "SetVirtualHostNameToFolderMapping - interface ICoreWebView2_3 | Microsoft Docs"   
+[ReferenceWin32Icorewebview2controllerViewWebview210790PreReleaseDefaultBackgroundColor]: /microsoft-edge/webview2/reference/win32/icorewebview2controller2?view=webview2-1.0.790-prerelease&preserve-view=true#get_defaultbackgroundcolor "get_DefaultBackgroundColor - interface ICoreWebView2Controller2 | Microsoft Docs"  
+[ReferenceWin32Icorewebview2controllerViewWebview210790CompositionController]:  /microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller?view=webview2-1.0.790-prerelease&preserve-view=true "interface ICoreWebView2CompositionController | Microsoft Docs"  
+[ReferenceWin32Icorewebview2webresourceresponseviewgetcontentcompletedhandlerInvoke10790]: /microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponseviewgetcontentcompletedhandler?view=webview2-1.0.790-prerelease&preserve-view=true#invoke "Invoke - interface ICoreWebView2WebResourceResponseViewGetContentCompletedHandler | Microsoft Docs"  
