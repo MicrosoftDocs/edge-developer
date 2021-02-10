@@ -3,7 +3,7 @@ description: The process of updating or removing extensions from the Microsoft E
 title: Update An Extension Listing
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/04/2021
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
@@ -30,11 +30,8 @@ To update your extension on the store, complete the following steps.
 
 While your extension is still in the certification stage, and before it gets published to the Microsoft Edge Add-ons store, you may update it. If your extension fails the certification process, you may also need to update your extension.    
 
-
 To check the status of your extension, navigate to the dashboard associated with your listing on [Partner Center][MicrosoftPartnerCenter].  
 
-
-    
 To edit your submission, complete the following steps.  
 
 1.  Navigate to your [developer dashboard][MicrosoftPartnerCenter] and choose the extension that you wish to update.  The information you filled out during the previous submission is displayed.  
