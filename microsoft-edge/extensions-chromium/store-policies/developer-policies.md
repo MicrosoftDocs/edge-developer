@@ -58,7 +58,7 @@ Your extension must not negatively impact the performance or stability of Micros
 
 #### 1.1.7 Obfuscation  
 
-extensions with obfuscated code are not allowed.  This includes code within your extension package as well as any external code or resource fetched from the web.  You may be asked to refactor parts of your code if it is not reviewable.  
+Extensions with obfuscated code are not allowed.  This includes code within your extension package as well as any external code or resource fetched from the web.  You may be asked to refactor parts of your code if it is not reviewable.  
 
 #### 1.1.8 Altering Browser Settings  
 
