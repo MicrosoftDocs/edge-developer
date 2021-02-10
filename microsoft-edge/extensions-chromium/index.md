@@ -90,7 +90,7 @@ For more information on porting your Chrome extension to Microsoft Edge, navigat
 
 To start publishing your extension to Microsoft Edge, you must [register for a developer account][MicrosoftDeveloperRegistration] with an MSA email account to submit your extension listing to the store.  An MSA email account includes `@outlook.com`, `@live.com`, and so on.  When you choose an email address to register, consider if you must transfer or share ownership of the extension with others in your organization.  After registration is complete, you may create a new extension submission to the store.  
 
-To submit your extension to the store, you must meet the following requirements.  
+To submit your extension to the store, ensure you provide the following items.  
 
 *   An archive \(`.zip`\) file that contains your code files.  
 *   All required visual assets, which include a logo and small promotional tile.  
