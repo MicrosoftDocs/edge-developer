@@ -3,13 +3,12 @@ description: Navigation
 title: Navigation
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2020
+ms.date: 02/05/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
-
 # Navigation events  
 
 The normal sequence of navigation events is `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`.  The following events describe the state of WebView2 during each navigation.  
@@ -19,7 +18,7 @@ The normal sequence of navigation events is `NavigationStarting`, `SourceChanged
 | 1 | `NavigationStarting`  |  WebView2 starts to navigate and the navigation results in a network request.  The host is able to disallow the request during the event.  |  
 | 2 | `SourceChanged`  |  The source of WebView2 changes to a new URL.  The event may result from a navigation that does not cause a network request such as a fragment navigation.  |  
 | 3 | `HistoryChanged`  |  The history of WebView2 updates as a result of the navigation.  |  
-| 4 | `ContentLoading`  |  WebView starts loading content for the new page.  |  
+| 4 | `ContentLoading`  |  WebView2 starts loading content for the new page.  |  
 | 5 | `NavigationCompleted`  |  WebView2 completes loading content on the new page.  |  
 
 Track `navigations` to each new document using the navigation ID \(`NavigationId`\).  The `NavigationId` of WebView changes every time there is a successful navigation to a new document.
