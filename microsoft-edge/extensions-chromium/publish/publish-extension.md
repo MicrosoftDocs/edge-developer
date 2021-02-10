@@ -65,7 +65,7 @@ Choose one of the following visibility options to define if your extension is di
 
 ##### Markets  
 
-Define the specific markets in which you plan to offer your extension.  The default setting for markets is all markets including any future markets that are added later.  To choose specific markets, choose **Change markets**.  Toggle individual markets to exclude each on, or choose **Unselect all** and then add individual markets of your choice.  
+Define the specific markets in which you plan to offer your extension.  The default setting for markets is all markets including any future markets that are added later.  To choose specific markets, choose **Change markets**.  Toggle individual markets to exclude them, or choose **Unselect all** and then add individual markets of your choice.  
 
 > [!NOTE]
 > You may change the markets where your extension is offered.  A user who installs your extension while it is available in the user's market retains access to your extension.  However, the user does not have access to any future updates submitted to the Microsoft Edge add-ons catalog.  
