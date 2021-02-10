@@ -163,7 +163,7 @@ To add a registry key to the directory with the manifest key.
         
     1.  Run the `.reg` file.  
     
-Microsoft Edge queries the 32-bit registry first, and then the 64-bit registry to identify native messaging hosts.  If you run the above `.reg` file as part of a batch script, ensure you run it using an administrator command prompt.  
+Microsoft Edge queries the HKEY_CURRENT_USER root key followed by HKEY_LOCAL_MACHINE. In both of these, the 32-bit registry is searched first, and then the 64-bit registry is searched to identify native messaging hosts. Please note that if a registry key specifying the location of the native messaging host manifest is found at any of the above mentioned locations, the subsequent locations are not queried. If you run the above `.reg` file as part of a batch script, ensure you run it using an administrator command prompt.  
 
 ### [macOS](#tab/macos/)  
 
