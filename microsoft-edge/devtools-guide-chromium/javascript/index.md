@@ -109,7 +109,7 @@ If you step back and think about how the app works, you may make an educated gue
     If you pause on a different line of code, choose **Resume Script Execution** \(![Resume Script Execution][ImageResumeIcon]\) until you pause on the correct line.  
     
     > [!NOTE]
-    > If you pause on a different line, you have a browser extension that registers a `click` event listener on every webpage that you visit.  You are paused in the `click` listener of the extension.  If you use InPrivate Mode to **browse in private**, which disables all extensions, you may pause on the desired line of code every time.  
+    > If you paused on a different line, you have a browser extension that registers a `click` event listener on every webpage that you visit.  You are paused in the `click` listener of the extension.  If you use InPrivate Mode to **browse in private**, which disables all extensions, you may see that you pause on the desired line of code every time.  
 
 <!--todo: add inprivate section when available -->  
 
@@ -142,7 +142,7 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
     label.textContent = addend1 + ' + ' + addend2 + ' = ' + sum;
     ```  
     
-1.  On the left, the number of the particular line of code is displayed as **34**.  Choose line **34**.  DevTools displays a red icon to the left of **34**.  The red icon indicates that a line-of-code breakpoint is on this line.  DevTools always pauses before the line of code is run.  
+1.  On the left, the number of this particular line of code is displayed as **34**.  Choose line **34**.  DevTools displays a red icon to the left of **34**.  The red icon indicates that a line-of-code breakpoint is on this line.  DevTools always pauses before this line of code is run.  
 1.  Choose **Resume script execution** \(![Resume script execution][ImageResumeIcon]\).  The script continues to run until it reaches line 33.  On lines 31, 32, and 33, DevTools prints the values of `addend1`, `addend2`, and `sum` to the right of the semi-colon on each line.  
     
     :::image type="complex" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="DevTools pauses on the line-of-code breakpoint on line 34" lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
