@@ -30,7 +30,7 @@ Also, ensure that you have the following information.
 1.  The version of your extension.  The version information is available in your manifest file, or in Microsoft Edge at `edge://extensions` after you load the packed extension.   
 1.  The ID of your extension.  The ID information is available in Microsoft Edge at `edge://extensions` after you load the packed extension.  
 
-> Note  
+> [!NOTE] 
 > The following examples use `1.0` as the version, and `aaaaaaaaaabbbbbbbbbbcccccccccc` for the ID.  
 
 ## Use the Windows registry (Windows only)  
