@@ -3,7 +3,7 @@ description: Publish Microsoft Edge (Chromium) extensions to Microsoft Edge add-
 title: Publish your extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/04/2021 
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -65,7 +65,7 @@ Choose one of the following visibility options to define if your extension is di
 
 ##### Markets  
 
-Define the specific markets in which you plan to offer your extension.  The default setting for markets is all markets including any future markets that are added later.  To choose specific markets, choose **Change markets**.  Toggle individual markets to exclude each on, or choose **Unselect all** and then add individual markets of your choice.  
+Define the specific markets in which you plan to offer your extension.  The default setting for markets is all markets and that includes any future markets that are added later.  To choose specific markets, choose **Change markets**.  Toggle individual markets to exclude each one, or choose **Unselect all** and then add individual markets of your choice.  
 
 > [!NOTE]
 > You may change the markets where your extension is offered.  A user who installs your extension while it is available in the user's market retains access to your extension.  However, the user does not have access to any future updates submitted to the Microsoft Edge add-ons catalog.  
@@ -155,7 +155,7 @@ After providing the information, choose **Publish** to submit your extension to 
 When your submission passes certification, your extension is published in the Microsoft Edge add-ons catalog.  The status of your extension in the Partner Center dashboard changes to `In the Store`.  
 
 > [!NOTE]
-> If you face any issues in the submission or registration process, file a support ticket on [Extensions New Support Request][ExtensionsSupportForm] or send an email to [ext_dev_support@microsoft.com][MailtoExtDevSupportMicrosoftCom].  
+> If you encounter any issues in the submission or registration process, file a support ticket on [Extensions New Support Request][ExtensionsSupportForm] or send an email to [ext_dev_support@microsoft.com][MailtoExtDevSupportMicrosoftCom].  
 
 <!-- links -->  
 

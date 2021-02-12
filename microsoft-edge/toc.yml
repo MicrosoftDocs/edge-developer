@@ -269,16 +269,18 @@
               href: extensions-chromium/developer-guide/native-messaging.md
         - name: Publish to Microsoft Store
           items: 
-            - name: Publish your extension
-              href: extensions-chromium/publish/publish-extension.md
             - name: Developer registration
               href: extensions-chromium/publish/create-dev-account.md
-            - name: Update extension listing
+            - name: Publish your extension
+              href: extensions-chromium/publish/publish-extension.md
+            - name: Update your extension
               href: extensions-chromium/publish/update.md
             - name: Submission states
               href: extensions-chromium/publish/submission-states.md
             - name: Manage account settings
               href: extensions-chromium/publish/manage-settings.md
+            - name: Contact us
+              href: extensions-chromium/publish/contact-us.md
         - name: Microsoft Edge Add-ons policies
           items: 
             - name: Content security policy
