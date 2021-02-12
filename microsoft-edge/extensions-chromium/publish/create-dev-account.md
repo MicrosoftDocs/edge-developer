@@ -30,7 +30,7 @@ If you have a developer account registered on Partner center, use the correspond
 ## Enroll in the Microsoft Edge program on Partner Center  
 
 1.  Navigate to the [developer page][MicrosoftPartnerCenter] and choose **GO TO DASHBOARD**.  
-1.  If you have a Microsoft account, sign into it now.  If not, create a new Microsoft account.  Use the same Microsoft account that you use to sign into your developer account.  After you sign into your developer account, the following registration form is displayed.  
+1.  If you have a Microsoft account, sign into it now.  If not, create a new Microsoft account.  Use the same Microsoft account that you use to sign into your developer account.  After you sign in, a registration form is displayed. The following table describes the fields on the registration form.  
     
     To enroll in the Microsoft Edge program, sign in-to your account, and complete the form.  
     
