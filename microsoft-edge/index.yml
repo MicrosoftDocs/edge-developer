@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 12/10/2020
+  ms.date: 02/04/2021
   ms.localizationpriority: high
 
 # highlightedContent section (optional)
@@ -94,7 +94,7 @@ conceptualContent:
       links:
         - itemType: reference
           text: Security
-          url: /deployedge/security-overview
+          url: /deployedge/ms-edge-security-for-business
         - itemType: reference
           text: Privacy
           url: /deployedge/microsoft-edge-enterprise-privacy-settings
@@ -196,11 +196,11 @@ additionalContent:
             - text: Manage account settings
               url: /microsoft-edge/extensions-chromium/publish/manage-settings
         # Card
-        - title: "Extensions: Microsoft Edge Addons Policies"
+        - title: "Extensions: Microsoft Edge Add-ons Policies"
           links:
             - text: Content Security Policy
               url: /microsoft-edge/extensions-chromium/store-policies/csp
-            - text: Microsoft Edge Addons Catalog Developer Policies
+            - text: Microsoft Edge Add-ons Catalog Developer Policies
               url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
         # Card
         - title: Progressive Web Apps
