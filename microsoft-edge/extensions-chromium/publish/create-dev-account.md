@@ -98,7 +98,7 @@ If you have a developer account registered on Partner center, use the correspond
     
 ## Next steps  
 
-To display your verification status, navigate to Partner Center > **Account settings**.  While you wait for the verification process to complete; continue to build, test, and prepare your submissions.  
+To display your verification status, navigate to Partner Center > **Account settings**.  While you wait for the verification process to complete, continue to build, test, and prepare your submissions.  
 
 For more information, navigate to [Publish an extension][ExtensionsChromiumPublishExtension].  For information on getting started with extensions, navigate to [Getting started with Microsoft Edge (Chromium) extensions][ExtensionsChromiumGettingStartedIndex].  
 
