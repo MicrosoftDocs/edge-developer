@@ -50,7 +50,7 @@ Release Date: February 10, 2021
 *   Fixed Dynamic DPI issue when moving apps between different monitors.  \([\#58][GithubMicrosoftedgeWebviewfeedbackIssue58]\)  
 *   Improved the `HRESULT`s passed by [ICoreWebView2WebResourceResponseViewGetContentCompletedHandler::Invoke][ReferenceWin32Icorewebview2webresourceresponseviewgetcontentcompletedhandlerInvoke10790].  
 *   Disabled autofill manage button.  \([\#585][GithubMicrosoftedgeWebviewfeedbackIssue585]\). 
-*   Fixed visual studio crashes from webview2 dispose when hosted in multiple windows.  \([\#816][GithubMicrosoftedgeWebviewfeedbackIssue816]\) and [\#442][GithubMicrosoftedgeWebviewfeedbackIssue442]\).  
+*   Fixed Visual Studio crashes from calling `WebView2.Dispose` when hosted in multiple windows.  \([\#816][GithubMicrosoftedgeWebviewfeedbackIssue816]\ and [\#442][GithubMicrosoftedgeWebviewfeedbackIssue442]\).  
 *   Fixed bug to show WebView2 control in Visual Studio Toolbox.  \([\#210][GithubMicrosoftedgeWebviewfeedbackIssue210]\). 
 *   Reduced high CPU usage issues.  \([\#878][GithubMicrosoftedgeWebviewfeedbackIssue878]\).  
 *   Fixed issues with deprecated 1.0.781-prerelease package. [\#875][GithubMicrosoftedgeWebviewfeedbackIssue875] and [\#878][GithubMicrosoftedgeWebviewfeedbackIssue878]\).  
