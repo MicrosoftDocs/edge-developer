@@ -25,6 +25,8 @@
           href: devtools-guide-chromium/open/index.md
         - name: What's new
           items: 
+            - name: Microsoft Edge 89
+              href: devtools-guide-chromium/whats-new/2021/01/devtools.md
             - name: Microsoft Edge 88
               href: devtools-guide-chromium/whats-new/2020/11/devtools.md
             - name: Microsoft Edge 87
@@ -65,6 +67,8 @@
               href: devtools-guide-chromium/coverage/index.md
             - name: Inspect animations
               href: devtools-guide-chromium/inspect-styles/animations.md
+            - name: Edit CSS font styles and settings
+              href: devtools-guide-chromium/inspect-styles/edit-fonts.md
             - name: Inspect CSS grid
               href: devtools-guide-chromium/css/grid.md
             - name: Force DevTools into Print Preview mode
@@ -117,6 +121,8 @@
           items: 
             - name: Emulation overview
               href: devtools-guide-chromium/device-mode/index.md
+            - name: Emulate dual-screen and foldable devices
+              href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
             - name: Emulate and test other browsers
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
             - name: Guides
@@ -263,16 +269,18 @@
               href: extensions-chromium/developer-guide/native-messaging.md
         - name: Publish to Microsoft Store
           items: 
-            - name: Publish your extension
-              href: extensions-chromium/publish/publish-extension.md
             - name: Developer registration
               href: extensions-chromium/publish/create-dev-account.md
-            - name: Update extension listing
+            - name: Publish your extension
+              href: extensions-chromium/publish/publish-extension.md
+            - name: Update your extension
               href: extensions-chromium/publish/update.md
             - name: Submission states
               href: extensions-chromium/publish/submission-states.md
             - name: Manage account settings
               href: extensions-chromium/publish/manage-settings.md
+            - name: Contact us
+              href: extensions-chromium/publish/contact-us.md
         - name: Microsoft Edge Add-ons policies
           items: 
             - name: Content security policy
@@ -325,6 +333,8 @@
           href: webdriver-chromium/index.md
         - name: Capabilities and EdgeOptions
           href: webdriver-chromium/capabilities-edge-options.md
+        - name: Verifying downloads of Selenium Tools for Microsoft Edge
+          href: webdriver-chromium/verify-selenium-tools.md
     - name: Web platform
       items: 
         - name: Site compatibility-impacting changes coming to Microsoft Edge
