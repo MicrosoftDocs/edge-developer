@@ -18,7 +18,7 @@ Publish your extension to the Microsoft Edge add-ons catalog to increase the rea
 
 You should have a working prototype of your extension ready.  For information on how to create an extension, refer to the [Getting started tutorial][ExtensionsGettingStarted].  
 
-To publish your extension to the Microsoft Edge add-ons website, use your active developer account on [Partner Center][MicrosoftPartnerCenter].  If you don't have a developer account, create a new developer account.  To open a new developer account and register to the Microsoft Edge add-ons program, navigate to [Developer registration][DeveloperRegistration].  
+To publish your extension to the Microsoft Edge add-ons catalog, use your active developer account on [Partner Center][MicrosoftPartnerCenter].  If you don't have a developer account, create a new developer account.  To open a new developer account and register to the Microsoft Edge add-ons program, navigate to [Developer registration][DeveloperRegistration].  
 
 Create a zip file that represents your extension package.  Your extension package must include the following files.  
 
@@ -63,7 +63,7 @@ Choose one of the following visibility options to define if your extension is di
 
 ##### Markets  
 
-Define the specific markets in which you plan to offer your extension.  The default setting for markets is all markets including any future markets that are added later.  To choose specific markets, choose **Change markets**.  Toggle individual markets to exclude them, or choose **Unselect all** and then add individual markets of your choice.  
+Define the specific markets in which you plan to offer your extension.  The default setting for markets is all markets and that includes any future markets that are added later.  To choose specific markets, choose **Change markets**.  Toggle individual markets to exclude each one, or choose **Unselect all** and then add individual markets of your choice.  
 
 > [!NOTE]
 > You may change the markets where your extension is offered.  A user who installs your extension while it is available in the user's market retains access to your extension.  However, the user does not have access to any future updates submitted to the Microsoft Edge add-ons catalog.  
@@ -85,6 +85,9 @@ On the **Properties page**, enter the following information to specify propertie
 
 Select **Save** to continue to the **Store listings** section.  
 
+> [!Important]
+> Your developer/organization name, website URL, and support contact details that you submitted during registration are displayed to users on the Microsoft Edge add-ons store.  
+
 #### Step 5: Add Store listing details for your extension  
 
 The information provided in the following section is displayed to users who review your listing on the Microsoft Edge add-ons catalog.  Even though some fields are optional, you should provide as much information as possible.  To list your extension in the store, the following details are required.  
@@ -99,10 +102,10 @@ The information provided in the following section is displayed to users who revi
 |:--- |:--- |  
 | Display name \(required\) | The `name` of your extension specified in the manifest file of your extension.  To change the store display name after submission, you may update the name in the manifest file, create a new extension package, and then reupload it.  |  
 | Description \(required\) | The `description` field focuses on explaining what your extension does, why users should install it, or other relevant information that users need to know.  It should be less than 10,000 characters.  |  
-| Extension Store logo \(required\) | An image that represents your company or `extension logo` with an aspect ratio of 1, and recommended size of 300 x 300 pixels.  Additionally, you may choose to copy the asset from one language to all other languages using the duplicate button, which displays next to the field after the logo is uploaded.  |  
-| Small promotional tile \(optional\) | The `Small promotional tile` image is used to display your extension alongside other extensions in the store.  The size of the image should be 440 x 280 pixels.  Additionally, you may choose to copy the asset from one language to all other languages using the duplicate button, which displays next to the field after the promotional tile is uploaded.  |  
-| Screenshots \(optional\) | You may submit a maximum of 10 `screenshots` describing the functionality of your extension in detail.  The size of the screenshots must be either 640 x 480 pixels or 1280 x 800 pixels.  Additionally, you may choose to copy the asset from one language to all other languages using the duplicate button, , which displays next to the field after a screenshot is uploaded.  |  
-| Large promotional tile \(optional\) | `Large promotion tiles` are used in the store to feature extensions more prominently in the Microsoft Edge add-ons website.  The images, if submitted, are visible to the users.  The size of the PNG files must be 1400 x 560 pixels.  Additionally, you may choose to copy the asset from one language to all other languages using the duplicate button, which displays next to the field after the promotional tile is uploaded.  |  
+| Extension Store logo \(required\) | An image that represents your company or `extension logo` with an aspect ratio of 1, and recommended size of 300 x 300 pixels.  Additionally, you may choose to copy the asset from one language to all other languages using the duplicate button.  The button is found following the field after you upload your logo for the language.  |  
+| Small promotional tile \(optional\) | The `Small promotional tile` image is used to display your extension alongside other extensions in the store.  The size of the image should be 440 x 280 pixels.  Additionally, you may choose to copy the asset from one language to all other languages using the duplicate button.  The button is found following the field after you upload a promotional tile for the language.  |  
+| Screenshots \(optional\) | You may submit a maximum of 10 `screenshots` describing the functionality of your extension in detail.  The size of the screenshots must be either 640 x 480 pixels or 1280 x 800 pixels.  Additionally, you may choose to copy the asset from one language to all other languages using the duplicate button.  The button is found following the field after you upload at least one for the language.|  
+| Large promotional tile \(optional\) | `Large promotion tiles` are used in the store to feature extensions more prominently in the Microsoft Edge add-ons website.  The images, if submitted, are visible to the users.  The size of the PNG files must be 1400 x 560 pixels.  Additionally, you may choose to copy the asset from one language to all other languages using the duplicate button.  The button is found following the field after you upload a promotional tile for the language.  |  
 | YouTube video URL \(optional\) | You may include a promotional YouTube video of your extension.  The `YouTube video URL` video is displayed on the store listing page of your extension.  |  
 | Short description \(required\) | To edit the `short description`, you must update the description field in your manifest file of your extension package and reupload it.  |  
 | Search terms \(optional\) | `Search terms` are single words or phrases that help users discover your extension when searching in the Microsoft Edge Add-ons Catalog.  The search terms aren't displayed to users.  |  
