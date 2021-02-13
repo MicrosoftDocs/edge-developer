@@ -49,6 +49,11 @@ Release Date: February 10, 2021
 *   Fixed a bug that blocked `window.print()` on pop-up windows with event handlers attached to `NewWindowRequested` events.  \([\#409][GithubMicrosoftedgeWebviewfeedbackIssue409]\).  
 *   Fixed Dynamic DPI issue when moving apps between different monitors.  \([\#58][GithubMicrosoftedgeWebviewfeedbackIssue58]\)  
 *   Improved the `HRESULT`s passed by [ICoreWebView2WebResourceResponseViewGetContentCompletedHandler::Invoke][ReferenceWin32Icorewebview2webresourceresponseviewgetcontentcompletedhandlerInvoke10790].  
+*   Disabled autofill manage button.  \([\#585][GithubMicrosoftedgeWebviewfeedbackIssue585]\). 
+*   Fixed Visual Studio crashes from calling `WebView2.Dispose` when hosted in multiple windows.  \([\#816][GithubMicrosoftedgeWebviewfeedbackIssue816]\ and [\#442][GithubMicrosoftedgeWebviewfeedbackIssue442]\).  
+*   Fixed bug to show WebView2 control in Visual Studio Toolbox.  \([\#210][GithubMicrosoftedgeWebviewfeedbackIssue210]\). 
+*   Reduced high CPU usage issues.  \([\#878][GithubMicrosoftedgeWebviewfeedbackIssue878]\).  
+*   Fixed issues with deprecated 1.0.781-prerelease package. [\#875][GithubMicrosoftedgeWebviewfeedbackIssue875] and [\#878][GithubMicrosoftedgeWebviewfeedbackIssue878]\).  
     
 ##### Promotions  
 
@@ -658,6 +663,13 @@ Initial developer preview release.
 [DOMContentLoadedAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease#add_domcontentloaded&preserve-view=true "add_DOMContentLoaded - interface ICoreWebView2_2 | Microsoft Docs"
 [WebViewEnvironmentproperty]: /microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease#get_environment&preserve-view=true "ICoreWebView2CookieManager | Microsoft Docs"
 
+[GithubMicrosoftedgeWebviewfeedbackIssue585]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/585 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 585" 
+[GithubMicrosoftedgeWebviewfeedbackIssue275]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/275 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 275" 
+[GithubMicrosoftedgeWebviewfeedbackIssue816]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/816 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 816" 
+[GithubMicrosoftedgeWebviewfeedbackIssue210]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/210 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 210" 
+[GithubMicrosoftedgeWebviewfeedbackIssue442]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/442 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 442" 
+[GithubMicrosoftedgeWebviewfeedbackIssue878]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/878 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 878" 
+[GithubMicrosoftedgeWebviewfeedbackIssue875]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/875 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 875" 
 [GithubMicrosoftedgeWebviewfeedbackIssue37]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/37 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 37" 
 [GithubMicrosoftedgeWebviewfeedbackIssue58]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/58 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 58" 
 [GithubMicrosoftedgeWebviewfeedbackIssue122]:  https://github.com/MicrosoftEdge/WebViewFeedback/issues/122 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 122" 
