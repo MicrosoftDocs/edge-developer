@@ -900,8 +900,18 @@
         },
         /* redirect to extensions */
         {
+          "source_path": "microsoft-edge/extensions-chromium/publish/contact-us.md",
+          "redirect_url": "/microsoft-edge/extensions-chromium/publish/contact-extensions-team",
+          "redirect_document_id": false
+        },
+        {
           "source_path": "microsoft-edge/extensions-chromium/publish/upload-video.md",
           "redirect_url": "/microsoft-edge/extensions-chromium/publish/publish-extension",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "microsoft-edge/extensions-chromium/publish/update.md",
+          "redirect_url": "/microsoft-edge/extensions-chromium/publish/update-extension",
           "redirect_document_id": false
         },
         /* redirect to pwas */
