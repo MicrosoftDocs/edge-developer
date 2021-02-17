@@ -1,9 +1,9 @@
 ---
-description: Process of porting Chrome extension to Microsoft Edge.
+description: Process of porting Chrome extension to Microsoft Edge
 title: Port Chrome extension To Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -30,7 +30,7 @@ To port your Chrome extension, complete the following steps.
     
 ## Next steps  
 
-After your extension package is ready to publish in the Microsoft Edge add-ons store, [create a developer account][ExtensionsPublishCreateDevAccount] and [publish your extension][ExtensionsPublishPublishExtension].  
+After your extension package is ready to publish in the Microsoft Edge Add-ons store, [create a developer account][ExtensionsPublishCreateDevAccount] and [publish your extension][ExtensionsPublishPublishExtension].  
 
 <!-- links -->  
 

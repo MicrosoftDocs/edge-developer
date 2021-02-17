@@ -3,19 +3,19 @@ description: Learn how to distribute extensions using alternate methods that don
 title: Alternate method to distribute extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
 ---
 # Alternate extension distribution methods  
 
-Generally, extensions are distributed through the Microsoft Edge add-ons store. There are some scenarios where developers may need to distribute extensions using alternate methods. For example:
+Generally, extensions are distributed through the Microsoft Edge Add-ons store. There are some scenarios where developers may need to distribute extensions using alternate methods. For example:
 
 1.  The extension is associated with other software, and it should be installed together with the rest of the bundled software.   
 1.  Network administrators want to distribute an extension throughout their organization.   
 
-Extensions that are not loaded from the Edge add-ons store are referred to as externally installed extensions. The following list provides alternate methods of distributing externally installed extensions. 
+Extensions that are not loaded from the Edge Add-ons store are referred to as externally installed extensions. The following list provides alternate methods of distributing externally installed extensions. 
 
 *   Use the Windows registry (Windows only).  
 *   Use a preferences JSON file (macOS and Linux).  
@@ -95,7 +95,7 @@ To distribute your extension using a preferences JSON file, perform the followin
         }
         ```  
  
-    *  Copy the following code to your JSON file when installing from the Microsoft Edge add-ons store on macOS and Linux.
+    *  Copy the following code to your JSON file when installing from the Microsoft Edge Add-ons store on macOS and Linux.
     
         ```json
         {
