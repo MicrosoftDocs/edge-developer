@@ -1,28 +1,28 @@
 ---
-description: Microsoft Edge Add-ons Catalog Developer Policies.
-title: Microsoft Edge Add-ons Catalog Developer Policies
+description: Microsoft Edge Add-ons store developer policies
+title: Microsoft Edge Add-ons store developer policies
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ---
-# Microsoft Edge Add-ons Catalog Developer Policies  
+# Microsoft Edge Add-ons store developer policies  
 
 ## Introduction and Objective of this document  
 
-Thank you for your interest in developing extensions for the Microsoft Edge Add-ons catalog.  The Microsoft Edge Add-ons Catalog Developer Policies \(Addons Catalog Developer Policies\) apply to your extensions, including your submission of extensions through [Partner Center][MicrosoftPartnerCenter] and the provision of such extensions through the Microsoft Edge Add-ons.  
+Thank you for your interest in developing extensions for the Microsoft Edge Add-ons store.  The Microsoft Edge Add-ons store developer policies \(Add-ons store developer policies\) apply to your extensions, including your submission of extensions through [Partner Center][MicrosoftPartnerCenter] and the provision of such extensions through the Microsoft Edge Add-ons.  
 
 ## Principles  
 
 A few principles to get you started:  
 
-*   You should offer unique and distinct value within your extensions for Microsoft Edge.  Provide a compelling reason to download your extensions from the Microsoft Edge Add-ons catalog \(Microsoft Edge Add-ons\).  
+*   You should offer unique and distinct value within your extensions for Microsoft Edge.  Provide a compelling reason to download your extensions from the Microsoft Edge Add-ons store \(Microsoft Edge Add-ons\).  
 *   You must not mislead our joint users about what your extension does, who is offering it, and so on.  
 *   You must not attempt to cheat users, the system or the ecosystem.  There is no place in our Microsoft Edge Add-ons for any kind of fraud; be it ratings and review manipulation, credit card fraud or other fraudulent activity.  
     
-Adhering to the Microsoft Edge Add-ons store Developer Policies should help you make choices that enhance the appeal and audience of your extension.  
+Adhering to the Microsoft Edge Add-ons store developer policies should help you make choices that enhance the appeal and audience of your extension.  
 
 Your extensions are crucial to the experience of hundreds of millions of users.  We look forward to experiencing what you create and are thrilled to help deliver your extensions to the world.  
 
@@ -205,7 +205,7 @@ You must not include in a notification any information users may reasonably cons
 
 #### 1.9.4 Purpose of notifications  
 
-Notifications sent from your extension must relate to that extension or to other extensions you publish in Microsoft Edge Add-ons catalog and must not include promotional messages of any kind that are not related to your extensions.  
+Notifications sent from your extension must relate to that extension or to other extensions you publish in Microsoft Edge Add-ons store and must not include promotional messages of any kind that are not related to your extensions.  
 
 ### 1.10 Advertising Conduct and Content  
 

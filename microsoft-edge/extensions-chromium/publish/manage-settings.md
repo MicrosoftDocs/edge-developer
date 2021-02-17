@@ -3,7 +3,7 @@ description: Guide on managing Microsoft Edge Partner center account
 title: Manage Account Settings
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -20,11 +20,11 @@ To display your account settings, choose the gear icon in the upper right-hand c
 *   Links to other pages to review information.  
 *   Edit your account information.  
     
-In the **Account details** section, review the status and type of your account.  Your Seller ID and other publisher ID info are also displayed here.  The values are assigned by Microsoft to uniquely identify your developer account and are read-only.  
+In the **Account details** section, review the status and type of your account.  Your Seller ID and other publisher ID info are also displayed in the **Account details** section.  The values are assigned by Microsoft to uniquely identify your developer account and are read-only.  
 
 ## Contact Details  
 
-The **Contact info** section displays the details you provided when you created your account.  The Microsoft Edge extension team uses the contact details information to contact you about your account.  The publisher display name displayed in the Microsoft Edge Add-ons store is also displayed here.  
+The **Contact info** section displays the details you provided when you created your account.  The Microsoft Edge extension team uses the contact details information to contact you about your account.  The publisher display name displayed in the Microsoft Edge Add-ons store is also displayed is the **Contact info** section.  
   
 If your contact information changes edit the **Contact info** section.  Choose **Update**, make your changes, and then choose **Save**.  You may also choose **Contact info** in the left navigation menu to open the **Contact info** section.  
 
