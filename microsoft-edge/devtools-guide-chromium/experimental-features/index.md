@@ -3,11 +3,11 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/08/2021 
+ms.date: 02/17/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
-no-loc: all
+no-loc: ["Enable webhint", "Enable webhint", "Enable Network Console", "Source Order Viewer", "Enable keyboard shortcut editor", "Enable Composited Layers in 3D View", "Enable new Font Editor tool within the Styles pane", "Enable new CSS Flexbox debugging features", "Enable + button tab menus to open more tools", "Enable Welcome tab"]
 ---
 # Experimental features  
 
@@ -49,13 +49,13 @@ The following sections describe the new experimental features that are available
 | [Enable new Font Editor tool within the Styles pane](#enable-new-font-editor-tool-within-the-styles-pane) | 89 or later |  
 | [Enable new CSS Flexbox debugging features](#enable-new-css-flexbox-debugging-features) | 89 or later |  
 | [Enable + button tab menus to open more tools](#enable--button-tab-menus-to-open-more-tools) | 89 or later |  
-| [Enable Welcome tab](#enable-welcome-tool) | 89 or later |  
+| [Enable Welcome tab](#enable-welcome-tab) | 89 or later |  
 
 ### Enable new CSS grid debugging features  
 
-This experimental feature provides a number of new visualizations to help you debug CSS grid layouts.  To preview the latest experimental features, [enable this experiment](#turn-on-experimental-features) and reload DevTools.  This experiment is on by default in Microsoft Edge version 87 or later.  
+This experimental feature provides a number of new visualizations to help you debug CSS grid layouts.  To preview the latest experimental features, [turn on this experiment](#turn-on-experimental-features) and reload DevTools.  This experiment is on by default in Microsoft Edge version 87 or later.  
 
-#### Viewing on-hover grid overlays with the Inspect tool  
+#### View on-hover grid overlays with the Inspect tool  
 
 The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Choose the **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  Then, hover over a Grid element on the website you are debugging.  Outlines are displayed around the grid, and shading indicates the location of grid gaps if present.  
 
@@ -63,12 +63,12 @@ The **Inspect** tool provides a quick way to identify and visualize CSS Grid lay
    Viewing grids with the **Inspect** tool  
 :::image-end:::  
 
-#### Viewing persistent grid overlays  
+#### View persistent grid overlays  
 
-In Microsoft Edge version 86 or later, the experimental CSS grid feature also offers the option to enable persistent Grid overlays.  The persistent overlays provide several benefits.  
+In Microsoft Edge version 86 or later, the experimental CSS grid feature also offers the option to turn on persistent Grid overlays.  The persistent overlays provide several benefits.  
 
 *   The persistent overlays remain visible on the page as you scroll, move your mouse, and use other features of the DevTools.  
-*   Multiple persistent overlays can be enabled at the same time, allowing you to review several grid layouts at once.  
+*   Multiple persistent overlays may be turned on at the same time, allowing you to review several grid layouts at once.  
 *   Persistent overlays offer many configuration options, such as hiding or showing names in the grid area, grid gaps, track sizes, and so on.  
     
 The two ways to toggle a persistent grid overlay.  
@@ -85,7 +85,7 @@ The two ways to toggle a persistent grid overlay.
        **Layout** panel in DevTools  
     :::image-end:::  
     
-#### Configuring persistent overlays  
+#### Configure persistent overlays  
 
 In Microsoft Edge version 86 or later, the new **Layout** panel is located in the **Elements** tool alongside the **Styles** and **Computed** tabs.  The **Layout** panel surfaces configuration options for persistent overlays.  
 
@@ -283,7 +283,7 @@ You may now open more tools using the new **More Tools** \(`+`\) icon.  After yo
 
 <!--Available in Microsoft Edge version 89 and later.  -->  
 
-### Enable Welcome tool
+### Enable Welcome tab
 
 This experiment replaces the **What's New** tool with the new **Welcome** tool.  It displays a refreshed design for the following content.  
 
