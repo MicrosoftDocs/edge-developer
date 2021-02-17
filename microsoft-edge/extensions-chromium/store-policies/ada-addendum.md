@@ -1,9 +1,9 @@
 ---
-description: Edge developer ADA Addendum
+description: Microsoft Edge developer ADA Addendum
 title: ADA Addendum
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -34,4 +34,4 @@ These Terms and Conditions for Microsoft Edge Extensions \(the "Extensions Adden
 
 <!-- links -->  
 
-[ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies]: ./developer-policies.md "Microsoft Edge Add-ons Catalog Developer Policies | Microsoft Docs"  
+[ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies]: ./developer-policies.md "Microsoft Edge Add-ons store Developer Policies | Microsoft Docs"  

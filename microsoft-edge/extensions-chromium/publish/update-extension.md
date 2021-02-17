@@ -3,7 +3,7 @@ description: The process of updating or removing extensions from the Microsoft E
 title: Update An Extension Listing
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer

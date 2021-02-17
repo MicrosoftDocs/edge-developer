@@ -1,24 +1,24 @@
 ---
-description: Publish Microsoft Edge (Chromium) extensions to Microsoft Edge add-ons Store
+description: Publish Microsoft Edge (Chromium) extensions to Microsoft Edge Add-ons store
 title: Publish your extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ---
 # Publish your extension  
 
-After you develop and test your extension, you're ready to distribute your extension. Use the Microsoft Edge add-ons catalog to distribute your extension.  To release your existing Chromium extension for Microsoft Edge users, navigate to [port your existing Chromium extension][PortChromiumExtension].  
+After you develop and test your extension, you're ready to distribute your extension. Use the Microsoft Edge Add-ons store to distribute your extension.  To release your existing Chromium extension for Microsoft Edge users, navigate to [port your existing Chromium extension][PortChromiumExtension].  
 
-Publish your extension to the Microsoft Edge add-ons catalog to increase the reach of it and make it available to users of Microsoft Edge.  This article provides the process to submit your extension to the Microsoft Edge add-ons catalog.  
+Publish your extension to the Microsoft Edge Add-ons store to increase the reach of it and make it available to users of Microsoft Edge.  This article provides the process to submit your extension to the Microsoft Edge Add-ons store.  
 
 ## Before you begin  
 
 You should have a working prototype of your extension ready.  For information on how to create an extension, refer to the [Getting started tutorial][ExtensionsGettingStarted].  
 
-To publish your extension to the Microsoft Edge add-ons catalog, use your active developer account on [Partner Center][MicrosoftPartnerCenter].  If you don't have a developer account, create a new developer account.  To open a new developer account and register to the Microsoft Edge add-ons program, navigate to [Developer registration][DeveloperRegistration].  
+To publish your extension to the Microsoft Edge Add-ons store, use your active developer account on [Partner Center][MicrosoftPartnerCenter].  If you don't have a developer account, create a new developer account.  To open a new developer account and register to the Microsoft Edge add-ons program, navigate to [Developer registration][DeveloperRegistration].  
 
 Create a zip file that represents your extension package.  Your extension package must include the following files.  
 
@@ -30,7 +30,7 @@ The following fields in the manifest are automatically included in your store li
 *   `Name` field in the manifest file, which is the **Display name** on the store details page.  
 *   `Description` field in the manifest file, which is the **Short description** on the store details page.  Provide a short, catchy description to display at the top of the listing for your extension.  When included, the short description specified in the extension manifest file is displayed in your store listing.  If a short description isn't included in the manifest file, the first few lines of Description are displayed.  Provide a brief description to avoid content repetition on your store listing page.  
 
-## Submit your extension to Microsoft Edge add-ons store  
+## Submit your extension to Microsoft Edge Add-ons store  
 
 To submit your extension to [Partner Center][MicrosoftPartnerCenter], use the following steps.  
 
@@ -50,13 +50,13 @@ On the **Availability** page, enter the following information about the availabi
 
 ##### Visibility  
 
-Choose one of the following visibility options to define if your extension is discoverable in the Microsoft Edge add-ons catalog.  
+Choose one of the following visibility options to define if your extension is discoverable in the Microsoft Edge Add-ons store.  
 
 *   `Public` \(default\)  
-    Public allows everyone to discover your extension through search, browsing in the Microsoft Edge add-ons catalog, or using the listing URL to your extension in the Microsoft Edge add-ons store.  The listing URL is available on your Partner Center dashboard on the Extension **Overview** page.  
+    Public allows everyone to discover your extension through search, browsing in the Microsoft Edge Add-ons store, or using the listing URL to your extension in the Microsoft Edge Add-ons store.  The listing URL is available on your Partner Center dashboard on the Extension **Overview** page.  
     
 *   `Hidden`  
-    Hidden removes extensions from search results or browsing in the Microsoft Edge add-ons catalog.  To distribute hidden extensions in the Microsoft Edge add-ons store, you must share the listing URL to the extension with your customers.  
+    Hidden removes extensions from search results or browsing in the Microsoft Edge Add-ons store.  To distribute hidden extensions in the Microsoft Edge Add-ons store, you must share the listing URL to the extension with your customers.  
     
 > [!NOTE]
 > You may change the visibility of your extension from **Public** to **Hidden**.  Users who installed your extension while the visibility was set to public retain access to your extension and receive any updates you make available through the Microsoft Edge add-ons website.  
@@ -66,37 +66,37 @@ Choose one of the following visibility options to define if your extension is di
 Define the specific markets in which you plan to offer your extension.  The default setting for markets is all markets and that includes any future markets that are added later.  To choose specific markets, choose **Change markets**.  Toggle individual markets to exclude each one, or choose **Unselect all** and then add individual markets of your choice.  
 
 > [!NOTE]
-> You may change the markets where your extension is offered.  A user who installs your extension while it is available in the user's market retains access to your extension.  However, the user does not have access to any future updates submitted to the Microsoft Edge add-ons catalog.  
+> You may change the markets where your extension is offered.  A user who installs your extension while it is available in the user's market retains access to your extension.  However, the user does not have access to any future updates submitted to the Microsoft Edge Add-ons store.  
 
 Select **Save** to continue to the **Properties** section.  
 
 #### Step 4: Select Properties for your extension  
 
-On the **Properties page**, enter the following information to specify properties of your extension.  The properties are displayed to users in the Microsoft Edge add-ons catalog.  
+On the **Properties page**, enter the following information to specify properties of your extension.  The properties are displayed to users in the Microsoft Edge Add-ons store.  
 
 | Extension property name | Description |  
 |:--- |:--- |  
 | Category \(required\) | The category that best describes your extension.  Listing your extension in the right category helps users find your extension easily and understand more about it.  |  
 | Privacy policy requirements \(required\) | Indicate if your extension accesses, collects, or transmits any personal information.  Your extension may fail the certification step if you choose **Yes** and you don't provide a `Privacy policy URL`.  |  
-| Privacy policy URL | A valid privacy policy URL to communicate how your extension follows privacy laws and regulations.  You're responsible for ensuring your extension follows privacy laws and regulations.  You're also responsible for providing a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension.  To determine if your extension requires a privacy policy, navigate to [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement] and [Microsoft Edge add-ons catalog developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |  
-| Website URL | A web page that provides additional information about your extension.  The `Website URL` must point to a page on your own website, not the web listing for your extension in the Microsoft Edge add-ons catalog.  The `Website URL` helps users learn more about your extension, its features, and any other relevant information.  |  
+| Privacy policy URL | A valid privacy policy URL to communicate how your extension follows privacy laws and regulations.  You're responsible for ensuring your extension follows privacy laws and regulations.  You're also responsible for providing a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension.  To determine if your extension requires a privacy policy, navigate to [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement] and [Microsoft Edge Add-ons store developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |  
+| Website URL | A web page that provides additional information about your extension.  The `Website URL` must point to a page on your own website, not the web listing for your extension in the Microsoft Edge Add-ons store.  The `Website URL` helps users learn more about your extension, its features, and any other relevant information.  |  
 | Support contact details | The URL to your support webpage, or the email address to contact your support team.  |  
-| Mature content | Checkbox to specify if your extension includes mature content.  Extension rating helps determine the appropriate age group of the target audience of your extension.  To help determine if your extension has mature content, navigate to [Microsoft Edge add-ons catalog developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |  
+| Mature content | Checkbox to specify if your extension includes mature content.  Extension rating helps determine the appropriate age group of the target audience of your extension.  To help determine if your extension has mature content, navigate to [Microsoft Edge Add-ons store developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |  
 
 Select **Save** to continue to the **Store listings** section.  
 
 > [!Important]
-> Your developer/organization name, website URL, and support contact details that you submitted during registration are displayed to users on the Microsoft Edge add-ons store.  
+> Your developer/organization name, website URL, and support contact details that you submitted during registration are displayed to users on the Microsoft Edge Add-ons store.  
 
 #### Step 5: Add Store listing details for your extension  
 
-The information provided in the following section is displayed to users who review your listing on the Microsoft Edge add-ons catalog.  Even though some fields are optional, you should provide as much information as possible.  To list your extension in the store, the following details are required.  
+The information provided in the following section is displayed to users who review your listing on the Microsoft Edge Add-ons store.  Even though some fields are optional, you should provide as much information as possible.  To list your extension in the store, the following details are required.  
 
 *   **Description** for each language in your extension package.  
 *   **Extension Store logo** for each language in your extension package.  
     
 > [!NOTE]
-> The minimum required store listing details must be filled-out for at least one of the languages mentioned in your extension zip package.  To add or remove languages in your store listing on the Microsoft Edge add-ons catalog, use the **Add a language** dropdown on the **Store listings** page.  Additionally, you may choose to duplicate your assets from one language across others using the duplicate functionality button on the language details page.  
+> The minimum required store listing details must be filled-out for at least one of the languages mentioned in your extension zip package.  To add or remove languages in your store listing on the Microsoft Edge Add-ons store, use the **Add a language** dropdown on the **Store listings** page.  Additionally, you may choose to duplicate your assets from one language across others using the duplicate functionality button on the language details page.  
 
 | Language details property name | Description |  
 |:--- |:--- |  
@@ -108,13 +108,13 @@ The information provided in the following section is displayed to users who revi
 | Large promotional tile \(optional\) | `Large promotion tiles` are used in the store to feature extensions more prominently in the Microsoft Edge add-ons website.  The images, if submitted, are visible to the users.  The size of the PNG files must be 1400 x 560 pixels.  Additionally, you may choose to copy the asset from one language to all other languages using the duplicate button.  The button is found following the field after you upload a promotional tile for the language.  |  
 | YouTube video URL \(optional\) | You may include a promotional YouTube video of your extension.  The `YouTube video URL` video is displayed on the store listing page of your extension.  |  
 | Short description \(required\) | To edit the `short description`, you must update the description field in your manifest file of your extension package and reupload it.  |  
-| Search terms \(optional\) | `Search terms` are single words or phrases that help users discover your extension when searching in the Microsoft Edge Add-ons Catalog.  The search terms aren't displayed to users.  |  
+| Search terms \(optional\) | `Search terms` are single words or phrases that help users discover your extension when searching in the Microsoft Edge Add-ons store.  The search terms aren't displayed to users.  |  
 
 ##### YouTube video URL requirements  
 
 Ensure your video meets the following requirements.  
 
-*   Verify that the content of the YouTube video follows the [Microsoft Edge Add-ons Catalog Developer Policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  
+*   Verify that the content of the YouTube video follows the [Microsoft Edge Add-ons store Developer Policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  
 *   Turn off advertisements on your video.  For more information, navigate to [Set your default ad formats][GoogleYoutubeAnswer2531367Topic7072227] and [Ads on embedded videos][GoogleYoutubeAnswer132596].  
 *   Turn on embedding for your videos.  For more information, navigate to [Embed videos & playlists][GoogleYoutubeAnswer171780].  
     
@@ -148,9 +148,9 @@ Ensure you include the following information, as necessary.
 *   If your submission is an update to an existing extension, include information about the changes made to the extension.  
 *   Any additional information that testers must understand about your submission.  
 
-After providing the information, choose **Publish** to submit your extension to the Microsoft Edge add-ons catalog.  Your submission proceeds to the certification step.  The certification process may take up to seven business days after your submission.  
+After providing the information, choose **Publish** to submit your extension to the Microsoft Edge Add-ons store.  Your submission proceeds to the certification step.  The certification process may take up to seven business days after your submission.  
 
-When your submission passes certification, your extension is published in the Microsoft Edge add-ons catalog.  The status of your extension in the Partner Center dashboard changes to `In the Store`.  
+When your submission passes certification, your extension is published in the Microsoft Edge Add-ons store.  The status of your extension in the Partner Center dashboard changes to `In the Store`.  
 
 > [!NOTE]
 > If you encounter any issues in the submission or registration process, file a support ticket on [Extensions New Support Request][ExtensionsSupportForm] or send an email to [ext_dev_support@microsoft.com][MailtoExtDevSupportMicrosoftCom].  
@@ -160,7 +160,7 @@ When your submission passes certification, your extension is published in the Mi
 [ExtensionsGettingStarted]: ../getting-started/index.md "Getting Started With Microsoft Edge (Chromium) Extensions | Microsoft Docs"  
 [DeveloperRegistration]: ./create-dev-account.md "Register as a Microsoft Edge extensions developer | Microsoft Docs"  
 [PortChromiumExtension]: ../developer-guide/port-chrome-extension.md "Port your Chromium extension to Microsoft Edge | Microsoft Docs"  
-[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Add-ons Catalog Developer Policies | Microsoft Docs"  
+[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Add-ons store Developer Policies | Microsoft Docs"  
 
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"  
 

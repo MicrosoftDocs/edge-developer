@@ -1,16 +1,16 @@
 ---
-description: Learn how to register to a developer account to publish extensions to Microsoft Edge add-ons store.
+description: Learn how to register to a developer account to publish extensions to Microsoft Edge Add-ons store
 title: Register as a Microsoft Edge extension developer to publish extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/05/2021
+ms.date: 02/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
 ---
 # Register as a Microsoft Edge extension developer  
 
-To submit your extension to the Microsoft Edge Add-ons catalog, you must be registered as a developer with the Microsoft Edge program.  The Microsoft Edge program is located on [Partner Center][MicrosoftPartnerCenter].  
+To submit your extension to the Microsoft Edge Add-ons store, you must be registered as a developer with the Microsoft Edge program.  The Microsoft Edge program is located on [Partner Center][MicrosoftPartnerCenter].  
 
 > [!IMPORTANT]
 > There is no registration fee involved in submitting extensions to the Microsoft Edge program.  
@@ -51,7 +51,7 @@ If you have a developer account registered on Partner center, use the correspond
           **Account type**  
        :::column-end:::
        :::column span="2":::
-          The Microsoft Edge program in [Partner Center][MicrosoftPartnerCenter] offers both individual and company accounts.  The accounts are described in detail in the following bullets.  Both account types allow you to publish extensions to the Microsoft Edge Add-ons catalog.  
+          The Microsoft Edge program in [Partner Center][MicrosoftPartnerCenter] offers both individual and company accounts.  The accounts are described in detail in the following bullets.  Both account types allow you to publish extensions to the Microsoft Edge Add-ons store.  
           
           > [!IMPORTANT]
           > After enrollment, you are not able to change the value of this field.  
@@ -69,7 +69,7 @@ If you have a developer account registered on Partner center, use the correspond
           **Publisher display name**  
        :::column-end:::
        :::column span="2":::
-          This field contains the name that displays in the Microsoft Edge Add-ons catalog.  You may use a name only if it's available, and you have the rights to use it.  Company accounts must use the registered business name of your organization.  
+          This field contains the name that displays in the Microsoft Edge Add-ons store.  You may use a name only if it's available, and you have the rights to use it.  Company accounts must use the registered business name of your organization.  
           
           > [!NOTE]
           > The maximum length for this field is 50 characters.  
