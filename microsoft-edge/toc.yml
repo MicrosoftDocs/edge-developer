@@ -103,16 +103,6 @@
                   href: devtools-guide-chromium/customize/shortcuts.md
              - name: DevTools Protocol overview
                href: devtools-protocol-chromium/index.md
-             - name: Javascript troubleshooting
-               items:
-                 - name: JavaScript debugging reference
-                   href: devtools-guide-chromium/javascript/reference.md
-                 - name: Map pre-processed code to source code
-                   href: devtools-guide-chromium/javascript/source-maps.md
-                 - name: Mark content scripts as Library Code
-                   href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
-                 - name: Pause your code with breakpoints
-                   href: devtools-guide-chromium/javascript/breakpoints.md
             - name: Device testing and emulation
               items:
                 - name: Emulation overview
@@ -127,6 +117,16 @@
                   href: devtools-guide-chromium/device-mode/geolocation.md
                 - name: Simulate device orientation
                   href: devtools-guide-chromium/device-mode/orientation.md
+             - name: Javascript troubleshooting
+               items:
+                 - name: JavaScript debugging reference
+                   href: devtools-guide-chromium/javascript/reference.md
+                 - name: Map pre-processed code to source code
+                   href: devtools-guide-chromium/javascript/source-maps.md
+                 - name: Mark content scripts as Library Code
+                   href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
+                 - name: Pause your code with breakpoints
+                   href: devtools-guide-chromium/javascript/breakpoints.md
              - name: Memory troubleshooting
                items:
                  - name: Memory terminology
