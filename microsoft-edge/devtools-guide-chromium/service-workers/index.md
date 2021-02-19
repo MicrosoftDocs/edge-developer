@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, service worker, 
 ---
 # Service Worker improvements  
 
-This article teaches you about improvements to [service workers][MdnServiceWorkerApi] and the network requests that pass through each one.  The **service worker improvements** are in the **Network**, **Application**, and **Sources** tools.  The improvements include the following tasks.  
+This article teaches you about improvements to developer tools for working with [service workers][MdnServiceWorkerApi] and the network requests that pass through each one.  The **service worker improvements** are in the **Network**, **Application**, and **Sources** tools.  The improvements simplify the following tasks.  
 
 *   Debug based on Service Worker timelines.  
     *   The start of a request and duration of the bootstrap.  
