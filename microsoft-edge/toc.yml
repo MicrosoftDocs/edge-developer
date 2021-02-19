@@ -21,7 +21,7 @@
       items: 
         - name: DevTools overview
           href: devtools-guide-chromium/index.md
-        - name: "What's new"
+        - name: What's new
           items: 
             - name: Experimental features
               href: devtools-guide-chromium/experimental-features/index.md
@@ -47,7 +47,7 @@
           items:
             - name: For beginners
               items:
-                - name: Open Microsoft Edge DevTools
+                - name: Open DevTools
                   href: devtools-guide-chromium/open/index.md
                 - name: Get started with HTML and the DOM
                   href: devtools-guide-chromium/beginners/html.md
@@ -61,6 +61,8 @@
                   href: devtools-guide-chromium/javascript/index.md
                 - name: Get started with analyzing runtime performance
                   href: devtools-guide-chromium/evaluate-performance/index.md
+                - name: View page resources
+                  href: devtools-guide-chromium/resources/index.md
             - name: Edit files with Workspaces
               href: devtools-guide-chromium/workspaces/index.md
             - name: Inspect network activity
@@ -75,21 +77,18 @@
                   href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
                 - name: Get started with remote debugging Windows 10 devices
                   href: devtools-guide-chromium/remote-debugging/windows.md
-        - name: How-to guides
+        - name: Concepts
           items:
             - name: Accessibility
               items:
+                - name: Accessibility reference
+                  href: devtools-guide-chromium/accessibility/reference/index.md
                 - name: Navigate DevTools with assistive technology
                   href: devtools-guide-chromium/accessibility/navigation.md
                 - name: Track which element has focus
                   href: devtools-guide-chromium/accessibility/focus.md
-             - name: CSS
-                - name: Edit CSS font styles and settings
-                  href: devtools-guide-chromium/inspect-styles/edit-fonts.md
-                - name: Inspect CSS grid
-                  href: devtools-guide-chromium/css/grid.md
-                - name: Force DevTools into Print Preview mode
-                  href: devtools-guide-chromium/css/print-preview.md
+             - name: Command menu
+               href: devtools-guide-chromium/command-menu/index.md
              - name: Customizing DevTools 
                items: 
                 - name: Overview
@@ -100,88 +99,74 @@
                   href: devtools-guide-chromium/customize/placement.md
                 - name: Match browser language
                   href: devtools-guide-chromium/customize/localization.md
-                - name: Custom shortcuts
+                - name: Customize shortcuts
                   href: devtools-guide-chromium/customize/shortcuts.md
-             - name: Debugging
+             - name: DevTools Protocol overview
+               href: devtools-protocol-chromium/index.md
+             - name: Javascript troubleshooting
                items:
-                 - name: Debug background services
-                   href: devtools-guide-chromium/javascript/background-services.md
-                 - name: Debug network issues
-                   href: devtools-guide-chromium/network/issues.md
-                 - name: Debug progressive web apps
-                   href: devtools-guide-chromium/progressive-web-apps/index.md
-                 - name: Debug service workers
-                   href: devtools-guide-chromium/service-workers/index.md
+                 - name: JavaScript debugging reference
+                   href: devtools-guide-chromium/javascript/reference.md
                  - name: Map pre-processed code to source code
                    href: devtools-guide-chromium/javascript/source-maps.md
                  - name: Mark content scripts as Library Code
                    href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
                  - name: Pause your code with breakpoints
                    href: devtools-guide-chromium/javascript/breakpoints.md
-                 - name: Watch JavaScript expressions in real time
-                   href: devtools-guide-chromium/console/live-expressions.md
-            - name: Emulation and simulation
+            - name: Device testing and emulation
               items:
-                - name: Disable JavaScript
-                  href: devtools-guide-chromium/javascript/disable.md
+                - name: Emulation overview
+                  href: devtools-guide-chromium/device-mode/index.md
                 - name: Emulate dual-screen and foldable devices
                   href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
                 - name: Emulate and test other browsers
                   href: devtools-guide-chromium/device-mode/testing-other-browsers.md
-                - name: Emulate vision deficiencies
-                  href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
                 - name: Override the user agent string
                   href: devtools-guide-chromium/device-mode/override-user-agent.md
                 - name: Override geolocation
                   href: devtools-guide-chromium/device-mode/geolocation.md
                 - name: Simulate device orientation
                   href: devtools-guide-chromium/device-mode/orientation.md
-                - name: Simulate color schemes
-                  href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
-                - name: Simulate reduced motion
-                  href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
-            - name: IE mode
-              href: devtools-guide-chromium/ie-mode/index.md
-            - name: Memory
-              items:
-                - name: Fix memory problems
-                  href: devtools-guide-chromium/memory-problems/index.md
-            - name: Performance
-              items:
+             - name: Memory troubleshooting
+               items:
+                 - name: Memory terminology
+                   href: devtools-guide-chromium/memory-problems/memory-101.md
+                 - name: Fix memory problems
+                   href: devtools-guide-chromium/memory-problems/index.md
+             - name: Performance troubleshooting
+               items:
                 - name: Performance analysis reference
                   href: devtools-guide-chromium/evaluate-performance/reference.md
                 - name: Timeline event reference
-                  href: devtools-guide-chromium/evaluate-performance/performance-reference.md        
+                  href: devtools-guide-chromium/evaluate-performance/performance-reference.md
+             - name: Service worker troubleshooting
+               href: devtools-guide-chromium/service-workers/index.md      
         - name: Reference
           items:
             - name: 3D view
               href: devtools-guide-chromium/3d-view/index.md
-            - name: Accessibility
-              items:
-                - name: Accessibility feature reference
-                  href: devtools-guide-chromium/accessibility/reference/index.md
-                - name: Animations
-                  href: devtools-guide-chromium/inspect-styles/animations.md
-                - name: Coverage
-                  href: devtools-guide-chromium/coverage/index.md
+            - name: Animations
+              href: devtools-guide-chromium/inspect-styles/animations.md
             - name: Application
               items:
-                - name: Cookies
-                  href: devtools-guide-chromium/storage/cookies.md
-                - name: Local storage
-                  href: devtools-guide-chromium/storage/localstorage.md
-                - name: IndexedDB
-                  href: devtools-guide-chromium/storage/indexeddb.md
-                - name: Session storage
-                  href: devtools-guide-chromium/storage/sessionstorage.md
                 - name: Application cache
                   href: devtools-guide-chromium/storage/applicationcache.md
-                - name: WebSQL
-                  href: devtools-guide-chromium/storage/websql.md
                 - name: Cache
                   href: devtools-guide-chromium/storage/cache.md
-          - name: Command menu
-            href: devtools-guide-chromium/command-menu/index.md
+                - name: Cookies
+                  href: devtools-guide-chromium/storage/cookies.md
+                - name: Debug background services
+                  href: devtools-guide-chromium/javascript/background-services.md
+                - name: Debug PWAs
+                  href: devtools-guide-chromium/progressive-web-apps/index.md
+                - name: IndexedDB
+                  href: devtools-guide-chromium/storage/indexeddb.md
+                - name: Local storage
+                  href: devtools-guide-chromium/storage/localstorage.md
+                - name: Session storage
+                  href: devtools-guide-chromium/storage/sessionstorage.md
+                - name: WebSQL
+                  href: devtools-guide-chromium/storage/websql.md
           - name: Console
             items: 
               - name: Console overview
@@ -196,16 +181,29 @@
                 href: devtools-guide-chromium/console/api.md
               - name: Utilities API reference
                 href: devtools-guide-chromium/console/utilities.md
+              - name: Watch JavaScript expressions in real time
+                href: devtools-guide-chromium/console/live-expressions.md
+          - name: Coverage
+            href: devtools-guide-chromium/coverage/index.md
           - name: Device emulation
             items:
               - name: Use device emulation
                 href: devtools-guide-chromium/device-mode/index.md
               - name: Emulate dual-screen and foldable devices
                 href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
-          - name: DevTools Protocol
-            href: devtools-protocol-chromium/index.md
+          - name: Elements
+             - name: CSS reference
+               href: devtools-guide-chromium/css/reference.md
+             - name: Edit CSS font styles and settings
+               href: devtools-guide-chromium/inspect-styles/edit-fonts.md
+             - name: Inspect CSS grid
+               href: devtools-guide-chromium/css/grid.md
+             - name: Force DevTools into Print Preview mode
+               href: devtools-guide-chromium/css/print-preview.md
           - name: Keyboard shortcuts
             href: devtools-guide-chromium/shortcuts/index.md
+          - name: IE mode
+            href: devtools-guide-chromium/ie-mode/index.md
           - name: Issues
             href: devtools-guide-chromium/issues/index.md
           - name: Media
@@ -214,8 +212,6 @@
             items:
               - name: Memory overview
                 href: devtools-guide-chromium/memory-problems/index.md
-              - name: Understand memory terminology
-                href: devtools-guide-chromium/memory-problems/memory-101.md
               - name: Record heap snapshots
                 href: devtools-guide-chromium/memory-problems/heap-snapshots.md
               - name: Speed up JavaScript runtime
@@ -223,15 +219,27 @@
               - name: Use allocation instrumentation on timeline
                 href: devtools-guide-chromium/memory-problems/allocation-profiler.md
           - name: Network
-            href: devtools-guide-chromium/network/reference.md
-          - name: Performance
             items:
               - name: Overview
-                href: devtools-guide-chromium/evaluate-performance/reference.md
+                href: devtools-guide-chromium/network/reference.md
+              - name: Troubleshooting network issues
+                href: devtools-guide-chromium/network/issues.md
+          - name: Performance
+            items:
+              - name: Analyze runtime performance
+                href: devtools-guide-chromium/rendering-tools/index.md
               - name: Timeline events mode
                 href: devtools-guide-chromium/evaluate-performance/performance-reference.md
           - name: Remote devices
             href: devtools-guide-chromium/remote-debugging/local-server.md
+          - name: Rendering
+            items:
+              - name: Emulate vision deficiencies
+                href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
+              - name: Simulate color schemes
+                href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
+              - name: Simulate reduced motion
+                href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
           - name: Security
             href: devtools-guide-chromium/security/index.md
           - name: Sources
@@ -240,7 +248,9 @@
                 href: devtools-guide-chromium/sources/index.md
               - name: JavaScript debugging reference
                 href: devtools-guide-chromium/javascript/reference.md
-              - name: Override web page resources with local copies
+              - name: Disable JavaScript
+                href: devtools-guide-chromium/javascript/disable.md
+              - name: Overrides
                 href: devtools-guide-chromium/javascript/overrides.md
               - name: Snippets
                 href: devtools-guide-chromium/javascript/snippets.md
