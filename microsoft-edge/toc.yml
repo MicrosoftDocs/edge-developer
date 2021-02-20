@@ -216,7 +216,7 @@
             items:
               - name: Overview
                 href: devtools-guide-chromium/network/reference.md
-              - name: Troubleshooting network issues
+              - name: Network issues guide
                 href: devtools-guide-chromium/network/issues.md
           - name: Performance
             items:
