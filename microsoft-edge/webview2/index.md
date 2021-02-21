@@ -58,7 +58,7 @@ Hybrid applications allow developers to enjoy the best of both worlds.  Hybrid a
    :::column-end:::
    :::column span="1":::
       **Microsoft support**  
-      Microsoft provides support and adds new feature requests when WebView2 is release as GA.  
+      Microsoft provides support and adds new feature requests when WebView2 is released as GA.  
    :::column-end:::
 :::row-end:::  
 :::row:::
