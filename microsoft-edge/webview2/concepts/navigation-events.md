@@ -3,7 +3,7 @@ description: Navigation
 title: Navigation | WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/10/2020
+ms.date: 02/05/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview

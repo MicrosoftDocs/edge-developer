@@ -3,7 +3,7 @@ description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/02/2020
+ms.date: 02/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, privacy, whitepaper, trust
@@ -141,7 +141,7 @@ When returning the media license, a media identifier is created which is unique 
 To disable all DRM and content protections, go to `edge://settings/content/protectedContent` and turn off the **Allow sites to play protected content (recommended)** and **Allow identifiers for protected content (computer restart may be required)** settings.  
 
 *   Turning off the **Allow sites to play protected content** setting disables playback for CDM-based DRM systems such as PlayReady and Widevine, but not for non-CDM-based systems like Flash Access DRM.  To manage Flash site permissions, go to `edge://settings/content/flash`.  Turning off the setting causes media functionality to stop working properly.  
-*   Turning off the **Allow identifiers for protected content** setting prevents the creation of identifiers for Flash Access DRM and prevents Widevine from periodically fetching updates from Google.  Turning odd the setting may cause some media functionality on some sites to stop working properly.  
+*   Turning off the **Allow identifiers for protected content** setting prevents the creation of identifiers for Flash Access DRM and prevents Widevine from periodically fetching updates from Google.  Turning off the setting may cause some media functionality on some sites to stop working properly.  
 
 ## Do Not Track  
 
@@ -219,7 +219,7 @@ To import data from another browser at any time, go to `edge://settings/importDa
 
 You may download and install Microsoft Edge on platforms such as Windows and macOS.  Microsoft Edge uses the updater service to keep your version of Microsoft Edge up to date and secure.  
 
-When you download and install Microsoft Edge, information about your device, such as your release channel, basic hardware information, update identifiers, an identifier unique to your device, and a resettable identifier unique to your browser are sent to Microsoft during the installation process.  The IP address of the device is sent to the updater service, but the last decimal is scrubbed for added privacy protections.  During each browsing session, a new randomly generated token is created to install updated versions of Microsoft Edge.  The token is not associated with any personal information and is only used for the installation and update process and to improve the updater service.  
+When you download and install or update Microsoft Edge, information about your device, such as your release channel, basic hardware information, update identifiers, an identifier unique to your device, and a resettable identifier unique to your browser are sent to Microsoft during the installation or update process.  The IP address of the device is sent to the updater service, but the last decimal is scrubbed for added privacy protections.  During each browsing session, a new randomly generated token is created to install updated versions of Microsoft Edge.  The token is not associated with any personal information and is only used for the installation and update process and to improve the updater service.  
 
 Microsoft Edge pings the Microsoft Edge updater service about the progress of installation and update.  If an installation or update fails and crash reporting is turned on, a log is created and sent to Microsoft.  For more information about sending crash reports to Microsoft, see the [Crashes](#crashes) section.  Microsoft collects info about how you downloaded Microsoft Edge, the success of the installation, and any uninstalls to better understand the success of Microsoft Edge downloads.  
 
@@ -379,7 +379,9 @@ When you're applying coupons, cookies will be stored on your device to correctly
    Shopping and coupons  
 :::image-end:::  
 
-To help you find the best price while shopping online and using Collections, Microsoft Edge determines locally if the page or collection item you're viewing is a product detail page.  If you're looking at a product detail page, Microsoft Edge sends the details of the product to the shopping service, including the URL with personally identifiable information removed. We also send the product price, product image, product name, ratings, and reviews, along with information about Microsoft Edge and your operating system version to the service.  This data is sent over HTTPS with a randomly generated identifier.  The Microsoft shopping service will return prices from other retailers for the same product.  
+To help you find the best price while shopping online, Microsoft Edge determines locally if the page or collection item you're viewing is a product detail page.  If you're looking at a product detail page, Microsoft Edge sends the details of the product to the shopping service, including the URL with personally identifiable information removed. We also send the product price, product image, product name, ratings, and reviews, along with information about Microsoft Edge and your operating system version to the service.  This data is sent over HTTPS with a randomly generated identifier.  The Microsoft shopping service will return prices from other retailers for the same product.  
+
+If you visit a shopping domain and you are an existing Bing Rebates user, Microsoft Edge will send the domain along with cookies to the Microsoft shopping service to retrieve your Bing Rebates profile and cash back offers for the domain. If you choose to activate cash back, Microsoft Edge will send your URL to the Microsoft shopping service to receive an affiliate URL. Cookies may be stored on your device to correctly attribute the rebates provider. 
 
 The shopping service is turned on by default for all users.  To change the shopping setting in Microsoft Edge, navigate to `edge://settings/privacy`, and then turn off **Save time and money with Shopping in Microsoft Edge**.  InPrivate browsing uses the shopping setting of the profile that launched the InPrivate session.  
 
@@ -437,7 +439,7 @@ To help resolve URL typos in the address bar that result in a website error, Mic
 
 ## Sync  
 
-Signing into Microsoft Edge with a Microsoft account allows you to sync your browsing data across all your signed-in versions of Microsoft Edge.  You may sync your browsing history, favorites, settings, form fill data \(addresses and more\), passwords, extensions, and collections.  You must allow permission to turn on sync in Microsoft Edge, and each synced data type may be turned on or off individually.  Favorites includes any tabs you previously set aside in the legacy version of Microsoft Edge, which sync along with the rest of your favorites.  Deleted or modified favorites or other data from one signed-in version of Microsoft Edge sync to all other signed-in versions of Microsoft Edge where sync is turned on.  To manage sync configurations, go to `edge://settings/profiles/sync`.  Your sync settings may be managed by your organization.
+Signing into Microsoft Edge with a Microsoft account allows you to sync your browsing data across all your signed-in versions of Microsoft Edge.  You may sync your browsing history, favorites, settings, form fill data \(addresses and more\), passwords, extensions, open tabs and collections.  You must allow permission to turn on sync in Microsoft Edge, and each synced data type may be turned on or off individually.  Favorites includes any tabs you previously set aside in the legacy version of Microsoft Edge, which sync along with the rest of your favorites.  Deleted or modified favorites or other data from one signed-in version of Microsoft Edge sync to all other signed-in versions of Microsoft Edge where sync is turned on.  To manage sync configurations, go to `edge://settings/profiles/sync`.  Your sync settings may be managed by your organization.
 
 :::image type="complex" source="./media/sync.png" alt-text="Image of sync setting being set to on" lightbox="./media/sync.png":::
    Sync setting is on

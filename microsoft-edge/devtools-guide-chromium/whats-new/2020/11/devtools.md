@@ -3,7 +3,7 @@ description: Microsoft Edge on Linux, improved webhint tips in the Issues tool, 
 title: What's new in DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/15/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -57,7 +57,7 @@ To help you review issues revealed by [webhint][WebhintMain], the **Issues** too
 <!-- Title: 3D View is now integrated with Composited Layers  -->  
 <!-- Subtitle: Composited Layers are now in 3D View.  -->  
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
+:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
 You may now visualize **Layers** content alongside z-index values and the Document Object Model \(DOM\).  This feature helps you debug without switching between the [3D view][Devtools3dViewIndex] and **Layers** tools as often.  For a comprehensive visual debugging experience, the [3D View and Composited Layers are now combined][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView].  
 
@@ -355,6 +355,8 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "Download WebDriver | Microsoft Developer"  
 
 [MicrosoftinsiderDownloadPlatformLinux]: https://www.microsoftedgeinsider.com/download?platform=linux "Download Microsoft Edge Insider Channels"  
+
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
 
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"  
 
