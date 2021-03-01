@@ -297,6 +297,8 @@
               href: extensions-chromium/enterprise/hosting-and-updating.md
             - name: Autoupdating
               href: extensions-chromium/enterprise/autoupdate.md
+            - name: Declare permissions
+              href: extensions-chromium/enterprise/declarepermissions.md
     - name: Origin Trials overview
       href: origin-trials/index.md
     - name: Privacy whitepaper
