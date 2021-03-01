@@ -26,8 +26,6 @@ There are two exceptions to the Microsoft Edge Addons hosting rule:
 
 The Microsoft Edge browser periodically checks for new versions of installed Extensions and updates each without user intervention.  
 
-> [!NOTE]
-> Steps to update an Extension on Microsoft Edge Addons are planned be added.  
 
 <!-- image links -->
 
