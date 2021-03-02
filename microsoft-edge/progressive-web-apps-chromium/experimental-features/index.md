@@ -10,7 +10,7 @@ keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
 ---
 # Experimental features  
 
-Microsoft Edge DevTools provide access to experimental features that are still in development.  You may test and [provide feedback](#providing-feedback-on-experimental-features) before each feature is released.  
+Microsoft Edge provide access to experimental features that are still in development.  You may test and [provide feedback](#providing-feedback-on-experimental-features) before each feature is released.  
 
 While experimental features are available in all channels of Microsoft Edge, you may get the latest experimental features using the Microsoft Edge Canary channel.  
 
