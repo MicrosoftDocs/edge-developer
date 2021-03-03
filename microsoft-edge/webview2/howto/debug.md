@@ -123,7 +123,7 @@ In Visual Studio Code, complete the following actions to debug your code.
     :::image-end:::
     
     > [!NOTE]
-    > Because Visual Studio Code source path mapping requires the URL configuraiton setup your application will recive a command line parameter on startup.  If uneeded you can safely ignore this parameter.  
+    > Because Visual Studio Code source path mapping requires the URL configuration setup your application will receive a command line parameter on startup. If unneeded you can safely ignore this parameter.  
     
 1.  Run the code.  
     1.  On the **Run** tab, choose the launch configuration from the dropdown menu.  
