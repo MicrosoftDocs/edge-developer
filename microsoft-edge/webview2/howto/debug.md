@@ -111,7 +111,7 @@ In Visual Studio Code, complete the following actions to debug your code.
             "Path": "%path%;e:/path/to/your/application/location; "
         },
         "useWebView": true,
-        // The following two lines setup source path mapping
+        // The following two lines setup source path mapping, where `url` is the start page of your application, and `webRoot` is the top level directory with all your code files.
         "url": "file:///${workspaceFolder}/path/to/your/toplevel/FOO.HTML",
         "webRoot": "${workspaceFolder}/path/to/your/assets"
     ```  
