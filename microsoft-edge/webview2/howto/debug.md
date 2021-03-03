@@ -111,6 +111,9 @@ In Visual Studio Code, complete the following actions to debug your code.
             "Path": "%path%;e:/path/to/your/application/location; "
         },
         "useWebView": true,
+        // The following two lines setup source path mapping
+        "url": "file:///${workspaceFolder}/path/to/your/toplevel/FOO.HTML",
+        "webRoot": "${workspaceFolder}/path/to/your/assets"
     ```  
     
 1.  To set a breakpoint in your source code, hover on the line, and select `F9`
@@ -120,7 +123,7 @@ In Visual Studio Code, complete the following actions to debug your code.
     :::image-end:::
     
     > [!NOTE]
-    > Because Visual Studio Code does not perform source mapping, ensure you set breakpoints in the same file that WebView2 uses.  If the paths do not match, Visual Studio Code does not pause the running code at the breakpoint.  
+    > Because Visual Studio Code source path mapping requires the URL configuraiton setup your application will recive a command line parameter on startup.  If uneeded you can safely ignore this parameter.  
     
 1.  Run the code.  
     1.  On the **Run** tab, choose the launch configuration from the dropdown menu.  
