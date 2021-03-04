@@ -19,15 +19,19 @@ While experimental features are available in all channels of Microsoft Edge, you
 To turn on \(or off\) experimental features in Microsoft Edge, complete the following steps.  
 
   
-1.  Open the Microsoft Edge flags page by typing `edge://flags` into the address bar. Make sure you are using a version of Microsoft Edge that has the feature flag.
+1.  Open the Microsoft Edge flags page by navigating to `edge://flags` using the address bar. Make sure you are using a version of Microsoft Edge that has the relevant feature flag listed in this article (see [Experimental features](#experimental-features).
 
-1.  Find the relevant experimental flag from this article and change it's status to `Enabled`. Each experiment will usually have it's own flag to toggle on or off.
-    
+1.  Find the relevant experimental flag on the page and change it's status to `Enabled`. Each experiment will usually have it's own flag to toggle on or off.
+
+:::image type="complex" source="../media/enable_flag.png" alt-text="Changing an experimental flag status" lightbox="../media/enable_flag.png":::
+   Changing an experimental flag status  
+:::image-end:::
+
 1.  Close and restart Microsoft Edge  
 
     
 > [!NOTE]
-> Experimental features are constantly being updated and may cause performance issues.  To turn off an experimental feature, open the **edge://flags** again page change the status of the feature to `Disabled`.  
+> Experimental features are constantly being updated and may cause performance issues.  To turn off an experimental feature, open the **edge://flags** page and change the status of the feature to `Disabled`.  
 
 ## Experimental features  
 
