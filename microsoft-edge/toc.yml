@@ -311,6 +311,8 @@
           href: progressive-web-apps-chromium/serviceworker.md
         - name: Web app manifests
           href: progressive-web-apps-chromium/webappmanifests.md
+        - name: Experimental features
+          href: progressive-web-apps-chromium/experimental-features/index.md
     - name: Playwright overview
       href: playwright/index.md
     - name: Puppeteer overview
