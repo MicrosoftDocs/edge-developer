@@ -134,7 +134,7 @@ Previously, the **Log Levels** dropdown remained highlighted after you chose the
 
 Previously, the **Console** did not output valid double quote \(`"`\) characters in JavaScript strings.  Starting in Microsoft Edge version  90, the **Console** formats outputs JavaScript strings using escaped double quote \(`"`\) characters.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1178530][CR1178530].  
 
-:::image type="complex" source="../../media/2021/02/console-string-formatted-double-quotes.msft.png" alt-text="The Console outputs JavaScript strings using escaped double quote (") characters" lightbox="../../media/2021/02/console-string-formatted-double-quotes.msft.png":::
+:::image type="complex" source="../../media/2021/02/console-string-formatted-double-quotes.msft.png" alt-text="The Console outputs JavaScript strings using escaped double quote (&#0022;) characters" lightbox="../../media/2021/02/console-string-formatted-double-quotes.msft.png":::
    The **Console** outputs JavaScript strings using escaped double quote \(`"`\) characters  
 :::image-end:::  
 
