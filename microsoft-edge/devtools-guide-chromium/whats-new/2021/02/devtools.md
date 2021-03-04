@@ -189,9 +189,9 @@ To review the history of this feature in the Chromium open-source project, navig
 <!-- does not work in canary 90.0.813.0 -->  
 The new **Remote Address Space** column displays the network IP address space of each network resource.  To choose the new **Remote Address Space** column, navigate to the **Network** tool.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1128885][CR1128885].  
 
-:::image type="complex" source="../../media/2021/02/remote-address-space.msft.png" alt-text="New Remote Address Space column" lightbox="../../media/2021/02/remote-address-space.msft.png":::
-   New **Remote Address Space** column  
-:::image-end:::  
+<!-- image markdown -->  
+<!--image title:  New **Remote Address Space** column  -->  
+<!-- image markdown -->  
 
 ### Display allowed and disallowed features in the Frame details view  
 
@@ -240,7 +240,7 @@ Previously, the `fn.displayName` property allowed you \(a developer\) to control
 
 This experiment provides a new and improved **full accessibility tree view** in the **Elements** tool.  Previously, only the [Accessibility][DevtoolsAccessibilityReferenceTheAccessibilityPane] pane provided a display of the nodes.  The **Accessibility** pane displays the direct ancestor chain from the root node to the inspected node.  After you turn on this experiment, the new **full accessibility tree view** in the **Elements** tool displays a improved view of the nodes.  It makes the accessibility tree more useful and easier to explore and use.  After you turn on this experiment, to switch from the existing **DOM tree view** to the new **full accessibility tree view**, navigate to the **Elements** tool and choose the new **Switch to full accessibility tree view** bar.  To switch back to **DOM tree view**, navigate to the **Elements** tool and choose the new **Switch to DOM tree view** bar.  To turn on the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] and choose the checkbox next to **Enable full accessibility tree view in Elements pane**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [887173][CR887173].  
 
-:::image type="complex" source="../../media/2021/02/elements-switch-to-accesibility-tree-view.msft.png" alt-text="Display the full accessibility tree view" lightbox="../../media/2021/02/elements-switch-to-accesibility-tree-view.msft":::
+:::image type="complex" source="../../media/2021/02/elements-switch-to-accesibility-tree-view.msft.png" alt-text="Display the full accessibility tree view" lightbox="../../media/2021/02/elements-switch-to-accesibility-tree-view.msft.png":::
    Display the **full accessibility tree view**  
 :::image-end:::  
 
