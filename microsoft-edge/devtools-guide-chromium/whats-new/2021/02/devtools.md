@@ -63,19 +63,23 @@ DevTools now has dedicated CSS flexbox debugging tools.  When an HTML element ha
 :::row:::
    :::column span="":::
       To open the **Flexbox** editor, navigate to the **Styles** pane and choose the new icon next to the `display: flex` or `display: inline-flex`.  Flexbox editor provides a quick way to edit the flexbox properties.  
-      
+   :::column-end:::
+   :::column span="":::
+      In addition, the **Layout** pane has a **Flexbox** section, display all the flexbox elements on the webpage.  You may toggle the overlay of each element.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
       :::image type="complex" source="../../media/2021/02/elements-styles-display-flex-window.msft.png" alt-text="CSS flexbox debugging tools" lightbox="../../media/2021/02/elements-styles-display-flex-window.msft.png":::
          CSS flexbox debugging tools  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      In addition, the **Layout** pane has a **Flexbox** section, display all the flexbox elements on the webpage.  You may toggle the overlay of each element.  
-      
       :::image type="complex" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="Flexbox section in the Layout pane" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
          **Flexbox** section in the **Layout** pane  
       :::image-end:::  
    :::column-end:::
-:::row-end:::
+:::row-end:::  
 
 ## Keyboard navigation improvements for network requests  
 
@@ -188,29 +192,33 @@ Frame details view now displays a list of allowed and disallowed browser feature
 
 ### New SameParty column in the Cookies pane  
 
-The **Cookies** pane in the **Application** tool now displays the `SameParty` attribute of the cookies.  The `SameParty` attribute is a new boolean attribute to indicate whether a cookie should be included in requests to origins of the same [First-Party Sets][GithubPrivacycgFirstPartySets].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1161427][CR1161427].  
+In the Application tool, the **Cookies** pane now displays the `SameParty` attribute of the cookies.  The `SameParty` attribute is a new boolean attribute to indicate whether a cookie should be included in requests to origins of the same [First-Party Sets][GithubPrivacycgFirstPartySets].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1161427][CR1161427].  
 
 :::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="SameParty column in Application tool" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
    **SameParty** column in **Application** tool  
 :::image-end:::  
 
-### Deprecated non-standard fn.displayName support  
+### fn.displayName property in the Console tool is now deprecated  
 
-Support for the non-standard `fn.displayName` is now deprecated.  Instead, use `fn.name`.  Microsoft Edge has traditionally supported the non-standard `fn.displayName` property as a way for you \(a developer\) to control debug names for functions that display in `error.stack` and in DevTools stack traces.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1177685][CR1177685].  
+The `fn.displayName` property is now deprecated, and replaced by the `fn.name` property.  Previously, the `fn.displayName` property allowed you \(a developer\) to control debug names for functions to display in `error.stack` and in DevTools stack traces.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1177685][CR1177685].  
 
 :::row:::
    :::column span="":::
-      The **Call Stack** previously displayed `noLongerSupport`.  Support for `fn.displayName` is unreliable and not consistent across browser engines.  It slows down stack trace collection, a cost that you pay whether you actually use `fn.displayName` or not.  
-      
-      :::image type="complex" source="../../media/2021/02/console-display-name.msft.png" alt-text="Deprecation of non-standard `fn.displayName` support" lightbox="../../media/2021/02/console-display-name.msft.png":::
-         Deprecation of non-standard `fn.displayName` support  
+      The **Call Stack** previously displayed `noLongerSupport`.  Support for `fn.displayName` property is unreliable and not consistent across browser engines.  It slows down stack trace collection, a cost that you pay whether you actually use `fn.displayName` or not.  
+   :::column-end:::
+   :::column span="":::
+     Replace the `fn.displayName` with the standard `fn.name` property.  The `fn.name` property is specified in ECMAScript 2015. It replaces the `fn.displayName` property and is configurable using `Object.defineProperty`.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2021/02/console-display-name.msft.png" alt-text="An example of the fn.displayName property to control debug names for functions" lightbox="../../media/2021/02/console-display-name.msft.png":::
+         An example of the `fn.displayName` property to control debug names for functions  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-     Replace `fn.displayName` with the standard `fn.name`.  The standard `fn.name` is specified in ECMAScript 2015 to replace the non-standard `fn.displayName` property and is configurable using `Object.defineProperty`.  
-     
-     :::image type="complex" source="../../media/2021/02/console-display-name-name.msft.png" alt-text="Use `fn.name` to control debug names for functions" lightbox="../../media/2021/02/console-display-name-name.msft.png":::
-         Use `fn.name` to control debug names for functions  
+     :::image type="complex" source="../../media/2021/02/console-display-name-name.msft.png" alt-text="An example of the fn.name property to control debug names for functions" lightbox="../../media/2021/02/console-display-name-name.msft.png":::
+         An example of the `fn.name` property to control debug names for functions  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -219,10 +227,10 @@ Support for the non-standard `fn.displayName` is now deprecated.  Instead, use `
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-You may now toggle to view the new and improved full accessibility tree view of a webpage.  The current [Accessibility][DevtoolsAccessibilityReferenceTheAccessibilityPane] pane provides a limited display of the nodes, only showing the direct ancestor chain from the root node to the inspected node.  The new accessibility tree view aims to improve that and makes the accessibility tree easier to explore, useful, and easier for you to use.  After you turn on this experiment, to switch between the existing DOM tree and the full accessibility tree, open the the **Elements** tool and choose the new button.  To turn on the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] and choose the checkbox next to **Enable full accessibility tree view in Elements pane**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [887173][CR887173].  
+You may now display the new and improved full accessibility tree view of a webpage.  The [Accessibility][DevtoolsAccessibilityReferenceTheAccessibilityPane] pane provides a limited display of the nodes.  It displays the direct ancestor chain from the root node to the inspected node.  The new full accessibility tree view improves it and makes the accessibility tree more useful and easier to explore and use.  To switch between the existing DOM tree view and the full accessibility tree view in the **Elements** tool, choose the new button.  To turn on the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] and choose the checkbox next to **Enable full accessibility tree view in Elements pane**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [887173][CR887173].  
 
-:::image type="complex" source="../../media/2021/02/elements-switch-to-accesibility-tree-view.msft.png" alt-text="Full accessibility tree view" lightbox="../../media/2021/02/elements-switch-to-accesibility-tree-view.msft":::
-   Full accessibility tree view  
+:::image type="complex" source="../../media/2021/02/elements-switch-to-accesibility-tree-view.msft.png" alt-text="Display the full accessibility tree view" lightbox="../../media/2021/02/elements-switch-to-accesibility-tree-view.msft":::
+   Display the full accessibility tree view  
 :::image-end:::  
 
 ## Download the Microsoft Edge preview channels  
