@@ -19,15 +19,16 @@ While experimental features are available in all channels of Microsoft Edge, you
 To turn on \(or off\) experimental features in Microsoft Edge, complete the following steps.  
 
   
-1.  Open the Microsoft Edge flags page by navigating to `edge://flags` using the address bar. Make sure you are using a version of Microsoft Edge that has the relevant feature flag listed in this article (see [Experimental features](#experimental-features).
+1.  Open the Microsoft Edge flags page by navigating to `edge://flags` using the address bar. Make sure you are using a version of Microsoft Edge that has the relevant feature flag listed in this article (see [Experimental features](#experimental-features)).
 
 1.  Find the relevant experimental flag on the page and change it's status to `Enabled`. Each experiment will usually have it's own flag to toggle on or off.
+
+1.  Close and restart Microsoft Edge  
 
 :::image type="complex" source="../media/enable_flag.png" alt-text="Changing an experimental flag status" lightbox="../media/enable_flag.png":::
    Changing an experimental flag status  
 :::image-end:::
 
-1.  Close and restart Microsoft Edge  
 
     
 > [!NOTE]
@@ -43,14 +44,17 @@ The following sections describe the new experimental web app features that are a
 | [URL Link Handling](#URL-link-handling) | 85 or later | Windows  
 | [Window Controls Overlay](#window-controls-overlay) | 86 or later | Windows 
 | [Place holder](#place-holder) | 87 or later | All |
+| [Place holder](#place-holder) | 87 or later | All |
+| [Place holder](#place-holder) | 87 or later | All |
 
 ### Protocol Handling  
 
 This experimental feature provides a number of new visualizations to help you debug CSS grid layouts.  
 
-To preview protocol handling, look for:
+To preview protocol handling, look for and enable the edge://flag:
+
 **Desktop Web Apps support Protocol Handlers**
-in edge://flags and Enable it.    
+    
 
 #### Viewing on-hover grid overlays with the Inspect tool  
 
