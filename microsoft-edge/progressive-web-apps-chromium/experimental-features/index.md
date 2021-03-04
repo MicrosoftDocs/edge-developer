@@ -35,14 +35,18 @@ The following sections describe the new experimental web app features that are a
 
 | Experimental feature | Microsoft Edge version | Platform 
 |:--- |:--- | :--- 
-| [Protocol Handling](#enable-webhint) | 85 or later | All 
-| [URL Link Handling](#enable-network-console) | 85 or later | Windows  
-| [Window Controls Overlay](#source-order-viewer) | 86 or later | Windows 
-| [Place holder](#enable-keyboard-shortcut-editor) | 87 or later | All |
+| [Protocol Handling](#protocol-handling) | 85 or later | All 
+| [URL Link Handling](#URL-link-handling) | 85 or later | Windows  
+| [Window Controls Overlay](#window-controls-overlay) | 86 or later | Windows 
+| [Place holder](#place-holder) | 87 or later | All |
 
 ### Protocol Handling  
 
-This experimental feature provides a number of new visualizations to help you debug CSS grid layouts.  To preview the latest experimental features, [enable this experiment](#turn-on-experimental-features) and reload DevTools.  This experiment is on by default in Microsoft Edge version 87 or later.  
+This experimental feature provides a number of new visualizations to help you debug CSS grid layouts.  
+
+To preview protocol handling, look for:
+**Desktop Web Apps support Protocol Handlers**
+in edge://flags and Enable it.    
 
 #### Viewing on-hover grid overlays with the Inspect tool  
 
@@ -75,9 +79,14 @@ The two ways to toggle a persistent grid overlay.
     :::image-end:::  
     
 
-### Enable support to move tabs between panels  
+### URL Link Handling  
 
-Normally, tools such as **Elements** and **Network** may only open in the main panel that is located at the top of the DevTools.  Tools like **3D View** and **Issues** which normally only open in the **Drawer** panel that is located at the bottom of the DevTools.  After you choose the experiment, you may move tools between the top and bottom panels.  To move a tool, hover on the tab, open the contextual menu \(right-click\), and choose **Move to top** or **Move to bottom**.   This experiment allows you to customize your DevTools layout.  To display or hide the **Drawer** panel, select `Escape`.  
+Normally, tools such as **Elements** and **Network** may only open in the main panel that is located at the top of the DevTools.  Tools like **3D View** and **Issues** which normally only open in the **Drawer** panel that is located at the bottom of the DevTools.  After you choose the experiment, you may move tools between the top and bottom panels.  To move a tool, hover on the tab, open the contextual menu \(right-click\), and choose **Move to top** or **Move to bottom**.   
+
+To preview protocol handling, look for:
+**Desktop PWA URL Handling**
+in edge://flags and Enable it.    
+
 
 :::image type="complex" source="../media/experiments-move-panels.msft.png" alt-text="Moving tabs between panels" lightbox="../media/experiments-move-panels.msft.png":::
    Moving tabs between panels  
@@ -85,7 +94,7 @@ Normally, tools such as **Elements** and **Network** may only open in the main p
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
-### Enable webhint  
+### Window Controls Overlay
 
 [webhint][WebhintMain] is an open-source tool that provides real-time feedback for websites and local webpages.  The type of feedback provided by [webhint][WebhintMain].  
 
@@ -104,7 +113,7 @@ The [webhint][WebhintMain] experiment displays the webhint feedback in the [Issu
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
-### Enable Network Console  
+### Place Holder  
 
 **Network Console** is the working title of an experiment to make synthetic network requests over HTTP.  You may use the **Network Console** experiment to send web API requests.  
 
