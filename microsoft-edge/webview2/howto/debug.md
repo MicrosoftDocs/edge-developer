@@ -116,8 +116,8 @@ In Visual Studio Code, complete the following actions to debug your code.
         "webRoot": "${workspaceFolder}/path/to/your/assets"
     ```  
         > [!NOTE]
-    > Because Visual Studio Code source path mapping requires the URL, your application now receives a command line parameter when it starts. You can safely ignore this parameter if needed.  
-    > 
+        > Because Visual Studio Code source path mapping requires the URL, your application now receives a command line parameter when it starts. You can safely ignore this parameter if needed.  
+     
 1.  To set a breakpoint in your source code, hover on the line, and select `F9`
     
     :::image type="complex" source="./media/breakpointvs.png" alt-text="Breakpoint is set in Visual Studio Code" lightbox="./media/breakpointvs.png":::
