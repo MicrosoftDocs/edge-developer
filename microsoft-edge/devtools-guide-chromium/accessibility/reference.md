@@ -100,11 +100,11 @@ One advantage that the aXe extension has over the **Audits** tool is that it ena
    The aXe extension  
 :::image-end:::  
 
-## The Accessibility pane  
+## The Accessibility panel  
 
-The **Accessibility** pane is where you view the accessibility tree, ARIA attributes, and computed accessibility properties of DOM nodes.  
+The **Accessibility** panel is where you view the accessibility tree, ARIA attributes, and computed accessibility properties of DOM nodes.  
 
-To open the **Accessibility** pane:  
+To open the **Accessibility** panel:  
 
 1.  Choose the **Elements** tool.  
 1.  In the **DOM Tree**, select the element which you want to inspect.  
@@ -118,7 +118,7 @@ To open the **Accessibility** pane:
 
 The [accessibility tree][MDNAccessibilityTree] is a subset of the DOM tree.  It only contains elements from the DOM tree that are relevant and useful for displaying the contents of a page in a screen reader.  
 
-Inspect the position of an element in the accessibility tree from the [Accessibility pane](#the-accessibility-pane).  
+Inspect the position of an element in the accessibility tree from the [Accessibility](#the-accessibility-panel) panel.  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="The Accessibility Tree section" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
    The **Accessibility Tree** section  
@@ -128,7 +128,7 @@ Inspect the position of an element in the accessibility tree from the [Accessibi
 
 ARIA attributes ensure that screen readers have all of the information that they need in order to properly represent the contents of a page.  
 
-View the ARIA attributes of an element in the [Accessibility pane](#the-accessibility-pane).  
+View the ARIA attributes of an element in the [Accessibility](#the-accessibility-panel) panel.  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="The ARIA Attributes section" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
    The **ARIA Attributes** section  
