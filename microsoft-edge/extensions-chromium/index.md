@@ -1,30 +1,41 @@
 ---
-description: The overview for the Microsoft Edge (Chromium) Extensions as well as building and publishing browser extensions in general.
-title: Microsoft Edge (Chromium) Extensions
+description: An overview of building and publishing Microsoft Edge (Chromium) Extensions.
+title: Overview of Microsoft Edge (Chromium) Extensions 
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/27/2020
+ms.date: 02/10/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge, extensions development, browser extensions, addons, partner center, developer, chromium extensions
 ---
-# Microsoft Edge (Chromium) Extensions overview 
+# Overview of Microsoft Edge (Chromium) Extensions  
 
-An extension is a small program that you \(the developer\) may use to add new features to Microsoft Edge \(Chromium\) or modify the existing functionality.  An extension is intended to improve a user's day-to-day browsing experience by providing niche functionality that is important to targeted audiences.  
+An extension is a small program that you \(a developer\) use to add or modify features for Microsoft Edge \(Chromium\).  An extension is intended to improve a user's day-to-day browsing experience.  It provides niche functionality that is important to a target audience.  
 
-You may create extensions if your idea or product depends on the availability of a specific web browser or augments the browsing experience where the functionality that you want to provide extends existing websites.  Examples of companion experiences include adblockers and password managers.  
+You may create an extension if you have an idea or product that is based upon either of the following conditions.  
 
-An extension is structured similar to a regular web app.  At a minimum, it includes an app manifest JSON file that contains basic platform information, a JavaScript file to define functionality, and a HTML and CSS file to determine the look of the user interface \(as required\).  To work directly with part of the browser, such as a window or tab, you must send API requests and often reference the browser by name.  
+*   A specific web browser.  
+*   Improvements to features of specific webpages.  
+    
+Examples of companion experiences include ad blockers and password managers.  
 
-:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="A Microsoft Edge (Chromium) extension":::
+An extension is structured similar to a regular web app.  At a minimum, it should include the following features.
+
+*   An app manifest JSON file that contains basic platform information.  
+*   A JavaScript file that define functionality.  
+*   HTML and CSS files that define the user interface.  
+
+To work directly with part of the browser, such as a window or tab, you must send API requests and often reference the browser by name.  
+
+:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="A Microsoft Edge (Chromium) extension" lightbox="./media/example-extension-screenshot.png":::
   A Microsoft Edge \(Chromium\) extension  
 :::image-end:::  
 
 ## Basic guidance  
 
-Some of the most popular browsers to build for include Safari, Firefox, Chrome, Opera, Brave, and Microsoft Edge.  Great places to begin your extension development tutorials and documentation research are sites hosted by the browser organizations.  The following table is not definitive, please use it as a helpful starting point.  
+Some of the most popular browsers to build extensions for include Safari, Firefox, Chrome, Opera, Brave, and Microsoft Edge.  Great places to begin your extension development tutorials and documentation research are sites hosted by the browser organizations.  The following table isn't definitive, and may be used as a starting point.  
 
-| Web browser | Chromium-based? | Extension development homepage |  
+| Web browser | Chromium-based? | Extension development webpage |  
 |:--- |:--- |:--- |  
 | Safari | No | [developer.apple.com/documentation/safariservices/safari_app_extensions][AppleDeveloperSafariservicesAppExtensions] |  
 | Firefox | No | [developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions][MDNWebextensions] |  
@@ -34,23 +45,27 @@ Some of the most popular browsers to build for include Safari, Firefox, Chrome, 
 | new Microsoft Edge | Yes | [developer.microsoft.com/microsoft-edge/extensions][MicrosoftDeveloperEdgeExtensions] |  
 
 > [!IMPORTANT]
-> Many of the tutorials of the sites use browser-specific APIs that may not match the browser for which you are developing.  In most cases, a Chromium extension works as-is in different Chromium browsers and the APIs work as expected.  Only some less common APIs may be strictly browser-specific.  For links to the tutorials, see [See also](#see-also).  
+> Many of the tutorials of the sites use browser-specific APIs that may not match the browser for which you develop.  In most cases, a Chromium extension works as-is in different Chromium browsers and the APIs work as expected.  Only some less common APIs may be strictly browser-specific.  For links to the tutorials, navigate to [See also](#see-also).  
 
-## Why Chromium?
+## Why Chromium?  
 
-If your goal is to publish your extension to as many browser extensions stores as possible, it must be modified for multiple versions in order to target and run in each distinct browser environment.  [Safari extensions][AppleDeveloperSafariservicesAppExtensions], unlike other extension types, may leverage both web and native code to communicate with counterpart native applications.  [Firefox extensions][MDNWebextensions] share more in common with the other extension types but there are also some [differences][ExtensionworkshopPorting] to consider.  However, there is some good news; the last four browsers in the chart above are able to leverage the same code package and minimize the requirement to alter and maintain parallel versions.  That is because the browsers are based on the [Chromium open-source project][ChromiumHome].  
+If your goal is to publish your extension in the extensions store for each browser, it must be modified for each version to target and run in each distinct browser environment.  For example, [Safari extensions][AppleDeveloperSafariservicesAppExtensions] may use both web and native code to communicate with counterpart native applications.  The last four browsers in the previous table use the same code package, and minimizes the requirement to maintain parallel versions.  These browsers are based on the [Chromium open-source project][ChromiumHome].  
 
-Creating a Chromium extension enables you to write the least amount of code to maximize both the number of extension stores you are targeting and ultimately the number of users that are able to find and acquire your extension.  
+Create a Chromium extension to write the least amount of code.  It also targets the maximum number of extension stores and ultimately the maximum number of users who find and acquire your extension.  
 
 The following content focuses mostly on Chromium extensions.  
 
 ## Browser compatibility and extension testing  
 
-Occasionally, API parity does not exist between Chromium browsers.  For example, there are differences in the identity and payment APIs.  To ensure your extension meets customer expectations, review API statuses through official browser documentation such as [Chrome APIs][ChromeDeveloperExtensionsApiIndex], [Extension APIs Supported in Opera][OperaDevExtensionsApis], and [Port Chrome Extension To Microsoft (Chromium) Edge][ExtensionsChromiumDeveloperGuidePortChrome].  
+Occasionally, API parity doesn't exist between Chromium browsers.  For example, there are differences in the identity and payment APIs.  To ensure your extension meets customer expectations, review API status through the following official browser docs.  
 
-Depending on the APIs that you require, these differences may mean that you must create slightly different code packages with small differences in the code for each store.  
+*   [Chrome APIs][ChromeDeveloperExtensionsApiIndex]  
+*   [Extension APIs supported in Opera][OperaDevExtensionsApis]  
+*   [Port Chrome extension to Microsoft Edge (Chromium)][ExtensionsChromiumDeveloperGuidePortChrome]  
+    
+The APIs you require define the changes you must make to address the differences between each browser.  It may mean that you must create slightly different code packages with small differences for each store.  
 
-When developing your extension, you may sideload it in your browser to test it in different environments before submitting your extension to browser stores.  
+To test your extension in different environments before you submit it to a browser store, sideload it into your browser while you develop it.  
 
 ## Publish your extension to browser stores  
 
@@ -61,46 +76,44 @@ You may submit and seek browser extensions in the following browser stores.
 *   [Opera addons][OperaAddonsExtensions]  
 *   [Microsoft Edge Add-ons][MicrosoftEdgeAddonsCategoryExtensions]  
 
-Some stores allow you to download listed extensions from other browsers.  Downloading from from another browser may save you \(the developer\) effort upfront and remove the requirement to submit to additional stores if users are able to navigate to the existing store listings across different browsers.  However, cross-browser access is not guaranteed by browser stores.  To ensure your users are able to find your extension in different browsers, you should maintain a listing on each browser extension store.  
+Some stores allow you to download listed extensions from other browsers.  However, cross-browser access is not guaranteed by browser stores.  To ensure your users find your extension in different browsers, you should maintain a listing on each browser extension store.  
 
-An extension may have overlapping audiences that often use multiple browsers, or you may discover that it should be targeting an audience that it has not before.  To make this happen, existing Chromium extensions may be migrated from one browser to another.  
+Users may need to install your extension in different browsers. In this scenario, you may migrate existing Chromium extensions from one browser to another.  
 
 ### Migrate an existing extension to Microsoft Edge  
 
-If you already developed an extension for another Chromium browser and want to offer it and ensure it works through Microsoft Edge, you do not have to rewrite your extension.  Migrating existing Chromium extensions to other Chromium browsers is straightforward as long as the APIs you use are available on different browsers or there are other APIs that provide the required functionality.  
+If you've already developed an extension for another Chromium browser, you may submit it to the Microsoft Edge Add-ons store. You don't need to rewrite your extension, and must verify it works in Microsoft Edge.  When you migrate an existing Chromium extension to other Chromium browsers, ensure the same APIs or alternatives are available for your target browser.  
 
-For more information on porting your Chrome extension, see [Port Chrome extensions to Microsoft (Chromium) Edge][ExtensionsChromiumDeveloperGuidePortChrome].  Once you have ported your extension to the target browser, the next step is to publish it.  
+For more information on porting your Chrome extension to Microsoft Edge, navigate to [Port Chrome extensions to Microsoft Edge (Chromium)][ExtensionsChromiumDeveloperGuidePortChrome]. After you port your extension to the target browser, the next step is to publish it.  
 
-### Publishing to the Microsoft Edge add-ons website  
+### Publish to the Microsoft Edge add-ons website  
 
-To get started publishing your extension to Microsoft Edge, you must [register for a developer account][MicrosoftDeveloperRegistration] with a MSA email account \(@outlook.com, @live.com, and so on\) to submit your extension listing in the store.  When choosing an email address to register, consider if you must transfer or share ownership of the extension with others in your organization.  After registration is complete, you may create a new extension submission to the store.  
+To start publishing your extension to Microsoft Edge, you must [register for a developer account][MicrosoftDeveloperRegistration] with an MSA email account to submit your extension listing to the store.  An MSA email account includes `@outlook.com`, `@live.com`, and so on.  When you choose an email address to register, consider if you must transfer or share ownership of the extension with others in your organization.  After registration is complete, you may create a new extension submission to the store.  
 
-To submit your extension to the store, you must meet the following requirements.  
+To submit your extension to the store, ensure you provide the following items.  
 
-*   An archive \(.zip\) file that contains your code files.  
-*   All required visual assets, which includes a logo and small promotional tile.  
-*   Optional promotional media, such as screenshots, larger promotional tiles, a URL, or any combination to videos of your extension.  
-*   Information that describes your extension such as the name, short description, long description, and a link to your privacy policy.  
+*   An archive \(`.zip`\) file that contains your code files.  
+*   All required visual assets, which include a logo and small promotional tile.  
+*   Optional promotional media, such as screenshots, promotional tiles, and a video URL.  
+*   Information that describes your extension such as the name, short description, and a privacy policy link.  
 
 > [!NOTE]
-> Different stores may have different submission requirements.  The above list summarizes the [requirements][ExtensionsChromiumPublish] for publishing an extension to Microsoft Edge.  
+> Different stores may have different submission requirements.  The above list summarizes the [requirements][ExtensionsChromiumPublish] to publish an extension for Microsoft Edge.  
 
-After you complete the submission process, your extension is reviewed and either passes or fails the certification process.  Owners are notified of the outcome and given next steps as required.  If you submit an updated extension to the store, including updates to the extension listing details, a new review process is started.  
+After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.  Owners are notified of the outcome and given next steps as required.  If you submit an extension update to the store, a new review process is started.  
 
 ## See also  
 
-*   [Porting a Google Chrome extension][ExtensionworkshopPorting]  
-*   [Building a Safari App Extension][AppleDeveloperSafariservicesAppExtensionsBuilding]  
+*   [Port a Google Chrome extension][ExtensionworkshopPorting]  
+*   [Build a Safari App extension][AppleDeveloperSafariservicesAppExtensionsBuilding]  
 *   [Your first extension (Firefox)][MDNWebextensionsYourFirst]  
-*   [Getting Started Tutorial (Chrome)][ChromeDeveloperExtensionsGetstarted]  
-*   [Getting Started (Opera)][OperaDevExtensionsGettingStarted]  
-*   [Getting Started With Microsoft Edge (Chromium) Extensions][ExtensionsChromiumGettingStartedIndex]  
-
-<!-- image links -->  
+*   [Get started tutorial (Chrome)][ChromeDeveloperExtensionsGetstarted]  
+*   [Get started (Opera)][OperaDevExtensionsGettingStarted]  
+*   [Get started with Microsoft Edge (Chromium) extensions][ExtensionsChromiumGettingStartedIndex]  
 
 <!-- links -->  
 
-[ExtensionsChromiumDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md "Port Chrome Extension To Microsoft (Chromium) Edge | Microsoft Docs"  
+[ExtensionsChromiumDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md "Port Chrome Extension To Microsoft Edge (Chromium) | Microsoft Docs"  
 [ExtensionsChromiumGettingStartedIndex]: ./getting-started/index.md "Getting Started With Microsoft Edge (Chromium) Extensions | Microsoft Docs"  
 [ExtensionsChromiumPublish]: ./publish/publish-extension.md "Publish An Extension | Microsoft Docs"  
 
@@ -129,6 +142,6 @@ After you complete the submission process, your extension is reviewed and either
 
 [OperaAddonsExtensions]: https://addons.opera.com/extensions "Extensions | Opera Addons"  
 
-[OperaDevExtensions]: https://dev.opera.com/extensions "Extensions Documentation | Dev.Opera"  
-[OperaDevExtensionsApis]: https://dev.opera.com/extensions/apis "Extension APIs Supported in Opera | Dev.Opera"  
-[OperaDevExtensionsGettingStarted]: https://dev.opera.com/extensions/getting-started "Getting Started | Dev.Opera"  
+[OperaDevExtensions]: https://dev.opera.com/extensions "Extensions Documentation | Dev. Opera"  
+[OperaDevExtensionsApis]: https://dev.opera.com/extensions/apis "Extension APIs Supported in Opera | Dev. Opera"  
+[OperaDevExtensionsGettingStarted]: https://dev.opera.com/extensions/getting-started "Getting Started | Dev. Opera"  

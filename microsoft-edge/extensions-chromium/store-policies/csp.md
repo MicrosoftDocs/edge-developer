@@ -3,7 +3,7 @@ description: Content Security Policy for Edge (Chromium) Extensions.
 title: Content Security Policy (CSP)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -13,9 +13,9 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 
 In order to mitigate a large class of potential cross-site scripting issues, the Microsoft Edge Extension system has incorporated the general concept of [Content Security Policy \(CSP\)][W3CContentSecurityPolicy].  This introduces some fairly strict policies that make Extensions more secure by default, and provides you with the ability to create and enforce rules governing the types of content that may be loaded and run by your Extensions and applications.  
 
-In general, CSP works as a block/allowlisting mechanism for resources loaded or run by your Extensions.  Defining a reasonable policy for your Extension enables you to carefully consider the resources that your Extension requires, and to ask the browser to ensure that those are the only resources your Extension has access to.  These policies provide security over and above the host permissions your Extension requests; they are an additional layer of protection, not a replacement.  
+In general, CSP works as a block/allowlisting mechanism for resources loaded or run by your Extensions.  Defining a reasonable policy for your Extension enables you to carefully consider the resources that your Extension requires, and to ask the browser to ensure that those are the only resources your Extension has access to.  The policies provide security over and above the host permissions your Extension requests; they are an additional layer of protection, not a replacement.  
 
-On the web, such a policy is defined via an HTTP header or `meta` element.  Inside the Microsoft Edge Extension system, neither is an appropriate mechanism.  Instead, an Extension policy is defined via the `manifest.json` file for the Extension as follows:  
+On the web, such a policy is defined via an HTTP header or `meta` element.  Inside the Microsoft Edge Extension system, neither is an appropriate mechanism.  Instead, an Extension policy is defined using the `manifest.json` file for the Extension as follows:  
 
 ```javascript
 {
@@ -29,13 +29,13 @@ On the web, such a policy is defined via an HTTP header or `meta` element.  Insi
 
 ## Default Policy Restrictions  
 
-Packages that do not define a `manifest_version` do not have a default content security policy.  Those that select `manifest_version` 2, have a default content security policy of:  
+Packages that do not define a `manifest_version` do not have a default content security policy.  Packages that choose `manifest_version` 2, have a the follwoing default content security policy.  
 
 ```javascript
 script-src 'self'; object-src 'self'
 ```  
 
-This policy adds security by limiting Extensions and applications in three ways:  
+The policy adds security by limiting Extensions and applications in three ways:  
 
 **Eval and related functions are disabled**  
 
@@ -189,20 +189,20 @@ Download the file, include it in your package, and write:
 
 As of Chrome 46, -->  
 
-Inline scripts are able to be allowed by specifying the base64-encoded hash of the source code in the policy.  This hash must be prefixed by the used hash algorithm \(sha256, sha384 or sha512\).  See [Hash usage for \<script\> elements][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage] for an example.  
+Inline scripts are able to be allowed by specifying the base64-encoded hash of the source code in the policy.  This hash must be prefixed by the used hash algorithm \(sha256, sha384 or sha512\).  For an example, navigate to [Hash usage for \<script\> elements][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage].  
 
 **Remote Script**  
 
 If you require some external JavaScript or object resources, you may relax the policy to a limited extent by allowlisting secure origins from which scripts should be accepted.  Verify that runtime resources loaded with with elevated permissions of an Extension are exactly the resources you expect, and are not replaced by an active network attacker.  As [man-in-the-middle attacks][WikiManMiddleAttacks] are both trivial and undetectable over HTTP, those origins are not accepted.  
 
-Currently, developers are able to allowlist origins with the following schemes: `blob`, `filesystem`, `https`, and `extension`.  The host part of the origin must explicitly be specified for the `https` and `extension` schemes.  Generic wildcards such as https:, `https://*` and `https://*.com` are not allowed; subdomain wildcards such as `https://*.example.com` are allowed.  Domains in the [Public Suffix list][PublicSuffixList] are also viewed as generic top-level domains.  To load a resource from these domains, the subdomain must explicitly be listed.  For example, `https://*.cloudfront.net` is not valid, but `https://XXXX.cloudfront.net` and `https://*.XXXX.cloudfront.net` are able to be allowlisted.  
+Currently, developers are able to allowlist origins with the following schemes: `blob`, `filesystem`, `https`, and `extension`.  The host part of the origin must explicitly be specified for the `https` and `extension` schemes.  Generic wildcards such as https:, `https://*` and `https://*.com` are not allowed; subdomain wildcards such as `https://*.example.com` are allowed.  Domains in the [Public Suffix list][PublicSuffixList] are also viewed as generic top-level domains.  To load a resource from these domains, the subdomain must explicitly be listed.  For example, `https://*.cloudfront.net` is not valid, but `https://XXXX.cloudfront.net` and `https://*.XXXX.cloudfront.net` are able to be `allowlisted`.  
 
-For development ease, resources loaded over HTTP from servers on your local machine are able to be allowlisted.  You may allowlist script and object sources on any port of either `http://127.0.0.1` or `http://localhost`.  
+For development ease, resources loaded over HTTP from servers on your local machine are able to be `allowlisted`.  You may allowlist script and object sources on any port of either `http://127.0.0.1` or `http://localhost`.  
 
 > [!NOTE]
-> The restriction against resources loaded over HTTP applies only to those resources which are directly run.  You are still free, for example, to make XMLHTTPRequest connections to any origin you like; the default policy does not restrict `connect-src` or any of the other CSP directives in any way.  
+> The restriction against resources loaded over HTTP applies only to those resources which are directly run.  You are still free, for example, to make `XMLHTTPRequest` connections to any origin you like; the default policy does not restrict `connect-src` or any of the other CSP directives in any way.  
 
-A relaxed policy definition which allows script resources to be loaded from example.com over HTTPS may look like:  
+A relaxed policy definition which allows script resources to be loaded from `example.com` over HTTPS may look like:  
 
 ```javascript
 "content_security_policy": "script-src 'self' https://example.com; object-src 'self'"
@@ -221,7 +221,7 @@ The policy against `eval()` and related functions like `setTimeout(String)`, `se
 "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 ```  
 
-However, we strongly recommend against doing this.  These functions are notorious XSS attack vectors.  
+However, you should avoid relaxing policies.  The functions are notorious XSS attack vectors.  
 
 ## Tightening the default policy  
 
@@ -248,7 +248,7 @@ However, the behavior becomes more complicated both inside that DOM injected scr
 document.write("<button onclick='alert(1);'>click me</button>'");
 ```  
 
-If a user clicks on that button, the `onclick` script does not run.  This is because the script did not immediately run and code is not interpreted until the click event occurs is not considered part of the content script, so the CSP of the page \(not of the Extension\) restricts the behavior.  And since that CSP does not specify `unsafe-inline`, the inline event handler is blocked.  
+If a user chooses that button, the `onclick` script does not run.  This is because the script did not immediately run and code is not interpreted until the `click` event occurs is not considered part of the content script, so the CSP of the page \(not of the Extension\) restricts the behavior.  And since that CSP does not specify `unsafe-inline`, the inline event handler is blocked.  
 The correct way to implement the desired behavior in this case may be to add the `onclick` handler as a function from the content script as follows:  
 
 ```javascript
@@ -282,11 +282,11 @@ Thus, depending on how you write DOM injected scripts in your Extension, changes
 
 <!-- links -->  
 
-[HTML5RocksIntroductionContentSecurityPolicy]: https://www.html5rocks.com/en/tutorials/security/content-security-policy "An Introduction to Content Security Policy - HTML5 Rocks"  
+[HTML5RocksIntroductionContentSecurityPolicy]: https://www.html5rocks.com/en/tutorials/security/content-security-policy "An Introduction to Content Security Policy | HTML5 Rocks"  
 [PublicSuffixList]: https://publicsuffix.org/list "VIEW THE PUBLIC SUFFIX LIST"  
-[W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]: https://www.w3.org/TR/CSP2#script-src-hash-usage "Hash usage for \<script\> elements - Content Security Policy Level 2"  
-[W3CContentSecurityPolicy]: https://w3c.github.io/webappsec-csp "Content Security Policy Level 3"  
-[WikiManMiddleAttacks]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack "Man-in-the-middle attack - Wikipedia"  
+[W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]: https://www.w3.org/TR/CSP2#script-src-hash-usage "Hash usage for \<script\> elements - Content Security Policy Level 2 | W3C"  
+[W3CContentSecurityPolicy]: https://w3c.github.io/webappsec-csp "Content Security Policy Level 3 | W3C"  
+[WikiManMiddleAttacks]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack "Man-in-the-middle attack | Wikipedia"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
