@@ -7,7 +7,6 @@ ms.date: 11/03/2020
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.custom: seodec18
-ms.date: 12/16/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Debugger Domain - DevTools Protocol Version 0.1 (EdgeHTML)  

@@ -9,7 +9,6 @@ ms.prod: microsoft-edge
 ms.assetid: c4043c1e-15ac-4210-8851-3804c7708f49
 keywords: edge, web development, html, css, javascript, developer
 ms.custom: seodec18
-ms.date: 12/15/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Localizing Microsoft Edge extensions for Windows and the Microsoft Store  

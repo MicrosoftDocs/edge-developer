@@ -2,7 +2,6 @@
 description: This guide provides an overview of the developer features and standards included in Microsoft Edge.
 title: What's new in EdgeHTML 18
 author: MSEdgeTeam
-title: What's new in EdgeHTML 18
 ms.author: msedgedevrel
 ms.date: 11/03/2020
 ms.topic: article
@@ -10,7 +9,6 @@ ms.prod: microsoft-edge
 ms.technology: edgehtml
 keywords: edge, web development, html, css, javascript, developer, devtools
 ms.custom: RS5
-ms.date: 12/02/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Microsoft Edge Developer Guide  
