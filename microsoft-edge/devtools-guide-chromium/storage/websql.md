@@ -1,9 +1,9 @@
 ---
 description: How to view Web SQL data from the Application panel of Microsoft Edge DevTools.
-title: View Web SQL Data With Microsoft Edge DevTools
+title: View Web SQL data with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -31,7 +31,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 ## View Web SQL Data  
 
-1.  Choose the **Sources** tab to open the **Sources** tool.  The **Manifest** pane usually opens by default.  
+1.  Choose the **Sources** tool to open the **Sources** tool.  The **Manifest** pane usually opens by default.  
     
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
        The **Manifest** pane  

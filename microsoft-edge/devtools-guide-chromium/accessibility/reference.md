@@ -1,9 +1,9 @@
 ---
 description: A comprehensive reference of accessibility features in Microsoft Edge DevTools.
-title: Accessibility Reference
+title: Accessibility reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -49,7 +49,7 @@ In general, DevTools should help you fix errors related to question #2, because 
 ## Audit the accessibility of a page  
 
 > [!NOTE]
-> The **Audits** panel provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.  
+> The **Audits** tool provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.  
 
 In general, use the Audits panel to determine if:  
 
@@ -59,14 +59,14 @@ In general, use the Audits panel to determine if:
 To audit a page:  
 
 1.  Navigate to the URL that you want to audit.  
-1.  In DevTools, choose the **Audits** tab.  DevTools shows you various configuration options.  
+1.  In DevTools, choose the **Audits** tool.  DevTools shows you various configuration options.  
     
     :::image type="complex" source="../media/accessibility-audits-pane.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-audits-pane.msft.png":::
        Configure audits  
     :::image-end:::  
     
     > [!NOTE]
-    > The screenshots in this section were taken with version 79 of Microsoft Edge.  You may check what version you are running at `edge://version`.  The **Audits** panel UI looks different in earlier versions of Microsoft Edge, but the general workflow is the same.  
+    > The screenshots in this section were taken with version 79 of Microsoft Edge.  You may check what version you are running at `edge://version`.  The **Audits** tool UI looks different in earlier versions of Microsoft Edge, but the general workflow is the same.  
     
 1.  For **Device**, choose **Mobile** if you want to simulate a mobile device.  This option changes your user agent string and resizes the viewport.  If the mobile version of the page displays differently than the desktop version, this option may have a significant effect on the results of your audit.  
 1.  In the **Audits** section, make sure that **Accessibility** is enabled.  Disable the other categories if you want to exclude them from your report.  Leave them enabled if you want to discover other ways to improve the quality of your page.  
@@ -92,9 +92,9 @@ To audit a page:
     
 ### See also: aXe extension  
 
-You may prefer to use the [aXe extension][ChromeWebStoreAxe] rather than the **Audits** panel.  
+You may prefer to use the [aXe extension][ChromeWebStoreAxe] rather than the **Audits** tool.  
 The aXe extension generally provides the same information, since it is the underlying engine that powers the Audits panel.  The aXe extension has a different UI and describes audits slightly differently.  
-One advantage that the aXe extension has over the **Audits** panel is that it enables you to inspect and highlight failing nodes.  
+One advantage that the aXe extension has over the **Audits** tool is that it enables you to inspect and highlight failing nodes.  
 
 :::image type="complex" source="../media/accessibility-devtools-extension-axe-panel.msft.png" alt-text="The aXe extension" lightbox="../media/accessibility-devtools-extension-axe-panel.msft.png":::
    The aXe extension  
@@ -106,12 +106,12 @@ The **Accessibility** pane is where you view the accessibility tree, ARIA attrib
 
 To open the **Accessibility** pane:  
 
-1.  Choose the **Elements** tab.  
+1.  Choose the **Elements** tool.  
 1.  In the **DOM Tree**, select the element which you want to inspect.  
-1.  Choose the **Accessibility** tab.  This tab may be hidden behind the **More Tabs** \(![More Tabs][ImageMoreTabsIcon]\) button.  
+1.  Choose the **Accessibility** panel.  This panel may be hidden behind the **More Tabs** \(![More Tabs][ImageMoreTabsIcon]\) button.  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspect the h1 element of the DevTools homepage in the Accessibility pane" lightbox="../media/accessibility-elements-accessibility.msft.png":::
-   Inspect the `h1` element of the DevTools homepage in the **Accessibility** pane  
+:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspect the h1 element of the DevTools homepage in the Accessibility panel" lightbox="../media/accessibility-elements-accessibility.msft.png":::
+   Inspect the `h1` element of the DevTools homepage in the **Accessibility** panel  
 :::image-end:::  
 
 ### View the position of an element in the accessibility tree  
@@ -137,14 +137,14 @@ View the ARIA attributes of an element in the [Accessibility pane](#the-accessib
 ### View the computed accessibility properties of an element  
 
 > [!NOTE]
-> If you are looking for computed CSS properties, navigate to [Computed tab][DevtoolsCssReferenceViewActuallyAppliedElements].  
+> If you are looking for computed CSS properties, navigate to [Computed][DevtoolsCssReferenceViewActuallyAppliedElements] panel.  
 
-Some accessibility properties are dynamically calculated by the browser.  These properties are displayed in the **Computed Properties** section of the **Accessibility** pane.  
+Some accessibility properties are dynamically calculated by the browser.  These properties are displayed in the **Computed Properties** section of the **Accessibility** panel.  
 
-View the computed accessibility properties of an element in the [Accessibility pane](#the-accessibility-pane).  
+View the computed accessibility properties of an element in the [Accessibility](#the-accessibility-panel) panel.  
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="The Computed Properties section of the Accessibility pane" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
-   The **Computed Properties** section of the **Accessibility** pane  
+:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="The Computed Properties section of the Accessibility panel" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
+   The **Computed Properties** section of the **Accessibility** panel  
 :::image-end:::  
 
 ## View the contrast ratio of a text element in the Color Picker  
@@ -155,14 +155,14 @@ Contrast ratio measures the difference in brightness between the foreground and 
 
 The Color Picker helps you verify that your text meets recommended contrast ratio levels:  
 
-1.  Choose the **Elements** tab.  
+1.  Choose the **Elements** tool.  
 1.  In the **DOM Tree**, select the text element that you want to inspect.  
     
     :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Inspect a paragraph in the DOM Tree" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
        Inspect a paragraph in the **DOM Tree**  
     :::image-end:::  
     
-1.  In the **Styles** pane, choose the color square next to the `color` value of the element.  
+1.  In the **Styles** panel, choose the color square next to the `color` value of the element.  
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="The color property of the element" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
        The `color` property of the element  

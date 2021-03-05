@@ -1,9 +1,9 @@
 ---
 description: Use virtual devices in Microsoft Edge to build mobile-first websites.
-title: Emulate Mobile Devices in Microsoft Edge DevTools
+title: Emulate mobile devices in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile
@@ -221,7 +221,7 @@ To throttle the CPU only and not the network, complete the following steps.
 
 To throttle the network only, complete the following steps.
 
-1.  Choose the **Network** panel.
+1.  Choose the **Network** tool.
 1.  Choose **Online** > **Fast 3G** or **Slow 3G**.
     
     :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="The Throttle list in the Network panel" lightbox="../media/device-mode-network-throttle.msft.png":::

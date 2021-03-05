@@ -3,7 +3,7 @@ description: Accessibility improvements, using the DevTools in other languages, 
 title: What's new in DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -111,11 +111,11 @@ Chromium issue [#941561][CR941561]
 
 The webhint Microsoft Edge extension allows you to easily scan your web page and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.  Read more at [https://webhint.io][Webhint].  
 
-:::image type="complex" source="../../images/2019/12/webhint-browser-extension.msft.png" alt-text="The Hints tab in the DevTools when the webhint browser extension is installed" lightbox="../../images/2019/12/webhint-browser-extension.msft.png":::
-   The **Hints** tab in the DevTools when the webhint browser extension is installed  
+:::image type="complex" source="../../images/2019/12/webhint-browser-extension.msft.png" alt-text="The Hints tool in the DevTools when the webhint browser extension is installed" lightbox="../../images/2019/12/webhint-browser-extension.msft.png":::
+   The **Hints** tool in the DevTools when the webhint browser extension is installed  
 :::image-end:::  
 
-[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons].  Once you install the extension, open the DevTools and select the Hints tab.  From here, run a customizable site scan.  Head over to [webhint.io][WebhintBrowserExtension] to learn more.
+[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons].  Once you install the extension, open the DevTools and choose the **Hints** tool.  From here, run a customizable site scan.  Head over to [webhint.io][WebhintBrowserExtension] to learn more.
 
 ### 3D View  
 
@@ -226,15 +226,15 @@ DevTools has started to support the [DWARF Debugging Standard][DwarfHome], which
 
 ### Network panel updates  
 
-#### Request Initiator Chains in the Initiator tab  
+#### Request Initiator Chains in the Initiator panel  
 
 You are now able to view the initiators and dependencies of a network request as a nested list.  This may help you understand why a resource was requested, or what network activity a certain resource \(such as a script\) caused.  
 
-:::image type="complex" source="../../images/2019/12/initiators.msft.png" alt-text="A Request Initiator Chain in the Initiator tab" lightbox="../../images/2019/12/initiators.msft.png":::
-   A Request Initiator Chain in the **Initiator** tab  
+:::image type="complex" source="../../images/2019/12/initiators.msft.png" alt-text="A Request Initiator Chain in the Initiator panel" lightbox="../../images/2019/12/initiators.msft.png":::
+   A Request Initiator Chain in the **Initiator** panel  
 :::image-end:::  
 
-After [logging network activity in the Network panel][DevToolsNetworkIndex], choose a resource and then navigate to the **Initiator** tab to view the **Request Initiator Chain**:  
+After [logging network activity in the Network panel][DevToolsNetworkIndex], choose a resource and then navigate to the **Initiator** panel to view the **Request Initiator Chain**:  
 
 *   The **inspected resource** is bold.  In the screenshot above, `ai.2.min.js` is the inspected resource.  
 *   The resources above the inspected resource are the **initiators**.  In the screenshot above, `https://www.microsoftedgeinsider.com` is the initiator of `ai.2.min.js`.  In other words, `https://www.microsoftedgeinsider.com` caused the network request for `ai.2.min.js`.  
@@ -257,10 +257,10 @@ Chromium issue [#988253][CR988253]
 
 #### URL and path columns in the Network panel  
 
-Use the new **Path** and **URL** columns in the **Network** panel to display the absolute path or full URL of each network resource.  
+Use the new **Path** and **URL** columns in the **Network** tool to display the absolute path or full URL of each network resource.  
 
 :::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text="The new Path and URL columns in the Network panel" lightbox="../../images/2019/12/columns.msft.png":::
-   The new Path and URL columns in the **Network** panel  
+   The new Path and URL columns in the **Network** tool  
 :::image-end:::  
 
 To display the new columns, hover on the **Waterfall** table header, open the contextual menu \(righ-click\), and choose **Path** or **URL**.  
@@ -269,12 +269,12 @@ Chromium issue [#993366][CR993366]
 
 #### Updated User-Agent strings  
 
-DevTools supports setting a custom User-Agent string through the **Network Conditions** tab.  The User-Agent string affects the `User-Agent` HTTP header attached to network resources, and also the value of `navigator.userAgent`.  
+DevTools supports setting a custom User-Agent string through the **Network Conditions** panel.  The User-Agent string affects the `User-Agent` HTTP header attached to network resources, and also the value of `navigator.userAgent`.  
 
 The predefined User-Agent strings have been updated to reflect modern browser versions.  
 
-:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text="The User Agent menu in the Network Conditions tab" lightbox="../../images/2019/12/useragent.msft.png":::
-   The User Agent menu in the **Network Conditions** tab  
+:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text="The User Agent menu in the Network Conditions panel" lightbox="../../images/2019/12/useragent.msft.png":::
+   The User Agent menu in the **Network Conditions** panel  
 :::image-end:::  
 
 To access **Network Conditions**, [open the Command Menu][DevToolsCommandMenuIndex] and run the `Show Network Conditions` command.  
@@ -294,11 +294,11 @@ The configuration UI has a new, responsive design, and the throttling configurat
    The new configuration UI  
 :::image-end:::  
 
-### Coverage tab updates  
+### Coverage tool updates  
 
 #### Per-function or per-block coverage modes  
 
-The [Coverage tab][DevToolsCoverageIndex] has a new dropdown menu that lets you specify whether code coverage data should be collected **per function** or **per block**.  **Per block** coverage is more detailed but also far more expensive to collect.  DevTools uses **per function** coverage by default now.  
+The [Coverage][DevToolsCoverageIndex] tool has a new dropdown menu that lets you specify whether code coverage data should be collected **per function** or **per block**.  **Per block** coverage is more detailed but also far more expensive to collect.  DevTools uses **per function** coverage by default now.  
 
 > [!CAUTION]
 > You may notice large code coverage differences in HTML files depending on whether you use **per function** or **per block** mode.  When using **per function** mode, inline scripts in HTML files are treated as functions.  If the script runs at all then DevTools marks the entire script as used code.  Only if the script does not run at all does DevTools mark the script as unused code.  
@@ -328,7 +328,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 <!-- links -->  
 
 [DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
-[DevToolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Find unused JavaScript and CSS code with the Coverage tab in Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsCoverageIndex]: /microsoft-edge/devtools-guide-chromium/coverage/index "Find unused JavaScript and CSS code with the Coverage tool in Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Simulate a mobile viewport - Simulate mobile devices with Device Mode in Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsNetworkIndex]: /microsoft-edge/devtools-guide-chromium/network/index "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsNetworkReferenceViewInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#view-initiators-and-dependencies "View initiators and dependencies - Network Analysis Reference | Microsoft Docs"  

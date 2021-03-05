@@ -1,9 +1,9 @@
 ---
 description: How to find and analyze unused JavaScript and CSS code in Microsoft Edge DevTools.
-title: Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools
+title: Find unused JavaScript and CSS Code with the Coverage panel in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,9 +22,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Find Unused JavaScript And CSS Code With The Coverage Tab In Microsoft Edge DevTools  
+# Find unused JavaScript and CSS code with the Coverage panel in Microsoft Edge DevTools  
 
-The Coverage tab in Microsoft Edge DevTools helps you find unused JavaScript and CSS code.  Removing unused code may speed up your page load and save your mobile users cellular data.  
+The **Coverage** panel in Microsoft Edge DevTools helps you find unused JavaScript and CSS code.  Removing unused code may speed up your page load and save your mobile users cellular data.  
 
 :::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analyzing code coverage" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
    Analyzing code coverage  
@@ -54,25 +54,25 @@ This stylesheet does not just include the code for the button component.  It con
     
 <!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->  
 
-## Open the Coverage tab  
+## Open the Coverage panel  
 
 1.  [Open the Command Menu][DevToolsCommandMenu].  
-1.  Start typing `coverage`, select the **Show Coverage** command, and then select `Enter` to run the command.  The **Coverage** tab opens in the **Drawer**.  
+1.  Start typing `coverage`, select the **Show Coverage** command, and then select `Enter` to run the command.  The **Coverage** panel opens in the **Drawer**.  
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="The Coverage tab" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
-       The **Coverage** tab  
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="The Coverage panel" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+       The **Coverage** panel  
     :::image-end:::  
     
 ## Record code coverage  
 
-1.  Choose one of the following buttons in the **Coverage** tab:  
+1.  Choose one of the following buttons in the **Coverage** panel.  
     *   Choose **Start Instrumenting Coverage And Reload Page** \(![Start Instrumenting Coverage And Reload Page][ImageReloadIcon]\) if you want to review what code is needed to load the page.  
     *   Choose **Instrument Coverage** \(![Instrument Coverage][ImageRecordIcon]\) if you want to review what code is used after interacting with the page.  
 1.  Choose **Stop Instrumenting Coverage And Show Results** \(![Stop Instrumenting Coverage And Show Results][ImageStopIcon]\) when you want to stop recording code coverage.  
     
 ## Analyze code coverage  
 
-The table in the **Coverage** tab shows you what resources were analyzed, and how much code is used within each resource.  Choose a row to open that resource in the **Sources** panel and review a line-by-line breakdown of used code and unused code.  
+The table in the **Coverage** panel displays the resources that were analyzed, and how much code is used within each resource.  Choose a row to open that resource in the **Sources** panel and review a line-by-line breakdown of used code and unused code.  
 
 :::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="A code coverage report" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
    A code coverage report  

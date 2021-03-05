@@ -1,9 +1,9 @@
 ---
 description: The canonical documentation for Microsoft Edge DevTools keyboard shortcuts.
-title: Microsoft Edge DevTools Keyboard Shortcuts
+title: Microsoft Edge DevTools keyboard shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -36,8 +36,8 @@ To open DevTools, select the following keyboard shortcuts while your cursor is f
 | Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Open whatever panel you used last | `F12` or `Control`+`Shift`+`I` | `Command`+`Option`+`I` |  
-| Open the **Console** panel | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
-| Open the **Elements** panel | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` or `Command`+`Option`+`C` |  
+| Open the **Console** tool | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |  
+| Open the **Elements** tool | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` or `Command`+`Option`+`C` |  
 
 ## Global keyboard shortcuts  
 
@@ -55,7 +55,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Toggle the [Drawer][DevtoolsCustomizeIndexDrawer] | `Escape` | `Escape` |  
 | Normal refresh | `F5` or `Control`+`R` | `Command`+`R` |  
 | Hard refresh | `Control`+`F5` or `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
-| Search for text within the current panel.  Not supported in the **Audits**, **Application**, and **Security** panels | `Control`+`F` | `Command`+`F` |  
+| Search for text within the current panel.  Not supported in the **Audits**, **Application**, and **Security** tools | `Control`+`F` | `Command`+`F` |  
 | Opens the **Search** tab in the [Drawer][DevtoolsCustomizeIndexDrawer], which lets you search for text across all loaded resources | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
 | Open a file in the **Sources** panel | `Control`+`O` or `Control`+`P` | `Command`+`O` or `Command`+`P` |  
 | Zoom in | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |  
@@ -66,7 +66,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 <!-- TODO: make a bug about this UIPlacement link being ambiguous.  -->  
 <!-- TODO: Link "Inspect Element Mode" when a good section exists.  -->  
 
-## Elements panel keyboard shortcuts  
+## Elements tool keyboard shortcuts  
 
 | Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
@@ -81,7 +81,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Hide the currently selected element | `H` | `H` |  
 | Toggle **Edit as HTML** mode on the currently selected element | `Function`+`F2` | `F2` |  
 
-### Styles pane keyboard shortcuts  
+### Styles panel keyboard shortcuts  
 
 | Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
@@ -93,7 +93,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Increment / decrement a property value by 10 | Choose a value, then select `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Choose a value, then select `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |  
 | Increment / decrement a property value by 100 | Choose a value, then select `Control`+`Up Arrow` / `Control`+`Down Arrow` | Choose a value, then select `Command`+`Up Arrow` / `Command`+`Down Arrow` |  
 
-## Sources panel keyboard shortcuts  
+## Sources tool keyboard shortcuts  
 
 | Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
@@ -121,7 +121,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Toggle single-line comment.  If multiple lines are selected, DevTools add a comment to the start of each line | `Control`+`/` | `Command`+`/` |  
 | Turn on or off the next occurrence of whatever word the cursor is on.  Each occurrence is highlighted simultaneously | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |  
 
-## Performance panel keyboard shortcuts  
+## Performance tool keyboard shortcuts  
 
 | Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
@@ -129,13 +129,13 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Save recording | `Control`+`S` | `Command`+`S` |  
 | Load recording | `Control`+`O` | `Command`+`O` |  
 
-## Memory panel keyboard shortcuts  
+## Memory tool keyboard shortcuts  
 
 | Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  
 | Start / stop recording | `Control`+`E` | `Command`+`E` |  
 
-## Console panel keyboard shortcuts  
+## Console tool keyboard shortcuts  
 
 | Action | Windows\/Linux | macOS |  
 |:--- |:--- |:--- |  

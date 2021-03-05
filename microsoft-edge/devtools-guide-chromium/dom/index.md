@@ -1,9 +1,9 @@
 ---
 description: How to view nodes, search for nodes, edit nodes, reference nodes in the Console, break on node changes, and more.
-title: Get Started With Viewing And Changing The DOM
+title: Get started with viewing and changing the DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -49,7 +49,7 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
        Inspect a node  
     :::image-end:::  
     
-    1.  The **Elements** panel of DevTools opens.  `<li>Michelangelo</li>` is highlighted in the **DOM Tree**.  
+    1.  The **Elements** tool of DevTools opens.  `<li>Michelangelo</li>` is highlighted in the **DOM Tree**.  
         
         :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="Highlight the Michelangelo node" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
            Highlight the `Michelangelo` node  
@@ -105,7 +105,7 @@ When viewing the DOM Tree, you may find yourself interested in a DOM node that i
 
 You may search the DOM Tree by string, CSS selector, or XPath selector.  
 
-1.  Focus your cursor on the **Elements** panel.  
+1.  Focus your cursor on the **Elements** tool.  
 1.  Select `Control`+`F` \(Windows, Linux\) or `Command`+`F` \(macOS\).  The Search bar opens at the bottom of the DOM Tree.  
 1.  Type `The Moon is a Harsh Mistress`.  The last sentence is highlighted in the DOM Tree.  
     

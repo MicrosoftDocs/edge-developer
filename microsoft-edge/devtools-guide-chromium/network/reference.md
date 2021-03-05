@@ -3,7 +3,7 @@ description: A comprehensive reference of Microsoft Edge DevTools Network panel 
 title: Network Analysis reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -28,22 +28,22 @@ Discover new ways to analyze how your page loads in this comprehensive reference
 
 ## Record network requests  
 
-By default, DevTools record all network requests in the **Network** panel, so long as DevTools is open.  
+By default, DevTools record all network requests in the **Network** tool, so long as DevTools is open.  
 
 :::image type="complex" source="../media/network-network-panel.msft.png" alt-text="The Network panel" lightbox="../media/network-network-panel.msft.png":::
-   The **Network** panel  
+   The **Network** tool  
 :::image-end:::  
 
 ### Stop recording network requests  
 
 To stop recording requests, complete the following steps.  
 
-1.  On the **Network** panel, choose **Stop recording network log** \(![Stop recording network log][ImageRecordOnIcon]\).  It turns grey to indicate that DevTools is no longer recording requests.  
-1.  Select `Control`+`E` \(Windows, Linux\) or `Command`+`E` \(macOS\) while the **Network** panel is in focus.  
+1.  On the **Network** tool, choose **Stop recording network log** \(![Stop recording network log][ImageRecordOnIcon]\).  It turns grey to indicate that DevTools is no longer recording requests.  
+1.  Select `Control`+`E` \(Windows, Linux\) or `Command`+`E` \(macOS\) while the **Network** tool is in focus.  
 
 ### Clear requests  
 
-Choose **Clear** \(![Clear][ImageClearIcon]\) on the **Network** panel to clear all requests from the Requests table.  
+Choose **Clear** \(![Clear][ImageClearIcon]\) on the **Network** tool to clear all requests from the Requests table.  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="The Clear button" lightbox="../media/network-network-clear-button.msft.png":::
    The **Clear** button  
@@ -51,7 +51,7 @@ Choose **Clear** \(![Clear][ImageClearIcon]\) on the **Network** panel to clear 
 
 ### Save requests across page loads  
 
-To save requests across page loads, on the **Network** panel, turn on the **Preserve log** checkbox.  DevTools saves all requests until you disable **Preserve log**.  
+To save requests across page loads, on the **Network** tool, turn on the **Preserve log** checkbox.  DevTools saves all requests until you disable **Preserve log**.  
 
 :::image type="complex" source="../media/network-network-preserve-log.msft.png" alt-text="The Preserve Log checkbox" lightbox="../media/network-network-preserve-log.msft.png":::
    The **Preserve Log** checkbox  
@@ -61,9 +61,9 @@ To save requests across page loads, on the **Network** panel, turn on the **Pres
 
 Capture screenshots to analyze what displays for users while waiting for your page to load.  
 
-To enable screenshots, choose **Network settings**, and on the **Network** panel, turn on the **Capture screenshots** checkbox.  
+To enable screenshots, choose **Network settings**, and on the **Network** tool, turn on the **Capture screenshots** checkbox.  
 
-Refresh the page while the **Network** panel is in focus to capture screenshots.  
+Refresh the page while the **Network** tool is in focus to capture screenshots.  
 
 After capturing a screenshot, you interact with it in the following ways.  
 
@@ -134,7 +134,7 @@ Emulate Slow 3G, Fast 3G, and other connection speeds from the **Online** dropdo
 
 You may choose from different presets, such as Slow 3G or Fast 3G.  To add your own custom presets, open the Throttling menu, and choose **Custom** > **Add**.  
 
-DevTools displays a warning icon next to the **Network** tab to remind you that throttling is enabled.  
+DevTools displays a warning icon next to the **Network** tool to remind you that throttling is enabled.  
 
 #### Emulate slow network connections from the Network Conditions drawer  
 
@@ -197,7 +197,7 @@ The complete list of supported properties.
 
 ### Filter requests by type  
 
-To filter requests by request type, choose the one of the following buttons on the **Network** panel.  
+To filter requests by request type, choose the one of the following buttons on the **Network** tool.  
 
 :::row:::
    :::column span="1":::
@@ -368,7 +368,7 @@ These descriptions assume that each respective option is ranked from shortest to
 
 ## Analyze requests  
 
-So long as DevTools are open, it logs all requests in the **Network** panel.  
+So long as DevTools are open, it logs all requests in the **Network** tool.  
 Use the Network panel to analyze requests.  
 
 ### Display a log of requests  
@@ -476,13 +476,13 @@ To review the different ways that you may sort the Waterfall, navigate to [Sort 
 <!--To review the frames of a WebSocket connection, use the following steps.  
 
 1.  Choose the URL of the WebSocket connection, under the **Name** column of the Requests table.  
-1.  Choose the **Frames** tab.  The table shows the last 100 frames.  
+1.  Choose the **Frames** panel.  The table shows the last 100 frames.  
 
 To refresh the table, re-choose the name of the WebSocket connection under the **Name** column of the Requests table.  -->
 
 <!--
-:::image type="complex" source="../media/network-frames.msft.png" alt-text="The Frames tab" lightbox="../media/network-frames.msft.png":::
-   The **Frames** tab  
+:::image type="complex" source="../media/network-frames.msft.png" alt-text="The Frames panel" lightbox="../media/network-frames.msft.png":::
+   The **Frames** panel  
 :::image-end:::  
 -->
 
@@ -504,12 +504,12 @@ To refresh the table, re-choose the name of the WebSocket connection under the *
 To display a preview of a response body, use the following steps.  
 
 1.  Choose the URL of the request, under the **Name** column of the Requests table.  
-1.  Choose the **Preview** tab.  
+1.  Choose the **Preview** panel.  
 
 The Preview tab is mostly useful to display images.  
 
-:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="The Preview tab" lightbox="../media/network-network-resources-preview.msft.png":::
-   The **Preview** tab  
+:::image type="complex" source="../media/network-network-resources-preview.msft.png" alt-text="The Preview panel" lightbox="../media/network-network-resources-preview.msft.png":::
+   The **Preview** panel  
 :::image-end:::  
 
 ### Display a response body  
@@ -517,10 +517,10 @@ The Preview tab is mostly useful to display images.
 To display the response body to a request, use the following steps.  
 
 1.  Choose the URL of the request, under the **Name** column of the Requests table.  
-1.  Choose the **Response** tab.  
+1.  Choose the **Response** panel.  
 
-:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="The Response tab" lightbox="../media/network-network-resources-response.msft.png":::
-   The **Response** tab  
+:::image type="complex" source="../media/network-network-resources-response.msft.png" alt-text="The Response panel" lightbox="../media/network-network-resources-response.msft.png":::
+   The **Response** panel  
 :::image-end:::  
 
 ### Display HTTP headers  
@@ -528,24 +528,24 @@ To display the response body to a request, use the following steps.
 To display HTTP header data about a request, use the following steps.  
 
 1.  Choose the URL of the request, under the **Name** column of the Requests table.  
-1.  Choose the **Headers** tab.  
+1.  Choose the **Headers** psanel.  
 
-:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="The Headers tab" lightbox="../media/network-resources-headers.msft.png":::
-   The **Headers** tab  
+:::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="The Headers panel" lightbox="../media/network-resources-headers.msft.png":::
+   The **Headers** panel  
 :::image-end:::  
 
 #### Display HTTP header source  
 
-By default, the Headers tab shows header names alphabetically.  To dsiplay the HTTP header names in the order received, use the following steps.  
+By default, the **Headers** panel shows header names alphabetically.  To dsiplay the HTTP header names in the order received, use the following steps.  
 
-1.  Open the **Headers** tab for the request that interests you.  For more information, navigate to [Display HTTP headers](#display-http-headers).  
+1.  Open the **Headers** panel for the request that interests you.  For more information, navigate to [Display HTTP headers](#display-http-headers).  
 1.  Choose **view source**, next to the **Request Header** or **Response Header** section.  
 
 ### Display query string parameters  
 
 To display the query string parameters of a URL in a human-readable format, use the following steps.  
 
-1.  Open the **Headers** tab for the request that interests you.  For more information, navigate to [Display HTTP headers](#display-http-headers).  
+1.  Open the **Headers** panel for the request that interests you.  For more information, navigate to [Display HTTP headers](#display-http-headers).  
 1.  Navigate to the **Query String Parameters** section.  
 
 :::image type="complex" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="The Query String Parameters section" lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
@@ -571,15 +571,15 @@ To display query string parameters in a human-readable format, but with encoding
 To display the cookies sent in the HTTP header of a request, use the following steps.  
 
 1.  Choose the URL of the request, under the **Name** column of the Requests table.  
-1.  Choose the **Cookies** tab.  
+1.  Choose the **Cookies** panel.  
 
 <!--For more information about each of the columns, navigate to [Fields][ManageDataCookiesFields].  -->  
 
 <!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->  
 <!--TODO: add link when section is available -->  
 
-:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="The Cookies tab" lightbox="../media/network-network-resources-cookies.msft.png":::
-   The Cookies tab  
+:::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="The Cookies panel" lightbox="../media/network-network-resources-cookies.msft.png":::
+   The Cookies panel  
 :::image-end:::  
 
 ### Display the timing breakdown of a request  
@@ -587,14 +587,14 @@ To display the cookies sent in the HTTP header of a request, use the following s
 To display the timing breakdown of a request, use the following steps.  
 
 1.  Choose the URL of the request, under the **Name** column of the Requests table.  
-1.  Choose the **Timing** tab.  
+1.  Choose the **Timing** panel.  
 
 For a faster way to access the data, navigate to [Preview a timing breakdown](#preview-a-timing-breakdown).  
 
-For more information about each of the phases that may be displayed in the **Timing** tab, navigate to [Timing breakdown phases explained](#timing-breakdown-phases-explained).  
+For more information about each of the phases that may be displayed in the **Timing** panel, navigate to [Timing breakdown phases explained](#timing-breakdown-phases-explained).  
 
-:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="The Timing tab" lightbox="../media/network-network-resources-timing.msft.png":::
-   The **Timing** tab  
+:::image type="complex" source="../media/network-network-resources-timing.msft.png" alt-text="The Timing panel" lightbox="../media/network-network-resources-timing.msft.png":::
+   The **Timing** panel  
 :::image-end:::  
 
 More information about each of the phases.  
@@ -613,7 +613,7 @@ For more information about how to access the data without hovering, navigate to 
 
 #### Timing breakdown phases explained  
 
-More information about each of the phases that may display in the **Timing** tab.  
+More information about each of the phases that may display in the **Timing** panel.  
 
 :::row:::
    :::column span="1":::
@@ -728,15 +728,15 @@ When the Requests table is ordered chronologically, if you hover on a line, the 
 
 ### Display load events  
 
-DevTools displays the timing of the `DOMContentLoaded` and `load` events in multiple places on the **Network** panel.  The `DOMContentLoaded` event is colored blue, and the `load` event is red.  
+DevTools displays the timing of the `DOMContentLoaded` and `load` events in multiple places on the **Network** tool.  The `DOMContentLoaded` event is colored blue, and the `load` event is red.  
 
 :::image type="complex" source="../media/network-network-requests-load-events.msft.png" alt-text="The locations of the DOMContentLoaded and load events on the Network panel" lightbox="../media/network-network-requests-load-events.msft.png":::
-   The locations of the `DOMContentLoaded` and `load` events on the **Network** panel  
+   The locations of the `DOMContentLoaded` and `load` events on the **Network** tool  
 :::image-end:::  
 
 ### Display the total number of requests  
 
-The total number of requests is listed in the **Summary** pane, at the bottom of the **Network** panel.  
+The total number of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.  
 
 > [!CAUTION]
 > This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, those requests are not counted.  
@@ -747,7 +747,7 @@ The total number of requests is listed in the **Summary** pane, at the bottom of
 
 ### Display the total download size  
 
-The total download size of requests is listed in the **Summary** pane, at the bottom of the **Network** panel.  
+The total download size of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.  
 
 > [!CAUTION]
 > This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, the previous requests are not counted.  
@@ -918,7 +918,7 @@ To copy property values from network requests to your clipboard, complete the fo
     
 ## Change the layout of the Network panel  
 
-You may expand or collapse sections of the **Network** panel UI to focus important information.  
+You may expand or collapse sections of the **Network** tool UI to focus important information.  
 
 ### Hide the Filters pane  
 

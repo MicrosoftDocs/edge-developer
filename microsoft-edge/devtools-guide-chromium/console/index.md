@@ -1,9 +1,9 @@
 ---
 description: The main uses of the Microsoft Edge DevTools Console are logging messages and running JavaScript.
-title: Console Overview
+title: Console overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,7 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Console Overview  
+# Console overview  
 
   
 
@@ -68,7 +68,7 @@ Web developers often log messages to the Console to make sure that their JavaScr
       In the following figure, the **Console** displays the results of loading the page and waiting 3 seconds.  
       
       :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="The Console panel" lightbox="../media/console-console-demo.msft.png":::
-         The **Console** panel  
+         The **Console** tool  
       :::image-end:::  
       
       Try to determine which lines of code caused the browser to log the messages.  
@@ -90,8 +90,8 @@ The **Console** is also a [REPL][WikiREPLoop].  You may run JavaScript in the **
    :::column span="":::
       In the following figure, the **Console** is shown next to the DevTools homepage.  
       
-      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="The Console panel next to the DevTools homepage" lightbox="../media/devtools-console-empty.msft.png":::
-         The **Console** panel next to the DevTools homepage  
+      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="The Console tool next to the DevTools homepage" lightbox="../media/devtools-console-empty.msft.png":::
+         The **Console** tool next to the DevTools homepage  
       :::image-end:::  
    :::column-end:::
    :::column span="":::

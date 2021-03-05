@@ -3,7 +3,7 @@ description: How to move Microsoft Edge DevTools to the bottom or left of your v
 title: Change Microsoft Edge DevTools placement (Undock, Dock To Bottom, Dock To Left)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

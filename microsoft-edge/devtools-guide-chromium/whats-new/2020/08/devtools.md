@@ -3,7 +3,7 @@ description: Match keyboard shortcuts to Visual Studio Code, emulate Surface Duo
 title: What's new in DevTools (Microsoft Edge 86)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -64,7 +64,7 @@ Thank you for the positive feedback about the improved CSS grid overlays.  The C
 > [!NOTE]
 > For more information about grid overlays, navigate to [CSS grid debugging features][DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures].  
 
-The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on additional features.  The new features include multiple overlays that are persistent and configurable from a new **Layout** pane on the **Elements** panel.  
+The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on additional features.  The new features include multiple overlays that are persistent and configurable from a new **Layout** pane on the **Elements** tool.  
 
 To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**.  
 
@@ -151,12 +151,12 @@ The current effort to improve translation quality enables easier support for mor
 
 ### Highlight all search results in Elements tool  
 
-In Microsoft Edge 84 and 85, the first search result in the **Elements** panel did not highlight.  The remaining search results were highlighted correctly.  
+In Microsoft Edge 84 and 85, the first search result in the **Elements** tool did not highlight.  The remaining search results were highlighted correctly.  
 
 Thank you for sending your feedback and helping improve Chromium.  Your feedback uncovered Issue [#1103316][CR1103316] in the open-source Chromium project.  
 
 :::image type="complex" source="../../media/2020/08/elements- search-highlight-fixed.msft.png" alt-text="Highlighted first search result on Elements panel in Microsoft Edge 84 or later" lightbox="../../media/2020/08/elements- search-highlight-fixed.msft.png":::
-   Highlighted first search result on **Elements** panel in Microsoft Edge 84 or later  
+   Highlighted first search result on **Elements** tool in Microsoft Edge 84 or later  
 :::image-end:::  
 
 The issue is now fixed in all versions of Microsoft Edge.  
@@ -167,28 +167,28 @@ Chromium issue: [#1103316][CR1103316]
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
 
-### New Media panel  
+### New Media tool  
 
-DevTools now displays media players information in the [Media][DevtoolsMediaPanelIndex] panel.  
+DevTools now displays media players information in the [Media][DevtoolsMediaPanelIndex] tool.  
 
-To open the new **Media** panel, complete the following step.  
+To open the new **Media** tool, complete the following step.  
 
 1.  Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Media**.  
     
-    :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="New Media panel" lightbox="../../media/2020/08/media-panel.msft.png":::
-       New **Media** panel  
+    :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="New Media tool" lightbox="../../media/2020/08/media-panel.msft.png":::
+       New **Media** tool  
     :::image-end:::  
 
-Before the new **Media** panel in DevTools, the logging and debug information about video players was located under the **Recent Players** setting.  To open the **Recent Players** setting, navigate to `edge://media-internals` and choose the **Players** tab.  
+Before the new **Media** tool in DevTools, the logging and debug information about video players was located under the **Recent Players** setting.  To open the **Recent Players** setting, navigate to `edge://media-internals` and choose the **Players** tool.  
 
 View live content and inspect potential issues more quickly, including the following examples.  
 
 *   Why frames are dropped?  
 *   Why JavaScript is interacting with the player in an unexpected way?  
 
-### Capture node screenshots using the Elements panel context menu  
+### Capture node screenshots using the Elements tool context menu  
 
-You may now capture node screenshots using the context menu in the **Elements** panel.  
+You may now capture node screenshots using the context menu in the **Elements** tool.  
 
 For example, to take a screenshot of the table of contents, hover on the element, open the contextual menu \(right-click\), and select **Capture node screenshot**.  
 
@@ -200,7 +200,7 @@ Chromium issue: [#1100253][CR1100253]
 
 ### Issues tool updates  
 
-The Issues warning bar on the **Console** panel is now replaced with a regular message.  
+The Issues warning bar on the **Console** tool is now replaced with a regular message.  
 
 <!--todo: this figure need to be updated  -->  
 
@@ -272,22 +272,22 @@ DevTools now have better supported the following JavaScript language features.
 
 | JavaScript language feature | Details |  
 |:--- |:--- |  
-| [Logical assignment operators][V8FeaturesLogicalAssignment] | DevTools now supports logical assignment with the new `&&=`, `||=`, and `??=` operators in the **Console** and **Sources** panels.  |  
-| Pretty-print [numeric separators][V8FeaturesNumericSeparators] | DevTools now properly pretty-prints the numeric separators in the **Sources** panel.  |  
+| [Logical assignment operators][V8FeaturesLogicalAssignment] | DevTools now supports logical assignment with the new `&&=`, `||=`, and `??=` operators in the **Console** and **Sources** tools.  |  
+| Pretty-print [numeric separators][V8FeaturesNumericSeparators] | DevTools now properly pretty-prints the numeric separators in the **Sources** tool.  |  
 
 Chromium issues: [1086817][CR1086817], [1080569][CR1080569]  
 
 ### Lighthouse 6.2 in the Lighthouse panel  
 
-The **Lighthouse** panel is now running Lighthouse 6.2.  For a full list of changes, navigate to the [Lighthouse release notes][GithubGooglechromeLighthouseV620].  
+The **Lighthouse** tool is now running Lighthouse 6.2.  For a full list of changes, navigate to the [Lighthouse release notes][GithubGooglechromeLighthouseV620].  
 
 Chromium issue: [#772558][CR772558]  
 
 ### Deprecation of other origins listing in the Service Workers pane  
 
-DevTools now provides a link from the **Service workers** pane \(**Application** panel > **Service workers** pane\) to view the full list of service workers from other origins.  To access the list without opening the DevTools, navigate to `edge://service-worker-internals/?devtools`.  
+DevTools now provides a link from the **Service workers** pane \(**Application** tool > **Service workers** pane\) to view the full list of service workers from other origins.  To access the list without opening the DevTools, navigate to `edge://service-worker-internals/?devtools`.  
 
-Previously DevTools displayed a list nested under the **Application** panel > **Service workers** pane.  
+Previously DevTools displayed a list nested under the **Application** tool > **Service workers** pane.  
 
 :::image type="complex" source="../../media/2020/08/sw-other-origins.msft.png" alt-text="Link to other origins" lightbox="../../media/2020/08/sw-other-origins.msft.png":::
    Link to other origins  
@@ -318,10 +318,10 @@ Chromium issue: [#1061385][CR1090802]
 
 ### New frame details view in Application panel  
 
-DevTools now show a detailed view for each frame.  To access it, choose a frame under the **Frames** menu in the **Application** panel.  
+DevTools now show a detailed view for each frame.  To access it, choose a frame under the **Frames** menu in the **Application** tool.  
 
 :::image type="complex" source="../../media/2020/08/frame-details.msft.png" alt-text="New detailed view for a frame in Application panel" lightbox="../../media/2020/08/frame-details.msft.png":::
-   New detailed view for a frame in **Application** panel  
+   New detailed view for a frame in **Application** tool  
 :::image-end:::  
 
 Chromium issue: [#1093247][CR1093247]  
@@ -367,7 +367,7 @@ Chromium issue: [#1093227][CR1093227]
 The **Properties** pane is back.  It was [deprecated in Microsoft Edge 84][DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel].  The Microsoft Edge DevTools team and the Chrome DevTools team are planning improvements for inspecting properties of elements.  
 
 :::image type="complex" source="../../media/2020/08/properties-pane.msft.png" alt-text="Properties pane in the Elements panel" lightbox="../../media/2020/08/properties-pane.msft.png":::
-   **Properties** pane in the **Elements** panel  
+   **Properties** pane in the **Elements** tool  
 :::image-end:::  
 
 Chromium issue:  <!--  [#1105205][CR1105205],  -->  [#1116085][CR1116085]  
@@ -410,24 +410,24 @@ Previously DevTools changed the type to `Other` sometimes.
 
 Chromium issue: [#997694][CR997694]  
 
-#### Clear buttons in the Elements and Network panels  
+#### Clear buttons in the Elements and Network tools  
 
 The following text boxes now have **Clear** buttons.  
 
-*   The filter text boxes in the **Styles** pane and **Network** panel.  
-*   The DOM search text box in the **Elements** panel.  
+*   The filter text boxes in the **Styles** pane and **Network** tool.  
+*   The DOM search text box in the **Elements** tool.  
 
 Choose the **Clear** button to remove any inputted text.  
 
 :::row:::
    :::column span="":::
       :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="Clear buttons in the Elements panels" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
-         Clear buttons in the **Elements** panels  
+         Clear buttons in the **Elements** tools  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text="Clear buttons in the Network panels" lightbox="../../media/2020/08/clear-button-network.msft.png":::
-         Clear buttons in the  **Network** panels  
+         Clear buttons in the  **Network** tools  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  

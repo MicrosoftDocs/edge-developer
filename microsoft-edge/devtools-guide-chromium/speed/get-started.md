@@ -1,9 +1,9 @@
 ---
 description: Learn how to use Microsoft Edge DevTools to find ways to make your websites load faster.
-title: Optimize Website Speed With Microsoft Edge DevTools
+title: Optimize website speed with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -88,12 +88,12 @@ For the rest of the screenshots in this tutorial, DevTools is shown in a separat
 
 The baseline is a record of how the site performed before you made any performance improvements.  
 
-1.  Choose the **Audits** tab.  It may be hidden behind the **More Panels** \(![More Panels][ImageMorePanelsIcon]\) button.  There is a Lighthouse on this panel because the project that powers the Audits panel is named **Lighthouse**.  
+1.  Choose the **Audits** tool.  It may be hidden behind the **More Panels** \(![More Panels][ImageMorePanelsIcon]\) button.  There is a Lighthouse on this panel because the project that powers the Audits panel is named **Lighthouse**.  
     
     [!INCLUDE [audits-panel-note](../includes/audits-panel-note.md)]  
     
-    :::image type="complex" source="../media/speed-audits-performance.msft.png" alt-text="The Audits panel" lightbox="../media/speed-audits-performance.msft.png":::
-       The **Audits** panel  
+    :::image type="complex" source="../media/speed-audits-performance.msft.png" alt-text="The Audits tool" lightbox="../media/speed-audits-performance.msft.png":::
+       The **Audits** tool  
     :::image-end:::  
     
     <!--todo: add link to Lighthouse when section is available  -->  
@@ -191,10 +191,10 @@ Text compression is when you reduce, or compress, the size of a text file before
 
 Before you enable compression, here are a couple of ways to manually check whether text resources are compressed.  
 
-1.  Choose the **Network** tab.  
+1.  Choose the **Network** tool.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-network.msft.png" alt-text="The Network panel" lightbox="../media/speed-glitch-tony-remix-network.msft.png":::
-       The **Network** panel  
+       The **Network** tool  
     :::image-end:::  
     
 1.  Choose the **Network setting** icon.  
@@ -212,10 +212,10 @@ The bottom value is the size of the uncompressed resource.  If the two values ar
 Check for compression by inspecting the HTTP headers of a resource:  
 
 1.  Choose `bundle.js`.  
-1.  Choose the **Headers** tab.  
+1.  Choose the **Headers** panel.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png" alt-text="The Headers tab" lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png":::
-       The **Headers** tab  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png" alt-text="The Headers panel" lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png":::
+       The **Headers** panel  
     :::image-end:::  
     
 1.  Search the **Response Headers** section for a `content-encoding` header.  A `content-encoding` heading is not displayed, meaning that `bundle.js` was not compressed.  When a resource is compressed, this header is usually set to `gzip`, `deflate`, or `br`.  For an explanation of the values, navigate to [Directives][MDNContentEncodingDirectives].  
@@ -271,7 +271,7 @@ Use the workflows that you learned earlier to manually check that the compressio
     
 Audit the page again to measure what kind of impact text compression has on the load performance of the page:  
 
-1.  Choose the **Audits** tab.  
+1.  Choose the **Audits** tool.  
 1.  Choose **Perform an audit** \(![Perform an audit][ImagePerformIcon]\).  
 1.  Leave the settings the same as before.  
 1.  Choose **Run audit**.  
@@ -343,11 +343,11 @@ The first task, then, is to find code that you do not need to run on page load.
        Open the Command Menu from the **Audits** panel  
     :::image-end:::  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png" alt-text="The Coverage tab" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png":::
-       The **Coverage** tab  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png" alt-text="The Coverage tool" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png":::
+       The **Coverage** tool  
     :::image-end:::  
     
-1.  Choose **Refresh** \(![Refresh][ImageRefreshIcon]\).  The **Coverage** tab provides an overview of how much of the code in `bundle.js`, `jquery.js`, and `lodash.js` runs while the page loads.  In the figure after the following, about 76% and 30% of the jQuery and Lodash files are not used, respectively.  
+1.  Choose **Refresh** \(![Refresh][ImageRefreshIcon]\).  The **Coverage** tool provides an overview of how much of the code in `bundle.js`, `jquery.js`, and `lodash.js` runs while the page loads.  In the figure after the following, about 76% and 30% of the jQuery and Lodash files are not used, respectively.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="The Coverage report" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
        The Coverage report  
@@ -361,16 +361,16 @@ The first task, then, is to find code that you do not need to run on page load.
     
 1.  Scroll through the jQuery code a bit.  Some of the lines that get "run" are actually just comments.  Running this code through a minifier that strips comments is another way to reduce the size of this file.  
 
-In short, when you are working with your own code, the Coverage tab helps you analyze your code, line-by-line, and only ship the code that is needed for page load.  
+In short, when you are working with your own code, the **Coverage** tool helps you analyze your code, line-by-line, and only ship the code that is needed for page load.  
 
-Are the `jquery.js` and `lodash.js` files even needed to load the page?  The Request Blocking tab displays what happens when resources are not available.  
+Are the `jquery.js` and `lodash.js` files even needed to load the page?  The **Request blocking** tool displays what happens when resources are not available.  
 
-1.  Choose the **Network** tab.  
+1.  Choose the **Network** tool.  
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu again.  
 1.  Start typing `blocking` and then choose **Show Request Blocking**.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="The Request Blocking tab" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::
-       The **Request Blocking** tab  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="The Request blocking tool" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::
+       The **Request blocking** tool  
     :::image-end:::  
     
 1.  Choose **Add Pattern** \(![Add Pattern][ImageAddPatternIcon]\), type `/libs/*`, and then select `Enter` to confirm.  
@@ -382,19 +382,19 @@ Are the `jquery.js` and `lodash.js` files even needed to load the page?  The Req
 1.  Refresh the page.  The jQuery and Lodash requests are red, meaning that the requests were blocked.   The page still loads and is interactive, so it looks like these resources are not needed whatsoever!  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png" alt-text="The Network panel shows that the requests have been blocked" lightbox="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png":::
-       The **Network** panel shows that the requests have been blocked  
+       The **Network** tool shows that the requests have been blocked  
     :::image-end:::  
     
 1.  Choose **Remove all patterns** \(![Remove all patterns][ImageRemoveIcon]\) to delete the `/libs/*` blocking pattern.  
     
-In general, the Request Blocking tab is useful for simulating how your page behaves when any given resource is not available.  
+In general, the **Request blocking** tool is useful for simulating how your page behaves when any given resource is not available.  
 
 Now, remove the references to these files from the code and audit the page again:  
 
 1.  Back in the editor tab, open `template.html`.  
 1.  Delete `<script src="/libs/lodash.js">` and `<script src="/libs/jquery.js"></script>`.  
 1.  Wait for the site to re-build and re-deploy.  
-1.  Audit the page again from the **Audits** panel.  Your overall score should have improved again.  
+1.  Audit the page again from the **Audits** tool.  Your overall score should have improved again.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-2-audits-performance.msft.png" alt-text="An Audits report after removing the render-blocking resources" lightbox="../media/speed-glitch-tony-remix-updated-2-audits-performance.msft.png":::
        An **Audits** report after removing the render-blocking resources  
@@ -419,13 +419,13 @@ The main thread is where the browser does most of the work needed to display a p
 
 The goal is to use the Performance panel to analyze what work the main thread is doing while the page loads, and find ways to defer or remove unnecessary work.  
 
-1.  Choose the **Performance** tab.  
+1.  Choose the **Performance** tool.  
 1.  Choose **Capture Settings** \(![Capture Settings][ImageCaptureIcon]\).  
 1.  Set **Network** to **Slow 3G** and **CPU** to **6x slowdown**.  Mobile devices typically have more hardware constraints than laptops or desktops, so these settings let you experience the page load as if you were using a less powerful device.  
 1.  Choose **Refresh** \(![Refresh][ImageRefreshIcon]\).  DevTools refreshes the page and then produces a visualization of all the work performed in order to load the page.  This visualization is referred to as the **trace**.  
     
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="The Performance panel trace of the page load" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
-       The **Performance** panel trace of the page load  
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="The Performance tool trace of the page load" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
+       The **Performance** tool trace of the page load  
     :::image-end:::  
     
 The trace shows activity chronologically, from left to right.  The FPS, CPU, and NET charts at the top give you an overview of frames per second, CPU activity, and network activity.  The block of yellow highlighted in the figure after the next, the CPU was completely busy with scripting activity.  This is a clue that you may be able to speed up page load by doing less JavaScript work.  
@@ -497,7 +497,7 @@ Looks like that last change caused a massive jump in performance!
 
 #### Doing less main thread work in the real world  
 
-In general, the **Performance** panel is the most common way to understand what activity your site does as it loads, and find ways to remove unnecessary activity.  
+In general, the **Performance** tool is the most common way to understand what activity your site does as it loads, and find ways to remove unnecessary activity.  
 
 If you prefer an approach that feels more like `console.log()`, the [User Timing API][MDNUserTimingApi] enables you to arbitrarily mark up certain phases of your app lifecycle, in order to track how long each of those phases takes.  
 

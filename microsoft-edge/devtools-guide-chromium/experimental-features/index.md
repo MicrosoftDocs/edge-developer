@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/04/2020 
+ms.date: 02/12/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -86,7 +86,7 @@ The two ways to toggle a persistent grid overlay.
     
 #### Configuring persistent overlays  
 
-In Microsoft Edge version 86 or later, the new **Layout** panel is located in the **Elements** tool alongside the **Styles** and **Computed** tabs.  The **Layout** panel surfaces configuration options for persistent overlays.  
+In Microsoft Edge version 86 or later, the new **Layout** panel is located in the **Elements** tool alongside the **Styles** and **Computed** panels.  The **Layout** panel surfaces configuration options for persistent overlays.  
 
 :::image type="complex" source="../media/experiments-grid.msft.png" alt-text="CSS grid debugging feature" lightbox="../media/experiments-grid.msft.png":::
    CSS grid debugging feature  
@@ -96,8 +96,8 @@ In Microsoft Edge version 86 or later, the new **Layout** panel is located in th
 
 Normally, tools such as **Elements** and **Network** may only open in the main panel that is located at the top of the DevTools.  Tools like **3D View** and **Issues** which normally only open in the **Drawer** panel that is located at the bottom of the DevTools.  After you choose the experiment, you may move tools between the top and bottom panels.  To move a tool, hover on the tab, open the contextual menu \(right-click\), and choose **Move to top** or **Move to bottom**.   This experiment allows you to customize your DevTools layout.  To display or hide the **Drawer** panel, select `Escape`.  
 
-:::image type="complex" source="../media/experiments-move-panels.msft.png" alt-text="Moving tabs between panels" lightbox="../media/experiments-move-panels.msft.png":::
-   Moving tabs between panels  
+:::image type="complex" source="../media/experiments-move-panels.msft.png" alt-text="Moving tools between panels" lightbox="../media/experiments-move-panels.msft.png":::
+   Moving tools between panels  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 85 and later.  -->  

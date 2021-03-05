@@ -3,7 +3,7 @@ description: CSS grid debugging features, Edit and Replay requests with the Netw
 title: What's new in DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -66,10 +66,10 @@ Chromium issue [#1093687][CR1093687]
 
 ### Service worker respondWith events in the Timing tab  
 
-The **Timing** tab of the **Network** panel now includes `respondWith` service worker events.  The `respondWith` service worker event shows the duration from the time immediately before the service worker `fetch` event handler starts running to the time when the `respondWith` promise of the `fetch` handler is settled.  
+The **Timing** tab of the **Network** tool now includes `respondWith` service worker events.  The `respondWith` service worker event shows the duration from the time immediately before the service worker `fetch` event handler starts running to the time when the `respondWith` promise of the `fetch` handler is settled.  
 
 :::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="The respondWith service worker event in the Timing tab of the Network panel" lightbox="../../media/2020/06/timing-tab.msft.png":::
-   The `respondWith` service worker event in the **Timing** tab of the **Network** panel  
+   The `respondWith` service worker event in the **Timing** tab of the **Network** tool  
 :::image-end:::  
 
 Expand **Response received** to display additional information from the `fetch` response like `CacheStorageCacheName`, `serviceWorkerResponseSource`, and `ResponseTime`.  
@@ -107,8 +107,8 @@ Chromium issue [#1070378][CR1070378]
 
 Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  You are now able to customize your DevTools layout by moving tools between the top and bottom panels.  
 
-:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Move tabs between panels" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
-   Move tabs between panels  
+:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Move tools between panels" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
+   Move tools between panels  
 :::image-end:::  
 
 > [!NOTE]
@@ -142,7 +142,7 @@ The **Styles** pane now has better support for editing styles that were created 
 
 You are now able to edit styles added in JavaScript using [Constructable Stylesheets][WicgConstructStylesheet].  Constructable Stylesheets are a new way to create and distribute reusable styles when using [Shadow DOM][MdnShadowDom].  
 
-For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) were not editable previously.  The styles are editable now in the **Styles** pane.  
+For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) were not editable previously.  The styles are editable now in the **Styles** panel.  
 
 :::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="Changing the background property of the h1 styles added with CSSStyleSheet from pink to lightblue" lightbox="../../media/2020/06/css-in-js.msft.png":::
    Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.
@@ -221,7 +221,7 @@ Chromium issue [#955497][CR955497]
 
 ### Consistent display of the Computed pane  
 
-The **Computed** pane in the **Elements** panel now displays consistently as a pane across all viewport sizes.  Previously the **Computed** pane merged inside the **Styles** pane when the width of the DevTools viewport was narrow.  
+The **Computed** pane in the **Elements** tool now displays consistently as a pane across all viewport sizes.  Previously the **Computed** pane merged inside the **Styles** pane when the width of the DevTools viewport was narrow.  
 
 :::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="The Computed pane consistently displays as a separate pane even when the DevTools are narrow" lightbox="../../media/2020/06/computed-pane.msft.png":::
    The **Computed** pane consistently displays as a separate pane even when the DevTools are narrow.
@@ -274,9 +274,9 @@ Chromium issue [#1055875][CR1055875]
 
 ### Performance panel updates  
 
-#### JavaScript compilation cache information in Performance panel  
+#### JavaScript compilation cache information in **Performance** tool  
 
-[JavaScript compilation cache information][V8DevCodeCaching] is now always displayed in the Summary tab of the Performance panel.  Previously, DevTools did not show anything related to code caching if code caching did not happen.  
+[JavaScript compilation cache information][V8DevCodeCaching] is now always displayed in the **Summary** panel of the **Performance** tool.  Previously, DevTools did not show anything related to code caching if code caching did not happen.  
 
 :::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="JavaScript compilation cache information" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
    JavaScript compilation cache information  
@@ -288,8 +288,8 @@ Chromium issue [#912581][CR912581]
 
 The **Performance** panel used to show times in the rulers based on when the recording started.  The timing has now changed for recordings where the user navigates, where DevTools now shows ruler times relative to the navigation instead.  
 
-:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Align navigation timing in Performance panel" lightbox="../../media/2020/06/nav-timing.msft.png":::
-   Align navigation timing in **Performance** panel  
+:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Align navigation timing in Performance tool" lightbox="../../media/2020/06/nav-timing.msft.png":::
+   Align navigation timing in **Performance** tool  
 :::image-end:::  
 
 The times for `DOMContentLoaded`, First Paint, First Contentful Paint, and Largest Contentful Paint events are updated to be relative to the start of the navigation, which means the timing matches the timings reported by `PerformanceObserver`.  

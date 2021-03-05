@@ -3,7 +3,7 @@ description: Use the Application panel to inspect, modify, and debug web app man
 title: Debug Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -108,7 +108,7 @@ The **Service Workers** pane in the **Application** panel is the main place in D
 :::image-end:::  
 
 *   If a service worker is installed to the currently open page, then it is listed on this pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.  
-*   The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to the offline mode available from the **Network** panel, or the `Go offline` option in the [Command Menu][DevtoolsCommandMenuIndex].  
+*   The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to the offline mode available from the **Network** tool, or the `Go offline` option in the [Command Menu][DevtoolsCommandMenuIndex].  
 *   The **Update on reload** checkbox forces the service worker to update on every page load.  
 *   The **Bypass for network** checkbox bypasses the service worker and forces the browser to go to the network for requested resources.  
 *   The **Update** button performs a one-time update of the specified service worker.  

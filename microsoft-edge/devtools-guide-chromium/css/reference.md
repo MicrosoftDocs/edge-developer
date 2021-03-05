@@ -1,9 +1,9 @@
 ---
 description: Discover new workflows for viewing and changing CSS in Microsoft Edge DevTools.
-title: CSS Reference
+title: CSS reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -30,7 +30,7 @@ To learn the basics, navigate to [Get Started with Viewing and Changing CSS][Dev
 
 ## Choose an element  
 
-The **Elements** panel of DevTools lets you view or change the CSS of one element at a time.  The selected element is highlighted in the **DOM Tree**.  The styles of the element are shown in the **Styles** pane.  For a tutorial, navigate to [View the CSS for an element][DevToolsCSSGetStartedTutorial].  
+The **Elements** tool of DevTools lets you view or change the CSS of one element at a time.  The selected element is highlighted in the **DOM Tree**.  The styles of the element are shown in the **Styles** pane.  For a tutorial, navigate to [View the CSS for an element][DevToolsCSSGetStartedTutorial].  
 
 > [!NOTE]
 > In the following figure, the `h1` element that is highlighted in the **DOM Tree** is the selected element.  On the right, the styles of the element are shown in the **Styles** pane.  On the left, the element is highlighted in the viewport, but only because the mouse is currently hovering over it in the **DOM Tree**.  
@@ -65,39 +65,39 @@ If the stylesheet is minified, navigate to [Make a minified file readable][DevTo
 
 ### View only the CSS that is actually applied to an element  
 
-The **Styles** tab shows you all of the rules that apply to an element, including declarations that have been overridden.  When you are not interested in overridden declarations, use the **Computed** tab to view only the CSS that is actually being applied to an element.  
+The **Styles** panel shows you all of the rules that apply to an element, including declarations that have been overridden.  When you are not interested in overridden declarations, use the **Computed** panel to view only the CSS that is actually being applied to an element.  
 
 1.  [Select an element](#choose-an-element).  
-1.  Navigate to the **Computed** tab in the **Elements** panel.  
+1.  Navigate to the **Computed** panel in the **Elements** tool.  
 
 > [!NOTE]
-> On a wide DevTools window, the **Computed** tab does not exist.  The contents of the **Computed** tab are shown on the **Styles** tab.  
+> On a wide DevTools window, the **Computed** panel does not exist.  The contents of the **Computed** panel are shown on the **Styles** panel.  
 
 Inherited properties are opaque.  To display all inherited values, select the **Show All** checkbox.  
 
 > [!NOTE]
-> In the following figure, the **Computed** tab shows the CSS properties being applied to the currently-selected `h1` element.  
+> In the following figure, the **Computed** panel shows the CSS properties being applied to the currently-selected `h1` element.  
 
-:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="The Computed tab" lightbox="../media/css-elements-computed-h1.msft.png":::
-   The **Computed** tab  
+:::image type="complex" source="../media/css-elements-computed-h1.msft.png" alt-text="The Computed panel" lightbox="../media/css-elements-computed-h1.msft.png":::
+   The **Computed** panel  
 :::image-end:::  
 
 ### View CSS properties in alphabetical order  
 
-Use the **Computed** tab.  Navigate to [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).  
+Use the **Computed** panel.  Navigate to [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).  
 
 ### View inherited CSS properties  
 
-Check the **Show All** checkbox in the **Computed** tab.  Navigate to [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).  
+Check the **Show All** checkbox in the **Computed** panel.  Navigate to [View only the CSS that is actually applied to an element](#view-only-the-css-that-is-actually-applied-to-an-element).  
 
 ### View the box model for an element  
 
-To view [the box model][MDNBoxModel] of an element, navigate to the **Styles** tab.  If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the tab.  
+To view [the box model][MDNBoxModel] of an element, navigate to the **Styles** panel.  If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the panel.  
 
 Choose and edit on a value to change a value.  
 
 > [!NOTE]
-> In the following figure, the **Box Model** diagram in the **Styles** tab shows the box model for the currently selected `h1` element.  
+> In the following figure, the **Box Model** diagram in the **Styles** panel shows the box model for the currently selected `h1` element.  
 
 :::image type="complex" source="../media/css-elements-styles-h1-2.msft.png" alt-text="The Box Model diagram" lightbox="../media/css-elements-styles-h1-2.msft.png":::
    The **Box Model** diagram  
@@ -105,22 +105,22 @@ Choose and edit on a value to change a value.
 
 ### Search and filter the CSS of an element  
 
-Use the **Filter** text box on the **Styles** and **Computed** tabs to search for specific CSS properties or values.  
+Use the **Filter** text box on the **Styles** and **Computed** panels to search for specific CSS properties or values.  
 
-To also search inherited properties in the **Computed** tab, check the **Show All** checkbox.  
+To also search inherited properties in the **Computed** panel, check the **Show All** checkbox.  
 
 > [!NOTE]
-> In the following figure, the **Styles** tab is filtered to only show rules that include the search query `color`.  
+> In the following figure, the **Styles** panel is filtered to only show rules that include the search query `color`.  
 
-:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Filter the Styles tab" lightbox="../media/css-elements-styles-filter-color.msft.png":::
-   Filter the **Styles** tab  
+:::image type="complex" source="../media/css-elements-styles-filter-color.msft.png" alt-text="Filter the Styles panel" lightbox="../media/css-elements-styles-filter-color.msft.png":::
+   Filter the **Styles** panel  
 :::image-end:::  
 
 > [!NOTE]
-> In the following figure, the **Computed** tab is filtered to only show declarations that include the search query `100%`.  
+> In the following figure, the **Computed** panel is filtered to only show declarations that include the search query `100%`.  
 
-:::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="Filter the Computed tab" lightbox="../media/css-elements-computed-filter-100.msft.png":::
-   Filter the **Computed** tab  
+:::image type="complex" source="../media/css-elements-computed-filter-100.msft.png" alt-text="Filter the Computed panel" lightbox="../media/css-elements-computed-filter-100.msft.png":::
+   Filter the **Computed** panel  
 :::image-end:::  
 
 ### Toggle a pseudo-class  
@@ -128,7 +128,7 @@ To also search inherited properties in the **Computed** tab, check the **Show Al
 Complete the following actions to toggle a pseudo-class like `:active`, `:focus`, `:hover`, or `:visited`.  
 
 1.  [Select an element](#choose-an-element).  
-1.  On the **Elements** panel, navigate to the **Styles** tab.  
+1.  On the **Elements** tool, navigate to the **Styles** panel.  
 1.  Choose **:hov**.  
 1.  Check the pseudo-class that you want to enable.  
 
@@ -149,27 +149,27 @@ Complete the following actions to view a page in print mode.
 1.  Start typing `Rendering` and select `Show Rendering`.  
 1.  For the **Emulate CSS Media** dropdown, choose **print**.  
 
-### View used and unused CSS with the Coverage tab  
+### View used and unused CSS with the Coverage tool  
 
-The Coverage tab shows you what CSS a page actually uses.  
+The **Coverage** tool shows you what CSS a page actually uses.  
 
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) while DevTools is in focus to [open the Command Menu][DevToolsCommandMenu].  
-1.  Start typing `coverage` and choose **Show Coverage**.  The Coverage tab appears.  
+1.  Start typing `coverage` and choose **Show Coverage**.  The **Coverage** tool appears.  
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Opening the Coverage tab from the Command Menu" lightbox="../media/css-console-command-menu-coverage.msft.png":::
-             Open the **Coverage** tab from the **Command Menu**  
+          :::image type="complex" source="../media/css-console-command-menu-coverage.msft.png" alt-text="Opening the Coverage tool from the Command Menu" lightbox="../media/css-console-command-menu-coverage.msft.png":::
+             Open the **Coverage** tool from the **Command Menu**  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="The Coverage tab" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
-             The **Coverage** tab  
+          :::image type="complex" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="The Coverage tool" lightbox="../media/css-console-qs-coverage-empty.msft.png":::
+             The **Coverage** tool  
           :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
-1.  Choose **Start instrumenting coverage and refresh the page** \(![Start instrumenting coverage and refresh the page][ImageRefreshIcon]\).  The page refreshes and the Coverage tab provides an overview of how much CSS \(and JavaScript\) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.  
+1.  Choose **Start instrumenting coverage and refresh the page** \(![Start instrumenting coverage and refresh the page][ImageRefreshIcon]\).  The page refreshes and the **Coverage** tool provides an overview of how much CSS \(and JavaScript\) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.  
     
     :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="An overview of how much CSS (and JavaScript) is used and unused" lightbox="../media/css-console-qs-coverage-run.msft.png":::
        An overview of how much CSS \(and JavaScript\) is used and unused  
@@ -296,7 +296,7 @@ When [adding a new style rule](#add-a-style-rule), choose and hold **New Style R
 
 #### Add a style rule to a specific location  
 
-Complete the following actions to add a style rule to a specific location in the **Styles** tab.  
+Complete the following actions to add a style rule to a specific location in the **Styles** panel.  
 
 1.  Hover on the style rule that is directly above where you want to add your new style rule.  
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).  
@@ -315,7 +315,7 @@ The **More Actions** toolbar lets you perform the following actions.
 
 Complete the following actions to reveal the **More Actions** toolbar.  
 
-1.  In the **Styles** tab, hover on a style rule.  **More Actions** \(`...`\) is revealed in the bottom-right of the style rule section.  
+1.  In the **Styles** panel, hover on a style rule.  **More Actions** \(`...`\) is revealed in the bottom-right of the style rule section.  
     
     > [!NOTE]
     > In the following figure, hover on the `.header-holder.has-default-focus` style rule and **More Actions** is revealed in the bottom-right of the style rule section.  
@@ -403,7 +403,7 @@ The **Color Picker** provides a GUI for changing `color` and `background-color` 
 Complete the following actions to open the **Color Picker**.  
 
 1.  [Select an element](#choose-an-element).  
-1.  In the **Styles** tab, find the `color`, `background-color`, or similar declaration that you want to change.  To the left of the `color`, `background-color`, or similar value, there is a small square which is a preview of the color.  
+1.  In the **Styles** panel, find the `color`, `background-color`, or similar declaration that you want to change.  To the left of the `color`, `background-color`, or similar value, there is a small square which is a preview of the color.  
     
     > [!NOTE]
     > In the following figure, the small square to the left of `rgba(0, 0, 0, 0.7)` is a preview of that color.  

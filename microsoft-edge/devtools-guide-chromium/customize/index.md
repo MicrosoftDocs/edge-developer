@@ -3,7 +3,7 @@ description: A list of ways to customize Microsoft Edge DevTools
 title: Customize Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/22/2021 
+ms.date: 02/12/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -75,7 +75,7 @@ You may move tools between the main panel and the drawer.
 Choose and drag a tool to change the ordering.  Your custom tool order persists across DevTools sessions.  
 
 > [!NOTE]
-> By default, the **Network** tool is usually the fourth from the left.  In the following figure, the **Network** panel is the first from the left.  
+> By default, the **Network** tool is usually the fourth from the left.  In the following figure, the **Network** tool is the first from the left.  
 
 :::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Custom order of Devtools in a panel" lightbox="../media/customize-network-first-position.msft.png":::
    Custom order of Devtools in a panel  

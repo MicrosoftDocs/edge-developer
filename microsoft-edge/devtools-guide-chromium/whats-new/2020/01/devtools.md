@@ -3,7 +3,7 @@ description: 3D View, Visual Studio integration with Microsoft Edge, and more.
 title: What's new in DevTools (Microsoft Edge 81)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -115,11 +115,11 @@ Chromium issue [#941561][CR941561]
 
 The webhint Microsoft Edge extension allows you to easily scan your web page and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.  Read more at [https://webhint.io][Webhint].  
 
-:::image type="complex" source="../../images/2020/01/webhint-browser-extension.msft.png" alt-text="The Hints tab in the DevTools when the webhint browser extension is installed" lightbox="../../images/2020/01/webhint-browser-extension.msft.png":::
-   The **Hints** tab in the DevTools when the webhint browser extension is installed  
+:::image type="complex" source="../../images/2020/01/webhint-browser-extension.msft.png" alt-text="The Hints tool in the DevTools when the webhint browser extension is installed" lightbox="../../images/2020/01/webhint-browser-extension.msft.png":::
+   The **Hints** tool in the DevTools when the webhint browser extension is installed  
 :::image-end:::  
 
-[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons].  Once you install the extension, open the DevTools and select the Hints tab.  From here, run a customizable site scan.  Head over to [webhint.io][WebhintBrowserExtension] to learn more.  
+[Try the webhint browser extension in Microsoft Edge][MicrosoftEdgeInsiderAddons].  Once you install the extension, open the DevTools and choose the **Hints** tool.  From here, run a customizable site scan.  Head over to [webhint.io][WebhintBrowserExtension] to learn more.  
 
 ### 3D View  
 
@@ -228,7 +228,7 @@ Chromium issue [#1030258][CR1030258]  <!-- inaccessible  -->
 
 #### Cookie priority in the Cookie pane  
 
-The Cookies tables in the Network and Application panels now include a **Priority** column.  
+The Cookies tables in the **Network** and **Application** tools now include a **Priority** column.  
 
 > [!CAUTION]
 > Chromium-based browsers, like Microsoft Edge, are the only browsers that support cookie priority.  

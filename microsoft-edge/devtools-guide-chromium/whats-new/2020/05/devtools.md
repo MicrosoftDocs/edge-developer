@@ -3,7 +3,7 @@ description: Use the DevTools in Windows high contrast mode, match keyboard shor
 title: What's new in DevTools (Microsoft Edge 84)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -111,10 +111,10 @@ Chromium issue [#1081486][CR1081486]
 
 ### Network panel Details pane is now accessible  
 
-In Microsoft Edge 84, the [Details pane][DevToolsNetworkDetails] in the **Network** panel now takes focus when you open it for a resource in the [Network Log][DevToolsNetworkLog].  This change allows screen readers to read out and interact with the content of the **Details** pane.  
+In Microsoft Edge 84, the [Details pane][DevToolsNetworkDetails] in the **Network** tool now takes focus when you open it for a resource in the [Network Log][DevToolsNetworkLog].  This change allows screen readers to read out and interact with the content of the **Details** pane.  
 
 :::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="The Details pane in the Network panel takes focus when opened" lightbox="../../media/2020/05/network-details.msft.png":::
-   The **Details** pane in the **Network** panel takes focus when opened
+   The **Details** pane in the **Network** tool takes focus when opened
 :::image-end:::  
 
 Chromium issue [#963183][CR963183]  
@@ -244,7 +244,7 @@ Chromium issue [#1072952][CR1072952]
 
 ### Deprecation of the Properties pane in the Elements panel  
 
-The **Properties** pane in the **Elements** panel is deprecated.  Run `console.dir($0)` in the **Console** instead.  
+The **Properties** pane in the **Elements** tool is deprecated.  Run `console.dir($0)` in the **Console** instead.  
 
 :::image type="complex" source="../../media/2020/05/properties.msft.png" alt-text="The deprecated Properties pane" lightbox="../../media/2020/05/properties.msft.png":::
    The deprecated **Properties** pane  

@@ -1,9 +1,9 @@
 ---
 description: Learn how to log messages to the Console.
-title: Get Started With Logging Messages In The Console
+title: Get started with logging messages in the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021 
+ms.date: 02/12/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,7 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Get Started With Logging Messages In The Console  
+# Get started with logging messages in the Console  
 
 This interactive tutorial shows you how to log and filter messages in the [Microsoft Edge DevTools][MicrosoftEdgeDevTools] console.  
 
@@ -97,14 +97,14 @@ Most messages that are displayed in the **Console** come from the web developers
     
 1.  Next to the `Hello, Console!` message in the Console choose **log.js:2**.  The Sources panel opens and highlights the line of code that caused the message to get logged to the Console.  The message was logged when the JavaScript of the page ran `console.log('Hello, Console!')`.
     
-    :::image type="complex" source="../media/console-sources-logjs.msft.png" alt-text="DevTools opens the Sources panel after you choose log.js:2" lightbox="../media/console-sources-logjs.msft.png":::
-       DevTools opens the **Sources** panel after you choose `log.js:2`  
+    :::image type="complex" source="../media/console-sources-logjs.msft.png" alt-text="DevTools opens the Sources tool after you choose log.js:2" lightbox="../media/console-sources-logjs.msft.png":::
+       DevTools opens the **Sources** tool after you choose `log.js:2`  
     :::image-end:::  
     
 1.  Navigate back to the **Console** using any of the following workflows:  
     
-    *   Choose the **Console** tab.  
-    *   Select `Control`+`[` \(Windows, Linux\) or `Command`+`[` \(macOS\) until the **Console** panel is in focus.  
+    *   Choose the **Console** tool.  
+    *   Select `Control`+`[` \(Windows, Linux\) or `Command`+`[` \(macOS\) until the **Console** tool is in focus.  
     *   [Open the Command Menu][DevToolsCommandMenu], type `Console`, choose the **Show Console Panel** command, and then select `Enter`.  
     
 1.  Choose the **Log Warning** button in the demo.  `Abandon Hope All Ye Who Enter` gets logged to the **Console**.  Messages formatted like this are warnings.  
@@ -217,11 +217,9 @@ When you want to only view messages that include an exact string, type that stri
 
 ### Filter by regular expression  
 
-When you want to show all messages that include a pattern of text, rather than a specific string, use a
-[regular expression][MDNRegularExpressions].  
+When you want to show all messages that include a pattern of text, rather than a specific string, use a [regular expression][MDNRegularExpressions].  
 
-1.  Type `/^[AH]/` into the **Filter** text box.  Type this pattern into [RegExr][RegExrMain] for an
-   explanation of what it is doing.  
+1.  Type `/^[AH]/` into the **Filter** text box.  Type the pattern into [RegExr][RegExrMain] for an explanation of what it is doing.  
     
     :::image type="complex" source="../media/console-all-messages-regex-filter.msft.png" alt-text="Filtering out any message that does not match a pattern" lightbox="../media/console-all-messages-regex-filter.msft.png":::
        Filtering out any message that does not match the pattern `/^[AH]/`  
@@ -257,24 +255,23 @@ Earlier, when you choose **Log Info**, a script named `console.log('Hello, Conso
     
 1.  Choose **13 Messages** to show all messages again.  
 
-## Use the Console alongside any other panel  
+## Use the Console alongside any other tools  
 
-What if you are editing styles, but you need to quickly check the Console log for something?  Use the Drawer.  
+If you are editing styles, but you need to quickly check the Console log for something, Use the Drawer.  
 
-1.  Choose the **Elements** tab.  
-1.  Select `Escape`.  The **Console** tab of the **Drawer** opens.  It has all of the features of the Console panel that you have been using throughout this tutorial.  
+1.  Choose the **Elements** tool.  
+1.  Select `Escape`.  The **Console** tool in the **Drawer** opens.  It has all of the features of the Console panel that you have been using throughout this tutorial.  
     
-    :::image type="complex" source="../media/console-elements-drawer-console-sidebar-all-messages.msft.png" alt-text="The Console tab in the Drawer" lightbox="../media/console-elements-drawer-console-sidebar-all-messages.msft.png":::
-         The **Console** tab in the **Drawer**  
+    :::image type="complex" source="../media/console-elements-drawer-console-sidebar-all-messages.msft.png" alt-text="The Console tool in the Drawer" lightbox="../media/console-elements-drawer-console-sidebar-all-messages.msft.png":::
+         The **Console** tool in the **Drawer**  
     :::image-end:::  
     
-<!--## Next steps  -->
+## See also  
 
-<!--
-*   Navigate to [Console Reference][DevToolsConsoleApi] to explore more features and workflows related to the Console UI.
-*   Navigate to [Console API Reference][DevToolsConsoleReference] to learn more about all of the `console` methods that were demonstrated in [View messages logged from JavaScript(#view-messages-logged-from-javascript) and explore the other `console` methods that were not covered in this tutorial.  
-*   Navigate to [Get Started](/microsoft-edge/devtools-guide-chromium/#start) to explore what else you are able to do with DevTools.  -->  
-
+*   To explore more features and workflows related to the **Console** UI,navigate to [Console Reference][DevToolsConsoleApi].  
+*   To learn more about all of the `console` methods demonstrated in [View messages logged from JavaScript](#view-messages-logged-from-javascript) and explore the other `console` methods not covered in this article, navigate to [Console API Reference][DevToolsConsoleReference].  
+<!--*   Navigate to [Get Started](/microsoft-edge/devtools-guide-chromium/#start) to explore what else you are able to do with DevTools.  -->  
+     
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  

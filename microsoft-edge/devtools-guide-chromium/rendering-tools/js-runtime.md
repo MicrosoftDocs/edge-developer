@@ -1,9 +1,9 @@
 ---
 description: Identify expensive functions using the Microsoft Edge DevTools Memory panel.
-title: Speed Up JavaScript Runtime
+title: Speed up JavaScript runtime
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

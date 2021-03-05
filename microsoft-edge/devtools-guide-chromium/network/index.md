@@ -1,9 +1,9 @@
 ---
 description: A tutorial on the most popular network-related features in Microsoft Edge DevTools.  
-title: Inspect Network Activity In Microsoft Edge DevTools
+title: Inspect network activity in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -77,19 +77,19 @@ To get the most out of this tutorial, open up the demo and try out the features 
        DevTools docked to the bottom of the window  
     :::image-end:::  
     
-1.  Choose the **Network** tab.  The **Network** panel opens.  
+1.  Open the **Network** tool.  
     
     :::image type="complex" source="../media/network-glitch-network-bottom.msft.png" alt-text="Console tool in the DevTools docked to the bottom of the window" lightbox="../media/network-glitch-network-bottom.msft.png":::
        **Console** tool in the DevTools docked to the bottom of the window  
     :::image-end:::  
     
-Right now the Network panel is empty.  DevTools only logs network activity after you open it and no network activity has occurred since you opened DevTools.  
+Right now the **Network** tool is empty.  DevTools only logs network activity after you open it and no network activity has occurred since you opened DevTools.  
 
 ## Log network activity  
 
 To view the network activity that a page causes:  
 
-1.  Refresh the page.  The Network panel logs all network activity in the **Network Log**.  
+1.  Refresh the webpage.  The Network panel logs all network activity in the **Network Log**.  
     
     :::image type="complex" source="../media/network-glitch-network.msft.png" alt-text="The Network Log" lightbox="../media/network-glitch-network.msft.png":::
        The **Network Log**  
@@ -164,7 +164,7 @@ Screenshots display how a webpage looks over time while it loads.
 
 1.  Choose \(![Network settings][ImageSettingsIcon]\) and turn on the **Capture screenshots** checkbox.
 1.  Refresh the page again using the **Empty Cache And Hard Reload** workflow.  Navigate to [Simulate a slower connection](#simulate-a-slower-network-connection) if you need a reminder on how to do this.  
-    The Screenshots pane provides thumbnails of how the page looked at various points during the loading process.  
+    The Screenshots panel provides thumbnails of how the page looked at various points during the loading process.  
     
     :::image type="complex" source="../media/network-glitch-network-screenshots.msft.png" alt-text="Screenshots of the page load" lightbox="../media/network-glitch-network-screenshots.msft.png":::
        Screenshots of the page load  
@@ -183,33 +183,33 @@ Screenshots display how a webpage looks over time while it loads.
 
 Choose a resource to learn more information about it.  Try it now:  
 
-1.  Choose `getstarted.html`.  The **Headers** tab is shown.  Use this tab to inspect HTTP headers.  
+1.  Choose `getstarted.html`.  The **Headers** panel is shown.  Use this panel to inspect HTTP headers.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="The Headers tab" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
-       The **Headers** tab  
+    :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="The Headers panel" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
+       The **Headers** panel  
     :::image-end:::  
     
-1.  Choose the **Preview** tab.  A basic rendering of the HTML is shown.  
+1.  Choose the **Preview** panel.  A basic rendering of the HTML is shown.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="The Preview tab" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
-       The **Preview** tab  
+    :::image type="complex" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="The Preview panel" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
+       The **Preview** panel  
     :::image-end:::  
     
-    The tab is helpful when an API returns an error code in HTML.  You may find it easier to read the rendered HTML than the HTML source code, or when you inspect images.  
+    The panel is helpful when an API returns an error code in HTML.  You may find it easier to read the rendered HTML than the HTML source code, or when you inspect images.  
 
-1.  Choose the **Response** tab.  The HTML source code is shown.  
+1.  Choose the **Response** panel.  The HTML source code is shown.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="The Response tab" lightbox="../media/network-glitch-network-resources-response.msft.png":::
-       The **Response** tab  
+    :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="The Response panel" lightbox="../media/network-glitch-network-resources-response.msft.png":::
+       The **Response** panel  
     :::image-end:::  
     
     > [!TIP]
-    > When a file is minified, choose the **Format** \(![Format][ImageFormatIcon]\) button at the bottom of the **Response** tab to re-format the contents of the file for readability.  
+    > When a file is minified, choose the **Format** \(![Format][ImageFormatIcon]\) button at the bottom of the **Response** panel to re-format the contents of the file for readability.  
     
-1.  Choose the **Timing** tab.  A breakdown of the network activity for the resource is displayed.  
+1.  Choose the **Timing** panel.  A breakdown of the network activity for the resource is displayed.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="The Timing tab" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
-       The **Timing** tab  
+    :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="The Timing panel" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
+       The **Timing** panel  
     :::image-end:::  
     
 1.  Choose **Close** \(![Close][ImageCloseIcon]\) to view the Network Log again.  
@@ -238,13 +238,13 @@ For example, suppose you want to verify that your resources are using reasonable
        Search results for `Cache-Control`  
     :::image-end:::  
     
-1.  Choose a result to view the resource in which the result was found.  If you are looking at the details of the resource, select a result to go directly to it.  For example, if the query was found in a header, the Headers tab opens.   If the query was found in content, the **Response** tab opens.  
+1.  Choose a result to view the resource in which the result was found.  If you are looking at the details of the resource, select a result to go directly to it.  For example, if the query was found in a header, the **Headers** panel opens.   If the query was found in content, the **Response** panel opens.  
     
-    :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="A search result highlighted in the Headers tab" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
-       A search result highlighted in the **Headers** tab  
+    :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="A search result highlighted in the Headers panel" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
+       A search result highlighted in the **Headers** panel  
     :::image-end:::  
     
-1.  Close the Search pane and the Headers tab.  
+1.  Close the Search pane and the **Headers** panel.  
     
     :::image type="complex" source="../media/network-glitch-network-search-close.msft.png" alt-text="The Close buttons" lightbox="../media/network-glitch-network-search-close.msft.png":::
        The **Close** buttons  
@@ -351,7 +351,7 @@ How does a page look and behave when some of the page resources are not availabl
 
 ## Conclusion  
 
-Congratulations, you have completed the tutorial.  You now know how to use the **Network** panel in the Microsoft Edge DevTools!
+Congratulations, you have completed the tutorial.  You now know how to use the **Network** tool in the Microsoft Edge DevTools!
 
 Navigate to the [Network Reference][DevtoolsNetworkReference] to discover more DevTools features related to inspecting network activity.  
 

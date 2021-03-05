@@ -3,7 +3,7 @@ description: Learn how to use Microsoft Edge DevTools to view and change the CSS
 title: Inspect CSS Grid in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -171,7 +171,7 @@ To open the color picker and customize the grid overlay color, choose the box ne
 
 ### Highlight the grid  
 
-To highlight the HTML element in the **Elements** panel and scroll to it on the webpage, choose the **Show element in the Elements panel** \(![Show element in the Elements panel icon][ImageShowElementInElementsPanelIcon]\) icon.  
+To highlight the HTML element in the **Elements** tool and scroll to it on the webpage, choose the **Show element in the Elements panel** \(![Show element in the Elements panel icon][ImageShowElementInElementsPanelIcon]\) icon.  
 
 :::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Highlight the grid" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
    Highlight the grid  

@@ -1,9 +1,9 @@
 ---
 description: The timeline events mode displays all events triggered while making a recording.  Use the timeline event reference to learn more about each timeline event type.
-title: Timeline Event Reference
+title: Timeline Event reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021 
+ms.date: 02/12/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,7 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Timeline Event Reference  
+# Timeline Event reference  
 
 The timeline events mode displays all events triggered while making a recording.  Use the timeline event reference to learn more about each timeline event type.  
 

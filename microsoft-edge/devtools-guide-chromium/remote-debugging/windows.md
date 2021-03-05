@@ -1,14 +1,14 @@
 ---
 description: Get started with Remote Debugging Windows 10 devices
-title: Get Started with Remote Debugging Windows 10 Devices
+title: Get started with Remote Debugging Windows 10 Devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, remote, debugging, windows 10, windows, device portal
 ---
-# Get Started with Remote Debugging Windows 10 Devices  
+# Get started with Remote Debugging Windows 10 Devices  
 
 Remote debug live content on a Windows 10 device from your Windows or macOS computer.  This tutorial teaches you the following tasks.  
 
@@ -119,15 +119,15 @@ Determine the content you want to debug and choose **inspect**.  The Microsoft E
 
 ### Inspect elements  
 
-For example, try inspecting an element.  Navigate to the **Elements** panel of your DevTools instance on the client, and hover on an element to highlight it in the viewport of the host device.  
+For example, try inspecting an element.  Navigate to the **Elements** tool of your DevTools instance on the client, and hover on an element to highlight it in the viewport of the host device.  
 
-You may also tap an element on your host device screen to choose it in the **Elements** panel.  Choose **Select Element** on your DevTools instance on the client, and then tap the element on your host device screen.  
+You may also tap an element on your host device screen to choose it in the **Elements** tool.  Choose **Select Element** on your DevTools instance on the client, and then tap the element on your host device screen.  
 
 > [!NOTE]
 > **Select Element** is disabled after the first touch, so you need to turn it on again every time you want to use this feature.  
 
 > [!IMPORTANT]
-> The **Event Listeners** pane in the **Elements** panel is blank on Windows 10 version 1903.  This is a known issue and the team plans to fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.  
+> The **Event Listeners** pane in the **Elements** tool is blank on Windows 10 version 1903.  This is a known issue and the team plans to fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.  
 
 ## Step 4: Screencast your host screen to your client device  
 
@@ -150,11 +150,11 @@ Some notes on screencasts:
 
 ## Known Issues  
 
-The **Event Listeners** pane in the **Elements** panel is blank on Windows 10 version 1903.  The team plans to fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.  
+The **Event Listeners** pane in the **Elements** tool is blank on Windows 10 version 1903.  The team plans to fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.  
 
 The **Cookies** pane in the **Application** panel is blank on Windows 10 version 1903.  The team plans to fix the **Cookies** pane in a servicing update to Windows 10 version 1903.  
 
-The **Audits** panel, the **3D View** panel, the **Emulated Devices** section in **Settings**, and the **Accessibility tree** pane in the **Elements** panel are not currently working as expected.  The team plans to fix these tools in a future update of Microsoft Edge.  
+The **Audits** panel, the **3D View** panel, the **Emulated Devices** section in **Settings**, and the **Accessibility tree** pane in the **Elements** tool are not currently working as expected.  The team plans to fix these tools in a future update of Microsoft Edge.  
 
 The file explorer does not launch from the DevTools in the **Sources** panel or in the **Security** panel when remote debugging.  The team plans to fix these tools in a future update of Microsoft Edge.  
 

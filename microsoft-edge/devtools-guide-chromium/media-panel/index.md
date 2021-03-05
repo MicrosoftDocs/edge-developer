@@ -1,21 +1,34 @@
 ---
-description: Use the Media Panel to view information and debug the media players per browser tab.  
+description: Use the Media tool to view information and debug the media players per browser tab.  
 title: View and debug media players information
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
+<!-- Copyright Jecelyn Yeen
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->  
 
 # View and debug media players information  
 
-Use the **Media** panel in Microsoft Edge DevTools to view information and debug the media players per browser tab.  
+Use the **Media** tool in Microsoft Edge DevTools to view information and debug the media players per browser tab.  
 
-## Open the Media panel  
+## Open the Media tool  
 
-The **Media** panel is the main place in DevTools for inspecting the media player of a webpage.
+The **Media** tool is the main place in DevTools for inspecting the media player of a webpage.
 
 1.  [Open DevTools][DevtoolsGuideChromiumOpen].  
 1.  To open the **Media** panel, choose **Customize and control DevTools** `...` > **More tools** > **Media**.  
@@ -31,25 +44,25 @@ The **Media** panel is the main place in DevTools for inspecting the media playe
     [Maximizing productivity with the Edge Developer Tools][BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]  
     
 1.  Under the **Players** menu, a media player is displayed.  
-1.  Choose the player.  The **Properties** tab displays the properties of the media player.  
+1.  Choose the player.  The **Properties** panel displays the properties of the media player.  
     
     :::image type="complex" source="../media/media-panel-view.msft.png" alt-text="Media properties" lightbox="../media/media-panel-view.msft.png":::
        Media properties  
     :::image-end:::  
     
-1.  To view all the media player events, choose the **Events** tab.  
+1.  To view all the media player events, choose the **Events** panel.  
     
     :::image type="complex" source="../media/media-panel-events.msft.png" alt-text="Media events" lightbox="../media/media-panel-events.msft.png":::
        Media events  
     :::image-end:::  
     
-1.  To view the media player message logs, choose the **Messages** tab.  You may filter the messages by log level or string.  
+1.  To view the media player message logs, choose the **Messages** panel.  You may filter the messages by log level or string.  
     
     :::image type="complex" source="../media/media-panel-messages.msft.png" alt-text="Media messages" lightbox="../media/media-panel-messages.msft.png":::
        Media messages  
     :::image-end:::  
     
-1.  On the **Timeline** tab, the media playback and buffer status is displayed live.  
+1.  On the **Timeline** panel, the media playback and buffer status is displayed live.  
     
     :::image type="complex" source="../media/media-panel-timeline.msft.png" alt-text="Media timeline" lightbox="../media/media-panel-timeline.msft.png":::
        Media timeline  

@@ -1,9 +1,9 @@
 ---
 description: Discover new debugging workflows in this comprehensive reference of Microsoft Edge DevTools debugging features.
-title: JavaScript Debugging Reference
+title: JavaScript debugging reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -260,7 +260,7 @@ Complete the following actions to mark a script as **Library code** from the **C
 Complete the following actions to mark a single script or pattern of scripts from **Settings**.  
 
 1.  Open [Settings][DevToolsCustomize].  
-1.  Navigate to the **Library code** tab.  
+1.  Navigate to the **Library code** setting.  
 1.  Choose **Add pattern**.  
 1.  Enter the script name or a regex pattern of script names to mark as **Library code**.  
 1.  Choose **Add**.  

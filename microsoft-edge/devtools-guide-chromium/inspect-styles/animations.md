@@ -3,7 +3,7 @@ description: Inspect and modify animations with the Microsoft Edge DevTools  Ani
 title: Inspect animations
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -65,7 +65,7 @@ There are two ways to open the Animation Inspector:
 *   Open the **Command Menu**  
     1.  Type `Drawer: Show Animations`.  
 
-The Animation Inspector opens up as a tab next to the Console Drawer.  Since the Animation Inspector is a Drawer tab, you may use the Animation Inspector from any DevTools panel.  
+The Animation Inspector opens next to the **Console** tool.  Since the Animation Inspector is a Drawer tool, you may use the Animation Inspector from any DevTools panel.  
 
 :::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="Empty Animation Inspector" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
    Empty Animation Inspector  
@@ -108,7 +108,7 @@ After you capture an Animation Group, choose on it from the **Overview** pane to
    Animation Group details  
 :::image-end:::  
 
-Hover on an animation to highlight it in the viewport.  Choose the animation to select it in the **Elements** panel.  
+Hover on an animation to highlight it in the viewport.  Choose the animation to select it in the **Elements** tool.  
 
 :::image type="complex" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Hover on the animation to highlight it in viewport" lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
    Hover on the animation to highlight it in viewport  

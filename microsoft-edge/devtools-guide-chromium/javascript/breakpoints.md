@@ -1,18 +1,21 @@
 ---
 description: Learn about all the ways you are able to pause your code in Microsoft Edge DevTools.
-title: How To Pause Your Code With Breakpoints In Microsoft Edge DevTools
+title: How to pause your code with breakpoints in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright Kayce Basques 
+<!-- Copyright Kayce Basques
+
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
+
        https://www.apache.org/licenses/LICENSE-2.0
+
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -43,7 +46,7 @@ Use a line-of-code breakpoint when you know the exact region of code that you ne
 
 To set a line-of-code breakpoint in DevTools:  
 
-1.  Choose the **Sources** tab.  
+1.  Choose the **Sources** tool.  
 1.  Open the file containing the line of code on which you want to break.  
 1.  Go the line of code.  
 1.  To the left of the line of code is the line number column.  Choose it.  A red icon appears next to the line number column.  
@@ -69,7 +72,7 @@ Use a conditional line-of-code breakpoint when you know the exact region of code
 
 To set a conditional line-of-code breakpoint:  
 
-1.  Choose the **Sources** tab.  
+1.  Choose the **Sources** tool.  
 1.  Open the file containing the line of code on which you want to break.  
 1.  Go the line of code.  
 1.  To the left of the line of code is the line number column.  Hover on the line number and open the contextual menu \(right-click\).  
@@ -103,7 +106,7 @@ Use a DOM change breakpoint when you want to pause on the code that changes a DO
 
 To set a DOM change breakpoint:  
 
-1.  Choose the **Elements** tab.  
+1.  Choose the **Elements** tool.  
 1.  Go the element on which you want to set the breakpoint.  
 1.  Hover on the element and open the contextual menu \(right-click\).  
 1.  Hover on **Break on**, then choose **Subtree modifications**, **Attribute modifications**, or **Node removal**.  
@@ -129,8 +132,8 @@ One example of when this is helpful is when your webpage is requesting an incorr
 
 To set an XHR breakpoint:  
 
-1.  Choose the **Sources** tab.  
-1.  Expand the **XHR Breakpoints** pane.  
+1.  Choose the **Sources** tool.  
+1.  Expand the **XHR Breakpoints** panel.  
 1.  Choose **Add breakpoint**.  
 1.  Enter the string which you want to break on.  DevTools pauses when this string is present anywhere in an XHR request URL.  
 1.  Select `Enter` to confirm.  
@@ -139,12 +142,12 @@ To set an XHR breakpoint:
        Create an XHR breakpoint  
     :::image-end:::  
     
-## Event listener breakpoints   
+## Event listener breakpoints  
 
 Use event listener breakpoints when you want to pause on the event listener code that runs after an event is fired.  You are able to select specific events, such as `click`, or categories of events, such as all mouse events.  
 
-1.  Choose the **Sources** tab.  
-1.  Expand the **Event Listener Breakpoints** pane.  DevTools shows a list of event categories, such as **Animation**.  
+1.  Choose the **Sources** tool.  
+1.  Expand the **Event Listener Breakpoints** panel.  DevTools shows a list of event categories, such as **Animation**.  
 1.  Check one of these categories to pause whenever any event from that category is fired, or expand the category and check a specific event.  
     
     :::image type="complex" source="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png" alt-text="Create an event listener breakpoint" lightbox="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png":::
@@ -155,7 +158,7 @@ Use event listener breakpoints when you want to pause on the event listener code
 
 Use exception breakpoints when you want to pause on the line of code that is throwing a caught or uncaught exception.  
 
-1.  Choose the **Sources** tab.  
+1.  Choose the **Sources** tool.  
 1.  Choose **Pause on exceptions** \(![Pause on exceptions][ImagePauseOnExceptionsIcon]\).  The icon turns blue when enabled.  
     
     :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="The Pause on exceptions button" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::

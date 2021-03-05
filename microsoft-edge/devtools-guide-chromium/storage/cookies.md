@@ -1,9 +1,9 @@
 ---
 description: Learn how to view, edit, and delete the HTTP cookies for a page using Microsoft Edge DevTools.
-title: View, Edit, And Delete Cookies With Microsoft Edge DevTools
+title: View, edit, and delete cookies with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

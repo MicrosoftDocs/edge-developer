@@ -1,9 +1,9 @@
 ---
 description: A reference of convenience commands available in the Microsoft Edge DevTools Console.
-title: Console Utilities API Reference
+title: Console Utilities API reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,7 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Console Utilities API Reference  
+# Console Utilities API reference  
 
 The Console Utilities API contains a collection of convenience commands for performing common tasks:  selecting and inspecting DOM elements, displaying data in readable format, stopping and starting the profiler, and monitoring DOM events.  
 
@@ -57,7 +57,7 @@ In the following figure, the evaluated expression initially contains an array of
 $0
 ```  
 
-Returns the most recently selected element or JavaScript object.  `$1` returns the second most recently selected one, and so on.  The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** panel or the last five JavaScript heap objects selected in the **Memory** panel.  
+Returns the most recently selected element or JavaScript object.  `$1` returns the second most recently selected one, and so on.  The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** tool or the last five JavaScript heap objects selected in the **Memory** tool.  
 
 :::row:::
    :::column span="1":::
@@ -91,7 +91,7 @@ Returns the most recently selected element or JavaScript object.  `$1` returns t
    :::column-end:::
 :::row-end:::  
 
-In the following figure, an `img` element is selected in the **Elements** panel.  In the **Console** drawer, `$0` has been evaluated and displays the same element.  
+In the following figure, an `img` element is selected in the **Elements** tool.  In the **Console** drawer, `$0` has been evaluated and displays the same element.  
 
 :::image type="complex" source="../media/console-image-highlighted-$0.msft.png" alt-text="The $0" lightbox="../media/console-image-highlighted-$0.msft.png":::
    Figure 3:  The `$0`  
@@ -242,7 +242,7 @@ debug(method)
 >[!NOTE]
 > The [Chromium issue #1050237][MonorailIssue1050237] is tracking a bug with the `debug()` function.  If you encounter the issue, try [using breakpoints][DevtoolsJavascriptBreakpoints] instead.  
 
-When you request the specified method, the debugger is invoked and breaks inside the method on the **Sources** panel allowing you to step through the code and debug it.  
+When you request the specified method, the debugger is invoked and breaks inside the method on the **Sources** tool allowing you to step through the code and debug it.  
 
 ```console
 debug("debug");
@@ -283,7 +283,7 @@ For more information, navigate to [`console.dir()`][DevToolsConsoleApiConsoleDir
 dirxml(object)
 ```  
 
-Prints an XML representation of the specified object, as displayed in the **Elements** tab.  This method is equivalent to the [console.dirxml()][MDNConsoleDirxml] method.  
+Prints an XML representation of the specified object, as displayed in the **Elements** tool.  This method is equivalent to the [console.dirxml()][MDNConsoleDirxml] method.  
 
 ## inspect  
 
@@ -291,9 +291,9 @@ Prints an XML representation of the specified object, as displayed in the **Elem
 inspect(object/method)
 ```  
 
-Opens and selects the specified element or object in the appropriate panel:  either the **Elements** panel for DOM elements or the **Memory** panel for JavaScript heap objects.  
+Opens and selects the specified element or object in the appropriate panel:  either the **Elements** tool for DOM elements or the **Memory** tool for JavaScript heap objects.  
 
-In the following code sample and figure, the `document.body` opens in the **Elements** panel.  
+In the following code sample and figure, the `document.body` opens in the **Elements** tool.  
 
 ```console
 inspect(document.body);
@@ -303,7 +303,7 @@ inspect(document.body);
    Figure 15:  Inspecting an element with `inspect()`  
 :::image-end:::  
 
-When passing a method to inspect, the method opens the document in the **Sources** panel for you to inspect.  
+When passing a method to inspect, the method opens the document in the **Sources** tool for you to inspect.  
 
 ## getEventListeners  
 
@@ -404,7 +404,7 @@ The following defines an array to monitor both `resize` and `scroll` events on t
 monitorEvents(window, ["resize", "scroll"]);
 ```  
 
-You may also specify one of the available types of events, strings that map to predefined sets of events.  The table below displays the available event types and the associated event mappings.  
+You may also specify one of the available types of events, strings that map to predefined sets of events.  The following table displays the available event types and the associated event mappings.  
 
 | Event type | Corresponding mapped events |  
 |:--- |:--- |  
@@ -413,7 +413,7 @@ You may also specify one of the available types of events, strings that map to p
 | `touch` | "touchcancel", "touchend", "touchmove", "touchstart" |  
 | `control` | "blur", "change", "focus", "reset", "resize", "scroll", "select", "submit", "zoom" |  
 
-In the following code sample, the `key` event type corresponding to `key` events on an input text field are currently selected in the **Elements** panel.  
+In the following code sample, the `key` event type corresponding to `key` events on an input text field are currently selected in the **Elements** tool.  
 
 ```console
 monitorEvents($0, "key");
@@ -431,7 +431,7 @@ In the following figure the sample output after typing a character in the text f
 profile([name])
 ```  
 
-Starts a JavaScript CPU profiling session with an optional name.  The [profileEnd()](#profileend) method completes the profile and displays the results in the **Memory** panel.  <!--Navigate to [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
+Starts a JavaScript CPU profiling session with an optional name.  The [profileEnd()](#profileend) method completes the profile and displays the results in the **Memory** tool.  <!--Navigate to [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
 
 1.  Run the `profile()` method to start profiling.  
     
@@ -439,7 +439,7 @@ Starts a JavaScript CPU profiling session with an optional name.  The [profileEn
     profile("My profile")
     ```  
     
-1.  Run the [profileEnd()](#profileend) method to stop profiling and display the results in the **Memory** panel.  
+1.  Run the [profileEnd()](#profileend) method to stop profiling and display the results in the **Memory** tool.  
 
 Profiles may also be nested.  In the following code samples and figure the result is the same regardless of the order.  
 
@@ -459,10 +459,10 @@ profileEnd('B');
 profileEnd([name])
 ```  
 
-Completes a JavaScript CPU profiling session and displays the results in the **Memory** panel.  You must be running the [profile()](#profile) method.  <!--Navigate to [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
+Completes a JavaScript CPU profiling session and displays the results in the **Memory** tool.  You must be running the [profile()](#profile) method.  <!--Navigate to [Speed Up JavaScript Runtime][DevToolsRenderingToolsJSRuntime].  -->  
 
 1.  Run the [profile()](#profile) method to start profiling.  
-1.  Run the `profileEnd()` method to stop profiling and display the results in the **Memory** panel.  
+1.  Run the `profileEnd()` method to stop profiling and display the results in the **Memory** tool.  
     
     ```console
     profileEnd("My profile")
@@ -477,7 +477,7 @@ profileEnd('A');
 profileEnd('B');
 ```  
 
-The result appears as a Heap Snapshot in the **Memory** panel.  
+The result appears as a Heap Snapshot in the **Memory** tool.  
 
 :::image type="complex" source="../media/console-memory-multiple-cpu-profiles.msft.png" alt-text="Grouped profiles" lightbox="../media/console-memory-multiple-cpu-profiles.msft.png":::
    Figure 23:  Grouped profiles  

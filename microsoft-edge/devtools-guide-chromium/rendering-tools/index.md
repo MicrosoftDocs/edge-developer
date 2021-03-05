@@ -1,9 +1,9 @@
 ---
 description: Users expects interactive and smooth pages.  Each stage in the pixel pipeline represents an opportunity to introduce jank.  Learn about tools and strategies to identify and fix common problems that slow down runtime performance.
-title: Analyze Runtime Performance
+title: Analyze runtime performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -39,7 +39,7 @@ JavaScript calculations, especially ones that trigger extensive visual changes, 
 
 ### JavaScript: Tools  
 
-Take a recording in the **Performance** panel and look for suspiciously long `Evaluate Script` events.  <!--If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->  
+Take a recording in the **Performance** tool and look for suspiciously long `Evaluate Script` events.  <!--If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->  
 
 <!--todo: add Recording section when available  -->  
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->  
@@ -48,7 +48,7 @@ f you noticing quite a bit of jank in your JavaScript, you may need to take your
 
 ### JavaScript: Problems  
 
-The following table describes some common JavaScript problems and potential solutions:  
+The following table describes some common JavaScript problems and potential solutions.  
 
 | Problem | Example | Solution |  
 |:--- |:--- |:--- |  
@@ -72,7 +72,7 @@ Style changes are costly, especially if those changes affect more than one eleme
 
 ### Style: Tools  
 
-Take a recording in the **Performance** panel.  Check the recording for large `Recalculate Style` events \(displayed in purple\).  
+Take a recording in the **Performance** tool.  Check the recording for large `Recalculate Style` events \(displayed in purple\).  
 
 <!--todo: add Recording section when available  -->  
 
@@ -91,7 +91,7 @@ To reduce the impact of `Recalculate Style` events:
 
 ### Style: Problems  
 
-The following table describes some common style problems and potential solutions:  
+The following table describes some common style problems and potential solutions.  
 
 | Problem | Example | Solution |  
 |:--- |:--- |:--- |  
@@ -133,7 +133,7 @@ The **Performance** pane identifies when a page causes forced synchronous layout
 
 ### Layout: Problems  
 
-The following table describes some common layout problems and potential solutions:  
+The following table describes some common layout problems and potential solutions.  
 
 | Problem | Example | Solution |  
 |:--- |:--- |:--- |  
@@ -167,7 +167,7 @@ Check out the **Rendering** panel for further configurations that are able to he
 
 ### Paint and composite: Problems  
 
-The following table describes some common paint and composite problems and potential solutions:  
+The following table describes some common paint and composite problems and potential solutions.  
 
 | Problem | Example | Solution |  
 |:--- |:--- |:--- |  

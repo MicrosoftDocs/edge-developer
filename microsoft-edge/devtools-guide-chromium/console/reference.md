@@ -1,9 +1,9 @@
 ---
 description: A comprehensive reference on every feature and behavior related to the Console UI in Microsoft Edge DevTools.
-title: Console Reference
+title: Console reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,7 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Console Reference  
+# Console reference  
 
 This page is a reference of features related to the Microsoft Edge DevTools Console.  It assumes that you are already familiar with using the Console to view logged messages and run JavaScript.  If not, navigate to [Get Started With Running JavaScript In The Console][DevToolsConsoleJavascript] and [Get Started With Logging Messages In The Console][DevToolsConsoleLog].  
 
@@ -30,23 +30,23 @@ If you are looking for the API reference on functions like `console.log()`, navi
 
 ## Open the Console  
 
-You may open the Console as a [panel](#open-the-console-panel) or as a [tab in the Drawer](#open-the-console-tab-in-the-drawer).  
+You may open the **Console** as a [tool in the upper pane](#open-the-console-tool) or as a [tool in the Drawer](#open-the-console-tool-in-the-drawer).  
 
-### Open the Console panel  
+### Open the Console tool  
 
 Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).  
 
-:::image type="complex" source="../media/console-hello-console.msft.png" alt-text="The Console panel" lightbox="../media/console-hello-console.msft.png":::
-   The **Console** panel  
+:::image type="complex" source="../media/console-hello-console.msft.png" alt-text="The Console tool" lightbox="../media/console-hello-console.msft.png":::
+   The **Console** tool  
 :::image-end:::  
 
-To open the Console panel from the [Command Menu][DevToolsCommandMenu], start typing `Console` and then run the **Show Console** command that has the **Panel** badge next to it.  
+To open the **Console** tool from the [Command Menu][DevToolsCommandMenu], start typing `Console` and then run the **Show Console** command that has the **Panel** badge next to it.  
 
 :::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="The command to show the Console panel" lightbox="../media/console-command-menu-show-console.msft.png":::
-   The command to show the **Console** panel  
+   The command to show the **Console** tool  
 :::image-end:::  
 
-### Open the Console tab in the Drawer  
+### Open the Console tool in the Drawer  
 
 Select `Escape` or choose **Customize And Control DevTools** \(`...`\) and then choose **Show console drawer**.  
 
@@ -54,16 +54,16 @@ Select `Escape` or choose **Customize And Control DevTools** \(`...`\) and then 
    **Show console drawer**  
 :::image-end:::  
 
-The Drawer pops up at the bottom of your DevTools window, with the **Console** tab open.  
+The Drawer pops up at the bottom of your DevTools window, with the **Console** tool open.  
 
-:::image type="complex" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="The Console tab in the Drawer" lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
-   The **Console** tab in the **Drawer**  
+:::image type="complex" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="The Console tool in the Drawer" lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
+   The **Console** tool in the **Drawer**  
 :::image-end:::  
 
-To open the Console tab from the [Command Menu][DevToolsCommandMenu], start typing `Console` and then run the **Show Console** command that has the **Drawer** badge next to it.  
+To open the **Console** tool from the [Command Menu][DevToolsCommandMenu], start typing `Console` and then run the **Show Console** command that has the **Drawer** badge next to it.  
 
-:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="The command to show the Console tab in the Drawer" lightbox="../media/console-command-menu-show-console.msft.png":::
-   The command to show the **Console** tab in the **Drawer**  
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="The command to show the **Console** tool in the Drawer" lightbox="../media/console-command-menu-show-console.msft.png":::
+   The command to show the **Console** tool in the **Drawer**  
 :::image-end:::  
 
 ### Open Console Settings  

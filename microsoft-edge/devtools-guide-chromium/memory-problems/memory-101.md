@@ -1,9 +1,9 @@
 ---
 description: This section describes common terms used in memory analysis, and is applicable to a variety of memory profiling tools for different languages.
-title: Memory Terminology
+title: Memory terminology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,7 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License. -->
 
-# Memory Terminology  
+# Memory terminology  
 
 This article describes common terms used in memory analysis, and is applicable to various memory profiling tools for different languages.  
 
@@ -88,7 +88,7 @@ The heap is a network of interconnected objects.  In the mathematical world, thi
 *   **Nodes** \(or **objects**\) are labelled using the name of the **constructor** function that was used to build them.  
 *   **Edges** are labelled using the names of **properties**.  
 
-Learn [how to record a profile using the Heap Profiler][DevtoolsMemoryProblemsHeapSnapshots].  In the following figure, some of the notable things in the Heap Snapshot recording in the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots] include distance:  the distance from the Garbage Collector root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that is something worth investigating.  
+Learn [how to record a profile using the Heap Profiler][DevtoolsMemoryProblemsHeapSnapshots].  In the following figure, some of the notable things in the Heap Snapshot recording in the [Memory][DevtoolsMemoryProblemsHeapSnapshots] tool include distance:  the distance from the Garbage Collector root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that is something worth investigating.  
 
 :::image type="complex" source="../media/memory-problems-root.msft.png" alt-text="Distance from root" lightbox="../media/memory-problems-root.msft.png":::
    Distance from root  

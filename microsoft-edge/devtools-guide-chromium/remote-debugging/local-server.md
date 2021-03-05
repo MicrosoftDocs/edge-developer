@@ -1,9 +1,9 @@
 ---
 description: Host a site on a development machine web server, and then access the content from an Android device.
-title: Access Local Servers
+title: Access local servers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

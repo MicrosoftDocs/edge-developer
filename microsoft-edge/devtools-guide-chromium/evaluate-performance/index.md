@@ -1,9 +1,9 @@
 ---
 description: Learn how to evaluate runtime performance in Microsoft Edge DevTools.
-title: Get Started With Analyzing Runtime Performance
+title: Get started with analyzing Runtime performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -58,7 +58,7 @@ In the following tutorial, you open DevTools on a live page and use the **Perfor
 
 Mobile devices have much less CPU power than desktops and laptops.  Whenever you profile a page, use CPU Throttling to simulate how your page performs on mobile devices.  
 
-1.  In DevTools, choose the **Performance** tab.  
+1.  In DevTools, choose the **Performance** tool.  
 1.  Make sure that the **Screenshots** checkbox is enabled.  
 1.  Choose **Capture Settings** \(![Capture Settings][ImageCaptureSettingsIcon]\).  DevTools reveals settings related to how it captures performance metrics.  
 1.  For **CPU**, choose **4x slowdown**.  DevTools throttles your CPU so that it is 4 times slower than usual.  
@@ -117,10 +117,10 @@ The main metric for measuring the performance of any animation is frames per sec
        The **FPS** chart  
     :::image-end:::  
     
-1.  Below the **FPS** chart, the **CPU** chart is displayed.  The colors in the **CPU** chart correspond to the colors in the **Summary** tab, at the bottom of the Performance panel.  The fact that the **CPU** chart is full of color means that the CPU was maxed out during the recording.  Whenever the CPU maxed out for long periods, it is an indicator that you should find ways to do less work.  
+1.  Below the **FPS** chart, the **CPU** chart is displayed.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the Performance panel.  The fact that the **CPU** chart is full of color means that the CPU was maxed out during the recording.  Whenever the CPU maxed out for long periods, it is an indicator that you should find ways to do less work.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="The CPU chart and Summary tab" lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
-       The **CPU** chart and **Summary** tab  
+    :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="The CPU chart and Summary panel" lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
+       The **CPU** chart and **Summary** panel  
     :::image-end:::  
     
 1.  Hover on the **FPS**, **CPU**, or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  The action is referenced as scrubbing, and it is useful for manually analyzing the progression of animations.  
@@ -143,22 +143,22 @@ Another handy tool is the FPS meter, which provides real-time estimates for FPS 
 
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
 1.  Start typing `Rendering` in the **Command Menu** and choose **Show Rendering**.  
-1.  In the **Rendering** tab, enable **FPS Meter**.  A new overlay appears in the top-right of your viewport.  
+1.  In the **Rendering** tool, enable **FPS Meter**.  A new overlay appears in the top-right of your viewport.  
     
     :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="The FPS meter" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
        The **FPS meter**  
         :::image-end:::  
     
-1.  Turn off the **FPS Meter** and select `Escape` to close the **Rendering** tab.  You are not using **FPS Meter** in this tutorial.  
+1.  Turn off the **FPS Meter** and select `Escape` to close the **Rendering** tool.  You are not using **FPS Meter** in this tutorial.  
     
 ### Find the bottleneck  
 
 After you measured and verified that the animation is not performing well, the next step is to answer the question "why?".  
 
-1.  When no events are chosen, the **Summary** tab shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.  
+1.  When no events are chosen, the **Summary** panel shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.  
     
-    :::image type="complex" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="The Summary tab" lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
-       The **Summary** tab  
+    :::image type="complex" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="The Summary panel" lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
+       The **Summary** panel  
     :::image-end:::  
     
 1.  Expand the **Main** section.  DevTools shows you a flame chart of activity on the main thread, over time.  The x-axis represents the recording, over time.  Each bar represents an event.  A wider bar means that event took longer.  The y-axis represents the call stack.  When events are stacked on top of each other, it means the upper events caused the lower events.  
@@ -167,7 +167,7 @@ After you measured and verified that the animation is not performing well, the n
        The **Main** section  
     :::image-end:::  
     
-1.  There is a lot of data in the recording.  To Zoom into a single event; choose, hold, and dragg your cursor over the **Overview**, which is the section that includes the **FPS**, **CPU**, and **NET** charts.  The **Main** section and **Summary** tab only display information for the chosen portion of the recording.  
+1.  There is a lot of data in the recording.  To Zoom into a single event; choose, hold, and dragg your cursor over the **Overview**, which is the section that includes the **FPS**, **CPU**, and **NET** charts.  The **Main** section and **Summary** panel only display information for the chosen portion of the recording.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Zoom into an event" lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
        Zoom into an event  
@@ -181,7 +181,7 @@ After you measured and verified that the animation is not performing well, the n
     > [!NOTE]
     > The **Animation Frame Fired** event occurs whenever a [`requestAnimationFrame()` callback][MDNWebRequestAnimationFrame] is run.  
     
-1.  Choose the **Animation Frame Fired** event.  The **Summary** tab now shows you information about that event.  Note the **Reveal** link.  After you choose it, DevTools to highlights the event that initiated the **Animation Frame Fired** event.  Also, focus on the **app.js:95** link.  After you choose it, the relevant line in the source code is displayed.
+1.  Choose the **Animation Frame Fired** event.  The **Summary** panel now shows you information about that event.  Note the **Reveal** link.  After you choose it, DevTools to highlights the event that initiated the **Animation Frame Fired** event.  Also, focus on the **app.js:95** link.  After you choose it, the relevant line in the source code is displayed.
     
     :::image type="complex" source="../media/evaluate-performance-performance-animation-frame-fired.msft.png" alt-text="More information about the Animation Frame Fired event" lightbox="../media/evaluate-performance-performance-animation-frame-fired.msft.png":::
        More information about the **Animation Frame Fired** event  
@@ -191,9 +191,9 @@ After you measured and verified that the animation is not performing well, the n
     > After choosing an event, use the arrow keys to select the events next to it.  
     
 1.  Under the **app.update** event, there is a bunch of purple events.  If each purple event was wider, it looks as though each one may have a red triangle on it.  
-1.  Choose one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** tab.  Indeed, there is a warning about forced reflows \(another word for layout\).  
+1.  Choose one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** panel.  Indeed, there is a warning about forced reflows \(another word for layout\).  
     
-1.  In the **Summary** tab, choose the **app.js:71** link under **Layout Forced**.  DevTools takes you to the line of code that forced the layout.  
+1.  In the **Summary** panel, choose the **app.js:71** link under **Layout Forced**.  DevTools takes you to the line of code that forced the layout.  
     
     :::image type="complex" source="../media/evaluate-performance-sources-app-update.msft.png" alt-text="The line of code that caused the forced layout" lightbox="../media/evaluate-performance-sources-app-update.msft.png":::
        The line of code that caused the forced layout  
@@ -220,7 +220,7 @@ Using the workflows and tools that you just learned, choose **Optimize** on the 
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.  
 To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->  
 
-To get more comfortable with the Performance panel, practice makes perfect.  Try profiling your pages and analyzing the results.  If you have any questions about your results, use the **Send Feedback** icon, select `Alt`+`Shift`+`I` \(Windows, Linux\), select `Option`+`Shift`+`I` \(macOS\), or [tweet the DevTools team][TwitterEdgeDevtools].  Include screenshots or links to reproducible pages, if possible.  
+To get more comfortable with the **Performance** tool, practice makes perfect.  Try profiling your pages and analyzing the results.  If you have any questions about your results, use the **Send Feedback** icon, select `Alt`+`Shift`+`I` \(Windows, Linux\), select `Option`+`Shift`+`I` \(macOS\), or [tweet the DevTools team][TwitterEdgeDevtools].  Include screenshots or links to reproducible pages, if possible.  
 
 :::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="The **Feedback** icon in the Microsoft Edge DevTools" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
    The **Send Feedback** icon in the Microsoft Edge DevTools  
