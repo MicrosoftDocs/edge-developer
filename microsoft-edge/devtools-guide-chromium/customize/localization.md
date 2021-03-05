@@ -1,13 +1,13 @@
 ---
+description: Change DevTools language settings.
 title: Change DevTools language settings
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/16/2020
+ms.date: 02/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, localization, loc, language
 ---
-
 # Change DevTools language settings  
 
 Your Developer Tools matches your browser language by default, if it is one of the ten languages currently supported \(in addition to English\).  
@@ -53,12 +53,12 @@ Your Developer Tools matches your browser language by default, if it is one of t
    :::column-end:::
 :::row-end:::  
 
-:::image type="complex" source="./media/localization-jp.png" alt-text="DevTools in Japanese" lightbox="./media/localization-jp.png":::
+:::image type="complex" source="../media/localization-jp.msft.png" alt-text="DevTools in Japanese" lightbox="../media/localization-jp.msft.png":::
    DevTools in Japanese  
 :::image-end:::  
 
-If you want to revert DevTools to English, go to [DevTools Settings][DevtoolschromiumCustomizeIndexSettings] or press `F1` > **Preferences** and deselect the **Match browser language** checkbox.  
+If you want to revert DevTools to English, navigate to [DevTools Settings][DevtoolsCustomizeIndexSettings] or select `F1`, choose **Preferences**, and turn off the **Match browser language** checkbox.  
 
 <!-- links -->  
 
-[DevtoolschromiumCustomizeIndexSettings]: ./index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: ./index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
