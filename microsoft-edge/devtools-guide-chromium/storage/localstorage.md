@@ -3,7 +3,7 @@ description: How to view and edit localStorage with the Local Storage pane and t
 title: View And Edit Local Storage With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -28,7 +28,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 ## View localStorage keys and values  
 
-1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane is shown by default.  
+1.  Choose the **Application** tab to open the **Application** tool.  The **Manifest** pane is shown by default.  
     
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
        The **Manifest** pane  
@@ -40,13 +40,13 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
        The **Local Storage** menu  
     :::image-end:::  
     
-1.  Select a domain to view the key-value pairs.  
+1.  Choose a domain to view the key-value pairs.  
     
     :::image type="complex" source="../media/storage-application-local-storage-view-key-value.msft.png" alt-text="The localStorage key-value pairs for the https://www.bing.com domain" lightbox="../media/storage-application-local-storage-view-key-value.msft.png":::
        The `localStorage` key-value pairs for the `https://www.bing.com` domain  
     :::image-end:::  
     
-1.  Select a row of the table to view the value in the viewer below the table.  
+1.  Choose a row of the table to view the value in the viewer below the table.  
     
     :::image type="complex" source="../media/storage-application-local-storage-view-key-value-selected.msft.png" alt-text="View the value of the eventLogQueue_Online key" lightbox="../media/storage-application-local-storage-view-key-value-selected.msft.png":::
        View the value of the `eventLogQueue_Online` key  
@@ -54,7 +54,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
     
 ## Create a new localStorage key-value pair  
 
-1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).  
+1.  [View the localStorage key-value pairs of a domain](#view-localstorage-keys-and-values).  
 1.  Double-click the empty part of the table.  DevTools creates a new row and focuses your cursor in the **Key** column.  
     
     :::image type="complex" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="The empty part of the table to double-click in order to create a new key-value pair" lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
@@ -63,7 +63,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
     
 ## Edit localStorage keys or values  
 
-1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).  
+1.  [View the localStorage key-value pairs of a domain](#view-localstorage-keys-and-values).  
 1.  Double-click a cell in the **Key** or **Value** column to edit that key or value.  
     
     :::image type="complex" source="../media/storage-application-local-storage-edit-key-value.msft.png" alt-text="Edit a localStorage key" lightbox="../media/storage-application-local-storage-edit-key-value.msft.png":::
@@ -73,8 +73,8 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 ## Delete localStorage key-value pairs  
 
 1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).  
-1.  Select the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.  
-1.  Press the `Delete` key or choose **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
+1.  Choose the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.  
+1.  Select the `Delete` key or choose **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
     
 ## Delete all `localStorage` key-value pairs for a domain  
 
@@ -108,7 +108,7 @@ Since you are able to run JavaScript in the **Console**, and since the **Console
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
 
 [MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window.localStorage | MDN"  
 

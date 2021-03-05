@@ -1,27 +1,26 @@
 ---
-description: The steps to create Microsoft Edge Addons developer account on Partner center.
-title: Extension submission states and overview
+description: Learn about the different states when submitting extensions to the store
+title: Submission states for extensions in the store
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ---
+# Submission states for extensions in the Microsoft Edge Add-ons store  
 
-# Extension submission states and overview  
+The overview page on the Partner Center displays the state of your extension in the overall submission flow.  This article describes the different states your extension may be in at any time during the submission and certification process.  
 
-The overview page on the Partner Center displays the state of your extension in the overall submission flow.  
-
-| # |  State |  Description / Details |  
+| # |  State |  Details |  
 |:--- |:--- |:--- |  
-| 1 |  In draft |  After you create your submission and save it to your account, the state changes to this state.  <br />  You have not submitted your extension package and your submission form details for publishing on Microsoft Store.  <br />  Your extension is not available to users in this state.  |  
-| 2|  In review |  After you submit your extension, the state changes to this state.  <br />  Your extension package and your submission form details are under review by Microsoft.  <br />  Your extension is not available to users in this state.  |  
-| 3|  Waiting to publish |  After your extension review is successfully completed and while your extension is being prepared for publishing to Microsoft Store, the state changes to this state.  <br />  This is an intermediate state between `In review` and `In the store`.  <br />  This state may not appear for all the submissions.  |  
-| 4|  In the store |  After the review completes and your extension is published to Microsoft Store, the state changes to this state.  <br />  Your extension is available on Microsoft Store in markets that you specified.  |  
-| 5 |  In the store.  Update in review |  Your extension is published on Microsoft Store and you have submitted an update that is under review by Microsoft.  |  
-| 6 |  Review failed |  If your extension fails a review, the state changes to this state.  <br />  A failed review may occur during initial review or during an update.  <br />  You are expected to take corrective action and re-submit your extension for publishing on Microsoft Store.  |  
-| 7 |  Unavailable in store |  There are three possible scenarios when your extension displays this state:  **Unpublished from store** , **Removed from store**, and **Blocked**.  The description of each of these three is specified below.  |  
-| 8 |  Unpublished from store |  You unpublished your extension from Microsoft Store in Partner Center.  <br />  In Partner Center, on your extension submission page, you clicked on unpublish button.  <br />  After unpublishing, your extension is no longer available on Microsoft Store for new users to download, but existing users may continue to use their copies of your extension.  |  
-| 9 |  Removed from store |  If your extension is found to violate the terms and conditions of Microsoft Store, Microsoft may remove it from Microsoft Store and the state changes to this state.  <br />  After removal of your extension by Microsoft, your extension is no longer available on Microsoft Store for new users to download, but existing users may continue to use their copies of your extension.  |  
-| 10 |  Blocked |  If your extension is found to be malicious and compromising security and privacy of users, Microsoft has the right to block your extension from Microsoft Store and the state changes to this state.  <br />  If your extension is blocked, your extension is removed from Microsoft Store, your extension is also removed from user devices.  |  
+| 1 |  In draft |  You create your submission and save a draft to your account.  You have not submitted your extension package and your submission form details to publish to the Microsoft Edge Add-ons store.  Your extension is not available to users in this state.  |  
+| 2|  In review |  You have submitted your extension.  Your extension package and your submission form details are reviewed by Microsoft.  Your extension is not available to users in this state.  |  
+| 3|  Waiting to publish |  Your submission is in this state after your extension review is complete, and your extension is being prepared for publishing in the Microsoft Store.  This state is an intermediate state between `In review` and `In the store`.  This state may not appear for all submissions.  |  
+| 4|  In the store |  The review is now complete, and your extension is published on the Microsoft Edge Add-ons store.  Your extension is available on the Microsoft Store in the markets that you specified.  |  
+| 5 |  In the store.  Update in review |  Your extension is published to the Microsoft Edge Add-ons store and you have submitted an update that is under review by Microsoft.  |  
+| 6 |  Review failed |  Your submission is in this state if your extension fails a review.  A failed review may occur during the initial review or during an update.  You need to take corrective action and resubmit your extension.  |  
+| 7 |  Unavailable in store |  There are three possible scenarios when your extension displays this state:  **Unpublished from store**, **Removed from store**, and **Blocked**.  The description of each of the three states is specified in 8, 9, and 10.  |  
+| 8 |  Unpublished from store |  You unpublished your extension from the Microsoft Edge Add-ons store in Partner Center.  In Partner Center, you chose **unpublish** on the extension submission page.  After unpublishing your extension, it is no longer available in the Microsoft Edge Add-ons store for new users to download, but existing users may continue to use their copies of your extension.  |  
+| 9 |  Removed from store |  If your extension is found to violate the terms and conditions of Microsoft Edge Add-ons store, Microsoft may remove it from Edge Add-ons store and the state changes to this state.  <br />  After removal of your extension by Microsoft, your extension is no longer available on Microsoft Edge Add-ons store for new users to download, but existing users may continue to use their copies of your extension.  |  
+| 10 |  Blocked |  If your extension is found to be malicious and compromises the security and privacy of users, Microsoft has the right to block your extension from the Edge Add-ons store, and the state changes to this state.  If your extension is blocked, it is removed from the Edge Add-ons store and from all user devices.  |  
