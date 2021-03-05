@@ -44,7 +44,7 @@ To begin automating tests, use the following steps to ensure that the WebDriver 
     > [!NOTE] 
     > For more information about test automation using Microsoft Edge \(EdgeHTML\), navigate to [Microsoft Edge Driver for Microsoft Edge \(EdgeHTML\)][Webdriver].  
     -->  
-
+    
 ## Choose a WebDriver language binding  
 
 The last component you must download is a language-specific client driver to translate your code \(Python, Java, C\#, Ruby, JavaScript\) into commands the Microsoft Edge Driver runs in Microsoft Edge \(Chromium\).  
