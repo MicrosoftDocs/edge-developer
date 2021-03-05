@@ -3,7 +3,7 @@ description: Learn about Chromium Extensions, and core concepts to build extensi
 title: Microsoft Edge (Chromium) Extensions concepts and architecture
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/28/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions

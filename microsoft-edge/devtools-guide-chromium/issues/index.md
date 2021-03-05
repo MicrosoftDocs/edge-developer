@@ -3,7 +3,7 @@ description: Use the Issues tool to find and fix problems with your website.
 title: Find and fix problems with the Microsoft Edge DevTools Issues tool 
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020 
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -36,7 +36,7 @@ The **Issues** tool in Microsoft Edge DevTools reduces the notification fatigue 
 
 ## Open the Issues tool in the DevTools drawer  
 
-1.  Visit a page, such as [samesite-sandbox.glitch.me][GlitchSamesiteSandbox], that contains issues to fix.  
+1.  Navigate to a webpage, such as [samesite-sandbox.glitch.me][GlitchSamesiteSandbox], that contains issues to fix.  
 1.  [Open DevTools][DevtoolsOpen].  
 1.  :::row:::
        :::column span="":::
@@ -55,7 +55,7 @@ The **Issues** tool in Microsoft Edge DevTools reduces the notification fatigue 
        :::column-end:::
     :::row-end:::
     
-1.  Select the **Reload page** button, if necessary.  
+1.  Choose the **Reload page** button, if necessary.  
     
     :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Issues tool in the DevTools Drawer with Reload page button" lightbox="../media/issues-tab-before-refresh.msft.png":::
        **Issues** tool in the DevTools Drawer with **Reload page** button  
@@ -71,7 +71,7 @@ The **Issues** tool in Microsoft Edge DevTools reduces the notification fatigue 
 
 The **Issues** tool in the DevTools Drawer presents warnings in a structured, aggregated, and actionable way.  
 
-1.  Select an item in the **Issues** tool to get guidance on how to fix the issue and find affected resources.  
+1.  Choose an item in the **Issues** tool to get guidance on how to fix the issue and find affected resources.  
     
     :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Mark cross-site cookies as Secure issue open in the Issues tool" lightbox="../media/issues-tab-issue-open.msft.png":::
        **Mark cross-site cookies as Secure** issue open in the **Issues** tool  
@@ -84,24 +84,24 @@ The **Issues** tool in the DevTools Drawer presents warnings in a structured, ag
     *   An **AFFECTED RESOURCES** section that links to resources within the appropriate DevTools context such as the Network panel.  
     *   Links to further guidance.  
     
-1.  Select items in **AFFECTED RESOURCES** to view details.  In the following example, the **Mark cross-site cookies as Secure** issue affects one cookie and two requests.  
+1.  Choose items in **AFFECTED RESOURCES** to view details.  In the following example, the **Mark cross-site cookies as Secure** issue affects one cookie and two requests.  
     
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Affected resources open in the Issues Drawer tab" lightbox="../media/issues-tab-affected-resources.msft.png":::
+    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Affected resources open in the Issues tool" lightbox="../media/issues-tab-affected-resources.msft.png":::
        Affected resources open in the **Issues** tool in the DevTools Drawer  
     :::image-end:::  
     
 ## View issues in context  
 
-1.  Select a resource link to view the item in the appropriate context within DevTools.  In the following example, select `samesite-sandbox.glitch.me` under **Requests** to show the cookies attached to that request.  
+1.  Choose a resource link to view the item in the appropriate context within DevTools.  In the following example, choose `samesite-sandbox.glitch.me` under **Requests** to show the cookies attached to that request.  
     
-    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="View the affected cookie in the DevTools Network panel" lightbox="../media/issues-tab-view-request.msft.png":::
-       View the affected cookie in the DevTools **Network** panel  
+    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="View the affected cookie in the DevTools Network tool" lightbox="../media/issues-tab-view-request.msft.png":::
+       View the affected cookie in the DevTools **Network** tool  
     :::image-end:::  
 
-1.  Scroll to view the item with a problem: for the following example, the `ck02` cookie.  Hover over the **SameSite** column to see the `None` value that the issue detected.  
+1.  Scroll to view the item with a problem:  for the following example, the `ck02` cookie.  Hover on the **SameSite** column to review the `None` value that the issue detected.  
     
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="None value in the SameSite column for the ck02 cookie in the DevTools Network panel" lightbox="../media/issues-tab-view-issue.msft.png":::
-       `None` value in the **SameSite** column for the `ck02` cookie in the DevTools **Network** panel  
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="None value in the SameSite column for the ck02 cookie in the DevTools Network tool" lightbox="../media/issues-tab-view-issue.msft.png":::
+       `None` value in the **SameSite** column for the `ck02` cookie in the DevTools **Network** tool  
     :::image-end:::  
 
 ## Getting in touch with the Microsoft Edge DevTools team  

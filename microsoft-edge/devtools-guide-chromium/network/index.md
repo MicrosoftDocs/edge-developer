@@ -1,9 +1,9 @@
 ---
 description: A tutorial on the most popular network-related features in Microsoft Edge DevTools.  
-title: Inspect Network Activity In Microsoft Edge DevTools
+title: Inspect network activity in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020 
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -27,7 +27,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 This is a hands-on tutorial of some of the most commonly-used DevTools features related
 to inspecting network activity for a page.  
 
-See [Network Reference][DevtoolsNetworkReference] if you want to browse features instead.  
+If you want to browse features, navigate to [Network Reference][DevtoolsNetworkReference].  
 
 <!--TODO: This entire section needs a Microsoft Edge DevTools re-write  -->
 
@@ -64,7 +64,7 @@ To get the most out of this tutorial, open up the demo and try out the features 
     :::image-end:::  
     -->
     
-1.  [Open DevTools][DevToolsOpen] by pressing `Control`+`Shift`+`J` \(Windows, Linux\) or
+1.  To [Open DevTools][DevToolsOpen], select `Control`+`Shift`+`J` \(Windows, Linux\) or
    `Command`+`Option`+`J` \(macOS\).  The **Console** tool opens.  
     
     :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="The Console" lightbox="../media/network-glitch-console.msft.png":::
@@ -77,19 +77,19 @@ To get the most out of this tutorial, open up the demo and try out the features 
        DevTools docked to the bottom of the window  
     :::image-end:::  
     
-1.  Select the **Network** tab.  The **Network** panel opens.  
+1.  Open the **Network** tool.  
     
     :::image type="complex" source="../media/network-glitch-network-bottom.msft.png" alt-text="Console tool in the DevTools docked to the bottom of the window" lightbox="../media/network-glitch-network-bottom.msft.png":::
        **Console** tool in the DevTools docked to the bottom of the window  
     :::image-end:::  
     
-Right now the Network panel is empty.  DevTools only logs network activity after you open it and no network activity has occurred since you opened DevTools.  
+Right now the **Network** tool is empty.  DevTools only logs network activity after you open it and no network activity has occurred since you opened DevTools.  
 
 ## Log network activity  
 
 To view the network activity that a page causes:  
 
-1.  Reload the page.  The Network panel logs all network activity in the **Network Log**.  
+1.  Refresh the webpage.  The Network panel logs all network activity in the **Network Log**.  
     
     :::image type="complex" source="../media/network-glitch-network.msft.png" alt-text="The Network Log" lightbox="../media/network-glitch-network.msft.png":::
        The **Network Log**  
@@ -101,17 +101,17 @@ To view the network activity that a page causes:
 
     *   **Status**.  The HTTP status code for response.  
     *   **Type**.  The resource type.  
-    *   **Initiator**.  The cause of the resource request.  Selecting a link in the Initiator column takes you to the source code that caused the request.  
+    *   **Initiator**.  The cause of the resource request.  CHoosing a link in the Initiator column takes you to the source code that caused the request.  
     *   **Time**.  The duration of the request.  
-    *   **Waterfall**.  A graphical representation of the different stages of the request.  Hover over a Waterfall to see a breakdown.  
+    *   **Waterfall**.  A graphical representation of the different stages of the request.  To display a breakdown, hover on a Waterfall.  
     
     > [!NOTE]
-    > The graph above the Network Log is called the Overview.  You will not use the Overview graph in this tutorial, so you may hide it.  See [Hide the Overview pane][DevtoolsReferenceHideOverview].
+    > The graph above the Network Log is called the Overview.  You will not use the Overview graph in this tutorial, so you may hide it.  Navigate to [Hide the Overview pane][DevtoolsReferenceHideOverview].
     
 1.  After you open DevTools, it records network activity in the Network Log.  
     To demonstrate this, first look at the bottom of the **Network Log** and make a mental note of the last activity.  
 1.  Now, select the **Get Data** button in the demo.  
-1.  Look at the bottom of the **Network Log** again.  You should see a new resource called `getstarted.json`.  Selecting the **Get Data** button caused the page to request this file.  
+1.  Look at the bottom of the **Network Log** again.  A new resource named `getstarted.json` is displayed.  To cause the webpage to request the file, choose the **Get Data** button.  
     
     :::image type="complex" source="../media/network-glitch-network-new-resource.msft.png" alt-text="A new resource in the Network Log" lightbox="../media/network-glitch-network-new-resource.msft.png":::
        A new resource in the **Network Log**  
@@ -129,7 +129,7 @@ There are also many columns that are hidden by default which you may find useful
     :::image-end:::  
     
     > [!TIP]
-    > See the full URL of a resource by hovering over the cell in the **Name** column.  
+    > To review the full URL of a resource, hover on the cell in the **Name** column.  
     
 ## Simulate a slower network connection  
 
@@ -143,8 +143,8 @@ The network connection of the computer that you use to build sites is probably f
     
 1.  Choose **Slow 3G**.  
     
-    :::image type="complex" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="Select Slow 3G" lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
-       Select Slow 3G  
+    :::image type="complex" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="Choose Slow 3G" lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
+       Choose Slow 3G  
     :::image-end:::  
     
 1.  Long-press **Reload** \(![Reload][ImageRefreshIcon]\) and then choose **Empty Cache And Hard Reload**.  
@@ -153,18 +153,18 @@ The network connection of the computer that you use to build sites is probably f
        **Empty Cache And Hard Reload**  
     :::image-end:::  
     
-    On repeat visits, the browser usually serves some files from the [cache][MDNHTTPCache], which speeds up the page load.  **Empty Cache And Hard Reload** forces the browser to go the network for all resources.  This is helpful when you want to see how a first-time visitor experiences a page load.  
+    On repeat visits, the browser usually serves some files from the [cache][MDNHTTPCache], which speeds up the page load.  **Empty Cache And Hard Reload** forces the browser to go the network for all resources.  Use it to display how a first-time visitor experiences a page load.  
     
     > [!NOTE]
     > The **Empty Cache And Hard Reload** workflow is only available when DevTools is open.  
     
 ## Capture screenshots  
 
-Screenshots let you see how a page looked over time while it was loading.  
+Screenshots display how a webpage looks over time while it loads.  
 
 1.  Choose \(![Network settings][ImageSettingsIcon]\) and turn on the **Capture screenshots** checkbox.
 1.  Refresh the page again using the **Empty Cache And Hard Reload** workflow.  Navigate to [Simulate a slower connection](#simulate-a-slower-network-connection) if you need a reminder on how to do this.  
-    The Screenshots pane provides thumbnails of how the page looked at various points during the loading process.  
+    The Screenshots panel provides thumbnails of how the page looked at various points during the loading process.  
     
     :::image type="complex" source="../media/network-glitch-network-screenshots.msft.png" alt-text="Screenshots of the page load" lightbox="../media/network-glitch-network-screenshots.msft.png":::
        Screenshots of the page load  
@@ -183,33 +183,33 @@ Screenshots let you see how a page looked over time while it was loading.
 
 Choose a resource to learn more information about it.  Try it now:  
 
-1.  Choose `getstarted.html`.  The **Headers** tab is shown.  Use this tab to inspect HTTP headers.  
+1.  Choose `getstarted.html`.  The **Headers** panel is shown.  Use this panel to inspect HTTP headers.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="The Headers tab" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
-       The **Headers** tab  
+    :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="The Headers panel" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
+       The **Headers** panel  
     :::image-end:::  
     
-1.  Choose the **Preview** tab.  A basic rendering of the HTML is shown.  
+1.  Choose the **Preview** panel.  A basic rendering of the HTML is shown.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="The Preview tab" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
-       The **Preview** tab  
+    :::image type="complex" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="The Preview panel" lightbox="../media/network-glitch-network-resources-preview.msft.png":::
+       The **Preview** panel  
     :::image-end:::  
     
-    The tab is helpful when an API returns an error code in HTML.  You may find it easier to read the rendered HTML than the HTML source code, or when you inspect images.  
+    The panel is helpful when an API returns an error code in HTML.  You may find it easier to read the rendered HTML than the HTML source code, or when you inspect images.  
 
-1.  Choose the **Response** tab.  The HTML source code is shown.  
+1.  Choose the **Response** panel.  The HTML source code is shown.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="The Response tab" lightbox="../media/network-glitch-network-resources-response.msft.png":::
-       The **Response** tab  
+    :::image type="complex" source="../media/network-glitch-network-resources-response.msft.png" alt-text="The Response panel" lightbox="../media/network-glitch-network-resources-response.msft.png":::
+       The **Response** panel  
     :::image-end:::  
     
     > [!TIP]
-    > When a file is minified, choose the **Format** \(![Format][ImageFormatIcon]\) button at the bottom of the **Response** tab to re-format the contents of the file for readability.  
+    > When a file is minified, choose the **Format** \(![Format][ImageFormatIcon]\) button at the bottom of the **Response** panel to re-format the contents of the file for readability.  
     
-1.  Choose the **Timing** tab.  A breakdown of the network activity for the resource is displayed.  
+1.  Choose the **Timing** panel.  A breakdown of the network activity for the resource is displayed.  
     
-    :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="The Timing tab" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
-       The **Timing** tab  
+    :::image type="complex" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="The Timing panel" lightbox="../media/network-glitch-network-resources-timing.msft.png":::
+       The **Timing** panel  
     :::image-end:::  
     
 1.  Choose **Close** \(![Close][ImageCloseIcon]\) to view the Network Log again.  
@@ -238,13 +238,13 @@ For example, suppose you want to verify that your resources are using reasonable
        Search results for `Cache-Control`  
     :::image-end:::  
     
-1.  Choose a result to view the resource in which the result was found.  If you are looking at the details of the resource, select a result to go directly to it.  For example, if the query was found in a header, the Headers tab opens.   If the query was found in content, the **Response** tab opens.  
+1.  Choose a result to view the resource in which the result was found.  If you are looking at the details of the resource, select a result to go directly to it.  For example, if the query was found in a header, the **Headers** panel opens.   If the query was found in content, the **Response** panel opens.  
     
-    :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="A search result highlighted in the Headers tab" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
-       A search result highlighted in the **Headers** tab  
+    :::image type="complex" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="A search result highlighted in the Headers panel" lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
+       A search result highlighted in the **Headers** panel  
     :::image-end:::  
     
-1.  Close the Search pane and the Headers tab.  
+1.  Close the Search pane and the **Headers** panel.  
     
     :::image type="complex" source="../media/network-glitch-network-search-close.msft.png" alt-text="The Close buttons" lightbox="../media/network-glitch-network-search-close.msft.png":::
        The **Close** buttons  
@@ -278,7 +278,7 @@ The **Filter** text box supports many different types of filtering.
        A regular expression filter  
     :::image-end:::  
     
-1.  Type `-main.css`.  DevTools filters out `main.css`.  If any other file matched the pattern they would also be filtered out.  
+1.  Type `-main.css`.  DevTools filters out `main.css`.  If any file matches the pattern, tit is also filtered out.  
     
     :::image type="complex" source="../media/network-glitch-network-filter-negative-statement.msft.png" alt-text="A negative filter" lightbox="../media/network-glitch-network-filter-negative-statement.msft.png":::
        A negative filter  
@@ -290,7 +290,7 @@ The **Filter** text box supports many different types of filtering.
        A property filter  
     :::image-end:::  
     
-    See [Filter requests by properties][DevtoolsReferenceProperty] for the full list of filterable properties.  
+    For the full list of filterable properties, navigate to [Filter requests by properties][DevtoolsReferenceProperty].  
     
 1.  Clear the **Filter** text box of any text.  
     
@@ -304,15 +304,15 @@ To focus in on a certain type of file, such as stylesheets:
        Show CSS files only  
     :::image-end:::  
     
-1.  To also see scripts, hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and then choose **JS**.  
+1.  To also display scripts, select and hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and then choose **JS**.  
     
     :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="Show CSS and JS files only" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
        Show CSS and JS files only  
     :::image-end:::  
     
-1.  Choose **All** to remove the filters and see all resources again.  
+1.  To remove the filters and display all resources again, choose **All**.  
     
-See [Filter requests][DevtoolsNetworkReferenceFilter] for other filtering workflows.  
+For other filtering workflows, navigate to [Filter requests][DevtoolsNetworkReferenceFilter].  
 
 ## Block requests  
 
@@ -338,7 +338,7 @@ How does a page look and behave when some of the page resources are not availabl
     :::image-end:::  
     
 1.  Choose **Add**.  
-1.  Reload the page.  As expected, the styling of the page is slightly messed up because the main stylesheet has been blocked.  
+1.  Refresh the page.  As expected, the styling of the page is slightly messed up because the main stylesheet has been blocked.  
     
     > [!NOTE]
     > The `main.css` row in the Network Log.  The red text means that the resource was blocked.
@@ -351,7 +351,7 @@ How does a page look and behave when some of the page resources are not availabl
 
 ## Conclusion  
 
-Congratulations, you have completed the tutorial.  You now know how to use the **Network** panel in the Microsoft Edge DevTools!
+Congratulations, you have completed the tutorial.  You now know how to use the **Network** tool in the Microsoft Edge DevTools!
 
 Navigate to the [Network Reference][DevtoolsNetworkReference] to discover more DevTools features related to inspecting network activity.  
 

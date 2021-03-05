@@ -3,7 +3,7 @@ description: A list of ways to customize Microsoft Edge DevTools
 title: Customize Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/20/2020 
+ms.date: 02/12/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -49,7 +49,7 @@ To open \(or close\) the **Drawer**, select `Escape`.
    The **Drawer**  
 :::image-end:::  
 
-By default, some tools open in the main panel, while others appear in the **Drawer**.  Choose **More** \(`...`) to open a tool in the **Drawer**.  
+By default, some tools open in the main panel, while others appear in the **Drawer**.  Choose **More** \(`...`\) to open a tool in the **Drawer**.  
 
 :::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="The button to open the Drawer" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
    The button to open the **Drawer**  
@@ -75,7 +75,7 @@ You may move tools between the main panel and the drawer.
 Choose and drag a tool to change the ordering.  Your custom tool order persists across DevTools sessions.  
 
 > [!NOTE]
-> By default, the **Network** tool is usually the fourth from the left.  In the following figure, the **Network** panel is the first from the left.  
+> By default, the **Network** tool is usually the fourth from the left.  In the following figure, the **Network** tool is the first from the left.  
 
 :::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Custom order of Devtools in a panel" lightbox="../media/customize-network-first-position.msft.png":::
    Custom order of Devtools in a panel  
@@ -83,7 +83,7 @@ Choose and drag a tool to change the ordering.  Your custom tool order persists 
 
 ## Change DevTools placement  
 
-See [Microsoft Edge DevTools Placement][DevToolsPlacement].  
+Navigate to [Microsoft Edge DevTools Placement][DevToolsPlacement].  
 
 :::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Undocked DevTools" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
    Undocked DevTools  
@@ -91,7 +91,7 @@ See [Microsoft Edge DevTools Placement][DevToolsPlacement].
 
 ## Dark theme  
 
-See [Enable Dark Theme][DarkTheme].  
+Navigate to [Enable Dark Theme][DarkTheme].  
 
 :::image type="complex" source="../media/customize-settings-appearance-theme.msft.png" alt-text="The dark theme" lightbox="../media/customize-settings-appearance-theme.msft.png":::
    The dark theme  
@@ -99,7 +99,7 @@ See [Enable Dark Theme][DarkTheme].
 
 ## Experiments  
 
-To enable DevTools experiments, complete the following actions.  
+To turn on DevTools experiments, complete the following actions.  
 
 1.  Navigate to `edge://flags/#enable-devtools-experiments`.  
 1.  Choose **Enable**.  
