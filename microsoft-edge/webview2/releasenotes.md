@@ -16,6 +16,7 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 > [!NOTE]
 > Ensure you re-compile your app after updating the NuGet package.  The team recommends using the Canary channel when developing using the prerelease packages, and the evergreen runtime when using released packages.  For more information, navigate to [Versioning][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].  
  
+<!-- Links 
 ## 1.0.816-prerelease  
 
 Release Date: March 8, 2021  
@@ -46,6 +47,7 @@ Release Date: March 8, 2021
 *   Fixed a bug that limited WebView2 bounds to size of screen in Visual Hosting mode. 
         
 
+-->  
 ## 1.0.774.44  
 
 Release Date: March 8, 2021  
