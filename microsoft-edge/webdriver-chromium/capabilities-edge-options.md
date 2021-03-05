@@ -3,7 +3,7 @@ description: A reference for WebDriver capabilities and Microsoft Edge-specific 
 title: Capabilities and EdgeOptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/29/2021
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 ---
 # Capabilities and EdgeOptions  
 
-Capabilities are options that you may use to customize and configure an `EdgeDriver` session.  To learn about starting a new `EdgeDriver` session, navigate to [Automating Microsoft Edge][WebdriverIndexDrivingMicrosoftEdgeChromium].  This article describes all supported capabilities for [Microsoft Edge][WebdriverIndexInstallMicrosoftEdgeChromium] and details on passing the capabilities to `EdgeDriver` sessions.  
+Capabilities are options that you may use to customize and configure an `EdgeDriver` session.  To learn about starting a new `EdgeDriver` session, navigate to [Automating Microsoft Edge][WebdriverIndexAutomateMicrosoftEdgeChromium].  This article describes all supported capabilities for [Microsoft Edge][WebdriverIndexInstallMicrosoftEdgeChromium] and details on passing the capabilities to `EdgeDriver` sessions.  
 
 Capabilities are passed to a WebDriver session as a JSON map.  WebDriver language bindings typically provide type-safe convenience methods so you don't need to configure the JSON map yourself.  Different WebDriver language bindings use different mechanisms to configure capabilities.  Navigate to the documentation for your [preferred language binding][WebdriverIndexChooseWebdriverLanguageBinding] to learn more about how to configure capabilities.  [Selenium][SeleniumMain] configures capabilities through the `EdgeOptions` class.  
 
@@ -83,7 +83,7 @@ The following list contains all of the Microsoft Edge-specific capabilities that
 
 [DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Get started with Remote Debugging Windows 10 devices | Microsoft Docs"  
 [WebdriverIndexChooseWebdriverLanguageBinding]: ./index.md#choose-a-webdriver-language-binding "Choose a WebDriver language binding - WebDriver (Chromium) | Microsoft Docs"
-[WebdriverIndexDrivingMicrosoftEdgeChromium]: ./index.md#automating-microsoft-edge-chromium "Automating Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"    
+[WebdriverIndexAutomateMicrosoftEdgeChromium]: ./index.md#automate-microsoft-edge-chromium "Automate Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"    
 [WebdriverIndexInstallMicrosoftEdgeChromium]: ./index.md#install-microsoft-edge-chromium "Install Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"  
 
 [SeleniumMain]: https://www.selenium.dev "SeleniumHQ Browser Automation"  

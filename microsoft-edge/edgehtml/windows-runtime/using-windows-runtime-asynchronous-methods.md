@@ -1,6 +1,8 @@
 ---
-description: Using Windows Runtime Asynchronous Methods.
+description: Using Windows Runtime Asynchronous Methods
 title: "Using Windows Runtime Asynchronous Methods"
+ms.custom: ""
+ms.date: 11/03/2020
 ms.prod: microsoft-edge
 ms.technology: "windows-integration"
 ms.topic: "article"
@@ -10,7 +12,6 @@ ms.assetid: 70756833-44f7-4383-827f-2ac781558082
 caps.latest.revision: 15
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Using Windows Runtime asynchronous methods  
