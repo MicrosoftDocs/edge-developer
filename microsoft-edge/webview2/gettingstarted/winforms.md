@@ -104,20 +104,18 @@ To build and run your project, select `F5`.  Ensure your WebView2 control displa
 > [!NOTE]
 > If you are working on a high DPI monitor, you may have to [configure your Windows Forms app for high DPI support][DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport].  
 
-## Step 4 - Handle Window Resize Events
-
 ## Step 4 - Handle Window Resize Events  
 
-1.  In the **Windows Forms Designer**, open the **Toolbox**
-1.  Drag and drop a **TextBox** into the Windows Forms App.  In the **Properties Tab**, name the **TextBox** `addressBar` .
-1.  Drag and drop a **Button** into the Windows Forms App.  Change the text in the **Button** to `Go!` and name the **Button** `goButton` in the **Properties Tab**.
+Add a few more controls to your Windows Forms from the toolbox, and then handle window resize events appropriately.  
 
 1.  In the **Windows Forms Designer**, open the **Toolbox**.  
 1.  Drag and Drop a **TextBox** into the Windows Forms App.  Name the **TextBox** `addressBar` in the **Properties Tab**.  
 1.  Drag and Drop a **Button** into the Windows Forms App.  Change the text in the **Button** to `Go!` and name the **Button** `goButton` in the **Properties Tab**.  
     
-    :::image type="complex" source="./media/winforms-designer.png" alt-text="designer" lightbox="./media/winforms-designer.png":::
-       designer  
+    The app should look like the following image in the designer.  
+    
+    :::image type="complex" source="./media/winforms-designer.png" alt-text="WinForms designer" lightbox="./media/winforms-designer.png":::
+       WinForms designer  
     :::image-end:::  
 
 1.  In the `Form1.cs` file, define `Form_Resize` to keep the controls in place when the App Window is resized.
@@ -145,14 +143,14 @@ To build and run your project, select `F5`.  Ensure the app displays similar to 
 
 ## Step 5 - Navigation
 
+Add the ability to allow users to change the URL that the WebView2 control displays by adding an address bar to the app.  
+
 1.  Select `F5` to build and run your project.  Confirm that the app displays similar to the following screenshot.  
     
-    :::image type="complex" source="./media/winforms-app.png" alt-text="App" lightbox="./media/winforms-app.png":::
-       App  
+    :::image type="complex" source="./media/winforms-app.png" alt-text="WinForms App" lightbox="./media/winforms-app.png":::
+       WinForms App  
     :::image-end:::  
     
-## Step 5 - Navigation  
-
 1.  In the `Form1.cs`file, to add the `CoreWebView2` namespace, insert the following code snippet at the top.  
 
 1.  In `Form1.cs` add the `CoreWebView2` namespace by inserting the following code snippet at the top of `Form1.cs`.  
@@ -319,7 +317,10 @@ async void InitializeAsync()
     await webView.EnsureCoreWebView2Async(null);
     webView.CoreWebView2.WebMessageReceived += UpdateAddressBar;
 
-## Next steps  
+    await webView.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync("window.chrome.webview.postMessage(window.document.URL);");
+    await webView.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync("window.chrome.webview.addEventListener(\'message\', event => alert(event.data));");
+}
+```  
 
 To build and run the app, select `F5`.  Now, the address bar displays the URI in the WebView2 control.  Also, when you successfully navigate to a new URL, the WebView alerts the user of the URL displayed in the WebView.  
 
@@ -339,9 +340,9 @@ To continue learning more about WebView2, navigate to the following resources.
 *   For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].  
 *   For detailed information about the WebView2 API, navigate to [API reference][DotnetApiMicrosoftWebWebview2WinformsWebview2].  
 
-[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
+## Getting in touch with the Microsoft Edge WebView team  
 
-[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Microsoft Edge Developer"  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
