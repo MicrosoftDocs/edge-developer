@@ -3,18 +3,17 @@ description: Build an extension that pops up the NASA picture of the day
 title: Create an extension tutorial - Part 1
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/23/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions
 ---
-
 # Create an extension tutorial - Part 1  
 
 ## Overview  
 
-The goal for this tutorial is to build a Microsoft Edge (Chromium) extension starting with an empty directory. We'll build an extension that pops up the NASA picture of the day. 
-In this tutorial, you'll learn how to create an extension by:
+The goal for this tutorial is to build a Microsoft Edge (Chromium) extension starting with an empty directory.  You are building an extension that pops up the NASA picture of the day. 
+In this tutorial, learn how to create an extension by completing the following actions.  
 
 *   Creating a `manifest.json` file.  
 *   Adding icons.  
@@ -22,9 +21,9 @@ In this tutorial, you'll learn how to create an extension by:
 
 ## Before you Begin
 
-If you'd like to test out the completed extension that you'll build in this tutorial, download the [source code][ArchiveExtensionGettingStartedPart1].  
+To test out the completed extension that you are building in this tutorial, download the [source code][ArchiveExtensionGettingStartedPart1].  
 
-## Step 1: Create a `manifest.json` file
+## Step 1: Create a manifest.json file
 
 Every extension package must have a `manifest.json` file at the root.  The manifest provides details of your extension, the extension package version, the extension name and description, and so on.  
 
@@ -44,8 +43,8 @@ The following code snippet outlines the basic information needed in your `manife
 Start by creating the `icons` directory in your project to store the icon image files.  The icons are used for the background image of the button that users select to launch the extension.  
 
 :::image type="complex" source="./media/part1-badge1.png" alt-text="Icon on the toolbar to open your extension":::
-   Icon on the toolbar to open your extension
-:::image-end:::
+   Icon on the toolbar to open your extension  
+:::image-end:::  
 
 For icons, we recommend using: 
 *   `PNG` format for icons, but you may also use `BMP`, `GIF`, `ICO` or `JPEG` formats.  
@@ -82,7 +81,7 @@ Next, add the icons to the `manifest.json` file. Update your `manifest.json` fil
 
 ## Step 3: Open a default pop-up dialog  
 
-Now, create a `HTML` file that's run when the user launches your extension.  Create the HTML file called `popup.html` in a directory called `popup`.  When users select the icon to launch the extension, `popup/popup.html` is displayed as a modal dialog.  
+Now, create a `HTML` file to run when the user launches your extension.  Create the HTML file named `popup.html` in a directory named `popup`.  When users select the icon to launch the extension, `popup/popup.html` is displayed as a modal dialog.  
 
 Add the code from the following code snippet to `popup.html` to display the stars image.  
 
@@ -137,8 +136,7 @@ Finally, ensure you register the pop-up in `manifest.json` under `browser_action
 ```  
 
 ## Next steps
-That's everything you need to develop a working extension. Now, continue on to sideload and test your extension. For more information, see [Sideload an extension][TestExtensionSideload].  
-
+That is everything you need to develop a working extension.  Now, continue on to sideload and test your extension. For more information, navigate to [Sideload an extension][TestExtensionSideload].  
 
 <!-- image links -->  
 

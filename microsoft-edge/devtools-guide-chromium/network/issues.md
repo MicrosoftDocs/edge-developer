@@ -1,9 +1,9 @@
 ---
 description: Learn how to detect network issues in the Network panel of Microsoft Edge DevTools.
-title: Network Issues Guide
+title: Network issues guide
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -26,7 +26,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This guide shows you how to detect network issues or optimization opportunities in the Network panel of Microsoft Edge DevTools.  
 
-See [Get Started][NetworkPerformance] to learn the basics of the **Network** panel.  
+To learn the basics of the **Network** tool, navigate to [Get Started][NetworkPerformance].  
 
 ## Queued or stalled requests  
 
@@ -37,7 +37,7 @@ Six requests are downloading simultaneously.  After that, a series of requests a
 In the **Waterfall** in the following figure, the first six requests for the `edge-iconx1024.msft.png` asset start simultaneously.  The subsequent requests are stalled until one of the original six finishes.  
 
 :::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="An example of a queued or stalled series in the Network panel" lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
-   An example of a queued or stalled series in the **Network** panel  
+   An example of a queued or stalled series in the **Network** tool  
 :::image-end:::  
 
 **Causes**  

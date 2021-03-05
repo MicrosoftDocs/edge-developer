@@ -1,9 +1,9 @@
 ---
 description: Your job does not end with ensuring your site runs great across Microsoft Edge and Android.  Even though Device Mode is able to simulate a range of other devices like iPhones, we encourage you to check out solutions for emulation provided by other browsers.
-title: Emulate and Test Other Browsers
+title: Emulate and test other browsers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -34,7 +34,7 @@ Your job does not end with ensuring your site runs great across Microsoft Edge a
 
 ## Browser emulators  
 
-Browser emulators are great for testing the responsiveness of a site, but each does not emulate differences in API, CSS support, and certain behaviors that you see on a mobile browser.  Test your site on browsers running on real devices to be certain everything behaves as expected.  
+Browser emulators are great for testing the responsiveness of a site, but each does not emulate differences in API, CSS support, and certain behaviors that is displayed on a mobile browser.  Test your site on browsers running on real devices to be certain everything behaves as expected.  
 
 ### Firefox Responsive Design View  
 
@@ -61,7 +61,7 @@ Device simulators and emulators simulate not just the browser environment but th
 At the moment, there is no way to install Microsoft Edge on an Android emulator.  However, you may use the Android Browser, the Chromium Content Shell, and Firefox for Android which we review later in this guide.  Chromium Content Shell runs the same Chromium rendering engine as Microsoft Edge, but comes without any of the browser specific features.  
 
 The Android emulator comes with the Android SDK which you need to download as part of [Android Studio][AndroidStudioDownload].  Then follow the instructions to [set up a virtual device][AndroidStudioCreateManageVirtualDevices] and [start the emulator][AndroidStudioRunAppsAndroidEmulator].  
-Once your emulator is booted, click on the Browser icon, and test your site on the old Stock Browser for Android.  
+Once your emulator is booted, choose on the Browser icon, and test your site on the old Stock Browser for Android.  
 
 #### Chromium content shell on Android  
 
@@ -106,7 +106,7 @@ The iOS simulator for Mac OS X comes with Xcode, which you [install from the App
 When you are done, learn how to work with the simulator through [Apple Developer documentation][AppleSimulatorHelp].  
 
 > [!NOTE]
-> To avoid having to open Xcode every time you want to use the iOS Simulator, open it, then right-click the iOS Simulator icon in your dock and choose **Keep in Dock**.  Now just click this icon whenever you need it.  
+> To avoid having to open Xcode every time you want to use the iOS Simulator, open it, hover on the iOS Simulator icon in your dock, open the contextual menu \(right-click\), and choose **Keep in Dock**.  Now just choose the icon whenever you need it.  
 
 ###  Microsoft Edge (EdgeHTML)  
 
@@ -122,7 +122,7 @@ If you are not able to use the emulators and do not have access to real devices,
 
 *   [BrowserStack (commercial)][BrowserStack] is the easiest to use for manual testing.  You select an operating system, select your browser version and device type, select a URL to browse, and it spins up a hosted virtual machine with which you may interact.  You are able to also run multiple emulators in the same screen, enabling you to test the look and feel of your app across multiple devices at the same time.  
 *   [SauceLabs (commercial)][SauceLabs] enables you to run unit tests inside of an emulator, which may be really useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You are also able to do manual testing with your site.  
-*   [Device Anywhere (commercial)][AppExperience] does not use emulators but real devices which you are able to control remotely.  This is very useful in the event where you need to reproduce a problem on a specific device and are not able to see the bug using any of the options in the previous guides.  
+*   [Device Anywhere (commercial)][AppExperience] does not use emulators but real devices which you are able to control remotely.  This is very useful in the event where you need to reproduce a problem on a specific device and may not display the bug using any of the options in the previous guides.  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
