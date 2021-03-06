@@ -40,7 +40,7 @@ The following sections describe the new experimental web app features that are a
 
 | Experimental feature | Microsoft Edge version | Platform 
 |:--- |:--- | :--- 
-| [URL Protocol Handling](#url-protocol-handling) | 85 or later | All 
+| [URL Protocol Handling](#url-protocol-handling) | 91 or later | Windows 
 | [URL Link Handling](#URL-link-handling) | 85 or later | Windows  
 | [Window Controls Overlay](#window-controls-overlay) | 86 or later | Windows 
 | [Place holder](#place-holder) | 87 or later | All |
@@ -49,7 +49,7 @@ The following sections describe the new experimental web app features that are a
 
 ### URL Protocol Handling  
 
-URLs can be used to define more than just links to web pages and web content using the HTTP or FTP protocol - they can be used to describe links to anything you can codify into a schema. For example, the mailto:// protocol is used to desicribe an email and the operating system can decide which application should handle that protocol. You can learn more about existing browser based support for [web based protocol handling here](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/registerProtocolHandler/Web-based_protocol_handlers). 
+URLs can be used to define more than just links to web pages and web content using the HTTP or FTP protocol - they can be used to describe links to anything you can codify into a schema. For example, the `mailto://` protocol is used to desicribe an email link and the operating system or browser can decide which application or site should handle that protocol. You can learn more about existing browser based support for [web based protocol handling here](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/registerProtocolHandler/Web-based_protocol_handlers). 
 
 This feature allows you to register a PWA with the host operating system via the web app manifest, declaring that it can handle a specific URL protocol. After registering a PWA as a protocol handler, when a user clicks on a hyperlink with a specific scheme like `mailto://`, `ms-word://` or `web+music://` from a browser or a native app, the registered PWA would be activated by the operating system and receive the URL.
 
@@ -60,7 +60,7 @@ This feature requires you to update the web app manifest to include a `protocol_
 
 #### Example Manifest
 
-IN this example, a web app manifest declares that the app should be registered to handle the protocols `web+jngl` and `web+jnglstore`.
+In this example, a web app manifest declares that the app should be registered to handle the protocols `web+jngl` and `web+jnglstore`.
 
 ```json
 {
@@ -98,14 +98,16 @@ IN this example, a web app manifest declares that the app should be registered t
   "start_url": "/",
 }
 ```
-You will need to update your manifest to support whatever protocol you'd like to register for. Once this feature is enabled, Microsoft Edge will detect the manifest register for the protocol. If more than one application has registered for a given protocol, the operating system or the browser will present a disambiguation selector to the user so that they can choose the appropriate applicationf from the list. 
+You will need to update your manifest to support whatever protocol you'd like to register for. Once this feature is enabled, Microsoft Edge will detect the manifest change and register the application for the protocol. If more than one application has registered for a given protocol, the operating system or the browser will present a disambiguation selector to the user so that they can choose the appropriate application from the list. 
 
 > [!IMPORTANT]
-> To preview protocol handling in Microsoft Edge, look for and enable the edge://flag:
-**Desktop Web Apps support Protocol Handlers**
+>To preview protocol handling in Microsoft Edge on Windows, look for and enable the edge://flag:
+>**Desktop Web Apps support Protocol Handlers**
+>
+>Mac OS and Linux support is under development.
  
 
-### URL Link Handling  
+### URL Link Handling
 
 Normally, tools such as **Elements** and **Network** may only open in the main panel that is located at the top of the DevTools.  Tools like **3D View** and **Issues** which normally only open in the **Drawer** panel that is located at the bottom of the DevTools.  After you choose the experiment, you may move tools between the top and bottom panels.  To move a tool, hover on the tab, open the contextual menu \(right-click\), and choose **Move to top** or **Move to bottom**.   
 
