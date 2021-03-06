@@ -133,7 +133,7 @@ var driver = new EdgeDriver(options);
 options = EdgeOptions()
 options.use_chromium = True
 
-driver = Edge(options)
+driver = Edge(options = options)
 ```  
 
 #### [Java](#tab/java/)  
@@ -187,7 +187,7 @@ options = EdgeOptions()
 options.use_chromium = True
 options.binary_location = r"C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe"
 
-driver = Edge(options)
+driver = Edge(options = options)
 ```  
 
 #### [Java](#tab/java/)  
