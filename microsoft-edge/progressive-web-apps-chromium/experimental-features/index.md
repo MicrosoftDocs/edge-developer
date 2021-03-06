@@ -10,9 +10,9 @@ keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
 ---
 # Experimental features  
 
-Microsoft Edge provide access to experimental features that are still in development.  You may test and [provide feedback](#providing-feedback-on-experimental-features) before each feature is released.  
+Microsoft Edge provide access to experimental features that are still in development.  You may test and [provide feedback](#providing-feedback-on-experimental-features) on these features to help us determine when and if to release them.  
 
-While experimental features are available in all channels of Microsoft Edge, you may get the latest experimental features using the Microsoft Edge Canary channel.  
+While experimental features are available in all channels of Microsoft Edge, you will get the latest experimental features using the Microsoft Edge Canary channel.  
 
 ## Turn on experimental features  
 
@@ -29,63 +29,81 @@ To turn on \(or off\) experimental features in Microsoft Edge, complete the foll
    Changing an experimental flag status  
 :::image-end:::
 
-
+If an experimental feature doesn't have an edge://flag entry, instructions will be provided on how to use the command line to start Microsoft Edge with that feature specifically enabled.
     
 > [!NOTE]
 > Experimental features are constantly being updated and may cause performance issues.  To turn off an experimental feature, open the **edge://flags** page and change the status of the feature to `Disabled`.  
 
 ## Experimental features  
 
-The following sections describe the new experimental web app features that are available for testing purposes on Microsoft Edge.  
+The following sections describe the new experimental web app features that are available for testing and validation on Microsoft Edge.  
 
 | Experimental feature | Microsoft Edge version | Platform 
 |:--- |:--- | :--- 
-| [Protocol Handling](#protocol-handling) | 85 or later | All 
+| [URL Protocol Handling](#url-protocol-handling) | 85 or later | All 
 | [URL Link Handling](#URL-link-handling) | 85 or later | Windows  
 | [Window Controls Overlay](#window-controls-overlay) | 86 or later | Windows 
 | [Place holder](#place-holder) | 87 or later | All |
 | [Place holder](#place-holder) | 87 or later | All |
 | [Place holder](#place-holder) | 87 or later | All |
 
-### Protocol Handling  
+### URL Protocol Handling  
 
-This experimental feature provides a number of new visualizations to help you debug CSS grid layouts.  
+URLs can be used to define more than just links to web pages and web content using the HTTP or FTP protocol - they can be used to describe links to anything you can codify into a schema. For example, the mailto:// protocol is used to desicribe an email and the operating system can decide which application should handle that protocol. You can learn more about existing browser based support for [web based protocol handling here](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/registerProtocolHandler/Web-based_protocol_handlers). 
 
-To preview protocol handling, look for and enable the edge://flag:
+This feature allows you to register a PWA with the host operating system via the web app manifest, declaring that it can handle a specific URL protocol. After registering a PWA as a protocol handler, when a user clicks on a hyperlink with a specific scheme like `mailto://`, `ms-word://` or `web+music://` from a browser or a native app, the registered PWA would be activated by the operating system and receive the URL.
 
+This feature requires you to update the web app manifest to include a `protocol_handlers` array, within the array you need to specify two fields:
+
+*   `protocol`: Protocol to be handled e.g. `mailto`, `web+jngl`
+*   `url`: HTTPS URL within the application scope that will handle the protocol. The %s token will be replaced by the URL starting with the protcol handlers scheme.
+
+#### Example Manifest
+
+IN this example, a web app manifest declares that the app should be registered to handle the protocols `web+jngl` and `web+jnglstore`.
+
+```json
+{
+  "name": "Jungle",
+  "description": "A plant encyclopedia",
+  "protocol_handlers": [
+    {
+      "protocol": "web+jngl",
+      "url": "/lookup?type=%s"
+    },
+    {
+      "protocol": "web+jnglstore",
+      "url": "/shop?for=%s"
+    }
+  ],
+  "icons": [
+    {
+      "src": "images/icons-44.png",
+      "type": "image/png",
+      "sizes": "44x44"
+    },
+    {
+      "src": "images/icons-144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "images/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+  ],
+  "background_color": "#007f87",
+  "display": "standalone",
+  "start_url": "/",
+}
+```
+You will need to update your manifest to support whatever protocol you'd like to register for. Once this feature is enabled, Microsoft Edge will detect the manifest register for the protocol. If more than one application has registered for a given protocol, the operating system or the browser will present a disambiguation selector to the user so that they can choose the appropriate applicationf from the list. 
+
+> [!IMPORTANT]
+> To preview protocol handling in Microsoft Edge, look for and enable the edge://flag:
 **Desktop Web Apps support Protocol Handlers**
-    
-
-#### Viewing on-hover grid overlays with the Inspect tool  
-
-The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Choose the **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  Then, hover over a Grid element on the website you are debugging.  Outlines are displayed around the grid, and shading indicates the location of grid gaps if present.  
-
-:::image type="complex" source="../media/grid-inspect.msft.png" alt-text="Viewing grids with the Inspect tool" lightbox="../media/grid-inspect.msft.png":::
-   Viewing grids with the **Inspect** tool  
-:::image-end:::  
-
-#### Viewing persistent grid overlays  
-
-In Microsoft Edge version 86 or later, the experimental CSS grid feature also offers the option to enable persistent Grid overlays.  The persistent overlays provide several benefits.  
-
-*   The persistent overlays remain visible on the page as you scroll, move your mouse, and use other features of the DevTools.  
-*   Multiple persistent overlays can be enabled at the same time, allowing you to review several grid layouts at once.  
-*   Persistent overlays offer many configuration options, such as hiding or showing names in the grid area, grid gaps, track sizes, and so on.  
-    
-The two ways to toggle a persistent grid overlay.  
-
-*   Choose the **Grid** oval icon next to any Grid element shown in the DOM tree of the **Elements** tool.  
-    
-    :::image type="complex" source="../media/grid-adorner.msft.png" alt-text="Grid oval icon in Elements tool" lightbox="../media/grid-adorner.msft.png":::
-       Grid oval icon in **Elements** tool  
-    :::image-end:::  
-    
-*   Open the new **Layout** panel located in the Elements tool, and choose the checkbox next to each Grid element you want to highlight.  
-    
-    :::image type="complex" source="../media/grid-layout-zoom.msft.png" alt-text="Layout panel in DevTools" lightbox="../media/grid-layout-zoom.msft.png":::
-       **Layout** panel in DevTools  
-    :::image-end:::  
-    
+ 
 
 ### URL Link Handling  
 
