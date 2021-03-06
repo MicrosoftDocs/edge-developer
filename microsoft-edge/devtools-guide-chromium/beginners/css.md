@@ -3,7 +3,7 @@ description: Get Started with CSS
 title: "DevTools for beginners: Get started with CSS"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web developement, f12 tools, devtools
@@ -132,7 +132,7 @@ Complete the following actions to use **inline styles** to apply styles to a sin
     ...
     ```  
     
-1.  Go to the **live tab** to see the changes!  The background of the `<nav>` section is now blue.  
+1.  To display the changes, navigate to the **live tab**.  The background of the `<nav>` section is now blue.  
     
     :::image type="complex" source="../media/beginners-css-inline2.msft.png" alt-text="The background color behind the Home and Contact links is now blue" lightbox="../media/beginners-css-inline2.msft.png":::
        The background color behind the **Home** and **Contact** links is now blue  
@@ -148,15 +148,15 @@ In a previous code snippet, an inline style applied a style to a single `<p>` ta
 </p>
 ```  
 
-What if you wanted all of the `<p>` elements on your webpage to be styled the same way?  You would have to copy and paste the code into every single `<p>` tag on your site.  That is a lot of time and effort.  And, if you needed to make an edit, you would have to change every tag again.  Complete the following actions to use an **Internal stylesheet** to write your CSS once so that it applies to multiple elements.  
+What if you wanted all of the `<p>` elements on your webpage to be styled the same way?  You have to copy and paste the code into every single `<p>` tag on your site.  That is a lot of time and effort.  And, if you needed to make an edit, you have to change every tag again.  Complete the following actions to use an **Internal stylesheet** to write your CSS once so that it applies to multiple elements.  
 
-1.  In the live tab, choose **Contact** to go to the contact page.  Notice the font of **Home** and **Contact**.  
+1.  In the live tab, choose **Contact** to navigate to the contact page.  Notice the font of **Home** and **Contact**.  
     
     :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text="The Contact page" lightbox="../media/beginners-css-internal1.msft.png":::
        The Contact page  
     :::image-end:::  
     
-1.  In the **editor tab**, go to `contact.html`.  
+1.  In the **editor tab**, open `contact.html`.  
 1.  Add the following code to `contact.html`.  Remember, the lines starting with `<style>` and ending with `</style>` are what you need to add.  The other code is just there so you know where to put the new code.  
     
     ```html
@@ -230,7 +230,7 @@ For example, `font-family: 'Courier New', Courier, serif` gives the browser the 
 
 ### Add multiple selectors to a ruleset  
 
-A block of CSS code like what you see below is called a **ruleset**.  
+A block of CSS code like the following code snippet is called a **ruleset**.  
 
 ```css
 li a {
@@ -253,7 +253,7 @@ Complete the following actions to use commas to add multiple selectors to a rule
     
     The previous code snippet tells the browser to style `<h1>` elements the same way that it styles elements that match the pattern `li a`.  
     
-1.  Go to the **live tab**.  
+1.  Navigate to the **live tab**.  
 1.  Choose the **Contact** link to go back to the contact page.  Now, **Contact Me!** has the same font as the navigation links.  
     
     :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="The text Contact Me!  now has the same font as the Home and Contact links" lightbox="../media/beginners-css-multiple1.msft.png":::
@@ -262,7 +262,7 @@ Complete the following actions to use commas to add multiple selectors to a rule
     
 ## Experiment with DevTools  
 
-As you continue your journey to become an expert in web development, you may find that CSS is tricky.  You may write some CSS and expect it to display one way, but the browser does something completely different.  Microsoft Edge DevTools makes it easy to experiment with changes and immediately see how the changes affect the page.  
+As you continue your journey to become an expert in web development, you may find that CSS is tricky.  You may write some CSS and expect it to display one way, but the browser does something completely different.  Microsoft Edge DevTools makes it easy to experiment with changes and immediately display how the changes affect the page.  
 
 ### Add a declaration to an existing rulest in DevTools  
 
@@ -278,7 +278,7 @@ Complete the following actions to iterate on the style of an existing element, a
     
     :::row:::
        :::column span="":::
-          In the following figure, the `font-family: 'Courier New', Courier, serif` declaration that you previously added to `contact.html` is seen in the **Styles** tab below the DOM Tree.  
+          In the following figure, the `font-family: 'Courier New', Courier, serif` declaration that you previously added to `contact.html` is displayed in the **Styles** tab below the DOM Tree.  
           
           :::image type="complex" source="../media/beginners-css-add2.msft.png" alt-text="The Styles tab is below the DOM Tree" lightbox="../media/beginners-css-add2.msft.png":::
              The **Styles** tab is below the DOM Tree  
@@ -360,8 +360,8 @@ Complete the following actions to add new rulesets in DevTools.
     
 1.  Hover your mouse over the **Home** link.  The background of the link turns green.  
     
-    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="Hover over the Home link to reveal its green background" lightbox="../media/beginners-css-rule5.msft.png":::
-       Hover over the Home link to reveal its green background  
+    :::image type="complex" source="../media/beginners-css-rule5.msft.png" alt-text="Hover on the Home link to reveal its green background" lightbox="../media/beginners-css-rule5.msft.png":::
+       Hover on the Home link to reveal its green background  
     :::image-end:::  
     
 ## Re-use styles across pages with external stylesheets  
@@ -382,9 +382,9 @@ In a previous step, you added the following code snippet as an internal styleshe
 ...
 ```  
 
-What if you wanted to style `index.html` the same way?  What if you had a large number of pages to which you wanted to apply your styles?  You would have to copy and paste the internal stylesheet into every single web page on your site.  Complete the following actions to add an **External stylesheet** to allow you to write your CSS once and apply it to multiple pages.  
+What if you wanted to style `index.html` the same way?  What if you had a large number of pages to which you wanted to apply your styles?  You have to copy and paste the internal stylesheet into every single web page on your site.  Complete the following actions to add an **External stylesheet** to allow you to write your CSS once and apply it to multiple pages.  
 
-1.  First, reload the live tab to remove the changes that you made in DevTools.  
+1.  First, refresh the live tab to remove the changes that you made in DevTools.  
     
     :::image type="complex" source="../media/beginners-css-external1.msft.png" alt-text=" After you refresh the page, the changes that were made in DevTools are gone" lightbox="../media/beginners-css-external1.msft.png":::
         After you refresh the page, the changes that were made in DevTools are gone  
@@ -402,7 +402,7 @@ What if you wanted to style `index.html` the same way?  What if you had a large 
        The style tag has been removed  
     :::image-end:::  
     
-1.  Go to `index.html` and remove `style="background-color: aliceblue;"` from the `<nav>` tag.  You have now removed all of the CSS that you previously added to your site.  
+1.  Open `index.html` and remove `style="background-color: aliceblue;"` from the `<nav>` tag.  You have now removed all of the CSS that you previously added to your site.  
     
     :::image type="complex" source="../media/beginners-css-external4.msft.png" alt-text="The inline style has been removed from the nav element" lightbox="../media/beginners-css-external4.msft.png":::
        The inline style has been removed from the nav element  
@@ -461,13 +461,13 @@ What if you wanted to style `index.html` the same way?  What if you had a large 
        Link to `style.css` in `contact.html`  
     :::image-end:::  
     
-1.  Go to the **live tab**.  The home page now has the same font from the last section and a blue navigation section.  
+1.  Navigate to the **live tab**.  The home page now has the same font from the last section and a blue navigation section.  
     
     :::image type="complex" source="../media/beginners-css-external10.msft.png" alt-text="The home page" lightbox="../media/beginners-css-external10.msft.png":::
        The home page  
     :::image-end:::  
     
-1.  Choose the **Contact** link to go to the contact page.  The contact page has the same formatting as the home page.  
+1.  Choose the **Contact** link to navigate to the contact page.  The contact page has the same formatting as the home page.  
     
     :::image type="complex" source="../media/beginners-css-external11.msft.png" alt-text="The contact page" lightbox="../media/beginners-css-external11.msft.png":::
        The contact page  
@@ -483,7 +483,7 @@ What if you wanted to style `index.html` the same way?  What if you had a large 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     ```  
     
-1.  Go to the editing tab and paste the code into `contact.html`.  
+1.  Open the editing tab and paste the code into `contact.html`.  
     
     :::image type="complex" source="../media/beginners-css-framework1.msft.png" alt-text="Link to the framework in contact.html" lightbox="../media/beginners-css-framework1.msft.png":::
        Link to the framework in `contact.html`  

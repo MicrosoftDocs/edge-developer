@@ -3,13 +3,12 @@ description: Learn how to debug WebView2 controls.
 title: Get started debugging WebView2 applications
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/02/2020
+ms.date: 01/07/2021
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
-
 # Get started debugging WebView2 applications  
 
 The goal of the Microsoft Edge WebView2 control is to combine the best of both the web and native application development features and tools.  When you develop your WebView2 application, you should debug your application.  This article outlines the different tools to use to debug both your web and native code in your WebView2 application.  
@@ -22,7 +21,7 @@ Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to de
 *   Select `Ctrl`+`Shift`+`I`.  
 *   Open the context menu \(right-click\) and choose `Inspect`.  
     
-For more information, see [DevTools overview][DevtoolsGuideChromiumMain].  
+For more information, navigate to [DevTools overview][DevtoolsGuideChromiumMain].  
 
 :::image type="complex" source="./media/f12.png" alt-text="DevTools debugging" lightbox="./media/f12.png":::
    DevTools debugging  
@@ -217,7 +216,7 @@ In Visual Studio Code, complete the following actions to debug your code.
            :::column-end:::
         :::row-end:::  
         
-*   Debug Office Add-ins.
+*   Debug Office Add-ins.  
     
     If you're debugging Office Add-ins, open the add-in source code in a separate instance of Visual Studio Code.  Open launch.json in your WebView2 application and add the following code snippet to attach the debugger to the Office add-in.
     
@@ -230,16 +229,16 @@ In Visual Studio Code, complete the following actions to debug your code.
     You may encounter the following scenarios when using the debugger.  
     
     *   The debugger doesn't stop at the breakpoint, and you have debug output.  To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.  The debugger doesn't perform source path mapping.  
-    *   You can't attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  For more information, see [additionalBrowserArguments for dotnet][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] and [additionalBrowserArguments for Win32][Webview2ReferenceWin32Webview2IdlParameters].  
+    *   You can't attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  For more information, navigate to [additionalBrowserArguments for dotnet][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] and [additionalBrowserArguments for Win32][Webview2ReferenceWin32Webview2IdlParameters].  
     
 * * *  
 
 ## See also  
 
-*   To get started using WebView2, see [WebView2 Getting Started Guides][Webview2MainGettingStarted].  
-*   For a comprehensive example of WebView2 capabilities, see the [WebView2Samples][GithubMicrosoftedgeWebview2samples] repo on GitHub.
-*   For more detailed information about WebView2 APIs, see [API reference][Webview2ApiReference].
-*   For more information about WebView2, see [WebView2 Resources][Webview2MainNextSteps].
+*   To get started using WebView2, navigate to [WebView2 Getting Started Guides][Webview2MainGettingStarted].  
+*   For a comprehensive example of WebView2 capabilities, navigate to the [WebView2Samples][GithubMicrosoftedgeWebview2samples] repo on GitHub.
+*   For more detailed information about WebView2 APIs, navigate to [API reference][Webview2ApiReference].
+*   For more information about WebView2, navigate to [WebView2 Resources][Webview2MainNextSteps].
     
 ## Getting in touch with the Microsoft Edge WebView team  
 

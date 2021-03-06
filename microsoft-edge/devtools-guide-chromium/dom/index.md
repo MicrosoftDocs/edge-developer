@@ -1,9 +1,9 @@
 ---
 description: How to view nodes, search for nodes, edit nodes, reference nodes in the Console, break on node changes, and more.
-title: Get Started With Viewing And Changing The DOM
+title: Get started with viewing and changing the DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020 
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -49,19 +49,19 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
        Inspect a node  
     :::image-end:::  
     
-    1.  The **Elements** panel of DevTools opens.  `<li>Michelangelo</li>` is highlighted in the **DOM Tree**.  
+    1.  The **Elements** tool of DevTools opens.  `<li>Michelangelo</li>` is highlighted in the **DOM Tree**.  
         
         :::image type="complex" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="Highlight the Michelangelo node" lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
            Highlight the `Michelangelo` node  
         :::image-end:::  
         
-        1.  Click the **Inspect** \(![Inspect][ImageInspectIcon]\) icon in the top-left corner of DevTools.  
+        1.  Choose the **Inspect** \(![Inspect][ImageInspectIcon]\) icon in the top-left corner of DevTools.  
             
             :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="The Inspect icon" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
                The **Inspect** icon  
             :::image-end:::  
             
-1.  Under **Inspect a Node**, click the **Tokyo** text.  Now, `<li>Tokyo</li>` is highlighted in the DOM Tree.  
+1.  Under **Inspect a Node**, choose the **Tokyo** text.  Now, `<li>Tokyo</li>` is highlighted in the DOM Tree.  
 
 Inspecting a node is also the first step towards viewing and changing the styles of a node.  Navigate to [Get Started With Viewing And Changing CSS][DevToolsCssGetStarted].  
 
@@ -76,16 +76,16 @@ Once you have selected a node in the DOM Tree, you may navigate the DOM Tree wit
        Inspect the `Ringo` node  
     :::image-end:::  
     
-    1.  Press the `Up` arrow key 2 times.  `<ul>` is selected.  
+    1.  Select the `Up` arrow key 2 times.  `<ul>` is selected.  
         
         :::image type="complex" source="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png" alt-text="Inspect the ul node" lightbox="../media/dom-elements-highlighted-navigate-dom-tree-keyboard-ul.msft.png":::
            Inspect the `ul` node  
         :::image-end:::  
         
-    1.  Press the `Left` arrow key.  The `<ul>` list collapses.  
-    1.  Press the `Left` arrow key again.  The parent of the `<ul>` node is selected.  In this case it is the `<div>` with the ID `navigate-the-dom-tree-with-a-keyboard-1`.  
-    1.  Press the `Down` arrow key 2 times so that you have re-selected the `<ul>` list that you just collapsed.  It should look like this: `<ul>... </ul>`  
-    1.  Press the `Right` arrow key.  The list expands.  
+    1.  Select the `Left` arrow key.  The `<ul>` list collapses.  
+    1.  Select the `Left` arrow key again.  The parent of the `<ul>` node is selected.  In this case it is the `<div>` with the ID `navigate-the-dom-tree-with-a-keyboard-1`.  
+    1.  Select the `Down` arrow key 2 times so that you have re-selected the `<ul>` list that you just collapsed.  It should look like this: `<ul>... </ul>`  
+    1.  Select the `Right` arrow key.  The list expands.  
 
 ### Scroll into view  
 
@@ -105,7 +105,7 @@ When viewing the DOM Tree, you may find yourself interested in a DOM node that i
 
 You may search the DOM Tree by string, CSS selector, or XPath selector.  
 
-1.  Focus your cursor on the **Elements** panel.  
+1.  Focus your cursor on the **Elements** tool.  
 1.  Select `Control`+`F` \(Windows, Linux\) or `Command`+`F` \(macOS\).  The Search bar opens at the bottom of the DOM Tree.  
 1.  Type `The Moon is a Harsh Mistress`.  The last sentence is highlighted in the DOM Tree.  
     
@@ -145,7 +145,7 @@ To edit attributes, double-click the attribute name or value.  Follow the instru
        Edit the node  
     :::image-end:::  
     
-1.  Press the `Right` arrow key, add a space, type `style="background-color:gold"`, and then select `Enter`.  The background color of the node changes to gold.  
+1.  Select the `Right` arrow key, add a space, type `style="background-color:gold"`, and then select `Enter`.  The background color of the node changes to gold.  
     
     :::image type="complex" source="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png" alt-text="Add a style attribute to the node" lightbox="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png":::
        Add a `style` attribute to the node  
@@ -185,9 +185,9 @@ Drag nodes to reorder them.
 You are able to force nodes to remain in states including `:active`, `:hover`, `:focus`, `:visited`, and `:focus-within`.  
 
 1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Force state**, hover over **The Lord of the Flies**.  The background color becomes orange.  
-    1.  Right-choose **The Lord of the Flies** and choose **Inspect**.  
-    1.  Right-click `<li class="demo--hover">The Lord of the Flies</li>` and choose **Force State** > **:hover**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.  The background color remains orange even though you are not actually hovering over the node.  
+1.  Under **Force state**, hover on **The Lord of the Flies**.  The background color becomes orange.  
+    1.  Hover on **The Lord of the Flies**, open the contextual menu \(right-click\), and choose **Inspect**.  
+    1.  Hover on `<li class="demo--hover">The Lord of the Flies</li>`, open the contextual menu \(right-click\), and choose **Force State** > **:hover**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.  The background color remains orange even though you are not actually hovering over the node.  
 
 ### Hide a node  
 
@@ -195,13 +195,13 @@ Select `H` to hide a node.
 
 1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Hide a node**, right-choose **The Stars My Destination** and choose **Inspect**.  
-    1.  Press the `H` key.  The node is hidden.  
+    1.  Select the `H` key.  The node is hidden.  
         
         :::image type="complex" source="../media/dom-elements-highlighted-hide-a-node.msft.png" alt-text="What the node looks like in the DOM Tree after it is hidden" lightbox="../media/dom-elements-highlighted-hide-a-node.msft.png":::
            What the node looks like in the DOM Tree after it is hidden  
         :::image-end:::  
         
-    1.  Press the `H` key again.  The node is shown again.  
+    1.  Select the `H` key again.  The node is shown again.  
 
 ### Delete a node  
 
@@ -209,7 +209,7 @@ Select `Delete` to delete a node.
 
 1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Delete a Node**, right-choose **Foundation** and choose **Inspect**.  
-    1.  Press the `Delete` key.  The node is deleted.  
+    1.  Select the `Delete` key.  The node is deleted.  
     1.  Select `Control`+`Z` \(Windows, Linux\) or `Command`+`Z` \(macOS\).  The last action is undone and the node reappears.  
 
 ## Access nodes in the Console  
@@ -222,15 +222,15 @@ When you inspect a node, the `== $0` text next to the node means that you may re
 
 1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Reference the currently-selected node with $0**, right-choose **The Left Hand of Darkness** and choose **Inspect**.  
-    1.  Press the `Escape` key to open the Console Drawer.  
-    1.  Type `$0` and press the `Enter` key.  The result of the expression shows that `$0` evaluates to `<li>The Left Hand of Darkness</li>`.  
+    1.  Select the `Escape` key to open the Console Drawer.  
+    1.  Type `$0` and select the `Enter` key.  The result of the expression shows that `$0` evaluates to `<li>The Left Hand of Darkness</li>`.  
         
         :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png" alt-text="The result of the first $0 expression in the Console" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-1.msft.png":::
             The result of the first `$0` expression in the **Console**  
         :::image-end:::  
         
-    1.  Hover over the result.  The node is highlighted in the viewport.  
-    1.  Click `<li>Dune</li>` in the DOM Tree, type `$0` in the Console again, and then select `Enter` again.  Now, `$0` evaluates to `<li>Dune</li>`.  
+    1.  Hover on the result.  The node is highlighted in the viewport.  
+    1.  Choose `<li>Dune</li>` in the DOM Tree, type `$0` in the Console again, and then select `Enter` again.  Now, `$0` evaluates to `<li>Dune</li>`.  
         
         :::image type="complex" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png" alt-text="The result of the second $0 expression in the Console" lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png":::
            The result of the second `$0` expression in the **Console**  
@@ -241,8 +241,8 @@ When you inspect a node, the `== $0` text next to the node means that you may re
 If you need to refer back to a node many times, store it as a global variable.  
 
 1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Store as global variable**, right-choose **The Big Sleep** and choose **Inspect**.  
-    1.  Right-click `<li>The Big Sleep</li>` in the DOM Tree and choose **Store as global variable**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.  
+1.  Under **Store as global variable**, hover on **The Big Sleep**, open the contextual menu \(right-click\), and choose **Inspect**.  
+    1.  Hover on `<li>The Big Sleep</li>` in the DOM Tree, open the contextual menu \(right-click\), and choose **Store as global variable**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.  
     1.  Type `temp1` in the Console and then select `Enter`.  The result of the expression shows that the variable evaluates to the node.  
         
         :::image type="complex" source="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png" alt-text="The result of the temp1 expression" lightbox="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png":::
@@ -254,8 +254,8 @@ If you need to refer back to a node many times, store it as a global variable.
 Copy the JavaScript path to a node when you need to reference it in an automated test.  
 
 1.  [Open DOM Examples](#open-dom-examples).  
-1.  Under **Copy JS path**, right-choose **The Brothers Karamazov** and choose **Inspect**.  
-    1.  Right-click `<li>The Brothers Karamazov</li>` in the DOM Tree and choose **Copy** > **Copy JS Path**.  A `document.querySelector()` expression that resolves to the node has been copied to your clipboard.  
+1.  Under **Copy JS path**, hover on **The Brothers Karamazov**, open the contextual menu \(right-click\), and choose **Inspect**.  
+    1.  Hover on `<li>The Brothers Karamazov</li>` in the DOM Tree, open the contextual menu \(right-click\), and choose **Copy** > **Copy JS Path**.  A `document.querySelector()` expression that resolves to the node has been copied to your clipboard.  
     1.  Select `Control`+`V` \(Windows, Linux\) or `Command`+`V` \(macOS\) to paste the expression into the Console.  
     1.  Select `Enter` to evaluate the expression.
         
@@ -273,19 +273,19 @@ Use attribute modification breakpoints when you want to pause the JavaScript tha
 
 1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Break on attribute modifications**, right-choose **Sauerkraut** and choose **Inspect**.  
-    1.  In the DOM Tree, right-click `<li id="target">Sauerkraut</li>` and choose **Break On** > **Attribute Modifications**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.
+    1.  In the DOM Tree, hover on `<li id="target">Sauerkraut</li>`, open the contextual menu \(right-click\), and choose **Break On** > **Attribute Modifications**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.
         
         :::image type="complex" source="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png" alt-text="Break on attribute modifications" lightbox="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png":::
            **Break on attribute modifications**  
         :::image-end:::  
         
-    1.  In the next step you are going to be instructed to click a button that pauses the code of the page.  After the page is paused you are no longer able to scroll the page.  You must choose **Resume Script** \(![Resume Script][ImageResumeScriptIcon]\) in order to make the page scrollable again.
+    1.  In the next step you are going to be instructed to choose a button that pauses the code of the page.  After the page is paused you are no longer able to scroll the page.  You must choose **Resume Script** \(![Resume Script][ImageResumeScriptIcon]\) in order to make the page scrollable again.
         
         :::image type="complex" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="Where to resume script running" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
            Where to resume script running  
         :::image-end:::  
         
-    1.  Click the **Set Background** button above.  This sets the `style` attribute of the node to `background-color:thistle`.  DevTools pauses the page and highlights the code that caused the attribute to change.  
+    1.  Choose the **Set Background** button above.  This sets the `style` attribute of the node to `background-color:thistle`.  DevTools pauses the page and highlights the code that caused the attribute to change.  
     1.  Choose **Resume Script** \(![Resume Script][ImageResumeScriptIcon]\), as mentioned earlier.  
     
 ### Break on node removal  
@@ -294,8 +294,8 @@ If you want to pause when a particular node is removed, use node removal breakpo
 
 1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Break on Node Removal**, right-choose **Neuromancer** and choose **Inspect**.  
-    1.  In the DOM Tree, right-click `<li id="target">Neuromancer</li>` and choose **Break On** > **Node Removal**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.  
-    1.  Click the **Delete** button above.  DevTools pauses the page and highlights the code that caused the node to be removed.  
+    1.  In the DOM Tree, hover on `<li id="target">Neuromancer</li>`, open the contextual menu \(right-click\), and choose **Break On** > **Node Removal**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.  
+    1.  Choose the **Delete** button above.  DevTools pauses the page and highlights the code that caused the node to be removed.  
     1.  Choose **Resume Script** \(![Resume Script][ImageResumeScriptIcon]\).  
     
 ### Break on subtree modifications  
@@ -304,13 +304,13 @@ After you put a subtree modification breakpoint on a node, DevTools pauses the p
 
 1.  [Open DOM Examples](#open-dom-examples).  
 1.  Under **Break on Subtree Modifications**, right-choose **A Fire Upon The Deep** and choose **Inspect**.  
-    1.  In the DOM Tree, right-click `<ul id="target">`, which is the node above `<li>A Fire Upon the Deep</li>`, and choose **Break On** > **Subtree Modifications**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.  
+    1.  In the DOM Tree, hover on `<ul id="target">`, which is the node above `<li>A Fire Upon the Deep</li>`, open the contextual menu \(right-click\), and choose **Break On** > **Subtree Modifications**.  If the option is not displayed, navigate to [Appendix: Missing options](#appendix-missing-options).  
     1.  Choose **Add Child**.  The code pauses because a `<li>` node was added to the list.  
     1.  Choose **Resume Script** \(![Resume Script][ImageResumeScriptIcon]\).  
     
 ## Next steps  
 
-That covers most of the DOM-related features in DevTools.  You are able to discover the rest of them by right-clicking nodes in the DOM Tree and experimenting with the other options that were not covered in this tutorial.  Navigate to [Elements panel keyboard shortcuts][DevToolsShortcutsElements].  
+That covers most of the DOM-related features in DevTools.  You are able to discover the rest of the features by hovering on nodes in the DOM Tree, opening the contextual menu \(right-click\), and experimenting with the other options that were not covered in this tutorial.  Navigate to [Elements panel keyboard shortcuts][DevToolsShortcutsElements].  
 
 Check out the [Microsoft Edge DevTools homepage][MicrosoftEdgeDevTools] to discover everything else you are able to do with DevTools.  
 
@@ -392,7 +392,7 @@ Navigate to [Introduction to the DOM][MDNIntroductionToDOM] to learn more.
 This is a continuation of the [Scroll into view](#scroll-into-view) section.  Follow the instructions below to complete the section.  
 
 1.  The `<li>Magritte</li>` node should still be selected in your DOM Tree.  If not, go back to [Scroll into view](#scroll-into-view) and start over.  
-1.  Right-click the `<li>Magritte</li>` node and choose **Scroll into view**.  Your viewport scrolls back up so that you may see the **Magritte** node.  Navigate to [Appendix: Missing options](#appendix-missing-options) if you are not able to see the **Scroll into view** option.
+1.  Hover on the `<li>Magritte</li>` node, open the contextual menu \(right-click\), and choose **Scroll into view**.  Your viewport scrolls back up so that the **Magritte** node is displayed.  If you the **Scroll into view** option is not displayed, navigate to [Appendix: Missing options](#appendix-missing-options).
     
     :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Scroll into view" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
        Scroll into view  
@@ -401,7 +401,7 @@ This is a continuation of the [Scroll into view](#scroll-into-view) section.  Fo
 
 ## Appendix: Missing options  
 
-Many of the instructions in this tutorial instruct you to right-click a node in the DOM Tree and then select an option from the context menu that pops up.  If the specified option in the context menu is not displayed, try right-clicking away from the node text.  
+Many of the instructions in this tutorial instruct you to hover on a node in the DOM Tree, open the contextual menu \(right-click\), and then choose an option from the context menu that pops up.  If the specified option in the context menu is not displayed, try hovering away from the node text and opening the contextual menu \(right-click\).  
 
 :::image type="complex" source="../media/dom-elements-highlighted-right-click-right-side.msft.png" alt-text="Where to choose if all of the options are not displayed" lightbox="../media/dom-elements-highlighted-right-click-right-side.msft.png":::
    Where to choose if all of the options are not displayed  
@@ -420,7 +420,7 @@ Many of the instructions in this tutorial instruct you to right-click a node in 
 
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge \(Chromium\) Developer Tools | Microsoft Docs"  
 [DevToolsCssGetStarted]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
-[DevToolsShortcutsElements]: ../shortcuts/index.md#elements-panel-keyboard-shortcuts "Elements panel keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
+[DevToolsShortcutsElements]: ../shortcuts/index.md#elements-tool-keyboard-shortcuts "Elements tool keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
 
 [GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft Edge (Chromium) DevTools DOM Example | Glitch"
 
