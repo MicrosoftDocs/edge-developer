@@ -10,7 +10,7 @@ keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
 ---
 # Experimental features  
 
-Microsoft Edge provide access to experimental features that are still in development.  You may test and [provide feedback](#providing-feedback-on-experimental-features) on these features to help us determine when and if to release them.  
+Microsoft Edge provides access to experimental features that are still in development.  You may test and [provide feedback](#providing-feedback-on-experimental-features) on these features to help us determine when and if to release them.  
 
 While experimental features are available in all channels of Microsoft Edge, you will get the latest experimental features using the Microsoft Edge Canary channel.  
 
@@ -29,7 +29,7 @@ To turn on \(or off\) experimental features in Microsoft Edge, complete the foll
    Changing an experimental flag status  
 :::image-end:::
 
-If an experimental feature doesn't have an edge://flag entry, instructions will be provided on how to use the command line to start Microsoft Edge with that feature specifically enabled.
+If an experimental feature doesn't have an edge://flags entry, instructions will be provided on how to use the command line to start Microsoft Edge with that feature specifically enabled.
     
 > [!NOTE]
 > Experimental features are constantly being updated and may cause performance issues.  To turn off an experimental feature, open the **edge://flags** page and change the status of the feature to `Disabled`.  
@@ -43,9 +43,9 @@ The following sections describe the new experimental web app features that are a
 | [URL Protocol Handling](#url-protocol-handling) | 91 or later | Windows 
 | [URL Link Handling](#URL-link-handling) | 85 or later | Windows  
 | [Window Controls Overlay for Installed Desktop Web Apps](#window-controls-overlay-for-installed-desktop-web-apps) | 91 or later | Windows, Mac 
-| [Place holder](#place-holder) | 87 or later | All |
-| [Place holder](#place-holder) | 87 or later | All |
-| [Place holder](#place-holder) | 87 or later | All |
+| [Run on OS Login](#place-holder) | 87 or later | All |
+| [Shortcuts](#place-holder) | 87 or later | All |
+| [edge://apps Page Updates](#place-holder) | 87 or later | All |
 
 ### URL Protocol Handling  
 
@@ -102,7 +102,7 @@ You will need to update your manifest to support whatever protocol you'd like to
 
 
 > [!IMPORTANT]
->To preview protocol handling in Microsoft Edge on Windows, look for and enable the edge://flag:
+>To preview protocol handling in Microsoft Edge on Windows, look for and enable the edge://flags:
 >**Desktop Web Apps support Protocol Handlers**
 >
 >Mac OS and Linux support is under development.
@@ -125,7 +125,7 @@ in edge://flags and Enable it.
 
 ### Window Controls Overlay for Installed Desktop Web Apps
 
-To create an immersive, native like title bar for your desktop installed web application, the Window Contols Overlay feature removes the system reserved title bar that usually spans the width of the client frame and replaces it with an overlay that contains just the critical system required window controls necessary for a user to contorl the window itself. 
+To create an immersive, native like title bar for your desktop installed web application, the Window Contols Overlay feature removes the system reserved title bar that usually spans the width of the client frame and replaces it with an overlay that contains just the critical system required window controls necessary for a user to control the window itself. 
 
 In providing an overlay, the entire web client area is available to the web developer to use. This feature includes a manifest update and provides ways for a developer to reason about the size and position of the overlay to arrange content around.
     
@@ -158,7 +158,7 @@ The window controls overlay ensures users can still minimize, maximize or restor
 * the window control buttons minimize, maximize.resdtore and close.
 
 There can be scenarios where the browser will show other content in  the controls overlay.  
-* When an installed web is launched, the origin of the page will display to the left of the three-dot menu for a few seconds, then disappear
+* When an installed web app is launched, the origin of the page will display to the left of the three-dot menu for a few seconds, then disappear
 * If a user interacts with an extension via the "Settings and more" menu, the icon of the extension will appear in the overlay to the left of the three-dot menu. After clicking out of any extension dialog, the icon is removed from the overlay.
 
 For right to left based languages, the overlay is displayed in the upper right corner of the client area. For left to right based languages, the controls is flipped and is displayed on the upper left of the client area.
@@ -170,6 +170,7 @@ For right to left based languages, the overlay is displayed in the upper right c
 Your web content will need to be aware of the reserved area for the controls overlay and ensure that area isn't expecting user interaction. To accomplish this, you will need to query the browser for the bouding retangle and visibility of the controls overlay.  This information is provided to you through JavaScript APIs and CSS environment variables.
 
 **JavaScript APIs**
+
 A new object on the `window.navigator` property called `windowControlsOverlay` has been introduced to query the bounding rectangle of the controls overlay.
 
 `windowControlsOverlay` has two objects:
@@ -195,6 +196,7 @@ This is accomplished through a webkit prorprietary CSS property called `-webkit-
 
 >[!IMPORTANT]
 >To enable this experimental feature, you must start Microsoft Edge with the following command line parameter:
+>
 > **--enable-features=WebAppWindowControlsOverlay,WebAppManifestDisplayOverride** 
 
 #### Example
