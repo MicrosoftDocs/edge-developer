@@ -27,15 +27,42 @@ As you can already see, there are two ways to interact with the DevTools: using 
 
 ## Docking the DevTools on your screen
 
-Depending on your use case, you can dock the developer tools in different places in your browser. You do that by activating the **Customize And Control DevTools** `...` menu on the top right. Activate the different icons shown below to:
+Depending on your use case, you can [dock the developer tools in different places][DevtoolsGuideDocking] in your browser. You do that by activating the **Customize And Control DevTools** `...` menu on the top right. 
 
-TODO: images
+:::image type="complex" source="media/devtools-intro-docking-menu.msft.png" alt-text="Screenshot of the docking menu in DevTools" lightbox="../media/devtools-intro-docking-menu.msft.png":::
+   Screenshot of the docking menu in DevTools  
+:::image-end:::  
+
+This bring up the **Dock side** menu and you can activate the different icons to:
 
 *   Undock the DevTools to a separate window. This is useful if you work with several monitors or if you need to work on a full screen app. 
 *   Dock the DevTools to the left or right of the window. This is useful if you want to have the tools side-by-side with your web product and you run a high enough resolution to have the space. It is also excellent for [device simulation and testing][DevtoolsGuideDeviceMode].
 *   Dock the DevTools to the bottom of the screen. This is good if you don't have enough space to show the DevTools to the side or if you need to debug long text in the DOM or the Console.
 
-TODO: images
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="media/devtools-intro-docking-left.msft.png" alt-text="Select Dock To Left" lightbox="media/devtools-intro-docking-left.msft.png":::
+         Select `Dock To Left`  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="media/devtools-intro-docking-bottom.msft.png" alt-text="Select Dock To Bottom" lightbox="media/devtools-intro-docking-bottom.msft.png":::
+         Select Dock To Bottom
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="media/devtools-intro-docking-right.msft.png" alt-text="Select `Dock To Right`" lightbox="media/devtools-intro-docking-right.msft.png":::
+         Select `Dock To Right`  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="Undocked DevTools in separate window" lightbox="media/devtools-intro-docking-own-window.msft.png":::
+         Undocked DevTools in separate window  
+      :::image-end:::  
+   :::column-end:::
+:::row-end::: 
 
 Depending on where you dock your DevTools you will see features of the tools you use in different parts of the screen. That way we make the best use of the available space and still keep all the tools you need visible.  
 
@@ -47,19 +74,23 @@ DevTools grew over a period of several years and we understand that they can be 
 
 The main toolbar offers you a few sections. These are in order from left to right.
 
-:::image type="complex" source="../media/devtools-intro-menu-bar.msft.png" alt-text="Screenshot of the menu bar of developer tools with labels explaining thethe different sections. In order: Inspect Tool, Device Emulation tool, Tools tab group, JavaScript errors, Issues, Settings, Feedback, Customize and Close." lightbox="../media/devtools-intro-menu-bar.msft.png":::
-   Screenshot of the menu bar of developer tools with labels explaining thethe different sections. In order: Inspect Tool, Device Emulation tool, Tools tab group, JavaScript errors, Issues, Settings, Feedback, Customize and Close.  
+:::image type="complex" source="media/devtools-intro-menu-bar.msft.png" alt-text="Screenshot of the menu bar of developer tools with labels explaining the different sections. In order: Inspect Tool, Device Emulation tool, Tools tab group, JavaScript errors, Issues, Settings, Feedback, Customize and Close." lightbox="../media/devtools-intro-menu-bar.msft.png":::
+   Screenshot of the menu bar of developer tools with labels explaining the different sections. In order: Inspect Tool, Device Emulation tool, Tools tab group, JavaScript errors, Issues, Settings, Feedback, Customize and Close.  
 :::image-end:::  
 
 * The **Inspect Tool** allows you to select an element in the current page. Once activated you can move your mouse over different parts of the document to get detailed information about this element and a colour overlay showing you its dimensions, padding and margin.
 
-TODO: image  
+    :::image type="complex" source="media/devtools-intro-inspect-tool.msft.png" alt-text="Screenshot of the inspect tool with the first headline of this document selected" lightbox="../media/devtools-intro-inspect-tool.msft.png":::
+   Screenshot of the inspect tool with the first headline of this document selected  
+    :::image-end:::  
 
 * The [Device Emulation][DevtoolsGuideDeviceMode] tool displays the current web product in an emulated device mode. This allows you to see how you product reacts to resizing of the browser and gives you an estimation how it would look and behave on a mobile device.
+
+    :::image type="complex" source="media/devtools-intro-device-emulation.msft.png" alt-text="Screenshot of developer tools showing this website in an emulated mobile phone" lightbox="../media/devtools-intro-device-emulation.msft.png":::
+   Screenshot of developer tools showing this website in an emulated mobile phone  
+    :::image-end:::  
+
 * Following is a group of tabs representing different tools for different purposes. You can customize these and they change depending on the context you use DevTools in.
-
-TODO: image 
-
 * Next to these tabs are optional error and issue shortcut buttons. These only show up when there are JavaScript errors or issues with the current document. The error button shows a red circle with a cross followed by the amount of errors caused by JavaScript. Activating this will take you to the [Console][DevtoolsGuideConsole] to see what went wrong. The issues button is a blue message icon followed by the amount of issues. Activating it gets to you to the [Issues][DevtoolsGuideIssues] tool. 
 * Next up is the **Settings** menu shown as a cog. 
 * The **Send Feedback** button allows you to connect with the DevTools team to report problems, issues and give ideas. Activating this will show a feedback prompt where you can describe what went wrong and automatically add a screenshot. 
@@ -68,6 +99,7 @@ TODO: image
 
 Activating the different tabs in the group takes you to various tools inside DevTools. Here are the most common ones with a short description what they do:
 
+*   The **Welcome** tool has news about new features of DevTools, how to contact the team and gives information about certain features.   
 *   The **Elements** tool allows you to edit and inspect HTML and CSS. You can edit both in the tool and you see the changes live in the browser.  
 *   The [Console][DevtoolsGuideConsole] tool allows you to display and filter log messages. These are automated logs of the browser like network requests and developer generated logs. You can also run JavaScript in the context of the current window or frame.
 *   The [Sources][DevtoolsGuideSources] tool is a code editor and JavaScript debugger. You can edit projects, maintain Snippets and debug the current project step by step.
@@ -81,21 +113,40 @@ Once you worked with the developer tools for a while you will see that there is 
 
 Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\). Or choose **Customize And Control DevTools** `...` and then choose **Run Command**.  
 
-This allows you to type commands that DevTools should execute including showing and hiding different parts of it. Try it by going deep into DevTools and enter "render" and choose the `Drawer Show Changes` option with the arrow keys. Hitting `Enter` will show the **Changes** tool, something that is incredibly useful when you edit CSS but may be hard to find using other ways to navigate around DevTools. 
+:::image type="complex" source="media/devtools-intro-command-menu.msft.png" alt-text="Screenshot of the command menu in DevTools" lightbox="../media/devtools-intro-command-menu.msft.png":::
+Screenshot of the command menu in DevTools  
+:::image-end:::
 
-TODO: image
+This allows you to type commands that DevTools should execute including showing and hiding different parts of it. Try it by going deep into DevTools and enter "changes" and choose the `Drawer Show Changes` option with the arrow keys. Hitting `Enter` will show the **Changes** tool, something that is incredibly useful when you edit CSS but may be hard to find using other ways to navigate around DevTools. 
+
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="media/devtools-intro-command-menu-show-changes.msft.png" alt-text="Command menu showing the options when typing `changes`" lightbox="media/devtools-intro-command-menu-show-changes.msft.png":::
+         Command menu showing the options when typing `changes`  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="media/devtools-intro-showing-changes.msft.png" alt-text="DevTools with the Changes tool open" lightbox="media/devtools-intro-showing-changes.msft.png":::
+         DevTools with the Changes tool open  
+      :::image-end:::  
+   :::column-end:::
+:::row-end::: 
 
 ## Customizing DevTools
 
 DevTools are highly customizable to your needs. You can change settings by activating the **Settings Menu** (the cog wheel on the top right) or by pressing `F1` or `?`. There you can change almost all the different parts of DevTools to your needs in the **Preferences** section.
 
-TODO: image 
+:::image type="complex" source="media/devtools-intro-all-settings.msft.png" alt-text="Screenshot of all the settings in DevTools" lightbox="../media/devtools-intro-all-settings.msft.png":::
+Screenshot of all the settings in DevTools  
+:::image-end:::
 
 The most useful changes for you might be to `Match the browser language` which shows DevTools in other languages or to switch the theme. 
 
 In addition to overall DevTools preferences you can also change the settings of advanced functionality like [Workspaces][DevtoolsGuideWorkspaces], filter out library code with the **Ignore List**, define what **Devices** you want to see in the [device simulation and testing][DevtoolsGuideDeviceMode] mode, select a network **Throttling** profile, define simulated **Locations** and customize keyboard shortcuts. We also offer the option to match the keyboard shortcuts of Visual Studio Code in case you are already used to those. 
 
-TODO: image
+:::image type="complex" source="media/devtools-intro-match-keys.msft.png" alt-text="Screenshot of all the keyboard shortcuts and the menu to change them to the settings of Visual Studio Code" lightbox="../media/devtools-intro-match-keys.msft.png":::
+Screenshot of all the keyboard shortcuts and the menu to change them to the settings of Visual Studio Code  
+:::image-end:::
 
 ## Do you feel like experimenting?
 
@@ -114,11 +165,13 @@ If you want to preview the [latest features coming to the DevTools][DevtoolsGuid
 
 <!-- links -->  
 
+[DevtoolsGuideDocking]: /microsoft-edge//microsoft-edge/devtools-guide-chromium/customize/placement
 [DevtoolsGuideKeyboardShortcuts]: /microsoft-edge/devtools-guide-chromium/shortcuts
 [DevtoolsGuideOpenDevTools]: /microsoft-edge/devtools-guide-chromium/shortcuts
 [DevtoolsGuideConsole]: /microsoft-edge/devtools-guide-chromium/console
 [DevtoolsGuideIssues]: /microsoft-edge/devtools-guide-chromium/issues
 [DevtoolsGuideSources]: /microsoft-edge/devtools-guide-chromium/sources
+[DevtoolsGuideNetwork]: /microsoft-edge/devtools-guide-chromium/network
 [DevtoolsGuideChromiumCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu
 [DevtoolsGuideWorkspaces]: /microsoft-edge/devtools-guide-chromium/workspaces
 [DevtoolsGuideChromiumExperiment]: /microsoft-edge/devtools-guide-chromium/experimental-features
