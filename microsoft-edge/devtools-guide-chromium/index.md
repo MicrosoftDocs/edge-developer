@@ -17,11 +17,25 @@ Installing Microsoft Edge does not only get you a browser, but also a powerful w
 
 You can start exploring DevTools right here and now by opening them. Pick one of the ways listed below:
 
+
 *   Context-click any element on the page and select **Inspect** to jump directly to the Elements tool. 
 *   Press `F12` 
 *   Press `Ctrl`+`Shift`+`I` on Windows/Linux \(`Command`+`Option`+`I` on macOS\)  
 *   Press `Ctrl`+`Shift`+`C` on Windows/Linux \(`Command`+`Option`+`C` on macOS\) to open the DevTools in **Inspect Element Mode** 
 *   Press `Ctrl`+`Shift`+`J` on Windows/Linux or `Command`+`Option`+`J` on macOS to launch the **Console** panel in the DevTools.  
+
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="media/devtools-intro-inspect.msft.png" alt-text="Selecting Inspect from the context menu on any element" lightbox="media/devtools-intro-inspect.msft.png":::
+         Selecting Inspect from the context menu on any element
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="media/devtools-intro-inspect-devtools-open.png" alt-text="DevTools open highlighting the element chosen via context menu" lightbox="media/devtools-intro-inspect-devtools-open.png":::
+         DevTools open highlighting the element chosen via context menu
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 As you can already see, there are two ways to interact with the DevTools: using your mouse or [keyboard shortcuts][DevtoolsGuideKeyboardShortcuts]. Keyboard shortcuts are not only a  way to access functionality quicker but also an important accessibility aspect. We're working hard to make all the tools available via keyboard and assistive technology like screen readers. In addition to keyboard and mouse there are more ways to open DevTools and you can read up on all of them in the [Open DevTools][DevtoolsGuideOpenDevTools] chapter of this documentation.
 
