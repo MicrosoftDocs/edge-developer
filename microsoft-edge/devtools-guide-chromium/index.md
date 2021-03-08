@@ -115,7 +115,7 @@ If you want to preview the [latest features coming to the DevTools][DevtoolsGuid
 [DevtoolsGuideKeyboardShortcuts]: /microsoft-edge/devtools-guide-chromium/shortcuts
 [DevtoolsGuideOpenDevTools]: /microsoft-edge/devtools-guide-chromium/shortcuts
 [DevtoolsGuideConsole]: /microsoft-edge/devtools-guide-chromium/console
-DevtoolsGuideIssues]: /microsoft-edge/devtools-guide-chromium/console
+[DevtoolsGuideIssues]: /microsoft-edge/devtools-guide-chromium/issues
 [DevtoolsGuideSources]: /microsoft-edge/devtools-guide-chromium/sources
 [DevtoolsGuideChromiumCommandMenu]: /microsoft-edge/devtools-guide-chromium/command-menu
 [DevtoolsGuideWorkspaces]: /microsoft-edge/devtools-guide-chromium/workspaces
