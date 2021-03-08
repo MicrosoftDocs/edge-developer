@@ -1,18 +1,18 @@
 ---
-description: Utilize Chrome DevTools Protocol in your WebView2 applications using Microsoft Edge WebView2 CDP NuGet package
-title: Utilizing Chrome DevTools Protocol in WebView2
+description: Learn how to use the Chrome DevTools Protocol in your WebView2 applications using the Microsoft Edge WebView2 CDP NuGet package
+title: Use Chrome DevTools Protocol in WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/15/2020
+ms.date: 03/08/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, ICoreWebView2Controller, Chrome DevTools Protocol, CDP
 ---
 
-# Using Chromium DevTools Protocol in WebView2
+# Use Chromium DevTools Protocol in WebView2
 
-The [Chromium DevTools Protocol (CDP)](https://chromedevtools.github.io/devtools-protocol/) is a set of APIs built to instrument, inspect, debug and profile chromium based browsers. They provide the foundation for the Microsoft Edge (Chromium) DevTools.
+The [Chromium DevTools Protocol (CDP)](https://chromedevtools.github.io/devtools-protocol/) is a set of APIs built to instrument, inspect, debug, and profile chromium-based browsers. They provide the foundation for the Microsoft Edge (Chromium) DevTools.
 
 > [!CAUTION]
 > The Microsoft Edge WebView2 team does not maintain or support Chromium DevTools Protocol. The Chromium DevTools Protocol is maintained by the open source Chromium project. 
@@ -33,10 +33,10 @@ There are two ways to call [CDP APIs](https://chromedevtools.github.io/devtools-
 
 ## DevToolsProtocol Helper
 
-[DevToolsProtocolHelper](https://int.nugettest.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension/) is a NuGet package created by the Microsoft Edge WebView2 team that allows developers to easily access CDP functions. The following tutorial explains how you can take advantage of CDP's ability to override geolocation in WebView2 content.
+[DevToolsProtocolHelper](https://int.nugettest.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension/) is a NuGet package created by the WebView2 team that allows developers to easily access CDP functions. The following tutorial explains how you can take advantage of CDP's ability to override geolocation in WebView2 content.
 
 ### Step 1: Create GeoLocation Finder
-To begin, create an `HTML file` that has the ability to find the user's geolocation. 
+To begin, create an `HTML file` to find the user's geolocation. 
 
 1. Create an `HTML` file using Visual Studio Code or and IDE of your choice named `geolocater.html`
 2. Copy and Paste the following code snippet into `geolocater.html`
@@ -73,13 +73,13 @@ To begin, create an `HTML file` that has the ability to find the user's geolocat
 </script>
 </html>
 ```
-3. Run the file in the Microsoft Edge browser. When Clicking the `Display Location` button, your latitude and longitude coordinates will appear. You can verify your coordiantes on bing.com/maps.
+3. Run the file in the Microsoft Edge browser. When Clicking the `Display Location` button, your latitude and longitude coordinates will appear. You can verify your coordinates on bing.com/maps.
 
 ![alt-image](./media/geolocater-browser.PNG)
 
 ### Step 2: Display geolocater.html in a WebView2
 
-1. Follow either getting started guide to learn to create a simple WebView2 Application. 
+1. Follow either getting started guide to create a WebView2 Application. 
     - Getting Started with WebView2 in Windows Forms
     - Getting Started with WebView2 in WPF
 
