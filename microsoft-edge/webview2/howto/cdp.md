@@ -75,7 +75,7 @@ To begin, create an `HTML file` that has the ability to find the user's geolocat
 ```
 3. Run the file in the Microsoft Edge browser. When Clicking the `Display Location` button, your latitude and longitude coordinates will appear. You can verify your coordiantes on bing.com/maps.
 
-geolocater-browser image
+![alt-image](./media/geolocater-browser.PNG)
 
 ### Step 2: Display geolocater.html in a WebView2
 
@@ -87,8 +87,7 @@ geolocater-browser image
 ```c#
 webView.CoreWebView2.Navigate(@"C:\{PATH TO FILE}\geolocater.html");
 ```
-
-initial-geolocate image
+![alt-image](./media/initial-geolocate.PNG)
 
 ### Step 3: Install DevToolsProtocolHelper
 
@@ -104,7 +103,7 @@ The `Microsoft.Web.WebView2.DevToolsProtocolExtension` is distributed via NuGet.
 > [!NOTE] 
 > Ensure you also have downloaded the WebView2 Nuget Package `Microsoft.Web.WebView2`. 
 
-cdp-pacakge nuget image
+![alt-image](./media/cdpnuget.PNG)
 
 ### Step 4: Use DevTools Protocol Helper
 
@@ -157,7 +156,8 @@ async void InitializeAsync()
 ```
 5. Run the Application. When Selecting the `Display Location` button, the new latitude and longitude will appear. 
 
-finallocation-cdp image
+![alt-image](./media/finallocation-cdp.PNG)
+
 
 ## Filing a bug with CDP
 
