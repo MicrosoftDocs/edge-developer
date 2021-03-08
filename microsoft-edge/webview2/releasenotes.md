@@ -116,7 +116,7 @@ Release Date: February 10, 2021
         
 ### .NET  
 
-##### Bug fixes  
+#### Bug fixes  
 
 *   Fixed bug that crashed WebView apps that use the WPF SDK.  The crash occurred when windows were closed using the F4 key.  \([\#399][GithubMicrosoftedgeWebviewfeedbackIssue399]\).  
 *   The WebView2 initialization screen is now transparent, instead of gray.  \([\#196][GithubMicrosoftedgeWebviewfeedbackIssue196]\).  
@@ -127,7 +127,9 @@ Release Date: January 25, 2021
 
 [NuGet package][NuGetGallery1.0.705.50] \| WebView2 Runtime version 86.0.616.0 or newer  
 
-##### Promotions  
+### General  
+
+#### Promotions  
 
 *   The following experimental APIs are now promoted to Stable.  
     *   [WebResourceResponseReceived API][Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddWebresourceresponsereceived]  
