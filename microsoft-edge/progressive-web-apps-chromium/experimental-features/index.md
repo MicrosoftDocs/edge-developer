@@ -107,19 +107,51 @@ You will need to update your manifest to support whatever protocol you'd like to
 >
 >Mac OS and Linux support is under development.
  
-
 ### URL Link Handling
 
-Normally, tools such as **Elements** and **Network** may only open in the main panel that is located at the top of the DevTools.  Tools like **3D View** and **Issues** which normally only open in the **Drawer** panel that is located at the bottom of the DevTools.  After you choose the experiment, you may move tools between the top and bottom panels.  To move a tool, hover on the tab, open the contextual menu \(right-click\), and choose **Move to top** or **Move to bottom**.   
+Developers can create a more engaging experience if Progressive Web Apps (PWAs) are able to register as handlers for https uniform resource identifiers (URLs). This means that PWAs can request to be launched when associated URLs are activated. For example, a user could click on a link to a news story from an e-mail. An associated PWA for viewing news stories would automatically be launched to handle the activation of the link.
 
-To preview protocol handling, look for:
-**Desktop PWA URL Handling**
-in edge://flags and Enable it.    
+This feature allows you to register a PWA with the host operating system via the web app manifest, declaring that it can handle specific links. To do this, you must add to the manifest file the _optional_ `url_handlers` member. This member is and ``object[]`` that groups the origins of URLs that the app wishes to handle.
 
+Example web app manifest with ``url_handlers`` member:
 
-:::image type="complex" source="../media/experiments-move-panels.msft.png" alt-text="Moving tabs between panels" lightbox="../media/experiments-move-panels.msft.png":::
-   Moving tabs between panels  
-:::image-end:::  
+```json 
+{
+    "name": "Contoso Business App",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "images/icons-144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        }
+    ],
+    "capture_links": "existing_client_event",
+    "url_handlers" : [
+        {
+            "origin": "contoso.com"
+        },
+        {
+            "origin": "conto.so"
+        },
+        {
+            "origin": "*.contoso.com"
+        }
+    ]
+}
+```
+A PWA matches a URL for URL handling if the URL matches one of the origin strings in url_handlers and the browser is able to validate that the origin agrees to let this app handle such a URL. 
+
+``url-handlers`` can contain an origin that encompasses requesting PWA's scope and also other unrelated origins. Not restricting URLs to the same scope or domain as the requesting PWA allows the developer to use different domain names for the same content but handle them with the same PWA.
+
+**Wildcard Matching**
+
+The wildcard character ``*`` can be used to match one or more characters.
+
+A wildcard prefix can be used in url_handlers origin strings to match for different subdomains. The prefix must be ``*``. for this usage. The scheme is still assumed to be https when using a wildcard prefix.
+
+For eg. ``*.contoso.com`` matches ``tenant.contoso.com`` and ``www.tenant.contoso.com`` but not ``contoso.com`` . 
+
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
