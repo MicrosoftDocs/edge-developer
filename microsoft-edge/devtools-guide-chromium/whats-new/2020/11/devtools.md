@@ -3,7 +3,7 @@ description: Microsoft Edge on Linux, improved webhint tips in the Issues tool, 
 title: What's new in DevTools (Microsoft Edge 88)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/03/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -93,9 +93,9 @@ In the **Styles** pane, [CSS variables][MdnUsingCssCustomProperties] now link di
 <!-- Title:  Service worker debugging improvements in the Network, Application, and Sources tools  -->  
 <!-- Subtitle:  Making service workers easier to debug for progressive web applications and more.  -->  
 
-The following new features in the [Network](#network-tool), [Application](#application-tool), and [Sources](#sources-tool) tools help you build your [PWA][ProgressiveWebAppsChromiumIndex].  Use the following features when you have difficulty debugging your service worker.  
+The following new features in the [Network](#network-tool), [Application](#application-tool), and [Sources](#sources-tool) tools help you build your [PWA][ProgressiveWebAppsIndex].  Use the following features when you have difficulty debugging your service worker.  
 
-Request routing displays the `startup` and `fetch` events based on the network requests that run through service workers.  The timelines are accessed from either the **Application** or **Network** tool.  The timelines help when you are having trouble with service workers and want to see if something is wrong with the `startup` or `fetch` event.  
+Request routing displays the `startup` and `fetch` events based on the network requests that run through service workers.  The timelines are accessed from either the **Application** or **Network** tool.  The timelines help when you are having trouble with service workers and want to display if something is wrong with the `startup` or `fetch` event.  
 
 ### Application tool  
 
@@ -174,8 +174,8 @@ To copy the property value to your clipboard, navigate to [Copy formatted respon
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Paste property value in Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
-         Paste property value in Visual Studio Code  
+      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Paste property value in Microsoft Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
+         Paste property value in Microsoft Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -217,7 +217,7 @@ The following CSS angle is used for the example.
 
 ```css
 background: linear-gradient(100deg, lightblue, pink);
-```
+```  
 
 :::image type="complex" source="../../media/2020/11/css-angle.msft.png" alt-text="CSS angle" lightbox="../../media/2020/11/css-angle.msft.png":::
    CSS angle  
@@ -347,10 +347,10 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 <!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: /microsoft-edge/devtools-guide-chromium/css/reference#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->  
 
-[ProgressiveWebAppsChromiumIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Progressive Web Apps on Windows | Microsoft Docs"  
+[ProgressiveWebAppsIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Progressive Web Apps on Windows | Microsoft Docs"  
 
-[WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools#customize-keyboard-shortcuts-in-settings "Customize keyboard shortcuts in Settings - What's New In DevTools (Microsoft Edge 87) | Microsoft Docs"  
-[WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#webhint-feedback-in-the-issues-panel "webhint feedback in the Issues panel - What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"  
+[WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: ../10/devtools.md#customize-keyboard-shortcuts-in-settings "Customize keyboard shortcuts in Settings - What's New In DevTools (Microsoft Edge 87) | Microsoft Docs"  
+[WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: ../06/devtools.md#webhint-feedback-in-the-issues-panel "webhint feedback in the Issues panel - What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"  
 
 [MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "Download WebDriver | Microsoft Developer"  
 
@@ -368,7 +368,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [CR1035309]: https://crbug.com/1035309 "Issue 1035309: DevTools should consistently use MB to mean megabyte, not mebibyte | Chromium bugs"  
 [CR1051466]: https://crbug.com/1051466 "Issue 1051466: Support COOP/COEP debugging in DevTools | Chromium bugs"  
 [CR1058836]: https://crbug.com/1058836 "Issue 1058836: UX issues around Wasm debugging | Chromium bugs"  
-[CR1071432]: https://crbug.com/1071432 "Issue 1071432: ☂︝ Wasm Basic Developer Experience | Chromium bugs"  
+[CR1071432]: https://crbug.com/1071432 "Issue 1071432: ☂️ Wasm Basic Developer Experience | Chromium bugs"  
 [CR1107766]: https://crbug.com/1107766 "Issue 1107766: Display info about frames generated by 'window.open()' in frame tree | Chromium bugs"  
 [CR1122507]: https://crbug.com/1122507 "Issue 1122507: Surface worker information in frame tree view | Chromium bugs"  
 [CR1126178]: https://crbug.com/1126178 "Issue 1126178: ☂ DevTools: CSS <type> components | Chromium bugs"  

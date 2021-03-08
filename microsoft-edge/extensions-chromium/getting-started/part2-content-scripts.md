@@ -3,12 +3,11 @@ description: Dynamically Insert NASA Picture Below The Page Body Tag Using Conte
 title: Create an extension tutorial Part 2  
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions
 ---
-
 # Create an extension tutorial Part 2  
   
 [Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart2]    
@@ -56,11 +55,11 @@ First, update your `popup.html` file with some straight forward markup that disp
 
 After updating and opening the extension, a pop-up opens with a display button.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html display after pressing the Extension icon":::
-   popup.html display after pressing the Extension icon
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html display after selecting the Extension icon":::
+   popup.html display after selecting the Extension icon
 :::image-end:::
 
-<!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  
+<!--![popup.html display after selecting the Extension icon][ImagePart2Popupdialog]  -->  
 
 2.  Update strategy to display image at the top of the browser tab  
 
@@ -214,11 +213,11 @@ When an event is processed by the listener, the function that is the first param
 
 Now, when you browse to any page and select your **Extension** icon, the pop-up menu is displayed as follows.  
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html display after pressing the Extension icon":::
-   popup.html display after pressing the Extension icon
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html display after selecting the Extension icon":::
+   popup.html display after selecting the Extension icon
 :::image-end:::
 
-<!--![popup.html display after pressing the Extension icon][ImagePart2Popupdialog]  -->  
+<!--![popup.html display after selecting the Extension icon][ImagePart2Popupdialog]  -->  
 
 When you select the `Display` button, you get what is below.  If you select anywhere on the `stars.jpeg` image, that image element is removed and tab pages collapses back to what was originally displayed.  
 

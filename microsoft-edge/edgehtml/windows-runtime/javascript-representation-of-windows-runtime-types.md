@@ -1,6 +1,8 @@
 ---
-description: JavaScript Representation of Windows Runtime Types.
+description: JavaScript Representation of Windows Runtime Types
 title: "JavaScript Representation of Windows Runtime Types"
+ms.custom: ""
+ms.date: 10/30/2020
 ms.prod: microsoft-edge
 ms.technology: "windows-integration"
 ms.topic: "article"
@@ -11,7 +13,6 @@ ms.assetid: f4851802-8b40-4afa-ba6c-8a162a9a43cc
 caps.latest.revision: 9
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # JavaScript representation of Windows Runtime types  

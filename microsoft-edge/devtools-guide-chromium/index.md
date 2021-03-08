@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge (Chromium) Developer Tools
 title: Microsoft Edge (Chromium) Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2020
+ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -16,7 +16,6 @@ Installing Microsoft Edge does not only get you a browser, but also a powerful w
 ## Opening DevTools  
 
 You can start exploring DevTools right here and now by opening them. Pick one of the ways listed below:
-
 
 *   Context-click any element on the page and select **Inspect** to jump directly to the Elements tool. 
 *   Press `F12` 
@@ -100,7 +99,7 @@ The main toolbar offers you a few sections. These are in order from left to righ
 
 * The [Device Emulation][DevtoolsGuideDeviceMode] tool displays the current web product in an emulated device mode. This allows you to see how you product reacts to resizing of the browser and gives you an estimation how it would look and behave on a mobile device.
 
-    :::image type="complex" source="media/devtools-intro-device-emulation.msft.png" alt-text="Screenshot of developer tools showing this website in an emulated mobile phone" lightbox="../media/devtools-intro-device-emulation.msft.png":::
+:::image type="complex" source="media/devtools-intro-device-emulation.msft.png" alt-text="Screenshot of developer tools showing this website in an emulated mobile phone" lightbox="../media/devtools-intro-device-emulation.msft.png":::
    Screenshot of developer tools showing this website in an emulated mobile phone  
     :::image-end:::  
 

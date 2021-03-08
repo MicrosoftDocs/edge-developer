@@ -3,7 +3,7 @@ description: Native messaging documentation
 title: Native Messaging
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -126,7 +126,7 @@ To sideload your extension during development and retrieve `microsoft_catalog_ex
 1.  Navigate to `edge://extensions` page and verify your extension is listed.  
 1.  Copy the key from `microsoft_catalog_extension_id` \(ID\) from the extension listing on the page.  
 
-When you're ready to distribute your extension to users, publish your extension to the Microsoft Edge add-ons store.  The extension ID of the published extension may differ from the ID used while sideloading your extension.  If the ID changed, update `allowed_origins` in the host manifest file with the ID of your published extension.  
+When you're ready to distribute your extension to users, publish your extension to the Microsoft Edge Add-ons store.  The extension ID of the published extension may differ from the ID used while sideloading your extension.  If the ID changed, update `allowed_origins` in the host manifest file with the ID of your published extension.  
 
 ## Step 3 - Copy the native messaging host manifest file to your system  
 
