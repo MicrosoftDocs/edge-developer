@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Microsoft Edge (Chromium) Developer Tools overview  
 
-With the installation of Microsoft Edge you didn't only get a browser, but also a powerful way to inspect, debug and create web projects. The Developer Tools shipped with the browser are based on those of the  Chromium open source project so you might already be familiar with them. To keep things shorter in this document, we shall refer to the Microsoft Edge Developer Tools as "DevTools" from now on. 
+With the installation of Microsoft Edge you did not only get a browser, but also a powerful way to inspect, debug and create web projects. The Developer Tools shipped with the browser are based on those of the  Chromium open source project so you might already be familiar with them. To keep things shorter in this document, we shall refer to the Microsoft Edge Developer Tools as "DevTools" from now on. 
 
 ## Open the DevTools  
 
@@ -85,6 +85,7 @@ If you want to preview the [latest features coming to the DevTools][DevtoolsGuid
 
 <!-- links -->  
 
+[DevtoolsGuideDeviceMode]: /microsoft-edge/devtools-guide-chromium/device-mode
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools for Beginners: Get Started with HTML and the DOM | Microsoft Docs"  
 [DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools "What's new in the Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Microsoft Edge (Chromium) DevTools Protocol | Microsoft Docs"  
