@@ -1,9 +1,9 @@
 ---
 description: How to view and edit sessionStorage with the Session Storage pane and the Console.
-title: View And Edit Session Storage With Microsoft Edge DevTools
+title: View and edit Session Storage with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -28,7 +28,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 ## View sessionStorage keys and values  
 
-1.  Choose the **Application** tab to open the **Application** tool.  The **Manifest** pane is shown by default.  
+1.  Choose the **Application** tab to open the **Application** tool.  The **Manifest** panel is shown by default.  
     
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
        The **Manifest** pane  
@@ -91,7 +91,7 @@ Since you may run JavaScript in the **Console**, and since the **Console** has a
        Change the JavaScript context of the **Console**  
     :::image-end:::  
     
-1.  Run your `sessionStorage` expressions in the **Console**, the same as you would in your JavaScript.  
+1.  Run your `sessionStorage` expressions in the **Console**, the same as your JavaScript.  
     
     :::image type="complex" source="../media/storage-console-session-storage-keys.msft.png" alt-text="Interact with sessionStorage from the Console" lightbox="../media/storage-console-session-storage-keys.msft.png":::
        Interact with `sessionStorage` from the **Console**  
