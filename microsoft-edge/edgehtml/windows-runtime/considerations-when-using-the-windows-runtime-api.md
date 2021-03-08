@@ -1,6 +1,8 @@
 ---
-description: Considerations when Using the Windows Runtime API.
+description: Considerations when using the Windows Runtime API
 title: "Considerations when Using the Windows Runtime API"
+ms.custom: ""
+ms.date: 11/03/2020
 ms.prod: microsoft-edge
 ms.technology: "windows-integration"
 ms.topic: "article"
@@ -10,7 +12,6 @@ ms.assetid: 2f56d70c-c80d-4876-8e6a-8ae031d31c22
 caps.latest.revision: 8
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Considerations when using the Windows Runtime API  
@@ -158,7 +159,7 @@ For more information about the JavaScript representation of Windows Runtime basi
 
 <!-- links -->  
  
-[WindowsRuntimeJavascriptTypes]: ./javascript-representation-of-windows-runtime-types.md "JavaScript Representation of Windows Runtime Types | Microsoft Docs"
+[WindowsRuntimeJavascriptTypes]: ./javascript-representation-of-windows-runtime-types.md "JavaScript Representation of Windows Runtime Types | Microsoft Docs"  
 
 [WindowsUwpComponentsCreatingCpp]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp "Windows Runtime components with C++/CX | Microsoft Docs"  
 [WindowsUwpComponentsCreatingCsharpVb]: /windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic "Windows Runtime components with C# and Visual Basic | Microsoft Docs"  

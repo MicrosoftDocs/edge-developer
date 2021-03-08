@@ -25,6 +25,8 @@
           href: devtools-guide-chromium/open/index.md
         - name: What's new
           items: 
+            - name: Microsoft Edge 89
+              href: devtools-guide-chromium/whats-new/2021/01/devtools.md
             - name: Microsoft Edge 88
               href: devtools-guide-chromium/whats-new/2020/11/devtools.md
             - name: Microsoft Edge 87
@@ -65,6 +67,8 @@
               href: devtools-guide-chromium/coverage/index.md
             - name: Inspect animations
               href: devtools-guide-chromium/inspect-styles/animations.md
+            - name: Edit CSS font styles and settings
+              href: devtools-guide-chromium/inspect-styles/edit-fonts.md
             - name: Inspect CSS grid
               href: devtools-guide-chromium/css/grid.md
             - name: Force DevTools into Print Preview mode
@@ -117,6 +121,8 @@
           items: 
             - name: Emulation overview
               href: devtools-guide-chromium/device-mode/index.md
+            - name: Emulate dual-screen and foldable devices
+              href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
             - name: Emulate and test other browsers
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
             - name: Guides
@@ -263,23 +269,25 @@
               href: extensions-chromium/developer-guide/native-messaging.md
         - name: Publish to Microsoft Store
           items: 
-            - name: Publish your extension
-              href: extensions-chromium/publish/publish-extension.md
             - name: Developer registration
               href: extensions-chromium/publish/create-dev-account.md
-            - name: Update extension listing
-              href: extensions-chromium/publish/update.md
+            - name: Publish your extension
+              href: extensions-chromium/publish/publish-extension.md
+            - name: Update your extension
+              href: extensions-chromium/publish/update-extension.md
             - name: Submission states
               href: extensions-chromium/publish/submission-states.md
             - name: Manage account settings
               href: extensions-chromium/publish/manage-settings.md
+            - name: Contact extensions support
+              href: extensions-chromium/publish/contact-extensions-team.md
         - name: Microsoft Edge Add-ons policies
           items: 
             - name: Content security policy
               href: extensions-chromium/store-policies/csp.md
             - name: Microsoft Edge developer ADA addendum
               href: extensions-chromium/store-policies/ada-addendum.md
-            - name: Microsoft Edge Add-ons catalog developer policies
+            - name: Microsoft Edge Add-ons store developer policies
               href: extensions-chromium/store-policies/developer-policies.md
         - name: Extensions for enterprise
           items: 
@@ -325,6 +333,8 @@
           href: webdriver-chromium/index.md
         - name: Capabilities and EdgeOptions
           href: webdriver-chromium/capabilities-edge-options.md
+        - name: Verifying downloads of Selenium Tools for Microsoft Edge
+          href: webdriver-chromium/verify-selenium-tools.md
     - name: Web platform
       items: 
         - name: Site compatibility-impacting changes coming to Microsoft Edge
@@ -335,8 +345,67 @@
           href: web-platform/tracking-prevention.md
         - name: Microsoft Edge user agent string
           href: web-platform/user-agent-string.md
-    - name: WebView2
-      href: webview2/toc.yml
+    - name: WebView2 
+      items:
+        - name: WebView2 overview
+          href: webview2/index.md
+        - name: Getting started
+          items:
+            - name: Win32
+              href: webview2/gettingstarted/win32.md
+            - name: WPF
+              href: webview2/gettingstarted/wpf.md
+            - name: Windows Forms
+              href: webview2/gettingstarted/winforms.md
+            - name: WinUI 3.0
+              href: webview2/gettingstarted/winui.md
+        - name: Concepts
+          items:
+            - name: Distributing my app
+              href: webview2/concepts/distribution.md
+            - name: Managing User Data Folders
+              href: webview2/concepts/userdatafolder.md
+            - name: Managing WebView2 applications
+              href: webview2/concepts/enterprise.md
+            - name: Navigation events
+              href: webview2/concepts/navigation-events.md
+            - name: Process model
+              href: webview2/concepts/process-model.md
+            - name: Security Best Practices
+              href: webview2/concepts/security.md
+            - name: Versioning
+              href: webview2/concepts/versioning.md
+            - name: Threading model
+              href: webview2/concepts/threading-model.md
+            - name: Win32 API conventions
+              href: webview2/concepts/win32-api-conventions.md
+        - name: Release notes
+          href: webview2/releasenotes.md
+        - name: Roadmap
+          href: webview2/roadmap.md
+        - name: How to
+          items:
+            - name: Extended JavaScript scenarios in WebView2 
+              href: webview2/howto/js.md
+            - name: Statically link loader
+              href: webview2/howto/static.md
+            - name: Debug WebView2
+              href: webview2/howto/debug.md
+            - name: Automate with Edge Driver
+              href: webview2/howto/webdriver.md
+        - name: Reference
+          href: webview2/webview2-api-reference.md
+          items:
+            - name: Win32 C++
+              href: /microsoft-edge/webview2/reference/win32/index
+            - name: .NET
+              items:
+                - name: Microsoft.Web.WebView2.Core
+                  href: /dotnet/api/microsoft.web.webview2.core
+                - name: Microsoft.Web.WebView2.WPF
+                  href: /dotnet/api/microsoft.web.webview2.wpf
+                - name: Microsoft.Web.WebView2.WinForms
+                  href: /dotnet/api/microsoft.web.webview2.winforms
     # - name: WebVR developer guide
     #   href: /microsoft-edge/webvr/index
     - name: Legacy Microsoft Edge documentation

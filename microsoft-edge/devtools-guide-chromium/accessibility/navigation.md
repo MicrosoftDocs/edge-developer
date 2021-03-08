@@ -3,7 +3,7 @@ description: A guide on navigating Microsoft Edge DevTools using assistive techn
 title: Navigate Microsoft Edge DevTools with assistive technology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020 
+ms.date: 02/12/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -34,11 +34,11 @@ Before starting, it helps to have a mental model of how the DevTools UI is struc
 
 For example:  
 
-*   The **Elements** panel lets you [view and change DOM nodes][DevtoolsDomIndexNavigateDomTreeKeyboard] or [CSS][DevtoolsCssIndex].  
+*   The **Elements** tool lets you [view and change DOM nodes][DevtoolsDomIndexNavigateDomTreeKeyboard] or [CSS][DevtoolsCssIndex].  
 *   The [Console panel][DevtoolsConsoleIndex] lets you read JavaScript logs and live edit objects.  
 
 Within the content area of each panel, there are a number of different tools, often referred to as tabs or panes in the documentation.  
-For instance, the **Elements** panel contains additional tabs to inspect event listeners, the accessibility tree, and much more.  The distinction between tabs and panes is somewhat arbitrary.  The only reason you may review one term or the other is to maintain consistency with the rest of the official DevTools documentation.  
+For instance, the **Elements** tool contains additional tabs to inspect event listeners, the accessibility tree, and much more.  The distinction between tabs and panes is somewhat arbitrary.  The only reason you may review one term or the other is to maintain consistency with the rest of the official DevTools documentation.  
 
 ## Keyboard shortcuts  
 
@@ -58,7 +58,7 @@ To get started, navigate to [Open Microsoft Edge DevTools][DevtoolsOpen].  There
 
 **Known issues**  
 
-*   Some panels, such as the **Console** and **Performance** panels, may move focus into the panel content area as soon as each panel is activated.  This may make navigating by arrow keys difficult.  
+*   Some panels, such as the **Console** and **Performance** tools, may move focus into the panel content area as soon as each panel is activated.  This may make navigating by arrow keys difficult.  
 *   The name of the selected panel is announced, but only after it has read the focused content in the panel.  This may make it very easy to miss.  
 
 ### Navigate by Command Menu  
@@ -70,13 +70,13 @@ To focus a specific panel, use the [Command Menu][DevtoolsCommandMenuIndex]:
 1.  Type the name of the panel you want to open, then use the `Down Arrow` on the keyboard to navigate to the correct option.  
 1.  Select `Enter` to run a command.  
 
-Complete the following actions to open the **Elements** panel.  
+Complete the following actions to open the **Elements** tool.  
 
 1.  Open the **Command Menu**.  
 1.  Type `E` then `L`.  The **Panel > Show Elements** option is selected.  
 1.  Select `Enter` to run the command that opens the panel.  
 
-Open a panel this way directs focus to the contents of the panel.  In the case of the **Elements** panel, focus moves into the **DOM Tree**.  
+Open a panel this way directs focus to the contents of the panel.  In the case of the **Elements** tool, focus moves into the **DOM Tree**.  
 
 ## Elements panel  
 
@@ -116,9 +116,9 @@ The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  For an example,
 
 For example, when you type `h3` and select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\), the start and end tags of the `h3` element change.  
 
-## Elements panel tabs  
+## Elements tool panels  
 
-The **Elements** panel contains additional tabs for inspecting things like the CSS applied to an element or the relevant place in the accessibility tree.  
+The **Elements** tool contains additional tabs for inspecting things like the CSS applied to an element or the relevant place in the accessibility tree.  
 
 *   With focus on a node in the **DOM Tree**, select `Tab` until you hear that the **Styles** pane is selected.  
 *   Use the `Right Arrow` to explore other available tabs.  
@@ -190,7 +190,7 @@ Select `Tab` until you reach the collection of computed styles.  These are prese
 
 ### Event listeners tab  
 
-From within the **Elements** panel you may inspect the event listeners applied to an element using the **Event Listeners** tab.  With focus on the **Styles** pane, select the `Right Arrow` to navigate to the **Event Listeners** tab.  
+From within the **Elements** tool you may inspect the event listeners applied to an element using the **Event Listeners** tab.  With focus on the **Styles** panel, select the `Right Arrow` to navigate to the **Event Listeners** panel.  
 
 #### Explore event listeners  
 
@@ -212,11 +212,11 @@ The **Accessibility Tree** is presented as an [ARIA tree][W3CWaiAriaTree] where 
 
 ## Audits panel  
 
-The **Audits** panel you should run a series of tests against a site to check for common issues related to performance, accessibility, SEO, and a number of other categories.  
+The **Audits** tool you should run a series of tests against a site to check for common issues related to performance, accessibility, SEO, and a number of other categories.  
 
 ### Configure and run an audit  
 
-1.  When the **Audits** panel is first opened, focus is placed on the **Run Audit** button at the end of the form.  By default the form is configured to run audits for every category using mobile emulation on a simulated 3G connection.  
+1.  When the **Audits** tool is first opened, focus is placed on the **Run Audit** button at the end of the form.  By default the form is configured to run audits for every category using mobile emulation on a simulated 3G connection.  
 1.  Use `Shift`+`Tab` or navigate back in Browse mode to change the audit settings.  
 1.  When you are ready to run the audit, navigate back to the **Run Audit** button and select `Enter`.  
 1.  Focus moves into a modal window with a **Cancel** button which allows you to exit the audit.  You may hear a series of earcons as the audit runs and refreshes the page multiple times.  
@@ -250,7 +250,7 @@ To run a new audit, use `Shift`+`Tab` to exit the report and look for the **Perf
 [DevtoolsDomIndexNavigateDomTreeKeyboard]: ../dom/index.md#navigate-the-dom-tree-with-a-keyboard "Navigate the DOM Tree with a keyboard - Get started with viewing and changing the DOM | Microsoft Docs"  
 [DevtoolsOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
-[DevtoolsShortcutsStylesPaneKeyboard]: ../shortcuts/index.md#styles-pane-keyboard-shortcuts "Styles pane keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
+[DevtoolsShortcutsStylesPaneKeyboard]: ../shortcuts/index.md#styles-panel-keyboard-shortcuts "Styles panel keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
 
 [ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "Issue 868480 - Expose ARIA trees as tables in Mac accessibility"  
 
