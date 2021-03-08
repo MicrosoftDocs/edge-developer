@@ -3,7 +3,7 @@ description: Automate and test the WebView2 Control using Microsoft Edge Driver
 title: Automating and Testing WebView2 with Microsoft Edge Driver
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/25/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -58,7 +58,7 @@ At this point you should have WebView2 Runtime installed, built a WebView2 proje
     
 1.  Now add **Selenium** to the project.  Install Selenium using the **Selenium.WebDriver NuGet package**.  
     
-    To download the **Selenium.WebDriver NuGet package**, in **Visual Studio**, hover over **Project**, and choose **Manage NuGet Package**.  The following screen should appear.  
+    To download the **Selenium.WebDriver NuGet package**, in **Visual Studio**, hover on **Project**, and choose **Manage NuGet Package**.  The following screen should appear.  
     
     :::image type="complex" source="../media/webdriver/download-nuget.png" alt-text="Download NuGet package" lightbox="../media/webdriver/download-nuget.png":::
        Download NuGet package  

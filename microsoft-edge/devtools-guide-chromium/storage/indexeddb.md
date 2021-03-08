@@ -1,9 +1,9 @@
 ---
 description: How to view and change IndexedDB data with the Application panel and Snippets.
-title: View And Change IndexedDB Data With Microsoft Edge DevTools
+title: View and change IndexedDB data with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020 
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -79,7 +79,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
     
 ## Refresh IndexedDB data  
 
-IndexedDB values in the **Application** tool do not update in real-time.  Choose **Refresh** \(![Refresh][ImageReloadIcon]\) when viewing an object store to refresh the data, or view a database and choose **Refresh database** to refresh all data.  
+IndexedDB values in the **Application** tool do not update in real-time.  Choose **Refresh** \(![Refresh][ImageRefreshIcon]\) when viewing an object store to refresh the data, or view a database and choose **Refresh database** to refresh all data.  
 
 :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="View a database" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
    View a database  
@@ -102,13 +102,13 @@ IndexedDB keys and values are not editable from the **Application** tool.  Since
 ### Delete an IndexedDB key-value pair  
 
 1.  [View an IndexedDB object store](#view-indexeddb-data).  
-1.  Select the key-value pair that you want to delete.  DevTools highlights it to indicate that it is selected.  
+1.  Choose the key-value pair that you want to delete.  DevTools highlights it to indicate that it is selected.  
     
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Select a key-value pair in order to delete it" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
-       Select a key-value pair in order to delete it  
+    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Choose a key-value pair in order to delete it" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
+       Choose a key-value pair in order to delete it  
     :::image-end:::  
     
-1.  Press the `Delete` key or choose **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
+1.  Select the `Delete` key or choose **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
     
     :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="How the object store looks after the key-value pair has been deleted" lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
        How the object store looks after the key-value pair has been deleted  
@@ -153,7 +153,7 @@ IndexedDB keys and values are not editable from the **Application** tool.  Since
 [ImageDatabaseIcon]: ../media/database-icon.msft.png  
 [ImageDeleteIcon]: ../media/delete-icon.msft.png  
 [ImageObjectStoreIcon]: ../media/object-store-icon.msft.png  
-[ImageReloadIcon]: ../media/reload-icon.msft.png  
+[ImageRefreshIcon]: ../media/reload-icon.msft.png  
 
 <!-- links -->  
 
