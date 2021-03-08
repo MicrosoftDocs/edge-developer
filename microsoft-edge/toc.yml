@@ -82,7 +82,7 @@
             - name: Accessibility
               items:
                 - name: Accessibility reference
-                  href: devtools-guide-chromium/accessibility/reference/index.md
+                  href: devtools-guide-chromium/accessibility/reference.md
                 - name: Navigate DevTools with assistive technology
                   href: devtools-guide-chromium/accessibility/navigation.md
                 - name: Track which element has focus
