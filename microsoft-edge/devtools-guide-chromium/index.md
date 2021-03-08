@@ -47,7 +47,9 @@ DevTools grew over a period of several years and we understand that they can be 
 
 The main toolbar offers you a few sections. These are in order from left to right.
 
-TODO: image
+:::image type="complex" source="../media/devtools-intro-menu-bar.msft.png" alt-text="Screenshot of the menu bar of developer tools with labels explaining thethe different sections. In order: Inspect Tool, Device Emulation tool, Tools tab group, JavaScript errors, Issues, Settings, Feedback, Customize and Close." lightbox="../media/devtools-intro-menu-bar.msft.png":::
+   Screenshot of the menu bar of developer tools with labels explaining thethe different sections. In order: Inspect Tool, Device Emulation tool, Tools tab group, JavaScript errors, Issues, Settings, Feedback, Customize and Close.  
+:::image-end:::  
 
 * The **Inspect Tool** allows you to select an element in the current page. Once activated you can move your mouse over different parts of the document to get detailed information about this element and a colour overlay showing you its dimensions, padding and margin.
 
