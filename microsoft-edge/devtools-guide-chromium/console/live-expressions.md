@@ -3,7 +3,7 @@ description: If you find yourself typing the same JavaScript expressions into th
 title: Watch JavaScript expression values in real-time with Live Expressions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021 
+ms.date: 03/08/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -29,7 +29,7 @@ If you find yourself typing the same JavaScript expression in the Console repeat
 ## Create a Live Expression  
 
 1.  [Open the Console][DevToolsConsoleReferenceOpenConsole].  
-1.  Choose **Create Live Expression** \(![Create Live Expression][ImageCreateLiveExpressionIcon]\).  The **Live Expression** text box appears.  
+1.  Choose **Create Live Expression** \(![Create Live Expression](../media/create-live-expression-icon.msft.png)\).  The **Live Expression** text box appears.  
     
     :::image type="complex" source="../media/console-create-live-expression.msft.png" alt-text="Typing document.activeElement into the Live Expression text box" lightbox="../media/console-create-live-expression.msft.png":::
        Typing `document.activeElement` into the **Live Expression** text box  
@@ -40,10 +40,6 @@ If you find yourself typing the same JavaScript expression in the Console repeat
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCreateLiveExpressionIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 
