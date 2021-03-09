@@ -31,7 +31,7 @@ There are two ways to call [CDP APIs](https://chromedevtools.github.io/devtools-
 To begin, create an `HTML file` to find your geolocation. 
 
 1. Create an `HTML` file, using Visual Studio Code or an IDE of your choice. Save the file with the filename `geolocater.html`
-2. Copy and paste the following code into `geolocater.html`
+1. Copy and paste the following code into `geolocater.html`
 
 ```HTML
 <!DOCTYPE html>
@@ -63,7 +63,8 @@ To begin, create an `HTML file` to find your geolocation.
 </script>
 </html>
 ```
-3. Open the file in Microsoft Edge. Select `Display Location` to display your latitude and longitude coordinates. You can verify the coordinates using [https://www.bing.com/maps][BingMaps].
+
+1. Open the file in Microsoft Edge. Select `Display Location` to display your latitude and longitude coordinates. You can verify the coordinates using [https://www.bing.com/maps][BingMaps].
 
 :::image type="complex" source="./media/geolocater-browser.PNG" alt-text="The geolocation coordinates of the user is displayed in the browser." lightbox="./media/geolocater-browser.PNG":::
    The geolocation coordinates of the user is displayed in the browser.   
@@ -75,13 +76,13 @@ To begin, create an `HTML file` to find your geolocation.
     * [Getting Started with WebView2 in Windows Forms][GetStartedWinForms]
     * [Getting Started with WebView2 in WPF][GetStartedWPF]
 
-2. Set the initial navigation of the WebView2 control to `geolocater.html`.  
+1. Set the initial navigation of the WebView2 control to `geolocater.html`.  
 
 ```c#
 webView.CoreWebView2.Navigate(@"C:\{PATH TO FILE}\geolocater.html");
 ```
 
-3. Verify that `geolocator.html` displays in a WebView2 control. 
+1. Verify that `geolocator.html` displays in a WebView2 control. 
  
 :::image type="complex" source="./media/initial-geolocate.PNG" alt-text="The HTML is displayed in a WebView2 control." lightbox="./media/initial-geolocate.PNG":::
    The HTML is displayed in a WebView2 control.   
@@ -105,7 +106,8 @@ The `Microsoft.Web.WebView2.DevToolsProtocolExtension` is distributed via NuGet.
 
 ### Step 4: Use DevTools Protocol Helper
 
-1. Import the DevToolsProtocolExtension and CoreWebView2 namespaces
+1. Import the DevToolsProtocolExtension and CoreWebView2 namespaces.
+
 ```c#
 using Microsoft.Web.WebView2.Core;
 using Microsoft.Web.WebView2.Core.DevToolsProtocolExtension;
@@ -166,7 +168,7 @@ To file a CDP bug or issue, perform the following steps.
 [bugreport]: https://bugs.chromium.org/p/chromium/issues/entry?components=Platform%3EDevTools%3EPlatform "Bug report"  
 [WVFeedbackRepo]: https://github.com/MicrosoftEdge/WebView2Feedback "WebView2 Feedback GitHub Repo"
 [BingMaps]: https://www.bing.com/maps "Bing"
-[GetStartedWinForms]: https://docs.microsoft.com/en-us/microsoft-edge/webview2/gettingstarted/winforms "Getting started with WebView2 in Windows Forms"
-[GetStartedWPF]: https://docs.microsoft.com/en-us/microsoft-edge/webview2/gettingstarted/wpf "Getting started with WebView2 in WPF"
-[setGeoLocationOverrideAsyncURL]: http://docs.microsoft.com "Microsoft Docs"
+[GetStartedWinForms]: https://docs.microsoft.com/microsoft-edge/webview2/gettingstarted/winforms "Getting started with WebView2 in Windows Forms"
+[GetStartedWPF]: https://docs.microsoft.com/microsoft-edge/webview2/gettingstarted/wpf "Getting started with WebView2 in WPF"
+[setGeoLocationOverrideAsyncURL]: https://docs.microsoft.com "Microsoft Docs"
 [WV2CodeSamples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 code samples"
