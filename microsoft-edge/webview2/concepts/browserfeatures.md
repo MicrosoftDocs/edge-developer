@@ -39,7 +39,7 @@ The following list displays the WebViews features that differ from the new Micro
 | Autofill for Payments | This feature is turned off. |  
 | Browser Task Manager | This feature is turned off. |  
 | Continue-where-I-left-off prompt | This feature is turned off. |  
-| Downloads | This feature allows you to customize the download UI to manipulate downloads, such as block, redirect, save, pause, and so on.  For more information, navigate to [download api][Webview2ReferenceDownloadApi]. |  
+| Downloads | This feature allows you to customize the download UI to manipulate downloads, such as block, redirect, save, pause, and so on.  For more information, navigate to <!--[download api][Webview2ReferenceDownloadApi]-->. |  
 | Family Safety | This feature is turned off. |  
 | Hotkeys | The following shortcuts aren't turned off:  `Ctrl`+`F` and `Ctrl`+`S` |  
 | Immersive Reader | This feature is dependent on the browser UI for control and triggering.  This feature is turned off. |  
@@ -75,4 +75,4 @@ The following built-in Microsoft Edge and Google Chrome webpages aren't availabl
 
 <!-- links -->  
 
-[Webview2ReferenceDownloadApi]: download-api.md "download api | Microsoft Docs"  
+<!--[Webview2ReferenceDownloadApi]: download-api.md "download api | Microsoft Docs"  -->  
