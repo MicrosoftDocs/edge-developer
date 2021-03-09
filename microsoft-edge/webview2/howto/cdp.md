@@ -15,8 +15,8 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, I
 The [Chromium DevTools Protocol (CDP)](https://chromedevtools.github.io/devtools-protocol/) is a set of APIs built to instrument, inspect, debug, and profile chromium-based browsers. They provide the foundation for the Microsoft Edge (Chromium) DevTools. We recommend using the [Chromium DevTools Protocol (CDP)](https://chromedevtools.github.io/devtools-protocol/) for features that are not implemented in the WebView2 platform. To find CDP functionality, search the official [CDP documentation](https://chromedevtools.github.io/devtools-protocol/).
 
 There are two ways to call [CDP APIs](https://chromedevtools.github.io/devtools-protocol/):
-* .NET - Use [DevToolsProtocolHelper](https://int.nugettest.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension/) NuGet package.
-* Win32, C/C++, .NET - Call [CallDevToolsProtocolAsync](https://docs.microsoft.com/microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2#calldevtoolsprotocolmethodasync) (.NET) or [CallDevToolsProtocolMethod](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/0-9-538/icorewebview2#calldevtoolsprotocolmethod).
+* Use [DevToolsProtocolHelper](https://int.nugettest.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension/) NuGet package (.NET).
+* Call [CallDevToolsProtocolAsync](https://docs.microsoft.com/microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2#calldevtoolsprotocolmethodasync) (.NET) or [CallDevToolsProtocolMethod](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/0-9-538/icorewebview2#calldevtoolsprotocolmethod) (Win32 C/C++).
 
 > [!NOTE]
 > The Microsoft Edge WebView2 team does not maintain or support the Chromium DevTools Protocol. The Chromium DevTools Protocol is maintained by the open source Chromium project. 
@@ -25,13 +25,13 @@ There are two ways to call [CDP APIs](https://chromedevtools.github.io/devtools-
 
 ## Use DevToolsProtocolHelper
 
-[DevToolsProtocolHelper](https://int.nugettest.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension/) is a NuGet package created by the WebView2 team that allows developers to easily access CDP functions. As an example, the following tutorial describes how to use the geolocation functionality in CDP in your WebView2 control. You may follow a similar pattern to use other functionality in the CDP.  
+[DevToolsProtocolHelper](https://int.nugettest.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension/) is a NuGet package created by the WebView2 team that allows developers to easily access CDP functions. As an example, the following tutorial describes how to use the geolocation functionality in CDP in your WebView2 control. You may follow a similar pattern to use other CDP funtionality.  
 
 ### Step 1: Create a webpage to find your geoLocation
 To begin, create an `HTML file` to find your geolocation. 
 
 1. Create an `HTML` file, using Visual Studio Code or an IDE of your choice. Save the file with the filename `geolocater.html`
-1. Copy and paste the following code into `geolocater.html`
+1. Copy and paste the following code into `geolocater.html`. 
 
 ```HTML
 <!DOCTYPE html>
@@ -144,7 +144,7 @@ async void InitializeAsync()
 }
 ```
 
-1. Run the application, and select `Display Location` to show the coordinates of France. 
+1. Run the application, and select `Display Location` to show the coordinates of Paris, France. 
 
 :::image type="complex" source="./media/finallocation-cdp.PNG" alt-text="The HTML file is displayed in a WebView2 control with the coordinates for Paris." lightbox="./media/finallocation-cdp.PNG":::
    The HTML file is displayed in a WebView2 control with the coordinates for Paris.  
