@@ -12,34 +12,26 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, I
 
 # Use Chromium DevTools Protocol in WebView2
 
-The [Chromium DevTools Protocol (CDP)](https://chromedevtools.github.io/devtools-protocol/) is a set of APIs built to instrument, inspect, debug, and profile chromium-based browsers. They provide the foundation for the Microsoft Edge (Chromium) DevTools.
-
-> [!CAUTION]
-> The Microsoft Edge WebView2 team does not maintain or support Chromium DevTools Protocol. The Chromium DevTools Protocol is maintained by the open source Chromium project. 
-
-
-The Microsoft Edge WebView2 team recommends using [Chromium DevTools Protocol (CDP)](https://chromedevtools.github.io/devtools-protocol/) for features not implemented in the WebView2 platform. To find relevant CDP functions, search the official [CDP documentation](https://chromedevtools.github.io/devtools-protocol/).
-
-> [!NOTE] 
-> If there is functionality you would like to add in the WebView2 platform, also let us know in the [WebView2 feedback repo](https://github.com/MicrosoftEdge/WebView2Feedback).
+The [Chromium DevTools Protocol (CDP)](https://chromedevtools.github.io/devtools-protocol/) is a set of APIs built to instrument, inspect, debug, and profile chromium-based browsers. They provide the foundation for the Microsoft Edge (Chromium) DevTools. We recommend using the [Chromium DevTools Protocol (CDP)](https://chromedevtools.github.io/devtools-protocol/) for features that are not implemented in the WebView2 platform. To find CDP functionality, search the official [CDP documentation](https://chromedevtools.github.io/devtools-protocol/).
 
 There are two ways to call [CDP APIs](https://chromedevtools.github.io/devtools-protocol/):
-1. Use [DevToolsProtocolHelper](https://int.nugettest.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension/) NuGet package
-2. Call [CallDevToolsProtocolAsync](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2#calldevtoolsprotocolmethodasync) (.NET) or [CallDevToolsProtocolMethod](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/0-9-538/icorewebview2#calldevtoolsprotocolmethod) (Win 32 C/C++)
+* .NET - Use [DevToolsProtocolHelper](https://int.nugettest.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension/) NuGet package.
+* Win32, C/C++, .NET - Call [CallDevToolsProtocolAsync](https://docs.microsoft.com/microsoft-edge/webview2/reference/dotnet/0-9-538/microsoft-web-webview2-core-corewebview2#calldevtoolsprotocolmethodasync) (.NET) or [CallDevToolsProtocolMethod](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/0-9-538/icorewebview2#calldevtoolsprotocolmethod).
 
+> [!NOTE]
+> The Microsoft Edge WebView2 team does not maintain or support the Chromium DevTools Protocol. The Chromium DevTools Protocol is maintained by the open source Chromium project. 
+>
+> If you would like to suggest that we add a feature to the WebView2 platform, open and issue on the [WebView2 feedback repo][WVFeedbackRepo].
 
-> [!IMPORTANT] 
-> The DevToolsProtocol helper package is currently only available in .NET.
+## Use DevToolsProtocolHelper
 
-## DevToolsProtocol Helper
+[DevToolsProtocolHelper](https://int.nugettest.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension/) is a NuGet package created by the WebView2 team that allows developers to easily access CDP functions. As an example, the following tutorial describes how to use the geolocation functionality in CDP in your WebView2 control. You may follow a similar pattern to use other functionality in the CDP.  
 
-[DevToolsProtocolHelper](https://int.nugettest.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension/) is a NuGet package created by the WebView2 team that allows developers to easily access CDP functions. The following tutorial explains how you can take advantage of CDP's ability to override geolocation in WebView2 content.
+### Step 1: Create a webpage to find your geoLocation
+To begin, create an `HTML file` to find your geolocation. 
 
-### Step 1: Create GeoLocation Finder
-To begin, create an `HTML file` to find the user's geolocation. 
-
-1. Create an `HTML` file using Visual Studio Code or and IDE of your choice named `geolocater.html`
-2. Copy and Paste the following code snippet into `geolocater.html`
+1. Create an `HTML` file, using Visual Studio Code or an IDE of your choice. Save the file with the filename `geolocater.html`
+2. Copy and paste the following code into `geolocater.html`
 
 ```HTML
 <!DOCTYPE html>
@@ -48,62 +40,68 @@ To begin, create an `HTML file` to find the user's geolocation.
     <title>GeoLocation Finder</title>
 </head>
 <body>
-    <!-- Creates the skeleton of the HTML file -->
     <button id="display">Display Location</button>
     <div id="message"></div>
 </body>
 
 <script>
     const btn = document.querySelector('#display');
-    // Finds the user's location
+    // Find the user location.
     btn.addEventListener('click', function () {
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
     });
 
-    // Updates the message to display the latitude/longitude coordinates
+    // Update message to display the latitude and longitude coordinates.
     function onSuccess(position) {
         const {latitude, longitude} = position.coords;
         message.textContent = `Your location: (${latitude},${longitude})`;
     }
 
-    // Handles error cases
     function onError() {
         message.textContent = `Operation Failed`;
     }
 </script>
 </html>
 ```
-3. Run the file in the Microsoft Edge browser. When Clicking the `Display Location` button, your latitude and longitude coordinates will appear. You can verify your coordinates on bing.com/maps.
+3. Open the file in Microsoft Edge. Select `Display Location` to display your latitude and longitude coordinates. You can verify the coordinates using [https://www.bing.com/maps][BingMaps].
 
-![alt-image](./media/geolocater-browser.PNG)
+:::image type="complex" source="./media/geolocater-browser.PNG" alt-text="The geolocation coordinates of the user is displayed in the browser." lightbox="./media/geolocater-browser.PNG":::
+   The geolocation coordinates of the user is displayed in the browser.   
+:::image-end:::
 
 ### Step 2: Display geolocater.html in a WebView2
 
-1. Follow either getting started guide to create a WebView2 Application. 
-    - Getting Started with WebView2 in Windows Forms
-    - Getting Started with WebView2 in WPF
+1. To create a WebView2 application, you can use either of the following getting started guides.  
+    * [Getting Started with WebView2 in Windows Forms][GetStartedWinForms]
+    * [Getting Started with WebView2 in WPF][GetStartedWPF]
 
-2. Set the initial Navigation to the local file path where `geolocater.html` is saved. 
+2. Set the initial navigation of the WebView2 control to `geolocater.html`.  
+
 ```c#
 webView.CoreWebView2.Navigate(@"C:\{PATH TO FILE}\geolocater.html");
 ```
-![alt-image](./media/initial-geolocate.PNG)
 
-### Step 3: Install DevToolsProtocolHelper
+3. Verify that `geolocator.html` displays in a WebView2 control. 
+ 
+:::image type="complex" source="./media/initial-geolocate.PNG" alt-text="The HTML is displayed in a WebView2 control." lightbox="./media/initial-geolocate.PNG":::
+   The HTML is displayed in a WebView2 control.   
+:::image-end:::
+
+### Step 3: Install the DevToolsProtocolHelper NuGet package 
 
 The `Microsoft.Web.WebView2.DevToolsProtocolExtension` is distributed via NuGet. To install the package:
 
-1. Open Visual Studio
-2. Select Project > Manage NuGetPackages > Browse. Search for `Microsoft.Web.WebView2.DevToolsProtocolExtension`
-> [!NOTE] 
-> Ensure you have selected `Include pre-release`
-
-3. Select `Install`
+1. Open Visual Studio.
+1. Select **Project** > **Manage NuGet Packages** > **Browse**. 
+1. Select **Include pre-release**, and then search for **Microsoft.Web.WebView2.DevToolsProtocolExtension**.
+1. Select **Install**.
 
 > [!NOTE] 
-> Ensure you also have downloaded the WebView2 Nuget Package `Microsoft.Web.WebView2`. 
+> Ensure you also have the WebView2 NuGet Package called `Microsoft.Web.WebView2` installed. 
 
-![alt-image](./media/cdpnuget.PNG)
+:::image type="complex" source="./media/cdpnuget.PNG" alt-text="NuGet package manager showing the DevToolsProtocolExtension" lightbox="./media/cdpnuget.PNG":::
+   NuGet package manager showing the DevToolsProtocolExtension  
+:::image-end:::
 
 ### Step 4: Use DevTools Protocol Helper
 
@@ -113,17 +111,7 @@ using Microsoft.Web.WebView2.Core;
 using Microsoft.Web.WebView2.Core.DevToolsProtocolExtension;
 ```
 
-2. Instantiate the DevToolsProtocolHelper object
-```c#
-async void InitializeAsync()
-{
-    await webView.EnsureCoreWebView2Async(null);
-    DevToolsProtocolHelper helper = webView.CoreWebView2.GetDevToolsProtocolHelper(); 
-
-}
-```
-
-3. Verify that the WebView navigates to geolocater.html
+1. Instantiate the DevToolsProtocolHelper object, and navigate to geolocater.html.
 
 ```c#
 async void InitializeAsync()
@@ -132,11 +120,10 @@ async void InitializeAsync()
     DevToolsProtocolHelper helper = webView.CoreWebView2.GetDevToolsProtocolHelper(); 
 
     webView.CoreWebView2.Navigate(@"C:\{PATH TO FILE}\geolocater.html");
-
 }
 ```
 
-4. Call CDP's [setGeoLocationOverrideAsync]() function, filling in parameters detailed in the CDP documentation.
+1. Make a call to the CDP [setGeoLocationOverrideAsync][setGeoLocationOverrideAsyncURL] function.
 
 ```c#
 async void InitializeAsync()
@@ -146,31 +133,40 @@ async void InitializeAsync()
 
     webView.CoreWebView2.Navigate(@"C:\{PATH TO FILE}\geolocater.html");
     
-    //Latitude and Longitude are for Paris, France.
-    double latitude = 48.857024082572565;  //Set any latitude
-    double longitude = 2.3161581601457386;  //Set any longitude
+    // Latitude and longitude for Paris, France.
+    double latitude = 48.857024082572565;  
+    double longitude = 2.3161581601457386;  
     double accuracy = 1;
     await helper.Emulation.SetGeolocationOverrideAsync(latitude, longitude, accuracy);
     
 }
 ```
-5. Run the Application. When Selecting the `Display Location` button, the new latitude and longitude will appear. 
 
-![alt-image](./media/finallocation-cdp.PNG)
+1. Run the application, and select `Display Location` to show the coordinates of France. 
 
+:::image type="complex" source="./media/finallocation-cdp.PNG" alt-text="The HTML file is displayed in a WebView2 control with the coordinates for Paris." lightbox="./media/finallocation-cdp.PNG":::
+   The HTML file is displayed in a WebView2 control with the coordinates for Paris.  
+:::image-end:::
 
-## Filing a bug with CDP
+## Filing a CDP bug  
 
-> [!CAUTION]
-> The Microsoft Edge WebView2 team does not maintain or support Chromium DevTools Protocol. The Chromium DevTools Protocol is maintained by the open source Chromium project. 
+To file a CDP bug or issue, perform the following steps.
 
-For bugs or issues with CDP:
-
-1. Let the Microsoft Edge WebView2 team know in the [WebView2 Feedback repo]()
-2. File a [bug report](https://bugs.chromium.org/p/chromium/issues/entry?components=Platform%3EDevTools%3EPlatform)
-
+1. Open an issue on the [WebView2 Feedback repo][WVFeedbackRepo]
+1. File a [bug report][bugreport]
 
 
+## See Also
+
+*    [WebView2 Code samples][WV2CodeSamples]
 
 
- 
+ <!-- links -->  
+
+[bugreport]: https://bugs.chromium.org/p/chromium/issues/entry?components=Platform%3EDevTools%3EPlatform "Bug report"  
+[WVFeedbackRepo]: https://github.com/MicrosoftEdge/WebView2Feedback "WebView2 Feedback GitHub Repo"
+[BingMaps]: https://www.bing.com/maps "Bing"
+[GetStartedWinForms]: https://docs.microsoft.com/en-us/microsoft-edge/webview2/gettingstarted/winforms "Getting started with WebView2 in Windows Forms"
+[GetStartedWPF]: https://docs.microsoft.com/en-us/microsoft-edge/webview2/gettingstarted/wpf "Getting started with WebView2 in WPF"
+[setGeoLocationOverrideAsyncURL]: http://docs.microsoft.com "Microsoft Docs"
+[WV2CodeSamples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 code samples"
