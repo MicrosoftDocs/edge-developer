@@ -167,7 +167,7 @@ For right to left based languages, the overlay is displayed in the upper right c
 > The overlay will always be on top of the web content's Z order and will accept all user input without flowing it through to the web content.
 
 #### Working Around the Window Controls Overlay
-Your web content will need to be aware of the reserved area for the controls overlay and ensure that area isn't expecting user interaction. To accomplish this, you will need to query the browser for the bouding retangle and visibility of the controls overlay.  This information is provided to you through JavaScript APIs and CSS environment variables.
+Your web content will need to be aware of the reserved area for the controls overlay and ensure that area isn't expecting user interaction. To accomplish this, you will need to query the browser for the bounding retangle and visibility of the controls overlay.  This information is provided to you through JavaScript APIs and CSS environment variables.
 
 **JavaScript APIs**
 
@@ -180,7 +180,7 @@ A new object on the `window.navigator` property called `windowControlsOverlay` h
 >[!IMPORTANT]
 > For privacy reasons, the `windowControlsOverlay` will not be accessible to iframes within the web content
 
-Whenever the overlay is resized, a `gemoetrychange` event will be fired on the `navigator.windowControlsOverlay` object to notify the client that it should recalculate the content layout based on the new bounding rectangle of the overlay. 
+Whenever the overlay is resized, a `geometrychange` event will be fired on the `navigator.windowControlsOverlay` object to notify the client that it should recalculate the content layout based on the new bounding rectangle of the overlay. 
 
 **CSS Environment Variables**
 
@@ -191,13 +191,13 @@ In addition to the JavaScript API above, the bounding rectangle of the controls 
 * `titlebar-area-inset-right`
 
 #### Defining Draggable Regions in Web Content
-Users expect to be able to grab and drag the upper region of a window and developers will need to accomodate that expectation by declaring certain parts of their web content as draggable. 
-This is accomplished through a webkit prorprietary CSS property called `-webkit-app-region`. Effort to standardize the app-region property is ongoing with the CSS working group.  
+Users expect to be able to grab and drag the upper region of a window and developers will need to accommodate that expectation by declaring certain parts of their web content as draggable. 
+This is accomplished through a webkit proprietary CSS property called `-webkit-app-region`. Effort to standardize the app-region property is ongoing with the CSS working group.  
 
 >[!IMPORTANT]
 >To enable this experimental feature, you must start Microsoft Edge with the following command line parameter:
 >
-> **--enable-features=WebAppWindowControlsOverlay,WebAppManifestDisplayOverride** 
+> **--enable-features=WebAppWindowControlsOverlay** 
 
 #### Example
 
@@ -347,8 +347,8 @@ To provide feedback on Microsoft Edge web app experiments:
 
 *   Send your feedback using the **Send Feedback** menu item found in the `...` menu Or the keyboard shortcut `Alt-Shift-I` from within your application
 
-:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in Microsoft Edge DevTools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
-   The **Send Feedback** icon in Microsoft Edge DevTools  
+:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="The Send feedback to Microsoft menu item in PWA settings menu" lightbox="../media/sendPWAFeedback.png":::
+   The **Send feedback to Microsoft** menu item in PWA settings menu  
 :::image-end:::  
 
 
