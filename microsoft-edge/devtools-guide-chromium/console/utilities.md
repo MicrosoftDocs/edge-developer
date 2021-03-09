@@ -344,7 +344,7 @@ Returns an array containing the names of the properties belonging to the specifi
 For example, suppose your application defined the following object.  
 
 ```console
-var player1 =   
+var player1 = {"name": "Ted", "level": 42}
 ```  
 
 In the following code samples and figure, the result assumes `player1` was defined in the global namespace \(for simplicity\) prior to typing `keys(player1)` and `values(player1)` in the console.  
