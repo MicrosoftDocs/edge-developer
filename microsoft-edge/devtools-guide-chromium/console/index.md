@@ -1,6 +1,6 @@
 ---
-description: The main uses of the Microsoft Edge DevTools Console are logging messages and running JavaScript.
-title: Console overview
+description: An introduction to the Console tool inside the Microsoft Edge Developer Tools.
+title: Using the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/09/2021
@@ -147,14 +147,15 @@ Want to learn more? Check out [DOM Interaction in Console][DevtoolsConsoleDOM].
 
 If you want to go deep and learn all about the functionality of **Console** feel free to check the [Reference][DevtoolsConsoleReference], the [Utility methods][DevtoolsConsoleUtilities] and the [API docs][DevtoolsConsoleAPI].
 
+## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
-[DevtoolsConsoleReference]: ./reference
-[DevtoolsConsoleUtilities]: ./utilities
-[DevtoolsConsoleAPI]: ./api
+[DevtoolsConsoleReference]: ./reference.md
+[DevtoolsConsoleUtilities]: ./utilities.md
+[DevtoolsConsoleAPI]: ./api.md
 [DevToolsConsoleIntroLoggingDemos]: https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html
 [DevtoolsConsoleDebugJS]: ./console-debug-js.md
 [DevtoolsConsoleLog]: ./console-log.md
