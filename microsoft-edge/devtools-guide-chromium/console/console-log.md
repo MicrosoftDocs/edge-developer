@@ -1,6 +1,6 @@
 ---
 description: The main uses of the Microsoft Edge DevTools Console are logging messages and running JavaScript.
-title: Console overview
+title: Logging messages in the Console tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/19/2021
@@ -11,7 +11,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Logging in the Console tool
 
-If you want to put some information to the console there are a lot of methods available to you. You can see all available ones in the [API reference][DevToolsConsoleAPI] but here are the most important ones.
+Ever since browsers started offering developer tools, **Console** has become a favorite of developers. The reason is simple: in most programming courses we are taught to put out some kind of print command where we want to gain insights what is happening. In JavaScript and before we had DevTools, this was either using an `alert()` or a `document.write()` statement, and neither were a satisfying experience.
+
+If you want to log some information in **Console** there are a lot of methods available to you. You can see all available ones in the [API reference][DevToolsConsoleAPI] but here are the most important ones.
 
 ```JavaScript
 // prints the text to the console as  a log message
@@ -24,7 +26,7 @@ console.error('This is an error')
 console.warn('This is a warning') 
 ```
 
-If you try these out in the Console yourself via copy + paste or navigate to the [logging examples demo][DevtoolsConsoleLoggingDemo] you can see that `log()` and `info()` seemingly do the same thing, whilst `error()` and `warn()` show an icon next to the message and a way to inspect the [stack trace][WikiStackTrace] of this message.
+If you try these out in **Console** yourself by copying or by navigating to the [logging examples demo][DevtoolsConsoleLoggingDemo] you can see that `log()` and `info()` seemingly do the same thing, whilst `error()` and `warn()` show an icon next to the message and a way to inspect the [stack trace][WikiStackTrace] of this message.
 
 :::image type="complex" source="../media/console-intro-different-logging-methods.msft.png" alt-text="Console showing the messages caused by the different logging APIs" lightbox="../media/console-intro-different-logging-methods.msft.png":::
    Console showing the messages caused by the different logging APIs 
@@ -34,7 +36,7 @@ It is, however, still a good idea to use `info()` and `log()` for different logg
 
 ## Logging different types
 
-Instead of logging text you can send any valid JavaScript or DOM references to the **Console**. The beauty there is that the console recognizes the type of what you send to it and gives you the best possible representation.
+Instead of logging text you can send any valid JavaScript or DOM references to the **Console**. The beauty there is that **Console** recognizes the type of what you send to it and gives you the best possible representation.
 
 ```JavaScript
 let x = 2;
@@ -196,7 +198,7 @@ console.table(contentElements,['nodeName', 'innerText', 'offsetHeight'])
 
 <!-- links -->  
 
-[DevtoolsFilteringConsoles]: ./filtering-console.md
+[DevtoolsFilteringConsole]: ./filtering-console.md
 [DevtoolsConsoleLoggingDemo]: https://microsoftedge.github.io/DevToolsSamples/console/logging-examples.html
 [DevtoolsConsoleTypesDemo]: https://microsoftedge.github.io/DevToolsSamples/console/logging-types.html
 [DevtoolsConsoleSpecifiersDemo]: https://microsoftedge.github.io/DevToolsSamples/console/logging-with-specifiers.html

@@ -19,8 +19,6 @@ The **Console** tool of the DevTools helps developers with several tasks. You ca
 * Try out JavaScript expressions live in a [REPL][WikiREPLoop] fashion 
 * Interact with the web project in the browser using JavaScript
 
-Ever since browsers started offering developer tools, the **Console** has become a favorite of developers. The reason is simple: in most programming courses we are taught to put out some kind of print command where we want to gain insights what is happening. In JavaScript and before we had DevTools, this was either using an `alert()` or a `document.write()` statement, and neither were a satisfying experience.
-
 The big success of the **Console** also made it one of the few tools in DevTools that can be open in several places. It could be a part of the upper pane and also live in the bottom drawer. It is a great companion tool to have open with others as it is a powerful way to try out script functionality and inspect the current document from a scripting angle.
 
 :::row:::
