@@ -1,9 +1,9 @@
 ---
 description: The main uses of the Microsoft Edge DevTools Console are logging messages and running JavaScript.
-title: Console Overview
+title: Console overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,15 +22,15 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Console Overview  
+# Console overview  
 
   
 
-This page explains how the Microsoft Edge DevTools Console makes it easier to develop web pages.  The Console has 2 main uses: [viewing logged messages](#viewing-logged-messages) and [running JavaScript](#running-javascript).  
+This page explains how the Microsoft Edge DevTools Console makes it easier to develop web pages.  The **Console** has 2 main uses: [viewing logged messages](#viewing-logged-messages) and [running JavaScript](#running-javascript).  
 
 ## Viewing logged messages  
 
-Web developers often log messages to the Console to make sure that their JavaScript is working as expected.  To log a message, you insert an expression like `console.log('Hello, Console!')` into your JavaScript.  When the browser runs your JavaScript and sees an expression like that, it logs the message to the Console.  
+Web developers often log messages to the Console to make sure that their JavaScript is working as expected.  To log a message, you insert an expression like `console.log('Hello, Console!')` into your JavaScript.  When the browser runs your JavaScript and processes an expression like it, the browser logs the message to the **Console**.  
 
 :::row:::
    :::column span="":::
@@ -68,7 +68,7 @@ Web developers often log messages to the Console to make sure that their JavaScr
       In the following figure, the **Console** displays the results of loading the page and waiting 3 seconds.  
       
       :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="The Console panel" lightbox="../media/console-console-demo.msft.png":::
-         The **Console** panel  
+         The **Console** tool  
       :::image-end:::  
       
       Try to determine which lines of code caused the browser to log the messages.  
@@ -80,7 +80,7 @@ Web developers log messages for the following 2 general reasons.
 *   Making sure that code is running in the right order.  
 *   Inspecting the values of variables at a certain moment in time.  
 
-See [Get Started With Logging Messages][DevtoolsConsoleLoggingMessages] to get hands-on experience with logging.  See the [Console API Reference][DevToolsConsoleAPI] to browse the full list of `console` methods.  The main difference between the methods is how the data being logged is displayed.  
+To get hands-on experience with logging, navigate to [Get Started With Logging Messages][DevtoolsConsoleLoggingMessages].  To browse the full list of `console` methods, navigate to the [Console API Reference][DevToolsConsoleAPI].  The main difference between the methods is how the data being logged is displayed.  
 
 ## Running JavaScript  
 
@@ -90,8 +90,8 @@ The **Console** is also a [REPL][WikiREPLoop].  You may run JavaScript in the **
    :::column span="":::
       In the following figure, the **Console** is shown next to the DevTools homepage.  
       
-      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="The Console panel next to the DevTools homepage" lightbox="../media/devtools-console-empty.msft.png":::
-         The **Console** panel next to the DevTools homepage  
+      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="The Console tool next to the DevTools homepage" lightbox="../media/devtools-console-empty.msft.png":::
+         The **Console** tool next to the DevTools homepage  
       :::image-end:::  
    :::column-end:::
    :::column span="":::

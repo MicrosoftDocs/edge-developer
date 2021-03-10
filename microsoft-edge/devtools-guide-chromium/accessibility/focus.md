@@ -1,9 +1,9 @@
 ---
 description: Open the Console, create a Live Expression, and set the expression to document.activeElement.
-title: Track Which Element Has Focus
+title: Track which element has focus
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,7 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Track Which Element Has Focus  
+# Track which element has focus  
 
 Suppose that you are testing the keyboard navigation accessibility of a page.  When navigating the page with the `Tab` key, the focus ring sometimes disappears because the element that has focus is hidden.  
 
@@ -36,15 +36,15 @@ Complete the following actions to track the focused element in DevTools.
     :::image-end:::  
     
 1.  Type `document.activeElement`.  
-1.  Click outside of the **Live Expression** UI to save.  
+1.  Choose outside of the **Live Expression** UI to save.  
     
-The value that you see below `document.activeElement` is the result of the expression.  
+The value displayed below `document.activeElement` is the result of the expression.  
 
 Since that expression always represents the focused element, you now have a way to always keep track of which element has focus.  
 
-*   Hover over the result to highlight the focused element in the viewport.  
-*   Right-click the result and choose **Reveal in Elements panel** to show the element in the DOM Tree on the **Elements** panel.  
-*   Right-click the result and choose **Store as global variable** to create a variable reference to the node that you are able to use in the **Console**.  
+*   Hover on the result to highlight the focused element in the viewport.  
+*   Hover on the result, open the contextual menu \(right-click\), and choose **Reveal in Elements panel** to show the element in the DOM Tree on the **Elements** tool.  
+*   Hover on the result, open the contextual menu \(right-click\), and choose **Store as global variable** to create a variable reference to the node that you are able to use in the **Console**.  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

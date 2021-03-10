@@ -1,9 +1,9 @@
 ---
 description: If you find yourself typing the same JavaScript expressions into the Console repeatedly, try Live Expressions instead.
-title: Watch JavaScript Expression Values In Real-Time With Live Expressions
+title: Watch JavaScript expression values in real-time with Live Expressions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 02/12/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,9 +22,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Watch JavaScript Expression Values In Real-Time With Live Expressions  
+# Watch JavaScript expression values in real-time with Live Expressions  
 
-If you find yourself typing the same JavaScript expression in the Console repeatedly, you might find it easier to create a **Live Expression**.  With **Live Expressions** you type an expression once and then pin it to the top of your Console.  The value of the expression updates in near real-time.  
+If you find yourself typing the same JavaScript expression in the Console repeatedly, you may find it easier to create a **Live Expression**.  With **Live Expressions** you type an expression once and then pin it to the top of your Console.  The value of the expression updates in near real-time.  
 
 ## Create a Live Expression  
 
