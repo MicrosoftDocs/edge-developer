@@ -165,7 +165,8 @@ If you want to go deep and learn all about the functionality of **Console** feel
 
 [WikiStackTrace]: https://en.wikipedia.org/wiki/Stack_trace "Stack trace - Wikipedia"  
 [DevtoolsConsoleFilter]: ../microsoft-edge/devtools-guide-chromium/console/reference#filter-messages
-[DevToolsIssues]: ../issues
+[DevToolsIssues]: /microsoft-edge/devtools-guide-chromium/issues
+
 [DevToolsConsoleAPI]: ./api.md "Console API Reference | Microsoft Docs"  
 [DevtoolsConsoleLoggingMessages]: ./log.md "Get Started With Logging Messages In The Console | Microsoft Docs"  
 [DevtoolsConsoleRunningJavascript]: ./javascript.md "Get Started With Running JavaScript In The Console | Microsoft Docs"  

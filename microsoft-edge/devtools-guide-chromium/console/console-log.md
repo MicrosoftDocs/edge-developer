@@ -202,7 +202,9 @@ It is tempting to use the logging methods as your main means of debugging on the
 
 <!-- links -->  
 
-[DevtoolsFilteringConsole]: ./filtering-console.md
+[DevtoolsBreakpoints]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints.md
+[Live Expressions]: ./live-expressions.md
+[DevtoolsFilteringConsole]: ./console-filtering.md
 [DevtoolsConsoleLoggingDemo]: https://microsoftedge.github.io/DevToolsSamples/console/logging-examples.html
 [DevtoolsConsoleTypesDemo]: https://microsoftedge.github.io/DevToolsSamples/console/logging-types.html
 [DevtoolsConsoleSpecifiersDemo]: https://microsoftedge.github.io/DevToolsSamples/console/logging-with-specifiers.html
@@ -211,7 +213,7 @@ It is tempting to use the logging methods as your main means of debugging on the
 [WikiStackTrace]: https://en.wikipedia.org/wiki/Stack_trace "Stack trace - Wikipedia"  
 [DevtoolsConsoleErrorDemo]: https://microsoftedge.github.io/DevToolsSamples/console/error.html
 [DevtoolsConsoleFilter]: ../microsoft-edge/devtools-guide-chromium/console/reference#filter-messages
-[DevToolsIssues]: ../issues
+[DevToolsIssues]: /microsoft-edge/devtools-guide-chromium/issues
 [DevToolsConsoleAPI]: ./api.md "Console API Reference | Microsoft Docs"  
 [DevtoolsConsoleLoggingMessages]: ./log.md "Get Started With Logging Messages In The Console | Microsoft Docs"  
 [DevtoolsConsoleRunningJavascript]: ./javascript.md "Get Started With Running JavaScript In The Console | Microsoft Docs"  
