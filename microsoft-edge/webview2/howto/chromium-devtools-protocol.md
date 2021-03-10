@@ -11,7 +11,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, I
 ---
 # Use Chromium DevTools Protocol in WebView2  
 
-The [Chromium DevTools Protocol][GitHubChromedevtoolsDevtoolsProtocol] provides the Chrome Debugger Extension API that helps you instrument, inspect, debug, and profile Chromium-based browsers.  The Chromium DevTools Protocol is the foundation for the Microsoft Edge \(Chromium\) DevTools.  The WebView team recommends you use the Chromium DevTools Protocol for features that are not implemented in the WebView2 platform.  For more information about the Chromium DevTools Protocol functionality, navigate to Chromium DevTools Protocol.  
+The [Chromium DevTools Protocol][GitHubChromedevtoolsDevtoolsProtocol] provides the Chrome Debugger Extension API.  The Chrome Debugger Extension API helps you instrument, inspect, debug, and profile Chromium-based browsers.  The Chromium DevTools Protocol is the foundation for the Microsoft Edge \(Chromium\) DevTools.  The WebView team recommends you use the Chromium DevTools Protocol for features that aren't implemented in the WebView2 platform.  For more information about the Chromium DevTools Protocol functionality, navigate to Chromium DevTools Protocol.  
 
 To use the Chromium DevTools Protocol API in WebView2, use either of the following actions.  
 
