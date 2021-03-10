@@ -29,7 +29,7 @@ To use the Chromium DevTools Protocol API in WebView2, use either of the followi
 
 [Microsoft.Web.WebView2.DevToolsProtocolExtension][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] is a NuGet package created by the WebView2 team that allows you \(a developer\) to easily access Chromium DevTools Protocol features.  The following examples describe how to use the geolocation functionality in Chromium DevTools Protocol in your WebView2 control.  You may follow a similar pattern to use other Chromium DevTools Protocol features.  
 
-### Step 1: Create a webpage to find your geolocation  
+## Step 1: Create a webpage to find your geolocation  
 
 To create an `HTML file` to find your geolocation, complete following the actions.  
 
@@ -75,7 +75,7 @@ To create an `HTML file` to find your geolocation, complete following the action
        Display the geolocation coordinates of the user in Microsoft Edge  
     :::image-end:::  
     
-### Step 2: Display geolocater.html in a WebView2  
+## Step 2: Display geolocater.html in a WebView2  
 
 1.  To create a WebView2 app, use either of the following getting started guides.  
     *   [Getting Started with WebView2 in Windows Forms][Webview2GettingstartedWinforms]  
@@ -92,7 +92,7 @@ To create an `HTML file` to find your geolocation, complete following the action
        Display the `geolocater.html` file in your WebView2 control app  
     :::image-end:::  
     
-### Step 3: Install the DevToolsProtocolHelper NuGet package  
+## Step 3: Install the DevToolsProtocolHelper NuGet package  
 
 Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To install the package, complete the following actions.  
 
@@ -107,7 +107,7 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
    Ensure **Microsoft.Web.WebView2.DevToolsProtocolExtension** displays in the Visual Studio NuGet Package Manager  
 :::image-end:::  
 
-### Step 4: Use DevTools Protocol Helper  
+## Step 4: Use DevTools Protocol Helper  
 
 1.  Add the `DevToolsProtocolExtension` and `CoreWebView2` namespaces to your project.
     
