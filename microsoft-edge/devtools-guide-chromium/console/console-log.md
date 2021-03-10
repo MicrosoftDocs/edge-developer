@@ -32,11 +32,11 @@ If you try these out in **Console** yourself by copying or by navigating to the 
    Console showing the messages caused by the different logging APIs 
 :::image-end:::  
 
-It is, however, still a good idea to use `info()` and `log()` for different logging tasks as that allows you to [filter by type in the console][DevtoolsFilteringConsoles].
+It is, however, still a good idea to use `info()` and `log()` for different logging tasks as that allows you to [filter by type in the console][DevtoolsFilteringConsole].
 
 ## Logging different types
 
-Instead of logging text you can send any valid JavaScript or DOM references to the **Console**. The beauty there is that **Console** recognizes the type of what you send to it and gives you the best possible representation.
+Instead of logging text you can send any valid JavaScript or DOM references to **Console**. The beauty there is that **Console** recognizes the type of what you send to it and gives you the best possible representation.
 
 ```JavaScript
 let x = 2;
@@ -53,7 +53,7 @@ let w3techs = ['HTML', 'CSS', 'SVG', 'MathML'];
 console.log(w3techs);
 ```
 
-You can paste the code above into the **Console** or navigate to the [logging different types demo][DevtoolsConsoleTypesDemo] to see the results. Each of these are displayed in a different way and you can use the triangles to analyze each one in more detail. The curly braces `{}` around the variable `x` are a nice little trick to avoid having lots of log messages where you only get a value but you don't know where it came from.
+You can paste the code above into **Console** or navigate to the [logging different types demo][DevtoolsConsoleTypesDemo] to see the results. Each of these are displayed in a different way and you can use the triangles to toggle the information and analyze each one in more detail. The curly braces `{}` around the variable `x` are a nice little trick to avoid having lots of log messages where you only get a value but you don't know where it came from.
 
 :::row:::
    :::column span="":::
@@ -70,14 +70,14 @@ You can paste the code above into the **Console** or navigate to the [logging di
 
 ## Formatting and converting values with specifiers
 
-One special feature of all the logging methods is that you can use specifiers in your log message. These start with a percentage sign and allow you to log certain values in different formats and even convert them.
+A special feature of all the logging methods is that you can use specifiers in your log message. These start with a percentage sign and allow you to log certain values in different formats and even convert them.
 
 * `%s` logs as Strings
 * `%i` or `%d` logs as Integers
 * `%f` logs as a floating-point value
 * `%o` logs as an expandable DOM element
 * `%O` logs as an expandable JavaScript object
-* `%c` allows you to define a CSS style for a message
+* `%c` allows you to style you message with CSS
 
 ```JavaScript
 // logs "10x console developer"
@@ -94,7 +94,7 @@ console.log('%O', document.body);
 console.log('%cImportant message follows','color:red;font-size:40px');
 ```
 
-The first example shows that the order of replacement of specifiers is the parameter order following the string. You can paste the code above into the **Console** or navigate to the [Logging with specifiers demo][DevtoolsConsoleSpecifiersDemo] to see the results. When you expand the information logged you can see what a huge difference `%o` and `%O` can make.
+The first example shows that the order of replacement of specifiers is the parameter order following the string. You can paste the code above into **Console** or navigate to the [logging with specifiers demo][DevtoolsConsoleSpecifiersDemo] to see the results. When you expand the information logged you can see what a huge difference `%o` and `%O` can make.
 
 :::row:::
    :::column span="":::
@@ -103,8 +103,8 @@ The first example shows that the order of replacement of specifiers is the param
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/console-intro-logging-with-specifiers-expanded.msft.png" alt-text="Expanding the results shows the difference between the %O and %o specifier - the body is either displayed as an expandable DOM node or as a full list of all JavaScript properties" lightbox="../media/console-intro-logging-with-specifiers-expanded.msft.png":::
-        Expanding the results shows the difference between the %O and %o specifier - the body is either displayed as an expandable DOM node or as a full list of all JavaScript properties
+      :::image type="complex" source="../media/console-intro-logging-with-specifiers-expanded.msft.png" alt-text="Expanding the results shows the difference between the %O and %o specifier - the body is either displayed as an expandable DOM node or as a full list of all JavaScript properties on the document body" lightbox="../media/console-intro-logging-with-specifiers-expanded.msft.png":::
+        Expanding the results shows the difference between the `%O` and `%o` specifier - the body is either displayed as an expandable DOM node or as a full list of all JavaScript properties on the document body
       :::image-end:::  
    :::column-end:::
 :::row-end:::
@@ -136,7 +136,7 @@ for (tech in technologies) {
 }
 ``` 
 
-As shown in the second example the group names could also be generated. You can paste the code above into the **Console** or navigate to the [Logging with groups][DevtoolsConsoleGroupsDemo] to see the results. You can expand and collapse each of the sections. 
+As shown in the second example the group names could also be generated. You can paste the code above into **Console** or navigate to the [logging with groups demo][DevtoolsConsoleGroupsDemo] to see the results. You can expand and collapse each of the sections. 
 
 :::row:::
    :::column span="":::
@@ -177,7 +177,9 @@ console.table(bodyDimensions);
    Showing data with console.table can make it much easier to read
 :::image-end:::  
 
-If the data has named parameters, the `console.table()` method also allows for an Array of columns to show as a second parameter. This example shows how that can make things much more readable .
+The output of `console.table` has a table format not only when it is displayed in **Console**. For example you can copy a table and paste it into Excel, Word or any other products that support tabular data. 
+
+If the data has named parameters, the `console.table()` method also allows for an `Array` of columns to show as a second parameter. This example shows how that can make things much more readable .
 
 ```JavaScript
 // get all the h1, p and script elements 
@@ -190,7 +192,9 @@ console.table(contentElements,['nodeName', 'innerText', 'offsetHeight'])
 
 :::image type="complex" source="../media/console-intro-table-filtering.msft.png" alt-text="You can filter information that console.table should display by providing an array of properties to show as a second parameter" lightbox="../media/console-intro-table-filtering.msft.png":::
    You can filter information that console.table should display by providing an array of properties to show as a second parameter
-:::image-end:::  
+:::image-end:::
+
+It is tempting to use the logging methods as your main means of debugging on the web as they are simple to use. But it is worth while considering the impact any `console.log()` has. Live products should not use any logging that was used for debugging as it could leak inside information to people and in general the noise we create in **Console** is a lot to take in. Often you will find that using [Breakpoint Debugging][DevtoolsBreakpoints] or even [Live Expressions][DevtoolsLiveExpressions] may be a more effective way to get better results.
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
