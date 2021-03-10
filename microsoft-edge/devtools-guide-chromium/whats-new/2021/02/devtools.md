@@ -20,10 +20,10 @@ keywords: microsoft edge, web development, f12 tools, devtools
 <!-- Title: Focus Mode and DevTools tooltips  -->  
 <!-- Subtitle: Organize your favorite tools into groups and learn more about the wide array of tools and panes in the DevTools with tooltips  -->  
 
-Focus Mode allows you to group different tools to match your debugging scenarios.  The new **Action bar** is displayed on the left and includes some predefined groups.  The predefined groups include **Layout** and **Testing** that contain recommended tools.  You may customize each one by closing and adding new tabs.  The new DevTools Tooltips help you learn about all the different tools and panes in the DevTools.  Choose the Help \(`?`\) icon at the bottom of the **Action bar** to display \(or hide\) informative overlays in the DevTools.  To turn on the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] and choose the checkbox next to **Focus Mode and DevTools Tooltips**.  
+Focus Mode allows you to group different tools to match your debugging scenarios.  The new **Action Bar** displays on the left and includes some predefined groups that contain recommended tools.  The predefined groups include **Layout** and **Debugging**.  To customize each tool group, you may close tools or add new ones.  The new tooltips help you learn about all the different tools and panes in the DevTools.  Choose the Help \(`?`\) icon at the bottom of the **Action Bar** to display \(or hide\) informative overlays in the DevTools.  To turn on the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] and choose the checkbox next to **Focus Mode and DevTools Tooltips**.  
 
-:::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="Choose the Help icon in the Action bar to display Focus mode and tooltips" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
-   Choose the Help icon in the **Action bar** to display Focus mode and tooltips  
+:::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="Choose the Help icon in the Action Bar to display Focus mode and tooltips" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
+   Choose the Help icon in the **Action Bar** to display Focus mode and tooltips  
 :::image-end:::  
 
 ## Customize keyboard shortcuts in Settings  
@@ -52,18 +52,29 @@ For more information about customizing and editing shortcuts, navigate to [Custo
 <!-- Title: Edge Devtools for Visual Studio code extension update 1.1.4  -->  
 <!-- Subtitle: Latest changes including a favicon is displayed next to each of the instances and console messages from the browser are displayed in the console of Visual Studio Code.  -->  
 
-The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extension version 1.1.4 for Microsoft Visual Studio Code has the following changes since the previous release.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.4, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  
+The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extension version 1.1.4 for Microsoft Visual Studio Code now displays a favicon next to each of the DevTools instances.  Console messages from Microsoft Edge now display in the Integrated Terminal of Microsoft Visual Studio Code.
 
-*   A favicon is displayed next to each of the Devtools instances and console messages from the browser are now displayed in the console of Visual Studio Code.  For more information, navigate to [1.1.4 milestone][GithubMicrosoftVscodeEdgeDevtoolsMilestone3].  
-    
-You may file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools].  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2021/02/xxx.msft.png" alt-text="Display a message in Console in Microsoft Edge DevTools" lightbox="../../media/2021/02/xxx.msft.png":::
+         Display a message in Console in Microsoft Edge DevTools  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2021/02/xxx.msft.png" alt-text="Display the same message in the Integrated Terminal in Microsoft Visual Studio Code" lightbox="../../media/2021/02/xxx.msft.png":::
+         Display the same message in the Integrated Terminal in Microsoft Visual Studio Code  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+
+Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.4, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  You may file issues and contribute to the extension on the [vscode-edge-devtools][GithubMicrosoftVscodeEdgeDevtools] GitHub repo.  
 
 ## New CSS flexbox debugging tools  
 
 <!-- Title: ???  -->  
 <!-- Subtitle: ???  -->  
 
-DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` or `display: inline-flex` CSS style is applied to an HTML element, at the end of the line of a code for the element a `flex` icon is displayed in the **Elements** tool.  To display \(or hide\) a flex overlay on the webpage, choose the `flex` icon.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1166710][CR1166710] and [1175699][CR1175699].  
+DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` or `display: inline-flex` CSS style is applied to an HTML element, a `flex` icon displays next to that element in the **Elements** tool.  To display \(or hide\) a flex overlay on the webpage, choose the `flex` icon.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1166710][CR1166710] and [1175699][CR1175699].  
 
 :::row:::
    :::column span="":::
@@ -91,7 +102,7 @@ DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` 
 <!-- Title: Navigate the request initiator chain in the Network tool with the keyboard  -->  
 <!-- Subtitle: The Initiator pane may now be expanded or collapsed with the arrow keys.  -->  
 
-Previously, you were not able to expand \(or collapse\) the chain of requests using the arrow keys on the keyboard in the **Initiator** pane, unlike the DOM in the **Elements** tool.  For a focused network request, the the **Initiator** pane is located in the **Network** tool.  Starting in Microsoft Edge version 90, you are able to expand \(or collapse\) the chain of requests using the arrow keys on the keyboard in the **Initiator** pane, unlike the DOM in the **Elements** tool.  And the focused row is nowhighlighted.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1158276][CR1158276] and [1160637][CR1160637].  
+Previously, you were not able to expand \(or collapse\) the chain of requests using the arrow keys on the keyboard in the **Initiator** pane, unlike the DOM in the **Elements** tool.  The **Initiator** pane displays in the **Network** tool when a network request is chosen.  The **Initiator** pane displays the chain of requests that initiated the currently selected request.  In Microsoft Edge version 90, you may expand \(or collapse\) the chain of requests using the arrow keys on the keyboard in the **Initiator** pane.  The focused network request in the chain is also now highlighted.  To learn more about initiators in the **Network** tool, navigate to [Display initiators and dependencies][DevtoolsNetworkReferenceDisplayInitiatorsDependencies]  To review the history of this feature in the Chromium open-source project, navigate to Issues [1158276][CR1158276] and [1160637][CR1160637].  
 
 :::row:::
    :::column span="":::
@@ -111,7 +122,7 @@ Previously, you were not able to expand \(or collapse\) the chain of requests us
 <!-- Title: Console improvements make filtering more consistent  -->  
 <!-- Subtitle: The Log Levels dropdown is more clearly disabled when using filters in the Console sidebar.  -->  
 
-Previously, the **Log Levels** dropdown remained highlighted after you chose the filters in the **Console sidebar**.  Starting in Microsoft Edge version 90, if you choose the **Console sidebar** to filter messages, the **Log Levels** dropdown is not highlighted.  To learn more about filtering in the **Console**, navigate to [Filter Messages][DevtoolsConsoleReferenceFilterMessages].  
+While you filter with the [Console Sidebar][DevtoolsConsoleReferenceOpenConsoleSidebar], the filters in the [Log Levels][DevtoolsConsoleReferenceFilterByLogLevel] dropdown are not available.  Previously, the **Log Levels** dropdown highlighted when you hovered on it, even while a filter from the **Console Sidebar** was chosen.  In Microsoft Edge version 90, the **Log Levels** dropdown is more consistent and no longer highlights when you hover on it while a filter from the **Console Sidebar** is chosen.  To learn more about filtering in the **Console**, navigate to [Filter Messages][DevtoolsConsoleReferenceFilterMessages].  
 
 :::row:::
    :::column span="":::
@@ -132,7 +143,7 @@ Previously, the **Log Levels** dropdown remained highlighted after you chose the
 
 ### The Console now escapes double quote characters  
 
-Previously, the **Console** did not output valid double quote \(`"`\) characters in JavaScript strings.  Starting in Microsoft Edge version  90, the **Console** formats outputs JavaScript strings using escaped double quote \(`"`\) characters.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1178530][CR1178530].  
+Previously, the **Console** did not output valid double quote \(`"`\) characters in JavaScript strings.  Starting in Microsoft Edge version 90, the **Console** outputs JavaScript strings using escaped double quote \(`"`\) characters.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1178530][CR1178530].  
 
 :::image type="complex" source="../../media/2021/02/console-string-formatted-double-quotes.msft.png" alt-text="The Console outputs JavaScript strings using escaped double quote (&#0022;) characters" lightbox="../../media/2021/02/console-string-formatted-double-quotes.msft.png":::
    The **Console** outputs JavaScript strings using escaped double quote \(`"`\) characters  
@@ -140,7 +151,7 @@ Previously, the **Console** did not output valid double quote \(`"`\) characters
 
 ### Emulate the CSS color-gamut media feature  
 
-The [color-gamut][ChromestatusFeature5354410980933632] media query emulates the approximate range of colors that are supported by the browser and the output device.  The dropdown under **Emulate CSS media feature color-gamut** indicates the color spaces supported by the browser and device.  For example, if the `color-gamut: p3` media query is displayed, the user's device supports the Display-P3 color space.  
+The [color-gamut][ChromestatusFeature5354410980933632] media query emulates the approximate range of colors that are supported by the browser and the output device.  The dropdown under **Emulate CSS media feature color-gamut** contains color spaces that DevTools may emulate.  For example, to trigger a `color-gamut: p3` media query, choose **color-gamut: p3** from the dropdown.  
 
 To emulate the CSS color-gamut media feature, complete the following actions.  
 
@@ -149,7 +160,7 @@ To emulate the CSS color-gamut media feature, complete the following actions.
 1.  Run the **Show Rendering** command.  
 1.  Navigate to **Emulate CSS media feature color-gamut** and choose the `color-gamut: ...` option.  
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1073887][CR1073887].  
+To learn more about the `color-gamut` feature, navigate to [Color Display Quality: the 'color-gamut' feature][CsswgDraftsMediaqueries4ColorGamut].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1073887][CR1073887].  
 
 :::image type="complex" source="../../media/2021/02/rendering-css-color-gamut.msft.png" alt-text="Emulate the CSS color-gamut media feature" lightbox="../../media/2021/02/rendering-css-color-gamut.msft.png":::
    Emulate the CSS color-gamut media feature  
@@ -159,7 +170,7 @@ To review the history of this feature in the Chromium open-source project, navig
 
 #### PWA installability warning in the Console  
 
-The **Console** now displays a more detailed Progressive Web Apps \(PWA\) installability warning message with a link to [Improving Progressive Web App offline support detection][ChromeDeveloperBlogImprovedPwaOfflineDetection].  To review the history of this feature in the Chromium open-source project, navigate to Issues [965802][CR965802], [1146450][CR1146450], and [1169689][CR1169689]..  
+The **Console** now displays a more detailed [Progressive Web Apps (PWA)][ProgressiveWebAppsIndex] installability warning message with a link to [Improving Progressive Web App offline support detection][ChromeDeveloperBlogImprovedPwaOfflineDetection].  To review the history of this feature in the Chromium open-source project, navigate to Issues [965802][CR965802], [1146450][CR1146450], and [1169689][CR1169689].  
 
 :::image type="complex" source="../../media/2021/02/console-pwa-installability.msft.png" alt-text="PWA installability warning in Console tool" lightbox="../../media/2021/02/console-pwa-installability.msft.png":::
    PWA installability warning in **Console** tool  
@@ -187,15 +198,30 @@ To review the history of this feature in the Chromium open-source project, navig
 ### New Remote Address Space column in the Network tool  
 
 <!-- does not work in canary 90.0.813.0 -->  
-The new **Remote Address Space** column displays the network IP address space of each network resource.  To choose the new **Remote Address Space** column, navigate to the **Network** tool.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1128885][CR1128885].  
+The new **Remote Address Space** column displays the network IP address space of each network resource.  To display the new Remote Address Space column, complete the following actions.  
 
-<!-- image markdown -->  
-<!--image title:  New **Remote Address Space** column  -->  
-<!-- image markdown -->  
+1.  Navigate to the **Network** tool.  
+1.  In the Requests table, hover on the header row, and open the contextual menu \(right-click\).  To learn how to add or remove columns from the Requests table, navigate to [Add or remove columns][DevtoolsNetworkReferenceAddRemoveColumns].  
+1.  Choose **Remote Address Space**.  
+    
+The Requests table now displays a new column with the header named **Remote Address Space**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1128885][CR1128885].  
+
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png" alt-text="In the contextual menu, choose Remote Address Space" lightbox="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png":::
+         In the contextual menu, choose the **Remote Address Space**  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="The Requests table now displays the Remote Address Space column" lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
+         The Requests table now displays the **Remote Address Space** column
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ### Display allowed and disallowed features in the Frame details view  
 
-The Frame details view now displays a list of allowed and disallowed browser features controlled by the Permissions Policy.  [Permissions Policy][GithubW3cWebappsecPermissionsPolicyBlobMainPermissionsPolicyExplainer] is a web platform API allows a webpage to allow \(or block\) the use of browser features in an individual frame or in iframes that it embeds.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1158827][CR1158827].  
+The Frame details view now displays a list of allowed and disallowed browser features controlled by the [Permissions Policy][GithubW3cWebappsecPermissionsPolicyBlobMainPermissionsPolicyExplainer].  Permissions Policy is a web platform API allows a webpage to allow \(or block\) the use of browser features in an individual frame or in iframes that it embeds.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1158827][CR1158827].  
 
 :::image type="complex" source="../../media/2021/02/application-frames-permissions-policy.msft.png" alt-text="Allowed and disallowed features based on the Permission Policy" lightbox="../../media/2021/02/application-frames-permissions-policy.msft.png":::
    Allowed and disallowed features based on the Permission Policy  
@@ -211,7 +237,7 @@ The **Cookies** pane in the **Application** tool now displays the `SameParty` at
 
 ### fn.displayName property in the Console tool is now deprecated  
 
-Previously, the `fn.displayName` property allowed you \(a developer\) to control debug names for functions to display in `error.stack` and in DevTools stack traces.  Starting in Microsoft Edge version 90, the `fn.displayName` property is now deprecated, and replaced by the `fn.name` property.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1177685][CR1177685].  
+Previously, the `fn.displayName` property allowed you \(a developer\) to control debug names for functions to display in `error.stack` and in DevTools stack traces.  Starting in Microsoft Edge version 90, the `fn.displayName` property is now deprecated, and replaced by the `fn.name` property.  To learn more about `fn.name`, navigate to [Function.name][MdnJavascriptReferenceGlobalObjectsFunctionName].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1177685][CR1177685].  
 
 :::row:::
    :::column span="":::
@@ -238,7 +264,12 @@ Previously, the `fn.displayName` property allowed you \(a developer\) to control
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-This experiment provides a new and improved **full accessibility tree view** in the **Elements** tool.  Previously, only the [Accessibility][DevtoolsAccessibilityReferenceTheAccessibilityPane] pane provided a display of the nodes.  The **Accessibility** pane displays the direct ancestor chain from the root node to the inspected node.  After you turn on this experiment, the new **full accessibility tree view** in the **Elements** tool displays a improved view of the nodes.  It makes the accessibility tree more useful and easier to explore and use.  After you turn on this experiment, to switch from the existing **DOM tree view** to the new **full accessibility tree view**, navigate to the **Elements** tool and choose the new **Switch to full accessibility tree view** bar.  To switch back to **DOM tree view**, navigate to the **Elements** tool and choose the new **Switch to DOM tree view** bar.  To turn on the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] and choose the checkbox next to **Enable full accessibility tree view in Elements pane**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [887173][CR887173].  
+This experiment provides a **full accessibility tree view** in the **Elements** tool.  The [Accessibility][DevtoolsAccessibilityReferenceTheAccessibilityPane] pane provides a partial accessibility tree view, that displays the direct ancestor chain from the root node to the inspected node.  After you turn on this experiment, choose one of the following buttons switch the display in the **Elements** tool for all elements on the webpage.  
+
+*   To display the full accessibility tree view , choose the **Switch to full accessibility tree view**.  
+*   To display the DOM tree view, choose the **Switch to DOM tree view**.  
+    
+To turn on the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] and choose the checkbox next to **Enable full accessibility tree view in Elements pane**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [887173][CR887173].  
 
 :::image type="complex" source="../../media/2021/02/elements-switch-to-accesibility-tree-view.msft.png" alt-text="Display the full accessibility tree view" lightbox="../../media/2021/02/elements-switch-to-accesibility-tree-view.msft.png":::
    Display the **full accessibility tree view**  
@@ -256,10 +287,16 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 [DevtoolsAccessibilityReferenceTheAccessibilityPane]: /microsoft-edge/devtools-guide-chromium/accessibility/reference#the-accessibility-pane "The Accessibility pane - Accessibility reference | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
+[DevtoolsConsoleReferenceFilterByLogLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "Filter by log level - Console reference | Microsoft Docs"  
 [DevtoolsConsoleReferenceFilterMessages]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-messages "Filter messages - Console Reference | Microsoft Docs"  
+[DevtoolsConsoleReferenceOpenConsoleSidebar]: /microsoft-edge/devtools-guide-chromium/console/reference#open-the-console-sidebar "Open the Console Sidebar - Console reference | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features/index#turn-on-experimental-features "Turn on experimental features - Experimental features | Microsoft Docs"  
+[DevtoolsNetworkReferenceAddRemoveColumns]: /microsoft-edge/devtools-guide-chromium/network/reference#add-or-remove-columns "Add or remove columns - Network Analysis reference | Microsoft Docs"  
+[DevtoolsNetworkReferenceDisplayInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#display-initiators-and-dependencies "Display initiators and dependencies - Network Analysis reference | Microsoft Docs"  
+
+[ProgressiveWebAppsIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Progressive Web Apps on Windows overview | Microsoft Docs"  
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
 
@@ -288,11 +325,15 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [CR1177685]: https://crbug.com/1177685 "Issue 1177685: Remove non-standard fn.displayName support | Chromium bugs"  
 [CR1178530]: https://crbug.com/1178530 "Issue 1178530: Console does not escape doublequotes when printing strings | Chromium bugs"  
 
-[GithubMicrosoftVscodeEdgeDevtoolsMilestone3]: https://github.com/microsoft/vscode-edge-devtools/milestone/3 "1.1.4 milestone | GitHub"  
+[CsswgDraftsMediaqueries4ColorGamut]: https://drafts.csswg.org/mediaqueries-4#color-gamut "Color Display Quality: the 'color-gamut' feature | CSS Working Group Editor Drafts"  
+
+[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
 
 [GithubPrivacycgFirstPartySets]: https://github.com/privacycg/first-party-sets "First-Party Sets | GitHub"  
 
 [GithubW3cWebappsecPermissionsPolicyBlobMainPermissionsPolicyExplainer]: https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md "Permissions Policy Explainer | GitHub"  
+
+[MdnJavascriptReferenceGlobalObjectsFunctionName]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/name "Function.name | MDN"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
