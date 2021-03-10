@@ -3,7 +3,7 @@ description: Learn how to use the Chrome DevTools Protocol in your WebView2 apps
 title: Use Chrome DevTools Protocol in WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/09/2021
+ms.date: 03/10/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -16,7 +16,7 @@ The [Chromium DevTools Protocol][GitHubChromedevtoolsDevtoolsProtocol] provides 
 To use the Chromium DevTools Protocol API in WebView2, use either of the following actions.  
 
 *   Install and use the [Microsoft.Web.WebView2.DevToolsProtocolExtension][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] NuGet package \(.NET\).  
-*   Run the one of the following methods.  
+*   Run one of the following methods.  
     *   [CallDevToolsProtocolAsync][DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString] \(.NET\)  
     *   [CallDevToolsProtocolMethod][Webview2ReferenceWin32Icorewebview2ViewWebview21077444Calldevtoolsprotocolmethod] \(Win32 C/C++\)  
     
@@ -34,7 +34,8 @@ To use the Chromium DevTools Protocol API in WebView2, use either of the followi
 To create an `HTML file` to find your geolocation, complete following the actions.  
 
 1.  Open Visual Studio Code \(or an IDE of your choice\).  
-1.  Create a new `.html` file > copy and paste the following code snippet in your new `.html` file.  
+1.  Create a new `.html` file.  
+1.  Copy and paste the following code snippet in your new `.html` file.  
     
     ```html
     <!DOCTYPE html>
@@ -68,7 +69,8 @@ To create an `HTML file` to find your geolocation, complete following the action
     ```  
     
 1.  Save the `.html` file with the filename `geolocater.html`.  
-1.  Open Microsoft Edge > open the `geolocater.html` file.  
+1.  Open Microsoft Edge.  
+1.  Open the `geolocater.html` file.  
 1.  To display your latitude and longitude coordinates, choose the **Display Location** button.  To verify and compare your geolocation, copy and paste your coordinates in [https://www.bing.com/maps][BingMaps].  
     
     :::image type="complex" source="./media/geolocater-browser.png" alt-text="Display the geolocation coordinates of the user in Microsoft Edge" lightbox="./media/geolocater-browser.png":::
@@ -97,7 +99,8 @@ To create an `HTML file` to find your geolocation, complete following the action
 Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To install the package, complete the following actions.  
 
 1.  Open Visual Studio.  
-1.  Choose **Project** > **Manage NuGet Packages** > **Browse** > **Include pre-release**.
+1.  Choose **Project** > **Manage NuGet Packages** > **Browse**.  
+1.  Choose the checkbox next to **Include pre-release**.
 1.  Type `Microsoft.Web.WebView2.DevToolsProtocolExtension` and choose **Microsoft.Web.WebView2.DevToolsProtocolExtension** > **Install**.  
     
 > [!NOTE] 
@@ -116,7 +119,7 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
     using Microsoft.Web.WebView2.Core.DevToolsProtocolExtension;
     ```  
     
-1.  Run the `GetDevToolsProtocolHelper()` method to instantiate the `DevToolsProtocolHelper` object, and navigate to `geolocater.html`.
+1.  Instantiate the `DevToolsProtocolHelper` object and navigate to `geolocater.html`.
     
     ```csharp
     async void InitializeAsync()
@@ -158,8 +161,7 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
 
 To file a Chromium DevTools Protocol bug or issue, complete the following actions.  
 
-1.  Navigate to [WebView Feedback][GithubMicrosoftedgeWebview2feedback].  
-1.  Open a new issue.  
+1.  Navigate to [WebView Feedback][GithubMicrosoftedgeWebview2feedback] and open a new issue.  
 1.  File a [bug report][ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform].  
     
 ## See also  
