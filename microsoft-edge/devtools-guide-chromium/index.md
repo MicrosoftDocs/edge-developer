@@ -13,6 +13,20 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Installing Microsoft Edge does not only get you a browser, but also a powerful way to inspect, debug and even create web projects. The Developer Tools shipped with the browser are based on those of the  Chromium open source project so you might already be familiar with them. To keep things shorter in this document, we shall refer to the "Microsoft Edge Developer Tools" as "DevTools" from now on. 
 
+You can use DevTools to cover a lot of different development tasks:
+
+* You can [inspect and change the current document][DevToolsDOM] live in the browser
+* You can [emulate how your product behaves on different devices][DevToolsDevices] and simulate a mobile environment complete with different networking conditions
+* You can [inspect, tweak and change the styles of elements][DevtoolsStyles] in the document using live tools with a visual interface
+* You can [debug your JavaScript][DevtoolsJavaScript] using breakpoint debugging and with a [live console][DevtoolsConsole]
+* You can find out about [accessibility, performance, compatibility and security issues][DevtoolsIssues] of your products and how to fix them using DevTools
+* You can [inspect the network traffic][DevtoolsNetwork] and see where there are problems
+* You can [inspect where the browser stored content][DevtoolsStorage] in various formats
+* You can [evaluate the performance][DevToolsPerformance] of your product and find [memory problems][DevToolsMemory] and [rendering issues][DevToolsRendering].
+* You can [use a development environment][DevtoolsSources] allowing you to [sync changes in DevTools with the file system][DevtoolsWorkspaces] and [override files][DevtoolsOverrides] from the web
+
+And a lot more. It all starts by opening DevTools and customizing them to your needs.
+
 ## Opening DevTools  
 
 You can start exploring DevTools right here and now by opening them. Pick one of the ways listed below:
@@ -178,6 +192,20 @@ If you want to preview the [latest features coming to the DevTools][DevtoolsGuid
 
 <!-- links -->  
 
+[DevToolsOverrides]: ./javascript/overrides.md
+[DevtoolsStorage]: ./storage
+[DevtoolsNetwork]: ./network
+[DevtoolsJavaScript]: ./javascript
+[DevtoolsConsole]: ./console
+[DevtoolsStyles]: ./inspect-styles
+[DevtoolsWorkspaces]: ./workspaces
+[DevtoolsSources]: ./sources
+[DevtoolsIssues]: ./issues
+[DevToolsDOM]: ./dom
+[DevToolsDevices]: ./device-mode
+[DevToolsPerformance]: ./evaluate-performance
+[DevToolsMemory]: ./memory-problems
+[DevToolsRendering]: ./rendering-tools
 [DevtoolsGuideDocking]: /microsoft-edge//microsoft-edge/devtools-guide-chromium/customize/placement
 [DevtoolsGuideKeyboardShortcuts]: /microsoft-edge/devtools-guide-chromium/shortcuts
 [DevtoolsGuideOpenDevTools]: /microsoft-edge/devtools-guide-chromium/shortcuts
