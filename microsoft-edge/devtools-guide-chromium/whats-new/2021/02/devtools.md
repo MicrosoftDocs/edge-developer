@@ -56,12 +56,12 @@ The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketpl
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/vscode-extension-logging-in-browser.msft.png" alt-text="Display a message in Console in Microsoft Edge DevTools" lightbox="../../media/2021/02/vscode-extension-logging-in-browser.msft.png":::
+      :::image type="complex" source="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png" alt-text="Display a message in Console in Microsoft Edge DevTools" lightbox="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png":::
          Display a message in Console in Microsoft Edge DevTools  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/vscode-extension-logging-in-editor.msft.png" alt-text="Display the same message in the Integrated Terminal in Microsoft Visual Studio Code" lightbox="../../media/2021/02/vscode-extension-logging-in-editor.msft.png":::
+      :::image type="complex" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="Display the same message in the Integrated Terminal in Microsoft Visual Studio Code" lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
          Display the same message in the Integrated Terminal in Microsoft Visual Studio Code  
       :::image-end:::  
    :::column-end:::
