@@ -36,8 +36,10 @@ Focus Mode allows you to group different tools to match your debugging scenarios
 
 You may now customize the keyboard shortcut for any action in the DevTools.  To edit a keyboard shortcut, complete the following actions.  
 
-1.  Navigate to [DevTools Settings][DevtoolsCustomizeIndexSettings] > **Shortcuts**.  
-1.  Choose the action you want to customize > the Edit \(![Edit Keyboard Shortcut icon](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)\) icon.  
+1.  Navigate to [DevTools Settings][DevtoolsCustomizeIndexSettings]
+1.  Choose **Shortcuts**.  
+1.  Choose the action you want to customize.  
+1.  Choose the Edit \(![Edit Keyboard Shortcut icon](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)\) icon.  
 1.  Select the keys you want to bind to the action.  
 1.  Choose the checkmark \(![Checkmark Keyboard Shortcut icon](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)\) icon.  
     
@@ -106,8 +108,8 @@ Previously, you were not able to expand \(or collapse\) the chain of requests us
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="Choose a Network request > Initiator pane" lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
-         Choose a Network request > **Initiator** pane  
+      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="Choose a Network request and choose the Initiator pane" lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
+         Choose a Network request and choose the **Initiator** pane  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
