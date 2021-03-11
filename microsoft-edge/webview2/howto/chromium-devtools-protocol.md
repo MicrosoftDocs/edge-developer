@@ -3,7 +3,7 @@ description: Learn how to use the Chrome DevTools Protocol in your WebView2 apps
 title: Use Chrome DevTools Protocol in WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/10/2021
+ms.date: 03/11/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -22,10 +22,9 @@ To use the Chromium DevTools Protocol API in WebView2, use either of the followi
 
 *   Install and use the [Microsoft.Web.WebView2.DevToolsProtocolExtension][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] NuGet package \(.NET\).  
 *   Run one of the following methods.  
-    *   .NET: [CallDevToolsProtocolAsync][DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString], [GetDevToolsProtocolEventReceiver](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver?view=webview2-dotnet-1.0.774.44)
-    *   Win32 C/C++: [CallDevToolsProtocolMethod][Webview2ReferenceWin32Icorewebview2ViewWebview21077444Calldevtoolsprotocolmethod], [ICoreWebView2DevToolsProtocolEventReceiver](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-1.0.774.44)
+    *   .NET:  [CallDevToolsProtocolAsync][DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString], [GetDevToolsProtocolEventReceiver][DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]  
+    *   Win32 C/C++:  [CallDevToolsProtocolMethod][Webview2ReferenceWin32Icorewebview2ViewWebview21077444Calldevtoolsprotocolmethod], [ICoreWebView2DevToolsProtocolEventReceiver][Webview2ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverViewWebview21077444]  
     
-
 ## Use DevToolsProtocolHelper  
 
 [Microsoft.Web.WebView2.DevToolsProtocolExtension][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] is a NuGet package created by the WebView2 team that provides easy access to Chromium DevTools Protocol features.  The following examples describe how to use the geolocation functionality in Chromium DevTools Protocol in your WebView2 control.  You may follow a similar pattern to use other Chromium DevTools Protocol features.  
@@ -83,12 +82,12 @@ To create an `HTML file` to find your geolocation, complete following the action
 1.  To create a WebView2 app, use either of the following getting started guides or WebView2 samples.  
     *   [Getting Started with WebView2 in Windows Forms][Webview2GettingstartedWinforms]  
     *   [Getting Started with WebView2 in WPF][Webview2GettingstartedWpf]  
-    *   [WebView2 samples][GithubMicrosoftedgeWebview2samples] 
-
+    *   [WebView2 samples][GithubMicrosoftedgeWebview2samples]  
+        
 1.  Set the initial navigation of the WebView2 control to `geolocation.html`.  
     
     ```csharp
-    webView.CoreWebView2.Navigate(@"C:\{PATH TO FILE}\geolocation.html");
+    webView.CoreWebView2.Navigate(@"C:\{path\to\file}\geolocation.html");
     ```  
     
 1.  Ensure the `geolocation.html` file displays in your WebView2 control app.  
@@ -103,21 +102,21 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
 
 1.  Choose **Project** > **Manage NuGet Packages** > **Browse**.  
 1.  Type `Microsoft.Web.WebView2.DevToolsProtocolExtension` and choose **Microsoft.Web.WebView2.DevToolsProtocolExtension** > **Install**.   
-
+    
 :::image type="complex" source="./media/cdpnuget.png" alt-text="Ensure Microsoft.Web.WebView2.DevToolsProtocolExtension displays in the Visual Studio NuGet Package Manager" lightbox="./media/cdpnuget.png":::
    Ensure **Microsoft.Web.WebView2.DevToolsProtocolExtension** displays in the Visual Studio NuGet Package Manager  
 :::image-end:::  
 
 ## Step 4: Use DevTools Protocol Helper  
 
-1.  Add the `DevToolsProtocolExtension` namespace to your project.
+1.  Add the `DevToolsProtocolExtension` namespace to your project.  
     
     ```csharp
     using Microsoft.Web.WebView2.Core;
     using Microsoft.Web.WebView2.Core.DevToolsProtocolExtension;
     ```  
     
-1.  Instantiate the `DevToolsProtocolHelper` object and navigate to `geolocation.html`.
+1.  Instantiate the `DevToolsProtocolHelper` object and navigate to `geolocation.html`.  
     
     ```csharp
     async void InitializeAsync()
@@ -125,11 +124,11 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
         await webView.EnsureCoreWebView2Async(null);
         DevToolsProtocolHelper helper = webView.CoreWebView2.GetDevToolsProtocolHelper(); 
         
-        webView.CoreWebView2.Navigate(@"C:\{PATH TO FILE}\geolocation.html");
+        webView.CoreWebView2.Navigate(@"C:\{path\to\file}\geolocation.html");
     }
     ```  
     
-1.  Run the [setGeoLocationOverrideAsync][setGeoLocationOverrideAsync] method.  For more information, navigate to [setGeolocationOverride][GithubChromedevtoolsDevtoolsProtocolTotEmulationMethodSetgeolocationOverride].  
+1.  Run the [setGeoLocationOverrideAsync][GithubChromedevtoolsDevtoolsProtocolTotEmulationMethodSetgeolocationoverride] method.  For more information, navigate to [setGeolocationOverride][GithubChromedevtoolsDevtoolsProtocolTotEmulationMethodSetgeolocationoverride].  
     
     ```csharp
     async void InitializeAsync()
@@ -137,7 +136,7 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
         await webView.EnsureCoreWebView2Async(null);
         DevToolsProtocolHelper helper = webview.CoreWebView2.GetDevToolsProtocolHelper();
         
-        webView.CoreWebView2.Navigate(@"C:\{PATH TO FILE}\geolocation.html");
+        webView.CoreWebView2.Navigate(@"C:\{path\to\file}\geolocation.html");
         
         // Latitude and longitude for Paris, France.
         double latitude = 48.857024082572565;  
@@ -151,9 +150,9 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
 1.  Run your app.  
 1.  To display the coordinates of Paris, France, choose the **Display Location** button.  
     
-    :::image type="complex" source="./media/finallocation-cdp.png" alt-text="The HTML file is displayed in a WebView2 control with the coordinates for Paris" lightbox="./media/finallocation-cdp.png":::
-       The HTML file is displayed in a WebView2 control with the coordinates for Paris  
-    :::image-end:::
+    :::image type="complex" source="./media/finallocation-cdp.png" alt-text="Display the .html file in a WebView2 control with the coordinates for Paris" lightbox="./media/finallocation-cdp.png":::
+       Display the `.html` file in a WebView2 control with the coordinates for Paris  
+    :::image-end:::  
     
 ## File a Chromium DevTools Protocol bug  
 
@@ -161,7 +160,7 @@ Because the WebView2 team does not own the Chromium DevTools Protocol, it is imp
 
 1.  File a [bug report][ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform].  
 1.  Navigate to [WebView Feedback][GithubMicrosoftedgeWebview2feedback] and open a new issue.  
-
+    
 ## See also  
 
 *   [WebView2 samples][GithubMicrosoftedgeWebview2samples]  
@@ -171,16 +170,17 @@ Because the WebView2 team does not own the Chromium DevTools Protocol, it is imp
 [Webview2GettingstartedWinforms]: /microsoft-edge/webview2/gettingstarted/winforms "Getting started with WebView2 in Windows Forms | Microsoft Docs"  
 [Webview2GettingstartedWpf]: /microsoft-edge/webview2/gettingstarted/wpf "Getting started with WebView2 in WPF | Microsoft Docs"  
 
-[setGeoLocationOverrideAsync]: https://chromedevtools.github.io/devtools-protocol/tot/Emulation/#method-setGeolocationOverride
-
+[DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver?view=webview2-dotnet-1.0.774.44&preserve-view=true "CoreWebView2.GetDevToolsProtocolEventReceiver(String) Method | Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString]: /dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync?view=webview2-dotnet-1.0.774.44&preserve-view=true#Microsoft_Web_WebView2_Core_CoreWebView2_CallDevToolsProtocolMethodAsync_System_String_System_String_ "CoreWebView2.CallDevToolsProtocolMethodAsync(String, String) Method | Microsoft Docs"  
 
 [Webview2ReferenceWin32Icorewebview2ViewWebview21077444Calldevtoolsprotocolmethod]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.774.44&preserve-view=true#calldevtoolsprotocolmethod "CallDevToolsProtocolMethod - interface ICoreWebView2 | Microsoft Docs"  
+[Webview2ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverViewWebview21077444]: /microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-1.0.774.44&preserve-view=true "interface ICoreWebView2DevToolsProtocolEventReceiver | Microsoft Docs"  
 
 [BingMaps]: https://www.bing.com/maps "Bing Maps"  
 
 [GitHubChromedevtoolsDevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Chrome DevTools Protocol | GitHub"  
-[GithubChromedevtoolsDevtoolsProtocolTotEmulationMethodSetgeolocationOverride]: https://chromedevtools.github.io/devtools-protocol/tot/Emulation#method-setGeolocationOverride "Emulation.setGeolocationOverride - Emulation Domain | Chrome DevTools Protocol"  
+[GithubChromedevtoolsDevtoolsProtocolTotEmulationMethodSetgeolocationoverride]: https://chromedevtools.github.io/devtools-protocol/tot/Emulation/#method-setGeolocationOverride "Emulation.setGeolocationOverride - Chrome DevTools Protocol | GitHub"  
+
 [GithubMicrosoftedgeWebview2feedback]: https://github.com/MicrosoftEdge/WebView2Feedback "WebView Feedback | GitHub"  
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 samples | GitHub"  
 
