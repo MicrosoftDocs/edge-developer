@@ -11,23 +11,24 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, I
 ---
 # Use Chromium DevTools Protocol in WebView2  
 
-The [Chromium DevTools Protocol][GitHubChromedevtoolsDevtoolsProtocol] provides the Chrome Debugger Extension API.  The Chrome Debugger Extension API helps you instrument, inspect, debug, and profile Chromium-based browsers.  The Chromium DevTools Protocol is the foundation for the Microsoft Edge \(Chromium\) DevTools.  The WebView team recommends you use the Chromium DevTools Protocol for features that aren't implemented in the WebView2 platform.  For more information about the Chromium DevTools Protocol functionality, navigate to Chromium DevTools Protocol.  
+The [Chromium DevTools Protocol][GitHubChromedevtoolsDevtoolsProtocol] provides APIs to instrument, inspect, debug, and profile Chromium-based browsers.  The Chromium DevTools Protocol is the foundation for the Microsoft Edge \(Chromium\) DevTools.  The WebView team recommends you use the Chromium DevTools Protocol for features that aren't implemented in the WebView2 platform.  For more information about the Chromium DevTools Protocol functionality, navigate to [Chromium DevTools Protocol][GitHubChromedevtoolsDevtoolsProtocol].  
+
+> [!CAUTION]
+> The Microsoft Edge WebView2 team does not maintain or support the Chromium DevTools Protocol.  The Chromium DevTools Protocol is maintained by the open source Chromium project.  
+> 
+> To send your suggestions for future WebView2 platform features, navigate to [WebView Feedback][GithubMicrosoftedgeWebview2feedback] and submit an issue.  
 
 To use the Chromium DevTools Protocol API in WebView2, use either of the following actions.  
 
 *   Install and use the [Microsoft.Web.WebView2.DevToolsProtocolExtension][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] NuGet package \(.NET\).  
 *   Run one of the following methods.  
-    *   [CallDevToolsProtocolAsync][DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString] \(.NET\)  
-    *   [CallDevToolsProtocolMethod][Webview2ReferenceWin32Icorewebview2ViewWebview21077444Calldevtoolsprotocolmethod] \(Win32 C/C++\)  
+    *   .NET: [CallDevToolsProtocolAsync][DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString], [GetDevToolsProtocolEventReceiver](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver?view=webview2-dotnet-1.0.774.44)
+    *   Win32 C/C++: [CallDevToolsProtocolMethod][Webview2ReferenceWin32Icorewebview2ViewWebview21077444Calldevtoolsprotocolmethod], [ICoreWebView2DevToolsProtocolEventReceiver](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-1.0.774.44)
     
-> [!NOTE]
-> The Microsoft Edge WebView2 team does not maintain or support the Chromium DevTools Protocol.  The Chromium DevTools Protocol is maintained by the open source Chromium project.  
-> 
-> To send your suggestions for future WebView2 platform features, navigate to [WebView Feedback][GithubMicrosoftedgeWebview2feedback] and submit an issue.  
 
 ## Use DevToolsProtocolHelper  
 
-[Microsoft.Web.WebView2.DevToolsProtocolExtension][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] is a NuGet package created by the WebView2 team that allows you \(a developer\) to easily access Chromium DevTools Protocol features.  The following examples describe how to use the geolocation functionality in Chromium DevTools Protocol in your WebView2 control.  You may follow a similar pattern to use other Chromium DevTools Protocol features.  
+[Microsoft.Web.WebView2.DevToolsProtocolExtension][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] is a NuGet package created by the WebView2 team that provides easy access to Chromium DevTools Protocol features.  The following examples describe how to use the geolocation functionality in Chromium DevTools Protocol in your WebView2 control.  You may follow a similar pattern to use other Chromium DevTools Protocol features.  
 
 ## Step 1: Create a webpage to find your geolocation  
 
@@ -49,7 +50,7 @@ To create an `HTML file` to find your geolocation, complete following the action
     </body>
     
     <script>
-        const btn = document.querySelector('#display');
+        const btn = document.getElementById('display');
         // Find the user location.
         btn.addEventListener('click', function () {
             navigator.geolocation.getCurrentPosition(onSuccess, onError);
@@ -68,43 +69,40 @@ To create an `HTML file` to find your geolocation, complete following the action
     </html>
     ```  
     
-1.  Save the `.html` file with the filename `geolocater.html`.  
+1.  Save the `.html` file with the filename `geolocation.html`.  
 1.  Open Microsoft Edge.  
-1.  Open the `geolocater.html` file.  
+1.  Open the `geolocation.html` file.  
 1.  To display your latitude and longitude coordinates, choose the **Display Location** button.  To verify and compare your geolocation, copy and paste your coordinates in [https://www.bing.com/maps][BingMaps].  
     
     :::image type="complex" source="./media/geolocater-browser.png" alt-text="Display the geolocation coordinates of the user in Microsoft Edge" lightbox="./media/geolocater-browser.png":::
        Display the geolocation coordinates of the user in Microsoft Edge  
     :::image-end:::  
     
-## Step 2: Display geolocater.html in a WebView2  
+## Step 2: Display geolocation.html in a WebView2  
 
-1.  To create a WebView2 app, use either of the following getting started guides.  
+1.  To create a WebView2 app, use either of the following getting started guides or WebView2 samples.  
     *   [Getting Started with WebView2 in Windows Forms][Webview2GettingstartedWinforms]  
     *   [Getting Started with WebView2 in WPF][Webview2GettingstartedWpf]  
-1.  Set the initial navigation of the WebView2 control to `geolocater.html`.  
+    *   [WebView2 samples][GithubMicrosoftedgeWebview2samples] 
+
+1.  Set the initial navigation of the WebView2 control to `geolocation.html`.  
     
     ```csharp
-    webView.CoreWebView2.Navigate(@"C:\{PATH TO FILE}\geolocater.html");
+    webView.CoreWebView2.Navigate(@"C:\{PATH TO FILE}\geolocation.html");
     ```  
     
-1.  Ensure the `geolocator.html` file displays in your WebView2 control app.  
+1.  Ensure the `geolocation.html` file displays in your WebView2 control app.  
     
     :::image type="complex" source="./media/initial-geolocate.png" alt-text="Display the geolocater.html file in your WebView2 control app" lightbox="./media/initial-geolocate.png":::
-       Display the `geolocater.html` file in your WebView2 control app  
+       Display the `geolocation.html` file in your WebView2 control app  
     :::image-end:::  
     
 ## Step 3: Install the DevToolsProtocolHelper NuGet package  
 
 Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To install the package, complete the following actions.  
 
-1.  Open Visual Studio.  
 1.  Choose **Project** > **Manage NuGet Packages** > **Browse**.  
-1.  Choose the checkbox next to **Include pre-release**.
-1.  Type `Microsoft.Web.WebView2.DevToolsProtocolExtension` and choose **Microsoft.Web.WebView2.DevToolsProtocolExtension** > **Install**.  
-    
-> [!NOTE] 
-> Ensure you also have the WebView2 NuGet Package named `Microsoft.Web.WebView2` installed.  
+1.  Type `Microsoft.Web.WebView2.DevToolsProtocolExtension` and choose **Microsoft.Web.WebView2.DevToolsProtocolExtension** > **Install**.   
 
 :::image type="complex" source="./media/cdpnuget.png" alt-text="Ensure Microsoft.Web.WebView2.DevToolsProtocolExtension displays in the Visual Studio NuGet Package Manager" lightbox="./media/cdpnuget.png":::
    Ensure **Microsoft.Web.WebView2.DevToolsProtocolExtension** displays in the Visual Studio NuGet Package Manager  
@@ -112,14 +110,14 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
 
 ## Step 4: Use DevTools Protocol Helper  
 
-1.  Add the `DevToolsProtocolExtension` and `CoreWebView2` namespaces to your project.
+1.  Add the `DevToolsProtocolExtension` namespace to your project.
     
     ```csharp
     using Microsoft.Web.WebView2.Core;
     using Microsoft.Web.WebView2.Core.DevToolsProtocolExtension;
     ```  
     
-1.  Instantiate the `DevToolsProtocolHelper` object and navigate to `geolocater.html`.
+1.  Instantiate the `DevToolsProtocolHelper` object and navigate to `geolocation.html`.
     
     ```csharp
     async void InitializeAsync()
@@ -127,11 +125,11 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
         await webView.EnsureCoreWebView2Async(null);
         DevToolsProtocolHelper helper = webView.CoreWebView2.GetDevToolsProtocolHelper(); 
         
-        webView.CoreWebView2.Navigate(@"C:\{PATH TO FILE}\geolocater.html");
+        webView.CoreWebView2.Navigate(@"C:\{PATH TO FILE}\geolocation.html");
     }
     ```  
     
-1.  Run the [setGeoLocationOverrideAsync][setGeoLocationOverrideAsync] method.  For more information, navigate to [method-setGeolocationOverride][GithubChromedevtoolsDevtoolsProtocolTotEmulationMethodSetgeolocationOverride].  
+1.  Run the [setGeoLocationOverrideAsync][setGeoLocationOverrideAsync] method.  For more information, navigate to [setGeolocationOverride][GithubChromedevtoolsDevtoolsProtocolTotEmulationMethodSetgeolocationOverride].  
     
     ```csharp
     async void InitializeAsync()
@@ -139,7 +137,7 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
         await webView.EnsureCoreWebView2Async(null);
         DevToolsProtocolHelper helper = webview.CoreWebView2.GetDevToolsProtocolHelper();
         
-        webView.CoreWebView2.Navigate(@"C:\{PATH TO FILE}\geolocater.html");
+        webView.CoreWebView2.Navigate(@"C:\{PATH TO FILE}\geolocation.html");
         
         // Latitude and longitude for Paris, France.
         double latitude = 48.857024082572565;  
@@ -159,11 +157,11 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
     
 ## File a Chromium DevTools Protocol bug  
 
-To file a Chromium DevTools Protocol bug or issue, complete the following actions.  
+Because the WebView2 team does not own the Chromium DevTools Protocol, it is important to direct feedback and bugs to the Chromium Issues repo. To file a Chromium DevTools Protocol bug or issue, complete the following actions.  
 
-1.  Navigate to [WebView Feedback][GithubMicrosoftedgeWebview2feedback] and open a new issue.  
 1.  File a [bug report][ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform].  
-    
+1.  Navigate to [WebView Feedback][GithubMicrosoftedgeWebview2feedback] and open a new issue.  
+
 ## See also  
 
 *   [WebView2 samples][GithubMicrosoftedgeWebview2samples]  
@@ -173,8 +171,7 @@ To file a Chromium DevTools Protocol bug or issue, complete the following action
 [Webview2GettingstartedWinforms]: /microsoft-edge/webview2/gettingstarted/winforms "Getting started with WebView2 in Windows Forms | Microsoft Docs"  
 [Webview2GettingstartedWpf]: /microsoft-edge/webview2/gettingstarted/wpf "Getting started with WebView2 in WPF | Microsoft Docs"  
 
-[setGeoLocationOverrideAsync]: https://docs.microsoft.com "setGeoLocationOverrideAsync | Microsoft Docs"  
-<!--todo:  where is this article located -->
+[setGeoLocationOverrideAsync]: https://chromedevtools.github.io/devtools-protocol/tot/Emulation/#method-setGeolocationOverride
 
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString]: /dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync?view=webview2-dotnet-1.0.774.44&preserve-view=true#Microsoft_Web_WebView2_Core_CoreWebView2_CallDevToolsProtocolMethodAsync_System_String_System_String_ "CoreWebView2.CallDevToolsProtocolMethodAsync(String, String) Method | Microsoft Docs"  
 
