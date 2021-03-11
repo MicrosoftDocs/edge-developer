@@ -11,7 +11,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, I
 ---
 # Use Chromium DevTools Protocol in WebView2  
 
-The [Chromium DevTools Protocol][GitHubChromedevtoolsDevtoolsProtocol] provides APIs to instrument, inspect, debug, and profile Chromium-based browsers.  The Chromium DevTools Protocol is the foundation for the Microsoft Edge \(Chromium\) DevTools.  The WebView team recommends you use the Chromium DevTools Protocol for features that aren't implemented in the WebView2 platform.  For more information about the Chromium DevTools Protocol functionality, navigate to [Chromium DevTools Protocol][GitHubChromedevtoolsDevtoolsProtocol].  
+The [Chromium DevTools Protocol][GitHubChromedevtoolsDevtoolsProtocol] provides APIs to instrument, inspect, debug, and profile Chromium-based browsers.  The Chromium DevTools Protocol is the foundation for the Microsoft Edge \(Chromium\) DevTools.  Use the Chromium DevTools Protocol for features that aren't implemented in the WebView2 platform.  For more information about the Chromium DevTools Protocol functionality, navigate to [Chromium DevTools Protocol][GitHubChromedevtoolsDevtoolsProtocol].  
 
 > [!CAUTION]
 > The Microsoft Edge WebView2 team does not maintain or support the Chromium DevTools Protocol.  The Chromium DevTools Protocol is maintained by the open source Chromium project.  
@@ -156,7 +156,12 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
     
 ## File a Chromium DevTools Protocol bug  
 
-Because the WebView2 team does not own the Chromium DevTools Protocol, it is important to direct feedback and bugs to the Chromium Issues repo. To file a Chromium DevTools Protocol bug or issue, complete the following actions.  
+The WebView2 team doesn't own the Chromium DevTools Protocol.  
+
+> [!IMPORTANT]
+> Direct feedback and bugs to the Chromium Issues repo.  
+
+To file a Chromium DevTools Protocol bug or issue, complete the following actions.  
 
 1.  File a [bug report][ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform].  
 1.  Navigate to [WebView Feedback][GithubMicrosoftedgeWebview2feedback] and open a new issue.  
