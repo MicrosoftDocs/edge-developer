@@ -3,7 +3,7 @@ description: Debugging support for CSS Flexbox, performance heads-up display on 
 title: What's new in DevTools (Microsoft Edge 90)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/10/2021
+ms.date: 03/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -20,10 +20,10 @@ keywords: microsoft edge, web development, f12 tools, devtools
 <!-- Title: Focus Mode and DevTools tooltips  -->  
 <!-- Subtitle: Organize your favorite tools into groups and learn more about the wide array of tools and panes in the DevTools with tooltips  -->  
 
-Focus Mode allows you to group different tools to match your debugging scenarios.  The new **Action Bar** displays on the left and includes some predefined groups that contain recommended tools.  The predefined groups include **Layout** and **Debugging**.  To customize each tool group, you may close tools or add new ones.  The new tooltips help you learn about all the different tools and panes in the DevTools.  Choose the Help \(`?`\) icon at the bottom of the **Action Bar** to display \(or hide\) informative overlays in the DevTools.  To turn on the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] and choose the checkbox next to **Focus Mode and DevTools Tooltips**.  
+Focus Mode allows you to group different tools to match your debugging scenarios.  The new **Activity Bar** displays on the left and includes some predefined groups that contain recommended tools.  The predefined groups include **Layout** and **Debugging**.  To customize each tool group, you may close tools or add new ones.  The new tooltips help you learn about all the different tools and panes in the DevTools.  Choose the **Help** \(`?`\) icon at the bottom of the **Activity Bar** to display \(or hide\) informative overlays in the DevTools.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  To turn on the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] and choose the checkbox next to **Focus Mode and DevTools Tooltips**.  
 
-:::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="Choose the Help icon in the Action Bar to display Focus mode and tooltips" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
-   Choose the Help icon in the **Action Bar** to display Focus mode and tooltips  
+:::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="Choose the Help icon in the Activity Bar to display Focus mode and tooltips" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
+   Choose the Help icon in the **Activity Bar** to display Focus mode and tooltips  
 :::image-end:::  
 
 ## Customize keyboard shortcuts in Settings  
@@ -326,6 +326,8 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [CR1178530]: https://crbug.com/1178530 "Issue 1178530: Console does not escape doublequotes when printing strings | Chromium bugs"  
 
 [CsswgDraftsMediaqueries4ColorGamut]: https://drafts.csswg.org/mediaqueries-4#color-gamut "Color Display Quality: the 'color-gamut' feature | CSS Working Group Editor Drafts"  
+
+[GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md "DevTools: Focus Mode UI - MicrosoftEdge/MSEdgeExplainers | GitHub"  
 
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
 
