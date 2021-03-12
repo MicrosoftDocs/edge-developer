@@ -32,7 +32,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Focus Mode is an experimental interface that allows you to group different tools together based on your own debugging scenarios.  The new **Activity Bar** displayed on the left includes predefined tool groups such as **Layout** and **Debugging**.  To customize each tool group, close tools with the **Close** \(`X`\) icon or add new tools with the **More tools** \(`+`\) icon.  
 
-To turn on the experiment, navigate to turn on experimental features and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
+To turn on the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
 
 :::image type="complex" source="../../media/2021/02/focus-mode.msft.png" alt-text="Display the Activity Bar" lightbox="../../media/2021/02/focus-mode.msft.png":::
    Display the **Activity Bar**  
@@ -43,7 +43,7 @@ To turn on the experiment, navigate to turn on experimental features and choose 
 <!-- Title: DevTools Tooltips  -->  
 <!-- Subtitle: Learn more about how to use DevTools with informative DevTools tooltips.  -->  
 
-The DevTools Tooltips feature helps you learn about all the different tools and panes.  Choose the Help \(`?`\) icon at the bottom of the **Activity Bar** to toggle tooltips in the DevTools.  When tooltips are on, hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on the experiment, navigate to turn on experimental features and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
+The DevTools Tooltips feature helps you learn about all the different tools and panes.  Choose the Help \(`?`\) icon at the bottom of the **Activity Bar** to toggle tooltips in the DevTools.  When tooltips are on, hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
 
 :::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="Choose the Help (?) icon in the Activity Bar to display tooltips" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
    Choose the Help \(`?`\) icon in the **Activity Bar** to display tooltips  
@@ -78,10 +78,10 @@ The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketpl
 
 :::row:::
    :::column span="":::
-      The following figure displays an example webpage and the **Console** tool in Microsoft Edge  
+      The following figure displays messages from an example webpage logged in the **Console** tool in Microsoft Edge.  
    :::column-end:::
    :::column span="":::
-      The following figure displays an example webpage and Microsoft Edge Developer Tools for Visual Studio Code extension in Visual Studio Code  
+      The following figure displays the same messages from the example webpage logged in the **DevTools Console** under **Output** of Microsoft Visual Studio Code.  
    :::column-end:::
 :::row-end:::  
 :::row:::
