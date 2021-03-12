@@ -289,16 +289,26 @@ Previously, the `fn.displayName` property allowed you to control debug names for
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-This experiment provides a **full accessibility tree view** in the **Elements** tool.  The [Accessibility][DevtoolsAccessibilityReferenceTheAccessibilityPane] pane provides a partial accessibility tree view, that displays the direct ancestor chain from the root node to the inspected node.  After you turn on this experiment, choose one of the following buttons to switch the display in the **Elements** tool for all elements on the webpage.  
+This experiment provides a **full accessibility tree view** in the **Elements** tool.  The [Accessibility][DevtoolsAccessibilityReferenceTheAccessibilityPane] pane provides a partial accessibility tree view, that displays the direct ancestor chain from the root node to the inspected node.  
+After you turn on this experiment and reload the DevTools, choose one of the following buttons to switch the display in the Elements tool for all elements on the webpage.  
 
-*   To display the full accessibility tree view , choose the **Switch to full accessibility tree view**.  
-*   To display the DOM tree view, choose the **Switch to DOM tree view**.  
+*   To display the full accessibility tree view , choose the **Switch to Accessibility Tree view**.  
+*   To display the DOM tree view, choose the **Switch to DOM Tree view**.  
     
 To turn on the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] and choose the checkbox next to **Enable full accessibility tree view in Elements pane**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [887173][CR887173].  
 
-:::image type="complex" source="../../media/2021/02/elements-switch-to-accesibility-tree-view.msft.png" alt-text="Display the full accessibility tree view" lightbox="../../media/2021/02/elements-switch-to-accesibility-tree-view.msft.png":::
-   Display the **full accessibility tree view**  
-:::image-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="Display the DOM tree view" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
+         Display the **DOM view**  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png" alt-text="Display the full accessibility tree view" lightbox="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png":::
+         Display the **Full Accessibility Tree view**  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 ## Download the Microsoft Edge preview channels  
 
