@@ -25,28 +25,25 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
-## Group tabs together in Focus Mode  
+## Group tools together in Focus Mode  
 
-<!-- Title: Focus Mode  -->  
+<!-- Title: Grouping the tools in Focus Mode  -->  
 <!-- Subtitle: Organize your favorite tools into groups with the new Focus Mode UI.  -->  
 
 Focus Mode is an experimental interface that allows you to group different tools together based on your own debugging scenarios.  The new **Activity Bar** displayed on the left includes predefined tool groups such as **Layout** and **Debugging**.  To customize each tool group, close tools with the **Close** \(`X`\) icon or add new tools with the **More tools** \(`+`\) icon.  
 
-> [!NOTE]
-> The DevTools team recommends that you use this experimental feature with [Enable + button tab menus to open more tools experiment][DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools] experimental feature.  
+To turn on the experiment, navigate to turn on experimental features and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
 
-To turn on the experiment, navigate to Turn on experimental features and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
-
-:::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="Display the Activity Bar" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
+:::image type="complex" source="../../media/2021/02/focus-mode.msft.png" alt-text="Display the Activity Bar" lightbox="../../media/2021/02/focus-mode.msft.png":::
    Display the **Activity Bar**  
 :::image-end:::  
 
-## Learn about DevTools with informative Tooltips  
+## Learn about DevTools with informative tooltips  
 
 <!-- Title: DevTools Tooltips  -->  
 <!-- Subtitle: Learn more about how to use DevTools with informative DevTools tooltips.  -->  
 
-The Tooltips feature helps you learn about all the different tools and panes in the DevTools.  Choose the Help \(`?`\) icon at the bottom of the **Activity Bar** to toggle Tooltips in the DevTools.  When Tooltips are on, hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on the experiment, navigate to turn on experimental features and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
+The DevTools Tooltips feature helps you learn about all the different tools and panes.  Choose the Help \(`?`\) icon at the bottom of the **Activity Bar** to toggle tooltips in the DevTools.  When tooltips are on, hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on the experiment, navigate to turn on experimental features and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
 
 :::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="Choose the Help (?) icon in the Activity Bar to display tooltips" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
    Choose the Help \(`?`\) icon in the **Activity Bar** to display tooltips  
@@ -77,8 +74,16 @@ For more information about customizing and editing shortcuts, navigate to [Custo
 <!-- Title: Edge Devtools for Visual Studio code extension update 1.1.4  -->  
 <!-- Subtitle: Latest changes including a favicon is displayed next to each of the instances and console messages from the browser are displayed in the console of Visual Studio Code.  -->  
 
-The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extension version 1.1.4 for Microsoft Visual Studio Code now displays a favicon next to each of the DevTools instances.  Console messages from Microsoft Edge now display in the Output: DevTools Console of Microsoft Visual Studio Code.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.4, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  You may file issues and contribute to the extension on the [vscode-edge-devtools][GithubMicrosoftVscodeEdgeDevtools] GitHub repo.  
+The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extension version 1.1.4 for Microsoft Visual Studio Code now displays a favicon next to each of the DevTools instances.  Console messages from Microsoft Edge now display in the **DevTools Console** under **Output** of Microsoft Visual Studio Code.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.4, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  You may file issues and contribute to the extension on the [vscode-edge-devtools][GithubMicrosoftVscodeEdgeDevtools] GitHub repo.  
 
+:::row:::
+   :::column span="":::
+      The following figure displays an example webpage and the **Console** tool in Microsoft Edge  
+   :::column-end:::
+   :::column span="":::
+      The following figure displays an example webpage and Microsoft Edge Developer Tools for Visual Studio Code extension in Visual Studio Code  
+   :::column-end:::
+:::row-end:::  
 :::row:::
    :::column span="":::
       :::image type="complex" source="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png" alt-text="Display a message in Console in Microsoft Edge DevTools" lightbox="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png":::
@@ -147,7 +152,7 @@ In Microsoft Edge version 90, you may expand or collapse the chain of requests u
 <!-- Title: Console improvements make filtering more consistent  -->  
 <!-- Subtitle: The Log Levels dropdown is more clearly disabled when using filters in the Console sidebar.  -->  
 
-While you filter with the [Console Sidebar][DevtoolsConsoleReferenceOpenConsoleSidebar], the filters in the [Log Levels][DevtoolsConsoleReferenceFilterByLogLevel] dropdown are not available.  Previously, the **Log Levels** dropdown highlighted when you hovered on it, even while a filter from the **Console Sidebar** was chosen.  In Microsoft Edge version 90, the **Log Levels** dropdown is more consistent and no longer highlights when you hover on it while a filter from the **Console Sidebar** is chosen.  To learn more about filtering in the **Console**, navigate to [Filter Messages][DevtoolsConsoleReferenceFilterMessages].  
+While you filter with the [Console Sidebar][DevtoolsConsoleReferenceOpenConsoleSidebar], the filters in the [Log Levels][DevtoolsConsoleReferenceFilterByLogLevel] dropdown are not available.  Previously, the **Log Levels** dropdown highlighted when you hovered on it, even while a filter from the **Console Sidebar** was chosen.  In Microsoft Edge version 90, the **Log Levels** dropdown no longer highlights when you hover on it while a filter from the **Console Sidebar** is chosen.  To learn more about filtering in the **Console**, navigate to [Filter Messages][DevtoolsConsoleReferenceFilterMessages].  
 
 :::row:::
    :::column span="":::
@@ -183,7 +188,7 @@ To emulate the CSS color-gamut media feature, complete the following actions.
 1.  Open the [Command Menu][DevtoolsCommandMenuIndex].  
 1.  Type `Rendering`.  
 1.  Run the **Show Rendering** command.  
-1.  Navigate to **Emulate CSS media feature color-gamut** and choose `color-gamut: ...`.  
+1.  Navigate to **Emulate CSS media feature color-gamut** and choose an option.  
 
 To learn more about the `color-gamut` feature, navigate to [Color Display Quality: the 'color-gamut' feature][CsswgDraftsMediaqueries4ColorGamut].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1073887][CR1073887].  
 
@@ -208,15 +213,6 @@ The **Manifest** pane now displays a warning message if the manifest description
 :::image type="complex" source="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png" alt-text="PWA description truncate warning" lightbox="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png":::
    PWA description truncate warning  
 :::image-end:::  
-
-<!-- does not work in canary 90.0.813.0 -->  
-<!--#### PWA screenshot warning in the Manifest pane  
-
-In addition, the **Manifest** pane now shows a warning message if the screenshot of the PWA does not match the requirements.  
-
-:::image type="complex" source="../../media/2021/02/pwa-screenshot.msft.png" alt-text="PWA screenshot warning" lightbox="../../media/2021/02/pwa-screenshot.msft.png":::
-   PWA screenshot warning  
-:::image-end:::  -->  
 
 To review the history of this feature in the Chromium open-source project, navigate to Issues [965802][CR965802], [1146450][CR1146450], and [1169689][CR1169689].  
 
@@ -262,28 +258,11 @@ The **Cookies** pane in the **Application** tool now displays the `SameParty` at
 
 ### fn.displayName property in the Console tool is now deprecated  
 
-Previously, the `fn.displayName` property allowed you to control debug names for functions to display in `error.stack` and in DevTools stack traces.  Starting in Microsoft Edge version 90, the `fn.displayName` property is now deprecated, and replaced by the `fn.name` property.  To learn more about `fn.name`, navigate to [Function.name][MdnJavascriptReferenceGlobalObjectsFunctionName].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1177685][CR1177685].  
+Previously, the `fn.displayName` property allowed you to control debug names for functions to display in `error.stack` and in DevTools stack traces.  Starting in Microsoft Edge version 90, the `fn.displayName` property is now deprecated, and replaced by the `fn.name` property.  Use the standard `Object.defineProperty` method to define the `fn.name` property.  To learn more about `fn.name`, navigate to [Function.name][MdnJavascriptReferenceGlobalObjectsFunctionName].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1177685][CR1177685].  
 
-:::row:::
-   :::column span="":::
-      Previously, the **Call Stack** pane displayed `noLongerSupport`.  Support for the `fn.displayName` property is not consistent across browser engines.  Including support for the `fn.displayName` property slows down collection of stack traces whether is is actually used or not.  
-   :::column-end:::
-   :::column span="":::
-      Use the standard `fn.name` property to replace the `fn.displayName` property.  The `fn.name` property is specified in ECMAScript 2015 and is configurable using the `Object.defineProperty` method.  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/console-display-name.msft.png" alt-text="An example of the fn.displayName property to control debug names for functions" lightbox="../../media/2021/02/console-display-name.msft.png":::
-         An example of the `fn.displayName` property to control debug names for functions  
-      :::image-end:::  
-   :::column-end:::
-   :::column span="":::
-     :::image type="complex" source="../../media/2021/02/console-display-name-name.msft.png" alt-text="An example of the fn.name property to control debug names for functions" lightbox="../../media/2021/02/console-display-name-name.msft.png":::
-        An example of the `fn.name` property to control debug names for functions  
-      :::image-end:::  
-   :::column-end:::
-:::row-end:::  
+:::image type="complex" source="../../media/2021/02/console-display-name-name.msft.png" alt-text="An example of the fn.name property to control debug names for functions" lightbox="../../media/2021/02/console-display-name-name.msft.png":::
+   An example of the `fn.name` property to control debug names for functions  
+:::image-end:::  
 
 ### Full accessibility tree view in the Elements tool  
 
