@@ -3,7 +3,7 @@ description: Learn how to change CSS font styles and settings using the Styles p
 title: Edit CSS font styles and settings in the Styles pane in DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/17/2021
+ms.date: 03/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -15,7 +15,7 @@ no-loc: ["Enable new font editor tool within the Styles pane"]
 
 Typography on the web is an important part of the user experience.  You want to ensure you meet corporate brand guidelines, and your content displays as expected on various devices.  Text must be easy to read using size and line-height.  Users may resize fonts to meet individual needs.  For situations when specific fonts are not available on a user device, you should provide fallback font options.  
 
-CSS provides better support for typography in recent years.  There are dozens of different CSS units available to define the size of text.  You also have several CSS properties that affect font-size, spacing, line height, and other typographic features.  
+CSS provides better support for typography in recent years.  Dozens of different CSS units are available to define the size of text.  You also have several CSS properties that affect font-size, spacing, line height, and other typographic features.  
 
 To make it easier when working with typography, a visual **Font Editor** is now in the **Styles** pane.  You may change your font settings, and the changes are rendered immediately in the browser.  All without in-depth knowledge of CSS.  
 
