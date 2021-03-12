@@ -57,7 +57,7 @@ This experimental feature provides a number of new visualizations to help you de
 
 #### View on-hover grid overlays with the Inspect tool  
 
-The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Choose the **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  Then, hover over a Grid element on the website you are debugging.  Outlines are displayed around the grid, and shading indicates the location of grid gaps if present.  
+The **Inspect** tool provides a quick way to identify and visualize CSS Grid layouts in a website by hovering over them with the mouse.  Choose the **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  Then, hover on a `Grid` element on the webpage you are debugging.  Outlines are displayed around the grid, and hatching indicates the location of grid gaps if present.  
 
 :::image type="complex" source="../media/grid-inspect.msft.png" alt-text="Viewing grids with the Inspect tool" lightbox="../media/grid-inspect.msft.png":::
    Viewing grids with the **Inspect** tool  
@@ -87,7 +87,7 @@ The two ways to toggle a persistent grid overlay.
     
 #### Configure persistent overlays  
 
-In Microsoft Edge version 86 or later, the new **Layout** panel is located in the **Elements** tool alongside the **Styles** and **Computed** tabs.  The **Layout** panel surfaces configuration options for persistent overlays.  
+In Microsoft Edge version 86 or later, the new **Layout** panel is located in the **Elements** tool alongside the **Styles** and **Computed** panels.  The **Layout** panel surfaces configuration options for persistent overlays.  
 
 :::image type="complex" source="../media/experiments-grid.msft.png" alt-text="CSS grid debugging feature" lightbox="../media/experiments-grid.msft.png":::
    CSS grid debugging feature  
@@ -97,8 +97,8 @@ In Microsoft Edge version 86 or later, the new **Layout** panel is located in th
 
 Normally, tools such as **Elements** and **Network** may only open in the main panel that is located at the top of the DevTools.  Tools like **3D View** and **Issues** which normally only open in the **Drawer** panel that is located at the bottom of the DevTools.  After you choose the experiment, you may move tools between the top and bottom panels.  To move a tool, hover on the tab, open the contextual menu \(right-click\), and choose **Move to top** or **Move to bottom**.   This experiment allows you to customize your DevTools layout.  To display or hide the **Drawer** panel, select `Escape`.  
 
-:::image type="complex" source="../media/experiments-move-panels.msft.png" alt-text="Moving tabs between panels" lightbox="../media/experiments-move-panels.msft.png":::
-   Moving tabs between panels  
+:::image type="complex" source="../media/experiments-move-panels.msft.png" alt-text="Moving tools between panels" lightbox="../media/experiments-move-panels.msft.png":::
+   Moving tools between panels  
 :::image-end:::  
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
@@ -174,8 +174,8 @@ With the **Enable keyboard shortcut editor** experiment turned on, you may custo
     
 1.  On the keyboard, select the keys to bind to the action.  
     
-    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Select the keys to assign to the action" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
-       Select the keys to assign to the action  
+    :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Choose the keys you want to assign to the action" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+       Choose the keys you want to assign to the action  
     :::image-end:::  
     
 1.  To save your new keyboard shortcut, choose the checkmark \(![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)\) icon.  

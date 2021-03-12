@@ -3,7 +3,7 @@ description: Learn how to use Microsoft Edge DevTools to view and change the CSS
 title: Inspect CSS Grid in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020 
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -30,7 +30,7 @@ When an HTML element on your page has `display: grid` or `display: inline-grid` 
    Discover grid  
 :::image-end:::  
 
-Select the badge to toggle the display of a grid overlay on the page.  The overlay appears over the element, laid out like a grid to display the position of the grid lines and tracks:  
+Choose the badge to toggle the display of a grid overlay on the page.  The overlay appears over the element, laid out like a grid to display the position of the grid lines and tracks:  
 
 :::image type="complex" source="../media/grid-highlight-grid.msft.png" alt-text="Toggle grid badge" lightbox="../media/grid-highlight-grid.msft.png":::
    Toggle grid badge  
@@ -83,7 +83,7 @@ For more information about negative numbers in the grid overlay, navigate to [Li
 
 ### Hide line labels  
 
-Select **Hide line labels** to hide the line numbers.  
+Choose **Hide line labels** to hide the line numbers.  
 
 :::image type="complex" source="../media/grid-hide-line-labels.msft.png" alt-text="Hide line labels" lightbox="../media/grid-hide-line-labels.msft.png":::
    Hide line labels  
@@ -93,7 +93,7 @@ Select **Hide line labels** to hide the line numbers.
 
 For more information about line names in the grid overlay, navigate to [Layout using named grid lines][MdnLayoutUsingNamedGridLines].  
 
-Select **Show line names** to view the line names instead of numbers.  In the example, 4 lines have names: `left`, `middle1`, `middle2`, and `right`.  
+Choose **Show line names** to view the line names instead of numbers.  In the example, 4 lines have names: `left`, `middle1`, `middle2`, and `right`.  
 
 <!--In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  -->  
 
@@ -171,7 +171,7 @@ To open the color picker and customize the grid overlay color, choose the box ne
 
 ### Highlight the grid  
 
-To highlight the HTML element in the **Elements** panel and scroll to it on the webpage, choose the **Show element in the Elements panel** \(![Show element in the Elements panel icon][ImageShowElementInElementsPanelIcon]\) icon.  
+To highlight the HTML element in the **Elements** tool and scroll to it on the webpage, choose the **Show element in the Elements panel** \(![Show element in the Elements panel icon][ImageShowElementInElementsPanelIcon]\) icon.  
 
 :::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Highlight the grid" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
    Highlight the grid  
