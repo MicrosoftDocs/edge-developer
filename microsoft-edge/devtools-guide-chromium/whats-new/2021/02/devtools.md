@@ -3,32 +3,56 @@ description: Debugging support for CSS Flexbox, performance heads-up display on 
 title: What's new in DevTools (Microsoft Edge 90)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/11/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
+<!-- Copyright Jecelyn Yeen 
 
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->  
 # What's New In DevTools (Microsoft Edge 90)  
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
-## Introducing Focus Mode and Tooltips  
+## Group tabs together in Focus Mode  
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
+<!-- Title: Focus Mode  -->  
+<!-- Subtitle: Organize your favorite tools into groups with the new Focus Mode UI.  -->  
 
-<!-- Title: Focus Mode and DevTools tooltips  -->  
-<!-- Subtitle: Organize your favorite tools into groups and learn more about the wide array of tools and panes in the DevTools with tooltips  -->  
+Focus Mode is an experimental interface that allows you to group different tools together based on your own debugging scenarios.  The new **Activity Bar** displayed on the left includes predefined tool groups such as **Layout** and **Debugging**.  To customize each tool group, close tools with the **Close** \(`X`\) icon or add new tools with the **More tools** \(`+`\) icon.  
 
-Focus Mode allows you to group different tools to match your debugging scenarios.  The new **Activity Bar** displays on the left and includes some predefined groups that contain recommended tools.  The predefined groups include **Layout** and **Debugging**.  To customize each tool group, you may close tools or add new ones.  The new tooltips help you learn about all the different tools and panes in the DevTools.  Choose the **Help** \(`?`\) icon at the bottom of the **Activity Bar** to display \(or hide\) informative overlays in the DevTools.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  To turn on the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] and choose the checkbox next to **Focus Mode and DevTools Tooltips**.  
+> [!NOTE]
+> The DevTools team recommends that you use this experimental feature with [Enable + button tab menus to open more tools experiment][DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools] experimental feature.  
 
-:::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="Choose the Help icon in the Activity Bar to display Focus mode and tooltips" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
-   Choose the Help icon in the **Activity Bar** to display Focus mode and tooltips  
+To turn on the experiment, navigate to Turn on experimental features and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
+
+:::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="Display the Activity Bar" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
+   Display the **Activity Bar**  
+:::image-end:::  
+
+## Learn about DevTools with informative Tooltips  
+
+<!-- Title: DevTools Tooltips  -->  
+<!-- Subtitle: Learn more about how to use DevTools with informative DevTools tooltips.  -->  
+
+The Tooltips feature helps you learn about all the different tools and panes in the DevTools.  Choose the Help \(`?`\) icon at the bottom of the **Activity Bar** to toggle Tooltips in the DevTools.  When Tooltips are on, hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on the experiment, navigate to turn on experimental features and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].  
+
+:::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="Choose the Help (?) icon in the Activity Bar to display tooltips" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
+   Choose the Help \(`?`\) icon in the **Activity Bar** to display tooltips  
 :::image-end:::  
 
 ## Customize keyboard shortcuts in Settings  
-
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
 <!-- Title: Change keyboard shortcuts in Settings  -->  
 <!-- TODO:  Rachel's feedback is about the fact that this experimental feature is turned on by default, may have separate section in What's New for experimental features)  -->  
@@ -36,8 +60,7 @@ Focus Mode allows you to group different tools to match your debugging scenarios
 
 You may now customize the keyboard shortcut for any action in the DevTools.  To edit a keyboard shortcut, complete the following actions.  
 
-1.  Navigate to [DevTools Settings][DevtoolsCustomizeIndexSettings]
-1.  Choose **Shortcuts**.  
+1.  Open the DevTools, and then choose **Settings** > **Shortcuts**.  
 1.  Choose the action you want to customize.  
 1.  Choose the Edit \(![Edit Keyboard Shortcut icon](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)\) icon.  
 1.  Select the keys you want to bind to the action.  
@@ -45,8 +68,8 @@ You may now customize the keyboard shortcut for any action in the DevTools.  To 
     
 For more information about customizing and editing shortcuts, navigate to [Customize keyboard shortcuts in the Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [174309][CR174309].  
 
-:::image type="complex" source="../../media/2021/02/custom-shortcut-pause-script.msft.png" alt-text="Customize keyboard shortcuts in DevTools Settings" lightbox="../../media/2021/02/custom-shortcut-pause-script.msft.png":::
-   Customize keyboard shortcuts in [DevTools Settings][DevtoolsCustomizeIndexSettings]  
+:::image type="complex" source="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png" alt-text="Customize keyboard shortcuts in the DevTools Settings on Shortcuts with a shortcut in edit mode" lightbox="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png":::
+   Customize keyboard shortcuts in the [DevTools Settings][DevtoolsCustomizeIndexSettings] on Shortcuts with a shortcut in edit mode  
 :::image-end:::  
 
 ## Microsoft Edge DevTools for Visual Studio Code extension update 1.1.4  
@@ -54,7 +77,7 @@ For more information about customizing and editing shortcuts, navigate to [Custo
 <!-- Title: Edge Devtools for Visual Studio code extension update 1.1.4  -->  
 <!-- Subtitle: Latest changes including a favicon is displayed next to each of the instances and console messages from the browser are displayed in the console of Visual Studio Code.  -->  
 
-The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extension version 1.1.4 for Microsoft Visual Studio Code now displays a favicon next to each of the DevTools instances.  Console messages from Microsoft Edge now display in the Integrated Terminal of Microsoft Visual Studio Code.
+The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extension version 1.1.4 for Microsoft Visual Studio Code now displays a favicon next to each of the DevTools instances.  Console messages from Microsoft Edge now display in the Output: DevTools Console of Microsoft Visual Studio Code.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.4, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  You may file issues and contribute to the extension on the [vscode-edge-devtools][GithubMicrosoftVscodeEdgeDevtools] GitHub repo.  
 
 :::row:::
    :::column span="":::
@@ -63,24 +86,22 @@ The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketpl
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="Display the same message in the Integrated Terminal in Microsoft Visual Studio Code" lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
-         Display the same message in the Integrated Terminal in Microsoft Visual Studio Code  
+      :::image type="complex" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="Display the same message in the DevTools Console under Output of Microsoft Visual Studio Code" lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
+         Display the same message in the DevTools Console under Output of Microsoft Visual Studio Code  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.4, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  You may file issues and contribute to the extension on the [vscode-edge-devtools][GithubMicrosoftVscodeEdgeDevtools] GitHub repo.  
+## Improved CSS flexbox editing with visual flexbox editor and multiple overlays  
 
-## New CSS flexbox debugging tools  
-
-<!-- Title: ???  -->  
-<!-- Subtitle: ???  -->  
+<!-- Title: Try different CSS flexbox layouts with the visual flexbox editor  -->  
+<!-- Subtitle: In the Styles pane, choose the icon that appears next to display: flex to try different layout properties for flex containers.  -->  
 
 DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` or `display: inline-flex` CSS style is applied to an HTML element, a `flex` icon displays next to that element in the **Elements** tool.  To display \(or hide\) a flex overlay on the webpage, choose the `flex` icon.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1166710][CR1166710] and [1175699][CR1175699].  
 
 :::row:::
    :::column span="":::
-      To open the **Flexbox** editor, navigate to the **Styles** pane and choose the new icon next to the `display: flex` \(or `display: inline-flex`\).  The **Flexbox** editor provides a quick way to edit the flexbox properties.  
+      To open the **Flexbox** editor, navigate to the **Styles** pane and choose the new icon next to the `display: flex` or `display: inline-flex` style.  The **Flexbox** editor provides a quick way to edit the flexbox properties.  
    :::column-end:::
    :::column span="":::
       In addition, the **Flexbox** section in the **Layout** pane displays all of the flexbox elements on the webpage.  You may toggle the overlay of each element.  
@@ -104,7 +125,9 @@ DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` 
 <!-- Title: Navigate the request initiator chain in the Network tool with the keyboard  -->  
 <!-- Subtitle: The Initiator pane may now be expanded or collapsed with the arrow keys.  -->  
 
-Previously, you were not able to expand \(or collapse\) the chain of requests using the arrow keys on the keyboard in the **Initiator** pane, unlike the DOM in the **Elements** tool.  The **Initiator** pane displays in the **Network** tool when a network request is chosen.  The **Initiator** pane displays the chain of requests that initiated the currently selected request.  In Microsoft Edge version 90, you may expand \(or collapse\) the chain of requests using the arrow keys on the keyboard in the **Initiator** pane.  The focused network request in the chain is also now highlighted.  To learn more about initiators in the **Network** tool, navigate to [Display initiators and dependencies][DevtoolsNetworkReferenceDisplayInitiatorsDependencies]  To review the history of this feature in the Chromium open-source project, navigate to Issues [1158276][CR1158276] and [1160637][CR1160637].  
+Previously, you were not able to expand or collapse the chain of requests using the arrow keys on the keyboard in the **Initiator** pane, unlike the DOM in the **Elements** tool.  When a network request is selected in the **Network** tool, the **Initiator** pane displays the chain of requests that initiated the currently selected request.  
+
+In Microsoft Edge version 90, you may expand or collapse the chain of requests using the arrow keys on the keyboard in the **Initiator** pane.  The focused network request in the chain is also now highlighted.  To learn more about initiators in the **Network** tool, navigate to [Display initiators and dependencies][DevtoolsNetworkReferenceDisplayInitiatorsDependencies].  To review the history of this feature in the Chromium open-source project, navigate to Issues [1158276][CR1158276] and [1160637][CR1160637].  
 
 :::row:::
    :::column span="":::
@@ -113,8 +136,8 @@ Previously, you were not able to expand \(or collapse\) the chain of requests us
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png" alt-text="Expand \(or collapse\) the request initiator chain and follow the highlighted row" lightbox="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png":::
-         Expand \(or collapse\) the request initiator chain and follow the highlighted row  
+      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png" alt-text="Expand or collapse the request initiator chain and follow the highlighted row" lightbox="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png":::
+         Expand or collapse the request initiator chain and follow the highlighted row  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
@@ -153,14 +176,14 @@ Previously, the **Console** did not output valid double quote \(`"`\) characters
 
 ### Emulate the CSS color-gamut media feature  
 
-The [color-gamut][ChromestatusFeature5354410980933632] media query emulates the approximate range of colors that are supported by the browser and the output device.  The dropdown under **Emulate CSS media feature color-gamut** contains color spaces that DevTools may emulate.  For example, to trigger a `color-gamut: p3` media query, choose **color-gamut: p3** from the dropdown.  
+The [color-gamut][ChromestatusFeature5354410980933632] media query emulates the approximate range of colors supported by the browser and the device you are testing.  The dropdown under **Emulate CSS media feature color-gamut** contains color spaces that DevTools may emulate.  For example, to trigger a `color-gamut: p3` media query, choose **color-gamut: p3** from the dropdown.  
 
 To emulate the CSS color-gamut media feature, complete the following actions.  
 
 1.  Open the [Command Menu][DevtoolsCommandMenuIndex].  
 1.  Type `Rendering`.  
 1.  Run the **Show Rendering** command.  
-1.  Navigate to **Emulate CSS media feature color-gamut** and choose the `color-gamut: ...` option.  
+1.  Navigate to **Emulate CSS media feature color-gamut** and choose `color-gamut: ...`.  
 
 To learn more about the `color-gamut` feature, navigate to [Color Display Quality: the 'color-gamut' feature][CsswgDraftsMediaqueries4ColorGamut].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1073887][CR1073887].  
 
@@ -172,7 +195,7 @@ To learn more about the `color-gamut` feature, navigate to [Color Display Qualit
 
 #### PWA installability warning in the Console  
 
-The **Console** now displays a more detailed [Progressive Web Apps (PWA)][ProgressiveWebAppsIndex] installability warning message with a link to [Improving Progressive Web App offline support detection][ChromeDeveloperBlogImprovedPwaOfflineDetection].  To review the history of this feature in the Chromium open-source project, navigate to Issues [965802][CR965802], [1146450][CR1146450], and [1169689][CR1169689].  
+The **Console** now displays a more detailed [Progressive Web Apps (PWA)][ProgressiveWebAppsIndex] installability warning message with a link to [Improving Progressive Web App offline support detection][ChromeDeveloperBlogImprovedPwaOfflineDetection].  
 
 :::image type="complex" source="../../media/2021/02/console-pwa-installability.msft.png" alt-text="PWA installability warning in Console tool" lightbox="../../media/2021/02/console-pwa-installability.msft.png":::
    PWA installability warning in **Console** tool  
@@ -180,7 +203,7 @@ The **Console** now displays a more detailed [Progressive Web Apps (PWA)][Progre
 
 #### PWA description length warning in the Manifest pane
 
-The **Manifest** pane now displays a warning message if the manifest description exceeds 324 characters.  To review the history of this feature in the Chromium open-source project, navigate to Issues [965802][CR965802], [1146450][CR1146450], and [1169689][CR1169689]..  
+The **Manifest** pane now displays a warning message if the manifest description exceeds 324 characters.  
 
 :::image type="complex" source="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png" alt-text="PWA description truncate warning" lightbox="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png":::
    PWA description truncate warning  
@@ -193,9 +216,9 @@ In addition, the **Manifest** pane now shows a warning message if the screenshot
 
 :::image type="complex" source="../../media/2021/02/pwa-screenshot.msft.png" alt-text="PWA screenshot warning" lightbox="../../media/2021/02/pwa-screenshot.msft.png":::
    PWA screenshot warning  
-:::image-end:::
+:::image-end:::  -->  
 
-To review the history of this feature in the Chromium open-source project, navigate to Issues [965802][CR965802], [1146450][CR1146450], and [1169689][CR1169689].  -->  
+To review the history of this feature in the Chromium open-source project, navigate to Issues [965802][CR965802], [1146450][CR1146450], and [1169689][CR1169689].  
 
 ### New Remote Address Space column in the Network tool  
 
@@ -223,7 +246,7 @@ The Requests table now displays a new column with the header named **Remote Addr
 
 ### Display allowed and disallowed features in the Frame details view  
 
-The Frame details view now displays a list of allowed and disallowed browser features controlled by the [Permissions Policy][GithubW3cWebappsecPermissionsPolicyBlobMainPermissionsPolicyExplainer].  Permissions Policy is a web platform API allows a webpage to allow \(or block\) the use of browser features in an individual frame or in iframes that it embeds.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1158827][CR1158827].  
+The Frame details view now displays a list of allowed and disallowed browser features controlled by the [Permissions Policy][GithubW3cWebappsecPermissionsPolicyBlobMainPermissionsPolicyExplainer].  Permissions Policy is a web platform API that allows \(or blocks\) a webpage the use of browser features in an individual frame or in iframes that it embeds.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1158827][CR1158827].  
 
 :::image type="complex" source="../../media/2021/02/application-frames-permissions-policy.msft.png" alt-text="Allowed and disallowed features based on the Permission Policy" lightbox="../../media/2021/02/application-frames-permissions-policy.msft.png":::
    Allowed and disallowed features based on the Permission Policy  
@@ -239,7 +262,7 @@ The **Cookies** pane in the **Application** tool now displays the `SameParty` at
 
 ### fn.displayName property in the Console tool is now deprecated  
 
-Previously, the `fn.displayName` property allowed you \(a developer\) to control debug names for functions to display in `error.stack` and in DevTools stack traces.  Starting in Microsoft Edge version 90, the `fn.displayName` property is now deprecated, and replaced by the `fn.name` property.  To learn more about `fn.name`, navigate to [Function.name][MdnJavascriptReferenceGlobalObjectsFunctionName].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1177685][CR1177685].  
+Previously, the `fn.displayName` property allowed you to control debug names for functions to display in `error.stack` and in DevTools stack traces.  Starting in Microsoft Edge version 90, the `fn.displayName` property is now deprecated, and replaced by the `fn.name` property.  To learn more about `fn.name`, navigate to [Function.name][MdnJavascriptReferenceGlobalObjectsFunctionName].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1177685][CR1177685].  
 
 :::row:::
    :::column span="":::
@@ -266,7 +289,7 @@ Previously, the `fn.displayName` property allowed you \(a developer\) to control
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-This experiment provides a **full accessibility tree view** in the **Elements** tool.  The [Accessibility][DevtoolsAccessibilityReferenceTheAccessibilityPane] pane provides a partial accessibility tree view, that displays the direct ancestor chain from the root node to the inspected node.  After you turn on this experiment, choose one of the following buttons switch the display in the **Elements** tool for all elements on the webpage.  
+This experiment provides a **full accessibility tree view** in the **Elements** tool.  The [Accessibility][DevtoolsAccessibilityReferenceTheAccessibilityPane] pane provides a partial accessibility tree view, that displays the direct ancestor chain from the root node to the inspected node.  After you turn on this experiment, choose one of the following buttons to switch the display in the **Elements** tool for all elements on the webpage.  
 
 *   To display the full accessibility tree view , choose the **Switch to full accessibility tree view**.  
 *   To display the DOM tree view, choose the **Switch to DOM tree view**.  
@@ -294,6 +317,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [DevtoolsConsoleReferenceOpenConsoleSidebar]: /microsoft-edge/devtools-guide-chromium/console/reference#open-the-console-sidebar "Open the Console Sidebar - Console reference | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcuts]: /microsoft-edge/devtools-guide-chromium/customize/shortcuts "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: /microsoft-edge/devtools-guide-chromium/experimental-features/index#enable--button-tab-menus-to-open-more-tools "Enable + button tab menus to open more tools - Experimental features | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: /microsoft-edge/devtools-guide-chromium/experimental-features/index#turn-on-experimental-features "Turn on experimental features - Experimental features | Microsoft Docs"  
 [DevtoolsNetworkReferenceAddRemoveColumns]: /microsoft-edge/devtools-guide-chromium/network/reference#add-or-remove-columns "Add or remove columns - Network Analysis reference | Microsoft Docs"  
 [DevtoolsNetworkReferenceDisplayInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#display-initiators-and-dependencies "Display initiators and dependencies - Network Analysis reference | Microsoft Docs"  
