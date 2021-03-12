@@ -114,7 +114,7 @@ The following shortcuts control the main DevTools window, work across all tools,
 | Zoom in | `Ctrl`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Zoom out | `Ctrl`+`-` | `Command`+`-` |  
 | Restore default zoom level | `Ctrl`+`0` | `Command`+`0` |  
-| Run snippet | `Ctrl`+`O` or `Ctrl`+`P`, type `!` followed by the name of the script, then press `Enter` | Press `Command`+`O` or `Command`+`P`, type `!` followed by the name of the script, then press `Enter` |  
+| Run snippet | `Ctrl`+`O` or `Ctrl`+`P`, type `!` followed by the name of the script, then select `Enter` | Select `Command`+`O` or `Command`+`P`, type `!` followed by the name of the script, then select `Enter` |  
 | Show non-editable HTML source code in a new tab | `Ctrl`+`U` | N/A |  
 
 > [!NOTE]

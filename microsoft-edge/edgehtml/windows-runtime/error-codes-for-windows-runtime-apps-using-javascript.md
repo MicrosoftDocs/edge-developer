@@ -1,6 +1,8 @@
 ---
-description: Error codes for Windows Runtime apps using JavaScript.
+description: Error codes for Windows Runtime apps using JavaScript
 title: "Error codes for Windows Runtime apps using JavaScript"
+ms.custom: ""
+ms.date: 11/03/2020
 ms.prod: microsoft-edge
 ms.technology: "windows-integration"
 ms.topic: "article"
@@ -31,7 +33,6 @@ ms.assetid: 4c6d4e90-602a-4b56-ae74-3458929da442
 caps.latest.revision: 1
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Error codes for Windows Runtime apps using JavaScript  
