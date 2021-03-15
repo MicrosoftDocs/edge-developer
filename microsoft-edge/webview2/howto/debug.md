@@ -3,15 +3,15 @@ description: Learn how to debug WebView2 controls.
 title: Get started debugging WebView2 applications
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 03/08/2021
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
-# Get started debugging WebView2 applications  
+# Get started debugging WebView2 apps  
 
-The goal of the Microsoft Edge WebView2 control is to combine the best of both the web and native application development features and tools.  When you develop your WebView2 application, you should debug your application.  This article outlines the different tools to use to debug both your web and native code in your WebView2 application.  
+The goal of the Microsoft Edge WebView2 control is to combine the best of both the web and native app development features and tools.  When you develop your WebView2 app, you should debug your app.  This article outlines the different tools to use to debug both your web and native code in your WebView2 app.  
 
 ## [Microsoft Edge DevTools](#tab/devtools)  
 
@@ -29,10 +29,10 @@ For more information, navigate to [DevTools overview][DevtoolsGuideChromiumMain]
 
 ## [Visual Studio](#tab/visualstudio)  
 
-Visual Studio provides various debugging tools for web and native code in WebView2 applications.  In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available as usual.  Use the following process to debug web and native code in Win32 applications or Office Add-ins only.  
+Visual Studio provides various debugging tools for web and native code in WebView2 apps.  In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available as usual.  Use the following process to debug web and native code in Win32 apps or Office Add-ins only.  
 
 > [!IMPORTANT]
-> When you debug your application in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.  Select `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  
+> When you debug your app in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.  Select `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.  
 
 Before you begin, ensure the following requirements are met.  
 
@@ -62,7 +62,7 @@ Install and set up the script debugger tools in Visual Studio.
            Visual Studio Modifying Individual Components Tab  
         :::image-end:::  
         
-1.  Enable script debugging for WebView2 applications.  
+1.  Enable script debugging for WebView2 apps.  
     1.  In your WebView2 project, open the context menu \(right-click\), and choose **Properties**.  
     1.  Under the **Configuration Properties**, choose **Debugging**.  
     1.  Under the **Debugger Type**, choose **JavaScript (WebView2)**.  
@@ -71,7 +71,7 @@ Install and set up the script debugger tools in Visual Studio.
            Visual Studio **Debugging** Configuration Property  
         :::image-end:::  
         
-Complete the following actions to debug your WebView2 application.  
+Complete the following actions to debug your WebView2 app.  
 
 1.  To set a breakpoint in your source code, hover to the left of the line number, and choose to set a breakpoint.  The JS/TS debug adapter does not perform source path mapping.  You must open the exact same path associated with your WebView2.  
     
@@ -79,7 +79,7 @@ Complete the following actions to debug your WebView2 application.
        Visual Studio add breakpoint  
     :::image-end:::  
     
-1.  To run the debugger, choose the bit size of the platform, and then choose the green play button next to **Local Windows Debugger**.  The application runs and the debugger connects to the first WebView2 process that is created.  
+1.  To run the debugger, choose the bit size of the platform, and then choose the green play button next to **Local Windows Debugger**.  The app runs and the debugger connects to the first WebView2 process that is created.  
     
     :::image type="complex" source="./media/run.png" alt-text=" Visual Studio Local Windows Debugger" lightbox="./media/run.png"::: 
        Visual Studio **Local Windows Debugger**  
@@ -104,13 +104,19 @@ In Visual Studio Code, complete the following actions to debug your code.
         "type": "pwa-msedge",
         "port": 9222, // The port value is optional, and the default value is 9222.
         "request": "launch",
-        "runtimeExecutable": "C:/path/to/your/webview2/application.exe",
+        "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
         "env": {
-            // Customize for your application location if needed
-            "Path": "%path%;e:/path/to/your/application/location; "
+            // Customize for your app location if needed
+            "Path": "%path%;e:/path/to/your/app/location; "
         },
         "useWebView": true,
+        // The following two lines setup source path mapping, where `url` is the start page of your app, and `webRoot` is the top level directory with all your code files.
+        "url": "file:///${workspaceFolder}/path/to/your/toplevel/foo.html",
+        "webRoot": "${workspaceFolder}/path/to/your/assets"
     ```  
+    
+    > [!NOTE]
+    > Visual Studio Code source path mapping now requires the URL, so your app now receives a command-line parameter when it starts.  You may safely ignore the `url` parameter if needed.  
     
 1.  To set a breakpoint in your source code, hover on the line, and select `F9`
     
@@ -118,12 +124,9 @@ In Visual Studio Code, complete the following actions to debug your code.
        Breakpoint is set in Visual Studio Code  
     :::image-end:::
     
-    > [!NOTE]
-    > Because Visual Studio Code does not perform source mapping, ensure you set breakpoints in the same file that WebView2 uses.  If the paths do not match, Visual Studio Code does not pause the running code at the breakpoint.  
-    
 1.  Run the code.  
     1.  On the **Run** tab, choose the launch configuration from the dropdown menu.  
-    1.  To start debugging your application, choose Start Debugging, which is the green triangle next to the launch configuration drop down.  
+    1.  To start debugging your app, choose Start Debugging, which is the green triangle next to the launch configuration drop down.  
         
         :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio Code Run tab" lightbox="./media/runvs.png":::
            Visual Studio Code Run tab  
@@ -139,7 +142,7 @@ In Visual Studio Code, complete the following actions to debug your code.
 
 *   Targeted Webview debugging. 
     
-    In some WebView2 applications, you may use more than one WebView2 control. To pick the WebView2 control to debug in this situation you can use targeted webview2 debugging 
+    In some WebView2 apps, you may use more than one WebView2 control. To pick the WebView2 control to debug in this situation you can use targeted webview2 debugging 
     
     Open `launch.json` and complete the following actions to use targeted Webview debugging.  
     
@@ -157,7 +160,7 @@ In Visual Studio Code, complete the following actions to debug your code.
     urlFilter="file://C:/path/to/my/index.ts," // To match explicit file called index.ts.  
     ```  
     
-    When debugging your application, you may need to step through the code from the beginning of the rendering process. If you are rendering webpages on sites and you don't have access to the source code, you can use the `?=value` option, because webpages ignore unrecognized parameters.   
+    When debugging your app, you may need to step through the code from the beginning of the rendering process. If you are rendering webpages on sites and you don't have access to the source code, you can use the `?=value` option, because webpages ignore unrecognized parameters.   
     
     > [!IMPORTANT]
     > After the first match is found in the URL, the debugger stops.  You cannot debug two WebView2 controls at the same time because the CDP port is shared by all WebView2 controls, and uses a single port number.  
@@ -171,7 +174,7 @@ In Visual Studio Code, complete the following actions to debug your code.
         "type": "pwa-msedge",
         "port": 9222, 
         "request": "attach",
-        "runtimeExecutable": "C:/path/to/your/webview2/application.exe",  
+        "runtimeExecutable": "C:/path/to/your/webview2/app.exe",  
         "env": {
             "Path": "%path%;e:/path/to/your/build/location; "  
         },
@@ -193,7 +196,7 @@ In Visual Studio Code, complete the following actions to debug your code.
                 "type": "pwa-msedge",
                 "port": 9222, 
                 "request": "attach",
-                "runtimeExecutable": "C:/path/to/your/webview2/application.exe",  
+                "runtimeExecutable": "C:/path/to/your/webview2/app.exe",  
                 "env": {
                 "Path": "%path%;e:/path/to/your/build/location; "  
                 },
@@ -218,7 +221,7 @@ In Visual Studio Code, complete the following actions to debug your code.
         
 *   Debug Office Add-ins.  
     
-    If you're debugging Office Add-ins, open the add-in source code in a separate instance of Visual Studio Code.  Open launch.json in your WebView2 application and add the following code snippet to attach the debugger to the Office add-in.
+    If you're debugging Office Add-ins, open the add-in source code in a separate instance of Visual Studio Code.  Open launch.json in your WebView2 app and add the following code snippet to attach the debugger to the Office add-in.
     
     ```json
     ,"debugServer": 4711
@@ -254,9 +257,4 @@ In Visual Studio Code, complete the following actions to debug your code.
 [Webview2MainNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 [Webview2MainGettingStarted]: ../index.md#getting-started "Getting started - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 
-[GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"  
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
-
-[GithubMicrosoftVscodeJSDebugWhatsNew]: https://github.com/microsoft/vscode-js-debug#whats-new "What's new? - JavaScript debugger for Visual Studio Code - microsoft/vscode-js-debug | GitHub"  
-
-[GithubMicrosoftVscodeEdgeDebug2ReadmeChromiumWebviewApplications]: https://github.com/microsoft/vscode-edge-debug2/blob/master/README.md#microsoft-edge-chromium-webview-applications "Microsoft Edge (Chromium) WebView applications - Visual Studio Code - Debugger for Microsoft Edge - microsoft/vscode-edge-debug2 | GitHub"  
