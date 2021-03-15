@@ -1,4 +1,52 @@
+---
+description: An introduction to using Console tool inside the Microsoft Edge Developer Tools as a JavaScript environment.
+title: Console as a JavaScript environment
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 03/15/2021
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: microsoft edge, JavaScript, web development, f12 tools, devtools
+---
 
+# Console as a JavaScript environment
+
+The **Console** tool inside the browser DevTools is a [REPL][WikiREPLoop] environment, which means that you can write any JavaScript in it that will get immediately executed.
+
+You can try it right now. Open **Console** by selecting `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS). 
+
+Start typing in `2 + 2` and the Console already shows the result `4` on the line below whilst you type it. This is a feature called "Eager evaluation" and it helps you writing valid JavaScript as you can already see while you are typing if something is wrong or if there is a valid result.
+
+:::image type="complex" source="../media/console-intro-two-plus+two.msft.png" alt-text="Console showing the result of 2 + 2 live as you type it" lightbox="../media/console-intro-two-plus+two.msft.png":::
+Console showing the result of 2 + 2 live as you type it
+:::image-end:::  
+
+If you hit `Enter`, Console will run the JavaScript command, give you the result and you can write the next command. 
+
+:::image type="complex" source="../media/console-intro-javascript-expressions-live.msft.png" alt-text="Running several JavaScript expressions in succession" lightbox="../media/console-intro-javascript-expressions.msft.png":::
+Running several JavaScript expressions in succession
+:::image-end:::  
+
+## Autocompletion to write complex expressions
+
+This last example may look daunting but Console helps you write complex JavaScript by having an excellent autocompletion feature. This feature is a great way to learn about methods you didn't know before. Try it by typing `doc` and you get a dropdown menu to pick `document` from. Hit the `tab` key to do so. Type `.bo` and hit `tab` to get `document.body`. Type another `.` to get a huge list of possible properties and methods available on the body of the current document. 
+
+:::image type="complex" source="../media/console-intro-javascript-autocomplete.msft.png" alt-text="Console autocompletion of JavaScript expressions" lightbox="../media/console-intro-javascript-autocomplete.msft.png":::
+Console autocompletion of JavaScript expressions
+:::image-end:::  
+
+## Console history
+
+As with many other terminal-like experiences you also have a history of commands. Hitting Arrow-Up will show you the commands you entered before. Autocompletion also keeps a history of the commands you entered before, which means that you can type the first few letters of earlier commands and you get a box to choose from.
+
+In addition to having access to what you entered, Console also offers quite a few [DevtoolsConsoleUtilities][utility method] that make your life easier. For example, `$_` always contains the result of the last expression you ran in Console.
+
+
+## Multi line editing
+
+Out-of-the-box only have one line to write your JavaScript expression. Hitting `Enter` will run the code. This can get pretty frustrating. You can work around this by using `Shift + Enter`. 
+
+Using the Console is a great way to try out JavaScript functionality and to do some quick calculations. It's real power, however, comes with [interacting with the DOM in Console][DevtoolsDOMInteraction]. 
 
 This page explains how the Microsoft Edge DevTools Console makes it easier to develop web pages.  The **Console** has 2 main uses: [viewing logged messages](#viewing-logged-messages) and [running JavaScript](#running-javascript).  
 
@@ -83,3 +131,35 @@ When you run JavaScript you do not have to interact with the page.  You may use 
 The **Console** is a good place to try out the function.  
 
 For more hands-on experience with running JavaScript in the **Console**, navigate to [Get Started With Running JavaScript][DevtoolsConsoleRunningJavascript].  
+## Getting in touch with the Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
+<!-- links -->  
+[DevtoolsConsoleUtilities]: ./utilities.md
+[DevtoolsDOMInteraction]: ./console-dom-interaction.md
+[DevtoolsBreakpoints]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints.md
+[Live Expressions]: ./live-expressions.md
+[DevtoolsFilteringConsole]: ./console-filtering.md
+[DevtoolsConsoleLoggingDemo]: https://microsoftedge.github.io/DevToolsSamples/console/logging-examples.html
+[DevtoolsConsoleTypesDemo]: https://microsoftedge.github.io/DevToolsSamples/console/logging-types.html
+[DevtoolsConsoleSpecifiersDemo]: https://microsoftedge.github.io/DevToolsSamples/console/logging-with-specifiers.html
+[DevtoolsConsoleGroupsDemo]: https://microsoftedge.github.io/DevToolsSamples/console/logging-with-groups.html
+[DevtoolsConsoleTableDemo]: https://microsoftedge.github.io/DevToolsSamples/console/logging-with-table.html
+[WikiStackTrace]: https://en.wikipedia.org/wiki/Stack_trace "Stack trace - Wikipedia"  
+[DevtoolsConsoleErrorDemo]: https://microsoftedge.github.io/DevToolsSamples/console/error.html
+[DevtoolsConsoleFilter]: ../microsoft-edge/devtools-guide-chromium/console/reference#filter-messages
+[DevToolsIssues]: /microsoft-edge/devtools-guide-chromium/issies
+[DevToolsConsoleAPI]: ./api.md "Console API Reference | Microsoft Docs"  
+[DevtoolsConsoleLoggingMessages]: ./log.md "Get Started With Logging Messages In The Console | Microsoft Docs"  
+[DevtoolsConsoleRunningJavascript]: ./javascript.md "Get Started With Running JavaScript In The Console | Microsoft Docs"  
+[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "debug - Console Utilities API Reference | Microsoft Docs"  
+[MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array.prototype.map() | MDN"  
+[MDNWindow]: https://developer.mozilla.org/docs/Web/API/Window "Window | MDN"  
+[WikiREPLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read–eval–print loop - Wikipedia"  
+
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

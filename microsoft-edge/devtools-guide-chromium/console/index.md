@@ -83,7 +83,7 @@ As you can see there are a lot of useful methods available and it makes sense to
 
 ## Trying out JavaScript live in Console
 
-**Console** is not only a place to log information, it is also a [REPL][WikiREPLoop] invironment, which means that you can write any JavaScript in it that will get immediately executed. This is useful if you just want to play with some new JavaScript features or do some quick calculations. You get all the features you expect from a modern editing environment, like autocompletion, syntax highlighting and history. 
+**Console** is not only a place to log information, it is also a [REPL][WikiREPLoop] environment, which means that you can write any JavaScript in it that will get immediately executed. This is useful if you just want to play with some new JavaScript features or do some quick calculations. You get all the features you expect from a modern editing environment, like autocompletion, syntax highlighting and history. 
 
 Try it out right now. Go to Console and type in `2 + 2`. You will see that Console already shows the result `4` on the line below. This is a feature called "Eager evaluation" and is handy to see that you are not making any mistakes. 
 
@@ -105,7 +105,7 @@ The autocompletion feature of Console can be a great way to learn about methods 
 Console autocompletion of JavaScript expressions
 :::image-end:::  
 
-There are a few more tricks available and you can learn more in [JavaScript in Console][DevtoolsConsoleJS]. 
+There are a few more tricks available and you can learn more in [Console as a JavaScript environment][DevtoolsConsoleJS]. 
 
 ## Interact with the current document in the browser
 
