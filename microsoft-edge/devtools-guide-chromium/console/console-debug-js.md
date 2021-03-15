@@ -27,8 +27,8 @@ Activating this button takes you to the **Console** and gives you more informati
 
 From this information you can gather that the error is on line 14 of the file called `error.html`. If you activate the `error.html:14` link on the right the Console takes you directly to the Sources tool and highlights the problematic line of code.
 
-:::image type="complex" source="../media/console-intro-error-to-sources.msft.png" alt-text="DevTools giving detailed information about the error in the Console" lightbox="../media/console-intro-error-to-sources.msft.png":::
-   DevTools giving detailed information about the error in the Console 
+:::image type="complex" source="../media/console-intro-error-to-sources.msft.png" alt-text="The Sources tool highlighting the line of code that caused the error" lightbox="../media/console-intro-error-to-sources.msft.png":::
+   The Sources tool highlighting the line of code that caused the error 
 :::image-end:::  
 
 In this case, the script tried to get the first `h2` element in the document and paint a red border around it. But as there is no `h2` element the script fails. 
