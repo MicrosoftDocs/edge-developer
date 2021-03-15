@@ -3,11 +3,12 @@ description: Legacy Microsoft Edge documentation.  Content for Microsoft Edge (e
 title: Legacy Microsoft Edge documentation
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2020
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.localizationpriority: high
 ---
 # Legacy Microsoft Edge documentation  
 
