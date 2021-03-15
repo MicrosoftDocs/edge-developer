@@ -56,7 +56,7 @@ By using Shift and Enter you can write several lines of JavaScript and the resul
 If you start a multi-line statement in Console it gets automatically recognized and indented that. For example, if you start a block statement with a curly brace.
 
 :::image type="complex" source="../media/console-intro-multilline-expression.msft.png" alt-text="Console already recognizing multiline expressions using curly braces and indented them for you" lightbox="../media/console-intro-multilline-expression.msft.png":::
-Console already recognizing multiline expressions using curly braces and indented them for you
+    Console already recognizing multiline expressions using curly braces and indented them for you
 :::image-end:::  
 
 ## Network requests using top level await()
@@ -64,39 +64,27 @@ Console already recognizing multiline expressions using curly braces and indente
 Other than in your own scripts, Console supports [top-level await][TopLevelAwait] which means you can run arbitrary asynchronous Javascript in it.For example, you can use the fetch API without having to wrap the await statement in an async function. Using the following code will get you the last 50 issues filed on the [Edge Developer Tools for Visual Studio Code GitHub repository](https://github.com/microsoft/vscode-edge-devtools).
 
 ```javascript
-await (
-    await fetch('https://api.github.com/repos/microsoft/vscode-edge-devtools/issues?state=all&per_page=50&page=1')
-).json();
+await ( await fetch(
+'https://api.github.com/repos/microsoft/vscode-edge-devtools/issues?state=all&per_page=50&page=1'
+)).json();
 ```
 
 If you copy and paste this into Console you get an object containing 10 entries, which is hard to take in.
 
-:::image type="complex" source="../media/console-intro-javascript-async-result.msft.png" alt-text="Console already recognizing multiline expressions using curly braces and indented them for you" lightbox="../media/console-intro-javascript-async-result.msft.png":::
-Console already recognizing multiline expressions using curly braces and indented them for you
+:::image type="complex" source="../media/console-intro-javascript-async-result.msft.png" alt-text="Console showing the result of a top level async fetch call" lightbox="../media/console-intro-javascript-async-result.msft.png":::
+    Console showing the result of a top level async fetch call
+:::image-end:::  
+
+Luckily enough, you can use the `console.table()` logging method to cut down to the things you're really interested in.
+
+:::image type="complex" source="../media/console-javascript-results-with-table.msft.png" alt-text="Displaying the last result in a human readable form using console.table" lightbox="../media/console-javascript-results-with-table.msft.png":::
+    Displaying the last result in a human readable form using console.table    
 :::image-end:::  
 
 
-And you’ll have the parsed JSON from that github API call straight in your console!
-
-Normally, you’d have to wrap the await statement in an async function, but for convenience, you don’t have to do here in the console.
+Using the Console is a great way to try out JavaScript functionality and to do some quick calculations. It's real power, however, comes with the fact that you have access to the [window][MDNWindow] object which means you can  [interact with the DOM in Console][DevtoolsDOMInteraction]. 
 
 
-
-Depedin
-
-Using the Console is a great way to try out JavaScript functionality and to do some quick calculations. It's real power, however, comes with [interacting with the DOM in Console][DevtoolsDOMInteraction]. 
-
-
-of `console` methods, navigate to the [Console API Reference][DevToolsConsoleAPI].  The main difference between the methods is how the data being logged is displayed.  
-
-## Running JavaScript  
-
-Modifying the page from the **Console** is possible because the **Console** has full access to the [window][MDNWindow] of the page.  DevTools has a few convenience functions that make it easier to inspect a page.  For example, suppose that your JavaScript contains a function called `hideModal`.  Running `debug(hideModal)` pauses your code on the first line of `hideModal` the next time that you run it.  For more information about the full list of utility functions, navigate to [Console Utilities API Reference][DevtoolsConsoleUtilitiesDebug].  
-
-When you run JavaScript you do not have to interact with the page.  You may use the **Console** to try out new code unrelated to the page.  For example, suppose you just learned about the built-in JavaScript Array [map()][MDNMap] method, and you want to experiment with it.  trying my best to un
-The **Console** is a good place to try out the function.  
-
-For more hands-on experience with running JavaScript in the **Console**, navigate to [Get Started With Running JavaScript][DevtoolsConsoleRunningJavascript].  
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
