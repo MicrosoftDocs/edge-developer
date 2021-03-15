@@ -3,7 +3,7 @@ description: Learn how to use the Chrome DevTools Protocol in your WebView2 apps
 title: Use Chrome DevTools Protocol in WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/11/2021
+ms.date: 03/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -28,7 +28,7 @@ To use the Chromium DevTools Protocol API in WebView2, use either of the followi
 ## Use DevToolsProtocolHelper (Preview)
 
 > [!NOTE]
-> The DevToolsProtocolHelper NuGet package is currently in technical preview. While in preview, refrain from using the package in production applications.
+> The [Microsoft.Web.WebView2.DevToolsProtocolExtension][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] NuGet package is currently in technical preview.  While in preview, refrain from using the package in production apps.
 
 [Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview)][NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension] is a NuGet package created by the WebView2 team that provides easy access to Chromium DevTools Protocol features.  The following examples describe how to use the geolocation functionality in Chromium DevTools Protocol in your WebView2 control.  You may follow a similar pattern to use other Chromium DevTools Protocol features.  
 
@@ -44,7 +44,7 @@ To create an `HTML file` to find your geolocation, complete following the action
     <!DOCTYPE html>
     <html lang="en">
     <head>
-        <title>GeoLocation Finder</title>
+        <title>Geolocation Finder</title>
     </head>
     <body>
         <button id="display">Display Location</button>
