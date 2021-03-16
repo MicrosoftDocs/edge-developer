@@ -199,11 +199,7 @@ For right to left based languages, the overlay is displayed in the upper right c
 > The overlay will always be on top of the web content's Z order and will accept all user input without flowing it through to the web content.
 
 #### Working Around the Window Controls Overlay
-<<<<<<< Updated upstream
-Your web content will need to be aware of the reserved area for the controls overlay and ensure that area isn't expecting user interaction. To accomplish this, you will need to query the browser for the bounding retangle and visibility of the controls overlay.  This information is provided to you through JavaScript APIs and CSS environment variables.
-=======
 Your web content will need to be aware of the reserved area for the controls overlay and ensure that area isn't expecting user interaction. To accomplish this, you will need to query the browser for the bounding rectangle and visibility of the controls overlay.  This information is provided to you through JavaScript APIs and CSS environment variables.
->>>>>>> Stashed changes
 
 **JavaScript APIs**
 
@@ -227,11 +223,7 @@ In addition to the JavaScript API above, the bounding rectangle of the controls 
 * `titlebar-area-inset-right`
 
 #### Defining Draggable Regions in Web Content
-<<<<<<< Updated upstream
 Users expect to be able to grab and drag the upper region of a window and developers will need to accommodate that expectation by declaring certain parts of their web content as draggable. 
-=======
-Users expect to be able to grab and drag the upper region of a window and developers will need to accomodate that expectation by declaring certain parts of their web content as draggable. 
->>>>>>> Stashed changes
 This is accomplished through a webkit proprietary CSS property called `-webkit-app-region`. Effort to standardize the app-region property is ongoing with the CSS working group.  
 
 >[!IMPORTANT]
