@@ -43,9 +43,8 @@ The following sections describe the new experimental web app features that are a
 | [URL Protocol Handling](#url-protocol-handling) | 91 or later | Windows 
 | [URL Link Handling](#URL-link-handling) | 85 or later | Windows  
 | [Window Controls Overlay for Installed Desktop Web Apps](#window-controls-overlay-for-installed-desktop-web-apps) | 91 or later | Windows, Mac 
-| [Run on OS Login](#place-holder) | 87 or later | All |
-| [Shortcuts](#place-holder) | 87 or later | All |
-| [edge://apps Page Updates](#place-holder) | 87 or later | All |
+| [Run on OS Login](#run-on-os-login) | 87 or later | All |
+| [Shortcuts](#shortcuts) | 87 or later | All |
 
 ### URL Protocol Handling  
 
@@ -113,6 +112,7 @@ Developers can create a more engaging experience if Progressive Web Apps (PWAs) 
 
 This feature allows you to register a PWA with the host operating system via the web app manifest, declaring that it can handle specific links. To do this, you must add to the manifest file the _optional_ `url_handlers` member. This member is and ``object[]`` that groups the origins of URLs that the app wishes to handle.
 
+#### Example Manifest
 Example web app manifest with ``url_handlers`` member:
 
 ```json 
@@ -157,16 +157,16 @@ For eg. ``*.contoso.com`` matches ``tenant.contoso.com`` and ``www.tenant.contos
 
 ### Window Controls Overlay for Installed Desktop Web Apps
 
-To create an immersive, native like title bar for your desktop installed web application, the Window Contols Overlay feature removes the system reserved title bar that usually spans the width of the client frame and replaces it with an overlay that contains just the critical system required window controls necessary for a user to control the window itself. 
+To create an immersive, native like title bar for your desktop installed web application, the Window Controls Overlay feature removes the system reserved title bar that usually spans the width of the client frame and replaces it with an overlay that contains just the critical system required window controls necessary for a user to control the window itself. 
 
 In providing an overlay, the entire web client area is available to the web developer to use. This feature includes a manifest update and provides ways for a developer to reason about the size and position of the overlay to arrange content around.
     
 #### Examples of Title Bar Area Customization
-The inspiration for this feature came from native applications where the developer can customize the title bar for important application actions or notificaitons. Here are a few examples:
+The inspiration for this feature came from native applications where the developer can customize the title bar for important application actions or notifications. Here are a few examples:
 
 **Visual Studio Code**
 
-Visual Studio Code is a popular editor buit on Electron that ships on multiple desktop platforms. 
+Visual Studio Code is a popular editor built on Electron that ships on multiple desktop platforms. 
 
 This example shows how VS Code uses the title bar to maximize available screen real estate to include the current file name and top level menu structure within the title bar space.
 
@@ -184,10 +184,10 @@ Workplace collaboration and communication tool Microsoft Teams is also built wit
 
 #### Overlaying Window Controls on a Frameless Window
 To provide the maximum addressable area for web content, the browser creates a frameless window, removing all browser UI with the exception of the window controls which are provided as an overlay.
-The window controls overlay ensures users can still minimize, maximize or restore, and close the application. It also provides access to relevant brwooser controls via the web app menu. For Chromium based browsers the controls in the overlay are:
+The window controls overlay ensures users can still minimize, maximize or restore, and close the application. It also provides access to relevant browser controls via the web app menu. For Chromium based browsers the controls in the overlay are:
 * A draggable region the same width and height of each of the window control buttons
 * the "Settings and more" three-dot button
-* the window control buttons minimize, maximize.resdtore and close.
+* the window control buttons minimize, maximize, restore and close.
 
 There can be scenarios where the browser will show other content in  the controls overlay.  
 * When an installed web app is launched, the origin of the page will display to the left of the three-dot menu for a few seconds, then disappear
@@ -199,7 +199,11 @@ For right to left based languages, the overlay is displayed in the upper right c
 > The overlay will always be on top of the web content's Z order and will accept all user input without flowing it through to the web content.
 
 #### Working Around the Window Controls Overlay
+<<<<<<< Updated upstream
 Your web content will need to be aware of the reserved area for the controls overlay and ensure that area isn't expecting user interaction. To accomplish this, you will need to query the browser for the bounding retangle and visibility of the controls overlay.  This information is provided to you through JavaScript APIs and CSS environment variables.
+=======
+Your web content will need to be aware of the reserved area for the controls overlay and ensure that area isn't expecting user interaction. To accomplish this, you will need to query the browser for the bounding rectangle and visibility of the controls overlay.  This information is provided to you through JavaScript APIs and CSS environment variables.
+>>>>>>> Stashed changes
 
 **JavaScript APIs**
 
@@ -223,7 +227,11 @@ In addition to the JavaScript API above, the bounding rectangle of the controls 
 * `titlebar-area-inset-right`
 
 #### Defining Draggable Regions in Web Content
+<<<<<<< Updated upstream
 Users expect to be able to grab and drag the upper region of a window and developers will need to accommodate that expectation by declaring certain parts of their web content as draggable. 
+=======
+Users expect to be able to grab and drag the upper region of a window and developers will need to accomodate that expectation by declaring certain parts of their web content as draggable. 
+>>>>>>> Stashed changes
 This is accomplished through a webkit proprietary CSS property called `-webkit-app-region`. Effort to standardize the app-region property is ongoing with the CSS working group.  
 
 >[!IMPORTANT]
@@ -359,19 +367,123 @@ body {
 }
 ```
 
+### Run On OS Login  
+Microsoft Windows offers the ability to configure an application to launch automatically when the user logs into their OS session. Certain class of applications, including email, chat, monitoring dashboards and real-time data display apps can take advantage of this capability. It allows users to engage with those applications as soon as they log into the OS.
 
-### Place Holder  
+ >[!IMPORTANT]
+> Run on OS Login is a [powerful feature](https://w3c.github.io/permissions/#powerful-feature). Users should decide whether to enable the capability for the installed web app. The web platform APIs presented are intended to be used only from within an installed web app and not by a regular website.
 
-**New Feature placeholder**
+#### Querying Permission
+The web platform provides a standard way of querying the permission status of powerful features in the user agent. This now includes the "run-on-os-login" enum value.
+
+Developers can check if the user has granted permission for this feature with the following code:
+```javascript
+const permission = await navigator.permissions.query({ name: 'run-on-os-login' });
+
+// Update the settings UI with permission.state
+
+permission.addEventListener('change', () => {
+    // Update the settings UI with this.state
+});
+```
+The ``permissionDesc.name`` value ``"run-on-os-login"`` given to the ``query(permissionDesc)`` method works only for installed web apps, and will resolve with a ``denied`` state otherwise.
+
+#### Run On OS Login Modes
+There are three ways an installed web app can operate defined by the ``mode`` parameter:
+* **Windowed**: Default mode, the web app is launched as regular with its window shown. (Same as when the user manually opens the web app).
+* **Minimized**: The web app opens minimized, but still present in taskbar.
+> [!NOTE]
+> Minimized mode does not mean a background task without a window or a task running in the system tray of Windows, the menu bar of macOS, or some equivalent components in other platforms. 
+* **None**: disables the app from auto starting.
+
+```javascript
+enum RunOnOsLoginState { “none”, “minimized”, “windowed” };
+```
+
+#### Enabling the Capability
+
+To enable the capability, the web app can use the following method with a mode value of either ``"windowed"`` or ``"minimized"``:
+```javascript
+let promise = navigator.runOnOsLogin.set({
+  mode: "windowed"
+});
+
+promise.then(function() {
+    // Run on OS Login permission was approved and operation was successful.
+  },
+  function(reason) {
+    // Permission was either denied or the operation failed.
+    // Use reason to determine failure.
+  });
+```
+
+#### Disabling the Capability 
+
+To disable the Run on OS Login capability the web app can use the same API ``navigator.runOnOsLogin.set()``, and use the ``"none"`` mode, example:
+```javascript
+let promise = navigator.runOnOsLogin.set({
+  mode: "none"
+});
+
+promise.then(function() {
+    // Run on OS Login permission is granted.
+    // Disable operation was successful.
+  },
+  function(reason) {
+    // Permission was either denied or the operation failed.
+    // Use reason to determine failure.
+  });
+```
 
 
-## Previous experimental features  
+#### Querying the Capability
 
-*   [3D View][Devtools3dViewIndex] is now available and turned on by default in Microsoft Edge version 83 or later.  
-*   [Turn on support to move tabs between panels][DevtoolsMoveTabs] is now available and turned on by default in Microsoft Edge version 85 or later.  
-*   [Customize Keyboard Shortcuts][DevtoolsCustomKeyboardShortcuts] is now available and turned on by default in Microsoft Edge version 86 or later.  
-*   [Emulation: Support dual screen mode][DevtoolsDeviceModeDualScreenAndFoldables] is now available and turned on by default in Microsoft Edge version 89 or later.  
-*   [Turn on new CSS grid debugging features][DevtoolsCssGrid] is now available and turned on by default in Microsoft Edge version 89 or later.  
+This way you can find out the status of the Run on OS Login capability of your app: 
+
+```javascript
+let promise = navigator.runOnOsLogin.get();
+
+promise.then(function(status) {
+    // status is the current mode for web app, could be any of these:
+    // status == "windowed", feature is enabled for windowed (default) mode.
+    // status == "minimized", feature is enabled for minimized mode.
+    // status == "none", permission could be denied, or feature is disabled.
+    // Note: Use navigator.permissions.query() to verify permission state.
+  });
+```
+
+The ``navigator.runOnOsLogin.get()`` API will not prompt the permission but rather resolve with the status as ``"none"`` if the permission has not been granted yet or is denied.
+
+### Shortcuts
+``Shortcuts`` is a new member of the manifest file. It allows you to define links to parts, key pages, or actions within your web app. They are integrated on Microsoft Windows as 'Jumplists', which are popup menus that appear when your right-click a tile on the Start Menu or an icon on the Taskbar. When a user invokes a shortcut, they navigate to the address that is specified by that shortcut's ``url`` member. 
+  
+![Jumplists on Windows 10](/media/jumplists-shortcuts.png)
+
+#### Shortcuts in the Manifest file
+```json
+"shortcuts" : [
+  {
+    "name": "Today's agenda",
+    "url": "/today",
+    "description": "List of events planned for today"
+  },
+  {
+    "name": "New event",
+    "url": "/create/event"
+  },
+  {
+    "name": "New reminder",
+    "url": "/create/reminder"
+  }
+]
+```
+
+##### Item Values:
+* **name**:  A string that is displayed to the user on the jumplist or context menu.
+* **short_name**: A string that can be displayed where there is insufficient space to display the full name of the shortcut.
+* **description**: A string that describes the purpose of the shortcut. It might be used for assistive technology.
+* **url**: The URL within the web app that opens when the shortcut is activated.
+* **icons**: A set of icons that represent the shortcut.
     
 ## Providing feedback on experimental features  
 
