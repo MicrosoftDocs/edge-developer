@@ -3,7 +3,7 @@ description: Learn how to evaluate runtime performance in Microsoft Edge DevTool
 title: Get started with analyzing Runtime performance
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -59,8 +59,8 @@ In the following tutorial, you open DevTools on a live page and use the **Perfor
 Mobile devices have much less CPU power than desktops and laptops.  Whenever you profile a page, use CPU Throttling to simulate how your page performs on mobile devices.  
 
 1.  In DevTools, choose the **Performance** tool.  
-1.  Make sure that the **Screenshots** checkbox is enabled.  
-1.  Choose **Capture Settings** \(![Capture Settings][ImageCaptureSettingsIcon]\).  DevTools reveals settings related to how it captures performance metrics.  
+1.  Ensure the you choose the checkbox next to **Screenshots**.  
+1.  Choose **Capture Settings** \(![Capture Settings](../media/capture-settings-icon.msft.png)\).  DevTools reveals settings related to how it captures performance metrics.  
 1.  For **CPU**, choose **4x slowdown**.  DevTools throttles your CPU so that it is 4 times slower than usual.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="CPU throttle" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
@@ -88,7 +88,7 @@ ensure that your experience is relatively consistent with the screenshots and de
 
 When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the Performance panel to learn how to detect the performance bottleneck in the un-optimized version.  
 
-1.  In DevTools, choose **Record** \(![Record][ImageRecordIcon]\).  DevTools captures performance metrics as the page runs.  
+1.  In DevTools, choose **Record** \(![Record](../media/record-icon.msft.png)\).  DevTools captures performance metrics as the page runs.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="Profile the page" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
        Profile the page  
@@ -143,7 +143,7 @@ Another handy tool is the FPS meter, which provides real-time estimates for FPS 
 
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
 1.  Start typing `Rendering` in the **Command Menu** and choose **Show Rendering**.  
-1.  In the **Rendering** tool, enable **FPS Meter**.  A new overlay appears in the top-right of your viewport.  
+1.  In the **Rendering** tool, turn on **FPS Meter**.  A new overlay appears in the top-right of your viewport.  
     
     :::image type="complex" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="The FPS meter" lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
        The **FPS meter**  
@@ -179,7 +179,7 @@ After you measured and verified that the animation is not performing well, the n
     1.  Focus on the red triangle in the top-right of the **Animation Frame Fired** event.  Whenever a red triangle is displayed, it is a warning that there may be an issue related to the event.  
     
     > [!NOTE]
-    > The **Animation Frame Fired** event occurs whenever a [`requestAnimationFrame()` callback][MDNWebRequestAnimationFrame] is run.  
+    > The **Animation Frame Fired** event occurs whenever a [requestAnimationFrame() callback][MDNWebRequestAnimationFrame] is run.  
     
 1.  Choose the **Animation Frame Fired** event.  The **Summary** panel now shows you information about that event.  Note the **Reveal** link.  After you choose it, DevTools to highlights the event that initiated the **Animation Frame Fired** event.  Also, focus on the **app.js:95** link.  After you choose it, the relevant line in the source code is displayed.
     
@@ -208,7 +208,7 @@ That was a lot to learn.  You now have a solid foundation in the basic workflow 
 
 ### Bonus: Analyze the optimized version  
 
-Using the workflows and tools that you just learned, choose **Optimize** on the demo to enable the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.  
+Using the workflows and tools that you just learned, choose **Optimize** on the demo to turn on the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.  
 
 > [!NOTE]
 > Even the optimized version is not great, because it manipulates the `top` property of every icon.  A better approach is to stick to properties that only affect compositing.  <!--  > For more information, navigate to [Use transform and opacity changes for animations][RenderingCompositor].  -->  

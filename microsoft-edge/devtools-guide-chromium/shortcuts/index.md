@@ -3,7 +3,7 @@ description: The canonical documentation for Microsoft Edge DevTools keyboard sh
 title: Microsoft Edge DevTools keyboard shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -147,15 +147,11 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Clear the **Console** | `Control`+`L` | `Command`+`K` or `Option`+`L` |  
 | Force a multi-line entry.  This shortcut is mostly unnecessary, because DevTools should detect multi-line scenarios by default | `Shift`+`Enter` | `Command`+`Return` |  
 | Run | `Enter` | `Return` |  
-| Expand all subproperties of an object that are logged to the Console | Hold `Alt`, then choose **Expand** \(![Expand][ImageExpandIcon]\) | Hold `Alt`, then choose **Expand** \(![Expand][ImageExpandIcon]\) |  
+| Expand all subproperties of an object that are logged to the Console | Hold `Alt`, then choose **Expand** \(![Expand](../media/expand-icon.msft.png)\) | Hold `Alt`, then choose **Expand** \(![Expand](../media/expand-icon.msft.png)\) |  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageExpandIcon]: ../media/expand-icon.msft.png  
 
 <!-- links -->  
 

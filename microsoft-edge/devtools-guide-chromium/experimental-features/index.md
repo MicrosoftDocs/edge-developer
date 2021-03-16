@@ -3,10 +3,11 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021 
+ms.date: 03/15/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
+no-loc: ["Enable webhint", "Enable Network Console", "Source Order Viewer", "Enable Composited Layers in 3D View", "Enable new Font Editor tool within the Styles pane", "Enable new CSS Flexbox debugging features", "Enable + button tab menus to open more tools", "Enable Welcome tab", "3D View", "Turn on support to move tabs between panels", "Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code", "Edit keyboard shortcuts for any action in the DevTools", "Turn on new CSS grid debugging features", "Emulation: Support dual screen mode"]
 ---
 # Experimental features  
 
@@ -47,7 +48,7 @@ The following sections describe the new experimental features that are available
 | [Enable new Font Editor tool within the Styles pane](#enable-new-font-editor-tool-within-the-styles-pane) | 89 or later |  
 | [Enable new CSS Flexbox debugging features](#enable-new-css-flexbox-debugging-features) | 89 or later |  
 | [Enable + button tab menus to open more tools](#enable--button-tab-menus-to-open-more-tools) | 89 or later |  
-| [Enable Welcome tab](#enable-welcome-tool) | 89 or later |  
+| [Enable Welcome tab](#enable-welcome-tab) | 89 or later |  
 
 ### Enable webhint  
 
@@ -191,7 +192,7 @@ You may now open more tools using the new **More Tools** \(`+`\) icon.  After yo
 
 <!--Available in Microsoft Edge version 89 and later.  -->  
 
-### Enable Welcome tool
+### Enable Welcome tab
 
 This experiment replaces the **What's New** tool with the new **Welcome** tool.  It displays a refreshed design for the following content.  
 
@@ -219,7 +220,6 @@ If you prefer the original **What's New** tool, navigate to [Settings][DevtoolsC
 *   [Turn on new CSS grid debugging features][DevtoolsCssGrid] is now available and turned on by default in Microsoft Edge version 89 or later.  
 *   [Emulation: Support dual screen mode][DevtoolsDeviceModeDualScreenAndFoldables] is now available and turned on by default in Microsoft Edge version 90 or later.  
 
-    
 ## Providing feedback on experimental features  
 
 To provide feedback on Microsoft Edge DevTools experiments, or anything else related to DevTools.  
