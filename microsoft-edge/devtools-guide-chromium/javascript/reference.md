@@ -3,7 +3,7 @@ description: Discover new debugging workflows in this comprehensive reference of
 title: JavaScript debugging reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -40,7 +40,7 @@ Once your code is paused, step through it, one line at a time, investigating con
 
 ### Step over line of code  
 
-When paused on a line of code containing a function that is not relevant to the problem you are debugging, choose the **Step over** \(![Step over][ImageStepOverIcon]\) button to run the function without stepping into it.  
+When paused on a line of code containing a function that is not relevant to the problem you are debugging, choose the **Step over** \(![Step over](../media/step-over-icon.msft.png)\) button to run the function without stepping into it.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="Choose Step over" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
    Choose **Step over**  
@@ -64,7 +64,7 @@ You are paused on `A`.  After you choose **Step over**, DevTools runs all the co
 
 ### Step into line of code  
 
-When paused on a line of code containing a function call that is related to the problem you are debugging, choose the **Step into** \(![Step into][ImageStepIntoIcon]\) button to investigate that function further.  
+When paused on a line of code containing a function call that is related to the problem you are debugging, choose the **Step into** \(![Step into](../media/step-into-icon.msft.png)\) button to investigate that function further.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="Choose Step into" lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
    Choose **Step into**  
@@ -88,7 +88,7 @@ You are paused on `A`.  After you choose **Step into**, DevTools runs this line 
 
 ### Step out of line of code  
 
-When paused inside of a function that is not related to the problem you are debugging, choose the **Step out** \(![Step out][ImageStepOutIcon]\) button to run the rest of the code of the function.  
+When paused inside of a function that is not related to the problem you are debugging, choose the **Step out** \(![Step out](../media/step-out-icon.msft.png)\) button to run the rest of the code of the function.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="Choose Step out" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
    Choose **Step out**  
@@ -114,7 +114,7 @@ You are paused on `A`.  After you choose **Step out**, DevTools runs the rest of
 
 When debugging a long function, there may be a lot of code that is not related to the problem you are debugging.  
 
-You may choose to step through all the lines, but that is tedious.  You may choose to set a line-of-code breakpoint on the line in which you are interested and then choose the **Resume Script Execution** \(![Resume Script Execution][ImageResumeScriptExecutionIcon]\) button, but there is a faster way.  
+You may choose to step through all the lines, but that is tedious.  You may choose to set a line-of-code breakpoint on the line in which you are interested and then choose the **Resume Script Execution** \(![Resume Script Execution](../media/resume-script-run-icon.msft.png)\) button, but there is a faster way.  
 
 Hover on the line of code in which you are interested, open the contextual menu \(right-click\), and choose **Continue to here**.  DevTools runs all of the code up to that point, and then pauses on that line.  
 
@@ -146,7 +146,7 @@ You are paused on `A`.  After choosing **Restart Frame**, you should be paused o
 
 ### Resume script runtime  
 
-To continue the runtime after a pause of your script, choose the **Resume Script Execution** \(![Resume Script Execution][ImageResumeScriptExecutionIcon]\) button.  DevTools runs the script up until the next breakpoint, if any.  
+To continue the runtime after a pause of your script, choose the **Resume Script Execution** \(![Resume Script Execution](../media/resume-script-run-icon.msft.png)\) button.  DevTools runs the script up until the next breakpoint, if any.  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="Choose Resume script execution" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
    Choose **Resume script execution**  
@@ -154,7 +154,7 @@ To continue the runtime after a pause of your script, choose the **Resume Script
 
 #### Force script runtime  
 
-To ignore all breakpoints and force your script to resume running, choose and hold the **Resume Script Execution** \(![Resume Script Execution][ImageResumeScriptExecutionIcon]\) button and then choose the **Force script execution** \(![Force script execution][ImageForceScriptExecutionIcon]\) button.  
+To ignore all breakpoints and force your script to resume running, choose and hold the **Resume Script Execution** \(![Resume Script Execution](../media/resume-script-run-icon.msft.png)\) button and then choose the **Force script execution** \(![Force script execution](../media/force-script-run-icon.msft.png)\) button.  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="Choose Force script execution" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
    Choose **Force script execution**  
@@ -283,13 +283,13 @@ Use the **Watch** pane to watch the values of custom expressions.  You may watch
    The **Watch** pane  
 :::image-end:::  
 
-*   Choose the **Add Expression** \(![Add Expression][ImageAddExpressionIcon]\) button to create a new watch expression.  
-*   Choose the **Refresh** \(![Refresh][ImageRefreshIcon]\) button to refresh the values of all existing expressions.  Values automatically refresh while stepping through code.  
-*   Hover on an expression and choose the **Delete Expression** \(![Delete Expression][ImageDeleteExpressionIcon]\) button to delete it.  
+*   Choose the **Add Expression** \(![Add Expression](../media/add-expression-icon.msft.png)\) button to create a new watch expression.  
+*   Choose the **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\) button to refresh the values of all existing expressions.  Values automatically refresh while stepping through code.  
+*   Hover on an expression and choose the **Delete Expression** \(![Delete Expression](../media/delete-expression-icon.msft.png)\) button to delete it.  
 
 ## Make a minified file readable  
 
-Choose the **Format** \(![Format][ImageFormatIcon]\) button to make a minified file human-readable.  
+Choose the **Format** \(![Format](../media/format-icon.msft.png)\) button to make a minified file human-readable.  
 
 :::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="The Format button" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
    The **Format** button  
@@ -316,18 +316,6 @@ Navigate to [Disable JavaScript with Microsoft Edge DevTools][DevToolsJavascript
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageStepOverIcon]: ../media/step-over-icon.msft.png  
-[ImageStepIntoIcon]: ../media/step-into-icon.msft.png  
-[ImageStepOutIcon]: ../media/step-out-icon.msft.png  
-[ImageResumeScriptExecutionIcon]: ../media/resume-script-run-icon.msft.png  
-[ImageForceScriptExecutionIcon]: ../media/force-script-run-icon.msft.png  
-[ImageAddExpressionIcon]: ../media/add-expression-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
-[ImageDeleteExpressionIcon]: ../media/delete-expression-icon.msft.png  
-[ImageFormatIcon]: ../media/format-icon.msft.png  
 
 <!-- links -->  
 

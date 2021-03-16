@@ -3,7 +3,7 @@ description: Learn how to use Microsoft Edge DevTools to find ways to make your 
 title: Optimize website speed with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -88,7 +88,7 @@ For the rest of the screenshots in this tutorial, DevTools is shown in a separat
 
 The baseline is a record of how the site performed before you made any performance improvements.  
 
-1.  Choose the **Audits** tool.  It may be hidden behind the **More Panels** \(![More Panels][ImageMorePanelsIcon]\) button.  There is a Lighthouse on this panel because the project that powers the Audits panel is named **Lighthouse**.  
+1.  Choose the **Audits** tool.  It may be hidden behind the **More Panels** \(![More Panels](../media/more-panels-icon.msft.png)\) button.  There is a Lighthouse on this panel because the project that powers the Audits panel is named **Lighthouse**.  
     
     [!INCLUDE [audits-panel-note](../includes/audits-panel-note.md)]  
     
@@ -272,7 +272,7 @@ Use the workflows that you learned earlier to manually check that the compressio
 Audit the page again to measure what kind of impact text compression has on the load performance of the page:  
 
 1.  Choose the **Audits** tool.  
-1.  Choose **Perform an audit** \(![Perform an audit][ImagePerformIcon]\).  
+1.  Choose **Perform an audit** \(![Perform an audit](../media/perform-icon.msft.png)\).  
 1.  Leave the settings the same as before.  
 1.  Choose **Run audit**.  
     
@@ -347,7 +347,7 @@ The first task, then, is to find code that you do not need to run on page load.
        The **Coverage** tool  
     :::image-end:::  
     
-1.  Choose **Refresh** \(![Refresh][ImageRefreshIcon]\).  The **Coverage** tool provides an overview of how much of the code in `bundle.js`, `jquery.js`, and `lodash.js` runs while the page loads.  In the figure after the following, about 76% and 30% of the jQuery and Lodash files are not used, respectively.  
+1.  Choose **Refresh** \(![Refresh](../media/reload-icon.msft.png)\).  The **Coverage** tool provides an overview of how much of the code in `bundle.js`, `jquery.js`, and `lodash.js` runs while the page loads.  In the figure after the following, about 76% and 30% of the jQuery and Lodash files are not used, respectively.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="The Coverage report" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
        The Coverage report  
@@ -373,7 +373,7 @@ Are the `jquery.js` and `lodash.js` files even needed to load the page?  The **R
        The **Request blocking** tool  
     :::image-end:::  
     
-1.  Choose **Add Pattern** \(![Add Pattern][ImageAddPatternIcon]\), type `/libs/*`, and then select `Enter` to confirm.  
+1.  Choose **Add Pattern** \(![Add Pattern](../media/add-pattern-icon.msft.png)\), type `/libs/*`, and then select `Enter` to confirm.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png" alt-text="Add a pattern to block any request to the libs directory" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png":::
        Add a pattern to block any request to the `libs` directory  
@@ -385,7 +385,7 @@ Are the `jquery.js` and `lodash.js` files even needed to load the page?  The **R
        The **Network** tool shows that the requests have been blocked  
     :::image-end:::  
     
-1.  Choose **Remove all patterns** \(![Remove all patterns][ImageRemoveIcon]\) to delete the `/libs/*` blocking pattern.  
+1.  Choose **Remove all patterns** \(![Remove all patterns](../media/remove-icon.msft.png)\) to delete the `/libs/*` blocking pattern.  
     
 In general, the **Request blocking** tool is useful for simulating how your page behaves when any given resource is not available.  
 
@@ -420,9 +420,9 @@ The main thread is where the browser does most of the work needed to display a p
 The goal is to use the Performance panel to analyze what work the main thread is doing while the page loads, and find ways to defer or remove unnecessary work.  
 
 1.  Choose the **Performance** tool.  
-1.  Choose **Capture Settings** \(![Capture Settings][ImageCaptureIcon]\).  
+1.  Choose **Capture Settings** \(![Capture Settings](../media/capture-icon.msft.png)\).  
 1.  Set **Network** to **Slow 3G** and **CPU** to **6x slowdown**.  Mobile devices typically have more hardware constraints than laptops or desktops, so these settings let you experience the page load as if you were using a less powerful device.  
-1.  Choose **Refresh** \(![Refresh][ImageRefreshIcon]\).  DevTools refreshes the page and then produces a visualization of all the work performed in order to load the page.  This visualization is referred to as the **trace**.  
+1.  Choose **Refresh** \(![Refresh](../media/reload-icon.msft.png)\).  DevTools refreshes the page and then produces a visualization of all the work performed in order to load the page.  This visualization is referred to as the **trace**.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="The Performance tool trace of the page load" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
        The **Performance** tool trace of the page load  
@@ -517,15 +517,6 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageAddPatternIcon]: ../media/add-pattern-icon.msft.png  
-[ImageCaptureIcon]: ../media/capture-icon.msft.png  
-[ImageLargeResourceRowsButtonIcon]: ../media/large-resource-rows-button-icon.msft.png  
-[ImageMorePanelsIcon]: ../media/more-panels-icon.msft.png  
-[ImagePerformIcon]: ../media/perform-icon.msft.png  
-[ImageRefreshIcon]: ../media/reload-icon.msft.png  
-[ImageRemoveIcon]: ../media/remove-icon.msft.png  
 <!-- links -->  
 
 [DevtoolsEvaluatePerformanceReference]: ../evaluate-performance/reference.md "Performance analysis reference | Microsoft Docs"  
