@@ -288,6 +288,7 @@ To continue learning more about WebView2, navigate to the following resources.
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
+For WinUI-specifc feature requests or bugs, navigate to [WinUI3.0 feedback](https://github.com/microsoft/microsoft-ui-xaml/issues) repo.
 <!-- links -->  
 
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
