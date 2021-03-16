@@ -31,19 +31,28 @@ If an experimental feature doesn't have an `edge://flags` entry, instructions wi
 > [!NOTE]
 > Experimental features are constantly being updated and may cause performance issues.  To turn off an experimental feature, open the `edge://flags` webpage and change the status of the feature to `Disabled`.  
 
-## Experimental features  
+## Features Available to Test  
 
 The following sections describe the new experimental web app features that are available for testing and validation on Microsoft Edge.  
 
-| Experimental feature | Microsoft Edge version | Platform |  
+| Feature | Microsoft Edge version | Platform |  
 |:--- |:--- |:--- |  
 | [URL Protocol Handling](#url-protocol-handling) | 91 or later | Windows |  
-| [URL Link Handling](#URL-link-handling) | 85 or later | Windows  |  
-| [Window Controls Overlay for Installed Desktop Web Apps](#window-controls-overlay-for-installed-desktop-web-apps) | 91 or later | Windows, macOS |  
+| [Window Controls Overlay for Installed Desktop Web Apps](#window-controls-overlay-for-installed-desktop-web-apps) | 91 or later | Windows |  
 | [Run on OS Login](#run-on-os-login) | 88 or later | All |  
 | [Shortcuts](#shortcuts) | 87 or later | All |  
 
-### URL Protocol Handling  
+## Features Coming Soon
+This table includes features that are work in progress that may come out in a future release for testing. 
+
+| Feature | Platform |  
+|:--- |:--- |   
+| [URL Link Handling](#URL-link-handling) | Windows |  
+| [Window Controls Overlay for Installed Desktop Web Apps](#window-controls-overlay-for-installed-desktop-web-apps) |  macOS, Linux |  
+| Improvements to App Management| All | 
+| Support for Desktop Share Target| Windows 10 |   
+
+## URL Protocol Handling  
 
 URLs can be used to define more than just links to webpages and web content using the HTTP or FTP protocol - they can be used to describe links to anything you can codify into a schema. For example, the `mailto://` protocol is used to describe an email link and the operating system or browser can decide which webpage or app should handle that protocol. You can learn more about existing browser based support for [web based protocol handling here](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/registerProtocolHandler/Web-based_protocol_handlers). 
 
@@ -54,7 +63,7 @@ This feature requires you to update the web app manifest to include a `protocol_
 *   `protocol`: Protocol to be handled e.g. `mailto`, `web+jngl`  
 *   `url`: HTTPS URL within the app scope that will handle the protocol. The `%s` token will be replaced by the URL starting with the protcol handlers scheme.  
 
-#### Example Manifest
+### Example Manifest
 
 In this example, a web app manifest declares that the app should be registered to handle the protocols `web+jngl` and `web+jnglstore`.
 
@@ -105,13 +114,13 @@ You will need to update your manifest to support whatever protocol you'd like to
 > 
 > Mac OS and Linux support is under development.
  
-### URL Link Handling
+## URL Link Handling
 
 Developers can create a more engaging experience if Progressive Web Apps \(PWAs\) are able to register as handlers for https uniform resource identifiers (URLs). This means that PWAs can request to be launched when associated URLs are activated. For example, a user may choose on a link to a news story from an e-mail. An associated PWA for viewing news stories would automatically be launched to handle the activation of the link.
 
 This feature allows you to register a PWA with the host operating system via the web app manifest, declaring that it can handle specific links. To do this, you must add to the manifest file the optional `url_handlers` member. This member is an `object[]` that groups the origins of URLs that the app wishes to handle.
 
-#### Example Manifest
+### Example Manifest
 
 Example web app manifest with `url_handlers` member:
 
@@ -155,13 +164,13 @@ For eg. `*.contoso.com` matches `tenant.contoso.com` and `www.tenant.contoso.com
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
-### Window Controls Overlay for Installed Desktop Web Apps
+## Window Controls Overlay for Installed Desktop Web Apps
 
 To create an immersive, native like title bar for your desktop installed web app, the Window Controls Overlay feature removes the system reserved title bar that usually spans the width of the client frame and replaces it with an overlay that contains just the critical system required window controls necessary for a user to control the window itself. 
 
 In providing an overlay, the entire web client area is available to the web developer to use. This feature includes a manifest update and provides ways for a developer to reason about the size and position of the overlay to arrange content around.
     
-#### Examples of Title Bar Area Customization
+### Examples of Title Bar Area Customization
 
 The inspiration for this feature came from native apps where the developer can customize the title bar for important app actions or notifications. Here are a few examples:
 
@@ -183,7 +192,7 @@ Workplace collaboration and communication tool Microsoft Teams is also built wit
    Microsoft Teams title bar customization example  
 :::image-end:::  
 
-#### Overlaying Window Controls on a Frameless Window
+### Overlaying Window Controls on a Frameless Window
 
 To provide the maximum addressable area for web content, the browser creates a frameless window, removing all browser UI with the exception of the window controls which are provided as an overlay.
 The window controls overlay ensures users can still minimize, maximize or restore, and close the app. It also provides access to relevant browser controls via the web app menu. For Chromium based browsers the controls in the overlay are:  
@@ -202,7 +211,7 @@ For right to left based languages, the overlay is displayed in the upper right c
 >[!IMPORTANT]
 > The overlay will always be on top of the web content's Z order and will accept all user input without flowing it through to the web content.  
 
-#### Working Around the Window Controls Overlay
+### Working Around the Window Controls Overlay
 
 Your web content will need to be aware of the reserved area for the controls overlay and ensure that area isn't expecting user interaction. To accomplish this, you will need to query the browser for the bounding rectangle and visibility of the controls overlay.  This information is provided to you through JavaScript APIs and CSS environment variables.
 
@@ -229,7 +238,7 @@ In addition to the JavaScript API above, the bounding rectangle of the controls 
 *   `titlebar-area-inset-left`  
 *   `titlebar-area-inset-right`  
     
-#### Defining Draggable Regions in Web Content
+### Defining Draggable Regions in Web Content
 
 Users expect to be able to grab and drag the upper region of a window and developers will need to accommodate that expectation by declaring certain parts of their web content as draggable. 
 This is accomplished through a webkit proprietary CSS property called `-webkit-app-region`. Effort to standardize the app-region property is ongoing with the CSS working group.  
@@ -239,7 +248,7 @@ This is accomplished through a webkit proprietary CSS property called `-webkit-a
 > 
 > `--enable-features=WebAppWindowControlsOverlay`  
 
-#### Example
+### Example
 
 Below is an example of how these new features could be used to create a web app with a custom title bar. 
 
@@ -247,7 +256,7 @@ Below is an example of how these new features could be used to create a web app 
    Microsoft Teams title bar customization example  
 :::image-end:::  
 
-##### manifest.webmanifest
+#### manifest.webmanifest
 
 In the manifest, set `"display_override": ["window-controls-overlay"]`. Set the `theme_color` to be the desired color of the title bar. Set the display mode to an appropriate fallback for when either `display_override` or `window-controls-overlay` is not supported. 
 
@@ -262,7 +271,7 @@ In the manifest, set `"display_override": ["window-controls-overlay"]`. Set the 
 }
 ```  
 
-#### index.html
+### index.html
 
 There are two main regions below: the `titleBarContainer` and the `mainContent`. The `titleBar` is set to be `draggable` and the search box inside is set to be `nonDraggable`. 
 
@@ -290,7 +299,7 @@ Inside of the `titleBarContainer`, there is a `titleBar` element representing th
 </html>
 ```  
 
-#### style.css
+### style.css
 
 The draggable regions are set using `-webkit-app-region: drag` and `-webkit-app-region: no-drag`. 
 
@@ -370,14 +379,14 @@ body {
 }
 ```  
 
-### Run On OS Login  
+## Run On OS Login  
 
 Microsoft Windows offers the ability to configure an app to launch automatically when the user logs into their OS session. Certain class of apps, including email, chat, monitoring dashboards and real-time data display apps can take advantage of this capability. It allows users to engage with those apps as soon as they log into the OS. This feature will auto-start the PWA in the same way as if it were launched manually.
 
 > [!IMPORTANT]
 > Run on OS Login is a [powerful feature](https://w3c.github.io/permissions/#powerful-feature). Users should decide whether to turn on the capability for the installed web app. 
 
-#### Enabling Run On OS Login
+### Enabling Run On OS Login
 
 To turn on Run On OS Login capabilities for your PWA, you should turn on the `Desktop PWAs run on OS login` flag and restart the browser.
 
@@ -385,7 +394,7 @@ To turn on Run On OS Login capabilities for your PWA, you should turn on the `De
    `Desktop PWAs run on OS Login` flag  
 :::image-end:::  
 
-#### Enabling or disabling the Capability
+### Enabling or disabling the Capability
 
 To toggle the `Run on OS Login` feature for an installed PWA, you can browse to the `edge://apps` webpage and hover on the desired installed app, open the contextual menu \(right-click\) and choose to grant it permission to run once the user logs in.
 
@@ -393,7 +402,7 @@ To toggle the `Run on OS Login` feature for an installed PWA, you can browse to 
    Turn on Run on OS Login for a PWA in Microsoft Edge  
 :::image-end:::  
 
-### Shortcuts
+## Shortcuts
 
 `Shortcuts` is a new member of the manifest file. It allows you to define links to parts, key webpages, or actions within your web app. They are integrated on Microsoft Windows as 'Jumplists', which are popup menus that appear when your right-click a tile on the Start Menu or an icon on the Taskbar. When a user invokes a shortcut, they navigate to the address that is specified by that shortcut's ``url`` member. 
   
@@ -401,7 +410,7 @@ To toggle the `Run on OS Login` feature for an installed PWA, you can browse to 
    Jumplists on Windows 10  
 :::image-end:::  
 
-#### Shortcuts in the Manifest file
+### Shortcuts in the Manifest file
 
 ```json
 "shortcuts" : [
@@ -421,7 +430,7 @@ To toggle the `Run on OS Login` feature for an installed PWA, you can browse to 
 ]
 ```  
 
-##### Item Values:
+#### Item Values:
 
 *   **name**:  A string that is displayed to the user on the jumplist or context menu.
 *   **short_name**: A string that can be displayed where there is insufficient space to display the full name of the shortcut.
