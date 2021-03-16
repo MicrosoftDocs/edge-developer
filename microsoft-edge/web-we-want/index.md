@@ -29,14 +29,14 @@ We’ve successfully shipped a few Wants into the Chromium DevTools, such as the
 
 <!-- links -->  
 
-[WebWeWant]: https://webwewant.fyi/ "the Web We Want website"
+[WebWeWant]: https://webwewant.fyi/ "HOME | Web We Want"
 
-[ListOfSubmittedWants]: https://webwewant.fyi/wants/ "the list of submitted Wants"
+[ListOfSubmittedWants]: https://webwewant.fyi/wants/ "WANTS | Web We Want"
 
-[WebWeWantDiscussions]: https://github.com/WebWeWant/webwewant.fyi/discussions/ "Web We Want discussions"
+[WebWeWantDiscussions]: https://github.com/WebWeWant/webwewant.fyi/discussions/ "Let's discuss the web we want | GitHub"
 
-[TwitterWebWeWant]: https://twitter.com/webwewantfyi/ "Twitter - Web We Want initiative"
+[TwitterWebWeWant]: https://twitter.com/webwewantfyi/ "The Web We Want | Twitter"
 
-[LinkedInWebWeWant]: https://www.linkedin.com/company/the-web-we-want/ "LinkedIn - Web We Want initiative"
+[LinkedInWebWeWant]: https://www.linkedin.com/company/the-web-we-want/ "The Web We Want | LinkedIn"
 
-[SourceOrderViewer]: https://webwewant.fyi/wants/64/ "Source Order Viewer"
+[SourceOrderViewer]: https://webwewant.fyi/wants/64/ "I want a source order viewer for rearranged content - WANTS | Web We Want"
