@@ -22,14 +22,10 @@ Console showing the result of 2 + 2 live as you type it
 
 ## Manipulating the DOM
 
-## Helpful Console convenience methods 
+## Helpful Console utility methods 
 
 In addition to using the standard access 
 
-| Method       | Action     |   Example   |   Notes   |
-| :------------- | :----------: | :----------: | -----------: |
-|  $() | Retrieves the element using CSS syntax   | $('h1') // returns the first H1 element | 
-| You Can Also   | Put Pipes In | Like this  |
 
 ## Reusing DOM manipulation scripts
 
