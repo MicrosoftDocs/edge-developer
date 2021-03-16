@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
 keywords: MSapp, PWA, file upload, Blog, MSStream, windows 10 apps, uwp, edge
-ms.date: 12/02/2020
+ms.date: 03/16/2021
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # MSApp  
@@ -782,7 +782,7 @@ Synchronous API that has been deprecated.  For Windows 10, see `getHtmlPrintDocu
           | window.close | Close app | Close window |  
           | Navigation restrictions | ACUR only | No restrictions |  
           
-          The restriction to not allow secondary windows to open could change in the future depending on [feedback](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer).  
+         <!-- The restriction to not allow secondary windows to open could change in the future depending on [feedback](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer).  -->  
       
       *   Same Origin Communication Restrictions  
           

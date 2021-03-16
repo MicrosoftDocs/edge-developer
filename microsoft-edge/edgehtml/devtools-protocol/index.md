@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: reference
 ms.prod: microsoft-edge
-ms.date: 12/02/2020
+ms.date: 03/16/2021
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Microsoft Edge (EdgeHTML) DevTools Protocol
@@ -47,7 +47,7 @@ Here's how to attach a custom tooling client to the DevTools Server in Microsoft
 
 Thanks for trying the Edge DevTools Protocol! We'd love to hear your feedback at:
 
- - [**Microsoft Edge Developer UserVoice**](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer?category_id=84475): DevTools feature ideas and requests
+<!-- - [**Microsoft Edge Developer UserVoice**](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer?category_id=84475): DevTools feature ideas and requests-->  
 
  - [**EdgeHTML Issue Tracker**](https://developer.microsoft.com/microsoft-edge/platform/issues/): Protocol, DevTools, and EdgeHTML platform bugs and issues
 
