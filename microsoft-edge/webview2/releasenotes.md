@@ -20,7 +20,7 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 
 Release Date: March 8, 2021  
 
-[NuGet package][NuGetGallery1.0.824-prerelease] \| Minimum Edge Version to load: 86.0.616.0+ | Full API Compatibility: 89.0.824+
+[NuGet package][NuGetGallery1.0.824-prerelease] \| Minimum Edge Version to load: 86.0.616.0+ | Full API Compatibility: 91.0.824.0+
 
 
 ### General  
