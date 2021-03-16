@@ -415,11 +415,9 @@ To toggle the `Run on OS Login` feature for an installed PWA, you can browse to 
 
 To provide feedback on Microsoft Edge web app experiments:  
 
-*   Send your feedback using the **Send Feedback** menu item found in the `...` menu Or the keyboard shortcut `Alt-Shift-I` from within your application
+*   Send your feedback using the **Send feedback to Microsoft** menu item found in the `...` menu Or the keyboard shortcut `Alt-Shift-I` from within your application
 
-:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="The Send feedback to Microsoft menu item in PWA settings menu" lightbox="../media/sendPWAFeedback.png":::
-   The **Send feedback to Microsoft** menu item in PWA settings menu  
-:::image-end:::  
+![Send Feedback from PWA](../media/sendPWAFeedback.png)
 
 
 [MicrosoftEdge]: https://www.microsoft.com/edge "Microsoft Edge"  
