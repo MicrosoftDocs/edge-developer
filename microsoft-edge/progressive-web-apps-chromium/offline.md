@@ -3,13 +3,12 @@ title: Offline and network connectivity support in Progressive Web Apps
 description: Learn how to use supporting technologies to create resilient experiences to cater for different network conditions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/15/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
 ---
-
 # Offline and network connectivity support in Progressive Web Apps
 
 For many years organizations were reluctant to invest heavily in web-based software over native software because web applications depended on stable network connections. Today, the web platform now offers robust options that enable users to continue working, even if the network connection becomes unstable or goes completely offline.
@@ -79,7 +78,7 @@ This simple introduction shows how to use caching in your progressive web app (P
 
 ## Use IndexedDB in your PWA to store structured data
 
-`IndexedDB` is an API for storing structured data. Similar to the `Cache` API, it is also asynchronous, which means you may use it in the main thread or with Web Workers such as Service Workers. Use the `IndexedDB` API for storing a significant amount of structured data on the client, or binary data, such as encrypted media objects. For more information, see [MDN primer on using IndexedDB][MDNIndexeddbApiUsing].
+`IndexedDB` is an API for storing structured data. Similar to the `Cache` API, it is also asynchronous, which means you may use it in the main thread or with Web Workers such as Service Workers. Use the `IndexedDB` API for storing a significant amount of structured data on the client, or binary data, such as encrypted media objects. For more information, navigate to [MDN primer on using IndexedDB][MDNIndexeddbApiUsing].
 
 ## Understand storage options for PWAs
 
@@ -150,7 +149,7 @@ window.addEventListener("offline", function(){
 
 ## See also  
 
-To learn more about managing offline scenarios, see the following pages.  
+To learn more about managing offline scenarios, navigate to the following pages.  
 
 *   [Cache][MDNCache]  
 *   [IndexedDB][MDNIndexeddbApi]  
@@ -159,7 +158,7 @@ To learn more about managing offline scenarios, see the following pages.
 *   [navigator.onLine][MDNNavigatoronline]  
 *   [Online and Offline Events][MDNNavigatoronlineOfflineEvents]  
 *   [Request with Intent: Caching Strategies in the Age of PWAs][AlistapartRequestIntentCachingStrategiesAgePwas]
-
+    
 <!-- links -->  
 
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"  

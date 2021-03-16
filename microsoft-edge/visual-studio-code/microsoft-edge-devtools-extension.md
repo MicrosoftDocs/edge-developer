@@ -3,7 +3,7 @@ description: How to use Elements for Microsoft Edge (Chromium) from Visual Studi
 title: Elements for Microsoft Edge (Chromium) from Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/26/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, elements
@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual 
 
 # Microsoft Edge DevTools for Visual Studio Code extension  
 
-Use <!--the [Microsoft Edge DevTools for Visual Studio Code][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] -->this extension to access in Microsoft Edge DevTools inside [Visual Studio Code][VisualstudioCode].  You have access to the **Elements** and **Network** tools in Microsoft Edge DevTools.  You may either launch or attach to an instance of Microsoft Edge.  After you connect you may display the runtime HTML structure, alter the layout, fix styling issues, and inspect network traffic.  
+Use <!--the [Microsoft Edge DevTools for Visual Studio Code][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] -->this extension to access in Microsoft Edge DevTools inside [Microsoft Visual Studio Code][VisualstudioCode].  You have access to the **Elements** and **Network** tools in Microsoft Edge DevTools.  You may either launch or attach to an instance of Microsoft Edge.  After you connect you may display the runtime HTML structure, alter the layout, fix styling issues, and inspect network traffic.  
 
 ## Elements tool  
 
@@ -137,4 +137,4 @@ If you want to help make <!--the Microsoft Edge DevTools for Visual Studio Code 
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
 [GithubMicrosoftVscodeEdgeDevtoolsNewIssue]: https://github.com/Microsoft/vscode-edge-devtools/issues/new "New Issue - microsoft/vscode-edge-devtools | GitHub"
 
-[VisualstudioMarketplaceElementsMicrosoftEdgeChromium]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for VS Code"  
+[VisualstudioMarketplaceElementsMicrosoftEdgeChromium]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code"  
