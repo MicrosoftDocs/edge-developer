@@ -3,7 +3,7 @@ description: Legacy Microsoft Edge documentation.  Content for Microsoft Edge (e
 title: Legacy Microsoft Edge documentation
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 03/16/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -82,53 +82,6 @@ Thank you for your interest in Microsoft Edge.  The following article summarizes
 | [WebDriver overview][EdgehtmlWebdriverIndex] \(not recommended\) | Learn how to get started with WebDriver.  WebDriver is a wire protocol that allows programs and scripts to control the behavior of your web browser. |  
 | [WebVR][WebvrIndex] \(not recommended\) | WebVR is an open standard JavaScript API that makes it possible to experience immersive 3D Virtual Reality \(VR\) apps using a web browser like Microsoft Edge and a supported VR headset. |  
 | [Windows Runtime (WinRT) overview][EdgehtmlWindowsRuntimeIndex] \(not recommended\) | Use the Windows Runtime \(WinRT\) to call native Windows APIs from your JavaScript app. |  
-
-<!--  
-:::row:::
-   :::column span="":::
-      [developer guide][EdgehtmlDevGuideIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Developer Tools overview][EdgehtmlDevtoolsGuideIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Developer Tools Protocol overview][EdgehtmlDevtoolsProtocolIndex]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [Extensions overview][EdgehtmlExtensionsIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Progressive Web Apps overview][EdgehtmlProgressiveWebAppsIndex]  
-   :::column-end:::
-   :::column span="":::
-      [WebView overview][EdgehtmlHostingWebviewIndex]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [JavaScript runtime hosting overview][EdgehtmlHostingJavascriptRuntimeHostingIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Performance Analysis overview][EdgehtmlPerformanceAnalysisIndex]  
-   :::column-end:::
-   :::column span="":::
-      [WebDriver overview][EdgehtmlWebdriverIndex]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [WebVR][WebvrIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Windows Runtime (WinRT) overview][EdgehtmlWindowsRuntimeIndex]  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-:::row-end:::  
--->  
 
 <!-- links -->  
 
