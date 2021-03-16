@@ -3,7 +3,7 @@ description: A reference on all the ways to record and analyze performance in Mi
 title: Performance analysis reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -36,7 +36,7 @@ Record runtime performance when you want to analyze the performance of a page as
 
 1.  Navigate to the page that you want to analyze.  
 1.  Open the **Performance** tool in DevTools.  
-1.  Choose **Record** \(![Record icon][ImageRecordIcon]\).  
+1.  Choose **Record** \(![Record icon](../media/record-icon.msft.png)\).  
     
     :::image type="complex" source="../media/evaluate-performance-performance-record-highlight.msft.png" alt-text="Record" lightbox="../media/evaluate-performance-performance-record-highlight.msft.png":::
        **Record**  
@@ -51,7 +51,7 @@ Record load performance when you want to analyze the performance of a page as it
 
 1.  Navigate to the page that you want to analyze.  
 1.  Open the **Performance** panel of DevTools.  
-1.  Choose **Refresh page** \(![Refresh Page][ImageRefreshPageIcon]\).  DevTools records performance metrics while the page refreshes and then automatically stops the recording a couple seconds after the load finishes.  
+1.  Choose **Refresh page** \(![Refresh Page](../media/refresh-page-icon.msft.png)\).  DevTools records performance metrics while the page refreshes and then automatically stops the recording a couple seconds after the load finishes.  
     
     :::image type="complex" source="../media/evaluate-performance-performance-refresh-button.msft.png" alt-text="Refresh page" lightbox="../media/evaluate-performance-performance-refresh-button.msft.png":::
        **Refresh page**  
@@ -75,7 +75,7 @@ Navigate to [View a screenshot](#view-a-screenshot) to learn how to interact wit
 
 ### Force garbage collection while recording  
 
-While you are recording a page, choose **Collect garbage** \(![Collect garbage icon][ImageCollectGarbageIcon]\) to force garbage collection.  
+While you are recording a page, choose **Collect garbage** \(![Collect garbage icon](../media/collect-garbage-icon.msft.png)\) to force garbage collection.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-collect-garbage-button.msft.png" alt-text="Collect garbage" lightbox="../media/evaluate-performance-performance-collect-garbage-button.msft.png":::
    Collect garbage  
@@ -83,7 +83,7 @@ While you are recording a page, choose **Collect garbage** \(![Collect garbage i
 
 ### Show recording settings  
 
-Choose **Capture settings** \(![Capture settings][ImageCaptureSettingsIcon]\) to expose more settings related to how DevTools captures performance recordings.  
+Choose **Capture settings** \(![Capture settings](../media/capture-settings-icon.msft.png)\) to expose more settings related to how DevTools captures performance recordings.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png" alt-text="The Capture Settings section" lightbox="../media/evaluate-performance-performance-capture-settings-button-open-drawer.msft.png":::
    The **Capture Settings** section  
@@ -155,7 +155,7 @@ To load a recording, open the contextual menu \(right-click\), and choose **Load
 
 ## Clear the previous recording  
 
-After making a recording, choose **Clear recording** \(![Clear recording icon][ImageClearRecordingIcon]\) to clear that recording from the **Performance** panel.  
+After making a recording, choose **Clear recording** \(![Clear recording icon](../media/clear-recording-icon.msft.png)\) to clear that recording from the **Performance** panel.  
 
 :::image type="complex" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png" alt-text="Clear recording" lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-clear-button.msft.png":::
    **Clear recording**  
@@ -195,13 +195,13 @@ Select `Control`+`F` \(Windows, Linux\) or `Command`+`F` \(macOS\) to open the s
 
 To navigate activities that match your query:  
 
-*   Use the **Previous** \(![Previous][ImagePreviousIcon]\) and **Next** \(![Next][ImageNextIcon]\) buttons.  
+*   Use the **Previous** \(![Previous](../media/previous-icon.msft.png)\) and **Next** \(![Next](../media/next-icon.msft.png)\) buttons.  
 *   Select `Shift`+`Enter` to select the previous or `Enter` to select the next.  
 
 To modify query settings:  
 
-*   Choose **Case sensitive** \(![Case sensitive][ImageSearchCaseIcon]\) to make the query case sensitive.  
-*   Choose **Regex** \(![Regex][ImageSearchRegexIcon]\) to use a regular expression in your query.  
+*   Choose **Case sensitive** \(![Case sensitive](../media/search-case-icon.msft.png)\) to make the query case sensitive.  
+*   Choose **Regex** \(![Regex](../media/search-regex-icon.msft.png)\) to use a regular expression in your query.  
 
 To hide the search box, choose **Cancel**.  
 
@@ -272,7 +272,7 @@ Use the **Filter** text box to filter events by activity name.
 
 By default the **Grouping** menu is set to **No Grouping**.  Use the **Grouping** menu to sort the activity table based on various criteria.  
 
-Choose **Show Heaviest Stack** \(![Show Heaviest Stack][ImageShowHeaviestStackIcon]\) to reveal another table to the right of the **Activity** table.  Choose an activity to populate the **Heaviest Stack** table.  The **Heaviest Stack** table displays which children of the selected activity took the longest time to run.  
+Choose **Show Heaviest Stack** \(![Show Heaviest Stack](../media/show-heaviest-stack-icon.msft.png)\) to reveal another table to the right of the **Activity** table.  Choose an activity to populate the **Heaviest Stack** table.  The **Heaviest Stack** table displays which children of the selected activity took the longest time to run.  
 
 #### The Bottom-Up panel  
 
@@ -484,9 +484,9 @@ Hover on a layer to highlight it in the diagram.
 
 To move the diagram:  
 
-*   Choose **Pan Mode** \(![Pan Mode][ImagePanModeIcon]\) to move along the X and Y axes.  
-*   Choose **Rotate Mode** \(![Rotate Mode][ImageRotateModeIcon]\) to rotate along the Z axis.  
-*   Choose **Reset Transform** \(![Reset Transform][ImageResetTransformIcon]\) to reset the diagram to the original position.  
+*   Choose **Pan Mode** \(![Pan Mode](../media/pan-mode-icon.msft.png)\) to move along the X and Y axes.  
+*   Choose **Rotate Mode** \(![Rotate Mode](../media/rotate-mode-icon.msft.png)\) to rotate along the Z axis.  
+*   Choose **Reset Transform** \(![Reset Transform](../media/reset-transform-icon.msft.png)\) to reset the diagram to the original position.  
     
 ### View paint profiler  
 
@@ -568,22 +568,6 @@ To view scroll performance issues, complete the following actions.
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCaptureSettingsIcon]: ../media/capture-settings-icon.msft.png  
-[ImageClearRecordingIcon]: ../media/clear-recording-icon.msft.png  
-[ImageCollectGarbageIcon]: ../media/collect-garbage-icon.msft.png  
-[ImageNextIcon]: ../media/next-icon.msft.png  
-[ImagePanModeIcon]: ../media/pan-mode-icon.msft.png  
-[ImagePreviousIcon]: ../media/previous-icon.msft.png  
-[ImageRecordIcon]: ../media/record-icon.msft.png
-[ImageRefreshPageIcon]: ../media/refresh-page-icon.msft.png  
-[ImageResetTransformIcon]: ../media/reset-transform-icon.msft.png  
-[ImageRotateModeIcon]: ../media/rotate-mode-icon.msft.png  
-[ImageSearchCaseIcon]: ../media/search-case-icon.msft.png  
-[ImageSearchRegexIcon]: ../media/search-regex-icon.msft.png  
-[ImageShowHeaviestStackIcon]: ../media/show-heaviest-stack-icon.msft.png  
 
 <!-- links -->  
 

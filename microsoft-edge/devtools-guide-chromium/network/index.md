@@ -3,7 +3,7 @@ description: A tutorial on the most popular network-related features in Microsof
 title: Inspect network activity in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -147,7 +147,7 @@ The network connection of the computer that you use to build sites is probably f
        Choose Slow 3G  
     :::image-end:::  
     
-1.  Long-press **Reload** \(![Reload][ImageRefreshIcon]\) and then choose **Empty Cache And Hard Reload**.  
+1.  Long-press **Reload** \(![Reload](../media/refresh-icon.msft.png)\) and then choose **Empty Cache And Hard Reload**.  
     
     :::image type="complex" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="Empty Cache And Hard Reload" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
        **Empty Cache And Hard Reload**  
@@ -162,7 +162,7 @@ The network connection of the computer that you use to build sites is probably f
 
 Screenshots display how a webpage looks over time while it loads.  
 
-1.  Choose \(![Network settings][ImageSettingsIcon]\) and turn on the **Capture screenshots** checkbox.
+1.  Choose \(![Network settings](../media/settings-icon.msft.png)\) and turn on the **Capture screenshots** checkbox.
 1.  Refresh the page again using the **Empty Cache And Hard Reload** workflow.  Navigate to [Simulate a slower connection](#simulate-a-slower-network-connection) if you need a reminder on how to do this.  
     The Screenshots panel provides thumbnails of how the page looked at various points during the loading process.  
     
@@ -176,7 +176,7 @@ Screenshots display how a webpage looks over time while it loads.
        The network activity that was happening during the first screenshot  
     :::image-end:::  
     
-1.  Choose \(![Network settings][ImageSettingsIcon]\) again and turn off the **Capture screenshots** checkbox to close the Screenshots pane.
+1.  Choose \(![Network settings](../media/settings-icon.msft.png)\) again and turn off the **Capture screenshots** checkbox to close the Screenshots pane.
 1.  Refresh the page again.  
     
 ## Inspect the details of the resource  
@@ -204,7 +204,7 @@ Choose a resource to learn more information about it.  Try it now:
     :::image-end:::  
     
     > [!TIP]
-    > When a file is minified, choose the **Format** \(![Format][ImageFormatIcon]\) button at the bottom of the **Response** panel to re-format the contents of the file for readability.  
+    > When a file is minified, choose the **Format** \(![Format](../media/format-icon.msft.png)\) button at the bottom of the **Response** panel to re-format the contents of the file for readability.  
     
 1.  Choose the **Timing** panel.  A breakdown of the network activity for the resource is displayed.  
     
@@ -212,7 +212,7 @@ Choose a resource to learn more information about it.  Try it now:
        The **Timing** panel  
     :::image-end:::  
     
-1.  Choose **Close** \(![Close][ImageCloseIcon]\) to view the Network Log again.  
+1.  Choose **Close** \(![Close](../media/close-icon.msft.png)\) to view the Network Log again.  
     
     :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="The Close button" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
        The **Close** button  
@@ -226,7 +226,7 @@ For example, suppose you want to verify that your resources are using reasonable
 
 <!--TODO: add cache policies section when available  -->
 
-1.  Choose **Search** \(![Search][ImageSearchIcon]\).  The Search pane opens to the left of the Network log.  
+1.  Choose **Search** \(![Search](../media/search-icon.msft.png)\).  The Search pane opens to the left of the Network log.  
     
     :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="The Search pane" lightbox="../media/network-glitch-network-search-empty.msft.png":::
        The **Search** pane  
@@ -260,7 +260,7 @@ DevTools provides numerous workflows for filtering out resources that are not re
 
 The **Filters** toolbar should be turned on by default.  If not:  
 
-1.  Choose **Filter** \(![Filter][ImageFilterIcon]\) to show it.  
+1.  Choose **Filter** \(![Filter](../media/filter-icon.msft.png)\) to show it.  
     
 ### Filter by string, regular expression, or property  
 
@@ -330,7 +330,7 @@ How does a page look and behave when some of the page resources are not availabl
        **Show Request Blocking**  
     :::image-end:::  
     
-1.  Choose **Add Pattern** \(![Add Pattern][ImageAddIcon]\).  
+1.  Choose **Add Pattern** \(![Add Pattern](../media/add-icon.msft.png)\).  
 1.  Type `main.css`.  
     
     :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="Blocking main.css" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
@@ -358,17 +358,6 @@ Navigate to the [Network Reference][DevtoolsNetworkReference] to discover more D
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageAddIcon]: ../media/add-icon.msft.png  
-[ImageCloseIcon]: ../media/close-icon.msft.png  
-[ImageFilterIcon]: ../media/filter-icon.msft.png  
-[ImageFormatIcon]: ../media/format-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
-[ImageScreenshotsIcon]: ../media/screenshots-icon.msft.png  
-[ImageSearchIcon]: ../media/search-icon.msft.png  
-[ImageSettingsIcon]: ../media/settings-icon.msft.png
 
 <!-- links -->  
 
