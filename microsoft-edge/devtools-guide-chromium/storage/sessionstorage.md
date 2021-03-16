@@ -1,9 +1,9 @@
 ---
 description: How to view and edit sessionStorage with the Session Storage pane and the Console.
-title: View And Edit Session Storage With Microsoft Edge DevTools
+title: View and edit Session Storage with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -28,7 +28,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 ## View sessionStorage keys and values  
 
-1.  Choose the **Application** tab to open the **Application** tool.  The **Manifest** pane is shown by default.  
+1.  Choose the **Application** tab to open the **Application** tool.  The **Manifest** panel is shown by default.  
     
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
        The **Manifest** pane  
@@ -74,12 +74,12 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
 1.  Choose the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.  
-1.  Select the `Delete` key or choose **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
+1.  Select the `Delete` key or choose **Delete Selected** \(![Delete Selected](../media/delete-icon.msft.png)\).  
     
 ## Delete all sessionStorage key-value pairs for a domain  
 
 1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
-1.  Choose **Clear All** \(![Clear All][ImageClearIcon]\).  
+1.  Choose **Clear All** \(![Clear All](../media/clear-icon.msft.png)\).  
     
 ## Interact with sessionStorage from the Console  
 
@@ -91,7 +91,7 @@ Since you may run JavaScript in the **Console**, and since the **Console** has a
        Change the JavaScript context of the **Console**  
     :::image-end:::  
     
-1.  Run your `sessionStorage` expressions in the **Console**, the same as you would in your JavaScript.  
+1.  Run your `sessionStorage` expressions in the **Console**, the same as your JavaScript.  
     
     :::image type="complex" source="../media/storage-console-session-storage-keys.msft.png" alt-text="Interact with sessionStorage from the Console" lightbox="../media/storage-console-session-storage-keys.msft.png":::
        Interact with `sessionStorage` from the **Console**  
@@ -100,11 +100,6 @@ Since you may run JavaScript in the **Console**, and since the **Console** has a
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearIcon]: ../media/clear-icon.msft.png  
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 

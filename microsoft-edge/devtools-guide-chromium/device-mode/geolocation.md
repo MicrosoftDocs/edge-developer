@@ -1,9 +1,9 @@
 ---
-description: Open the Sensors tab and select coordinates from the Geolocation list.
+description: Open the Sensors tool and select coordinates from the Geolocation list.
 title: Override geolocation with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -36,11 +36,11 @@ If you are building a UI that changes depending on where the user is located, yo
        The **Command Menu**  
     :::image-end:::  
     
-1.  Type `sensors`, choose **Show Sensors**, and select `Enter`.  The **Sensors** tab opens at the bottom of your DevTools window.  
-1.  From the **Geolocation** list select one of the preset cities, like `Tokyo`, or choose **Custom location** to enter custom longitude and latitude coordinates, or choose **Location unavailable** to see how your site behaves when the user's location is not available.  
+1.  Type `sensors`, choose **Show Sensors**, and select `Enter`.  The **Sensors** tool opens at the bottom of your DevTools window.  
+1.  From the **Geolocation** list select one of the preset cities, like `Tokyo`, or choose **Custom location** to enter custom longitude and latitude coordinates, or choose **Location unavailable** to display how your site behaves when the user's location is not available.  
     
-    :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="Select Tokyo from the Geolocation list" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
-       Select `Tokyo` from the **Geolocation** list  
+    :::image type="complex" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="Choose Tokyo from the Geolocation list" lightbox="../media/device-mode-console-sensors-geolocation-tokyo.msft.png":::
+       Choose `Tokyo` from the **Geolocation** list  
     :::image-end:::  
     
 ## Getting in touch with the Microsoft Edge DevTools team

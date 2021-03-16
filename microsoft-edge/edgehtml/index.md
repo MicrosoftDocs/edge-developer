@@ -3,11 +3,12 @@ description: Legacy Microsoft Edge documentation.  Content for Microsoft Edge (e
 title: Legacy Microsoft Edge documentation
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2020
+ms.date: 03/16/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.localizationpriority: high
 ---
 # Legacy Microsoft Edge documentation  
 
@@ -24,42 +25,6 @@ Thank you for your interest in Microsoft Edge.  The following article summarizes
 | [WebView2 overview][Webview2Index] \(recommended\) | Host web content in your Win32, .NET, and UWP apps with the Microsoft Edge WebView2 control. |  
 | [Interoperability (Site compatibility)][WebPlatformSiteImpactingChanges] \(recommended\) | Provides a summary of high-impact changes that may impact site compatibility. |  
 | [WebDriver][WebdriverChromiumIndex] \(recommended\) | Learn how to test your website or app in Microsoft Edge or automate the browser with WebDriver. |  
-
-<!--  
-:::row:::
-   :::column span="":::
-      [DevTools overview][DevtoolsGuideChromiumMain]  
-   :::column-end:::
-   :::column span="":::
-      [DevTools Protocol overview][DevtoolsProtocolChromiumMain]  
-   :::column-end:::
-   :::column span="":::
-      [Extensions overview][ExtensionsChromiumIndex]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [Progressive Web Apps overview][ProgressiveWebAppsChromiumIndex]  
-   :::column-end:::
-   :::column span="":::
-      [New Microsoft Edge WebView2 overview][Webview2Index]  
-   :::column-end:::
-   :::column span="":::
-      [Interoperability (Site compatibility)][WebPlatformSiteImpactingChanges]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [WebDriver][WebdriverChromiumIndex]  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-:::row-end:::  
--->  
 
 ## Legacy Microsoft Edge documentation  
 
@@ -81,53 +46,6 @@ Thank you for your interest in Microsoft Edge.  The following article summarizes
 | [WebDriver overview][EdgehtmlWebdriverIndex] \(not recommended\) | Learn how to get started with WebDriver.  WebDriver is a wire protocol that allows programs and scripts to control the behavior of your web browser. |  
 | [WebVR][WebvrIndex] \(not recommended\) | WebVR is an open standard JavaScript API that makes it possible to experience immersive 3D Virtual Reality \(VR\) apps using a web browser like Microsoft Edge and a supported VR headset. |  
 | [Windows Runtime (WinRT) overview][EdgehtmlWindowsRuntimeIndex] \(not recommended\) | Use the Windows Runtime \(WinRT\) to call native Windows APIs from your JavaScript app. |  
-
-<!--  
-:::row:::
-   :::column span="":::
-      [developer guide][EdgehtmlDevGuideIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Developer Tools overview][EdgehtmlDevtoolsGuideIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Developer Tools Protocol overview][EdgehtmlDevtoolsProtocolIndex]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [Extensions overview][EdgehtmlExtensionsIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Progressive Web Apps overview][EdgehtmlProgressiveWebAppsIndex]  
-   :::column-end:::
-   :::column span="":::
-      [WebView overview][EdgehtmlHostingWebviewIndex]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [JavaScript runtime hosting overview][EdgehtmlHostingJavascriptRuntimeHostingIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Performance Analysis overview][EdgehtmlPerformanceAnalysisIndex]  
-   :::column-end:::
-   :::column span="":::
-      [WebDriver overview][EdgehtmlWebdriverIndex]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [WebVR][WebvrIndex]  
-   :::column-end:::
-   :::column span="":::
-      [Windows Runtime (WinRT) overview][EdgehtmlWindowsRuntimeIndex]  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-:::row-end:::  
--->  
 
 <!-- links -->  
 

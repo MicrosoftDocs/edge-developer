@@ -1,9 +1,9 @@
 ---
 description: How to view Cache data from the Application panel of Microsoft Edge DevTools.
-title: View Cache Data With Microsoft Edge DevTools
+title: View cache data with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/11/2020
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -30,7 +30,7 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
 
 ## View cache data  
 
-1.  Select the **Application** tab to open the **Application** panel.  The **Manifest** pane usually opens by default.  
+1.  Choose the **Application** tab to open the **Application** panel.  The **Manifest** pane usually opens by default.  
     
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
        The **Manifest** pane  
@@ -42,13 +42,13 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        Available caches  
     :::image-end:::  
     
-1.  Select a cache to view the contents.  
+1.  Choose a cache to view the contents.  
     
     :::image type="complex" source="../media/storage-application-cache-storage-domain-root-headers.msft.png" alt-text="View the contents of a cache" lightbox="../media/storage-application-cache-storage-domain-root-headers.msft.png":::
        View the contents of a cache  
     :::image-end:::  
     
-1.  Select a resource to view the HTTP headers in the section below the table.  
+1.  Choose a resource to view the HTTP headers in the section below the table.  
     
     :::image type="complex" source="../media/storage-application-cache-storage-index-headers.msft.png" alt-text="View the HTTP headers of a resource" lightbox="../media/storage-application-cache-storage-index-headers.msft.png":::
        View the HTTP headers of a resource  
@@ -63,13 +63,13 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
 ## Refresh a resource  
 
 1.  [View the data for a cache](#view-cache-data).  
-1.  Select the resource that you want to refresh.  DevTools highlights it to indicate that it is selected.  
+1.  Choose the resource that you want to refresh.  DevTools highlights it to indicate that it is selected.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="Select a resource to refresh" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
-       Select a resource to refresh  
+    :::image type="complex" source="../media/storage-application-cache-storage-domain-refresh.msft.png" alt-text="Choose a resource to refresh" lightbox="../media/storage-application-cache-storage-domain-refresh.msft.png":::
+       Choose a resource to refresh  
     :::image-end:::  
     
-1.  Choose **Refresh** \(![Refresh][ImageRefreshIcon]\).  
+1.  Choose **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\).  
     
 ## Filter resources  
 
@@ -83,13 +83,13 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
 ## Delete a resource  
 
 1.  [View the data for a cache](#view-cache-data).  
-1.  Select the resource that you want to delete.  DevTools highlights it to indicate that it is selected.  
+1.  Choose the resource that you want to delete.  DevTools highlights it to indicate that it is selected.  
     
-    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="Select a resource to delete" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
-       Select a resource to delete  
+    :::image type="complex" source="../media/storage-application-cache-storage-delete-selected.msft.png" alt-text="Choose a resource to delete" lightbox="../media/storage-application-cache-storage-delete-selected.msft.png":::
+       Choose a resource to delete  
     :::image-end:::  
     
-1.  Choose **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
+1.  Choose **Delete Selected** \(![Delete Selected](../media/delete-icon.msft.png)\).  
     
 ## Delete all cache data  
 
@@ -109,11 +109,6 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageDeleteIcon]: ../media/delete-icon.msft.png  
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
 
 <!-- links -->  
 
