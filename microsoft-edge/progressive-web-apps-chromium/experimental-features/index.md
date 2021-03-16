@@ -43,7 +43,7 @@ The following sections describe the new experimental web app features that are a
 | [URL Protocol Handling](#url-protocol-handling) | 91 or later | Windows 
 | [URL Link Handling](#URL-link-handling) | 85 or later | Windows  
 | [Window Controls Overlay for Installed Desktop Web Apps](#window-controls-overlay-for-installed-desktop-web-apps) | 91 or later | Windows, Mac 
-| [Run on OS Login](#run-on-os-login) | 87 or later | All |
+| [Run on OS Login](#run-on-os-login) | 88 or later | All |
 | [Shortcuts](#shortcuts) | 87 or later | All |
 
 ### URL Protocol Handling  
@@ -361,96 +361,29 @@ body {
 ```
 
 ### Run On OS Login  
-Microsoft Windows offers the ability to configure an application to launch automatically when the user logs into their OS session. Certain class of applications, including email, chat, monitoring dashboards and real-time data display apps can take advantage of this capability. It allows users to engage with those applications as soon as they log into the OS.
+Microsoft Windows offers the ability to configure an application to launch automatically when the user logs into their OS session. Certain class of applications, including email, chat, monitoring dashboards and real-time data display apps can take advantage of this capability. It allows users to engage with those applications as soon as they log into the OS. This feature will auto-start the PWA in the same way as if it were launched manually.
 
  >[!IMPORTANT]
-> Run on OS Login is a [powerful feature](https://w3c.github.io/permissions/#powerful-feature). Users should decide whether to enable the capability for the installed web app. The web platform APIs presented are intended to be used only from within an installed web app and not by a regular website.
+> Run on OS Login is a [powerful feature](https://w3c.github.io/permissions/#powerful-feature). Users should decide whether to enable the capability for the installed web app. 
 
-#### Querying Permission
-The web platform provides a standard way of querying the permission status of powerful features in the user agent. This now includes the ``run-on-os-login`` enum value.
+#### Enabling Run On OS Login
 
-Developers can check if the user has granted permission for this feature with the following code:
-```javascript
-const permission = await navigator.permissions.query({ name: 'run-on-os-login' });
+To enable Run On OS Login capabilities for your PWA, you should enable the flag `Desktop PWAs run on OS login` and restart the browser.
 
-// Update the settings UI with permission.state
+![Run on OS Login flag](../media/flag-roosl.png)
+ 
 
-permission.addEventListener('change', () => {
-    // Update the settings UI with this.state
-});
-```
-The ``permissionDesc.name`` value ``"run-on-os-login"`` given to the ``query(permissionDesc)`` method works only for installed web apps, and will resolve with a ``denied`` state otherwise.
+#### Enabling or disabling the Capability
 
-#### Run On OS Login Modes
-There are three ways an installed web app can operate defined by the ``mode`` parameter:
-* **Windowed**: Default mode, the web app is launched as regular with its window shown. (Same as when the user manually opens the web app).
-* **Minimized**: The web app opens minimized, but still present in taskbar.
-> [!NOTE]
-> Minimized mode does not mean a background task without a window or a task running in the system tray of Windows, the menu bar of macOS, or some equivalent components in other platforms. 
-* **None**: disables the app from auto starting.
+To toggle the `Run on OS Login` feature for an installed PWA, you can browse to the `edge://apps` page and right-click on the desired installed app to grant it permission to run once the user logs in.
 
-```javascript
-enum RunOnOsLoginState { “none”, “minimized”, “windowed” };
-```
+![Enabling Run on OS Login for a PWA in Edge](../media/roosl-toggle.png)
 
-#### Enabling the Capability
-
-To enable the capability, the web app can use the following method with a mode value of either ``"windowed"`` or ``"minimized"``:
-```javascript
-let promise = navigator.runOnOsLogin.set({
-  mode: "windowed"
-});
-
-promise.then(function() {
-    // Run on OS Login permission was approved and operation was successful.
-  },
-  function(reason) {
-    // Permission was either denied or the operation failed.
-    // Use reason to determine failure.
-  });
-```
-
-#### Disabling the Capability 
-
-To disable the Run on OS Login capability the web app can use the same API ``navigator.runOnOsLogin.set()``, and use the ``"none"`` mode, example:
-```javascript
-let promise = navigator.runOnOsLogin.set({
-  mode: "none"
-});
-
-promise.then(function() {
-    // Run on OS Login permission is granted.
-    // Disable operation was successful.
-  },
-  function(reason) {
-    // Permission was either denied or the operation failed.
-    // Use reason to determine failure.
-  });
-```
-
-
-#### Querying the Capability
-
-This way you can find out the status of the Run on OS Login capability of your app: 
-
-```javascript
-let promise = navigator.runOnOsLogin.get();
-
-promise.then(function(status) {
-    // status is the current mode for web app, could be any of these:
-    // status == "windowed", feature is enabled for windowed (default) mode.
-    // status == "minimized", feature is enabled for minimized mode.
-    // status == "none", permission could be denied, or feature is disabled.
-    // Note: Use navigator.permissions.query() to verify permission state.
-  });
-```
-
-The ``navigator.runOnOsLogin.get()`` API will not prompt the permission but rather resolve with the status as ``"none"`` if the permission has not been granted yet or is denied.
 
 ### Shortcuts
 ``Shortcuts`` is a new member of the manifest file. It allows you to define links to parts, key pages, or actions within your web app. They are integrated on Microsoft Windows as 'Jumplists', which are popup menus that appear when your right-click a tile on the Start Menu or an icon on the Taskbar. When a user invokes a shortcut, they navigate to the address that is specified by that shortcut's ``url`` member. 
   
-![Jumplists on Windows 10](/media/jumplists-shortcuts.png)
+![Jumplists on Windows 10](../media/jumplists-shortcuts.png)
 
 #### Shortcuts in the Manifest file
 ```json
