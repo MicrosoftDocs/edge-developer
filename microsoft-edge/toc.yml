@@ -360,7 +360,7 @@
         - name: Microsoft Edge user agent string
           href: web-platform/user-agent-string.md
     - name: Web We Want overview
-      href: we-we-want/index.md
+      href: web-we-want/index.md
     - name: WebView2
       items:
         - name: WebView2 overview
