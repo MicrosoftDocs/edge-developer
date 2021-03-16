@@ -48,14 +48,14 @@ The following sections describe the new experimental web app features that are a
 
 ### URL Protocol Handling  
 
-URLs can be used to define more than just links to web pages and web content using the HTTP or FTP protocol - they can be used to describe links to anything you can codify into a schema. For example, the `mailto://` protocol is used to desicribe an email link and the operating system or browser can decide which application or site should handle that protocol. You can learn more about existing browser based support for [web based protocol handling here](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/registerProtocolHandler/Web-based_protocol_handlers). 
+URLs can be used to define more than just links to web pages and web content using the HTTP or FTP protocol - they can be used to describe links to anything you can codify into a schema. For example, the `mailto://` protocol is used to describe an email link and the operating system or browser can decide which application or site should handle that protocol. You can learn more about existing browser based support for [web based protocol handling here](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/registerProtocolHandler/Web-based_protocol_handlers). 
 
 This feature allows you to register a PWA with the host operating system via the web app manifest, declaring that it can handle a specific URL protocol. After registering a PWA as a protocol handler, when a user clicks on a hyperlink with a specific scheme like `mailto://`, `ms-word://` or `web+music://` from a browser or a native app, the registered PWA would be activated by the operating system and receive the URL.
 
 This feature requires you to update the web app manifest to include a `protocol_handlers` array, within the array you need to specify two fields:
 
 *   `protocol`: Protocol to be handled e.g. `mailto`, `web+jngl`
-*   `url`: HTTPS URL within the application scope that will handle the protocol. The %s token will be replaced by the URL starting with the protcol handlers scheme.
+*   `url`: HTTPS URL within the application scope that will handle the protocol. The `%s` token will be replaced by the URL starting with the protcol handlers scheme.
 
 #### Example Manifest
 
@@ -102,6 +102,7 @@ You will need to update your manifest to support whatever protocol you'd like to
 
 > [!IMPORTANT]
 >To preview protocol handling in Microsoft Edge on Windows, look for and enable the edge://flags:
+>
 >**Desktop Web Apps support Protocol Handlers**
 >
 >Mac OS and Linux support is under development.
@@ -110,7 +111,7 @@ You will need to update your manifest to support whatever protocol you'd like to
 
 Developers can create a more engaging experience if Progressive Web Apps (PWAs) are able to register as handlers for https uniform resource identifiers (URLs). This means that PWAs can request to be launched when associated URLs are activated. For example, a user could click on a link to a news story from an e-mail. An associated PWA for viewing news stories would automatically be launched to handle the activation of the link.
 
-This feature allows you to register a PWA with the host operating system via the web app manifest, declaring that it can handle specific links. To do this, you must add to the manifest file the _optional_ `url_handlers` member. This member is and ``object[]`` that groups the origins of URLs that the app wishes to handle.
+This feature allows you to register a PWA with the host operating system via the web app manifest, declaring that it can handle specific links. To do this, you must add to the manifest file the _optional_ `url_handlers` member. This member is an ``object[]`` that groups the origins of URLs that the app wishes to handle.
 
 #### Example Manifest
 Example web app manifest with ``url_handlers`` member:
@@ -140,15 +141,15 @@ Example web app manifest with ``url_handlers`` member:
     ]
 }
 ```
-A PWA matches a URL for URL handling if the URL matches one of the origin strings in url_handlers and the browser is able to validate that the origin agrees to let this app handle such a URL. 
+A PWA matches a URL for URL handling if the URL matches one of the origin strings in ``url_handlers`` and the browser is able to validate that the origin agrees to let this app handle such a URL. 
 
-``url-handlers`` can contain an origin that encompasses requesting PWA's scope and also other unrelated origins. Not restricting URLs to the same scope or domain as the requesting PWA allows the developer to use different domain names for the same content but handle them with the same PWA.
+``url_handlers`` can contain an origin that encompasses requesting PWA's scope and also other unrelated origins. Not restricting URLs to the same scope or domain as the requesting PWA allows the developer to use different domain names for the same content but handle them with the same PWA.
 
 **Wildcard Matching**
 
 The wildcard character ``*`` can be used to match one or more characters.
 
-A wildcard prefix can be used in url_handlers origin strings to match for different subdomains. The prefix must be ``*``. for this usage. The scheme is still assumed to be https when using a wildcard prefix.
+A wildcard prefix can be used in ``url_handlers`` origin strings to match for different subdomains. The prefix must be ``*``. for this usage. The scheme is still assumed to be https when using a wildcard prefix.
 
 For eg. ``*.contoso.com`` matches ``tenant.contoso.com`` and ``www.tenant.contoso.com`` but not ``contoso.com`` . 
 
@@ -366,7 +367,7 @@ Microsoft Windows offers the ability to configure an application to launch autom
 > Run on OS Login is a [powerful feature](https://w3c.github.io/permissions/#powerful-feature). Users should decide whether to enable the capability for the installed web app. The web platform APIs presented are intended to be used only from within an installed web app and not by a regular website.
 
 #### Querying Permission
-The web platform provides a standard way of querying the permission status of powerful features in the user agent. This now includes the "run-on-os-login" enum value.
+The web platform provides a standard way of querying the permission status of powerful features in the user agent. This now includes the ``run-on-os-login`` enum value.
 
 Developers can check if the user has granted permission for this feature with the following code:
 ```javascript
