@@ -26,42 +26,6 @@ Thank you for your interest in Microsoft Edge.  The following article summarizes
 | [Interoperability (Site compatibility)][WebPlatformSiteImpactingChanges] \(recommended\) | Provides a summary of high-impact changes that may impact site compatibility. |  
 | [WebDriver][WebdriverChromiumIndex] \(recommended\) | Learn how to test your website or app in Microsoft Edge or automate the browser with WebDriver. |  
 
-<!--  
-:::row:::
-   :::column span="":::
-      [DevTools overview][DevtoolsGuideChromiumMain]  
-   :::column-end:::
-   :::column span="":::
-      [DevTools Protocol overview][DevtoolsProtocolChromiumMain]  
-   :::column-end:::
-   :::column span="":::
-      [Extensions overview][ExtensionsChromiumIndex]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [Progressive Web Apps overview][ProgressiveWebAppsChromiumIndex]  
-   :::column-end:::
-   :::column span="":::
-      [New Microsoft Edge WebView2 overview][Webview2Index]  
-   :::column-end:::
-   :::column span="":::
-      [Interoperability (Site compatibility)][WebPlatformSiteImpactingChanges]  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      [WebDriver][WebdriverChromiumIndex]  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-   :::column span="":::
-      &nbsp;  
-   :::column-end:::
-:::row-end:::  
--->  
-
 ## Legacy Microsoft Edge documentation  
 
 <!--  This is deprecated and legacy content.  For new content, navigate to the associated [Chromium category](#new-microsoft-edge-documentation).  -->  
