@@ -1,9 +1,9 @@
 ---
 description: Use virtual devices in Microsoft Edge to build mobile-first websites.
-title: Emulate Mobile Devices in Microsoft Edge DevTools
+title: Emulate mobile devices in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile
@@ -41,7 +41,7 @@ Some aspects of mobile devices are never emulated in DevTools.  For example, the
 
 ## Simulate a mobile viewport  
 
-Choose **Toggle device emulation**  \(![Toggle Device Toolbar][ImageDeviceToolbarIcon]\) or choose **Customize and control DevTools** \(`...`\) > **Device emulation** to open the UI that enables you to simulate a mobile viewport.  
+Choose **Toggle device emulation**  \(![Toggle Device Toolbar](../media/toggle-device-toolbar-dark-icon.msft.png)\) or choose **Customize and control DevTools** \(`...`\) > **Device emulation** to open the UI that enables you to simulate a mobile viewport.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
     The Device Toolbar  
@@ -79,13 +79,13 @@ Use the **Device Type** list to simulate a mobile device or desktop device.
    The **Device Type** list  
 :::image-end:::  
 
-The following table describes the differences between the available device type options.  The Rendering method column refers to whether Microsoft Edge renders the page as a mobile or desktop viewport.  The Cursor icon column refers to what type of cursor you see when you hover on the page.  The Events triggered column refers to whether the page triggers `touch` or `click` events when you interact with the page.  
+The following table describes the differences between the available device type options.  The Rendering method column refers to whether Microsoft Edge renders the page as a mobile or desktop viewport.  The Cursor icon column refers to what type of cursor is displayed when you hover on the page.  The Events triggered column refers to whether the page triggers `touch` or `click` events when you interact with the page.  
 
 | Option | Rendering method | Cursor icon | Events triggered |  
 |:--- |:--- |:--- |:--- |  
 | Mobile | Mobile | Circle | touch |  
-| Mobile \(no touch\) | Mobile | Normal | click |  
-| Desktop | Desktop | Normal | click |  
+| Mobile \(no touch\) | Mobile | Normal | choose |  
+| Desktop | Desktop | Normal | choose |  
 | Desktop \(touch\) | Desktop | Circle | touch |  
 
 > [!NOTE]
@@ -103,7 +103,7 @@ To simulate the dimensions of a specific mobile device, select the device from t
 
 Test your webpage in landscape orientation.  
 
-*   To rotate the viewport to landscape orientation, choose **Rotate** \(![Rotate][ImageRotateIcon]\).  
+*   To rotate the viewport to landscape orientation, choose **Rotate** \(![Rotate](../media/rotate-dark-icon.msft.png)\).  
     
     :::image type="complex" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Page displayed in landscape orientation" lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
        Page displayed in landscape orientation  
@@ -116,7 +116,7 @@ Test your webpage in landscape orientation.
    The **Device Toolbar**  
 :::image-end:::  
 
-For more information, go to [Set orientation](#set-orientation).  
+For more information, navigate to [Set orientation](#set-orientation).  
 
 #### Show device frame  
 
@@ -126,7 +126,7 @@ Display the physical device frame around the viewport when you simulate the dime
 1.  Choose **Show device frame**.  
 
 > [!NOTE]
-> If you do not see a device frame for a particular device, it means that DevTools does not have art for that option.  
+> If a device frame for a particular device is not displayed, it means that DevTools does not have art for the option.  
 
 :::row:::
    :::column span="":::
@@ -147,7 +147,7 @@ If the mobile device option that you need is not included on the default list, y
 
 1.  Choose the **Device** list > **Edit**.  
     
-    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Select Edit" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
+    :::image type="complex" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Choose Edit" lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
        Choose **Edit**  
     :::image-end:::  
     
@@ -210,7 +210,7 @@ All of the throttling is based upon the normal capability of your laptop or desk
 
 To throttle the CPU only and not the network, complete the following steps.
 
-1.  Choose the **Performance** panel, and choose **Capture Settings** \(![Capture Settings][ImageCaptureIcon]\).
+1.  Choose the **Performance** panel, and choose **Capture Settings** \(![Capture Settings](../media/capture-settings-icon.msft.png)\).
 1.  Choose **CPU** > **4x slowdown** or **6x slowdown**.
     
     :::image type="complex" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="The CPU list in the Performance panel" lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
@@ -221,7 +221,7 @@ To throttle the CPU only and not the network, complete the following steps.
 
 To throttle the network only, complete the following steps.
 
-1.  Choose the **Network** panel.
+1.  Choose the **Network** tool.
 1.  Choose **Online** > **Fast 3G** or **Slow 3G**.
     
     :::image type="complex" source="../media/device-mode-network-throttle.msft.png" alt-text="The Throttle list in the Network panel" lightbox="../media/device-mode-network-throttle.msft.png":::
@@ -236,7 +236,7 @@ To throttle the network only, complete the following steps.
     
 You may also set network throttling from the **Performance** panel.  
 
-1.  Choose **Capture Settings** \(![Capture Settings][ImageCaptureIcon]\) and choose the **Network** list and change the preset to **Fast 3G** or **Slow 3G**.  
+1.  Choose **Capture Settings** \(![Capture Settings](../media/capture-settings-icon.msft.png)\) and choose the **Network** list and change the preset to **Fast 3G** or **Slow 3G**.  
     
     :::image type="complex" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Set network throttling from the Performance panel" lightbox="../media/device-mode-performance-network-throttle.msft.png":::
        Set network throttling from the **Performance** panel  
@@ -332,12 +332,6 @@ Next to **User agent**, clear the **Select automatically** checkbox.  Then, choo
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCaptureIcon]: ../media/capture-settings-icon.msft.png  
-[ImageDeviceToolbarIcon]: ../media/toggle-device-toolbar-dark-icon.msft.png  
-[ImageRotateIcon]: ../media/rotate-dark-icon.msft.png  
 
 <!-- links -->  
 

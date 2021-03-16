@@ -1,14 +1,14 @@
 ---
 description: Get started with Remote Debugging Windows 10 devices
-title: Get Started with Remote Debugging Windows 10 Devices
+title: Get started with Remote Debugging Windows 10 Devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, remote, debugging, windows 10, windows, device portal
 ---
-# Get Started with Remote Debugging Windows 10 Devices  
+# Get started with Remote Debugging Windows 10 Devices  
 
 Remote debug live content on a Windows 10 device from your Windows or macOS computer.  This tutorial teaches you the following tasks.  
 
@@ -51,12 +51,12 @@ Launch the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44z
 
 If you are on a WiFi network, ensure the network is marked as either **Domain** or **Private**.  You may verify the state by opening the **Windows Security** app, choosing on **Firewall & network protection** and checking if your network is listed as a **Domain** network or **Private** network.  
 
-If it is listed as **Public**, go to **Settings** > **Network & Internet** > **Wi-Fi**, choose on your network and toggle the **Network profile** button to **Private**.  
+If it is listed as **Public**, navigate to **Settings** > **Network & Internet** > **Wi-Fi**, choose on your network and toggle the **Network profile** button to **Private**.  
 
 Now, open the **Settings** app.  In **Find a setting**, enter `Developer settings` and choose it.  Toggle on **Developer Mode**.  You may now turn on the **Device Portal** by setting **Turn on remote diagnostics over local area network connections** to **On**.  You may then optionally turn **Authentication** on so that the client \(debugger\) device must provide the correct credentials to connect to this device.  
 
 > [!NOTE]
-> If **Turn on remote diagnostics over local area network connections.** was previously turned on, you must turn it off and turn it on again for **Device Portal** to work with the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt].  If you do not see a **For developers** section in **Settings**, **Device Portal** may already be turned on so try restarting the Windows 10 device instead.
+> If **Turn on remote diagnostics over local area network connections.** was previously turned on, you must turn it off and turn it on again for **Device Portal** to work with the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt].  If  a **For developers** section is not displayed in **Settings**, **Device Portal** may already be turned on so try restarting the Windows 10 device instead.
 
 :::image type="complex" source="../media/remote-debugging-windows-media-host-settings.msft.png" alt-text="The Settings app with Developer Mode and Device Portal configured" lightbox="../media/remote-debugging-windows-media-host-settings.msft.png":::
    The **Settings** app with **Developer Mode** and **Device Portal** configured  
@@ -68,7 +68,7 @@ Note the machine IP address and connection port displayed under **Connect using:
    Note the IP address and connection port in the **Settings**  
 :::image-end:::  
 
-You enter the information on the client \(debugger\) device in the [next section](#step-2-set-up-the-client-debugger-machine).  Open tabs in Microsoft Edge and [Progressive Web Apps (PWAs)][DevtoolsProgressiveWebApps] on the host \(debuggee\) machine that you would like to debug from the client \(debugger\) machine.  
+You enter the information on the client \(debugger\) device in the [next section](#step-2-set-up-the-client-debugger-machine).  Open tabs in Microsoft Edge and [Progressive Web Apps (PWAs)][DevtoolsProgressiveWebApps] on the host \(debuggee\) machine that you want to debug from the client \(debugger\) machine.  
 
 ## Step 2: Set up the client (debugger machine)  
 
@@ -94,14 +94,14 @@ If you set up authentication for the host \(debuggee\) machine, you are prompted
 
 If you want to connect to the host \(debuggee\) machine using `https` instead of `http`, you must navigate to `http://IP address:50080/config/rootcertificate` in Microsoft Edge on the client \(debugger\) machine.  This automatically downloads a security certificate named `rootcertificate.cer`.
 
-Choose on `rootcertificate.cer`.  This opens the [Windows Certificate Manager tool][DotnetFrameworkWcfFeatureDetailsHowToViewCertificatesWithMmcSnapInViewCertificatesWithCertificateManagerTool].
+Choose `rootcertificate.cer`.  This opens the [Windows Certificate Manager tool][DotnetFrameworkWcfFeatureDetailsHowToViewCertificatesWithMmcSnapInViewCertificatesWithCertificateManagerTool].
 
-Choose **Install certificate...**, ensure that **Current User** is turned on, and choose **Next**.  Now choose **Place all certificates in the following store** and choose **Browse...**.  Select the **Trusted Root Certification Authorities** store and choose **OK**.  Choose **Next** and then choose **Finish**.  If prompted, confirm that you want to install this certificate to the **Trusted Root Certification Authorities** store.
+Choose **Install certificate...**, ensure that **Current User** is turned on, and choose **Next**.  Now choose **Place all certificates in the following store** and choose **Browse...**.  Choose the **Trusted Root Certification Authorities** store and choose **OK**.  Choose **Next** and then choose **Finish**.  If prompted, confirm that you want to install this certificate to the **Trusted Root Certification Authorities** store.
 
 Now, when connecting to the host \(debuggee\) machine from the client \(debugger\) machine using the `edge://inspect` page, you must use a different `connection port` value.  By default, for desktop Windows, the Device Portal uses `50080` as the `connection port` for `http`.  For `https`, the Device Portal uses `50043` so follow this pattern: https://`IP address`:`50043` on the `edge://inspect` page.  [Read more about the default ports used by Device Portal][WindowsUwpDebugTestPerfDevicePortalSetup].  
 
 > [!NOTE]
-> The default port for `http` is `50080` and the default port for `https` is `50043` but this is not always the case as Device Portal on desktop claims ports in the ephemeral range \(\>50,000\) to prevent collisions with existing port claims on the device.  To learn more, see the [Port Settings][WindowsUwpDebugTestPerfDevicePortalDesktopRegistryBasedConfigurationForDevicePortal] section for Device Portal on Windows desktop.  
+> The default port for `http` is `50080` and the default port for `https` is `50043` but this is not always the case as Device Portal on desktop claims ports in the ephemeral range \(\>50,000\) to prevent collisions with existing port claims on the device.  To learn more, navigate to the  [Port Settings][WindowsUwpDebugTestPerfDevicePortalDesktopRegistryBasedConfigurationForDevicePortal] section for Device Portal on Windows desktop.  
 
 ## Step 3: Debug content on the host from the client  
 
@@ -119,12 +119,15 @@ Determine the content you want to debug and choose **inspect**.  The Microsoft E
 
 ### Inspect elements  
 
-For example, try inspecting an element.  Go to the **Elements** panel of your DevTools instance on the client, and hover over an element to highlight it in the viewport of the host device.  
+For example, try inspecting an element.  Navigate to the **Elements** tool of your DevTools instance on the client, and hover on an element to highlight it in the viewport of the host device.  
 
-You may also tap an element on your host device screen to choose it in the **Elements** panel.  Choose **Select Element** on your DevTools instance on the client, and then tap the element on your host device screen.  Note that **Select Element** is disabled after the first touch, so you need to turn it on again every time you want to use this feature.  
+You may also tap an element on your host device screen to choose it in the **Elements** tool.  Choose **Select Element** on your DevTools instance on the client, and then tap the element on your host device screen.  
+
+> [!NOTE]
+> **Select Element** is disabled after the first touch, so you need to turn it on again every time you want to use this feature.  
 
 > [!IMPORTANT]
-> The **Event Listeners** pane in the **Elements** panel is blank on Windows 10 version 1903.  This is a known issue and the team plans to fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.  
+> The **Event Listeners** pane in the **Elements** tool is blank on Windows 10 version 1903.  This is a known issue and the team plans to fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.  
 
 ## Step 4: Screencast your host screen to your client device  
 
@@ -147,11 +150,11 @@ Some notes on screencasts:
 
 ## Known Issues  
 
-The **Event Listeners** pane in the **Elements** panel is blank on Windows 10 version 1903.  The team plans to fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.  
+The **Event Listeners** pane in the **Elements** tool is blank on Windows 10 version 1903.  The team plans to fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.  
 
 The **Cookies** pane in the **Application** panel is blank on Windows 10 version 1903.  The team plans to fix the **Cookies** pane in a servicing update to Windows 10 version 1903.  
 
-The **Audits** panel, the **3D View** panel, the **Emulated Devices** section in **Settings**, and the **Accessibility tree** pane in the **Elements** panel are not currently working as expected.  The team plans to fix these tools in a future update of Microsoft Edge.  
+The **Audits** panel, the **3D View** panel, the **Emulated Devices** section in **Settings**, and the **Accessibility tree** pane in the **Elements** tool are not currently working as expected.  The team plans to fix these tools in a future update of Microsoft Edge.  
 
 The file explorer does not launch from the DevTools in the **Sources** panel or in the **Security** panel when remote debugging.  The team plans to fix these tools in a future update of Microsoft Edge.  
 

@@ -74,11 +74,11 @@ Use NuGet to add the WebView2 SDK to the project.
     
     Ready to start developing apps using the WebView2 API.  To build and run the project, select `F5`.  The running project displays an empty window.  
     
-    :::image type="complex" source="./media/wpf-gettingstarted-blank.png" alt-text="Empty app":::
-       Empty app
+    :::image type="complex" source="./media/winforms-emptyapp.png" alt-text="Empty app" lightbox="./media/winforms-emptyapp.png":::
+       Empty app  
     :::image-end:::  
     
-## Step 3 - Create a single WebView in MainWindow.xaml  
+## Step 3 - Create a single WebView 
 
 Next add a WebView to your app.  
 
@@ -229,7 +229,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 }
 ```  
 
-In the constructor, EnsureHttps is registered as the event handler on the `NavigationStarting` event on the WebView2 control.  
+In the constructor, `EnsureHttps` is registered as the event handler on the `NavigationStarting` event on the WebView2 control.  
 
 To build and run the project, select `F5`.  Ensure when navigating to an HTTP site, the WebView remains unchanged.  However, the WebView navigates to HTTPS sites.  
 
@@ -262,10 +262,10 @@ To build and run the project, select `F5`.  Ensure the app displays an alert whe
 
 ## Step 7 - Communication between host and web content  
 
-The host and web content may communicate with each other using `postMessage` as follows:  
+The host and web content may communicate in the following ways using `postMessage`.  
 
 *   Web content in a WebView2 control may post a message to the host using `window.chrome.webview.postMessage`.  The host handles the message using any registered `WebMessageReceived` on the host.  
-*   Hosts post messages to web content in a WebView2 control using `CoreWebView2.PostWebMessageAsString` or `CoreWebView2.PostWebMessageAsJSON`.  These messages are caught by handlers added to `window.chrome.webview.addEventListener`.  
+*   Hosts post messages to web content in a WebView2 control using `CoreWebView2.PostWebMessageAsString` or `CoreWebView2.PostWebMessageAsJSON`.  The messages are caught by handlers added to `window.chrome.webview.addEventListener`.  
 
 The communication mechanism passes messages from web content to the host using native capabilities.  
 

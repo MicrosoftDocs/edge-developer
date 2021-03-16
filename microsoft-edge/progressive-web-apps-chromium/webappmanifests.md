@@ -3,20 +3,19 @@ title: Use the Web App Manifest to integrate your Progressive Web App into the O
 description: Learn how to use the Web App Manifest to integrate your Progressive Web App into your Operating System.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/15/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
 ---
-
 # Use the Web App Manifest to integrate your Progressive Web App into the Operating System
 
 A Web App Manifest of a website governs how your Progressive Web App \(PWA\) looks and behaves when installed on a device.  At the most basic level, the Manifest provides details on the name of your app, icons to use to represent your app in system menus, and the theme colors the operating system \(OS\) uses in the title bar.  The Manifest also enables you to unlock powerful features that allow your app to behave like other native apps on the system.  
 
 ## Use shortcuts to provide quick access to features  
 
-Most operating systems provide quick access to key app features using shortcuts on the context menu connected to the icon of the app.  To use shortcuts in your PWA, include the `shortcuts` property in your Web App Manifest.  The following code snippet shows how to define a shortcut in your web app manifest.  
+Most operating systems provide quick access to key app features using shortcuts on the context menu connected to the icon of the app.  To use shortcuts in your PWA, include the `shortcuts` property in your Web App Manifest.  The following code snippet displays how to define a shortcut in your web app manifest.  
 
 ```json
 "shortcuts": [
@@ -44,7 +43,7 @@ When added to a complete Web App Manifest, adding the previous code snippet enab
 
 ## Identify your app as a Share Target
 
-Many operating systems enable users to quickly share links and files with native applications. Progressive Web Apps can participate in this feature as well, via the `share_target` member of the Web App Manifest. Using share_target, you define the "action" page (similar to a form) and the parameters you expect to be passed into it. The following code snippet shows an example of how to use `share_target`.
+Many operating systems enable users to quickly share links and files with native applications. Progressive Web Apps can participate in this feature as well, using the `share_target` member of the Web App Manifest.  Using `share_target`, you define the `"action"` page \(similar to a form\) and the parameters you expect to be passed into it.  The following code snippet displays an example of how to use `share_target`.
 
 ```json
 "share_target": {
@@ -57,18 +56,21 @@ Many operating systems enable users to quickly share links and files with native
 }
 ```
 
-When added to the Web App Manifest, this establishes "/share.html" as the action page for a share. Additionally, it defines three parameters that would be passed to that action page: "title", "text", and "url". These parameters will be stored in the [ShareData](https://wicg.github.io/web-share#dom-sharedata) object’s "name", "description", and "link" properties. By default, the action page receives these parameters as part of a GET request, but you can specify the request `method` and encoding \(as `enctype`\), just like you would on a web form.
+When added to the Web App Manifest, this establishes `"/share.html"` as the action page for a share. Additionally, it defines three parameters that would be passed to that action page:`"title"`, `"text"`, and `"url"`.  These parameters will be stored in the `"name"`, `"description"`, and `"link"` properties of the [ShareData][GitHubWicgWebShareDomSharedata] object.  By default, the action page receives the parameters as part of a GET request, but you can specify the request `method` and encoding \(as `enctype`\), just like you would on a web form.
 
 ## See also  
 
-To learn more about Web App Manifests, see the following list of related topics.  
+To learn more about Web App Manifests, navigate to the following list of related topics.  
 
-* [Web App Manifests][MDNWebAppManifests]  
-* [Web Share Target][WICGShareTarget]
-* [Web Share][WICGShare]
-
+*   [Web App Manifests][MDNWebAppManifests]  
+*   [Web Share Target][GitHubWicgWebShareTarget]
+*   [Web Share][GithubW3cWebShare]
+    
 <!-- links -->  
 
 [MDNWebAppManifests]: https://developer.mozilla.org/docs/Web/Manifest "Web app manifests | MDN"  
-[WICGShareTarget]: https://wicg.github.io/web-share-target/ "Web Share Target API | WICG"
-[WICGShare]: https://w3c.github.io/web-share/ "Web Share API | WICG"
+
+[GitHubWicgWebShareTarget]: https://wicg.github.io/web-share-target "Web Share Target API | WICG"
+[GitHubWicgWebShareDomSharedata]: https://wicg.github.io/web-share#dom-sharedata "ShareData dictionary - Web Share API | WICG"  
+
+[GithubW3cWebShare]: https://w3c.github.io/web-share/ "Web Share API | WICG"

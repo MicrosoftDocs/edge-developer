@@ -1,6 +1,8 @@
 ---
-description: Handling Windows Runtime Events in JavaScript.
+description: Handling Windows Runtime Events in JavaScript
 title: "Handling Windows Runtime Events in JavaScript"
+ms.custom: ""
+ms.date: 11/03/2020
 ms.prod: microsoft-edge
 ms.technology: "windows-integration"
 ms.topic: "article"
@@ -11,7 +13,6 @@ ms.assetid: d9436aff-2c30-4846-b8df-eaa3e63fd75c
 caps.latest.revision: 6
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Handling Windows Runtime events in JavaScript  
