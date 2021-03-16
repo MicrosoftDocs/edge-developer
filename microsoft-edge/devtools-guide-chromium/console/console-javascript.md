@@ -39,7 +39,7 @@ Console autocompletion of JavaScript expressions
 
 As with many other terminal-like experiences you also have a history of commands. Hitting Arrow-Up will show you the commands you entered before. Autocompletion also keeps a history of the commands you entered before, which means that you can type the first few letters of earlier commands and you get a box to choose from.
 
-In addition to having access to what you entered, Console also offers quite a few [DevtoolsConsoleUtilities][utility method] that make your life easier. For example, `$_` always contains the result of the last expression you ran in Console.
+In addition to having access to what you entered, Console also offers quite a few [utility methods][DevtoolsConsoleUtilityMethods] that make your life easier. For example, `$_` always contains the result of the last expression you ran in Console.
 
 :::image type="complex" source="../media/console-intro-last-result.msft.png" alt-text="The $_ expression in Console always contains the last result" lightbox="../media/console-intro-last-result.msft.png":::
     The $_ expression in Console always contains the last result
@@ -79,11 +79,17 @@ Luckily enough, you can use the `console.table()` logging method to cut down to 
 
 :::image type="complex" source="../media/console-javascript-results-with-table.msft.png" alt-text="Displaying the last result in a human readable form using console.table" lightbox="../media/console-javascript-results-with-table.msft.png":::
     Displaying the last result in a human readable form using console.table    
-:::image-end:::  
+:::image-end:::
 
+If you want to re-use the data returned from an expression like this you can also use the `copy()` utility method of Console. The following example will do the call and copy the data straight to the clipboard.
+
+```Javascript
+copy(await (await fetch(
+'https://api.github.com/repos/microsoft/vscode-edge-devtools/issues?state=all&per_page=50&page=1'
+)).json())
+```
 
 Using the Console is a great way to try out JavaScript functionality and to do some quick calculations. It's real power, however, comes with the fact that you have access to the [window][MDNWindow] object which means you can  [interact with the DOM in Console][DevtoolsDOMInteraction]. 
-
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
@@ -91,7 +97,7 @@ Using the Console is a great way to try out JavaScript functionality and to do s
 
 <!-- links -->  
 [TopLevelAwait]: https://github.com/tc39/proposal-top-level-await
-[DevtoolsConsoleUtilities]: ./utilities.md
+[DevtoolsConsoleUtilityMethods]: ./utilities.md
 [DevtoolsDOMInteraction]: ./console-dom-interaction.md
 [DevtoolsBreakpoints]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints.md
 [Live Expressions]: ./live-expressions.md
