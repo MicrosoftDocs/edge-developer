@@ -28,7 +28,7 @@ console.warn('This is a warning')
 
 If you try these out in **Console** yourself by copying or by navigating to the [logging examples demo][DevtoolsConsoleLoggingDemo] you can see that `log()` and `info()` seemingly do the same thing, whilst `error()` and `warn()` show an icon next to the message and a way to inspect the [stack trace][WikiStackTrace] of this message.
 
-:::image type="complex" source="../media/console-intro-different-logging-methods.msft.png" alt-text="Console showing the messages caused by the different logging APIs" lightbox="../media/console-intro-different-logging-methods.msft.png":::
+:::image type="complex" source="../media/console-log-examples.msft.png" alt-text="Console showing the messages caused by the different logging APIs" lightbox="../media/console-log-examples.msft.png":::
    Console showing the messages caused by the different logging APIs 
 :::image-end:::  
 
@@ -57,12 +57,12 @@ You can paste the code above into **Console** or navigate to the [logging differ
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/console-intro-logging-types.msft.png" alt-text="Logging variables of different types in the console" lightbox="../media/console-intro-logging-types.msft.png":::
+      :::image type="complex" source="../media/console-log-types.msft.png" alt-text="Logging variables of different types in the console" lightbox="../media/console-log-types.msft.png":::
          Logging variables of different types in the **Console**
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/console-intro-logging-types-expanded.msft.png" alt-text="Logging variables of different types in the console with expanded extra information" lightbox="../media/console-intro-logging-types-expanded.msft.png":::
+      :::image type="complex" source="../media/console-log-types-expanded.msft.png" alt-text="Logging variables of different types in the console with expanded extra information" lightbox="../media/console-log-types-expanded.msft.png":::
          Logging variables of different types in the **Console** with expanded extra information
       :::image-end:::  
    :::column-end:::
@@ -98,12 +98,12 @@ The first example shows that the order of replacement of specifiers is the param
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/console-intro-logging-with-specifiers.msft.png" alt-text="Using specifiers to log and convert values" lightbox="../media/console-intro-logging-with-specifiers.msft.png":::
+      :::image type="complex" source="../media/console-log-specifiers.msft.png" alt-text="Using specifiers to log and convert values" lightbox="../media/console-log-specifiers.msft.png":::
          Using specifiers to log and convert values
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/console-intro-logging-with-specifiers-expanded.msft.png" alt-text="Expanding the results shows the difference between the %O and %o specifier - the body is either displayed as an expandable DOM node or as a full list of all JavaScript properties on the document body" lightbox="../media/console-intro-logging-with-specifiers-expanded.msft.png":::
+      :::image type="complex" source="../media/console-log-specifiers-expanded.msft.png" alt-text="Expanding the results shows the difference between the %O and %o specifier - the body is either displayed as an expandable DOM node or as a full list of all JavaScript properties on the document body" lightbox="../media/console-log-specifiers-expanded.msft.png":::
         Expanding the results shows the difference between the `%O` and `%o` specifier - the body is either displayed as an expandable DOM node or as a full list of all JavaScript properties on the document body
       :::image-end:::  
    :::column-end:::
@@ -140,12 +140,12 @@ As shown in the second example the group names could also be generated. You can 
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/console-intro-groups.msft.png" alt-text="Logging lots of values as groups" lightbox="../media/console-intro-groups.msft.png":::
+      :::image type="complex" source="../media/console-log-groups.msft.png" alt-text="Logging lots of values as groups" lightbox="../media/console-log-groups.msft.png":::
          Logging lots of values as groups
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/console-intro-groups-expanded.msft.png" alt-text="Each group can be expanded and collapsed" lightbox="../media/console-intro-groups-expanded.msft.png":::
+      :::image type="complex" source="../media/console-log-groups-expanded.msft.png" alt-text="Each group can be expanded and collapsed" lightbox="../media/console-log-groups-expanded.msft.png":::
         Each group can be expanded and collapsed
       :::image-end:::  
    :::column-end:::
@@ -173,7 +173,7 @@ console.log(bodyDimensions);
 console.table(bodyDimensions);
 ```
 
-:::image type="complex" source="../media/console-intro-object-vs-table.msft.png" alt-text="Showing data with console.table can make it much easier to read" lightbox="../media/console-intro-object-vs-table.msft.png":::
+:::image type="complex" source="../media/console-log-table.mfst.png" alt-text="Showing data with console.table can make it much easier to read" lightbox="../media/console-log-table.mfst.png":::
    Showing data with console.table can make it much easier to read
 :::image-end:::  
 
@@ -190,7 +190,7 @@ console.table(contentElements)
 console.table(contentElements,['nodeName', 'innerText', 'offsetHeight'])
 ```
 
-:::image type="complex" source="../media/console-intro-table-filtering.msft.png" alt-text="You can filter information that console.table should display by providing an array of properties to show as a second parameter" lightbox="../media/console-intro-table-filtering.msft.png":::
+:::image type="complex" source="../media/console-log-table-filtered.msft.png" alt-text="You can filter information that console.table should display by providing an array of properties to show as a second parameter" lightbox="../media/console-log-table-filtered.msft.png":::
    You can filter information that console.table should display by providing an array of properties to show as a second parameter
 :::image-end:::
 

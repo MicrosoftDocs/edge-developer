@@ -23,12 +23,12 @@ The versatility of the **Console** made it one of the few tools in DevTools that
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../media/console-intro-upper-pane.msft.png" alt-text="The Console tool open in the upper pane with Issues open in the lower one" lightbox="../media/console-intro-upper-pane.msft.png":::
-         The **Console** tool open in the upper pane with **Issues** open in the lower one 
+      :::image type="complex" source="../media/console-intro-console-main.msft.png" alt-text="The Console tool open in the upper pane" lightbox="../media/console-intro-console-main.msft.png":::
+         The **Console** tool open in the upper pane
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="../media/console-intro-drawer.msft.png" alt-text="Console in the lower panel with the Elements tool open above it" lightbox="../media/console-intro-drawer.msft.png":::
+      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="Console in the lower panel with the Elements tool open above it" lightbox="../media/console-intro-console-panel.msft.png":::
          **Console** in the lower panel with the **Elements** tool open above it 
       :::image-end:::  
    :::column-end:::
@@ -40,7 +40,7 @@ The fastest way to get directly to Console is to select `Control`+`Shift`+`J` \(
 
 **Console** is the default place where JavaScript and connectivity errors get reported. If there are any errors a button will show next to the Settings icon in DevTools showing the amount of errors and warnings. Activating it will open Console and show the problem.
 
-:::image type="complex" source="../media/console-intro-error-in-console.msft.png" alt-text="DevTools giving detailed information about the error in the Console" lightbox="../media/console-intro-error-in-console.msft.png":::
+:::image type="complex" source="../media/console-debug-showing-error.msft.png" alt-text="DevTools giving detailed information about the error in the Console" lightbox="../media/console-debug-showing-error.msft.png":::
    DevTools giving detailed information about the error in the Console 
 :::image-end:::  
 
@@ -75,7 +75,7 @@ console.groupEnd('Technolgies');
 
 The result is a console showing the results of the above commands.
 
-:::image type="complex" source="../media/console-intro-logging-demos.msft.png" alt-text="DevTools with a console full of messages caused by the demo code" lightbox="../media/console-intro-logging-demos.msft.png":::
+:::image type="complex" source="../media/console-intro-logging.msft.png" alt-text="DevTools with a console full of messages caused by the demo code" lightbox="../media/console-intro-logging.msft.png":::
    DevTools with a console full of messages caused by the demo code
 :::image-end:::  
 
@@ -89,13 +89,13 @@ Try it out right now. Go to Console and type in `2 + 2`. You will see that Conso
 
 :::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console showing the result of 2 + 2 live as you type it" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
 Console showing the result of 2 + 2 live as you type it
-:::image-end:::    
+:::image-end:::  
 
 If you hit `Enter`, Console will run the JavaScript command and give you the result and you can write the next command. 
 
 :::image type="complex" source="../media/console-javascript-several-expressions.msft.png" alt-text="Running several JavaScript expressions in succession" lightbox="../media/console-javascript-several-expressions.msft.png":::
 Running several JavaScript expressions in succession
-:::image-end:::
+:::image-end:::  
 
 You only have one line to write your JavaScript expressions as hitting `Enter` will run the code. You can work around this by using `Shift + Enter`. As with many other terminal-like experiences you also have a history of commands. Hitting Arrow-Up will show you the commands you entered before. 
 
@@ -125,19 +125,20 @@ Instead of only reading from the document, you can also change it. Try the follo
 document.querySelector('h1').innerHTML = 'Rocking the Console';
 ```
 
-:::image type="complex" source="../media/console-intro-writing-DOM.msft.png" alt-text="Writing to the DOM in Console" lightbox="../media/console-intro-reading-DOM.msft.png":::
+:::image type="complex" source="../media/console-intro-wrtiting-DOM.msft.png" alt-text="Writing to the DOM in Console" lightbox="../media/console-intro-wrtiting-DOM.msft.png":::
 Writing to the DOM in Console
 :::image-end:::  
 
 You changed the main heading of the document to **Rocking the Console**
 
-In addition to any JavaScript you want run, Console also comes with a lot of [Utility methods][DevtoolsConsoleUtilities] that make it even easier to access and manipulate the current document. For example, if you wanted to add a red border around all the links in the current document, you can use the following code:
+In addition to any JavaScript you want run, Console also comes with a lot of [Utility methods][DevtoolsConsoleUtilities] that make it even easier to access and manipulate the current document. For example, if you wanted to add a green border around all the links in the current document, you can use the following code:
 
 ```javascript
-$$('a').forEach(a => a.style.border='1px solid firebrick');
+$$('a').forEach(a => a.style.border='1px solid lime');
 ```
-:::image type="complex" source="../media/console-intro-DOM-loop.msft.png" alt-text="Manipulating a selection of elements using Console" lightbox="../media/console-intro-reading-DOM.msft.png":::
-Manipulating a selection of elements using Console
+
+:::image type="complex" source="../media/console-intro-changing-styles.msft.png" alt-text="Manipulating a selection of elements using Console" lightbox="../media/console-intro-changing-styles.msft.png":::
+    Manipulating a selection of elements using Console
 :::image-end:::  
 
 
