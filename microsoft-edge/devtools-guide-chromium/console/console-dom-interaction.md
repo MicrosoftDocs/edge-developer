@@ -52,15 +52,14 @@ Depending on the complexity of the document, It can be quite daunting to find th
     Showing the elmement you want to pick on the screen
 :::image-end:::  
 
-
 You can get a direct reference to this element to manipulate using the following steps. 
 
 1. Use the **Inspect** tool to pick the element 
 
-    :::image type="complex" source="../media/console-DOM-use-inspector-to-get-element.msft.png" `alt-text="Picking an element using the Inspector tool" lightbox="../media/console-DOM-use-inspector-to-get-element.msft.png":::
+    :::image type="complex" source="../media/console-DOM-use-inspector-to-get-element.msft.png" alt-text="Picking an element using the Inspector tool" lightbox="../media/console-DOM-use-inspector-to-get-element.msft.png":::
         Picking an element using the Inspector tool
     :::image-end:::  
-
+    
 1. Select it and DevTools will jump to the **Elements** tool. 
 1. Activate the `...` menu next to the element in the DOM view  
 
