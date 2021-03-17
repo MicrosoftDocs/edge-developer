@@ -3,7 +3,7 @@ description: Release notes for Microsoft Edge WebView2 SDK
 title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 03/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -14,33 +14,32 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence.  Review the following content for up-to-date information on product announcements, additions, modifications, and breaking changes to the APIs.  
 
 > [!NOTE]
-> Ensure you re-compile your app after updating the NuGet package.  The WebView team recommends using the Canary channel when developing using the prerelease packages, and the evergreen runtime when using release packages.  For more information, navigate to [Versioning][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].  
+> Ensure you re-compile your app after updating the NuGet package.  The WebView team recommends that you use the Canary channel when you develop using the prerelease packages, and the Evergreen WebView2 Runtime when you use the release packages.  For more information, navigate to [Versioning][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].  
  
 ## 1.0.824-prerelease  
 
 Release Date: March 8, 2021  
 
-[NuGet package][NuGetGallery1.0.824-prerelease] \| Minimum Edge Version to load: 86.0.616.0+ | Full API Compatibility: 91.0.824.0+
-
+[NuGet package][NuGetGallery1.0.824-prerelease] \| Minimum Microsoft Edge version to load: 86.0.616.0 or newer \| Full API Compatibility: 91.0.824.0 or newer  
 
 ### General  
 
 #### Features  
 
-*   Extended `ProcessFailed` event that it will now be raised for non-renderer child processes and frame renderers.  
-*   Added experimental [AreBrowserAcceleratorKeysEnabled][Webview2ReferenceWin32Icorewebview2experimentalsettingsViewWebview210824GetArebrowseracceleratorkeysenabled] setting.  You may choose to keeps the browser from responding to accelerator keys related to navigation, printing, saving, and other browser-specific functions.  
+*   Extended `ProcessFailed` event that it is now raised for non-renderer child processes and frame renderers.  
+*   Added experimental [AreBrowserAcceleratorKeysEnabled][Webview2ReferenceWin32Icorewebview2experimentalsettingsViewWebview210824GetArebrowseracceleratorkeysenabled] setting.  You may choose to keep the browser from responding to accelerator keys related to navigation, printing, saving, and other browser-specific functions.  
 *   Added iframe support for `AddScriptToExecuteOnDocumentCreated`.  
     
 #### Promotion
 
 *   [UserAgent][Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddWebresourceresponsereceived] API is now promoted to public.  
-*   Rasterization Scale APIs ([RasterizationScale][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetRasterizationscale] property,  [RasterizationScaleChanged][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseAddRasterizationscalechanged] event, [BoundsMode property][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetBoundsmode], and [ShouldDetectMonitorScaleChanges][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetShoulddetectmonitorscalechanges] property) are now promoted to public.  
+*   Rasterization Scale APIs \([RasterizationScale][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetRasterizationscale] property,  [RasterizationScaleChanged][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseAddRasterizationscalechanged] event, [BoundsMode property][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetBoundsmode], and [ShouldDetectMonitorScaleChanges][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetShoulddetectmonitorscalechanges] property\) are now promoted to public.  
     
 #### Bug fixes  
 
 *   Expanded supported C++ and .NET project types such as MFC and ATL.  \([\#506][GithubMicrosoftedgeWebviewfeedbackIssue506], [\#669][GithubMicrosoftedgeWebviewfeedbackIssue669], and [\#851][GithubMicrosoftedgeWebviewfeedbackIssue851]\).  
-*   Fixed a bug that WebView2 Runtime leaks Inbound firewall entry.  
-*   Fixed setting Response during WebResourceRequested event.  \([\#568][GithubMicrosoftedgeWebviewfeedbackIssue568]\).  
+*   Fixed a bug that Evergreen WebView2 Runtime leaks Inbound firewall entry.  
+*   Fixed setting Response during `WebResourceRequested` event.  \([\#568][GithubMicrosoftedgeWebviewfeedbackIssue568]\).  
 *   Fixed a bug that navigating to `edge://` causes browser process to exit.  \([\#604][GithubMicrosoftedgeWebviewfeedbackIssue604]\).  
 *   Fixed a bug that limited WebView2 bounds to size of screen in Visual Hosting mode. 
 
@@ -48,7 +47,7 @@ Release Date: March 8, 2021
 
 Release Date: March 8, 2021  
 
-[NuGet package][NuGetGallery1.0.774.44] \| Minimum Runtime Version to load: 86.0.616.0+ | Full API Compatibility: 89.0.774.44+
+[NuGet package][NuGetGallery1.0.774.44] \| Minimum Runtime version to load: 86.0.616.0 or newer \| Full API Compatibility: 89.0.774.44 or newer  
 
 ### General  
 
@@ -118,14 +117,14 @@ Release Date: February 10, 2021
 
 #### Bug fixes  
 
-*   Fixed bug that crashed WebView apps that use the WPF SDK.  The crash occurred when windows were closed using the F4 key.  \([\#399][GithubMicrosoftedgeWebviewfeedbackIssue399]\).  
+*   Fixed bug that crashed WebView apps that use the WPF SDK.  The crash occurred when windows were closed using the `F4` key.  \([\#399][GithubMicrosoftedgeWebviewfeedbackIssue399]\).  
 *   The WebView2 initialization screen is now transparent, instead of gray.  \([\#196][GithubMicrosoftedgeWebviewfeedbackIssue196]\).  
     
 ## 1.0.705.50  
 
 Release Date: January 25, 2021  
 
-[NuGet package][NuGetGallery1.0.705.50] \| WebView2 Runtime version 86.0.616.0 or newer  
+[NuGet package][NuGetGallery1.0.705.50] \| Evergreen WebView2 Runtime version 86.0.616.0 or newer  
 
 ### General  
 
@@ -182,7 +181,7 @@ Release Date: December 8, 2020
 
 #### Bug fixes
 
-*   Added [AcceleratorKeyPressed][DotnetApiMicrosoftWebWebview2WpfWebview2Acceleratorkeypressed] event to support AcceleratorKey select in WebView2.  \([\#288][GithubMicrosoftedgeWebviewfeedbackIssue288]\).  
+*   Added [AcceleratorKeyPressed][DotnetApiMicrosoftWebWebview2WpfWebview2Acceleratorkeypressed] event to support `AcceleratorKey` select in WebView2.  \([\#288][GithubMicrosoftedgeWebviewfeedbackIssue288]\).  
 *   Removed unnecessary files from being output to WebView2 folders.  \([\#461][GithubMicrosoftedgeWebviewfeedbackIssue461]\).  
 *   Improved host object API.  \([\#335][GithubMicrosoftedgeWebviewfeedbackIssue335] and [\#525][GithubMicrosoftedgeWebviewfeedbackIssue525]\).  
     
@@ -190,7 +189,7 @@ Release Date: December 8, 2020
 
 Release Date: November 20, 2020  
 
-[NuGet package][NuGetGallery1.0.664.37] \| WebView2 Runtime version 86.0.616.0 or newer.  
+[NuGet package][NuGetGallery1.0.664.37] \| Evergreen WebView2 Runtime version 86.0.616.0 or newer  
 
 ### General  
 
@@ -212,7 +211,7 @@ Release Date: November 20, 2020
 
 Release Date: October 19, 2020  
 
-[NuGet package][NuGetGallery1.0.674-prerelease] \| WebView2 Runtime version 86.0.616.0 or newer.  
+[NuGet package][NuGetGallery1.0.674-prerelease] \| Evergreen WebView2 Runtime version 86.0.616.0 or newer  
 
 ### General  
 
@@ -242,7 +241,7 @@ Release Date: October 19, 2020
 
 Release Date: October 19, 2020  
 
-[NuGet package][NuGetGallery1.0.622.22] \| WebView2 Runtime version 86.0.616.0 or newer.  
+[NuGet package][NuGetGallery1.0.622.22] \| Evergreen WebView2 Runtime version 86.0.616.0 or newer  
 
 ### General  
 
@@ -256,7 +255,7 @@ Release Date: October 19, 2020
 
 Release Date: September 10, 2020  
 
-[NuGet package][NuGetGallery0.9.622.11] \| WebView2 Runtime version 86.0.616.0 or newer.  
+[NuGet package][NuGetGallery0.9.622.11] \| Evergreen WebView2 Runtime version 86.0.616.0 or newer  
 
 ### General  
 
@@ -384,7 +383,7 @@ Release Date: July 20, 2020
     > **Breaking Change**:  Deprecated [CreateCoreWebView2EnvironmentWithDetails][Webview2ReferenceWin32Webview2IdlViewWebview209488Createcorewebview2environmentwithdetails] and replaced with [CreateCoreWebView2EnvironmentWithOptions][Webview2ReferenceWin32Webview2IdlViewWebview209488Createcorewebview2environmentwithoptions].  
     
 *   Added [FrameNavigationCompleted][Webview2ReferenceWin32Icorewebview2ViewWebview209488AddFramenavigationcompleted] event.  Now, when an iframe completes navigation, an event is run and returns the success of the navigation and the navigation ID.  
-*   Added [ICoreWebView2EnvironmentOptions][Webview2ReferenceWin32Icorewebview2environmentoptionsViewWebview209488] interface, which may be used to determine the version of the WebView2 Runtime targeted by your app.  
+*   Added [ICoreWebView2EnvironmentOptions][Webview2ReferenceWin32Icorewebview2environmentoptionsViewWebview209488] interface, which may be used to determine the version of the Evergreen WebView2 Runtime targeted by your app.  
 *   Added [IsBuiltInErrorPageEnabled][Webview2ReferenceWin32Icorewebview2settingsViewWebview209488GetIsbuiltinerrorpageenabled] setting.  Now, you may choose to turn on or off the built-in error webpage for navigation failure and render process failure.  
 *   Updated Remote Object Injection to support .NET `IDispatch` implementations \([#113][GithubMicrosoftedgeWebviewfeedbackIssue113]\).  
 *   Updated [NewWindowRequested][Webview2ReferenceWin32Icorewebview2ViewWebview209488AddNewwindowrequested] event to handle requests from context menus \([#108][GithubMicrosoftedgeWebviewfeedbackIssue108]\).  
