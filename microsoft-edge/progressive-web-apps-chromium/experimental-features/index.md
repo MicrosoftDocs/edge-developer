@@ -1,6 +1,6 @@
 ---
 description: The latest experimental features in Microsoft Edge for Web Apps
-title: Experimental features
+title: Experimental features | Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/16/2021 
@@ -18,7 +18,7 @@ While experimental features are available in all channels of Microsoft Edge, you
 
 To turn on \(or off\) experimental features in Microsoft Edge, complete the following steps.  
   
-1.  Open the Microsoft Edge flags webpage by navigating to `edge://flags` using the address bar. Make sure you are using a version of Microsoft Edge that has the relevant feature flag listed in this article.  Navigate to [Experimental features](#experimental-features).  
+1.  Open the Microsoft Edge flags webpage by navigating to `edge://flags` using the address bar. Make sure you are using a version of Microsoft Edge that has the relevant feature flag listed in this article.  Navigate to [Experimental features](#experimental-features-in-progressive-web-apps).  
 1.  Find the relevant experimental flag on the webpage and change it's status to `Enabled`. Each experiment will usually have it's own flag to toggle on or off.
 1.  Close and restart Microsoft Edge  
 
@@ -445,7 +445,7 @@ To provide feedback on Microsoft Edge web app experiments:
 
 *   Send your feedback using the **Send feedback to Microsoft** menu item found in the `...` menu or select `Alt`+`Shift`+`I` from within your app
     
-:::image type="complex" source="../media/send-feedback-from-progressive-web-app.png" alt-text="Send Feedback from PWA" lightbox="../media/send-feedback-from-pwa.png":::
+:::image type="complex" source="../media/send-feedback-from-progressive-web-app.png" alt-text="Send Feedback from PWA" lightbox="../media/send-feedback-from-progressive-web-app.png":::
    Send Feedback from PWA  
 :::image-end:::  
 
