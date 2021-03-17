@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, javascript, developer, extensions
-ms.date: 12/02/2020
+ms.date: 03/16/2021
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 # Getting started with extensions  
@@ -30,7 +30,7 @@ Once you have an extension that works in Microsoft Edge, you'll want to side loa
 
 Think you've found a bug in our extensions platform? If the issue is specific to Microsoft Edge, please search for it on our [Microsoft Edge Issue Tracker](https://developer.microsoft.com/microsoft-edge/platform/issues/) to see if it's already been reported. If it has, great! You can press the "+ Me too" button to upvote the bug and the "Watch this issue for updates" button to be alerted to any changes on the issue. If you can't find the issue you're running into, feel free to open a new issue and provide as much information as possible so our developers can look into it. 
 
-Are we missing an API that your extension needs to work properly? If so, [we're always listening on UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/87962-extensions). Feel free to upvote your API if it already exists, or to create a new feedback item so that other developers can upvote it too! 
+<!--Are we missing an API that your extension needs to work properly? If so, [we're always listening on UserVoice](https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/category/87962-extensions). Feel free to upvote your API if it already exists, or to create a new feedback item so that other developers can upvote it too! -->  
 
 Do you have a question that you can't find an answer to in the documentation? We strongly recommend you join the [Microsoft Edge Extensions community](https://stackoverflow.com/questions/tagged/microsoft-edge-extension) on Stack Overflow and ask it there!
 
