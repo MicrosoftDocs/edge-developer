@@ -41,6 +41,7 @@ The following sections describe the new experimental web app features that are a
 | [Window Controls Overlay for Installed Desktop Web Apps](#window-controls-overlay-for-installed-desktop-web-apps) | 91 or later | Windows |  
 | [Run on OS Login](#run-on-os-login) | 88 or later | All |  
 | [Shortcuts](#shortcuts) | 87 or later | All |  
+| [File Handling](#file-handling) | 83 or later | All Desktop|  
 
 ## Features Coming Soon
 This table includes features that are work in progress that may come out in a future release for testing. 
@@ -437,6 +438,20 @@ To toggle the `Run on OS Login` feature for an installed PWA, you can browse to 
 *   **description**: A string that describes the purpose of the shortcut. It might be used for assistive technology.
 *   **url**: The URL within the web app that opens when the shortcut is activated.
 *   **icons**: A set of icons that represent the shortcut.
+
+## File Handling
+
+The ability to register as a file type handler has been in experimentation phase for some time. By providing a manifest entry for the file types your app can handle, once installed, your app is registered with the host operating system as a file handler for those file types. You then check for the existance of the feature `launchQueue` within your apps startup code and handle the file.
+
+Chromium based browsers are broadly testing and shaping this feature. You can find more information including code examples over at [web.dev](https://web.dev/file-handling/).
+
+> [!IMPORTANT]
+> To preview file handling in Microsoft Edge for desktop operating systems, look for and turn on the `edge://flags`:
+> 
+> **File Handling API**
+> 
+> This experimental feature is off by default.
+  
     
 ## Providing feedback on experimental features  
 
