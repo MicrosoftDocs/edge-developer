@@ -32,9 +32,9 @@ The following table lists the currently available permission strings to use in y
 
 | Permission string                            | Description                                            
 |---------------------------------------|----------------------------------------------------------|
-| `activeTab` | Requests that the extension be granted permissions according to the activeTab specification. |
+| `activeTab` | Requests that the extension is granted permissions according to the activeTab specification. |
 | `alarms` | Gives your extension access to the chrome.alarms API. |
-| `background` | Makes Edge start up early and shut down late, so that extensions can have a longer life. When any installed extension has `background` permission, Edge runs (invisibly) as soon as the user logs into their computer—before the user launches Edge. The `background` permission also makes Edge continue running, even after its last window is closed, until the user explicitly quits Edge. This permission has no impact on extensions that are turned off in the browser. The `background` permission is normally used on a background page. |
+| `background` | Makes Microsoft Edge start up early and shut down late, so that extensions can have a longer life. When any installed extension has `background` permission, Microsoft Edge runs invisibly as soon as the user logs into their computer, and before the user launches Microsoft Edge. The `background` permission also makes Microsoft Edge continue running, even after its last window is closed, until the user explicitly quits Microsoft Edge. This permission does not affect extensions that are turned off in the browser. The `background` permission is normally used on a background page. |
 | `bookmarks` | Gives your extension access to the chrome.bookmarks API. |
 | `browsingData` | Gives your extension access to the chrome.browsingData API. |
 | `certificateProvider` | Gives your extension access to the chrome.certificateProvider API. |
@@ -46,7 +46,7 @@ The following table lists the currently available permission strings to use in y
 | `debugger` | Gives your extension access to the chrome.debugger API. |
 | `declarativeContent` | Gives your extension access to the chrome.declarativeContent API. |
 | `declarativeNetRequest` | Gives your extension access to the chrome.declarativeNetRequest API. |
-| `declarativeNetRequestFeedback` | Grants the extension access to events and methods within the chrome.declarativeNetRequest API which returns information on declarative rules matched. |
+| `declarativeNetRequestFeedback` | Grants the extension access to events and methods within the chrome.declarativeNetRequest API, which returns information on declarative rules matched. |
 | `declarativeWebRequest` | Gives your extension access to the chrome.declarativeWebRequest API. |
 | `desktopCapture` | Gives your extension access to the chrome.desktopCapture API. |
 | `documentScan` | Gives your extension access to the chrome.documentScan API. |
@@ -55,7 +55,7 @@ The following table lists the currently available permission strings to use in y
 | `enterprise.hardwarePlatform` | Gives your extension access to the chrome.enterprise.hardwarePlatform API. |
 | `enterprise.networkingAttributes` | Gives your extension access to the chrome.enterprise.networkingAttributes API. |
 | `enterprise.platformKeys` | Gives your extension access to the chrome.enterprise.platformKeys API. |
-| `experimental` | Required if the extension uses any chrome.experimental.* APIs. |
+| `experimental` | Required if the extension uses any chrome.experimental.* API. |
 | `fileBrowserHandler` | Gives your extension access to the chrome.fileBrowserHandler API. |
 | `fileSystemProvider` | Gives your extension access to the chrome.fileSystemProvider API. |
 | `fontSettings` | Gives your extension access to the chrome.fontSettings API. |
@@ -87,7 +87,7 @@ The following table lists the currently available permission strings to use in y
 | `system.storage` | Gives your extension access to the chrome.system.storage API. |
 | `tabCapture` | Gives your extension access to the chrome.tabCapture API. |
 | `tabGroups` | Gives your extension access to the chrome.tabGroups API. |
-| `tabs` | Gives your extension access to privileged fields of the Tab objects used by several APIs including chrome.tabs and chrome.windows. In many circumstances your extension will not need to declare the `tabs` permission to make use of these APIs. |
+| `tabs` | Gives your extension access to privileged fields of the Tab objects that may be used by several APIs including chrome.tabs and chrome.windows. In many circumstances, your extension does not need to declare the `tabs` permission to make use of these APIs. |
 | `topSites` | Gives your extension access to the chrome.topSites API. |
 | `tts` | Gives your extension access to the chrome.tts API. |
 | `ttsEngine` | Gives your extension access to the chrome.ttsEngine API. |
