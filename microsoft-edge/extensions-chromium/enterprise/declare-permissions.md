@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
 ---
-<!-- Copyright A.  W.  Fuchs
+<!-- Copyright A. W. Fuchs
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
