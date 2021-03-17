@@ -1,14 +1,14 @@
 ---
 description: The latest experimental features in Microsoft Edge for Web Apps
-title: Experimental features
+title: Experimental features | Progressive Web Apps
 author: MSEdgeTeam
-ms.author: msedgedevex
+ms.author: msedgedevrel
 ms.date: 03/16/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
 ---
-# Experimental features  
+# Experimental features in Progressive Web Apps
 
 Microsoft Edge provides access to experimental features that are still in development.  You may test and [provide feedback](#providing-feedback-on-experimental-features) on these features to help to determine when and if to release them.  
 
@@ -18,7 +18,7 @@ While experimental features are available in all channels of Microsoft Edge, you
 
 To turn on \(or off\) experimental features in Microsoft Edge, complete the following steps.  
   
-1.  Open the Microsoft Edge flags webpage by navigating to `edge://flags` using the address bar. Make sure you are using a version of Microsoft Edge that has the relevant feature flag listed in this article.  Navigate to [Experimental features](#experimental-features).  
+1.  Open the Microsoft Edge flags webpage by navigating to `edge://flags` using the address bar. Make sure you are using a version of Microsoft Edge that has the relevant feature flag listed in this article.  Navigate to [Experimental features](#experimental-features-in-progressive-web-apps).  
 1.  Find the relevant experimental flag on the webpage and change it's status to `Enabled`. Each experiment will usually have it's own flag to toggle on or off.
 1.  Close and restart Microsoft Edge  
 
@@ -43,15 +43,16 @@ The following sections describe the new experimental web app features that are a
 | [Shortcuts](#shortcuts) | 87 or later | All |  
 | [File Handling](#file-handling) | 83 or later | All Desktop|  
 
-## Features Coming Soon
-This table includes features that are work in progress that may come out in a future release for testing. 
+## Features Coming Soon  
+
+This table includes features that are work in progress that may come out in a future release for testing.  
 
 | Feature | Platform |  
 |:--- |:--- |   
-| [URL Link Handling](#URL-link-handling) | Windows |  
+| [URL Link Handling](#url-link-handling) | Windows |  
 | [Window Controls Overlay for Installed Desktop Web Apps](#window-controls-overlay-for-installed-desktop-web-apps) |  macOS, Linux |  
-| Improvements to App Management| All | 
-| Support for Desktop Share Target| Windows 10 |   
+| Improvements to App Management| All |  
+| Support for Desktop Share Target| Windows 10 |  
 
 ## URL Protocol Handling  
 
@@ -459,7 +460,7 @@ To provide feedback on Microsoft Edge web app experiments:
 
 *   Send your feedback using the **Send feedback to Microsoft** menu item found in the `...` menu or select `Alt`+`Shift`+`I` from within your app
     
-:::image type="complex" source="../media/send-feedback-from-pwa.png" alt-text="Send Feedback from PWA" lightbox="../media/send-feedback-from-pwa.png":::
+:::image type="complex" source="../media/send-feedback-from-progressive-web-app.png" alt-text="Send Feedback from PWA" lightbox="../media/send-feedback-from-progressive-web-app.png":::
    Send Feedback from PWA  
 :::image-end:::  
 
