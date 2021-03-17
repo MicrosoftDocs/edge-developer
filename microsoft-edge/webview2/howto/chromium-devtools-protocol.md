@@ -194,4 +194,4 @@ To file a Chromium DevTools Protocol bug or issue, complete the following action
 
 [ChromiumBugsChromiumIssuesEntryComponentsPlatformDevtoolsPlatform]: https://bugs.chromium.org/p/chromium/issues/entry?components=Platform%3EDevTools%3EPlatform "Bug report | Chromium Bugs"  
 
-[NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension]: https://int.nugettest.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension "Microsoft.Web.WebView2.DevToolsProtocolExtension | NuGet QA Gallery"  
+[NugettestIntPackagesMicrosoftWebWebView2DevToolsprotocolextension]: https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension/ "Microsoft.Web.WebView2.DevToolsProtocolExtension | NuGet QA Gallery"  
