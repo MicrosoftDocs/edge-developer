@@ -3,7 +3,7 @@ description: Open the Console, create a Live Expression, and set the expression 
 title: Track which element has focus
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -29,7 +29,7 @@ Suppose that you are testing the keyboard navigation accessibility of a page.  W
 Complete the following actions to track the focused element in DevTools.  
 
 1.  Open the **Console**.  
-1.  Choose **Create Live Expression** \(![Create Live Expression][ImageCreateIcon]\).  
+1.  Choose **Create Live Expression** \(![Create Live Expression](../media/create-live-expression-icon.msft.png)\).  
     
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Create a Live Expression" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        Create a Live Expression  
@@ -49,10 +49,6 @@ Since that expression always represents the focused element, you now have a way 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageCreateIcon]: ../media/create-live-expression-icon.msft.png  
 
 <!-- links -->  
 
