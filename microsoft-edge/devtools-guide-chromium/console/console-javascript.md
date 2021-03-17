@@ -3,7 +3,7 @@ description: An introduction to using Console tool inside the Microsoft Edge Dev
 title: Console as a JavaScript environment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, JavaScript, web development, f12 tools, devtools
@@ -17,13 +17,13 @@ You can try it right now. Open **Console** by selecting `Control`+`Shift`+`J` (W
 
 Start typing in `2 + 2` and the Console already shows the result `4` on the line below whilst you type it. This is a feature called "Eager evaluation" and it helps you writing valid JavaScript as you can already see while you are typing if something is wrong or if there is a valid result.
 
-:::image type="complex" source="../media/console-intro-two-plus+two.msft.png" alt-text="Console showing the result of 2 + 2 live as you type it" lightbox="../media/console-intro-two-plus+two.msft.png":::
+:::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console showing the result of 2 + 2 live as you type it" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
 Console showing the result of 2 + 2 live as you type it
 :::image-end:::  
 
 If you hit `Enter`, Console will run the JavaScript command, give you the result and you can write the next command. 
 
-:::image type="complex" source="../media/console-intro-javascript-expressions-live.msft.png" alt-text="Running several JavaScript expressions in succession" lightbox="../media/console-intro-javascript-expressions.msft.png":::
+:::image type="complex" source="../media/console-javascript-several-expressions.msft.png" alt-text="Running several JavaScript expressions in succession" lightbox="../media/console-javascript-several-expressions.msft.png":::
 Running several JavaScript expressions in succession
 :::image-end:::  
 
@@ -31,7 +31,7 @@ Running several JavaScript expressions in succession
 
 This last example may look daunting but Console helps you write complex JavaScript by having an excellent autocompletion feature. This feature is a great way to learn about methods you didn't know before. Try it by typing `doc` and you get a dropdown menu to pick `document` from. Hit the `tab` key to do so. Type `.bo` and hit `tab` to get `document.body`. Type another `.` to get a huge list of possible properties and methods available on the body of the current document. 
 
-:::image type="complex" source="../media/console-intro-javascript-autocomplete.msft.png" alt-text="Console autocompletion of JavaScript expressions" lightbox="../media/console-intro-javascript-autocomplete.msft.png":::
+:::image type="complex" source="../media/console-javascript-autocomplete.msft.png" alt-text="Console autocompletion of JavaScript expressions" lightbox="../media/console-javascript-autocomplete.msft.png":::
 Console autocompletion of JavaScript expressions
 :::image-end:::  
 
@@ -41,7 +41,7 @@ As with many other terminal-like experiences you also have a history of commands
 
 In addition to having access to what you entered, Console also offers quite a few [utility methods][DevtoolsConsoleUtilityMethods] that make your life easier. For example, `$_` always contains the result of the last expression you ran in Console.
 
-:::image type="complex" source="../media/console-intro-last-result.msft.png" alt-text="The $_ expression in Console always contains the last result" lightbox="../media/console-intro-last-result.msft.png":::
+:::image type="complex" source="../media/console-javascript-console-history.msft.png" alt-text="The $_ expression in Console always contains the last result" lightbox="../media/console-javascript-console-history.msft.png":::
     The $_ expression in Console always contains the last result
 :::image-end:::  
 
@@ -49,13 +49,13 @@ In addition to having access to what you entered, Console also offers quite a fe
 
 Out-of-the-box you only have one line to write your JavaScript expression. Hitting `Enter` will run the code. This can get pretty frustrating. You can work around this by using `Shift + Enter` instead. In the following example you can see that the value displayed is the result of all the lines executing in order. 
 
-:::image type="complex" source="../media/console-intro-multiline-entry.msft.png" alt-text="By using Shift and Enter you can write several lines of JavaScript and the resulting value will be each of them executing in order" lightbox="../media/console-intro-multiline-entry.msft.png":::
+:::image type="complex" source="../media/console-javascript-multiline.msft.png" alt-text="By using Shift and Enter you can write several lines of JavaScript and the resulting value will be each of them executing in order" lightbox="../media/console-javascript-multiline.msft.png":::
 By using Shift and Enter you can write several lines of JavaScript and the resulting value will be each of them executing in order
 :::image-end:::  
 
 If you start a multi-line statement in Console it gets automatically recognized and indented that. For example, if you start a block statement with a curly brace.
 
-:::image type="complex" source="../media/console-intro-multilline-expression.msft.png" alt-text="Console already recognizing multiline expressions using curly braces and indented them for you" lightbox="../media/console-intro-multilline-expression.msft.png":::
+:::image type="complex" source="../media/console-javascript-automatic-lineindent.msft.png" alt-text="Console already recognizing multiline expressions using curly braces and indented them for you" lightbox="../media/console-javascript-automatic-lineindent.msft.png":::
     Console already recognizing multiline expressions using curly braces and indented them for you
 :::image-end:::  
 
@@ -71,13 +71,13 @@ await ( await fetch(
 
 If you copy and paste this into Console you get an object containing 10 entries, which is hard to take in.
 
-:::image type="complex" source="../media/console-intro-javascript-async-result.msft.png" alt-text="Console showing the result of a top level async fetch call" lightbox="../media/console-intro-javascript-async-result.msft.png":::
+:::image type="complex" source="../media/console-javascript-top-level-await.msft.png" alt-text="Console showing the result of a top level async fetch call" lightbox="../media/console-javascript-top-level-await.msft.png":::
     Console showing the result of a top level async fetch call
 :::image-end:::  
 
 Luckily enough, you can use the `console.table()` logging method to cut down to the things you're really interested in.
 
-:::image type="complex" source="../media/console-javascript-results-with-table.msft.png" alt-text="Displaying the last result in a human readable form using console.table" lightbox="../media/console-javascript-results-with-table.msft.png":::
+:::image type="complex" source="../media/console-javascript-filtered-with-table.msft.png" alt-text="Displaying the last result in a human readable form using console.table" lightbox="../media/console-javascript-filtered-with-table.msft.png":::
     Displaying the last result in a human readable form using console.table    
 :::image-end:::
 

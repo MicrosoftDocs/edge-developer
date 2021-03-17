@@ -87,21 +87,21 @@ As you can see there are a lot of useful methods available and it makes sense to
 
 Try it out right now. Go to Console and type in `2 + 2`. You will see that Console already shows the result `4` on the line below. This is a feature called "Eager evaluation" and is handy to see that you are not making any mistakes. 
 
-:::image type="complex" source="../media/console-intro-two-plus+two.msft.png" alt-text="Console showing the result of 2 + 2 live as you type it" lightbox="../media/console-intro-two-plus+two.msft.png":::
+:::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console showing the result of 2 + 2 live as you type it" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
 Console showing the result of 2 + 2 live as you type it
-:::image-end:::  
+:::image-end:::    
 
 If you hit `Enter`, Console will run the JavaScript command and give you the result and you can write the next command. 
 
-:::image type="complex" source="../media/console-intro-javascript-expressions.msft.png" alt-text="Running several JavaScript expressions in succession" lightbox="../media/console-intro-javascript-expressions.msft.png":::
+:::image type="complex" source="../media/console-javascript-several-expressions.msft.png" alt-text="Running several JavaScript expressions in succession" lightbox="../media/console-javascript-several-expressions.msft.png":::
 Running several JavaScript expressions in succession
-:::image-end:::  
+:::image-end:::
 
 You only have one line to write your JavaScript expressions as hitting `Enter` will run the code. You can work around this by using `Shift + Enter`. As with many other terminal-like experiences you also have a history of commands. Hitting Arrow-Up will show you the commands you entered before. 
 
 The autocompletion feature of Console can be a great way to learn about methods you didn't know before. Try it by typing `doc` and you get a dropdown menu to pick `document` from. Hit the `tab` key to do so. Type `.bo` and hit `tab` to get `document.body`. Type another `.` to get a huge list of possible properties and methods available on the body of the current document. 
 
-:::image type="complex" source="../media/console-intro-javascript-autocomplete.msft.png" alt-text="Console autocompletion of JavaScript expressions" lightbox="../media/console-intro-javascript-autocomplete.msft.png":::
+:::image type="complex" source="../media/console-javascript-autocomplete.msft.png" alt-text="Console autocompletion of JavaScript expressions" lightbox="../media/console-javascript-autocomplete.msft.png":::
 Console autocompletion of JavaScript expressions
 :::image-end:::  
 

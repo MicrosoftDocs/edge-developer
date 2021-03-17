@@ -15,19 +15,19 @@ The first experience any user of DevTools has with the **Console** is probably w
 
 If you open DevTools in the browser you will get a button on the top right that indicates that there is an error on the page.
 
-:::image type="complex" source="../media/console-intro-error-report.msft.png" alt-text="DevTools flagging up that there is an error on the current page" lightbox="../media/console-intro-error-report.msft.png":::
+:::image type="complex" source="../media/console-debug-reporting-error.msft.png" alt-text="DevTools flagging up that there is an error on the current page" lightbox="../media/console-debug-reporting-error.msft.png":::
    DevTools flagging up that there is an error on the current page 
 :::image-end:::  
 
 Activating this button takes you to the **Console** and gives you more information about the error.
 
-:::image type="complex" source="../media/console-intro-error-in-console.msft.png" alt-text="DevTools giving detailed information about the error in the Console" lightbox="../media/console-intro-error-in-console.msft.png":::
+:::image type="complex" source="../media/console-debug-showing-error.msft.png" alt-text="DevTools giving detailed information about the error in the Console" lightbox="../media/console-debug-showing-error.msft.png":::
    DevTools giving detailed information about the error in the Console 
 :::image-end:::  
 
 From this information you can gather that the error is on line 14 of the file called `error.html`. If you activate the `error.html:14` link on the right the Console takes you directly to the Sources tool and highlights the problematic line of code.
 
-:::image type="complex" source="../media/console-intro-error-to-sources.msft.png" alt-text="The Sources tool highlighting the line of code that caused the error" lightbox="../media/console-intro-error-to-sources.msft.png":::
+:::image type="complex" source="../media/console-debug-showing-in-sources.msft.png" alt-text="The Sources tool highlighting the line of code that caused the error" lightbox="../media/console-debug-showing-in-sources.msft.png":::
    The Sources tool highlighting the line of code that caused the error 
 :::image-end:::  
 
