@@ -46,7 +46,7 @@ document.querySelector('header').style.border = '2em solid green'
 Adding a border to an element using Console
 :::image-end:::  
 
-Depending on the complexity of the document, It can be quite daunting to find the right element to manipulate. But you can use the **Inspect** tool help you with that. Say you want to manipulate the `Docs` part in the header.
+Depending on the complexity of the document, It can be quite daunting to find the right element to manipulate. But you can use the **Inspect** tool help you with that. Say you want to manipulate the `Documentation` part in the header.
 
 img
 
@@ -139,7 +139,7 @@ $$('#main [id]').filter(
     elm => {return elm.nodeName.startsWith('H')}
 ).forEach(elm => {
    out += elm.innerText + "\n" + 
-          document.location.href + # +
+          document.location.href + '#' +
           elm.id + "\n";
 });
 console.log(out);
