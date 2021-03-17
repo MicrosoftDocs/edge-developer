@@ -32,7 +32,7 @@ Release Date: March 8, 2021
     
 #### Promotion
 
-*   [UserAgent][Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddWebresourceresponsereceived] API is now promoted to public.  
+*   [UserAgent][Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddWebresourceresponsereceived] API is now promoted to stable.  
 *   Rasterization Scale APIs \([RasterizationScale][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetRasterizationscale] property,  [RasterizationScaleChanged][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseAddRasterizationscalechanged] event, [BoundsMode property][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetBoundsmode], and [ShouldDetectMonitorScaleChanges][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetShoulddetectmonitorscalechanges] property\) are now promoted to public.  
     
 #### Bug fixes  
@@ -124,7 +124,7 @@ Release Date: February 10, 2021
 
 Release Date: January 25, 2021  
 
-[NuGet package][NuGetGallery1.0.705.50] \| Evergreen WebView2 Runtime version 86.0.616.0 or newer  
+[NuGet package][NuGetGallery1.0.705.50] \| WebView2 Runtime version 86.0.616.0 or newer  
 
 ### General  
 
@@ -189,7 +189,7 @@ Release Date: December 8, 2020
 
 Release Date: November 20, 2020  
 
-[NuGet package][NuGetGallery1.0.664.37] \| Evergreen WebView2 Runtime version 86.0.616.0 or newer  
+[NuGet package][NuGetGallery1.0.664.37] \| WebView2 Runtime version 86.0.616.0 or newer  
 
 ### General  
 
@@ -211,7 +211,7 @@ Release Date: November 20, 2020
 
 Release Date: October 19, 2020  
 
-[NuGet package][NuGetGallery1.0.674-prerelease] \| Evergreen WebView2 Runtime version 86.0.616.0 or newer  
+[NuGet package][NuGetGallery1.0.674-prerelease] \| WebView2 Runtime version 86.0.616.0 or newer  
 
 ### General  
 
@@ -241,7 +241,7 @@ Release Date: October 19, 2020
 
 Release Date: October 19, 2020  
 
-[NuGet package][NuGetGallery1.0.622.22] \| Evergreen WebView2 Runtime version 86.0.616.0 or newer  
+[NuGet package][NuGetGallery1.0.622.22] \| WebView2 Runtime version 86.0.616.0 or newer  
 
 ### General  
 
@@ -255,7 +255,7 @@ Release Date: October 19, 2020
 
 Release Date: September 10, 2020  
 
-[NuGet package][NuGetGallery0.9.622.11] \| Evergreen WebView2 Runtime version 86.0.616.0 or newer  
+[NuGet package][NuGetGallery0.9.622.11] \| WebView2 Runtime version 86.0.616.0 or newer  
 
 ### General  
 
