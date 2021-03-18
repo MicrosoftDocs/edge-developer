@@ -24,9 +24,11 @@ The Web We Want initiative is the place to let browser vendors and standards gro
 
 *   Stay in touch by following the initiative on [Twitter][TwitterWebWeWant] or [LinkedIn][LinkedInWebWeWant] to keep up-to-date on what’s in development, or to participate in surveys that help us prioritize submitted Wants.
 
-We’ve successfully shipped a few Wants into the Chromium DevTools, such as the [Source Order Viewer][SourceOrderViewer] and a 3D Viewer, similar to what was in the Firefox DevTools. There are also a handful of other Wants that have previous proposals in standards groups. Join us in driving the future of the web forward with the Web We Want!
+We’ve successfully shipped a few Wants into the Chromium DevTools, such as the Source Order Viewer ([Want][SourceOrderViewerWant], [Docs][SourceOrderViewerDocs]) and a [3D View][3DView] tool, similar to what was in the Firefox DevTools. There are also a handful of other Wants that have previous proposals in standards groups. Join us in driving the future of the web forward with the Web We Want!
 
 <!-- links -->  
+
+[3DView]: ../devtools-guide-chromium/3d-view/ "3D View - Microsoft Edge Development | Microsoft Docs"
 
 [WebWeWant]: https://webwewant.fyi/ "HOME | Web We Want"
 
@@ -38,4 +40,6 @@ We’ve successfully shipped a few Wants into the Chromium DevTools, such as the
 
 [LinkedInWebWeWant]: https://www.linkedin.com/company/the-web-we-want/ "The Web We Want | LinkedIn"
 
-[SourceOrderViewer]: https://webwewant.fyi/wants/64/ "I want a source order viewer for rearranged content - WANTS | Web We Want"
+[SourceOrderViewerDocs]: ../devtools-guide-chromium/experimental-features/#source-order-viewer "Source Order Viewer | Experimental features - Microsoft Edge Development | Microsoft Docs"
+
+[SourceOrderViewerWant]: https://webwewant.fyi/wants/64/ "I want a source order viewer for rearranged content - WANTS | Web We Want"
