@@ -3,7 +3,7 @@ description: JavaScript errors are reported by developer tools and you can debug
 title: Tracking down errors using the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/10/2021
+ms.date: 03/18/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -92,11 +92,78 @@ const handleErrors = (response) => {
 };
 ```
 
+## Creating errors and traces in the Console
+
+In addition to the `throw Error` example above you can also create different errors and trace problems in the console. 
+If you navigate to the [creating errors and assertions][DevtoolsConsoleCreatingErrors] example you can see two created error messages in the Console.
+
+:::image type="complex" source="../media/.png" alt-text="A trace created from Console" lightbox="../media/.png":::
+   Error messages and a trace created from Console 
+:::image-end::: 
+
+```javascript
+function first(name) { second(name); }
+function second(name) { third(name); }
+function third(name) {
+  if (!name) {
+    console.error(`Name isn't defined :(`)
+  } else {
+    console.assert(
+      name.length <= 8, 
+      `"${name} is not less than eight letters"`
+      );
+  }
+}
+first();
+first('Console');
+first('Microsoft Edge Canary');
+```
+
+We have three functions that call each other in succession, `first()`, `second()` and `third()`. Each send a `name` argument to the other. In the `third()` function we check if the `name` argument exists and if it isn't, we log an error that name isn't defined. If name is defined we use the `assert()` method to check if the `name` argument is less than eight letters long. We call the first method three times: 
+
+* With no argument which triggers the `console.error()` in `third()`
+* With `Console` as the argument which causes no error as `name` exists and is shorter than eight letters and 
+* With `Microsoft Edge Canary` as the argument, which triggers to assertion to report an error (as the argument is longer than eight letter).
+
+Using `assert()` is a way to create conditional error reporting. The following two examples have the same result but one needs an extra `if{}` statement.
+
+```javascript
+let x = 20;
+if (x < 40) { console.error(`${x} is too small`)};
+console.assert(x >= 40, `${x} is too small`) 
+```
+
+Notice that the assertion needs to record a negative result, that's why we test for x < 40 in the if case and x >= 40 for the assertion.
+
+If you are not sure which function calls which you can use the `console.trace()` method to track which functions were called to get to the current one. Navigate to [creating traces example][DevtoolsConsoleCreatingTraces] to see this in the Console.
+
+```javascript
+function here() {there()}
+function there() {everywhere()}
+function everywhere() {
+  console.trace();
+}
+here();
+there();
+```
+
+The result is a trace showing you that `here()` called `there()` and then `everywhere()` and in the second example that there called `everywhere()`.
+
+:::image type="complex" source="../media/.png" alt-text="A trace created from Console" lightbox="../media/.png":::
+  A trace created from Console 
+:::image-end::: 
+
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
+
+[DevtoolsConsoleCreatingTraces]: https://microsoftedge.github.io/DevToolsSamples/console/traces.html
+[DevtoolsConsoleCreatingErrors]: https://microsoftedge.github.io/DevToolsSamples/console/error-assert.html
+[DevToolsConsoleNetworkError]: https://microsoftedge.github.io/DevToolsSamples/console/network-error.html
+[DevToolsConsoleNetworkErrorFixed]: https://microsoftedge.github.io/DevToolsSamples/console/network-error-fixed.html
+[DevToolsConsoleNetworkErrorReported]: https://microsoftedge.github.io/DevToolsSamples/console/network-error-reported.html
 
 [DevtoolsConsoleDebugJS]: ./console-debug-js.md
 [DevtoolsConsoleLog]: ./console-log.md
@@ -121,10 +188,6 @@ const handleErrors = (response) => {
 [MDNWindow]: https://developer.mozilla.org/docs/Web/API/Window "Window | MDN"  
 
 [WikiREPLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read–eval–print loop - Wikipedia"  
-
-> [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
