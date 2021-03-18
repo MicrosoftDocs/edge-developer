@@ -40,6 +40,6 @@ We’ve successfully shipped a few Wants into the Chromium DevTools, such as the
 
 [LinkedInWebWeWant]: https://www.linkedin.com/company/the-web-we-want/ "The Web We Want | LinkedIn"
 
-[SourceOrderViewerDocs]: /microsoft-edge/devtools-guide-chromium/experimental-features/index.md#source-order-viewer "Source Order Viewer | Experimental features - Microsoft Edge Development | Microsoft Docs"
+[SourceOrderViewerDocs]: ../devtools-guide-chromium/experimental-features/index.md#source-order-viewer "Source Order Viewer | Experimental features - Microsoft Edge Development | Microsoft Docs"
 
 [SourceOrderViewerWant]: https://webwewant.fyi/wants/64/ "I want a source order viewer for rearranged content - WANTS | Web We Want"
