@@ -25,7 +25,7 @@ Activating this button takes you to the **Console** and gives you more informati
    DevTools giving detailed information about the error in the Console 
 :::image-end:::  
 
-From this information you can gather that the error is on line 14 of the file called `error.html`. If you activate the `error.html:14` link on the right the Console takes you directly to the Sources tool and highlights the problematic line of code.
+From this information you can gather that the error is on line 16 of the file called `error.html`. If you activate the `error.html:16` link on the right the Console takes you directly to the Sources tool and highlights the problematic line of code.
 
 :::image type="complex" source="../media/console-debug-showing-in-sources.msft.png" alt-text="The Sources tool highlighting the line of code that caused the error" lightbox="../media/console-debug-showing-in-sources.msft.png":::
    The Sources tool highlighting the line of code that caused the error 
@@ -35,9 +35,62 @@ In this case, the script tried to get the first `h2` element in the document and
 
 ## Tracking down reported network issues
 
-## Debugging JavaScript using the debug method
+Other errors that the Console reports are network errors. Navigate to the [Network Error Example][DevToolsConsoleNetworkError] to see that in action.
 
-## Using assertions in the console
+:::image type="complex" source="../media/.png" alt-text="Console showing a Network and a JavaScript error" lightbox="../media/.png":::
+   Console showing a Network and a JavaScript error 
+:::image-end:::  
+
+The table still states `loading` but nothing happens as the data could not be loaded. In the Console you can see two errors, a network error starting with `GET` followed by a URL and a `Uncaught (in promise) TypeError: data.forEach is not a function` error. 
+
+If you activate the `network-error.html:40` link in the Console DevTools will take you to the Sources tool. There you can see the problematic code line highlighted followed by an x icon. If you click that one you get the error message `Failed to load resource: the server responded with a status of 404 ()`.
+
+:::image type="complex" source="../media/.png" alt-text="Finding the error in JavaScript using the Sources tool" lightbox="../media/.png":::
+   Finding the error in JavaScript using the Sources tool 
+:::image-end::: 
+
+This means our requested URL wasn't found. If you go back to the Console and activate the URL you get to the **Network** tool. There you can see the Network information in a lot more detail. 
+
+:::image type="complex" source="../media/.png" alt-text="Activating a URL that couldn't get loaded takes you to the Network tool" lightbox="../media/.png":::
+   Activating a URL that couldn't get loaded takes you to the Network tool 
+:::image-end::: 
+
+:::image type="complex" source="../media/.png" alt-text="The Network tool showing more information about the failed request" lightbox="../media/.png":::
+   The Network tool showing more information about the failed request 
+:::image-end::: 
+
+What was the problem? Turns out we have a double `/` in the requested URL after `repos`. If you go back to the **Sources** tool you can see that the problem is line 26 where we have a trailing `/` at the end of the base URL. 
+
+:::image type="complex" source="../media/.png" alt-text="The problematic line shown in the source code" lightbox="../media/.png":::
+   The problematic line shown in the soure code 
+:::image-end::: 
+
+If you navigate to the working version of the script [Network Error Fixed Example][DevToolsConsoleNetworkErrorFixed] you can see that all is working fine. 
+
+:::image type="complex" source="../media/.png" alt-text="The example without any errors, loading information from GitHub and displaying it" lightbox="../media/.png":::
+   The example without any errors, loading information from GitHub and displaying it 
+:::image-end::: 
+
+However, you can also see in this example that our code is sloppy. We still try to access the table and display the information. Our code should catch errors and report them in the Console instead of doing that. If you navigate to the [Network Error Reported][DevtoolsConsoleNetworkErrorReported] example you can see that this example tells the user that something went wrong and the Console shows the Network error and the error message our code reported.
+
+:::image type="complex" source="../media/.png" alt-text="The example without any errors, loading information from GitHub and displaying it" lightbox="../media/.png":::
+   The example without any errors, loading information from GitHub and displaying it 
+:::image-end::: 
+
+The code to make this happen is the handleErrors method in the example, specifically the `throw Error` line.
+
+```javascript
+const handleErrors = (response) => {
+   if (!response.ok) {
+   let message = 'Could not load the information'
+   document.querySelector('tbody').innerHTML = `
+   <tr><td colspan=3>Error ${message}</td></tr>
+   `;
+   throw Error(response.status + ' ' + response.statusText);
+   }
+   return response;
+};
+```
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
