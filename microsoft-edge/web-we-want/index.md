@@ -28,7 +28,7 @@ We’ve successfully shipped a few Wants into the Chromium DevTools, such as the
 
 <!-- links -->  
 
-[3DView]: ../devtools-guide-chromium/3d-view/ "3D View - Microsoft Edge Development | Microsoft Docs"
+[3DView]: /microsoft-edge/devtools-guide-chromium/3d-view/index.md "3D View - Microsoft Edge Development | Microsoft Docs"
 
 [WebWeWant]: https://webwewant.fyi/ "HOME | Web We Want"
 
@@ -40,6 +40,6 @@ We’ve successfully shipped a few Wants into the Chromium DevTools, such as the
 
 [LinkedInWebWeWant]: https://www.linkedin.com/company/the-web-we-want/ "The Web We Want | LinkedIn"
 
-[SourceOrderViewerDocs]: ../devtools-guide-chromium/experimental-features/#source-order-viewer "Source Order Viewer | Experimental features - Microsoft Edge Development | Microsoft Docs"
+[SourceOrderViewerDocs]: /microsoft-edge/devtools-guide-chromium/experimental-features/index.md#source-order-viewer "Source Order Viewer | Experimental features - Microsoft Edge Development | Microsoft Docs"
 
 [SourceOrderViewerWant]: https://webwewant.fyi/wants/64/ "I want a source order viewer for rearranged content - WANTS | Web We Want"
