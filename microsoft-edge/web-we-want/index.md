@@ -28,7 +28,7 @@ We’ve successfully shipped a few Wants into the Chromium DevTools, such as the
 
 <!-- links -->  
 
-[3DView]: /microsoft-edge/devtools-guide-chromium/3d-view/index.md "3D View - Microsoft Edge Development | Microsoft Docs"
+[3DView]: /microsoft-edge/devtools-guide-chromium/3d-view/ "3D View - Microsoft Edge Development | Microsoft Docs"
 
 [WebWeWant]: https://webwewant.fyi/ "HOME | Web We Want"
 
