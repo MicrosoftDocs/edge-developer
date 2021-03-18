@@ -37,44 +37,63 @@ In this case, the script tried to get the first `h2` element in the document and
 
 Other errors that the Console reports are network errors. Navigate to the [Network Error Example][DevToolsConsoleNetworkError] to see that in action.
 
-:::image type="complex" source="../media/.png" alt-text="Console showing a Network and a JavaScript error" lightbox="../media/.png":::
+:::image type="complex" source="../media/console-debug-network-error.msft.png" alt-text="Console showing a Network and a JavaScript error" lightbox="../media/console-debug-network-error.msft.png":::
    Console showing a Network and a JavaScript error 
 :::image-end:::  
 
 The table still states `loading` but nothing happens as the data could not be loaded. In the Console you can see two errors, a network error starting with `GET` followed by a URL and a `Uncaught (in promise) TypeError: data.forEach is not a function` error. 
 
+:::image type="complex" source="../media/console-debug-network-error-code-line.msft.png" alt-text="Activating the code line reported with the error gets you to the Sources Tool" lightbox="../media/console-debug-network-error-code-line.msft.png":::
+   Activating the code line reported with the error gets you to the Sources Tool 
+:::image-end:::  
+
 If you activate the `network-error.html:40` link in the Console DevTools will take you to the Sources tool. There you can see the problematic code line highlighted followed by an x icon. If you click that one you get the error message `Failed to load resource: the server responded with a status of 404 ()`.
 
-:::image type="complex" source="../media/.png" alt-text="Finding the error in JavaScript using the Sources tool" lightbox="../media/.png":::
+:::image type="complex" source="../media/console-debug-network-error-sources.msft.png" alt-text="Finding the error in JavaScript using the Sources tool" lightbox="../media/console-debug-network-error-sources.msft.png":::
    Finding the error in JavaScript using the Sources tool 
 :::image-end::: 
 
-This means our requested URL wasn't found. If you go back to the Console and activate the URL you get to the **Network** tool. There you can see the Network information in a lot more detail. 
+This means our requested URL wasn't found. 
 
-:::image type="complex" source="../media/.png" alt-text="Activating a URL that couldn't get loaded takes you to the Network tool" lightbox="../media/.png":::
-   Activating a URL that couldn't get loaded takes you to the Network tool 
+:::image type="complex" source="../media/console-debug-network-error-url.msft.png" alt-text="Activating the code line reported with the error gets you to the Sources Tool" lightbox="../media/console-debug-network-error-url.msft.png":::
+   Activating the code line reported with the error gets you to the Sources Tool 
+:::image-end:::  
+
+If you go back to the Console and activate the URL you get to the **Network** tool. There you can see the Network information in a lot more detail. 
+
+:::image type="complex" source="../media/console-debug-network-error-network.msft.png" alt-text="Activating a URL that couldn't get loaded (shown in red) takes you to the Network tool" lightbox="../media/console-debug-network-error-network.msft.png":::
+   Activating a URL that couldn't get loaded (shown in red) takes you to the Network tool 
 :::image-end::: 
 
-:::image type="complex" source="../media/.png" alt-text="The Network tool showing more information about the failed request" lightbox="../media/.png":::
-   The Network tool showing more information about the failed request 
-:::image-end::: 
+:::row:::
+    :::column:::
+        :::image type="complex" source="../media/console-debug-network-error-network.msft.png" alt-text="The Network tool showing more information about the failed request" lightbox="../media/console-debug-network-error-network.msft.png":::
+           The Network tool showing more information about the failed request 
+        :::image-end::: 
+    :::column-end:::
+    :::column:::
+        :::image type="complex" source="../media/console-debug-network-error-network-detail.msft.png" alt-text="Inspecting the headers in the Network tool can give more insight" lightbox="../media/console-debug-network-error-network-detail.msft.png":::
+           Inspecting the headers in the Network tool can give more insight 
+        :::image-end::: 
+        :::column-end:::
+:::row-end:::
 
 What was the problem? Turns out we have a double `/` in the requested URL after `repos`. If you go back to the **Sources** tool you can see that the problem is line 26 where we have a trailing `/` at the end of the base URL. 
 
-:::image type="complex" source="../media/.png" alt-text="The problematic line shown in the source code" lightbox="../media/.png":::
+:::image type="complex" source="../media/console-debug-network-error-code-error.msft.png" alt-text="The problematic line shown in the source code" lightbox="../media/console-debug-network-error-code-error.msft.png":::
    The problematic line shown in the soure code 
 :::image-end::: 
 
 If you navigate to the working version of the script [Network Error Fixed Example][DevToolsConsoleNetworkErrorFixed] you can see that all is working fine. 
 
-:::image type="complex" source="../media/.png" alt-text="The example without any errors, loading information from GitHub and displaying it" lightbox="../media/.png":::
+:::image type="complex" source="../media/console-debug-network-error-fixed.msft.png" alt-text="The example without any errors, loading information from GitHub and displaying it" lightbox="../media/console-debug-network-error-fixed.msft.png":::
    The example without any errors, loading information from GitHub and displaying it 
 :::image-end::: 
 
 However, you can also see in this example that our code is sloppy. We still try to access the table and display the information. Our code should catch errors and report them in the Console instead of doing that. If you navigate to the [Network Error Reported][DevtoolsConsoleNetworkErrorReported] example you can see that this example tells the user that something went wrong and the Console shows the Network error and the error message our code reported.
 
-:::image type="complex" source="../media/.png" alt-text="The example without any errors, loading information from GitHub and displaying it" lightbox="../media/.png":::
-   The example without any errors, loading information from GitHub and displaying it 
+:::image type="complex" source="../media/console-debug-network-error-reporting.msft.png" alt-text="The example catching and reporting errors" lightbox="../media/console-debug-network-error-reporting.msft.png":::
+   The example catching and reporting errors 
 :::image-end::: 
 
 The code to make this happen is the handleErrors method in the example, specifically the `throw Error` line.
@@ -97,8 +116,8 @@ const handleErrors = (response) => {
 In addition to the `throw Error` example above you can also create different errors and trace problems in the console. 
 If you navigate to the [creating errors and assertions][DevtoolsConsoleCreatingErrors] example you can see two created error messages in the Console.
 
-:::image type="complex" source="../media/.png" alt-text="A trace created from Console" lightbox="../media/.png":::
-   Error messages and a trace created from Console 
+:::image type="complex" source="../media/console-debug-error-assert.msft.png" alt-text="Error messages created from Console" lightbox="../media/console-debug-error-assert.msft.png":::
+   Error messages created from Console 
 :::image-end::: 
 
 ```javascript
@@ -149,7 +168,7 @@ there();
 
 The result is a trace showing you that `here()` called `there()` and then `everywhere()` and in the second example that there called `everywhere()`.
 
-:::image type="complex" source="../media/.png" alt-text="A trace created from Console" lightbox="../media/.png":::
+:::image type="complex" source="../media/console-debug-trace.msft.png" alt-text="A trace created from Console" lightbox="../media/console-debug-trace.msft.png":::
   A trace created from Console 
 :::image-end::: 
 
