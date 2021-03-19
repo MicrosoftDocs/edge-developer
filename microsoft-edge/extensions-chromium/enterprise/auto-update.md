@@ -89,29 +89,22 @@ You may take advantage of the fact that parameters are added to the update manif
 
 The following example demonstrates the format of the request parameters of update URL.  
 
-```rest
 ?x={extension_data}
-```  
 
 In the above example, `{extension_data}` is a URL-encoded string that uses the following format.  
 
-```url
 id={id}&v={version}
-```  
 
 For example, the following two extensions both point to the same update URL `http://contoso.com/extension_updates.php`.  
 
-```text
 Extension 1
 ID: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 Version: "1.1"
-```  
 
-```text
 Extension 2
 ID: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
 Version: "0.4"
-```  
+
 
 The following are the requests to update each extension.  
 
