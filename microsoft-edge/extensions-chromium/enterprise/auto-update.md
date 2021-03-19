@@ -153,7 +153,7 @@ As new APIs release for the Microsoft Edge extensions system, you may release an
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developer.chrome.com/extensions/match_patterns/).  
+> The original page is found [here](https://developer.chrome.com/docs/apps/autoupdate/).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
