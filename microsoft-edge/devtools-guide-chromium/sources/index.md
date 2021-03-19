@@ -3,7 +3,7 @@ description: Display and edit files, create Snippets, debug JavaScript, and set 
 title: Sources panel overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020 
+ms.date: 03/08/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -34,10 +34,10 @@ Use the Microsoft Edge DevTools **Sources** panel to perform the following actio
     
 ## Display files  
 
-Use the **Page** pane to display all of the resources that the page has loaded.
+Use the **Page** panel; to display all of the resources that the page has loaded.
 
-:::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="The Page pane" lightbox="../media/sources-page-pane.msft.png":::
-   The **Page** pane  
+:::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="The Page panel" lightbox="../media/sources-page-pane.msft.png":::
+   The **Page** panel  
 :::image-end:::  
 
 How the **Page** pane is organized:  
@@ -45,10 +45,10 @@ How the **Page** pane is organized:
 *   The second-level, such as `docs.microsoft.com` in the previous figure, represents an [origin][HtmlstandardOrigin].  
 *   The third-level, fourth-level, and so on, represent directories and resources that were loaded from that origin.  For example, in the previous figure the full path to the resource `devtools-guide-chromium` is `docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium`  
     
-Choose a file in the **Page** pane to display the contents in the **Editor** pane.  You may display any type of file.  For images, a preview of the image is displayed.  
+Choose a file in the **Page** panel to display the contents in the **Editor** pane.  You may display any type of file.  For images, a preview of the image is displayed.  
 
 :::image type="complex" source="../media/sources-editor-pane.msft.png" alt-text="Display the contents of a4d10f71.index-docs.js in the Editor pane" lightbox="../media/sources-editor-pane.msft.png":::
-   Display the contents of `a4d10f71.index-docs.js` in the **Editor** pane  
+   Display the contents of `a4d10f71.index-docs.js` in the **Editor** panel  
 :::image-end:::  
 
 ## Edit CSS and JavaScript  
@@ -67,13 +67,13 @@ That change should take effect immediately.
    Edit CSS in the **Editor** pane to change the text color of the subtitle to red  
 :::image-end:::  
 
-CSS changes take effect immediately, no save needed.  For JavaScript changes to take effect, select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\).  DevTools does not re-run a script, so the only JavaScript changes that take effect are those that you make inside of functions.  For example, in the following figure, notice how `console.log('A')` does not run, whereas `console.log('B')` does.  If DevTools re-runs the entire script after making the change, then the text `A` would have been logged to the **Console**.  
+CSS changes take effect immediately, no save needed.  For JavaScript changes to take effect, select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\).  DevTools does not re-run a script, so the only JavaScript changes that take effect are those that you make inside of functions.  For example, in the following figure, notice how `console.log('A')` does not run, whereas `console.log('B')` does.  If DevTools re-runs the entire script after making the change, then the text `A` is logged to the **Console**.  
 
 :::image type="complex" source="../media/edit-js.msft.png" alt-text="Editing JavaScript in the Editor pane" lightbox="../media/edit-js.msft.png":::
-   Editing JavaScript in the **Editor** pane  
+   Editing JavaScript in the **Editor** panel  
 :::image-end:::  
 
-DevTools erases your CSS and JavaScript changes when you reload the page.  Navigate to [Set up a Workspace](#set-up-a-workspace) to learn how to save the changes to your file system.  
+DevTools erases your CSS and JavaScript changes when you refresh the page.  Navigate to [Set up a Workspace](#set-up-a-workspace) to learn how to save the changes to your file system.  
 
 ## Create, save, and run Snippets  
 
@@ -95,7 +95,7 @@ Instead, you may save this code in a **Snippet** and run it with a couple of but
 
 To run a **Snippet**:
 
-*   Open the file using the **Snippets** pane, and choose **Run** \(![The Run button][ImageRunIcon]\).  
+*   Open the file using the **Snippets** panel, and choose **Run** \(![The Run button](../media/run-snippet-icon.msft.png)\).  
 *   Open the [Command Menu][DevtoolsGuideChromiumCommandMenuIndex], delete the `>` character, type `!`, type the name of your **Snippet**, and then select `Enter`.  
     
 Navigate to [Run Snippets Of Code From Any Page][DevtoolsGuideChromiumJavascriptSnippets] to learn more.
@@ -112,17 +112,13 @@ Navigate to [Get Started With Debugging JavaScript][DevtoolsGuideChromiumJavascr
 
 ## Set up a Workspace  
 
-By default, when you edit a file in the **Sources** tool, those changes are lost when you reload the page.  **Workspaces** enable you to save the changes that you make in DevTools to your file system.  Essentially, DevTools is able to be used as your code editor.
+By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.  **Workspaces** enable you to save the changes that you make in DevTools to your file system.  Essentially, DevTools is able to be used as your code editor.
 
 Navigate to [Edit Files With Workspaces][DevtoolsGuideChromiumWorkspacesIndex] to get started.
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageRunIcon]: ../media/run-snippet-icon.msft.png  
 
 <!-- links -->  
 

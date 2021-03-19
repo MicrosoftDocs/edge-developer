@@ -3,7 +3,7 @@ description: Use Puppeteer to automate and test in Microsoft Edge
 title: Puppeteer
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/02/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -86,7 +86,7 @@ node example.js
    The `example.png` file produced by `example.js`  
 :::image-end:::  
 
-This is just a simple example of the automation and testing scenarios enabled by Puppeteer and `puppeteer-core`.  For more information about Puppeteer and how it works, see [Puppeteer][PuppeteerMain].  
+This is just a simple example of the automation and testing scenarios enabled by Puppeteer and `puppeteer-core`.  For more information about Puppeteer and how it works, navigate to [Puppeteer][PuppeteerMain].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

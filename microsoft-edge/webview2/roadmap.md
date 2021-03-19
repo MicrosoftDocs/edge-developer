@@ -3,16 +3,16 @@ description: Learn about what's coming next for WebView2
 title: Roadmap for Microsoft Edge WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
-
 # Microsoft Edge WebView2 roadmap  
 
-##### Last Updated: November 2020  
+> [!NOTE]
+> Last Updated:  November 2020  
 
 The WebView2 control allows developers to embed web technologies in their native applications.  The following page outlines the prospective roadmap for WebView2.  
 
@@ -70,7 +70,7 @@ The .NET SDK has reached GA.
 
 ### WinUI 3.0  
 
-You can access WebView2 in your UWP applications using [Win UI 3.0][UwpToolkitsWinui3Index], currently in alpha.  For more information about keeping up to date, see [Windows UI Library Roadmap][GithubMicrosoftUiXamlRoadmap].  
+You can access WebView2 in your UWP applications using [Win UI 3.0][UwpToolkitsWinui3Index], currently in alpha.  For more information about keeping up to date, navigate to [Windows UI Library Roadmap][GithubMicrosoftUiXamlRoadmap].  
 
 <!-- links -->  
 

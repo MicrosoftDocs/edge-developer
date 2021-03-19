@@ -3,13 +3,11 @@ description: List of supported APIs to use when building Microsoft Edge extensio
 title: Supported APIs for Microsoft Edge extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/14/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, extension api , developer, web development
 ---
-
-
 # Supported APIs for Microsoft Edge extensions
 
 The following table provides a list of APIs that you can use when building extensions for the Microsoft Edge \(Chromium\) browser.
@@ -28,7 +26,7 @@ The following table provides a list of APIs that you can use when building exten
 | [declarativeContent](https://developer.chrome.com/extensions/declarativeContent) | Take actions depending on the content of a page, without requiring permission to read the page content. |
 | [declarativeNetRequest](https://developer.chrome.com/extensions/declarativeNetRequest) | Provides more privacy by blocking or modifying network requests by specifying declarative rules. Allow extensions to modify network requests without intercepting the request and viewing the content. |
 | [desktopCapture](https://developer.chrome.com/extensions/desktopCapture) | Capture the content of a screen, individual windows, or tabs. |
-| [devtools.inspectedWindow](https://developer.chrome.com/extensions/devtools_inspectedWindow) | Interact with the inspected window. For example, obtain the tab ID of pages, evaluate code, reload pages, or obtain resources on a page. |
+| [devtools.inspectedWindow](https://developer.chrome.com/extensions/devtools_inspectedWindow) | Interact with the inspected window.  For example, obtain the tab ID of pages, evaluate code, refresh pages, or obtain resources on a page. |
 | [devtools.network](https://developer.chrome.com/extensions/devtools_network) | Retrieve information about network requests displayed by the Developer Tools in the Network panel. |
 | [devtools.panels](https://developer.chrome.com/extensions/devtools.panels) | Integrate your extension into the Developer Tools window UI by creating your own panels, accessing existing panels, or adding sidebars. |
 | [downloads](https://developer.chrome.com/extensions/downloads) | Programmatically start, monitor, manipulate, and search for downloads. |
@@ -37,7 +35,7 @@ The following table provides a list of APIs that you can use when building exten
 | [extension](https://developer.chrome.com/extensions/extension) | Any extension page can use the utilities of this API. It includes support for exchanging messages between extensions and content scripts, which is described in Message Passing. |
 | [extensionTypes](https://developer.chrome.com/extensions/extensionTypes) | Contains type declarations for Microsoft Edge extensions. |
 | [fontSettings](https://developer.chrome.com/extensions/fontSettings) | Manage font settings in Microsoft Edge. |
-| [history](https://developer.chrome.com/extensions/history) | Interact with the browser's record of visited pages. You can add, remove, or query for URLs in the browser's history. To override the history page with your own version, see Override Pages. |
+| [history](https://developer.chrome.com/extensions/history) | Interact with the browser's record of visited pages. You can add, remove, or query for URLs in the browser's history. To override the history page with your own version, navigate to Override Pages. |
 | [i18n](https://developer.chrome.com/extensions/i18n) | Implement internationalization across your whole app or extension. |
 | [idle](https://developer.chrome.com/extensions/idle) | Detect when the machine's idle state changes. |
 | [management](https://developer.chrome.com/extensions/management) | Manage the list of installed or running extensions. It's useful for extensions that override the built-in New Tab page. |

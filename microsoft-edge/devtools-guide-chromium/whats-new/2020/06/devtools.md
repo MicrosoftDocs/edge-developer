@@ -3,17 +3,29 @@ description: CSS grid debugging features, Edit and Replay requests with the Netw
 title: What's new in DevTools (Microsoft Edge 85)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/11/2020 
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
+<!-- Copyright Jecelyn Yeen 
 
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->  
 # What's New In DevTools (Microsoft Edge 85)  
 
 ## Announcements from the Microsoft Edge DevTools team  
 
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  See the announcements to try new features in the DevTools, Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow the Microsoft Edge DevTools team on Twitter][EdgeDevToolsTwitterAccount].  
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow the Microsoft Edge DevTools team on Twitter][EdgeDevToolsTwitterAccount].  
 
 ### CSS grid debugging features  
 
@@ -28,9 +40,9 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
 :::image-end:::  
 
 > [!NOTE]
-> To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.  
+> To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.  
 > 
-> To try out the experiment with a sample, see [CSS Grid planner example][CodepenRachelweilYzwBzKM].  
+> To try out the experiment with a sample, navigate to [CSS Grid planner example][CodepenRachelweilYzwBzKM].  
 
 Chromium issue [#1047356][CR1047356]  
 
@@ -46,7 +58,7 @@ You are now able to use **Edit and Replay** on requests in the [Network Log][Dev
    Edit and Replay a request in the [NetworkLog][DevtoolsNetworkIndexLogActivity] with the **Network Console**  
 :::image-end:::  
 
-A new panel, the **Network Console** opens in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer] and automatically populates with information for the HTTP request.  To see the response returned from the server, edit the request \(if needed\) and select **Send**.  
+A new panel, the **Network Console** opens in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer] and automatically populates with information for the HTTP request.  To display the response returned from the server, edit the request \(if needed\) and select **Send**.  
 
 You may also use the **Network Console** to create and send HTTP requests directly from the DevTools.  
 
@@ -55,27 +67,27 @@ You may also use the **Network Console** to create and send HTTP requests direct
 :::image-end:::  
 
 > [!TIP]
-> To see **Network Console** in the main \(top\) panel instead of the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], see [moving tools between panels](#move-tools-between-panels).  
+> To display **Network Console** in the main \(top\) panel instead of the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], navigate to [moving tools between panels](#move-tools-between-panels).  
 
 > [!NOTE]
-> To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable Network Console**.  
+> To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and choose the checkbox next to **Enable Network Console**.  
 > 
-> Open the [Network Log][DevtoolsNetworkIndexLogActivity], open the contextual menu \(right-click\), and select **Edit and Replay**.  
+> Open the [Network Log][DevtoolsNetworkIndexLogActivity], open the contextual menu \(right-click\), and choose **Edit and Replay**.  
 
 Chromium issue [#1093687][CR1093687]  
 
 ### Service worker respondWith events in the Timing tab  
 
-The **Timing** tab of the **Network** panel now includes `respondWith` service worker events.  The `respondWith` service worker event shows the duration from the time immediately before the service worker `fetch` event handler starts running to the time when the `respondWith` promise of the `fetch` handler is settled.  
+The **Timing** tab of the **Network** tool now includes `respondWith` service worker events.  The `respondWith` service worker event shows the duration from the time immediately before the service worker `fetch` event handler starts running to the time when the `respondWith` promise of the `fetch` handler is settled.  
 
 :::image type="complex" source="../../media/2020/06/timing-tab.msft.png" alt-text="The respondWith service worker event in the Timing tab of the Network panel" lightbox="../../media/2020/06/timing-tab.msft.png":::
-   The `respondWith` service worker event in the **Timing** tab of the **Network** panel  
+   The `respondWith` service worker event in the **Timing** tab of the **Network** tool  
 :::image-end:::  
 
-Expand **Response received** to see additional information from the `fetch` response like `CacheStorageCacheName`, `serviceWorkerResponseSource`, and `ResponseTime`.  
+Expand **Response received** to display additional information from the `fetch` response like `CacheStorageCacheName`, `serviceWorkerResponseSource`, and `ResponseTime`.  
 
-:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Expand Response received to see additional information from the fetch response" lightbox="../../media/2020/06/timing-tab2.msft.png":::
-   Expand **Response received** to see additional information from the `fetch` response  
+:::image type="complex" source="../../media/2020/06/timing-tab2.msft.png" alt-text="Expand Response received to display additional information from the fetch response" lightbox="../../media/2020/06/timing-tab2.msft.png":::
+   Expand **Response received** to display additional information from the `fetch` response  
 :::image-end:::  
 
 Chromium issue [#1066579][CR1066579]  
@@ -86,16 +98,16 @@ Chromium issue [#1066579][CR1066579]
    Experimental feature  
 :::image-end:::  
 
-[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  You are now able to see webhint feedback in the [Issues][DevtoolsIssues] panel.  
+[webhint][WebhintMain] is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  To review webhint feedback in the [Issues][DevtoolsIssues] panel.  
 
 :::image type="complex" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel" lightbox="../../media/2020/06/experiments-webhint.msft.png":::
    webhint feedback in the Issues panel  
 :::image-end:::  
 
 > [!NOTE]
-> To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable webhint**.  
+> To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and choose the checkbox next to **Enable webhint**.  
 > 
-> Open the [Issues][DevtoolsIssues] panel to see feedback from webhint.  
+> Open the [Issues][DevtoolsIssues] panel to display feedback from webhint.  
 
 Chromium issue [#1070378][CR1070378]  
 
@@ -107,24 +119,24 @@ Chromium issue [#1070378][CR1070378]
 
 Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  You are now able to customize your DevTools layout by moving tools between the top and bottom panels.  
 
-:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Moving tabs between panels" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
-   Moving tabs between panels  
+:::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Move tools between panels" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
+   Move tools between panels  
 :::image-end:::  
 
 > [!NOTE]
-> To enable the experiment, see [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable support to move tabs between panels**.  
+> To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and choose the checkbox next to **Enable support to move tabs between panels**.  
 
 Chromium issue [#897944][CR897944]  
 
 ### Improved Initiator tooltip in the Network panel  
 
-In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log][DevtoolsNetworkIndexLogActivity] displayed with a horizontal scrollbar.  You were only able to see the call stack that initiated the request by scrolling horizontally in the tooltip.  
+In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the cause of the resource request, in the [Network Log][DevtoolsNetworkIndexLogActivity] displayed with a horizontal scrollbar.  You were only able to display the call stack that initiated the request by scrolling horizontally in the tooltip.  
 
 :::image type="complex" source="../../media/2020/06/initiator-tooltip-84.msft.png" alt-text="The Initiator tooltip in Microsoft Edge 84" lightbox="../../media/2020/06/initiator-tooltip-84.msft.png":::
    The Initiator tooltip in Microsoft Edge 84  
 :::image-end:::  
 
-Starting with Microsoft Edge 85, you are now able to see the Initiator call stack in the tooltip without scrolling horizontally.  
+Starting with Microsoft Edge 85, you are now able to display the Initiator call stack in the tooltip without scrolling horizontally.  
 
 :::image type="complex" source="../../media/2020/06/initiator-tooltip-85.msft.png" alt-text="The Initiator tooltip in Microsoft Edge 85" lightbox="../../media/2020/06/initiator-tooltip-85.msft.png":::
    The Initiator tooltip in Microsoft Edge 85
@@ -142,7 +154,7 @@ The **Styles** pane now has better support for editing styles that were created 
 
 You are now able to edit styles added in JavaScript using [Constructable Stylesheets][WicgConstructStylesheet].  Constructable Stylesheets are a new way to create and distribute reusable styles when using [Shadow DOM][MdnShadowDom].  
 
-For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) were not editable previously.  The styles are editable now in the **Styles** pane.  
+For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) were not editable previously.  The styles are editable now in the **Styles** panel.  
 
 :::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="Changing the background property of the h1 styles added with CSSStyleSheet from pink to lightblue" lightbox="../../media/2020/06/css-in-js.msft.png":::
    Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.
@@ -154,7 +166,7 @@ Chromium issue [#946975][CR946975]
 
 ### Lighthouse 6 in the Lighthouse panel  
 
-The **Lighthouse** panel is now running Lighthouse 6.  For a full list of all changes, see [v6.0.0 release notes][GithubGoogleChromeLighthouse600].  
+The **Lighthouse** panel is now running Lighthouse 6.  For a full list of all changes, navigate to [v6.0.0 release notes][GithubGoogleChromeLighthouse600].  
 
 Lighthouse 6.0 introduces three new metrics to the report:  Largest Contentful Paint \(LCP\), Cumulative Layout Shift \(CLS\), and Total Blocking Time \(TBT\).  
 
@@ -164,7 +176,7 @@ Chromium issue [#772558][CR772558]
 
 #### First Meaningful Paint deprecation  
 
-First Meaningful Paint \(FMP\) is deprecated in Lighthouse 6.0.  FMP has also been removed from the **Performance** panel.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--See [First Meaningful Paint][WebDevFirstMeaningfulPaint] for an explanation of why it was deprecated.  -->  
+First Meaningful Paint \(FMP\) is deprecated in Lighthouse 6.0.  FMP has also been removed from the **Performance** panel.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->  
 
 <!--todo: add Largest Contentful Paint when section available  -->  
 <!--todo: add First Meaningful Paint link and note when available  -->  
@@ -221,7 +233,7 @@ Chromium issue [#955497][CR955497]
 
 ### Consistent display of the Computed pane  
 
-The **Computed** pane in the **Elements** panel now displays consistently as a pane across all viewport sizes.  Previously the **Computed** pane merged inside the **Styles** pane when the width of the DevTools viewport was narrow.  
+The **Computed** pane in the **Elements** tool now displays consistently as a pane across all viewport sizes.  Previously the **Computed** pane merged inside the **Styles** pane when the width of the DevTools viewport was narrow.  
 
 :::image type="complex" source="../../media/2020/06/computed-pane.msft.png" alt-text="The Computed pane consistently displays as a separate pane even when the DevTools are narrow" lightbox="../../media/2020/06/computed-pane.msft.png":::
    The **Computed** pane consistently displays as a separate pane even when the DevTools are narrow.
@@ -241,7 +253,7 @@ Chromium issue [#1071432][CR1071432]
 When performing copy or cut with no selection in the [Sources panel editor][DevtoolsSourcesEditCssJavascript], DevTools copies or cuts the current line of content.  
 
 :::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="With the cursor at the end of Line 5, copying the whole line from pen.js in the DevTools and pasting in Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
-   With the cursor at the end of Line 5, copying the whole line from **pen.js** in the DevTools and pasting in [Visual Studio Code][VSCode].
+   With the cursor at the end of Line 5, copying the whole line from **pen.js** in the DevTools and pasting in [Visual Studio Code][VisualStudioCode].
 :::image-end:::  
 
 Chromium issue [#800028][CR800028]
@@ -274,9 +286,9 @@ Chromium issue [#1055875][CR1055875]
 
 ### Performance panel updates  
 
-#### JavaScript compilation cache information in Performance panel  
+#### JavaScript compilation cache information in **Performance** tool  
 
-[JavaScript compilation cache information][V8DevCodeCaching] is now always displayed in the Summary tab of the Performance panel.  Previously, DevTools did not show anything related to code caching if code caching did not happen.  
+[JavaScript compilation cache information][V8DevCodeCaching] is now always displayed in the **Summary** panel of the **Performance** tool.  Previously, DevTools did not show anything related to code caching if code caching did not happen.  
 
 :::image type="complex" source="../../media/2020/06/js-compilation-cache.msft.png" alt-text="JavaScript compilation cache information" lightbox="../../media/2020/06/js-compilation-cache.msft.png":::
    JavaScript compilation cache information  
@@ -288,8 +300,8 @@ Chromium issue [#912581][CR912581]
 
 The **Performance** panel used to show times in the rulers based on when the recording started.  The timing has now changed for recordings where the user navigates, where DevTools now shows ruler times relative to the navigation instead.  
 
-:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Align navigation timing in Performance panel" lightbox="../../media/2020/06/nav-timing.msft.png":::
-   Align navigation timing in **Performance** panel  
+:::image type="complex" source="../../media/2020/06/nav-timing.msft.png" alt-text="Align navigation timing in Performance tool" lightbox="../../media/2020/06/nav-timing.msft.png":::
+   Align navigation timing in **Performance** tool  
 :::image-end:::  
 
 The times for `DOMContentLoaded`, First Paint, First Contentful Paint, and Largest Contentful Paint events are updated to be relative to the start of the navigation, which means the timing matches the timings reported by `PerformanceObserver`.  
@@ -298,7 +310,7 @@ Chromium issue [#974550][CR974550]
 
 ### New icons for breakpoints, conditional breakpoints, and logpoints  
 
-The **Sources** panel has new designs for breakpoints, conditional breakpoints, and logpoints.  Breakpoints are represented by a red circle, just like [Visual Studio Code][VSCode] and [Visual Studio][VS].  Icons are added to differentiate conditional breakpoints and logpoints.  
+The **Sources** panel has new designs for breakpoints, conditional breakpoints, and logpoints.  Breakpoints are represented by a red circle, just like [Visual Studio Code][VisualStudioCode] and [Visual Studio][VisualStudio].  Icons are added to differentiate conditional breakpoints and logpoints.  
 
 :::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Breakpoints" lightbox="../../media/2020/06/breakpoints.msft.png":::
    Breakpoints  
@@ -360,8 +372,8 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Microsoft Edge Preview Channels"  
 
-[VS]: https://visualstudio.microsoft.com/ "Visual Studio"
-[VSCode]: https://code.visualstudio.com/ "Visual Studio Code"  
+[VisualStudio]: https://visualstudio.microsoft.com/ "Visual Studio"
+[VisualStudioCode]: https://code.visualstudio.com/ "Visual Studio Code"  
 
 [CsswgDraftsCssom]: https://drafts.csswg.org/cssom "CSS Object Model (CSSOM) | W3C CSS Working Group Editor Drafts"  
 
