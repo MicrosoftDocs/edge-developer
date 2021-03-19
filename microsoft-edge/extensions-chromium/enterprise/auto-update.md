@@ -87,23 +87,14 @@ The basic auto-update mechanism is as easy as dropping a static XML file onto an
 
 You may take advantage of the fact that parameters are added to the update manifest request that indicate the extension ID and version. You can use the same update URL for all your extensions instead of a static XML file.  To use the same update URL for all your extensions, point to a URL that runs dynamic server-side code to test these parameters.  
 
-The following example demonstrates the format of the request parameters of update URL.  
+The following example demonstrates the format of the request parameters of update URL: `?x={extension_data}`.
 
-?x={extension_data}
-
-In the above example, `{extension_data}` is a URL-encoded string that uses the following format.  
-
-id={id}&v={version}
+In this example, `{extension_data}` is a URL-encoded string that uses the following format: `id={id}&v={version}`.
 
 For example, the following two extensions both point to the same update URL `http://contoso.com/extension_updates.php`.  
 
-Extension 1
-ID: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-Version: "1.1"
-
-Extension 2
-ID: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
-Version: "0.4"
+*  Extension 1 - ID: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" Version: "1.1"
+*  Extension 2 - ID: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb" Version: "0.4"
 
 
 The following are the requests to update each extension.  
