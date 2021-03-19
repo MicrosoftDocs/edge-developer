@@ -36,10 +36,7 @@ Previously when non-store based extensions were supported, it was possible to up
 
 ## Overview  
 
-*   A manifest may contain an `update_url` field.  It points to a location for doing update checks.  
-*   The content returned by an update check is an update manifest XML document. It lists the latest version of an extension.  
-
-Every few hours, the Microsoft Edge checks whether each installed extension or app has an update URL.  For each one, it sends a request to the update URL to search for an update manifest XML file.  If the update manifest XML file mentions a newer version than that installed, Microsoft Edge downloads and installs the newer version.  The same process works for manual updates, where the new `.crx` file must be signed with the same private key as the currently installed version.  
+Every few hours, Microsoft Edge checks whether each installed extension or app has an update URL.  Extensions can specify an update URL using the `update_url` field in the manifest, which points to a location to perform an update check.  For each `update_url`, it sends requests for updated manifest XML files.  If the update manifest XML file lists a newer version than that installed, Microsoft Edge downloads and installs the newer version.  The same process works for manual updates, where the new `.crx` file must be signed with the same private key as the currently installed version.  
 
 > [!NOTE]
 > In order to maintain user privacy, Microsoft Edge does not send any `Cookie` headers with auto-update manifest requests, and ignores any `Set-Cookie` headers in the responses to those requests.  
@@ -52,31 +49,31 @@ If you host your own extension or app, you must add the `update_url` field to yo
 {
   "name": "My extension",
   ... 
-  "update_url": "http://myhost.com/mytestextension/updates.xml",
+  "update_url": "http://contoso.com/mytestextension/updates.xml",
   ... 
 }
 ```  
 
-## Update manifest  
+## Updated manifest  
 
-The update manifest returned by the server should be an XML document.  Review the following code snippet for an example of the update manifest XML file.  
+The updated manifest returned by the server should be an XML document.  Review the following code snippet for an example of the updated manifest XML file.  
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
 <gupdate xmlns='http://www.microsoft.com/update2/response' protocol='2.0'>
   <app appid='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'>
-    <updatecheck codebase='http://myhost.com/mytestextension/mte_v2.crx' version='2.0' />
+    <updatecheck codebase='http://contoso.com/mytestextension/mte_v2.crx' version='2.0' />
   </app>
 </gupdate>
 ```  
 
-The following table describes attributes of the update manifest XML file.  
+The following table describes attributes of the updated manifest XML file.  
 
 | Attribute | Details | 
 |:--- |:--- |  
 | `appid` | The extension ID is generated based on a hash of the public key.  To find the ID of an extension, open Microsoft Edge and navigate to `edge://extensions`. |  
 | `codebase` | A URL to the `.crx` file. |  
-| `version` | This attribute value is used by Microsoft Edge to determine whether it should download the `.crx` file specified by codebase.  It should match the value of `version` in the `manifest.json` file of the `.crx` file. |  
+| `version` | This attribute value is used by Microsoft Edge to determine whether it should download the `.crx` file specified by `codebase`.  It should match the value of `version` in the `manifest.json` file of the `.crx` file. |  
 
 The update manifest XML file may contain information about multiple extensions by including multiple elements.  
 
@@ -86,23 +83,23 @@ The default update check frequency is several hours.  To force an update, naviga
 
 ## Advanced usage: request parameters  
 
-The basic auto-update mechanism is designed to make the server-side work easily.  Just dropping a static XML file onto any plain web server such as Apache, and update that XML file as you release new versions of your extensions.  
+The basic auto-update mechanism is as easy as dropping a static XML file onto any web server such as Apache, and updating the XML file as you release new versions of your extensions.  
 
-You may take advantage of the fact parameters are added to the update manifest request that indicate the extension ID and version.  To use the same update URL for all of the extensions, point to a URL that is running dynamic server-side code instead of a static XML file.  
+You may take advantage of the fact that parameters are added to the update manifest request that indicate the extension ID and version. You can use the same update URL for all your extensions instead of a static XML file.  To use the same update URL for all your extensions, point to a URL that runs dynamic server-side code to test these parameters.  
 
-The following format is for the request parameters.  
+The following example demonstrates the format of the request parameters of update URL.  
 
 ```rest
 ?x={extension_data}
 ```  
 
-The `{extension_data}` is a URL-encoded string that uses the following format.  
+In the above example, `{extension_data}` is a URL-encoded string that uses the following format.  
 
 ```url
 id={id}&v={version}
 ```  
 
-For example, the following two extensions both point to the same update URL `http://test.com/extension_updates.php`.  
+For example, the following two extensions both point to the same update URL `http://contoso.com/extension_updates.php`.  
 
 ```text
 Extension 1
@@ -116,23 +113,23 @@ ID: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
 Version: "0.4"
 ```  
 
-The following requests to update each extension.  
+The following are the requests to update each extension.  
 
 ```https
-http://test.com/extension_updates.php?x=id%3Daaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa%26v%3D1.1
+http://contoso.com/extension_updates.php?x=id%3Daaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa%26v%3D1.1
 ```  
 
 ```https
-http://test.com/extension_updates.php?x=id%3Dbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb%26v%3D0.4
+http://contoso.com/extension_updates.php?x=id%3Dbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb%26v%3D0.4
 ```  
 
 You may also list multiple extensions in a single request for each unique update URL.  The following example merges the previous requests into a single request.  
 
 ```https
-http://test.com/extension_updates.php?x=id%3Daaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa%26v%3D1.1&x=id%3Dbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb%26v%3D0.4
+http://contoso.com/extension_updates.php?x=id%3Daaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa%26v%3D1.1&x=id%3Dbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb%26v%3D0.4
 ```  
 
-If you send a single request and the number of installed extensions that use the same update URL is too long, the update check issues more `GET` requests as necessary.  A `GET` request URL is too long if it is over 2000 characters or so.  
+If you send a single request and the number of installed extensions that use the same update URL is too long, the update check issues more `GET` requests.  A `GET` request URL is too long if it is approximately 2000 characters.  
 
 > [!NOTE]
 > In the future, a single `POST` request may replace multiple `GET` requests.  The `POST` request may contain the request parameters in the `POST` body.  
@@ -145,7 +142,7 @@ As new APIs release for the Microsoft Edge extensions system, you may release an
 <?xml version='1.0' encoding='UTF-8'?>
 <gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
   <app appid='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'>
-    <updatecheck codebase='http://myhost.com/mytestextension/mte_v2.crx' version='2.0' prodversionmin='3.0.193.0' />
+    <updatecheck codebase='http://contoso.com/mytestextension/mte_v2.crx' version='2.0' prodversionmin='3.0.193.0' />
   </app>
 </gupdate>
 ```  
