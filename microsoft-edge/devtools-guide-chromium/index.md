@@ -3,7 +3,7 @@ description: Get to know the Microsoft Edge (Chromium) Developer Tools
 title: Microsoft Edge (Chromium) Developer Tools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -114,7 +114,7 @@ The following shortcuts control the main DevTools window, work across all tools,
 | Zoom in | `Ctrl`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Zoom out | `Ctrl`+`-` | `Command`+`-` |  
 | Restore default zoom level | `Ctrl`+`0` | `Command`+`0` |  
-| Run snippet | `Ctrl`+`O` or `Ctrl`+`P`, type `!` followed by the name of the script, then press `Enter` | Press `Command`+`O` or `Command`+`P`, type `!` followed by the name of the script, then press `Enter` |  
+| Run snippet | `Ctrl`+`O` or `Ctrl`+`P`, type `!` followed by the name of the script, then select `Enter` | Select `Command`+`O` or `Command`+`P`, type `!` followed by the name of the script, then select `Enter` |  
 | Show non-editable HTML source code in a new tab | `Ctrl`+`U` | N/A |  
 
 > [!NOTE]
@@ -134,7 +134,7 @@ If you want to preview the [latest features coming to the DevTools][DevtoolsGuid
 <!-- links -->  
 
 [DevtoolsGuideChromiumBeginnersHtml]: /microsoft-edge/devtools-guide-chromium/beginners/html "DevTools for Beginners: Get Started with HTML and the DOM | Microsoft Docs"  
-[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools "What's new in the Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumWhatsNewIndex]: /microsoft-edge/devtools-guide-chromium/whats-new/2021/02/devtools "What's new in the Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
 [DevtoolsProtocolChromiumIndex]: /microsoft-edge/devtools-protocol-chromium "Microsoft Edge (Chromium) DevTools Protocol | Microsoft Docs"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge Add-ons"  

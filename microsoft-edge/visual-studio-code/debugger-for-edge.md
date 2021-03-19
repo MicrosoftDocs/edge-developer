@@ -3,7 +3,7 @@ description: How to debug Microsoft Edge (Chromium) and Microsoft Edge (EdgeHTML
 title: Debug Microsoft Edge (Chromium) from Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/20/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger
@@ -20,7 +20,7 @@ With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftE
 
 ## Launching Microsoft Edge  
 
-Navigate to the Debug view \(`Ctrl`+`Shift`+`D` on Windows or `Command`+`Shift`+`D` on macOS\) in the **Activity Bar**.  If you do not have any configurations in Visual Studio Code, press `F5` on Windows or macOS or select the green **Play** button.  Select **Edge** in the dropdown.  You should see a `launch.json` file with the following configuration.  
+Navigate to the Debug view \(`Ctrl`+`Shift`+`D` on Windows or `Command`+`Shift`+`D` on macOS\) in the **Activity Bar**.  If you do not have any configurations in Visual Studio Code, select `F5` on Windows or macOS or select the green **Play** button.  Select **Edge** in the dropdown.  You should see a `launch.json` file with the following configuration.  
 
 ```json
 {
@@ -37,7 +37,7 @@ Navigate to the Debug view \(`Ctrl`+`Shift`+`D` on Windows or `Command`+`Shift`+
 }
 ```  
 
-If you press `F5` on Windows or macOS or select the green **Play** button again, Visual Studio Code launches Microsoft Edge \(EdgeHTML\) and you are able to debug any web project you have running on port `8080` directly from Visual Studio Code!  
+If you select `F5` on Windows or macOS or select the green **Play** button again, Visual Studio Code launches Microsoft Edge \(EdgeHTML\) and you are able to debug any web project you have running on port `8080` directly from Visual Studio Code!  
 
 ### Microsoft Edge (Chromium)  
 
