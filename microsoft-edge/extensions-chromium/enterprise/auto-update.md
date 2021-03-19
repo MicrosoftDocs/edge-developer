@@ -1,10 +1,10 @@
 ---
-description: Automatically update your extensions in Microsoft Edge
+description: Learn about automatic updates to extensions in Microsoft Edge
 title: Auto-update extensions in Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/17/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
 ---
@@ -23,16 +23,16 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
    limitations under the License.  -->  
 # Auto-update extensions in Microsoft Edge  
 
-The reasons to auto-update extensions and apps are the same reasons as Microsoft Edge.  
+Automatically updating extensions share some of the same benefits as automatically updating Microsoft Edge:   
 
-*   Incorporate bug and security fixes  
-*   Add new features or performance enhancements  
-*   Improve user interfaces  
+*   Incorporate bug and security fixes.  
+*   Add new features or performance enhancements.  
+*   Improve the user interface.  
+
+Previously when non-store based extensions were supported, it was possible to update the native binaries and the extension at the same time.  Now, those extensions are hosted in the Microsoft Edge Add-ons store and updates are made using the same mechanism that Microsoft Edge uses, which you can't control.  You should be careful when updating extensions that have a dependency on native binaries.  
 
 > [!NOTE]
-> If you publish using [Partner Center][MicrosoftPartnerCenter] dashboard, you may ignore this article.  You may use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons store.
-
-Previously, off-store extensions were supported, you optionally included the native binaries, and your extension was updated in lock step.  Now, extensions hosted in the Microsoft Edge Add-ons store are updated using the Microsoft Edge update mechanism that you don't control.  You should be careful about updating extensions that have a dependency on the native binary.  
+> This topic does not apply to extensions published using the [Partner Center][MicrosoftPartnerCenter] dashboard.  You may use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons store.
 
 ## Overview  
 
