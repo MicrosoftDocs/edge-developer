@@ -383,7 +383,7 @@
               href: webview2/gettingstarted/winui.md
         - name: Concepts
           items:
-            - name: WebView2 developer guide
+            - name: WebView2 development best practices  
               href: webview2/concepts/developer-guide.md
             - name: Distributing my app
               href: webview2/concepts/distribution.md
