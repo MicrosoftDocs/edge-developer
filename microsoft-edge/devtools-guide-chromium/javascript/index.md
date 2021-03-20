@@ -63,9 +63,9 @@ The **Sources** tool UI has three parts.
    The 3 parts of the **Sources** tool UI  
 :::image-end:::  
 
-1.  The **File Navigator** panel \(Section 1 in the previous figure\).  Every file that the webpage requests is listed here.  
-1.  The **Code Editor** panel \(Section 2 in the previous figure\).  After selecting a file in the **File Navigator** pane, the contents of that file are displayed here.  
-1.  The **JavaScript Debugging** panel \(Section 3 in the previous figure\).  Various tools for inspecting the JavaScript for the webpage.  If your DevTools window is wide, this pane is displayed to the right of the **Code Editor** pane.  
+1.  The **File Navigator** pane \(Section 1 in the previous figure\).  Every file that the webpage requests is listed here.  
+1.  The **Code Editor** pane \(Section 2 in the previous figure\).  After selecting a file in the **File Navigator** pane, the contents of that file are displayed here.  
+1.  The **JavaScript Debugging** pane \(Section 3 in the previous figure\).  Various tools for inspecting the JavaScript for the webpage.  If your DevTools window is wide, this pane is displayed to the right of the **Code Editor** pane.  
     
 ## Step 3: Pause the code with a breakpoint  
 
@@ -153,9 +153,9 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
 
 The values of `addend1`, `addend2`, and `sum` look suspicious.  The values are wrapped in quotes.  The quotations mean that the value is a string, which is a good hypothesis to explain the cause of the bug.  Gather more information about the situation.  DevTools provides many tools for examining variable values.  
 
-### Method 1: The Scope panel  
+### Method 1: The Scope pane  
 
-If you pause on a line of code, the **Scope** panel displays the local and global variables that are currently defined, along with the value of each variable.  It also displays closure variables, as applicable.  Double-click a variable value to edit it.  If you don't pause on a line of code, the **Scope** panel is empty.  
+If you pause on a line of code, the **Scope** pane displays the local and global variables that are currently defined, along with the value of each variable.  It also displays closure variables, as applicable.  Double-click a variable value to edit it.  If you don't pause on a line of code, the **Scope** pane is empty.  
 
 :::image type="complex" source="../media/javascript-sources-breakpoint-paused-scope.msft.png" alt-text="The Scope pane" lightbox="../media/javascript-sources-breakpoint-paused-scope.msft.png":::
    The **Scope** pane  
@@ -163,9 +163,9 @@ If you pause on a line of code, the **Scope** panel displays the local and globa
 
 ### Method 2: Watch Expressions  
 
-The **Watch Expressions** panel lets you monitor the values of variables over time.  As the name implies, **Watch Expressions** aren't limited to variables.  You may store any valid JavaScript expression in a **Watch Expression**.  Try it now.  
+The **Watch Expressions** pane lets you monitor the values of variables over time.  As the name implies, **Watch Expressions** aren't limited to variables.  You may store any valid JavaScript expression in a **Watch Expression**.  Try it now.  
 
-1.  Choose the **Watch** panel.  
+1.  Choose the **Watch** pane.  
 1.  Choose **Add Expression** \(![Add Expression](../media/add-expression-icon.msft.png)\).  
 1.  Type `typeof sum`.  
 1.  Select `Enter`.  DevTools shows `typeof sum: "string"`.  The value to the right of the colon is the result of your Watch Expression.  
@@ -173,8 +173,8 @@ The **Watch Expressions** panel lets you monitor the values of variables over ti
 > [!NOTE]
 > In the **Watch Expression** pane \(bottom-right\) in the following figure, the `typeof sum` Watch Expression is displayed.  If your DevTools window is large, the **Watch Expression** pane is on the right above the **Event Listener Breakpoints** pane.  
 
-:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="The Watch Expression panel" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
-   The **Watch Expression** panel  
+:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="The Watch Expression pane" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
+   The **Watch Expression** pane  
 :::image-end:::  
 
 As suspected, `sum` is being evaluated as a string, when it should be a number.  You now confirmed value type is the cause of the bug.  
@@ -183,7 +183,7 @@ As suspected, `sum` is being evaluated as a string, when it should be a number. 
 
 The **Console** allows you to view `console.log()` messages and you may also use it to evaluate arbitrary JavaScript statements.  For debugging, you may use the **Console** to test potential fixes for bugs.  Try it now.  
 
-1.  If the **Console** tool is closed, select `Escape` to open it.  The **Console** tool opens in the lower panel of the DevTools window.  
+1.  If the **Console** tool is closed, select `Escape` to open it.  The **Console** tool opens in the lower pane of the DevTools window.  
 1.  In the **Console**, type `parseInt(addend1) + parseInt(addend2)`.  The statement the tool is paused on a line of code where `addend1` and `addend2` are in scope.  
 1.  Select `Enter`.  DevTools evaluates the statement and prints `6`, which is the result you expect the demo to produce.  
     
