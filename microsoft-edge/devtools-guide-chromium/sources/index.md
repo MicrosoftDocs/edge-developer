@@ -28,10 +28,14 @@ keywords: microsoft edge, web development, f12 tools, devtools
 Make this page focus on the Page tab (in the File Explorer pane), the Editor pane, and the Debugger to debug changes made in the Editor.  Suppress the other functionality: move those sections down and demote their headings.
  -->
 
-Use the **Sources** tool to do the following:
-*   Display the file system that's returned from the server to construct the current webpage.  View JavaScript files (and other files) that are returned from the server.
-*   Make experimental edits to the JavaScript code that is returned from the server; these changes are preserved (in the DevTools sandbox) until page refresh.
-*   Use the Debugger to step through the JavaScript code that is returned from the server, and step through your experimental changes to the code.
+Use the **Sources** tool to navigate, edit, and debug JavaScript that's returned by the server:
+*   **Navigate:** Display the file system that's returned from the server to construct the current webpage.  View JavaScript files (and other files) that are returned from the server.
+*   **Edit:** Make experimental edits to the JavaScript code that is returned from the server.  These changes are preserved (in the DevTools sandbox) until page refresh.
+*   **Debug:** Use the Debugger to step through the JavaScript code that is returned from the server, and step through your experimental changes to the code.
+
+:::image type="complex" source="../media/debugging.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging.msft.png":::
+   Navigate, edit, and debug JavaScript returned by the server 
+:::image-end:::  
 
 Additional functionality:
 *   Make edits to local code and save them, by using a Workspace (the **Filesystem** tab) or **Overrides**.  Such changes to code are preserved across page refreshes.
@@ -39,26 +43,6 @@ Additional functionality:
 This JavaScript code from the server may be different than the source files you work with, if those files go through transformations.  The **Sources** tool shows the final JavaScript code that's presented to the browser.
 
 The **Sources** tool is sometimes called the *Sources panel*.
-
-## Layout of the Sources tool
-
-The **Sources** tool has three panes:
-*   Upper left: the **File Explorer** pane (also called the **File Navigator** pane).
-*   Upper middle or right: the **Editor** pane (also called the **Code Editor** or **Text Editor** pane).
-*   Bottom or right: the **Debugger** pane (also called the **JavaScript Debugger** pane).  Designed to look and feel like the debugger in Visual Studio Code and Visual Studio.
-
-The **File Explorer** pane has the following, main tab:
-*   **Page** tab - Explore the file system that's returned from the server to construct the current webpage, and select JavaScript files to view, edit, and debug.
-
-Additional tabs in the File Explorer pane:
-*   **Filesystem** tab - When using Workspaces, to save changes to local files.  <!-- why isn't this called Workspace -->  This enables DevTools to act as an IDE.  If you want persistent editing local file exp'c, use the "DevTools for Visual Studio Code" extension (todo: link to that extension doc).
-*   **Overrides** tab - Override page assets (such as images) by files from a local folder.  It's a way of changing what the server sends, after the fact.   On a folder basis.
-*   **Content scripts** tab - Used for extensions.  Content scripts from from extensions; extension authors use them.  Use this to debug the JavaScript that an extension is injecting onto the page.
-*   **Snippets** tab - Create and save JavaScript code snippets, for reuse on any webpage. (on every page, or a specified page only?)
-*   \>> (**More tabs**) - This "double chevron" button displays the above tabs when the display is narrow.
-*   ... (**More options**)
-    *   **Group by folder** - Controls how files are displayed in the **Page** tab: as a flat list, or grouped by server and directory.
-    *   **Open File** - Leads to the commands: **Open file**, **Run Command**, **Run snippet**, **Go to line**, **Go to symbol**.
 
 ### Maximizing the Sources tool window
 
@@ -72,38 +56,31 @@ To maximize the Sources tool window:
 
 The File Explorer pane will be on the left side of the window, and the Debugger pane will be on the right side of the window.
 
-<!-- ORIGINAL CONTENT AT TOP OF PAGE: -->
+## Layout of the Sources tool
 
-Use the Microsoft Edge DevTools **Sources** tool to perform the following actions.  
+The **Sources** tool has three panes:
+*   Upper left (or left): the **File Explorer** pane (also called the **File Navigator** pane).
+*   Upper right (or middle): the **Editor** pane (also called the **Code Editor** or **Text Editor** pane).
+*   Bottom (or right): the **Debugger** pane (also called the **JavaScript Debugger** pane).  Designed to look and feel like the debugger in Visual Studio Code and Visual Studio.
 
-<!-- the driving factors are only:
-*   [Display files]
-*   [Edit JavaScript]
-*   [Debug JavaScript]
-don't water-down, don't let those get lost by adding peripheral funcy.
- -->
-*   [Navigate files returned by the server](#navigate-files-returned-by-the-server).  
-*   [Edit JavaScript files](#edit-javascript-files).  
-*   [Debug JavaScript](#debug-javascript).  
-
-Additional functionality:
-*   [Create and save **Snippets** of JavaScript](#create-save-and-run-snippets), which you may run on any webpage.  **Snippets** are similar to bookmarklets.  
-*   [Set up a Workspace](#set-up-a-workspace), so that changes you make in DevTools get saved to the code on your file system.  
-    
-## Navigate files returned by the server  
-
-Use the **Page** tab in the **File Explorer** pane, on the left, to list and navigate among all of the resources that the page has loaded.
-
-:::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="The Page pane" lightbox="../media/sources-page-pane.msft.png":::
-   The **Page** pane  
+:::image type="complex" source="../media/debugging.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging.msft.png":::
+   Navigate, edit, and debug JavaScript returned by the server 
 :::image-end:::  
 
-How the **Page** pane is organized:  
+## Navigate files returned by the server  
+
+To list and navigate among all of the resources that the page has loaded, use the **Page** tab in the **File Explorer** pane (on the left).
+
+:::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="The Page pane" lightbox="../media/sources-page-pane.msft.png":::
+   The **Page** tab
+:::image-end:::  
+
+How the **Page** tab is organized:  
 *   The top-level, such as `top` in the previous figure, represents an [HTML frame][W3CHtml4Frames].  Find `top` on every page that you visit.  `top` represents the main document frame.  
 *   The second-level, such as `docs.microsoft.com` in the previous figure, represents an [origin][HtmlstandardOrigin].  
 *   The third-level, fourth-level, and so on, represent directories and resources that were loaded from that origin.  For example, in the previous figure the full path to the resource `devtools-guide-chromium` is `docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium`  
     
-Choose a file in the **Page** pane to display the contents in the **Editor** pane.  You may display any type of file.  For images, a preview of the image is displayed.  
+To display a file in the **Editor** pane, choose a file in the **Page** tab.  You may display any type of file.  For images, a preview of the image is displayed.  
 
 :::image type="complex" source="../media/sources-editor-pane.msft.png" alt-text="Display the contents of a4d10f71.index-docs.js in the Editor pane" lightbox="../media/sources-editor-pane.msft.png":::
    Display the contents of `a4d10f71.index-docs.js` in the **Editor** pane  
@@ -125,7 +102,7 @@ By default, your edits are discarded when you refresh the page.  To learn how to
 
 Rather than using `console.log()` to infer where your JavaScript is going wrong, consider using the Microsoft Edge DevTools debugging tools, instead.  The general idea is to set a breakpoint, which is an intentional stopping place in your code, and then step through the runtime of your code, one line at a time.  As you step through the code, you may display and change the values of all currently-defined properties and variables, run JavaScript in the **Console**, and more.
 
-To learn the basics of debugging in DevTools, navigate to [Get Started With Debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex].  That page is a short tutorial, using an existing, simple project at Glitch.  The tutorial shows screen captures, so you don't need to actually walk through the tutorial steps.
+To learn the basics of debugging in DevTools, navigate to [Get Started With Debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex].  That page is a short tutorial with screen captures, using an existing, simple project at Glitch.
 
 :::image type="complex" source="../media/debugging.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging.msft.png":::
    Debug JavaScript  
@@ -134,6 +111,21 @@ To learn the basics of debugging in DevTools, navigate to [Get Started With Debu
 The above screen capture shows the wider layout of DevTools, with the Debugger pane on the right rather than at the bottom.
 
 ## Additional functionality
+
+The main purpose of the Sources tool is to view, edit, and debug JavaScript that's returned from the server.  The Sources tool also provides the following capabilities.
+
+### Tabs in the File Explorer pane
+
+The **File Explorer** pane has the following tabs:
+*   **Page** tab - Explore the file system that's returned from the server to construct the current webpage, and select JavaScript files to view, edit, and debug.
+*   **Filesystem** tab - When using Workspaces, to save changes to local files.  This enables DevTools to act as an IDE.  [Set up a Workspace](#set-up-a-workspace), so that changes you make in DevTools get saved to the code on your file system.  Alternatively, for persistent editing of local files, use the "DevTools for Visual Studio Code" extension (todo: link to that extension doc).
+*   **Overrides** tab - Override page assets (such as images) by files from a local folder.  It's a way of changing what the server sends, after the fact.   On a folder basis.
+*   **Content scripts** tab - Used for extensions.  Content scripts from from extensions; extension authors use them.  Use this to debug the JavaScript that an extension is injecting onto the page.
+*   **Snippets** tab - Create and save JavaScript code snippets, for reuse on any webpage. (todo: on every page, or a specified page only?)
+*   \>> (**More tabs**) - This "double chevron" button displays the above tabs when the display is narrow.
+*   ... (**More options**)
+    *   **Group by folder** - Controls how files are displayed in the **Page** tab: as a flat list, or grouped by server and directory.
+    *   **Open File** - Leads to the commands: **Open file**, **Run Command**, **Run snippet**, **Go to line**, **Go to symbol**.
 
 ### Create, save, and run Snippets  
 
@@ -159,6 +151,8 @@ To run a **Snippet**:
 *   Open the [Command Menu][DevtoolsGuideChromiumCommandMenuIndex], delete the `>` character, type `!`, type the name of your **Snippet**, and then select `Enter`.  
     
 Navigate to [Run Snippets Of Code From Any Page][DevtoolsGuideChromiumJavascriptSnippets] to learn more.
+
+**Snippets** are similar to bookmarklets.
 
 ### Set up a Workspace  
 
