@@ -29,27 +29,28 @@ Make this page focus on the Page tab (in the File Explorer pane), the Editor pan
  -->
 
 Use the **Sources** tool to do the following:
-*   Display the file system that's returned from the server.  View JavaScript files (and other files) that are returned from the server.
+*   Display the file system that's returned from the server to construct the current webpage.  View JavaScript files (and other files) that are returned from the server.
 *   Make experimental edits to the JavaScript code that is returned from the server; these changes are preserved (in the DevTools sandbox) until page refresh.
 *   Use the Debugger to step through the JavaScript code that is returned from the server, and step through your experimental changes to the code.
 
 Additional functionality:
-*   Make edits to local code when using a Workspace (the **Filesystem** tab) or **Overrides**; such changes to code are preserved across page refreshes.
+*   Make edits to local code and save them, by using a Workspace (the **Filesystem** tab) or **Overrides**.  Such changes to code are preserved across page refreshes.
 
-This JavaScript code from the server may be different than the source files you work with, if those files go through transformations. The **Sources** tool shows the final JavaScript code that's presented to the browser.
+This JavaScript code from the server may be different than the source files you work with, if those files go through transformations.  The **Sources** tool shows the final JavaScript code that's presented to the browser.
 
 The **Sources** tool is sometimes called the *Sources panel*.
 
 ## Layout of the Sources tool
 
 The **Sources** tool has three panes:
-*   Upper left: the **File Explorer** pane (also called the **File Navigator** pane)
-*   Upper middle or right: the **Editor** pane (also called the **Code Editor** or **Text Editor** pane)
-*   Bottom or right: the **Debugger** pane (also called the **JavaScript Debugger** pane). Designed to look and feel like the debugger in Visual Studio Code and Visual Studio.
+*   Upper left: the **File Explorer** pane (also called the **File Navigator** pane).
+*   Upper middle or right: the **Editor** pane (also called the **Code Editor** or **Text Editor** pane).
+*   Bottom or right: the **Debugger** pane (also called the **JavaScript Debugger** pane).  Designed to look and feel like the debugger in Visual Studio Code and Visual Studio.
 
-The **File Explorer** pane has the following tabs:
-*   **Page** tab - Explore the file system returned from the server.  This is the main tab.  <!-- why isn't this called Filesystem.  What does "page" mean: can this show & navigate through multiple "pages" in some sense?  or the components that construct the current page? -- >
-Auxiliary tabs in the File Explorer pane:
+The **File Explorer** pane has the following, main tab:
+*   **Page** tab - Explore the file system that's returned from the server to construct the current webpage, and select JavaScript files to view, edit, and debug.
+
+Additional tabs in the File Explorer pane:
 *   **Filesystem** tab - When using Workspaces, to save changes to local files.  <!-- why isn't this called Workspace -->  This enables DevTools to act as an IDE.  If you want persistent editing local file exp'c, use the "DevTools for Visual Studio Code" extension (todo: link to that extension doc).
 *   **Overrides** tab - Override page assets (such as images) by files from a local folder.  It's a way of changing what the server sends, after the fact.   On a folder basis.
 *   **Content scripts** tab - Used for extensions.  Content scripts from from extensions; extension authors use them.  Use this to debug the JavaScript that an extension is injecting onto the page.
@@ -81,8 +82,8 @@ Use the Microsoft Edge DevTools **Sources** tool to perform the following action
 *   [Debug JavaScript]
 don't water-down, don't let those get lost by adding peripheral funcy.
  -->
-*   [Navigate files returned by the server](#display-files).  
-*   [Edit JavaScript files](#edit-css-and-javascript).  
+*   [Navigate files returned by the server](#navigate-files-returned-by-the-server).  
+*   [Edit JavaScript files](#edit-javascript-files).  
 *   [Debug JavaScript](#debug-javascript).  
 
 Additional functionality:
@@ -91,7 +92,7 @@ Additional functionality:
     
 ## Navigate files returned by the server  
 
-Use the **Page** pane to display all of the resources that the page has loaded.
+Use the **Page** tab in the **File Explorer** pane, on the left, to list and navigate among all of the resources that the page has loaded.
 
 :::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="The Page pane" lightbox="../media/sources-page-pane.msft.png":::
    The **Page** pane  
@@ -110,9 +111,7 @@ Choose a file in the **Page** pane to display the contents in the **Editor** pan
 
 ## Edit JavaScript files
 
-Use the **Editor** pane to edit JavaScript.  DevTools updates the page to run your new code.  
-
-The main scenario is to edit JavaScript.  
+Use the **Editor** pane to edit JavaScript.  DevTools updates the page to run the modified code.  
 
 :::image type="complex" source="../media/edit-js.msft.png" alt-text="Editing JavaScript in the Editor pane" lightbox="../media/edit-js.msft.png":::
    Editing JavaScript in the **Editor** pane  
@@ -126,11 +125,13 @@ By default, your edits are discarded when you refresh the page.  To learn how to
 
 Rather than using `console.log()` to infer where your JavaScript is going wrong, consider using the Microsoft Edge DevTools debugging tools, instead.  The general idea is to set a breakpoint, which is an intentional stopping place in your code, and then step through the runtime of your code, one line at a time.  As you step through the code, you may display and change the values of all currently-defined properties and variables, run JavaScript in the **Console**, and more.
 
-To learn the basics of debugging in DevTools, navigate to [Get Started With Debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex]. That page is a short tutorial, using an existing, simple project at Glitch.
+To learn the basics of debugging in DevTools, navigate to [Get Started With Debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex].  That page is a short tutorial, using an existing, simple project at Glitch.  The tutorial shows screen captures, so you don't need to actually walk through the tutorial steps.
 
 :::image type="complex" source="../media/debugging.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging.msft.png":::
    Debug JavaScript  
 :::image-end:::  
+
+The above screen capture shows the wider layout of DevTools, with the Debugger pane on the right rather than at the bottom.
 
 ## Additional functionality
 
