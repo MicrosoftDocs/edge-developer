@@ -233,7 +233,7 @@
               href: devtools-guide-chromium/security/index.md
             - name: Sources
               items:
-                - name: Sources panel overview
+                - name: Sources tool overview
                   href: devtools-guide-chromium/sources/index.md
                 - name: JavaScript debugging reference
                   href: devtools-guide-chromium/javascript/reference.md
