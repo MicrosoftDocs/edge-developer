@@ -24,48 +24,49 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Sources tool overview  
 
-<!-- todo:
-Make this page focus on the Page tab (in the File Explorer pane), the Editor pane, and the Debugger to debug changes made in the Editor.  Suppress the other functionality: move those sections down and demote their headings.
- -->
+Use the **Sources** tool to navigate, edit, and debug JavaScript that's returned by the server.
 
-Use the **Sources** tool to navigate, edit, and debug JavaScript that's returned by the server:
-*   **Navigate:** Display the file system that's returned from the server to construct the current webpage.  View JavaScript files (and other files) that are returned from the server.
+*   **Navigate:** Display the file system that's returned from the server to construct the current webpage.  View JavaScript and other files that are returned from the server.
 *   **Edit:** Make experimental edits to the JavaScript code that is returned from the server.  These changes are preserved (in the DevTools sandbox) until page refresh.
-*   **Debug:** Use the Debugger to step through the JavaScript code that is returned from the server, and step through your experimental changes to the code.
+*   **Debug:** Use the Debugger to step through the JavaScript code that is returned from the server, and to step through experimental changes to the code.
 
 :::image type="complex" source="../media/debugging.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging.msft.png":::
    Navigate, edit, and debug JavaScript returned by the server 
 :::image-end:::  
 
-Additional functionality:
-*   Make edits to local code and save them, by using a Workspace (the **Filesystem** tab) or **Overrides**.  Such changes to code are preserved across page refreshes.
-
 This JavaScript code from the server may be different than the source files you work with, if those files go through transformations.  The **Sources** tool shows the final JavaScript code that's presented to the browser.
 
 The **Sources** tool is sometimes called the *Sources panel*.
 
-### Maximizing the Sources tool window
-
-When the DevTools window is wide within the browser window, or when the DevTools window is undocked into a separate window, the **Debugger** pane is displayed to the right of the **Editor** pane, instead of below it.
-
-To maximize the Sources tool window:
-
-1. Within DevTools, select the elipses (...) button (for **Customize and control DevTools**).
-1. In the **Dock side** section, select **Undock into separate window**.
-1. Optionally, move the DevTools window to a separate monitor.
-
-The File Explorer pane will be on the left side of the window, and the Debugger pane will be on the right side of the window.
+Additional functionality:
+*   Make edits to local code and save them, by using a Workspace (the **Filesystem** tab) or **Overrides**.  Such changes to code are preserved across page refreshes.
 
 ## Layout of the Sources tool
 
 The **Sources** tool has three panes:
 *   Upper left (or left): the **File Explorer** pane (also called the **File Navigator** pane).
 *   Upper right (or middle): the **Editor** pane (also called the **Code Editor** or **Text Editor** pane).
-*   Bottom (or right): the **Debugger** pane (also called the **JavaScript Debugger** pane).  Designed to look and feel like the debugger in Visual Studio Code and Visual Studio.
+*   Bottom (or right): the **Debugger** pane (also called the **JavaScript Debugger** pane).  Designed to look and feel like the debugger in Visual Studio Code and in Visual Studio.
 
 :::image type="complex" source="../media/debugging.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging.msft.png":::
    Navigate, edit, and debug JavaScript returned by the server 
 :::image-end:::  
+
+### Maximizing the Sources tool window
+
+When the DevTools window is wide within the browser window, or when the DevTools window is undocked into a separate window, the **Debugger** pane is displayed to the right of the **Editor** pane, instead of below it.
+
+To widen the Sources tool window:
+
+Select the left edge of the DevTools window and move it to the left.
+
+To maximize the Sources tool window:
+
+1. In the upper right corner of the DevTools window, select the elipses (...) button (for **Customize and control DevTools**).
+1. In the **Dock side** section, select **Undock into separate window**.
+1. Optionally, move the DevTools window to a separate monitor.
+
+The File Explorer pane will be on the left side of the window, and the Debugger pane will be on the right side of the window.
 
 ## Navigate files returned by the server  
 
@@ -96,13 +97,17 @@ Use the **Editor** pane to edit JavaScript.  DevTools updates the page to run th
 
 For JavaScript changes to take effect, select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\).  DevTools does not re-run a script, so the only JavaScript changes that take effect are those that you make inside of functions.  For example, in the following figure, notice how `console.log('A')` does not run, whereas `console.log('B')` does.  If DevTools re-runs the entire script after making the change, then the text `A` is logged to the **Console**.  
 
-By default, your edits are discarded when you refresh the page.  To learn how to save the changes to your file system, navigate to [Set up a Workspace](#set-up-a-workspace).  
+By default, your edits are discarded when you refresh the page.  To learn how to save the changes to your file system, navigate to [Set up a Workspace](#set-up-a-workspace).
+
+To go to a line number or symbol in the file: 
+
+In the File Explorer pane, click the ellipses (...) (**More options**), select **Open File** (**Ctrl+P**), then type ? to view options, or \: to **Go to line**, or \@ to **Go to symbol**.
 
 ## Debug JavaScript  
 
 Rather than using `console.log()` to infer where your JavaScript is going wrong, consider using the Microsoft Edge DevTools debugging tools, instead.  The general idea is to set a breakpoint, which is an intentional stopping place in your code, and then step through the runtime of your code, one line at a time.  As you step through the code, you may display and change the values of all currently-defined properties and variables, run JavaScript in the **Console**, and more.
 
-To learn the basics of debugging in DevTools, navigate to [Get Started With Debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex].  That page is a short tutorial with screen captures, using an existing, simple project at Glitch.
+To learn the basics of debugging in DevTools, navigate to [Get Started With Debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex].  That page is a short tutorial with screen captures, using an existing, simple project.
 
 :::image type="complex" source="../media/debugging.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging.msft.png":::
    Debug JavaScript  
