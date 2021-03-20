@@ -66,4 +66,4 @@ For any WebView2 application, ensure you follow our recommended WebView2 securit
 [Webview2GettingstartedWinui]: ../gettingstarted/winui.md "Getting started with WebView2 in WinUI 3 (Preview) | Microsoft Docs"  
 [Webview2GettingstartedWpf]: ../gettingstarted/wpf.md "Getting started with WebView2 in WPF | Microsoft Docs"  
 [Webview2ReferenceaddNewBrowserVersionAvailable]: https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment?view=webview2-1.0.774.44#add_newbrowserversionavailable "add_NewBrowserVersionAvailable | Microsoft Docs"  
-[Webview2ReferenceNewBrowserVersionAvailable]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable?view=webview2-dotnet-1.0.774.44 "CoreWebView2Environment.NewBrowserVersionAvailable Event | Microsoft Docs"  
+[Webview2ReferenceNewBrowserVersionAvailable]: https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable?view=webview2-dotnet-1.0.774.44 "CoreWebView2Environment.NewBrowserVersionAvailable Event | Microsoft Docs"  
