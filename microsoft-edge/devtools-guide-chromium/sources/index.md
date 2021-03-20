@@ -58,7 +58,7 @@ When the DevTools window is wide within the browser window, or when the DevTools
 
 To widen the Sources tool window:
 
-Select the left edge of the DevTools window and move it to the left.
+*   Select the left edge of the DevTools window and move it to the left.
 
 To maximize the Sources tool window:
 
@@ -105,15 +105,13 @@ In the File Explorer pane, click the ellipses (...) (**More options**), select *
 
 ## Debug JavaScript  
 
-Rather than using `console.log()` to infer where your JavaScript is going wrong, consider using the Microsoft Edge DevTools debugging tools, instead.  The general idea is to set a breakpoint, which is an intentional stopping place in your code, and then step through the runtime of your code, one line at a time.  As you step through the code, you may display and change the values of all currently-defined properties and variables, run JavaScript in the **Console**, and more.
+Instead of using `console.log()` to infer where your JavaScript is going wrong, consider using the debugger of Microsoft Edge DevTools.  You set a breakpoint (an intentional stopping place in your code that's returned from the server), and then step through the code.  As you step through the code, you may display and change the values of all currently-defined properties and variables, run JavaScript in the **Console**, and more.
 
-To learn the basics of debugging in DevTools, navigate to [Get Started With Debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex].  That page is a short tutorial with screen captures, using an existing, simple project.
+To learn the basics of debugging in DevTools, navigate to [Get Started With Debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex].  That page is a short tutorial with screen captures (the same captures that are shown in the present article), using an existing, simple project.
 
 :::image type="complex" source="../media/debugging.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging.msft.png":::
    Debug JavaScript  
 :::image-end:::  
-
-The above screen capture shows the wider layout of DevTools, with the Debugger pane on the right rather than at the bottom.
 
 ## Additional functionality
 
