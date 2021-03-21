@@ -12,6 +12,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 **Live Expressions** are an excellent way to monitor JavaScript expressions that change a lot. Instead of having a lot of Console messages to read and navigate you can pin them to the top of the console.
 
+## Adding a new live expression
+
 You start by activating the **Create new live expression** button which is next to the **Filter** text box and shows up as an eye. Once you activated it you will get a textbox to enter your new expression below it.
 
 :::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="Activating the 'New live expression' button gives you a textbox to enter an expression" lightbox="../media/console-live-expressions-new.msft.png":::
