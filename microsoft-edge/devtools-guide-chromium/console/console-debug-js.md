@@ -55,8 +55,8 @@ If you activate the `network-error.html:40` link in the Console DevTools will ta
 
 This means our requested URL wasn't found. 
 
-:::image type="complex" source="../media/console-debug-network-error-url.msft.png" alt-text="Activating the code line reported with the error gets you to the Sources Tool" lightbox="../media/console-debug-network-error-url.msft.png":::
-   Activating the code line reported with the error gets you to the Sources Tool 
+:::image type="complex" source="../media/console-debug-network-error-url.msft.png" alt-text="Console showing a 404 error that a resource could not be loaded" lightbox="../media/console-debug-network-error-url.msft.png":::
+   Console showing a 404 error that a resource could not be loaded 
 :::image-end:::  
 
 If you go back to the Console and activate the URL you get to the **Network** tool. There you can see the Network information in a lot more detail. 

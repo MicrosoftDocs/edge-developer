@@ -1,9 +1,9 @@
 ---
-description: Learn how to log messages to the Console.
-title: Get started with logging messages in the Console
+description: Learn how to filter console messages
+title: Get started with filtering messages in the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021 
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

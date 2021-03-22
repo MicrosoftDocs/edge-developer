@@ -259,7 +259,7 @@ You may use any of the following workflows to clear the Console:
 <!-- links -->  
 
 [DevToolsCommandMenu]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"  
-[DevToolsConsoleViewMessages]: ./index.md#viewing-logged-messages "Viewing logged messages - Console overview | Microsoft Docs"  
+[DevToolsConsoleViewMessages]: ./index.md#inspecting-and-filtering-information-of-the-current-web-site "Viewing logged messages - Console overview | Microsoft Docs"  
 [DevToolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
 [DevToolsConsoleOverviewJavascript]: ./index.md#running-javascript "Running JavaScript - Console overview | Microsoft Docs"  
 [DevToolsConsoleJavascript]: ./javascript.md "Get started with running JavaScript in the Console | Microsoft Docs"  
