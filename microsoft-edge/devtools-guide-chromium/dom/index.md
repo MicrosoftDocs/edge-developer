@@ -3,7 +3,7 @@ description: How to view nodes, search for nodes, edit nodes, reference nodes in
 title: Get started with viewing and changing the DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -55,7 +55,7 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
            Highlight the `Michelangelo` node  
         :::image-end:::  
         
-        1.  Choose the **Inspect** \(![Inspect][ImageInspectIcon]\) icon in the top-left corner of DevTools.  
+        1.  Choose the **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  
             
             :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="The Inspect icon" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
                The **Inspect** icon  
@@ -279,14 +279,14 @@ Use attribute modification breakpoints when you want to pause the JavaScript tha
            **Break on attribute modifications**  
         :::image-end:::  
         
-    1.  In the next step you are going to be instructed to choose a button that pauses the code of the page.  After the page is paused you are no longer able to scroll the page.  You must choose **Resume Script** \(![Resume Script][ImageResumeScriptIcon]\) in order to make the page scrollable again.
+    1.  In the next step you are going to be instructed to choose a button that pauses the code of the page.  After the page is paused you are no longer able to scroll the page.  You must choose **Resume Script** \(![Resume Script](../media/resume-script-icon.msft.png)\) in order to make the page scrollable again.
         
         :::image type="complex" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="Where to resume script running" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
            Where to resume script running  
         :::image-end:::  
         
     1.  Choose the **Set Background** button above.  This sets the `style` attribute of the node to `background-color:thistle`.  DevTools pauses the page and highlights the code that caused the attribute to change.  
-    1.  Choose **Resume Script** \(![Resume Script][ImageResumeScriptIcon]\), as mentioned earlier.  
+    1.  Choose **Resume Script** \(![Resume Script](../media/resume-script-icon.msft.png)\), as mentioned earlier.  
     
 ### Break on node removal  
 
@@ -296,7 +296,7 @@ If you want to pause when a particular node is removed, use node removal breakpo
 1.  Under **Break on Node Removal**, right-choose **Neuromancer** and choose **Inspect**.  
     1.  In the DOM Tree, hover on `<li id="target">Neuromancer</li>`, open the contextual menu \(right-click\), and choose **Break On** > **Node Removal**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.  
     1.  Choose the **Delete** button above.  DevTools pauses the page and highlights the code that caused the node to be removed.  
-    1.  Choose **Resume Script** \(![Resume Script][ImageResumeScriptIcon]\).  
+    1.  Choose **Resume Script** \(![Resume Script](../media/resume-script-icon.msft.png)\).  
     
 ### Break on subtree modifications  
 
@@ -306,7 +306,7 @@ After you put a subtree modification breakpoint on a node, DevTools pauses the p
 1.  Under **Break on Subtree Modifications**, right-choose **A Fire Upon The Deep** and choose **Inspect**.  
     1.  In the DOM Tree, hover on `<ul id="target">`, which is the node above `<li>A Fire Upon the Deep</li>`, open the contextual menu \(right-click\), and choose **Break On** > **Subtree Modifications**.  If the option is not displayed, navigate to [Appendix: Missing options](#appendix-missing-options).  
     1.  Choose **Add Child**.  The code pauses because a `<li>` node was added to the list.  
-    1.  Choose **Resume Script** \(![Resume Script][ImageResumeScriptIcon]\).  
+    1.  Choose **Resume Script** \(![Resume Script](../media/resume-script-icon.msft.png)\).  
     
 ## Next steps  
 
@@ -410,11 +410,6 @@ Many of the instructions in this tutorial instruct you to hover on a node in the
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageInspectIcon]: ../media/inspect-icon.msft.png  
-[ImageResumeScriptIcon]: ../media/resume-script-icon.msft.png  
 
 <!-- links -->  
 
