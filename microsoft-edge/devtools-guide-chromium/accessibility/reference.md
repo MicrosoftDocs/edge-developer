@@ -3,7 +3,7 @@ description: A comprehensive reference of accessibility features in Microsoft Ed
 title: Accessibility reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -66,7 +66,7 @@ To audit a page:
     :::image-end:::  
     
     > [!NOTE]
-    > The screenshots in this section were taken with Microsoft Edge version 79.  You may check what version you are running at `edge://version`.  The **Audits** tool UI looks different in earlier versions of Microsoft Edge, but the general workflow is the same.  
+    > The screenshots in this section were taken with version 79 of Microsoft Edge.  You may check what version you are running at `edge://version`.  The **Audits** tool UI looks different in earlier versions of Microsoft Edge, but the general workflow is the same.  
     
 1.  For **Device**, choose **Mobile** if you want to simulate a mobile device.  This option changes your user agent string and resizes the viewport.  If the mobile version of the page displays differently than the desktop version, this option may have a significant effect on the results of your audit.  
 1.  In the **Audits** section, make sure that **Accessibility** is enabled.  Disable the other categories if you want to exclude them from your report.  Leave them enabled if you want to discover other ways to improve the quality of your page.  
@@ -108,7 +108,7 @@ To open the **Accessibility** panel:
 
 1.  Choose the **Elements** tool.  
 1.  In the **DOM Tree**, select the element which you want to inspect.  
-1.  Choose the **Accessibility** panel.  This panel may be hidden behind the **More Tabs** \(![More Tabs](../media/more-tabs-icon.msft.png)\) button.  
+1.  Choose the **Accessibility** panel.  This panel may be hidden behind the **More Tabs** \(![More Tabs][ImageMoreTabsIcon]\) button.  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspect the h1 element of the DevTools homepage in the Accessibility panel" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    Inspect the `h1` element of the DevTools homepage in the **Accessibility** panel  
@@ -183,6 +183,10 @@ The Color Picker helps you verify that your text meets recommended contrast rati
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
+<!-- image links -->  
+
+[ImageMoreTabsIcon]: ../media/more-tabs-icon.msft.png  
 
 <!-- links -->  
 

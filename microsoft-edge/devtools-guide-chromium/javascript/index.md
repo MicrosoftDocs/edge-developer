@@ -3,7 +3,7 @@ description: Learn how to use Microsoft Edge DevTools to find and fix JavaScript
 title: Get started with debugging JavaScript in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021 
+ms.date: 02/12/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -93,7 +93,7 @@ In short, breakpoints may help you find and fix bugs faster than the `console.lo
 If you step back and think about how the app works, you may make an educated guess that the incorrect sum \(`5 + 1 = 51`\) is computed in the `click` event listener associated with the **Add Number 1 and Number 2** button.  So, you probably want to pause the code around the time that the `click` listener runs.  **Event Listener Breakpoints** let you do exactly that:  
 
 1.  In the **JavaScript Debugging** pane, choose **Event Listener Breakpoints** to expand the section.  DevTools reveals a list of expandable event categories, such as **Animation** and **Clipboard**.  
-1.  Next to the **Mouse** event category, choose **Expand** \(![Expand icon](../media/expand-icon.msft.png)\).  DevTools reveals a list of mouse events, such as **click** and **mousedown**.  Each event has a checkbox next to it.  
+1.  Next to the **Mouse** event category, choose **Expand** \(![Expand icon][ImageExpandIcon]\).  DevTools reveals a list of mouse events, such as **click** and **mousedown**.  Each event has a checkbox next to it.  
 1.  Choose the checkbox next to **click**.  DevTools is now set up to automatically pause when any `click` event listener runs.  
     
     :::image type="complex" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="Choose the checkbox next to click" lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
@@ -106,7 +106,7 @@ If you step back and think about how the app works, you may make an educated gue
     if (inputsAreEmpty()) {
     ```  
     
-    If you pause on a different line of code, choose **Resume Script Execution** \(![Resume Script Execution](../media/resume-script-run-icon.msft.png)\) until you pause on the correct line.  
+    If you pause on a different line of code, choose **Resume Script Execution** \(![Resume Script Execution][ImageResumeIcon]\) until you pause on the correct line.  
     
     > [!NOTE]
     > If you paused on a different line, you have a browser extension that registers a `click` event listener on every webpage that you visit.  You are paused in the `click` listener of the extension.  If you use InPrivate Mode to **browse in private**, which disables all extensions, you may see that you pause on the desired line of code every time.  
@@ -119,7 +119,7 @@ If you step back and think about how the app works, you may make an educated gue
 
 One common cause of bugs is when a script runs in the wrong order.  Stepping through your code allows you to walk through the runtime of your code.  You walk through one line at a time to help you figure out exactly where your code is running in a different order than you expect.  Try it now:  
 
-1.  Choose **Step over next function call** \(![Step over next function call](../media/step-over-icon.msft.png)\).  DevTools runs the following code without stepping into it.  
+1.  Choose **Step over next function call** \(![Step over next function call][ImageOverIcon]\).  DevTools runs the following code without stepping into it.  
     
     ```javascript
     if (inputsAreEmpty()) {
@@ -128,7 +128,7 @@ One common cause of bugs is when a script runs in the wrong order.  Stepping thr
     > [!NOTE]
     > DevTools skips a few lines of code.  This is because `inputsAreEmpty()` evaluates as false, so the block of code for the `if` statement does not run.  
     
-1.  On the **Sources** tool of DevTools, choose **Step into next function call** \(![Step into next function call](../media/step-into-icon.msft.png)\) to step through the runtime of the `updateLabel()` function, one line at a time.  
+1.  On the **Sources** tool of DevTools, choose **Step into next function call** \(![Step into next function call][ImageIntoIcon]\) to step through the runtime of the `updateLabel()` function, one line at a time.  
     
 Reviewing one line at a time is the basic idea of stepping through code.  If you review the code in `get-started.js`, the bug is probably somewhere in the `updateLabel()` function.  Rather than stepping through every line of code, you may use another type of breakpoint to pause the code closer to the probable location of the bug.  
 
@@ -143,7 +143,7 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
     ```  
     
 1.  On the left, the number of this particular line of code is displayed as **34**.  Choose line **34**.  DevTools displays a red icon to the left of **34**.  The red icon indicates that a line-of-code breakpoint is on this line.  DevTools always pauses before this line of code is run.  
-1.  Choose **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\).  The script continues to run until it reaches line 33.  On lines 31, 32, and 33, DevTools prints the values of `addend1`, `addend2`, and `sum` to the right of the semi-colon on each line.  
+1.  Choose **Resume script execution** \(![Resume script execution][ImageResumeIcon]\).  The script continues to run until it reaches line 33.  On lines 31, 32, and 33, DevTools prints the values of `addend1`, `addend2`, and `sum` to the right of the semi-colon on each line.  
     
     :::image type="complex" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="DevTools pauses on the line-of-code breakpoint on line 34" lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
        DevTools pauses on the line-of-code breakpoint on line 34  
@@ -166,7 +166,7 @@ If you pause on a line of code, the **Scope** panel displays the local and globa
 The **Watch Expressions** panel lets you monitor the values of variables over time.  As the name implies, **Watch Expressions** aren't limited to variables.  You may store any valid JavaScript expression in a **Watch Expression**.  Try it now.  
 
 1.  Choose the **Watch** panel.  
-1.  Choose **Add Expression** \(![Add Expression](../media/add-expression-icon.msft.png)\).  
+1.  Choose **Add Expression** \(![Add Expression][ImageAddIcon]\).  
 1.  Type `typeof sum`.  
 1.  Select `Enter`.  DevTools shows `typeof sum: "string"`.  The value to the right of the colon is the result of your Watch Expression.  
     
@@ -195,10 +195,10 @@ The **Console** allows you to view `console.log()` messages and you may also use
 
 If you find a fix for the bug, try out your fix by editing the code and rerunning the demo.  You may edit JavaScript code directly within the DevTools UI and apply the fix.  Try it now.  
 
-1.  Choose **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\).  
+1.  Choose **Resume script execution** \(![Resume script execution][ImageResumeIcon]\).  
 1.  In the **Code Editor**, replace line 32, `var sum = addend1 + addend2`, with `var sum = parseInt(addend1) + parseInt(addend2)`.  
 1.  Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save your change.  
-1.  Choose **Deactivate breakpoints** \(![Deactivate breakpoints](../media/deactivate-breakpoints-button-icon.msft.png)\).  It changes blue to indicate the option is active.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set.  
+1.  Choose **Deactivate breakpoints** \(![Deactivate breakpoints][ImageDeactivateIcon]\).  It changes blue to indicate the option is active.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set.  
 1.  Try out the demo with different values.  The demo now calculates correctly.  
     
 > [!CAUTION]
@@ -221,6 +221,15 @@ A couple of code stepping controls aren't explained in this article.  For more i
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
+<!-- image links -->  
+
+[ImageAddIcon]: ../media/add-expression-icon.msft.png  
+[ImageDeactivateIcon]: ../media/deactivate-breakpoints-button-icon.msft.png  
+[ImageExpandIcon]: ../media/expand-icon.msft.png  
+[ImageIntoIcon]: ../media/step-into-icon.msft.png  
+[ImageOverIcon]: ../media/step-over-icon.msft.png  
+[ImageResumeIcon]: ../media/resume-script-run-icon.msft.png  
 
 <!-- links -->  
 

@@ -3,7 +3,7 @@ description: Remote debug live content on an Android device from a Windows or ma
 title: Get started with remote debugging Android devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -120,14 +120,14 @@ Choose **focus tab**, **reload**, or **close** next to the tab that you want to 
 
 Navigate to the **Elements** tool of your DevTools instance, and hover on an element to highlight it in the viewport of your Android device.  
 
-You may also select an element on your Android device screen to select it in the **Elements** tool.  Choose **Select Element** \(![Select Element](../media/select-element-icon.msft.png)\) icon on your DevTools instance, and then select the element on your Android device screen.  
+You may also select an element on your Android device screen to select it in the **Elements** tool.  Choose **Select Element** \(![Select Element][ImageSelectElementIcon]\) icon on your DevTools instance, and then select the element on your Android device screen.  
 
 > [!NOTE]
 > **Select Element** is disabled after the first selection, so you must re-enable it every time you want to use the feature.  
 
 ### Screencast your Android screen to your development machine  
 
-Choose **Toggle Screencast** \(![Toggle Screencast](../media/toggle-screencast-icon.msft.png)\) icon to view the content of your Android device in your DevTools instance.  
+Choose **Toggle Screencast** \(![Toggle Screencast][ImageToggleScreencastIcon]\) icon to view the content of your Android device in your DevTools instance.  
 
 You are able to interact with the screencast in the following ways.  
 
@@ -146,6 +146,11 @@ You are able to interact with the screencast in the following ways.
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
+<!-- image links -->  
+
+[ImageSelectElementIcon]: /microsoft-edge/devtools-guide-chromium/media/select-element-icon.msft.png  
+[ImageToggleScreencastIcon]: /microsoft-edge/devtools-guide-chromium/media/toggle-screencast-icon.msft.png  
 
 <!-- links -->  
 

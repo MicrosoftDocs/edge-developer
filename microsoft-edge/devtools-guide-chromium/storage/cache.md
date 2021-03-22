@@ -3,7 +3,7 @@ description: How to view Cache data from the Application panel of Microsoft Edge
 title: View cache data with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -69,7 +69,7 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        Choose a resource to refresh  
     :::image-end:::  
     
-1.  Choose **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\).  
+1.  Choose **Refresh** \(![Refresh][ImageRefreshIcon]\).  
     
 ## Filter resources  
 
@@ -89,7 +89,7 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        Choose a resource to delete  
     :::image-end:::  
     
-1.  Choose **Delete Selected** \(![Delete Selected](../media/delete-icon.msft.png)\).  
+1.  Choose **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
     
 ## Delete all cache data  
 
@@ -109,6 +109,11 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
+<!-- image links -->  
+
+[ImageDeleteIcon]: ../media/delete-icon.msft.png  
+[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
 
 <!-- links -->  
 

@@ -171,7 +171,7 @@ To open the color picker and customize the grid overlay color, choose the box ne
 
 ### Highlight the grid  
 
-To highlight the HTML element in the **Elements** tool and scroll to it on the webpage, choose the **Show element in the Elements panel** \(![Show element in the Elements panel icon](../media/show-element-in-element-panel-icon.msft.png)\) icon.  
+To highlight the HTML element in the **Elements** tool and scroll to it on the webpage, choose the **Show element in the Elements panel** \(![Show element in the Elements panel icon][ImageShowElementInElementsPanelIcon]\) icon.  
 
 :::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Highlight the grid" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
    Highlight the grid  
@@ -180,6 +180,10 @@ To highlight the HTML element in the **Elements** tool and scroll to it on the w
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
+<!-- image links -->  
+
+[ImageShowElementInElementsPanelIcon]: ../media/show-element-in-element-panel-icon.msft.png  
 
 <!-- links -->  
 

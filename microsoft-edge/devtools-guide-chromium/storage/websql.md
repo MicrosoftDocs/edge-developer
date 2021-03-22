@@ -3,7 +3,7 @@ description: How to view Web SQL data from the Application panel of Microsoft Ed
 title: View Web SQL data with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -67,7 +67,7 @@ You are not able to edit Web SQL data when viewing a Web SQL table, such as in p
 DevTools does not update tables in real-time.  To update the data in a table, complete the following actions.  
 
 1.  [View the data in a Web SQL table](#view-web-sql-data).  
-1.  Choose **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\).  
+1.  Choose **Refresh** \(![Refresh][ImageRefreshIcon]\).  
     
 ## Filter out columns in a Web SQL table  
 
@@ -96,6 +96,10 @@ DevTools does not update tables in real-time.  To update the data in a table, co
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
+<!-- image links -->  
+
+[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
 
 <!-- links -->  
 

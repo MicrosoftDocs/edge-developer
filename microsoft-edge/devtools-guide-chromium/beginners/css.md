@@ -3,7 +3,7 @@ description: Get Started with CSS
 title: "DevTools for beginners: Get started with CSS"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web developement, f12 tools, devtools
@@ -331,7 +331,7 @@ Complete the following actions to edit existing declarations in DevTools.
 
 Complete the following actions to add new rulesets in DevTools.  
 
-1.  Choose **New Style Rule** \(![New Style Rule](../media/new-style-rule-icon.msft.png)\) which is next to **.cls**.  An empty ruleset appears with `a` as the selector.  
+1.  Choose **New Style Rule** \(![New Style Rule][ImageNewStyleRuleIcon]\) which is next to **.cls**.  An empty ruleset appears with `a` as the selector.  
     
     :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="Add a new rule" lightbox="../media/beginners-css-rule1.msft.png":::
        Add a new rule  
@@ -599,6 +599,10 @@ Congratulations, you are done.
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
+<!--- image links --->  
+
+[ImageNewStyleRuleIcon]: ../media/new-style-rule-icon.msft.png  
 
 <!--- links  --->  
 

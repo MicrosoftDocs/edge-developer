@@ -23,10 +23,7 @@ The following two scenarios don't require you to publish your extension in the M
 
 ## Updates to extensions
 
-The Microsoft Edge browser automatically checks for new versions of installed Extensions. Updates are installed without user intervention.  
-
-
-<!-- image links -->
+The Microsoft Edge browser periodically checks for new versions of installed extensions and updates each without user intervention.  
 
 <!-- links -->  
 

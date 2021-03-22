@@ -3,7 +3,7 @@ description: Inspect and modify animations with the Microsoft Edge DevTools  Ani
 title: Inspect animations
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -97,7 +97,7 @@ To capture an animation, just perform the interaction that triggers the animatio
 After you capture an animation, there are a few ways to replay it:  
 
 *   Hover on the thumbnail in the **Overview** pane to view a preview of it.  
-*   Choose the Animation Group from the **Overview** pane \(so that it is displayed in the **Details** pane\) and choose the **replay** \(![replay icon](../media/replay-button-icon.msft.png)\) icon.  The animation is replayed in the viewport.  Choose the **animation speed** \(![animation speed icons](../media/animation-speed-buttons-icon.msft.png)\) icons to change the preview speed of the currently selected Animation Group.  You may use the red vertical bar to change your current position.  
+*   Choose the Animation Group from the **Overview** pane \(so that it is displayed in the **Details** pane\) and choose the **replay** \(![replay icon][ImageReplayButtonIcon]\) icon.  The animation is replayed in the viewport.  Choose the **animation speed** \(![animation speed icons][ImageAnimationSpeedButtonsIcon]\) icons to change the preview speed of the currently selected Animation Group.  You may use the red vertical bar to change your current position.  
 *   Choose and drag the red vertical bar to scrub the viewport animation.  
     
 ### View animation details  
@@ -164,8 +164,8 @@ To add a delay to an animation, choose and drag it anywhere except the circles.
 
 <!-- image links -->  
 
-(../media/animation-speed-buttons-icon.msft.png): ../media/animation-speed-buttons-icon.msft.png  
-(../media/replay-button-icon.msft.png): ../media/replay-button-icon.msft.png  
+[ImageAnimationSpeedButtonsIcon]: ../media/animation-speed-buttons-icon.msft.png  
+[ImageReplayButtonIcon]: ../media/replay-button-icon.msft.png  
 
 <!-- links -->  
 

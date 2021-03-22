@@ -3,7 +3,7 @@ description: Snippets are small scripts that you may author and run within the S
 title: Run Snippets Of JavaScript On Any Page With Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 12/11/2020 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -73,7 +73,7 @@ The **Snippets** pane lists your Snippets.  When you want to edit a Snippet, you
        The **Sources** tool with the **Page** pane open on the left  
     :::image-end:::  
     
-1.  Choose the **Snippets** tab to open the **Snippets** pane.  You may need to choose **More Tabs** \(![More Tabs](../media/more-tabs-icon.msft.png)\) to access the **Snippets** option.  
+1.  Choose the **Snippets** tab to open the **Snippets** pane.  You may need to choose **More Tabs** \(![More Tabs][ImageMoreTabsIcon]\) to access the **Snippets** option.  
     
 ### Open the Snippets pane with the Command Menu  
 
@@ -131,7 +131,7 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
 
 1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
 1.  Choose the name of the Snippet that you want to run.  The Snippet opens in the **Code Editor**.  
-1.  Choose **Run Snippet** \(![Run Snippet](../media/run-snippet-icon.msft.png)\), or select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\).  
+1.  Choose **Run Snippet** \(![Run Snippet][ImageRunSnippetIcon]\), or select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\).  
     
 ### Run a Snippet with the Command Menu  
 
@@ -158,6 +158,11 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
+<!-- image links -->  
+
+[ImageMoreTabsIcon]: ../media/more-tabs-icon.msft.png  
+[ImageRunSnippetIcon]: ../media/run-snippet-icon.msft.png  
 
 <!-- links -->  
 

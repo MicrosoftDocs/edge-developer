@@ -3,7 +3,7 @@ description: How to move Microsoft Edge DevTools to the bottom or left of your v
 title: Change Microsoft Edge DevTools placement (Undock, Dock To Bottom, Dock To Left)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -53,7 +53,7 @@ By default DevTools is docked to the right of your viewport.  You may also dock 
 
 ## Change placement from the main menu  
 
-1.  Choose **Customize And Control DevTools** \(`...`\) and choose **Undock Into Separate Window** \(![Undock](../media/undock-icon.msft.png)\), **Dock To Bottom** \(![Dock To Bottom](../media/bottom-icon.msft.png)\), or **Dock To Left** \(![Dock To Left](../media/left-icon.msft.png)\).  
+1.  Choose **Customize And Control DevTools** \(`...`\) and choose **Undock Into Separate Window** \(![Undock][ImageUndockIcon]\), **Dock To Bottom** \(![Dock To Bottom][ImageBottomIcon]\), or **Dock To Left** \(![Dock To Left][ImageLeftIcon]\).  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Choose Undock Into Separate Window" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
        Choose **Undock Into Separate Window**  
@@ -71,6 +71,12 @@ By default DevTools is docked to the right of your viewport.  You may also dock 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
+<!-- image links -->  
+
+[ImageUndockIcon]: ../media/undock-icon.msft.png  
+[ImageBottomIcon]: ../media/bottom-icon.msft.png  
+[ImageLeftIcon]: ../media/left-icon.msft.png  
 
 <!-- links -->  
 

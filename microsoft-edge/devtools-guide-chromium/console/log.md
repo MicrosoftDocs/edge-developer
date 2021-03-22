@@ -3,7 +3,7 @@ description: Learn how to log messages to the Console.
 title: Get started with logging messages in the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021 
+ms.date: 02/12/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -116,7 +116,7 @@ Most messages that are displayed in the **Console** come from the web developers
     > [!TIP]
     > If you want to display the code that caused a message to get logged a certain way, choose on a script \(such as `log.js:12`\) to view the code that caused the message to get formatted.  
 
-1.  Choose the **Expand** \(![Expand](../media/expand-icon.msft.png)\) icon in front of `Abandon Hope All Ye Who Enter`.  DevTools
+1.  Choose the **Expand** \(![Expand][ImageExpandIcon]\) icon in front of `Abandon Hope All Ye Who Enter`.  DevTools
    shows the [stack trace][WikiStackTrace] leading up to the call.  
     
     :::image type="complex" source="../media/console-log-warning-expanded.msft.png" alt-text="A stack trace" lightbox="../media/console-log-warning-expanded.msft.png":::
@@ -231,13 +231,13 @@ When you want to show all messages that include a pattern of text, rather than a
 
 When you want to only view the messages that came from a certain URL, use the **Sidebar**.  
 
-1.  Choose **Show Console Sidebar** \(![Show Console Sidebar](../media/show-console-sidebar-icon.msft.png)\).  
+1.  Choose **Show Console Sidebar** \(![Show Console Sidebar][ImageShowConsoleSidebarIcon]\).  
     
     :::image type="complex" source="../media/console-sidebar-all-messages.msft.png" alt-text="The Sidebar" lightbox="../media/console-sidebar-all-messages.msft.png":::
        The Sidebar  
     :::image-end:::  
     
-1.  Choose the **Expand** \(![Expand](../media/expand-icon.msft.png)\) icon next to the number of messages.  In the following figure, the number of messages is indicated as **13 Messages**.  The **Sidebar** shows a list of URLs that caused messages to be logged.  For example, `log.js` caused 11 messages.  
+1.  Choose the **Expand** \(![Expand][ImageExpandIcon]\) icon next to the number of messages.  In the following figure, the number of messages is indicated as **13 Messages**.  The **Sidebar** shows a list of URLs that caused messages to be logged.  For example, `log.js` caused 11 messages.  
     
     :::image type="complex" source="../media/console-sidebar-expanded-all-messages.msft.png" alt-text="Viewing the source of messages in the Sidebar" lightbox="../media/console-sidebar-expanded-all-messages.msft.png":::
        Viewing the source of messages in the Sidebar  
@@ -275,6 +275,11 @@ If you are editing styles, but you need to quickly check the Console log for som
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
+<!-- image links -->  
+
+[ImageExpandIcon]: ../media/expand-icon.msft.png  
+[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
 
 <!-- links -->  
 

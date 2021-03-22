@@ -3,7 +3,7 @@ description: How to view and edit sessionStorage with the Session Storage pane a
 title: View and edit Session Storage with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -74,12 +74,12 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
 1.  Choose the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.  
-1.  Select the `Delete` key or choose **Delete Selected** \(![Delete Selected](../media/delete-icon.msft.png)\).  
+1.  Select the `Delete` key or choose **Delete Selected** \(![Delete Selected][ImageDeleteIcon]\).  
     
 ## Delete all sessionStorage key-value pairs for a domain  
 
 1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
-1.  Choose **Clear All** \(![Clear All](../media/clear-icon.msft.png)\).  
+1.  Choose **Clear All** \(![Clear All][ImageClearIcon]\).  
     
 ## Interact with sessionStorage from the Console  
 
@@ -100,6 +100,11 @@ Since you may run JavaScript in the **Console**, and since the **Console** has a
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
+<!-- image links -->  
+
+[ImageClearIcon]: ../media/clear-icon.msft.png  
+[ImageDeleteIcon]: ../media/delete-icon.msft.png  
 
 <!-- links -->  
 

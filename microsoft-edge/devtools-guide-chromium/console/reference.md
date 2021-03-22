@@ -3,7 +3,7 @@ description: A comprehensive reference on every feature and behavior related to 
 title: Console reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -68,7 +68,7 @@ To open the **Console** tool from the [Command Menu][DevToolsCommandMenu], start
 
 ### Open Console Settings  
 
-Choose **Console Settings** \(![Console Settings icon](../media/settings-button-icon.msft.png)\).  
+Choose **Console Settings** \(![Console Settings icon][ImageSettingsButtonIcon]\).  
 
 :::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Console Settings" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **Console Settings**  
@@ -86,7 +86,7 @@ The links below explain each setting:
     
 ### Open the Console Sidebar  
 
-Choose **Show Console Sidebar** \(![Show Console Sidebar](../media/show-console-sidebar-icon.msft.png)\) to show the Sidebar, which is useful for filtering.  
+Choose **Show Console Sidebar** \(![Show Console Sidebar][ImageShowConsoleSidebarIcon]\) to show the Sidebar, which is useful for filtering.  
 
 :::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Console Sidebar" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
    **Console** Sidebar  
@@ -240,7 +240,7 @@ Suppose you have an ad on your page embedded in an `<iframe>`.  You want to run 
 
 You may use any of the following workflows to clear the Console:  
 
-*   Choose **Clear Console** \(![Clear Console](../media/clear-console-button-icon.msft.png)\).  
+*   Choose **Clear Console** \(![Clear Console][ImageClearConsoleIcon]\).  
 *   Hover on a message, open the contextual menu \(righ-click\), and choose **Clear Console**.  
 *   Enter `clear()` in the **Console** and select `Enter`.  
 *   Run `console.clear()` from the JavaScript for your webpage.  
@@ -249,6 +249,12 @@ You may use any of the following workflows to clear the Console:
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
+<!-- image links -->  
+
+[ImageClearConsoleIcon]: ../media/clear-console-button-icon.msft.png  
+[ImageSettingsButtonIcon]: ../media/settings-button-icon.msft.png  
+[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
 
 <!-- links -->  
 

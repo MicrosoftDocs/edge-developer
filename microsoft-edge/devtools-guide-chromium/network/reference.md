@@ -3,7 +3,7 @@ description: A comprehensive reference of Microsoft Edge DevTools Network panel 
 title: Network Analysis reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -38,12 +38,12 @@ By default, DevTools record all network requests in the **Network** tool, so lon
 
 To stop recording requests, complete the following steps.  
 
-1.  On the **Network** tool, choose **Stop recording network log** \(![Stop recording network log](../media/record-on-icon.msft.png)\).  It turns grey to indicate that DevTools is no longer recording requests.  
+1.  On the **Network** tool, choose **Stop recording network log** \(![Stop recording network log][ImageRecordOnIcon]\).  It turns grey to indicate that DevTools is no longer recording requests.  
 1.  Select `Control`+`E` \(Windows, Linux\) or `Command`+`E` \(macOS\) while the **Network** tool is in focus.  
 
 ### Clear requests  
 
-Choose **Clear** \(![Clear](../media/clear-requests-icon.msft.png)\) on the **Network** tool to clear all requests from the Requests table.  
+Choose **Clear** \(![Clear][ImageClearIcon]\) on the **Network** tool to clear all requests from the Requests table.  
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="The Clear button" lightbox="../media/network-network-clear-button.msft.png":::
    The **Clear** button  
@@ -923,7 +923,7 @@ You may expand or collapse sections of the **Network** tool UI to focus importan
 ### Hide the Filters pane  
 
 By default, DevTools show the **Filters** pane.  
-Choose **Filter** \(![Filter](../media/filter-icon.msft.png)\) to hide it.  
+Choose **Filter** \(![Filter][ImageFilterIcon]\) to hide it.  
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="The Hide Filters button" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    The Hide Filters button  
@@ -954,6 +954,15 @@ By default, DevTools displays the **Overview** pane.  To hide it, turn off the *
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
+<!-- image links -->  
+
+[ImageCaptureScreenshotsIcon]: ../media/capture-screenshots-icon.msft.png  
+[ImageClearIcon]: ../media/clear-requests-icon.msft.png  
+[ImageFilterIcon]: ../media/filter-icon.msft.png  
+[ImageHideIcon]: ../media/hide-overview-icon.msft.png  
+[ImageLargeResourceRowsIcon]: ../media/large-resource-rows-button-icon.msft.png  
+[ImageRecordOnIcon]: ../media/record-on-icon.msft.png  
 
 <!-- links -->  
 
