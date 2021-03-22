@@ -1,6 +1,6 @@
 ---
 description: Discover new debugging workflows in this comprehensive reference of Microsoft Edge DevTools debugging features.
-title: JavaScript debugging reference
+title: Use the debugger
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/08/2021
@@ -22,7 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# JavaScript debugging reference  
+# Use the debugger  
 
 Discover new debugging workflows with the following comprehensive reference of Microsoft Edge DevTools debugging features.  
 
@@ -69,7 +69,7 @@ To set a line-of-code breakpoint in DevTools:
 
 Line-of-code breakpoints may be inefficient to set, especially if you do not know exactly where to look, or if you are working with a large codebase.  You may save time when debugging by knowing how and when to use the other types of breakpoints.  
 
-To learn more about how to set breakpoints, navigate to [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints].  
+To learn more about how to set breakpoints, navigate to [Pause your code with breakpoints][DevToolsJavascriptBreakpoints].  
 
 ## Step through code  
 
@@ -324,9 +324,10 @@ If you find yourself running the same debug code in the Console over and over, c
 
 To learn more, navigate to [Run Snippets of Code From Any Page][DevToolsJavascriptSnippets].  
 
-## Disable JavaScript  
+## Related articles
 
-Navigate to [Disable JavaScript with Microsoft Edge DevTools][DevToolsJavascriptDisable].  
+*   [Disable JavaScript with Microsoft Edge DevTools][DevToolsJavascriptDisable].
+*   [Get Started With Debugging JavaScript In Microsoft Edge DevTools][DevToolsJavascriptGetStarted] - A simple, short tutorial using existing code, with screen captures.
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
