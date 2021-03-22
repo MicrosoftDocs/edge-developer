@@ -3,7 +3,7 @@ description: If you find yourself typing the same JavaScript expressions into th
 title: Watch JavaScript expression values in real-time with Live Expressions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021 
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -73,12 +73,11 @@ Live expressions run exclusively on your computer and you don't need to change a
 <!-- image links -->  
 
 [ImageCreateLiveExpressionIcon]: ../media/create-live-expression-icon.msft.png  
-[DevtoolsLoggingMouseDemo]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html
-[DevtoolsMouseDemo]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html
 
 <!-- links -->  
-
 [DevToolsConsoleReferenceOpenConsole]: ./reference.md#open-the-console "Open the Console - Console Reference | Microsoft Docs"  
+[DevtoolsLoggingMouseDemo]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html
+[DevtoolsMouseDemo]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
