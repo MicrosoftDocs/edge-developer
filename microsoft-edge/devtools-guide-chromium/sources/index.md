@@ -1,5 +1,5 @@
 ---
-description: Display and edit files, create Snippets, debug JavaScript, and set up Workspaces in the Sources tool of Microsoft Edge DevTools.
+description: Use the Sources tool in Microsoft Edge DevTools to view the JavaScript files that are returned from the server, experimentally edit the JavaScript files, and use the JavaScript debugger on them.  Also supports Workspaces, to edit local JavaScript files.
 title: Sources tool overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -26,7 +26,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 <!-- todo: 
-Link to the edge extension for VS/VSCode.
 copy UI overview aspects from Debugger tutorial into Debugger section here.
 State: 
 In some projects, the JavaScript code that's returned by the server is the same as your local JavaScript source code that you maintain.  
@@ -39,8 +38,8 @@ It's good to use this JS viewer just to read, or to insert console.log, or to do
 
 Use the **Sources** tool to view, modify, and debug JavaScript that's returned by the server.
 
-*   **Navigate:** Display the file system that's returned from the server to construct the current webpage.  View JavaScript and other files that are returned from the server.
-*   **View and edit:** Make experimental edits to the JavaScript code that is returned from the server.  These changes are preserved (in the DevTools sandbox) until page refresh.
+*   **Navigate:** Display the file system that's returned from the server to construct the current webpage.
+*   **View and edit:** View JavaScript and other files that are returned from the server.  Make experimental edits to the JavaScript code.  These changes are preserved (in the DevTools sandbox) until page refresh.
 *   **Debug:** Use the Debugger to step through the JavaScript code that is returned from the server, and to step through experimental changes to the code.
 
 :::image type="complex" source="../media/debugging.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging.msft.png":::
@@ -79,8 +78,6 @@ To maximize the Sources tool window:
 1. In the **Dock side** section, select **Undock into separate window**.
 1. Optionally, move the DevTools window to a separate monitor.
 
-The File Explorer pane will be on the left side of the window, and the Debugger pane will be on the right side of the window.
-
 ## Navigate files returned by the server  
 
 To list and navigate among all of the resources that the page has loaded, use the **Page** tab in the **File Explorer** pane (on the left).
@@ -108,7 +105,11 @@ Use the **Editor** pane to view or edit the JavaScript that's returned from the 
    Editing JavaScript in the **Editor** pane  
 :::image-end:::
 
-To use pretty-print to reformat a file to make it readable, click the braces button (**{}**) at the bottom of the Editor pane.  For more information, navigate to [Make a minified file readable](../javascript/reference.md#make-a-minified-file-readable).
+### Pretty-print to reformat a file
+
+To use pretty-print to reformat a file to make it readable, click the braces button (**{}**) at the bottom of the Editor pane.  For more information, navigate to [Make a minified file readable](../javascript/reference.md#reformat-a-file-with-pretty-print).
+
+### Apply or save changes
 
 For JavaScript changes to take effect, select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\).  DevTools does not re-run a script, so the only JavaScript changes that take effect are those that you make inside of functions.  For example, in the following figure, notice how `console.log('A')` does not run, whereas `console.log('B')` does.  If DevTools re-runs the entire script after making the change, <!-- why/when would DevTools re-run the entire script?  above says "DevTools does not re-run a script" --> then the text `A` is logged to the **Console**.  
 
@@ -139,26 +140,25 @@ The Debugger, together with the Editor, supports the following actions:
 *   Ignore a script or pattern of scripts.
 *   Run snippets of debug code from any page.
 
-Related articles:
+### Related extensions for Visual Studio Code
 
-*   [JavaScript debugging reference](../javascript/reference.md) - Examples and screen captures showing these Debugger features.
-*   [Get Started With Debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] - A short tutorial with screen captures, using an existing, simple project.
+*   Debugger for Microsoft Edge
+*   Microsoft Edge Tools for VS Code
 
-### Related Extensions for Visual Studio Code or for Visual Studio
+For more information, see the [Extensions](../../microsoft-edge/visual-studio-code/index.md#extensions) section in the article "Visual Studio Code overview".
 
 <!-- 
+Debugger for Microsoft Edge:
+Is this extension an alternative to the DevTools Source tool?
+What are pros/cons of the "Debugger for Microsoft Edge" vs DevTools Sources tool's debugger?  The app environment: DevTools window connected to browser, vs VS Code.
+Does this extension run against the JS returned from the server, or the source JS?
+-->
+
+<!-- 
+Microsoft Edge Tools for VS Code:
 Is this extension an alternative to the DevTools Source tool?
 Does this extension run against the JS returned from the server, or the source JS?
 -->
-Name of extension: "Microsoft Edge Tools for VS Code".
-https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools
-
-<!-- 
-Is this extension an alternative to the DevTools Source tool?
-Does this extension run against the JS returned from the server, or the source JS?
--->
-Name of extension: "Debugger for Microsoft Edge".
-https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge
 
 ## Additional functionality
 
@@ -228,6 +228,15 @@ In the Sources tool, if you edit a CSS file by adding the style rule below:
 :::image-end:::  
 
 CSS changes take effect immediately; no saving is needed.
+
+## Related articles
+
+<!-- the present article: *   [Sources tool overview] -->
+*   [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] - A short tutorial with screen captures, using an existing, simple project.
+*   [Use the debugger](../javascript/reference.md) - Examples and screen captures showing the Debugger features.
+<!-- was: JavaScript debugging reference -->
+*   [Pause your code with breakpoints](../javascript/breakpoints.md) - How to set basic and advanced breakpoints in the debugger.
+<!-- top-of-page title: How to pause your code with breakpoints in Microsoft Edge DevTools -->
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
