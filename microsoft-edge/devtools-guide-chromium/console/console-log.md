@@ -3,7 +3,7 @@ description: The main uses of the Microsoft Edge DevTools Console are logging me
 title: Logging messages in the Console tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/19/2021
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
