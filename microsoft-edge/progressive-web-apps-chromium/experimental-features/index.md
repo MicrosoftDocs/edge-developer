@@ -120,7 +120,7 @@ You will need to update your manifest to support whatever protocol you'd like to
 
 Developers can create a more engaging experience if Progressive Web Apps \(PWAs\) are able to register as handlers for https uniform resource identifiers (URLs). This means that PWAs can request to be launched when associated URLs are activated. For example, a user may choose on a link to a news story from an e-mail. An associated PWA for viewing news stories would automatically be launched to handle the activation of the link.
 
-This feature allows you to register a PWA with the host operating system via the web app manifest, declaring that it can handle specific links. To do this, you must add to the manifest file the optional `url_handlers` member. This member is an `object[]` that groups the origins of URLs that the app wishes to handle.
+This feature allows you to register a PWA with the browser via the web app manifest, declaring that it can handle specific links. To do this, you must add to the manifest file the optional `url_handlers` member. This member is an `object[]` that groups the origins of URLs that the app wishes to handle.
 
 ### Example Manifest
 
@@ -140,13 +140,13 @@ Example web app manifest with `url_handlers` member:
     "capture_links": "existing_client_event",
     "url_handlers" : [
         {
-            "origin": "contoso.com"
+            "origin": "https://contoso.com"
         },
         {
-            "origin": "conto.so"
+            "origin": "https://conto.so"
         },
         {
-            "origin": "*.contoso.com"
+            "origin": "https://*.contoso.com"
         }
     ]
 }
@@ -162,7 +162,11 @@ The wildcard character `*` can be used to match one or more characters.
 
 A wildcard prefix can be used in `url_handlers` origin strings to match for different subdomains. The prefix must be `*`. for this usage. The scheme is still assumed to be https when using a wildcard prefix.
 
-For eg. `*.contoso.com` matches `tenant.contoso.com` and `www.tenant.contoso.com` but not `contoso.com` . 
+For eg. `*.contoso.com` matches `tenant.contoso.com` and `www.tenant.contoso.com` but not `contoso.com`.
+
+For detailed instructions on testing URL handler refer to the [explainer](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md).
+
+
 
 <!--Available in Microsoft Edge version 85 and later.  -->  
 
