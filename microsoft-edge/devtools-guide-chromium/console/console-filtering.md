@@ -30,7 +30,7 @@ In the following example you can see that by filtering the different types of lo
 
 For example, in the following screenshot you can see that there are dozens of messages as there is no filter applied.
 
-:::image type="complex" source="../media/console-filtering-show-all.msft.png" alt-text="" lightbox="../media/console-filtering-show-all.msft.png":::
+:::image type="complex" source="../media/console-filtering-show-all.msft.png" alt-text="No filter set means you can see a lot of console messages" lightbox="../media/console-filtering-show-all.msft.png":::
     No filter set means you can see a lot of console messages     
 :::image-end:::  
 
