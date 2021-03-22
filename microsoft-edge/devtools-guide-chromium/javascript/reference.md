@@ -26,17 +26,54 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Discover new debugging workflows with the following comprehensive reference of Microsoft Edge DevTools debugging features.  
 
-To learn the basics of debugging, navigate to [Get Started With Debugging JavaScript In Microsoft Edge DevTools][DevToolsJavascriptGetStarted].  
+To learn the basics of debugging, navigate to [Get Started With Debugging JavaScript In Microsoft Edge DevTools][DevToolsJavascriptGetStarted], which presents simple, existing tutorial code, with screen captures.
 
-## Pause code with breakpoints  
+## View and edit JavaScript code
 
-Set a breakpoint so that you are able to pause your code in the middle of the runtime.  
+When fixing a bug, you often want to test out some changes to your JavaScript code.  You do not need to make the changes in an external editor or IDE and then refresh the page.  You may edit your script in DevTools.  
 
-To learn how to set breakpoints, navigate to [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints].  
+Complete the following actions to edit a script.  
+
+1.  Open the file in the **Editor** pane of the **Sources** tool.  
+1.  Make your changes in the **Editor** pane.  
+1.  Select `Ctrl`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save.  DevTools patches the entire JS file into the JavaScript engine of Microsoft Edge.  
+    
+    :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="The Editor pane" lightbox="../media/javascript-sources-html-minified.msft.png":::
+       The **Editor** pane  
+    :::image-end:::  
+     
+### Reformat a file with pretty-print
+
+To make a minified file human-readable, choose the **Format** \(![Format](../media/format-icon.msft.png)\) button.
+
+:::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="The Format button" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
+   The **Format** button  
+:::image-end:::  
+
+## Set a breakpoint, to pause code
+
+Set a breakpoint, to pause your code in the middle of the runtime.  The most basic and well-known type of breakpoint is "line-of-code".
+
+Use a line-of-code breakpoint when you know the exact region of code that you need to investigate.  DevTools always pauses at this line of code, before running it.
+
+To set a line-of-code breakpoint in DevTools:  
+
+1.  Choose the **Sources** tool.  
+1.  Open the file containing the line of code on which you want to break.  
+1.  Go the line of code.  
+1.  To the left of the line of code is the line number column.  Choose it.  A red icon appears next to the line number column.  
+    
+    :::image type="complex" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="A line-of-code breakpoint" lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
+       A line-of-code breakpoint  
+    :::image-end:::  
+
+Line-of-code breakpoints may be inefficient to set, especially if you do not know exactly where to look, or if you are working with a large codebase.  You may save time when debugging by knowing how and when to use the other types of breakpoints.  
+
+To learn more about how to set breakpoints, navigate to [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints].  
 
 ## Step through code  
 
-Once your code is paused, step through it, one line at a time, investigating control flow and property values along the way.  
+Once your code is paused at a breakpoint, step through the code, one line at a time, investigating control flow and property values along the way.  
 
 ### Step over line of code  
 
@@ -168,9 +205,9 @@ When working with web workers or service workers, choose on a context listed in 
    The **Threads** pane  
 :::image-end:::  
 
-For example, suppose that you are paused on a breakpoint in both your main script and your service worker script.  You want to view the local and global properties for the service worker context, but the **Sources** panel is showing the main script context.  By choosing on the service worker entry in the **Threads** pane, you should be able to switch to that context.  
+For example, suppose that you are paused on a breakpoint in both your main script and your service worker script.  You want to view the local and global properties for the service worker context, but the **Sources** tool is showing the main script context.  By choosing on the service worker entry in the **Threads** pane, you should be able to switch to that context.  
 
-## View and edit local, closure, and global properties  
+## View and edit properties and variables
 
 While paused on a line of code, use the **Scope** pane to view and edit the values of properties and variables in the local, closure, and global scopes.  
 
@@ -181,7 +218,19 @@ While paused on a line of code, use the **Scope** pane to view and edit the valu
    The **Scope** pane  
 :::image-end:::  
 
-## View the current call stack  
+## Watch the values of JavaScript expressions  
+
+Use the **Watch** pane to watch the values of custom expressions.  You may watch any valid JavaScript expression.  
+
+:::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="The Watch pane" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
+   The **Watch** pane  
+:::image-end:::  
+
+*   Choose the **Add Expression** \(![Add Expression](../media/add-expression-icon.msft.png)\) button to create a new watch expression.  
+*   Choose the **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\) button to refresh the values of all existing expressions.  Values automatically refresh while stepping through code.  
+*   Hover on an expression and choose the **Delete Expression** \(![Delete Expression](../media/delete-expression-icon.msft.png)\) button to delete it.  
+
+## View the call stack  
 
 While paused on a line of code, use the **Call Stack** pane to view the call stack that got you to this point.  
 
@@ -275,40 +324,6 @@ If you find yourself running the same debug code in the Console over and over, c
 
 To learn more, navigate to [Run Snippets of Code From Any Page][DevToolsJavascriptSnippets].  
 
-## Watch the values of custom JavaScript expressions  
-
-Use the **Watch** pane to watch the values of custom expressions.  You may watch any valid JavaScript expression.  
-
-:::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="The Watch pane" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
-   The **Watch** pane  
-:::image-end:::  
-
-*   Choose the **Add Expression** \(![Add Expression](../media/add-expression-icon.msft.png)\) button to create a new watch expression.  
-*   Choose the **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\) button to refresh the values of all existing expressions.  Values automatically refresh while stepping through code.  
-*   Hover on an expression and choose the **Delete Expression** \(![Delete Expression](../media/delete-expression-icon.msft.png)\) button to delete it.  
-
-## Make a minified file readable  
-
-Choose the **Format** \(![Format](../media/format-icon.msft.png)\) button to make a minified file human-readable.  
-
-:::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="The Format button" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
-   The **Format** button  
-:::image-end:::  
-
-## Edit a script  
-
-When fixing a bug, you often want to test out some changes to your JavaScript code.  You do not need to make the changes in an external editor or IDE and then refresh the page.  You may edit your script in DevTools.  
-
-Complete the following actions to edit a script.  
-
-1.  Open the file in the **Editor** pane of the **Sources** panel.  
-1.  Make your changes in the **Editor** pane.  
-1.  Select `Ctrl`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save.  DevTools patches the entire JS file into the JavaScript engine of Microsoft Edge.  
-    
-    :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="The Editor pane" lightbox="../media/javascript-sources-html-minified.msft.png":::
-       The **Editor** pane  
-    :::image-end:::  
-     
 ## Disable JavaScript  
 
 Navigate to [Disable JavaScript with Microsoft Edge DevTools][DevToolsJavascriptDisable].  
