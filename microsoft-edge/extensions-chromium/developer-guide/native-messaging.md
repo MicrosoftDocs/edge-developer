@@ -168,7 +168,28 @@ To add a registry key to the directory with the manifest key.
         
     1.  Run the `.reg` file.  
     
-Microsoft Edge queries the `HKEY_CURRENT_USER` root key followed by `HKEY_LOCAL_MACHINE`.  In both of the keys, the 32-bit registry is searched first, and then the 64-bit registry is searched to identify native messaging hosts.  The registry key specifies the location of the native messaging host manifest.  If Microsoft Edge finds the registry key at any of the previously listed locations, it doesn't query the locations that are listed in this paragraph.  If you run the above `.reg` file as part of a batch script, ensure you run it using an administrator command prompt.  
+Microsoft Edge queries the HKEY_CURRENT_USER root key followed by HKEY_LOCAL_MACHINE. In both of the keys, the 32-bit registry is searched first, and then the 64-bit registry is searched to identify native messaging hosts. The registry key specifies the location of the native messaging host manifest. If the registry entries for Microsoft Edge do not have the location of the host manifest, the Chromium and Chrome registry locations are used as fallback options. If Microsoft Edge finds the registry key at any of the previously listed locations, it doesn't query the locations that are listed in this paragraph. If you run the above .reg file as part of a batch script, ensure you run it using an administrator command prompt.
+
+
+Order of searching the registry locations:
+
+
+HKEY_CURRENT_USER\SOFTWARE\WOW6432Node\Microsoft\Edge\NativeMessagingHosts\
+HKEY_CURRENT_USER\SOFTWARE\WOW6432Node\Chromium\NativeMessagingHosts\
+HKEY_CURRENT_USER\SOFTWARE\WOW6432Node\Google\Chrome\NativeMessagingHosts\
+HKEY_CURRENT_USER\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\
+HKEY_CURRENT_USER\SOFTWARE\Chromium\NativeMessagingHosts\
+HKEY_CURRENT_USER\SOFTWARE\Google\Chrome\NativeMessagingHosts\
+
+HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Edge\NativeMessagingHosts\
+HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Chromium\NativeMessagingHosts\
+HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Google\Chrome\NativeMessagingHosts\
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge\NativeMessagingHosts\
+HKEY_LOCAL_MACHINE\SOFTWARE\Chromium\NativeMessagingHosts\
+HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\
+ 
+> [!NOTE] 
+> If you have extensions on the Microsoft Edge Addons Store as well as the Chrome Webstore, you should add the extension ids corresponding to both the extensions in the allowed_origins of the host manifest file because only the host manifest corresponding to the first registry location found will be read.
 
 ### [macOS](#tab/macos/)  
 
