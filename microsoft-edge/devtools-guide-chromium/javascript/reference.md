@@ -1,6 +1,6 @@
 ---
 description: Discover new debugging workflows in this comprehensive reference of Microsoft Edge DevTools debugging features.
-title: Use the debugger
+title: Use the debugger features
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/08/2021
@@ -22,7 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Use the debugger  
+# Use the debugger features
 
 Discover new debugging workflows with the following comprehensive reference of Microsoft Edge DevTools debugging features.  
 
