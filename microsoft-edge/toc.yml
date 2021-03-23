@@ -119,9 +119,9 @@
                   href: devtools-guide-chromium/device-mode/orientation.md
             - name: IE mode
               href: devtools-guide-chromium/ie-mode/index.md
-            - name: Javascript troubleshooting
+            - name: JavaScript troubleshooting
               items:
-                - name: Use the debugger
+                - name: Use the debugger features
                   href: devtools-guide-chromium/javascript/reference.md
                 - name: Pause your code with breakpoints
                   href: devtools-guide-chromium/javascript/breakpoints.md
