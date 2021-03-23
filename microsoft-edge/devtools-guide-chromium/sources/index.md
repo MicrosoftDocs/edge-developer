@@ -24,7 +24,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Sources tool overview  
 
-
 <!-- todo: 
 copy UI overview aspects from Debugger tutorial into Debugger section here.
 State: 
@@ -48,21 +47,28 @@ Use the **Sources** tool to view, modify, and debug JavaScript that's returned b
 
 This JavaScript code from the server may be different than the source files you work with, if those files go through transformations.  The **Sources** tool shows the final JavaScript code that's presented to the browser.
 
-The **Sources** tool is sometimes called the *Sources panel*.
-
 Additional functionality:
 *   View local files (in addition to files returned from the server), and edit and save changes to local files, by using a Workspace (the **Filesystem** tab) or **Overrides**.  Such changes to code are preserved across page refreshes.
 
 ## Layout of the Sources tool
 
 The **Sources** tool has three panes:
-*   Upper left (or left): the **File Explorer** pane.  Also called the **File Navigator** pane.
-*   Upper right (or middle): the **Editor** pane.  Also called the **Code Editor** or **Text Editor** pane.
-*   Bottom (or right): the **Debugger** pane.  Also called the **JavaScript Debugger** pane.  Designed to look and feel like the debugger in Visual Studio Code and in Visual Studio.
+*   Upper left (or left): the **Explorer** pane.
+*   Upper right (or middle): the **Editor** pane.
+*   Bottom (or right): the **Debugger** pane.
+
+<!-- Also called the **File Explorer** pane, **Navigation** pane, or **File Navigator** pane. -->
+<!-- Also called the **Code Editor** or **Text Editor** pane. -->
+<!-- Also called the **JavaScript Debugger** pane. -->
 
 :::image type="complex" source="../media/debugging.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging.msft.png":::
    Navigate, edit, and debug JavaScript returned by the server 
 :::image-end:::  
+
+<!-- todo: to the above, add the red outlines to the 2nd image so that readers quickly identify the 3 main sections. comparable to the below: -->
+<!-- :::image type="complex" source="../media/javascript-sources-sections-annotated.msft.png" alt-text="The 3 parts of the Sources tool UI" lightbox="../media/javascript-sources-sections-annotated.msft.png":::
+   The 3 parts of the **Sources** tool UI  
+:::image-end:::   -->
 
 ### Maximizing the Sources tool window
 
@@ -80,7 +86,7 @@ To maximize the Sources tool window:
 
 ## Navigate files returned by the server  
 
-To list and navigate among all of the resources that the page has loaded, use the **Page** tab in the **File Explorer** pane (on the left).
+To list and navigate among all of the resources that the page has loaded, use the **Page** tab in the **Explorer** pane (on the left).
 
 :::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="The Page pane" lightbox="../media/sources-page-pane.msft.png":::
    The **Page** tab
@@ -96,6 +102,8 @@ To display a file in the **Editor** pane, choose a file in the **Page** tab.  Yo
 :::image type="complex" source="../media/sources-editor-pane.msft.png" alt-text="Display the contents of a4d10f71.index-docs.js in the Editor pane" lightbox="../media/sources-editor-pane.msft.png":::
    Display the contents of `a4d10f71.index-docs.js` in the **Editor** pane  
 :::image-end:::  
+
+The **Page** tab is the main tab in the **Explorer** pane.  For other tabs, such as **Filesystem**, **Overrides**, **Content scripts**, or **Snippets**, see [Tabs in the Explorer pane](#tabs-in-the-explorer-pane).
 
 ## View and edit JavaScript files
 
@@ -119,11 +127,20 @@ By default, your edits are discarded when you refresh the page.  To learn how to
 
 To go to a line number or symbol in the file: 
 
-In the File Explorer pane, click the ellipses (...) (**More options**), select **Open File** (**Ctrl+P**), then type ? to view options, or \: to **Go to line**, or \@ to **Go to symbol**.
+In the **Explorer** pane, click the ellipses (...) (**More options**), select **Open File** (**Ctrl+P**), then type any of the following characters:
+
+*   `?` to view options.
+*   \: to **Go to line**.
+*   \@ to **Go to symbol**.
 
 ## Debug JavaScript  
 
-To infer where your JavaScript is going wrong, you can use the simple approach of inserting `console.log()` statements in the Editor pane.  Another approach, that's more powerful and also can be simple, is to use the debugger of Microsoft Edge DevTools: set a breakpoint (an intentional stopping place in the code), and then step through the code, starting at that breakpoint.  As you step through the code, you may display and change the values of all currently-defined properties and variables, run JavaScript in the **Console**, and more.
+The JavaScript Debugger in DevTools, in the **Debugger** pane, is designed to look and feel like the debugger in Visual Studio Code and in Visual Studio.
+
+To infer where your JavaScript is going wrong, you can use the simple approach of inserting `console.log()` statements in the **Editor** pane.  Another approach, that's more powerful (yet can also be simple), is to use the debugger of Microsoft Edge DevTools:
+
+1. Set a breakpoint (an intentional stopping place in the code), run the code at full speed up to the line of code on which the breakpoint is set, and then step through the lines of code, starting at that breakpoint.
+1. As you step through the code, you may display and change the values of all currently-defined properties and variables, issue JavaScript statements in the **Console**, and more.
 
 :::image type="complex" source="../media/debugging.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging.msft.png":::
    Debug JavaScript  
@@ -139,6 +156,12 @@ The Debugger, together with the Editor, supports the following actions:
 *   View the call stack.
 *   Ignore a script or pattern of scripts.
 *   Run snippets of debug code from any page.
+
+### Related articles
+
+*   [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] - A short tutorial with screen captures, using an existing, simple project.
+*   [Use the debugger](../javascript/reference.md) - Examples and screen captures showing the Debugger features.
+*   [Pause your code with breakpoints](../javascript/breakpoints.md) - How to set basic and advanced breakpoints in the debugger.
 
 ### Related extensions for Visual Studio Code
 
@@ -169,7 +192,6 @@ The main purpose of the Sources tool is to view, edit, and debug JavaScript that
 The **File Explorer** pane has the following tabs:
 *   **Page** tab - Explore the file system that's returned from the server to construct the current webpage, and select JavaScript files to view, edit, and debug.
 *   **Filesystem** tab - When using Workspaces, to save changes to local files.  This enables DevTools to act as an IDE.  [Set up a Workspace](#set-up-a-workspace), so that changes you make in DevTools get saved to the code on your file system.  Alternatively, for persistent editing of local files, use the "Edge DevTools for Visual Studio Code extension".
-
 *   **Overrides** tab - Override page assets (such as images) by files from a local folder.  It's a way of changing what the server sends, after the fact.   On a folder basis.
 *   **Content scripts** tab - Used for extensions.  Content scripts are from extensions; extension authors use them.  Use this to debug the JavaScript that an extension is injecting onto the page.
 *   **Snippets** tab - Create and save JavaScript code snippets, for reuse on any webpage. (todo: on every page, or a specified page only?)
@@ -228,15 +250,6 @@ In the Sources tool, if you edit a CSS file by adding the style rule below:
 :::image-end:::  
 
 CSS changes take effect immediately; no saving is needed.
-
-## Related articles
-
-<!-- the present article: *   [Sources tool overview] -->
-*   [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] - A short tutorial with screen captures, using an existing, simple project.
-*   [Use the debugger](../javascript/reference.md) - Examples and screen captures showing the Debugger features.
-<!-- was: JavaScript debugging reference -->
-*   [Pause your code with breakpoints](../javascript/breakpoints.md) - How to set basic and advanced breakpoints in the debugger.
-<!-- top-of-page title: How to pause your code with breakpoints in Microsoft Edge DevTools -->
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
