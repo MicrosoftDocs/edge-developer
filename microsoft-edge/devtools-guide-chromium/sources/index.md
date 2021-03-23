@@ -66,11 +66,15 @@ Additional functionality:
 The **Sources** tool has three panes:
 *   Left (or upper left): the **Explorer** pane.
 *   Middle (or upper right: the **Editor** pane.
-*   Right (or bottom): the **Debugger** pane.  The Debugger pane is split into two panes when it is shown at the bottom.
+*   Right (or bottom): the **Debugger** pane.
+
+When the **Debugger** pane is shown at the bottom (due to a narrow DevTools window), the Debugger pane is split into two panes, with the **Scope** and **Watch** tabs in the lower-right pane.
+
+<!-- todo: load same project as the above capture, capture when narrow layout, draw boxes -->
 
 ### Maximizing the DevTools window
 
-When the DevTools window is wide within the browser window, or when the DevTools window is undocked into a separate window, the **Debugger** pane is displayed to the right of the **Editor** pane, instead of below it.
+When the DevTools window is wide, the **Debugger** pane is displayed to the right of the **Editor** pane, instead of below it.
 
 To widen the DevTools window:
 
@@ -81,6 +85,8 @@ To maximize the DevTools window:
 1. In the upper right corner of the DevTools window, select the elipses (...) button (for **Customize and control DevTools**).
 1. In the **Dock side** section, select **Undock into separate window**.
 1. Optionally, move the DevTools window to a separate monitor.
+
+<!-- todo: show a big, maximized separate window with lots of small content -->
 
 ## Navigate files returned by the server  
 
@@ -103,7 +109,7 @@ To display a file in the **Editor** pane, choose a file in the **Page** tab.  Yo
 
 The **Page** tab is the main tab in the **Explorer** pane.  For other tabs, such as **Filesystem**, **Overrides**, **Content scripts**, or **Snippets**, see [Tabs in the Explorer pane](#tabs-in-the-explorer-pane).
 
-## View and edit JavaScript files
+## View or edit JavaScript files
 
 Use the **Editor** pane to view or edit the JavaScript that's returned from the server.  If you modify the JavaScript code, DevTools updates the page to run the modified code.  The Sources tool can also be set up to view and edit local JavaScript source files.
 
