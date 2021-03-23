@@ -70,7 +70,9 @@ The **Sources** tool has three panes:
 
 When the **Debugger** pane is shown at the bottom (due to a narrow DevTools window), the Debugger pane is split into two panes, with the **Scope** and **Watch** tabs in the lower-right pane.
 
-<!-- todo: load same project as the above capture, capture when narrow layout, draw boxes -->
+:::image type="complex" source="../media/debugging-panes-narrow.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging-panes-narrow.msft.png":::
+   The three panes of the Sources tool  
+:::image-end:::  
 
 ### Maximizing the DevTools window
 
@@ -85,6 +87,8 @@ To maximize the DevTools window:
 1. In the upper right corner of the DevTools window, select the elipses (...) button (for **Customize and control DevTools**).
 1. In the **Dock side** section, select **Undock into separate window**.
 1. Optionally, move the DevTools window to a separate monitor.
+
+See also [Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left)](../customize/placement.md).
 
 <!-- todo: show a big, maximized separate window with lots of small content -->
 
@@ -137,12 +141,18 @@ In the **Explorer** pane, click the ellipses (...) (**More options**), select **
 
 ## Debug JavaScript  
 
-The JavaScript Debugger in DevTools, in the **Debugger** pane, is designed to look and feel like the debugger in Visual Studio Code and in Visual Studio.
+The JavaScript Debugger in DevTools, in the **Debugger** pane, is designed to look and feel and work like 
+[the debugger in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging) and
+[the debugger in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2019).
 
 To infer where your JavaScript is going wrong, you can use the simple approach of inserting `console.log()` statements in the **Editor** pane.  Another approach, that's more powerful (yet can also be simple), is to use the debugger of Microsoft Edge DevTools:
 
 1. Set a breakpoint (an intentional stopping place in the code), run the code at full speed up to the line of code on which the breakpoint is set, and then step through the lines of code, starting at that breakpoint.
 1. As you step through the code, you may display and change the values of all currently-defined properties and variables, issue JavaScript statements in the **Console**, and more.
+
+Breakpoints are preserved when you refresh the page.
+<!-- how to "run to breakpoint at full speed, per above? What UI action do you do?
+with the https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html you have to set a breakpoint then Refresh (losing any changes)? -->
 
 :::image type="complex" source="../media/debugging.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging.msft.png":::
    Debug JavaScript  
@@ -162,7 +172,7 @@ The Debugger, together with the Editor, supports the following actions:
 ### Related articles
 
 *   [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] - A short tutorial with screen captures, using an existing, simple project.
-*   [Use the debugger](../javascript/reference.md) - Examples and screen captures showing the Debugger features.
+*   [Use the debugger features](../javascript/reference.md) - Examples and screen captures showing the Debugger features.
 *   [Pause your code with breakpoints](../javascript/breakpoints.md) - How to set basic and advanced breakpoints in the debugger.
 
 ### Related extensions for Visual Studio Code
@@ -205,6 +215,8 @@ When you find a fix that works for the JavaScript that is returned by the server
 
 The Sources tool can be used to view, edit, and debug local source files if you set up a Workspace.  Another popular alternative is to use the "Dev Tools for Microsoft Edge" extension for Visual Studio Code.
 
+You can also [Map preprocessed code to source code](../javascript/source-maps.md).
+
 ## Additional functionality
 
 The main purpose of the Sources tool is to view, edit, and debug JavaScript that's returned from the server.  The Sources tool also provides the following capabilities.
@@ -214,7 +226,7 @@ The main purpose of the Sources tool is to view, edit, and debug JavaScript that
 The **Explorer** pane has the following tabs:
 *   **Page** tab - Explore the file system that's returned from the server to construct the current webpage, and select JavaScript files to view, edit, and debug.
 *   **Filesystem** tab - When using Workspaces, to save changes to local files.  This enables DevTools to act as an IDE.  [Set up a Workspace](#set-up-a-workspace), so that changes you make in DevTools get saved to the code on your file system.  Alternatively, for persistent editing of local files, use the "Edge DevTools for Visual Studio Code extension".
-*   **Overrides** tab - Override page assets (such as images) by files from a local folder.  It's a way of changing what the server sends, after the fact.   On a folder basis.
+*   **Overrides** tab - Override page assets (such as images) by files from a local folder.  It's a way of changing what the server sends, after the server returns assets.  This overriding is on a per-folder basis.<!--clarify per-folder overriding-->  [Overrides][DevtoolsJavascriptOverrides]
 *   **Content scripts** tab - Used for extensions.  Content scripts are from extensions; extension authors use them.  Use this to debug the JavaScript that an extension is injecting onto the page.
 *   **Snippets** tab - Create and save JavaScript code snippets, for reuse on any webpage. (todo: on every page, or a specified page only?)
 *   \>> (**More tabs**) - This "double chevron" button displays the above tabs when the display is narrow.
@@ -245,7 +257,7 @@ To run a **Snippet**:
 *   Open the file using the **Snippets** pane, and choose **Run** \(![The Run button](../media/run-snippet-icon.msft.png)\).  
 *   Open the [Command Menu][DevtoolsGuideChromiumCommandMenuIndex], delete the `>` character, type `!`, type the name of your **Snippet**, and then select `Enter`.  
     
-Navigate to [Run Snippets Of Code From Any Page][DevtoolsGuideChromiumJavascriptSnippets] to learn more.
+For more information, navigate to [Run snippets of code from any page][DevtoolsGuideChromiumJavascriptSnippets].
 
 **Snippets** are similar to bookmarklets.
 
@@ -253,7 +265,7 @@ Navigate to [Run Snippets Of Code From Any Page][DevtoolsGuideChromiumJavascript
 
 By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.  **Workspaces** enable you to save the changes that you make in DevTools to your file system.  By using Workspaces, DevTools is able to be used as your code editor.
 
-To get started, navigate to [Edit Files With Workspaces][DevtoolsGuideChromiumWorkspacesIndex].
+To get started, navigate to [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex].
 
 ### Edit CSS
 
@@ -280,6 +292,8 @@ CSS changes take effect immediately; no saving is needed.
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
+
+[DevtoolsJavascriptOverrides]: ../javascript/overrides.md "Overrides | Microsoft Docs"  
 
 [DevtoolsGuideChromiumCommandMenuIndex]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsGuideChromiumJavascriptIndex]: ../javascript/index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
