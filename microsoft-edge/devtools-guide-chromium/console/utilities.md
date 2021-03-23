@@ -242,7 +242,7 @@ debug(method)
 >[!NOTE]
 > The [Chromium issue #1050237][MonorailIssue1050237] is tracking a bug with the `debug()` function.  If you encounter the issue, try [using breakpoints][DevtoolsJavascriptBreakpoints] instead.  
 
-When you request the specified method, the debugger is invoked and breaks inside the method on the **Sources** tool allowing you to step through the code and debug it.  
+When you request the specified method, the debugger is invoked and breaks inside the method on the **Sources** tool, allowing you to step through the code and debug it.  
 
 ```console
 debug("debug");
@@ -254,7 +254,7 @@ debug("debug");
 
 Use `undebug(method)` to stop breaking on the method, or use the UI to disable all breakpoints.  
 
-For more information on breakpoints, navigate to [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints].  
+For more information on breakpoints, navigate to [Pause your code with breakpoints][DevToolsJavascriptBreakpoints].  
 
 ## dir  
 
@@ -609,7 +609,7 @@ values(object);
 
 [DevToolsConsoleApi]: /microsoft-edge/devtools-guide-chromium/console/api "Console API Reference"  
 [DevToolsConsoleApiConsoleDirObject]: /microsoft-edge/devtools-guide-chromium/console/api#dir "dir - Console API Reference"  
-[DevToolsJavascriptBreakpoints]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints "How To Pause Your Code With Breakpoints In Microsoft Edge DevTools"  
+[DevToolsJavascriptBreakpoints]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints "How to pause your code with breakpoints in Microsoft Edge DevTools"  
 [DevToolsRenderingToolsJSRuntime]: /microsoft-edge/devtools-guide-chromium/rendering-tools/js-runtime "Speed Up JavaScript Runtime"  
 
 [MDNConsoleDir]: https://developer.mozilla.org/docs/Web/API/Console/dir "Console.dir() | MDN"  
