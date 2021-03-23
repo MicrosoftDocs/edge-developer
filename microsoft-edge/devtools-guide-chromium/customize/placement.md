@@ -1,6 +1,6 @@
 ---
 description: How to move Microsoft Edge DevTools to the bottom or left of your viewport, or to a separate window.
-title: Change Microsoft Edge DevTools placement (Undock, Dock To Bottom, Dock To Left)
+title: Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/08/2021
@@ -22,9 +22,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Change Microsoft Edge DevTools placement (Undock, Dock To Bottom, Dock To Left)  
+# Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left)  
 
-By default DevTools is docked to the right of your viewport.  You may also dock to bottom, dock to left, or undock the DevTools to a separate window.  
+By default, DevTools is docked to the right of your viewport.  You may also dock to bottom, dock to left, or undock the DevTools to a separate window.  
 
 :::row:::
    :::column span="":::
@@ -62,7 +62,7 @@ By default DevTools is docked to the right of your viewport.  You may also dock 
 ## Change placement from the Command Menu  
 
 1.  [Open the Command Menu][DevtoolsCommandMenu].  
-1.  Run one of the following commands: `Dock To Bottom`, `Undock Into Separate Window`.  Currently there is no command for docking to left, but you may access it from the [main menu](#change-placement-from-the-main-menu).  
+1.  Run one of the following commands: `Dock to bottom`, `Doc to left`, `Doc to right`, `Undock into separate window`, `Restore last dock position`.  You may also access these commands from the [main menu](#change-placement-from-the-main-menu).  
     
     :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="The undock command" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
        The undock command  
