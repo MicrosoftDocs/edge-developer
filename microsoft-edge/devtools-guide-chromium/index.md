@@ -51,12 +51,12 @@ If you want to review logs from your front-end JavaScript code or quickly run so
 
 The Microsoft Edge \(Chromium\) DevTools include the following tools.  
 
-*   An **Elements** tool to edit HTML and CSS, inspect accessibility properties, view event listeners, and set DOM mutation breakpoints  
-*   A **Console** to review and filter log messages, inspect JavaScript objects and DOM nodes, and run JavaScript in the context of the selected window or frame  
-*   A **Sources** tool to open and edit your code, set breakpoints, step through code, and display the state of your webpage
-*   A **Network** tool to monitor and inspect requests and responses from the network and browser cache   
-*   A **Performance** tool to profile the time and system resources required by your site  
-*   A **Memory** tool to measure your use of memory resources and compare heap snapshots at different states of code runtime  
+*   An **Elements** tool to edit HTML and CSS, inspect accessibility properties, view event listeners, and set DOM mutation breakpoints.
+*   A **Console** to review and filter log messages, inspect JavaScript objects and DOM nodes, and run JavaScript in the context of the selected window or frame.
+*   A **Sources** tool to view and edit the JavaScript code returned from the server, set breakpoints, step through code, and display the state of your webpage.  
+*   A **Network** tool to monitor and inspect requests and responses from the network and browser cache.  
+*   A **Performance** tool to profile the time and system resources required by your site.  
+*   A **Memory** tool to measure your use of memory resources and compare heap snapshots at different states of code runtime.  
 *   An **Application** tool to inspect, modify, and debug web app manifests, service workers, and service worker caches.  You may also inspect and manage storage, databases, and caches from the **Application** tool.  
 *   A **Security** tool to debug security issues and ensure that you have properly implemented HTTPS on your webpage.  HTTPS provides critical security and data integrity for both your site and your users that provide personal information on your site.  
 *   An **Audits** tool \(now renamed **Lighthouse**\) to run an audit of your webpage.  The results of the audit help you improve the quality of your site in the following ways.  
