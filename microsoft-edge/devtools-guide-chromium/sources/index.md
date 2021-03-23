@@ -164,7 +164,7 @@ The Debugger, together with the Editor, supports the following actions:
 *   Debugger for Microsoft Edge
 *   Microsoft Edge Tools for VS Code
 
-For more information, see the [Extensions](../../microsoft-edge/visual-studio-code/index.md#extensions) section in the article "Visual Studio Code overview".
+For more information, see the [Extensions](../../visual-studio-code/index.md#extensions) section in the article "Visual Studio Code overview".
 
 <!-- need a Scenarios/Pros/Cons matrix, when to use which approach
 ## Scenarios and recommended approaches
