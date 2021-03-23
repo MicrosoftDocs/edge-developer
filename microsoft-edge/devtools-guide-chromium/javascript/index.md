@@ -113,7 +113,7 @@ If you step back and think about how the app works, you may make an educated gue
 
 <!--todo: add inprivate section when available -->  
 
-**Event Listener Breakpoints** are just one of many types of breakpoints available in DevTools.  Memorize all the different types to help you debug different scenarios as quickly as possible.  <!--See [Pause Your Code With Breakpoints][JSBreakpoints] to learn when and how to use each type.  -->  
+**Event Listener Breakpoints** are just one of many types of breakpoints available in DevTools.  Memorize all the different types to help you debug different scenarios as quickly as possible.  <!--See [Pause your code with breakpoints][JSBreakpoints] to learn when and how to use each type.  -->  
 
 ## Step 4: Step through the code  
 
@@ -202,19 +202,19 @@ If you find a fix for the bug, try out your fix by editing the code and rerunnin
 1.  Try out the demo with different values.  The demo now calculates correctly.  
     
 > [!CAUTION]
-> This workflow only applies a fix to the code that is running in your browser.  It does not fix the code for all users that visit your webpage.  To do that, you need to fix the code that is on your servers.  
+> This workflow applies a fix to a *copy* of the code that's sent from the server.  After you've identified the fix, you need to apply that fix to the code that is on the server, such as by editing your local source code and then re-deploying to the server.
 
 ## Next steps  
 
 Congratulations!  You now know how to make the most of Microsoft Edge DevTools when debugging JavaScript.  The tools and methods you learned in this article may save you countless hours.  
 
-This article only taught you two ways to set breakpoints.  DevTools offers many other ways including the following settings.  
+This article showed two ways to set breakpoints.  DevTools also provides ways to set breakpoints to pause your code when certain conditions are met, such as:
 
 *   Conditional breakpoints that are only triggered when the condition that you provide is true.  
 *   Breakpoints on caught or uncaught exceptions.  
 *   XHR breakpoints that are triggered when the requested URL matches a substring that you provide.  
     
-For more information about when and how to use each type, navigate to [Pause Your Code With Breakpoints][DevtoolsJavscriptBreakpoints].  
+For more information about when and how to use each type, navigate to [Pause your code with breakpoints][DevtoolsJavscriptBreakpoints].  
 
 A couple of code stepping controls aren't explained in this article.  For more information, navigate to [Step over line of code][DevtoolsJavascriptReferenceStepThroughCode].  
 
@@ -225,7 +225,7 @@ A couple of code stepping controls aren't explained in this article.  For more i
 <!-- links -->  
 
 [DevtoolsJavscriptBreakpoints]: ./breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "Step through code - JavaScript debugging reference | Microsoft Docs"
+[DevtoolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "Step through code - Use the debugger | Microsoft Docs"
 
 <!--[inPrivate]: https://support.alphabet.com/alphabet-browser/answer/95464  -->  
 
