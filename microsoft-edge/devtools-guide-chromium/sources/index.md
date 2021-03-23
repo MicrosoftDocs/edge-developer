@@ -26,14 +26,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 <!-- todo: 
 copy UI overview aspects from Debugger tutorial into Debugger section here.
-State: 
-In some projects, the JavaScript code that's returned by the server is the same as your local JavaScript source code that you maintain.  
-In other projects, such as when using React, the JavaScript code that's returned by the server is very different than your local JavaScript source code that you maintain.  In this case, Source tool's JavaScript editor (or code viewer) and debugger provide a helpful alternative view of the code.
-
-console.log is fine to use.  It is supported.
 
 It's good to use this JS viewer just to read, or to insert console.log, or to do full-on setting breakpoints.  You don't have to set breakpoints and use the debugger; the Sources tool is useful in all these cases. 
- -->
+-->
 
 Use the **Sources** tool to view, modify, and debug JavaScript that's returned by the server.
 
@@ -42,8 +37,20 @@ Use the **Sources** tool to view, modify, and debug JavaScript that's returned b
 *   **Debug:** Use the Debugger to step through the JavaScript code that is returned from the server, and to step through experimental changes to the code.
 
 :::image type="complex" source="../media/debugging.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging.msft.png":::
-   Navigate, edit, and debug JavaScript returned by the server 
+   Navigate, view, edit, and debug JavaScript returned by the server 
 :::image-end:::  
+
+## When to use the Sources tool
+
+<!-- todo: maybe merge with the planned "scenarios of when various tools/setups are recommended".  First, cover the baseline scenario (clearly stating that scenario as the baseline), then go over the various setup/approach options. -->
+
+The **Sources** tool is a JavaScript viewer, editor, and debugger.
+
+Use the **Sources** tool to check that your resources are loaded, and to view, edit, and debug JavaScript, especially JavaScript that's returned from the server.  
+
+Use the Sources tool when you want to see the JavaScript code that is returned from the server, rather than the source code, which might be different.
+
+Use the Sources tool, rather than a code editor, for fast iterations when you are prototyping JavaScript code and don't want to go through the build process every time.
 
 This JavaScript code from the server may be different than the source files you work with, if those files go through transformations.  The **Sources** tool shows the final JavaScript code that's presented to the browser.
 
@@ -52,33 +59,24 @@ Additional functionality:
 
 ## Layout of the Sources tool
 
-The **Sources** tool has three panes:
-*   Upper left (or left): the **Explorer** pane.
-*   Upper right (or middle): the **Editor** pane.
-*   Bottom (or right): the **Debugger** pane.
-
-<!-- Also called the **File Explorer** pane, **Navigation** pane, or **File Navigator** pane. -->
-<!-- Also called the **Code Editor** or **Text Editor** pane. -->
-<!-- Also called the **JavaScript Debugger** pane. -->
-
-:::image type="complex" source="../media/debugging.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging.msft.png":::
-   Navigate, edit, and debug JavaScript returned by the server 
+:::image type="complex" source="../media/debugging-panes.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging-panes.msft.png":::
+   The three panes of the Sources tool  
 :::image-end:::  
 
-<!-- todo: to the above, add the red outlines to the 2nd image so that readers quickly identify the 3 main sections. comparable to the below: -->
-<!-- :::image type="complex" source="../media/javascript-sources-sections-annotated.msft.png" alt-text="The 3 parts of the Sources tool UI" lightbox="../media/javascript-sources-sections-annotated.msft.png":::
-   The 3 parts of the **Sources** tool UI  
-:::image-end:::   -->
+The **Sources** tool has three panes:
+*   Left (or upper left): the **Explorer** pane.
+*   Middle (or upper right: the **Editor** pane.
+*   Right (or bottom): the **Debugger** pane.  The Debugger pane is split into two panes when it is shown at the bottom.
 
-### Maximizing the Sources tool window
+### Maximizing the DevTools window
 
 When the DevTools window is wide within the browser window, or when the DevTools window is undocked into a separate window, the **Debugger** pane is displayed to the right of the **Editor** pane, instead of below it.
 
-To widen the Sources tool window:
+To widen the DevTools window:
 
 *   Select the left edge of the DevTools window and move it to the left.
 
-To maximize the Sources tool window:
+To maximize the DevTools window:
 
 1. In the upper right corner of the DevTools window, select the elipses (...) button (for **Customize and control DevTools**).
 1. In the **Dock side** section, select **Undock into separate window**.
@@ -120,8 +118,6 @@ To use pretty-print to reformat a file to make it readable, click the braces but
 ### Apply or save changes
 
 For JavaScript changes to take effect, select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\).  DevTools does not re-run a script, so the only JavaScript changes that take effect are those that you make inside of functions.  For example, in the following figure, notice how `console.log('A')` does not run, whereas `console.log('B')` does.  If DevTools re-runs the entire script after making the change, <!-- why/when would DevTools re-run the entire script?  above says "DevTools does not re-run a script" --> then the text `A` is logged to the **Console**.  
-
-<!-- if I'm using React and I set up a Workspace, does the DevTools Sources tool's debugger work for editing local React source files? -->
 
 By default, your edits are discarded when you refresh the page.  To learn how to save the changes to your file system, navigate to [Set up a Workspace](#set-up-a-workspace).
 
@@ -170,11 +166,15 @@ The Debugger, together with the Editor, supports the following actions:
 
 For more information, see the [Extensions](../../microsoft-edge/visual-studio-code/index.md#extensions) section in the article "Visual Studio Code overview".
 
+<!-- need a Scenarios/Pros/Cons matrix, when to use which approach
+## Scenarios and recommended approaches
+-->
+
 <!-- 
 Debugger for Microsoft Edge:
-Is this extension an alternative to the DevTools Source tool?
+This extension is an alternative to the DevTools Source tool.
 What are pros/cons of the "Debugger for Microsoft Edge" vs DevTools Sources tool's debugger?  The app environment: DevTools window connected to browser, vs VS Code.
-Does this extension run against the JS returned from the server, or the source JS?
+This extension runs against the JavaScript code that's returned from the server, rather than the local, source JavaScript code.
 -->
 
 <!-- 
@@ -183,13 +183,29 @@ Is this extension an alternative to the DevTools Source tool?
 Does this extension run against the JS returned from the server, or the source JS?
 -->
 
+## Scenarios for location of JavaScript code
+
+<!-- if I'm using React and I set up a Workspace, does the DevTools Sources tool's debugger work for editing local React source files? -->
+
+Depending on your project, local, source JavaScript may or may not be the same as the client-side JavaScript that's returned by the server.
+
+In some projects, the JavaScript code that's returned by the server is the same as your local JavaScript source code that you maintain.  
+
+In other projects, such as when using React, the JavaScript code that's returned by the server is very different than your local JavaScript source code that you maintain.  In this case, Source tool's JavaScript editor (or code viewer) and debugger provide a helpful alternative view of the JavaScript code.
+
+If a project uses complex transformations of JavaScript from the source files to the files that are returned by the server, such as with the React framework, the **Sources** tool is useful for inspecting and experimenting with the transformed, client-side (front-end) JavaScript that's returned from the server.  The **Sources** tool is not intended to debug the local source files in that scenario.
+
+When you find a fix that works for the JavaScript that is returned by the server, you then need to apply that fix, or an equivalent of that fix in the code prior to transformation, in your actual source code and then re-deploy to the server.
+
+The Sources tool can be used to view, edit, and debug local source files if you set up a Workspace.  Another popular alternative is to use the "Dev Tools for Microsoft Edge" extension for Visual Studio Code.
+
 ## Additional functionality
 
 The main purpose of the Sources tool is to view, edit, and debug JavaScript that's returned from the server.  The Sources tool also provides the following capabilities.
 
-### Tabs in the File Explorer pane
+### Tabs in the Explorer pane
 
-The **File Explorer** pane has the following tabs:
+The **Explorer** pane has the following tabs:
 *   **Page** tab - Explore the file system that's returned from the server to construct the current webpage, and select JavaScript files to view, edit, and debug.
 *   **Filesystem** tab - When using Workspaces, to save changes to local files.  This enables DevTools to act as an IDE.  [Set up a Workspace](#set-up-a-workspace), so that changes you make in DevTools get saved to the code on your file system.  Alternatively, for persistent editing of local files, use the "Edge DevTools for Visual Studio Code extension".
 *   **Overrides** tab - Override page assets (such as images) by files from a local folder.  It's a way of changing what the server sends, after the fact.   On a folder basis.
@@ -235,7 +251,9 @@ To get started, navigate to [Edit Files With Workspaces][DevtoolsGuideChromiumWo
 
 ### Edit CSS
 
-In the Sources tool, the **Editor** pane supports editing CSS, but usually the Elements tool, instead, is the best way to edit CSS.
+<!-- delete this section? -->
+
+In the Sources tool, the **Editor** pane supports editing CSS, but usually the best way to edit CSS is to [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md) of the **Elements** tool.
 
 In the Sources tool, if you edit a CSS file by adding the style rule below:
 
