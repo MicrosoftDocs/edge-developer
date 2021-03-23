@@ -551,7 +551,7 @@ When you open the **Color Picker**, the **Eyedropper** \(![Eyedropper](../media/
 [DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class "Add a pseudostate to a class - Get Started With Viewing And Changing CSS | Microsoft Docs"  
 [DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "View the CSS for an Element - Get Started With Viewing And Changing CSS | Microsoft Docs"  
 [DevToolsCssPrintPreview]: ../css/print-preview.md "Force Microsoft Edge DevTools Into Print Preview Mode (CSS Print Media Type) | Microsoft Docs"  
-[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#make-a-minified-file-readable "Make a minified file readable - JavaScript Debugging Reference | Microsoft Docs"  
+[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#reformat-a-file-with-pretty-print "Reformat a file with pretty-print - Use the debugger | Microsoft Docs"  
 
 [MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "The color system - Material Design"  
 [MDNBoxModel]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model "The box model | MDN"  
