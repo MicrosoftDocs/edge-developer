@@ -29,7 +29,7 @@ This article teaches you the basic workflow for debugging any JavaScript issue i
 
 Finding a series of actions that consistently reproduce a bug is always the first step to debugging.  
 
-1.  Choose **Open Demo**.  Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and open the demo in a new browser tab.  
+1.  Choose **Open Demo** (below), opening the page into a new tab of the browser.  To open the demo in a new tab, hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and then choose **Open Demo**:
     
     [Open Demo][OpenDebugJSDemo]  
     
@@ -63,9 +63,9 @@ The **Sources** tool UI has three parts.
    The 3 parts of the **Sources** tool UI  
 :::image-end:::  
 
-1.  The **File Navigator** pane \(Section 1 in the previous figure\).  Every file that the webpage requests is listed here.  
-1.  The **Code Editor** pane \(Section 2 in the previous figure\).  After selecting a file in the **File Navigator** pane, the contents of that file are displayed here.  
-1.  The **JavaScript Debugging** pane \(Section 3 in the previous figure\).  Various tools for inspecting the JavaScript for the webpage.  If your DevTools window is wide, this pane is displayed to the right of the **Code Editor** pane.  
+1.  The **Explorer** pane \(Section 1 in the previous figure\).  Every file that the webpage requests is listed here.  
+1.  The **Editor** pane \(Section 2 in the previous figure\).  After selecting a file in the **Explorer** pane, the contents of that file are displayed here.  
+1.  The **Debugger** pane \(Section 3 in the previous figure\).  Various tools for inspecting the JavaScript for the webpage.  If your DevTools window is wide, this pane is displayed to the right of the **Editor** pane.  
     
 ## Step 3: Pause the code with a breakpoint  
 
@@ -92,7 +92,7 @@ In short, breakpoints may help you find and fix bugs faster than the `console.lo
 
 If you step back and think about how the app works, you may make an educated guess that the incorrect sum \(`5 + 1 = 51`\) is computed in the `click` event listener associated with the **Add Number 1 and Number 2** button.  So, you probably want to pause the code around the time that the `click` listener runs.  **Event Listener Breakpoints** let you do exactly that:  
 
-1.  In the **JavaScript Debugging** pane, choose **Event Listener Breakpoints** to expand the section.  DevTools reveals a list of expandable event categories, such as **Animation** and **Clipboard**.  
+1.  In the **Debugger** pane, choose **Event Listener Breakpoints** to expand the section.  DevTools reveals a list of expandable event categories, such as **Animation** and **Clipboard**.  
 1.  Next to the **Mouse** event category, choose **Expand** \(![Expand icon](../media/expand-icon.msft.png)\).  DevTools reveals a list of mouse events, such as **click** and **mousedown**.  Each event has a checkbox next to it.  
 1.  Choose the checkbox next to **click**.  DevTools is now set up to automatically pause when any `click` event listener runs.  
     
