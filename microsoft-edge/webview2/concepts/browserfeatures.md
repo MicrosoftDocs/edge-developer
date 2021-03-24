@@ -32,24 +32,30 @@ Browser features within the context of WebView2 should adheres to the following 
 
 The following list displays the WebView2 features that differ from the new Microsoft Edge browser.  
 
+About this table:
+- Feature: The name of the feature.
+- Default: The default experience on a new WebView2 instance
+- Configurable: If the feature can be toggled on/off via our API surface or command line switch.
+- Details: 
+
 | Feature | Default | Configurable | Details |  
 |:--- |:--- |:--- | :--- | 
-| Autofill for Addresses | Enabled | Yes | This feature is turned on by default, you may turn it on or off. |  
-| Autofill for Passwords | Enabled | Yes | This feature is turned on by default, you may turn it on or off. |  
+| Autofill for Addresses | Enabled | Yes | This feature is turned on by default, you may turn it on or off via WebView2 Autofill API. |  
+| Autofill for Passwords | Enabled | Yes | This feature is turned on by default, you may turn it on or off via WebView2 Autofill API. |  
 | Autofill for Payments | Disabled | No | This feature is turned off. | 
 | Browser Extensions | Disabled | No | This feature is turned off. |   
 | Browser Task Manager | Disabled | No | This feature is turned off. |  
 | Continue-where-I-left-off prompt | Disabled | No | This feature is turned off. |  
-| Downloads | Enabled | Yes | This feature allows you to customize the download UI to manipulate downloads, such as block, redirect, save, pause, and so on.  For more information, navigate to <!--[download api][Webview2ReferenceDownloadApi]-->. |  
+| Downloads | Enabled | Yes | WebView2 provides an api that allows you to customize the download UI to manipulate downloads, such as block, redirect, save, pause, and so on.  For more information, navigate to <!--[download api][Webview2ReferenceDownloadApi]-->. |  
 | Family Safety | Disabled | No | This feature is turned off. |  
-| Hotkeys | Disabled | No | The following shortcuts aren't turned off:  `Ctrl`+`F` and `Ctrl`+`S` |  
-| IE Mode | Disabled | No | IE Mode is disabled. |  
+| Hotkeys | See Details | See Details | The following shortcuts are turned off by default:  `Ctrl`+`F` and `Ctrl`+`S`. The keys that are default disabled are generally keys that either don't make sense for WebView or simply cause problems of some sort or other, and are not toggle-able. Alternatively, ou can listen for a key combination in AcceleratorKeyPressed and create a custom response if needed.|  
+| IE Mode | Disabled | No | This feature is turned off. |  
 | Immersive Reader | Disabled | No | This feature is dependent on the browser UI for control and triggering.  This feature is turned off. |  
-| Intrusive Ads | Disabled | No | The UI for this feature is removed.  This feature is turned on. |  
-| Read Aloud | Disabled | No | The UI for this feature is removed.  This feature is turned on. |  
-| Smart Screen | Enabled | No | The UI for this feature is removed.  This feature is turned on. Smart Screen can be turned off using command line switch to turn off related feature. |  
+| Intrusive Ads | Enabled* | No | The UI for this feature is removed, however the underlying functionality persists. |  
+| Read Aloud | Disabled | No | This feature is turned off. |  
+| Smart Screen | Enabled* | No | The UI for this feature is removed, however the underlying functionality persists. Additionally, Smart Screen can be turned off using command line switch. |  
 | Translate | Disabled | No | This feature is turned off. |  
-| Tracking Prevention | Disabled | No | The UI for this feature is removed.  This feature is turned on. |  
+| Tracking Prevention | Enabled* | No | *The UI for this feature is removed, however the underlying functionality persists. |  
 | User Data Sync | Disabled | No | The feature that syncs your favorites, cookies, etc. between machines is disabled. |  
 | Web Payment API | Disabled | No | This feature is disabled. | 
 | Windows Defender Application Guard | Disabled | No | This feature is disabled. |  
@@ -74,7 +80,10 @@ The following built-in Microsoft Edge and Google Chrome webpages aren't availabl
 *   `edge://settings`  
 *   `edge://supervised-user-internals`  
 *   `edge://version`  
-    
+
+> [!Important]
+> Some features may be able to be enabled/disabled via command line switches. For the full list of options please visit this [reference document](https://peter.sh/experiments/chromium-command-line-switches/).  
+  
 ## Getting in touch with the Microsoft Edge WebView2 team  
 
 [!INCLUDE [contact WebView2 team note](../includes/contact-webview-team-note.md)]  
