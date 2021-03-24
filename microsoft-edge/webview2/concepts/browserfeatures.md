@@ -11,7 +11,7 @@ keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, I
 ---
 # Feature differences between Microsoft Edge and WebView2  
 
-WebView2 is based off of the Microsoft Edge browser.  You \(a WebView2 developer\) have the opportunity to extend features from the browser to WebView2-based apps. However, WebView2 is not limited to only being a browser. There are many scenarioin which the browser's features are unneccesary or intrusive.     
+WebView2 is based off of the Microsoft Edge browser. This enables developers to have the opportunity to extend features from the browser to WebView2-based apps, which can be very useful. However, WebView2 is not limited to browser-like apps. There are many scenarios in which the browser's features don't make sense or are unneccesary.    
 
 The purpose of this article is to provide the following information.  
 
@@ -47,12 +47,13 @@ The following list displays the WebView2 features that differ from the new Micro
 | Immersive Reader | Disabled | No | This feature is dependent on the browser UI for control and triggering.  This feature is turned off. |  
 | Intrusive Ads | Disabled | No | The UI for this feature is removed.  This feature is turned on. |  
 | Read Aloud | Disabled | No | The UI for this feature is removed.  This feature is turned on. |  
-| Smart Screen | Enabled | No | The UI for this feature is removed.  This feature is turned on. |  
+| Smart Screen | Enabled | No | The UI for this feature is removed.  This feature is turned on. Smart Screen can be turned off using command line switch to turn off related feature. |  
 | Translate | Disabled | No | This feature is turned off. |  
 | Tracking Prevention | Disabled | No | The UI for this feature is removed.  This feature is turned on. |  
 | User Data Sync | Disabled | No | The feature that syncs your favorites, cookies, etc. between machines is disabled. |  
-| Windows Defender Application Guard | Disabled | No | The feature that syncs your favorites, cookies, etc. between machines is disabled. |  
-| edge:// URLs | See Details | Yes | Settings for the browser are displayed on webpages that use internal URLs.  Most of the webpages have Microsoft Edge branding or don't make sense within the context of WebView2.  For more details about the internal URLs that are turned off, navigate to [Blocked internal URLs](#blocked-internal-urls). |  
+| Web Payment API | Disabled | No | This feature is disabled. | 
+| Windows Defender Application Guard | Disabled | No | This feature is disabled. |  
+| edge:// URLs | See Details | No | Settings for the browser are displayed on webpages that use internal URLs.  Most of the webpages have Microsoft Edge branding or don't make sense within the context of WebView2.  For more details about the internal URLs that are turned off, navigate to [Blocked internal URLs](#blocked-internal-urls). |  
 
 ### Blocked internal URLs  
 
