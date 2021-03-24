@@ -40,23 +40,6 @@ Use the **Sources** tool to view, modify, and debug JavaScript that's returned b
    Navigate, view, edit, and debug JavaScript returned by the server 
 :::image-end:::  
 
-## When to use the Sources tool
-
-<!-- todo: maybe merge with the planned "scenarios of when various tools/setups are recommended".  First, cover the baseline scenario (clearly stating that scenario as the baseline), then go over the various setup/approach options. -->
-
-The **Sources** tool is a JavaScript viewer, editor, and debugger.
-
-Use the **Sources** tool to check that your resources are loaded, and to view, edit, and debug JavaScript, especially JavaScript that's returned from the server.  
-
-Use the Sources tool when you want to see the JavaScript code that is returned from the server, rather than the source code, which might be different.
-
-Use the Sources tool, rather than a code editor, for fast iterations when you are prototyping JavaScript code and don't want to go through the build process every time.
-
-This JavaScript code from the server may be different than the source files you work with, if those files go through transformations.  The **Sources** tool shows the final JavaScript code that's presented to the browser.
-
-Additional functionality:
-*   View local files (in addition to files returned from the server), and edit and save changes to local files, by using a Workspace (the **Filesystem** tab) or **Overrides**.  Such changes to code are preserved across page refreshes.
-
 ## Layout of the Sources tool
 
 :::image type="complex" source="../media/debugging-panes.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging-panes.msft.png":::
@@ -149,7 +132,7 @@ To infer where your JavaScript is going wrong, you can use the simple approach o
 
 The basic approach to using a debugger is to set a breakpoint (an intentional stopping place in the code), run the code at full speed up to the line of code on which the breakpoint is set, and then step through the lines of code, starting at that breakpoint.  
 
-For example, the tutorial [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] uses an existing, simple webpage with a few form controls.  In the tutorial, to get into the "Paused" mode, in the **Debugger** pane, you expand **Event Listener Breakpoints** \> **Mouse**, and then select the **Click** check box so that a check mark appears.  When you click the **Add Numbers** button in the webpage (a form), the code runs and then pauses at the `onClick` event handler function.  You then set a breakpoint on a suspect line of code, and step through the code. 
+For example, the tutorial [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] uses an existing, simple webpage with a few form controls.  In the tutorial, to get into the "Paused" mode, in the **Debugger** pane, you expand **Event Listener Breakpoints** \> **Mouse**, and then select the **click** event check box so that a check mark appears.  When you click the **Add Numbers** button in the webpage (a form), the code runs and then pauses at the `onClick` event handler function.  You then set a breakpoint on a suspect line of code, and step through the code. 
 
 :::image type="complex" source="../media/sources-paused-breakpoint.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging-panes-narrow.msft.png":::
    Entering Paused mode of the Debugger  
@@ -185,7 +168,10 @@ The Debugger, together with the Editor, supports actions including the following
 
 For more information, see the [Extensions](../../visual-studio-code/index.md#extensions) section in the article "Visual Studio Code overview".
 
-<!-- need a Scenarios/Pros/Cons matrix, when to use which approach
+## When to use the Sources tool, local Workspaces, and extensions
+
+<!--
+need a Scenarios/Pros/Cons matrix, when to use which approach
 ## Scenarios and recommended approaches
 -->
 
@@ -202,7 +188,20 @@ Is this extension an alternative to the DevTools Source tool?
 Does this extension run against the JS returned from the server, or the source JS?
 -->
 
-## Scenarios for location of JavaScript code
+The **Sources** tool is a JavaScript viewer, editor, and debugger.
+
+Use the **Sources** tool to check that your resources are loaded, and to view, edit, and debug JavaScript, especially JavaScript that's returned from the server.  
+
+Use the Sources tool when you want to see the JavaScript code that is returned from the server, rather than the source code, which might be different.
+
+Use the Sources tool, rather than a code editor, for fast iterations when you are prototyping JavaScript code and don't want to go through the build process every time.
+
+This JavaScript code from the server may be different than the source files you work with, if those files go through transformations.  The **Sources** tool shows the final JavaScript code that's presented to the browser.
+
+Additional functionality:
+*   View local files (in addition to files returned from the server), and edit and save changes to local files, by using a Workspace (the **Filesystem** tab) or **Overrides**.  Such changes to code are preserved across page refreshes.
+
+### Scenarios for location of JavaScript code
 
 <!-- if I'm using React and I set up a Workspace, does the DevTools Sources tool's debugger work for editing local React source files? -->
 
