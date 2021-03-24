@@ -25,9 +25,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 # Sources tool overview  
 
 <!-- todo: 
-copy UI overview aspects from Debugger tutorial into Debugger section here.
+Copy UI overview aspects from Debugger tutorial into Debugger section here.
 
-It's good to use this JS viewer just to read, or to insert console.log, or to do full-on setting breakpoints.  You don't have to set breakpoints and use the debugger; the Sources tool is useful in all these cases. 
+State: It's good to use this JS viewer just to read, or to insert console.log, or to do full-on setting breakpoints.  You don't have to set breakpoints and use the debugger; the Sources tool is useful in all these cases. 
 -->
 
 Use the **Sources** tool to view, modify, and debug JavaScript that's returned by the server.
@@ -147,18 +147,19 @@ The JavaScript Debugger in DevTools, in the **Debugger** pane, is designed to lo
 
 To infer where your JavaScript is going wrong, you can use the simple approach of inserting `console.log()` statements in the **Editor** pane.  Another approach, that's more powerful (yet can also be simple), is to use the debugger of Microsoft Edge DevTools:
 
-1. Set a breakpoint (an intentional stopping place in the code), run the code at full speed up to the line of code on which the breakpoint is set, and then step through the lines of code, starting at that breakpoint.
+1. Set a breakpoint (an intentional stopping place in the code), run the code at full speed up to the line of code on which the breakpoint is set, and then step through the lines of code, starting at that breakpoint.  
+
+    For example, the tutorial [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] uses an existing, simple webpage with a few form controls.  In the tutorial, to get into the "Paused at breakpoint" mode, in the **Debugger** pane, you expand **Event Listener Breakpoints** \> **Mouse**, and then select the **Click** check box.  When you click the button in the webpage (a form), the code runs and then pauses at the `onClick` handler function.  You then set a breakpoint on another line and step through the code. 
+
 1. As you step through the code, you may display and change the values of all currently-defined properties and variables, issue JavaScript statements in the **Console**, and more.
 
 Breakpoints are preserved when you refresh the page.
-<!-- how to "run to breakpoint at full speed, per above? What UI action do you do?
-with the https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html you have to set a breakpoint then Refresh (losing any changes)? -->
 
 :::image type="complex" source="../media/debugging.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging.msft.png":::
    Debug JavaScript  
 :::image-end:::  
 
-The Debugger, together with the Editor, supports the following actions:
+The Debugger, together with the Editor, supports actions including the following:
 
 *   View and edit JavaScript code.
 *   Set breakpoints, to pause code.
@@ -166,8 +167,6 @@ The Debugger, together with the Editor, supports the following actions:
 *   View and edit properties and variables.
 *   Watch the values of JavaScript expressions.
 *   View the call stack.
-*   Ignore a script or pattern of scripts.
-*   Run snippets of debug code from any page.
 
 ### Related articles
 
