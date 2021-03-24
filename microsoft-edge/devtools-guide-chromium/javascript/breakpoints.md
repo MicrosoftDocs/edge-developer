@@ -24,7 +24,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # How to pause your code with breakpoints in Microsoft Edge DevTools  
 
-Use breakpoints to pause your JavaScript code.  This guide explains each type of breakpoint that is available in DevTools, as well as when to use and how to set each type.  For a hands-on tutorial of the debugging process, navigate to [Get started with debugging JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex].  
+Use breakpoints to pause your JavaScript code.  This guide explains each type of breakpoint that is available in DevTools, as well as when to use and how to set each type.  For a hands-on tutorial of the debugging process, navigate to [Get started with debugging JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex].
+
+The debugger is part of the Sources tool.  For an overview of the Sources tool, navigate to [Sources tool overview](../sources/index.md).
 
 ## Overview of when to use each breakpoint type  
 
