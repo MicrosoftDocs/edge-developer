@@ -44,8 +44,8 @@ The following list displays the WebView2 features that differ from the new Micro
 | Family Safety | Disabled | No | This feature is turned off. |  
 | Hotkeys | Disabled | No | The following shortcuts aren't turned off:  `Ctrl`+`F` and `Ctrl`+`S` |  
 | IE Mode | Disabled | No | IE Mode is disabled. |  
-| Immersive Reader | Disabled | g | This feature is dependent on the browser UI for control and triggering.  This feature is turned off. |  
-| Intrusive Ads | Disabled | g | The UI for this feature is removed.  This feature is turned on. |  
+| Immersive Reader | Disabled | No | This feature is dependent on the browser UI for control and triggering.  This feature is turned off. |  
+| Intrusive Ads | Disabled | No | The UI for this feature is removed.  This feature is turned on. |  
 | Read Aloud | Disabled | No | The UI for this feature is removed.  This feature is turned on. |  
 | Smart Screen | Enabled | No | The UI for this feature is removed.  This feature is turned on. |  
 | Translate | Disabled | No | This feature is turned off. |  
