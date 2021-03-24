@@ -24,9 +24,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Use the debugger features
 
-Discover new debugging workflows with the following comprehensive reference of Microsoft Edge DevTools debugging features.  
+Discover new debugging workflows with this guide to using the debugging features of Microsoft Edge DevTools.  
 
-To learn the basics of debugging, navigate to [Get Started With Debugging JavaScript In Microsoft Edge DevTools][DevToolsJavascriptGetStarted], which presents simple, existing tutorial code, with screen captures.
+To learn the basics of debugging, navigate to [Get started with debugging JavaScript in Microsoft Edge DevTools][DevToolsJavascriptGetStarted], which presents simple, existing tutorial code, with screen captures.
+
+The debugger is part of the **Sources** tool.  For an overview of the Sources tool, navigate to [Sources tool overview](../sources/index.md).
 
 ## View and edit JavaScript code
 
