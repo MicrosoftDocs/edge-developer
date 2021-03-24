@@ -10,46 +10,46 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Filter Console messages  
 
-If you surf the web these days you may find that the **Console** is flooded with all kind of information.  Often these are not relevant to you.  Like information that you log when you debug your live project.  Or a lot of information about violations and warnings about the performance of the current site that you are not able to change.  This is why it makes sense to get used to the filtering options of **Console** to drown out some of the noise.
+If you surf the web recently you may find that the **Console** is flooded with all kind of information.  Often the information is not relevant to you.  Like information that you log when you debug your live project.  Or much information about violations and warnings about the performance of the current site that you are not able to change.  It makes sense to get used to the filtering options of **Console** to drown out some of the noise.
 
 ## Filter by log level  
 
-Each method of the `console` object has a severity level attached to it.  These are `Verbose`, `Info`, `Warning`, or `Error`.  Display these up in the [API documentation][DevtoolsConsoleApi].  For example, `console.log()` is an `Info`-level message, whereas `console.error()` is an `Error`-level message.  
+Each method of the `console` object has a severity level attached to it.  The severity levels are `Verbose`, `Info`, `Warning`, or `Error`.  Display the severity levels in the [API documentation][DevtoolsConsoleApi].  For example, `console.log()` is an `Info`-level message, but `console.error()` is an `Error`-level message.  
 
-Filter messages in the **Console** using the **Log Levels** dropdown.  You may toggle the state of each level.  To turned off each level, remove the checkmark next to each.
+Filter messages in the **Console** using the **Log Levels** dropdown.  You may toggle the state of each level.  To turn off each level, remove the checkmark next to each.
 
-:::image type="complex" source="../media/console-filter-dropdown.msft.png" alt-text="The dropdown to filter Console messages using the log level" lightbox="../media/console-filter-dropdown.msft.png":::
-    The dropdown to filter **Console** messages using the log level  
+:::image type="complex" source="../media/console-filter-dropdown.msft.png" alt-text="The dropdown menu to filter Console messages using the log level" lightbox="../media/console-filter-dropdown.msft.png":::
+    The dropdown menu to filter **Console** messages using the log level  
 :::image-end:::  
 
 In the following example, to display that, filter the different types of log level to cut down the noise immensely.
 
 For example, in the following figure, display the dozens of messages since no filter is applied.
 
-:::image type="complex" source="../media/console-filter-displays-all.msft.png" alt-text="No filter set means you may display a lot of console messages" lightbox="../media/console-filter-displays-all.msft.png":::
-    No filter set means you may display a lot of console messages  
+:::image type="complex" source="../media/console-filter-displays-all.msft.png" alt-text="No filter set means you may display many console messages" lightbox="../media/console-filter-displays-all.msft.png":::
+    No filter set means you may display many console messages  
 :::image-end:::  
 
 Choose to hide all the warning level messages to cut down on the noise.  Navigate to the **Log Levels** dropdown and uncheck the `Warnings` level.
 
-:::image type="complex" source="../media/console-filter-hide-warning.msft.png" alt-text="Hide all the warning level messages in the Console to filter out a lot of the noise" lightbox="../media/console-filter-hide-warning.msft.png":::
-    Hide all the warning level messages in the **Console** to filter out a lot of the noise  
+:::image type="complex" source="../media/console-filter-hide-warning.msft.png" alt-text="Hide all the warning level messages in the Console to filter much of the noise" lightbox="../media/console-filter-hide-warning.msft.png":::
+    Hide all the warning level messages in the **Console** to filter much of the noise  
 :::image-end:::  
 
 ## Filter by text  
 
 If you want to review more detail, to filter messages using text, type a string into the **Filter** textbox.  For example, type `block` into the box to only display your messages about the browser blocking resources from loading.
 
-:::image type="complex" source="../media/console-filter-text.msft.png" alt-text="Only displays messages that contain the word block" lightbox="../media/console-filter-text.msft.png":::
-    Only displays messages that contain the word `block`  
+:::image type="complex" source="../media/console-filter-text.msft.png" alt-text="Displays the messages that contain the word block" lightbox="../media/console-filter-text.msft.png":::
+    Displays the messages that contain the word `block`  
 :::image-end:::  
 
 ## Filter by regular expression
 
 [Regular expressions][MdnDocsWebJavascriptGuideRegularExpressions] are a powerful way to filter messages.  For example, type `/^Tracking/` into the **Filter** textbox to only displays messages that start with the word "Tracking".  If you are unfamiliar with regular expressions, [RegExr][RegExrMain] is a great resource to learn about using regular expressions.
 
-:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="Only displays messages that start with the word filter using a regular expression in the Filter textbox" lightbox="../media/console-filter-regex.msft.png":::
-    Only displays messages that start with the word `filter` using a regular expression in the **Filter** textbox  
+:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="Displays the messages that start with the word filter using a regular expression in the Filter textbox" lightbox="../media/console-filter-regex.msft.png":::
+    Displays the messages that start with the word `filter` using a regular expression in the **Filter** textbox  
 :::image-end:::  
 
 ## Filter by message source  
@@ -60,19 +60,19 @@ You may also define what kind of messages you want to display and where each ori
     To open the **Sidebar**, choose the **Sidebar** icon  
 :::image-end:::  
 
-When the **Sidebar** is open, you may display the overall amount of messages and where each originated.  The options are `All messages`, `User Messages`, `Errors`, `Warnings`, `Info` and `Verbose`.  
+When the **Sidebar** is open, you may display the overall number of messages and where each originated.  The options are `All messages`, `User Messages`, `Errors`, `Warnings`, `Info`, and `Verbose`.  
 
 :::image type="complex" source="../media/console-filter-sidebar-open.msft.png" alt-text="The Console Sidebar displays the different sources messages originated from" lightbox="../media/console-filter-sidebar-open.msft.png":::
     The **Console Sidebar** displays the different sources messages originated from  
 :::image-end:::  
 
-Choose any of the options to display only the messages of that type.  For example, if you only want to display user messages, choose that option to display that a lot of the noise is gone.
+Choose any of the options to display only the messages of that type.  For example, to display user messages, choose the user messages option to display less noise.
 
 :::image type="complex" source="../media/console-filter-select-user-messages.msft.png" alt-text="Choose to only display user messages in the Console using the filter in the Sidebar" lightbox="../media/console-filter-select-user-messages.msft.png":::
     Choose to only display user messages in the **Console** using the filter in the **Sidebar**  
 :::image-end:::  
 
-To filter more and expand the choice, choose the triangle icon next to it.  That way you get more choices to only displays messages that originate from a certain source.  
+To filter more and expand the choice, choose the triangle icon next to it.  That way you get more choices  messages that originate from a certain source.  
 
 :::image type="complex" source="../media/console-filter-sidebar-open-arrow.msft.png" alt-text="Choose the arrow icon expands each of the sections" lightbox="../media/console-filter-sidebar-open-arrow.msft.png":::
     Choose the arrow icon expands each of the sections  

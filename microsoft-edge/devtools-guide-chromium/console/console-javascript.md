@@ -10,13 +10,13 @@ keywords: microsoft edge, JavaScript, web development, f12 tools, devtools
 ---
 # Console as a JavaScript environment  
 
-The **Console** tool inside the browser DevTools is a [REPL][WikiReadEvalPrintLoop] environment, which means that you may write any JavaScript in it that runs immediately.
+The **Console** tool inside the browser DevTools is a [REPL][WikiReadEvalPrintLoop] environment.  It means that you may write any JavaScript in **Console** that runs immediately.
 
 To try it, complete the following actions.  
 
 1.  Open the **Console**.  
     *   Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).  
-1.  Type `2 + 2`.  The **Console** already displays the result `4` on the next line while you type it.  This feature is named **Eager evaluation** and it helps you write valid JavaScript since it displays while you type whether it is is wrong or if a valid result exists.  
+1.  Type `2 + 2`.  The **Console** already displays the result `4` on the next line while you type it.  The feature named **Eager evaluation** helps you write valid JavaScript.  It displays the result while you type whether it is wrong or if a valid result exists.  
     
 :::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console displays the result of 2 + 2 live as you type it" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
    **Console** displays the result of `2 + 2` live as you type it  
@@ -30,7 +30,7 @@ If you hit `Enter`, **Console** runs the JavaScript command, give you the result
 
 ## Autocompletion to write complex expressions
 
-The last example may seem daunting, but the **Console** helps you write complex JavaScript using an excellent autocompletion feature.  This feature is a great way to learn about methods you did not know before.  
+The last example may seem scary, but the **Console** helps you write complex JavaScript using an excellent autocompletion feature.  This feature is a great way to learn about methods you did not know before.  
 
 To try it, complete the following actions.  
 
@@ -47,51 +47,54 @@ To try it, complete the following actions.
 
 ## Console history
 
-As with many other terminal-like experiences you also have a history of commands.  Select `Arrow Up` to display the commands you entered before.  Autocompletion also keeps a history of the commands you previously entered, which means that you may type the first few letters of earlier commands and your previous choices are displayed in a box.
+As with many other command-line experiences, you also have a history of commands.  Select `Arrow Up` to display the commands you entered before.  Autocompletion also keeps a history of the commands you previously entered.  You may type the first few letters of earlier commands and your previous choices are displayed in a textbox.
 
-In addition to having access to what you entered, **Console** also offers quite a few [utility methods][DevtoolsConsoleUtilities] that make your life easier.  For example, `$_` always contains the result of the last expression you ran in **Console**.
+Also, the **Console** also offers quite a few [utility methods][DevtoolsConsoleUtilities] that make your life easier.  For example, `$_` always contains the result of the last expression you ran in **Console**.
 
 :::image type="complex" source="../media/console-javascript-console-history.msft.png" alt-text="The $_ expression in Console always contains the last result" lightbox="../media/console-javascript-console-history.msft.png":::
     The `$_` expression in **Console** always contains the last result  
 :::image-end:::  
 
-## Multi line edits
+## Multiline edits
 
-Out-of-the-box you only have one line to write your JavaScript expression.  Select `Enter` to run the code.  This may get pretty frustrating.  To work around the one line limitation, use `Shift`+`Enter` instead.  In the following example you may display that the value displayed is the result of all the lines run in order.  
+Without added extensions, you only have one line to write your JavaScript expression.  Select `Enter` to run the code.  You may get frustrated.  To work around the one line limitation, use `Shift`+`Enter` instead.  In the following example, you may display that the value displayed is the result of all the lines run in order.  
 
 :::image type="complex" source="../media/console-javascript-multiline.msft.png" alt-text="Use Shift and Enter to write several lines of JavaScript and the resulting value is each one run in order" lightbox="../media/console-javascript-multiline.msft.png":::
    Use `Shift` and `Enter` you may write several lines of JavaScript and the resulting value is each one run in order  
 :::image-end:::  
 
-If you start a multi-line statement in Console it gets automatically recognized and indented that.  For example, if you start a block statement with a curly brace.
+If you start a multiline statement in **Console**, it gets automatically recognized and indented.  For example, if you start a block statement with a curly brace.
 
 :::image type="complex" source="../media/console-javascript-automatic-lineindent.msft.png" alt-text="Console already recognizes multiline expressions using curly braces and indents each for you" lightbox="../media/console-javascript-automatic-lineindent.msft.png":::
     **Console** already recognizes multiline expressions using curly braces and indents each for you  
 :::image-end:::  
 
-## Network requests using top level await()  
+## Network requests using top-level await()  
 
-Other than in your own scripts, **Console** supports [top-level await][GithubTc39ProposalTopLevelAwait] which means you may run arbitrary asynchronous Javascript in it.  For example, you may use the fetch API without having to wrap the await statement in an async function.  Using the following code gets you the last 50 issues filed on the [Microsoft Edge Developer Tools for Visual Studio Code GitHub][GithubMicrosoftVscodeEdgeDevtools] repo.  
+Other than in your own scripts, **Console** supports [top-level await][GithubTc39ProposalTopLevelAwait] which means you may run arbitrary asynchronous JavaScript in it.  For example, you may use the fetch API without having to wrap the await statement in an async function.  
 
-```javascript
-await ( await fetch(
-'https://api.github.com/repos/microsoft/vscode-edge-devtools/issues?state=all&per_page=50&page=1'
-)).json();
-```  
+To get the last 50 issues filed on the [Microsoft Edge Developer Tools for Visual Studio Code][GithubMicrosoftVscodeEdgeDevtools] GitHub repo, complete the following actions.  
 
-If you copy and paste this into **Console** you get an object containing 10 entries, which is hard to take in.
-
-:::image type="complex" source="../media/console-javascript-top-level-await.msft.png" alt-text="Console displays the result of a top level async fetch request" lightbox="../media/console-javascript-top-level-await.msft.png":::
-    **Console** displays the result of a top level async fetch request  
+1.  Open the **Console**.  
+1.  Copy and paste the following code snippet to get an object that contains 10 entries.  The 10 entries are hard to recognize.
+    
+    ```javascript
+    await ( await fetch(
+    'https://api.github.com/repos/microsoft/vscode-edge-devtools/issues?state=all&per_page=50&page=1'
+    )).json();
+    ```  
+    
+:::image type="complex" source="../media/console-javascript-top-level-await.msft.png" alt-text="Console displays the result of a top-level async fetch request" lightbox="../media/console-javascript-top-level-await.msft.png":::
+    **Console** displays the result of a top-level async fetch request  
 :::image-end:::  
 
-Luckily enough, you may use the `console.table()` logging method to cut down to the things you are really interested in.
+Luckily enough, you may use the `console.table()` log method to filter the things that you are interested.
 
 :::image type="complex" source="../media/console-javascript-filtered-with-table.msft.png" alt-text="Display the last result in a human readable form using console.table" lightbox="../media/console-javascript-filtered-with-table.msft.png":::
     Display the last result in a human readable form using `console.table`  
 :::image-end:::  
 
-If you want to re-use the data returned from an expression like this you may also use the `copy()` utility method of **Console**.  The following example sends the request and copy the data straight to the clipboard.
+To reuse the data returned from an expression, you may use the `copy()` utility method of **Console**.  The following code snippet sends the request and copies the data directly to the clipboard.
 
 ```javascript
 copy(await (await fetch(
@@ -99,7 +102,7 @@ copy(await (await fetch(
 )).json())
 ```  
 
-Use the **Console** as a great way to practice JavaScript functionality and to do some quick calculations.  The real power, however, comes with the fact that you have access to the [window][MdnDocsWebApiWindow] object, which means you may [interact with the DOM in Console][DevtoolsConsoleConsoleDomInteraction].  
+Use the **Console** as a great way to practice JavaScript functionality and to do some quick calculations.  The real power is the fact that you have access to the [window][MdnDocsWebApiWindow] object.  You may [interact with the DOM in Console][DevtoolsConsoleConsoleDomInteraction].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

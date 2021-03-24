@@ -23,7 +23,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Console reference  
 
-This article is a reference of features related to the Microsoft Edge DevTools Console.  It assumes that you are already familiar with using the Console to view logged messages and run JavaScript.  If not, navigate to [Get Started With Running JavaScript In The Console][DevToolsConsoleJavascript] and [Get Started With Logging Messages In The Console][DevToolsConsoleLog].  
+This article is a reference of features related to the Microsoft Edge DevTools Console.  It assumes that you are already familiar with using the Console to view logged messages and run JavaScript.  If not, navigate to [Get started with running JavaScript in the Console][DevToolsConsoleJavascript] and [Get started with logging messages in the Console][DevToolsConsoleLog].  
 
 If you are looking for the API reference on functions like `console.log()`, navigate to [Console API Reference][DevToolsConsoleApi].  For the reference on functions like `monitorEvents()`, navigate to [Console Utilities API Reference][DevToolsConsoleUtilities].  
 
@@ -150,16 +150,16 @@ Many ways exist to filter out messages in the **Console**.
 
 ### Filter by log level  
 
-DevTools assigns each `console.*` method one of the 4 severity levels.  
+DevTools assigns each `console.*` method one of the four severity levels.  
 
 *   `Error`  
 *   `Info`  
 *   `Verbose`  
 *   `Warning`  
     
-For example, `console.log()` is in the `Info` group, whereas `console.error()` is in the `Error` group.  The [Console API Reference][DevToolsConsoleApi] describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  You may hide any level of messages that you are not interested in.  For example, if you are only interested in `Error` messages, you may hide the other 3 groups.  
+For example, `console.log()` is in the `Info` group, but `console.error()` is in the `Error` group.  The [Console API Reference][DevToolsConsoleApi] describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  You may hide any level of messages that you are not interested in.  For example, if you are only interested in `Error` messages, you may hide the other three groups.  
 
-To filter the messages, choose the **Log Levels** dropdown and choose `Verbose`, `Info`, `Warning` or `Error`.  
+To filter the messages, choose the **Log Levels** dropdown and choose `Verbose`, `Info`, `Warning`, or `Error`.  
 
 :::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="The Log Levels dropdown" lightbox="../media/console-log-level-default-levels.msft.png":::
    The **Log Levels** dropdown  
@@ -173,27 +173,31 @@ To use the log level to filter, [open the Console Sidebar](#open-the-console-sid
 
 ### Filter messages by URL  
 
-Type `url:` followed by a URL to only view messages that came from that URL.  After you type `url:` DevTools displays all relevant URLs.  Domains also work.  For example, if `https://example.com/a.js` and `https://example.com/b.js` are logging messages, `url:https://example.com` allows you to focus on the messages from these 2 scripts.  
+Type `url:` followed by a URL to only view messages that came from that URL.  After you type `url:`, DevTools displays all relevant URLs.  Domains also work.  For example, if `https://example.com/a.js` and `https://example.com/b.js` are logging messages, `url:https://example.com` allows you to focus on the messages from these two scripts.  
 
 :::image type="complex" source="../media/console-filter-text.msft.png" alt-text="A URL filter" lightbox="../media/console-filter-text.msft.png":::
    A URL filter  
 :::image-end:::  
 
-Type `-url:` to hide messages from that URL.  This is called a negative URL filter.  
+Type `-url:` to hide messages from that URL.  It is a negative URL filter.  
 
 :::image type="complex" source="../media/console-negative-filter-text.msft.png" alt-text="A negative URL filter that hides all messages that match the https://b.wal.co URL" lightbox="../media/console-negative-filter-text.msft.png":::
    A negative URL filter that hides all messages that match the `https://b.wal.co` URL
 :::image-end:::  
 
-To display messages from a single URL, [open the Console Sidebar](#open-the-console-sidebar), expand the **User Messages** section, and then choose the URL of the script that contains the messages on which you want to focus.  
+To display messages from a single URL, complete the following actions.  
 
+1.  [Open the Console Sidebar](#open-the-console-sidebar).  
+1.  Expand the **User Messages** section.  
+1.  Choose the URL of the script that contains the messages on which you want to focus.  
+    
 :::image type="complex" source="../media/console-filter-text-specified.msft.png" alt-text="Display the messages that came from wp-ad.min.js" lightbox="../media/console-filter-text-specified.msft.png":::
    Display the messages that came from `wp-ad.min.js`  
 :::image-end:::  
 
 ### Filter out messages from different contexts  
 
-Suppose that you have an advertisement \(ad\) on your webpage.  The ad is embedded in an `<iframe>` and is generating a lot of messages in your **Console**.  Because the ad is running in a different [JavaScript context](#select-javascript-context), one way to hide the messages is to [open Console Settings](#open-console-settings) and turn on the **Selected Context Only** checkbox.  
+Suppose that you have an advertisement \(ad\) on your webpage.  The ad is embedded in an `<iframe>` and generates many messages in your **Console**.  Because the ad is running in a different [JavaScript context](#select-javascript-context), one way to hide the messages is to [open Console Settings](#open-console-settings) and turn on the **Selected Context Only** checkbox.  
 
 ### Filter out messages that do not match a regular expression pattern  
 
@@ -207,17 +211,17 @@ Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** textbox to 
 
 This section contains features related to running JavaScript in the **Console**.  For a hands-on walkthrough, navigate to [Run JavaScript][DevtoolsConsoleConsoleJavascript].  
 
-### Re-run expressions from history  
+### Rerun expressions from history  
 
 Select `Up Arrow` to cycle through the history of JavaScript expressions that you ran earlier in the **Console**.  Select `Enter` to run that expression again.  
 
-### Watch the value of an expression in real-time with Live Expressions  
+### Watch the value of an expression in real time with Live Expressions  
 
-If you find yourself typing the same JavaScript expression in the **Console** repeatedly, you may find it easier to create a **Live Expression**.  With **Live Expressions** you type an expression once and then pin it to the top of your **Console**.  The value of the expression updates in near real-time.  Navigate to [Watch JavaScript Expression Values In Real-Time With Live Expressions][DevToolsConsoleLiveExpressions].  
+If you find yourself typing the same JavaScript expression in the **Console** repeatedly, you may find it easier to create a **Live Expression**.  With **Live Expressions**, you type an expression once and then pin it to the top of your **Console**.  The value of the expression updates in near real time.  Navigate to [Watch JavaScript Expression Values In Real-Time With Live Expressions][DevToolsConsoleLiveExpressions].  
 
 ### Turn off Eager Evaluation  
 
-As you type JavaScript expressions in the **Console**, **Eager Evaluation** displays a preview of the return value for that expression.  To turn off the return value previews, [open Console Settings](#open-console-settings) and remove the checkbox next to **Eager Evaluation**.  
+**Eager Evaluation** displays a preview of the return value as you type JavaScript expressions in the **Console**.  To turn off the return value previews, [open Console Settings](#open-console-settings) and remove the checkbox next to **Eager Evaluation**.  
 
 ### Turn off autocomplete from history  
 
@@ -238,7 +242,7 @@ The default option for the **JavaScript Context** dropdown is **top**, which rep
    The **JavaScript Context** dropdown  
 :::image-end:::  
 
-Suppose you have an ad on your webpage embedded in an `<iframe>`.  You want to run JavaScript in order to tweak the DOM of the ad.  You should first choose the browsing context of the ad from the **JavaScript Context** dropdown.  
+Suppose you have an ad on your webpage embedded in an `<iframe>`.  You want to run JavaScript to tweak the DOM of the ad.  First, choose the browsing context of the ad from the **JavaScript Context** dropdown.  
 
 :::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Choose a different JavaScript context" lightbox="../media/console-dom-level-multiple.msft.png":::
    Choose a different JavaScript context  

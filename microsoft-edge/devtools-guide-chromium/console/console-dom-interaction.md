@@ -46,7 +46,7 @@ document.querySelector('header').style.border = '2em solid green'
     Add a border to an element using **Console**  
 :::image-end:::  
 
-Depending on the complexity of the webpage, It may be quite daunting to find the right element to manipulate.  But you may use the **Inspect** tool help you with that.  Say you want to manipulate the `Documentation` part in the header.
+Depending on the complexity of the webpage, It may be daunting to find the right element to manipulate.  But you may use the **Inspect** tool to help you.  Say you want to manipulate the `Documentation` part in the header.
 
 :::image type="complex" source="../media/console-dom-highlight-documentation.msft.png" alt-text="Display the element you want to choose on the screen" lightbox="../media/console-dom-highlight-documentation.msft.png":::
     Display the element you want to choose on the screen  
@@ -63,8 +63,8 @@ Get a direct reference to this element to manipulate using the following steps.
 1.  Choose it and DevTools jumps to the **Elements** tool.  
 1.  Choose the `...` menu next to the element in the DOM view  
 
-    :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="Chosen element displays in the DOM tree of the Elements tool, choose the overflow menu to get more features" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
-        Chosen element displays in the DOM tree of the **Elements** tool, choose the overflow menu to get more features  
+    :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="The chosen element displays in the DOM tree of the Elements tool, choose the overflow menu to get more features" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
+        The Chosen element displays in the DOM tree of the **Elements** tool, choose the overflow menu to get more features  
     :::image-end:::  
 
 1.  Choose `Copy` and `Copy JS Path` from the context menus.
@@ -85,18 +85,18 @@ Use any JavaScript DOM manipulations you want to do in the **Console**.  And, to
 
 ## Helpful Console utility methods  
 
-A large amount of convenience methods and shortcuts are available to you as [Console Utilities][DevtoolsConsoleUtilities].  Some of the methods are incredibly powerful and are things you probably wrote as a series of `console.log()` statements in the past.
+Many convenience methods and shortcuts are available to you as [Console Utilities][DevtoolsConsoleUtilities].  Some of the methods are incredibly powerful and are things you probably wrote as a series of `console.log()` statements in the past.
 
 ### Power to the $
 
 The `$` has special powers in **Console** and you may remember that from jQuery.
 
-*   `$_` stores the result of the last command.  So if you were to type `2 + 2` and hit enter, typing `$_` gives you 4.
+*   `$_` stores the result of the last command.  So, if you type `2 + 2` and hit enter, typing `$_` gives you 4.
 *   `$0` to `$4` is a stack of the last inspected elements `$0` is always the newest one.  So in the earlier example, you just chose the element in the **Inspector** tool and type `$0.textContent = "My Playground"` to get the same effect.
 *   `$x()` allows you to choose DOM elements using XPATH.
 *   `$()` and `$$()` are shorter versions of for `document.querySelector()` and `document.querySelectorAll()`.  
     
-For example, the following retrieves all the links in the webpage \(as `$$('a')` is short for `document.querySelectorAll('a')`\) and displays the links as a sortable table to copy and paste, for example, into Excel.
+For example, the following code snippet retrieves all the links in the webpage \(as `$$('a')` is short for `document.querySelectorAll('a')`\) and displays the links as a sortable table to copy and paste, for example, into Excel.
 
 ```javascript
 console.table($$('a'),['href','text']);
@@ -112,7 +112,7 @@ However, what if you do not want to display this information but get it as data?
     The `$$` command returning far too much information  
 :::image-end:::  
 
-The `$$` shortcut has an interesting extra feature.  Instead of returning a pure `NodeList` like `document.querySelectorAll()`, it gives you all of the `Array` methods.  That is why you use `map()` to cut down the information to what you need.  
+The `$$` shortcut has an interesting extra feature.  Instead of returning a pure `NodeList` like `document.querySelectorAll()`, it gives you all of the `Array` methods.  Use `map()` to cut down the information to what you need.  
 
 ```javascript
 $$('a').map(a => {
@@ -120,13 +120,13 @@ $$('a').map(a => {
 })
 ```  
 
-This returns an Array of all the links as objects with `url` and `text` properties.  
+The code snippet returns an Array of all the links as objects with `url` and `text` properties.  
 
 :::image type="complex" source="../media/console-dom-filter-link-data.msft.png" alt-text="Use map on $$ to filter information down to the bare minimum" lightbox="../media/console-dom-filter-link-data.msft.png":::
     Use map on `$$` to filter information down to the bare minimum  
 :::image-end:::  
 
-You are not done yet, a lot of the links are internal links to this webpage or have empty text.  Get rid of the internal links using the filter method.  
+You are not done so yet, several links are internal links to this webpage or have empty text.  Get rid of the internal links using the filter method.  
 
 ```javascript
 $$('a').map(a => {
@@ -136,11 +136,11 @@ $$('a').map(a => {
 })
 ```  
 
-:::image type="complex" source="../media/console-dom-filter-out-empty-links.msft.png" alt-text="Only get links that are not empty and are external" lightbox="../media/console-dom-filter-out-empty-links.msft.png":::
-    Only get links that are not empty and are external  
+:::image type="complex" source="../media/console-dom-filter-out-empty-links.msft.png" alt-text="Get the links that are not empty and are external" lightbox="../media/console-dom-filter-out-empty-links.msft.png":::
+    Get the links that are not empty and are external  
 :::image-end:::  
 
-As displayed at the start of this webpage, you may also change these elements.  For example the following creates a green border around all external links:
+As displayed at the start of this webpage, you may also change these elements.  For example, the following code snippet creates a green border around all external links:
 
 ```javascript
 $$('a[href^="https://"]').forEach(
@@ -167,7 +167,7 @@ console.table($$('img:not([src^=data])'), ['src','alt'])
     Choose elements using a complex CSS selector  
 :::image-end:::  
 
-Ready for an even more complex example?  HTML webpages generated from markdown, like this webpage, have automatic IDs on headings to allow for deep linking to that part of the webpage.  For example, a `# New features` changes to `<h1 id="new-features">New features</h1>`.  
+Ready for an even more complex example?  HTML webpages generated from markdown like article, have automatic ID values for each heading to allow you to deep link to that section.  For example, a `# New features` changes to `<h1 id="new-features">New features</h1>`.  
 
 To list of all of the automatic headings to copy and paste, complete the following actions.  
 
@@ -196,7 +196,7 @@ The result is text that contains content for each heading followed by the full U
 
 When developing in the **Console**, things may get messy.  You may find it frustrating to try to choose results while you copy and paste.  The following two utility methods help you.  
 
-*   `copy()` copies whatever you give it to the clipboard.  This method is especially useful when you mix it with `$_` which copies the last result.
+*   `copy()` copies whatever you give it to the clipboard.  This method is especially useful when you mix it with `$_` that copies the last result.
 *   `clear()` clears the **Console**.
 
 ### Read and monitor events
@@ -219,7 +219,7 @@ To list all of the event listener assigned to the first form in the webpage, com
     Get all events listeners for the first form in the webpage  
 :::image-end:::  
 
-Monitoring allows you to get a notification in the **Console** every time something changes to the elements you monitor.  You define the events you want to listen to as a second parameter.  This is important as otherwise any event happening to the element is reported.
+Monitoring allows you to get a notification in the **Console** every time something changes to the elements you monitor.  You define the events you want to listen to as a second parameter.  Monitoring is important as otherwise any event happening to the element is reported.
 
 To get a notification in the **Console** every time you scroll or resize the window, complete the following actions.  
 
@@ -250,7 +250,7 @@ unmonitorEvents($0, 'key');
 
 ## Reuse DOM manipulation scripts
 
-As useful as manipulating the DOM from the **Console** is, you may soon run into the limitations as a development platform.  The good news is that the [Sources][DevtoolsSourcesIndex] tool in DevTools offers a fully featured development environment.  In the **Sources** tool, store scripts you create in the **Console** as Snippets and run the scripts against a webpage with a keyboard shortcut or from the editor.
+As useful as manipulating the DOM from the **Console** is, you may soon run into the limitations as a development platform.  The good news is that the [Sources][DevtoolsSourcesIndex] tool in DevTools offers a fully featured development environment.  In the **Sources** tool, store your scripts for the **Console** as Snippets and run the scripts in a webpage using a keyboard shortcut or the editor.
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

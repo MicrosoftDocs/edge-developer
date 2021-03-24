@@ -18,7 +18,7 @@ The **Console** tool of the DevTools helps you with several tasks.  The followin
 *   [Try the JavaScript expressions][DevtoolsConsoleConsoleJavascript] live in a [REPL][WikiReadEvalPrintLoop] fashion.  
 *   [Interact with the web project in the browser][DevtoolsConsoleConsoleDomInteraction] using JavaScript.  
 
-The versatility of the **Console** made it one of the few tools in DevTools that you open in several places.  It may display as part of the upper panel and also live in the bottom drawer.  It is a great companion tool to have open with others as it is a powerful way to try the script functionality and inspect and manipulate the current webpage using JavaScript.  
+The versatility of the **Console** made it one of the few tools in DevTools that you open in several places.  The **Console** may display as part of the upper panel and also live in the bottom drawer.  The **Console** is a great companion tool to keep open with others.  It is a powerful way to try the script functionality and inspect and manipulate the current webpage using JavaScript.  
 
 :::row:::
    :::column span="":::
@@ -37,7 +37,7 @@ The fastest way to get directly to **Console** is to select `Control`+`Shift`+`J
 
 ## Error reports and Console  
 
-**Console** is the default place where JavaScript and connectivity errors are reported.  If any errors occur, a button displays next to the **Settings** icon in DevTools that provides the amount of errors and warnings.  Choose it to open the **Console** and display the problem.  
+**Console** is the default place where JavaScript and connectivity errors are reported.  If any errors occur, a button displays next to the **Settings** icon in DevTools that provides the number of errors and warnings.  Choose it to open the **Console** and display the problem.  
 
 :::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools gives detailed information about the error in the Console" lightbox="../media/console-debug-displays-error.msft.png":::
    DevTools gives detailed information about the error in the **Console**  
@@ -45,15 +45,15 @@ The fastest way to get directly to **Console** is to select `Control`+`Shift`+`J
 
 Read more details about [debug using Console][DevtoolsConsoleConsoleDebugJavascript].  
 
-## Inspect and filter information on the current webpage  
+## Inspecting and filtering information of the current webpage  
 
-The usefulness of **Console** is also a problem.  If you have DevTools open on any webpage, you are likely to display a deluge of information logged to the **Console**.  This became such a problem that DevTools started to get an [Issues][DevtoolsIssuesIndex] tool to cut down on the noise.  
+The usefulness of **Console** is also a problem.  If you have DevTools open on any webpage, you are likely to display a deluge of information logged to the **Console**.  The amount of information is such a problem that DevTools started to get an [Issues][DevtoolsIssuesIndex] tool to reduce the noise.  
 
 :::image type="complex" source="../media/console-intro-noise.msft.png" alt-text="DevTools with a Console full of messages" lightbox="../media/console-intro-noise.msft.png":::
    DevTools with a **Console** full of messages  
 :::image-end:::  
 
-A lot of noise remains, which is why it is a good idea to know about [automated log and filter options][DevtoolsConsoleConsoleFiltering] of the **Console**.  
+Much noise remains, which is why it is a good idea to know about [automated log and filter options][DevtoolsConsoleConsoleFiltering] of the **Console**.  
 
 ## Log information to display in Console  
 
@@ -78,22 +78,22 @@ Probably the biggest use case of **Console** is logging information in your scri
     
 1.  The **CONSOLE** displays the results.  
     
-    :::image type="complex" source="../media/console-intro-logging.msft.png" alt-text="DevTools with a Console full of messages caused by the demo code" lightbox="../media/console-intro-logging.msft.png":::
-       DevTools with a **Console** full of messages caused by the demo code  
+    :::image type="complex" source="../media/console-intro-logging.msft.png" alt-text="Console full of messages caused by demo code" lightbox="../media/console-intro-logging.msft.png":::
+       **Console** full of messages caused by demo code  
     :::image-end:::  
     
-This is one example.  A lot of useful methods afre available and you should dive deeper into the options of [log to Console][DevtoolsConsoleConsoleLog].  
+Many useful methods are available and you should review the options of [log to Console][DevtoolsConsoleConsoleLog].  
 
 ## Try your JavaScript live in Console  
 
-**Console** is not only a place to log information, it is also a [REPL][WikiReadEvalPrintLoop] environment, which means that you may write any JavaScript in it and it get runs immediately.  This is useful if you just want to play with some new JavaScript features or do some quick calculations.  You get all the features you expect from a modern editing environment, like autocompletion, syntax highlighting and history.  
+**Console** is not only a place to log information.  **Console** is also a [REPL][WikiReadEvalPrintLoop] environment, which means you may write any JavaScript in it and the code get runs immediately.  You should find it useful if you just want to play with some new JavaScript features or do some quick calculations.  You get all the features you expect from a modern editing environment, like autocompletion, syntax highlighting and history.  
 
 To try it, complete the following actions.  
 
 1.  Navigate to **Console**.  
 1.  Type `2 + 2`.  
     
-The **Console** displays the result `4` on the following line as you type it.  This is a feature named **Eager evaluation** and is handy to display that you are not making any mistakes.  
+The **Console** displays the result `4` on the following line as you type it.  This feature is named **Eager evaluation** and is handy to display that you are not making any mistakes.  
 
 :::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console displays the result of 2 + 2 live as you type it" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
    **Console** displays the result of `2 + 2` live as you type it  
@@ -105,7 +105,7 @@ If you hit `Enter`, **Console** runs the JavaScript command and give you the res
    Run several JavaScript expressions in succession  
 :::image-end:::  
 
-You only have one line to write your JavaScript expressions as you select `Enter` to run the code.  To work around the single line limitation, select `Shift`+`Enter`.  As with many other terminal-like experiences you also have a history of commands.  Select `Arrow-Up` to display the commands you previously entered.  
+You only have one line to write your JavaScript expressions as you select `Enter` to run the code.  To work around the single-line limitation, select `Shift`+`Enter`.  As with many other command-line experiences, you also have a history of commands.  Select `Arrow-Up` to display the commands you previously entered.  
 
 The autocompletion feature of **Console** may be a great way to learn about methods you did not know before.  To try it, complete the following actions.  
 
@@ -125,34 +125,43 @@ A few more tricks are available. To learn more, navigate to [Console as a JavaSc
 
 ## Interact with the current webpage in the browser  
 
-As **Console** has access to the [Window][MdnDocsWebApiWindow] object of the browser you may write scripts that interact with the current webpage.  To try it, open the **Console** and type or copy and paste the following code snippet.  
+**Console** has access to the [Window][MdnDocsWebApiWindow] object of the browser.  You may write scripts that interact with the current webpage.  To try it, complete the following actions.  
 
-```javascript
-document.querySelector('h1').innerHTML
-```  
-
+1.  Open the **Console**.  
+1.  Type or copy and paste the following code snippet.  
+    
+    ```javascript
+    document.querySelector('h1').innerHTML
+    ```  
+    
 :::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="Read content from the DOM in Console" lightbox="../media/console-intro-reading-DOM.msft.png":::
    Read content from the DOM in **Console**  
 :::image-end:::  
 
-Instead of only reading from the webpage, you may also change it.  To try it, open the **Console** and type or copy and paste the following code snippet.  
+Instead of only reading from the webpage, you may also change it.  To try it, complete the following actions.  
 
-```javascript
-document.querySelector('h1').innerHTML = 'Rocking the Console';
-```  
-
+1.  Open the **Console**.  
+1.  Type or copy and paste the following code snippet.  
+    
+    ```javascript
+    document.querySelector('h1').innerHTML = 'Rocking the Console';
+    ```  
+    
 :::image type="complex" source="../media/console-intro-wrtiting-DOM.msft.png" alt-text="Write to the DOM in Console" lightbox="../media/console-intro-wrtiting-DOM.msft.png":::
    Write to the DOM in **Console**  
 :::image-end:::  
 
 You changed the main heading of the webpage to **Rocking the Console**  
 
-In addition to any JavaScript you want run, **Console** also comes with a lot of [Utility methods][DevtoolsConsoleUtilities] that make it even easier to access and manipulate the current webpage.  For example, if you want to add a green border around all the links in the current webpage, use the following code snippet.  
+Also any JavaScript you want run, the **Console** also comes with many [Utility methods][DevtoolsConsoleUtilities].  The **Console Utility** methods make it even easier to access and manipulate the current webpage.  To add a green border around all the links in the current webpage, complete the following actions.  
 
-```javascript
-$$('a').forEach(a => a.style.border='1px solid lime');
-```  
-
+1.  Open the **Console**.  
+1.  Type or copy and paste the following code snippet.  
+    
+    ```javascript
+    $$('a').forEach(a => a.style.border='1px solid lime');
+    ```  
+    
 :::image type="complex" source="../media/console-intro-changing-styles.msft.png" alt-text="Manipulate a selection of elements using Console" lightbox="../media/console-intro-changing-styles.msft.png":::
     Manipulate a selection of elements using **Console**  
 :::image-end:::  

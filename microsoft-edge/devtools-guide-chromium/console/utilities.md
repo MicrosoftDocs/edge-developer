@@ -23,8 +23,13 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Console Utilities API reference  
 
-The Console Utilities API contains a collection of convenience commands for performing common tasks:  choose and inspect DOM elements, display data in readable format, stop and start the profiler, and monitor DOM events.  
+The Console Utilities API contains a collection of convenience commands to complete the following common tasks.  
 
+*   Choose and inspect DOM elements  
+*   Display data in readable format  
+*   Stop and start the profiler  
+*   Monitor DOM events  
+    
 > [!WARNING]
 > The following commands only work in the Microsoft Edge DevTools **Console**.  The commands do not work if run from your scripts.  
 
@@ -117,7 +122,11 @@ In the following figure, a reference to the first `<img>` element in the webpage
    The `$('img')`  
 :::image-end:::  
 
-Hover on the returned result, open the contextual menu \(right-click\), and choose **Reveal in Elements Panel** to find it in the DOM or **Scroll in to View** to display it on the webpage.  
+To find it in the DOM or **Scroll in to View** to display it on the webpage, complete the following actions.  
+
+1.  Hover on the returned result.  
+1.  Open the contextual menu \(right-click\).  
+1.  Choose **Reveal in Elements Panel**.  
 
 In the following figure, a reference to the currently chosen element is returned and the src property is displayed.  
 
@@ -242,7 +251,7 @@ debug(method)
 >[!NOTE]
 > The [Chromium issue #1050237][CR1050237] is tracking a bug with the `debug()` function.  If you encounter the issue, try using [breakpoints][DevtoolsJavascriptBreakpoints] instead.  
 
-When you request the specified method, the debugger is invoked and breaks inside the method on the **Sources** tool allowing you to step through the code and debug it.  
+When you request the specified method, the debugger invokes and breaks inside the method on the **Sources** tool.  It allows you to step through and debug the code.  
 
 ```console
 debug("debug");
@@ -347,7 +356,7 @@ For example, suppose your application defined the following object.
 var player1 = {"name": "Ted", "level": 42}
 ```  
 
-In the following code samples and figure, the result assumes `player1` was defined in the global namespace \(for simplicity\) prior to typing `keys(player1)` and `values(player1)` in the console.  
+In the following code samples and figure, the result assumes `player1` was defined in the global namespace \(for simplicity\) before you type `keys(player1)` and `values(player1)` in the console.  
 
 ```console
 keys(player1)
@@ -365,7 +374,7 @@ values(player1)
 monitor(method)
 ```  
 
-Logs a message to the console that indicates the method name along with the arguments that are passed to the method when it was requested.  
+Logs a message to the console that indicates the method name along with the arguments passed to the method when requested.  
 
 ```console
 function sum(x, y) {
@@ -378,7 +387,7 @@ monitor(sum);
    The `monitor()` method  
 :::image-end:::  
 
-Use `unmonitor(method)` to cease monitoring.  
+Use `unmonitor(method)` to end monitoring.  
 
 ## monitorEvents  
 
@@ -398,7 +407,7 @@ monitorEvents(window, "resize");
    Monitoring window resize events  
 :::image-end:::  
 
-The following defines an array to monitor both `resize` and `scroll` events on the window object.  
+The following code snippet defines an array to monitor both `resize` and `scroll` events on the window object.  
 
 ```console
 monitorEvents(window, ["resize", "scroll"]);
@@ -419,7 +428,7 @@ In the following code sample, the `key` event type corresponding to `key` events
 monitorEvents($0, "key");
 ```  
 
-In the following figure the sample output after typing a character in the text field is displayed.  
+In the following figure, the sample output after typing a character in the text field is displayed.  
 
 :::image type="complex" source="../media/console-monitor-events-type-t-y.msft.png" alt-text="Monitoring key events" lightbox="../media/console-monitor-events-type-t-y.msft.png":::
    Monitoring key events  
@@ -441,7 +450,7 @@ Starts a JavaScript CPU profiling session with an optional name.  The [profileEn
     
 1.  Run the [profileEnd()](#profileend) method to stop profiling and display the results in the **Memory** tool.  
 
-Profiles may also be nested.  In the following code samples and figure the result is the same regardless of the order.  
+Profiles may also be nested.  In the following code samples and figure, the result is the same whatever the order.  
 
 ```console
 profile('A');
@@ -468,7 +477,7 @@ Completes a JavaScript CPU profiling session and displays the results in the **M
     profileEnd("My profile")
     ```  
 
-Profiles may also be nested.  In the following code sample and figure the result is the same regardless of the order.  
+Profiles may also be nested.  In the following code sample and figure, the result is the same whatever the order.  
 
 ```console
 profile('A');
@@ -552,7 +561,7 @@ table(names);
 undebug(method)
 ```  
 
-Stops the debugging of the specified method so that when the method is requested, the debugger is no longer invoked.  
+Stops the debug of the specified method. So when the method is requested, the debugger is no longer invoked.  
 
 ```console
 undebug(getData);
@@ -576,7 +585,7 @@ unmonitor(getData);
 unmonitorEvents(object[, events])
 ```  
 
-Stops monitoring events for the specified object and events.  For example, the following stops all event monitoring on the window object.  
+Stops monitoring events for the specified object and events.  For example, the following code snippet stops all event monitoring on the window object.  
 
 ```console
 unmonitorEvents(window);

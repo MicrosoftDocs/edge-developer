@@ -1,6 +1,6 @@
 ---
 description: If you find yourself typing the same JavaScript expressions into the Console repeatedly, try Live Expressions instead.
-title: Watch JavaScript expression values in real-time with Live Expressions
+title: Watch JavaScript expression values in real time with Live Expressions
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/24/2021
@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Monitor changes in JavaScript using Live Expressions
 
-**Live Expressions** are an excellent way to monitor JavaScript expressions that change a lot.  Instead of having a lot of Console messages to read and navigate you may pin each to the top of the **Console**.
+**Live Expressions** are an excellent way to monitor JavaScript expressions that change a lot.  Instead of having many Console messages to read and navigate you may pin each to the top of the **Console**.
 
 ## Adding a new live expression
 
@@ -60,11 +60,11 @@ You may create as many expressions as you want and persist each across browser s
 
 For example, you want to monitor the mouse movement in the current webpage.  Navigate to [Logging Mouse Movement demo][GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml], open the **Console**, and move your mouse around to display the logs with lot of information.  
 
-:::image type="complex" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="Console displays a lot of information on mouse position" lightbox="../media/console-live-expression-mouse-logging.msft.png":::
-    **Console** displays a lot of information on mouse position  
+:::image type="complex" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="Console displays much information on mouse position" lightbox="../media/console-live-expression-mouse-logging.msft.png":::
+    **Console** displays much information on mouse position  
 :::image-end:::  
 
-This does not only slow down your debugging process.  It also makes it easy to miss out on changes you want to monitor.  As soon as you move your mouse, the value you wanted to display may already be off screen again as the **Console** moved up.  
+It not only slows your debug process, but also makes it easy to miss the changes you want to monitor.  As soon as you move your mouse, the value you wanted to display may already be off screen again as the **Console** moved up.  
 
 To try live expressions as an alternative, complete the following actions.  
 
@@ -77,7 +77,7 @@ That way you always get the information on the same part of your screen and you 
     Display the `x` and `y` position of the mouse as live expressions  
 :::image-end:::  
 
-Live expressions run exclusively on your computer and you do not need to change anything in your code to display.  This is a great way to ensure that only you display the information you want to debug and it does not end up as noise on the computers of the users of your product.
+Live expressions run exclusively on your computer and you do not need to change anything in your code to display.  A great way to ensure that you only display the information you want to debug and it does not end up as noise on the computers of the users of your product.
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
