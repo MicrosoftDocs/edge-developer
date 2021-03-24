@@ -45,7 +45,7 @@ The fastest way to get directly to **Console** is to select `Control`+`Shift`+`J
 
 Read more details about [debug using Console][DevtoolsConsoleConsoleDebugJavascript].  
 
-## Inspecting and filtering information of the current webpage  
+## Inspect and filter information on the current webpage  
 
 The usefulness of **Console** is also a problem.  If you have DevTools open on any webpage, you are likely to display a deluge of information logged to the **Console**.  This became such a problem that DevTools started to get an [Issues][DevtoolsIssuesIndex] tool to cut down on the noise.  
 
