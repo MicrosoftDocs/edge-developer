@@ -11,7 +11,7 @@ keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, I
 ---
 # Feature differences between Microsoft Edge and WebView2  
 
-WebView2 is based on the new Microsoft Edge browser.  You \(a WebView2 developer\) have the opportunity to extend features from the Microsoft Edge browser to WebView2-based apps.  WebView2 includes various use cases and isn't limited to only being a browser.  Some of the Microsoft Edge use cases for browser features should work within the context of WebView2.  
+WebView2 is based off of the Microsoft Edge browser.  You \(a WebView2 developer\) have the opportunity to extend features from the browser to WebView2-based apps. However, WebView2 is not limited to only being a browser. There are many scenarioin which the browser's features are unneccesary or intrusive.     
 
 The purpose of this article is to provide the following information.  
 
@@ -21,7 +21,7 @@ The purpose of this article is to provide the following information.
 
 ## Guiding Principles  
 
-When you think about browser features within the context of WebView2, the WebView team adheres to the following guidelines for most WebView2 features.  
+Browser features within the context of WebView2 should adheres to the following guidelines for most WebView2 features.  
 
 *   Most of the WebView2 features work the same as Microsoft Edge features.  The following exceptions define why a feature is turned off.  
     *   It doesn't make sense within the context of WebView2.  
@@ -30,24 +30,29 @@ When you think about browser features within the context of WebView2, the WebVie
     
 ## Features  
 
-The following list displays the WebViews features that differ from the new Microsoft Edge browser.  
+The following list displays the WebView2 features that differ from the new Microsoft Edge browser.  
 
-| Feature | Details |  
-|:--- |:--- |  
-| Autofill for Addresses | This feature is turned on by default, you may turn it on or off. |  
-| Autofill for Passwords | This feature is turned on by default, you may turn it on or off. |  
-| Autofill for Payments | This feature is turned off. |  
-| Browser Task Manager | This feature is turned off. |  
-| Continue-where-I-left-off prompt | This feature is turned off. |  
-| Downloads | This feature allows you to customize the download UI to manipulate downloads, such as block, redirect, save, pause, and so on.  For more information, navigate to <!--[download api][Webview2ReferenceDownloadApi]-->. |  
-| Family Safety | This feature is turned off. |  
-| Hotkeys | The following shortcuts aren't turned off:  `Ctrl`+`F` and `Ctrl`+`S` |  
-| Immersive Reader | This feature is dependent on the browser UI for control and triggering.  This feature is turned off. |  
-| Intrusive Ads | The UI for this feature is removed.  This feature is turned on. |  
-| Smart Screen | The UI for this feature is removed.  This feature is turned on. |  
-| Translate | This feature is turned off. |  
-| Tracking Prevention | The UI for this feature is removed.  This feature is turned on. |  
-| edge:// URLs | Settings for the browser are displayed on webpages that use internal URLs.  Most of the webpages have Microsoft Edge branding or don't make sense within the context of WebView2.  For more details about the internal URLs that are turned off, navigate to [Blocked internal URLs](#blocked-internal-urls). |  
+| Feature | Default | Configurable | Details |  
+|:--- |:--- |:--- | :--- | 
+| Autofill for Addresses | Enabled | Yes | This feature is turned on by default, you may turn it on or off. |  
+| Autofill for Passwords | Enabled | Yes | This feature is turned on by default, you may turn it on or off. |  
+| Autofill for Payments | Disabled | No | This feature is turned off. | 
+| Browser Extensions | Disabled | No | This feature is turned off. |   
+| Browser Task Manager | Disabled | No | This feature is turned off. |  
+| Continue-where-I-left-off prompt | Disabled | No | This feature is turned off. |  
+| Downloads | Enabled | Yes | This feature allows you to customize the download UI to manipulate downloads, such as block, redirect, save, pause, and so on.  For more information, navigate to <!--[download api][Webview2ReferenceDownloadApi]-->. |  
+| Family Safety | Disabled | No | This feature is turned off. |  
+| Hotkeys | Disabled | No | The following shortcuts aren't turned off:  `Ctrl`+`F` and `Ctrl`+`S` |  
+| IE Mode | Disabled | No | IE Mode is disabled. |  
+| Immersive Reader | Disabled | g | This feature is dependent on the browser UI for control and triggering.  This feature is turned off. |  
+| Intrusive Ads | Disabled | g | The UI for this feature is removed.  This feature is turned on. |  
+| Read Aloud | Disabled | No | The UI for this feature is removed.  This feature is turned on. |  
+| Smart Screen | Enabled | No | The UI for this feature is removed.  This feature is turned on. |  
+| Translate | Disabled | No | This feature is turned off. |  
+| Tracking Prevention | Disabled | No | The UI for this feature is removed.  This feature is turned on. |  
+| User Data Sync | Disabled | No | The feature that syncs your favorites, cookies, etc. between machines is disabled. |  
+| Windows Defender Application Guard | Disabled | No | The feature that syncs your favorites, cookies, etc. between machines is disabled. |  
+| edge:// URLs | See Details | Yes | Settings for the browser are displayed on webpages that use internal URLs.  Most of the webpages have Microsoft Edge branding or don't make sense within the context of WebView2.  For more details about the internal URLs that are turned off, navigate to [Blocked internal URLs](#blocked-internal-urls). |  
 
 ### Blocked internal URLs  
 
@@ -69,9 +74,9 @@ The following built-in Microsoft Edge and Google Chrome webpages aren't availabl
 *   `edge://supervised-user-internals`  
 *   `edge://version`  
     
-## Getting in touch with the Microsoft Edge WebView team  
+## Getting in touch with the Microsoft Edge WebView2 team  
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
+[!INCLUDE [contact WebView2 team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
 
