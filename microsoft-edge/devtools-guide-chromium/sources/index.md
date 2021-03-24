@@ -60,7 +60,7 @@ Additional functionality:
 ## Layout of the Sources tool
 
 :::image type="complex" source="../media/debugging-panes.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging-panes.msft.png":::
-   The three panes of the Sources tool  
+   The three panes of the Sources tool, in wide layout  
 :::image-end:::  
 
 The **Sources** tool has three panes:
@@ -71,7 +71,7 @@ The **Sources** tool has three panes:
 When the **Debugger** pane is shown at the bottom (due to a narrow DevTools window), the Debugger pane is split into two panes, with the **Scope** and **Watch** tabs in the lower-right pane.
 
 :::image type="complex" source="../media/debugging-panes-narrow.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging-panes-narrow.msft.png":::
-   The three panes of the Sources tool  
+   The three panes of the Sources tool, in narrow layout
 :::image-end:::  
 
 ### Maximizing the DevTools window
@@ -145,13 +145,17 @@ The JavaScript Debugger in DevTools, in the **Debugger** pane, is designed to lo
 [the debugger in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging) and
 [the debugger in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2019).
 
-To infer where your JavaScript is going wrong, you can use the simple approach of inserting `console.log()` statements in the **Editor** pane.  Another approach, that's more powerful (yet can also be simple), is to use the debugger of Microsoft Edge DevTools:
+To infer where your JavaScript is going wrong, you can use the simple approach of inserting `console.log()` statements in the **Editor** pane.  Another approach, that's more powerful (yet can also be simple), is to use the debugger of Microsoft Edge DevTools.
 
-1. Set a breakpoint (an intentional stopping place in the code), run the code at full speed up to the line of code on which the breakpoint is set, and then step through the lines of code, starting at that breakpoint.  
+The basic approach to using a debugger is to set a breakpoint (an intentional stopping place in the code), run the code at full speed up to the line of code on which the breakpoint is set, and then step through the lines of code, starting at that breakpoint.  
 
-    For example, the tutorial [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] uses an existing, simple webpage with a few form controls.  In the tutorial, to get into the "Paused at breakpoint" mode, in the **Debugger** pane, you expand **Event Listener Breakpoints** \> **Mouse**, and then select the **Click** check box.  When you click the button in the webpage (a form), the code runs and then pauses at the `onClick` handler function.  You then set a breakpoint on another line and step through the code. 
+For example, the tutorial [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] uses an existing, simple webpage with a few form controls.  In the tutorial, to get into the "Paused" mode, in the **Debugger** pane, you expand **Event Listener Breakpoints** \> **Mouse**, and then select the **Click** check box so that a check mark appears.  When you click the **Add Numbers** button in the webpage (a form), the code runs and then pauses at the `onClick` event handler function.  You then set a breakpoint on a suspect line of code, and step through the code. 
 
-1. As you step through the code, you may display and change the values of all currently-defined properties and variables, issue JavaScript statements in the **Console**, and more.
+:::image type="complex" source="../media/sources-paused-breakpoint.msft.png" alt-text="Debug JavaScript" lightbox="../media/debugging-panes-narrow.msft.png":::
+   Entering Paused mode of the Debugger  
+:::image-end:::  
+
+As you step through the code, you may display and change the values of all currently-defined properties and variables, issue JavaScript statements in the **Console**, and more.
 
 Breakpoints are preserved when you refresh the page.
 
