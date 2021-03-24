@@ -11,7 +11,7 @@ keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, I
 ---
 # Feature differences between Microsoft Edge and WebView2  
 
-WebView2 is based on the new Microsoft Edge browser.  You \(a WebView2 developer\) have the opportunity to extend features from the Microsoft Edge to WebView2-based apps.  WebView2 includes various use cases and isn't limited to only being a browser.  Some of the Microsoft Edge use cases for browser features should work within the context of WebView2.  
+WebView2 is based on the new Microsoft Edge browser.  You \(a WebView2 developer\) have the opportunity to extend features from the Microsoft Edge browser to WebView2-based apps.  WebView2 includes various use cases and isn't limited to only being a browser.  Some of the Microsoft Edge use cases for browser features should work within the context of WebView2.  
 
 The purpose of this article is to provide the following information.  
 
