@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This article teaches you the basic workflow for debugging any JavaScript issue in DevTools.  
 
+The debugger is part of the Sources tool.  For an overview of the Sources tool, navigate to [Sources tool overview](../sources/index.md).
+
 ## Step 1: Reproduce the bug  
 
 Finding a series of actions that consistently reproduce a bug is always the first step to debugging.  
