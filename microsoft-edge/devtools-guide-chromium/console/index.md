@@ -1,114 +1,167 @@
 ---
-description: The main uses of the Microsoft Edge DevTools Console are logging messages and running JavaScript.
-title: Console overview
+description: An introduction to the Console tool inside the Microsoft Edge Developer Tools.
+title: Use the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright Kayce Basques 
+# Use the Console  
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+The **Console** tool of the DevTools helps you with several tasks.  The following list includes some of the tasks.  
 
-       https://www.apache.org/licenses/LICENSE-2.0
+*   Find out why something is not working in the current project by [track down problems][DevtoolsConsoleConsoleDebugJavascript].  
+*   [Get information about the web project][DevtoolsConsoleConsoleFiltering] in the browser as log messages.  
+*   [Log information][DevtoolsConsoleConsoleLog] in scripts for debugging purposes.  
+*   [Try the JavaScript expressions][DevtoolsConsoleConsoleJavascript] live in a [REPL][WikiReadEvalPrintLoop] fashion.  
+*   [Interact with the web project in the browser][DevtoolsConsoleConsoleDomInteraction] using JavaScript.  
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.  -->
-
-# Console overview  
-
-  
-
-This page explains how the Microsoft Edge DevTools Console makes it easier to develop web pages.  The **Console** has 2 main uses: [viewing logged messages](#viewing-logged-messages) and [running JavaScript](#running-javascript).  
-
-## Viewing logged messages  
-
-Web developers often log messages to the Console to make sure that their JavaScript is working as expected.  To log a message, you insert an expression like `console.log('Hello, Console!')` into your JavaScript.  When the browser runs your JavaScript and processes an expression like it, the browser logs the message to the **Console**.  
+The versatility of the **Console** made it one of the few tools in DevTools that you open in several places.  It may display as part of the upper panel and also live in the bottom drawer.  It is a great companion tool to have open with others as it is a powerful way to try the script functionality and inspect and manipulate the current webpage using JavaScript.  
 
 :::row:::
    :::column span="":::
-      The HTML and JavaScript for the page.  
-      
-      ```html
-      <!doctype html>
-      <html>
-          <head>
-              <title>Console Demo</title>
-          </head>
-          <body>
-              <h1>Hello, World!</h1>
-              <script>
-                  console.log('Loading!');
-                  const h1 = document.querySelector('h1');
-                  console.log(h1.textContent);
-                  console.assert(document.querySelector('h2'), 'h2 not found!');
-                  const artists = [
-                      { first: 'René', last: 'Magritte' },
-                      { first: 'Chaim', last: 'Soutine' },
-                        
-                  ];
-                  console.table(artists);
-                  setTimeout(() => {
-                      h1.textContent = 'Hello, Console!';
-                      console.log(h1.textContent);
-                  }, 3000);
-              </script>
-          </body>
-      </html>
-      ```  
+      :::image type="complex" source="../media/console-intro-console-main.msft.png" alt-text="The Console tool open in the upper panel" lightbox="../media/console-intro-console-main.msft.png":::
+         The **Console** tool open in the upper panel  
+      :::image-end:::  
    :::column-end:::
    :::column span="":::
-      In the following figure, the **Console** displays the results of loading the page and waiting 3 seconds.  
-      
-      :::image type="complex" source="../media/console-console-demo.msft.png" alt-text="The Console panel" lightbox="../media/console-console-demo.msft.png":::
-         The **Console** tool  
+      :::image type="complex" source="../media/console-intro-console-panel.msft.png" alt-text="Console in the lower panel with the Elements tool open above it" lightbox="../media/console-intro-console-panel.msft.png":::
+         **Console** in the lower panel with the **Elements** tool open above it  
       :::image-end:::  
-      
-      Try to determine which lines of code caused the browser to log the messages.  
    :::column-end:::
 :::row-end:::  
 
-Web developers log messages for the following 2 general reasons.  
+The fastest way to get directly to **Console** is to select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).  
 
-*   Making sure that code is running in the right order.  
-*   Inspecting the values of variables at a certain moment in time.  
+## Error reports and Console  
 
-To get hands-on experience with logging, navigate to [Get Started With Logging Messages][DevtoolsConsoleLoggingMessages].  To browse the full list of `console` methods, navigate to the [Console API Reference][DevToolsConsoleAPI].  The main difference between the methods is how the data being logged is displayed.  
+**Console** is the default place where JavaScript and connectivity errors are reported.  If any errors occur, a button displays next to the **Settings** icon in DevTools that provides the amount of errors and warnings.  Choose it to open the **Console** and display the problem.  
 
-## Running JavaScript  
+:::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools gives detailed information about the error in the Console" lightbox="../media/console-debug-displays-error.msft.png":::
+   DevTools gives detailed information about the error in the **Console**  
+:::image-end:::  
 
-The **Console** is also a [REPL][WikiREPLoop].  You may run JavaScript in the **Console** to interact with the page being inspected.   
+Read more details about [debug using Console][DevtoolsConsoleConsoleDebugJavascript].  
 
-:::row:::
-   :::column span="":::
-      In the following figure, the **Console** is shown next to the DevTools homepage.  
-      
-      :::image type="complex" source="../media/devtools-console-empty.msft.png" alt-text="The Console tool next to the DevTools homepage" lightbox="../media/devtools-console-empty.msft.png":::
-         The **Console** tool next to the DevTools homepage  
-      :::image-end:::  
-   :::column-end:::
-   :::column span="":::
-      In the following figure, the same page is shown after using the **Console** to change the top heading of the page.
-      
-      :::image type="complex" source="../media/devtools-console-h1-changed.msft.png" alt-text="Use the Console to change the top heading of the page" lightbox="../media/devtools-console-h1-changed.msft.png":::
-         Use the **Console** to change the top heading of the page  
-      :::image-end:::  
-   :::column-end:::
-:::row-end:::
+## Inspecting and filtering information of the current webpage  
 
-Modifying the page from the **Console** is possible because the **Console** has full access to the [window][MDNWindow] of the page.  DevTools has a few convenience functions that make it easier to inspect a page.  For example, suppose that your JavaScript contains a function called `hideModal`.  Running `debug(hideModal)` pauses your code on the first line of `hideModal` the next time that you run it.  For more information about the full list of utility functions, navigate to [Console Utilities API Reference][DevtoolsConsoleUtilitiesDebug].  
+The usefulness of **Console** is also a problem.  If you have DevTools open on any webpage, you are likely to display a deluge of information logged to the **Console**.  This became such a problem that DevTools started to get an [Issues][DevtoolsIssuesIndex] tool to cut down on the noise.  
 
-When you run JavaScript you do not have to interact with the page.  You may use the **Console** to try out new code unrelated to the page.  For example, suppose you just learned about the built-in JavaScript Array [map()][MDNMap] method, and you want to experiment with it.  
-The **Console** is a good place to try out the function.  
+:::image type="complex" source="../media/console-intro-noise.msft.png" alt-text="DevTools with a Console full of messages" lightbox="../media/console-intro-noise.msft.png":::
+   DevTools with a **Console** full of messages  
+:::image-end:::  
 
-For more hands-on experience with running JavaScript in the **Console**, navigate to [Get Started With Running JavaScript][DevtoolsConsoleRunningJavascript].  
+A lot of noise remains, which is why it is a good idea to know about [automated log and filter options][DevtoolsConsoleConsoleFiltering] of the **Console**.  
+
+## Log information to display in Console  
+
+Probably the biggest use case of **Console** is logging information in your scripts using `console.log()` and similar methods.  To try it, complete the following actions.  
+
+1.  Open **Console**.
+    *   Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).  
+1.  Navigate to [Console messages examples: log, info, error and warn][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml] or copy the following code snippet in the **Console**.  
+    
+    ```javascript
+    console.log('This is a log message');
+    console.info('This is some information'); 
+    console.error('This is an error');
+    console.warn('This is a warning');
+    console.log(document.body.getBoundingClientRect());
+    console.table(document.body.getBoundingClientRect());
+    let technologies = ["HTML", "CSS", "SVG", "ECMAScript"];
+    console.groupCollapsed('Technolgies');
+    technologies.forEach(tech => {console.info(tech);})
+    console.groupEnd('Technolgies');
+    ```  
+    
+1.  The **CONSOLE** displays the results.  
+    
+    :::image type="complex" source="../media/console-intro-logging.msft.png" alt-text="DevTools with a Console full of messages caused by the demo code" lightbox="../media/console-intro-logging.msft.png":::
+       DevTools with a **Console** full of messages caused by the demo code  
+    :::image-end:::  
+    
+This is one example.  A lot of useful methods afre available and you should dive deeper into the options of [log to Console][DevtoolsConsoleConsoleLog].  
+
+## Try your JavaScript live in Console  
+
+**Console** is not only a place to log information, it is also a [REPL][WikiReadEvalPrintLoop] environment, which means that you may write any JavaScript in it and it get runs immediately.  This is useful if you just want to play with some new JavaScript features or do some quick calculations.  You get all the features you expect from a modern editing environment, like autocompletion, syntax highlighting and history.  
+
+To try it, complete the following actions.  
+
+1.  Navigate to **Console**.  
+1.  Type `2 + 2`.  
+    
+The **Console** displays the result `4` on the following line as you type it.  This is a feature named **Eager evaluation** and is handy to display that you are not making any mistakes.  
+
+:::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console displays the result of 2 + 2 live as you type it" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
+   **Console** displays the result of `2 + 2` live as you type it  
+:::image-end:::  
+
+If you hit `Enter`, **Console** runs the JavaScript command and give you the result and you may write the next command.  
+
+:::image type="complex" source="../media/console-javascript-several-expressions.msft.png" alt-text="Run several JavaScript expressions in succession" lightbox="../media/console-javascript-several-expressions.msft.png":::
+   Run several JavaScript expressions in succession  
+:::image-end:::  
+
+You only have one line to write your JavaScript expressions as you select `Enter` to run the code.  To work around the single line limitation, select `Shift`+`Enter`.  As with many other terminal-like experiences you also have a history of commands.  Select `Arrow-Up` to display the commands you previously entered.  
+
+The autocompletion feature of **Console** may be a great way to learn about methods you did not know before.  To try it, complete the following actions.  
+
+1.  Open the **Console**.  
+1.  Type `doc`.  
+1.  Choose `document` from the dropdown menu.  
+1.  Select the `tab` key to choose it.  
+1.  Type `.bo`.  
+1.  Select `tab` to get `document.body`.  
+1.  Type another `.` to display a huge list of possible properties and methods available on the body of the current webpage.  
+    
+:::image type="complex" source="../media/console-javascript-autocomplete.msft.png" alt-text="Console autocompletion of JavaScript expressions" lightbox="../media/console-javascript-autocomplete.msft.png":::
+   **Console** autocompletion of JavaScript expressions  
+:::image-end:::  
+
+A few more tricks are available. To learn more, navigate to [Console as a JavaScript environment][DevtoolsConsoleConsoleJavascript].  
+
+## Interact with the current webpage in the browser  
+
+As **Console** has access to the [Window][MdnDocsWebApiWindow] object of the browser you may write scripts that interact with the current webpage.  To try it, open the **Console** and type or copy and paste the following code snippet.  
+
+```javascript
+document.querySelector('h1').innerHTML
+```  
+
+:::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="Read content from the DOM in Console" lightbox="../media/console-intro-reading-DOM.msft.png":::
+   Read content from the DOM in **Console**  
+:::image-end:::  
+
+Instead of only reading from the webpage, you may also change it.  To try it, open the **Console** and type or copy and paste the following code snippet.  
+
+```javascript
+document.querySelector('h1').innerHTML = 'Rocking the Console';
+```  
+
+:::image type="complex" source="../media/console-intro-wrtiting-DOM.msft.png" alt-text="Write to the DOM in Console" lightbox="../media/console-intro-wrtiting-DOM.msft.png":::
+   Write to the DOM in **Console**  
+:::image-end:::  
+
+You changed the main heading of the webpage to **Rocking the Console**  
+
+In addition to any JavaScript you want run, **Console** also comes with a lot of [Utility methods][DevtoolsConsoleUtilities] that make it even easier to access and manipulate the current webpage.  For example, if you want to add a green border around all the links in the current webpage, use the following code snippet.  
+
+```javascript
+$$('a').forEach(a => a.style.border='1px solid lime');
+```  
+
+:::image type="complex" source="../media/console-intro-changing-styles.msft.png" alt-text="Manipulate a selection of elements using Console" lightbox="../media/console-intro-changing-styles.msft.png":::
+    Manipulate a selection of elements using **Console**  
+:::image-end:::  
+
+Want to learn more?  Navigate to [DOM Interaction in Console][DevtoolsConsoleConsoleDomInteraction].  
+
+## Learn more about Console  
+
+If you want to go deep and learn all about the functionality of **Console** feel free to check the [Reference][DevtoolsConsoleReference], the [Utility methods][DevtoolsConsoleUtilities] and the [API docs][DevtoolsConsoleApi].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
@@ -116,24 +169,18 @@ For more hands-on experience with running JavaScript in the **Console**, navigat
 
 <!-- links -->  
 
-[DevToolsConsoleAPI]: ./api.md "Console API Reference | Microsoft Docs"  
-[DevtoolsConsoleLoggingMessages]: ./log.md "Get Started With Logging Messages In The Console | Microsoft Docs"  
-[DevtoolsConsoleRunningJavascript]: ./javascript.md "Get Started With Running JavaScript In The Console | Microsoft Docs"  
-[DevtoolsConsoleUtilitiesDebug]: ./utilities.md#debug "debug - Console Utilities API Reference | Microsoft Docs"  
+[DevtoolsConsoleApi]: ./api.md "Console API Reference | Microsoft Docs"  
+[DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "Debug errors reported in Console | Microsoft Docs"  
+[DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "Use the Console to interact with the DOM | Microsoft Docs"  
+[DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Console as a JavaScript environment | Microsoft Docs"  
+[DevtoolsConsoleConsoleLog]: ./console-log.md "Logs in the Console tool | Microsoft Docs"  
+[DevtoolsConsoleReference]: ./reference.md "Console reference | Microsoft Docs"  
+[DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
 
-[MDNMap]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map "Array.prototype.map() | MDN"  
-[MDNWindow]: https://developer.mozilla.org/docs/Web/API/Window "Window | MDN"  
+[DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
 
-[WikiREPLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read–eval–print loop - Wikipedia"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html "Console messages examples: log, info, error and warn | GitHub"  
 
-> [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+[MdnDocsWebApiWindow]: https://developer.mozilla.org/docs/Web/API/Window "Window | MDN"  
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read–eval–print loop | Wikipedia"  
