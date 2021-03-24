@@ -44,7 +44,7 @@ Complete the following actions to edit a script.
        The **Editor** pane  
     :::image-end:::  
      
-### Reformat a file with pretty-print
+## Reformat a minified JavaScript file with pretty-print
 
 To make a minified file human-readable, choose the **Format** \(![Format](../media/format-icon.msft.png)\) button.
 
