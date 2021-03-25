@@ -50,9 +50,9 @@ Use one the following actions to select an element.
 
 ### View the external stylesheet where a rule is defined  
 
-In the **Styles** pane, choose the link next to a CSS rule to open the external stylesheet that defines the rule.  
+In the **Styles** pane, choose the link next to a CSS rule to open the external stylesheet that defines the rule.  The stylesheet opens in the **Editor** pane of the **Sources** tool.  
 
-If the stylesheet is minified, navigate to [Reformat a minified JavaScript file with pretty-print][DevToolsJavascriptReferenceFormat].  
+If the stylesheet is minified, choose the **Format** \(![Format](../media/format-icon.msft.png)\) button, at the bottom of the **Editor** pane.  For more information, navigate to [Reformat a minified JavaScript file with pretty-print][DevToolsJavascriptReferenceFormat].  
 
 > [!NOTE]
 > In the following figure, after you choose `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` you are taken to line 2 of `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.  
