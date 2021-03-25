@@ -24,9 +24,9 @@ The WebView2 control is based on the [Component Object Model (COM)][WindowsWin32
 
 ## Thread safety  
 
-The WebView2 must be created on a UI thread.  Specifically, a thread with a message pump.  All callbacks occur on that thread and requests into the WebView2 must be done on that thread.  It is not safe to use the WebView2 from another thread.  
+The WebView2 must be created on a UI thread.  Specifically, a thread with a message pump.  All callbacks occur on that thread and requests into the WebView2 must be done on that thread.  Because all callbacks occur on that thread, blocking the UI thread of the WebView2 will also block all WebView2 event handlers and WebView2 asynchronous method completion handlers. For example, using [Task.Result][TaskResultDocumentation] or [WaitForSingleObject][WaitForSingleObjectDocumentation] will block the message pump on a UI thread and so will block all WebView2 event handlers and WebView2 asynchronous method completion handlers. Instead use an asynchronous await mechanism such as await or anything else that won't block the message pump.
 
-The only exception is for the `Content` property of `CoreWebView2WebResourceRequest`.  The `Content` property stream is read from a background thread.  The stream should be agile or be created from a background STA to prevent performance impact to the UI thread.  
+It is not safe to use the WebView2 from another thread.  The only exception is for the `Content` property of `CoreWebView2WebResourceRequest`.  The `Content` property stream is read from a background thread.  The stream should be agile or be created from a background STA to prevent performance impact to the UI thread.  
 
 ## Re-entrancy  
 
@@ -61,3 +61,5 @@ For instance, you may use the `NewWindowRequested` event to provide a `CoreWebVi
 [WindowsWin32ComTheComponentObjectModel]: /windows/win32/com/the-component-object-model "The Component Object Model | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
+[TaskResultDocumentation]: https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task-1.result?view=net-5.0#remarks "Task<TResult>.Result Property (System.Threading.Tasks) | Microsoft Docs"
+[WaitForSingleObjectDocumentation]: https://docs.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject "WaitForSingleObject function (synchapi.h) - Win32 apps | Microsoft Docs"
