@@ -3,12 +3,24 @@ description: New CSS Grid debugging tools, Webauthn tool, moveable tools, and Co
 title: What's new in DevTools (Microsoft Edge 87)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/22/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
+<!-- Copyright Jecelyn Yeen 
 
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->  
 # What's New In DevTools (Microsoft Edge 87)  
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
@@ -110,7 +122,7 @@ To enable the experiment, navigate to [Turn on Experimental features][DevtoolsEx
 
 ## Introducing the Microsoft Edge Tools for Visual Studio Code extension  
 
-The **Elements for Visual Studio Code** and **Network for Visual Studio Code** extensions are now merged into the new [Microsoft Edge Developer Tools for Visual Studio Code][VisualStudioCodeMarketplaceMsEdgedevtools] extension.  Use the Microsoft Edge DevTools for the following activities without leaving Visual Studio Code.  
+The **Elements for Visual Studio Code** and **Network for Visual Studio Code** extensions are now merged into the new [Microsoft Edge Developer Tools for Visual Studio Code][VisualStudioCodeMarketplaceMsEdgedevtools] extension.  Use the Microsoft Edge DevTools for the following activities without leaving Microsoft Visual Studio Code.  
 
 *   Debug the DOM  
 *   Edit CSS  

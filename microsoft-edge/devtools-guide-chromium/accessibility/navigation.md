@@ -3,7 +3,7 @@ description: A guide on navigating Microsoft Edge DevTools using assistive techn
 title: Navigate Microsoft Edge DevTools with assistive technology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 02/12/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -24,7 +24,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Navigate Microsoft Edge DevTools with assistive technology  
 
-The following article aims to help users who primarily rely on assistive technology like screen readers access and use [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] is a suite of web developer tools built into the Microsoft Edge browser.  If you are looking for DevTools features related to improving the accessibility of a web page,  see [Accessibility Reference][DevtoolsAccessibilityReference].  
+The following article aims to help users who primarily rely on assistive technology like screen readers access and use [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] is a suite of web developer tools built into the Microsoft Edge browser.  If you are looking for DevTools features related to improving the accessibility of a web page,  navigate to [Accessibility Reference][DevtoolsAccessibilityReference].  
 
 The accessibility of DevTools is a work-in-progress.  Some panels and tabs work better with assistive technology than others.  This guide walks you through the panels which are the most accessible and highlights specific issues you may encounter along the way.  
 
@@ -34,11 +34,11 @@ Before starting, it helps to have a mental model of how the DevTools UI is struc
 
 For example:  
 
-*   The **Elements** panel lets you [view and change DOM nodes][DevtoolsDomIndexNavigateDomTreeKeyboard] or [CSS][DevtoolsCssIndex].  
+*   The **Elements** tool lets you [view and change DOM nodes][DevtoolsDomIndexNavigateDomTreeKeyboard] or [CSS][DevtoolsCssIndex].  
 *   The [Console panel][DevtoolsConsoleIndex] lets you read JavaScript logs and live edit objects.  
 
 Within the content area of each panel, there are a number of different tools, often referred to as tabs or panes in the documentation.  
-For instance, the **Elements** panel contains additional tabs to inspect event listeners, the accessibility tree, and much more.  The distinction between tabs and panes is somewhat arbitrary.  The only reason you may see one term or the other is to maintain consistency with the rest of the official DevTools documentation.  
+For instance, the **Elements** tool contains additional tabs to inspect event listeners, the accessibility tree, and much more.  The distinction between tabs and panes is somewhat arbitrary.  The only reason you may review one term or the other is to maintain consistency with the rest of the official DevTools documentation.  
 
 ## Keyboard shortcuts  
 
@@ -58,7 +58,7 @@ To get started, navigate to [Open Microsoft Edge DevTools][DevtoolsOpen].  There
 
 **Known issues**  
 
-*   Some panels, such as the **Console** and **Performance** panels, may move focus into the panel content area as soon as each panel is activated.  This may make navigating by arrow keys difficult.  
+*   Some panels, such as the **Console** and **Performance** tools, may move focus into the panel content area as soon as each panel is activated.  This may make navigating by arrow keys difficult.  
 *   The name of the selected panel is announced, but only after it has read the focused content in the panel.  This may make it very easy to miss.  
 
 ### Navigate by Command Menu  
@@ -70,13 +70,13 @@ To focus a specific panel, use the [Command Menu][DevtoolsCommandMenuIndex]:
 1.  Type the name of the panel you want to open, then use the `Down Arrow` on the keyboard to navigate to the correct option.  
 1.  Select `Enter` to run a command.  
 
-Complete the following actions to open the **Elements** panel.  
+Complete the following actions to open the **Elements** tool.  
 
 1.  Open the **Command Menu**.  
 1.  Type `E` then `L`.  The **Panel > Show Elements** option is selected.  
 1.  Select `Enter` to run the command that opens the panel.  
 
-Open a panel this way directs focus to the contents of the panel.  In the case of the **Elements** panel, focus moves into the **DOM Tree**.  
+Open a panel this way directs focus to the contents of the panel.  In the case of the **Elements** tool, focus moves into the **DOM Tree**.  
 
 ## Elements panel  
 
@@ -116,9 +116,9 @@ The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  For an example,
 
 For example, when you type `h3` and select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\), the start and end tags of the `h3` element change.  
 
-## Elements panel tabs  
+## Elements tool panels  
 
-The **Elements** panel contains additional tabs for inspecting things like the CSS applied to an element or the relevant place in the accessibility tree.  
+The **Elements** tool contains additional tabs for inspecting things like the CSS applied to an element or the relevant place in the accessibility tree.  
 
 *   With focus on a node in the **DOM Tree**, select `Tab` until you hear that the **Styles** pane is selected.  
 *   Use the `Right Arrow` to explore other available tabs.  
@@ -167,7 +167,7 @@ To toggle the state of an element, such as `:active` or `:focus`:
 
 Adjacent to the **Toggle Element State** button is the **Element Classes** button.  To move the focus to it, select `Tab` and select `Enter`.  Focus moves into an edit text field labeled **Add New Class**.  
 
-The **Element Classes** button is primarily used for adding existing classes to an element.  For example, if your stylesheet contained a helper class named `.clearfix` you may select `.` inside of the edit text field to see a suggestion list of classes and use the `Down Arrow` to find the `.clearfix` suggestion.  Or type the class name out yourself and select `Enter` to apply it.  
+The **Element Classes** button is primarily used for adding existing classes to an element.  For example, if your stylesheet contained a helper class named `.clearfix` you may select `.` inside of the edit text field to display a suggestion list of classes and use the `Down Arrow` to find the `.clearfix` suggestion.  Or type the class name out yourself and select `Enter` to apply it.  
 
 #### Add a new style rule  
 
@@ -190,7 +190,7 @@ Select `Tab` until you reach the collection of computed styles.  These are prese
 
 ### Event listeners tab  
 
-From within the **Elements** panel you may inspect the event listeners applied to an element using the **Event Listeners** tab.  With focus on the **Styles** pane, select the `Right Arrow` to navigate to the **Event Listeners** tab.  
+From within the **Elements** tool you may inspect the event listeners applied to an element using the **Event Listeners** tab.  With focus on the **Styles** panel, select the `Right Arrow` to navigate to the **Event Listeners** panel.  
 
 #### Explore event listeners  
 
@@ -212,11 +212,11 @@ The **Accessibility Tree** is presented as an [ARIA tree][W3CWaiAriaTree] where 
 
 ## Audits panel  
 
-The **Audits** panel you should run a series of tests against a site to check for common issues related to performance, accessibility, SEO, and a number of other categories.  
+The **Audits** tool you should run a series of tests against a site to check for common issues related to performance, accessibility, SEO, and a number of other categories.  
 
 ### Configure and run an audit  
 
-1.  When the **Audits** panel is first opened, focus is placed on the **Run Audit** button at the end of the form.  By default the form is configured to run audits for every category using mobile emulation on a simulated 3G connection.  
+1.  When the **Audits** tool is first opened, focus is placed on the **Run Audit** button at the end of the form.  By default the form is configured to run audits for every category using mobile emulation on a simulated 3G connection.  
 1.  Use `Shift`+`Tab` or navigate back in Browse mode to change the audit settings.  
 1.  When you are ready to run the audit, navigate back to the **Run Audit** button and select `Enter`.  
 1.  Focus moves into a modal window with a **Cancel** button which allows you to exit the audit.  You may hear a series of earcons as the audit runs and refreshes the page multiple times.  
@@ -240,7 +240,7 @@ To run a new audit, use `Shift`+`Tab` to exit the report and look for the **Perf
 
 [DevtoolsAccessibilityReference]: ./reference.md "Accessibility reference | Microsoft Docs"  
 [DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference | Microsoft Docs"  
-[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsConsoleIndex]: ../console/index.md "Console Overview | Microsoft Docs"  
 [DevtoolsCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
@@ -248,9 +248,9 @@ To run a new audit, use `Shift`+`Tab` to exit the report and look for the **Perf
 <!--[DevtoolsDomIndex]: ../dom/index.md "Get started with viewing and changing the DOM | Microsoft Docs"  -->  
 [DevtoolsDomIndexViewDomNodes]: ../dom/index.md#view-dom-nodes "View DOM nodes - Get started with viewing and changing the DOM | Microsoft Docs"  
 [DevtoolsDomIndexNavigateDomTreeKeyboard]: ../dom/index.md#navigate-the-dom-tree-with-a-keyboard "Navigate the DOM Tree with a keyboard - Get started with viewing and changing the DOM | Microsoft Docs"  
-[DevtoolsOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsShortcuts]: ../shortcuts.md "Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
-[DevtoolsShortcutsStylesPaneKeyboard]: ../shortcuts.md#styles-pane-keyboard-shortcuts "Styles pane keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
+[DevtoolsOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
+[DevtoolsShortcutsStylesPaneKeyboard]: ../shortcuts/index.md#styles-panel-keyboard-shortcuts "Styles panel keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
 
 [ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "Issue 868480 - Expose ARIA trees as tables in Mac accessibility"  
 

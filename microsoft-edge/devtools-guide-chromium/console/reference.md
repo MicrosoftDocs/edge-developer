@@ -1,9 +1,9 @@
 ---
 description: A comprehensive reference on every feature and behavior related to the Console UI in Microsoft Edge DevTools.
-title: Console Reference
+title: Console reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,31 +22,31 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Console Reference  
+# Console reference  
 
 This page is a reference of features related to the Microsoft Edge DevTools Console.  It assumes that you are already familiar with using the Console to view logged messages and run JavaScript.  If not, navigate to [Get Started With Running JavaScript In The Console][DevToolsConsoleJavascript] and [Get Started With Logging Messages In The Console][DevToolsConsoleLog].  
 
-If you are looking for the API reference on functions like `console.log()` see [Console API Reference][DevToolsConsoleApi].  For the reference on functions like `monitorEvents()`, navigate to [Console Utilities API Reference][DevToolsConsoleUtilities].  
+If you are looking for the API reference on functions like `console.log()`, navigate to [Console API Reference][DevToolsConsoleApi].  For the reference on functions like `monitorEvents()`, navigate to [Console Utilities API Reference][DevToolsConsoleUtilities].  
 
 ## Open the Console  
 
-You may open the Console as a [panel](#open-the-console-panel) or as a [tab in the Drawer](#open-the-console-tab-in-the-drawer).  
+You may open the **Console** as a [tool in the upper pane](#open-the-console-tool) or as a [tool in the Drawer](#open-the-console-tool-in-the-drawer).  
 
-### Open the Console panel  
+### Open the Console tool  
 
 Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).  
 
-:::image type="complex" source="../media/console-hello-console.msft.png" alt-text="The Console panel" lightbox="../media/console-hello-console.msft.png":::
-   The **Console** panel  
+:::image type="complex" source="../media/console-hello-console.msft.png" alt-text="The Console tool" lightbox="../media/console-hello-console.msft.png":::
+   The **Console** tool  
 :::image-end:::  
 
-To open the Console panel from the [Command Menu][DevToolsCommandMenu], start typing `Console` and then run the **Show Console** command that has the **Panel** badge next to it.  
+To open the **Console** tool from the [Command Menu][DevToolsCommandMenu], start typing `Console` and then run the **Show Console** command that has the **Panel** badge next to it.  
 
 :::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="The command to show the Console panel" lightbox="../media/console-command-menu-show-console.msft.png":::
-   The command to show the **Console** panel  
+   The command to show the **Console** tool  
 :::image-end:::  
 
-### Open the Console tab in the Drawer  
+### Open the Console tool in the Drawer  
 
 Select `Escape` or choose **Customize And Control DevTools** \(`...`\) and then choose **Show console drawer**.  
 
@@ -54,21 +54,21 @@ Select `Escape` or choose **Customize And Control DevTools** \(`...`\) and then 
    **Show console drawer**  
 :::image-end:::  
 
-The Drawer pops up at the bottom of your DevTools window, with the **Console** tab open.  
+The Drawer pops up at the bottom of your DevTools window, with the **Console** tool open.  
 
-:::image type="complex" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="The Console tab in the Drawer" lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
-   The **Console** tab in the **Drawer**  
+:::image type="complex" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="The Console tool in the Drawer" lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
+   The **Console** tool in the **Drawer**  
 :::image-end:::  
 
-To open the Console tab from the [Command Menu][DevToolsCommandMenu], start typing `Console` and then run the **Show Console** command that has the **Drawer** badge next to it.  
+To open the **Console** tool from the [Command Menu][DevToolsCommandMenu], start typing `Console` and then run the **Show Console** command that has the **Drawer** badge next to it.  
 
-:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="The command to show the Console tab in the Drawer" lightbox="../media/console-command-menu-show-console.msft.png":::
-   The command to show the **Console** tab in the **Drawer**  
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="The command to show the **Console** tool in the Drawer" lightbox="../media/console-command-menu-show-console.msft.png":::
+   The command to show the **Console** tool in the **Drawer**  
 :::image-end:::  
 
 ### Open Console Settings  
 
-Choose **Console Settings** \(![Console Settings icon][ImageSettingsButtonIcon]\).  
+Choose **Console Settings** \(![Console Settings icon](../media/settings-button-icon.msft.png)\).  
 
 :::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Console Settings" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **Console Settings**  
@@ -86,7 +86,7 @@ The links below explain each setting:
     
 ### Open the Console Sidebar  
 
-Choose **Show Console Sidebar** \(![Show Console Sidebar][ImageShowConsoleSidebarIcon]\) to show the Sidebar, which is useful for filtering.  
+Choose **Show Console Sidebar** \(![Show Console Sidebar](../media/show-console-sidebar-icon.msft.png)\) to show the Sidebar, which is useful for filtering.  
 
 :::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Console Sidebar" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
    **Console** Sidebar  
@@ -94,11 +94,11 @@ Choose **Show Console Sidebar** \(![Show Console Sidebar][ImageShowConsoleSideba
 
 ## View messages  
 
-This section contains features that change how messages are presented in the Console.  See [View messages][DevToolsConsoleViewMessages] for a hands-on walkthrough.  
+This section contains features that change how messages are presented in the Console.  For a hands-on walkthrough, navigate to [View messages][DevToolsConsoleViewMessages].  
 
 ### Disable message grouping  
 
-[Open Console Settings](#open-console-settings) and disable **Group similar** to disable the default message grouping behavior of the Console.  See [Log XHR and Fetch requests](#log-xhr-and-fetch-requests) for an example.  
+[Open Console Settings](#open-console-settings) and disable **Group similar** to disable the default message grouping behavior of the Console.  For an example, navigate to [Log XHR and Fetch requests](#log-xhr-and-fetch-requests).  
 
 ### Log XHR and Fetch requests  
 
@@ -151,13 +151,13 @@ There are many ways to filter out messages in the Console.
 
 DevTools assigns each `console.*` method a severity level.  There are 4 levels: `Verbose`, `Info`, `Warning`, and `Error`.  For example, `console.log()` is in the `Info` group, whereas `console.error()` is in the `Error` group.  The [Console API Reference][DevToolsConsoleApi] describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  You may hide any level of messages that you are not interested in.  For example, if you are only interested in `Error` messages, you may hide the other 3 groups.  
 
-Click the **Log Levels** dropdown to enable or disable `Verbose`, `Info`, `Warning` or `Error` messages.  
+Choose the **Log Levels** dropdown to enable or disable `Verbose`, `Info`, `Warning` or `Error` messages.  
 
 :::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="The Log Levels dropdown" lightbox="../media/console-log-level-default-levels.msft.png":::
    The **Log Levels** dropdown  
 :::image-end:::  
 
-You may also filter by log level by [opening the Console Sidebar](#open-the-console-sidebar) and then clicking **Errors**, **Warnings**, **Info**, or **Verbose**.  
+You may also filter by log level by [opening the Console Sidebar](#open-the-console-sidebar) and thenchoosing **Errors**, **Warnings**, **Info**, or **Verbose**.  
 
 :::image type="complex" source="../media/console-sidebar-warnings.msft.png" alt-text="Use the Sidebar to view warnings" lightbox="../media/console-sidebar-warnings.msft.png":::
    Use the Sidebar to view warnings  
@@ -177,7 +177,7 @@ Type `-url:` to hide messages from that URL.  This is called a negative URL filt
    A negative URL filter that hides all messages that match the `https://b.wal.co` URL
 :::image-end:::  
 
-You may also show messages from a single URL by [opening the Console Sidebar](#open-the-console-sidebar), expanding the **User Messages** section, and then clicking the URL of the script containing the messages on which you want to focus.  
+You may also show messages from a single URL by [opening the Console Sidebar](#open-the-console-sidebar), expanding the **User Messages** section, and thenchoosing the URL of the script containing the messages on which you want to focus.  
 
 :::image type="complex" source="../media/console-filter-text-specified.msft.png" alt-text="View the messages that came from wp-ad.min.js" lightbox="../media/console-filter-text-specified.msft.png":::
    View the messages that came from `wp-ad.min.js`  
@@ -185,7 +185,7 @@ You may also show messages from a single URL by [opening the Console Sidebar](#o
 
 ### Filter out messages from different contexts  
 
-Suppose that you have an advertisement \(ad\) on your page.  The ad is embedded in an `<iframe>` and is generating a lot of messages in your Console.  Because the ad is running in a different [JavaScript context](#select-javascript-context), one way to hide the messages is to [open Console Settings](#open-console-settings) and enable the **Selected Context Only** checkbox.  
+Suppose that you have an advertisement \(ad\) on your page.  The ad is embedded in an `<iframe>` and is generating a lot of messages in your Console.  Because the ad is running in a different [JavaScript context](#select-javascript-context), one way to hide the messages is to [open Console Settings](#open-console-settings) and turn on the **Selected Context Only** checkbox.  
 
 ### Filter out messages that do not match a regular expression pattern  
 
@@ -197,15 +197,15 @@ Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** text box to
 
 ## Run JavaScript  
 
-This section contains features related to running JavaScript in the Console.  See [Run JavaScript][DevToolsConsoleOverviewJavascript] for a hands-on walkthrough.  
+This section contains features related to running JavaScript in the Console.  For a hands-on walkthrough, navigate to [Run JavaScript][DevToolsConsoleOverviewJavascript].  
 
 ### Re-run expressions from history  
 
-Press the `Up Arrow` key to cycle through the history of JavaScript expressions that you ran earlier in the Console.  Select `Enter` to run that expression again.  
+Select the `Up Arrow` key to cycle through the history of JavaScript expressions that you ran earlier in the Console.  Select `Enter` to run that expression again.  
 
 ### Watch the value of an expression in real-time with Live Expressions  
 
-If you find yourself typing the same JavaScript expression in the Console repeatedly, you may find it easier to create a **Live Expression**.  With **Live Expressions** you type an expression once and then pin it to the top of your Console.  The value of the expression updates in near real-time.  See [Watch JavaScript Expression Values In Real-Time With Live Expressions][DevToolsConsoleLiveExpressions].  
+If you find yourself typing the same JavaScript expression in the Console repeatedly, you may find it easier to create a **Live Expression**.  With **Live Expressions** you type an expression once and then pin it to the top of your Console.  The value of the expression updates in near real-time.  Navigate to [Watch JavaScript Expression Values In Real-Time With Live Expressions][DevToolsConsoleLiveExpressions].  
 
 ### Disable Eager Evaluation  
 
@@ -232,29 +232,23 @@ By default the **JavaScript Context** dropdown is set to **top**, which represen
 
 Suppose you have an ad on your page embedded in an `<iframe>`.  You want to run JavaScript in order to tweak the DOM of the ad.  You should first select the browsing context of the ad from the **JavaScript Context** dropdown.  
 
-:::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Select a different JavaScript context" lightbox="../media/console-dom-level-multiple.msft.png":::
-   Select a different JavaScript context  
+:::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Choose a different JavaScript context" lightbox="../media/console-dom-level-multiple.msft.png":::
+   Choose a different JavaScript context  
 :::image-end:::  
 
 ## Clear the Console  
 
 You may use any of the following workflows to clear the Console:  
 
-*   Choose **Clear Console** \(![Clear Console][ImageClearConsoleIcon]\).  
-*   Right-click a message and then choose **Clear Console**.  
-*   Enter `clear()` in the Console and then select `Enter`.  
+*   Choose **Clear Console** \(![Clear Console](../media/clear-console-button-icon.msft.png)\).  
+*   Hover on a message, open the contextual menu \(righ-click\), and choose **Clear Console**.  
+*   Enter `clear()` in the **Console** and select `Enter`.  
 *   Run `console.clear()` from the JavaScript for your webpage.  
-*   Select `Control`+`L` while the Console is in focus.  
+*   Select `Control`+`L` while the **Console** is in focus.  
     
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageClearConsoleIcon]: ../media/clear-console-button-icon.msft.png  
-[ImageSettingsButtonIcon]: ../media/settings-button-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
 
 <!-- links -->  
 

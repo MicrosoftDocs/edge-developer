@@ -1,9 +1,9 @@
 ---
 description: Use the Security Panel to make sure that a page is fully protected by HTTPS.
-title: Understand Security Issues With Microsoft Edge DevTools
+title: Understand security issues with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -26,7 +26,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
   
 
-<!--Use the **Security** Panel in [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to make sure HTTPS is properly implemented on a page.  See **Why HTTPS Matters** to learn why every website should be protected with HTTPS, even sites that do not handle sensitive user data.  -->  
+<!--Use the **Security** Panel in [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to make sure HTTPS is properly implemented on a page.  Navigate to **Why HTTPS Matters** to learn why every website should be protected with HTTPS, even sites that do not handle sensitive user data.  -->  
 
 <!--todo: add section when why-https is available -->  
 
@@ -35,7 +35,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 The **Security** panel is the main place in DevTools for inspecting the security of a page.  
 
 1.  [Open DevTools][DevToolsOpen].  
-1.  Choose the **Security** tab to open the **Security** panel.  
+1.  Choose the **Security** tab to open the **Security** tool.  
     
     :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="The Security panel" lightbox="../media/security-security-overview-secure.msft.png":::
        The **Security** panel  
@@ -55,7 +55,7 @@ This problem occurs when the URL that you visited was requested over HTTP.  To m
 
 If you already set up HTTPS on your server, all you need to do to fix this problem is configure your server to redirect all HTTP requests to HTTPS.  
 
-If you have not set up HTTPS on your server, [Let's Encrypt][LetsEncrypt] provides a free and relatively-easy way to start the process.  Or, you might consider hosting your site on a CDN.  Most major CDNs host sites on HTTPS by default now.  
+If you have not set up HTTPS on your server, [Let's Encrypt][LetsEncrypt] provides a free and relatively-easy way to start the process.  Or, you may consider hosting your site on a CDN.  Most major CDNs host sites on HTTPS by default now.  
 
 > [!TIP]
 > The [Use HTTPS][WebhintUseHttps] hint in [webhint][Webhint] may help automate the process of making sure that all HTTP requests are directed to HTTPS.  
@@ -68,7 +68,7 @@ If you have not set up HTTPS on your server, [Let's Encrypt][LetsEncrypt] provid
    Mixed content  
 :::image-end:::  
 
-In the previous figure, choose **View 1 request in Network panel** to open the **Network** panel and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.  
+In the previous figure, choose **View 1 request in Network panel** to open the **Network** tool and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.  
 
 :::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Mixed resources in the Network Log" lightbox="../media/security-network-filter.msft.png":::
    Mixed resources in the **Network Log**  
@@ -86,7 +86,7 @@ From the **Security Overview**, choose **View certificate** to quickly inspect t
 
 ### View origin details  
 
-Click one of the entries in the left-hand nav to view the details of the origin.  From the details page you are able to view connection and certificate information.  Certificate transparency information is also shown when available.  
+Choose one of the entries in the left-hand nav to view the details of the origin.  From the details page you are able to view connection and certificate information.  Certificate transparency information is also shown when available.  
 
 :::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Main origin details" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
    Main origin details  
@@ -98,8 +98,9 @@ Click one of the entries in the left-hand nav to view the details of the origin.
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
-[DevToolsOpen]: ../open.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[DevToolsOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+
 [LetsEncrypt]: https://letsencrypt.org "Let's Encrypt - Free SSL/TLS certificates"  
 
 [Webhint]: https://webhint.io "webhint"  

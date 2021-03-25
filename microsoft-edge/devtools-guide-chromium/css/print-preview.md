@@ -1,9 +1,9 @@
 ---
-description: Open the "Rendering" tab and select "Emulate CSS media" > "print".
-title: Force Microsoft Edge DevTools Into Print Preview Mode (CSS Print Media Type)
+description: Open the "Rendering" tool and select Emulate CSS media > print.
+title: Force Microsoft Edge DevTools into Print Preview mode (CSS Print Media Type)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 02/12/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,7 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Force Microsoft Edge DevTools into Print Preview mode (CSS Print Media Type)  
+# Force Microsoft Edge DevTools into Print Preview mode  
 
 The [print media query][MDNUsingMediaQueries] controls how your page looks when printed.  To force your page into print preview mode:  
 
@@ -33,13 +33,13 @@ The [print media query][MDNUsingMediaQueries] controls how your page looks when 
     :::image-end:::  
     
 1.  Type `rendering`, choose **Show Rendering**, and then select `Enter`.  
-1.  Under **Emulate CSS media** choose **print**.  
+1.  Under **Emulate CSS media**, choose **print**.  
     
     :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="Print preview mode" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
        Print preview mode  
     :::image-end:::  
     
-From here, you can view and change your CSS, like any other web page.  See [Get Started With Viewing And Changing CSS][DevToolsCSSGetStarted].  
+From here, you may display and change your CSS, like any other web page.  Navigate to [Get Started With Viewing And Changing CSS][DevToolsCSSGetStarted].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
@@ -47,7 +47,7 @@ From here, you can view and change your CSS, like any other web page.  See [Get 
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
 [DevToolsCSSGetStarted]: ./index.md "Get started with viewing and changing CSS | Microsoft Docs"  
 
 [MDNUsingMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Using media queries | MDN"  

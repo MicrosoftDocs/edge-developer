@@ -1,9 +1,9 @@
 ---
 description: Learn how to log messages to the Console.
-title: Get Started With Logging Messages In The Console
+title: Get started with logging messages in the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 03/08/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,7 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Get Started With Logging Messages In The Console  
+# Get started with logging messages in the Console  
 
 This interactive tutorial shows you how to log and filter messages in the [Microsoft Edge DevTools][MicrosoftEdgeDevTools] console.  
 
@@ -87,43 +87,43 @@ This tutorial is designed so that you are able to open up the demo and try all t
     
 ## View messages logged from JavaScript  
 
-Most messages that you see in the Console come from the web developers who wrote the JavaScript of the page.  The goal of this section is to introduce you to the different message types that you are likely to see in the Console, and explain how you may log each message type yourself from your own JavaScript.  
+Most messages that are displayed in the **Console** come from the web developers who wrote the JavaScript of the page.  The goal of this section is to introduce you to the different message types that you are likely to review in the **Console**, and explain how you may log each message type yourself from your own JavaScript.  
 
-1.  Click the **Log Info** button in the demo.  `Hello, Console!` gets logged to the Console.
+1.  Choose the **Log Info** button in the demo.  `Hello, Console!` gets logged to the Console.
     
-    :::image type="complex" source="../media/console-log-info.msft.png" alt-text="The Console after clicking Log Info" lightbox="../media/console-log-info.msft.png":::
-       The **Console** after clicking **Log Info**  
+    :::image type="complex" source="../media/console-log-info.msft.png" alt-text="The Console after you choose Log Info" lightbox="../media/console-log-info.msft.png":::
+       The **Console** after you choose **Log Info**  
     :::image-end:::  
     
 1.  Next to the `Hello, Console!` message in the Console choose **log.js:2**.  The Sources panel opens and highlights the line of code that caused the message to get logged to the Console.  The message was logged when the JavaScript of the page ran `console.log('Hello, Console!')`.
     
-    :::image type="complex" source="../media/console-sources-logjs.msft.png" alt-text="DevTools opens the Sources panel after you click log.js:2" lightbox="../media/console-sources-logjs.msft.png":::
-       DevTools opens the **Sources** panel after you click `log.js:2`  
+    :::image type="complex" source="../media/console-sources-logjs.msft.png" alt-text="DevTools opens the Sources tool after you choose log.js:2" lightbox="../media/console-sources-logjs.msft.png":::
+       DevTools opens the **Sources** tool after you choose `log.js:2`  
     :::image-end:::  
     
 1.  Navigate back to the **Console** using any of the following workflows:  
     
-    *   Click the **Console** tab.  
-    *   Select `Control`+`[` \(Windows, Linux\) or `Command`+`[` \(macOS\) until the Console panel is in focus.  
-    *   [Open the Command Menu][DevToolsCommandMenu], start typing `Console`, select the **Show Console Panel** command, and then select `Enter`.  
+    *   Choose the **Console** tool.  
+    *   Select `Control`+`[` \(Windows, Linux\) or `Command`+`[` \(macOS\) until the **Console** tool is in focus.  
+    *   [Open the Command Menu][DevToolsCommandMenu], type `Console`, choose the **Show Console Panel** command, and then select `Enter`.  
     
-1.  Click the **Log Warning** button in the demo.  `Abandon Hope All Ye Who Enter` gets logged to the Console.  Messages formatted like this are warnings.  
+1.  Choose the **Log Warning** button in the demo.  `Abandon Hope All Ye Who Enter` gets logged to the **Console**.  Messages formatted like this are warnings.  
     
-    :::image type="complex" source="../media/console-log-warning.msft.png" alt-text="The Console after you click Log Warning" lightbox="../media/console-log-warning.msft.png":::
+    :::image type="complex" source="../media/console-log-warning.msft.png" alt-text="The Console after you choose Log Warning" lightbox="../media/console-log-warning.msft.png":::
        The **Console** after you choose **Log Warning**  
     :::image-end:::  
     
     > [!TIP]
-    > If you want to see the code that caused a message to get logged a certain way, click on a script \(such as `log.js:12`\) to view the code that caused the message to get formatted.  
+    > If you want to display the code that caused a message to get logged a certain way, choose on a script \(such as `log.js:12`\) to view the code that caused the message to get formatted.  
 
-1.  Click the **Expand** \(![Expand][ImageExpandIcon]\) icon in front of `Abandon Hope All Ye Who Enter`.  DevTools
+1.  Choose the **Expand** \(![Expand](../media/expand-icon.msft.png)\) icon in front of `Abandon Hope All Ye Who Enter`.  DevTools
    shows the [stack trace][WikiStackTrace] leading up to the call.  
     
     :::image type="complex" source="../media/console-log-warning-expanded.msft.png" alt-text="A stack trace" lightbox="../media/console-log-warning-expanded.msft.png":::
        A stack trace  
     :::image-end:::  
     
-    The stack trace is telling you that a function named `logWarning` was called, which in turn called a function named `quoteDante`.  In other words, the call that happened first is at the bottom of the stack trace.  You may log stack traces at any time by calling `console.trace()`.  
+    The stack trace is telling you that a function named `logWarning` is run, which in turn runs a function named `quoteDante`.  In other words, the request that happened first is at the bottom of the stack trace.  You may log stack traces at any time by running `console.trace()`.  
 
 1.  Choose **Log Error**.  The following error message gets logged: `I'm sorry, Dave.  I'm afraid I can't do that.`  
     
@@ -131,7 +131,7 @@ Most messages that you see in the Console come from the web developers who wrote
        An error message  
     :::image-end:::  
     
-1.  Choose **Log Table**.  A table about famous artists gets logged to the Console.  
+1.  Choose **Log Table**.  A table about famous artists gets logged to the **Console**.  
     
     > [!NOTE]
     > The `birthday` column is only populated for one row.  Review the code to determine why that is.
@@ -172,7 +172,7 @@ The browser logs messages to the Console, too.  This usually happens when there 
        A `TypeError` in the **Console**  
     :::image-end:::  
     
-1.  Click the **Log Levels** dropdown and enable the **Verbose** option if it is disabled.  You learn more about filtering in the next section.  You need to do this to make sure that the next message you log is visible.  
+1.  Choose the **Log Levels** dropdown and enable the **Verbose** option if it is disabled.  You learn more about filtering in the next section.  You need to do this to make sure that the next message you log is visible.  
     
     > [!NOTE]
     > If the Default Levels dropdown is disabled, you may need to close the **Console** Sidebar.  Filter by Message Source below for more information about the **Console** Sidebar.
@@ -189,39 +189,37 @@ The browser logs messages to the Console, too.  This usually happens when there 
     
 ## Filter messages  
 
-On some pages you see the Console get flooded with messages.  DevTools provides many different ways to filter out messages that are not relevant to the task at hand.  
+On some webpages you review the **Console** get flooded with messages.  DevTools provides many different ways to filter out messages that are not relevant to the task at hand.  
 
 ### Filter by log level  
 
 Each `console` method is assigned a severity level: `Verbose`, `Info`, `Warning`, or `Error`.  For example, `console.log()` is an `Info`-level message, whereas `console.error()` is an `Error`-level message.  
 
-1.  Click the **Log Levels** dropdown and disable **Errors**.  A level is disabled when there is no longer a checkmark next to it.  The `Error`-level messages disappear.  
+1.  Choose the **Log Levels** dropdown and disable **Errors**.  A level is disabled when there is no longer a checkmark next to it.  The `Error`-level messages disappear.  
     
-    :::image type="complex" source="../media/console-cause-violation-log-levels.msft.png" alt-text="Disabling Error-level messages in the Console" lightbox="../media/console-cause-violation-log-levels.msft.png":::
-       Disabling Error-level messages in the **Console**  
+    :::image type="complex" source="../media/console-cause-violation-log-levels.msft.png" alt-text="Disable Error-level messages in the Console" lightbox="../media/console-cause-violation-log-levels.msft.png":::
+       Disable Error-level messages in the **Console**  
     :::image-end:::  
     
-1.  Click the **Log Levels** dropdown again and re-enable **Errors**.  The `Error`-level messages reappear.  
+1.  Choose the **Log Levels** dropdown again and re-enable **Errors**.  The `Error`-level messages reappear.  
 
 ### Filter by text  
 
 When you want to only view messages that include an exact string, type that string into the **Filter** text box.  
 
-1.  Type `Dave` into the **Filter** text box.  All messages that do not include the string `Dave` are hidden.  You might also see the `Adolescent Irradiated Espionage Tortoises` label.  That is a bug.  
+1.  Type `Dave` into the **Filter** text box.  All messages that do not include the string `Dave` are hidden.  You may also review the `Adolescent Irradiated Espionage Tortoises` label.  That is a bug.  
     
-    :::image type="complex" source="../media/console-all-messages-text-filter.msft.png" alt-text="Filtering out any message that does not include Dave" lightbox="../media/console-all-messages-text-filter.msft.png":::
-       Filtering out any message that does not include `Dave`  
+    :::image type="complex" source="../media/console-all-messages-text-filter.msft.png" alt-text="Filter out any message that does not include Dave" lightbox="../media/console-all-messages-text-filter.msft.png":::
+       Filter out any message that does not include `Dave`  
     :::image-end:::  
     
 1.  Delete `Dave` from the **Filter** text box.  All the messages reappear.  
 
 ### Filter by regular expression  
 
-When you want to show all messages that include a pattern of text, rather than a specific string, use a
-[regular expression][MDNRegularExpressions].  
+When you want to show all messages that include a pattern of text, rather than a specific string, use a [regular expression][MDNRegularExpressions].  
 
-1.  Type `/^[AH]/` into the **Filter** text box.  Type this pattern into [RegExr][RegExrMain] for an
-   explanation of what it is doing.  
+1.  Type `/^[AH]/` into the **Filter** text box.  Type the pattern into [RegExr][RegExrMain] for an explanation of what it is doing.  
     
     :::image type="complex" source="../media/console-all-messages-regex-filter.msft.png" alt-text="Filtering out any message that does not match a pattern" lightbox="../media/console-all-messages-regex-filter.msft.png":::
        Filtering out any message that does not match the pattern `/^[AH]/`  
@@ -233,13 +231,13 @@ When you want to show all messages that include a pattern of text, rather than a
 
 When you want to only view the messages that came from a certain URL, use the **Sidebar**.  
 
-1.  Choose **Show Console Sidebar** \(![Show Console Sidebar][ImageShowConsoleSidebarIcon]\).  
+1.  Choose **Show Console Sidebar** \(![Show Console Sidebar](../media/show-console-sidebar-icon.msft.png)\).  
     
     :::image type="complex" source="../media/console-sidebar-all-messages.msft.png" alt-text="The Sidebar" lightbox="../media/console-sidebar-all-messages.msft.png":::
        The Sidebar  
     :::image-end:::  
     
-1.  Click the **Expand** \(![Expand][ImageExpandIcon]\) icon next to the number of messages.  In the following figure, the number of messages is indicated as **13 Messages**.  The **Sidebar** shows a list of URLs that caused messages to be logged.  For example, `log.js` caused 11 messages.  
+1.  Choose the **Expand** \(![Expand](../media/expand-icon.msft.png)\) icon next to the number of messages.  In the following figure, the number of messages is indicated as **13 Messages**.  The **Sidebar** shows a list of URLs that caused messages to be logged.  For example, `log.js` caused 11 messages.  
     
     :::image type="complex" source="../media/console-sidebar-expanded-all-messages.msft.png" alt-text="Viewing the source of messages in the Sidebar" lightbox="../media/console-sidebar-expanded-all-messages.msft.png":::
        Viewing the source of messages in the Sidebar  
@@ -247,7 +245,7 @@ When you want to only view the messages that came from a certain URL, use the **
     
 ### Filter by user messages  
 
-Earlier, when you clicked **Log Info**, a script called `console.log('Hello, Console!')` in order to log the message to the Console.  Messages logged from JavaScript like this are called **user messages**.  In contrast, when you clicked **Cause 404**, the browser logged an `Error`-level message stating that the requested resource could not be found.  Messages like that are considered **browser messages**.  Use the **Sidebar** to filter out browser messages and only show user messages.  
+Earlier, when you choose **Log Info**, a script named `console.log('Hello, Console!')` in order to log the message to the Console.  Messages logged from JavaScript like this are named **user messages**.  In contrast, when you choose **Cause 404**, the browser logs an `Error`-level message stating that the requested resource is not found.  Messages like that are considered **browser messages**.  Use the **Sidebar** to filter out browser messages and only show user messages.  
 
 1.  Choose **9 User Messages**.  The browser messages are hidden.  
     
@@ -257,36 +255,30 @@ Earlier, when you clicked **Log Info**, a script called `console.log('Hello, Con
     
 1.  Choose **13 Messages** to show all messages again.  
 
-## Use the Console alongside any other panel  
+## Use the Console alongside any other tools  
 
-What if you are editing styles, but you need to quickly check the Console log for something?  Use the Drawer.  
+If you are editing styles, but you need to quickly check the Console log for something, Use the Drawer.  
 
-1.  Click the **Elements** tab.  
-1.  Select `Escape`.  The **Console** tab of the **Drawer** opens.  It has all of the features of the Console panel that you have been using throughout this tutorial.  
+1.  Choose the **Elements** tool.  
+1.  Select `Escape`.  The **Console** tool in the **Drawer** opens.  It has all of the features of the Console panel that you have been using throughout this tutorial.  
     
-    :::image type="complex" source="../media/console-elements-drawer-console-sidebar-all-messages.msft.png" alt-text="The Console tab in the Drawer" lightbox="../media/console-elements-drawer-console-sidebar-all-messages.msft.png":::
-         The **Console** tab in the **Drawer**  
+    :::image type="complex" source="../media/console-elements-drawer-console-sidebar-all-messages.msft.png" alt-text="The Console tool in the Drawer" lightbox="../media/console-elements-drawer-console-sidebar-all-messages.msft.png":::
+         The **Console** tool in the **Drawer**  
     :::image-end:::  
     
-<!--## Next steps  -->
+## See also  
 
-<!--
-*   See [Console Reference][DevToolsConsoleApi] to explore more features and workflows related to the Console UI.
-*   See [Console API Reference][DevToolsConsoleReference] to learn more about all of the `console` methods that were demonstrated in [View messages logged from JavaScript(#view-messages-logged-from-javascript) and explore the other `console` methods that were not covered in this tutorial.  
-*   See [Get Started](/microsoft-edge/devtools-guide-chromium/#start) to explore what else you are able to do with DevTools.  -->  
-
+*   To explore more features and workflows related to the **Console** UI,navigate to [Console Reference][DevToolsConsoleApi].  
+*   To learn more about all of the `console` methods demonstrated in [View messages logged from JavaScript](#view-messages-logged-from-javascript) and explore the other `console` methods not covered in this article, navigate to [Console API Reference][DevToolsConsoleReference].  
+<!--*   Navigate to [Get Started](/microsoft-edge/devtools-guide-chromium/#start) to explore what else you are able to do with DevTools.  -->  
+     
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageExpandIcon]: ../media/expand-icon.msft.png  
-[ImageShowConsoleSidebarIcon]: ../media/show-console-sidebar-icon.msft.png  
-
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge \(Chromium\) developer tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge \(Chromium\) developer tools | Microsoft Docs"  
 [DevToolsCommandMenu]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"  
 [DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"  
 [DevToolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  

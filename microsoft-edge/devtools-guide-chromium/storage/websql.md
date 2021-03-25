@@ -1,9 +1,9 @@
 ---
 description: How to view Web SQL data from the Application panel of Microsoft Edge DevTools.
-title: View Web SQL Data With Microsoft Edge DevTools
+title: View Web SQL data with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -31,7 +31,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 ## View Web SQL Data  
 
-1.  Select the **Sources** tab to open the **Sources** panel.  The **Manifest** pane usually opens by default.  
+1.  Choose the **Sources** tool to open the **Sources** tool.  The **Manifest** pane usually opens by default.  
     
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
        The **Manifest** pane  
@@ -43,7 +43,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
        The **Web SQL** pane  
     :::image-end:::  
     
-1.  Select a table to view the data for that table.  
+1.  Choose a table to view the data for that table.  
     
     :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png" alt-text="View the data of a Web SQL table" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png":::
        View the data of a Web SQL table  
@@ -51,11 +51,11 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
     
 ## Edit Web SQL data  
 
-You are not able to edit Web SQL data when viewing a Web SQL table, such as in **Figure 3** above.  But you may run statements from the Web SQL Console that edit or delete tables.  See [Run Web SQL queries](#run-web-sql-queries).  
+You are not able to edit Web SQL data when viewing a Web SQL table, such as in previous above.  But you may run statements from the Web SQL Console that edit or delete tables.  Navigate to [Run Web SQL queries](#run-web-sql-queries).  
 
 ## Run Web SQL queries  
 
-1.  Select a database to open a console for that database.  
+1.  Choose a database to open a console for that database.  
 1.  Type a Web SQL statement, then select `Enter` to run it.  
     
     :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Use the Web SQL Console to delete a row from a table" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
@@ -64,10 +64,10 @@ You are not able to edit Web SQL data when viewing a Web SQL table, such as in *
     
 ## Refresh a Web SQL table  
 
-DevTools does not update tables in real-time.  To update the data in a table:  
+DevTools does not update tables in real-time.  To update the data in a table, complete the following actions.  
 
 1.  [View the data in a Web SQL table](#view-web-sql-data).  
-1.  Choose **Refresh** \(![Refresh][ImageRefreshIcon]\).  
+1.  Choose **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\).  
     
 ## Filter out columns in a Web SQL table  
 
@@ -81,7 +81,7 @@ DevTools does not update tables in real-time.  To update the data in a table:
 ## Delete all Web SQL data  
 
 1.  Open the **Clear Storage** pane.  
-1.  Make sure that the **Web SQL** checkbox is enabled.  
+1.  Make sure that the **Web SQL** checkbox is turned on.  
     
     :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="The Web SQL checkbox" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
        The **Web SQL** checkbox  
@@ -97,13 +97,9 @@ DevTools does not update tables in real-time.  To update the data in a table:
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- image links -->  
-
-[ImageRefreshIcon]: ../media/refresh-icon.msft.png  
-
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
 [W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Web SQL database | W3C"  
 
