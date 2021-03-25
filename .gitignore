@@ -1,8 +1,10 @@
 log/
 obj/
 _site/
+.DS_Store
 .optemp/
 _themes*/
 .idea
 
 .openpublishing.buildcore.ps1
+.DS_Store
