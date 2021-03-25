@@ -33,7 +33,9 @@ State: It's good to use this JS viewer just to read, or to insert console.log, o
 Use the **Sources** tool to view, modify, and debug JavaScript that's returned by the server.
 
 *   **Navigate:** Display the file system that's returned from the server to construct the current webpage.
+
 *   **View and edit:** View JavaScript and other files that are returned from the server.  Make experimental edits to the JavaScript code.  These changes are preserved (in the DevTools sandbox) until page refresh.
+
 *   **Debug:** Use the Debugger to step through the JavaScript code that is returned from the server, and to step through experimental changes to the code.
 
 :::image type="complex" source="../media/debugging.msft.png" alt-text="Navigate, view, edit, and debug JavaScript returned by the server" lightbox="../media/debugging.msft.png":::
@@ -87,7 +89,7 @@ To maximize the DevTools window:
 1. In the **Dock side** section, select **Undock into separate window**.
 1. Optionally, move the DevTools window to a separate monitor.
 
-See also [Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left)](../customize/placement.md).
+For more information, navigate to [Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left)][DevToolsCustomizePlacement].
 
 ## Navigate files returned by the server  
 
@@ -111,11 +113,17 @@ To display a file in the **Editor** pane, choose a file in the **Page** tab.  Yo
 ### Tabs in the Explorer pane
 
 The **Explorer** pane has the following tabs:
+
 *   **Page** tab - Explore the file system that's returned from the server to construct the current webpage, and select JavaScript files to view, edit, and debug.  This is the main tab in the Explorer pane.
+
 *   **Filesystem** tab - When using Workspaces, to save changes to local files.  This enables DevTools to act as an Integrated Development Environment (IDE).  [Set up a Workspace](#set-up-a-workspace), so that changes you make in DevTools get saved to the code on your file system.  Alternatively, for persistent editing of local files, use the "Edge DevTools for Visual Studio Code extension"; navigate to [When to use local Workspaces and extensions](#when-to-use-local-workspaces-and-extensions), below.
-*   **Overrides** tab - Override page assets (such as images) by files from a local folder.  It's a way of changing what the server sends, after the server returns assets.  This overriding is on a per-folder basis.<!--clarify per-folder overriding-->  [Overrides][DevtoolsJavascriptOverrides]
-*   **Content scripts** tab - Used for extensions.  Content scripts are from extensions; extension authors use them.  Use this to debug the JavaScript that an extension is injecting onto the page.
-*   **Snippets** tab - Create and save JavaScript code snippets, for reuse on any webpage. (todo: on every page, or a specified page only?)
+
+*   **Overrides** tab - Override page assets (such as images) by files from a local folder.  This is a way of changing what the server sends, after the server returns assets.  This overriding is on a per-folder basis, as described in [Overrides][DevtoolsJavascriptOverrides].
+
+*   **Content scripts** tab - Used for extensions.  Content scripts are from extensions; extension authors use them.  Use this to debug the JavaScript that an extension is injecting onto the page.  If you want to avoid stepping into content script code, navigate to [Mark content scripts as Library code][DevToolsJavaScriptGuidesMarkContentScriptsLibraryCode].
+
+*   **Snippets** tab - Create and save JavaScript code snippets for reuse on any webpage, such as code to include jQuery, as described in [Create, save, and run Snippets](#create-save-and-run-snippets).
+
 *   \>> (**More tabs**) - This "double chevron" button displays the above tabs when the display is narrow.
 *   ... (**More options**)
     *   **Group by folder** - Controls how files are displayed in the **Page** tab: as a flat list, or grouped by server and directory.
@@ -218,7 +226,7 @@ The **Sources** tool is a JavaScript viewer, editor, and debugger.
 
 Use the **Sources** tool to check that your resources are loaded, and to view, edit, and debug JavaScript, especially JavaScript that's returned from the server.  
 
-Use the Sources tool when you want to see the JavaScript code that is returned from the server, rather than the source code, which might be different.
+Use the Sources tool when you want to view the JavaScript code that is returned from the server, rather than the source code, which might be different.
 
 Use the Sources tool, rather than a code editor, for fast iterations when you are prototyping JavaScript code and don't want to go through the build process every time.
 
@@ -314,7 +322,9 @@ CSS changes take effect immediately; no saving is needed.
 
 <!-- links -->  
 
-[DevtoolsJavascriptOverrides]: ../javascript/overrides.md "Overrides | Microsoft Docs"  
+[DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left) | Microsoft Docs"
+[DevtoolsJavascriptOverrides]: ../javascript/overrides.md "Override webpage resources with local copies using Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsJavaScriptGuidesMarkContentScriptsLibraryCode]: ../javascript/guides/mark-content-scripts-library-code.md "Mark content scripts as Library code | Microsoft Docs"
 
 [DevtoolsGuideChromiumCommandMenuIndex]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsGuideChromiumJavascriptIndex]: ../javascript/index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
