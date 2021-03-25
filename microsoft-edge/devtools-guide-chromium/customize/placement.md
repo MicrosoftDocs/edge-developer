@@ -24,18 +24,37 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left)  
 
-By default, DevTools is docked to the right of your viewport.  You may also dock to bottom, dock to left, or undock the DevTools to a separate window.  
+By default, DevTools is docked to the right of your viewport (window).  You may also dock DevTools to the bottom or left of the window, or undock DevTools to a separate window.
 
 :::row:::
    :::column span="":::
+      DevTools docked to the left side of the window:
+   :::column-end:::
+   :::column span="":::
+      DevTools docked to the bottom of the window:
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
       :::image type="complex" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="Choose Dock To Left" lightbox="../media/customize-elements-styles-right-docked.msft.png":::
-         Choose `Dock To Left`  
+         Choose `Dock to left`  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
       :::image type="complex" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="Choose Dock To Bottom" lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
-         Choose `Dock To Bottom`  
+         Choose `Dock to bottom`  
       :::image-end:::  
+   :::column-end:::
+:::row-end:::  
+
+DevTools may be undocked to a separate window, which you may move to a separate monitor:
+
+:::row:::
+   :::column span="":::
+      Browser window:
+   :::column-end:::
+   :::column span="":::
+      DevTools undocked in a separate window:
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -53,10 +72,10 @@ By default, DevTools is docked to the right of your viewport.  You may also dock
 
 ## Change placement from the main menu  
 
-1.  Choose **Customize And Control DevTools** \(`...`\) and choose **Undock Into Separate Window** \(![Undock](../media/undock-icon.msft.png)\), **Dock To Bottom** \(![Dock To Bottom](../media/bottom-icon.msft.png)\), or **Dock To Left** \(![Dock To Left](../media/left-icon.msft.png)\).  
+1.  Choose **Customize and control DevTools** \(`...`\) and choose **Undock into separate window** \(![Undock](../media/undock-icon.msft.png)\), **Dock to bottom** \(![Dock To Bottom](../media/bottom-icon.msft.png)\), or **Dock to left** \(![Dock To Left](../media/left-icon.msft.png)\).  
     
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Choose Undock Into Separate Window" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
-       Choose **Undock Into Separate Window**  
+       Choose **Undock into separate window**  
     :::image-end:::  
     
 ## Change placement from the Command Menu  
