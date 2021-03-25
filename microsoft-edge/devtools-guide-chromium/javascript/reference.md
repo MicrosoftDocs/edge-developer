@@ -28,8 +28,6 @@ Discover new debugging workflows with this guide to using the debugging features
 
 To learn the basics of debugging, navigate to [Get started with debugging JavaScript in Microsoft Edge DevTools][DevToolsJavascriptGetStarted], which presents simple, existing tutorial code, with screen captures.
 
-The debugger is part of the **Sources** tool.  For an overview of the Sources tool, navigate to [Sources tool overview](../sources/index.md).
-
 ## View and edit JavaScript code
 
 When fixing a bug, you often want to test out some changes to your JavaScript code.  You do not need to make the changes in an external editor or IDE and then refresh the page.  You may edit your script in DevTools.  
@@ -207,7 +205,7 @@ When working with web workers or service workers, choose on a context listed in 
    The **Threads** pane  
 :::image-end:::  
 
-For example, suppose that you are paused on a breakpoint in both your main script and your service worker script.  You want to view the local and global properties for the service worker context, but the **Sources** tool is showing the main script context.  By choosing on the service worker entry in the **Threads** pane, you should be able to switch to that context.  
+For example, suppose that you are paused on a breakpoint in both your main script and your service worker script.  You want to view the local and global properties for the service worker context, but the **Sources** tool is showing the main script context.  By choosing the service worker entry in the **Threads** pane, you should be able to switch to that context.  
 
 ## View and edit properties and variables
 
@@ -328,8 +326,9 @@ To learn more, navigate to [Run Snippets of Code From Any Page][DevToolsJavascri
 
 ## Related articles
 
-*   [Disable JavaScript with Microsoft Edge DevTools][DevToolsJavascriptDisable].
 *   [Get Started With Debugging JavaScript In Microsoft Edge DevTools][DevToolsJavascriptGetStarted] - A simple, short tutorial using existing code, with screen captures.
+*   [Sources tool overview][DevToolsSourcesIndex] - The debugger and JavaScript editor are the main part of the Sources tool, introduced here.
+*   [Disable JavaScript with Microsoft Edge DevTools][DevToolsJavascriptDisable].
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
@@ -341,6 +340,7 @@ To learn more, navigate to [Run Snippets of Code From Any Page][DevToolsJavascri
 [DevToolsJavascriptDisable]: ./disable.md "Disable JavaScript with Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsJavascriptGetStarted]: ./index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsJavascriptSnippets]: ./snippets.md "Run snippets of JavaScript on any page with Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"  
 [DevToolsCustomize]: ../customize/index.md "Customize Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]
