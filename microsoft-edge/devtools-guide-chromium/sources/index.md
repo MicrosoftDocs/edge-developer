@@ -101,14 +101,18 @@ To list and navigate among all of the resources that the page has loaded, use th
 
 How the **Page** tab is organized:  
 *   The top-level, such as `top` in the previous figure, represents an [HTML frame][W3CHtml4Frames].  Find `top` on every page that you visit.  `top` represents the main document frame.  
-*   The second-level, such as `docs.microsoft.com` in the previous figure, represents an [origin][HtmlstandardOrigin].  
-*   The third-level, fourth-level, and so on, represent directories and resources that were loaded from that origin.  For example, in the previous figure the full path to the resource `devtools-guide-chromium` is `docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium`  
+
+*   The second-level, such as `microsoft-edge-chromium-devtools.glitch.me` in the previous figure, represents an [origin][HtmlstandardOrigin].  
+
+*   The third-level, fourth-level, and so on, represent directories and resources that were loaded from that origin.  For example, in the previous figure, the full path to the resources `get-started.html` and `get-started.js` is `microsoft-edge-chromium-devtools.glitch.me/debug-js/`.  
     
 To display a file in the **Editor** pane, choose a file in the **Page** tab.  You may display any type of file.  For images, a preview of the image is displayed.  
 
+<!-- 
+not really needed; single good capture above is sufficient; delete these lines and the png file (not used in other articles)
 :::image type="complex" source="../media/sources-editor-pane.msft.png" alt-text="Display the contents of a4d10f71.index-docs.js in the Editor pane" lightbox="../media/sources-editor-pane.msft.png":::
    Display the contents of `a4d10f71.index-docs.js` in the **Editor** pane  
-:::image-end:::  
+:::image-end:::   -->
 
 ### Tabs in the Explorer pane
 
