@@ -41,7 +41,7 @@ For instance, you may use the `NewWindowRequested` event to provide a `CoreWebVi
 
 ## Blocking the UI thread  
 
-Blocking the UI-thread is usually not a good idea. Blocking the UI-thread doesn't only make the UI unresponsive. Since the WebView2 control can be accessed only from the UI-thread it effectively blocks communication with the browser engine. For example this code would hang because the UI-thread is blocked by waiting for the result:
+The WebView2 relies on the message pump of the UI thread to run event handler callbacks and async method completion callbacks. If you use methods that block the message pump such as Task.Result or WaitForSingleObject then your WebView2 event handlers and async method completion handlers will not run. For example, the following code will hang because Task.Result stops the message pump waiting for ExecuteScriptAsync to complete, but the message pump is blocked so ExecuteScriptAsync will never complete:
 
 ```csharp
 private void Button_Click(object sender, EventArgs e)
