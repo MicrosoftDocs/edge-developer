@@ -50,7 +50,7 @@ private void Button_Click(object sender, EventArgs e)
     MessageBox.Show(this, result, "Script Result");
 }
 ```
-From another side using `async` and `await` doesn't block the UI-thread:
+Instead, you can use an asynchronous await mechanism such as `async` and `await` which do not block the message pump or the UI thread:
 
 ```csharp
 private async void Button_Click(object sender, EventArgs e)
