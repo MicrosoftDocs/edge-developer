@@ -24,6 +24,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Disable JavaScript with Microsoft Edge DevTools  
 
+To check how your webpages render when a browser doesn't have JavaScript support, temporarily disable JavaScript.
+
 Complete the following actions to display how a webpage looks and behaves when JavaScript is disabled.  
 
 1.  [Open Microsoft Edge DevTools][DevToolsOpen].  
