@@ -235,12 +235,12 @@
               items:
                 - name: Sources tool overview
                   href: devtools-guide-chromium/sources/index.md
-                - name: Disable JavaScript
-                  href: devtools-guide-chromium/javascript/disable.md
                 - name: Overrides
                   href: devtools-guide-chromium/javascript/overrides.md
                 - name: Snippets
                   href: devtools-guide-chromium/javascript/snippets.md
+                - name: Disable JavaScript
+                  href: devtools-guide-chromium/javascript/disable.md
             - name: WebAuthn
               href: devtools-guide-chromium/webauthn/index.md
         - name: Reference
