@@ -39,16 +39,19 @@ About this table:
 - Details: additional information relevant to the feature..
 
 | Feature | Default | Configurable | Details |  
-|:--- |:--- |:--- | :--- | 
+|:--- |:--- |:--- | :--- |  
 | Autofill for Addresses | On | Yes | This feature is turned on by default, you may turn it on or off via WebView2 Autofill API. |  
 | Autofill for Passwords | On | Yes | This feature is turned on by default, you may turn it on or off via WebView2 Autofill API. |  
-| Autofill for Payments | Off | No | This feature is turned off. | 
-| Browser Extensions | Off | No | This feature is turned off. |   
+| Autofill for Payments | Off | No | This feature is turned off. |  
+| Browser Extensions | Off | No | This feature is turned off. |  
 | Browser Task Manager | Off | No | This feature is turned off. |  
+| Collections | Off | No | This feature is turned off. |  
 | Continue-where-I-left-off prompt | Off | No | This feature is turned off. |  
 | Downloads | On | Yes | WebView2 provides an api that allows you to customize the download UI to manipulate downloads, such as block, redirect, save, pause, and so on.  For more information, navigate to <!--[download api][Webview2ReferenceDownloadApi]-->. |  
+| Edge Shopping | Off | No | This feature is turned off. |  
 | Family Safety | Off | No | This feature is turned off. |  
-| Hotkeys | See Details | See Details | The following shortcuts are turned off by default:  `Ctrl`+`F` and `Ctrl`+`S`. The keys that are default disabled are generally keys that either don't make sense for WebView or simply cause problems of some sort or other, and are not toggle-able. Alternatively, ou can listen for a key combination in AcceleratorKeyPressed and create a custom response if needed.|  
+| Favorites | Off | No | This feature is turned off. |  
+| Hotkeys | See Details | See Details | See section [HotKeys Deep Dive](#hotkeys-deep-dive).  The keys that are default disabled are generally keys that either don't make sense for WebView or simply cause problems of some sort or other, and are not toggle-able. Alternatively, ou can listen for a key combination in AcceleratorKeyPressed and create a custom response if needed.|  
 | IE Mode | Off | No | This feature is turned off. |  
 | Immersive Reader | Off | No | This feature is dependent on the browser UI for control and triggering.  This feature is turned off. |  
 | Intrusive Ads | On* | No | The UI for this feature is removed, however the underlying functionality persists. |  
