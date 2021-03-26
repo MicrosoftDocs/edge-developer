@@ -57,7 +57,7 @@ The **Sources** tool has three panes:
       The following figure shows the Sources tool with default, narrow layout.  The **Debugger** pane is at the bottom and is split into two panes, with **Scope** and **Watch** in the lower-right.
    :::column-end:::
    :::column span="":::
-     The following figure shows the Sources tool with wide layout, and also shows DevTools undocked into a separate window.  The **Debugger** pane is on the right, including **Scope** and **Watch**.  
+     The following figure shows the Sources tool with wide layout, and also shows DevTools undocked into a separate window.  The **Debugger** pane is now on the right, including **Scope** and **Watch**.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -91,7 +91,7 @@ To maximize the DevTools window:
 
 For more information, navigate to [Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left)][DevToolsCustomizePlacement].
 
-## Navigate files returned by the server  
+## Explorer pane to navigate files returned by the server  
 
 To list and navigate among all of the resources that the page has loaded, use the **Page** tab in the **Explorer** pane (on the left).
 
@@ -116,11 +116,25 @@ not really needed; single good capture above is sufficient; delete these lines a
 
 ### Tabs in the Explorer pane
 
+<!-- 
+For progressive disclosure; each tab-item below should be short but informative, and link to either:
+* A section in this article.
+* An article.
+* A section within an article.
+-->
+
 The **Explorer** pane has the following tabs:
 
 *   **Page** tab - Explore the file system that's returned from the server to construct the current webpage, and select JavaScript files to view, edit, and debug.  This is the main tab in the Explorer pane.
 
-*   **Filesystem** tab - When using Workspaces, to save changes to local files.  This enables DevTools to act as an Integrated Development Environment (IDE).  [Set up a Workspace](#set-up-a-workspace), so that changes you make in DevTools get saved to the code on your file system.  Alternatively, for persistent editing of local files, use the "Edge DevTools for Visual Studio Code extension"; navigate to [When to use local Workspaces and extensions](#when-to-use-local-workspaces-and-extensions), below.
+*   **Filesystem** tab - For using a Workspace, to save changes to local files.  
+This enables DevTools to act as an Integrated Development Environment (IDE).  
+[Set up a Workspace](#set-up-a-workspace), so that changes you make in DevTools get saved to the code on your file system.
+Alternatively, for persistent editing of local files, use the "Edge DevTools for Visual Studio Code extension"; navigate to [When to use local Workspaces and extensions](#when-to-use-local-workspaces-and-extensions), below.  
+By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.
+Using a Workspace saves the changes that you make in DevTools to your file system.
+By using Workspaces, DevTools is able to be used as your code editor and Integrated Development Environment (IDE) for your source files.
+For more information, navigate to [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex].
 
 *   **Overrides** tab - Override page assets (such as images) by files from a local folder.  This is a way of changing what the server sends, after the server returns assets.  For more information, navigate to [Overrides][DevtoolsJavascriptOverrides].
 
@@ -133,7 +147,7 @@ The **Explorer** pane has the following tabs:
     *   **Group by folder** - Controls how files are displayed in the **Page** tab: as a flat list, or grouped by server and directory.
     *   **Open File** - Leads to the commands: **Open file**, **Run Command**, **Run snippet**, **Go to line**, **Go to symbol**.
 
-## View or edit JavaScript files
+## Editor pane to view or edit JavaScript files
 
 <!-- there was a proposal to link from here to where? -->
 
@@ -142,6 +156,15 @@ Use the **Editor** pane to view or edit the JavaScript that's returned from the 
 :::image type="complex" source="../media/edit-js.msft.png" alt-text="Editing JavaScript in the Editor pane" lightbox="../media/edit-js.msft.png":::
    Editing JavaScript in the **Editor** pane  
 :::image-end:::
+
+The **Editor** pane has the following level of support for various file types:
+
+| File Type | Supported Actions |
+|---------|---------|
+| JavaScript | View, edit, and debug. |
+| CSS | View and edit. |
+| HTML | View. |
+| Images | View. |
 
 ### Reformat a minified JavaScript file with pretty-print
 
@@ -161,7 +184,7 @@ In the **Explorer** pane, click the ellipses (...) (**More options**), select **
 *   \: to **Go to line**.
 *   \@ to **Go to symbol**.
 
-## Debug JavaScript  
+## Debugger pane to debug JavaScript code
 
 To troubleshoot where your JavaScript is going wrong, you can use the simple approach of inserting `console.log()` statements in the **Editor** pane.  Another approach, that's more powerful (yet can also be simple), is to use the debugger of Microsoft Edge DevTools.
 
@@ -179,13 +202,38 @@ The JavaScript Debugger in DevTools, in the **Debugger** pane, is designed to lo
 
 The basic approach to using a debugger is to set a breakpoint (an intentional stopping place in the code), run the code at full speed up to the line of code on which the breakpoint is set, and then step through the lines of code, starting at that breakpoint.  
 
-For example, the tutorial [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] uses an existing, simple webpage with a few form controls.  In the tutorial, to get into the "Paused" mode, in the **Debugger** pane, you expand **Event Listener Breakpoints** \> **Mouse**, and then select the **click** event check box so that a check mark appears.  When you click the **Add Numbers** button in the webpage (a form), the code runs and then pauses at the `onClick` event handler function.  You then set a breakpoint on a suspect line of code, and step through the code. 
+For example, the tutorial [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] uses an existing, simple webpage 
+[Demo: Get Started Debugging JavaScript with Microsoft Edge (Chromium) DevTools](https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html) with a few form controls.  
 
-:::image type="complex" source="../media/sources-paused-breakpoint.msft.png" alt-text="Entering Paused mode of the Debugger" lightbox="../media/sources-paused-breakpoint.msft.png":::
+As shown in the tutorial, to get into the "Paused" mode of the debugger:
+
+1. Open the **DevTools** window, such as by pressing `Shift+Ctrl+I` or `Shift+Command+I`.
+
+1. Select the **Sources** tab, to show the Sources tool.
+
+1. In the **Explorer** pane on the left, select the **Page** tab, then select the JavaScript file (`get-started.js` in this case).
+
+1. In the **Editor** pane, click a line number near a suspect line of code, such as `var sum = addend1 + addend2;`, to set a breakpoint on that line.
+
+1. In the webpage, which has simple form controls, enter the values 5 and 1, then select the button **Add Number 1 and Number 2**.  
+
+   Selecting the form's button triggers sending the form-data and running the JavaScript code.  The debugger runs the JavaScript code and then pauses at the breakpoint (`var sum = addend1 + addend2;`).
+
+1. You then use the **Watch** or **Scope** pane, and use the controls at the top of the **Debugger** pane to step through the code.
+
+<!-- "sources-paused-breakpoint.msft.png" is not currently directly used. It's the upstream source for the below image. -->
+
+:::image type="complex" source="../media/sources-paused-breakpoint-highlights.msft.png" alt-text="Entering Paused mode of the Debugger" lightbox="../media/sources-paused-breakpoint-highlights.msft.png":::
    Entering Paused mode of the Debugger  
 :::image-end:::  
 
-As you step through the code, you may display and change the values of all currently-defined properties and variables, issue JavaScript statements in the **Console**, and more.
+The **Scope** pane shows variables that are in-scope, and their values.  In the above figure, we added the Watch expressions `sum` and `typeof sum`, and stepped two lines past the breakpoint.
+
+Instead of setting **Watch** expressions in the **Debugger** pane, we could have issued a statement `console.log(typeof sum)` in the **Console** pane of the DevTools.
+
+Instead of using the Debugger, we could have added a statement `console.log(typeof sum)` in the code.  The debugger gives a richer, more flexible display and environment.
+
+In the Debugger, as you step through the code, you may display and change the values of all currently-defined properties and variables, issue JavaScript statements in the **Console**, and more.
 
 Breakpoints are preserved when you refresh the page.
 
@@ -226,6 +274,8 @@ Is this extension an alternative to the DevTools Source tool?
 Does this extension run against the JS returned from the server, or the source JS?
 -->
 
+<!-- if I'm using React and I set up a Workspace, does the DevTools Sources tool's debugger work for editing local React source files? -->
+
 The **Sources** tool is a JavaScript viewer, editor, and debugger.
 
 Use the **Sources** tool to check that your resources are loaded, and to view, edit, and debug JavaScript, especially JavaScript that's returned from the server.  
@@ -238,10 +288,6 @@ This JavaScript code from the server may be different than the source files you 
 
 Additional functionality:
 *   View local files (in addition to files returned from the server), and edit and save changes to local files, by using a Workspace (the **Filesystem** tab) or **Overrides**.  Such changes to code are preserved across page refreshes.
-
-### Scenarios for location of JavaScript code
-
-<!-- if I'm using React and I set up a Workspace, does the DevTools Sources tool's debugger work for editing local React source files? -->
 
 Depending on your project, local, source JavaScript may or may not be the same as the client-side JavaScript that's returned by the server.
 
@@ -257,11 +303,12 @@ The Sources tool can be used to view, edit, and debug local source files if you 
 
 You can also [Map preprocessed code to source code](../javascript/source-maps.md).
 
-## Additional functionality
+## Snippets tab to create, save, and run Snippets  
 
-The main purpose of the Sources tool is to view, edit, and debug JavaScript that's returned from the server.  The Sources tool also provides the following capabilities.
+<!-- Keep this minor use-case section below the major intro sections "Explorer pane", "Editor pane", "Debugger pane".
+Or, probably better: make this section very short and leverage its link to the Snippets article and move this section into the Editor section above. -->
 
-### Create, save, and run Snippets  
+The **Explorer** pane contains a **Snippets** tab.
 
 Snippets are scripts which you may run on any page.  Imagine that you repeatedly type out the following code in the **Console**, in order to insert the jQuery library into a page, so that you may run jQuery commands from the **Console**.  
 
@@ -288,19 +335,11 @@ For more information, navigate to [Run snippets of code from any page][DevtoolsG
 
 Snippets are similar to bookmarklets.
 
-### Set up a Workspace  
+## Edit a CSS file
 
-By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.  **Workspaces** enable you to save the changes that you make in DevTools to your file system.  By using Workspaces, DevTools is able to be used as your code editor.
+Generally, the best way to edit CSS is to [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md) of the **Elements** tool.
 
-To get started, navigate to [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex].
-
-### Edit CSS
-
-<!-- delete this section? -->
-
-In the Sources tool, the **Editor** pane supports editing CSS, but usually the best way to edit CSS is to [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md) of the **Elements** tool.
-
-In the Sources tool, if you edit a CSS file by adding the style rule below:
+The Sources tool supports directly editing a CSS file.  For example, if you edit a CSS file by adding the style rule below:
 
 ```css
 .metadata.page-metadata {
