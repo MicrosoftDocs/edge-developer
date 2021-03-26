@@ -1,5 +1,5 @@
-# - name: Legacy Microsoft Edge documentation
-#   href: index.md
+- name: Legacy Microsoft Edge documentation
+  href: index.md
   expanded: true
   items: 
     - name: Legacy Dev guide
@@ -202,7 +202,7 @@
         - name: Troubleshooting
           href: extensions/troubleshooting.md
     - name: Legacy Hosting
-      href: hosting/toc.md
+      href: hosting/toc.yml
     - name: Legacy Performance analysis
       href: performance-analysis/index.md
     - name: Legacy Progressive Web Apps
