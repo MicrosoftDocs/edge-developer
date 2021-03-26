@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, WebView2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
-# Feature differences between Microsoft Edge and WebView2  
+# Browser feature differences between Microsoft Edge and WebView2  
 
 WebView2 is based off of the Microsoft Edge browser. This enables developers to have the opportunity to extend features from the browser to WebView2-based apps, which can be very useful. However, WebView2 is not limited to browser-like apps. There are many scenarios in which the browser's features don't make sense or are unneccesary.    
 
@@ -36,29 +36,29 @@ About this table:
 - Feature: The name of the feature.
 - Default: The default experience on a new WebView2 instance
 - Configurable: If the feature can be toggled on/off via our API surface or command line switch.
-- Details: 
+- Details: additional information relevant to the feature..
 
 | Feature | Default | Configurable | Details |  
 |:--- |:--- |:--- | :--- | 
-| Autofill for Addresses | Enabled | Yes | This feature is turned on by default, you may turn it on or off via WebView2 Autofill API. |  
-| Autofill for Passwords | Enabled | Yes | This feature is turned on by default, you may turn it on or off via WebView2 Autofill API. |  
-| Autofill for Payments | Disabled | No | This feature is turned off. | 
-| Browser Extensions | Disabled | No | This feature is turned off. |   
-| Browser Task Manager | Disabled | No | This feature is turned off. |  
-| Continue-where-I-left-off prompt | Disabled | No | This feature is turned off. |  
-| Downloads | Enabled | Yes | WebView2 provides an api that allows you to customize the download UI to manipulate downloads, such as block, redirect, save, pause, and so on.  For more information, navigate to <!--[download api][Webview2ReferenceDownloadApi]-->. |  
-| Family Safety | Disabled | No | This feature is turned off. |  
+| Autofill for Addresses | On | Yes | This feature is turned on by default, you may turn it on or off via WebView2 Autofill API. |  
+| Autofill for Passwords | On | Yes | This feature is turned on by default, you may turn it on or off via WebView2 Autofill API. |  
+| Autofill for Payments | Off | No | This feature is turned off. | 
+| Browser Extensions | Off | No | This feature is turned off. |   
+| Browser Task Manager | Off | No | This feature is turned off. |  
+| Continue-where-I-left-off prompt | Off | No | This feature is turned off. |  
+| Downloads | On | Yes | WebView2 provides an api that allows you to customize the download UI to manipulate downloads, such as block, redirect, save, pause, and so on.  For more information, navigate to <!--[download api][Webview2ReferenceDownloadApi]-->. |  
+| Family Safety | Off | No | This feature is turned off. |  
 | Hotkeys | See Details | See Details | The following shortcuts are turned off by default:  `Ctrl`+`F` and `Ctrl`+`S`. The keys that are default disabled are generally keys that either don't make sense for WebView or simply cause problems of some sort or other, and are not toggle-able. Alternatively, ou can listen for a key combination in AcceleratorKeyPressed and create a custom response if needed.|  
-| IE Mode | Disabled | No | This feature is turned off. |  
-| Immersive Reader | Disabled | No | This feature is dependent on the browser UI for control and triggering.  This feature is turned off. |  
-| Intrusive Ads | Enabled* | No | The UI for this feature is removed, however the underlying functionality persists. |  
-| Read Aloud | Disabled | No | This feature is turned off. |  
-| Smart Screen | Enabled* | No | The UI for this feature is removed, however the underlying functionality persists. Additionally, Smart Screen can be turned off using command line switch. |  
-| Translate | Disabled | No | This feature is turned off. |  
-| Tracking Prevention | Enabled* | No | *The UI for this feature is removed, however the underlying functionality persists. |  
-| User Data Sync | Disabled | No | The feature that syncs your favorites, cookies, etc. between machines is disabled. |  
-| Web Payment API | Disabled | No | This feature is disabled. | 
-| Windows Defender Application Guard | Disabled | No | This feature is disabled. |  
+| IE Mode | Off | No | This feature is turned off. |  
+| Immersive Reader | Off | No | This feature is dependent on the browser UI for control and triggering.  This feature is turned off. |  
+| Intrusive Ads | On* | No | The UI for this feature is removed, however the underlying functionality persists. |  
+| Read Aloud | Off | No | This feature is turned off. |  
+| Smart Screen | On* | No | The UI for this feature is removed, however the underlying functionality persists. Additionally, Smart Screen can be turned off using command line switch. |  
+| Translate | Off | No | This feature is turned off. |  
+| Tracking Prevention | On* | No | *The UI for this feature is removed, however the underlying functionality persists. Tracking prevention is always set to balanced.|  
+| Profile and Identity | Off | No | The feature that syncs your favorites, cookies, etc. between machines is turned off. |  
+| Web Payment API | Off | No | This feature is turned off. | 
+| Windows Defender Application Guard | Off | No | This feature is turned off. |  
 | edge:// URLs | See Details | No | Settings for the browser are displayed on webpages that use internal URLs.  Most of the webpages have Microsoft Edge branding or don't make sense within the context of WebView2.  For more details about the internal URLs that are turned off, navigate to [Blocked internal URLs](#blocked-internal-urls). |  
 
 ### Blocked internal URLs  
@@ -80,6 +80,88 @@ The following built-in Microsoft Edge and Google Chrome webpages aren't availabl
 *   `edge://settings`  
 *   `edge://supervised-user-internals`  
 *   `edge://version`  
+
+### HotKeys Deep Dive
+
+Keybindings may be subject to change as the underlying browser is updated.  In particular, an accelerator key that is disabled by default may become enabled if its feature becomes supported in WebView2.  However, it is guaranteed that if `AreBrowserAcceleratorKeysEnabled` is set to FALSE, all keys that access browser-like features will be disabled, and all basic text-editing and movement keys will stay enabled.
+
+**The following hotkeys are always disabled in WebView2.**
+
+A * denotes thes key is technically not disabled, but the feature it accesses is disabled or doesn't apply to WebView.
+
+*   Ctrl-D: Add to Favorites
+*   Ctrl-Shift-D: Add All Tabs to Favorites
+*   Ctrl-L, Alt-D: Focus Location
+*   Ctrl-Shift-L: Paste and Go
+*   Ctrl-O: Open File
+*   Ctrl-Shift-U: Read Aloud*
+*   Ctrl-Shift-S: Web Capture*
+*   Ctrl-Shift-E: Sidebar*
+*   Ctrl-S: Save Page
+*   Ctrl-9: Select Last Tab
+*   Ctrl-Tab: Select Next Tab
+*   Ctrl-Shift-Tab: Select Previous Tab
+*   Ctrl-(1~8): Select Tab (1~8)
+*   Ctrl-Shift-B: Show Favorites Bar*
+*   F1: Help
+*   F6: Focus Next Pane*
+*   Shift-F6: Focus Previous Pane*
+*   F7: Caret Browsing*
+*   F9: Reading View*
+*   F10: Focus Menu Bar
+*   Ctrl-Shift-M: Show Identity Menu*
+*   Shift-Escape: Browser Task Manager*
+*   Shift-Alt-I: Edge Feedback*
+*   Ctrl-M: Mute Tab*
+*   Ctrl-Shift-N: New Incognito Window
+*   Ctrl-T: New Tab
+*   Ctrl-N: New Window
+*   Ctrl-Shift-T: Restore Last Closed Tab
+*   Alt-Shift-B: Focus Favorites
+*   Alt-Shift-A: Focus Inactive Popup
+*   Ctrl-E, Ctrl-K, Search Key: Focus Search
+*   Ctrl-Shift-K: Duplicate Tab
+*   Alt-Shift-T: Focus Toolbar*
+*   Alt-Home, Browser Home Key: Home
+*   Alt-E, Alt-F: Show App Menu
+*   Ctrl-Shift-O: Show Favorites
+*   Ctrl-J: Show Downloads
+*   Ctrl-H: Show History
+*   Shift-Alt-R: Show Reading Mode Bar*
+*   Ctrl-Shift-Y: Show Collections*
+
+**The following are the keys that are always disabled except in a pop-up window.** (Windows that appear when the NewWindowRequested event is not handled.)
+
+*   Ctrl-W, Ctrl-F4: Close Tab
+*   Ctrl-Shift-W: Close Window
+*   F11: Fullscreen
+
+**Keys that are disabled if `AreBrowserAcceleratorKeysEnabled` is false:**
+
+*   Escape: Stop
+*   Ctrl-F: Find on Page
+*   Ctrl-G: Find Next
+*   Ctrl-Shift-G: Find Previous
+*   Ctrl-P: Print
+*   Ctrl-R, F5, Reload Key: Reload
+*   Ctrl-Shift-R, Ctrl-F5, Shift-F5, Ctrl-Reload, Shift-Reload: Reload Without Cache
+*   Ctrl-- (Ctrl Minus): Zoom Out
+*   Ctrl-+: Zoom In
+*   Ctrl-0: Reset Zoom
+*   F3: Find Next
+*   Shift-F3: Find Previous
+*   Alt-Left, Browser Back Key: Back
+*   Alt-Right, Browser Forward Key: Forward
+*   Ctrl-P: Print
+*   Ctrl-Shift-I: Open DevTools
+*   Ctrl-Shift-J: DevTools Console
+*   Ctrl-Shift-C: DevTools Inspect
+
+> [!Note] 
+> Any of these keys can be customized individually using the AcceleratorKeyPressed
+event.
+
+
 
 > [!Important]
 > Some features may be able to be enabled/disabled via command line switches. For the full list of options please visit this [reference document](https://peter.sh/experiments/chromium-command-line-switches/).  
