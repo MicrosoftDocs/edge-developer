@@ -57,7 +57,7 @@ The **Sources** tool has three panes:
       The following figure shows the Sources tool with default, narrow layout.  The **Debugger** pane is at the bottom and is split into two panes, with **Scope** and **Watch** in the lower-right.
    :::column-end:::
    :::column span="":::
-     The following figure shows the Sources tool with wide layout.  The **Debugger** pane is on the right, including **Scope** and **Watch**.  
+     The following figure shows the Sources tool with wide layout, and also shows DevTools undocked into a separate window.  The **Debugger** pane is on the right, including **Scope** and **Watch**.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -177,7 +177,7 @@ The basic approach to using a debugger is to set a breakpoint (an intentional st
 
 For example, the tutorial [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] uses an existing, simple webpage with a few form controls.  In the tutorial, to get into the "Paused" mode, in the **Debugger** pane, you expand **Event Listener Breakpoints** \> **Mouse**, and then select the **click** event check box so that a check mark appears.  When you click the **Add Numbers** button in the webpage (a form), the code runs and then pauses at the `onClick` event handler function.  You then set a breakpoint on a suspect line of code, and step through the code. 
 
-:::image type="complex" source="../media/sources-paused-breakpoint.msft.png" alt-text="Entering Paused mode of the Debugger" lightbox="../media/debugging-panes-narrow.msft.png":::
+:::image type="complex" source="../media/sources-paused-breakpoint.msft.png" alt-text="Entering Paused mode of the Debugger" lightbox="../media/sources-paused-breakpoint.msft.png":::
    Entering Paused mode of the Debugger  
 :::image-end:::  
 
