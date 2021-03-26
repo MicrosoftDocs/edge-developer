@@ -44,7 +44,7 @@ Complete the following actions to edit a script.
      
 ## Reformat a minified JavaScript file with pretty-print
 
-To make a minified file human-readable, choose the **Format** \(![Format](../media/format-icon.msft.png)\) button.
+To make a minified file human-readable, choose the **Format** \(![Format](../media/format-icon.msft.png)\) button at the bottom of the **Editor** pane.
 
 :::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="The Format button" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
    The **Format** button  
@@ -151,7 +151,7 @@ You are paused on `A`.  After you choose **Step out**, DevTools runs the rest of
 
 When debugging a long function, there may be a lot of code that is not related to the problem you are debugging.  
 
-You may choose to step through all the lines, but that is tedious.  You may choose to set a line-of-code breakpoint on the line in which you are interested and then choose the **Resume Script Execution** \(![Resume Script Execution](../media/resume-script-run-icon.msft.png)\) button, but there is a faster way.  
+You may choose to step through all the lines, but that is tedious.  You may choose to set a line-of-code breakpoint on the line in which you are interested and then choose the **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\) button, but there is a faster way.  
 
 Hover on the line of code in which you are interested, open the contextual menu \(right-click\), and choose **Continue to here**.  DevTools runs all of the code up to that point, and then pauses on that line.  
 
@@ -161,7 +161,7 @@ Hover on the line of code in which you are interested, open the contextual menu 
 
 ### Restart the top function of the call stack  
 
-To pause on the first line of the top function in your call stack, while paused on a line of code, hover anywhere in the **Call Stack** pane, open the contextual menu \(right-click\), and choose **Restart Frame**.  The top function is the last function that was run.  
+To pause on the first line of the top function in your call stack, while paused on a line of code, hover anywhere in the **Call Stack** pane, open the contextual menu \(right-click\), and choose **Restart frame**.  The top function is the last function that was run.  
 
 The following code snippet is an example for you to step-through.  
 
@@ -175,15 +175,15 @@ function factorial(n) {
 }
 ```  
 
-You are paused on `A`.  After choosing **Restart Frame**, you should be paused on `B`, without ever setting a breakpoint or choosing **Resume script execution**.  
+You are paused on `A`.  After choosing **Restart frame**, you should be paused on `B`, without ever setting a breakpoint or choosing **Resume script execution**.  
 
-:::image type="complex" source="../media/javascript-source-page-debugger-restart-frame.msft.png" alt-text="Choose Restart Frame" lightbox="../media/javascript-source-page-debugger-restart-frame.msft.png":::
-   Choose **Restart Frame**  
+:::image type="complex" source="../media/javascript-source-page-debugger-restart-frame.msft.png" alt-text="Choose Restart frame" lightbox="../media/javascript-source-page-debugger-restart-frame.msft.png":::
+   Choose **Restart frame**  
 :::image-end:::  
 
 ### Resume script runtime  
 
-To continue the runtime after a pause of your script, choose the **Resume Script Execution** \(![Resume Script Execution](../media/resume-script-run-icon.msft.png)\) button.  DevTools runs the script up until the next breakpoint, if any.  
+To continue the runtime after a pause of your script, choose the **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\) button.  DevTools runs the script up until the next breakpoint, if any.  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="Choose Resume script execution" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
    Choose **Resume script execution**  
@@ -191,7 +191,7 @@ To continue the runtime after a pause of your script, choose the **Resume Script
 
 #### Force script runtime  
 
-To ignore all breakpoints and force your script to resume running, choose and hold the **Resume Script Execution** \(![Resume Script Execution](../media/resume-script-run-icon.msft.png)\) button and then choose the **Force script execution** \(![Force script execution](../media/force-script-run-icon.msft.png)\) button.  
+To ignore all breakpoints and force your script to resume running, choose and hold the **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\) button and then choose the **Force script execution** \(![Force script execution](../media/force-script-run-icon.msft.png)\) button.  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="Choose Force script execution" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
    Choose **Force script execution**  
@@ -279,7 +279,7 @@ function animate() {
 }
 ```  
 
-`A` is a third-party library that you trust.  If you are confident that the problem you are debugging is not related to the third-party library, then it makes sense to mark the script as **Library code**.  
+Suppose line `A` uses `lib`, which is a third-party library that you trust.  If you are confident that the problem you are debugging is not related to that third-party library, then it makes sense to mark the script (in this case, a particular function call) as **Library code**.  
 
 ### Mark a script as Library code from the Editor pane  
 
@@ -287,7 +287,7 @@ Complete the following actions to mark a script as **Library code** from the **E
 
 1.  Open the file.  
 1.  Hover anywhere and open the contextual menu \(right-click\).  
-1.  Choose **Mark as Library code**.  
+1.  Choose **Mark as Library code** (or **Add script to ignore list**). 
     
     :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="Mark a script as Library code from the Editor pane" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
        Mark a script as **Library code** from the **Editor** pane  
@@ -298,7 +298,7 @@ Complete the following actions to mark a script as **Library code** from the **E
 Complete the following actions to mark a script as **Library code** from the **Call Stack** pane.  
 
 1.  Hover on a function from the script and open the contextual menu \(right-click\).  
-1.  Choose **Mark as Library code**.  
+1.  Choose **Mark as Library code** (or **Add script to ignore list**).  
     
     :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Mark a script as Library code from the Call Stack pane" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
        Mark a script as **Library code** from the **Call Stack** pane  
