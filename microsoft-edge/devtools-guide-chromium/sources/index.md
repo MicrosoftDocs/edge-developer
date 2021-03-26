@@ -73,7 +73,7 @@ The **Sources** tool has three panes:
    :::column-end:::
 :::row-end:::  
 
-We recommend wide layout, as described below.
+Wide layout is recommended.
 
 ### Maximizing the DevTools window
 
@@ -118,7 +118,7 @@ The **Explorer** pane has the following tabs:
 
 *   **Filesystem** tab - When using Workspaces, to save changes to local files.  This enables DevTools to act as an Integrated Development Environment (IDE).  [Set up a Workspace](#set-up-a-workspace), so that changes you make in DevTools get saved to the code on your file system.  Alternatively, for persistent editing of local files, use the "Edge DevTools for Visual Studio Code extension"; navigate to [When to use local Workspaces and extensions](#when-to-use-local-workspaces-and-extensions), below.
 
-*   **Overrides** tab - Override page assets (such as images) by files from a local folder.  This is a way of changing what the server sends, after the server returns assets.  This overriding is on a per-folder basis, as described in [Overrides][DevtoolsJavascriptOverrides].
+*   **Overrides** tab - Override page assets (such as images) by files from a local folder.  This is a way of changing what the server sends, after the server returns assets.  For more information, navigate to [Overrides][DevtoolsJavascriptOverrides].
 
 *   **Content scripts** tab - Used for extensions.  Content scripts are from extensions; extension authors use them.  Use this to debug the JavaScript that an extension is injecting onto the page.  If you want to avoid stepping into content script code, navigate to [Mark content scripts as Library code][DevToolsJavaScriptGuidesMarkContentScriptsLibraryCode].
 
@@ -312,9 +312,11 @@ CSS changes take effect immediately; no saving is needed.
 
 ## Next steps
 
-*   [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] - A short tutorial with screen captures, using an existing, simple project.
-*   [Use the debugger features](../javascript/reference.md) - Examples and screen captures showing the Debugger features.
-*   [Pause your code with breakpoints](../javascript/breakpoints.md) - How to set basic and advanced breakpoints in the debugger.
+*   [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] - An introductory tutorial (with screen captures you can skim), using an existing, simple project.
+
+*   [Use the debugger features](../javascript/reference.md) - Using the Debugger to set breakpoints, step through code, view and modify variable values, watch JavaScript expressions, and view the call stack.
+
+*   [Pause your code with breakpoints](../javascript/breakpoints.md) - How to set basic and specialized breakpoints in the debugger.
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
