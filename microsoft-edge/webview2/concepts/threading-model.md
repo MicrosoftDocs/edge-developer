@@ -39,7 +39,7 @@ Some WebView2 events read values set on the related event arguments or start som
 
 For instance, you may use the `NewWindowRequested` event to provide a `CoreWebView2` to connect as a child window when the event handler completes.  But if you need to asynchronously create the `CoreWebView2`, request the `GetDeferral` method on the `NewWindowRequestedEventArgs`.  After you have asynchronously created the `CoreWebView2` and set the `NewWindow` property on the `NewWindowRequestedEventArgs`, request `Complete` on the `Deferral` object be returned using the `GetDeferral` method.  
 
-## Blocking the UI-thread  
+## Blocking the UI thread  
 
 Blocking the UI-thread is usually not a good idea. Blocking the UI-thread doesn't only make the UI unresponsive. Since the WebView2 control can be accessed only from the UI-thread it effectively blocks communication with the browser engine. For example this code would hang because the UI-thread is blocked by waiting for the result:
 
