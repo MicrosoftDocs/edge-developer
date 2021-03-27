@@ -40,7 +40,7 @@ Use the **Sources** tool to view, modify, and debug JavaScript that's returned b
 
 For related articles, navigate to [Next steps](#next-steps), below.
 
-## Arranging the panes of the Sources tool
+## Arranging the panes
 
 The **Sources** tool has three panes, placed as follows:
 *   Left (or upper left): the **Explorer** pane.
@@ -49,10 +49,10 @@ The **Sources** tool has three panes, placed as follows:
 
 :::row:::
    :::column span="":::
-      The following figure shows the Sources tool with default, narrow layout.  The **Debugger** pane is at the bottom and is split into two panes, with **Scope** and **Watch** in the lower-right.
+      The below figure shows the Sources tool with default, narrow layout.  The **Debugger** pane is at the bottom and is split into two panes, with **Scope** and **Watch** in the lower-right.
    :::column-end:::
    :::column span="":::
-     The following figure shows the Sources tool with wide layout, and also shows DevTools undocked into a separate window.  The **Debugger** pane is now on the right, including **Scope** and **Watch**.  
+     The below figure shows the Sources tool with wide layout, and also shows DevTools undocked into a separate window.  The **Debugger** pane is now on the right, including **Scope** and **Watch**.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -236,7 +236,7 @@ The **Editor** pane has the following level of support for various file types:
 
 ### Reformat a minified JavaScript file with pretty-print
 
-To use pretty-print to reformat a file to make it readable, click the braces button (**{}**) at the bottom of the Editor pane.  For more information, navigate to 
+To use pretty-print to reformat a file to make it readable, click the **Pretty print** button \(![Format](../media/format-icon.msft.png)\) at the bottom of the Editor pane.  For more information, navigate to 
 [Reformat a minified JavaScript file with pretty-print][DevToolsJavaScriptReferenceReformat] in the article "Use the debugger features".
 
 ### Apply or save changes
