@@ -90,6 +90,10 @@ For more information, navigate to [Change Microsoft Edge DevTools placement (Und
 
 Use the **Explorer** pane, on the left, to navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.  Optionally, set up a local Workspace to save changes directly to source files.
 
+### Page tab
+
+Explore the file system that's returned from the server to construct the current webpage, and select JavaScript files to view, edit, and debug.  The **Page** tab is the main tab in the Explorer pane.
+
 To list and navigate among all of the resources that the page has loaded, use the **Page** tab in the **Explorer** pane (on the left).
 
 :::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="The Page tab" lightbox="../media/sources-page-pane.msft.png":::
@@ -114,44 +118,42 @@ not really needed; single good capture above is sufficient; delete these lines a
    Display the contents of `a4d10f71.index-docs.js` in the **Editor** pane  
 :::image-end:::   -->
 
-### Tabs in the Explorer pane
+#### Changing the grouping in the Page tab
 
-<!-- 
-For progressive disclosure; each tab-item below should be short but informative, and link to either:
-* A section in this article.
-* An article.
-* A section within an article.
--->
-
-The **Explorer** pane has the following tabs:
-
-*   **Page** tab - Explore the file system that's returned from the server to construct the current webpage, and select JavaScript files to view, edit, and debug.  This is the main tab in the Explorer pane.
-
-*   **Filesystem** tab - For using a Workspace, to save changes to local files, so that changes you make in DevTools get saved to the code on your file system.
-This enables DevTools to act as an Integrated Development Environment (IDE).  
-Alternatively, for persistent editing of local files, use the "Edge DevTools for Visual Studio Code extension"; navigate to [When to use local Workspaces and extensions](#using-a-local-workspace-or-visual-studio-code-extensions), below.  
-By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.
-Using a Workspace saves the changes that you make in DevTools to your file system.
-By using Workspaces, DevTools is able to be used as your code editor and Integrated Development Environment (IDE) for your source files.
-For more information, navigate to [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex].
-
-*   **Overrides** tab - Override page assets (such as images) by files from a local folder.  This is a way of changing what the server sends, after the server returns assets.  For more information, navigate to [Overrides][DevtoolsJavascriptOverrides].
-
-*   **Content scripts** tab - Used for extensions.  Content scripts are from extensions; extension authors use them.  Use this to debug the JavaScript that an extension is injecting onto the page.  If you want to avoid stepping into content script code, navigate to [Mark content scripts as Library code][DevToolsJavaScriptGuidesMarkContentScriptsLibraryCode].
-
-*   **Snippets** tab - Create and save JavaScript code snippets for reuse on any webpage, such as code to include jQuery, as described in [Snippets tab to create, save, and run Snippets](#snippets-tab-to-create-save-and-run-snippets).
-
-*   \>> (**More tabs**) - This "double chevron" button displays the above tabs when the display is narrow.
 *   ... (**More options**)
     *   **Group by folder** - Controls how files are displayed in the **Page** tab: as a flat list, or grouped by server and directory.
-    *   **Open File** - Leads to the commands: **Open file**, **Run Command**, **Run snippet**, **Go to line**, **Go to symbol**.
 
-### Using a Workspace (the Filesystem tab), to work with local source code
+### Filesystem tab for a Workspace
 
-<!-- todo: dissolve this section into the Tabs Overview and the Workspace article -->
+<!-- todo: condense section -->
 
-Additional functionality:
-*   View local files (in addition to files returned from the server), and edit and save changes to local files, by using a Workspace (the **Filesystem** tab) or **Overrides**.  Such changes to code are preserved across page refreshes.
+For using a Workspace, to save changes to local files, so that changes you make in DevTools get saved to the code on your file system.  
+
+To work with local source code rather than a copy of the code that's returned from the server, set up a Workspace, in the **Filesystem** tab.
+
+The **Sources** tool is a JavaScript viewer, editor, and debugger.
+
+Use the **Sources** tool to check that your resources are loaded, and to view, edit, and debug JavaScript, especially JavaScript that's returned from the server.  
+
+Use the Sources tool when you want to view the JavaScript code that is returned from the server, rather than the source code, which might be different.
+
+Use the Sources tool, rather than a code editor, for fast iterations when you are prototyping JavaScript code and don't want to go through the build process every time.
+
+This JavaScript code from the server may be different than the source files you work with, if those files go through transformations.  The **Sources** tool shows the final JavaScript code that's presented to the browser.
+
+Setting up a Workspace allows DevTools to act as an Integrated Development Environment (IDE).  
+
+Alternatively, for persistent editing of local files, use the "Edge DevTools for Visual Studio Code extension"; navigate to [When to use local Workspaces and extensions](#using-a-local-Workspace-or-extensions-for-visual-studio-code), below.  
+
+By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.
+
+Using a Workspace saves the changes that you make in DevTools to your file system.
+
+By using Workspaces, DevTools is able to be used as your code editor and Integrated Development Environment (IDE) for your source files.
+
+For more information, navigate to [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex].
+
+View local files (in addition to files returned from the server), and edit and save changes to local files, by using a Workspace (the **Filesystem** tab) or **Overrides**.  Such changes to code are preserved across page refreshes.
 
 Depending on your project, local, source JavaScript may or may not be the same as the client-side JavaScript that's returned by the server.
 
@@ -167,12 +169,17 @@ The Sources tool can be used to view, edit, and debug local source files if you 
 
 You can also [Map preprocessed code to source code][DevToolsJavaScriptSourceMaps].
 
-### Snippets tab to create, save, and run Snippets  
+### Overrides tab
 
-<!-- todo: dissolve this section into the Tabs Overview and the Workspace article -->
+Override page assets (such as images) by files from a local folder.  This is a way of changing what the server sends, after the server returns assets.  For more information, navigate to [Overrides][DevtoolsJavascriptOverrides].
 
-The **Explorer** pane contains a **Snippets** tab.
+### Snippets tab
 
+<!-- todo: condense section -->
+
+Create and save JavaScript code snippets for reuse on any webpage, such as code to include jQuery, as described in [Snippets tab to create, save, and run Snippets](#snippets-tab-to-create-save-and-run-snippets).
+
+Use the **Snippets** tab in the **Explorer** tab to create, save, and run Snippets.
 Snippets are scripts which you may run on any page.  Imagine that you repeatedly type out the following code in the **Console**, in order to insert the jQuery library into a page, so that you may run jQuery commands from the **Console**.  
 
 ```javascript
@@ -197,6 +204,13 @@ To run a Snippet:
 For more information, navigate to [Run snippets of code from any page][DevtoolsGuideChromiumJavascriptSnippets].
 
 Snippets are similar to bookmarklets.
+
+### More options next to tabs in the Explorer pane
+
+*   \>> (**More tabs**) - This "double chevron" button displays the above tabs when the display is narrow.
+*   ... (**More options**)
+    *   **Group by folder** - Controls how files are displayed in the **Page** tab: as a flat list, or grouped by server and directory.
+    *   **Open File** - Leads to the commands: **Open file**, **Run Command**, **Run snippet**, **Go to line**, **Go to symbol**.
 
 ## Editor pane to view or edit JavaScript files
 
@@ -320,28 +334,11 @@ Breakpoints are preserved when you refresh the page.
 
 *   [Pause your code with breakpoints][DevToolsJavaScriptBreakpoints] - How to set basic and specialized breakpoints in the debugger.
 
-### Related extensions for Visual Studio Code
-
-*   Debugger for Microsoft Edge
-*   Microsoft Edge Tools for VS Code
-
-For more information, navigate to the [Extensions][DevToolsVSCodeIndexExtensions] section in the article "Visual Studio Code overview".
-
-## Using a local Workspace, or extensions for Visual Studio Code
+## Using extensions for Visual Studio Code
 
 <!-- brief overview of Scenarios/Pros/Cons, advise when to use which approach -->
 
 <!-- when using React and a Workspace, does the DevTools Sources tool's debugger work for editing local React source files? -->
-
-The **Sources** tool is a JavaScript viewer, editor, and debugger.
-
-Use the **Sources** tool to check that your resources are loaded, and to view, edit, and debug JavaScript, especially JavaScript that's returned from the server.  
-
-Use the Sources tool when you want to view the JavaScript code that is returned from the server, rather than the source code, which might be different.
-
-Use the Sources tool, rather than a code editor, for fast iterations when you are prototyping JavaScript code and don't want to go through the build process every time.
-
-This JavaScript code from the server may be different than the source files you work with, if those files go through transformations.  The **Sources** tool shows the final JavaScript code that's presented to the browser.
 
 ### Extension\: Debugger for Microsoft Edge
 
@@ -355,11 +352,15 @@ With the extension for Visual Studio Code, the debugger runs in the Visual Studi
 
 This extension runs against the JavaScript code that's returned from the server.
 
+For more information, navigate to the [Extensions][DevToolsVSCodeIndexExtensions] section in the article "Visual Studio Code overview".
+
 ### Extension\: Microsoft Edge Tools for Visual Studio Code
 
 This extension is an alternative to the Sources tool of DevTools.
 
 This extension runs against the JavaScript that is returned from the server, or against the local JavaScript source code.
+
+For more information, navigate to the [Extensions][DevToolsVSCodeIndexExtensions] section in the article "Visual Studio Code overview".
 
 ## Next steps
 
