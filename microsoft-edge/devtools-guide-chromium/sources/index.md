@@ -31,7 +31,7 @@ Use the **Sources** tool to view, modify, and debug JavaScript that's returned b
 | Pane | Actions |
 |---|---|
 | **Explorer** pane | Navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.  Optionally, set up a local Workspace to save changes directly to source files. |
-| **Editor** pane | View JavaScript and other files that are returned from the server.  Make experimental edits to the JavaScript code.  These changes are preserved (in the DevTools sandbox) until page refresh, or are saved to a local Workspace. |
+| **Editor** pane | View JavaScript, CSS, and other files that are returned from the server.  Make experimental edits to the JavaScript or CSS code.  These changes are preserved (in the DevTools sandbox) until page refresh, or are saved to a local Workspace. |
 | **Debugger** pane | Use the JavaScript Debugger to step through the JavaScript code, and to step through experimental changes to the code, while watching any JavaScript expressions you specify.  Watch and manually change variable values, and automatically show which variables are currently in-scope for the current line of code. |
 
 :::image type="complex" source="../media/debugging.msft.png" alt-text="Navigate, view, edit, and debug JavaScript returned by the server" lightbox="../media/debugging.msft.png":::
@@ -143,7 +143,7 @@ This JavaScript code from the server may be different than the source files you 
 
 Setting up a Workspace allows DevTools to act as an Integrated Development Environment (IDE).  
 
-Alternatively, for persistent editing of local files, use the "Edge DevTools for Visual Studio Code extension"; navigate to [When to use local Workspaces and extensions](#using-a-local-Workspace-or-extensions-for-visual-studio-code), below.  
+Alternatively, for persistent editing of local files, use the "Edge DevTools for Visual Studio Code extension"; navigate to [Using extensions for Visual Studio Code](#using-extensions-for-visual-studio-code), below.  
 
 By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.
 
@@ -171,16 +171,19 @@ You can also [Map preprocessed code to source code][DevToolsJavaScriptSourceMaps
 
 ### Overrides tab
 
-Override page assets (such as images) by files from a local folder.  This is a way of changing what the server sends, after the server returns assets.  For more information, navigate to [Overrides][DevtoolsJavascriptOverrides].
+Override page assets (such as images) by files from a local folder.  This is a way of changing what the server sends, after the server returns assets.  
+
+For more information, navigate to [Overrides][DevtoolsJavascriptOverrides].
 
 ### Snippets tab
 
 <!-- todo: condense section -->
 
-Create and save JavaScript code snippets for reuse on any webpage, such as code to include jQuery, as described in [Snippets tab to create, save, and run Snippets](#snippets-tab-to-create-save-and-run-snippets).
+Create and save JavaScript code snippets for reuse on any webpage, such as code to include jQuery.
 
-Use the **Snippets** tab in the **Explorer** tab to create, save, and run Snippets.
-Snippets are scripts which you may run on any page.  Imagine that you repeatedly type out the following code in the **Console**, in order to insert the jQuery library into a page, so that you may run jQuery commands from the **Console**.  
+Use the **Snippets** tab to create, save, and run Snippets.
+Snippets are scripts which you may run on any page.
+Imagine that you repeatedly type out the following code in the **Console**, in order to insert the jQuery library into a page, so that you may run jQuery commands from the **Console**.  
 
 ```javascript
 let script = document.createElement('script');
