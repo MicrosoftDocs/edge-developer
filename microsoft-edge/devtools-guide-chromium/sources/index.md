@@ -40,12 +40,15 @@ Use the **Sources** tool to view, modify, and debug JavaScript that's returned b
 
 For related articles, navigate to [Next steps](#next-steps), below.
 
-## Arranging the panes
+## Arranging the panes of the Sources tool
 
 The **Sources** tool has three panes, placed as follows:
-*   Left (or upper left): the **Explorer** pane.
-*   Middle (or upper right: the **Editor** pane.
-*   Right (or bottom): the **Debugger** pane.
+
+| Pane | Placement in narrow layout | Placement in wide layout |
+|---|---|---|
+| **Explorer** | Upper left | Left |
+| **Editor** | Upper right | Middle |
+| **Debugger** | Bottom | Right |
 
 :::row:::
    :::column span="":::
@@ -94,7 +97,7 @@ Use the **Explorer** pane, on the left, to navigate among the resources that are
 
 Explore the file system that's returned from the server to construct the current webpage, and select JavaScript files to view, edit, and debug.  The **Page** tab is the main tab in the Explorer pane.
 
-To list and navigate among all of the resources that the page has loaded, use the **Page** tab in the **Explorer** pane (on the left).
+To list and navigate among all of the resources that the page has loaded, use the **Page** tab in the **Explorer** pane.
 
 :::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="The Page tab" lightbox="../media/sources-page-pane.msft.png":::
    The **Page** tab
@@ -112,16 +115,17 @@ How the **Page** tab is organized, in the tree in the **Explorer** pane:
     
 To display a file in the **Editor** pane, choose a file in the **Page** tab.  You may display any type of file.  For images, a preview of the image is displayed.  
 
+### Group files by folder or as a flat list
+
+The **Page** tab displays files or resources grouped by server and directory, or as a flat list.
+
+Next to the tabs on the Explorer pane, select the **...** (**More options**) button, then select or clear **Group by folder**.
+
 <!-- 
 not really needed; single good capture above is sufficient; delete these lines and the png file (not used in other articles)
 :::image type="complex" source="../media/sources-editor-pane.msft.png" alt-text="Display the contents of a4d10f71.index-docs.js in the Editor pane" lightbox="../media/sources-editor-pane.msft.png":::
    Display the contents of `a4d10f71.index-docs.js` in the **Editor** pane  
 :::image-end:::   -->
-
-#### Changing the grouping in the Page tab
-
-*   ... (**More options**)
-    *   **Group by folder** - Controls how files are displayed in the **Page** tab: as a flat list, or grouped by server and directory.
 
 ### Filesystem tab for a Workspace
 
@@ -210,10 +214,18 @@ Snippets are similar to bookmarklets.
 
 ### More options next to tabs in the Explorer pane
 
-*   \>> (**More tabs**) - This "double chevron" button displays the above tabs when the display is narrow.
-*   ... (**More options**)
-    *   **Group by folder** - Controls how files are displayed in the **Page** tab: as a flat list, or grouped by server and directory.
-    *   **Open File** - Leads to the commands: **Open file**, **Run Command**, **Run snippet**, **Go to line**, **Go to symbol**.
+\>> (**More tabs**) - This "double chevron" button displays the additional tabs of the Explorer pane when the display is narrow.
+
+### Explorer commands on the Command menu
+
+Next to the tabs on the Explorer pane, select the **...** (**More options**) button, then select **Open File**.
+The **Command menu** appears, and lists all the resources that are listed in the **Page** tab.
+
+To display and pick from a list of all .js files, enter `.js`.
+
+If you enter `?`, the Command menu shows the commands: **Open file**, **Run Command**, **Run snippet**, **Go to line**, **Go to symbol**.
+
+For more information, navigate to [Run commands with the Microsoft Edge DevTools Command menu](../command-menu/index.md).
 
 ## Editor pane to view or edit JavaScript files
 
@@ -245,6 +257,8 @@ For JavaScript changes to take effect, select `Control`+`S` \(Windows, Linux\) o
 
 By default, your edits are discarded when you refresh the page.  To learn how to save the changes to your file system, navigate to [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex].
 
+### Editor commands on the Command menu
+
 To go to a line number or symbol in the file: 
 
 In the **Explorer** pane, click the ellipses (...) (**More options**), select **Open File** (**Ctrl+P**), then type any of the following characters:
@@ -252,6 +266,8 @@ In the **Explorer** pane, click the ellipses (...) (**More options**), select **
 *   `?` to view options.
 *   \: to **Go to line**.
 *   \@ to **Go to symbol**.
+
+For more information, navigate to [Run commands with the Microsoft Edge DevTools Command menu](../command-menu/index.md).
 
 ### Edit a CSS file
 
