@@ -32,14 +32,13 @@ Use the **Sources** tool to view, modify, and debug JavaScript that's returned b
 |---|---|
 | **Explorer** pane | Navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.  Optionally, set up a local Workspace to save changes directly to source files. |
 | **Editor** pane | View JavaScript and other files that are returned from the server.  Make experimental edits to the JavaScript code.  These changes are preserved (in the DevTools sandbox) until page refresh, or are saved to a local Workspace. |
-| **Debugger** pane | Use the JavaScript Debugger to step through the JavaScript code that is returned from the server, and to step through experimental changes to the code, while watching any JavaScript expressions you specify.  Watch and manually change variable values, and automatically show which variables are currently in-scope for the given line of code. |
+| **Debugger** pane | Use the JavaScript Debugger to step through the JavaScript code, and to step through experimental changes to the code, while watching any JavaScript expressions you specify.  Watch and manually change variable values, and automatically show which variables are currently in-scope for the current line of code. |
 
 :::image type="complex" source="../media/debugging.msft.png" alt-text="Navigate, view, edit, and debug JavaScript returned by the server" lightbox="../media/debugging.msft.png":::
    Navigate, view, edit, and debug JavaScript returned by the server  
 :::image-end:::  
 
-> Note: 
-> If you are already familiar with the Sources tool, to see related articles, navigate to [Next steps](#next-steps), below.
+For related articles, navigate to [Next steps](#next-steps), below.
 
 ## Arranging the panes of the Sources tool
 
@@ -89,6 +88,8 @@ For more information, navigate to [Change Microsoft Edge DevTools placement (Und
 
 ## Explorer pane to navigate files
 
+Use the **Explorer** pane, on the left, to navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.  Optionally, set up a local Workspace to save changes directly to source files.
+
 To list and navigate among all of the resources that the page has loaded, use the **Page** tab in the **Explorer** pane (on the left).
 
 :::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="The Page tab" lightbox="../media/sources-page-pane.msft.png":::
@@ -128,7 +129,7 @@ The **Explorer** pane has the following tabs:
 
 *   **Filesystem** tab - For using a Workspace, to save changes to local files, so that changes you make in DevTools get saved to the code on your file system.
 This enables DevTools to act as an Integrated Development Environment (IDE).  
-Alternatively, for persistent editing of local files, use the "Edge DevTools for Visual Studio Code extension"; navigate to [When to use local Workspaces and extensions](#when-to-use-local-workspaces-and-extensions), below.  
+Alternatively, for persistent editing of local files, use the "Edge DevTools for Visual Studio Code extension"; navigate to [When to use local Workspaces and extensions](#using-a-local-workspace-or-visual-studio-code-extensions), below.  
 By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.
 Using a Workspace saves the changes that you make in DevTools to your file system.
 By using Workspaces, DevTools is able to be used as your code editor and Integrated Development Environment (IDE) for your source files.
@@ -201,7 +202,7 @@ Snippets are similar to bookmarklets.
 
 <!-- there was a proposal to link from here to where? -->
 
-Use the **Editor** pane to view or edit the JavaScript that's returned from the server.  If you modify the JavaScript code, DevTools updates the page to run the modified code.  The Sources tool can also be set up to view and edit local JavaScript source files.
+Use the **Editor** pane to view or edit JavaScript and other files that are returned from the server.  Make experimental edits to the JavaScript code; DevTools updates the page to run the modified code.  These experimental changes are preserved (in the DevTools sandbox) until page refresh.  To view and edit local JavaScript source files, set up a Workspace.
 
 :::image type="complex" source="../media/edit-js.msft.png" alt-text="Editing JavaScript in the Editor pane" lightbox="../media/edit-js.msft.png":::
    Editing JavaScript in the **Editor** pane  
@@ -255,26 +256,27 @@ CSS changes take effect immediately; no saving is needed.
 
 ## Debugger pane to debug JavaScript code
 
-To troubleshoot where your JavaScript is going wrong, you can use the simple approach of inserting `console.log()` statements in the **Editor** pane.  Another approach, that's more powerful (yet can also be simple), is to use the debugger of Microsoft Edge DevTools.
+Use the JavaScript Debugger to step through the JavaScript code that's returned by the server (or stored locally in a Workspace).  Step through experimental changes to the code, while watching any JavaScript expressions you specify.  Watch and manually change variable values, and automatically show which variables are currently in-scope for the current line of code.
 
-The Debugger supports actions including the following:
-
-*   Set breakpoints, to pause code.
-*   Step through code.
-*   View and edit properties and variables.
-*   Watch the values of JavaScript expressions.
-*   View the call stack.
+The Debugger supports standard debugging actions, such as:  
+*   Setting breakpoints, to pause code.
+*   Stepping through code.
+*   Viewing and editing properties and variables.
+*   Watching the values of JavaScript expressions.
+*   Viewing the call stack (the sequence of function calls so far).
 
 The JavaScript Debugger in DevTools, in the **Debugger** pane, is designed to look and feel and work like 
 [the debugger in Visual Studio Code][CodeVisualStudioComDocsEditorDebugging] and
 [the debugger in Visual Studio][DMCVisualStudioDebuggerNavigatingThroughCodeWithTheDebugger].
 
+To troubleshoot where your JavaScript is going wrong, you can use the simple approach of inserting `console.log()` statements in the **Editor** pane.  Another approach, that's more powerful (yet can also be simple), is to use the debugger of Microsoft Edge DevTools.
+
 The basic approach to using a debugger is to set a breakpoint (an intentional stopping place in the code), run the code at full speed up to the line of code on which the breakpoint is set, and then step through the lines of code, starting at that breakpoint.  
 
 For example, the tutorial [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] uses an existing, simple webpage 
-[Demo: Get Started Debugging JavaScript with Microsoft Edge (Chromium) DevTools][DevtoolsGlitchMeDebugJsGetStarted] containing a few form controls.  
+[Demo: Get Started Debugging JavaScript with Microsoft Edge (Chromium) DevTools][DevtoolsGlitchMeDebugJsGetStarted], that contains a few form controls.  
 
-As shown in the tutorial, to get into the "Paused" mode of the debugger:
+As shown in the tutorial, to get into the "Paused" mode of the debugger, you do the following:
 
 1. Open the **DevTools** window, such as by pressing `Shift+Ctrl+I` or `Shift+Command+I`.
 
@@ -325,31 +327,11 @@ Breakpoints are preserved when you refresh the page.
 
 For more information, navigate to the [Extensions][DevToolsVSCodeIndexExtensions] section in the article "Visual Studio Code overview".
 
-## Using a local Workspace or Visual Studio Code extensions
+## Using a local Workspace, or extensions for Visual Studio Code
 
 <!-- brief overview of Scenarios/Pros/Cons, advise when to use which approach -->
 
-<!-- if I'm using React and I set up a Workspace, does the DevTools Sources tool's debugger work for editing local React source files? -->
-
-### Debugger for Microsoft Edge
-
-This extension is an alternative to the DevTools Source tool.
-
-There are different capabilities and limitations of the "Debugger for Microsoft Edge", compared to using the Debugger of the Sources tool in DevTools.
-
-With DevTools, the debugger runs in the DevTools window connected to a browser window.
-
-With the extension for Visual Studio Code, the debugger runs in the Visual Studio Code window.
-
-This extension runs against the JavaScript code that's returned from the server.
-
-### Microsoft Edge Tools for Visual Studio Code
-
-This extension is an alternative to the Sources tool of DevTools.
-
-This extension runs against the JavaScript that is returned from the server, or against the local JavaScript source code.
-
-## Working with code returned from the server, versus local source code
+<!-- when using React and a Workspace, does the DevTools Sources tool's debugger work for editing local React source files? -->
 
 The **Sources** tool is a JavaScript viewer, editor, and debugger.
 
@@ -360,6 +342,24 @@ Use the Sources tool when you want to view the JavaScript code that is returned 
 Use the Sources tool, rather than a code editor, for fast iterations when you are prototyping JavaScript code and don't want to go through the build process every time.
 
 This JavaScript code from the server may be different than the source files you work with, if those files go through transformations.  The **Sources** tool shows the final JavaScript code that's presented to the browser.
+
+### Extension\: Debugger for Microsoft Edge
+
+This extension is an alternative to the DevTools Source tool.
+
+There are different capabilities and limitations of the "Debugger for Microsoft Edge" extension, compared to using the Debugger of the Sources tool in DevTools.
+
+With DevTools, the debugger runs in the DevTools window connected to a browser window.
+
+With the extension for Visual Studio Code, the debugger runs in the Visual Studio Code window.
+
+This extension runs against the JavaScript code that's returned from the server.
+
+### Extension\: Microsoft Edge Tools for Visual Studio Code
+
+This extension is an alternative to the Sources tool of DevTools.
+
+This extension runs against the JavaScript that is returned from the server, or against the local JavaScript source code.
 
 ## Next steps
 
