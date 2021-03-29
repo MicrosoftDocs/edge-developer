@@ -54,7 +54,7 @@ About this table:
 | Hotkeys | See Details | See Details | See section [HotKeys Deep Dive](#hotkeys-deep-dive).  The keys that are default disabled are generally keys that either don't make sense for WebView or simply cause problems of some sort or other, and are not toggle-able. Alternatively, ou can listen for a key combination in AcceleratorKeyPressed and create a custom response if needed.|  
 | IE Mode | Off | No | This feature is turned off. |  
 | Immersive Reader | Off | No | This feature is dependent on the browser UI for control and triggering.  This feature is turned off. |  
-| Intrusive Ads | On* | No | The UI for this feature is removed, however the underlying functionality persists. |  
+| Intrusive Ads | Off | No | This feature is turned off. |  
 | Read Aloud | Off | No | This feature is turned off. |  
 | Smart Screen | On* | No | The UI for this feature is removed, however the underlying functionality persists. Additionally, Smart Screen can be turned off using command line switch. |  
 | Translate | Off | No | This feature is turned off. |  
