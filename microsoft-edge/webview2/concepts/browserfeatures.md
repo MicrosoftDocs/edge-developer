@@ -90,7 +90,7 @@ Keybindings may be subject to change as the underlying browser is updated.  In p
 
 **The following hotkeys are always disabled in WebView2.**
 
-A * denotes thes key is technically not disabled, but the feature it accesses is disabled or doesn't apply to WebView.
+A * denotes the key is technically not disabled, but the feature it accesses is disabled or doesn't apply to WebView.
 
 *   Ctrl-D: Add to Favorites
 *   Ctrl-Shift-D: Add All Tabs to Favorites
