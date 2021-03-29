@@ -79,6 +79,8 @@
                   href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
                 - name: Get started with remote debugging Windows 10 devices
                   href: devtools-guide-chromium/remote-debugging/windows.md
+                - name: Get started with remote debugging Android WebViews
+                  href: devtools-guide-chromium/remote-debugging/webviews.md
         - name: How-to guides
           items:
             - name: Accessibility
