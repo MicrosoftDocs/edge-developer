@@ -444,7 +444,7 @@ To toggle the `Run on OS Login` feature for an installed PWA, you can browse to 
 
 ## File Handling
 
-The ability to register as a file type handler has been in experimentation phase for some time. By providing a manifest entry for the file types your app can handle, once installed, your app is registered with the host operating system as a file handler for those file types. You then check for the existance of the feature `launchQueue` within your apps startup code and handle the file.
+The ability to register as a file type handler has been in experimentation phase for some time. By providing a manifest entry for the file types your app can handle, once installed, your app is registered with the host operating system as a file handler for those file types. You then check for the existence of the feature `launchQueue` within your apps startup code and handle the file.
 
 Chromium based browsers are broadly testing and shaping this feature. You can find more information including code examples over at [web.dev](https://web.dev/file-handling/).
 
