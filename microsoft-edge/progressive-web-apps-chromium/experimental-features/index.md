@@ -27,6 +27,11 @@ To turn on \(or off\) experimental features in Microsoft Edge, complete the foll
 :::image-end:::
 
 If an experimental feature doesn't have an `edge://flags` entry, instructions will be provided on how to use the command line to start Microsoft Edge with that feature specifically turned on.
+
+### Origin Trials
+Microsoft Edge sometimes uses origin trials to test features on for particular domains/sites. If you are a site owner that would like to participate in an origin trial for your site with a particular feature, you can enrol to participate in an origin trial so that features are automatically enabled for a percentage of Microsoft Edge users visiting your site.
+
+Learn more here: [Microsoft Edge Origin Trials](#https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/)
     
 > [!NOTE]
 > Experimental features are constantly being updated and may cause performance issues.  To turn off an experimental feature, open the `edge://flags` webpage and change the status of the feature to `Disabled`.  
@@ -50,6 +55,7 @@ This table includes features that are work in progress that may come out in a fu
 
 | Feature | Platform |  
 |:--- |:--- |   
+| [URL Protocol Handling](#url-protocol-handling) |  macOS, Linux |  
 | [Window Controls Overlay for Installed Desktop Web Apps](#window-controls-overlay-for-installed-desktop-web-apps) |  macOS, Linux |  
 | Improvements to App Management| All |  
 | Support for Desktop Share Target| Windows 10 |  
@@ -58,7 +64,7 @@ This table includes features that are work in progress that may come out in a fu
 
 URLs can be used to define more than just links to webpages and web content using the HTTP or FTP protocol - they can be used to describe links to anything you can codify into a schema. For example, the `mailto://` protocol is used to describe an email link and the operating system or browser can decide which webpage or app should handle that protocol. You can learn more about existing browser based support for [web based protocol handling here](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/registerProtocolHandler/Web-based_protocol_handlers). 
 
-This feature allows you to register a PWA with the host operating system via the web app manifest, declaring that it can handle a specific URL protocol. After registering a PWA as a protocol handler, when a user chooses a hyperlink with a specific scheme like `mailto://`, `ms-word://` or `web+music://` from a browser or a native app, the registered PWA would be activated by the operating system and receive the URL.
+This feature allows you to register a PWA with the host operating system via the web app manifest, declaring that it can handle a specific URL protocol. After registering a PWA as a protocol handler, when a user chooses a hyperlink with a specific scheme like `mailto://` or `web+music://` from a browser or a native app, the registered PWA would be activated by the operating system and receive the URL.
 
 This feature requires you to update the web app manifest to include a `protocol_handlers` array, within the array you need to specify two fields:
 
@@ -85,16 +91,6 @@ In this example, a web app manifest declares that the app should be registered t
   ],
   "icons": [
     {
-      "src": "images/icons-44.png",
-      "type": "image/png",
-      "sizes": "44x44"
-    },
-    {
-      "src": "images/icons-144.png",
-      "type": "image/png",
-      "sizes": "144x144"
-    },
-    {
       "src": "images/icons-192.png",
       "type": "image/png",
       "sizes": "192x192"
@@ -114,7 +110,10 @@ You will need to update your manifest to support whatever protocol you'd like to
 > 
 > **Desktop Web Apps support Protocol Handlers**
 > 
-> Mac OS and Linux support is under development.
+> Origin trial is running for Protocol Handlers
+> [Register Your Origin Here](#https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration/)
+>
+> 
  
 ## URL Link Handling
 
