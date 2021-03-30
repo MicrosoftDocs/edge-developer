@@ -3,7 +3,7 @@ description: Feature differences between Microsoft Edge and WebView2
 title: Feature differences between Microsoft Edge and WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/29/2021
+ms.date: 03/30/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -17,7 +17,7 @@ WebView2 is based on the new Microsoft Edge browser.  You to have the opportunit
 The purpose of this article is to provide the following information.  
 
 *   The current approach that the WebView2 team uses for browser features.  
-*   The status of features and the reasoning behind the state.  
+*   The status of features and the reasons behind the state.  
 *   The ability for features to be turned on or off.  
     
 ## Guiding principles  
@@ -49,22 +49,22 @@ Each column
 | Browser Task Manager | Off | No | This feature is turned off.  |  
 | Collections | Off | No | This feature is turned off.  |  
 | Continue-where-I-left-off prompt | Off | No | This feature is turned off.  |  
-| Downloads | On | Yes | WebView2 provides an api that allows you to customize the download UI to manipulate downloads, such as block, redirect, save, pause, and so on.  <!--For more information, navigate to [download api][Webview2ReferenceDownloadApi].--> |  
+| Downloads | On | Yes | WebView2 provides an API that allows you to customize the download UI to manipulate downloads, such as block, redirect, save, pause, and so on.  <!--For more information, navigate to [download API][Webview2ReferenceDownloadApi].--> |  
 | Edge Shopping | Off | No | This feature is turned off.  |  
 | Family Safety | Off | No | This feature is turned off.  |  
 | Favorites | Off | No | This feature is turned off.  |  
-| Hotkeys | See Details | See Details | See section [HotKeys Deep Dive](#hotkeys-deep-dive).  The shortcuts that are turned off by default either don't make sense for WebView2 or cause problems.  You may not turn on or off.  Instead, search for a key combination in `AcceleratorKeyPressed` event and create a custom response if needed.|  
+| Hotkeys | Review Details | Review Details | The shortcuts that are turned off by default either don't make sense for WebView2 or cause problems.  You may not turn on or off.  Instead, search for a key combination in `AcceleratorKeyPressed` event and create a custom response if needed.  For more information, navigate to [Additional shortcuts information](#additional-shortcuts-information). |  
 | IE Mode | Off | No | This feature is turned off.  |  
 | Immersive Reader | Off | No | This feature is dependent on the browser UI for control and triggering.  This feature is turned off.  |  
 | Intrusive Ads | Off | No | This feature is turned off.  |  
 | Read Aloud | Off | No | This feature is turned off.  |  
-| Smart Screen | On* | No | The UI for this feature is removed, however the underlying functionality persists.  Additionally, Smart Screen can be turned off using command-line switch.  |  
+| Smart Screen | On* | No | The UI for this feature is removed, however the underlying functionality persists.  Additionally, you may turn off Smart Screen using command-line switch.  |  
 | Translate | Off | No | This feature is turned off.  |  
 | Tracking Prevention | On* | No | *The UI for this feature is removed, however the underlying functionality persists.  Tracking prevention is always set to balanced.|  
 | Profile and Identity | Off | No | The feature is turned off that syncs your favorites, cookies, and so on, between machines.  |  
 | Web Payment API | Off | No | This feature is turned off.  | 
 | Windows Defender Application Guard | Off | No | This feature is turned off.  |  
-| edge:// URLs | See Details | No | Settings for the browser are displayed on webpages that use internal URLs.  Most of the webpages have Microsoft Edge branding or don't make sense within the context of WebView2.  For more details about the internal URLs that are turned off, navigate to [Blocked internal URLs](#blocked-internal-urls).  |  
+| edge:// URLs | Review Details | No | Settings for the browser are displayed on webpages that use internal URLs.  Most of the webpages have Microsoft Edge branding or don't make sense within the context of WebView2.  For more details about the internal URLs that are turned off, navigate to [Blocked internal URLs](#blocked-internal-urls).  |  
 
 ### Blocked internal URLs  
 
@@ -86,9 +86,9 @@ The following built-in Microsoft Edge and Google Chrome webpages aren't availabl
 *   `edge://supervised-user-internals`  
 *   `edge://version`  
 
-### HotKeys Deep Dive  
+### Additional shortcuts information  
 
-Key bindings are subject to change when the underlying browser updates.  In particular, an accelerator key that is turned off by default may turn on if the feature is supported in WebView2.  However, it's guaranteed that if you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, all keys that access browser-like features are turned off, and all basic text-editing and movement shortcuts remain turned on.  
+Key bindings are subject to change when the underlying browser updates.  An accelerator key that is turned off by default may turn on if the feature is supported in WebView2.  However, it's guaranteed that if you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, all keys that access browser-like features are turned off, and all basic text-editing and movement shortcuts remain turned on.  
 
 The following shortcuts are always turned off in WebView2.
 
@@ -164,7 +164,7 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following shortcut
 | Back | `Alt`+`Left, Browser Back Key` |  
 | Forward | `Alt`+`Right`, `Browser Forward Key` |  
 | Print | `Ctrl`+`P` |  
-| Open/close DevTools | `Ctrl`+`Shift`+`I` |  
+| Open / Close DevTools | `Ctrl`+`Shift`+`I` |  
 | Open DevTools Console | `Ctrl`+`Shift`+`J` |  
 | Open DevTools Inspect | `Ctrl`+`Shift`+`C` |  
 
