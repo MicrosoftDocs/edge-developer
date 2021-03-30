@@ -24,8 +24,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Sources tool overview  
 
-<!-- todo: check Debugger articles for any other points to introduce here -->
-
 Use the **Sources** tool to view, modify, and debug JavaScript that's returned by the server.  The Sources tool has three panes:
 
 | Pane | Actions |
@@ -167,7 +165,7 @@ Using a Workspace saves the changes that you make in DevTools to your file syste
 
 By using Workspaces, DevTools is able to be used as your code editor and Integrated Development Environment (IDE) for your source files.
 
-For more information, navigate to [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex].
+For more information, navigate to [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex] (a tutorial).
 
 View local files (in addition to files returned from the server), and edit and save changes to local files, by using a Workspace (the **Filesystem** tab) or **Overrides**.  Such changes to code are preserved across page refreshes.
 
@@ -187,7 +185,7 @@ You can also [Map preprocessed code to source code][DevToolsJavaScriptSourceMaps
 
 **Related articles:**
 
-*   [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex]
+*   [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex] - a tutorial
 
 *   [Map preprocessed code to source code][DevToolsJavaScriptSourceMaps]
 
@@ -218,8 +216,6 @@ Use the **Content scripts** tab of the **Explorer** pane to view any [content sc
 If, during debugging, you step into code that you don't recognize, you might want to mark that code as Library code, to avoid stepping into that code.  For more information, navigate to [Mark content scripts as Library code][DevToolsJavaScriptGuidesMarkContentScriptsLibraryCode].
 
 ### Snippets tab to run JavaScript code snippets on any page
-
-<!-- todo: condense section -->
 
 Use the **Snippets** tab of the **Explorer** pane to create and save JavaScript code snippets which you may run on any webpage, such as code to include the jQuery library.
 
@@ -360,6 +356,8 @@ The JavaScript Debugger in DevTools, in the **Debugger** pane, is designed to lo
 [the debugger in Visual Studio Code][CodeVisualStudioComDocsEditorDebugging] and
 [the debugger in Visual Studio][DMCVisualStudioDebuggerNavigatingThroughCodeWithTheDebugger].
 
+### The basic approach to using a debugger
+
 To troubleshoot where your JavaScript is going wrong, you can use the simple approach of inserting `console.log()` statements in the **Editor** pane.  Another approach, that's more powerful (yet can also be simple), is to use the debugger of Microsoft Edge DevTools.
 
 The basic approach to using a debugger is to set a breakpoint (an intentional stopping place in the code), run the code at full speed up to the line of code on which the breakpoint is set, and then step through the lines of code, starting at that breakpoint.  
@@ -391,11 +389,13 @@ As shown in the tutorial, to get into the "Paused" mode of the debugger, you do 
 
 The **Scope** pane shows variables that are in-scope, and their values.  In the above figure, we added the Watch expressions `sum` and `typeof sum`, and stepped two lines past the breakpoint.
 
-Instead of setting **Watch** expressions in the **Debugger** pane, we could have issued a statement `console.log(typeof sum)` in the **Console** pane of the DevTools.
+These three approaches are equivalent:
 
-Instead of using the Debugger, we could have added a statement `console.log(typeof sum)` in the code.  The debugger gives a richer, more flexible display and environment than a `console.log` statement.
+*   Temporarily adding the statements `console.log(sum)` and `console.log(typeof sum)` in the code, where `sum` is in-scope.
+*   Issuing the statements `sum` and `console.log(typeof sum)` in the **Console** pane of the DevTools, when the debugger is paused where `sum` is in-scope.
+*   Setting the **Watch** expressions `sum` and `typeof sum` in the **Debugger** pane.
 
-In the Debugger, as you step through the code, you may display and change the values of all currently-defined properties and variables, issue JavaScript statements in the **Console**, and more.
+The debugger gives a richer, more flexible display and environment than a `console.log` statement.  In the Debugger, as you step through the code, you may display and change the values of all currently-defined properties and variables, issue JavaScript statements in the **Console**, and more.  (Press **Esc** to display the Console.)
 
 Breakpoints and Watch expressions are preserved when you refresh the page.
 
@@ -407,20 +407,17 @@ Breakpoints and Watch expressions are preserved when you refresh the page.
 
 *   [Pause your code with breakpoints][DevToolsJavaScriptBreakpoints] - How to set basic and specialized breakpoints in the debugger.
 
-## Extensions for Visual Studio Code
+### Microsoft Edge DevTools for Visual Studio Code extension
 
-There are two main extensions for Visual Studio Code that are related to the **Sources** tool:
+Use this extension to access in Microsoft Edge DevTools inside Microsoft Visual Studio Code. You have access to the Elements and Network tools in Microsoft Edge DevTools. You may either launch or attach to an instance of Microsoft Edge. After you connect you may display the runtime HTML structure, alter the layout, fix styling issues, and inspect network traffic.
 
-*   Debugger for Microsoft Edge
-*   Microsoft Edge Tools for Visual Studio Code
+This extension is an alternative to the Sources tool of DevTools.
 
-These extensions are described below.
+This extension runs against the JavaScript that is returned from the server, or against the local JavaScript source code.
 
-### Debugger for Microsoft Edge
+For more information, navigate to the [Visual Studio Code overview][DevToolsVSCodeIndex].
 
-<!-- brief overview of Scenarios/Pros/Cons, advise when to use which approach -->
-
-<!-- when using React and a Workspace, does the DevTools Sources tool's debugger work for editing local React source files? -->
+<!-- ### Debugger for Microsoft Edge
 
 This extension is an alternative to the DevTools Source tool.
 
@@ -432,17 +429,7 @@ With the extension for Visual Studio Code, the debugger runs in the Visual Studi
 
 This extension runs against the JavaScript code that's returned from the server.
 
-For more information, navigate to the [Extensions][DevToolsVSCodeIndexExtensions] section in the article "Visual Studio Code overview".
-
-### Microsoft Edge Tools for Visual Studio Code
-
-<!-- brief overview of Scenarios/Pros/Cons, advise when to use which approach -->
-
-This extension is an alternative to the Sources tool of DevTools.
-
-This extension runs against the JavaScript that is returned from the server, or against the local JavaScript source code.
-
-For more information, navigate to the [Extensions][DevToolsVSCodeIndexExtensions] section in the article "Visual Studio Code overview".
+For more information, navigate to the [Visual Studio Code overview][DevToolsVSCodeIndex]. -->
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
@@ -455,7 +442,7 @@ For more information, navigate to the [Extensions][DevToolsVSCodeIndexExtensions
 [DevToolsJavaScriptSourceMaps]: ../javascript/source-maps.md "Map preprocessed code to source code | Microsoft Docs"
 [DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left) | Microsoft Docs"
 [DevtoolsJavascriptOverrides]: ../javascript/overrides.md "Override webpage resources with local copies using Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsVSCodeIndexExtensions]: ../../visual-studio-code/index.md#extensions "Extensions - Visual Studio Code overview | Microsoft Docs"
+[DevToolsVSCodeIndex]: ../../visual-studio-code/index.md "Visual Studio Code overview | Microsoft Docs"
 [DevToolsJavaScriptGuidesMarkContentScriptsLibraryCode]: ../javascript/guides/mark-content-scripts-library-code.md "Mark content scripts as Library code | Microsoft Docs"
 [DevToolsJavaScriptReference]: ../javascript/reference.md "Use the debugger features | Microsoft Docs"
 [DevToolsJavaScriptBreakpoints]: ../javascript/breakpoints.md "Pause your code with breakpoints | Microsoft Docs"
