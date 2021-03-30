@@ -40,7 +40,7 @@ Each column
 *   **Configurable**  Indicates that you able to turn on or off the feature using the WebView2 API surface or command-line switch.  
 *   **Details**  Specifies any additional information relevant to the feature.  
     
-| Feature | Default | Configurable | Details |  
+| Feature | Default state | Configurable | Details |  
 |:--- |:--- |:--- | :--- |  
 | Autofill for Addresses | On | Yes | This feature is turned on by default, you may turn it on or off using WebView2 Autofill API.  |  
 | Autofill for Passwords | On | Yes | This feature is turned on by default, you may turn it on or off using WebView2 Autofill API.  |  
