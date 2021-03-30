@@ -135,59 +135,81 @@ not really needed; single good capture above is sufficient; delete these lines a
 
 ### Filesystem tab for a local Workspace
 
-<!-- todo: condense section -->
-
 Use the **Filesystem** tab of the **Explorer** pane to set up a Workspace to save changes to local files, so that changes you make in DevTools get saved to the code on your file system.  
 
 :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="The Filesystem tab" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
    The **Filesystem** tab for a Workspace
 :::image-end:::  
 
-To work with local source code rather than a copy of the code that's returned from the server, set up a Workspace, in the **Filesystem** tab.
+### Approaches\: Server, Workspace, or Extension
 
-The **Sources** tool is a JavaScript viewer, editor, and debugger.
+There are several approaches for using the Sources tool:
 
-Use the **Sources** tool to check that your resources are loaded, and to view, edit, and debug JavaScript, especially JavaScript that's returned from the server.  
+| Tool and Approach | Location of files | Capabilities | Limitations |
+|---|---|---|---|
+| Sources tool without a Workspace | Copy of client-side files returned by the server | Fast iterations of experimenting with fixes, because there's no build or re-deploy step. | Fixes are not retained; you must separately apply fixes to the source files and re-deploy them to the web server. |
+| Sources tool with a Workspace | Local source files | Fixes are retained. | Must upload to the server. |
+| DevTools extension in Visual Studio Code, without a Workspace | tbd | Must install the extension. |
+| DevTools extension in Visual Studio Code, with a Workspace | tbd | Must install the extension. |
+| Mapping preprocessed code to source code | tbd | tbd | tbd |
 
-Use the Sources tool when you want to view the JavaScript code that is returned from the server, rather than the source code, which might be different.
+These approaches are described below.
 
-Use the Sources tool, rather than a code editor, for fast iterations when you are prototyping JavaScript code and don't want to go through the build process every time.
+<!-- 
+Does the decision of whether to use a Workspace have anything to do with the decision of whether to use an extension, or are these independent decisions? consider both extensions.
 
-This JavaScript code from the server may be different than the source files you work with, if those files go through transformations.  The **Sources** tool shows the final JavaScript code that's presented to the browser.
+Does extension support non-workspace and workspace? if so, separate the sections and simplify.
+-->
 
-Setting up a Workspace allows DevTools to act as an Integrated Development Environment (IDE).  
+#### Sources tool without a Workspace
 
-Alternatively, for persistent editing of local files, use the "Edge DevTools for Visual Studio Code extension"; navigate to [Extensions for Visual Studio Code](#using-extensions-for-visual-studio-code), below.  
+Use the Sources tool, rather than a local code editor, for fast iterations when you are prototyping JavaScript code and don't want to go through the build process every time.
 
-By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.
+By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.  In the default approach, the **Sources** tool works with a copy of the client-side resources that are returned by the web server.  When you modify these client-side files that are returned by the server, the changes don't persist, because you didn't change the source files.
+
+When you find a fix that works for the client-side JavaScript that is returned by the server, you then need to apply that fix, or an equivalent of that fix in the code prior to transformation, in your actual source code and then re-deploy to the server.
+
+**Complex transformations**
+
+If a project uses complex transformations of JavaScript from the source files to the files that are returned by the server, such as with the React framework, the **Sources** tool is useful for inspecting and experimenting with the transformed, client-side (front-end) JavaScript that's returned from the server.  
+
+The **Sources** tool is not intended to debug the local source files in that scenario.
+
+The client-side JavaScript code that's returned by the server may be different than the source files you work with, if those files go through transformations, such as when using React.
+
+If you use a framework that involves transformation, such as React, your local source JavaScript might be different than the client-side JavaScript that's returned by the server.
+
+When using React, the JavaScript code that's returned by the server is very different than your local JavaScript source code that you maintain.
+
+In this case, Source tool provides a helpful alternative view of the JavaScript code.
+
+#### Sources tool with a Workspace
+
+A Workspace works well when the JavaScript code that's returned by the server is the same as your local JavaScript source code that you maintain.
+
+Setting up a Workspace allows DevTools to act as an Integrated Development Environment (IDE), so that the edits you make are applied to the source files rather than a returned copy.
 
 Using a Workspace saves the changes that you make in DevTools to your file system.
 
 By using Workspaces, DevTools is able to be used as your code editor and Integrated Development Environment (IDE) for your source files.
 
-For more information, navigate to [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex] (a tutorial).
-
 View local files (in addition to files returned from the server), and edit and save changes to local files, by using a Workspace (the **Filesystem** tab) or **Overrides**.  Such changes to code are preserved across page refreshes.
 
-Depending on your project, local, source JavaScript may or may not be the same as the client-side JavaScript that's returned by the server.
+For more information, navigate to the tutorial [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex].
 
-In some projects, the JavaScript code that's returned by the server is the same as your local JavaScript source code that you maintain.  
+#### DevTools extension in Visual Studio Code, with or without a Workspace
 
-In other projects, such as when using React, the JavaScript code that's returned by the server is very different than your local JavaScript source code that you maintain.  In this case, Source tool's JavaScript editor (or code viewer) and debugger provide a helpful alternative view of the JavaScript code.
+<!-- remove this section from the Workspace/Filesystem section? -->
 
-If a project uses complex transformations of JavaScript from the source files to the files that are returned by the server, such as with the React framework, the **Sources** tool is useful for inspecting and experimenting with the transformed, client-side (front-end) JavaScript that's returned from the server.  The **Sources** tool is not intended to debug the local source files in that scenario.
+For persistent editing of local files is to use the "Edge DevTools for Visual Studio Code extension"; navigate to [Microsoft Edge DevTools for Visual Studio Code extension](#microsoft-edge-devtools-for-visual-studio-code-extension), below.
 
-When you find a fix that works for the JavaScript that is returned by the server, you then need to apply that fix, or an equivalent of that fix in the code prior to transformation, in your actual source code and then re-deploy to the server.
+This extension supports both the non-Workspace approach and the Workspace approach. 
 
-The Sources tool can be used to view, edit, and debug local source files if you set up a Workspace.  Another popular alternative is to use the "Dev Tools for Microsoft Edge" extension for Visual Studio Code.
+#### Mapping preprocessed code to source code
 
 You can also [Map preprocessed code to source code][DevToolsJavaScriptSourceMaps].
 
-**Related articles:**
-
-*   [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex] - a tutorial
-
-*   [Map preprocessed code to source code][DevToolsJavaScriptSourceMaps]
+<!-- does this replace using a Workplace, or replace using the Extension? -->
 
 ### Overrides tab to override server files by local files
 
@@ -263,7 +285,7 @@ For more information, navigate to [Run commands with the Microsoft Edge DevTools
 
 ## Editor pane to view or edit JavaScript files
 
-<!-- there was a proposal to link from here to where? -->
+<!-- todo: there was a proposal to link from here to where? -->
 
 Use the **Editor** pane to view JavaScript, HTML, CSS, and other files that are returned from the server.  Make experimental edits to the JavaScript or CSS code; DevTools updates the page to run the modified code.  These experimental changes are preserved (in the DevTools sandbox) until page refresh.  To view and edit *local* JavaScript or CSS source files, set up a Workspace.
 
