@@ -12,7 +12,7 @@ no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Paymen
 ---
 # Browser feature differences between Microsoft Edge and WebView2  
 
-WebView2 is based on the new Microsoft Edge browser.  You to have the opportunity to extend features from the browser to WebView2-based apps, which is useful.  However, WebView2 isn't limited to browser-like apps.  Many scenarios include the features of the browser that don't make sense or are unnecessary.    
+WebView2 is based on the new Microsoft Edge browser.  You have the opportunity to extend features from the browser to WebView2-based apps, which is useful.  However, WebView2 isn't limited to browser-like apps.  Many scenarios include features of the browser that don't make sense or are unnecessary.  
 
 The purpose of this article is to provide the following information.  
 
@@ -37,7 +37,7 @@ Each column
 
 *   **Feature**  Specifies the name of the feature.  
 *   **Default**  Indicates that the feature is part of the default experience on a new WebView2 instance.  
-*   **Configurable**  Indicates that you able to turn on or off the feature using the WebView2 API surface or command-line switch.  
+*   **Configurable**  Indicates that you may turn on or off the feature using the WebView2 API surface or command-line switch.  
 *   **Details**  Specifies any additional information relevant to the feature.  
     
 | Feature | Default state | Configurable | Details |  
@@ -58,9 +58,9 @@ Each column
 | Immersive Reader | Off | No | This feature is dependent on the browser UI for control and triggering.  This feature is turned off.  |  
 | Intrusive Ads | Off | No | This feature is turned off.  |  
 | Read Aloud | Off | No | This feature is turned off.  |  
-| Smart Screen | On* | No | The UI for this feature is removed, however the underlying functionality persists.  Additionally, you may turn off Smart Screen using command-line switch.  |  
+| Smart Screen | On `*` | No | `*` The UI for this feature is removed, however the underlying functionality persists.  Additionally, you may turn off Smart Screen using command-line switch.  |  
 | Translate | Off | No | This feature is turned off.  |  
-| Tracking Prevention | On* | No | *The UI for this feature is removed, however the underlying functionality persists.  Tracking prevention is always set to balanced.|  
+| Tracking Prevention | On `*` | No | `*` The UI for this feature is removed, however the underlying functionality persists.  Tracking prevention is always set to balanced.|  
 | Profile and Identity | Off | No | The feature is turned off that syncs your favorites, cookies, and so on, between machines.  |  
 | Web Payment API | Off | No | This feature is turned off.  | 
 | Windows Defender Application Guard | Off | No | This feature is turned off.  |  
@@ -137,7 +137,7 @@ An asterisk \(`*`\) character indicates the shortcut is technically not turned o
 | Show Reading Mode Bar `*` | `Shift`+`Alt`+`R` |  
 | Show Collections `*` | `Ctrl`+`Shift`+`Y` |  
 
-The following shortcuts are always turned off, except in a pop-up window.  Windows that display when the `NewWindowRequested` event isn't handled.
+The following shortcuts are always turned off, except in windows that display when the `NewWindowRequested` event isn't handled.
 
 | Action | Windows |  
 |:--- |:--- |  
