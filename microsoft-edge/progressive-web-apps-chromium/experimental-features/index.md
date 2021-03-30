@@ -38,7 +38,8 @@ The following sections describe the new experimental web app features that are a
 | Feature | Microsoft Edge version | Platform |  
 |:--- |:--- |:--- |  
 | [URL Protocol Handling](#url-protocol-handling) | 91 or later | Windows |  
-| [Window Controls Overlay for Installed Desktop Web Apps](#window-controls-overlay-for-installed-desktop-web-apps) | 91 or later | Windows |  
+| [Window Controls Overlay for Installed Desktop Web Apps](#window-controls-overlay-for-installed-desktop-web-apps) | 91 or later | Windows 10|  
+| [URL Link Handling](#url-link-handling) | 91 or later | Windows|  
 | [Run on OS Login](#run-on-os-login) | 88 or later | All |  
 | [Shortcuts](#shortcuts) | 87 or later | All |  
 | [File Handling](#file-handling) | 83 or later | All Desktop|  
@@ -49,7 +50,6 @@ This table includes features that are work in progress that may come out in a fu
 
 | Feature | Platform |  
 |:--- |:--- |   
-| [URL Link Handling](#url-link-handling) | Windows |  
 | [Window Controls Overlay for Installed Desktop Web Apps](#window-controls-overlay-for-installed-desktop-web-apps) |  macOS, Linux |  
 | Improvements to App Management| All |  
 | Support for Desktop Share Target| Windows 10 |  
@@ -167,9 +167,6 @@ For eg. `*.contoso.com` matches `tenant.contoso.com` and `www.tenant.contoso.com
 For detailed instructions on testing URL handler refer to the [explainer](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md).
 
 
-
-<!--Available in Microsoft Edge version 85 and later.  -->  
-
 ## Window Controls Overlay for Installed Desktop Web Apps
 
 To create an immersive, native like title bar for your desktop installed web app, the Window Controls Overlay feature removes the system reserved title bar that usually spans the width of the client frame and replaces it with an overlay that contains just the critical system required window controls necessary for a user to control the window itself. 
@@ -239,10 +236,10 @@ Whenever the overlay is resized, a `geometrychange` event will be fired on the `
 
 In addition to the JavaScript API above, the bounding rectangle of the controls overlay can also be queried using CSS. Four new CSS environment variables have been introduced to accomplish this:  
 
-*   `titlebar-area-inset-top`  
-*   `titlebar-area-inset-bottom`  
-*   `titlebar-area-inset-left`  
-*   `titlebar-area-inset-right`  
+*   `titlebar-area-x`  
+*   `titlebar-area-y`  
+*   `titlebar-area-width`  
+*   `titlebar-area-height`  
     
 ### Defining Draggable Regions in Web Content
 
@@ -250,9 +247,11 @@ Users expect to be able to grab and drag the upper region of a window and develo
 This is accomplished through a webkit proprietary CSS property called `-webkit-app-region`. Effort to standardize the app-region property is ongoing with the CSS working group.  
 
 > [!IMPORTANT]
-> To turn on this experimental feature, you must start Microsoft Edge with the following command line parameter.  
+> To preview file handling in Microsoft Edge for desktop operating systems, look for and turn on the `edge://flags`:
 > 
-> `--enable-features=WebAppWindowControlsOverlay`  
+> **Desktop PWA Window Controls Overlay**
+> 
+> This experimental feature is off by default.
 
 ### Example
 
@@ -343,8 +342,8 @@ body {
 
 #titleBarContainer {
   position: absolute;
-  top: env(titlebar-area-inset-top, 0);
-  bottom: env(titlebar-area-inset-bottom, calc(100% - var(--fallback-title-bar-height)));
+  top: env(titlebar-area-y, 0);
+  bottom: env(titlebar-area-height, calc(100% - var(--fallback-title-bar-height)));
   width: 100%;
   background-color:#254B85;
 }
@@ -355,8 +354,8 @@ body {
   display: flex;
   user-select: none;
   height: 100%;
-  left: env(titlebar-area-inset-left, 0);
-  right: env(titlebar-area-inset-right, 0);
+  left: env(titlebar-area-x, 0);
+  right: env(titlebar-area-width, 0);
   color: #FFFFFF;
   font-weight: bold;
   text-align: center;
@@ -380,7 +379,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  height: env(titlebar-area-inset-bottom, calc(100% - var(--fallback-title-bar-height)));
+  height: env(titlebar-area-height, calc(100% - var(--fallback-title-bar-height)));
   overflow-y: scroll;
 }
 ```  
