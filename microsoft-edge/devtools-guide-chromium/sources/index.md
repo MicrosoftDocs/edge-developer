@@ -141,16 +141,12 @@ Use the **Filesystem** tab of the **Explorer** pane to set up a Workspace to sav
    The **Filesystem** tab for a Workspace
 :::image-end:::  
 
-### Approaches\: Server, Workspace, or Extension
-
-There are several approaches for using the Sources tool:
+The Sources tool supports the default, transient, server approach, or a local sources approach:
 
 | Tool and Approach | Location of files | Capabilities | Limitations |
 |---|---|---|---|
 | Sources tool without a Workspace | Copy of client-side files returned by the server | Fast iterations of experimenting with fixes, because there's no build or re-deploy step. | Fixes are not retained; you must separately apply fixes to the source files and re-deploy them to the web server. |
 | Sources tool with a Workspace | Local source files | Fixes are retained. | Must upload to the server. |
-| DevTools extension in Visual Studio Code, without a Workspace | tbd | Must install the extension. |
-| DevTools extension in Visual Studio Code, with a Workspace | tbd | Must install the extension. |
 | Mapping preprocessed code to source code | tbd | tbd | tbd |
 
 These approaches are described below.
@@ -207,9 +203,16 @@ This extension supports both the non-Workspace approach and the Workspace approa
 
 #### Mapping preprocessed code to source code
 
-You can also [Map preprocessed code to source code][DevToolsJavaScriptSourceMaps].
+If your client-side source code is transformed, so that the server returns different, transformed, hard-to-read (minified) front-end code to the browser, in some cases, you can set up mapping from your source code to your compiled code, so that when you view and edit the transformed client-side JavaScript code that's returned from the server, the code looks familiar and readable.
 
-<!-- does this replace using a Workplace, or replace using the Extension? -->
+<!-- verbatim from that article: -->
+Source Maps from preprocessors cause DevTools to load your original files in addition to your minified ones. You then use the originals to set breakpoints and step through code. Meanwhile, Microsoft Edge is actually running your minified code. 
+
+<!-- verbatim from that article: -->
+Keep your client-side code readable and debuggable even after you combine, minify, or compile it. Use source maps to map your source code to your compiled code.
+Use Source Maps to map minified code to source code. You are then able to read and debug compiled code in the original source.
+
+For more information, navigate to [Map preprocessed code to source code][DevToolsJavaScriptSourceMaps].
 
 ### Overrides tab to override server files by local files
 
@@ -429,29 +432,45 @@ Breakpoints and Watch expressions are preserved when you refresh the page.
 
 *   [Pause your code with breakpoints][DevToolsJavaScriptBreakpoints] - How to set basic and specialized breakpoints in the debugger.
 
-### Microsoft Edge DevTools for Visual Studio Code extension
+## Extensions for Visual Studio Code, as an alternative to DevTools Sources tool
 
-Use this extension to access in Microsoft Edge DevTools inside Microsoft Visual Studio Code. You have access to the Elements and Network tools in Microsoft Edge DevTools. You may either launch or attach to an instance of Microsoft Edge. After you connect you may display the runtime HTML structure, alter the layout, fix styling issues, and inspect network traffic.
+There are two extensions for Visual Studio Code that provide alternatives to using the DevTools Sources tool. 
 
-This extension is an alternative to the Sources tool of DevTools.
+There are extensions for Visual Studio Code, to extend Visual Studio Code, not extensions for Edge, to extend Edge.
 
-This extension runs against the JavaScript that is returned from the server, or against the local JavaScript source code.
+*   The "Debugger for Microsoft Edge" Visual Studio Code extension.
+*   "Microsoft Edge DevTools" for Visual Studio Code extension.
+
+More details are below.
+
+### \"Debugger for Microsoft Edge\" Visual Studio Code extension
+
+<!-- verbatim from this extension's dedicated article: -->
+With the "Debugger for Microsoft Edge" Visual Studio Code extension, debug your front-end JavaScript code line by line and see `console.log()` statements directly from Visual Studio Code.
+
+As an alternative to debugging by using the DevTools Sources tool, you can do the same debugging within Visual Studio code, by using this extension.
+
+*   When using the DevTools Sources tool, the JavaScript debugger runs in the DevTools window that's connected to a browser window.
+*   When using this extension for Visual Studio Code, the JavaScript debugger runs in the Visual Studio Code window.
+
+This extension supports Workspaces; this extension runs either against the client-side JavaScript that is returned from the server, or against the local source code for the client-side JavaScript.
+
+This is an extension for Visual Studio Code, to extend Visual Studio Code.  This is not an extension for Edge, to extend Edge.
 
 For more information, navigate to the [Visual Studio Code overview][DevToolsVSCodeIndex].
 
-<!-- ### Debugger for Microsoft Edge
+### \"Microsoft Edge Tools for Visual Studio Code\" extension
 
-This extension is an alternative to the DevTools Source tool.
+<!-- verbatim from this extension's dedicated article: -->
+Use this extension to access Microsoft Edge DevTools from within Microsoft Visual Studio Code. This extension provides access to the **Elements** and **Network** tools in Microsoft Edge DevTools.
 
-There are different capabilities and limitations of the "Debugger for Microsoft Edge" extension, compared to using the Debugger of the Sources tool in DevTools.
+Launch Microsoft Edge from the Debug view of Visual Studio Code.  Use the Debug view in Visual Studio Code, and access Microsoft Edge DevTools from the Debug view in Visual Studio Code.
 
-With DevTools, the debugger runs in the DevTools window connected to a browser window.
+This extension supports Workspaces; this extension runs either against the client-side JavaScript that is returned from the server, or against the local source code for the client-side JavaScript.
 
-With the extension for Visual Studio Code, the debugger runs in the Visual Studio Code window.
+This is an extension for Visual Studio Code, to extend Visual Studio Code.  This is not an extension for Edge, to extend Edge.
 
-This extension runs against the JavaScript code that's returned from the server.
-
-For more information, navigate to the [Visual Studio Code overview][DevToolsVSCodeIndex]. -->
+For more information, navigate to the [Visual Studio Code overview][DevToolsVSCodeIndex].
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
