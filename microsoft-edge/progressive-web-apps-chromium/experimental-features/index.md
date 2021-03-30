@@ -69,7 +69,7 @@ This feature allows you to register a PWA with the host operating system via the
 This feature requires you to update the web app manifest to include a `protocol_handlers` array, within the array you need to specify two fields:
 
 *   `protocol`: Protocol to be handled e.g. `mailto`, `web+jngl`  
-*   `url`: HTTPS URL within the app scope that will handle the protocol. The `%s` token will be replaced by the URL starting with the protcol handlers scheme.  
+*   `url`: HTTPS URL within the app scope that will handle the protocol. The `%s` token will be replaced by the URL starting with the protocol handlers scheme.  
 
 ### Example Manifest
 
