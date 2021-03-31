@@ -22,15 +22,15 @@ WebView2 is based on the new Microsoft Edge browser.  You have the opportunity t
 
 In the context of WebView2, browser features adhere to the following design guidelines.  
 
-*   Most features work the same in WebView2 and Microsoft Edge.  If a feature doesn't make sense in the content of WebView2 or for other reasons, the feature is turned off. 
+*   Most features work the same in WebView2 and Microsoft Edge.  If a feature doesn't make sense in the context of WebView2 or for other reasons, the feature is turned off. 
 *   WebView2 features don't include Microsoft Edge branding.  
     
 ## Features  
 
 The following table displays the WebView2 features that differ from the Microsoft Edge browser, where:  
 
-*   **Default state**  indicates that the feature is part of the default experience on a new WebView2 instance.  
-*   **Configurable**  indicates that you may turn on or off the feature using WebView2 APIs or a command-line switch.  For more information on turning on and off features with command line switches, navigate to [List of Chromium Command Line Switches][PeterExperimentsChromiumCommandLineSwitches].  
+*   **Default state** indicates that the feature is part of the default experience on a new WebView2 instance.  
+*   **Configurable** indicates that you may turn on or off the feature using WebView2 APIs or a command-line switch.  For more information on turning on and off features with command line switches, navigate to [List of Chromium Command Line Switches][PeterExperimentsChromiumCommandLineSwitches].  
     
 | Feature | Default state | Configurable | Details |  
 |:--- |:--- |:--- | :--- |  
@@ -53,7 +53,7 @@ The following table displays the WebView2 features that differ from the Microsof
 | Smart Screen | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Additionally, you may turn off Smart Screen using a command-line switch.  |  
 | Translate | Off | No | This feature is turned off.  |  
 | Tracking Prevention | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Tracking prevention is always set to balanced.|  
-| Profile and Identity | Off | No | The feature that syncs your favorites, cookies, and so on between machines is turned off.  |  
+| Profile and Identity | Off | No | The feature that syncs your favorites, cookies, and so on, is turned off.  |  
 | Web Payment API | Off | No | This feature is turned off.  | 
 | Windows Defender Application Guard | Off | No | This feature is turned off.  |  
 | edge:// URLs | Review Details | No | Settings for the browser are changed on webpages that are available at `edge://` URLs.  Because most of these webpages have Microsoft Edge branding or don't make sense within the context of WebView2, these URLs are turned off.  For more information, navigate to [Blocked internal URLs](#blocked-internal-urls).  |  
