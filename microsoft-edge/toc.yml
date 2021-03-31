@@ -79,6 +79,8 @@
                   href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
                 - name: Get started with remote debugging Windows 10 devices
                   href: devtools-guide-chromium/remote-debugging/windows.md
+                - name: Get started with remote debugging Android WebViews
+                  href: devtools-guide-chromium/remote-debugging/webviews.md
         - name: How-to guides
           items:
             - name: Accessibility
@@ -309,6 +311,10 @@
               href: extensions-chromium/enterprise/match-patterns.md
             - name: Hosting and updating
               href: extensions-chromium/enterprise/hosting-and-updating.md
+            - name: Auto-update
+              href: extensions-chromium/enterprise/auto-update.md
+            - name: Declare permissions
+              href: extensions-chromium/enterprise/declare-permissions.md
     - name: Origin Trials overview
       href: origin-trials/index.md
     - name: Privacy whitepaper
@@ -327,6 +333,8 @@
           href: progressive-web-apps-chromium/webappmanifests.md
         - name: Experimental features
           href: progressive-web-apps-chromium/experimental-features/index.md
+        - name: Publish your PWA to the Microsoft Store
+          href: progressive-web-apps-chromium/microsoft-store.md
     - name: Playwright overview
       href: playwright/index.md
     - name: Puppeteer overview
@@ -343,14 +351,6 @@
           href: visual-studio-code/microsoft-edge-devtools-extension.md
         - name: webhint extension
           href: visual-studio-code/webhint.md
-    - name: WebDriver
-      items:
-        - name: WebDriver overview
-          href: webdriver-chromium/index.md
-        - name: Capabilities and EdgeOptions
-          href: webdriver-chromium/capabilities-edge-options.md
-        - name: Verifying downloads of Selenium Tools for Microsoft Edge
-          href: webdriver-chromium/verify-selenium-tools.md
     - name: Web platform
       items:
         - name: Site compatibility-impacting changes coming to Microsoft Edge
@@ -361,6 +361,16 @@
           href: web-platform/tracking-prevention.md
         - name: Microsoft Edge user agent string
           href: web-platform/user-agent-string.md
+    - name: Web We Want overview
+      href: web-we-want/index.md
+    - name: WebDriver
+      items:
+        - name: WebDriver overview
+          href: webdriver-chromium/index.md
+        - name: Capabilities and EdgeOptions
+          href: webdriver-chromium/capabilities-edge-options.md
+        - name: Verifying downloads of Selenium Tools for Microsoft Edge
+          href: webdriver-chromium/verify-selenium-tools.md
     - name: WebView2
       items:
         - name: WebView2 overview
@@ -377,6 +387,8 @@
               href: webview2/gettingstarted/winui.md
         - name: Concepts
           items:
+            - name: Differences between Microsoft Edge and WebView2
+              href: webview2/concepts/browserfeatures.md
             - name: Distributing my app
               href: webview2/concepts/distribution.md
             - name: Managing User Data Folders
@@ -424,7 +436,5 @@
                   href: /dotnet/api/microsoft.web.webview2.wpf
                 - name: Microsoft.Web.WebView2.WinForms
                   href: /dotnet/api/microsoft.web.webview2.winforms
-    # - name: WebVR developer guide
-    #   href: /microsoft-edge/webvr/index
-    - name: Legacy Microsoft Edge documentation
-      href: edgehtml/index.md
+#    - name: Legacy Microsoft Edge documentation
+#      href: edgehtml/index.md
