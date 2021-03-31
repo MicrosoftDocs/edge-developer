@@ -48,7 +48,7 @@ With Workspaces enabled, the CSS changes that you make within DevTools are saved
 
 If you are using a modern framework, it probably transforms your source code from a format that is easy to maintain into a format that is optimized to run as quickly as possible.  
 
-Workspaces is usually able to map the optimized code back to your original source code with the help of [source maps][TreehouseBlogSourceMaps].  But there is a lot of variation between frameworks over how each uses source maps.  Devtools simply does support all of the variations.  
+Workspaces is usually able to map the optimized code back to your original source code with the help of [source maps][TreehouseBlogSourceMaps].  But there is a lot of variation between frameworks over how each framework uses source maps.  Devtools doesn't support all of the variations.  
 
 Workspaces is known to not work with the following framework.  
 
