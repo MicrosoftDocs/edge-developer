@@ -22,7 +22,7 @@ WebView2 is based on the new Microsoft Edge browser.  You have the opportunity t
 
 In the context of WebView2, browser features adhere to the following design guidelines.  
 
-*   Most features work the same in WebView2 and Microsoft Edge.  If a feature doesn't make sense in the WebView2 context or for other reasons, the feature is modified or turned off. 
+*   Most features work the same in WebView2 and Microsoft Edge.  If a feature doesn't make sense in the context of WebView2 or for other reasons, the feature is modified or turned off. 
 *   WebView2 features don't include Microsoft Edge branding.  
     
 ## Features  
@@ -138,7 +138,7 @@ The following keyboard shortcuts are always turned off, except in windows that d
 | Close Window | `Ctrl`+`Shift`+`W` |  
 | Fullscreen | `F11` |  
 
-If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following keyboard shortcuts are turned off.  
+If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following additional keyboard shortcuts are turned off.  
 
 | Action | Windows |  
 |:--- |:--- |  
