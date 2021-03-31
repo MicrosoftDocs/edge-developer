@@ -383,6 +383,8 @@
               href: webview2/gettingstarted/winui.md
         - name: Concepts
           items:
+            - name: Differences between Microsoft Edge and WebView2
+              href: webview2/concepts/browserfeatures.md
             - name: Distributing my app
               href: webview2/concepts/distribution.md
             - name: Managing User Data Folders
