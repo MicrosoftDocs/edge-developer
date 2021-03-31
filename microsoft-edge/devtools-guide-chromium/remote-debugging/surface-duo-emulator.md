@@ -1,20 +1,20 @@
 ---
 description: Get started with Remote Debugging Surface Duo emulators.
-title: Get Started with Remote Debugging Surface Duo emulators
+title: Get started with Remote Debugging Surface Duo emulators
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 03/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, remote debugging, android, surface duo
 ---
-# Get Started with Remote Debugging Surface Duo emulators  
+# Get started with remote debugging Surface Duo emulators  
 
 In this article, you walk through the process of remotely debugging your web content in the [Microsoft Edge app][GooglePlayStoreAppsComMicrosoftEmmx] on a [Surface Duo][MicrosoftSurfaceDevicesSurfaceDuo] emulator from a desktop instance of [Microsoft Edge][MicrosoftEdge].  For information on debugging on a Surface Duo device, follow our guide for [remote debugging Android devices][DevtoolsRemoteDebuggingMain].  
 
-## Before you Begin
+## Before you begin
 
-Install the [Surface Duo SDK][MicrosoftDownload100847] before running the [Surface Duo emulator][DualScreenAndroidUseEmulator].  For more information, see [Get the Surface Duo SDK][DualScreenAndroidGetDuoSdk].  
+Install the [Surface Duo SDK][MicrosoftDownload100847] before running the [Surface Duo emulator][DualScreenAndroidUseEmulator].  For more information, navigate to [Get the Surface Duo SDK][DualScreenAndroidGetDuoSdk].  
 
 ## Step 1: Navigate to edge://inspect  
 
@@ -54,9 +54,9 @@ Switch back to the desktop instance of [Microsoft Edge][MicrosoftEdge].  The `ed
 :::image-end:::  
 
 > [!NOTE]
-> If you do not see **SurfaceDuoEmulator** on the `edge://inspect` page, try opening or closing tabs in the [Microsoft Edge app][GooglePlayStoreAppsComMicrosoftEmmx] on the [Surface Duo Emulator][DualScreenAndroidUseEmulator].  For additional troubleshooting steps, see the [troubleshooting section for Android devices][DevtoolsRemoteDebuggingIndexTroubleshootingDevtoolsIsNotDetectingAndroidDevice].  
+> If **SurfaceDuoEmulator** is not displayed on the `edge://inspect` page, try opening or closing tabs in the [Microsoft Edge app][GooglePlayStoreAppsComMicrosoftEmmx] on the [Surface Duo Emulator][DualScreenAndroidUseEmulator].  For additional troubleshooting steps, navigate to [troubleshooting section for Android devices][DevtoolsRemoteDebuggingIndexTroubleshootingDevtoolsIsNotDetectingAndroidDevice].  
 
-From the list of open tabs running on the emulator, choose **inspect** on the tab that has the web content to be debugged.  The [Microsoft Edge DevTools][DevtoolsIndex] will open in a new window.  Choose **Toggle Screencast** \(![Toggle Screencast][ImageToggleScreencastIcon]\) to view the web content from your [Surface Duo emulator][DualScreenAndroidUseEmulator] in the DevTools window.  You are now able to use the Microsoft Edge DevTools to debug your web content on the [Surface Duo emulator][DualScreenAndroidUseEmulator].  
+From the list of open tabs running on the emulator, choose **inspect** on the tab that has the web content to be debugged.  The [Microsoft Edge DevTools][DevtoolsIndex] will open in a new window.  Choose **Toggle Screencast** \(![Toggle Screencast](../media/toggle-screencast-icon.msft.png)\) to view the web content from your [Surface Duo emulator][DualScreenAndroidUseEmulator] in the DevTools window.  You are now able to use the Microsoft Edge DevTools to debug your web content on the [Surface Duo emulator][DualScreenAndroidUseEmulator].  
 
 :::image type="complex" source="../media/remote-debugging-surface-duo-devtools.msft.png" alt-text="Using the Microsoft Edge DevTools to debug Bing in the Microsoft Edge app on the Surface Duo emulator" lightbox="../media/remote-debugging-surface-duo-devtools.msft.png":::
    Using the Microsoft Edge DevTools to debug Bing in the Microsoft Edge app on the Surface Duo emulator  
@@ -67,15 +67,15 @@ From the list of open tabs running on the emulator, choose **inspect** on the ta
 
 ## Additional Resources  
 
-The web is a great platform for the new class of foldable and dual-screen devices because you can write your HTML, CSS, and JavaScript once and have it look great across single-screen, dual-screen, and foldable devices.  For more information, see these additional resources to get started building web content for these new devices.  
+The web is a great platform for the new class of foldable and dual-screen devices because you may write your HTML, CSS, and JavaScript once and have it look great across single-screen, dual-screen, and foldable devices.  For more information, navigate to the following additional resources to get started building web content for these new devices.  
 
 *   [Documentation for creating apps on dual-screen devices][DualScreenIndex]  
 *   [The Microsoft Edge web platform explainer for new APIs to build web experiences on foldable and dual-screen devices][GithubMicrosoftedgeMsedgeexplainersFoldablesExplainer]  
 *   [Recording of Microsoft 365 Developer Day session: How to build dual-screen experiences for websites and web apps][YoutubeDxrzwsqxpvc]  
 
-<!-- image links -->  
+## Getting in touch with the Microsoft Edge DevTools team  
 
-[ImageToggleScreencastIcon]: images/toggle-screencast-icon.msft.png  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
