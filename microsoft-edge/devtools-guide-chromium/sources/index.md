@@ -355,7 +355,9 @@ For example, the tutorial [Get started with debugging JavaScript][DevtoolsGuideC
 
 As shown in the tutorial, to get into the "Paused" mode of the debugger, you do the following:
 
-1. Open the **DevTools** window, such as by pressing `Shift+Ctrl+I` or `Shift+Command+I`.
+1. Open the above Demo webpage in a new tab of the browser.
+
+1. Open the **DevTools** window, such as by selecting `F12`.
 
 1. Select the **Sources** tab, to show the Sources tool.
 
@@ -363,11 +365,11 @@ As shown in the tutorial, to get into the "Paused" mode of the debugger, you do 
 
 1. In the **Editor** pane, click a line number near a suspect line of code, such as `var sum = addend1 + addend2;`, to set a breakpoint on that line.
 
-1. In the webpage, which has simple form controls, enter the values 5 and 1, then select the button **Add Number 1 and Number 2**.  
+1. In the webpage, enter numbers, such as 5 and 1, then select the button **Add Number 1 and Number 2**.  
 
-   Selecting the form's button triggers sending the form-data and running the JavaScript code.  The debugger runs the JavaScript code and then pauses at the breakpoint (`var sum = addend1 + addend2;`).
+   Selecting the form's button triggers sending the form-data and running the JavaScript code.  The debugger runs the JavaScript code and then pauses at the breakpoint (such as the line `var sum = addend1 + addend2;`).
 
-1. You then use the **Watch** or **Scope** pane, and use the controls at the top of the **Debugger** pane to step through the code.
+1. You then use the **Watch** or **Scope** pane, and use the controls at the top of the **Debugger** pane, such as **Step** (`F9`), to step through the code.
 
 <!-- "sources-paused-breakpoint.msft.png" is not currently directly used. It's the upstream source for a couple images, including the below image. -->
 
@@ -399,16 +401,14 @@ Breakpoints and Watch expressions are preserved when you refresh the page.
 
 There are two extensions for Visual Studio Code that provide alternatives to using the DevTools Sources tool. 
 
-There are extensions for Visual Studio Code, to extend Visual Studio Code, not extensions for Edge, to extend Edge.
-
-*   The "Debugger for Microsoft Edge" Visual Studio Code extension.
-*   "Microsoft Edge DevTools" for Visual Studio Code extension.
+*   The "Debugger for Microsoft Edge" extension for Visual Studio Code.
+*   The "Microsoft Edge Tools for VS Code" extension for Visual Studio Code.
 
 More details are below.
 
-### \"Debugger for Microsoft Edge\" Visual Studio Code extension
+### \"Debugger for Microsoft Edge\" extension for Visual Studio Code
 
-With the "Debugger for Microsoft Edge" Visual Studio Code extension, debug your front-end JavaScript code line by line and see `console.log()` statements directly from Visual Studio Code.
+With the "Debugger for Microsoft Edge" extension for Visual Studio Code, debug your front-end JavaScript code line by line and see `console.log()` statements directly from Visual Studio Code.
 
 As an alternative to debugging by using the DevTools Sources tool, you can do the same debugging within Visual Studio code, by using this extension.
 
@@ -421,9 +421,9 @@ This is an extension for Visual Studio Code, to extend Visual Studio Code.  This
 
 For more information, navigate to the [Visual Studio Code overview][DevToolsVSCodeIndex].
 
-### \"Microsoft Edge Tools for Visual Studio Code\" extension
+### \"Microsoft Edge Tools for VS Code\" extension for Visual Studio Code
 
-Use this extension to access Microsoft Edge DevTools from within Microsoft Visual Studio Code. This extension provides access to the **Elements** and **Network** tools in Microsoft Edge DevTools.
+Use the "Microsoft Edge Tools for VS Code" extension for Visual Studio Code to access Microsoft Edge DevTools from within Microsoft Visual Studio Code. This extension provides access to the **Elements** and **Network** tools of Microsoft Edge DevTools.
 
 Launch Microsoft Edge from the Debug view of Visual Studio Code.  Use the Debug view in Visual Studio Code, and access Microsoft Edge DevTools from the Debug view in Visual Studio Code.
 
@@ -455,7 +455,7 @@ For more information, navigate to the [Visual Studio Code overview][DevToolsVSCo
 [DevtoolsGuideChromiumWorkspacesIndex]: ../workspaces/index.md "Edit files with Workspaces | Microsoft Docs"  
 <!-- external: -->
 [CodeVisualStudioComDocsEditorDebugging]: https://code.visualstudio.com/docs/editor/debugging "Debugging - Visual Studio Code | Microsoft Docs"
-[DMCVisualStudioDebuggerNavigatingThroughCodeWithTheDebugger]: https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2019 "Navigate through code with the Visual Studio debugger | Microsoft Docs"
+[DMCVisualStudioDebuggerNavigatingThroughCodeWithTheDebugger]: https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger "Navigate through code with the Visual Studio debugger | Microsoft Docs"
 [DevtoolsGlitchMeDebugJsGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "Demo: Get Started Debugging JavaScript with Microsoft Edge (Chromium) DevTools | Microsoft Docs"
 [HtmlstandardOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin "Origin | HTML Standard"  
 [W3CHtml4Frames]: https://w3.org/TR/html401/present/frames.html "Frames | W3C"  
