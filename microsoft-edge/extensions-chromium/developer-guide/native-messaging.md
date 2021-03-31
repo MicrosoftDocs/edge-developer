@@ -67,37 +67,47 @@ The host manifest file must be a valid JSON file that contains the following key
 
 :::row:::
    :::column span="1":::
-      **Key**
-
+      **Key**  
+      
       ---  
    :::column-end:::
    :::column span="3":::
       **Details**  
-
+      
       ---  
 :::row-end:::  
 :::row:::
    :::column span="1":::
       `name`  
+      
+      ---  
    :::column-end:::
    :::column span="3":::
       Specifies the name of the native messaging host.  Clients pass the string to `runtime.connectNative` or `runtime.sendNativeMessage`.  
       
       *   The value must only contain lowercase alphanumeric characters, underscores, and dots.  
       *   The value must not start or end with a dot, and a dot must not be followed by another dot.  
+          
+      ---  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
       `description`  
+      
+      ---  
    :::column-end:::
    :::column span="3":::
       Describes the app.  
+      
+      ---  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
       `path`  
+      
+      ---  
    :::column-end:::
    :::column span="3":::
       Specifies the path to the native messaging host binary.  
@@ -106,20 +116,28 @@ The host manifest file must be a valid JSON file that contains the following key
       *   On macOS and Linux, the path must be absolute.  
           
       The host process starts with the current directory set to the directory that contains the host binary.  For example \(Windows\), if the parameter is set to `C:\App\nm_host.exe`, the binary is started using the current directory \(`C:\App\`\).  
+      
+      ---  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
       `type`  
+      
+      ---  
    :::column-end:::
    :::column span="3":::
       Specifies the type of the interface used to communicate with the native messaging host.  The value instructs Microsoft Edge to use `stdin` and `stdout` to communicate with the host.  
       The only acceptable value is `stdio`.  
+      
+      ---  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
       `allowed_origins` 
+      
+      ---  
    :::column-end:::
    :::column span="3":::
       Specifies the list of extensions that have access to the native messaging host.  To turn on your app to identify and communicate with an extension, in your native messaging host manifest file set the following value.  
@@ -127,6 +145,8 @@ The host manifest file must be a valid JSON file that contains the following key
       ```json
       "allowed_origins": ["chrome-extension://{microsoft_catalog_extension_id}"]
       ```  
+      
+      ---  
    :::column-end:::
 :::row-end:::  
 
