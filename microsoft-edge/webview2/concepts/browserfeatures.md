@@ -48,7 +48,7 @@ The following table displays the WebView2 features that differ from the Microsof
 | IE Mode | Off | No | This feature is turned off.  |  
 | Immersive Reader | Off | No | This feature depends on the browser UI for interaction.  This feature is turned off.  |  
 | Intrusive Ads | Off | No | This feature is turned off.  |  
-| Keyboard shortcuts | Review Details | Review Details | The keyboard shortcuts that are turned off by default either don't make sense or cause problems in WebView2.  You may not turn on or off these shortcuts.  You can search for a key combination using the `AcceleratorKeyPressed` event and create a custom response if needed.  For more information, navigate to [Additional keyboard shortcuts information](#additional-shortcuts-information). |  
+| Keyboard shortcuts | Review Details | Review Details | The keyboard shortcuts that are turned off by default either don't make sense or cause problems in WebView2.  You may not turn on or off these shortcuts.  You can search for a key combination using the `AcceleratorKeyPressed` event and create a custom response if needed.  For more information, navigate to [Additional keyboard shortcuts information](#additional-keyboard-shortcuts-information). |  
 | Read Aloud | Off | No | This feature is turned off.  |  
 | Smart Screen | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Additionally, you may turn off Smart Screen using a command-line switch.  |  
 | Translate | Off | No | This feature is turned off.  |  
