@@ -38,7 +38,7 @@ Use the **Sources** tool to view, modify, and debug JavaScript that's returned b
 
 ## Arranging the panes of the Sources tool
 
-The **Sources** tool has three panes, placed as follows:
+The **Sources** tool has three panes that are placed as follows, depending on whether the DevTools window is narrow or wide:
 
 | Pane | Placement in narrow layout | Placement in wide layout |
 |---|---|---|
@@ -67,7 +67,10 @@ The **Sources** tool has three panes, placed as follows:
    :::column-end:::
 :::row-end:::  
 
-Wide layout is recommended.
+Wide layout is available with each docking location:
+*  DevTools docked on the right or left within the browser window, with DevTools wider than a certain width.
+*  DevTools docked at the bottom in the browser window.
+*  DevTools undocked into a separate window.
 
 ### Maximizing the DevTools window
 
