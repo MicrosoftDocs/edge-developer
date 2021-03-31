@@ -135,84 +135,48 @@ not really needed; single good capture above is sufficient; delete these lines a
 
 ### Filesystem tab for a local Workspace
 
-Use the **Filesystem** tab of the **Explorer** pane to set up a Workspace to save changes to local files, so that changes you make in DevTools get saved to the code on your file system.  
+Use the **Filesystem** tab of the **Explorer** pane to set up a Workspace to save changes to local files, so that changes you make in DevTools get saved to the code on your file system.
 
 :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="The Filesystem tab" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
    The **Filesystem** tab for a Workspace
 :::image-end:::  
 
-The Sources tool supports the default, transient, server approach, or a local sources approach:
-
-| Tool and Approach | Location of files | Capabilities | Limitations |
-|---|---|---|---|
-| Sources tool without a Workspace | Copy of client-side files returned by the server | Fast iterations of experimenting with fixes, because there's no build or re-deploy step. | Fixes are not retained; you must separately apply fixes to the source files and re-deploy them to the web server. |
-| Sources tool with a Workspace | Local source files | Fixes are retained. | Must upload to the server. |
-| Mapping preprocessed code to source code | tbd | tbd | tbd |
-
-These approaches are described below.
-
-<!-- 
-Does the decision of whether to use a Workspace have anything to do with the decision of whether to use an extension, or are these independent decisions? consider both extensions.
-
-Does extension support non-workspace and workspace? if so, separate the sections and simplify.
--->
-
-#### Sources tool without a Workspace
-
-Use the Sources tool, rather than a local code editor, for fast iterations when you are prototyping JavaScript code and don't want to go through the build process every time.
-
-By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.  In the default approach, the **Sources** tool works with a copy of the client-side resources that are returned by the web server.  When you modify these client-side files that are returned by the server, the changes don't persist, because you didn't change the source files.
-
-When you find a fix that works for the client-side JavaScript that is returned by the server, you then need to apply that fix, or an equivalent of that fix in the code prior to transformation, in your actual source code and then re-deploy to the server.
-
-**Complex transformations**
-
-If a project uses complex transformations of JavaScript from the source files to the files that are returned by the server, such as with the React framework, the **Sources** tool is useful for inspecting and experimenting with the transformed, client-side (front-end) JavaScript that's returned from the server.  
-
-The **Sources** tool is not intended to debug the local source files in that scenario.
-
-The client-side JavaScript code that's returned by the server may be different than the source files you work with, if those files go through transformations, such as when using React.
-
-If you use a framework that involves transformation, such as React, your local source JavaScript might be different than the client-side JavaScript that's returned by the server.
-
-When using React, the JavaScript code that's returned by the server is very different than your local JavaScript source code that you maintain.
-
-In this case, Source tool provides a helpful alternative view of the JavaScript code.
-
 #### Sources tool with a Workspace
 
-A Workspace works well when the JavaScript code that's returned by the server is the same as your local JavaScript source code that you maintain.
-
-Setting up a Workspace allows DevTools to act as an Integrated Development Environment (IDE), so that the edits you make are applied to the source files rather than a returned copy.
+<!-- does a workspace enable fast iterations?  does it change the copy of code from the server and also the local source code, that then needs to be redeployed? -->
 
 Using a Workspace saves the changes that you make in DevTools to your file system.
 
-By using Workspaces, DevTools is able to be used as your code editor and Integrated Development Environment (IDE) for your source files.
+By using a Workspace, DevTools is able to be used as your code editor and Integrated Development Environment (IDE) for your source files.  When you edit the copy of the front-end code that's returned by the server, the edits are also applied to your local source code.  For other users to see your changes, you redeploy your changed source files (front-end code) to the server.
 
-View local files (in addition to files returned from the server), and edit and save changes to local files, by using a Workspace (the **Filesystem** tab) or **Overrides**.  Such changes to code are preserved across page refreshes.
+A Workspace works well when the JavaScript code that's returned by the server is the same as your local JavaScript source code that you maintain, rather than performing minification, transformation, or other compiling of JavaScript code.
+
+When using a Workspace, changes to your front-end code are preserved across page refreshes.
 
 For more information, navigate to the tutorial [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex].
 
-#### DevTools extension in Visual Studio Code, with or without a Workspace
+#### Sources tool without a Workspace
 
-<!-- remove this section from the Workspace/Filesystem section? -->
+Use the Sources tool in the default way, editing front-end code that's returned by the web server, for fast iterations when you are prototyping JavaScript code and don't want to go through the build process every time you want to view the rendered result of a code edit.
 
-For persistent editing of local files is to use the "Edge DevTools for Visual Studio Code extension"; navigate to [Microsoft Edge DevTools for Visual Studio Code extension](#microsoft-edge-devtools-for-visual-studio-code-extension), below.
+By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.  In the default approach, the **Sources** tool works with a copy of the client-side resources that are returned by the web server.  When you modify these client-side files that are returned by the server, the changes don't persist, because you didn't change the source files.
 
-This extension supports both the non-Workspace approach and the Workspace approach. 
+When you find a fix that works for the client-side JavaScript that is returned by the server, you then need to apply that fix, or an equivalent of that fix, in your actual source code and then re-deploy to the server.
 
-#### Mapping preprocessed code to source code
+#### Mapping minified code to your source code, to work with your readable source code within the Sources tool
 
-If your client-side source code is transformed, so that the server returns different, transformed, hard-to-read (minified) front-end code to the browser, in some cases, you can set up mapping from your source code to your compiled code, so that when you view and edit the transformed client-side JavaScript code that's returned from the server, the code looks familiar and readable.
+If your client-side source code is transformed, so that the server returns different, transformed, hard-to-read (minified) front-end code to the browser, in some cases, you can set up mapping from your source code to your compiled code, so that when you view, debug, and edit the transformed client-side JavaScript code that's returned from the server, the code looks familiar and readable.
 
-<!-- verbatim from that article: -->
 Source Maps from preprocessors cause DevTools to load your original files in addition to your minified ones. You then use the originals to set breakpoints and step through code. Meanwhile, Microsoft Edge is actually running your minified code. 
 
-<!-- verbatim from that article: -->
-Keep your client-side code readable and debuggable even after you combine, minify, or compile it. Use source maps to map your source code to your compiled code.
-Use Source Maps to map minified code to source code. You are then able to read and debug compiled code in the original source.
+Keep your client-side code readable and debuggable even after you combine, minify, or compile it.
+Use Source Maps to map your minified, compiled code to your source code.
 
 For more information, navigate to [Map preprocessed code to source code][DevToolsJavaScriptSourceMaps].
+
+#### Complex transformations from source code to compiled front-end code
+
+If you use a framework that involves transformation, such as React, your local source JavaScript might be different than the client-side JavaScript that's returned by the server.  In this scenario, the **Sources** tool may be useful for inspecting and experimenting with the transformed, client-side (front-end) JavaScript that's returned from the server.  
 
 ### Overrides tab to override server files by local files
 
@@ -330,28 +294,24 @@ For more information, navigate to [Run commands with the Microsoft Edge DevTools
 
 ### Edit a CSS file
 
-<!-- todo: redo capture using the tut demo -->
-
 There are two ways to edit CSS in DevTools:
 
 *   In the **Elements** tool, [Edit CSS font styles and settings in the Styles pane][DevToolsInspectStylesEditFonts] (recommended in most cases).
 *   In the **Sources** tool, in the **Editor** pane, edit the CSS file as a file listing that directly shows the file.
 
-The Sources tool supports directly editing a CSS file.  For example, if you edit a CSS file by adding the style rule below, the element in the upper left of the rendered webpage ("02/12/2019 • 7 minutes to read") changes to red:
+The Sources tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex] to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
 
 ```css
-.metadata.page-metadata {
-    color: red;
-}
+h1 {
+  color: green;
+}  
 ```
 
-:::image type="complex" source="../media/edit-css.msft.png" alt-text="Edit CSS in the Editor pane to change the text color of the subtitle to red" lightbox="../media/edit-css.msft.png":::
-   Edit CSS in the **Editor** pane to change the text color of the subtitle to red  
+:::image type="complex" source="../media/edit-css.msft.png" alt-text="Edit CSS in the Editor pane to change the text color of the H1 heading to green" lightbox="../media/edit-css.msft.png":::
+   Edit CSS in the **Editor** pane to change the text color of the `H1` heading to green  
 :::image-end:::  
 
-> Note: The file shown in the screen capture might no longer exist.
-
-CSS changes take effect immediately; no saving is needed.
+CSS changes take effect immediately; in most cases, no saving is needed.
 
 **Related articles:**
 
