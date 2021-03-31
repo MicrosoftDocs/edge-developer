@@ -32,7 +32,8 @@ The following table displays the WebView2 features that differ from the Microsof
 *   **Default state** indicates that the feature is part of the default experience on a new WebView2 instance.  
 *   **Configurable** indicates that you may turn on or off the feature using WebView2 APIs or command line switches.
 
->[!Note]  This guide doesn't cover modifying features via command line switches. For more information on turning on and off features with command line switches, navigate to [List of Chromium Command Line Switches][PeterExperimentsChromiumCommandLineSwitches].  
+>[!Note]  
+> This guide doesn't cover modifying features via command line switches. For more information on turning on and off features with command line switches, navigate to [List of Chromium Command Line Switches][PeterExperimentsChromiumCommandLineSwitches].  
     
 | Feature | Default state | Configurable | Details |  
 |:--- |:--- |:--- | :--- |  
@@ -161,7 +162,7 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 | Open DevTools Inspect | `Ctrl`+`Shift`+`C` |  
 
 > [!Note] 
-> To customize any of the keys individually, use the [AcceleratorKeyPressed](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44) event.  
+> To customize any of the keys individually, use the [AcceleratorKeyPressed][Accelerator] event.  
   
   
 ## Getting in touch with the Microsoft Edge WebView2 team  
@@ -171,6 +172,8 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 <!-- links -->  
 
 <!--[Webview2ReferenceDownloadApi]: ./download-api.md "download API | Microsoft Docs"  -->  
+
+[Accelerator]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44 "AcceleratorKeyPressed Event | Microsoft Docs"  
 
 [DevtoolsShortcutsIndex]: ../../devtools-guide-chromium/shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
 
