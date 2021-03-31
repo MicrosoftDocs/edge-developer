@@ -127,12 +127,6 @@ The **Page** tab displays files or resources grouped by server and directory, or
 
 Next to the tabs on the Explorer pane, select the **...** (**More options**) button, then select or clear **Group by folder**.
 
-<!-- 
-not really needed; single good capture above is sufficient; delete these lines and the png file (not used in other articles)
-:::image type="complex" source="../media/sources-editor-pane.msft.png" alt-text="Display the contents of a4d10f71.index-docs.js in the Editor pane" lightbox="../media/sources-editor-pane.msft.png":::
-   Display the contents of `a4d10f71.index-docs.js` in the **Editor** pane  
-:::image-end:::   -->
-
 ### Filesystem tab for a local Workspace
 
 Use the **Filesystem** tab of the **Explorer** pane to set up a Workspace to save changes to local files, so that changes you make in DevTools get saved to the code on your file system.
@@ -140,10 +134,6 @@ Use the **Filesystem** tab of the **Explorer** pane to set up a Workspace to sav
 :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="The Filesystem tab" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
    The **Filesystem** tab for a Workspace
 :::image-end:::  
-
-#### Sources tool with a Workspace
-
-<!-- does a workspace enable fast iterations?  does it change the copy of code from the server and also the local source code, that then needs to be redeployed? -->
 
 Using a Workspace saves the changes that you make in DevTools to your file system.
 
@@ -176,7 +166,9 @@ For more information, navigate to [Map preprocessed code to source code][DevTool
 
 #### Complex transformations from source code to compiled front-end code
 
-If you use a framework that involves transformation, such as React, your local source JavaScript might be different than the client-side JavaScript that's returned by the server.  In this scenario, the **Sources** tool may be useful for inspecting and experimenting with the transformed, client-side (front-end) JavaScript that's returned from the server.  
+If you use a framework that involves transformation, such as React, your local source JavaScript might be very different than the client-side JavaScript that's returned by the server.  
+
+In this scenario, the **Sources** tool may be useful for inspecting and experimenting with the transformed, client-side (front-end) JavaScript that's returned from the server.  
 
 ### Overrides tab to override server files by local files
 
@@ -187,6 +179,8 @@ This is a way of changing what the server sends, after the server returns assets
 :::image type="complex" source="../media/overrides-tab.msft.png" alt-text="The Overrides tab of the Explorer pane" lightbox="../media/overrides-tab.msft.png":::
    The **Overrides** tab of the **Explorer** pane
 :::image-end:::  
+
+**Overrides** is similar to Workspaces.  Use Overrides when you want to experiment with changes to a webpage, and you need to retain the changes after page refresh, but you do not care about mapping your changes to the source code of the webpage.  
 
 **Related articles:**
 
@@ -276,7 +270,9 @@ To use pretty-print to reformat a file to make it readable, click the **Pretty p
 
 ### Apply or save changes
 
-For JavaScript changes to take effect, select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\).  DevTools does not re-run a script, so the only JavaScript changes that take effect are those that you make inside of functions.  For example, in the following figure, notice how `console.log('A')` does not run, whereas `console.log('B')` does.  If DevTools re-runs the entire script after making the change, <!-- why/when would DevTools re-run the entire script?  above says "DevTools does not re-run a script" --> then the text `A` is logged to the **Console**.  
+For JavaScript changes to take effect, select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\).  DevTools does not re-run a script, so the only JavaScript changes that take effect are those that you make inside of functions.  
+
+For example, in the following figure, notice how `console.log('A')` does not run, whereas `console.log('B')` does.  If DevTools re-runs the entire script after making the change, <!-- why/when would DevTools re-run the entire script?  above says "DevTools does not re-run a script" --> then the text `A` is logged to the **Console**.  
 
 By default, your edits are discarded when you refresh the page.  To learn how to save the changes to your file system, navigate to [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex].
 
@@ -324,6 +320,8 @@ CSS changes take effect immediately; in most cases, no saving is needed.
 Use the JavaScript Debugger to step through the JavaScript code that's returned by the server (or stored locally in a Workspace). 
 The Debugger includes the **Debugger** pane, along with breakpoints that are set on lines of code in the **Editor** pane.
 
+<!-- "sources-paused-breakpoint.msft.png" is not currently directly used. It's the upstream source for a couple images, including the below image. -->
+
 :::image type="complex" source="../media/sources-paused-breakpoint-highlight-debug-pane.msft.png" alt-text="The Debugger pane of the Sources tool  " lightbox="../media/sources-paused-breakpoint-highlight-debug-pane.msft.png":::
    The **Debugger** pane of the Sources tool  
 :::image-end:::  
@@ -366,7 +364,7 @@ As shown in the tutorial, to get into the "Paused" mode of the debugger, you do 
 
 1. You then use the **Watch** or **Scope** pane, and use the controls at the top of the **Debugger** pane to step through the code.
 
-<!-- "sources-paused-breakpoint.msft.png" is not currently directly used. It's the upstream source for the below image. -->
+<!-- "sources-paused-breakpoint.msft.png" is not currently directly used. It's the upstream source for a couple images, including the below image. -->
 
 :::image type="complex" source="../media/sources-paused-breakpoint-highlights.msft.png" alt-text="Entering Paused mode of the Debugger" lightbox="../media/sources-paused-breakpoint-highlights.msft.png":::
    Entering Paused mode of the Debugger  
@@ -405,7 +403,6 @@ More details are below.
 
 ### \"Debugger for Microsoft Edge\" Visual Studio Code extension
 
-<!-- verbatim from this extension's dedicated article: -->
 With the "Debugger for Microsoft Edge" Visual Studio Code extension, debug your front-end JavaScript code line by line and see `console.log()` statements directly from Visual Studio Code.
 
 As an alternative to debugging by using the DevTools Sources tool, you can do the same debugging within Visual Studio code, by using this extension.
@@ -421,7 +418,6 @@ For more information, navigate to the [Visual Studio Code overview][DevToolsVSCo
 
 ### \"Microsoft Edge Tools for Visual Studio Code\" extension
 
-<!-- verbatim from this extension's dedicated article: -->
 Use this extension to access Microsoft Edge DevTools from within Microsoft Visual Studio Code. This extension provides access to the **Elements** and **Network** tools in Microsoft Edge DevTools.
 
 Launch Microsoft Edge from the Debug view of Visual Studio Code.  Use the Debug view in Visual Studio Code, and access Microsoft Edge DevTools from the Debug view in Visual Studio Code.
