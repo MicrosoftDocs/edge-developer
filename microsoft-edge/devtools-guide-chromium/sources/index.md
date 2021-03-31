@@ -32,7 +32,9 @@ Use the **Sources** tool to view, modify, and debug JavaScript that's returned b
 | **Editor** pane | View JavaScript, HTML, CSS, and other files that are returned from the server.  Make experimental edits to the JavaScript or CSS code.  These changes are preserved (in the DevTools sandbox) until page refresh, or are saved to a local Workspace. |
 | **Debugger** pane | Use the JavaScript Debugger to step through the JavaScript code, and to step through experimental changes to the code, while watching any JavaScript expressions you specify.  Watch and manually change variable values, and automatically show which variables are currently in-scope for the current line of code. |
 
-:::image type="complex" source="../media/debugging.msft.png" alt-text="Navigate, view, edit, and debug JavaScript returned by the server" lightbox="../media/debugging.msft.png":::
+The following image shows the **Explorer** pane highlighted with a red box on the left, the **Editor** pane highlighted in the middle, and the **Debugger** pane highlighted on the right.  On the left is the main part of the browser window, showing the rendered webpage grayed-out because the debugger is paused on a breakpoint; the rest of the browser window is filled by the DevTools, docked to the right side of the window:
+
+:::image type="complex" source="../media/debugging-highlights.msft.png" alt-text="Navigate, view, edit, and debug JavaScript returned by the server" lightbox="../media/debugging-highlights.msft.png":::
    Navigate, view, edit, and debug JavaScript returned by the server  
 :::image-end:::  
 
