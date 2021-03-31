@@ -3,7 +3,7 @@ description: Feature differences between Microsoft Edge and WebView2
 title: Feature differences between Microsoft Edge and WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/30/2021
+ms.date: 03/31/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -12,28 +12,28 @@ no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Paymen
 ---
 # Browser feature differences between Microsoft Edge and WebView2  
 
-WebView2 is based on the new Microsoft Edge browser.  You have the opportunity to extend features from the browser to WebView2-based apps, which is useful.  However, since WebView2 isn't limited to browser-like apps, there are some browser features that need to be modified or removed. This article provides the following information.  
+WebView2 is based on the new Microsoft Edge browser.  You have the opportunity to extend features from the browser to WebView2-based apps, which is useful.  However, since WebView2 isn't limited to browser-like apps, there are some browser features that need to be modified or removed.   This article provides the following information.  
 
 *   The modified browser features and supporting information.   
 *   The ability to turn on or off the feature.  
 *   Guidance on keyboard shortcuts.  
     
-## Design guidelines
+## Design guidelines  
 
 In the context of WebView2, browser features adhere to the following design guidelines.  
 
-*   Most features work the same in WebView2 and Microsoft Edge.  If a feature doesn't make sense in the context of WebView2 or for other reasons, the feature is modified or turned off. 
+*   Most features work the same in WebView2 and Microsoft Edge.  If a feature doesn't make sense in the WebView2 context or for other reasons, the feature is modified or turned off. 
 *   WebView2 features don't include Microsoft Edge branding.  
     
 ## Features  
 
-The following table displays the WebView2 features that differ from the Microsoft Edge browser, where:  
+The following table displays the WebView2 features that differ from the Microsoft Edge browser.   
 
 *   **Default state** indicates that the feature is part of the default experience on a new WebView2 instance.  
-*   **Configurable** indicates that you may turn on or off the feature using WebView2 APIs or command line switches.
-
->[!Note]  
-> This guide doesn't cover modifying features via command line switches. For more information on turning on and off features with command line switches, navigate to [List of Chromium Command Line Switches][PeterExperimentsChromiumCommandLineSwitches].  
+*   **Configurable** indicates that you may turn on or off the feature using WebView2 APIs or command-line switches.  
+    
+> [!NOTE]  
+> This article doesn't cover modifying features using command-line switches.  For more information about turning on and off features with command-line switches, navigate to [List of Chromium Command Line Switches][PeterExperimentsChromiumCommandLineSwitches].  
     
 | Feature | Default state | Configurable | Details |  
 |:--- |:--- |:--- | :--- |  
@@ -51,7 +51,7 @@ The following table displays the WebView2 features that differ from the Microsof
 | IE Mode | Off | No | This feature is turned off.  |  
 | Immersive Reader | Off | No | This feature depends on the browser UI for interaction.  This feature is turned off.  |  
 | Intrusive Ads | Off | No | This feature is turned off.  |  
-| Keyboard shortcuts | Review Details | Review Details | The keyboard shortcuts that are turned off by default either don't make sense or cause problems in WebView2.  You may not turn on or off these shortcuts.  Alternatively, you may listen for a key combination using the `AcceleratorKeyPressed` event and create a custom response if needed.  For more information, navigate to [Additional keyboard shortcuts information](#additional-keyboard-shortcuts-information). |  
+| Keyboard shortcuts | Review Details | Review Details | The keyboard shortcuts that are turned off by default either don't make sense or cause problems in WebView2.  You may not turn on or off these shortcuts.  Instead, you may listen for a key combination using the `AcceleratorKeyPressed` event and create a custom response if needed.  For more information, navigate to [Additional keyboard shortcuts information](#additional-keyboard-shortcuts-information). |  
 | Read Aloud | Off | No | This feature is turned off.  |  
 | Smart Screen | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Additionally, you may turn off Smart Screen using a command-line switch.  |  
 | Translate | Off | No | This feature is turned off.  |  
@@ -83,9 +83,9 @@ The following Microsoft Edge and Google Chrome settings webpages aren't availabl
 
 ## Additional keyboard shortcuts information  
 
-Keyboard shortcuts or key bindings are supported in Microsoft Edge and WebView2. When Microsoft Edge updates, the default key bindings may change.  Furthermore, a keyboard shortcut that is turned off by default may turn on if the feature is now supported in WebView2.  To avoid changes to your keyboard shortcuts, you may set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, which turns off all keys that access browser features, but keeps all basic text-editing and movement shortcuts turned on.  
+Keyboard shortcuts or key bindings are supported in Microsoft Edge and WebView2.  When Microsoft Edge updates, the default key bindings may change.  Furthermore, a keyboard shortcut that is turned off by default may turn on if the feature is now supported in WebView2.  To avoid changes to your keyboard shortcuts, you may set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, which turns off all keys that access browser features, but keeps all basic text-editing and movement shortcuts turned on.  
 
-The following table lists the shortcuts that are always turned off in WebView2.  An asterisk \(`*`\) character indicates that the shortcut is not turned off, but the feature it accesses is turned off or doesn't apply to WebView2.  
+The following table lists the shortcuts that are always turned off in WebView2.  An asterisk \(`*`\) character indicates that the shortcut isn't turned off, but the feature it accesses is turned off or doesn't apply to WebView2.  
 
 | Action | Windows |  
 |:--- |:--- |  
@@ -138,7 +138,7 @@ The following keyboard shortcuts are always turned off, except in windows that d
 | Close Window | `Ctrl`+`Shift`+`W` |  
 | Fullscreen | `F11` |  
 
-If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following additional keyboard shortcuts are turned off.  
+If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following keyboard shortcuts are turned off.  
 
 | Action | Windows |  
 |:--- |:--- |  
@@ -162,7 +162,7 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 | Open DevTools Inspect | `Ctrl`+`Shift`+`C` |  
 
 > [!Note] 
-> To customize any of the keys individually, use the [AcceleratorKeyPressed][Accelerator] event.  
+> To customize any of the keys individually, use the [AcceleratorKeyPressed][DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444] event.  
   
   
 ## Getting in touch with the Microsoft Edge WebView2 team  
@@ -173,7 +173,7 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 
 <!--[Webview2ReferenceDownloadApi]: ./download-api.md "download API | Microsoft Docs"  -->  
 
-[Accelerator]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44 "AcceleratorKeyPressed Event | Microsoft Docs"  
+[DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true "CoreWebView2Controller.AcceleratorKeyPressed Event | Microsoft Docs"  
 
 [DevtoolsShortcutsIndex]: ../../devtools-guide-chromium/shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
 
