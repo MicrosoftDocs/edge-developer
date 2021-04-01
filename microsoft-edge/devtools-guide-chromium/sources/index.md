@@ -29,7 +29,7 @@ Use the **Sources** tool to view, modify, and debug JavaScript that's returned b
 | Pane | Actions |
 |---|---|
 | **Explorer** pane | Navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.  Optionally, set up a local Workspace to save changes directly to source files. |
-| **Editor** pane | View JavaScript, HTML, CSS, and other files that are returned from the server.  Make experimental edits to the JavaScript or CSS code.  These changes are preserved (in the DevTools sandbox) until page refresh, or are saved to a local Workspace. |
+| **Editor** pane | View JavaScript, HTML, CSS, and other files that are returned from the server.  Make experimental edits to the JavaScript or CSS code.  These changes are preserved (in the DevTools sandbox) until page refresh, or are saved to a local Workspace.  When using a Workspace or Overrides, you can edit HTML files as well. |
 | **Debugger** pane | Use the JavaScript Debugger to step through the JavaScript code, and to step through experimental changes to the code, while watching any JavaScript expressions you specify.  Watch and manually change variable values, and automatically show which variables are currently in-scope for the current line of code. |
 
 The following image shows the **Explorer** pane highlighted with a red box on the left, the **Editor** pane highlighted in the middle, and the **Debugger** pane highlighted on the right.  On the left is the main part of the browser window, showing the rendered webpage grayed-out because the debugger is paused on a breakpoint; the rest of the browser window is filled by the DevTools, docked to the right side of the window:
@@ -157,8 +157,16 @@ Next to the tabs on the Explorer pane, select the **...** (**More options**) but
 
 Use the **Filesystem** tab of the **Explorer** pane to set up a Workspace to save changes to local files, so that changes you make in DevTools get saved to the code on your file system.
 
-:::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="The Filesystem tab" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
-   The **Filesystem** tab for a Workspace
+<!-- to set up this capture: per Workspaces demo, copied 3 files locally to ~/Desktop/app/, installed Python 3.x, opened bash shell, cd'd to ~/Desktop/app, > py -m http.server (py command, not python), in browser go to localhost:8000 (not 8080), the HTML webpage loads, then green dots appear next to Filesystem tab's html/css/js files and also on the Page tab's files. -->
+
+:::image type="complex" source="../media/sources-filesystem-tab.msft.png" alt-text="The Filesystem tab, for a Workspace" lightbox="../media/sources-filesystem-tab.msft.png":::
+   The **Filesystem** tab, for a Workspace
+:::image-end:::  
+
+When a Workspace (in the **Filesystem** tab) is set up, the green dots on files also appear in the **Page** tab:
+
+:::image type="complex" source="../media/sources-filesystem-tab-page-tab-dots.msft.png" alt-text="The Page tab, with green dots indicating corresponding files are in a local Workspace" lightbox="../media/sources-filesystem-tab-page-tab-dots.msft.png":::
+   The Page tab, with green dots indicating corresponding files are in a local Workspace
 :::image-end:::  
 
 Using a Workspace saves the changes that you make in DevTools to your file system.
@@ -261,9 +269,7 @@ Snippets are similar to bookmarklets.
 
 ## The Editor pane, to view or edit JavaScript files
 
-<!-- todo: there was a proposal to link from here to where? -->
-
-Use the **Editor** pane to view JavaScript, HTML, CSS, and other files that are returned from the server.  Make experimental edits to the JavaScript or CSS code; DevTools updates the page to run the modified code.  These experimental changes are preserved (in the DevTools sandbox) until page refresh.  To view and edit *local* JavaScript or CSS source files, set up a Workspace.
+Use the **Editor** pane to view JavaScript, HTML, CSS, and other files that are returned from the server.  Make experimental edits to the JavaScript or CSS code returned from the server; DevTools updates the page to run the modified code.  These experimental changes are preserved (in the DevTools sandbox) until page refresh.  To view and edit local JavaScript, HTML, or CSS source files, set up a Workspace.
 
 :::image type="complex" source="../media/edit-js.msft.png" alt-text="Editing JavaScript in the Editor pane" lightbox="../media/edit-js.msft.png":::
    Editing JavaScript in the **Editor** pane  
@@ -275,7 +281,7 @@ The **Editor** pane has the following level of support for various file types:
 |---------|---------|
 | JavaScript | View, edit, and debug. |
 | CSS | View and edit. |
-| HTML | View. |
+| HTML | View and edit. |
 | Images | View. |
 
 The following subsections are related to the Editor pane:
@@ -379,7 +385,7 @@ The basic approach to using a debugger is to set a breakpoint (an intentional st
 For example, the tutorial [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] uses an existing, simple webpage 
 [Demo: Get Started Debugging JavaScript with Microsoft Edge (Chromium) DevTools][DevtoolsGlitchMeDebugJsGetStarted], that contains a few form controls.  
 
-As shown in the tutorial, to get into the "Paused" mode of the debugger, you do the following:
+As shown in the tutorial, to get into the "Paused" mode of the debugger, do something like the following:
 
 1. Open the above Demo webpage in a new tab of the browser.
 
@@ -387,7 +393,7 @@ As shown in the tutorial, to get into the "Paused" mode of the debugger, you do 
 
 1. Select the **Sources** tab, to show the Sources tool.
 
-1. In the **Explorer** pane on the left, select the **Page** tab, then select the JavaScript file (`get-started.js` in this case).
+1. In the **Explorer** pane on the left, select the **Page** tab, then select the JavaScript file (`get-started.js`, in this case).
 
 1. In the **Editor** pane, click a line number near a suspect line of code, such as `var sum = addend1 + addend2;`, to set a breakpoint on that line.
 
@@ -415,7 +421,7 @@ These three approaches are equivalent:
 
 When the variable `sum` is in-scope, `sum` and its value are automatically shown in the **Scope** section of the Debugger pane, and are also overlaid in the Editor pane where `sum` is calculated.  Therefore you probably wouldn't need to define a Watch expression for `sum`, or a `console.log` statement to show the value of `sum`.
 
-The debugger gives a richer, more flexible display and environment than a `console.log` statement.  In the Debugger, as you step through the code, you may display and change the values of all currently-defined properties and variables, issue JavaScript statements in the **Console**, and more.  (Press **Esc** to display the Console.)
+The debugger gives a richer, more flexible display and environment than a `console.log` statement.  In the Debugger, as you step through the code, you may display and change the values of all currently-defined properties and variables, issue JavaScript statements in the **Console**, and more.  (To display the Console, select **Esc**.)
 
 Breakpoints and Watch expressions are preserved when you refresh the page.
 
