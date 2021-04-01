@@ -3,7 +3,7 @@ description: Host web content in your Win32, .NET, UWP apps with the Microsoft E
 title: Microsoft Edge WebView2 Control
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/24/2021
+ms.date: 04/01/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -11,7 +11,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 ---
 # Introduction to Microsoft Edge WebView2  
 
-The Microsoft Edge WebView2 control enables you to embed web technologies \(HTML, CSS, and JavaScript\) in your native apps.  The WebView2 control uses [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native apps.  With WebView2, you may embed web code in different parts of your native app.  Build all of the native app within a single WebView instance.  For information on how to start building a WebView2 app, navigate to [Get Started](#getting-started).  
+The Microsoft Edge WebView2 control allows you to embed web technologies \(HTML, CSS, and JavaScript\) in your native apps.  The WebView2 control uses [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native apps.  With WebView2, you may embed web code in different parts of your native app.  Build all of the native app within a single WebView instance.  For information on how to start building a WebView2 app, navigate to [Get Started](#getting-started).  
 
 :::image type="complex" source="./media/WebView2/whatwebview.png" alt-text="What is WebView?" lightbox="./media/WebView2/whatwebview.png":::
    What is WebView?  
@@ -40,51 +40,78 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
 
 :::row:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-web-ecosystem-skillset.msft.png":::  
+      :::image type="complex" source="./media/webview-reasons-web-ecosystem-skillset.msft.png" alt-text="Web ecosystem & skillset" lightbox="./media/webview-reasons-web-ecosystem-skillset.msft.png":::
+         **Web ecosystem \& skillset**
+      :::image-end:::  
+
       **Web ecosystem \& skillset**  
       Utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem.  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-rapid-innovation.msft.png":::  
+      :::image type="complex" source="./media/webview-reasons-rapid-innovation.msft.png" alt-text="Rapid innovation" lightbox="./media/webview-reasons-rapid-innovation.msft.png":::
+         **Rapid innovation**  
+      :::image-end:::  
+
       **Rapid innovation**  
       Web development allows for faster deployment and iteration.  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-windows-7-8-10-support.msft.png":::  
+      :::image type="complex" source="./media/webview-reasons-windows-7-8-10-support.msft.png" alt-text="Windows 7, 8, and 10 support" lightbox="./media/webview-reasons-windows-7-8-10-support.msft.png":::
+         **Windows 7, 8, and 10 support**  
+      :::image-end:::  
+
       **Windows 7, 8, and 10 support**  
       Support for a consistent user experience across Windows 7, Windows 8, and Windows 10.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-native-capabilities.msft.png":::  
+      :::image type="complex" source="./media/webview-reasons-native-capabilities.msft.png" alt-text="Native capabilities" lightbox="./media/webview-reasons-native-capabilities.msft.png":::
+         **Native capabilities**  
+      :::image-end:::  
+
       **Native capabilities**  
       Access the full set of Native APIs.  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-code-sharing.msft.png":::  
+      :::image type="complex" source="./media/webview-reasons-code-sharing.msft.png" alt-text="Code-sharing" lightbox="./media/webview-reasons-code-sharing.msft.png":::
+         **Code-sharing**  
+      :::image-end:::  
+
       **Code-sharing**  
       Add web code to your codebase allows for increased reuse across multiple platforms.  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-microsoft-support.msft.png":::  
+      :::image type="complex" source="./media/webview-reasons-microsoft-support.msft.png" alt-text="Microsoft support" lightbox="./media/webview-reasons-microsoft-support.msft.png":::
+         **Microsoft support**  
+      :::image-end:::  
+
       **Microsoft support**  
       Microsoft provides support and adds new feature requests when WebView2 releases at Generally Availability \(GA\).  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-evergreen.msft.png":::  
+      :::image type="complex" source="./media/webview-reasons-evergreen.msft.png" alt-text="Evergreen distribution" lightbox="./media/webview-reasons-evergreen.msft.png":::
+         **Evergreen distribution**  
+      :::image-end:::  
+
       **Evergreen distribution**  
       Rely on an up-to-date version of Chromium with regular platform updates and security patches.  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-fixed.msft.png":::  
+      :::image type="complex" source="./media/webview-reasons-fixed.msft.png" alt-text="Fixed" lightbox="./media/webview-reasons-fixed.msft.png":::
+         **Fixed**  
+      :::image-end:::  
+
       **Fixed**  
       \(coming soon\)  Choose to package the Chromium bits in your app.  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-incremental-adoption.msft.png":::  
+      :::image type="complex" source="./media/webview-reasons-incremental-adoption.msft.png" alt-text="Incremental adoption" lightbox="./media/webview-reasons-incremental-adoption.msft.png":::
+         **Incremental adoption**  
+      :::image-end:::  
+
       **Incremental adoption**  
       Add web components piece by piece to your app.  
    :::column-end:::
