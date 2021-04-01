@@ -21,7 +21,7 @@ To turn on \(or off\) experimental features in Microsoft Edge, complete the foll
 1.  Open Microsoft Edge.   
     
     > [!NOTE]
-    > Ensure you use a Microsoft Edge version that has the Experiment listed in this article.  Navigate to [Experimental features](#experimental-features-in-progressive-web-apps).  
+    > Ensure you use a Microsoft Edge version that has the Experiment listed in this article.  Navigate to [Experimental features](#experimental-features-in-progressive-web-apps-pwas).  
     
 1.  Navigate to `edge://flags`.  
 1.  Navigate to the relevant experiment.  
@@ -68,14 +68,12 @@ This table includes features that are works in progress that may come out in a f
 
 | Feature | Platform |  
 |:--- |:--- |   
-| [URL Protocol Handling](#url-protocol-handling) |  macOS, Linux |  
+| [URI Protocol Handling](#uri-protocol-handling) |  macOS, Linux |  
 | [Window Controls Overlay for Installed Desktop Web Apps](#window-controls-overlay-for-installed-desktop-web-apps) |  macOS, Linux |  
 | Improvements to App Management| All |  
 | Support for Desktop Share Target| Windows 10 |  
 
 ## URI Protocol Handling  
-
-<!-- not yet available -->  
 
 A uniform resource identifier \(URI\) may be used to define more than just links to webpages and web content using the HTTP or FTP protocol.  URIs may be used to describe links to anything that you codify into a schema.  For example, the `mailto://` protocol is used to describe an email link and the operating system \(OS\) or browser decides which webpage or app should handle that protocol.  
 
@@ -187,8 +185,6 @@ For example, the `url_handlers` member value is set to `*.contoso.com` matches `
 For detailed instructions about testing the URL handler, navigate to [PWAs as URL Handlers][GithubWicgPwaUrlHandlerBlobMainExplainerMd].  
 
 ## Window Controls Overlay for installed desktop web apps  
-
-<!-- not yet available -->  
 
 To create an immersive title bar similar to a native app for your desktop installed web app.  The **Window Controls Overlay** feature  completes the following actions.  
     
