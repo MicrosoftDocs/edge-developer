@@ -3,55 +3,68 @@ description: The latest experimental features in Microsoft Edge for Web Apps
 title: Experimental features | Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/16/2021 
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
 ---
-# Experimental features in Progressive Web Apps
+# Experimental features in Progressive Web Apps (PWAs)  
 
-Microsoft Edge provides access to experimental features that are still in development.  You may test and [provide feedback](#providing-feedback-on-experimental-features) on these features to help to determine when and if to release them.  
+Microsoft Edge provides access to experimental features that are still in development.  To determine if each feature is ready and when to release each, test and [provide feedback](#providing-feedback-on-experimental-features).  
 
-While experimental features are available in all channels of Microsoft Edge, you will get the latest experimental features using the Microsoft Edge Canary channel.  
+Experimental features are available in all channels of Microsoft Edge, but the latest experimental features are only available in the Microsoft Edge Canary channel.  
 
 ## Turn on experimental features  
 
 To turn on \(or off\) experimental features in Microsoft Edge, complete the following steps.  
   
-1.  Open the Microsoft Edge flags webpage by navigating to `edge://flags` using the address bar. Make sure you are using a version of Microsoft Edge that has the relevant feature flag listed in this article.  Navigate to [Experimental features](#experimental-features-in-progressive-web-apps).  
-1.  Find the relevant experimental flag on the webpage and change it's status to `Enabled`. Each experiment will usually have it's own flag to toggle on or off.
-1.  Close and restart Microsoft Edge  
+1.  Open Microsoft Edge.   
+    
+    > [!NOTE]
+    > Ensure you use a Microsoft Edge version that has the Experiment listed in this article.  Navigate to [Experimental features](#experimental-features-in-progressive-web-apps).  
+    
+1.  Navigate to `edge://flags`.  
+1.  Navigate to the relevant experiment.  
+1.  Choose the dropdown menu next to the experiment description and choose `Enabled`.  
+    
+    :::image type="complex" source="../media/turn-on-experimental-flag.png" alt-text="Choose Enabled to turn on an experiment" lightbox="../media/turn-on-experimental-flag.png":::
+       Choose **Enabled** to turn on an experiment  
+    :::image-end:::  
+    
+    > [!NOTE]
+    > Each experiment usually has a dropdown menu to choose the following values.  If an experimental feature doesn't have an entry on **Experiments**, instructions are provided to start Microsoft Edge with that feature using the command-line.
+    > 
+    > *   `Default`  
+    > *   `Disabled`  
+    > *   `Enabled`  
+    
+1.  Restart Microsoft Edge.  
+    
+### Origin Trials  
 
-:::image type="complex" source="../media/turn-on-experimental-flag.png" alt-text="Change an experimental flag status" lightbox="../media/turn-on-experimental-flag.png":::
-   Change an experimental flag status  
-:::image-end:::
+Microsoft Edge sometimes uses origin trials to test features for specific domains or websites.  You may want to use an origin trial for your website to apply a specific feature.  If you're a website owner, you may enroll in an origin trial.  An origin trial provides features that are available for a percentage of Microsoft Edge users who visit your website.
 
-If an experimental feature doesn't have an `edge://flags` entry, instructions will be provided on how to use the command line to start Microsoft Edge with that feature specifically turned on.
-
-### Origin Trials
-Microsoft Edge sometimes uses origin trials to test features on for particular domains/sites. If you are a site owner that would like to participate in an origin trial for your site with a particular feature, you can enrol to participate in an origin trial so that features are automatically enabled for a percentage of Microsoft Edge users visiting your site.
-
-Learn more here: [Microsoft Edge Origin Trials](#https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/)
+For more information about Origin Trials, navigate to [Microsoft Edge Origin Trials Developer Console][MicrosoftDeveloperMicrosoftEdgeOriginTrials].  
     
 > [!NOTE]
-> Experimental features are constantly being updated and may cause performance issues.  To turn off an experimental feature, open the `edge://flags` webpage and change the status of the feature to `Disabled`.  
+> Experimental features are constantly updated and may cause performance issues.  To turn off an experimental feature, navigate to [Turn on experimental features](#turn-on-experimental-features), navigate to the experiment, and then choose `Disabled`.  
 
-## Features Available to Test  
+## Current Features that are available to test  
 
-The following sections describe the new experimental web app features that are available for testing and validation on Microsoft Edge.  
+The following list describes the new experimental web app features that are available to test and validate on Microsoft Edge.  
 
 | Feature | Microsoft Edge version | Platform |  
 |:--- |:--- |:--- |  
-| [URL Protocol Handling](#url-protocol-handling) | 91 or later | Windows |  
+| [URI Protocol Handling](#uri-protocol-handling) | 91 or later | Windows |  
 | [Window Controls Overlay for Installed Desktop Web Apps](#window-controls-overlay-for-installed-desktop-web-apps) | 91 or later | Windows 10|  
 | [URL Link Handling](#url-link-handling) | 91 or later | Windows|  
 | [Run on OS Login](#run-on-os-login) | 88 or later | All |  
 | [Shortcuts](#shortcuts) | 87 or later | All |  
-| [File Handling](#file-handling) | 83 or later | All Desktop|  
+| [File Handling](#file-handling) | 83 or later | All Desktop |  
 
-## Features Coming Soon  
+## Future Features  
 
-This table includes features that are work in progress that may come out in a future release for testing.  
+This table includes features that are works in progress that may come out in a future release for testing.  
 
 | Feature | Platform |  
 |:--- |:--- |   
@@ -60,16 +73,25 @@ This table includes features that are work in progress that may come out in a fu
 | Improvements to App Management| All |  
 | Support for Desktop Share Target| Windows 10 |  
 
-## URL Protocol Handling  
+## URI Protocol Handling  
 
-URLs can be used to define more than just links to webpages and web content using the HTTP or FTP protocol - they can be used to describe links to anything you can codify into a schema. For example, the `mailto://` protocol is used to describe an email link and the operating system or browser can decide which webpage or app should handle that protocol. You can learn more about existing browser based support for [web based protocol handling here](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/registerProtocolHandler/Web-based_protocol_handlers). 
+<!-- not yet available -->  
 
-This feature allows you to register a PWA with the host operating system via the web app manifest, declaring that it can handle a specific URL protocol. After registering a PWA as a protocol handler, when a user chooses a hyperlink with a specific scheme like `mailto://` or `web+music://` from a browser or a native app, the registered PWA would be activated by the operating system and receive the URL.
+A uniform resource identifier \(URI\) may be used to define more than just links to webpages and web content using the HTTP or FTP protocol.  URIs may be used to describe links to anything that you codify into a schema.  For example, the `mailto://` protocol is used to describe an email link and the operating system \(OS\) or browser decides which webpage or app should handle that protocol.  
 
-This feature requires you to update the web app manifest to include a `protocol_handlers` array, within the array you need to specify two fields:
+For more information about existing browser-based support, navigate to [Web-based protocol handlers][MdnDocsWebApiNavigatorRegisterprotocolhandlerWebBasedProtocolHandlers].  
 
-*   `protocol`: Protocol to be handled e.g. `mailto`, `web+jngl`  
-*   `url`: HTTPS URL within the app scope that will handle the protocol. The `%s` token will be replaced by the URL starting with the protocol handlers scheme.  
+This feature allows you to complete the following actions.  
+
+*   Register your PWA with the host OS using the manifest of your web app
+*   Declare that a PWA handles a specific URI protocol  
+     
+After you register a PWA as a protocol handler, when a user chooses a hyperlink with a specific scheme such as `mailto://` or `web+music://` from a browser or a native app, the registered PWA is activated by the OS and receives the URI.  
+
+This feature requires you to update the web app manifest to include a `protocol_handlers` array, in the array you need to specify two fields:  
+
+*   `protocol`:  The protocol to handle the request, for example `mailto` or `web+jngl`.  
+*   `url`: The HTTPS URI in the app scope that handles the protocol.  In the future, the URI starting with the protocol handlers scheme is planned to replace the `%s` token.  
 
 ### Example Manifest
 
@@ -103,27 +125,26 @@ In this example, a web app manifest declares that the app should be registered t
 }
 ```  
 
-You will need to update your manifest to support whatever protocol you'd like to register for. Once this feature is turned on, Microsoft Edge will detect the manifest change and register the app for the protocol. If more than one app has registered for a given protocol, the operating system or the browser will present a disambiguation selector to the user so that they can choose the appropriate app from the list. 
+Update your manifest to support the protocol that you want to register.  After you turn on this feature, Microsoft Edge completes the following actions.  
 
-> [!IMPORTANT]
-> To preview protocol handling in Microsoft Edge on Windows, look for and turn on the `edge://flags`:
-> 
-> **Desktop Web Apps support Protocol Handlers**
-> 
-> Origin trial is running for Protocol Handlers
-> [Register Your Origin Here](#https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration/)
->
-> 
+1.  Detects changes in the manifest  
+1.  Registers the app for the protocol  
+    
+If more than one app registers a protocol, the user is presented with a disambiguation selector.  The user chooses the appropriate app from the list presented by the OS or browser.  
+
+To preview protocol handling in Microsoft Edge on Windows, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop Web Apps support Protocol Handlers**.  
+
+For more information about origin trial is running for protocol handlers, navigate to [Register for Web App Protocol Handler Registration][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].  
  
-## URL Link Handling
+## URL Link Handling  
 
-Developers can create a more engaging experience if Progressive Web Apps \(PWAs\) are able to register as handlers for https uniform resource identifiers (URLs). This means that PWAs can request to be launched when associated URLs are activated. For example, a user may choose on a link to a news story from an e-mail. An associated PWA for viewing news stories would automatically be launched to handle the activation of the link.
+A uniform resource locator \(URL\) is a type of URI.  Create a more engaging experience when Progressive Web Apps \(PWAs\) register as handlers for https URIs.  PWAs may request to launch when associated URIs are activated.  For example, if a user chooses a link to a news story from an email message.  An associated PWA to display news stories is automatically launched to handle the activation of the link.  
 
-This feature allows you to register a PWA with the browser via the web app manifest, declaring that it can handle specific links. To do this, you must add to the manifest file the optional `url_handlers` member. This member is an `object[]` that groups the origins of URLs that the app wishes to handle.
+This feature allows you to register a PWA with the browser using the web app manifest and declare that the browser handles specific links.  To register a PWA with the browser, add the optional `url_handlers` member to the manifest file.  The `url_handlers` member is an `object[]` that groups the origins of URIs that the app wishes to handle.  
 
-### Example Manifest
+### Example of the url_handlers in the manifest  
 
-Example web app manifest with `url_handlers` member:
+The following code snippet is an example web app manifest with the `url_handlers` member.  
 
 ```json 
 {
@@ -151,118 +172,124 @@ Example web app manifest with `url_handlers` member:
 }
 ```  
 
-A PWA matches a URL for URL handling if the URL matches one of the origin strings in `url_handlers` and the browser is able to validate that the origin agrees to let this app handle such a URL. 
+A PWA matches a URI for URL handling if the URI matches one of the origin strings in `url_handlers` and the browser validates that the origin agrees to allow this app handle such a URI.  
 
-`url_handlers` can contain an origin that encompasses requesting PWA's scope and also other unrelated origins. Not restricting URLs to the same scope or domain as the requesting PWA allows the developer to use different domain names for the same content but handle them with the same PWA.
+The `url_handlers` member contains an origin that encompasses the scope and also other unrelated origins of the requesting PWA.  Not restricting URIs to the same scope or domain as the requesting PWA allows you to use different domain names for the same content but handle them with the same PWA.  
 
-**Wildcard Matching**
+#### Wildcard matching  
 
-The wildcard character `*` can be used to match one or more characters.
+Use the wildcard character \(`*`\) to match one or more characters.  
 
-A wildcard prefix can be used in `url_handlers` origin strings to match for different subdomains. The prefix must be `*`. for this usage. The scheme is still assumed to be https when using a wildcard prefix.
+A wildcard prefix is used in origin strings of the `url_handlers` member to match for different subdomains.  The prefix must be `*.` for this usage.  The `https` scheme is assumed when you use a wildcard prefix.  
 
-For eg. `*.contoso.com` matches `tenant.contoso.com` and `www.tenant.contoso.com` but not `contoso.com`.
+For example, the `url_handlers` member value is set to `*.contoso.com` matches `tenant.contoso.com` and `www.tenant.contoso.com`, but doesn't match `contoso.com`.  
 
-For detailed instructions on testing URL handler refer to the [explainer](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md).
+For detailed instructions about testing the URL handler, navigate to [PWAs as URL Handlers][GithubWicgPwaUrlHandlerBlobMainExplainerMd].  
 
+## Window Controls Overlay for installed desktop web apps  
 
-## Window Controls Overlay for Installed Desktop Web Apps
+<!-- not yet available -->  
 
-To create an immersive, native like title bar for your desktop installed web app, the Window Controls Overlay feature removes the system reserved title bar that usually spans the width of the client frame and replaces it with an overlay that contains just the critical system required window controls necessary for a user to control the window itself. 
-
-In providing an overlay, the entire web client area is available to the web developer to use. This feature includes a manifest update and provides ways for a developer to reason about the size and position of the overlay to arrange content around.
+To create an immersive title bar similar to a native app for your desktop installed web app.  The **Window Controls Overlay** feature  completes the following actions.  
     
-### Examples of Title Bar Area Customization
+1.  Removes the system reserved title bar.  It usually spans the width of the client frame.  
+1.  Replaces it with an overlay.  It contains just the critical system required window controls necessary for a user to control the window itself.  
+    
+After it provides an overlay, the entire web client area is available for you to use.  This feature includes a manifest update.  It provides ways for you to determine the size and position of the overlay to help you arrange content.  
+    
+### Examples of title bar area customization  
 
-The inspiration for this feature came from native apps where the developer can customize the title bar for important app actions or notifications. Here are a few examples:
+This feature is based on the ability in native apps to customize the title bar.  You may customize a title bar for important app actions or notifications.  Review the following examples for Microsoft Visual Studio Code and Microsoft Teams.  
 
-**Visual Studio Code**
+#### Visual Studio Code  
 
-Visual Studio Code is a popular editor built on Electron that ships on multiple desktop platforms. 
+Microsoft Visual Studio Code is a popular editor built on Electron that ships on multiple desktop platforms.  
 
-This example shows how Visual Studio Code uses the title bar to maximize available screen real estate to include the current file name and top level menu structure within the title bar space.
+The following example displays how Visual Studio Code uses the title bar to maximize available screen real estate to include the current file name and top-level menu structure in the title bar.  
 
-:::image type="complex" source="../media/visual-studio-code-title-customization.png" alt-text="Visual Studio Code title bar example" lightbox="../media/visual-studio-code-title-customization.png":::
-   Visual Studio Code title bar customization example  
+:::image type="complex" source="../media/visual-studio-code-title-customization.png" alt-text="An example of the title bar in Visual Studio Code" lightbox="../media/visual-studio-code-title-customization.png":::
+   An example of the title bar in Visual Studio Code  
 :::image-end:::  
 
-**Microsoft Teams**
+#### Microsoft Teams  
 
-Workplace collaboration and communication tool Microsoft Teams is also built with Electron and available on multiple desktop platforms. In this example, Teams shows back/forward navigation buttons, a search box and user profile controls.
+Workplace collaboration and communication tool Microsoft Teams is also built with Electron and available on multiple desktop platforms.  In the following example, Microsoft Teams displays `back` and `forward` navigation buttons, a search box, and user profile controls.  
 
-:::image type="complex" source="../media/teams-title-customization.png" alt-text="MS Teams title bar example" lightbox="../media/teams-title-customization.png":::
-   Microsoft Teams title bar customization example  
+:::image type="complex" source="../media/teams-title-customization.png" alt-text="An example of the title bar in Microsoft Teams" lightbox="../media/teams-title-customization.png":::
+   An example of the title bar in Microsoft Teams  
 :::image-end:::  
 
-### Overlaying Window Controls on a Frameless Window
+### Overlay Window Controls on a Frameless Window  
 
-To provide the maximum addressable area for web content, the browser creates a frameless window, removing all browser UI with the exception of the window controls which are provided as an overlay.
-The window controls overlay ensures users can still minimize, maximize or restore, and close the app. It also provides access to relevant browser controls via the web app menu. For Chromium based browsers the controls in the overlay are:  
+To provide the maximum addressable area for web content, the browser creates a frameless window, removing all browser UI except for the window controls provided as an overlay.  
+The window controls overlay ensures users still minimize, maximize, restore, and close the app.  It also provides access to relevant browser controls using the web app menu.  For Chromium-based browsers, the controls in the overlay.
 
 *   A draggable region the same width and height of each of the window control buttons  
-*   the "Settings and more" three-dot button  
-*   the window control buttons minimize, maximize, restore and close.  
+*   The **Settings and more** \(...\) button  
+*   The window control buttons minimize, maximize, restore, and close  
     
-There can be scenarios where the browser will show other content in  the controls overlay.  
+The following scenarios include when browser displays other content in the controls overlay.  
 
-*   When an installed web app is launched, the origin of the webpage will display to the left of the three-dot menu for a few seconds, then disappear  
-*   If a user interacts with an extension via the **Settings and more** menu, the icon of the extension will appear in the overlay to the left of the three-dot menu.  After you exit any extension dialog, the icon is removed from the overlay.  
+*   When an installed web app is launched, the origin of the webpage displays to the left of the **Settings and more** \(...\) menu for a few seconds and then disappears.  
+*   If a user interacts with an extension using the **Settings and more** \(...\) menu, the icon of the extension displays in the overlay to the left of the three-dot menu.  After you exit any extension dialog, the icon is removed from the overlay.  
     
-For right to left based languages, the overlay is displayed in the upper right corner of the client area. For left to right based languages, the controls is flipped and is displayed on the upper left of the client area.
+| Language direction | Overlay location | Details |  
+|:--- |:--- |:--- |  
+| Left-to-right \(LTR\) | Upper left of the client area | The controls are flipped |  
+| Right-to-left \(RTL\) | Upper right corner of the client area |  |  
 
 >[!IMPORTANT]
-> The overlay will always be on top of the web content's Z order and will accept all user input without flowing it through to the web content.  
+> The overlay is always on top of the Z-index of the web content and accepts all user input without flowing it through to the web content.  
 
-### Working Around the Window Controls Overlay
+### Working around the Window Controls Overlay  
 
-Your web content will need to be aware of the reserved area for the controls overlay and ensure that area isn't expecting user interaction. To accomplish this, you will need to query the browser for the bounding rectangle and visibility of the controls overlay.  This information is provided to you through JavaScript APIs and CSS environment variables.
+Your web content must be aware of the reserved area for the controls overlay.  Ensure the reserved area doesn't expect user interaction.  Query the browser for the bounding rectangle and visibility of the controls overlay.  The information is provided to you through JavaScript APIs and CSS environment variables.  
 
-**JavaScript APIs**
+#### JavaScript APIs  
 
-A new object on the `window.navigator` property called `windowControlsOverlay` has been introduced to query the bounding rectangle of the controls overlay.
+A new `windowControlsOverlay` object on the `window.navigator` property allows you to query the bounding rectangle of the controls overlay.  
 
-`windowControlsOverlay` has two objects:  
+The `windowControlsOverlay` object has the following two objects.  
 
-*   `getBoundingClientRect()` which returns a `DOMRect` representing the area under the window controls overlay.  
-*   `visible` a boolean to determine if the controls overlay has been rendered.  
+*   `getBoundingClientRect()` returns a `DOMRect` object.  The `DOMRect` object represents the area under the window controls overlay.  
+*   `visible` is a boolean that indicates that the controls overlay is rendered and displayed.  
     
 > [!IMPORTANT]
-> For privacy reasons, the `windowControlsOverlay` will not be accessible to iframes within the web content
+> For privacy reasons, the `windowControlsOverlay` isn't accessible to `iframe` elements in the web content.  
 
-Whenever the overlay is resized, a `geometrychange` event will be fired on the `navigator.windowControlsOverlay` object to notify the client that it should recalculate the content layout based on the new bounding rectangle of the overlay. 
+Whenever the overlay is resized, a `geometrychange` event runs on the `navigator.windowControlsOverlay` object to notify the client to recalculate the content layout.  The recalculated content layout is based on the new bounding rectangle of the overlay.  
 
-**CSS Environment Variables**
+#### CSS Environment Variables  
 
-In addition to the JavaScript API above, the bounding rectangle of the controls overlay can also be queried using CSS. Four new CSS environment variables have been introduced to accomplish this:  
+Besides the JavaScript API, you may use CSS to query the bounding rectangle of the controls overlay.  Use the following four new CSS environment variables to accomplish to query.  
 
 *   `titlebar-area-x`  
 *   `titlebar-area-y`  
 *   `titlebar-area-width`  
 *   `titlebar-area-height`  
     
-### Defining Draggable Regions in Web Content
+### Define Draggable Regions in Web Content  
 
-Users expect to be able to grab and drag the upper region of a window and developers will need to accommodate that expectation by declaring certain parts of their web content as draggable. 
-This is accomplished through a webkit proprietary CSS property called `-webkit-app-region`. Effort to standardize the app-region property is ongoing with the CSS working group.  
+Users expect to grab and drag the upper region of a window.  To accommodate the expectation, declare specific parts of the web content as draggable.  
+To specify an element is draggable, use the webkit proprietary `-webkit-app-region` CSS property.  The CSS working group continues efforts to standardize the `app-region` property.  
 
-> [!IMPORTANT]
-> To preview file handling in Microsoft Edge for desktop operating systems, look for and turn on the `edge://flags`:
-> 
-> **Desktop PWA Window Controls Overlay**
-> 
-> This experimental feature is off by default.
+To preview file handling in Microsoft Edge for desktop OSs, navigate to [Turn on experimental features](#turn-on-experimental-features) and navigate to **Desktop PWA Window Controls Overlay**.  
 
-### Example
+<!--This experimental feature is off by default.  -->  
 
-Below is an example of how these new features could be used to create a web app with a custom title bar. 
+### Custom title bar example  
 
-:::image type="complex" source="../media/teams-title-customization-example.png" alt-text="Example of a custom title bar" lightbox="../media/teams-title-customization-example.png":::
-   Microsoft Teams title bar customization example  
+The following example displays how the new features create a web app with a custom title bar.  
+
+:::image type="complex" source="../media/teams-title-customization-example.png" alt-text="Example of a custom title bar in Microsoft Teams" lightbox="../media/teams-title-customization-example.png":::
+   Example of a custom title bar in Microsoft Teams  
 :::image-end:::  
 
-#### manifest.webmanifest
+#### manifest.webmanifest  
 
-In the manifest, set `"display_override": ["window-controls-overlay"]`. Set the `theme_color` to be the desired color of the title bar. Set the display mode to an appropriate fallback for when either `display_override` or `window-controls-overlay` is not supported. 
+In the manifest, set `display_override` array to  `window-controls-overlay`.  Set the `theme_color` to your choice of color for the title bar.  Set the display mode to an appropriate fallback for when either `display_override` or `window-controls-overlay` isn't supported.  
+
+The following code snippet includes the recommended manifest updates.  
 
 ```json
 {
@@ -275,11 +302,23 @@ In the manifest, set `"display_override": ["window-controls-overlay"]`. Set the 
 }
 ```  
 
-### index.html
+### index.html  
 
-There are two main regions below: the `titleBarContainer` and the `mainContent`. The `titleBar` is set to be `draggable` and the search box inside is set to be `nonDraggable`. 
+The following IDs represent the two main regions of the webpage.  
 
-Inside of the `titleBarContainer`, there is a `titleBar` element representing the visible portion of the title bar area.
+*   `titleBarContainer`  
+*   `mainContent`  
+    
+The `div` element with the `titleBar` ID is set to `draggable` and the search box `input` child element is set to `nonDraggable`.  
+
+```html
+<div id="titleBar" class=" draggable">
+    <span class="draggable">Example PWA</span>
+    <input class="nonDraggable" type="text" placeholder="Search"></input>
+</div>
+```
+
+In the `div` element with the `titleBarContainer` ID, the `div` with the `titleBar` ID represents the visible portion of the title bar area.  
 
 ```html
 <!DOCTYPE html>
@@ -303,19 +342,91 @@ Inside of the `titleBarContainer`, there is a `titleBar` element representing th
 </html>
 ```  
 
-### style.css
+### style.css  
 
-The draggable regions are set using `-webkit-app-region: drag` and `-webkit-app-region: no-drag`. 
+The draggable and non-draggable regions are set using `-webkit-app-region: drag` and `-webkit-app-region: no-drag`.  
 
-On the `body`, margins are set to 0 to ensure the title bar reaches to the edges of the window.
+```css
+.draggable {
+    app-region: drag;
+    /* Pre-fix app-region during standardization process */
+    -webkit-app-region: drag;
+}
 
-The `titleBarContainer` uses `position: absolute` and sets the `top` to `titlebar-area-inset-top`, fixing the container to the top of the webpage. The `bottom` is set to `titlebar-area-inset-bottom` or to fall back to `100% - var(--fallback-title-bar-height)` if the window controls overlay is not visible. The background color of the `titleBarContainer` is the same as the `theme_color`. The width is set to `100%` so that the div fills the width of the webpage, and flows under the overlay when it is visible for a seamless appearance.
+.nonDraggable {
+    app-region: no-drag;
+    /* Pre-fix app-region during standardization process */
+    -webkit-app-region: no-drag;
+}
+```  
 
-The `titleBar` also uses `position: absolute` and `top: titlebar-area-inset-top` to pin it to the top of the window. By default, it consumes the full width of the window. The `left` and `right` edges are set to `titlebar-area-inset-left` and `titlebar-area-inset-right` respectively, both falling back to `0` when these values aren't set. It also sets `user-select: none` to prevent any attempts at dragging the window to be consumed instead by highlighting text inside of the div.
+For the `body` element, margins are set to `0` to ensure the title bar reaches to the edges of the window.  
 
-The container for the `mainContent` of the webpage is also fixed in place with `position: absolute` and is anchored to the bottom of the webpage. The `height` is set to `titlebar-area-inset-bottom`, or to fall back to `100% - var(--fallback-titlebar-height)`, filling in the remaining space below the title bar. It sets `overflow-y: scroll` to allow its contents to scroll vertically within the container.
+```css
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+```  
 
-For cases where the browser does not support the window controls overlay, a CSS variable is added to set a fallback title bar height. The bounds of the `titleBarContainer` and `mainContent` are initially set to fill the entire client area, and do not need to be changed if the overlay is not supported.
+The `titleBarContainer` ID uses `position: absolute` and sets the `top` to `titlebar-area-inset-top`, which attaches the container to the top of the webpage.  The `bottom` is set to `titlebar-area-inset-bottom` and falls back to `100% - var(--fallback-title-bar-height)` if the window controls overlay isn't visible.  The background color of the `titleBarContainer` ID is the same as the `theme_color`.  The width is set to `100%`, so that the `div` element fills the width of the webpage and flows under the overlay when it's visible for a contiguous appearance.  
+
+```css
+#titleBarContainer {
+    position: absolute;
+    top: env(titlebar-area-y, 0);
+    bottom: env(titlebar-area-height, calc(100% - var(--fallback-title-bar-height)));
+    width: 100%;
+    background-color:#254B85;
+}
+```  
+
+The `titleBar` ID also uses `position: absolute` and `top: titlebar-area-inset-top` to attaches it to the top of the window.  By default, it consumes the full width of the window.  The `left` and `right` edges are set to `titlebar-area-inset-left` and `titlebar-area-inset-right` respectively, both fall back to `0` when the values aren't set.  It also sets `user-select: none` to prevent any attempts to drag the window consumed instead it highlights text in the `div` element.  
+
+```css
+#titleBar {
+    position: absolute;
+    top: 0;
+    display: flex;
+    user-select: none;
+    height: 100%;
+    left: env(titlebar-area-x, 0);
+    right: env(titlebar-area-width, 0);
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+}
+
+#titleBar > span {
+    margin: auto;
+    padding: 0px 16px 0px 16px;
+}
+
+#titleBar > input {
+    flex: 1;
+    margin: 8px;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+}
+```
+
+The container for the `mainContent` ID is also fixed in place with `position: absolute` and is attached to the bottom of the webpage.  The `height` is set to `titlebar-area-inset-bottom` and falls back to `100% - var(--fallback-titlebar-height)` to fill the remaining space below the title bar.  It sets `overflow-y: scroll` to allow the contents to scroll vertically in the container.  
+
+```css
+#mainContent {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: env(titlebar-area-height, calc(100% - var(--fallback-title-bar-height)));
+    overflow-y: scroll;
+}
+```
+
+For cases where the browser doesn't support the window controls overlay, a CSS variable is added to set a default height for the title bar.  The bounds of the `titleBarContainer` and `mainContent` IDs are initially set to fill the entire client area, and you don't need to change it if the overlay isn't supported.  
+
+The following code snippet includes all of the recommended css updates.
 
 ```css
 :root {
@@ -385,36 +496,46 @@ body {
 
 ## Run On OS Login  
 
-Microsoft Windows offers the ability to configure an app to launch automatically when the user logs into their OS session. Certain class of apps, including email, chat, monitoring dashboards and real-time data display apps can take advantage of this capability. It allows users to engage with those apps as soon as they log into the OS. This feature will auto-start the PWA in the same way as if it were launched manually.
+This feature allows you to configure your app to automatically launch when the user logs into Microsoft Windows.  Several classes of apps take advantage of the capability.  The classes of apps include email, chat, monitoring dashboard, and real-time data display apps.  The capability allows a user to engage with the apps as soon as the user logs into the OS.  This feature automatically starts the PWA the same way it's launched manually.  
 
 > [!IMPORTANT]
-> Run on OS Login is a [powerful feature](https://w3c.github.io/permissions/#powerful-feature). Users should decide whether to turn on the capability for the installed web app. 
+> **Run on OS Login** is a [powerful feature][GithubW3cPermissionsPowerfulFeature].  Users should decide whether to turn on the capability for the installed web app.  
 
-### Enabling Run On OS Login
+### Turn on Run On OS Login  
 
-To turn on Run On OS Login capabilities for your PWA, you should turn on the `Desktop PWAs run on OS login` flag and restart the browser.
+To turn on **Run On OS Login** capabilities for your PWA, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWAs run on OS Login**.  
 
-:::image type="complex" source="../media/desktop-pwas-run-on-os-login-flag.png" alt-text="Desktop PWAs run on OS Login flag" lightbox="../media/desktop-pwas-run-on-os-login-flag.png":::
-   `Desktop PWAs run on OS Login` flag  
+:::image type="complex" source="../media/desktop-pwas-run-on-os-login-flag.png" alt-text="Turn on the Desktop PWAs run on OS Login experiment" lightbox="../media/desktop-pwas-run-on-os-login-flag.png":::
+   Turn on the **Desktop PWAs run on OS Login** experiment  
 :::image-end:::  
 
-### Enabling or disabling the Capability
+### Turn the feature for the installed web app  
 
-To toggle the `Run on OS Login` feature for an installed PWA, you can browse to the `edge://apps` webpage and hover on the desired installed app, open the contextual menu \(right-click\) and choose to grant it permission to run once the user logs in.
+To turn on the `Run on OS Login` feature for an installed PWA, 
 
-:::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="Turn on Run on OS Login for a PWA in Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
-   Turn on Run on OS Login for a PWA in Microsoft Edge  
-:::image-end:::  
+1.  Open Microsoft Edge.   
+1.  Navigate to `edge://apps`.  
+1.  Hover on your app.  
+1.  Open the contextual menu \(right-click\) and then choose **Start app when you sign in**.  
+    
+    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="Use the contextual menu to turn on Run on OS Login for a PWA in Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
+       Use the contextual menu to turn on the **Run on OS Login** for a PWA in Microsoft Edge  
+    :::image-end:::  
+    
+## Shortcuts  
 
-## Shortcuts
+`Shortcuts` is a new member of the manifest file.  It allows you to define links to parts, key webpages, or actions in your web app.  Microsoft Windows integrates it as **Jumplists**.  **Jumplists** define popup menus that appear when you on one of the following UI elements and open a contextual menu \(right-click\).  
 
-`Shortcuts` is a new member of the manifest file. It allows you to define links to parts, key webpages, or actions within your web app. They are integrated on Microsoft Windows as 'Jumplists', which are popup menus that appear when your right-click a tile on the Start Menu or an icon on the Taskbar. When a user invokes a shortcut, they navigate to the address that is specified by that shortcut's ``url`` member. 
+*   A tile on the Start Menu  
+*   An icon on the Taskbar  
+    
+When a user invokes a shortcut, the user navigates to the address specified by the `url` member of the shortcut.  
   
-:::image type="complex" source="../media/jumplists-on-windows-10.png" alt-text="Jumplists on Windows 10" lightbox="../media/jumplists-on-windows-10.png":::
-   Jumplists on Windows 10  
+:::image type="complex" source="../media/jumplists-on-windows-10.png" alt-text="An example of Jumplists on Windows 10" lightbox="../media/jumplists-on-windows-10.png":::
+   An example of **Jumplists** on Windows 10  
 :::image-end:::  
 
-### Shortcuts in the Manifest file
+### Shortcuts in the Manifest file  
 
 ```json
 "shortcuts" : [
@@ -434,38 +555,50 @@ To toggle the `Run on OS Login` feature for an installed PWA, you can browse to 
 ]
 ```  
 
-#### Item Values:
+#### Properties of shortcuts  
 
-*   **name**:  A string that is displayed to the user on the jumplist or context menu.
-*   **short_name**: A string that can be displayed where there is insufficient space to display the full name of the shortcut.
-*   **description**: A string that describes the purpose of the shortcut. It might be used for assistive technology.
-*   **url**: The URL within the web app that opens when the shortcut is activated.
-*   **icons**: A set of icons that represent the shortcut.
+The following properties define each shortcut.  
 
-## File Handling
+| Property | Details |  
+|:--- |:--- |  
+| `name` | A string that is displayed to the user on the **jumplist** or context menu. |  
+| `short_name` | A string that is displayed when insufficient space exists to display the full name of the shortcut. |  
+| `description` | A string that describes the purpose of the shortcut.  It may be accessed by assistive technology. |  
+| `url` | The URI in the web app that opens when the shortcut is activated. |  
+| `icons` | A set of icons that represents the shortcut. |  
 
-The ability to register as a file type handler has been in experimentation phase for some time. By providing a manifest entry for the file types your app can handle, once installed, your app is registered with the host operating system as a file handler for those file types. You then check for the existence of the feature `launchQueue` within your apps startup code and handle the file.
+## File Handling  
 
-Chromium based browsers are broadly testing and shaping this feature. You can find more information including code examples over at [web.dev](https://web.dev/file-handling/).
+The ability to register as a file type handler is in the experimentation phase.  You may specify the file types that your app handles in a manifest entry.  During installation, the user's host OS registers your app as a file handler for the listed file types.  Ensure the existence of the feature `launchQueue` in your apps startup code and that it handles the file.  
 
-> [!IMPORTANT]
-> To preview file handling in Microsoft Edge for desktop operating systems, look for and turn on the `edge://flags`:
-> 
-> **File Handling API**
-> 
-> This experimental feature is off by default.
-  
+Chromium-based browsers are testing and shaping this feature.  For more information including code examples, navigate to [Let web applications be file handlers][WebDevFileHandling].  
+
+To preview file handling in Microsoft Edge for desktop OSs, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **File Handling API**.  
+
+<!--This experimental feature is off by default.  -->  
     
 ## Providing feedback on experimental features  
 
-To provide feedback on Microsoft Edge web app experiments:  
+To provide feedback on Microsoft Edge web app experiments.  
 
-*   Send your feedback using the **Send feedback to Microsoft** menu item found in the `...` menu or select `Alt`+`Shift`+`I` from within your app
+*   Send your feedback using **Settings and More** \(`...`\) > **Send Feedback to Microsoft**.  
+*   Select `Alt`+`Shift`+`I`.  
     
-:::image type="complex" source="../media/send-feedback-from-progressive-web-app.png" alt-text="Send Feedback from PWA" lightbox="../media/send-feedback-from-progressive-web-app.png":::
-   Send Feedback from PWA  
+:::image type="complex" source="../media/send-feedback-from-progressive-web-app.png" alt-text="Send Feedback from your PWA" lightbox="../media/send-feedback-from-progressive-web-app.png":::
+   Send Feedback from your PWA  
 :::image-end:::  
 
 <!-- links -->  
 
 [MicrosoftEdgeMain]: https://www.microsoft.com/edge "Microsoft Edge"  
+
+[MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Origin Trials | Microsoft Edge Developer"  
+[MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration "Register for Web App Protocol Handler Registration | Microsoft Developer"  
+
+[MdnDocsWebApiNavigatorRegisterprotocolhandlerWebBasedProtocolHandlers]: https://developer.mozilla.org/docs/Web/API/Navigator/registerProtocolHandler/Web-based_protocol_handlers "Web-based protocol handlers | MDN"  
+
+[GithubW3cPermissionsPowerfulFeature]: https://w3c.github.io/permissions#powerful-feature "Powerful feature - Permissions | GitHub"  
+
+[GithubWicgPwaUrlHandlerBlobMainExplainerMd]: https://github.com/WICG/pwa-url-handler/blob/main/explainer.md "PWAs as URL Handlers | GitHub"  
+
+[WebDevFileHandling]: https://web.dev/file-handling "Let web applications be file handlers | web.dev"  
