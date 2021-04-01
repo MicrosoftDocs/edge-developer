@@ -104,13 +104,13 @@ Optionally, set up a local Workspace to save changes directly to source files.
 
 \>> (**More tabs**) - This "double chevron" button displays the additional tabs of the Explorer pane when the display is narrow.
 
-The following subsections are related to the Explorer pane, including the Command Menu and five tabs:
+The following subsections are related to the Explorer pane:
 *   [Explorer commands on the Command Menu](#explorer-commands-on-the-command-menu)
-*   [The Page tab, to explore resources that construct the current webpage](#page-tab-to-explore-resources-that-construct-the-current-webpage)
-*   [The Filesystem tab, for a local Workspace](#filesystem-tab-for-a-local-workspace)
-*   [The Overrides tab, to override server files by local files](#overrides-tab-to-override-server-files-by-local-files)
-*   [The Content scripts tab, for Edge extensions](#content-scripts-tab-for-edge-extensions)
-*   [The Snippets tab, to run JavaScript code snippets on any page](#snippets-tab-to-run-javascript-code-snippets-on-any-page)
+*   [The Page tab, to explore resources that construct the current webpage](#the-page-tab-to-explore-resources-that-construct-the-current-webpage)
+*   [The Filesystem tab, for a local Workspace](#the-filesystem-tab-for-a-local-workspace)
+*   [The Overrides tab, to override server files by local files](#the-overrides-tab-to-override-server-files-by-local-files)
+*   [The Content scripts tab, for Edge extensions](#the-content-scripts-tab-for-edge-extensions)
+*   [The Snippets tab, to run JavaScript code snippets on any page](#the-snippets-tab-to-run-javascript-code-snippets-on-any-page)
 
 ### Explorer commands on the Command Menu
 
@@ -300,7 +300,7 @@ By default, your edits are discarded when you refresh the page.  To learn how to
 
 ### Source mapping
 
-If you right-click a JavaScript file in the **Editor** pane, and then select **Add source map...**, a popup box appears, with a **Source map URL:** field and an **Add** button.  For more information, navigate to [Mapping minified code to your source code, to work with readable source code](#mapping-minified-code-to-your-source-code,-to-work-with-readable-source-code), above.
+If you right-click a JavaScript file in the **Editor** pane, and then select **Add source map...**, a popup box appears, with a **Source map URL:** field and an **Add** button.  For more information, navigate to [Mapping minified code to your source code, to work with readable source code](#mapping-minified-code-to-your-source-code-to-work-with-readable-source-code), above.
 
 ### Editor commands on the Command Menu
 
@@ -367,7 +367,7 @@ The JavaScript Debugger in DevTools, in the **Debugger** pane, is designed to lo
 
 The following subsections cover the **Debugger** pane or breakpoints:
 *   [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger)
-*   [Advantages of the debugger's Watch and Scope over console(log)](#advantages-of-the-debuggers-watch-and-scope-over-console-log)
+*   [Advantages of the debugger's Watch and Scope over console(log)](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
 *   [Articles about debugging](#articles-about-debugging)
 
 ### The basic approach to using a debugger
