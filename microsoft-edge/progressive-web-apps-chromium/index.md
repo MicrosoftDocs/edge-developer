@@ -15,7 +15,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 
 :::row:::
     :::column:::
-        :::image type="complex" source="./media/i_search.png" alt-text="Discoverable" lightbox="./media/i_search.png":::
+        :::image type="complex" source="./media/i_search.png" alt-text="Discoverable" lightbox="./media/i_search.png" border="false":::
            **Discoverable**  
         :::image-end:::  
 
@@ -24,7 +24,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
         From web search results and supporting app stores
     :::column-end:::
     :::column:::
-        :::image type="complex" source="./media/i_package.png" alt-text="Installable" lightbox="./media/i_package.png":::
+        :::image type="complex" source="./media/i_package.png" alt-text="Installable" lightbox="./media/i_package.png" border="false":::
            **Installable**  
         :::image-end:::  
 
@@ -33,7 +33,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
         Pin and launch from the home screen, Start Menu, Taskbar, and so on
     :::column-end:::
     :::column:::
-        :::image type="complex" source="./media/i_push-notification.png" alt-text="Re-engageable" lightbox="./media/i_push-notification.png":::
+        :::image type="complex" source="./media/i_push-notification.png" alt-text="Re-engageable" lightbox="./media/i_push-notification.png" border="false":::
            **Re-engageable**  
         :::image-end:::  
         
@@ -44,7 +44,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 :::row-end:::  
 :::row:::
     :::column:::
-        :::image type="complex" source="./media/i_offline.png" alt-text="Network Independent" lightbox="./media/i_offline.png":::
+        :::image type="complex" source="./media/i_offline.png" alt-text="Network Independent" lightbox="./media/i_offline.png" border="false":::
            **Network Independent**  
         :::image-end:::  
         
@@ -53,7 +53,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
         Works offline and in low-network conditions
     :::column-end:::
     :::column:::
-        :::image type="complex" source="./media/i_progressive.png" alt-text="Progressive" lightbox="./media/i_progressive.png":::
+        :::image type="complex" source="./media/i_progressive.png" alt-text="Progressive" lightbox="./media/i_progressive.png" border="false":::
            **Progressive**  
         :::image-end:::  
         
@@ -62,7 +62,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
         Experience scales up (or down) with device capabilities
     :::column-end:::
     :::column:::
-        :::image type="complex" source="./media/i_security.png" alt-text="Safe" lightbox="./media/i_security.png":::
+        :::image type="complex" source="./media/i_security.png" alt-text="Safe" lightbox="./media/i_security.png" border="false":::
            **Safe**  
         :::image-end:::  
         
@@ -73,7 +73,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 :::row-end:::  
 :::row:::
     :::column:::
-        :::image type="complex" source="./media/i_responsive.png" alt-text="Responsive" lightbox="./media/i_responsive.png":::
+        :::image type="complex" source="./media/i_responsive.png" alt-text="Responsive" lightbox="./media/i_responsive.png" border="false":::
            **Responsive**  
         :::image-end:::  
         
@@ -82,7 +82,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
         Adapts to the user's screen size or orientation and input method
     :::column-end:::
     :::column:::
-        :::image type="complex" source="./media/i_link.png" alt-text="Linkable" lightbox="./media/i_link.png":::
+        :::image type="complex" source="./media/i_link.png" alt-text="Linkable" lightbox="./media/i_link.png" border="false":::
            **Linkable**  
         :::image-end:::  
         
