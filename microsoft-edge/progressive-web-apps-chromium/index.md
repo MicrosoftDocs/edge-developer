@@ -15,46 +15,46 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 
 :::row:::
     :::column:::
-        :::image type="icon" source="./media/i_search.png":::
+        :::image type="icon" source="./media/i_search-small.png":::
         ### [Discoverable][MDNPwaAdvantagesDiscoverable]
         From web search results and supporting app stores
     :::column-end:::
     :::column:::
-        :::image type="icon" source="./media/i_package.png":::
+        :::image type="icon" source="./media/i_package-small.png":::
         ### [Installable][MDNPwaAdvantagesInstallable]
         Pin and launch from the home screen, Start Menu, Taskbar, and so on
     :::column-end:::
     :::column:::
-        :::image type="icon" source="./media/i_push-notification.png":::
+        :::image type="icon" source="./media/i_push-notification-small.png":::
         ### [Re-engageable][MDNPwaAdvantagesReEngageable]
         Send push notifications, even when the app is not active
     :::column-end:::
 :::row-end:::  
 :::row:::
     :::column:::
-        :::image type="icon" source="./media/i_offline.png":::
+        :::image type="icon" source="./media/i_offline-small.png":::
         ### [Network Independent][MDNPwaAdvantagesNetworkIndependent]
         Works offline and in low-network conditions
     :::column-end:::
     :::column:::
-        :::image type="icon" source="./media/i_progressive.png":::
+        :::image type="icon" source="./media/i_progressive-small.png":::
         ### [Progressive][MDNPwaAdvantagesProgressive]
         Experience scales up (or down) with device capabilities
     :::column-end:::
     :::column:::
-        :::image type="icon" source="./media/i_security.png":::
+        :::image type="icon" source="./media/i_security-small.png":::
         ### [Safe][MDNPwaAdvantagesSafe]
         Provides a secure HTTPS endpoint and other user safeguards
     :::column-end:::
 :::row-end:::  
 :::row:::
     :::column:::
-        :::image type="icon" source="./media/i_responsive.png":::
+        :::image type="icon" source="./media/i_responsive-small.png":::
         ### [Responsive][MDNPwaAdvantagesResponsive]
         Adapts to the user's screen size or orientation and input method
     :::column-end:::
     :::column:::
-        :::image type="icon" source="./media/i_link.png":::
+        :::image type="icon" source="./media/i_link-small.png":::
         ### [Linkable][MDNPwaAdvantagesLinkable]
         Share and launch from a standard hyperlink
     :::column-end:::
@@ -93,9 +93,6 @@ Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) i
 *   Access to other browser features using the **Setting and more** \(`...`\) menu including certificate validation, site permissions, tracking protection, and browser extensions  
 *   Full access to [Microsoft Edge DevTools][DevtoolsProgressiveWebApps] for debugging your app  
     
-> [!IMPORTANT]
-> To tailor PWAs specifically for Windows 10 that make WinRT API requests using JavaScript, navigate to [documentation specific to the EdgeHTML PWA features][PwaEdgehtmlIndex].  Learn more about testing your PWA on Windows 10 and distributing it in the Microsoft Store.  
-
 > [!NOTE]
 > For more information about PWA benefits, upcoming features, and short demos, navigate to [Build 2020 PWA session][BuildVideo]. 
 
@@ -180,7 +177,7 @@ To be a great PWA, your app must also meet the following requirements.
 :::row-end:::  
 
 > [!NOTE]
-> To turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] application, navigate to [Progressive Web Apps (EdgeHTML) in the Microsoft Store][PwaEdgehtmlMicrosoftStore].  
+> To turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] application, navigate to [Publish your Progressive Web App to the Microsoft Store][PwaChromiumMicrosoftStore].  
   
 ## See also  
 
@@ -200,11 +197,7 @@ To be a great PWA, your app must also meet the following requirements.
 [DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Get Started with Remote Debugging Windows 10 Devices | Microsoft Docs"  
 [DevToolsGuideDeviceModeTestingOtherBrowsers]: ../devtools-guide-chromium/device-mode/testing-other-browsers.md "Emulate and test other browsers | Microsoft Docs"  
 [DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps/index.md "Debug Progressive Web Apps | Microsoft Docs"  
-<!--[DevGuideWhatsNewEdgeHtml17]: ../dev-guide/whats-new/edgehtml-17.md "What's new in EdgeHTML 17 | Microsoft Docs"  -->  
-<!--[DevGuideWhatsNewEdgeHtml14]: ../dev-guide/whats-new/edgehtml-14.md "What's New in EdgeHTML 14 | Microsoft Docs"  -->  
-[PwaEdgehtmlIndex]: ../edgehtml/progressive-web-apps/index.md "Progressive Web Apps (EdgeHTML) on Windows | Microsoft Docs"  
-[PwaEdgehtmlMicrosoftStore]: ../edgehtml/progressive-web-apps/microsoft-store.md "Progressive Web Apps in the Microsoft Store | Microsoft Docs"
-<!--PwaEdgehtmlMicrosoftStoreCriteriaAutomaticSubmission]: ../progressive-web-apps/microsoft-store.md#criteria-for-automatic-submission "Criteria for automatic submission - Progressive Web Apps in the Microsoft Store"  -->  
+[PwaChromiumMicrosoftStore]: ./microsoft-store.md "Publish your Progressive Web App to the Microsoft Store | Microsoft Docs"
 
 [WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Windows Push Notification Services (WNS) overview | Microsoft Docs"  
 [WindowsUWPDesignDevicesDesigningTv]: /windows/uwp/design/devices/designing-for-tv.md "Designing for Xbox and TV | Microsoft Docs"  
