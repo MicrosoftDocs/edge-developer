@@ -1,5 +1,5 @@
 ---
-description: Use the Sources tool in Microsoft Edge DevTools to view the JavaScript files that are returned from the server, experimentally edit the JavaScript files, and use the JavaScript debugger on them.  Also supports Workspaces, to edit local JavaScript files.
+description: Use the Sources tool to view, modify, and debug JavaScript that's returned by the server, and to inspect the resources that make up the current webpage.  To use the Sources tool as a development environment, add source files to a Workspace.
 title: Sources tool overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -24,15 +24,15 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Sources tool overview  
 
-Use the **Sources** tool to view, modify, and debug JavaScript that's returned by the server.  The Sources tool has three panes:
+Use the **Sources** tool to view, modify, and debug JavaScript that's returned by the server, and to inspect the resources that make up the current webpage.  To use the **Sources** tool as a development environment, add source files to a Workspace.  The Sources tool has three panes:
 
 | Pane | Actions |
 |---|---|
 | **Explorer** pane | Navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.  Optionally, set up a local Workspace to save changes directly to source files. |
 | **Editor** pane | View JavaScript, HTML, CSS, and other files that are returned from the server.  Make experimental edits to the JavaScript or CSS code.  These changes are preserved (in the DevTools sandbox) until page refresh, or are saved to a local Workspace.  When using a Workspace or Overrides, you can edit HTML files as well. |
-| **Debugger** pane | Use the JavaScript Debugger to step through the JavaScript code, and to step through experimental changes to the code, while watching any JavaScript expressions you specify.  Watch and manually change variable values, and automatically show which variables are currently in-scope for the current line of code. |
+| **Debugger** pane | Use the JavaScript Debugger to step through the JavaScript code, including experimental edits, while watching any JavaScript expressions you specify.  Watch and manually change variable values, and automatically show which variables are currently in-scope for the current line of code. |
 
-The following image shows the **Explorer** pane highlighted with a red box on the left, the **Editor** pane highlighted in the middle, and the **Debugger** pane highlighted on the right.  On the left is the main part of the browser window, showing the rendered webpage grayed-out because the debugger is paused on a breakpoint; the rest of the browser window is filled by the DevTools, docked to the right side of the window:
+The following image shows the **Explorer** pane highlighted with a red box on the left, the **Editor** pane highlighted in the middle, and the **Debugger** pane highlighted on the right.  On the far left side is the main part of the browser window, showing the rendered webpage grayed-out because the debugger is paused on a breakpoint.
 
 :::image type="complex" source="../media/debugging-highlights.msft.png" alt-text="Navigate, view, edit, and debug JavaScript returned by the server" lightbox="../media/debugging-highlights.msft.png":::
    Navigate, view, edit, and debug JavaScript returned by the server  
@@ -84,7 +84,7 @@ To widen the DevTools window:
 
 To maximize the DevTools window:
 
-1. In the upper right corner of the DevTools window, select the elipses (...) button (for **Customize and control DevTools**).
+1. In the upper right corner of the DevTools window, select the ellipses (...) button (for **Customize and control DevTools**).
 1. In the **Dock side** section, select **Undock into separate window**.
 1. Optionally, move the DevTools window to a separate monitor.
 
@@ -94,7 +94,7 @@ To maximize the DevTools window:
 
 ## The Explorer pane, to navigate files
 
-Use the **Explorer** pane, on the left, to navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.  
+Use the **Explorer** pane (on the left) to navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.  
 
 :::image type="complex" source="../media/explorer-pane.msft.png" alt-text="The Explorer pane" lightbox="../media/explorer-pane.msft.png":::
    The **Explorer** pane
@@ -102,14 +102,14 @@ Use the **Explorer** pane, on the left, to navigate among the resources that are
 
 Optionally, set up a local Workspace to save changes directly to source files.
 
-\>> (**More tabs**) - This "double chevron" button displays the additional tabs of the Explorer pane when the display is narrow.
+\>> (**More tabs**) - This "double chevron" button displays the remaining tabs of the Explorer pane when the display is narrow.
 
 The following subsections are related to the Explorer pane:
 *   [Explorer commands on the Command Menu](#explorer-commands-on-the-command-menu)
 *   [The Page tab, to explore resources that construct the current webpage](#the-page-tab-to-explore-resources-that-construct-the-current-webpage)
 *   [The Filesystem tab, for a local Workspace](#the-filesystem-tab-for-a-local-workspace)
 *   [The Overrides tab, to override server files by local files](#the-overrides-tab-to-override-server-files-by-local-files)
-*   [The Content scripts tab, for Edge extensions](#the-content-scripts-tab-for-edge-extensions)
+*   [The Content scripts tab, for Microsoft Edge extensions](#the-content-scripts-tab-for-edge-extensions)
 *   [The Snippets tab, to run JavaScript code snippets on any page](#the-snippets-tab-to-run-javascript-code-snippets-on-any-page)
 
 ### Explorer commands on the Command Menu
@@ -228,7 +228,7 @@ A file that overrides a file that is returned by the server is indicated by a pu
 
 *   [Map preprocessed code to source code][DevToolsJavaScriptSourceMaps]
 
-### The Content scripts tab, for Edge extensions
+### The Content scripts tab, for Microsoft Edge extensions
 
 Use the **Content scripts** tab of the **Explorer** pane to view any [content scripts][MDNContentScripts] that were loaded by a Microsoft Edge extension that you installed. 
 
@@ -256,7 +256,7 @@ script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
 document.head.appendChild(script);
 ```  
 
-Instead, you may save this code in a **Snippet** and run it with a couple of button clicks, any time you need it.  When you select **Ctrl+S** or **Command+S**, DevTools saves the **Snippet** to your file system.  
+You may save this code in a **Snippet** and easily run it whenever you need to.  When you select **Ctrl+S** or **Command+S**, DevTools saves the **Snippet** to your file system.  
 
 There are multiple ways to run a Snippet:
 
@@ -303,7 +303,7 @@ To use pretty-print to reformat a file to make it readable, click the **Pretty p
 
 ### Apply or save changes
 
-For JavaScript changes to take effect, select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\).  DevTools does not re-run a script, so the only JavaScript changes that take effect are those that you make inside of functions.  
+For JavaScript changes to take effect, select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\).  DevTools does not rerun a script, so the only JavaScript changes that take effect are changes that you make inside of functions.  
 
 For example, in the following figure, notice how `console.log('A')` does not run, whereas `console.log('B')` does.  If DevTools re-runs the entire script after making the change, <!-- why/when would DevTools re-run the entire script?  above says "DevTools does not re-run a script" --> then the text `A` is logged to the **Console**.  
 
@@ -317,7 +317,7 @@ If you right-click a JavaScript file in the **Editor** pane, and then select **A
 
 To go to a line number or symbol in the file: 
 
-In the **Explorer** pane, click the ellipses (...) (**More options**), select **Open File** (**Ctrl+P**), then type any of the following characters:
+In the **Explorer** pane, select the ellipses (...) (**More options**), select **Open File** (**Ctrl+P**), then type any of the following characters:
 
 *   `?` to view options.
 *   \: to **Go to line**.
@@ -327,7 +327,7 @@ For more information, navigate to [Run commands with the Microsoft Edge DevTools
 
 ### Edit an HTML file
 
-The main, default scenario for using the Sources tool is to debug and edit a copy of a client-side (front-end) JavaScript file that's returned by your web server.  The Sources tool's text editor can also edit HTML files.
+The Sources tool includes a general-purpose text editor that can edit HTML files.
 
 :::image type="complex" source="../media/sources-html-editor.msft.png" alt-text="The HTML editor of the Sources tool" lightbox="../media/sources-html-editor.msft.png":::
    The HTML editor of the Sources tool
@@ -405,14 +405,14 @@ The following subsections cover the **Debugger** pane or breakpoints:
 
 ### The basic approach to using a debugger
 
-To troubleshoot where your JavaScript is going wrong, you can use the simple approach of inserting `console.log()` statements in the **Editor** pane.  Another approach, that's more powerful (yet can also be simple), is to use the debugger of Microsoft Edge DevTools.
+To troubleshoot where your JavaScript is going wrong, you can insert `console.log()` statements in the **Editor** pane.  Another approach, that's more powerful (yet can also be simple), is to use the debugger of Microsoft Edge DevTools.
 
 The basic approach to using a debugger is to set a breakpoint (an intentional stopping place in the code), run the code at full speed up to the line of code on which the breakpoint is set, and then step through the lines of code, starting at that breakpoint.  
 
 For example, the tutorial [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] uses an existing, simple webpage 
 [Demo: Get Started Debugging JavaScript with Microsoft Edge (Chromium) DevTools][DevtoolsGlitchMeDebugJsGetStarted], that contains a few form controls.  
 
-As shown in the tutorial, to get into the "Paused" mode of the debugger, do something like the following:
+As shown in the tutorial, to get into the "Paused" mode of the debugger, do something like the following steps:
 
 1. Open the above Demo webpage in a new tab of the browser.
 
@@ -422,7 +422,7 @@ As shown in the tutorial, to get into the "Paused" mode of the debugger, do some
 
 1. In the **Explorer** pane on the left, select the **Page** tab, then select the JavaScript file (`get-started.js`, in this case).
 
-1. In the **Editor** pane, click a line number near a suspect line of code, such as `var sum = addend1 + addend2;`, to set a breakpoint on that line.
+1. In the **Editor** pane, select a line number near a suspect line of code, such as `var sum = addend1 + addend2;`, to set a breakpoint on that line.
 
 1. In the webpage, enter numbers, such as 5 and 1, then select the button **Add Number 1 and Number 2**.  
 
@@ -448,7 +448,7 @@ These three approaches are equivalent:
 
 When the variable `sum` is in-scope, `sum` and its value are automatically shown in the **Scope** section of the Debugger pane, and are also overlaid in the Editor pane where `sum` is calculated.  Therefore you probably wouldn't need to define a Watch expression for `sum`, or a `console.log` statement to show the value of `sum`.
 
-The debugger gives a richer, more flexible display and environment than a `console.log` statement.  In the Debugger, as you step through the code, you may display and change the values of all currently-defined properties and variables, issue JavaScript statements in the **Console**, and more.  (To display the Console, select **Esc**.)
+The debugger gives a richer, more flexible display and environment than a `console.log` statement.  For example, in the Debugger, as you step through the code, you may display and change the values of all currently defined properties and variables, and issue JavaScript statements in the **Console**.  (To display the Console, select **Esc**.)
 
 Breakpoints and Watch expressions are preserved when you refresh the page.
 
@@ -470,7 +470,11 @@ The following subsections cover extensions for Visual Studio Code that provide a
 
 ### The Debugger for Microsoft Edge extension for Visual Studio Code
 
-With the Debugger for Microsoft Edge extension for Visual Studio Code, debug your front-end JavaScript code line by line and see `console.log` statements directly from Visual Studio Code.
+With the **Debugger for Microsoft Edge** extension for Visual Studio Code, debug your front-end JavaScript code line by line and see `console.log` statements directly from Visual Studio Code.
+
+:::image type="complex" source="../media/debugger-for-microsoft-edge-extension.msft.png" alt-text="The Debugger for Microsoft Edge extension for Visual Studio Code" lightbox="../media/debugger-for-microsoft-edge-extension.msft.png":::
+   The **Debugger for Microsoft Edge** extension for Visual Studio Code  
+:::image-end:::  
 
 As an alternative to debugging by using the DevTools Sources tool, you can do the same debugging within Visual Studio code, by using this extension.
 
@@ -483,7 +487,11 @@ For more information, navigate to the [Visual Studio Code overview][DevToolsVSCo
 
 ### The Microsoft Edge Tools for VS Code extension for Visual Studio Code
 
-Use the Microsoft Edge Tools for VS Code extension for Visual Studio Code to access Microsoft Edge DevTools from within Microsoft Visual Studio Code. This extension provides access to the **Elements** and **Network** tools of Microsoft Edge DevTools.
+Use the **Microsoft Edge Tools for VS Code** extension for Visual Studio Code to access Microsoft Edge DevTools from within Microsoft Visual Studio Code. This extension provides access to the **Elements** and **Network** tools of Microsoft Edge DevTools.
+
+:::image type="complex" source="../media/microsoft-edge-tools-for-vs-code-extension.msft.png" alt-text="The Microsoft Edge Tools for VS Code extension for Visual Studio Code" lightbox="../media/microsoft-edge-tools-for-vs-code-extension.msft.png":::
+   The **Microsoft Edge Tools for VS Code** extension for Visual Studio Code  
+:::image-end:::  
 
 Launch Microsoft Edge from the Debug view of Visual Studio Code.  Use the Debug view in Visual Studio Code, and access Microsoft Edge DevTools from the Debug view in Visual Studio Code.
 
