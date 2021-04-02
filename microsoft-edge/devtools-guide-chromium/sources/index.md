@@ -230,7 +230,7 @@ A file that overrides a file that is returned by the server is indicated by a pu
 
 ### The Content scripts tab, for Edge extensions
 
-Use the **Content scripts** tab of the **Explorer** pane to view any [content scripts][MDNContentScripts] that were loaded by a Microsoft Edge Extension that you installed. 
+Use the **Content scripts** tab of the **Explorer** pane to view any [content scripts][MDNContentScripts] that were loaded by a Microsoft Edge extension that you installed. 
 
 :::image type="complex" source="../media/content-scripts-tab.msft.png" alt-text="The Content scripts tab of the Explorer pane" lightbox="../media/content-scripts-tab.msft.png":::
    The **Content scripts** tab of the **Explorer** pane
@@ -464,13 +464,13 @@ The following articles cover the Debugger pane and breakpoints:
 
 ## Extensions for Visual Studio Code, as an alternative to DevTools Sources tool
 
-The following subsections cover extensions for Visual Studio Code that provide alternatives to using the DevTools Sources tool:
-*   [The "Debugger for Microsoft Edge" extension for Visual Studio Code](#the-debugger-for-microsoft-edge-extension-for-visual-studio-code)
-*   [The "Microsoft Edge Tools for VS Code" extension for Visual Studio Code](#the-microsoft-edge-tools-for-vs-code-extension-for-visual-studio-code)
+The following subsections cover extensions for Visual Studio Code that provide alternatives to using the DevTools Sources tool directly:
+*   [The Debugger for Microsoft Edge extension for Visual Studio Code](#the-debugger-for-microsoft-edge-extension-for-visual-studio-code)
+*   [The Microsoft Edge Tools for VS Code extension for Visual Studio Code](#the-microsoft-edge-tools-for-vs-code-extension-for-visual-studio-code)
 
-### The \"Debugger for Microsoft Edge\" extension for Visual Studio Code
+### The Debugger for Microsoft Edge extension for Visual Studio Code
 
-With the "Debugger for Microsoft Edge" extension for Visual Studio Code, debug your front-end JavaScript code line by line and see `console.log()` statements directly from Visual Studio Code.
+With the Debugger for Microsoft Edge extension for Visual Studio Code, debug your front-end JavaScript code line by line and see `console.log` statements directly from Visual Studio Code.
 
 As an alternative to debugging by using the DevTools Sources tool, you can do the same debugging within Visual Studio code, by using this extension.
 
@@ -479,19 +479,15 @@ As an alternative to debugging by using the DevTools Sources tool, you can do th
 
 This extension supports Workspaces; this extension runs either against the client-side JavaScript that is returned from the server, or against the local source code for the client-side JavaScript.
 
-This is an extension for Visual Studio Code, to extend Visual Studio Code.  This is not an extension for Edge, to extend Edge.
-
 For more information, navigate to the [Visual Studio Code overview][DevToolsVSCodeIndex].
 
-### The \"Microsoft Edge Tools for VS Code\" extension for Visual Studio Code
+### The Microsoft Edge Tools for VS Code extension for Visual Studio Code
 
-Use the "Microsoft Edge Tools for VS Code" extension for Visual Studio Code to access Microsoft Edge DevTools from within Microsoft Visual Studio Code. This extension provides access to the **Elements** and **Network** tools of Microsoft Edge DevTools.
+Use the Microsoft Edge Tools for VS Code extension for Visual Studio Code to access Microsoft Edge DevTools from within Microsoft Visual Studio Code. This extension provides access to the **Elements** and **Network** tools of Microsoft Edge DevTools.
 
 Launch Microsoft Edge from the Debug view of Visual Studio Code.  Use the Debug view in Visual Studio Code, and access Microsoft Edge DevTools from the Debug view in Visual Studio Code.
 
 This extension supports Workspaces; this extension runs either against the client-side JavaScript that is returned from the server, or against the local source code for the client-side JavaScript.
-
-This is an extension for Visual Studio Code, to extend Visual Studio Code.  This is not an extension for Edge, to extend Edge.
 
 For more information, navigate to the [Visual Studio Code overview][DevToolsVSCodeIndex].
 
