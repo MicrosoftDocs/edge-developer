@@ -53,7 +53,7 @@ The Microsoft Edge \(Chromium\) DevTools include the following tools.
 
 *   An **Elements** tool to edit HTML and CSS, inspect accessibility properties, view event listeners, and set DOM mutation breakpoints.
 *   A **Console** to review and filter log messages, inspect JavaScript objects and DOM nodes, and run JavaScript in the context of the selected window or frame.
-*   A [Sources][DevToolsSourcesIndex] tool to view and edit the JavaScript code returned from the server, and use the JavaScript debugger to set breakpoints, step through code, and display the state of your webpage.  
+*   A [Sources][DevToolsSourcesIndex] tool to view and edit your code, and use the JavaScript debugger to set breakpoints, step through code, and display the state of your webpage.  
 *   A **Network** tool to monitor and inspect requests and responses from the network and browser cache.  
 *   A **Performance** tool to profile the time and system resources required by your site.  
 *   A **Memory** tool to measure your use of memory resources and compare heap snapshots at different states of code runtime.  
