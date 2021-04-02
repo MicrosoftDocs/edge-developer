@@ -163,7 +163,7 @@ Use the **Filesystem** tab of the **Explorer** pane to set up a Workspace to sav
    The **Filesystem** tab, for a Workspace
 :::image-end:::  
 
-When a Workspace (in the **Filesystem** tab) is set up, the green dots on files also appear in the **Page** tab:
+A file that's in a Workspace is indicated by a green dot on the file in the **Filesystem** tab.  A green dot is also added on the corresponding file that is returned by the server, in the **Page** tab:
 
 :::image type="complex" source="../media/sources-filesystem-tab-page-tab-dots.msft.png" alt-text="The Page tab, with green dots indicating corresponding files are in a local Workspace" lightbox="../media/sources-filesystem-tab-page-tab-dots.msft.png":::
    The Page tab, with green dots indicating corresponding files are in a local Workspace
@@ -220,6 +220,8 @@ This is a way of changing what the server sends, after the server returns assets
 
 **Overrides** is similar to Workspaces.  Use Overrides when you want to experiment with changes to a webpage, and you need to retain the changes after page refresh, but you do not care about mapping your changes to the source code of the webpage.  
 
+A file that overrides a file that is returned by the server is indicated by a purple dot.
+
 **Related articles:**
 
 *   [Override webpage resources with local copies using Microsoft Edge DevTools][DevtoolsJavascriptOverrides]
@@ -267,9 +269,11 @@ Snippets are similar to bookmarklets.
 
 *   [Run snippets of JavaScript on any webpage with Microsoft Edge DevTools][DevtoolsGuideChromiumJavascriptSnippets]
 
-## The Editor pane, to view or edit JavaScript files
+## The Editor pane, to view or edit files
 
-Use the **Editor** pane to view JavaScript, HTML, CSS, and other files that are returned from the server.  Make experimental edits to the JavaScript or CSS code returned from the server; DevTools updates the page to run the modified code.  These experimental changes are preserved (in the DevTools sandbox) until page refresh.  To view and edit local JavaScript, HTML, or CSS source files, set up a Workspace.
+Use the **Editor** pane to view JavaScript, HTML, CSS, and other files that are returned from the server.  Make experimental edits to the JavaScript or CSS code returned from the server; DevTools updates the page to run the modified code.  These experimental changes are preserved (in the DevTools sandbox) until page refresh.  
+
+To view and edit local JavaScript, HTML, or CSS source files using the Sources tool, add files to the Workspace, as described above in [The Filesystem tab, for a local Workspace](#the-filesystem-tab-for-a-local-workspace).
 
 :::image type="complex" source="../media/edit-js.msft.png" alt-text="Editing JavaScript in the Editor pane" lightbox="../media/edit-js.msft.png":::
    Editing JavaScript in the **Editor** pane  
@@ -289,6 +293,7 @@ The following subsections are related to the Editor pane:
 *   [Apply or save changes](#apply-or-save-changes)
 *   [Source mapping](#source-mapping)
 *   [Editor commands on the Command Menu](#editor-commands-on-the-command-menu)
+*   [Edit an HTML file](#edit-an-html-file)
 *   [Edit a CSS file](#edit-a-css-file)
 
 ### Reformat a minified JavaScript file with pretty-print
@@ -319,6 +324,28 @@ In the **Explorer** pane, click the ellipses (...) (**More options**), select **
 *   \@ to **Go to symbol**.
 
 For more information, navigate to [Run commands with the Microsoft Edge DevTools Command Menu](../command-menu/index.md).
+
+### Edit an HTML file
+
+The main, default scenario for using the Sources tool is to debug and edit a copy of a client-side (front-end) JavaScript file that's returned by your web server.  The Sources tool's text editor can also edit HTML files.
+
+Editing of an HTML file is enabled in the Sources tool for a local source file that's in a Workspace (on the **Filesystem** tab) or on the **Overrides** tab, as described in these subsections of the present article:
+*   [The Filesystem tab, for a local Workspace](#the-filesystem-tab-for-a-local-workspace)
+*   [The Overrides tab, to override server files by local files](#the-overrides-tab-to-override-server-files-by-local-files)
+
+:::image type="complex" source="../media/sources-html-editor.msft.png" alt-text="The HTML editor of the Sources tool" lightbox="../media/sources-html-editor.msft.png":::
+   The HTML editor of the Sources tool
+:::image-end:::  
+
+Editing of an HTML file is not enabled in the Sources tool for the copy of a client-side (front-end) HTML file that is returned by the server.
+
+If you changed a file, an asterisk appears by the filename.  To save changes, select `Ctrl`+`S` (Windows/Linux) or `Command`+`S` (macOS).  Or press `Ctrl`+`Z` (Windows/Linux) or `Command`+`Z` (macOS) to undo changes and make the asterisk disappear.
+
+There are two ways to edit HTML in DevTools:
+*   The Elements tool, in which you work with one HTML element at a time, through a user interface.
+*   The Sources tool, which has a text editor.
+
+The article [DevTools for beginners: Get started with HTML and the DOM](../beginners/html.md) shows HTML editing within a special website that enables HTML editing within the webpage.
 
 ### Edit a CSS file
 
