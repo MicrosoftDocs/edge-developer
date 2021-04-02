@@ -44,7 +44,8 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
          **Web ecosystem \& skillset**
       :::image-end:::  
 
-      **Web ecosystem \& skillset**  
+      ### Web ecosystem \& skillset  
+
       Utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem.  
    :::column-end:::
    :::column span="1":::
@@ -52,7 +53,8 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
          **Rapid innovation**  
       :::image-end:::  
 
-      **Rapid innovation**  
+      ### Rapid innovation  
+
       Web development allows for faster deployment and iteration.  
    :::column-end:::
    :::column span="1":::
@@ -60,7 +62,8 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
          **Windows 7, 8, and 10 support**  
       :::image-end:::  
 
-      **Windows 7, 8, and 10 support**  
+      ### Windows 7, 8, and 10 support  
+
       Support for a consistent user experience across Windows 7, Windows 8, and Windows 10.  
    :::column-end:::
 :::row-end:::  
@@ -70,7 +73,8 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
          **Native capabilities**  
       :::image-end:::  
 
-      **Native capabilities**  
+      ### Native capabilities  
+
       Access the full set of Native APIs.  
    :::column-end:::
    :::column span="1":::
@@ -78,7 +82,8 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
          **Code-sharing**  
       :::image-end:::  
 
-      **Code-sharing**  
+      ### Code-sharing  
+
       Add web code to your codebase allows for increased reuse across multiple platforms.  
    :::column-end:::
    :::column span="1":::
@@ -86,7 +91,8 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
          **Microsoft support**  
       :::image-end:::  
 
-      **Microsoft support**  
+      ### Microsoft support  
+
       Microsoft provides support and adds new feature requests when WebView2 releases at Generally Availability \(GA\).  
    :::column-end:::
 :::row-end:::  
@@ -96,7 +102,8 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
          **Evergreen distribution**  
       :::image-end:::  
 
-      **Evergreen distribution**  
+      ### Evergreen distribution  
+
       Rely on an up-to-date version of Chromium with regular platform updates and security patches.  
    :::column-end:::
    :::column span="1":::
@@ -104,7 +111,8 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
          **Fixed**  
       :::image-end:::  
 
-      **Fixed**  
+      ### Fixed  
+
       \(coming soon\)  Choose to package the Chromium bits in your app.  
    :::column-end:::
    :::column span="1":::
@@ -112,7 +120,8 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
          **Incremental adoption**  
       :::image-end:::  
 
-      **Incremental adoption**  
+      ### Incremental adoption  
+      
       Add web components piece by piece to your app.  
    :::column-end:::
 :::row-end:::  
