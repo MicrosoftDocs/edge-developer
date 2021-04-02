@@ -271,9 +271,9 @@ Snippets are similar to bookmarklets.
 
 ## The Editor pane, to view or edit files
 
-Use the **Editor** pane to view JavaScript, HTML, CSS, and other files that are returned from the server.  Make experimental edits to the JavaScript or CSS code returned from the server; DevTools updates the page to run the modified code.  These experimental changes are preserved (in the DevTools sandbox) until page refresh.  
+Use the **Editor** pane to view the client-side (front-end) JavaScript, HTML, CSS, and other files that are returned from the server to compose the current webpage.  Make experimental edits to the JavaScript or CSS code returned from the server; DevTools updates the page to run the modified code.  These experimental changes are preserved (in the DevTools sandbox) until page refresh.  
 
-To view and edit local JavaScript, HTML, or CSS source files using the Sources tool, add files to the Workspace, as described above in [The Filesystem tab, for a local Workspace](#the-filesystem-tab-for-a-local-workspace).
+To view and edit local JavaScript, HTML, or CSS source files using the Sources tool, so that your changes persist, add files to the Workspace, as described above in [The Filesystem tab, for a local Workspace](#the-filesystem-tab-for-a-local-workspace).
 
 :::image type="complex" source="../media/edit-js.msft.png" alt-text="Editing JavaScript in the Editor pane" lightbox="../media/edit-js.msft.png":::
    Editing JavaScript in the **Editor** pane  
@@ -329,13 +329,13 @@ For more information, navigate to [Run commands with the Microsoft Edge DevTools
 
 The main, default scenario for using the Sources tool is to debug and edit a copy of a client-side (front-end) JavaScript file that's returned by your web server.  The Sources tool's text editor can also edit HTML files.
 
-Editing of an HTML file is enabled in the Sources tool for a local source file that's in a Workspace (on the **Filesystem** tab) or on the **Overrides** tab, as described in these subsections of the present article:
-*   [The Filesystem tab, for a local Workspace](#the-filesystem-tab-for-a-local-workspace)
-*   [The Overrides tab, to override server files by local files](#the-overrides-tab-to-override-server-files-by-local-files)
-
 :::image type="complex" source="../media/sources-html-editor.msft.png" alt-text="The HTML editor of the Sources tool" lightbox="../media/sources-html-editor.msft.png":::
    The HTML editor of the Sources tool
 :::image-end:::  
+
+Editing of an HTML file is enabled in the Sources tool for a local source file that's in a Workspace (on the **Filesystem** tab) or on the **Overrides** tab, as described in these subsections of the present article:
+*   [The Filesystem tab, for a local Workspace](#the-filesystem-tab-for-a-local-workspace)
+*   [The Overrides tab, to override server files by local files](#the-overrides-tab-to-override-server-files-by-local-files)
 
 Editing of an HTML file is not enabled in the Sources tool for the copy of a client-side (front-end) HTML file that is returned by the server.
 
@@ -400,7 +400,7 @@ The JavaScript Debugger in DevTools, in the **Debugger** pane, is designed to lo
 
 The following subsections cover the **Debugger** pane or breakpoints:
 *   [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger)
-*   [Advantages of the debugger's Watch and Scope over console(log)](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
+*   [Advantages of the debugger's Watch and Scope over console.log](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
 *   [Articles about debugging](#articles-about-debugging)
 
 ### The basic approach to using a debugger
@@ -438,7 +438,7 @@ As shown in the tutorial, to get into the "Paused" mode of the debugger, do some
 
 The **Scope** pane shows variables that are in-scope, and their values.  In the above figure, we added the Watch expressions `sum` and `typeof sum`, and stepped two lines past the breakpoint.
 
-### Advantages of the debugger's Watch and Scope over console(log) 
+### Advantages of the debugger's Watch and Scope over console.log
 
 These three approaches are equivalent:
 
