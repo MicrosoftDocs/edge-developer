@@ -21,7 +21,7 @@ To turn on \(or off\) experimental features in Microsoft Edge, complete the foll
 1.  Open Microsoft Edge.   
     
     > [!NOTE]
-    > Ensure you use a Microsoft Edge version that has the Experiment listed in this article.  Navigate to [Experimental features](#experimental-features-in-progressive-web-apps-pwas).  
+    > Ensure you use a Microsoft Edge version that has the Experiment listed in this article.  Navigate to [Experimental features](#features-that-are-available-to-test).  
     
 1.  Navigate to `edge://flags`.  
 1.  Navigate to the relevant experiment.  
@@ -129,7 +129,7 @@ A uniform resource locator \(URL\) is a type of URI.  Create a more engaging exp
 
 This feature allows you to register a PWA with the browser using the web app manifest and declare that the browser handles specific links.  To register a PWA with the browser, add the optional `url_handlers` member to the manifest file.  The `url_handlers` member is an `object[]` that groups the origins of URIs that the app wishes to handle.  
 
-Link handling is validated by the browser using a `web-app-origin-association` JSON file that is located on the origin.  The origin files further fine-tune the included or excluded paths at the origin.  For detailed instructions about testing the URL handler, navigate to [PWAs as URL Handlers][GithubWicgPwaUrlHandlerBlobMainExplainerMd].  
+Link handling is validated by the browser using a `web-app-origin-association` JSON file that is located on the origin.  The origin file further fine-tunes the included or excluded paths at the origin.  For detailed instructions about testing the URL handler, navigate to [PWAs as URL Handlers][GithubWicgPwaUrlHandlerBlobMainExplainerMd].  
 
 To preview URL link handling in Microsoft Edge on Windows, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWA URL  Handling**.  
 
