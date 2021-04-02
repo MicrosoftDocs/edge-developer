@@ -321,7 +321,7 @@ In the `div` element with the `titleBarContainer` ID, the `div` with the `titleB
         <input class="nonDraggable" type="text" placeholder="Search"></input>
       </div>
     </div>
-    <div id="mainContent"> <!-- The rest of the webpage --> </div>
+    <div id="mainContent">The rest of the webpage</div>
   </body>
 </html>
 ```  
