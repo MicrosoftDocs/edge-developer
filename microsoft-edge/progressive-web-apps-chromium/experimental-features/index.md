@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge for Web Apps
 title: Experimental features | Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/01/2021
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
@@ -42,7 +42,7 @@ To turn on \(or off\) experimental features in Microsoft Edge, complete the foll
     
 ### Origin Trials  
 
-Microsoft Edge sometimes uses origin trials to test features for specific domains or websites.  You may want to use an origin trial for your website to apply a specific feature.  If you're a website owner, you may enroll in an origin trial.  An origin trial provides features that are available for a percentage of Microsoft Edge users who visit your website.
+Microsoft Edge sometimes uses origin trials to test features for specific domains or websites.  You may want to use an origin trial for your website to apply a specific feature.  If you're a website owner, you may enroll in an origin trial.  An origin trial provides features to a percentage of Microsoft Edge users who visit your website.
 
 For more information about Origin Trials, navigate to [Microsoft Edge Origin Trials Developer Console][MicrosoftDeveloperMicrosoftEdgeOriginTrials].  
     
@@ -79,6 +79,17 @@ This feature requires you to update the web app manifest to include a `protocol_
 
 *   `protocol`:  The protocol to handle the request, for example `mailto` or `web+jngl`.  
 *   `url`: The HTTPS URI in the app scope that handles the protocol.  In the future, the URI starting with the protocol handlers scheme is planned to replace the `%s` token.  
+    
+Update your manifest to support the protocol that you want to register.  After you turn on this feature, Microsoft Edge completes the following actions.  
+
+1.  Detects changes in the manifest  
+1.  Registers the app for the protocol  
+    
+If more than one app registers a protocol, the user is presented with a prompt.  The user chooses the appropriate app from the list presented by the OS or browser.  
+
+To preview protocol handling in Microsoft Edge on Windows, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop Web Apps support Protocol Handlers**.  
+
+For more information about origin trial is running for protocol handlers, navigate to [Register for Web App Protocol Handler Registration][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].  
 
 ### Example Manifest
 
@@ -111,23 +122,16 @@ In this example, a web app manifest declares that the app should be registered t
   "start_url": "/",
 }
 ```  
-
-Update your manifest to support the protocol that you want to register.  After you turn on this feature, Microsoft Edge completes the following actions.  
-
-1.  Detects changes in the manifest  
-1.  Registers the app for the protocol  
-    
-If more than one app registers a protocol, the user is presented with a disambiguation selector.  The user chooses the appropriate app from the list presented by the OS or browser.  
-
-To preview protocol handling in Microsoft Edge on Windows, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop Web Apps support Protocol Handlers**.  
-
-For more information about origin trial is running for protocol handlers, navigate to [Register for Web App Protocol Handler Registration][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].  
  
 ## URL Link Handling  
 
 A uniform resource locator \(URL\) is a type of URI.  Create a more engaging experience when Progressive Web Apps \(PWAs\) register as handlers for https URIs.  PWAs may request to launch when associated URIs are activated.  For example, if a user chooses a link to a news story from an email message.  An associated PWA to display news stories is automatically launched to handle the activation of the link.  
 
 This feature allows you to register a PWA with the browser using the web app manifest and declare that the browser handles specific links.  To register a PWA with the browser, add the optional `url_handlers` member to the manifest file.  The `url_handlers` member is an `object[]` that groups the origins of URIs that the app wishes to handle.  
+
+Link handling is validated by the browser using a `web-app-origin-association` JSON file that is located on the origin.  The origin files further fine-tune the included or excluded paths at the origin.  For detailed instructions about testing the URL handler, navigate to [PWAs as URL Handlers][GithubWicgPwaUrlHandlerBlobMainExplainerMd].  
+
+To preview URL link handling in Microsoft Edge on Windows, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWA URL  Handling**.  
 
 ### Example of the url_handlers in the manifest  
 
@@ -171,12 +175,8 @@ A wildcard prefix is used in origin strings of the `url_handlers` member to matc
 
 For example, the `url_handlers` member value is set to `*.contoso.com` matches `tenant.contoso.com` and `www.tenant.contoso.com`, but doesn't match `contoso.com`.  
 
-Link handling is validated by the browser using a JSON web-app-origin-association file that needs to be located on the origin. These origin files can further fine tune the included or excluded paths at the origin. For detailed instructions about testing the URL handler, navigate to [PWAs as URL Handlers][GithubWicgPwaUrlHandlerBlobMainExplainerMd].  
-
-To preview URL link handling in Microsoft Edge on Windows, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWA URL  Handling**.  
-
-<!-- Hold for future release 
-## Window Controls Overlay for installed desktop web apps  
+<!-- Hold for future release -->  
+<!--  ## Window Controls Overlay for installed desktop web apps  
 
 To create an immersive title bar similar to a native app for your desktop installed web app.  The **Window Controls Overlay** feature  completes the following actions.  
     
@@ -479,7 +479,7 @@ body {
   overflow-y: scroll;
 }
 ```  
--->
+-->  
 
 ## Run On OS Login  
 
@@ -490,23 +490,23 @@ This feature allows you to configure your app to automatically launch when the u
 
 ### Turn on Run On OS Login  
 
-To turn on **Run On OS Login** capabilities for your PWA, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWAs run on OS Login**.  
+To turn on **Run On OS Login** capabilities for your PWA, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWAs run on OS login**.  
 
 :::image type="complex" source="../media/desktop-pwas-run-on-os-login-flag.png" alt-text="Turn on the Desktop PWAs run on OS Login experiment" lightbox="../media/desktop-pwas-run-on-os-login-flag.png":::
-   Turn on the **Desktop PWAs run on OS Login** experiment  
+   Turn on the **Desktop PWAs run on OS login** experiment  
 :::image-end:::  
 
-### Turn the feature for the installed web app  
+### Turn on the feature for the installed web app  
 
-To turn on the `Run on OS Login` feature for an installed PWA, 
+To turn on the `Start app when you sign in` feature for an installed PWA, 
 
 1.  Open Microsoft Edge.   
 1.  Navigate to `edge://apps`.  
 1.  Hover on your app.  
 1.  Open the contextual menu \(right-click\) and then choose **Start app when you sign in**.  
     
-    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="Use the contextual menu to turn on Run on OS Login for a PWA in Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
-       Use the contextual menu to turn on the **Run on OS Login** for a PWA in Microsoft Edge  
+    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="Use the contextual menu to turn on the Start app when you sign in feature in Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
+       Use the contextual menu to turn on the **Start app when you sign in** feature in Microsoft Edge  
     :::image-end:::  
     
 ## Shortcuts  
@@ -548,7 +548,7 @@ The following properties define each shortcut.
 
 | Property | Details |  
 |:--- |:--- |  
-| `name` | A string that is displayed to the user on the **jumplist** or context menu. |  
+| `name` | A string that is displayed to the user on **Jumplists** or the contextual menu. |  
 | `short_name` | A string that is displayed when insufficient space exists to display the full name of the shortcut. |  
 | `description` | A string that describes the purpose of the shortcut.  It may be accessed by assistive technology. |  
 | `url` | The URI in the web app that opens when the shortcut is activated. |  
@@ -561,8 +561,6 @@ The ability to register as a file type handler is in the experimentation phase. 
 Chromium-based browsers are testing and shaping this feature.  For more information including code examples, navigate to [Let web applications be file handlers][WebDevFileHandling].  
 
 To preview file handling in Microsoft Edge for desktop OSs, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **File Handling API**.  
-
-<!--This experimental feature is off by default.  -->  
     
 ## Providing feedback on experimental features  
 
