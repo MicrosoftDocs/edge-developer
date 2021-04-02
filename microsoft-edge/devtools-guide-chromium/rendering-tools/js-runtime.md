@@ -3,7 +3,7 @@ description: Identify expensive functions using the Microsoft Edge DevTools Memo
 title: Speed up JavaScript runtime
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -24,7 +24,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Speed up JavaScript runtime  
 
-Identify expensive functions using the **Memory** panel.  
+Identify expensive functions using the **Memory** tool.  
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Sample Profiles" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
    Sample Profiles  
@@ -32,14 +32,14 @@ Identify expensive functions using the **Memory** panel.
 
 ### Summary  
 
-*   Record exactly which functions were called and how much memory each requires with Allocation Sampling in the **Memory** panel.  
+*   Record exactly which functions were called and how much memory each requires with Allocation Sampling in the **Memory** tool.  
 *   Visualize your profiles as a flame chart.  
     
 ## Record a Sampling Profile  
 
 If you notice jank in your JavaScript, collect a Sampling Profile.  Sampling Profiles show where running time is spent on functions in your page.  
 
-1.  Navigate to the **Memory** panel of DevTools.  
+1.  Navigate to the **Memory** tool of DevTools.  
 1.  Choose the **Allocation sampling** radio button.  
 1.  Choose **Start**.  
 1.  Depending on what you are trying to analyze, you may either refresh the page, interact with the page, or just let the page run.  
@@ -56,7 +56,7 @@ The default view is **Heavy \(Bottom Up\)**.  This view allows you to review whi
 
 ### Change sort order  
 
-To change the sorting order, select the dropdown menu next to the **focus selected function** \(![focus selected function][ImageFocusIcon]\) icon and then choose one of the following options.
+To change the sorting order, select the dropdown menu next to the **focus selected function** \(![focus selected function](../media/focus-icon.msft.png)\) icon and then choose one of the following options.
 
 **Chart**.  Displays a chronological chart of the recording.  
 
@@ -78,9 +78,9 @@ To change the sorting order, select the dropdown menu next to the **focus select
 
 ### Exclude functions  
 
-To exclude a function from your Sampling Profile, select it and then select the **exclude selected function** \(![exclude selected function][ImageExcludeIcon]\) button.  The requesting function \(parent\) of the excluded function \(child\) is charged with the allocated memory assigned to the excluded function \(child\).  
+To exclude a function from your Sampling Profile, choose it and then choose the **exclude selected function** \(![exclude selected function](../media/exclude-icon.msft.png)\) button.  The requesting function \(parent\) of the excluded function \(child\) is charged with the allocated memory assigned to the excluded function \(child\).  
 
-Choose the **restore all functions** \(![restore all functions][ImageRestoreIcon]\) button to restore all excluded functions back into the recording.  
+Choose the **restore all functions** \(![restore all functions](../media/restore-icon.msft.png)\) button to restore all excluded functions back into the recording.  
 
 ## View Sampling Profile as Chart  
 
@@ -117,7 +117,7 @@ Choose, hold, and drag your mouse left and right across the overview to zoom in 
 
 ### View function details  
 
-Choose a function to view the definition in the **Sources** panel.  
+Choose a function to view the definition in the **Sources** tool.  
 
 Hover on a function to display the name and timing data.  The following information is provided.  
 
@@ -138,12 +138,6 @@ Hover on a function to display the name and timing data.  The following informat
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageExcludeIcon]: ../media/exclude-icon.msft.png  
-[ImageFocusIcon]: ../media/focus-icon.msft.png  
-[ImageRestoreIcon]: ../media/restore-icon.msft.png  
 
 <!-- links -->  
 

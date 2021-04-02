@@ -3,7 +3,7 @@ description: Display and edit files, create Snippets, debug JavaScript, and set 
 title: Sources panel overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021 
+ms.date: 03/08/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -95,7 +95,7 @@ Instead, you may save this code in a **Snippet** and run it with a couple of but
 
 To run a **Snippet**:
 
-*   Open the file using the **Snippets** panel, and choose **Run** \(![The Run button][ImageRunIcon]\).  
+*   Open the file using the **Snippets** panel, and choose **Run** \(![The Run button](../media/run-snippet-icon.msft.png)\).  
 *   Open the [Command Menu][DevtoolsGuideChromiumCommandMenuIndex], delete the `>` character, type `!`, type the name of your **Snippet**, and then select `Enter`.  
     
 Navigate to [Run Snippets Of Code From Any Page][DevtoolsGuideChromiumJavascriptSnippets] to learn more.
@@ -119,10 +119,6 @@ Navigate to [Edit Files With Workspaces][DevtoolsGuideChromiumWorkspacesIndex] t
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageRunIcon]: ../media/run-snippet-icon.msft.png  
 
 <!-- links -->  
 

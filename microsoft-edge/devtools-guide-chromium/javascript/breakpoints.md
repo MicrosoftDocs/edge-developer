@@ -3,7 +3,7 @@ description: Learn about all the ways you are able to pause your code in Microso
 title: How to pause your code with breakpoints in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -30,7 +30,7 @@ Use breakpoints to pause your JavaScript code.  This guide explains each type of
 
 The most well-known type of breakpoint is line-of-code.  But line-of-code breakpoints may be inefficient to set, especially if you do not know exactly where to look, or if you are working with a large codebase.  You may save yourself time when debugging by knowing how and when to use the other types of breakpoints.  
 
-| Breakpoint Type | Use This When You Want To Pause...  |  
+| Breakpoint Type | Use This When You Want To Pause... |  
 |:--- |:--- |  
 | [Line-of-code](#line-of-code-breakpoints) | On an exact region of code.  |  
 | [Conditional line-of-code](#conditional-line-of-code-breakpoints) | On an exact region of code, but only when some other condition is true.  |  
@@ -159,7 +159,7 @@ Use event listener breakpoints when you want to pause on the event listener code
 Use exception breakpoints when you want to pause on the line of code that is throwing a caught or uncaught exception.  
 
 1.  Choose the **Sources** tool.  
-1.  Choose **Pause on exceptions** \(![Pause on exceptions][ImagePauseOnExceptionsIcon]\).  The icon turns blue when enabled.  
+1.  Choose **Pause on exceptions** \(![Pause on exceptions](../media/pause-on-exceptions-icon.msft.png)\).  The icon turns blue when enabled.  
     
     :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="The Pause on exceptions button" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
        The **Pause on exceptions** button  
@@ -211,10 +211,6 @@ Ensuring the target function is in scope is tricky if you are running the `debug
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImagePauseOnExceptionsIcon]: ../media/pause-on-exceptions-icon.msft.png  
 
 <!-- links -->  
 
