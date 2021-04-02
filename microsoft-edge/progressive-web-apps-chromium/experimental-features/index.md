@@ -49,29 +49,18 @@ For more information about Origin Trials, navigate to [Microsoft Edge Origin Tri
 > [!NOTE]
 > Experimental features are constantly updated and may cause performance issues.  To turn off an experimental feature, navigate to [Turn on experimental features](#turn-on-experimental-features), navigate to the experiment, and then choose `Disabled`.  
 
-## Current Features that are available to test  
+## Features that are available to test  
 
 The following list describes the new experimental web app features that are available to test and validate on Microsoft Edge.  
 
 | Feature | Microsoft Edge version | Platform |  
 |:--- |:--- |:--- |  
-| [URI Protocol Handling](#uri-protocol-handling) | 91 or later | Windows |  
-| [Window Controls Overlay for Installed Desktop Web Apps](#window-controls-overlay-for-installed-desktop-web-apps) | 91 or later | Windows 10|  
+| [URI Protocol Handling](#uri-protocol-handling) | 91 or later | Windows |    
 | [URL Link Handling](#url-link-handling) | 91 or later | Windows|  
 | [Run on OS Login](#run-on-os-login) | 88 or later | All |  
 | [Shortcuts](#shortcuts) | 87 or later | All |  
 | [File Handling](#file-handling) | 83 or later | All Desktop |  
 
-## Future Features  
-
-This table includes features that are works in progress that may come out in a future release for testing.  
-
-| Feature | Platform |  
-|:--- |:--- |   
-| [URI Protocol Handling](#uri-protocol-handling) |  macOS, Linux |  
-| [Window Controls Overlay for Installed Desktop Web Apps](#window-controls-overlay-for-installed-desktop-web-apps) |  macOS, Linux |  
-| Improvements to App Management| All |  
-| Support for Desktop Share Target| Windows 10 |  
 
 ## URI Protocol Handling  
 
@@ -184,6 +173,7 @@ For example, the `url_handlers` member value is set to `*.contoso.com` matches `
 
 For detailed instructions about testing the URL handler, navigate to [PWAs as URL Handlers][GithubWicgPwaUrlHandlerBlobMainExplainerMd].  
 
+<!-- Hold for future release 
 ## Window Controls Overlay for installed desktop web apps  
 
 To create an immersive title bar similar to a native app for your desktop installed web app.  The **Window Controls Overlay** feature  completes the following actions.  
@@ -269,9 +259,7 @@ Besides the JavaScript API, you may use CSS to query the bounding rectangle of t
 Users expect to grab and drag the upper region of a window.  To accommodate the expectation, declare specific parts of the web content as draggable.  
 To specify an element is draggable, use the webkit proprietary `-webkit-app-region` CSS property.  The CSS working group continues efforts to standardize the `app-region` property.  
 
-To preview file handling in Microsoft Edge for desktop OSs, navigate to [Turn on experimental features](#turn-on-experimental-features) and navigate to **Desktop PWA Window Controls Overlay**.  
-
-<!--This experimental feature is off by default.  -->  
+To preview this feature in Microsoft Edge for desktop OSs, navigate to [Turn on experimental features](#turn-on-experimental-features) and navigate to **Desktop PWA Window Controls Overlay**.   
 
 ### Custom title bar example  
 
@@ -333,7 +321,7 @@ In the `div` element with the `titleBarContainer` ID, the `div` with the `titleB
         <input class="nonDraggable" type="text" placeholder="Search"></input>
       </div>
     </div>
-    <div id="mainContent"><!-- The rest of the webpage --></div>
+    <div id="mainContent"> <!-- The rest of the webpage --> </div>
   </body>
 </html>
 ```  
@@ -489,6 +477,7 @@ body {
   overflow-y: scroll;
 }
 ```  
+-->
 
 ## Run On OS Login  
 
