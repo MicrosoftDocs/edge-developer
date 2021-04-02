@@ -171,7 +171,9 @@ A wildcard prefix is used in origin strings of the `url_handlers` member to matc
 
 For example, the `url_handlers` member value is set to `*.contoso.com` matches `tenant.contoso.com` and `www.tenant.contoso.com`, but doesn't match `contoso.com`.  
 
-For detailed instructions about testing the URL handler, navigate to [PWAs as URL Handlers][GithubWicgPwaUrlHandlerBlobMainExplainerMd].  
+Link handling is validated by the browser using a JSON web-app-origin-association file that needs to be located on the origin. These origin files can further fine tune the included or excluded paths at the origin. For detailed instructions about testing the URL handler, navigate to [PWAs as URL Handlers][GithubWicgPwaUrlHandlerBlobMainExplainerMd].  
+
+To preview URL link handling in Microsoft Edge on Windows, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWA URL  Handling**.  
 
 <!-- Hold for future release 
 ## Window Controls Overlay for installed desktop web apps  
