@@ -40,7 +40,7 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
 
 :::row:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-web-ecosystem-skillset.msft.png" alt-text="Web ecosystem & skillset" lightbox="./media/webview-reasons-web-ecosystem-skillset.msft.png":::
+      :::image type="complex" source="./media/webview-reasons-web-ecosystem-skillset.msft.png" alt-text="Web ecosystem & skillset" lightbox="./media/webview-reasons-web-ecosystem-skillset.msft.png" border="false":::
          **Web ecosystem \& skillset**
       :::image-end:::  
 
@@ -49,7 +49,7 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
       Utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem.  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-rapid-innovation.msft.png" alt-text="Rapid innovation" lightbox="./media/webview-reasons-rapid-innovation.msft.png":::
+      :::image type="complex" source="./media/webview-reasons-rapid-innovation.msft.png" alt-text="Rapid innovation" lightbox="./media/webview-reasons-rapid-innovation.msft.png" border="false":::
          **Rapid innovation**  
       :::image-end:::  
 
@@ -58,7 +58,7 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
       Web development allows for faster deployment and iteration.  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-windows-7-8-10-support.msft.png" alt-text="Windows 7, 8, and 10 support" lightbox="./media/webview-reasons-windows-7-8-10-support.msft.png":::
+      :::image type="complex" source="./media/webview-reasons-windows-7-8-10-support.msft.png" alt-text="Windows 7, 8, and 10 support" lightbox="./media/webview-reasons-windows-7-8-10-support.msft.png" border="false":::
          **Windows 7, 8, and 10 support**  
       :::image-end:::  
 
@@ -69,7 +69,7 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-native-capabilities.msft.png" alt-text="Native capabilities" lightbox="./media/webview-reasons-native-capabilities.msft.png":::
+      :::image type="complex" source="./media/webview-reasons-native-capabilities.msft.png" alt-text="Native capabilities" lightbox="./media/webview-reasons-native-capabilities.msft.png" border="false":::
          **Native capabilities**  
       :::image-end:::  
 
@@ -78,7 +78,7 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
       Access the full set of Native APIs.  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-code-sharing.msft.png" alt-text="Code-sharing" lightbox="./media/webview-reasons-code-sharing.msft.png":::
+      :::image type="complex" source="./media/webview-reasons-code-sharing.msft.png" alt-text="Code-sharing" lightbox="./media/webview-reasons-code-sharing.msft.png" border="false":::
          **Code-sharing**  
       :::image-end:::  
 
@@ -87,7 +87,7 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
       Add web code to your codebase allows for increased reuse across multiple platforms.  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-microsoft-support.msft.png" alt-text="Microsoft support" lightbox="./media/webview-reasons-microsoft-support.msft.png":::
+      :::image type="complex" source="./media/webview-reasons-microsoft-support.msft.png" alt-text="Microsoft support" lightbox="./media/webview-reasons-microsoft-support.msft.png" border="false":::
          **Microsoft support**  
       :::image-end:::  
 
@@ -98,7 +98,7 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-evergreen.msft.png" alt-text="Evergreen distribution" lightbox="./media/webview-reasons-evergreen.msft.png":::
+      :::image type="complex" source="./media/webview-reasons-evergreen.msft.png" alt-text="Evergreen distribution" lightbox="./media/webview-reasons-evergreen.msft.png" border="false":::
          **Evergreen distribution**  
       :::image-end:::  
 
@@ -107,7 +107,7 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
       Rely on an up-to-date version of Chromium with regular platform updates and security patches.  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-fixed.msft.png" alt-text="Fixed" lightbox="./media/webview-reasons-fixed.msft.png":::
+      :::image type="complex" source="./media/webview-reasons-fixed.msft.png" alt-text="Fixed" lightbox="./media/webview-reasons-fixed.msft.png" border="false":::
          **Fixed**  
       :::image-end:::  
 
@@ -116,12 +116,12 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
       \(coming soon\)  Choose to package the Chromium bits in your app.  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-incremental-adoption.msft.png" alt-text="Incremental adoption" lightbox="./media/webview-reasons-incremental-adoption.msft.png":::
+      :::image type="complex" source="./media/webview-reasons-incremental-adoption.msft.png" alt-text="Incremental adoption" lightbox="./media/webview-reasons-incremental-adoption.msft.png" border="false":::
          **Incremental adoption**  
       :::image-end:::  
 
       ### Incremental adoption  
-      
+
       Add web components piece by piece to your app.  
    :::column-end:::
 :::row-end:::  
