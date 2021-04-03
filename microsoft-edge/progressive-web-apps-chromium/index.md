@@ -3,7 +3,7 @@ description: Progressive Web Apps (Chromium) run natively on Windows 10.  Here i
 title: Progressive Web Apps on Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/17/2020
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
@@ -68,7 +68,7 @@ Build \(or convert\) your existing website to a PWA to enhance your engagement w
 
 ## PWAs on Microsoft Edge (Chromium)  
 
-When you build a Progressive Web App targeting web standard APIs, your application may be deployed across platforms and devices and take advantage of the device-specific capabilities as available.  PWAs in Microsoft Edge \(Chromium\) add the following advantages to your website.  
+When you build a Progressive Web App targeting web standard APIs, your app may be deployed across platforms and devices and take advantage of the device-specific capabilities as available.  PWAs in Microsoft Edge \(Chromium\) add the following advantages to your website.  
 
 *   Your app is built on a standards-based web platform.  
 *   Enables your users to install your app directly from the browser.  
@@ -76,16 +76,16 @@ When you build a Progressive Web App targeting web standard APIs, your applicati
     
 Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) is available. Microsoft Edge \(Chromium\) is available on Windows 7, Windows 10, and macOS.  The following benefits are included.  
 
-*   Applications may be installed directly from within the browser using the **Install** icon in the navigation bar.  
+*   Apps may be installed directly from within the browser using the **Install** icon in the navigation bar.  
     
-    :::image type="complex" source="./media/install_pwa_icon.png" alt-text="Install application flyout and icon" lightbox="./media/install_pwa_icon.png":::
-       Install application flyout and icon  
+    :::image type="complex" source="./media/install-progressive-web-app-icon.png" alt-text="Install app flyout and icon" lightbox="./media/install-progressive-web-app-icon.png":::
+       Install app flyout and icon  
     :::image-end:::  
     
-*   Applications may also be installed, run, and managed from the **Settings** > **Apps** menu  
+*   Apps may also be installed, run, and managed from the **Settings** > **Apps** menu  
     
-    :::image type="complex" source="./media/app_menus.png" alt-text="Application menu items under settings" lightbox="./media/app_menus.png":::
-       Application menu items under settings  
+    :::image type="complex" source="./media/app-menus.png" alt-text="App menu items under settings" lightbox="./media/app-menus.png":::
+       App menu items under settings  
     :::image-end:::  
     
 *   Web Notifications are integrated into the Windows notification system  
@@ -177,7 +177,7 @@ To be a great PWA, your app must also meet the following requirements.
 :::row-end:::  
 
 > [!NOTE]
-> To turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] application, navigate to [Publish your Progressive Web App to the Microsoft Store][PwaChromiumMicrosoftStore].  
+> To turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] app, navigate to [Progressive Web Apps (EdgeHTML) in the Microsoft Store][PwaEdgehtmlMicrosoftStore].  
   
 ## See also  
 
@@ -187,9 +187,9 @@ To be a great PWA, your app must also meet the following requirements.
 *   [PWA Q&A][AaronGustafsonNotebookPwaQa]  
 *   [Betting on the Web][JoretegBlogBettingWeb]  
 *   [Naming Progressive Web Apps][Fberriman20170626NamingProgressiveWebApps]  
-*   [Designing And Building A Progressive Web Application Without A Framework (Part 1)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]  
-*   [Designing And Building A Progressive Web Application Without A Framework (Part 2)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]  
-*   [Designing And Building A Progressive Web Application Without A Framework (Part 3)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]  
+*   [Designing And Building A Progressive Web App Without A Framework (Part 1)][Smashingmagazine201907ProgressiveWebAppFrameworkPart1]  
+*   [Designing And Building A Progressive Web App Without A Framework (Part 2)][Smashingmagazine201907ProgressiveWebAppFrameworkPart2]  
+*   [Designing And Building A Progressive Web App Without A Framework (Part 3)][Smashingmagazine201907ProgressiveWebAppFrameworkPart3]  
     
 <!-- links -->  
 
@@ -209,7 +209,7 @@ To be a great PWA, your app must also meet the following requirements.
 
 [WindowsBlogsWelcomingPWAsEdgeWindows]: https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/#56z7mJwKsykfbR4I.97 "Welcoming Progressive Web Apps to Microsoft Edge and Windows 10 - Windows Blogs"  
 [MicrosoftDeveloperEdgePlatformStatusBackgroundSync]: https://developer.microsoft.com/microsoft-edge/platform/status/backgroundsyncapi "Background Sync API - Microsoft Edge Platform Status"  
-[MicrosoftDeveloperEdgePlatformStatusWebApplicationManifest]: https://developer.microsoft.com/microsoft-edge/platform/status/webapplicationmanifest "Web Application Manifest - Microsoft Edge Platform Status"  
+[MicrosoftDeveloperEdgePlatformStatusWebAppManifest]: https://developer.microsoft.com/microsoft-edge/platform/status/webapplicationmanifest "Web App Manifest - Microsoft Edge Platform Status"  
 [MicrosoftDeveloperEdgeToolsRemote]: https://developer.microsoft.com/microsoft-edge/tools/remote "Instant testing"  
 [MicrosoftDeveloperWindowsMixedReality]: https://developer.microsoft.com/windows/mixed-reality "Mixed Reality for developers"  
 [MicrosoftDeveloperWindowsSurfaceHub]: https://developer.microsoft.com/windows/surfacehub "Microsoft Surface Hub"  
@@ -258,11 +258,11 @@ To be a great PWA, your app must also meet the following requirements.
 
 [PWABuilder]: https://www.pwabuilder.com "PWABuilder"  
 
-[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-1 "Designing And Building A Progressive Web Application Without A Framework (Part 1)"  
+[Smashingmagazine201907ProgressiveWebAppFrameworkPart1]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-1 "Designing And Building A Progressive Web Application Without A Framework (Part 1)"  
 
-[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2 "Designing And Building A Progressive Web Application Without A Framework (Part 2)"  
+[Smashingmagazine201907ProgressiveWebAppFrameworkPart2]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-2 "Designing And Building A Progressive Web Application Without A Framework (Part 2)"  
 
-[Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-3 "Designing And Building A Progressive Web Application Without A Framework (Part 3)"  
+[Smashingmagazine201907ProgressiveWebAppFrameworkPart3]: https://www.smashingmagazine.com/2019/07/progressive-web-application-pwa-framework-part-3 "Designing And Building A Progressive Web Application Without A Framework (Part 3)"  
 
 [WebDevGoodPwaChecklist]: https://web.dev/pwa-checklist "What makes a good Progressive Web App? | web.dev"  
 
