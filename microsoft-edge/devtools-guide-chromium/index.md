@@ -27,7 +27,7 @@ You can use DevTools to cover a lot of different development tasks:
 
 And a lot more. It all starts by opening DevTools and customizing them to your needs.
 
-## Opening DevTools  
+## Open the DevTools  
 
 Begin exploring the DevTools by opening them using any of the methods below. 
 
@@ -48,7 +48,7 @@ Begin exploring the DevTools by opening them using any of the methods below.
    :::column-end:::
 :::row-end:::  
 
-There are two main methods to interact with the DevTools: using your mouse or [keyboard shortcuts][DevtoolsGuideKeyboardShortcuts]. Keyboard shortcuts provide a quick way to access functionality and are needed for accessibility. We're working hard to make all the tools available using the keyboard and assistive technologies such as screen readers. To learn about opening the different features in the DevTools, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsGuideOpenDevTools].
+There are two main methods to interact with the DevTools: using the mouse or [keyboard shortcuts][DevtoolsGuideKeyboardShortcuts]. Keyboard shortcuts provide a quick way to access functionality and are needed for accessibility. We're working hard to make all the tools available using the keyboard and assistive technologies such as screen readers. To learn about opening the different features in the DevTools, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsGuideOpenDevTools].
 
 ## Docking the DevTools in your browser
 
@@ -99,7 +99,7 @@ DevTools grew over a period of several years and we understand that they can be 
    Screenshot of the menu bar of developer tools with labels explaining the different sections. In order: Inspect Tool, Device Emulation tool, Tools tab group, JavaScript errors, Issues, Settings, Feedback, Customize and Close.  
 :::image-end:::  
 
-* The **Inspect Tool** allows you to select an element on the current page. Once activated you can move your mouse over different parts of the document to get detailed information about this element and a color overlay showing you its dimensions, padding and margin.
+* The Inspect Tool allows you to select an element on the current page. Once activated you can move your mouse over different parts of the document to get detailed information about this element and a color overlay showing you its dimensions, padding and margin.
 
     :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="Screenshot of the inspect tool with the first headline of this document selected" lightbox="./media/devtools-intro-inspect-tool.msft.png":::
    Screenshot of the inspect tool with the first headline of this document selected  
@@ -111,19 +111,19 @@ DevTools grew over a period of several years and we understand that they can be 
    Screenshot of developer tools showing this website in an emulated mobile phone  
     :::image-end:::  
 
-* The Tools tab group is a group of tabs that represent different tools that are used in different scenarios. You can customize each of these tools and they change depending on the context. Selecting the **>>** opens a dropdown list of additional tools. We introduce each of these tools later in this section.
-* Next to these tabs are optional error and issues shortcuts. These shortcuts are displayed when there are JavaScript errors or issues on the current webpage. The error button shows a red circle with an X followed by the number of JavaScript errors. Selecting the shortcut takes you to the [Console][DevtoolsGuideConsole] to learn about the error. The issues button is a blue message icon followed by the number of issues. Selecting it takes you to the [Issues][DevtoolsGuideIssues] tool. 
-* **Settings** which is displayed as a cog, opens a menu to change Preferences, turn on Experiments, and much more. 
+* The Tools tab group is a group of tabs that represent different tools that are used in different scenarios. You can customize each of these tools and they may change depending on the context. Selecting the **>>** opens a dropdown list of additional tools. We introduce each of these tools later in this section.
+* Next to the Tools tab group are optional error and issues shortcuts. These shortcuts are displayed when there are JavaScript errors or issues on the current webpage. The error button shows a red circle with an X followed by the number of JavaScript errors. Selecting the shortcut takes you to the [Console][DevtoolsGuideConsole] to learn about the error. The issues button is a blue message icon followed by the number of issues. Selecting it takes you to the [Issues][DevtoolsGuideIssues] tool. 
+* **Settings** which is displayed as a gear icon, opens a menu to change Preferences, turn on Experiments, and much more. 
 * **Send Feedback** allows you to connect with the DevTools team to report problems, issues, or suggest ideas. Selecting this shortcut displays a feedback dialog to enter information to describe what happened and automatically includes a screenshot. 
-* The **Customize and control Devtools** shortcut, which is displayed as **...**, allows you to define where to dock the DevTools, perform a search, or open different tools, and much more.
+* The **Customize and control Devtools** shortcut, which is displayed as **...**, allows you to define where to dock the DevTools, perform a search, open different tools, and much more.
 
 In the Tools tab group, you can open the different tools that are available in the DevTools. The following list describe the most commonly used tools in the DevTools.
 
 *   **Welcome** includes information about the new features of DevTools, how to contact the team, and provides information about certain features.   
-*   **Elements** allows you to edit and inspect HTML and CSS. You can edit both in the tool and you see the changes live in the browser.  
-*   [Console][DevtoolsGuideConsole] allows you to display and filter log messages. These are automated logs of the browser like network requests and developer generated logs. You can also run JavaScript in the context of the current window or frame.
+*   **Elements** allows you to edit or inspect HTML and CSS. You can edit both in the tool and view the changes live in the browser.  
+*   [Console][DevtoolsGuideConsole] allows you to display and filter log messages. These are automated logs of the browser like network requests and developer generated logs. You can also run JavaScript directly in the **Console** in the context of the current window or frame.
 *   [Sources][DevtoolsGuideSources] is a code editor and JavaScript debugger. You can edit projects, maintain snippets and debug your current project.
-*   [Network][DevtoolsGuideNetwork] enables you to monitor and inspect requests and responses from the network and browser cache. You can filter them to your needs and simulate different network conditions.
+*   [Network][DevtoolsGuideNetwork] enables you to monitor and inspect requests or responses from the network and browser cache. You can filter them to your needs and simulate different network conditions.
 
 In addition to these popular tools, there are specialized tools available, such as **Performance**, **Memory**, **Application**, **Security** and **Audits**. 
         
@@ -142,8 +142,8 @@ The command menu allows you to type commands to show, hide, or run features in t
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="./media/devtools-intro-command-menu-show-changes.msft.png" alt-text="Command menu showing the options when typing `changes`" lightbox="./media/devtools-intro-command-menu-show-changes.msft.png":::
-         Command menu showing the options when typing `changes`  
+      :::image type="complex" source="./media/devtools-intro-command-menu-show-changes.msft.png" alt-text="Command menu showing the options after typing `changes`" lightbox="./media/devtools-intro-command-menu-show-changes.msft.png":::
+         Command menu showing the options after typing `changes`  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
@@ -153,24 +153,24 @@ The command menu allows you to type commands to show, hide, or run features in t
    :::column-end:::
 :::row-end::: 
 
-## Customize DevTools
+## Customize the DevTools
 
-DevTools are customizable to meet your needs or the way you work. You can change settings by selecting **Settings** (the cog wheel shortcut on the top right), or by pressing `F1` or `?`. In **Preferences**, you can change most of the different parts of the DevTools. For example, you may want to use **Match the browser language** to use the same language settings in the DevTools that's used in your browser, or to change the theme of the DevTools using **Theme**. 
+DevTools are customizable to meet your needs or the way you work. You can change settings by selecting **Settings** (the gear icon on the top right), or by pressing `F1` or `?`. In **Preferences**, you can change several parts of the DevTools. For example, you may want to use **Match the browser language** to use the same language settings in the DevTools that's used in your browser, or to change the theme of the DevTools using **Theme**. 
 
 :::image type="complex" source="media/devtools-intro-all-settings.msft.png" alt-text="Screenshot of all the settings in DevTools" lightbox="./media/devtools-intro-all-settings.msft.png":::
 Screenshot of all the settings in DevTools  
 :::image-end:::
 
-In addition to overall DevTools preferences, you can change the settings of advanced features such as:
-*   [Workspaces][DevtoolsGuideWorkspaces]
-*   Filter library code with the **Ignore List**
-*   Define the **Devices** you want to include in the device and testing more. For more information, navigate to [Emulate mobile devices in Microsoft Edge DevTools][DevtoolsGuideDeviceMode] mode.
-*   Select a network **Throttling** profile
-*   Define simulated **Locations**.
-*   Customize keyboard shortcuts. If you're already familiar with the Visual Studio Code shortcuts, we recommend selecting **Match shortcuts from preset** and selecting **Visual Studio Code** to match the DevTools shortcuts to the shortcuts in Visual Studio Code shortcuts.  
+In addition to overall DevTools preferences, you can change the settings of advanced features such as:  
+*   [Workspaces][DevtoolsGuideWorkspaces].  
+*   Filter library code with the **Ignore List**.  
+*   Define the **Devices** you want to include in the device simulation and testing mode. For more information, navigate to [Emulate mobile devices in Microsoft Edge DevTools][DevtoolsGuideDeviceMode].  
+*   Select a network **Throttling** profile.  
+*   Define simulated **Locations**.  
+*   Customize keyboard shortcuts. If you're already familiar with the shortcuts in Visual Studio Code and would like to use the same shortcuts in the DevTools, select **Match shortcuts from preset**, and then select **Visual Studio Code**.  
 
-:::image type="complex" source="media/devtools-intro-match-keys.msft.png" alt-text="Screenshot of all the keyboard shortcuts and the menu to change them to the settings of Visual Studio Code" lightbox="./media/devtools-intro-match-keys.msft.png":::
-Screenshot of all the keyboard shortcuts and the menu to change them to the settings of Visual Studio Code  
+:::image type="complex" source="./media/devtools-intro-match-keys.msft.png" alt-text="Screenshot of all the keyboard shortcuts and the menu to change them to the shortcuts used in Visual Studio Code" lightbox="./media/devtools-intro-match-keys.msft.png":::
+Screenshot of all the keyboard shortcuts and the menu to change them to the shortcuts used in Visual Studio Code  
 :::image-end:::
 
 ## Try experimental features
