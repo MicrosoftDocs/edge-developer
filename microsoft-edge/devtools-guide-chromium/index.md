@@ -29,28 +29,26 @@ And a lot more. It all starts by opening DevTools and customizing them to your n
 
 ## Opening DevTools  
 
-You can start exploring DevTools right here and now by opening them. Pick one of the ways listed below:
+Begin exploring the DevTools by opening them using any of the methods below. 
 
-*   Context-click any element on the page and select **Inspect** to jump directly to the Elements tool. 
-*   Press `F12` 
-*   Press `Ctrl`+`Shift`+`I` on Windows/Linux \(`Command`+`Option`+`I` on macOS\)  
-*   Press `Ctrl`+`Shift`+`C` on Windows/Linux \(`Command`+`Option`+`C` on macOS\) to open the DevTools in **Inspect Element Mode** 
-*   Press `Ctrl`+`Shift`+`J` on Windows/Linux or `Command`+`Option`+`J` on macOS to launch the **Console** panel in the DevTools.  
+*   Open the context menu (right-click) on any element on the page, and then select **Inspect** to open the Elements tool. 
+*   Select `F12`. 
+*   Select `Ctrl`+`Shift`+`I` on Windows/Linux \(`Command`+`Option`+`I` on macOS\).  
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="media/devtools-intro-inspect.msft.png" alt-text="Selecting Inspect from the context menu on any element" lightbox="media/devtools-intro-inspect.msft.png":::
-         Selecting Inspect from the context menu on any element
+      :::image type="complex" source="./media/devtools-intro-inspect.msft.png" alt-text="Select Inspect from the context menu on any element" lightbox="./media/devtools-intro-inspect.msft.png":::
+         Select Inspect from the context menu on any element
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      :::image type="complex" source="media/devtools-intro-inspect-devtools-open.png" alt-text="DevTools open highlighting the element chosen via context menu" lightbox="media/devtools-intro-inspect-devtools-open.png":::
-         DevTools open highlighting the element chosen in the context menu
+      :::image type="complex" source="./media/devtools-intro-inspect-devtools-open.png" alt-text="The DevTools is open with the chosen element highlighted" lightbox="./media/devtools-intro-inspect-devtools-open.png":::
+         The DevTools is open with the chosen element highlighted
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
-As you can already see, there are two ways to interact with the DevTools: using your mouse or [keyboard shortcuts][DevtoolsGuideKeyboardShortcuts]. Keyboard shortcuts are not only a  way to access functionality quicker but also an important accessibility aspect. We're working hard to make all the tools available via keyboard and assistive technology like screen readers. In addition to the keyboard and mouse, there are more ways to open DevTools in [Microsoft Edge DevTools keyboard shortcuts][DevtoolsGuideOpenDevTools].
+There are two main methods to interact with the DevTools: using your mouse or [keyboard shortcuts][DevtoolsGuideKeyboardShortcuts]. Keyboard shortcuts provide a quick way to access functionality and are needed for accessibility. We're working hard to make all the tools available using the keyboard and assistive technologies such as screen readers. To learn about opening the different features in the DevTools, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsGuideOpenDevTools].
 
 ## Docking the DevTools in your browser
 
