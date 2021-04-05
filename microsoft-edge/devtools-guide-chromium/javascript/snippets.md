@@ -57,25 +57,25 @@ In the following figure, the webpage appears after running the Snippet.  The **C
    The webpage after running the Snippet  
 :::image-end:::  
 
-## Open the Snippets pane  
+## Open the Snippets tab  
 
-The **Snippets** pane lists your Snippets.  When you want to edit a Snippet, you need to open it from the **Snippets** pane.  
+The **Snippets** tab, in the **Explorer** pane on the left, lists your Snippets.  When you want to edit a Snippet, you need to open it from the **Snippets** tab.  
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="The Snippets pane" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
-   The **Snippets** pane  
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="The Snippets tab" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+   The **Snippets** tab  
 :::image-end:::  
 
-### Open the Snippets pane with a mouse  
+### Open the Snippets tab with a mouse  
 
-1.  Choose the **Sources** tab to open the **Sources** tool.  The **Page** pane usually opens by default.  
+1.  Choose the **Sources** tab.  The **Sources** tool appears.  In the **Explorer** pane (on the left), the **Page** tab is usually selected, by default.  
     
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="The Sources tool with the Page pane open on the left" lightbox="../media/javascript-sources-page-pane.msft.png":::
-       The **Sources** tool with the **Page** pane open on the left  
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="The Sources tool with the Page tab open on the left" lightbox="../media/javascript-sources-page-pane.msft.png":::
+       The **Sources** tool with the **Page** tab open on the left  
     :::image-end:::  
     
-1.  Choose the **Snippets** tab to open the **Snippets** pane.  You may need to choose **More Tabs** \(![More Tabs](../media/more-tabs-icon.msft.png)\) to access the **Snippets** option.  
+1.  In the **Explorer** pane (on the left), choose the **Snippets** tab.  To access the **Snippets** option, you may need to choose **More tabs** \(![More tabs](../media/more-tabs-icon.msft.png)\).  
     
-### Open the Snippets pane with the Command Menu  
+### Open the Snippets tab with the Command Menu  
 
 1.  Focus your cursor somewhere in DevTools.  
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu.  
@@ -87,9 +87,9 @@ The **Snippets** pane lists your Snippets.  When you want to edit a Snippet, you
     
 ## Create Snippets  
 
-### Create a Snippet through the Sources panel  
+### Create a Snippet through the Sources tool  
 
-1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
+1.  [Open the **Snippets** tab](#open-the-snippets-tab).  
 1.  Choose **New snippet**.  
 1.  Enter a name for your Snippet then select `Enter` to save.  
     
@@ -111,8 +111,8 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
 
 ## Edit Snippets  
 
-1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
-1.  In the **Snippets** pane, choose the name of the Snippet that you want to edit.  It opens in the **Code Editor**.  
+1.  [Open the **Snippets** tab](#open-the-snippets-tab).  
+1.  In the **Snippets** tab, choose the name of the Snippet that you want to edit.  It opens in the **Code Editor**.  
     
     :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="The Code Editor" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
        The **Code Editor**  
@@ -127,9 +127,9 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
     
 ## Run Snippets  
 
-### Run a Snippet from the Sources panel  
+### Run a Snippet from the Sources tool  
 
-1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
+1.  [Open the **Snippets** tab](#open-the-snippets-tab).  
 1.  Choose the name of the Snippet that you want to run.  The Snippet opens in the **Code Editor**.  
 1.  Choose **Run Snippet** \(![Run Snippet](../media/run-snippet-icon.msft.png)\), or select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\).  
     
@@ -147,12 +147,12 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
 
 ## Rename Snippets  
 
-1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
+1.  [Open the **Snippets** tab](#open-the-snippets-tab).  
 1.  Hover on the Snippet name, open the contextual menu \(right-click\), and choose **Rename**.  
     
 ## Delete Snippets  
 
-1.  [Open the **Snippets** pane](#open-the-snippets-pane).  
+1.  [Open the **Snippets** tab](#open-the-snippets-tab).  
 1.  Hover on the Snippet name, open the contextual menu \(right-click\), and choose **Remove**.  
     
 ## Getting in touch with the Microsoft Edge DevTools team  
