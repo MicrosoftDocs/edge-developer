@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 # Edit files with Workspaces  
 
 > [!NOTE]
-> The goal of this tutorial is to provide hands-on practice in setting up and using Workspaces, so that you are able to use Workspaces in your own projects.  You are able to save the changes to the source code, on your local computer, that you made within DevTools after you enable Workspaces.  
+> The goal of this tutorial is to provide hands-on practice in setting up and using Workspaces, so that you are able to use Workspaces in your own projects.  After you enable Workspaces, you are able to save the changes to the source code, on your local computer, that you made within DevTools.  
 
 > [!IMPORTANT]
 > **Prerequisites**: Before beginning this tutorial, you should know how to perform the following actions.  
@@ -117,20 +117,20 @@ Complete the following actions, to get hands-on experience with Workspaces.
        The **Console** panel  
     :::image-end:::  
     
-1.  Choose the **Sources** tool.  
-1.  Choose the **Filesystem** panel.  
+1.  Choose the **Sources** tab.  The Sources tool appears.  
+1.  In the **Explorer** pane (on the left), choose the **Filesystem** tab.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="The Filesystem panel" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
-       The **Filesystem** panel  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="The Filesystem tab" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+       The **Filesystem** tab  
     :::image-end:::  
     
 1.  Choose **Add Folder To Workspace**.  
 1.  Type `~/Desktop/app`.  
 1.  Choose **Allow** to give DevTools permission to read and write to the directory.  
-    In the **Filesystem** panel, there is now a green dot next to `index.html`, `script.js`, and `styles.css`.  These green dots mean that DevTools has established a mapping between the network resources of the page, and the files in `~/Desktop/app`.  
+    In the **Filesystem** tab, there is now a green dot next to `index.html`, `script.js`, and `styles.css`.  These green dots mean that DevTools has established a mapping between the network resources of the page, and the files in `~/Desktop/app`.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="The Filesystem panel now shows a mapping between the local files and the network ones" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
-       The **Filesystem** panel now shows a mapping between the local files and the network ones  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="The Filesystem tab now shows a mapping between the local files and the network ones" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+       The **Filesystem** tab now shows a mapping between the local files and the network ones  
     :::image-end:::  
     
 ## Step 2: Save a CSS change to disk  
@@ -193,30 +193,30 @@ The DOM tree is not html.
 In short, the **DOM Tree** `!==` HTML.  
 -->  
 
-### Change HTML from the Sources panel  
+### Change HTML from the Sources tool  
 
-If you want to save a change to the html of the page, do it using the **Sources** panel.  
+If you want to save a change to the html of the page, do it using the **Sources** tool.  
 
 1.  Choose the **Sources** tool.  
-1.  Choose the **Page** panel.  
+1.  In the **Explorer** pane (on the left), choose the **Page** tab.  
 1.  Choose **(index)**.  The HTML for the page opens.  
 1.  Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  Review the following figure.  
 1.  Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.  
 1.  Refresh the page.  The `<h1>` element is still displaying the new text.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Change HTML from the Sources panel" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       Change HTML from the **Sources** panel  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Change HTML from the Sources tool" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+       Change HTML from the **Sources** tool  
     :::image-end:::  
     
 1.  Open `~/Desktop/app/index.html`.  The `<h1>` element contains the new text.  
     
 ## Step 4: Save a JavaScript change to disk  
 
-The **Sources** panel is also the place to make changes to JavaScript.  But sometimes you need to access other panels, such as the **Elements** tool or the **Console** panel, while making changes to your site.  There is a way to have the **Sources** panel open alongside other panels.  
+The main place to use the code editor of DevTools is the **Sources** tool.  But sometimes you need to access other panels, such as the **Elements** tool or the **Console** panel, while making changes to your site.  There is a way to have the DevTools code editor open alongside other panels.  
 
 1.  Choose the **Elements** tool.  
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  The **Command Menu** opens.  
-1.  Type `QS`, then choose **Show Quick Source**.  At the bottom of your DevTools window there is now a **Quick Source** panel.  The panel is displaying the contents of `index.html`, which is the last file you edited in the **Sources** panel.  The **Quick Source** panel gives you the editor from the **Sources** panel, so that you are able to edit files while having other panels open.  
+1.  Type `QS`, then choose **Show Quick Source**.  At the bottom of the DevTools window, the **Quick Source** panel appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.  The **Quick Source** panel gives you the editor from the **Sources** tool, so that you are able to edit files while having other panels open.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Open the Quick Source panel using Command Menu" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
        Open the **Quick Source** panel using **Command Menu**  
