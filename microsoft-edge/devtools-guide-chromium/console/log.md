@@ -95,7 +95,7 @@ Most messages that are displayed in the **Console** come from the web developers
        The **Console** after you choose **Log Info**  
     :::image-end:::  
     
-1.  Next to the `Hello, Console!` message in the Console choose **log.js:2**.  The Sources panel opens and highlights the line of code that caused the message to get logged to the Console.  The message was logged when the JavaScript of the page ran `console.log('Hello, Console!')`.
+1.  Next to the `Hello, Console!` message in the Console choose **log.js:2**.  The Sources tool opens and highlights the line of code that caused the message to get logged to the Console.  The message was logged when the JavaScript of the page ran `console.log('Hello, Console!')`.
     
     :::image type="complex" source="../media/console-sources-logjs.msft.png" alt-text="DevTools opens the Sources tool after you choose log.js:2" lightbox="../media/console-sources-logjs.msft.png":::
        DevTools opens the **Sources** tool after you choose `log.js:2`  
