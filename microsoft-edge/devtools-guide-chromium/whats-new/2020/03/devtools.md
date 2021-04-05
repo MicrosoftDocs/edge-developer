@@ -183,7 +183,7 @@ Chromium issue [#1051466][CR1051466]
 
 ### New icons for breakpoints, conditional breakpoints, and logpoints  
 
-The Sources panel has new icons for breakpoints, conditional breakpoints, and logpoints:  
+The Sources tool has new icons for breakpoints, conditional breakpoints, and logpoints:  
 
 *   Breakpoints \(![Breakpoint](../../media/2020/03/breakpoint.msft.png)\) are represented by red circles.  
 *   Conditional Breakpoints \(![Conditional Breakpoint](../../media/2020/03/conditional.msft.png)\) are represented by half-red half-white circles.  
