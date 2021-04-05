@@ -3,7 +3,7 @@ description: Learn how to test your website or app in Microsoft Edge or automate
 title: Use WebDriver (Chromium) for test automation  
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 04/05/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -42,7 +42,7 @@ To begin automating tests, use the following steps to ensure that the WebDriver 
     
     <!--  
     > [!NOTE] 
-    > For more information about test automation using Microsoft Edge \(EdgeHTML\), navigate to [Microsoft Edge Driver for Microsoft Edge \(EdgeHTML\)][Webdriver].  
+    > For more information about test automation using Microsoft Edge \(EdgeHTML\), navigate to [Microsoft Edge Driver for Microsoft Edge (EdgeHTML)][Webdriver].  
     -->  
     
 ## Choose a WebDriver language binding  
@@ -366,7 +366,8 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 
 [DevtoolsIndex]: ../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [WebdriverCapabilitiesEdgeOptions]: ./capabilities-edge-options.md "Capabilities and EdgeOptions | Microsoft Docs"  
-<!--[Webdriver]: ../edgehtml/webdriver/index.md "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
+
+<!--[Webdriver]: /archive/microsoft-edge/legacy/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
 
 [DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability - Microsoft Edge - Policies | Microsoft Docs"  
 
