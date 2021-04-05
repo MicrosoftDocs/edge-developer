@@ -65,10 +65,10 @@ There are lots of internal Garbage Collector roots, most of which are not intere
 
 *   Window global object \(in each iframe\).  There is a distance field in the heap snapshots which is the number of property references on the shortest retaining path from the window.  
 *   Document DOM tree consisting of all native DOM nodes reachable by traversing the document.  Not all of the nodes may have JS wrappers but if a node has a wrapper, it is alive while the document is alive.  
-*   Sometimes objects may be retained by the debugger context in the **Sources** panel and the **Console** \(for example after Console evaluation\).  Create heap snapshots with a cleared **Console** panel and no active breakpoints in the debugger in the **Sources** panel.
+*   Sometimes objects may be retained by the debugger context in the **Sources** tool and the **Console** \(for example after Console evaluation\).  Create heap snapshots with a cleared **Console** panel and no active breakpoints in the debugger in the **Sources** tool.
 
 >[!TIP]
-> Clear the **Console** panel by running `clear()` and deactivate breakpoints in the **Sources** panel before taking a heap snapshot in the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots].
+> Clear the **Console** panel by running `clear()` and deactivate breakpoints in the **Sources** tool before taking a heap snapshot in the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots].
 
 The memory graph starts with a root, which may be the `window` object of the browser or the `Global` object of a Node.js module.  You do not control how this root object is garbage collected.  
 
