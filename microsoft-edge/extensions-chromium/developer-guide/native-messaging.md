@@ -15,7 +15,7 @@ Extensions communicate with a native Win32 app installed on a user's device usin
 To acquire the extension and native app host, you have two distribution models.  
 
 *   Package your extension and the host together.  When a user installs the package, both the extension and the host are installed.  
-*   Install your extension using the [Microsoft Edge Add-ons store] [MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome], and your extension prompts users to install the host.  
+*   Install your extension using the [Microsoft Edge Add-ons store][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome], and your extension prompts users to install the host.  
 
 To create your extension to send and receive messages with native app hosts, complete the following steps.  
 
