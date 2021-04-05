@@ -18,7 +18,7 @@ You may now take a resource of the current webpage and store it locally.  When y
 
 ## Setting up your local folder to store Overrides  
 
-1.  In the **Sources** tool, find several sections on the left-hand side.  If the **Overrides** option is not displayed, choose the <code>&#x0226B;</code><!--`≫`--> icon to get there.  
+1.  In the **Sources** tool, in the **Explorer** pane (on the left), choose the **Overrides** tab.  If the **Overrides** tab is not displayed, choose the <code>&#x0226B;</code><!--`≫`--> icon to list the additional tabs.  
     
     :::row:::
        :::column span="":::
@@ -33,7 +33,7 @@ You may now take a resource of the current webpage and store it locally.  When y
        :::column-end:::
     :::row-end:::  
     
-1.  After you choose the **Overrides** option, you must choose a folder on your local computer to store the resource files that you want to replace.  Choose the **+ Select folder for overrides** to search for a folder.  
+1.  Choose a folder on your local computer to store the resource files that you want to replace.  Choose the **+ Select folder for overrides** to search for a folder.  
     
     :::image type="complex" source="../media/javascript-overrides-select-folder.msft.png" alt-text="Choose a folder to use for overrides" lightbox="../media/javascript-overrides-select-folder.msft.png":::
        Choose a folder to use for overrides  
@@ -45,7 +45,7 @@ You may now take a resource of the current webpage and store it locally.  When y
        Grant DevTools access to folder  
     :::image-end:::  
     
-1.  In the **Overrides** pane, a checkbox should be displayed next to `Enable Local Overrides` and your overrides folder.  An icon is displayed next to it that allows you to delete your local overrides settings.  You are now done setting up your folder and ready to replace live resources with local ones.
+1.  In the **Overrides** tab, a checkbox is displayed next to `Enable Local Overrides` and your overrides folder.  An icon is displayed next to it that allows you to delete your local overrides settings.  You are now done setting up your folder and ready to replace live resources with local ones.
     
     :::image type="complex" source="../media/javascript-overrides-folder-setup-complete.msft.png" alt-text="Successful set up of an overrides folder" lightbox="../media/javascript-overrides-folder-setup-complete.msft.png":::
        Successful set up of an overrides folder  
