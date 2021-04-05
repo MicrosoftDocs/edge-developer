@@ -72,7 +72,7 @@ This stylesheet does not just include the code for the button component.  It con
     
 ## Analyze code coverage  
 
-The table in the **Coverage** panel displays the resources that were analyzed, and how much code is used within each resource.  Choose a row to open that resource in the **Sources** panel and review a line-by-line breakdown of used code and unused code.  
+The table in the **Coverage** panel displays the resources that were analyzed, and how much code is used within each resource.  Choose a row to open that resource in the **Sources** tool and review a line-by-line breakdown of used code and unused code.  
 
 :::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="A code coverage report" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
    A code coverage report  
