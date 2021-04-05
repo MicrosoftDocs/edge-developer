@@ -110,7 +110,7 @@ The following shortcuts control the main DevTools window, work across all tools,
 | Hard Refresh.  Forces Microsoft Edge to download resources again and reload.  The resources that are used may come from a cached version | `Ctrl`+`F5` or `Ctrl`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | Search for text within the current panel.  Not supported in the Audits, Application, and Security tools | `Ctrl`+`F` | `Command`+`F` |  
 | Show the Search tool in the Drawer, which lets you search for text across all loaded resources | `Ctrl`+`Shift`+`F` | `Command`+`Option`+`F` |  
-| Open a file in the Sources panel | `Ctrl`+`O` or `Ctrl`+`P` | `Command`+`O` or `Command`+`P` |  
+| Open a file in the Sources tool | `Ctrl`+`O` or `Ctrl`+`P` | `Command`+`O` or `Command`+`P` |  
 | Zoom in | `Ctrl`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Zoom out | `Ctrl`+`-` | `Command`+`-` |  
 | Restore default zoom level | `Ctrl`+`0` | `Command`+`0` |  
