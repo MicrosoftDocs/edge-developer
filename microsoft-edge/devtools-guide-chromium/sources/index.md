@@ -24,6 +24,40 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Sources tool overview  
 
+<!-- Outline:
+# #  Arranging the panes of the Sources tool
+# # #  Maximizing the DevTools window
+
+# #  The Explorer pane, to navigate files
+# # #  Explorer commands on the Command Menu
+# # #  The Page tab, to explore resources that construct the current webpage
+# # # #  Group files by folder or as a flat list
+# # #  The Filesystem tab, for a local Workspace
+# # # #  Sources tool without a Workspace  [move up into Page tab?]
+# # # #  Complex transformations from source code to compiled front-end code
+# # #  The Overrides tab, to override server files by local files
+# # #  The Content scripts tab, for Microsoft Edge extensions
+# # #  The Snippets tab, to run JavaScript code snippets on any page
+
+# #  The Editor pane, to view or edit files
+# # #  Reformat a minified JavaScript file with pretty-print
+# # #  Mapping minified code to your source code, to work with readable source code
+# # #  Apply or save changes
+# # #  Source mapping
+# # #  Editor commands on the Command Menu
+# # #  Edit an HTML file
+# # #  Edit a CSS file
+# # #  Opening the DevTools code editor when using a tool other than the Sources tool
+
+# #  The Debugger pane, to debug JavaScript code
+# # #  The basic approach to using a debugger
+# # #  Advantages of the debugger's Watch and Scope over console.log
+# # #  Articles about debugging
+
+# #  Extensions for Visual Studio Code, as an alternative to DevTools Sources tool
+# # #  The Debugger for Microsoft Edge extension for Visual Studio Code
+# # #  The Microsoft Edge Tools for VS Code extension for Visual Studio Code -->
+
 Use the **Sources** tool to view, modify, and debug JavaScript that's returned by the server, and to inspect the resources that make up the current webpage.  To use the **Sources** tool as a development environment, add source files to a Workspace.  The Sources tool has three panes:
 
 | Pane | Actions |
@@ -109,7 +143,7 @@ The following subsections are related to the Explorer pane:
 *   [The Page tab, to explore resources that construct the current webpage](#the-page-tab-to-explore-resources-that-construct-the-current-webpage)
 *   [The Filesystem tab, for a local Workspace](#the-filesystem-tab-for-a-local-workspace)
 *   [The Overrides tab, to override server files by local files](#the-overrides-tab-to-override-server-files-by-local-files)
-*   [The Content scripts tab, for Microsoft Edge extensions](#the-content-scripts-tab-for-edge-extensions)
+*   [The Content scripts tab, for Microsoft Edge extensions](#the-content-scripts-tab-for-microsoft-edge-extensions)
 *   [The Snippets tab, to run JavaScript code snippets on any page](#the-snippets-tab-to-run-javascript-code-snippets-on-any-page)
 
 ### Explorer commands on the Command Menu
@@ -141,7 +175,7 @@ How the **Page** tab is organized, in the tree in the **Explorer** pane:
 
 *   A deeply nested item is shown as a **page** icon, and represents a resource that was loaded from the above origin.  
 
-Hover over an item, to see its path as a URL.  For example, hovering over the .js file of the demo shows its URL as: `https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.js`
+Hover over an item, to see its path as a URL.
 
 Right-click an item to open it in a new tab of the browser, or to see other actions.
     
@@ -186,17 +220,6 @@ In contrast to using a Workspace, when you use the Sources tool in the default w
 By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.  In the default approach, the **Sources** tool works with a copy of the client-side resources that are returned by the web server.  When you modify these client-side files that are returned by the server, the changes don't persist, because you didn't change the source files.
 
 When you find a fix that works for the client-side JavaScript that is returned by the server, you then need to apply that fix, or an equivalent of that fix, in your actual source code and then re-deploy to the server.
-
-#### Mapping minified code to your source code, to work with readable source code
-
-<!-- From a user point of view, is Workspace related to mapping minified code to source code? -->
-
-If your client-side source code is transformed, so that the server returns different, transformed, hard-to-read (minified) front-end code to the browser, in some cases, you can set up mapping from your source code to your compiled code, so that when you view, debug, and edit the transformed client-side JavaScript code that's returned from the server, the code looks familiar and readable.
-
-Source Maps from preprocessors cause DevTools to load your original JavaScript source files in addition to your minified, transformed JavaScript files that are returned by the server.  You then use your original source files to set breakpoints and step through code.  Meanwhile, Microsoft Edge is actually running your minified code. 
-
-The mapping approach keeps your client-side code readable and debuggable even after you combine, minify, or compile it.
-For more information, navigate to [Map preprocessed code to source code][DevToolsJavaScriptSourceMaps].
 
 #### Complex transformations from source code to compiled front-end code
 
@@ -290,8 +313,8 @@ The **Editor** pane has the following level of support for various file types:
 
 The following subsections are related to the Editor pane:
 *   [Reformat a minified JavaScript file with pretty-print](#reformat-a-minified-javascript-file-with-pretty-print)
+*   [Mapping minified code to your source code, to work with readable source code](#mapping-minified-code-to-your-source-code-to-work-with-readable-source-code)
 *   [Apply or save changes](#apply-or-save-changes)
-*   [Source mapping](#source-mapping)
 *   [Editor commands on the Command Menu](#editor-commands-on-the-command-menu)
 *   [Edit an HTML file](#edit-an-html-file)
 *   [Edit a CSS file](#edit-a-css-file)
@@ -301,6 +324,17 @@ The following subsections are related to the Editor pane:
 To use pretty-print to reformat a file to make it readable, click the **Pretty print** button \(![Format](../media/format-icon.msft.png)\) at the bottom of the Editor pane.  For more information, navigate to the section
 [Reformat a minified JavaScript file with pretty-print][DevToolsJavaScriptReferenceReformat] within the article "Use the debugger features".
 
+### Mapping minified code to your source code, to work with readable source code
+
+If your client-side source code is transformed, so that the server returns different, transformed, hard-to-read (minified) front-end code to the browser, some preprocessors map your compiled code to your source code, so that when you view, debug, and edit the transformed client-side JavaScript code that's returned from the server, the code looks familiar and readable.
+
+Source Maps from preprocessors cause DevTools to load your original JavaScript source files in addition to your minified, transformed JavaScript files that are returned by the server.  You then use your original source files to set breakpoints and step through code.  Meanwhile, Microsoft Edge is actually running your minified code. 
+
+If you right-click a JavaScript file in the **Editor** pane, and then select **Add source map...**, a popup box appears, with a **Source map URL:** field and an **Add** button.
+
+The mapping approach keeps your client-side code readable and debuggable even after you combine, minify, or compile it.
+For more information, navigate to [Map preprocessed code to source code][DevToolsJavaScriptSourceMaps].
+
 ### Apply or save changes
 
 For JavaScript changes to take effect, select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\).  DevTools does not rerun a script, so the only JavaScript changes that take effect are changes that you make inside of functions.  
@@ -308,10 +342,6 @@ For JavaScript changes to take effect, select `Control`+`S` \(Windows, Linux\) o
 For example, in the following figure, notice how `console.log('A')` does not run, whereas `console.log('B')` does.  If DevTools re-runs the entire script after making the change, <!-- why/when would DevTools re-run the entire script?  above says "DevTools does not re-run a script" --> then the text `A` is logged to the **Console**.  
 
 By default, your edits are discarded when you refresh the page.  To learn how to save the changes to your file system, navigate to [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex].
-
-### Source mapping
-
-If you right-click a JavaScript file in the **Editor** pane, and then select **Add source map...**, a popup box appears, with a **Source map URL:** field and an **Add** button.  For more information, navigate to [Mapping minified code to your source code, to work with readable source code](#mapping-minified-code-to-your-source-code-to-work-with-readable-source-code), above.
 
 ### Editor commands on the Command Menu
 
@@ -373,6 +403,15 @@ CSS changes take effect immediately; in most cases, no saving is needed.
 *   [Edit CSS font styles and settings in the Styles pane][DevToolsInspectStylesEditFonts]
 
 *   [DevTools for beginners: Get started with CSS][DevToolsBeginnersCss] - tutorial
+
+### Opening the DevTools code editor when using a tool other than the Sources tool
+
+The main place to use the code editor of DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as the **Elements** tool or the **Console** panel, while making changes to your site.  There is a way to have the DevTools code editor open alongside other panels.  
+
+1.  Choose a tool other than the **Sources** tool, such as the **Elements** tool.  
+1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  The **Command Menu** opens.  
+1.  Type `QS`, then choose **Show Quick Source**.  At the bottom of the DevTools window, the **Quick Source** panel appears, displaying the last file you edited in the **Sources** tool, within the code editor from the **Sources** tool.  
+1.  Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  
 
 ## The Debugger pane, to debug JavaScript code
 
