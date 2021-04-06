@@ -118,7 +118,7 @@ Complete the following actions, to get hands-on experience with Workspaces.
     :::image-end:::  
     
 1.  Choose the **Sources** tab.  The Sources tool appears.  
-1.  In the **Explorer** pane (on the left), choose the **Filesystem** tab.  
+1.  In the **Navigator** pane (on the left), choose the **Filesystem** tab.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="The Filesystem tab" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
        The **Filesystem** tab  
@@ -198,7 +198,7 @@ In short, the **DOM Tree** `!==` HTML.
 If you want to save a change to the html of the page, do it using the **Sources** tool.  
 
 1.  Choose the **Sources** tool.  
-1.  In the **Explorer** pane (on the left), choose the **Page** tab.  
+1.  In the **Navigator** pane (on the left), choose the **Page** tab.  
 1.  Choose **(index)**.  The HTML for the page opens.  
 1.  Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  Review the following figure.  
 1.  Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.  
@@ -216,7 +216,7 @@ The main place to use the code editor of DevTools is the **Sources** tool.  But 
 
 1.  Choose the **Elements** tool.  
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  The **Command Menu** opens.  
-1.  Type `QS`, then choose **Show Quick Source**.  At the bottom of the DevTools window, the **Quick Source** panel appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.  The **Quick Source** panel gives you the editor from the **Sources** tool, so that you are able to edit files while having other panels open.  
+1.  Type `Quick Source`, and then choose **Show Quick Source**.  At the bottom of the DevTools window, the **Quick Source** panel appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.  The **Quick Source** panel gives you the editor from the **Sources** tool, so that you are able to edit files while having other panels open.  
     
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Open the Quick Source panel using Command Menu" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
        Open the **Quick Source** panel using **Command Menu**  
