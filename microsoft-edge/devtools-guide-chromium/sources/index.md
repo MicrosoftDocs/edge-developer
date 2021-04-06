@@ -24,7 +24,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Sources tool overview  
 
-Use the **Sources** tool to view, modify, and debug front-end JavaScript, and inspect the resources that make up the current webpage.  The Sources tool has three panes:
+Use the **Sources** tool to view, modify, and debug front-end (client-side) JavaScript, and inspect the resources that make up the current webpage.  The Sources tool has three panes:
 
 | Pane | Actions |
 |---|---|
@@ -38,59 +38,13 @@ The following image shows the **Navigator** pane highlighted with a red box on t
    Navigate, view, edit, and debug JavaScript returned by the server  
 :::image-end:::  
 
-## Arranging the panes of the Sources tool
+When the DevTools are less than 680px wide, the **Debugger** pane is placed at the bottom and is split into two panes, with **Scope** and **Watch** in the lower-right:
 
-The **Sources** tool has three panes that are placed as follows, depending on whether the DevTools window is narrow or wide:
+:::image type="complex" source="../media/debugging-panes-narrow.msft.png" alt-text="The three panes of the Sources tool, in narrow layout" lightbox="../media/debugging-panes-narrow.msft.png":::
+   The three panes of the Sources tool, in narrow layout  
+:::image-end:::  
 
-| Pane | Placement when DevTools are less than 680px wide | Placement when DevTools are more than 680px wide |
-|---|---|---|
-| **Navigator** | Upper left | Left |
-| **Editor** | Upper right | Middle |
-| **Debugger** | Bottom | Right |
-
-:::row:::
-   :::column span="":::
-      The below figure shows the Sources tool with default, narrow layout.  The **Debugger** pane is at the bottom and is split into two panes, with **Scope** and **Watch** in the lower-right.
-   :::column-end:::
-   :::column span="":::
-     The below figure shows the Sources tool with wide layout, and also shows DevTools undocked into a separate window.  The **Debugger** pane is now on the right, including **Watch** and **Scope**.  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../media/debugging-panes-narrow.msft.png" alt-text="The three panes of the Sources tool, in narrow layout" lightbox="../media/debugging-panes-narrow.msft.png":::
-         The three panes of the Sources tool, in narrow layout  
-      :::image-end:::  
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../media/debugging-panes.msft.png" alt-text="The three panes of the Sources tool, in wide layout" lightbox="../media/debugging-panes.msft.png":::
-         The three panes of the Sources tool, in wide layout  
-      :::image-end:::  
-   :::column-end:::
-:::row-end:::  
-
-Wide layout is available with each docking location:
-*  DevTools docked on the right or left within the browser window, with DevTools wider than a certain width.
-*  DevTools docked at the bottom in the browser window.
-*  DevTools undocked into a separate window.
-
-### Maximizing the DevTools window
-
-When the DevTools window is wide, the **Debugger** pane is displayed to the right of the **Editor** pane, instead of below it.
-
-To widen the DevTools window:
-
-*   Select the left edge of the DevTools window and move it to the left.
-
-To maximize the DevTools window:
-
-1. In the upper right corner of the DevTools window, select the ellipses (...) button (for **Customize and control DevTools**).
-1. In the **Dock side** section, select **Undock into separate window**.
-1. Optionally, move the DevTools window to a separate monitor.
-
-**Related articles:**
-
-*   [Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left)][DevToolsCustomizePlacement]
+To maximize the size of the Sources tool, undock DevTools into a separate window, and optionally move the DevTools window to a separate monitor.  For more information, navigate to [Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left)][DevToolsCustomizePlacement].
 
 ## The Navigator pane, to navigate files
 
@@ -105,20 +59,16 @@ Optionally, set up a local Workspace to save changes directly to source files.
 \>> (**More tabs**) - This "double chevron" button displays the remaining tabs of the Navigator pane when the display is narrow.
 
 The following subsections are related to the Navigator pane:
-*   [Navigator commands on the Command Menu](#navigator-commands-on-the-command-menu)
+*   [Open files with the Command Menu](#open-files-with-the-command-menu)
 *   [The Page tab, to explore resources that construct the current webpage](#the-page-tab-to-explore-resources-that-construct-the-current-webpage)
-    *   [Group files by folder or as a flat list](#group-files-by-folder-or-as-a-flat-list)
 *   [The Filesystem tab, for a local Workspace](#the-filesystem-tab-for-a-local-workspace)
-    *   [Sources tool without a Workspace](#Sources-tool-without-a-Workspace)
-    *   [Complex transformations from source code to compiled front-end code](#Complex-transformations-from-source-code-to-compiled-front-end-code)
-*   [The Overrides tab, to override server files by local files](#the-overrides-tab-to-override-server-files-by-local-files)
+*   [The Overrides tab, to override server files with local files](#the-overrides-tab-to-override-server-files-with-local-files)
 *   [The Content scripts tab, for Microsoft Edge extensions](#the-content-scripts-tab-for-microsoft-edge-extensions)
 *   [The Snippets tab, to run JavaScript code snippets on any page](#the-snippets-tab-to-run-javascript-code-snippets-on-any-page)
 
-### Navigator commands on the Command Menu
+### Open files with the Command Menu
 
-Next to the tabs of the **Navigator** pane, select the **...** (**More options**) button, then select **Open File**.
-The **Command Menu** appears, and lists all the resources that are listed in the **Page** tab.
+Next to the tabs of the **Navigator** pane, select the **...** (**More options**) button, then select **Open File**.  Or, a simpler way to open the Command Menu is to select `Ctrl`+`P` from anywhere in DevTools.  The **Command Menu** appears, and lists all the resources that are listed in the **Page** tab.
 
 To display and pick from a list of all .js files, enter `.js`.
 
@@ -134,7 +84,7 @@ Use the **Page** tab of the **Navigator** pane to explore the file system that's
    The **Page** tab
 :::image-end:::  
 
-How the **Page** tab is organized, in the tree in the **Navigator** pane:
+Different webpages have a different tree structure.  The following is how the **Page** tab is organized for the example page shown in the screen capture:
 
 *   The top level is indicated as a **window** icon labeled as `top`, and represents an [HTML frame][W3CHtml4Frames]; `top` represents the main document frame.  
 
@@ -142,7 +92,7 @@ How the **Page** tab is organized, in the tree in the **Navigator** pane:
 
 *   The third level is indicated by a **folder** icon, and represents a directory.
 
-*   A deeply nested item is shown as a **page** icon, and represents a resource that was loaded from the above origin.  
+*   The fourth level is shown as a **page** icon, and represents a resource that was loaded from the above origin.  
 
 Hover over an item, to see its path as a URL.
 
@@ -154,7 +104,7 @@ To display a file in the **Editor** pane, choose a file in the **Page** tab.  Yo
 
 The **Page** tab displays files or resources grouped by server and directory, or as a flat list.
 
-Next to the tabs on the Navigator pane, select the **...** (**More options**) button, then select or clear **Group by folder**.
+To change how resources are grouped, next to the tabs on the Navigator pane (on the left), select the **...** (**More options**) button, and then select or clear the **Group by folder** option.
 
 ### The Filesystem tab, for a local Workspace
 
@@ -174,37 +124,23 @@ A file that's in a Workspace is indicated by a green dot on the file in the **Fi
 
 Using a Workspace saves the changes that you make in DevTools to your file system.
 
-By using a Workspace, DevTools is able to be used as your code editor and Integrated Development Environment (IDE) for your source files.  When you edit the copy of the front-end code that's returned by the server, the edits are also applied to your local source code.  For other users to see your changes, you redeploy your changed source files (front-end code) to the server.
+<!-- Should HTML be listed, along with JavaScript and CSS? -->
+By using a Workspace, the Sources tool is able to persist changes made to JavaScript and CSS to your local files.  When you edit the front-end code that's returned by the server, the edits are also applied to your local source code.  For other users to see your changes, you redeploy your changed source files (front-end code) to the server.
 
-A Workspace works well when the JavaScript code that's returned by the server is the same as your local JavaScript source code that you maintain, rather than performing minification, transformation, or other compiling of JavaScript code.
+Workspaces work well when the JavaScript code that's returned by the server is the same as the local JavaScript source code that you write, rather than performing minification, compilation, or other transformations on your JavaScript source code.
 
 When using a Workspace, changes to your front-end code are preserved across page refreshes.
 
+By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.  In the default approach, the **Sources** tool works with a copy of the front-end resources that are returned by the web server.  When you modify these front-end files that are returned by the server, the changes don't persist, because you didn't change the source files.
+When you find a fix that works for the front-end JavaScript that is returned by the server, you then need to apply that fix, or an equivalent of that fix, in your actual source code, and then re-deploy to the server.
+
 For more information, navigate to the tutorial [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex].
 
-#### Sources tool without a Workspace
+### The Overrides tab, to override server files with local files
 
-In contrast to using a Workspace, when you use the Sources tool in the default way, you edit a transient copy of the front-end code that's returned by the web server.  This non-Workspace approach supports fast iterations when you are prototyping JavaScript code and don't want to go through the build process every time you want to view the rendered result of a code edit.
+Use the **Overrides** tab of the **Navigator** pane to override page assets (such as images) with files from a local folder.
 
-By default, when you edit a file in the **Sources** tool, those changes are lost when you refresh the page.  In the default approach, the **Sources** tool works with a copy of the client-side resources that are returned by the web server.  When you modify these client-side files that are returned by the server, the changes don't persist, because you didn't change the source files.
-
-When you find a fix that works for the client-side JavaScript that is returned by the server, you then need to apply that fix, or an equivalent of that fix, in your actual source code and then re-deploy to the server.
-
-#### Complex transformations from source code to compiled front-end code
-
-<!-- todo: Does this section have to do with Workspace?  if not, maybe move this section elsewhere, to preserve the series of 5 sections for the 5 tabs of the Navigator pane. -->
-
-If you use a framework that involves transformation, such as React, your local source JavaScript might be very different than the client-side JavaScript that's returned by the server.
-*   A Workspace is not supported in this scenario.
-*   Source code mapping is not supported in this scenario.
-
-In this scenario, the **Sources** tool may be useful for inspecting and experimenting with the transformed, client-side (front-end) JavaScript that's returned from the server.  
-
-### The Overrides tab, to override server files by local files
-
-Use the **Overrides** tab of the **Navigator** pane to override page assets (such as images) by files from a local folder.
-
-This is a way of changing what the server sends, after the server returns assets.  
+This is a way of overriding what the server sends to the browser, even after the server has returned assets.  
 
 :::image type="complex" source="../media/overrides-tab.msft.png" alt-text="The Overrides tab of the Navigator pane" lightbox="../media/overrides-tab.msft.png":::
    The **Overrides** tab of the **Navigator** pane
@@ -263,9 +199,10 @@ Snippets are similar to bookmarklets.
 
 ## The Editor pane, to view or edit files
 
-Use the **Editor** pane to view the client-side (front-end) JavaScript, HTML, CSS, and other files that are returned from the server to compose the current webpage.  Make experimental edits to the JavaScript or CSS code returned from the server; DevTools updates the page to run the modified code.  These experimental changes are preserved (in the DevTools sandbox) until page refresh.  
+Use the **Editor** pane to view the front-end JavaScript, HTML, CSS, and other files that are returned from the server to compose the current webpage.  Make edits to JavaScript or CSS; DevTools updates the page to run the modified code.
 
-To view and edit local JavaScript, HTML, or CSS source files using the Sources tool, so that your changes persist, add files to the Workspace, as described above in [The Filesystem tab, for a local Workspace](#the-filesystem-tab-for-a-local-workspace).
+> [!NOTE]
+> Edits made in the Sources tool are not saved to your local file system and will not persist after page refresh.
 
 :::image type="complex" source="../media/edit-js.msft.png" alt-text="Editing JavaScript in the Editor pane" lightbox="../media/edit-js.msft.png":::
    Editing JavaScript in the **Editor** pane  
@@ -280,71 +217,72 @@ The **Editor** pane has the following level of support for various file types:
 | HTML | View and edit. |
 | Images | View. |
 
+To view and edit local JavaScript, HTML, or CSS source files using the Sources tool, so that your changes persist, add files to the Workspace, as described above in [The Filesystem tab, for a local Workspace](#the-filesystem-tab-for-a-local-workspace).
+
 The following subsections are related to the Editor pane:
 *   [Reformat a minified JavaScript file with pretty-print](#reformat-a-minified-javascript-file-with-pretty-print)
 *   [Mapping minified code to your source code, to work with readable source code](#mapping-minified-code-to-your-source-code-to-work-with-readable-source-code)
-*   [Apply or save changes](#apply-or-save-changes)
-*   [Editor commands on the Command Menu](#editor-commands-on-the-command-menu)
-*   [Edit an HTML file](#edit-an-html-file)
+*   [Complex transformations from source code to compiled front-end code](#Complex-transformations-from-source-code-to-compiled-front-end-code)
+*   [Edit a JavaScript file](#edit-a-javascript-file)
 *   [Edit a CSS file](#edit-a-css-file)
+*   [Edit an HTML file](#edit-an-html-file)
+*   [Editor commands on the Command Menu](#editor-commands-on-the-command-menu)
+*   [Display sources even when using a different tool](#display-sources-even-when-using-a-different-tool)
 
 ### Reformat a minified JavaScript file with pretty-print
 
-To use pretty-print to reformat a file to make it readable, click the **Pretty print** button \(![Format](../media/format-icon.msft.png)\) at the bottom of the Editor pane.  For more information, navigate to the section
+To use pretty-print to reformat a file to make it readable, click the **Pretty print** button \(![Format](../media/format-icon.msft.png)\), which is shown as braces, at the bottom of the Editor pane.  Or, if a **Pretty-print** button appears at the top of the Editor pane, with a text label, you can choose that button.
+
+:::image type="complex" source="../media/minified.msft.png" alt-text="The Pretty print button" lightbox="../media/minified.msft.png":::
+   The **Pretty print** button  
+:::image-end:::  
+
+The reformatted file appears in a new tab, with ":formatted" appended to the filename shown in the tab.  You cannot edit the reformatted code.
+
+:::image type="complex" source="../media/pretty-printed.msft.png" alt-text="A pretty-printed (reformatted) JavaScript file" lightbox="../media/pretty-printed.msft.png":::
+   A pretty-printed (reformatted) JavaScript file  
+:::image-end:::  
+
+You can make the reformatted file scroll to the code that you select in the minified file: Close the reformatted file tab, if that tab is open, select code in the minified file in the Editor pane, and then click the **Pretty print** button.  The formatted code appears in a new tab, scrolled to the code which you selected.
+
+For more information, navigate to the section
 [Reformat a minified JavaScript file with pretty-print][DevToolsJavaScriptReferenceReformat] within the article "Use the debugger features".
 
 ### Mapping minified code to your source code, to work with readable source code
-
-If your client-side source code is transformed, so that the server returns different, transformed, hard-to-read (minified) front-end code to the browser, some preprocessors map your compiled code to your source code, so that when you view, debug, and edit the transformed client-side JavaScript code that's returned from the server, the code looks familiar and readable.
 
 Source Maps from preprocessors cause DevTools to load your original JavaScript source files in addition to your minified, transformed JavaScript files that are returned by the server.  You then use your original source files to set breakpoints and step through code.  Meanwhile, Microsoft Edge is actually running your minified code. 
 
 If you right-click a JavaScript file in the **Editor** pane, and then select **Add source map...**, a popup box appears, with a **Source map URL:** field and an **Add** button.
 
-The mapping approach keeps your client-side code readable and debuggable even after you combine, minify, or compile it.
+The mapping approach keeps your front-end code readable and debuggable even after you combine, minify, or compile it.
 For more information, navigate to [Map preprocessed code to source code][DevToolsJavaScriptSourceMaps].
 
-### Apply or save changes
+### Complex transformations from source code to compiled front-end code
 
-For JavaScript changes to take effect, select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\).  DevTools does not rerun a script, so the only JavaScript changes that take effect are changes that you make inside of functions.  
+If you use a framework that involves transformation, such as React, your local source JavaScript might be very different than the front-end JavaScript that's returned by the server.
 
-For example, in the following figure, notice how `console.log('A')` does not run, whereas `console.log('B')` does.  If DevTools re-runs the entire script after making the change, <!-- why/when would DevTools re-run the entire script?  above says "DevTools does not re-run a script" --> then the text `A` is logged to the **Console**.  
+Workspaces are not supported in this scenario.
+
+Source code mapping is supported in this scenario.  In a development environment, your server might include your sourcemaps and original .ts or .jsx files for React.  In those cases, the Sources tool displays the files, but doesn't support editing the files.  When you set breakpoints, the browser actually steps-through your minified JavaScript, but displays your original .ts or .jsx file.
+
+In this scenario, the **Sources** tool may be useful for inspecting and experimenting with the transformed, front-end JavaScript that's returned from the server.  
+
+### Edit a JavaScript file
+
+For JavaScript changes to take effect, select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\).  
+
+DevTools does not re-run a script, so the only JavaScript changes that take effect are changes that you make inside of functions.  For example, in the following figure, we added the following code to the JavaScript that is returned by the server:
+*   We added `console.log('A')` outside of any function.
+*   We added `console.log('B')` inside an `onClick` function.
+We then saved the changes, entered numbers into the form, and then selected the form button.
+
+Notice how `console.log('A')` does not run, whereas `console.log('B')` does run, outputting `B` to the Console.
+
+:::image type="complex" source="../media/edit-js.msft.png" alt-text="Editing JavaScript in the Editor pane" lightbox="../media/edit-js.msft.png":::
+   Editing JavaScript in the **Editor** pane  
+:::image-end:::
 
 By default, your edits are discarded when you refresh the page.  To learn how to save the changes to your file system, navigate to [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex].
-
-### Editor commands on the Command Menu
-
-To go to a line number or symbol in the file: 
-
-In the **Navigator** pane, select the ellipses (...) (**More options**), select **Open File** (**Ctrl+P**), then type any of the following characters:
-
-*   `?` to view options.
-*   \: to **Go to line**.
-*   \@ to **Go to symbol**.
-
-For more information, navigate to [Run commands with the Microsoft Edge DevTools Command Menu](../command-menu/index.md).
-
-### Edit an HTML file
-
-The Sources tool includes a general-purpose text editor that can edit HTML files.
-
-:::image type="complex" source="../media/sources-html-editor.msft.png" alt-text="The HTML editor of the Sources tool" lightbox="../media/sources-html-editor.msft.png":::
-   The HTML editor of the Sources tool
-:::image-end:::  
-
-Editing of an HTML file is enabled in the Sources tool for a local source file that's in a Workspace (on the **Filesystem** tab) or on the **Overrides** tab, as described in these subsections of the present article:
-*   [The Filesystem tab, for a local Workspace](#the-filesystem-tab-for-a-local-workspace)
-*   [The Overrides tab, to override server files by local files](#the-overrides-tab-to-override-server-files-by-local-files)
-
-Editing of an HTML file is not enabled in the Sources tool for the copy of a client-side (front-end) HTML file that is returned by the server.
-
-If you changed a file, an asterisk appears by the filename.  To save changes, select `Ctrl`+`S` (Windows/Linux) or `Command`+`S` (macOS).  Or press `Ctrl`+`Z` (Windows/Linux) or `Command`+`Z` (macOS) to undo changes and make the asterisk disappear.
-
-There are two ways to edit HTML in DevTools:
-*   The Elements tool, in which you work with one HTML element at a time, through a user interface.
-*   The Sources tool, which has a text editor.
-
-The article [DevTools for beginners: Get started with HTML and the DOM](../beginners/html.md) shows HTML editing within a special website that enables HTML editing within the webpage.
 
 ### Edit a CSS file
 
@@ -373,9 +311,43 @@ CSS changes take effect immediately; in most cases, no saving is needed.
 
 *   [DevTools for beginners: Get started with CSS][DevToolsBeginnersCss] - tutorial
 
-### Opening the DevTools code editor when using a tool other than the Sources tool
+### Edit an HTML file
 
-The main place to use the code editor of DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as the **Elements** tool or the **Console** panel, while making changes to your site.  There is a way to have the DevTools code editor open alongside other panels.  
+The Sources tool includes a general-purpose text editor that can edit HTML files.
+
+:::image type="complex" source="../media/sources-html-editor.msft.png" alt-text="The HTML editor of the Sources tool" lightbox="../media/sources-html-editor.msft.png":::
+   The HTML editor of the Sources tool
+:::image-end:::  
+
+Editing of an HTML file is enabled in the Sources tool for a local source file that's in a Workspace (on the **Filesystem** tab) or on the **Overrides** tab, as described in these subsections of the present article:
+*   [The Filesystem tab, for a local Workspace](#the-filesystem-tab-for-a-local-workspace)
+*   [The Overrides tab, to override server files with local files](#the-overrides-tab-to-override-server-files-with-local-files)
+
+Editing of an HTML file is not enabled in the Sources tool for the copy of a front-end HTML file that is returned by the server.
+
+If you changed a file, an asterisk appears by the filename.  To save changes, select `Ctrl`+`S` (Windows/Linux) or `Command`+`S` (macOS).  Or press `Ctrl`+`Z` (Windows/Linux) or `Command`+`Z` (macOS) to undo changes and make the asterisk disappear.
+
+There are two ways to edit HTML in DevTools:
+*   The Elements tool, in which you work with one HTML element at a time, through a user interface.
+*   The Sources tool, which has a text editor.
+
+The article [DevTools for beginners: Get started with HTML and the DOM](../beginners/html.md) shows HTML editing within a special website that enables HTML editing within the webpage.
+
+### Editor commands on the Command Menu
+
+To go to a line number or symbol in the file: 
+
+In the **Navigator** pane, select the ellipses (...) (**More options**), select **Open File** (**Ctrl+P**), then type any of the following characters:
+
+*   `?` to view options.
+*   \: to **Go to line**.
+*   \@ to **Go to symbol**.
+
+For more information, navigate to [Run commands with the Microsoft Edge DevTools Command Menu](../command-menu/index.md).
+
+### Display sources even when using a different tool
+
+The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  Use the **Quick Sources** tool in the [Drawer](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/customize/#drawer).
 
 1.  Choose a tool other than the **Sources** tool, such as the **Elements** tool.  
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  The **Command Menu** opens.  
@@ -409,6 +381,8 @@ The JavaScript Debugger in DevTools, in the **Debugger** pane, is designed to lo
 The following subsections cover the **Debugger** pane or breakpoints:
 *   [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger)
 *   [Advantages of the debugger's Watch and Scope over console.log](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
+*   [Using the debugger of Visual Studio Code](#using-the-debugger-of-visual-studio-code)
+*   [The Debugger for Microsoft Edge extension for Visual Studio Code](#the-debugger-for-microsoft-edge-extension-for-visual-studio-code)
 *   [Articles about debugging](#articles-about-debugging)
 
 ### The basic approach to using a debugger
@@ -459,6 +433,39 @@ When the variable `sum` is in-scope, `sum` and its value are automatically shown
 The debugger gives a richer, more flexible display and environment than a `console.log` statement.  For example, in the Debugger, as you step through the code, you may display and change the values of all currently defined properties and variables, and issue JavaScript statements in the **Console**.  (To display the Console, select **Esc**.)
 
 Breakpoints and Watch expressions are preserved when you refresh the page.
+
+### Using the debugger of Visual Studio Code
+
+To use the more full-featured debugger of Visual Studio Code instead of the DevTools debugger, use Visual Studio Code with the **Microsoft Edge Tools for VS Code** extension for Visual Studio Code.  This extension provides access to the **Elements** and **Network** tools of Microsoft Edge DevTools, from within Microsoft Visual Studio Code.
+
+:::image type="complex" source="../media/microsoft-edge-tools-for-vs-code-extension.msft.png" alt-text="The Microsoft Edge Tools for VS Code extension for Visual Studio Code" lightbox="../media/microsoft-edge-tools-for-vs-code-extension.msft.png":::
+   The **Microsoft Edge Tools for VS Code** extension for Visual Studio Code  
+:::image-end:::  
+
+Launch Microsoft Edge from the Debug view of Visual Studio Code.  Use the Debug view in Visual Studio Code, and access Microsoft Edge DevTools from the Debug view in Visual Studio Code.
+
+This extension supports Workspaces; this extension runs either against the client-side JavaScript that is returned from the server, or against the local source code for the client-side JavaScript.
+
+For more information, navigate to the [Visual Studio Code overview][DevToolsVSCodeIndex].
+
+### The Debugger for Microsoft Edge extension for Visual Studio Code
+
+> ![NOTE] 
+> This extension is deprecated; it will be supported, but not developed further.
+
+With the **Debugger for Microsoft Edge** extension for Visual Studio Code, debug your front-end JavaScript code line by line and see `console.log` statements directly from Visual Studio Code.
+
+:::image type="complex" source="../media/debugger-for-microsoft-edge-extension.msft.png" alt-text="The Debugger for Microsoft Edge extension for Visual Studio Code" lightbox="../media/debugger-for-microsoft-edge-extension.msft.png":::
+   The **Debugger for Microsoft Edge** extension for Visual Studio Code  
+:::image-end:::  
+
+When using the DevTools Sources tool, the JavaScript debugger runs in the DevTools window that's connected to a browser window.
+
+When using this extension for Visual Studio Code, the JavaScript debugger runs in the Visual Studio Code window.
+
+This extension supports Workspaces; this extension runs either against the client-side JavaScript that is returned from the server, or against the local source code for the client-side JavaScript.
+
+For more information, navigate to the [Visual Studio Code overview][DevToolsVSCodeIndex].
 
 ### Articles about debugging
 
