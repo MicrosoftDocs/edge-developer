@@ -4,7 +4,7 @@ description: Walk through how best practices and Accessible Rich Internet Applic
 title: Build | Accessibility
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
@@ -138,7 +138,7 @@ The OpenAjax Alliance website is an excellent resource for verifying the rules f
 
 ### Accessibility Techniques & Tools
 
-#### [Accessibility: Creating accessible extension icons for Microsoft Edge](../../edgehtml/extensions/guides/accessibility.md)
+#### [Accessibility: Creating accessible extension icons for Microsoft Edge](/archive/microsoft-edge/legacy/extensions/guides/accessibility.md)
 
 Get guidance on creating accessible extensions icons for Microsoft Edge.
 
