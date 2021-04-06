@@ -433,7 +433,7 @@ The Debugger supports standard debugging actions, such as:
 *   Watching the values of JavaScript expressions.
 *   Viewing the call stack (the sequence of function calls so far).
 
-The JavaScript Debugger in DevTools, in the **Debugger** pane, is designed to look and feel and work like 
+The JavaScript Debugger in DevTools, in the **Debugger** pane, is designed to look, feel, and work like 
 [the debugger in Visual Studio Code][CodeVisualStudioComDocsEditorDebugging] and
 [the debugger in Visual Studio][DMCVisualStudioDebuggerNavigatingThroughCodeWithTheDebugger].
 
