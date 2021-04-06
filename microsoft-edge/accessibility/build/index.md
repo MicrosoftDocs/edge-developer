@@ -138,7 +138,7 @@ The OpenAjax Alliance website is an excellent resource for verifying the rules f
 
 ### Accessibility Techniques & Tools
 
-#### [Accessibility: Creating accessible extension icons for Microsoft Edge](/archive/microsoft-edge/legacy/extensions/guides/accessibility.md)
+#### [Accessibility: Creating accessible extension icons for Microsoft Edge](/archive/microsoft-edge/legacy/developer/extensions/guides/accessibility)
 
 Get guidance on creating accessible extensions icons for Microsoft Edge.
 
