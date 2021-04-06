@@ -18,7 +18,7 @@ You may now take a resource of the current webpage and store it locally.  When y
 
 ## Setting up your local folder to store Overrides  
 
-1.  In the **Sources** tool, in the **Explorer** pane (on the left), choose the **Overrides** tab.  If the **Overrides** tab is not displayed, choose the <code>&#x0226B;</code><!--`≫`--> icon to list the additional tabs.  
+1.  In the **Sources** tool, in the **Navigator** pane (on the left), choose the **Overrides** tab.  If the **Overrides** tab is not displayed, choose the <code>&#x0226B;</code><!--`≫`--> icon to list the additional tabs.  
     
     :::row:::
        :::column span="":::
