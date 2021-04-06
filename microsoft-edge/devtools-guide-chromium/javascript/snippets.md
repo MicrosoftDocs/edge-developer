@@ -59,7 +59,7 @@ In the following figure, the webpage appears after running the Snippet.  The **C
 
 ## Open the Snippets tab  
 
-The **Snippets** tab, in the **Explorer** pane on the left, lists your Snippets.  When you want to edit a Snippet, you need to open it from the **Snippets** tab.  
+The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets.  When you want to edit a Snippet, you need to open it from the **Snippets** tab.  
 
 :::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="The Snippets tab" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
    The **Snippets** tab  
@@ -67,13 +67,13 @@ The **Snippets** tab, in the **Explorer** pane on the left, lists your Snippets.
 
 ### Open the Snippets tab with a mouse  
 
-1.  Choose the **Sources** tab.  The **Sources** tool appears.  In the **Explorer** pane (on the left), the **Page** tab is usually selected, by default.  
+1.  Choose the **Sources** tab.  The **Sources** tool appears.  In the **Navigator** pane (on the left), the **Page** tab is usually selected, by default.  
     
     :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="The Sources tool with the Page tab open on the left" lightbox="../media/javascript-sources-page-pane.msft.png":::
        The **Sources** tool with the **Page** tab open on the left  
     :::image-end:::  
     
-1.  In the **Explorer** pane (on the left), choose the **Snippets** tab.  To access the **Snippets** option, you may need to choose **More tabs** \(![More tabs](../media/more-tabs-icon.msft.png)\).  
+1.  In the **Navigator** pane (on the left), choose the **Snippets** tab.  To access the **Snippets** option, you may need to choose **More tabs** \(![More tabs](../media/more-tabs-icon.msft.png)\).  
     
 ### Open the Snippets tab with the Command Menu  
 
