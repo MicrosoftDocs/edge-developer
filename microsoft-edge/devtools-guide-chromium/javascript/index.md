@@ -63,8 +63,8 @@ The **Sources** tool UI has three parts.
    The 3 parts of the **Sources** tool UI  
 :::image-end:::  
 
-1.  The **Explorer** pane \(Section 1 in the previous figure\).  Every file that the webpage requests is listed here.  
-1.  The **Editor** pane \(Section 2 in the previous figure\).  After selecting a file in the **Explorer** pane, the contents of that file are displayed here.  
+1.  The **Navigator** pane \(Section 1 in the previous figure\).  Every file that the webpage requests is listed here.  
+1.  The **Editor** pane \(Section 2 in the previous figure\).  After selecting a file in the **Navigator** pane, the contents of that file are displayed here.  
 1.  The **Debugger** pane \(Section 3 in the previous figure\).  Various tools for inspecting the JavaScript for the webpage.  If your DevTools window is wide, this pane is displayed to the right of the **Editor** pane.  
     
 ## Step 3: Pause the code with a breakpoint  
