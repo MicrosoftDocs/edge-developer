@@ -393,7 +393,7 @@ The Debugger includes the **Debugger** pane, along with breakpoints that are set
    The **Debugger** pane of the Sources tool  
 :::image-end:::  
 
-Step through experimental changes to the code, while watching any JavaScript expressions you specify.  Watch and manually change variable values, and automatically show which variables are currently in-scope for the current line of code.
+Step through the code, while watching any JavaScript expressions you specify.  Watch and manually change variable values, and automatically show which variables are currently in-scope for the current line of code.
 
 The Debugger supports standard debugging actions, such as:  
 *   Setting breakpoints, to pause code.
@@ -402,7 +402,7 @@ The Debugger supports standard debugging actions, such as:
 *   Watching the values of JavaScript expressions.
 *   Viewing the call stack (the sequence of function calls so far).
 
-The JavaScript Debugger in DevTools, in the **Debugger** pane, is designed to look and feel and work like 
+The JavaScript Debugger in DevTools, in the **Debugger** pane, is designed to look, feel, and work like 
 [the debugger in Visual Studio Code][CodeVisualStudioComDocsEditorDebugging] and
 [the debugger in Visual Studio][DMCVisualStudioDebuggerNavigatingThroughCodeWithTheDebugger].
 
