@@ -24,49 +24,15 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Sources tool overview  
 
-<!-- Outline:
-# #  Arranging the panes of the Sources tool
-# # #  Maximizing the DevTools window
-
-# #  The Explorer pane, to navigate files
-# # #  Explorer commands on the Command Menu
-# # #  The Page tab, to explore resources that construct the current webpage
-# # # #  Group files by folder or as a flat list
-# # #  The Filesystem tab, for a local Workspace
-# # # #  Sources tool without a Workspace  [move up into Page tab?]
-# # # #  Complex transformations from source code to compiled front-end code
-# # #  The Overrides tab, to override server files by local files
-# # #  The Content scripts tab, for Microsoft Edge extensions
-# # #  The Snippets tab, to run JavaScript code snippets on any page
-
-# #  The Editor pane, to view or edit files
-# # #  Reformat a minified JavaScript file with pretty-print
-# # #  Mapping minified code to your source code, to work with readable source code
-# # #  Apply or save changes
-# # #  Source mapping
-# # #  Editor commands on the Command Menu
-# # #  Edit an HTML file
-# # #  Edit a CSS file
-# # #  Opening the DevTools code editor when using a tool other than the Sources tool
-
-# #  The Debugger pane, to debug JavaScript code
-# # #  The basic approach to using a debugger
-# # #  Advantages of the debugger's Watch and Scope over console.log
-# # #  Articles about debugging
-
-# #  Extensions for Visual Studio Code, as an alternative to DevTools Sources tool
-# # #  The Debugger for Microsoft Edge extension for Visual Studio Code
-# # #  The Microsoft Edge Tools for VS Code extension for Visual Studio Code -->
-
-Use the **Sources** tool to view, modify, and debug JavaScript that's returned by the server, and to inspect the resources that make up the current webpage.  To use the **Sources** tool as a development environment, add source files to a Workspace.  The Sources tool has three panes:
+Use the **Sources** tool to view, modify, and debug front-end JavaScript, and inspect the resources that make up the current webpage.  The Sources tool has three panes:
 
 | Pane | Actions |
 |---|---|
-| **Explorer** pane | Navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.  Optionally, set up a local Workspace to save changes directly to source files. |
-| **Editor** pane | View JavaScript, HTML, CSS, and other files that are returned from the server.  Make experimental edits to the JavaScript or CSS code.  These changes are preserved (in the DevTools sandbox) until page refresh, or are saved to a local Workspace.  When using a Workspace or Overrides, you can edit HTML files as well. |
-| **Debugger** pane | Use the JavaScript Debugger to step through the JavaScript code, including experimental edits, while watching any JavaScript expressions you specify.  Watch and manually change variable values, and automatically show which variables are currently in-scope for the current line of code. |
+| **Navigator** pane | Navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.  Optionally, set up a local Workspace to save changes directly to source files. |
+| **Editor** pane | View JavaScript, HTML, CSS, and other files that are returned from the server.  Make experimental edits to JavaScript or CSS.  These changes are preserved until page refresh, unless saved to a local file with Workspaces. When using Workspaces or Overrides, you can edit HTML files as well. |
+| **Debugger** pane | Use the JavaScript Debugger to set breakpoints, pause running JavaScript, and step through the code, including any edits you have made, while watching any JavaScript expressions you specify.  Watch and manually change variable values, and automatically show which variables are currently in-scope for the current line of code. |
 
-The following image shows the **Explorer** pane highlighted with a red box on the left, the **Editor** pane highlighted in the middle, and the **Debugger** pane highlighted on the right.  On the far left side is the main part of the browser window, showing the rendered webpage grayed-out because the debugger is paused on a breakpoint.
+The following image shows the **Navigator** pane highlighted with a red box on the left, the **Editor** pane highlighted in the middle, and the **Debugger** pane highlighted on the right.  On the far left side is the main part of the browser window, showing the rendered webpage grayed-out because the debugger is paused on a breakpoint.
 
 :::image type="complex" source="../media/debugging-highlights.msft.png" alt-text="Navigate, view, edit, and debug JavaScript returned by the server" lightbox="../media/debugging-highlights.msft.png":::
    Navigate, view, edit, and debug JavaScript returned by the server  
@@ -76,9 +42,9 @@ The following image shows the **Explorer** pane highlighted with a red box on th
 
 The **Sources** tool has three panes that are placed as follows, depending on whether the DevTools window is narrow or wide:
 
-| Pane | Placement in narrow layout | Placement in wide layout |
+| Pane | Placement when DevTools are less than 680px wide | Placement when DevTools are more than 680px wide |
 |---|---|---|
-| **Explorer** | Upper left | Left |
+| **Navigator** | Upper left | Left |
 | **Editor** | Upper right | Middle |
 | **Debugger** | Bottom | Right |
 
@@ -126,29 +92,32 @@ To maximize the DevTools window:
 
 *   [Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left)][DevToolsCustomizePlacement]
 
-## The Explorer pane, to navigate files
+## The Navigator pane, to navigate files
 
-Use the **Explorer** pane (on the left) to navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.  
+Use the **Navigator** pane (on the left) to navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.  
 
-:::image type="complex" source="../media/explorer-pane.msft.png" alt-text="The Explorer pane" lightbox="../media/explorer-pane.msft.png":::
-   The **Explorer** pane
+:::image type="complex" source="../media/navigator-pane.msft.png" alt-text="The Navigator pane" lightbox="../media/navigator-pane.msft.png":::
+   The **Navigator** pane
 :::image-end:::  
 
 Optionally, set up a local Workspace to save changes directly to source files.
 
-\>> (**More tabs**) - This "double chevron" button displays the remaining tabs of the Explorer pane when the display is narrow.
+\>> (**More tabs**) - This "double chevron" button displays the remaining tabs of the Navigator pane when the display is narrow.
 
-The following subsections are related to the Explorer pane:
-*   [Explorer commands on the Command Menu](#explorer-commands-on-the-command-menu)
+The following subsections are related to the Navigator pane:
+*   [Navigator commands on the Command Menu](#navigator-commands-on-the-command-menu)
 *   [The Page tab, to explore resources that construct the current webpage](#the-page-tab-to-explore-resources-that-construct-the-current-webpage)
+    *   [Group files by folder or as a flat list](#group-files-by-folder-or-as-a-flat-list)
 *   [The Filesystem tab, for a local Workspace](#the-filesystem-tab-for-a-local-workspace)
+    *   [Sources tool without a Workspace](#Sources-tool-without-a-Workspace)
+    *   [Complex transformations from source code to compiled front-end code](#Complex-transformations-from-source-code-to-compiled-front-end-code)
 *   [The Overrides tab, to override server files by local files](#the-overrides-tab-to-override-server-files-by-local-files)
 *   [The Content scripts tab, for Microsoft Edge extensions](#the-content-scripts-tab-for-microsoft-edge-extensions)
 *   [The Snippets tab, to run JavaScript code snippets on any page](#the-snippets-tab-to-run-javascript-code-snippets-on-any-page)
 
-### Explorer commands on the Command Menu
+### Navigator commands on the Command Menu
 
-Next to the tabs of the **Explorer** pane, select the **...** (**More options**) button, then select **Open File**.
+Next to the tabs of the **Navigator** pane, select the **...** (**More options**) button, then select **Open File**.
 The **Command Menu** appears, and lists all the resources that are listed in the **Page** tab.
 
 To display and pick from a list of all .js files, enter `.js`.
@@ -159,13 +128,13 @@ For more information, navigate to [Run commands with the Microsoft Edge DevTools
 
 ### The Page tab, to explore resources that construct the current webpage
 
-Use the **Page** tab of the **Explorer** pane to explore the file system that's returned from the server to construct the current webpage, and select JavaScript files to view, edit, and debug.  The **Page** tab lists all of the resources that the page has loaded.
+Use the **Page** tab of the **Navigator** pane to explore the file system that's returned from the server to construct the current webpage, and select JavaScript files to view, edit, and debug.  The **Page** tab lists all of the resources that the page has loaded.
 
 :::image type="complex" source="../media/sources-page-pane.msft.png" alt-text="The Page tab" lightbox="../media/sources-page-pane.msft.png":::
    The **Page** tab
 :::image-end:::  
 
-How the **Page** tab is organized, in the tree in the **Explorer** pane:
+How the **Page** tab is organized, in the tree in the **Navigator** pane:
 
 *   The top level is indicated as a **window** icon labeled as `top`, and represents an [HTML frame][W3CHtml4Frames]; `top` represents the main document frame.  
 
@@ -185,11 +154,11 @@ To display a file in the **Editor** pane, choose a file in the **Page** tab.  Yo
 
 The **Page** tab displays files or resources grouped by server and directory, or as a flat list.
 
-Next to the tabs on the Explorer pane, select the **...** (**More options**) button, then select or clear **Group by folder**.
+Next to the tabs on the Navigator pane, select the **...** (**More options**) button, then select or clear **Group by folder**.
 
 ### The Filesystem tab, for a local Workspace
 
-Use the **Filesystem** tab of the **Explorer** pane to set up a Workspace to save changes to local files, so that changes you make in DevTools get saved to the code on your file system.
+Use the **Filesystem** tab of the **Navigator** pane to set up a Workspace to save changes to local files, so that changes you make in DevTools get saved to the code on your file system.
 
 <!-- to set up this capture: per Workspaces demo, copied 3 files locally to ~/Desktop/app/, installed Python 3.x, opened bash shell, cd'd to ~/Desktop/app, > py -m http.server (py command, not python), in browser go to localhost:8000 (not 8080), the HTML webpage loads, then green dots appear next to Filesystem tab's html/css/js files and also on the Page tab's files. -->
 
@@ -223,7 +192,7 @@ When you find a fix that works for the client-side JavaScript that is returned b
 
 #### Complex transformations from source code to compiled front-end code
 
-<!-- todo: Does this section have to do with Workspace?  if not, maybe move this section elsewhere, to preserve the series of 5 sections for the 5 tabs of the Explorer pane. -->
+<!-- todo: Does this section have to do with Workspace?  if not, maybe move this section elsewhere, to preserve the series of 5 sections for the 5 tabs of the Navigator pane. -->
 
 If you use a framework that involves transformation, such as React, your local source JavaScript might be very different than the client-side JavaScript that's returned by the server.
 *   A Workspace is not supported in this scenario.
@@ -233,12 +202,12 @@ In this scenario, the **Sources** tool may be useful for inspecting and experime
 
 ### The Overrides tab, to override server files by local files
 
-Use the **Overrides** tab of the **Explorer** pane to override page assets (such as images) by files from a local folder.
+Use the **Overrides** tab of the **Navigator** pane to override page assets (such as images) by files from a local folder.
 
 This is a way of changing what the server sends, after the server returns assets.  
 
-:::image type="complex" source="../media/overrides-tab.msft.png" alt-text="The Overrides tab of the Explorer pane" lightbox="../media/overrides-tab.msft.png":::
-   The **Overrides** tab of the **Explorer** pane
+:::image type="complex" source="../media/overrides-tab.msft.png" alt-text="The Overrides tab of the Navigator pane" lightbox="../media/overrides-tab.msft.png":::
+   The **Overrides** tab of the **Navigator** pane
 :::image-end:::  
 
 **Overrides** is similar to Workspaces.  Use Overrides when you want to experiment with changes to a webpage, and you need to retain the changes after page refresh, but you do not care about mapping your changes to the source code of the webpage.  
@@ -253,17 +222,17 @@ A file that overrides a file that is returned by the server is indicated by a pu
 
 ### The Content scripts tab, for Microsoft Edge extensions
 
-Use the **Content scripts** tab of the **Explorer** pane to view any [content scripts][MDNContentScripts] that were loaded by a Microsoft Edge extension that you installed. 
+Use the **Content scripts** tab of the **Navigator** pane to view any [content scripts][MDNContentScripts] that were loaded by a Microsoft Edge extension that you installed. 
 
-:::image type="complex" source="../media/content-scripts-tab.msft.png" alt-text="The Content scripts tab of the Explorer pane" lightbox="../media/content-scripts-tab.msft.png":::
-   The **Content scripts** tab of the **Explorer** pane
+:::image type="complex" source="../media/content-scripts-tab.msft.png" alt-text="The Content scripts tab of the Navigator pane" lightbox="../media/content-scripts-tab.msft.png":::
+   The **Content scripts** tab of the **Navigator** pane
 :::image-end:::  
 
 If, during debugging, you step into code that you don't recognize, you might want to mark that code as Library code, to avoid stepping into that code.  For more information, navigate to [Mark content scripts as Library code][DevToolsJavaScriptGuidesMarkContentScriptsLibraryCode].
 
 ### The Snippets tab, to run JavaScript code snippets on any page
 
-Use the **Snippets** tab of the **Explorer** pane to create and save JavaScript code snippets which you may run on any webpage, such as code to include the jQuery library.
+Use the **Snippets** tab of the **Navigator** pane to create and save JavaScript code snippets which you may run on any webpage, such as code to include the jQuery library.
 
 :::image type="complex" source="../media/snippet.msft.png" alt-text="A Snippet that inserts the jQuery library into a page" lightbox="../media/snippet.msft.png":::
    A Snippet that inserts the jQuery library into a page  
@@ -283,7 +252,7 @@ You may save this code in a **Snippet** and easily run it whenever you need to. 
 
 There are multiple ways to run a Snippet:
 
-*   In the **Explorer** pane, select the **Snippets** tab, then select the snippets file to open it.  Then select **Run** \(![The Run button](../media/run-snippet-icon.msft.png)\).  
+*   In the **Navigator** pane, select the **Snippets** tab, then select the snippets file to open it.  Then select **Run** \(![The Run button](../media/run-snippet-icon.msft.png)\).  
 *   Press `Ctrl`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS) to open the [Command Menu][DevtoolsGuideChromiumCommandMenuIndex], delete the `>` character, type `!`, type the name of your Snippet, and then select `Enter`.  
 
 Snippets are similar to bookmarklets.
@@ -347,7 +316,7 @@ By default, your edits are discarded when you refresh the page.  To learn how to
 
 To go to a line number or symbol in the file: 
 
-In the **Explorer** pane, select the ellipses (...) (**More options**), select **Open File** (**Ctrl+P**), then type any of the following characters:
+In the **Navigator** pane, select the ellipses (...) (**More options**), select **Open File** (**Ctrl+P**), then type any of the following characters:
 
 *   `?` to view options.
 *   \: to **Go to line**.
@@ -410,7 +379,7 @@ The main place to use the code editor of DevTools is within the **Sources** tool
 
 1.  Choose a tool other than the **Sources** tool, such as the **Elements** tool.  
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  The **Command Menu** opens.  
-1.  Type `QS`, then choose **Show Quick Source**.  At the bottom of the DevTools window, the **Quick Source** panel appears, displaying the last file you edited in the **Sources** tool, within the code editor from the **Sources** tool.  
+1.  Type `Quick Source`, and then choose **Show Quick Source**.  At the bottom of the DevTools window, the **Quick Source** panel appears, displaying the last file you edited in the **Sources** tool, within the code editor from the **Sources** tool.  
 1.  Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  
 
 ## The Debugger pane, to debug JavaScript code
@@ -459,7 +428,7 @@ As shown in the tutorial, to get into the "Paused" mode of the debugger, do some
 
 1. Select the **Sources** tab, to show the Sources tool.
 
-1. In the **Explorer** pane on the left, select the **Page** tab, then select the JavaScript file (`get-started.js`, in this case).
+1. In the **Navigator** pane on the left, select the **Page** tab, then select the JavaScript file (`get-started.js`, in this case).
 
 1. In the **Editor** pane, select a line number near a suspect line of code, such as `var sum = addend1 + addend2;`, to set a breakpoint on that line.
 
@@ -500,43 +469,6 @@ The following articles cover the Debugger pane and breakpoints:
 *   [Use the debugger features][DevToolsJavaScriptReference] - How to use the Debugger to set breakpoints, step through code, view and modify variable values, watch JavaScript expressions, and view the call stack (the sequence of function calls so far).
 
 *   [Pause your code with breakpoints][DevToolsJavaScriptBreakpoints] - How to set basic and specialized breakpoints in the debugger.
-
-## Extensions for Visual Studio Code, as an alternative to DevTools Sources tool
-
-The following subsections cover extensions for Visual Studio Code that provide alternatives to using the DevTools Sources tool directly:
-*   [The Debugger for Microsoft Edge extension for Visual Studio Code](#the-debugger-for-microsoft-edge-extension-for-visual-studio-code)
-*   [The Microsoft Edge Tools for VS Code extension for Visual Studio Code](#the-microsoft-edge-tools-for-vs-code-extension-for-visual-studio-code)
-
-### The Debugger for Microsoft Edge extension for Visual Studio Code
-
-With the **Debugger for Microsoft Edge** extension for Visual Studio Code, debug your front-end JavaScript code line by line and see `console.log` statements directly from Visual Studio Code.
-
-:::image type="complex" source="../media/debugger-for-microsoft-edge-extension.msft.png" alt-text="The Debugger for Microsoft Edge extension for Visual Studio Code" lightbox="../media/debugger-for-microsoft-edge-extension.msft.png":::
-   The **Debugger for Microsoft Edge** extension for Visual Studio Code  
-:::image-end:::  
-
-As an alternative to debugging by using the DevTools Sources tool, you can do the same debugging within Visual Studio code, by using this extension.
-
-*   When using the DevTools Sources tool, the JavaScript debugger runs in the DevTools window that's connected to a browser window.
-*   When using this extension for Visual Studio Code, the JavaScript debugger runs in the Visual Studio Code window.
-
-This extension supports Workspaces; this extension runs either against the client-side JavaScript that is returned from the server, or against the local source code for the client-side JavaScript.
-
-For more information, navigate to the [Visual Studio Code overview][DevToolsVSCodeIndex].
-
-### The Microsoft Edge Tools for VS Code extension for Visual Studio Code
-
-Use the **Microsoft Edge Tools for VS Code** extension for Visual Studio Code to access Microsoft Edge DevTools from within Microsoft Visual Studio Code. This extension provides access to the **Elements** and **Network** tools of Microsoft Edge DevTools.
-
-:::image type="complex" source="../media/microsoft-edge-tools-for-vs-code-extension.msft.png" alt-text="The Microsoft Edge Tools for VS Code extension for Visual Studio Code" lightbox="../media/microsoft-edge-tools-for-vs-code-extension.msft.png":::
-   The **Microsoft Edge Tools for VS Code** extension for Visual Studio Code  
-:::image-end:::  
-
-Launch Microsoft Edge from the Debug view of Visual Studio Code.  Use the Debug view in Visual Studio Code, and access Microsoft Edge DevTools from the Debug view in Visual Studio Code.
-
-This extension supports Workspaces; this extension runs either against the client-side JavaScript that is returned from the server, or against the local source code for the client-side JavaScript.
-
-For more information, navigate to the [Visual Studio Code overview][DevToolsVSCodeIndex].
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
