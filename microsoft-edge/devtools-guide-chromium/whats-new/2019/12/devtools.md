@@ -3,7 +3,7 @@ description: Accessibility improvements, using the DevTools in other languages, 
 title: What's new in DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/12/2021
+ms.date: 04/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -320,10 +320,6 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
-<!-- image links -->  
-
-<!--[../../images/2019/12/wasm.msft.png]: ../../images/2019/12/wasm.msft.png "Figure: The new DWARF-powered WebAssembly debugging"  -->
-
 <!-- links -->  
 
 [DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
@@ -331,7 +327,6 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevToolsDeviceModeIndex]: /microsoft-edge/devtools-guide-chromium/device-mode/index#simulate-a-mobile-viewport "Simulate a mobile viewport - Simulate mobile devices with Device Mode in Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsNetworkIndex]: /microsoft-edge/devtools-guide-chromium/network/index "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsNetworkReferenceViewInitiatorsDependencies]: /microsoft-edge/devtools-guide-chromium/network/reference#view-initiators-and-dependencies "View initiators and dependencies - Network Analysis Reference | Microsoft Docs"  
-[DevGuideEdgeHtmlWhatsNew]: /microsoft-edge/dev-guide/whats-new "What's New in EdgeHTML | Microsoft Docs"  
 [VisualStudioCodeDebuggerEdgeExtension]: /microsoft-edge/visual-studio-code/debugger-for-edge "Debugger for Microsoft Edge Visual Studio Code extension | Microsoft Docs"  
 [VisualStudioCodeElementEdgeExtension]: /microsoft-edge/visual-studio-code/elements-for-edge "Elements for Microsoft Edge Visual Studio Code extension | Microsoft Docs"  
 
