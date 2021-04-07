@@ -53,7 +53,7 @@ To open and explore the DevTools, use one any of the following actions.
 
 There are two main ways to interact with the DevTools.
 *   Use the mouse  
-*   [keyboard shortcuts][DevtoolsGuideShortcutsIndex]  Keyboard shortcuts provide a quick way to access functionality and are needed for accessibility.  The Microsoft Edge DevTools team works hard to make all the tools available using the keyboard and assistive technologies such as screen readers.  For more information about how to open the different features in the DevTools, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsGuideOpenIndex].  
+*   [Keyboard shortcuts][DevtoolsGuideShortcutsIndex].  Keyboard shortcuts provide a quick way to access functionality and are needed for accessibility.  The Microsoft Edge DevTools team works hard to make all the tools available using the keyboard and assistive technologies such as screen readers.  For more information about how to open the different features in the DevTools, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsGuideOpenIndex].  
 
 ## Dock the DevTools in your browser  
 
