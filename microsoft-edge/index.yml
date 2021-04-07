@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 02/17/2021
+  ms.date: 04/06/2021
   ms.localizationpriority: high
 
 # highlightedContent section (optional)
@@ -267,4 +267,4 @@ additionalContent:
         - title: Microsoft Edge Legacy documentation
           links:
             - text: Microsoft Edge Legacy documentation
-              url: /microsoft-edge/edgehtml/index
+              url: /archive/microsoft-edge/legacy/developer/
