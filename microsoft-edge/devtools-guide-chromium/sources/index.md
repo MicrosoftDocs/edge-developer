@@ -214,12 +214,12 @@ The **Editor** pane has the following level of support for various file types:
 | HTML | View and edit. |
 | Images | View. |
 
-By default, edits are discarded when you refresh the page.  To learn how to save the changes to your file system, navigate to [The Filesystem tab, for a local Workspace](#the-filesystem-tab-for-a-local-workspace), above.
+By default, edits are discarded when you refresh the page.  To learn how to save the changes to your file system, navigate to [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace), above.
 
 The following subsections are related to the Editor pane:
 *   [Reformat a minified JavaScript file with pretty-print](#reformat-a-minified-javascript-file-with-pretty-print)
 *   [Mapping minified code to your source code to show readable code](#mapping-minified-code-to-your-source-code-to-show-readable-code)
-*   [Complex transformations from source code to compiled front-end code](#Complex-transformations-from-source-code-to-compiled-front-end-code)
+*   [Complex transformations from source code to compiled front-end code](#complex-transformations-from-source-code-to-compiled-front-end-code)
 *   [Edit a JavaScript file](#edit-a-javascript-file)
 *   [Edit a CSS file](#edit-a-css-file)
 *   [Edit an HTML file](#edit-an-html-file)
@@ -329,8 +329,8 @@ The Sources tool includes a general-purpose text editor that can edit HTML files
 :::image-end:::  
 
 Editing of an HTML file is enabled in the Sources tool for a local source file that's in a Workspace (on the **Filesystem** tab) or on the **Overrides** tab, as described in these subsections of the present article:
-*   [The Filesystem tab, for a local Workspace](#the-filesystem-tab-for-a-local-workspace)
-*   [The Overrides tab, to override server files with local files](#the-overrides-tab-to-override-server-files-with-local-files)
+*   [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
+*   [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
 
 Editing of an HTML file is not enabled in the Sources tool for the copy of a front-end HTML file that is returned by the server.
 
