@@ -3,7 +3,7 @@ description: JavaScript errors are reported by developer tools and debug each in
 title: Tracking down errors using the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2021
+ms.date: 04/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -18,13 +18,13 @@ If you open DevTools in the browser, you get a button on the top right that indi
    DevTools flags an error on the current webpage  
 :::image-end:::  
 
-Choose the button takes you to the **Console** and gives you more information about the error.  
+Choose the button to take you to the **Console** and give you more information about the error.  
 
 :::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools gives detailed information about the error in the Console" lightbox="../media/console-debug-displays-error.msft.png":::
    DevTools gives detailed information about the error in the **Console**  
 :::image-end:::  
 
-From this information, you may gather that the error is on line 16 of the file named `error.html`.  If you choose the `error.html:16` link on the right the **Console** takes you directly to the Sources tool and highlights the problematic line of code.  
+From the information, you may gather that the error is on line 16 of the file named `error.html`.  If you choose the `error.html:16` link on the right of the **Console**, it takes you to the **Sources** tool and highlights the line of code with the error.  
 
 :::image type="complex" source="../media/console-debug-displays-in-sources.msft.png" alt-text="The Sources tool highlights the line of code that causes the error" lightbox="../media/console-debug-displays-in-sources.msft.png":::
    The **Sources** tool highlights the line of code that causes the error  
@@ -32,7 +32,7 @@ From this information, you may gather that the error is on line 16 of the file n
 
 The script tries to get the first `h2` element in the document and paint a red border around it.  But no `h2` element exists, so the script fails.  
 
-## Track down reported network issues  
+## Find and debug network issues  
 
 Other errors that the **Console** reports are network errors.  Navigate to the [Network Error Example][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorHtml] to display that in action.  
 
@@ -40,28 +40,33 @@ Other errors that the **Console** reports are network errors.  Navigate to the [
    **Console** displays a Network and a JavaScript error  
 :::image-end:::  
 
-The table still states `loading` but nothing happens since the data was not loaded.  In the **Console** you may display two errors, a network error starting with `GET` followed by a URL and a `Uncaught (in promise) TypeError: data.forEach is not a function` error.  
+The table displays `loading`, but nothing changes on the webpage because the data is never retrieved.  In the **Console**, the following two errors occurred.  
 
-:::image type="complex" source="../media/console-debug-network-error-code-line.msft.png" alt-text="Choose the code line reported with the error gets you to the Sources tool" lightbox="../media/console-debug-network-error-code-line.msft.png":::
-   Choose the code line reported with the error gets you to the **Sources** tool  
-:::image-end:::  
+*   A network error that starts with `GET` HTTP method followed by a URI.  
+*   An `Uncaught (in promise) TypeError: data.forEach is not a function` error.  
+    
+If you choose the `network-error.html:40` link in the **Console**, DevTools takes you to the **Sources** tool.  Activate the **error** \(`x`\) button to display the error information.  The problematic line of code that is highlighted and followed by an **error** \(`x`\) button.  To display the the `Failed to load resource: the server responded with a status of 404 ()` error message, choose the **error** \(`x`\) button.  
 
-If you choose the `network-error.html:40` link in the **Console**, DevTools will take you to the **Sources** tool.  There you may display the problematic code line highlighted followed by an `x` icon.  If you choose that one you get the `Failed to load resource: the server responded with a status of 404 ()` error message.  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../media/console-debug-network-error-code-line.msft.png" alt-text="Choose the link to the webpage and code where the error occurs line opens the Sources tool" lightbox="../media/console-debug-network-error-code-line.msft.png":::
+         Choose the link to the webpage and code where the error occurs line opens the **Sources** tool  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../media/console-debug-network-error-sources.msft.png" alt-text="To find the error in JavaScript, use the Sources tool" lightbox="../media/console-debug-network-error-sources.msft.png":::
+         To find the error in JavaScript, use the **Sources** tool  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::
 
-:::image type="complex" source="../media/console-debug-network-error-sources.msft.png" alt-text="Find the error in JavaScript using the Sources tool" lightbox="../media/console-debug-network-error-sources.msft.png":::
-   Find the error in JavaScript using the **Sources** tool  
-:::image-end:::  
+In the example, the error informs you that the requested URL is not found.  Next, complete the following actions to open the **Network** tool.  
 
-The error means the requested URL was not found.  
-
-:::image type="complex" source="../media/console-debug-network-error-url.msft.png" alt-text="Console displays a 404 error that a resource was not loaded" lightbox="../media/console-debug-network-error-url.msft.png":::
-   **Console** displays a 404 error that a resource was not loaded  
-:::image-end:::  
-
-If you go back to the **Console** and choose the URL, you get to the **Network** tool.  There you may display the Network information in a lot more detail.  
-
-:::image type="complex" source="../media/console-debug-network-error-network.msft.png" alt-text="Choose a URL that was not loaded (displayed in red) takes you to the Network tool" lightbox="../media/console-debug-network-error-network.msft.png":::
-   Choose a URL that was not loaded \(displayed in red\) takes you to the **Network** tool  
+1.  Open the **Console**.  
+1.  Choose the URI associated with the error.  
+    
+:::image type="complex" source="../media/console-debug-network-error-url.msft.png" alt-text="Console displays an HTTP status code of error that a resource was not loaded" lightbox="../media/console-debug-network-error-url.msft.png":::
+   **Console** displays an HTTP status code of 404 error that a resource was not loaded  
 :::image-end:::  
 
 :::row:::
@@ -77,28 +82,28 @@ If you go back to the **Console** and choose the URL, you get to the **Network**
     :::column-end:::
 :::row-end:::  
 
-What was the problem?  Turns out you have a double `/` in the requested URL after `repos`.  If you go back to the **Sources** tool, you may display that the problem is line 26 where you have a trailing `/` at the end of the base URL.  
+What was the problem?  Two slash characters \(`//`\) occur in the requested URI after the word `repos`.  Open the **Sources** tool and inspect line 26.  A trailing slash character \(`/`\) occurs at the end of the base URI.  
 
-:::image type="complex" source="../media/console-debug-network-error-code-error.msft.png" alt-text="The problematic line displays in the source code" lightbox="../media/console-debug-network-error-code-error.msft.png":::
-   The problematic line displays in the source code  
+:::image type="complex" source="../media/console-debug-network-error-code-error.msft.png" alt-text="The Source tools displays the line of code with the error" lightbox="../media/console-debug-network-error-code-error.msft.png":::
+   The Source tools displays the line of code with the error  
 :::image-end:::  
 
-If you navigate to the working version of the script [Network Error Fixed Example][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorFixedHtml], you may display that all is working fine.  
+Navigate to the fixed example of the [JavaScript error messaging in Console tool][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorFixedHtml] and review that no errors occur in the **Console**.  
 
-:::image type="complex" source="../media/console-debug-network-error-fixed.msft.png" alt-text="The example without any errors, load information from GitHub and display it" lightbox="../media/console-debug-network-error-fixed.msft.png":::
-   The example without any errors, load information from GitHub and display it  
+:::image type="complex" source="../media/console-debug-network-error-fixed.msft.png" alt-text="The example without any errors loads information from GitHub and displays it" lightbox="../media/console-debug-network-error-fixed.msft.png":::
+   The example without any errors loads information from GitHub and displays it  
 :::image-end:::  
 
-However, you may also display in the example that the code is sloppy.  You still try to access the table and display the information.  The code should catch errors and report them in the **Console** instead of doing that.  If you navigate to the [Network Error Reported][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorReportedHtml] example, you may display the following items.  
+Ensure you provide defensive coding techniques to avoid the previous user experiences.  Also, ensure your code catches errors and display each in the **Console**.  If you navigate to the error reported example of the [JavaScript error messaging in Console tool][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorReportedHtml], you may notice the following items.  
 
-*   To the user that something went wrong.   
-*   In the **Console**, the Network error and the error message the code reported.  
-
-:::image type="complex" source="../media/console-debug-network-error-report.msft.png" alt-text="The example catch and report errors" lightbox="../media/console-debug-network-error-report.msft.png":::
-   The example catch and report errors  
+*   Provide UI to the user that something went wrong.  
+*   In the **Console**, provide helpful information about the Network error from your code.  
+    
+:::image type="complex" source="../media/console-debug-network-error-report.msft.png" alt-text="An example that catches and reports errors" lightbox="../media/console-debug-network-error-report.msft.png":::
+   An example that catches and reports errors  
 :::image-end:::  
 
-The code to make it happen is the `handleErrors` method in the example, specifically the `throw Error` line.  
+The following code snippet catches and reports errors using the `handleErrors` method, specifically the `throw Error` line.  
 
 ```javascript
 const handleErrors = (response) => {
@@ -122,6 +127,8 @@ If you navigate to the [create errors and assertions][GithubMicrosoftedgeDevtool
    Error messages created from **Console**  
 :::image-end:::  
 
+The following code snippet was used in the previous example.  
+
 ```javascript
 function first(name) { second(name); }
 function second(name) { third(name); }
@@ -140,13 +147,19 @@ first('Console');
 first('Microsoft Edge Canary');
 ```  
 
-You have three functions that request each other in succession, `first()`, `second()`, and `third()`.  Each sends a `name` argument to the other.  In the `third()` function you check if the `name` argument exists and if it is not, you log an error that name isn't defined.  If name is defined, you use the `assert()` method to check if the `name` argument is fewer than eight letters long.  You request the first method three times, with the following changes.  
+You have three functions that request each other in succession.  
 
-*   No argument that triggers the `console.error()` in `third()`.  
-*   `Console` as the argument that causes no error as `name` exists and is shorter than eight letters.  
-*   `Microsoft Edge Canary` as the argument that triggers to assertion to report an error \(as the argument is longer than eight letter\).  
+*   `first()`  
+*   `second()`  
+*   `third()`  
+    
+Each sends a `name` argument to the other.  In the `third()` function you check if the `name` argument exists and if it is not, you log an error that name isn't defined.  If `name` is defined, you use the `assert()` method to check if the `name` argument is fewer than eight letters long.  You request the `first()` function three times, with the following parameters.  
 
-Using `assert()` is a way to create conditional error reporting.  The following two examples have the same result but one needs an extra `if{}` statement.  
+*   No argument that triggers the `console.error()` method in the `third()` function.  
+*   The term `Console` as a parameter to `first()` function doesn't cause an error because `name` argument exists and is shorter than eight letters.  
+*   The phrase `Microsoft Edge Canary` as a parameter to `first()` function causes the `console.assert()` method to report an error, because the parameter is longer than 8 letters.  
+    
+Use the `console.assert()` method to create conditional error reports.  The following two examples have the same result, but one needs an extra `if{}` statement.  
 
 ```javascript
 let x = 20;
@@ -154,9 +167,10 @@ if (x < 40) { console.error(`${x} is too small`) };
 console.assert(x >= 40, `${x} is too small`) 
 ```  
 
-The assertion needs to record a negative result, that is why you test for `x < 40` in the `if` case and `x >= 40` for the assertion.  
+> [!IMPORTANT]
+> The second and third lines of the code perform the same test.  Because the assertion needs to record a negative result, you test for `x < 40` in the `if` case and `x >= 40` for the assertion.  
 
-If you are not sure which function requests that you may use the `console.trace()` method to track which functions were named to get to the current one.  To display the trace in the **Console**, navigate to [create traces example][GithubMicrosoftedgeDevtoolssamplesConsoleTraces].  
+If you are not sure which function requests another function, use the `console.trace()` method to track which functions are requested to get to the current one.  To display the trace in the **Console**, navigate to [create traces example][GithubMicrosoftedgeDevtoolssamplesConsoleTraces].  
 
 ```javascript
 function here() {there()}

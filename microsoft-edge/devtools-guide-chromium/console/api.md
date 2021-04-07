@@ -3,7 +3,7 @@ description: Use the Console API to write messages to the Console.
 title: Console API reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2021
+ms.date: 04/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -23,7 +23,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Console API reference  
 
-Use the Console API methods to write messages to the Console from your JavaScript.  For an interactive introduction to the subject matter, navigate to [Get started with logging lessages to the Console][DevtoolsConsoleLog].  For the convenience methods like `debug()` or `monitorEvents()` that are only available from the **Console** pane, navigate to [Console Utilities API Reference][DevtoolConsoleUtilities].  
+The **Console** tool is helpful when performing multiple tasks in the DevTools.  APIs are available to include in your scripts. Convenience methods are only available for use in the **Console** tool, such as the `debug()` and `monitorEvents()` methods.  For more information on getting started with the **Console**, navigate to [Get started with logging messages to the Console][DevtoolsConsoleLog].  For more information on the convenience methods for use only in the **Console**, navigate to [Console Utilities API Reference][DevtoolConsoleUtilities].  
 
 ---  
 
@@ -35,9 +35,7 @@ console.assert(expression, object)
 
 [Log level][DevtoolsConsoleReferencePersist]: `Error`  
 
-<!--todo: add reference level (reference#persist-messages-across-page-loads) when available -->  
-
-Writes an [error](#error) to the console when `expression` evaluates to `false`.  
+Writes an [error](#error) to the **Console** when `expression` evaluates to `false`.  
 
 ```javascript
 const x = 5;
@@ -47,7 +45,7 @@ console.assert(x < y, {x, y, reason});
 ```  
 
 :::image type="complex" source="../media/console-demo-assert-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-assert-button.msft.png":::
-   Figure 1:  The result of the `console.assert()` example  
+   The result of the `console.assert()` example  
 :::image-end:::  
 
 ---  
@@ -58,7 +56,7 @@ console.assert(x < y, {x, y, reason});
 console.clear()
 ```
 
-Clears the console.  
+Clears the **Console**.  
 
 ```javascript
 console.clear();  
@@ -90,7 +88,7 @@ console.count();
 ```  
 
 :::image type="complex" source="../media/console-demo-count-button.msft.png" alt-text="The result of the console.count() example" lightbox="../media/console-demo-count-button.msft.png":::
-   Figure 2:  The result of the `console.count()` example  
+   The result of the `console.count()` example  
 :::image-end:::  
 
 ---  
@@ -125,7 +123,7 @@ console.debug('debug');
 ```  
 
 :::image type="complex" source="../media/console-demo-debug-button.msft.png" alt-text="The result of the console.debug() example" lightbox="../media/console-demo-debug-button.msft.png":::
-   Figure 3:  The result of the `console.debug()` example  
+   The result of the `console.debug()` example  
 :::image-end:::  
 
 ---  
@@ -145,7 +143,7 @@ console.dir(document.head);
 ```  
 
 :::image type="complex" source="../media/console-demo-dir-button.msft.png" alt-text="The result of the console.dir() example" lightbox="../media/console-demo-dir-button.msft.png":::
-   Figure 4:  The result of the `console.dir()` example  
+   The result of the `console.dir()` example  
 :::image-end:::  
 
 ---  
@@ -165,7 +163,7 @@ console.dirxml(document);
 ```  
 
 :::image type="complex" source="../media/console-demo-dirxml-button.msft.png" alt-text="The result of the console.dirxml() example" lightbox="../media/console-demo-dirxml-button.msft.png":::
-   Figure 5:  The result of the `console.dirxml()` example  
+   The result of the `console.dirxml()` example  
 :::image-end:::  
 
 ---  
@@ -178,14 +176,14 @@ console.error(object [, object, ...])
 
 [Log level][DevtoolsConsoleReferencePersist]: `Error`  
 
-Prints the `object` to the Console, formats it as an error, and includes a stack trace.  
+Prints the `object` to the **Console**, formats it as an error, and includes a stack trace.  
 
 ```javascript
 console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 ```  
 
 :::image type="complex" source="../media/console-demo-error-button.msft.png" alt-text="The result of the console.error() example" lightbox="../media/console-demo-error-button.msft.png":::
-   Figure 6:  The result of the `console.error()` example  
+   The result of the `console.error()` example  
 :::image-end:::  
 
 ---  
@@ -196,7 +194,7 @@ console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 console.group(label)
 ```  
 
-Visually groups messages together until the [groupEnd](#groupend) method is used.  Use the [groupCollapsed](#groupcollapsed) method to collapse the group when it is initially logged to the Console.  
+Visually groups messages together until the [groupEnd](#groupend) method is used.  Use the [groupCollapsed](#groupcollapsed) method to collapse the group when it is initially logged to the **Console**.  
 
 ```javascript
 const label = 'Adolescent Irradiated Espionage Tortoises';
@@ -209,7 +207,7 @@ console.groupEnd(label);
 ```  
 
 :::image type="complex" source="../media/console-demo-group-button.msft.png" alt-text="The result of the console.group() example" lightbox="../media/console-demo-group-button.msft.png":::
-   Figure 7:  The result of the `console.group()` example  
+   The result of the `console.group()` example  
 :::image-end:::  
 
 ---  
@@ -220,7 +218,7 @@ console.groupEnd(label);
 console.groupCollapsed(label)
 ```  
 
-Same as the [log](#log) method, except the group is initially collapsed when it is logged to the Console.  
+Same as the [log](#log) method, except the group is initially collapsed when it is logged to the **Console**.  
 
 ---  
 
@@ -249,7 +247,7 @@ console.info('info');
 ```  
 
 :::image type="complex" source="../media/console-demo-info-button.msft.png" alt-text="The result of the console.info() example" lightbox="../media/console-demo-info-button.msft.png":::
-   Figure 8:  The result of the `console.info()` example  
+   The result of the `console.info()` example  
 :::image-end:::  
 
 ---  
@@ -262,14 +260,14 @@ console.log(object [, object, ...])
 
 [Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
-Prints a message to the Console.  
+Prints a message to the **Console**.  
 
 ```javascript
 console.log('log');
 ```  
 
 :::image type="complex" source="../media/console-demo-log-button.msft.png" alt-text="The result of the console.log() example" lightbox="../media/console-demo-log-button.msft.png":::
-   Figure 9:  The result of the `console.log()` example  
+   The result of the `console.log()` example  
 :::image-end:::  
 
 ---  
@@ -303,7 +301,7 @@ console.table([
 ```  
 
 :::image type="complex" source="../media/console-demo-table-button.msft.png" alt-text="The result of the console.table() example" lightbox="../media/console-demo-table-button.msft.png":::
-   Figure 10:  The result of the `console.table()` example  
+   The result of the `console.table()` example  
 :::image-end:::  
 
 ---  
@@ -314,7 +312,7 @@ console.table([
 console.time([label])
 ```  
 
-Starts a new timer.  Use the [timeEnd](#timeend) method to stop the timer and print the elapsed time to the Console.  
+Starts a new timer.  Use the [timeEnd](#timeend) method to stop the timer and print the elapsed time to the **Console**.  
 
 ```javascript
 console.time();
@@ -325,7 +323,7 @@ console.timeEnd();
 ```  
 
 :::image type="complex" source="../media/console-demo-time-button.msft.png" alt-text="The result of the console.time() example" lightbox="../media/console-demo-time-button.msft.png":::
-   Figure 11:  The result of the `console.time()` example  
+   The result of the `console.time()` example  
 :::image-end:::  
 
 ---  
@@ -350,7 +348,7 @@ console.trace()
 
 [Log level][DevtoolsConsoleReferencePersist]: `Info`  
 
-Prints a stack trace to the Console.  
+Prints a stack trace to the **Console**.  
 
 ```javascript
 const first = () => { second(); };
@@ -361,7 +359,7 @@ first();
 ```  
 
 :::image type="complex" source="../media/console-demo-trace-button.msft.png" alt-text="The result of the console.trace() example" lightbox="../media/console-demo-trace-button.msft.png":::
-   Figure 12:  The result of the `console.trace()` example  
+   The result of the `console.trace()` example  
 :::image-end:::  
 
 ---  
@@ -374,14 +372,14 @@ console.warn(object [, object, ...])
 
 [Log level][DevtoolsConsoleReferencePersist]: `Warning`  
 
-Prints a warning to the Console.  
+Prints a warning to the **Console**.  
 
 ```javascript
 console.warn('warn');
 ```  
 
 :::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="The result of the console.warn() example" lightbox="../media/console-demo-warn-button.msft.png":::
-   Figure 13:  The result of the `console.warn()` example  
+   The result of the `console.warn()` example  
 :::image-end:::  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
@@ -390,13 +388,13 @@ console.warn('warn');
 
 <!-- links -->  
 
-[DevtoolsConsoleLog]: /microsoft-edge/devtools-guide-chromium/console/log "Get Started With Logging Messages In The Console"  
-[DevtoolConsoleUtilities]: /microsoft-edge/devtools-guide-chromium/console/utilities "Console Utilities API Reference"  
-[DevtoolsConsoleReferenceClear]: /microsoft-edge/devtools-guide-chromium/console/reference#clear-the-console "Clear the Console - Console Reference"  
-[DevtoolsConsoleReferencePersist]: /microsoft-edge/devtools-guide-chromium/console/reference#persist-messages-across-page-loads "Persist messages across page loads - Console Reference"  
-[DevtoolsConsoleReferenceLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "Filter by log level - Console Reference"  
+[DevtoolsConsoleLog]: ./log.md "Get started with logging messages in the Console | Microsoft Docs"  
+[DevtoolConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
+[DevtoolsConsoleReferenceClear]: ./reference.md#clear-the-console "Clear the Console - Console reference | Microsoft Docs"  
+[DevtoolsConsoleReferencePersist]: ./reference.md##persist-messages-across-page-loads "Persist messages across page loads - Console reference | Microsoft Docs"  
+[DevtoolsConsoleReferenceLevel]: ./reference.md#filter-by-log-level "Filter by log level - Console reference | Microsoft Docs"  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools overview | Microsoft Docs"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
