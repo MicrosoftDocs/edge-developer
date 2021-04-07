@@ -21,7 +21,6 @@ Use DevTools to review and learn more about the following development tasks.
 *   [Debug your JavaScript][DevtoolsGuideJavascriptIndex] using breakpoint debugging and with the [live console][DevtoolsGuideConsoleIndex].  
 *   Find [accessibility, performance, compatibility, and security issues][DevtoolsGuideIssuesIndex] in your products and learn how to use DevTools to fix each.  
 *   [Inspect the network traffic][DevtoolsGuideNetworkIndex] and review the location of the problems.  
-*   [Inspect where the browser stored content][DevtoolsGuideStorageLocalstorage] in various formats.  
 *   [Inspect where the browser stored content][DevtoolsGuideStorageSessionstorage] in various formats.  
 *   [Evaluate the performance][DevtoolsGuideEvaluatePerformanceIndex] of your product to find [memory problems][DevtoolsGuideMemoryProblemsIndex] and [rendering issues][DevtoolsGuideRenderingToolsIndex].  
 *   [Use a development environment][DevtoolsGuideSourcesIndex] to [sync changes in DevTools with the file system][DevtoolsGuideWorkspacesIndex] and [override files][DevtoolsGuideJavascriptOverrides] from the web.  
@@ -224,7 +223,6 @@ If you want to preview the [latest features coming to the DevTools][DevtoolsGuid
 [DevtoolsGuideRenderingToolsIndex]: ./rendering-tools/index.md "Analyze runtime performance | Microsoft Docs"  
 [DevtoolsGuideShortcutsIndex]: ./shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
 [DevtoolsGuideSourcesIndex]: ./sources/index.md "Sources tool overview | Microsoft Docs"  
-[DevtoolsGuideStorageLocalstorage]: ./storage/localstorage.md "View and edit local storage with Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideStorageSessionstorage]: ./storage/sessionstorage.md "View and edit session storage with Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideWhatsNew202102Devtools]: ./whats-new/2021/02/devtools.md "What's New In DevTools (Microsoft Edge 90) | Microsoft Docs"  
 [DevtoolsGuideWorkspacesIndex]: ./workspaces/index.md "Edit files with Workspaces | Microsoft Docs"  
