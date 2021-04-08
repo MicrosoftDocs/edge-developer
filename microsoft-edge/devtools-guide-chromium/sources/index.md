@@ -213,7 +213,7 @@ The following subsections are related to the Editor pane:
 *   [Editing a JavaScript file](#editing-a-javascript-file)
 *   [Reformatting a minified JavaScript file with pretty-print](#reformatting-a-minified-javascript-file-with-pretty-print)
 *   [Mapping minified code to your source code to show readable code](#mapping-minified-code-to-your-source-code-to-show-readable-code)
-*   [Complex transformations from source code to compiled front-end code](#complex-transformations-from-source-code-to-compiled-front-end-code)
+*   [Transformations from source code to compiled front-end code](#transformations-from-source-code-to-compiled-front-end-code)
 *   [Editing a CSS file](#editing-a-css-file)
 *   [Editing an HTML file](#editing-an-html-file)
 *   [Editor commands on the Command Menu](#editor-commands-on-the-command-menu)
