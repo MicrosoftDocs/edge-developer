@@ -43,7 +43,7 @@ The fastest way to directly open the **Console** is to select `Control`+`Shift`+
    DevTools gives detailed information about the error in the **Console**  
 :::image-end:::  
 
-## Inspect and filter information of the current webpage  
+## Inspect and filter information on the current webpage  
 
 When you open the DevTools on a webpage, you are likely to display a deluge of information logged to the **Console**.  The amount of information becomes a problem when you need to identify important information.  To view the important information that needs action, use the [Issues][DevtoolsIssuesIndex] tool in DevTools.  Much of the noise remains, which is why it is a good idea to know about the [automated log and filter options][DevtoolsConsoleConsoleFilters] in the **Console**.  
 
