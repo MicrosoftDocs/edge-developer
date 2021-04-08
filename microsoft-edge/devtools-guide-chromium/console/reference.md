@@ -3,7 +3,7 @@ description: A comprehensive reference on every feature and behavior related to 
 title: Console reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -197,7 +197,7 @@ To display messages from a single URL, complete the following actions.
 
 ### Filter out messages from different contexts  
 
-Suppose that you have an advertisement \(ad\) on your webpage.  The ad is embedded in an `<iframe>` and generates many messages in your **Console**.  Because the ad is running in a different [JavaScript context](#select-javascript-context), one way to hide the messages is to [open Console Settings](#open-console-settings) and turn on the **Selected Context Only** checkbox.  
+Suppose that you have an advertisement \(ad\) on your webpage.  The ad is embedded in an `<iframe>` and generates many messages in your **Console**.  Because the ad is running in a different [JavaScript context](#choose-javascript-context), one way to hide the messages is to [open Console Settings](#open-console-settings) and choose the checkbox next to **Selected Context Only**.  
 
 ### Filter out messages that do not match a regular expression pattern  
 
@@ -225,7 +225,7 @@ If you find yourself typing the same JavaScript expression in the **Console** re
 
 ### Turn off autocomplete from history  
 
-As you type out an expression, the autocomplete popup window for the **Console** displays expressions that you ran earlier.  These expressions are pre-pended with the `>` character.  To stop displaying expressions from your history, [open Console Settings](#open-console-settings) and remove the checkbox next to **Autocomplete From History** checkbox.  
+As you type out an expression, the autocomplete popup window for the **Console** displays expressions that you ran earlier.  The expressions are pre-pended with the `>` character.  To stop displaying expressions from your history, [open Console Settings](#open-console-settings) and remove the checkbox next to **Autocomplete From History** checkbox.  
 
 > [!NOTE]
 > In the following figure, `document.querySelector('a')` and `document.querySelector('img')` are expressions that were evaluated earlier.  
@@ -264,13 +264,13 @@ To clear the **Console**, complete any of the following workflows.
 
 <!-- links -->  
 
-[DevtoolsConsoleApi]: ./api.md "Console API Reference | Microsoft Docs"  
+[DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
 [DevtoolsConsoleIndex]: .index.md "Use the Console | Microsoft Docs"  
 [DevtoolsConsoleIndexInspectFilterInformationOnCurrentWebpage]: ./index.md#inspect-and-filter-information-on-the-current-webpage "Inspect and filter information on the current webpage - Use the Console | Microsoft Docs"  
-[DevtoolsConsoleConsoleJavascript]: ./console-javascript "Console as a JavaScript environment - Use the Console | Microsoft Docs"  
+[DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Console as a JavaScript environment - Use the Console | Microsoft Docs"  
 [DevtoolsConsoleJavascript]: ./javascript.md "Get started with running JavaScript in the Console | Microsoft Docs"  
 [DevtoolsConsoleLiveExpressions]: ./live-expressions.md "Monitor changes in JavaScript using Live Expressions | Microsoft Docs"  
-[DevtoolsConsoleLog]: ./log.md "Get Started With Logging Messages In The Console | Microsoft Docs"  
+[DevtoolsConsoleLog]: ./log.md "Get started with logging messages in the Console | Microsoft Docs"  
 [DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
 
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"  

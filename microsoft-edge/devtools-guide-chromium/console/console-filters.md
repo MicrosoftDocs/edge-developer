@@ -3,7 +3,7 @@ description: Learn how to filter console messages
 title: Get started with filtering messages in the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -88,7 +88,7 @@ To filter more and expand the choice, choose the triangle icon next to it.  That
 
 <!-- links -->  
 
-[DevtoolsConsoleApi]: ./api.md "Console API Reference | Microsoft Docs"  
+[DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
 
 [MdnDocsWebJavascriptGuideRegularExpressions]: https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions "Regular Expressions | MDN"  
 

@@ -3,7 +3,7 @@ description: JavaScript errors are reported by developer tools and debug each in
 title: Tracking down errors using the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/07/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

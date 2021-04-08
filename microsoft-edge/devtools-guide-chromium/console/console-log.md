@@ -3,7 +3,7 @@ description: How to log messages and run JavaScript in the Microsoft Edge DevToo
 title: Log messages in the Console tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -201,7 +201,7 @@ You may be tempted to use the log methods as your main means to debug webpages a
 
 <!-- links -->  
 
-[DevtoolsConsoleApi]: ./api.md "Console API Reference | Microsoft Docs"  
+[DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
 [DevtoolsConsoleLiveExpressions]: ./live-expressions.md "Monitor changes in JavaScript using Live Expressions | Microsoft Docs"  
 
 [DevtoolsJavascriptBreakpoints]: ../javascript/breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"  

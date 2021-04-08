@@ -3,7 +3,7 @@ description: An introduction to the Console tool inside the Microsoft Edge Devel
 title: Use the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/07/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -169,7 +169,7 @@ For more information about the functionality of the **Console**, navigate to [Co
 
 <!-- links -->  
 
-[DevtoolsConsoleApi]: ./api.md "Console API Reference | Microsoft Docs"  
+[DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
 [DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "Debug errors reported in Console | Microsoft Docs"  
 [DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "Use the Console to interact with the DOM | Microsoft Docs" 
 [DevtoolsConsoleConsoleFilters]: ./console-filters.md "Filter Console messages | Microsoft Docs"  

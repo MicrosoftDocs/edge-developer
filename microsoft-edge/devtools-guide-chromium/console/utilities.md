@@ -3,7 +3,7 @@ description: A reference of convenience commands available in the Microsoft Edge
 title: Console Utilities API reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -616,8 +616,8 @@ values(object);
 
 <!-- links -->  
 
-[DevtoolsConsoleApi]: ./api.md "Console API Reference | Microsoft Docs"  
-[DevToolsConsoleApiConsoleDirObject]: ./api.md#dir "dir - Console API Reference | Microsoft Docs"  
+[DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
+[DevToolsConsoleApiConsoleDirObject]: ./api.md#dir "dir - Console API reference | Microsoft Docs"  
 
 [DevtoolsJavascriptBreakpoints]: ../javascript/breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"  
 

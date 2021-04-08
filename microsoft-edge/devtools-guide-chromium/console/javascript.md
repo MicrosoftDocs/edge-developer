@@ -3,7 +3,7 @@ description: Learn how to run JavaScript in the Console.
 title: Get started with running JavaScript in the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -23,7 +23,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Get started with running JavaScript in the Console  
 
-This interactive tutorial shows you how to run JavaScript in the Microsoft Edge DevTools **Console**.  For more information about how to log messages to the **Console**, navigate to [Get Started With Logging Messages][DevToolsConsoleLoggingMessages].  For more information about how to pause JavaScript code and step through it one line at a time, navigate to [Get Started With Debugging JavaScript][DevToolsJavascriptIndex].  
+This article walks teaches you how to run JavaScript in the Microsoft Edge DevTools **Console**.  For more information about how to log messages to the **Console**, navigate to [Get Started With Logging Messages][DevToolsConsoleLoggingMessages].  For more information about how to pause JavaScript code and step through it one line at a time, navigate to [Get Started With Debugging JavaScript][DevToolsJavascriptIndex].  
 
 :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="The Console" lightbox="../media/console-javascript-example-console-playground.msft.png":::
    The **Console**  
@@ -121,7 +121,7 @@ For more information about the convenience functions, navigate to [Console Utili
 
 [Esma6DefaultParameterValues]: https://es6-features.org/index#DefaultParameterValues "Default Parameter Values - Extended Parameter Handling - ECMAScript 6 — New Features: Overview & Comparison"  
 
-[GlitchConsoleJavascriptExample]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/javascript/index.html "Console Javascript Example | Glitch"  
+[GlitchConsoleJavascriptExample]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/javascript/index.html "Console Javascript example | Glitch"  
 
 [WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read–eval–print_loop "Read–eval–print loop - Wikipedia"  
 

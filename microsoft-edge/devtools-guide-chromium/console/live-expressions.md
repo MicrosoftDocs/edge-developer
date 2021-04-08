@@ -3,7 +3,7 @@ description: If you find yourself typing the same JavaScript expressions into th
 title: Watch JavaScript expression values in real time with Live Expressions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

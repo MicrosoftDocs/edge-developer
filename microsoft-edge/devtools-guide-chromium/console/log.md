@@ -3,7 +3,7 @@ description: Learn how to log messages to the Console.
 title: Get started with logging messages in the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2021 
+ms.date: 04/08/2021 
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -171,10 +171,10 @@ The browser logs messages to the Console, too.  This usually happens when there 
        A `TypeError` in the **Console**  
     :::image-end:::  
     
-1.  Choose the **Log Levels** dropdown and enable the **Verbose** option if it is disabled.  You learn more about filtering in the next section.  You need to do this to make sure that the next message you log is visible.  
+1.  Choose the **Log Levels** dropdown and turn on the **Verbose** option if it is turned off.  You learn more about filtering in the next section.  You need to do this to make sure that the next message you log is visible.  
     
     > [!NOTE]
-    > If the Default Levels dropdown is disabled, you may need to close the **Console** Sidebar.  Filter by Message Source below for more information about the **Console** Sidebar.
+    > If the Default Levels dropdown is turned off, you may need to close the **Console** Sidebar.  Filter by Message Source below for more information about the **Console** Sidebar.
     
     :::image type="complex" source="../media/console-cause-error-log-levels.msft.png" alt-text="Enabling the Verbose log level" lightbox="../media/console-cause-error-log-levels.msft.png":::
        Enabling the Verbose log level  
@@ -194,13 +194,13 @@ On some webpages you review the **Console** get flooded with messages.  DevTools
 
 Each `console` method is assigned a severity level: `Verbose`, `Info`, `Warning`, or `Error`.  For example, `console.log()` is an `Info`-level message, whereas `console.error()` is an `Error`-level message.  
 
-1.  Choose the **Log Levels** dropdown and disable **Errors**.  A level is disabled when there is no longer a checkmark next to it.  The `Error`-level messages disappear.  
+1.  Choose the **Log Levels** dropdown and turn off **Errors**.  A level is turned off when there is no longer a checkmark next to it.  The `Error`-level messages disappear.  
     
-    :::image type="complex" source="../media/console-cause-violation-log-levels.msft.png" alt-text="Disable Error-level messages in the Console" lightbox="../media/console-cause-violation-log-levels.msft.png":::
-       Disable Error-level messages in the **Console**  
+    :::image type="complex" source="../media/console-cause-violation-log-levels.msft.png" alt-text="Turn off Error-level messages in the Console" lightbox="../media/console-cause-violation-log-levels.msft.png":::
+       Turn off Error-level messages in the **Console**  
     :::image-end:::  
     
-1.  Choose the **Log Levels** dropdown again and re-enable **Errors**.  The `Error`-level messages reappear.  
+1.  Choose the **Log Levels** dropdown and turn on **Errors** again.  The `Error`-level messages reappear.  
 
 ### Filter by text  
 
@@ -277,7 +277,7 @@ If you are editing styles, but you need to quickly check the Console log for som
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge \(Chromium\) developer tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) developer tools | Microsoft Docs"  
 [DevToolsCommandMenu]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"  
 [DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"  
 [DevToolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  

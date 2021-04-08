@@ -3,7 +3,7 @@ description: Use the Console API to write messages to the Console.
 title: Console API reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/07/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -62,7 +62,7 @@ Clears the **Console**.
 console.clear();  
 ```  
 
-If [Preserve Log][DevtoolsConsoleReferenceLevel] is enabled, the [clear](#clear) method is disabled.  
+If [Preserve Log][DevtoolsConsoleReferenceFilter] is turned on, the [clear](#clear) method is turned off.  
 
 ### See also  
 
@@ -391,8 +391,8 @@ console.warn('warn');
 [DevtoolsConsoleLog]: ./log.md "Get started with logging messages in the Console | Microsoft Docs"  
 [DevtoolConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
 [DevtoolsConsoleReferenceClear]: ./reference.md#clear-the-console "Clear the Console - Console reference | Microsoft Docs"  
+[DevtoolsConsoleReferenceFilter]: ./reference.md#filter-by-log-level "Filter by log level - Console reference | Microsoft Docs"  
 [DevtoolsConsoleReferencePersist]: ./reference.md#persist-messages-across-page-loads "Persist messages across page loads - Console reference | Microsoft Docs"  
-[DevtoolsConsoleReferenceLevel]: ./reference.md#filter-by-log-level "Filter by log level - Console reference | Microsoft Docs"  
 
 [MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools overview | Microsoft Docs"  
 

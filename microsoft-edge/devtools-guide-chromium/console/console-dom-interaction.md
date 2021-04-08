@@ -3,7 +3,7 @@ description: An overview how to interact with the current webpage in the browser
 title: Use the Console to interact with the DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/24/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
