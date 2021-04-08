@@ -33,7 +33,7 @@ The Console Utilities API contains a collection of convenience commands to compl
 > [!WARNING]
 > The following commands only work in the Microsoft Edge DevTools **Console**.  The commands do not work if run from your scripts.  
 
-For the `console.log()` and `console.error()` methods the rest of the `console.*` methods, navigate to [Console API Reference][DevToolsConsoleApi].  
+For more information about the `console.log()` and `console.error()` methods and the rest of the `console.*` methods, navigate to [Console API Reference][DevToolsConsoleApi].  
 
 ## Recently Evaluated Expression  
 
