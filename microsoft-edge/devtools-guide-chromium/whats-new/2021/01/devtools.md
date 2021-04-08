@@ -3,7 +3,7 @@ description: The What's New tool is now Welcome, Visual Font Editor in the Style
 title: What's new in DevTools (Microsoft Edge 89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
+ms.date: 03/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -93,9 +93,9 @@ In the **Elements** tool, the new Flexbox (flex) icon helps you identify Flexbox
    :::column-end:::
 :::row-end:::  
 
-### Display alignment icons and gridlines when Flexbox layouts change using CSS properties  
+### Display alignment icons and visual guides when Flexbox layouts change using CSS properties  
 
-<!--  Title: Display alignment icons and gridlines for changes to Flexbox layouts from CSS properties  -->  
+<!--  Title: Display alignment icons and visual guides for changes to Flexbox layouts from CSS properties  -->  
 <!--  Subtitle:  CSS autocomplete in the Styles tool now displays icons next to Flexbox properties to help you review the effect a property has on your Flexbox layout -->  
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
