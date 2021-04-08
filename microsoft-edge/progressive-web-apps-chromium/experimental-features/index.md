@@ -56,7 +56,8 @@ The following list describes the new experimental web app features that are avai
 | Feature | Microsoft Edge version | Platform |  
 |:--- |:--- |:--- |  
 | [URI Protocol Handling](#uri-protocol-handling) | 91 or later | Windows |    
-| [URL Link Handling](#url-link-handling) | 91 or later | Windows|  
+| [URL Link Handling](#url-link-handling) | 91 or later | Windows|
+| [Window Controls Overlay for Desktop Apps](#window-controls-overlay-for-installed-desktop-web-apps) | 91 or later | Windows 10|   
 | [Run on OS Login](#run-on-os-login) | 88 or later | All |  
 | [Shortcuts](#shortcuts) | 87 or later | All |  
 | [File Handling](#file-handling) | 83 or later | All Desktop |  
@@ -175,8 +176,8 @@ A wildcard prefix is used in origin strings of the `url_handlers` member to matc
 
 For example, the `url_handlers` member value is set to `*.contoso.com` matches `tenant.contoso.com` and `www.tenant.contoso.com`, but doesn't match `contoso.com`.  
 
-<!-- Hold for future release -->  
-<!--  ## Window Controls Overlay for installed desktop web apps  
+ 
+## Window Controls Overlay for installed desktop web apps  
 
 To create an immersive title bar similar to a native app for your desktop installed web app.  The **Window Controls Overlay** feature  completes the following actions.  
     
@@ -184,7 +185,9 @@ To create an immersive title bar similar to a native app for your desktop instal
 1.  Replaces it with an overlay.  It contains just the critical system required window controls necessary for a user to control the window itself.  
     
 After it provides an overlay, the entire web client area is available for you to use.  This feature includes a manifest update.  It provides ways for you to determine the size and position of the overlay to help you arrange content.  
-    
+
+To preview Window Controls Overlay in Microsoft Edge on Windows, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWA Window Controls Overlay**. 
+
 ### Examples of title bar area customization  
 
 This feature is based on the ability in native apps to customize the title bar.  You may customize a title bar for important app actions or notifications.  Review the following examples for Microsoft Visual Studio Code and Microsoft Teams.  
@@ -323,7 +326,7 @@ In the `div` element with the `titleBarContainer` ID, the `div` with the `titleB
         <input class="nonDraggable" type="text" placeholder="Search"></input>
       </div>
     </div>
-    <div id="mainContent">The rest of the webpage</div>
+    <div id="mainContent"><!-- The rest of the webpage --></div>
   </body>
 </html>
 ```  
@@ -479,7 +482,6 @@ body {
   overflow-y: scroll;
 }
 ```  
--->  
 
 ## Run On OS Login  
 
