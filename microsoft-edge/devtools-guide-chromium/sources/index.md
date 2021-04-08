@@ -24,7 +24,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Sources tool overview  
 
-Use the **Sources** tool to view, modify, and debug front-end (client-side) JavaScript, and to inspect the resources that make up the current webpage.  The Sources tool has three panes:
+Use the **Sources** tool to view, modify, and debug front-end JavaScript, and to inspect the resources that make up the current webpage.  The Sources tool has three panes:
 
 | Pane | Actions |
 |---|---|
@@ -38,7 +38,7 @@ The following image shows the **Navigator** pane highlighted with a red box in t
    The three panes of the Sources tool, in narrow layout  
 :::image-end:::  
 
-When the DevTools are wide, the **Debugger** pane is placed along the right, including **Scope** and **Watch**:
+When the DevTools are wide, the **Debugger** pane is placed on the right, including **Scope** and **Watch**:
 
 :::image type="complex" source="../media/debugging-highlights.msft.png" alt-text="Navigate, view, edit, and debug JavaScript returned by the server" lightbox="../media/debugging-highlights.msft.png":::
    Navigate, view, edit, and debug JavaScript returned by the server  
@@ -48,7 +48,7 @@ To maximize the size of the Sources tool, undock DevTools into a separate window
 
 To load the debugging demo webpage that's shown above, navigate to [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger), below.
 
-## Using the Navigator pane to navigate files
+## Using the Navigator pane to select files
 
 Use the **Navigator** pane (on the left) to navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.  
 
@@ -76,7 +76,7 @@ Use the **Page** tab of the **Navigator** pane to explore the file system that's
    The **Page** tab
 :::image-end:::  
 
-To display a file in the **Editor** pane, choose a file in the **Page** tab.  For an image, a preview of the image is displayed.  
+To display a file in the **Editor** pane, select a file in the **Page** tab.  For an image, a preview of the image is displayed.  
 
 To display the URL or path for a resource, hover over the resource.
 
@@ -172,7 +172,7 @@ You may save this code in a **Snippet** and easily run it whenever you need to. 
 
 There are multiple ways to run a Snippet:
 *   In the **Navigator** pane, select the **Snippets** tab, then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** \(![The Run button](../media/run-snippet-icon.msft.png)\).  
-*   When DevTools has focus, choose `Ctrl`+`P` (Windows/Linux) or `Command`+`P` (macOS) to open the [Command Menu][DevtoolsGuideChromiumCommandMenuIndex], and then type `!`. 
+*   When DevTools has focus, select `Ctrl`+`P` (Windows/Linux) or `Command`+`P` (macOS) to open the [Command Menu][DevtoolsGuideChromiumCommandMenuIndex], and then type `!`. 
 
 Snippets are similar to bookmarklets.
 
@@ -194,8 +194,8 @@ For more information, navigate to [Run commands with the Microsoft Edge DevTools
 
 Use the **Editor** pane to view the front-end files that are returned from the server to compose the current webpage, including JavaScript, HTML, CSS, and image files.  Make edits to JavaScript or CSS; DevTools updates the page to run the modified code.
 
-:::image type="complex" source="../media/editing-js-in-editor-pane.msft.png" alt-text="Editing JavaScript in the Editor pane" lightbox="../media/editing-js-in-editor-pane.msft.png":::
-   Editing JavaScript in the **Editor** pane  
+:::image type="complex" source="../media/editor-pane.msft.png" alt-text="The Editor pane in the Sources tool" lightbox="../media/editor-pane.msft.png":::
+   The **Editor** pane in the **Sources** tool  
 :::image-end:::
 
 The **Editor** pane has the following level of support for various file types:
@@ -227,7 +227,7 @@ To edit a JavaScript file in DevTools, use the **Editor** pane, within the **Sou
    Editing JavaScript in the **Editor** pane  
 :::image-end:::
 
-To load a file into the Editor pane, use the **Page** tab in the **Navigator** pane (on the left).  Or use the Command Menu, as follows: in the upper right of DevTools, choose **Customize And Control DevTools** \(`...`\), and then choose **Open File**.
+To load a file into the Editor pane, use the **Page** tab in the **Navigator** pane (on the left).  Or use the Command Menu, as follows: in the upper right of DevTools, select **Customize And Control DevTools** \(`...`\) and then **Open File**.
 
 #### Save and Undo
 
@@ -241,7 +241,7 @@ By default, your edits are discarded when you refresh the page.  To learn how to
 
 #### Find and Replace
 
-To find text in the current file, select the Editor pane to give it focus, and then choose `Ctrl`+`F` (Windows or Linux), or `Command`+`F` (macOS).  
+To find text in the current file, select the Editor pane to give it focus, and then select `Ctrl`+`F` on Windows/Linux, or `Command`+`F` on macOS.  
 
 :::image type="complex" source="../media/find-replace.msft.png" alt-text="Find and Replace, in the Editor pane of the Sources tool" lightbox="../media/find-replace.msft.png":::
    **Find** and **Replace**, in the **Editor** pane of the **Sources** tool
@@ -251,7 +251,7 @@ To find and replace text, select the **A-\>B** (**Replace**) button to the left 
 
 #### Showing the changes you made
 
-To view the changes made, right-click and then choose **Local Modifications**.  The **Drawer** opens at the bottom of DevTools, showing your changes within the **Changes** tab.
+To view the changes you made to a file, right-click the file in the **Editor** pane and then select **Local Modifications**.  The **Drawer** opens at the bottom of DevTools, showing your changes within the **Changes** tab.
 
 :::image type="complex" source="../media/local-modifications.msft.png" alt-text="Showing Local Modifications, in the Changes tab of the Drawer" lightbox="../media/local-modifications.msft.png":::
    Showing **Local Modifications**, in the **Changes** tab of the **Drawer**
@@ -272,7 +272,7 @@ After submitting the form, `console.log('A')`, which is at global scope, doesn't
 
 ### Reformatting a minified JavaScript file with pretty-print
 
-To use pretty-print to reformat a file to make it readable, select the **Pretty print** button \(![Format](../media/format-icon.msft.png)\), which is shown as braces, at the bottom of the Editor pane.  Or, if a **Pretty-print** button appears at the top of the Editor pane, with a text label, you can choose that button.
+To use pretty-print to reformat a file to make it readable, select the **Pretty print** button \(![Format](../media/format-icon.msft.png)\), which is shown as braces, at the bottom of the Editor pane.  Or, if a **Pretty-print** button appears at the top of the Editor pane, with a text label, you may select that button.
 
 :::image type="complex" source="../media/minified.msft.png" alt-text="The Pretty print button" lightbox="../media/minified.msft.png":::
    The **Pretty print** button  
@@ -301,7 +301,7 @@ If you right-click a JavaScript file in the **Editor** pane, and then select **A
 The mapping approach keeps your front-end code readable and debuggable even after you combine, minify, or compile it.
 For more information, navigate to [Map preprocessed code to source code][DevToolsJavaScriptSourceMaps].
 
-### Complex transformations from source code to compiled front-end code
+### Transformations from source code to compiled front-end code
 
 If you use a framework that transforms your JavaScript files, such as React, your local source JavaScript might be different than the front-end JavaScript that's returned by the server.  Workspaces aren't supported in this scenario.
 
@@ -367,9 +367,9 @@ For more information, navigate to [Run commands with the Microsoft Edge DevTools
 
 The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  Use the **Quick Sources** tool in the [Drawer](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/customize/#drawer).
 
-1.  Choose a tool other than the **Sources** tool, such as the **Elements** tool.  
+1.  Select a tool other than the **Sources** tool, such as the **Elements** tool.  
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  The **Command Menu** opens.  
-1.  Type `Quick Source`, and then choose **Show Quick Source**.  At the bottom of the DevTools window, the **Quick Source** panel appears, displaying the last file you edited in the **Sources** tool, within the code editor from the **Sources** tool.  
+1.  Type `Quick Source`, and then select **Show Quick Source**.  At the bottom of the DevTools window, the **Quick Source** panel appears, displaying the last file you edited in the **Sources** tool, within the code editor from the **Sources** tool.  
 1.  Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  
 
 ## Using the Debugger pane to debug JavaScript code
@@ -400,7 +400,6 @@ The following subsections cover debugging:
 *   [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger)
 *   [Advantages of the debugger's Watch and Scope over console.log](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
 *   [Using the debugger of Visual Studio Code](#using-the-debugger-of-visual-studio-code)
-*   [The Debugger for Microsoft Edge extension for Visual Studio Code](#the-debugger-for-microsoft-edge-extension-for-visual-studio-code)
 *   [Articles about debugging](#articles-about-debugging)
 
 ### The basic approach to using a debugger
@@ -453,34 +452,15 @@ Breakpoints and Watch expressions are preserved when you refresh the page.
 
 ### Using the debugger of Visual Studio Code
 
-<!-- todo: read/incorp https://github.com/microsoft/vscode-edge-devtools -->
-
-To use the more full-featured debugger of Visual Studio Code instead of the DevTools debugger, use the **Microsoft Edge Tools for VS Code** extension for Visual Studio Code.  This extension provides access to the **Elements** and **Network** tools of Microsoft Edge DevTools, from within Microsoft Visual Studio Code.
+To use the more full-featured debugger of Visual Studio Code instead of the DevTools debugger, use the **Microsoft Edge Tools for VS Code** extension for Visual Studio Code.
 
 :::image type="complex" source="../media/microsoft-edge-tools-for-vs-code-extension.msft.png" alt-text="The Microsoft Edge Tools for VS Code extension for Visual Studio Code" lightbox="../media/microsoft-edge-tools-for-vs-code-extension.msft.png":::
    The **Microsoft Edge Tools for VS Code** extension for Visual Studio Code  
 :::image-end:::  
 
-Launch Microsoft Edge from the Debug view of Visual Studio Code.  Use the Debug view in Visual Studio Code, and access Microsoft Edge DevTools from the Debug view in Visual Studio Code.
+This extension provides access to the **Elements** and **Network** tools of Microsoft Edge DevTools, from within Microsoft Visual Studio Code.  
 
-For more information, navigate to the [Visual Studio Code overview][DevToolsVSCodeIndex].
-
-### The Debugger for Microsoft Edge extension for Visual Studio Code
-
-> ![NOTE] 
-> This extension is deprecated; it will be supported, but not developed further.
-
-With the **Debugger for Microsoft Edge** extension for Visual Studio Code, debug your front-end JavaScript code line by line and view `console.log` statements directly from Visual Studio Code.
-
-:::image type="complex" source="../media/debugger-for-microsoft-edge-extension.msft.png" alt-text="The Debugger for Microsoft Edge extension for Visual Studio Code" lightbox="../media/debugger-for-microsoft-edge-extension.msft.png":::
-   The **Debugger for Microsoft Edge** extension for Visual Studio Code  
-:::image-end:::  
-
-When using the DevTools Sources tool, the JavaScript debugger runs in the DevTools window that's connected to a browser window.
-
-When using this extension for Visual Studio Code, the JavaScript debugger runs in the Visual Studio Code window.
-
-For more information, navigate to the [Visual Studio Code overview][DevToolsVSCodeIndex].
+For more information, navigate to the [Visual Studio Code overview][DevToolsVSCodeIndex] and the GitHub Readme page, [Microsoft Edge Developer Tools for Visual Studio Code][GithubMicrosoftVscodeEdgeDevtools].
 
 ### Articles about debugging
 
@@ -516,6 +496,7 @@ The following articles cover the Debugger pane and breakpoints:
 <!-- external: -->
 [CodeVisualStudioComDocsEditorDebugging]: https://code.visualstudio.com/docs/editor/debugging "Debugging - Visual Studio Code | Microsoft Docs"
 [DMCVisualStudioDebuggerNavigatingThroughCodeWithTheDebugger]: https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger "Navigate through code with the Visual Studio debugger | Microsoft Docs"
+[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "Microsoft Edge Developer Tools for Visual Studio Code | GitHub"
 [DevtoolsGlitchMeDebugJsGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "Demo: Get Started Debugging JavaScript with Microsoft Edge (Chromium) DevTools | Microsoft Docs"
 [HtmlstandardOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin "Origin | HTML Standard"  
 [W3CHtml4Frames]: https://w3.org/TR/html401/present/frames.html "Frames | W3C"  
