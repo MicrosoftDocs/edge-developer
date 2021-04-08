@@ -166,7 +166,8 @@ When the debugger steps into code that you don't recognize, you might want to ma
 
 Use the **Snippets** tab of the **Navigator** pane to create and save JavaScript code snippets, so that you can easily run these snippets on any webpage.
 
-:::image type="complex" source="../media/snippet.msft.png" alt-text="A Snippet that inserts the jQuery library into a page" lightbox="../media/snippet.msft.png":::. A Snippet that inserts the jQuery library into a page  
+:::image type="complex" source="../media/snippet.msft.png" alt-text="A Snippet that inserts the jQuery library into a page" lightbox="../media/snippet.msft.png":::
+   A Snippet that inserts the jQuery library into a page  
 :::image-end:::  
 
 For example, suppose you repeatedly enter the following code in the **Console**, in order to insert the jQuery library into a page, so that you may run jQuery commands from the **Console**.  
