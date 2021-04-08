@@ -32,16 +32,18 @@ Use the **Sources** tool to view, modify, and debug front-end (client-side) Java
 | **Editor** pane | View JavaScript, HTML, CSS, and other files that are returned from the server.  Make experimental edits to JavaScript or CSS.  These changes are preserved until page refresh, unless saved to a local file with Workspaces. When using Workspaces or Overrides, you can edit HTML files as well. |
 | **Debugger** pane | Use the JavaScript Debugger to set breakpoints, pause running JavaScript, and step through the code, including any edits you have made, while watching any JavaScript expressions you specify.  Watch and manually change variable values, and automatically show which variables are currently in-scope for the current line of code. |
 
-The following image shows the **Navigator** pane highlighted with a red box on the left, the **Editor** pane highlighted in the middle, and the **Debugger** pane highlighted on the right.  On the far left side is the main part of the browser window, showing the rendered webpage grayed-out because the debugger is paused on a breakpoint.
-
-:::image type="complex" source="../media/debugging-highlights.msft.png" alt-text="Navigate, view, edit, and debug JavaScript returned by the server" lightbox="../media/debugging-highlights.msft.png":::
-   Navigate, view, edit, and debug JavaScript returned by the server  
-:::image-end:::  
-
-When the DevTools are less than 680px wide, the **Debugger** pane is placed at the bottom and is split into two panes, with **Scope** and **Watch** in the lower-right:
+The following image shows the **Navigator** pane highlighted with a red box in the upper left, the **Editor** pane highlighted in the upper right, and the **Debugger** pane highlighted on the bottom.  On the far left side is the main part of the browser window, showing the rendered webpage grayed-out because the debugger is paused on a breakpoint:
 
 :::image type="complex" source="../media/debugging-panes-narrow.msft.png" alt-text="The three panes of the Sources tool, in narrow layout" lightbox="../media/debugging-panes-narrow.msft.png":::
    The three panes of the Sources tool, in narrow layout  
+:::image-end:::  
+
+To load the debugging demo files that are shown in the above capture, no setup is needed.  The debugging demo webpage is ready to use, as summarized in [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger), below.
+
+When the DevTools are greater than 680px wide, the **Debugger** pane is placed along the right, including **Scope** and **Watch**:
+
+:::image type="complex" source="../media/debugging-highlights.msft.png" alt-text="Navigate, view, edit, and debug JavaScript returned by the server" lightbox="../media/debugging-highlights.msft.png":::
+   Navigate, view, edit, and debug JavaScript returned by the server  
 :::image-end:::  
 
 To maximize the size of the Sources tool, undock DevTools into a separate window, and optionally move the DevTools window to a separate monitor.  For more information, navigate to [Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left)][DevToolsCustomizePlacement].
@@ -187,9 +189,8 @@ document.head.appendChild(script);
 You may save this code in a **Snippet** and easily run it whenever you need to.  When you select **Ctrl+S** or **Command+S**, DevTools saves the **Snippet** to your file system.  
 
 There are multiple ways to run a Snippet:
-
-*   In the **Navigator** pane, select the **Snippets** tab, then select the snippets file to open it.  Then select **Run** \(![The Run button](../media/run-snippet-icon.msft.png)\).  
-*   Press `Ctrl`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS) to open the [Command Menu][DevtoolsGuideChromiumCommandMenuIndex], delete the `>` character, type `!`, type the name of your Snippet, and then select `Enter`.  
+*   In the **Navigator** pane, select the **Snippets** tab, then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** \(![The Run button](../media/run-snippet-icon.msft.png)\).  
+*   When DevTools has focus, choose `Ctrl`+`P` (Windows/Linux) or `Command`+`P` (macOS) to open the [Command Menu][DevtoolsGuideChromiumCommandMenuIndex], and then type `!`. 
 
 Snippets are similar to bookmarklets.
 
@@ -240,7 +241,7 @@ The reformatted file appears in a new tab, with ":formatted" appended to the fil
    A pretty-printed (reformatted) JavaScript file  
 :::image-end:::  
 
-To make the reformatted file scroll to the code that you select in the minified file: close the reformatted file tab, if that tab is open, select code in the minified file in the Editor pane, and then click the **Pretty print** button.  The formatted code appears in a new tab, scrolled to the code which you selected.
+To make the reformatted file scroll to the code that you select in the minified file: close the reformatted file tab (if that tab is open), select code in the minified file in the Editor pane, and then click the **Pretty print** button.  The formatted code appears in a new tab, scrolled to the code which you selected.
 
 For more information, navigate to the section
 [Reformat a minified JavaScript file with pretty-print][DevToolsJavaScriptReferenceReformat] within the article "Use the debugger features".
@@ -285,7 +286,13 @@ After submitting the form, `console.log('A')`, which is at global scope, does no
    Global-scope JavaScript is not re-run  
 :::image-end:::
 
-To find (or find and replace) text in the current file, click in the Editor pane to give it focus, and then choose `Ctrl`+`F` (Windows or Linux), or `Command`+`F` (macOS).
+#### Find and Replace
+
+To find text in the current file, click in the Editor pane to give it focus, and then choose `Ctrl`+`F` (Windows or Linux), or `Command`+`F` (macOS).  
+
+To find and replace text, select the **A-\>B** (**Replace**) button to the left of the **Find** field, as shown in the screen capture below. The **A-\>B** (**Replace**) button appears when viewing an editable file.
+
+#### Show the Edits You Made
 
 To view the changes made, right-click and then choose **Local Modifications**.  Changes are shown in the **Changes** tab, at the bottom.
 
@@ -398,36 +405,37 @@ The following subsections cover the **Debugger** pane or breakpoints:
 
 To troubleshoot where your JavaScript is going wrong, you can insert `console.log()` statements in the **Editor** pane.  Another approach, that's more powerful (yet can also be simple), is to use the debugger of Microsoft Edge DevTools.
 
-The basic approach to using a debugger is to set a breakpoint (an intentional stopping place in the code), run the code at full speed up to the line of code on which the breakpoint is set, and then step through the lines of code, starting at that breakpoint.  
+The basic approach to using a debugger is to set a breakpoint (an intentional stopping place in the code), run the code at full speed up to the line of code on which the breakpoint is set, and then step through the lines of code, starting at that breakpoint.
 
-For example, the tutorial [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] uses an existing, simple webpage 
-[Demo: Get Started Debugging JavaScript with Microsoft Edge (Chromium) DevTools][DevtoolsGlitchMeDebugJsGetStarted], that contains a few form controls.  
+To debug a webpage, you typically set a breakpoint and then send a form from the webpage, as follows:
 
-As shown in the tutorial, to get into the "Paused" mode of the debugger, do something like the following steps:
+1.  Open the webpage in a new tab of the browser.  For example, open this form webpage in a new tab: [Demo: Get Started Debugging JavaScript with Microsoft Edge (Chromium) DevTools][DevtoolsGlitchMeDebugJsGetStarted].
 
-1. Open the above Demo webpage in a new tab of the browser.
+1.  Select `F12` to open the **DevTools** window, and then select the **Sources** tab.
 
-1. Open the **DevTools** window, such as by selecting `F12`.
+1.  In the **Navigator** pane (on the left), select the **Page** tab, and then select the JavaScript file, such as `get-started.js`.
 
-1. Select the **Sources** tab, to show the Sources tool.
+1.  In the **Editor** pane, select a line number near a suspect line of code, to set a breakpoint on that line.  In the figure below, a breakpoint is set on the line `var sum = addend1 + addend2;`.
 
-1. In the **Navigator** pane on the left, select the **Page** tab, then select the JavaScript file (`get-started.js`, in this case).
+1.  In the webpage, enter values and submit the form.  For example, enter numbers, such as 5 and 1, then select the button **Add Number 1 and Number 2**.  
 
-1. In the **Editor** pane, select a line number near a suspect line of code, such as `var sum = addend1 + addend2;`, to set a breakpoint on that line.
+    Selecting the form's button triggers sending the form-data and running the JavaScript code.  The debugger runs the JavaScript code and then pauses at the breakpoint.  The debugger is now in Paused mode, so you can inspect the values of the properties which are in-scope, and step through the code.
 
-1. In the webpage, enter numbers, such as 5 and 1, then select the button **Add Number 1 and Number 2**.  
+    <!-- "sources-paused-breakpoint.msft.png" is not currently directly used. It's the upstream source for a couple images, including the below image. -->
 
-   Selecting the form's button triggers sending the form-data and running the JavaScript code.  The debugger runs the JavaScript code and then pauses at the breakpoint (such as the line `var sum = addend1 + addend2;`).
+    :::image type="complex" source="../media/sources-paused-breakpoint-highlights.msft.png" alt-text="Entering Paused mode of the Debugger" lightbox="../media/sources-paused-breakpoint-highlights.msft.png":::
+        Entering Paused mode of the Debugger  
+    :::image-end:::  
 
-1. You then use the **Watch** or **Scope** pane, and use the controls at the top of the **Debugger** pane, such as **Step** (`F9`), to step through the code.
+    In the above figure, we added the Watch expressions `sum` and `typeof sum`, and stepped two lines past the breakpoint.
 
-<!-- "sources-paused-breakpoint.msft.png" is not currently directly used. It's the upstream source for a couple images, including the below image. -->
+1.  Examine the values in the **Scope** pane, which shows all variables or properties that are in-scope for the current breakpoint, and their values.  Or, add expressions in the **Watch** pane.  These are the same expressions that you would write within a `console.log` statement to debug your code.  Use the Console (select `Esc`) to run JavaScript commands to manipulate data in the current context.
 
-:::image type="complex" source="../media/sources-paused-breakpoint-highlights.msft.png" alt-text="Entering Paused mode of the Debugger" lightbox="../media/sources-paused-breakpoint-highlights.msft.png":::
-   Entering Paused mode of the Debugger  
-:::image-end:::  
+1.  Use the controls at the top of the **Debugger** pane, such as **Step** (`F9`), to step through the code.
 
-The **Scope** pane shows variables that are in-scope, and their values.  In the above figure, we added the Watch expressions `sum` and `typeof sum`, and stepped two lines past the breakpoint.
+**Related articles:**
+
+*   [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] - a tutorial using an existing, simple webpage that contains a few form controls.
 
 ### Advantages of the debugger\'s Watch and Scope over console\.log
 
