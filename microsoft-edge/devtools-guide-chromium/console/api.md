@@ -391,7 +391,7 @@ console.warn('warn');
 [DevtoolsConsoleLog]: ./log.md "Get started with logging messages in the Console | Microsoft Docs"  
 [DevtoolConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
 [DevtoolsConsoleReferenceClear]: ./reference.md#clear-the-console "Clear the Console - Console reference | Microsoft Docs"  
-[DevtoolsConsoleReferencePersist]: ./reference.md##persist-messages-across-page-loads "Persist messages across page loads - Console reference | Microsoft Docs"  
+[DevtoolsConsoleReferencePersist]: ./reference.md#persist-messages-across-page-loads "Persist messages across page loads - Console reference | Microsoft Docs"  
 [DevtoolsConsoleReferenceLevel]: ./reference.md#filter-by-log-level "Filter by log level - Console reference | Microsoft Docs"  
 
 [MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools overview | Microsoft Docs"  
