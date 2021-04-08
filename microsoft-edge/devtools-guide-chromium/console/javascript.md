@@ -23,7 +23,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Get started with running JavaScript in the Console  
 
-This article walks teaches you how to run JavaScript in the Microsoft Edge DevTools **Console**.  For more information about how to log messages to the **Console**, navigate to [Get Started With Logging Messages][DevToolsConsoleLoggingMessages].  For more information about how to pause JavaScript code and step through it one line at a time, navigate to [Get Started With Debugging JavaScript][DevToolsJavascriptIndex].  
+This article teaches you how to run JavaScript in the Microsoft Edge DevTools **Console**.  For more information about how to log messages to the **Console**, navigate to [Get Started With Logging Messages][DevToolsConsoleLoggingMessages].  For more information about how to pause JavaScript code and step through it one line at a time, navigate to [Get Started With Debugging JavaScript][DevToolsJavascriptIndex].  
 
 :::image type="complex" source="../media/console-javascript-example-console-playground.msft.png" alt-text="The Console" lightbox="../media/console-javascript-example-console-playground.msft.png":::
    The **Console**  
@@ -31,39 +31,51 @@ This article walks teaches you how to run JavaScript in the Microsoft Edge DevTo
 
 ## Overview  
 
-The **Console** is a [REPL][WikiReadEvalPrintLoop], which stands for Read, Evaluate, Print, and Loop.  It reads the JavaScript that you type into it, evaluates your code, prints out the result of your [expression][2alityExpressionsVersusStatements], and then loops back to the first step.  
+The **Console** is a [REPL][WikiReadEvalPrintLoop], which stands for Read, Evaluate, Print, and Loop.  The **Console** completes the following actions.  
 
+1.  Reads the JavaScript code while you type into it.  
+1.  Evaluates your JavaScript code.  
+1.  Prints the result of your [expression][2alityExpressionsVersusStatements].  
+1.  Loops back to the first step.  
+    
 ## Set up DevTools  
 
-This tutorial is designed for you to open up the demo and try all the workflows yourself.  When you physically follow along, you are more likely to remember the workflows later.
+This article is designed for you to open up the demo and try all the workflows yourself.  When you physically follow along, you're more likely to remember the workflows later.
 
 1.  Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\) to open the **Console**.  
-1.  Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and choose **Console Javascript Example** to open in a new window.  
+1.  Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and choose **Console JavaScript Example** to open in a new window.  
     
-    *   [Console Javascript Example][GlitchConsoleJavascriptExample]  
+    *   [Console JavaScript Example][GlitchConsoleJavascriptExample]  
     
-    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="The Console JavaScript Example page on the left, and DevTools on the right" lightbox="../media/console-javascript-example-console-empty.msft.png":::
-       The Console JavaScript Example page on the left, and DevTools on the right  
+    :::image type="complex" source="../media/console-javascript-example-console-empty.msft.png" alt-text="The Console JavaScript Example webpage displayed next to DevTools Console tool" lightbox="../media/console-javascript-example-console-empty.msft.png":::
+       The Console JavaScript Example webpage displayed next to DevTools **Console** tool  
     :::image-end:::  
     
 ## View and change the JavaScript or DOM of the page  
 
-When building or debugging a page, it is often useful to run statements in the **Console** in order to change how the page looks or runs.  
+When you build or debug a webpage, use the **Console** to change how the webpage displays or runs.  
     
 1.  Notice the text in the button.  
 1.  Type `document.getElementById('hello').textContent = 'Hello, Console!'` in the **Console** and then select `Enter` to evaluate the expression.  Notice how the text inside the button changes.  
     
-    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="How the Console looks after evaluating the expression" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
-       How the **Console** looks after evaluating the expression  
+    :::image type="complex" source="../media/console-javascript-example-console-change-button-text.msft.png" alt-text="How the Console looks after it evaluates the expression" lightbox="../media/console-javascript-example-console-change-button-text.msft.png":::
+       How the **Console** looks after it evaluates the expression  
     :::image-end:::  
     
-    `"Hello, Console!"`, is displayed below the code that you evaluated.  Remember the 4 steps of REPL: read, evaluate, print, loop.  After evaluating your code, a REPL prints the result of the expression.  So `"Hello, Console!"` must be the result of evaluating `document.getElementById('hello').textContent = 'Hello, Console!'`.  
+    `"Hello, Console!"`, is displayed below the code that you evaluated.  Remember the four steps of REPL.
     
-## Run arbitrary JavaScript that is not related to the page  
+    1.  Read  
+    1.  Evaluate  
+    1.  Print  
+    1.  Loop.  
+        
+    After it evaluates your code, a REPL prints the result of the expression.  So `"Hello, Console!"` must be the evaluation result of `document.getElementById('hello').textContent = 'Hello, Console!'`.  
+    
+## Run arbitrary JavaScript that isn't related to the webpage  
 
-Sometimes, you just want a code playground where you are able to test some code, or try out new JavaScript features you are not familiar with.  The **Console** is a perfect place for these kinds of experiments.  
+Sometimes, you want a code playground to test some code, or try new JavaScript unfamiliar features.  The **Console** is a perfect place for similar experiments.  
 
-1.  Type `5 + 15` in the Console and select `Enter` to evaluate the expression. The Console prints out the result of the expression below your code.  In the following figure, your **Console** should display the result after evaluating the expression.  
+1.  Type `5 + 15` in the **Console** and select `Enter` to evaluate the expression. The **Console** prints the result of the expression below your code.  In the following figure, your **Console** should display the result after it evaluates the expression.  
 
 1.  Type the following code into the **Console**.  Try typing it out, character-by-character, rather than copy-pasting it.  
     
@@ -71,9 +83,9 @@ Sometimes, you just want a code playground where you are able to test some code,
     function add(a, b=20)
     ```  
     
-    If you are unfamiliar with the `b=20` syntax, navigate to [define default values for function arguments][Esma6DefaultParameterValues].  
+    If you're unfamiliar with the `b=20` syntax, navigate to [define default values for function arguments][Esma6DefaultParameterValues].  
     
-1.  Now, run the function that you just defined.  
+1.  Now, run the function that you defined.  
     
     :::row:::
        :::column span="":::
@@ -96,11 +108,11 @@ Sometimes, you just want a code playground where you are able to test some code,
 
 <!--todo: add console reference (run javascript) section when available  -->  
 
-DevTools lets you pause a script in the middle of running.  While you are paused, you may use the **Console** to view and change the `window` or `DOM` of the page at that moment in time.  The workflow makes for a powerful debugging workflow.  For an interactive tutorial, navigate to [Get Started With Debugging JavaScript][DevToolsJavascriptIndex].  
+DevTools allows you to pause a script when it runs.  While a script is paused, use the **Console** to review and change the `window` or `DOM` of the webpage at that moment.  The ability to pause, review, and edit is a powerful debugging workflow.  For an interactive tutorial, navigate to [Get Started With Debugging JavaScript][DevToolsJavascriptIndex].  
 
 The **Console** also has a set of convenience functions that make it easier to interact with a page.  For example:  
 
-*   Rather than typing `document.querySelector()` to select an element, type `$()`.  This syntax is inspired by jQuery, but it is not actually jQuery.  It is just an alias for `document.querySelector()`.  
+*   Rather than type `document.querySelector()` to choose an element, type `$()`.  The syntax is inspired by jQuery, but it's not jQuery.  It's just an alias for `document.querySelector()`.  
 *   `debug(function)` effectively sets a breakpoint on the first line of that function.  
 *   `keys(object)` returns an array containing the keys of the specified object.  
 
@@ -121,7 +133,7 @@ For more information about the convenience functions, navigate to [Console Utili
 
 [Esma6DefaultParameterValues]: https://es6-features.org/index#DefaultParameterValues "Default Parameter Values - Extended Parameter Handling - ECMAScript 6 — New Features: Overview & Comparison"  
 
-[GlitchConsoleJavascriptExample]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/javascript/index.html "Console Javascript example | Glitch"  
+[GlitchConsoleJavascriptExample]: https://microsoft-edge-chromium-devtools.glitch.me/static/console/javascript/index.html "Console JavaScript example | Glitch"  
 
 [WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read–eval–print_loop "Read–eval–print loop - Wikipedia"  
 

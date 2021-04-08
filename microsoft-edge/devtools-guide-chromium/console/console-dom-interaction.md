@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Use the Console to interact with the DOM
 
-The **Console** tool is not only for [logging information][DevtoolsConsoleConsoleLog] or to [run arbitrary JavaScript][DevtoolsConsoleConsoleJavascript].  It also is a great way to interact with the webpage in the browser.  Consider it a script environment version of the **Inspect** tool.  
+The **Console** tool isn't only for [logging information][DevtoolsConsoleConsoleLog] or to [run arbitrary JavaScript][DevtoolsConsoleConsoleJavascript].  It also is a great way to interact with the webpage in the browser.  Consider it a script environment version of the **Inspect** tool.  
 
 ## Read from the DOM
 
@@ -48,8 +48,8 @@ document.querySelector('header').style.border = '2em solid green'
 
 Depending on the complexity of the webpage, It may be daunting to find the right element to manipulate.  But you may use the **Inspect** tool to help you.  Say you want to manipulate the `Documentation` part in the header.
 
-:::image type="complex" source="../media/console-dom-highlight-documentation.msft.png" alt-text="Display the element you want to choose on the screen" lightbox="../media/console-dom-highlight-documentation.msft.png":::
-    Display the element you want to choose on the screen  
+:::image type="complex" source="../media/console-dom-highlight-documentation.msft.png" alt-text="Display the element that you inspect on the screen" lightbox="../media/console-dom-highlight-documentation.msft.png":::
+    Display the element that you inspect on the screen  
 :::image-end:::  
 
 Get a direct reference to this element to manipulate using the following steps.  
@@ -64,13 +64,13 @@ Get a direct reference to this element to manipulate using the following steps.
 1.  Choose the `...` menu next to the element in the DOM view  
 
     :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="The chosen element displays in the DOM tree of the Elements tool, choose the overflow menu to get more features" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
-        The Chosen element displays in the DOM tree of the **Elements** tool, choose the overflow menu to get more features  
+        The chosen element displays in the DOM tree of the **Elements** tool, choose the overflow menu to get more features  
     :::image-end:::  
 
 1.  Choose `Copy` and `Copy JS Path` from the context menus.
  
-    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="Copy the JS path from an element in the DOM view of the Elements tool" lightbox="../media/console-dom-copy-JS-path.msft.png":::
-        Copy the JS path from an element in the DOM view of the **Elements** tool  
+    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="Copy the JavaScript path from an element in the DOM view of the Elements tool" lightbox="../media/console-dom-copy-JS-path.msft.png":::
+        Copy the JavaScript path from an element in the DOM view of the **Elements** tool  
     :::image-end:::  
 
 1.  Go back to **Console** and paste the command.  
@@ -81,7 +81,7 @@ To change the text of the link to `My Playground`, add `.textContent = "My Playg
     Change the content of an element using **Console**  
 :::image-end:::  
 
-Use any JavaScript DOM manipulations you want to do in the **Console**.  And, to make it more convenient, the **Console** comes with a few helper methods to make it easier for you.
+Use any JavaScript DOM manipulations you want to do in the **Console**.  To make it more convenient, the **Console** comes with a few helper methods to make it easier.
 
 ## Helpful Console utility methods  
 
@@ -106,7 +106,7 @@ console.table($$('a'),['href','text']);
     Get all links in the webpage and displaying the result as a table  
 :::image-end:::  
 
-However, what if you do not want to display this information but get it as data?  The problem with `$$('a')` it that it not only gives the information you want, the link and the text, but also all of the properties for each link.  
+However, if you don't want to display the information, but you grab it as data.  The problem with `$$('a')`, is that it not only gives the information you want, the link and the text, but also all of the properties for each link.  
 
 :::image type="complex" source="../media/console-dom-too-much-link-information.msft.png" alt-text="The $$ command returning far too much information" lightbox="../media/console-dom-too-much-link-information.msft.png":::
     The `$$` command returning far too much information  
@@ -126,7 +126,7 @@ The code snippet returns an Array of all the links as objects with `url` and `te
     Use map on `$$` to filter information down to the bare minimum  
 :::image-end:::  
 
-You are not done so yet, several links are internal links to this webpage or have empty text.  Get rid of the internal links using the filter method.  
+You aren't done so yet, several links are internal links to this webpage or have empty text.  Get rid of the internal links using the filter method.  
 
 ```javascript
 $$('a').map(a => {
@@ -136,8 +136,8 @@ $$('a').map(a => {
 })
 ```  
 
-:::image type="complex" source="../media/console-dom-filter-out-empty-links.msft.png" alt-text="Get the links that are not empty and are external" lightbox="../media/console-dom-filter-out-empty-links.msft.png":::
-    Get the links that are not empty and are external  
+:::image type="complex" source="../media/console-dom-filter-out-empty-links.msft.png" alt-text="Get the links that aren't empty and are external" lightbox="../media/console-dom-filter-out-empty-links.msft.png":::
+    Get the links that aren't empty and are external  
 :::image-end:::  
 
 As displayed at the start of this webpage, you may also change these elements.  For example, the following code snippet creates a green border around all external links:
@@ -154,7 +154,7 @@ $$('a[href^="https://"]').forEach(
 
 Instead of writing complex JavaScript to filter results, you may use the power of CSS selectors.  
 
-To create to have a table of the `src` and `alt` information of all images in the webpage that are not inline images, complete the following actions.  
+To create to have a table of the `src` and `alt` information of all images in the webpage that aren't inline images, complete the following actions.  
 
 1.  Open the **Console**.  
 1.  copy and run the following code snippet.  
@@ -219,7 +219,7 @@ To list all of the event listener assigned to the first form in the webpage, com
     Get all events listeners for the first form in the webpage  
 :::image-end:::  
 
-Monitoring allows you to get a notification in the **Console** every time something changes to the elements you monitor.  You define the events you want to listen to as a second parameter.  Monitoring is important as otherwise any event happening to the element is reported.
+When you monitor, you to get a notification in the **Console** every time something changes to the specified elements.  You define the events you want to listen to as a second parameter.  Monitoring is important as otherwise any event happening to the element is reported.
 
 To get a notification in the **Console** every time you scroll or resize the window, complete the following actions.  
 
@@ -250,7 +250,10 @@ unmonitorEvents($0, 'key');
 
 ## Reuse DOM manipulation scripts
 
-As useful as manipulating the DOM from the **Console** is, you may soon run into the limitations as a development platform.  The good news is that the [Sources][DevtoolsSourcesIndex] tool in DevTools offers a fully featured development environment.  In the **Sources** tool, store your scripts for the **Console** as Snippets and run the scripts in a webpage using a keyboard shortcut or the editor.
+It's useful to manipulate the DOM from the **Console**.  You may soon run into the limitations as a development platform.  The good news is that the [Sources][DevtoolsSourcesIndex] tool in DevTools offers a fully featured development environment.  In the **Sources** tool, you may complete the following actions.  
+
+*   Store your scripts for the **Console** as Snippets.  
+*   Run the scripts in a webpage using a keyboard shortcut or the editor.  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

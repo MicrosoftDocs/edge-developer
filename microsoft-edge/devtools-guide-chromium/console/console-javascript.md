@@ -16,7 +16,7 @@ To try it, complete the following actions.
 
 1.  Open the **Console**.  
     *   Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).  
-1.  Type `2 + 2`.  The **Console** already displays the result `4` on the next line while you type it.  The feature named **Eager evaluation** helps you write valid JavaScript.  It displays the result while you type whether it is wrong or if a valid result exists.  
+1.  Type `2 + 2`.  The **Console** already displays the result `4` on the next line while you type it.  The feature named **Eager evaluation** helps you write valid JavaScript.  It displays the result while you type whether it's wrong or if a valid result exists.  
     
 :::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console displays the result of 2 + 2 live as you type it" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
    **Console** displays the result of `2 + 2` live as you type it  
@@ -30,7 +30,7 @@ If you hit `Enter`, **Console** runs the JavaScript command, give you the result
 
 ## Autocompletion to write complex expressions
 
-The last example may seem scary, but the **Console** helps you write complex JavaScript using an excellent autocompletion feature.  This feature is a great way to learn about methods you did not know before.  
+The last example may seem scary, but the **Console** helps you write complex JavaScript using an excellent autocompletion feature.  This feature is a great way to learn about methods you didn't know before.  
 
 To try it, complete the following actions.  
 
@@ -71,7 +71,7 @@ If you start a multiline statement in **Console**, it gets automatically recogni
 
 ## Network requests using top-level await()  
 
-Other than in your own scripts, **Console** supports [top-level await][GithubTc39ProposalTopLevelAwait] which means you may run arbitrary asynchronous JavaScript in it.  For example, you may use the fetch API without having to wrap the await statement in an async function.  
+Other than in your own scripts, **Console** supports [top level await][GithubTc39ProposalTopLevelAwait] to run arbitrary asynchronous JavaScript in it.  For example, use the `fetch` API without wrapping the `await` statement with an async function.  
 
 To get the last 50 issues filed on the [Microsoft Edge Developer Tools for Visual Studio Code][GithubMicrosoftVscodeEdgeDevtools] GitHub repo, complete the following actions.  
 
@@ -85,10 +85,10 @@ To get the last 50 issues filed on the [Microsoft Edge Developer Tools for Visua
     ```  
     
 :::image type="complex" source="../media/console-javascript-top-level-await.msft.png" alt-text="Console displays the result of a top-level async fetch request" lightbox="../media/console-javascript-top-level-await.msft.png":::
-    **Console** displays the result of a top-level async fetch request  
+    **Console** displays the result of a top-level async `fetch` request  
 :::image-end:::  
 
-Luckily enough, you may use the `console.table()` log method to filter the things that you are interested.
+Luckily enough, you may use the `console.table()` log method to filter the things that you're interested.
 
 :::image type="complex" source="../media/console-javascript-filtered-with-table.msft.png" alt-text="Display the last result in a human readable form using console.table" lightbox="../media/console-javascript-filtered-with-table.msft.png":::
     Display the last result in a human readable form using `console.table`  

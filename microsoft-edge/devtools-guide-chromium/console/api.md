@@ -23,7 +23,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Console API reference  
 
-The **Console** tool is helpful when performing multiple tasks in the DevTools.  APIs are available to include in your scripts. Convenience methods are only available for use in the **Console** tool, such as the `debug()` and `monitorEvents()` methods.  For more information on getting started with the **Console**, navigate to [Get started with logging messages to the Console][DevtoolsConsoleLog].  For more information on the convenience methods for use only in the **Console**, navigate to [Console Utilities API Reference][DevtoolConsoleUtilities].  
+The **Console** tool is helpful when you complete multiple tasks in the DevTools.  APIs are available to include in your scripts. Convenience methods are only available for use in the **Console** tool, such as the `debug()` and `monitorEvents()` methods.  For more information on getting started with the **Console**, navigate to [Get started with logging messages to the Console][DevtoolsConsoleLog].  For more information on the convenience methods in the **Console**, navigate to [Console Utilities API Reference][DevtoolConsoleUtilities].  
 
 ---  
 
@@ -194,7 +194,7 @@ console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 console.group(label)
 ```  
 
-Visually groups messages together until the [groupEnd](#groupend) method is used.  Use the [groupCollapsed](#groupcollapsed) method to collapse the group when it is initially logged to the **Console**.  
+Visually groups messages together until the [groupEnd](#groupend) method is used.  Use the [groupCollapsed](#groupcollapsed) method to collapse the group when it initially logs to the **Console**.  
 
 ```javascript
 const label = 'Adolescent Irradiated Espionage Tortoises';
@@ -218,7 +218,7 @@ console.groupEnd(label);
 console.groupCollapsed(label)
 ```  
 
-Same as the [log](#log) method, except the group is initially collapsed when it is logged to the **Console**.  
+Same as the [log](#log) method, except the group is initially collapsed when it logs to the **Console**.  
 
 ---  
 

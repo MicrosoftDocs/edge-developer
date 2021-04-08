@@ -12,7 +12,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Ever since browsers started to offer developer tools, the **Console** is a favorite.  The reason is simple:  in most programming courses, you learn to output some kind of print command where you want to gain insights what happens.  In JavaScript and before, you had DevTools, this was either using an `alert()` or a `document.write()` statement, and neither were a satisfying experience.  
 
-If you want to log information in **Console**, lots of methods are available to you.  You may display all available methods in the [API reference][DevtoolsConsoleApi], but the following codes snippet lists the most important ones.  
+If you want to log information in **Console**, lots of methods are available to you.  Review all of available methods in the [API reference][DevtoolsConsoleApi].  The following codes snippet lists the most important methods.  
 
 ```javascript
 // prints the text to the console as  a log message
@@ -27,8 +27,8 @@ console.warn('This is a warning')
 
 When you try any method in **Console** after you copy or navigate to [log examples demo][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingExamplesHtml], the `log()` and `info()` methods seem to do the same thing, while the `error()` and `warn()` methods display an icon next to the message and a way to inspect the [stack trace][WikiStackTrace] of the message.  
 
-:::image type="complex" source="../media/console-log-examples.msft.png" alt-text="Console displays the messages caused by different log APIs" lightbox="../media/console-log-examples.msft.png":::
-   **Console** displays the messages caused by different log APIs  
+:::image type="complex" source="../media/console-log-examples.msft.png" alt-text="Console displays the messages from different log APIs" lightbox="../media/console-log-examples.msft.png":::
+   **Console** displays the messages from different log APIs  
 :::image-end:::  
 
 It is, however, still a good idea to use `info()` and `log()` for different log tasks as that allows you to [filter using type in the Console][DevtoolsConsoleConsoleFiltering].  
@@ -52,7 +52,7 @@ let w3techs = ['HTML', 'CSS', 'SVG', 'MathML'];
 console.log(w3techs);
 ```  
 
-Each result is displayed in a different way.  Use the triangles to toggle the information and analyze each one in more detail.  The curly braces `{}` around the variable `x` are a nice little trick to avoid lots of log messages where you only get a value but you do not know where it originated.  
+Each result is displayed in a different way.  Use the triangles to toggle the information and analyze each one in more detail.  The curly braces `{}` around the variable `x` are a nice little trick to avoid lots of log messages where you only get a value but you don't know where it originated.  
 
 :::row:::
    :::column span="":::
@@ -176,7 +176,7 @@ console.table(bodyDimensions);
    Display data with `console.table` to make it much easier to read
 :::image-end:::  
 
-The output of `console.table` has a table format not only when it is displayed in **Console**.  For example you may copy a table and paste it into Excel, Word or any other products that support tabular data.  
+The output of `console.table` has a table format not only when it's displayed in **Console**.  For example you may copy a table and paste it into Excel, Word or any other products that support tabular data.  
 
 If the data has named parameters, the `console.table()` method also allows for an `Array` of columns to display as a second parameter.  This example displays how that may make things much more readable.
 
@@ -193,7 +193,7 @@ console.table(contentElements,['nodeName', 'innerText', 'offsetHeight'])
    Filter information that `console.table` should display, provide an array of properties to display as a second parameter  
 :::image-end:::  
 
-You may be tempted to use the log methods as your main means to debug webpages as log methods are simple to use.  Consider the result of any `console.log()` request.  Live products should not use any log that was used to debug.  It may leak inside information to people and the noise created in **Console** is overwhelming.  When you use [Breakpoint Debugging][DevtoolsJavascriptBreakpoints] or [Live Expressions][DevtoolsConsoleLiveExpressions], you may find that your workflows are more effective way and you get better results.
+You may be tempted to use the log methods as your main means to debug webpages as log methods are simple to use.  Consider the result of any `console.log()` request.  Live products shouldn't use any log that was used to debug.  It may leak inside information to people and the noise created in **Console** is overwhelming.  When you use [Breakpoint Debugging][DevtoolsJavascriptBreakpoints] or [Live Expressions][DevtoolsConsoleLiveExpressions], you may find that your workflows are more effective way and you get better results.
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
@@ -206,7 +206,7 @@ You may be tempted to use the log methods as your main means to debug webpages a
 
 [DevtoolsJavascriptBreakpoints]: ../javascript/breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"  
 
-[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingExamplesHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-examples.html "Console messages examples: log, info, error and warn | GitHub"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingExamplesHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-examples.html "Console messages examples: log, info, error, and warn | GitHub"  
 [GithubMicrosoftedgeDevtoolssamplesConsoleLoggingTypesHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-types.html "Console messages examples: logging different types | GitHub"  
 [GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithGroupsHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-with-groups.html "Console messages examples: grouping logs | GitHub"  
 [GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithSpecifiersHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-with-specifiers.html "Console messages examples: Logging with specifiers | GitHub"  

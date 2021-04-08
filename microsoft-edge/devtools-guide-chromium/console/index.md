@@ -12,13 +12,13 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 The **Console** tool of the DevTools helps you with several tasks.  The following list includes some of the tasks.  
 
-*   Find out why something is not working in the current project and [track down problems][DevtoolsConsoleConsoleDebugJavascript].  
+*   Find out why something isn't working in the current project and [track down problems][DevtoolsConsoleConsoleDebugJavascript].  
 *   [Get information about the web project][DevtoolsConsoleConsoleFilters] in the browser as log messages.  
 *   [Log information][DevtoolsConsoleConsoleLog] in scripts for debugging purposes.  
 *   [Try the JavaScript expressions][DevtoolsConsoleConsoleJavascript] live in a [REPL][WikiReadEvalPrintLoop] environment.  
 *   [Interact with the web project in the browser][DevtoolsConsoleConsoleDomInteraction] using JavaScript.  
     
-The versatility of the **Console** makes it one of the few tools in DevTools that you open in several places, as part of either the upper or lower panel.  The **Console** is a great companion tool to use with others tools.  The **Console** provides a powerful way to script functionality, inspect, and manipulate the current webpage using JavaScript.  
+The **Console** is a great companion tool to use with others tools.  The **Console** provides a powerful way to script functionality, inspect, and manipulate the current webpage using JavaScript.  
 
 :::row:::
    :::column span="":::
@@ -45,7 +45,7 @@ The fastest way to directly open the **Console** is to select `Control`+`Shift`+
 
 ## Inspect and filter information on the current webpage  
 
-When you open the DevTools on a webpage, you are likely to display a deluge of information logged to the **Console**.  The amount of information becomes a problem when you need to identify important information.  To view the important information that needs action, use the [Issues][DevtoolsIssuesIndex] tool in DevTools.  Much of the noise remains, which is why it is a good idea to know about the [automated log and filter options][DevtoolsConsoleConsoleFilters] in the **Console**.  
+When you open the DevTools on a webpage, you're likely to display a deluge of information logged to the **Console**.  The amount of information becomes a problem when you need to identify important information.  To view the important information that needs action, use the [Issues][DevtoolsIssuesIndex] tool in DevTools.  Much of the noise remains, which is why it's a good idea to know about the [automated log and filter options][DevtoolsConsoleConsoleFilters] in the **Console**.  
 
 :::image type="complex" source="../media/console-intro-noise.msft.png" alt-text="DevTools with a Console full of messages" lightbox="../media/console-intro-noise.msft.png":::
    DevTools with a **Console** full of messages  
@@ -81,12 +81,12 @@ Many useful methods are available when you work with the **Console**.  For more 
 
 ## Try your JavaScript live in Console  
 
-The **Console** is not only a place to log information.  The **Console** is a [REPL][WikiReadEvalPrintLoop] environment.  When you write any JavaScript in the **Console**, the code runs immediately.  You may find it useful to test some new JavaScript features or to do some quick calculations.  Also, you get all of the features you expect from a modern editing environment, such as autocompletion, syntax highlighting, and history.  To try it, complete the following actions.  
+The **Console** isn't only a place to log information.  The **Console** is a [REPL][WikiReadEvalPrintLoop] environment.  When you write any JavaScript in the **Console**, the code runs immediately.  You may find it useful to test some new JavaScript features or to do some quick calculations.  Also, you get all of the features you expect from a modern editing environment, such as autocompletion, syntax highlighting, and history.  To try it, complete the following actions.  
 
 1.  Navigate to **Console**.  
 1.  Type `2 + 2`.  
     
-The **Console** displays the result `4` on the following line.  This **Eager evaluation** feature is useful to debug and verify that you are not making mistakes in your code.  
+The **Console** displays the result `4` on the following line.  This **Eager evaluation** feature is useful to debug and verify that you aren't making mistakes in your code.  
 
 :::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="The Console displays the result of 2 + 2 live as you type it" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
    The **Console** displays the result of `2 + 2` live as you type it  
@@ -98,7 +98,7 @@ To run the JavaScript in **Console** and optionally display a result, select `En
    Run several lines of JavaScript code in succession  
 :::image-end:::  
 
-By default, you run JavaScript code on a single line.  To run a line, type your JavaScript and then select `Enter`.  To work around the single line limitation, select `Shift`+`Enter` instead of `Enter`.  Similar to other command-line experiences, to access your previous JavaScript commands, select `Arrow-Up`.  The autocompletion feature of the **Console** is a great way to learn about unfamiliar methods.  To try it, complete the following actions.  
+By default, you run JavaScript code on a single line.  To run a line, type your JavaScript and then select `Enter`.  To work around the single-line limitation, select `Shift`+`Enter` instead of `Enter`.  Similar to other command-line experiences, to access your previous JavaScript commands, select `Arrow-Up`.  The autocompletion feature of the **Console** is a great way to learn about unfamiliar methods.  To try it, complete the following actions.  
 
 1.  Open the **Console**.  
 1.  Type `doc`.  
@@ -161,7 +161,7 @@ For more information about working with the DOM, navigate to [Use the Console to
 
 ## Learn more about Console  
 
-For more information about the functionality of the **Console**, navigate to [Console reference][DevtoolsConsoleReference], [Console Utilities API reference][DevtoolsConsoleUtilities], and [Console API reference][DevtoolsConsoleApi].  
+For more information about the **Console**, navigate to [Console reference][DevtoolsConsoleReference], [Console Utilities API reference][DevtoolsConsoleUtilities], and [Console API reference][DevtoolsConsoleApi].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
@@ -180,7 +180,7 @@ For more information about the functionality of the **Console**, navigate to [Co
 
 [DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
 
-[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html "Console messages examples: log, info, error and warn | GitHub"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html "Console messages examples: log, info, error, and warn | GitHub"  
 
 [MdnDocsWebApiWindow]: https://developer.mozilla.org/docs/Web/API/Window "Window | MDN"  
 

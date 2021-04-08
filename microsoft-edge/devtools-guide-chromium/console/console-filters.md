@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Filter Console messages  
 
-If you surf the web recently you may find that the **Console** is flooded with all kind of information.  Often the information is not relevant to you.  Like information that you log when you debug your live project.  Or much information about violations and warnings about the performance of the current site that you are not able to change.  It makes sense to get used to the filtering options of **Console** to drown out some of the noise.
+When you surf the web, you may find the **Console** is flooded with all kinds of information.  Often the information isn't relevant to you.  Like information that you log when you debug your live project.  Or much information about violations and warnings about the performance of the current site that you aren't able to change.  It makes sense to get used to the filtering options of **Console** to drown out some of the noise.
 
 ## Filter by log level  
 
@@ -18,8 +18,8 @@ Each method of the `console` object has a severity level attached to it.  The se
 
 Filter messages in the **Console** using the **Log Levels** dropdown.  You may toggle the state of each level.  To turn off each level, remove the checkmark next to each.
 
-:::image type="complex" source="../media/console-filter-dropdown.msft.png" alt-text="The dropdown menu to filter Console messages using the log level" lightbox="../media/console-filter-dropdown.msft.png":::
-    The dropdown menu to filter **Console** messages using the log level  
+:::image type="complex" source="../media/console-filter-dropdown.msft.png" alt-text="The dropdown menu filters Console messages using the log level" lightbox="../media/console-filter-dropdown.msft.png":::
+    The dropdown menu filters **Console** messages using the log level  
 :::image-end:::  
 
 In the following example, to display that, filter the different types of log level to cut down the noise immensely.
@@ -46,7 +46,7 @@ If you want to review more detail, to filter messages using text, type a string 
 
 ## Filter by regular expression
 
-[Regular expressions][MdnDocsWebJavascriptGuideRegularExpressions] are a powerful way to filter messages.  For example, type `/^Tracking/` into the **Filter** textbox to only displays messages that start with the word "Tracking".  If you are unfamiliar with regular expressions, [RegExr][RegExrMain] is a great resource to learn about using regular expressions.
+[Regular expressions][MdnDocsWebJavascriptGuideRegularExpressions] are a powerful way to filter messages.  For example, type `/^Tracking/` into the **Filter** textbox to only displays messages that start with the term `Tracking`.  If you're unfamiliar with regular expressions, [RegExr][RegExrMain] is a great resource to learn about using regular expressions.
 
 :::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="Displays the messages that start with the word filter using a regular expression in the Filter textbox" lightbox="../media/console-filter-regex.msft.png":::
     Displays the messages that start with the word `filter` using a regular expression in the **Filter** textbox  
@@ -68,8 +68,8 @@ When the **Sidebar** is open, you may display the overall number of messages and
 
 Choose any of the options to display only the messages of that type.  For example, to display user messages, choose the user messages option to display less noise.
 
-:::image type="complex" source="../media/console-filter-select-user-messages.msft.png" alt-text="Choose to only display user messages in the Console using the filter in the Sidebar" lightbox="../media/console-filter-select-user-messages.msft.png":::
-    Choose to only display user messages in the **Console** using the filter in the **Sidebar**  
+:::image type="complex" source="../media/console-filter-select-user-messages.msft.png" alt-text="Choose to display only user messages in the Console using the filter in the Sidebar" lightbox="../media/console-filter-select-user-messages.msft.png":::
+    Choose to display only user messages in the **Console** using the filter in the **Sidebar**  
 :::image-end:::  
 
 To filter more and expand the choice, choose the triangle icon next to it.  That way you get more choices  messages that originate from a certain source.  
@@ -78,8 +78,8 @@ To filter more and expand the choice, choose the triangle icon next to it.  That
     Choose the arrow icon expands each of the sections  
 :::image-end:::  
 
-:::image type="complex" source="../media/console-filter-user-message-by-source.msft.png" alt-text="Choose any of the new options to allows you to filter using type and source" lightbox="../media/console-filter-user-message-by-source.msft.png":::
-    Choose any of the new options to allows you to filter using type and source  
+:::image type="complex" source="../media/console-filter-user-message-by-source.msft.png" alt-text="Choose any of the new options to filter using type and source" lightbox="../media/console-filter-user-message-by-source.msft.png":::
+    Choose any of the new options to filter using type and source  
 :::image-end:::  
 
 ## Getting in touch with the Microsoft Edge DevTools team  

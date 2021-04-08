@@ -1,5 +1,5 @@
 ---
-description: A comprehensive reference on every feature and behavior related to the Console UI in Microsoft Edge DevTools.
+description: A comprehensive reference for every feature and behavior of the Console UI in Microsoft Edge DevTools.
 title: Console reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -23,9 +23,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Console reference  
 
-This article is a reference of features related to the Microsoft Edge DevTools Console.  It assumes that you are already familiar with using the Console to view logged messages and run JavaScript.  If not, navigate to [Get started with running JavaScript in the Console][DevToolsConsoleJavascript] and [Get started with logging messages in the Console][DevToolsConsoleLog].  
+This article is a reference of features related to the Microsoft Edge DevTools Console.  It assumes you're already familiar with using the Console to view logged messages and run JavaScript.  If not, navigate to [Get started with running JavaScript in the Console][DevToolsConsoleJavascript] and [Get started with logging messages in the Console][DevToolsConsoleLog].  
 
-If you are looking for the API reference on functions like `console.log()`, navigate to [Console API Reference][DevToolsConsoleApi].  For the reference on functions like `monitorEvents()`, navigate to [Console Utilities API Reference][DevToolsConsoleUtilities].  
+If you're looking for the API reference on functions like `console.log()`, navigate to [Console API Reference][DevToolsConsoleApi].  For the reference on functions like `monitorEvents()`, navigate to [Console Utilities API Reference][DevToolsConsoleUtilities].  
 
 ## Open the Console  
 
@@ -41,8 +41,8 @@ Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macO
 
 To open the **Console** tool from the [Command Menu][DevtoolsCommandMenuIndex], type `Console` and then run the **Show Console** command that has the **Panel** badge next to it.  
 
-:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="The command to display the Console tool" lightbox="../media/console-command-menu-show-console.msft.png":::
-   The command to display the **Console** tool  
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Run the command to display the Console tool" lightbox="../media/console-command-menu-show-console.msft.png":::
+   Run the command to display the **Console** tool  
 :::image-end:::  
 
 ### Open the Console tool in the Drawer  
@@ -61,8 +61,8 @@ The Drawer pops up at the bottom of your DevTools window, with the **Console** t
 
 To open the **Console** tool from the [Command Menu][DevtoolsCommandMenuIndex], type `Console` and then run the **Show Console** command that has the **Drawer** badge next to it.  
 
-:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="The command to show the **Console** tool in the Drawer" lightbox="../media/console-command-menu-show-console.msft.png":::
-   The command to show the **Console** tool in the **Drawer**  
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Run the command to display the **Console** tool in the Drawer" lightbox="../media/console-command-menu-show-console.msft.png":::
+   Run the command to display the **Console** tool in the **Drawer**  
 :::image-end:::  
 
 ### Open Console Settings  
@@ -157,7 +157,7 @@ DevTools assigns each `console.*` method one of the four severity levels.
 *   `Verbose`  
 *   `Warning`  
     
-For example, `console.log()` is in the `Info` group, but `console.error()` is in the `Error` group.  The [Console API Reference][DevToolsConsoleApi] describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  You may hide any level of messages that you are not interested in.  For example, if you are only interested in `Error` messages, you may hide the other three groups.  
+For example, `console.log()` is in the `Info` group, but `console.error()` is in the `Error` group.  The [Console API Reference][DevToolsConsoleApi] describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  You may hide any level of messages that you're not interested in.  For example, if you're only interested in `Error` messages, you may hide the other three groups.  
 
 To filter the messages, choose the **Log Levels** dropdown and choose `Verbose`, `Info`, `Warning`, or `Error`.  
 
@@ -179,7 +179,7 @@ Type `url:` followed by a URL to only view messages that came from that URL.  Af
    A URL filter  
 :::image-end:::  
 
-Type `-url:` to hide messages from that URL.  It is a negative URL filter.  
+To hide messages from a URL, type `-url:`.  It's a negative URL filter.  
 
 :::image type="complex" source="../media/console-negative-filter-text.msft.png" alt-text="A negative URL filter that hides all messages that match the https://b.wal.co URL" lightbox="../media/console-negative-filter-text.msft.png":::
    A negative URL filter that hides all messages that match the `https://b.wal.co` URL
@@ -199,12 +199,12 @@ To display messages from a single URL, complete the following actions.
 
 Suppose that you have an advertisement \(ad\) on your webpage.  The ad is embedded in an `<iframe>` and generates many messages in your **Console**.  Because the ad is running in a different [JavaScript context](#choose-javascript-context), one way to hide the messages is to [open Console Settings](#open-console-settings) and choose the checkbox next to **Selected Context Only**.  
 
-### Filter out messages that do not match a regular expression pattern  
+### Filter out messages that don't match a regular expression pattern  
 
-Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** textbox to filter out any messages that do not match that pattern.  DevTools checks if the pattern is found in the message text or the script that caused the message to be logged.  
+Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** textbox to filter out any messages that don't match that pattern.  DevTools checks if the pattern is found in the message text or the script that caused the message to be logged.  
 
-:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="Filter out any messages that do not match regex expression" lightbox="../media/console-filter-regex.msft.png":::
-   Filter out any messages that do not match the `/[gm][ta][mi]/` regex expression  
+:::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="Filter out any messages that don't match regex expression" lightbox="../media/console-filter-regex.msft.png":::
+   Filter out any messages that don't match the `/[gm][ta][mi]/` regex expression  
 :::image-end:::  
 
 ## Run JavaScript  
@@ -221,8 +221,11 @@ If you find yourself typing the same JavaScript expression in the **Console** re
 
 ### Turn off Eager Evaluation  
 
-**Eager Evaluation** displays a preview of the return value as you type JavaScript expressions in the **Console**.  To turn off the return value previews, [open Console Settings](#open-console-settings) and remove the checkbox next to **Eager Evaluation**.  
+**Eager Evaluation** displays a preview of the return value as you type JavaScript expressions in the **Console**.  To turn off the return value previews, complete the following actions.  
 
+1.  [Open Console Settings](#open-console-settings).  
+1.  Remove the checkbox next to **Eager Evaluation**.  
+    
 ### Turn off autocomplete from history  
 
 As you type out an expression, the autocomplete popup window for the **Console** displays expressions that you ran earlier.  The expressions are pre-pended with the `>` character.  To stop displaying expressions from your history, [open Console Settings](#open-console-settings) and remove the checkbox next to **Autocomplete From History** checkbox.  
@@ -230,8 +233,8 @@ As you type out an expression, the autocomplete popup window for the **Console**
 > [!NOTE]
 > In the following figure, `document.querySelector('a')` and `document.querySelector('img')` are expressions that were evaluated earlier.  
 
-:::image type="complex" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="The autocomplete popup displays expressions from history" lightbox="../media/console-filter-text-autofilter-history.msft.png":::
-   The autocomplete popup displays expressions from history  
+:::image type="complex" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="The autocomplete popup menu displays expressions from history" lightbox="../media/console-filter-text-autofilter-history.msft.png":::
+   The autocomplete popup menu displays expressions from history  
 :::image-end:::  
 
 ### Choose JavaScript context  

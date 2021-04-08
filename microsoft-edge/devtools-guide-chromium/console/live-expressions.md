@@ -16,8 +16,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 To start, choose the **Create new live expression** \(the eye\) button next to the **Filter** textbox.  After you choose it, a textbox is displayed for you to enter your new expression in it.
 
-:::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="Choose the New live expression button opens a textbox to enter an expression" lightbox="../media/console-live-expressions-new.msft.png":::
-    Choose the `New live expression` button opens a textbox to enter an expression  
+:::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="Choose the New live expression button to open a textbox to type an expression" lightbox="../media/console-live-expressions-new.msft.png":::
+    Choose the `New live expression` button to open a textbox to type an expression  
 :::image-end:::  
 
 Live expressions may be any valid JavaScript expression.  To try it, complete the following actions.  
@@ -36,14 +36,14 @@ The expression is now live and displays `body` as the result.
 
 If you now navigate around the webpage, the value changes.  For example, in the following figure you open the search menu in the webpage and our expression now displays `button.nav-bar-button.focus-visible` as the value.  
 
-:::image type="complex" source="../media/console-live-expressions-document-active-element-nav-button.msft.png" alt-text="Interacting with a different element in the webpage changes the value of the live expression" lightbox="../media/console-live-expressions-document-active-element-nav-button.msft.png":::
-    Interacting with a different element in the webpage changes the value of the live expression  
+:::image type="complex" source="../media/console-live-expressions-document-active-element-nav-button.msft.png" alt-text="To change the value of the live expression, interact with different elements on the webpage" lightbox="../media/console-live-expressions-document-active-element-nav-button.msft.png":::
+    To change the value of the live expression, interact with different elements on the webpage  
 :::image-end:::  
 
 To change the value again, turn on the search box.
 
-:::image type="complex" source="../media/console-live-expressions-document-active-element-search.msft.png" alt-text="Navigating to a different element in the webpage updates the live expression" lightbox="../media/console-live-expressions-document-active-element-search.msft.png":::
-    Navigating to a different element in the webpage updates the live expression  
+:::image type="complex" source="../media/console-live-expressions-document-active-element-search.msft.png" alt-text="Navigate to a different element in the webpage to updatee the live expression" lightbox="../media/console-live-expressions-document-active-element-search.msft.png":::
+    Navigate to a different element in the webpage to update the live expression  
 :::image-end:::  
 
 ## Removing live expressions  
@@ -64,20 +64,20 @@ For example, you want to monitor the mouse movement in the current webpage.  Nav
     **Console** displays much information on mouse position  
 :::image-end:::  
 
-It not only slows your debug process, but also makes it easy to miss the changes you want to monitor.  As soon as you move your mouse, the value you wanted to display may already be off screen again as the **Console** moved up.  
+It not only slows your debug process, but also makes it easy to miss the changes you want to review.  As the **Console** displays more messages and you move your mouse, the value you want to review scroll off the screen.  
 
 To try live expressions as an alternative, complete the following actions.  
 
 1.  Navigate to the [Mouse movement without logging demo][GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml].  
 1.  Create live expressions for `x` and `y`.  
     
-That way you always get the information on the same part of your screen and you may keep **Console** logs for values that do not change as much.
+When you use live expressions, you always get the information on the same part of your screen and keep **Console** logs for values that don't change as much.
 
 :::image type="complex" source="../media/console-live-expressions-x-and-y.msft.png" alt-text="Display the x and y position of the mouse as live expressions" lightbox="../media/console-live-expressions-x-and-y.msft.png":::
     Display the `x` and `y` position of the mouse as live expressions  
 :::image-end:::  
 
-Live expressions run exclusively on your computer and you do not need to change anything in your code to display.  A great way to ensure that you only display the information you want to debug and it does not end up as noise on the computers of the users of your product.
+Live expressions run exclusively on your computer and you don't need to change anything in your code to display.  Live expressions are a great way to ensure that you only display the information you want to debug.  Also, live expressions help you limit the noise from your users' computers.
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

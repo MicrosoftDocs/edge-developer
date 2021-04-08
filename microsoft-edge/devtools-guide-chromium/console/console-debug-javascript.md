@@ -10,12 +10,12 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Debug errors reported in Console  
 
-The first experience any user of DevTools has with the **Console** is probably when there was an error in a script.  To try it, navigate to [JavaScript error messaging in Console tool][GithubMicrosoftedgeDevtoolssamplesConsoleErrorHtml].  
+The first experience you have with the **Console** is probably an error in a script.  To try it, navigate to [JavaScript error messaging in Console tool][GithubMicrosoftedgeDevtoolssamplesConsoleErrorHtml].  
 
-If you open DevTools in the browser, you get a button on the top right that indicates there is an error on the webpage.  
+If you open DevTools in the browser, a button on the top right displays an error on the webpage.  
 
-:::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools flags an error on the current webpage" lightbox="../media/console-debug-displays-error.msft.png":::
-   DevTools flags an error on the current webpage  
+:::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools indicates an error on the current webpage" lightbox="../media/console-debug-displays-error.msft.png":::
+   DevTools indicates an error on the current webpage  
 :::image-end:::  
 
 Choose the button to take you to the **Console** and give you more information about the error.  
@@ -45,7 +45,7 @@ The table displays `loading`, but nothing changes on the webpage because the dat
 *   A network error that starts with `GET` HTTP method followed by a URI.  
 *   An `Uncaught (in promise) TypeError: data.forEach is not a function` error.  
     
-If you choose the `network-error.html:40` link in the **Console**, DevTools takes you to the **Sources** tool.  Activate the **error** \(`x`\) button to display the error information.  The problematic line of code that is highlighted and followed by an **error** \(`x`\) button.  To display the the `Failed to load resource: the server responded with a status of 404 ()` error message, choose the **error** \(`x`\) button.  
+If you choose the `network-error.html:40` link in the **Console**, DevTools takes you to the **Sources** tool.  Activate the **error** \(`x`\) button to display the error information.  The problematic line of code that is highlighted and followed by an **error** \(`x`\) button.  To display the `Failed to load resource: the server responded with a status of 404 ()` error message, choose the **error** \(`x`\) button.  
 
 :::row:::
    :::column span="":::
@@ -60,13 +60,13 @@ If you choose the `network-error.html:40` link in the **Console**, DevTools take
    :::column-end:::
 :::row-end:::
 
-In the example, the error informs you that the requested URL is not found.  Next, complete the following actions to open the **Network** tool.  
+In the example, the error informs you that the requested URL isn't found.  Next, complete the following actions to open the **Network** tool.  
 
 1.  Open the **Console**.  
 1.  Choose the URI associated with the error.  
     
-:::image type="complex" source="../media/console-debug-network-error-url.msft.png" alt-text="Console displays an HTTP status code of error that a resource was not loaded" lightbox="../media/console-debug-network-error-url.msft.png":::
-   **Console** displays an HTTP status code of 404 error that a resource was not loaded  
+:::image type="complex" source="../media/console-debug-network-error-url.msft.png" alt-text="Console displays an HTTP status code of the error after a resource isn't loaded" lightbox="../media/console-debug-network-error-url.msft.png":::
+   **Console** displays an HTTP status code of the error after a resource isn't loaded  
 :::image-end:::  
 
 :::row:::
@@ -84,8 +84,8 @@ In the example, the error informs you that the requested URL is not found.  Next
 
 What was the problem?  Two slash characters \(`//`\) occur in the requested URI after the word `repos`.  Open the **Sources** tool and inspect line 26.  A trailing slash character \(`/`\) occurs at the end of the base URI.  
 
-:::image type="complex" source="../media/console-debug-network-error-code-error.msft.png" alt-text="The Source tools displays the line of code with the error" lightbox="../media/console-debug-network-error-code-error.msft.png":::
-   The Source tools displays the line of code with the error  
+:::image type="complex" source="../media/console-debug-network-error-code-error.msft.png" alt-text="The Sources tool displays the line of code with the error" lightbox="../media/console-debug-network-error-code-error.msft.png":::
+   The **Sources** tool displays the line of code with the error  
 :::image-end:::  
 
 Navigate to the fixed example of the [JavaScript error messaging in Console tool][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorFixedHtml] and review that no errors occur in the **Console**.  
@@ -94,7 +94,7 @@ Navigate to the fixed example of the [JavaScript error messaging in Console tool
    The example without any errors loads information from GitHub and displays it  
 :::image-end:::  
 
-Ensure you provide defensive coding techniques to avoid the previous user experiences.  Also, ensure your code catches errors and display each in the **Console**.  If you navigate to the error reported example of the [JavaScript error messaging in Console tool][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorReportedHtml], you may notice the following items.  
+Ensure you provide defensive coding techniques to avoid the previous user experiences.  Also, ensure your code catches errors and display each in the **Console**.  Navigate to the error reported example of the [JavaScript error messaging in Console tool][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorReportedHtml] and review the following items.  
 
 *   Provide UI to the user that something went wrong.  
 *   In the **Console**, provide helpful information about the Network error from your code.  
@@ -120,7 +120,7 @@ const handleErrors = (response) => {
 
 ## Create errors and traces in the Console
 
-In addition to the `throw Error` example above, you may also create different errors and trace problems in the **Console**.  
+Besides the `throw Error` example in the previous section, you may also create different errors and trace problems in the **Console**.  
 If you navigate to the [create errors and assertions][GithubMicrosoftedgeDevtoolssamplesConsoleErrorAssertHtml] example, you may display two created error messages in the **Console**.  
 
 :::image type="complex" source="../media/console-debug-error-assert.msft.png" alt-text="Error messages created from Console" lightbox="../media/console-debug-error-assert.msft.png":::
@@ -153,11 +153,11 @@ You have three functions that request each other in succession.
 *   `second()`  
 *   `third()`  
     
-Each sends a `name` argument to the other.  In the `third()` function you check if the `name` argument exists and if it is not, you log an error that name isn't defined.  If `name` is defined, you use the `assert()` method to check if the `name` argument is fewer than eight letters long.  You request the `first()` function three times, with the following parameters.  
+Each sends a `name` argument to the other.  In the `third()` function you check if the `name` argument exists and if it isn't, you log an error that name isn't defined.  If `name` is defined, you use the `assert()` method to check if the `name` argument is fewer than eight letters long.  You request the `first()` function three times, with the following parameters.  
 
 *   No argument that triggers the `console.error()` method in the `third()` function.  
 *   The term `Console` as a parameter to `first()` function doesn't cause an error because `name` argument exists and is shorter than eight letters.  
-*   The phrase `Microsoft Edge Canary` as a parameter to `first()` function causes the `console.assert()` method to report an error, because the parameter is longer than 8 letters.  
+*   The phrase `Microsoft Edge Canary` as a parameter to `first()` function causes the `console.assert()` method to report an error, because the parameter is longer than eight letters.  
     
 Use the `console.assert()` method to create conditional error reports.  The following two examples have the same result, but one needs an extra `if{}` statement.  
 
@@ -170,7 +170,7 @@ console.assert(x >= 40, `${x} is too small`)
 > [!IMPORTANT]
 > The second and third lines of the code perform the same test.  Because the assertion needs to record a negative result, you test for `x < 40` in the `if` case and `x >= 40` for the assertion.  
 
-If you are not sure which function requests another function, use the `console.trace()` method to track which functions are requested to get to the current one.  To display the trace in the **Console**, navigate to [create traces example][GithubMicrosoftedgeDevtoolssamplesConsoleTraces].  
+If you aren't sure which function requests another function, use the `console.trace()` method to track which functions are requested to get to the current one.  To display the trace in the **Console**, navigate to [create traces example][GithubMicrosoftedgeDevtoolssamplesConsoleTraces].  
 
 ```javascript
 function here() {there()}
@@ -182,7 +182,7 @@ here();
 there();
 ```  
 
-The result is a trace to display that `here()` is named `there()` and then `everywhere()` and in the second example that it is named `everywhere()`.  
+The result is a trace to display that `here()` is named `there()` and then `everywhere()` and in the second example that it's named `everywhere()`.  
 
 :::image type="complex" source="../media/console-debug-trace.msft.png" alt-text="A trace created from Console" lightbox="../media/console-debug-trace.msft.png":::
    A trace created from **Console**  
