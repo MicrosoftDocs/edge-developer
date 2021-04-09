@@ -108,7 +108,7 @@ You will need to update your manifest to support whatever protocol you'd like to
 > [!IMPORTANT]
 > To preview protocol handling in Microsoft Edge on Windows, look for and turn on the `edge://flags`:
 > 
-> **Desktop Web Apps support Protocol Handlers**
+> **Desktop PWA Protocol handling**
 > 
 > Origin trial is running for Protocol Handlers
 > [Register Your Origin Here](#https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration/)
