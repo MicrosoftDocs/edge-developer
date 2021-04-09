@@ -3,7 +3,7 @@ description: JavaScript errors are reported by developer tools and debug each in
 title: Tracking down errors using the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -12,19 +12,14 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 The first experience you have with the **Console** is probably an error in a script.  To try it, navigate to [JavaScript error messaging in Console tool][GithubMicrosoftedgeDevtoolssamplesConsoleErrorHtml].  
 
-If you open DevTools in the browser, a button on the top right displays an error on the webpage.  
-
-:::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools indicates an error on the current webpage" lightbox="../media/console-debug-displays-error.msft.png":::
-   DevTools indicates an error on the current webpage  
-:::image-end:::  
-
+If you open DevTools in the browser, a button on the top right displays an error for the webpage.  
 Choose the button to take you to the **Console** and give you more information about the error.  
 
 :::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools gives detailed information about the error in the Console" lightbox="../media/console-debug-displays-error.msft.png":::
    DevTools gives detailed information about the error in the **Console**  
 :::image-end:::  
 
-From the information, you may gather that the error is on line 16 of the file named `error.html`.  If you choose the `error.html:16` link on the right of the **Console**, it takes you to the **Sources** tool and highlights the line of code with the error.  
+From the information, you may gather that the error is on line 16 of the `error.html` file.  If you choose the `error.html:16` link on the right of the **Console**, it takes you to the **Sources** tool and highlights the line of code with the error.  
 
 :::image type="complex" source="../media/console-debug-displays-in-sources.msft.png" alt-text="The Sources tool highlights the line of code that causes the error" lightbox="../media/console-debug-displays-in-sources.msft.png":::
    The **Sources** tool highlights the line of code that causes the error  
@@ -170,7 +165,7 @@ console.assert(x >= 40, `${x} is too small`)
 > [!IMPORTANT]
 > The second and third lines of the code perform the same test.  Because the assertion needs to record a negative result, you test for `x < 40` in the `if` case and `x >= 40` for the assertion.  
 
-If you aren't sure which function requests another function, use the `console.trace()` method to track which functions are requested to get to the current one.  To display the trace in the **Console**, navigate to [create traces example][GithubMicrosoftedgeDevtoolssamplesConsoleTraces].  
+If you aren't sure which function requests another function, use the `console.trace()` method to track which functions are requested to get to the current one.  To display the trace in the **Console**, navigate to [create traces example][GithubMicrosoftedgeDevtoolssamplesConsoleTrace].  
 
 ```javascript
 function here() {there()}
@@ -199,4 +194,4 @@ The result is a trace to display that `here()` is named `there()` and then `ever
 [GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorHtml]: https://microsoftedge.github.io/DevToolsSamples/console/network-error.html "JavaScript error messaging in Console tool | GitHub"  
 [GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorFixedHtml]: https://microsoftedge.github.io/DevToolsSamples/console/network-error-fixed.html "JavaScript error messaging in Console tool | GitHub"  
 [GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorReportedHtml]: https://microsoftedge.github.io/DevToolsSamples/console/network-error-reported.html "JavaScript error messaging in Console tool | GitHub"  
-[GithubMicrosoftedgeDevtoolssamplesConsoleTraces]: https://microsoftedge.github.io/DevToolsSamples/console/traces.html "Page not found | GitHub"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleTrace]: https://microsoftedge.github.io/DevToolsSamples/console/trace.html "JavaScript error and trace creation in the Console tool | GitHub"  

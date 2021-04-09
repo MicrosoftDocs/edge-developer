@@ -3,16 +3,20 @@ description: How to log messages and run JavaScript in the Microsoft Edge DevToo
 title: Log messages in the Console tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Log messages in the Console tool  
 
-Ever since browsers started to offer developer tools, the **Console** is a favorite.  The reason is simple:  in most programming courses, you learn to output some kind of print command where you want to gain insights what happens.  In JavaScript and before, you had DevTools, this was either using an `alert()` or a `document.write()` statement, and neither were a satisfying experience.  
+Ever since browsers started to offer developer tools, the **Console** is a favorite.  The reason is simple.  
 
-If you want to log information in **Console**, lots of methods are available to you.  Review all of available methods in the [API reference][DevtoolsConsoleApi].  The following codes snippet lists the most important methods.  
+*   In most programming courses, you learn to output some kind of print command to gain insights about what happens.  
+
+In JavaScript and before, you had DevTools such as an `alert()` or a `document.write()` statement.  Neither statement resulted in a satisfying experience.  
+
+If you want to log information in **Console**, lots of methods are available to you.  Review all of available methods in the [API reference][DevtoolsConsoleApi].  The following code snippet lists the most important methods.  
 
 ```javascript
 // prints the text to the console as  a log message
@@ -31,11 +35,11 @@ When you try any method in **Console** after you copy or navigate to [log exampl
    **Console** displays the messages from different log APIs  
 :::image-end:::  
 
-It is, however, still a good idea to use `info()` and `log()` for different log tasks as that allows you to [filter using type in the Console][DevtoolsConsoleConsoleFiltering].  
+It is, however, still a good idea to use `info()` and `log()` for different log tasks as that allows you to [filter using type in the Console][DevtoolsConsoleConsoleFilters].  
 
 ## Different types of logs  
 
-Instead of log text you may send any valid JavaScript or DOM references to **Console**.  The **Console** is elegant and it determines the type that you send it.  It then gives you the best possible representation.  Paste the following code snippet above into **Console** or navigate to the [log different types demo][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingTypesHtml] to display the results.  
+Instead of log text you may send any valid JavaScript or DOM references to **Console**.  The **Console** is elegant and it determines the type that you send it.  It then gives you the best possible representation.  Paste the following code snippet into **Console** or navigate to the [log different types demo][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingTypesHtml] to display the results.  
 
 ```javascript
 let x = 2;
@@ -69,7 +73,7 @@ Each result is displayed in a different way.  Use the triangles to toggle the in
 
 ## Format and convert values with specifiers
 
-A special feature of all the log methods is that you may use specifiers in your log message.  The log methods start with a percentage sign \(`%`\) character and allow you to log certain values in different formats and even convert each.
+A special feature of all the log methods is that you may use specifiers in your log message.  Specifiers are part of a log message and start with a percentage sign \(`%`\) character and allow you to log certain values in different formats and even convert each.  
 
 *   `%s` logs as Strings
 *   `%i` or `%d` logs as Integers
@@ -135,7 +139,7 @@ for (tech in technologies) {
 }
 ```  
 
-As displayed in the second example the group names are also generated.  Paste the code above into **Console** or navigate to the [log with groups demo][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithGroupsHtml] to display the results.  You may expand and collapse each of the sections.  
+Also in the second example, the group names may be optionally generated.  Paste the code above into **Console** or navigate to the [log with groups demo][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithGroupsHtml] to display the results.  You may expand and collapse each of the sections.  
 
 :::row:::
    :::column span="":::
@@ -202,6 +206,7 @@ You may be tempted to use the log methods as your main means to debug webpages a
 <!-- links -->  
 
 [DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
+[DevtoolsConsoleConsoleFilters]: ./console-filters.md "Filter Console messages | Microsoft Docs"  
 [DevtoolsConsoleLiveExpressions]: ./live-expressions.md "Monitor changes in JavaScript using Live Expressions | Microsoft Docs"  
 
 [DevtoolsJavascriptBreakpoints]: ../javascript/breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"  

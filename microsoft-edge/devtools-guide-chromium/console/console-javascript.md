@@ -3,7 +3,7 @@ description: An introduction to using Console tool inside the Microsoft Edge Dev
 title: Console as a JavaScript environment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, JavaScript, web development, f12 tools, devtools
@@ -16,13 +16,13 @@ To try it, complete the following actions.
 
 1.  Open the **Console**.  
     *   Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).  
-1.  Type `2 + 2`.  The **Console** already displays the result `4` on the next line while you type it.  The feature named **Eager evaluation** helps you write valid JavaScript.  It displays the result while you type whether it's wrong or if a valid result exists.  
+1.  Type `2 + 2`.  The **Console** already displays the result `4` on the next line while you type it.  This feature is named Eager evaluation and helps you write valid JavaScript.  It displays the result while you type whether it's wrong or if a valid result exists.  
     
 :::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console displays the result of 2 + 2 live as you type it" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
    **Console** displays the result of `2 + 2` live as you type it  
 :::image-end:::  
 
-If you hit `Enter`, **Console** runs the JavaScript command, give you the result and write the next command.  
+If you select `Enter`, the **Console** runs the JavaScript command, gives you the result, and allows you to write the next command.  
 
 :::image type="complex" source="../media/console-javascript-several-expressions.msft.png" alt-text="Run several JavaScript expressions in succession" lightbox="../media/console-javascript-several-expressions.msft.png":::
    Run several JavaScript expressions in succession  
@@ -57,10 +57,10 @@ Also, the **Console** also offers quite a few [utility methods][DevtoolsConsoleU
 
 ## Multiline edits
 
-Without added extensions, you only have one line to write your JavaScript expression.  Select `Enter` to run the code.  You may get frustrated.  To work around the one line limitation, use `Shift`+`Enter` instead.  In the following example, you may display that the value displayed is the result of all the lines run in order.  
+By default, the **Console** only gives you one line to write your JavaScript expression.  You code runs when you select `Enter`. The one line limitation may frustrate you.  To work around the one line limitation, select `Shift`+`Enter` instead of `Enter`.  In the following example, the value displayed is the result of all the lines run in order.  
 
-:::image type="complex" source="../media/console-javascript-multiline.msft.png" alt-text="Use Shift and Enter to write several lines of JavaScript and the resulting value is each one run in order" lightbox="../media/console-javascript-multiline.msft.png":::
-   Use `Shift` and `Enter` you may write several lines of JavaScript and the resulting value is each one run in order  
+:::image type="complex" source="../media/console-javascript-multiline.msft.png" alt-text="Select Shift+Enter to write several lines of JavaScript and the resulting value is run in order" lightbox="../media/console-javascript-multiline.msft.png":::
+   Select `Shift`+`Enter` to write several lines of JavaScript and the resulting value is run in order  
 :::image-end:::  
 
 If you start a multiline statement in **Console**, it gets automatically recognized and indented.  For example, if you start a block statement with a curly brace.
@@ -76,7 +76,7 @@ Other than in your own scripts, **Console** supports [top level await][GithubTc3
 To get the last 50 issues filed on the [Microsoft Edge Developer Tools for Visual Studio Code][GithubMicrosoftVscodeEdgeDevtools] GitHub repo, complete the following actions.  
 
 1.  Open the **Console**.  
-1.  Copy and paste the following code snippet to get an object that contains 10 entries.  The 10 entries are hard to recognize.
+1.  Copy and paste the following code snippet to get an object that contains 10 entries.  
     
     ```javascript
     await ( await fetch(
@@ -88,7 +88,7 @@ To get the last 50 issues filed on the [Microsoft Edge Developer Tools for Visua
     **Console** displays the result of a top-level async `fetch` request  
 :::image-end:::  
 
-Luckily enough, you may use the `console.table()` log method to filter the things that you're interested.
+The 10 entries are hard to recognize, since a lot of information is displayed.  Luckily enough, you may use the `console.table()` log method to only receive the information in which you're interested.  
 
 :::image type="complex" source="../media/console-javascript-filtered-with-table.msft.png" alt-text="Display the last result in a human readable form using console.table" lightbox="../media/console-javascript-filtered-with-table.msft.png":::
     Display the last result in a human readable form using `console.table`  

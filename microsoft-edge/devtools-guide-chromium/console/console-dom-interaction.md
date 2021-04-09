@@ -3,7 +3,7 @@ description: An overview how to interact with the current webpage in the browser
 title: Use the Console to interact with the DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -52,7 +52,7 @@ Depending on the complexity of the webpage, It may be daunting to find the right
     Display the element that you inspect on the screen  
 :::image-end:::  
 
-Get a direct reference to this element to manipulate using the following steps.  
+To get a direct reference to the element to manipulate, complete the following actions.  
 
 1.  Use the **Inspect** tool to choose the element  
 
@@ -62,19 +62,19 @@ Get a direct reference to this element to manipulate using the following steps.
     
 1.  Choose it and DevTools jumps to the **Elements** tool.  
 1.  Choose the `...` menu next to the element in the DOM view  
-
+    
     :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="The chosen element displays in the DOM tree of the Elements tool, choose the overflow menu to get more features" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
         The chosen element displays in the DOM tree of the **Elements** tool, choose the overflow menu to get more features  
     :::image-end:::  
-
+    
 1.  Choose `Copy` and `Copy JS Path` from the context menus.
- 
+    
     :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="Copy the JavaScript path from an element in the DOM view of the Elements tool" lightbox="../media/console-dom-copy-JS-path.msft.png":::
         Copy the JavaScript path from an element in the DOM view of the **Elements** tool  
     :::image-end:::  
-
+    
 1.  Go back to **Console** and paste the command.  
-
+    
 To change the text of the link to `My Playground`, add `.textContent = "My Playground"` to the command you previously pasted.  
 
 :::image type="complex" source="../media/console-dom-change-content.msft.png" alt-text="Change the content of an element using Console" lightbox="../media/console-dom-change-content.msft.png":::
@@ -126,7 +126,7 @@ The code snippet returns an Array of all the links as objects with `url` and `te
     Use map on `$$` to filter information down to the bare minimum  
 :::image-end:::  
 
-You aren't done so yet, several links are internal links to this webpage or have empty text.  Get rid of the internal links using the filter method.  
+You aren't done yet, several links are internal links to the webpage or have empty text.  Use the filter method to get rid of the internal links.  
 
 ```javascript
 $$('a').map(a => {
@@ -140,7 +140,7 @@ $$('a').map(a => {
     Get the links that aren't empty and are external  
 :::image-end:::  
 
-As displayed at the start of this webpage, you may also change these elements.  For example, the following code snippet creates a green border around all external links:
+As displayed at the start of the webpage, you may also change these elements.  For example, the following code snippet creates a green border around all external links:
 
 ```javascript
 $$('a[href^="https://"]').forEach(
@@ -154,7 +154,7 @@ $$('a[href^="https://"]').forEach(
 
 Instead of writing complex JavaScript to filter results, you may use the power of CSS selectors.  
 
-To create to have a table of the `src` and `alt` information of all images in the webpage that aren't inline images, complete the following actions.  
+To create a table of the `src` and `alt` information for all images on the webpage that aren't inline images, complete the following actions.  
 
 1.  Open the **Console**.  
 1.  copy and run the following code snippet.  
@@ -167,7 +167,7 @@ console.table($$('img:not([src^=data])'), ['src','alt'])
     Choose elements using a complex CSS selector  
 :::image-end:::  
 
-Ready for an even more complex example?  HTML webpages generated from markdown like article, have automatic ID values for each heading to allow you to deep link to that section.  For example, a `# New features` changes to `<h1 id="new-features">New features</h1>`.  
+Ready for an even more complex example?  HTML webpages generated from markdown like this article, have automatic ID values for each heading to allow you to deep link to that section.  For example, a `# New features` changes to `<h1 id="new-features">New features</h1>`.  
 
 To list of all of the automatic headings to copy and paste, complete the following actions.  
 
@@ -196,7 +196,7 @@ The result is text that contains content for each heading followed by the full U
 
 When developing in the **Console**, things may get messy.  You may find it frustrating to try to choose results while you copy and paste.  The following two utility methods help you.  
 
-*   `copy()` copies whatever you give it to the clipboard.  This method is especially useful when you mix it with `$_` that copies the last result.
+*   `copy()` copies whatever you give it to the clipboard.  The `copy()` method is especially useful when you mix it with `$_` that copies the last result.
 *   `clear()` clears the **Console**.
 
 ### Read and monitor events
@@ -219,9 +219,9 @@ To list all of the event listener assigned to the first form in the webpage, com
     Get all events listeners for the first form in the webpage  
 :::image-end:::  
 
-When you monitor, you to get a notification in the **Console** every time something changes to the specified elements.  You define the events you want to listen to as a second parameter.  Monitoring is important as otherwise any event happening to the element is reported.
+When you monitor, you to get a notification in the **Console** every time something changes to the specified elements.  You define the events you want to listen to as a second parameter.  It is important for you to define the events that you want to monitor, otherwise any event happening to the element is reported.
 
-To get a notification in the **Console** every time you scroll or resize the window, complete the following actions.  
+To get a notification in the **Console** every time you scroll, resize the window, or when the user types in the search form, complete the following actions.  
 
 1.  Open the **Console**.  
 1.  Type or copy and paste the following code snippet.  
@@ -252,7 +252,7 @@ unmonitorEvents($0, 'key');
 
 It's useful to manipulate the DOM from the **Console**.  You may soon run into the limitations as a development platform.  The good news is that the [Sources][DevtoolsSourcesIndex] tool in DevTools offers a fully featured development environment.  In the **Sources** tool, you may complete the following actions.  
 
-*   Store your scripts for the **Console** as Snippets.  
+*   Store your scripts for the **Console** as [Snippets][DevToolsJavascriptSnippets].  
 *   Run the scripts in a webpage using a keyboard shortcut or the editor.  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
@@ -265,4 +265,5 @@ It's useful to manipulate the DOM from the **Console**.  You may soon run into t
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Logs in the Console tool | Microsoft Docs"  
 [DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
 
+[DevToolsJavascriptSnippets]: ../javascript/snippets.md "Run snippets of JavaScript on any page with Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"  

@@ -3,14 +3,14 @@ description: Learn how to filter console messages
 title: Get started with filtering messages in the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Filter Console messages  
 
-When you surf the web, you may find the **Console** is flooded with all kinds of information.  Often the information isn't relevant to you.  Like information that you log when you debug your live project.  Or much information about violations and warnings about the performance of the current site that you aren't able to change.  It makes sense to get used to the filtering options of **Console** to drown out some of the noise.
+When you surf the web, you may find the **Console** is flooded with all kinds of information.  Often the information isn't relevant to you.  Such as information about the live project that another developer logged while debugging.  Or more information about violations and warnings about the performance of the current site that you aren't able to change.  It makes sense to get used to the filter options of **Console** to reduce the noise.  
 
 ## Filter by log level  
 
@@ -22,9 +22,7 @@ Filter messages in the **Console** using the **Log Levels** dropdown.  You may t
     The dropdown menu filters **Console** messages using the log level  
 :::image-end:::  
 
-In the following example, to display that, filter the different types of log level to cut down the noise immensely.
-
-For example, in the following figure, display the dozens of messages since no filter is applied.
+Since no filter is applied, the following figure displays dozens of messages.  Next, reduce and manage the number of messages.  
 
 :::image type="complex" source="../media/console-filter-displays-all.msft.png" alt-text="No filter set means you may display many console messages" lightbox="../media/console-filter-displays-all.msft.png":::
     No filter set means you may display many console messages  
