@@ -179,14 +179,12 @@ For example, the `url_handlers` member value is set to `*.contoso.com` matches `
  
 ## Window Controls Overlay for installed desktop web apps  
 
-To create an immersive title bar similar to a native app for your desktop installed web app.  The **Window Controls Overlay** feature  completes the following actions.  
+To create an immersive title bar similar to a native app for your desktop installed web app, the **Window Controls Overlay** feature  completes the following actions.  
     
 1.  Removes the system reserved title bar.  It usually spans the width of the client frame.  
 1.  Replaces it with an overlay.  It contains just the critical system required window controls necessary for a user to control the window itself.  
     
 After it provides an overlay, the entire web client area is available for you to use.  This feature includes a manifest update.  It provides ways for you to determine the size and position of the overlay to help you arrange content.  
-
-To preview Window Controls Overlay in Microsoft Edge on Windows, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWA Window Controls Overlay**. 
 
 ### Examples of title bar area customization  
 
@@ -213,13 +211,13 @@ Workplace collaboration and communication tool Microsoft Teams is also built wit
 ### Overlay Window Controls on a Frameless Window  
 
 To provide the maximum addressable area for web content, the browser creates a frameless window, removing all browser UI except for the window controls provided as an overlay.  
-The window controls overlay ensures users still minimize, maximize, restore, and close the app.  It also provides access to relevant browser controls using the web app menu.  For Chromium-based browsers, the controls in the overlay.
+The window controls overlay ensures users still minimize, maximize, restore, and close the app.  It also provides access to relevant browser controls using the web app menu.  For Chromium-based browsers, the controls in the overlay include:
 
 *   A draggable region the same width and height of each of the window control buttons  
 *   The **Settings and more** \(...\) button  
 *   The window control buttons minimize, maximize, restore, and close  
     
-The following scenarios include when browser displays other content in the controls overlay.  
+In addition to these controls, the following scenarios will also result in UI being displayed in the overlay, causing the overlay to dynamically resize:  
 
 *   When an installed web app is launched, the origin of the webpage displays to the left of the **Settings and more** \(...\) menu for a few seconds and then disappears.  
 *   If a user interacts with an extension using the **Settings and more** \(...\) menu, the icon of the extension displays in the overlay to the left of the three-dot menu.  After you exit any extension dialog, the icon is removed from the overlay.  
@@ -264,7 +262,7 @@ Besides the JavaScript API, you may use CSS to query the bounding rectangle of t
 Users expect to grab and drag the upper region of a window.  To accommodate the expectation, declare specific parts of the web content as draggable.  
 To specify an element is draggable, use the webkit proprietary `-webkit-app-region` CSS property.  The CSS working group continues efforts to standardize the `app-region` property.  
 
-To preview this feature in Microsoft Edge for desktop OSs, navigate to [Turn on experimental features](#turn-on-experimental-features) and navigate to **Desktop PWA Window Controls Overlay**.   
+To preview this feature in Microsoft Edge for Windows 10, navigate to [Turn on experimental features](#turn-on-experimental-features) and navigate to **Desktop PWA Window Controls Overlay**.   
 
 ### Custom title bar example  
 
