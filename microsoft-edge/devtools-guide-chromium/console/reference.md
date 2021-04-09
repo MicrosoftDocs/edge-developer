@@ -3,7 +3,7 @@ description: A comprehensive reference for every feature and behavior of the Con
 title: Console reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -23,7 +23,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Console reference  
 
-This article is a reference of features related to the Microsoft Edge DevTools Console.  It assumes you're already familiar with using the Console to view logged messages and run JavaScript.  If not, navigate to [Get started with running JavaScript in the Console][DevToolsConsoleJavascript] and [Get started with logging messages in the Console][DevToolsConsoleLog].  
+This article is a reference of features related to the Microsoft Edge DevTools Console.  It assumes you're already familiar with using the Console to view logged messages and run JavaScript.  If not, navigate to [Get started with running JavaScript in the Console][DevtoolsConsoleConsoleJavascript] and [Get started with logging messages in the Console][DevtoolsConsoleConsoleLog].  
 
 If you're looking for the API reference on functions like `console.log()`, navigate to [Console API Reference][DevToolsConsoleApi].  For the reference on functions like `monitorEvents()`, navigate to [Console Utilities API Reference][DevToolsConsoleUtilities].  
 
@@ -268,12 +268,11 @@ To clear the **Console**, complete any of the following workflows.
 <!-- links -->  
 
 [DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
+[DevtoolsConsoleConsoleLog]: ./console-log.md "Log messages in the Console tool | Microsoft Docs"  
+[DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Console as a JavaScript environment | Microsoft Docs"  
 [DevtoolsConsoleIndex]: .index.md "Use the Console | Microsoft Docs"  
-[DevtoolsConsoleIndexInspectFilterInformationOnCurrentWebpage]: ./index.md#inspect-and-filter-information-on-the-current-webpage "Inspect and filter information on the current webpage - Use the Console | Microsoft Docs"  
-[DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Console as a JavaScript environment - Use the Console | Microsoft Docs"  
-[DevtoolsConsoleJavascript]: ./javascript.md "Get started with running JavaScript in the Console | Microsoft Docs"  
+[DevtoolsConsoleIndexInspectFilterInformationOnCurrentWebpage]: ./index.md#inspect-and-filter-information-on-the-current-webpage "Inspect and filter information on the current webpage | Microsoft Docs"  
 [DevtoolsConsoleLiveExpressions]: ./live-expressions.md "Monitor changes in JavaScript using Live Expressions | Microsoft Docs"  
-[DevtoolsConsoleLog]: ./log.md "Get started with logging messages in the Console | Microsoft Docs"  
 [DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
 
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"  

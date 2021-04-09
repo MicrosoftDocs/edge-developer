@@ -3,7 +3,7 @@ description: An introduction to the Console tool inside the Microsoft Edge Devel
 title: Use the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -15,7 +15,7 @@ The **Console** tool of the DevTools helps you with several tasks.  The followin
 *   Find out why something isn't working in the current project and [track down problems][DevtoolsConsoleConsoleDebugJavascript].  
 *   [Get information about the web project][DevtoolsConsoleConsoleFilters] in the browser as log messages.  
 *   [Log information][DevtoolsConsoleConsoleLog] in scripts for debugging purposes.  
-*   [Try the JavaScript expressions][DevtoolsConsoleConsoleJavascript] live in a [REPL][WikiReadEvalPrintLoop] environment.  
+*   [Try JavaScript expressions][DevtoolsConsoleConsoleJavascript] live in a [REPL][WikiReadEvalPrintLoop] environment.  
 *   [Interact with the web project in the browser][DevtoolsConsoleConsoleDomInteraction] using JavaScript.  
     
 The **Console** is a great companion tool to use with others tools.  The **Console** provides a powerful way to script functionality, inspect, and manipulate the current webpage using JavaScript.  
@@ -83,7 +83,7 @@ Many useful methods are available when you work with the **Console**.  For more 
 
 The **Console** isn't only a place to log information.  The **Console** is a [REPL][WikiReadEvalPrintLoop] environment.  When you write any JavaScript in the **Console**, the code runs immediately.  You may find it useful to test some new JavaScript features or to do some quick calculations.  Also, you get all of the features you expect from a modern editing environment, such as autocompletion, syntax highlighting, and history.  To try it, complete the following actions.  
 
-1.  Navigate to **Console**.  
+1.  Navigate to the **Console**.  
 1.  Type `2 + 2`.  
     
 The **Console** displays the result `4` on the following line.  This **Eager evaluation** feature is useful to debug and verify that you aren't making mistakes in your code.  
@@ -92,7 +92,7 @@ The **Console** displays the result `4` on the following line.  This **Eager eva
    The **Console** displays the result of `2 + 2` live as you type it  
 :::image-end:::  
 
-To run the JavaScript in **Console** and optionally display a result, select `Enter`.  Then, you may write the next JavaScript code to run in **Console**.  
+To run the JavaScript expression in the**Console** and optionally display a result, select `Enter`.  Then, you may write the next JavaScript code to run in the **Console**.  
 
 :::image type="complex" source="../media/console-javascript-several-expressions.msft.png" alt-text="Run several lines of JavaScript code in succession" lightbox="../media/console-javascript-several-expressions.msft.png":::
    Run several lines of JavaScript code in succession  

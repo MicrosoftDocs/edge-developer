@@ -3,7 +3,7 @@ description: If you find yourself typing the same JavaScript expressions into th
 title: Watch JavaScript expression values in real time with Live Expressions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -12,7 +12,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 **Live Expressions** are an excellent way to monitor JavaScript expressions that change a lot.  Instead of having many Console messages to read and navigate you may pin each to the top of the **Console**.
 
-## Adding a new live expression
+## Add a new live expression
 
 To start, choose the **Create new live expression** \(the eye\) button next to the **Filter** textbox.  After you choose it, a textbox is displayed for you to enter your new expression in it.
 
@@ -20,7 +20,7 @@ To start, choose the **Create new live expression** \(the eye\) button next to t
     Choose the `New live expression` button to open a textbox to type an expression  
 :::image-end:::  
 
-Live expressions may be any valid JavaScript expression.  To try it, complete the following actions.  
+**Live Expressions** may be any valid JavaScript expression.  To try it, complete the following actions.  
 
 1.  Open the **Live Expression** textbox.  
 1.  Type `document.activeElement`.  
@@ -46,38 +46,38 @@ To change the value again, turn on the search box.
     Navigate to a different element in the webpage to update the live expression  
 :::image-end:::  
 
-## Removing live expressions  
+## Remove Live Expressions  
 
-Live expressions are available for as long as you keep each active.  To get rid of a live expression, choose the `x` next to it.
+**Live Expressions** are available for as long as you keep each active.  To get rid of a live expression, choose the `x` next to it.
 
-:::image type="complex" source="../media/console-live-expressions-remove.msft.png" alt-text="To remove live expressions, choose the x next to it" lightbox="../media/console-live-expressions-remove.msft.png":::
-    To remove live expressions, choose the `x` next to it  
+:::image type="complex" source="../media/console-live-expressions-remove.msft.png" alt-text="To remove Live Expressions, choose the x next to it" lightbox="../media/console-live-expressions-remove.msft.png":::
+    To remove **Live Expressions**, choose the `x` next to it  
 :::image-end:::  
 
-## Replacing Console logging with live expressions  
+## Replace Console logging with Live Expressions  
 
-You may create as many expressions as you want and persist each across browser sessions and windows.  Live expressions are a way to cut down on noise in your debugging workflow.  
+You may create as many expressions as you want and persist each across browser sessions and windows.  **Live Expressions** are a way to cut down on noise in your debugging workflow.  
 
-For example, you want to monitor the mouse movement in the current webpage.  Navigate to [Logging Mouse Movement demo][GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml], open the **Console**, and move your mouse around to display the logs with lot of information.  
+For example, you want to monitor the mouse movement in the current webpage.  Navigate to [Logging Mouse Movement demo][GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml], open the **Console**, and move your mouse around to display the logs with a lot of information.  
 
 :::image type="complex" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="Console displays much information on mouse position" lightbox="../media/console-live-expression-mouse-logging.msft.png":::
     **Console** displays much information on mouse position  
 :::image-end:::  
 
-It not only slows your debug process, but also makes it easy to miss the changes you want to review.  As the **Console** displays more messages and you move your mouse, the value you want to review scroll off the screen.  
+It not only slows your debug process, but also makes it easy to miss the changes you want to review.  As the **Console** displays more messages and you move your mouse, the values you want to review scroll off the screen.  
 
-To try live expressions as an alternative, complete the following actions.  
+To try **Live Expressions** as an alternative, complete the following actions.  
 
 1.  Navigate to the [Mouse movement without logging demo][GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml].  
-1.  Create live expressions for `x` and `y`.  
+1.  Create **Live Expressions** for `x` and `y`.  
     
-When you use live expressions, you always get the information on the same part of your screen and keep **Console** logs for values that don't change as much.
+When you use **Live Expressions**, you always get the information on the same part of your screen and keep **Console** logs for values that don't change as much.
 
-:::image type="complex" source="../media/console-live-expressions-x-and-y.msft.png" alt-text="Display the x and y position of the mouse as live expressions" lightbox="../media/console-live-expressions-x-and-y.msft.png":::
-    Display the `x` and `y` position of the mouse as live expressions  
+:::image type="complex" source="../media/console-live-expressions-x-and-y.msft.png" alt-text="Display the x and y position of the mouse as Live Expressions" lightbox="../media/console-live-expressions-x-and-y.msft.png":::
+    Display the `x` and `y` position of the mouse as **Live Expressions**  
 :::image-end:::  
 
-Live expressions run exclusively on your computer and you don't need to change anything in your code to display.  Live expressions are a great way to ensure that you only display the information you want to debug.  Also, live expressions help you limit the noise from your users' computers.
+**Live Expressions** run exclusively on your computer and you don't need to change anything in your code to display.  **Live Expressions** are a great way to ensure that you only display the information you want to debug.  Also, **Live Expressions** help you limit the noise on your users' computers.
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
