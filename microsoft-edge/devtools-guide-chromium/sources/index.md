@@ -34,17 +34,17 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
 
 The following image shows the **Navigator** pane highlighted with a red box in the upper left corner of DevTools, the **Editor** pane highlighted in the upper right, and the **Debugger** pane highlighted on the bottom.  On the far left side is the main part of the browser window, showing the rendered webpage grayed-out because the debugger is paused on a breakpoint:
 
-<!-- upstream file: debugging-panes-narrow-no-highlight.msft.png -->
+<!-- upstream file not used directly: sources-panes-narrow-layout-no-highlight.msft.png -->
 
-:::image type="complex" source="../media/debugging-panes-narrow.msft.png" alt-text="The panes of the Sources tool, in narrow layout" lightbox="../media/debugging-panes-narrow.msft.png":::
+:::image type="complex" source="../media/sources-panes-narrow-layout.msft.png" alt-text="The panes of the Sources tool, in narrow layout" lightbox="../media/sources-panes-narrow-layout.msft.png":::
    The panes of the Sources tool, in narrow layout  
 :::image-end:::  
 
 When DevTools is wide, the **Debugger** pane is placed on the right, including **Scope** and **Watch**:
 
-<!-- upstream file: <!-- upstream file: debugging-no-highlight.msft.png -->
+<!-- upstream file not used directly: sources-panes-wide-layout-no-highlight.msft.png -->
 
-:::image type="complex" source="../media/debugging-highlights.msft.png" alt-text="Navigate, view, edit, and debug JavaScript returned by the server" lightbox="../media/debugging-highlights.msft.png":::
+:::image type="complex" source="../media/sources-panes-wide-layout.msft.png" alt-text="Navigate, view, edit, and debug JavaScript returned by the server" lightbox="../media/sources-panes-wide-layout.msft.png":::
    Navigate, view, edit, and debug JavaScript returned by the server  
 :::image-end:::  
 
@@ -108,7 +108,7 @@ To change how resources are grouped, next to the tabs on the Navigator pane (on 
 
 Use the **Filesystem** tab of the **Navigator** pane to set up a Workspace to save changes to local files, so that changes you make in DevTools get saved to the code on your file system.
 
-A file that's in a Workspace is indicated by a green dot in the **Filesystem** tab and also in the **Page** tab.
+A file that's in a Workspace is indicated by a green dot next to the filename, throughout DevTools. 
 
 <!-- to set up this capture: per Workspaces demo, copied 3 files locally to ~/Desktop/app/, installed Python 3.x, opened bash shell, cd'd to ~/Desktop/app, > py -m http.server (py command, not python), in browser go to localhost:8000 (not 8080), the HTML webpage loads, then green dots appear next to Filesystem tab's html/css/js files and also on the Page tab's files. -->
 
@@ -136,7 +136,7 @@ Items in this tab override what the server sends to the browser, even after the 
 
 The **Overrides** feature is similar to Workspaces.  Use Overrides when you want to experiment with changes to a webpage, and you need to keep the changes after page refresh, but you don't care about mapping your changes to the source code of the webpage.  
 
-A file that overrides a file that is returned by the server is indicated by a purple dot.
+A file that overrides a file that is returned by the server is indicated by a purple dot next to the filename, throughout DevTools.
 
 **Related articles:**
 
@@ -180,7 +180,7 @@ document.head.appendChild(script);
 You may save this code in a **Snippet** and easily run it whenever you need to.  When you select **Ctrl+S** on Windows/Linux or **Command+S** on macOS, DevTools saves the **Snippet** to your file system.  
 
 There are multiple ways to run a Snippet:
-*   In the **Navigator** pane, select the **Snippets** tab, then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** \(![The Run button](../media/run-snippet-icon.msft.png)\).  
+*   In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** \(![The Run button](../media/run-snippet-icon.msft.png)\).  
 *   When DevTools has focus, select `Ctrl`+`P` (Windows/Linux) or `Command`+`P` (macOS) to open the [Command Menu][DevtoolsGuideChromiumCommandMenuIndex], and then type `!`. 
 
 Snippets are similar to bookmarklets.
