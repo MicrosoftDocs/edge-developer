@@ -60,9 +60,7 @@ Use the **Navigator** pane (on the left) to navigate among the resources that ar
    The **Navigator** pane
 :::image-end:::  
 
-Optionally, set up a local Workspace to save changes directly to source files.
-
-\>> (**More tabs**) - This "double chevron" button displays the remaining tabs of the Navigator pane when the display is narrow.
+To access any hidden tabs of the Navigator pane, select **\>\>** (**More tabs**).
 
 The following subsections are related to the Navigator pane:
 *   [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
@@ -193,8 +191,8 @@ Snippets are similar to bookmarklets.
 
 To open a file, in addition to using the **Navigator** pane within the **Sources** tool, you can use the Command Menu from anywhere within DevTools.
 
-*   Select `Ctrl`+`P` from anywhere in DevTools.  The Command Menu appears, and lists all the resources that are in the tabs of the **Navigator** pane of the **Sources** tool.
-*   Or, next to the tabs of the **Navigator** pane in the **Sources** tool, select the **...** (**More options**) button, and then select **Open File**.
+*   From anywhere in DevTools, select `Ctrl`+`P` on Windows/Linux or `Command`+`P` on macOS.  The Command Menu appears, and lists all the resources that are in the tabs of the **Navigator** pane of the **Sources** tool.  
+*   Or, next to the tabs of the **Navigator** pane in the **Sources** tool, select the **...** (**More options**) button, and then select **Open File**.  
 
 To display and pick from a list of all .js files, enter `.js`.
 
@@ -368,6 +366,14 @@ Unlike a JavaScript or CSS file, an HTML file that is returned by the web server
 *   [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
 
 The article [DevTools for beginners: Get started with HTML and the DOM][DevToolsBeginnersHtml] shows HTML editing within a special website that enables HTML editing within the webpage.
+
+To save changes, select `Ctrl`+`S` on Windows/Linux or `Command`+`S` on macOS.  An edited file is marked by an asterisk.  
+
+To find text, select `Ctrl`+`F` on Windows/Linux or `Command`+`F` on macOS.
+
+To undo an edit, select `Ctrl`+`Z` on Windows/Linux or `Command`+`Z` on macOS.
+
+To view other commands while editing an HTML file, select the contextual menu (right-click).
 
 ### Editor commands on the Command Menu
 
