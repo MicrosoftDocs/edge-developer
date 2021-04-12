@@ -118,7 +118,7 @@ By default, when you edit a file in the **Sources** tool, those changes are lost
 
 By using a Workspace, changes that you make to your front-end code are preserved across page refreshes.  When you edit the front-end code that's returned by the server, the Sources tool also applies your edits to your local source code.  For other users to see your changes, you redeploy your changed source files to the server.
 
-Workspaces work well when the JavaScript code that's returned by the server is the same as your local JavaScript source code.  Workspaces don't work as well when your workflow involves transformations on your JavaScript source code, such as minification or compilation.
+Workspaces work well when the JavaScript code that's returned by the server is the same as your local JavaScript source code.  Workspaces don't work as well when your workflow involves transformations on your source code, such as minification or [TypeScript](https://www.typescriptlang.org) compilation.
 
 For more information, navigate to the tutorial [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex].
 
@@ -423,7 +423,7 @@ The debugger in DevTools is designed to look, feel, and work like
 The following subsections cover debugging:
 *   [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger)
 *   [Advantages of the debugger's Watch and Scope over console.log](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
-*   [Using the debugger of Visual Studio Code](#using-the-debugger-of-visual-studio-code)
+*   [Debug from Visual Studio Code directly](#debug-from-visual-studio-code-directly)
 *   [Articles about debugging](#articles-about-debugging)
 
 ### The basic approach to using a debugger
@@ -474,7 +474,7 @@ The debugger gives a richer, more flexible display and environment than a `conso
 
 Breakpoints and Watch expressions are preserved when you refresh the page.
 
-### Using the debugger of Visual Studio Code
+### Debug from Visual Studio Code directly
 
 To use the more full-featured debugger of Visual Studio Code instead of the DevTools debugger, use the **Microsoft Edge Tools for VS Code** extension for Visual Studio Code.
 
