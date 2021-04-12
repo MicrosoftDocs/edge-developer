@@ -32,7 +32,7 @@ Automatically updating extensions share some of the same benefits as automatical
 Previously when non-store based extensions were supported, it was possible to update the native binaries and the extension at the same time.  Now, those extensions are hosted in the Microsoft Edge Add-ons store and updates are made using the same mechanism that Microsoft Edge uses, which you can't control.  You should be careful when updating extensions that have a dependency on native binaries.  
 
 > [!NOTE]
-> This topic does not apply to extensions published using the [Partner Center][MicrosoftPartnerCenter] dashboard.  You may use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons store.
+> This topic does not apply to extensions published using the [Partner Center][MicrosoftPartnerCenter] dashboard.  You may use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons store. Refer to [UpdateYourExtension] for details. 
 
 ## Overview  
 
@@ -134,6 +134,7 @@ As new APIs release for the Microsoft Edge extensions system, you may release an
 <!-- links -->  
 
 [MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  
+[UpdateYourExtension]: https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/update-extension "Update your extension"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
