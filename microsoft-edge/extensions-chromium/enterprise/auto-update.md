@@ -134,7 +134,7 @@ As new APIs release for the Microsoft Edge extensions system, you may release an
 <!-- links -->  
 
 [MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  
-[UpdateYourExtension]: https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/update-extension "Update your extension"  
+[UpdateYourExtension]: https://docs.microsoft.com/microsoft-edge/extensions-chromium/publish/update-extension "Update your extension"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
