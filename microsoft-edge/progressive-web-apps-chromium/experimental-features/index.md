@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge for Web Apps
 title: Experimental features | Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/02/2021
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
@@ -56,7 +56,8 @@ The following list describes the new experimental web app features that are avai
 | Feature | Microsoft Edge version | Platform |  
 |:--- |:--- |:--- |  
 | [URI Protocol Handling](#uri-protocol-handling) | 91 or later | Windows |    
-| [URL Link Handling](#url-link-handling) | 91 or later | Windows|  
+| [URL Link Handling](#url-link-handling) | 91 or later | Windows|
+| [Window Controls Overlay for Desktop Apps](#window-controls-overlay-for-installed-desktop-web-apps) | 91 or later | Windows 10|   
 | [Run on OS Login](#run-on-os-login) | 88 or later | All |  
 | [Shortcuts](#shortcuts) | 87 or later | All |  
 | [File Handling](#file-handling) | 83 or later | All Desktop |  
@@ -165,7 +166,7 @@ The following code snippet is an example web app manifest with the `url_handlers
 
 A PWA matches a URI for URL handling if the URI matches one of the origin strings in `url_handlers` and the browser validates that the origin agrees to allow this app handle such a URI.  
 
-The `url_handlers` member contains an origin that encompasses the scope and also other unrelated origins of the requesting PWA.  Not restricting URIs to the same scope or domain as the requesting PWA allows you to use different domain names for the same content but handle them with the same PWA.  
+The `url_handlers` member contains an origin that encompasses the scope and other unrelated origins of the requesting PWA.  Not restricting URIs to the same scope or domain as the requesting PWA allows you to use different domain names for the same content but handle them with the same PWA.  
 
 #### Wildcard matching  
 
@@ -175,16 +176,17 @@ A wildcard prefix is used in origin strings of the `url_handlers` member to matc
 
 For example, the `url_handlers` member value is set to `*.contoso.com` matches `tenant.contoso.com` and `www.tenant.contoso.com`, but doesn't match `contoso.com`.  
 
-<!-- Hold for future release -->  
-<!--  ## Window Controls Overlay for installed desktop web apps  
+## Window Controls Overlay for installed desktop web apps  
 
-To create an immersive title bar similar to a native app for your desktop installed web app.  The **Window Controls Overlay** feature  completes the following actions.  
+To create an immersive title bar like a native app for your desktop installed web app, the **Window Controls Overlay** feature completes the following actions.  
     
 1.  Removes the system reserved title bar.  It usually spans the width of the client frame.  
 1.  Replaces it with an overlay.  It contains just the critical system required window controls necessary for a user to control the window itself.  
     
 After it provides an overlay, the entire web client area is available for you to use.  This feature includes a manifest update.  It provides ways for you to determine the size and position of the overlay to help you arrange content.  
-    
+
+To preview the Window Controls Overlays in Microsoft Edge for Windows 10, navigate to [Turn on experimental features](#turn-on-experimental-features) and navigate to **Desktop PWA Window Controls Overlay**.   
+
 ### Examples of title bar area customization  
 
 This feature is based on the ability in native apps to customize the title bar.  You may customize a title bar for important app actions or notifications.  Review the following examples for Microsoft Visual Studio Code and Microsoft Teams.  
@@ -209,14 +211,13 @@ Workplace collaboration and communication tool Microsoft Teams is also built wit
 
 ### Overlay Window Controls on a Frameless Window  
 
-To provide the maximum addressable area for web content, the browser creates a frameless window, removing all browser UI except for the window controls provided as an overlay.  
-The window controls overlay ensures users still minimize, maximize, restore, and close the app.  It also provides access to relevant browser controls using the web app menu.  For Chromium-based browsers, the controls in the overlay.
+To maximize the addressable area for web content, the browser creates a frameless window.  A frameless window removes all browser UI, except for the window controls provided as an overlay.  The window controls overlay allows users to still minimize, maximize, restore, and close the app.  It also provides access to relevant browser controls using the web app menu.  For Chromium-based browsers, the overlay includes the following controls.  
 
 *   A draggable region the same width and height of each of the window control buttons  
 *   The **Settings and more** \(...\) button  
 *   The window control buttons minimize, maximize, restore, and close  
     
-The following scenarios include when browser displays other content in the controls overlay.  
+Besides the previously listed controls, the UI displayed in the overlay is dynamically resized in the following scenarios.  
 
 *   When an installed web app is launched, the origin of the webpage displays to the left of the **Settings and more** \(...\) menu for a few seconds and then disappears.  
 *   If a user interacts with an extension using the **Settings and more** \(...\) menu, the icon of the extension displays in the overlay to the left of the three-dot menu.  After you exit any extension dialog, the icon is removed from the overlay.  
@@ -226,7 +227,7 @@ The following scenarios include when browser displays other content in the contr
 | Left-to-right \(LTR\) | Upper left of the client area | The controls are flipped |  
 | Right-to-left \(RTL\) | Upper right corner of the client area |  |  
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > The overlay is always on top of the Z-index of the web content and accepts all user input without flowing it through to the web content.  
 
 ### Working around the Window Controls Overlay  
@@ -259,9 +260,7 @@ Besides the JavaScript API, you may use CSS to query the bounding rectangle of t
 ### Define Draggable Regions in Web Content  
 
 Users expect to grab and drag the upper region of a window.  To accommodate the expectation, declare specific parts of the web content as draggable.  
-To specify an element is draggable, use the webkit proprietary `-webkit-app-region` CSS property.  The CSS working group continues efforts to standardize the `app-region` property.  
-
-To preview this feature in Microsoft Edge for desktop OSs, navigate to [Turn on experimental features](#turn-on-experimental-features) and navigate to **Desktop PWA Window Controls Overlay**.   
+To specify an element is draggable, use the WebKit-proprietary `-webkit-app-region` CSS property.  The CSS working group continues efforts to standardize the `app-region` property.  
 
 ### Custom title bar example  
 
@@ -323,7 +322,7 @@ In the `div` element with the `titleBarContainer` ID, the `div` with the `titleB
         <input class="nonDraggable" type="text" placeholder="Search"></input>
       </div>
     </div>
-    <div id="mainContent">The rest of the webpage</div>
+    <div id="mainContent"><!-- The rest of the webpage --></div>
   </body>
 </html>
 ```  
@@ -412,7 +411,7 @@ The container for the `mainContent` ID is also fixed in place with `position: ab
 
 For cases where the browser doesn't support the window controls overlay, a CSS variable is added to set a default height for the title bar.  The bounds of the `titleBarContainer` and `mainContent` IDs are initially set to fill the entire client area, and you don't need to change it if the overlay isn't supported.  
 
-The following code snippet includes all of the recommended css updates.
+The following code snippet includes all the recommended CSS updates.
 
 ```css
 :root {
@@ -479,7 +478,6 @@ body {
   overflow-y: scroll;
 }
 ```  
--->  
 
 ## Run On OS Login  
 
@@ -490,7 +488,7 @@ This feature allows you to configure your app to automatically launch when the u
 
 ### Turn on Run On OS Login  
 
-To turn on **Run On OS Login** capabilities for your PWA, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWAs run on OS login**.  
+To preview the **Run On OS Login** capabilities for your PWA, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWAs run on OS login**.  
 
 :::image type="complex" source="../media/desktop-pwas-run-on-os-login-flag.png" alt-text="Turn on the Desktop PWAs run on OS Login experiment" lightbox="../media/desktop-pwas-run-on-os-login-flag.png":::
    Turn on the **Desktop PWAs run on OS login** experiment  
@@ -560,7 +558,7 @@ The ability to register as a file type handler is in the experimentation phase. 
 
 Chromium-based browsers are testing and shaping this feature.  For more information including code examples, navigate to [Let web applications be file handlers][WebDevFileHandling].  
 
-To preview file handling in Microsoft Edge for desktop OSs, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **File Handling API**.  
+To preview file handling in Microsoft Edge for Windows 10, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **File Handling API**.  
     
 ## Providing feedback on experimental features  
 
