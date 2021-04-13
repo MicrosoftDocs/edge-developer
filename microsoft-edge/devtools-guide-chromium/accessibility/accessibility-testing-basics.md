@@ -12,29 +12,29 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 In this article we're going to cover some of the features you can use in DevTools to test for accessibility problems. As an example, we're using a demo page that has some accessibility problems and go through using different features how to detect and fix them.
 
-:::image type="complex" source="../media/xxx.png" alt-text="The demo page used in this article with a few accessibility issues" lightbox="../media/xxx.png":::
+:::image type="complex" source="../media/a11y-testing-basics-demopage.msft.png" alt-text="The demo page used in this article with a few accessibility issues" lightbox="../media/a11y-testing-basics-demopage.msft.png":::
     The demo page used in this article with a few accessibility issues  
 :::image-end:::  
 
-Please [navigate to the demo page][DevToolsA11yErrorsDemopage] to try it out yourself and you can test along.
+Please [navigate to demo page with accessibility issues][DevToolsA11yErrorsDemopage] to try it out yourself and you can test along.
 
 ## Automated testing
 
 Once you open the web site in the browser and open DevTools the first thing you will see some automatically detected problems flagged up. Activate the Issues counter to open the [Issues Panel][DevToolsIssuesPanel] to see what the problems are. 
 
-:::image type="complex" source="../media/xxx.png" alt-text="The issues counter in DevTools indicating how many problems there are in the current document. Activating it will get you to the explanations" lightbox="../media/xxx.png":::
+:::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="The issues counter in DevTools indicating how many problems there are in the current document. Activating it will get you to the explanations" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
     The issues counter in DevTools indicate how many problems there are in the current document. Activating it will get you to the explanations  
 :::image-end:::  
 
 For the purpose of this article, let's focus on the Accessibility section.
 
-:::image type="complex" source="../media/xxx.png" alt-text="Accessibility warnings displayed in the Issues tool" lightbox="../media/xxx.png":::
+:::image type="complex" source="../media/a11y-testing-accessibility-issues.msft.png" alt-text="Accessibility warnings displayed in the Issues tool" lightbox="../media/a11y-testing-accessibility-issues.msft.png":::
     Accessibility warnings displayed in the Issues tool  
 :::image-end:::  
 
-The first warning you can see is `Form elements must have labels: Element has no title attribute. Element has no placeholder attribute`. If you activate the `Open in Elements` link DevTools will highlight the Element and show you the HTML source and applied CSS.
+The first warning you can see is `Form elements must have labels: Element has no title attribute. Element has no placeholder attribute`. If you expand this section and activate the `Open in Elements` link DevTools will highlight the Element and show you the HTML source and applied CSS.
 
-:::image type="complex" source="../media/xxx.png" alt-text="Elements tool showing the problematic HTML after activating the link in the Issues tool" lightbox="../media/xxx.png":::
+:::image type="complex" source="../media/a11y-testing-inspect-problematic-element.msft.png" alt-text="Elements tool showing the problematic HTML after activating the link in the Issues tool" lightbox="../media/a11y-testing-inspect-problematic-element.msft.png":::
     Elements tool showing the problematic HTML after activating the link in the Issues tool  
 :::image-end:::  
 
@@ -50,27 +50,27 @@ The use of the `label` element here is wrong as there is no connection between t
 
 You can also activate the explanatory links in the **Issues Panel** to get this information.
 
-:::image type="complex" source="../media/xxx.png" alt-text="Links in the Issues pane pointing to more in-depth information about the issue" lightbox="../media/xxx.png":::
+:::image type="complex" source="../media/a11y-testing-more-information-links.msft.png" alt-text="Links in the Issues pane pointing to more in-depth information about the issue" lightbox="../media/a11y-testing-more-information-links.msft.png":::
     Links in the Issues pane pointing to more in-depth information about the issue  
 :::image-end:::  
 
 The other automatically detected problem is that many of the images in the document don't have any alternative text. If you expand the `Images must have alternate text: Element has no title attribute` warning you get four instances of images with that problem.
 
-:::image type="complex" source="../media/xxx.png" alt-text="The Issues tool reporting images with missing alternative text" lightbox="../media/xxx.png":::
+:::image type="complex" source="../media/a11y-testing-images-without-alt.msft.png" alt-text="The Issues tool reporting images with missing alternative text" lightbox="../media/a11y-testing-images-without-alt.msft.png":::
     The Issues tool reporting images with missing alternative text  
 :::image-end:::
 
-In the `Other` section of the **Issues Panel** you also find that two elements on the page don't have enough contrast.
+Furthermore you also find that two elements on the page don't have enough contrast.
 
-:::image type="complex" source="../media/xxx.png" alt-text="Contrast problems reported in the Issues tool" lightbox="../media/xxx.png":::
+:::image type="complex" source="../media/a11y-testing-contrast-issues.msft.png" alt-text="Contrast problems reported in the Issues tool" lightbox="../media/a11y-testing-contrast-issues.msft.png":::
     Contrast problems reported in the Issues tool  
 :::image-end:::
 
-You get detailed explanation what that means and when you drill down you get a list of which elements they are. Activating the links pointing to the elements highlights 
+You get detailed explanations what that means and when you drill down you get a list of which elements they are. Activating the links pointing to the elements highlights 
 them in the document.
 
-:::image type="complex" source="../media/xxx.png" alt-text="Element in the document highlightter after activating the link to it" lightbox="../media/xxx.png":::
-    Element in the document highlightter after activating the link to it  
+:::image type="complex" source="../media/a11y-element-with-contrast-issues.msft.png" alt-text="Element in the document highlighted after activating the link to it" lightbox="../media/a11y-element-with-contrast-issues.msft.png":::
+    Element in the document highlighted after activating the link to it  
 :::image-end:::
 
 These are some very obvious accessibility problems that can be avoided. Using the **Issues Panel** and its guided explanations to fix them gets you on the way towards an accessible product.
