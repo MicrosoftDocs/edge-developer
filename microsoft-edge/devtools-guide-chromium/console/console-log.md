@@ -3,7 +3,7 @@ description: How to log messages and run JavaScript in the Microsoft Edge DevToo
 title: Log messages in the Console tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/09/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -16,7 +16,7 @@ Ever since browsers started to offer developer tools, the **Console** is a favor
 
 In JavaScript and before, you had DevTools such as an `alert()` or a `document.write()` statement.  Neither statement resulted in a satisfying experience.  
 
-If you want to log information in **Console**, lots of methods are available to you.  Review all of available methods in the [API reference][DevtoolsConsoleApi].  The following code snippet lists the most important methods.  
+If you want to log information in the **Console**, lots of methods are available to you.  Review all of available methods in the [API reference][DevtoolsConsoleApi].  The following code snippet lists the most important methods.  
 
 ```javascript
 // prints the text to the console as  a log message
@@ -29,17 +29,17 @@ console.error('This is an error')
 console.warn('This is a warning') 
 ```  
 
-When you try any method in **Console** after you copy or navigate to [log examples demo][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingExamplesHtml], the `log()` and `info()` methods seem to do the same thing, while the `error()` and `warn()` methods display an icon next to the message and a way to inspect the [stack trace][WikiStackTrace] of the message.  
+Copy and paste the previous code snippet in the **Console** or navigate to [Console messages examples: log, info, error, and warn][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingExamplesHtml].  When you try any method in the **Console**, the `log()` and `info()` methods seem to do the same thing, while the `error()` and `warn()` methods display an icon next to the message and a way to inspect the [stack trace][WikiStackTrace] of the message.  
 
-:::image type="complex" source="../media/console-log-examples.msft.png" alt-text="Console displays the messages from different log APIs" lightbox="../media/console-log-examples.msft.png":::
-   **Console** displays the messages from different log APIs  
+:::image type="complex" source="../media/console-log-examples.msft.png" alt-text="The Console displays the messages from different log APIs" lightbox="../media/console-log-examples.msft.png":::
+   The **Console** displays the messages from different log APIs  
 :::image-end:::  
 
 It is, however, still a good idea to use `info()` and `log()` for different log tasks as that allows you to [filter using type in the Console][DevtoolsConsoleConsoleFilters].  
 
 ## Different types of logs  
 
-Instead of log text you may send any valid JavaScript or DOM references to **Console**.  The **Console** is elegant and it determines the type that you send it.  It then gives you the best possible representation.  Paste the following code snippet into **Console** or navigate to the [log different types demo][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingTypesHtml] to display the results.  
+Instead of log text you may send any valid JavaScript or DOM references to the **Console**.  The **Console** is elegant and it determines the type that you send it.  It then gives you the best possible representation.  Copy and paste the following code snippet in the **Console** or to display the results, navigate to [Console messages examples: logging different types][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingTypesHtml].  
 
 ```javascript
 let x = 2;
@@ -56,7 +56,7 @@ let w3techs = ['HTML', 'CSS', 'SVG', 'MathML'];
 console.log(w3techs);
 ```  
 
-Each result is displayed in a different way.  Use the triangles to toggle the information and analyze each one in more detail.  The curly braces `{}` around the variable `x` are a nice little trick to avoid lots of log messages where you only get a value but you don't know where it originated.  
+Each result is displayed in a different way.  Use the triangles to toggle the information and analyze each one in more detail.  The curly brace characters `{}` around the `x` variable are a nice little trick to avoid lots of log messages where you only get a value but you don't know where it originated.  
 
 :::row:::
    :::column span="":::
@@ -97,7 +97,7 @@ console.log('%O', document.body);
 console.log('%cImportant message follows','color:red;font-size:40px');
 ```  
 
-The first example displays that the order of replacement of specifiers is the parameter order following the string.  Paste the code above into **Console** or navigate to the [log with specifiers demo][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithSpecifiersHtml] to display the results.  Expand the information in the log to display the huge difference between `%o` and `%O`.
+The first example displays that the order of replacement of specifiers is the parameter order following the string.  To display the results, copy and paste the previous code snippet in the **Console** or navigate to [Console messages examples: Logging with specifiers][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithSpecifiersHtml].  Expand the information in the log to display the huge difference between `%o` and `%O`.  
 
 :::row:::
    :::column span="":::
@@ -114,7 +114,7 @@ The first example displays that the order of replacement of specifiers is the pa
 
 ## Group log messages
 
-If you log much information, you may use the `group` and `groupCollapsed` methods to display log messages as expandable and collapsible groups in the **Console**.  Groups may be nested and name the groups to make the data a lot easier to understand.  
+If you log much information, you may use the `group` and `groupCollapsed` methods to display log messages as expandable and collapsible groups in the **Console**.  Groups may be nested and named to make the data much easier to understand.  
 
 ```javascript
 console.group("Passengers: Heart of Gold");
@@ -139,7 +139,7 @@ for (tech in technologies) {
 }
 ```  
 
-Also in the second example, the group names may be optionally generated.  Paste the code above into **Console** or navigate to the [log with groups demo][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithGroupsHtml] to display the results.  You may expand and collapse each of the sections.  
+Also in the second example, the group names may be optionally generated.  To display the results, copy and paste the previous code snippet in the **Console** or navigate to [Console messages examples: grouping logs][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithGroupsHtml].  You may expand and collapse each of the sections.  
 
 :::row:::
    :::column span="":::
@@ -180,9 +180,9 @@ console.table(bodyDimensions);
    Display data with `console.table` to make it much easier to read
 :::image-end:::  
 
-The output of `console.table` has a table format not only when it's displayed in **Console**.  For example you may copy a table and paste it into Excel, Word or any other products that support tabular data.  
+The output of `console.table` has a table format not only when it displays in the **Console**.  For example, copy and paste a table in Excel, Word, or any other products that support tabular data.  
 
-If the data has named parameters, the `console.table()` method also allows for an `Array` of columns to display as a second parameter.  This example displays how that may make things much more readable.
+If the data has named parameters, the `console.table()` method also allows you to specify an `Array` of columns for each property to display as a second parameter.  The following example displays how to specify an array of columns that is more readable.  
 
 ```javascript
 // get all the h1, p and script elements 
@@ -193,11 +193,11 @@ console.table(contentElements)
 console.table(contentElements,['nodeName', 'innerText', 'offsetHeight'])
 ```  
 
-:::image type="complex" source="../media/console-log-table-filtered.msft.png" alt-text="Filter information that console.table should display, provide an array of properties to display as a second parameter" lightbox="../media/console-log-table-filtered.msft.png":::
-   Filter information that `console.table` should display, provide an array of properties to display as a second parameter  
+:::image type="complex" source="../media/console-log-table-filtered.msft.png" alt-text="Filter information that console.table displays and provide an array of properties to display as a second parameter" lightbox="../media/console-log-table-filtered.msft.png":::
+   Filter information that `console.table` displays and provide an array of properties to display as a second parameter  
 :::image-end:::  
 
-You may be tempted to use the log methods as your main means to debug webpages as log methods are simple to use.  Consider the result of any `console.log()` request.  Live products shouldn't use any log that was used to debug.  It may leak inside information to people and the noise created in **Console** is overwhelming.  When you use [Breakpoint Debugging][DevtoolsJavascriptBreakpoints] or [Live Expressions][DevtoolsConsoleLiveExpressions], you may find that your workflows are more effective way and you get better results.
+You may be tempted to use the log methods as your main means to debug webpages, because log methods are simple to use.  Consider the result of any `console.log()` request.  Live products shouldn't use any log that was used to debug.  It may reveal inside information to people.  And the noise created in the **Console** is overwhelming.  When you use [Breakpoint Debugging][DevtoolsJavascriptBreakpoints] or [Live Expressions][DevtoolsConsoleLiveExpressions], you may find that your workflows are more effective and you get better results.  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

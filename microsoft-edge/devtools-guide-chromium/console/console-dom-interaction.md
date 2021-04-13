@@ -3,14 +3,14 @@ description: An overview how to interact with the current webpage in the browser
 title: Use the Console to interact with the DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/09/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Use the Console to interact with the DOM
 
-The **Console** tool isn't only for [logging information][DevtoolsConsoleConsoleLog] or to [run arbitrary JavaScript][DevtoolsConsoleConsoleJavascript].  It also is a great way to interact with the webpage in the browser.  Consider it a script environment version of the **Inspect** tool.  
+The **Console** tool isn't only for [logging information][DevtoolsConsoleConsoleLog] or to [run arbitrary JavaScript][DevtoolsConsoleConsoleJavascript].  It also is a great way to interact with the webpage in the browser.  Consider it a script-environment version of the **Inspect** tool.  
 
 ## Read from the DOM
 
@@ -18,14 +18,14 @@ To reference the header of the webpage, complete the following actions.
 
 1.  Open the **Console**.
     *   Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).  
-1.  Type or copy the following code snippet in the **Console**.  
+1.  Type or copy and paste the following code snippet in the **Console**.  
     
     ```javascript
     document.querySelector('header')
     ```  
     
-:::image type="complex" source="../media/console-dom-get-reference.msft.png" alt-text="Get a reference to the header in console using document.querySelector" lightbox="../media/console-dom-get-reference.msft.png":::
-    Get a reference to the header in console using `document.querySelector`  
+:::image type="complex" source="../media/console-dom-get-reference.msft.png" alt-text="To get a reference to the header in console, use document.querySelector" lightbox="../media/console-dom-get-reference.msft.png":::
+    To get a reference to the header in console, use `document.querySelector`  
 :::image-end:::  
 
 If you select `Shift`+`Tab` or move your mouse cursor over the HTML result, DevTools highlights the header for you.  
@@ -36,14 +36,14 @@ If you select `Shift`+`Tab` or move your mouse cursor over the HTML result, DevT
 
 ## Manipulate the DOM
 
-You may manipulate the webpage, too.  For example, if you copy and paste or type the following into the **Console** a green border displays around the header.
+You may manipulate the webpage, too.  For example, if you copy and paste or type the following into the **Console**, a green border displays around the header.
 
 ```javascript
 document.querySelector('header').style.border = '2em solid green'
 ```  
 
-:::image type="complex" source="../media/console-dom-add-border.msft.png" alt-text="Add a border to an element using Console" lightbox="../media/console-dom-add-border.msft.png":::
-    Add a border to an element using **Console**  
+:::image type="complex" source="../media/console-dom-add-border.msft.png" alt-text="To add a border to an element, use the Console" lightbox="../media/console-dom-add-border.msft.png":::
+    To add a border to an element, use the **Console**  
 :::image-end:::  
 
 Depending on the complexity of the webpage, It may be daunting to find the right element to manipulate.  But you may use the **Inspect** tool to help you.  Say you want to manipulate the `Documentation` part in the header.
@@ -54,31 +54,31 @@ Depending on the complexity of the webpage, It may be daunting to find the right
 
 To get a direct reference to the element to manipulate, complete the following actions.  
 
-1.  Use the **Inspect** tool to choose the element  
+1.  Use the **Inspect** tool to choose the element.  
 
-    :::image type="complex" source="../media/console-dom-use-inspector-to-get-element.msft.png" alt-text="Choose an element using the Inspector tool" lightbox="../media/console-dom-use-inspector-to-get-element.msft.png":::
-        Choose an element using the **Inspector** tool  
+    :::image type="complex" source="../media/console-dom-use-inspector-to-get-element.msft.png" alt-text="To choose an element, use the Inspector tool" lightbox="../media/console-dom-use-inspector-to-get-element.msft.png":::
+        To choose an element, use the **Inspector** tool  
     :::image-end:::  
     
 1.  Choose it and DevTools jumps to the **Elements** tool.  
-1.  Choose the `...` menu next to the element in the DOM view  
+1.  Choose the `...` menu next to the element in the DOM view.  
     
     :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="The chosen element displays in the DOM tree of the Elements tool, choose the overflow menu to get more features" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
         The chosen element displays in the DOM tree of the **Elements** tool, choose the overflow menu to get more features  
     :::image-end:::  
     
-1.  Choose `Copy` and `Copy JS Path` from the context menus.
+1.  Open the contextual menu and choose `Copy` > `Copy JS Path`.  
     
     :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="Copy the JavaScript path from an element in the DOM view of the Elements tool" lightbox="../media/console-dom-copy-JS-path.msft.png":::
         Copy the JavaScript path from an element in the DOM view of the **Elements** tool  
     :::image-end:::  
     
-1.  Go back to **Console** and paste the command.  
+1.  Go back to the **Console** and paste the command.  
     
 To change the text of the link to `My Playground`, add `.textContent = "My Playground"` to the command you previously pasted.  
 
-:::image type="complex" source="../media/console-dom-change-content.msft.png" alt-text="Change the content of an element using Console" lightbox="../media/console-dom-change-content.msft.png":::
-    Change the content of an element using **Console**  
+:::image type="complex" source="../media/console-dom-change-content.msft.png" alt-text="Use the Console to change the content of an element" lightbox="../media/console-dom-change-content.msft.png":::
+    Use the **Console** to change the content of an element  
 :::image-end:::  
 
 Use any JavaScript DOM manipulations you want to do in the **Console**.  To make it more convenient, the **Console** comes with a few helper methods to make it easier.
@@ -87,11 +87,11 @@ Use any JavaScript DOM manipulations you want to do in the **Console**.  To make
 
 Many convenience methods and shortcuts are available to you as [Console Utilities][DevtoolsConsoleUtilities].  Some of the methods are incredibly powerful and are things you probably wrote as a series of `console.log()` statements in the past.
 
-### Power to the $
+### The power to the $
 
 The `$` has special powers in **Console** and you may remember that from jQuery.
 
-*   `$_` stores the result of the last command.  So, if you type `2 + 2` and hit enter, typing `$_` gives you 4.
+*   `$_` stores the result of the last command.  So, if you type `2 + 2` and select `Enter`, and then type `$_`, the **Console** displays you `4`.
 *   `$0` to `$4` is a stack of the last inspected elements `$0` is always the newest one.  So in the earlier example, you just chose the element in the **Inspector** tool and type `$0.textContent = "My Playground"` to get the same effect.
 *   `$x()` allows you to choose DOM elements using XPATH.
 *   `$()` and `$$()` are shorter versions of for `document.querySelector()` and `document.querySelectorAll()`.  
@@ -102,17 +102,17 @@ For example, the following code snippet retrieves all the links in the webpage \
 console.table($$('a'),['href','text']);
 ```  
 
-:::image type="complex" source="../media/console-dom-get-all-links.msft.png" alt-text="Get all links in the webpage and displaying the result as a table" lightbox="../media/console-dom-get-all-links.msft.png":::
-    Get all links in the webpage and displaying the result as a table  
+:::image type="complex" source="../media/console-dom-get-all-links.msft.png" alt-text="Get all links in the webpage and display the result as a table" lightbox="../media/console-dom-get-all-links.msft.png":::
+    Get all links in the webpage and display the result as a table  
 :::image-end:::  
 
-However, if you don't want to display the information, but you grab it as data.  The problem with `$$('a')`, is that it not only gives the information you want, the link and the text, but also all of the properties for each link.  
+However, if you don't want to display the information, but you want to grab it as data.  The `$$('a')` shortcut provides the anchor links and all of the properties for each one.  The problem is that you only want the links and the related text.  
 
-:::image type="complex" source="../media/console-dom-too-much-link-information.msft.png" alt-text="The $$ command returning far too much information" lightbox="../media/console-dom-too-much-link-information.msft.png":::
-    The `$$` command returning far too much information  
+:::image type="complex" source="../media/console-dom-too-much-link-information.msft.png" alt-text="The $$ shortcut returns far too much information" lightbox="../media/console-dom-too-much-link-information.msft.png":::
+    The `$$` shortcut returns far too much information  
 :::image-end:::  
 
-The `$$` shortcut has an interesting extra feature.  Instead of returning a pure `NodeList` like `document.querySelectorAll()`, it gives you all of the `Array` methods.  Use `map()` to cut down the information to what you need.  
+The `$$` shortcut has an interesting extra feature.  Instead of returning a pure `NodeList` like `document.querySelectorAll()`, the `$$` shortcut gives you all of the `Array` methods.  Use `map()` method to reduce the information to what you need.  
 
 ```javascript
 $$('a').map(a => {
@@ -152,19 +152,19 @@ $$('a[href^="https://"]').forEach(
     To highlight all external links, add a green border around each  
 :::image-end:::  
 
-Instead of writing complex JavaScript to filter results, you may use the power of CSS selectors.  
+Instead of writing complex JavaScript to filter results, use the power of CSS selectors.  
 
 To create a table of the `src` and `alt` information for all images on the webpage that aren't inline images, complete the following actions.  
 
 1.  Open the **Console**.  
-1.  copy and run the following code snippet.  
+1.  Type or copy and paste the following code snippet.  
 
 ```javascript
 console.table($$('img:not([src^=data])'), ['src','alt'])
 ```  
 
-:::image type="complex" source="../media/console-dom-complex-CSS-selector.msft.png" alt-text="Choose elements using a complex CSS selector" lightbox="../media/console-dom-complex-CSS-selector.msft.png":::
-    Choose elements using a complex CSS selector  
+:::image type="complex" source="../media/console-dom-complex-CSS-selector.msft.png" alt-text="To choose elements, use a complex CSS selector" lightbox="../media/console-dom-complex-CSS-selector.msft.png":::
+    To choose elements, use a complex CSS selector  
 :::image-end:::  
 
 Ready for an even more complex example?  HTML webpages generated from markdown like this article, have automatic ID values for each heading to allow you to deep link to that section.  For example, a `# New features` changes to `<h1 id="new-features">New features</h1>`.  
@@ -250,7 +250,7 @@ unmonitorEvents($0, 'key');
 
 ## Reuse DOM manipulation scripts
 
-It's useful to manipulate the DOM from the **Console**.  You may soon run into the limitations as a development platform.  The good news is that the [Sources][DevtoolsSourcesIndex] tool in DevTools offers a fully featured development environment.  In the **Sources** tool, you may complete the following actions.  
+You may find it useful to manipulate the DOM from the **Console**.  You may soon run into the limitations of the **Console** as a development platform.  The good news is that the [Sources][DevtoolsSourcesIndex] tool in DevTools offers a fully featured development environment.  In the **Sources** tool, you may complete the following actions.  
 
 *   Store your scripts for the **Console** as [Snippets][DevToolsJavascriptSnippets].  
 *   Run the scripts in a webpage using a keyboard shortcut or the editor.  

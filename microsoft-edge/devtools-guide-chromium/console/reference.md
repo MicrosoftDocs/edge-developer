@@ -3,7 +3,7 @@ description: A comprehensive reference for every feature and behavior of the Con
 title: Console reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/09/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -47,7 +47,7 @@ To open the **Console** tool from the [Command Menu][DevtoolsCommandMenuIndex], 
 
 ### Open the Console tool in the Drawer  
 
-Select `Escape` or choose **Customize And Control DevTools** \(`...`\) and then choose **Show console drawer**.  
+Select `Esc` or choose **Customize and control DevTools** \(`...`\) and then choose **Show console drawer**.  
 
 :::image type="complex" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="Show console drawer" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
    **Show console drawer**  
@@ -75,17 +75,18 @@ Choose the **Console Settings** \(![Console Settings icon](../media/settings-but
 
 The following links explain each setting.  
 
-*   [Hide Network](#hide-network-messages)  
-*   [Preserve Log](#persist-messages-across-page-loads)  
-*   [Selected Context Only](#filter-out-messages-from-different-contexts)  
-*   [Group Similar](#turn-off-message-grouping)  
-*   [Log XmlHttpRequests](#log-xhr-and-fetch-requests)  
-*   [Eager Evaluation](#turn-off-eager-evaluation)  
-*   [Autocomplete From History](#turn-off-autocomplete-from-history)  
+*   [Hide network](#hide-network-messages)  
+*   [Preserve log](#persist-messages-across-page-loads)  
+*   [Selected context only](#filter-out-messages-from-different-contexts)  
+*   [Group similar](#turn-off-message-grouping)  
+*   [Log XMLHttpRequests](#log-xhr-and-fetch-requests)  
+*   [Eager evaluation](#turn-off-eager-evaluation)  
+*   [Autocomplete from history](#turn-off-autocomplete-from-history)  
+<!--*   Evaluate triggers user activation  -->  
     
 ### Open the Console Sidebar  
 
-To display the **Sidebar**, choose **Show Console Sidebar** \(![Show Console Sidebar](../media/show-console-sidebar-icon.msft.png)\).  The **Sidebar** is useful for filtering
+To display the **Sidebar**, choose **Show console sidebar** \(![Show console sidebar](../media/show-console-sidebar-icon.msft.png)\).  The **Sidebar** is helps you filter.  
 
 :::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Console Sidebar" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
    **Console Sidebar**  
@@ -142,7 +143,7 @@ Many ways exist to filter out messages in the **Console**.
 
 ### Filter out browser messages  
 
-[Open the Console Sidebar](#open-the-console-sidebar) and choose **User Messages** to only display messages that came from the JavaScript of the webpage.  
+[Open the Console Sidebar](#open-the-console-sidebar) and choose **# user messages** to only display messages that came from the JavaScript of the webpage.  
 
 :::image type="complex" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="Display user messages" lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
    Display user messages  
@@ -188,7 +189,7 @@ To hide messages from a URL, type `-url:`.  It's a negative URL filter.
 To display messages from a single URL, complete the following actions.  
 
 1.  [Open the Console Sidebar](#open-the-console-sidebar).  
-1.  Expand the **User Messages** section.  
+1.  Expand the **# user messages** section.  
 1.  Choose the URL of the script that contains the messages on which you want to focus.  
     
 :::image type="complex" source="../media/console-filter-text-specified.msft.png" alt-text="Display the messages that came from wp-ad.min.js" lightbox="../media/console-filter-text-specified.msft.png":::

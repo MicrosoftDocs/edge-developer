@@ -3,7 +3,7 @@ description: An introduction to the Console tool inside the Microsoft Edge Devel
 title: Use the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/09/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -51,9 +51,9 @@ When you open the DevTools on a webpage, you're likely to display a deluge of in
    DevTools with a **Console** full of messages  
 :::image-end:::  
 
-## Log information to display in Console  
+## Log information to display in the Console  
 
-The most popular use case for **Console** is logging information from your scripts using the `console.log()` method or other similar methods.  To try it, complete the following actions.  
+The most popular use case for the **Console** is logging information from your scripts using the `console.log()` method or other similar methods.  To try it, complete the following actions.  
 
 1.  To open **Console**, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).  
 1.  Navigate to [Console messages examples: log, info, error and warn][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml], or copy and run the following code snippet in the **Console**.  
@@ -79,7 +79,7 @@ The most popular use case for **Console** is logging information from your scrip
     
 Many useful methods are available when you work with the **Console**.  For more information, navigate to [Log messages in the Console tool][DevtoolsConsoleConsoleLog].  
 
-## Try your JavaScript live in Console  
+## Try your JavaScript live in the Console  
 
 The **Console** isn't only a place to log information.  The **Console** is a [REPL][WikiReadEvalPrintLoop] environment.  When you write any JavaScript in the **Console**, the code runs immediately.  You may find it useful to test some new JavaScript features or to do some quick calculations.  Also, you get all of the features you expect from a modern editing environment, such as autocompletion, syntax highlighting, and history.  To try it, complete the following actions.  
 
@@ -92,7 +92,7 @@ The **Console** displays the result `4` on the following line.  This **Eager eva
    The **Console** displays the result of `2 + 2` live as you type it  
 :::image-end:::  
 
-To run the JavaScript expression in the**Console** and optionally display a result, select `Enter`.  Then, you may write the next JavaScript code to run in the **Console**.  
+To run the JavaScript expression in the **Console** and optionally display a result, select `Enter`.  Then, you may write the next JavaScript code to run in the **Console**.  
 
 :::image type="complex" source="../media/console-javascript-several-expressions.msft.png" alt-text="Run several lines of JavaScript code in succession" lightbox="../media/console-javascript-several-expressions.msft.png":::
    Run several lines of JavaScript code in succession  
@@ -108,17 +108,15 @@ By default, you run JavaScript code on a single line.  To run a line, type your 
 1.  Select `tab` to get `document.body`.  
 1.  Type another `.` to display the complete list of properties and methods available on the body of the current webpage.  
     
-
 For more information about all the ways to work with **Console**, navigate to [Console as a JavaScript environment][DevtoolsConsoleConsoleJavascript].  
 
 :::image type="complex" source="../media/console-javascript-autocomplete.msft.png" alt-text="Console autocompletion of JavaScript expressions" lightbox="../media/console-javascript-autocomplete.msft.png":::
    **Console** autocompletion of JavaScript expressions  
 :::image-end:::  
 
-
 ## Interact with the current webpage in the browser  
 
-**Console** has access to the [Window][MdnDocsWebApiWindow] object of the browser.  You may write scripts that interact with the current webpage.  To try it, complete the following actions.  
+The **Console** has access to the [Window][MdnDocsWebApiWindow] object of the browser.  You may write scripts that interact with the current webpage.  To try it, complete the following actions.  
 
 1.  Open the **Console**.  
 1.  Copy and paste the following code snippet.  
@@ -140,8 +138,8 @@ Instead of only reading from the webpage, you may also change it.  To try it, co
     document.querySelector('h1').innerHTML = 'Rocking the Console';
     ```  
     
-:::image type="complex" source="../media/console-intro-wrtiting-DOM.msft.png" alt-text="Write text to the DOM in Console" lightbox="../media/console-intro-wrtiting-DOM.msft.png":::
-   Write text to the DOM in **Console**  
+:::image type="complex" source="../media/console-intro-wrtiting-DOM.msft.png" alt-text="Write text to the DOM in the Console" lightbox="../media/console-intro-wrtiting-DOM.msft.png":::
+   Write text to the DOM in the **Console**  
 :::image-end:::  
 
 You changed the main heading of the webpage to **Rocking the Console**.  The **Console Utility** methods make it easy to access and manipulate the current webpage.  For more information, navigate to [Console Utilities API reference][DevtoolsConsoleUtilities].  For example, to add a green border around all the links in the current webpage, complete the following actions.  
@@ -153,11 +151,12 @@ You changed the main heading of the webpage to **Rocking the Console**.  The **C
     $$('a').forEach(a => a.style.border='1px solid lime');
     ```  
     
-For more information about working with the DOM, navigate to [Use the Console to interact with the DOM][DevtoolsConsoleConsoleDomInteraction].  
 
-:::image type="complex" source="../media/console-intro-changing-styles.msft.png" alt-text="Manipulate a selection of elements using Console" lightbox="../media/console-intro-changing-styles.msft.png":::
-    Manipulate a selection of elements using **Console**  
+:::image type="complex" source="../media/console-intro-changing-styles.msft.png" alt-text="Manipulate a selection of elements using the Console" lightbox="../media/console-intro-changing-styles.msft.png":::
+    Manipulate a selection of elements using the **Console**  
 :::image-end:::  
+
+For more information about working with the DOM, navigate to [Use the Console to interact with the DOM][DevtoolsConsoleConsoleDomInteraction].  
 
 ## Learn more about Console  
 

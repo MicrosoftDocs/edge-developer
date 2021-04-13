@@ -3,7 +3,7 @@ description: JavaScript errors are reported by developer tools and debug each in
 title: Tracking down errors using the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/09/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -91,6 +91,8 @@ Navigate to the fixed example of the [JavaScript error messaging in Console tool
 
 Ensure you provide defensive coding techniques to avoid the previous user experiences.  Also, ensure your code catches errors and display each in the **Console**.  Navigate to the error reported example of the [JavaScript error messaging in Console tool][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorReportedHtml] and review the following items.  
 
+Navigate to the network-error-reported.html example file of the [JavaScript error messaging in Console tool][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorReportedHtml] and review the following items.
+
 *   Provide UI to the user that something went wrong.  
 *   In the **Console**, provide helpful information about the Network error from your code.  
     
@@ -148,10 +150,10 @@ You have three functions that request each other in succession.
 *   `second()`  
 *   `third()`  
     
-Each sends a `name` argument to the other.  In the `third()` function you check if the `name` argument exists and if it isn't, you log an error that name isn't defined.  If `name` is defined, you use the `assert()` method to check if the `name` argument is fewer than eight letters long.  You request the `first()` function three times, with the following parameters.  
+Each sends a `name` argument to the other.  In the `third()` function, you check if the `name` argument exists and if it doesn't, you log an error that name isn't defined.  If `name` is defined, you use the `assert()` method to check if the `name` argument is fewer than eight letters long.  You request the `first()` function three times, with the following parameters.  
 
 *   No argument that triggers the `console.error()` method in the `third()` function.  
-*   The term `Console` as a parameter to `first()` function doesn't cause an error because `name` argument exists and is shorter than eight letters.  
+*   The term `Console` as a parameter to the `first()` function doesn't cause an error because `name` argument exists and is shorter than eight letters.  
 *   The phrase `Microsoft Edge Canary` as a parameter to `first()` function causes the `console.assert()` method to report an error, because the parameter is longer than eight letters.  
     
 Use the `console.assert()` method to create conditional error reports.  The following two examples have the same result, but one needs an extra `if{}` statement.  

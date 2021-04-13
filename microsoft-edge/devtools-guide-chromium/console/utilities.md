@@ -3,7 +3,7 @@ description: A reference of convenience commands available in the Microsoft Edge
 title: Console Utilities API reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -35,13 +35,17 @@ The Console Utilities API contains a collection of convenience commands to compl
 
 For more information about the `console.log()` and `console.error()` methods and the rest of the `console.*` methods, navigate to [Console API Reference][DevToolsConsoleApi].  
 
-## Recently Evaluated Expression  
+## Recently evaluated expression  
+
+### Console syntax  
 
 ```console
 $_
 ```  
 
-Returns the value of the most recently evaluated expression.  
+This command returns the value of the most recently evaluated expression.  
+
+### Console example  
 
 In the following figure, a simple expression \(`2 + 2`\) is evaluated.  The `$_` property is then evaluated, which contains the same value.  
 
@@ -55,13 +59,17 @@ In the following figure, the evaluated expression initially contains an array of
    `$_` changes when new commands are evaluated  
 :::image-end:::  
 
-## Recently Chosen Element Or JavaScript Object  
+---  
+
+## Recently chosen element or JavaScript object  
+
+### Console syntax  
 
 ```console
 $0
 ```  
 
-Returns the most recently chosen element or JavaScript object.  `$1` returns the second most recently chosen one, and so on.  The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** tool or the last five JavaScript heap objects chosen in the **Memory** tool.  
+This command returns the most recently chosen element or JavaScript object.  `$1` returns the second most recently chosen one, and so on.  The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** tool or the last five JavaScript heap objects chosen in the **Memory** tool.  
 
 :::row:::
    :::column span="1":::
@@ -96,6 +104,8 @@ Returns the most recently chosen element or JavaScript object.  `$1` returns the
    :::column-end:::
 :::row-end:::  
 
+### Console example  
+
 In the following figure, an `img` element is chosen in the **Elements** tool.  In the **Console** drawer, `$0` has been evaluated and displays the same element.  
 
 :::image type="complex" source="../media/console-image-highlighted-$0.msft.png" alt-text="The $0" lightbox="../media/console-image-highlighted-$0.msft.png":::
@@ -108,13 +118,19 @@ In the following figure, the image displays a different element chosen in the sa
    The `$1`  
 :::image-end:::  
 
-## Query Selector  
+---  
+
+## Query selector  
+
+### Console syntax  
 
 ```console
 $(selector, [startNode])
 ```  
 
-Returns the reference to the first DOM element with the specified CSS selector.  This method is an alias for the [document.querySelector()][MdnDocsWebApiDocumentQueryselector] method.  
+This command returns the reference to the first DOM element with the specified CSS selector.  This method is an alias for the [document.querySelector()][MdnDocsWebApiDocumentQueryselector] method.  
+
+### Console example  
 
 In the following figure, a reference to the first `<img>` element in the webpage is returned.  
 
@@ -122,21 +138,21 @@ In the following figure, a reference to the first `<img>` element in the webpage
    The `$('img')`  
 :::image-end:::  
 
-To find it in the DOM or **Scroll in to View** to display it on the webpage, complete the following actions.  
+To find the first element in the DOM or to find and display it on the webpage, complete the following actions.  
 
 1.  Hover on the returned result.  
 1.  Open the contextual menu \(right-click\).  
 1.  Choose **Reveal in Elements Panel**.  
 
-In the following figure, a reference to the currently chosen element is returned and the src property is displayed.  
+In the following figure, a reference to the currently chosen element is returned and the `src` property is displayed.  
 
 :::image type="complex" source="../media/console-element-selector-image-source.msft.png" alt-text="The $('img').src" lightbox="../media/console-element-selector-image-source.msft.png":::
    The `$('img').src`  
 :::image-end:::  
 
-This method also supports a second parameter, startNode, that specifies an "element" or Node from which to search for elements.  The default value of the parameter is `document`.  
+This method also supports a second parameter, `startNode`, that specifies an element or node from which to search for elements.  The default value of the parameter is `document`.  
 
-In the following figure, the first `img` element is found after the `title--image` and displays the `src` properly is returned.  
+In the following figure, the first `img` element after the `title--image` element is found, and the `src` property of the `img` element is returned.  
 
 :::image type="complex" source="../media/console-element-selector-image-filter-source.msft.png" alt-text="The $('img', document.querySelector('title--image')).src" lightbox="../media/console-element-selector-image-filter-source.msft.png":::
    The `$('img', document.querySelector('title--image')).src`  
@@ -145,13 +161,19 @@ In the following figure, the first `img` element is found after the `title--imag
 > [!NOTE]
 > If you are using a library such as jQuery that uses `$`, the functionality is overwritten, and `$` corresponds to the implementation from that library.  
 
-## Query Selector All  
+---  
+
+## Query selector all  
+
+### Console syntax  
 
 ```console
 $$(selector, [startNode])
 ```  
 
-Returns an array of elements that match the specified CSS selector.  This method is equivalent to running the [document.querySelectorAll()][MdnDocsWebApiDocumentQueryselectorall] method.  
+This command returns an array of elements that match the specified CSS selector.  This method is equivalent to running the [document.querySelectorAll()][MdnDocsWebApiDocumentQueryselectorall] method.  
+
+### Console example  
 
 In the following code sample and figure, use `$$()` to create an array of all `<img>` elements in the current webpage and display the value of the `src` property for each element.  
 
@@ -166,9 +188,9 @@ for (each in images) {
    Using `$$()` to choose all images in the webpage and display the sources  
 :::image-end:::  
 
-This method also supports a second parameter, startNode, that specifies an element or Node from which to search for elements.  The default value of the parameter is `document`.  
+This method also supports a second parameter, `startNode`, that specifies an element or node from which to search for elements.  The default value of the parameter is `document`.  
 
-In the following code sample and figure, a modified version of the previous code sample and figure uses `$$()` to create an array of all `<img>` elements that appear in the current webpage after the chosen Node.  
+In the following code sample and figure, a modified version of the previous code sample and figure uses `$$()` to create an array of all `<img>` elements that appear in the current webpage after the chosen node.  
 
 ```console
 var images = $$('img', document.querySelector(`title--image`));
@@ -184,13 +206,19 @@ for (each in images) {
 > [!NOTE]
 > Select `Shift`+`Enter` in the **Console** to start a new line without running the script.  
 
+---  
+
 ## XPath  
+
+### Console syntax  
 
 ```console
 $x(path, [startNode])
 ```  
 
-Returns an array of DOM elements that match the specified XPath expression.  
+This command returns an array of DOM elements that match the specified XPath expression.  
+
+### Console example  
 
 In the following code sample and figure, all of the `<p>` elements on the webpage are returned.  
 
@@ -212,19 +240,25 @@ $x("//p[a]")
    Using a more complicated XPath selector  
 :::image-end:::  
 
-Similar to the other selector commands, `$x(path)` has an optional second parameter, `startNode`, that specifies an element or Node from which to search for elements.  
+Similar to the other selector commands, `$x(path)` has an optional second parameter, `startNode`, that specifies an element or node from which to search for elements.  
 
 :::image type="complex" source="../media/console-array-xpath-startnode.msft.png" alt-text="Using an XPath selector with startNode" lightbox="../media/console-array-xpath-startnode.msft.png":::
    Using an XPath selector with `startNode`  
 :::image-end:::  
 
+---  
+
 ## clear  
+
+### Console syntax  
 
 ```console
 clear()
 ```  
 
-Clears the console of the history.  
+This commnad clears the console of the history.  
+
+### Console example  
 
 ```console
 clear()
@@ -232,17 +266,25 @@ clear()
 
 ## copy  
 
+### Console syntax  
+
 ```console
 copy(object)
 ```  
 
-The `copy(object)` method copies a string representation of the specified object to the clipboard.  
+This method copies a string representation of the specified object to the clipboard.  
+
+### Console example  
 
 ```console
 copy($0)
 ```  
 
+---  
+
 ## debug  
+
+### Console syntax  
 
 ```console
 debug(method)
@@ -252,6 +294,8 @@ debug(method)
 > The [Chromium issue #1050237][CR1050237] is tracking a bug with the `debug()` function.  If you encounter the issue, try using [breakpoints][DevtoolsJavascriptBreakpoints] instead.  
 
 When you request the specified method, the debugger invokes and breaks inside the method on the **Sources** tool.  It allows you to step through and debug the code.  
+
+### Console example  
 
 ```console
 debug("debug");
@@ -263,17 +307,25 @@ debug("debug");
 
 Use `undebug(method)` to stop breaking on the method, or use the UI to turn off all breakpoints.  
 
-For more information on breakpoints, navigate to [Pause Your Code With Breakpoints][DevToolsJavascriptBreakpoints].  
+For more information on breakpoints, navigate to [How to pause your code with breakpoints in Microsoft Edge DevTools][DevtoolsJavascriptBreakpoints].  
+
+---  
 
 ## dir  
+
+### Console syntax  
 
 ```console
 dir(object)
 ```  
 
-Displays an object-style listing of all of the properties for the specified object.  This method is an alias for the [console.dir()][MdnDocsWebApiConsoleDir] method.  
+This command displays an object-style listing of all of the properties for the specified object.  This method is an alias for the [console.dir()][MdnDocsWebApiConsoleDir] method.  
 
-Evaluate `document.head` in the Console to display the HTML between the `<head>` and `</head>` tags.  In the following code sample and figure, an object-style listing is displayed after using `console.dir()` in the Console.  
+Evaluate `document.head` in the **Console** to display the HTML between the `<head>` and `</head>` tags.  
+
+### Console example  
+
+In the following code sample and figure, an object-style listing is displayed after using `console.dir()` in the **Console**.  
 
 ```console
 document.head;
@@ -286,23 +338,35 @@ dir(document.head);
 
 For more information, navigate to [console.dir()][DevToolsConsoleApiConsoleDirObject] in the Console API.  
 
+---  
+
 ## dirxml  
+
+### Console syntax  
 
 ```console
 dirxml(object)
 ```  
 
-Prints an XML representation of the specified object, as displayed in the **Elements** tool.  This method is equivalent to the [console.dirxml()][MdnDocsWebApiConsoleDirxml] method.  
+This command prints an XML representation of the specified object, as displayed in the **Elements** tool.  This method is equivalent to the [console.dirxml()][MdnDocsWebApiConsoleDirxml] method.  
+
+---  
 
 ## inspect  
+
+### Console syntax  
 
 ```console
 inspect(object/method)
 ```  
 
-Opens and chooses the specified element or object in the appropriate panel:  either the **Elements** tool for DOM elements or the **Memory** tool for JavaScript heap objects.  
+This command opens and chooses the specified element or object in the appropriate panel:  either the **Elements** tool for DOM elements or the **Memory** tool for JavaScript heap objects.  
+
+### Console example  
 
 In the following code sample and figure, the `document.body` opens in the **Elements** tool.  
+
+### Console example  
 
 ```console
 inspect(document.body);
@@ -314,13 +378,21 @@ inspect(document.body);
 
 When passing a method to inspect, the method opens the webpage in the **Sources** tool for you to inspect.  
 
+---  
+
 ## getEventListeners  
+
+### Console syntax  
 
 ```console
 getEventListeners(object)
 ```  
 
-Returns the event listeners registered on the specified object.  The return value is an object that contains an array for each registered event type \(such as `click` or `keydown`\).  The members of each array are objects that describe the listener registered for each type.  In the following code sample figure, all of the event listeners registered on the `document` object are listed.  
+This command returns the event listeners registered on the specified object.  The return value is an object that contains an array for each registered event type \(such as `click` or `keydown`\).  The members of each array are objects that describe the listener registered for each type.  
+
+### Console example  
+
+In the following code snippet and figure, all of the event listeners registered on the `document` object are listed.  
 
 ```console
 getEventListeners(document);
@@ -342,13 +414,19 @@ You may further expand each of the following objects to explore the properties.
    Expanded view of listener object  
 :::image-end:::  
 
+---  
+
 ## keys  
+
+### Console syntax  
 
 ```console
 keys(object)
 ```  
 
-Returns an array containing the names of the properties belonging to the specified object.  To get the associated values of the same properties, use `values()`.  
+This command returns an array containing the names of the properties belonging to the specified object.  To get the associated values of the same properties, use `values()`.  
+
+### Console example  
 
 For example, suppose your application defined the following object.  
 
@@ -368,13 +446,19 @@ values(player1)
    The `keys()` and `values()` commands  
 :::image-end:::  
 
+---  
+
 ## monitor  
+
+### Console syntax  
 
 ```console
 monitor(method)
 ```  
 
-Logs a message to the console that indicates the method name along with the arguments passed to the method when requested.  
+This command logs a message to the console that indicates the method name along with the arguments passed to the method as part of a request.  
+
+### Console example  
 
 ```console
 function sum(x, y) {
@@ -389,13 +473,21 @@ monitor(sum);
 
 Use `unmonitor(method)` to end monitoring.  
 
+---  
+
 ## monitorEvents  
+
+### Console syntax  
 
 ```console
 monitorEvents(object[, events])
 ```  
 
-When one of the specified events occurs on the specified object, the event object is logged to the console.  You may specify a single event to monitor, an array of events, or one of the generic events types that are mapped to a predefined collection of events.  Review the following code sample and figure.  
+When one of the specified events occurs on the specified object, the event object is logged to the console.  You may specify a single event to monitor, an array of events, or one of the generic events types that are mapped to a predefined collection of events.  
+
+### Console example  
+
+Review the following code sample and figure.  
 
 The following monitors all resize events on the window object.  
 
@@ -434,13 +526,19 @@ In the following figure, the sample output after typing a character in the text 
    Monitoring key events  
 :::image-end:::  
 
+---  
+
 ## profile  
+
+### Console syntax  
 
 ```console
 profile([name])
 ```  
 
-Starts a JavaScript CPU profiling session with an optional name.  The [profileEnd()](#profileend) method completes the profile and displays the results in the **Memory** tool.  <!--Navigate to [Speed Up JavaScript Runtime][DevtoolsRenderingToolsJsRuntime].  -->  
+This command starts a JavaScript CPU profiling session with an optional name.  The [profileEnd()](#profileend) method completes the profile and displays the results in the **Memory** tool.  <!--Navigate to [Speed Up JavaScript Runtime][DevtoolsRenderingToolsJsRuntime].  -->  
+
+### Console example  
 
 1.  Run the `profile()` method to start profiling.  
     
@@ -462,13 +560,19 @@ profileEnd('B');
 > [!NOTE]
 > Multiple CPU profiles may operate at the same time and you are not required to close-out each one in creation order.  
 
+---  
+
 ## profileEnd  
+
+### Console syntax  
 
 ```console
 profileEnd([name])
 ```  
 
-Completes a JavaScript CPU profiling session and displays the results in the **Memory** tool.  You must be running the [profile()](#profile) method.  <!--Navigate to [Speed Up JavaScript Runtime][DevtoolsRenderingToolsJsRuntime].  -->  
+This command completes a JavaScript CPU profiling session and displays the results in the **Memory** tool.  You must be running the [profile()](#profile) method.  <!--Navigate to [Speed Up JavaScript Runtime][DevtoolsRenderingToolsJsRuntime].  -->  
+
+### Console example  
 
 1.  Run the [profile()](#profile) method to start profiling.  
 1.  Run the `profileEnd()` method to stop profiling and display the results in the **Memory** tool.  
@@ -495,13 +599,19 @@ The result appears as a Heap Snapshot in the **Memory** tool.
 > [!NOTE]
 > Multiple CPU profiles may operate at the same time and you are not required to close-out each one in creation order.  
 
+---  
+
 ## queryObjects  
+
+### Console syntax  
 
 ```console
 queryObjects(Constructor)
 ```  
 
-Return an array of objects created with the specified constructor.  The scope of `queryObjects()` is the currently chosen runtime context in the console.
+This command returns an array of objects created with the specified constructor.  The scope of `queryObjects()` is the currently chosen runtime context in the **Console**.  
+
+### Console example  
 
 :::row:::
    :::column span="1":::
@@ -531,11 +641,17 @@ Return an array of objects created with the specified constructor.  The scope of
 
 ## table  
 
+### Console syntax  
+
 ```console
 table(data[, columns])
 ```  
 
-Logs object data with table formatting based upon the data object in with optional column headings.  In the following code sample and figure, a list of names using a table in the console is displayed.  
+This command logs object data with table formatting based upon the data object in with optional column headings.  
+
+### Console example  
+
+In the following code sample and figure, a list of names using a table in the console is displayed.  
 
 ```console
 var names = {
@@ -555,37 +671,57 @@ table(names);
    The result of the `table()` method  
 :::image-end:::  
 
+---  
+
 ## undebug  
+
+### Console syntax  
 
 ```console
 undebug(method)
 ```  
 
-Stops the debug of the specified method. So when the method is requested, the debugger is no longer invoked.  
+This command stops the debug of the specified method. So when the method is requested, the debugger is no longer invoked.  
+
+### Console example  
 
 ```console
 undebug(getData);
 ```  
 
+---  
+
 ## unmonitor  
+
+### Console syntax  
 
 ```console
 unmonitor(method)
 ```  
 
-Stops the monitoring of the specified method.  This method is used in concert with the [monitor()](#monitor) method.  
+This command stops the monitoring of the specified method.  This method is used in concert with the [monitor()](#monitor) method.  
+
+### Console example  
 
 ```console
 unmonitor(getData);
 ```  
 
+---  
+
 ## unmonitorEvents  
+
+### Console syntax  
 
 ```console
 unmonitorEvents(object[, events])
 ```  
 
-Stops monitoring events for the specified object and events.  For example, the following code snippet stops all event monitoring on the window object.  
+This command stops monitoring events for the specified object and events.  
+
+### Console example  
+
+For example, the following code snippet stops all event monitoring on the window object.  
 
 ```console
 unmonitorEvents(window);
@@ -598,17 +734,25 @@ monitorEvents($0, "mouse");
 unmonitorEvents($0, "mousemove");
 ```  
 
+---  
+
 ## values  
+
+### Console syntax  
 
 ```console
 values(object)
 ```  
 
-Returns an array containing the values of all properties belonging to the specified object.  
+This command returns an array containing the values of all properties belonging to the specified object.  
+
+### Console example  
 
 ```console
 values(object);
 ```  
+
+---  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

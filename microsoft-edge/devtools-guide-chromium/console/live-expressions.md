@@ -3,18 +3,18 @@ description: If you find yourself typing the same JavaScript expressions into th
 title: Watch JavaScript expression values in real time with Live Expressions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/09/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-# Monitor changes in JavaScript using Live Expressions
+# Monitor changes in JavaScript using Live Expressions  
 
-**Live Expressions** are an excellent way to monitor JavaScript expressions that change a lot.  Instead of having many Console messages to read and navigate you may pin each to the top of the **Console**.
+**Live Expressions** are an excellent way to monitor JavaScript expressions that change a lot.    Instead of having many Console messages to read and navigate, you may pin your specific JavaScript expressions to the top of the **Console**.  
 
-## Add a new live expression
+## Add a new live expression  
 
-To start, choose the **Create new live expression** \(the eye\) button next to the **Filter** textbox.  After you choose it, a textbox is displayed for you to enter your new expression in it.
+To start, choose the **Create live expression** \(eye\) button next to the **Filter** textbox.  After you choose it, a textbox is displayed for you to enter your new expression in it.  
 
 :::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="Choose the New live expression button to open a textbox to type an expression" lightbox="../media/console-live-expressions-new.msft.png":::
     Choose the `New live expression` button to open a textbox to type an expression  
@@ -40,7 +40,7 @@ If you now navigate around the webpage, the value changes.  For example, in the 
     To change the value of the live expression, interact with different elements on the webpage  
 :::image-end:::  
 
-To change the value again, turn on the search box.
+To change the value again, open and choose the Search box on the webpage.  
 
 :::image type="complex" source="../media/console-live-expressions-document-active-element-search.msft.png" alt-text="Navigate to a different element in the webpage to updatee the live expression" lightbox="../media/console-live-expressions-document-active-element-search.msft.png":::
     Navigate to a different element in the webpage to update the live expression  
