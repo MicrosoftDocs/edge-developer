@@ -3,7 +3,7 @@ description: JavaScript errors are reported by developer tools and debug each in
 title: Tracking down errors using the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/12/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -40,7 +40,8 @@ The table displays `loading`, but nothing changes on the webpage because the dat
 *   A network error that starts with `GET` HTTP method followed by a URI.  
 *   An `Uncaught (in promise) TypeError: data.forEach is not a function` error.  
     
-If you choose the `network-error.html:40` link in the **Console**, DevTools takes you to the **Sources** tool.  Activate the **error** \(`x`\) button to display the error information.  The problematic line of code that is highlighted and followed by an **error** \(`x`\) button.  To display the `Failed to load resource: the server responded with a status of 404 ()` error message, choose the **error** \(`x`\) button.  
+If you choose the `network-error.html:40` link in the **Console**, DevTools takes you to the **Sources** tool.  The problematic line of code is highlighted and followed by an `error` \(`x`\) button.  To display the `Failed to load resource: the server responded with a status of 404 ()` error message, choose the **error** \(`x`\) button.  
+
 
 :::row:::
    :::column span="":::
@@ -103,7 +104,7 @@ The following code snippet catches and reports errors using the `handleErrors` m
 ```javascript
 const handleErrors = (response) => {
     if (!response.ok) {
-        let message = 'The information was not loaded'
+        let message = 'Could not load the information'
         document.querySelector('tbody').innerHTML = `
         <tr><td colspan=3>Error ${message}</td></tr>
         `;

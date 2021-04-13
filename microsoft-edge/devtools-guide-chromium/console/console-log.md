@@ -3,7 +3,7 @@ description: How to log messages and run JavaScript in the Microsoft Edge DevToo
 title: Log messages in the Console tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/12/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -14,7 +14,7 @@ Ever since browsers started to offer developer tools, the **Console** is a favor
 
 *   In most programming courses, you learn to output some kind of print command to gain insights about what happens.  
 
-In JavaScript and before, you had DevTools such as an `alert()` or a `document.write()` statement.  Neither statement resulted in a satisfying experience.  
+Before the DevTools, you were limited to an `alert()` or `document.write()` statement to debug in the browser.  
 
 If you want to log information in the **Console**, lots of methods are available to you.  Review all of available methods in the [API reference][DevtoolsConsoleApi].  The following code snippet lists the most important methods.  
 
@@ -180,7 +180,9 @@ console.table(bodyDimensions);
    Display data with `console.table` to make it much easier to read
 :::image-end:::  
 
-The output of `console.table` has a table format not only when it displays in the **Console**.  For example, copy and paste a table in Excel, Word, or any other products that support tabular data.  
+The output of `console.table` has a table format not only when it displays in the **Console**.    For example, if you copy and paste a table into Excel, Word, or any other product that supports tabular data, the structure remains intact.  
+
+<!--  The output of `console.table` has a table format not only when it displays in the **Console**.  For example, copy and paste a table in Excel, Word, or any other products that support tabular data.  -->  
 
 If the data has named parameters, the `console.table()` method also allows you to specify an `Array` of columns for each property to display as a second parameter.  The following example displays how to specify an array of columns that is more readable.  
 

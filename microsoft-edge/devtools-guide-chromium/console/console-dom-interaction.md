@@ -3,7 +3,7 @@ description: An overview how to interact with the current webpage in the browser
 title: Use the Console to interact with the DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/12/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -81,7 +81,7 @@ To change the text of the link to `My Playground`, add `.textContent = "My Playg
     Use the **Console** to change the content of an element  
 :::image-end:::  
 
-Use any JavaScript DOM manipulations you want to do in the **Console**.  To make it more convenient, the **Console** comes with a few helper methods to make it easier.
+Use any JavaScript DOM manipulations you want to do in the **Console**.  To make it more convenient, the **Console** comes with a few helper methods.  
 
 ## Helpful Console utility methods  
 
