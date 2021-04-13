@@ -285,79 +285,75 @@ State simulation is also a good way to check if you considered different user ne
 
 Another consideration when it comes to color accessibility is that there could be different themes you need to test for contrast issue. Most operating systems these days come with a dark and a light mode and you can react to this setting in your CSS using a media query.
 
+This page also has a light and a dark theme and you can test them without having to change your operating system by using the [Preferred Color Scheme Simulation][DevToolsColorSchemeSimulation] in the `Rendering` tool. So far, this article looked at the demo page with an OS using a dark theme setting. If we simulate a light scheme and reload the document, the **Issues** panel shows 6 color contrast problems instead of 2.
 
+:::row:::
+    :::column:::
+        :::image type="complex" source="../media/xxx.png" alt-text="***ALT***" lightbox="../media/xxx.png":::
+            ***ALT***  
+        :::image-end:::
+    :::column-end:::
+    :::column:::
+        :::image type="complex" source="../media/xxx.png" alt-text="***ALT***" lightbox="../media/xxx.png":::
+            ***ALT***  
+        :::image-end:::
+    :::column-end:::
+:::row-end:::
 
+In essence, the whole "Donation status" section of the page is unreadable in light mode and needs to change. But this is only one of the issues with that part of the design. 
 
+:::image type="complex" source="../media/xxx.png" alt-text="***ALT***" lightbox="../media/xxx.png":::
+    ***ALT***  
+:::image-end:::
 
-To better meet the needs of your users with [color vision deficiency][ColorblindawarenessMain] \(color blindness\), [Microsoft Edge DevTools][DevtoolsIndex] allow you to simulate specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories.  
+The different donation states use color (red, green, yellow) as the only means to differenciate between the states of funding. You can't expect all of your users to experience these colors as intended though. If you use the [vision deficiencies emulation][DevToolsVisionDeficiencies] feature of DevTools you can find out that this is not good enough as you can simulate how people with different vision would perceive your design.
 
-| Color vision deficiency | Details |  
-|:--- |:--- |  
-| Blurred vision | The user has difficulty focusing on fine details. |  
-| Protanopia | The user is unable to perceive any red light. |  
-| Deuteranopia | The user is unable to perceive any green light. |  
-| Tritanopia | The user is unable to perceive any blue light. |  
-| Achromatopsia | The user is unable to perceive any color, which reduces all color to a shade of grey. |  
+:::row:::
+    :::column:::
+        :::image type="complex" source="../media/xxx.png" alt-text="***ALT***" lightbox="../media/xxx.png":::
+            ***ALT***  
+        :::image-end:::
+    :::column-end:::
+    :::column:::
+        :::image type="complex" source="../media/xxx.png" alt-text="***ALT***" lightbox="../media/xxx.png":::
+            ***ALT***  
+        :::image-end:::
+    :::column-end:::
+:::row-end:::
 
-Navigate to the Rendering Tools  
+Another interesting feature of this tool is that you can simulate blurred vision. If we choose this option from the tool we can see that the drop shadow on the text in the upper menu makes it really hard to read the menu items.
 
-To simulate a vision deficiency being applied for your web product, open the [Rendering Tools][DevtoolsRenderingToolsIndex].  
+:::image type="complex" source="../media/xxx.png" alt-text="***ALT***" lightbox="../media/xxx.png":::
+    ***ALT***  
+:::image-end:::
 
-1.  To open the Rendering Tools, choose the `...` menu item in the toolbar  
-1.  Choose **More tools**  
-1.  Choose **Rendering**  
-    
-    :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
-       Opening the **Rendering Tools**  
-    :::image-end:::  
+Another setting that operating systems come with these days are a way to turn off animations. Animations can help the usability of a product but they can also cause a lot of problems ranging from confusion to nausea. That's why your products should not show animations to those that turned them off in their operating systems. You can check in CSS with a media query if users want to see animations and turn them off accordingly. And, much like with dark and light mode, there is a way to [simulate reduced motion using DevTools][DevToolsReducedMotion]. 
 
-The **Rendering** menu appears in the drawer.  
+In the demo page here, turning off animations will stop the smooth scrolling of the document when you select different parts of the menu. This is achieved by wrapping the smooth scrolling setting in CSS in a media query:
 
-1.  Scroll down to the `Emulate vision deficiencies` menu item and choose the drop-down menu to display the options.  
-    
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="The Emulate Vision Deficiencies menu on the Rendering drawer" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
-       The **Emulate vision deficiencies** menu on the **Rendering** drawer  
-    :::image-end:::  
-    
-1.  Choose an option.  
-    
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu-options.msft.png" alt-text="The Emulate Vision Deficiencies menu options" lightbox="../media/accessibility-emulate-vision-menu-options.msft.png":::
-       The **Emulate vision deficiencies** menu options  
-    :::image-end:::  
-    
-1.  The main windows displays the simulation of your chosen option applied to the current page.  
-    
-    :::row:::
-       :::column span="":::
-          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Display using **Blurred Vision** simulation" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
-             Display using **Blurred Vision** simulation  
-          :::image-end:::  
-       :::column-end:::
-       :::column span="":::
-          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Display using **Achromatopsia** simulation" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
-             Display using **Achromatopsia** simulation 
-          :::image-end:::  
-       :::column-end:::
-    :::row-end:::
-    
-Use the Command Menu  
+:::image type="complex" source="../media/xxx.png" alt-text="***ALT***" lightbox="../media/xxx.png":::
+    ***ALT***  
+:::image-end:::
 
-You may also use **Command Menu** to access the different simulations.  
+The animation of the menu items, the `More` links and the headers of each section do still show up even when the user doesn't want to see animations. So this is yet another thing that needs to be fixed.
 
-1.  Select `Control`+`Shift`+`P` \(Windows/Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
-    
-    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="The Command Menu" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-       The **Command Menu**  
-    :::image-end:::  
-    
-1.  Type `emulate`, choose what you want to simulate and choose `Enter`.  
-    
-    :::image type="complex" source="../media/accessibility-emulation-command-menu-results.msft.png" alt-text="The different simulation options available in the Command Menu" lightbox="../media/accessibility-emulation-command-menu-results.msft.png":::
-       The different simulation options available in the **Command Menu**  
-    :::image-end:::  
-    
-> [!IMPORTANT]
-> The **Emulate vision deficiencies** tools simulate approximations of how a person with each deficiency may see your product.  Each person is different, therefore vision deficiencies vary in severity from person to person.  To better meet the needs of your users, avoid any color combination that may be an issue.  The **Emulate vision deficiencies** tools are not a full accessibility assessment of your product.  Instead, the **Emulate vision deficiencies** tools should  give you a good first step to avoid problems.  
+## What to do next?
+
+We've covered quite a few tools you can use to make sure that you catch accessibility problems in your products ranging from automated checks, detail checks and simulation of different states and environments. We also covered the fact that automated tools can't find all the problems in a product as many of the accessibility barriers show up in interaction. 
+
+None of these tools can replace a proper testing round of your products with people using assistive technologies and following a plan to check for all the required tests. At Microsoft we're using the [Assessments][AccessibilityInsightsAssessment] feature of [Accessibility Insights][AccessibilityInsights] for that and we have a fixed process that each product needs to go through before it ends up in the hands of end users. There are many more checks that are needed, like zooming in to the web product, testing it with screenreaders, voice recognition and in high contrast mode. 
+
+That said, we hope that the tools and processes shown here are a way to get you started and avoid the most obvious mistakes. Another excellent way to find out that you are doing things wrong while you develop them is to use the [webhint extension for Visual Studio Code][WebhintForCode] extension in Visual Studio Code. This one flags up obvious accessibility problems in your source code and gives insights how to fix them.
+
+:::image type="complex" source="../media/xxx.png" alt-text="***ALT***" lightbox="../media/xxx.png":::
+    ***ALT***  
+:::image-end:::
+
+We're constantly working on new accessibility features for DevTools. If there is anything you are missing, send us a message and tell us what we can do.
+
+## Getting in touch with the Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
@@ -365,5 +361,12 @@ You may also use **Command Menu** to access the different simulations.
 [W3CContrastRatio]: https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio
 [WCAG]: https://www.w3.org/TR/WCAG21/
 [DevToolsIssuesPanel]: ../issues/index.md
+[AccessibilityInsightsAssessment]: https://accessibilityinsights.io/docs/en/web/getstarted/assessment/
 [AccessibilityInsights]: https://accessibility-insights.io
 [Lighthouse]: https://developers.google.com/web/tools/lighthouse/ 
+[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md
+[DevToolsVisionDeficiencies]: ./emulate-vision-deficiencies.md
+[DevToolsReducedMotion]: ./reduced-motion-simulation.md
+[WebhintForCode]:https://aka.ms/webhint4code
+
+
