@@ -3,7 +3,7 @@ description: A comprehensive reference for every feature and behavior of the Con
 title: Console reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/12/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

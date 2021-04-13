@@ -3,7 +3,7 @@ description: An introduction to using the Console tool inside the Microsoft Edge
 title: The Console as a JavaScript environment
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/12/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, JavaScript, web development, f12 tools, devtools

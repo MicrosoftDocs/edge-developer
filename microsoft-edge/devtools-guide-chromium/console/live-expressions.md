@@ -3,7 +3,7 @@ description: If you find yourself typing the same JavaScript expressions into th
 title: Watch JavaScript expression values in real time with Live Expressions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/12/2021
+ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -48,7 +48,7 @@ To change the value again, open and choose the Search textbox on the webpage.
 
 ## Remove Live Expressions  
 
-**Live Expressions** are available as long as you keep it active.  To get rid of a **Live Expression**, choose the `x` next to it.
+A **Live Expression** is available as long as you keep it active.  To get rid of a **Live Expression**, choose the `x` next to it.  
 
 :::image type="complex" source="../media/console-live-expressions-remove.msft.png" alt-text="To remove Live Expressions, choose the x next to it" lightbox="../media/console-live-expressions-remove.msft.png":::
     To remove **Live Expressions**, choose the `x` next to it  
@@ -64,7 +64,7 @@ For example, you want to monitor the mouse movement in the current webpage.  Nav
     **Console** displays much information on mouse position  
 :::image-end:::  
 
-It not only slows your debug process, but also makes it easy to miss the changes you want to review.  As the **Console** displays more messages and you move your mouse, the values you want to review scroll off the screen.  
+The large amount of information not only slows your debug process, but also makes it easy to miss the changes you want to review.  As the **Console** displays more messages and you move your mouse, the values you want to review scroll off the screen.  
 
 To try **Live Expressions** as an alternative, complete the following actions.  
 
