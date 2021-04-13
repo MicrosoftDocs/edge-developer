@@ -3,7 +3,7 @@ description: Learn about automatic updates to extensions in Microsoft Edge
 title: Auto-update extensions in Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/17/2021
+ms.date: 04/12/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
@@ -23,20 +23,20 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
    limitations under the License.  -->  
 # Auto-update extensions in Microsoft Edge  
 
-Automatically updating extensions share some of the same benefits as automatically updating Microsoft Edge:   
+Automatically updating extensions share some of the same following benefits as automatically updating Microsoft Edge.  
 
 *   Incorporate bug and security fixes.  
 *   Add new features or performance enhancements.  
 *   Improve the user interface.  
 
-Previously when non-store based extensions were supported, it was possible to update the native binaries and the extension at the same time.  Now, those extensions are hosted in the Microsoft Edge Add-ons store and updates are made using the same mechanism that Microsoft Edge uses, which you can't control.  You should be careful when updating extensions that have a dependency on native binaries.  
+Previously when non-store based extensions were supported, it was possible to update the native binaries and the extension at the same time.  Now, those extensions are hosted in the Microsoft Edge Add-ons store and updates are made using the same mechanism that Microsoft Edge uses, which you can't control.  You should be careful when you update extensions that have a dependency on native binaries.  
 
 > [!NOTE]
-> This topic does not apply to extensions published using the [Partner Center][MicrosoftPartnerCenter] dashboard.  You may use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons store. Refer to [UpdateYourExtension] for details. 
+> This article does not apply to extensions that you publish using the [Partner Center][MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd] dashboard.  You may use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons store.  For more information, navigate to [Update or remove your extension][ExtensionsPublishUpdateExtension].  
 
 ## Overview  
 
-Every few hours, Microsoft Edge checks whether each installed extension or app has an update URL.  Extensions can specify an update URL using the `update_url` field in the manifest, which points to a location to perform an update check.  For each `update_url`, it sends requests for updated manifest XML files.  If the update manifest XML file lists a newer version than that installed, Microsoft Edge downloads and installs the newer version.  The same process works for manual updates, where the new `.crx` file must be signed with the same private key as the currently installed version.  
+Every few hours, Microsoft Edge checks whether each installed extension or app has an update URL.  To specify an update URL for you extension, use the `update_url` field in the manifest.  The `update_url` field in the manifest points to a location to perform an update check.  For each `update_url`, it sends requests for updated manifest XML files.  If the update manifest XML file lists a newer version than that installed, Microsoft Edge downloads and installs the newer version.  The same process works for manual updates, where the new `.crx` file must be signed with the same private key as the currently installed version.  
 
 > [!NOTE]
 > In order to maintain user privacy, Microsoft Edge does not send any `Cookie` headers with auto-update manifest requests, and ignores any `Set-Cookie` headers in the responses to those requests.  
@@ -87,14 +87,28 @@ The basic auto-update mechanism is as easy as dropping a static XML file onto an
 
 You may take advantage of the fact that parameters are added to the update manifest request that indicate the extension ID and version. You can use the same update URL for all your extensions instead of a static XML file.  To use the same update URL for all your extensions, point to a URL that runs dynamic server-side code to test these parameters.  
 
-The following example demonstrates the format of the request parameters of update URL: `?x={extension_data}`.
+The following example demonstrates the format of the request parameters of update URL.  
 
-In this example, `{extension_data}` is a URL-encoded string that uses the following format: `id={id}&v={version}`.
+```url
+?x={extension_data}
+```  
+
+In this example, `{extension_data}` is a URL-encoded string that uses the following format.  
+
+```url
+id={id}&v={version}
+```  
 
 For example, the following two extensions both point to the same update URL `http://contoso.com/extension_updates.php`.  
 
-*  Extension 1 - ID: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" Version: "1.1"
-*  Extension 2 - ID: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb" Version: "0.4"
+*   Extension 1  
+    *   ID: `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`  
+    *   update URL: `http://contoso.com/extension_updates.php`
+    *   Version: `1.1`  
+*   Extension 2  
+    *   ID: `bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb`  
+    *   update URL: `http://contoso.com/extension_updates.php`
+    *   Version: `0.4`  
 
 
 The following are the requests to update each extension.  
@@ -133,12 +147,13 @@ As new APIs release for the Microsoft Edge extensions system, you may release an
 
 <!-- links -->  
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  
-[UpdateYourExtension]: https://docs.microsoft.com/microsoft-edge/extensions-chromium/publish/update-extension "Update your extension"  
+[ExtensionsPublishUpdateExtension]: ../publish/update-extension.md "Update or remove your extension | Microsoft Docs"  
+
+[MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developer.chrome.com/docs/apps/autoupdate/).  
+> The original page is found [here](https://developer.chrome.com/docs/apps/autoupdate).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
