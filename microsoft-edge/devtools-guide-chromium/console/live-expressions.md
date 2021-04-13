@@ -34,21 +34,21 @@ The expression is now live and displays `body` as the result.
     Live expression for `document.activeElement` displays body as the result  
 :::image-end:::  
 
-If you now navigate around the webpage, the value changes.  For example, in the following figure you open the search menu in the webpage and our expression now displays `button.nav-bar-button.focus-visible` as the value.  
+If you navigate around the webpage, the value changes.  For example, in the following figure you open the search menu in the webpage and the expression now displays `button.nav-bar-button.focus-visible` as the value.  
 
-:::image type="complex" source="../media/console-live-expressions-document-active-element-nav-button.msft.png" alt-text="To change the value of the live expression, interact with different elements on the webpage" lightbox="../media/console-live-expressions-document-active-element-nav-button.msft.png":::
-    To change the value of the live expression, interact with different elements on the webpage  
+:::image type="complex" source="../media/console-live-expressions-document-active-element-nav-button.msft.png" alt-text="To change the value of the Live Expression, interact with different elements on the webpage" lightbox="../media/console-live-expressions-document-active-element-nav-button.msft.png":::
+    To change the value of the **Live Expression**, interact with different elements on the webpage  
 :::image-end:::  
 
-To change the value again, open and choose the Search box on the webpage.  
+To change the value again, open and choose the Search textbox on the webpage.  
 
-:::image type="complex" source="../media/console-live-expressions-document-active-element-search.msft.png" alt-text="Navigate to a different element in the webpage to updatee the live expression" lightbox="../media/console-live-expressions-document-active-element-search.msft.png":::
-    Navigate to a different element in the webpage to update the live expression  
+:::image type="complex" source="../media/console-live-expressions-document-active-element-search.msft.png" alt-text="Navigate to a different element in the webpage to update the Live Expression" lightbox="../media/console-live-expressions-document-active-element-search.msft.png":::
+    Navigate to a different element in the webpage to update the **Live Expression**  
 :::image-end:::  
 
 ## Remove Live Expressions  
 
-**Live Expressions** are available for as long as you keep each active.  To get rid of a live expression, choose the `x` next to it.
+**Live Expressions** are available as long as you keep it active.  To get rid of a **Live Expression**, choose the `x` next to it.
 
 :::image type="complex" source="../media/console-live-expressions-remove.msft.png" alt-text="To remove Live Expressions, choose the x next to it" lightbox="../media/console-live-expressions-remove.msft.png":::
     To remove **Live Expressions**, choose the `x` next to it  
