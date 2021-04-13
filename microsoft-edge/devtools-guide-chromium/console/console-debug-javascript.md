@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Debug errors reported in Console  
 
-The first experience you have with the **Console** is probably an error in a script.  To try it, navigate to [JavaScript error messaging in Console tool][GithubMicrosoftedgeDevtoolssamplesConsoleErrorHtml].  
+The first experience you have with the **Console** is probably an error in a script.  To try it, navigate to [JavaScript error reported in the Console tool][GithubMicrosoftedgeDevtoolssamplesConsoleErrorHtml].  
 
 If you open DevTools in the browser, a button on the top right displays an error for the webpage.  
 Choose the button to take you to the **Console** and give you more information about the error.  
@@ -29,7 +29,7 @@ The script tries to get the first `h2` element in the document and paint a red b
 
 ## Find and debug network issues  
 
-Other errors that the **Console** reports are network errors.  Navigate to the [Network Error Example][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorHtml] to display that in action.  
+Other errors that the **Console** reports are network errors.  To display it in action, navigate to the [Network error reported in Console][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorHtml].  
 
 :::image type="complex" source="../media/console-debug-network-error.msft.png" alt-text="Console displays a Network and a JavaScript error" lightbox="../media/console-debug-network-error.msft.png":::
    **Console** displays a Network and a JavaScript error  
@@ -83,15 +83,13 @@ What was the problem?  Two slash characters \(`//`\) occur in the requested URI 
    The **Sources** tool displays the line of code with the error  
 :::image-end:::  
 
-Navigate to the fixed example of the [JavaScript error messaging in Console tool][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorFixedHtml] and review that no errors occur in the **Console**.  
+To review no errors in the **Console**, navigate to [Fixed network error reported in Console][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorFixedHtml].  
 
 :::image type="complex" source="../media/console-debug-network-error-fixed.msft.png" alt-text="The example without any errors loads information from GitHub and displays it" lightbox="../media/console-debug-network-error-fixed.msft.png":::
    The example without any errors loads information from GitHub and displays it  
 :::image-end:::  
 
-Ensure you provide defensive coding techniques to avoid the previous user experiences.  Also, ensure your code catches errors and display each in the **Console**.  Navigate to the error reported example of the [JavaScript error messaging in Console tool][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorReportedHtml] and review the following items.  
-
-Navigate to the network-error-reported.html example file of the [JavaScript error messaging in Console tool][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorReportedHtml] and review the following items.
+Ensure you provide defensive coding techniques to avoid the previous user experiences.  Also, ensure your code catches errors and display each in the **Console**.  Navigate to [Network error reporting in Console and UI][GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorReportedHtml] and review the following items.  
 
 *   Provide UI to the user that something went wrong.  
 *   In the **Console**, provide helpful information about the Network error from your code.  
@@ -118,7 +116,7 @@ const handleErrors = (response) => {
 ## Create errors and traces in the Console
 
 Besides the `throw Error` example in the previous section, you may also create different errors and trace problems in the **Console**.  
-If you navigate to the [create errors and assertions][GithubMicrosoftedgeDevtoolssamplesConsoleErrorAssertHtml] example, you may display two created error messages in the **Console**.  
+To display two created error messages in the **Console**, navigate to [Creating error reports and assertions in Console][GithubMicrosoftedgeDevtoolssamplesConsoleErrorAssertHtml].  
 
 :::image type="complex" source="../media/console-debug-error-assert.msft.png" alt-text="Error messages created from Console" lightbox="../media/console-debug-error-assert.msft.png":::
    Error messages created from **Console**  
@@ -167,7 +165,7 @@ console.assert(x >= 40, `${x} is too small`)
 > [!IMPORTANT]
 > The second and third lines of the code perform the same test.  Because the assertion needs to record a negative result, you test for `x < 40` in the `if` case and `x >= 40` for the assertion.  
 
-If you aren't sure which function requests another function, use the `console.trace()` method to track which functions are requested to get to the current one.  To display the trace in the **Console**, navigate to [create traces example][GithubMicrosoftedgeDevtoolssamplesConsoleTrace].  
+If you aren't sure which function requests another function, use the `console.trace()` method to track which functions are requested to get to the current one.  To display the trace in the **Console**, navigate to [Creating traces in Console][GithubMicrosoftedgeDevtoolssamplesConsoleTraceHtml].  
 
 ```javascript
 function here() {there()}
