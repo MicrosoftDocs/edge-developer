@@ -24,7 +24,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Sources tool overview  
 
-Use the **Sources** tool to view, modify, and debug front-end JavaScript code, and to inspect the resources that make up the current webpage.  The Sources tool has three panes:
+Use the **Sources** tool to view, modify, and debug front-end JavaScript code, and to inspect the resources that make up the current webpage.  The Sources tool has three panes:  
 
 | Pane | Actions |
 |---|---|
