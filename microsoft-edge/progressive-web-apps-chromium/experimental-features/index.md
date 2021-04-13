@@ -88,7 +88,7 @@ Update your manifest to support the protocol that you want to register.  After y
     
 If more than one app registers a protocol, the user is presented with a prompt.  The user chooses the appropriate app from the list presented by the OS or browser.  
 
-To preview protocol handling in Microsoft Edge on Windows, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop Web Apps support Protocol Handlers**.  
+To preview protocol handling in Microsoft Edge on Windows, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWA Protocol handling**.  
 
 For more information about origin trial is running for protocol handlers, navigate to [Register for Web App Protocol Handler Registration][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].  
 
