@@ -191,9 +191,9 @@ The result is a trace to display that `here()` is named `there()` and then `ever
 
 <!-- links -->  
 
-[GithubMicrosoftedgeDevtoolssamplesConsoleErrorHtml]: https://microsoftedge.github.io/DevToolsSamples/console/error.html "JavaScript error messaging in Console tool | GitHub"  
-[GithubMicrosoftedgeDevtoolssamplesConsoleErrorAssertHtml]: https://microsoftedge.github.io/DevToolsSamples/console/error-assert.html "JavaScript error and trace creation in the Console tool | GitHub"  
-[GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorHtml]: https://microsoftedge.github.io/DevToolsSamples/console/network-error.html "JavaScript error messaging in Console tool | GitHub"  
-[GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorFixedHtml]: https://microsoftedge.github.io/DevToolsSamples/console/network-error-fixed.html "JavaScript error messaging in Console tool | GitHub"  
-[GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorReportedHtml]: https://microsoftedge.github.io/DevToolsSamples/console/network-error-reported.html "JavaScript error messaging in Console tool | GitHub"  
-[GithubMicrosoftedgeDevtoolssamplesConsoleTrace]: https://microsoftedge.github.io/DevToolsSamples/console/trace.html "JavaScript error and trace creation in the Console tool | GitHub"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleErrorHtml]: https://microsoftedge.github.io/DevToolsSamples/console/error.html "JavaScript error reported in the Console tool | GitHub"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleErrorAssertHtml]: https://microsoftedge.github.io/DevToolsSamples/console/error-assert.html "Creating error reports and assertions in Console | GitHub"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorHtml]: https://microsoftedge.github.io/DevToolsSamples/console/network-error.html "Network error reported in Console | GitHub"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorFixedHtml]: https://microsoftedge.github.io/DevToolsSamples/console/network-error-fixed.html "Fixed network error reported in Console | GitHub"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorReportedHtml]: https://microsoftedge.github.io/DevToolsSamples/console/network-error-reported.html "Network error reporting in Console and UI | GitHub"  
+[GithubMicrosoftedgeDevtoolssamplesConsoleTraceHtml]: https://microsoftedge.github.io/DevToolsSamples/console/trace.html "Creating traces in Console | GitHub"  
