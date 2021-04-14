@@ -34,15 +34,11 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
 
 The following image shows the **Navigator** pane highlighted with a red box in the upper left corner of DevTools, the **Editor** pane highlighted in the upper right, and the **Debugger** pane highlighted on the bottom.  On the far left side is the main part of the browser window, showing the rendered webpage grayed-out because the debugger is paused on a breakpoint:
 
-<!-- upstream file not used directly: sources-panes-narrow-layout-no-highlight.msft.png -->
-
 :::image type="complex" source="../media/sources-panes-narrow-layout.msft.png" alt-text="The panes of the Sources tool, in narrow layout" lightbox="../media/sources-panes-narrow-layout.msft.png":::
    The panes of the Sources tool, in narrow layout  
 :::image-end:::  
 
 When DevTools is wide, the **Debugger** pane is placed on the right, including **Scope** and **Watch**:
-
-<!-- upstream file not used directly: sources-panes-wide-layout-no-highlight.msft.png -->
 
 :::image type="complex" source="../media/sources-panes-wide-layout.msft.png" alt-text="Navigate, view, edit, and debug JavaScript returned by the server" lightbox="../media/sources-panes-wide-layout.msft.png":::
    Navigate, view, edit, and debug JavaScript returned by the server  
