@@ -20,7 +20,7 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 
 Release Date: March 23, 2021  
 
-[NuGet package][NuGetGallery1.0.824-prerelease] \| Minimum Microsoft Edge version to load: 86.0.616.0 or newer \| Full API Compatibility: 91.0.824.0 or newer  
+[NuGet package][NuGetGallery1.0.824-prerelease] \| Minimum Microsoft Edge version to load: 86.0.616.0 or newer \| Full API Compatibility: 91.0.890.0 or newer  
 
 ### General  
 
@@ -33,9 +33,9 @@ Release Date: March 23, 2021
  
 #### Bug fixes  
 
-*   Fixes handling of CDP message with binary POST data in WebView2
-*   Disabled "Ask where to save each file before downloading" UI, due to links to edge:// settings page.\([\#1120][GithubMicrosoftedgeWebviewfeedbackIssue1120]\).
-*   Removed Micrsoft Edge branding from screen share dialouge. \([\#940][GithubMicrosoftedgeWebviewfeedbackIssue940]\).
+*   Fixed handling of CDP message with binary POST data in WebView2.
+*   Disabled "Ask where to save each file before downloading" UI, due to links to edge:// settings page.   \([\#1120][GithubMicrosoftedgeWebviewfeedbackIssue1120]\).
+*   Removed Micrsoft Edge branding from screen share dialouge.  \([\#940][GithubMicrosoftedgeWebviewfeedbackIssue940]\).
 *   Fixed a bug where using SetWindowDisplayAffinity to stop screen capture in an app using WebView2 would break WebView2.  \([\#841][GithubMicrosoftedgeWebviewfeedbackIssue841]\).
 *   Fixed a bug for composition hosting where mouse input would stop working if any pen input was sent to WebView2
  
@@ -43,12 +43,11 @@ Release Date: March 23, 2021
 
 #### Features  
 
-*   Added webview2 designer tool to WPF toolbox . \([\#210][GithubMicrosoftedgeWebviewfeedbackIssue210]\).  
+*   Added webview2 designer tool to WPF toolbox.  \([\#210][GithubMicrosoftedgeWebviewfeedbackIssue210]\).  
 
 #### Bug fixes  
 *   Improved COM Exception descriptions by by wrapping them into more detailed .NET exception. \([\#338][GithubMicrosoftedgeWebviewfeedbackIssue338]\).  - RT
-*   Fixed bug where shifting focus via tab caused webview2 control to crash when used in VSTO.
- \([\#589][GithubMicrosoftedgeWebviewfeedbackIssue589], [\#933][GithubMicrosoftedgeWebviewfeedbackIssue933]\).  - RT
+*   Fixed bug where shifting focus via tab caused webview2 control to crash when used in VSTO.  \([\#589][GithubMicrosoftedgeWebviewfeedbackIssue589], [\#933][GithubMicrosoftedgeWebviewfeedbackIssue933]\).  - RT
 *   Improved .NET framework loader down level to be more robust.  \([\#946][GithubMicrosoftedgeWebviewfeedbackIssue946]\).
 *   Fixed bug that caused crash when trying to reload before first navigation completed.  \([\#1011][GithubMicrosoftedgeWebviewfeedbackIssue1011]\).
 *   Fixed initialization so navigation can occur during CoreWebView2InitializationCompleted.  \([\#1050][GithubMicrosoftedgeWebviewfeedbackIssue1050]\).
@@ -70,8 +69,8 @@ Release Date: March 19, 2021
 
 *   The following experimental APIs are now promoted to Stable. 
     *   User Agent API.
-    *   AreBrowserAcceleratorKeysEnabled
-    *   Extended ProcessFailed
+    *   AreBrowserAcceleratorKeysEnabled.
+    *   Extended ProcessFailed.
 
 
 
