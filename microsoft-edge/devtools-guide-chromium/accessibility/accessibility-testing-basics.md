@@ -69,11 +69,20 @@ Furthermore you also find that two elements on the page don't have enough contra
 You get detailed explanations what that means and when you drill down you get a list of which elements they are. Activating the links pointing to the elements highlights 
 them in the document.
 
-:::image type="complex" source="../media/a11y-element-with-contrast-issues.msft.png" alt-text="Element in the document highlighted after activating the link to it" lightbox="../media/a11y-element-with-contrast-issues.msft.png":::
+:::image type="complex" source="../media/a11y-testing-element-with-contrast-issues.msft.png" alt-text="Element in the document highlighted after activating the link to it" lightbox="../media/a11y-testing-element-with-contrast-issues.msft.png":::
     Element in the document highlighted after activating the link to it  
 :::image-end:::
 
+You can also see that by simply resizing the window that the navigation menu of the page has some usability issues that need fixing.
+
+The DOM View of the **Elements** tool flags up issues directly in the HTML by adding a wavy underline. If you `Shift+Click` any element with an underline you get to the **Issues Panel**.
+
+:::image type="complex" source="../media/a11y-testing-wavy-underlines.msft.png" alt-text="Elements in the DOM view with wavy underlines have issues. You can Shift+Click them to get directly to the issue" lightbox="../media/a11y-testing-wavy-underlines.msft.png":::
+    Elements in the DOM view with wavy underlines have issues. You can Shift+Click them to get directly to the issue  
+:::image-end:::
+
 These are some very obvious accessibility problems that can be avoided. Using the **Issues Panel** and its guided explanations to fix them gets you on the way towards an accessible product.
+
 
 ## Limits of automated testing
 
@@ -173,8 +182,8 @@ Let's analyze the problems using DevTools.
 
 If you use the **Inspector** tool to highlight the menu and drill down in the HTML view to the `a` element you can start to find out why the in-page menu is confusing to keyboard users.
 
-:::image type="complex" source="../media/a11y-testing-menu-link.msft.png" alt-text="Inspecting the source code and the applied stules of a link in the menu" lightbox="../media/a11y-testing-menu-link.msft.png":::
-    Inspecting the source code and the applied stules of a link in the menu  
+:::image type="complex" source="../media/a11y-testing-menu-link.msft.png" alt-text="Inspecting the source code and the applied styles of a link in the menu" lightbox="../media/a11y-testing-menu-link.msft.png":::
+    Inspecting the source code and the applied styles of a link in the menu  
 :::image-end:::  
 
 You can see the CSS applied, and if you activate the link to the CSS file you open it in the **Sources** tool. 
@@ -227,7 +236,7 @@ The form's functionality is created with JavaScript and you can test this by che
 
 Using a `click` event to read the buttons is good practice as it fires both on pointer and keyboard interaction. However, as a `div` element isn't keyboard accessible this functionality never executes unless you use a pointer. This is a classic example where some extra JavaScript was necessary to create functionality that `button` elements would have provided natively and simulating their functionality ended up as an inaccessible experience.
 
-Using the **Inspector** to check each page element individually can become pretty time-consuming. An alternative way is to use the `Accessibility` tool to navigate the document's accessibiliy tree. This is a representation of what information about the current document assistive technology like screen readers get.
+Using the **Inspector** to check each page element individually can become pretty time-consuming. An alternative way is to use the `Accessibility` tool to navigate the document's accessibility tree. This is a representation of what information about the current document assistive technology like screen readers get.
 
 :::image type="complex" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="Donation form button in the accessibility tree tool" lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
     Donation form button in the accessibility tree tool  
