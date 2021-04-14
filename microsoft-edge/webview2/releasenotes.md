@@ -15,7 +15,70 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 
 > [!NOTE]
 > Ensure you re-compile your app after updating the NuGet package.  The WebView team recommends that you use the Canary channel when you develop using the prerelease packages, and the Evergreen WebView2 Runtime when you use the release packages.  For more information, navigate to [Versioning][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].  
- 
+
+## 1.0.890-prerelease  
+
+Release Date: March 8, 2021  
+
+[NuGet package][NuGetGallery1.0.824-prerelease] \| Minimum Microsoft Edge version to load: 86.0.616.0 or newer \| Full API Compatibility: 91.0.824.0 or newer  
+
+### General  
+
+#### Features  
+*   Added Pinch Zoom API, which allows end developers to disable or enable page scale zoom control via a setting.
+*   Added Custom Download API, which will enable developers to block downloads, save to a different path, and have access to the required metadata to build custom download UI.
+*   Added IFrame support from AddHostObjectToScripts.
+*   Added sample code for WPF sample app for using the API for disable browser function keys.
+*   Added GetAvailableCoreWebView2BrowserVersionString API, to more easily update the WebView2 Runtime.
+
+
+#### Bug fixes  
+
+*   Fixes handling of CDP message with binary POST data in WebView2
+*   Disabled "Ask where to save each file before downloading" UI, due to links to edge:// settings page.\([\#1120][GithubMicrosoftedgeWebviewfeedbackIssue568]\).
+*   Removed Micrsoft Edge branding from screen share dialouge. \([\#940][GithubMicrosoftedgeWebviewfeedbackIssue568]\).
+*   Fixed a bug where using SetWindowDisplayAffinity to stop screen capture in an app using WebView2 would break WebView2.  \([\#841][GithubMicrosoftedgeWebviewfeedbackIssue568]\).
+*   Fixed a bug for composition hosting where mouse input would stop working if any pen input was sent to WebView2
+
+
+### .NET  
+
+#### Features  
+
+*   Added webview2 designer tool to WPF toolbox . \([\#210][GithubMicrosoftedgeWebviewfeedbackIssue568]\).  
+
+#### Bug fixes  
+*   Improved COM Exception descriptions by by wrapping them into more detailed .NET exception. \([\#338][GithubMicrosoftedgeWebviewfeedbackIssue568]\).  - RT
+*   Fixed bug where shifting focus via tab caused webview2 control to crash when used in VSTO.
+ \([\#589][GithubMicrosoftedgeWebviewfeedbackIssue568], [\#933][GithubMicrosoftedgeWebviewfeedbackIssue568]\).  - RT
+*   Improved .NET framework loader down level to be more robust.  \([\#946][GithubMicrosoftedgeWebviewfeedbackIssue568]\).
+*   Fixed bug that caused crash when trying to reload before first navigation completed.  \([\#1011][GithubMicrosoftedgeWebviewfeedbackIssue568]\).
+*   Fixed initialization so navigation can occur during CoreWebView2InitializationCompleted.  \([\#1050][GithubMicrosoftedgeWebviewfeedbackIssue568]\).
+*   Improved .NET browser process crash error handling. Developer can now recreate control after handling ProcessFailed event without crash.  \([\#996][GithubMicrosoftedgeWebviewfeedbackIssue568]\).
+
+
+
+## 1.0.818  
+
+Release Date: March 8, 2021  
+
+[NuGet package][NuGetGallery1.0.774.44] \| Minimum Runtime version to load: 86.0.616.0 or newer \| Full API Compatibility: 89.0.774.44 or newer  
+
+### General  
+
+#### Features
+*   Improved WebView2 code to be more resilient to application exe files with malformatted version info.  \([\#850][GithubMicrosoftedgeWebviewfeedbackIssue568]\).
+*   Removed --winhttp-proxy-resolver from WebView browser process command line, enabling other proxy command line options for webview2. 
+
+#### Promotions  
+
+*   The following experimental APIs are now promoted to Stable. 
+    *   User Agent API.
+    *   AreBrowserAcceleratorKeysEnabled
+    *   Extended ProcessFailed
+
+
+
 ## 1.0.824-prerelease  
 
 Release Date: March 8, 2021  
@@ -81,7 +144,7 @@ Release Date: February 10, 2021
 > **Breaking Change**:  WebView2 pre-release package 1.0.781 is deprecated.  Discontinue development with package 1.0.781.  
 
 > [!IMPORTANT]
-> WebView2 pre-release package 0.9.430 is deprecated, and is removed with the next release.  If your WebView app uses the package, the WebView team recommends that you to a newer package.  
+> WebView2 pre-release package 0.9.430 is deprecated, and is removed with the next release.  If your WebView app uses the package, the WebView team recommends that you move to a newer package.  
 
 #### Features  
 
