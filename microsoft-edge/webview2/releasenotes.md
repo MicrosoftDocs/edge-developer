@@ -18,7 +18,7 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 
 ## 1.0.890-prerelease  
 
-Release Date: March 8, 2021  
+Release Date: March 23, 2021  
 
 [NuGet package][NuGetGallery1.0.824-prerelease] \| Minimum Microsoft Edge version to load: 86.0.616.0 or newer \| Full API Compatibility: 91.0.824.0 or newer  
 
@@ -30,44 +30,40 @@ Release Date: March 8, 2021
 *   Added IFrame support from AddHostObjectToScripts.
 *   Added sample code for WPF sample app for using the API for disable browser function keys.
 *   Added GetAvailableCoreWebView2BrowserVersionString API, to more easily update the WebView2 Runtime.
-
-
+ 
 #### Bug fixes  
 
 *   Fixes handling of CDP message with binary POST data in WebView2
-*   Disabled "Ask where to save each file before downloading" UI, due to links to edge:// settings page.\([\#1120][GithubMicrosoftedgeWebviewfeedbackIssue568]\).
-*   Removed Micrsoft Edge branding from screen share dialouge. \([\#940][GithubMicrosoftedgeWebviewfeedbackIssue568]\).
-*   Fixed a bug where using SetWindowDisplayAffinity to stop screen capture in an app using WebView2 would break WebView2.  \([\#841][GithubMicrosoftedgeWebviewfeedbackIssue568]\).
+*   Disabled "Ask where to save each file before downloading" UI, due to links to edge:// settings page.\([\#1120][GithubMicrosoftedgeWebviewfeedbackIssue1120]\).
+*   Removed Micrsoft Edge branding from screen share dialouge. \([\#940][GithubMicrosoftedgeWebviewfeedbackIssue940]\).
+*   Fixed a bug where using SetWindowDisplayAffinity to stop screen capture in an app using WebView2 would break WebView2.  \([\#841][GithubMicrosoftedgeWebviewfeedbackIssue841]\).
 *   Fixed a bug for composition hosting where mouse input would stop working if any pen input was sent to WebView2
-
-
+ 
 ### .NET  
 
 #### Features  
 
-*   Added webview2 designer tool to WPF toolbox . \([\#210][GithubMicrosoftedgeWebviewfeedbackIssue568]\).  
+*   Added webview2 designer tool to WPF toolbox . \([\#210][GithubMicrosoftedgeWebviewfeedbackIssue210]\).  
 
 #### Bug fixes  
-*   Improved COM Exception descriptions by by wrapping them into more detailed .NET exception. \([\#338][GithubMicrosoftedgeWebviewfeedbackIssue568]\).  - RT
+*   Improved COM Exception descriptions by by wrapping them into more detailed .NET exception. \([\#338][GithubMicrosoftedgeWebviewfeedbackIssue338]\).  - RT
 *   Fixed bug where shifting focus via tab caused webview2 control to crash when used in VSTO.
- \([\#589][GithubMicrosoftedgeWebviewfeedbackIssue568], [\#933][GithubMicrosoftedgeWebviewfeedbackIssue568]\).  - RT
-*   Improved .NET framework loader down level to be more robust.  \([\#946][GithubMicrosoftedgeWebviewfeedbackIssue568]\).
-*   Fixed bug that caused crash when trying to reload before first navigation completed.  \([\#1011][GithubMicrosoftedgeWebviewfeedbackIssue568]\).
-*   Fixed initialization so navigation can occur during CoreWebView2InitializationCompleted.  \([\#1050][GithubMicrosoftedgeWebviewfeedbackIssue568]\).
-*   Improved .NET browser process crash error handling. Developer can now recreate control after handling ProcessFailed event without crash.  \([\#996][GithubMicrosoftedgeWebviewfeedbackIssue568]\).
-
-
+ \([\#589][GithubMicrosoftedgeWebviewfeedbackIssue589], [\#933][GithubMicrosoftedgeWebviewfeedbackIssue933]\).  - RT
+*   Improved .NET framework loader down level to be more robust.  \([\#946][GithubMicrosoftedgeWebviewfeedbackIssue946]\).
+*   Fixed bug that caused crash when trying to reload before first navigation completed.  \([\#1011][GithubMicrosoftedgeWebviewfeedbackIssue1011]\).
+*   Fixed initialization so navigation can occur during CoreWebView2InitializationCompleted.  \([\#1050][GithubMicrosoftedgeWebviewfeedbackIssue1050]\).
+*   Improved .NET browser process crash error handling. Developer can now recreate control after handling ProcessFailed event without crash.  \([\#996][GithubMicrosoftedgeWebviewfeedbackIssue996]\).
 
 ## 1.0.818  
 
-Release Date: March 8, 2021  
+Release Date: March 19, 2021  
 
 [NuGet package][NuGetGallery1.0.774.44] \| Minimum Runtime version to load: 86.0.616.0 or newer \| Full API Compatibility: 89.0.774.44 or newer  
 
 ### General  
 
 #### Features
-*   Improved WebView2 code to be more resilient to application exe files with malformatted version info.  \([\#850][GithubMicrosoftedgeWebviewfeedbackIssue568]\).
+*   Improved WebView2 code to be more resilient to application exe files with malformatted version info.  \([\#850][GithubMicrosoftedgeWebviewfeedbackIssue850]\).
 *   Removed --winhttp-proxy-resolver from WebView browser process command line, enabling other proxy command line options for webview2. 
 
 #### Promotions  
@@ -769,6 +765,18 @@ Initial developer preview release.
 [GithubMicrosoftedgeWebviewfeedbackIssue851]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/851 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 851"  
 [GithubMicrosoftedgeWebviewfeedbackIssue875]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/875 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 875"  
 [GithubMicrosoftedgeWebviewfeedbackIssue878]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/878 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 878"  
+[GithubMicrosoftedgeWebviewfeedbackIssue1120]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1120 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1120" 
+[GithubMicrosoftedgeWebviewfeedbackIssue940]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/940 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 940" 
+[GithubMicrosoftedgeWebviewfeedbackIssue841]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/841 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 841" 
+[GithubMicrosoftedgeWebviewfeedbackIssue210]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/210 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 210" 
+[GithubMicrosoftedgeWebviewfeedbackIssue338]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/338 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 338" 
+[GithubMicrosoftedgeWebviewfeedbackIssue589]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/589 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 589" 
+[GithubMicrosoftedgeWebviewfeedbackIssue933]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/933 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 933" 
+[GithubMicrosoftedgeWebviewfeedbackIssue946]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/946 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 946" 
+[GithubMicrosoftedgeWebviewfeedbackIssue1011]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1011 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1011" 
+[GithubMicrosoftedgeWebviewfeedbackIssue1050]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1050 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1050" 
+[GithubMicrosoftedgeWebviewfeedbackIssue996]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/996 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 996"
+[GithubMicrosoftedgeWebviewfeedbackIssue850]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/850 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 850"
 
 [MicrosoftDevblogDotnetAnnouncingGeneralAvailabilityForMicrosoftEdgeWebview2ForNetFixedDistributionMethod]: https://devblogs.microsoft.com/dotnet/announcing-general-availability-for-microsoft-edge-webview2-for-net-and-fixed-distribution-method "Announcing General Availability for Microsoft Edge WebView2 for .NET and Fixed Distribution Method | .NET Blog"  
 
