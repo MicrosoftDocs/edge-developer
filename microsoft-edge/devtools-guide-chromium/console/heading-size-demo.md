@@ -32,6 +32,14 @@ This is a test sentence to demonstrate body text.
 
 This is a test sentence to demonstrate body text.
 
+## This is a test heading to demonstrate h2
+
+This is a test sentence to demonstrate body text.
+  
+### This is a test heading to demonstrate heading level h3
+
+This is a test sentence to demonstrate body text.  The problem is more evident where there's not the same text in the h2 and h3.
+
 ## Inspect animations
 
 This is a test sentence to demonstrate body text. h2
@@ -193,4 +201,8 @@ The below captures demonstrate that the Preview in Visual Studio Code shows a la
 
 :::image type="complex" source="../media/vscode-preview-rendering-of-heading-levels-actual-examples.png" alt-text="Preview rendering of heading levels in Visual Studio Code (actual heading examples)" lightbox="../media/vscode-preview-rendering-of-heading-levels-actual-examples.png":::
    Preview rendering of heading levels in Visual Studio Code (actual heading examples)  
+:::image-end:::  
+
+:::image type="complex" source="../media/vscode-preview-rendering-of-heading-levels-method-ref.png" alt-text="Preview rendering of heading levels in Visual Studio Code (method Reference headings)" lightbox="../media/vscode-preview-rendering-of-heading-levels-method-ref.png":::
+   Preview rendering of heading levels in Visual Studio Code (method Reference)  
 :::image-end:::  
