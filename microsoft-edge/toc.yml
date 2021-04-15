@@ -417,6 +417,8 @@
           href: webview2/releasenotes.md
         - name: Roadmap
           href: webview2/roadmap.md
+        - name: Resources, talks, videos, and blogs
+          href: webview2/resources.md
         - name: How to
           items:
             - name: Extended JavaScript scenarios in WebView2
