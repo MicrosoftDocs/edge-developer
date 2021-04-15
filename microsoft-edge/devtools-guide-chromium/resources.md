@@ -22,17 +22,13 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 [MS Build SK121 End-to-end web development with VS Code and Microsoft Edge](https://www.youtube.com/watch?v=EvbZ9svD3DA) on YouTube channel: Microsoft 365 Developer.  Length: 16:04.  
 
-## Getting in touch with the Microsoft Edge DevTools team  
-
-[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
-
 <!-- ## See also  
 
 *   [Resources, talks, videos, and blogs about Microsoft Edge WebView 2](../webview2/resources.md) -->
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
