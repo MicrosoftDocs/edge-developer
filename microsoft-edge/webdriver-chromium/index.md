@@ -30,14 +30,14 @@ To begin automating tests, use the following steps to ensure that the WebDriver 
 
 1.  To display the version of Microsoft Edge, navigate to `edge://settings/help`.  
     
-    :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="The build number for Microsoft Edge Canary on February 10, 2021" lightbox="./media/microsoft-edge-version.msft.png":::
-       The build number for Microsoft Edge Canary on February 10, 2021  
+    :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="The build number for Microsoft Edge on April 15, 2021" lightbox="./media/microsoft-edge-version.msft.png":::
+       The build number for Microsoft Edge on April 15, 2021  
     :::image-end:::  
     
-1.  Navigate to [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver], under the **Downloads** section, and download the WebDriver that matches the version number of Microsoft Edge.  
+1.  Navigate to the [Microsoft Edge Driver page][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver], under the **Get the latest version** section, and select the build of channel that matches the version number of Microsoft Edge.  
     
-    :::image type="complex" source="./media/microsoft-edge-driver-install.msft.png" alt-text="The Downloads section on Microsoft Edge Driver" lightbox="./media/microsoft-edge-driver-install.msft.png":::
-       The **Downloads** section on [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]  
+    :::image type="complex" source="./media/microsoft-edge-driver-install.msft.png" alt-text="The Get the latest version section on the Microsoft Edge Driver page" lightbox="./media/microsoft-edge-driver-install.msft.png":::
+       The **Get the latest version** section on the [Microsoft Edge Driver page][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]  
     :::image-end:::  
     
     <!--  
