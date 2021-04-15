@@ -20,6 +20,8 @@ This is a test sentence to demonstrate body text.
 
 This is a test sentence to demonstrate body text.
 
+In real-world usage, such as in [Console object API reference](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/api), the difference between h2 and h3 is obscured.
+
 #### This is a test heading to demonstrate heading level h4
 
 This is a test sentence to demonstrate body text.
@@ -193,16 +195,22 @@ h6 hits: 0
 
 ## Preview rendering of heading levels in Visual Studio Code
 
-The below captures demonstrate that the Preview in Visual Studio Code shows a large, visually obvious difference specifically between h2 vs. h3 size.
+The below capture (#1) demonstrates that the Preview in Visual Studio Code is effective in showing a large, visually obvious difference specifically between h2 vs. h3 size.
 
 :::image type="complex" source="../media/vscode-preview-rendering-of-heading-levels.png" alt-text="Preview rendering of heading levels in Visual Studio Code (generic demo headings)" lightbox="../media/vscode-preview-rendering-of-heading-levels.png":::
    Preview rendering of heading levels in Visual Studio Code (generic demo headings) 
 :::image-end:::  
 
+The below capture (#2) demonstrates that the Preview in Visual Studio Code is effective in showing a large, visually obvious difference specifically between h2 vs. h3 size.
+
 :::image type="complex" source="../media/vscode-preview-rendering-of-heading-levels-actual-examples.png" alt-text="Preview rendering of heading levels in Visual Studio Code (actual heading examples)" lightbox="../media/vscode-preview-rendering-of-heading-levels-actual-examples.png":::
    Preview rendering of heading levels in Visual Studio Code (actual heading examples)  
 :::image-end:::  
 
+The below capture (#3) demonstrates that the Preview in Visual Studio Code is effective in showing a large, visually obvious difference specifically between h2 vs. h3 size.
+
 :::image type="complex" source="../media/vscode-preview-rendering-of-heading-levels-method-ref.png" alt-text="Preview rendering of heading levels in Visual Studio Code (method Reference headings)" lightbox="../media/vscode-preview-rendering-of-heading-levels-method-ref.png":::
    Preview rendering of heading levels in Visual Studio Code (method Reference)  
 :::image-end:::  
+
+Compare the above to [Console object API reference](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/api), where the difference between h2 and h3 is unclear.
