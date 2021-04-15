@@ -20,7 +20,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 [Editing remote web sites using overrides in developer tools](https://www.youtube.com/watch?v=i7Sdq4av8d4) on YouTube channel: Christian Heilmann.  Length: 3:41.
 
-[MS Build SK121 End-to-end web development with VS Code and Microsoft Edge](https://www.youtube.com/watch?v=EvbZ9svD3DA) on YouTube channel: Microsoft 365 Developer.  Length: 16:04.
+[MS Build SK121 End-to-end web development with VS Code and Microsoft Edge](https://www.youtube.com/watch?v=EvbZ9svD3DA) on YouTube channel: Microsoft 365 Developer.  Length: 16:04.  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
