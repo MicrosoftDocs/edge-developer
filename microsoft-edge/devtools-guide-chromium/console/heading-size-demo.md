@@ -108,8 +108,21 @@ This is a test sentence to demonstrate body text.
 
 This is a test sentence to demonstrate body text.
 
+## The issue\: Why h3 needs to be made smaller
 
-Current CSS rules
+h3 is so big, it looks the same as h2, making the structure within each article confusing and misleading; hard to understand and likely to misunderstand.  The formatting (the relative heading size of h2 vs. h3) misrepresents the actual page structure.
+
+h3 is used almost as often as h2; the main subheading levels used are h2 & h3, so making that contrast obvious is the most important of all the heading levels.  
+
+h3 vs. h4 is less common.
+
+A usability/readability problem is a schema bug: the h3 in the schema is rendered apparently the same size as h2, obscuring the relation between h2 & h3 headings/sections.
+
+If the schema would change to > 70% difference in size contrast between specifically h2 vs. h3, that would improve readability & structural navigation.
+
+## The current CSS rules
+
+```css
 .content h2 {
     font-size: calc(1.375rem + .83333vw);
     margin-top: 32px;
@@ -127,22 +140,7 @@ Current CSS rules
 .content h5 {
     font-size: 1.25rem;
 }
-
-## The issue
-
-h3 is so big, it looks the same as h2, making the structure within each article confusing and misleading; hard to understand and likely to misunderstand.  The formatting (the relative heading size of h2 vs. h3) misrepresents the actual page structure.
-
-h3 is used almost as often as h2; the main subheading levels used are h2 & h3, so making that contrast obvious is the most important of all the heading levels.  
-
-h3 vs. h4 is less common.
-
-A usability/readability problem is a schema bug: the h3 in the schema is rendered apparently the same size as h2, obscuring the relation between h2 & h3 headings/sections.
-
-`h2: font-size: calc(1.375rem + .83333vw)`
-
-`h3: font-size: calc(1.33333rem + .55556vw)`
-
-If the schema would change to > 70% difference in size contrast between specifically h2 vs. h3, that would improve readability & structural navigation.
+```
 
 ## Analysis
 
