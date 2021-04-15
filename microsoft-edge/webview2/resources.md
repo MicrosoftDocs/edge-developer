@@ -11,8 +11,8 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 ---
 # Resources, talks, videos, and blogs about Microsoft Edge WebView2  
 
-[Microsoft Edge | WebView2: Bringing the best of the web to your native apps](https://www.youtube.com/watch?v=-ri7TmPeqLc).  Length: 13:36.
+[WebView2: Bringing the best of the web to your native apps](https://www.youtube.com/watch?v=-ri7TmPeqLc) on YouTube channel: Microsoft Edge.  Length: 13:36.
 
-[Microsoft Edge | Building, Deploying, and Managing WebView2 Applications](https://www.youtube.com/watch?v=LX-eXvcSx6c).  Length: 11:04.
+[Building, Deploying, and Managing WebView2 Applications](https://www.youtube.com/watch?v=LX-eXvcSx6c) on YouTube channel: Microsoft Edge.  Length: 11:04.
 
 <!-- links -->  
