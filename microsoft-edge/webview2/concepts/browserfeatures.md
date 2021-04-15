@@ -52,6 +52,7 @@ The following table displays the WebView2 features that differ from the Microsof
 | Immersive Reader | Off | No | This feature depends on the browser UI for interaction.  This feature is turned off.  |  
 | Intrusive Ads | Off | No | This feature is turned off.  |  
 | Keyboard shortcuts | Review Details | Review Details | The keyboard shortcuts that are turned off by default either don't make sense or cause problems in WebView2.  You may not turn on or off these shortcuts.  Instead, you may listen for a key combination using the `AcceleratorKeyPressed` event and create a custom response if needed.  For more information, navigate to [Additional keyboard shortcuts information](#additional-keyboard-shortcuts-information). |  
+| Push notifications | Off | No | This feature is not yet implemented in WebView2. For more information, navigate to [Add support for HTML5 Notification API (#308)](https://github.com/MicrosoftEdge/WebView2Feedback/issues/308). |
 | Read Aloud | Off | No | This feature is turned off.  |  
 | Smart Screen | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Additionally, you may turn off Smart Screen using a command-line switch.  |  
 | Translate | Off | No | This feature is turned off.  |  
