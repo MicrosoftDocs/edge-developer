@@ -30,9 +30,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 <!--  Title: Get code hints in Elements tool  -->  
 <!--  Subtitle: Wavy underlines like the ones you see in Visual Studio Code now display in the Elements tool.  Underlines alert you to code issues related to accessibility, compatibility, security, performance, and  so on.  -->  
 
-If you use text editors like [Visual Studio Code](https://code.visualstudio.com) or IDEs like [Visual Studio](https://visualstudio.microsoft.com), you may have experience with wavy underlines under text in your code that indicates a problem, such as a syntax error.  Now, the **Elements** tool provides a similar functionality that displays wavy underlines for code issues and suggestions.  The code issues and suggestions are related to accessibility, compatibility, performance, security, and more.  For more information about reviewing and editing issues, navigate to [Find and fix problems with the Microsoft Edge DevTools Issues tool][DevtoolsIssuesIndex].
-
-
 If you use text editors, you may have no wavy underlines under text in your code that indicates a problem, such as syntax errors.  Text editors include Visual Studio Code, IDEs, and so on.  Now, the **Elements** tool provides a similar functionality that displays wavy underlines.  The wavy lines indicate code issues and suggestions.  The code issues and suggestions are related to accessibility, compatibility, performance, security, and so on.  For more information about how to review and edit issues, navigate to [Find and fix problems with the Microsoft Edge DevTools Issues tool][DevtoolsIssuesIndex].  
 
 To open the **Issues** tool and learn more about the issue and how to fix it, complete one of the following actions.  
