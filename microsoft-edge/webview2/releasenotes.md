@@ -16,6 +16,9 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 > [!NOTE]
 > Ensure you re-compile your app after updating the NuGet package.  The WebView team recommends that you use the Canary channel when you develop using the prerelease packages, and the Evergreen WebView2 Runtime when you use the release packages.  For more information, navigate to [Versioning][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].  
 
+> [!NOTE]
+> WebView2 bugfixes can be runtime or sdk specfic. Runtime-specific changes will be denoted by a '- RT' after the fix.
+
 ## 1.0.890-prerelease  
 
 Release Date: March 23, 2021  
@@ -24,26 +27,28 @@ Release Date: March 23, 2021
 
 ### General  
 
-#### Features  
+#### Experimental Features  
 *   Added Pinch Zoom API, which allows end developers to disable or enable page scale zoom control via a setting.
 *   Added Custom Download API, which will enable developers to block downloads, save to a different path, and have access to the required metadata to build custom download UI.
 *   Added IFrame support from AddHostObjectToScripts.
 *   Added sample code for WPF sample app for using the API for disable browser function keys.
-*   Added GetAvailableCoreWebView2BrowserVersionString API, to more easily update the WebView2 Runtime.
+*   Added UpdateRuntime API, to more easily update the WebView2 Runtime.
  
 #### Bug fixes  
 
 *   Fixed handling of CDP message with binary POST data in WebView2.
-*   Disabled "Ask where to save each file before downloading" UI, due to links to edge:// settings page.   \([\#1120][GithubMicrosoftedgeWebviewfeedbackIssue1120]\).
-*   Removed Micrsoft Edge branding from screen share dialouge.  \([\#940][GithubMicrosoftedgeWebviewfeedbackIssue940]\).
-*   Fixed a bug where using SetWindowDisplayAffinity to stop screen capture in an app using WebView2 would break WebView2.  \([\#841][GithubMicrosoftedgeWebviewfeedbackIssue841]\).
-*   Fixed a bug for composition hosting where mouse input would stop working if any pen input was sent to WebView2
+*   Disabled the OpenSaveAsAwareness download UI, due to linking to an edge:// settings page.   \([\#1120][GithubMicrosoftedgeWebviewfeedbackIssue1120]\).
+*   Removed Micrsoft Edge branding from screen share dialog.  \([\#940][GithubMicrosoftedgeWebviewfeedbackIssue940]\).
+*   Fixed bug where using SetWindowDisplayAffinity to stop screen capture in an app using WebView2 would break WebView2.  \([\#841][GithubMicrosoftedgeWebviewfeedbackIssue841]\).
+*   Fixed bug for composition hosting where mouse input would stop working if any pen input was sent to WebView2.
+*   Fixed bug that breaks mouse input after using pen. - RT
  
 ### .NET  
 
 #### Features  
 
-*   Added webview2 designer tool to WPF toolbox.  \([\#210][GithubMicrosoftedgeWebviewfeedbackIssue210]\).  
+*   Added WebView2 designer tool to WPF toolbox.  \([\#210][GithubMicrosoftedgeWebviewfeedbackIssue210]\).  
+*   Added WebView2 UI element in .NET 'Designer Mode'.  
 
 #### Bug fixes  
 *   Improved COM Exception descriptions by by wrapping them into more detailed .NET exception. \([\#338][GithubMicrosoftedgeWebviewfeedbackIssue338]\).  - RT
