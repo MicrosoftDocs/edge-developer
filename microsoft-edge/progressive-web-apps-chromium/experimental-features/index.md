@@ -55,7 +55,7 @@ The following list describes the new experimental web app features that are avai
 
 | Feature | Microsoft Edge version | Platform |  
 |:--- |:--- |:--- |  
-| [URI Protocol Handling](#uri-protocol-handling) | 91 or later | All |    
+| [URI Protocol Handling](#uri-protocol-handling) | 91 or later | Windows and Linux |    
 | [URL Link Handling](#url-link-handling) | 91 or later | Windows|
 | [Window Controls Overlay for Desktop Apps](#window-controls-overlay-for-installed-desktop-web-apps) | 91 or later | Windows 10|   
 | [Run on OS Login](#run-on-os-login) | 88 or later | All |  
