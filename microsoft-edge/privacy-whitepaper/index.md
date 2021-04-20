@@ -3,7 +3,7 @@ description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/15/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, privacy, whitepaper, trust
@@ -252,15 +252,20 @@ The jump list in Microsoft Edge lets you easily find your most recently closed s
 
 ## Kids Mode
 
-Kids Mode is a convenient browsing mode inside Microsoft Edge that’s designed for kids. With its kid-friendly features and safety guardrails in place, Kids Mode is a great place for children to safely explore the web. Kids Mode includes features like custom browser themes, kid-friendly content, browsing based on an allow list, Bing SafeSearch set to strict, and a password requirement to exit. Kids Mode doesn't require a child account or profile, therefore you cannot sign into Kids Mode. 
+Kids Mode is a convenient browsing mode designed for kids inside Microsoft Edge.  With the kid-friendly features and safety guardrails in place, Kids Mode is a great place for children to safely explore the web.  Kids Mode includes features like custom browser themes, kid-friendly content, browsing based on an allow list, Bing SafeSearch set to strict, and a password requirement to exit.  Kids Mode doesn't require a child account or profile, therefore you are not able to sign into Kids Mode.  
 
-:::image type="complex" source="./media/KidsMode.png" alt-text="Kids Mode" lightbox="./media/KidsMode.png":::
+:::image type="complex" source="./media/kids-mode.png" alt-text="Kids Mode" lightbox="./media/kids-mode.png":::
    Kids Mode  
 :::image-end:::  
 
-Browsing in Kids Mode is limited to a default list of kid-friendly websites. Upon navigation, the website is compared to a local list of allowed sites. The websites visited in Kids Mode are not viewable on [family.microsoft.com][MicrosoftAccountFamilyMain] since the browsing in Kids Mode is not associated with any account. Allowed site exceptions can be made through the profile in which Kids Mode was launched. Those exceptions are synced, if sync is turned on, to the profile in which Kids Mode was launched.  
+Browsing in Kids Mode is limited to a default list of kid-friendly websites.  Upon navigation, the website is compared to a local list of allowed websites.  The websites visited in Kids Mode are not viewable on [family.microsoft.com][MicrosoftAccountFamilyMain] since the browsing in Kids Mode is not associated with any account.  Allowed website exceptions may be added through the profile in which Kids Mode was launched.  Those exceptions are synced, if sync is turned on, to the profile in which Kids Mode was launched.  
 
-To enhance the Kids Mode experience, Microsoft Edge adds a safe keyword to the header request to Microsoft Bing and Microsoft News. This helps filter out inappropriate search results and news. Kids Mode sets preferences for Microsoft Edge settings such as setting tracking prevention to Strict to block most trackers on sites. Clear browsing data on close has also been turned on which clears things like Cookies and other site data when Kids Mode closes. To clear browsing data at any time within Kids Mode, go to Settings  > Privacy, search and services. Kids Mode will not collect data for personalization of the news feed or other Microsoft services. These privacy settings for Kids Mode cannot be changed. Other settings like Windows Defender SmartScreen and diagnostic data are configured according to the profile in which Kids Mode was launched. Learn more about [Diagnostic data about how you use the browser](#diagnostic-data) and [Windows Defender SmartScreen](#SmartScreen).
+To enhance the Kids Mode experience, Microsoft Edge adds a safe keyword to the header request to Microsoft Bing and Microsoft News.  The safe keyword helps filter out inappropriate search results and news.  Kids Mode sets preferences for Microsoft Edge settings such as setting tracking prevention to Strict to block most trackers on websites.  Clear browsing data on close has also been turned on which clears things like Cookies and other website data when Kids Mode closes.  To clear browsing data at any time within Kids Mode, complete the following actions.  
+
+1.  Choose **Settings** > **Privacy**.  
+1.  Search and services.  
+    
+Kids Mode does not collect data for personalization of the news feed or other Microsoft services.  You may no change the privacy settings for Kids Mode.  Other settings like Windows Defender SmartScreen and diagnostic data are configured according to the profile in which Kids Mode was launched.  For more information about diagnostic data about how you use the browser and Windows Defender SmartScreen, navigate to the [Diagnostic Data](#diagnostic-data) and [SmartScreen](#SmartScreen).  
 
 ## Network time  
 
@@ -383,17 +388,22 @@ Secure DNS is off by default for managed machines that are part of an organizati
 
 ## Shopping
 
-Microsoft Edge helps you find coupons, rebates and better prices while shopping online.  To help you find coupons or the best price while shopping online, Microsoft Edge downloads a list of shopping domains locally to the client from the Microsoft shopping service.  When you go to a website, or save an item to your Collections, Microsoft Edge locally determines if the site you're on is a shopping domain or product detail page.  If the site is determined to be a shopping page, Microsoft Edge will send the URL with personally identifiable information removed to the Microsoft shopping service.  We also send the product price, product image, product name, ratings, and reviews, along with information about Microsoft Edge and your operating system version to the service.  This data is sent over HTTPS with a randomly generated identifier and cookies if cookies are allowed. The Microsoft Edge shopping feature requires sharing of cookie information with Bing. For example, the cookies might be used for debugging, fraud detection, and analytics.  The Microsoft shopping service will return prices from other retailers, historical price trends and any available coupons for that site.  
+Microsoft Edge helps you find coupons, rebates and better prices while shopping online.  To help you find coupons or the best price while shopping online, Microsoft Edge downloads a list of shopping domains locally to the client from the Microsoft shopping service.  When you navigate a website, or save an item to your Collections, Microsoft Edge locally determines if the website you're on is a shopping domain or product detail webpage.  If the website is identified as a shopping webpage, Microsoft Edge sends the URL with personally identifiable information removed to the Microsoft shopping service.  Microsoft also sends the product price, product image, product name, ratings, and reviews, along with information about Microsoft Edge and your operating system version to the service.  The data is sent over HTTPS with a randomly generated identifier and cookies if cookies are allowed.  The Microsoft Edge shopping feature requires sharing of cookie information with Bing.  For example, the cookies may be used for debugging, fraud detection, and analytics.  The Microsoft shopping service returns prices from other retailers, historical price trends and any available coupons for that website.  
 
-When you're applying coupons, cookies will be stored on your device to correctly attribute the coupon provider.  Cookies will be saved by our trusted coupon providers only after a coupon is successfully applied on the cart.  After the coupons are applied, information about the success of the coupons will be sent back to the Microsoft shopping service to help us understand which coupons succeeded or failed.  Data sent to the Microsoft shopping service is sent over HTTPS with a randomly generated identifier which changes per coupon lookup.  
+When you're applying coupons, cookies are stored on your device to correctly attribute the coupon provider.  Cookies are saved by Microsoft-trusted coupon providers only after a coupon is successfully applied on the cart.  After the coupons are applied, information about the success of the coupons is sent back to the Microsoft shopping service to help understand which coupons succeeded or failed.  Data sent to the Microsoft shopping service is sent over HTTPS with a randomly generated identifier which changes per coupon lookup.  
 
 :::image type="complex" source="./media/shopping.png" alt-text="Shopping and coupons" lightbox="./media/shopping.png":::
    Shopping and coupons  
 :::image-end:::  
 
-If you visit a shopping domain and you are an existing Bing Rebates user, Microsoft Edge will send the domain along with cookies to the Microsoft shopping service to retrieve your Bing Rebates profile and cash back offers for the domain. If you choose to activate cash back, Microsoft Edge will send your URL to the Microsoft shopping service to receive an affiliate URL. Cookies may be stored on your device to correctly attribute the rebates provider. 
+If you visit a shopping domain and you are an existing Bing Rebates user, Microsoft Edge sends the domain along with cookies to the Microsoft shopping service to retrieve your Bing Rebates profile and cash back offers for the domain.  If you choose to activate cash back, Microsoft Edge sends your URL to the Microsoft shopping service to receive an affiliate URL.  Cookies may be stored on your device to correctly attribute the rebates provider.  
 
-The shopping service is turned on by default for all users.  To change the shopping setting in Microsoft Edge, navigate to `edge://settings/privacy`, and then turn off **Save time and money with Shopping in Microsoft Edge**.  InPrivate browsing uses the shopping setting of the profile that launched the InPrivate session.  
+The shopping service is turned on by default for all users.  To change the shopping setting in Microsoft Edge, complete the following actions.  
+
+1.  Navigate to `edge://settings/privacy`.  
+1.  Turn off the **Save time and money with Shopping in Microsoft Edge** setting.  
+    
+InPrivate browsing uses the shopping setting of the profile that launched the InPrivate session.  
 
 ## Sign in and Identity  
 
@@ -517,7 +527,7 @@ Microsoft Edge is made possible by the [Chromium][ChromiumMain] open-source proj
 
 The Microsoft Edge team is always listening to customers and values your feedback.  To provide feedback in Microsoft Edge, open **Settings and more** > **Help and feedback** and select **Send feedback**.  For Progressive Web Apps \(PWAs\), open **Settings and more (...)** and select **Send feedback to Microsoft**.  You must provide details about the feedback, but all other information is optional.  If an email is detected from your Microsoft Edge profile, it is pre-populated, along with the current URL of the site you are on and relevant diagnostic data.  The diagnostic data may include data about Microsoft Edge features you turned on and your usage of the browser.  A screenshot, files from your device, and recording of your browser may also be optionally included.  The optional screenshot, files, or recording you provide may include personally identifiable information.  The data is only used for diagnostic and product improvement purposes.  
 
-User feedback is securely sent to Microsoft using HTTPS and stored on secure Microsoft servers.  If you include your email address and the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting is turned on in your Microsoft Edge privacy settings, an identifier unique to your browser installation on your device is associated with your feedback. If you're signed into Microsoft Edge with your Microsoft account, your feedback will be associated with your account identifier. All diagnostic data, including diagnostic logs, recordings, and attachments, are stored for up to 30 days.  The remaining feedback data, including an optional screenshot, is stored for up to 15 months.  Make a [request][MicrosoftConcernPrivacy] to delete your feedback if you provided an email with your feedback item.  
+User feedback is securely sent to Microsoft using HTTPS and stored on secure Microsoft servers.  If you include your email address and the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting is turned on in your Microsoft Edge privacy settings, an identifier unique to your browser installation on your device is associated with your feedback. If you're signed into Microsoft Edge with your Microsoft account, your feedback will be associated with your account. All diagnostic data, including diagnostic logs, recordings, and attachments, are stored for up to 30 days.  The remaining feedback data, including an optional screenshot, is stored for up to 15 months.  Make a [request][MicrosoftConcernPrivacy] to delete your feedback if you provided an email with your feedback item.  
 
 <!-- links -->  
 
