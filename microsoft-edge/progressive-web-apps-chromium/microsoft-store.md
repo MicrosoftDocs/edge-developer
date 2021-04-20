@@ -77,7 +77,7 @@ To create an app reservation, complete the following actions.
        Create an app reservation in Windows Partner Center  
     :::image-end:::  
 
-1.  To display your publisher details for use in the [Package your PWA](#package-your-pwa) section, choose **Product management** > **Product Identity**.  
+1.  To display your publisher details for use in the [Package your PWA](#package-your-pwa-for-the-store) section, choose **Product management** > **Product Identity**.  
     
     :::image type="complex" source="./media/windows-partner-center-publisher-info.msft.png" alt-text="Copy your publisher information from Windows Partner Center" lightbox="./media/windows-partner-center-publisher-info.msft.png":::
        Copy your publisher information from Windows Partner Center  
@@ -129,7 +129,7 @@ To submit your app to the Store, complete the following actions.
     *   age rating  
     *   and more  
         
-1.  On the **Packages** prompt, choose the `.msixbundle` and the `.classic.appxbundle` files you generated in the [Package your PWA](#package-your-pwa) section. 
+1.  On the **Packages** prompt, choose the `.msixbundle` and the `.classic.appxbundle` files you generated in the [Package your PWA](#package-your-pwa-for-the-store) section. 
 
 After you complete your submission, your app is reviewed, typically within between 24 and 48 hours.  After you receive approval, your PWA is available in the Microsoft Store.
 
