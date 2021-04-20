@@ -478,6 +478,23 @@ To enhance the Kids Mode experience, Microsoft Edge adds a safe keyword to the h
     
 Kids Mode does not collect data for personalization of the news feed or other Microsoft services.  You may no change the privacy settings for Kids Mode.  Other settings like Windows Defender SmartScreen and diagnostic data are configured according to the profile in which Kids Mode was launched.  For more information about diagnostic data about how you use the browser and Windows Defender SmartScreen, navigate to the [Diagnostic Data](#diagnostic-data) and [SmartScreen](#smartscreen).  
 
+## Kids Mode
+
+Kids Mode is a convenient browsing mode designed for kids inside Microsoft Edge.  With the kid-friendly features and safety guardrails in place, Kids Mode is a great place for children to safely explore the web.  Kids Mode includes features like custom browser themes, kid-friendly content, browsing based on an allow list, Bing SafeSearch set to strict, and a password requirement to exit.  Kids Mode doesn't require a child account or profile, therefore you are not able to sign into Kids Mode.  
+
+:::image type="complex" source="./media/kids-mode.png" alt-text="Kids Mode" lightbox="./media/kids-mode.png":::
+   Kids Mode  
+:::image-end:::  
+
+Browsing in Kids Mode is limited to a default list of kid-friendly websites.  Upon navigation, the website is compared to a local list of allowed websites.  The websites visited in Kids Mode are not viewable on [family.microsoft.com][MicrosoftAccountFamilyMain] since the browsing in Kids Mode is not associated with any account.  Allowed website exceptions may be added through the profile in which Kids Mode was launched.  Those exceptions are synced, if sync is turned on, to the profile in which Kids Mode was launched.  
+
+To enhance the Kids Mode experience, Microsoft Edge adds a safe keyword to the header request to Microsoft Bing and Microsoft News.  The safe keyword helps filter out inappropriate search results and news.  Kids Mode sets preferences for Microsoft Edge settings such as setting tracking prevention to Strict to block most trackers on websites.  Clear browsing data on close has also been turned on which clears things like Cookies and other website data when Kids Mode closes.  To clear browsing data at any time within Kids Mode, complete the following actions.  
+
+1.  Choose **Settings** > **Privacy**.  
+1.  Choose **Choose what to clear**.  
+    
+Kids Mode does not collect data for personalization of the news feed or other Microsoft services.  You may no change the privacy settings for Kids Mode.  Other settings like Windows Defender SmartScreen and diagnostic data are configured according to the profile in which Kids Mode was launched.  For more information about diagnostic data about how you use the browser and Windows Defender SmartScreen, navigate to the [Diagnostic Data](#diagnostic-data) and [SmartScreen](#smartscreen).  
+
 ## Network time  
 
 Microsoft Edge uses a Microsoft network time service to track time from an external source such as a time server.  At random intervals or when Microsoft Edge encounters an expired SSL certificate, Microsoft Edge may send requests to Microsoft to obtain the time from a trusted source.  The requests occur more frequently if Microsoft Edge detects the system clock is inaccurate.  A system clock inaccuracy happens if the user changes the time on the operating system and that conflicts with the correct time zone.  The Microsoft network time service is used to get the Coordinated Universal Time \(UTC\).  The requests contain no cookies or user identifiers, and no data is logged.  
