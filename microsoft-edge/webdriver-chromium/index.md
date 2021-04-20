@@ -28,7 +28,7 @@ Ensure you install [Microsoft Edge (Chromium)][MicrosoftEdge].  To confirm that 
 
 To begin automating tests, use the following steps to ensure that the WebDriver version you install matches your browser version.  
 
-1.  Find you version of Microsoft Edge.  
+1.  Find your version of Microsoft Edge.  
     1.  Navigate to `edge://settings/help`.  
         
         :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="The build number for Microsoft Edge on April 15, 2021" lightbox="./media/microsoft-edge-version.msft.png":::
