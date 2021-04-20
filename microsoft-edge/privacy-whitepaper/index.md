@@ -263,7 +263,7 @@ Browsing in Kids Mode is limited to a default list of kid-friendly websites.  Up
 To enhance the Kids Mode experience, Microsoft Edge adds a safe keyword to the header request to Microsoft Bing and Microsoft News.  The safe keyword helps filter out inappropriate search results and news.  Kids Mode sets preferences for Microsoft Edge settings such as setting tracking prevention to Strict to block most trackers on websites.  Clear browsing data on close has also been turned on which clears things like Cookies and other website data when Kids Mode closes.  To clear browsing data at any time within Kids Mode, complete the following actions.  
 
 1.  Choose **Settings** > **Privacy**.  
-1.  Search and services.  
+1.  Select **Choose what to clear**.  
     
 Kids Mode does not collect data for personalization of the news feed or other Microsoft services.  You may no change the privacy settings for Kids Mode.  Other settings like Windows Defender SmartScreen and diagnostic data are configured according to the profile in which Kids Mode was launched.  For more information about diagnostic data about how you use the browser and Windows Defender SmartScreen, navigate to the [Diagnostic Data](#diagnostic-data) and [SmartScreen](#SmartScreen).  
 
