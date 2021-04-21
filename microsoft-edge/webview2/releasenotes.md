@@ -3,7 +3,7 @@ description: Release notes for Microsoft Edge WebView2 SDK
 title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/19/2021
+ms.date: 04/21/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -14,10 +14,10 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence.  Review the following content for up-to-date information on product announcements, additions, modifications, and breaking changes to the APIs.  
 
 > [!NOTE]
-> Ensure you re-compile your app after updating the NuGet package.  The WebView team recommends that you use the Canary channel when you develop using the prerelease packages, and the Evergreen WebView2 Runtime when you use the release packages.  For more information, navigate to [Versioning][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].  
+> Ensure you re-compile your app after updating the NuGet package.  The WebView team recommends that you use the Canary channel when you develop using the prerelease packages, and the Evergreen WebView2 Runtime when you use the release packages.  For more information, navigate to [Matching WebView2 Runtime versions][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].  
 
 > [!NOTE]
-> WebView2 bug fixes can be runtime or sdk specific. Runtime-specific changes will be denoted by a '- RT' after the fix.
+> Some WebView2 bug fixes are Runtime or SDK specific.  
 
 ## 1.0.860-prerelease  
 
@@ -28,56 +28,58 @@ Release Date: April 19, 2021
 ### General  
 
 #### Experimental Features  
-*   Added [IsPinchZoomEnabled][Webview2ReferenceWin32Icorewebview2experimentalsettings4ViewWebview210860PrereleaseIspinchzoomenabled] setting, which allows end developers to disable or enable page scale zoom control via a setting.
-*   Added Custom [Download][Webview2ReferenceWin32Icorewebview2experimental2ViewWebview210860PrereleaseAddDownloadstarting] API, which will enable developers to block downloads, save to a different path, and have access to the required metadata to build custom download UI.
-*   Added IFrame support from [AddHostObjectToScriptWithOrigins][Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210860PrereleaseAddhostobjecttoscriptwithorigins].
-*   Added sample code for [WPF sample app][GithubMicrosoftedgeWebview2samplesWebview2wpfbrowser] for using the API for disable browser function keys.
-*   Added [UpdateRuntime][Webview2ReferenceWin32Icorewebview2experimentalenvironment3ViewWebview210860PrereleaseUpdateruntime] API, to more easily update the WebView2 Runtime.
- 
+
+*   Added [IsPinchZoomEnabled][Webview2ReferenceWin32Icorewebview2experimentalsettings4ViewWebview210860PrereleaseIspinchzoomenabled] setting, which allows you to turn on or off page scale zoom control in a setting.  
+*   Added Custom [add_DownloadStarting][Webview2ReferenceWin32Icorewebview2experimental2ViewWebview210860PrereleaseAddDownloadstarting] API.  It allows you to block downloads, save to a different path, and access the required metadata to build custom download UI.  
+*   Added `IFrame` element support from [AddHostObjectToScriptWithOrigins][Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210860PrereleaseAddhostobjecttoscriptwithorigins].  
+*   Added sample code for [WPF sample app][GithubMicrosoftedgeWebview2samplesWebview2wpfbrowser] to use the API to turn off browser function keys.  
+*   Added the [UpdateRuntime][Webview2ReferenceWin32Icorewebview2experimentalenvironment3ViewWebview210860PrereleaseUpdateruntime] API, to easily update the WebView2 Runtime.  
+    
 #### Bug fixes  
 
-*   Fixed handling of CDP message with binary POST data in WebView2.
-*   Disabled the OpenSaveAsAwareness download UI, due to linking to an `edge://settings` page.   \([\#1120][GithubMicrosoftedgeWebviewfeedbackIssue1120]\).
-*   Removed Microsoft Edge branding from screen share dialog.  \([\#940][GithubMicrosoftedgeWebviewfeedbackIssue940]\).
-*   Fixed bug where using [SetWindowDisplayAffinity][WindowsWin32ApiWinuserSetWindowDisplayAffinity] to stop screen capture in an app using WebView2 would break WebView2.  \([\#841][GithubMicrosoftedgeWebviewfeedbackIssue841]\).
-*   Fixed bug for composition hosting where mouse input would stop working if any pen input was sent to WebView2.
-*   Fixed bug that breaks mouse input after using pen. - RT
- 
+*   Fixed handler for `Chromium DevTools Protocol` message with binary `POST` data in WebView2.  
+*   Turned off the `OpenSaveAsAwareness` download UI, because it included links to `edge://settings`.  \([\#1120][GithubMicrosoftedgeWebviewfeedbackIssue1120]\).  
+*   Removed branding from screen share dialog.  \([\#940][GithubMicrosoftedgeWebviewfeedbackIssue940]\).  
+*   Fixed bug where the [SetWindowDisplayAffinity][WindowsWin32ApiWinuserSetWindowDisplayAffinity] function broke WebView2 when it stopped screen capture in an WebView2 app.  \([\#841][GithubMicrosoftedgeWebviewfeedbackIssue841]\).
+*   Fixed bug for composition hosting where mouse input stopped working if any pen input was sent to WebView2.  
+*   Fixed bug that broke mouse input after any pen input.  This change is Runtime-specific.  
+    
 ### .NET  
 
-#### Features
+#### Features  
 
 *   Added WebView2 designer tool to WPF Toolbox.  \([\#210][GithubMicrosoftedgeWebviewfeedbackIssue210]\).  
-*   Added WebView2 UI element in .NET 'Designer Mode'.  
+*   Added WebView2 UI element in .NET Designer Mode.  
+    
+#### Bug fixes  
 
-#### Bug fixes
-
-*   Improved COM Exception descriptions by wrapping them into more detailed .NET exception. \([\#338][GithubMicrosoftedgeWebviewfeedbackIssue338]\).  - RT
-*   Fixed bug where shifting focus via tab caused WebView2 control to crash when used in VSTO.  \([\#589][GithubMicrosoftedgeWebviewfeedbackIssue589], [\#933][GithubMicrosoftedgeWebviewfeedbackIssue933]\).  - RT
+*   Improved COM Exception descriptions by wrapping them into more detailed .NET exception.  \([\#338][GithubMicrosoftedgeWebviewfeedbackIssue338]\).  This change is Runtime-specific.  
+*   Fixed bug where shifting focus via tab caused WebView2 control to crash when used in VSTO.  \([\#589][GithubMicrosoftedgeWebviewfeedbackIssue589], [\#933][GithubMicrosoftedgeWebviewfeedbackIssue933]\).  This change is Runtime-specific.  
 *   Improved .NET framework loader down level to be more robust.  \([\#946][GithubMicrosoftedgeWebviewfeedbackIssue946]\).
 *   Fixed bug that caused crash when trying to reload before first navigation completed.  \([\#1011][GithubMicrosoftedgeWebviewfeedbackIssue1011]\).
 *   Fixed initialization so navigation can occur during CoreWebView2InitializationCompleted.  \([\#1050][GithubMicrosoftedgeWebviewfeedbackIssue1050]\).
-*   Improved .NET browser process crash error handling. Developer can now recreate control after handling ProcessFailed event without crash.  \([\#996][GithubMicrosoftedgeWebviewfeedbackIssue996]\).
-
-## 1.0.818.39
+*   Improved .NET browser process crash error handling.  Developer can now recreate control after handling ProcessFailed event without crash.  \([\#996][GithubMicrosoftedgeWebviewfeedbackIssue996]\).  
+    
+## 1.0.818.39  
 
 Release Date: April 19, 2021  
 
 [NuGet package][NuGetGallery1.0.818.39] \| Minimum Runtime version to load: 86.0.616.0 or newer \| Full API Compatibility: 90.0.818.39 or newer  
 
-### General
+### General  
 
-#### Features
-*   Improved WebView2 code to be more resilient to application exe files with malformatted version info.  \([\#850][GithubMicrosoftedgeWebviewfeedbackIssue850]\).
-*   Removed `--winhttp-proxy-resolver` from WebView browser process command line, enabling other proxy command line options for WebView2. 
+#### Features  
 
+*   Improved WebView2 code to be more resilient to application exe files with malformatted version info.  \([\#850][GithubMicrosoftedgeWebviewfeedbackIssue850]\).  
+*   Removed `--winhttp-proxy-resolver` from WebView browser process command line, enabling other proxy command-line options for WebView2.  
+    
 #### Promotions  
 
-*   The following experimental APIs are now promoted to Stable.
-    *   User Agent API.
-    *   AreBrowserAcceleratorKeysEnabled.
-    *   Extended ProcessFailed.
-
+*   The following experimental APIs are now promoted to Stable.  
+    *   User Agent API.  
+    *   `AreBrowserAcceleratorKeysEnabled`.  
+    *   Extended ProcessFailed.  
+        
 ## 1.0.824-prerelease  
 
 Release Date: March 8, 2021  
@@ -88,11 +90,11 @@ Release Date: March 8, 2021
 
 #### Features  
 
-*   Extended `ProcessFailed` event that it is now raised for non-renderer child processes and frame renderers.  
-*   Added experimental [AreBrowserAcceleratorKeysEnabled][Webview2ReferenceWin32Icorewebview2experimentalsettingsViewWebview210824GetArebrowseracceleratorkeysenabled] setting.  You may choose to keep the browser from responding to accelerator keys related to navigation, printing, saving, and other browser-specific functions.  
+*   Extended the `ProcessFailed` event.  It now raises for non-renderer child processes and frame renderers.  
+*   Added experimental [AreBrowserAcceleratorKeysEnabled][Webview2ReferenceWin32Icorewebview2experimentalsettingsViewWebview210824GetArebrowseracceleratorkeysenabled] setting.  You may prevent the browser from responding to keyboard shortcuts related to navigation, printing, saving, and other browser-specific functions.  
 *   Added iframe support for `AddScriptToExecuteOnDocumentCreated`.  
     
-#### Promotion
+#### Promotion  
 
 *   [UserAgent][Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddWebresourceresponsereceived] API is now promoted to Stable.  
 *   Rasterization Scale APIs \([RasterizationScale][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetRasterizationscale] property,  [RasterizationScaleChanged][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseAddRasterizationscalechanged] event, [BoundsMode property][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetBoundsmode], and [ShouldDetectMonitorScaleChanges][Webview2ReferenceWin32Icorewebview2experimentalcontrollerViewWebview210721PrereleaseGetShoulddetectmonitorscalechanges] property\) are now promoted to Stable.  
@@ -103,7 +105,7 @@ Release Date: March 8, 2021
 *   Fixed a bug that Evergreen WebView2 Runtime leaks Inbound firewall entry.  
 *   Fixed setting Response during `WebResourceRequested` event.  \([\#568][GithubMicrosoftedgeWebviewfeedbackIssue568]\).  
 *   Fixed a bug that navigating to `edge://` causes browser process to exit.  \([\#604][GithubMicrosoftedgeWebviewfeedbackIssue604]\).  
-*   Fixed a bug that limited WebView2 bounds to size of screen in Visual Hosting mode. 
+*   Fixed a bug that limited WebView2 bounds to size of screen in Visual Hosting mode.  
 
 ## 1.0.774.44  
 
@@ -167,7 +169,7 @@ Release Date: February 10, 2021
 *   Fixed Visual Studio crashes while running `WebView2.Dispose` when hosted in multiple windows.  \([\#816][GithubMicrosoftedgeWebviewfeedbackIssue816]\ and [\#442][GithubMicrosoftedgeWebviewfeedbackIssue442]\).  
 *   Fixed bug to display WebView2 control in Visual Studio Toolbox.  \([\#210][GithubMicrosoftedgeWebviewfeedbackIssue210]\).  
 *   Reduced high CPU usage issues.  \([\#878][GithubMicrosoftedgeWebviewfeedbackIssue878]\).  
-*   Fixed issues with deprecated 1.0.781-prerelease package. [\#875][GithubMicrosoftedgeWebviewfeedbackIssue875] and [\#878][GithubMicrosoftedgeWebviewfeedbackIssue878]\).  
+*   Fixed issues with deprecated 1.0.781-prerelease package.  [\#875][GithubMicrosoftedgeWebviewfeedbackIssue875] and [\#878][GithubMicrosoftedgeWebviewfeedbackIssue878]\).  
     
 #### Promotions  
 
@@ -280,7 +282,7 @@ Release Date: October 19, 2020
 *   Added [NavigateWithWebResourceRequest][Webview2ReferenceWin32Icorewebview2experimentalViewWebview210674PrereleaseNavigatewithwebresourcerequest] method to provide post data or other request headers during navigation.  
 *   Added [DOMContentLoaded][Webview2ReferenceWin32Icorewebview2experimentalViewWebview210674PrereleaseAddDomcontentloaded] event that runs when the initial HTML document is loaded and parsed.  
 *   Added the [Environment][Webview2ReferenceWin32Icorewebview2experimentalViewWebview210674PrereleaseGetEnvironment] property on WebView2.  This property exposes the WebView2 environment where an instance of WebView2 was created.  
-*   Added [cookie management][Webview2ReferenceWin32Icorewebview2experimentalViewWebview210674PrereleaseGetCookiemanager] APIs that allow developers to authenticate the WebView2 session, or retrieve cookies from WebView to authenticate other tools.  The Webview team is planning to make language or framework-specific improvements.  For more information, navigate to [API Review: Cookie Management][GithubMicrosoftedgeWebview2AnnouncementIssue2].  
+*   Added [cookie management][Webview2ReferenceWin32Icorewebview2experimentalViewWebview210674PrereleaseGetCookiemanager] APIs that allow developers to authenticate the WebView2 session, or retrieve cookies from WebView to authenticate other tools.  The Webview team plans to make language or framework-specific improvements.  For more information, navigate to [API Review: Cookie Management][GithubMicrosoftedgeWebview2AnnouncementIssue2].  
 *   Updated the [WebResourceResponseReceived][Webview2ReferenceWin32Icorewebview2experimentalViewWebview210674PrereleaseAddWebresourceresponsereceived] event, and added immutable [WebResourceResponseView][Webview2ReferenceWin32Icorewebview2experimentalwebresourceresponseviewViewWebview210674Prerelease] and [WebResourceResponseReceivedEventArgs::PopulateResponseContent][Webview2ReferenceWin32Icorewebview2experimentalwebresourceresponsereceivedeventargsViewWebview209628PrereleasePopulateresponsecontent] to [WebResourceResponseView::GetContent][Webview2ReferenceWin32Icorewebview2experimentalwebresourceresponseviewViewWebview210674PrereleaseGetcontent].  
 *   Turned off [Microsoft Defender Application Guard (WDAG)][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10] in WebView2.  
 *   Added [SystemCursorId][Webview2ReferenceWin32Icorewebview2experimentalcompositioncontroller2ViewWebview210674PrereleaseGetSystemcursorid] for Visual Hosting.  
