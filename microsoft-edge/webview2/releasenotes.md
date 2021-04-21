@@ -29,7 +29,7 @@ Release Date: April 19, 2021
 
 #### Experimental Features  
 
-*   Added [IsPinchZoomEnabled][Webview2ReferenceWin32Icorewebview2experimentalsettings4ViewWebview210860PrereleaseIspinchzoomenabled] setting, which allows you to turn on or off page scale zoom control in a setting.  
+*   Added [IsPinchZoomEnabled][Webview2ReferenceWin32Icorewebview2experimentalsettings4ViewWebview210860PrereleaseIspinchzoomenabled] setting. It allows you to turn on or off page scale zoom control in a setting.  
 *   Added Custom [add_DownloadStarting][Webview2ReferenceWin32Icorewebview2experimental2ViewWebview210860PrereleaseAddDownloadstarting] API.  It allows you to block downloads, save to a different path, and access the required metadata to build custom download UI.  
 *   Added `iframe` element support from [AddHostObjectToScriptWithOrigins][Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210860PrereleaseAddhostobjecttoscriptwithorigins].  
 *   Added sample code for [WPF sample app][GithubMicrosoftedgeWebview2samplesWebview2wpfbrowser] to use the API to turn off browser function keys.  
@@ -37,7 +37,7 @@ Release Date: April 19, 2021
     
 #### Bug fixes  
 
-*   Fixed handler for `Chromium DevTools Protocol` message with binary `POST` data in WebView2.  
+*   Fixed handler for a `Chromium DevTools Protocol` message with `POST` binary data in WebView2.  
 *   Turned off the `OpenSaveAsAwareness` download UI, because it included links to `edge://settings`.  \([\#1120][GithubMicrosoftedgeWebviewfeedbackIssue1120]\).  
 *   Removed branding from screen share dialog.  \([\#940][GithubMicrosoftedgeWebviewfeedbackIssue940]\).  
 *   Fixed bug where the [SetWindowDisplayAffinity][WindowsWin32ApiWinuserSetWindowDisplayAffinity] function broke WebView2 when it stopped screen capture in an WebView2 app.  \([\#841][GithubMicrosoftedgeWebviewfeedbackIssue841]\).
@@ -58,7 +58,7 @@ Release Date: April 19, 2021
 *   Improved .NET framework loader down level to be more robust.  \([\#946][GithubMicrosoftedgeWebviewfeedbackIssue946]\).
 *   Fixed bug that caused crash when you try to refresh before first navigation completed.  \([\#1011][GithubMicrosoftedgeWebviewfeedbackIssue1011]\).
 *   Fixed initialization so navigation occurs during `CoreWebView2InitializationCompleted`.  \([\#1050][GithubMicrosoftedgeWebviewfeedbackIssue1050]\).
-*   Improved .NET browser process crash error handling.  Developer can now recreate control after handling ProcessFailed event without crash.  \([\#996][GithubMicrosoftedgeWebviewfeedbackIssue996]\).  
+*   Improved .NET browser process crash error handling.  You cmay now recreate controls after you handle a `ProcessFailed` event without a crash.  \([\#996][GithubMicrosoftedgeWebviewfeedbackIssue996]\).  
     
 ## 1.0.818.39  
 
