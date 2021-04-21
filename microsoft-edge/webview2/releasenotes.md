@@ -70,7 +70,7 @@ Release Date: April 19, 2021
 
 #### Features  
 
-*   Improved WebView2 code to be more resilient to application exe files with malformatted version info.  \([\#850][GithubMicrosoftedgeWebviewfeedbackIssue850]\).  
+*   Improved WebView2 code to be more resilient to `.exe` application files with malformatted version information.  \([\#850][GithubMicrosoftedgeWebviewfeedbackIssue850]\).  
 *   Removed `--winhttp-proxy-resolver` from WebView browser process command-line, turned on other proxy command-line options for WebView2.  
     
 #### Promotions  
