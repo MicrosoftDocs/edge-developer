@@ -31,7 +31,7 @@ Release Date: April 19, 2021
 
 *   Added [IsPinchZoomEnabled][Webview2ReferenceWin32Icorewebview2experimentalsettings4ViewWebview210860PrereleaseIspinchzoomenabled] setting, which allows you to turn on or off page scale zoom control in a setting.  
 *   Added Custom [add_DownloadStarting][Webview2ReferenceWin32Icorewebview2experimental2ViewWebview210860PrereleaseAddDownloadstarting] API.  It allows you to block downloads, save to a different path, and access the required metadata to build custom download UI.  
-*   Added `IFrame` element support from [AddHostObjectToScriptWithOrigins][Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210860PrereleaseAddhostobjecttoscriptwithorigins].  
+*   Added `iframe` element support from [AddHostObjectToScriptWithOrigins][Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210860PrereleaseAddhostobjecttoscriptwithorigins].  
 *   Added sample code for [WPF sample app][GithubMicrosoftedgeWebview2samplesWebview2wpfbrowser] to use the API to turn off browser function keys.  
 *   Added the [UpdateRuntime][Webview2ReferenceWin32Icorewebview2experimentalenvironment3ViewWebview210860PrereleaseUpdateruntime] API, to easily update the WebView2 Runtime.  
     
@@ -53,11 +53,11 @@ Release Date: April 19, 2021
     
 #### Bug fixes  
 
-*   Improved COM Exception descriptions by wrapping them into more detailed .NET exception.  \([\#338][GithubMicrosoftedgeWebviewfeedbackIssue338]\).  This change is Runtime-specific.  
-*   Fixed bug where shifting focus via tab caused WebView2 control to crash when used in VSTO.  \([\#589][GithubMicrosoftedgeWebviewfeedbackIssue589], [\#933][GithubMicrosoftedgeWebviewfeedbackIssue933]\).  This change is Runtime-specific.  
+*   Improved COM Exception descriptions by wrapping each in a more detailed .NET exception.  \([\#338][GithubMicrosoftedgeWebviewfeedbackIssue338]\).  This change is Runtime-specific.  
+*   Fixed bug caused when you select `tab` to shift focus caused WebView2 control to crash in Microsoft Visual Studio Tools for Office.  \([\#589][GithubMicrosoftedgeWebviewfeedbackIssue589], [\#933][GithubMicrosoftedgeWebviewfeedbackIssue933]\).  This change is Runtime-specific.  
 *   Improved .NET framework loader down level to be more robust.  \([\#946][GithubMicrosoftedgeWebviewfeedbackIssue946]\).
-*   Fixed bug that caused crash when trying to reload before first navigation completed.  \([\#1011][GithubMicrosoftedgeWebviewfeedbackIssue1011]\).
-*   Fixed initialization so navigation can occur during CoreWebView2InitializationCompleted.  \([\#1050][GithubMicrosoftedgeWebviewfeedbackIssue1050]\).
+*   Fixed bug that caused crash when you try to refresh before first navigation completed.  \([\#1011][GithubMicrosoftedgeWebviewfeedbackIssue1011]\).
+*   Fixed initialization so navigation occurs during `CoreWebView2InitializationCompleted`.  \([\#1050][GithubMicrosoftedgeWebviewfeedbackIssue1050]\).
 *   Improved .NET browser process crash error handling.  Developer can now recreate control after handling ProcessFailed event without crash.  \([\#996][GithubMicrosoftedgeWebviewfeedbackIssue996]\).  
     
 ## 1.0.818.39  
@@ -71,14 +71,14 @@ Release Date: April 19, 2021
 #### Features  
 
 *   Improved WebView2 code to be more resilient to application exe files with malformatted version info.  \([\#850][GithubMicrosoftedgeWebviewfeedbackIssue850]\).  
-*   Removed `--winhttp-proxy-resolver` from WebView browser process command line, enabling other proxy command-line options for WebView2.  
+*   Removed `--winhttp-proxy-resolver` from WebView browser process command-line, turned on other proxy command-line options for WebView2.  
     
 #### Promotions  
 
 *   The following experimental APIs are now promoted to Stable.  
     *   User Agent API.  
     *   `AreBrowserAcceleratorKeysEnabled`.  
-    *   Extended ProcessFailed.  
+    *   Extended `ProcessFailed`.  
         
 ## 1.0.824-prerelease  
 
@@ -92,7 +92,7 @@ Release Date: March 8, 2021
 
 *   Extended the `ProcessFailed` event.  It now raises for non-renderer child processes and frame renderers.  
 *   Added experimental [AreBrowserAcceleratorKeysEnabled][Webview2ReferenceWin32Icorewebview2experimentalsettingsViewWebview210824GetArebrowseracceleratorkeysenabled] setting.  You may prevent the browser from responding to keyboard shortcuts related to navigation, printing, saving, and other browser-specific functions.  
-*   Added iframe support for `AddScriptToExecuteOnDocumentCreated`.  
+*   Added `iframe` element support for `AddScriptToExecuteOnDocumentCreated`.  
     
 #### Promotion  
 
@@ -357,7 +357,7 @@ Release Date: July 20, 2020
     
 *   Added WebView worker thread improvements.  \([\#318][GithubMicrosoftedgeWebviewfeedbackIssue318]\).  
 *   Turned off the popup blocker in WebView.  For more information, navigate to the [IsUserInitiated][Webview2ReferenceWin32Icorewebview2newwindowrequestedeventargsViewWebview209538GetIsuserinitiated] property in the `NewWindowRequested` event.  
-*   Ensured WebView navigation starting event is run for `about:blank`.  Now, `NavigationStarting` events are run for all navigation, but cancellations for `about:blank` or iframe `srcdoc` aren't supported and ignored.  
+*   Ensured WebView navigation starting event is run for `about:blank`.  Now, `NavigationStarting` events are run for all navigation, but cancellations for `about:blank` or `srcdoc` of the `iframe` element aren't supported and ignored.  
 *   Blocked some `edge://` URI schemes in WebView.  
 *   Added experimental [IsSingleSignOnUsingOSPrimaryAccountEnabled][Webview2ReferenceWin32Icorewebview2experimentalenvironmentoptionsViewWebview209538PrereleaseGetIssinglesignonusingosprimaryaccountenabled] property on WebView2 environment options to turn on conditional access for WebView.  
 *   Added experimental [WebResourceResponseReceived][Webview2ReferenceWin32Icorewebview2experimentalViewWebview209538PrereleaseAddWebresourceresponsereceived] event that runs after the WebView receives and processes the response from a WebResource request.  Authentication headers, if any, are included in the response object.  
@@ -446,7 +446,7 @@ Release Date: July 20, 2020
 *   > [!IMPORTANT]
     > **Breaking Change**:  Deprecated [CreateCoreWebView2EnvironmentWithDetails][Webview2ReferenceWin32Webview2IdlViewWebview209488Createcorewebview2environmentwithdetails] and replaced with [CreateCoreWebView2EnvironmentWithOptions][Webview2ReferenceWin32Webview2IdlViewWebview209488Createcorewebview2environmentwithoptions].  
     
-*   Added [FrameNavigationCompleted][Webview2ReferenceWin32Icorewebview2ViewWebview209488AddFramenavigationcompleted] event.  Now, when an iframe completes navigation, an event is run and returns the success of the navigation and the navigation ID.  
+*   Added [FrameNavigationCompleted][Webview2ReferenceWin32Icorewebview2ViewWebview209488AddFramenavigationcompleted] event.  Now, when an `iframe` element completes navigation, an event is run and returns the success of the navigation and the navigation ID.  
 *   Added [ICoreWebView2EnvironmentOptions][Webview2ReferenceWin32Icorewebview2environmentoptionsViewWebview209488] interface, which may be used to determine the version of the Evergreen WebView2 Runtime targeted by your app.  
 *   Added [IsBuiltInErrorPageEnabled][Webview2ReferenceWin32Icorewebview2settingsViewWebview209488GetIsbuiltinerrorpageenabled] setting.  Now, you may choose to turn on or off the built-in error webpage for navigation failure and render process failure.  
 *   Updated Remote Object Injection to support .NET `IDispatch` implementations \([#113][GithubMicrosoftedgeWebviewfeedbackIssue113]\).  
