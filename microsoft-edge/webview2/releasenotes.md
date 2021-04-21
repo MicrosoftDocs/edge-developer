@@ -166,7 +166,7 @@ Release Date: February 10, 2021
 *   Fixed Dynamic DPI issue when moving apps between different monitors.  \([\#58][GithubMicrosoftedgeWebviewfeedbackIssue58]\)  
 *   Improved the `HRESULT` instances passed by [ICoreWebView2WebResourceResponseViewGetContentCompletedHandler::Invoke][Webview2ReferenceWin32Icorewebview2webresourceresponseviewgetcontentcompletedhandlerViewWebview210790PrereleaseInvoke].  
 *   Turned off autofill manage button.  \([\#585][GithubMicrosoftedgeWebviewfeedbackIssue585]\).  
-*   Fixed Visual Studio crashes while running `WebView2.Dispose` when hosted in multiple windows.  \([\#816][GithubMicrosoftedgeWebviewfeedbackIssue816]\ and [\#442][GithubMicrosoftedgeWebviewfeedbackIssue442]\).  
+*   Fixed Visual Studio crashes while you run `WebView2.Dispose` when hosted in multiple windows.  \([\#816][GithubMicrosoftedgeWebviewfeedbackIssue816]\) and [\#442][GithubMicrosoftedgeWebviewfeedbackIssue442]\).  
 *   Fixed bug to display WebView2 control in Visual Studio Toolbox.  \([\#210][GithubMicrosoftedgeWebviewfeedbackIssue210]\).  
 *   Reduced high CPU usage issues.  \([\#878][GithubMicrosoftedgeWebviewfeedbackIssue878]\).  
 *   Fixed issues with deprecated 1.0.781-prerelease package.  [\#875][GithubMicrosoftedgeWebviewfeedbackIssue875] and [\#878][GithubMicrosoftedgeWebviewfeedbackIssue878]\).  
@@ -181,7 +181,7 @@ Release Date: February 10, 2021
 
 #### Bug fixes  
 
-*   Fixed bug that crashed WebView apps that use the WPF SDK.  The crash occurred when windows were closed using the `F4` key.  \([\#399][GithubMicrosoftedgeWebviewfeedbackIssue399]\).  
+*   Fixed bug that crashed WebView apps that use the WPF SDK.  The crash occurred when you selected `F4` to close a window.  \([\#399][GithubMicrosoftedgeWebviewfeedbackIssue399]\).  
 *   The WebView2 initialization screen is now transparent, instead of gray.  \([\#196][GithubMicrosoftedgeWebviewfeedbackIssue196]\).  
     
 ## 1.0.705.50  
