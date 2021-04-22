@@ -17,9 +17,9 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 > Ensure you re-compile your app after updating the NuGet package.  The WebView team recommends that you use the Canary channel when you develop using the prerelease packages, and the Evergreen WebView2 Runtime when you use the release packages.  For more information, navigate to [Matching WebView2 Runtime versions][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].  
 
 > [!NOTE]
-> Some WebView2 bug fixes are Runtime or SDK specific.  
-
-## 1.0.860-prerelease  
+> WebView2 bug fixes are either Runtime or SDK specific.  
+<!-- 
+## 1.0.865-prerelease  
 
 Release Date: April 19, 2021  
 
@@ -46,7 +46,7 @@ Release Date: April 19, 2021
     
 ### .NET  
 
-#### Features  
+#### Experimental Features  
 
 *   Added WebView2 designer tool to WPF Toolbox.  \([\#210][GithubMicrosoftedgeWebviewfeedbackIssue210]\).  
 *   Added WebView2 UI element in .NET Designer Mode.  
@@ -59,12 +59,12 @@ Release Date: April 19, 2021
 *   Fixed bug that caused crash when you try to refresh before first navigation completed.  \([\#1011][GithubMicrosoftedgeWebviewfeedbackIssue1011]\).
 *   Fixed initialization so navigation occurs during `CoreWebView2InitializationCompleted`.  \([\#1050][GithubMicrosoftedgeWebviewfeedbackIssue1050]\).
 *   Improved .NET browser process crash error handling.  You cmay now recreate controls after you handle a `ProcessFailed` event without a crash.  \([\#996][GithubMicrosoftedgeWebviewfeedbackIssue996]\).  
-    
-## 1.0.818.39  
+     -->
+## 1.0.818.41  
 
-Release Date: April 19, 2021  
+Release Date: April 21, 2021  
 
-[NuGet package][NuGetGallery1.0.818.39] \| Minimum Runtime version to load: 86.0.616.0 or newer \| Full API Compatibility: 90.0.818.39 or newer  
+[NuGet package][NuGetGallery1.0.818.39] \| Minimum Runtime version to load: 86.0.616.0 or newer \| Full API Compatibility: 90.0.818.41 or newer  
 
 ### General  
 
@@ -72,14 +72,7 @@ Release Date: April 19, 2021
 
 *   Improved WebView2 code to be more resilient to `.exe` application files with malformatted version information.  \([\#850][GithubMicrosoftedgeWebviewfeedbackIssue850]\).  
 *   Removed `--winhttp-proxy-resolver` from WebView browser process command-line, turned on other proxy command-line options for WebView2.  
-    
-#### Promotions  
-
-*   The following experimental APIs are now promoted to Stable.  
-    *   User Agent API.  
-    *   `AreBrowserAcceleratorKeysEnabled`.  
-    *   Extended `ProcessFailed`.  
-        
+  
 ## 1.0.824-prerelease  
 
 Release Date: March 8, 2021  
