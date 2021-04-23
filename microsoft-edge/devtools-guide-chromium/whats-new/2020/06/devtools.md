@@ -200,7 +200,7 @@ DevTools now has better support for some of the latest JavaScript language featu
       Syntax highlighting for [private fields][V8DevClassFieldsPrivate]  
    :::column-end:::
    :::column span="2":::
-      private class fields are now properly syntax-highlighted and pretty-printed in the **Sources** tool.  
+      private class fields are now properly syntax-highlighted and pretty-printed in the **Sources** panel.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -208,7 +208,7 @@ DevTools now has better support for some of the latest JavaScript language featu
       Syntax highlighting for [Nullish coalescing operator][V8DevNullishCoalescing]
    :::column-end:::
    :::column span="2":::
-      DevTools now properly pretty-prints the nullish coalescing operator in the **Sources** tool.  
+      DevTools now properly pretty-prints the nullish coalescing operator in the **Sources** panel.  
    :::column-end:::
 :::row-end:::  
 
@@ -248,9 +248,9 @@ The line numbers make it clearer that you are looking at binary data, and is mor
 
 Chromium issue [#1071432][CR1071432]  
 
-### Line-wise copy and cut in Sources tool  
+### Line-wise copy and cut in Sources Panel  
 
-When performing copy or cut with no selection in the [Editor of the Sources tool][DevtoolsSourcesEditCssJavascript], DevTools copies or cuts the current line of content.  
+When performing copy or cut with no selection in the [Sources panel editor][DevtoolsSourcesEditCssJavascript], DevTools copies or cuts the current line of content.  
 
 :::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="With the cursor at the end of Line 5, copying the whole line from pen.js in the DevTools and pasting in Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
    With the cursor at the end of Line 5, copying the whole line from **pen.js** in the DevTools and pasting in [Visual Studio Code][VisualStudioCode].
@@ -310,7 +310,7 @@ Chromium issue [#974550][CR974550]
 
 ### New icons for breakpoints, conditional breakpoints, and logpoints  
 
-The **Sources** tool has new designs for breakpoints, conditional breakpoints, and logpoints.  Breakpoints are represented by a red circle, just like [Visual Studio Code][VisualStudioCode] and [Visual Studio][VisualStudio].  Icons are added to differentiate conditional breakpoints and logpoints.  
+The **Sources** panel has new designs for breakpoints, conditional breakpoints, and logpoints.  Breakpoints are represented by a red circle, just like [Visual Studio Code][VisualStudioCode] and [Visual Studio][VisualStudio].  Icons are added to differentiate conditional breakpoints and logpoints.  
 
 :::image type="complex" source="../../media/2020/06/breakpoints.msft.png" alt-text="Breakpoints" lightbox="../../media/2020/06/breakpoints.msft.png":::
    Breakpoints  
@@ -333,7 +333,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsCustomizeIndexDrawer]: /microsoft-edge/devtools-guide-chromium/customize/index#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsExperimentalFeaturesTurnOn]: /microsoft-edge/devtools-guide-chromium/experimental-features#turn-on-experimental-features "Turn on experimental features - Experimental features | Microsoft Docs"  
 [DevtoolsIssues]: /microsoft-edge/devtools-guide-chromium/issues "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"
-[DevtoolsSourcesEditCssJavascript]: /microsoft-edge/devtools-guide-chromium/sources#the-editor-pane-to-view-or-edit-files "The Editor pane, to view or edit files - Sources tool overview | Microsoft Docs"  
+[DevtoolsSourcesEditCssJavascript]: /microsoft-edge/devtools-guide-chromium/sources#edit-css-and-javascript "Edit CSS and JavaScript - Sources Panel Overview | Microsoft Docs"  
 [DevtoolsNetworkIndexLogActivity]: /microsoft-edge/devtools-guide-chromium/network/index#log-network-activity "Log network activity - Inspect Network Activity In Microsoft Edge DevTools | Microsoft Docs"
 
 [CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "Style editing for CSS-in-JS frameworks | CodePen"

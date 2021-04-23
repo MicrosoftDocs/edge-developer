@@ -288,14 +288,14 @@ The Console now provides more detail on why a source map failed to load or parse
 
 ### Setting for disabling scrolling past the end of a file  
 
-Open [Settings][Settings] and then disable **Preferences** > **Sources** > **Allow scrolling past end of file** to disable the default UI behavior that allows you to scroll well past the end of a file in the **Sources** tool.  
+Open [Settings][Settings] and then disable **Preferences** > **Sources** > **Allow scrolling past end of file** to disable the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel.  
 
 :::image type="complex" source="../../images/2020/01/settings.msft.png" alt-text="Disabling Allow scrolling past end of file" lightbox="../../images/2020/01/settings.msft.png":::
    Disabling **Allow scrolling past end of file** in Settings  
 :::image-end:::  
 
-:::image type="complex" source="../../images/2020/01/scrollingsources.msft.png" alt-text="Scrolling past the end of a file is now disabled in the Sources tool" lightbox="../../images/2020/01/scrollingsources.msft.png":::
-   Scrolling past the end of a file is now disabled in the Sources tool  
+:::image type="complex" source="../../images/2020/01/scrollingsources.msft.png" alt-text="Scrolling past the end of a file is now disabled in the Sources panel" lightbox="../../images/2020/01/scrollingsources.msft.png":::
+   Scrolling past the end of a file is now disabled in the Sources panel  
 :::image-end:::  
 
 ## Download the Microsoft Edge preview channels  
