@@ -64,7 +64,7 @@ This is the size of memory that is freed once the object is deleted along with t
 There are lots of internal Garbage Collector roots, most of which are not interesting for the users.  From the applications standpoint, there are the following kinds of roots.  
 
 *   Window global object \(in each iframe\).  In the heap snapshots, the `distance` field indicates the number of property references on the shortest retaining path from the window.  
-*   Document DOM tree consisting of all native DOM nodes reachable by traversing the document.  Not all of the nodes may have JS wrappers, but if a node has a wrapper, it is alive while the document is alive.  
+*   The document DOM tree, consisting of all native DOM nodes that are reachable by traversing the document.  Not all of the nodes have JavaScript wrappers, but if a node has a wrapper, the node is alive while the document is alive.  
 *   Sometimes objects are retained by the debug context in the **Sources** tool and the **Console**, such as after Console evaluation.  Create heap snapshots with a cleared **Console** tool and no active breakpoints in the debugger in the **Sources** tool.
 
 >[!TIP]
