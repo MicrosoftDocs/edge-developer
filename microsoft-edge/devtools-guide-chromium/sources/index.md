@@ -50,7 +50,7 @@ The following subsections cover the Navigator pane:
 *   [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
 *   [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
 *   [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
-*   [Using the Snippets tab to run JavaScript code snippets on any page](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-page)
+*   [Using the Snippets tab to run JavaScript code snippets on any page](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
 *   [Using the Command Menu to open files](#using-the-command-menu-to-open-files)
 
 ### Using the Page tab to explore resources that construct the current webpage
