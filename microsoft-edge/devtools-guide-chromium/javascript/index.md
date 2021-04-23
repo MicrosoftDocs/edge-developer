@@ -29,7 +29,7 @@ This article teaches you the basic workflow for debugging any JavaScript issue i
 
 Finding a series of actions that consistently reproduce a bug is always the first step to debugging.  
 
-1.  Choose **Open Demo** (below), opening the page into a new tab of the browser.  To open the demo in a new tab, hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and then choose **Open Demo**:
+1.  Choose the following **Open Demo** link and open the webpage in a new tab.  To open the demo in a new tab, select and hold `Ctrl` \(Windows, Linux\) or `Command` \(macOS\), and then choose **Open Demo**.  
     
     [Open Demo][OpenDebugJSDemo]  
     
@@ -64,8 +64,8 @@ The **Sources** tool UI has three parts.
 :::image-end:::  
 
 1.  The **Navigator** pane \(Section 1 in the previous figure\).  Every file that the webpage requests is listed here.  
-1.  The **Editor** pane \(Section 2 in the previous figure\).  After selecting a file in the **Navigator** pane, the contents of that file are displayed here.  
-1.  The **Debugger** pane \(Section 3 in the previous figure\).  Various tools for inspecting the JavaScript for the webpage.  If your DevTools window is wide, this pane is displayed to the right of the **Editor** pane.  
+1.  The **Editor** pane \(Section 2 in the previous figure\).  After you choose a file in the **Navigator** pane, this pane displays the contents of the file.  
+1.  The **Debugger** pane \(Section 3 in the previous figure\).  This pane provides tools for inspecting the JavaScript for the webpage.  If your DevTools window is wide, this pane is displayed to the right of the **Editor** pane.  
     
 ## Step 3: Pause the code with a breakpoint  
 
@@ -113,7 +113,7 @@ If you step back and think about how the app works, you may make an educated gue
 
 <!--todo: add inprivate section when available -->  
 
-**Event Listener Breakpoints** are just one of many types of breakpoints available in DevTools.  Memorize all the different types to help you debug different scenarios as quickly as possible.  <!--See [Pause your code with breakpoints][JSBreakpoints] to learn when and how to use each type.  -->  
+**Event Listener Breakpoints** are just one of many types of breakpoints available in DevTools.  Memorize all the different types to help you debug different scenarios as quickly as possible.  <!--  To learn when and how to use each type, navigate to [Pause your code with breakpoints][JSBreakpoints].  -->  
 
 ## Step 4: Step through the code  
 
@@ -163,15 +163,15 @@ If you pause on a line of code, the **Scope** pane displays the local and global
 
 ### Method 2: Watch Expressions  
 
-The **Watch** pane lets you monitor the values of variables (such as `sum`) or expressions (such as `typeof sum`) over time.  You may store any valid JavaScript expression in a Watch Expression.  Try it now.  
+The **Watch** pane allows you to monitor the values of variables (such as `sum`) or expressions (such as `typeof sum`).  You may store any valid JavaScript expression in a Watch Expression.  
 
 1.  Choose the **Watch** pane.  
 1.  Choose **Add watch expression** \(![Add watch expression](../media/add-expression-icon.msft.png)\).  
 1.  Type `typeof sum`.  
-1.  Select `Enter`.  DevTools shows `typeof sum: "string"`.  The value to the right of the colon is the result of your Watch Expression.  
+1.  Select `Enter`.  DevTools displays `typeof sum: "string"`.  The value to the right of the colon is the result of your Watch Expression.  
     
 > [!NOTE]
-> In the **Watch** pane \(bottom-right\) in the following figure, the `typeof sum` Watch Expression is displayed.  If your DevTools window is wide, the **Watch** pane is included within the **Debugger** pane, which then appears on the right.  
+> In the following figure, the `typeof sum` Watch Expression is displayed in the **Watch** pane.  If your DevTools window is wide, the **Watch** pane is displayed within the **Debugger** pane, which then appears on the right.  
 
 :::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="The Watch pane" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
    The **Watch** pane  
@@ -181,7 +181,7 @@ As suspected, `sum` is being evaluated as a string, when it should be a number. 
 
 ### Method 3: The Console  
 
-The **Console** allows you to view `console.log()` messages and you may also use it to evaluate arbitrary JavaScript statements.  For debugging, you may use the **Console** to test potential fixes for bugs.  Try it now, as follows:  
+The **Console** allows you to view `console.log()` output.  You can also use the **Console** to evaluate arbitrary JavaScript statements while the debugger is paused at a code statement.  For debugging, you can use the **Console** to test potential fixes for bugs.
 
 1.  If the **Console** tool is closed, select `Esc` to open it.  The **Console** tool opens in the lower pane of the DevTools window.  
 1.  In the **Console**, type `parseInt(addend1) + parseInt(addend2)`.  The statement the tool is paused on a line of code where `addend1` and `addend2` are in scope.  
@@ -193,7 +193,7 @@ The **Console** allows you to view `console.log()` messages and you may also use
     
 ## Step 7: Apply a fix  
 
-If you find a fix for the bug, try out your fix by editing the code and rerunning the demo.  You may edit JavaScript code directly within the DevTools UI and apply the fix.  Try it now, as follows:
+We've identified a possible fix for the bug.  Next, edit the JavaScript code directly within the DevTools UI and then rerun the demo to test the fix, as follows.
 
 1.  Choose **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\).  
 1.  In the **Editor** pane, replace the line `var sum = addend1 + addend2` with `var sum = parseInt(addend1) + parseInt(addend2)`.  
@@ -202,7 +202,7 @@ If you find a fix for the bug, try out your fix by editing the code and rerunnin
 1.  Try out the demo with different values.  The demo now calculates correctly.  
     
 > [!CAUTION]
-> This workflow applies a fix to a *copy* of the code that's sent from the server.  When debugging your own project, after you've identified the fix, you need to apply that fix to the code that is on the server, such as by editing your local source code and then re-deploying your fixed code to the server.
+> This workflow only applies a fix to a local copy of the code sent from the server.  When debugging your project, after you identify the fix, you still need to apply that fix to the code on the server, such as by editing your local source code and then re-deploying your fixed code to the server.
 
 ## Next steps  
 
@@ -218,10 +218,10 @@ For more information about when and how to use each type, navigate to [Pause you
 
 A couple of code stepping controls aren't explained in this article.  For more information, navigate to [Step over line of code][DevToolsJavascriptReferenceStepThroughCode] in the "Use the debugger features" article.
 
-### Related articles
+### See also
 
-*   [Use the debugger features][DevToolsJavascriptReference] - Using the UI of the debugger in the Sources tool of DevTools.
-*   [Sources tool overview][DevToolsSourcesIndex] - The debugger and JavaScript editor are the main part of the Sources tool, introduced here.
+*   [Use the debugger features][DevToolsJavascriptReference] - Using the UI of the debugger in the Sources tool.
+*   [Sources tool overview][DevToolsSourcesIndex] - Introduces the JavaScript debugger and code editor.
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

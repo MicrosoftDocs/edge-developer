@@ -353,13 +353,13 @@ The first task, then, is to find code that you do not need to run on page load.
        The Coverage report  
     :::image-end:::  
     
-1.  Choose the **jquery.js** row.  DevTools opens the file in the Sources tool.  A line of code ran if it has a blue bar next to it.  A red bar means it was not run, and is definitely not needed on page load.  
+1.  Choose the `jquery.js` row.  DevTools opens the file in the **Sources** tool.  If a line of code ran, a blue bar appears next to it.  A red bar means the line of code was not run, and is definitely not needed on load of the webpage.  
     
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="Viewing the jQuery file in the Sources tool" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
        Viewing the jQuery file in the **Sources** tool  
     :::image-end:::  
     
-1.  Scroll through the jQuery code a bit.  Some of the lines that get "run" are actually just comments.  Running this code through a minifier that strips comments is another way to reduce the size of this file.  
+1.  Scroll through the jQuery code.  Some of the lines that run are actually just comments.  To strip comments and reduce the size of the file, run the code through a minifier app or script.  
 
 In short, when you are working with your own code, the **Coverage** tool helps you analyze your code, line-by-line, and only ship the code that is needed for page load.  
 

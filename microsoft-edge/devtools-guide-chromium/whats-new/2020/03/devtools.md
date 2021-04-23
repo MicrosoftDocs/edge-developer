@@ -99,7 +99,7 @@ Chromium issue [#1050999][CR1050999]
 
 The **Changes tool** tracks any changes you have made to CSS or JavaScript in the DevTools.  You are able to use the **Changes tool** to quickly display all your changes and take those back to your editor/IDE.  
 
-To open the **Changes tool**, select `Ctrl`+`Shift`+`P` in the DevTools to open the [Command Menu][DevToolsCommandMenuIndex] and type `changes`.  choose and run the **Show Changes** command to open the **Changes tool** in the DevTools drawer.  
+To open the **Changes tool**, select `Ctrl`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS in the DevTools to open the [Command Menu][DevToolsCommandMenuIndex], and then type `changes`.  Choose and run the **Show changes** command to open the **Changes tool** in the DevTools drawer.  
 
 When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to display all of your minified code.  Starting in Microsoft Edge 83, you may now scroll horizontally using the arrow keys on your keyboard.  
 

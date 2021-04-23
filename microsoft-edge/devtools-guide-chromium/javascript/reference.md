@@ -24,19 +24,20 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Use the debugger features
 
-Discover new debugging workflows with this guide to using the debugging features of Microsoft Edge DevTools.  
+This article covers how to use the debugger in Microsoft Edge DevTools, including how to set a line-of-code breakpoint.  To set other types of breakpoints, see [Pause your code with breakpoints][DevToolsJavascriptBreakpoints].  
 
-To learn the basics of debugging, navigate to [Get started with debugging JavaScript in Microsoft Edge DevTools][DevToolsJavascriptGetStarted], which presents simple, existing tutorial code, with screen captures.
+To learn the basics of debugging, navigate to [Get started with debugging JavaScript in Microsoft Edge DevTools][DevToolsJavascriptGetStarted], which is a tutorial that uses an existing, form-based webpage.  The tutorial has screen captures, so you can skim it.  You can easily try out the debugger features by using the demo webpage.
 
 ## View and edit JavaScript code
 
-When fixing a bug, you often want to test out some changes to your JavaScript code.  You do not need to make the changes in an external editor or IDE and then refresh the page.  You may edit your script in DevTools.  
+When fixing a bug, you often want to try out some changes to your JavaScript code.  You don't need to make the changes in an external editor or IDE, re-upload the file to the server, and then refresh the page; instead, to test changes, you can edit your JavaScript code directly in DevTools and see the result immediately.  
 
-Complete the following actions to edit a script.  
+To view and edit a JavaScript file:  
 
-1.  Open the file in the **Editor** pane of the **Sources** tool.  
-1.  Make your changes in the **Editor** pane.  
-1.  Select `Ctrl`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save.  DevTools patches the entire JS file into the JavaScript engine of Microsoft Edge.  
+1.  Navigate to the **Sources** tool.  
+1.  In the **Navigator** pane, select your file, to open it in the **Editor** pane.
+1.  In the **Editor** pane, edit your file.  
+1.  Select `Ctrl`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save.  DevTools then loads the JavaScript file into the JavaScript engine of Microsoft Edge.  
     
     :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="The Editor pane" lightbox="../media/javascript-sources-html-minified.msft.png":::
        The **Editor** pane  
@@ -52,32 +53,29 @@ To make a minified file human-readable, choose the **Format** \(![Format](../med
 
 ## Set a breakpoint, to pause code
 
-Set a breakpoint, to pause your code in the middle of the runtime.  The most basic and well-known type of breakpoint is "line-of-code".
+To pause your code in the middle of the runtime, set a breakpoint.  The most basic and well-known type of breakpoint is a line-of-code breakpoint.
 
-Use a line-of-code breakpoint when you know the exact region of code that you need to investigate.  DevTools always pauses at this line of code, before running it.
+Use a line-of-code breakpoint when you know the exact region of code that you need to investigate.  DevTools always pauses at the specified line of code, before running it.
 
-To set a line-of-code breakpoint in DevTools:  
+To set a line-of-code breakpoint:  
 
-1.  Choose the **Sources** tool.  
-1.  Open the file containing the line of code on which you want to break.  
-1.  Go the line of code.  
-1.  To the left of the line of code is the line number column.  Choose it.  A red icon appears next to the line number column.  
+1.  Navigate to the **Sources** tool.  
+1.  Open the file that contains the line of code.  
+1.  Select the area to the left of the line number for the line of code.  Or, right-click the line number and then choose **Add breakpoint**.  A red circle then appears next to the line number, indicating a breakpoint.  
     
     :::image type="complex" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="A line-of-code breakpoint" lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
        A line-of-code breakpoint  
     :::image-end:::  
 
-Line-of-code breakpoints may be inefficient to set, especially if you do not know exactly where to look, or if you are working with a large codebase.  You may save time when debugging by knowing how and when to use the other types of breakpoints.  
-
-To learn more about how to set breakpoints, navigate to [Pause your code with breakpoints][DevToolsJavascriptBreakpoints].  
+Line-of-code breakpoints may be inefficient to set, especially if you do not know exactly where to look, or if your codebase is large.  To save time when debugging, learn how and when to use the other types of breakpoints.  For more information, navigate to [Pause your code with breakpoints][DevToolsJavascriptBreakpoints].
 
 ## Step through code  
 
-Once your code is paused at a breakpoint, step through the code, one line at a time, investigating control flow and property values along the way.  
+After your code is paused at a breakpoint, step through the code, one line at a time, investigating control flow and property values along the way.  
 
 ### Step over line of code  
 
-When paused on a line of code containing a function that is not relevant to the problem you are debugging, choose the **Step over** \(![Step over](../media/step-over-icon.msft.png)\) button to run the function without stepping into it.  
+When paused on a line of code containing a function that isn't relevant to the problem you are debugging, choose the **Step over** \(![Step over](../media/step-over-icon.msft.png)\) button to run the function without stepping into it.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="Choose Step over" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
    Choose **Step over**  
@@ -125,7 +123,7 @@ You are paused on `A`.  After you choose **Step into**, DevTools runs this line 
 
 ### Step out of line of code  
 
-When paused inside of a function that is not related to the problem you are debugging, choose the **Step out** \(![Step out](../media/step-out-icon.msft.png)\) button to run the rest of the code of the function.  
+When paused inside of a function that isn't related to the problem you are debugging, choose the **Step out** \(![Step out](../media/step-out-icon.msft.png)\) button to run the rest of the code of the function.  
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="Choose Step out" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
    Choose **Step out**  
@@ -149,7 +147,7 @@ You are paused on `A`.  After you choose **Step out**, DevTools runs the rest of
 
 ### Run all code up to a specific line  
 
-When debugging a long function, there may be a lot of code that is not related to the problem you are debugging.  
+When debugging a long function, there may be a lot of code that isn't related to the problem you are debugging.  
 
 You may choose to step through all the lines, but that is tedious.  You may choose to set a line-of-code breakpoint on the line in which you are interested and then choose the **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\) button, but there is a faster way.  
 
@@ -191,7 +189,7 @@ To continue the runtime after a pause of your script, choose the **Resume script
 
 #### Force script runtime  
 
-To ignore all breakpoints and force your script to resume running, choose and hold the **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\) button and then choose the **Force script execution** \(![Force script execution](../media/force-script-run-icon.msft.png)\) button.  
+To ignore all breakpoints and force your script to continue to run, choose and hold the **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\) button and then choose the **Force script execution** \(![Force script execution](../media/force-script-run-icon.msft.png)\) button.  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="Choose Force script execution" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
    Choose **Force script execution**  
@@ -205,7 +203,7 @@ When working with web workers or service workers, choose on a context listed in 
    The **Threads** pane  
 :::image-end:::  
 
-For example, suppose that you are paused on a breakpoint in both your main script and your service worker script.  You want to view the local and global properties for the service worker context, but the **Sources** tool is showing the main script context.  By choosing the service worker entry in the **Threads** pane, you should be able to switch to that context.  
+For example, suppose that you are paused on a breakpoint in both your main script and your service worker script.  You want to view the local and global properties for the service worker context, but the **Sources** tool is showing the main script context.  To switch to the service worker context, in the **Threads** pane, choose the service worker entry.  
 
 ## View and edit properties and variables
 
@@ -220,15 +218,15 @@ While paused on a line of code, use the **Scope** pane to view and edit the valu
 
 ## Watch the values of JavaScript expressions  
 
-Use the **Watch** pane to watch the values of custom expressions.  You may watch any valid JavaScript expression.  
+Use the **Watch** pane to watch the values of custom expressions.  You can watch any valid JavaScript expression.  
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-watch.msft.png" alt-text="The Watch pane" lightbox="../media/javascript-sources-get-started-js-watch.msft.png":::
    The **Watch** pane  
 :::image-end:::  
 
-*   Choose the **Add Expression** \(![Add Expression](../media/add-expression-icon.msft.png)\) button to create a new watch expression.  
-*   Choose the **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\) button to refresh the values of all existing expressions.  Values automatically refresh while stepping through code.  
-*   Hover on an expression and choose the **Delete Expression** \(![Delete Expression](../media/delete-expression-icon.msft.png)\) button to delete it.  
+*   To create a new watch expression, select the **Add watch expression** \(![Add watch expression](../media/add-expression-icon.msft.png)\) button.  
+*   To refresh the values of all existing expressions, select the **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\) button.  Values automatically refresh while stepping through code.  
+*   To delete a watch expression, right-click the expression and then select **Delete watch expression** \(![Delete watch expression](../media/delete-expression-icon.msft.png)\).  
 
 ## View the call stack  
 
@@ -251,7 +249,7 @@ Choose an entry to jump to the line of code where that function was called.  The
 This should be moved to an "Export debug data" H2 section when there is enough content for that, but there is not right now, so it is here.
 -->
 
-to copy the current call stack to the clipboard, hover anywhere in the **Call Stack** pane, open the contextual menu \(right-click\), and choose **Copy stack trace**.  
+To copy the current call stack to the clipboard, hover anywhere in the **Call Stack** pane, open the contextual menu \(right-click\), and choose **Copy stack trace**.  
 
 :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png" alt-text="Choose Copy Stack Trace" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png":::
    Choose **Copy Stack Trace**  
@@ -269,7 +267,7 @@ onChoose (get-started.js:15)
 
 Mark a script as Library code when you want to ignore that script while debugging.  When marked as Library code, a script is obscured in the **Call Stack** pane, and you never step into the functions of the script when you step through your code.  
 
-The following code snippet is an example for you to step-through.  
+For example, in the following code snippet, line `A` uses `lib`, which is a third-party library.  If you are confident that the problem you are debugging is not related to that third-party library, then it makes sense to mark the script as **Library code**.  
 
 ```javascript
 function animate() {
@@ -279,15 +277,13 @@ function animate() {
 }
 ```  
 
-Suppose line `A` uses `lib`, which is a third-party library that you trust.  If you are confident that the problem you are debugging is not related to that third-party library, then it makes sense to mark the script (in this case, a particular function call) as **Library code**.  
-
 ### Mark a script as Library code from the Editor pane  
 
-Complete the following actions to mark a script as **Library code** from the **Editor** pane.  
+To mark a script as **Library code** from the **Editor** pane:  
 
 1.  Open the file.  
 1.  Hover anywhere and open the contextual menu \(right-click\).  
-1.  Choose **Mark as Library code** (or **Add script to ignore list**). 
+1.  Choose **Add script to ignore list** (previously shown as **Mark as Library code**).  
     
     :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="Mark a script as Library code from the Editor pane" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
        Mark a script as **Library code** from the **Editor** pane  
@@ -295,10 +291,10 @@ Complete the following actions to mark a script as **Library code** from the **E
     
 ### Mark a script as Library code from the Call Stack pane  
 
-Complete the following actions to mark a script as **Library code** from the **Call Stack** pane.  
+To mark a script as **Library code** from the **Call Stack** pane:  
 
 1.  Hover on a function from the script and open the contextual menu \(right-click\).  
-1.  Choose **Mark as Library code** (or **Add script to ignore list**).  
+1.  Choose **Add script to ignore list** (previously shown as **Mark as Library code**).  
     
     :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Mark a script as Library code from the Call Stack pane" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
        Mark a script as **Library code** from the **Call Stack** pane  
@@ -306,7 +302,7 @@ Complete the following actions to mark a script as **Library code** from the **C
     
 ### Mark a script as Library code from Settings  
 
-Complete the following actions to mark a single script or pattern of scripts from **Settings**.  
+To mark a single script or pattern of scripts from **Settings**:  
 
 1.  Open [Settings][DevToolsCustomize].  
 1.  Navigate to the **Library code** setting.  
@@ -322,12 +318,12 @@ Complete the following actions to mark a single script or pattern of scripts fro
 
 If you find yourself running the same debug code in the Console over and over, consider Snippets.  Snippets are runtime scripts that you author, store, and run within DevTools.  
 
-To learn more, navigate to [Run Snippets of Code From Any Page][DevToolsJavascriptSnippets].  
+See [Run snippets of JavaScript on any webpage][DevToolsJavascriptSnippets].  
 
-## Related articles
+## See also  
 
 *   [Get Started With Debugging JavaScript In Microsoft Edge DevTools][DevToolsJavascriptGetStarted] - A simple, short tutorial using existing code, with screen captures.
-*   [Sources tool overview][DevToolsSourcesIndex] - The debugger and JavaScript editor are the main part of the Sources tool, introduced here.
+*   [Sources tool overview][DevToolsSourcesIndex] - The **Sources** tool includes the JavaScript debugger and editor.
 *   [Disable JavaScript with Microsoft Edge DevTools][DevToolsJavascriptDisable].
 
 ## Getting in touch with the Microsoft Edge DevTools team  

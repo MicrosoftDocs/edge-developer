@@ -67,7 +67,7 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 
 ### Open the Snippets tab with a mouse  
 
-1.  Choose the **Sources** tab.  The **Sources** tool appears.  In the **Navigator** pane (on the left), the **Page** tab is usually selected, by default.  
+1.  Choose the **Sources** tab.  The **Sources** tool appears.  
     
     :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="The Sources tool with the Page tab open on the left" lightbox="../media/javascript-sources-page-pane.msft.png":::
        The **Sources** tool with the **Page** tab open on the left  
@@ -77,7 +77,7 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
     
 ### Open the Snippets tab with the Command Menu  
 
-1.  Focus your cursor somewhere in DevTools.  
+1.  Select anything in DevTools, so that DevTools has focus.  
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu.  
 1.  Type `Snippets`, choose **Show Snippets**, and then select `Enter` to run the command.  
     
@@ -89,9 +89,9 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 
 ### Create a Snippet through the Sources tool  
 
-1.  [Open the **Snippets** tab](#open-the-snippets-tab).  
+1.  [Open the Snippets tab](#open-the-snippets-tab).  
 1.  Choose **New snippet**.  
-1.  Enter a name for your Snippet then select `Enter` to save.  
+1.  Enter a name for your Snippet, and then select `Enter`.  
     
     :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Name a Snippet" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
        Name a Snippet  
@@ -111,7 +111,7 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
 
 ## Edit Snippets  
 
-1.  [Open the **Snippets** tab](#open-the-snippets-tab).  
+1.  [Open the Snippets tab](#open-the-snippets-tab).  
 1.  In the **Snippets** tab, choose the name of the Snippet that you want to edit.  It opens in the **Code Editor**.  
     
     :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="The Code Editor" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
@@ -129,9 +129,9 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
 
 ### Run a Snippet from the Sources tool  
 
-1.  [Open the **Snippets** tab](#open-the-snippets-tab).  
+1.  [Open the Snippets tab](#open-the-snippets-tab).  
 1.  Choose the name of the Snippet that you want to run.  The Snippet opens in the **Code Editor**.  
-1.  Choose **Run Snippet** \(![Run Snippet](../media/run-snippet-icon.msft.png)\), or select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\).  
+1.  Choose **Run snippet** \(![Run Snippet](../media/run-snippet-icon.msft.png)\).
     
 ### Run a Snippet with the Command Menu  
 
@@ -147,12 +147,12 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
 
 ## Rename Snippets  
 
-1.  [Open the **Snippets** tab](#open-the-snippets-tab).  
+1.  [Open the Snippets tab](#open-the-snippets-tab).  
 1.  Hover on the Snippet name, open the contextual menu \(right-click\), and choose **Rename**.  
     
 ## Delete Snippets  
 
-1.  [Open the **Snippets** tab](#open-the-snippets-tab).  
+1.  [Open the Snippets tab](#open-the-snippets-tab).  
 1.  Hover on the Snippet name, open the contextual menu \(right-click\), and choose **Remove**.  
     
 ## Getting in touch with the Microsoft Edge DevTools team  
