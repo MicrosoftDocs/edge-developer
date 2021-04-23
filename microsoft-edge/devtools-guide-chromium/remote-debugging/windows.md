@@ -154,9 +154,9 @@ The **Event Listeners** pane in the **Elements** tool is blank on Windows 10 ver
 
 The **Cookies** pane in the **Application** panel is blank on Windows 10 version 1903.  The team plans to fix the **Cookies** pane in a service update to Windows 10 version 1903.  
 
-The **Audits** panel, the **3D View** panel, the **Emulated Devices** section in **Settings**, and the **Accessibility tree** pane in the **Elements** tool are not currently working as expected.  The team plans to fix these tools in a future update of Microsoft Edge.  
+The **Audits** tool, the **3D View** tool, the **Emulated Devices** section in **Settings**, and the **Accessibility tree** pane in the **Elements** tool are not currently working as expected.  The team plans to fix the listed tools in a future update of Microsoft Edge.  
 
-The file explorer does not launch from the DevTools in the **Sources** panel or in the **Security** panel when remote debugging.  The team plans to fix these tools in a future update of Microsoft Edge.  
+The file explorer does not launch from the DevTools in the **Sources** tool or in the **Security** panel when you remote debug.  The team plans to fix the tools in a future update of Microsoft Edge.  
 
 <!-- links -->
 
