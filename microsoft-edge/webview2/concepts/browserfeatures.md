@@ -3,7 +3,7 @@ description: Feature differences between Microsoft Edge and WebView2
 title: Feature differences between Microsoft Edge and WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/31/2021
+ms.date: 04/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -12,7 +12,7 @@ no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Paymen
 ---
 # Browser feature differences between Microsoft Edge and WebView2  
 
-WebView2 is based on the new Microsoft Edge browser.  You have the opportunity to extend features from the browser to WebView2-based apps, which is useful.  However, since WebView2 isn't limited to browser-like apps, there are some browser features that need to be modified or removed.   This article provides the following information.  
+WebView2 is based on the new Microsoft Edge browser.  You have the opportunity to extend features from the browser to WebView2-based apps, which is useful.  However, since WebView2 isn't limited to browser-like apps, there are some browser features that need to be modified or removed.  This article provides the following information.  
 
 *   The modified browser features and supporting information.   
 *   The ability to turn on or off the feature.  
@@ -52,6 +52,7 @@ The following table displays the WebView2 features that differ from the Microsof
 | Immersive Reader | Off | No | This feature depends on the browser UI for interaction.  This feature is turned off.  |  
 | Intrusive Ads | Off | No | This feature is turned off.  |  
 | Keyboard shortcuts | Review Details | Review Details | The keyboard shortcuts that are turned off by default either don't make sense or cause problems in WebView2.  You may not turn on or off these shortcuts.  Instead, you may listen for a key combination using the `AcceleratorKeyPressed` event and create a custom response if needed.  For more information, navigate to [Additional keyboard shortcuts information](#additional-keyboard-shortcuts-information). |  
+| Push notifications | Off | No | This feature is not implemented in WebView2.  For more information, navigate to [Add support for HTML5 Notification API (#308)][GithubMicrosoftedgeWebview2feedbackIssues308]. |  
 | Read Aloud | Off | No | This feature is turned off.  |  
 | Smart Screen | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Additionally, you may turn off Smart Screen using a command-line switch.  |  
 | Translate | Off | No | This feature is turned off.  |  
@@ -163,8 +164,7 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 
 > [!Note] 
 > To customize any of the keys individually, use the [AcceleratorKeyPressed][DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444] event.  
-  
-  
+
 ## Getting in touch with the Microsoft Edge WebView2 team  
 
 [!INCLUDE [contact WebView2 team note](../includes/contact-webview-team-note.md)]  
@@ -176,5 +176,7 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true "CoreWebView2Controller.AcceleratorKeyPressed Event | Microsoft Docs"  
 
 [DevtoolsShortcutsIndex]: ../../devtools-guide-chromium/shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
+
+[GithubMicrosoftedgeWebview2feedbackIssues308]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/308 "Add support for HTML5 Notification API (#308) | GitHub"  
 
 [PeterExperimentsChromiumCommandLineSwitches]: https://peter.sh/experiments/chromium-command-line-switches "List of Chromium Command Line Switches | Peter Beverloo"  
