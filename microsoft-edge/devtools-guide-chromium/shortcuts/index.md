@@ -57,7 +57,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Hard refresh | `Control`+`F5` or `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | Search for text within the current panel.  Not supported in the **Audits**, **Application**, and **Security** tools | `Control`+`F` | `Command`+`F` |  
 | Opens the **Search** tab in the [Drawer][DevtoolsCustomizeIndexDrawer], which lets you search for text across all loaded resources | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
-| Open a file in the **Sources** panel | `Control`+`O` or `Control`+`P` | `Command`+`O` or `Command`+`P` |  
+| Open a file in the **Sources** tool | `Control`+`O` or `Control`+`P` | `Command`+`O` or `Command`+`P` |  
 | Zoom in | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Zoom out | `Control`+`-` | `Command`+`-` |  
 | Restore default zoom level | `Control`+`0` | `Command`+`0` |  

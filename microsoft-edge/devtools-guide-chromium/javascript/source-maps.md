@@ -37,7 +37,7 @@ Keep your client-side code readable and debuggable even after you combine, minif
 
 ## Get started with preprocessors  
 
-This article explains how to interact with JavaScript Source Maps in the DevTools Sources Panel.  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->  
+This article explains how to interact with JavaScript Source Maps in the DevTools Sources tool.  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->  
 
 <!--todo: add link to Set Up CSS & JS Preprocessors when section is available -->  
 <!--[]: /web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content ""  -->  
@@ -55,7 +55,7 @@ The following types of preprocessors are commonly used in combination with Sourc
 *   Compilers \([Closure Compiler][GitHubGoogleClosureCompiler], [TypeScript][TypeScriptMain], [CoffeeScript][CoffeeScriptMain], [Dart][DartMain]\)  
 *   Minifiers \([UglifyJS][GitHubMishooUglifyJS]\)  
     
-## Source Maps in DevTools Sources panel  
+## Source Maps in DevTools Sources tool  
 
 Source Maps from preprocessors cause DevTools to load your original files in addition to your minified ones.  You then use the originals to set breakpoints and step through code.  Meanwhile, Microsoft Edge is actually running your minified code.  The running of the code gives you the illusion of running a development site in production.  
 
@@ -95,10 +95,10 @@ Navigate to the following page.
 
 Complete the following actions.  
 
-1.  Open the DevTools and navigate to the **Sources** panel.  
+1.  Open DevTools and navigate to the **Sources** tool.  
 1.  Enter in a filename into the **Name your code:** input field.  
 1.  Choose the **compile** button.  
-1.  An alert appears with the evaluated sum from the CoffeeScript source.  
+1.  An alert appears, showing the evaluated sum from the CoffeeScript source.  
     
 If you expand the **Sources** sub-panel you now display a new file with the custom filename you entered earlier.  If you double-click to view this file, it contains the compiled JavaScript for the original source.  On the last line, however, is a `// @sourceURL` comment indicating the original source file.  This may help you with debugging while working with language abstractions.  
 

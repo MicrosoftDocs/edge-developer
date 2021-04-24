@@ -123,16 +123,16 @@
                   href: devtools-guide-chromium/device-mode/orientation.md
             - name: IE mode
               href: devtools-guide-chromium/ie-mode/index.md
-            - name: Javascript troubleshooting
+            - name: JavaScript troubleshooting
               items:
-                - name: JavaScript debugging reference
+                - name: Use the debugger features
                   href: devtools-guide-chromium/javascript/reference.md
+                - name: Pause your code with breakpoints
+                  href: devtools-guide-chromium/javascript/breakpoints.md
                 - name: Map pre-processed code to source code
                   href: devtools-guide-chromium/javascript/source-maps.md
                 - name: Mark content scripts as Library Code
                   href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
-                - name: Pause your code with breakpoints
-                  href: devtools-guide-chromium/javascript/breakpoints.md
             - name: Memory troubleshooting
               items:
                 - name: Memory terminology
@@ -243,16 +243,14 @@
               href: devtools-guide-chromium/security/index.md
             - name: Sources
               items:
-                - name: Sources panel overview
+                - name: Sources tool overview
                   href: devtools-guide-chromium/sources/index.md
-                - name: JavaScript debugging reference
-                  href: devtools-guide-chromium/javascript/reference.md
-                - name: Disable JavaScript
-                  href: devtools-guide-chromium/javascript/disable.md
                 - name: Overrides
                   href: devtools-guide-chromium/javascript/overrides.md
                 - name: Snippets
                   href: devtools-guide-chromium/javascript/snippets.md
+                - name: Disable JavaScript
+                  href: devtools-guide-chromium/javascript/disable.md
             - name: WebAuthn
               href: devtools-guide-chromium/webauthn/index.md
         - name: Reference
