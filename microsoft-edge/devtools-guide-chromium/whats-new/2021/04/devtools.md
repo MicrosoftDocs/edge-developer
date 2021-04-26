@@ -3,7 +3,7 @@ description: Wavy underlines highlight code issues in the Elements tool, Service
 title: What's new in DevTools (Microsoft Edge 91)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/22/2021
+ms.date: 04/26/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -81,7 +81,7 @@ To display more information about how to use the DevTools, turn on Tooltips, and
 <!--  Title: The tasks associated with your Service Worker  -->  
 <!--  Subtitle: Debug with Service Worker Update Cycle  -->  
 
-In Microsoft Edge version 91 or later, if you're a Progressive Web App or Service Worker developer, you may display the update lifecycle of your Service Workers as a timeline in the **Application** tool.  This feature helps you understand the time your Service Worker spends in each of the following stages.  
+In Microsoft Edge version 91 or later, if you're a Progressive Web App or Service Worker developer, display the update lifecycle of your Service Workers as a timeline in the **Application** tool.  This feature helps you understand the time your Service Worker spends in each of the following stages.  
 
 *   **Install**  
 *   **Wait**  
@@ -98,7 +98,7 @@ For more information about the lifecycle of your Service Workers, navigate to [T
 <!--  Title: Non-square icons in app manifest no longer produce warnings  -->  
 <!--  Subtitle: As long as square icons are included in the app manifest, non-square icons no longer produce warnings  -->  
 
-In [Microsoft Edge version 90][DevtoolsWhatsNew202102Devtools] or earlier, if you included a non-square icon in the Web App Manifest of your PWA, the **Manifest** section in the **Application** tool displayed a warning under **Errors and Warnings** for each non-square icon.  In Microsoft Edge version 91 or later, the **Manifest** section in the **Application** tool displays no warnings if you provide at least one square icon.  If you don't provide any square icons, a warning displays the following message.  
+In [Microsoft Edge version 90][DevtoolsWhatsNew202102Devtools] or earlier, if the Web App Manifest of your PWA included a non-square icon, a warning was displayed in the **Errors and Warnings**  section for each non-square icon.  In Microsoft Edge version 91 or later, the **Manifest** section in the **Application** tool displays no warnings if you provide at least one square icon.  If you don't provide any square icons, a warning displays the following message.  
 
 ```output
 Most operating systems require square icons.  Please include at least one square icon in the array.  
@@ -172,89 +172,108 @@ To manually update to version 1.1.7, navigate to [Update an extension manually][
 
 ### Visualize CSS scroll-snap  
 
-You may now toggle the `scroll-snap` badge in the **Elements** tool to inspect the CSS scroll-snap alignment.  
+You may now toggle the `scroll-snap` badge in the **Elements** tool to inspect the CSS scroll-snap alignment.  When an HTML element on your webpage has `scroll-snap-type` applied to it, a `scroll-snap` badge displays next to it in the **Elements** tool.  Choose the badge to turn on \(or off\) the display of a scroll-snap overlay on the webpage.  To review an example webpage, navigate to [Scroll Snap Demo][GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml].  In the example, dot marks display on snap edges.  The scroll port has solid outlined while the snap items have dash outlines.  The scroll padding is filled in green color while the scroll margin is filled in orange.  To review the history of this feature in the Chromium open-source project, navigate to Issue [862450][CR862450].  
 
-:::image type="complex" source="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/H3smYZG2alG5PQU3BHw3.msft.png" alt-text="CSS scroll-snap" lightbox="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/H3smYZG2alG5PQU3BHw3.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-scroll-snap-highlight.msft.png" alt-text="CSS scroll-snap" lightbox="../../media/2021/04/elements-scroll-snap-highlight.msft.png":::
    CSS scroll-snap  
 :::image-end:::  
 
-When an HTML element on your webpage \(for example this [Scroll Snap Demo][GithubMathiasbynensCssDbgStoriesCssScrollSnapHtml] webpage\) has `scroll-snap-type` applied to it, a `scroll-snap` badge displays next to it in the **Elements** tool.  Choose the badge to turn on \(or off\) the display of a scroll-snap overlay on the webpage.
-In the example above, dot marks display on snap edges.  The scroll port has solid outlined while the snap items have dash outlines.  The scroll padding is filled in green color while the scroll margin is filled in orange.  
+### New Memory Inspector tool  
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [862450][CR862450].  
+Use the new **Memory Inspector** tool to inspect an `ArrayBuffer` in JavaScript, and the Wasm memory.  
+Open the [Memory in JS][GlitchMemoryInspectorDemoJsHtml].  In the **Sources** tool, open the `memory-write-wasm` file, and set a breakpoint at line `0x03c`.
+Refresh the webpage.  Expand the **Scope** section in the right **debugger** pane.  The new icon is displayed next to the **buffer** value.  Choose it to display the **Memory Inspector** tool.  
 
-### New Memory inspector  
+Try the [Memory in Wasm][GlitchMemoryInspectorDemoWasmHtml] for Wasm memory inspection.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1166577][CR1166577].  
 
-Use the new **Memory inspector** to inspect an `ArrayBuffer` in JavaScript, and the Wasm memory.  
-Open the [Memory in JS][GlitchMemoryInspectorDemoJsHtml].  In the **Sources** tool, open the **demo-js.js** file, and set a breakpoint at line 15.
-Refresh the webpage.  Expand the **Scope** section in the right **debugger** pane.  Notice the new icon next to the **buffer** value.  Choose it to reveal the **Memory Inspector**.  
-
-Try the [Memory in Wasm][GlitchMemoryInspectorDemoWasmHtml] for Wasm memory inspection.  
-
-:::image type="complex" source="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/7CY7ijbHVfFFl7DM3lLT.msft.png" alt-text="Memory inspector" lightbox="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/7CY7ijbHVfFFl7DM3lLT.msft.png":::
-   Memory inspector  
+:::image type="complex" source="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png" alt-text="Memory Inspector tool" lightbox="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png":::
+   **Memory inspector** tool  
 :::image-end:::  
-
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1166577][CR1166577].  
 
 ### New Badge settings pane in the Elements tool  
 
-You may now turn on or off individual badges using the **Badge settings** in the **Elements** tool.  Use this feature to customize and stay focused on the important badges while inspecting web webpages.  
+Now, use the **Badge settings** in the **Elements** tool to turn on \(or off\) individual badges.  Use this feature to customize and stay focused on the important badges while you inspect webpages.  To display the badge settings pane at the top of the **Elements** tool, complete the following actions.  
 
-:::image type="complex" source="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/BliSe8qwK8G6lFvNtmTv.msft.png" alt-text="Badge settings pane in the Elements tool" lightbox="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/BliSe8qwK8G6lFvNtmTv.msft.png":::
-   **Badge settings** pane in the **Elements** tool  
-:::image-end:::  
-
-In the **Elements** tool, hover on any element, and open the contextual menu \(right-click\).  Choose **Badge settings** from the contextual menu \(right-click\), the badge settings pane appears on top.  Turn on or off any checkbox to show/hide the badges.  
+1.  Hover on any element.  
+1.  Open the contextual menu \(right-click\).  
+1.  Choose **Badge settings...**.  
+    
+To display \(or hide\) the badges, choose \(or remove\) the checkbox next to the badge name.  
 
 <!--  To review the history of this feature in the Chromium open-source project, navigate to Issue [1066772][CR1066772].  -->  
 
+:::image type="complex" source="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png" alt-text="Badge settings pane in the Elements tool" lightbox="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png":::
+   **Badge settings** pane in the **Elements** tool  
+:::image-end:::  
+
 ### Enhanced image preview with aspect ratio information  
 
-In the **Elements** tool, image previews now display more information on the image.  More information includes rendered size, rendered aspect ratio, intrinsic size, intrinsic aspect ratio, and file size.  The information helps you better understand your images and apply optimization if you need to.  
+The enhanced image preview displays more information.  The more information includes rendered size, rendered aspect ratio, intrinsic size, intrinsic aspect ratio, and file size.  The information helps you better understand your images and apply optimization.  
 
-:::image type="complex" source="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/LvPDU04gjOhjWJ2h2bdi.msft.png" alt-text="Image preview with aspect ratio information" lightbox="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/LvPDU04gjOhjWJ2h2bdi.msft.png":::
-   Image preview with aspect ratio information  
-:::image-end:::  
-
-The image aspect ratio information is available in the **Network** tool as well when you choose an image preview.  
-
-:::image type="complex" source="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/blVl3UjoEBw90AXgEs9I.msft.png" alt-text="Image aspect ratio information in the Network tool" lightbox="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/blVl3UjoEBw90AXgEs9I.msft.png":::
-   Image aspect ratio information in the **Network** tool  
-:::image-end:::  
+:::row:::
+   :::column span="":::
+      In the **Elements** tool, image preview now displays more information about the image.  
+   :::column-end:::
+   :::column span="":::
+      Also, the image aspect ratio information is available in the **Network** tool, when you choose an image preview.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2021/04/elements-inspect-image-src-hover-preview.msft.png" alt-text="Image preview with aspect ratio information in the Element tool" lightbox="../../media/2021/04/elements-inspect-image-src-hover-preview.msft.png":::
+         Image preview with aspect ratio information in the **Element** tool  
+      :::image-end:::  
+   :::column-end:::
+   :::column span="":::
+      :::image type="complex" source="../../media/2021/04/network-img-name-filters-preview.msft.png" alt-text="Image aspect ratio information in the Network tool" lightbox="../../media/2021/04/network-img-name-filters-preview.msft.png":::
+         Image aspect ratio information in the **Network** tool  
+      :::image-end:::  
+   :::column-end:::
+:::row-end:::  
 
 To review the history of this feature in the Chromium open-source project, navigate to Issues [1149832][CR1149832] and [1170656][CR1170656].  
 
-### New network conditions button with options to configure `Content-Encoding`s  
+### New network conditions button with options to configure Content-Encodings  
 
-In the **Network** tool, a new network conditions button displays.  To open the **Network conditions** tab, choose the button.  In the **Network conditions** tab, a new **Accepted Content-Encodings** option now displays.  To to test if server responses are encoded correctly for browsers that don't support gzip, brotli, or another future `Content-Encoding`, configure the **Accepted Content-Encodings**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1162042][CR1162042].  
+In the **Network** tool, a new **More network conditions...** button next to the **Throttling** dropdown menu.  To open the **Network conditions** tool, choose the **More network conditions...** button.  To test if server responses are encoded correctly for browsers that don't support gzip, brotli, or another future `Content-Encoding`, complete the following actions.  
 
-:::image type="complex" source="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/ygmMhry5lBawc7EcfJog.msft.png" alt-text="New network conditions button with options to configure Content-Encoding" lightbox="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/ygmMhry5lBawc7EcfJog.msft.png":::
-   New network conditions button with options to configure `Content-Encoding`  
+1.  Open the **Network conditions** tool
+1.  Navigate to **Accepted Content-Encodings**. 
+1.  Remove the checkbox next to the `Content-Encoding` you want to test.  
+    
+To review the history of this feature in the Chromium open-source project, navigate to Issue [1162042][CR1162042].  
+
+:::image type="complex" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="New More network conditions... button opens the Network Conditions tool to configure Content-Encoding" lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
+   New **More network conditions...** button opens the **Network conditions** tool to configure `Content-Encoding`  
 :::image-end:::  
 
 ### Styles pane enhancements  
 
 #### New shortcut to display computed value in the Styles pane  
 
-Now, To display the computed CSS value in the **Styles** pane, hover on a CSS property, open the contextual menu \(right-click\), and choose **View computed value**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1076198][CR1076198].  
+Now, to display the computed CSS value in the **Styles** pane, complete the following actions.  
 
-:::image type="complex" source="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/3neADdgFglmViAxnZ6zS.msft.png" alt-text="New shortcut to display computed value" lightbox="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/3neADdgFglmViAxnZ6zS.msft.png":::
+1.  Hover on a CSS property.  
+1.  Open the contextual menu \(right-click\).  
+1.  Choose **View computed value**.  
+    
+To review the history of this feature in the Chromium open-source project, navigate to Issue [1076198][CR1076198].  
+
+:::image type="complex" source="../../media/2021/04/elements-styles-highlight-view-computed-value.msft.png" alt-text="New shortcut to display computed value" lightbox="../../media/2021/04/elements-styles-highlight-view-computed-value.msft.png":::
    New shortcut to display computed value  
 :::image-end:::  
 
 #### Support for the accent-color keyword  
 
-The autocomplete UI of the Styles pane now detects the `accent-color` CSS keyword, which allows you to specify the accent color for UI controls generated by the element.  For more information, navigate to [Widget Accent Colors: the accent-color property][CsswgDraftsCssUi4WidgetAccent].  UI controls that are generated by an element include a checkbox or radio button.  For more information about the Chromium implementation, navigate to [Feature: accent-color CSS property][ChromestatusFeature4752739957473280].  To turn on this feature, navigate to `edge://flags#enable-experimental-web-platform-features` and set the checkbox to `Enabled`.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1092093][CR1092093].  
+The autocomplete UI of the **Styles** pane now detects the `accent-color` CSS keyword, which allows you to specify the accent color for UI controls generated by the element.  For more information, navigate to [Widget Accent Colors: the accent-color property][CsswgDraftsCssUi4WidgetAccent].  UI controls that are generated by an element include a checkbox or radio button.  For more information about the Chromium implementation, navigate to [Feature: accent-color CSS property][ChromestatusFeature4752739957473280].  To turn on this feature, navigate to `edge://flags#enable-experimental-web-platform-features` and set the checkbox to `Enabled`.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1092093][CR1092093].  
 
-:::image type="complex" source="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/y4oS3jvinp4fgfxav4tP.msft.png" alt-text="accent-color" lightbox="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/y4oS3jvinp4fgfxav4tP.msft.png":::
-   accent-color  
+:::image type="complex" source="../../media/2021/04/elements-styles-accent-color.msft.png" alt-text="accent-color CSS keyword" lightbox="../../media/2021/04/elements-styles-accent-color.msft.png":::
+   `accent-color` CSS keyword 
 :::image-end:::  
 
 ### Display details about blocked features in the Frame details view  
 
-You may now display details on blocked features under the **Permissions policy** section in the Frame details view.  
-To display the details on why the feature is blocked, complete the following actions.  
+Now, You may display details about blocked features in the **Permissions policy** section.  To display the details on why the feature is blocked, complete the following actions.  
 
 1.  Navigate to [OOPIF Permissions Policy][GlitchPermissionPolicyDemoMain].  
 1.  Navigate to the **Application** tool.  
@@ -266,27 +285,27 @@ To display the details on why the feature is blocked, complete the following act
     
 The Permissions Policy is a web platform API.  The Permissions Policy gives a webpage the ability to allow or block the use of browser features in an individual frame or in an `iframe` that it embeds.  For more information, navigate to [Permissions Policy Explainer][GithubW3cWebappsecPermissionsPolicyPermissionsPolicyExplainerMd].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1158827][CR1158827].  
 
-:::image type="complex" source="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/8GxecpqtEUv3xoocvcLi.msft.png" alt-text="Blocked features in the Frame details view" lightbox="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/8GxecpqtEUv3xoocvcLi.msft.png":::
+:::image type="complex" source="../../media/2021/04/application-frames-top-permission-policy-disabled-features-show-details-highlight.msft.png" alt-text="Blocked features in the Frame details view" lightbox="../../media/2021/04/application-frames-top-permission-policy-disabled-features-show-details-highlight.msft.png":::
    Blocked features in the Frame details view  
 :::image-end:::  
 
 ### Filter experiments in the Experiments setting  
 
-Find experiments quicker with the new experiment filter.  For example, to filter all the experiments with the `contrast` term, complete the following actions.  
+Find experiments quicker with the new experiment filter.  For example, to filter all the experiments with the `issues` term, complete the following actions.  
 
 1.  Navigate to **Settings** > **Experiments**.  
 1.  Navigate to the **Filter** textbox.  
-1.  Type `contrast`.  
+1.  Type `issues`.  
     
-:::image type="complex" source="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/dwGsjklZTIihki8uYLTn.msft.png" alt-text="Filter experiments in the Experiments setting" lightbox="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/dwGsjklZTIihki8uYLTn.msft.png":::
-   Filter experiments in the Experiments setting  
+:::image type="complex" source="../../media/2021/04/settings-experiments-filter-by-issues.msft.png" alt-text="Filter experiments in the Experiments setting" lightbox="../../media/2021/04/settings-experiments-filter-by-issues.msft.png":::
+   Filter experiments in the **Experiments** setting  
 :::image-end:::  
 
 ### New Vary Header column in the Cache storage pane  
 
-Use the new `Vary Header` column in the **Cache Storage** pane to display the [Vary][HttpwgSpecsRfc7231HtmlHeaderVary] HTTP response header.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1186049][CR1186049].  
+Use the new `Vary Header` column in the **Cache Storage** pane to display the [Vary][HttpwgSpecsRfc7231HtmlHeaderVary] HTTP response header values.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1186049][CR1186049].  
 
-:::image type="complex" source="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/NA5OmN8upMB3thEwXHKE.msft.png" alt-text="Vary Header column" lightbox="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/NA5OmN8upMB3thEwXHKE.msft.png":::
+:::image type="complex" source="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png" alt-text="Vary Header column" lightbox="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png":::
    Vary Header column  
 :::image-end:::  
 
@@ -301,29 +320,31 @@ DevTools now support the new [Private brand checks a.k.a. #foo in obj][V8DevFeat
     
 To review the history of this feature in the Chromium open-source project, navigate to Issue [11374][CR11374].  
 
-:::image type="complex" source="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/RCw19qd1bZOeNFydsUCW.msft.png" alt-text="JavaScript private brand checks" lightbox="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/RCw19qd1bZOeNFydsUCW.msft.png":::
+<!--  
+:::image type="complex" source="../../media/2021/04/dPDCek3EhZgLQPGtEG3y0fTn4v82/RCw19qd1bZOeNFydsUCW.msft.png" alt-text="JavaScript private brand checks" lightbox="../../media/2021/04/dPDCek3EhZgLQPGtEG3y0fTn4v82/RCw19qd1bZOeNFydsUCW.msft.png":::
    JavaScript private brand checks  
 :::image-end:::  
+-->  
 
 #### Enhanced support for breakpoints debugging  
 
-In Microsoft Edge version 90 or earlier, DevTools only set breakpoints on one raw location.  In Microsoft Edge version 91 or later, DevTools properly set breakpoints in multiple scripts.  This feature is a modern support code splitting feature.  Scenarios exist where one shared component is included in multiple routes \(code splits\).  JavaScript bundlers include [Webpack](https://webpack.js.org), and [Rollup](https://rollupjs.org/).  In Microsoft Edge version 91 or later, DevTools sets breakpoints in all relevant locations correctly.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1142705][CR1142705], [979000][CR979000], and [1180794][CR1180794].  
+In Microsoft Edge version 90 or earlier, DevTools only set breakpoints on one raw location.  In Microsoft Edge version 91 or later, DevTools properly set breakpoints in multiple scripts.  This feature is a modern support code splitting feature.  Multiple routes may include one shared component and are named code splits.  JavaScript bundlers include [Webpack][WebpackJsMain], and [Rollup][RollupjsMain].  In Microsoft Edge version 91 or later, DevTools sets breakpoints in all relevant locations correctly.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1142705][CR1142705], [979000][CR979000], and [1180794][CR1180794].  
 
 #### Support hover preview with [] notation  
 
-DevTools now support hover preview on JavaScript member expressions that use the `[]` notation in the **Sources** tool.  
+DevTools now support hover preview on JavaScript member expressions that use the `[]` notation in the **Sources** tool.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1178305][CR1178305].  
 
-:::image type="complex" source="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/XFxlQjvLVWJUiV24zDw2.msft.png" alt-text="Support hover preview with [] notation" lightbox="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/XFxlQjvLVWJUiV24zDw2.msft.png":::
+<!--  
+:::image type="complex" source="../../media/2021/04/dPDCek3EhZgLQPGtEG3y0fTn4v82/XFxlQjvLVWJUiV24zDw2.msft.png" alt-text="Support hover preview with [] notation" lightbox="../../media/2021/04/dPDCek3EhZgLQPGtEG3y0fTn4v82/XFxlQjvLVWJUiV24zDw2.msft.png":::
    Support hover preview with `[]` notation  
 :::image-end:::  
-
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1178305][CR1178305].  
+-->  
 
 #### Improved outline of HTML files  
 
 DevTools now has better outline support for `.html` files.  In the **Sources** tool, open the `.html` file.  To turn on \(or off\) the code outline, select `Ctrl`+`Shift`+`O` on Windows/Linux or `Cmd`+`Shift`+`O` on macOS.  In the following figure, DevTools now correctly list all functions in the outline.  Previously, DevTools only displayed some of the functions.  To review the history of this feature in the Chromium open-source project, navigate to Issues [761019][CR761019] and [1191465][CR1191465].  
 
-:::image type="complex" source="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/tOzDFrFwQNbDG4mlexd3.msft.png" alt-text=" Improved outline of HTML files" lightbox="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/tOzDFrFwQNbDG4mlexd3.msft.png":::
+:::image type="complex" source="../../media/2021/04/sources-pages-html-code-outline.msft.png" alt-text=" Improved outline of HTML files" lightbox="../../media/2021/04/sources-pages-html-code-outline.msft.png":::
    Improved outline of HTML files  
 :::image-end:::  
 
@@ -332,11 +353,26 @@ DevTools now has better outline support for `.html` files.  In the **Sources** t
 In Microsoft Edge version 90 or earlier, DevTools only displayed generic Wasm references in the Error stack traces.  
 In Microsoft Edge version 91 or later, DevTools resolves inline function requests and displays proper error stack traces for Wasm debugging.  
 
-:::image type="complex" source="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/rIngYpWX5CrxGhmtIL1L.msft.png" alt-text="Proper error stack traces for Wasm debugging" lightbox="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/rIngYpWX5CrxGhmtIL1L.msft.png":::
-   Proper error stack traces for Wasm debugging  
-:::image-end:::  
-
-The old version of Microsoft Edge on the left does not display the source location \(for example `dsquare`\) in the Error stack traces, whereas the new version on the right does.  
+:::row:::
+   :::column span="":::
+      In Microsoft Edge version 90 and earlier, the source location doesn't display in the Error stack traces.  Source locations include `dsquare`.  
+   :::column-end:::
+   :::column span="":::
+      In Microsoft Edge version 91 and later, the source location displays in the Error stack traces.
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      <!--  :::image type="complex" source="../../media/2021/04/dPDCek3EhZgLQPGtEG3y0fTn4v82/rIngYpWX5CrxGhmtIL1L.msft.png" alt-text="Previous error stack traces for Wasm debugging" lightbox="../../media/2021/04/dPDCek3EhZgLQPGtEG3y0fTn4v82/rIngYpWX5CrxGhmtIL1L.msft.png":::
+         Proper error stack traces for Wasm debugging  
+      :::image-end:::  -->  
+   :::column-end:::
+   :::column span="":::
+      <!--:::image type="complex" source="../../media/2021/04/dPDCek3EhZgLQPGtEG3y0fTn4v82/rIngYpWX5CrxGhmtIL1L.msft.png" alt-text="Proper error stack traces for Wasm debugging" lightbox="../../media/2021/04/dPDCek3EhZgLQPGtEG3y0fTn4v82/rIngYpWX5CrxGhmtIL1L.msft.png":::
+         Proper error stack traces for Wasm debugging  
+      :::image-end:::  -->  
+   :::column-end:::
+:::row-end:::  
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1189161][CR1189161].  
 
@@ -400,12 +436,13 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [CR1189161]: https://crbug.com/1189161 "Issue 1189161: `new Error` stacktraces are not transformed via DWARF"  
 [CR1191465]: https://crbug.com/1191465 "Issue 1191465: Ctrl+Shift+O broken on HTML"  
 
-[GithubMathiasbynensCssDbgStoriesCssScrollSnapHtml]: https://mathiasbynens.github.io/css-dbg-stories/css-scroll-snap.html "Scroll Snap Demo | GitHub"  
-
 [GithubW3cWebappsecPermissionsPolicyPermissionsPolicyExplainerMd]: https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md "Permissions Policy Explainer | GitHub"  
 
 [GlitchMemoryInspectorDemoJsHtml]: https://memory-inspector.glitch.me/demo-js.html "Memory in JS | Glitch"  
 [GlitchMemoryInspectorDemoWasmHtml]: https://memory-inspector.glitch.me/demo-wasm.html "Memory in Wasm | Glitch"  
+
+[GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml]: https://microsoft-edge-chromium-devtools.glitch.me/css-dbg-stories/css-scroll-snap.html "Scroll Snap Demo | Glitch"  
+
 [GlitchPermissionPolicyDemoMain]: http://permission-policy-demo.glitch.me "OOPIF Permissions Policy | Glitch"  
 
 [HttpwgSpecsRfc7231HtmlHeaderVary]: https://httpwg.org/specs/rfc7231.html#header.vary "Vary - Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content | IETF HTTP Working Group"  
@@ -416,8 +453,12 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 [PwabuilderImagegenerator]: https://www.pwabuilder.com/imageGenerator "Image Generator | PWABuilder"  
 
+[RollupjsMain]: https://rollupjs.org "rollup.js"  
+
 [V8DevFeaturesPrivateBrandChecks]: https://v8.dev/features/private-brand-checks "Private brand checks a.k.a. #foo in obj | V8"  
 [V8DevFeaturesClassFieldsPrivateClassFields]: https://v8.dev/features/class-fields#private-class-fields "Private class fields - Public and private class fields | V8"  
+
+[WebpackJsMain]: https://webpack.js.org "webpack"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
