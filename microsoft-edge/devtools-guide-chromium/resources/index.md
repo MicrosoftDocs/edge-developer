@@ -72,13 +72,14 @@ Navigate to [Log network activity][DevtoolsNetworkLogActivity].
 
 ### Browse by directory  
 
-To view the resources of a page organized by directory:  
+To view the resources of a webpage organized by directory:  
 
-1.  Choose the **Sources** tool to open the **Sources** panel.  
-1.  Choose the **Page** panel to show the resources of the page.  The **Page** pane opens.  
+1.  Open DevTools.
+1.  Choose the **Sources** tool, and then in the **Navigator** pane in the upper left, choose the **Page** tab.
+1.  Choose the **More options** (...) button to the right of the **Page** tab, and then choose **Group by folder**.
     
-    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="The Page pane" lightbox="../media/resources-sources-page-empty.msft.png":::
-       The **Page** panel  
+    :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="The Page tab in the Navigator pane of the Sources tool" lightbox="../media/resources-sources-page-empty.msft.png":::
+       The **Page** tab in the **Navigator** pane of the **Sources** tool  
     :::image-end:::  
     
     Here is a breakdown of the non-obvious items in the previous figure.  
@@ -99,19 +100,20 @@ To view the resources of a page organized by directory:
     
 ### Browse by filename  
 
-By default the **Page** panel groups resources by directory.  To disable this grouping and view the resources for each domain as a flat list:  
+By default, the **Page** tab groups resources by directory.  To display the resources for each domain as a flat list, instead of grouping them by directory:
 
-1.  Open the **Page** panel.  Navigate to [Browse by directory](#browse-by-directory).  
-1.  Choose **More Options** `...` and disable **Group By Folder**.  
+1.  Navigate to the **Sources** tool.  
+1.  In the **Navigator** pane (on the left), choose the **Page** tab.  
+1.  Choose **More options** `...` and then clear the checkmark next to **Group by folder**.  
     
-    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="The Group By Folder option" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
-       The **Group By Folder** option  
+    :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="The Group by folder option" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+       The **Group by folder** option  
     :::image-end:::  
     
-    Resources are organized by file type.  Within each file type the resources are organized alphabetically.  
-    
-    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="The Page panel after disabling Group By Folder" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
-       The **Page** panel after disabling **Group By Folder**  
+    Resources are organized by file type.  Within each file type, the resources are organized alphabetically.  
+
+    :::image type="complex" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="The Page tab after clearing the Group by folder check mark" lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+       The **Page** tab after clearing the **Group by folder** check mark  
     :::image-end:::  
     
 ### Browse by file type  
