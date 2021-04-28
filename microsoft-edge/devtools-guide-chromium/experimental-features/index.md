@@ -94,7 +94,7 @@ After you turn on the experiment, ensure you restart the DevTools.  To use the *
 After you turn on the experiment, ensure you restart the DevTools.  To use **Source Order Viewer**, complete the following steps.  
 
 1.  Open the **Elements** tool.  
-1.  Open the **Accessibility** pane in the drawer \(bottom\) panel.  
+1.  To the right of the **Styles** tab, select the **Accessibility** tab.  
 1.  Under the **Source Order Viewer** section, choose the **Show Source Order** checkbox.  
 1.  Highlight any HTML element to display an overlay that the order in the webpage source.  
     
