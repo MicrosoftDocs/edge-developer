@@ -73,7 +73,7 @@ We recommend opening the [demo webpage with accessibility issues][DevToolsA11yEr
 
 ### Missing alt text
 
-    The other automatically detected problem is that many of the images in the document don't have any alternative text (also called *alt text*).
+The other automatically detected problem is that many of the images in the document don't have any alternative text (also called *alt text*).
 
 1.  In the **Issues** pane, expand the warning `Images must have alternate text: Element has no title attribute`.  There are four instances of images with that problem.
 
@@ -83,15 +83,15 @@ We recommend opening the [demo webpage with accessibility issues][DevToolsA11yEr
 
 ### Not enough contrast
 
-    You might also see warnings that two elements on the page don't have enough contrast:
+You might see warnings that two elements on the page don't have enough contrast:
 
-    :::image type="complex" source="../media/a11y-testing-contrast-issues.msft.png" alt-text="Contrast problems reported in the Issues tool" lightbox="../media/a11y-testing-contrast-issues.msft.png":::
-        Contrast problems reported in the Issues tool
-    :::image-end:::
+:::image type="complex" source="../media/a11y-testing-contrast-issues.msft.png" alt-text="Contrast problems reported in the Issues tool" lightbox="../media/a11y-testing-contrast-issues.msft.png":::
+    Contrast problems reported in the Issues tool
+:::image-end:::
 
-    You get detailed explanations about what that means.
+You get detailed explanations about what that means.
 
-1.  If you see that warning, expand the **Affected resources** section of the warning.  A list of elements appears, showing which elements don't have enough contrast.
+1.  If you see a warning that two elements on the page don't have enough contrast, expand the **Affected resources** section of the warning.  A list of elements appears, showing which elements don't have enough contrast.
 
 1.  Select the `li.high` element.  In the rendered webpage, the **Dogs** link in the **Donate** section is highlighted, displaying a small information overlay.  This is the same overlay that appears when you hover over an element in the DOM tree in the **Elements** tool.
 
@@ -105,7 +105,7 @@ We recommend opening the [demo webpage with accessibility issues][DevToolsA11yEr
 
 ### Wavy underline in the DOM tree indicates issues
 
-    The DOM tree in the **Elements** tool flags issues directly in the HTML, by adding a wavy underline.
+The DOM tree in the **Elements** tool flags issues directly in the HTML, by adding a wavy underline.
 
 1.  When you `Shift+Click` any element that has a wavy underline, the **Issues tool** appears.  In the Elements tool, in the DOM tree, select the element `<input type="search">`, which has a wavy line under `input`.  Then select `Shift` + `Click`.
 
