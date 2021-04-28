@@ -180,12 +180,18 @@ The Color Picker helps you verify that your text meets recommended contrast rati
        The **Contrast Ratio** Line in the visual picker  
     :::image-end:::  
     
+## See also
+
+*   [Accessibility testing basics][DevtoolsAccessibilityAccessibilitytestingbasics]
+*   [Accessibility testing][AccessibilityTest]
+
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
-
+[AccessibilityTest]: ../../accessibility/test.md "Accessibility testing | Microsoft Docs"
+[DevtoolsAccessibilityAccessibilitytestingbasics]: accessibility-testing-basics.md "Accessibility testing basics | Microsoft Docs"
 [DevtoolsAccessibilityNavigation]: ./navigation.md "Navigate Microsoft Edge DevTools With Assistive Technology | Microsoft Docs"  
 [DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "View only the CSS that is actually applied to an element - CSS Reference | Microsoft Docs"  
 
