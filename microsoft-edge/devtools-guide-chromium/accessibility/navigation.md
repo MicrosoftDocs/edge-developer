@@ -190,7 +190,7 @@ Select `Tab` until you reach the collection of computed styles.  These are prese
 
 ### Event listeners tab  
 
-From within the **Elements** tool you may inspect the event listeners applied to an element using the **Event Listeners** tab.  With focus on the **Styles** panel, select the `Right Arrow` to navigate to the **Event Listeners** panel.  
+To inspect the event listeners that are applied to an element, select the **Elements** tool and then select the **Event Listeners** tab to the right of the **Styles** tab.
 
 #### Explore event listeners  
 
