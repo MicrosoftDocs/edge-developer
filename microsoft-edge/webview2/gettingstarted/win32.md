@@ -281,10 +281,9 @@ Congratulations, you built your first WebView2 app.
 
 ## Next steps  
 
-Many of the WebView2 functionalities are not covered on this article, the following section provides more resources.  
+For additional WebView2 functionality that isn't covered in this article, review the following resources.  
 
-### See also  
-
+*   To learn more about building WebView2 applications, navigate to [WebView2 development best practices][WV2BestPractices].  
 *   For a comprehensive example of WebView2 capabilities, navigate to [WebView2 API Sample][GithubMicrosoftedgeWebview2samplesApisample].  
 *   For a sample app built using WebView2, navigate to [WebView2Browser][GithubMicrosoftedgeWebview2browser].  
 *   For detailed information about the WebView2 API, navigate to [API reference][Webview2ReferenceWin32].  
@@ -295,6 +294,7 @@ Many of the WebView2 functionalities are not covered on this article, the follow
 
 <!-- links -->  
 
+[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"  
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Microsoft Edge Developer"  
 
 [Webview2ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ Reference | Microsoft Docs"  
