@@ -3,7 +3,7 @@ description: Provides guidance on customizing the display of the password reveal
 title: Customize the password reveal button
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, password reveal, eye icon
