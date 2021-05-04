@@ -34,13 +34,13 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
 
 :::row:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-web-ecosystem-skillset.msft.png":::  
+      :::image type="icon" source="./media/webview-reasons-web-ecosystem-skillset-small.msft.png":::  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-rapid-innovation.msft.png":::  
+      :::image type="icon" source="./media/webview-reasons-rapid-innovation-small.msft.png":::  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-windows-7-8-10-support.msft.png":::  
+      :::image type="icon" source="./media/webview-reasons-windows-7-8-10-support-small.msft.png":::  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -67,13 +67,13 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-native-capabilities.msft.png":::  
+      :::image type="icon" source="./media/webview-reasons-native-capabilities-small.msft.png":::  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-code-sharing.msft.png":::  
+      :::image type="icon" source="./media/webview-reasons-code-sharing-small.msft.png":::  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-microsoft-support.msft.png":::  
+      :::image type="icon" source="./media/webview-reasons-microsoft-support-small.msft.png":::  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -100,13 +100,13 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-evergreen.msft.png":::  
+      :::image type="icon" source="./media/webview-reasons-evergreen-small.msft.png":::  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-fixed.msft.png":::  
+      :::image type="icon" source="./media/webview-reasons-fixed-small.msft.png":::  
    :::column-end:::
    :::column span="1":::
-      :::image type="icon" source="./media/webview-reasons-incremental-adoption.msft.png":::  
+      :::image type="icon" source="./media/webview-reasons-incremental-adoption-small.msft.png":::  
    :::column-end:::
 :::row-end:::  
 :::row:::
