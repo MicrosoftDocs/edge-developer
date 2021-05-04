@@ -113,9 +113,9 @@ The features are turned on by default.  For more information about the features,
    Experimental feature  
 :::image-end:::  
 
-You are now able to customize the keyboard shortcut for any action in the DevTools.  Since Microsoft Edge version 84, you are able to choose between **Visual Studio Code** and **DevTools (default)** presets for [keyboard shortcuts][DevtoolsCustomizeShortcuts].  Starting in Microsoft Edge version 87, you may turn on the **Enable keyboard shortcut editor** experiment to further [customize keyboard shortcuts][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  
+You are now able to customize the keyboard shortcut for any action in the DevTools.  Since Microsoft Edge version 84, you are able to choose between **Visual Studio Code** and **DevTools (default)** presets for [keyboard shortcuts][DevtoolsCustomizeShortcuts].  Starting in Microsoft Edge version 87, you may turn on the **Enable keyboard shortcut editor** experiment to further [customize keyboard shortcuts][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools].  
 
-To enable the experiment, navigate to [Turn on Experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, navigate to [Enable keyboard shortcut editor Experimental feature][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#174309][CR174309].  
+To enable the experiment, navigate to [Turn on Experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, navigate to [Edit keyboard shortcuts for any action in the DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools].  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#174309][CR174309].  
 
 :::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Custom shortcut for pausing a script" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
    Custom shortcut for pausing a script  
@@ -283,11 +283,12 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsConsoleIndex]: ../../../console/index.md "Use the Console | Microsoft Docs"  
 [DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]:  ../../../console/utilities.md#recently-chosen-element-or-javascript-object "Recently chosen Element Or JavaScript Object - Console Utilities API Reference | Microsoft Docs"  
 [DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Edit keyboard shortcuts for any action in the DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReference]: ../../../evaluate-performance/reference.md "Performance analysis reference | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: ../../../experimental-features/index.md#emulation-support-dual-screen-mode "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features.md#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | Microsoft Docs"  
+<!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | Microsoft Docs"  -->  
 [DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: ../../../experimental-features/index.md#enable-new-css-grid-debugging-features "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableNetworkConsole]: ../../../experimental-features/index.md#enable-network-console "Enable Network Console - Experimental features | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: ../../../experimental-features/index.md#enable-source-order-viewer "Enable Source Order Viewer - Experimental features | Microsoft Docs"

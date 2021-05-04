@@ -253,7 +253,7 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 
 [MicrosoftEdgeMain]: https://www.microsoft.com/edge "Microsoft Edge"  
 
-[DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "Emulate dual-screen and foldable devices in Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "Emulate dual-screen and foldable devices in Microsoft Edge DevTools | Microsoft Docs"  
 
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
 

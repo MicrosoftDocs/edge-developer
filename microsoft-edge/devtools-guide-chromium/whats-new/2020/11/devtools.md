@@ -72,7 +72,7 @@ To help you review issues revealed by [webhint][WebhintMain], the **Issues** too
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-You may now visualize **Layers** content alongside z-index values and the Document Object Model \(DOM\).  This feature helps you debug without switching between the [3D view][Devtools3dViewIndex] and **Layers** tools as often.  For a comprehensive visual debugging experience, the [3D View and Composited Layers are now combined][DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView].  
+You may now visualize **Layers** content alongside z-index values and the Document Object Model \(DOM\).  This feature helps you debug without switching between the [3D view][Devtools3dViewIndex] and **Layers** tools as often.  For a comprehensive visual debugging experience, the [3D View and Composited Layers are now combined][Devtools3dViewIndex].  
 
 :::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Composited Layers pane" lightbox="../../media/2020/11/experiments-layers.msft.png":::
    **Composited Layers** pane  
@@ -138,7 +138,7 @@ View all service worker request routing information with the new **Network reque
     
 ### Network tool  
 
-Debug network requests that run through service workers.  You may also open network requests from the **Application** tool.  For each request, DevTools display the following information in the [Timing][DevtoolsNetworkReferenceViewTimingBreakdownRequest] pane.  
+Debug network requests that run through service workers.  You may also open network requests from the **Application** tool.  For each request, DevTools display the following information in the [Timing][DevtoolsNetworkReferenceDisplayTimingBreakdownRequest] pane.  
 
 *   The start of a request and duration of the bootstrap.  
 *   Changes to service worker registration.  
@@ -200,7 +200,7 @@ To copy the property value to your clipboard, navigate to [Copy formatted respon
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-[Since Microsoft Edge version 87][WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings], you may customize keyboard shortcuts for any action in DevTools.  In Microsoft Edge version 88, you may now create multi-press keyboard shortcuts.  To set a shortcut for an action in the DevTools, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments**  and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, navigate to [Enable keyboard shortcut editor Experimental feature][DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor].  
+[Since Microsoft Edge version 87][WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings], you may customize keyboard shortcuts for any action in DevTools.  In Microsoft Edge version 88, you may now create multi-press keyboard shortcuts.  To set a shortcut for an action in the DevTools, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments**  and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, navigate to [Edit keyboard shortcuts for any action in the DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools].  
 
 For example, the red highlight displays a multi-press keyboard shortcut customized for the **Start recording events** action.  To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #174309][CR174309].  
 
@@ -353,18 +353,19 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [DevtoolsConsoleIndex]: ../../../console/index.md "Console Overview | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeLocalization]: ../../../customize/localization.md "Change DevTools language settings | Microsoft Docs"  
+[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-keyboard-shortcuts-for-any-action-in-the-devtools "Edit keyboard shortcuts for any action in the DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  
-[DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: ../../../experimental-features/index.md#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  
-[DevtoolsIssuesIndex]: ../../../issues/index "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
+<!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  -->  
+<!--  [DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: ../../../experimental-features/index.md#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  -->  
+[DevtoolsIssuesIndex]: ../../../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
 [DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: ../../../network/reference.md#copy-formatted-response-json-to-the-clipboard "Copy formatted response JSON to the clipboard - Network Analysis reference | Microsoft Docs"  
-[DevtoolsNetworkReferenceViewTimingBreakdownRequest]: ../../../network/reference.md#view-the-timing-breakdown-of-a-request "View the timing breakdown of a request - Network Analysis reference | Microsoft Docs"  
+[DevtoolsNetworkReferenceDisplayTimingBreakdownRequest]: ../../../network/reference.md#display-the-timing-breakdown-of-a-request "Display the timing breakdown of a request - Network Analysis reference | Microsoft Docs"  
 
 <!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: ../../../css/reference.md#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->  
 
 [ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"  
 
-[WebdriverChromiumMain]: ../../../../webdriver-chromium.md "Use WebDriver (Chromium) for test automation | Microsoft Docs"  
+[WebdriverChromiumMain]: ../../../../webdriver-chromium/index.md "Use WebDriver (Chromium) for test automation | Microsoft Docs"  
 
 [MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "Download WebDriver | Microsoft Developer"  
 

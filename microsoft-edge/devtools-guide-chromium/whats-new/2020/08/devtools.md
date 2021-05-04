@@ -51,9 +51,9 @@ You are now able to test the look and feel of your website or app on two new dev
 
 To help enhance your website or app for the dual-screen and foldable devices, use the following features when [emulating the device][DevtoolsDeviceModeIndex].  
 
-*   [Spanning][DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices], which is when your website \(or app\) appears across both screens.
+*   [Spanning][DevtoolsExperimentalFeaturesTestOnFoldableDualScreenDevices], which is when your website \(or app\) appears across both screens.
 *   [Rendering the seam][DualScreenIntroductionHowWorkSeam], which is the space between the two screens.
-*   [Enabling experimental Web Platform APIs][DevtoolsExperimentalFeaturesEnableExperimentalApis] to access the new [CSS media screen-spanning feature][DualScreenWebCssMediaSpanning] and [JavaScript getWindowSegments API][DualScreenWebJavascriptGetwindowsegments].  
+*   Enabling experimental Web Platform APIs to access the new [CSS media screen-spanning feature][DualScreenWebCssMediaSpanning] and [JavaScript getWindowSegments API][DualScreenWebJavascriptGetwindowsegments].  
 
 :::image type="complex" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Device emulation for Surface Duo" lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
    Device emulation for Surface Duo  
@@ -61,7 +61,7 @@ To help enhance your website or app for the dual-screen and foldable devices, us
 
 To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Emulation: Support dual screen mode**.  
 
-For more information about this experiment, navigate to [Emulation: Support dual screen mode][DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode].  
+For more information about this feature, navigate to [Emulate dual-screen and foldable devices in Microsoft Edge DevTools][DevtoolsDeviceModeDualScreenAndFoldables].  
 
 Chromium issue: [#1054281][CR1054281]  
 
@@ -80,7 +80,7 @@ The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on add
 
 To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**.  
 
-For more information about this experiment, navigate to [Enable new CSS grid debugging features][DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures].  
+For more information about this feature, navigate to [Inspect CSS Grid in Microsoft Edge DevTools][DevtoolsCssGrid].  
 
 Chromium issue: [#1047356][CR1047356]  
 
@@ -134,7 +134,7 @@ This feature makes it easier to test the way screen reader and keyboard users ex
 
 To turn on this experimental feature, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures] and choose the checkbox next to **Enable Source Order Viewer**.  
 
-For more information about this experiment, navigate to [Enable Source Order Viewer][DevtoolsExperimentalFeaturesEnableSourceOrderViewer].  
+For more information about this experiment, navigate to [Source Order Viewer][DevtoolsExperimentalFeaturesSourceOrderViewer].  
 
 Chromium issue: [#1094406][CR1094406]  
 
@@ -461,15 +461,16 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 [DevtoolsConsoleApiTable]: ../../../console/api.md#table "table - Console API reference | Microsoft Docs"  
 [DevtoolsCoverageIndex]: ../../../coverage/index.md "Find unused JavaScript and CSS code with the Coverage tab in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCssGrid]: ../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "Emulate dual-screen and foldable devices in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool "Analyze rendering performance with the Rendering tool - Performance Analysis Reference | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features/index.md#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: ../../../experimental-features/index.md#enable-new-css-grid-debugging-features "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
+<!--  [DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features/index.md#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  -->  
 [DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: ../../../experimental-features/index.md#emulation-support-dual-screen-mode "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: ../../../experimental-features/index.md#enable-source-order-viewer "Enable Source Order Viewer - Experimental features | Microsoft Docs"
-[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: ../../../experimental-features/index.md#testing-on-foldable-and-dual-screen-devices "Testing on foldable and dual-screen devices - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesSourceOrderViewer]: ../../../experimental-features/index.md#source-order-viewer "Source Order Viewer - Experimental features | Microsoft Docs"
+[DevtoolsExperimentalFeaturesTestOnFoldableDualScreenDevices]: ../../../experimental-features/index.md#test-on-foldable-and-dual-screen-devices "Test on foldable and dual-screen devices - Experimental features | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: ../../../experimental-features/index.md#turn-on-experimental-features "Turn on experimental features - Experimental features | Microsoft Docs"  
 [DevtoolsMediaPanelIndex]: ../../../media-panel/index.md "View and debug media players information | Microsoft Docs"  
 

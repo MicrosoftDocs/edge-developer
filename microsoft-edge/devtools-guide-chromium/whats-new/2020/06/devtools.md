@@ -250,7 +250,7 @@ Chromium issue [#1071432][CR1071432]
 
 ### Line-wise copy and cut in Sources Panel  
 
-When performing copy or cut with no selection in the [Sources panel editor][DevtoolsSourcesEditCssJavascript], DevTools copies or cuts the current line of content.  
+When performing copy or cut with no selection in the [Sources panel editor][DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles], DevTools copies or cuts the current line of content.  
 
 :::image type="complex" source="../../media/2020/06/line-wise-cut.msft.png" alt-text="With the cursor at the end of Line 5, copying the whole line from pen.js in the DevTools and pasting in Visual Studio Code" lightbox="../../media/2020/06/line-wise-cut.msft.png":::
    With the cursor at the end of Line 5, copying the whole line from **pen.js** in the DevTools and pasting in [Visual Studio Code][VisualStudioCode].
@@ -333,7 +333,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turn-on-experimental-features "Turn on experimental features - Experimental features | Microsoft Docs"  
 [DevtoolsIssues]: ../../../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"
-[DevtoolsSourcesEditCssJavascript]: ../../../sources/index.md#edit-css-and-javascript "Edit CSS and JavaScript - Sources Panel Overview | Microsoft Docs"  
+[DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]: ../../../sources/index.md#using-editor-pane-to-view-or-edit-files "Using the Editor pane to view or edit files - Sources Panel Overview | Microsoft Docs"  
 [DevtoolsNetworkIndexLogActivity]: ../../../network/index.md#log-network-activity "Log network activity - Inspect Network Activity In Microsoft Edge DevTools | Microsoft Docs"
 
 [CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "Style editing for CSS-in-JS frameworks | CodePen"
