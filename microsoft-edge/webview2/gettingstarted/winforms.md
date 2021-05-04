@@ -25,7 +25,7 @@ Ensure you install the following list of pre-requisites before proceeding.
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 or later.  
     
 > [!NOTE]
-> WebView2 currently does not support the .NET 5 and .NET Core designers.
+> WebView2 currently does not support the .NET 5 and .NET Core designers.  
 
 ## Step 1 - Create a single-window app
 
@@ -80,7 +80,7 @@ Add a WebView to your app.
     Drag and drop the **WebView2** control into the Windows Forms App.
     
     :::image type="complex" source="./media/winforms-toolbox.png" alt-text="Toolbox displaying WebView2":::
-       Toolbox displaying WebView2
+       Toolbox displaying WebView2  
     :::image-end:::  
 
 1.  Set the `(Name)` property to `webView`.
@@ -104,18 +104,18 @@ To build and run your project, select `F5`.  Ensure your WebView2 control displa
 > [!NOTE]
 > If you are working on a high DPI monitor, you may have to [configure your Windows Forms app for high DPI support][DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport].  
 
-## Step 4 - Handle Window Resize Events
+## Step 4 - Handle Window Resize Events  
 
-Add a few more controls to your Windows Forms from the toolbox, and then handle window resize events appropriately.
+Add a few more controls to your Windows Forms from the toolbox, and then handle window resize events appropriately.  
 
-1.  In the **Windows Forms Designer**, open the **Toolbox**
-1.  Drag and drop a **TextBox** into the Windows Forms App.  In the **Properties Tab**, name the **TextBox** `addressBar` .
-1.  Drag and drop a **Button** into the Windows Forms App.  Change the text in the **Button** to `Go!` and name the **Button** `goButton` in the **Properties Tab**.
-
-    The app should look like the following image in the designer.
+1.  In the **Windows Forms Designer**, open the **Toolbox**.  
+1.  Drag and Drop a **TextBox** into the Windows Forms App.  Name the **TextBox** `addressBar` in the **Properties Tab**.  
+1.  Drag and Drop a **Button** into the Windows Forms App.  Change the text in the **Button** to `Go!` and name the **Button** `goButton` in the **Properties Tab**.  
     
-    :::image type="complex" source="./media/winforms-designer.png" alt-text="designer" lightbox="./media/winforms-designer.png":::
-       designer  
+    The app should look like the following image in the designer.  
+    
+    :::image type="complex" source="./media/winforms-designer.png" alt-text="WinForms designer" lightbox="./media/winforms-designer.png":::
+       WinForms designer  
     :::image-end:::  
 
 1.  In the `Form1.cs` file, define `Form_Resize` to keep the controls in place when the App Window is resized.
@@ -143,10 +143,18 @@ To build and run your project, select `F5`.  Ensure the app displays similar to 
 
 ## Step 5 - Navigation
 
-Add the ability to allow users to change the URL that the WebView2 control displays by adding an address bar to the app.
+Add the ability to allow users to change the URL that the WebView2 control displays by adding an address bar to the app.  
 
+1.  Select `F5` to build and run your project.  Confirm that the app displays similar to the following screenshot.  
+    
+    :::image type="complex" source="./media/winforms-app.png" alt-text="WinForms App" lightbox="./media/winforms-app.png":::
+       WinForms App  
+    :::image-end:::  
+    
 1.  In the `Form1.cs`file, to add the `CoreWebView2` namespace, insert the following code snippet at the top.  
 
+1.  In `Form1.cs` add the `CoreWebView2` namespace by inserting the following code snippet at the top of `Form1.cs`.  
+    
     ```csharp
     using Microsoft.Web.WebView2.Core;
     ```
@@ -197,7 +205,7 @@ When an error occurs, the following events are raised and may depend on navigati
 > [!NOTE]
 > If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.  
 
-To demonstrate how to use these events, start by registering a handler for `NavigationStarting` that cancels any requests that don't use HTTPS.  
+To demonstrate how to use the events, start by registering a handler for `NavigationStarting` that cancels any requests not using HTTPS.  
 
 In the `Form1.cs` file, update the constructor to match the following code snippet and add the `EnsureHttps` function.  
 
@@ -220,7 +228,7 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 }
 ```
 
-In the constructor, EnsureHttps is registered as the event handler on the `NavigationStarting` event on the WebView2 control.  
+In the constructor, `EnsureHttps` is registered as the event handler on the `NavigationStarting` event on the WebView2 control.  
 
 To build and run your project, select `F5`.  Ensure when navigating to an HTTP site, the WebView remains unchanged.  However, the WebView will navigate to HTTPS sites.
 
@@ -326,8 +334,7 @@ Congratulations, you built your first WebView2 app.
 
 To continue learning more about WebView2, navigate to the following resources.  
 
-### See also  
-
+*   To learn more about building WebView2 applications, navigate to [WebView2 development best practices][WV2BestPractices].  
 *   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain].  
 *   For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].  
 *   For detailed information about the WebView2 API, navigate to [API reference][DotnetApiMicrosoftWebWebview2WinformsWebview2].  
@@ -338,6 +345,7 @@ To continue learning more about WebView2, navigate to the following resources.
 
 <!-- links -->  
 
+[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"  
 

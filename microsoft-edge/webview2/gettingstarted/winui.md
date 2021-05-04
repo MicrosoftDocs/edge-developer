@@ -3,7 +3,7 @@ description: Getting started guide with WebView2 for WinUI apps
 title: Getting started with WebView2 for WinUI apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/29/2021
+ms.date: 03/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -11,7 +11,7 @@ keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWeb
 ---
 # Getting started with WebView2 in WinUI 3 (Preview)  
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Your first WebView2 app uses WinUI3.  For more information on individual APIs, navigate to [API reference][GithubMicrosoftUiXamlSpecsWebview2].  
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Your first WebView2 app uses WinUI3.  For more information on individual APIs, navigate to [API reference][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].  
 
 ## Prerequisites  
 
@@ -23,7 +23,6 @@ Ensure you install the following list of pre-requisites before proceeding.
     > The WebView team recommends using the Canary channel and the minimum required version is 82.0.488.0.  
     
 *   [Visual Studio][MicrosoftVisualstudioMain] 2019, version 16.9 Preview.  For more information, navigate to [Windows UI Library 3 Preview 3][WindowsAppsWinui3ConfigureYourDevEnvironment].  
-    
     *   Include the following workloads when you install Visual Studio.  
         *   .NET Desktop Development \(the installer also installs .NET 5\)  
         *   Universal Windows Platform development  
@@ -274,21 +273,23 @@ Congratulations, you built your first WebView2 app.
 
 To continue learning more about WebView2, navigate to the following resources.  
 
-### See also  
-
+*   To learn more about building WebView2 applications, navigate to [WebView2 development best practices][WV2BestPractices].  
 *   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain].  
 *   For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].  
     
     > [!NOTE]
-    > The WinRT CoreWebView2 object may not be available with the release of the WebView2 API.  To understand which APIs are available to WebView2 controls, navigate to [WebView2 Spec][GithubMicrosoftUiXamlSpecsWebview2] for a list of the APIs that are available.  
+    > The WinRT CoreWebView2 object may not be available with the release of the WebView2 API.  To understand which APIs are available to WebView2 controls, navigate to [WebView2 Spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] for a list of the APIs that are available.  
     
-*   For detailed information about the WebView2 API, navigate to [WebView2 spec][GithubMicrosoftUiXamlSpecsWebview2].  
+*   For detailed information about the WebView2 API, navigate to [WebView2 spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].  
     
 ## Getting in touch with the Microsoft Edge WebView team  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
+To send your WinUI-specific feature requests or bugs, navigate to [Issues - microsoft/microsoft-ui-xaml][GithubMicrosoftMicrosoftUiXamlIssues] and choose **New issue**.  
+
 <!-- links -->  
+[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"  
 
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
@@ -306,7 +307,8 @@ To continue learning more about WebView2, navigate to the following resources.
 [WindowsMsixDesktopToUwpPackagingDotNet]: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net "Set up your desktop application for MSIX packaging in Visual Studio | Microsoft Docs"  
 [WindowsUwpGetStartedEnableYourDeviceForDevelopment]: /windows/uwp/get-started/enable-your-device-for-development "Enable your device for development | Microsoft Docs"  
 
-[GithubMicrosoftUiXamlSpecsWebview2]: https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md "WebView2 spec - microsoft/microsoft-ui-xaml-specs | GitHub"  
+[GithubMicrosoftMicrosoftUiXamlIssues]: https://github.com/microsoft/microsoft-ui-xaml/issues "Issues - microsoft/microsoft-ui-xaml | GitHub"  
+[GithubMicrosoftMicrosoftUiXamlSpecsWebview2]: https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md "WebView2 spec - microsoft/microsoft-ui-xaml-specs | GitHub"  
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"  

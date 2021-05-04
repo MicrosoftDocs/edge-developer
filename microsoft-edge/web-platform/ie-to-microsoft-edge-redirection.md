@@ -86,6 +86,8 @@ Email the following information to [ietoedge@microsoft.com][MailtoMicrosoftIetoe
 *   Street address  
 *   Website address  
     
+The IE compatibility list is updated within a week.
+
 > [!NOTE]
 > The IE compatibility list is designed to work with public sites only.  
 

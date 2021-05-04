@@ -3,7 +3,7 @@ description: Learn how to detect network issues in the Network panel of Microsof
 title: Network issues guide
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -99,16 +99,12 @@ In the following figure, the long, blue bar in the **Waterfall** next to the png
 Do you have a network issue that should be added to this guide?  
 
 *   Send a tweet to [@EdgeDevTools][MicrosoftEdgeTweet].  
-*   Choose **Send Feedback** \(![Send Feedback][ImageSendFeedbackIcon]\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
+*   Choose **Send Feedback** \(![Send Feedback](../media/smile-icon.msft.png)\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
 *   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->  
     
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageSendFeedbackIcon]: ../media/smile-icon.msft.png  
 
 <!-- links -->  
 

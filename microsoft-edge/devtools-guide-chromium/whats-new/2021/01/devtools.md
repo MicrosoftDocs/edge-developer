@@ -3,12 +3,25 @@ description: The What's New tool is now Welcome, Visual Font Editor in the Style
 title: What's new in DevTools (Microsoft Edge 89)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/04/2021
+ms.date: 04/08/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.localizationpriority: high
 ---
+<!-- Copyright Jecelyn Yeen 
 
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->  
 # What's New In DevTools (Microsoft Edge 89)  
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
@@ -80,9 +93,9 @@ In the **Elements** tool, the new Flexbox (flex) icon helps you identify Flexbox
    :::column-end:::
 :::row-end:::  
 
-### Display alignment icons and gridlines when Flexbox layouts change using CSS properties  
+### Display alignment icons and visual guides when Flexbox layouts change using CSS properties  
 
-<!--  Title: Display alignment icons and gridlines for changes to Flexbox layouts from CSS properties  -->  
+<!--  Title: Display alignment icons and visual guides for changes to Flexbox layouts from CSS properties  -->  
 <!--  Subtitle:  CSS autocomplete in the Styles tool now displays icons next to Flexbox properties to help you review the effect a property has on your Flexbox layout -->  
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
@@ -474,7 +487,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/updates/2021/01/devtools/index) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).  
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-89) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  

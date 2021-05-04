@@ -3,7 +3,7 @@ description: Learn how to test your website or app in Microsoft Edge or automate
 title: Use WebDriver (Chromium) for test automation  
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -28,21 +28,24 @@ Ensure you install [Microsoft Edge (Chromium)][MicrosoftEdge].  To confirm that 
 
 To begin automating tests, use the following steps to ensure that the WebDriver version you install matches your browser version.  
 
-1.  To display the version of Microsoft Edge, navigate to `edge://settings/help`.  
+1.  Find your version of Microsoft Edge.  
+    1.  Navigate to `edge://settings/help`.  
+        
+        :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="The build number for Microsoft Edge on April 15, 2021" lightbox="./media/microsoft-edge-version.msft.png":::
+           The build number for Microsoft Edge on April 15, 2021  
+        :::image-end:::  
+        
+1.  Navigate to [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver].  
+1.  Navigate to **Get the latest version**.  
+1.  Choose the build of channel that matches your version number of Microsoft Edge.  
     
-    :::image type="complex" source="./media/microsoft-edge-version.msft.png" alt-text="The build number for Microsoft Edge Canary on February 10, 2021" lightbox="./media/microsoft-edge-version.msft.png":::
-       The build number for Microsoft Edge Canary on February 10, 2021  
-    :::image-end:::  
-    
-1.  Navigate to [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver], under the **Downloads** section, and download the WebDriver that matches the version number of Microsoft Edge.  
-    
-    :::image type="complex" source="./media/microsoft-edge-driver-install.msft.png" alt-text="The Downloads section on Microsoft Edge Driver" lightbox="./media/microsoft-edge-driver-install.msft.png":::
-       The **Downloads** section on [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]  
+    :::image type="complex" source="./media/microsoft-edge-driver-install.msft.png" alt-text="The Get the latest version section on the Microsoft Edge Driver webpage" lightbox="./media/microsoft-edge-driver-install.msft.png":::
+       The **Get the latest version** section on the [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver] webpage  
     :::image-end:::  
     
     <!--  
     > [!NOTE] 
-    > For more information about test automation using Microsoft Edge \(EdgeHTML\), navigate to [Microsoft Edge Driver for Microsoft Edge \(EdgeHTML\)][Webdriver].  
+    > For more information about test automation using Microsoft Edge \(EdgeHTML\), navigate to [Microsoft Edge Driver for Microsoft Edge (EdgeHTML)][Webdriver].  
     -->  
     
 ## Choose a WebDriver language binding  
@@ -133,7 +136,7 @@ var driver = new EdgeDriver(options);
 options = EdgeOptions()
 options.use_chromium = True
 
-driver = Edge(options)
+driver = Edge(options = options)
 ```  
 
 #### [Java](#tab/java/)  
@@ -187,7 +190,7 @@ options = EdgeOptions()
 options.use_chromium = True
 options.binary_location = r"C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe"
 
-driver = Edge(options)
+driver = Edge(options = options)
 ```  
 
 #### [Java](#tab/java/)  
@@ -352,7 +355,7 @@ For more information, navigate to the [msedgedriver container on Docker Hub][Doc
 
 ## Next steps  
 
-To learn more about WebDriver and how to write automated WebDriver tests using Selenium, navigate to the [Selenium documentation][SeleniumDocumentation].  
+For more information about WebDriver and how to write automated WebDriver tests using Selenium, navigate to the [Selenium documentation][SeleniumDocumentation].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
@@ -366,7 +369,8 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 
 [DevtoolsIndex]: ../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [WebdriverCapabilitiesEdgeOptions]: ./capabilities-edge-options.md "Capabilities and EdgeOptions | Microsoft Docs"  
-<!--[Webdriver]: ../edgehtml/webdriver/index.md "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
+
+<!--[Webdriver]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
 
 [DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability - Microsoft Edge - Policies | Microsoft Docs"  
 
@@ -384,7 +388,7 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 [JavaScriptSeleniumTools]: https://www.npmjs.com/package/@microsoft/edge-selenium-tools "@microsoft/edge-selenium-tools | npm"  
 [JavaScriptSelenium]: https://www.npmjs.com/package/selenium-webdriver "selenium-webdriver | npm"  
 
-[MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]: https://developer.microsoft.com/microsoft-edge/tools/webdriver "WebDriver | Microsoft Developer"  
+[MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]: https://developer.microsoft.com/microsoft-edge/tools/webdriver "Microsoft Edge Driver | Microsoft Edge Developer"  
 
 [MicrosoftEdge]: https://www.microsoft.com/edge "Download New Microsoft Edge Browser"  
 

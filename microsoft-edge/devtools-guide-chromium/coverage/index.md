@@ -66,13 +66,13 @@ This stylesheet does not just include the code for the button component.  It con
 ## Record code coverage  
 
 1.  Choose one of the following buttons in the **Coverage** panel.  
-    *   Choose **Start Instrumenting Coverage And Reload Page** \(![Start Instrumenting Coverage And Reload Page][ImageReloadIcon]\) if you want to review what code is needed to load the page.  
-    *   Choose **Instrument Coverage** \(![Instrument Coverage][ImageRecordIcon]\) if you want to review what code is used after interacting with the page.  
-1.  Choose **Stop Instrumenting Coverage And Show Results** \(![Stop Instrumenting Coverage And Show Results][ImageStopIcon]\) when you want to stop recording code coverage.  
+    *   Choose **Start Instrumenting Coverage And Reload Page** \(![Start Instrumenting Coverage And Reload Page](../media/reload-icon.msft.png)\) if you want to review what code is needed to load the page.  
+    *   Choose **Instrument Coverage** \(![Instrument Coverage](../media/record-icon.msft.png)\) if you want to review what code is used after interacting with the page.  
+1.  Choose **Stop Instrumenting Coverage And Show Results** \(![Stop Instrumenting Coverage And Show Results](../media/stop-icon.msft.png)\) when you want to stop recording code coverage.  
     
 ## Analyze code coverage  
 
-The table in the **Coverage** panel displays the resources that were analyzed, and how much code is used within each resource.  Choose a row to open that resource in the **Sources** panel and review a line-by-line breakdown of used code and unused code.  
+The table in the **Coverage** panel displays the resources that were analyzed, and how much code is used within each resource.  Choose a row to open that resource in the **Sources** tool and review a line-by-line breakdown of used code and unused code.  
 
 :::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="A code coverage report" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
    A code coverage report  
@@ -87,12 +87,6 @@ The table in the **Coverage** panel displays the resources that were analyzed, a
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageReloadIcon]: ../media/reload-icon.msft.png  
-[ImageRecordIcon]: ../media/record-icon.msft.png  
-[ImageStopIcon]: ../media/stop-icon.msft.png  
 
 <!-- links -->  
 
