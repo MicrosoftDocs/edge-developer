@@ -25,6 +25,8 @@
           items:
             - name: Experimental features
               href: devtools-guide-chromium/experimental-features/index.md
+            - name: Microsoft Edge 91
+              href: devtools-guide-chromium/whats-new/2021/04/devtools.md
             - name: Microsoft Edge 90
               href: devtools-guide-chromium/whats-new/2021/02/devtools.md
             - name: Microsoft Edge 89
@@ -121,16 +123,16 @@
                   href: devtools-guide-chromium/device-mode/orientation.md
             - name: IE mode
               href: devtools-guide-chromium/ie-mode/index.md
-            - name: Javascript troubleshooting
+            - name: JavaScript troubleshooting
               items:
-                - name: JavaScript debugging reference
+                - name: Use the debugger features
                   href: devtools-guide-chromium/javascript/reference.md
+                - name: Pause your code with breakpoints
+                  href: devtools-guide-chromium/javascript/breakpoints.md
                 - name: Map pre-processed code to source code
                   href: devtools-guide-chromium/javascript/source-maps.md
                 - name: Mark content scripts as Library Code
                   href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
-                - name: Pause your code with breakpoints
-                  href: devtools-guide-chromium/javascript/breakpoints.md
             - name: Memory troubleshooting
               items:
                 - name: Memory terminology
@@ -176,13 +178,19 @@
                 - name: Console overview
                   href: devtools-guide-chromium/console/index.md
                 - name: Log messages
-                  href: devtools-guide-chromium/console/log.md
+                  href: devtools-guide-chromium/console/console-log.md
                 - name: Run JavaScript
-                  href: devtools-guide-chromium/console/javascript.md
+                  href: devtools-guide-chromium/console/console-javascript.md
                 - name: Reference
                   href: devtools-guide-chromium/console/reference.md
                 - name: Watch JavaScript expressions in real time
                   href: devtools-guide-chromium/console/live-expressions.md
+                - name: Debug Console errors
+                  href: devtools-guide-chromium/console/console-debug-javascript.md
+                - name: Interact with the DOM
+                  href: devtools-guide-chromium/console/console-dom-interaction.md
+                - name: Filter Console messages
+                  href: devtools-guide-chromium/console/console-filters.md
             - name: Coverage
               href: devtools-guide-chromium/coverage/index.md
             - name: Elements
@@ -235,16 +243,14 @@
               href: devtools-guide-chromium/security/index.md
             - name: Sources
               items:
-                - name: Sources panel overview
+                - name: Sources tool overview
                   href: devtools-guide-chromium/sources/index.md
-                - name: JavaScript debugging reference
-                  href: devtools-guide-chromium/javascript/reference.md
-                - name: Disable JavaScript
-                  href: devtools-guide-chromium/javascript/disable.md
                 - name: Overrides
                   href: devtools-guide-chromium/javascript/overrides.md
                 - name: Snippets
                   href: devtools-guide-chromium/javascript/snippets.md
+                - name: Disable JavaScript
+                  href: devtools-guide-chromium/javascript/disable.md
             - name: WebAuthn
               href: devtools-guide-chromium/webauthn/index.md
         - name: Reference
@@ -331,6 +337,8 @@
           href: progressive-web-apps-chromium/serviceworker.md
         - name: Web app manifests
           href: progressive-web-apps-chromium/webappmanifests.md
+        - name: Experimental features
+          href: progressive-web-apps-chromium/experimental-features/index.md
         - name: Publish your PWA to the Microsoft Store
           href: progressive-web-apps-chromium/microsoft-store.md
     - name: Playwright overview
@@ -403,6 +411,8 @@
               href: webview2/concepts/versioning.md
             - name: Threading model
               href: webview2/concepts/threading-model.md
+            - name: WebView2 development best practices  
+              href: webview2/concepts/developer-guide.md
             - name: Win32 API conventions
               href: webview2/concepts/win32-api-conventions.md
         - name: Release notes

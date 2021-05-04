@@ -3,7 +3,7 @@ description: Get started with Remote Debugging Windows 10 devices
 title: Get started with remote debugging Windows 10 Devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2021
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, remote, debugging, windows 10, windows, device portal
@@ -15,7 +15,7 @@ Remote debug live content on a Windows 10 device from your Windows or macOS comp
 *   Set up your Windows 10 device for remote debugging and connect to it from your development machine.  
 *   Inspect and debug live content on your Windows 10 device from your development machine.  
 *   Screencast content from your Windows 10 device onto a DevTools instance on your development machine.  
-
+    
 ## Step 1: Set up the host (debuggee machine)  
 
 The host or debuggee machine is the Windows 10 device that you want to debug.  It may be a remote device that is hard for you to physically access or it may not have keyboard and mouse peripherals, making it difficult to interact with the Microsoft Edge DevTools on that device.  To set up the host \(debuggee\) machine, you need to complete the following actions.  
@@ -23,7 +23,7 @@ The host or debuggee machine is the Windows 10 device that you want to debug.  I
 *   Install and configure [Microsoft Edge (Chromium)][MicrosoftEdgeMain]  
 *   Install the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] from the [Microsoft Store][MicrosoftStoreAppsWindows]  
 *   Activate [Developer Mode][WindowsAppsGetStartedEnableYourDeviceForDevelopment] and enable [Device Portal][WindowsUwpDebugTestPerfDevicePortal]  
-
+    
 ### Install and configure Microsoft Edge (Chromium)  
 
 If you have not already, install Microsoft Edge \(Chromium\) from [this page][MicrosoftEdgeMain].  If you are using a pre-installed version of Microsoft Edge on the host \(debuggee\) machine, verify that you have Microsoft Edge \(Chromium\) and not Microsoft Edge \(EdgeHTML\).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.  
@@ -152,11 +152,11 @@ Some notes on screencasts:
 
 The **Event Listeners** pane in the **Elements** tool is blank on Windows 10 version 1903.  The team plans to fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.  
 
-The **Cookies** pane in the **Application** panel is blank on Windows 10 version 1903.  The team plans to fix the **Cookies** pane in a servicing update to Windows 10 version 1903.  
+The **Cookies** pane in the **Application** panel is blank on Windows 10 version 1903.  The team plans to fix the **Cookies** pane in a service update to Windows 10 version 1903.  
 
-The **Audits** panel, the **3D View** panel, the **Emulated Devices** section in **Settings**, and the **Accessibility tree** pane in the **Elements** tool are not currently working as expected.  The team plans to fix these tools in a future update of Microsoft Edge.  
+The **Audits** tool, the **3D View** tool, the **Emulated Devices** section in **Settings**, and the **Accessibility tree** pane in the **Elements** tool are not currently working as expected.  The team plans to fix the listed tools in a future update of Microsoft Edge.  
 
-The file explorer does not launch from the DevTools in the **Sources** panel or in the **Security** panel when remote debugging.  The team plans to fix these tools in a future update of Microsoft Edge.  
+The file explorer does not launch from the DevTools in the **Sources** tool or in the **Security** panel when you remote debug.  The team plans to fix the tools in a future update of Microsoft Edge.  
 
 <!-- links -->
 
@@ -170,7 +170,6 @@ The file explorer does not launch from the DevTools in the **Sources** panel or 
 [WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows Device Portal overview | Microsoft Docs"  
 [WindowsUwpDebugTestPerfDevicePortalSetup]: /windows/uwp/debug-test-perf/device-portal#setup "Setup - Windows Device Portal overview | Microsoft Docs"  
 [WindowsUwpDebugTestPerfDevicePortalDesktopRegistryBasedConfigurationForDevicePortal]: /windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration-for-device-portal "Registry-based configuration for Device Portal - Device Portal for Windows Desktop | Microsoft Docs"  
-[WindowsUwpDebugTestPerfDevicePortalDesktopRegistryBasedConfigurationForDevicePortal]
 
 [MicrosoftEdgeMain]: https://www.microsoft.com/edge "Download New Microsoft Edge Browser"  
 

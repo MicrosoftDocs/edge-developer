@@ -10,15 +10,14 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Override webpage resources with local copies using Microsoft Edge DevTools  
 
-Sometimes you need to fix a problem on a webpage that you do not have access to or fixes involve a slow and complex build process.  You may debug and fix all kind of problems in DevTools. But the problem is the changes do not persist.  After you refresh the file, all your work is gone.  
-
-The Overrides feature in the [Sources][DevToolsSourcesTool] tool helps you solve this problem.  
+Sometimes you need to try out some possible fixes for a webpage, but you don't have access to the source files, or changing the page requires a slow and complex build process.  You may debug and fix all kind of problems in DevTools.  But the changes do not persist; after you refresh the local file, all your work is gone.  The Overrides feature in the [Sources][DevToolsSourcesTool] tool helps you solve this problem.  
 
 You may now take a resource of the current webpage and store it locally.  When you refresh the webpage, the browser does not load the resource from the server.  Instead the browser replaces it with your local copy of the resource.  
 
 ## Setting up your local folder to store Overrides  
 
-1.  In the **Sources** tool, find several sections on the left-hand side.  If the **Overrides** option is not displayed, choose the <code>&#x0226B;</code><!--`≫`--> icon to get there.  
+1.  Navigate to the **Sources** tool.  
+1.  In the **Navigator** pane (on the left), choose the **Overrides** tab.  If the **Overrides** tab is not displayed, choose the <code>&#x0226B;</code><!--`≫`--> icon.  
     
     :::row:::
        :::column span="":::
@@ -33,7 +32,8 @@ You may now take a resource of the current webpage and store it locally.  When y
        :::column-end:::
     :::row-end:::  
     
-1.  After you choose the **Overrides** option, you must choose a folder on your local computer to store the resource files that you want to replace.  Choose the **+ Select folder for overrides** to search for a folder.  
+1.  Choose a folder on your local computer to store the resource files that you want to replace.  
+     *   To search for a folder, choose **+ Select folder for overrides**.  
     
     :::image type="complex" source="../media/javascript-overrides-select-folder.msft.png" alt-text="Choose a folder to use for overrides" lightbox="../media/javascript-overrides-select-folder.msft.png":::
        Choose a folder to use for overrides  
@@ -45,10 +45,10 @@ You may now take a resource of the current webpage and store it locally.  When y
        Grant DevTools access to folder  
     :::image-end:::  
     
-1.  In the **Overrides** pane, a checkbox should be displayed next to `Enable Local Overrides` and your overrides folder.  An icon is displayed next to it that allows you to delete your local overrides settings.  You are now done setting up your folder and ready to replace live resources with local ones.
+1.  In the **Overrides** tab, a checkbox is shown next to **Enable Local Overrides**.  To the right of **Enable Local Overrides** is a **Clear configuration** icon that allows you to delete your local overrides settings.  You are now done setting up your folder and are ready to replace live resources with local ones.
     
-    :::image type="complex" source="../media/javascript-overrides-folder-setup-complete.msft.png" alt-text="Successful set up of an overrides folder" lightbox="../media/javascript-overrides-folder-setup-complete.msft.png":::
-       Successful set up of an overrides folder  
+    :::image type="complex" source="../media/javascript-overrides-folder-setup-complete.msft.png" alt-text="Successful setup of an overrides folder" lightbox="../media/javascript-overrides-folder-setup-complete.msft.png":::
+       Successful setup of an overrides folder  
     :::image-end:::  
     
 ## Adding files to your Overrides folder  
