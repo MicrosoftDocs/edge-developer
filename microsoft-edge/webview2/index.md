@@ -106,7 +106,7 @@ The [WebView2 Samples][GithubMicrosoftedgeWebview2samples] repository contains s
 A General Availability \(GA\) or Preview version is available on the following programming environments.  
 
 *   Win32 C/C++ \(GA\)  
-*   .NET Framework 4.6.2 or later  
+*   .NET Framework 4.5 or later  
 *   .NET Core 3.1 or later  
 *   .NET 5  
 *   [WinUI 3.0][UwpToolkitsWinui3] \(Preview\)  

@@ -29,7 +29,7 @@ This article teaches you the basic workflow for debugging any JavaScript issue i
 
 Finding a series of actions that consistently reproduce a bug is always the first step to debugging.  
 
-1.  Choose **Open Demo**.  Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and open the demo in a new browser tab.  
+1.  Choose the following **Open Demo** link and open the webpage in a new tab.  To open the demo in a new tab, select and hold `Ctrl` \(Windows, Linux\) or `Command` \(macOS\), and then choose **Open Demo**.  
     
     [Open Demo][OpenDebugJSDemo]  
     
@@ -63,9 +63,9 @@ The **Sources** tool UI has three parts.
    The 3 parts of the **Sources** tool UI  
 :::image-end:::  
 
-1.  The **File Navigator** panel \(Section 1 in the previous figure\).  Every file that the webpage requests is listed here.  
-1.  The **Code Editor** panel \(Section 2 in the previous figure\).  After selecting a file in the **File Navigator** pane, the contents of that file are displayed here.  
-1.  The **JavaScript Debugging** panel \(Section 3 in the previous figure\).  Various tools for inspecting the JavaScript for the webpage.  If your DevTools window is wide, this pane is displayed to the right of the **Code Editor** pane.  
+1.  The **Navigator** pane \(Section 1 in the previous figure\).  Every file that the webpage requests is listed here.  
+1.  The **Editor** pane \(Section 2 in the previous figure\).  After you choose a file in the **Navigator** pane, this pane displays the contents of the file.  
+1.  The **Debugger** pane \(Section 3 in the previous figure\).  This pane provides tools for inspecting the JavaScript for the webpage.  If your DevTools window is wide, this pane is displayed to the right of the **Editor** pane.  
     
 ## Step 3: Pause the code with a breakpoint  
 
@@ -92,7 +92,7 @@ In short, breakpoints may help you find and fix bugs faster than the `console.lo
 
 If you step back and think about how the app works, you may make an educated guess that the incorrect sum \(`5 + 1 = 51`\) is computed in the `click` event listener associated with the **Add Number 1 and Number 2** button.  So, you probably want to pause the code around the time that the `click` listener runs.  **Event Listener Breakpoints** let you do exactly that:  
 
-1.  In the **JavaScript Debugging** pane, choose **Event Listener Breakpoints** to expand the section.  DevTools reveals a list of expandable event categories, such as **Animation** and **Clipboard**.  
+1.  In the **Debugger** pane, choose **Event Listener Breakpoints** to expand the section.  DevTools reveals a list of expandable event categories, such as **Animation** and **Clipboard**.  
 1.  Next to the **Mouse** event category, choose **Expand** \(![Expand icon](../media/expand-icon.msft.png)\).  DevTools reveals a list of mouse events, such as **click** and **mousedown**.  Each event has a checkbox next to it.  
 1.  Choose the checkbox next to **click**.  DevTools is now set up to automatically pause when any `click` event listener runs.  
     
@@ -113,7 +113,7 @@ If you step back and think about how the app works, you may make an educated gue
 
 <!--todo: add inprivate section when available -->  
 
-**Event Listener Breakpoints** are just one of many types of breakpoints available in DevTools.  Memorize all the different types to help you debug different scenarios as quickly as possible.  <!--See [Pause Your Code With Breakpoints][JSBreakpoints] to learn when and how to use each type.  -->  
+**Event Listener Breakpoints** are just one of many types of breakpoints available in DevTools.  Memorize all the different types to help you debug different scenarios as quickly as possible.  <!--  To learn when and how to use each type, navigate to [Pause your code with breakpoints][JSBreakpoints].  -->  
 
 ## Step 4: Step through the code  
 
@@ -153,9 +153,9 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
 
 The values of `addend1`, `addend2`, and `sum` look suspicious.  The values are wrapped in quotes.  The quotations mean that the value is a string, which is a good hypothesis to explain the cause of the bug.  Gather more information about the situation.  DevTools provides many tools for examining variable values.  
 
-### Method 1: The Scope panel  
+### Method 1: The Scope pane  
 
-If you pause on a line of code, the **Scope** panel displays the local and global variables that are currently defined, along with the value of each variable.  It also displays closure variables, as applicable.  Double-click a variable value to edit it.  If you don't pause on a line of code, the **Scope** panel is empty.  
+If you pause on a line of code, the **Scope** pane displays the local and global variables that are currently defined, along with the value of each variable.  It also displays closure variables, as applicable.  Double-click a variable value to edit it.  If you don't pause on a line of code, the **Scope** pane is empty.  
 
 :::image type="complex" source="../media/javascript-sources-breakpoint-paused-scope.msft.png" alt-text="The Scope pane" lightbox="../media/javascript-sources-breakpoint-paused-scope.msft.png":::
    The **Scope** pane  
@@ -163,27 +163,27 @@ If you pause on a line of code, the **Scope** panel displays the local and globa
 
 ### Method 2: Watch Expressions  
 
-The **Watch Expressions** panel lets you monitor the values of variables over time.  As the name implies, **Watch Expressions** aren't limited to variables.  You may store any valid JavaScript expression in a **Watch Expression**.  Try it now.  
+The **Watch** pane allows you to monitor the values of variables (such as `sum`) or expressions (such as `typeof sum`).  You may store any valid JavaScript expression in a Watch Expression.  
 
-1.  Choose the **Watch** panel.  
-1.  Choose **Add Expression** \(![Add Expression](../media/add-expression-icon.msft.png)\).  
+1.  Choose the **Watch** pane.  
+1.  Choose **Add watch expression** \(![Add watch expression](../media/add-expression-icon.msft.png)\).  
 1.  Type `typeof sum`.  
-1.  Select `Enter`.  DevTools shows `typeof sum: "string"`.  The value to the right of the colon is the result of your Watch Expression.  
+1.  Select `Enter`.  DevTools displays `typeof sum: "string"`.  The value to the right of the colon is the result of your Watch Expression.  
     
 > [!NOTE]
-> In the **Watch Expression** pane \(bottom-right\) in the following figure, the `typeof sum` Watch Expression is displayed.  If your DevTools window is large, the **Watch Expression** pane is on the right above the **Event Listener Breakpoints** pane.  
+> In the following figure, the `typeof sum` Watch Expression is displayed in the **Watch** pane.  If your DevTools window is wide, the **Watch** pane is displayed within the **Debugger** pane, which then appears on the right.  
 
-:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="The Watch Expression panel" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
-   The **Watch Expression** panel  
+:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="The Watch pane" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
+   The **Watch** pane  
 :::image-end:::  
 
 As suspected, `sum` is being evaluated as a string, when it should be a number.  You now confirmed value type is the cause of the bug.  
 
 ### Method 3: The Console  
 
-The **Console** allows you to view `console.log()` messages and you may also use it to evaluate arbitrary JavaScript statements.  For debugging, you may use the **Console** to test potential fixes for bugs.  Try it now.  
+The **Console** allows you to view `console.log()` output.  You can also use the **Console** to evaluate arbitrary JavaScript statements while the debugger is paused at a code statement.  For debugging, you can use the **Console** to test potential fixes for bugs.
 
-1.  If the **Console** tool is closed, select `Escape` to open it.  The **Console** tool opens in the lower panel of the DevTools window.  
+1.  If the **Console** tool is closed, select `Esc` to open it.  The **Console** tool opens in the lower pane of the DevTools window.  
 1.  In the **Console**, type `parseInt(addend1) + parseInt(addend2)`.  The statement the tool is paused on a line of code where `addend1` and `addend2` are in scope.  
 1.  Select `Enter`.  DevTools evaluates the statement and prints `6`, which is the result you expect the demo to produce.  
     
@@ -193,30 +193,35 @@ The **Console** allows you to view `console.log()` messages and you may also use
     
 ## Step 7: Apply a fix  
 
-If you find a fix for the bug, try out your fix by editing the code and rerunning the demo.  You may edit JavaScript code directly within the DevTools UI and apply the fix.  Try it now.  
+We've identified a possible fix for the bug.  Next, edit the JavaScript code directly within the DevTools UI and then rerun the demo to test the fix, as follows.
 
 1.  Choose **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\).  
-1.  In the **Code Editor**, replace line 32, `var sum = addend1 + addend2`, with `var sum = parseInt(addend1) + parseInt(addend2)`.  
+1.  In the **Editor** pane, replace the line `var sum = addend1 + addend2` with `var sum = parseInt(addend1) + parseInt(addend2)`.  
 1.  Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save your change.  
 1.  Choose **Deactivate breakpoints** \(![Deactivate breakpoints](../media/deactivate-breakpoints-button-icon.msft.png)\).  It changes blue to indicate the option is active.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set.  
 1.  Try out the demo with different values.  The demo now calculates correctly.  
     
 > [!CAUTION]
-> This workflow only applies a fix to the code that is running in your browser.  It does not fix the code for all users that visit your webpage.  To do that, you need to fix the code that is on your servers.  
+> This workflow only applies a fix to a local copy of the code sent from the server.  When debugging your project, after you identify the fix, you still need to apply that fix to the code on the server, such as by editing your local source code and then re-deploying your fixed code to the server.
 
 ## Next steps  
 
 Congratulations!  You now know how to make the most of Microsoft Edge DevTools when debugging JavaScript.  The tools and methods you learned in this article may save you countless hours.  
 
-This article only taught you two ways to set breakpoints.  DevTools offers many other ways including the following settings.  
+This article showed two ways to set breakpoints.  DevTools also provides ways to set breakpoints to pause your code when certain conditions are met, such as:
 
 *   Conditional breakpoints that are only triggered when the condition that you provide is true.  
 *   Breakpoints on caught or uncaught exceptions.  
 *   XHR breakpoints that are triggered when the requested URL matches a substring that you provide.  
     
-For more information about when and how to use each type, navigate to [Pause Your Code With Breakpoints][DevtoolsJavscriptBreakpoints].  
+For more information about when and how to use each type, navigate to [Pause your code with breakpoints][DevToolsJavscriptBreakpoints].  
 
-A couple of code stepping controls aren't explained in this article.  For more information, navigate to [Step over line of code][DevtoolsJavascriptReferenceStepThroughCode].  
+A couple of code stepping controls aren't explained in this article.  For more information, navigate to [Step over line of code][DevToolsJavascriptReferenceStepThroughCode] in the "Use the debugger features" article.
+
+### See also
+
+*   [Use the debugger features][DevToolsJavascriptReference] - Using the UI of the debugger in the Sources tool.
+*   [Sources tool overview][DevToolsSourcesIndex] - Introduces the JavaScript debugger and code editor.
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
@@ -224,8 +229,10 @@ A couple of code stepping controls aren't explained in this article.  For more i
 
 <!-- links -->  
 
-[DevtoolsJavscriptBreakpoints]: ./breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "Step through code - JavaScript debugging reference | Microsoft Docs"
+[DevToolsJavascriptReference]: ./reference.md "Use the debugger features | Microsoft Docs"  
+[DevToolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"  
+[DevToolsJavscriptBreakpoints]: ./breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
+[DevToolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "Step through code - Use the debugger features | Microsoft Docs"
 
 <!--[inPrivate]: https://support.alphabet.com/alphabet-browser/answer/95464  -->  
 
