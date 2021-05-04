@@ -31,7 +31,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 ## View Application Cache data  
 
-1.  Select the **Sources** tab to open the **Sources** panel.  The **Manifest** pane usually opens by default.  
+1.  At the top of DevTools, choose the **Application** tool.  
     
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
        The **Manifest** pane  
