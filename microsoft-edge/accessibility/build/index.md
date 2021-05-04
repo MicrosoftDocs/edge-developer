@@ -4,7 +4,7 @@ description: Walk through how best practices and Accessible Rich Internet Applic
 title: Build | Accessibility
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/06/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
@@ -124,9 +124,10 @@ SSB BART Group is a digital accessibility firm supporting their clients in devel
 
 JavaScript library to help modern web applications with accessibility concerns by making accessibility simpler.
 
-#### [Heydonworks - ARIA Examples](http://heydonworks.com/practical_aria_examples/)
+<!--  website no longer exists  -->  
+<!--  #### [Heydonworks - ARIA Examples](http://heydonworks.com/practical_aria_examples/)
 
-Practical ARIA examples to enhance your application accessibility
+Practical ARIA examples to enhance your application accessibility  -->  
 
 #### [OpenAjax Examples](http://oaa-accessibility.org/)
 

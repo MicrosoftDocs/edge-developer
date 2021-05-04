@@ -3,7 +3,7 @@ description: Emulate vision deficiencies in Microsoft Edge DevTools.
 title: Emulate vision deficiencies in Microsoft Edge DevTools (color blindness)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/09/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -86,5 +86,6 @@ You may also use **Command Menu** to access the different simulations.
 [DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analyze runtime performance | Microsoft Docs"  
 
 [ColorblindawarenessMain]: http://www.colourblindawareness.org "The Colour Blind Awareness organisation"  
+<!-- this link must be http, not https -->  
 
 [AmfcbMain]: https://www.amfcb.org "The American Foundation for the Color Blind (AFCB)"  
