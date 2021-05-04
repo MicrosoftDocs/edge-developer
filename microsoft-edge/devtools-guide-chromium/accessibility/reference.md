@@ -46,27 +46,27 @@ In general, DevTools should help you fix errors related to question #2, because 
 
 <!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
 
-## Audit the accessibility of a page  
+## Audit the accessibility of a page using Lighthouse
 
 > [!NOTE]
-> The **Audits** tool provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.  
+> The **Lighthouse** tool provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.  
 
-In general, use the Audits panel to determine if:  
+Use the Lighthouse tool to determine:
 
-*   A page is properly marked up for screen readers.  
-*   The text elements on a page have sufficient contrast ratios.  Navigate to [View the contrast ratio of a text element in the Color Picker](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
+*   Whether a page is properly marked up for screen readers.  
+*   Whether the text elements on a page have sufficient contrast ratios.  Navigate to [View the contrast ratio of a text element in the Color Picker](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
 
-To audit a page:  
+To audit a page:
 
-1.  Navigate to the URL that you want to audit.  
-1.  In DevTools, choose the **Audits** tool.  DevTools shows you various configuration options.  
+1.  Navigate to the URL that you want to audit.
+1.  In DevTools, select the **Lighthouse** tool (previously called the **Audits** tool).  DevTools shows you various configuration options.
     
     :::image type="complex" source="../media/accessibility-audits-pane.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-audits-pane.msft.png":::
        Configure audits  
     :::image-end:::  
     
     > [!NOTE]
-    > The screenshots in this section were taken with Microsoft Edge version 79.  You may check what version you are running at `edge://version`.  The **Audits** tool UI looks different in earlier versions of Microsoft Edge, but the general workflow is the same.  
+    > The screenshots in this section were taken with Microsoft Edge version 79.  You may check what version you are running at `edge://version`.  The general workflow remains the same.  
     
 1.  For **Device**, choose **Mobile** if you want to simulate a mobile device.  This option changes your user agent string and resizes the viewport.  If the mobile version of the page displays differently than the desktop version, this option may have a significant effect on the results of your audit.  
 1.  In the **Audits** section, make sure that **Accessibility** is enabled.  Disable the other categories if you want to exclude them from your report.  Leave them enabled if you want to discover other ways to improve the quality of your page.  
@@ -92,9 +92,9 @@ To audit a page:
     
 ### See also: aXe extension  
 
-You may prefer to use the [aXe extension][ChromeWebStoreAxe] rather than the **Audits** tool.  
-The aXe extension generally provides the same information, since it is the underlying engine that powers the Audits panel.  The aXe extension has a different UI and describes audits slightly differently.  
-One advantage that the aXe extension has over the **Audits** tool is that it enables you to inspect and highlight failing nodes.  
+You may prefer to use the [aXe extension][ChromeWebStoreAxe] rather than the **Lighthouse** tool.  
+The aXe extension generally provides the same information, since it is the underlying engine that powers the Lighthouse tool.  The aXe extension has a different UI and describes audits slightly differently.  
+One advantage that the aXe extension has over the Lighthouse tool is that it enables you to inspect and highlight failing nodes.  
 
 :::image type="complex" source="../media/accessibility-devtools-extension-axe-panel.msft.png" alt-text="The aXe extension" lightbox="../media/accessibility-devtools-extension-axe-panel.msft.png":::
    The aXe extension  
