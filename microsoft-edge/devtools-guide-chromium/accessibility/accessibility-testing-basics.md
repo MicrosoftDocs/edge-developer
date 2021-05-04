@@ -10,11 +10,13 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Accessibility testing using DevTools
 
+This article covers some of the features you can use in DevTools to test for accessibility problems.  As an example, we use a demo page that has some accessibility problems, and we go through using different features of DevTools to detect and fix accessibility problems with the demo page.
+
 :::image type="complex" source="../media/a11y-testing-basics-demopage.msft.png" alt-text="The demo page, which has some accessibility issues" lightbox="../media/a11y-testing-basics-demopage.msft.png":::
     The demo page, which has some accessibility issues
 :::image-end:::
 
-This article covers some of the features you can use in DevTools to test for accessibility problems.  As an example, we use a demo page that has some accessibility problems, and we go through using different features of DevTools to detect and fix accessibility problems with the demo page.
+Open the [demo page with accessibility issues][DevToolsA11yErrorsDemopage] in a new tab, to try out the DevTools accessibility-testing features yourself as we go through them.
 
 
 ## Accessibility checklist and related DevTools features
@@ -44,7 +46,7 @@ This article covers some of the features you can use in DevTools to test for acc
 
 The **Issues** tool includes an **Accessibility** section that automatically reports issues such as low text contrast.  The **Issues** tool is within the Drawer at the bottom of DevTools.  To access the **Issues** tool, use the **Issues counter** in the upper right of DevTools, or a wavy underlining of elements in the DOM tree in the **Elements** tool.
 
-1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.  In the upper right, the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears, as a speech-bubble icon along with the number of automatically detected issues.  You might see a different number, and the number you see might update as you use DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.  In the upper right, the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears, as a speech-bubble icon along with the number of automatically detected issues.  You might see a different number, and the number you see might update as you use DevTools.
 
     :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="The Issues counter in DevTools, indicating how many problems there are in the current document" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
         The **Issues counter** in DevTools, indicating how many problems there are in the current document
@@ -66,7 +68,7 @@ For more information, see [Find and fix problems with the Microsoft Edge DevTool
 
 To check that input fields have labels connected to them, use the **Issues** tool, which automatically checks the entire webpage and reports this issue in the **Accessibility** section.
 
-1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
 
 1.  In the upper right, select the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\).  The **Issues** tool opens, in the **Drawer** at the bottom of DevTools.
 
@@ -106,7 +108,7 @@ Basic accessibility testing requires making sure alternative text (also called _
 
 To automatically check whether alt text is provided for images, use the **Issues** tool, which has an **Accessibility** section.  The **Issues** tool is located in the **Drawer** at the bottom of DevTools.
 
-1.  If it is not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
 
 1.  To open the **Issues** tool, select the **Issues** counter in the upper right of DevTools.
 
@@ -124,7 +126,7 @@ To make sure text colors have enough contrast, use the **Issues** tool, which ha
 
 To automatically check whether text colors have enough contrast, use the **Issues** tool, which has an **Accessibility** section.  The **Issues** tool is located in the **Drawer** at the bottom of DevTools.
 
-1.  If it is not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
 
 1.  Select the **Issues** counter in the upper right of DevTools.  The **Issues** tool opens.
 
@@ -166,7 +168,7 @@ To check that the webpage layout is usable when narrow, resize the browser windo
 
 To check page layout and usability by making the browser window narrow:
 
-1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser.
 
 1.  Resize the window to make it narrow.  If DevTools is open, resize the webpage portion of the window to make it narrow.  With some iterations of the demo page, or some browser versions, the navigation bar overlaps the Search form, as shown in the upper left of the following figure.
 
@@ -198,7 +200,7 @@ To find out what is going wrong, use the **Inspect** tool, which provides an inf
 <!-- Inspect tool: Accessibility section of overlay -->
 ## Check individual elements for text contrast, screen reader text, and keyboard support
 
-1.  If it isn't open, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
 
 1.  Select the **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) tool icon in the top-left corner of DevTools so that the icon is highlighted (blue).
 
@@ -269,7 +271,7 @@ Not all users have a pointer or touch device, and not all users can see the web 
 
 Try using the demo page by using a keyboard rather than a mouse, as follows.
 
-1.  If the demo page isn't open, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser.
 
 1.  Use a keyboard to navigate the demo document, using the `Tab` and `Shift`+`Tab` keys to jump from element to element.  On the demo webpage, pressing `Tab` first moves focus to the search form in the `header` section.
 
@@ -317,7 +319,7 @@ Let's analyze these problems by using DevTools, in the following sections.
 
 The sidebar navigation menu with blue buttons doesn't visually indicate which button has focus, when using a keyboard.  To find out why the sidebar menu is confusing to keyboard users, we'll inspect CSS pseudo-class rules for the `hover` and `focus` states, along with the CSS property for button outlines.  To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue button on the sidebar navigation menu, and then view the DOM tree and CSS for the `a` element that defines that button.
 
-1.  If the demo page isn't open, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
 
 1.  Select the **Inspect** \(![Inspect icon](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools so that the icon is highlighted (blue).
 
@@ -349,7 +351,7 @@ The sidebar navigation menu with blue buttons doesn't visually indicate which bu
 
 In the donation form, the amount buttons and the **Donate** button don't work with a keyboard.  Debugging the donation form in the demo page requires understanding why the lack of a `focus` state and the presence of the `outline: none` CSS property aren't flagged as a problem by automatic testing, such as the **Issues** tool or **Inspect** tool.
 
-1.  If the demo page isn't open, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
     
 1.  Select the **Inspect** \(![Inspect icon](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools so that the icon is highlighted (blue).
 
@@ -415,7 +417,7 @@ Using the **Inspect** tool to check each page element individually can become pr
 
 The **Accessibility** tool is in the **Elements** tool, to the right of the **Styles** tab.
 
-1.  If the demo webpage is not open, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select `F12` to open DevTools.
 
 1.  Select the **Inspect** \(![the Inspect icon](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools so that the icon is highlighted (blue).
 
@@ -451,7 +453,7 @@ The reason for the confusing `Tab` key order after the **More** buttons is that 
 
 You can test issues with `Tab` key order by using the **Source order viewer** in the **Accessibility** tool.  The **Source order viewer** is an experimental feature; for more information, see [Source order viewer](../experimental-features/index.md#source-order-viewer).
 
-1.  If the demo webpage is not open, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select `F12` to open DevTools.
 
 1.  In DevTools, in the upper right, select the **Settings** button, shown as a gear icon.  The **Settings** page of DevTools appears.
 
@@ -504,7 +506,7 @@ In some cases, contrast is affected by setting the browser to light theme or dar
 
 As an example, the sidebar menu elements of the demo page such as the blue **Cats** button have enough contrast, but the green `Dogs` link in the `Donation status` section does not have enough contrast.  Inspect those elements using the **Inspect** tool, as follows:
 
-1.  If it's not open, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select `F12` to open DevTools.
 
 1.  Select the **Inspect** \(![Inspect button](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools so that the icon is highlighted (blue).
 
@@ -524,7 +526,7 @@ As an example, the sidebar menu elements of the demo page such as the blue **Cat
 
 The **Inspect** tool's information overlay only represents a single state.  But the elements on the page could have different states, and you need to test those states, too.  For example, when you hover the mouse pointer over the menu of the accessibility-testing demo page, you get a rather involved animation that changes the colors, as follows:
 
-1.  If the demo webpage is not open, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.
 
 1.  Hover over the various buttons in the menu which begins with the blue **Cats** button.  The menu animations run.
 
@@ -550,7 +552,7 @@ To check accessibility during all states of elements, such as text-color contras
 
 When the **Inspect** tool is active, instead of hovering over an animated element, you need to simulate the state of the menu item.  To simulate the state of a menu item, use the state simulation in the **Styles** pane.  The **Styles** pane has a **:hov** button (for **Toggle Element State**), which displays a group of checkboxes labeled **Force element state**.  Use this feature as follows:
 
-1.  If the demo webpage is not open, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select `F12` to open DevTools.
 
 1.  Select the **Inspect** icon in the top-left corner of DevTools so that the icon is highlighted (blue).
 
@@ -615,7 +617,7 @@ The accessibility-testing demo page has a light theme and a dark theme.  You can
 
 The accessibility-testing demo page inherits the dark or light theme setting from the operating system.  If we use DevTools to simulate the operating system being set to a light scheme and then refresh the webpage, the **Issues** tool shows six color-contrast problems instead of two.  (You might see different numbers.)
 
-1.  If it's not open, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
 
 1.  Press `Esc` to open the Drawer at the bottom of DevTools.  Select the `+` icon at the top of the drawer to see the list of tools, and then select **Rendering**.  The Rendering tool appears.
 
@@ -658,7 +660,7 @@ In the accessibility-testing demo webpage, the different donation states use col
 
 But you can't expect all of your users to experience these colors as intended.  By using the **Emulate vision deficiencies** feature of the **Rendering** tool, you can find out that this design is not good enough, because you can simulate how people with different vision would perceive your design.
 
-1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
 
 1.  Press `Esc` to open the Drawer at the bottom of DevTools.  Select the `+` icon at the top of the drawer to see the list of tools, and then select **Rendering**.  The Rendering tool appears.
 
@@ -678,7 +680,7 @@ For more information, see [vision deficiencies emulation][DevToolsVisionDeficien
 
 To simulate blurred vision, in the **Rendering** tool, use the **Emulate vision deficiencies** menu.  When you this feature with the accessibility-testing demo webpage, you can see that the drop shadow on the text in the upper menu makes it hard to read the menu items.
 
-1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
 
 1.  Press `Esc` to open the Drawer at the bottom of DevTools.  Select the `+` icon at the top of the drawer to see the list of tools, and then select **Rendering**.  The Rendering tool appears.
 
@@ -702,7 +704,7 @@ In the accessibility-testing demo webpage, when you turn off animations in the o
 
 To check whether the page is usable with animations turned off:
 
-1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
 
 1.  At the top of DevTools, select the **Sources** tool, and then in the **Navigation** pane on the left, select `styles.css`.  The CSS file appears in the **Editor** pane.
 
