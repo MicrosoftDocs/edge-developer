@@ -331,9 +331,9 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCommandMenu]: ../../../command-menu.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features.md#turn-on-experimental-features "Turn on experimental features - Experimental features | Microsoft Docs"  
-[DevtoolsIssues]: ../../../issues.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"
-[DevtoolsSourcesEditCssJavascript]: ../../../sources.md#edit-css-and-javascript "Edit CSS and JavaScript - Sources Panel Overview | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turn-on-experimental-features "Turn on experimental features - Experimental features | Microsoft Docs"  
+[DevtoolsIssues]: ../../../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"
+[DevtoolsSourcesEditCssJavascript]: ../../../sources/index.md#edit-css-and-javascript "Edit CSS and JavaScript - Sources Panel Overview | Microsoft Docs"  
 [DevtoolsNetworkIndexLogActivity]: ../../../network/index.md#log-network-activity "Log network activity - Inspect Network Activity In Microsoft Edge DevTools | Microsoft Docs"
 
 [CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "Style editing for CSS-in-JS frameworks | CodePen"

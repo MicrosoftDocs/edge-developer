@@ -117,7 +117,7 @@ The following sections announce additional features available in Microsoft Edge 
 
 ### Emulate vision deficiencies  
 
-Open the [Rendering tab][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] and use the new **Emulate vision deficiencies** feature to get a better idea of how people with different types of vision deficiencies experience your site.  
+Open the [Rendering tab][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTool] and use the new **Emulate vision deficiencies** feature to get a better idea of how people with different types of vision deficiencies experience your site.  
 
 :::image type="complex" source="../../media/2020/03/vision.msft.png" alt-text="Emulating blurred vision" lightbox="../../media/2020/03/vision.msft.png":::
    Emulating blurred vision  
@@ -284,7 +284,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsCssReferenceColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "Change colors with the Color Picker | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools  | Microsoft Docs"  
 [DevtoolsCustomizePlacementsChangeMainMenu]: ../../../customize/placement.md#change-placement-from-the-main-menu "Change placement from the main menu | Microsoft Docs"  
-[DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab | Microsoft Docs"  
+[DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTool]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool "Analyze rendering performance with the Rendering tool | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: ../../../evaluate-performance/reference.md#view-main-thread-activity "View main thread activity | Microsoft Docs"  
 [DevtoolsJavascriptBreakpointsLineCode]: ../../../javascript/breakpoints.md#line-of-code-breakpoints "Line-of-code breakpoints - How To Pause Your Code With Breakpoints In Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsNetworkReferenceFilterRequestsProperties]: ../../../network/reference.md#filter-requests-by-properties "Filter requests by properties - Network analysis reference | Microsoft Docs"  

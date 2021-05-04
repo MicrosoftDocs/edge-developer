@@ -50,7 +50,7 @@ From your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team) and th
    The Microsoft Edge DevTools in high contrast mode  
 :::image-end:::  
 
-To try the experiment, open DevTools Settings by selecting `?` or choosing the ![Devtools Settings icon](../../../remote-debugging/media/settings-icon.msft.png) icon in the top-right corner of the DevTools.  Navigate to the **Experiments** section and check **Enable custom keyboard shortcuts settings tab (requires reload)**.  Now reload the DevTools, open Settings again, and navigate to the **Shortcuts** section.  
+To try the experiment, open DevTools Settings by selecting `?` or choosing the ![Devtools Settings icon](../../../media/settings-icon.msft.png) icon in the top-right corner of the DevTools.  Navigate to the **Experiments** section and check **Enable custom keyboard shortcuts settings tab (requires reload)**.  Now reload the DevTools, open Settings again, and navigate to the **Shortcuts** section.  
 
 Choose **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in Visual Studio Code.  
 
@@ -100,7 +100,7 @@ Chromium issue [#1076112][CR1076112]
 
 ### Screencasting navigation buttons display focus  
 
-When remote debugging an [Android device][DevtoolsRemoteDebugAndroid], a [Windows 10 device][DevtoolsRemoteDebugWindows], or a [Surface Duo emulator][DevtoolsRemoteDebugDuoEmulator], you are able to toggle screencasting with the ![Toggle Screencast](../../../remote-debugging/media/toggle-screencast-icon.msft.png) icon in the top-left corner of the DevTools.  With screencasting enabled, you are able to navigate the tab in Microsoft Edge on the remote device from the DevTools window.  In Microsoft Edge 84, these navigation buttons are now also keyboard accessible.  
+When remote debugging an [Android device][DevtoolsRemoteDebugAndroid], a [Windows 10 device][DevtoolsRemoteDebugWindows], or a [Surface Duo emulator][DevtoolsRemoteDebugDuoEmulator], you are able to toggle screencasting with the ![Toggle Screencast](../../../media/toggle-screencast-icon.msft.png) icon in the top-left corner of the DevTools.  With screencasting enabled, you are able to navigate the tab in Microsoft Edge on the remote device from the DevTools window.  In Microsoft Edge 84, these navigation buttons are now also keyboard accessible.  
 
 :::image type="complex" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="Select Shift+Tab from the screencasted URL bar shows focus on the Refresh button" lightbox="../../media/2020/05/screencasting-nav.msft.png":::
    Select `Shift`+`Tab` from the screencasted URL bar shows focus on the **Refresh** button
@@ -159,9 +159,9 @@ After recording your load performance, the **Performance** panel now shows Total
 <!--todo:  add link lab metric (WebdevMeasureSpeedLabField) when section is live  -->  
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->  
 
-To get Total Blocking Time information, do not use the **Refresh Page** ![Refresh page icon](../../../remote-debugging/media/refresh-page-icon.msft.png) workflow for recording page load performance.  
+To get Total Blocking Time information, do not use the **Refresh Page** ![Refresh page icon](../../../media/refresh-page-icon.msft.png) workflow for recording page load performance.  
 
-Instead, select **Record** ![Record icon](../../../remote-debugging/media/record-icon.msft.png), manually reload the page, wait for the page to load, and then stop recording.  
+Instead, select **Record** ![Record icon](../../../media/record-icon.msft.png), manually reload the page, wait for the page to load, and then stop recording.  
 
 If `Total Blocking Time: Unavailable` is displayed, Microsoft Edge DevTools did not get the required information from the internal profiling data in Microsoft Edge.  
 
@@ -252,7 +252,7 @@ The **Properties** pane in the **Elements** tool is deprecated.  Run `console.di
 #### References  
 
 *   [console.dir()][DevtoolsConsoleApiDir]  
-*   [$0][DevtoolsConsoleUtilitiesDom]  
+*   [$0][DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]  
 
 ### App shortcuts support in the Manifest pane  
 
@@ -279,7 +279,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 <!--[DevtoolsWhatsNew201901Inspect]: ../../../whats-new/2019/01/devtools.md#inspect "Detailed tooltips in Inspect Mode - What's New In DevTools (Edge 73) | Microsoft Docs"  -->  
 
 [DevtoolsConsoleApiDir]: ../../../console/api.md#dir "dir - Console API Reference | Microsoft Docs"  
-[DevtoolsConsoleUtilitiesDom]: ../../../console/utilities.md#recently-selected-element-or-javascript-object "Recently Selected Element Or JavaScript Object - Console Utilities API Reference | Microsoft Docs"  
+[DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]: ../../../console/utilities.md#recently-chosen-element-or-javascript-object "Recently chosen element or JavaScript object - Console Utilities API Reference | Microsoft Docs"  
 [DevtoolsCssReferenceColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "Change colors with the Color Picker - CSS Reference | Microsoft Docs"  
 [DevtoolsDrawer]: ../../../customize/index.md#drawer "Drawer - Customize Overview | Microsoft Docs"  
 [DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  

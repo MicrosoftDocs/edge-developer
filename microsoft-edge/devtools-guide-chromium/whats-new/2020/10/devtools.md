@@ -32,9 +32,9 @@ To meet your translation needs, the Microsoft Edge DevTools team is focused on i
 *   The strings in the **Lighthouse** tool.  
 *   The term `service worker`.  
 *   Some of the **Network** tool filters such as `URL`, `XHR`, `JS`, and `CSS`.  
-*   The [$0][DevtoolsConsoleUtilitiesRecentlySelectedElementJavascriptObject] Console Utilities API.  
+*   The [$0][DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject] Console Utilities API.  
     
-[$0][DevtoolsConsoleUtilitiesRecentlySelectedElementJavascriptObject] is now available in the [Console][DevtoolsConsoleIndex] for users on localized versions of the DevTools.   Thank you to the global developer community for helping improve localization of the Microsoft Edge DevTools.  Continue to [send feedback on localization quality](#getting-in-touch-with-microsoft-edge-devtools-team) to improve support for DevTools in all locales.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1136655][CR1136655].  
+[$0][DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject] is now available in the [Console][DevtoolsConsoleIndex] for users on localized versions of the DevTools.   Thank you to the global developer community for helping improve localization of the Microsoft Edge DevTools.  Continue to [send feedback on localization quality](#getting-in-touch-with-microsoft-edge-devtools-team) to improve support for DevTools in all locales.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1136655][CR1136655].  
 
 
 :::image type="complex" source="../../media/2020/10/bing-network-japanese.msft.png" alt-text="Network tool with non-localized filters" lightbox="../../media/2020/10/bing-network-japanese.msft.png":::
@@ -276,23 +276,23 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 <!-- links -->  
 
-[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-tool "Deprecation of the Properties pane in the Elements tool - What's new in DevTools (Microsoft Edge 84) | Microsoft Docs"  
+[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsTool]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-tool "Deprecation of the Properties pane in the Elements tool - What's new in DevTools (Microsoft Edge 84) | Microsoft Docs"  
 [DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "CSS grid debugging features - What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"  
 [DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]: ../08/devtools.md#accessible-color-suggestion-in-the-styles-pane "Accessible color suggestion in the Styles pane - What's New In DevTools (Microsoft Edge 86) | Microsoft Docs"  
 
 [DevtoolsConsoleIndex]: ../../../console/index.md "Use the Console | Microsoft Docs"  
-[DevtoolsConsoleUtilitiesRecentlySelectedElementJavascriptObject]:  ../../../console/utilities.md#recently-selected-element-or-javascript-object "Recently Selected Element Or JavaScript Object - Console Utilities API Reference | Microsoft Docs"  
+[DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]:  ../../../console/utilities.md#recently-chosen-element-or-javascript-object "Recently chosen Element Or JavaScript Object - Console Utilities API Reference | Microsoft Docs"  
 [DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReference]: ../../../evaluate-performance/reference.md "Performance analysis reference | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: ../../../experimental-features.md#emulation-support-dual-screen-mode "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: ../../../experimental-features/index.md#emulation-support-dual-screen-mode "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features.md#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: ../../../experimental-features.md#enable-new-css-grid-debugging-features "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableNetworkConsole]: ../../../experimental-features.md#enable-network-console "Enable Network Console - Experimental features | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: ../../../experimental-features.md#enable-source-order-viewer "Enable Source Order Viewer - Experimental features | Microsoft Docs"
-[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: ../../../experimental-features.md#testing-on-foldable-and-dual-screen-devices "Testing on foldable and dual-screen devices - Experimental features | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: ../../../experimental-features.md#turn-on-experimental-features "Turn on Experimental features - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: ../../../experimental-features/index.md#enable-new-css-grid-debugging-features "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableNetworkConsole]: ../../../experimental-features/index.md#enable-network-console "Enable Network Console - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: ../../../experimental-features/index.md#enable-source-order-viewer "Enable Source Order Viewer - Experimental features | Microsoft Docs"
+[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: ../../../experimental-features/index.md#testing-on-foldable-and-dual-screen-devices "Testing on foldable and dual-screen devices - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: ../../../experimental-features/index.md#turn-on-experimental-features "Turn on Experimental features - Experimental features | Microsoft Docs"  
 [DevtoolsConsoleApiTable]: ../../../console/api.md#table "table - Console API reference | Microsoft Docs"  
 [DevtoolsCoverageIndex]: ../../../coverage/index.md "Find unused JavaScript and CSS code with the Coverage tab in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCssGrid]:  ../../../css/grid.md "Inspect CSS Grid | Microsoft Docs"  

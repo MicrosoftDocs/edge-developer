@@ -346,25 +346,25 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 <!-- links -->  
 
-[Devtools3dViewIndex]: ../../../3d-view/index "3D View | Microsoft Docs"  
-[DevtoolsConsoleIndex]: ../../../console/index "Console Overview | Microsoft Docs"  
-[DevtoolsCustomizeIndexSettings]: ../../../customize/index#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeLocalization]: ../../../customize/localization "Change DevTools language settings | Microsoft Docs"  
-[DevtoolsDeviceModeIndex]: ../../../device-mode/index "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  
-[DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: ../../../experimental-features#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  
-[DevtoolsIssuesIndex]: ../../../issues/index "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
-[DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: ../../../network/reference#copy-formatted-response-json-to-the-clipboard "Copy formatted response JSON to the clipboard - Network Analysis reference | Microsoft Docs"  
-[DevtoolsNetworkReferenceViewTimingBreakdownRequest]: ../../../network/reference#view-the-timing-breakdown-of-a-request "View the timing breakdown of a request - Network Analysis reference | Microsoft Docs"  
-
-<!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: ../../../css/reference#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->  
-
-[ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index "Progressive Web Apps on Windows | Microsoft Docs"  
-
-[WebdriverChromiumMain]: ../../../../webdriver-chromium "Use WebDriver (Chromium) for test automation | Microsoft Docs"  
-
 [WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: ../10/devtools.md#customize-keyboard-shortcuts-in-settings "Customize keyboard shortcuts in Settings - What's New In DevTools (Microsoft Edge 87) | Microsoft Docs"  
 [WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: ../06/devtools.md#webhint-feedback-in-the-issues-panel "webhint feedback in the Issues panel - What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"  
+
+[Devtools3dViewIndex]: ../../../3d-view/index.md "3D View | Microsoft Docs"  
+[DevtoolsConsoleIndex]: ../../../console/index.md "Console Overview | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeLocalization]: ../../../customize/localization.md "Change DevTools language settings | Microsoft Docs"  
+[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  
+[DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: ../../../experimental-features/index.md#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  
+[DevtoolsIssuesIndex]: ../../../issues/index "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
+[DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: ../../../network/reference.md#copy-formatted-response-json-to-the-clipboard "Copy formatted response JSON to the clipboard - Network Analysis reference | Microsoft Docs"  
+[DevtoolsNetworkReferenceViewTimingBreakdownRequest]: ../../../network/reference.md#view-the-timing-breakdown-of-a-request "View the timing breakdown of a request - Network Analysis reference | Microsoft Docs"  
+
+<!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: ../../../css/reference.md#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->  
+
+[ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"  
+
+[WebdriverChromiumMain]: ../../../../webdriver-chromium.md "Use WebDriver (Chromium) for test automation | Microsoft Docs"  
 
 [MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "Download WebDriver | Microsoft Developer"  
 

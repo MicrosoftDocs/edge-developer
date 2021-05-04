@@ -240,7 +240,7 @@ After [logging network activity in the Network panel][DevToolsNetworkIndex], cho
 *   The resources below the inspected resource are the **dependencies**.  In the screenshot above, `https://dc.services.visualstudio.com/v2/track` is a dependency of `ai.2.min.js`.  In other words, `ai.2.min.js` caused the network request for `https://dc.services.visualstudio.com/v2/track`.  
 
 > [!NOTE]
-> Initiator and dependency information may also be accessed by holding `Shift` and then hovering over network resources.  Navigate to [View initiators and dependencies][DevToolsNetworkReferenceViewInitiatorsDependencies].  
+> Initiator and dependency information may also be accessed by holding `Shift` and then hovering over network resources.  Navigate to [View initiators and dependencies][DevToolsNetworkReferenceDisplayInitiatorsDependencies].  
 
 Chromium issue [#842488][CR842488]  
 
@@ -326,7 +326,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevToolsCoverageIndex]: ../../../coverage/index.md "Find unused JavaScript and CSS code with the Coverage tool in Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsDeviceModeIndex]: ../../../device-mode/index.md#simulate-a-mobile-viewport "Simulate a mobile viewport - Simulate mobile devices with Device Mode in Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsNetworkIndex]: ../../../network/index.md "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  
-[DevToolsNetworkReferenceViewInitiatorsDependencies]: ../../../network/reference.md#view-initiators-and-dependencies "View initiators and dependencies - Network Analysis Reference | Microsoft Docs"  
+[DevToolsNetworkReferenceDisplayInitiatorsDependencies]: ../../../network/reference.md#display-initiators-and-dependencies "Display initiators and dependencies - Network Analysis Reference | Microsoft Docs"  
 [VisualStudioCodeDebuggerEdgeExtension]: ../../../../visual-studio-code/debugger-for-edge.md "Debugger for Microsoft Edge Visual Studio Code extension | Microsoft Docs"  
 [VisualStudioCodeElementEdgeExtension]: ../../../../visual-studio-code/elements-for-edge.md "Elements for Microsoft Edge Visual Studio Code extension | Microsoft Docs"  
 

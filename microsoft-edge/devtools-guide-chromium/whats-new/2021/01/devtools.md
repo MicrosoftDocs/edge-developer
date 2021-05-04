@@ -161,7 +161,7 @@ Test the appearance of your website or app on the following devices in Microsoft
     
 Turn on **Experimental Web Platform features** to access the new [CSS media screen-spanning feature][DualScreenWebCssMediaSpanning] and [getWindowSegments JavaScript API][DualScreenWebJavascriptGetwindowsegments].  Navigate to `edge://flags` and toggle the flag next to **Experimental Web Platform features**.  To help enhance your website or app for the dual-screen and foldable devices, use the following features when [emulating the device][DevtoolsDeviceModeIndex].  
 
-*   [Spanning][DevtoolsDeviceModeDualScreenFoldablesTestingFoldableDualScreenDevices], which is when your website \(or app\) appears across both screens.  
+*   [Spanning][DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices], which is when your website \(or app\) appears across both screens.  
 *   [Rendering the seam][DualScreenIntroductionHowToWorkWithSeam], which is the space between the two screens.  
     
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1054281][CR1054281].  
@@ -425,7 +425,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Change CSS - CSS reference | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsDeviceModeDualScreenFoldablesTestingFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#testing-on-foldable-and-dual-screen-devices "Testing on foldable and dual-screen devices - Emulate dual-screen and foldable devices in Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices "Test on foldable and dual-screen devices - Emulate dual-screen and foldable devices in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "Simulate a mobile viewport - Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: ../../../evaluate-performance/reference.md#record-load-performance "Record load performance - Performance analysis reference | Microsoft Docs"  
