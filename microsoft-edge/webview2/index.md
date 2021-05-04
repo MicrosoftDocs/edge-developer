@@ -3,7 +3,7 @@ description: Host web content in your Win32, .NET, UWP apps with the Microsoft E
 title: Microsoft Edge WebView2 Control
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/01/2021
+ms.date: 05/04/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -32,96 +32,102 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
     
 ## WebView2 benefits   
 
-<!--  
-:::image type="complex" source="./media/WebView2/webviewreasons.png" alt-text="WebView reasons" lightbox="./media/WebView2/webviewreasons.png":::
-   WebView reasons  
-:::image-end:::  
--->  
-
 :::row:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-web-ecosystem-skillset.msft.png" alt-text="Web ecosystem & skillset" lightbox="./media/webview-reasons-web-ecosystem-skillset.msft.png" border="false":::
-         **Web ecosystem \& skillset**
-      :::image-end:::  
-
-      ### Web ecosystem \& skillset  
-
+      :::image type="icon" source="./media/webview-reasons-web-ecosystem-skillset.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-rapid-innovation.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-windows-7-8-10-support.msft.png":::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      ### Web ecosystem & skillset  
+   :::column-end:::
+   :::column span="1":::
+      ### Rapid innovation  
+   :::column-end:::
+   :::column span="1":::
+      ### Windows 7, 8, and 10 support  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
       Utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem.  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-rapid-innovation.msft.png" alt-text="Rapid innovation" lightbox="./media/webview-reasons-rapid-innovation.msft.png" border="false":::
-         **Rapid innovation**  
-      :::image-end:::  
-
-      ### Rapid innovation  
-
       Web development allows for faster deployment and iteration.  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-windows-7-8-10-support.msft.png" alt-text="Windows 7, 8, and 10 support" lightbox="./media/webview-reasons-windows-7-8-10-support.msft.png" border="false":::
-         **Windows 7, 8, and 10 support**  
-      :::image-end:::  
-
-      ### Windows 7, 8, and 10 support  
-
       Support for a consistent user experience across Windows 7, Windows 8, and Windows 10.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-native-capabilities.msft.png" alt-text="Native capabilities" lightbox="./media/webview-reasons-native-capabilities.msft.png" border="false":::
-         **Native capabilities**  
-      :::image-end:::  
-
+      :::image type="icon" source="./media/webview-reasons-native-capabilities.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-code-sharing.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-microsoft-support.msft.png":::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
       ### Native capabilities  
-
+   :::column-end:::
+   :::column span="1":::
+      ### Code-sharing  
+   :::column-end:::
+   :::column span="1":::
+      ### Microsoft support  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
       Access the full set of Native APIs.  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-code-sharing.msft.png" alt-text="Code-sharing" lightbox="./media/webview-reasons-code-sharing.msft.png" border="false":::
-         **Code-sharing**  
-      :::image-end:::  
-
-      ### Code-sharing  
-
       Add web code to your codebase allows for increased reuse across multiple platforms.  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-microsoft-support.msft.png" alt-text="Microsoft support" lightbox="./media/webview-reasons-microsoft-support.msft.png" border="false":::
-         **Microsoft support**  
-      :::image-end:::  
-
-      ### Microsoft support  
-
       Microsoft provides support and adds new feature requests when WebView2 releases at Generally Availability \(GA\).  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-evergreen.msft.png" alt-text="Evergreen distribution" lightbox="./media/webview-reasons-evergreen.msft.png" border="false":::
-         **Evergreen distribution**  
-      :::image-end:::  
-
+      :::image type="icon" source="./media/webview-reasons-evergreen.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-fixed.msft.png":::  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="./media/webview-reasons-incremental-adoption.msft.png":::  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
       ### Evergreen distribution  
-
+   :::column-end:::
+   :::column span="1":::
+      ### Fixed  
+   :::column-end:::
+   :::column span="1":::
+      ### Incremental adoption  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
       Rely on an up-to-date version of Chromium with regular platform updates and security patches.  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-fixed.msft.png" alt-text="Fixed" lightbox="./media/webview-reasons-fixed.msft.png" border="false":::
-         **Fixed**  
-      :::image-end:::  
-
-      ### Fixed  
-
       \(coming soon\)  Choose to package the Chromium bits in your app.  
    :::column-end:::
    :::column span="1":::
-      :::image type="complex" source="./media/webview-reasons-incremental-adoption.msft.png" alt-text="Incremental adoption" lightbox="./media/webview-reasons-incremental-adoption.msft.png" border="false":::
-         **Incremental adoption**  
-      :::image-end:::  
-
-      ### Incremental adoption  
-
       Add web components piece by piece to your app.  
    :::column-end:::
 :::row-end:::  
