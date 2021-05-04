@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 10/14/2020
+  ms.date: 04/06/2021
   ms.localizationpriority: high
 
 # highlightedContent section (optional)
@@ -94,7 +94,7 @@ conceptualContent:
       links:
         - itemType: reference
           text: Security
-          url: /deployedge/security-overview
+          url: /deployedge/ms-edge-security-for-business
         - itemType: reference
           text: Privacy
           url: /deployedge/microsoft-edge-enterprise-privacy-settings
@@ -160,7 +160,7 @@ additionalContent:
               url: /microsoft-edge/webdriver-chromium
             - text: Puppeteer
               url: /microsoft-edge/puppeteer
-            - text: Interop (Site compatibility)
+            - text: Site compatibility
               url: /microsoft-edge/web-platform/site-impacting-changes
             - text: webhint
               url: https://webhint.io/docs/user-guide
@@ -196,11 +196,11 @@ additionalContent:
             - text: Manage account settings
               url: /microsoft-edge/extensions-chromium/publish/manage-settings
         # Card
-        - title: "Extensions: Microsoft Edge Addons Policies"
+        - title: "Extensions: Microsoft Edge Add-ons Policies"
           links:
-            - text: Content Security Policy
+            - text: Content security policy
               url: /microsoft-edge/extensions-chromium/store-policies/csp
-            - text: Microsoft Edge Addons Catalog Developer Policies
+            - text: Microsoft Edge Add-ons store developer policies
               url: /microsoft-edge/extensions-chromium/store-policies/developer-policies
         # Card
         - title: Progressive Web Apps
@@ -240,7 +240,7 @@ additionalContent:
         # Card
         - summary: Microsoft is committed to ensuring your apps work on Microsoft Edge.  If you run into issues with your business apps or websites on the latest version of Edge, Microsoft helps you fix your apps and websites at no additional cost.  See offer details for eligibility requirements.
           title: Get no-cost help using App Assure
-          url: /fasttrack/win-10-microsoft-edge
+          url: https://fasttrack.microsoft.com/portal
         # Card
         - summary: If your business needs immediate technical support for Microsoft Edge, 1:1 support from Microsoft is available using a variety of plans to help you get your required level of support.
           title: Microsoft Support for Business
@@ -264,21 +264,7 @@ additionalContent:
             - text: Privacy Whitepaper
               url: /microsoft-edge/privacy-whitepaper
         # Card
-        - title: Microsoft Edge Legacy Documentation
+        - title: Microsoft Edge Legacy documentation
           links:
-            - text: Dev Guide (EdgeHTML)
-              url: /microsoft-edge/dev-guide
-            - text: DevTools (EdgeHTML)
-              url: /microsoft-edge/devtools-guide
-            - text: DevTools Protocol (EdgeHTML)
-              url: /microsoft-edge/devtools-protocol/index
-            - text: Extensions (EdgeHTML)
-              url: /microsoft-edge/extensions/index
-            - text: Getting Started with PWAs (EdgeHTML)
-              url: /microsoft-edge/progressive-web-apps-edgehtml/get-started
-            - text: JavaScript Runtime Hosting
-              url: /microsoft-edge/hosting/javascript-runtime-hosting
-            - text: WebVR Developer Guide
-              url: /microsoft-edge/webvr/index
-            - text: Windows Runtime (WinRT)
-              url: /microsoft-edge/windows-runtime
+            - text: Microsoft Edge Legacy documentation
+              url: /archive/microsoft-edge/legacy/developer/

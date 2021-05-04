@@ -1,9 +1,9 @@
 ---
 description: Remote debug live content on an Android device from a Windows or macOS computer.
-title: Get Started with Remote Debugging Android Devices
+title: Get started with remote debugging Android devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2020 
+ms.date: 03/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,7 +21,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # Get started with remote debugging Android devices  
 
 Remote debug live content on an Android device from your Windows or macOS computer.  The following tutorial page teaches you how to complete the following actions.  
@@ -91,7 +90,7 @@ Use the following tips to help you troubleshoot if the **Allow USB Debugging** p
 *   Setting the USB mode for Android to PTP.  For more information, navigate to [Galaxy S4 does not show Authorize USB debugging dialog box][StackexchangeAndroid101933].  
 *   Choose **Revoke USB Debugging Authorizations** from the **Developer Options** screen on your Android device to reset it to a fresh state.  
 
-If you find a solution that is not mentioned on this page or in [DevTools Devices does not detect device when plugged in][Stackoverflow21925992] on Stack Overflow, please add your solution to the Stack Overflow question<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->!  
+If you find a solution that is not mentioned on this page or in [DevTools Devices does not detect device when plugged in][Stackoverflow21925992] on Stack Overflow, please add your solution to the Stack Overflow question<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->.  
 
 ## Step 2: Debug content on your Android device from your development machine  
 
@@ -108,30 +107,30 @@ If you find a solution that is not mentioned on this page or in [DevTools Device
 <!-- The version of Microsoft Edge running on your Android device determines the version of DevTools that opens on your development machine.  
     So, if your Android device is running a very old version of Microsoft Edge, the DevTools instance may look very different than what you are used to.   -->
 
-### More actions: focus, reload, or close a tab  
+### More actions: focus, refresh, or close a tab  
 
-Choose **focus tab**, **reload**, or **close** next to the tab that you want to focus, reload, or close.  
+Choose **focus tab**, **reload**, or **close** next to the tab that you want to focus, refresh, or close.  
 
-:::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png" alt-text="The buttons for focusing, reloading, or closing a tab" lightbox="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png":::
-   Figure 4.  The buttons for focusing, reloading, or closing a tab  
+:::image type="complex" source="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png" alt-text="The buttons for focusing, refreshing, or closing a tab" lightbox="../media/remote-debugging-edge-inspect-with-targets-buttons.msft.png":::
+   Figure 4.  The buttons for focusing, refreshing, or closing a tab  
 :::image-end:::  
 
 ### Inspect elements  
 
-Go to the **Elements** panel of your DevTools instance, and hover over an element to highlight it in the viewport of your Android device.  
+Navigate to the **Elements** tool of your DevTools instance, and hover on an element to highlight it in the viewport of your Android device.  
 
-You may also select an element on your Android device screen to select it in the **Elements** panel.  Choose **Select Element** \(![Select Element][ImageSelectElementIcon]\) icon on your DevTools instance, and then select the element on your Android device screen.  
+You may also select an element on your Android device screen to select it in the **Elements** tool.  Choose **Select Element** \(![Select Element](../media/select-element-icon.msft.png)\) icon on your DevTools instance, and then select the element on your Android device screen.  
 
 > [!NOTE]
 > **Select Element** is disabled after the first selection, so you must re-enable it every time you want to use the feature.  
 
 ### Screencast your Android screen to your development machine  
 
-Choose **Toggle Screencast** \(![Toggle Screencast][ImageToggleScreencastIcon]\) icon to view the content of your Android device in your DevTools instance.  
+Choose **Toggle Screencast** \(![Toggle Screencast](../media/toggle-screencast-icon.msft.png)\) icon to view the content of your Android device in your DevTools instance.  
 
 You are able to interact with the screencast in the following ways.  
 
-*   Clicks are translated into taps, firing proper touch events on the device.  
+*   Chooses are translated into taps, firing proper touch events on the device.  
 *   Keystrokes on your computer are sent to the device.  
 *   To simulate a pinch gesture, hold `Shift` while dragging.  
 *   To scroll, use your trackpad or mouse wheel, or fling with your mouse pointer.
@@ -146,11 +145,6 @@ You are able to interact with the screencast in the following ways.
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- image links -->  
-
-[ImageSelectElementIcon]: /microsoft-edge/devtools-guide-chromium/media/select-element-icon.msft.png  
-[ImageToggleScreencastIcon]: /microsoft-edge/devtools-guide-chromium/media/toggle-screencast-icon.msft.png  
 
 <!-- links -->  
 

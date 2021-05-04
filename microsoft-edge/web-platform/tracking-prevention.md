@@ -3,12 +3,11 @@ description: This page provides documentation on the Microsoft Edge (Chromium) t
 title: Tracking Prevention in Microsoft Edge (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/05/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, tracking prevention, trackers, cookies, storage, ad blocking, tracker blocking, tracking protection
 ---
-
 # Tracking Prevention in Microsoft Edge (Chromium)  
 
 The tracking prevention feature in Microsoft Edge protects users from online tracking by restricting the ability of trackers to access browser-based storage as well as the network.  It is built to uphold the Microsoft Edge [browser privacy promise][MicrosoftEdgeBrowserPrivacyPromise] while also ensuring that there is no impact by default to website compatibility or the economic viability of the web.  
@@ -56,7 +55,7 @@ To provide protection from tracking actions on the web, Microsoft Edge takes two
 *   **Restrict storage access** - If a known tracking resource tries to access any web storage where it may try to persist data about the user, Microsoft Edge blocks that access.  This includes restricting the ability for that tracker to get or set cookies as well as access storage APIs such as `IndexedDB` and `localStorage`.  
 *   **Block resource loads** - If a known tracking resource is being loaded on a website, Microsoft Edge may block that load before the request reaches the network depending on compatibility impact of the load and the tracking prevention setting a user has set.  Blocked loads may include tracking scripts, pixels, iframes, and more.  This prevents any data potentially being sent to the tracking domain and may even improve load times and page performance as a side effect.  
 
-A user may click the page info flyout icon on the left side of the address bar to find out which trackers were blocked on a specific page: 
+A user may choose the page info flyout icon on the left side of the address bar to find out which trackers were blocked on a specific page: 
 
 ![Blocked trackers in the page info flyout][ImageBlockedTrackersPageInfoFlyout]  
 
@@ -136,7 +135,7 @@ In Microsoft Edge 79, the default behavior was to apply Strict mode protections 
 The easiest way to determine whether a specific URL is classified as a known tracker is to perform the following steps.  
 
 1.  Open DevTools and navigate to the Console tab.  
-1.  Reload the page.  
+1.  Refresh the webpage.  
     1.  You may want to clear **Cookies and other site data** first to reset site engagement scores and ensure a completely clean slate.  
 1.  Look for any messages that read `Tracking Prevention blocked access to storage for <URL>`.  
     1.  You may expand the messages to see the individual URLs that were blocked.  
@@ -169,8 +168,8 @@ That being said, the **Block** and **Allow** options on the `edge://settings/con
 
 <!-- image links -->  
 
-[ImageThreeSettingsTrackingPrevention]: ../media/web-platform/tracking-prevention/tracking-prevention-settings.png  
-[ImageBlockedTrackersPageInfoFlyout]: ../media/web-platform/tracking-prevention/page-info-flyout.png  
+[ImageThreeSettingsTrackingPrevention]: ./media/tracking-prevention-settings.png  
+[ImageBlockedTrackersPageInfoFlyout]: ./media/page-info-flyout.png  
 
 <!-- links -->  
 

@@ -3,12 +3,11 @@ description: This guide gives you an overview of PWA basics and tools for buildi
 title: Get started with Progressive Web Apps (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/01/2020
+ms.date: 03/16/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, service worker, push
 ---
-
 # Get started with Progressive Web Apps (Chromium)  
 
 Progressive Web Apps \(PWAs\) are web apps that are [progressively enhanced][WikiProgressiveEnhancement].  The progressive enhancements include app-like features, such as installation, offline support, and push notifications.  You may also package your PWA for app stores.  Possible app stores include the Microsoft Store, Google Play, Mac App Store, and more.  The Microsoft Store is the commercial app store built into Windows 10.  
@@ -22,7 +21,7 @@ The following guide gives you an overview of PWA basics by creating a simple web
 
 *   Use [Visual Studio Code][VisualstudioCodeMain] to edit your PWA source code.  
 *   Use [Node.js][NodejsMain] as your local web server.  
-
+    
 ## Create a basic web app  
 
 To create an empty web app, follow the steps in [Node Express App Generator][ExpressjsApplicationGenerator], and name your app `MySamplePwa`.  
@@ -47,13 +46,13 @@ npm start
 
 Now browse to `http://localhost:3000` to view your new web app.  
 
-:::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="Running your new PWA on localhost" lightbox="./media/vs-nodejs-express-index.png":::
-   Running your new PWA on localhost
-:::image-end:::
+:::image type="complex" source="./media/visual-studio-nodejs-express-index.png" alt-text="Running your new PWA on localhost" lightbox="./media/visual-studio-nodejs-express-index.png":::
+   Running your new PWA on localhost  
+:::image-end:::  
 
 ## Get started building a PWA  
 
-Now that you have a simple web app, extend it as a PWA by adding the three requirements for PWAs<!--[3 requirements for PWAs][PwaEdgehtmlIndexRequirements]-->: [HTTPS](#step-1---use-https), a [Web App Manifest](#step-2---create-a-web-app-manifest), and a [Service Worker](#step-3---add-a-service-worker).  
+Now that you have a simple web app, extend it as a PWA by adding the three requirements for PWAs<!--[3 requirements for PWAs][ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]-->: [HTTPS](#step-1---use-https), a [Web App Manifest](#step-2---create-a-web-app-manifest), and a [Service Worker](#step-3---add-a-service-worker).  
 
 ### Step 1 - Use HTTPS  
 
@@ -95,7 +94,7 @@ To add an app manifest to the web app:
     ```  
     
 1.  Save the file as `/MySamplePwa/public/manifest.json`.  
-1.  Add a 512x512 app icon image named `icon512.png` to `/MySamplePwa/public/images`.  You may use the [sample image][ImagePwa] for testing purposes.  
+1.  Add a 512x512 app icon image named `icon512.png` to `/MySamplePwa/public/images`.  You may use the [sample image](./media/progressive-web-app.png) for testing purposes.  
 1.  In Visual Studio Code, open `/public/index.html`, and add the following code snippet inside the `<head>` tag.  
     
     ```html
@@ -113,7 +112,7 @@ Service workers are background tasks that intercept network requests from your w
 *   Running background fetch tasks  
 *   Badging icons  
 *   and more  
-
+    
 Service workers are defined in a special JavaScript file.  For more information, navigate to [Using Service Workers][MDNUsingServiceWorkers] and [Service Worker API][MDNServiceWorkerApi].  
 
 To build a service worker in your project, use the **Cache-first network** service worker recipe from [PWA Builder][PwaBuilderServiceWorker].  
@@ -122,9 +121,8 @@ To build a service worker in your project, use the **Cache-first network** servi
     
     *   `pwabuilder-sw-register.js`  
     *   `pwabuilder-sw.js`  
-    
+        
 1.  Copy the downloaded files to the `public` folder in your web app project.  
-    
 1.  In Visual Studio Code, open `/public/index.html` and add the following code snippet inside the `<head>` tag.  
     
     ```html
@@ -142,28 +140,28 @@ Use the following steps to confirm that your service worker runs.
     ```
     
 1.  In Microsoft Edge, select `F12` to open the Microsoft Edge DevTools.  Select **Application**, then **Service Workers** to view the service workers.  If the service worker is not displayed, refresh the page.  
-     
+    
     :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Microsoft Edge DevTools Service Worker overview" lightbox="./media/devtools-sw-overview.png":::
-       Microsoft Edge DevTools Service Worker overview
-    :::image-end:::
+       Microsoft Edge DevTools Service Worker overview  
+    :::image-end:::  
     
 1.  View the service worker cache by expanding **Cache Storage** and select **pwabuilder-precache**.  All of the resources cached by the service worker should be displayed.  The resources cached by the service worker include the app icon, app manifest, CSS, and JavaScript files.  
     
     :::image type="complex" source="./media/devtools-cache.png" alt-text="Service Worker cache in Microsoft Edge DevTools" lightbox="./media/devtools-cache.png":::
-       Service Worker cache in Microsoft Edge DevTools (F12)
-    :::image-end:::
+       Service Worker cache in Microsoft Edge DevTools \(F12\)  
+    :::image-end:::  
     
 1.  Try your PWA as an offline app.  In Microsoft Edge DevTools \(`F12`\), choose **Network** then change the **Online** status to **Offline**.  
     
     :::image type="complex" source="./media/devtools-offline.png" alt-text="Setting app to offline mode in Microsoft Edge DevTools" lightbox="./media/devtools-offline.png":::
-       Setting app to offline mode in Microsoft Edge DevTools
-    :::image-end:::
+       Setting app to offline mode in Microsoft Edge DevTools  
+    :::image-end:::  
     
 1.  Refresh your app and it should display the offline mechanism for serving the resources of your app from the cache.  
     
-    :::image type="complex" source="./media/vs-nodejs-express-index.png" alt-text="PWA running offline" lightbox="./media/vs-nodejs-express-index.png":::
-       PWA running offline
-    :::image-end:::
+    :::image type="complex" source="./media/visual-studio-nodejs-express-index.png" alt-text="PWA running offline" lightbox="./media/visual-studio-nodejs-express-index.png":::
+       PWA running offline  
+    :::image-end:::  
     
 ## Add push notifications to your PWA  
 
@@ -232,7 +230,7 @@ For more information, navigate to [PushManager][MDNPushManager] and [Web-Push][N
 
 ### Step 3 - Listen for push notifications  
 
-After a subscription is created in your PWA, add handlers to the service worker to respond to push events.  Push event are sent from the server to display toast notifications.  Toast notifications display data for a received message.  To complete the following tasks, you must add a click handler.  
+After a subscription is created in your PWA, add handlers to the service worker to respond to push events.  Push event are sent from the server to display toast notifications.  Toast notifications display data for a received message.  To complete the following tasks, you must add a `click` handler.  
 
 *   Dismiss the toast notification  
 *   Open, focus, or open and focus any open windows  
@@ -281,10 +279,11 @@ To test push notifications for your PWA, complete the following steps.
 1.  Navigate to your PWA at `http://localhost:3000`.  When your service worker activates and attempts to subscribe your PWA to push notifications, Microsoft Edge prompts you to allow your PWA to show notifications.  Select **Allow**.  
     
     :::image type="complex" source="./media/notification-permission.png" alt-text="Permission dialog for enabling notifications" lightbox="./media/notification-permission.png":::
-       Permission dialog for enabling notifications
-    :::image-end:::
+       Permission dialog for enabling notifications  
+    :::image-end:::  
     
 1.  Simulate a server-side push notification.  With your PWA opened at `http://localhost:3000` in your browser, select `F12` to open the DevTools.  Choose **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.  
+    
     :::row:::
        :::column span="":::
           A push notification should display near the taskbar.  
@@ -297,8 +296,8 @@ To test push notifications for your PWA, complete the following steps.
           If you do not select \(or activate\) a toast notification, the system automatically dismisses it after several seconds and queues it in your Windows Action Center.  
           
           :::image type="complex" source="./media/windows-action-center.png" alt-text="Notifications in Windows Action Center" lightbox="./media/windows-action-center.png":::
-             Notifications in Windows Action Center
-          :::image-end:::
+             Notifications in Windows Action Center  
+          :::image-end:::  
        :::column-end:::
     :::row-end:::  
     
@@ -312,7 +311,7 @@ The following steps include additional tasks to help you understand building rea
 *   Deep-linking  
 *   [Cross-browser testing][BrowserStackTestEdgeBrowser]  
 *   Implement validation and testing practices such as [Webhint][Webhint]  
-   
+    
 ## See also  
 
 *   [Progressive Web Apps on MDN web docs][MDNProgressiveWebApps]  
@@ -327,14 +326,10 @@ The following steps include additional tasks to help you understand building rea
 *   [Designing And Building A Progressive Web Application Without A Framework (Part 1)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart1]  
 *   [Designing And Building A Progressive Web Application Without A Framework (Part 2)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]  
 *   [Designing And Building A Progressive Web Application Without A Framework (Part 3)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]  
-    
-<!-- image links -->  
-
-[ImagePwa]: ./media/pwa.png  
 
 <!-- links -->  
 
-<!--[PwaEdgehtmlIndexRequirements]: ../progressive-web-apps-edgehtml/index.md#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
+<!--[ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]: /archive/microsoft-edge/legacy/developer/progressive-web-apps/index#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
 
 [VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "Deploy a Node.js app to Azure with Visual Studio Code | Microsoft Docs"  
 
