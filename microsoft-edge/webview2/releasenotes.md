@@ -3,7 +3,7 @@ description: Release notes for Microsoft Edge WebView2 SDK
 title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/23/2021
+ms.date: 04/28/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -18,10 +18,10 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 
 > [!NOTE]
 > WebView2 bug fixes are either Runtime or SDK specific.  
-<!-- 
+
 ## 1.0.865-prerelease  
 
-Release Date: April 19, 2021  
+Release Date: April 26, 2021  
 
 [NuGet package][NuGetGallery1.0.865-prerelease] \| Minimum Microsoft Edge version to load: 86.0.616.0 or newer \| Full API Compatibility: 91.0.865.0 or newer  
 
@@ -59,7 +59,7 @@ Release Date: April 19, 2021
 *   Fixed bug that caused crash when you try to refresh before first navigation completed.  \([\#1011][GithubMicrosoftedgeWebviewfeedbackIssue1011]\).
 *   Fixed initialization so navigation occurs during `CoreWebView2InitializationCompleted`.  \([\#1050][GithubMicrosoftedgeWebviewfeedbackIssue1050]\).
 *   Improved .NET browser process crash error handling.  You may now recreate controls after you handle a `ProcessFailed` event without a crash.  \([\#996][GithubMicrosoftedgeWebviewfeedbackIssue996]\).  
-     -->
+
 ## 1.0.818.41  
 
 Release Date: April 21, 2021  

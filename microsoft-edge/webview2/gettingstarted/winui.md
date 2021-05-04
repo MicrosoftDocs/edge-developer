@@ -273,8 +273,7 @@ Congratulations, you built your first WebView2 app.
 
 To continue learning more about WebView2, navigate to the following resources.  
 
-### See also  
-
+*   To learn more about building WebView2 applications, navigate to [WebView2 development best practices][WV2BestPractices].  
 *   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain].  
 *   For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].  
     
@@ -290,6 +289,7 @@ To continue learning more about WebView2, navigate to the following resources.
 To send your WinUI-specific feature requests or bugs, navigate to [Issues - microsoft/microsoft-ui-xaml][GithubMicrosoftMicrosoftUiXamlIssues] and choose **New issue**.  
 
 <!-- links -->  
+[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"  
 
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  

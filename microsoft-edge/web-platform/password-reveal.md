@@ -3,7 +3,7 @@ description: Provides guidance on customizing the display of the password reveal
 title: Customize the password reveal button
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, password reveal, eye icon
@@ -71,10 +71,8 @@ The **password reveal** button is unavailable until the user enters text into th
 
 *   If focus moves away from the **password** field, the browser removes the **password reveal** button.  
 *   If scripts modify the **password** field, the browser removes the **password reveal** button.  
-*   If a user removes the **password reveal** button, the user must delete the contents of the **password** field before the **password reveal** button displays again.  
-    
-    > [!NOTE]
-    > This feature prevents someone from making a minor adjustment to view the password, should the user step away from an unlocked device.
+
+If the **password reveal** button is removed, the user must delete the contents of the **password** field before the **password reveal** button displays again. This behavior prevents someone from making a minor adjustment to display the password, should the user step away from an unlocked device.
     
 The **password reveal** button is unavailable if the **password** field autofills using the password manager.  
 

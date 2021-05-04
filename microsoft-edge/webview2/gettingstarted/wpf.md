@@ -333,8 +333,7 @@ Congratulations, you built your first WebView2 app.
 
 To continue learning more about WebView2, navigate to the following resources.  
 
-### See also  
-
+*   To learn more about building WebView2 applications, navigate to [WebView2 development best practices][WV2BestPractices].  
 *   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain] on GitHub.  
 *   For more detailed information about WebView2 API, navigate to [API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2).  
 *   For more information about  WebView2, navigate to [WebView2 Resources](../index.md#next-steps).  
@@ -345,6 +344,7 @@ To continue learning more about WebView2, navigate to the following resources.
 
 <!-- links -->  
  
+[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2Wpf]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf Namespace | Microsoft Docs"  
