@@ -212,11 +212,11 @@ The **Accessibility Tree** is presented as an [ARIA tree][W3CWaiAriaTree] where 
 
 ## Audits panel  
 
-The **Audits** tool you should run a series of tests against a site to check for common issues related to performance, accessibility, SEO, and a number of other categories.  
+The **Lighthouse** tool (previously called the **Audits** tool) runs a series of tests against a site to check for common issues related to performance, accessibility, SEO, and a number of other categories.  
 
 ### Configure and run an audit  
 
-1.  When the **Audits** tool is first opened, focus is placed on the **Run Audit** button at the end of the form.  By default the form is configured to run audits for every category using mobile emulation on a simulated 3G connection.  
+1.  When the **Audits** tool is first opened, focus is placed on the **Run Audit** button at the end of the form.  By default, the form is configured to run audits for every category using mobile emulation on a simulated 3G connection.  
 1.  Use `Shift`+`Tab` or navigate back in Browse mode to change the audit settings.  
 1.  When you are ready to run the audit, navigate back to the **Run Audit** button and select `Enter`.  
 1.  Focus moves into a modal window with a **Cancel** button which allows you to exit the audit.  You may hear a series of earcons as the audit runs and refreshes the page multiple times.  
