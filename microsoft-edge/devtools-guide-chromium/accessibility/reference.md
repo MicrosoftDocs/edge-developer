@@ -40,7 +40,8 @@ This section explains how DevTools fits into your overall accessibility toolkit.
 When determining whether a page is accessible, you need to have 2 general questions in mind:  
 
 1.  Are you able to navigate the page with a keyboard or [screen reader][MDNScreenReader]?  
-1.  Are the elements of the page properly marked up for screen readers?  
+
+1.  Are the elements of the page properly marked up for screen readers?
     
 In general, DevTools should help you fix errors related to question #2, because these errors are easy to detect in an automated fashion.  Question #1 is just as important, but unfortunately DevTools does not help you there.  The only way to find errors related to question #1 is to try using a page with a keyboard or screen reader yourself.  <!--To learn more, navigate to [How To Do An Accessibility Review][AccessibilityReview].  -->  
 
@@ -59,7 +60,7 @@ Use the Lighthouse tool to determine:
 To audit a page:
 
 1.  Navigate to the URL that you want to audit.
-1.  In DevTools, select the **Lighthouse** tool (previously called the **Audits** tool).  DevTools shows you various configuration options.
+1.  In DevTools, select the **Lighthouse** tool (previously labelled as the **Audits** tool).  DevTools shows you various configuration options.
     
     :::image type="complex" source="../media/accessibility-audits-pane.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-audits-pane.msft.png":::
        Configure audits  
@@ -106,9 +107,9 @@ The **Accessibility** panel is where you view the accessibility tree, ARIA attri
 
 To open the **Accessibility** panel:  
 
-1.  Choose the **Elements** tool.  
+1.  Select the **Elements** tool.  
 1.  In the **DOM Tree**, select the element which you want to inspect.  
-1.  Choose the **Accessibility** panel.  This panel may be hidden behind the **More Tabs** \(![More Tabs](../media/more-tabs-icon.msft.png)\) button.  
+1.  Select the **Accessibility** tab.  You might need to first select the **More tabs** \(![the More tabs button](../media/more-tabs-icon.msft.png)\) button to the right of the **Styles** tab.
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspect the h1 element of the DevTools homepage in the Accessibility panel" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    Inspect the `h1` element of the DevTools homepage in the **Accessibility** panel  
