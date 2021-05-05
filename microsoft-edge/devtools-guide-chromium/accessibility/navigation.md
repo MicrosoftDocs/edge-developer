@@ -24,7 +24,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Navigate Microsoft Edge DevTools with assistive technology  
 
-The following article aims to help users who primarily rely on assistive technology like screen readers access and use [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] is a suite of web developer tools built into the Microsoft Edge browser.  If you are looking for DevTools features related to improving the accessibility of a web page,  navigate to [Accessibility Reference][DevtoolsAccessibilityReference].  
+The following article aims to help users who primarily rely on assistive technology like screen readers access and use [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] is a suite of web developer tools built into the Microsoft Edge browser.  
+
+If you are looking for DevTools features related to improving the accessibility of a web page, see [Accessibility testing using DevTools](accessibility-testing-basics.md) and [Accessibility Reference][DevtoolsAccessibilityReference].
 
 The accessibility of DevTools is a work-in-progress.  Some panels and tabs work better with assistive technology than others.  This guide walks you through the panels which are the most accessible and highlights specific issues you may encounter along the way.  
 
@@ -196,9 +198,9 @@ To inspect the event listeners that are applied to an element, select the **Elem
 
 Event listeners are presented as an [ARIA tree][W3CWaiAriaTree].  You may use the arrow keys to navigate them.  A screen reader announces the name of the DOM object that the event listener is attached to, as well as the file name where the event listener is defined and the line number.  
 
-### Accessibility pane  
+### Accessibility panel  
 
-With focus on the **Accessibility** pane, select `Tab` to move focus inside and explore the contents.  On the [Accessibility pane][DevtoolsAccessibilityReference] there are controls for exploring the accessibility tree, the ARIA attributes applied to an element, and the computed accessibility properties.  
+With focus on the **Accessibility** panel, select `Tab` to move focus inside and explore the contents.  On the [Accessibility panel][DevtoolsAccessibilityReferencePanel] there are controls for exploring the accessibility tree, the ARIA attributes applied to an element, and the computed accessibility properties.  
 
 #### Accessibility Tree  
 
@@ -206,7 +208,7 @@ The **Accessibility Tree** is presented as an [ARIA tree][W3CWaiAriaTree] where 
 
 **Known issues**  
 
-*   The type of [ARIA tree][W3CWaiAriaTree] used by the **Accessibility** pane may not be properly exposed in Microsoft Edge for macOS screen readers like VoiceOver.  Subscribe to [Chromium issue #868480][ChromiumIssues868480]
+*   The type of [ARIA tree][W3CWaiAriaTree] used by the **Accessibility** panel may not be properly exposed in Microsoft Edge for macOS screen readers like VoiceOver.  Subscribe to [Chromium issue #868480][ChromiumIssues868480]
   to be informed about progress on this issue.  
 *   Each of the **ARIA Attributes** and **Computed Properties** sections are marked up as an [ARIA tree][W3CWaiAriaTree], but each does not currently have focus management and is not keyboard operable.  
 
@@ -239,7 +241,7 @@ To run a new audit, use `Shift`+`Tab` to exit the report and look for the **Perf
 <!-- links -->  
 
 [DevtoolsAccessibilityReference]: ./reference.md "Accessibility reference | Microsoft Docs"  
-[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference | Microsoft Docs"  
+[DevtoolsAccessibilityReferencePanel]: reference.md#the-accessibility-panel "The Accessibility panel - Accessibility Reference | Microsoft Docs"  
 [MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsConsoleIndex]: ../console/index.md "Console Overview | Microsoft Docs"  
