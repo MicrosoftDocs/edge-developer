@@ -87,7 +87,7 @@
           items:
             - name: Accessibility
               items:
-                - name: Accessibility testing basics
+                - name: Accessibility testing using DevTools
                   href: devtools-guide-chromium/accessibility/accessibility-testing-basics.md
                 - name: Accessibility reference
                   href: devtools-guide-chromium/accessibility/reference.md
