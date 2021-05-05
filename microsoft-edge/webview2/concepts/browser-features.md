@@ -3,7 +3,7 @@ description: Feature differences between Microsoft Edge and WebView2
 title: Feature differences between Microsoft Edge and WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/19/2021
+ms.date: 05/05/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -81,7 +81,7 @@ The following Microsoft Edge and Google Chrome settings webpages aren't availabl
 *   `edge://settings`  
 *   `edge://supervised-user-internals`  
 *   `edge://version`  
-
+    
 ## Additional keyboard shortcuts information  
 
 Keyboard shortcuts or key bindings are supported in Microsoft Edge and WebView2.  When Microsoft Edge updates, the default key bindings may change.  Furthermore, a keyboard shortcut that is turned off by default may turn on if the feature is now supported in WebView2.  To avoid changes to your keyboard shortcuts, you may set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, which turns off all keys that access browser features, but keeps all basic text-editing and movement shortcuts turned on.  
