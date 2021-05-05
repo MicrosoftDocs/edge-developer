@@ -38,7 +38,7 @@ Open the [demo page with accessibility issues][DevToolsA11yErrorsDemopage] in a 
 | Check for contrast issues with dark theme and light theme | **Rendering** tool: **Emulate CSS media feature prefers-color-scheme** |
 | Check that the webpage is usable by people with color blindness | **Rendering** tool: **Emulate vision deficiencies** dropdown list: **Protanopia** |
 | Check that the webpage is usable with blurred vision | **Rendering** tool: **Emulate vision deficiencies** dropdown list: **Blurred vision** |
-| Check whether the page is usable with UI animation turned off (reduced motion) | **Rendering** tool: **Emulate CSS media feature prefers-reduced-motion**: **prefers-reduced-motion: reduced** |
+| Check that the page is usable with UI animation turned off (reduced motion) | **Rendering** tool: **Emulate CSS media feature prefers-reduced-motion**: **prefers-reduced-motion: reduced** |
 
 
 <!-- 1. ISSUES TOOL -->
@@ -74,13 +74,15 @@ To check that input fields have labels connected to them, use the **Issues** too
 
 1.  On the **Issues** tab, expand the **Accessibility** section.
 
-1.  Expand the **Warning** `Form elements must have labels: Element has no title attribute Element has no placeholder attribute`, and then select the **Open in Elements** link.  In the DOM tree, DevTools highlights the element, and displays the HTML source and the applied CSS rules for the element:
+1.  Expand the **Warning** `Form elements must have labels: Element has no title attribute Element has no placeholder attribute`.
+
+1. Select the **Open in Elements** link.
 
     :::image type="complex" source="../media/a11y-testing-inspect-problematic-element.msft.png" alt-text="Elements tool showing the problematic HTML after selecting the link in the Issues tool" lightbox="../media/a11y-testing-inspect-problematic-element.msft.png":::
         Elements tool showing the problematic HTML after selecting the link in the **Issues** tool
     :::image-end:::
 
-    The HTML has a `label` element that doesn't work:
+    The **Elements** tool opens, with the element highlighted in the DOM tree.  The **Styles** pane displays the applied CSS rules for the element.  The HTML has a `label` element that doesn't work:
 
     ```html
     <label>Search</label>
@@ -92,9 +94,11 @@ To check that input fields have labels connected to them, use the **Issues** too
     *   Nest the `input` element within the `label` element.
     *   In the `label` element, add a `for` attribute that matches an `id` attribute of the `input` element.
 
-1.  You can also test this lack of a connection as follows: in the **Elements** tool, hover over or select the `<label>Search</label>` element.  In the webpage, focus only appears on the **Search** label, not on the input textbox.  A validly tagged HTML `label` element would put focus on the `search` input textbox as well as on the **Search** label.
+1.  You can also test this lack of a connection as follows: in the **Elements** tool, hover over or select the `<label>Search</label>` element in the DOM tree.
 
-1.  In the **Issues tool**, select the explanatory "Further reading" link.  To open the link in a new tab, **Ctrl**+**click** the link on Windows/Linux or **Command**+**click** the link on macOS.
+    In the webpage, focus only appears on the **Search** label, not on the input textbox.  A validly tagged HTML `label` element would put focus on the `search` input textbox as well as on the **Search** label.
+
+1.  In the **Issues tool**, select the explanatory "Further reading" link.  To open the link in a new tab, **Ctrl**+**click** the link on Windows/Linux, or **Command**+**click** the link on macOS.
 
     :::image type="complex" source="../media/a11y-testing-more-information-links.msft.png" alt-text="Link on the Issues tab pointing to more in-depth information about the issue" lightbox="../media/a11y-testing-more-information-links.msft.png":::
         Link on the **Issues** tab pointing to more in-depth information about the issue
@@ -627,7 +631,7 @@ Use the **Rendering** tool to emulate and check the following:
 | Check for contrast issues with dark theme and light theme. | **Rendering** tool: **Emulate CSS media feature prefers-color-scheme** dropdown list |
 | Check that the webpage is usable by people with color blindness. | **Rendering** tool: **Emulate vision deficiencies** dropdown list: **Protanopia** |
 | Check that the webpage is usable with blurred vision. | **Rendering** tool: **Emulate vision deficiencies** dropdown list: **Blurred vision** |
-| Check whether the page is usable with UI animation turned off (reduced motion). | **Rendering** tool: **Emulate CSS media feature prefers-reduced-motion** |
+| Check that the page is usable with UI animation turned off (reduced motion). | **Rendering** tool: **Emulate CSS media feature prefers-reduced-motion** |
 
 These features are described below.
 
@@ -722,7 +726,7 @@ To simulate blurred vision, in the **Rendering** tool, use the **Emulate vision 
 
 
 <!-- Rendering tool: Emulate CSS media feature prefers-reduced-motion: "prefers-reduced-motion: reduced" -->
-## Check whether the page is usable with UI animation turned off (reduced motion)
+## Check that the page is usable with UI animation turned off (reduced motion)
 
 A webpage should not show animations to a user who turned off animations in the operating system.  Animations can help the usability of a product, but they can also cause distraction, confusion, or nausea.
 
