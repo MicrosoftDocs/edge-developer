@@ -46,7 +46,7 @@ Open the [demo page with accessibility issues][DevToolsA11yErrorsDemopage] in a 
 
 The **Issues** tool includes an **Accessibility** section that automatically reports issues such as low text contrast.  The **Issues** tool is within the Drawer at the bottom of DevTools.  To access the **Issues** tool, use the **Issues counter** in the upper right of DevTools, or a wavy underlining of elements in the DOM tree in the **Elements** tool.
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.  In the upper right, the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears, as a speech-bubble icon along with the number of automatically detected issues.  You might see a different number, and the number you see might update as you use DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.  In the upper right, the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears, as a speech-bubble icon along with the number of automatically detected issues.  You might see a different number, and the number you see might update as you use DevTools.
 
     :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="The Issues counter in DevTools, indicating how many problems there are in the current document" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
         The **Issues counter** in DevTools, indicating how many problems there are in the current document
@@ -58,9 +58,9 @@ The **Issues** tool includes an **Accessibility** section that automatically rep
         Accessibility warnings displayed in the Issues tool
     :::image-end:::
 
-1.  In the **Issues** pane, expand the **Accessibility** section.
+1.  On the **Issues** tab, expand the **Accessibility** section.
 
-For more information, see [Find and fix problems with the Microsoft Edge DevTools Issues tool][DevToolsIssuesTool].
+For more information about the **Issues** tool, see [Find and fix problems with the Microsoft Edge DevTools Issues tool][DevToolsIssuesTool].
 
 
 <!-- Issues tool: Accessibility section -->
@@ -68,16 +68,16 @@ For more information, see [Find and fix problems with the Microsoft Edge DevTool
 
 To check that input fields have labels connected to them, use the **Issues** tool, which automatically checks the entire webpage and reports this issue in the **Accessibility** section.
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  In the upper right, select the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\).  The **Issues** tool opens, in the **Drawer** at the bottom of DevTools.
 
-1.  In the **Issues** pane, expand the **Accessibility** section.
+1.  On the **Issues** tab, expand the **Accessibility** section.
 
 1.  Expand the **Warning** `Form elements must have labels: Element has no title attribute Element has no placeholder attribute`, and then select the **Open in Elements** link.  In the DOM tree, DevTools highlights the element, and displays the HTML source and the applied CSS rules for the element:
 
-    :::image type="complex" source="../media/a11y-testing-inspect-problematic-element.msft.png" alt-text="Elements tool showing the problematic HTML after activating the link in the Issues tool" lightbox="../media/a11y-testing-inspect-problematic-element.msft.png":::
-        Elements tool showing the problematic HTML after activating the link in the **Issues** tool
+    :::image type="complex" source="../media/a11y-testing-inspect-problematic-element.msft.png" alt-text="Elements tool showing the problematic HTML after selecting the link in the Issues tool" lightbox="../media/a11y-testing-inspect-problematic-element.msft.png":::
+        Elements tool showing the problematic HTML after selecting the link in the **Issues** tool
     :::image-end:::
 
     The HTML has a `label` element that doesn't work:
@@ -94,10 +94,10 @@ To check that input fields have labels connected to them, use the **Issues** too
 
 1.  You can also test this lack of a connection as follows: in the **Elements** tool, hover over or select the `<label>Search</label>` element.  In the webpage, focus only appears on the **Search** label, not on the input textbox.  A validly tagged HTML `label` element would put focus on the `search` input textbox as well as on the **Search** label.
 
-1.  In the **Issues tool**, select the explanatory "Further reading" link.  To open the link in a new tab, select `Ctrl`+`click` on Windows/Linux or `Command`+`click` on macOS.
+1.  In the **Issues tool**, select the explanatory "Further reading" link.  To open the link in a new tab, **Ctrl**+**click** the link on Windows/Linux or **Command**+**click** the link on macOS.
 
-    :::image type="complex" source="../media/a11y-testing-more-information-links.msft.png" alt-text="Link in the Issues pane pointing to more in-depth information about the issue" lightbox="../media/a11y-testing-more-information-links.msft.png":::
-        Link in the **Issues** pane pointing to more in-depth information about the issue
+    :::image type="complex" source="../media/a11y-testing-more-information-links.msft.png" alt-text="Link on the Issues tab pointing to more in-depth information about the issue" lightbox="../media/a11y-testing-more-information-links.msft.png":::
+        Link on the **Issues** tab pointing to more in-depth information about the issue
     :::image-end:::
 
 
@@ -108,11 +108,11 @@ Basic accessibility testing requires making sure alternative text (also called _
 
 To automatically check whether alt text is provided for images, use the **Issues** tool, which has an **Accessibility** section.  The **Issues** tool is located in the **Drawer** at the bottom of DevTools.
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  To open the **Issues** tool, select the **Issues** counter in the upper right of DevTools.
 
-1.  In the **Issues** pane, expand the warning `Images must have alternate text: Element has no title attribute`.  There are four instances of images that lack alt text.
+1.  On the **Issues** tab, expand the warning `Images must have alternate text: Element has no title attribute`.  There are four instances of images that lack alt text.
 
     :::image type="complex" source="../media/a11y-testing-images-without-alt.msft.png" alt-text="The Issues tool reporting images that are missing alternative text" lightbox="../media/a11y-testing-images-without-alt.msft.png":::
         The Issues tool reporting images that are missing alternative text
@@ -126,7 +126,7 @@ To make sure text colors have enough contrast, use the **Issues** tool, which ha
 
 To automatically check whether text colors have enough contrast, use the **Issues** tool, which has an **Accessibility** section.  The **Issues** tool is located in the **Drawer** at the bottom of DevTools.
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  Select the **Issues** counter in the upper right of DevTools.  The **Issues** tool opens.
 
@@ -136,7 +136,7 @@ To automatically check whether text colors have enough contrast, use the **Issue
         Contrast problems reported in the Issues tool
     :::image-end:::
     
-1.  If the **Issues** pane has a warning that elements have insufficient color contrast, expand the warning, and then expand the **Affected resources** section of the warning.  A list of elements appears, showing which elements don't have enough contrast.
+1.  If the **Issues** tab has a warning that elements have insufficient color contrast, expand the warning, and then expand the **Affected resources** section of the warning.  A list of elements appears, showing which elements don't have enough contrast.
 
 1.  Select the `li.high` element.  In the rendered webpage, the **Dogs** link in the **Donate** section is highlighted, displaying a small information overlay.  This is the same overlay that appears when you hover over an element in the DOM tree in the **Elements** tool.
 
@@ -150,10 +150,10 @@ To automatically check whether text colors have enough contrast, use the **Issue
 
 The DOM tree in the **Elements** tool flags issues directly in the HTML, by adding a wavy underline.  These are issues that are reported by the **Issues** tool.
 
-1.  When you `Shift+Click` any element that has a wavy underline, the **Issues tool** appears.  In the Elements tool, in the DOM tree, select the element `<input type="search">`, which has a wavy line under `input`.  Then select `Shift` + `Click`.
+1.  When you **Shift+click** any element that has a wavy underline, the **Issues tool** appears.  In the Elements tool, in the DOM tree, select the element `<input type="search">`, which has a wavy line under `input`.  Then select **Shift+click**.
 
-    :::image type="complex" source="../media/a11y-testing-wavy-underlines.msft.png" alt-text="An element that has a wavy underline in the DOM view has an issue; Shift+Click the element to view the issue" lightbox="../media/a11y-testing-wavy-underlines.msft.png":::
-        An element that has a wavy underline in the DOM view has an issue; Shift+Click the element to view the issue
+    :::image type="complex" source="../media/a11y-testing-wavy-underlines.msft.png" alt-text="An element that has a wavy underline in the DOM view has an issue; Shift+click the element to view the issue" lightbox="../media/a11y-testing-wavy-underlines.msft.png":::
+        An element that has a wavy underline in the DOM view has an issue; **Shift+click** the element to view the issue
     :::image-end:::
 
 The issues shown above are some relatively prominent and straightforward accessibility problems that can be avoided.  Using the **Issues tool** and its guided explanations to fix the issues puts you on the way towards an accessible product.
@@ -179,33 +179,51 @@ To check page layout and usability by making the browser window narrow:
 To check page layout and usability by using the **Device Emulation** tool, see [Emulate mobile devices in Microsoft Edge DevTools](../device-mode/index.md).
 
 
-<!-- 3. INSPECT TOOL -->
-## Overview of the Inspect tool
+### Limitations of the Issues tool and automated testing
 
 Getting an automated report from a tool like the [Issues tool][DevToolsIssuesTool], [Accessibility Insights][AccessibilityInsights], or [Lighthouse][Lighthouse] is only the beginning of your accessibility testing journey.
 
 Accessibility is about human interaction - people with different needs using various technical environments using your products.  This can't be automated, but needs verification by a human navigating the product.  Ideally, you'd have access to testers with different needs, and testers using various environments, but you can already do a lot yourself by using the keyboard to navigate, and by inspecting different parts of the page.
 
-Automated testing (report-based testing) doesn't catch all the issues in the accessibility-testing demo webpage.  Some issues only show up when you interact with the webpage.  Other issues appear when you change the way the page is displayed, and other issues are built in such a way that the automated scan of the document couldn't even detect that there is a problem.
+Automated testing (report-based testing) doesn't catch all the issues in the accessibility-testing demo webpage.
+*  Some issues only show up when you interact with the webpage.  
+*  Other issues appear when you change the way the page is displayed.
+*  Other issues are built in such a way that the automated scan of the document couldn't even detect that there is a problem.
 
-In the accessibility-testing demo page, automated testing by the **Issues** tool doesn't catch the lack of keyboard support in the donation form.  When you use a mouse, you can click the different options to donate money.  But when you try to use the keyboard to try to use the donation form, focus doesn't move to the buttons of the donation form.
+In the accessibility-testing demo page, automated testing by the **Issues** tool doesn't catch the lack of keyboard support in the donation form.  When you use a mouse, you can click the different options to donate money.  But when you try to use the keyboard to use the donation form, focus doesn't move to the buttons of the donation form.
 
 :::image type="complex" source="../media/a11y-testing-basics-donation-form-issue.msft.png" alt-text="Donation form in the demo page" lightbox="../media/a11y-testing-basics-donation-form-issue.msft.png":::
     Donation form in the demo page
 :::image-end:::
 
-To find out what is going wrong, use the **Inspect** tool, which provides an information overlay on the rendered webpage as you hover over an individual element of the webpage.  The information overlay provided by the Inspect tool includes an **Accessibility** section with indicators for text contrast, screen reader text, and keyboard support.
+To find out what is going wrong, use the **Inspect** tool.  
+
+
+<!-- 3. INSPECT TOOL -->
+## Using the Inspect tool to detect accessibility issues by hovering over parts of the webpage
+
+<!-- there's no article about the Inspect tool; this section is equivalent -->
+
+The **Issues** tool automatically reports issues for the entire webpage, including accessibility issues.  In contrast, the **Inspect** tool displays information about an element as you hover over the rendered webpage, including accessibility information.
+
+The **Inspect** tool button \(![Inspect](../media/inspect-icon.msft.png)\) is in the upper-left corner of DevTools.  When you select the **Inspect** tool button, the button turns blue, indicating that the **Inspect** tool is active.  
+
+When the **Inspect** tool is active, when you hover over any element within the rendered webpage, the **Inspect** overlay appears in the rendered webpage, showing general information and accessibility information about the element.  The **Accessibility** section of the **Inspect** overlay displays information about text-color contrast, screen reader text, and keyboard support.
+
+:::image type="complex" source="../media/a11y-testing-basics-inspector-overlay.msft.png" alt-text="The Inspect tool, showing the element's area as a multicolor overlay, and showing the element's details as a large information overlay" lightbox="../media/a11y-testing-basics-inspector-overlay.msft.png":::
+    The **Inspect** tool, showing the element's area as a multicolor overlay, and showing the element's details as a large information overlay
+:::image-end:::
 
 
 <!-- Inspect tool: Accessibility section of overlay -->
 ## Check individual elements for text contrast, screen reader text, and keyboard support
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
-1.  Select the **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) tool icon in the top-left corner of DevTools so that the icon is highlighted (blue).
+1.  Select the **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
-    :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="To turn on the Inspect tool, select the Inspect icon" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
-        To turn on the **Inspect** tool, select the **Inspect** icon
+    :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="To turn on the Inspect tool, select the Inspect button" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
+        To turn on the **Inspect** tool, select the **Inspect** button
     :::image-end:::
 
 1.  Hover over any element in the rendered demo webpage.  The **Inspect** tool shows an information overlay below the element within the rendered webpage.
@@ -220,7 +238,7 @@ The bottom part of the **Inspect** overlay in the webpage has an **Accessibility
 
 *   **Name** and **Role** is what assistive technology like screen readers will report about the element.  
     *   The `Name` is the text content of an `a` element.  For the element `<a href="/">About Us</a>`, the **Name** shown in the Inspect tool is "About Us".
-    *   The `Role` of the element.  This is usually the element name, such as `article`, `img` , `link`, or `heading`.  The `div` element is represented as `generic`.
+    *   The `Role` of the element.  This is usually the element name, such as `article`, `img` , `link`, or `heading`.  The `div` and `span` elements are represented as `generic`.
 
 *   **Keyboard-focusable** indicates whether users can reach the element regardless of input device.
     *   A green check mark icon indicates that the element is keyboard-focusable.  
@@ -239,13 +257,15 @@ The top part of the **Inspect** overlay in the webpage (above the **Accessibilit
 
 ### Using the Inspect tool to hover over the webpage to highlight the DOM and CSS
 
-1.  Select the **Inspect** tool icon, so that it turns blue.  
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
+
+1.  Select the **Inspect** button \(![the Inspect tool](../media/inspect-icon.msft.png)\) in the top-left corner of DevTools, so that the button is highlighted (blue).
 
 1.  Select the **Elements** tool, to make it visible.
 
-1.  With the **Inspect** tool active, hover over different parts of the rendered webpage.  The DOM tree automatically expands to show information about the element you hover over.  Hovering doesn't cause the **Styles** pane to update.
+1.  With the **Inspect** tool active, hover over different parts of the rendered webpage.  In the **Elements** tool, the HTML DOM tree automatically expands to show information about the element you hover over.  Hovering doesn't cause the **Styles** pane to update.
 
-1.  Now select (click) any element within the rendered webpage.  The **Elements** tool automatically opens, showing the HTML of the element in the DOM tree, and also showing the applied CSS for the element in the **Styles** pane.  Selecting an element in the rendered webpage, as you did here, turns off the **Inspect** tool.
+1.  Now select any element within the rendered webpage.  The **Elements** tool automatically opens, showing the HTML of the element in the DOM tree, and also showing the applied CSS for the element in the **Styles** pane.  Selecting an element in the rendered webpage turns off the **Inspect** tool.
 
 :::image type="complex" source="../media/a11y-testing-basics-inspector-selected-element.msft.png" alt-text="Details about the selected element are displayed in the Elements tool" lightbox="../media/a11y-testing-basics-inspector-selected-element.msft.png":::
     Details about the selected element are displayed in the **Elements** tool
@@ -255,7 +275,7 @@ The top part of the **Inspect** overlay in the webpage (above the **Accessibilit
 
 In addition to the information overlay when you hover over the webpage, the **Inspect** tool also provides the same helpful region-coloring behavior as hovering in the DOM tree in the **Elements** tool, but more directly.
 
-1.  Select the **Inspect** tool so that its icon turns blue.
+1.  Select the **Inspect** button \(![Inspect tool icon](../media/inspect-icon.msft.png)\) in the top-left corner of DevTools, so that the button is highlighted (blue).
 
 1.  Hover over different parts of the rendered demo webpage.  Each element in the webpage now has a multicolor overlay over its entire area, to show any sub-areas that the element contains.
 
@@ -265,41 +285,41 @@ In addition to the information overlay when you hover over the webpage, the **In
 <!-- keyboard: Tab, Enter -->
 ## Check for keyboard support by using the Tab and Enter keys
 
-The above section shows how to check for keyboard support for an individual element by using the **Inspect** tool.  The Inspect tool's information overlay includes an **Accessibility** section that includes a **Keyboard-focusable** row.  Also test the usability of the webpage by using the keyboard, particularly the `Tab`, `Shift`+`Tab`, and `Enter` keys.
+The above section shows how to check for keyboard support for an individual element by using the **Inspect** tool.  The Inspect tool's information overlay includes an **Accessibility** section that includes a **Keyboard-focusable** row.  Also test the usability of the webpage by using the keyboard, particularly the **Tab**, **Shift**+**Tab**, and **Enter** keys.
 
-Not all users have a pointer or touch device, and not all users can see the web projects we create.  This is why it is important that the user interface works at least with a keyboard.  Make sure you can press the `Tab` key to move the focus to each form control on a webpage, and make sure you can press the `Enter` key to activate a form button.
+Not all users have a pointer or touch device, and not all users can see the web projects we create.  This is why it is important that the user interface works at least with a keyboard.  Make sure you can press the **Tab** key to move the focus to each form control on a webpage, and make sure you can press the **Enter** key to activate a form button.
 
 Try using the demo page by using a keyboard rather than a mouse, as follows.
 
 1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser.
 
-1.  Use a keyboard to navigate the demo document, using the `Tab` and `Shift`+`Tab` keys to jump from element to element.  On the demo webpage, pressing `Tab` first moves focus to the search form in the `header` section.
+1.  Use a keyboard to navigate the demo document, using the **Tab** and **Shift+Tab** keys to jump from element to element.  On the demo webpage, pressing **Tab** first moves focus to the search form in the `header` section.
 
-1.  Select the `Tab` key to put focus on a button, and then press `Enter` to click the focused button.
+1.  Select **Tab** to put focus on a button, and then select  **Enter** to click the focused button.
 
-1.  In the demo page, press `Tab` to put focus on the **Search** field, and then press the `Enter` key to submit the search, producing the same result as clicking the **go** button.  Pressing the `Enter` key to send the **Search** form works correctly, despite the `label` element issue that we discovered earlier by using the **Issues tool**.
+1.  In the demo page, select **Tab** to put focus on the **Search** field, and then select **Enter** to submit the search, producing the same result as clicking the **go** button.  Selecting **Enter** to send the **Search** form works correctly, despite the `label` element issue that we discovered earlier by using the **Issues tool**.
 
-1.  Select `Tab`.  The next element you put focus on is the first `More` link in the `content` section of the webpage, as indicated by an outline.
+1.  Select **Tab**.  The next element you put focus on is the first **More** link in the `content` section of the webpage, as indicated by an outline.
     
     :::image type="complex" source="../media/a11y-testing-keyboard-focus-on-element.msft.png" alt-text="Navigating the document using the keyboard and the `Tab` key. Focus is shown on a link in the document." lightbox="../media/a11y-testing-keyboard-focus-on-element.msft.png":::
         Navigating the document using the keyboard and the tab key. Focus is shown on a link in the document.
     :::image-end:::
     
-1.  Go past the last `more` link.  After you go past the last `More` link, the page scrolls up again and you seem to be on some element, but you don't know which element.
+1.  Select **Tab** several more times until you go past the last **More** link.  The page scrolls up again and you seem to be on some element of the page, but you don't know which element.
 
-1.  Notice the URL in the bottom left.  If you look to the bottom left of the screen (or if you use a screen reader), you realize that you are on the sidebar navigation menu with blue buttons, because the browser shows the URL which the `a` link of the blue **Cats** button points to (`#cats`).
+1.  Notice the URL in the bottom left.  If you look to the bottom left of the screen (or if you use a screen reader), you realize that you are on the sidebar navigation menu with blue buttons, because the browser shows the URL that the `a` link of the blue **Cats** button points to (`#cats`).
 
     :::image type="complex" source="../media/a11y-testing-lack-of-focus-style.msft.png" alt-text="A lack of focus style makes it impossible to know where you currently are in the document. The only hint is the display of the link target in the bottom left corner of the screen" lightbox="../media/a11y-testing-lack-of-focus-style.msft.png":::
-        A lack of focus style makes it impossible to know where you currently are in the document. The only hint is the display of the link target in the bottom left corner of the screen
+        A lack of focus style makes it impossible to know where you currently are in the document. The only hint is the display of the link target in the bottom left corner of the screen.
     :::image-end:::
 
-1.  Press the `Tab` key again, to get to the entry field in the donation form.  However, you can't reach the buttons above the textbox by pressing the `Tab` key; you can't use the keyboard to put focus on the `50`, `100` or `200` buttons and then to click them.  Also, pressing the `Enter` key doesn't submit the donation form.
+1.  Select **Tab** again, to get to the entry field in the donation form.  However, you can't reach the buttons above the textbox by selecting **Tab**; you can't use the keyboard to put focus on the **50**, **100**, or **200** buttons and then to click them.  Also, selecting **Enter** doesn't submit the donation form.
 
     :::image type="complex" source="../media/a11y-testing-form-field-with-outline.msft.png" alt-text="The only keyboard-accessible element in the donation form is the text entry field" lightbox="../media/a11y-testing-form-field-with-outline.msft.png":::
         The only keyboard-accessible element in the donation form is the text entry field
     :::image-end:::
     
-1.  Pressing the `Tab` key again puts focus on the top navigation menu of the page, with menu buttons for **Home**, **Adopt a Pet**, **Donate**, **Jobs**, and **About Us**.  Press the `Tab` or `Shift`+`Tab` key to put focus on a menu button, as indicated by a focus outline.  Then press the `Enter` key to access that section of the webpage.
+1.  Selecting **Tab** again puts focus on the top navigation bar of the page, with menu buttons for **Home**, **Adopt a Pet**, **Donate**, **Jobs**, and **About Us**.  Select **Tab** or **Shift+Tab** to put focus on a menu button, as indicated by a focus outline.  Then select **Enter** to access that section of the webpage.
 
     :::image type="complex" source="../media/a11y-testing-menu-with-outline.msft.png" alt-text="The main menu has a highlight and a focus outline, and thus is keyboard-accessible" lightbox="../media/a11y-testing-menu-with-outline.msft.png":::
         The main menu has a highlight and a focus outline, and thus is keyboard-accessible
@@ -309,7 +329,7 @@ We found some issues here to fix:
 
 *  When using a keyboard, the sidebar navigation menu with blue buttons doesn't visually indicate which button has focus.
 *  In the donation form, the amount buttons and the **Donate** button don't work with a keyboard.
-*  The order of the keyboard access through sections of the page seems wrong.  You navigate through all the `More` links in the document before you reach the sidebar navigation menu with blue buttons.  This makes the sidebar navigation menu pointless.  By the time the `Tab` key puts focus on the sidebar navigation menu, you already traversed all the content that the sidebar navigation menu was supposed to provide easy access to.
+*  The order of the keyboard access through sections of the page seems wrong.  You navigate through all the **More** links in the document before you reach the sidebar navigation menu with blue buttons.  This makes the sidebar navigation menu pointless.  By the time the **Tab** key puts focus on the sidebar navigation menu, you already traversed all the content that the sidebar navigation menu was supposed to provide easy access to.
 
 Let's analyze these problems by using DevTools, in the following sections.
 
@@ -317,11 +337,11 @@ Let's analyze these problems by using DevTools, in the following sections.
 <!-- Inspect tool: CSS rules: pseudo-classes for states -->
 ## Analyzing the lack of indication of keyboard focus in the sidebar menu
 
-The sidebar navigation menu with blue buttons doesn't visually indicate which button has focus, when using a keyboard.  To find out why the sidebar menu is confusing to keyboard users, we'll inspect CSS pseudo-class rules for the `hover` and `focus` states, along with the CSS property for button outlines.  To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue button on the sidebar navigation menu, and then view the DOM tree and CSS for the `a` element that defines that button.
+The sidebar navigation menu with blue buttons doesn't visually indicate which button has focus, when using a keyboard.  To find out why the sidebar menu is confusing to keyboard users, we'll look for CSS pseudo-class rules for the `hover` and `focus` states, along with the CSS property for button outlines.  To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue button on the sidebar navigation menu, and then view the DOM tree and CSS for the `a` element that defines that button.
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
-1.  Select the **Inspect** \(![Inspect icon](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools so that the icon is highlighted (blue).
+1.  Select the **Inspect** \(![Inspect icon](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
 1.  Hover over the **Cats** button, which is the first, blue button of the sidebar menu.  The Inspect overlay appears, showing that the `a` element is keyboard-focusable.  But the overlay doesn't indicate that there's no visual indication that the button has focus.
  
@@ -351,11 +371,11 @@ The sidebar navigation menu with blue buttons doesn't visually indicate which bu
 
 In the donation form, the amount buttons and the **Donate** button don't work with a keyboard.  Debugging the donation form in the demo page requires understanding why the lack of a `focus` state and the presence of the `outline: none` CSS property aren't flagged as a problem by automatic testing, such as the **Issues** tool or **Inspect** tool.
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
     
-1.  Select the **Inspect** \(![Inspect icon](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools so that the icon is highlighted (blue).
+1.  Select the **Inspect** \(![Inspect icon](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
-1.  Hover over the `50`, `100`, and `200` donation buttons.  The Inspect tool appears on the webpage, as an overlay.  The **keyboard-focusable** row of the Inspect overlay shows that none of the donation amount buttons are keyboard-accessible, as indicated by a gray circle with diagonal line.  The buttons have no name, and they have a role of `generic` (because they are `div` elements), which means that the buttons are effectively inaccessible to assistive technology.
+1.  Hover over the **50**, **100**, and **200** donation buttons.  The Inspect tool appears on the webpage, as an overlay.  The **keyboard-focusable** row of the Inspect overlay shows that none of the donation amount buttons are keyboard-accessible, as indicated by a gray circle with diagonal line.  The buttons have no name, and they have a role of `generic` (because they are `div` elements), which means that the buttons are effectively inaccessible to assistive technology.
 
     :::image type="complex" source="../media/a11y-testing-donation-button-info.msft.png" alt-text="Inspecting the buttons of the form shows that they aren't keyboard-accessible" lightbox="../media/a11y-testing-donation-button-info.msft.png":::
         Inspecting the buttons of the form shows that they aren't keyboard-accessible
@@ -384,11 +404,11 @@ In the donation form, the amount buttons and the **Donate** button don't work wi
 
 1.  Select the **Event Listeners** tab to the right of the **Styles** tab, and then expand the `click` event listener.
 
-1.  Select the `buttons.js:18` link.  The `Sources` tool opens, showing the applied JavaScript:
-
     :::image type="complex" source="../media/a11y-testing-event-handlers-on-button.msft.png" alt-text="The Event listeners tool showing you where the JavaScript is that makes the form work" lightbox="../media/a11y-testing-event-handlers-on-button.msft.png":::
         The Event listeners tool showing you where the JavaScript is that makes the form work
     :::image-end:::
+
+1.  Select the `buttons.js:18` link.  The **Sources** tool opens, showing the applied JavaScript:
 
     :::image type="complex" source="../media/a11y-testing-form-handling-javascript.msft.png" alt-text="The JavaScript responsible for the form functionality shown in the Sources tool" lightbox="../media/a11y-testing-form-handling-javascript.msft.png":::
         The JavaScript responsible for the form functionality shown in the Sources tool
@@ -400,12 +420,18 @@ This is a classic example where some extra JavaScript was necessary to create fu
 
 
 <!-- 4. ACCESSIBILITY TOOL -->
-## Overview of the Accessibility tool with Accessibility Tree and source order viewer
+## Overview of the Accessibility tab with Accessibility Tree and source order viewer
+
+The **Accessibility** tab is where you view the accessibility tree, ARIA attributes, and computed accessibility properties of DOM nodes.  
+The **accessibility tree** is a subset of the DOM tree.  It only contains elements from the DOM tree that are relevant and useful for displaying the contents of a page in a screen reader.  
+For more information about the **Accessibility** tab and **Accessibility Tree**, see [Accessibility panel][DevtoolsAccessibilityReferencePane], in the "Accessibility reference" article.
+
+Use the **Accessibility** tab to do the following accessibility checks:
 
 | Check | Tool |
 |---|---|
 | Check for keyboard and screen reader support | **Elements** tool: **Accessibility** tab: **Accessibility Tree** |
-| Check the tab order for usability | **Elements** tool: **Accessibility** tab: **Source Order Viewer**)
+| Check the tab order for usability | **Elements** tool: **Accessibility** tab: **Source Order Viewer** |
 
 These checks and tools are described below.
 
@@ -417,9 +443,9 @@ Using the **Inspect** tool to check each page element individually can become pr
 
 The **Accessibility** tool is in the **Elements** tool, to the right of the **Styles** tab.
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
 
-1.  Select the **Inspect** \(![the Inspect icon](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools so that the icon is highlighted (blue).
+1.  Select the **Inspect** \(![the Inspect icon](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
 1.  In the rendered webpage, in the **Donation** section, hover over the **100** button.  The **Inspect** tool overlay appears.
 
@@ -439,40 +465,40 @@ Any element in the tree that doesn't have a name, or has a role of `generic` (su
 
 To quickly see the tab order of the sections of the webpage, use the **Source order viewer** in the **Accessibility** tool, to the right of the **Styles** tab.
 
-The accessibility-testing demo webpage has a counterintuitive tabbing order, where keyboard users access the navigation menu on the left with blue buttons, _after_ tabbing through all the `More` links.  The menu is meant to be a shortcut to reach deep into the page content, but because you need to go through the whole page to reach the menu, the menu becomes ineffective for keyboard users.
+The accessibility-testing demo webpage has a counterintuitive tabbing order, where keyboard users access the navigation menu on the left with blue buttons, _after_ tabbing through all the **More** links.  The sidebar navigation menu with blue buttons is meant to be a shortcut to reach deep into the page content, but because you need to go through the whole page to reach the menu, the menu becomes ineffective for keyboard users.
 
-The `Tab` order on the demo page is:
+The **Tab** order on the demo page is:
 1. The **Search** field, then the **go** button for the Search field.
 1. The **More** button in the **Cats** section, to navigate to a "Cats" webpage.  Then the other **More** buttons, for Dogs, Sheep, Horses, and then Alpacas.
-1. The blue **Cats** button in the side navigation menu.  The focus on the blue buttons isn't highlighted, but as a hint that they have focus, you can see `#cats` in the URL tooltip in the lower left of the browser.  Focus moves through the blue buttons for **Dogs**, **Sheep**, **Horses**, and then **Alpacas**, in the sidebar navigation menu.
+1. The blue **Cats** button in the sidebar navigation menu.  The focus on the blue button isn't highlighted, but as a hint that the blue button has focus, you can see `#cats` in the URL tooltip in the lower left of the browser.  Focus moves through the blue buttons for **Dogs**, **Sheep**, **Horses**, and then **Alpacas**, in the sidebar navigation menu.
 1. The donation textbox in the donation form.
-1. The buttons in the top navigation menu: **Home**, **Adopt a pet**, **Donate**, **Jobs**, and then **About Us**.
+1. The buttons in the top navigation bar: **Home**, **Adopt a pet**, **Donate**, **Jobs**, and then **About Us**.
 1. The browser's top-of-window interface.
 
-The reason for the confusing `Tab` key order after the **More** buttons is that the source order of the document determines the order of keyboard access.  In the source code of the document, the sidebar navigation menu with blue buttons appears _after_ the main content of the webpage.  The sidebar navigation menu is only rendered above most of the main content of the webpage because the sidebar navigation menu has been positioned using CSS.
+The reason for the confusing **Tab** key order after the **More** buttons is that the source order of the document determines the order of keyboard access.  In the source code of the document, the sidebar navigation menu with blue buttons appears _after_ the main content of the webpage.  The sidebar navigation menu is only rendered above most of the main content of the webpage because the sidebar navigation menu has been positioned using CSS.
 
-You can test issues with `Tab` key order by using the **Source order viewer** in the **Accessibility** tool.  The **Source order viewer** is an experimental feature; for more information, see [Source order viewer](../experimental-features/index.md#source-order-viewer).
+You can test issues with **Tab** key order by using the **Source order viewer** in the **Accessibility** tool.  The **Source order viewer** is an experimental feature; for more information, see [Source order viewer](../experimental-features/index.md#source-order-viewer).
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
 
-1.  In DevTools, in the upper right, select the **Settings** button, shown as a gear icon.  The **Settings** page of DevTools appears.
+1.  In DevTools, in the upper right, select the **Settings** \(![Settings button](../media/settings-button-icon.msft.png)\) button.  The **Settings** page of DevTools appears.
 
 1.  Below **Settings**, select **Experiments**.  The **Experiments** settings page appears.
 
 1.  Select the **Source order viewer** checkbox.
 
-1.  In the upper-right corner of the **Settings** page, select `X` to close the Settings page.  At the top of DevTools, a message appears: "One or more settings have changed which require a reload to take effect."
+1.  In the upper-right corner of the **Settings** page, select **X** to close the Settings page.  At the top of DevTools, a message appears: "One or more settings have changed which require a reload to take effect."
 
 1.  Select the **Reload DevTools** button.
 
 1.  In the **Elements** tool, to the right of the **Styles** tab, select the **Accessibility** tab.
 
-1.  In the **Source Order Viewer** section, select the **Show source order** checkbox.  In the rendered webpage, numbers appear, indicating the `Tab` order as controlled by the order of lines of code in the source file.
+1.  In the **Source Order Viewer** section, select the **Show source order** checkbox.  In the rendered webpage, numbers appear, indicating the **Tab** order as controlled by the order of lines of code in the source file.
 
-1.  Navigate the DOM view of the `Elements` tool by hovering over the rendered webpage.  You now get a numeric overlay over each element that show you the source order, without having to navigate around using a keyboard:
+1.  Navigate the DOM view of the **Elements** tool by hovering over the rendered webpage.  You now get a numeric overlay over each element that show you the source order, without having to navigate around using a keyboard:
 
     :::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
-        Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page
+        Activating the **Source Order Viewer** shows the order of the elements in the source as overlays on the page
     :::image-end:::
     
 1.  Scroll the page from top to bottom, to see all of the numeric overlays, including on the page footer section.
@@ -481,7 +507,7 @@ You can test issues with `Tab` key order by using the **Source order viewer** in
 <!-- 5. STYLES: TOGGLE STATE -->
 ## Overview of Toggle Element State in the Styles pane
 
-Check the accessibility during all states of elements, such as text color contrast during the `hover` state.  To check other states of elements, in the **Styles** pane within the **Elements** tool, use the **Toggle Element State (:hov)** button.  This button displays the **Force element state** group of checkboxes.  
+Check the accessibility during all states of elements, such as text color contrast during the `hover` state.  To check other states of elements, in the **Styles** pane within the **Elements** tool, select the **\:hov** (**Toggle Element State**) button.  This button displays the **Force element state** checkboxes.  
 
 Below, we review how to use the **Inspect** overlay for the current state, and then describe how to check text-color contrast in other states, such as the `hover` state.
 
@@ -493,9 +519,9 @@ The **Inspect** tool only shows text-contrast information for the current state.
 
 *  The **Issues** tool (located in the Drawer) automatically reports any color-contrast issues for the entire webpage, when text and background color don't contrast enough.  This approach is described above.
 
-*  Use the **Inspect** tool (as an information overlay on the webpage) to check whether an individual page element has enough text-color contrast.  The **Inspect** tool's information overlay includes an **Accessibility** section that has a **Contrast** information row.  The current section reviews this approach when the Inspect tool is not active and then when it is active.
+*  Use the **Inspect** tool (as an information overlay on the webpage) to check whether an individual page element has enough text-color contrast.  The **Inspect** tool's information overlay includes an **Accessibility** section that has a **Contrast** information row.  The current section reviews this approach when the Inspect tool is not active, and then when the Inspect tool is active.
 
-*  Emulate a non-default state such as the hover state, by using **Toggle Element State** in the styles pane, described in the subsequent section.
+*  Emulate a non-default state such as the hover state, by using **Toggle Element State** in the **Styles** pane, described in the subsequent section.
 
 For elements that have text, the **Inspect** tool's information overlay shows the following:
 *  The contrast ratio of text versus background colors.
@@ -504,11 +530,11 @@ For elements that have text, the **Inspect** tool's information overlay shows th
 
 In some cases, contrast is affected by setting the browser to light theme or dark theme.
 
-As an example, the sidebar menu elements of the demo page such as the blue **Cats** button have enough contrast, but the green `Dogs` link in the `Donation status` section does not have enough contrast.  Inspect those elements using the **Inspect** tool, as follows:
+As an example, the sidebar menu elements of the demo page such as the blue **Cats** button have enough contrast, but the green **Dogs** link in the **Donation status** section does not have enough contrast.  Inspect those elements using the **Inspect** tool, as follows:
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
 
-1.  Select the **Inspect** \(![Inspect button](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools so that the icon is highlighted (blue).
+1.  Select the **Inspect** \(![Inspect button](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
 1.  In the rendered webpage, hover over the blue **Cats** button.  The **Inspect** tool's information overlay appears.  In the **Accessibility** section of the information overlay, a green checkmark appears on the **Contrast** row, indicating that this element has enough contrast of text color versus background color.
 
@@ -522,7 +548,7 @@ As an example, the sidebar menu elements of the demo page such as the blue **Cat
         An element that doesn't have enough contrast, as shown by the warning in the Inspect tool
     :::image-end:::
 
-### Hovering when the Inspect tool is active doesn't show the text-color contrast
+### Hovering when the Inspect tool is active doesn't show the text-color contrast for the hover state
 
 The **Inspect** tool's information overlay only represents a single state.  But the elements on the page could have different states, and you need to test those states, too.  For example, when you hover the mouse pointer over the menu of the accessibility-testing demo page, you get a rather involved animation that changes the colors, as follows:
 
@@ -534,9 +560,9 @@ The **Inspect** tool's information overlay only represents a single state.  But 
         The menu item showing different colors when the mouse pointer is over it
     :::image-end:::
     
-    But when you turn on the Inspect tool, you can't reach the state of the menu element to test the contrast ratio, because the `hover` state in your styles doesn't get triggered when the Inspect tool is active.  When the Inspect tool is active, animations of the demo menu items don't occur when you hover over them.  Confirm this as follows:
+    But when you turn on the Inspect tool, you can't reach the `hover` state of the menu element to test the contrast ratio, because the `hover` state in your styles doesn't get triggered when the Inspect tool is active.  When the Inspect tool is active, animations of the demo menu items don't occur when you hover over them.  Confirm this as follows:
     
-1.  Select the **Inspect** \(![the Inspect button](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools so that the icon is highlighted (blue).
+1.  Select the **Inspect** \(![the Inspect button](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
 1.  Hover over the various buttons in the menu which begins with the blue **Cats** button.  The animations for the buttons don't run; instead, the buttons are color-highlighted in the way that is standard for the Inspect tool.
 
@@ -546,15 +572,15 @@ This text-contrast checking isn't quite enough, because the elements on the page
 <!-- Elements tool: Styles pane: Toggle Element State -->
 ## Check accessibility during all states of elements, such as contrast during hover
 
-To check accessibility during all states of elements, such as text-color contrast during the hover state: in the **Styles** pane within the **Elements** tool, use the **Toggle Element State (:hov)** button, which displays the **Force element state** group of checkboxes.
+To check accessibility during all states of elements, such as text-color contrast during the hover state: in the **Styles** pane within the **Elements** tool, use the **\:hov** (**Toggle Element State**) button, which displays the **Force element state** group of checkboxes.
 
 ### Using state simulation in the Styles pane to simulate the state of a menu item 
 
-When the **Inspect** tool is active, instead of hovering over an animated element, you need to simulate the state of the menu item.  To simulate the state of a menu item, use the state simulation in the **Styles** pane.  The **Styles** pane has a **:hov** button (for **Toggle Element State**), which displays a group of checkboxes labeled **Force element state**.  Use this feature as follows:
+When the **Inspect** tool is active, instead of hovering over an animated element, you need to simulate the state of the menu item.  To simulate the state of a menu item, use the state simulation in the **Styles** pane.  The **Styles** pane has a **\:hov** (**Toggle Element State**) button, which displays a group of checkboxes labeled **Force element state**.  Use this feature as follows:
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
 
-1.  Select the **Inspect** icon in the top-left corner of DevTools so that the icon is highlighted (blue).
+1.  Select the **Inspect** \(![Inspect tool button](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
 1.  In the rendered webpage, select the blue **Cats** button in the menu.  The **Elements** tool opens, with the element `<a href="#cats">Cats</a>` selected.
 
@@ -566,13 +592,13 @@ When the **Inspect** tool is active, instead of hovering over an animated elemen
 
 1.  In the **Styles** pane, to the right of the style rule `#sidebar nav li a`, select the `styles.css` link.  The **Sources** tool opens.  Then find the CSS pseudo-class rule `#sidebar nav li a:hover`.  This is the rule that doesn't run when the **Inspect** tool is active.  We'll simulate this state-rule running, in the next steps.
 
-1.  Select the **Elements** tool.  Then in the **Styles** pane, select the **Toggle Element State** button, indicated by **:hov**.  The **Force element state** group of checkboxes appears.
+1.  Select the **Elements** tool.  Then in the **Styles** pane, select the **:hov** (**Toggle Element State**) button.  The **Force element state** group of checkboxes appears.
 
     :::image type="complex" source="../media/a11y-testing-state-simulation.msft.png" alt-text="The state simulation tool showing all the options" lightbox="../media/a11y-testing-state-simulation.msft.png":::
         The state simulation tool showing all the options
     :::image-end:::
 
-1.  Select the **:hover** checkbox.  In the DOM, to the left of the element `<a href="#cats">Cats</a>`, a yellow dot appears, indicating that the element has a simulated state.  The **Cats** menu item now appears in the webpage approximately as if the pointer was hovering over it.  The animation might partly run.
+1.  Select the **:hover** checkbox.  In the DOM, to the left of the element `<a href="#cats">Cats</a>`, a yellow dot appears, indicating that the element has a simulated state.  The **Cats** menu item now appears in the webpage approximately as if the pointer were hovering over it.  The animation might partly run.
 
     :::image type="complex" source="../media/a11y-testing-hover-simulated.msft.png" alt-text="DevTools simulating a hover state" lightbox="../media/a11y-testing-hover-simulated.msft.png":::
         DevTools simulating a hover state
@@ -580,7 +606,7 @@ When the **Inspect** tool is active, instead of hovering over an animated elemen
 
     After the simulated state is applied, you can use the **Inspect** tool again to check the contrast of the element when the user hovers over it, as follows.
 
-1.  Select the **Inspect** \(![Inspector icon](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools so that the icon is highlighted (blue).
+1.  Select the **Inspect** \(![Inspector icon](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
 1.  Hover over the blue **Cats** button (now light blue, due to the simulated hover animation).  The **Inspect** tool's information overlay appears, showing an orange exclamation point in the **Contrast** row, indicating that the contrast isn't high enough.
 
@@ -617,9 +643,9 @@ The accessibility-testing demo page has a light theme and a dark theme.  You can
 
 The accessibility-testing demo page inherits the dark or light theme setting from the operating system.  If we use DevTools to simulate the operating system being set to a light scheme and then refresh the webpage, the **Issues** tool shows six color-contrast problems instead of two.  (You might see different numbers.)
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
-1.  Press `Esc` to open the Drawer at the bottom of DevTools.  Select the `+` icon at the top of the drawer to see the list of tools, and then select **Rendering**.  The Rendering tool appears.
+1.  Select **Esc** to open the Drawer at the bottom of DevTools.  Select the **+** icon at the top of the Drawer to see the list of tools, and then select **Rendering**.  The Rendering tool appears.
 
 1.  In the **Emulate CSS media feature prefers-color-scheme** dropdown list, select **prefers-color-scheme: light**.  
 
@@ -641,7 +667,7 @@ The accessibility-testing demo page inherits the dark or light theme setting fro
         The **Donation Status** section flagged as a set of contrast issues in light mode
     :::image-end:::
     
-1.  In DevTools, select the **Elements** tool, and then select `Ctrl`+`F` on Windows/Linux, or `Command+F` on macOS.  The **Find** textbox appears, to search within the HTML DOM tree.
+1.  In DevTools, select the **Elements** tool, and then select **Ctrl+F** on Windows/Linux or **Command+F** on macOS.  The **Find** textbox appears, to search within the HTML DOM tree.
  
 1.  Enter `scheme`.  The following CSS media queries are found:
 
@@ -660,9 +686,9 @@ In the accessibility-testing demo webpage, the different donation states use col
 
 But you can't expect all of your users to experience these colors as intended.  By using the **Emulate vision deficiencies** feature of the **Rendering** tool, you can find out that this design is not good enough, because you can simulate how people with different vision would perceive your design.
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
-1.  Press `Esc` to open the Drawer at the bottom of DevTools.  Select the `+` icon at the top of the drawer to see the list of tools, and then select **Rendering**.  The Rendering tool appears.
+1.  Select **Esc** to open the Drawer at the bottom of DevTools.  Select the **+** icon at the top of the Drawer to see the list of tools, and then select **Rendering**.  The Rendering tool appears.
 
 1.  In the **Emulate vision deficiencies** dropdown list, select **Protanopia**.  _Protanopia_ is reduced sensitivity to red light, making it hard to differentiate green, red, and yellow.
 
@@ -680,9 +706,9 @@ For more information, see [vision deficiencies emulation][DevToolsVisionDeficien
 
 To simulate blurred vision, in the **Rendering** tool, use the **Emulate vision deficiencies** menu.  When you this feature with the accessibility-testing demo webpage, you can see that the drop shadow on the text in the upper menu makes it hard to read the menu items.
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
-1.  Press `Esc` to open the Drawer at the bottom of DevTools.  Select the `+` icon at the top of the drawer to see the list of tools, and then select **Rendering**.  The Rendering tool appears.
+1.  Select **Esc** to open the Drawer at the bottom of DevTools.  Select the **+** icon at the top of the Drawer to see the list of tools, and then select **Rendering**.  The Rendering tool appears.
 
 1.  In the **Emulate vision deficiencies** dropdown list, select **Blurred vision**.
 
@@ -704,11 +730,11 @@ In the accessibility-testing demo webpage, when you turn off animations in the o
 
 To check whether the page is usable with animations turned off:
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select `F12` to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  At the top of DevTools, select the **Sources** tool, and then in the **Navigation** pane on the left, select `styles.css`.  The CSS file appears in the **Editor** pane.
 
-1.  Press `Ctrl`+`F` on Windows/Linux, or `Command`+`F` on macOS and then enter `@media`.  The CSS media query appears.
+1.  Select **Ctrl+F** on Windows/Linux or **Command+F** on macOS, and then enter `@media`.  The CSS media query appears.
 
     ```css
     @media (prefers-reduced-motion: no-preference) {
@@ -720,7 +746,7 @@ To check whether the page is usable with animations turned off:
 
     Next, emulate the operating system setting to reduce animation, as follows.
 
-1.  Press `Esc` to open the Drawer at the bottom of DevTools.  Select the `+` icon at the top of the drawer to see the list of tools, and then select **Rendering**.  The Rendering tool appears.
+1.  Select **Esc** to open the Drawer at the bottom of DevTools.  Select the **+** button at the top of the Drawer to see the list of tools, and then select **Rendering**.  The Rendering tool appears.
 
 1.  In the **Emulate CSS media feature prefers-reduced-motion** dropdown list, select **prefers-reduced-motion: reduced**.
 
@@ -734,7 +760,7 @@ To check whether the page is usable with animations turned off:
    
 The accessibility-testing demo webpage still runs other animations, even with the above media query and emulation setting:
 *  Animation of the blue menu items when you hover over them.
-*  Animation of the circles on the `More` links when you hover over them.
+*  Animation of the circles on the **More** links when you hover over them.
 
 These two accessibility issues also need to be fixed in the demo page, regarding animation.
 
@@ -790,6 +816,7 @@ We're constantly working on new accessibility features for DevTools.  If there i
 <!-- links -->
 [AccessibilityTest]: ../../accessibility/test.md "Accessibility testing | Microsoft Docs"
 [DevtoolsAccessibilityReference]: reference.md "Accessibility reference | Microsoft Docs"
+[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference | Microsoft Docs"
 [DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Dark or Light Color Scheme simulation | Microsoft Docs"
 [DevToolsIssuesTool]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"
 [DevToolsReducedMotion]: ./reduced-motion-simulation.md "Reduced motion simulation | Microsoft Docs"
