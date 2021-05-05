@@ -816,7 +816,7 @@ We're constantly working on new accessibility features for DevTools.  If there i
 <!-- links -->
 [AccessibilityTest]: ../../accessibility/test.md "Accessibility testing | Microsoft Docs"
 [DevtoolsAccessibilityReference]: reference.md "Accessibility reference | Microsoft Docs"
-[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference | Microsoft Docs"
+[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-panel "The Accessibility panel - Accessibility Reference | Microsoft Docs"
 [DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Dark or Light Color Scheme simulation | Microsoft Docs"
 [DevToolsIssuesTool]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"
 [DevToolsReducedMotion]: ./reduced-motion-simulation.md "Reduced motion simulation | Microsoft Docs"
