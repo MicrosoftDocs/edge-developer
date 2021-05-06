@@ -3,7 +3,7 @@ description: Wavy underlines highlight code issues in the Elements tool, Service
 title: What's new in DevTools (Microsoft Edge 91)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/26/2021
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -186,8 +186,6 @@ Refresh the webpage.  Expand the **Scope** section in the debugger pane.  The ne
 
 To learn more about debugging in the **Sources** tool, navigate to [Using the Debugger pane to debug JavaScript code][DevtoolsSourcesUsingDebuggerPaneToDebugJavascriptCode].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1166577][CR1166577].  
 
-[DevtoolsSourcesUsingDebuggerPaneToDebugJavascriptCode]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/sources/#using-the-debugger-pane-to-debug-javascript-code "Using the Debugger pane to debug JavaScript code - Sources tool overview | Microsoft Docs"  
-
 :::image type="complex" source="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png" alt-text="Memory Inspector tool" lightbox="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png":::
    **Memory inspector** tool  
 :::image-end:::  
@@ -212,12 +210,12 @@ To display \(or hide\) the badges, choose \(or remove\) the checkbox next to the
 
 Image previews in the DevTools have been enhanced to display more information, including the following details.  
 
-*   rendered size  
-*   rendered aspect ratio  
-*   intrinsic size  
-*   intrinsic aspect ratio  
-*   file size. 
-     
+*   Rendered size  
+*   Rendered aspect ratio  
+*   Intrinsic size  
+*   Intrinsic aspect ratio  
+*   File size  
+    
 The  information helps you better understand your images and apply optimization.  The image aspect ratio information is also available in the **Network** tool, when you choose an image preview.  
 
 :::row:::
@@ -246,10 +244,6 @@ To review the history of this feature in the Chromium open-source project, navig
 ### New options to configure Content-Encodings in the Network conditions tool 
 
 In the **Network** tool, choose the new **More network conditions...** button next to the **Throttling** dropdown menu to open the **Network conditions** tool.  To test if server responses are correctly encoded for browsers that don't support [gzip][GnuSoftwareGzipManual], [brotli][BrotliMain], or another future `Content-Encoding`, complete the following actions.  
-
-[GnuSoftwareGzipManual]: https://www.gnu.org/software/gzip/manual "gzip: the data compression program | GNU Operating System"  
-[BrotliMain]: https://www.brotli.org "Brotli"  
-
 
 1.  Open the **Network conditions** tool
 1.  Navigate to **Accepted Content-Encodings**. 
@@ -287,11 +281,8 @@ The autocomplete UI of the **Styles** pane now detects the `accent-color` CSS ke
 
 ### Display details about blocked features in the Frame details view  
 
-Permissions Policy is a web platform API which gives a website the ability to allow or block the use of browser features in an individual frame or in an `iframe` that it embeds. 
+Permissions Policy is a web platform API that gives a website the ability to allow or block the use of browser features in an individual frame or in an `iframe` that it embeds. 
  For more information, navigate to [Permissions Policy Explainer] [GithubW3cWebappsecPermissionsPolicyPermissionsPolicyExplainerMd].  To display the details on why a feature is blocked, complete the following actions.  
-
-[GithubW3cWebappsecPermissionsPolicyPermissionsPolicyExplainerMd]: https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md "Permissions Policy Explainer | GitHub"  
-
 
 1.  Navigate to [OOPIF Permissions Policy][GlitchPermissionPolicyDemoMain].  
 1.  Navigate to the **Application** tool.  
@@ -339,42 +330,33 @@ DevTools now support the new [Private brand checks a.k.a. #foo in obj][V8DevFeat
     
 To review the history of this feature in the Chromium open-source project, navigate to Issue [11374][CR11374].  
 
-<!--  
-:::image type="complex" source="../../media/2021/04/dPDCek3EhZgLQPGtEG3y0fTn4v82/RCw19qd1bZOeNFydsUCW.msft.png" alt-text="JavaScript private brand checks" lightbox="../../media/2021/04/dPDCek3EhZgLQPGtEG3y0fTn4v82/RCw19qd1bZOeNFydsUCW.msft.png":::
+:::image type="complex" source="../../media/2021/04/sources-page-pen-js-breakpoint-scope-script-dog.msft.png" alt-text="JavaScript private brand checks" lightbox="../../media/2021/04/sources-page-pen-js-breakpoint-scope-script-dog.msft.png":::
    JavaScript private brand checks  
 :::image-end:::  
--->  
 
 #### Enhanced support for breakpoints debugging  
 
-Modern JavaScript bundlers like [Webpack][WebpackJsMain], and [Rollup][RollupjsMain] support code splitting.  To learn more about code splitting, navigate to [Code splitting][JsWebpackGuidesCodeSplittingTextThereAreThreeGeneralApproachesToCodeSplittingSplitCodeViaInlineFunctionCallsWithinModules].  In Microsoft Edge version 90 or earlier, DevTools could only set breakpoints in one bundle.  In Microsoft Edge version 91 or later, DevTools is able to properly set breakpoints in multiple bundles when debugging a shared component.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1142705][CR1142705], [979000][CR979000], and [1180794][CR1180794].  
-
-[JsWebpackGuidesCodeSplittingTextThereAreThreeGeneralApproachesToCodeSplittingSplitCodeViaInlineFunctionCallsWithinModules]: https://webpack.js.org/guides/code-splitting/#:~:text=There%20are%20three%20general%20approaches%20to%20code%20splitting,Split%20code%20via%20inline%20function%20calls%20within%20modules. "There are three general approaches to code splitting available:  Entry Points:  Manually split code using entry configuration.  Prevent Duplication:  Use Entry dependencies or SplitChunksPlugin to dedupe and split chunks.  Dynamic Imports:  Split code via inline function calls within modules. - Code Splitting | webpack"  
-
+Modern JavaScript bundlers like [Webpack][WebpackJsMain], and [Rollup][RollupjsMain] support code splitting.  To learn more about code splitting, navigate to [Code splitting][JsWebpackGuidesCodeSplittingTextThereAreThreeGeneralApproachesToCodeSplittingSplitCodeViaInlineFunctionCallsWithinModules].  In Microsoft Edge version 90 or earlier, DevTools only set breakpoints in a single bundle.  In Microsoft Edge version 91 or later, DevTools properly sets breakpoints in multiple bundles when you debug a shared component.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1142705][CR1142705], [979000][CR979000], and [1180794][CR1180794].  
 
 #### Support hover preview with bracket notation  
 
 DevTools now support hover preview on JavaScript member expressions that use the `[]` notation in the **Sources** tool.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1178305][CR1178305].  
 
-<!--  
-:::image type="complex" source="../../media/2021/04/dPDCek3EhZgLQPGtEG3y0fTn4v82/XFxlQjvLVWJUiV24zDw2.msft.png" alt-text="Support hover preview with [] notation" lightbox="../../media/2021/04/dPDCek3EhZgLQPGtEG3y0fTn4v82/XFxlQjvLVWJUiV24zDw2.msft.png":::
+:::image type="complex" source="../../media/2021/04/sources-page-pen.js-breakpoint-arr-i-a.msft.png" alt-text="Support hover preview with [] notation" lightbox="../../media/2021/04/sources-page-pen.js-breakpoint-arr-i-a.msft.png":::
    Support hover preview with `[]` notation  
 :::image-end:::  
--->  
 
 #### Improved outline of HTML files  
 
 DevTools now has better outline support for `.html` files.  In the **Sources** tool, open the `.html` file.  To turn on \(or off\) the code outline, select `Ctrl`+`Shift`+`O` on Windows/Linux or `Cmd`+`Shift`+`O` on macOS.  In the following figure, DevTools now correctly list all functions in the outline.  Previously, DevTools only displayed some of the functions.  To review the history of this feature in the Chromium open-source project, navigate to Issues [761019][CR761019] and [1191465][CR1191465].  
 
-:::image type="complex" source="../../media/2021/04/sources-pages-html-code-outline.msft.png" alt-text=" Improved outline of HTML files" lightbox="../../media/2021/04/sources-pages-html-code-outline.msft.png":::
+:::image type="complex" source="../../media/2021/04/sources-page-jobobbx-at.msft.png" alt-text=" Improved outline of HTML files" lightbox="../../media/2021/04/sources-page-jobobbx-at.msft.png":::
    Improved outline of HTML files  
 :::image-end:::  
 
 #### Proper error stack traces for Wasm debugging  
 
 In Microsoft Edge version 90 or earlier, DevTools only displayed generic Wasm references in Error stack traces.  In Microsoft Edge version 91 or later, DevTools resolves inline function requests and displays the source location in Error stack traces for Wasm debugging.  To learn more about Error stack traces in the **Console**, navigate to [error][DevtoolsConsoleApiError].  
-
-[DevtoolsConsoleApiError]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/api#error "error - Console API reference | Microsoft Docs"  
 
 In Microsoft Edge version 91 or later, DevTools resolves inline function requests and displays proper error stack traces for Wasm debugging.  
 
@@ -388,14 +370,14 @@ In Microsoft Edge version 91 or later, DevTools resolves inline function request
 :::row-end:::  
 :::row:::
    :::column span="":::
-      <!--  :::image type="complex" source="../../media/2021/04/dPDCek3EhZgLQPGtEG3y0fTn4v82/rIngYpWX5CrxGhmtIL1L.msft.png" alt-text="Previous error stack traces for Wasm debugging" lightbox="../../media/2021/04/dPDCek3EhZgLQPGtEG3y0fTn4v82/rIngYpWX5CrxGhmtIL1L.msft.png":::
+      :::image type="complex" source="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error-old.msft.png" alt-text="Previous error stack traces for Wasm debugging" lightbox="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error-old.msft.png":::
          Proper error stack traces for Wasm debugging  
-      :::image-end:::  -->  
+      :::image-end:::  
    :::column-end:::
    :::column span="":::
-      <!--:::image type="complex" source="../../media/2021/04/dPDCek3EhZgLQPGtEG3y0fTn4v82/rIngYpWX5CrxGhmtIL1L.msft.png" alt-text="Proper error stack traces for Wasm debugging" lightbox="../../media/2021/04/dPDCek3EhZgLQPGtEG3y0fTn4v82/rIngYpWX5CrxGhmtIL1L.msft.png":::
+      :::image type="complex" source="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png" alt-text="Proper error stack traces for Wasm debugging" lightbox="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png":::
          Proper error stack traces for Wasm debugging  
-      :::image-end:::  -->  
+      :::image-end:::  
    :::column-end:::
 :::row-end:::  
 
@@ -416,10 +398,14 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]: ../../2020/11/devtools.md#css-variable-definitions-in-styles-pane "CSS variable definitions in Styles pane - What's New in DevTools (Microsoft Edge 88) | Microsoft Docs"  
 [DevtoolsWhatsNew202102Devtools]: ../02/devtools.md "What's New In DevTools (Microsoft Edge 90) | Microsoft Docs"  
 [DevtoolsWhatsNew202102DevtoolsGroupToolsTogetherInFocusMode]: ../02/devtools.md#group-tools-together-in-focus-mode "Group tools together in Focus Mode - What's New In DevTools (Microsoft Edge 90) | Microsoft Docs"  
+
 [DevtoolsCommandMenuIndexOpenCommandMenu]: ../../../command-menu/index.md#open-the-command-menu "Open the Command Menu - Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"  
+[DevtoolsConsoleApiError]: ../../../console/api.md#error "error - Console API reference | Microsoft Docs"  
 [DevtoolsCustomizeLocalization]: ../../../customize/localization.md "Change DevTools language settings | Microsoft Docs"  
 [DevtoolsIssuesIndex]: ../../../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
 [DevtoolsServiceWorkerIndex]: ../../../service-workers/index.md "Service Worker improvements | Microsoft Docs"  
+[DevtoolsSourcesUsingDebuggerPaneToDebugJavascriptCode]: ../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code "Using the Debugger pane to debug JavaScript code - Sources tool overview | Microsoft Docs"  
+
 [ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]: ../../../../progressive-web-apps-chromium/serviceworker.md#the-service-worker-lifecycle "The Service Worker lifecycle - Use Service Workers to manage network requests and push notifications | Microsoft Docs"  
 [ProgressiveWebAppsWebappmanifests]: ../../../../progressive-web-apps-chromium/webappmanifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"  
 
@@ -432,6 +418,8 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 [VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code | Visual Studio Marketplace"  
 [VisualstudioMarketplaceMsjsdiagDebuggerForEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Debugger for Microsoft Edge | Visual Studio Marketplace"  
+
+[BrotliMain]: https://www.brotli.org "Brotli"  
 
 [ChromestatusFeature4752739957473280]: https://chromestatus.com/feature/4752739957473280 "Feature: accent-color CSS property | Chrome Platform Status"  
 
@@ -470,7 +458,11 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 [GlitchPermissionPolicyDemoMain]: http://permission-policy-demo.glitch.me "OOPIF Permissions Policy | Glitch"  
 
+[GnuSoftwareGzipManual]: https://www.gnu.org/software/gzip/manual "gzip: the data compression program | GNU Operating System"  
+
 [HttpwgSpecsRfc7231HtmlHeaderVary]: https://httpwg.org/specs/rfc7231.html#header.vary "Vary - Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content | IETF HTTP Working Group"  
+
+[JsWebpackGuidesCodeSplittingTextThereAreThreeGeneralApproachesToCodeSplittingSplitCodeViaInlineFunctionCallsWithinModules]: https://webpack.js.org/guides/code-splitting/#:~:text=There%20are%20three%20general%20approaches%20to%20code%20splitting,Split%20code%20via%20inline%20function%20calls%20within%20modules. "There are three general approaches to code splitting available:  Entry Points:  Manually split code using entry configuration.  Prevent Duplication:  Use Entry dependencies or SplitChunksPlugin to dedupe and split chunks.  Dynamic Imports:  Split code via inline function calls within modules. - Code Splitting | webpack"  
 
 [MdnDocsWebCssUsingCssCustomProperties]: https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties "Using CSS custom properties (variables) | MDN"  
 
