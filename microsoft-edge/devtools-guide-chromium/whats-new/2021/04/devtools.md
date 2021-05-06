@@ -314,7 +314,7 @@ Use the new `Vary Header` column in the **Cache Storage** pane to display the [V
 
 #### Support for new JavaScript features  
 
-DevTools now support the new [Private brand checks a.k.a. #foo in obj][V8DevFeaturesPrivateBrandChecks] JavaScript language feature, a.k.a `#foo in obj`.  The private brand checks feature extends the [in operator][MdnDocsWebJavascriptReferenceOperatorsIn] to support the [Private class fields][V8DevFeaturesClassFieldsPrivateClassFields] to test on a specific object.  Try it in the **Console** and **Sources** tools.  Also, to inspect the private fields, complete the following actions.  
+DevTools now support the new [Private brand checks a.k.a. #foo in obj][V8DevFeaturesPrivateBrandChecks] JavaScript language feature.  The private brand checks feature extends the [in operator][MdnDocsWebJavascriptReferenceOperatorsIn] to support [Private class fields][V8DevFeaturesClassFieldsPrivateClassFields] on a specific object.  Try it in the **Console** and **Sources** tools.  Also, to inspect the private fields, complete the following actions.  
 
 1.  Navigate to **debugger** pane.  
 1.  Navigate to the **Scope** section.  
