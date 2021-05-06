@@ -331,7 +331,7 @@ To review the history of this feature in the Chromium open-source project, navig
 
 In Microsoft Edge version 90 or earlier, DevTools only set breakpoints on one raw location.  In Microsoft Edge version 91 or later, DevTools properly set breakpoints in multiple scripts.  This feature is a modern support code splitting feature.  Multiple routes may include one shared component and are named code splits.  JavaScript bundlers include [Webpack][WebpackJsMain], and [Rollup][RollupjsMain].  In Microsoft Edge version 91 or later, DevTools sets breakpoints in all relevant locations correctly.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1142705][CR1142705], [979000][CR979000], and [1180794][CR1180794].  
 
-#### Support hover preview with [] notation  
+#### Support hover preview with bracket notation  
 
 DevTools now support hover preview on JavaScript member expressions that use the `[]` notation in the **Sources** tool.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1178305][CR1178305].  
 
