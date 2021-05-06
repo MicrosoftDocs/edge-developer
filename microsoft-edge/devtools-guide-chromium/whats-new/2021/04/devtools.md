@@ -372,7 +372,10 @@ DevTools now has better outline support for `.html` files.  In the **Sources** t
 
 #### Proper error stack traces for Wasm debugging  
 
-In Microsoft Edge version 90 or earlier, DevTools only displayed generic Wasm references in the Error stack traces.  
+In Microsoft Edge version 90 or earlier, DevTools only displayed generic Wasm references in Error stack traces.  In Microsoft Edge version 91 or later, DevTools resolves inline function requests and displays the source location in Error stack traces for Wasm debugging.  To learn more about Error stack traces in the **Console**, navigate to [error][DevtoolsConsoleApiError].  
+
+[DevtoolsConsoleApiError]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/api#error "error - Console API reference | Microsoft Docs"  
+
 In Microsoft Edge version 91 or later, DevTools resolves inline function requests and displays proper error stack traces for Wasm debugging.  
 
 :::row:::
