@@ -347,7 +347,10 @@ To review the history of this feature in the Chromium open-source project, navig
 
 #### Enhanced support for breakpoints debugging  
 
-In Microsoft Edge version 90 or earlier, DevTools only set breakpoints on one raw location.  In Microsoft Edge version 91 or later, DevTools properly set breakpoints in multiple scripts.  This feature is a modern support code splitting feature.  Multiple routes may include one shared component and are named code splits.  JavaScript bundlers include [Webpack][WebpackJsMain], and [Rollup][RollupjsMain].  In Microsoft Edge version 91 or later, DevTools sets breakpoints in all relevant locations correctly.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1142705][CR1142705], [979000][CR979000], and [1180794][CR1180794].  
+Modern JavaScript bundlers like [Webpack][WebpackJsMain], and [Rollup][RollupjsMain] support code splitting.  To learn more about code splitting, navigate to [Code splitting][JsWebpackGuidesCodeSplittingTextThereAreThreeGeneralApproachesToCodeSplittingSplitCodeViaInlineFunctionCallsWithinModules].  In Microsoft Edge version 90 or earlier, DevTools could only set breakpoints in one bundle.  In Microsoft Edge version 91 or later, DevTools is able to properly set breakpoints in multiple bundles when debugging a shared component.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1142705][CR1142705], [979000][CR979000], and [1180794][CR1180794].  
+
+[JsWebpackGuidesCodeSplittingTextThereAreThreeGeneralApproachesToCodeSplittingSplitCodeViaInlineFunctionCallsWithinModules]: https://webpack.js.org/guides/code-splitting/#:~:text=There%20are%20three%20general%20approaches%20to%20code%20splitting,Split%20code%20via%20inline%20function%20calls%20within%20modules. "There are three general approaches to code splitting available:  Entry Points:  Manually split code using entry configuration.  Prevent Duplication:  Use Entry dependencies or SplitChunksPlugin to dedupe and split chunks.  Dynamic Imports:  Split code via inline function calls within modules. - Code Splitting | webpack"  
+
 
 #### Support hover preview with bracket notation  
 
