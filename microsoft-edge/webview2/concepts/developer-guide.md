@@ -3,7 +3,7 @@ description: Learn about development best practices to use when developing your 
 title: WebView2 development best practices  
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/05/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview

@@ -3,7 +3,7 @@ description: Host web content in your Win32, .NET, UWP apps with the Microsoft E
 title: Microsoft Edge WebView2 Control
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/05/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview

@@ -3,7 +3,7 @@ description: Learn how to statically link the WebView2 loader library.
 title: How to statically link the WebView2 loader library
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/05/2021
+ms.date: 05/06/2021
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview

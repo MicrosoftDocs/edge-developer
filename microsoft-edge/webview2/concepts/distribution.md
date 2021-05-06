@@ -3,7 +3,7 @@ description: Distribution options when releasing an app using Microsoft Edge Web
 title: Distribution of Microsoft Edge WebView2 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/23/2020
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview

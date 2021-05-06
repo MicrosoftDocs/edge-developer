@@ -3,7 +3,7 @@ description: Learn how to use the Chrome DevTools Protocol in your WebView2 apps
 title: Use Chrome DevTools Protocol in WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/05/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview

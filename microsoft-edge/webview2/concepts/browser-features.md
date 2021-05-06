@@ -3,7 +3,7 @@ description: Feature differences between Microsoft Edge and WebView2
 title: Feature differences between Microsoft Edge and WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/05/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview

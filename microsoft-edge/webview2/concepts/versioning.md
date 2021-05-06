@@ -3,7 +3,7 @@ description: Version Models used for Microsoft Edge WebView2
 title: Understand WebView2 SDK versions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/17/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
