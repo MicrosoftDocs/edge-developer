@@ -291,7 +291,8 @@ The Permissions Policy is a web platform API.  The Permissions Policy gives a we
 
 ### Filter experiments in the Experiments setting  
 
-Find experiments quicker with the new experiment filter.  For example, to filter all the experiments with the `issues` term, complete the following actions.  
+Find experiments quicker with the new experiment filter.  For example, to turn on new experiments for code issues, complete the following actions.
+``
 
 1.  Navigate to **Settings** > **Experiments**.  
 1.  Navigate to the **Filter** textbox.  
