@@ -184,7 +184,9 @@ Use the new **Memory Inspector** tool to inspect an `ArrayBuffer` in JavaScript 
 Open the [Memory in JS][GlitchMemoryInspectorDemoJsHtml] demo webpage.  In the **Sources** tool, open the `memory-write-wasm` file, and set a breakpoint at line `0x03c`.
 Refresh the webpage.  Expand the **Scope** section in the debugger pane.  The new icon is displayed next to the **buffer** value.  Choose it to open the new **Memory Inspector** tool.  
 
-Try the [Memory in Wasm][GlitchMemoryInspectorDemoWasmHtml] for Wasm memory inspection.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1166577][CR1166577].  
+To learn more about debugging in the **Sources** tool, navigate to [Using the Debugger pane to debug JavaScript code][DevtoolsSourcesUsingDebuggerPaneToDebugJavascriptCode].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1166577][CR1166577].  
+
+[DevtoolsSourcesUsingDebuggerPaneToDebugJavascriptCode]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/sources/#using-the-debugger-pane-to-debug-javascript-code "Using the Debugger pane to debug JavaScript code - Sources tool overview | Microsoft Docs"  
 
 :::image type="complex" source="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png" alt-text="Memory Inspector tool" lightbox="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png":::
    **Memory inspector** tool  
