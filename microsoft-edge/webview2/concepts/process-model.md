@@ -69,7 +69,7 @@ All processes associated with the browser process of your WebView2 are displayed
 
 <!-- links -->  
 
-[Webview2IndexGetStarted]: ../index.md#getting-started "Get started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2IndexGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 Class | Microsoft Docs"  

@@ -121,7 +121,7 @@ Now add code to remove the contextual menu functionality from the WebView2 contr
 
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"  
 [Webview2GetStartedWpf]: ../get-started/wpf.md "Get started with WebView2 in WPF (Preview) | Microsoft Docs"  
-[Webview2MainGetStarted]: ../index.md#getting-started "Get started - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
+[Webview2MainGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 [Webview2MainNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 
 [Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated]: /microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated "AddScriptToExecuteOnDocumentCreated - 0.9.579 - interface ICoreWebView2 | Microsoft Docs"  

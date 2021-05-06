@@ -160,7 +160,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
 To build and run the app, select `F5`.  Now you have a WebView window displaying the Bing page.  
 
-:::image type="complex" source="../media/bing-window.png" alt-text="Bing window" lightbox="./media/bing-window.png":::
+:::image type="complex" source="../media/bing-window.png" alt-text="Bing window" lightbox="../media/bing-window.png":::
    Bing window  
 :::image-end:::    
 
