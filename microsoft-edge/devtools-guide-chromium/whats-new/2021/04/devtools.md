@@ -245,7 +245,11 @@ To review the history of this feature in the Chromium open-source project, navig
 
 ### New options to configure Content-Encodings in the Network conditions tool 
 
-In the **Network** tool, a new **More network conditions...** button next to the **Throttling** dropdown menu.  To open the **Network conditions** tool, choose the **More network conditions...** button.  To test if server responses are encoded correctly for browsers that don't support gzip, brotli, or another future `Content-Encoding`, complete the following actions.  
+In the **Network** tool, choose the new **More network conditions...** button next to the **Throttling** dropdown menu to open the **Network conditions** tool.  To test if server responses are correctly encoded for browsers that don't support [gzip][GnuSoftwareGzipManual], [brotli][BrotliMain], or another future `Content-Encoding`, complete the following actions.  
+
+[GnuSoftwareGzipManual]: https://www.gnu.org/software/gzip/manual "gzip: the data compression program | GNU Operating System"  
+[BrotliMain]: https://www.brotli.org "Brotli"  
+
 
 1.  Open the **Network conditions** tool
 1.  Navigate to **Accepted Content-Encodings**. 
