@@ -287,7 +287,11 @@ The autocomplete UI of the **Styles** pane now detects the `accent-color` CSS ke
 
 ### Display details about blocked features in the Frame details view  
 
-Now, You may display details about blocked features in the **Permissions policy** section.  To display the details on why the feature is blocked, complete the following actions.  
+Permissions Policy is a web platform API which gives a website the ability to allow or block the use of browser features in an individual frame or in an `iframe` that it embeds. 
+ For more information, navigate to [Permissions Policy Explainer] [GithubW3cWebappsecPermissionsPolicyPermissionsPolicyExplainerMd].  To display the details on why a feature is blocked, complete the following actions.  
+
+[GithubW3cWebappsecPermissionsPolicyPermissionsPolicyExplainerMd]: https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md "Permissions Policy Explainer | GitHub"  
+
 
 1.  Navigate to [OOPIF Permissions Policy][GlitchPermissionPolicyDemoMain].  
 1.  Navigate to the **Application** tool.  
