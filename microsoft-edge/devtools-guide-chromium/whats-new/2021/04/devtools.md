@@ -233,7 +233,7 @@ The enhanced image preview displays more information.  The more information incl
 
 To review the history of this feature in the Chromium open-source project, navigate to Issues [1149832][CR1149832] and [1170656][CR1170656].  
 
-### New network conditions button with options to configure Content-Encodings  
+### New options to configure Content-Encodings in the Network conditions tool 
 
 In the **Network** tool, a new **More network conditions...** button next to the **Throttling** dropdown menu.  To open the **Network conditions** tool, choose the **More network conditions...** button.  To test if server responses are encoded correctly for browsers that don't support gzip, brotli, or another future `Content-Encoding`, complete the following actions.  
 
