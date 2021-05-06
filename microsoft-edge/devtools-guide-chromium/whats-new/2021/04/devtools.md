@@ -181,7 +181,7 @@ You may now toggle the `scroll-snap` badge in the **Elements** tool to inspect t
 ### New Memory Inspector tool  
 
 Use the new **Memory Inspector** tool to inspect an `ArrayBuffer` in JavaScript and Wasm memory.  
-Open the [Memory in JS][GlitchMemoryInspectorDemoJsHtml].  In the **Sources** tool, open the `memory-write-wasm` file, and set a breakpoint at line `0x03c`.
+Open the [Memory in JS][GlitchMemoryInspectorDemoJsHtml] demo webpage.  In the **Sources** tool, open the `memory-write-wasm` file, and set a breakpoint at line `0x03c`.
 Refresh the webpage.  Expand the **Scope** section in the debugger pane.  The new icon is displayed next to the **buffer** value.  Choose it to open the new **Memory Inspector** tool.  
 
 Try the [Memory in Wasm][GlitchMemoryInspectorDemoWasmHtml] for Wasm memory inspection.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1166577][CR1166577].  
