@@ -381,7 +381,7 @@
       items:
         - name: WebView2 overview
           href: webview2/index.md
-        - name: Getting started
+        - name: Get started
           items:
             - name: Win32
               href: webview2/get-started/win32.md
