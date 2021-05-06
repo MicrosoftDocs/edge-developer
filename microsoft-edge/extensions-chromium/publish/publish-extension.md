@@ -3,7 +3,7 @@ description: Publish Microsoft Edge (Chromium) extensions to Microsoft Edge Add-
 title: Publish your extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
@@ -71,14 +71,14 @@ Select **Save** to continue to the **Properties** section.
 
 ## Step 4: Select Properties for your extension  
 
-On the **Properties webpage**, enter the following information to specify properties of your extension.  The properties are displayed to users in the Microsoft Edge Add-ons store.  
+On the **Properties** webpage, enter the following information to specify properties of your extension.  The properties are displayed to users in the Microsoft Edge Add-ons store.  
 
 | Extension property name | Description |  
 |:--- |:--- |  
 | Category \(required\) | The category that best describes your extension.  Listing your extension in the right category helps users find your extension easily and understand more about it.  |  
 | Privacy policy requirements \(required\) | Indicate if your extension accesses, collects, or transmits any personal information.  Your extension may fail the certification step if you choose **Yes** and you don't provide a `Privacy policy URL`.  |  
 | Privacy policy URL | A valid privacy policy URL to communicate how your extension follows privacy laws and regulations.  You're responsible for ensuring your extension follows privacy laws and regulations.  You're also responsible for providing a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension.  To determine if your extension requires a privacy policy, navigate to [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement] and [Microsoft Edge Add-ons store developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |  
-| Website URL | A web webpage that provides additional information about your extension.  The `Website URL` must point to a webpage on your own website, not the web listing for your extension in the Microsoft Edge Add-ons store.  The `Website URL` helps users learn more about your extension, its features, and any other relevant information.  |  
+| Website URL | A webpage that provides additional information about your extension.  The `Website URL` must point to a webpage on your own website, not the web listing for your extension in the Microsoft Edge Add-ons store.  The `Website URL` helps users learn more about your extension, its features, and any other relevant information.  |  
 | Support contact details | The URL to your support webpage, or the email address to contact your support team.  |  
 | Mature content | Checkbox to specify if your extension includes mature content.  Extension rating helps determine the appropriate age group of the target audience of your extension.  To help determine if your extension has mature content, navigate to [Microsoft Edge Add-ons store developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |  
 
@@ -107,7 +107,7 @@ The information provided in the following section is displayed to users who revi
 | Large promotional tile \(optional\) | `Large promotion tiles` are used in the store to feature extensions more prominently in the Microsoft Edge add-ons website.  The images, if submitted, are visible to the users.  The size of the PNG files must be 1400 x 560 pixels.  Additionally, you may choose to copy the asset from one language to all other languages using the duplicate button.  The button is found following the field after you upload a promotional tile for the language.  |  
 | YouTube video URL \(optional\) | You may include a promotional YouTube video of your extension.  The `YouTube video URL` video is displayed on the store listing webpage of your extension.  |  
 | Short description \(required\) | To edit the `short description`, you must update the description field in your manifest file of your extension package and reupload it.  |  
-| Search terms \(optional\) | `Search terms` are single words or phrases that help discover your extension a user searches in the Microsoft Edge Add-ons store.  The search terms aren't displayed to users.  |  
+| Search terms \(optional\) | `Search terms` are single words or phrases that help discover your extension when a user searches in the Microsoft Edge Add-ons store.  The search terms aren't displayed to users.  |  
 
 ### YouTube video URL requirements  
 
@@ -147,7 +147,7 @@ Ensure you include the following information, as necessary.
 *   If your submission is an update to an existing extension, include information about the changes made to the extension.  
 *   Any additional information that testers must understand about your submission.  
     
-After providing the information, choose **Publish** to submit your extension to the Microsoft Edge Add-ons store.  Your submission proceeds to the certification step.  The certification process may take up to seven business days after your submission.  
+After you provide the information, choose **Publish** to submit your extension to the Microsoft Edge Add-ons store.  Your submission proceeds to the certification step.  The certification process may take up to seven business days after your submission.  
 
 After your submission passes certification, your extension is published in the Microsoft Edge Add-ons store.  The status of your extension in the Partner Center dashboard changes to `In the Store`.  
 
