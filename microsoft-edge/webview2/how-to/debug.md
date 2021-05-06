@@ -3,7 +3,7 @@ description: Learn how to debug WebView2 controls.
 title: Get started debugging WebView2 applications
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/06/2021
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -25,7 +25,7 @@ For more information, navigate to [DevTools overview][DevtoolsGuideChromiumMain]
 
 :::image type="complex" source="./media/f12.png" alt-text="DevTools debugging" lightbox="./media/f12.png":::
    DevTools debugging  
-:::image-end:::  
+:::image-end:::    
 
 ## [Visual Studio](#tab/visualstudio)  
 
@@ -43,7 +43,6 @@ Before you begin, ensure the following requirements are met.
 Install and set up the script debugger tools in Visual Studio.  
 
 1.  Complete the following actions to install the **JavaScript diagnostics** component in **Desktop development with C++**.  
-    
     1.  In the Windows Explorer bar, type `Visual Studio Installer`.  
     1.  Choose **Visual Studio Installer** to open it.  
     1.  In the Visual Studio Installer, on the installed version, choose the **More** button, and then choose **Modify**.  
@@ -58,7 +57,7 @@ Install and set up the script debugger tools in Visual Studio.
     1.  Choose the **JavaScript diagnostics** setting.  
     1.  Choose **Modify**. 
         
-        :::image type="complex" source="./media/indivcomp.png" alt-text="Visual Studio Modifying Individual Components Tab" lightbox="./media/indivcomp.png":::
+        :::image type="complex" source="./media/indiv-comp.png" alt-text="Visual Studio Modifying Individual Components Tab" lightbox="./media/indiv-comp.png":::
            Visual Studio Modifying Individual Components Tab  
         :::image-end:::  
         
@@ -67,7 +66,7 @@ Install and set up the script debugger tools in Visual Studio.
     1.  Under the **Configuration Properties**, choose **Debugging**.  
     1.  Under the **Debugger Type**, choose **JavaScript (WebView2)**.  
         
-        :::image type="complex" source="./media/enbjs.png" alt-text="Visual Studio Debugging Configuration Property" lightbox="./media/enbjs.png":::
+        :::image type="complex" source="./media/enb-js.png" alt-text="Visual Studio Debugging Configuration Property" lightbox="./media/enb-js.png":::
            Visual Studio **Debugging** Configuration Property  
         :::image-end:::  
         
@@ -120,7 +119,7 @@ In Visual Studio Code, complete the following actions to debug your code.
     
 1.  To set a breakpoint in your source code, hover on the line, and select `F9`
     
-    :::image type="complex" source="./media/breakpointvs.png" alt-text="Breakpoint is set in Visual Studio Code" lightbox="./media/breakpointvs.png":::
+    :::image type="complex" source="./media/breakpoint-vs.png" alt-text="Breakpoint is set in Visual Studio Code" lightbox="./media/breakpoint-vs.png":::
        Breakpoint is set in Visual Studio Code  
     :::image-end:::
     
@@ -128,13 +127,13 @@ In Visual Studio Code, complete the following actions to debug your code.
     1.  On the **Run** tab, choose the launch configuration from the dropdown menu.  
     1.  To start debugging your app, choose Start Debugging, which is the green triangle next to the launch configuration drop down.  
         
-        :::image type="complex" source="./media/runvs.png" alt-text=" Visual Studio Code Run tab" lightbox="./media/runvs.png":::
+        :::image type="complex" source="./media/run-vs.png" alt-text=" Visual Studio Code Run tab" lightbox="./media/run-vs.png":::
            Visual Studio Code Run tab  
         :::image-end:::  
         
 1.  Open **Debug Console** to view the debug output and errors.  
     
-    :::image type="complex" source="./media/resultsvs.png" alt-text=" Visual Studio Code Debug Console" lightbox="./media/resultsvs.png":::
+    :::image type="complex" source="./media/results-vs.png" alt-text=" Visual Studio Code Debug Console" lightbox="./media/results-vs.png":::
        Visual Studio Code Debug Console  
     :::image-end:::  
     
@@ -148,7 +147,7 @@ In Visual Studio Code, complete the following actions to debug your code.
     
     1.  Confirm that the `useWebview` parameter is set to `true`.  
     1.  Add the `urlFilter` parameter.  When the WebView2 control navigates to a URL, the `urlFilter` parameter value is used to compare strings that appear in the URL.  
-    
+        
     ```json
     "useWebview": "true",
     "urlFilter": "*index.ts",
@@ -204,7 +203,7 @@ In Visual Studio Code, complete the following actions to debug your code.
                 ,"trace": true  // Turn on  debug tracing, and save the output to a log file.
               ```  
               
-              :::image type="complex" source="./media/tracelog.png" alt-text=" Save debug output to a log file." lightbox="./media/tracelog.png":::
+              :::image type="complex" source="./media/trace-log.png" alt-text=" Save debug output to a log file." lightbox="./media/trace-log.png":::
                  Save debug output to a log file  
               :::image-end:::  
            :::column-end:::
@@ -233,12 +232,12 @@ In Visual Studio Code, complete the following actions to debug your code.
     
     *   The debugger doesn't stop at the breakpoint, and you have debug output.  To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.  The debugger doesn't perform source path mapping.  
     *   You can't attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  For more information, navigate to [additionalBrowserArguments for dotnet][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] and [additionalBrowserArguments for Win32][Webview2ReferenceWin32Webview2IdlParameters].  
-    
+        
 * * *  
 
 ## See also  
 
-*   To get started using WebView2, navigate to [WebView2 Getting Started Guides][Webview2MainGettingStarted].  
+*   To get started using WebView2, navigate to [WebView2 Get Started Guides][Webview2MainGetStarted].  
 *   For a comprehensive example of WebView2 capabilities, navigate to the [WebView2Samples][GithubMicrosoftedgeWebview2samples] repo on GitHub.
 *   For more detailed information about WebView2 APIs, navigate to [API reference][Webview2ApiReference].
 *   For more information about WebView2, navigate to [WebView2 Resources][Webview2MainNextSteps].
@@ -255,6 +254,6 @@ In Visual Studio Code, complete the following actions to debug your code.
 [Webview2ReferenceWin32Webview2IdlParameters]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions  "CreateCoreWebView2Environment - Globals | Microsoft Docs"  
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"  
 [Webview2MainNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
-[Webview2MainGettingStarted]: ../index.md#getting-started "Getting started - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
+[Webview2MainGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
