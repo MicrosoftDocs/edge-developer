@@ -210,7 +210,15 @@ To display \(or hide\) the badges, choose \(or remove\) the checkbox next to the
 
 ### Enhanced image preview with aspect ratio information  
 
-The enhanced image preview displays more information.  The more information includes rendered size, rendered aspect ratio, intrinsic size, intrinsic aspect ratio, and file size.  The information helps you better understand your images and apply optimization.  
+Image previews in the DevTools have been enhanced to display more information, including the following details.  
+
+*   rendered size  
+*   rendered aspect ratio  
+*   intrinsic size  
+*   intrinsic aspect ratio  
+*   file size. 
+     
+The  information helps you better understand your images and apply optimization.  The image aspect ratio information is also available in the **Network** tool, when you choose an image preview.  
 
 :::row:::
    :::column span="":::
