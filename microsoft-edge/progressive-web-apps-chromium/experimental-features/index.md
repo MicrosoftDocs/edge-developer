@@ -479,6 +479,8 @@ body {
 }
 ```  
 
+Chromium-based browsers are testing and shaping this feature. For more information including code examples, navigate to [Customize the window controls overlay of your PWA's title bar](https://web.dev/window-controls-overlay/).
+
 ## Run On OS Login  
 
 This feature allows you to configure your app to automatically launch when the user logs into Microsoft Windows.  Several classes of apps take advantage of the capability.  The classes of apps include email, chat, monitoring dashboard, and real-time data display apps.  The capability allows a user to engage with the apps as soon as the user logs into the OS.  This feature automatically starts the PWA the same way it's launched manually.  
