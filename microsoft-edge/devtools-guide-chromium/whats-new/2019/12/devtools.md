@@ -3,7 +3,7 @@ description: Accessibility improvements, using the DevTools in other languages, 
 title: What's new in DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -211,7 +211,7 @@ Chromium issue [#1004193][CR1004193]
 
 ### Improved WebAssembly debugging  
 
-DevTools has started to support the [DWARF Debugging Standard][DwarfHome], which means increased support for stepping over code, setting breakpoints, and resolving stack traces in your source languages within DevTools.  
+DevTools has started to support the DWARF Debugging Standard, which means increased support for stepping over code, setting breakpoints, and resolving stack traces in your source languages within DevTools.  
 
 <!-- [TODO: Add this link back] -->  
 <!--Check out [Improved WebAssembly debugging in Microsoft Edge DevTools][201912Webassembly] for the full story.  -->  
@@ -343,9 +343,6 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [CR987787]: https://crbug.com/987787 "Dom 3D View | Chromium Bugs"
 
 [AccessibilityInsights]: https://aka.ms/a11yinsights "Accessibility Insights"  
-
-[DwarfHome]: http://dwarfstd.org "Dwarf Home"  
-<!-- this link must be http, not https -->  
 
 [GitHubGoogleChromeDevToolsAuditsPanelThrottling]: https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling "DevTools' Audits Panel Throttling - GoogleChrome/lighthouse | GitHub"  
 [GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "New Issue - MicrosoftDocs/edge-developer"  
