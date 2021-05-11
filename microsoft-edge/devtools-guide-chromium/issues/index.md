@@ -104,6 +104,12 @@ The **Issues** tool in the DevTools Drawer presents warnings in a structured, ag
        `None` value in the **SameSite** column for the `ck02` cookie in the DevTools **Network** tool  
     :::image-end:::  
 
+
+## See also
+
+* [Automatically test a webpage for accessibility issues](../accessibility/accy-test-issues-tool.md)
+
+
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
