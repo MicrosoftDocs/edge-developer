@@ -421,7 +421,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 [DevtoolsWhatsNew85]: ../../2020/06/devtools.md "What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"  
 
-[DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: /microsoft-edge/devtools-guide-chromium/accessibility/reference#view-the-contrast-ratio-of-a-text-element-in-the-color-picker "View the contrast ratio of a text element in the Color Picker - Accessibility reference | Microsoft Docs"  
+[DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: /microsoft-edge/devtools-guide-chromium/accessibility/color-picker.md "Testing text-color contrast using the Color Picker | Microsoft Docs"  
 [DevtoolsCssReferenceChangeCss]: /microsoft-edge/devtools-guide-chromium/css/reference#change-css "Change CSS - CSS reference | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeShortcuts]: microsoft-edge/devtools-guide-chromium/customize/shortcuts "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
