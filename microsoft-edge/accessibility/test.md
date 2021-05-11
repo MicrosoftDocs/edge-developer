@@ -17,9 +17,9 @@ Use the following tools and testing procedures to evaluate your website for acce
 
 #### Accessibility testing in DevTools
 
-*   [Accessibility testing basics][DevtoolsAccessibilityAccessibilitytestingbasics] - Using Microsoft Edge DevTools to test for accessibility problems.
+*   [Accessibility-testing features in DevTools][DevtoolsAccessibilityReference] - An accessibility-testing checklist and which features of DevTools to use for each test.
 
-*   [Accessibility reference][DevtoolsAccessibilityReference] - A comprehensive reference of accessibility features in Microsoft Edge DevTools.
+*   [Overview of accessibility testing using DevTools][DevtoolsAccessibilityAccessibilitytestingindevtools] - A walkthrough of using various DevTools features to test for accessibility problems.
 
 #### [Accessibility Evaluation Resources](https://www.w3.org/WAI/eval/Overview.html)  
 
@@ -55,5 +55,5 @@ A list of web accessibility evaluation tools to help determine if websites meet 
 
 <!-- links: -->
 
-[DevtoolsAccessibilityAccessibilitytestingbasics]: ../devtools-guide-chromium/accessibility/accessibility-testing-basics.md "Accessibility testing basics | Microsoft Docs"
-[DevtoolsAccessibilityReference]: ../devtools-guide-chromium/accessibility/reference.md "Accessibility reference | Microsoft Docs"
+[DevtoolsAccessibilityAccessibilitytestingindevtools]: ../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md "Overview of accessibility testing using DevTools | Microsoft Docs"
+[DevtoolsAccessibilityReference]: ../devtools-guide-chromium/accessibility/reference.md "Accessibility-testing features in DevTools | Microsoft Docs"
