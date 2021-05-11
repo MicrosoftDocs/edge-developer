@@ -37,9 +37,13 @@ Using the [Microsoft Edge DevTools][DevtoolsIndex], you may simulate this reduce
     :::image-end:::  
     
 1.  Refresh the current page to test whether your animations are turned off or visible.  
+
+
+## See also
+
+* [Check that the page is usable with UI animation turned off](accy-test-reduced-ui-motion.md) - A walkthrough using a demo page, with explanations.
+
     
 <!-- links -->  
-
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
-
 [MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "prefers-reduced-motion | MDN"  
