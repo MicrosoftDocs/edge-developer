@@ -34,12 +34,17 @@ Operating systems have a way to display any application in darker or lighter col
        Simulated light mode inside Microsoft Edge DevTools  
     :::image-end:::  
     
-    View and change your CSS like any other web page.  For more information, navigate to [Get Started With Viewing And Changing CSS][DevtoolsCssIndex].  
+    View and change your CSS like any other web page.  For more information, navigate to [Get started with viewing and changing CSS][DevtoolsCssIndex].  
+
+
+## See also
+
+* [Check for contrast issues with dark theme and light theme](accy-test-dark-mode.md)
+
 
 <!-- links -->  
-
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCustomizeDarkTheme]: ../customize/dark-theme.md "Enable Dark Theme In Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
-
+[DevtoolsCssIndex]: ../css/index.md "Get started with viewing and changing CSS | Microsoft Docs"  
+<!-- external links -->
 [MDNPrefersColorScheme]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme "prefers-color-scheme | MDN"  
