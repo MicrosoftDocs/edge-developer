@@ -1,13 +1,14 @@
 ---
-description: A comprehensive reference of accessibility features in Microsoft Edge DevTools.
-title: Accessibility reference
+description: A list of the accessibility-testing features in Microsoft Edge DevTools.
+title: Accessibility-testing features in DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
+<!-- none of the original content remains in this article -->
 <!-- Copyright Kayce Basques 
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,189 +23,46 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Accessibility reference  
+# Accessibility-testing features in DevTools
 
-This page is a comprehensive reference of accessibility features in Microsoft Edge DevTools.  It is intended for web developers who:  
+Construct a list of accessibility aspects to check for your webpages.  Then use DevTools features to check those aspects of accessibility, as follows.
 
-*   Have a basic understanding of DevTools, such as how to open it.  
-*   Are familiar with [accessibility principles and best practices][MDNAccessibility].  
-    
-The purpose of this reference is to help you discover all of the tools available in DevTools that help you examine the accessibility of a page.  
 
-If you are looking for help on navigating DevTools with an assistive technology like a screen reader, navigate to [Navigating Microsoft Edge DevTools With Assistive Technology][DevtoolsAccessibilityNavigation].  
+## Accessibility checklist and related DevTools features
 
-## Overview of accessibility features in Microsoft Edge DevTools  
+| Accessibility check | Feature of DevTools | Article |
+|---|---|---|
+| Check that input fields have labels, for screen readers | **Issues** tool > **Accessibility** section | TBD |
+| Check that images have alt text | **Issues** tool > **Accessibility** section | TBD |
+| Check that text colors have enough contrast | **Issues** tool > **Accessibility** section | TBD |
+| Check that text has adequate color contrast | **Elements** tool > **Styles** tab > **Color Picker** | [Testing text-color contrast using the Color Picker](color-picker.md) |
+| Check text color contrast in the default state by using the Inspect tool's information overlay | **Inspect** tool > **Accessibility** section > **Contrast** row | TBD |
+| Check accessibility during all states of elements, such as contrast during hover | **Elements** tool > **Styles** tab > **Toggle Element State** | TBD |
+| Check that the webpage layout is usable when narrow | **Device Emulation** tool | TBD |
+| Check individual elements for text contrast, screen reader text, and keyboard support | **Inspect** tool > **Accessibility** section of overlay | TBD |
+| Checking the Accessibility Tree for keyboard and screen reader support | **Elements** tool > **Accessibility** tab > **Accessibility Tree** | TBD |
+| TBD | **Elements** tool > **Accessibility** tab | [Testing accessibility using the Accessibility tab](accessibility-tab.md) |
+| Check for contrast issues with dark theme and light theme | **Rendering** tool > **Emulate CSS media feature prefers-color-scheme** | TBD |
+| Check that the webpage is usable by people with color blindness | **Rendering** tool > **Emulate vision deficiencies** dropdown list > **Protanopia** | TBD |
+| Check that the webpage is usable with blurred vision | **Rendering** tool > **Emulate vision deficiencies** dropdown list > **Blurred vision** | TBD |
+| Check that the page is usable with UI animation turned off (reduced motion) | **Rendering** tool > **Emulate CSS media feature prefers-reduced-motion** | TBD |
+| Check various accessibility aspects through an automatic report | Lighthouse | [Testing accessibility using Lighthouse](lighthouse.md) |
 
-This section explains how DevTools fits into your overall accessibility toolkit.  
-
-When determining whether a page is accessible, you need to have 2 general questions in mind:  
-
-1.  Are you able to navigate the page with a keyboard or [screen reader][MDNScreenReader]?  
-
-1.  Are the elements of the page properly marked up for screen readers?
-    
-In general, DevTools should help you fix errors related to question #2, because these errors are easy to detect in an automated fashion.  Question #1 is just as important, but unfortunately DevTools does not help you there.  The only way to find errors related to question #1 is to try using a page with a keyboard or screen reader yourself.  <!--To learn more, navigate to [How To Do An Accessibility Review][AccessibilityReview].  -->  
-
-<!--[AccessibilityReview]: /web/fundamentals/accessibility/how-to-review  -->  
-
-## Audit the accessibility of a page using Lighthouse
-
-> [!NOTE]
-> The **Lighthouse** tool provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.  
-
-Use the Lighthouse tool to determine:
-
-*   Whether a page is properly marked up for screen readers.  
-*   Whether the text elements on a page have sufficient contrast ratios.  Navigate to [View the contrast ratio of a text element in the Color Picker](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
-
-To audit a page:
-
-1.  Navigate to the URL that you want to audit.
-1.  In DevTools, select the **Lighthouse** tool (previously labelled as the **Audits** tool).  DevTools shows you various configuration options.
-    
-    :::image type="complex" source="../media/accessibility-audits-pane.msft.png" alt-text="Configure audits" lightbox="../media/accessibility-audits-pane.msft.png":::
-       Configure audits  
-    :::image-end:::  
-    
-    > [!NOTE]
-    > The screenshots in this section were taken with Microsoft Edge version 79.  You may check what version you are running at `edge://version`.  The general workflow remains the same.  
-    
-1.  For **Device**, choose **Mobile** if you want to simulate a mobile device.  This option changes your user agent string and resizes the viewport.  If the mobile version of the page displays differently than the desktop version, this option may have a significant effect on the results of your audit.  
-1.  In the **Audits** section, make sure that **Accessibility** is enabled.  Disable the other categories if you want to exclude them from your report.  Leave them enabled if you want to discover other ways to improve the quality of your page.  
-1.  The **Throttling** section lets you throttle the network and CPU, which is useful when analyzing load performance.  This option should be irrelevant to your accessibility score, so you may use whatever you prefer.  
-1.  The **Clear Storage** checkbox lets you clear all storage before loading the page, or preserve storage between page loads.  This option is also probably irrelevant to your accessibility score, so you may use whatever you prefer.  
-1.  Choose **Run Audits**. After 10 to 30 seconds, DevTools provides a report.  Your report gives you various tips on how to improve the accessibility of the page.  
-    
-    :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="A report" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
-       A report  
-    :::image-end:::  
-    
-1.  Choose an audit to learn more about it.  
-    
-    :::image type="complex" source="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png" alt-text="More information about an audit" lightbox="../media/accessibility-audits-run-audits-result-issues-expanded.msft.png":::
-       More information about an audit  
-    :::image-end:::  
-    
-1.  Choose **Learn More** to view the documentation of that audit.  
-    
-    :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="View the documentation of an audit" lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
-       View the documentation of an audit  
-    :::image-end:::  
-    
-### See also: aXe extension  
-
-You may prefer to use the [aXe extension][ChromeWebStoreAxe] rather than the **Lighthouse** tool.  
-The aXe extension generally provides the same information, since it is the underlying engine that powers the Lighthouse tool.  The aXe extension has a different UI and describes audits slightly differently.  
-One advantage that the aXe extension has over the Lighthouse tool is that it enables you to inspect and highlight failing nodes.  
-
-:::image type="complex" source="../media/accessibility-devtools-extension-axe-panel.msft.png" alt-text="The aXe extension" lightbox="../media/accessibility-devtools-extension-axe-panel.msft.png":::
-   The aXe extension  
-:::image-end:::  
-
-## The Accessibility panel  
-
-The **Accessibility** panel is where you view the accessibility tree, ARIA attributes, and computed accessibility properties of DOM nodes.  
-
-To open the **Accessibility** panel:  
-
-1.  Select the **Elements** tool.  
-1.  In the **DOM Tree**, select the element which you want to inspect.  
-1.  Select the **Accessibility** tab.  You might need to first select the **More tabs** \(![the More tabs button](../media/more-tabs-icon.msft.png)\) button to the right of the **Styles** tab.
-
-:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspect the h1 element of the DevTools homepage in the Accessibility panel" lightbox="../media/accessibility-elements-accessibility.msft.png":::
-   Inspect the `h1` element of the DevTools homepage in the **Accessibility** panel  
-:::image-end:::  
-
-### View the position of an element in the accessibility tree  
-
-The [accessibility tree][MDNAccessibilityTree] is a subset of the DOM tree.  It only contains elements from the DOM tree that are relevant and useful for displaying the contents of a page in a screen reader.  
-
-Inspect the position of an element in the accessibility tree from the [Accessibility](#the-accessibility-panel) panel.  
-
-:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="The Accessibility Tree section" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
-   The **Accessibility Tree** section  
-:::image-end:::  
-
-### View the ARIA attributes of an element  
-
-ARIA attributes ensure that screen readers have all of the information that they need in order to properly represent the contents of a page.  
-
-View the ARIA attributes of an element in the [Accessibility](#the-accessibility-panel) panel.  
-
-:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="The ARIA Attributes section" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
-   The **ARIA Attributes** section  
-:::image-end:::  
-
-### View the computed accessibility properties of an element  
-
-> [!NOTE]
-> If you are looking for computed CSS properties, navigate to [Computed][DevtoolsCssReferenceViewActuallyAppliedElements] panel.  
-
-Some accessibility properties are dynamically calculated by the browser.  These properties are displayed in the **Computed Properties** section of the **Accessibility** panel.  
-
-View the computed accessibility properties of an element in the [Accessibility](#the-accessibility-panel) panel.  
-
-:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="The Computed Properties section of the Accessibility panel" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
-   The **Computed Properties** section of the **Accessibility** panel  
-:::image-end:::  
-
-## View the contrast ratio of a text element in the Color Picker  
-
-Some people with low vision do not see areas as very bright or very dark.  Everything tends to appear at about the same brightness, which makes it hard to distinguish outlines and edges.  
-
-Contrast ratio measures the difference in brightness between the foreground and background of text.  If your text has a low contrast ratio, then these low vision users may literally experience your site as a blank screen.  
-
-The Color Picker helps you verify that your text meets recommended contrast ratio levels:  
-
-1.  Choose the **Elements** tool.  
-1.  In the **DOM Tree**, select the text element that you want to inspect.  
-    
-    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Inspect a paragraph in the DOM Tree" lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
-       Inspect a paragraph in the **DOM Tree**  
-    :::image-end:::  
-    
-1.  In the **Styles** panel, choose the color square next to the `color` value of the element.  
-    
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="The color property of the element" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
-       The `color` property of the element  
-    :::image-end:::  
-    
-1.  Check the **Contrast Ratio** section of the Color Picker.  One checkmark means that the element meets the [minimum recommendation][W3CContrastMinimum].  Two checkmarks means that it meets the [enhanced recommendation][W3CContrastEnhanced].  
-    
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 13.97" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
-       The **Contrast Ratio** section of the Color Picker shows 2 checkmarks and a value of `13.97`  
-    :::image-end:::  
-    
-1.  For more information, choose the **Contrast Ratio** section.  A line appears in the visual picker at the top of the Color Picker.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color does not meet recommendations, then anything on the same side also does not meet recommendations.  
-    
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="The Contrast Ratio Line in the visual picker" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
-       The **Contrast Ratio** Line in the visual picker  
-    :::image-end:::  
     
 ## See also
 
-*   [Accessibility testing basics][DevtoolsAccessibilityAccessibilitytestingbasics]
-*   [Accessibility testing][AccessibilityTest]
+*   [Overview of accessibility testing using DevTools][DevtoolsAccessibilityAccessibilitytestingindevtools]
+*   [Navigating Microsoft Edge DevTools With Assistive Technology][DevtoolsAccessibilityNavigation]
+*   [Accessibility testing][DevtoolsAccessibilityTest]
+*   [screen reader][MDNScreenReader]
+*   [Accessibility principles and best practices][MDNAccessibility]
+
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- links -->  
-[AccessibilityTest]: ../../accessibility/test.md "Accessibility testing | Microsoft Docs"
-[DevtoolsAccessibilityAccessibilitytestingbasics]: accessibility-testing-basics.md "Accessibility testing basics | Microsoft Docs"
-[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigate Microsoft Edge DevTools With Assistive Technology | Microsoft Docs"  
-[DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "View only the CSS that is actually applied to an element - CSS Reference | Microsoft Docs"  
-
-[ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US "axe - Web Accessibility Testing - Chrome Web Store"  
-
-[MDNAccessibilityTree]: https://developer.mozilla.org/docs/Glossary/AOM "Accessibility tree (AOM) | MDN"  
-[MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "Accessibility | MDN"  
-[MDNScreenReader]: https://developer.mozilla.org/docs/Glossary/Screen_reader "Screen reader | MDN"  
-
-[W3CContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced "Contrast (Enhanced) Level AAA | W3C"  
-[W3CContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum "Contrast (Minimum) Level AA | W3C"  
-
+<!-- none of the original content remains in this article -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
@@ -212,6 +70,13 @@ The Color Picker helps you verify that your text meets recommended contrast rati
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
+<!-- links -->  
+[DevtoolsAccessibilityTest]: ../../accessibility/test.md "Accessibility testing | Microsoft Docs"
+[DevtoolsAccessibilityAccessibilitytestingindevtools]: accessibility-testing-in-devtools.md "Overview of accessibility testing using DevTools | Microsoft Docs"
+[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigate Microsoft Edge DevTools With Assistive Technology | Microsoft Docs"  
+<!-- external -->
+[MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "Accessibility | MDN"  
+[MDNScreenReader]: https://developer.mozilla.org/docs/Glossary/Screen_reader "Screen reader | MDN"  
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
