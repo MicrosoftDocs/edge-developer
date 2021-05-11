@@ -61,7 +61,7 @@ To get a direct reference to the element to manipulate, complete the following a
     :::image-end:::  
     
 1.  Choose it and DevTools jumps to the **Elements** tool.  
-1.  Choose the `...` menu next to the element in the DOM view.  
+1.  Choose the `...` menu next to the element in the DOM tree.  
     
     :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="The chosen element displays in the DOM tree of the Elements tool, choose the overflow menu to get more features" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
         The chosen element displays in the DOM tree of the **Elements** tool, choose the overflow menu to get more features  
@@ -69,8 +69,8 @@ To get a direct reference to the element to manipulate, complete the following a
     
 1.  Open the contextual menu and choose `Copy` > `Copy JS Path`.  
     
-    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="Copy the JavaScript path from an element in the DOM view of the Elements tool" lightbox="../media/console-dom-copy-JS-path.msft.png":::
-        Copy the JavaScript path from an element in the DOM view of the **Elements** tool  
+    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="Copy the JavaScript path from an element in the DOM tree of the Elements tool" lightbox="../media/console-dom-copy-JS-path.msft.png":::
+        Copy the JavaScript path from an element in the DOM tree of the **Elements** tool  
     :::image-end:::  
     
 1.  Go back to the **Console** and paste the command.  
