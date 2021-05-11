@@ -1,0 +1,60 @@
+---
+description: Analyzing the lack of indication of keyboard focus in a sidebar menu, due to lacking a CSS pseudo-class rule for the focus state on a link, combined with the link having no outline setting.
+title: Analyze the lack of indication of keyboard focus in a sidebar menu
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 05/07/2021
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: microsoft edge, web development, f12 tools, devtools
+---
+# Analyze the lack of indication of keyboard focus in a sidebar menu
+
+<!-- Inspect tool, and CSS rules: pseudo-classes for states -->
+
+In the accessibility-testing demo page, the sidebar navigation menu with blue buttons doesn't visually indicate which button has focus, when using a keyboard.  To find out why the sidebar menu is confusing to keyboard users, we'll look for CSS pseudo-class rules for the `hover` and `focus` states, along with the CSS property for button outlines.  
+
+This analysis finds that the lack of indication of keyboard focus in the buttons of the sidebar navigation menu is because:
+*  The `a` links have a CSS property setting of `outline: none`.
+*  The `a` links lack a CSS pseudo-class rule for the `:focus` state.
+
+To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue button on the sidebar navigation menu, and then view the DOM tree and CSS for the `a` element that defines that button.
+
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
+
+1.  Select the **Inspect** \(![Inspect icon](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the button is highlighted (blue).
+
+1.  Hover over the **Cats** button, which is the first, blue button of the sidebar menu.  The Inspect overlay appears, showing that the `a` element is keyboard-focusable.  But the overlay doesn't indicate that there's no visual indication that the button has focus.
+
+    Next, we'll inspect the CSS styling of the `a` link used for this button in the sidebar menu.
+ 
+1.  Select the **Cats** button.  The **Inspect** tool turns off, and the **Elements** tool opens, highlighting the `a` node in the DOM tree.
+
+1.  Select the **Styles** tab.  The CSS rule `#sidebar nav li a` appears, along with a link to a line number in `styles.css`.
+
+    :::image type="complex" source="../media/a11y-testing-menu-link.msft.png" alt-text="Inspecting the source code and the applied styles of a link in the menu" lightbox="../media/a11y-testing-menu-link.msft.png":::
+        Inspecting the source code and the applied styles of a link in the menu
+    :::image-end:::
+    
+1.  Select the link to the CSS file.  The CSS file opens within the **Sources** tool.
+
+    :::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="The styles applied to the link in the Sources tool" lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
+        The styles applied to the link in the Sources tool
+    :::image-end:::
+    
+The styles of the page have a CSS pseudo-class rule for the `hover` state that indicates which menu item you are on when you use a mouse: `#sidebar nav li a:hover`.  However, there is no CSS pseudo-class rule for the `focus` state to visually indicate which menu item you are on when you use a keyboard, such as `#sidebar nav li a:focus`.
+
+Even worse, the links have a CSS property setting of `outline: none`.  This is a common practice, to remove the outline which browsers automatically add to elements when you focus them with a keyboard.  As you can see here, this lack of `focus` styling can cause confusion.
+
+
+## See also 
+
+*  [Track which element has focus](focus.md)
+
+
+## Getting in touch with the Microsoft Edge DevTools team  
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
+
+<!-- links -->
