@@ -279,8 +279,8 @@ To turn on the experiment, navigate to [Turn on experimental features][DevtoolsE
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="Display the DOM tree view" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
-         Display the **DOM view**  
+      :::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="Display the DOM Tree view" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
+         Display the **DOM Tree view**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
@@ -300,7 +300,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 <!-- links -->  
 
-[DevtoolsAccessibilityReferenceTheAccessibilityPane]: /microsoft-edge/devtools-guide-chromium/accessibility/reference#the-accessibility-pane "The Accessibility pane - Accessibility reference | Microsoft Docs"  
+[DevtoolsAccessibilityReferenceTheAccessibilityPane]: /microsoft-edge/devtools-guide-chromium/accessibility/accessibility-tab.md "Testing accessibility using the Accessibility tab | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsConsoleReferenceFilterByLogLevel]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-by-log-level "Filter by log level - Console reference | Microsoft Docs"  
 [DevtoolsConsoleReferenceFilterMessages]: /microsoft-edge/devtools-guide-chromium/console/reference#filter-messages "Filter messages - Console Reference | Microsoft Docs"  
