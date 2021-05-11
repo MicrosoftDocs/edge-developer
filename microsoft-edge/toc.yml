@@ -128,11 +128,11 @@
                     - name: Check that the page is usable with UI animation turned off
                       href: devtools-guide-chromium/accessibility/accy-test-reduced-ui-motion.md
                 - name: Testing accessibility using Lighthouse
-                  href: devtools-guide-chromium/accessibility/accy-ref-lighthouse.md
+                  href: devtools-guide-chromium/accessibility/lighthouse.md
                 - name: Testing accessibility using the Accessibility tab
-                  href: devtools-guide-chromium/accessibility/accy-ref-accessibility-tab.md
+                  href: devtools-guide-chromium/accessibility/accessibility-tab.md
                 - name: Testing text-color contrast using the Color Picker
-                  href: devtools-guide-chromium/accessibility/accy-ref-color-picker.md
+                  href: devtools-guide-chromium/accessibility/color-picker.md
                 - name: Navigate DevTools with assistive technology
                   href: devtools-guide-chromium/accessibility/navigation.md
                 - name: Track which element has focus
