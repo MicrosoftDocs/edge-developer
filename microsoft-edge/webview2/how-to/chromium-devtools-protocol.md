@@ -3,7 +3,7 @@ description: Learn how to use the Chrome DevTools Protocol in your WebView2 apps
 title: Use Chrome DevTools Protocol in WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/17/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -82,9 +82,9 @@ To create an `HTML file` to find your geolocation, complete following the action
     
 ## Step 2: Display geolocation.html in a WebView2  
 
-1.  To create a WebView2 app, use either of the following getting started guides or WebView2 samples.  
-    *   [Getting Started with WebView2 in Windows Forms][Webview2GettingstartedWinforms]  
-    *   [Getting Started with WebView2 in WPF][Webview2GettingstartedWpf]  
+1.  To create a WebView2 app, use either of the following get started guides or WebView2 samples.  
+    *   [Get Started with WebView2 in Windows Forms][Webview2GetStartedWinforms]  
+    *   [Get Started with WebView2 in WPF][Webview2GetStartedWpf]  
     *   [WebView2 samples][GithubMicrosoftedgeWebview2samples]  
         
 1.  Set the initial navigation of the WebView2 control to `geolocation.html`.  
@@ -106,9 +106,9 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
 1.  Choose **Project** > **Manage NuGet Packages** > **Browse**.  
 1.  Type `Microsoft.Web.WebView2.DevToolsProtocolExtension` and choose **Microsoft.Web.WebView2.DevToolsProtocolExtension** > **Install**.   
     
-:::image type="complex" source="./media/cdpnuget.png" alt-text="Ensure Microsoft.Web.WebView2.DevToolsProtocolExtension displays in the Visual Studio NuGet Package Manager" lightbox="./media/cdpnuget.png":::
+:::image type="complex" source="./media/cdp-nuget.png" alt-text="Ensure Microsoft.Web.WebView2.DevToolsProtocolExtension displays in the Visual Studio NuGet Package Manager" lightbox="./media/cdp-nuget.png":::
    Ensure **Microsoft.Web.WebView2.DevToolsProtocolExtension** displays in the Visual Studio NuGet Package Manager  
-:::image-end:::  
+:::image-end:::    
 
 ## Step 4: Use DevTools Protocol Helper  
 
@@ -153,7 +153,7 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
 1.  Run your app.  
 1.  To display the coordinates of Paris, France, choose the **Display Location** button.  
     
-    :::image type="complex" source="./media/finallocation-cdp.png" alt-text="Display the .html file in a WebView2 control with the coordinates for Paris" lightbox="./media/finallocation-cdp.png":::
+    :::image type="complex" source="./media/final-location-cdp.png" alt-text="Display the .html file in a WebView2 control with the coordinates for Paris" lightbox="./media/final-location-cdp.png":::
        Display the `.html` file in a WebView2 control with the coordinates for Paris  
     :::image-end:::  
     
@@ -175,8 +175,8 @@ To file a Chromium DevTools Protocol bug or issue, complete the following action
     
  <!-- links -->  
 
-[Webview2GettingstartedWinforms]: /microsoft-edge/webview2/gettingstarted/winforms "Getting started with WebView2 in Windows Forms | Microsoft Docs"  
-[Webview2GettingstartedWpf]: /microsoft-edge/webview2/gettingstarted/wpf "Getting started with WebView2 in WPF | Microsoft Docs"  
+[Webview2GetStartedWinforms]: /microsoft-edge/webview2/get-started/winforms "Get started with WebView2 in Windows Forms | Microsoft Docs"  
+[Webview2GetStartedWpf]: /microsoft-edge/webview2/get-started/wpf "Get started with WebView2 in WPF | Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver?view=webview2-dotnet-1.0.774.44&preserve-view=true "CoreWebView2.GetDevToolsProtocolEventReceiver(String) Method | Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString]: /dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync?view=webview2-dotnet-1.0.774.44&preserve-view=true#Microsoft_Web_WebView2_Core_CoreWebView2_CallDevToolsProtocolMethodAsync_System_String_System_String_ "CoreWebView2.CallDevToolsProtocolMethodAsync(String, String) Method | Microsoft Docs"  
