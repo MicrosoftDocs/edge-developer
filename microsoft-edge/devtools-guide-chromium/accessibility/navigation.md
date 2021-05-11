@@ -24,23 +24,22 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Navigate Microsoft Edge DevTools with assistive technology  
 
-The following article aims to help users who primarily rely on assistive technology like screen readers access and use [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] is a suite of web developer tools built into the Microsoft Edge browser.  
+This article helps users who primarily rely on assistive technology such as screen readers access and use [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  DevTools is a suite of web developer tools built into the Microsoft Edge browser.  
 
-If you are looking for DevTools features related to improving the accessibility of a web page, see [Accessibility testing using DevTools](accessibility-testing-basics.md) and [Accessibility Reference][DevtoolsAccessibilityReference].
+For DevTools features related to improving the accessibility of a web page, see [Accessibility-testing features in DevTools][DevtoolsAccessibilityReference] and [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md).
 
-The accessibility of DevTools is a work-in-progress.  Some panels and tabs work better with assistive technology than others.  This guide walks you through the panels which are the most accessible and highlights specific issues you may encounter along the way.  
+The accessibility of DevTools is a work-in-progress.  Some tools and tabs work better with assistive technology than others.  This guide walks you through the tools and tabs which are the most accessible, and highlights specific issues you may encounter along the way.  
 
 ## Overview  
 
-Before starting, it helps to have a mental model of how the DevTools UI is structured.  DevTools is divided into a series of panels which are organized into an [ARIA tablist][W3CWaiAriaTablist].  
+DevTools is divided into a series of tools (or _panels_) and tabs, which are organized into an [ARIA tablist][W3CWaiAriaTablist].  
 
 For example:  
 
 *   The **Elements** tool lets you [view and change DOM nodes][DevtoolsDomIndexNavigateDomTreeKeyboard] or [CSS][DevtoolsCssIndex].  
-*   The [Console panel][DevtoolsConsoleIndex] lets you read JavaScript logs and live edit objects.  
+*   The [Console tool][DevtoolsConsoleIndex] lets you read JavaScript logs and live-edit objects.  
 
-Within the content area of each panel, there are a number of different tools, often referred to as tabs or panes in the documentation.  
-For instance, the **Elements** tool contains additional tabs to inspect event listeners, the accessibility tree, and much more.  The distinction between tabs and panes is somewhat arbitrary.  The only reason you may review one term or the other is to maintain consistency with the rest of the official DevTools documentation.  
+Within the content area of each tool (or _panel_), there are a number of different tabs.  For example, the **Elements** tool contains tabs to inspect CSS styles, event listeners, the accessibility tree, and much more.
 
 ## Keyboard shortcuts  
 
@@ -50,7 +49,7 @@ The [DevTools Keyboard Shortcuts reference][DevtoolsShortcuts] is a helpful chea
 
 To get started, navigate to [Open Microsoft Edge DevTools][DevtoolsOpen].  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.  
 
-## Navigate between panels  
+## Navigate between tools or tabs
 
 ### Navigate by keyboard  
 
@@ -72,20 +71,20 @@ To focus a specific panel, use the [Command Menu][DevtoolsCommandMenuIndex]:
 1.  Type the name of the panel you want to open, then use the `Down Arrow` on the keyboard to navigate to the correct option.  
 1.  Select `Enter` to run a command.  
 
-Complete the following actions to open the **Elements** tool.  
+Complete the following actions to open the **Elements** tool (or panel):
 
 1.  Open the **Command Menu**.  
 1.  Type `E` then `L`.  The **Panel > Show Elements** option is selected.  
 1.  Select `Enter` to run the command that opens the panel.  
 
-Open a panel this way directs focus to the contents of the panel.  In the case of the **Elements** tool, focus moves into the **DOM Tree**.  
+Opening a panel this way puts focus on the contents of the panel.  In the case of the **Elements** tool, focus moves into the **DOM Tree**.  
 
 ## Elements panel  
 
 ### Inspect an element on the page  
 
-1.  Navigate to the element you want to inspect using the cursor in the screen reader.  
-1.  Simulate a right-click using a mouse on the element to open the context menu.  
+1.  Navigate to the element you want to inspect, using the cursor in the screen reader.  
+1.  Simulate a right-click on the element, to open the context menu.  
 1.  Choose the **Inspect** option.  This [opens the Elements panel and focuses the element in the DOM Tree][DevtoolsDomIndexViewDomNodes].  
 
 The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  For an example, navigate to [Navigate the **DOM Tree** with a keyboard][DevtoolsDomIndexNavigateDomTreeKeyboard].  
@@ -108,7 +107,7 @@ The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  For an example,
 
 **Known issues**  
 
-*   When you type into the text input you get no feedback.  If you make a typo and use the arrow keys to explore your input you also get no feedback.  The easiest way to check your work is to accept the change, then listen for the entire element to be announced.  
+*   When you type into the text input, you get no feedback.  If you make a typo and use the arrow keys to explore your input, you also get no feedback.  The easiest way to check your work is to accept the change, then listen for the entire element to be announced.  
 
 ### Edit the HTML of an element in the DOM Tree  
 
@@ -129,7 +128,7 @@ The **DOM Tree** turns elements with `href` attributes into focusable links, so 
 
 **Known issues**  
 
-The **DOM Breakpoints** and **Properties** tabs are not keyboard accessible.  
+The **DOM Breakpoints** and **Properties** tabs are not keyboard-accessible.  
 
 ### Styles pane  
 
@@ -208,17 +207,19 @@ The **Accessibility Tree** is presented as an [ARIA tree][W3CWaiAriaTree] where 
 
 **Known issues**  
 
-*   The type of [ARIA tree][W3CWaiAriaTree] used by the **Accessibility** panel may not be properly exposed in Microsoft Edge for macOS screen readers like VoiceOver.  Subscribe to [Chromium issue #868480][ChromiumIssues868480]
+*   The type of [ARIA tree][W3CWaiAriaTree] used by the **Accessibility** tab may not be properly exposed in Microsoft Edge for macOS screen readers like VoiceOver.  Subscribe to [Chromium issue #868480][ChromiumIssues868480]
   to be informed about progress on this issue.  
 *   Each of the **ARIA Attributes** and **Computed Properties** sections are marked up as an [ARIA tree][W3CWaiAriaTree], but each does not currently have focus management and is not keyboard operable.  
 
-## Audits panel  
+## Lighthouse tool
 
-The **Lighthouse** tool (previously called the **Audits** tool) runs a series of tests against a site to check for common issues related to performance, accessibility, SEO, and a number of other categories.  
+**Lighthouse** runs a series of tests against a site to check for common issues related to performance, accessibility, SEO, and a number of other categories.  
+
+Within DevTools, the **Lighthouse** panel (or tool) was previously called the **Audits** panel.
 
 ### Configure and run an audit  
 
-1.  When the **Audits** tool is first opened, focus is placed on the **Run Audit** button at the end of the form.  By default, the form is configured to run audits for every category using mobile emulation on a simulated 3G connection.  
+1.  When the **Audits** tool is first opened in DevTools, focus is placed on the **Run Audit** button at the end of the form.  By default, the form is configured to run audits for every category using mobile emulation on a simulated 3G connection.  
 1.  Use `Shift`+`Tab` or navigate back in Browse mode to change the audit settings.  
 1.  When you are ready to run the audit, navigate back to the **Run Audit** button and select `Enter`.  
 1.  Focus moves into a modal window with a **Cancel** button which allows you to exit the audit.  You may hear a series of earcons as the audit runs and refreshes the page multiple times.  
@@ -239,9 +240,8 @@ To run a new audit, use `Shift`+`Tab` to exit the report and look for the **Perf
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
-
-[DevtoolsAccessibilityReference]: ./reference.md "Accessibility reference | Microsoft Docs"  
-[DevtoolsAccessibilityReferencePanel]: reference.md#the-accessibility-panel "The Accessibility panel - Accessibility Reference | Microsoft Docs"  
+[DevtoolsAccessibilityReference]: ./reference.md "Accessibility-testing features in DevTools | Microsoft Docs"  
+[DevtoolsAccessibilityReferencePanel]: accessibility-tab.md "Testing accessibility using the Accessibility tab | Microsoft Docs"  
 [MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsConsoleIndex]: ../console/index.md "Console Overview | Microsoft Docs"  
