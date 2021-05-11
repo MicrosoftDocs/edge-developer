@@ -29,14 +29,14 @@ Suppose that you are testing the keyboard navigation accessibility of a page.  W
 Complete the following actions to track the focused element in DevTools.  
 
 1.  Open the **Console**.  
-1.  Choose **Create Live Expression** \(![Create Live Expression](../media/create-live-expression-icon.msft.png)\).  
+1.  Choose **Create live expression** \(![Create live expression](../media/create-live-expression-icon.msft.png)\).  
     
     :::image type="complex" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Create a Live Expression" lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
        Create a Live Expression  
     :::image-end:::  
     
 1.  Type `document.activeElement`.  
-1.  Choose outside of the **Live Expression** UI to save.  
+1.  To save the expression, select outside of the live expression.
     
 The value displayed below `document.activeElement` is the result of the expression.  
 
@@ -46,7 +46,13 @@ Since that expression always represents the focused element, you now have a way 
 *   Hover on the result, open the contextual menu \(right-click\), and choose **Reveal in Elements panel** to show the element in the DOM Tree on the **Elements** tool.  
 *   Hover on the result, open the contextual menu \(right-click\), and choose **Store as global variable** to create a variable reference to the node that you are able to use in the **Console**.  
 
-## Getting in touch with the Microsoft Edge DevTools team  
+
+## See also
+
+*  [Analyze the lack of indication of keyboard focus in a sidebar menu](accy-test-analyze-no-focus-indicator.md) - Creating a live expression in the **Console**.
+
+
+## Getting in touch with the Microsoft Edge DevTools team
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
