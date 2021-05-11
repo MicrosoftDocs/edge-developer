@@ -3,7 +3,7 @@ description: Learn about development best practices to use when developing your 
 title: WebView2 development best practices  
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/04/2021
+ms.date: 05/11/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -65,5 +65,5 @@ For any WebView2 application, ensure you follow our recommended WebView2 securit
 [Webview2GettingstartedWinforms]: ../gettingstarted/winforms.md "Getting started with WebView2 in Windows Forms | Microsoft Docs"  
 [Webview2GettingstartedWinui]: ../gettingstarted/winui.md "Getting started with WebView2 in WinUI 3 (Preview) | Microsoft Docs"  
 [Webview2GettingstartedWpf]: ../gettingstarted/wpf.md "Getting started with WebView2 in WPF | Microsoft Docs"  
-[Webview2ReferenceaddNewBrowserVersionAvailable]: https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable "add_NewBrowserVersionAvailable | Microsoft Docs"  
-[Webview2ReferenceNewBrowserVersionAvailable]: https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable "CoreWebView2Environment.NewBrowserVersionAvailable Event | Microsoft Docs"  
+[Webview2ReferenceaddNewBrowserVersionAvailable]: /microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable "add_NewBrowserVersionAvailable | Microsoft Docs"  
+[Webview2ReferenceNewBrowserVersionAvailable]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable "CoreWebView2Environment.NewBrowserVersionAvailable Event | Microsoft Docs"  
