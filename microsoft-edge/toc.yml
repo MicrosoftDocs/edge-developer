@@ -87,10 +87,52 @@
           items:
             - name: Accessibility
               items:
-                - name: Accessibility testing using DevTools
-                  href: devtools-guide-chromium/accessibility/accessibility-testing-basics.md
-                - name: Accessibility reference
+                - name: Accessibility-testing features in DevTools
                   href: devtools-guide-chromium/accessibility/reference.md
+                - name: Overview of accessibility testing using DevTools
+                  href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md
+                - name: Issues tool
+                  items:
+                    - name: Automatically test a webpage for accessibility issues
+                      href: devtools-guide-chromium/accessibility/accy-test-issues-tool.md
+                - name: Inspect tool
+                  items:
+                    - name: Use the Inspect tool to detect accessibility issues by hovering over parts of the webpage
+                      href: devtools-guide-chromium/accessibility/accy-test-inspect-tool.md
+                    - name: Check for keyboard support by using the Tab and Enter keys
+                      href: devtools-guide-chromium/accessibility/accy-test-tab-enter-keys.md
+                    - name: Analyze the lack of indication of keyboard focus in a sidebar menu
+                      href: devtools-guide-chromium/accessibility/accy-test-analyze-no-focus-indicator.md
+                    - name: Analyzing the lack of keyboard support in a form
+                      href: devtools-guide-chromium/accessibility/accy-test-analyze-no-keyboard-support.md
+                - name: Accessibility tab
+                  items:
+                    - name: Check the Accessibility Tree for keyboard and screen reader support
+                      href: devtools-guide-chromium/accessibility/accy-test-accessibility-tree.md
+                    - name: Test keyboard support using the Source Order Viewer
+                      href: devtools-guide-chromium/accessibility/accy-test-tab-key-source-order-viewer.md
+                - name: Styles tab
+                  items:
+                    - name: Check text-color contrast in the default state using the Inspect tool
+                      href: devtools-guide-chromium/accessibility/accy-test-inspect-text-contrast.md
+                    - name: Check accessibility during all states of elements
+                      href: devtools-guide-chromium/accessibility/accy-test-inspect-states.md
+                - name: Rendering tool
+                  items:
+                    - name: Check for contrast issues with dark theme and light theme
+                      href: devtools-guide-chromium/accessibility/accy-test-dark-mode.md
+                    - name: Check that the page is usable by people with color blindness
+                      href: devtools-guide-chromium/accessibility/accy-test-color-blindness.md
+                    - name: Check that the page is usable with blurred vision
+                      href: devtools-guide-chromium/accessibility/accy-test-blurred-vision.md
+                    - name: Check that the page is usable with UI animation turned off
+                      href: devtools-guide-chromium/accessibility/accy-test-reduced-ui-motion.md
+                - name: Testing accessibility using Lighthouse
+                  href: devtools-guide-chromium/accessibility/accy-ref-lighthouse.md
+                - name: Testing accessibility using the Accessibility tab
+                  href: devtools-guide-chromium/accessibility/accy-ref-accessibility-tab.md
+                - name: Testing text-color contrast using the Color Picker
+                  href: devtools-guide-chromium/accessibility/accy-ref-color-picker.md
                 - name: Navigate DevTools with assistive technology
                   href: devtools-guide-chromium/accessibility/navigation.md
                 - name: Track which element has focus
