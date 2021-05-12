@@ -3,7 +3,7 @@ description: Get Started with HTML and the DOM
 title: "DevTools for beginners: Get started with HTML and the DOM"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/12/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web developement, f12 tools, devtools
@@ -21,7 +21,6 @@ keywords: microsoft edge, web developement, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # DevTools for beginners: Get started with HTML and the DOM  
 
 This is the first in a series of tutorials that teach you the basics of web development.  Learn about a set of web developer tools, named Microsoft Edge DevTools, that may increase your productivity.  
@@ -264,18 +263,24 @@ You may also change the order of DOM nodes.  For example, on your web page the n
     
     :::row:::
        :::column span="":::
+          &nbsp;  
+       :::column-end:::
+       :::column span="":::
+          The `<nav>` node is now displaying at the top of your page.  
+       :::column-end:::
+    :::row-end:::  
+    :::row:::
+       :::column span="":::
           :::image type="complex" source="../media/beginners-html-reorder2.msft.png" alt-text="Dragging the nav node to the top" lightbox="../media/beginners-html-reorder2.msft.png":::
              Dragging the nav node to the top  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          The `<nav>` node is now displaying at the top of your page.  
-          
           :::image type="complex" source="../media/beginners-html-reorder3.msft.png" alt-text="The nav node is at the top of the page" lightbox="../media/beginners-html-reorder3.msft.png":::
              The nav node is at the top of the page  
           :::image-end:::  
        :::column-end:::
-   :::row-end:::  
+    :::row-end:::  
     
 ### Delete a node  
 
