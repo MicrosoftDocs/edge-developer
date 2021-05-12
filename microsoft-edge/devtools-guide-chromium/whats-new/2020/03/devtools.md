@@ -3,7 +3,7 @@ description: Emulate color vision deficiencies, Dock To Left in the Command Menu
 title: What's new in DevTools (Microsoft Edge 83)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -99,7 +99,7 @@ Chromium issue [#1050999][CR1050999]
 
 The **Changes tool** tracks any changes you have made to CSS or JavaScript in the DevTools.  You are able to use the **Changes tool** to quickly display all your changes and take those back to your editor/IDE.  
 
-To open the **Changes tool**, select `Ctrl`+`Shift`+`P` in the DevTools to open the [Command Menu][DevToolsCommandMenuIndex] and type `changes`.  choose and run the **Show Changes** command to open the **Changes tool** in the DevTools drawer.  
+To open the **Changes tool**, select `Ctrl`+`Shift`+`P` in the DevTools to open the [Command Menu][DevtoolsCommandMenuIndex] and type `changes`.  choose and run the **Show Changes** command to open the **Changes tool** in the DevTools drawer.  
 
 When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to display all of your minified code.  Starting in Microsoft Edge 83, you may now scroll horizontally using the arrow keys on your keyboard.  
 
@@ -117,7 +117,7 @@ The following sections announce additional features available in Microsoft Edge 
 
 ### Emulate vision deficiencies  
 
-Open the [Rendering tab][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab] and use the new **Emulate vision deficiencies** feature to get a better idea of how people with different types of vision deficiencies experience your site.  
+Open the [Rendering tab][DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTool] and use the new **Emulate vision deficiencies** feature to get a better idea of how people with different types of vision deficiencies experience your site.  
 
 :::image type="complex" source="../../media/2020/03/vision.msft.png" alt-text="Emulating blurred vision" lightbox="../../media/2020/03/vision.msft.png":::
    Emulating blurred vision  
@@ -143,7 +143,7 @@ Chromium issue [#1003700][CR1003700]
 
 ### Emulate locales  
 
-Emulate locales by setting a location in **Sensors** > **Location**. [Open the **Command Menu**][DevToolsCommandMenuIndex] and type `Sensors` to access the **Sensors** tab.  After performing these actions, DevTools modifies the current default locale, affecting the following code.  
+Emulate locales by setting a location in **Sensors** > **Location**. [Open the **Command Menu**][DevtoolsCommandMenuIndex] and type `Sensors` to access the **Sensors** tab.  After performing these actions, DevTools modifies the current default locale, affecting the following code.  
 
 *   `Intl.*` APIs, for example: `new Intl.NumberFormat().resolvedOptions().locale`  
 *   Other locale-aware JavaScript APIs such as `String.prototype.localeCompare` and `*.prototype.toLocaleString`, for example: `123_456..toLocaleString()`  
@@ -202,7 +202,7 @@ like `cookie-path`.
 
 ### Dock to left from the Command Menu  
 
-Open the [Command Menu][DevToolsCommandMenuIndex] and run the `Dock to left` command to move DevTools to the left of your viewport.  
+Open the [Command Menu][DevtoolsCommandMenuIndex] and run the `Dock to left` command to move DevTools to the left of your viewport.  
 
 :::image type="complex" source="../../media/2020/03/dock-to-left.msft.png" alt-text="DevTools docked to the left of the viewport" lightbox="../../media/2020/03/dock-to-left.msft.png":::
    DevTools docked to the left of the viewport  
@@ -279,17 +279,18 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 [WhatsNew81]: ../01/devtools.md "What's New In DevTools (Microsoft Edge 81) | Microsoft Docs"  
 
-[DevToolsCommandMenuIndex]: /microsoft-edge/devtools-guide-chromium/command-menu/index "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
-[DevtoolsCssReferenceColorPicker]: /microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker "Change colors with the Color Picker | Microsoft Docs"  
-[DevtoolsCssIndex]: /microsoft-edge/devtools-guide-chromium/css/index "Get Started With Viewing And Changing CSS | Microsoft Docs"  
-[DevtoolsCustomizePlacementsChangeMainMenu]: /microsoft-edge/devtools-guide-chromium/customize/placement#change-placement-from-the-main-menu "Change placement from the main menu | Microsoft Docs"  
-[DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#view-main-thread-activity "View main thread activity | Microsoft Docs"  
-[DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTab]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab | Microsoft Docs"  
-[ProgressiveWebAppsChromiumIndex]: /microsoft-edge/progressive-web-apps-chromium/index "Progressive Web Apps on Windows | Microsoft Docs"  
-[DevtoolsRemoteDebuggingWindows]: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows "Get Started with Remote Debugging Windows 10 Devices | Microsoft Docs"  
-[DevtoolsJavascriptBreakpointsLineCode]: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints#line-of-code-breakpoints "Line-of-code breakpoints - How To Pause Your Code With Breakpoints In Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsNetworkReferenceFilterRequestsProperties]: /microsoft-edge/devtools-guide-chromium/network/reference#filter-requests-by-properties "Filter requests by properties - Network analysis reference | Microsoft Docs"  
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Settings - Customize Microsoft Edge DevTools  | Microsoft Docs"  
+[DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
+[DevtoolsCssIndex]: ../../../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
+[DevtoolsCssReferenceColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "Change colors with the Color Picker | Microsoft Docs"  
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools  | Microsoft Docs"  
+[DevtoolsCustomizePlacementsChangeMainMenu]: ../../../customize/placement.md#change-placement-from-the-main-menu "Change placement from the main menu | Microsoft Docs"  
+[DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTool]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool "Analyze rendering performance with the Rendering tool | Microsoft Docs"  
+[DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: ../../../evaluate-performance/reference.md#view-main-thread-activity "View main thread activity | Microsoft Docs"  
+[DevtoolsJavascriptBreakpointsLineCode]: ../../../javascript/breakpoints.md#line-of-code-breakpoints "Line-of-code breakpoints - How To Pause Your Code With Breakpoints In Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsNetworkReferenceFilterRequestsProperties]: ../../../network/reference.md#filter-requests-by-properties "Filter requests by properties - Network analysis reference | Microsoft Docs"  
+[DevtoolsRemoteDebuggingWindows]: ../../../remote-debugging/windows.md "Get Started with Remote Debugging Windows 10 Devices | Microsoft Docs"  
+
+[ProgressiveWebAppsChromiumIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"  
 
 [WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows Device Portal overview"  
 
@@ -300,17 +301,18 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 [WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20 "Update on Stable channel releases for Microsoft Edge"  
 
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "New Issue - MicrosoftDocs/edge-developer - GitHub"  
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Devtools%20Docs%20Feedback] "New Issue - MicrosoftDocs/edge-developer - GitHub"  
 
-[MicrosoftVisualstudio]: https://visualstudio.microsoft.com "Visual Studio"  
+[MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
 
-[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"  
+[VisualstudioCodeMain]: https://code.visualstudio.com "Visual Studio Code"  
 
 [PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a Tweet"  
 [EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"  
-[TheWebWeWant]: https://webwewant.fyi "The Web We Want"  
+[TheWebWeWantMain]: https://webwewant.fyi "The Web We Want"  
 
 [ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness "Types of Colour Blindness"  
+<!-- this link must be http, not https -->  
 
 [MDNAcceptLanguage]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language "Accept-Language | MDN"  
 [MDNCookiePath]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives "Set-Cookie | MDN"  
@@ -344,4 +346,4 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

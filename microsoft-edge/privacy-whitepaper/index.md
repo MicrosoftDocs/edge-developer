@@ -3,7 +3,7 @@ description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, privacy, whitepaper, trust
@@ -96,7 +96,7 @@ Microsoft Edge Developer Tools provide tools for website debugging and testing. 
 
 Microsoft uses diagnostic data to improve our products and services and keep our products secure, up to date, and performing as expected. Whenever we collect data, we want to make sure it's the right choice for you. Microsoft believes in and practices information collection minimization. We strive to gather only the info we need, and to store it only for as long as it's needed to improve our products and services. 
 
-Microsoft Edge collects a set of required diagnostic data that's necessary to keep the product secure, up to date, and performing properly. The required diagnostic data includes data such as device connectivity, configuration information, software setup, and inventory data. Microsoft uses this required diagnostic data to troubleshoot issues and keep Microsoft products and services reliable, secure, and operating normally. For more information about diagnostic data on managed devices, navigate to [Configure Windows diagnostic data in your organization][WindowsPrivacyConfigureDiagnosticDataOrganization] and [Microsoft Edge diagnostic data group policy](https://docs.microsoft.com/deployedge/microsoft-edge-enterprise-privacy-settings). 
+Microsoft Edge collects a set of required diagnostic data that's necessary to keep the product secure, up to date, and performing properly. The required diagnostic data includes data such as device connectivity, configuration information, software setup, and inventory data. Microsoft uses this required diagnostic data to troubleshoot issues and keep Microsoft products and services reliable, secure, and operating normally. For more information about diagnostic data on managed devices, navigate to [Configure Windows diagnostic data in your organization][WindowsPrivacyConfigureDiagnosticDataOrganization] and [Microsoft Edge diagnostic data group policy](/deployedge/microsoft-edge-enterprise-privacy-settings).  
 
 :::image type="complex" source="./media/diagnostic-data2.png" alt-text="Diagnostic data" lightbox="./media/diagnostic-data2.png":::
    Diagnostic data  
