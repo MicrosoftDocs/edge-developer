@@ -59,11 +59,11 @@ There are two ways to open the Animation Inspector:
         
         :::image type="complex" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="Animations using Main Menu" lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
            **Animations** using Main Menu  
-    :::image-end:::  
+        :::image-end:::  
         
 *   Open the **Command Menu**  
     1.  Type `Drawer: Show Animations`.  
-
+        
 The Animation Inspector opens next to the **Console** tool.  Since the Animation Inspector is a Drawer tool, you may use the Animation Inspector from any DevTools panel.  
 
 :::image type="complex" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="Empty Animation Inspector" lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
