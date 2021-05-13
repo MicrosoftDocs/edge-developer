@@ -23,8 +23,6 @@ Open the [demo page with accessibility issues][DevToolsA11yErrorsDemopage] in a 
 
 ## Automated testing by using the Issues tool
 
-For detailed walkthrough steps, see [View the Accessibility section of the Issues tool](accy-test-issues-tool.md#view-the-accessibility-section-of-the-issues-tool).
-
 When you open the demo page in the browser and open DevTools, the first thing you see is some automatically detected problems flagged in the **Issues counter**.  Select the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) to open the [Issues tool][DevToolsIssuesTool] to see what the problems are, along with explanations.
 
 :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="The Issues counter shows how many problems there are in the current webpage, and opens the Issues tool" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
@@ -37,10 +35,10 @@ For the purpose of this article, in the **Issues** tool, let's focus on the **Ac
     Accessibility warnings displayed in the Issues tool
 :::image-end:::
 
+For detailed walkthrough steps, navigate to [View the Accessibility section of the Issues tool](test-issues-tool.md#view-the-accessibility-section-of-the-issues-tool).
+
 
 ### Automatically checking that input fields have labels
-
-For detailed walkthrough steps, see [Check that input fields have labels](accy-test-issues-tool.md#check-that-input-fields-have-labels).
 
 The first warning displayed is "Form elements must have labels: Element has no title attribute. Element has no placeholder attribute".  When you expand this section and then select the **Open in Elements** link, the **Elements** tool opens, with the element highlighted in the DOM tree.  The **Styles** tab shows the CSS that's applied to the element.
 
@@ -64,10 +62,10 @@ You can also select the explanatory links in the **Issues** tool to get this inf
     Links in the **Issues** tool pointing to more in-depth information about the issue
 :::image-end:::
 
+For detailed walkthrough steps, navigate to [Check that input fields have labels](test-issues-tool.md#check-that-input-fields-have-labels).
+
 
 ### Automatically checking that images have alt text
-
-For detailed walkthrough steps, see [Check that images have alt text](accy-test-issues-tool.md#check-that-images-have-alt-text).
 
 The other automatically detected problem is that many of the images in the page don't have any alternative text.  If you expand the "Images must have alternate text: Element has no title attribute" warning, you get four instances of images with that problem.
 
@@ -75,10 +73,10 @@ The other automatically detected problem is that many of the images in the page 
     The **Issues** tool, reporting images with missing alternative text
 :::image-end:::
 
+For detailed walkthrough steps, navigate to [Check that images have alt text](test-issues-tool.md#check-that-images-have-alt-text).
+
 
 ### Automatically checking that text colors have enough contrast
-
-For detailed walkthrough steps, see [Check that text colors have enough contrast](accy-test-issues-tool.md#check-that-text-colors-have-enough-contrast).
 
 Furthermore, in the **Issues** tool, you also find that two elements on the page don't have enough contrast.
 
@@ -91,6 +89,9 @@ You get detailed explanations of what that means, and when you drill down, you g
 :::image type="complex" source="../media/a11y-testing-element-with-contrast-issues.msft.png" alt-text="Element in the page highlighted after selecting the link to it" lightbox="../media/a11y-testing-element-with-contrast-issues.msft.png":::
     Element in the page highlighted after selecting the link to it
 :::image-end:::
+
+For detailed walkthrough steps, navigate to [Check that text colors have enough contrast](test-issues-tool.md#check-that-text-colors-have-enough-contrast).
+
 
 
 ### Checking that the webpage layout is usable when narrow
@@ -133,8 +134,6 @@ To find out what is going wrong, you need to use the **Inspect** tool.
 
 ## Using the Inspect tool to detect accessibility issues
 
-For detailed steps for this section, see [Use the Inspect tool to detect accessibility issues by hovering over parts of the webpage](accy-test-inspect-tool.md).
-
 Use the **Inspect** tool to detect accessibility issues by hovering over parts of the webpage.  The **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) tool is in the top-left corner of DevTools.  Turn on the **Inspect** tool by selecting the **Inspect** tool button:
 
 :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="Turn on the Inspect tool by selecting the Inspect tool button" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
@@ -147,7 +146,7 @@ After you select the **Inspect** tool button, you can move your pointer over the
     DevTools showing element dimensions as a color overlay, and element details as an information overlay
 :::image-end:::
 
-The **Inspect** tool shows a colored overlay of the layout properties of the element, including any sub-areas.  For detailed steps, see [Using the Inspect tool for color highlighting of sub-areas by hovering over the webpage](accy-test-inspect-tool.md#using-the-inspect-tool-for-color-highlighting-of-sub-areas-by-hovering-over-the-webpage).
+The **Inspect** tool shows a colored overlay of the layout properties of the element, including any sub-areas.  For detailed steps, see [Using the Inspect tool for color highlighting of sub-areas by hovering over the webpage](test-inspect-tool.md#using-the-inspect-tool-for-color-highlighting-of-sub-areas-by-hovering-over-the-webpage).
 
 The **Inspect** tool also displays an information overlay.  The upper section of the **Inspect** overlay displays the following information:
 
@@ -157,6 +156,8 @@ The **Inspect** tool also displays an information overlay.  The upper section of
 * The color, as a color swatch (a small, colored square) and as a formatted value (such as `#336699`).
 * Font information (size and font families).
 * Margin and padding, in pixels.
+
+For detailed walkthrough steps, navigate to [Use the Inspect tool to detect accessibility issues by hovering over the webpage](test-inspect-tool.md).
 
 
 ### Checking individual elements for text contrast, screen reader text, and keyboard support
@@ -174,12 +175,10 @@ The **Accessibility** section of the **Inspect** overlay contains the following:
     *   A green check mark icon indicates that the element is keyboard-focusable.
     *   A gray circle with diagonal line indicates that the element isn't keyboard-focusable.
 
-For detailed steps, see [Check individual elements for text contrast, screen reader text, and keyboard support](accy-test-inspect-tool.md#check-individual-elements-for-text-contrast-screen-reader-text-and-keyboard-support).
+For detailed walkthrough steps, navigate to [Check individual elements for text contrast, screen reader text, and keyboard support](test-inspect-tool.md#check-individual-elements-for-text-contrast-screen-reader-text-and-keyboard-support).
 
 
 ### Using the Inspect tool to hover over the webpage to highlight the DOM and CSS
-
-For detailed walkthrough steps, see [Using the Inspect tool to hover over the webpage to highlight the DOM and CSS](accy-test-inspect-tool.md#using-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css).
 
 When the **Inspect** tool is active, selecting any element in the rendered page opens the **Elements** tool, showing the HTML of the element in the DOM tree and showing the applied CSS properties in the **Styles** tab.
 
@@ -189,14 +188,16 @@ When the **Inspect** tool is active, selecting any element in the rendered page 
 
 When the **Inspect** tool is active, as you hover over different parts of the rendered page while the **Elements** tool is open, the DOM tree automatically refreshes.
 
+For detailed walkthrough steps, navigate to [Using the Inspect tool to hover over the webpage to highlight the DOM and CSS](test-inspect-tool.md#using-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css).
+
 
 ## Checking for keyboard support by using the Tab and Enter keys
-
-For detailed walkthrough steps, see [Check for keyboard support by using the Tab and Enter keys](accy-test-tab-enter-keys.md).
 
 Not all users have a pointer or touch device, and not all users are able to see the web projects we create.  This is why it is important that all our interfaces work at least with a keyboard.
 
 You can test this by using a keyboard to navigate the page, pressing **Tab** or **Shift+Tab** to jump from element to element.  If you press **Tab** on the demo page, the first thing that receives focus is the **Search** form in the page header.  Pressing **Enter** even allows you to submit the form, so that works, despite the label issue we discovered earlier when using the **Issues** tool.
+
+For detailed walkthrough steps, navigate to [Check for keyboard support by using the Tab and Enter keys](test-tab-enter-keys.md).
 
 When you press **Tab** instead of **Enter**, the next element that gets focus is the first **More** link in the content section of the page, as indicated by an outline.
 
@@ -238,8 +239,6 @@ Let's analyze these problems using DevTools.
 
 ### Analyzing the lack of indication of keyboard focus in the sidebar menu
 
-For detailed walkthrough steps, see [Analyze the lack of indication of keyboard focus in a sidebar menu](accy-test-analyze-no-focus-indicator.md).
-
 If you use the **Inspect** tool to highlight a button in the sidebar navigation menu, and then drill down in the DOM tree to the `a` element, you can start to find out why the sidebar navigation menu is confusing to keyboard users.
 
 :::image type="complex" source="../media/a11y-testing-menu-link.msft.png" alt-text="Inspecting the source code and the applied styles of a link in the sidebar navigation menu" lightbox="../media/a11y-testing-menu-link.msft.png":::
@@ -254,10 +253,10 @@ In the **Styles** tab, you can see the CSS that's applied to the link, and if yo
 
 The problem is that although the styles of the page have a `hover` state that shows you which menu item you are on when you use a mouse, there is no `focus` state to go along with it, for when you use a keyboard.  Even worse, the links have an `outline: none` setting in the CSS.  This is a common practice, to remove the outline that browsers automatically add to elements when you put focus on them using a keyboard.  As you can see here, this lack of `focus` styling can cause confusion.
 
+For detailed walkthrough steps, navigate to [Analyze the lack of indication of keyboard focus in a sidebar menu](test-analyze-no-focus-indicator.md).
+
 
 ### Analyzing the lack of keyboard support in the donation form
-
-For detailed walkthrough steps, see [Analyzing the lack of keyboard support in a form](accy-test-analyze-no-keyboard-support.md).
 
 Debugging the donation form requires understanding why the lack of focus styling doesn't get flagged as a problem by automatic testing, such as the **Issues** tool: the buttons are implemented using the `div` element.
 
@@ -266,6 +265,8 @@ To investigate this, you can use the **Inspect** tool to hover over the donation
 :::image type="complex" source="../media/a11y-testing-donation-button-info.msft.png" alt-text="Inspecting the buttons of the form shows that they aren't keyboard-accessible" lightbox="../media/a11y-testing-donation-button-info.msft.png":::
     Inspecting the buttons of the form shows that they aren't keyboard-accessible
 :::image-end:::
+
+For detailed walkthrough steps, navigate to [Analyzing the lack of keyboard support in a form](test-analyze-no-keyboard-support.md).
 
 If you select the **Donate** button, the **Inspect** tool takes you to the **Elements** tool and shows you the form's HTML:
 
@@ -305,8 +306,6 @@ This is a classic example where some extra JavaScript was necessary to create fu
 
 ### Checking the Accessibility Tree for keyboard and screen reader support
 
-For detailed walkthrough steps, see [Check the Accessibility Tree for keyboard and screen reader support](accy-test-accessibility-tree.md).
-
 Using the **Inspect** tool to individually check each element of the page can become pretty time-consuming.  An alternative way is to use the **Accessibility** tab to navigate the page's **Accessibility Tree**.  The Accessibility Tree indicates what information the page provides to assistive technology such as screen readers.
 
 :::image type="complex" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="Donation form button in the Accessibility Tree" lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
@@ -315,10 +314,10 @@ Using the **Inspect** tool to individually check each element of the page can be
 
 Any element in the tree that doesn't have a name, or that has a role of `generic`, is a problem, because that element won't be available to keyboard users or to people using assistive technology.
 
+For detailed walkthrough steps, navigate to [Check the Accessibility Tree for keyboard and screen reader support](test-accessibility-tree.md).
+
 
 ### Analyzing the order of keyboard access through sections of the page
-
-For detailed walkthrough steps, see [Test keyboard support using the Source Order Viewer](accy-test-tab-key-source-order-viewer.md).
 
 Another issue you may remember is the strange tabbing order within the page, where keyboard users access the sidebar navigation menu on the left only after tabbing through all the **More** links.  The sidebar navigation menu is meant to be a shortcut to reach deep into the page content.  But because you need to go through the entire page before you reach the sidebar navigation menu, that navigation menu becomes useless.
 
@@ -330,12 +329,12 @@ You can test issues like that using the **Source Order Viewer** in the **Accessi
     Turning on the Source Order Viewer shows the order of the elements in the source code as numeric overlays on the page
 :::image-end:::
 
+For detailed walkthrough steps, navigate to [Test keyboard support using the Source Order Viewer](test-tab-key-source-order-viewer.md).
+
 
 ## Testing contrast of text colors during various states
 
 ### Checking text color contrast in the default state
-
-For detailed walkthrough steps, see [Check text-color contrast in the default state using the Inspect tool](accy-test-inspect-text-contrast.md).
 
 In addition to the automatic color contrast tests shown earlier, you can also use the **Inspect** tool to check whether individual page elements have enough contrast.  If contrast information is available, the **Inspect** overlay shows the contrast ratio and a green checkbox icon for elements that have enough contrast, and a yellow alert icon for those that don't.
 
@@ -357,12 +356,14 @@ However, this isn't quite enough testing, because the elements on the page could
     The menu item showing different colors when the mouse pointer is over it
 :::image-end:::
 
+For detailed walkthrough steps, navigate to [Check text-color contrast in the default state using the Inspect tool](test-inspect-text-contrast.md).
+
 
 ### Checking accessibility during all states of elements, such as contrast during hover
 
-For detailed walkthrough steps, see [Check accessibility during all states of elements](accy-test-inspect-states.md).
-
 When you turn on the **Inspect** tool, you can't reach the `hover` state of the **Cats** button in the sidebar navigation menu to test the contrast ratio during the `hover` state, because the `hover` state in your styles never gets triggered.  Instead, you need to simulate the state of the **Cats** menu item, by using the state simulation in the **Styles** tab.
+
+For detailed walkthrough steps, navigate to [Check accessibility during all states of elements](test-inspect-states.md).
 
 Turn on the **Inspect** tool and then in the rendered page, select the blue **Cats** button in the sidebar navigation menu.  The **Elements** tool opens, with the `a` element selected in the DOM tree.  If needed, in the DOM tree, navigate to the element that has a `hover` state in the CSS applied to it.  In this case, this is the `a` element.
 
@@ -395,11 +396,11 @@ State simulation is also a good way to check whether you considered different us
 
 ### Checking for contrast issues with dark theme and light theme
 
-For detailed walkthrough steps, see [Check for contrast issues with dark theme and light theme](accy-test-dark-mode.md).
-
 Another consideration when it comes to color accessibility is that there could be different themes that you need to test for contrast issues.  Most operating systems these days come with a dark mode and a light mode, and you can react to this setting in your CSS by using a CSS media query.
 
 This demo page has a light and a dark theme, and you can test them without having to change your operating system, by using the [Preferred Color Scheme Simulation][DevToolsColorSchemeSimulation] in the **Rendering** tool.  So far, this article looked at the demo page with an operating system using a dark theme setting.  If we instead simulate selecting a light scheme and then refresh the page, the **Issues** tool shows six color contrast problems instead of two.
+
+For detailed walkthrough steps, navigate to [Check for contrast issues with dark theme and light theme](test-dark-mode.md).
 
 Use the **Rendering** tool to simulate light mode and trigger the other theme of the page:
 
@@ -422,18 +423,16 @@ The entire **Donation status** section of the page is unreadable in light mode, 
 
 ### Checking that the webpage is usable by people with color blindness
 
-For detailed walkthrough steps, see [Check that the page is usable by people with color blindness](accy-test-color-blindness.md).
-
 The different donation states use color (red, green, yellow) as the only means to differentiate between the states of funding.  You can't expect all of your users to experience these colors as intended, though.  If you use the [vision deficiencies emulation][DevToolsVisionDeficiencies] feature of DevTools, you can find out that this is not good enough, because you can simulate how people with different vision would perceive your design.
 
 :::image type="complex" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="Showing the page as someone with protanopia (red color blindness) would see it" lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
     Showing the page as if someone with protanopia (red color blindness) would see it
 :::image-end:::
 
+For detailed walkthrough steps, navigate to [Check that the page is usable by people with color blindness](test-color-blindness.md).
+
 
 ### Checking that the webpage is usable with blurred vision
-
-For detailed walkthrough steps, see [Check that the page is usable with blurred vision](accy-test-blurred-vision.md).
 
 Another interesting feature of the **Rendering** tool is that you can simulate blurred vision.  If we choose the **Blurred vision** option from the **Emulate vision deficiencies** dropdown list, we can see that the drop shadow on the text in the upper menu makes it really hard to read the menu items.
 
@@ -441,10 +440,10 @@ Another interesting feature of the **Rendering** tool is that you can simulate b
     Simulating a blurred page can reveal accessibility issues
 :::image-end:::
 
+For detailed walkthrough steps, navigate to [Check that the page is usable with blurred vision](test-blurred-vision.md).
+
 
 ### Checking that the page is usable with UI animation turned off (reduced motion)
-
-For detailed walkthrough steps, see [Check that the page is usable with UI animation turned off](accy-test-reduced-ui-motion.md).
 
 Another setting that operating systems come with these days are a way to turn off animations.  Animations can help the usability of a product, but they can also cause a lot of problems, ranging from confusion to nausea. That's why your products should not show animations to users who turned them off in the operating system.  By using a CSS media query, you can check whether the user wants to see animations, and turn them off accordingly.  And, much like with dark and light mode, there is a way to [simulate reduced motion using DevTools][DevToolsReducedMotion].
 
@@ -455,6 +454,8 @@ In the demo page here, turning off animations will stop the smooth scrolling of 
 :::image-end:::
 
 The animation of the top navigation bar, sidebar navigation menu, and **More** links still run even when the user doesn't want to see animations.  So this is yet another thing that needs to be fixed.
+
+For detailed walkthrough steps, navigate to [Check that the page is usable with UI animation turned off](test-reduced-ui-motion.md).
 
 
 ## What to do next?
@@ -478,15 +479,18 @@ We're constantly working on new accessibility features for DevTools.  If there i
 
 
 <!-- links -->
-[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html
-[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md
-[DevToolsIssuesTool]: ../issues/index.md
-[DevToolsReducedMotion]: ./reduced-motion-simulation.md
-[DevToolsVisionDeficiencies]: ./emulate-vision-deficiencies.md
+[AccessibilityTest]: ../../accessibility/test.md "Accessibility testing | Microsoft Docs"
+[DevtoolsAccessibilityReference]: reference.md "Accessibility reference | Microsoft Docs"
+[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-panel "The Accessibility panel - Accessibility Reference | Microsoft Docs"
+[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Dark or Light Color Scheme simulation | Microsoft Docs"
+[DevToolsIssuesTool]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"
+[DevToolsReducedMotion]: ./reduced-motion-simulation.md "Reduced motion simulation | Microsoft Docs"
+[DevToolsVisionDeficiencies]: ./emulate-vision-deficiencies.md "Emulate vision deficiencies | Microsoft Docs"
 <!-- external links -->
-[AccessibilityInsights]: https://accessibility-insights.io
-[AccessibilityInsightsAssessment]: https://accessibilityinsights.io/docs/en/web/getstarted/assessment/
-[Lighthouse]: https://developers.google.com/web/tools/lighthouse/
-[W3CContrastRatio]: https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio
-[WCAG]: https://www.w3.org/TR/WCAG21/
-[WebhintForCode]:https://aka.ms/webhint4code
+[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"
+[W3CContrastRatio]: https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio "contrast ratio | W3C"
+[WCAG]: https://www.w3.org/TR/WCAG21/ "Web Content Accessibility Guidelines | W3C"
+[AccessibilityInsightsAssessment]: https://accessibilityinsights.io/docs/en/web/getstarted/assessment/ "Assessment in Accessibility Insights for Web | Accessibility Insights"
+[AccessibilityInsights]: https://accessibilityinsights.io "Accessibility Insights"
+[Lighthouse]: https://developers.google.com/web/tools/lighthouse/ "Lighthouse | Google"
+[WebhintForCode]:https://aka.ms/webhint4code "webhint | Visual Studio Marketplace"
