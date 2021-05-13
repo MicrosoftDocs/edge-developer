@@ -22,7 +22,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # Testing text-color contrast using the Color Picker
 
 In DevTools, one way to view the contrast ratio of a text element is to use the Color Picker, in the DOM tree in the **Elements** tool.
