@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge for Web Apps
 title: Experimental features | Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/19/2021
+ms.date: 05/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
@@ -62,7 +62,6 @@ The following list describes the new experimental web app features that are avai
 | [Shortcuts](#shortcuts) | 87 or later | All |  
 | [File Handling](#file-handling) | 83 or later | All Desktop |  
 
-
 ## URI Protocol Handling  
 
 A uniform resource identifier \(URI\) may be used to define more than just links to webpages and web content using the HTTP or FTP protocol.  URIs may be used to describe links to anything that you codify into a schema.  For example, the `mailto://` protocol is used to describe an email link and the operating system \(OS\) or browser decides which webpage or app should handle that protocol.  
@@ -73,7 +72,7 @@ This feature allows you to complete the following actions.
 
 *   Register your PWA with the host OS using the manifest of your web app
 *   Declare that a PWA handles a specific URI protocol  
-     
+    
 After you register a PWA as a protocol handler, when a user chooses a hyperlink with a specific scheme such as `mailto://` or `web+music://` from a browser or a native app, the registered PWA is activated by the OS and receives the URI.  
 
 This feature requires you to update the web app manifest to include a `protocol_handlers` array, in the array you need to specify two fields:  
@@ -479,7 +478,7 @@ body {
 }
 ```  
 
-Chromium-based browsers are testing and shaping this feature. For more information including code examples, navigate to [Customize the window controls overlay of your PWA's title bar](https://web.dev/window-controls-overlay/).
+Chromium-based browsers are testing and shaping this feature.  For more information including code examples, navigate to [Customize the window controls overlay of your PWA's title bar][WebDevWindowControlsOverlay].  
 
 ## Run On OS Login  
 
@@ -587,3 +586,4 @@ To provide feedback on Microsoft Edge web app experiments.
 [GithubWicgPwaUrlHandlerBlobMainExplainerMd]: https://github.com/WICG/pwa-url-handler/blob/main/explainer.md "PWAs as URL Handlers | GitHub"  
 
 [WebDevFileHandling]: https://web.dev/file-handling "Let web applications be file handlers | web.dev"  
+[WebDevWindowControlsOverlay]: https://web.dev/window-controls-overlay "Customize the window controls overlay of your PWA's title bar | web.dev"  
