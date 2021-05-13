@@ -65,3 +65,5 @@ The accessibility-testing demo page inherits the dark or light theme setting fro
 
 
 <!-- links -->
+[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Dark or Light Color Scheme simulation | Microsoft Docs"
+[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

@@ -1,6 +1,6 @@
 ---
-description: Use the Inspect tool to detect accessibility issues by hovering over parts of the webpage.
-title: Use the Inspect tool to detect accessibility issues by hovering over parts of the webpage
+description: Use the Inspect tool to detect accessibility issues by hovering over the webpage.
+title: Use the Inspect tool to detect accessibility issues by hovering over the webpage
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/07/2021
@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-# Use the Inspect tool to detect accessibility issues by hovering over parts of the webpage
+# Use the Inspect tool to detect accessibility issues by hovering over the webpage
 
 <!-- there is also an Inspect tool subsection in article:
 Tutorials: Get started with viewing and changing the DOM: View DOM nodes: Inspect a node (https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/dom/index#inspect-a-node)
@@ -17,7 +17,7 @@ See if any info there to move (or copy) to here (or to other article/bucket)
  -->
 
 The **Inspect** tool displays information about individual elements as you hover over the rendered webpage, including accessibility information.
-(In contrast, the **Issues** tool automatically reports issues for the entire webpage, including accessibility issues.)
+(In contrast, the **Issues** tool automatically reports issues for the entire webpage.)
 
 The **Inspect** tool button \(![Inspect](../media/inspect-icon.msft.png)\) is in the upper-left corner of DevTools.  When you select the **Inspect** tool button, the button turns blue, indicating that the **Inspect** tool is active.
 
@@ -105,7 +105,7 @@ In addition to the information overlay when you hover over the webpage, the **In
     Details about the selected element are displayed in the **Elements** tool
 :::image-end:::
 
-After selecting an element in the rendered page, you could then use the **Accessibility** tab  (near the **Styles** tab) to view the **Accessibility Tree** and use the **Source Order Viewer**.
+After selecting an element in the rendered page, you could then use the **Accessibility** tab (near the **Styles** tab) to view the **Accessibility Tree** and use the **Source Order Viewer**.
 
 
 ## Getting in touch with the Microsoft Edge DevTools team  
@@ -114,3 +114,6 @@ After selecting an element in the rendered page, you could then use the **Access
 
 
 <!-- links -->
+[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"
+[W3CContrastRatio]: https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio "contrast ratio | W3C"
+[WCAG]: https://www.w3.org/TR/WCAG21/ "Web Content Accessibility Guidelines | W3C"

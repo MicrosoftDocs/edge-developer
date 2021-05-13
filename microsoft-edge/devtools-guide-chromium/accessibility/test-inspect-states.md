@@ -107,3 +107,4 @@ State simulation is also a good way to check if you considered different user ne
 
 
 <!-- links -->
+[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

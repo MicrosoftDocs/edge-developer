@@ -44,3 +44,4 @@ To simulate blurred vision, in the **Rendering** tool, use the **Emulate vision 
 
 
 <!-- links -->
+[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"
