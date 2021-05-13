@@ -3,12 +3,21 @@ description: Provides a summary of high-impact changes that may impact site comp
 title: Site compatibility-impacting changes coming to Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 05/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform
 ---
+
 # Site compatibility-impacting changes coming to Microsoft Edge  
+
+> [!NOTE]
+> 
+> The Web Platform is a collection of technologies used for building web pages; these technologies include HTML, CSS, JavaScript, and many other open standards. The Web Platform constantly evolves to improve user experience, security, and privacy. In some cases, changes may impact the functionality of existing pages. The Chromium project announces upcoming web platform changes at https://www.chromestatus.com/features/schedule. 
+> 
+> For functionality and compatibility reasons, Microsoft Edge adopts nearly all of the web platform changes from the upstream Chromium project, although Microsoft remains in full control of the Microsoft Edge browser and may defer or reject changes if we believe doing so will benefit browser users. Feature areas where Microsoft Edge plans to deviate from Chromium changes (either in timing or behavior) will be noted in the table below. The table also highlights especially high-impact changes that the Microsoft Edge team is tracking. 
+>
+> Review this article often; the Microsoft Edge team updates this page as thinking evolves, timelines solidify, and new changes are announced.
 
 The web is constantly evolving to improve the user experience, security, and privacy.  In some cases, changes may be significant enough to impact the functionality of existing pages.  The following table summarizes particularly high-impact changes that the Microsoft Edge team is currently tracking.  Review this article often; the Microsoft Edge team updates the following page as thinking evolves, timelines solidify, and new changes are announced.  
 
