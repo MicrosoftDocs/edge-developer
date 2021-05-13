@@ -18,9 +18,9 @@ The **Issues** tool includes an **Accessibility** section that automatically rep
 ## Check the issues reported in the Accessibility section of the Issues tool
 
 There are several ways to open the **Issues** tool:
-*  Select the **Issues counter** in the upper right of DevTools.
+*  Select the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) in the upper right of DevTools.
 *  In the **Elements** tool, in the DOM tree, select a wavy underline on an element.
-*  In the Command Menu, type `issues`, and then select *Show Issues*.
+*  In the Command Menu, type `issues`, and then select **Show Issues**.
 
 
 ## View the Accessibility section of the Issues tool
@@ -42,7 +42,7 @@ There are several ways to open the **Issues** tool:
 1.  On the **Issues** tab, expand the **Accessibility** section.
 
 
-<!-- Issues tool: Accessibility section > "Form elements must have labels: Element has no title attribute Element has no placeholder attribute" -->
+<!-- 1. Issues tool: Accessibility section > "Form elements must have labels: Element has no title attribute Element has no placeholder attribute" -->
 ## Check that input fields have labels
 
 To check that input fields have labels connected to them, use the **Issues** tool, which automatically checks the entire webpage and reports this issue in the **Accessibility** section.
@@ -84,7 +84,7 @@ To check that input fields have labels connected to them, use the **Issues** too
     :::image-end:::
 
 
-<!-- Issues tool: Accessibility section > "Images must have alternate text: Element has no title attribute" -->
+<!-- 2. Issues tool: Accessibility section > "Images must have alternate text: Element has no title attribute" -->
 ## Check that images have alt text
 
 Basic accessibility testing requires making sure alternative text (also called _alt text_) is provided for images.
@@ -101,8 +101,12 @@ To automatically check whether alt text is provided for images, use the **Issues
         The Issues tool reporting images that are missing alternative text
     :::image-end:::
 
+### See also
 
-<!-- Issues tool: Accessibility section > "Users may have difficulties reading text content due to insufficient color contrast" -->
+* [Images must have alternate text](https://dequeuniversity.com/rules/axe/4.1/image-alt)
+
+
+<!-- 3. Issues tool: Accessibility section > "Users may have difficulties reading text content due to insufficient color contrast" -->
 ## Check that text colors have enough contrast
 
 To make sure text colors have enough contrast, use the **Issues** tool, which has an **Accessibility** section.
@@ -151,3 +155,5 @@ The DOM tree in the **Elements** tool flags issues directly in the HTML, by addi
 
 
 <!-- links -->
+[DevToolsIssuesTool]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"
+[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

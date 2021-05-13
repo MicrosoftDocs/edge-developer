@@ -57,11 +57,11 @@ Try using the demo page by using a keyboard rather than a mouse, as follows.
     
 We found some issues here to fix:
 
-*  When using a keyboard, the sidebar navigation menu with blue buttons doesn't visually indicate which button has focus.  This issue is analyzed in [Analyze the lack of indication of keyboard focus in a sidebar menu](accy-test-analyze-no-focus-indicator.md).
+*  When using a keyboard, the sidebar navigation menu with blue buttons doesn't visually indicate which button has focus.  This issue is analyzed in [Analyze the lack of indication of keyboard focus in a sidebar menu](test-analyze-no-focus-indicator.md).
 
-*  In the donation form, the amount buttons and the **Donate** button don't work with a keyboard.  This issue is analyzed in [Analyze the lack of keyboard support in a form](accy-test-analyze-no-keyboard-support.md).
+*  In the donation form, the amount buttons and the **Donate** button don't work with a keyboard.  This issue is analyzed in [Analyze the lack of keyboard support in a form](test-analyze-no-keyboard-support.md).
 
-*  The order of the keyboard access through sections of the page seems wrong.  You navigate through all the **More** links in the document before you reach the sidebar navigation menu with blue buttons.  This makes the sidebar navigation menu pointless.  By the time the **Tab** key puts focus on the sidebar navigation menu, you already traversed all the content that the sidebar navigation menu was supposed to provide easy access to.  This issue is analyzed in [Test keyboard support using the Source Order Viewer](accy-test-tab-key-source-order-viewer.md).
+*  The order of the keyboard access through sections of the page seems wrong.  You navigate through all the **More** links in the document before you reach the sidebar navigation menu with blue buttons.  This makes the sidebar navigation menu pointless.  By the time the **Tab** key puts focus on the sidebar navigation menu, you already traversed all the content that the sidebar navigation menu was supposed to provide easy access to.  This issue is analyzed in [Test keyboard support using the Source Order Viewer](test-tab-key-source-order-viewer.md).
 
 
 ## Getting in touch with the Microsoft Edge DevTools team  
@@ -70,3 +70,4 @@ We found some issues here to fix:
 
 
 <!-- links -->
+[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

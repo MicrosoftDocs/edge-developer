@@ -66,3 +66,4 @@ These two accessibility issues also need to be fixed in the demo page, regarding
 
 
 <!-- links -->
+[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"
