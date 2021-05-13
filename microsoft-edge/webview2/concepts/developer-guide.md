@@ -3,7 +3,7 @@ description: Learn about development best practices to use when developing your 
 title: WebView2 development best practices  
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 05/11/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -12,7 +12,6 @@ keywords: WebView2, webview2, WebView, webview, edge, best practices
 # WebView2 development best practices  
 
 Every development team follows different practices when building their application. When you build WebView2 applications, there are practices we recommend you follow. This article outlines those recommendations and best practices for you when building production-based WebView2 applications.
-
 
 ## Use Evergreen WebView2 Runtime (recommended)  
 
@@ -30,9 +29,10 @@ WebView2 applications need both a Webview2 SDK, and a WebView2 Runtime installed
 
 If you use the Evergreen WebView2 Runtime, there are some scenarios where the runtime may not be updated to use the latest version. For example, when users don't have internet access, the runtime isn't  automatically updated in that environment. Additionally, using some group policies pause WebView2 updates. When you push an update to your WebView2 application, the application may break because it uses newer APIs that are not available in the installed runtime.   
  
-To solve this situation, you can test for the availability of the APIs in the installed runtime, before your code calls the API. This test for newer functionality is similar to other web development best practices that detect supported features before using new web APIs. To test for API availability in the installed runtime, use:
-* The `queryinterface` in C/C++. 
-* A try/catch block in .NET or WinUI. 
+To solve this situation, you can test for the availability of the APIs in the installed runtime, before your code calls the API. This test for newer functionality is similar to other web development best practices that detect supported features before using new web APIs. To test for API availability in the installed runtime, use:  
+
+*   The `queryinterface` in C/C++. 
+*   A try/catch block in .NET or WinUI. 
     
 For more information, navigate to [Determine WebView2 Runtime requirement][Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement].  
 
@@ -52,7 +52,6 @@ WebView2 apps create a user data folder to store data such as cookies, credentia
 ## Follow recommended WebView2 security best practices 
 For any WebView2 application, ensure you follow our recommended WebView2 security best practices.  For more information, navigate to [Best practices for developing secure WebView2 applications][Webview2ConceptsSecurity].  
 
-
 <!-- links -->  
 
 [Webview2ConceptsDistributionDeployingEvergreenWebview2Runtime]: ../concepts/distribution.md#deploying-the-evergreen-webview2-runtime "Deploying the Evergreen WebView2 Runtime - Distribution of apps using WebView2 | Microsoft Docs"  
@@ -65,5 +64,7 @@ For any WebView2 application, ensure you follow our recommended WebView2 securit
 [Webview2GetStartedWinforms]: ../get-started/winforms.md "Get started with WebView2 in Windows Forms | Microsoft Docs"  
 [Webview2GetStartedWinui]: ../get-started/winui.md "Get started with WebView2 in WinUI 3 (Preview) | Microsoft Docs"  
 [Webview2GetStartedWpf]: ../get-started/wpf.md "Get started with WebView2 in WPF | Microsoft Docs"  
-[Webview2ReferenceaddNewBrowserVersionAvailable]: https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable "add_NewBrowserVersionAvailable | Microsoft Docs"  
-[Webview2ReferenceNewBrowserVersionAvailable]: https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable "CoreWebView2Environment.NewBrowserVersionAvailable Event | Microsoft Docs"  
+
+[Webview2ReferenceaddNewBrowserVersionAvailable]: /microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable "add_NewBrowserVersionAvailable | Microsoft Docs"  
+
+[Webview2ReferenceNewBrowserVersionAvailable]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable "CoreWebView2Environment.NewBrowserVersionAvailable Event | Microsoft Docs"  

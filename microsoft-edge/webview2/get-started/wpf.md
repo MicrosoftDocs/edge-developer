@@ -3,7 +3,7 @@ description: Get started guide with WebView2 for WPF apps
 title: Get started with WebView2 for WPF apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 05/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -60,7 +60,7 @@ Start with a basic desktop project that contains a single main window.
 
 Use NuGet to add the WebView2 SDK to the project.  
 
-1.  Hover on the projecty, open the contextual menu \(right-click\), and choose **Manage NuGet Packages...**.  
+1.  Hover on the project, open the contextual menu \(right-click\), and choose **Manage NuGet Packages...**.  
     
     :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="Manage NuGet packages" lightbox="./media/wpf-getting-started-mng-nuget.png":::
        Manage NuGet packages
