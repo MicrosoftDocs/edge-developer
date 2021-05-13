@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
+<!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques 
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,11 +38,11 @@ To open the **Accessibility** tab:
 :::image-end:::  
 
 
-## View the position of an element in the accessibility tree
+## View the position of an element in the Accessibility Tree
 
 The [accessibility tree][MDNAccessibilityTree] is a subset of the DOM tree.  The accessibility tree only contains elements from the DOM tree that are relevant and useful for displaying the contents of a page in a screen reader.  
 
-Inspect the position of an element in the accessibility tree from the [Accessibility](#the-accessibility-tab) tab.  
+Inspect the position of an element in the accessibility tree from the [Accessibility](#testing-accessibility-using-the-accessibility-tab) tab.  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="The Accessibility Tree section" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
    The **Accessibility Tree** section  
@@ -52,7 +53,7 @@ Inspect the position of an element in the accessibility tree from the [Accessibi
 
 ARIA attributes ensure that screen readers have all of the information that they need in order to properly represent the contents of a page.  
 
-View the ARIA attributes of an element in the [Accessibility](#the-accessibility-tab) tab.  
+View the ARIA attributes of an element in the [Accessibility](#testing-accessibility-using-the-accessibility-tab) tab.  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="The ARIA Attributes section" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
    The **ARIA Attributes** section  
@@ -66,7 +67,7 @@ View the ARIA attributes of an element in the [Accessibility](#the-accessibility
 
 Some accessibility properties are dynamically calculated by the browser.  These properties are displayed in the **Computed Properties** section of the **Accessibility** tab.  
 
-View the computed accessibility properties of an element in the [Accessibility](#the-accessibility-tab) tab.
+View the computed accessibility properties of an element in the [Accessibility](#testing-accessibility-using-the-accessibility-tab) tab.
 
 :::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="The Computed Properties section of the Accessibility tab" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
    The **Computed Properties** section of the **Accessibility** tab  
@@ -77,12 +78,14 @@ View the computed accessibility properties of an element in the [Accessibility](
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
+
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+
 
 <!-- links -->
 [DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "View only the CSS that is actually applied to an element - CSS Reference | Microsoft Docs"  
