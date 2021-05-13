@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
+<!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques 
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +36,7 @@ You can use Lighthouse from within DevTools to audit the accessibility of a page
 Use the Lighthouse tool to determine:
 
 *   Whether a page is properly marked up for screen readers.  
-*   Whether the text elements on a page have sufficient contrast ratios.  Navigate to [View the contrast ratio of a text element in the Color Picker](#view-the-contrast-ratio-of-a-text-element-in-the-color-picker).  
+*   Whether the text elements on a page have sufficient contrast ratios, as shown in the [Color Picker](color-picker.md).  
 
 To audit a page:
 
@@ -86,6 +87,7 @@ One advantage that the aXe extension has over the Lighthouse tool is that it ena
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
