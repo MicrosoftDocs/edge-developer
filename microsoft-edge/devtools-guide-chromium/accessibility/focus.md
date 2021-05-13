@@ -49,7 +49,7 @@ Since that expression always represents the focused element, you now have a way 
 
 ## See also
 
-*  [Analyze the lack of indication of keyboard focus in a sidebar menu](accy-test-analyze-no-focus-indicator.md) - Creating a live expression in the **Console**.
+*  [Analyze the lack of indication of keyboard focus in a sidebar menu](test-analyze-no-focus-indicator.md) - Creating a live expression in the **Console**.
 
 
 ## Getting in touch with the Microsoft Edge DevTools team
