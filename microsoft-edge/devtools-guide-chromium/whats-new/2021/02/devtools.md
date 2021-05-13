@@ -269,7 +269,7 @@ Previously, the `fn.displayName` property allowed you to control debug names for
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-This experiment provides a **full accessibility tree view** in the **Elements** tool.  The [Accessibility][DevtoolsAccessibilityReferenceAccessibilityPanel] pane provides a partial accessibility tree view, that displays the direct ancestor chain from the root node to the inspected node.  
+This experiment provides a **full accessibility tree view** in the **Elements** tool.  The [Accessibility][DevtoolsAccessibilityTab] pane provides a partial accessibility tree view, that displays the direct ancestor chain from the root node to the inspected node.  
 After you turn on this experiment and reload the DevTools, choose one of the following buttons to switch the display in the Elements tool for all elements on the webpage.  
 
 *   To display the full accessibility tree view , choose the **Switch to Accessibility Tree view**.  
@@ -300,7 +300,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 <!-- links -->  
 
-[DevtoolsAccessibilityReferenceAccessibilityPanel]: ../../../accessibility/reference.md#the-accessibility-panel "The Accessibility panel - Accessibility reference | Microsoft Docs"  
+[DevtoolsAccessibilityTab]: ../../../accessibility/accessibility-tab.md "Testing accessibility using the Accessibility tab | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsConsoleReferenceFilterByLogLevel]: ../../../console/reference.md#filter-by-log-level "Filter by log level - Console reference | Microsoft Docs"  
 [DevtoolsConsoleReferenceFilterMessages]: ../../../console/reference.md#filter-messages "Filter messages - Console Reference | Microsoft Docs"  
