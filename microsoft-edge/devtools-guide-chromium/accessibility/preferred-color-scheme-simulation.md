@@ -39,7 +39,7 @@ Operating systems have a way to display any application in darker or lighter col
 
 ## See also
 
-* [Check for contrast issues with dark theme and light theme](accy-test-dark-mode.md)
+* [Check for contrast issues with dark theme and light theme](test-dark-mode.md)
 
 
 <!-- links -->  
