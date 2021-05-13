@@ -19,15 +19,15 @@ Microsoft and any contributors reserve all others rights, whether under their re
 
 ## Contributing  
 
-This is the repository for Microsoft Edge **documentation** hosted at [https://docs.microsoft.com/microsoft-edge/](https://docs.microsoft.com/microsoft-edge/index).  
+This is the repository for Microsoft Edge **documentation** hosted at [https://docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge/index).  
 
 If you want to include new coverage or have feedback, consider [contributing](./CONTRIBUTING.md).  You may edit the existing content, add new content, or create new [issues](https://github.com/MicrosoftDocs/edge-developer/issues).  The Microsoft Edge team reviews a look at your suggestions and works to incorporate the suggestions into the docs.  
 
-Find the data for the [Status](https://developer.microsoft.com/microsoft-edge/status) page at:  [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status).  The `Status` page provides the latest implementation status and future plans for web platform features in Microsoft Edge.
+Find the data for the [Status](https://developer.microsoft.com/microsoft-edge/status) webpage at:  [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status).  The `Status` webpage provides the latest implementation status and future plans for web platform features in Microsoft Edge.
 
 ### Conventions  
 
-*   When adding a page, you must add an entry for it in [toc.md](./microsoft-edge/toc.yml) for it to appear.
+*   When adding a webpage, you must add an entry for it in [toc.md](./microsoft-edge/toc.yml) for it to appear.
 *   A directory may contain more directories or `readme.md`s
 *   Folder/directory names are dash-separated \(for example, `f12-tools`\) and lowercase.  Directories are used in URLs on the `docs.microsoft.com` site.  Avoid using underscores, PascalCase, or camelCase.  
 
@@ -40,11 +40,11 @@ These other text elements have styling available:
     *   You may also nest bullets.  
     *   Bullets lists should have more than one entry.  
 *   Standard arrangement 
-
+    
 1.  Ordered lists.  
 1.  Use regular western-style numbering.  
 1.  Should be used only when a list truly has order.  
-
+    
 ---  
 
 Horizontal rules are available.  Use horizontal rules sparingly to reduce clutter.  
@@ -52,7 +52,7 @@ Avoid using horizontal rules with heading tags; some headings already use line s
 
 ### Displaying code  
 
-You may use inline `code` Markdown syntax \(with the backticks\).  
+You may use inline `code` markdown syntax \(with the backticks\).  
 
 Or you may display blocks of code.  The following code snippet is a css example.  
 
@@ -79,7 +79,7 @@ Four different versions of notes are currently styled.
 *   WARNING  
 *   TIP  
 *   IMPORTANT  
-
+    
 Respectively, the notes look like the following code snippets.  
 
 ```md
@@ -108,9 +108,9 @@ For multi-line blockquote notes, use a greater-than \(`>`\) character in front o
 
 ```md
 > This is a line in a blockquote.  
-> My text may wrap to more than one line when the Markdown is parsed, but I must include all my information within a single \(sometimes very long line\) in the Markdown.  
+> My text may wrap to more than one line when the markdown is parsed, but I must include all my information within a single \(sometimes very long line\) in the markdown.  
 > This is another line in a blockquote.  
-```
+```  
 
 ### Images  
 
