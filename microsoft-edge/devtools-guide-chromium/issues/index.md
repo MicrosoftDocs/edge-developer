@@ -107,7 +107,7 @@ The **Issues** tool in the DevTools Drawer presents warnings in a structured, ag
 
 ## See also
 
-* [Automatically test a webpage for accessibility issues](../accessibility/accy-test-issues-tool.md)
+* [Automatically test a webpage for accessibility issues](../accessibility/test-issues-tool.md)
 
 
 ## Getting in touch with the Microsoft Edge DevTools team  
