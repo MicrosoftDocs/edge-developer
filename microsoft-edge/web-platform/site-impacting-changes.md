@@ -16,16 +16,6 @@ Microsoft Edge adopts nearly all of the upstream changes to the web platform fro
 
 Review this article often.  The Microsoft Edge team updates this article as thinking evolves, timelines solidify, and new changes are announced.  
 
-<!-- > [!NOTE]
-> 
-> The Web Platform is a collection of technologies used for building web pages; these technologies include HTML, CSS, JavaScript, and many other open standards. The Web Platform constantly evolves to improve user experience, security, and privacy. In some cases, changes may impact the functionality of existing pages. The Chromium project announces upcoming web platform changes at https://www.chromestatus.com/features/schedule. 
-> 
-> For functionality and compatibility reasons, Microsoft Edge adopts nearly all of the web platform changes from the upstream Chromium project, although Microsoft remains in full control of the Microsoft Edge browser and may defer or reject changes if we believe doing so will benefit browser users. Feature areas where Microsoft Edge plans to deviate from Chromium changes (either in timing or behavior) will be noted in the table below. The table also highlights especially high-impact changes that the Microsoft Edge team is tracking. 
->
-> Review this article often; the Microsoft Edge team updates this page as thinking evolves, timelines solidify, and new changes are announced.  -->  
-
-<!-- The web is constantly evolving to improve the user experience, security, and privacy.  In some cases, changes may be significant enough to impact the functionality of existing pages.  The following table summarizes particularly high-impact changes that the Microsoft Edge team is currently tracking.  Review this article often. The Microsoft Edge team updates the following page as thinking evolves, timelines solidify, and new changes are announced.  -->  
-
 | Change | Stable Channel | Experimentation | Additional information |  
 |:--- |:--- |:--- |:--- |
 | Cookies default to `SameSite=Lax` and `SameSite=None-requires-Secure` | [Chrome+1](#release-comments) \(Edge v86\)  | Canary v82, Dev v82 | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, including the planned timeline by Google for this change, navigate to the [Chrome Platform Status entry][ChromestatusFeature5088147346030592].  |  
