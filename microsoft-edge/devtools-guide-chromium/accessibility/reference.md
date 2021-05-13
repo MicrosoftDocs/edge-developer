@@ -3,12 +3,27 @@ description: A list of the accessibility-testing features in Microsoft Edge DevT
 title: Accessibility-testing features in DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
+<!-- Copyright Kayce Basques 
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->  
 # Accessibility-testing features in DevTools
+
+<!-- all the original content has been removed, so the above comment needs to be removed; it was only retained to resolve a merge conflict -->
 
 To test your webpages for accessibility, make a list of accessibility aspects to check, such as the following broad categories:
 
@@ -18,6 +33,7 @@ To test your webpages for accessibility, make a list of accessibility aspects to
 
 Then use DevTools features to check those aspects of accessibility, as follows.
 
+# Accessibility reference  
 
 ## Accessibility checklist and related DevTools features
 
@@ -71,3 +87,19 @@ Then use DevTools features to check those aspects of accessibility, as follows.
 <!-- external -->
 [MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "Accessibility | MDN"  
 [MDNScreenReader]: https://developer.mozilla.org/docs/Glossary/Screen_reader "Screen reader | MDN"  
+
+<!-- the remainder of this file was retained only to resolve a merge conflict, and needs to be removed because all of the original content has been removed from this file -->
+[W3CContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced "Contrast (Enhanced) Level AAA | W3C"  
+[W3CContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum "Contrast (Minimum) Level AA | W3C"  
+
+> [!NOTE]
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
