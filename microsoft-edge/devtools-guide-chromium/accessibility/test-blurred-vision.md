@@ -12,13 +12,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 <!-- Rendering tool: Emulate vision deficiencies: Blurred vision -->
 
-To check that a webpage is usable with blurred vision, in the **Rendering** tool, from the **Emulate vision deficiencies** dropdown list, select **Blurred vision**.
-
 To simulate blurred vision, in the **Rendering** tool, use the **Emulate vision deficiencies** menu.  When you this feature with the accessibility-testing demo webpage, you can see that the drop shadow on the text in the upper menu makes it hard to read the menu items.
 
 **To check that a webpage is usable with blurred vision:**
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  Select **Esc** to open the Drawer at the bottom of DevTools.  Select the **+** icon at the top of the Drawer to see the list of tools, and then select **Rendering**.  The Rendering tool appears.
 
@@ -36,6 +34,7 @@ To simulate blurred vision, in the **Rendering** tool, use the **Emulate vision 
 ## See also
 
 *  [Emulate vision deficiencies](emulate-vision-deficiencies.md)
+*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
 
 ## Getting in touch with the Microsoft Edge DevTools team  
