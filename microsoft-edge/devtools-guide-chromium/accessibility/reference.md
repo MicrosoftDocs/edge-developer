@@ -10,22 +10,14 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Accessibility-testing features in DevTools
 
-<!-- all the original content has been removed and replaced by the following content, which is all new -->
-
-To test your webpages for accessibility, make a list of accessibility aspects to check, such as the following broad categories:
-
-*  Check for keyboard support.
-*  Check for screen reader support.
-*  Check for usability with visual impairment.
-
-Then use DevTools features to check those aspects of accessibility, as follows.
+To test your webpages for accessibility, make a list of accessibility aspects to check, and then use DevTools features to check those aspects of accessibility, as follows.
 
 
 ## Accessibility checklist and related DevTools features
 
 <!-- row numbering in the comments is keyed to the order of the links to "detailed walkthrough steps" in the article "Overview of accessibility testing using DevTools" (accessibility-testing-in-devtools.md) -->
 
-| Accessibility check | Feature of DevTools | Article or subheading |
+| Accessibility checklist item | Feature of DevTools | Article or subheading |
 |---|---|---|
 | Check accessibility through an automatic report | **Issues** tool > **Accessibility** section of report | <!--1.-->[View the Accessibility section of the Issues tool](test-issues-tool.md#view-the-accessibility-section-of-the-issues-tool) |
 | Check that input fields have labels, for screen readers (automatically, for the entire page) | **Issues** tool > **Accessibility** section of report | <!--2.-->[Check that input fields have labels](test-issues-tool.md#check-that-input-fields-have-labels) |
@@ -42,12 +34,12 @@ Then use DevTools features to check those aspects of accessibility, as follows.
 | Check for keyboard and screen reader support | **Elements** tool > **Accessibility** tab > **Accessibility Tree** | <!--11.-->[Check the Accessibility Tree for keyboard and screen reader support](test-accessibility-tree.md) |
 | Check for keyboard support: check Tab key order | **Elements** tool > **Accessibility** tab > **Source Order Viewer** | <!--12.-->[Test keyboard support using the Source Order Viewer](test-tab-key-source-order-viewer.md) |
 | Check for screen reader support | **Elements** tool > **Accessibility** tab > **Accessibility Tree**, **ARIA Attributes**, and **Computed Properties** | <!--#n/a.-->[Testing accessibility using the Accessibility tab](accessibility-tab.md) |
-| Check text color contrast in the default state by using the Inspect tool's information overlay | **Inspect** tool > **Accessibility** section of overlay > **Contrast** row | <!--13.-->[Check text-color contrast in the default state using the Inspect tool](test-inspect-text-contrast.md) |
+| Check text color contrast in the default state | **Inspect** tool > **Accessibility** section of overlay > **Contrast** row | <!--13.-->[Check text-color contrast in the default state using the Inspect tool](test-inspect-text-contrast.md) |
 | Check accessibility during all states of elements, such as contrast during hover | **Elements** tool > **Styles** tab > **Toggle Element State** | <!--14.-->[Check accessibility during all states of elements](test-inspect-states.md) |
-| Check for contrast issues with dark theme and light theme | **Rendering** tool > **Emulate CSS media feature prefers-color-scheme** | <!--15.-->[Check for contrast issues with dark theme and light theme](test-dark-mode.md) |
+| Check for contrast issues with dark theme (dark mode) and light theme | **Rendering** tool > **Emulate CSS media feature prefers-color-scheme** | <!--15.-->[Check for contrast issues with dark theme and light theme](test-dark-mode.md) |
 | Check that the webpage is usable by people with color blindness | **Rendering** tool > **Emulate vision deficiencies** dropdown list | <!--16.-->[Check that the page is usable by people with color blindness](test-color-blindness.md) |
 | Check that the webpage is usable with blurred vision | **Rendering** tool > **Emulate vision deficiencies** dropdown list > **Blurred vision** | <!--17.-->[Check that the page is usable with blurred vision](test-blurred-vision.md) |
-| Check that the page is usable with UI animation turned off (reduced motion) | **Rendering** tool > **Emulate CSS media feature prefers-reduced-motion** | <!--18.-->[Check that the page is usable with UI animation turned off](test-reduced-ui-motion.md) |
+| Check that the webpage is usable with UI animation turned off (reduced motion) | **Rendering** tool > **Emulate CSS media feature prefers-reduced-motion** | <!--18.-->[Check that the page is usable with UI animation turned off](test-reduced-ui-motion.md) |
 
 <!--| (n/a; not a specific accessibility test) | **Inspect** tool > **Accessibility** section of overlay | 7. [Using the Inspect tool to hover over the webpage to highlight the DOM and CSS](test-inspect-tool.md#using-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css) |-->
 
@@ -55,10 +47,10 @@ Then use DevTools features to check those aspects of accessibility, as follows.
 ## See also
 
 *   [Overview of accessibility testing using DevTools][DevtoolsAccessibilityAccessibilitytestingindevtools]
-*   [Navigating Microsoft Edge DevTools With Assistive Technology][DevtoolsAccessibilityNavigation]
+*   [Navigate Microsoft Edge DevTools with assistive technology][DevtoolsAccessibilityNavigation]
 *   [Accessibility testing][DevtoolsAccessibilityTest]
-*   [screen reader][MDNScreenReader]
 *   [Accessibility principles and best practices][MDNAccessibility]
+*   [screen reader][MDNScreenReader]
 
 
 ## Getting in touch with the Microsoft Edge DevTools team  
@@ -69,7 +61,7 @@ Then use DevTools features to check those aspects of accessibility, as follows.
 <!-- links -->  
 [DevtoolsAccessibilityTest]: ../../accessibility/test.md "Accessibility testing | Microsoft Docs"
 [DevtoolsAccessibilityAccessibilitytestingindevtools]: accessibility-testing-in-devtools.md "Overview of accessibility testing using DevTools | Microsoft Docs"
-[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigate Microsoft Edge DevTools With Assistive Technology | Microsoft Docs"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigate Microsoft Edge DevTools with assistive technology | Microsoft Docs"  
 <!-- external -->
 [MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "Accessibility | MDN"  
 [MDNScreenReader]: https://developer.mozilla.org/docs/Glossary/Screen_reader "Screen reader | MDN"  
