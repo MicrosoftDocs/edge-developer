@@ -31,7 +31,7 @@ When the **Inspect** tool is active, when you hover over any element within the 
 <!-- Inspect tool: Accessibility section of overlay -->
 ## Check individual elements for text contrast, screen reader text, and keyboard support
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  Select the **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
@@ -60,7 +60,7 @@ The bottom part of the **Inspect** overlay in the webpage has an **Accessibility
 
 ## Other information in the Inspect overlay
 
-<!-- this section is general info about the Inspect tool, not particularly focused on accessibility -->
+<!-- general info about the Inspect tool, not particularly focused on accessibility -->
 
 The top part of the **Inspect** overlay in the webpage (above the **Accessibility** section of the overlay) lists applicable details for the element, such as the following:
 
@@ -74,11 +74,11 @@ The top part of the **Inspect** overlay in the webpage (above the **Accessibilit
 
 ## Using the Inspect tool for color highlighting of sub-areas by hovering over the webpage
 
-<!-- this section is general info about the Inspect tool, not particularly focused on accessibility -->
+<!-- general info about the Inspect tool, not particularly focused on accessibility -->
 
 In addition to the information overlay when you hover over the webpage, the **Inspect** tool also provides the same helpful region-coloring behavior as hovering in the DOM tree in the **Elements** tool, but more directly.
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  Select the **Inspect** button \(![Inspect tool icon](../media/inspect-icon.msft.png)\) in the top-left corner of DevTools, so that the button is highlighted (blue).
 
@@ -89,9 +89,9 @@ In addition to the information overlay when you hover over the webpage, the **In
 
 ## Using the Inspect tool to hover over the webpage to highlight the DOM and CSS
 
-<!-- this section is general info about the Inspect tool, not particularly focused on accessibility -->
+<!-- general info about the Inspect tool, not particularly focused on accessibility -->
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  Select the **Inspect** button \(![the Inspect tool](../media/inspect-icon.msft.png)\) in the top-left corner of DevTools, so that the button is highlighted (blue).
 
@@ -106,6 +106,11 @@ In addition to the information overlay when you hover over the webpage, the **In
 :::image-end:::
 
 After selecting an element in the rendered page, you could then use the **Accessibility** tab (near the **Styles** tab) to view the **Accessibility Tree** and use the **Source Order Viewer**.
+
+
+## See also
+
+*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
 
 ## Getting in touch with the Microsoft Edge DevTools team  
