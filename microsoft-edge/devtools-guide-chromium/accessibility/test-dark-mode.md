@@ -12,15 +12,16 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 <!-- Rendering tool: Emulate CSS media feature prefers-color-scheme -->
 
-To check for contrast issues with dark theme and light theme (for dark mode and light mode), in the **Rendering** tool, use the **Emulate CSS media feature prefers-color-scheme** dropdown list.
+When testing color accessibility, there could be different display color themes that you need to test for contrast issues.
 
-When testing color accessibility, there could be different display color themes that you need to test for contrast issues.  Most operating systems come with a dark mode and a light mode.  Your webpage can react to this operating system setting, by using a CSS media query.
+Most operating systems come with a dark mode and a light mode.  Your webpage can react to this operating system setting, by using a CSS media query.  You can test these themes and test your CSS media query without having to change your operating system setting, by using the `prefers-color-scheme` CSS options in the **Rendering** tool.
 
-The accessibility-testing demo page has a light theme and a dark theme.  You can test these themes without having to change your operating system setting, by using the `prefers-color-scheme` CSS options in the **Rendering** tool, as described in the article [Dark or Light Color Scheme simulation][DevToolsColorSchemeSimulation].
+As an example, the accessibility-testing demo page includes a light theme and a dark theme.  The demo page inherits the dark or light theme setting from the operating system.  If we use DevTools to simulate the operating system being set to a light scheme and then refresh the demo webpage, the **Issues** tool shows six color-contrast problems instead of two.  (You might see different numbers.)
 
-The accessibility-testing demo page inherits the dark or light theme setting from the operating system.  If we use DevTools to simulate the operating system being set to a light scheme and then refresh the webpage, the **Issues** tool shows six color-contrast problems instead of two.  (You might see different numbers.)
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
+**To emulate a user's selection of preferred color theme:**
+
+1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  Select **Esc** to open the Drawer at the bottom of DevTools.  Select the **+** icon at the top of the Drawer to see the list of tools, and then select **Rendering**.  The Rendering tool appears.
 
@@ -56,7 +57,8 @@ The accessibility-testing demo page inherits the dark or light theme setting fro
 
 ## See also
 
-* [Dark or Light Color Scheme simulation](preferred-color-scheme-simulation.md)
+*  [Dark or Light Color Scheme simulation][DevToolsColorSchemeSimulation]
+*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
 
 ## Getting in touch with the Microsoft Edge DevTools team  
