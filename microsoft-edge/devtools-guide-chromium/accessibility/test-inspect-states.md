@@ -10,31 +10,18 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Check accessibility during all states of elements
 
-
 <!-- 5. STYLES: TOGGLE STATE -->
 
-## Overview of Toggle Element State in the Styles pane
+Check the accessibility during all states of elements, such as text color contrast during the `hover` state.  To check other states of elements, in the **Styles** tab, select **\:hov** (**Toggle Element State**).  This button displays the **Force element state** checkboxes.  
 
-Check the accessibility during all states of elements, such as text color contrast during the `hover` state.  To check other states of elements, in the **Styles** pane within the **Elements** tool, select the **\:hov** (**Toggle Element State**) button.  This button displays the **Force element state** checkboxes.  
-
-Check accessibility during all states of elements, such as contrast during hover.
-
-To inspect accessibility during all states of elements, such as text contrast during the hover state, in the **Styles** pane, use **Toggle Element State**.
-
-First, we show why state simulation is necessary while using the Inspect tool, and then we show how to use state simulation.
+First, we show why state simulation is necessary while using the **Inspect** tool, and then we show how to use state simulation.
 
 
 ## Hovering when the Inspect tool is active doesn't show the text-color contrast for the hover state
 
-<!-- Inspect tool needs different states -->
-
-<!-- this section is a semi out-of-place aside; only serving to build up to the message/steps of setting states.  Check how verbose the main overview article is, then reduce this section -->
-
 The **Inspect** tool's information overlay only represents a single state.  But the elements on the page could have different states, and you need to test those states for accessibility, too.  For example, when you hover the mouse pointer over the menu of the accessibility-testing demo page, you get a rather involved animation that changes the colors, as follows:
 
-**To see why state simulation is necessary while using the Inspect tool:**
-
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.
+1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.
 
 1.  Hover over the various buttons in the menu which begins with the blue **Cats** button.  The menu animations run.
 
@@ -52,9 +39,7 @@ This text-contrast checking isn't quite enough, because the elements on the page
 
 
 <!-- Elements tool: Styles pane: Toggle Element State -->
-## Check accessibility during all states of elements, such as contrast during hover
-
-### Using state simulation in the Styles pane to simulate the hover state of an animated menu item 
+## Using state simulation in the Styles pane to simulate the hover state of an animated menu item 
 
 To check accessibility during all states of elements, such as text-color contrast during the hover state: in the **Styles** pane within the **Elements** tool, use the **\:hov** (**Toggle Element State**) button, which displays the **Force element state** group of checkboxes.
 
@@ -62,7 +47,7 @@ When the **Inspect** tool is active, instead of hovering over an animated elemen
 
 **To turn on the hover state while using the Inspect tool:**
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
 
 1.  Select the **Inspect** \(![Inspect tool button](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
@@ -99,6 +84,11 @@ When the **Inspect** tool is active, instead of hovering over an animated elemen
     :::image-end:::
 
 State simulation is also a good way to check if you considered different user needs.  In the case of this **:hov** (**Toggle Element State**) menu, you can find out that simulating the `:focus` state makes no difference to the look and feel, and that is a problem to fix, found by accessibility testing.
+
+
+## See also
+
+*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
 
 ## Getting in touch with the Microsoft Edge DevTools team  
