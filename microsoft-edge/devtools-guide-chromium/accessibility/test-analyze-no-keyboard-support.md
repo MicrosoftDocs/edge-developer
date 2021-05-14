@@ -10,14 +10,15 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Analyze the lack of keyboard support in a form
 
-This article uses the **Inspect** tool and **Event Listeners** tab to analyze the lack of keyboard support in a form with buttons that use the `div` element. 
+This article uses the **Inspect** tool and **Event Listeners** tab to analyze the lack of keyboard support in a demo page which has buttons that use the `div` element.
 
-In the **Donate** form within the accessibility-testing demo webpage, the amount buttons and the **Donate** button don't work with a keyboard.  Debugging the donation form requires understanding why the lack of focus styling doesn't get flagged as a problem by automatic testing, such as the **Issues** tool: the buttons are implemented using the `div` element.
+In the **Donate** form within the accessibility-testing demo webpage, the amount buttons and the **Donate** button don't work with a keyboard.  Debugging the donation form requires understanding why the lack of focus styling doesn't get flagged as a problem by automatic testing, such as the **Issues** tool: the buttons are implemented using the `div` element, which is not recognized by tools as a control on a form.
 
+**To use the Inspect tool and Event Listeners tab to analyze the lack of keyboard support in the demo page:**
 
 <!-- 1. Inspect tool: Accessibility section: keyboard-focusable row -->
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
     
 1.  Select the **Inspect** \(![Inspect icon](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
@@ -80,6 +81,11 @@ donations.addEventListener('click', e => {
 Using a `click` event to read the buttons is good practice, because a `click` event fires both on mouse pointer and keyboard interaction.  However, because a `div` element isn't keyboard-accessible, and this **Donate** button is implemented as a `div` element (`<div class="submitbutton">Donate</div>`), this JavaScript functionality never executes unless you use a mouse or an equivalent source of a `click` event, such as a specialized button on some keyboards.
 
 This is a classic example where some extra JavaScript was necessary to create functionality that `button` elements would have provided natively, and simulating the functionality of buttons ended up producing an inaccessible experience.
+
+
+## See also
+
+*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
 
 ## Getting in touch with the Microsoft Edge DevTools team  
