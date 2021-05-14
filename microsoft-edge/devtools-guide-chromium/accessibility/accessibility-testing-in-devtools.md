@@ -16,8 +16,6 @@ In this article, we cover some of the features you can use in DevTools to test f
     The demo page used in this article with a few accessibility issues
 :::image-end:::
 
-This article is an overview of the accessibility-testing features of DevTools.  For a list of accessibility tests and which features of DevTools to use for each test, along with specific steps to use each feature, navigate to[Accessibility-testing features in DevTools](reference.md).
-
 Open the [demo page with accessibility issues][DevToolsA11yErrorsDemopage] in a new tab to try it out yourself and you can test along.  Detailed steps are provided in linked articles.
 
 
@@ -460,7 +458,7 @@ For detailed walkthrough steps, navigate to [Check that the page is usable with 
 
 ## What to do next?
 
-We've covered quite a few tools you can use to make sure that you catch accessibility problems in your products, ranging from automated checks and manual detail checks to simulation of different states and environments.  For a list of these features, mapped to an accessibility checklist, navigate to [Accessibility-testing features in DevTools][DevtoolsAccessibilityReference].  We also covered the fact that automated tools can't find all the problems in a product, because many of the accessibility barriers show up only during interactive use.
+We've covered quite a few tools you can use to make sure that you catch accessibility problems in your products, ranging from automated checks and manual detail checks to simulation of different states and environments.  These tools are summarized in [Accessibility-testing features in DevTools](reference.md).  We also covered the fact that automated tools can't find all the problems in a product, because many of the accessibility barriers show up only during interactive use.
 
 None of these tools can replace a proper testing round of your products with people using assistive technologies and following a plan to check for all the required tests. At Microsoft we're using the [Assessments][AccessibilityInsightsAssessment] feature of [Accessibility Insights][AccessibilityInsights] for that.  We have a defined process that each product needs to go through before it ends up in the hands of end users.  There are many more checks that are needed, such as testing when zoomed-in, testing with screen readers, testing with voice recognition, and testing in high-contrast mode.
 
