@@ -3,7 +3,7 @@ description: Testing accessibility using Lighthouse from within DevTools.
 title: Testing accessibility using Lighthouse
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

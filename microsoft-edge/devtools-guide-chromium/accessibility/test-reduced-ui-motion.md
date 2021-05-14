@@ -3,7 +3,7 @@ description: To check that a webpage is usable with UI animation turned off (red
 title: Check that the page is usable with UI animation turned off
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2021
+ms.date: 05/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

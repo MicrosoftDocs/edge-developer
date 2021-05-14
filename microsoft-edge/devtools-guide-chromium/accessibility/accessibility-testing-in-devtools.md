@@ -3,7 +3,7 @@ description: Getting started for testing for accessibility problems using DevToo
 title: Overview of accessibility testing using DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 05/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

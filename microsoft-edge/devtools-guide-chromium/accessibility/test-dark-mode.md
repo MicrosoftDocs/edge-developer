@@ -3,7 +3,7 @@ description: To check for contrast issues with dark theme and light theme (for d
 title: Check for contrast issues with dark theme and light theme
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/07/2021
+ms.date: 05/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
