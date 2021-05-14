@@ -8,18 +8,18 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-
 # Check the Accessibility Tree for keyboard and screen reader support
 
 <!-- Accessibility tab: Accessibility Tree -->
 
-To check for keyboard and screen reader support, one feature of DevTools to use is the **Elements** tool: **Accessibility** tab: **Accessibility Tree**.  The **Accessibility Tree** is a subset of the DOM tree.  It only contains elements from the DOM tree that are relevant and useful for displaying the contents of a page in a screen reader.  
+Several DevTools features check for keyboard and screen reader support.  Using the **Inspect** tool to check the accessibility of each page element individually can become pretty time-consuming.  An alternative way to check a webpage is to use the **Accessibility Tree**.  The **Accessibility Tree** indicates what information the page provides to assistive technology such as screen readers.
 
-Using the **Inspect** tool to check each page element individually can become pretty time-consuming.  An alternative way to check a webpage is to use the **Accessibility** tab, to navigate the document's accessibility tree.  The **Accessibility** tab shows the **Accessibility Tree**, and indicates what information about the current document is provided by assistive technology such as screen readers.
+The **Accessibility Tree** is a subset of the DOM tree; it only contains elements from the DOM tree that are relevant and useful for displaying the contents of a page in a screen reader.  The **Accessibility Tree** is in the **Accessibility** tab of the **Elements** tool (near the **Styles** tab).
 
-The **Accessibility** tab is in the **Elements** tool, to the right of the **Styles** tab.
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
+**To explore using the Accessibility Tree with the demo page:**
+
+1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
 
 1.  Select the **Inspect** \(![the Inspect icon](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
@@ -39,6 +39,7 @@ Any element in the tree that doesn't have a name, or has a role of `generic` (su
 ## See also
 
 *  [View the position of an element in the Accessibility Tree][DevtoolsAccessibilityAccessibilityTabViewTree]
+*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
 
 ## Getting in touch with the Microsoft Edge DevTools team  
