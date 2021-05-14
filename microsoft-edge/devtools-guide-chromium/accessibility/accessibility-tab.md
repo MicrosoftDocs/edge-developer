@@ -22,7 +22,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # Testing accessibility using the Accessibility tab
 
 The **Accessibility** tab is where you view the accessibility tree, ARIA attributes, and computed accessibility properties of DOM nodes.  
@@ -42,7 +41,7 @@ To open the **Accessibility** tab:
 
 The [accessibility tree][MDNAccessibilityTree] is a subset of the DOM tree.  The accessibility tree only contains elements from the DOM tree that are relevant and useful for displaying the contents of a page in a screen reader.  
 
-Inspect the position of an element in the accessibility tree from the [Accessibility](#testing-accessibility-using-the-accessibility-tab) tab.  
+Inspect the position of an element in the accessibility tree from the **Accessibility** tab.  
 
 :::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="The Accessibility Tree section" lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
    The **Accessibility Tree** section  
@@ -53,7 +52,7 @@ Inspect the position of an element in the accessibility tree from the [Accessibi
 
 ARIA attributes ensure that screen readers have all of the information that they need in order to properly represent the contents of a page.  
 
-View the ARIA attributes of an element in the [Accessibility](#testing-accessibility-using-the-accessibility-tab) tab.  
+View the ARIA attributes of an element in the **Accessibility** tab.
 
 :::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="The ARIA Attributes section" lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
    The **ARIA Attributes** section  
@@ -63,11 +62,11 @@ View the ARIA attributes of an element in the [Accessibility](#testing-accessibi
 ## View the computed accessibility properties of an element  
 
 > [!NOTE]
-> If you are looking for computed CSS properties, use the [Computed][DevtoolsCssReferenceViewActuallyAppliedElements] tab.
+> For computed CSS properties, use the [Computed][DevtoolsCssReferenceViewActuallyAppliedElements] tab.
 
 Some accessibility properties are dynamically calculated by the browser.  These properties are displayed in the **Computed Properties** section of the **Accessibility** tab.  
 
-View the computed accessibility properties of an element in the [Accessibility](#testing-accessibility-using-the-accessibility-tab) tab.
+View the computed accessibility properties of an element in the **Accessibility** tab.
 
 :::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="The Computed Properties section of the Accessibility tab" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
    The **Computed Properties** section of the **Accessibility** tab  
