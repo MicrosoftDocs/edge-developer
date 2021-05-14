@@ -11,14 +11,15 @@ keywords: microsoft edge, web development, f12 tools, devtools
 # Test keyboard support using the Source Order Viewer
 
 <!-- Accessibility tool: Source Order Viewer -->
-To quickly see the tab order of the sections of a webpage, use the **Source Order Viewer** in the **Accessibility** tab, to the right of the **Styles** tab.
+To quickly see the overall **Tab** key order for moving through the sections of a webpage, use the **Source Order Viewer**.  The **Source Order Viewer** is in the **Accessibility** tab (near the **Styles** tab).
+
 
 ## Analyzing the order of the keyboard access through sections of the page
 
 The accessibility-testing demo webpage has a counterintuitive tabbing order, where keyboard users access the sidebar navigation menu only after tabbing through all the **More** links.  The sidebar navigation menu is meant to be a shortcut to reach deep into the page content.  But because you need to go through the entire page before you reach the sidebar navigation menu, that navigation menu is ineffective for keyboard users.
 
-The **Tab** order on the demo page is:
-1. The **Search** field, then the **go** button for the Search field.
+The **Tab** key order on the demo page is:
+1. The **Search** field, then the **go** button for the **Search** field.
 1. The **More** button in the **Cats** section, to navigate to a "Cats" webpage.  Then the other **More** buttons, for Dogs, Sheep, Horses, and then Alpacas.
 1. The blue buttons in the sidebar navigation menu: **Cats**, **Dogs**, **Sheep**, **Horses**, and then **Alpacas**.
 1. The donation textbox in the donation form.
@@ -29,9 +30,8 @@ The reason for the confusing **Tab** key order after the **More** buttons is tha
 
 You can test issues with **Tab** key order by using the **Source Order Viewer** in the **Accessibility** tab.  The **Source Order Viewer** is an experimental feature; for more information, see [Source Order Viewer](../experimental-features/index.md#source-order-viewer).
 
-**To activate and use the Source Order Viewer:**
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
+**To turn on the Source Order Viewer:**
 
 1.  In DevTools, in the upper right, select the **Settings** \(![Settings button](../media/settings-button-icon.msft.png)\) button.  The **Settings** page of DevTools appears.
 
@@ -42,6 +42,11 @@ You can test issues with **Tab** key order by using the **Source Order Viewer** 
 1.  In the upper-right corner of the **Settings** page, select **X** to close the Settings page.  At the top of DevTools, a message appears: "One or more settings have changed which require a reload to take effect."
 
 1.  Select the **Reload DevTools** button.
+
+
+**To activate and use the Source Order Viewer, with the demo page:**
+
+1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
 
 1.  In the **Elements** tool, to the right of the **Styles** tab, select the **Accessibility** tab.
 
@@ -54,6 +59,11 @@ You can test issues with **Tab** key order by using the **Source Order Viewer** 
     :::image-end:::
     
 1.  Scroll the page to see all of the numeric overlays, including on the page footer section.
+
+
+## See also
+
+*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
 
 ## Getting in touch with the Microsoft Edge DevTools team  
