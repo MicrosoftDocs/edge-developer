@@ -103,7 +103,7 @@
                       href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
                     - name: Analyze the lack of indication of keyboard focus in a sidebar menu
                       href: devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
-                    - name: Analyzing the lack of keyboard support in a form
+                    - name: Analyze the lack of keyboard support in a form
                       href: devtools-guide-chromium/accessibility/test-analyze-no-keyboard-support.md
                 - name: Accessibility tab
                   items:
