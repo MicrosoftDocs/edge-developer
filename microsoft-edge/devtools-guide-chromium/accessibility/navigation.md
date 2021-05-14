@@ -38,7 +38,7 @@ For example:
 *   The **Elements** tool lets you [view and change DOM nodes][DevtoolsDomIndexNavigateDomTreeKeyboard] or [CSS][DevtoolsCssIndex].  
 *   The [Console tool][DevtoolsConsoleIndex] lets you read JavaScript logs and live-edit objects.  
 
-Within the content area of each tool (or _panel_), there are a number of different tabs.  For example, the **Elements** tool contains tabs to inspect CSS styles, event listeners, the accessibility tree, and much more.
+Within the content area of each tool, there are a number of different tabs.  For example, the **Elements** tool contains tabs to inspect CSS styles, event listeners, the accessibility tree, and more.
 
 ## Keyboard shortcuts  
 
@@ -70,11 +70,11 @@ To focus a specific panel, use the [Command Menu][DevtoolsCommandMenuIndex]:
 1.  Type the name of the panel you want to open, then use the `Down Arrow` on the keyboard to navigate to the correct option.  
 1.  Select `Enter` to run a command.  
 
-Complete the following actions to open the **Elements** tool (or panel):
+To open the **Elements** tool:
 
 1.  Open the **Command Menu**.  
 1.  Type `E` then `L`.  The **Panel > Show Elements** option is selected.  
-1.  Select `Enter` to run the command that opens the panel.  
+1.  Select `Enter`.  
 
 Opening a panel this way puts focus on the contents of the panel.  In the case of the **Elements** tool, focus moves into the **DOM Tree**.  
 
