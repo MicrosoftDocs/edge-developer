@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Suppose that you are testing the keyboard navigation accessibility of a page.  When navigating the page with the `Tab` key, the focus ring sometimes disappears because the element that has focus is hidden.  
 
-Complete the following actions to track the focused element in DevTools.  
+To track the focused element in DevTools:
 
 1.  Open the **Console**.  
 1.  Choose **Create live expression** \(![Create live expression](../media/create-live-expression-icon.msft.png)\).  
@@ -48,7 +48,7 @@ Since that expression always represents the focused element, you now have a way 
 
 ## See also
 
-*  [Analyze the lack of indication of keyboard focus in a sidebar menu](test-analyze-no-focus-indicator.md) - Creating a live expression in the **Console**.
+*  [Analyze the lack of indication of keyboard focus in a sidebar menu](test-analyze-no-focus-indicator.md)
 
 
 ## Getting in touch with the Microsoft Edge DevTools team
