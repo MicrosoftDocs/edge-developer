@@ -12,7 +12,10 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 <!-- Inspect tool: information overlay: Accessibility section: Contrast row -->
 
-Check text color contrast in the default state by using the **Inspect** tool.  The Inspect tool's information overlay on the page has an **Accessibility** section that includes **Contrast** information.
+Check text color contrast in the default state by using the **Inspect** tool.  The **Inspect** tool's information overlay on the webpage has an **Accessibility** section that includes **Contrast** information.
+
+This article leads up to another, more specialized article: [Check accessibility during all states of elements][DevtoolsAccessibilityTestInspectStates].
+
 
 **To check text-color contrast in the default state by using the Inspect tool's information overlay:**
 
@@ -26,7 +29,7 @@ In some cases, contrast is affected by setting the browser to light theme or dar
 
 As an example, the sidebar menu elements of the demo page such as the blue **Cats** button have enough contrast, but the green **Dogs** link in the **Donation status** section does not have enough contrast.  Inspect those elements using the **Inspect** tool, as follows:
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
 
 1.  Select the **Inspect** \(![Inspect button](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
@@ -49,9 +52,14 @@ There are several DevTools features for inspecting text-color contrast:
 
 *  Use the **Inspect** tool (as an information overlay on the webpage) to check whether an individual page element has enough text-color contrast.  The **Inspect** tool's information overlay includes an **Accessibility** section that has a **Contrast** information row.  The **Inspect** tool only shows text-contrast information for the current state.  This approach is described in the current article.
 
-*  The **Issues** tool automatically reports any color-contrast issues for the entire webpage, when text and background color don't contrast enough.  This approach is described in another article.
+*  The **Issues** tool automatically reports any color-contrast issues for the entire webpage, when text and background color don't contrast enough.  This approach is described in [Check that text colors have enough contrast](test-issues-tool.md#check-that-text-colors-have-enough-contrast).
 
-*  Emulate a non-default state such as the hover state, by using **Toggle Element State** in the **Styles** pane, described in another article.
+*  Emulate a non-default state, such as the `hover` state, by using **Toggle Element State** in the **Styles** pane, described in [Check accessibility during all states of elements](test-inspect-states.md).
+
+
+## See also
+
+*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
 
 ## Getting in touch with the Microsoft Edge DevTools team  
@@ -60,4 +68,5 @@ There are several DevTools features for inspecting text-color contrast:
 
 
 <!-- links -->
+[DevtoolsAccessibilityTestInspectStates]: test-inspect-states.md "Check accessibility during all states of elements | Microsoft Docs"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"
