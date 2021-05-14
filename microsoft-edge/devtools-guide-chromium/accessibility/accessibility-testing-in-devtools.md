@@ -258,7 +258,7 @@ For detailed walkthrough steps, navigate to [Analyze the lack of indication of k
 
 ### Analyzing the lack of keyboard support in the donation form
 
-Debugging the donation form requires understanding why the lack of focus styling doesn't get flagged as a problem by automatic testing, such as the **Issues** tool: the buttons are implemented using the `div` element.
+Debugging the donation form requires understanding why the lack of focus styling doesn't get flagged as a problem by automatic testing, such as the **Issues** tool: the buttons are implemented using the `div` element, which is not recognized by tools as a control on a form.
 
 To investigate this, you can use the **Inspect** tool to hover over the donation form's buttons.  The result is that none of them are keyboard-accessible, as indicated by the gray ring.  The buttons of the donation form also have no name, and have a role of `generic` (representing `div` or `span` elements), which means they aren't accessible to assistive technology.
 
@@ -398,7 +398,7 @@ State simulation is also a good way to check whether you considered different us
 
 Another consideration when it comes to color accessibility is that there could be different themes that you need to test for contrast issues.  Most operating systems these days come with a dark mode and a light mode, and you can react to this setting in your CSS by using a CSS media query.
 
-This demo page has a light and a dark theme, and you can test them without having to change your operating system, by using the [Preferred Color Scheme Simulation][DevToolsColorSchemeSimulation] in the **Rendering** tool.  So far, this article looked at the demo page with an operating system using a dark theme setting.  If we instead simulate selecting a light scheme and then refresh the page, the **Issues** tool shows six color contrast problems instead of two.
+This demo page has a light and a dark theme, and you can test them without having to change your operating system, by using [Dark or Light Color Scheme simulation][DevToolsColorSchemeSimulation] in the **Rendering** tool.  So far, this article looked at the demo page with an operating system using a dark theme setting.  If we instead simulate selecting a light scheme and then refresh the page, the **Issues** tool shows six color contrast problems instead of two.
 
 For detailed walkthrough steps, navigate to [Check for contrast issues with dark theme and light theme](test-dark-mode.md).
 
@@ -460,7 +460,7 @@ For detailed walkthrough steps, navigate to [Check that the page is usable with 
 
 ## What to do next?
 
-We've covered quite a few tools you can use to make sure that you catch accessibility problems in your products, ranging from automated checks and manual detail checks to simulation of different states and environments.  For a list of these features, mapped to various accessibility checklist items, navigate to [Accessibility-testing features in DevTools](reference.md).  We also covered the fact that automated tools can't find all the problems in a product, because many of the accessibility barriers show up only during interactive use.
+We've covered quite a few tools you can use to make sure that you catch accessibility problems in your products, ranging from automated checks and manual detail checks to simulation of different states and environments.  For a list of these features, mapped to an accessibility checklist, navigate to [Accessibility-testing features in DevTools][DevtoolsAccessibilityReference].  We also covered the fact that automated tools can't find all the problems in a product, because many of the accessibility barriers show up only during interactive use.
 
 None of these tools can replace a proper testing round of your products with people using assistive technologies and following a plan to check for all the required tests. At Microsoft we're using the [Assessments][AccessibilityInsightsAssessment] feature of [Accessibility Insights][AccessibilityInsights] for that.  We have a defined process that each product needs to go through before it ends up in the hands of end users.  There are many more checks that are needed, such as testing when zoomed-in, testing with screen readers, testing with voice recognition, and testing in high-contrast mode.
 
@@ -479,9 +479,7 @@ We're constantly working on new accessibility features for DevTools.  If there i
 
 
 <!-- links -->
-[AccessibilityTest]: ../../accessibility/test.md "Accessibility testing | Microsoft Docs"
-[DevtoolsAccessibilityReference]: reference.md "Accessibility reference | Microsoft Docs"
-[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-panel "The Accessibility panel - Accessibility Reference | Microsoft Docs"
+[DevtoolsAccessibilityReference]: reference.md "Accessibility-testing features in DevTools | Microsoft Docs"
 [DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Dark or Light Color Scheme simulation | Microsoft Docs"
 [DevToolsIssuesTool]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"
 [DevToolsReducedMotion]: ./reduced-motion-simulation.md "Reduced motion simulation | Microsoft Docs"
