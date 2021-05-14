@@ -24,13 +24,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->  
 # Testing text-color contrast using the Color Picker
 
-In DevTools, one way to view the contrast ratio of a text element is to use the Color Picker, in the DOM tree in the **Elements** tool.
-
 Some people with low vision do not see areas as very bright or very dark.  Everything tends to appear at about the same brightness, which makes it hard to distinguish outlines and edges.  
 
 Contrast ratio measures the difference in brightness between the foreground and background of text.  If your text has a low contrast ratio, then these low vision users may literally experience your site as a blank screen.  
 
-The Color Picker helps you verify that your text meets recommended contrast ratio levels.
+In DevTools, one way to view the contrast ratio of a text element is to use the Color Picker, in the DOM tree in the **Elements** tool.  The Color Picker helps you verify that your text meets recommended contrast ratio levels.
 
 **To check the text-color contrast using the Color Picker:**
 
@@ -41,23 +39,25 @@ The Color Picker helps you verify that your text meets recommended contrast rati
        Inspect a paragraph in the **DOM Tree**  
     :::image-end:::  
     
-1.  On the **Styles** tab, choose the color square next to the `color` value of the element.  
+1.  On the **Styles** tab, locate the **color** property that's applied to the element, and then select the color square next to the **color** property.
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="The color property of the element" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
        The `color` property of the element  
     :::image-end:::  
     
-1.  Check the **Contrast Ratio** section of the Color Picker.  One checkmark means that the element meets the [minimum recommendation][W3CContrastMinimum].  Two checkmarks means that it meets the [enhanced recommendation][W3CContrastEnhanced].  
+1.  Examine the **Contrast Ratio** section of the Color Picker.  One checkmark means that the element meets the [minimum recommendation][W3CContrastMinimum].  Two checkmarks means that it meets the [enhanced recommendation][W3CContrastEnhanced].  
     
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 13.97" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
        The **Contrast Ratio** section of the Color Picker shows 2 checkmarks and a value of `13.97`  
     :::image-end:::  
     
-1.  For more information, choose the **Contrast Ratio** section.  A line appears in the visual picker at the top of the Color Picker.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color does not meet recommendations, then anything on the same side also does not meet recommendations.  
-    
+1.  For more information, select the **Contrast ratio** section to expand it.  In the visual picker at the top of the Color Picker, two lines appear, running across the visual picker, along with a circle for the current color.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color does not meet recommendations, then anything on the same side also does not meet recommendations.  
+
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="The Contrast Ratio Line in the visual picker" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
        The **Contrast Ratio** Line in the visual picker  
     :::image-end:::  
+
+1. To try different colors, select within the visual picker, or select a color swatch at the bottom of the Color Picker.
     
 
 ## Getting in touch with the Microsoft Edge DevTools team  
