@@ -12,22 +12,23 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 <!-- keyboard: Tab, Enter -->
 
-Test the usability of a webpage several ways:
-*  By using the keyboard, particularly the **Tab**, **Shift**+**Tab**, and **Enter** keys.  Described in the current article.
+Test the usability of a webpage for keyboard users in several ways:
+*  By using the keyboard, particularly the **Tab**, **Shift**+**Tab**, and **Enter** keys.  This approach is described in the current article.
 *  Check for keyboard support for an individual element by using the **Inspect** tool.  The Inspect tool's information overlay includes an **Accessibility** section that includes a **Keyboard-focusable** row.  
 *  Check the **Issues** report's **Accessibility** section for keyboard support issues.
 
 Not all users have a pointer or touch device, and not all users can see the web projects we create.  This is why it is important that the user interface works at least with a keyboard.  Make sure you can press the **Tab** key to move the focus to each form control on a webpage, and make sure you can press the **Enter** key to activate a form button.
 
-Try using the demo page by using a keyboard rather than a mouse, as follows.
 
-1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser.
+**To check the demo page for accessibility issues by using a keyboard rather than a mouse:**
+
+1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser.
 
 1.  Use a keyboard to navigate the demo document, using the **Tab** and **Shift+Tab** keys to jump from element to element.  On the demo webpage, pressing **Tab** first moves focus to the search form in the `header` section.
 
 1.  Select **Tab** to put focus on a button, and then select  **Enter** to click the focused button.
 
-1.  In the demo page, select **Tab** to put focus on the **Search** field, and then select **Enter** to submit the search, producing the same result as clicking the **go** button.  Selecting **Enter** to send the **Search** form works correctly, despite the `label` element issue that we discovered earlier by using the **Issues tool**.
+1.  In the demo page, select **Tab** to put focus on the **Search** field, and then select **Enter** to submit the search, producing the same result as clicking the **go** button.  Selecting **Enter** to send the **Search** form works correctly, despite the `label` element issue that's found by the **Issues tool**.
 
 1.  Select **Tab**.  The next element you put focus on is the first **More** link in the `content` section of the webpage, as indicated by an outline.
     
@@ -57,11 +58,16 @@ Try using the demo page by using a keyboard rather than a mouse, as follows.
     
 We found some issues here to fix:
 
-*  When using a keyboard, the sidebar navigation menu with blue buttons doesn't visually indicate which button has focus.  This issue is analyzed in [Analyze the lack of indication of keyboard focus in a sidebar menu](test-analyze-no-focus-indicator.md).
+*  When using a keyboard, the sidebar navigation menu with blue buttons doesn't visually indicate which button has focus.  This issue is covered in [Analyze the lack of indication of keyboard focus in a sidebar menu](test-analyze-no-focus-indicator.md).
 
-*  In the donation form, the amount buttons and the **Donate** button don't work with a keyboard.  This issue is analyzed in [Analyze the lack of keyboard support in a form](test-analyze-no-keyboard-support.md).
+*  In the donation form, the amount buttons and the **Donate** button don't work with a keyboard.  This issue is covered in [Analyze the lack of keyboard support in a form](test-analyze-no-keyboard-support.md).
 
 *  The order of the keyboard access through sections of the page seems wrong.  You navigate through all the **More** links in the document before you reach the sidebar navigation menu with blue buttons.  This makes the sidebar navigation menu pointless.  By the time the **Tab** key puts focus on the sidebar navigation menu, you already traversed all the content that the sidebar navigation menu was supposed to provide easy access to.  This issue is analyzed in [Test keyboard support using the Source Order Viewer](test-tab-key-source-order-viewer.md).
+
+
+## See also
+
+*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
 
 ## Getting in touch with the Microsoft Edge DevTools team  
