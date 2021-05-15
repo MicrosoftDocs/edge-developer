@@ -1,6 +1,6 @@
 ---
-description: To check that a webpage is usable by people with color blindness, in the Rendering tool, from the Emulate vision deficiencies dropdown list, select Protanopia.
-title: Check that the page is usable by people with color blindness
+description: To check that a webpage is usable by people with color blindness, in the Rendering tool, use the Emulate Vision Deficiencies dropdown list.
+title: Verify that the page is usable by people with color blindness
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/13/2021
@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-# Check that the page is usable by people with color blindness
+# Verify that the page is usable by people with color blindness
 
 <!-- Rendering tool: Emulate vision deficiencies: Protanopia -->
 
@@ -19,10 +19,10 @@ In the accessibility-testing demo webpage, the different donation states use col
 *  Yellow means medium donations have been received.
 *  Red means low donations have been received.
 
-But you can't expect all of your users to experience these colors as intended.  By using the **Emulate vision deficiencies** feature of the **Rendering** tool, you can find out that this design is not good enough, because you can simulate how people with different vision would perceive your design.
+But you can't expect all of your users to experience these colors as intended.  By using the **Emulate vision deficiencies** feature of the **Rendering** tool, you can find out that this design is not good enough, by simulating how people with different vision would perceive your design.
 
 
-**To check that a webpage is usable by people with color blindness:**
+**To check whether a webpage is usable by people with color blindness:**
 
 1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
