@@ -263,7 +263,7 @@ To investigate this, you can use the **Inspect** tool to hover over the donation
     Inspecting the buttons of the form shows that they aren't keyboard-accessible
 :::image-end:::
 
-For detailed walkthrough steps, navigate to [Analyzing the lack of keyboard support in a form](test-analyze-no-keyboard-support.md).
+For detailed walkthrough steps, navigate to [Analyze the lack of keyboard support in a form](test-analyze-no-keyboard-support.md).
 
 If you select the **Donate** button, the **Inspect** tool takes you to the **Elements** tool and shows you the form's HTML:
 
