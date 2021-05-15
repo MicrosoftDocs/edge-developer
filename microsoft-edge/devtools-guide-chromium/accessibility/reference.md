@@ -17,9 +17,9 @@ To test your webpages for accessibility, make a list of accessibility aspects to
 | Accessibility checklist item | Feature of DevTools | Article or heading |
 |---|---|---|
 | Verify accessibility through an automatic report | **Issues** tool > **Accessibility** section of report | <!--1.-->[View the Accessibility section of the Issues tool](test-issues-tool.md#view-the-accessibility-section-of-the-issues-tool) |
-| Verify that input fields have labels, for screen readers (automatically, for the entire page) | **Issues** tool > **Accessibility** section of report | <!--2.-->[Verify that input fields have labels](test-issues-tool.md#check-that-input-fields-have-labels) |
-| Verify that images have alt text (automatically, for the entire page) | **Issues** tool > **Accessibility** section of report | <!--3.-->[Verify that images have alt text](test-issues-tool.md#check-that-images-have-alt-text) |
-| Verify that text has enough color contrast (automatically, for the entire page) | **Issues** tool > **Accessibility** section of report | <!--4.-->[Verify that text colors have enough contrast](test-issues-tool.md#check-that-text-colors-have-enough-contrast) |
+| Verify that input fields have labels, for screen readers (automatically, for the entire page) | **Issues** tool > **Accessibility** section of report | <!--2.-->[Verify that input fields have labels](test-issues-tool.md#verify-that-input-fields-have-labels) |
+| Verify that images have alt text (automatically, for the entire page) | **Issues** tool > **Accessibility** section of report | <!--3.-->[Verify that images have alt text](test-issues-tool.md#verify-that-images-have-alt-text) |
+| Verify that text has enough color contrast (automatically, for the entire page) | **Issues** tool > **Accessibility** section of report | <!--4.-->[Verify that text colors have enough contrast](test-issues-tool.md#verify-that-text-colors-have-enough-contrast) |
 | Verify that the webpage layout is usable when narrow | **Device Emulation** tool | <!--#n/a.-->[Emulate mobile devices in Microsoft Edge DevTools](../device-mode/index.md) |
 | Verify accessibility through an automatic report | **Lighthouse** tool | <!--#n/a.-->[Testing accessibility using Lighthouse](lighthouse.md) |
 | Verify text color contrast, screen reader support text, and keyboard support | **Inspect** tool > **Accessibility** section of overlay | <!--5.-->[Use the Inspect tool to detect accessibility issues by hovering over the webpage](test-inspect-tool.md) |
