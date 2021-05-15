@@ -115,17 +115,17 @@
                   items:
                     - name: Check text-color contrast in the default state using the Inspect tool
                       href: devtools-guide-chromium/accessibility/test-inspect-text-contrast.md
-                    - name: Check accessibility during all states of elements
+                    - name: Verify accessibility during all states of elements
                       href: devtools-guide-chromium/accessibility/test-inspect-states.md
                 - name: Rendering tool
                   items:
                     - name: Check for contrast issues with dark theme and light theme
                       href: devtools-guide-chromium/accessibility/test-dark-mode.md
-                    - name: Check that the page is usable by people with color blindness
+                    - name: Verify that the page is usable by people with color blindness
                       href: devtools-guide-chromium/accessibility/test-color-blindness.md
-                    - name: Check that the page is usable with blurred vision
+                    - name: Verify that the page is usable with blurred vision
                       href: devtools-guide-chromium/accessibility/test-blurred-vision.md
-                    - name: Check that the page is usable with UI animation turned off
+                    - name: Verify that the page is usable with UI animation turned off
                       href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
                 - name: Testing accessibility using Lighthouse
                   href: devtools-guide-chromium/accessibility/lighthouse.md
