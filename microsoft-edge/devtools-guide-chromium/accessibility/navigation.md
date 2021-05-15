@@ -144,8 +144,8 @@ Because all of the style tools connect in one way or another back to the **Style
   announced as `element.style {}`.  
 *   Select `Down Arrow` to navigate the list of styles in order of specificity.  A screen reader announces each style starting with the name of the CSS file, the line number on which the style appears, and the name of the style.  For example, `main.css:233 .card__img {}`.  
 *   Select `Enter` to inspect a style in more detail.  Focus begins on an editable version of the style name.  
-*   Select `Tab` to move between editable versions of each CSS property and the corresponding values.  At the end of each style block is a blank editable text field which you may use to add additional CSS properties.  
-*   You may continue to select `Tab` to move through the list of styles, or select `Escape` to exit the mode and go back to navigating by arrow keys.  
+*   Select `Tab` to move between editable versions of each CSS property and the corresponding values.  At the end of each style block is a blank editable text field which you can use to add additional CSS properties.  
+*   You can continue to select `Tab` to move through the list of styles, or select `Escape` to exit the mode and go back to navigating by arrow keys.  
 
 For additional shortcuts, navigate to [Styles pane keyboard reference][DevtoolsShortcutsStylesPaneKeyboard].  
 
@@ -167,12 +167,12 @@ To toggle the state of an element, such as `:active` or `:focus`:
 
 Adjacent to the **Toggle Element State** button is the **Element Classes** button.  To move the focus to it, select `Tab` and select `Enter`.  Focus moves into an edit text field labeled **Add New Class**.  
 
-The **Element Classes** button is primarily used for adding existing classes to an element.  For example, if your stylesheet contained a helper class named `.clearfix` you may select `.` inside of the edit text field to display a suggestion list of classes and use the `Down Arrow` to find the `.clearfix` suggestion.  Or type the class name out yourself and select `Enter` to apply it.  
+The **Element Classes** button is primarily used for adding existing classes to an element.  For example, if your stylesheet contained a helper class named `.clearfix`, you can select `.` inside of the edit text field to display a suggestion list of classes and use the `Down Arrow` to find the `.clearfix` suggestion.  Or type the class name out yourself and select `Enter` to apply it.  
 
 #### Add a new style rule  
 
 Adjacent to the **Element Classes** button is the **New Style Rule** button.  To move the focus to it, select `Tab` and select `Enter`.  Focus moves into an editable text field inside of the style inspector.  The initial text content of the field is the tag name of the element that is selected in the **DOM Tree**.  
-You may type any class name you want into this field and then select `Tab` to assign CSS properties to it.  
+You can type any class name you want into this field and then select `Tab` to assign CSS properties to it.  
 
 ### Computed tab  
 
@@ -194,7 +194,7 @@ To inspect the event listeners that are applied to an element, select the **Elem
 
 #### Explore event listeners  
 
-Event listeners are presented as an [ARIA tree][W3CWaiAriaTree].  You may use the arrow keys to navigate them.  A screen reader announces the name of the DOM object that the event listener is attached to, as well as the file name where the event listener is defined and the line number.  
+Event listeners are presented as an [ARIA tree][W3CWaiAriaTree].  You can use the arrow keys to navigate them.  A screen reader announces the name of the DOM object that the event listener is attached to, as well as the file name where the event listener is defined and the line number.  
 
 ### Accessibility panel  
 
