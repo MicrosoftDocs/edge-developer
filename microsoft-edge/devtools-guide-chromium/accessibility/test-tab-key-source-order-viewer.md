@@ -11,14 +11,14 @@ keywords: microsoft edge, web development, f12 tools, devtools
 # Test keyboard support using the Source Order Viewer
 
 <!-- Accessibility tool: Source Order Viewer -->
-To quickly see the overall **Tab** key order for moving through the sections of a webpage, use the **Source Order Viewer**.  The **Source Order Viewer** is in the **Accessibility** tab (near the **Styles** tab).
+To quickly see the overall `Tab` key order for moving through the sections of a webpage, use the **Source Order Viewer**.  The **Source Order Viewer** is in the **Accessibility** tab (near the **Styles** tab).
 
 
 ## Analyzing the order of the keyboard access through sections of the page
 
 The accessibility-testing demo webpage has a counterintuitive tabbing order, where keyboard users access the sidebar navigation menu only after tabbing through all the **More** links.  The sidebar navigation menu is meant to be a shortcut to reach deep into the page content.  But because you need to go through the entire page before you reach the sidebar navigation menu, that navigation menu is ineffective for keyboard users.
 
-The **Tab** key order on the demo page is:
+The `Tab` key order on the demo page is:
 1. The **Search** field, then the **go** button for the **Search** field.
 1. The **More** button in the **Cats** section, to navigate to a "Cats" webpage.  Then the other **More** buttons, for Dogs, Sheep, Horses, and then Alpacas.
 1. The blue buttons in the sidebar navigation menu: **Cats**, **Dogs**, **Sheep**, **Horses**, and then **Alpacas**.
@@ -26,9 +26,9 @@ The **Tab** key order on the demo page is:
 1. The buttons in the top navigation bar: **Home**, **Adopt a pet**, **Donate**, **Jobs**, and then **About Us**.
 1. The browser's top-of-window interface.
 
-The reason for the confusing **Tab** key order after the **More** buttons is that the source order of the document determines the order of keyboard access.  In the source code of the document, the sidebar navigation menu with blue buttons appears _after_ the main content of the webpage.  The sidebar navigation menu is only rendered above most of the main content of the webpage because the sidebar navigation menu has been positioned using CSS.
+The reason for the confusing `Tab` key order after the **More** buttons is that the source order of the document determines the order of keyboard access.  In the source code of the document, the sidebar navigation menu with blue buttons appears _after_ the main content of the webpage.  The sidebar navigation menu is only rendered above most of the main content of the webpage because the sidebar navigation menu has been positioned using CSS.
 
-You can test issues with **Tab** key order by using the **Source Order Viewer** in the **Accessibility** tab.  The **Source Order Viewer** is an experimental feature; for more information, see [Source Order Viewer](../experimental-features/index.md#source-order-viewer).
+You can test issues with `Tab` key order by using the **Source Order Viewer** in the **Accessibility** tab.  The **Source Order Viewer** is an experimental feature; for more information, see [Source Order Viewer](../experimental-features/index.md#source-order-viewer).
 
 
 **To turn on the Source Order Viewer:**
@@ -50,7 +50,7 @@ You can test issues with **Tab** key order by using the **Source Order Viewer** 
 
 1.  In the **Elements** tool, to the right of the **Styles** tab, select the **Accessibility** tab.
 
-1.  In the **Source Order Viewer** section, select the **Show source order** checkbox.  In the rendered webpage, numbers appear, indicating the **Tab** order as controlled by the order of lines of code in the source file.
+1.  In the **Source Order Viewer** section, select the **Show source order** checkbox.  In the rendered webpage, numbers appear, indicating the `Tab` order as controlled by the order of lines of code in the source file.
 
 1.  In the DOM tree in the **Elements** tool, select a major layout element, such as the `header` element.  Numeric overlays now appear on sections of the rendered page, showing you the source order without having to navigate around using a keyboard:
 
