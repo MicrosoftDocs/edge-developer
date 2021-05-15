@@ -72,7 +72,7 @@ The top part of the **Inspect** overlay in the webpage (above the **Accessibilit
 *   Margin and padding, in pixels.
 
 
-## Using the Inspect tool for color highlighting of sub-areas by hovering over the webpage
+## Using the Inspect tool for color highlighting of nested regions by hovering over the webpage
 
 <!-- general info about the Inspect tool, not particularly focused on accessibility -->
 
@@ -82,7 +82,7 @@ In addition to the information overlay when you hover over the webpage, the **In
 
 1.  Select the **Inspect** button \(![Inspect tool icon](../media/inspect-icon.msft.png)\) in the top-left corner of DevTools, so that the button is highlighted (blue).
 
-1.  Hover over different parts of the rendered demo webpage.  Each element in the webpage now has a multicolor overlay over its entire area, to show any sub-areas that the element contains.
+1.  Hover over different parts of the rendered demo webpage.  Each element in the webpage now has a multicolor overlay over its entire area, to show any nested regions that the element contains.
 
 1.  For example, hover over the left margin of the **Cats** section.  DevTools highlights several rectangular portions of the **Cats** section with different colors, making the layout nesting visible.
 
