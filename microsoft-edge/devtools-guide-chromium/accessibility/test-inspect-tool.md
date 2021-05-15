@@ -49,9 +49,9 @@ The bottom part of the **Inspect** overlay in the webpage has an **Accessibility
 
 *   **Contrast** defines whether an element can be understood by people with low vision.  The [contrast ratio][W3CContrastRatio] as defined by the [WCAG Guidelines][WCAG] indicates whether there is enough contrast (a green check mark icon) or not enough (an orange exclamation-point icon).
 
-*   **Name** and **Role** is what assistive technology like screen readers will report about the element.
-    *   The `Name` is the text content of an `a` element.  For the element `<a href="/">About Us</a>`, the **Name** shown in the Inspect tool is "About Us".
-    *   The `Role` of the element.  This is usually the element name, such as `article`, `img` , `link`, or `heading`.  The `div` and `span` elements are represented as `generic`.
+*   **Name** and **Role** are what assistive technology such as screen readers will report about the element.
+    *   The **Name** is the text content of an `a` element.  For the element `<a href="/">About Us</a>`, the **Name** shown in the Inspect tool is "About Us".
+    *   The **Role** of the element.  This is usually the element name, such as `article`, `img` , `link`, or `heading`.  The `div` and `span` elements are represented as `generic`.
 
 *   **Keyboard-focusable** indicates whether users can reach the element regardless of input device.
     *   A green check mark icon indicates that the element is keyboard-focusable.
