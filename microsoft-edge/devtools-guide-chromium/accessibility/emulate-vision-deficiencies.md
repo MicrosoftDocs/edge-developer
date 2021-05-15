@@ -85,7 +85,7 @@ You may also use **Command Menu** to access the different simulations.
 
 ## See also
 
-* [Check that the page is usable with blurred vision](test-blurred-vision.md)
+* [Verify that the page is usable with blurred vision](test-blurred-vision.md)
 
 
 <!-- links -->  
