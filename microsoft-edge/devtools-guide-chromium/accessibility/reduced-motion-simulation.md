@@ -45,7 +45,7 @@ Then test your code, as follows.
 
 ## See also
 
-* [Check that the page is usable with UI animation turned off](test-reduced-ui-motion.md) - A walkthrough using a demo page, with explanations.
+* [Verify that the page is usable with UI animation turned off](test-reduced-ui-motion.md) - A walkthrough using a demo page, with explanations.
 
     
 <!-- links -->  
