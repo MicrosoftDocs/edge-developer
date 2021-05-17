@@ -32,11 +32,12 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
-      "titleSuffix": "Microsoft Edge Development",
-      "uhfHeaderId": "MSDocsHeader-MSEdge",
+      "extendBreadcrumb": true,
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/edge-developer",
-      "extendBreadcrumb": true
+      "searchScope": ["Microsoft Edge"],
+      "titleSuffix": "Microsoft Edge Development",
+      "uhfHeaderId": "MSDocsHeader-MSEdge"
     },
     "fileMetadata": {
       "ms.technology":{
@@ -44,8 +45,7 @@
         "devtools-protocol/**.md": "devtools",
         "extensions-chromium/**.md": "extensions",
         "webview2/**.md": "webview2",
-        "progressive-web-apps-chromium/**.md": "pwa",
-        "edgehtml/**.md": ""
+        "progressive-web-apps-chromium/**.md": "pwa"
       }
     },
     "template": [

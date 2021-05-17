@@ -3,7 +3,7 @@ description: Progressive Web Apps (Chromium) run natively on Windows 10.  Here i
 title: Progressive Web Apps on Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/06/2021
+ms.date: 05/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
@@ -15,54 +15,103 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 
 :::row:::
     :::column:::
-        :::image type="icon" source="./media/i_search-small.png":::
-        ### [Discoverable][MDNPwaAdvantagesDiscoverable]
-        From web search results and supporting app stores
+        :::image type="icon" source="./media/i_search-small.png":::  
     :::column-end:::
     :::column:::
-        :::image type="icon" source="./media/i_package-small.png":::
-        ### [Installable][MDNPwaAdvantagesInstallable]
-        Pin and launch from the home screen, Start Menu, Taskbar, and so on
+        :::image type="icon" source="./media/i_package-small.png":::  
     :::column-end:::
     :::column:::
-        :::image type="icon" source="./media/i_push-notification-small.png":::
-        ### [Re-engageable][MDNPwaAdvantagesReEngageable]
-        Send push notifications, even when the app is not active
+        :::image type="icon" source="./media/i_push-notification-small.png":::  
     :::column-end:::
 :::row-end:::  
 :::row:::
     :::column:::
-        :::image type="icon" source="./media/i_offline-small.png":::
-        ### [Network Independent][MDNPwaAdvantagesNetworkIndependent]
-        Works offline and in low-network conditions
+        ### [Discoverable][MDNPwaAdvantagesDiscoverable]  
     :::column-end:::
     :::column:::
-        :::image type="icon" source="./media/i_progressive-small.png":::
-        ### [Progressive][MDNPwaAdvantagesProgressive]
-        Experience scales up (or down) with device capabilities
+        ### [Installable][MDNPwaAdvantagesInstallable]  
     :::column-end:::
     :::column:::
-        :::image type="icon" source="./media/i_security-small.png":::
-        ### [Safe][MDNPwaAdvantagesSafe]
-        Provides a secure HTTPS endpoint and other user safeguards
+        ### [Re-engageable][MDNPwaAdvantagesReEngageable]  
     :::column-end:::
 :::row-end:::  
 :::row:::
     :::column:::
-        :::image type="icon" source="./media/i_responsive-small.png":::
-        ### [Responsive][MDNPwaAdvantagesResponsive]
-        Adapts to the user's screen size or orientation and input method
+        From web search results and supporting app stores  
     :::column-end:::
     :::column:::
-        :::image type="icon" source="./media/i_link-small.png":::
-        ### [Linkable][MDNPwaAdvantagesLinkable]
-        Share and launch from a standard hyperlink
+        Pin and launch from the home screen, Start Menu, Taskbar, and so on  
+    :::column-end:::
+    :::column:::
+        Send push notifications, even when the app is not active  
+    :::column-end:::
+:::row-end:::  
+:::row:::
+    :::column:::
+        :::image type="icon" source="./media/i_offline-small.png":::  
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="./media/i_progressive-small.png":::  
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="./media/i_security-small.png":::  
+    :::column-end:::
+:::row-end:::  
+:::row:::
+    :::column:::
+        ### [Network Independent][MDNPwaAdvantagesNetworkIndependent]  
+    :::column-end:::
+    :::column:::
+        ### [Progressive][MDNPwaAdvantagesProgressive]  
+    :::column-end:::
+    :::column:::
+        ### [Safe][MDNPwaAdvantagesSafe]  
+    :::column-end:::
+:::row-end:::  
+:::row:::
+    :::column:::
+        Works offline and in low-network conditions  
+    :::column-end:::
+    :::column:::
+        Experience scales up (or down) with device capabilities  
+    :::column-end:::
+    :::column:::
+        Provides a secure HTTPS endpoint and other user safeguards  
+    :::column-end:::
+:::row-end:::  
+:::row:::
+    :::column:::
+        :::image type="icon" source="./media/i_responsive-small.png":::  
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="./media/i_link-small.png":::  
     :::column-end:::
     :::column:::
         &nbsp;  
     :::column-end:::
 :::row-end:::  
-
+:::row:::
+    :::column:::
+        ### [Responsive][MDNPwaAdvantagesResponsive]  
+    :::column-end:::
+    :::column:::
+        ### [Linkable][MDNPwaAdvantagesLinkable]  
+    :::column-end:::
+    :::column:::
+        &nbsp;  
+    :::column-end:::
+:::row-end:::  
+:::row:::
+    :::column:::
+        Adapts to the user's screen size or orientation and input method  
+    :::column-end:::
+    :::column:::
+        Share and launch from a standard hyperlink  
+    :::column-end:::
+    :::column:::
+        &nbsp;  
+    :::column-end:::
+:::row-end:::  
 
 Build \(or convert\) your existing website to a PWA to enhance your engagement with your users.  Enhancements include push notifications, app-like integration, and offline support.  Continue to build your audience on the open web for users to discover your PWA through search and link-sharing.  Best of all, your app is updated in using your web server code.  
 
@@ -71,8 +120,8 @@ Build \(or convert\) your existing website to a PWA to enhance your engagement w
 When you build a Progressive Web App targeting web standard APIs, your app may be deployed across platforms and devices and take advantage of the device-specific capabilities as available.  PWAs in Microsoft Edge \(Chromium\) add the following advantages to your website.  
 
 *   Your app is built on a standards-based web platform.  
-*   Enables your users to install your app directly from the browser.  
-*   Enables your users to install your app without a Store-based deployment or registration.  
+*   Allows your users to install your app directly from the browser.  
+*   Allows your users to install your app without a Store-based deployment or registration.  
     
 Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) is available. Microsoft Edge \(Chromium\) is available on Windows 7, Windows 10, and macOS.  The following benefits are included.  
 
@@ -147,7 +196,7 @@ To be a great PWA, your app must also meet the following requirements.
       *   CSS [grid][MDNCssGridLayout] and [flexbox][MDNCssFlexibleBoxLayout]  
       *   [media queries][MDNMediaQueries]  
       *   [responsive images][MDNResponsiveImages]  
-      
+          
       Uses [device emulation tools][DevToolsGuideDeviceModeTestingOtherBrowsers] from your browser to locally test, or create a remote debugging session on [Windows][DevtoolsRemoteDebuggingWindows] or [Android][DevtoolsRemoteDebuggingIndex] to test directly on a target device.
    :::column-end:::
 :::row-end:::  
@@ -198,8 +247,6 @@ To be a great PWA, your app must also meet the following requirements.
 [DevToolsGuideDeviceModeTestingOtherBrowsers]: ../devtools-guide-chromium/device-mode/testing-other-browsers.md "Emulate and test other browsers | Microsoft Docs"  
 [DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps/index.md "Debug Progressive Web Apps | Microsoft Docs"  
 [PwaChromiumMicrosoftStore]: ./microsoft-store.md "Publish your Progressive Web App to the Microsoft Store | Microsoft Docs"
-
-
 
 [WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Windows Push Notification Services (WNS) overview | Microsoft Docs"  
 [WindowsUWPDesignDevicesDesigningTv]: /windows/uwp/design/devices/designing-for-tv.md "Designing for Xbox and TV | Microsoft Docs"  
