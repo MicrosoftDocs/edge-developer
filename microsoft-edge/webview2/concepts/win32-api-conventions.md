@@ -3,7 +3,7 @@ description: Win32 C++ WebView2 API Conventions
 title: Win32 C++ WebView2 API Conventions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/24/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -135,7 +135,7 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 ## See also  
 
-*   To get started using WebView2 Win32 C/C++, navigate to [Getting started with WebView2][Webview2IndexGettingStarted] guides.  
+*   To get started using WebView2 Win32 C/C++, navigate to [Get started with WebView2][Webview2IndexGetStarted] guides.  
 *   For more detailed information about WebView2 APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2WpfWebview2].  
 
 ## Getting in touch with the Microsoft Edge WebView team  
@@ -144,7 +144,7 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 <!-- links -->  
 
-[Webview2GettingstartedWin32]: ../gettingstarted/win32.md "Getting started with WebView2 | Microsoft Docs"  
+[Webview2GetStartedWin32]: ../get-started/win32.md "Get started with WebView2 | Microsoft Docs"  
 
 [Webview2ReferenceWin32Icorewebview2CapturePreview]: /microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview "CapturePreview - interface ICoreWebView2 | Microsoft Docs"  
 

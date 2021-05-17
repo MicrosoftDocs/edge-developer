@@ -3,7 +3,7 @@ description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/30/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, privacy, whitepaper, trust
@@ -329,7 +329,7 @@ When you turn on certain features in Developer Tools, Microsoft Edge requests mo
 
 Microsoft uses diagnostic data to improve existing products and services.  Also, Microsoft uses diagnostic data to keep existing products secure, up to date, and running as expected.  Whenever Microsoft Edge collects data, Microsoft makes sure the choice is right for you.  Microsoft believes in and practices information collection minimization.  Microsoft strives to gather only the information needed at that time, and to store it only for as long as it helps to improve Microsoft products and services.  
 
-Microsoft Edge collects a set of required diagnostic data to keep the product secure, up to date, and properly running.  The required diagnostic data may include data such as device connectivity, configuration information, software setup, and inventory data.  Microsoft uses the required diagnostic data to troubleshoot issues.  Also, Microsoft uses the required diagnostic data to keep existing products and services reliable, secure, and operating normally.  For more information about diagnostic data on managed devices, navigate to [Configure Windows diagnostic data in your organization][WindowsPrivacyConfigureDiagnosticDataOrganization] and [Microsoft Edge diagnostic data group policy][DeployedgeMicrosoftEdgeEnterprisePrivacySettings].  
+Microsoft Edge collects a set of required diagnostic data to keep the product secure, up to date, and properly running.  The required diagnostic data may include data such as device connectivity, configuration information, software settings, and inventory data.  Microsoft uses the required diagnostic data to troubleshoot issues.  Also, Microsoft uses the required diagnostic data to keep existing products and services reliable, secure, and operating normally.  For more information about diagnostic data on managed devices, navigate to [Configure Windows diagnostic data in your organization][WindowsPrivacyConfigureDiagnosticDataOrganization] and [Microsoft Edge diagnostic data group policy][DeployedgeMicrosoftEdgeEnterprisePrivacySettings].  
 
 :::image type="complex" source="./media/diagnostic-data2.png" alt-text="Diagnostic data" lightbox="./media/diagnostic-data2.png":::
    Diagnostic data  

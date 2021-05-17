@@ -421,7 +421,7 @@
       },
       {
         "source_path": "microsoft-edge/hosting/webview2/gettingstarted.md",
-        "redirect_url": "/microsoft-edge/webview2/gettingstarted/win32",
+        "redirect_url": "/microsoft-edge/webview2/get-started/win32",
         "redirect_document_id": false
       },
       {
@@ -430,13 +430,73 @@
         "redirect_document_id": false
       },
       {
-        "source_path": "microsoft-edge/hosting/webview2/releasenotes.md",
-        "redirect_url": "/microsoft-edge/webview2/releasenotes",
+        "source_path": "microsoft-edge/hosting/webview2/reference-webview2.md",
+        "redirect_url": "/microsoft-edge/webview2/webview2-api-reference",
         "redirect_document_id": false
       },
       {
-        "source_path": "microsoft-edge/hosting/webview2/reference-webview2.md",
-        "redirect_url": "/microsoft-edge/webview2/webview2-api-reference",
+        "source_path": "microsoft-edge/hosting/webview2/releasenotes.md",
+        "redirect_url": "/microsoft-edge/webview2/release-notes",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/webview2/concepts/browserfeatures.md",
+        "redirect_url": "/microsoft-edge/webview2/concepts/browser-features",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/webview2/concepts/userdatafolder.md",
+        "redirect_url": "/microsoft-edge/webview2/concepts/user-data-folder",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/webview2/gettingstarted/win32.md",
+        "redirect_url": "/microsoft-edge/webview2/get-started/win32",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/webview2/gettingstarted/winforms.md",
+        "redirect_url": "/microsoft-edge/webview2/get-started/winforms",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/webview2/gettingstarted/winui.md",
+        "redirect_url": "/microsoft-edge/webview2/get-started/winui",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/webview2/gettingstarted/wpf.md",
+        "redirect_url": "/microsoft-edge/webview2/get-started/wpf",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/webview2/howto/chromium-devtools-protocol.md",
+        "redirect_url": "/microsoft-edge/webview2/how-to/chromium-devtools-protocol",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/webview2/howto/debug.md",
+        "redirect_url": "/microsoft-edge/webview2/how-to/debug",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/webview2/howto/js.md",
+        "redirect_url": "/microsoft-edge/webview2/how-to/javascript",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/webview2/howto/static.md",
+        "redirect_url": "/microsoft-edge/webview2/how-to/static",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/webview2/howto/webdriver.md",
+        "redirect_url": "/microsoft-edge/webview2/how-to/webdriver",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/webview2/releasenotes.md",
+        "redirect_url": "/microsoft-edge/webview2/release-notes",
         "redirect_document_id": false
       },
       /* redirects to webview2 dotnet reference */
