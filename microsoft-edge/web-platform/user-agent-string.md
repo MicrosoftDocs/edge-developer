@@ -13,7 +13,7 @@ keywords: microsoft edge, compatibility, web platform, user agent string, ua str
 
 The User Agent \(UA\) can be used detect what version of a specific browser is being used on a certain operating system. Microsoft Edge offers two mechanisms for retrieving User Agent information: via User Agent Client Hints (recommended) and the legacy User Agent string. These can be accessed as follows: 
 
-**User Agent Client Hints**
+**User Agent Client Hints (Recommended)**
 -	*Server-side*: UA Client Hints are sent by default with the `Sec-CH-UA` `HTTPS` header 
 -	*Client-side*: UA Client Hints can be accessed via JavaScript by querying the value of `navigator.userAgentData`
 
@@ -33,7 +33,7 @@ Starting from Edge90 Stable, developers can access browser information in a clea
 By default, Chromium browsers like Edge will send the `Accept-CH-UA` request header in the following format: 
 
 ```HTTP
-Sec-CH-UA: “Chromium”;v=”91”, “Microsoft Edge”;v=”91”,”GREASE”;v=”99”
+Sec-CH-UA: “Chromium”;v=”91”, “Microsoft Edge”;v=”91”,”Dummy;Browser Brand”;v=”99”
 Sec-CH-UA-Mobile: ?0
 ```
 Note: Client Hints are only sent over `HTTPS`. 
@@ -41,7 +41,7 @@ Note: Client Hints are only sent over `HTTPS`.
 More information, if needed, can be accessed by sending subsequent requests with the desired headers: 
 
 #### User-Agent Request & Response Headers
-| Request Header | Example Response Value |
+| Response Header | Example Response Value |
 | ----------- | ----------- |
 |`Sec-CH-UA`|`“Chromium”;v=”91”, “Microsoft Edge”;v=”91”,”GREASE”;v=”99"`|
 |`Sec-CH-UA-Mobile`|`false`|
@@ -63,7 +63,7 @@ The default return value from `navigator.userAgentData` is in the following form
 mobile: false
 }
 ```
-More detailed information, if needed, can be accessed with `getHighEntropyValues()`, for example, calling
+More detailed information, if needed, can be accessed with [getHighEntropyValues()](https://wicg.github.io/ua-client-hints/#getHighEntropyValues), for example, calling
 
 ```javascript
 navigator.userAgentData.getHighEntropyValues(
