@@ -104,8 +104,6 @@ To automatically check whether alt text is provided for images, use the **Issues
 <!-- 3. Issues tool: Accessibility section > "Users may have difficulties reading text content due to insufficient color contrast" -->
 ## Verify that text colors have enough contrast
 
-To make sure text colors have enough contrast, use the **Issues** tool, which has an **Accessibility** section.
-
 To automatically check whether text colors have enough contrast, use the **Issues** tool, which has an **Accessibility** section.  The **Issues** tool is located in the **Drawer** at the bottom of DevTools.
 
 1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
