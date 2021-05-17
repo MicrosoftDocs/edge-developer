@@ -369,6 +369,8 @@
           href: web-platform/tracking-prevention.md
         - name: Microsoft Edge user agent string
           href: web-platform/user-agent-string.md
+        - name: Customize the password reveal button
+          href: web-platform/password-reveal.md
     - name: Web We Want overview
       href: web-we-want/index.md
     - name: WebDriver
@@ -383,24 +385,24 @@
       items:
         - name: WebView2 overview
           href: webview2/index.md
-        - name: Getting started
+        - name: Get started
           items:
             - name: Win32
-              href: webview2/gettingstarted/win32.md
+              href: webview2/get-started/win32.md
             - name: WPF
-              href: webview2/gettingstarted/wpf.md
+              href: webview2/get-started/wpf.md
             - name: Windows Forms
-              href: webview2/gettingstarted/winforms.md
+              href: webview2/get-started/winforms.md
             - name: WinUI 3.0
-              href: webview2/gettingstarted/winui.md
+              href: webview2/get-started/winui.md
         - name: Concepts
           items:
             - name: Differences between Microsoft Edge and WebView2
-              href: webview2/concepts/browserfeatures.md
+              href: webview2/concepts/browser-features.md
             - name: Distributing my app
               href: webview2/concepts/distribution.md
             - name: Managing User Data Folders
-              href: webview2/concepts/userdatafolder.md
+              href: webview2/concepts/user-data-folder.md
             - name: Managing WebView2 applications
               href: webview2/concepts/enterprise.md
             - name: Navigation events
@@ -418,21 +420,21 @@
             - name: Win32 API conventions
               href: webview2/concepts/win32-api-conventions.md
         - name: Release notes
-          href: webview2/releasenotes.md
+          href: webview2/release-notes.md
         - name: Roadmap
           href: webview2/roadmap.md
         - name: How to
           items:
             - name: Extended JavaScript scenarios in WebView2
-              href: webview2/howto/js.md
+              href: webview2/how-to/javascript.md
             - name: Statically link loader
-              href: webview2/howto/static.md
+              href: webview2/how-to/static.md
             - name: Debug WebView2
-              href: webview2/howto/debug.md
+              href: webview2/how-to/debug.md
             - name: Automate with Edge Driver
-              href: webview2/howto/webdriver.md
+              href: webview2/how-to/webdriver.md
             - name: Use Chromium DevTools Protocol in WebView2
-              href: webview2/howto/chromium-devtools-protocol.md
+              href: webview2/how-to/chromium-devtools-protocol.md
         - name: Reference
           href: webview2/webview2-api-reference.md
           items:
@@ -446,5 +448,3 @@
                   href: /dotnet/api/microsoft.web.webview2.wpf
                 - name: Microsoft.Web.WebView2.WinForms
                   href: /dotnet/api/microsoft.web.webview2.winforms
-#    - name: Legacy Microsoft Edge documentation
-#      href: edgehtml/index.md

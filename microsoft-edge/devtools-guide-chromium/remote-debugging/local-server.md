@@ -3,7 +3,7 @@ description: Host a site on a development machine web server, and then access th
 title: Access local servers
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -66,7 +66,7 @@ For example, suppose that your site uses a third-party JavaScript library that o
 
 ### Set up port forwarding to proxy server  
 
-To map a custom domain you must run a proxy server on your development machine.  Examples of proxy servers are [Charles][CharlesWebDebuggingProxy], [Squid][SquidOptimisingWebDelivery], and [Fiddler][FiddlerWebDebuggingProxy].  
+To map a custom domain you must run a proxy server on your development machine.  Examples of proxy servers are [Charles][CharlesWebDebuggingProxy], [Squid][SquidCacheWiki], and [Fiddler][TelerikFiddler].  
 
 To set up port forwarding to a proxy:  
 
@@ -113,9 +113,9 @@ If your web server is running off of a non-standard port, remember to specify th
 
 [CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Charles Web Debugging Proxy"  
 
-[SquidOptimisingWebDelivery]: https://www.squid-cache.org "squid : Optimising Web Delivery"  
+[SquidCacheWiki]: https://wiki.squid-cache.org "Squid Wiki Proxy Wiki"  
 
-[FiddlerWebDebuggingProxy]: https://www.telerik.com/fiddler "Fiddler - Free Web Debugging Proxy"  
+[TelerikFiddler]: https://www.telerik.com/fiddler "Fiddler - Free Web Debugging Proxy"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
@@ -127,5 +127,5 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney  

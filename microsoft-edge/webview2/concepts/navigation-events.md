@@ -3,7 +3,7 @@ description: Navigation
 title: Navigation | WebView 2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/24/2021
+ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -20,9 +20,9 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
    :::column-end:::
 :::row-end:::  
 
-Navigation events run when specific asynchronous actions occur to the content displayed in a WebView2 instance.  For example, when a WebView2 user navigates to a new website, the native content listens for the change using `NavigationStarting` event.  When the navigation action completes, `NavigationCompleted` runs.  For a good example of navigation events, navigate to [WebView2 getting started guide][Webview2IndexGettingStarted].  
+Navigation events run when specific asynchronous actions occur to the content displayed in a WebView2 instance.  For example, when a WebView2 user navigates to a new website, the native content listens for the change using `NavigationStarting` event.  When the navigation action completes, `NavigationCompleted` runs.  For a good example of navigation events, navigate to [WebView2 Get Started guide][Webview2IndexGetStarted].  
 
-<!--todo:  Move the relevant information out of the getting started guide to better focus the content and leave the most concise elements in the getting started guide.  -->   
+<!--todo:  Move the relevant information out of the get started guide to better focus the content and leave the most concise elements in the get started guide.  -->   
 
 The normal sequence of navigation events is `NavigationStarting`, `SourceChanged`, `ContentLoading`, `HistoryChanged`, and then `NavigationCompleted`.  The following events describe the state of WebView2 during each navigation.  
 
@@ -60,7 +60,7 @@ To monitor or cancel navigation events inside subframes in a WebView2 instance, 
 
 ## See also  
 
-*   To get started using WebView2, navigate to [WebView2 Getting Started Guides][Webview2IndexGettingStarted] guides.  
+*   To get started using WebView2, navigate to [WebView2 Get Started Guides][Webview2IndexGetStarted] guides.  
 *   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] on GitHub.  
 *   For more detailed information about WebView2 APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2WpfWebview2].  
 *   For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].  
@@ -71,7 +71,7 @@ To monitor or cancel navigation events inside subframes in a WebView2 instance, 
 
 <!-- links -->  
 
-[Webview2IndexGettingStarted]: ../index.md#getting-started "Getting started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2IndexGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 Class | Microsoft Docs"  

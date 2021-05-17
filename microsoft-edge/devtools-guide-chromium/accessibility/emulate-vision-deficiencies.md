@@ -3,12 +3,12 @@ description: Emulate vision deficiencies in Microsoft Edge DevTools.
 title: Emulate vision deficiencies in Microsoft Edge DevTools (color blindness)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/09/2021
+ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-# Emulate vision deficiencies
+# Emulate vision deficiencies  
 
 To better meet the needs of your users with [color vision deficiency][ColorblindawarenessMain] \(color blindness\), [Microsoft Edge DevTools][DevtoolsIndex] allow you to simulate specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories.  
 
@@ -31,7 +31,7 @@ To simulate a vision deficiency being applied for your web product, open the [Re
     :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
        Opening the **Rendering Tools**  
     :::image-end:::  
-
+    
 The **Rendering** menu appears in the drawer.  
 
 1.  Scroll down to the `Emulate vision deficiencies` menu item and choose the drop-down menu to display the options.  
@@ -85,6 +85,6 @@ You may also use **Command Menu** to access the different simulations.
 [DevToolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analyze runtime performance | Microsoft Docs"  
 
-[ColorblindawarenessMain]: http://www.colourblindawareness.org "The Colour Blind Awareness organisation"  
+[ColorblindawarenessMain]: https://www.colourblindawareness.org "The Colour Blind Awareness organisation"  
 
 [AmfcbMain]: https://www.amfcb.org "The American Foundation for the Color Blind (AFCB)"  
