@@ -26,11 +26,11 @@ Not all users have a pointer or touch device, and not all users can see the web 
 
 1.  Use a keyboard to navigate the demo document, using the `Tab` and `Shift`+`Tab` keys to jump from element to element.  On the demo webpage, the `Tab` key first moves focus to the search form in the `header` section.
 
-1.  Select `Tab` to put focus on a button, and then select `Enter` to click the focused button.
+1.  Select `Tab` to put focus on a button, and then select `Enter` to click the focused button.  For example, in the demo page, select `Tab` to put focus on the **Search** field, and then select `Enter` to submit the search.
 
-1.  In the demo page, select `Tab` to put focus on the **Search** field, and then select `Enter` to submit the search, producing the same result as clicking the **go** button.  Selecting `Enter` to send the **Search** form works correctly, despite the `label` element issue that's found by the **Issues tool**.
+    This approach produces the same result as clicking the **go** button.  Selecting `Enter` to send the **Search** form works correctly, despite the `label` element issue that's found by the **Issues tool**.
 
-1.  Select `Tab`.  The next element you put focus on is the first **More** link in the `content` section of the webpage, as indicated by an outline.
+1.  Select `Tab` again.  The next element you put focus on is the first **More** link in the `content` section of the webpage, as indicated by an outline.
     
     :::image type="complex" source="../media/a11y-testing-keyboard-focus-on-element.msft.png" alt-text="Navigating the document using the keyboard and the `Tab` key. Focus is shown on a link in the document." lightbox="../media/a11y-testing-keyboard-focus-on-element.msft.png":::
         Navigating the document using the keyboard and the tab key. Focus is shown on a link in the document.
