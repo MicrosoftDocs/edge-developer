@@ -25,6 +25,8 @@
           items:
             - name: Experimental features
               href: devtools-guide-chromium/experimental-features/index.md
+            - name: Microsoft Edge 91
+              href: devtools-guide-chromium/whats-new/2021/04/devtools.md
             - name: Microsoft Edge 90
               href: devtools-guide-chromium/whats-new/2021/02/devtools.md
             - name: Microsoft Edge 89
@@ -121,16 +123,16 @@
                   href: devtools-guide-chromium/device-mode/orientation.md
             - name: IE mode
               href: devtools-guide-chromium/ie-mode/index.md
-            - name: Javascript troubleshooting
+            - name: JavaScript troubleshooting
               items:
-                - name: JavaScript debugging reference
+                - name: Use the debugger features
                   href: devtools-guide-chromium/javascript/reference.md
+                - name: Pause your code with breakpoints
+                  href: devtools-guide-chromium/javascript/breakpoints.md
                 - name: Map pre-processed code to source code
                   href: devtools-guide-chromium/javascript/source-maps.md
                 - name: Mark content scripts as Library Code
                   href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
-                - name: Pause your code with breakpoints
-                  href: devtools-guide-chromium/javascript/breakpoints.md
             - name: Memory troubleshooting
               items:
                 - name: Memory terminology
@@ -241,16 +243,14 @@
               href: devtools-guide-chromium/security/index.md
             - name: Sources
               items:
-                - name: Sources panel overview
+                - name: Sources tool overview
                   href: devtools-guide-chromium/sources/index.md
-                - name: JavaScript debugging reference
-                  href: devtools-guide-chromium/javascript/reference.md
-                - name: Disable JavaScript
-                  href: devtools-guide-chromium/javascript/disable.md
                 - name: Overrides
                   href: devtools-guide-chromium/javascript/overrides.md
                 - name: Snippets
                   href: devtools-guide-chromium/javascript/snippets.md
+                - name: Disable JavaScript
+                  href: devtools-guide-chromium/javascript/disable.md
             - name: WebAuthn
               href: devtools-guide-chromium/webauthn/index.md
         - name: Reference
@@ -367,6 +367,8 @@
           href: web-platform/tracking-prevention.md
         - name: Microsoft Edge user agent string
           href: web-platform/user-agent-string.md
+        - name: Customize the password reveal button
+          href: web-platform/password-reveal.md
     - name: Web We Want overview
       href: web-we-want/index.md
     - name: WebDriver
@@ -381,24 +383,24 @@
       items:
         - name: WebView2 overview
           href: webview2/index.md
-        - name: Getting started
+        - name: Get started
           items:
             - name: Win32
-              href: webview2/gettingstarted/win32.md
+              href: webview2/get-started/win32.md
             - name: WPF
-              href: webview2/gettingstarted/wpf.md
+              href: webview2/get-started/wpf.md
             - name: Windows Forms
-              href: webview2/gettingstarted/winforms.md
+              href: webview2/get-started/winforms.md
             - name: WinUI 3.0
-              href: webview2/gettingstarted/winui.md
+              href: webview2/get-started/winui.md
         - name: Concepts
           items:
             - name: Differences between Microsoft Edge and WebView2
-              href: webview2/concepts/browserfeatures.md
+              href: webview2/concepts/browser-features.md
             - name: Distributing my app
               href: webview2/concepts/distribution.md
             - name: Managing User Data Folders
-              href: webview2/concepts/userdatafolder.md
+              href: webview2/concepts/user-data-folder.md
             - name: Managing WebView2 applications
               href: webview2/concepts/enterprise.md
             - name: Navigation events
@@ -411,10 +413,12 @@
               href: webview2/concepts/versioning.md
             - name: Threading model
               href: webview2/concepts/threading-model.md
+            - name: WebView2 development best practices  
+              href: webview2/concepts/developer-guide.md
             - name: Win32 API conventions
               href: webview2/concepts/win32-api-conventions.md
         - name: Release notes
-          href: webview2/releasenotes.md
+          href: webview2/release-notes.md
         - name: Roadmap
           href: webview2/roadmap.md
         - name: Resources, talks, videos, and blogs
@@ -422,15 +426,15 @@
         - name: How to
           items:
             - name: Extended JavaScript scenarios in WebView2
-              href: webview2/howto/js.md
+              href: webview2/how-to/javascript.md
             - name: Statically link loader
-              href: webview2/howto/static.md
+              href: webview2/how-to/static.md
             - name: Debug WebView2
-              href: webview2/howto/debug.md
+              href: webview2/how-to/debug.md
             - name: Automate with Edge Driver
-              href: webview2/howto/webdriver.md
+              href: webview2/how-to/webdriver.md
             - name: Use Chromium DevTools Protocol in WebView2
-              href: webview2/howto/chromium-devtools-protocol.md
+              href: webview2/how-to/chromium-devtools-protocol.md
         - name: Reference
           href: webview2/webview2-api-reference.md
           items:
@@ -444,5 +448,3 @@
                   href: /dotnet/api/microsoft.web.webview2.wpf
                 - name: Microsoft.Web.WebView2.WinForms
                   href: /dotnet/api/microsoft.web.webview2.winforms
-#    - name: Legacy Microsoft Edge documentation
-#      href: edgehtml/index.md

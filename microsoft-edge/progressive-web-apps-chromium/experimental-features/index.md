@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge for Web Apps
 title: Experimental features | Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/09/2021
+ms.date: 05/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
@@ -55,13 +55,12 @@ The following list describes the new experimental web app features that are avai
 
 | Feature | Microsoft Edge version | Platform |  
 |:--- |:--- |:--- |  
-| [URI Protocol Handling](#uri-protocol-handling) | 91 or later | Windows |    
+| [URI Protocol Handling](#uri-protocol-handling) | 91 or later | Windows and Linux |    
 | [URL Link Handling](#url-link-handling) | 91 or later | Windows|
 | [Window Controls Overlay for Desktop Apps](#window-controls-overlay-for-installed-desktop-web-apps) | 91 or later | Windows 10|   
 | [Run on OS Login](#run-on-os-login) | 88 or later | All |  
 | [Shortcuts](#shortcuts) | 87 or later | All |  
 | [File Handling](#file-handling) | 83 or later | All Desktop |  
-
 
 ## URI Protocol Handling  
 
@@ -73,7 +72,7 @@ This feature allows you to complete the following actions.
 
 *   Register your PWA with the host OS using the manifest of your web app
 *   Declare that a PWA handles a specific URI protocol  
-     
+    
 After you register a PWA as a protocol handler, when a user chooses a hyperlink with a specific scheme such as `mailto://` or `web+music://` from a browser or a native app, the registered PWA is activated by the OS and receives the URI.  
 
 This feature requires you to update the web app manifest to include a `protocol_handlers` array, in the array you need to specify two fields:  
@@ -132,7 +131,7 @@ This feature allows you to register a PWA with the browser using the web app man
 
 Link handling is validated by the browser using a `web-app-origin-association` JSON file that is located on the origin.  The origin file further fine-tunes the included or excluded paths at the origin.  For detailed instructions about testing the URL handler, navigate to [PWAs as URL Handlers][GithubWicgPwaUrlHandlerBlobMainExplainerMd].  
 
-To preview URL link handling in Microsoft Edge on Windows, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWA URL  Handling**.  
+To preview URL link handling in Microsoft Edge on Windows, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWA URL Handling**.  
 
 ### Example of the url_handlers in the manifest  
 
@@ -479,6 +478,8 @@ body {
 }
 ```  
 
+Chromium-based browsers are testing and shaping this feature.  For more information including code examples, navigate to [Customize the window controls overlay of your PWA's title bar][WebDevWindowControlsOverlay].  
+
 ## Run On OS Login  
 
 This feature allows you to configure your app to automatically launch when the user logs into Microsoft Windows.  Several classes of apps take advantage of the capability.  The classes of apps include email, chat, monitoring dashboard, and real-time data display apps.  The capability allows a user to engage with the apps as soon as the user logs into the OS.  This feature automatically starts the PWA the same way it's launched manually.  
@@ -585,3 +586,4 @@ To provide feedback on Microsoft Edge web app experiments.
 [GithubWicgPwaUrlHandlerBlobMainExplainerMd]: https://github.com/WICG/pwa-url-handler/blob/main/explainer.md "PWAs as URL Handlers | GitHub"  
 
 [WebDevFileHandling]: https://web.dev/file-handling "Let web applications be file handlers | web.dev"  
+[WebDevWindowControlsOverlay]: https://web.dev/window-controls-overlay "Customize the window controls overlay of your PWA's title bar | web.dev"  
