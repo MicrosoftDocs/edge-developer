@@ -38,7 +38,7 @@ Not all users have a pointer or touch device, and not all users can see the web 
     
 1.  Select `Tab` several more times until you go past the last **More** link.  The page scrolls up again and you seem to be on some element of the page, but you don't know which element.
 
-1.  Notice the URL in the bottom left.  If you look to the bottom left of the screen (or if you use a screen reader), you realize that you are on the sidebar navigation menu with blue buttons, because the browser shows the URL that the `a` link of the blue **Cats** button points to (`#cats`).
+1.  Notice the URL in the bottom left.  If you look to the bottom left of the screen (or if you use a screen reader), you realize that you are on the sidebar navigation menu with blue links, because the browser shows the URL that the **Cats** link points to (`#cats`).
 
     :::image type="complex" source="../media/a11y-testing-lack-of-focus-style.msft.png" alt-text="A lack of focus style makes it impossible to know where you currently are in the document. The only hint is the display of the link target in the bottom left corner of the screen" lightbox="../media/a11y-testing-lack-of-focus-style.msft.png":::
         A lack of focus style makes it impossible to know where you currently are in the document. The only hint is the display of the link target in the bottom left corner of the screen.
@@ -58,11 +58,11 @@ Not all users have a pointer or touch device, and not all users can see the web 
     
 We found some issues here to fix:
 
-*  When using a keyboard, the sidebar navigation menu with blue buttons doesn't visually indicate which button has focus.  This issue is covered in [Analyze the lack of indication of keyboard focus in a sidebar menu](test-analyze-no-focus-indicator.md).
+*  When using a keyboard, the blue links of the sidebar navigation menu don't visually indicate which link has focus.  This issue is covered in [Analyze the lack of indication of keyboard focus in a sidebar menu](test-analyze-no-focus-indicator.md).
 
 *  In the donation form, the amount buttons and the **Donate** button don't work with a keyboard.  This issue is covered in [Analyze the lack of keyboard support in a form](test-analyze-no-keyboard-support.md).
 
-*  The order of the keyboard access through sections of the page seems wrong.  You navigate through all the **More** links in the document before you reach the sidebar navigation menu with blue buttons.  This makes the sidebar navigation menu pointless.  By the time the `Tab` key puts focus on the sidebar navigation menu, you already traversed all the content that the sidebar navigation menu was supposed to provide easy access to.  This issue is analyzed in [Test keyboard support using the Source Order Viewer](test-tab-key-source-order-viewer.md).
+*  The order of the keyboard access through sections of the page seems wrong.  You navigate through all the **More** links in the document before you reach the sidebar navigation menu.  This makes the sidebar navigation menu pointless.  By the time the `Tab` key puts focus on the sidebar navigation menu, you already traversed all the content that the sidebar navigation menu was supposed to provide easy access to.  This issue is analyzed in [Test keyboard support using the Source Order Viewer](test-tab-key-source-order-viewer.md).
 
 
 ## See also
