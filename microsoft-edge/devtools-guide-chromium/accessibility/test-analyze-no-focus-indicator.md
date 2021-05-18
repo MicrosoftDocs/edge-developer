@@ -12,23 +12,23 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 <!-- Inspect tool, and CSS rules: pseudo-classes for states -->
 
-In the accessibility-testing demo page, the sidebar navigation menu with blue buttons doesn't visually indicate which button has focus, when using a keyboard.  To find out why the sidebar menu is confusing to keyboard users, we'll look for CSS pseudo-class rules for the `hover` and `focus` states, along with the CSS property for button outlines.  
+In the accessibility-testing demo page, the sidebar navigation menu with blue links doesn't visually indicate which link has focus, when using a keyboard.  To find out why the sidebar menu is confusing to keyboard users, we'll look for CSS pseudo-class rules for the `hover` and `focus` states, along with the CSS property for link outlines.  
 
-This analysis finds that the lack of indication of keyboard focus in the buttons of the sidebar navigation menu is because:
+This analysis finds that the lack of indication of keyboard focus in the links of the sidebar navigation menu is because:
 *  The `a` links have a CSS property setting of `outline: none`.
 *  The `a` links lack a CSS pseudo-class rule for the `:focus` state.
 
-To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue button on the sidebar navigation menu, and then view the DOM tree and CSS for the `a` element that defines that button.
+To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue link on the sidebar navigation menu, and then view the DOM tree and CSS for the `a` element that defines that link.
 
 1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  Select the **Inspect** \(![Inspect icon](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
-1.  Hover over the **Cats** button, which is the first, blue button of the sidebar menu.  The Inspect overlay appears, showing that the `a` element is keyboard-focusable.  But the overlay doesn't indicate that there's no visual indication that the button has focus.
+1.  Hover over the blue **Cats** link in the sidebar navigation menu.  The Inspect overlay appears, showing that the `a` element is keyboard-focusable.  But the overlay doesn't indicate that there's no visual indication that the link has focus.
 
-    Next, we'll inspect the CSS styling of the `a` link used for this button in the sidebar menu.
+    Next, we'll inspect the CSS styling of this link.
  
-1.  Select the **Cats** button.  The **Inspect** tool turns off, and the **Elements** tool opens, highlighting the `a` node in the DOM tree.
+1.  Select the **Cats** link in the sidebar navigation menu.  The **Inspect** tool turns off, and the **Elements** tool opens, highlighting the `a` node in the DOM tree.
 
 1.  Select the **Styles** tab.  The CSS rule `#sidebar nav li a` appears, along with a link to a line number in `styles.css`.
 
