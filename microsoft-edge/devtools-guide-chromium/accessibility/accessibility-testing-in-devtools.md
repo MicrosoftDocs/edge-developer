@@ -204,7 +204,7 @@ When you press `Tab` instead of `Enter`, the next element that gets focus is the
 
 After you go past the last **More** link, the page scrolls up again and you seem to be on some element, but you don't know which.
 
-If you look to the bottom left of the screen (or if you use a screen reader), you can tell that you are on the blue **Cats** button of the sidebar navigation menu, because the browser shows the URL (`#cats`) that the link points to, there.
+If you look to the bottom left of the screen (or if you use a screen reader), you can tell that you are on the blue **Cats** link in the sidebar navigation menu, because the browser shows the URL (`#cats`) that the link points to, there.
 
 :::image type="complex" source="../media/a11y-testing-lack-of-focus-style.msft.png" alt-text="A lack of focus styling makes it impossible to know where you currently are in the page.  The only hint is the display of the link target in the bottom left of the window." lightbox="../media/a11y-testing-lack-of-focus-style.msft.png":::
     A lack of focus styling makes it impossible to know where you currently are in the page.  The only hint is the display of the link target in the bottom left of the window.
@@ -236,7 +236,7 @@ Let's analyze these problems using DevTools.
 
 ### Analyzing the lack of indication of keyboard focus in the sidebar menu
 
-If you use the **Inspect** tool to highlight a button in the sidebar navigation menu, and then drill down in the DOM tree to the `a` element, you can start to find out why the sidebar navigation menu is confusing to keyboard users.
+If you use the **Inspect** tool to highlight a link in the sidebar navigation menu, and then drill down in the DOM tree to the `a` element, you can start to find out why the sidebar navigation menu is confusing to keyboard users.
 
 :::image type="complex" source="../media/a11y-testing-menu-link.msft.png" alt-text="Inspecting the source code and the applied styles of a link in the sidebar navigation menu" lightbox="../media/a11y-testing-menu-link.msft.png":::
     Inspecting the source code and the applied styles of a link in the sidebar navigation menu
@@ -335,10 +335,10 @@ For detailed walkthrough steps, navigate to [Test keyboard support using the Sou
 
 In addition to the automatic color contrast tests shown earlier, you can also use the **Inspect** tool to check whether individual page elements have enough contrast.  If contrast information is available, the **Inspect** overlay shows the contrast ratio and a checkbox item.  A green check mark icon indicates there's enough contrast, and a yellow alert icon indicates not enough contrast.
 
-For example, the buttons in the sidebar navigation menu have enough contrast, but the green **Dogs** list item in the **Donation status** section doesn't.
+For example, the links in the sidebar navigation menu have enough contrast, but the green **Dogs** list item in the **Donation status** section doesn't.
 
-:::image type="complex" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="The buttons in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay" lightbox="../media/a11y-testing-enough-contrast.msft.png":::
-    The buttons in the sidebar navigation menu have enough contrast, as shown in the **Inspect** overlay
+:::image type="complex" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="The links in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay" lightbox="../media/a11y-testing-enough-contrast.msft.png":::
+    The links in the sidebar navigation menu have enough contrast, as shown in the **Inspect** overlay
 :::image-end:::
 
 An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay:
@@ -347,7 +347,7 @@ An element that doesn't have enough contrast is flagged by a warning in the **In
     An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay
 :::image-end:::
 
-However, using the **Inspect** tool this way isn't enough testing.  The elements on the page could have different states and you need to test those states, too.  For example, if you hover the mouse over the sidebar navigation menu, you get a rather involved animation that changes the button colors:
+However, using the **Inspect** tool this way isn't enough testing.  The elements on the page could have different states and you need to test those states, too.  For example, if you hover the mouse over the sidebar navigation menu, you get a rather involved animation that changes the color of the links:
 
 :::image type="complex" source="../media/a11y-testing-hover.msft.png" alt-text="The menu item showing different colors when the mouse pointer is over it" lightbox="../media/a11y-testing-hover.msft.png":::
     The menu item showing different colors when the mouse pointer is over it
@@ -358,11 +358,11 @@ For detailed walkthrough steps, navigate to [Check text-color contrast in the de
 
 ### Verify accessibility during all states of elements, such as contrast during hover
 
-When you turn on the **Inspect** tool, you can't reach the `hover` state of the **Cats** button in the sidebar navigation menu to test the contrast ratio during the `hover` state, because the `hover` state in your styles never gets triggered.  Instead, you need to simulate the state of the **Cats** menu item, by using the state simulation in the **Styles** tab.
+When you turn on the **Inspect** tool, you can't reach the `hover` state of the **Cats** link in the sidebar navigation menu to test the contrast ratio during the `hover` state, because the `hover` state in your styles never gets triggered.  Instead, you need to simulate the state of the **Cats** menu item, by using the state simulation in the **Styles** tab.
 
 For detailed walkthrough steps, navigate to [Verify accessibility during all states of elements](test-inspect-states.md).
 
-Turn on the **Inspect** tool and then in the rendered page, select the blue **Cats** button in the sidebar navigation menu.  The **Elements** tool opens, with the `a` element selected in the DOM tree.  If needed, in the DOM tree, navigate to the element that has a `hover` state in the CSS applied to it.  In this case, the `a` element has a `hover` state.
+Turn on the **Inspect** tool and then in the rendered page, select the blue **Cats** link in the sidebar navigation menu.  The **Elements** tool opens, with the `a` element selected in the DOM tree.  If needed, in the DOM tree, navigate to the element that has a `hover` state in the CSS applied to it.  In this case, the `a` element has a `hover` state.
 
 :::image type="complex" source="../media/a11y-testing-inspecting-link-to-hover.msft.png" alt-text="Inspecting the element that has a hover state in the Elements tool" lightbox="../media/a11y-testing-inspecting-link-to-hover.msft.png":::
     Inspecting the element that has a hover state in the Elements tool
@@ -374,7 +374,7 @@ Select the **\:hov (Toggle Element State)** button.  Then use the **Force elemen
     The state simulation feature showing all the options
 :::image-end:::
 
-Select the **\:hover** checkbox.  A yellow dot now appears next to the DOM element, indicating that the DOM element has a simulated state.  Also, the **Cats** button in the sidebar navigation menu is now highlighted in the page, as if the mouse pointer were hovering over it.
+Select the **\:hover** checkbox.  A yellow dot now appears next to the DOM element, indicating that the DOM element has a simulated state.  Also, the **Cats** link in the sidebar navigation menu is now highlighted in the page, as if the mouse pointer were hovering over it.
 
 :::image type="complex" source="../media/a11y-testing-hover-simulated.msft.png" alt-text="DevTools simulating a hover state" lightbox="../media/a11y-testing-hover-simulated.msft.png":::
     DevTools simulating a hover state
