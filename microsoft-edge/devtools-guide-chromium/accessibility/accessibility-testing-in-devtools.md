@@ -93,10 +93,13 @@ For detailed walkthrough steps, navigate to [Verify that text colors have enough
 
 ### Verify that the webpage layout is usable when narrow
 
+A very important part of accessibilty is to make sure that your web products work well on a narrow viewport. Many users need to zoom the document to be able to use it and this means that there is not much space left. Your multi-column layouts should turn into a single column version with an understandable order when there is not enough space. This means having the most important content first and extra items further down the page. You can simulate this my resizing the browser window, but a better way to test the responsiveness of your design is to use the **Device Emulation** tool. You can learn more about this by navigating to [Emulate mobile devices in Microsoft Edge DevTools](DevToolsDeviceModeIndex) but here are some features of device emulation that helps you with finding accessibility issues of any web site:
+
+* You can resize the page without resizing the browser window and test if your [CSS media queries](DevToolsMediaQueries) trigger a change in layout
+* By default, device emulation assumes a touch device. This means that any functionality of your product that relies on hover interaction will not work. 
+* In addition to the visual testing you can do by simulating different devices, zoom levels and pixel ratios you also have a way to test how your product behaves on unreliable connections or when the user is offline. Showing the most important interactions to a user on a slow connection is also an accessibility consideration.
+
 By making the window narrow and using the arrow keys to scroll the page, you can see that the top navigation menu of the page has some usability issues.  The top navigation bar overlaps the **Search** form, and that issue needs to be fixed.
-
-To check page layout and usability by using the **Device Emulation** tool, navigate to [Emulate mobile devices in Microsoft Edge DevTools][DevToolsDeviceModeIndex].
-
 
 ### Wavy underlines in the DOM tree indicate automatically detected issues
 
@@ -214,7 +217,7 @@ Selecting `Tab` again takes you to the input textbox of the donation form.  Howe
 
 :::image type="complex" source="../media/a11y-testing-form-field-with-outline.msft.png" alt-text="The only keyboard-accessible element in the donation form is the entry text field" lightbox="../media/a11y-testing-form-field-with-outline.msft.png":::
     The only keyboard-accessible element in the donation form is the text field
-:::image-end:::
+:::image-end:::f
 
 Selecting `Tab` again puts focus on the top navigation bar, where you can select `Enter` to go to a different section of the page or a different page of the site.  You know which element you are on, because there's a focus outline.  To select a link in the top navigation bar, use `Tab` or `Shift+Tab` to put focus on a link, and then select `Enter`.
 
@@ -320,7 +323,7 @@ Another issue is the strange tabbing order within the page.  Keyboard users reac
 
 The reason is that the source order of the document determines the order of keyboard access.  In the source code of the document, the sidebar navigation menu appears after the main content of the page.  The sidebar navigation menu appears above the main content of the page only because the sidebar navigation menu has been positioned using CSS.
 
-You can test issues like that using the **Source Order Viewer** in the **Accessibility** tab.  Scroll down all the way and select the **Show Source Order** checkbox.  Now when you navigate the DOM tree in the **Elements** tool, such as selecting the `header` element, numeric overlays are shown on sections of the rendered page, showing you the source order without having to navigate around using a keyboard.
+You can test issues like that using the **Source Order Viewer** in the **Accessibility** tab.  Scroll down all the way and select the **Show Source Order** checkbox.  Now when you navigate the DOM tree in the **Elements** tool, such as selecting the `header` element, numeric overlays are shown on sections of the rendered page, showing you the source order without having to look at the page source.
 
 :::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="Turning on the Source Order Viewer shows the order of the elements in the source code as numeric overlays on the page" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
     Turning on the Source Order Viewer shows the order of the elements in the source code as numeric overlays on the page
@@ -335,10 +338,10 @@ For detailed walkthrough steps, navigate to [Test keyboard support using the Sou
 
 In addition to the automatic color contrast tests shown earlier, you can also use the **Inspect** tool to check whether individual page elements have enough contrast.  If contrast information is available, the **Inspect** overlay shows the contrast ratio and a checkbox item.  A green check mark icon indicates there's enough contrast, and a yellow alert icon indicates not enough contrast.
 
-For example, the buttons in the sidebar navigation menu have enough contrast, but the green **Dogs** list item in the **Donation status** section doesn't.
+For example, the links in the sidebar navigation menu have enough contrast, but the green **Dogs** list item in the **Donation status** section doesn't.
 
-:::image type="complex" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="The buttons in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay" lightbox="../media/a11y-testing-enough-contrast.msft.png":::
-    The buttons in the sidebar navigation menu have enough contrast, as shown in the **Inspect** overlay
+:::image type="complex" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="The links in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay" lightbox="../media/a11y-testing-enough-contrast.msft.png":::
+    The links in the sidebar navigation menu have enough contrast, as shown in the **Inspect** overlay
 :::image-end:::
 
 An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay:
@@ -466,7 +469,7 @@ None of these tools can replace a proper testing round of your products with peo
 * Testing with voice recognition.
 * Testing in high-contrast mode.
 
-That said, we hope that the tools and processes shown here are a way to get you started and avoid the most evident mistakes.  Another excellent way to find out if you're doing things wrong during development is to use the [web hint extension for Visual Studio Code][WebhintForCode].  This extension flags the readily detectable accessibility problems in your source code and gives insights on how to fix them.
+That said, we hope that the tools and processes shown here are a way to get you started and avoid the most evident mistakes.  Another excellent way to find out if you're doing things wrong during development is to use the [webhint extension for Visual Studio Code][WebhintForCode].  This extension flags the readily detectable accessibility problems in your source code and gives insights on how to fix them.
 
 :::image type="complex" source="../media/a11y-testing-webhint-in-vs-code.msft.png" alt-text="Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem" lightbox="../media/a11y-testing-webhint-in-vs-code.msft.png":::
     Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem
@@ -481,6 +484,7 @@ We're constantly working on new accessibility features for DevTools.  If there i
 
 
 <!-- links -->
+[DevToolsMediaQueries] ../device-mode/index.md#show-media-queries
 [DevtoolsAccessibilityReference]: reference.md "Accessibility-testing features in DevTools | Microsoft Docs"
 [DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Dark or Light Color Scheme simulation | Microsoft Docs"
 [DevToolsIssuesTool]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"
