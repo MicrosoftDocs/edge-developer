@@ -23,7 +23,7 @@ The **Inspect** tool's information overlay only represents a single state.  But 
 
 1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.
 
-1.  Hover over the blue buttons in the sidebar navigation menu.  The menu animations run.
+1.  Hover over the blue links in the sidebar navigation menu.  The menu animations run.
 
     :::image type="complex" source="../media/a11y-testing-hover.msft.png" alt-text="The menu item showing different colors when the mouse pointer is over it" lightbox="../media/a11y-testing-hover.msft.png":::
         The menu item showing different colors when the mouse pointer is over it
@@ -33,7 +33,7 @@ The **Inspect** tool's information overlay only represents a single state.  But 
     
 1.  Select the **Inspect** \(![the Inspect button](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
-1.  Hover over the various buttons in the menu that begins with the blue **Cats** button.  The animations for the buttons don't run; instead, the buttons are color-highlighted in the way that is standard for the Inspect tool.
+1.  Hover over the blue links in the sidebar navigation menu.  The animations for the links don't run; instead, the links are color-highlighted in the way that is standard for the Inspect tool.
 
 Checking for sufficient text contrast this way isn't enough, because the elements on the page could have different states.
 
@@ -49,7 +49,7 @@ When the **Inspect** tool is active, instead of hovering over an animated elemen
 
 1.  Select the **Inspect** \(![Inspect tool button](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
-1.  In the rendered webpage, select the blue **Cats** button in the menu.  The **Elements** tool opens, with the element `<a href="#cats">Cats</a>` selected.
+1.  In the rendered webpage, select the blue **Cats** link in the sidebar navigation menu.  The **Elements** tool opens, with the element `<a href="#cats">Cats</a>` selected.
 
     :::image type="complex" source="../media/a11y-testing-inspecting-link-to-hover.msft.png" alt-text="Inspecting the element that has a hover state in the Elements tool" lightbox="../media/a11y-testing-inspecting-link-to-hover.msft.png":::
         Inspecting the element that has a hover state in the Elements tool
@@ -75,7 +75,7 @@ When the **Inspect** tool is active, instead of hovering over an animated elemen
 
 1.  Select the **Inspect** \(![Inspector icon](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
-1.  Hover over the blue **Cats** button, which is now light blue, because of the simulated hover animation.  The **Inspect** tool's information overlay appears, showing an orange exclamation point in the **Contrast** row, indicating that the contrast isn't high enough.
+1.  Hover over the blue **Cats** link in the sidebar navigation menu.  The link is now light blue, because of the simulated hover animation.  The **Inspect** tool's information overlay appears, showing an orange exclamation point in the **Contrast** row, indicating that the contrast isn't high enough.
 
     :::image type="complex" source="../media/a11y-testing-hover-contrast-testing.msft.png" alt-text="Testing the contrast of an element in a simulated hover state" lightbox="../media/a11y-testing-hover-contrast-testing.msft.png":::
         Testing the contrast of an element in a simulated hover state
