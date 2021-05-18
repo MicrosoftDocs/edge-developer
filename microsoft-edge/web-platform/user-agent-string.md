@@ -8,22 +8,22 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, user agent string, ua string, ua overrides
 ---
-# Guidance for websites to detect Microsoft Edge  
+# How websites can detect Microsoft Edge  
 
-Browsers provides mechanisms to detect brand and version information.  The mechanisms also detect other device characteristics, such as the host operating system.  The user agent string has a long history of causing website compatibility issues.  The Microsoft Edge team recommends you use a newer mechanism for detection named [User-Agent Client Hints](#user-agent-client-hints).  Microsoft Edge offers the following two mechanisms for retrieving user agent information.  
+Browsers provide mechanisms for sites to detect browser brand and version information, in addition to other device characteristics such as the host operating system. One such mechanism, the User-Agent string, has a long history of causing website compatibility issues.  Hence, the Microsoft Edge team recommends sites to use either feature detection or an improved mechanism to retrieve browser information named [User-Agent Client Hints](#user-agent-client-hints).  Microsoft Edge supports the following two mechanisms for retrieving user agent information.  
 
 |  | Server-side | Client-side |  
 |:--- |:--- |:--- | 
 | **User-Agent Client Hints** \(recommended\) | `Sec-CH-UA` HTTPS header | Query the `navigator.userAgentData` JavaScript method. |  
-| legacy **User agent string** | `User-Agent` HTTPS header | Query the `navigator.userAgent` JavaScript method. |  
+| **User-Agent string** \(legacy\) | `User-Agent` HTTPS header | Query the `navigator.userAgent` JavaScript method. |  
 
 Microsoft recommends that you use the [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] whenever possible for the following reasons.  
 
 *   Improve code maintainability.  
 *   Reduce code fragility.  
-*   Reduce code breakage from changes to the user agent string.  
+*   Reduce code breakage from changes to the User-Agent string.  
     
-For cases where [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] isn't applicable and you must use user agent detection, use the following format of the Microsoft Edge user agent on desktop.  
+For cases where [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] isn't applicable and you must use user agent detection, use the following format to detect Microsoft Edge user agent on desktop.  
 
 ## User-Agent Client Hints  
 
@@ -34,7 +34,7 @@ Starting in Microsoft Edge version 90, access browser information in a cleaner, 
 By default, Chromium browsers including Microsoft Edge send the `Accept-CH-UA` response header in the following format.  
 
 ```https
-Sec-CH-UA: "Chromium";v="91", "Microsoft Edge";v="91","Dummy;Browser Brand";v="99f
+Sec-CH-UA: "Chromium";v="91", "Microsoft Edge";v="91","Dummy;Browser Brand";v="99"
 Sec-CH-UA-Mobile: ?0
 ```  
 
@@ -77,7 +77,7 @@ The default response value from `navigator.userAgentData` uses the following for
 }
 ```  
 
-If you need to access more detailed information, use the [getHighEntropyValues()][GithubWicgUaClientHintsGethighentropyvalues] method.  
+The above "low entropy" hints are sent by default. If you need to access more detailed information, use the [getHighEntropyValues()][GithubWicgUaClientHintsGethighentropyvalues] method.  
 
 :::row:::
    :::column span="":::
@@ -110,7 +110,7 @@ If you need to access more detailed information, use the [getHighEntropyValues()
 
 The set of brands and the order of appearance changes over time, you should never hard-code indices into the array of returned brands.  To help ensure you spot similar issues in your website early, the browser includes a `GREASE` brand value that changes over time and is formatted to break because of common string parsing issues.  
 
-If you prevented from using [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection], don't use a hardcoded list of known Chromium-based browsers for verification.  Examples of hardcoded browser names include `Microsoft Edge` and `Google Chrome`.  Reasons why [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] is unusable may include the following situation.  
+If you're prevented from using [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection], don't use a hardcoded list of known Chromium-based browsers for verification.  Examples of hardcoded browser names include `Microsoft Edge` and `Google Chrome`.  Reasons why [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] isn't applicable may include the following situation.  
 
 *   A fix for a Chromium bug in a later version must be avoided and the affected browsers are difficult to detect outside of a verification of the brand and version.  
     
@@ -130,7 +130,7 @@ function isChromium() {
 
 ## User agent string  
 
-Wherever possible, Microsoft recommends you limit your use of Microsoft Edge browser detection logic based on the user agent string.  If you have a compelling use case for user agent detection, the Microsoft Edge team recommends you use [User-Agent Client Hints](#user-agent-client-hints) as the primary detection logic.  The use of [User-Agent Client Hints](#user-agent-client-hints) reduces the amount of string parsing required.  However, for legacy reference, the following format is used for the user agent string.  
+Wherever possible, Microsoft recommends you minimize your use of Microsoft Edge browser detection logic based on the user agent string.  If you have a compelling use case for user agent detection, the Microsoft Edge team recommends you use [User-Agent Client Hints](#user-agent-client-hints) as the primary detection logic, which also reduces the amount of string parsing required.  However, for legacy reference, the following format is used for the User-Agent string.  
 
 :::row:::
    :::column span="":::
