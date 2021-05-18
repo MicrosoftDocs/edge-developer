@@ -10,12 +10,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Use the Inspect tool to detect accessibility issues by hovering over the webpage
 
-<!-- there is also an Inspect tool subsection in article:
-Tutorials: Get started with viewing and changing the DOM: View DOM nodes: Inspect a node (https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/dom/index#inspect-a-node)
-probably not focused on the Accessibility aspect.
-See if any info there to move (or copy) to here (or to other article/bucket)
- -->
-
 The **Inspect** tool displays information about individual elements as you hover over the rendered webpage, including accessibility information.
 (In contrast, the **Issues** tool automatically reports issues for the entire webpage.)
 
@@ -110,6 +104,8 @@ After selecting an element in the rendered page, you could then use the **Access
 
 ## See also
 
+*  [Inspect a node](devtools-guide-chromium/dom/index.md#inspect-a-node)
+*  [Check text-color contrast in the default state using the Inspect tool](test-inspect-text-contrast.md)
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
 
