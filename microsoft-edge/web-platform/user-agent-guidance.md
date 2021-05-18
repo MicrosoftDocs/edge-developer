@@ -10,7 +10,7 @@ keywords: microsoft edge, compatibility, web platform, user agent string, ua str
 ---
 # How to detect Microsoft Edge in your website  
 
-Browsers provide mechanisms for sites to detect browser brand and version information, in addition to other device characteristics such as the host operating system. One such mechanism, the User-Agent string, has a long history of causing website compatibility issues.  Hence, the Microsoft Edge team recommends sites to use either feature detection or an improved mechanism to retrieve browser information named [User-Agent Client Hints](#user-agent-client-hints).  Microsoft Edge supports the following two mechanisms for retrieving user agent information.  
+Browsers provide mechanisms for sites to detect browser brand and version information, also other device characteristics such as the host operating system.  One such mechanism, the User-Agent string, has a long history of causing website compatibility issues.  So, the Microsoft Edge team recommends websites use either feature detection or an improved mechanism to retrieve browser information named [User-Agent Client Hints](#user-agent-client-hints).  Microsoft Edge supports the following two mechanisms for retrieving user agent information.  
 
 |  | Server-side | Client-side |  
 |:--- |:--- |:--- | 
