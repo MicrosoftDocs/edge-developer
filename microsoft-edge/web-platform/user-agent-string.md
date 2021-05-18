@@ -1,14 +1,14 @@
 ---
 description: This page provides documentation on the Microsoft Edge user agent string
-title: Microsoft Edge User Agent String
+title: How to detect Microsoft Edge in your website
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/18/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, compatibility, web platform, user agent string, ua string, ua overrides
+keywords: microsoft edge, compatibility, web platform, user agent string, ua string, ua overrides, user-agent client hints, user agent client hints, ua client hints, ua ch
 ---
-# How websites can detect Microsoft Edge  
+# How to detect Microsoft Edge in your website  
 
 Browsers provide mechanisms for sites to detect browser brand and version information, in addition to other device characteristics such as the host operating system. One such mechanism, the User-Agent string, has a long history of causing website compatibility issues.  Hence, the Microsoft Edge team recommends sites to use either feature detection or an improved mechanism to retrieve browser information named [User-Agent Client Hints](#user-agent-client-hints).  Microsoft Edge supports the following two mechanisms for retrieving user agent information.  
 
@@ -41,11 +41,11 @@ Sec-CH-UA-Mobile: ?0
 > [!NOTE]
 > Client Hints are only sent over secure connections using `HTTPS`.  
 
-If you need to access more information, send later requests with the specific headers.  
+The low entropy hints are sent by default.  If you need to access more information, send one of the following request headers.  
 
 #### User-Agent request and response headers  
 
-| Response header | Example response value |  
+| Request header | Example response value |  
 |:--- |:--- |  
 | `Sec-CH-UA` | `"Chromium";v="91", "Microsoft Edge";v="91","GREASE";v="99"` |  
 | `Sec-CH-UA-Mobile` | `false` |  
@@ -60,24 +60,11 @@ If you need to access more information, send later requests with the specific he
 The default response value from `navigator.userAgentData` uses the following format.  
 
 ```javascript
-{
-    brands: 
-        [
-            {
-                brand: "Chromium","version":"91"
-            },
-            {
-                brand: "Microsoft Edge","version":"91"
-            },
-            {
-                brand: "GREASE","version":"99"
-            }, 
-        ]
-    mobile: false
-}
+{ brands: [ {brand: "Chromium","version":"91"}, {brand: "Microsoft Edge","version":"91"}, {brand: "GREASE","version":"99"}, ]
+mobile: false }
 ```  
 
-The above "low entropy" hints are sent by default. If you need to access more detailed information, use the [getHighEntropyValues()][GithubWicgUaClientHintsGethighentropyvalues] method.  
+If you need to access more detailed information, use the [getHighEntropyValues()][GithubWicgUaClientHintsGethighentropyvalues] method.  
 
 :::row:::
    :::column span="":::
