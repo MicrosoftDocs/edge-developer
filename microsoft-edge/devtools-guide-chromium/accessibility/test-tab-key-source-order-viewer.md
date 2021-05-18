@@ -21,12 +21,12 @@ The accessibility-testing demo webpage has a counterintuitive tabbing order, whe
 The `Tab` key order on the demo page is:
 1. The **Search** field, then the **go** button for the **Search** field.
 1. The **More** button in the **Cats** section, to navigate to a "Cats" webpage.  Then the other **More** buttons, for Dogs, Sheep, Horses, and then Alpacas.
-1. The blue buttons in the sidebar navigation menu: **Cats**, **Dogs**, **Sheep**, **Horses**, and then **Alpacas**.
+1. The blue links of the sidebar navigation menu: **Cats**, **Dogs**, **Sheep**, **Horses**, and then **Alpacas**.
 1. The donation textbox in the donation form.
 1. The buttons in the top navigation bar: **Home**, **Adopt a pet**, **Donate**, **Jobs**, and then **About Us**.
 1. The browser's top-of-window interface.
 
-The reason for the confusing `Tab` key order after the **More** buttons is that the source order of the document determines the order of keyboard access.  In the source code of the document, the sidebar navigation menu with blue buttons appears _after_ the main content of the webpage.  The sidebar navigation menu is only rendered above most of the main content of the webpage because the sidebar navigation menu has been positioned using CSS.
+The reason for the confusing `Tab` key order after the **More** buttons is that the source order of the document determines the order of keyboard access.  In the source code of the document, the sidebar navigation menu with blue links appears _after_ the main content of the webpage.  The sidebar navigation menu is only rendered above most of the main content of the webpage because the sidebar navigation menu has been positioned using CSS.
 
 You can test issues with `Tab` key order by using the **Source Order Viewer** in the **Accessibility** tab.  The **Source Order Viewer** is an experimental feature; for more information, see [Source Order Viewer](../experimental-features/index.md#source-order-viewer).
 
