@@ -165,13 +165,13 @@ To toggle the state of an element, such as `:active` or `:focus`:
 
 #### Add an existing class  
 
-Adjacent to the **Toggle Element State** button is the **Element Classes** button.  To move the focus to it, select `Tab` and select `Enter`.  Focus moves into an edit text field labeled **Add New Class**.  
+Adjacent to the **Toggle Element State** button is the **Element Classes** button.  To move the focus to it, select `Tab` and then select `Enter`.  Focus moves into an edit text field labeled **Add new class**.  
 
 The **Element Classes** button is primarily used for adding existing classes to an element.  For example, if your stylesheet contained a helper class named `.clearfix`, you can select `.` inside of the edit text field to display a suggestion list of classes and use the `Down Arrow` to find the `.clearfix` suggestion.  Or type the class name out yourself and select `Enter` to apply it.  
 
 #### Add a new style rule  
 
-Adjacent to the **Element Classes** button is the **New Style Rule** button.  To move the focus to it, select `Tab` and select `Enter`.  Focus moves into an editable text field inside of the style inspector.  The initial text content of the field is the tag name of the element that is selected in the **DOM Tree**.  
+Adjacent to the **Element Classes** button is the **New Style Rule** button.  To move the focus to it, select `Tab` and then select `Enter`.  Focus moves into an editable text field inside of the style inspector.  The initial text content of the field is the tag name of the element that is selected in the **DOM Tree**.  
 You can type any class name you want into this field and then select `Tab` to assign CSS properties to it.  
 
 ### Computed tab  
