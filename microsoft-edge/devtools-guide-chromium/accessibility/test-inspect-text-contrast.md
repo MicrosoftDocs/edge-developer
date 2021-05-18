@@ -14,9 +14,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Check text color contrast in the default state by using the **Inspect** tool.  The **Inspect** tool's information overlay on the webpage has an **Accessibility** section that includes **Contrast** information.
 
-This article leads up to another, more specialized article: [Verify accessibility during all states of elements][DevtoolsAccessibilityTestInspectStates].
-
-
 **To check text-color contrast in the default state by using the Inspect tool's information overlay:**
 
 <!-- Inspect tool -->
@@ -27,13 +24,13 @@ For elements that have text, the **Inspect** tool's information overlay shows th
 
 In some cases, contrast is affected by setting the browser to light theme or dark theme.
 
-As an example, the sidebar menu elements of the demo page such as the blue **Cats** button have enough contrast, but the green **Dogs** link in the **Donation status** section does not have enough contrast.  Inspect those elements using the **Inspect** tool, as follows:
+As an example, in the demo page, the blue links of the sidebar navigation menu have enough contrast, but the green **Dogs** link in the **Donation status** section does not have enough contrast.  Inspect those elements using the **Inspect** tool, as follows:
 
 1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
 
 1.  Select the **Inspect** \(![Inspect button](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
-1.  In the rendered webpage, hover over the blue **Cats** button.  The **Inspect** tool's information overlay appears.  In the **Accessibility** section of the information overlay, a green checkmark appears on the **Contrast** row, indicating that this element has enough contrast of text color versus background color.
+1.  In the rendered webpage, hover over the blue **Cats** link of the sidebar navigation menu.  The **Inspect** tool's information overlay appears.  In the **Accessibility** section of the information overlay, a green checkmark appears on the **Contrast** row, indicating that this element has enough contrast of text color versus background color.
 
     :::image type="complex" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="The menu items have enough contrast, as shown in the Inspect tool" lightbox="../media/a11y-testing-enough-contrast.msft.png":::
         The menu items have enough contrast, as shown in the Inspect tool
@@ -59,6 +56,8 @@ There are several DevTools features for inspecting text-color contrast:
 
 ## See also
 
+*  [Verify accessibility during all states of elements][DevtoolsAccessibilityTestInspectStates]
+*  [Use the Inspect tool to detect accessibility issues by hovering over the webpage](test-inspect-tool.md)
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
 
