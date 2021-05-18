@@ -3,7 +3,7 @@ description: Learn how to save changes made within DevTools to disk.
 title: Edit files with Workspaces
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,11 +21,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # Edit files with Workspaces  
 
-> [!NOTE]
-> The goal of this tutorial is to provide hands-on practice in setting up and using Workspaces, so that you are able to use Workspaces in your own projects.  You are able to save the changes to the source code, on your local computer, that you made within DevTools after you enable Workspaces.  
+This tutorial provides hands-on practice in setting up and using a Workspace.  After you add files to a Workspace, the changes that you make in your source code within DevTools are saved on your local computer, and are preserved after you refresh the webpage.  
 
 > [!IMPORTANT]
 > **Prerequisites**: Before beginning this tutorial, you should know how to perform the following actions.  
@@ -48,7 +46,7 @@ With Workspaces enabled, the CSS changes that you make within DevTools are saved
 
 If you are using a modern framework, it probably transforms your source code from a format that is easy to maintain into a format that is optimized to run as quickly as possible.  
 
-Workspaces is usually able to map the optimized code back to your original source code with the help of [source maps][TreehouseBlogSourceMaps].  But there is a lot of variation between frameworks over how each uses source maps.  Devtools simply does support all of the variations.  
+Workspaces is usually able to map the optimized code back to your original source code with the help of [source maps][TreehouseBlogSourceMaps].  But there is a lot of variation between frameworks over how each framework uses source maps.  Devtools doesn't support all of the variations.  
 
 Workspaces is known to not work with the following framework.  
 
@@ -117,20 +115,20 @@ Complete the following actions, to get hands-on experience with Workspaces.
        The **Console** panel  
     :::image-end:::  
     
-1.  Choose the **Sources** tool.  
-1.  Choose the **Filesystem** panel.  
+1.  Navigate to the **Sources** tool.  
+1.  In the **Navigator** pane (on the left), choose the **Filesystem** tab.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="The Filesystem panel" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
-       The **Filesystem** panel  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="The Filesystem tab" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+       The **Filesystem** tab  
     :::image-end:::  
     
 1.  Choose **Add Folder To Workspace**.  
 1.  Type `~/Desktop/app`.  
 1.  Choose **Allow** to give DevTools permission to read and write to the directory.  
-    In the **Filesystem** panel, there is now a green dot next to `index.html`, `script.js`, and `styles.css`.  These green dots mean that DevTools has established a mapping between the network resources of the page, and the files in `~/Desktop/app`.  
+    In the **Filesystem** tab, a green dot now appears next to `index.html`, `script.js`, and `styles.css`.  A green dot indicates that DevTools has established a mapping between a network resource of the page, and the file in `~/Desktop/app`.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="The Filesystem panel now shows a mapping between the local files and the network ones" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
-       The **Filesystem** panel now shows a mapping between the local files and the network ones  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="The Filesystem tab now indicates a mapping between the local files and the network ones" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+       The **Filesystem** tab now indicates a mapping between the local files and the network ones  
     :::image-end:::  
     
 ## Step 2: Save a CSS change to disk  
@@ -193,33 +191,35 @@ The DOM tree is not html.
 In short, the **DOM Tree** `!==` HTML.  
 -->  
 
-### Change HTML from the Sources panel  
+### Change HTML from the Sources tool  
 
-If you want to save a change to the html of the page, do it using the **Sources** panel.  
+If you want to save a change to the HTML of the webpage, use the **Sources** tool.  
 
-1.  Choose the **Sources** tool.  
-1.  Choose the **Page** panel.  
+1.  Navigate to the **Sources** tool.  
+1.  In the **Navigator** pane (on the left), choose the **Page** tab.  
 1.  Choose **(index)**.  The HTML for the page opens.  
 1.  Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  Review the following figure.  
 1.  Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.  
-1.  Refresh the page.  The `<h1>` element is still displaying the new text.  
+1.  Refresh the page.  The `<h1>` element continues to display the new text after the page is refreshed.  
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Change HTML from the Sources panel" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
-       Change HTML from the **Sources** panel  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Change HTML from the Sources tool" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+       Change HTML from the **Sources** tool  
     :::image-end:::  
     
 1.  Open `~/Desktop/app/index.html`.  The `<h1>` element contains the new text.  
     
 ## Step 4: Save a JavaScript change to disk  
 
-The **Sources** panel is also the place to make changes to JavaScript.  But sometimes you need to access other panels, such as the **Elements** tool or the **Console** panel, while making changes to your site.  There is a way to have the **Sources** panel open alongside other panels.  
+The main place to use the code editor of DevTools is the **Sources** tool.  But sometimes you need to access other tools, such as the **Elements** tool or the **Console** panel, while editing files.  The **Quick Source** tool gives you just the editor from the **Sources** tool, while any tool is open.  
 
-1.  Choose the **Elements** tool.  
+To open the DevTools code editor alongside other tools, do the following:  
+
+1.  Navigate to the **Elements** tool.  
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  The **Command Menu** opens.  
-1.  Type `QS`, then choose **Show Quick Source**.  At the bottom of your DevTools window there is now a **Quick Source** panel.  The panel is displaying the contents of `index.html`, which is the last file you edited in the **Sources** panel.  The **Quick Source** panel gives you the editor from the **Sources** panel, so that you are able to edit files while having other panels open.  
+1.  Type `Quick Source`, and then choose **Show Quick Source**.  At the bottom of the DevTools window, the **Quick Source** tool appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.    
     
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Open the Quick Source panel using Command Menu" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
-       Open the **Quick Source** panel using **Command Menu**  
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Open the Quick Source tool by using the Command Menu" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+       Open the **Quick Source** tool by using the **Command Menu**  
     :::image-end:::  
     
 1.  Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  Review the following figure.  
@@ -232,7 +232,7 @@ The **Sources** panel is also the place to make changes to JavaScript.  But some
     > [!NOTE]
     > The `Save Changes To Disk With Workspaces` link in the demo is styled regularly.  
     
-1.  Add the following code to the bottom of **script.js** using the **Quick Source** panel.  
+1.  Add the following code to the bottom of **script.js** using the **Quick Source** tool.  
     
     ```javascript
     console.log('greetings from script.js');
@@ -296,4 +296,4 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

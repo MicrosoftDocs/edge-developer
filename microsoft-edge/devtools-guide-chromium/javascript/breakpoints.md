@@ -3,7 +3,7 @@ description: Learn about all the ways you are able to pause your code in Microso
 title: How to pause your code with breakpoints in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,10 +21,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # How to pause your code with breakpoints in Microsoft Edge DevTools  
 
-Use breakpoints to pause your JavaScript code.  This guide explains each type of breakpoint that is available in DevTools, as well as when to use and how to set each type.  For a hands-on tutorial of the debugging process, navigate to [Get started with debugging JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex].  
+Use breakpoints to pause your JavaScript code.  This article explains each type of breakpoint available in DevTools, as well as when to use and how to set each type.
+
+For an introductory tutorial using an existing webpage, navigate to [Get started with debugging JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex].
 
 ## Overview of when to use each breakpoint type  
 
@@ -208,13 +209,23 @@ Ensuring the target function is in scope is tricky if you are running the `debug
 1.  Trigger the breakpoint.  
 1.  Run the `debug()` method in the DevTools Console while the code is still paused on your line-of-code breakpoint.  
     
+## Related articles
+
+*   [Use the debugger features][DevtoolsJavascriptReference] - Using the UI of the debugger in the **Sources** tool.
+*   [Get started with debugging JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex] - An introductory tutorial using an existing webpage.
+*   [Sources tool overview][DevtoolsSourcesIndex] - The debugger is part of the **Sources** tool, which includes a JavaScript editor.
+
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
+[DevtoolsJavascriptReference]: ./reference.md "Use the debugger features | Microsoft Docs"  
+
 [DevtoolsJavascriptIndex]: index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
+
+[DevtoolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"  
 
 [MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "Fetch API | MDN"  
 
@@ -228,4 +239,4 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

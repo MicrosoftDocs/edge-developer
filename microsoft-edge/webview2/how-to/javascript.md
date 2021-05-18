@@ -3,7 +3,7 @@ description: Learn how to use JavaScript in complex scenarios in WebView2 apps
 title: Use JavaScript in WebView2 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/02/2020
+ms.date: 05/06/2021
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -15,7 +15,7 @@ Using JavaScript in WebView2 controls allows you to customize native apps to mee
 
 ## Before you begin  
 
-This article assumes that you already have a working project.  If you do not have a project and want to follow along, navigate to the [WebView2 Getting Started Guide][Webview2GettingstartedWpf].  
+This article assumes that you already have a working project.  If you do not have a project and want to follow along, navigate to the [WebView2 Get Started Guide][Webview2GetStartedWpf].  
 
 ## Basic WebView2 Functions  
 
@@ -23,7 +23,7 @@ Use the following functions to begin embedding JavaScript in your WebView app.
 
 | API  | Description  |
 |:--- |:--- |  
-| [ExecuteScriptAsync][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | Run JavaScript in a WebView control. For more information, navigate to the Getting Started tutorial. |
+| [ExecuteScriptAsync][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | Run JavaScript in a WebView control. For more information, navigate to the Get Started tutorial. |
 | [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | Runs when the Document Object Model \(DOM\) is created. |
       
 ## Scenario:  Running a dedicated script file  
@@ -49,7 +49,7 @@ To solve the problem, create a separate JavaScript file with your code, and then
     ```csharp
     await webView.CoreWebView2.ExecuteScriptAsync(text);
     ```  
-
+    
 ## Scenario:  Remove drag-and-drop functionality  
 
 In this section, use JavaScript to remove the drag-and-drop functionality from your WebView2 control.  
@@ -60,14 +60,14 @@ To begin, explore the current drag-and-drop functionality.
 1.  Run your project.  
 1.  Drag-and-drop the `contoso.txt` file onto the WebView control.  A new window opens, which is the result of the code in your sample project.  
     
-    :::image type="complex" source="./media/dragtext.png" alt-text="Result of dragging and dropping contoso.txt" lightbox="./media/dragtext.png":::
+    :::image type="complex" source="./media/drag-text.png" alt-text="Result of dragging and dropping contoso.txt" lightbox="./media/drag-text.png":::
        Result of dragging and dropping contoso.txt  
     :::image-end:::  
-
+    
 Now, add code to remove the drag-and-drop functionality from the WebView2 control.  
 
 1.  Copy and paste the following code snippet into `InitializeAsync()` in `MainWindow.xaml.cs`.   
-            
+    
     ```csharp   
     await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('dragover',function(e){e.preventDefault();},false);");
     
@@ -77,10 +77,10 @@ Now, add code to remove the drag-and-drop functionality from the WebView2 contro
     "console.log(e.dataTransfer.files[0])" +
     "}, false);");
     ```  
-          
+    
 1.  Run your project.  
 1.  Try to drag-and-drop `contoso.txt`.  Confirm that you are not able to drag-and-drop.  
-
+    
 ## Scenario:  Removing the Context Menu  
 
 In this section, remove the default context menu from your WebView2 control.  
@@ -90,27 +90,27 @@ To begin, explore the current contextual menu functionality.
 1.  Run your project.  
 1.  Hover anywhere on the WebView2 control and open the context menu \(right-click\).  The context menu displays the default choices.  
     
-    :::image type="complex" source="./media/contextmenu.png" alt-text="The context menu showing the default choices" lightbox="./media/contextmenu.png":::
+    :::image type="complex" source="./media/context-menu.png" alt-text="The context menu showing the default choices" lightbox="./media/context-menu.png":::
        The context menu showing the default choices  
     :::image-end:::  
     
 Now add code to remove the contextual menu functionality from the WebView2 control.  
 
 1.  Copy and paste the following code snippet into `InitializeAsync()` in `MainWindow.xaml.cs`.    
-        
+    
     ```csharp   
     await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
     ```  
-
+    
 1.  Run the code again.  Confirm that you're not able to open a context menu \(right-click\).  
-   
+    
 ## See also  
 
-*   For more information on getting started using WebView2, navigate to [WebView2 Getting Started Guides][Webview2MainGettingStarted].  
+*   To get started using WebView2, navigate to [WebView2 Get Started Guides][Webview2MainGetStarted].  
 *   For a comprehensive example of WebView2 capabilities, navigate to the [WebView2Samples][GithubMicrosoftedgeWebview2samples] repo on GitHub.  
 *   For detailed information on WebView2 APIs, navigate to [API reference][Webview2ApiReference].  
 *   For more information on WebView2, navigate to [WebView2 Resources][Webview2MainNextSteps].  
-
+    
 ## Getting in touch with the Microsoft Edge WebView team  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
@@ -119,12 +119,13 @@ Now add code to remove the contextual menu functionality from the WebView2 contr
 
 [DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
-
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"  
-[Webview2GettingstartedWpf]: ../gettingstarted/wpf.md "Getting started with WebView2 in WPF (Preview) | Microsoft Docs"  
-[Webview2MainGettingStarted]: ../index.md#getting-started "Getting started - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
+[Webview2GetStartedWpf]: ../get-started/wpf.md "Get started with WebView2 in WPF (Preview) | Microsoft Docs"  
+[Webview2MainGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 [Webview2MainNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
+
 [Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated]: /microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated "AddScriptToExecuteOnDocumentCreated - 0.9.579 - interface ICoreWebView2 | Microsoft Docs"  
+
 [Webview2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.ExecuteScriptAsync(String) Method (Microsoft.Web.WebView2.Wpf) | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  

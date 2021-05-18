@@ -3,7 +3,7 @@ description: Discover new workflows for viewing and changing CSS in Microsoft Ed
 title: CSS reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,7 +21,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-
 # CSS reference  
 
 Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.  
@@ -50,9 +49,9 @@ Use one the following actions to select an element.
 
 ### View the external stylesheet where a rule is defined  
 
-In the **Styles** pane, choose the link next to a CSS rule to open the external stylesheet that defines the rule.  
+In the **Styles** pane, choose the link next to a CSS rule to open the external stylesheet that defines the rule.  The stylesheet opens in the **Editor** pane of the **Sources** tool.  
 
-If the stylesheet is minified, navigate to [Make a minified file readable][DevToolsJavascriptReferenceFormat].  
+If the stylesheet is minified, choose the **Format** \(![Format](../media/format-icon.msft.png)\) button, at the bottom of the **Editor** pane.  For more information, navigate to [Reformat a minified JavaScript file with pretty-print][DevToolsJavascriptReferenceFormat].  
 
 > [!NOTE]
 > In the following figure, after you choose `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` you are taken to line 2 of `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.  
@@ -551,7 +550,7 @@ When you open the **Color Picker**, the **Eyedropper** \(![Eyedropper](../media/
 [DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class "Add a pseudostate to a class - Get Started With Viewing And Changing CSS | Microsoft Docs"  
 [DevToolsCSSGetStartedTutorial]: ../css/index.md#view-the-css-for-an-element "View the CSS for an Element - Get Started With Viewing And Changing CSS | Microsoft Docs"  
 [DevToolsCssPrintPreview]: ../css/print-preview.md "Force Microsoft Edge DevTools Into Print Preview Mode (CSS Print Media Type) | Microsoft Docs"  
-[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#make-a-minified-file-readable "Make a minified file readable - JavaScript Debugging Reference | Microsoft Docs"  
+[DevToolsJavascriptReferenceFormat]: ../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print "Reformat a minified JavaScript file with pretty-print - Use the debugger | Microsoft Docs"  
 
 [MaterialDesignColorSystem]: https://material.io/guidelines/style/color.html#color-color-palette "The color system - Material Design"  
 [MDNBoxModel]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model "The box model | MDN"  
@@ -567,4 +566,4 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  

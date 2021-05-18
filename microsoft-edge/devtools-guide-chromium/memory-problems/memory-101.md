@@ -3,7 +3,7 @@ description: This section describes common terms used in memory analysis, and is
 title: Memory terminology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,7 +21,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-
 # Memory terminology  
 
 This article describes common terms used in memory analysis, and is applicable to various memory profiling tools for different languages.  
@@ -61,16 +60,16 @@ This is the size of memory that is freed once the object is deleted along with t
 
 **Garbage Collector roots** are made up of **handles** that are created \(either local or global\) when making a reference from native code to a JavaScript object outside of V8.  All such handles may be found within a heap snapshot under **GC roots** > **Handle scope** and **GC roots** > **Global handles**.  Describing the handles in this documentation without diving into details of the browser implementation may be confusing.  Both Garbage Collector roots and the handles are not something you need to worry about.  
 
-There are lots of internal Garbage Collector roots, most of which are not interesting for the users.  From the applications standpoint there are following kinds of roots.  
+There are lots of internal Garbage Collector roots, most of which are not interesting for the users.  From the applications standpoint, there are the following kinds of roots.  
 
-*   Window global object \(in each iframe\).  There is a distance field in the heap snapshots which is the number of property references on the shortest retaining path from the window.  
-*   Document DOM tree consisting of all native DOM nodes reachable by traversing the document.  Not all of the nodes may have JS wrappers but if a node has a wrapper, it is alive while the document is alive.  
-*   Sometimes objects may be retained by the debugger context in the **Sources** panel and the **Console** \(for example after Console evaluation\).  Create heap snapshots with a cleared **Console** panel and no active breakpoints in the debugger in the **Sources** panel.
+*   Window global object \(in each iframe\).  In the heap snapshots, the `distance` field indicates the number of property references on the shortest retaining path from the window.  
+*   The document DOM tree, consisting of all native DOM nodes that are reachable by traversing the document.  Not all of the nodes have JavaScript wrappers, but if a node has a wrapper, the node is alive while the document is alive.  
+*   Sometimes objects are retained by the debug context in the **Sources** tool and the **Console**, such as after Console evaluation.  Create heap snapshots with a cleared **Console** tool and no active breakpoints in the debugger in the **Sources** tool.
 
 >[!TIP]
-> Clear the **Console** panel by running `clear()` and deactivate breakpoints in the **Sources** panel before taking a heap snapshot in the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots].
+> Before taking a heap snapshot in the [Memory][DevtoolsMemoryProblemsHeapSnapshots] tool, clear the **Console** tool and deactivate breakpoints in the **Sources** tool.  To clear the **Console** tool, run the `clear()` method.  
 
-The memory graph starts with a root, which may be the `window` object of the browser or the `Global` object of a Node.js module.  You do not control how this root object is garbage collected.  
+The memory graph starts with a root, which may be the `window` object of the browser or the `Global` object of a Node.js module.  You do not control how the root object is garbage collected.  
 
 :::image type="complex" source="../media/memory-problems-dontcontrol.msft.png" alt-text="You are not able to control how the root object is garbage collected." lightbox="../media/memory-problems-dontcontrol.msft.png":::
    You are not able to control how the root object is garbage collected.  
@@ -188,5 +187,5 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
-[MegginKearney]: https://developers.google.com/web/resources/contributors/megginkearney
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
