@@ -22,8 +22,9 @@ When the **Inspect** tool is active, when you hover over any element within the 
 :::image-end:::
 
 
-<!-- Inspect tool: Accessibility section of overlay -->
 ## Check individual elements for text contrast, screen reader text, and keyboard support
+
+<!-- Inspect tool: Accessibility section of overlay -->
 
 1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
@@ -78,7 +79,7 @@ In addition to the information overlay when you hover over the webpage, the **In
 
 1.  Hover over different parts of the rendered demo webpage.  Each element in the webpage now has a multicolor overlay over its entire area, to show any nested regions that the element contains.
 
-1.  For example, hover over the left margin of the **Cats** section.  DevTools highlights several rectangular portions of the **Cats** section with different colors, making the layout nesting visible.
+1.  For example, hover over the left margin of the **Cats** section.  DevTools highlights several rectangular portions of the **Cats** section with different colors, showing the visual outcome of the CSS flexbox definitions.
 
 
 ## Using the Inspect tool to hover over the webpage to highlight the DOM and CSS
@@ -104,7 +105,7 @@ After selecting an element in the rendered page, you could then use the **Access
 
 ## See also
 
-*  [Inspect a node](devtools-guide-chromium/dom/index.md#inspect-a-node)
+*  [Inspect a node](../dom/index.md#inspect-a-node)
 *  [Check text-color contrast in the default state using the Inspect tool](test-inspect-text-contrast.md)
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
