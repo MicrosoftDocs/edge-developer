@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Reduced motion simulation  
 
-Animation in web products may be an accessibility problem.  Operating systems deal with the problem by including an option to turn off animations to avoid user confusion and potential health related problems such as triggering seizures.  
+Animation in web products may be an accessibility problem.  Operating systems deal with this problem by including an option to turn off animations to avoid user confusion and potential health-related problems, such as triggering seizures.  
 
 On a webpage, you can use the [prefers-reduced-motion][MDNPrefersReducedMotion] CSS media query to detect whether the user prefers to display any animations.  Then wrap your animation code in a test, to conditionally run animations.  
 
