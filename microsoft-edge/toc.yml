@@ -113,8 +113,6 @@
                       href: devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md
                 - name: Styles tab
                   items:
-                    - name: Check text-color contrast in the default state using the Inspect tool
-                      href: devtools-guide-chromium/accessibility/test-inspect-text-contrast.md
                     - name: Verify accessibility during all states of elements
                       href: devtools-guide-chromium/accessibility/test-inspect-states.md
                 - name: Rendering tool
