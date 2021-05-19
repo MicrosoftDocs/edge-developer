@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-# Dark or Light Color Scheme simulation  
+# Dark or light color scheme simulation  
 
 Many operating systems have a way to display any application in darker or lighter colors.  Having a web product that has a light theme in a dark-mode operating system is grating and can be an accessibility issue for some users.  
 
