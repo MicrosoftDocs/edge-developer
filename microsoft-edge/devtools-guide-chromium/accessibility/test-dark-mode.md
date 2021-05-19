@@ -57,7 +57,7 @@ As an example, the accessibility-testing demo page includes a light theme and a 
 
 ## See also
 
-*  [Dark or Light Color Scheme simulation][DevToolsColorSchemeSimulation]
+*  [Dark or light color scheme simulation][DevToolsColorSchemeSimulation]
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
 
@@ -67,5 +67,5 @@ As an example, the accessibility-testing demo page includes a light theme and a 
 
 
 <!-- links -->
-[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Dark or Light Color Scheme simulation | Microsoft Docs"
+[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Dark or light color scheme simulation | Microsoft Docs"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"
