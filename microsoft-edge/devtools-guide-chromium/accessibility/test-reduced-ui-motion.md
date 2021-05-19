@@ -10,8 +10,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Verify that the page is usable with UI animation turned off
 
-<!-- Rendering tool: Emulate CSS media feature prefers-reduced-motion: "prefers-reduced-motion: reduced" -->
-
 A webpage should not show animations to a user who turned off animations in the operating system.  Animations can help the usability of a product, but they can also cause distraction, confusion, or nausea.
 
 To check that a webpage is usable with UI animation turned off (reduced motion), in the **Rendering** tool, use the **Emulate CSS media feature prefers-reduced-motion** dropdown list.
