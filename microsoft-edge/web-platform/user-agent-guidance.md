@@ -1,5 +1,5 @@
 ---
-description: This page provides documentation on the Microsoft Edge user agent string
+description: This page provides documentation on the Microsoft Edge user agent client hints and user agent string
 title: How to detect Microsoft Edge in your website
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -10,26 +10,26 @@ keywords: microsoft edge, compatibility, web platform, user agent string, ua str
 ---
 # How to detect Microsoft Edge in your website  
 
-Browsers provide mechanisms for sites to detect browser brand and version information, also other device characteristics such as the host operating system.  One such mechanism, the User-Agent string, has a long history of causing website compatibility issues.  So, the Microsoft Edge team recommends websites use either feature detection or an improved mechanism to retrieve browser information named [User-Agent Client Hints](#user-agent-client-hints).  Microsoft Edge supports the following two mechanisms for retrieving user agent information.  
+Browsers provide mechanisms for sites to detect browser information such as brand and version number, as well as other device characteristics like the host operating system. Two such mechanisms supported on Microsoft Edge are User-Agent Client Hints and User-Agent strings. Over decades, User-Agent strings have become outdated and have a long history of causing website compatibility issues. Instead, the Microsoft Edge team recommends using an improved mechanism to retrieve browser information named [User-Agent Client Hints](#user-agent-client-hints).  This article outlines the two mechanisms Microsoft Edge supports for retrieving user agent information.  
 
 |  | Server-side | Client-side |  
 |:--- |:--- |:--- | 
-| **User-Agent Client Hints** \(recommended\) | `Sec-CH-UA` HTTPS header | Query the `navigator.userAgentData` JavaScript method. |  
-| **User-Agent string** \(legacy\) | `User-Agent` HTTPS header | Query the `navigator.userAgent` JavaScript method. |  
+| **User-Agent Client Hints** \(recommended\) | `Sec-CH-UA` HTTPS header | `navigator.userAgentData` JavaScript method |  
+| **User-Agent string** \(legacy\) | `User-Agent` HTTPS header | `navigator.userAgent` JavaScript method |  
 
-Microsoft recommends that you use the [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] whenever possible for the following reasons.  
+Microsoft recommends that you use [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] whenever possible for the following reasons.  
 
 *   Improve code maintainability.  
 *   Reduce code fragility.  
 *   Reduce code breakage from changes to the User-Agent string.  
     
-For cases where [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] isn't applicable and you must use user agent detection, use the following format to detect Microsoft Edge user agent on desktop.  
+For cases where [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] isn't applicable and you must use user agent detection, use the following format to detect Microsoft Edge user agent on desktop and Android.  
 
 ## User-Agent Client Hints  
 
 Starting in Microsoft Edge version 90, access browser information in a cleaner, more privacy-preserving way.  
 
-### UA-CH HTTPS Header  
+### User-Agent Client Hints HTTPS Header  
 
 By default, Chromium browsers including Microsoft Edge send the `Accept-CH-UA` response header in the following format.  
 
@@ -41,7 +41,7 @@ Sec-CH-UA-Mobile: ?0
 > [!NOTE]
 > Client Hints are only sent over secure connections using `HTTPS`.  
 
-The low entropy hints are sent by default.  If you need to access more information, send one of the following request headers.  
+These low entropy hints are sent by default.  If you need to access more information, send one of the following request headers.  
 
 #### User-Agent request and response headers  
 
@@ -55,7 +55,7 @@ The low entropy hints are sent by default.  If you need to access more informati
 | `Sec-CH-UA-Arch` | `x86` |  
 | `Sec-CH-UA-Model` |  |  
 
-### UA-CH JavaScript API  
+### User-Agent Client Hints JavaScript API  
 
 The default response value from `navigator.userAgentData` uses the following format.  
 
@@ -95,7 +95,7 @@ If you need to access more detailed information, use the [getHighEntropyValues()
 
 ## Recommended uses of User-Agent Client Hints  
 
-The set of brands and the order of appearance changes over time, you should never hard-code indices into the array of returned brands.  To help ensure you spot similar issues in your website early, the browser includes a `GREASE` brand value that changes over time and is formatted to break because of common string parsing issues.  
+The set of brands and their order of appearance change over time, so you should never hard-code indices into the array of returned brands.  To help ensure you spot similar issues in your website early, the browser includes a `GREASE` brand value that changes over time and is formatted to break because of common string parsing issues.  
 
 If you're prevented from using [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection], don't use a hardcoded list of known Chromium-based browsers for verification.  Examples of hardcoded browser names include `Microsoft Edge` and `Google Chrome`.  Reasons why [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] isn't applicable may include the following situation.  
 
@@ -143,7 +143,7 @@ Wherever possible, Microsoft recommends you minimize your use of Microsoft Edge 
 The response value from `navigator.userAgent` method uses the following format.  
 
 ```javascript
-"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Mobile Safari/537.36 Edg/90.0.818.46"
+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4501.0 Safari/537.36 Edg/91.0.866.0"
 ```  
 
 Platform identifiers change based on the operating system used, and the version numbers also increment as time passes.  The format is the same as the Chromium user agent with the addition of a new `Edg` token at the end.  Microsoft chose the `Edg` token to avoid compatibility issues caused by `Edge` string, which was used legacy Microsoft Edge browser based on EdgeHTML.  The `Edg` token is also consistent with [existing tokens][WindowsBlogsMsedgedev20171005MicrosoftEdgeIosAndroidDeveloper] used on iOS and Android.
@@ -156,17 +156,14 @@ Map the user agent string tokens to a more human-readable browser name to use in
 
 Sometimes, a website doesn't recognize the new Microsoft Edge user agent.  As a result, a set of the features of the website may not work correctly.  When Microsoft is notified about the types of issues, website owners are contacted and informed about the updated user agent.  
 
-To address issues reported by Microsoft, add more time to update and test the user agent detection logic.  To maximize compatibility to specific websites, the following Microsoft Edge channels include a list of user agent overrides.  
-
-*   Microsoft Edge Beta channel  
-*   Microsoft Edge Stable channel  
+The sites often need some time to update and test the UA detection logic to address the issues that Microsoft reports to site owners. In these cases, Microsoft uses a list of UA overrides in our Beta and Stable channels to maximize compatibility for users who access these sites in the meantime. 
 
 The overrides specify new user agent values that Microsoft Edge sends instead of the default user agent for specific websites.  To display the list of user agent overrides that are currently applied, complete the following actions.  
 
-1.  Open the Microsoft Edge Beta and Stable channel.  
+1.  Open the Microsoft Edge Beta or Stable channel.  
 1.  Navigate to `edge://compat/useragent`.  
     
-The Microsoft Edge Canary and Dev channels don't currently receive user agent overrides.  Use the Microsoft Edge Canary and Dev channels to reproduce your website issues caused by the default Microsoft Edge user agent.  To turn off user agent overrides in the Microsoft Edge Beta or Stable channels, complete the following actions.  
+The Microsoft Edge Canary and Dev channels don't currently receive user agent overrides so that web developers have an environment where they can easily reproduce issues on their sites that are caused by the default Microsoft Edge user agent.  To turn off user agent overrides in the Microsoft Edge Beta or Stable channels, complete the following actions.  
 
 1.  Open your command-line app.  
 1.  Copy and paste the following code snippet.  
