@@ -10,15 +10,12 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Check for keyboard support by using the Tab and Enter keys
 
-<!-- keyboard: Tab, Enter -->
-
 Test the usability of a webpage for keyboard users in several ways:
 *  By using the keyboard, particularly the `Tab`, `Shift`+`Tab`, and `Enter` keys.  This approach is described in the current article.
 *  Check for keyboard support for an individual element by using the **Inspect** tool.  The Inspect tool's information overlay includes an **Accessibility** section that includes a **Keyboard-focusable** row.  
 *  Check the **Issues** report's **Accessibility** section for keyboard support issues.
 
-Not all users have a pointer or touch device, and not all users can see the web projects we create.  This is why it is important that the user interface works at least with a keyboard.  Make sure you can use the `Tab` key to move the focus to each form control on a webpage, and make sure you can use the `Enter` key to activate a form button.
-
+Not all users have a pointer or touch device, and not all users can see the web projects we create.  This is why it is important that the user interface works at least with a keyboard.  Make sure you can use the `Tab` key to move the focus to each form control on a webpage, and make sure you can use the `Enter` key to submit the form.
 
 **To check the demo page for accessibility issues by using a keyboard rather than a mouse:**
 
