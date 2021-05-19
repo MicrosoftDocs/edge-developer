@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Overview of accessibility testing using DevTools
 
-In this article, we cover some of the features you can use in DevTools to test for accessibility problems.  As an example, we use a demo page that has some accessibility problems.  We go through using different features of DevTools to detect the accessibility problems in the demo page, and we discuss how to fix them.
+In this article, we cover some of the features you can use in DevTools to test for accessibility problems.  As an example, we use a [demo page][DevToolsA11yErrorsDemopage] that has some accessibility problems.  We go through using different features of DevTools to detect the accessibility problems in the demo page, and we discuss how to fix them.
 
 :::image type="complex" source="../media/a11y-testing-basics-demopage.msft.png" alt-text="The demo page used in this article with a few accessibility issues" lightbox="../media/a11y-testing-basics-demopage.msft.png":::
     The demo page used in this article with a few accessibility issues
@@ -52,7 +52,9 @@ In this case, the HTML has a `label` element that doesn't work.
 <input type="submit" value="go">
 ```
 
-The use of the `label` element here is wrong, because there's no connection between the `label` element and the `input` element.  You can also test this lack of connection by selecting the **Search** label in the rendered page.  A valid HTML label would put focus on the search input textbox when you select the **Search** label.  You either need to nest the `input` element within the `label` element, or add a `for` attribute pointing to an `id` attribute of the `input` element.
+The use of the `label` element here is wrong, because there's no connection between the `label` element and the `input` element.  You can also test this lack of connection by selecting the **Search** label in the rendered page.  A valid HTML label would put focus on the search input textbox when you select the **Search** label.
+
+You either need to nest the `input` element within the `label` element, or add a `for` attribute pointing to an `id` attribute of the `input` element.  To see a correct connection, select the **Other** label in the donation form.
 
 You can also select the explanatory links in the **Issues** tool to get this information.
 
@@ -93,13 +95,25 @@ For detailed walkthrough steps, navigate to [Verify that text colors have enough
 
 ### Verify that the webpage layout is usable when narrow
 
-A very important part of accessibilty is to make sure that your web products work well on a narrow viewport. Many users need to zoom the document to be able to use it and this means that there is not much space left. Your multi-column layouts should turn into a single column version with an understandable order when there is not enough space. This means having the most important content first and extra items further down the page. You can simulate this my resizing the browser window, but a better way to test the responsiveness of your design is to use the **Device Emulation** tool. You can learn more about this by navigating to [Emulate mobile devices in Microsoft Edge DevTools](DevToolsDeviceModeIndex) but here are some features of device emulation that helps you with finding accessibility issues of any web site:
+<!-- by design, this section doesn't have a corresponding how-to article -->
 
-* You can resize the page without resizing the browser window and test if your [CSS media queries](DevToolsMediaQueries) trigger a change in layout
-* By default, device emulation assumes a touch device. This means that any functionality of your product that relies on hover interaction will not work. 
-* In addition to the visual testing you can do by simulating different devices, zoom levels and pixel ratios you also have a way to test how your product behaves on unreliable connections or when the user is offline. Showing the most important interactions to a user on a slow connection is also an accessibility consideration.
+An important part of accessibility is to make sure that your web products work well on a narrow viewport.
+Many users need to zoom the page to be able to use it, and this means that there is not much space left.
 
-By making the window narrow and using the arrow keys to scroll the page, you can see that the top navigation menu of the page has some usability issues.  The top navigation bar overlaps the **Search** form, and that issue needs to be fixed.
+When there is not enough space, your multi-column layout should turn into a single-column layout, with content placed in an understandable order.
+This means placing the most important content at the top of the page, and placing additional content further down on the page.
+
+You can simulate a narrow viewport by resizing the browser window, but a better way to test the responsiveness of your design is to use the **Device Emulation** tool.  Here are some features of the **Device Emulation** tool that help you find accessibility issues of any website:
+
+*  Without resizing the browser window, resize the page and test whether your [CSS media queries][DevToolsMediaQueries] trigger a change in layout.
+*  Check for dependency on using a mouse. By default, device emulation assumes a touch device. This means that any functionality of your product that relies on hover interaction will not work. 
+*  Do visual testing by simulating different devices, zoom levels, and pixel ratios.
+*  Test how your product behaves on unreliable connections or when the user is offline.  Showing the most important interactions to a user on a slow connection is also an accessibility consideration.
+
+To learn more about the **Device Emulation** tool, navigate to [Emulate mobile devices in Microsoft Edge DevTools][DevToolsDeviceModeIndex].
+
+By making the window narrow and using the arrow keys to scroll the page, you can see that the top navigation bar of the demo page has some usability issues.  The top navigation bar overlaps the **Search** form, and that issue needs to be fixed.
+
 
 ### Wavy underlines in the DOM tree indicate automatically detected issues
 
@@ -217,7 +231,7 @@ Selecting `Tab` again takes you to the input textbox of the donation form.  Howe
 
 :::image type="complex" source="../media/a11y-testing-form-field-with-outline.msft.png" alt-text="The only keyboard-accessible element in the donation form is the entry text field" lightbox="../media/a11y-testing-form-field-with-outline.msft.png":::
     The only keyboard-accessible element in the donation form is the text field
-:::image-end:::f
+:::image-end:::
 
 Selecting `Tab` again puts focus on the top navigation bar, where you can select `Enter` to go to a different section of the page or a different page of the site.  You know which element you are on, because there's a focus outline.  To select a link in the top navigation bar, use `Tab` or `Shift+Tab` to put focus on a link, and then select `Enter`.
 
@@ -319,14 +333,18 @@ For detailed walkthrough steps, navigate to [Check the Accessibility Tree for ke
 
 ### Analyzing the order of keyboard access through sections of the page
 
-Another issue is the strange tabbing order within the page.  Keyboard users reach the sidebar navigation menu only after tabbing through all the **More** links throughout the length of the page.  The sidebar navigation menu is meant to be a shortcut to reach deep into the page content.  But you have to go through the entire page before you reach the sidebar navigation menu, so this menu becomes useless.
+Another issue is the strange tabbing order within the page.  Keyboard users reach the sidebar navigation menu only after tabbing through all the **More** links throughout the length of the page.  The sidebar navigation menu is meant to be a shortcut to reach deep into the page content.  But you have to go through the entire page before you reach the sidebar navigation menu, so this menu becomes less useful.
 
-The reason is that the source order of the document determines the order of keyboard access.  In the source code of the document, the sidebar navigation menu appears after the main content of the page.  The sidebar navigation menu appears above the main content of the page only because the sidebar navigation menu has been positioned using CSS.
+The reason for the confusing `Tab` key order after the **More** buttons is that the order of keyboard access is determined by the source order of the document.  The order of keyboard access can also be modified by defining a `tabindex` attribute on any element, to take that element out of the source order.
 
-You can test issues like that using the **Source Order Viewer** in the **Accessibility** tab.  Scroll down all the way and select the **Show Source Order** checkbox.  Now when you navigate the DOM tree in the **Elements** tool, such as selecting the `header` element, numeric overlays are shown on sections of the rendered page, showing you the source order without having to look at the page source.
+In the source code of the document, the sidebar navigation menu appears after the main content of the page.  The sidebar navigation menu appears above the main content of the page only because the sidebar navigation menu has been positioned using CSS.
+
+The source order of a document is important for assistive technology, and can be different than the order in which elements appear on the rendered page.  Using CSS, you can re-order page elements in a visual way, but that doesn't mean that assistive technology such as screen readers would represent page elements in the same order as that CSS.
+
+You can test the order of page elements by using the **Source Order Viewer** in the **Accessibility** tab.  Scroll down all the way and select the **Show Source Order** checkbox.  Now when you navigate the DOM tree in the **Elements** tool, such as selecting the `header` element, numeric overlays are shown on sections of the rendered page, showing you the source order without having to look at the page source.
 
 :::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="Turning on the Source Order Viewer shows the order of the elements in the source code as numeric overlays on the page" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
-    Turning on the Source Order Viewer shows the order of the elements in the source code as numeric overlays on the page
+    Turning on the **Source Order Viewer** shows the order of the elements in the source code as numeric overlays on the page
 :::image-end:::
 
 For detailed walkthrough steps, navigate to [Test keyboard support using the Source Order Viewer](test-tab-key-source-order-viewer.md).
@@ -334,9 +352,11 @@ For detailed walkthrough steps, navigate to [Test keyboard support using the Sou
 
 ## Testing contrast of text colors during various states
 
+The **Inspect** tool reports accessibility issues for one state at a time.  To specify which state to inspect, on the **Styles** tab, select **\:hov (Toggle Element State)**, as follows.
+
 ### Checking text color contrast in the default state
 
-In addition to the automatic color contrast tests shown earlier, you can also use the **Inspect** tool to check whether individual page elements have enough contrast.  If contrast information is available, the **Inspect** overlay shows the contrast ratio and a checkbox item.  A green check mark icon indicates there's enough contrast, and a yellow alert icon indicates not enough contrast.
+In addition to the automatic color-contrast tests in the **Issues** tool, you can also use the **Inspect** tool to check whether individual page elements have enough contrast.  If contrast information is available, the **Inspect** overlay shows the contrast ratio and a checkbox item.  A green check mark icon indicates there's enough contrast, and a yellow alert icon indicates not enough contrast.
 
 For example, the links in the sidebar navigation menu have enough contrast, but the green **Dogs** list item in the **Donation status** section doesn't.
 
@@ -356,9 +376,6 @@ However, using the **Inspect** tool this way isn't enough testing.  The elements
     The menu item showing different colors when the mouse pointer is over it
 :::image-end:::
 
-For detailed walkthrough steps, navigate to [Check text-color contrast in the default state using the Inspect tool](test-inspect-text-contrast.md).
-
-
 ### Verify accessibility during all states of elements, such as contrast during hover
 
 When you turn on the **Inspect** tool, you can't reach the `hover` state of the **Cats** link in the sidebar navigation menu to test the contrast ratio during the `hover` state, because the `hover` state in your styles never gets triggered.  Instead, you need to simulate the state of the **Cats** menu item, by using the state simulation in the **Styles** tab.
@@ -371,7 +388,7 @@ Turn on the **Inspect** tool and then in the rendered page, select the blue **Ca
     Inspecting the element that has a hover state in the Elements tool
 :::image-end:::
 
-Select the **\:hov (Toggle Element State)** button.  Then use the **Force element state** checkboxes to choose which state to simulate.
+On the **Styles** tab, select the **\:hov (Toggle Element State)** button.  Then use the **Force element state** checkboxes to choose which state to simulate.
 
 :::image type="complex" source="../media/a11y-testing-state-simulation.msft.png" alt-text="The state simulation feature showing all the options" lightbox="../media/a11y-testing-state-simulation.msft.png":::
     The state simulation feature showing all the options
@@ -484,7 +501,8 @@ We're constantly working on new accessibility features for DevTools.  If there i
 
 
 <!-- links -->
-[DevToolsMediaQueries] ../device-mode/index.md#show-media-queries
+[DevToolsMediaQueries]: ../device-mode/index.md#show-media-queries "Show media queries - Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
+[DevToolsDeviceModeIndex]: ../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsAccessibilityReference]: reference.md "Accessibility-testing features in DevTools | Microsoft Docs"
 [DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Dark or Light Color Scheme simulation | Microsoft Docs"
 [DevToolsIssuesTool]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"
@@ -494,7 +512,6 @@ We're constantly working on new accessibility features for DevTools.  If there i
 [DevtoolsAccessibilityTestIssuesToolCheckFieldsLabels]: test-issues-tool.md#verify-that-input-fields-have-labels "Verify that input fields have labels - Automatically test a webpage for accessibility issues | Microsoft Docs" 
 [DevtoolsAccessibilityTestIssuesToolCheckAltText]: test-issues-tool.md#verify-that-images-have-alt-text "Verify that images have alt text - Automatically test a webpage for accessibility issues | Microsoft Docs "
 [DevtoolsAccessibilityTestIssuesToolCheckContrast]: test-issues-tool.md#verify-that-text-colors-have-enough-contrast "Verify that text colors have enough contrast - Automatically test a webpage for accessibility issues | Microsoft Docs"
-[DevToolsDeviceModeIndex]: ../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsAccessibilityTestInspectToolColorHighlighting]: test-inspect-tool.md#using-the-inspect-tool-for-color-highlighting-of-nested-regions-by-hovering-over-the-webpage "Using the Inspect tool for color highlighting of nested regions by hovering over the webpage - Use the Inspect tool to detect accessibility issues by hovering over the webpage | Microsoft Docs"
 [DevtoolsAccessibilityTestInspectTool]: test-inspect-tool.md "Use the Inspect tool to detect accessibility issues by hovering over the webpage | Microsoft Docs"
 [DevtoolsAccessibilityTestInspectToolIndivElems]: test-inspect-tool.md#check-individual-elements-for-text-contrast-screen-reader-text-and-keyboard-support "Check individual elements for text contrast, screen reader text, and keyboard support - Use the Inspect tool to detect accessibility issues by hovering over the webpage | Microsoft Docs"
