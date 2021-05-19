@@ -39,7 +39,7 @@ To open the **Accessibility** tab:
 
 ## View the position of an element in the Accessibility Tree
 
-The [accessibility tree][MDNAccessibilityTree] is a subset of the DOM tree.  The accessibility tree only contains elements from the DOM tree that are relevant and useful for displaying the contents of a page in a screen reader.  
+The [accessibility tree][MDNAccessibilityTree] is a subset of the DOM tree.  The accessibility tree only contains elements from the DOM tree that are relevant and useful for displaying the contents of a page through assistive technologies such as screen readers.
 
 Inspect the position of an element in the accessibility tree from the **Accessibility** tab.  
 
@@ -50,7 +50,7 @@ Inspect the position of an element in the accessibility tree from the **Accessib
 
 ## View the ARIA attributes of an element  
 
-ARIA attributes ensure that screen readers have all of the information that they need in order to properly represent the contents of a page.  
+ARIA attributes ensure that assistive technologies such as screen readers have all of the information that they need in order to properly represent the contents of a page.  
 
 View the ARIA attributes of an element in the **Accessibility** tab.
 
