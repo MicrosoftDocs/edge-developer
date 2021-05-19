@@ -8,11 +8,9 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-
-<!-- 1. ISSUES TOOL: Accessibility section -->
 # Automatically test a webpage for accessibility issues
 
-The **Issues** tool includes an **Accessibility** section that automatically reports issues such as insufficient contrast of text colors.  The **Issues** tool is within the **Drawer** at the bottom of DevTools.  This article uses the accessibility-testing demo webpage to step through using the **Accessibility** section of the **Issues** tool.
+The **Issues** tool includes an **Accessibility** section that automatically reports issues such as missing alternative text on images, missing labels on form fields, and insufficient contrast of text colors.  The **Issues** tool is within the **Drawer** at the bottom of DevTools.  This article uses the accessibility-testing demo webpage to step through using the **Accessibility** section of the **Issues** tool.
 
 There are several ways to open the **Issues** tool, such as:
 *  Select the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) in the upper right of DevTools.
@@ -37,7 +35,6 @@ There are several ways to open the **Issues** tool, such as:
 1.  On the **Issues** tab, expand the **Accessibility** section.
 
 
-<!-- 1. Issues tool: Accessibility section > "Form elements must have labels: Element has no title attribute Element has no placeholder attribute" -->
 ## Verify that input fields have labels
 
 To check whether input fields have labels connected to them, use the **Issues** tool, which automatically checks the entire webpage and reports this issue in the **Accessibility** section.
@@ -68,9 +65,11 @@ To check whether input fields have labels connected to them, use the **Issues** 
     *   Nest the `input` element within the `label` element.
     *   In the `label` element, add a `for` attribute that matches an `id` attribute of the `input` element.
 
-1.  You can also test this lack of a connection as follows: in the **Elements** tool, hover over or select the `<label>Search</label>` element in the DOM tree.
+1.  You can also test this lack of a connection as follows: in the **Elements** tool, select the `<label>Search</label>` element in the DOM tree.
 
     In the webpage, focus only appears on the **Search** label, not on the input textbox.  A validly tagged HTML `label` element would put focus on the `search` input textbox as well as on the **Search** label.
+
+1.  To see a correct connection, select the **Other** label in the donation form.  A focus-indicator box correctly appears on the input textbox next to the **Other** label, because there are matching `for` and `id` attribute values.
 
 1.  In the **Issues tool**, select the explanatory "Further reading" link.  To open the link in a new tab, **Ctrl**+**click** the link on Windows/Linux, or **Command**+**click** the link on macOS.
 
@@ -79,7 +78,6 @@ To check whether input fields have labels connected to them, use the **Issues** 
     :::image-end:::
 
 
-<!-- 2. Issues tool: Accessibility section > "Images must have alternate text: Element has no title attribute" -->
 ## Verify that images have alt text
 
 Basic accessibility testing requires making sure alternative text (also called _alt text_) is provided for images.
@@ -101,7 +99,6 @@ To automatically check whether alt text is provided for images, use the **Issues
 * [Images must have alternate text](https://dequeuniversity.com/rules/axe/4.1/image-alt)
 
 
-<!-- 3. Issues tool: Accessibility section > "Users may have difficulties reading text content due to insufficient color contrast" -->
 ## Verify that text colors have enough contrast
 
 To automatically check whether text colors have enough contrast, use the **Issues** tool, which has an **Accessibility** section.  The **Issues** tool is located in the **Drawer** at the bottom of DevTools.
@@ -116,7 +113,9 @@ To automatically check whether text colors have enough contrast, use the **Issue
         Contrast problems reported in the Issues tool
     :::image-end:::
 
-1.  Depending on your settings, the **Issues** tab might have a warning that elements have insufficient color contrast: "Users may have difficulties reading text content due to insufficient color contrast".   If so, expand the warning, and then expand the **Affected resources** section of the warning.  A list of elements appears, showing which elements don't have enough contrast.
+1.  Depending on your settings, the **Issues** tab might have a warning that elements have insufficient color contrast: "Users may have difficulties reading text content due to insufficient color contrast".   If so, expand the warning, and then expand the **Affected resources** section of the warning.
+
+    A list of elements appears, showing which elements don't have enough contrast.
 
 1.  Select the `li.high` element.  In the rendered webpage, the **Dogs** link in the **Donate** section is highlighted, displaying a small information overlay.  This is the same overlay that appears when you hover over an element in the DOM tree in the **Elements** tool.
 
@@ -125,12 +124,13 @@ To automatically check whether text colors have enough contrast, use the **Issue
     :::image-end:::
 
 
-<!-- Issues tool: DOM tree: Wavy lines -->
 ### Wavy underline in the DOM tree indicates automatically detected issues reported by the Issues tool
 
-The DOM tree in the **Elements** tool flags issues directly in the HTML, by adding a wavy underline.  These are issues that are reported by the **Issues** tool.
+The DOM tree in the **Elements** tool flags issues directly in the HTML, by adding a wavy underline.  These are issues that are reported by the **Issues** tool.  When you **Shift+click** any element that has a wavy underline, the **Issues tool** appears.
 
-1.  When you **Shift+click** any element that has a wavy underline, the **Issues tool** appears.  In the Elements tool, in the DOM tree, select the element `<input type="search">`, which has a wavy line under `input`.  Then select **Shift+click**.
+1.  In the **Elements** tool, in the DOM tree, **Shift+click** the element `<input type="search">`, which has a wavy line under `input`.
+
+    The **Issues tool** appears, showing the issue for that element.
 
     :::image type="complex" source="../media/a11y-testing-wavy-underlines.msft.png" alt-text="An element that has a wavy underline in the DOM view has an issue; Shift+click the element to view the issue" lightbox="../media/a11y-testing-wavy-underlines.msft.png":::
         An element that has a wavy underline in the DOM view has an issue; **Shift+click** the element to view the issue
