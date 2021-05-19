@@ -415,7 +415,7 @@ State simulation is also a good way to check whether you considered different us
 
 Another consideration when it comes to color accessibility is that there could be different themes that you need to test for contrast issues.  Most operating systems these days come with a dark mode and a light mode.  You can react to this setting in your CSS by using a CSS media query.
 
-This demo page has a light and a dark theme.  You can test both themes without having to change your operating system, by using [Dark or Light Color Scheme simulation][DevToolsColorSchemeSimulation] in the **Rendering** tool.  So far, this article looked at the demo page with an operating system using a dark theme setting.  If we instead simulate selecting a light scheme and then refresh the page, the **Issues** tool shows six color contrast problems instead of two.
+This demo page has a light and a dark theme.  You can test both themes without having to change your operating system, by using [Dark or light color scheme simulation][DevToolsColorSchemeSimulation] in the **Rendering** tool.  So far, this article looked at the demo page with an operating system using a dark theme setting.  If we instead simulate selecting a light scheme and then refresh the page, the **Issues** tool shows six color contrast problems instead of two.
 
 For detailed walkthrough steps, navigate to [Check for contrast issues with dark theme and light theme](test-dark-mode.md).
 
@@ -504,7 +504,7 @@ We're constantly working on new accessibility features for DevTools.  If there i
 [DevToolsMediaQueries]: ../device-mode/index.md#show-media-queries "Show media queries - Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
 [DevToolsDeviceModeIndex]: ../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsAccessibilityReference]: reference.md "Accessibility-testing features in DevTools | Microsoft Docs"
-[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Dark or Light Color Scheme simulation | Microsoft Docs"
+[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Dark or light color scheme simulation | Microsoft Docs"
 [DevToolsIssuesTool]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"
 [DevToolsReducedMotion]: ./reduced-motion-simulation.md "Reduced motion simulation | Microsoft Docs"
 [DevToolsVisionDeficiencies]: ./emulate-vision-deficiencies.md "Emulate vision deficiencies | Microsoft Docs"
