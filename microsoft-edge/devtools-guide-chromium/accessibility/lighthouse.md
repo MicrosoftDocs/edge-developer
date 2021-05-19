@@ -25,10 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Testing accessibility using Lighthouse
 
-You can use Lighthouse from within DevTools to audit the accessibility of a page, as follows.
-
-
-## Audit the accessibility of a page using Lighthouse
+You can use Lighthouse from within DevTools to audit the accessibility of a page and generate a report, as follows.
 
 > [!NOTE]
 > The **Lighthouse** tool provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.  
@@ -54,7 +51,7 @@ To audit a page:
 1.  In the **Audits** section, make sure that **Accessibility** is enabled.  Disable the other categories if you want to exclude them from your report.  Leave them enabled if you want to discover other ways to improve the quality of your page.  
 1.  The **Throttling** section lets you throttle the network and CPU, which is useful when analyzing load performance.  This option should be irrelevant to your accessibility score, so you may use whatever you prefer.  
 1.  The **Clear Storage** checkbox lets you clear all storage before loading the page, or preserve storage between page loads.  This option is also probably irrelevant to your accessibility score, so you may use whatever you prefer.  
-1.  Choose **Run Audits**. After 10 to 30 seconds, DevTools provides a report.  Your report gives you various tips on how to improve the accessibility of the page.  
+1.  Choose **Generate report** (previously **Run audit**). After 10 to 30 seconds, DevTools provides a report.  Your report gives you various tips on how to improve the accessibility of the page.  
     
     :::image type="complex" source="../media/accessibility-audits-run-audits-result.msft.png" alt-text="A report" lightbox="../media/accessibility-audits-run-audits-result.msft.png":::
        A report  
@@ -72,17 +69,6 @@ To audit a page:
        View the documentation of an audit  
     :::image-end:::  
     
-
-## See also: aXe extension  
-
-You may prefer to use the [aXe extension][ChromeWebStoreAxe] rather than the **Lighthouse** tool.  
-The aXe extension generally provides the same information, since it is the underlying engine that powers the Lighthouse tool.  The aXe extension has a different UI and describes audits slightly differently.  
-One advantage that the aXe extension has over the Lighthouse tool is that it enables you to inspect and highlight failing nodes.  
-
-:::image type="complex" source="../media/accessibility-devtools-extension-axe-panel.msft.png" alt-text="The aXe extension" lightbox="../media/accessibility-devtools-extension-axe-panel.msft.png":::
-   The aXe extension  
-:::image-end:::  
-
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
