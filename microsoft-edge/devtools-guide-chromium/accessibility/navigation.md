@@ -178,7 +178,7 @@ You can type any class name you want into this field and then select `Tab` to as
 
 With focus on the **Computed** tab, select `Tab` to move focus inside and explore the contents.  Within the **Computed** tab there are controls for exploring which CSS properties are actually applied to an element in order of specificity.  
 
-<!--todo: add computed tab section when available  -->  
+<!--todo: add Computed tab section when available  -->  
 
 #### Explore all computed styles  
 
@@ -214,25 +214,23 @@ The **Accessibility Tree** is presented as an [ARIA tree][W3CWaiAriaTree] where 
 
 **Lighthouse** runs a series of tests against a site to check for common issues related to performance, accessibility, SEO, and a number of other categories.  
 
-Within DevTools, the **Lighthouse** panel (or tool) was previously called the **Audits** panel.
+### Configure and generate a report
 
-### Configure and run an audit  
-
-1.  When the **Audits** tool is first opened in DevTools, focus is placed on the **Run Audit** button at the end of the form.  By default, the form is configured to run audits for every category using mobile emulation on a simulated 3G connection.  
-1.  Use `Shift`+`Tab` or navigate back in Browse mode to change the audit settings.  
-1.  When you are ready to run the audit, navigate back to the **Run Audit** button and select `Enter`.  
+1.  When the **Lighthouse** tool is first opened in DevTools, focus is placed on the **Generate report** button.  By default, the form is configured to run reports for every category using mobile emulation on a simulated 3G connection.  
+1.  To change the report settings, use `Shift`+`Tab` to put focus on **Lighthouse settings**, or navigate back in Browse mode.  
+1.  When you are ready to run the report, navigate back to the **Generate report** button and select `Enter`.  
 1.  Focus moves into a modal window with a **Cancel** button which allows you to exit the audit.  You may hear a series of earcons as the audit runs and refreshes the page multiple times.  
 
 **Known issues**  
 
 *   The different sections of the configuration form are not currently marked up with a `fieldset` element.  It may be easier to navigate them in Browse mode to figure out which controls are associated with each section.  
-*   There is no earcon or live region announcement when the audit is finished running.  Generally it takes about 30 seconds, after which you should be able to navigate to the results.  Using Browse mode may be the easiest way to reach the results.  
+*   There is no earcon or live region announcement when the audit is finished running.  Generally the audit takes about 30 seconds, after which you should be able to navigate to the results.  Using Browse mode may be the easiest way to reach the results.  
 
-### Navigate the audit report  
+### Navigate the Lighthouse report  
 
-The audit report is organized into sections that correspond with each of the audit categories.  The report opens with a list of scores for each category.  These scores are also links which are able to be used to skip to the relevant sections.  Within each section are expandable `details` elements, which contain information relating to passed or failed audits.  By default, only failing audits are shown.  Each section ends with a final `details` element which contains all of the passed audits.  
+The Lighthouse report is organized into sections that correspond with each of the audit categories.  The report opens with a list of scores for each category.  These scores are also links which you can use to skip to the relevant sections.  Within each section are expandable `details` elements, which contain information relating to passed or failed audits.  By default, only failing audits are shown.  Each section ends with a final `details` element which contains all of the passed audits.  
 
-To run a new audit, use `Shift`+`Tab` to exit the report and look for the **Perform An Audit** button.  
+To run a new audit, use `Shift`+`Tab` to exit the report and select the **Generate report** button.  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
