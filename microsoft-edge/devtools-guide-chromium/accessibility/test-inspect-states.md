@@ -12,9 +12,28 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 <!-- 5. STYLES: TOGGLE STATE -->
 
-Check the accessibility during all states of elements, such as text color contrast during the `hover` state.  To check other states of elements, in the **Styles** tab, select **\:hov** (**Toggle Element State**).  This button displays the **Force element state** checkboxes.  
+Check the accessibility during all states of elements, such as text color contrast during the `hover` state.  The **Inspect** tool reports accessibility issues for one state at a time.  To check accessibility during the various states of elements, in the **Styles** tab, select **\:hov** (**Toggle Element State**), as follows.
 
 First, we show why state simulation is necessary while using the **Inspect** tool.  Then we show how to use state simulation.
+
+
+## Checking text color contrast in the default state
+
+<!-- Inspect tool: information overlay: Accessibility section: Contrast row -->
+
+In addition to the automatic color-contrast tests in the **Issues** tool, you can also use the **Inspect** tool to check whether individual page elements have enough contrast.  If contrast information is available, the **Inspect** overlay shows the contrast ratio and a checkbox item.  A green check mark icon indicates there's enough contrast, and a yellow alert icon indicates not enough contrast.
+
+For example, the links in the sidebar navigation menu have enough contrast, but the green **Dogs** list item in the **Donation status** section doesn't.
+
+:::image type="complex" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="The links in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay" lightbox="../media/a11y-testing-enough-contrast.msft.png":::
+    The links in the sidebar navigation menu have enough contrast, as shown in the **Inspect** overlay
+:::image-end:::
+
+An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay:
+
+:::image type="complex" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="An element that doesn't have enough contrast is flagged by a warning in the Inspect overlay" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
+    An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay
+:::image-end:::
 
 
 ## Hovering when the Inspect tool is active doesn't show the text-color contrast for the hover state
@@ -38,14 +57,15 @@ The **Inspect** tool's information overlay only represents a single state.  But 
 Checking for sufficient text contrast this way isn't enough, because the elements on the page could have different states.
 
 
-<!-- Elements tool: Styles pane: Toggle Element State -->
 ## Using state simulation in the Styles pane to simulate the hover state of an animated menu item 
+
+<!-- Elements tool: Styles pane: Toggle Element State -->
 
 When the **Inspect** tool is active, instead of hovering over an animated element, you need to simulate the state of the menu item.  To simulate the state of a menu item, use the state simulation in the **Styles** pane.  The **Styles** pane has a **\:hov** (**Toggle Element State**) button, which displays a group of checkboxes labeled **Force element state**.
 
 **To turn on the hover state while using the Inspect tool:**
 
-1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
+1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
 
 1.  Select the **Inspect** \(![Inspect tool button](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
