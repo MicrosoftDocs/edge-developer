@@ -333,16 +333,6 @@ options.addArguments("disable-gpu");
 
 ## Other WebDriver installation options  
 
-### Chocolatey  
-
-If you use [Chocolatey][Chocolatey] as your package manager, run the following command to install the Microsoft Edge Driver.  
-
-```console
-choco install selenium-chromium-edge-driver
-```  
-
-For more information, navigate to [Selenium Chromium Edge Driver on Chocolatey][ChocolateyPackagesSeleniumChromiumEdgeDriver].  
-
 ### Docker  
 
 If you use [Docker][DockerHub], run the following command to download a pre-configured image with Microsoft Edge \(Chromium\) and [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver] pre-installed.  
@@ -373,9 +363,6 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 <!--[Webdriver]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
 
 [DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability - Microsoft Edge - Policies | Microsoft Docs"  
-
-[Chocolatey]: https://chocolatey.org "Chocolatey | Chocolatey Software"  
-[ChocolateyPackagesSeleniumChromiumEdgeDriver]: https://chocolatey.org/packages/selenium-chromium-edge-driver "Selenium Chromium Edge Driver | Chocolatey"  
 
 [DockerHub]: https://hub.docker.com "Docker Hub"  
 [DockerHubMsedgedriver]: https://hub.docker.com/_/microsoft-msedge-msedgedriver?tab=description "msedgedriver | Docker hub"  
