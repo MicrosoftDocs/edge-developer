@@ -63,15 +63,6 @@ If you already use [Selenium 3][SeleniumHQ], you may have existing browser tests
 
 Use the following steps to add the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] and [Selenium 3][SeleniumHQ] to your project.  
 
-### Using Selenium 4
-
-`Microsoft.Edge.SeleniumTools` is for Selenium 3 only.  If you try to use Selenium 4 with `Microsoft.Edge.SeleniumTools` and create a new `EdgeDriver` instance, you get the following error:
-
-`Error-  System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'`
-
-You don't need to use `Microsoft.Edge.SeleniumTools` with Selenium 4, because Selenium 4 already supports Chromium Edge.  If you're using Selenium 4 and get this error, remove `Microsoft.Edge.SeleniumTools` from your project, and make sure you're using the official `EdgeOptions` and `EdgeDriver` classes from the `OpenQA.Selenium.Edge` namespace.
-
-
 #### [C#](#tab/c-sharp/)  
 
 <a id="selenium-tools-install"></a>  
@@ -115,6 +106,14 @@ npm install @microsoft/edge-selenium-tools selenium-webdriver
 ```  
 
 * * *  
+
+### Using Selenium 4
+
+`Microsoft.Edge.SeleniumTools` is for Selenium 3 only.  If you try to use Selenium 4 with `Microsoft.Edge.SeleniumTools` and create a new `EdgeDriver` instance, you get the following error:
+
+`Error-  System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'`
+
+You don't need to use `Microsoft.Edge.SeleniumTools` with Selenium 4, because Selenium 4 already supports Chromium Edge.  If you're using Selenium 4 and get this error, remove `Microsoft.Edge.SeleniumTools` from your project, and make sure you're using the official `EdgeOptions` and `EdgeDriver` classes from the `OpenQA.Selenium.Edge` namespace.
 
 ## Automate Microsoft Edge (Chromium) with WebDriver  
 
