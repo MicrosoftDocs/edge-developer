@@ -52,10 +52,18 @@ To begin automating tests, use the following steps to ensure that the WebDriver 
 
 The last component you must download is a language-specific client driver to translate your code \(Python, Java, C\#, Ruby, JavaScript\) into commands the Microsoft Edge Driver runs in Microsoft Edge \(Chromium\).  
 
-[Download the WebDriver language binding of your choice][SeleniumDownloads].  The Microsoft Edge team recommends [Selenium 4.00-alpha07][NugetPackagesSeleniumWebdriver400alpha07] or later, because it supports Microsoft Edge \(Chromium\).  However, you can control Microsoft Edge \(Chromium\) in all older versions of Selenium, including the current stable Selenium 3 release.  
+[Download the WebDriver language binding of your choice][SeleniumDownloads].  The Microsoft Edge team recommends [Selenium 4.0.0-beta2][NugetPackagesSeleniumWebdriver400beta02] or later, because it supports Microsoft Edge \(Chromium\).  However, you can control Microsoft Edge \(Chromium\) in all older versions of Selenium, including the current stable Selenium 3 release.  
 
 > [!IMPORTANT]
 > If you previously automated or tested Microsoft Edge \(Chromium\) using `ChromeDriver` and `ChromeOptions` classes, your WebDriver code does not run on Microsoft Edge Version 80 or later.  To solve the problem, update your tests to use the `EdgeOptions` class and download [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver].  
+
+### Using Selenium 4
+
+`Microsoft.Edge.SeleniumTools` is for Selenium 3 only.  If you try to use Selenium 4 with `Microsoft.Edge.SeleniumTools` and create a new `EdgeDriver` instance, you get the following error:
+
+`Error-  System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'`
+
+You don't need to use `Microsoft.Edge.SeleniumTools` with Selenium 4, because Selenium 4 already supports Chromium Edge.  If you're using Selenium 4 and get this error, remove `Microsoft.Edge.SeleniumTools` from your project, and make sure you're using the official `EdgeOptions` and `EdgeDriver` classes from the `OpenQA.Selenium.Edge` namespace.
 
 ### Using Selenium 3  
 
@@ -106,14 +114,6 @@ npm install @microsoft/edge-selenium-tools selenium-webdriver
 ```  
 
 * * *  
-
-### Using Selenium 4
-
-`Microsoft.Edge.SeleniumTools` is for Selenium 3 only.  If you try to use Selenium 4 with `Microsoft.Edge.SeleniumTools` and create a new `EdgeDriver` instance, you get the following error:
-
-`Error-  System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'`
-
-You don't need to use `Microsoft.Edge.SeleniumTools` with Selenium 4, because Selenium 4 already supports Chromium Edge.  If you're using Selenium 4 and get this error, remove `Microsoft.Edge.SeleniumTools` from your project, and make sure you're using the official `EdgeOptions` and `EdgeDriver` classes from the `OpenQA.Selenium.Edge` namespace.
 
 ## Automate Microsoft Edge (Chromium) with WebDriver  
 
@@ -405,7 +405,7 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 [NugetCLI]:https://www.nuget.org/packages/NuGet.CommandLine/ "NuGet.CommandLine | NuGet Gallery"  
 [NugetPackagesMicrosoftEdgeSeleniumtools]: https://www.nuget.org/packages/Microsoft.Edge.SeleniumTools "Microsoft.Edge.SeleniumTools | NuGet Gallery"  
 [NugetPackagesSeleniumWebdriver31410]: https://www.nuget.org/packages/Selenium.WebDriver/3.141.0 "Selenium.WebDriver 3.141.0 | NuGet Gallery"  
-[NugetPackagesSeleniumWebdriver400alpha07]: https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-alpha07 "Selenium.WebDriver 4.0.0-alpha07 | NuGet Gallery"  
+[NugetPackagesSeleniumWebdriver400beta02]: https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-beta2 "Selenium.WebDriver 4.0.0-beta2 | NuGet Gallery"  
 
 [PythonPip]: https://pypi.org/project/pip/ "pip | PyPI"  
 [PythonSeleniumTools]: https://pypi.org/project/msedge-selenium-tools/ "msedge-selenium-tools | PyPI"  
