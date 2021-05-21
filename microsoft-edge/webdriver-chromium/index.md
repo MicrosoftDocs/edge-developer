@@ -52,16 +52,25 @@ To begin automating tests, use the following steps to ensure that the WebDriver 
 
 The last component you must download is a language-specific client driver to translate your code \(Python, Java, C\#, Ruby, JavaScript\) into commands the Microsoft Edge Driver runs in Microsoft Edge \(Chromium\).  
 
-[Download the WebDriver language binding of your choice][SeleniumDownloads].  The Microsoft Edge team recommends [Selenium 4.00-alpha07][NugetPackagesSeleniumWebdriver400alpha07] or later, because it supports Microsoft Edge \(Chromium\).  However, you may control Microsoft Edge \(Chromium\) in all older versions of Selenium, including the current stable Selenium 3 release.  
+[Download the WebDriver language binding of your choice][SeleniumDownloads].  The Microsoft Edge team recommends [Selenium 4.00-alpha07][NugetPackagesSeleniumWebdriver400alpha07] or later, because it supports Microsoft Edge \(Chromium\).  However, you can control Microsoft Edge \(Chromium\) in all older versions of Selenium, including the current stable Selenium 3 release.  
 
 > [!IMPORTANT]
 > If you previously automated or tested Microsoft Edge \(Chromium\) using `ChromeDriver` and `ChromeOptions` classes, your WebDriver code does not run on Microsoft Edge Version 80 or later.  To solve the problem, update your tests to use the `EdgeOptions` class and download [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver].  
 
-### Use Selenium 3  
+### Using Selenium 3  
 
 If you already use [Selenium 3][SeleniumHQ], you may have existing browser tests and want to add coverage for Microsoft Edge \(Chromium\) without changing your version of Selenium.  To use [Selenium 3][SeleniumHQ] to write automated tests for both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\), install the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] package to use the updated driver.  The `EdgeDriver` and `EdgeDriverService` classes included in the tools are fully compatible with the built-in equivalents in Selenium 4.  
 
 Use the following steps to add the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] and [Selenium 3][SeleniumHQ] to your project.  
+
+### Using Selenium 4
+
+`Microsoft.Edge.SeleniumTools` is for Selenium 3 only.  If you try to use Selenium 4 with `Microsoft.Edge.SeleniumTools` and create a new `EdgeDriver` instance, you get the following error:
+
+`Error-  System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'`
+
+You don't need to use `Microsoft.Edge.SeleniumTools` with Selenium 4, because Selenium 4 already supports Chromium Edge.  If you're using Selenium 4 and get this error, remove `Microsoft.Edge.SeleniumTools` from your project, and make sure you're using the official `EdgeOptions` and `EdgeDriver` classes from the `OpenQA.Selenium.Edge` namespace.
+
 
 #### [C#](#tab/c-sharp/)  
 
@@ -111,7 +120,7 @@ npm install @microsoft/edge-selenium-tools selenium-webdriver
 
 To automate a browser using WebDriver, you must first start a WebDriver session using your preferred WebDriver language binding.  A session is a single running instance of a browser controlled using WebDriver commands.  Start a WebDriver session to launch a new browser instance.  The launched browser instance remains open until you close the WebDriver session.  
 
-The following content walks you through using Selenium to start a WebDriver session with Microsoft Edge \(Chromium\).  You may run the examples using either Selenium 3 or 4.  To use with Selenium 3, the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] package must be installed.  
+The following content walks you through using Selenium to start a WebDriver session with Microsoft Edge \(Chromium\).  You can run the examples using either Selenium 3 or 4.  To use with Selenium 3, the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumTools] package must be installed.  
 
 ### Automate Microsoft Edge (Chromium)  
 
@@ -143,7 +152,7 @@ driver = Edge(options = options)
 
 <a id="drive-microsoft-edge-chromium-code"></a>  
 
-The `EdgeDriver` class only supports Microsoft Edge \(Chromium\), and doesn't support Microsoft Edge \(EdgeHTML\).  For basic usage, you may create an `EdgeDriver` without providing `EdgeOptions`.  
+The `EdgeDriver` class only supports Microsoft Edge \(Chromium\), and doesn't support Microsoft Edge \(EdgeHTML\).  For basic usage, you can create an `EdgeDriver` without providing `EdgeOptions`.  
 
 ```java
 EdgeDriver driver = new EdgeDriver();
@@ -167,7 +176,7 @@ let driver = edge.Driver.createSession(options);
 
 ### Choose Specific Browser Binaries (Chromium-Only)  
 
-You may start a WebDriver session with specific Microsoft Edge \(Chromium\) binaries.  For example, you may run tests using the [Microsoft Edge preview channels][MicrosoftedgeinsiderDownload] such as Microsoft Edge Beta.  
+You can start a WebDriver session with specific Microsoft Edge \(Chromium\) binaries.  For example, you can run tests using the [Microsoft Edge preview channels][MicrosoftedgeinsiderDownload] such as Microsoft Edge Beta.  
 
 #### [C#](#tab/c-sharp/)  
 
@@ -269,7 +278,7 @@ EdgeDriver driver = new EdgeDriver(service, options);
 
 <a id="customize-microsoft-edge-driver-services-code"></a>  
 
-When you use JavaScript, create and configure a `Service` with the `ServiceBuilder` class.  Optionally, you may pass the `Service` object to the `Driver` object, which starts \(and stops\) the service for you.  
+When you use JavaScript, create and configure a `Service` with the `ServiceBuilder` class.  Optionally, you can pass the `Service` object to the `Driver` object, which starts \(and stops\) the service for you.  
 To configure the `Service`, run another method in the `ServiceBuilder` class before you use the `build()` method.  Then pass the `service` as a parameter in the `Driver.createSession()` method.  
 
 ```javascript
@@ -281,7 +290,7 @@ let driver = edge.Driver.createSession(options, service);
 
 ### Use Chromium-Specific Options  
 
-If you set the `UseChromium` property to `true`, you may use the `EdgeOptions` class to access the same [Chromium-specific properties and methods][WebdriverCapabilitiesEdgeOptions] that are used when you automate other Chromium browsers.  
+If you set the `UseChromium` property to `true`, you can use the `EdgeOptions` class to access the same [Chromium-specific properties and methods][WebdriverCapabilitiesEdgeOptions] that are used when you automate other Chromium browsers.  
 
 #### [C#](#tab/c-sharp/)  
 
