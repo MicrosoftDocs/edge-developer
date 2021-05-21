@@ -10,13 +10,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Overview of accessibility testing using DevTools
 
-In this article, we cover some of the features you can use in DevTools to test for accessibility problems.  As an example, we use a [demo page][DevToolsA11yErrorsDemopage] that has some accessibility problems.  We go through using different features of DevTools to detect the accessibility problems in the demo page, and we discuss how to fix them.
+In this article, we cover some of the features you can use in DevTools to test for accessibility problems.  We go through using different features of DevTools to detect the accessibility problems in a demo page, and we discuss how to fix them.  Open the [demo page][DevToolsA11yErrorsDemopage] in a new tab to try it out yourself and you can test along.
 
 :::image type="complex" source="../media/a11y-testing-basics-demopage.msft.png" alt-text="The demo page used in this article with a few accessibility issues" lightbox="../media/a11y-testing-basics-demopage.msft.png":::
     The demo page used in this article with a few accessibility issues
 :::image-end:::
-
-Open the [demo page with accessibility issues][DevToolsA11yErrorsDemopage] in a new tab to try it out yourself and you can test along.  Detailed steps are provided in linked articles.
 
 
 ## Automated testing by using the Issues tool
