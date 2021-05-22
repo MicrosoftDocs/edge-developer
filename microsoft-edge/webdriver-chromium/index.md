@@ -59,7 +59,9 @@ The last component you must download is a language-specific client driver to tra
 
 ### Using Selenium 4
 
-`Microsoft.Edge.SeleniumTools` is for Selenium 3 only.  If you try to use Selenium 4 with `Microsoft.Edge.SeleniumTools` and create a new `EdgeDriver` instance, you get the following error:
+Selenium 4 has built-in support for Microsoft Edge (Chromium).
+
+Selenium Tools for Microsoft Edge is for Selenium 3 only.  If you try to use Selenium 4 with `Microsoft.Edge.SeleniumTools` and create a new `EdgeDriver` instance, you get the following error:
 
 `Error-  System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'`
 
