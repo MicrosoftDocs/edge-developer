@@ -133,6 +133,8 @@ var driver = new EdgeDriver(options);
 <a id="drive-microsoft-edge-chromium-code"></a>  
 
 ```python
+from msedge.selenium_tools import Edge, EdgeOptions
+
 options = EdgeOptions()
 options.use_chromium = True
 
@@ -186,6 +188,8 @@ var driver = new EdgeDriver(options);
 <a id="choose-specific-browser-binaries-chrome-only-code"></a>  
 
 ```python
+from msedge.selenium_tools import Edge, EdgeOptions
+
 options = EdgeOptions()
 options.use_chromium = True
 options.binary_location = r"C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe"
