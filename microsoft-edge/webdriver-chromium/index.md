@@ -59,13 +59,11 @@ The last component you must download is a language-specific client driver to tra
 
 ### Using Selenium 4
 
-Selenium 4 has built-in support for Microsoft Edge (Chromium).
+Selenium 4 has built-in support for Microsoft Edge (Chromium).  To install Selenium 4, navigate to [Installing Selenium libraries][SeleniumInstallingLibraries].
 
-Selenium Tools for Microsoft Edge is for Selenium 3 only.  If you try to use Selenium 4 with `Microsoft.Edge.SeleniumTools` and create a new `EdgeDriver` instance, you get the following error:
+When you use Selenium 4, you don't need to use Selenium Tools for Microsoft Edge.  Selenium Tools for Microsoft Edge is for Selenium 3 only.  If you try to use Selenium 4 with Selenium Tools for Microsoft Edge and try create a new `EdgeDriver` instance, you get the following error: `System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'`.  
 
-`Error-  System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'`
-
-You don't need to use `Microsoft.Edge.SeleniumTools` with Selenium 4, because Selenium 4 already supports Chromium Edge.  If you're using Selenium 4 and get this error, remove `Microsoft.Edge.SeleniumTools` from your project, and make sure you're using the official `EdgeOptions` and `EdgeDriver` classes from the `OpenQA.Selenium.Edge` namespace.
+If you're using Selenium 4 and get this error, remove `Microsoft.Edge.SeleniumTools` from your project, and make sure you're using the official `EdgeOptions` and `EdgeDriver` classes from the `OpenQA.Selenium.Edge` namespace.
 
 ### Using Selenium 3  
 
@@ -403,6 +401,7 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 [SeleniumHQ]: https://www.selenium.dev "SeleniumHQ"  
 [SeleniumDocumentation]: https://www.selenium.dev/documentation "The Selenium Browser Automation Project | Documentation for Selenium"  
 [SeleniumDownloads]: https://selenium.dev/downloads "Downloads | Selenium"  
+[SeleniumInstallingLibraries]: https://www.selenium.dev/documentation/en/selenium_installation/installing_selenium_libraries "Installing Selenium libraries | Selenium"
 
 [SonatypeMavenRepositorySearch]: https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java/3.141.0/jar "sonatype Maven Central Repository Search | com.microsoft.edge:msedge-selenium-tools-java"
 
