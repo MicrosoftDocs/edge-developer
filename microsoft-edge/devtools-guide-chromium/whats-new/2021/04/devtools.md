@@ -180,9 +180,7 @@ You may now toggle the `scroll-snap` badge in the **Elements** tool to inspect t
 
 ### New Memory Inspector tool  
 
-Use the new **Memory Inspector** tool to inspect an `ArrayBuffer` in JavaScript and Wasm memory.  
-Open the [Memory in JS][GlitchMemoryInspectorDemoJsHtml] demo webpage.  In the **Sources** tool, open the `memory-write-wasm` file, and set a breakpoint at line `0x03c`.
-Refresh the webpage.  Expand the **Scope** section in the debugger pane.  The new icon is displayed next to the **buffer** value.  Choose it to open the new **Memory Inspector** tool.  
+Use the new **Memory Inspector** tool to inspect an `ArrayBuffer` in JavaScript and Wasm memory.  Open the [Memory in JS][GlitchMemoryInspectorDemoJsHtml] demo webpage.  In the **Sources** tool, open the `memory-write-wasm` file, and set a breakpoint at line `0x03c`.  Refresh the webpage.  Expand the **Scope** section in the debugger pane.  The new icon is displayed next to the **buffer** value.  Choose it to open the new **Memory Inspector** tool.  
 
 To learn more about debugging in the **Sources** tool, navigate to [Using the Debugger pane to debug JavaScript code][DevtoolsSourcesUsingDebuggerPaneToDebugJavascriptCode].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1166577][CR1166577].  
 
@@ -192,7 +190,7 @@ To learn more about debugging in the **Sources** tool, navigate to [Using the De
 
 ### New Badge settings pane in the Elements tool  
 
-Now, use the **Badge settings** in the **Elements** tool to turn on \(or off\) individual badges.  Use this feature to customize and stay focused on the important badges while you inspect webpages.  To display the badge settings pane at the top of the **Elements** tool, complete the following actions.  
+Now, use the **Badge settings** in the **Elements** tool to turn on \(or off\) individual badges.  Use this feature to customize and stay focused on important badges while you inspect webpages.  To display the badge settings pane at the top of the **Elements** tool, complete the following actions.  
 
 1.  Hover on any element.  
 1.  Open the contextual menu \(right-click\).  
@@ -282,7 +280,7 @@ The autocomplete UI of the **Styles** pane now detects the `accent-color` CSS ke
 ### Display details about blocked features in the Frame details view  
 
 Permissions Policy is a web platform API that gives a website the ability to allow or block the use of browser features in an individual frame or in an `iframe` that it embeds. 
- For more information, navigate to [Permissions Policy Explainer] [GithubW3cWebappsecPermissionsPolicyPermissionsPolicyExplainerMd].  To display the details on why a feature is blocked, complete the following actions.  
+ For more information, navigate to [Permissions Policy Explainer][GithubW3cWebappsecPermissionsPolicyPermissionsPolicyExplainerMd].  To display the details on why a feature is blocked, complete the following actions.  
 
 1.  Navigate to [OOPIF Permissions Policy][GlitchPermissionPolicyDemoMain].  
 1.  Navigate to the **Application** tool.  
@@ -290,9 +288,9 @@ Permissions Policy is a web platform API that gives a website the ability to all
 1.  Navigate to the **Permissions Policy** section.  
 1.  Navigate to the **Disabled Features** property.  
 1.  Choose **Show details**.  
-1.  Choose the icon next to each policy to navigate to the iframe or network request that blocked the feature.  
+1.  Choose the icon next to each policy to navigate to the `iframe` or network request that blocked the feature.  
     
-The Permissions Policy is a web platform API.  The Permissions Policy gives a webpage the ability to allow or block the use of browser features in an individual frame or in an `iframe` that it embeds.  For more information, navigate to [Permissions Policy Explainer][GithubW3cWebappsecPermissionsPolicyPermissionsPolicyExplainerMd].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1158827][CR1158827].  
+To review the history of this feature in the Chromium open-source project, navigate to Issue [1158827][CR1158827].  
 
 :::image type="complex" source="../../media/2021/04/application-frames-top-permission-policy-disabled-features-show-details-highlight.msft.png" alt-text="Blocked features in the Frame details view" lightbox="../../media/2021/04/application-frames-top-permission-policy-disabled-features-show-details-highlight.msft.png":::
    Blocked features in the Frame details view  
