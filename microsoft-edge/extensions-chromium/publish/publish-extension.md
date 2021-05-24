@@ -152,10 +152,14 @@ After you provide the information, choose **Publish** to submit your extension t
 After your submission passes certification, your extension is published in the Microsoft Edge Add-ons store.  The status of your extension in the Partner Center dashboard changes to `In the Store`.  
 
 > [!NOTE]
-> Microsoft Edge does not support any native payment mechanism for extension monetization. You can choose to use your own suitable payment methods. Microsoft Edge does not charge any fees for any such third party payments. You get to keep the entire amount that you earn from your extension. 
+> Microsoft Edge does not provide a payment mechanism for extension developers to request payments from customers. You may use a third-party payment provider that meets the guidelines mentioned in the [developer policies][DeveloperPolicies] documentation.
+
+ https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/store-policies/developer-policies#181-paid-features
 
 
 <!-- links -->  
+
+[DeveloperPolicies]: ../developer-policies.md "Microsoft Edge Add-ons store developer policies | Microsoft Docs"
 
 [ExtensionsGettingStarted]: ../getting-started/index.md "Getting Started With Microsoft Edge (Chromium) Extensions | Microsoft Docs"  
 [DeveloperRegistration]: ./create-dev-account.md "Register as a Microsoft Edge extensions developer | Microsoft Docs"  

@@ -25,7 +25,8 @@ If you don't have an account or if you have an existing commercial account with 
 If you have a developer account registered on Partner center, use the corresponding Microsoft account \(MSA\) to sign into your developer account, and then enroll in the Microsoft Edge program.  
 
 > [!NOTE]
->  You can choose to link your work account on Partner center to manage your Edge extensions. For this, you first need to register to Partner center using a Microsoft account. To link your work account, navigate to **Tenants** under **Account settings** and select either **Associate your Azure AD account with Partner center** or **Create a new Azure AD**.
+> You can link your work account on Partner Center to manage your Edge extensions. For this, you first need to register to the Microsoft Edge program on the Partner Center using a Microsoft Personal account. Follow the steps mentioned here to register, if you haven't already done so. Once registered, navigate to **Tenants** under **Account settings** and select either **Associate your Azure AD account with Partner center** or **Create a new Azure AD**.
+
 
 If you are enrolled to some other program on Partner center, login with the Admin credentials of your work account and enroll into the Edge program using the same credentials.
 
