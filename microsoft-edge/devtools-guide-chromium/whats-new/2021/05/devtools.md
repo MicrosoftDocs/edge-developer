@@ -50,17 +50,28 @@ This feature was available as an experiment in Microsoft Edge version 89, and is
 :::image-end:::  
 
 
-## Making it easier to use the "Microsoft Edge Tools for VS Code" extension with in-context documentation
+## Hovering, selecting, and closing tools is more visually consistent
+
+
+## Better support for screen readers in the Console
+
+
+## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.8
+
+The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extension version 1.1.8 for Microsoft Visual Studio Code has the following changes since the previous release.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.8, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  
+
+<!-- *   Added lorem et ipsum \([#xxx][GithubMicrosoftVscodeEdgeDevtoolsPullxxx]\)   -->
+    
+You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools].  
+
+
+### Making it easier to use Edge DevTools in VS Code with in-context documentation
 
 <!-- todo: finalize Title and Subtitle -->
 <!-- Title: The **Microsoft Edge Tools for VS Code** extension now opens a documentation page with guidance on how to get started -->  
 <!-- Subtitle: The **Microsoft Edge Tools for VS Code** extension now opens a documentation page with guidance on how to get started. -->  
 
 Version 1.1.8 of the **Microsoft Edge Tools for VS Code** extension for Visual Studio Code now features a simpler way to start a new instance of Microsoft Edge, by presenting buttons and documentation to guide you.  When you use the new buttons in the **Side Bar** to open a new browser instance, instead of opening the default address of `about:blank`, we added a documentation page to help you get started.
-
-<!-- todo: are the buttons in Side Bar new? what was there before, in the Side Bar for this extension? -->
-
-1.  In Visual Studio Code, on the left, select **Extensions**, and then type `Microsoft Edge Tools for VS Code`.  Install version 1.1.8 or higher.
 
 1.  In Visual Studio Code, open a new window (**File** > **New Window**).  At this point, no folder is opened.
 
@@ -97,10 +108,19 @@ Version 1.1.8 of the **Microsoft Edge Tools for VS Code** extension for Visual S
 1.  In the **Side Bar**, select the **Launch Project** button.  Microsoft Edge opens, showing the URL that you specified.  In Visual Studio Code, DevTools opens.
 
 
-## Hovering, selecting, and closing tools is more visually consistent
+<!-- 
+## Announcements from the Chromium project  
 
+[!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
 
-## Better support for screen readers in the Console
+### Ipsum et Chromium  
+
+Lorem al lorem et Chromium  To review the history of this feature in the Chromium open-source project, navigate to Issue [xxxxxxx][CRxxxxxxx].  
+
+:::image type="complex" source="../../media/202x/xx/lorem-et-chromium.msft.png" alt-text="Ipsum et Chromium" lightbox="../../media/202x/xx/lorem-et-chromium.msft.png":::
+   Ipsum et Chromium  
+:::image-end:::   
+-->
 
 
 ## Download the Microsoft Edge preview channels  
@@ -113,10 +133,22 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
 
 <!-- links -->  
-[DevToolsCustomizePlacement](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/customize/placement "Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left) | Microsoft Docs"
+[DevToolsCustomizePlacement]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/customize/placement "Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left) | Microsoft Docs"
+
+[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium/index "Microsoft Edge (Chromium) Developer Tools overview | Microsoft Docs"  
+
+[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
+[GithubMicrosoftVscodeEdgeDevtoolsPullxxx]: https://github.com/microsoft/vscode-edge-devtools/pull/xxx "Pull xxx: Lorem al Ipsum | GitHub"  
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
 
+[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Update an extension manually - Extension Marketplace | Visual Studio Code"  
+
+[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code | Visual Studio Marketplace"  
+
+[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"  
+[CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
