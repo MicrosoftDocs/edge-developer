@@ -83,7 +83,7 @@ On each tool's tab in the main toolbar, we added:
 *  Spacing around the close (`x`) button in the tab.
 *  A background color when hovering over the tab.
 *  A tooltip for the close (`x`) button of the tab.
-*  Higher contrast for the close button (`x`) of the tab.
+*  Higher contrast for the close (`x`) button of the tab.
 
 We also made it easier to re-add a tool that you closed, by adding a [More Tools menu](#add-tools-quickly-with-new-more-tools-button).
 
@@ -128,9 +128,11 @@ You can file issues and contribute to the extension on the [vscode-edge-devtools
 
 Version 1.1.8 of the [Microsoft Edge Tools for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) extension now features a simpler way to start a new instance of Microsoft Edge, by presenting buttons and documentation to guide you.  When you open a new instance of Microsoft Edge from within Visual Studio Code, instead of showing a blank page, new instances of Microsoft Edge now feature a start page that explains how to use the Microsoft Edge (Chromium) Developer Tools within Visual Studio Code.
 
-**To launch Microsoft Edge and show instructions about using DevTools within Visual Studio Code:**
+<!-- The following two how-to sections are at the main doc page for the extension: https://microsoft.github.io/vscode-edge-devtools/using.html -->
 
-1.  In Visual Studio Code, open a new window (**File** > **New Window**).  At this point, no folder is opened.
+#### Opening a new browser instance
+
+These steps assume you are in Visual Studio Code, with no folder opened.
 
 1.  In the **Activity Bar** on the left, select the **Microsoft Edge Tools** button.  In the **Side Bar**, the **MICROSOFT EDGE TOOLS: TARGETS** panel appears:
 
@@ -149,9 +151,9 @@ Version 1.1.8 of the [Microsoft Edge Tools for VS Code](https://marketplace.visu
 
 Alternatively, you can use the Edge Developer Tools in Visual Studio Code to launch Microsoft Edge with your own project, to debug it, as follows.
 
-**To launch Microsoft Edge with your own project:**
+#### Launching Microsoft Edge with your own project
 
-1.  In Visual Studio Code, open a new window (**File** > **New Window**).  At this point, no folder is opened.
+These steps assume you are in Visual Studio Code, with no folder opened.
 
 1.  In the **Activity Bar** on the left, select the **Microsoft Edge Tools** button.  In the **Side Bar**, the **MICROSOFT EDGE TOOLS: TARGETS** panel appears, showing a single button (**Launch Instance**):
 
