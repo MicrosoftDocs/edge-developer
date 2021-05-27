@@ -79,11 +79,11 @@ This clearer formatting is especially relevant for users of localized DevTools, 
 :::image-end:::
 
 On each tool's tab in the main toolbar, we added:
-*  Spacing around each tab.
-*  Spacing around the close (`x`) button in each tab.
-*  A background color when hovering over each tab.
-*  A tooltip for the close (`x`) button of each tab.
-*  Higher contrast for the close button (`x`) of each tab.
+*  Spacing around the tab.
+*  Spacing around the close (`x`) button in the tab.
+*  A background color when hovering over the tab.
+*  A tooltip for the close (`x`) button of the tab.
+*  Higher contrast for the close button (`x`) of the tab.
 
 We also made it easier to re-add a tool that you closed, by adding a [More Tools menu](#add-tools-quickly-with-new-more-tools-button).
 
@@ -177,7 +177,7 @@ Alternatively, you can use the Edge Developer Tools in Visual Studio Code to lau
 
 1.  In the **Side Bar**, select the **Launch Project** button.  Microsoft Edge opens, showing the URL that you specified.  Also, in Visual Studio Code, DevTools opens.
 
-For more information, navigate to the VS Code extension documentation: [Microsoft Edge Developer Tools for Visual Studio Code](https://microsoft.github.io/vscode-edge-devtools).
+For more information, navigate to [Microsoft Edge Developer Tools for Visual Studio Code](https://microsoft.github.io/vscode-edge-devtools).
 
 
 <!-- 
