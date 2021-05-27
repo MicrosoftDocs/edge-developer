@@ -3,7 +3,7 @@ description: Provides a summary of high-impact changes that may impact site comp
 title: Site compatibility-impacting changes coming to Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/13/2021
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform
@@ -28,7 +28,8 @@ Review this article often.  The Microsoft Edge team updates this article as thin
 | Removal of Adobe Flash | Edge v88  |  | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, navigate to the [Adobe Flash Chromium Roadmap][ChromiumFlashRoadmapSupportRemoved].  | 
 | Turn off and remove FTP | Edge v88  | Edge Beta v87 | In Edge Beta v87, FTP support is turned off by default; in Edge Stable v87 it remains enabled.  In Edge v88, FTP support is removed entirely.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, navigate to the [Chrome Platform Status Entry][ChromestatusFeature6246151319715840].  Enterprises that have sites that still require FTP support can continue to use FTP by configuring the site to use [IE mode][DeployedgeEdgeIeMode].  | 
 | Autoupgrade mixed content images | Edge v88  |  | Non-secure \(HTTP\) references to images are automatically upgraded to HTTPS; if the image is not available over HTTPS, the image download fails. A [Group Policy][DeployedgeMicrosoftEdgePoliciesInsecurecontentallowedforurls] is available to control this feature. This change is happening in the Chromium project, on which Microsoft Edge is based. For more information, navigate to the [Chrome Platform Status entry][ChromestatusFeature4926989725073408].  | 
-| HTTP authentication disallowed when third-party cookies are blocked  | Edge v87  |  | Starting with Edge v87, when cookies are blocked for third-party requests, either using the [BlockThirdPartyCookies][DeployedgeMicrosoftEdgePoliciesBlockthirdpartycookies] policy or via the Edge Settings page, HTTP authentication is also disallowed. This change may impact Enterprise Mode [Site List downloads for Internet Explorer mode][DeployedgeEdgeIeModePoliciesConfigureUsingUseEnterpriseModeIeWebsiteListPolicy] if the endpoint hosting the list requires the use of HTTP authentication.  To allow the use of both cookies and HTTP authentication for Enterprise Mode Site List downloads, add a matching URL pattern to the [CookiesAllowedForURLs][DeployedgeMicrosoftEdgePoliciesCookiesallowedforurls] policy.  |   
+| HTTP authentication disallowed when third-party cookies are blocked  | Edge v87  |  | Starting with Edge v87, when cookies are blocked for third-party requests, either using the [BlockThirdPartyCookies][DeployedgeMicrosoftEdgePoliciesBlockthirdpartycookies] policy or via the Edge Settings page, HTTP authentication is also disallowed. This change may impact Enterprise Mode [Site List downloads for Internet Explorer mode][DeployedgeEdgeIeModePoliciesConfigureUsingUseEnterpriseModeIeWebsiteListPolicy] if the endpoint hosting the list requires the use of HTTP authentication.  To allow the use of both cookies and HTTP authentication for Enterprise Mode Site List downloads, add a matching URL pattern to the [CookiesAllowedForURLs][DeployedgeMicrosoftEdgePoliciesCookiesallowedforurls] policy.  |
+| Removal of 3DES in TLS  | Edge v93  |  | Starting with Edge v93, support for the TLS_RSA_WITH_3DES_EDE_CBC_SHA cipher suite will be removed. This change is happening in the Chromium project, on which Microsoft Edge is based. For more information, navigate to the [Chrome Platform Status Entry][ChromestatusFeature6678134168485888]. A policy will be made available, also in Edge v93, to re-enable support in case there's a need to retain compatibility with an outdated server. The compatibility policy will become obsolete and stop working in Edge v95; any impacted servers should be updated before then. |
 
 ##### Release comments  
 
@@ -64,6 +65,7 @@ Review this article often.  The Microsoft Edge team updates this article as thin
 [ChromestatusFeature5088147346030592]: https://chromestatus.com/feature/5088147346030592 "Cookies default to SameSite=Lax | Chrome Platform Status"  
 [ChromestatusFeature6246151319715840]: https://chromestatus.com/feature/6246151319715840 "Deprecate FTP support | Chrome Platform Status"  
 [ChromestatusFeature6251880185331712]: https://chromestatus.com/feature/6251880185331712 "Referrer Policy: Default to strict-origin-when-cross-origin | Chrome Platform Status"  
+[ChromestatusFeature6678134168485888]: https://chromestatus.com/feature/6678134168485888 "Remove 3DES in TLS | Chrome Platform Status"
 
 [ChromiumFlashRoadmapSupportRemoved]: https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021- "Flash Support Removed from Chromium (Target: Chrome 88+ - Jan 2021) - Flash Roadmap | Chromium Projects"  
 
