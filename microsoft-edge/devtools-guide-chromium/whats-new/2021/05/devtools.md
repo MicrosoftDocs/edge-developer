@@ -46,7 +46,7 @@ The **More Tools** button was available as an experiment in Microsoft Edge versi
    The **More Tools** menu
 :::image-end:::  
 
-To reorder the tools on the main toolbar, navigate to [Reorder panels](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/customize/#reorder-panels).
+To reorder the tools on the main toolbar, navigate to [Reorder panels](../../../customize/index.md#reorder-panels).
 <!-- todo: copy this What's New item into the "Reorder panels" section -->
 
 
@@ -147,9 +147,9 @@ Version 1.1.8 of the [Microsoft Edge Tools for VS Code](https://marketplace.visu
 1.  In the URL bar, navigate to the project that you want to debug using Microsoft Edge Developer Tools for Visual Studio Code.
 
 
-Alternatively, you can use the Edge Developer Tools in Visual Studio Code to launch Microsoft Edge with your own project, as follows.
+Alternatively, you can use the Edge Developer Tools in Visual Studio Code to launch Microsoft Edge with your own project, to debug it, as follows.
 
-**To use the Edge Developer Tools in Visual Studio Code to debug your own project:**
+**To launch Microsoft Edge with your own project:**
 
 1.  In Visual Studio Code, open a new window (**File** > **New Window**).  At this point, no folder is opened.
 
