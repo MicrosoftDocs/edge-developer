@@ -353,7 +353,7 @@ For more information, navigate to the [msedgedriver container on Docker Hub][Doc
 
 ### Using WebDriver to test Internet Explorer
 
-Mixed-mode testing of Microsoft Edge and Internet Explorer using WebDriver is not supported.  To test Internet Explorer using WebDriver's wire protocol, use [Internet Explorer Driver](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver).
+Mixed-mode testing of Microsoft Edge and Internet Explorer using WebDriver is not supported.  To test Internet Explorer using WebDriver's wire protocol, use [Internet Explorer Driver][GithubSeleniumHqWikiIEDriver].
 
 ## Next steps  
 
@@ -382,6 +382,7 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 [GithubMicrosoftEdgeSeleniumTools]: https://github.com/microsoft/edge-selenium-tools "microsoft/edge-selenium-tools | GitHub"  
 [GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases "microsoft/edge-selenium-tools | GitHub"  
 [GithubSeleniumHq]: https://github.com/SeleniumHQ/selenium "SeleniumHQ/selenium | GitHub"  
+[GithubSeleniumHqWikiIEDriver]: https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver "Internet Explorer Driver - Selenium | GitHub"
 
 [JavaScriptnpm]: https://www.npmjs.com/ "npm"  
 [JavaScriptSeleniumTools]: https://www.npmjs.com/package/@microsoft/edge-selenium-tools "@microsoft/edge-selenium-tools | npm"  
