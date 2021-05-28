@@ -351,6 +351,10 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 
 For more information, navigate to the [msedgedriver container on Docker Hub][DockerHubMsedgedriver].  
 
+## Using WebDriver to test Internet Explorer
+
+Mixed-mode testing of Microsoft Edge and Internet Explorer using WebDriver is not supported.  To test Internet Explorer using WebDriver's wire protocol, use [Internet Explorer Driver](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver).
+
 ## Next steps  
 
 For more information about WebDriver and how to write automated WebDriver tests using Selenium, navigate to the [Selenium documentation][SeleniumDocumentation].  
