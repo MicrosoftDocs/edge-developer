@@ -3,7 +3,7 @@ description: A guide on navigating Microsoft Edge DevTools using assistive techn
 title: Navigate Microsoft Edge DevTools with assistive technology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021 
+ms.date: 05/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -23,21 +23,22 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Navigate Microsoft Edge DevTools with assistive technology  
 
-The following article aims to help users who primarily rely on assistive technology like screen readers access and use [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain] is a suite of web developer tools built into the Microsoft Edge browser.  If you are looking for DevTools features related to improving the accessibility of a web page,  navigate to [Accessibility Reference][DevtoolsAccessibilityReference].  
+This article helps users who primarily rely on assistive technology such as screen readers access and use [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  DevTools is a suite of web developer tools built into the Microsoft Edge browser.  
 
-The accessibility of DevTools is a work-in-progress.  Some panels and tabs work better with assistive technology than others.  This guide walks you through the panels which are the most accessible and highlights specific issues you may encounter along the way.  
+For DevTools features related to improving the accessibility of a web page, see [Accessibility-testing features in DevTools][DevtoolsAccessibilityReference] and [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md).
+
+The accessibility of DevTools is a work-in-progress.  Some tools and tabs work better with assistive technology than others.  This guide walks you through the tools and tabs which are the most accessible, and highlights specific issues you may encounter along the way.  
 
 ## Overview  
 
-Before starting, it helps to have a mental model of how the DevTools UI is structured.  DevTools is divided into a series of panels which are organized into an [ARIA tablist][W3CWaiAriaTablist].  
+DevTools is divided into a series of tools (or _panels_) and tabs, which are organized into an [ARIA tablist][W3CWaiAriaTablist].  
 
 For example:  
 
 *   The **Elements** tool lets you [view and change DOM nodes][DevtoolsDomIndexNavigateDomTreeKeyboard] or [CSS][DevtoolsCssIndex].  
-*   The [Console panel][DevtoolsConsoleIndex] lets you read JavaScript logs and live edit objects.  
+*   The [Console tool][DevtoolsConsoleIndex] lets you read JavaScript logs and live-edit objects.  
 
-Within the content area of each panel, there are a number of different tools, often referred to as tabs or panes in the documentation.  
-For instance, the **Elements** tool contains additional tabs to inspect event listeners, the accessibility tree, and much more.  The distinction between tabs and panes is somewhat arbitrary.  The only reason you may review one term or the other is to maintain consistency with the rest of the official DevTools documentation.  
+Within the content area of each tool, there are a number of different tabs.  For example, the **Elements** tool contains tabs to inspect CSS styles, event listeners, the accessibility tree, and more.
 
 ## Keyboard shortcuts  
 
@@ -47,7 +48,7 @@ The [DevTools Keyboard Shortcuts reference][DevtoolsShortcuts] is a helpful chea
 
 To get started, navigate to [Open Microsoft Edge DevTools][DevtoolsOpen].  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.  
 
-## Navigate between panels  
+## Navigate between tools or tabs
 
 ### Navigate by keyboard  
 
@@ -69,20 +70,20 @@ To focus a specific panel, use the [Command Menu][DevtoolsCommandMenuIndex]:
 1.  Type the name of the panel you want to open, then use the `Down Arrow` on the keyboard to navigate to the correct option.  
 1.  Select `Enter` to run a command.  
 
-Complete the following actions to open the **Elements** tool.  
+To open the **Elements** tool:
 
 1.  Open the **Command Menu**.  
 1.  Type `E` then `L`.  The **Panel > Show Elements** option is selected.  
-1.  Select `Enter` to run the command that opens the panel.  
+1.  Select `Enter`.  
 
-Open a panel this way directs focus to the contents of the panel.  In the case of the **Elements** tool, focus moves into the **DOM Tree**.  
+Opening a panel this way puts focus on the contents of the panel.  In the case of the **Elements** tool, focus moves into the **DOM Tree**.  
 
 ## Elements panel  
 
 ### Inspect an element on the page  
 
-1.  Navigate to the element you want to inspect using the cursor in the screen reader.  
-1.  Simulate a right-click using a mouse on the element to open the context menu.  
+1.  Navigate to the element you want to inspect, using the cursor in the screen reader.  
+1.  Simulate a right-click on the element, to open the context menu.  
 1.  Choose the **Inspect** option.  This [opens the Elements panel and focuses the element in the DOM Tree][DevtoolsDomIndexViewDomNodes].  
 
 The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  For an example, navigate to [Navigate the **DOM Tree** with a keyboard][DevtoolsDomIndexNavigateDomTreeKeyboard].  
@@ -105,7 +106,7 @@ The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  For an example,
 
 **Known issues**  
 
-*   When you type into the text input you get no feedback.  If you make a typo and use the arrow keys to explore your input you also get no feedback.  The easiest way to check your work is to accept the change, then listen for the entire element to be announced.  
+*   When you type into the text input, you get no feedback.  If you make a typo and use the arrow keys to explore your input, you also get no feedback.  The easiest way to check your work is to accept the change, then listen for the entire element to be announced.  
 
 ### Edit the HTML of an element in the DOM Tree  
 
@@ -126,7 +127,7 @@ The **DOM Tree** turns elements with `href` attributes into focusable links, so 
 
 **Known issues**  
 
-The **DOM Breakpoints** and **Properties** tabs are not keyboard accessible.  
+The **DOM Breakpoints** and **Properties** tabs are not keyboard-accessible.  
 
 ### Styles pane  
 
@@ -143,8 +144,8 @@ Because all of the style tools connect in one way or another back to the **Style
   announced as `element.style {}`.  
 *   Select `Down Arrow` to navigate the list of styles in order of specificity.  A screen reader announces each style starting with the name of the CSS file, the line number on which the style appears, and the name of the style.  For example, `main.css:233 .card__img {}`.  
 *   Select `Enter` to inspect a style in more detail.  Focus begins on an editable version of the style name.  
-*   Select `Tab` to move between editable versions of each CSS property and the corresponding values.  At the end of each style block is a blank editable text field which you may use to add additional CSS properties.  
-*   You may continue to select `Tab` to move through the list of styles, or select `Escape` to exit the mode and go back to navigating by arrow keys.  
+*   Select `Tab` to move between editable versions of each CSS property and the corresponding values.  At the end of each style block is a blank editable text field which you can use to add additional CSS properties.  
+*   You can continue to select `Tab` to move through the list of styles, or select `Escape` to exit the mode and go back to navigating by arrow keys.  
 
 For additional shortcuts, navigate to [Styles pane keyboard reference][DevtoolsShortcutsStylesPaneKeyboard].  
 
@@ -164,20 +165,20 @@ To toggle the state of an element, such as `:active` or `:focus`:
 
 #### Add an existing class  
 
-Adjacent to the **Toggle Element State** button is the **Element Classes** button.  To move the focus to it, select `Tab` and select `Enter`.  Focus moves into an edit text field labeled **Add New Class**.  
+Adjacent to the **Toggle Element State** button is the **Element Classes** button.  To move the focus to it, select `Tab` and then select `Enter`.  Focus moves into an edit text field labeled **Add new class**.  
 
-The **Element Classes** button is primarily used for adding existing classes to an element.  For example, if your stylesheet contained a helper class named `.clearfix` you may select `.` inside of the edit text field to display a suggestion list of classes and use the `Down Arrow` to find the `.clearfix` suggestion.  Or type the class name out yourself and select `Enter` to apply it.  
+The **Element Classes** button is primarily used for adding existing classes to an element.  For example, if your stylesheet contained a helper class named `.clearfix`, you can select `.` inside of the edit text field to display a suggestion list of classes and use the `Down Arrow` to find the `.clearfix` suggestion.  Or type the class name out yourself and select `Enter` to apply it.  
 
 #### Add a new style rule  
 
-Adjacent to the **Element Classes** button is the **New Style Rule** button.  To move the focus to it, select `Tab` and select `Enter`.  Focus moves into an editable text field inside of the style inspector.  The initial text content of the field is the tag name of the element that is selected in the **DOM Tree**.  
-You may type any class name you want into this field and then select `Tab` to assign CSS properties to it.  
+Adjacent to the **Element Classes** button is the **New Style Rule** button.  To move the focus to it, select `Tab` and then select `Enter`.  Focus moves into an editable text field inside of the style inspector.  The initial text content of the field is the tag name of the element that is selected in the **DOM Tree**.  
+You can type any class name you want into this field and then select `Tab` to assign CSS properties to it.  
 
 ### Computed tab  
 
 With focus on the **Computed** tab, select `Tab` to move focus inside and explore the contents.  Within the **Computed** tab there are controls for exploring which CSS properties are actually applied to an element in order of specificity.  
 
-<!--todo: add computed tab section when available  -->  
+<!--todo: add Computed tab section when available  -->  
 
 #### Explore all computed styles  
 
@@ -189,15 +190,15 @@ Select `Tab` until you reach the collection of computed styles.  These are prese
 
 ### Event listeners tab  
 
-From within the **Elements** tool you may inspect the event listeners applied to an element using the **Event Listeners** tab.  With focus on the **Styles** panel, select the `Right Arrow` to navigate to the **Event Listeners** panel.  
+To inspect the event listeners that are applied to an element, select the **Elements** tool and then select the **Event Listeners** tab to the right of the **Styles** tab.
 
 #### Explore event listeners  
 
-Event listeners are presented as an [ARIA tree][W3CWaiAriaTree].  You may use the arrow keys to navigate them.  A screen reader announces the name of the DOM object that the event listener is attached to, as well as the file name where the event listener is defined and the line number.  
+Event listeners are presented as an [ARIA tree][W3CWaiAriaTree].  You can use the arrow keys to navigate them.  A screen reader announces the name of the DOM object that the event listener is attached to, as well as the file name where the event listener is defined and the line number.  
 
-### Accessibility pane  
+### Accessibility panel  
 
-With focus on the **Accessibility** pane, select `Tab` to move focus inside and explore the contents.  On the [Accessibility pane][DevtoolsAccessibilityReference] there are controls for exploring the accessibility tree, the ARIA attributes applied to an element, and the computed accessibility properties.  
+With focus on the **Accessibility** panel, select `Tab` to move focus inside and explore the contents.  On the [Accessibility panel][DevtoolsAccessibilityReferencePanel] there are controls for exploring the accessibility tree, the ARIA attributes applied to an element, and the computed accessibility properties.  
 
 #### Accessibility Tree  
 
@@ -205,40 +206,39 @@ The **Accessibility Tree** is presented as an [ARIA tree][W3CWaiAriaTree] where 
 
 **Known issues**  
 
-*   The type of [ARIA tree][W3CWaiAriaTree] used by the **Accessibility** pane may not be properly exposed in Microsoft Edge for macOS screen readers like VoiceOver.  Subscribe to [Chromium issue #868480][ChromiumIssues868480]
+*   The type of [ARIA tree][W3CWaiAriaTree] used by the **Accessibility** tab may not be properly exposed in Microsoft Edge for macOS screen readers like VoiceOver.  Subscribe to [Chromium issue #868480][ChromiumIssues868480]
   to be informed about progress on this issue.  
 *   Each of the **ARIA Attributes** and **Computed Properties** sections are marked up as an [ARIA tree][W3CWaiAriaTree], but each does not currently have focus management and is not keyboard operable.  
 
-## Audits panel  
+## Lighthouse tool
 
-The **Audits** tool you should run a series of tests against a site to check for common issues related to performance, accessibility, SEO, and a number of other categories.  
+**Lighthouse** runs a series of tests against a site to check for common issues related to performance, accessibility, SEO, and a number of other categories.  
 
-### Configure and run an audit  
+### Configure and generate a report
 
-1.  When the **Audits** tool is first opened, focus is placed on the **Run Audit** button at the end of the form.  By default the form is configured to run audits for every category using mobile emulation on a simulated 3G connection.  
-1.  Use `Shift`+`Tab` or navigate back in Browse mode to change the audit settings.  
-1.  When you are ready to run the audit, navigate back to the **Run Audit** button and select `Enter`.  
+1.  When the **Lighthouse** tool is first opened in DevTools, focus is placed on the **Generate report** button.  By default, the form is configured to run reports for every category using mobile emulation on a simulated 3G connection.  
+1.  To change the report settings, use `Shift`+`Tab` to put focus on **Lighthouse settings**, or navigate back in Browse mode.  
+1.  When you are ready to run the report, navigate back to the **Generate report** button and select `Enter`.  
 1.  Focus moves into a modal window with a **Cancel** button which allows you to exit the audit.  You may hear a series of earcons as the audit runs and refreshes the page multiple times.  
 
 **Known issues**  
 
 *   The different sections of the configuration form are not currently marked up with a `fieldset` element.  It may be easier to navigate them in Browse mode to figure out which controls are associated with each section.  
-*   There is no earcon or live region announcement when the audit is finished running.  Generally it takes about 30 seconds, after which you should be able to navigate to the results.  Using Browse mode may be the easiest way to reach the results.  
+*   There is no earcon or live region announcement when the audit is finished running.  Generally the audit takes about 30 seconds, after which you should be able to navigate to the results.  Using Browse mode may be the easiest way to reach the results.  
 
-### Navigate the audit report  
+### Navigate the Lighthouse report  
 
-The audit report is organized into sections that correspond with each of the audit categories.  The report opens with a list of scores for each category.  These scores are also links which are able to be used to skip to the relevant sections.  Within each section are expandable `details` elements, which contain information relating to passed or failed audits.  By default, only failing audits are shown.  Each section ends with a final `details` element which contains all of the passed audits.  
+The Lighthouse report is organized into sections that correspond with each of the audit categories.  The report opens with a list of scores for each category.  These scores are also links which you can use to skip to the relevant sections.  Within each section are expandable `details` elements, which contain information relating to passed or failed audits.  By default, only failing audits are shown.  Each section ends with a final `details` element which contains all of the passed audits.  
 
-To run a new audit, use `Shift`+`Tab` to exit the report and look for the **Perform An Audit** button.  
+To run a new audit, use `Shift`+`Tab` to exit the report and select the **Generate report** button.  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
-
-[DevtoolsAccessibilityReference]: ./reference.md "Accessibility reference | Microsoft Docs"  
-[DevtoolsAccessibilityReferencePane]: reference.md#the-accessibility-pane "The Accessibility pane - Accessibility Reference | Microsoft Docs"  
+[DevtoolsAccessibilityReference]: ./reference.md "Accessibility-testing features in DevTools | Microsoft Docs"  
+[DevtoolsAccessibilityReferencePanel]: accessibility-tab.md "Testing accessibility using the Accessibility tab | Microsoft Docs"  
 [MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsConsoleIndex]: ../console/index.md "Console Overview | Microsoft Docs"  
