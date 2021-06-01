@@ -20,16 +20,22 @@ WebDriver allows developers to create automated tests that simulate user interac
 
 ## Relationship between WebDriver and other software
 
+To automate Microsoft Edge with WebDriver to simulate user interaction, you need 3 components:
+
+*  Microsoft Edge
+*  Microsoft Edge Driver
+*  A WebDriver testing framework, such as Selenium
+
 The functional relationship between WebDriver, Microsoft Edge Driver, Selenium, and Internet Explorer Driver is as follows.
 
 | Technology | Role |
 |---|---|
 | WebDriver | A W3C standard for a platform- and language-neutral wire protocol.  This protocol allows out-of-process programs to remotely instruct the behavior of web browsers. |
-| Microsoft Edge Driver | To automate Microsoft Edge with WebDriver, you need 3 components: Microsoft Edge; Microsoft Edge Driver; and a WebDriver testing framework. Microsoft Edge Driver is Microsoft's implementation of the WebDriver protocol specifically for Microsoft Edge. Test authors write tests that use WebDriver commands that Microsoft Edge Driver receives. Microsoft Edge Driver is then responsible for communicating that command to the browser. |
+| Microsoft Edge Driver | Microsoft's implementation of the WebDriver protocol specifically for Microsoft Edge. Test authors write tests that use WebDriver commands that Microsoft Edge Driver receives. Microsoft Edge Driver is then responsible for communicating that command to the browser. |
 | Selenium | A popular WebDriver testing framework that test authors use to write end-to-end tests and automate browsers. Selenium can be used on any platform, and is available in Java, Python, C#, Ruby, and JavaScript. |
-| Internet Explorer Driver | Internet Explorer Driver is the implementation of the WebDriver protocol specifically for Internet Explorer. This product is built by a Selenium contributor. To run legacy end-to-end tests for Internet Explorer, we recommend using Internet Explorer Driver. |
+| Internet Explorer Driver | An implementation of the WebDriver protocol specifically for Internet Explorer. This product is built by a Selenium contributor. To run legacy end-to-end tests for Internet Explorer, we recommend using Internet Explorer Driver. |
 
-The following section describes how to get started with WebDriver for Microsoft Edge \(Chromium\).  
+The following sections describe how to get started with WebDriver for Microsoft Edge \(Chromium\).  
 
 ## Install Microsoft Edge (Chromium)  
 
