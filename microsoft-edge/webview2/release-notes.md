@@ -84,7 +84,7 @@ Release Date: May 31, 2021
 *   Fixed a bug that prevented memory purge in some situations. This change is Runtime-specific.
 *   Fixed error in 818 SDK release package where project couldn't find WebView2.h file. \([\#1209][GithubMicrosoftedgeWebviewfeedbackIssue1209]\). 
 *   Fixed a bug which caused WebResourceRequested event to be dropped for some requests with binary bodies.
-*   Improve NewWIndowRequested documentation. \([\#448][GithubMicrosoftedgeWebviewfeedbackIssue448]\). 
+*   Improve NewWindowRequested documentation. \([\#448][GithubMicrosoftedgeWebviewfeedbackIssue448]\). 
 
 #### Promotions
 *   [UserAgent API][Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetUseragent] is now stable.
