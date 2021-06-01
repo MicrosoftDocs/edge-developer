@@ -85,6 +85,8 @@
                   href: devtools-guide-chromium/remote-debugging/windows.md
                 - name: Get started with remote debugging Android WebViews
                   href: devtools-guide-chromium/remote-debugging/webviews.md
+        - name: Resources, talks, videos, and blogs
+          href: devtools-guide-chromium/resources.md
         - name: How-to guides
           items:
             - name: Accessibility
