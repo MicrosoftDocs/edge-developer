@@ -54,16 +54,14 @@ The **More Tools** button was available as an experiment in Microsoft Edge versi
 <!-- Title: Improvements to light and dark themes -->
 <!-- Subtitle: Hovering, selecting, and closing tools is more visually consistent across both the default light and dark themes. -->
 
-In the main toolbar at the top of DevTools, the tabs for each tool have been reformatted, to reduce the chance of accidentally closing a tool.  The highlighting that appears when hovering on another tool or hovering on the **More Tools** (`+`) button now looks consistent with the highlighting for the currently selected tool.
-
-On each tool's tab in the main toolbar, we added:
+Tabs for each tool have been reformatted to reduce the chance of accidentally closing a tool.  On each tab in the main toolbar, we added:
 *  Spacing around the tab.
 *  Spacing around the close (`x`) button in the tab.
 *  A background color when hovering over the tab.
 *  A tooltip for the close (`x`) button of the tab.
 *  Higher contrast for the close (`x`) button of the tab.
 
-For example, when you are in the **Animations** tool and you hover over the **Network** tool's tab, the **Network** tab is now formatted to reduce the likelihood of accidentally closing it:
+For example, when you are in the **Animations** tool and you hover over the **Network** tool's tab, the **Network** tab is now formatted to reduce the likelihood of accidentally closing it.
 
 :::row:::
     :::column:::
@@ -78,15 +76,14 @@ For example, when you are in the **Animations** tool and you hover over the **Ne
     :::column-end:::
 :::row-end:::
 
-This clearer formatting is especially relevant for users of localized DevTools, in which the tabs may be narrower, as shown below:
+These improvements are especially relevant for users of localized DevTools, in which the tabs may be narrower and easier to accidentally close.
+
 
 :::image type="complex" source="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png" alt-text="In localized DevTools, some tabs are narrower, so the reformatting was especially needed" lightbox="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png":::
    In localized DevTools, some tabs are narrower, so the reformatting was especially needed
 :::image-end:::
 
-We also made it easier to re-add a tool that you closed, by adding a [More Tools menu](#add-tools-quickly-with-the-new-more-tools-button) on the upper and lower toolbars.
-
-To customize the theme for your DevTools, navigate to [Enable Dark Theme in Microsoft Edge DevTools][DevtoolsCustomizeDarktheme].
+We also made it easier to re-add a tool that you closed by adding a [More Tools menu](#add-tools-quickly-with-the-new-more-tools-button) to the main toolbar and drawer toolbar.
 
 
 ## Better support for screen readers in the Console
@@ -135,9 +132,9 @@ Version 1.1.8 of the [Microsoft Edge Developer Tools for Visual Studio Code][Vis
 
 #### Launching a browser instance now shows helpful documentation instead of a blank page
 
-These steps assume you are in Visual Studio Code, with no folder opened.
+Perform the following steps to open the getting started documentation page. These steps assume you are in Visual Studio Code, with no folder opened.
 
-1.  In the **Activity Bar** on the left, select the **Microsoft Edge Tools** button.  In the **Side Bar**, the **Microsoft Edge Tools: Targets** panel appears:
+1.  In the **Activity Bar** on the left, select the **Microsoft Edge Tools** button.  In the **Side Bar**, the **Microsoft Edge Tools: Targets** panel appears.
 
     :::image type="complex" source="../../media/2021/05/edge-tools-extension-in-context-docs-initial-side-bar.msft.png" alt-text="The Microsoft Edge Tools: Targets panel in the Side Bar of Visual Studio Code, showing the Launch Instance button" lightbox="../../media/2021/05/edge-tools-extension-in-context-docs-initial-side-bar.msft.png":::
        The **Microsoft Edge Tools: Targets** panel in the **Side Bar** of Visual Studio Code, showing the **Launch Instance** button
@@ -149,23 +146,25 @@ These steps assume you are in Visual Studio Code, with no folder opened.
        The new documentation page that appears in the browser, about how to use Microsoft Edge Developer Tools for Visual Studio Code
     :::image-end:::  
 
-1.  In the URL bar, navigate to the project that you want to debug using Microsoft Edge Developer Tools for Visual Studio Code.
+1.  In the address bar, navigate to the project that you want to debug using Microsoft Edge Developer Tools for Visual Studio Code.
 
 
 #### The Side Bar now provides a UI instead of a blank panel, to help launch your project for debugging
 
-These steps assume you are in Visual Studio Code, with no folder opened.
+The Side Bar now provides UI instead of a blank panel, to help you launch your project when you want to debug it. 
 
-1.  In the **Activity Bar** on the left, select the **Microsoft Edge Tools** button.  In the **Side Bar**, the **Microsoft Edge Tools: Targets** panel appears, showing a single button (**Launch Instance**):
+Perform the following steps to launch your project. These steps assume you are in Visual Studio Code, with no folder opened.
+
+1.  In the **Activity Bar** on the left, select the **Microsoft Edge Tools** button.  In the **Side Bar**, the **Microsoft Edge Tools: Targets** panel appears, showing a single button (**Launch Instance**).
 
     :::image type="complex" source="../../media/2021/05/edge-tools-extension-in-context-docs-initial-side-bar.msft.png" alt-text="The Microsoft Edge Tools: Targets panel in the Side Bar of Visual Studio Code, showing the Launch Instance button" lightbox="../../media/2021/05/edge-tools-extension-in-context-docs-initial-side-bar.msft.png":::
        The **Microsoft Edge Tools: Targets** panel in the **Side Bar** of Visual Studio Code, showing the **Launch Instance** button
     :::image-end:::  
 
-1.  In the **Microsoft Edge Tools: Targets** panel, select the **open a folder** link, and open a folder, such as your own project.  The **Microsoft Edge Tools: Targets** panel now shows two buttons: **Launch Instance** and **Generate launch.json**:
+1.  In the **Microsoft Edge Tools: Targets** panel, select the **open a folder** link, and open your project folder.  The **Microsoft Edge Tools: Targets** panel now shows two buttons: **Launch Instance** and **Generate launch.json**.
 
-    :::image type="complex" source="../../media/2021/05/edge-tools-extension-in-context-docs-side-bar.msft.png" alt-text="The Microsoft Edge Tools: Targets panel in the Side Bar of Visual Studio Code" lightbox="../../media/2021/05/edge-tools-extension-in-context-docs-side-bar.msft.png":::
-       The **Microsoft Edge Tools: Targets** panel in the **Side Bar** of Visual Studio Code
+    :::image type="complex" source="../../media/2021/05/edge-tools-extension-in-context-docs-side-bar.msft.png" alt-text="The Microsoft Edge Tools: Targets panel in the Side Bar of Visual Studio Code with the Launch Instance and Generate launch.json buttons" lightbox="../../media/2021/05/edge-tools-extension-in-context-docs-side-bar.msft.png":::
+       The **Microsoft Edge Tools: Targets** panel in the **Side Bar** of Visual Studio Code with the Launch Instance and Generate launch.json buttons
     :::image-end:::  
     
 1.  In the **Side Bar**, select the **Generate launch.json** button.  A `launch.json` file is generated in the root of the project, and is opened for editing.
