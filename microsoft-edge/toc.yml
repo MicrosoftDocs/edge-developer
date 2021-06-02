@@ -277,6 +277,8 @@
               href: extensions-chromium/getting-started/part2-content-scripts.md
             - name: Manifest file format
               href: extensions-chromium/getting-started/manifest-format.md
+            - name: Manifest V2 file format
+              href: extensions-chromium/getting-started/mv2-file-format.md
             - name: Sideload an extension
               href: extensions-chromium/getting-started/extension-sideloading.md
         - name: Developer Guide

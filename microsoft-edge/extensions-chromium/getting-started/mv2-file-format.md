@@ -1,6 +1,6 @@
 ---
-description: Learn about the format of the manifest file in an extension package
-title: Manifest file format
+description: Learn about the format of the manifest file in a MV2 extension package
+title: Manifest file format 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/02/2021
@@ -9,27 +9,31 @@ ms.prod: microsoft-edge
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions, mv2, mv3, manifest
 ---
 
-# Manifest file format
+# Manifest v2 file format
 
 Every extension has a JSON-formatted manifest file, named `manifest.json`, that provides important information. The manifest file is the blueprint of your extension and includes the version of your extension, the title, permissions needed for the extension to run, and so on.
 
 ## Field summary
 
-The following code shows the supported manifest fields for extensions for a MV3 package.
+The following code shows the supported manifest V2 fields for extensions. 
 
 ```json
 {
-    // Required
-  "manifest_version": 3,
-  "name": "My test Extension",
+  // Required
+  "manifest_version": 2,
+  "name": "My Extension",
   "version": "versionString",
 
 
   // Recommended
-  "action": {...},
   "default_locale": "en",
   "description": "A plain text description",
   "icons": {...},
+
+
+  // Pick one (or none)
+  "browser_action": {...},
+  "page_action": {...},
 
 
   // Optional
@@ -37,8 +41,10 @@ The following code shows the supported manifest fields for extensions for a MV3 
   "author": ...,
   "automation": ...,
   "background": {
-    // Required
-    "service_worker":
+    // Recommended
+    "persistent": false,
+    // Optional
+    "service_worker": ...
   },
   "chrome_settings_overrides": {...},
   "chrome_url_overrides": {...},
@@ -62,7 +68,7 @@ The following code shows the supported manifest fields for extensions for a MV3 
     "source": "network"
   },
   "homepage_url": "http://path/to/homepage",
-  "host_permissions": [...],
+  "host_permissions": ...,
   "import": [{"id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}],
   "incognito": "spanning, split, or not_allowed",
   "input_components": ...,
@@ -73,7 +79,7 @@ The following code shows the supported manifest fields for extensions for a MV3 
   "oauth2": ...,
   "offline_enabled": true,
   "omnibox": {
-    "keyword": "aString"
+     "keyword": "aString"
   },
   "optional_permissions": ["tabs"],
   "options_page": "options.html",
@@ -93,9 +99,6 @@ The following code shows the supported manifest fields for extensions for a MV3 
   "system_indicator": ...,
   "tts_engine": {...},
   "update_url": "http://path/to/updateInfo.xml",
-  "version_name": "aString",
+  "version_name": ...,
   "web_accessible_resources": [...]
 }
-```
-
-<!-- links -->
