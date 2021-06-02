@@ -34,12 +34,13 @@ In Microsoft Edge version 91 or earlier, the **Close** button to close DevTools 
 <!-- Title: Add tools quickly with the new More Tools button -->  
 <!-- Subtitle: Learn about a new convenient way to open tools in Microsoft Edge DevTools. -->  
 
-There's a new way to open more tools in Microsoft Edge DevTools: the **More Tools** (`+`) button and menu.  The **More Tools** (`+`) button appears on the upper toolbar and also on the lower toolbar (the toolbar of the drawer).  Selecting a tool from the **More Tools** menu adds the tool to the toolbar.
+There's a new way to open more tools in Microsoft Edge DevTools: the **More Tools** (`+`) menu. The **More Tools** menu appears on the upper toolbar and on the lower toolbar (the toolbar of the drawer). Selecting a tool from the **More Tools** menu adds the tool to the toolbar.
 
-To reorder the tool tabs on either toolbar, select and drag the tool tabs.
+To reorder the tabs on either toolbar, select and drag the tabs.
 
 :::image type="complex" source="../../media/2021/05/more-tools-button.msft.png" alt-text="The More Tools button" lightbox="../../media/2021/05/more-tools-button.msft.png":::
-   The **More Tools** button
+:::image type="complex" source="../../media/2021/05/more-tools-button.msft.png" alt-text="The More Tools button on the upper toolbar" lightbox="../../media/2021/05/more-tools-button.msft.png":::
+   The **More Tools** button on the upper toolbar
 :::image-end:::  
 
 :::image type="complex" source="../../media/2021/05/more-tools-menu.msft.png" alt-text="The More Tools menu" lightbox="../../media/2021/05/more-tools-menu.msft.png":::
@@ -49,10 +50,10 @@ To reorder the tool tabs on either toolbar, select and drag the tool tabs.
 The **More Tools** button was available as an experiment in Microsoft Edge versions 89 through 91, and is now always present, starting with Microsoft Edge version 92.
 
 
-## Hovering, selecting, and closing tools is more visually consistent
+## Interactions related to hovering, selecting, and closing tools are improved
 
-<!-- Title: Improvements to light and dark themes -->
-<!-- Subtitle: Hovering, selecting, and closing tools is more visually consistent across both the default light and dark themes. -->
+<!-- Title: Improvements to tab interactions -->
+<!-- Subtitle: Interactions related to hovering, selecting, and closing tools are more predictable. -->
 
 Tabs for each tool have been reformatted to reduce the chance of accidentally closing a tool.  On each tab in the main toolbar, we added:
 *  Spacing around the tab.
@@ -79,8 +80,8 @@ For example, when you are in the **Animations** tool and you hover over the **Ne
 These improvements are especially relevant for users of localized DevTools, in which the tabs may be narrower and easier to accidentally close.
 
 
-:::image type="complex" source="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png" alt-text="In localized DevTools, some tabs are narrower, so the reformatting was especially needed" lightbox="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png":::
-   In localized DevTools, some tabs are narrower, so the reformatting was especially needed
+:::image type="complex" source="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png" alt-text="Localized DevTools with narrow tabs" lightbox="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png":::
+   Localized DevTools with narrow tabs
 :::image-end:::
 
 We also made it easier to re-add a tool that you closed by adding a [More Tools menu](#add-tools-quickly-with-the-new-more-tools-button) to the main toolbar and drawer toolbar.
@@ -91,7 +92,7 @@ We also made it easier to re-add a tool that you closed by adding a [More Tools 
 <!-- Title: Better screen reader support in the Console -->
 <!-- Subtitle: Assistive technologies can now announce autocomplete suggestions and evaluated expressions in the Console. -->
 
-In Microsoft Edge version 91 or earlier, in the **Console**, assistive technologies such as screen readers did not announce autocomplete suggestions or the results of evaluated expressions.  In Microsoft Edge version 92, in the **Console**, screen readers now announce the currently selected autocomplete suggestion, and also now announce the result of an evaluated expression.
+Prior to Microsoft Edge version 92, in the **Console**, assistive technologies such as screen readers didn't announce autocomplete suggestions or the results of evaluated expressions. This has been fixed now.
 
 :::row:::
     :::column:::
@@ -179,22 +180,8 @@ Perform the following steps to launch your project. These steps assume you are i
 
 1.  In the **Side Bar**, select the **Launch Project** button.  Microsoft Edge opens, showing the URL that you specified.  Also, in Visual Studio Code, DevTools opens.
 
-For more information, navigate to [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools].
 
 
-<!-- 
-## Announcements from the Chromium project  
-
-[!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]  
-
-### Ipsum et Chromium  
-
-Lorem al lorem et Chromium  To review the history of this feature in the Chromium open-source project, navigate to Issue [xxxxxxx][CRxxxxxxx].  
-
-:::image type="complex" source="../../media/202x/xx/lorem-et-chromium.msft.png" alt-text="Ipsum et Chromium" lightbox="../../media/202x/xx/lorem-et-chromium.msft.png":::
-   Ipsum et Chromium  
-:::image-end:::   
--->
 
 
 ## Download the Microsoft Edge preview channels  
