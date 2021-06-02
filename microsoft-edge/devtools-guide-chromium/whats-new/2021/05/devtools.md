@@ -3,7 +3,7 @@ description: The More Tools button, in-context documentation to get started usin
 title: What's new in DevTools (Microsoft Edge 92)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/25/2021
+ms.date: 06/02/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
