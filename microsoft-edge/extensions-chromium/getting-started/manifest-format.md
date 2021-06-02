@@ -15,7 +15,7 @@ Every extension has a JSON-formatted manifest file, named `manifest.json`, that 
 
 ## Field summary
 
-The following code shows the supported manifest fields for Extensions, with links to the page that discusses each field.
+The following code shows the supported manifest fields for extensions.
 
 ```json
 {
@@ -24,11 +24,13 @@ The following code shows the supported manifest fields for Extensions, with link
   "name": "My test Extension",
   "version": "versionString",
 
+
   // Recommended
   "action": {...},
   "default_locale": "en",
   "description": "A plain text description",
   "icons": {...},
+
 
   // Optional
   "action": ...,
@@ -95,9 +97,5 @@ The following code shows the supported manifest fields for Extensions, with link
   "web_accessible_resources": [...]
 }
 ```
-
-## Next steps
-
-
 
 <!-- links -->
