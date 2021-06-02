@@ -14,7 +14,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 > [!TIP]
-> The **Microsoft Build 2021** conference is during May 25-27.  Here's a video from Build about the updates to DevTools: [Microsoft Edge | State of the Platform][YoutubeEdgeStateOfThePlatform] - "Microsoft Edge brings a compelling and consistent platform and tools for developers.  As our legacy browsers phase out of support, Edge will soon be the only supported browser from Microsoft on Windows 10.  Join us to learn about the latest across the Edge platform, tools, and web apps."
+> The **Microsoft Build 2021** conference was on May 25-27.  Here's a video from Build about the updates to DevTools: [Microsoft Edge | State of the Platform][YoutubeEdgeStateOfThePlatform] - Microsoft Edge brings a compelling and consistent platform with tools for developers.  As our legacy browsers phase out of support, Edge will soon be the only supported browser from Microsoft on Windows 10.  Join us to learn about the latest across the Edge platform, tools, and web apps.
 
 
 ## The Close button is no longer hidden when DevTools is narrow
@@ -31,8 +31,8 @@ In Microsoft Edge version 91 or earlier, the **Close** button to close DevTools 
 
 ## Add tools quickly with the new More Tools button
 
-<!-- Title: Add tools quickly with new More Tools button -->  
-<!-- Subtitle: A convenient way to open new tools in Microsoft Edge DevTools. -->  
+<!-- Title: Add tools quickly with the new More Tools button -->  
+<!-- Subtitle: Learn about a new convenient way to open tools in Microsoft Edge DevTools. -->  
 
 There's a new way to open more tools in Microsoft Edge DevTools: the **More Tools** (`+`) button and menu.  The **More Tools** (`+`) button appears on the upper toolbar and also on the lower toolbar (the toolbar of the drawer).  Selecting a tool from the **More Tools** menu adds the tool to the toolbar.
 
