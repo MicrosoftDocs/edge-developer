@@ -99,7 +99,7 @@ The following code shows the supported manifest fields for extensions for a MV3 
 ```
 
 
-The following code shows the supported manifest V2 fields for extensions. 
+The following code shows the supported manifest V2 fields for extensions. To learn more about migrating your manifest v2 extension to v3, navigate to [Prepare to update your extensions from Manifest v2 to v3][MigrateToMV3]
 
 ```json
 {
@@ -186,5 +186,20 @@ The following code shows the supported manifest V2 fields for extensions.
   "version_name": ...,
   "web_accessible_resources": [...]
 }
+```
+
+> [!NOTE]
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developer.chrome.com/docs/extensions/mv3/manifest/).  
+
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+
 
 <!-- links -->
+
+[MigrateToMV3]: ../developer-guide/migrate-your-extension-from-manifest-v2-to-v3 "Migrate your extension from Manifest V2 to V3 | Microsoft Docs"
