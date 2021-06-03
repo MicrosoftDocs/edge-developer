@@ -1,5 +1,5 @@
 ---
-description: Getting started for testing for accessibility problems using DevTools
+description: Getting started testing for accessibility problems using DevTools
 title: Overview of accessibility testing using DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,13 +21,13 @@ Open the [demo page with accessibility issues][DevToolsA11yErrorsDemopage] in a 
 
 ## Automated testing by using the Issues tool
 
-When you open the demo page in the browser and open DevTools, the first thing you see is some automatically detected problems flagged in the **Issues counter**.  Select the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) to open the [Issues tool][DevToolsIssuesTool] to see what the problems are, along with explanations.
+When you open the demo page in the browser and open DevTools, notice that some issues are automatically detected in the **Issues counter**.  Select the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) to open the [Issues tool][DevToolsIssuesTool] to view the issues and more information.
 
 :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="The Issues counter shows how many problems there are in the current webpage, and opens the Issues tool" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
     The Issues counter shows how many problems there are in the current webpage, and opens the Issues tool
 :::image-end:::
 
-For this article, in the **Issues** tool, let's focus on the **Accessibility** section.
+For this article, we'll focus on the **Accessibility** section of the **Issues** tool.
 
 :::image type="complex" source="../media/a11y-testing-accessibility-issues.msft.png" alt-text="Accessibility warnings displayed in the Issues tool" lightbox="../media/a11y-testing-accessibility-issues.msft.png":::
     Accessibility warnings displayed in the Issues tool
@@ -38,7 +38,7 @@ For detailed walkthrough steps, navigate to [View the Accessibility section of t
 
 ### Automatically checking that input fields have labels
 
-The first warning displayed is "Form elements must have labels: Element has no title attribute. Element has no placeholder attribute".  When you expand this section and then select the **Open in Elements** link, the **Elements** tool opens, with the element highlighted in the DOM tree.  The **Styles** tab shows the CSS that's applied to the element.
+The first warning displayed is `Form elements must have labels: Element has no title attribute. Element has no placeholder attribute`.  When you expand this section and then select the **Open in Elements** link, the **Elements** tool opens, with the element highlighted in the DOM tree.  The **Styles** tab shows the CSS that's applied to the element.
 
 :::image type="complex" source="../media/a11y-testing-inspect-problematic-element.msft.png" alt-text="Elements tool showing the problematic HTML after selecting the link in the Issues tool" lightbox="../media/a11y-testing-inspect-problematic-element.msft.png":::
     Elements tool showing the problematic HTML after selecting the link in the Issues tool
@@ -52,9 +52,9 @@ In this case, the HTML has a `label` element that doesn't work.
 <input type="submit" value="go">
 ```
 
-The use of the `label` element here is wrong, because there's no connection between the `label` element and the `input` element.  You can also test this lack of connection by selecting the **Search** label in the rendered page.  A valid HTML label would put focus on the search input textbox when you select the **Search** label.
+The use of the `label` element here is wrong, because there's no connection between the `label` element and the `input` element.  A valid HTML label would put focus on the search input textbox when you select the **Search** label. 
 
-You either need to nest the `input` element within the `label` element, or add a `for` attribute pointing to an `id` attribute of the `input` element.  To see a correct connection, select the **Other** label in the donation form.
+You can solve this problem by either nesting the `input` element in a `label` element, or adding a `for` attribute that points to an `id` attribute of the `input` element.  To view a correct connection, select the **Other** label on the donation form.
 
 You can also select the explanatory links in the **Issues** tool to get this information.
 
@@ -78,13 +78,13 @@ For detailed walkthrough steps, navigate to [Verify that images have alt text][D
 
 ### Automatically checking that text colors have enough contrast
 
-Furthermore, in the **Issues** tool, you also find that two elements on the page don't have enough contrast.
+The **Issues** tool also reports when two elements on the page don't have enough contrast.
 
 :::image type="complex" source="../media/a11y-testing-contrast-issues.msft.png" alt-text="Contrast problems reported in the Issues tool" lightbox="../media/a11y-testing-contrast-issues.msft.png":::
     Contrast problems reported in the **Issues** tool
 :::image-end:::
 
-You get detailed explanations of the warning.  When you drill down, you get a list of which elements have the issue.  In the **Issues** tool, selecting a link that points to an element highlights the element in the rendered page.
+The Issues tool provides detailed explanations of the warning.  When you drill down, you get a list of the elements that have this issue.  In the **Issues** tool, selecting a link that points to an element will highlight that element on the rendered page.
 
 :::image type="complex" source="../media/a11y-testing-element-with-contrast-issues.msft.png" alt-text="Element in the page highlighted after selecting the link to it" lightbox="../media/a11y-testing-element-with-contrast-issues.msft.png":::
     Element in the page highlighted after selecting the link to it
@@ -97,16 +97,12 @@ For detailed walkthrough steps, navigate to [Verify that text colors have enough
 
 <!-- by design, this section doesn't have a corresponding how-to article -->
 
-An important part of accessibility is to make sure that your web products work well on a narrow viewport.
-Many users need to zoom the page to be able to use it, and this means that there is not much space left.
-
-When there is not enough space, your multi-column layout should turn into a single-column layout, with content placed in an understandable order.
-This means placing the most important content at the top of the page, and placing additional content further down on the page.
+An important part of accessibility is to make sure that your web products work well on a narrow viewport. Many users need to zoom the page to be able to use it, and this means that there is not much space left. When there is not enough space, your multi-column layout should turn into a single-column layout, with content placed in an understandable order. This means placing the most important content at the top of the page, and placing additional content further down the page.
 
 You can simulate a narrow viewport by resizing the browser window, but a better way to test the responsiveness of your design is to use the **Device Emulation** tool.  Here are some features of the **Device Emulation** tool that help you find accessibility issues of any website:
 
 *  Without resizing the browser window, resize the page and test whether your [CSS media queries][DevToolsMediaQueries] trigger a change in layout.
-*  Check for dependency on using a mouse. By default, device emulation assumes a touch device. This means that any functionality of your product that relies on hover interaction will not work. 
+*  Check for dependencies that use a mouse. By default, device emulation assumes a touch device. This means that any functionality of your product that relies on hover interaction will not work. 
 *  Do visual testing by simulating different devices, zoom levels, and pixel ratios.
 *  Test how your product behaves on unreliable connections or when the user is offline.  Showing the most important interactions to a user on a slow connection is also an accessibility consideration.
 
@@ -132,23 +128,23 @@ The [Issues tool][DevToolsIssuesTool], [Accessibility Insights][AccessibilityIns
 
 Accessibility is about human interaction—people with different needs using your products within various technical environments.  This testing can't be fully automated, but needs verification by a human navigating the product.  In the best scenario, you'd have access to testers with different accessibility needs, and testers using various environments.  But you can already do a lot yourself by using the keyboard to navigate and by inspecting different parts of the page.
 
-There are many more issues in this demo page that automated testing doesn't catch:
-*  Some issues only show up when you interact with the page.
-*  Other issues show up when you change the way the page is displayed, such as making the window narrow.
-*  Other issues occur in such a way that the automated scan of the page couldn't even detect that there's a problem.
+On the demo page, there are additional issues that automated testing can't detect including: 
 
-One of those issues is the donation form.  When you use a mouse, you can click the different options to donate money.  But when you try to use the keyboard to access the donation form, nothing happens.
+*  Issues that arise after you interact with the page. 
+*  Issues related to changes in display, such as making the window narrow.
 
-:::image type="complex" source="../media/a11y-testing-basics-donation-form-issue.msft.png" alt-text="Donation form in the demo page" lightbox="../media/a11y-testing-basics-donation-form-issue.msft.png":::
-    Donation form in the demo page
+One of those issues is the donation form.  When you use a mouse, you can click the different options to donate money.  But when you try to use the keyboard to access the donation form, nothing happens. To solve this issue, you need to use the **Inspect** tool.
+
+
+:::image type="complex" source="../media/a11y-testing-basics-donation-form-issue.msft.png" alt-text="Donation form on the demo page is highlighted" lightbox="../media/a11y-testing-basics-donation-form-issue.msft.png":::
+    Donation form on the demo page is highlighted
 :::image-end:::
 
-To find out what is going wrong, you need to use the **Inspect** tool.
 
 
 ## Using the Inspect tool to detect accessibility issues
 
-Use the **Inspect** tool to detect accessibility issues by hovering over parts of the webpage.  The **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) tool is in the top-left corner of DevTools.  Turn on the **Inspect** tool by selecting the **Inspect** tool button:
+Use the **Inspect** tool to detect accessibility issues by hovering over parts of the webpage.  The **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) tool is in the top-left corner of DevTools.  Turn on the **Inspect** tool by selecting the **Inspect** tool button.
 
 :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="Turn on the Inspect tool by selecting the Inspect tool button" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
     Turn on the **Inspect** tool by selecting the **Inspect** tool button
@@ -194,20 +190,20 @@ For detailed walkthrough steps, navigate to [Check individual elements for text 
 
 ### Using the Inspect tool to hover over the webpage to highlight the DOM and CSS
 
-When the **Inspect** tool is active, selecting any element in the rendered page opens the **Elements** tool.  The DOM tree shows the HTML of the element, and the **Styles** tab shows the CSS properties that are applied to the element.
+When using the **Inspect** tool, selecting an element on the rendered page opens the **Elements** tool.  The DOM tree shows the HTML of the element, and **Styles** shows the CSS properties that are applied to the element.
 
 :::image type="complex" source="../media/a11y-testing-basics-inspector-selected-element.msft.png" alt-text="Details about the selected element displayed in the Elements tool" lightbox="../media/a11y-testing-basics-inspector-selected-element.msft.png":::
     Details about the selected element displayed in the Elements tool
 :::image-end:::
 
-When the **Inspect** tool is active, as you hover over different parts of the rendered page while the **Elements** tool is open, the DOM tree automatically refreshes.
+When using the **Inspect** tool, as you hover over different parts of the rendered page with **Elements** open, you'll notice that the DOM tree automatically refreshes.
 
 For detailed walkthrough steps, navigate to [Using the Inspect tool to hover over the webpage to highlight the DOM and CSS][DevtoolsAccessibilityTestInspectToolDomCss].
 
 
 ## Verify keyboard support by using the Tab and Enter keys
 
-Not all users have a pointer or touch device, and not all users are able to see the web projects we create.  Because of this variety of usage contexts, it's important that all our interfaces work at least with a keyboard.
+Not all people use pointer or touch devices, and some people may have low vision. To cater for these scenarios, ensure that UIs work with keyboards.
 
 You can test using a keyboard to navigate the page, by using `Tab` or `Shift+Tab` to jump from element to element.  If you press `Tab` on the demo page, the first thing that receives focus is the **Search** form in the page header.  Pressing `Enter` even allows you to submit the form, so that works, despite the label issue we discovered earlier when using the **Issues** tool.
 
@@ -219,9 +215,9 @@ When you press `Tab` instead of `Enter`, the next element that gets focus is the
     Navigating the page by using the `Tab` key.  Focus is shown on a **More** link in the page.
 :::image-end:::
 
-After you go past the last **More** link, the page scrolls up again and you seem to be on some element, but you don't know which.
+After you go past the last **More** link, the page scrolls up, and it's unclear which element has focus.
 
-If you look to the bottom left of the screen (or if you use a screen reader), you can tell that you are on the blue **Cats** link in the sidebar navigation menu, because the browser shows the URL (`#cats`) that the link points to, there.
+If you look to the bottom left of the screen or if you use a screen reader, you can tell that the blue **Cats** link in the sidebar navigation menu has focus, because the browser shows the URL `#cats`.
 
 :::image type="complex" source="../media/a11y-testing-lack-of-focus-style.msft.png" alt-text="A lack of focus styling makes it impossible to know where you currently are in the page.  The only hint is the display of the link target in the bottom left of the window." lightbox="../media/a11y-testing-lack-of-focus-style.msft.png":::
     A lack of focus styling makes it impossible to know where you currently are in the page.  The only hint is the display of the link target in the bottom left of the window.
@@ -241,38 +237,40 @@ Selecting `Tab` again puts focus on the top navigation bar, where you can select
 
 We found some issues here to fix:
 
-* The sidebar navigation menu doesn't show the user where the `Tab` focus is, when using a keyboard to move around in the page.
-* In the donation form, the buttons and submitting the form don't work with a keyboard.
-* The order of the keyboard access seems wrong.  The `Tab` key navigates through all the **More** links in the article sections of the page before you reach the sidebar navigation menu.  This `Tab` order makes the sidebar navigation menu pointless, because you already navigated through all the content sections that the navigation menu is supposed to provide easy access to.
+* The sidebar navigation menu doesn't show users where the `Tab` focus is, when using keyboards to move around on the page.
+* On the donation form, the **50, 100, ** and **200** buttons and form submit functionality doesn't work when using the keyboard.
+* The keyboard tab order is incorrect. The `Tab` key navigates through all the **More** links on the page before the sidebar navigation menu.  This `Tab` order isn't helpful because the sidebar navigation is intended to take you to the different sections of that page. 
 
 Let's analyze these problems using DevTools.
 
 
-## Analyzing keyboard accessibility issues by using DevTools
+## Analyze keyboard accessibility issues using DevTools
 
 
 ### Analyzing the lack of indication of keyboard focus in the sidebar menu
 
-If you use the **Inspect** tool to highlight a link in the sidebar navigation menu, and then drill down in the DOM tree to the `a` element, you can start to find out why the sidebar navigation menu is confusing to keyboard users.
+To find out why the sidebar navigation isn't optimized as expected for use with keyboards, start by using the **Inspect** tool to highlight a link in the sidebar navigation menu, and then drill down in the DOM tree to the `a` element. 
 
 :::image type="complex" source="../media/a11y-testing-menu-link.msft.png" alt-text="Inspecting the source code and the applied styles of a link in the sidebar navigation menu" lightbox="../media/a11y-testing-menu-link.msft.png":::
     Inspecting the source code and the applied styles of a link in the sidebar navigation menu
 :::image-end:::
 
-In the **Styles** tab, you can see the CSS that's applied to the link, and if you select the link to the CSS file, `styles.css` opens in the **Sources** tool.
+In the **Styles** tab, you can see the CSS that's applied to the link, and if you select the link to `styles.css`, the file opens in the **Sources** tool.
 
 :::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="The styles that are applied to the link, shown in the Sources tool" lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
     The styles that are applied to the link, shown in the Sources tool
 :::image-end:::
 
-The problem is that although the styles of the page have a `hover` state that shows you which menu item you are on when you use a mouse, there's no `focus` state to go along with it, for when you use a keyboard.  Even worse, the links have an `outline: none` setting in the CSS.  Using `outline: none` on links is a common practice, to remove the outline that browsers automatically add to elements when you put focus on them using a keyboard.  As you can see here, this lack of `focus` styling can cause confusion.
+In the above example, the styles of the page include a `hover` state on the menu item when you use a mouse, but there's no `focus` state in the CSS for keyboard users.  
+
+Also, in this example, the links use `outline: none`. This style is used to remove the outline that's automatically added by browsers to elements when they have focus and keyboards are used.  To avoid this problem, don't use `outline: none`.
 
 For detailed walkthrough steps, navigate to [Analyze the lack of indication of keyboard focus in a sidebar menu](test-analyze-no-focus-indicator.md).
 
 
 ### Analyzing the lack of keyboard support in the donation form
 
-Debugging the donation form requires understanding why the lack of focus styling doesn't get flagged as a problem by automatic testing, such as the **Issues** tool: the buttons are implemented using the `div` element, which is not recognized by tools as a control on a form.
+The buttons on the donation form are implemented using the `div` element, which is not recognized by automated testing tools as a control on a form.
 
 To investigate this, you can use the **Inspect** tool to hover over the donation form's buttons.  The result is that none of them are keyboard-accessible, as indicated by the gray ring.  The buttons of the donation form also have no name, and have a role of `generic` (representing `div` or `span` elements), which means they aren't accessible to assistive technology.
 
@@ -282,9 +280,9 @@ To investigate this, you can use the **Inspect** tool to hover over the donation
 
 For detailed walkthrough steps, navigate to [Analyze the lack of keyboard support in a form](test-analyze-no-keyboard-support.md).
 
-If you select the **Donate** button, the **Inspect** tool takes you to the **Elements** tool and shows you the form's HTML:
+If you select the **Donate** button, the **Inspect** tool takes you to the **Elements** tool and shows you the form's HTML.
 
-```HTMl
+```HTML
 <div class="donationrow">
     <div class="donationbutton">50</div>
     <div class="donationbutton">100</div>
