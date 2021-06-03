@@ -80,20 +80,20 @@ Release Date: May 31, 2021
 
 #### Bug Fixes  
 
-*   Fixed reliability bug that could crash host app process when moving to newer Edge WebView2 Runtime version.
-*   Fixed a bug that prevented memory purge in some situations. This change is Runtime-specific.
-*   Fixed error in 818 SDK release package where project couldn't find WebView2.h file. \([\#1209][GithubMicrosoftedgeWebviewfeedbackIssue1209]\). 
-*   Fixed a bug which caused WebResourceRequested event to be dropped for some requests with binary bodies.
-*   Improve NewWindowRequested documentation. \([\#448][GithubMicrosoftedgeWebviewfeedbackIssue448]\). 
+*   Fixed reliability bug that occasionally caused the host app process to crash when updating to newer version of the WebView2 Runtime.
+*   Fixed a bug in the WebView2 Runtime that prevented memory purges in some situations.  
+*   Fixed an error in the SDK release package version 818 where projects couldn't find the WebView2.h file. \([\#1209][GithubMicrosoftedgeWebviewfeedbackIssue1209]\). 
+*   Fixed a bug causing the WebResourceRequested event to drop for some requests with binary bodies.
+*   Updated the NewWindowRequested documentation. \([\#448][GithubMicrosoftedgeWebviewfeedbackIssue448]\). 
 
 #### Promotions
-*   [UserAgent API][Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetUseragent] is now stable.
-*   [AreBrowserkeysenabled][Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetArebrowseracceleratorkeysenabled] is now stable.
+*   [UserAgent API][Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetUseragent] is now promoted to stable.
+*   [AreBrowserkeysenabled][Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetArebrowseracceleratorkeysenabled] is now promoted to stable.
 
 ### .NET  
 
 #### Bug Fixes  
-*   Fixed a bug in WebView2 .Net controls that first header is missing when iterating CoreWebView2WebResourceRequest headers collection. \([\#1123][GithubMicrosoftedgeWebviewfeedbackIssue1123]\). 
+*   Fixed a bug in WebView2 .Net controls that reported the first header was missing when iterating through the CoreWebView2WebResourceRequest headers collection. \([\#1123][GithubMicrosoftedgeWebviewfeedbackIssue1123]\). 
 
 ## 1.0.865-prerelease  
 
@@ -919,5 +919,5 @@ Initial developer preview release.
 [Webview2ReferenceWin32Icorewebview2setting5ViewWebview210901PrereleaseGetIspinchzoomenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2setting5?view=webview2-1.0.901-prerelease&preserve-view=true#get_ispinchzoomenabled "get_IsPinchZoomEnabled - interface ICoreWebView2Setting5 | Microsoft Docs"
 
 [Webview2ReferenceWin32Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount]: /microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_allowsinglesignonusingosprimaryaccount "get_AllowSingleSignOnUsingOSPrimaryAccount - interface ICoreWebView2EnvironmentOptions | Microsoft Docs"
-[Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetUseragent]: /microsoft-edge/webview2/reference/win32/icorewebview2setting2?view=webview2-1.0.864.35&preserve-view=true#get_useragent "get_UserAgent - interface ICoreWebView2Setting2 | Microsoft Docs"
-[Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetArebrowseracceleratorkeysenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2setting2?view=webview2-1.0.864.35&preserve-view=true#get_arebrowseracceleratorkeysenabled "get_AreBrowserAcceleratorKeysEnabled - interface ICoreWebView2Setting2 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetUseragent]: /microsoft-edge/webview2/reference/win32/icorewebview2settings2?view=webview2-1.0.864.35&preserve-view=true#get_useragent "get_UserAgent - interface ICoreWebView2Setting2 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetArebrowseracceleratorkeysenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings2?view=webview2-1.0.864.35&preserve-view=true#get_arebrowseracceleratorkeysenabled "get_AreBrowserAcceleratorKeysEnabled - interface ICoreWebView2Setting2 | Microsoft Docs"
