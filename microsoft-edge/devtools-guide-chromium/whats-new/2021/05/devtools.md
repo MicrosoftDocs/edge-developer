@@ -12,7 +12,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]  
 
-
 > [!TIP]
 > The **Microsoft Build 2021** conference was on May 25-27.  Here's a video from Build about the updates to DevTools: 
 > [Microsoft Edge | State of the Platform][YoutubeEdgeStateOfThePlatform] - Microsoft Edge brings a compelling and consistent platform with tools for developers.  As our legacy browsers phase out of support, Edge will soon be the only supported browser from Microsoft on Windows 10.  Join us to learn about the latest across the Edge platform, tools, and web apps.
@@ -62,23 +61,22 @@ Tabs for each tool have been reformatted to reduce the chance of accidentally cl
 *  A tooltip for the close (`x`) button of the tab.
 *  Higher contrast for the close (`x`) button of the tab.
 
-For example, when you are in the **Animations** tool and you hover over the **Network** tool's tab, these improvements help prevent accidentally closing the **Network** tool.
+For example, when you are in the **Performance** tool and you hover over the **Network** tool's tab, these improvements help prevent accidentally closing the **Network** tool.
 
 :::row:::
     :::column:::
-        :::image type="complex" source="../../media/2021/05/hovering-on-tool-tab-in-dark-theme.msft.png" alt-text="When hovering over another tool's tab in dark theme, the tab is formatted to reduce the likelihood of accidentally closing it" lightbox="../../media/2021/05/hovering-on-tool-tab-in-dark-theme.msft.png":::
-           When hovering over another tool's tab in dark theme, the tab is formatted to reduce the likelihood of accidentally closing it.
+        :::image type="complex" source="../../media/2021/05/hovering-on-tool-tab-before.msft.png" alt-text="Tabs before reformatting" lightbox="../../media/2021/05/hovering-on-tool-tab-before.msft.png":::
+           Tabs before reformatting
         :::image-end:::
     :::column-end:::
     :::column:::
-        :::image type="complex" source="../../media/2021/05/hovering-on-tool-tab-in-light-theme.msft.png" alt-text="When hovering over another tool's tab in light theme, the tab is formatted to reduce the likelihood of accidentally closing it" lightbox="../../media/2021/05/hovering-on-tool-tab-in-light-theme.msft.png":::
-           When hovering over another tool's tab in light theme, the tab is formatted to reduce the likelihood of accidentally closing it.
+        :::image type="complex" source="../../media/2021/05/hovering-on-tool-tab-after.msft.png" alt-text="Tabs after reformatting" lightbox="../../media/2021/05/hovering-on-tool-tab-after.msft.png":::
+           Tabs after reformatting
         :::image-end:::
     :::column-end:::
 :::row-end:::
 
 These improvements are especially relevant for users of localized DevTools, in which the tabs may be narrower and easier to accidentally close.
-
 
 :::image type="complex" source="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png" alt-text="Localized DevTools with narrow tabs" lightbox="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png":::
    Localized DevTools with narrow tabs
@@ -106,7 +104,6 @@ Prior to Microsoft Edge version 92, in the **Console**, assistive technologies s
         :::image-end:::
     :::column-end:::
 :::row-end:::
-        
 
 
 ## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.8
@@ -128,59 +125,7 @@ Version 1.1.8 of the [Microsoft Edge Developer Tools for Visual Studio Code][Vis
 
 *  The **Microsoft Edge Tools: Targets** panel now has a **Generate launch.json** button and instructions, to help launch your project for debugging in Microsoft Edge.
 
-<!-- keep the following 2 sections sync'd with this doc page for the extension: https://microsoft.github.io/vscode-edge-devtools/using.html -->
-
-#### Launching a browser instance now shows helpful documentation instead of a blank page
-
-Perform the following steps to open the getting started documentation page. These steps assume you are in Visual Studio Code, with no folder opened.
-
-1.  In the **Activity Bar** on the left, select the **Microsoft Edge Tools** button.  In the **Side Bar**, the **Microsoft Edge Tools: Targets** panel appears.
-
-    :::image type="complex" source="../../media/2021/05/edge-tools-extension-in-context-docs-initial-side-bar.msft.png" alt-text="The Microsoft Edge Tools: Targets panel in the Side Bar of Visual Studio Code, showing the Launch Instance button" lightbox="../../media/2021/05/edge-tools-extension-in-context-docs-initial-side-bar.msft.png":::
-       The **Microsoft Edge Tools: Targets** panel in the **Side Bar** of Visual Studio Code, showing the **Launch Instance** button
-    :::image-end:::  
-
-1.  In the **Side Bar**, select the **Launch Instance** button.  Microsoft Edge opens, showing a documentation page, which provides guidance and links for more information.  Also, in Visual Studio Code, DevTools opens.
-
-    :::image type="complex" source="../../media/2021/05/edge-tools-extension-in-context-docs-doc-page.msft.png" alt-text="The new documentation page that appears in the browser, about how to use Microsoft Edge Developer Tools for Visual Studio Code" lightbox="../../media/2021/05/edge-tools-extension-in-context-docs-doc-page.msft.png":::
-       The new documentation page that appears in the browser, about how to use Microsoft Edge Developer Tools for Visual Studio Code
-    :::image-end:::  
-
-1.  In the address bar of Microsoft Edge, navigate to the project that you want to debug using Microsoft Edge Developer Tools for Visual Studio Code.
-
-
-#### The Side Bar now provides a UI instead of a blank panel, to help launch your project for debugging
-
-The Side Bar now provides a **Launch Instance** button to help you launch your project when you want to debug it. 
-
-Perform the following steps to launch your project. These steps assume you are in Visual Studio Code, with no folder opened.
-
-1.  In the **Activity Bar**, select the **Microsoft Edge Tools** button.  In the **Side Bar**, the **Microsoft Edge Tools: Targets** panel appears, showing a single button (**Launch Instance**).
-
-    :::image type="complex" source="../../media/2021/05/edge-tools-extension-in-context-docs-initial-side-bar.msft.png" alt-text="The Microsoft Edge Tools: Targets panel in the Side Bar of Visual Studio Code, showing the Launch Instance button" lightbox="../../media/2021/05/edge-tools-extension-in-context-docs-initial-side-bar.msft.png":::
-       The **Microsoft Edge Tools: Targets** panel in the **Side Bar** of Visual Studio Code, showing the **Launch Instance** button
-    :::image-end:::  
-
-1.  In the **Microsoft Edge Tools: Targets** panel, select the **open a folder** link, and open your project folder.  The **Microsoft Edge Tools: Targets** panel now shows two buttons: **Launch Instance** and **Generate launch.json**.
-
-    :::image type="complex" source="../../media/2021/05/edge-tools-extension-in-context-docs-side-bar.msft.png" alt-text="The Microsoft Edge Tools: Targets panel in the Side Bar of Visual Studio Code with the Launch Instance and Generate launch.json buttons" lightbox="../../media/2021/05/edge-tools-extension-in-context-docs-side-bar.msft.png":::
-       The **Microsoft Edge Tools: Targets** panel in the **Side Bar** of Visual Studio Code with the Launch Instance and Generate launch.json buttons
-    :::image-end:::  
-    
-1.  In the **Side Bar**, select the **Generate launch.json** button.  A `launch.json` file is generated in the root of the project, and is opened for editing.
-
-    :::image type="complex" source="../../media/2021/05/edge-tools-extension-in-context-docs-launch-json-file.msft.png" alt-text="Editing the URL in the launch.json file" lightbox="../../media/2021/05/edge-tools-extension-in-context-docs-launch-json-file.msft.png":::
-       Editing the URL in the `launch.json` file
-    :::image-end:::
-
-1.  In the `launch.json` file, change the URL from an empty string to a URL for your project.  Or leave the string empty, to show the documentation page.
-
-1.  Save the `launch.json` file.
-
-1.  In the **Side Bar**, select the **Launch Project** button.  Microsoft Edge opens, showing the URL that you specified.  Also, in Visual Studio Code, DevTools opens.
-
-
-
+For more information, navigate to [Using the tools][GithubIoDevToolsUsing].
 
 
 ## Download the Microsoft Edge preview channels  
@@ -193,15 +138,8 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
 
 <!-- links -->  
-[DevToolsCustomizePlacement]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/customize/placement "Change Microsoft Edge DevTools placement (Undock, Dock to bottom, Dock to left) | Microsoft Docs"
-[DevtoolsCustomizeDarktheme]: ../../../customize/dark-theme.md "Enable Dark Theme in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsWhatsnew202101DevtoolsAssistiveAnnounce]: ../01/devtools.md#assistive-technologies-now-announce-position-and-count-of-css-suggestions "Assistive technologies now announce position and count of CSS suggestions | Microsoft Docs"
-
-[DevtoolsCustomizeIndexSettings]: /microsoft-edge/devtools-guide-chromium/customize/index#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsMain]: /microsoft-edge/devtools-guide-chromium/index "Microsoft Edge (Chromium) Developer Tools overview | Microsoft Docs"  
-
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
-[GithubMicrosoftVscodeEdgeDevtoolsPullxxx]: https://github.com/microsoft/vscode-edge-devtools/pull/xxx "Pull xxx: Lorem al Ipsum | GitHub"  
+[GithubIoDevToolsUsing]: https://microsoft.github.io/vscode-edge-devtools/using.html "Using the tools | GitHub"
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"  
 
@@ -211,13 +149,8 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 [YoutubeEdgeStateOfThePlatform]: https://www.youtube.com/watch?v=sU0WRZ0kkNo "Microsoft Edge: State of the Platform | YouTube"
 
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"  
-[CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"  
-
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen
