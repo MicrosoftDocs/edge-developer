@@ -14,7 +14,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 > [!TIP]
-> The **Microsoft Build 2021** conference was on May 25-27.  Here's a video from Build about the updates to DevTools: [Microsoft Edge | State of the Platform][YoutubeEdgeStateOfThePlatform] - Microsoft Edge brings a compelling and consistent platform with tools for developers.  As our legacy browsers phase out of support, Edge will soon be the only supported browser from Microsoft on Windows 10.  Join us to learn about the latest across the Edge platform, tools, and web apps.
+> The **Microsoft Build 2021** conference was on May 25-27.  Here's a video from Build about the updates to DevTools: 
+> [Microsoft Edge | State of the Platform][YoutubeEdgeStateOfThePlatform] - Microsoft Edge brings a compelling and consistent platform with tools for developers.  As our legacy browsers phase out of support, Edge will soon be the only supported browser from Microsoft on Windows 10.  Join us to learn about the latest across the Edge platform, tools, and web apps.
 
 
 ## The Close button is no longer hidden when DevTools is narrow
@@ -34,11 +35,10 @@ In Microsoft Edge version 91 or earlier, the **Close** button to close DevTools 
 <!-- Title: Add tools quickly with the new More Tools button -->  
 <!-- Subtitle: Learn about a new convenient way to open tools in Microsoft Edge DevTools. -->  
 
-There's a new way to open more tools in Microsoft Edge DevTools: the **More Tools** (`+`) menu. The **More Tools** menu appears on the upper toolbar and on the lower toolbar (the toolbar of the drawer). Selecting a tool from the **More Tools** menu adds the tool to the toolbar.
+There's a new way to open more tools in Microsoft Edge DevTools: the **More Tools** (`+`) menu. The **More Tools** menu appears on the toolbar in the main panel and in the toolbar of the drawer. Selecting a tool from the **More Tools** menu adds the tool to the toolbar.
 
-To reorder the tabs on either toolbar, select and drag the tabs.
+To reorder the tabs on either toolbar, select and drag the tabs.  
 
-:::image type="complex" source="../../media/2021/05/more-tools-button.msft.png" alt-text="The More Tools button" lightbox="../../media/2021/05/more-tools-button.msft.png":::
 :::image type="complex" source="../../media/2021/05/more-tools-button.msft.png" alt-text="The More Tools button on the upper toolbar" lightbox="../../media/2021/05/more-tools-button.msft.png":::
    The **More Tools** button on the upper toolbar
 :::image-end:::  
@@ -47,10 +47,10 @@ To reorder the tabs on either toolbar, select and drag the tabs.
    The **More Tools** menu
 :::image-end:::  
 
-The **More Tools** button was available as an experiment in Microsoft Edge versions 89 through 91, and is now always present, starting with Microsoft Edge version 92.
+The **More Tools** menu was available as an experiment in Microsoft Edge version 89, and is now always present.
 
 
-## Interactions related to hovering, selecting, and closing tools are improved
+## Improvements for hovering, selecting, and closing tools
 
 <!-- Title: Improvements to tab interactions -->
 <!-- Subtitle: Interactions related to hovering, selecting, and closing tools are more predictable. -->
@@ -62,7 +62,7 @@ Tabs for each tool have been reformatted to reduce the chance of accidentally cl
 *  A tooltip for the close (`x`) button of the tab.
 *  Higher contrast for the close (`x`) button of the tab.
 
-For example, when you are in the **Animations** tool and you hover over the **Network** tool's tab, the **Network** tab is now formatted to reduce the likelihood of accidentally closing it.
+For example, when you are in the **Animations** tool and you hover over the **Network** tool's tab, these improvements help prevent accidentally closing the **Network** tool.
 
 :::row:::
     :::column:::
@@ -107,7 +107,6 @@ Prior to Microsoft Edge version 92, in the **Console**, assistive technologies s
     :::column-end:::
 :::row-end:::
         
-For a related feature in Microsoft Edge version 89, navigate to [Assistive technologies now announce position and count of CSS suggestions][DevtoolsWhatsnew202101DevtoolsAssistiveAnnounce].
 
 
 ## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.8
@@ -123,7 +122,7 @@ You can file issues and contribute to the extension on the [vscode-edge-devtools
 
 Version 1.1.8 of the [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extension now features a simpler way to start a new instance of Microsoft Edge, by presenting instructions, buttons, links, and a documentation page to guide you.
 
-*  When you select the **Microsoft Edge Tools** button in the **Activity Bar** on the left side of Visual Studio Code, the **Microsoft Edge Tools: Targets** panel now presents explanatory text, buttons, and links to guide you, instead of a blank panel.
+*  When you select the **Microsoft Edge Tools** button in the **Activity Bar** of Visual Studio Code, the **Microsoft Edge Tools: Targets** panel now presents explanatory text, buttons, and links to guide you, instead of a blank panel.
 
 *  When you open a new instance of Microsoft Edge from within Visual Studio Code, Microsoft Edge now shows a start page that explains how to use the Developer Tools extension, instead of a blank page.
 
@@ -147,16 +146,16 @@ Perform the following steps to open the getting started documentation page. Thes
        The new documentation page that appears in the browser, about how to use Microsoft Edge Developer Tools for Visual Studio Code
     :::image-end:::  
 
-1.  In the address bar, navigate to the project that you want to debug using Microsoft Edge Developer Tools for Visual Studio Code.
+1.  In the address bar of Microsoft Edge, navigate to the project that you want to debug using Microsoft Edge Developer Tools for Visual Studio Code.
 
 
 #### The Side Bar now provides a UI instead of a blank panel, to help launch your project for debugging
 
-The Side Bar now provides UI instead of a blank panel, to help you launch your project when you want to debug it. 
+The Side Bar now provides a **Launch Instance** button to help you launch your project when you want to debug it. 
 
 Perform the following steps to launch your project. These steps assume you are in Visual Studio Code, with no folder opened.
 
-1.  In the **Activity Bar** on the left, select the **Microsoft Edge Tools** button.  In the **Side Bar**, the **Microsoft Edge Tools: Targets** panel appears, showing a single button (**Launch Instance**).
+1.  In the **Activity Bar**, select the **Microsoft Edge Tools** button.  In the **Side Bar**, the **Microsoft Edge Tools: Targets** panel appears, showing a single button (**Launch Instance**).
 
     :::image type="complex" source="../../media/2021/05/edge-tools-extension-in-context-docs-initial-side-bar.msft.png" alt-text="The Microsoft Edge Tools: Targets panel in the Side Bar of Visual Studio Code, showing the Launch Instance button" lightbox="../../media/2021/05/edge-tools-extension-in-context-docs-initial-side-bar.msft.png":::
        The **Microsoft Edge Tools: Targets** panel in the **Side Bar** of Visual Studio Code, showing the **Launch Instance** button
@@ -214,10 +213,6 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"  
 [CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"  
-
-> [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-xx) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
