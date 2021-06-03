@@ -80,7 +80,7 @@ Release Date: May 31, 2021
 
 #### Bug Fixes  
 
-*   Fixed reliability bug that occasionally caused the host app process to crash when updating to newer version of the WebView2 Runtime.
+*   Fixed a reliability bug that occasionally caused the host app process to crash when updating to newer versions of the WebView2 Runtime.
 *   Fixed a bug in the WebView2 Runtime that prevented memory purges in some situations.  
 *   Fixed an error in the SDK release package version 818 where projects couldn't find the WebView2.h file. \([\#1209][GithubMicrosoftedgeWebviewfeedbackIssue1209]\). 
 *   Fixed a bug causing the WebResourceRequested event to drop for some requests with binary bodies.
