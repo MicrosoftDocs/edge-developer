@@ -34,19 +34,19 @@ In Microsoft Edge version 91 or earlier, the **Close** button to close DevTools 
 <!-- Title: Add tools quickly with the new More Tools button -->  
 <!-- Subtitle: Learn about a new convenient way to open tools in Microsoft Edge DevTools. -->  
 
-There's a new way to open more tools in Microsoft Edge DevTools: the **More Tools** (`+`) menu. The **More Tools** menu appears on the toolbar in the main panel and in the toolbar of the drawer. Selecting a tool from the **More Tools** menu adds the tool to the toolbar.
+There's a new way to open more tools in Microsoft Edge DevTools: the **More Tools** (`+`) menu. The **More Tools** menu appears on the toolbar in the main panel and on the toolbar of the drawer. Selecting a tool from the **More Tools** menu adds the tool to the toolbar.
 
 To reorder the tabs on either toolbar, select and drag the tabs.  
 
-:::image type="complex" source="../../media/2021/05/more-tools-button.msft.png" alt-text="The More Tools button on the upper toolbar" lightbox="../../media/2021/05/more-tools-button.msft.png":::
-   The **More Tools** button on the upper toolbar
+The **More Tools** menu was available as an experiment in Microsoft Edge version 89, and is now always present.
+
+:::image type="complex" source="../../media/2021/05/more-tools-button.msft.png" alt-text="The More Tools button on the upper toolbar and drawer toolbar" lightbox="../../media/2021/05/more-tools-button.msft.png":::
+   The **More Tools** button on the upper toolbar and drawer toolbar
 :::image-end:::  
 
 :::image type="complex" source="../../media/2021/05/more-tools-menu.msft.png" alt-text="The More Tools menu" lightbox="../../media/2021/05/more-tools-menu.msft.png":::
    The **More Tools** menu
 :::image-end:::  
-
-The **More Tools** menu was available as an experiment in Microsoft Edge version 89, and is now always present.
 
 
 ## Improvements for hovering, selecting, and closing tools
@@ -54,7 +54,7 @@ The **More Tools** menu was available as an experiment in Microsoft Edge version
 <!-- Title: Improvements to tab interactions -->
 <!-- Subtitle: Interactions related to hovering, selecting, and closing tools are more predictable. -->
 
-Tabs for each tool have been reformatted to reduce the chance of accidentally closing a tool.  On each tab in the main toolbar, we added:
+Tabs for each tool have been reformatted to reduce the chance of accidentally closing a tool.  On each tab in the main toolbar and in the toolbar of the drawer, we added:
 *  Spacing around the tab.
 *  Spacing around the close (`x`) button in the tab.
 *  A background color when hovering over the tab.
