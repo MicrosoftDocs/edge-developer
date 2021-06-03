@@ -37,9 +37,8 @@ In Microsoft Edge version 91 or earlier, the **Close** button to close DevTools 
 
 There's a new way to open more tools in Microsoft Edge DevTools: the **More Tools** (`+`) menu. The **More Tools** menu appears on the toolbar in the main panel and in the toolbar of the drawer. Selecting a tool from the **More Tools** menu adds the tool to the toolbar.
 
-To reorder the tabs on either toolbar, select and drag the tabs.
+To reorder the tabs on either toolbar, select and drag the tabs.  
 
-:::image type="complex" source="../../media/2021/05/more-tools-button.msft.png" alt-text="The More Tools button" lightbox="../../media/2021/05/more-tools-button.msft.png":::
 :::image type="complex" source="../../media/2021/05/more-tools-button.msft.png" alt-text="The More Tools button on the upper toolbar" lightbox="../../media/2021/05/more-tools-button.msft.png":::
    The **More Tools** button on the upper toolbar
 :::image-end:::  
