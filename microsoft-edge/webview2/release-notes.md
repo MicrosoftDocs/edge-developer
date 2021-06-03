@@ -93,7 +93,7 @@ Release Date: May 31, 2021
 ### .NET  
 
 #### Bug Fixes  
-*   Fixed a bug in WebView2 .Net controls that reported the first header was missing when iterating through the CoreWebView2WebResourceRequest headers collection. \([\#1123][GithubMicrosoftedgeWebviewfeedbackIssue1123]\). 
+*   Fixed a bug in WebView2 .NET controls that reported the first header was missing when iterating through the CoreWebView2WebResourceRequest headers collection. \([\#1123][GithubMicrosoftedgeWebviewfeedbackIssue1123]\). 
 
 ## 1.0.865-prerelease  
 
