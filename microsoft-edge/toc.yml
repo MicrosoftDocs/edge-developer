@@ -25,6 +25,8 @@
           items:
             - name: Experimental features
               href: devtools-guide-chromium/experimental-features/index.md
+            - name: Microsoft Edge 92
+              href: devtools-guide-chromium/whats-new/2021/05/devtools.md
             - name: Microsoft Edge 91
               href: devtools-guide-chromium/whats-new/2021/04/devtools.md
             - name: Microsoft Edge 90
@@ -407,8 +409,8 @@
           href: web-platform/ie-to-microsoft-edge-redirection.md
         - name: Tracking prevention in Microsoft Edge
           href: web-platform/tracking-prevention.md
-        - name: Microsoft Edge user agent string
-          href: web-platform/user-agent-string.md
+        - name: How to detect Microsoft Edge in your website
+          href: web-platform/user-agent-guidance.md
         - name: Customize the password reveal button
           href: web-platform/password-reveal.md
     - name: Web We Want overview
