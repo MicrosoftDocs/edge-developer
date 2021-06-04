@@ -24,9 +24,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->  
 # Testing text-color contrast using the Color Picker
 
-Some people with low vision do not see areas as very bright or very dark.  Everything tends to appear at about the same brightness, which makes it hard to distinguish outlines and edges.  
+People with low vision may not see areas that are very bright or very dark.  Everything tends to appear at about the same level of brightness, which makes it hard to distinguish outlines and edges.  
 
-Contrast ratio measures the difference in brightness between the foreground and background of text.  If your text has a low contrast ratio, then these low vision users may literally experience your site as a blank screen.  
+Contrast ratio measures the difference in brightness between the foreground and background of text.  If your text has a low contrast ratio, then people with low vision may experience your site as a blank screen.  
 
 In DevTools, one way to view the contrast ratio of a text element is to use the Color Picker, in the DOM tree in the **Elements** tool.  The Color Picker helps you verify that your text meets recommended contrast ratio levels.
 

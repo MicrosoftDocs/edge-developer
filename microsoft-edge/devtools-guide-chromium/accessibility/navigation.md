@@ -36,7 +36,7 @@ DevTools is divided into a series of tools (or _panels_) and tabs, which are org
 For example:  
 
 *   The **Elements** tool lets you [view and change DOM nodes][DevtoolsDomIndexNavigateDomTreeKeyboard] or [CSS][DevtoolsCssIndex].  
-*   The [Console tool][DevtoolsConsoleIndex] lets you read JavaScript logs and live-edit objects.  
+*   The Console tool lets you read JavaScript logs and live-edit objects.  For more information, navigate to [Use the Console][DevtoolsConsoleIndex].
 
 Within the content area of each tool, there are a number of different tabs.  For example, the **Elements** tool contains tabs to inspect CSS styles, event listeners, the accessibility tree, and more.
 
