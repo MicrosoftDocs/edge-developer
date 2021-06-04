@@ -14,10 +14,10 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Several DevTools features check for keyboard and screen reader support.  Using the **Inspect** tool to check the accessibility of each page element individually can become pretty time-consuming.  An alternative way to check a webpage is to use the **Accessibility Tree**.  The **Accessibility Tree** indicates what information the page provides to assistive technology such as screen readers.
 
-The **Accessibility Tree** is a subset of the DOM tree; it only contains elements from the DOM tree that are relevant and useful for displaying the contents of a page in a screen reader.  The **Accessibility Tree** is in the **Accessibility** tab of the **Elements** tool (near the **Styles** tab).
+The **Accessibility Tree** is a subset of the DOM tree, which contains elements from the DOM tree that are relevant and useful for displaying the contents of a page in a screen reader.  The **Accessibility Tree** is in the **Accessibility** tab of the **Elements** tool (near the **Styles** tab).
 
 
-**To explore using the Accessibility Tree with the demo page:**
+To explore using the Accessibility Tree with the demo page:
 
 1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
 
@@ -25,9 +25,9 @@ The **Accessibility Tree** is a subset of the DOM tree; it only contains element
 
 1.  In the rendered webpage, in the **Donation** section, hover over the **100** button.  The **Inspect** tool overlay appears.
 
-1.  In the rendered webpage, select the **100** button.  In DevTools, the **Elements** tool appears.  The DOM tree shows the `div` element for the **100** button.  The **Styles** pane shows the CSS settings for the element.
+1.  In the rendered webpage, select the **100** button.  In DevTools, the **Elements** tool is displayed.  The DOM tree shows the `div` element for the **100** button.  The **Styles** pane shows the CSS settings for the element.
 
-1.  To the right of the **Styles** tab, select the **Accessibility** tab.  The **Accessibility Tree** for the element is displayed, expanded.
+1.  To the right of the **Styles** tab, select the **Accessibility** tab.  The **Accessibility Tree** for the element is displayed, and is expanded.
 
 :::image type="complex" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="Donation form button in the Accessibility Tree tool" lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
     Donation form button in the Accessibility Tree tool
