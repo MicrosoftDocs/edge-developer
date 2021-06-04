@@ -61,12 +61,13 @@ View the ARIA attributes of an element in the **Accessibility** tab.
 
 ## View the computed accessibility properties of an element  
 
-> [!NOTE]
-> For computed CSS properties, use the [Computed][DevtoolsCssReferenceViewActuallyAppliedElements] tab.
 
 Some accessibility properties are dynamically calculated by the browser.  These properties are displayed in the **Computed Properties** section of the **Accessibility** tab.  
 
 View the computed accessibility properties of an element in the **Accessibility** tab.
+
+> [!NOTE]
+> For computed CSS properties, use the [Computed][DevtoolsCssReferenceViewActuallyAppliedElements] tab.
 
 :::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="The Computed Properties section of the Accessibility tab" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
    The **Computed Properties** section of the **Accessibility** tab  
