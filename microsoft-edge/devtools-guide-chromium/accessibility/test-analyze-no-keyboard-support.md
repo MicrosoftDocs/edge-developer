@@ -1,6 +1,6 @@
 ---
-description: Analyzing the lack of keyboard support in a form that uses the div element, by using the Inspect tool and Event Listeners tab.
-title: Analyze the lack of keyboard support in a form
+description: Analyzing the lack of keyboard support on a form that uses the div element with the Inspect tool and Event Listeners tab.
+title: Analyze keyboard support on forms using the DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/13/2021
@@ -8,13 +8,13 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-# Analyze the lack of keyboard support in a form
+# Analyze keyboard support on forms using the DevTools
 
-This article uses the **Inspect** tool and **Event Listeners** tab to analyze the lack of keyboard support in a demo page which has buttons that use the `div` element.
+This article uses the **Inspect** tool and **Event Listeners** tab to analyze the lack of keyboard support on a demo page which has buttons that use the `div` element.
 
-In the **Donate** form within the accessibility-testing demo webpage, the amount buttons and the **Donate** button don't work with a keyboard.  Debugging the donation form requires understanding why the lack of focus styling doesn't get flagged as a problem by automatic testing, such as the **Issues** tool: the buttons are implemented using the `div` element, which is not recognized by tools as a control on a form.
+On the **Donate** form, the amount buttons and **Donate** button doesn't work with a keyboard.  Debugging the donation form requires understanding why the lack of focus styling isn't flagged as a problem with automatic testing tools like the **Issues** tool.  In this example, the buttons are implemented using `div` elements, which are not recognized by these tools as a control on a form.
 
-**To use the Inspect tool and Event Listeners tab to analyze the lack of keyboard support in the demo page:**
+To use the Inspect tool and Event Listeners tab to analyze the lack of keyboard support on the demo page:
 
 <!-- 1. Inspect tool: Accessibility section: keyboard-focusable row -->
 
@@ -22,7 +22,7 @@ In the **Donate** form within the accessibility-testing demo webpage, the amount
     
 1.  Select the **Inspect** \(![Inspect icon](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
-1.  Hover over the **50**, **100**, and **200** donation buttons.  The Inspect tool appears on the webpage, as an overlay.  The **keyboard-focusable** row of the Inspect overlay shows that none of the donation amount buttons are keyboard-accessible, as indicated by a gray circle with diagonal line.  The buttons have no name, and they have a role of `generic` (because they are `div` elements), which means that the buttons aren't accessible to assistive technology.
+1.  Hover over the **50**, **100**, and **200** donation buttons.  The Inspect tool appears on the webpage, as an overlay.  The **keyboard-focusable** row of the Inspect overlay shows that none of the donation amount buttons are keyboard-accessible, as indicated by a gray circle with diagonal line.  The buttons have no name, and have a role of `generic` because they are `div` elements, which means that the buttons aren't accessible to assistive technology.
 
     :::image type="complex" source="../media/a11y-testing-donation-button-info.msft.png" alt-text="Inspecting the buttons of the form shows that they aren't keyboard-accessible" lightbox="../media/a11y-testing-donation-button-info.msft.png":::
         Inspecting the buttons of the form shows that they aren't keyboard-accessible
@@ -45,7 +45,7 @@ In the **Donate** form within the accessibility-testing demo webpage, the amount
     </div>
     ```
 
-    The use of the `label` and `input` elements for the **Other** textbox is valid, so that the **Other** label is correctly linked with the input textbox.  The `input` textbox is also keyboard-accessible.  The rest of the form's markup are `div` elements, which are easy to style, but have no semantic meaning.
+    The use of the `label` and `input` elements on the **Other** textbox is valid, which means that the **Other** label is correctly linked with the input textbox.  The `input` textbox is also keyboard-accessible.  The rest of the form's markup are `div` elements, which are easy to style, but have no semantic meaning.
 
     <!-- 2. Elements tool: Event Listeners tab -->
 
@@ -57,7 +57,7 @@ In the **Donate** form within the accessibility-testing demo webpage, the amount
         The Event listeners tool showing you where the JavaScript is that makes the form work
     :::image-end:::
 
-1.  Select the `buttons.js:18` link.  The **Sources** tool opens, showing the applied JavaScript:
+1.  Select the `buttons.js:18` link.  The **Sources** tool opens, showing the applied JavaScript.
 
     :::image type="complex" source="../media/a11y-testing-form-handling-javascript.msft.png" alt-text="The JavaScript responsible for the donation form's functionality, shown in the Sources tool" lightbox="../media/a11y-testing-form-handling-javascript.msft.png":::
         The JavaScript responsible for the donation form's functionality, shown in the Sources tool
@@ -78,9 +78,9 @@ donations.addEventListener('click', e => {
 })
 ```
 
-Using a `click` event to read the buttons is good practice, because a `click` event fires both on mouse pointer and keyboard interaction.  However, because a `div` element isn't keyboard-accessible, and this **Donate** button is implemented as a `div` element (`<div class="submitbutton">Donate</div>`), this JavaScript functionality never executes unless you use a mouse or an equivalent source of a `click` event, such as a specialized button on some keyboards.
+Using a `click` event to read the buttons is good practice, because a `click` event fires both on mouse pointer and keyboard interaction.  However, because a `div` element isn't keyboard-accessible, and this **Donate** button is implemented as a `div` element (`<div class="submitbutton">Donate</div>`), this JavaScript functionality never runs unless you use a mouse or another source of a `click` event, such as a special button available on some keyboards.
 
-This is a classic example where some extra JavaScript was necessary to create functionality that `button` elements would have provided natively, and simulating the functionality of buttons ended up producing an inaccessible experience.
+This is a classic example where JavaScript was added to create functionality that `button` elements provide natively.  Simulating the functionality of buttons with `div` elements ended up producing an inaccessible experience.
 
 
 ## See also
