@@ -23,7 +23,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Navigate Microsoft Edge DevTools with assistive technology  
 
-This article helps users who primarily rely on assistive technology such as screen readers access and use [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  DevTools is a suite of web developer tools built into the Microsoft Edge browser.  
+This article helps users who primarily rely on assistive technology such as screen readers use [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  DevTools is a suite of web developer tools built into the Microsoft Edge browser.  
 
 For DevTools features related to improving the accessibility of a web page, see [Accessibility-testing features in DevTools][DevtoolsAccessibilityReference] and [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md).
 
@@ -31,43 +31,43 @@ The accessibility of DevTools is a work-in-progress.  Some tools and tabs work b
 
 ## Overview  
 
-DevTools is divided into a series of tools (or _panels_) and tabs, which are organized into an [ARIA tablist][W3CWaiAriaTablist].  
+DevTools is divided into a series of tools.  (Within the **Command Menu**, tools are referred to as _panels_.)  Tools are organized into an [ARIA tablist][W3CWaiAriaTablist] on the main toolbar and on the drawer toolbar.
 
-For example:  
+The following are examples of tools:
 
 *   The **Elements** tool lets you [view and change DOM nodes][DevtoolsDomIndexNavigateDomTreeKeyboard] or [CSS][DevtoolsCssIndex].  
-*   The Console tool lets you read JavaScript logs and live-edit objects.  For more information, navigate to [Use the Console][DevtoolsConsoleIndex].
+*   The **Console** tool lets you read JavaScript logs and live-edit objects.  For more information, navigate to [Use the Console][DevtoolsConsoleIndex].
 
-Within the content area of each tool, there are a number of different tabs.  For example, the **Elements** tool contains tabs to inspect CSS styles, event listeners, the accessibility tree, and more.
+Within each tool, there are one or more sets of tabs.  For example, the **Elements** tool contains a set of tabs including **Styles**, **Event Listeners**, and **Accessibility**.
 
 ## Keyboard shortcuts  
 
-The [DevTools Keyboard Shortcuts reference][DevtoolsShortcuts] is a helpful cheatsheet.  Be sure to bookmark it and refer back to it as you explore the different panels.  
+The [DevTools Keyboard Shortcuts reference][DevtoolsShortcuts] is a helpful cheat sheet.  Be sure to bookmark it and refer back to it as you explore the different tools.
 
 ## Open DevTools  
 
 To get started, navigate to [Open Microsoft Edge DevTools][DevtoolsOpen].  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.  
 
-## Navigate between tools or tabs
+## Navigate between tools
 
 ### Navigate by keyboard  
 
-*   With DevTools open, select `Control`+`]` \(Windows, Linux\) or `Command`+`]` \(macOS\) to focus the next panel.  
-*   Select `Control`+`[` \(Windows, Linux\) or `Command`+`[` \(macOS\) to focus the previous panel.  
-*   It is also possible to use `Shift`+`Tab` to move focus into the [ARIA tablist][W3CWaiAriaTablist] of a panel and use the arrow keys to change panels, though it may be faster to use the previously mentioned shortcuts.  
+*   With DevTools open, select `Control`+`]` \(Windows, Linux\) or `Command`+`]` \(macOS\) to move focus to the next tool on the main toolbar.
+*   Select `Control`+`[` \(Windows, Linux\) or `Command`+`[` \(macOS\) to move focus to the previous tool on the main toolbar.
+*   Select `Tab` or `Shift`+`Tab` repeatedly until focus moves to the tabs of the main toolbar or drawer toolbar, and then use the arrow keys to move among the tools.
 
 **Known issues**  
 
-*   Some panels, such as the **Console** and **Performance** tools, may move focus into the panel content area as soon as each panel is activated.  This may make navigating by arrow keys difficult.  
-*   The name of the selected panel is announced, but only after it has read the focused content in the panel.  This may make it very easy to miss.  
+*   Some tools, such as the **Console** and **Performance** tools, may move focus into the tool's content area as soon as the tool is selected.  This may make navigating by arrow keys difficult.  
+*   The name of the selected tool is announced, but only after announcing the focused content in the tool.  This sequence of announcements may make it easy to miss the name of the tool.
 
 ### Navigate by Command Menu  
 
-To focus a specific panel, use the [Command Menu][DevtoolsCommandMenuIndex]:  
+To select a specific tool, use the [Command Menu][DevtoolsCommandMenuIndex].  In the Command Menu, a tool is called a _panel_.
 
 1.  With DevTools open, select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
-    The **Command Menu** is a fuzzy search autocomplete combobox.  
-1.  Type the name of the panel you want to open, then use the `Down Arrow` on the keyboard to navigate to the correct option.  
+    The **Command Menu** is a fuzzy-search autocomplete combobox.  
+1.  Type the name of a panel (tool), and then use the `Down Arrow` on the keyboard to navigate to the correct option.  
 1.  Select `Enter` to run a command.  
 
 To open the **Elements** tool:
@@ -76,15 +76,15 @@ To open the **Elements** tool:
 1.  Type `E` then `L`.  The **Panel > Show Elements** option is selected.  
 1.  Select `Enter`.  
 
-Opening a panel this way puts focus on the contents of the panel.  In the case of the **Elements** tool, focus moves into the **DOM Tree**.  
+Opening a tool this way puts focus in the content area of the tool.  In the case of the **Elements** tool, focus moves into the **DOM Tree**.
 
-## Elements panel  
+## Elements tool
 
 ### Inspect an element on the page  
 
 1.  Navigate to the element you want to inspect, using the cursor in the screen reader.  
 1.  Simulate a right-click on the element, to open the context menu.  
-1.  Choose the **Inspect** option.  This [opens the Elements panel and focuses the element in the DOM Tree][DevtoolsDomIndexViewDomNodes].  
+1.  Choose the **Inspect** option.  This [opens the Elements tool and focuses the element in the DOM Tree][DevtoolsDomIndexViewDomNodes].  
 
 The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  For an example, navigate to [Navigate the **DOM Tree** with a keyboard][DevtoolsDomIndexNavigateDomTreeKeyboard].  
 
@@ -116,12 +116,12 @@ The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  For an example,
 
 For example, when you type `h3` and select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\), the start and end tags of the `h3` element change.  
 
-## Elements tool panels  
+## Tabs in the Elements tool
 
 The **Elements** tool contains additional tabs for inspecting things like the CSS applied to an element or the relevant place in the accessibility tree.  
 
-*   With focus on a node in the **DOM Tree**, select `Tab` until you hear that the **Styles** pane is selected.  
-*   Use the `Right Arrow` to explore other available tabs.  
+*   With focus on a node in the **DOM Tree**, select `Tab` until you hear that the **Styles** tab is selected.  
+*   Use the `Right Arrow` to explore other available tabs.
 
 The **DOM Tree** turns elements with `href` attributes into focusable links, so you may need to select `Tab` more than once to reach the **Styles** pane.  
 
@@ -188,17 +188,19 @@ Select `Tab` until you reach the collection of computed styles.  These are prese
 
 *   If you use the **Filter** text field, you are no longer able to inspect styles.  
 
-### Event listeners tab  
+### Event Listeners tab  
 
-To inspect the event listeners that are applied to an element, select the **Elements** tool and then select the **Event Listeners** tab to the right of the **Styles** tab.
+To inspect the event listeners that are applied to an element, select the **Elements** tool and then select the **Event Listeners** tab (grouped with the **Styles** tab).
 
 #### Explore event listeners  
 
 Event listeners are presented as an [ARIA tree][W3CWaiAriaTree].  You can use the arrow keys to navigate them.  A screen reader announces the name of the DOM object that the event listener is attached to, as well as the file name where the event listener is defined and the line number.  
 
-### Accessibility panel  
+### Accessibility tab
 
-With focus on the **Accessibility** panel, select `Tab` to move focus inside and explore the contents.  On the [Accessibility panel][DevtoolsAccessibilityReferencePanel] there are controls for exploring the accessibility tree, the ARIA attributes applied to an element, and the computed accessibility properties.  
+Select the `Tab` key to move around within the **Accessibility** tab in the **Elements** tool.
+
+The **Accessibility** tab is near the **Styles** tab. On the Accessibility tab, there are controls for exploring the accessibility tree, the ARIA attributes applied to an element, and the computed accessibility properties.  For more information, navigate to [Testing accessibility using the Accessibility tab][DevtoolsAccessibilityTab].
 
 #### Accessibility Tree  
 
@@ -237,8 +239,8 @@ To run a new audit, use `Shift`+`Tab` to exit the report and select the **Genera
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
-[DevtoolsAccessibilityReference]: ./reference.md "Accessibility-testing features in DevTools | Microsoft Docs"  
-[DevtoolsAccessibilityReferencePanel]: accessibility-tab.md "Testing accessibility using the Accessibility tab | Microsoft Docs"  
+[DevtoolsAccessibilityReference]: reference.md "Accessibility-testing features in DevTools | Microsoft Docs"  
+[DevtoolsAccessibilityTab]: accessibility-tab.md "Testing accessibility using the Accessibility tab | Microsoft Docs"  
 [MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsConsoleIndex]: ../console/index.md "Console Overview | Microsoft Docs"  

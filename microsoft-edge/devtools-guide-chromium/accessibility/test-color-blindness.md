@@ -30,10 +30,10 @@ But you can't expect all of your users to experience these colors as intended.  
 
 1.  In the **Emulate vision deficiencies** dropdown list, select **Protanopia**.  _Protanopia_ is reduced sensitivity to red light, making it hard to differentiate green, red, and yellow.
 
-:::image type="complex" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="Showing the document as someone with protanopia would see it" lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
-    Showing the document as someone with protanopia would see it
-:::image-end:::
-
+    :::image type="complex" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="Showing the document as someone with protanopia would see it" lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
+        Showing the document as someone with protanopia would see it
+    :::image-end:::
+    
 1.  In the **Rendering** tool, below **Emulate vision deficiencies**, select **No emulation**.
 
 
