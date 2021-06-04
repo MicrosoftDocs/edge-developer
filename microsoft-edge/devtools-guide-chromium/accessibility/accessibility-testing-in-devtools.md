@@ -297,28 +297,28 @@ If you select the **Donate** button, the **Inspect** tool takes you to the **Ele
 </div>
 ```
 
-This use of `label` and `input` elements is valid, and the label functions.  The `input` textbox is also keyboard-accessible.  The rest of the form's markup are `div` elements, which are easy to style but have no semantic meaning.
+The use of the `label` and `input` elements are valid, which result in the label working as intended and the `input` textbox is keyboard-accessible.  The rest of the form uses `div` elements, which are easy to style but have no semantic meaning.
 
-The form's functionality is created with JavaScript, which you can view by using the **Event Listeners** tab in the **Elements** tool.  The **Event Listeners** tab shows where the JavaScript is that makes the form work:
+Next, let's analyze the form's JavaScript functionality. In **Elements**, select the **Event Listeners** tab to analyze the form's JavaScript.
 
 :::image type="complex" source="../media/a11y-testing-event-handlers-on-button.msft.png" alt-text="The Event Listeners tab, showing where the JavaScript is that makes the form work" lightbox="../media/a11y-testing-event-handlers-on-button.msft.png":::
     The **Event** Listeners tab, showing where the JavaScript is that makes the form work
 :::image-end:::
 
-On the **Event Listeners** tab, select the `buttons.js:18` link to open the **Sources** tool, and then inspect the applied JavaScript that's responsible for the form's functionality:
+On the **Event Listeners** tab, select the `buttons.js:18` link to open the **Sources** tool, and then inspect the JavaScript that's responsible for the form's functionality.
 
 :::image type="complex" source="../media/a11y-testing-form-handling-javascript.msft.png" alt-text="The JavaScript that's responsible for the donation form's functionality, shown in the Sources tool" lightbox="../media/a11y-testing-form-handling-javascript.msft.png":::
     The JavaScript that's responsible for the donation form's functionality, shown in the **Sources** tool
 :::image-end:::
 
-Using a `click` event to read the buttons is good practice, because a `click` event fires both on mouse pointer and keyboard interaction.  However, because a `div` element isn't keyboard-accessible, and this **Donate** button is implemented as a `div` element, this JavaScript functionality only executes when using a mouse.
+Using `click` events with buttons is recommended because `click` events work with both mouse pointers and keyboards.  However, because a `div` element isn't keyboard-accessible, and the **Donate** button is implemented as a `div` element, this JavaScript only runs when a mouse is used.
 
-This use of `div` as a button is a classic example where some extra JavaScript was necessary to create functionality that `button` elements would have provided natively, and simulating their functionality ended up as an inaccessible experience.
+Using a `div` as a button is a classic example where extra JavaScript is needed to create functionality that `button` elements provide. As a result, this leads to an experience that is inaccessible.
 
 
 ### Checking the Accessibility Tree for keyboard and screen reader support
 
-Using the **Inspect** tool to individually check each element of the page can become time-consuming.  An alternative way is to use the **Accessibility** tab to navigate the page's **Accessibility Tree**.  The Accessibility Tree indicates what information the page provides to assistive technology such as screen readers.
+Using the **Inspect** tool to individually check each element on the page is time-consuming.  Instead, use the **Accessibility** tab to navigate the page's **Accessibility Tree**.  The Accessibility Tree indicates what information the page provides to assistive technology such as screen readers.
 
 :::image type="complex" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="Donation form button in the Accessibility Tree" lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
     Donation form button in the **Accessibility Tree**
@@ -329,17 +329,17 @@ Any element in the tree that doesn't have a name, or that has a role of `generic
 For detailed walkthrough steps, navigate to [Check the Accessibility Tree for keyboard and screen reader support](test-accessibility-tree.md).
 
 
-### Analyzing the order of keyboard access through sections of the page
+### Analyzing the order of keyboard access to sections of the page
 
-Another issue is the strange tabbing order within the page.  Keyboard users reach the sidebar navigation menu only after tabbing through all the **More** links throughout the length of the page.  The sidebar navigation menu is meant to be a shortcut to reach deep into the page content.  But you have to go through the entire page before you reach the sidebar navigation menu, so this menu becomes less useful.
+Another issue is the unclear tab order on the page.  Keyboard users reach the sidebar navigation menu only after tabbing through all the **More** links throughout the entire page.  In this example, the sidebar navigation menu is intended to be a shortcut to different sections of that page.  This tab order leads to a poor user experience. 
 
-The reason for the confusing `Tab` key order after the **More** buttons is that the order of keyboard access is determined by the source order of the document.  The order of keyboard access can also be modified by defining a `tabindex` attribute on any element, to take that element out of the source order.
+The reason for the confusing `Tab` order is that it is determined by the source order of the document.  The tab order can also be modified by using the `tabindex` attribute on an element which takes that element out of the default source order.
 
 In the source code of the document, the sidebar navigation menu appears after the main content of the page.  The sidebar navigation menu appears above the main content of the page only because the sidebar navigation menu has been positioned using CSS.
 
 The source order of a document is important for assistive technology, and can be different than the order in which elements appear on the rendered page.  Using CSS, you can re-order page elements in a visual way, but that doesn't mean that assistive technology such as screen readers would represent page elements in the same order as that CSS.
 
-You can test the order of page elements by using the **Source Order Viewer** in the **Accessibility** tab.  Scroll down all the way and select the **Show Source Order** checkbox.  Now when you navigate the DOM tree in the **Elements** tool, such as selecting the `header` element, numeric overlays are shown on sections of the rendered page, showing you the source order without having to look at the page source.
+You can test the order of page elements by using the **Source Order Viewer** in the **Accessibility** tab.  Scroll down all the way and select the **Show Source Order** checkbox.  Now, when you navigate the DOM tree in the **Elements** tool, such as selecting the `header` element, numeric overlays are displayed on sections of the rendered page which represent the source order. 
 
 :::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="Turning on the Source Order Viewer shows the order of the elements in the source code as numeric overlays on the page" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
     Turning on the **Source Order Viewer** shows the order of the elements in the source code as numeric overlays on the page
@@ -348,7 +348,7 @@ You can test the order of page elements by using the **Source Order Viewer** in 
 For detailed walkthrough steps, navigate to [Test keyboard support using the Source Order Viewer](test-tab-key-source-order-viewer.md).
 
 
-## Testing contrast of text colors during various states
+## Testing contrast of text colors in various states
 
 The **Inspect** tool reports accessibility issues for one state at a time.  To specify which state to inspect, on the **Styles** tab, select **\:hov (Toggle Element State)**, as follows.
 
@@ -368,19 +368,19 @@ An element that doesn't have enough contrast is flagged by a warning in the **In
     An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay
 :::image-end:::
 
-However, using the **Inspect** tool this way isn't enough testing.  The elements on the page could have different states and you need to test those states, too.  For example, if you hover the mouse over the sidebar navigation menu, you get a rather involved animation that changes the color of the links:
+Using the **Inspect** tool in this way doesn't fully test your elements. Elements on the page may have different states, all of which need to be tested. For example, if you hover the mouse over the sidebar navigation menu, notice the animation which changes the color of the links.
 
 :::image type="complex" source="../media/a11y-testing-hover.msft.png" alt-text="The menu item showing different colors when the mouse pointer is over it" lightbox="../media/a11y-testing-hover.msft.png":::
     The menu item showing different colors when the mouse pointer is over it
 :::image-end:::
 
-### Verify accessibility during all states of elements, such as contrast during hover
+### Verify accessibility of all states of elements, such as the contrast on hover
 
-When you turn on the **Inspect** tool, you can't reach the `hover` state of the **Cats** link in the sidebar navigation menu to test the contrast ratio during the `hover` state, because the `hover` state in your styles never gets triggered.  Instead, you need to simulate the state of the **Cats** menu item, by using the state simulation in the **Styles** tab.
+When using the DevTools, you'll need to simulate all states of your element because the **Inspect** tool doesn't display all states. In this example, when using the **Inspect** tool, you can't reach the `hover` state of the **Cats** link on the sidebar navigation menu to analyze the contrast ratio in a `hover` state, because the `hover` state in your styles isn't triggered.  Instead, you need to simulate the state of the **Cats** menu item, by using the state simulation in the **Styles** tab.
 
 For detailed walkthrough steps, navigate to [Verify accessibility during all states of elements](test-inspect-states.md).
 
-Turn on the **Inspect** tool and then in the rendered page, select the blue **Cats** link in the sidebar navigation menu.  The **Elements** tool opens, with the `a` element selected in the DOM tree.  If needed, in the DOM tree, navigate to the element that has a `hover` state in the CSS applied to it.  In this case, the `a` element has a `hover` state.
+Turn on the **Inspect** tool and then in the rendered page, select the blue **Cats** link in the sidebar navigation menu.  The **Elements** tool opens, with the `a` element selected in the DOM tree.  If needed, in the DOM tree, navigate to the element that has a `hover` state in the CSS.  In this case, the `a` element has a `hover` state.
 
 :::image type="complex" source="../media/a11y-testing-inspecting-link-to-hover.msft.png" alt-text="Inspecting the element that has a hover state in the Elements tool" lightbox="../media/a11y-testing-inspecting-link-to-hover.msft.png":::
     Inspecting the element that has a hover state in the Elements tool
@@ -407,13 +407,13 @@ After the simulated state is applied, you can use the **Inspect** tool again to 
 State simulation is also a good way to check whether you considered different user needs.  For this sidebar navigation menu, you can find out that simulating `:focus` makes no difference to the look and feel, and that is a problem, as we've experienced earlier when using the keyboard to navigate the page.
 
 
-## Using the Rendering tool to test accessibility for visual impairment
+## Use the Rendering tool to test accessibility for visual impairment
 
-### Checking for contrast issues with dark theme and light theme
+### Check contrast issues with dark theme and light themes
 
-Another consideration when it comes to color accessibility is that there could be different themes that you need to test for contrast issues.  Most operating systems these days come with a dark mode and a light mode.  You can react to this setting in your CSS by using a CSS media query.
+Another consideration when it comes to color accessibility is that there could be different themes that you need to test for contrast issues.  Most operating systems have a dark mode and a light mode.  Your webpage can react to these different settings using CSS media queries.
 
-This demo page has a light and a dark theme.  You can test both themes without having to change your operating system, by using [Dark or light color scheme simulation][DevToolsColorSchemeSimulation] in the **Rendering** tool.  So far, this article looked at the demo page with an operating system using a dark theme setting.  If we instead simulate selecting a light scheme and then refresh the page, the **Issues** tool shows six color contrast problems instead of two.
+This demo page has a light and a dark theme.  You can test both themes without changing your operating system, by using [Dark or light color scheme simulation][DevToolsColorSchemeSimulation] in the **Rendering** tool.  So far, this article looked at the demo page with an operating system using a dark theme setting.  If we instead simulate a light scheme and then refresh the page, the **Issues** tool shows six color contrast problems instead of two.
 
 For detailed walkthrough steps, navigate to [Check for contrast issues with dark theme and light theme](test-dark-mode.md).
 
@@ -439,23 +439,22 @@ The entire **Donation status** section of the page is unreadable in light mode, 
 ### Verify that the webpage is usable by people with color blindness
 
 The different donation states use color (red, green, yellow) as the only means to differentiate between the states of funding.  You can't expect all of your users to experience these colors as intended, though.  If you use the [vision deficiencies emulation][DevToolsVisionDeficiencies] feature of DevTools, you can find out that this is not good enough, by simulating how people with different vision would perceive your design.
-
+For detailed walkthrough steps, navigate to [Verify that the page is usable by people with color blindness](test-color-blindness.md).
 :::image type="complex" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="Showing the page as someone with protanopia (red color blindness) would see it" lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
     Showing the page as if someone with protanopia (red color blindness) would see it
 :::image-end:::
 
-For detailed walkthrough steps, navigate to [Verify that the page is usable by people with color blindness](test-color-blindness.md).
 
 
 ### Verify that the webpage is usable with blurred vision
 
 Another interesting feature of the **Rendering** tool is that you can simulate blurred vision.  If we choose the **Blurred vision** option from the **Emulate vision deficiencies** dropdown list, we can see that the drop shadow on the text in the upper menu makes it hard to read the menu items.
+For detailed walkthrough steps, navigate to [Verify that the page is usable with blurred vision](test-blurred-vision.md).
 
 :::image type="complex" source="../media/a11y-testing-simulating-blur.msft.png" alt-text="Simulating a blurred page can reveal accessibility issues" lightbox="../media/a11y-testing-simulating-blur.msft.png":::
     Simulating a blurred page can reveal accessibility issues
 :::image-end:::
 
-For detailed walkthrough steps, navigate to [Verify that the page is usable with blurred vision](test-blurred-vision.md).
 
 
 ### Verify that the page is usable with UI animation turned off (reduced motion)
@@ -477,14 +476,14 @@ For detailed walkthrough steps, navigate to [Verify that the page is usable with
 
 We've covered quite a few tools you can use to make sure that you catch accessibility problems in your products.  Such tools range from automated checks and manual detail checks to simulation of different states and environments.  These tools are summarized in [Accessibility-testing features in DevTools](reference.md).  Automated tools can't find all the problems in a product, because many of the accessibility barriers show up only during interactive use.
 
-None of these tools can replace a proper testing round of your products with people using assistive technologies and following a plan to check for all the required tests. At Microsoft, we're using the [Assessments][AccessibilityInsightsAssessment] feature of [Accessibility Insights][AccessibilityInsights] for that.  We have a defined process that each product needs to go through before it ends up in the hands of end users.  Additional checks are needed, such as:
+None of these tools can replace a proper round of testing your products with people that use assistive technologies and following a plan to check for all the required tests. You can also use the [Assessments][AccessibilityInsightsAssessment] feature of [Accessibility Insights][AccessibilityInsights].  You may need to perform additional checks such as:
 
 * Testing when zoomed-in.
 * Testing with screen readers.
 * Testing with voice recognition.
 * Testing in high-contrast mode.
 
-That said, we hope that the tools and processes shown here are a way to get you started and avoid the most evident mistakes.  Another excellent way to find out if you're doing things wrong during development is to use the [webhint extension for Visual Studio Code][WebhintForCode].  This extension flags the readily detectable accessibility problems in your source code and gives insights on how to fix them.
+Another way to find out what to do to improve your web product is to use the [webhint extension for Visual Studio Code][WebhintForCode].  This extension flags the readily detectable accessibility problems in your source code and gives insights on how to fix them.
 
 :::image type="complex" source="../media/a11y-testing-webhint-in-vs-code.msft.png" alt-text="Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem" lightbox="../media/a11y-testing-webhint-in-vs-code.msft.png":::
     Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem

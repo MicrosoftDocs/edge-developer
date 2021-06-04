@@ -17,8 +17,8 @@ To test your webpages for accessibility, first make a checklist of accessibility
 | Verify that images have alt text | **Issues** tool > **Accessibility** section of report | [Verify that images have alt text](test-issues-tool.md#verify-that-images-have-alt-text) |
 | Verify keyboard support | **Inspect** tool > **Accessibility** section of overlay | [Use the Inspect tool to detect accessibility issues by hovering over the webpage](test-inspect-tool.md) |
 | Verify keyboard support | `Tab`, `Shift+Tab`, and `Enter` keys | [Check for keyboard support by using the Tab and Enter keys](test-tab-enter-keys.md) |
-| Verify keyboard support: verify that focus is indicated | **Inspect** tool; **Styles** tab; and **Sources** tool | [Analyze the lack of indication of keyboard focus in a sidebar menu](test-analyze-no-focus-indicator.md) |
-| Verify keyboard support: verify that form buttons can be used with the keyboard | **Inspect** tool; **Elements** tool: **DOM tree**; and **Event Listeners** tab | [Analyze the lack of keyboard support in a form](test-analyze-no-keyboard-support.md) |
+| Verify keyboard support: verify that focus is indicated | **Inspect** tool, **Styles** tab, and **Sources** tool | [Analyze the lack of indication of keyboard focus in a sidebar menu](test-analyze-no-focus-indicator.md) |
+| Verify keyboard support: verify that form buttons can be used with the keyboard | **Inspect** tool, **DOM tree** in the **Elements** tool, and **Event Listeners** tab | [Analyze the lack of keyboard support in a form](test-analyze-no-keyboard-support.md) |
 | Verify keyboard support: verify `Tab` key order | **Elements** tool > **Accessibility** tab > **Source Order Viewer** | [Test keyboard support using the Source Order Viewer](test-tab-key-source-order-viewer.md) |
 | Verify that text has enough contrast (automatically, for the entire page) | **Issues** tool > **Accessibility** section of report | [Verify that text colors have enough contrast](test-issues-tool.md#verify-that-text-colors-have-enough-contrast) |
 | Verify that text has enough contrast | **Elements** tool > **Styles** tab > **Color Picker** | [Testing text-color contrast using the Color Picker](color-picker.md) |
@@ -40,7 +40,7 @@ To test your webpages for accessibility, first make a checklist of accessibility
 *   [Navigate Microsoft Edge DevTools with assistive technology][DevtoolsAccessibilityNavigation]
 *   [Accessibility testing][DevtoolsAccessibilityTest]
 *   [Accessibility principles and best practices][MDNAccessibility]
-*   [screen reader][MDNScreenReader]
+*   [Screen reader][MDNScreenReader]
 
 
 ## Getting in touch with the Microsoft Edge DevTools team  
