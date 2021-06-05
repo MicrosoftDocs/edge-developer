@@ -14,7 +14,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Check text color contrast in the default state by using the **Inspect** tool.  The **Inspect** tool's information overlay on the webpage has an **Accessibility** section that includes **Contrast** information.
 
-**To check text-color contrast in the default state by using the Inspect tool's information overlay:**
+To check text-color contrast in the default state using the Inspect tool's information overlay, perform the following steps.
 
 <!-- Inspect tool -->
 For elements that have text, the **Inspect** tool's information overlay shows the following:
@@ -24,7 +24,7 @@ For elements that have text, the **Inspect** tool's information overlay shows th
 
 In some cases, contrast is affected by setting the browser to light theme or dark theme.
 
-As an example, in the demo page, the blue links of the sidebar navigation menu have enough contrast, but the green **Dogs** link in the **Donation status** section does not have enough contrast.  Inspect those elements using the **Inspect** tool, as follows:
+As an example, on the demo page, the blue links of the sidebar navigation menu have enough contrast, but the green **Dogs** link in the **Donation status** section does not have enough contrast.  Review those elements using the **Inspect** tool, as follows:
 
 1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
 
@@ -43,9 +43,9 @@ As an example, in the demo page, the blue links of the sidebar navigation menu h
     :::image-end:::
 
 
-## Ways to inspect text-color contrast in DevTools
+## Different options to inspect text-color contrast in DevTools
 
-There are several DevTools features for inspecting text-color contrast:
+Use the following DevTools features to inspect text-color contrast.
 
 *  Use the **Inspect** tool (as an information overlay on the webpage) to check whether an individual page element has enough text-color contrast.  The **Inspect** tool's information overlay includes an **Accessibility** section that has a **Contrast** information row.  The **Inspect** tool only shows text-contrast information for the current state.  This approach is described in the current article.
 

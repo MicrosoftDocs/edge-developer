@@ -306,8 +306,8 @@ The use of the `label` and `input` elements are valid, which result in the label
 
 Next, let's analyze the form's JavaScript functionality. In **Elements**, select the **Event Listeners** tab to analyze the form's JavaScript.
 
-:::image type="complex" source="../media/a11y-testing-event-handlers-on-button.msft.png" alt-text="The Event Listeners tab, showing where the JavaScript is that makes the form work" lightbox="../media/a11y-testing-event-handlers-on-button.msft.png":::
-    The **Event** Listeners tab, showing where the JavaScript is that makes the form work
+:::image type="complex" source="../media/a11y-testing-event-handlers-on-button.msft.png" alt-text="The Event Listeners tab, with a link to the JavaScript for the form" lightbox="../media/a11y-testing-event-handlers-on-button.msft.png":::
+    The **Event Listeners** tab, with a link to the JavaScript for the form
 :::image-end:::
 
 On the **Event Listeners** tab, select the `buttons.js:18` link to open the **Sources** tool, and then inspect the JavaScript that's responsible for the form's functionality.
@@ -412,7 +412,7 @@ After the simulated state is applied, you can use the **Inspect** tool again to 
     Testing the contrast of an element in a simulated hover state
 :::image-end:::
 
-State simulation is also a good way to check whether you considered different user needs.  For this sidebar navigation menu, you can find out that simulating `:focus` makes no difference to the look and feel, and that is a problem, as we've experienced earlier when using the keyboard to navigate the page.
+State simulation is also a good way to check whether you considered different user needs.  For the sidebar navigation menu, you can detect that the `:focus` state has a contrast issue.
 
 
 ## Use the Rendering tool to test accessibility for visual impairment
@@ -425,11 +425,6 @@ This demo page has a light and a dark theme.  You can test both themes without c
 
 For detailed walkthrough steps, navigate to [Check for contrast issues with dark theme and light theme](test-dark-mode.md).
 
-Use the **Rendering** tool to simulate light mode and trigger the other theme of the page:
-
-:::image type="complex" source="../media/a11y-testing-simulating-light-mode.msft.png" alt-text="Using the Rendering tool to simulate light mode and trigger the other theme of the page" lightbox="../media/a11y-testing-simulating-light-mode.msft.png":::
-    Using the **Rendering** tool to simulate light mode and trigger the other theme of the page
-:::image-end:::
 
 When switching to a light theme in the **Rendering** tool, notice the following items.
 
