@@ -36,8 +36,8 @@ When the **Inspect** tool is active, when you hover over any element within the 
 
 1.  Hover over any element in the rendered demo webpage.  The **Inspect** tool shows an information overlay below the element within the rendered webpage.
 
-    :::image type="complex" source="../media/a11y-testing-basics-inspector-overlay.msft.png" alt-text="The Inspect tool, showing the element's area as a multicolor overlay, and showing the element's details as a large information overlay" lightbox="../media/a11y-testing-basics-inspector-overlay.msft.png":::
-        The **Inspect** tool, showing the element's area as a multicolor overlay, and showing the element's details as a large information overlay
+    :::image type="complex" source="../media/a11y-testing-basics-inspector-overlay.msft.png" alt-text="The Inspect tool, showing the element's layout as a multicolor overlay, and showing the element's details as a large information overlay" lightbox="../media/a11y-testing-basics-inspector-overlay.msft.png":::
+        The **Inspect** tool, showing the element's layout as a multicolor overlay, and showing the element's details as a large information overlay
     :::image-end:::
 
 The bottom part of the **Inspect** overlay in the webpage has an **Accessibility** section, containing the following:
@@ -67,7 +67,7 @@ The top part of the **Inspect** overlay in the webpage (above the **Accessibilit
 *   Margin and padding, in pixels.
 
 
-## Using the Inspect tool for color highlighting of nested regions by hovering over the webpage
+## Identify nested regions using color highlighting
 
 <!-- general info about the Inspect tool, not particularly focused on accessibility -->
 
@@ -79,7 +79,13 @@ In addition to the information overlay when you hover over the webpage, the **In
 
 1.  Hover over different parts of the rendered demo webpage.  Each element in the webpage now has a multicolor overlay over its entire area, to show any nested regions that the element contains.
 
-1.  For example, hover over the left margin of the **Cats** section.  DevTools highlights several rectangular portions of the **Cats** section with different colors, showing the visual outcome of the CSS flexbox definitions.
+1.  For example, hover over the left margin of the **Cats** section.  The **Inspect** tool highlights several rectangular portions of the **Cats** section with different colors, showing the layout that results from the CSS flexbox definitions.
+
+:::image type="complex" source="../media/inspect-tool-flexbox-overlay.msft.png" alt-text="Multicolor flexbox overlay and information overlay when using the Inspect tool" lightbox="../media/inspect-tool-flexbox-overlay.msft.png":::
+    Multicolor flexbox overlay and information overlay when using the **Inspect** tool
+:::image-end:::
+
+To configure the grid overlay or flexbox overlay, in the **Elements** tool, select the **Layout** tab.  For more information, navigate to [Inspect CSS Grid](..\css\grid.md).
 
 
 ## Using the Inspect tool to hover over the webpage to highlight the DOM and CSS

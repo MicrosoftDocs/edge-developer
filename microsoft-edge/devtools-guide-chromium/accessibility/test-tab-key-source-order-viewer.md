@@ -17,7 +17,7 @@ To ensure that the document has a logical order, you can use the **Source Order 
 
 ## Analyzing the order of keyboard access through sections of the page
 
-The accessibility-testing demo webpage has a counterintuitive tabbing order, where keyboard users access the sidebar navigation menu only after tabbing through all the **More** links.  The sidebar navigation menu is meant to be a shortcut to reach deep into the page content.  But because you need to go through the entire page before you reach the sidebar navigation menu, that navigation menu is ineffective for keyboard users.
+The [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] has a counterintuitive tabbing order, where keyboard users access the sidebar navigation menu only after tabbing through all the **More** links.  The sidebar navigation menu is meant to be a shortcut to reach deep into the page content.  But because you need to go through the entire page before you reach the sidebar navigation menu, that navigation menu is ineffective for keyboard users.
 
 The `Tab` key order on the demo page is:
 1. The **Search** field, then the **go** button for the **Search** field.

@@ -51,12 +51,12 @@ There are several DevTools features for inspecting text-color contrast:
 
 *  The **Issues** tool automatically reports any color-contrast issues for the entire webpage, when text and background color don't contrast enough.  This approach is described in [Verify that text colors have enough contrast](test-issues-tool.md#verify-that-text-colors-have-enough-contrast).
 
-*  Emulate a non-default state, such as the `hover` state, by using **Toggle Element State** in the **Styles** pane, described in [Verify accessibility during all states of elements](test-inspect-states.md).
+*  Emulate a non-default state, such as the `hover` state, by using **Toggle Element State** in the **Styles** pane, described in [Verify accessibility of all states of elements](test-inspect-states.md).
 
 
 ## See also
 
-*  [Verify accessibility during all states of elements][DevtoolsAccessibilityTestInspectStates]
+*  [Verify accessibility of all states of elements][DevtoolsAccessibilityTestInspectStates]
 *  [Use the Inspect tool to detect accessibility issues by hovering over the webpage](test-inspect-tool.md)
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
@@ -67,5 +67,5 @@ There are several DevTools features for inspecting text-color contrast:
 
 
 <!-- links -->
-[DevtoolsAccessibilityTestInspectStates]: test-inspect-states.md "Verify accessibility during all states of elements | Microsoft Docs"
+[DevtoolsAccessibilityTestInspectStates]: test-inspect-states.md "Verify accessibility of all states of elements | Microsoft Docs"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

@@ -115,7 +115,7 @@
                       href: devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md
                 - name: Styles tab
                   items:
-                    - name: Verify accessibility during all states of elements
+                    - name: Verify accessibility of all states of elements
                       href: devtools-guide-chromium/accessibility/test-inspect-states.md
                 - name: Rendering tool
                   items:

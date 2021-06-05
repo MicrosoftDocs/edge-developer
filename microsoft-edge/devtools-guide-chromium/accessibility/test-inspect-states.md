@@ -23,18 +23,21 @@ First, we show why state simulation is necessary while using the **Inspect** too
 
 In addition to the automatic color-contrast tests in the **Issues** tool, you can also use the **Inspect** tool to check whether individual page elements have enough contrast.  If contrast information is available, the **Inspect** overlay shows the contrast ratio and a checkbox item.  A green check mark icon indicates there's enough contrast, and a yellow alert icon indicates not enough contrast.
 
-For example, the links in the sidebar navigation menu have enough contrast, but the green **Dogs** list item in the **Donation status** section doesn't.
+For example, the links in the sidebar navigation menu have enough contrast.  But the green **Dogs** list item in the **Donation status** section doesn't have enough contrast, and so is flagged by a warning in the **Inspect** overlay.
 
-:::image type="complex" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="The links in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay" lightbox="../media/a11y-testing-enough-contrast.msft.png":::
-    The links in the sidebar navigation menu have enough contrast, as shown in the **Inspect** overlay
-:::image-end:::
-
-An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay:
-
-:::image type="complex" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="An element that doesn't have enough contrast is flagged by a warning in the Inspect overlay" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
-    An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay
-:::image-end:::
-
+:::row:::
+    :::column:::
+        :::image type="complex" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="The links in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay" lightbox="../media/a11y-testing-enough-contrast.msft.png":::
+            The links in the sidebar navigation menu have enough contrast, as shown in the **Inspect** overlay
+        :::image-end:::
+    :::column-end:::
+    :::column:::
+        :::image type="complex" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="An element that doesn't have enough contrast is flagged by a warning in the Inspect overlay" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
+            An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay
+        :::image-end:::
+    :::column-end:::
+:::row-end:::
+        
 
 ## Hovering when the Inspect tool is active doesn't show the text-color contrast for the hover state
 

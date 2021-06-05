@@ -38,6 +38,8 @@ For detailed walkthrough steps, navigate to [View the Accessibility section of t
 
 The first warning displayed is `Form elements must have labels: Element has no title attribute. Element has no placeholder attribute`.  When you expand this section and then select the **Open in Elements** link, the **Elements** tool opens, with the element highlighted in the DOM tree.  The **Styles** tab shows the CSS that's applied to the element.
 
+For detailed walkthrough steps, navigate to [Verify that input fields have labels][DevtoolsAccessibilityTestIssuesToolCheckFieldsLabels].
+
 :::image type="complex" source="../media/a11y-testing-inspect-problematic-element.msft.png" alt-text="Elements tool showing the problematic HTML after selecting the link in the Issues tool" lightbox="../media/a11y-testing-inspect-problematic-element.msft.png":::
     Elements tool showing the problematic HTML after selecting the link in the Issues tool
 :::image-end:::
@@ -60,8 +62,6 @@ You can also select the explanatory links in the **Issues** tool to get this inf
     Links in the **Issues** tool pointing to more in-depth information about the issue
 :::image-end:::
 
-For detailed walkthrough steps, navigate to [Verify that input fields have labels][DevtoolsAccessibilityTestIssuesToolCheckFieldsLabels].
-
 
 ### Automatically checking that images have alt text
 
@@ -82,7 +82,7 @@ The **Issues** tool also reports when two elements on the page don't have enough
     Contrast problems reported in the **Issues** tool
 :::image-end:::
 
-The Issues tool provides detailed explanations of the warning.  When you drill down, you get a list of the elements that have this issue.  In the **Issues** tool, selecting a link that points to an element will highlight that element on the rendered page.
+The **Issues** tool provides detailed explanations of the warning.  When you drill down, you get a list of the elements that have this issue.  In the **Issues** tool, selecting a link that points to an element will highlight that element on the rendered page.
 
 :::image type="complex" source="../media/a11y-testing-element-with-contrast-issues.msft.png" alt-text="Element in the page highlighted after selecting the link to it" lightbox="../media/a11y-testing-element-with-contrast-issues.msft.png":::
     Element in the page highlighted after selecting the link to it
@@ -97,6 +97,8 @@ For detailed walkthrough steps, navigate to [Verify that text colors have enough
 
 An important part of accessibility is to make sure that your web products work well on a narrow viewport. Many users need to zoom the page to be able to use it, and this means that there is not much space left. When there is not enough space, your multi-column layout should turn into a single-column layout, with content placed in an understandable order. This means placing the most important content at the top of the page, and placing additional content further down the page.
 
+By making the browser window narrow and using the arrow keys to scroll the page, you can see that the top navigation bar of the demo page has some accessibility issues.  The top navigation bar overlaps the **Search** form, as shown in the previous image, and that issue needs to be fixed.
+
 You can simulate a narrow viewport by resizing the browser window, but a better way to test the responsiveness of your design is to use the **Device Emulation** tool.  Here are some features of the **Device Emulation** tool that help you find accessibility issues of any website:
 
 *  Without resizing the browser window, resize the page and test whether your [CSS media queries][DevToolsMediaQueries] trigger a change in layout.
@@ -105,8 +107,6 @@ You can simulate a narrow viewport by resizing the browser window, but a better 
 *  Test how your product behaves on unreliable connections or when the user is offline.  Showing the most important interactions to a user on a slow connection is also an accessibility consideration.
 
 To learn more about the **Device Emulation** tool, navigate to [Emulate mobile devices in Microsoft Edge DevTools][DevToolsDeviceModeIndex].
-
-By making the window narrow and using the arrow keys to scroll the page, you can see that the top navigation bar of the demo page has some usability issues.  The top navigation bar overlaps the **Search** form, and that issue needs to be fixed.
 
 
 ### Wavy underlines in the DOM tree indicate automatically detected issues
@@ -133,39 +133,44 @@ On the demo page, there are additional issues that automated testing can't detec
 
 One of those issues is the donation form.  When you use a mouse, you can click the different options to donate money.  But when you try to use the keyboard to access the donation form, nothing happens. To solve this issue, you need to use the **Inspect** tool.
 
-
 :::image type="complex" source="../media/a11y-testing-basics-donation-form-issue.msft.png" alt-text="Donation form on the demo page is highlighted" lightbox="../media/a11y-testing-basics-donation-form-issue.msft.png":::
     Donation form on the demo page is highlighted
 :::image-end:::
 
 
-
 ## Using the Inspect tool to detect accessibility issues
 
-Use the **Inspect** tool to detect accessibility issues by hovering over parts of the webpage.  The **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) tool is in the top-left corner of DevTools.  Turn on the **Inspect** tool by selecting the **Inspect** tool button.
+Use the **Inspect** tool to detect accessibility issues by hovering over parts of the webpage.  The **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) tool is in the top-left corner of DevTools.  Turn on the Inspect tool by selecting the **Inspect** tool button.
 
 :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="Turn on the Inspect tool by selecting the Inspect tool button" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
     Turn on the **Inspect** tool by selecting the **Inspect** tool button
 :::image-end:::
 
-After you select the **Inspect** tool button, you can move your pointer over the rendered page and highlight any element.  DevTools shows element dimensions as a color overlay, and shows element details as an information overlay:
+After you select the **Inspect** tool button, you can move your pointer over any element on the rendered page.  The Inspect tool shows the element's layout as a multicolored flexbox overlay, and shows element details as an information overlay similar to a tooltip.
 
-:::image type="complex" source="../media/a11y-testing-basics-inspector-overlay.msft.png" alt-text="DevTools showing element dimensions as a color overlay, and element details as an information overlay" lightbox="../media/a11y-testing-basics-inspector-overlay.msft.png":::
-    DevTools showing element dimensions as a color overlay, and element details as an information overlay
+:::image type="complex" source="../media/inspect-tool-flexbox-overlay.msft.png" alt-text="Multicolor flexbox overlay and information overlay when using the Inspect tool" lightbox="../media/inspect-tool-flexbox-overlay.msft.png":::
+    Multicolor flexbox overlay and information overlay when using the **Inspect** tool
 :::image-end:::
 
-The **Inspect** tool shows a colored overlay of the layout properties of the element, including any nested regions.  For detailed steps, navigate to [Using the Inspect tool for color highlighting of nested regions by hovering over the webpage][DevtoolsAccessibilityTestInspectToolColorHighlighting].
+The Inspect tool's **Accessibility** section includes a **Contrast** line, when applicable.
 
-The **Inspect** tool also displays an information overlay.  The upper section of the **Inspect** overlay displays the following information:
+:::image type="complex" source="../media/a11y-testing-basics-inspector-overlay.msft.png" alt-text="The Inspect tool's Accessibility section includes a Contrast line, when applicable" lightbox="../media/a11y-testing-basics-inspector-overlay.msft.png":::
+    The Inspect tool's **Accessibility** section includes a **Contrast** line, when applicable
+:::image-end:::
 
-* Layout positioning; if the element is positioned using a flexbox or grid, you see an appropriate icon \(![Grid layout icon](../media/grid-icon.msft.png)\).
+For detailed walkthrough steps, navigate to [Identify nested regions using color highlighting][DevtoolsAccessibilityTestInspectToolColorHighlighting].
+<!-- = test-inspect-tool.md##identify-nested-regions-using-color-highlighting -->
+
+The upper section of the **Inspect** tool's information overlay displays the following information:
+
+* Layout type; if the element is positioned using a flexbox or grid, you see an appropriate icon \(![Grid layout icon](../media/grid-icon.msft.png)\).
 * The name of the element, such as **a**, **h1**, or **div**.
 * The dimensions of the element, in pixels.
 * The color, as a color swatch (a small, colored square) and as a formatted value (such as `#336699`).
 * Font information (size and font families).
 * Margin and padding, in pixels.
 
-For detailed walkthrough steps, navigate to [Use the Inspect tool to detect accessibility issues by hovering over the webpage][DevtoolsAccessibilityTestInspectTool].
+The **Accessibility** part of the **Inspect** overlay is described in the following section.
 
 
 ### Checking individual elements for text contrast, screen reader text, and keyboard support
@@ -184,6 +189,7 @@ The **Accessibility** section of the **Inspect** overlay contains the following 
     *   A gray circle with diagonal line indicates that the element isn't keyboard-focusable.
 
 For detailed walkthrough steps, navigate to [Check individual elements for text contrast, screen reader text, and keyboard support][DevtoolsAccessibilityTestInspectToolIndivElems].
+<!-- = test-inspect-tool.md#check-individual-elements-for-text-contrast-screen-reader-text-and-keyboard-support -->
 
 
 ### Using the Inspect tool to hover over the webpage to highlight the DOM and CSS
@@ -196,7 +202,8 @@ When using the **Inspect** tool, selecting an element on the rendered page opens
 
 When using the **Inspect** tool, as you hover over different parts of the rendered page with **Elements** open, you'll notice that the DOM tree automatically refreshes.
 
-For detailed walkthrough steps, navigate to [Using the Inspect tool to hover over the webpage to highlight the DOM and CSS][DevtoolsAccessibilityTestInspectToolDomCss].
+For detailed walkthrough steps, navigate to [Use the Inspect tool to hover over the webpage to highlight the DOM and CSS][DevtoolsAccessibilityTestInspectToolDomCss].
+<!-- = test-inspect-tool.md#use-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css -->
 
 
 ## Verify keyboard support by using the Tab and Enter keys
@@ -270,7 +277,7 @@ For detailed walkthrough steps, navigate to [Analyze the lack of indication of k
 
 The buttons on the donation form are implemented using the `div` element, which is not recognized by automated testing tools as a control on a form.
 
-To investigate this, you can use the **Inspect** tool to hover over the donation form's buttons.  The result is that none of them are keyboard-accessible, as indicated by the gray ring.  The buttons of the donation form also have no name, and have a role of `generic` (representing `div` or `span` elements), which means they aren't accessible to assistive technology.
+To investigate this, you can use the **Inspect** tool to hover over the donation form's buttons.  The result is that none of them are keyboard-accessible, as indicated by the gray ring on the **Keyboard-focusable** line of the information overlay.  As shown in the **Name** and **Role** lines of the information overlay, the buttons of the donation form also have no name, and have a role of `generic` (representing `div` or `span` elements), which means they aren't accessible to assistive technology.
 
 :::image type="complex" source="../media/a11y-testing-donation-button-info.msft.png" alt-text="Inspecting the buttons of the form shows that they aren't keyboard-accessible" lightbox="../media/a11y-testing-donation-button-info.msft.png":::
     Inspecting the buttons of the form shows that they aren't keyboard-accessible
@@ -348,23 +355,26 @@ For detailed walkthrough steps, navigate to [Test keyboard support using the Sou
 
 ## Testing contrast of text colors in various states
 
-The **Inspect** tool reports accessibility issues for one state at a time.  To specify which state to inspect, on the **Styles** tab, select **\:hov (Toggle Element State)**, as follows.
+The **Inspect** tool reports accessibility issues for one state at a time.  First, we'll describe the limitation of using the Inspect tool to view only the static state of a page element.  Then we'll explain how to inspect other states of a page element, by selecting **\:hov (Toggle Element State)** on the **Styles** tab.
 
 ### Checking text color contrast in the default state
 
 In addition to the automatic color-contrast tests in the **Issues** tool, you can also use the **Inspect** tool to check whether individual page elements have enough contrast.  If contrast information is available, the **Inspect** overlay shows the contrast ratio and a checkbox item.  A green check mark icon indicates there's enough contrast, and a yellow alert icon indicates not enough contrast.
 
-For example, the links in the sidebar navigation menu have enough contrast, but the green **Dogs** list item in the **Donation status** section doesn't.
+For example, the links in the sidebar navigation menu have enough contrast, but the green **Dogs** list item in the **Donation status** section doesn't.  An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay.
 
-:::image type="complex" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="The links in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay" lightbox="../media/a11y-testing-enough-contrast.msft.png":::
-    The links in the sidebar navigation menu have enough contrast, as shown in the **Inspect** overlay
-:::image-end:::
-
-An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay:
-
-:::image type="complex" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="An element that doesn't have enough contrast is flagged by a warning in the Inspect overlay" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
-    An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay
-:::image-end:::
+:::row:::
+    :::column:::
+        :::image type="complex" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="The links in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay" lightbox="../media/a11y-testing-enough-contrast.msft.png":::
+            The links in the sidebar navigation menu have enough contrast, as shown in the **Inspect** overlay
+        :::image-end:::
+    :::column-end:::
+    :::column:::
+        :::image type="complex" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="An element that doesn't have enough contrast is flagged by a warning in the Inspect overlay" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
+            An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay
+        :::image-end:::
+    :::column-end:::
+:::row-end:::
 
 Using the **Inspect** tool in this way doesn't fully test your elements. Elements on the page may have different states, all of which need to be tested. For example, if you hover the mouse over the sidebar navigation menu, notice the animation which changes the color of the links.
 
@@ -374,9 +384,9 @@ Using the **Inspect** tool in this way doesn't fully test your elements. Element
 
 ### Verify accessibility of all states of elements, such as the contrast on hover
 
-When using the DevTools, you'll need to simulate all states of your element because the **Inspect** tool doesn't display all states. In this example, when using the **Inspect** tool, you can't reach the `hover` state of the **Cats** link on the sidebar navigation menu to analyze the contrast ratio in a `hover` state, because the `hover` state in your styles isn't triggered.  Instead, you need to simulate the state of the **Cats** menu item, by using the state simulation in the **Styles** tab.
+When using the DevTools, you'll need to simulate all states of your element, because the **Inspect** tool doesn't display information for all states at the same time. In this example, when using the **Inspect** tool, you can't reach the `hover` state of the **Cats** link on the sidebar navigation menu to analyze the contrast ratio in a `hover` state, because the `hover` state in your styles isn't triggered.  Instead, you need to simulate the state of the **Cats** menu item, by using the state simulation in the **Styles** tab.
 
-For detailed walkthrough steps, navigate to [Verify accessibility during all states of elements](test-inspect-states.md).
+For detailed walkthrough steps, navigate to [Verify accessibility of all states of elements](test-inspect-states.md).
 
 Turn on the **Inspect** tool and then in the rendered page, select the blue **Cats** link in the sidebar navigation menu.  The **Elements** tool opens, with the `a` element selected in the DOM tree.  If needed, in the DOM tree, navigate to the element that has a `hover` state in the CSS.  In this case, the `a` element has a `hover` state.
 
@@ -421,17 +431,23 @@ Use the **Rendering** tool to simulate light mode and trigger the other theme of
     Using the **Rendering** tool to simulate light mode and trigger the other theme of the page
 :::image-end:::
 
-New contrast issues are detected because of the change to light theme:
+When switching to a light theme in the **Rendering** tool, notice the following items.
 
-:::image type="complex" source="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png" alt-text="New contrast issues detected because of the change to light theme" lightbox="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png":::
-    New contrast issues detected because of the change to light theme
-:::image-end:::
+*  New contrast issues are detected because of the change to light theme.
+*  The entire **Donation Status** section of the page is unreadable in light mode.
 
-The entire **Donation status** section of the page is unreadable in light mode, and needs to change.  But insufficient contrast is only one of the issues with that part of the design.
-
-:::image type="complex" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="The donation status items flagged as contrast issues when in light mode" lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
-    The donation status items flagged as contrast issues when in light mode
-:::image-end:::
+:::row:::
+    :::column:::
+        :::image type="complex" source="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png" alt-text="New contrast issues detected because of the change to light theme" lightbox="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png":::
+            New contrast issues detected because of the change to light theme
+        :::image-end:::
+    :::column-end:::
+    :::column:::
+        :::image type="complex" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="The donation status items flagged as contrast issues when in light mode" lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
+            The donation status items flagged as contrast issues when in light mode
+        :::image-end:::
+    :::column-end:::
+:::row-end:::
 
 
 ### Verify that the webpage is usable by people with color blindness
@@ -454,7 +470,6 @@ For detailed walkthrough steps, navigate to [Verify that the page is usable with
 :::image-end:::
 
 
-
 ### Verify that the page is usable with UI animation turned off (reduced motion)
 
 Another setting that operating systems come with these days are a way to turn off animations.  Animations can help the usability of a product, but they can also cause a lot of problems, ranging from confusion to nausea. That's why your products should not show animations to users who turned them off in the operating system.  By using a CSS media query, you can check whether the user wants to see animations, and turn them off accordingly.  And, much like with dark and light mode, there is a way to [simulate reduced motion using DevTools][DevToolsReducedMotion].
@@ -465,7 +480,15 @@ In the demo page here, turning off animations will stop the smooth scrolling of 
     Simulating reduced motion and the CSS that makes sure that smooth scrolling only happens when the user wants it
 :::image-end:::
 
-The animation of the top navigation bar, sidebar navigation menu, and **More** links still run even when the user doesn't want to see animations.  So this is yet another thing that needs to be fixed.
+```css
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+```
+
+This CSS media query conditionally runs the "smooth scrolling" animation.  But the animation of the top navigation bar, sidebar navigation menu, and **More** links still run, even when the user doesn't want to see animations. Those other animations need to be conditionally run, such as by adding additional media queries.
 
 For detailed walkthrough steps, navigate to [Verify that the page is usable with UI animation turned off](test-reduced-ui-motion.md).
 
@@ -503,15 +526,15 @@ We're constantly working on new accessibility features for DevTools.  If there i
 [DevToolsIssuesTool]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"
 [DevToolsReducedMotion]: ./reduced-motion-simulation.md "Reduced motion simulation | Microsoft Docs"
 [DevToolsVisionDeficiencies]: ./emulate-vision-deficiencies.md "Emulate vision deficiencies | Microsoft Docs"
+<!-- links into test-issues-tool.md -->
 [DevToolsAccessibilityTestIssuesToolViewAccSection]: test-issues-tool.md#view-the-accessibility-section-of-the-issues-tool "View the Accessibility section of the Issues tool - Automatically test a webpage for accessibility issues | Microsoft Docs"
 [DevtoolsAccessibilityTestIssuesToolCheckFieldsLabels]: test-issues-tool.md#verify-that-input-fields-have-labels "Verify that input fields have labels - Automatically test a webpage for accessibility issues | Microsoft Docs" 
 [DevtoolsAccessibilityTestIssuesToolCheckAltText]: test-issues-tool.md#verify-that-images-have-alt-text "Verify that images have alt text - Automatically test a webpage for accessibility issues | Microsoft Docs "
 [DevtoolsAccessibilityTestIssuesToolCheckContrast]: test-issues-tool.md#verify-that-text-colors-have-enough-contrast "Verify that text colors have enough contrast - Automatically test a webpage for accessibility issues | Microsoft Docs"
-[DevtoolsAccessibilityTestInspectToolColorHighlighting]: test-inspect-tool.md#using-the-inspect-tool-for-color-highlighting-of-nested-regions-by-hovering-over-the-webpage "Using the Inspect tool for color highlighting of nested regions by hovering over the webpage - Use the Inspect tool to detect accessibility issues by hovering over the webpage | Microsoft Docs"
-[DevtoolsAccessibilityTestInspectTool]: test-inspect-tool.md "Use the Inspect tool to detect accessibility issues by hovering over the webpage | Microsoft Docs"
+<!-- links into test-inspect-tool.md -->
+[DevtoolsAccessibilityTestInspectToolColorHighlighting]: test-inspect-tool.md#identify-nested-regions-using-color-highlighting "Identify nested regions using color highlighting - Use the Inspect tool to detect accessibility issues by hovering over the webpage | Microsoft Docs"
 [DevtoolsAccessibilityTestInspectToolIndivElems]: test-inspect-tool.md#check-individual-elements-for-text-contrast-screen-reader-text-and-keyboard-support "Check individual elements for text contrast, screen reader text, and keyboard support - Use the Inspect tool to detect accessibility issues by hovering over the webpage | Microsoft Docs"
-[DevtoolsAccessibilityTestInspectToolDomCss]: test-inspect-tool.md#using-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css "Using the Inspect tool to hover over the webpage to highlight the DOM and CSS - Use the Inspect tool to detect accessibility issues by hovering over the webpage | Microsoft Docs"
-
+[DevtoolsAccessibilityTestInspectToolDomCss]: test-inspect-tool.md#use-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css "Use the Inspect tool to hover over the webpage to highlight the DOM and CSS - Use the Inspect tool to detect accessibility issues by hovering over the webpage | Microsoft Docs"
 <!-- external links -->
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"
 [W3CContrastRatio]: https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio "contrast ratio | W3C"
