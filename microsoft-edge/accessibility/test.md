@@ -1,7 +1,7 @@
 ---
 ms.assetid: 737ac54c-ad89-4b3f-bbe2-4e4169d3f364
 description: Check out tools and testing procedures that help evaluate a website's accessibility.
-title: Accessibility - Test
+title: Accessibility testing
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
@@ -9,11 +9,17 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
 ---
-# Accessibility Testing  
+# Accessibility testing  
 
-Accessibility testing is a form of usability testing to verify your website is usable by all people. Check out the W3C [Accessibility Testing](https://www.w3.org/wiki/Accessibility_testing) page for information on when testing should be done, testing requirements, who should test your site, etc.
+Accessibility testing is a form of usability testing to verify your website is usable by all people. Check out the W3C page [Evaluating Web Accessibility Overview](https://www.w3.org/WAI/test-evaluate) for information on when testing should be done, testing requirements, who should test your site, etc.
 
-Use the following tools and testing producers to evaluate your website for accessibility:
+Use the following tools and testing procedures to evaluate your website for accessibility:
+
+#### Accessibility testing in DevTools
+
+*   [Accessibility-testing features in DevTools][DevtoolsAccessibilityReference] - An accessibility-testing checklist and which features of DevTools to use for each test.
+
+*   [Overview of accessibility testing using DevTools][DevtoolsAccessibilityAccessibilitytestingindevtools] - A walkthrough of using various DevTools features to test for accessibility problems.
 
 #### [Accessibility Evaluation Resources](https://www.w3.org/WAI/eval/Overview.html)  
 
@@ -46,3 +52,8 @@ A Visual Studio extension that performs accessibility checks on any ASP.NET web 
 #### [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/index.html)  
 
 A list of web accessibility evaluation tools to help determine if websites meet accessibility guidelines.
+
+<!-- links: -->
+
+[DevtoolsAccessibilityAccessibilitytestingindevtools]: ../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md "Overview of accessibility testing using DevTools | Microsoft Docs"
+[DevtoolsAccessibilityReference]: ../devtools-guide-chromium/accessibility/reference.md "Accessibility-testing features in DevTools | Microsoft Docs"
