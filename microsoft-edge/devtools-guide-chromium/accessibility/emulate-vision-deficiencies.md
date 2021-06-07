@@ -3,14 +3,14 @@ description: Emulate vision deficiencies in Microsoft Edge DevTools.
 title: Emulate vision deficiencies in Microsoft Edge DevTools (color blindness)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2021
+ms.date: 05/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Emulate vision deficiencies  
 
-To better meet the needs of your users with [color vision deficiency][ColorblindawarenessMain] \(color blindness\), [Microsoft Edge DevTools][DevtoolsIndex] allow you to simulate specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories.  
+To better meet the needs of your users with [color vision deficiency][ColorblindawarenessMain] \(color blindness\) or blurred vision, [Microsoft Edge DevTools][DevtoolsIndex] allow you to simulate blurred vision and specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories.  
 
 | Color vision deficiency | Details |  
 |:--- |:--- |  
@@ -20,24 +20,25 @@ To better meet the needs of your users with [color vision deficiency][Colorblind
 | Tritanopia | The user is unable to perceive any blue light. |  
 | Achromatopsia | The user is unable to perceive any color, which reduces all color to a shade of grey. |  
 
-## Navigate to the Rendering Tools  
+
+## Navigate to the Rendering tool
 
 To simulate a vision deficiency being applied for your web product, open the [Rendering Tools][DevtoolsRenderingToolsIndex].  
 
-1.  To open the Rendering Tools, choose the `...` menu item in the toolbar  
+1.  To open the Rendering tool, choose the `...` menu item in the toolbar  
 1.  Choose **More tools**  
 1.  Choose **Rendering**  
     
-    :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Opening the Rendering Tools" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
-       Opening the **Rendering Tools**  
+    :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Opening the Rendering tool" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
+       Opening the **Rendering** tool
     :::image-end:::  
     
 The **Rendering** menu appears in the drawer.  
 
 1.  Scroll down to the `Emulate vision deficiencies` menu item and choose the drop-down menu to display the options.  
     
-    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="The Emulate Vision Deficiencies menu on the Rendering drawer" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
-       The **Emulate vision deficiencies** menu on the **Rendering** drawer  
+    :::image type="complex" source="../media/accessibility-emulate-vision-menu.msft.png" alt-text="The Emulate Vision Deficiencies menu on the Rendering tool" lightbox="../media/accessibility-emulate-vision-menu.msft.png":::
+       The **Emulate vision deficiencies** menu on the **Rendering** tool
     :::image-end:::  
     
 1.  Choose an option.  
@@ -50,17 +51,18 @@ The **Rendering** menu appears in the drawer.
     
     :::row:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Display using **Blurred Vision** simulation" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
-             Display using **Blurred Vision** simulation  
+          :::image type="complex" source="../media/accessibility-blurred-vision-emulation.msft.png" alt-text="Display using Blurred Vision simulation" lightbox="../media/accessibility-blurred-vision-emulation.msft.png":::
+             Display using **Blurred vision** simulation  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
-          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Display using **Achromatopsia** simulation" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
+          :::image type="complex" source="../media/accessibility-achromatopsia-emulation.msft.png" alt-text="Display using Achromatopsia simulation" lightbox="../media/accessibility-achromatopsia-emulation.msft.png":::
              Display using **Achromatopsia** simulation 
           :::image-end:::  
        :::column-end:::
     :::row-end:::
     
+
 ## Use the Command Menu  
 
 You may also use **Command Menu** to access the different simulations.  
@@ -80,8 +82,13 @@ You may also use **Command Menu** to access the different simulations.
 > [!IMPORTANT]
 > The **Emulate vision deficiencies** tools simulate approximations of how a person with each deficiency may see your product.  Each person is different, therefore vision deficiencies vary in severity from person to person.  To better meet the needs of your users, avoid any color combination that may be an issue.  The **Emulate vision deficiencies** tools are not a full accessibility assessment of your product.  Instead, the **Emulate vision deficiencies** tools should  give you a good first step to avoid problems.  
 
-<!-- links -->  
 
+## See also
+
+* [Verify that the page is usable with blurred vision](test-blurred-vision.md)
+
+
+<!-- links -->  
 [DevToolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analyze runtime performance | Microsoft Docs"  
 
