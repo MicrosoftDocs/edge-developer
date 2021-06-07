@@ -3,7 +3,7 @@ description: Check that webpages are usable by people with color blindness using
 title: Verify that the page is usable by people with color blindness
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/13/2021
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

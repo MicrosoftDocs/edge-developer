@@ -3,7 +3,7 @@ description: Testing text-color contrast using the Color Picker.
 title: Test text-color contrast using the Color Picker
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/13/2021
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
