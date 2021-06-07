@@ -3,7 +3,7 @@ description: Analyzing the lack of keyboard support on a form that uses the div 
 title: Analyze keyboard support on forms using the DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/13/2021
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools

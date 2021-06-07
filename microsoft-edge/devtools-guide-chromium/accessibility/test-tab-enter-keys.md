@@ -3,7 +3,7 @@ description: Check for keyboard support by using the Tab and Enter keys.
 title: Check for keyboard support by using the Tab and Enter keys
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/13/2021
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
