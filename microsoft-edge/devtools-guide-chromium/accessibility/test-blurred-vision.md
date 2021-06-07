@@ -3,7 +3,7 @@ description: To verify that a webpage is usable with blurred vision, in the Rend
 title: Verify that the page is usable with blurred vision
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/13/2021
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
