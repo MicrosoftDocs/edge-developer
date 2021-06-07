@@ -48,5 +48,5 @@ Any element in the tree that doesn't have a name, or has a role of `generic` (su
 
 
 <!-- links -->
-[DevtoolsAccessibilityAccessibilityTabViewTree]: accessibility-tab.md#view-the-position-of-an-element-in-the-accessibility-tree "View the position of an element in the Accessibility Tree - Testing accessibility using the Accessibility tab | Microsoft Docs"
+[DevtoolsAccessibilityAccessibilityTabViewTree]: accessibility-tab.md#view-the-position-of-an-element-in-the-accessibility-tree "View the position of an element in the Accessibility Tree - Test accessibility using the Accessibility tab | Microsoft Docs"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

@@ -1,6 +1,6 @@
 ---
 description: Testing accessibility using Lighthouse from within DevTools.
-title: Testing accessibility using Lighthouse
+title: Test accessibility using Lighthouse
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/13/2021
@@ -23,12 +23,12 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
 
-# Testing accessibility using Lighthouse
+# Test accessibility using Lighthouse
 
 You can use Lighthouse from within DevTools to audit the accessibility of a page and generate a report. You can use the Lighthouse tool to determine:
 
 *   Whether a page is properly marked up for screen readers.  
-*   Whether the text elements on a page have sufficient contrast ratios using the Color Picker. For more information, navigate to [Testing text-color contrast using the Color Picker](color-picker.md).   
+*   Whether the text elements on a page have sufficient contrast ratios using the Color Picker. For more information, navigate to [Test text-color contrast using the Color Picker](color-picker.md).   
 
 > [!NOTE]
 > The **Lighthouse** tool provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.  

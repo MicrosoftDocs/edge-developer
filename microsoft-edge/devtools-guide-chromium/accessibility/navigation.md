@@ -200,7 +200,7 @@ Event listeners are presented as an [ARIA tree][W3CWaiAriaTree].  You can use th
 
 Select the `Tab` key to move around within the **Accessibility** tab in the **Elements** tool.
 
-The **Accessibility** tab is near the **Styles** tab. On the Accessibility tab, there are controls for exploring the accessibility tree, the ARIA attributes applied to an element, and the computed accessibility properties.  For more information, navigate to [Testing accessibility using the Accessibility tab][DevtoolsAccessibilityTab].
+The **Accessibility** tab is near the **Styles** tab. On the Accessibility tab, there are controls for exploring the accessibility tree, the ARIA attributes applied to an element, and the computed accessibility properties.  For more information, navigate to [Test accessibility using the Accessibility tab][DevtoolsAccessibilityTab].
 
 #### Accessibility Tree  
 
@@ -240,7 +240,7 @@ To run a new audit, use `Shift`+`Tab` to exit the report and select the **Genera
 
 <!-- links -->  
 [DevtoolsAccessibilityReference]: reference.md "Accessibility-testing features in DevTools | Microsoft Docs"  
-[DevtoolsAccessibilityTab]: accessibility-tab.md "Testing accessibility using the Accessibility tab | Microsoft Docs"  
+[DevtoolsAccessibilityTab]: accessibility-tab.md "Test accessibility using the Accessibility tab | Microsoft Docs"  
 [MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsConsoleIndex]: ../console/index.md "Console Overview | Microsoft Docs"  

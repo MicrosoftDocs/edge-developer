@@ -1,6 +1,6 @@
 ---
 description: Testing accessibility using the Accessibility tab.
-title: Testing accessibility using the Accessibility tab
+title: Test accessibility using the Accessibility tab
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/13/2021
@@ -22,7 +22,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-# Testing accessibility using the Accessibility tab
+# Test accessibility using the Accessibility tab
 
 The **Accessibility** tab is where you view the accessibility tree, ARIA attributes, and computed accessibility properties of DOM nodes.  
 

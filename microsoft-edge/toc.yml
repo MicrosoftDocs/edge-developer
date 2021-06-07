@@ -113,10 +113,14 @@
                       href: devtools-guide-chromium/accessibility/test-accessibility-tree.md
                     - name: Test keyboard support using the Source Order Viewer
                       href: devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md
+                    - name: Test accessibility using the Accessibility tab
+                      href: devtools-guide-chromium/accessibility/accessibility-tab.md
                 - name: Styles tab
                   items:
                     - name: Verify accessibility of all states of elements
                       href: devtools-guide-chromium/accessibility/test-inspect-states.md
+                    - name: Test text-color contrast using the Color Picker
+                      href: devtools-guide-chromium/accessibility/color-picker.md
                 - name: Rendering tool
                   items:
                     - name: Check for contrast issues with dark theme and light theme
@@ -127,12 +131,8 @@
                       href: devtools-guide-chromium/accessibility/test-blurred-vision.md
                     - name: Verify that the page is usable with UI animation turned off
                       href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
-                - name: Testing accessibility using Lighthouse
+                - name: Test accessibility using Lighthouse
                   href: devtools-guide-chromium/accessibility/lighthouse.md
-                - name: Testing accessibility using the Accessibility tab
-                  href: devtools-guide-chromium/accessibility/accessibility-tab.md
-                - name: Testing text-color contrast using the Color Picker
-                  href: devtools-guide-chromium/accessibility/color-picker.md
                 - name: Navigate DevTools with assistive technology
                   href: devtools-guide-chromium/accessibility/navigation.md
                 - name: Track which element has focus

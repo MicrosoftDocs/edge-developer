@@ -1,6 +1,6 @@
 ---
 description: Testing text-color contrast using the Color Picker.
-title: Testing text-color contrast using the Color Picker
+title: Test text-color contrast using the Color Picker
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/13/2021
@@ -22,13 +22,13 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-# Testing text-color contrast using the Color Picker
+# Test text-color contrast using the Color Picker
 
 People with low vision may not see areas that are very bright or very dark.  Everything tends to appear at about the same level of brightness, which makes it hard to distinguish outlines and edges.  
 
 Contrast ratio measures the difference in brightness between the foreground and background of text.  If your text has a low contrast ratio, then people with low vision may experience your site as a blank screen.  
 
-In DevTools, one way to view the contrast ratio of a text element is to use the Color Picker, in the DOM tree in the **Elements** tool.  The Color Picker helps you verify that your text meets recommended contrast ratio levels.
+In DevTools, one way to view the contrast ratio of a text element is to use the Color Picker, from the **Styles** tab.  The Color Picker helps you verify that your text meets recommended contrast ratio levels.
 
 **To check the text-color contrast using the Color Picker:**
 
@@ -45,10 +45,10 @@ In DevTools, one way to view the contrast ratio of a text element is to use the 
        The `color` property of the element  
     :::image-end:::  
     
-1.  Examine the **Contrast Ratio** section of the Color Picker.  One checkmark means that the element meets the [minimum recommendation][W3CContrastMinimum].  Two checkmarks means that it meets the [enhanced recommendation][W3CContrastEnhanced].  
+1.  Examine the **Contrast Ratio** section of the Color Picker.  One check mark means that the element meets the [minimum recommendation][W3CContrastMinimum].  Two check marks means that it meets the [enhanced recommendation][W3CContrastEnhanced].  
     
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="The Contrast Ratio section of the Color Picker shows 2 checkmarks and a value of 13.97" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
-       The **Contrast Ratio** section of the Color Picker shows 2 checkmarks and a value of `13.97`  
+    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="The Contrast Ratio section of the Color Picker shows 2 check marks and a value of 13.97" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
+       The **Contrast Ratio** section of the Color Picker shows 2 check marks and a value of `13.97`  
     :::image-end:::  
     
 1.  For more information, select the **Contrast ratio** section to expand it.  In the visual picker at the top of the Color Picker, two lines appear, running across the visual picker, along with a circle for the current color.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color does not meet recommendations, then anything on the same side also does not meet recommendations.  
