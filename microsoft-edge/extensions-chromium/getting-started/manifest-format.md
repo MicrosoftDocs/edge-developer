@@ -1,9 +1,9 @@
 ---
-description: Learn about the format of the manifest file in an extension package
+description: Learn about the format of the manifest file in an extension package.
 title: Manifest file format
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/02/2021
+ms.date: 06/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions, mv2, mv3, manifest
@@ -11,26 +11,31 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 # Manifest file format
 
-Every extension has a JSON-formatted manifest file, named `manifest.json`, that provides important information. The manifest file is the blueprint of your extension and includes the version of your extension, the title, permissions needed for the extension to run, and so on.
+Every extension for Microsoft Edge (Chromium) has a JSON-formatted manifest file, named `manifest.json`.  The manifest file is the blueprint of your extension.  The manifest file includes information such as:
 
-## Field summary
+*  The version number of the extension.
+*  The title of the extension.
+*  The permissions that are needed for the extension to run.
 
-The following code shows the supported manifest fields for extensions for a MV3 package.
+The format for `manifest.json` for extensions is moving from Manifest V2 to Manifest V3.  Both formats are shown here.  To migrate a Manifest V2 extension to Manifest V3, navigate to [Prepare to update your extensions from Manifest v2 to v3][MigrateToMV3].
+
+
+## Format of manifest\.json for extensions using Manifest V3
+
+The following pseudocode shows the fields that are supported in `manifest.json` for extensions, for a Manifest V3 package.
 
 ```json
 {
-    // Required
+  // Required
   "manifest_version": 3,
-  "name": "My test Extension",
+  "name": "My V3 Extension",
   "version": "versionString",
-
 
   // Recommended
   "action": {...},
   "default_locale": "en",
-  "description": "A plain text description",
+  "description": "A plain-text description",
   "icons": {...},
-
 
   // Optional
   "action": ...,
@@ -38,7 +43,7 @@ The following code shows the supported manifest fields for extensions for a MV3 
   "automation": ...,
   "background": {
     // Required
-    "service_worker":
+    "service_worker": ...
   },
   "chrome_settings_overrides": {...},
   "chrome_url_overrides": {...},
@@ -98,27 +103,25 @@ The following code shows the supported manifest fields for extensions for a MV3 
 }
 ```
 
+## Format of manifest\.json for extensions using Manifest V2
 
-The following code shows the supported manifest V2 fields for extensions. To learn more about migrating your manifest v2 extension to v3, navigate to [Prepare to update your extensions from Manifest v2 to v3][MigrateToMV3]
+The following pseudocode shows the fields that are supported in `manifest.json` for extensions, for a Manifest V2 package.
 
 ```json
 {
   // Required
   "manifest_version": 2,
-  "name": "My Extension",
+  "name": "My V2 Extension",
   "version": "versionString",
-
 
   // Recommended
   "default_locale": "en",
-  "description": "A plain text description",
+  "description": "A plain-text description",
   "icons": {...},
-
 
   // Pick one (or none)
   "browser_action": {...},
   "page_action": {...},
-
 
   // Optional
   "action": ...,
@@ -163,7 +166,7 @@ The following code shows the supported manifest V2 fields for extensions. To lea
   "oauth2": ...,
   "offline_enabled": true,
   "omnibox": {
-     "keyword": "aString"
+    "keyword": "aString"
   },
   "optional_permissions": ["tabs"],
   "options_page": "options.html",
@@ -201,5 +204,4 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 
 <!-- links -->
-
-[MigrateToMV3]: ../developer-guide/migrate-your-extension-from-manifest-v2-to-v3 "Migrate your extension from Manifest V2 to V3 | Microsoft Docs"
+[MigrateToMV3]: ../developer-guide/migrate-your-extension-from-manifest-v2-to-v3 "Prepare to update your extensions from Manifest v2 to v3 | Microsoft Docs"
