@@ -33,7 +33,7 @@ The functional relationship between WebDriver, Microsoft Edge Driver, Selenium, 
 | WebDriver | A W3C standard for a platform- and language-neutral wire protocol.  This protocol allows out-of-process programs to remotely instruct the behavior of web browsers. |
 | Microsoft Edge Driver | Microsoft's implementation of the WebDriver protocol specifically for Microsoft Edge. Test authors write tests that use WebDriver commands that Microsoft Edge Driver receives. Microsoft Edge Driver is then responsible for communicating that command to the browser. |
 | Selenium | A popular WebDriver testing framework that test authors use to write end-to-end tests and automate browsers. Selenium can be used on any platform, and is available in Java, Python, C#, Ruby, and JavaScript. |
-| Internet Explorer Driver | An implementation of the WebDriver protocol specifically for Internet Explorer. This product is built by a Selenium contributor. To run legacy end-to-end tests for Internet Explorer, we recommend using Internet Explorer Driver. |
+| Internet Explorer Driver | An implementation of the WebDriver protocol specifically for Internet Explorer. This product is maintained by the Selenium project. To run legacy end-to-end tests for Internet Explorer, we recommend using Internet Explorer Driver. |
 
 The following sections describe how to get started with WebDriver for Microsoft Edge \(Chromium\).  
 
