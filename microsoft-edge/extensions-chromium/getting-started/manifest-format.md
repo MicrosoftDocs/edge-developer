@@ -210,5 +210,5 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 <!-- links -->
 [MigrateToMV3]: ../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md "Prepare to update your extensions from Manifest v2 to v3 | Microsoft Docs"
 
-[ChromeDeveloperDocsExtensionsMv3Manifest] https://developer.chrome.com/docs/extensions/mv3/manifest "Manifest file format (V3) | Chrome Developers"
-[ChromeDeveloperDocsExtensionsMv2Manifest] https://developer.chrome.com/docs/extensions/mv2/manifest "Manifest file format (V2) | Chrome Developers"
+[ChromeDeveloperDocsExtensionsMv3Manifest]: https://developer.chrome.com/docs/extensions/mv3/manifest "Manifest file format (V3) | Chrome Developers"
+[ChromeDeveloperDocsExtensionsMv2Manifest]: https://developer.chrome.com/docs/extensions/mv2/manifest "Manifest file format (V2) | Chrome Developers"
