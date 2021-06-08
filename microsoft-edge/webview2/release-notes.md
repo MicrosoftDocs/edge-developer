@@ -55,7 +55,7 @@ Release Date: June 1, 2021
 #### Promotions
 
 *   [Download API][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddDownloadstarting] is  now promoted to stable.
-*   [PinchZoom API][Webview2ReferenceWin32Icorewebview2setting5ViewWebview210902PrereleaseGetIspinchzoomenabled] is now promoted to stable.
+<!--*   [PinchZoom API][Webview2ReferenceWin32Icorewebview2setting5ViewWebview210902PrereleaseGetIspinchzoomenabled] is now promoted to stable. -->
 *   [AddFrameCreated][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddFramecreated] is now promoted to stable.
 *   [Autofill API][Webview2ReferenceWin32Icorewebview2setting4ViewWebview210902PrereleaseGetIsgeneralautofillenabled] is now promoted to stable.
     > [!NOTE]
