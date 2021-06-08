@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions, mv2, mv3, manifest
 ---
 
-# Manifest file format
+# Manifest file format for extensions
 
 Every extension for Microsoft Edge (Chromium) has a JSON-formatted manifest file, named `manifest.json`.  The manifest file is the blueprint of your extension.  The manifest file includes information such as:
 
@@ -44,7 +44,7 @@ For reference information about each field, navigate to [Manifest file format (V
   "author": ...,
   "automation": ...,
   "background": {
-    // Required
+    // If `background` is included, `service_ worker` is required
     "service_worker": ...
   },
   "chrome_settings_overrides": {...},
@@ -60,7 +60,7 @@ For reference information about each field, navigate to [Manifest file format (V
   "differential_fingerprint": ...,
   "event_rules": [{...}],
   "externally_connectable": {
-    "matches": ["*://*.example.com/*"]
+    "matches": ["*://*.contoso.com/*"]
   },
   "file_browser_handlers": [...],
   "file_system_provider_capabilities": {
@@ -123,7 +123,7 @@ For reference information about each field, navigate to [Manifest file format (V
   "description": "A plain-text description",
   "icons": {...},
 
-  // Pick one (or none)
+  // Pick one or none
   "browser_action": {...},
   "page_action": {...},
 
@@ -132,7 +132,7 @@ For reference information about each field, navigate to [Manifest file format (V
   "author": ...,
   "automation": ...,
   "background": {
-    // Recommended
+    // If `background` is included, `persistent` is recommended
     "persistent": false,
     // Optional
     "service_worker": ...
@@ -150,7 +150,7 @@ For reference information about each field, navigate to [Manifest file format (V
   "differential_fingerprint": ...,
   "event_rules": [{...}],
   "externally_connectable": {
-    "matches": ["*://*.example.com/*"]
+    "matches": ["*://*.contoso.com/*"]
   },
   "file_browser_handlers": [...],
   "file_system_provider_capabilities": {
