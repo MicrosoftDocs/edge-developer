@@ -134,7 +134,7 @@ For reference information about each field, navigate to [Manifest file format (V
   "background": {
     // If `background` is included, `persistent` is recommended
     "persistent": false,
-    // Optional
+    // If `background` is included, `service_worker` is optional
     "service_worker": ...
   },
   "chrome_settings_overrides": {...},
