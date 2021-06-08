@@ -22,7 +22,9 @@ The format for `manifest.json` for extensions is moving from Manifest V2 to Mani
 
 ## Format of manifest\.json for extensions using Manifest V3
 
-The following pseudocode shows the fields that are supported in `manifest.json` for extensions, for a Manifest V3 package.
+The following code shows the fields that are supported in `manifest.json` for extensions, for a Manifest V3 package.
+
+For reference information about each field, navigate to [Manifest file format (V3)][ChromeDeveloperDocsExtensionsMv3Manifest].
 
 ```json
 {
@@ -105,7 +107,9 @@ The following pseudocode shows the fields that are supported in `manifest.json` 
 
 ## Format of manifest\.json for extensions using Manifest V2
 
-The following pseudocode shows the fields that are supported in `manifest.json` for extensions, for a Manifest V2 package.
+The following code shows the fields that are supported in `manifest.json` for extensions, for a Manifest V2 package.
+
+For reference information about each field, navigate to [Manifest file format (V2)][ChromeDeveloperDocsExtensionsMv2Manifest].
 
 ```json
 {
@@ -205,3 +209,6 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 <!-- links -->
 [MigrateToMV3]: ../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md "Prepare to update your extensions from Manifest v2 to v3 | Microsoft Docs"
+
+[ChromeDeveloperDocsExtensionsMv3Manifest] https://developer.chrome.com/docs/extensions/mv3/manifest "Manifest file format (V3) | Chrome Developers"
+[ChromeDeveloperDocsExtensionsMv2Manifest] https://developer.chrome.com/docs/extensions/mv2/manifest "Manifest file format (V2) | Chrome Developers"
