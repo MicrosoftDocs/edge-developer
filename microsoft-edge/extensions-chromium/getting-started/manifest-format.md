@@ -204,4 +204,4 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 
 <!-- links -->
-[MigrateToMV3]: ../developer-guide/migrate-your-extension-from-manifest-v2-to-v3 "Prepare to update your extensions from Manifest v2 to v3 | Microsoft Docs"
+[MigrateToMV3]: ../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md "Prepare to update your extensions from Manifest v2 to v3 | Microsoft Docs"
