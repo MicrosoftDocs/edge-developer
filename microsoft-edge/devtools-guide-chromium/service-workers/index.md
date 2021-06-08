@@ -70,8 +70,8 @@ The **Network** tool displays the network requests that went through the service
 
 ## Sources  
 
-:::image type="complex" source="../media/sw-sources.msft.png" alt-text="DOM view" lightbox="../media/sw-sources.msft.png":::
-   DOM view  
+:::image type="complex" source="../media/sw-sources.msft.png" alt-text="DOM tree" lightbox="../media/sw-sources.msft.png":::
+   DOM tree  
 :::image-end:::  
 
 To find more stack information, set a break point in the fetch handler.  The details lead to where the resource is requested in the page script.  When the debugger pauses inside a fetch handler, a combined stack information is displayed in the panel to the right.  After that, you may move around in the stack frames.  
