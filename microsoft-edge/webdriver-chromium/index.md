@@ -368,6 +368,10 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 
 For more information, navigate to the [msedgedriver container on Docker Hub][DockerHubMsedgedriver].  
 
+## Testing Internet Explorer
+
+Even though Microsoft Edge supports IE Mode, you can't use Microsoft Edge Driver with Microsoft Edge to test sites in IE Mode.  To test sites that require Internet Explorer, use [Internet Explorer Driver][GithubSeleniumHqWikiIEDriver] with Internet Explorer.
+
 ## Next steps  
 
 For more information about WebDriver and how to write automated WebDriver tests using Selenium, navigate to the [Selenium documentation][SeleniumDocumentation].  
@@ -395,6 +399,7 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 [GithubMicrosoftEdgeSeleniumTools]: https://github.com/microsoft/edge-selenium-tools "microsoft/edge-selenium-tools | GitHub"  
 [GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases "microsoft/edge-selenium-tools | GitHub"  
 [GithubSeleniumHq]: https://github.com/SeleniumHQ/selenium "SeleniumHQ/selenium | GitHub"  
+[GithubSeleniumHqWikiIEDriver]: https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver "Internet Explorer Driver - Selenium | GitHub"
 
 [JavaScriptnpm]: https://www.npmjs.com/ "npm"  
 [JavaScriptSeleniumTools]: https://www.npmjs.com/package/@microsoft/edge-selenium-tools "@microsoft/edge-selenium-tools | npm"  
