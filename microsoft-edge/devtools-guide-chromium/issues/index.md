@@ -25,14 +25,17 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 The **Issues** tool in Microsoft Edge DevTools reduces the notification fatigue and clutter of the **Console**.  Use it to find solutions to problems detected by the browser, such as cookie issues and mixed content.  
 
-> [!NOTE]
-> In Microsoft Edge 84, the **Issues** tool supports three types of issue.  
->     
-> *   [Cookie problems][MdnDocsWebHttpHeadersSetCookieSamesite]  
-> *   [Mixed content][MdnDocsWebSecurityMixedContent]  
-> *   [COEP issues][GithubWicgCrossOriginEmbedderPolicy]
->     
-> The Microsoft Edge DevTools team plans to support more issue types in future versions of Microsoft Edge.  
+The **Issues** tool supports provides feedback in the following categories:
+
+*  Accessibility
+*  Cross-browser compatibility
+*  Performance
+*  Progressive Web Apps
+*  Security
+*  Other
+
+This feedback is provided by a number of sources, including the Chromium platform, [axe][AxeWebsite], [MDN][MDNCompat], and [webhint][webhintio].
+
 
 ## Open the Issues tool in the DevTools drawer  
 
@@ -146,15 +149,8 @@ In each feedback category, each issue marked as an **Error** appears first, foll
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
-
 [DevtoolsOpenIndex]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
-
-[GithubWicgCrossOriginEmbedderPolicy]: https://wicg.github.io/cross-origin-embedder-policy "Cross-Origin Embedder Policy | Web Incubator Community Group"  
-
 [GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "SameSite cookie tests | Glitch"  
-
-[MdnDocsWebHttpHeadersSetCookieSamesite]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite "SameSite cookies | MDN"  
-[MdnDocsWebSecurityMixedContent]: https://developer.mozilla.org/docs/Web/Security/Mixed_content "Mixed content | MDN"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
