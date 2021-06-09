@@ -255,8 +255,8 @@ additionalContent:
         # Card
         - title: Reference
           links:
-            - text: Microsoft Edge user agent string
-              url: /microsoft-edge/web-platform/user-agent-string
+            - text: How to detect Microsoft Edge in your website
+              url: /microsoft-edge/web-platform/user-agent-guidance
             - text: Platform Status
               url: https://developer.microsoft.com/microsoft-edge/platform/status
             - text: Visual Studio Code

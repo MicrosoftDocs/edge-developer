@@ -34,7 +34,11 @@ The **Issues** tool supports provides feedback in the following categories:
 *  Security
 *  Other
 
-This feedback is provided by a number of sources, including the Chromium platform, [axe][AxeWebsite], [MDN][MDNCompat], and [webhint][webhintio].
+This feedback is provided by a number of sources, including the Chromium platform, Deque axe, MDN Browser Compatibility Report, and [webhint][webhintio].  For more information, navigate to:
+*  [axe Tools Overview][DequeAxe]
+*  [Compat2021: Eliminating five top compatibility pain points on the web][MDNCompat]
+
+[MDNCompat]: https://web.dev/compat2021 "Compat2021: Eliminating five top compatibility pain points on the web | __"
 
 
 ## Open the Issues tool in the DevTools drawer  
@@ -142,8 +146,12 @@ In each feedback category, each issue marked as an **Error** appears first, foll
 
 :::image type="complex" source="../whats-new/media/2021/04/elements-issues-ordered-issues.msft.png" alt-text="The Issues tool displays sorted issues by severity" lightbox="../whats-new/media/2021/04/elements-issues-ordered-issues.msft.png":::
    The **Issues** tool displays sorted issues by severity  
-:::image-end:::  
-    
+:::image-end:::
+
+## See also
+
+* [Automatically test a webpage for accessibility issues](../accessibility/test-issues-tool.md)
+
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
@@ -151,6 +159,7 @@ In each feedback category, each issue marked as an **Error** appears first, foll
 <!-- links -->  
 [DevtoolsOpenIndex]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 [GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "SameSite cookie tests | Glitch"  
+[DequeAxe]: https://www.deque.com/axe "axe Tools Overview | Deque"
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
