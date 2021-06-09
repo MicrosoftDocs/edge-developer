@@ -351,6 +351,24 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 
 For more information, navigate to the [msedgedriver container on Docker Hub][DockerHubMsedgedriver].  
 
+## Application Guard
+
+<!-- was "Windows Defender Application Guard" renamed to "Microsoft Defender Application Guard"; are those the same thing? -->
+
+Microsoft Edge (Chromium) windows that use Windows Defender Application Guard (WDAG) cannot be automated or manipulated using WebDriver-related or Selenium-related technologies.
+The Application Guard window cannot be manipulated by using Selenium and WebDriver.
+
+Windows Defender Application Guard (WDAG) is also called Microsoft Defender Application Guard.
+
+InPrivate mode and Normal mode are supported for WebDriver automation, but Application Guard mode is not supported for WebDriver automation.
+
+When using Application Guard mode, the Microsoft Edge process is included in Windows Defender Application Guard Suite.
+
+For information about Application Guard, navigate to:
+
+*  [Microsoft Edge support for Microsoft Defender Application Guard](https://docs.microsoft.com/deployedge/microsoft-edge-security-windows-defender-application-guard)
+*  [Microsoft Defender Application Guard overview][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10]
+
 ## Next steps  
 
 For more information about WebDriver and how to write automated WebDriver tests using Selenium, navigate to the [Selenium documentation][SeleniumDocumentation].  
@@ -371,6 +389,7 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 <!--[Webdriver]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
 
 [DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability - Microsoft Edge - Policies | Microsoft Docs"  
+[WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10]: /windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview "Microsoft Defender Application Guard (Windows 10) - Windows security | Microsoft Docs"  
 
 [DockerHub]: https://hub.docker.com "Docker Hub"  
 [DockerHubMsedgedriver]: https://hub.docker.com/_/microsoft-msedge-msedgedriver?tab=description "msedgedriver | Docker hub"  
