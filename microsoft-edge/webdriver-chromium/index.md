@@ -353,7 +353,7 @@ For more information, navigate to the [msedgedriver container on Docker Hub][Doc
 
 ## Testing Internet Explorer
 
-Even though Microsoft Edge supports IE Mode, you can't use WebDriver with Microsoft Edge to test sites in IE Mode.  To test sites that require IE Mode, use Internet Explorer with [Internet Explorer Driver][GithubSeleniumHqWikiIEDriver].
+Even though Microsoft Edge supports IE Mode, you can't use Microsoft Edge Driver with Microsoft Edge to test sites in IE Mode.  To test sites that require Internet Explorer, use [Internet Explorer Driver][GithubSeleniumHqWikiIEDriver] with Internet Explorer.
 
 ## Next steps  
 
