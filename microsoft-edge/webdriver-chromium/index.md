@@ -17,8 +17,25 @@ WebDriver allows developers to create automated tests that simulate user interac
 *   Simulates user events or OS-level events more accurately.  
 *   Manages multiple windows, tabs, and webpages in a single test session.  
 *   Runs multiple sessions of Microsoft Edge on a specific machine.  
-    
-The following section describes how to get started with WebDriver for Microsoft Edge \(Chromium\).  
+
+## Relationship between WebDriver and other software
+
+To automate Microsoft Edge with WebDriver to simulate user interaction, you need 3 components:
+
+*  Microsoft Edge
+*  Microsoft Edge Driver
+*  A WebDriver testing framework, such as Selenium
+
+The functional relationship between WebDriver, Microsoft Edge Driver, Selenium, and Internet Explorer Driver is as follows.
+
+| Technology | Role |
+|---|---|
+| WebDriver | A W3C standard for a platform- and language-neutral wire protocol.  This protocol allows out-of-process programs to remotely instruct the behavior of web browsers. |
+| Microsoft Edge Driver | Microsoft's implementation of the WebDriver protocol specifically for Microsoft Edge. Test authors write tests that use WebDriver commands that Microsoft Edge Driver receives. Microsoft Edge Driver is then responsible for communicating that command to the browser. |
+| Selenium | A popular WebDriver testing framework that test authors use to write end-to-end tests and automate browsers. Selenium can be used on any platform, and is available in Java, Python, C#, Ruby, and JavaScript. |
+| Internet Explorer Driver | An implementation of the WebDriver protocol specifically for Internet Explorer. This product is maintained by the Selenium project. To run legacy end-to-end tests for Internet Explorer, we recommend using Internet Explorer Driver. |
+
+The following sections describe how to get started with WebDriver for Microsoft Edge \(Chromium\).  
 
 ## Install Microsoft Edge (Chromium)  
 
@@ -61,7 +78,7 @@ The last component you must download is a language-specific client driver to tra
 
 Selenium 4 has built-in support for Microsoft Edge (Chromium).  To install Selenium 4, navigate to [Installing Selenium libraries][SeleniumInstallingLibraries].
 
-When you use Selenium 4, you don't need to use Selenium Tools for Microsoft Edge.  Selenium Tools for Microsoft Edge is for Selenium 3 only.  If you try to use Selenium 4 with Selenium Tools for Microsoft Edge and try create a new `EdgeDriver` instance, you get the following error: `System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'`.  
+When you use Selenium 4, you don't need to use Selenium Tools for Microsoft Edge.  Selenium Tools for Microsoft Edge are for Selenium 3 only.  If you try to use Selenium 4 with Selenium Tools for Microsoft Edge and try to create a new `EdgeDriver` instance, you get the following error: `System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'`.  
 
 If you're using Selenium 4 and get this error, remove `Microsoft.Edge.SeleniumTools` from your project, and make sure you're using the official `EdgeOptions` and `EdgeDriver` classes from the `OpenQA.Selenium.Edge` namespace.
 
@@ -403,7 +420,7 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, Se
 [SeleniumDownloads]: https://selenium.dev/downloads "Downloads | Selenium"  
 [SeleniumInstallingLibraries]: https://www.selenium.dev/documentation/en/selenium_installation/installing_selenium_libraries "Installing Selenium libraries | Selenium"
 
-[SonatypeMavenRepositorySearch]: https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java/3.141.0/jar "sonatype Maven Central Repository Search | com.microsoft.edge:msedge-selenium-tools-java"
+[SonatypeMavenRepositorySearch]: https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java/3.141.0/jar "Sonatype Maven Central Repository Search | com.microsoft.edge:msedge-selenium-tools-java"
 
 [TwitterTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a tweet"  
 
