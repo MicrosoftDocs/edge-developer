@@ -3,14 +3,16 @@ description: Simulate reduced motion using developer tools.
 title: Simulate reduced motion using developer tools (CSS Prefers Reduced Motion)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/12/2021
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Reduced motion simulation  
 
-Animation in web products may be an accessibility problem.  Operating Systems deal with the problem by including an option to turn off animations to avoid user confusion and potential health related problems such as triggering seizures.  On the web, you may use the [prefers-reduced-motion][MDNPrefersReducedMotion] CSS Media Query to detect if users prefer to not run or display any animations.  In your product, you may wrap your animation code in a test to avoid animations showing up for the affected users.  
+Animation in web products may be an accessibility problem.  Operating systems deal with this problem by including an option to turn off animations to avoid user confusion and potential health-related problems, such as triggering seizures.  
+
+On a webpage, you can use the [prefers-reduced-motion][MDNPrefersReducedMotion] CSS media query to detect whether the user prefers to display any animations.  Then wrap your animation code in a test, to conditionally run animations.  
 
 ```css
 @media (prefers-reduced-motion: reduce) {
@@ -21,7 +23,9 @@ Animation in web products may be an accessibility problem.  Operating Systems de
 }
 ```  
 
-Using the [Microsoft Edge DevTools][DevtoolsIndex], you may simulate this reduced motion setting without having to change your operating system.  
+Then test your code, as follows.
+
+To simulate the operating system's reduced motion setting, without having to change your operating system setting:
 
 1.  Open the **Command Menu**.  
     1.  Select `Control`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS.  
@@ -36,10 +40,14 @@ Using the [Microsoft Edge DevTools][DevtoolsIndex], you may simulate this reduce
        Turn on or off the **prefers reduced motion** setting from **Command Menu**  
     :::image-end:::  
     
-1.  Refresh the current page to test whether your animations are turned off or visible.  
+1.  Refresh the webpage and check whether your animations run.
+
+
+## See also
+
+* [Verify that the page is usable with UI animation turned off](test-reduced-ui-motion.md) - A walkthrough using a demo page, with explanations.
+
     
 <!-- links -->  
-
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
-
 [MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "prefers-reduced-motion | MDN"  
