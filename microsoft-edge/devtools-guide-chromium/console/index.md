@@ -167,7 +167,6 @@ For more information about the **Console**, navigate to [Console reference][Devt
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
-
 [DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
 [DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "Debug errors reported in Console | Microsoft Docs"  
 [DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "Use the Console to interact with the DOM | Microsoft Docs" 
@@ -176,11 +175,8 @@ For more information about the **Console**, navigate to [Console reference][Devt
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Log messages in the Console tool | Microsoft Docs"  
 [DevtoolsConsoleReference]: ./reference.md "Console reference | Microsoft Docs"  
 [DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
-
-[DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
-
+[DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems by using the Issues tool | Microsoft Docs"  
+<!-- external links -->
 [GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html "Console messages examples: log, info, error, and warn | GitHub"  
-
 [MdnDocsWebApiWindow]: https://developer.mozilla.org/docs/Web/API/Window "Window | MDN"  
-
 [WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read–eval–print loop | Wikipedia"  
