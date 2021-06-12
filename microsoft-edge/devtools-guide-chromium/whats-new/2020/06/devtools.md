@@ -332,7 +332,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsCommandMenu]: ../../../command-menu.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turn-on-experimental-features "Turn on experimental features - Experimental features | Microsoft Docs"  
-[DevtoolsIssues]: ../../../issues/index.md "Find and fix problems by using the Issues tool | Microsoft Docs"
+[DevtoolsIssues]: ../../../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
 [DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]: ../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files "Using the Editor pane to view or edit files - Sources Panel Overview | Microsoft Docs"  
 [DevtoolsNetworkIndexLogActivity]: ../../../network/index.md#log-network-activity "Log network activity - Inspect Network Activity In Microsoft Edge DevTools | Microsoft Docs"
 

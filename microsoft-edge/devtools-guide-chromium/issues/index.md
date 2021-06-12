@@ -1,9 +1,9 @@
 ---
 description: Use the Issues tool to find and fix problems with your website.
-title: Find and fix problems by using the Issues tool
+title: Find and fix problems using the Issues tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/09/2021
+ms.date: 06/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -22,62 +22,83 @@ keywords: microsoft edge, web development, f12 tools, devtools
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 
-# Find and fix problems by using the Issues tool
+# Find and fix problems using the Issues tool
 
-The **Issues** tool automatically analyzes the current webpage and reports issues grouped by type, and provides documentation to help explain and resolve the issues.
+In Microsoft Edge DevTools, the **Issues** tool automatically analyzes the current webpage and reports issues grouped by type, and provides documentation to help explain and resolve the issues.
 
 The **Issues** tool supports provides feedback in the following categories:
-*  Accessibility
-*  Cross-browser compatibility
-*  Performance
-*  Progressive Web Apps
-*  Security
-*  Other
+*  **Accessibility**
+*  **Compatibility** (cross-browser compatibility)
+*  **Other**
+*  **Performance**
+*  **Progressive Web Apps**
+*  **Security**
 
 The feedback in the **Issues** tool is provided by several sources, including the Chromium platform, Deque axe, the MDN Browser Compatibility Report, and webhint.  For information about these sources of feedback that populate the Issues tool, navigate to:
 *  [axe Tools Overview][DequeAxe]
 *  [Compat2021: Eliminating five top compatibility pain points on the web][MDNCompat]
 *  [webhint][webhintIo]
 
+### The Issues counter and Issues tool are dynamically updated
+
+When you open a page, sometimes the Issues counter \(![Issues counter](../media/issues-counter-icon.msft.png)\) doesn't immediately appear in DevTools, but is displayed after one or two seconds.
+
+When you refresh a page, the Issues counter sometimes increases the count of issues.  The count is updated and the Issues tool lists more issues, as analysis results come in from several sources.
+
 
 ## Open the Issues tool
 
-There are several ways to open the issues tool:
-*  Select the \(![Issues counter](../media/issues-counter-icon.msft.png)\) in the upper right corner of DevTools or at the top of the **Console**.
-*  Select **Customize and control DevTools** > **More tools** > **Issues**.
-*  Press `Esc` to open the **Drawer**, at the bottom of DevTools.  By default, the Issues tool is on the Drawer.
-*  To open the Issues tool on the main toolbar instead of on the Drawer, select the **More Tools** (**+**) menu on the main toolbar, and then select **Issues**.
+The following steps walk through opening the Issues tool, using a couple of demo pages.
+*  The accessibility-testing demo page has issues in the **Accessibility**, **Compatibility**, **Performance**, and **Security** categories.
+*  The SameSite cookies demo page has issues in the **Other** and **Security** categories.
 
-The following steps walk through opening the Issues tool, using a couple of demo pages that have different categories of issues.
+To open the issues tool:
 
-1.  Navigate to a webpage that contains issues to fix.  For example, navigate to the [accessibility-testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html).
+1.  Navigate to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab or window.
 
-    Or, navigate to the [SameSite cookies demo page][GlitchSamesiteSandbox], which initially brings up a warning page, "This site has been reported as unsafe", "Hosted by samesite-sandbox.glitch.me".  Select **More information** to expand the section, and then select **Continue to the unsafe site (not recommended)**.  We won't enter information in the demo page.
+    :::image type="complex" source="../media/issues-accessibility-demo-page-initial.msft.png" alt-text="Accessibility-testing demo page, which has some issues" lightbox="../media/issues-accessibility-demo-page-initial.msft.png":::
+       Accessibility-testing demo page, which has some issues
+    :::image-end:::
+
+    Or, open the [SameSite cookies demo page][GlitchSamesiteSandbox] in a new tab or window.  This page initially brings up a warning page, which reads `This site has been reported as unsafe`, `Hosted by samesite-sandbox.glitch.me`.  Select **More information** to expand the section, and then select **Continue to the unsafe site (not recommended)**.  We won't enter information in the demo page.
 
     :::image type="complex" source="../media/samesite-demo-initial-page.msft.png" alt-text="Demo page for issues with SameSite cookies" lightbox="../media/samesite-demo-initial-page.msft.png":::
        Demo page for issues with `SameSite` cookies
     :::image-end:::
 
-1.  Select `F12` to open DevTools.  After a few seconds, the \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears, in the upper right corner of DevTools.  The number you get might be different, and the number of reported issues might change while you're at the page.
+1.  Select `F12` to open DevTools.  After a few seconds, the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears, in the upper right corner of DevTools.  The number you get might be different, and the number might change when you refresh the page.
 
     :::image type="complex" source="../media/samesite-demo-initial-page-welcome.msft.png" alt-text="SameSite cookie demo page with initial Welcome page and the Issues counter" lightbox="../media/samesite-demo-initial-page-welcome.msft.png":::
        SameSite cookie demo page with initial Welcome page and the **Issues counter**
     :::image-end:::
 
-1.  Select the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\).
-
-    For the [SameSite cookies demo page][GlitchSamesiteSandbox], issues in the **Other** and **Security** categories are listed.
+1.  Select the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\).  The Issues tool opens.  For the [SameSite cookies demo page][GlitchSamesiteSandbox], issues in the **Other** and **Security** categories are listed.
 
     :::image type="complex" source="../media/issues-tool-initial-view-samesite-page.msft.png" alt-text="The Issues tool for the SameSite demo page" lightbox="../media/issues-tool-initial-view-samesite-page.msft.png":::
        The **Issues** tool for the SameSite demo page
     :::image-end:::
 
-    For the [accessibility-testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html), issues in the **Accessibility** category are listed.
+    For the [accessibility-testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html), issues in the **Accessibility** category are listed.  If you refresh the page, additional categories of issues are shown.
+
+    :::image type="complex" source="../media/issues-tool-categories.msft.png" alt-text="Categories of issues for the accessibility demo page" lightbox="../media/issues-tool-categories.msft.png":::
+       Categories of issues for the accessibility demo page
+    :::image-end:::
+
+
+### Other ways to open the Issues tool
+
+There are several ways to open the issues tool:
+*  Select the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) in the upper right corner of DevTools or at the top of the **Console**.
+*  Select **Customize and control DevTools** > **More tools** > **Issues**.
+*  Select `Esc` to open the **Drawer** at the bottom of DevTools, and then select the **Issues** tab.
+*  On the main toolbar, select the **More Tools** (**+**) menu, and then select **Issues**.
 
 
 ## Expand entries in the Issues tool
 
-The **Issues** tool presents issues grouped into categories, with documentation for each issue.
+The **Issues** tool presents issues grouped into categories, with documentation about each issue.
+
+1.  Refresh the page, and then note the number of issues in the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\).  Depending on the browser version and the page, the count of issues might increase when you refresh the page.
 
 1.  Select an issue in the **Issues** tool to get guidance on how to fix the issue and find affected resources.
 
@@ -85,13 +106,13 @@ The **Issues** tool presents issues grouped into categories, with documentation 
        An issue expanded in the **Issues** tool
     :::image-end:::
 
-    Each displayed issue has several components:
+    The layout of the information about the issue varies, depending on the type of issue.  Each displayed issue has several components:
     *   A headline describing the issue.
     *   A description providing the context and the solution, or a link to a page that contains that information.
-    *   An **Affected Resources** section that links to resources within the appropriate DevTools context such as the **Network** tool.
+    *   An **Affected Resources** section that links to resources within the appropriate DevTools context, such as the **Elements**, **Sources**, or **Network** tool.
     *   Links to further guidance.
 
-    For the [accessibility-testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html), the **Affected Resources** section lists DOM elements, such as specific `<img>` or `<input>` elements.
+    For some issues with the [accessibility-testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html), the **Affected Resources** section lists DOM elements, such as specific `<img>` or `<input>` elements.
 
     :::image type="complex" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text="The Issues tool for the Accessibility demo page" lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
        The **Issues** tool for the Accessibility demo page
@@ -100,15 +121,17 @@ The **Issues** tool presents issues grouped into categories, with documentation 
 
 ## View issues in context of an associated tool
 
-1.  Select a resource link, to view the resource in the appropriate context within DevTools, such as the **Network** tool or the **Elements** tool.  In the SameSite cookies demo page, select `samesite-sandbox.glitch.me` under **Requests** to show the cookies that are attached to that request.  The cookies are then displayed in the **Network** tool.
+An issue in the Issues tool typically includes one or more links that open a different tool, such as **Elements**, **Network**, or **Sources**.
+
+1.  Select a resource link, to view the resource in the appropriate context within DevTools, such as the **Network** tool or the **Elements** tool.  For example, in the **Issues** tool for the SameSite cookies demo page, select `samesite-sandbox.glitch.me` under **Requests** to show the cookies that are attached to that request.  The cookies are then displayed in the **Network** tool.
 
     :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="None value in the SameSite column for the ck02 cookie in the Network tool" lightbox="../media/issues-tab-view-issue.msft.png":::
        `None` value in the **SameSite** column for the `ck02` cookie in the **Network** tool
     :::image-end:::
 
-1.  Scroll to view the item with a problem, such as the `ck02` cookie.  In the **SameSite** column, hover over the circled `i` next to **None**.  The resulting tooltip provides information similar to the **Issues** tool.
+1.  Scroll to view the item with a problem, such as the `ck02` cookie.  In the **SameSite** column, hover over the circled `i` \(![Cookie issue in Network tool](../media/network-tool-cookie-issue-icon.msft.png)\) next to **None**.  The resulting tooltip provides information similar to the **Issues** tool.
 
-    In contrast, selecting an issue for the accessibility-testing demo page opens the **Elements** tool.
+    For the accessibility-testing demo page, issues have links to open the **Elements**, **Sources**, or **Network** tool.
 
     :::image type="complex" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="Selecting an affected resource in the Issues tool for the accessibility demo page opens the Elements tool" lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
        Selecting an affected resource in the **Issues** tool for the accessibility demo page opens the **Elements** tool
@@ -117,13 +140,11 @@ The **Issues** tool presents issues grouped into categories, with documentation 
 
 ## Open issues from the DOM tree
 
-If an element has an issue, the DOM tree in the **Elements** tool shows wavy underlining under the element name.  To view the complete information about the issue:
-*   Select and hold `Shift`, and then select the wavy-underlined element.
-*   Or, right-click an element that has a wavy underline, and then select **View issues**.
+If an element has an issue, the DOM tree in the **Elements** tool shows wavy underlining under the element name.  You can either **Shift+click** the wavy-underlined element as described below, or right-click an element that has a wavy underline and then select **View issues**.
 
 To view an issue for an element that has wavy underlining in the DOM tree:
 
-1.  Open the [accessibility-testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab or window.
+1.  Open a page, such as the [accessibility-testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html), in a new tab or window.
 
 1.  Select `F12` to open DevTools, and then select the **Elements** tab.
 

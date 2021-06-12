@@ -247,7 +247,7 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 [DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "Emulate dual-screen and foldable devices in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools | Microsoft Edge"  
 [DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Edit CSS font styles and settings in the Styles pane in DevTools | Microsoft Docs"  
-[DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems by using the Issues tool | Microsoft Docs"  
+[DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"  
 [DevtoolsOpenIndex]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
 <!-- external links: -->
