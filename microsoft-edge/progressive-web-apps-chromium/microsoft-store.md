@@ -134,7 +134,7 @@ After you complete your submission, your app is reviewed, typically within betwe
 
 ### Measuring Store-installed PWA usage
 
-Starting in version 93, Microsoft Edge includes a `Referer` header with the **initial launch** of any PWA that has been installed from the Microsoft Store. 
+Starting in version 91, Microsoft Edge includes a `Referer` header with the **initial launch** of any PWA that has been installed from the Microsoft Store. 
 
 ```
 Referer: app-info://platform/microsoft-store
