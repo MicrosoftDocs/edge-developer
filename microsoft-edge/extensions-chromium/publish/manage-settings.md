@@ -26,9 +26,13 @@ In the **Account details** section, review the status and type of your account. 
 
 The **Contact info** section displays the details you provided when you created your account.  The Microsoft Edge extension team uses the contact details information to contact you about your account.  The publisher display name displayed in the Microsoft Edge Add-ons store is also displayed is the **Contact info** section.  
   
-If your contact information changes edit the **Contact info** section.  Choose **Update**, make your changes, and then choose **Save**.  You may also choose **Contact info** in the left navigation menu to open the **Contact info** section.  
+To change your contact information, navigate to **Contact info** section and edit the field.  Choose **Update**, make your changes, and then choose **Save**.  You may also choose **Contact info** in the left navigation menu to open the **Contact info** section.  
 
-If you need to change any of your contact details, the Microsoft Edge extension team may verify your account again, especially if you have a company account.  Your verification status returns to `Pending` while the review is in process.  The verification process ranges from a few days to a couple of weeks, and your company may receive a phone call from our verification partner.  
+If you need to change any of your contact details such as **Publisher display name (Company name)**, the Microsoft Edge extension team may verify your account again, especially if you have a company account.  Your verification status returns to `Pending` while the review is in process.  The verification process ranges from a few days to a couple of weeks, and your company may receive a phone call from our verification partner.
+To reflect the changes on the Edge add-ons though, you will need to submit an update, either the package update or metadata update, to your extension on Partner Center.
+
+> [!NOTE]
+> Extension URL does not change with the change in Publisher name.
 
 ## Other settings  
 

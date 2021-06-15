@@ -152,9 +152,12 @@ After you provide the information, choose **Publish** to submit your extension t
 After your submission passes certification, your extension is published in the Microsoft Edge Add-ons store.  The status of your extension in the Partner Center dashboard changes to `In the Store`.  
 
 > [!NOTE]
-> If you encounter any issues in the submission or registration process, file a support ticket on [Extensions New Support Request][ExtensionsSupportForm] or send an email to [ext_dev_support@microsoft.com][MailtoExtDevSupportMicrosoftCom].  
+> Microsoft Edge does not provide a payment mechanism for extension developers to request payments from customers. You may use a third-party payment provider that meets the guidelines mentioned in [here][DeveloperPoliciesPaidExtension].
+
 
 <!-- links -->  
+
+[DeveloperPoliciesPaidExtension]: ../store-policies/developer-policies#181-paid-features.md "Microsoft Edge Add-ons store developer policies | Microsoft Docs"
 
 [ExtensionsGettingStarted]: ../getting-started/index.md "Getting Started With Microsoft Edge (Chromium) Extensions | Microsoft Docs"  
 [DeveloperRegistration]: ./create-dev-account.md "Register as a Microsoft Edge extensions developer | Microsoft Docs"  
