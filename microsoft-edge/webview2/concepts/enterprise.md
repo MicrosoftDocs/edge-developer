@@ -1,4 +1,4 @@
-git c---
+---
 description: Understand how to manage WebView2 applications
 title: Managing WebView2 applications
 author: MSEdgeTeam
