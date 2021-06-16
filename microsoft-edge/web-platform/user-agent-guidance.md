@@ -21,7 +21,7 @@ The legacy User-Agent String was intended to improve how websites were displayed
 
 Mechanisms for browser detection with code location and identifiers:
 
-|  | Mechanism | Code Location |  
+| Option | Mechanism | Code Location |  
 |:--- |:--- |:--- | 
 | **1** | **Feature Detection** \(recommended\) | Client-side: `navigator.userAgentData.brands` JavaScript method |
 | **2** | **User-Agent Client Hints** \(accepted\) | Server-side: `Sec-CH-UA` HTTPS header |
