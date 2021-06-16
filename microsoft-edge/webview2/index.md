@@ -153,7 +153,7 @@ A General Availability \(GA\) or Preview version is available on the following p
 *   .NET 5  
 *   [WinUI 3.0][UwpToolkitsWinui3] \(Preview\)  
     
-You may run WebView2 apps on the following versions of Windows.  
+You may run WebView2 apps on the following versions of Windows desktop.  
 
 *   Windows 10  
 *   Windows 8.1  
@@ -166,6 +166,14 @@ You may run WebView2 apps on the following versions of Windows.
     
 > [!IMPORTANT]
 > \*\* WebView2 support for Windows 7 and Windows Server 2008 R2 has the same support cycle as Microsoft Edge.  For more information, navigate to [Microsoft Edge supported Operating Systems][DeployedgeMicrosoftEdgeSupportedOS].  
+
+WebView2 also works in the following Windows Embedded releases
+
+*   Windows IoT Enterprise LTSC x32
+*   Windows IoT Enterprise LTSC x64
+*   Windows IoT Enterprise 21h1 x64
+
+Windows IoT Enterprise on Arm64 is currently under investigation.
 
 ## Next steps  
 
