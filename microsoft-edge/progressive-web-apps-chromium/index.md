@@ -123,7 +123,7 @@ When you build a Progressive Web App targeting web standard APIs, your app may b
 *   Allows your users to install your app directly from the browser.  
 *   Allows your users to install your app without a Store-based deployment or registration.  
     
-Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) is available. The following benefits are included.
+Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) is [available](https://www.microsoft.com/edge). The following benefits are included.
 
 *   Apps may be installed directly from within the browser using the **Install** icon in the navigation bar.  
     
