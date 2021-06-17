@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 ---
 # Progressive Web Apps on Windows overview  
 
-[Progressive Web Apps][MDNApps] \(PWAs\) provide access to open web technologies for cross-platform interoperability and provide your users with a native, app-like experience customized for their devices.  PWAs are websites that are [progressively enhanced][AListApartUnderstandingProgressiveEnhancement] to function like native apps on supporting platforms.  The qualities of a PWA combine the best of the web and native apps.  
+[Progressive Web Apps][MDNApps] \(PWAs\) provide access to open web technologies for cross-platform interoperability and provide your users with a native, app-like experience customized for their devices. PWAs are websites that are [progressively enhanced][AListApartUnderstandingProgressiveEnhancement] to function like native apps on supporting platforms. The qualities of a PWA combine the best of the web and native apps.  
 
 :::row:::
     :::column:::
@@ -113,17 +113,17 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
     :::column-end:::
 :::row-end:::  
 
-Build \(or convert\) your existing website to a PWA to enhance your engagement with your users.  Enhancements include push notifications, app-like integration, and offline support.  Continue to build your audience on the open web for users to discover your PWA through search and link-sharing.  Best of all, your app is updated in using your web server code.  
+Build \(or convert\) your existing website to a PWA to enhance engagement with your users. Enhancements include push notifications, app-like integration, and offline support. Continue to build your audience on the open web for users to discover your PWA through search and link-sharing. Best of all, your app is updated using your web server code.  
 
 ## PWAs on Microsoft Edge (Chromium)  
 
-When you build a Progressive Web App targeting web standard APIs, your app may be deployed across platforms and devices and take advantage of the device-specific capabilities as available.  PWAs in Microsoft Edge \(Chromium\) add the following advantages to your website.  
+When you build a Progressive Web App targeting web standard APIs, your app may be deployed across platforms and devices and take advantage of the device-specific capabilities as available. PWAs in Microsoft Edge \(Chromium\) add the following advantages to your website.  
 
 *   Your app is built on a standards-based web platform.  
 *   Allows your users to install your app directly from the browser.  
 *   Allows your users to install your app without a Store-based deployment or registration.  
     
-Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) is available. Microsoft Edge \(Chromium\) is available on Windows 7, Windows 10, and macOS.  The following benefits are included.  
+Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) is available. The following benefits are included.
 
 *   Apps may be installed directly from within the browser using the **Install** icon in the navigation bar.  
     
