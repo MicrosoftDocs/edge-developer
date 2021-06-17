@@ -167,7 +167,7 @@ You may run WebView2 apps on the following versions of Windows desktop.
 > [!IMPORTANT]
 > \*\* WebView2 support for Windows 7 and Windows Server 2008 R2 has the same support cycle as Microsoft Edge.  For more information, navigate to [Microsoft Edge supported Operating Systems][DeployedgeMicrosoftEdgeSupportedOS].  
 
-WebView2 also works in the following Windows Embedded releases
+WebView2 also works on the following Windows Embedded releases.
 
 *   Windows IoT Enterprise LTSC x32
 *   Windows IoT Enterprise LTSC x64
