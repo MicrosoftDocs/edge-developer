@@ -153,7 +153,7 @@ A General Availability \(GA\) or Preview version is available on the following p
 *   .NET 5  
 *   [WinUI 3.0][UwpToolkitsWinui3] \(Preview\)  
     
-You may run WebView2 apps on the following versions of Windows desktop.  
+You may run WebView2 apps on the following versions of Windows.  
 
 *   Windows 10  
 *   Windows 8.1  
