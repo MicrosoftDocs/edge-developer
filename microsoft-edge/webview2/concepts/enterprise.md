@@ -26,7 +26,7 @@ IT admins may use group policy objects \(GPO\) to configure policy settings for 
 
 [Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview]: ./distribution.md#understanding-the-webview2-runtime "Understand the WebView2 Runtime and installer (Preview) - Distribution of applications using WebView2 | Microsoft Docs"  
 
-[WebView2Landing]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
+[WebView2Landing]: ../index.md "Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
 
 [EdgeUpdatePolicies]: /deployedge/microsoft-edge-update-policies "Microsoft Edge - Update policies | Microsoft Docs"  
 [EdgeBrowserPolicies]: /deployedge/microsoft-edge-policies "Microsoft Edge - Browser policies | Microsoft Docs"  

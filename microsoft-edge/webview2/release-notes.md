@@ -17,7 +17,7 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 > Ensure you re-compile your app after updating the NuGet package.  The WebView team recommends that you use the Canary channel when you develop using the prerelease packages, and the Evergreen WebView2 Runtime when you use the release packages.  For more information, navigate to [Matching WebView2 Runtime versions][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].  
 
 > [!NOTE]
-> WebView2 bug fixes are either Runtime or SDK specific.  
+> WebView2 bug fixes are either runtime-specific or SDK-specific.
 
 ## 1.0.902-prerelease
 
@@ -54,13 +54,12 @@ Release Date: June 1, 2021
 
 #### Promotions
 
-*   [Download API][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddDownloadstarting] is  now promoted to stable.
+*   [Download API][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddDownloadstarting] is now promoted to stable.
 *   [PinchZoom API][Webview2ReferenceWin32Icorewebview2setting5ViewWebview210902PrereleaseGetIspinchzoomenabled] is now promoted to stable.
 *   [AddFrameCreated][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddFramecreated] is now promoted to stable.
 *   [Autofill API][Webview2ReferenceWin32Icorewebview2setting4ViewWebview210902PrereleaseGetIsgeneralautofillenabled] is now promoted to stable.
     > [!NOTE]
     > There is no current API to delete the locally stored general autofill and password autosave information.  Please provide a control to delete the data, which will involve deleting the entire User Data Folder. 
-
 
 
 ### .NET  
@@ -69,6 +68,7 @@ Release Date: June 1, 2021
 
 *   Fixed a bug in WebView2 WinForm control where WebView2 window visibility is not updated properly after parent window is disposed. \([\#1282][GithubMicrosoftedgeWebviewfeedbackIssue1282] and [\#828][GithubMicrosoftedgeWebviewfeedbackIssue828]\).
 *   Fixed a bug in WebView2 WPF control that Source property binding in WPF OneWay binding mode is not working properly. \([\#619][GithubMicrosoftedgeWebviewfeedbackIssue619] and [\#608][GithubMicrosoftedgeWebviewfeedbackIssue608]\).
+
 
 ## 1.0.864.35
 
@@ -94,6 +94,7 @@ Release Date: May 31, 2021
 
 #### Bug Fixes  
 *   Fixed a bug in WebView2 .NET controls that first header is missing when iterating CoreWebView2WebResourceRequest headers collection. \([\#1123][GithubMicrosoftedgeWebviewfeedbackIssue1123]\). 
+
 
 ## 1.0.865-prerelease  
 
@@ -136,6 +137,7 @@ Release Date: April 26, 2021
 *   Fixed initialization so navigation occurs during `CoreWebView2InitializationCompleted`.  \([\#1050][GithubMicrosoftedgeWebviewfeedbackIssue1050]\).
 *   Improved .NET browser process crash error handling.  You may now recreate controls after you handle a `ProcessFailed` event without a crash.  \([\#996][GithubMicrosoftedgeWebviewfeedbackIssue996]\).  
     
+
 ## 1.0.818.41  
 
 Release Date: April 21, 2021  
@@ -151,6 +153,7 @@ Release Date: April 21, 2021
 *   Improved WebView2 code to be more resilient to `.exe` application files with malformatted version information.  \([\#850][GithubMicrosoftedgeWebviewfeedbackIssue850]\).  
 *   Removed `--winhttp-proxy-resolver` from WebView browser process command-line, turned on other proxy command-line options for WebView2.  
     
+
 ## 1.0.824-prerelease  
 
 Release Date: March 8, 2021  
@@ -477,7 +480,7 @@ Release Date: July 20, 2020
     > **Announcement**:  WebView2 now supports Windows Forms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **pre-release package**.  
     
 *   For more information about building WPF apps, navigate to the [WPF Get Started Guide][Webview2GetStartedWpf] and the WebView2 [WPF Reference][DotnetApiMicrosoftWebWebview2Wpf] for WPF-specific APIs.  
-*   For more information about building Windows Forms apps, navigate to the [Windows Forms Get Started Guide][Webview2GetStartedWinforms] and the WebView2 [Windows Forms Reference][DotnetApiMicrosoftWebWebview2Winforms] for Windows Forms specific APIs.  
+*   For more information about building Windows Forms apps, navigate to [Get started with WebView2 in WinForms apps][Webview2GetStartedWinforms] and the WebView2 [Windows Forms Reference][DotnetApiMicrosoftWebWebview2Winforms] for Windows Forms specific APIs.  
 *   For more information about the CoreWebView2 APIs, navigate to [.NET Reference][DotnetApiMicrosoftWebWebview2Core].  
 *   > [!CAUTION]
     > **Known Issues**:  The WebView team is aware of some issues in the pre-release that are being resolved in future releases.  
@@ -636,8 +639,9 @@ Initial developer preview release.
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
 [Webview2ConceptsVersioningExperimentalApis]: ./concepts/versioning.md#experimental-apis "Experimental APIs - Understanding browser versions and WebView2 | Microsoft Docs"  
 [Webview2ConceptsVersioningMatchingWebview2RuntimeVersions]: ./concepts/versioning.md#matching-webview2-runtime-versions "Matching WebView2 Runtime versions - Understand WebView2 SDK versions | Microsoft Docs"  
-[Webview2GetStartedWinforms]: ./get-started/winforms.md "Get started with WebView2 in Windows Forms apps | Microsoft Docs"  
-[Webview2GetStartedWpf]: ./get-started/wpf.md "Get started with WebView2 in WPF | Microsoft Docs"  
+
+[Webview2GetStartedWinforms]: ./get-started/winforms.md "Get started with WebView2 in WinForms apps | Microsoft Docs"  
+[Webview2GetStartedWpf]: ./get-started/wpf.md "Get started with WebView2 in WPF apps | Microsoft Docs"  
 [Webview2HowToDebug]: ./how-to/debug.md "How to debug when developing with WebView2 controls | Microsoft Docs"  
 
 [Webview2ReferenceWin32Icorewebview2experimental2ViewWebview210865PrereleaseAddDownloadstarting]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental2?view=webview2-1.0.865-prerelease&preserve-view=true#add_downloadstarting  "add_DownloadStarting - interface ICoreWebView2Experimental2 | Microsoft Docs" 

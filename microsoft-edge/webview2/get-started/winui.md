@@ -1,6 +1,6 @@
 ---
-description: Get started guide with WebView2 for WinUI apps
-title: Get started with WebView2 for WinUI apps
+description: Getting started guide for using WebView2 for WinUI 3 apps.
+title: Get started with WebView2 in WinUI 3 apps (Preview)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/17/2021
@@ -9,9 +9,9 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWebView2, browser control, edge html, get started, Get Started, .NET
 ---
-# Get started with WebView2 in WinUI 3 (Preview)  
+# Get started with WebView2 in WinUI 3 apps (Preview)  
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Your first WebView2 app uses WinUI3.  For more information on individual APIs, navigate to [API reference][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].  
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Your first WebView2 app uses WinUI 3.  For more information on individual APIs, navigate to [API reference][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].  
 
 ## Prerequisites  
 
@@ -22,13 +22,13 @@ Ensure you install the following list of pre-requisites before proceeding.
     > [!NOTE]
     > The WebView team recommends using the Canary channel and the minimum required version is 82.0.488.0.  
     
-*   [Visual Studio][MicrosoftVisualstudioMain] 2019, version 16.9 Preview.  For more information, navigate to [Windows UI Library 3 Preview 3][WindowsAppsWinui3ConfigureYourDevEnvironment].  
+*   [Visual Studio][MicrosoftVisualstudioMain] 2019, version 16.9 or later.  For more information, navigate to [Windows UI Library 3 Preview 3][WindowsAppsWinui3ConfigureYourDevEnvironment].  
     *   Include the following workloads when you install Visual Studio.  
-        *   .NET Desktop Development \(the installer also installs .NET 5\)  
-        *   Universal Windows Platform development  
+        *   **.NET desktop development** \(the installer also installs .NET 5\)  
+        *   **Universal Windows Platform development**
     *   To build C++ apps, you must also include the following workloads.  
-        *   Desktop development with C++  
-        *   The C++ \(v142\) Universal Windows Platform tools optional component for the Universal Windows Platform workload.  For more information,  navigate to **Installation Details** under the **Universal Windows Platform development** section, on the right pane.  
+        *   **Desktop development with C++**
+        *   The **C++ \(v142\) Universal Windows Platform tools** optional component of the **Universal Windows Platform development** workload.  To select that component, on the right-hand pane, navigate to **Installation Details** under the **Universal Windows Platform development** section.  
         
 ## Step 0 - Visual Studio settings  
 
@@ -291,8 +291,8 @@ To send your WinUI-specific feature requests or bugs, navigate to [Issues - micr
 <!-- links -->  
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"  
 [Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"  
-[MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
-[Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
+[MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
 
 [Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.ExecuteScriptAsync(String) Method (Microsoft.Web.WebView2.Wpf) | Microsoft Docs"  
 
