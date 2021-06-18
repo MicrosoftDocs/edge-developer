@@ -64,9 +64,9 @@ At this point you should have WebView2 Runtime installed, built a WebView2 proje
        Download NuGet package  
     :::image-end:::  
     
-1.  Type `Selenium.WebDriver` in the search bar, choose **Selenium.WebDriver** from the results, and make sure to checkmark the box next to **include pre-release**.  On the right-hand side window, ensure the **Version** is set to **install 4.0.0-alpha04** or later and choose **Install**.  NuGet downloads Selenium to your machine.  
+1.  Type `Selenium.WebDriver` in the search bar, choose **Selenium.WebDriver** from the results, and make sure to checkmark the box next to **include pre-release**.  On the right-hand side window, ensure the **Version** is set to **install 4.0.0-alpha07** or later and choose **Install**.  NuGet downloads Selenium to your machine.  
     
-    To learn more about the Selenium.WebDriver NuGet package, navigate to [Selenium.WebDriver 4.0.0-alpha04][NugetSeleniumWebdriver400Alpha04].  
+    To learn more about the Selenium.WebDriver NuGet package, navigate to [Selenium.WebDriver 4.0.0-alpha07][NugetSeleniumWebdriver700Alpha07].  
     
     :::image type="complex" source="../media/webdriver/nuget.png" alt-text="Manage NuGet package" lightbox="../media/webdriver/nuget.png":::
        Manage NuGet package  
@@ -84,16 +84,16 @@ At this point you should have WebView2 Runtime installed, built a WebView2 proje
     using System.Threading.Tasks;
     ```  
     
-## Step 4: Drive WebView2 with Selenium and Microsoft Edge Driver  
+## Step 7: Drive WebView2 with Selenium and Microsoft Edge Driver  
 
 1.  First, create the `EdgeOptions` object, by copying the following code snippet.  
     
     ```csharp
     static void Main(string[] args)
     {
-        // EdgeOptions() requires using OpenQA.Selenium.Edge
-        // Construct EdgeOptions with is_legacy = false and the string "webview2"
-        EdgeOptions edgeOptions = new EdgeOptions(false, "webview2");
+
+        EdgeOptions edgeOptions = new EdgeOptions();
+
     ```  
     
     The `EdgeOptions` object takes in the following two parameters.  
@@ -103,24 +103,20 @@ At this point you should have WebView2 Runtime installed, built a WebView2 proje
     | `is_legacy` | Set to `false`, which tells Selenium that you are driving the new Chromium-based Microsoft Edge browser. |  
     | `"webview2"` | A string that tells Selenium you are driving WebView2. |  
     
-1.  Next, set `edgeOptions.BinaryLocation` to the file path of your WebView2 project runtime, create a string named `msedgedriverDir` that provides the file path to where you installed [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeWebDriverDownloads], and create a string named `msedgedriverExe` to store the name of the Microsoft Edge Driver runtime.  By default, the runtime is named `msedgedriver.exe`. Use these two strings to construct the `EdgeDriverService` object as shown below.  Finally, create the `EdgeDriver` object using `EdgeDriverService` and `EdgeOptions`.  
+1.  Next, configure `edgeOptions` to use Chromium and WebView by setting the member variables `UseChromium` and `UseWebView` to true. Then, set `edgeOptions.BinaryLocation` to the file path of your WebView2 project runtime. Finally, create the `EdgeDriver` object using `EdgeOptions`.  
     
     You may copy and paste the following code underneath `edgeOptions`.  Ensure you specify the correct file paths to your project runtime and the Microsoft Edge Driver runtime on your machine.  
     
     ```csharp
+
+    //Set edgeOptions to use Chromium and WebView
+    edgeOptions.UseChromium = true;
+    edgeOptions.UseWebView = true;
+
     //Set the BinaryLocation to the filepath of the WebView2API Sample runtime
     edgeOptions.BinaryLocation = @"C:\path\to\your\webview2\project.exe";
-    
-    //Set msedgedriverDir to the filepath of the directory housing msedgedriver.exe
-    string msedgedriverDir = @"C:\path\to\your\msededriver.exe's\directory";
-    
-    //Set msedgedriverExe to the name of the Edge Driver. By default it is:
-    string msedgedriverExe = @"msedgedriver.exe";
-    
-    // Construct EdgeDriverService with is_legacy = false  
-    EdgeDriverService service = EdgeDriverService.CreateDefaultService(msedgedriverDir, msedgedriverExe, false);
-    
-    EdgeDriver e = new EdgeDriver(service, edgeOptions);
+    EdgeDriver edgeDriver = new EdgeDriver(edgeOptions);
+
     ```  
     
 3.  Now, `EdgeDriver` is configured to drive the WebView2 in your project.  For example, if you are using the **WebView2API Sample**, you may navigate to `https://microsoft.com` by running the `e.Url = @"https://www.microsoft.com";` command.  Verify the Selenium drive WebView2 by setting a breakpoint on the line and running the project.  
@@ -139,6 +135,9 @@ At this point you should have WebView2 Runtime installed, built a WebView2 proje
     :::image-end:::
     
 Congratulations.  You have successfully automated a WebView2 project and driven WebView2 using Selenium and Microsoft Edge Driver.  
+
+> [!Note]
+> [Here][GithubSeleniumProject] is a project the Micrsoft Edge team created to allow Selenium 3 users to drive Edge Chromium and WebView2 using the sample API that's provided in Selenium 4.
 
 ## See also  
 
@@ -162,8 +161,10 @@ Congratulations.  You have successfully automated a WebView2 project and driven 
 [GithubMicrosoftedgewebview2samplesSampleappsWebview2apisample]: https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample "WebView2 API Sample - MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisamplePrerequisites]: https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#prerequisites "Prerequisites - WebView2 API Sample | GitHub"  
 
-[NugetSeleniumWebdriver400Alpha04]: https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-alpha04 "Selenium.WebDriver 4.0.0-alpha04 | NuGet Gallery"  
+[NugetSeleniumWebdriver700Alpha07]: https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-alpha07 "Selenium.WebDriver 4.0.0-alpha07 | NuGet Gallery"  
 
 [SeleniumWebdriver]: https://www.selenium.dev/documentation/en/webdriver "WebDriver | Selenium"  
 
 [W3cWebdriver2]: https://www.w3.org/TR/webdriver2 "WebDriver | W3C"  
+
+[GithubSeleniumProject]: https://github.com/microsoft/edge-selenium-tools "Selenium Tools for Microsoft Edge"
