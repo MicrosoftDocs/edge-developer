@@ -49,6 +49,9 @@ To take action when a new version is available, such as notifying the user to re
 ## Manage the lifetime of the user data folder 
 WebView2 apps create a user data folder to store data such as cookies, credentials, permissions, and so on. After creating the folder, your app is responsible for managing the lifetime of the user data folder, including clean up when the app is uninstalled.  For more information, navigate to [Managing the User Data Folder][Webview2ConceptsUserDataFolder].  
 
+## Process Failed
+WebView2 apps should listen for and handle the [ProcessFailed event][WebView2ProcessFailedEvent], as the browser process could fail at any time and should be exited or recreated gracefully.
+
 ## Follow recommended WebView2 security best practices 
 For any WebView2 application, ensure you follow our recommended WebView2 security best practices.  For more information, navigate to [Best practices for developing secure WebView2 applications][Webview2ConceptsSecurity].  
 
@@ -68,3 +71,5 @@ For any WebView2 application, ensure you follow our recommended WebView2 securit
 [Webview2ReferenceaddNewBrowserVersionAvailable]: /microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable "add_NewBrowserVersionAvailable | Microsoft Docs"  
 
 [Webview2ReferenceNewBrowserVersionAvailable]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable "CoreWebView2Environment.NewBrowserVersionAvailable Event | Microsoft Docs"  
+[WebView2ProcessFailedEvent]: /microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs "ICoreWebView2ProcessFailedEventArgs | Microsoft Docs"  
+
