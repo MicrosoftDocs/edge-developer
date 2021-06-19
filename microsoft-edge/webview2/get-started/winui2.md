@@ -75,7 +75,7 @@ keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWeb
 
 <!-- refer to the NuGet package as a "WebView2" package or a "WinUI2" package? -->
 
-1.  Copy the WebView2 NuGet package from a server (TBD) to anywhere on your local drive.  For example, one version of the file is named `Microsoft.UI.Xaml.2.6.0-webview2.210427001.nupkg`.
+1.  (Missing step.)
 
 1.  In Visual Studio, in **Solution Explorer**, right-click the node for the project, and then select **Manage NuGet Packages**.
 
