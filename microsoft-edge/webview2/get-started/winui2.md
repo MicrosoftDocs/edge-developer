@@ -103,11 +103,11 @@ keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWeb
 
 1.  In the **Package sources** section, select the new **Package source** package source.
 
-1.  In the **Name** text box, set a specific name, such as **WinUI 2 Local NuGet Package**.
+1.  In the **Name** text box, enter a specific name, such as **WinUI 2 Local NuGet Package**.
 
 1.  Next to the **Source** text box, select the ellipses (...) button.  The **Select a Package Source Folder** dialog box opens.
 
-1.  Select the folder that contains the WebView2 NuGet package that you copied onto the local drive, and then select the **Select** button.  The **Source** field now contains the path you selected.
+1.  Select the folder that contains the WebView2 NuGet package that you copied onto your local drive, and then select the **Select** button.  The **Source** text box now contains the path you selected.
 
 1.  Next to the **Source** text box, select the **Update** button.  In the **Package sources** section, the new package source now shows the updated name and directory path.
 
