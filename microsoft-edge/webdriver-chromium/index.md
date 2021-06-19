@@ -353,18 +353,13 @@ For more information, navigate to the [msedgedriver container on Docker Hub][Doc
 
 ## Application Guard
 
-<!-- was "Windows Defender Application Guard" renamed to "Microsoft Defender Application Guard"; are those the same thing? -->
+Untrusted sites that use Microsoft Defender Application Guard cannot be automated or manipulated with Microsoft Edge Driver. Application Guard launches untrusted sites in a container, and this container doesn't expose the remote debugging port that Microsoft Edge Driver needs to communicate with the site.
 
-Microsoft Edge (Chromium) windows that use Windows Defender Application Guard (WDAG) cannot be automated or manipulated using WebDriver-related or Selenium-related technologies.
-The Application Guard window cannot be manipulated by using Selenium and WebDriver.
+Your enterprise administrator defines what are trusted sites, including cloud resources and internal networks. Everything not in the trusted sites list is considered untrusted.
 
-Windows Defender Application Guard (WDAG) is also called Microsoft Defender Application Guard.
+InPrivate windows, and sites on the trusted sites list, can still be automated using Microsoft Edge Driver. 
 
-InPrivate mode and Normal mode are supported for WebDriver automation, but Application Guard mode is not supported for WebDriver automation.
-
-When using Application Guard mode, the Microsoft Edge process is included in Windows Defender Application Guard Suite.
-
-For information about Application Guard, navigate to:
+For more information about Application Guard, navigate to: 
 
 *  [Microsoft Edge support for Microsoft Defender Application Guard](/deployedge/microsoft-edge-security-windows-defender-application-guard)
 *  [Microsoft Defender Application Guard overview][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10]
