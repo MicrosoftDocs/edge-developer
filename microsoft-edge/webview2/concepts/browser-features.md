@@ -48,7 +48,7 @@ The following table displays the WebView2 features that differ from the Microsof
 | Edge Shopping | Off | No | This feature is turned off.  |  
 | Family Safety | Off | No | This feature is turned off.  |  
 | Favorites | Off | No | This feature is turned off.  |  
-| IE Mode | Off | No | This feature is turned off.  |  
+| IE Mode | Off | No | This feature is turned off. WebView2 doesn't support IE mode and has differences in behavior compared to IE (such as MHT or BIN support). |  
 | Immersive Reader | Off | No | This feature depends on the browser UI for interaction.  This feature is turned off.  |  
 | Intrusive Ads | Off | No | This feature is turned off.  |  
 | Keyboard shortcuts | Review Details | Review Details | The keyboard shortcuts that are turned off by default either don't make sense or cause problems in WebView2.  You may not turn on or off these shortcuts.  Instead, you may listen for a key combination using the `AcceleratorKeyPressed` event and create a custom response if needed.  For more information, navigate to [Additional keyboard shortcuts information](#additional-keyboard-shortcuts-information). |  
