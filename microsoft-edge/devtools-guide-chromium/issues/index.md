@@ -24,26 +24,24 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 # Find and fix problems using the Issues tool
 
-In Microsoft Edge DevTools, the **Issues** tool automatically analyzes the current webpage and reports issues grouped by type, and provides documentation to help explain and resolve the issues.
+In Microsoft Edge DevTools, the **Issues** tool automatically analyzes the current webpage, reports issues grouped by type, and provides documentation to help explain and resolve the issues.
 
 The **Issues** tool supports provides feedback in the following categories:
 *  **Accessibility**
 *  **Compatibility** (cross-browser compatibility)
-*  **Other**
 *  **Performance**
 *  **Progressive Web Apps**
 *  **Security**
+*  **Other**
 
-The feedback in the **Issues** tool is provided by several sources, including the Chromium platform, Deque axe, the MDN Browser Compatibility Report, and webhint.  For information about these sources of feedback that populate the Issues tool, navigate to:
+Feedback in the **Issues** tool is provided by several sources, including the Chromium platform, Deque axe, MDN browser compatibility data, and webhint.  For information about these sources of feedback that populate the Issues tool, navigate to:
 *  [axe Tools Overview][DequeAxe]
-*  [Compat2021: Eliminating five top compatibility pain points on the web][MDNCompat]
+*  [https://github.com/mdn/browser-compat-data][MDNCompat]
 *  [webhint][webhintIo]
 
 ### The Issues counter and Issues tool are dynamically updated
 
-When you open a page, sometimes the Issues counter \(![Issues counter](../media/issues-counter-icon.msft.png)\) doesn't immediately appear in DevTools, but is displayed after one or two seconds.
-
-When you refresh a page, the Issues counter sometimes increases the count of issues.  The count is updated and the Issues tool lists more issues, as analysis results come in from several sources.
+The Issues counter \(![Issues counter](../media/issues-counter-icon.msft.png)\) is updated in real time as analysis results come in. For this reason, you may see the issue count increase as the page loads.
 
 
 ## Open the Issues tool
@@ -52,7 +50,7 @@ The following steps walk through opening the Issues tool, using a couple of demo
 *  The accessibility-testing demo page has issues in the **Accessibility**, **Compatibility**, **Performance**, and **Security** categories.
 *  The SameSite cookies demo page has issues in the **Other** and **Security** categories.
 
-To open the issues tool:
+To open the **Issues** tool:
 
 1.  Navigate to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab or window.
 
@@ -96,9 +94,8 @@ There are several ways to open the issues tool:
 
 ## Expand entries in the Issues tool
 
-The **Issues** tool presents issues grouped into categories, with documentation about each issue.
+The **Issues** tool presents issues grouped into categories and provides documentation and recommended fixes for each issue.
 
-1.  Refresh the page, and then note the number of issues in the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\).  Depending on the browser version and the page, the count of issues might increase when you refresh the page.
 
 1.  Select an issue in the **Issues** tool to get guidance on how to fix the issue and find affected resources.
 
@@ -108,7 +105,7 @@ The **Issues** tool presents issues grouped into categories, with documentation 
 
     The layout of the information about the issue varies, depending on the type of issue.  Each displayed issue has several components:
     *   A headline describing the issue.
-    *   A description providing the context and the solution, or a link to a page that contains that information.
+    *   A description providing more context and proposed solutions.
     *   An **Affected Resources** section that links to resources within the appropriate DevTools context, such as the **Elements**, **Sources**, or **Network** tool.
     *   Links to further guidance.
 
@@ -121,9 +118,9 @@ The **Issues** tool presents issues grouped into categories, with documentation 
 
 ## View issues in context of an associated tool
 
-An issue in the Issues tool typically includes one or more links that open a different tool, such as **Elements**, **Network**, or **Sources**.
+An issue in the **Issues** tool typically includes one or more links that open a different tool, such as **Elements**, **Network**, or **Sources**.
 
-1.  Select a resource link, to view the resource in the appropriate context within DevTools, such as the **Network** tool or the **Elements** tool.  For example, in the **Issues** tool for the SameSite cookies demo page, select `samesite-sandbox.glitch.me` under **Requests** to show the cookies that are attached to that request.  The cookies are then displayed in the **Network** tool.
+1.  Select a resource link to view the resource in the appropriate context within DevTools, such as the **Network** tool or the **Elements** tool. 
 
     :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="None value in the SameSite column for the ck02 cookie in the Network tool" lightbox="../media/issues-tab-view-issue.msft.png":::
        `None` value in the **SameSite** column for the `ck02` cookie in the **Network** tool
@@ -191,7 +188,7 @@ To include issues that are caused by third-party sites, at the top of the **Issu
 <!-- external links -->
 [GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "SameSite cookie tests | Glitch"
 [DequeAxe]: https://www.deque.com/axe "axe Tools Overview | Deque"
-[MDNCompat]: https://web.dev/compat2021 "Compat2021: Eliminating five top compatibility pain points on the web | web.dev"
+[MDNCompat]: https://github.com/mdn/browser-compat-data "MDN Browser Compatibility Data | GitHub"
 [webhintIo]: https://webhint.io "webhint.io"
 
 > [!NOTE]
