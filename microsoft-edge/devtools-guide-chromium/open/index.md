@@ -114,23 +114,12 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 
 To change the `F12` keyboard shortcut setting that opens the DevTools, complete the following actions.  
 
-1.  Choose the icon the **Settings and more** \(`...`\) icon > **Settings**.  
-1.  In **Search settings**, enter `Developer Tools`.  
-    
-    :::image type="complex" source="../media/settings-developer-tools-f12-on.msft.png" alt-text="The Open the DevTools when the F12 key is pressed setting" lightbox="../media/settings-developer-tools-f12-on.msft.png":::
-       The **Open the DevTools when the F12 key is pressed** setting  
-    :::image-end:::  
-    
-1.  Choose **Open the DevTools when the F12 key is pressed** to toggle the setting to off \(or on\).  Toggle the setting to off to stop the `F12` keyboard shortcut from opening DevTools.  
-    
-    :::image type="complex" source="../media/settings-developer-tools-f12-off.msft.png" alt-text="The Open the DevTools when the F12 key is pressed setting is turned off" lightbox="../media/settings-developer-tools-f12-off.msft.png":::
-       The **Open the DevTools when the F12 key is pressed** setting is turned off  
-    :::image-end:::  
-    
-1.  After you set the toggle to off, select `F12` to confirm that DevTools no longer open.  
+1.  Navigate to `edge://settings/system`.  
+1.  In `Developer Tools`, choose **Open the DevTools when the F12 key is pressed** to toggle the setting to off or on.  Toggle the setting to off to stop the `F12` keyboard shortcut from opening DevTools.  
+1.  After you set the toggle to off, verify that `F12` no longer opens DevTools.  
     
     > [!NOTE]
-    > After you turn off the **Open the DevTools when the F12 key is pressed** setting, to open the DevTools, complete one of the following actions.  
+    > After turning off **Open the DevTools when the F12 key is pressed**, perform one of the following actions to open the DevTools.  
     > 
     > *   Select `Ctrl`+`Shift`+`I`.  
     > *   Open the contextual menu \(right-click\) > **Inspect**.  
