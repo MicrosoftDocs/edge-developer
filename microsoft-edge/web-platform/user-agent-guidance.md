@@ -3,7 +3,7 @@ description: This article describes how to detect Microsoft Edge data with user 
 title: Detecting Microsoft Edge from your website
 author: MSEdgeTeam
 ms.author: v-vchapel
-ms.date: 06/17/2021
+ms.date: 06/21/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, user agent string, ua string, ua overrides, user-agent client hints, user agent client hints, ua client hints, ua ch, feature detection, browser identification, browser detection, header, https header, verify chromium, detect microsoft edge, detecting microsoft edge
@@ -12,49 +12,23 @@ keywords: microsoft edge, compatibility, web platform, user agent string, ua str
 
 Accurate browser detection helps website developers display content efficiently. Browsers provide mechanisms for websites to detect browser information such as brand and version number.
 
-The legacy User-Agent String was intended to improve how websites were displayed, but became bloated and misused over time. It includes enough information to covertly track individual users. The new User-Agent Client Hints improve privacy. It only shares browser brand and mobile status by default, and it follows user-configurable privacy settings. But it can still be used to obtain more information than most users realize.
+The legacy User-Agent String was intended to improve how websites were displayed, but became bloated and misused over time. It includes enough information to covertly track individual users. The new User-Agent Client Hints improve privacy. It only shares browser brand and mobile status by default, and it conforms to user-configurable privacy settings. 
 
-[Feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] is the best mechanism for browser identification. Microsoft recommends using it whenever possible to:
-* Improve code maintainability.
-* Reduce code fragility.  
-* Reduce code breakage from changes to the User-Agent String.
+Detecting and restricting access to your site is not recommended because users may not be able to reach your content or products. However, in some cases you may want to provide different experiences to users of different browsers. For example, if you include steps on how to configure Edge or another browser for use with your site, you may want to detect the browser, and then show the appropriate content to that user.
 
 Mechanisms for browser detection with code location and identifiers:
 
-| Option | Mechanism | Code Location |  
-|:--- |:--- |:--- | 
-| **1** | **Feature Detection** \(recommended\) | Client-side: `navigator.userAgentData.brands` JavaScript method |
-| **2** | **User-Agent Client Hints** \(accepted\) | Server-side: `Sec-CH-UA` HTTPS header |
-| | | Client-side: `navigator.userAgentData` JavaScript method |  
-| **3** | **User-Agent String** \(legacy\) | Server-side:`User-Agent` HTTPS header | 
-| | | Client-side: `navigator.userAgent` JavaScript method |  
+| Mechanism | Code Location |  
+|:--- |:--- | 
+| **Feature Detection** \(recommended\) | Client-side: `navigator.userAgentData.brands` JavaScript method |
+| **User-Agent Client Hints** \(recommended\) | Server-side: `Sec-CH-UA` HTTPS header |
+| | Client-side: `navigator.userAgentData` JavaScript method |  
+| **User-Agent String** \(legacy\) | Server-side:`User-Agent` HTTPS header | 
+| | Client-side: `navigator.userAgent` JavaScript method |  
 
-This article describes all three methods Microsoft Edge supports for retrieving user agent information.
+This article describes the methods Microsoft Edge supports for retrieving user agent information.
 
 Implement [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] as described in the following section.
-
-## Feature detection  
-
-Use this method to verify the `Chromium` brand and apply detection to all affected Chromium based browsers.
-
-```javascript
-function isChromium() {
-    for (brand_version_pair in navigator.userAgentData.brands) {
-        if (brand_version_pair.brand == "Chromium"){
-            return true;
-        }
-    }
-    return false;
-}
-```
-
-### Recommended use of feature detection
-
-Brand names and the associated display order change over time. Avoid hard-coding brand names.
-
-If you cannot use [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection], don't use a hardcoded list of known Chromium-based browsers for verification. Examples of hardcoded browser names include `Microsoft Edge` and `Google Chrome`.  [Feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] may not be available because a fix for a Chromium bug in later versions must be avoided and the affected browsers are difficult to detect.
-
-If [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] is not possible, use the following format of User-Agent Client Hints for Microsoft Edge on Windows and Android.
 
 ## User Agent Client Hints
 
@@ -97,9 +71,49 @@ The following table shows the available header request hints with sample respons
 > [!NOTE]
 > User-Agent Client Hints are only sent over secure connections using `HTTPS`.
 
+### Feature detection
+
+Microsoft recommends detecting if a feature is supported in your browser. We do not recommend that you use feature detection to detect a specific browser. If you must detect browsers, we recommend using client hints as follows.
+
+Example code:
+
+```javascript
+if (window.navigator.Foo) {
+     window.navigator.Foo();
+        } else {
+    // This browser is not supported. Display a message.
+}
+```
+
+Combining User-Agent Client Hints with [Feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] is the best mechanism for browser identification. Microsoft recommends using it whenever possible to:
+* Improve code maintainability.
+* Reduce code fragility.  
+* Reduce code breakage from changes to the User-Agent String.
+
+Use this method to verify the `Chromium` brand and apply detection to all affected Chromium based browsers.
+
+```javascript
+function isChromium() {
+    for (brand_version_pair in navigator.userAgentData.brands) {
+        if (brand_version_pair.brand == "Chromium"){
+            return true;
+        }
+    }
+    return false;
+}
+```
+
+### Recommended use of feature detection
+
+Brand names and the associated display order change over time. Avoid hard-coding brand names.
+
+If you cannot use [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection], don't use a hardcoded list of known Chromium-based browsers for verification. Examples of hardcoded browser names include `Microsoft Edge` and `Google Chrome`.  [Feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] may not be available because a fix for a Chromium bug in later versions must be avoided and the affected browsers are difficult to detect.
+
+If [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] is not possible, use the following format of User-Agent Client Hints for Microsoft Edge on Windows and Android.
+
 ### User Agent Client Hints JavaScript API  
 
-You can also access User-Agent Client Hints using Javascript on the client side. When you call the default `navigator.userAgentData` it returns the following response.  
+You can access User-Agent Client Hints using Javascript on the client side. When you call the default `navigator.userAgentData` it returns the following response.  
 
 ```javascript
 { brands: [ {brand: "Chromium","version":"91"}, {brand: "Microsoft Edge","version":"91"}, {brand: "GREASE","version":"99"}, ]
