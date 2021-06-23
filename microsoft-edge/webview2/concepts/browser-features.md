@@ -66,7 +66,7 @@ The following table displays the WebView2 platform features that are currently u
 
 | Feature | Details |  
 |:--- | :--- |  
-| Push Notifications | This feature is not implemented in WebView2.  For more information, navigate to [Add support for HTML5 Notification API (#308)][GithubMicrosoftedgeWebview2feedbackIssues308]. |  
+| Push Notifications | This feature is not implemented in WebView2. |  
 | Web Payment API | This feature is turned off. | 
 
 ## Blocked internal URLs  
