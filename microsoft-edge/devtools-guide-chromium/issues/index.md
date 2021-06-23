@@ -68,6 +68,18 @@ There are several ways to open the **Issues** tool:
 *  Select **Customize and control DevTools** > **More tools** > **Issues**.
 *  In the DOM tree in the **Elements** tool, select `Shift` and then click a wavy-underlined element name.  Or, open the context menu on a wavy-underlined element and then select **View issues**.
 
+### Issues are automatically ordered by severity
+
+Within each category of issues, first the errors are listed, then warnings, and then tips.
+
+:::image type="complex" source="../media/issues-ordered-by-severity.msft.png" alt-text="The Issues tool displays issues sorted by severity" lightbox="../media/issues-ordered-by-severity.msft.png":::
+   The **Issues** tool displays issues sorted by severity
+:::image-end:::
+
+### Include third-party issues
+
+To include issues that are caused by third-party sites, at the top of the **Issues** tool, select the **Include third-party issues** checkbox.
+
 
 ## Expand entries in the Issues tool
 
@@ -132,20 +144,6 @@ To view an issue for an element that has wavy underlining in the DOM tree:
     :::image type="complex" source="../media/issues-opened-from-dom-tree-wavy-underline.msft.png" alt-text="Details about issues for a wavy-underlined element in the DOM tree" lightbox="../media/issues-opened-from-dom-tree-wavy-underline.msft.png":::
        Details about issues for a wavy-underlined element in the **DOM tree**
     :::image-end:::
-    
-
-## Issues are automatically ordered by severity
-
-Within each category of issues, first the errors are listed, then warnings, and then tips.
-
-:::image type="complex" source="../media/issues-ordered-by-severity.msft.png" alt-text="The Issues tool displays issues sorted by severity" lightbox="../media/issues-ordered-by-severity.msft.png":::
-   The **Issues** tool displays issues sorted by severity
-:::image-end:::
-
-
-## Include third-party issues
-
-To include issues that are caused by third-party sites, at the top of the **Issues** tool, select the **Include third-party issues** checkbox.
 
 
 ## See also
