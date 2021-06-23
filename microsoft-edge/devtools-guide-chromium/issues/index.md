@@ -83,13 +83,13 @@ The **Issues** tool presents issues grouped into categories and provides documen
        The **Issues** tool for the Accessibility demo page
     :::image-end:::
     
-The layout of the information about the issue varies, depending on the type of issue.  Each displayed issue has several components:
+Each displayed issue has several components:
 *   A headline describing the issue.
 *   A description providing more context and proposed solutions.
 *   An **Affected Resources** section that links to resources within the appropriate DevTools context, such as the **Elements**, **Sources**, or **Network** tool.
 *   Links to further guidance.
 
-For issues in some categories, the **Affected Resources** section lists DOM elements, such as specific `<img>` or `<input>` elements.  For other webpages, network issues might be listed.  Network issues have an appropriate layout.
+The **Affected Resources** section of an issue may list DOM elements or page resources.  The formatting of an issue may have a different layout, as shown in the following image from another webpage.
 
 :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="A network issue expanded in the Issues tool" lightbox="../media/issues-tab-issue-open.msft.png":::
    A network issue expanded in the **Issues** tool
@@ -98,24 +98,26 @@ For issues in some categories, the **Affected Resources** section lists DOM elem
 
 ## View issues in context of an associated tool
 
-An issue in the **Issues** tool typically includes one or more links that open a different tool, such as **Elements**, **Network**, or **Sources**.
+An issue in the **Issues** tool typically includes one or more links that open a different tool, such as the **Elements**, **Sources**, or **Network** tool.
 
-1.  In the **Affected Resources** section of an issue, select a resource link to display the resource in an appropriate tool.
+1.  As described in the previous section, open the accessibility-testing demo page and then expand an issue in the **Issues** tool.
+
+1.  In the **Affected Resources** section of the issue, select a link to display the resource in an appropriate tool.
 
     :::image type="complex" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="Selecting an affected resource in the Issues tool for the accessibility demo page opens the Elements tool" lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
        Selecting an affected resource in the **Issues** tool for the accessibility demo page opens the **Elements** tool
     :::image-end:::
 
-Issues in the **Network** category have links in the **Affected Resources** section of the issue.  Select these links to display the resource in the **Network** tool.
+    An expanded issue may have an **Open in Network** link, even if the issue is not in the **Network** category.
 
-:::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="The Network tool opens when you click a resource link in a network issue" lightbox="../media/issues-tab-view-issue.msft.png":::
-The **Network** tool opens when you click a resource link in a network issue
-:::image-end:::
-
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="The Network tool opens when you select a Network resource link" lightbox="../media/issues-tab-view-issue.msft.png":::
+    The **Network** tool opens when you select a **Network** resource link
+    :::image-end:::
+    
 
 ## Open issues from the DOM tree
 
-If an element has an issue, the DOM tree in the **Elements** tool shows wavy underlining under the element name.  You can either **Shift+click** the wavy-underlined element, or open the context menu on an element that has a wavy underline and then select **View issues**.
+If an element has an associated issue, the DOM tree in the **Elements** tool shows wavy underlining under the element name.  You can either **Shift+click** the wavy-underlined element, or open the context menu on an element that has a wavy underline and then select **View issues**.
 
 To view an issue for an element that has wavy underlining in the DOM tree:
 
