@@ -1,5 +1,5 @@
 ---
-description: Use the Issues tool to find and fix problems with your website.
+description: Use the Issues tool to identify and fix problems with the current webpage.
 title: Find and fix problems using the Issues tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -34,7 +34,7 @@ The **Issues** tool provides feedback in the following categories:
 *  **Security**
 *  **Other**
 
-Feedback in the **Issues** tool is provided by several sources, including the Chromium platform, Deque axe, MDN browser compatibility data, and webhint.  For information about these sources of feedback that populate the Issues tool, navigate to:
+Feedback in the **Issues** tool is provided by several sources, including the Chromium platform, Deque axe, MDN browser compatibility data, and webhint.  For information about these sources of feedback that populate the **Issues** tool, navigate to:
 *  [axe Tools Overview][DequeAxe]
 *  [browser-compat-data repo][MDNCompat]
 *  [webhint][webhintIo]
@@ -42,7 +42,7 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 
 ## Open the Issues tool
 
-The following steps walk through opening the Issues tool, using an accessibility-testing demo page.
+The following steps walk through opening the **Issues** tool, using an accessibility-testing demo page.
 
 To open the **Issues** tool:
 
@@ -54,7 +54,7 @@ To open the **Issues** tool:
 
 1.  Open DevTools.  After a few seconds, the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears, in the upper right corner of DevTools.  The number you get might be different.
 
-1.  Select the **Issues counter**.  The Issues tool opens, populated with issues in several categories.
+1.  Select the **Issues counter**.  The **Issues** tool opens, populated with issues in several categories.
 
     :::image type="complex" source="../media/issues-tool-categories.msft.png" alt-text="Categories of issues for the accessibility demo page" lightbox="../media/issues-tool-categories.msft.png":::
        Categories of issues for the accessibility demo page
@@ -82,18 +82,12 @@ The **Issues** tool presents issues grouped into categories and provides documen
     :::image type="complex" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text="The Issues tool for the Accessibility demo page" lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
        The **Issues** tool for the Accessibility demo page
     :::image-end:::
-    
-Each displayed issue has several components:
+
+Each displayed issue has the following components:
 *   A headline describing the issue.
 *   A description providing more context and proposed solutions.
 *   An **Affected Resources** section that links to resources within the appropriate DevTools context, such as the **Elements**, **Sources**, or **Network** tool.
 *   Links to further guidance.
-
-The **Affected Resources** section of an issue may list DOM elements or page resources.  The formatting of an issue may have a different layout, as shown in the following image from another webpage.
-
-:::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="A network issue expanded in the Issues tool" lightbox="../media/issues-tab-issue-open.msft.png":::
-   A network issue expanded in the **Issues** tool
-:::image-end:::
 
 
 ## View issues in context of an associated tool
@@ -102,18 +96,18 @@ An issue in the **Issues** tool typically includes one or more links that open a
 
 1.  As described in the previous section, open the accessibility-testing demo page and then expand an issue in the **Issues** tool.
 
-1.  In the **Affected Resources** section of the issue, select a link to display the resource in an appropriate tool.
+1.  In the **Affected Resources** section of the issue, select a tool-name link or a resource link.  The affected resource is displayed in the appropriate tool.
 
     :::image type="complex" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="Selecting an affected resource in the Issues tool for the accessibility demo page opens the Elements tool" lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
        Selecting an affected resource in the **Issues** tool for the accessibility demo page opens the **Elements** tool
     :::image-end:::
 
-    An expanded issue may have an **Open in Network** link, even if the issue is not in the **Network** category.
+    An expanded issue may have an **Open in Network** link, even if the issue isn't in the **Network** category.
 
     :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="The Network tool opens when you select a Network resource link" lightbox="../media/issues-tab-view-issue.msft.png":::
     The **Network** tool opens when you select a **Network** resource link
     :::image-end:::
-    
+
 
 ## Open issues from the DOM tree
 
@@ -130,10 +124,10 @@ To view an issue for an element that has wavy underlining in the DOM tree:
     :::image type="complex" source="../media/issues-wavy-underlines-dom-tree.msft.png" alt-text="Wavy-underlined issues in the DOM tree in the Elements tool" lightbox="../media/issues-wavy-underlines-dom-tree.msft.png":::
        Wavy-underlined issues in the **DOM tree** in the **Elements** tool
     :::image-end:::
-    
+
 1.  Hover over the `<input>` element.  A tooltip shows information about the issue.
 
-1.  Select `Shift` and then click the wavy-underlined element name.  Or, open the context menu on the wavy-underlined element and then select **View issues**.  The **Issues** tool opens and expands the issue about the element.
+1.  Select `Shift` and then click the wavy-underlined element name.  Or, open the context menu on the wavy-underlined element and then select **View issues**.  The **Issues** tool opens, displaying the issue that's associated with the element.
 
     :::image type="complex" source="../media/issues-opened-from-dom-tree-wavy-underline.msft.png" alt-text="Details about issues for a wavy-underlined element in the DOM tree" lightbox="../media/issues-opened-from-dom-tree-wavy-underline.msft.png":::
        Details about issues for a wavy-underlined element in the **DOM tree**
@@ -142,7 +136,7 @@ To view an issue for an element that has wavy underlining in the DOM tree:
 
 ## Issues are automatically ordered by severity
 
-Within each category of issues, first the **Errors** are listed, then **Warnings**, and then **Tips**.
+Within each category of issues, first the errors are listed, then warnings, and then tips.
 
 :::image type="complex" source="../media/issues-ordered-by-severity.msft.png" alt-text="The Issues tool displays issues sorted by severity" lightbox="../media/issues-ordered-by-severity.msft.png":::
    The **Issues** tool displays issues sorted by severity
