@@ -3,7 +3,7 @@ description: Feature differences between Microsoft Edge and WebView2
 title: Feature differences between Microsoft Edge and WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/22/2021
+ms.date: 06/23/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -25,7 +25,7 @@ In the context of WebView2, browser features adhere to the following design guid
 *   Most features work the same in WebView2 and Microsoft Edge.  If a feature doesn't make sense in the context of WebView2 or for other reasons, the feature is modified or turned off. 
 *   WebView2 features don't include Microsoft Edge branding.  
     
-## Browser Features  
+## Browser features  
 
 The following table displays the WebView2 features that differ from the Microsoft Edge browser.   
 
@@ -60,14 +60,14 @@ The following table displays the WebView2 features that differ from the Microsof
 | Windows Defender Application Guard | Off | No | This feature is turned off.  |  
 | edge:// URLs | Review Details | No | Settings for the Microsoft Edge browser are on `edge://` URLs.  Because most of these webpages have Microsoft Edge branding or don't make sense within the context of WebView2, some of these URLs are turned off.  For more information, navigate to [Blocked internal URLs](#blocked-internal-urls).  |  
 
-## Platform Features
+## Web platform features
 
-The following table displays the WebView2 platform features that are currently removed.
+The following table displays the WebView2 platform features that are currently unavailable.
 
-| Feature | Default state | Configurable | Details |  
-|:--- |:--- |:--- | :--- |  
-| Push Notifications | Off | No | This feature is not implemented in WebView2.  For more information, navigate to [Add support for HTML5 Notification API (#308)][GithubMicrosoftedgeWebview2feedbackIssues308]. |  
-| Web Payment API | Off | No | This feature is turned off. | 
+| Feature | Details |  
+|:--- | :--- |  
+| Push Notifications | This feature is not implemented in WebView2.  For more information, navigate to [Add support for HTML5 Notification API (#308)][GithubMicrosoftedgeWebview2feedbackIssues308]. |  
+| Web Payment API | This feature is turned off. | 
 
 ## Blocked internal URLs  
 
