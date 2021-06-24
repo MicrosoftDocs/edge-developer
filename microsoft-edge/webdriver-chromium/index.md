@@ -378,7 +378,7 @@ Trusted sites that use Microsoft Defender Application Guard (Application Guard) 
 
 Untrusted sites that use Application Guard cannot be automated or manipulated using Microsoft Edge Driver.  Application Guard launches untrusted sites in a container, and this container doesn't expose the remote debugging port that Microsoft Edge Driver needs to communicate with the site.
 
-Your enterprise administrator defines what are trusted sites, including cloud resources and internal networks.  Sites that are not in the trusted sites list are considered untrusted.  Microsoft Edge Driver can automate both InPrivate windows, and sites on the trusted sites list, including trusted sites that use Application Guard.
+Your enterprise administrator defines what are trusted sites, including cloud resources and internal networks.  Sites that aren't in the trusted sites list are considered untrusted.  Microsoft Edge Driver can automate both InPrivate windows, and sites in the trusted sites list.
 
 For more information about Application Guard, navigate to: 
 
