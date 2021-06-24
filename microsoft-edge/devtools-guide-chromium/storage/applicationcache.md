@@ -24,7 +24,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 # View Application Cache data with Microsoft Edge DevTools  
 
 > [!WARNING]
-> Do not use the Application Cache feature.  It is no longer supported.  The Application Cache API is being removed from the web platform.  See [Preparing for AppCache removal][WebDevAppcacheRemoval].
+> The Application Cache is deprecated, and you should avoid using it.  The Application Cache API is being removed from the web platform.  For more information, navigate to [Preparing for AppCache removal][WebDevAppcacheRemoval].
 
 This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect [Application Cache][MDNWebAPIsWindowApplicationCache] resources.  
 
