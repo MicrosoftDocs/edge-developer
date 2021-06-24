@@ -3,7 +3,7 @@ description: Learn how to test your website or app in Microsoft Edge or automate
 title: Use WebDriver (Chromium) for test automation  
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2021
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -20,11 +20,11 @@ WebDriver allows developers to create automated tests that simulate user interac
 
 ## Relationship between WebDriver and other software
 
-To automate Microsoft Edge with WebDriver to simulate user interaction, you need 3 components:
+To automate Microsoft Edge with WebDriver to simulate user interaction, you need three components:
 
 *  Microsoft Edge
 *  Microsoft Edge Driver
-*  A WebDriver testing framework, such as Selenium
+*  A WebDriver testing framework
 
 The functional relationship between WebDriver, Microsoft Edge Driver, Selenium, and Internet Explorer Driver is as follows.
 
@@ -374,9 +374,11 @@ Even though Microsoft Edge supports IE Mode, you can't use Microsoft Edge Driver
 
 ## Application Guard
 
-Untrusted sites that use Microsoft Defender Application Guard cannot be automated or manipulated using Microsoft Edge Driver. Application Guard launches untrusted sites in a container, and this container doesn't expose the remote debugging port that Microsoft Edge Driver needs to communicate with the site.
+Trusted sites that use Microsoft Defender Application Guard (Application Guard) can be automated using Microsoft Edge Driver.
 
-Your enterprise administrator defines what are trusted sites, including cloud resources and internal networks. Sites that are not in the trusted sites list are considered untrusted. Microsoft Edge Driver can automate both InPrivate windows, and sites on the trusted sites list. 
+Untrusted sites that use Application Guard cannot be automated or manipulated using Microsoft Edge Driver.  Application Guard launches untrusted sites in a container, and this container doesn't expose the remote debugging port that Microsoft Edge Driver needs to communicate with the site.
+
+Your enterprise administrator defines what are trusted sites, including cloud resources and internal networks.  Sites that are not in the trusted sites list are considered untrusted.  Microsoft Edge Driver can automate both InPrivate windows, and sites on the trusted sites list, including trusted sites that use Application Guard.
 
 For more information about Application Guard, navigate to: 
 
