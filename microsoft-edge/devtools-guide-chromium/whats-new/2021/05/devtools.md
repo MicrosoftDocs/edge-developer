@@ -106,6 +106,40 @@ Prior to Microsoft Edge version 92, in the **Console**, assistive technologies s
 :::row-end:::
 
 
+## Source Order Viewer
+
+<!--  Title: ...  -->  
+<!--  Subtitle: ...  -->  
+
+You can now view the order of source elements overlaid on the rendered webpage, for better accessibility inspection.
+
+The order of content in an HTML document is important for search engine optimization and accessibility.  CSS allows developers to create content that looks different in its on-screen order than the order in the HTML source document.  This is an accessibility problem, because screen-reader users could get a confusing experience.
+
+:::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
+   Activating the **Source Order Viewer** shows the order of the elements in the source as overlays on the page
+:::image-end:::
+
+For more information, navigate to [Test keyboard support using the Source Order Viewer](../../../accessibility/test-tab-key-source-order-viewer.md).
+
+<!-- todo: link to?  Chromium issue: 1094406  https://crbug.com/1094406 -->
+
+
+## User-Agent Client Hints for devices in the Network conditions tab 
+
+<!--  Title: ...  -->  
+<!--  Subtitle: ...  -->  
+
+User-Agent Client Hints are now applied for devices in the **User agent** field in the **Network conditions** tool.  User-Agent Client Hints are a new expansion to the Client Hints API that enables you to access information about a user's browser in an ergonomic way that preserves privacy.
+
+:::image type="complex" source="../../media/2021/05/user-agent.msft.png" alt-text="User agent" lightbox="../../media/2021/05/user-agent.msft.png":::
+   User agent
+:::image-end:::
+
+For more information, navigate to [User-Agent Client Hints](../../../../web-platform/user-agent-guidance.md#user-agent-client-hints).
+
+<!-- todo: link to?  Chromium issue: 1174299  https://crbug.com/1174299 -->
+
+
 ## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.8
 
 The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extension version 1.1.8 for Microsoft Visual Studio Code has the following changes since the previous release.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.8, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  
@@ -128,6 +162,92 @@ Version 1.1.8 of the [Microsoft Edge Developer Tools for Visual Studio Code][Vis
 For more information, navigate to [Using the tools][GithubIoDevToolsUsing].
 
 
+## Announcements from the Chromium project
+
+[!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
+
+
+### CSS grid editor
+
+You can now preview and author CSS Grid layouts, using the new CSS Grid editor.
+
+When an HTML element on your page has `display: grid` or `display: inline-grid` applied to it, you can see an icon appear next to it in the **Styles** tab. Click the icon to toggle the CSS grid editor. In the CSS grid editor, you can preview the potential changes with the onscreen icons (such as `justify-content: space-around`) and author the grid appearance with just one click.
+
+:::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="CSS Grid editor" lightbox="../../media/2021/05/__.msft.png":::
+   CSS Grid editor
+:::image-end:::
+
+For the history of this feature in the Chromium open-source project, navigate to Issue [1203241][https://crbug.com/1203241].
+
+
+### Support for const redeclarations in the Console
+
+The Console now supports redeclaration of `const` variables, in addition to the existing `let` and `class` redeclarations. The inability to redeclare `const` variables was a common annoyance for web developers who use the Console to experiment with new JavaScript code.
+
+This support for redeclaration of `const` variables allows yet to paste code into the DevTools console to see how it works.  You can experiment, making small changes to the code, and repeat the process without refreshing the page.  Previously, DevTools threw a syntax error if the code redeclared a `const` binding.
+
+Refer to the example below. `const` redeclaration is supported across separate REPL scripts (refer to variable `a`).  Note that the following scenarios are not supported, by design:
+
+*  `const` redeclaration of page scripts is not allowed in REPL scripts.
+*  `const` redeclaration within the same REPL script is not allowed (refer to variable `b`).
+
+:::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="const redeclarations" lightbox="../../media/2021/05/__.msft.png":::
+   const redeclarations
+:::image-end:::
+
+For the history of this feature in the Chromium open-source project, navigate to Issue [1076427][https://crbug.com/1076427].
+
+
+### New shortcut to view frame details
+
+You can now quickly view frame details.  Right-click the the `iframe` element in the **Elements** tool, and then select **Show frame details**.
+
+:::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="Show frame details" lightbox="../../media/2021/05/__.msft.png":::
+   Show frame details
+:::image-end:::
+
+This takes you to a view of the `iframe`'s details in the **Application** panel where you can examine document details, security & isolation status, permissions policy, and more, to debug potential issues.
+
+:::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="Frame details view" lightbox="../../media/2021/05/__.msft.png":::
+   Frame details view
+:::image-end:::
+
+For the history of this feature in the Chromium open-source project, navigate to Issue [1192084][CR1192084].
+
+
+### Enhanced CORS debugging support
+
+__
+
+For the history of this feature in the Chromium open-source project, navigate to Issue [xxxxxxx][CRxxxxxxx].  
+
+:::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="__" lightbox="../../media/2021/05/__.msft.png":::
+   __
+:::image-end:::
+
+
+### Network panel updates (note that the UA client hints announcement should be its own section in the Edge announcements section)
+
+__
+
+For the history of this feature in the Chromium open-source project, navigate to Issue [xxxxxxx][CRxxxxxxx].  
+
+:::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="__" lightbox="../../media/2021/05/__.msft.png":::
+   __
+:::image-end:::
+
+
+### Include Compute Intersections in the Performance panel
+
+__
+
+For the history of this feature in the Chromium open-source project, navigate to Issue [xxxxxxx][CRxxxxxxx].  
+
+:::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="__" lightbox="../../media/2021/05/__.msft.png":::
+   __
+:::image-end:::
+
+
 ## Download the Microsoft Edge preview channels  
 
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.  
@@ -137,7 +257,8 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
 
-<!-- links -->  
+
+<!-- links -->
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"  
 [GithubIoDevToolsUsing]: https://microsoft.github.io/vscode-edge-devtools/using.html "Using the tools | GitHub"
 
@@ -149,8 +270,27 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 [YoutubeEdgeStateOfThePlatform]: https://www.youtube.com/watch?v=sU0WRZ0kkNo "Microsoft Edge: State of the Platform | YouTube"
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"  
+[CR1192084]: https://crbug.com/1192084 "Issue 1192084: Lorem al Ipsum | Chromium bugs"
+[CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"
+[CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"
+[CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"
+[CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"
+[CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"
+[CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"
+[CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"
+[CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"
+[CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"
+[CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
+> [!NOTE]
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-xx) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).
+
+[![Creative Commons License][CCby4Image]][CCA4IL]
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen
