@@ -45,9 +45,9 @@ The fastest way to directly open the **Console** is to select `Control`+`Shift`+
 
 ## Inspect and filter information on the current webpage  
 
-When you open DevTools on a webpage, there's sometimes an overwhelming amount of information logged to the **Console**.  The amount of information becomes a problem when you need to identify important information.  To view the important information that needs action, use the [Issues][DevtoolsIssuesIndex] tool in DevTools.
+When you open DevTools on a webpage, there may be an overwhelming amount of information in the **Console**.  The amount of information becomes a problem when you need to identify important information.  To view the important information that needs action, use the [Issues][DevtoolsIssuesIndex] tool in DevTools.
 
-Issues are gradually being moved from the **Console** to the **Issues** tool.  However, much of the noise remains, which is why it's a good idea to know about the [automated log and filter options][DevtoolsConsoleConsoleFilters] in the **Console**.  
+Issues are gradually being moved from the **Console** to the **Issues** tool.  However, there's still a lot of information in **Console**, which is why it's a good idea to know about the automated log and filter options in the **Console**.  For more information, navigate to [Filter Console messages][DevtoolsConsoleConsoleFilters].
 
 :::image type="complex" source="../media/console-intro-noise.msft.png" alt-text="DevTools with a Console full of messages" lightbox="../media/console-intro-noise.msft.png":::
    DevTools with a **Console** full of messages  
