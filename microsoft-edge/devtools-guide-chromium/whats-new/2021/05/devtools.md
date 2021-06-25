@@ -200,13 +200,15 @@ For the history of this feature in the Chromium open-source project, navigate to
 
 ### New shortcut to view frame details
 
-You can now quickly view frame details.  Right-click the the `iframe` element in the **Elements** tool, and then select **Show frame details**.
+To quickly view frame details, you can now right-click the the `iframe` element in the **Elements** tool, and then select **Show frame details**.
 
 :::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="Show frame details" lightbox="../../media/2021/05/__.msft.png":::
    Show frame details
 :::image-end:::
 
-This takes you to a view of the `iframe`'s details in the **Application** panel where you can examine document details, security & isolation status, permissions policy, and more, to debug potential issues.
+This displays the details about the `iframe` in the **Application** panel where you can examine document details, security & isolation status, permissions policy, and more, to debug potential issues.
+
+<!-- demo page: https://wolfib.github.io/web-demos/ esp https://wolfib.github.io/web-demos/jsIframe.html -->
 
 :::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="Frame details view" lightbox="../../media/2021/05/__.msft.png":::
    Frame details view
