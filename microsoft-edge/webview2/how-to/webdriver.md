@@ -103,7 +103,7 @@ At this point you should have WebView2 Runtime installed, built a WebView2 proje
     | `is_legacy` | Set to `false`, which tells Selenium that you are driving the new Chromium-based Microsoft Edge browser. |  
     | `"webview2"` | A string that tells Selenium you are driving WebView2. |  
     
-1.  Next, configure `edgeOptions` to use Chromium and WebView by setting the member variables `UseChromium` and `UseWebView` to true. Then, set `edgeOptions.BinaryLocation` to the file path of your WebView2 project runtime. Finally, create the `EdgeDriver` object using `EdgeOptions`.  
+1.  Next, configure `edgeOptions` to use Chromium and WebView2 by setting the member variables `UseChromium` and `UseWebView` to true. Then, set `edgeOptions.BinaryLocation` to the file path of your WebView2 project runtime. Finally, create the `EdgeDriver` object using `EdgeOptions`.  
     
     You may copy and paste the following code underneath `edgeOptions`.  Ensure you specify the correct file paths to your project runtime and the Microsoft Edge Driver runtime on your machine.  
     
