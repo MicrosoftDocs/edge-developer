@@ -109,7 +109,7 @@ At this point you should have WebView2 Runtime installed, built a WebView2 proje
     
     ```csharp
 
-    //Set edgeOptions to use Chromium and WebView
+    //Set edgeOptions to use Chromium and WebView2
     edgeOptions.UseChromium = true;
     edgeOptions.UseWebView = true;
 
