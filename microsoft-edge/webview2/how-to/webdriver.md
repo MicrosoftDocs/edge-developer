@@ -64,9 +64,9 @@ At this point you should have WebView2 Runtime installed, built a WebView2 proje
        Download NuGet package  
     :::image-end:::  
     
-1.  Type `Selenium.WebDriver` in the search bar, choose **Selenium.WebDriver** from the results, and make sure to checkmark the box next to **include pre-release**.  On the right-hand side window, ensure the **Version** is set to **install 4.0.0-alpha07** or later and choose **Install**.  NuGet downloads Selenium to your machine.  
+1.  Type `Selenium.WebDriver` in the search bar, choose **Selenium.WebDriver** from the results, and make sure to checkmark the box next to **include pre-release**.  On the right-hand side window, ensure the **Version** is set to **install 4.0.0-beta4** or later and choose **Install**.  NuGet downloads Selenium to your machine.  
     
-    To learn more about the Selenium.WebDriver NuGet package, navigate to [Selenium.WebDriver 4.0.0-alpha07][NugetSeleniumWebdriver700Alpha07].  
+    To learn more about the Selenium.WebDriver NuGet package, navigate to [Selenium.WebDriver 4.0.0-beta4][NugetSeleniumWebdriver700beta4].  
     
     :::image type="complex" source="../media/webdriver/nuget.png" alt-text="Manage NuGet package" lightbox="../media/webdriver/nuget.png":::
        Manage NuGet package  
@@ -96,14 +96,7 @@ At this point you should have WebView2 Runtime installed, built a WebView2 proje
 
     ```  
     
-    The `EdgeOptions` object takes in the following two parameters.  
-    
-    | Parameter | Details |    
-    |:--- |:--- |  
-    | `is_legacy` | Set to `false`, which tells Selenium that you are driving the new Chromium-based Microsoft Edge browser. |  
-    | `"webview2"` | A string that tells Selenium you are driving WebView2. |  
-    
-1.  Next, configure `edgeOptions` to use Chromium and WebView2 by setting the member variables `UseChromium` and `UseWebView` to true. Then, set `edgeOptions.BinaryLocation` to the file path of your WebView2 project runtime. Finally, create the `EdgeDriver` object using `EdgeOptions`.  
+1.  Next, configure `edgeOptions` to use Chromium and WebView2 by setting the options `UseChromium` and `UseWebView` to true. Then, set `edgeOptions.BinaryLocation` to the file path of the Edge Driver. Finally, create the `EdgeDriver` object using `EdgeOptions`.  
     
     You may copy and paste the following code underneath `edgeOptions`.  Ensure you specify the correct file paths to your project runtime and the Microsoft Edge Driver runtime on your machine.  
     
@@ -161,7 +154,7 @@ Congratulations.  You have successfully automated a WebView2 project and driven 
 [GithubMicrosoftedgewebview2samplesSampleappsWebview2apisample]: https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample "WebView2 API Sample - MicrosoftEdge/WebView2Samples | GitHub"  
 [GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisamplePrerequisites]: https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#prerequisites "Prerequisites - WebView2 API Sample | GitHub"  
 
-[NugetSeleniumWebdriver700Alpha07]: https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-alpha07 "Selenium.WebDriver 4.0.0-alpha07 | NuGet Gallery"  
+[NugetSeleniumWebdriver700beta4]: https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-beta4 "Selenium.WebDriver 4.0.0-beta4 | NuGet Gallery"  
 
 [SeleniumWebdriver]: https://www.selenium.dev/documentation/en/webdriver "WebDriver | Selenium"  
 
