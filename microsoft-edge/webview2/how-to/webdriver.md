@@ -119,7 +119,7 @@ At this point you should have WebView2 Runtime installed, built a WebView2 proje
 
     ```  
     
-3.  Now, `EdgeDriver` is configured to drive the WebView2 in your project.  For example, if you are using the **WebView2API Sample**, you may navigate to `https://microsoft.com` by running the `e.Url = @"https://www.microsoft.com";` command.  Verify the Selenium drive WebView2 by setting a breakpoint on the line and running the project.  
+3.  Now, `EdgeDriver` is configured to drive the WebView2 in your project.  For example, if you are using the **WebView2API Sample**, you may navigate to `https://microsoft.com` by running the `e.Url = @"https://www.microsoft.com";` command.  Verify that Selenium can drive WebView2 by setting a breakpoint on the line and running the project.  
     
     ```csharp
         //The following navigates the WebView2API Sample from bing.com to microsoft.com
