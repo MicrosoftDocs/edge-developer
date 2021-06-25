@@ -219,20 +219,31 @@ For the history of this feature in the Chromium open-source project, navigate to
 
 ### Enhanced CORS debugging support
 
-__
+Cross-origin resource sharing (CORS) errors are now surfaced in the **Issues** tab.  There are various potential causes of CORS errors.  Click to expand each issue to understand the potential causes and solutions.
 
-For the history of this feature in the Chromium open-source project, navigate to Issue [xxxxxxx][CRxxxxxxx].  
-
-:::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="__" lightbox="../../media/2021/05/__.msft.png":::
-   __
+:::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="CORS issues in the Issues tab" lightbox="../../media/2021/05/__.msft.png":::
+   CORS issues in the Issues tab
 :::image-end:::
 
+For the history of this feature in the Chromium open-source project, navigate to Issue [1141824][CR1141824].  
 
-### Network panel updates (note that the UA client hints announcement should be its own section in the Edge announcements section)
 
-__
+### Network panel updates
 
-For the history of this feature in the Chromium open-source project, navigate to Issue [xxxxxxx][CRxxxxxxx].  
+<!-- the "User Agent client hints" announcement is its own section in the Edge announcements section -->
+
+#### Renamed XHR label to Fetch\/XHR \#
+
+The **XHR** label is now renamed to **Fetch/XHR**. This change makes it clearer that this filter includes both `XMLHttpRequest` and `Fetch` API network requests.
+
+https://xhr.spec.whatwg.org/
+
+https://fetch.spec.whatwg.org/
+
+
+For the history of this feature in the Chromium open-source project, navigate to Issue [1201398][CR1201398].  
+
+
 
 :::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="__" lightbox="../../media/2021/05/__.msft.png":::
    __
@@ -274,8 +285,8 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 [CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"  
 [CR1192084]: https://crbug.com/1192084 "Issue 1192084: Lorem al Ipsum | Chromium bugs"
-[CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"
-[CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"
+[CR1141824]: https://crbug.com/1141824 "Issue 1141824: Lorem al Ipsum | Chromium bugs"
+[CR1201398]: https://crbug.com/1201398 "Issue 1201398: Lorem al Ipsum | Chromium bugs"
 [CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"
 [CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"
 [CRxxxxxxx]: https://crbug.com/xxxxxxx "Issue xxxxxxx: Lorem al Ipsum | Chromium bugs"
