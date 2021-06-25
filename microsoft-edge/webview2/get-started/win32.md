@@ -19,9 +19,6 @@ Ensure you install the following list of pre-requisites before proceeding.
 
 *   [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).  
     
-    > [!NOTE]
-    > The WebView team recommends using the Canary channel for full API compatability.
-    
 *   [Visual Studio][MicrosoftVisualstudioMain] 2015 or later with C++ support installed.  
     
 ## Step 1 - Create a single-window app  
