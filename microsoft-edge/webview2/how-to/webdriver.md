@@ -137,7 +137,7 @@ At this point you should have WebView2 Runtime installed, built a WebView2 proje
 Congratulations.  You have successfully automated a WebView2 project and driven WebView2 using Selenium and Microsoft Edge Driver.  
 
 > [!Note]
-> [Here][GithubSeleniumProject] is a project the Micrsoft Edge team created to allow Selenium 3 users to drive Edge Chromium and WebView2 using the sample API that's provided in Selenium 4.
+> [Here][GithubSeleniumProject] is a project the Micrsoft Edge team created to allow Selenium 3 users to drive Edge Chromium and WebView2 using the same API that's provided in Selenium 4.
 
 ## See also  
 
