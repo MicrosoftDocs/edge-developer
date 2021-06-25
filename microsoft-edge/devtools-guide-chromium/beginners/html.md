@@ -182,19 +182,19 @@ If you are developing a page with a lot of HTML, it becomes tedious to go back-a
 
 Before editing content from Microsoft Edge DevTools, you should understand the difference between HTML and the DOM /([Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)/). The best way to learn is by example:  
 
-1.  Navigate to the **live tab**. At the bottom of your page, the text `A new element!?!` appears.  
+1.  Navigate to the **live tab**. At the bottom of your page, the text `A new element!?!` displays.  
     
-    :::image type="complex" source="media/beginners-html-dom1.msft.png" alt-text="At the bottom of the page the text A new element!?! appears" lightbox="media/beginners-html-dom1.msft.png":::
-       At the bottom of the page the text `A new element!?!` is appears  
+    :::image type="complex" source="media/beginners-html-dom1.msft.png" alt-text="At the bottom of the page the text A new element!?! displays" lightbox="media/beginners-html-dom1.msft.png":::
+       At the bottom of the page the text `A new element!?!` is displays  
     :::image-end:::  
     
-1.  Go back to the **editor tab** and try to find the text in `index.html`. The text does not appear in this view.  
+1.  Go back to the **editor tab** and try to find the text in `index.html`. The text does not display in this view.  
     
     :::image type="complex" source="media/beginners-html-dom2.msft.png" alt-text="The mystery text A new element!?! is not found in index.html" lightbox="media/beginners-html-dom2.msft.png":::
        The mystery text `A new element!?!` is not found in `index.html`  
     :::image-end:::  
     
-1.  Go back to the **live tab**, hover on `A new element!?!`, **right-click** to open the contextual menu and choose **Inspect**.  
+1.  Go back to the **live tab**, hover on `A new element!?!`, open the contextual menu (right-click) to open the contextual menu and choose **Inspect**.  
     
     :::image type="complex" source="media/beginners-html-dom3.msft.png" alt-text="Inspecting some text" lightbox="media/beginners-html-dom3.msft.png":::
        Inspecting some text  
@@ -216,7 +216,7 @@ For now, think of it as a scripting language that may change the content of your
 
 If you want to quickly experiment with content changes without ever leaving the live tab, try DevTools.  
 
-1.  In DevTools, hover on `Your site!`, **right-click** to open the contextual menu and choose **Edit as HTML**.  
+1.  In DevTools, hover on `Your site!`, open the contextual menu (right-click) to open the contextual menu and choose **Edit as HTML**.  
     
     :::image type="complex" source="media/beginners-html-edit1.msft.png" alt-text="Editing the node as HTML" lightbox="media/beginners-html-edit1.msft.png":::
        Editing the node as HTML  
