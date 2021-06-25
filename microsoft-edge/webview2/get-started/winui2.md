@@ -75,7 +75,7 @@ keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWeb
 
 <!-- refer to the NuGet package as a "WebView2" package or a "WinUI2" package? -->
 
-1.  (Missing step.)
+1.  You may need to reach out to the owner of this document for clarification on this step before proceeding further.
 
 1.  In Visual Studio, in **Solution Explorer**, right-click the node for the project, and then select **Manage NuGet Packages**.
 
