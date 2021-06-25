@@ -48,10 +48,6 @@ To open the **Issues** tool:
 
 1.  Navigate to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page][A11ytestingPagewitherrors] in a new tab or window.
 
-    :::image type="complex" source="../media/issues-accessibility-demo-page-initial.msft.png" alt-text="Accessibility-testing demo page, which has some issues" lightbox="../media/issues-accessibility-demo-page-initial.msft.png":::
-       Accessibility-testing demo page, which has some issues
-    :::image-end:::
-
 1.  Open DevTools.  After a few seconds, the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears, in the upper right corner of DevTools.  The number you get might be different.
 
 1.  Select the **Issues counter**.  The **Issues** tool opens, populated with issues in several categories.
@@ -62,7 +58,7 @@ To open the **Issues** tool:
 
 ### Other ways to open the Issues tool
 
-There are several ways to open the **Issues** tool:
+There are several additional ways to open the **Issues** tool:
 *  Select the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) in the upper right corner of DevTools or at the top of the **Console**.
 *  Select the **More Tools** (**+**) menu in the main panel or the **Drawer**, and then select **Issues**.
 *  Select **Customize and control DevTools** > **More tools** > **Issues**.
@@ -114,7 +110,7 @@ An issue in the **Issues** tool typically includes one or more links that open a
        Selecting an affected resource in the **Issues** tool for the accessibility demo page opens the **Elements** tool
     :::image-end:::
 
-    An expanded issue may have an **Open in Network** link, even if the issue isn't in the **Network** category.
+    An expanded issue may have a **Network** link, to display the affected resource in the **Network** tool.
 
     :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="The Network tool opens when you select a Network resource link" lightbox="../media/issues-tab-view-issue.msft.png":::
     The **Network** tool opens when you select a **Network** resource link
