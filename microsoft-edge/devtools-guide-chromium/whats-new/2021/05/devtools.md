@@ -115,7 +115,7 @@ You can now view the order of source elements overlaid on the rendered webpage, 
 
 The order of content in an HTML document is important for search engine optimization and accessibility.  CSS allows developers to create content that looks different in its on-screen order than the order in the HTML source document.  This is an accessibility problem, because screen-reader users could get a confusing experience.
 
-:::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
+:::image type="complex" source="../../media/2021/05/source-order-viewer.msft.png" alt-text="Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page" lightbox="../../media/2021/05/source-order-viewer.msft.png":::
    Activating the **Source Order Viewer** shows the order of the elements in the source as overlays on the page
 :::image-end:::
 
@@ -171,18 +171,20 @@ For more information, navigate to [Using the tools][GithubIoDevToolsUsing].
 
 You can now preview and author CSS Grid layouts, using the new CSS Grid editor.
 
-When an HTML element on your page has `display: grid` or `display: inline-grid` applied to it, you can see an icon appear next to it in the **Styles** tab. Click the icon to toggle the CSS grid editor. In the CSS grid editor, you can preview the potential changes with the onscreen icons (such as `justify-content: space-around`) and author the grid appearance with just one click.
+When an HTML element on your page has `display: grid` or `display: inline-grid` applied to it, a grid icon is displayed next to it in the **Styles** tab. Click the grid icon to display or hide the CSS grid editor. In the CSS grid editor, select any of the icons (such as `justify-content: space-around`) to preview the layout in the rendered page.  Flex layout works similarly.
 
-:::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="CSS Grid editor" lightbox="../../media/2021/05/__.msft.png":::
+:::image type="complex" source="../../media/2021/05/css-grid-editor.msft.png" alt-text="CSS Grid editor" lightbox="../../media/2021/05/css-grid-editor.msft.png":::
    CSS Grid editor
 :::image-end:::
+
+<!-- screenshot uses https://jec.fyi -->
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1203241][CR1203241].
 
 
 ### Support for const redeclarations in the Console
 
-The Console now supports redeclaration of `const` variables, in addition to the existing `let` and `class` redeclarations. The inability to redeclare `const` variables was a common annoyance for web developers who use the Console to experiment with new JavaScript code.
+The Console now supports redeclaration of `const` variables within a given REPL script (a series of statements entered as a group), in addition to the existing `let` and `class` redeclarations. The inability to redeclare `const` variables was a common annoyance for web developers who use the Console to experiment with new JavaScript code.
 
 This support for redeclaration of `const` variables allows yet to paste code into the DevTools console to see how it works.  You can experiment, making small changes to the code, and repeat the process without refreshing the page.  Previously, DevTools threw a syntax error if the code redeclared a `const` binding.
 
@@ -191,25 +193,48 @@ Refer to the example below. `const` redeclaration is supported across separate R
 *  `const` redeclaration of page scripts is not allowed in REPL scripts.
 *  `const` redeclaration within the same REPL script is not allowed (refer to variable `b`).
 
-:::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="const redeclarations" lightbox="../../media/2021/05/__.msft.png":::
-   const redeclarations
+:::image type="complex" source="../../media/2021/05/support-for-const-redeclaration.msft.png" alt-text="Redeclaring a const variable is allowed in the console" lightbox="../../media/2021/05/support-for-const-redeclaration.msft.png":::
+   Redeclaring a const variable is allowed in the console
 :::image-end:::
 
+<!-- screenshot uses https://googlechrome.github.io/samples/intersectionobserver but could use any page, or no page -->
+
+For example, to produce the results shown in the previous screenshot:
+
+1.  In DevTools version 92 or later, in the **Console**, enter the following statement and then select `Enter`.
+
+    ```javascript
+    const a = 'declare';
+    ```
+    
+1.  Enter the following statement and then select `Enter`.  This is a separate REPL script, independent from the above script, so no error message appears.
+
+    ```javascript
+    const a = 'redeclare';
+    ```
+    
+1.  Enter both of the following statements as a single script by selecting `Shift`+`Enter` at the end of the first statement.  Then select `Enter`.  The const variable is redeclared within the same REPL script, so now an error message appears.
+
+    ```javascript
+    const b = 'declare';
+    const b = 'no redeclaration on same REPL script';
+    ```
+    
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1076427][CR1076427].
 
 
-### New shortcut to view frame details
+### New shortcut to view iframe details
 
-To quickly view frame details, you can now right-click the `iframe` element in the **Elements** tool, and then select **Show frame details**.
+To quickly view `iframe` details, you can now right-click an `iframe` element in the **Elements** tool, and then select **Show iframe details**.
 
-:::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="Show frame details" lightbox="../../media/2021/05/__.msft.png":::
-   Show frame details
+:::image type="complex" source="../../media/2021/05/show-iframe-details.msft.png" alt-text="iframe details view" lightbox="../../media/2021/05/show-iframe-details.msft.png":::
+   iframe details view
 :::image-end:::
 
 This displays the details about the `iframe` in the **Application** tool.  In the **Application** tool, you can examine document details, security and isolation status, permissions policy, and more, to debug potential issues.
 
-:::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="Frame details view" lightbox="../../media/2021/05/__.msft.png":::
-   Frame details view
+:::image type="complex" source="../../media/2021/05/show-iframe-details-application-tool.msft.png" alt-text="Frame details in the Application tool" lightbox="../../media/2021/05/show-iframe-details-application-tool.msft.png":::
+   Frame details in the **Application** tool
 :::image-end:::
 
 <!-- demo page: https://wolfib.github.io/web-demos/ esp https://wolfib.github.io/web-demos/jsIframe.html -->
@@ -221,9 +246,11 @@ To review the history of this feature in the Chromium open-source project, navig
 
 Cross-origin resource sharing (CORS) errors are now surfaced in the **Issues** tab.  There are various potential causes of CORS errors.  Click to expand each issue to understand the potential causes and solutions.
 
-:::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="CORS issues in the Issues tab" lightbox="../../media/2021/05/__.msft.png":::
+:::image type="complex" source="../../media/2021/05/cors-debugging-support.msft.png" alt-text="CORS issues in the Issues tab" lightbox="../../media/2021/05/cors-debugging-support.msft.png":::
    CORS issues in the Issues tab
 :::image-end:::
+
+<!-- screenshot uses http://cors-errors.glitch.me -->
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1141824][CR1141824].
 
@@ -232,8 +259,8 @@ To review the history of this feature in the Chromium open-source project, navig
 
 In the **Network** tool, the **XHR** label is now renamed to **Fetch/XHR**. This change makes it clearer that this filter includes both `XMLHttpRequest` and `Fetch` API network requests.
 
-:::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="__" lightbox="../../media/2021/05/__.msft.png":::
-   __
+:::image type="complex" source="../../media/2021/05/fetch-xhr.msft.png" alt-text="The Network tool now shows Fetch/XHR instead of XHR" lightbox="../../media/2021/05/fetch-xhr.msft.png":::
+   The **Network** tool now shows **Fetch/XHR** instead of **XHR**
 :::image-end:::
 
 For more information, navigate to:
@@ -243,24 +270,29 @@ For more information, navigate to:
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1201398][CR1201398].
 
 
-### Filter Wasm resource type in the Network panel
+### Filter Wasm resource type in the Network tool
 
 In the **Network** tool, you can now select the new **Wasm** button to filter the WebAssembly network requests.
 
-:::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="Filter by Wasm" lightbox="../../media/2021/05/__.msft.png":::
+:::image type="complex" source="../../media/2021/05/wasm-network-requests.msft.png" alt-text="Filter by Wasm" lightbox="../../media/2021/05/wasm-network-requests.msft.png":::
    Filter by Wasm
 :::image-end:::
+
+<!-- screenshot uses http://memory-inspector.glitch.me/demo-wasm.html -->
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1103638][CR1103638].
 
 
-### Include Compute Intersections in the Performance panel
+### Compute Intersections are now included in the Performance tool
 
 DevTools now shows **Compute Intersections** in the **Frames** chart. These changes help you to identify intersection observers events and debug its potential performance overheads.
 
-:::image type="complex" source="../../media/2021/05/__.msft.png" alt-text="Compute Intersections in the Performance panel" lightbox="../../media/2021/05/__.msft.png":::
-   Compute Intersections in the Performance panel
+:::image type="complex" source="../../media/2021/05/compute-intersections-in-perf-tool.msft.png" alt-text="Compute Intersections in the Performance tool" lightbox="../../media/2021/05/compute-intersections-in-perf-tool.msft.png":::
+   Compute Intersections in the **Performance** tool
 :::image-end:::
+
+<!-- screenshot uses https://googlechrome.github.io/samples/intersectionobserver -->
+<!-- todo: redo screenshot to look like the one at https://developer.chrome.com/blog/new-in-devtools-92/#computed-intersections -->
 
 For more about intersection observers, navigate to [Trust is good, observation is better: Intersection Observer v2](https://web.dev/intersectionobserver-v2/).
 
