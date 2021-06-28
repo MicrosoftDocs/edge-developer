@@ -3,7 +3,7 @@ description: Get Started with HTML and the DOM
 title: "DevTools for beginners: Get started with HTML and the DOM"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/25/2021
+ms.date: 06/28/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, devtools for beginners, devtools HTML for beginners, devtools DOM for beginners, devtools html tutorial, devtools DOM tutorial, devtools document object model tutorial
@@ -25,23 +25,23 @@ keywords: microsoft edge, web development, f12 tools, devtools, devtools for beg
 
 This is the first in a series of tutorials that teach you the basics of web development. Learn about a set of web developer tools, named Microsoft Edge DevTools, that may increase your productivity.  
 
-In this tutorial, you learn about HTML and the DOM /([Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)/). HTML is one of the core technologies of web development. It is the language that controls the structure and content of webpages. The DOM is also related to the structure and content of webpages, which we learn more about later.
+This tutorial describes HTML and the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) /(DOM/). HTML is one of the core technologies of web development. It is the language that controls the structure and content of webpages. The DOM is also related to the structure and content of webpages, which we learn more about later.
 
 ## Goals  
 
-You are going to learn web development by building your own website.  By the time you complete all of the tutorials in the **DevTools for Beginners** series, your finished site may look like the following figure.  
+You're going to learn web development by building a website.  By the time you complete all of the tutorials in the **DevTools for Beginners** series, your finished site may look like the following figure.  
 
 :::image type="complex" source="media/beginners-html-finished.msft.png" alt-text="The finished site" lightbox="media/beginners-html-finished.msft.png":::
    The finished site  
 :::image-end:::  
 
-By the end of this tutorial, you should understand the following topics.  
+By the end of this tutorial, you should understand the following concepts.  
 
 *   How HTML and the DOM create the content displayed on webpages.  
 *   How Microsoft Edge DevTools may help you experiment with HTML and DOM changes.  
 *   The difference between HTML and the DOM.  
 
-You will also have a working website.  You may use the site to host your resume or blog.  
+You will also have a working website. You may use the site to host your resume or blog.  
 
 ## Prerequisites  
 
@@ -72,7 +72,7 @@ You are going to build a site in the Glitch online code editor.
        The remixed project  
     :::image-end:::  
     
-1.  If you plan to complete the next tutorial in this series, choose **Sign In** to Glitch using your Facebook, GitHub, or Google account; or email yourself a magic link. If you choose to not sign in to an account, you cannot edit the project after closing the editor tab.
+1.  If you plan to complete the next tutorial in this series, choose **Sign In** to Glitch using your Facebook, GitHub, or Google account; or email yourself a magic link. If you choose not to sign in to an account, you cannot edit the project after closing the editor tab.
 
 1.  Choose **Show** \> **In a New Window**.  A new tab opens, showing the live page. This tab is called the **live tab** throughout this tutorial.  
     
@@ -82,7 +82,7 @@ You are going to build a site in the Glitch online code editor.
     
 ## Add content  
 
-Your site is very simple. Complete the following steps to add some content.  
+Your site needs more information. Complete the following steps to add some content.  
 
 1.  In the **editor tab**, replace `<!-- You're "About Me" will go here.  -->` with `<h1>About Me</h1>`.  
     
@@ -183,24 +183,28 @@ If you are developing a page with a lot of HTML, it becomes tedious to go back-a
 Before editing content from Microsoft Edge DevTools, you should understand the difference between HTML and the DOM /([Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)/). The best way to learn is by example:  
 
 1.  Navigate to the **live tab**. At the bottom of your page, the text `A new element!?!` displays.  
-    
+
+<!--
     :::image type="complex" source="media/beginners-html-dom1.msft.png" alt-text="At the bottom of the page the text A new element!?! displays" lightbox="media/beginners-html-dom1.msft.png":::
        At the bottom of the page the text `A new element!?!` is displays  
-    :::image-end:::  
+    :::image-end:::
+-->
     
-1.  Go back to the **editor tab** and try to find the text in `index.html`. The text does not display in this view.  
-    
+1.  Open the **editor tab** and try to find the text in `index.html`. The text does not display in this view.  
+
+<!--
     :::image type="complex" source="media/beginners-html-dom2.msft.png" alt-text="The mystery text A new element!?! is not found in index.html" lightbox="media/beginners-html-dom2.msft.png":::
        The mystery text `A new element!?!` is not found in `index.html`  
-    :::image-end:::  
-    
-1.  Go back to the **live tab**, hover on `A new element!?!`, open the contextual menu (right-click) to open the contextual menu and choose **Inspect**.  
+    :::image-end:::
+-->
+
+1.  Open the **live tab**, hover on `A new element!?!`, open the contextual menu (right-click) to open the contextual menu and choose **Inspect**.  
     
     :::image type="complex" source="media/beginners-html-dom3.msft.png" alt-text="Inspecting some text" lightbox="media/beginners-html-dom3.msft.png":::
        Inspecting some text  
     :::image-end:::  
     
-    DevTools opens up alongside your page.  `<div>A new element!?!</div>` is highlighted. Although this structure in DevTools looks like HTML, it is the **DOM Tree**.  
+    DevTools opens up alongside your page. `<div>A new element!?!</div>` is highlighted. Although this structure in DevTools looks like HTML, it is the **DOM Tree**.  
     
     :::image type="complex" source="media/beginners-html-dom4.msft.png" alt-text="DevTools is open alongside the page" lightbox="media/beginners-html-dom4.msft.png":::
        DevTools is open alongside the page  
@@ -246,7 +250,7 @@ If you want to quickly experiment with content changes without ever leaving the 
        :::column-end:::
     :::row-end:::  
     
-1.  Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save your changes, or click outside the box. Your changes automatically show up in the live view of your page. The text `Your site!` has been replaced with the new content.  
+1.  Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save your changes, or select outside the box. Your changes automatically show up in the live view of your page. The text `Your site!` has been replaced with the new content.  
     
     :::image type="complex" source="media/beginners-html-edit3.msft.png" alt-text="The new content shows up immediately on the page" lightbox="media/beginners-html-edit3.msft.png":::
        The new content shows up immediately on the page  
@@ -347,7 +351,7 @@ You're almost done. You made a few changes to the page in DevTools, but they're 
     </html>
     ```  
     
-1.  Go back to the **editor tab** and replace the content of your `index.html` file with the code that you just copied.  
+1.  Go back to the **editor tab** and replace the content of your `index.html` file with the code that you copied.  
     
     :::image type="complex" source="media/beginners-html-copy2.msft.png" alt-text="How your index.html file should look" lightbox="media/beginners-html-copy2.msft.png":::
        How your `index.html` file should look  
