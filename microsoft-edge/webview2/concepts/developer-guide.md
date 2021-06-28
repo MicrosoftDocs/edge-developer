@@ -49,7 +49,7 @@ To take action when a new version is available, such as notifying the user to re
 ## Manage the lifetime of the user data folder 
 WebView2 apps create a user data folder to store data such as cookies, credentials, permissions, and so on. After creating the folder, your app is responsible for managing the lifetime of the user data folder, including clean up when the app is uninstalled.  For more information, navigate to [Managing the User Data Folder][Webview2ConceptsUserDataFolder].  
 
-## Handle runtime processes failures
+## Handle runtime-process failures
 Your WebView2 app should listen for and handle the `ProcessFailed` event, so the app can recover from failures of runtime processes that support the WebView2 app process.
 
 WebView2 apps are supported by a collection of runtime processes that run alongside the app process. These supporting runtime processes can fail for a variety of reasons, such as running out of memory, or being terminated by the user. When a supporting runtime process fails, WebView2 notifies the application by raising the [ProcessFailed event][WebView2ProcessFailedEvent].
