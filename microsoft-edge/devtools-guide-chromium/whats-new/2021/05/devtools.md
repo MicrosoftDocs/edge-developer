@@ -213,7 +213,7 @@ For example, to produce the results shown in the previous screenshot:
     const a = 'redeclare';
     ```
     
-1.  Enter both of the following statements as a single script by selecting `Shift`+`Enter` at the end of the first statement.  Then select `Enter`.  The const variable is redeclared within the same REPL script, so now an error message appears.
+1.  Enter both of the following statements as a single REPL script.  To do this, either copy and paste the following code listing into the **Console**, or type the first statement followed by `Shift`+`Enter` and then type the second statement followed by `Enter`.  The const variable is redeclared within the same REPL script, so now an error message appears.
 
     ```javascript
     const b = 'declare';
@@ -264,8 +264,8 @@ In the **Network** tool, the **XHR** label is now renamed to **Fetch/XHR**. This
 :::image-end:::
 
 For more information, navigate to:
-*  [XMLHttpRequest spec](https://xhr.spec.whatwg.org)
-*  [Fetch spec](https://fetch.spec.whatwg.org)
+*  [XMLHttpRequest spec][XhrSpecWhatwgOrg]
+*  [Fetch spec][FetchSpecWhatwgOrg]
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1201398][CR1201398].
 
@@ -285,16 +285,17 @@ To review the history of this feature in the Chromium open-source project, navig
 
 ### Compute Intersections are now included in the Performance tool
 
-DevTools now shows **Compute Intersections** in the **Frames** chart. These changes help you to identify intersection observers events and debug its potential performance overheads.
+In the **Performance** tool, DevTools now displays **Compute Intersections** in the flame chart. These changes help you identify intersection observers events and debug the potential performance overhead of intersection observers.
 
 :::image type="complex" source="../../media/2021/05/compute-intersections-in-perf-tool.msft.png" alt-text="Compute Intersections in the Performance tool" lightbox="../../media/2021/05/compute-intersections-in-perf-tool.msft.png":::
    Compute Intersections in the **Performance** tool
 :::image-end:::
 
 <!-- screenshot uses https://googlechrome.github.io/samples/intersectionobserver -->
-<!-- todo: redo screenshot to look like the one at https://developer.chrome.com/blog/new-in-devtools-92/#computed-intersections -->
 
-For more about intersection observers, navigate to [Trust is good, observation is better: Intersection Observer v2](https://web.dev/intersectionobserver-v2/).
+For more about intersection observers, navigate to [Trust is good, observation is better: Intersection Observer v2][WebDevIntersectionObserverV2].
+
+For information about using the flame chart, navigate to [Analyze a performance recording][DevtoolsEvaluatePerfRefAnalyzeAPerfRecording].
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1199137][CR1199137].
 
@@ -310,6 +311,13 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 
 <!-- links -->
+[DevtoolsEvaluatePerfRefAnalyzeAPerfRecording]: ../../../evaluate-performance/reference.md#analyze-a-performance-recording "Analyze a performance recording | Microsoft Docs"
+<!-- external links -->
+[XhrSpecWhatwgOrg]: https://xhr.spec.whatwg.org "XMLHttpRequest spec | WHATWG"
+[FetchSpecWhatwgOrg]: https://fetch.spec.whatwg.org "Fetch spec | WHATWG"
+
+[WebDevIntersectionObserverV2]: https://web.dev/intersectionobserver-v2 "Trust is good, observation is better: Intersection Observer v2 | web.dev"
+
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
 [GithubIoDevToolsUsing]: https://microsoft.github.io/vscode-edge-devtools/using.html "Using the tools | GitHub"
 
