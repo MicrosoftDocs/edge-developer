@@ -168,7 +168,7 @@ Your site needs more information. Complete the following steps to add some conte
        :::column-end:::
     :::row-end:::  
     
-1.  View the **live tab** to make sure that the new content is displaying correctly.  
+1.  View the **live tab** to make sure that the new content displays correctly.  
     
     :::image type="complex" source="media/beginners-html-add5.msft.png" alt-text="The new list is visible in the live tab" lightbox="media/beginners-html-add5.msft.png":::
        The new list is visible in the live tab  
