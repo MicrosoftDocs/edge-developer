@@ -40,7 +40,7 @@ Each of the following tasks allow you to inspect the styles or attributes of a [
 
 ## Open the Console panel  
 
-Each of these tasks open the [Console][DevtoolsConsoleIndex] panel to view logged messages or run JavaScript.  
+Choose either of the following options to open the Console panel to view logged messages or run JavaScript. For more information on the Console, navigate to [Use the Console][DevtoolsConsoleIndex]. 
 
 *   Use the following steps to open [Console][DevtoolsConsoleIndex] panel.  
     
