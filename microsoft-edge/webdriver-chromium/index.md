@@ -33,7 +33,7 @@ The functional relationship between these components is as follows.
 |---|---|
 | WebDriver | A W3C standard for a platform- and language-neutral wire protocol.  This protocol allows out-of-process programs to remotely instruct the behavior of web browsers. |
 | Microsoft Edge Driver | Microsoft's implementation of the WebDriver protocol specifically for Microsoft Edge.  Test authors write tests that use WebDriver commands that Microsoft Edge Driver receives.  Microsoft Edge Driver is then responsible for communicating that command to the browser. |
-| A WebDriver testing framework | A framework used by test authors to write end-to-end tests and automate browsers.  Provides a language-specific interface that translates your code into commands that Microsoft Edge Driver runs in Microsoft Edge \(Chromium\).  WebDriver testing frameworks exist for all major platforms and languages.  One such framework is Selenium. |
+| A WebDriver testing framework | Test authors use a testing framework to write end-to-end tests and automate browsers.  Provides a language-specific interface that translates your code into commands that Microsoft Edge Driver runs in Microsoft Edge \(Chromium\).  WebDriver testing frameworks exist for all major platforms and languages.  One such framework is Selenium. |
 | Internet Explorer Driver | An implementation of the WebDriver protocol specifically for Internet Explorer.  To run legacy end-to-end tests for Internet Explorer, we recommend using Internet Explorer Driver. |
 
 The following sections describe how to get started with WebDriver for Microsoft Edge \(Chromium\).  
@@ -66,9 +66,8 @@ To begin automating tests, use the following steps to ensure that the WebDriver 
     
 ## Choose a WebDriver testing framework
 
-After downloading Microsoft Edge Driver, the last component you must download is a WebDriver testing framework.
+After downloading Microsoft Edge Driver, the last component you must download is a WebDriver testing framework. Test authors use WebDriver testing frameworks to write end-to-end tests and automate browsers. The framework provides a language-specific interface that translates your code (such as Python, Java, C#, Ruby, or JavaScript) into commands that Microsoft Edge Driver runs in Microsoft Edge \(Chromium\). WebDriver testing frameworks exist for all major platforms and languages.
 
-A WebDriver testing framework is used by test authors to write end-to-end tests and automate browsers.  The framework provides a language-specific interface that translates your code (such as Python, Java, C#, Ruby, or JavaScript) into commands that Microsoft Edge Driver runs in Microsoft Edge \(Chromium\).  WebDriver testing frameworks exist for all major platforms and languages.
 
 This article provides instructions for using the Selenium framework, but you can use any library, framework, and programming language that supports WebDriver.  To accomplish the same tasks using a WebDriver testing framework other than Selenium, consult the official documentation for your framework of choice.
 
@@ -381,9 +380,7 @@ For more information, navigate to the [msedgedriver container on Docker Hub][Doc
 
 ## Testing Internet Explorer
 
-To test sites that require Internet Explorer, use [Internet Explorer Driver][GithubSeleniumHqWikiIEDriver] with Internet Explorer.  Internet Explorer Driver is maintained by the Selenium project.
-
-Even though Microsoft Edge supports IE Mode, you can't use Microsoft Edge Driver with Microsoft Edge to test sites in IE Mode.
+To test sites that require Internet Explorer, use [Internet Explorer Driver][GithubSeleniumHqWikiIEDriver] with Internet Explorer.  Internet Explorer Driver is maintained by the Selenium project.  Even though Microsoft Edge supports IE Mode, you can't use Microsoft Edge Driver with Microsoft Edge to test sites in IE Mode.
 
 
 ## See also
