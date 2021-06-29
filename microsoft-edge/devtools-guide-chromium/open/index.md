@@ -45,7 +45,6 @@ Choose either of the following options to open the Console panel to view logged 
 *   Use the following steps to open [Console][DevtoolsConsoleIndex] panel.  
     
 *   With the DevTools open, choose the Console panel.   
-    1.  Choose the [Console][DevtoolsConsoleIndex] panel.  
 
 *   To jump straight into the [Console][DevtoolsConsoleIndex] pane, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].  
 
