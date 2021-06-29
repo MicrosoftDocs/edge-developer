@@ -49,7 +49,7 @@ When a new version of the Evergreen WebView2 Runtime is downloaded to the device
 When a new version is available, you can automatically take action, such as notifying the user to restart the application.  To detect that a new version is available, you can use the [add_NewBrowserVersionAvailable(Win32)][Webview2ReferenceaddNewBrowserVersionAvailable] or [CoreWebView2Environment.NewBrowserVersionAvailable(.NET)][Webview2ReferenceNewBrowserVersionAvailable] event in your code. If your code handles restarting the application, consider saving the user state before the WebView2 application exits.  
 
 ## Manage the lifetime of the user data folder 
-WebView2 apps create a user data folder to store data such as cookies, credentials, and permissions.  After creating the folder, your app is responsible for managing the lifetime of the user data folder.  For example, your app must do cleanup when the app is uninstalled.  For more information, navigate to [Managing the User Data Folder][Webview2ConceptsUserDataFolder].  
+WebView2 apps create a user data folder to store data such as cookies, credentials, and permissions.  After creating the folder, your app is responsible for managing the lifetime of the user data folder.  For example, your app must do cleanup when the app is uninstalled.  For more information, navigate to [Managing the user data folder][Webview2ConceptsUserDataFolder].  
 
 ## Handle runtime-process failures
 Your WebView2 app should listen for and handle the `ProcessFailed` event, so the app can recover from failures of runtime processes that support the WebView2 app process.
