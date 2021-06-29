@@ -141,7 +141,7 @@ Your site needs more information. Complete the following steps to add some conte
     
 1.  View your change in the **live tab**.
 
-1.  Back in the **editor tab**, add a list of accomplishments:  
+1.  Back in the **editor tab**, add a list of your accomplishments using the following code.
     
     :::row:::
        :::column span="":::
