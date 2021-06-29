@@ -27,7 +27,7 @@ There are many ways to open Microsoft Edge DevTools, helping you quickly access 
 
 ## Open the Elements panel to inspect the DOM or CSS  
 
-Each of the following tasks enable you to inspect the styles or attributes of a [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) /(DOM/) node.
+Each of the following tasks allow you to inspect the styles or attributes of a [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \(DOM\) node.
 
 *   Hover on the element, open the contextual menu \(right-click\), and choose **Inspect**.  
 *   Select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Option`+`C` \(macOS\). For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].  
