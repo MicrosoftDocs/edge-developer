@@ -218,7 +218,7 @@ For now, think of it as a scripting language that may change the content of your
 
 ### Edit the DOM  
 
-If you want to quickly experiment with content changes without ever leaving the live tab, try DevTools.  
+If you want to quickly experiment with content changes without ever leaving the live tab, try using DevTools.  
 
 1.  In DevTools, hover on `Your site!`, open the contextual menu (right-click) to open the contextual menu and choose **Edit as HTML**.  
     
