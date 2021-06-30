@@ -198,7 +198,7 @@ Before editing content from Microsoft Edge DevTools, let's understand the differ
     :::image-end:::
 -->
 
-1.  Open the **live tab**, hover on `A new element!?!`, open the contextual menu (right-click) to open the contextual menu and choose **Inspect**.  
+1.  Open the **live tab**, hover over `A new element!?!`, open the contextual menu (right-click), and then choose **Inspect**.  
     
     :::image type="complex" source="media/beginners-html-dom3.msft.png" alt-text="Inspecting some text" lightbox="media/beginners-html-dom3.msft.png":::
        Inspecting some text  
