@@ -445,7 +445,7 @@
               href: webview2/concepts/browser-features.md
             - name: Distributing my app
               href: webview2/concepts/distribution.md
-            - name: Managing User Data Folders
+            - name: Manage the user data folder
               href: webview2/concepts/user-data-folder.md
             - name: Managing WebView2 applications
               href: webview2/concepts/enterprise.md
