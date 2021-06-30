@@ -210,7 +210,7 @@ Before editing content from Microsoft Edge DevTools, let's understand the differ
        DevTools is open alongside the page  
     :::image-end:::  
     
-When your page loads, the browser uses the HTML to create the *initial* content of the page. The DOM represents the *current* content of the page, which may change over time. 
+When your page loads, the browser uses the HTML to create the initial content of the page. The DOM represents the current content of the page, which may change over time. 
 
 The `<div>A new element!?!</div>` content is added to your page because of the `<script src="new.js"></script>` tag at the bottom of your HTML. This tag causes some JavaScript code to run. Learn more about JavaScript in a [later tutorial](../javascript/index.md).
 
