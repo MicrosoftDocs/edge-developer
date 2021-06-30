@@ -62,7 +62,7 @@ The updated manifest returned by the server should be an XML document.  Review t
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
-<gupdate xmlns='http://www.microsoft.com/update2/response' protocol='2.0'>
+<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
   <app appid='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'>
     <updatecheck codebase='http://contoso.com/mytestextension/mte_v2.crx' version='2.0' />
   </app>

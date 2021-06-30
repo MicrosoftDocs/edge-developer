@@ -104,14 +104,14 @@ DevTools give you an amazing amount of power to inspect, debug, and change the w
 
 DevTools grew over a period of several years.  You may assume that DevTools are difficult to learn when you first open any of tools.  The following text quickly introduces the different parts.  The main toolbar offers you a few sections and the sections are ordered from left to right.  
 
-:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="Screenshot of the menu bar of the DevTools with labels that explain the different sections.  In order: Inspect Tool, Device Emulation tool, Tools tab group, JavaScript errors, Issues, Settings, Feedback, Customize, and Close." lightbox="./media/devtools-intro-menu-bar.msft.png":::  
-   Screenshot of the menu bar of the DevTools with labels that explain the different sections.  In order: Inspect Tool, Device Emulation tool, Tools tab group, JavaScript Errors, Issues, Settings, Feedback, Customize, and Close.  
+:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="Screenshot of the menu bar of the DevTools with labels that explain the different sections.  In order: Inspect tool, Device Emulation tool, Tools tab group, JavaScript errors, Issues, Settings, Feedback, Customize, and Close." lightbox="./media/devtools-intro-menu-bar.msft.png":::  
+   Screenshot of the menu bar of the DevTools with labels that explain the different sections.  In order: Inspect tool, Device Emulation tool, Tools tab group, JavaScript Errors, Issues, Settings, Feedback, Customize, and Close.  
 :::image-end:::  
 
-*   The Inspect Tool allows you to choose an element on the current webpage.  After you activate it, you may move your mouse over different parts of the webpage to get detailed information about the element and a color overlay to display dimensions, padding, and margin.  
+*   The Inspect tool allows you to choose an element on the current webpage.  After you activate it, you may move your mouse over different parts of the webpage to get detailed information about the element and a color overlay to display dimensions, padding, and margin.  
     
-    :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="Screenshot of the inspect tool with the first headline of this article chosen" lightbox="./media/devtools-intro-inspect-tool.msft.png":::  
-       Screenshot of the inspect tool with the first headline of this article chosen  
+    :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="The Inspect tool with the first headline of this article chosen" lightbox="./media/devtools-intro-inspect-tool.msft.png":::  
+       The Inspect tool with the first headline of this article chosen  
     :::image-end:::  
     
 *   The [Device Emulation][DevtoolsGuideDeviceModeIndex] tool displays the current web product in an emulated device mode.  The **Device Emulation** tool allows you to run and test how your product reacts when you resize the browser.  It also gives you an estimation of the layout and behavior on a mobile device.  
@@ -215,7 +215,7 @@ If you want to preview the [latest features coming to the DevTools][DevtoolsGuid
 [DevtoolsGuideExperimentalFeaturesIndex]: ./experimental-features/index.md "Experimental features | Microsoft Docs"  
 [DevtoolsGuideMemoryProblemsIndex]: ./memory-problems/index.md "Fix memory problems | Microsoft Docs"  
 [DevtoolsGuideInspectStylesEditFonts]: ./inspect-styles/edit-fonts.md "Edit CSS font styles and settings in the Styles pane | Microsoft Docs"  
-[DevtoolsGuideIssuesIndex]: ./issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
+[DevtoolsGuideIssuesIndex]: ./issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"  
 [DevtoolsGuideJavascriptIndex]: ./javascript/index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideJavascriptOverrides]: ./javascript/overrides.md "Override webpage resources with local copies using Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideNetworkIndex]: ./network/index.md "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  

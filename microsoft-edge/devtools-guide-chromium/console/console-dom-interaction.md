@@ -56,12 +56,12 @@ To get a direct reference to the element to manipulate, complete the following a
 
 1.  Use the **Inspect** tool to choose the element.  
 
-    :::image type="complex" source="../media/console-dom-use-inspector-to-get-element.msft.png" alt-text="To choose an element, use the Inspector tool" lightbox="../media/console-dom-use-inspector-to-get-element.msft.png":::
-        To choose an element, use the **Inspector** tool  
+    :::image type="complex" source="../media/console-dom-use-inspector-to-get-element.msft.png" alt-text="To choose an element, use the Inspect tool" lightbox="../media/console-dom-use-inspector-to-get-element.msft.png":::
+        To choose an element, use the **Inspect** tool  
     :::image-end:::  
     
 1.  Choose it and DevTools jumps to the **Elements** tool.  
-1.  Choose the `...` menu next to the element in the DOM view.  
+1.  Choose the `...` menu next to the element in the DOM tree.  
     
     :::image type="complex" source="../media/console-dom-overflow-menu-in-elements.msft.png" alt-text="The chosen element displays in the DOM tree of the Elements tool, choose the overflow menu to get more features" lightbox="../media/console-dom-overflow-menu-in-elements.msft.png":::
         The chosen element displays in the DOM tree of the **Elements** tool, choose the overflow menu to get more features  
@@ -69,8 +69,8 @@ To get a direct reference to the element to manipulate, complete the following a
     
 1.  Open the contextual menu and choose `Copy` > `Copy JS Path`.  
     
-    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="Copy the JavaScript path from an element in the DOM view of the Elements tool" lightbox="../media/console-dom-copy-JS-path.msft.png":::
-        Copy the JavaScript path from an element in the DOM view of the **Elements** tool  
+    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="Copy the JavaScript path from an element in the DOM tree of the Elements tool" lightbox="../media/console-dom-copy-JS-path.msft.png":::
+        Copy the JavaScript path from an element in the DOM tree of the **Elements** tool  
     :::image-end:::  
     
 1.  Go back to the **Console** and paste the command.  
@@ -92,7 +92,7 @@ Many convenience methods and shortcuts are available to you as [Console Utilitie
 The `$` has special powers in **Console** and you may remember that from jQuery.
 
 *   `$_` stores the result of the last command.  So, if you type `2 + 2` and select `Enter`, and then type `$_`, the **Console** displays you `4`.
-*   `$0` to `$4` is a stack of the last inspected elements `$0` is always the newest one.  So in the earlier example, you just chose the element in the **Inspector** tool and type `$0.textContent = "My Playground"` to get the same effect.
+*   `$0` to `$4` is a stack of the last inspected elements `$0` is always the newest one.  So in the earlier example, you just chose the element in the **Inspect** tool and type `$0.textContent = "My Playground"` to get the same effect.
 *   `$x()` allows you to choose DOM elements using XPATH.
 *   `$()` and `$$()` are shorter versions of for `document.querySelector()` and `document.querySelectorAll()`.  
     

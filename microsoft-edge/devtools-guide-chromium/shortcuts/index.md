@@ -3,7 +3,7 @@ description: The canonical documentation for Microsoft Edge DevTools keyboard sh
 title: Microsoft Edge DevTools keyboard shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/08/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -21,7 +21,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # Microsoft Edge DevTools keyboard shortcuts  
 
 This article is a reference of keyboard shortcuts in Microsoft Edge DevTools.
@@ -57,7 +56,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Hard refresh | `Control`+`F5` or `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |  
 | Search for text within the current panel.  Not supported in the **Audits**, **Application**, and **Security** tools | `Control`+`F` | `Command`+`F` |  
 | Opens the **Search** tab in the [Drawer][DevtoolsCustomizeIndexDrawer], which lets you search for text across all loaded resources | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |  
-| Open a file in the **Sources** panel | `Control`+`O` or `Control`+`P` | `Command`+`O` or `Command`+`P` |  
+| Open a file in the **Sources** tool | `Control`+`O` or `Control`+`P` | `Command`+`O` or `Command`+`P` |  
 | Zoom in | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |  
 | Zoom out | `Control`+`-` | `Command`+`-` |  
 | Restore default zoom level | `Control`+`0` | `Command`+`0` |  
@@ -173,4 +172,4 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
