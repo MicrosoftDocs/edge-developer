@@ -173,8 +173,6 @@ WebView2 also works on the following Windows Embedded releases.
 *   Windows IoT Enterprise LTSC x64
 *   Windows IoT Enterprise 21h1 x64
 
-Windows IoT Enterprise on Arm64 is currently under investigation.
-
 ## Next steps  
 
 For more information on how to build and deploy WebView2 apps, review the conceptual documentation and how-to guides.  
