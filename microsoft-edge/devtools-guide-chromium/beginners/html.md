@@ -256,7 +256,7 @@ If you want to quickly experiment with content changes without ever leaving the 
        The new content shows up immediately on the page  
     :::image-end:::  
     
-This workflow is only suitable for experimenting with content changes. If you refresh the page or close the tab, any changes are lost. If you want to save your changes, manually copy the code to your HTML file. The next couple of sections show you some more ways to change content from the DOM Tree.  
+This workflow is only suitable for experimenting with content changes. If you refresh the page or close the tab, your changes are lost. If you want to save your changes, manually copy the code to your HTML file. The next couple of sections show you some more ways to change content from the DOM Tree.  
 
 ## Reorder nodes
 
