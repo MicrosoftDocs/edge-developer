@@ -180,7 +180,7 @@ If you are developing a page with a lot of HTML, it becomes tedious to go back-a
 
 ### Learn the difference between HTML and the DOM  
 
-Before editing content from Microsoft Edge DevTools, you should understand the difference between HTML and the DOM /([Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)/). The best way to learn is by example:  
+Before editing content from Microsoft Edge DevTools, let's understand the difference between HTML and the DOM. Proceed with the following steps to learn from an example.
 
 1.  Navigate to the **live tab**. At the bottom of your page, the text `A new element!?!` displays.  
 
