@@ -3,7 +3,7 @@ description: All of the ways that you open the Microsoft Edge DevTools.
 title: Open Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/28/2021
+ms.date: 06/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -27,7 +27,7 @@ There are many ways to open Microsoft Edge DevTools, helping you quickly access 
 
 ## Open the Elements panel to inspect the DOM or CSS  
 
-Each of the following tasks enable you to inspect the styles or attributes of a [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) /(DOM/) node.
+Each of the following tasks allow you to inspect the styles or attributes of a [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \(DOM\) node.
 
 *   Hover on the element, open the contextual menu \(right-click\), and choose **Inspect**.  
 *   Select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Option`+`C` \(macOS\). For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].  
@@ -42,12 +42,12 @@ Each of the following tasks enable you to inspect the styles or attributes of a 
 
 Each of these tasks open the [Console][DevtoolsConsoleIndex] panel to view logged messages or run JavaScript.  
 
-*   Use the following steps to open [Console][DevtoolsConsoleIndex] panel.  
+
     
     1.  [Open DevTools](#open-microsoft-edge-devtools).  
     1.  Choose the [Console][DevtoolsConsoleIndex] panel.  
 
-*   To jump straight into the [Console][DevtoolsConsoleIndex] pane, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].  
+*   To jump straight into the Console pane, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\). For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].  
 
 <!--Navigate to [Get Started With The Console][ConsoleGetStarted].  -->
 
@@ -112,11 +112,11 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 
 ## Toggle the F12 keyboard shortcut on or off  
 
-To change the `F12` keyboard shortcut setting that opens the DevTools:  
+To change the `F12` keyboard shortcut setting that opens the DevTools, complete the following actions:  
 
 1.  Navigate to `edge://settings/system`.  
-1.  In `Developer Tools`, choose **Open the DevTools when the F12 key is pressed** to toggle it off or on.  Toggle the setting to off to stop the `F12` keyboard shortcut from opening DevTools.  
-1.  Verify that `F12` no longer opens DevTools.  
+1.  In `Developer Tools`, choose **Open the DevTools when the F12 key is pressed** to toggle the setting to off or on. Toggle the setting to off to stop the `F12` keyboard shortcut from opening DevTools.  
+1.  After you set the toggle to off, verify that `F12` no longer opens DevTools.  
     
     > [!NOTE]
     > After turning off **Open the DevTools when the F12 key is pressed**, perform one of the following actions to open the DevTools.  
