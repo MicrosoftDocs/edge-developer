@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, devtools for beg
 
 This is the first in a series of tutorials that teach you the basics of web development. Learn about a set of web developer tools, named Microsoft Edge DevTools, that may increase your productivity.  
 
-This tutorial describes HTML and the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) /(DOM/). HTML is one of the core technologies of web development. It is the language that controls the structure and content of webpages. The DOM is also related to the structure and content of webpages, which we learn more about later.
+This tutorial describes HTML and the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \(DOM\). HTML is one of the core technologies of web development. It is the language that controls the structure and content of webpages. The DOM is also related to the structure and content of webpages, which we learn more about later.
 
 ## Goals  
 
@@ -141,7 +141,7 @@ Your site needs more information. Complete the following steps to add some conte
     
 1.  View your change in the **live tab**.
 
-1.  Back in the **editor tab**, add a list of accomplishments:  
+1.  Back in the **editor tab**, add a list of your accomplishments using the following code.
     
     :::row:::
        :::column span="":::
@@ -168,7 +168,7 @@ Your site needs more information. Complete the following steps to add some conte
        :::column-end:::
     :::row-end:::  
     
-1.  View the **live tab** to make sure that the new content is displaying correctly.  
+1.  View the **live tab** to make sure that the new content displays correctly.  
     
     :::image type="complex" source="media/beginners-html-add5.msft.png" alt-text="The new list is visible in the live tab" lightbox="media/beginners-html-add5.msft.png":::
        The new list is visible in the live tab  
