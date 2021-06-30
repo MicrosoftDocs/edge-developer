@@ -220,7 +220,7 @@ For now, think of it as a scripting language that may change the content of your
 
 If you want to quickly experiment with content changes without ever leaving the live tab, try using DevTools.  
 
-1.  In DevTools, hover on `Your site!`, open the contextual menu (right-click) to open the contextual menu and choose **Edit as HTML**.  
+1.  In DevTools, hover on `Your site!`, open the contextual menu (right-click), and then choose **Edit as HTML**.  
     
     :::image type="complex" source="media/beginners-html-edit1.msft.png" alt-text="Editing the node as HTML" lightbox="media/beginners-html-edit1.msft.png":::
        Editing the node as HTML  
