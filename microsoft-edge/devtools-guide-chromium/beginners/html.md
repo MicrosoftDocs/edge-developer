@@ -214,7 +214,7 @@ When your page loads, the browser uses the HTML to create the initial content of
 
 The `<div>A new element!?!</div>` content is added to your page because of the `<script src="new.js"></script>` tag at the bottom of your HTML. This tag causes some JavaScript code to run. Learn more about JavaScript in a [later tutorial](../javascript/index.md).
 
-For now, think of it as a scripting language that may change the content of your page. In this particular case, JavaScript code adds `<div>A new element!?!</div>` to your page. That is why this text is visible on the live page, but not in the HTML.  
+For now, think of it as a scripting language that may change the content of your page. In this case, JavaScript code adds `<div>A new element!?!</div>` to your page. That is why this text is displayed in the **live** tab, but not in the HTML.  
 
 ### Edit the DOM  
 
