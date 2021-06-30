@@ -443,7 +443,7 @@
           items:
             - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
-            - name: Distributing my app
+            - name: Distributing a WebView2 app
               href: webview2/concepts/distribution.md
             - name: Managing User Data Folders
               href: webview2/concepts/user-data-folder.md

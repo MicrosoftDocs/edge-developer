@@ -52,11 +52,11 @@ The WebView2 team is planning the following major efforts for future updates.
 
 ## WebView2 Runtime and Installer  
 
-[Evergreen distribution model][ConceptDistributionEvergreenModel] allows you to target or chain install the WebView2 Runtime onto your user's machine.  The Evergreen WebView2 Runtime and installer has reached General Availability \(GA\).  
+[Evergreen distribution mode][ConceptDistributionEvergreenMode] allows you to target or chain install the WebView2 Runtime onto your user's machine.  The Evergreen WebView2 Runtime and installer has reached General Availability \(GA\).  
 
 ## Fixed version  
 
-[Fixed version distribution model][ConceptsDistributionFixedVersionModel] allows you to package the Microsoft Edge binaries inside your native application.  The Fixed Version has reached General Availability \(GA\).  
+[Fixed version distribution mode][ConceptsDistributionFixedVersionMode] allows you to package the Microsoft Edge binaries inside your native application.  The Fixed Version has reached General Availability \(GA\).  
 
 ## General availability  
 
@@ -73,10 +73,9 @@ The .NET SDK has reached GA.
 You can access WebView2 in your UWP applications using [Win UI 3.0][UwpToolkitsWinui3Index], currently in alpha.  For more information about keeping up to date, navigate to [Windows UI Library Roadmap][GithubMicrosoftUiXamlRoadmap].  
 
 <!-- links -->  
-
-[ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution model - Distribution of applications using WebView2 | Microsoft Docs"  
-[ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-mode "Fixed version distribution model - Distribution of applications using WebView2 | Microsoft Docs"  
-
+[ConceptDistributionEvergreenMode]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution mode - Distributing a WebView2 app | Microsoft Docs"  
+[ConceptsDistributionFixedVersionMode]: ./concepts/distribution.md#fixed-version-distribution-mode "Fixed-version distribution mode - Distributing a WebView2 app | Microsoft Docs"  
+<!-- external links -->
 [UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Windows UI Library 3.0 Preview 1 (May 2020) | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"  

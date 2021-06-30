@@ -27,7 +27,7 @@ When using the Evergreen WebView2 Runtime, ensure you run regular compatibility 
 
 WebView2 applications need both a Webview2 SDK, and a WebView2 Runtime installed on the computer to run. Both the SDK and the runtime are versioned. Since APIs are continually being added to WebView2, new versions of the runtime are also released to support the new APIs. You'll need to ensure that the APIs used by your WebView2 application are supported by the WebView2 Runtime that's installed on the computer. 
 
-If you use the Evergreen WebView2 Runtime, there are some scenarios where the runtime may not be updated to use the latest version. For example, when users don't have internet access, the runtime isn't  automatically updated in that environment. Additionally, using some group policies pause WebView2 updates. When you push an update to your WebView2 application, the application may break because it uses newer APIs that are not available in the installed runtime.   
+If you use the Evergreen WebView2 Runtime, there are some scenarios where the runtime may not be updated to use the latest version. For example, when users don't have internet access, the runtime isn't automatically updated in that environment. Additionally, using some group policies pause WebView2 updates. When you push an update to your WebView2 application, the application may break because it uses newer APIs that are not available in the installed runtime.   
  
 To solve this situation, you can test for the availability of the APIs in the installed runtime, before your code calls the API. This test for newer functionality is similar to other web development best practices that detect supported features before using new web APIs. To test for API availability in the installed runtime, use:  
 
@@ -53,18 +53,17 @@ WebView2 apps create a user data folder to store data such as cookies, credentia
 For any WebView2 application, ensure you follow our recommended WebView2 security best practices.  For more information, navigate to [Best practices for developing secure WebView2 applications][Webview2ConceptsSecurity].  
 
 <!-- links -->  
-
-[Webview2ConceptsDistributionDeployingEvergreenWebview2Runtime]: ../concepts/distribution.md#deploying-the-evergreen-webview2-runtime "Deploying the Evergreen WebView2 Runtime - Distribution of apps using WebView2 | Microsoft Docs"  
-[Webview2ConceptsDistributionFixedVersionDistributionMode]: ../concepts/distribution.md#fixed-version-distribution-mode "Fixed Version distribution mode - Distribution of apps using WebView2 | Microsoft Docs"  
-[Webview2ConceptsDistributionStayCompatibleEvergreenMode]: ../concepts/distribution.md#stay-compatible-in-evergreen-mode "Stay compatible in Evergreen mode - Distribution of apps using WebView2 | Microsoft Docs"  
+[Webview2ConceptsDistributionDeployingEvergreenWebview2Runtime]: ../concepts/distribution.md#deploying-the-evergreen-webview2-runtime "Deploying the Evergreen WebView2 Runtime - Distributing a WebView2 app | Microsoft Docs"  
+[Webview2ConceptsDistributionFixedVersionDistributionMode]: ../concepts/distribution.md#fixed-version-distribution-mode "Fixed Version distribution mode - Distributing a WebView2 app | Microsoft Docs"  
+[Webview2ConceptsDistributionStayCompatibleEvergreenMode]: ../concepts/distribution.md#stay-compatible-in-evergreen-mode "Stay compatible in Evergreen mode - Distributing a WebView2 app | Microsoft Docs"  
 [Webview2ConceptsSecurity]: ../concepts/security.md "Best practices for developing secure WebView2 applications | Microsoft Docs"  
-[Webview2ConceptsUserDataFolder]: ../concepts/user-data-folder.md "Manage the User Data Folder | Microsoft Docs"  
+[Webview2ConceptsUserDataFolder]: ../concepts/user-data-folder.md "Manage the user data folder | Microsoft Docs"  
 [Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#determine-webview2-runtime-requirement "Determine WebView2 Runtime requirement - Understand WebView2 SDK versions | Microsoft Docs"  
 [Webview2GetStartedWin32]: ../get-started/win32.md "Get started with WebView2 | Microsoft Docs"  
 [Webview2GetStartedWinforms]: ../get-started/winforms.md "Get started with WebView2 in Windows Forms | Microsoft Docs"  
 [Webview2GetStartedWinui]: ../get-started/winui.md "Get started with WebView2 in WinUI 3 (Preview) | Microsoft Docs"  
 [Webview2GetStartedWpf]: ../get-started/wpf.md "Get started with WebView2 in WPF | Microsoft Docs"  
-
+<!-- external links -->
 [Webview2ReferenceaddNewBrowserVersionAvailable]: /microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable "add_NewBrowserVersionAvailable | Microsoft Docs"  
 
 [Webview2ReferenceNewBrowserVersionAvailable]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable "CoreWebView2Environment.NewBrowserVersionAvailable Event | Microsoft Docs"  

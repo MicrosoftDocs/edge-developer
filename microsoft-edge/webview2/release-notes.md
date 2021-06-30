@@ -413,7 +413,7 @@ Release Date: July 20, 2020
 ### General  
 
 *   > [!IMPORTANT]
-    > **Announcement**: Evergreen WebView2 Runtime and installer is released for preview.  For more information, navigate to [Distribution of WebView2][Webview2ConceptsDistributionUnderstandRuntimeInstaller].  
+    > **Announcement**: Evergreen WebView2 Runtime and installer is released for preview.  For more information, navigate to [Understanding the WebView2 runtime][Webview2ConceptsDistributionUnderstandRuntimeInstaller].  
     
 *   > [!IMPORTANT]
     > **Announcement**:  The following WebView2 SDK Versions are no longer supported after the next SDK release.  
@@ -628,10 +628,11 @@ Initial developer preview release.
 
 <!-- Links -->  
 
-[Webview2ConceptsDistribution]: ./concepts/distribution.md "Distribution of applications using WebView2 | Microsoft Docs"  
-[Webview2ConceptsDistributionEvergreenDistributionMode]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution mode - Distribution of applications using WebView2 | Microsoft Docs"  
-[Webview2ConceptsDistributionFixedVersionDistributionMode]: ./concepts/distribution.md#fixed-version-distribution-mode "Fixed Version distribution mode - Distribution of applications using WebView2 | Microsoft Docs"  
-[Webview2ConceptsDistributionUnderstandRuntimeInstaller]: ./concepts/distribution.md#understanding-the-webview2-runtime "Understand the WebView2 Runtime and installer - Distribution of applications using WebView2 | Microsoft Docs"  
+[Webview2ConceptsDistribution]: ./concepts/distribution.md "Distributing a WebView2 app | Microsoft Docs"  
+[Webview2ConceptsDistributionEvergreenDistributionMode]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution mode - Distributing a WebView2 app | Microsoft Docs"  
+[Webview2ConceptsDistributionFixedVersionDistributionMode]: ./concepts/distribution.md#fixed-version-distribution-mode "Fixed Version distribution mode - Distributing a WebView2 app | Microsoft Docs"
+<!-- todo: update all aspects of this link: -->
+[Webview2ConceptsDistributionUnderstandRuntimeInstaller]: ./concepts/distribution.md#understanding-the-webview2-runtime "Understanding the WebView2 runtime - Distributing a WebView2 app | Microsoft Docs"  
 [Webview2ConceptsEnterpriseGroupPoliciesForWebview2]: ./concepts/enterprise.md#group-policies-for-webview2 "Group policies for WebView2 - Managing WebView2 applications | Microsoft Docs"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
 [Webview2ConceptsVersioningExperimentalApis]: ./concepts/versioning.md#experimental-apis "Experimental APIs - Understanding browser versions and WebView2 | Microsoft Docs"  

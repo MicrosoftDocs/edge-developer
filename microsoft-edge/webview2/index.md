@@ -19,7 +19,7 @@ The Microsoft Edge WebView2 control allows you to embed web technologies \(HTML,
 
 ## Hybrid app approach  
 
-Developers must often decide between building a web app or a native app.  The decision hinges on the trade-off between reach and power.  Web apps allow for a broad reach.  As a Web developer, you may reuse most of your code across different platforms.  To access the all capabilities of a native platform, use a native app.  
+Developers must often decide between building a web app or a native app.  The decision hinges on the trade-off between reach and power.  Web apps allow for a broad reach.  As a Web developer, you may reuse most of your code across different platforms.  To access all the capabilities of a native platform, use a native app.  
 
 :::image type="complex" source="./media/WebView2/web-native.png" alt-text="Web native" lightbox="./media/WebView2/web-native.png":::
    Web native  
@@ -134,7 +134,7 @@ Hybrid apps allow developers to enjoy the best of both worlds.  Hybrid app devel
 
 ## Get started  
 
-To build and test your app using the WebView2 control, you need to have <!--both [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] and  -->the [WebView2 SDK][NugetPackagesMicrosoftWebWebView2] installed.  Select one of the following options to get started.  
+To build and test your app using the WebView2 control, you need to have <!--both [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] and -->the [WebView2 SDK][NugetPackagesMicrosoftWebWebView2] installed.  Select one of the following options to get started.  
 
 *   [Get Started with Win32 C/C++][Webview2GetStartedWin32]  
 *   [Get Started with WPF][Webview2GetStartedWpf]  
@@ -174,7 +174,7 @@ For more information on how to build and deploy WebView2 apps, review the concep
 ### Concepts  
 
 *   [Understand WebView2 SDK versions][Webview2ConceptsVersioning]  
-*   [Distribution of apps using WebView2][Webview2ConceptsDistribution]  
+*   [Distributing a WebView2 app][Webview2ConceptsDistribution]  
 *   [Best practices for developing secure WebView2 apps][Webview2ConceptsSecurity]  
 *   [Manage User Data Folder in WebView2 apps][Webview2ConceptsUserDataFolder]  
  
@@ -189,7 +189,7 @@ For more information on how to build and deploy WebView2 apps, review the concep
 
 <!-- links -->  
 
-[Webview2ConceptsDistribution]: ./concepts/distribution.md "Distribution of apps using WebView2 | Microsoft Docs"  
+[Webview2ConceptsDistribution]: ./concepts/distribution.md "Distributing a WebView2 app | Microsoft Docs"  
 [Webview2ConceptsSecurity]: ./concepts/security.md "Best practices for developing secure WebView2 apps | Microsoft Docs"  
 [Webview2ConceptsUserDataFolder]: ./concepts/user-data-folder.md "Manage the User Data Folder | Microsoft Docs"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "Understand WebView2 SDK versions | Microsoft Docs"  

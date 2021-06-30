@@ -22,15 +22,12 @@ IT admins may use group policy objects \(GPO\) to configure policy settings for 
 *   [Microsoft Edge - Browser policies][EdgeBrowserPolicies] doesn't apply to WebView2 applications.  This is by design because apps and browsers have different use cases, and IT admins may not be aware of what applications use WebView2.  Applying browser policies on WebView2 may have unintended consequences.  For example, IT admins may block JavaScript in the browser and all WebView2 apps using JavaScript are broken.  
 *   \(Coming soon\) WebView2-specific policies – WebView2 will expose a small additional set of group policies in cases where managing WebView2 directly makes sense.  We recommend app developers to implement their own group policies to manage their use of WebView2, as it is more straightforward for IT admins to manage the app rather than WebView2 directly.  
 
-<!-- Links -->  
-
-[Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview]: ./distribution.md#understanding-the-webview2-runtime "Understand the WebView2 Runtime and installer (Preview) - Distribution of applications using WebView2 | Microsoft Docs"  
-
+<!-- links -->
+[Webview2ConceptsDistributionUnderstandRuntimeInstallerPreview]: ./distribution.md#understanding-the-webview2-runtime "Understanding the WebView2 runtime - Distributing a WebView2 app | Microsoft Docs"  
 [WebView2Landing]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
-
+<!-- external links -->
 [EdgeUpdatePolicies]: /deployedge/microsoft-edge-update-policies "Microsoft Edge - Update policies | Microsoft Docs"  
 [EdgeBrowserPolicies]: /deployedge/microsoft-edge-policies "Microsoft Edge - Browser policies | Microsoft Docs"  
 [ConfigureMicrosoftEdge]: /deployedge/configure-microsoft-edge "Configure Microsoft Edge policy settings on Windows | Microsoft Docs"  
-
 
 [GithubMicrosoftedgeWebviewfeddback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"  
