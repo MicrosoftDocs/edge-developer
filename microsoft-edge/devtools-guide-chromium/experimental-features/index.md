@@ -94,7 +94,7 @@ After you turn on the experiment, ensure you restart the DevTools.  To use the *
 After you turn on the experiment, ensure you restart the DevTools.  To use **Source Order Viewer**, complete the following steps.  
 
 1.  Open the **Elements** tool.  
-1.  Open the **Accessibility** pane in the drawer \(bottom\) panel.  
+1.  To the right of the **Styles** tab, select the **Accessibility** tab.  
 1.  Under the **Source Order Viewer** section, choose the **Show Source Order** checkbox.  
 1.  Highlight any HTML element to display an overlay that the order in the webpage source.  
     
@@ -238,7 +238,6 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 -->  
 
 <!-- links -->  
-
 [Devtools3dViewIndex]: ../3d-view/index.md "3D View | Microsoft Docs"  
 [DevtoolsCssGrid]: ../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeIndex]: ../customize/index.md "Customize Microsoft Edge DevTools | Microsoft Docs"  
@@ -248,12 +247,10 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 [DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "Emulate dual-screen and foldable devices in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools | Microsoft Edge"  
 [DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Edit CSS font styles and settings in the Styles pane in DevTools | Microsoft Docs"  
-[DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
+[DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"  
 [DevtoolsOpenIndex]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
-
+<!-- external links: -->
 [MicrosoftEdgeMain]: https://www.microsoft.com/edge "Microsoft Edge"  
-
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"  
-
 [WebhintMain]: https://webhint.io "webhint"  

@@ -999,6 +999,12 @@
         "redirect_url": "/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension",
         "redirect_document_id": false
       },
+      /* redirect to web platform */
+      {
+        "source_path": "microsoft-edge/web-platform/user-agent-string.md",
+        "redirect_url": "/microsoft-edge/web-platform/user-agent-guidance",
+        "redirect_document_id": false
+      },
       /* redirect to archive legacy content (edgehtml) */
       {
         "source_path": "microsoft-edge/edgehtml/dev-guide/browser-features",

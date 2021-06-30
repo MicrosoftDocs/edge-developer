@@ -4,6 +4,7 @@ title: Moving users to Microsoft Edge from Internet Explorer
 author: MSEdgeTeam
 ms.date: 11/13/2020
 ms.author: msedgedevrel
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, internet explorer
 ---
