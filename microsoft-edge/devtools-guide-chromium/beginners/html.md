@@ -3,7 +3,7 @@ description: Get Started with HTML and the DOM
 title: "DevTools for beginners: Get started with HTML and the DOM"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/28/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, devtools for beginners, devtools HTML for beginners, devtools DOM for beginners, devtools html tutorial, devtools DOM tutorial, devtools document object model tutorial
@@ -86,27 +86,20 @@ Your site needs more information. Complete the following steps to add some conte
 
 1.  In the **editor tab**, replace `<!-- You're "About Me" will go here.  -->` with `<h1>About Me</h1>`.  
     
-    :::row:::
-       :::column span="":::
-          ```html
-          ...
-              ...
-              <body>
-                  <p> Your site!</p>
-                  <main>
-                      <h1>About Me</h1>
-                  </main>
-                  ...
-              ...
-          ...
-          ```  
-       :::column-end:::
-       :::column span="":::
-          :::image type="complex" source="media/beginners-html-add1.msft.png" alt-text="The new code is highlighted in the editor tab" lightbox="media/beginners-html-add1.msft.png":::
-             The new code is highlighted in the editor tab  
-          :::image-end:::  
-       :::column-end:::
-    :::row-end:::
+```html
+    ...
+    <body>
+        <p> Your site!</p>
+            <main>
+                <h1>About Me</h1>
+            </main>
+    ...
+```  
+
+:::image type="complex" source="media/beginners-html-add1.msft.png" alt-text="The new code is highlighted in the editor tab" lightbox="media/beginners-html-add1.msft.png":::
+    The new code is highlighted in the editor tab  
+:::image-end:::  
+
     
 1.  View your changes in the **live tab**. The text `About Me` is visible on the page. The text is larger than the surrounding text because the `<h1>` element represents a Heading 1.  Your web browser automatically styles headings in larger font sizes.  
     
@@ -116,58 +109,41 @@ Your site needs more information. Complete the following steps to add some conte
     
 1.  Back in the **editor tab**, insert `<p>I am learning web development. Recent accomplishments:</p>` on the line below  `<h1>About Me</h1>`.  
     
-    :::row:::
-       :::column span="":::
-          ```html
-          ...
-              ...
-              <body>
-                  <p> Your site!</p>
-                  <main>
-                      <h1>About Me</h1>
-                      <p>I am learning web development. Recent accomplishments:</p>
-                  </main>
-                  ...
-              ...
-          ...
-          ```  
-       :::column-end:::
-       :::column span="":::
-          :::image type="complex" source="media/beginners-html-add3.msft.png" alt-text="The updated code is highlighted in the editor tab" lightbox="media/beginners-html-add3.msft.png":::
-             The updated code is highlighted in the editor tab  
-          :::image-end:::  
-       :::column-end:::
-    :::row-end:::
+```html
+...
+    <body>
+        <p> Your site!</p>
+            <main>
+                <h1>About Me</h1>
+                <p>I am learning web development. Recent accomplishments:</p>
+            </main>
+...
+```  
+
+:::image type="complex" source="media/beginners-html-add3.msft.png" alt-text="The updated code is highlighted in the editor tab" lightbox="media/beginners-html-add3.msft.png":::
+    The updated code is highlighted in the editor tab  
+:::image-end:::  
     
 1.  View your change in the **live tab**.
 
 1.  Back in the **editor tab**, add a list of your accomplishments using the following code.
     
-    :::row:::
-       :::column span="":::
-          ```html
-          ...
-              ...
-                  ...
-                  <p>I am learning web development.  Recent accomplishments:</p>
-                  <ul>
-                      <li>Learned how to set up my code in Glitch.</li>
-                      <li>Added content to my HTML.</li>
-                      <li>TODO: Learn how to use Microsoft Edge DevTools to experiment with content changes.</li>
-                      <li>TODO: Learn the difference between HTML and the DOM.</li>
-                  </ul>
-                  ...
-              ...
-          ...
-          ```  
-       :::column-end:::
-       :::column span="":::
-          :::image type="complex" source="media/beginners-html-add4.msft.png" alt-text="The updated code is also highlighted in the editor tab" lightbox="media/beginners-html-add4.msft.png":::
-             The updated code is also highlighted in the editor tab  
-          :::image-end:::  
-       :::column-end:::
-    :::row-end:::  
-    
+```html
+...
+<p>I am learning web development.  Recent accomplishments:</p>
+    <ul>
+        <li>Learned how to set up my code in Glitch.</li>
+        <li>Added content to my HTML.</li>
+        <li>TODO: Learn how to use Microsoft Edge DevTools to experiment with content changes.</li>
+        <li>TODO: Learn the difference between HTML and the DOM.</li>
+    </ul>
+...
+```  
+
+:::image type="complex" source="media/beginners-html-add4.msft.png" alt-text="The updated code is also highlighted in the editor tab" lightbox="media/beginners-html-add4.msft.png":::
+    The updated code is also highlighted in the editor tab  
+:::image-end:::  
+
 1.  View the **live tab** to make sure that the new content displays correctly.  
     
     :::image type="complex" source="media/beginners-html-add5.msft.png" alt-text="The new list is visible in the live tab" lightbox="media/beginners-html-add5.msft.png":::
@@ -180,7 +156,7 @@ If you are developing a page with a lot of HTML, it becomes tedious to go back-a
 
 ### Learn the difference between HTML and the DOM  
 
-Before editing content from Microsoft Edge DevTools, you should understand the difference between HTML and the DOM /([Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)/). The best way to learn is by example:  
+Before editing content from Microsoft Edge DevTools, let's understand the difference between HTML and the DOM. Proceed with the following steps to learn from an example.
 
 1.  Navigate to the **live tab**. At the bottom of your page, the text `A new element!?!` displays.  
 
@@ -198,7 +174,7 @@ Before editing content from Microsoft Edge DevTools, you should understand the d
     :::image-end:::
 -->
 
-1.  Open the **live tab**, hover on `A new element!?!`, open the contextual menu (right-click) to open the contextual menu and choose **Inspect**.  
+1.  Open the **live tab**, hover over `A new element!?!`, open the contextual menu (right-click) and then choose **Inspect**.  
     
     :::image type="complex" source="media/beginners-html-dom3.msft.png" alt-text="Inspecting some text" lightbox="media/beginners-html-dom3.msft.png":::
        Inspecting some text  
@@ -210,57 +186,44 @@ Before editing content from Microsoft Edge DevTools, you should understand the d
        DevTools is open alongside the page  
     :::image-end:::  
     
-When your page loads, the browser uses the HTML to create the *initial* content of the page. The DOM represents the *current* content of the page, which may change over time. 
+When your page loads, the browser uses the HTML to create the initial content of the page. The DOM represents the current content of the page, which may change over time. 
 
 The `<div>A new element!?!</div>` content is added to your page because of the `<script src="new.js"></script>` tag at the bottom of your HTML. This tag causes some JavaScript code to run. Learn more about JavaScript in a [later tutorial](../javascript/index.md).
 
-For now, think of it as a scripting language that may change the content of your page. In this particular case, JavaScript code adds `<div>A new element!?!</div>` to your page. That is why this text is visible on the live page, but not in the HTML.  
+For now, think of it as a scripting language that may change the content of your page. In this case, JavaScript code adds `<div>A new element!?!</div>` to your page. That is why this text is displayed in the **live** tab, but not in the HTML.  
 
 ### Edit the DOM  
 
 If you want to quickly experiment with content changes without ever leaving the live tab, try DevTools.  
 
-1.  In DevTools, hover on `Your site!`, open the contextual menu (right-click) to open the contextual menu and choose **Edit as HTML**.  
-    
-    :::image type="complex" source="media/beginners-html-edit1.msft.png" alt-text="Editing the node as HTML" lightbox="media/beginners-html-edit1.msft.png":::
-       Editing the node as HTML  
-    :::image-end:::  
+1.  In DevTools, hover over `Your site!`, open the contextual menu (right-click) and choose **Edit as HTML**.  
     
 1.  Replace `<p>Your site!</p>` with the following code.  
-    
-    :::row:::
-       :::column span="":::
-          ```html
-          ...
-              ...
-                  ...
-                  <header>
-                      <p><b>Welcome to my site!</b></p>
-                      <button>Download my resume</button>
-                  </header>
-                  ...
-              ...
-          ...
-          ```  
-       :::column-end:::
-       :::column span="":::
-          :::image type="complex" source="media/beginners-html-edit2.msft.png" alt-text="Updating the node as HTML" lightbox="media/beginners-html-edit2.msft.png":::
-             Updating the node as HTML  
-          :::image-end:::  
-       :::column-end:::
-    :::row-end:::  
-    
+
+```html
+    ...
+    <header>
+        <p><b>Welcome to my site!</b></p>
+        <button>Download my resume</button>
+    </header>
+    ...
+```  
+
+:::image type="complex" source="media/beginners-html-edit2.msft.png" alt-text="Updating the node as HTML" lightbox="media/beginners-html-edit2.msft.png":::
+    Updating the node as HTML  
+::image-end:::  
+
 1.  Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save your changes, or select outside the box. Your changes automatically show up in the live view of your page. The text `Your site!` has been replaced with the new content.  
     
     :::image type="complex" source="media/beginners-html-edit3.msft.png" alt-text="The new content shows up immediately on the page" lightbox="media/beginners-html-edit3.msft.png":::
        The new content shows up immediately on the page  
     :::image-end:::  
     
-This workflow is only suitable for experimenting with content changes. If you refresh the page or close the tab, any changes are lost. If you want to save your changes, manually copy the code to your HTML file. The next couple of sections show you some more ways to change content from the DOM Tree.  
+This workflow is only suitable for experimenting with content changes. If you refresh the page or close the tab, your changes are lost. If you want to save your changes, manually copy the code to your HTML file. The next couple of sections show you some more ways to change content from the DOM Tree.  
 
 ## Reorder nodes
 
-You may also change the order of DOM nodes. For example, on your web page the navigation menu is near the bottom. To move it to the top:  
+You may also change the order of DOM nodes. For example, on your web page the navigation menu is near the bottom. To move it to the top, perform the following steps.  
 
 1.  Find the `<nav>` node in the **DOM Tree** of DevTools.  
     
@@ -270,26 +233,9 @@ You may also change the order of DOM nodes. For example, on your web page the na
     
 1.  Drag the `<nav>` node to the top, so that the node is the first child after the `<body>` node.  
     
-    :::row:::
-       :::column span="":::
-          &nbsp;  
-       :::column-end:::
-       :::column span="":::
-          The `<nav>` node is now displayed at the top of your page.  
-       :::column-end:::
-    :::row-end:::  
-    :::row:::
-       :::column span="":::
-          :::image type="complex" source="media/beginners-html-reorder2.msft.png" alt-text="Dragging the nav node to the top" lightbox="media/beginners-html-reorder2.msft.png":::
-             Dragging the nav node to the top  
-          :::image-end:::  
-       :::column-end:::
-       :::column span="":::
-          :::image type="complex" source="media/beginners-html-reorder3.msft.png" alt-text="The nav node is at the top of the page" lightbox="media/beginners-html-reorder3.msft.png":::
-             The nav node is at the top of the page  
-          :::image-end:::  
-       :::column-end:::
-    :::row-end:::  
+    :::image type="complex" source="media/beginners-html-reorder3.msft.png" alt-text="The nav node is at the top of the page" lightbox="media/beginners-html-reorder3.msft.png":::
+        The nav node is at the top of the page  
+    :::image-end:::  
     
 ### Delete a node
 
