@@ -21,9 +21,14 @@ From .NET Conf 2021 - Focus on Windows.
 YouTube channel: dotNET.  Length: 28:16.
 <!-- > [!VIDEO https://www.youtube.com/watch?v=I_ZBhK9_gTE] -->
 
+[WebView2: Bringing the best of the web to your native apps](https://www.youtube.com/watch?v=-ri7TmPeqLc)  
+From the Microsoft Ignite 2020 conference.  
+YouTube channel: Microsoft Edge.  Length: 13:36.  Uploaded September 22, 2020.
+<!-- > [!VIDEO https://www.youtube.com/watch?v=-ri7TmPeqLc] -->
+
 [WebView2: Bringing the best of the web to your native apps | BDL105](https://www.youtube.com/watch?v=P0K3DWp05QQ)  
 From Microsoft Build 2020.  
-YouTube channel: Microsoft Developer.  Length: 14:37.
+YouTube channel: Microsoft Developer.  Length: 14:37.  Uploaded May 24, 2020.
 <!-- > [!VIDEO https://www.youtube.com/watch?v=P0K3DWp05QQ] -->
 
 [Announcing Microsoft Edge WebView2 for Office Add-Ins Platform](https://www.youtube.com/watch?v=D73D-EB89Fs)  
@@ -31,11 +36,6 @@ How we are evolving the web viewer control used by the Office add-ins platform f
 A talk from Office Add-Ins.<!-- is "Office Add-Ins" a conference name? -->  
 YouTube channel: Microsoft 365 Developer.  Length: 5:07.
 <!-- > [!VIDEO https://www.youtube.com/watch?v=D73D-EB89Fs] -->
-
-[WebView2: Bringing the best of the web to your native apps](https://www.youtube.com/watch?v=-ri7TmPeqLc)  
-From the Microsoft Ignite 2020 conference.  
-YouTube channel: Microsoft Edge.  Length: 13:36.
-<!-- > [!VIDEO https://www.youtube.com/watch?v=-ri7TmPeqLc] -->
 
 [Microsoft Edge | Building, Deploying, and Managing WebView2 Applications](https://www.youtube.com/watch?v=LX-eXvcSx6c)  
 From the Microsoft Ignite 2020 conference.  
