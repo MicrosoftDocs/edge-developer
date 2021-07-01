@@ -268,7 +268,7 @@ You may also change the order of DOM nodes. For example, on your web page the na
        The nav node is highlighted in DevTools  
     :::image-end:::  
     
-1.  Drag the `<nav>` node to the top, so that the node is the first child after the `<body>` node.  
+1.  Drag the `<nav>` node to the top, so that the node is the first child element after the `<body>` node.  The `<nav>` node is now displayed at the top of your page.
     
     :::row:::
        :::column span="":::
