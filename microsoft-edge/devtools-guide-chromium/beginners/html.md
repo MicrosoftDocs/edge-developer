@@ -260,7 +260,7 @@ This workflow is only suitable for experimenting with content changes. If you re
 
 ## Reorder nodes
 
-You may also change the order of DOM nodes. For example, on your web page the navigation menu is near the bottom. To move it to the top:  
+You may also change the order of DOM nodes. For example, on your web page the navigation menu is near the bottom. To move it to the top, perform the following steps. 
 
 1.  Find the `<nav>` node in the **DOM Tree** of DevTools.  
     
