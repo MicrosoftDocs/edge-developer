@@ -3,7 +3,7 @@ description: All of the ways that you open the Microsoft Edge DevTools.
 title: Open Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/29/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -27,7 +27,7 @@ There are many ways to open Microsoft Edge DevTools, helping you quickly access 
 
 ## Open the Elements panel to inspect the DOM or CSS  
 
-Each of the following tasks allow you to inspect the styles or attributes of a [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \(DOM\) node.
+Either of the following tasks allow you to inspect the styles or attributes of a [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \(DOM\) node.
 
 *   Hover on the element, open the contextual menu \(right-click\), and choose **Inspect**.  
 *   Select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Option`+`C` \(macOS\). For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].  
@@ -40,14 +40,11 @@ Each of the following tasks allow you to inspect the styles or attributes of a [
 
 ## Open the Console panel  
 
-Each of these tasks open the [Console][DevtoolsConsoleIndex] panel to view logged messages or run JavaScript.  
+Either of the following tasks open the [Console][DevtoolsConsoleIndex] panel to view logged messages or run JavaScript.  
 
+*  Open [DevTools](#open-microsoft-edge-devtools) then choose the [Console][DevtoolsConsoleIndex] panel.
 
-    
-    1.  [Open DevTools](#open-microsoft-edge-devtools).  
-    1.  Choose the [Console][DevtoolsConsoleIndex] panel.  
-
-*   To jump straight into the Console pane, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\). For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].  
+*  To jump straight into the Console panel, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\). For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].  
 
 <!--Navigate to [Get Started With The Console][ConsoleGetStarted].  -->
 
@@ -59,9 +56,8 @@ To jump to the previously open panel, select `Control`+`Shift`+`I` \(Windows, Li
 
 To open DevTools, use either of the following options.  
 
-*   Use the Microsoft Edge UI.  
-    
-    1.  Choose the **Settings and more** \(`...`\) icon >  **More Tools** >  **Developer Tools**.  
+*   Use the Microsoft Edge UI.
+    *  Choose the **Settings and more** \(`...`\) icon >  **More Tools** >  **Developer Tools**.  
     
 *   Use the keyboard.  
     *   Select `F12` or `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).  
@@ -74,7 +70,7 @@ For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][D
 
 ## Auto-open DevTools on every new tab  
 
-To auto-open DevTools on every new tab, open Microsoft Edge from the command-line and pass the `--auto-open-devtools-for-tabs` flag.  
+To auto-open DevTools on every new tab, open Microsoft Edge from the command line and pass the `--auto-open-devtools-for-tabs` flag.  
 
 ### [CMD (Windows)](#tab/cmd-Windows/)  
 
