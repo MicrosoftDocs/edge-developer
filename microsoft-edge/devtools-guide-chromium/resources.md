@@ -11,6 +11,10 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---  
 # Resources, talks, videos, and blogs about Microsoft Edge DevTools
 
+[The latest in developer tooling](https://www.youtube.com/watch?v=BHeF7GV6nUM) on YouTube channel: Microsoft Edge.  Length: 10:01.  Uploaded September 22, 2020.
+
+[Microsoft Edge | State of the Platform](https://www.youtube.com/watch?v=sU0WRZ0kkNo) on YouTube channel: Microsoft Edge.  Length: 32:04.  Uploaded May 25, 2020.
+
 [How to debug web projects using the browser developer tools inside Visual Studio code](https://www.youtube.com/watch?v=yNJNLqHj92c) on YouTube channel: Christian Heilmann.  Length: 4:47.
 <!-- todo: x-link from the VS Code docs -->
 
