@@ -18,6 +18,7 @@ Review this article often.  The Microsoft Edge team updates this article as thin
 
 | Change | Stable Channel | Experimentation | Additional information |  
 |:--- |:--- |:--- |:--- |
+| Deprecate WebRTC's Plan B SDP semantics | [Chrome+1](#release-comments) \(Edge v94\)  |  | This change is happening in the Chromium project, on which Microsoft Edge is based. This change deprecates a legacy SDP dialect called "Plan B" in favor of "Unified Plan" which is a spec-compliant and cross-browser compatible SDP format. For more information, navigate to [Chrome Platform Status entry][ChromestatusFeature5823036655665152] and [PSA: Timeline for Plan B SDP Deprecation and Removal - Please Migrate to Unified Plan][PSADeprecateWebRTCPlanB]. The Microsoft rollout schedule for deprecation is planned for one release after Chrome. Requesting a [WebRTC Plan B Reverse Origin Trial Token][ChromeDevelopersOrigintrialsWebRTCPlanBOriginTrial] allows sites to continue to use the deprecated API until Edge v96. |
 | Cookies default to `SameSite=Lax` and `SameSite=None-requires-Secure` | [Chrome+1](#release-comments) \(Edge v86\)  | Canary v82, Dev v82 | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, including the planned timeline by Google for this change, navigate to the [Chrome Platform Status entry][ChromestatusFeature5088147346030592].  |  
 | Referrer Policy: Default to `strict-origin-when-cross-origin` | [Chrome+1](#release-comments) \(Edge v86\)  | Canary v79, Dev v79 | This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, including the planned timeline by Google for this change, navigate to the [Chrome Platform Status entry][ChromestatusFeature6251880185331712].  |  
 | Disallow synchronous `XmlHttpRequest` in page dismissal | [Chrome+1](#release-comments) \(Edge v83\) |  | This change is happening in the Chromium project, on which Microsoft Edge is based.  Matching Chrome, Microsoft Edge offers a Group Policy to turn off this change until Edge v88.  For more information, including the planned timeline by Google for this change, navigate to the [Chrome Platform Status entry][ChromestatusFeature4664843055398912].  |  
@@ -70,12 +71,16 @@ Review this article often.  The Microsoft Edge team updates this article as thin
 [ChromestatusFeature6251880185331712]: https://chromestatus.com/feature/6251880185331712 "Referrer Policy: Default to strict-origin-when-cross-origin | Chrome Platform Status"  
 [ChromestatusFeature6678134168485888]: https://chromestatus.com/feature/6678134168485888 "Remove 3DES in TLS | Chrome Platform Status"
 [ChromestatusFeature5436853517811712]: https://chromestatus.com/feature/5436853517811712 "Restrict private network requests for subresources to secure contexts | Chrome Platform Status"
+[ChromestatusFeature5823036655665152]: https://www.chromestatus.com/feature/5823036655665152 "[WebRTC] Deprecate and Remove Plan B (deprecated) | Chrome Platform Status"
 [ChromiumFlashRoadmapSupportRemoved]: https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021- "Flash Support Removed from Chromium (Target: Chrome 88+ - Jan 2021) - Flash Roadmap | Chromium Projects"  
 
 [ChromeDevelopersOrigintrialsAppCacheOriginTrial]: https://developers.chrome.com/origintrials/#/view_trial/1776670052997660673 "AppCache OriginTrial token | Chrome Developers"  
+[ChromeDevelopersOrigintrialsWebRTCPlanBOriginTrial]: https://developer.chrome.com/origintrials/#/view_trial/3892235977954951169 "WebRTC Plan B Reverse Origin Trial Token | Chrome Developers"
 
 [GoogleBlogSecurity20200206]: https://security.googleblog.com/2020/02/protecting-users-from-insecure_6.html "Protecting users from insecure downloads in Google Chrome - Google Online Security Blog" 
 
 [WebDevAppCacheRemoval]: https://web.dev/appcache-removal "Preparing for AppCache removal | web.dev"  
+
+[PSADeprecateWebRTCPlanB]: https://groups.google.com/g/discuss-webrtc/c/UBtZfawdIAA/m/-UVQQcubBQAJ "PSA: Timeline for Plan B SDP Deprecation and Removal - Please Migrate to Unified Plan"
 
 <!--todo:  cleanup links  -->  
