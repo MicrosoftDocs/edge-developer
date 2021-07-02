@@ -241,11 +241,7 @@ You may also change the order of DOM nodes. For example, on your web page the na
 
 You may also remove nodes from the DOM Tree. Perform the following steps.
 
-1.  In the **DOM Tree**, choose `<div>A new element!?!</div>`. DevTools highlights the node.
-    
-    :::image type="complex" source="media/beginners-html-delete1.msft.png" alt-text="Choose the node to be deleted" lightbox="media/beginners-html-delete1.msft.png":::
-       Choose the node to be deleted  
-    :::image-end:::  
+1.  In the **DOM Tree**, choose `<div>A new element!?!</div>`. DevTools highlights the node. 
     
 1.  Select the `Delete` key on your keyboard.  The `<div>A new element!?!</div>` node is removed from the DOM Tree.  
     
