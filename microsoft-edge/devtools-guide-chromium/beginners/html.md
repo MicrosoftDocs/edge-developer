@@ -239,7 +239,7 @@ You may also change the order of DOM nodes. For example, on your web page the na
     
 ### Delete a node
 
-You may also remove nodes from the DOM Tree.
+You may also remove nodes from the DOM Tree. Perform the following steps.
 
 1.  In the **DOM Tree**, choose `<div>A new element!?!</div>`. DevTools highlights the node.
     
