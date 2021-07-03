@@ -14,16 +14,19 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence.  Review the following content for up-to-date information on product announcements, additions, modifications, and breaking changes to the APIs.  
 
 > [!NOTE]
-> Ensure you re-compile your app after updating the NuGet package.  The WebView team recommends that you use the Canary channel when you develop using the prerelease packages, and the Evergreen WebView2 Runtime when you use the release packages.  For more information, navigate to [Matching WebView2 Runtime versions][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].  
+> Make sure to re-compile your app after updating the NuGet SDK package.  The WebView team recommends that you use the Canary channel of Microsoft Edge when you develop using the prerelease packages, and use the Evergreen WebView2 Runtime when you use the release packages.  For more information, navigate to [Matching WebView2 Runtime versions][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].  
 
 > [!NOTE]
-> WebView2 bug fixes are either Runtime or SDK specific.  
+> WebView2 bug fixes are either Runtime-specific or SDK-specific.  
+
+The minimum version of Microsoft Edge that supports the core SDK APIs is version 86.0.616.0 or higher.
+
 
 ## 1.0.902-prerelease
 
 Release Date: June 1, 2021  
 
-[NuGet package][NuGetGallery1.0.902-prerelease] \| Minimum Microsoft Edge version to load: 86.0.616.0 or newer \| Full API Compatibility: 92.0.902.0 or newer  
+[NuGet package for WebView2 SDK 1.0.902-prerelease][NuGetGallery1.0.902-prerelease] \| Requires WebView2 Runtime version 92.0.902.0 or higher, to use this added SDK functionality.
 
 ### General  
 *   Improved WebView2 startup performance and disk footprint.
@@ -38,18 +41,17 @@ Release Date: June 1, 2021
 
 *   Fix a bug where mouse left click doesn't dismiss context menu. This change is Runtime-specific.
 *   Fixed a bug where WebView2 creation fails when exe files for apps sharing the same user data folder have inconsistent version info.
-*   Fixed a bug where special browser keys like Refresh, Home, Back, etc can't be disabled by AreBrowserAcceleratorKeysEnabled. This change is Runtime-specific.
-*   Fixed a bug in WebView2 .NET controls that WebView2 windows are blank when created in the background. \([\#1077][GithubMicrosoftedgeWebviewfeedbackIssue1077]\). 
-*   Dismissing a file picker dialog by pressing 'enter' or 'esc' no longer crashes WPF applications using WebView control. \([\#1099][GithubMicrosoftedgeWebviewfeedbackIssue1099]\). 
-*   Fixed a bug that [AllowSingleSignOnUsingOSPrimaryAccount][Webview2ReferenceWin32Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount] doesn't work properly with WebView2 when a WebResourceRequested event handler is attached. This change is Runtime-specific. \([\#1183][GithubMicrosoftedgeWebviewfeedbackIssue1183]\).  
-*   Downloading a file no longer breaks WebView2 DefaultBackgroundColor transparency. This change is Runtime-specific. \([\#1108][GithubMicrosoftedgeWebviewfeedbackIssue1108]\). 
+*   Fixed a bug where special browser keys such as `Refresh`, `Home`, and `Back` can't be disabled by `AreBrowserAcceleratorKeysEnabled`. This change is Runtime-specific.
+*   Fixed a bug in WebView2 .NET controls, where WebView2 windows are blank when created in the background. \([\#1077][GithubMicrosoftedgeWebviewfeedbackIssue1077]\). 
+*   Dismissing a file picker dialog by pressing `Enter` or `Esc` no longer crashes WPF applications using WebView control. \([\#1099][GithubMicrosoftedgeWebviewfeedbackIssue1099]\). 
+*   Fixed a bug that [AllowSingleSignOnUsingOSPrimaryAccount][Webview2ReferenceWin32Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount] doesn't work properly with WebView2 when a `WebResourceRequested` event handler is attached. This change is Runtime-specific. \([\#1183][GithubMicrosoftedgeWebviewfeedbackIssue1183]\).  
+*   Downloading a file no longer breaks WebView2 `DefaultBackgroundColor` transparency. This change is Runtime-specific. \([\#1108][GithubMicrosoftedgeWebviewfeedbackIssue1108]\). 
 *   Removed screen sharing media picker message that contains Microsoft branding. \([\#940][GithubMicrosoftedgeWebviewfeedbackIssue940]\). 
-*   Fixed a bug in WebView2 WinForm control where hiding the parent form does not hide WebView2 control \([\#828][GithubMicrosoftedgeWebviewfeedbackIssue828] and [\#1079][GithubMicrosoftedgeWebviewfeedbackIssue1079]\).
+*   Fixed a bug in WebView2 WinForm control where hiding the parent form doesn't hide the WebView2 control \([\#828][GithubMicrosoftedgeWebviewfeedbackIssue828] and [\#1079][GithubMicrosoftedgeWebviewfeedbackIssue1079]\).
 *   Added static WS_CLIPCHILDREN style to WebView2's WPF windows. \([\#1013][GithubMicrosoftedgeWebviewfeedbackIssue1013]\). 
-*   Fixed a bug that right-clicking a link crashes WebView2 host app. This change is Runtime-specific.
-*   Fixed reliability bug that could crash host app process when moving to newer Edge WebView2 Runtime version.
-*   **DEPRECATION**: Officially deprecated DefaultBackgroundColor API for Windows 7.
-
+*   Fixed a bug where right-clicking a link crashes the WebView2 host app. This change is Runtime-specific.
+*   Fixed a reliability bug that could crash the host app process when moving to a newer Edge WebView2 Runtime version.
+*   **DEPRECATION**: Officially deprecated the `DefaultBackgroundColor` API for Windows 7.
 
 #### Promotions
 
@@ -61,8 +63,6 @@ Release Date: June 1, 2021
     > [!NOTE]
     > There is no current API to delete the locally stored general autofill and password autosave information.  Please provide a control to delete the data, which will involve deleting the entire User Data Folder. 
 
-
-
 ### .NET  
     
 #### Bug fixes  
@@ -70,21 +70,22 @@ Release Date: June 1, 2021
 *   Fixed a bug in WebView2 WinForm control where WebView2 window visibility is not updated properly after parent window is disposed. \([\#1282][GithubMicrosoftedgeWebviewfeedbackIssue1282] and [\#828][GithubMicrosoftedgeWebviewfeedbackIssue828]\).
 *   Fixed a bug in WebView2 WPF control that Source property binding in WPF OneWay binding mode is not working properly. \([\#619][GithubMicrosoftedgeWebviewfeedbackIssue619] and [\#608][GithubMicrosoftedgeWebviewfeedbackIssue608]\).
 
+
 ## 1.0.864.35
 
 Release Date: May 31, 2021  
 
-[NuGet package][NuGetGallery1.0.864.35] \| Minimum Runtime version to load: 86.0.616.0 or newer \| Full API Compatibility: 91.0.864.35 or newer  
+[NuGet package for WebView2 SDK 1.0.864.35][NuGetGallery1.0.864.35] \| Requires WebView2 Runtime version 91.0.864.35 or higher, to use this added SDK functionality.
 
 ### General  
 
 #### Bug Fixes  
 
-*   Fixed reliability bug that could crash host app process when moving to newer Edge WebView2 Runtime version.
+*   Fixed a reliability bug that could crash the host app process when moving to a newer Edge WebView2 Runtime version.
 *   Fixed a bug that prevented memory purge in some situations. This change is Runtime-specific.
-*   Fixed error in 818 SDK release package where project couldn't find WebView2.h file. \([\#1209][GithubMicrosoftedgeWebviewfeedbackIssue1209]\). 
+*   Fixed error in 818 SDK release package where project couldn't find the `WebView2.h` file. \([\#1209][GithubMicrosoftedgeWebviewfeedbackIssue1209]\). 
 *   Fixed a bug which caused WebResourceRequested event to be dropped for some requests with binary bodies.
-*   Improve NewWindowRequested documentation. \([\#448][GithubMicrosoftedgeWebviewfeedbackIssue448]\). 
+*   Improve `NewWindowRequested` documentation. \([\#448][GithubMicrosoftedgeWebviewfeedbackIssue448]\). 
 
 #### Promotions
 *   [UserAgent API][Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetUseragent] is now stable.
@@ -93,13 +94,14 @@ Release Date: May 31, 2021
 ### .NET  
 
 #### Bug Fixes  
-*   Fixed a bug in WebView2 .NET controls that first header is missing when iterating CoreWebView2WebResourceRequest headers collection. \([\#1123][GithubMicrosoftedgeWebviewfeedbackIssue1123]\). 
+*   Fixed a bug in WebView2 .NET controls that first header is missing when iterating `CoreWebView2WebResourceRequest` headers collection. \([\#1123][GithubMicrosoftedgeWebviewfeedbackIssue1123]\). 
+
 
 ## 1.0.865-prerelease  
 
 Release Date: April 26, 2021  
 
-[NuGet package][NuGetGallery1.0.865-prerelease] \| Minimum Microsoft Edge version to load: 86.0.616.0 or newer \| Full API Compatibility: 91.0.865.0 or newer  
+[NuGet package for WebView2 SDK 1.0.865-prerelease][NuGetGallery1.0.865-prerelease] \| Requires WebView2 Runtime version 91.0.865.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -130,17 +132,18 @@ Release Date: April 26, 2021
 #### Bug fixes  
 
 *   Improved COM Exception descriptions by wrapping each in a more detailed .NET exception.  \([\#338][GithubMicrosoftedgeWebviewfeedbackIssue338]\).  This change is Runtime-specific.  
-*   Fixed bug caused when you select `tab` to shift focus caused WebView2 control to crash in Microsoft Visual Studio Tools for Office.  \([\#589][GithubMicrosoftedgeWebviewfeedbackIssue589] and [\#933][GithubMicrosoftedgeWebviewfeedbackIssue933]\).  This change is Runtime-specific.  
+*   Fixed bug caused when you select `Tab` to shift focus caused WebView2 control to crash in Microsoft Visual Studio Tools for Office.  \([\#589][GithubMicrosoftedgeWebviewfeedbackIssue589] and [\#933][GithubMicrosoftedgeWebviewfeedbackIssue933]\).  This change is Runtime-specific.  
 *   Improved .NET framework loader down level to be more robust.  \([\#946][GithubMicrosoftedgeWebviewfeedbackIssue946]\).
 *   Fixed bug that caused crash when you try to refresh before first navigation completed.  \([\#1011][GithubMicrosoftedgeWebviewfeedbackIssue1011]\).
 *   Fixed initialization so navigation occurs during `CoreWebView2InitializationCompleted`.  \([\#1050][GithubMicrosoftedgeWebviewfeedbackIssue1050]\).
 *   Improved .NET browser process crash error handling.  You may now recreate controls after you handle a `ProcessFailed` event without a crash.  \([\#996][GithubMicrosoftedgeWebviewfeedbackIssue996]\).  
     
+
 ## 1.0.818.41  
 
 Release Date: April 21, 2021  
 
-[NuGet package][NuGetGallery1.0.818.41] \| Minimum Runtime version to load: 86.0.616.0 or newer \| Full API Compatibility: 90.0.818.41 or newer  
+[NuGet package for WebView2 SDK 1.0.818.41][NuGetGallery1.0.818.41] \| Requires WebView2 Runtime version 90.0.818.41 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -151,11 +154,12 @@ Release Date: April 21, 2021
 *   Improved WebView2 code to be more resilient to `.exe` application files with malformatted version information.  \([\#850][GithubMicrosoftedgeWebviewfeedbackIssue850]\).  
 *   Removed `--winhttp-proxy-resolver` from WebView browser process command-line, turned on other proxy command-line options for WebView2.  
     
+
 ## 1.0.824-prerelease  
 
 Release Date: March 8, 2021  
 
-[NuGet package][NuGetGallery1.0.824-prerelease] \| Minimum Microsoft Edge version to load: 86.0.616.0 or newer \| Full API Compatibility: 91.0.824.0 or newer  
+[NuGet package for WebView2 SDK 1.0.824-prerelease][NuGetGallery1.0.824-prerelease] \| Requires WebView2 Runtime version 91.0.824.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -178,11 +182,12 @@ Release Date: March 8, 2021
 *   Fixed a bug that navigating to `edge://` causes browser process to exit.  \([\#604][GithubMicrosoftedgeWebviewfeedbackIssue604]\).  
 *   Fixed a bug that limited WebView2 bounds to size of screen in Visual Hosting mode.  
     
+
 ## 1.0.774.44  
 
 Release Date: March 8, 2021  
 
-[NuGet package][NuGetGallery1.0.774.44] \| Minimum Runtime version to load: 86.0.616.0 or newer \| Full API Compatibility: 89.0.774.44 or newer  
+[NuGet package for WebView2 SDK 1.0.774.44][NuGetGallery1.0.774.44] \| Requires WebView2 Runtime version 89.0.774.44 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -204,11 +209,12 @@ Release Date: March 8, 2021
 
 *   Fixed a bug that limited WebView2 bounds to size of screen in Visual Hosting mode.  
     
+
 ## 1.0.790-prerelease  
 
 Release Date: February 10, 2021  
 
-[NuGet package][NuGetGallery1.0.790-prerelease] \| Microsoft Edge version 86.0.616.0 or newer  
+[NuGet package for WebView2 SDK 1.0.790-prerelease][NuGetGallery1.0.790-prerelease] \| Requires Microsoft Edge version 86.0.616.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -255,11 +261,12 @@ Release Date: February 10, 2021
 *   Fixed bug that crashed WebView apps that use the WPF SDK.  The crash occurred when you selected `F4` to close a window.  \([\#399][GithubMicrosoftedgeWebviewfeedbackIssue399]\).  
 *   The WebView2 initialization screen is now transparent, instead of gray.  \([\#196][GithubMicrosoftedgeWebviewfeedbackIssue196]\).  
     
+
 ## 1.0.705.50  
 
 Release Date: January 25, 2021  
 
-[NuGet package][NuGetGallery1.0.705.50] \| WebView2 Runtime version 86.0.616.0 or newer  
+[NuGet package for WebView2 SDK 1.0.705.50][NuGetGallery1.0.705.50] \| Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -272,11 +279,12 @@ Release Date: January 25, 2021
     *   [DOMContentLoaded API][Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseAddDomcontentloaded]  
     *   [WebView Environment property][Webview2ReferenceWin32Icorewebview22ViewWebview210721PrereleaseGetEnvironment]  
         
+
 ## 1.0.721-prerelease  
 
 Release Date: December 8, 2020  
 
-[NuGet package][NuGetGallery1.0.721-prerelease] \| Microsoft Edge version 86.0.616.0 or newer  
+[NuGet package for WebView2 SDK 1.0.721-prerelease][NuGetGallery1.0.721-prerelease] \| Requires Microsoft Edge version 86.0.616.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -320,11 +328,12 @@ Release Date: December 8, 2020
 *   Removed unnecessary files from being output to WebView2 folders.  \([\#461][GithubMicrosoftedgeWebviewfeedbackIssue461]\).  
 *   Improved host object API.  \([\#335][GithubMicrosoftedgeWebviewfeedbackIssue335] and [\#525][GithubMicrosoftedgeWebviewfeedbackIssue525]\).  
     
+
 ## 1.0.664.37  
 
 Release Date: November 20, 2020  
 
-[NuGet package][NuGetGallery1.0.664.37] \| WebView2 Runtime version 86.0.616.0 or newer  
+[NuGet package for WebView2 SDK 1.0.664.37][NuGetGallery1.0.664.37] \| Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -342,11 +351,12 @@ Release Date: November 20, 2020
 
 *   `CoreWebView2NewWindowRequestedEventArgs.Handled` prevents new window from being opened.  \([\#549][GithubMicrosoftedgeWebviewfeedbackIssue549] and [\#560][GithubMicrosoftedgeWebviewfeedbackIssue560]\).  
     
+
 ## 1.0.674-prerelease  
 
 Release Date: October 19, 2020  
 
-[NuGet package][NuGetGallery1.0.674-prerelease] \| WebView2 Runtime version 86.0.616.0 or newer  
+[NuGet package for WebView2 SDK 1.0.674-prerelease][NuGetGallery1.0.674-prerelease] \| Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -372,11 +382,12 @@ Release Date: October 19, 2020
 *   Updated .NET Loader base to load on process bit instead of operating system architecture.  \([\#431][GithubMicrosoftedgeWebviewfeedbackIssue431]\).  
 *   Renamed `EdgeNotFoundException` to [WebView2RuntimeNotFoundException][DotnetApiMicrosoftWebWebview2CoreWebview2runtimenotfoundexception].  
     
+
 ## 1.0.622.22  
 
 Release Date: October 19, 2020  
 
-[NuGet package][NuGetGallery1.0.622.22] \| WebView2 Runtime version 86.0.616.0 or newer  
+[NuGet package for WebView2 SDK 1.0.622.22][NuGetGallery1.0.622.22] \| Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -386,16 +397,17 @@ Release Date: October 19, 2020
 *   [Evergreen WebView2 Runtime and installer][Webview2ConceptsDistributionUnderstandRuntimeInstaller] are GA.  Bootstrapper, downlink link for the Bootstrapper, and Standalone Installer for the Evergreen WebView2 Runtime are available on [Microsoft Edge WebView2][MicrosoftDeveloperMicrosoftEdgeWebView2].  Sample code for the installation workflow is also available in the [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain].  
 *   [Fixed Version mode][Webview2ConceptsDistributionFixedVersionDistributionMode] is available for developer preview.  
     
+
 ## 0.9.622.11  
 
 Release Date: September 10, 2020  
 
-[NuGet package][NuGetGallery0.9.622.11] \| WebView2 Runtime version 86.0.616.0 or newer  
+[NuGet package for WebView2 SDK 0.9.622.11][NuGetGallery0.9.622.11] \| Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
 
 ### General  
 
 *   > [!IMPORTANT]
-    > **Announcement**: This SDK is the Release Candidate for WebView2 Win32 C/C++ GA.  The GA version should use same API interface and functionality.  
+    > **Announcement**: This SDK is the Release Candidate for WebView2 Win32 C/C++ GA.  The GA version is expected to use the same API interface and functionality.  
     
 *   Disconnected [browser policies][DeployedgeMicrosoftEdgePolicies].  
 *   Added [AllowSingleSignOnUsingOSPrimaryAccount][Webview2ReferenceWin32Icorewebview2environmentoptionsViewWebview209622GetAllowsinglesignonusingosprimaryaccount] property on WebView2 environment options to turn on conditional access for WebView.  
@@ -404,11 +416,12 @@ Release Date: September 10, 2020
 *   Updated NewWindowRequested event to handle `window.open()` request without parameters.  \([\#293][GithubMicrosoftedgeWebviewfeedbackIssue293]\).  
 *   [AdditionalBrowserArguments][Webview2ReferenceWin32Icorewebview2environmentoptionsViewWebview209622PutAdditionalbrowserarguments] specified with `ICoreWebView2EnvironmentOptions` aren't overridden with environment variables or registry values.  For more information, navigate to [CreateCoreWebView2EnvironmentWithOptions][Webview2ReferenceWin32Webview2IdlViewWebview209622Createcorewebview2environmentwithoptions].  
     
+
 ## 0.9.579  
 
 Release Date: July 20, 2020  
 
-[NuGet package][NuGetGallery0.9.579] \| Microsoft Edge version 86.0.579.0.  
+[NuGet package for WebView2 SDK 0.9.579][NuGetGallery0.9.579] \| Requires Microsoft Edge version 86.0.579.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -438,9 +451,10 @@ Release Date: July 20, 2020
 *   Improved WPF focus handling.  \([\#185][GithubMicrosoftedgeWebviewfeedbackIssue185]\).  
 *   Added `ZoomFactor` property on WPF Webview2 Controller.  
     
+
 ## 0.9.538  
 
-[NuGet package][NuGetGallery0.9.538] \| Microsoft Edge version 85.0.538.0.  
+[NuGet package for WebView2 SDK 0.9.538][NuGetGallery0.9.538] \| Requires Microsoft Edge version 85.0.538.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -469,9 +483,10 @@ Release Date: July 20, 2020
     
 *   Added [GetAvailableBrowserVersionString][DotnetApiMicrosoftWebWebview2CoreCorewebview2environmentGetavailablebrowserversionstring] and [CompareBrowserVersions][DotnetApiMicrosoftWebWebview2CoreCorewebview2environmentComparebrowserversions] as [CoreWebView2Environment][DotnetApiMicrosoftWebWebview2CoreCorewebview2environment] statics.  
     
+
 ## 0.9.515-prerelease  
 
-[NuGet package][NuGetGallery0.9.515-prerelease] \| Microsoft Edge version 84.0.515.0.  
+[NuGet package for WebView2 SDK 0.9.515-prerelease][NuGetGallery0.9.515-prerelease] \| Requires Microsoft Edge version 84.0.515.0 or higher, to use this added SDK functionality.
 
 *   > [!IMPORTANT]
     > **Announcement**:  WebView2 now supports Windows Forms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **pre-release package**.  
@@ -485,9 +500,10 @@ Release Date: July 20, 2020
     > *   **DPI Awareness**:  WebView2 for WPF is currently not DPI aware.  When initializing WebView2 on high DPI monitors, there is a known issue where the WebView at first initializes as a fraction of the window until the window is resized.  
     > *   **WPF Designer**:  The WPF designer is not currently supported.  Add the WebView2 control in your app by directly modifying the appropriate XAML in a text editor.  
     
+
 ## 0.9.488  
 
-[NuGet package][NuGetGallery0.9.488] \| Microsoft Edge version 84.0.488.0.  
+[NuGet package for WebView2 SDK 0.9.488][NuGetGallery0.9.488] \| Requires Microsoft Edge version 84.0.488.0 or higher, to use this added SDK functionality.
 
 *   > [!IMPORTANT]
     > **Announcement**:  Starting with the upcoming Microsoft Edge version 83, Evergreen WebView no longer targets the Stable browser channel.  Instead, it targets another set of binaries, branded [Evergreen WebView2 Runtime][Webview2ConceptsDistributionEvergreenDistributionMode], that you may chain-install through an installer the WebView team is currently developing.  For more information, navigate to [App-Distribution][Webview2ConceptsDistribution].  
@@ -527,9 +543,10 @@ Release Date: July 20, 2020
     *   Added [ICoreWebView2ExperimentalPointerInfo][Webview2ReferenceWin32Icorewebview2experimentalpointerinfoViewWebview209488Prerelease], which contains all the information from a `POINTER_INFO`.  This object is passed to SendPointerInput to inject pointer input into the WebView.  
     *   Added [ICoreWebView2ExperimentalCursorChangedEventHandler][Webview2ReferenceWin32Icorewebview2experimentalcursorchangedeventhandlerViewWebview209488Prerelease], which tells the app when the mouse cursor over the WebView should be changed.  When mouse is over a text box in the WebView, the cursor changes from the arrow to the selector.  The `cursor` property on the `CompositionController` tells the app what the mouse cursor should currently be for the WebView.  
         
+
 ## 0.9.430  
 
-[NuGet package][NuGetGallery0.9.430] \| Microsoft Edge version 82.0.430.0.  
+[NuGet package for WebView2 SDK 0.9.430][NuGetGallery0.9.430] \| Requires Microsoft Edge version 82.0.430.0 or higher, to use this added SDK functionality.
 
 The WebView2 SDK is the official Win32 C++ Beta version, which incorporates several feature requests from feedback.  The WebView team tries to limit the number of releases with breaking changes.  As general availability approaches, several major breaking changes are incorporated in the Beta release.  
 
@@ -560,9 +577,10 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 *   > [!IMPORTANT]
     > **Breaking Change**:  Changed `AcceleratorKeyPressedEventArgs` [Handle][Webview2ReferenceWin32Iwebview2acceleratorkeypressedeventargsViewWebview208355Handle] method to a [get_Handled][Webview2ReferenceWin32Icorewebview2acceleratorkeypressedeventargsViewWebview209430GetHandled] property.  
     
+
 ## 0.8.355  
 
-[NuGet package][NuGetGallery0.8.355] \| Microsoft Edge version 80.0.355.0.  
+[NuGet package for WebView2 SDK 0.8.355][NuGetGallery0.8.355] \| Requires Microsoft Edge version 80.0.355.0 or higher, to use this added SDK functionality.
 
 *   Released WebView2API Sample, a comprehensive guide of the WebView2 SDK.  For more information, navigate to [API Sample][GithubMicrosoftedgeWebview2samplesApisample].  
 *   Added IME support for all languages besides English \([#30][GithubMicrosoftedgeWebviewfeedbackIssue30]\).  
@@ -570,9 +588,10 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 *   > [!IMPORTANT]
     > **Breaking Change**:  Modified fullscreen behavior.  Deprecated [IsFullScreenAllowed][Webview2ReferenceWin32Iwebview2settingsViewWebview208355GetIsfullscreenallowedDeprecated].  Now, by default, if an element in a WebView \(such as a video\) is set to full screen, it fills the bounds of the WebView.  Use the [ContainsFullScreenElementChanged][Webview2ReferenceWin32Iwebview2containsfullscreenelementchangedeventhandlerViewWebview208355] event and [get_ContainsFullScreenElement][Webview2ReferenceWin32Iwebview2webview5ViewWebview208355GetContainsfullscreenelement] to specify how the app should resize the WebView if an element wants to enter fullscreen mode.  
     
+
 ## 0.8.314  
 
-[NuGet package][NuGetGallery0.8.314] \| Microsoft Edge version 80.0.314.0.  
+[NuGet package for WebView2 SDK 0.8.314][NuGetGallery0.8.314] \| Requires Microsoft Edge version 80.0.314.0 or higher, to use this added SDK functionality.
 
 *   Added support for Windows 7, Windows 8, and Windows 8.1.  
 *   Added Visual Studio and Visual Studio Code debug support for WebView2.  Now, debug your script in the WebView2 right from your IDE.  For more information, navigate to [How to debug when developing with WebView2 controls][Webview2HowToDebug].  
@@ -586,9 +605,10 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
     
 *   Updated `Notification Change Behavior` so WebView2 automatically rejects notification permission requests prompted by web content hosted in the WebView.  
     
+
 ## 0.8.270  
 
-[NuGet package][NuGetGallery0.8.270] \| Microsoft Edge version 78.0.270.0.  
+[NuGet package for WebView2 SDK 0.8.270][NuGetGallery0.8.270] \| Requires Microsoft Edge version 78.0.270.0 or higher, to use this added SDK functionality.
 
 *   Added `DocumentTitleChanged` event to indicate document title change \([\#27][GithubMicrosoftedgeWebviewfeedbackIssue27]\).  
 *   Added `GetWebView2BrowserVersionInfo` API \([\#18][GithubMicrosoftedgeWebviewfeedbackIssue18]\).  
@@ -598,17 +618,19 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
     The WebView team selects the more stable channel to ensure the most consistent behaviors for the end user.  When you test with latest Canary builds, you should create a script to set the `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` environment variable to `1` before launching the app.  
 *   Updated the `CreateWebView2EnvironmentWithDetails` function with logic for selecting `userDataFolder` when not specified.  For more information about the `CreateWebView2EnvironmentWithDetails` function, navigate to [CreateWebView2EnvironmentWithDetails][Webview2ReferenceWin32Webview2IdlViewWebview208355Createwebview2environmentwithdetails].  If you previously used the default `userDataFolder` location, when you switch to the new SDK the default `userDataFolder` is reset \(set to a new location in the host code directory\) and your state is also reset.  If the host process doesn't have permission to write to the specified directory, the `CreateWebView2EnvironmentWithDetails` function may fail.  You may copy the data from the old `user data folder` to the new directory.  
     
+
 ## 0.8.230  
 
-[NuGet package][NuGetGallery0.8.230] \| Microsoft Edge version 77.0.230.0.  
+[NuGet package for WebView2 SDK 0.8.230][NuGetGallery0.8.230] \| Requires Microsoft Edge version 77.0.230.0 or higher, to use this added SDK functionality.
 
 *   Added `Stop` API to stop all navigation and pending resource fetches \([\#28][GithubMicrosoftedgeWebviewfeedbackIssue28]\).  
 *   Added `.tlb` file to the NuGet package \([\#22][GithubMicrosoftedgeWebviewfeedbackIssue22]\).  
 *   Added .NET projects to the installer list in the NuGet package \([\#32][GithubMicrosoftedgeWebviewfeedbackIssue32]\).  
     
+
 ## 0.8.190  
 
-[NuGet package][NuGetGallery0.8.190] \| Microsoft Edge version 77.0.190.0.  
+[NuGet package for WebView2 SDK 0.8.190][NuGetGallery0.8.190] \| Requires Microsoft Edge version 77.0.190.0 or higher, to use this added SDK functionality.
 
 *   Added `get_AreDevToolsEnabled`/`put_AreDevToolsEnabled` to control if users can open DevTools \([\#16][GithubMicrosoftedgeWebviewfeedbackIssue16]\).  
 *   Added `get_IsStatusBarEnabled`/`put_IsStatusBarEnabled` to control if the status bar is displayed \([\#19][GithubMicrosoftedgeWebviewfeedbackIssue19]\).  
@@ -620,14 +642,14 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 *   Added include path, linking, and autocopying of DLL files to NuGet `TARGET` file in SDK.  
 *   Turned on requesting `window.open()` in script.  
     
+
 ## 0.8.149  
 
-[NuGet package][NuGetGallery0.8.149] \| Microsoft Edge version 76.0.149.0.  
+[NuGet package for WebView2 SDK 0.8.149][NuGetGallery0.8.149] \| Requires Microsoft Edge version 76.0.149.0 or higher.
 
 Initial developer preview release.  
 
-<!-- Links -->  
-
+<!-- links -->  
 [Webview2ConceptsDistribution]: ./concepts/distribution.md "Distributing a WebView2 app | Microsoft Docs"  
 [Webview2ConceptsDistributionEvergreenDistributionMode]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution mode - Distributing a WebView2 app | Microsoft Docs"  
 [Webview2ConceptsDistributionFixedVersionDistributionMode]: ./concepts/distribution.md#fixed-version-distribution-mode "Fixed Version distribution mode - Distributing a WebView2 app | Microsoft Docs"
@@ -640,7 +662,7 @@ Initial developer preview release.
 [Webview2GetStartedWinforms]: ./get-started/winforms.md "Get started with WebView2 in Windows Forms apps | Microsoft Docs"  
 [Webview2GetStartedWpf]: ./get-started/wpf.md "Get started with WebView2 in WPF | Microsoft Docs"  
 [Webview2HowToDebug]: ./how-to/debug.md "How to debug when developing with WebView2 controls | Microsoft Docs"  
-
+<!-- external links -->
 [Webview2ReferenceWin32Icorewebview2experimental2ViewWebview210865PrereleaseAddDownloadstarting]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental2?view=webview2-1.0.865-prerelease&preserve-view=true#add_downloadstarting  "add_DownloadStarting - interface ICoreWebView2Experimental2 | Microsoft Docs" 
 [Webview2ReferenceWin32Icorewebview2experimentalenvironment3ViewWebview210865PrereleaseUpdateruntime]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment3?view=webview2-1.0.865-prerelease&preserve-view=true#updateruntime  "UpdateRuntime - interface ICoreWebView2ExperimentalEnvironment3 | Microsoft Docs" 
 [Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210865PrereleaseAddhostobjecttoscriptwithorigins]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe?view=webview2-1.0.865-prerelease&preserve-view=true#addhostobjecttoscriptwithorigins  "AddHostObjectToScriptWithOrigins - interface ICoreWebView2ExperimentalFrame | Microsoft Docs" 
