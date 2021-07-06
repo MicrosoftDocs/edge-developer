@@ -22,7 +22,7 @@ There are two different ways of distributing the WebView2 Runtime that's used by
 
 ### Overview of the Evergreen distribution mode
 
-In the _Evergreen_ distribution mode, clients receive the latest WebView2 Runtime by __.
+In the _Evergreen_ distribution mode, clients automatically are updated with the latest WebView2 Runtime.
 
 The benefit of the Evergreen WebView2 Runtime approach is that the WebView2 runtime can be shared by all WebView2 apps on the user's system, thus saving disk space for the user.
 
@@ -60,7 +60,7 @@ By the time a WebView2 SDK package is released (as a Release version), a compati
 <!-- evergreen -->
 With Evergreen, updated versions of the WebView2 Runtime are deployed to client machines automatically.  Your WebView2 app receives a `NewBrowserVersionAvailable` event, which signals that a new version of the WebView2 Runtime is available on the client's disk.  If your app uses Evergreen distribution mode for the WebView2 runtime, your app needs to automatically restart when it receives this event.
 
-Refer to [Manage new versions of the runtime](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/developer-guide#manage-new-versions-of-the-runtime).
+Refer to [Manage new versions of the runtime][Webview2ConceptsDevguideManageVersionsRuntime].
 
 <!-- evergreen -->
 When using the Evergreen distribution mode of the WebView2 Runtime, your app gets the benefit of automatic updates of the WebView2 Runtime.
@@ -258,6 +258,7 @@ Compared to the Evergreen Runtime, Fixed Version does not have an installation p
 <!-- links -->  
 [ConceptsVersioning]: ./versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
 [HowToWebdriver]: ../how-to/webdriver.md "Automating and testing WebView2 with Microsoft Edge Driver | Microsoft Docs"  
+[Webview2ConceptsDevguideManageVersionsRuntime]: developer-guide#manage-new-versions-of-the-runtime) "Manage new versions of the runtime | Microsoft Docs"
 <!-- external links -->
 [ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"  
 [ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring]: /microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString - Globals | Microsoft Docs"  
