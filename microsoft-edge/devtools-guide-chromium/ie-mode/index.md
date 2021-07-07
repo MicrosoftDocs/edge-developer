@@ -72,7 +72,6 @@ If Internet Explorer 11 is not available, such as on Windows 11, you can use IEC
     2. Enter `%systemroot%\system32\f12\IEChooser.exe`, and then select **Ok**.
 2.  In IEChooser, select the entry for the IE mode tab.
 
-An Internet Explorer DevTools window opens to debug the content of the IE mode tab.
 
 ## Remote debugging and IE mode  
 
