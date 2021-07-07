@@ -69,7 +69,7 @@ If Internet Explorer 11 is not available, such as on Windows 11, you can use IEC
 
 1.  Open IEChooser.
     1. Press the `Windows logo key` + `R` to open the Run dialog box. 
-    2. In the Run dialog box, enter `%systemroot%\system32\f12\IEChooser.exe`.
+    2. Enter `%systemroot%\system32\f12\IEChooser.exe`, and then select **Ok**.
 2.  In IEChooser, select the entry for the IE mode tab.
 
 An Internet Explorer DevTools window opens to debug the content of the IE mode tab.
