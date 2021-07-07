@@ -68,7 +68,7 @@ To test your Internet Explorer 11-based website \(or app\) in Internet Explorer 
 If Internet Explorer 11 is not available, such as on Windows 11, you can use IEChooser to launch the Internet Explorer DevTools to debug the content of your IE mode tabs. To use IEChooser, perform the following steps.
 
 1.  Open IEChooser.
-    1. Press the `Windows logo key` + `R` to open the Run dialog box. 
+    1. Open the Run dialog box. For example, select the `Windows logo key` + `R`.
     2. Enter `%systemroot%\system32\f12\IEChooser.exe`, and then select **Ok**.
 2.  In IEChooser, select the entry for the IE mode tab.
 
