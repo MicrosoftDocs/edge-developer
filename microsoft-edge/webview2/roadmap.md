@@ -24,12 +24,12 @@ If you have concerns or questions about the Roadmap, provide your feedback in th
 The WebView2 team is planning the following major efforts for future updates.  
 
 H2 2021:
-* Desktop UWP Preview
+* Windows Desktop Universal Windows Platform (UWP) Preview
 
 H1 2022:
-* Desktop UWP GA
+* Windows Desktop UWP GA
 
-H2 2022 & Beyond:
+Future: 
 * MacOS Preview
 * Xbox Preview
 * HoloLens Preview
