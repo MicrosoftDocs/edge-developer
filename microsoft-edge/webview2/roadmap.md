@@ -58,7 +58,7 @@ You can access WebView2 controls in your applications using [Win UI 3][UwpToolki
 
 ### WinUI 2
 
-WebView2 will be supported in UWP applications via WinUI 2. The team is aiming for a public preview in H2 2021. More info to come!
+WebView2 will be supported in UWP applications using WinUI 2, which will be in preview later this year.
 
  
 <!-- links -->  
