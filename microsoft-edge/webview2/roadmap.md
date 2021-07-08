@@ -56,10 +56,6 @@ The .NET SDK has reached GA.
 
 You can access WebView2 controls in your applications using [Win UI 3][UwpToolkitsWinui3Index] with the Windows App SDK. This is currently in preview. For more information, navigate to the [Windows App SDK roadmap][WindowsAppSDKRoadmap].
 
-### WinUI 2
-
-WebView2 will be supported in UWP applications using WinUI 2, which will be in preview later this year.
-
  
 <!-- links -->  
 
