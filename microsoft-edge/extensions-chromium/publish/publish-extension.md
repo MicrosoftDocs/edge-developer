@@ -91,7 +91,7 @@ Choose **Save** to continue to the **Store listings** section.
 
 The information provided in the following section is displayed to users who review your listing on the Microsoft Edge Add-ons store.  Even though some fields are optional, you should provide as much information as possible.  To list your extension in the store, the following details are required.  
 
-*   **Description** for each language in your extension package. To know how to support multiple langauges use the internationalization API ([chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478)) 
+*   **Description** for each language in your extension package. To support multiple languages, you can use the internationalization API ([chrome.i18n](https://go.microsoft.com/fwlink/?linkid=2167478)).  
 *   **Extension Store logo** for each language in your extension package.  
     
 > [!NOTE]
