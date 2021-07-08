@@ -140,7 +140,9 @@ When your PWA is initially launched, if the PWA was installed from the Microsoft
 Referer: app-info://platform/microsoft-store
 ```
 
-This feature, which is accessible to both client and server code, enables you to measure distinct traffic from your Store-installed PWA and make adjustments to your app’s content in order to improve the user experience.
+Use this feature to measure distinct traffic from your Store-installed PWA.  Based on the traffic, you can adjust your app’s content to improve the user experience.  This feature is accessible to both client and server code.
+
+This feature was introduced in Microsoft Edge version 91.
 
 ## See also  
 
