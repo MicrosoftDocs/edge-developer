@@ -191,7 +191,7 @@ For more information on how to build and deploy WebView2 apps, review the concep
 
 [Webview2ConceptsDistribution]: ./concepts/distribution.md "Distribution of apps using WebView2 | Microsoft Docs"  
 [Webview2ConceptsSecurity]: ./concepts/security.md "Best practices for developing secure WebView2 apps | Microsoft Docs"  
-[Webview2ConceptsUserDataFolder]: ./concepts/user-data-folder.md "Manage the User Data Folder | Microsoft Docs"  
+[Webview2ConceptsUserDataFolder]: ./concepts/user-data-folder.md "Manage the user data folder | Microsoft Docs"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "Understand WebView2 SDK versions | Microsoft Docs"  
 [Webview2GetStartedWin32]: ./get-started/win32.md "Get started with WebView2 | Microsoft Docs"  
 [Webview2GetStartedWinforms]: ./get-started/winforms.md "Get started with WebView2 in Windows Forms apps (Preview) | Microsoft Docs"  
