@@ -96,7 +96,7 @@ At this point you should have WebView2 Runtime installed, built a WebView2 proje
 
     ```  
     
-1.  Next, configure `edgeOptions` to use Chromium and WebView2 by setting the options `UseChromium` and `UseWebView` to true. Then, set `edgeOptions.BinaryLocation` to the file path of the Edge Driver. Finally, create the `EdgeDriver` object using `EdgeOptions`.  
+1.  Next, configure `edgeOptions` to use Chromium and WebView2 by setting the options `UseChromium` and `UseWebView` to true. Then, set `edgeOptions.BinaryLocation` to the file path of your host app binary. Finally, create the `EdgeDriver` object using `EdgeOptions`.  
     
     You may copy and paste the following code underneath `edgeOptions`.  Ensure you specify the correct file paths to your project runtime and the Microsoft Edge Driver runtime on your machine.  
     
