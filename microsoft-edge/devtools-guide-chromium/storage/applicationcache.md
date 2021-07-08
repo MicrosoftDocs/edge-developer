@@ -24,9 +24,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 # View Application Cache data with Microsoft Edge DevTools  
 
 > [!WARNING]
-> The Application Cache API is [being removed from the web platform][HTMLStandardOfflineWebApplications].  
-
-<!--todo: Replace [HTMLStandardOfflineWebApplications] with [WebDevAppcacheRemoval].  -->  
+> The Application Cache is deprecated, and you should avoid using it.  The Application Cache API is being removed from the web platform.  For more information, navigate to [Preparing for AppCache removal][WebDevAppcacheRemoval].
 
 This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect [Application Cache][MDNWebAPIsWindowApplicationCache] resources.  
 
@@ -68,11 +66,8 @@ At the bottom of the table there are status icons indicating your network connec
 | `UPDATEREADY` |  A new version of the cache is available. |  
 
 <!-- links -->  
-
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
-
-[HTMLStandardOfflineWebApplications]: https://html.spec.whatwg.org/multipage/offline.html#offline "Offline Web applications - HTML Standard"  
-
+<!-- external links: -->
 [MDNHTMLResourcesInAnApplicationCache]: https://developer.mozilla.org/docs/Web/HTML/Using_the_application_cache#Resources_in_an_application_cache "Resources in an application cache | MDN"  
 [MDNWebAPIsWindowApplicationCache]: https://developer.mozilla.org/docs/Web/API/Window/applicationCache "Window.applicationCache - Web APIs | MDN"  
 
