@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 # Microsoft Edge WebView2 roadmap  
 
 > [!NOTE]
-> Last Updated:  November 2020  
+> Last Updated:  July 2021  
 
 The WebView2 control allows developers to embed web technologies in their native applications.  The following page outlines the prospective roadmap for WebView2.  
 
@@ -23,32 +23,16 @@ If you have concerns or questions about the Roadmap, provide your feedback in th
 
 The WebView2 team is planning the following major efforts for future updates.  
 
-:::row:::
-   :::column span="1":::
-      WebView2 Runtime Installer  
-   :::column-end:::
-   :::column span="2":::
-      *   Q4 2020
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Fixed Version  
-   :::column-end:::
-   :::column span="2":::
-      *   Q4 2020  
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      General Availability  
-   :::column-end:::
-   :::column span="2":::
-      *   Win32 C/C++ \(Q4 2020\)  
-      *   .NET \(Q4 2020\)  
-      *   [WinUI 3.0][GithubMicrosoftUiXamlRoadmap]  
-   :::column-end:::
-:::row-end:::  
+H2 2021:
+* Desktop UWP Preview
+
+H1 2022:
+* Desktop UWP GA
+
+H2 2022 & Beyond:
+* MacOS Preview
+* Xbox Preview
+* HoloLens Preview
 
 ## WebView2 Runtime and Installer  
 
@@ -68,12 +52,18 @@ The Win32 C/C++ SDK has reached GA.
 
 The .NET SDK has reached GA. 
 
-### WinUI 3.0  
+### WinUI 3
 
-You can access WebView2 in your UWP applications using [Win UI 3.0][UwpToolkitsWinui3Index], currently in alpha.  For more information about keeping up to date, navigate to [Windows UI Library Roadmap][GithubMicrosoftUiXamlRoadmap].  
+You can access WebView2 in your applications using [Win UI 3][UwpToolkitsWinui3Index] via WindowsAppSDK. This is currently in preview with GA set for October. For more info visit the WindowsAppSDK [roadmap][WindowsAppSDKRoadmap].
 
+### WinUI 2
+
+WebView2 will be supported in UWP applications via WinUI 2. The team is aiming for a public preview in H2 2021. More info to come!
+
+ 
 <!-- links -->  
 
+[WindowsAppSDKRoadmap]: https://github.com/microsoft/WindowsAppSDK/blob/main/docs/roadmap.md "Roadmap"
 [ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution model - Distribution of applications using WebView2 | Microsoft Docs"  
 [ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-mode "Fixed version distribution model - Distribution of applications using WebView2 | Microsoft Docs"  
 
