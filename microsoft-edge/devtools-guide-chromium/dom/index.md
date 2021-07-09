@@ -3,7 +3,7 @@ description: How to view nodes, search for nodes, edit nodes, reference nodes in
 title: Get started with viewing and changing the DOM
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 06/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -23,9 +23,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->  
 # Get started with viewing and changing the DOM  
 
-Complete these interactive tutorials to learn the basics of viewing and changing the DOM of a page using Microsoft Edge DevTools.  
+Complete these interactive tutorials to learn the basics of viewing and changing the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \(DOM\) of a page using Microsoft Edge DevTools.  
 
-This tutorial assumes that you know the difference between the DOM and HTML.  Navigate to [Appendix: HTML versus the DOM](#appendix-html-versus-the-dom) for an explanation.  
+This tutorial assumes that you know the difference between the DOM and HTML. Navigate to [Appendix: HTML versus the DOM](#appendix-html-versus-the-dom) for an explanation.  
 
 ## Open DOM examples  
 
