@@ -177,7 +177,7 @@ For more information, navigate to [Navigation events][Webview2ConceptsNavigation
    Navigation events  
 :::image-end:::    
 
-In error cases, one or more of the following events may occur depending on whether the navigation is continued to an error webpage.  
+In error cases, one or more of the following events may occur depending on whether the navigation continued to an error webpage.  
 
 *   `SourceChanged`  
 *   `ContentLoading`  
