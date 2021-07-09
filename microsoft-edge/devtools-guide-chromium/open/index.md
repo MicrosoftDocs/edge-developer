@@ -23,7 +23,23 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License. -->
 # Open Microsoft Edge DevTools  
 
-There are many ways to open Microsoft Edge DevTools, helping you quickly access different parts of the DevTools UI.  
+There are many ways to open Microsoft Edge DevTools, helping you quickly access different parts of the DevTools UI. 
+
+## Open Microsoft Edge DevTools  
+
+To open DevTools, use either of the following options.  
+
+*   Use the Microsoft Edge UI.
+    *  Choose the **Settings and more** \(`...`\) icon >  **More Tools** >  **Developer Tools**.  
+    
+*   Use the keyboard.  
+    *   Select `F12` or `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).  
+
+For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].  
+
+:::image type="complex" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="Open DevTools from the Microsoft Edge main menu" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
+   Open DevTools from the Microsoft Edge main menu  
+:::image-end:::  
 
 ## Open the Elements panel to inspect the DOM or CSS  
 
@@ -47,22 +63,6 @@ To open the [Console][DevtoolsConsoleIndex] panel to view logged messages or run
 ## Open the previous panel  
 
 To jump to the previously open panel, select `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].  
-
-## Open Microsoft Edge DevTools  
-
-To open DevTools, use either of the following options.  
-
-*   Use the Microsoft Edge UI.
-    *  Choose the **Settings and more** \(`...`\) icon >  **More Tools** >  **Developer Tools**.  
-    
-*   Use the keyboard.  
-    *   Select `F12` or `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).  
-
-For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].  
-
-:::image type="complex" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="Open DevTools from the Microsoft Edge main menu" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
-   Open DevTools from the Microsoft Edge main menu  
-:::image-end:::  
 
 ## Auto-open DevTools on every new tab  
 
