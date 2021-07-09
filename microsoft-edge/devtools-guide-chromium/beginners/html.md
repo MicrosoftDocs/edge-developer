@@ -84,30 +84,29 @@ You are going to build a site in the Glitch online code editor.
 
 Your site needs more information. Complete the following steps to add some content.  
 
-1.  In the **editor tab**, replace `<!-- You're "About Me" will go here.  -->` with `<h1>About Me</h1>`.  
+1. In the **editor tab**, replace `<!-- You're "About Me" will go here.  -->` with `<h1>About Me</h1>`.  
     
-```html
-    ...
-    <body>
-        <p> Your site!</p>
-            <main>
-                <h1>About Me</h1>
-            </main>
-    ...
-```  
-
-:::image type="complex" source="media/beginners-html-add1.msft.png" alt-text="The new code is highlighted in the editor tab" lightbox="media/beginners-html-add1.msft.png":::
-    The new code is highlighted in the editor tab  
-:::image-end:::  
-
+    ```html
+        ...
+        <body>
+            <p> Your site!</p>
+                <main>
+                    <h1>About Me</h1>
+                </main>
+        ...
+    ```  
     
-1.  View your changes in the **live tab**. The text `About Me` is visible on the page. The text is larger than the surrounding text because the `<h1>` element represents a Heading 1.  Your web browser automatically styles headings in larger font sizes.  
+    :::image type="complex" source="media/beginners-html-add1.msft.png" alt-text="The new code is highlighted in the editor tab" lightbox="media/beginners-html-add1.msft.png":::
+        The new code is highlighted in the editor tab  
+    :::image-end:::  
+    
+1. View your changes in the **live tab**. The text `About Me` is visible on the page. The text is larger than the surrounding text because the `<h1>` element represents a Heading 1.  Your web browser automatically styles headings in larger font sizes.  
     
     :::image type="complex" source="media/beginners-html-add2.msft.png" alt-text="The new heading is visible in the live tab" lightbox="media/beginners-html-add2.msft.png":::
        The new heading is visible in the live tab  
     :::image-end:::  
     
-1.  Back in the **editor tab**, insert `<p>I am learning web development. Recent accomplishments:</p>` on the line below  `<h1>About Me</h1>`.  
+1. Back in the **editor tab**, insert `<p>I am learning web development. Recent accomplishments:</p>` on the line below  `<h1>About Me</h1>`.  
     
 ```html
 ...
