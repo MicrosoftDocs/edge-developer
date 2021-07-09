@@ -108,42 +108,42 @@ Your site needs more information. Complete the following steps to add some conte
     
 1. Back in the **editor tab**, insert `<p>I am learning web development. Recent accomplishments:</p>` on the line below  `<h1>About Me</h1>`.  
     
-```html
-...
-    <body>
-        <p> Your site!</p>
-            <main>
-                <h1>About Me</h1>
-                <p>I am learning web development. Recent accomplishments:</p>
-            </main>
-...
-```  
+    ```html
+    ...
+        <body>
+            <p> Your site!</p>
+                <main>
+                    <h1>About Me</h1>
+                    <p>I am learning web development. Recent accomplishments:</p>
+                </main>
+    ...
+    ```  
 
-:::image type="complex" source="media/beginners-html-add3.msft.png" alt-text="The updated code is highlighted in the editor tab" lightbox="media/beginners-html-add3.msft.png":::
-    The updated code is highlighted in the editor tab  
-:::image-end:::  
+    :::image type="complex" source="media/beginners-html-add3.msft.png" alt-text="The updated code is highlighted in the editor tab" lightbox="media/beginners-html-add3.msft.png":::
+        The updated code is highlighted in the editor tab  
+    :::image-end:::  
     
-1.  View your change in the **live tab**.
+1. View your change in the **live tab**.
 
-1.  Back in the **editor tab**, add a list of your accomplishments using the following code.
+1. Back in the **editor tab**, add a list of your accomplishments using the following code.
     
-```html
-...
-<p>I am learning web development.  Recent accomplishments:</p>
-    <ul>
-        <li>Learned how to set up my code in Glitch.</li>
-        <li>Added content to my HTML.</li>
-        <li>TODO: Learn how to use Microsoft Edge DevTools to experiment with content changes.</li>
-        <li>TODO: Learn the difference between HTML and the DOM.</li>
-    </ul>
-...
-```  
+    ```html
+    ...
+    <p>I am learning web development.  Recent accomplishments:</p>
+        <ul>
+            <li>Learned how to set up my code in Glitch.</li>
+            <li>Added content to my HTML.</li>
+            <li>TODO: Learn how to use Microsoft Edge DevTools to experiment with content changes.</li>
+            <li>TODO: Learn the difference between HTML and the DOM.</li>
+        </ul>
+    ...
+    ```  
 
-:::image type="complex" source="media/beginners-html-add4.msft.png" alt-text="The updated code is also highlighted in the editor tab" lightbox="media/beginners-html-add4.msft.png":::
-    The updated code is also highlighted in the editor tab  
-:::image-end:::  
+    :::image type="complex" source="media/beginners-html-add4.msft.png" alt-text="The updated code is also highlighted in the editor tab" lightbox="media/beginners-html-add4.msft.png":::
+        The updated code is also highlighted in the editor tab  
+    :::image-end:::  
 
-1.  View the **live tab** to make sure that the new content displays correctly.  
+1. View the **live tab** to make sure that the new content displays correctly.  
     
     :::image type="complex" source="media/beginners-html-add5.msft.png" alt-text="The new list is visible in the live tab" lightbox="media/beginners-html-add5.msft.png":::
        The new list is visible in the live tab  
