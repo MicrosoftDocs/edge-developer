@@ -13,7 +13,9 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 
 Capabilities are options that you may use to customize and configure an `EdgeDriver` session.  To learn about starting a new `EdgeDriver` session, navigate to [Automating Microsoft Edge][WebdriverIndexAutomateMicrosoftEdgeChromium].  This article describes all supported capabilities for [Microsoft Edge][WebdriverIndexInstallMicrosoftEdgeChromium] and details on passing the capabilities to `EdgeDriver` sessions.  
 
-Capabilities are passed to a WebDriver session as a JSON map.  WebDriver language bindings typically provide type-safe convenience methods so you don't need to configure the JSON map yourself.  Different WebDriver language bindings use different mechanisms to configure capabilities.  Navigate to the documentation for your [preferred language binding][WebdriverIndexChooseWebdriverLanguageBinding] to learn more about how to configure capabilities.  [Selenium][SeleniumMain] configures capabilities through the `EdgeOptions` class.  
+Capabilities are passed to a WebDriver session as a JSON map.  A WebDriver testing framework provides a WebDriver language binding.  WebDriver language bindings typically provide type-safe convenience methods so you don't need to configure the JSON map yourself.  Different WebDriver language bindings use different mechanisms to configure capabilities.  [Selenium][SeleniumMain] configures capabilities through the `EdgeOptions` class.
+
+To learn more about how to configure capabilities, consult the documentation for your preferred WebDriver testing framework.  For more information, navigate to [Choose a WebDriver testing framework][WebdriverIndexChooseAWebdriverTestingFramework].
 
 ## Using the EdgeOptions class  
 
@@ -80,12 +82,11 @@ The following list contains all of the Microsoft Edge-specific capabilities that
 | msedge.userDataDir | string | The path to the user data folder used by the Microsoft Edge instance. |  
 
 <!-- links -->  
-
 [DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Get started with Remote Debugging Windows 10 devices | Microsoft Docs"  
-[WebdriverIndexChooseWebdriverLanguageBinding]: ./index.md#choose-a-webdriver-language-binding "Choose a WebDriver language binding - WebDriver (Chromium) | Microsoft Docs"
+[WebdriverIndexChooseAWebdriverTestingFramework]: ./index.md#choose-a-webdriver-testing-framework "Choose a WebDriver testing framework - Use WebDriver (Chromium) for test automation | Microsoft Docs"
 [WebdriverIndexAutomateMicrosoftEdgeChromium]: ./index.md#automate-microsoft-edge-chromium "Automate Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"    
 [WebdriverIndexInstallMicrosoftEdgeChromium]: ./index.md#install-microsoft-edge-chromium "Install Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"  
-
+<!-- external links -->
 [SeleniumMain]: https://www.selenium.dev "SeleniumHQ Browser Automation"  
 [SharedCapabilitiesSeleniumDocumentation]: https://www.selenium.dev/documentation/en/driver_idiosyncrasies/shared_capabilities/ "Shared capabilities | Selenium Documentation"   
 

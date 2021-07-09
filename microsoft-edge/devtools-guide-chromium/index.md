@@ -215,7 +215,7 @@ If you want to preview the [latest features coming to the DevTools][DevtoolsGuid
 [DevtoolsGuideExperimentalFeaturesIndex]: ./experimental-features/index.md "Experimental features | Microsoft Docs"  
 [DevtoolsGuideMemoryProblemsIndex]: ./memory-problems/index.md "Fix memory problems | Microsoft Docs"  
 [DevtoolsGuideInspectStylesEditFonts]: ./inspect-styles/edit-fonts.md "Edit CSS font styles and settings in the Styles pane | Microsoft Docs"  
-[DevtoolsGuideIssuesIndex]: ./issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
+[DevtoolsGuideIssuesIndex]: ./issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"  
 [DevtoolsGuideJavascriptIndex]: ./javascript/index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideJavascriptOverrides]: ./javascript/overrides.md "Override webpage resources with local copies using Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideNetworkIndex]: ./network/index.md "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  

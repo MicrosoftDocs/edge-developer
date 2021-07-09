@@ -65,6 +65,14 @@ To test your Internet Explorer 11-based website \(or app\) in Internet Explorer 
     *   Select `F12`.  
     *   Hover anywhere, open a contextual menu \(right-click\), and choose **Inspect element**.  For more information about how to use those tools, navigate to [Using the F12 developer tools][PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326].  
 
+If Internet Explorer 11 is not available, such as on Windows 11, you can use IEChooser to launch the Internet Explorer DevTools to debug the content of your IE mode tabs. To use IEChooser, perform the following steps.
+
+1.  Open IEChooser.
+    1. Open the Run dialog box. For example, press the `Windows logo key` + `R`.
+    2. Enter `%systemroot%\system32\f12\IEChooser.exe`, and then select **Ok**.
+2.  In IEChooser, select the entry for the IE mode tab.
+
+
 ## Remote debugging and IE mode  
 
 Launch Microsoft Edge \(Chromium\) with remote debugging turned on from the command-line interface.  Microsoft Visual Studio, Microsoft Visual Studio Code, and other development tools typically run a command to launch Microsoft Edge.  The following command launches Microsoft Edge with the remote debugging port set to `9222`.  
