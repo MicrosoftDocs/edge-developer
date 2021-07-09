@@ -316,12 +316,12 @@ If your extension provides content \(such as user-generated, retail, or other we
 
 ### 2.13 Videos  
 
-If you submit a promotional video in the listing, it should follow all the content guidelines mentioned in this policy.  If you choose to provide a YouTube link, you must ensure that advertisements are disabled for the specific videos that you want to embed.  For more information about how ads are enabled and disabled on YouTube, see [support.google.com/youtube/answer/2531367?ref_topic=7072227][GoogleYoutubeAnswer2531367Topic7072227] and [support.google.com/youtube/answer/132596][GoogleYoutubeAnswer132596].
+If you submit a promotional video in the listing, it should follow all the content guidelines mentioned in this policy.  If you choose to provide a YouTube link, you must ensure that advertisements are turned off for the specific videos that you want to embed.  For more information on turning on or off ads on YouTube, navigate to [support.google.com/youtube/answer/2531367?ref_topic=7072227][GoogleYoutubeAnswer2531367Topic7072227] and [support.google.com/youtube/answer/132596][GoogleYoutubeAnswer132596].
 
 
 ## Certification Appeal Process
 
-All the extensions should adhere to the Store policies listed above. If your extension failed in the review process, please go through the store policies to understand the reason for failure. After you submit your extension using Partner Center and you have a question about the review or certification status of it, navigate to [New Support Request][MicrosoftSupportSupportrequestformE7a381be9c9aFafbEd76262bc93fd9e4] and complete the form.
+All the extensions should adhere to the Store policies listed above. If your extension failed in the review process, please review the store policies to understand the reason for failure. After submitting your extension using Partner Center, to ask a question about the review or certification status of it, navigate to [New Support Request][MicrosoftSupportSupportrequestformE7a381be9c9aFafbEd76262bc93fd9e4] and complete the form.
 
 ### Microsoft Edge Add-ons appeal statistics for FY2021
 
