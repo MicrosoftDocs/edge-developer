@@ -159,19 +159,19 @@ Before editing content from Microsoft Edge DevTools, let's understand the differ
 
 1. Navigate to the **live tab**. At the bottom of your page, the text `A new element!?!` displays.  
 
-<!--
-    :::image type="complex" source="media/beginners-html-dom1.msft.png" alt-text="At the bottom of the page the text A new element!?! displays" lightbox="media/beginners-html-dom1.msft.png":::
-       At the bottom of the page the text `A new element!?!` is displays  
-    :::image-end:::
--->
+    <!--
+        :::image type="complex" source="media/beginners-html-dom1.msft.png" alt-text="At the bottom of the page the text A new element!?! displays" lightbox="media/beginners-html-dom1.msft.png":::
+        At the bottom of the page the text `A new element!?!` is displays  
+        :::image-end:::
+    -->
     
 1. Open the **editor tab** and try to find the text in `index.html`. The text does not display in this view.  
 
-<!--
-    :::image type="complex" source="media/beginners-html-dom2.msft.png" alt-text="The mystery text A new element!?! is not found in index.html" lightbox="media/beginners-html-dom2.msft.png":::
-    The mystery text `A new element!?!` is not found in `index.html`  
-    :::image-end:::
--->
+    <!--
+        :::image type="complex" source="media/beginners-html-dom2.msft.png" alt-text="The mystery text A new element!?! is not found in index.html" lightbox="media/beginners-html-dom2.msft.png":::
+        The mystery text `A new element!?!` is not found in `index.html`  
+        :::image-end:::
+    -->
 
 1. Open the **live tab**, hover over `A new element!?!`, open the contextual menu (right-click) and then choose **Inspect**.  
     
