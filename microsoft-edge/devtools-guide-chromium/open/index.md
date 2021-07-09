@@ -40,11 +40,7 @@ Either of the following tasks allow you to inspect the styles or attributes of a
 
 ## Open the Console panel  
 
-Either of the following tasks open the [Console][DevtoolsConsoleIndex] panel to view logged messages or run JavaScript.  
-
-*  Open [DevTools](#open-microsoft-edge-devtools) then choose the [Console][DevtoolsConsoleIndex] panel.
-
-*  To jump straight into the Console panel, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\). For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].  
+To open the [Console][DevtoolsConsoleIndex] panel to view logged messages or run JavaScript, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\). For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].  
 
 <!--Navigate to [Get Started With The Console][ConsoleGetStarted].  -->
 
