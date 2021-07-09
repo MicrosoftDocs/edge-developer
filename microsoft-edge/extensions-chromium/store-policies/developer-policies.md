@@ -321,7 +321,7 @@ If you submit a promotional video in the listing, it should follow all the conte
 
 ## Certification Appeal Process
 
-All the extensions should adhere to the Store policies listed above. If your extension failed in the review process, please go through the store policies to understand the reason for failure.
+All the extensions should adhere to the Store policies listed above. If your extension failed in the review process, please go through the store policies to understand the reason for failure. After you submit your extension using Partner Center and you have a question about the review or certification status of it, navigate to [New Support Request][MicrosoftSupportSupportrequestformE7a381be9c9aFafbEd76262bc93fd9e4] and complete the form.
 
 ### Microsoft Edge Add-ons appeal statistics for FY2021
 
@@ -345,3 +345,5 @@ All the extensions should adhere to the Store policies listed above. If your ext
 [MicrosoftAdvertisingCreativeSpecifications]: https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-specs "Creative Specifications - Microsoft Advertising"  
 
 [MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  
+
+[MicrosoftSupportSupportrequestformE7a381be9c9aFafbEd76262bc93fd9e4]: https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "Extensions New Support Request | Microsoft Support"
