@@ -157,7 +157,7 @@ If you are developing a page with a lot of HTML, it becomes tedious to go back-a
 
 Before editing content from Microsoft Edge DevTools, let's understand the difference between HTML and the DOM. Proceed with the following steps to learn from an example.
 
-1.  Navigate to the **live tab**. At the bottom of your page, the text `A new element!?!` displays.  
+1. Navigate to the **live tab**. At the bottom of your page, the text `A new element!?!` displays.  
 
 <!--
     :::image type="complex" source="media/beginners-html-dom1.msft.png" alt-text="At the bottom of the page the text A new element!?! displays" lightbox="media/beginners-html-dom1.msft.png":::
@@ -165,15 +165,15 @@ Before editing content from Microsoft Edge DevTools, let's understand the differ
     :::image-end:::
 -->
     
-1.  Open the **editor tab** and try to find the text in `index.html`. The text does not display in this view.  
+1. Open the **editor tab** and try to find the text in `index.html`. The text does not display in this view.  
 
 <!--
     :::image type="complex" source="media/beginners-html-dom2.msft.png" alt-text="The mystery text A new element!?! is not found in index.html" lightbox="media/beginners-html-dom2.msft.png":::
-       The mystery text `A new element!?!` is not found in `index.html`  
+    The mystery text `A new element!?!` is not found in `index.html`  
     :::image-end:::
 -->
 
-1.  Open the **live tab**, hover over `A new element!?!`, open the contextual menu (right-click) and then choose **Inspect**.  
+1. Open the **live tab**, hover over `A new element!?!`, open the contextual menu (right-click) and then choose **Inspect**.  
     
     :::image type="complex" source="media/beginners-html-dom3.msft.png" alt-text="Inspecting some text" lightbox="media/beginners-html-dom3.msft.png":::
        Inspecting some text  
