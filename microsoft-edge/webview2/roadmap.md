@@ -12,7 +12,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 # Microsoft Edge WebView2 roadmap  
 
 > [!NOTE]
-> Last Updated:  November 2020  
+> Last Updated:  July 2021  
 
 The WebView2 control allows developers to embed web technologies in their native applications.  The following page outlines the prospective roadmap for WebView2.  
 
@@ -23,32 +23,10 @@ If you have concerns or questions about the Roadmap, provide your feedback in th
 
 The WebView2 team is planning the following major efforts for future updates.  
 
-:::row:::
-   :::column span="1":::
-      WebView2 Runtime Installer  
-   :::column-end:::
-   :::column span="2":::
-      *   Q4 2020
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Fixed Version  
-   :::column-end:::
-   :::column span="2":::
-      *   Q4 2020  
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      General Availability  
-   :::column-end:::
-   :::column span="2":::
-      *   Win32 C/C++ \(Q4 2020\)  
-      *   .NET \(Q4 2020\)  
-      *   [WinUI 3.0][GithubMicrosoftUiXamlRoadmap]  
-   :::column-end:::
-:::row-end:::  
+* UWP Preview
+* MacOS Preview
+* Xbox Preview
+* HoloLens Preview
 
 ## WebView2 Runtime and Installer  
 
@@ -68,12 +46,14 @@ The Win32 C/C++ SDK has reached GA.
 
 The .NET SDK has reached GA. 
 
-### WinUI 3.0  
+### Windows UI Library 3
 
-You can access WebView2 in your UWP applications using [Win UI 3.0][UwpToolkitsWinui3Index], currently in alpha.  For more information about keeping up to date, navigate to [Windows UI Library Roadmap][GithubMicrosoftUiXamlRoadmap].  
+You can access WebView2 controls in your applications using [Windows UI Library 3 (WinUI3)][UwpToolkitsWinui3Index] with the Windows App SDK. This is currently in preview. For more information, navigate to the [Windows App SDK roadmap][WindowsAppSDKRoadmap].
 
+ 
 <!-- links -->  
 
+[WindowsAppSDKRoadmap]: https://github.com/microsoft/WindowsAppSDK/blob/main/docs/roadmap.md "Roadmap"
 [ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution model - Distribution of applications using WebView2 | Microsoft Docs"  
 [ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-mode "Fixed version distribution model - Distribution of applications using WebView2 | Microsoft Docs"  
 
