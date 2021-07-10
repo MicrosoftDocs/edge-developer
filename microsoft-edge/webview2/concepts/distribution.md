@@ -160,9 +160,9 @@ If you have an offline deployment scenario, where app deployment has to work ent
     ```  
 
 <!-- from paragraph 4 of post from github issue 341: -->
-### Periodically test your app against non-stable browser channels, to stay compatible
+### Periodically test the app against non-stable browser channels
 
-You must maintain compatibility between the version of the WebView2 SDK that your app uses, and the version of the WebView2 Runtime on a client's machine.  To maintain compatibility between the WebView2 SDK and Runtime, you should test your WebView2 app against non-stable Edge channels, so that you know if a breaking change is coming that will require updating your app.
+Maintain compatibility between the version of the WebView2 SDK that your app uses, and the version of the WebView2 Runtime on a client's machine.  To maintain compatibility between the WebView2 SDK and Runtime, you should test your WebView2 app against non-stable Edge channels, so that you know if a breaking change is coming that will require updating your app.
 
 Breaking changes are rare for the WebView2 API, but testing your app against non-stable Edge channels is a good practice.  Such testing is similar to a web developer testing a website against a pre-release version of a browser or library.
 <!-- / paragraph 4 of post -->
@@ -170,17 +170,15 @@ Breaking changes are rare for the WebView2 API, but testing your app against non
 The Web is constantly evolving.  In the Evergreen distribution mode, the WebView2 Runtime is automatically kept up to date on the client to provide the latest features and security fixes.  If you use Evergreen distribution, to ensure that your WebView2 app stays compatible with the web, you should set up testing infrastructure.  
 
 Non-stable Microsoft Edge channels \(Beta, Dev, and Canary\) provide a sneak peek into what is coming next in the WebView2 Runtime.
-Test your WebView2 app regularly against a non-stable Microsoft Edge channel, and update your app or [report issues][GithubMicrosoftedgeWebviewfeedback] if issues arise.
-Typically, Beta and Dev are the recommended channels.  To help you decide which channel is right, navigate to [Overview of the Microsoft Edge channels][DeployEdgeMicrosoftEdgeChannels].  You can download the [non-stable Microsoft Edge channel][DownloadNonstableEdge] on your test environment, and use `regkey` or environment variables to indicate the channel preference for your testing app.
+Test your WebView2 app regularly against a non-stable Microsoft Edge channel, and update your app or [report issues][GithubMicrosoftedgeWebviewfeedback] if issues arise.  Typically, Beta and Dev are the recommended channels.  To help you decide which channel is right, navigate to [Overview of the Microsoft Edge channels][DeployEdgeMicrosoftEdgeChannels].  You can download the [non-stable Microsoft Edge channel][DownloadNonstableEdge] on your test environment, and use `regkey` or environment variables to indicate the channel preference for your testing app.
 
 For more information, navigate to [CreateCoreWebView2EnvironmentWithOptions][ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions].  You can also use WebDriver to automate WebView2 testing, as described in [Automate and test WebView2 with Microsoft Edge Driver][HowToWebdriver].
 
 
 <!-- paragraph 1 of post from github issue 341: -->
-When you use the Evergreen distribution mode of the WebView2 Runtime, your WebView2 app assumes that clients have the latest Runtime.  Your app cannot require a particular version of the WebView2 Runtime for all apps on the client.
-By the time a new WebView2 SDK package is released, a compatible version of the WebView2 Runtime has already been distributed to clients.  Therefore it's ok for your WebView2 app to use the (non-experimental) APIs that are in the latest version of the WebView2 SDK.
+When you use the Evergreen distribution mode of the WebView2 Runtime, your WebView2 app assumes that clients have the latest Runtime.  Your app cannot require a particular version of the WebView2 Runtime for all apps on the client.  By the time a new WebView2 SDK package is released, a compatible version of the WebView2 Runtime has already been distributed to clients.  Therefore it's ok for your WebView2 app to use the (non-experimental) APIs that are in the latest version of the WebView2 SDK.
 
-As a hypothetical example, when Microsoft publishes the WebView2 SDK version 1.0.800.0, WebView2 Runtime version 88.0.800.0 (and a compatible non-stable Microsoft Edge channel) has been distributed to clients already, and therefore all of the APIs that are available in version 800 of the SDK are supported by the installed Runtime (version 800 or higher).
+For example, when Microsoft publishes the WebView2 SDK version 1.0.800.0, WebView2 Runtime version 88.0.800.0 (and a compatible non-stable Microsoft Edge channel) has been distributed to clients already, and therefore all of the APIs that are available in version 800 of the SDK are supported by the installed Runtime (version 800 or higher).
 
 ### Listening for the version availability event and restarting
 
