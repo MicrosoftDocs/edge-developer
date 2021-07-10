@@ -132,6 +132,18 @@ To submit your app to the Store, complete the following actions.
     
 After you complete your submission, your app is reviewed, typically within between 24 and 48 hours.  After you receive approval, your PWA is available in the Microsoft Store.  
 
+### Measure usage of your Store-installed PWA
+
+When your PWA is initially launched, if the PWA was installed from the Microsoft Store, Microsoft Edge includes the following `Referer` header with the request for the first navigation of your web app.
+
+```
+Referer: app-info://platform/microsoft-store
+```
+
+Use this feature to measure distinct traffic from your Store-installed PWA.  Based on the traffic, you can adjust your app’s content to improve the user experience.  This feature is accessible to both client and server code.
+
+This feature was introduced in Microsoft Edge version 91.
+
 ## See also  
 
 PWABuilder provides more documentation to help you get your PWA in the Microsoft Store.  
