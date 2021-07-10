@@ -14,21 +14,26 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence.  Review the following content for up-to-date information on product announcements, additions, modifications, and breaking changes to the APIs.  
 
 > [!NOTE]
-> Make sure to re-compile your app after updating the NuGet SDK package.  The WebView team recommends that you use the Canary channel of Microsoft Edge when you develop using the prerelease packages, and use the Evergreen WebView2 Runtime when you use the release packages.  For more information, navigate to [Matching WebView2 Runtime versions][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].  
+> Make sure to re-compile your app after updating the NuGet SDK package.  The WebView team recommends that you use the Canary channel of Microsoft Edge when you develop using the prerelease packages, and use the Evergreen WebView2 Runtime when you use the release packages.  For more information, navigate to [Matching WebView2 Runtime versions][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].
 
 > [!NOTE]
 > WebView2 bug fixes are either Runtime-specific or SDK-specific.  
 
-The minimum version of Microsoft Edge that supports the core SDK APIs is version 86.0.616.0 or higher.
+The minimum version of Microsoft Edge that supports the core SDK APIs is version 86.0.616.0.
 
 
 ## 1.0.902-prerelease
 
 Release Date: June 1, 2021  
 
-[NuGet package for WebView2 SDK 1.0.902-prerelease][NuGetGallery1.0.902-prerelease] \| Requires WebView2 Runtime version 92.0.902.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 1.0.902-prerelease][NuGetGallery1.0.902-prerelease]
 
-### General  
+### Required Runtime version
+
+This added SDK functionality requires WebView2 Runtime version 92.0.902.0 or higher.
+
+### General
+
 *   Improved WebView2 startup performance and disk footprint.
 
 #### Experimental Features  
@@ -75,7 +80,11 @@ Release Date: June 1, 2021
 
 Release Date: May 31, 2021  
 
-[NuGet package for WebView2 SDK 1.0.864.35][NuGetGallery1.0.864.35] \| Requires WebView2 Runtime version 91.0.864.35 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 1.0.864.35][NuGetGallery1.0.864.35]
+
+### Required Runtime version
+
+Requires WebView2 Runtime version 91.0.864.35 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -101,7 +110,11 @@ Release Date: May 31, 2021
 
 Release Date: April 26, 2021  
 
-[NuGet package for WebView2 SDK 1.0.865-prerelease][NuGetGallery1.0.865-prerelease] \| Requires WebView2 Runtime version 91.0.865.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 1.0.865-prerelease][NuGetGallery1.0.865-prerelease]
+
+### Required Runtime version
+
+Requires WebView2 Runtime version 91.0.865.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -143,7 +156,11 @@ Release Date: April 26, 2021
 
 Release Date: April 21, 2021  
 
-[NuGet package for WebView2 SDK 1.0.818.41][NuGetGallery1.0.818.41] \| Requires WebView2 Runtime version 90.0.818.41 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 1.0.818.41][NuGetGallery1.0.818.41]
+
+### Required Runtime version
+
+Requires WebView2 Runtime version 90.0.818.41 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -159,7 +176,11 @@ Release Date: April 21, 2021
 
 Release Date: March 8, 2021  
 
-[NuGet package for WebView2 SDK 1.0.824-prerelease][NuGetGallery1.0.824-prerelease] \| Requires WebView2 Runtime version 91.0.824.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 1.0.824-prerelease][NuGetGallery1.0.824-prerelease]
+
+### Required Runtime version
+
+Requires WebView2 Runtime version 91.0.824.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -187,7 +208,11 @@ Release Date: March 8, 2021
 
 Release Date: March 8, 2021  
 
-[NuGet package for WebView2 SDK 1.0.774.44][NuGetGallery1.0.774.44] \| Requires WebView2 Runtime version 89.0.774.44 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 1.0.774.44][NuGetGallery1.0.774.44]
+
+### Required Runtime version
+
+Requires WebView2 Runtime version 89.0.774.44 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -214,7 +239,11 @@ Release Date: March 8, 2021
 
 Release Date: February 10, 2021  
 
-[NuGet package for WebView2 SDK 1.0.790-prerelease][NuGetGallery1.0.790-prerelease] \| Requires Microsoft Edge version 86.0.616.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 1.0.790-prerelease][NuGetGallery1.0.790-prerelease]
+
+### Required Runtime version
+
+Requires Microsoft Edge version 86.0.616.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -266,7 +295,11 @@ Release Date: February 10, 2021
 
 Release Date: January 25, 2021  
 
-[NuGet package for WebView2 SDK 1.0.705.50][NuGetGallery1.0.705.50] \| Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 1.0.705.50][NuGetGallery1.0.705.50]
+
+### Required Runtime version
+
+Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -284,7 +317,11 @@ Release Date: January 25, 2021
 
 Release Date: December 8, 2020  
 
-[NuGet package for WebView2 SDK 1.0.721-prerelease][NuGetGallery1.0.721-prerelease] \| Requires Microsoft Edge version 86.0.616.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 1.0.721-prerelease][NuGetGallery1.0.721-prerelease]
+
+### Required Runtime version
+
+Requires Microsoft Edge version 86.0.616.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -333,7 +370,11 @@ Release Date: December 8, 2020
 
 Release Date: November 20, 2020  
 
-[NuGet package for WebView2 SDK 1.0.664.37][NuGetGallery1.0.664.37] \| Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 1.0.664.37][NuGetGallery1.0.664.37]
+
+### Required Runtime version
+
+Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -356,7 +397,11 @@ Release Date: November 20, 2020
 
 Release Date: October 19, 2020  
 
-[NuGet package for WebView2 SDK 1.0.674-prerelease][NuGetGallery1.0.674-prerelease] \| Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 1.0.674-prerelease][NuGetGallery1.0.674-prerelease]
+
+### Required Runtime version
+
+Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -387,7 +432,11 @@ Release Date: October 19, 2020
 
 Release Date: October 19, 2020  
 
-[NuGet package for WebView2 SDK 1.0.622.22][NuGetGallery1.0.622.22] \| Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 1.0.622.22][NuGetGallery1.0.622.22]
+
+### Required Runtime version
+
+Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -402,7 +451,11 @@ Release Date: October 19, 2020
 
 Release Date: September 10, 2020  
 
-[NuGet package for WebView2 SDK 0.9.622.11][NuGetGallery0.9.622.11] \| Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 0.9.622.11][NuGetGallery0.9.622.11]
+
+### Required Runtime version
+
+Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -421,7 +474,11 @@ Release Date: September 10, 2020
 
 Release Date: July 20, 2020  
 
-[NuGet package for WebView2 SDK 0.9.579][NuGetGallery0.9.579] \| Requires Microsoft Edge version 86.0.579.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 0.9.579][NuGetGallery0.9.579]
+
+### Required Runtime version
+
+Requires Microsoft Edge version 86.0.579.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -454,7 +511,11 @@ Release Date: July 20, 2020
 
 ## 0.9.538  
 
-[NuGet package for WebView2 SDK 0.9.538][NuGetGallery0.9.538] \| Requires Microsoft Edge version 85.0.538.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 0.9.538][NuGetGallery0.9.538]
+
+### Required Runtime version
+
+Requires Microsoft Edge version 85.0.538.0 or higher, to use this added SDK functionality.
 
 ### General  
 
@@ -486,7 +547,11 @@ Release Date: July 20, 2020
 
 ## 0.9.515-prerelease  
 
-[NuGet package for WebView2 SDK 0.9.515-prerelease][NuGetGallery0.9.515-prerelease] \| Requires Microsoft Edge version 84.0.515.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 0.9.515-prerelease][NuGetGallery0.9.515-prerelease]
+
+### Required Runtime version
+
+Requires Microsoft Edge version 84.0.515.0 or higher, to use this added SDK functionality.
 
 *   > [!IMPORTANT]
     > **Announcement**:  WebView2 now supports Windows Forms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **pre-release package**.  
@@ -503,10 +568,14 @@ Release Date: July 20, 2020
 
 ## 0.9.488  
 
-[NuGet package for WebView2 SDK 0.9.488][NuGetGallery0.9.488] \| Requires Microsoft Edge version 84.0.488.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 0.9.488][NuGetGallery0.9.488]
+
+### Required Runtime version
+
+Requires Microsoft Edge version 84.0.488.0 or higher, to use this added SDK functionality.
 
 *   > [!IMPORTANT]
-    > **Announcement**:  Starting with the upcoming Microsoft Edge version 83, Evergreen WebView no longer targets the Stable browser channel.  Instead, it targets another set of binaries, branded [Evergreen WebView2 Runtime][Webview2ConceptsDistributionEvergreenDistributionMode], that you may chain-install through an installer the WebView team is currently developing.  For more information, navigate to [App-Distribution][Webview2ConceptsDistribution].  
+    > **Announcement**:  Starting with the upcoming Microsoft Edge version 83, Evergreen WebView no longer targets the Stable browser channel.  Instead, it targets another set of binaries, branded [Evergreen WebView2 Runtime][Webview2ConceptsDistributionEvergreenDistributionMode], that you may chain-install through an installer the WebView team is currently developing.  For more information, navigate to [Distribute a WebView2 app and the WebView2 Runtime][Webview2ConceptsDistribution].  
     
 *   > [!IMPORTANT]
     > **Announcement**:  Moving forward, the WebView team releases two packages:  a pre-release package with experimental APIs \(for you to try out\) and a stable release package with stable APIs \(for your confidence\).  To learn about the differences, navigate to [Understanding browser versions and WebView2][Webview2ConceptsVersioning].  
@@ -546,7 +615,11 @@ Release Date: July 20, 2020
 
 ## 0.9.430  
 
-[NuGet package for WebView2 SDK 0.9.430][NuGetGallery0.9.430] \| Requires Microsoft Edge version 82.0.430.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 0.9.430][NuGetGallery0.9.430]
+
+### Required Runtime version
+
+Requires Microsoft Edge version 82.0.430.0 or higher, to use this added SDK functionality.
 
 The WebView2 SDK is the official Win32 C++ Beta version, which incorporates several feature requests from feedback.  The WebView team tries to limit the number of releases with breaking changes.  As general availability approaches, several major breaking changes are incorporated in the Beta release.  
 
@@ -580,7 +653,11 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 
 ## 0.8.355  
 
-[NuGet package for WebView2 SDK 0.8.355][NuGetGallery0.8.355] \| Requires Microsoft Edge version 80.0.355.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 0.8.355][NuGetGallery0.8.355]
+
+### Required Runtime version
+
+Requires Microsoft Edge version 80.0.355.0 or higher, to use this added SDK functionality.
 
 *   Released WebView2API Sample, a comprehensive guide of the WebView2 SDK.  For more information, navigate to [API Sample][GithubMicrosoftedgeWebview2samplesApisample].  
 *   Added IME support for all languages besides English \([#30][GithubMicrosoftedgeWebviewfeedbackIssue30]\).  
@@ -591,7 +668,13 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 
 ## 0.8.314  
 
-[NuGet package for WebView2 SDK 0.8.314][NuGetGallery0.8.314] \| Requires Microsoft Edge version 80.0.314.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 0.8.314][NuGetGallery0.8.314]
+
+### Required Runtime version
+
+Requires Microsoft Edge version 80.0.314.0 or higher, to use this added SDK functionality.
+
+### Changes
 
 *   Added support for Windows 7, Windows 8, and Windows 8.1.  
 *   Added Visual Studio and Visual Studio Code debug support for WebView2.  Now, debug your script in the WebView2 right from your IDE.  For more information, navigate to [How to debug when developing with WebView2 controls][Webview2HowToDebug].  
@@ -608,8 +691,13 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 
 ## 0.8.270  
 
-[NuGet package for WebView2 SDK 0.8.270][NuGetGallery0.8.270] \| Requires Microsoft Edge version 78.0.270.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 0.8.270][NuGetGallery0.8.270]
 
+### Required Runtime version
+
+Requires Microsoft Edge version 78.0.270.0 or higher, to use this added SDK functionality.
+
+### Changes
 *   Added `DocumentTitleChanged` event to indicate document title change \([\#27][GithubMicrosoftedgeWebviewfeedbackIssue27]\).  
 *   Added `GetWebView2BrowserVersionInfo` API \([\#18][GithubMicrosoftedgeWebviewfeedbackIssue18]\).  
 *   Added `NewWindowRequested` event.  
@@ -621,7 +709,13 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 
 ## 0.8.230  
 
-[NuGet package for WebView2 SDK 0.8.230][NuGetGallery0.8.230] \| Requires Microsoft Edge version 77.0.230.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 0.8.230][NuGetGallery0.8.230]
+
+### Required Runtime version
+
+Requires Microsoft Edge version 77.0.230.0 or higher, to use this added SDK functionality.
+
+### Changes
 
 *   Added `Stop` API to stop all navigation and pending resource fetches \([\#28][GithubMicrosoftedgeWebviewfeedbackIssue28]\).  
 *   Added `.tlb` file to the NuGet package \([\#22][GithubMicrosoftedgeWebviewfeedbackIssue22]\).  
@@ -630,7 +724,11 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 
 ## 0.8.190  
 
-[NuGet package for WebView2 SDK 0.8.190][NuGetGallery0.8.190] \| Requires Microsoft Edge version 77.0.190.0 or higher, to use this added SDK functionality.
+[NuGet package for WebView2 SDK 0.8.190][NuGetGallery0.8.190]
+
+### Required Runtime version
+
+Requires Microsoft Edge version 77.0.190.0 or higher, to use this added SDK functionality.
 
 *   Added `get_AreDevToolsEnabled`/`put_AreDevToolsEnabled` to control if users can open DevTools \([\#16][GithubMicrosoftedgeWebviewfeedbackIssue16]\).  
 *   Added `get_IsStatusBarEnabled`/`put_IsStatusBarEnabled` to control if the status bar is displayed \([\#19][GithubMicrosoftedgeWebviewfeedbackIssue19]\).  
@@ -645,16 +743,20 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 
 ## 0.8.149  
 
-[NuGet package for WebView2 SDK 0.8.149][NuGetGallery0.8.149] \| Requires Microsoft Edge version 76.0.149.0 or higher.
+[NuGet package for WebView2 SDK 0.8.149][NuGetGallery0.8.149]
+
+### Required Runtime version
+
+Requires Microsoft Edge version 76.0.149.0 or higher.
 
 Initial developer preview release.  
 
 <!-- links -->  
-[Webview2ConceptsDistribution]: ./concepts/distribution.md "Distributing a WebView2 app | Microsoft Docs"  
-[Webview2ConceptsDistributionEvergreenDistributionMode]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution mode - Distributing a WebView2 app | Microsoft Docs"  
-[Webview2ConceptsDistributionFixedVersionDistributionMode]: ./concepts/distribution.md#fixed-version-distribution-mode "Fixed Version distribution mode - Distributing a WebView2 app | Microsoft Docs"
+[Webview2ConceptsDistribution]: ./concepts/distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
+[Webview2ConceptsDistributionEvergreenDistributionMode]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution mode - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
+[Webview2ConceptsDistributionFixedVersionDistributionMode]: ./concepts/distribution.md#fixed-version-distribution-mode "Fixed Version distribution mode - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
 <!-- todo: update all aspects of this link: -->
-[Webview2ConceptsDistributionUnderstandRuntimeInstaller]: ./concepts/distribution.md#understanding-the-webview2-runtime "Understanding the WebView2 runtime - Distributing a WebView2 app | Microsoft Docs"  
+[Webview2ConceptsDistributionUnderstandRuntimeInstaller]: ./concepts/distribution.md#understanding-the-webview2-runtime "Understanding the WebView2 runtime - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
 [Webview2ConceptsEnterpriseGroupPoliciesForWebview2]: ./concepts/enterprise.md#group-policies-for-webview2 "Group policies for WebView2 - Managing WebView2 applications | Microsoft Docs"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
 [Webview2ConceptsVersioningExperimentalApis]: ./concepts/versioning.md#experimental-apis "Experimental APIs - Understanding browser versions and WebView2 | Microsoft Docs"  

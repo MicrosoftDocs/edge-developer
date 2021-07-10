@@ -53,9 +53,9 @@ WebView2 apps create a user data folder to store data such as cookies, credentia
 For any WebView2 application, ensure you follow our recommended WebView2 security best practices.  For more information, navigate to [Best practices for developing secure WebView2 applications][Webview2ConceptsSecurity].  
 
 <!-- links -->  
-[Webview2ConceptsDistributionDeployingEvergreenWebview2Runtime]: ../concepts/distribution.md#deploying-the-evergreen-webview2-runtime "Deploying the Evergreen WebView2 Runtime - Distributing a WebView2 app | Microsoft Docs"  
-[Webview2ConceptsDistributionFixedVersionDistributionMode]: ../concepts/distribution.md#fixed-version-distribution-mode "Fixed Version distribution mode - Distributing a WebView2 app | Microsoft Docs"  
-[Webview2ConceptsDistributionStayCompatibleEvergreenMode]: ../concepts/distribution.md#stay-compatible-in-evergreen-mode "Stay compatible in Evergreen mode - Distributing a WebView2 app | Microsoft Docs"  
+[Webview2ConceptsDistributionDeployingEvergreenWebview2Runtime]: ../concepts/distribution.md#deploying-the-evergreen-webview2-runtime "Deploying the Evergreen WebView2 Runtime - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
+[Webview2ConceptsDistributionFixedVersionDistributionMode]: ../concepts/distribution.md#fixed-version-distribution-mode "Fixed Version distribution mode - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
+[Webview2ConceptsDistributionStayCompatibleEvergreenMode]: ../concepts/distribution.md#stay-compatible-in-evergreen-mode "Stay compatible in Evergreen mode - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
 [Webview2ConceptsSecurity]: ../concepts/security.md "Best practices for developing secure WebView2 applications | Microsoft Docs"  
 [Webview2ConceptsUserDataFolder]: ../concepts/user-data-folder.md "Manage the user data folder | Microsoft Docs"  
 [Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#determine-webview2-runtime-requirement "Determine WebView2 Runtime requirement - Understand WebView2 SDK versions | Microsoft Docs"  

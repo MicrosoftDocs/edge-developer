@@ -174,7 +174,7 @@ For more information on how to build and deploy WebView2 apps, review the concep
 ### Concepts  
 
 *   [Understand WebView2 SDK versions][Webview2ConceptsVersioning]  
-*   [Distributing a WebView2 app][Webview2ConceptsDistribution]  
+*   [Distribute a WebView2 app and the WebView2 Runtime][Webview2ConceptsDistribution]  
 *   [Best practices for developing secure WebView2 apps][Webview2ConceptsSecurity]  
 *   [Manage User Data Folder in WebView2 apps][Webview2ConceptsUserDataFolder]  
  
@@ -188,8 +188,7 @@ For more information on how to build and deploy WebView2 apps, review the concep
 [!INCLUDE [contact WebView team note](./includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
-
-[Webview2ConceptsDistribution]: ./concepts/distribution.md "Distributing a WebView2 app | Microsoft Docs"  
+[Webview2ConceptsDistribution]: ./concepts/distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
 [Webview2ConceptsSecurity]: ./concepts/security.md "Best practices for developing secure WebView2 apps | Microsoft Docs"  
 [Webview2ConceptsUserDataFolder]: ./concepts/user-data-folder.md "Manage the User Data Folder | Microsoft Docs"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "Understand WebView2 SDK versions | Microsoft Docs"  
