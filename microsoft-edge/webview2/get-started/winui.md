@@ -15,7 +15,7 @@ In this article, get started creating your first WebView2 app and learn about th
         
 ## Step 0 - Set Up Development Environment 
 
-1. Follow steps 1-4 of the [WindowsAppSDK environment setup guide][WindowsAppsWinui3ConfigureYourDevEnvironment]. This guide will walk you through minimum system requirements, installing visual studio, enabling NuGet package source, and installing the WindowsAppSDK Extension for Visual Studio. 
+1. Follow steps 1-4 of the [WindowsAppSDK environment setup guide][WindowsAppsWinui3ConfigureYourDevEnvironment]. This guide describes the minimum system requirements, installing visual studio, enabling NuGet package source, and installing the WindowsAppSDK Extension for Visual Studio. 
 1. Install [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on Windows 10 version 1803 \(build 17134\) or later.  For more information about Windows 10, navigate to [Windows Update: FAQ][MicrosoftSupport12373].  
 1.  To access all developer-specific Visual Studio features, turn on [Developer Mode][WindowsUwpGetStartedEnableYourDeviceForDevelopment].  
     
