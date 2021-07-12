@@ -32,6 +32,52 @@ The only exception is for the `Content` property of `CoreWebView2WebResourceRequ
 
 Callbacks including event handlers and completion handlers run serially.  
 After you run an event handler and begin a message loop, you're unable to run any event handler or completion callback in a re-entrant manner.  
+If you use methods that will spin up nested message loops such as `ShowDialog` synchronously within a WebView event handler, it will lead to reentrancy and leave the event handler in stack indefinitely.
+
+```csharp
+private void Btn_Click(object sender, EventArgs e)
+{
+   // Post web message when button is clicked
+   this.webView2Control.ExecuteScriptAsync("window.chrome.webview.postMessage(\"Open Dialog\");");
+}
+
+private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessageReceivedEventArgs e)
+{
+   string msg = e.TryGetWebMessageAsString();
+   if (msg == "Open Dialog")
+   {
+      Form1 form = new Form1(); // Create a new form that contains a new WebView when web message is received.
+      form.ShowDialog(); // This will cause reentrancy issue and cause the newly created WebView inside the modal dialog to hang.
+   }
+}
+```  
+      > [!NOTE]
+      > For WinForms and WPF apps, in order to get full call stack for debugging purpose, native code debugging mode must be enabled.
+      1.  Enable native code debugging for WebView2 apps.  
+         1.  In your WebView2 project, open the context menu \(right-click\), and choose **Properties**.  
+         1.  Choose **Debug**, ensure **Enable native code debugging** is selected.
+            :::image type="complex" source="./media/webview-enable-native-debug.png" alt-text="Visual Studio Native Code Debugging Configuration Property" lightbox="./media/webview-enable-native-debug.png":::
+               Visual Studio **Debug** Configuration Property 
+            :::image-end:::  
+        
+
+Instead, schedule the appropriate work to take place after completion of the event handler.
+
+```csharp
+private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessageReceivedEventArgs e)
+{
+   string msg = e.TryGetWebMessageAsString();
+   if (msg == "Open Dialog")
+   {
+      // We avoid potential reentrancy from running a nested message loop in WebView2 event handler by showing modal dialog later when we complete the current event handler
+      System.Threading.SynchronizationContext.Current.Post((_) => {
+         Form1 form = new Form1(); 
+         form.ShowDialog();
+         form.Closed();
+      }, null);
+   }
+}
+``` 
 
 ## Deferrals  
 
