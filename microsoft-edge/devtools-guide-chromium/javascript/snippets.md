@@ -153,7 +153,15 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
 
 1.  [Open the Snippets tab](#open-the-snippets-tab).  
 1.  Hover on the Snippet name, open the contextual menu \(right-click\), and choose **Remove**.  
-    
+
+## Save Snippets  
+
+By default, Snippets are only available within DevTools, but you can also save them to disk.  
+
+1.  [Open the Snippets tab](#open-the-snippets-tab).  
+1.  Hover on the Snippet name, open the contextual menu \(right-click\), and choose **Save as...**.  
+1.  Choose a file name and location when prompted.  
+
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
