@@ -228,7 +228,7 @@ To build and run your project, select `F5`.  Ensure navigation is blocked to HTT
 You may use host apps to inject JavaScript code into WebView2 controls at runtime.  You may task WebView to run arbitrary JavaScript or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run with specific timing.  
 
 *   Run it after the creation of the global object.  
-*   Run it before any other script included in the HTML document is run.  
+*   Run it before any other script included in the HTML document runs.
     
 As an example, add scripts that send an alert when a user navigates to non-HTTPS sites.  Modify the `EnsureHttps` function to inject a script into the web content that uses [ExecuteScriptAsync][Webviews2ReferenceWpfMicrosoftWebExecutescriptasync].  
 
