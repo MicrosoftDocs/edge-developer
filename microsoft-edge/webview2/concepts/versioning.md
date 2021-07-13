@@ -13,17 +13,14 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 
 You must coordinate the WebView2 SDK version and the WebView2 Runtime version.
 
-When using WebView2, you need a compatible version of the WebView2 SDK and the WebView2 Runtime, particularly if your app uses new APIs.
-The version number of the Runtime must be greater than or equal to the version number of the SDK.
-_Version number_ here means the third part of the four-part version number, such as 616.
+When using WebView2, you need a compatible version of the WebView2 SDK and the WebView2 Runtime, particularly if your app uses new APIs.  The version number of the Runtime must be greater than or equal to the version number of the SDK.  _Version number_ here means the third part of the four-part version number, such as 616.
 
 New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge \(Chromium\) browser, which is approximately every six weeks.  
 
 
 ## Release and prerelease package  
 
-The WebView2 NuGet package contains both a release and prerelease package.
-
+The NuGet package for the WebView2 SDK contains both a release and prerelease package.
 *  The release package contains all of the stable, supported Win32 C/C++ and .NET APIs.
 *  The prerelease package is a superset of the release package, with additional, [Experimental APIs](#experimental-apis) that are subject to change based on your feedback.
 
@@ -48,29 +45,19 @@ The WebView team is seeking feedback on experimental WebView2 APIs that might be
 > Experimental APIs might not be available in your installed version of the WebView2 Runtime.  
 
 
-## Matching WebView2 Runtime versions  
+## Matching the Runtime version with the SDK version
 
-In the WebView2 documentation, _the NuGet package_ means the NuGet package for the WebView2 SDK.
+<!-- incoming text, condense; merge into the subsequent sections: -->
+To support all the APIs of a particular version of the SDK, a minimum version of the Runtime is required.  Determine which minimum version of the Runtime is required, for a given SDK release.  Compare the third part of the SDK version number and the third part of the Runtime version number.  If the Runtime version is lower than the SDK version, most WebView2 API calls will work, but the APIs that were added in later SDK versions won't work.
 
-<!-- incoming text: -->
-The SDK has a minimum Runtime version requirement.
+For example, if your WebView2 app uses WebView2 SDK version 616, a client must have WebView2 Runtime version 616 or higher, to use all the APIs in the SDK.
 
-For example, if your WebView2 app uses the WebView2 SDK version 616, a client machine must have WebView2 Runtime version 616 or higher, particularly if the app uses the APIs that were recently added.
-As another example, if the WebView2 SDK version is 800 but the WebView2 Runtime version number is 616, most WebView2 API calls will work, but the APIs that were added in SDK version 617 through 800 won't work.
+If your app calls a new WebView2 API, the WebView2 Runtime on the client machine might be older and not support that API, so a best practice is to look up what version of the SDK first added that API.  To find the minimum required Runtime version that supports a particular new API, in [Release notes for WebView2 SDK][Webview2ReleaseNotes], locate the section for the SDK version number, and then check the **Required Runtime version** subsection.
 
-To find the minimum required Runtime version that supports a particular new API, see [Release notes for WebView2 SDK][Webview2ReleaseNotes], under the "Required Runtime version" part of each release's entry.  Also check the release version numbers in the [Applies to](/dotnet/api/microsoft.web.webview2.winforms.webview2#applies-to) section of the _WebView2 Class_ reference page.
-<!-- too specific: /dotnet/api/microsoft.web.webview2.winforms.webview2?view=webview2-dotnet-1.0.864.35#applies-to -->
+Look up what version of the Runtime to use to have full API compatibility, and also look up the Runtime version number to just get WebView2 working.  Also check the release version numbers in the **Applies to** section of [WebView2 Class](/dotnet/api/microsoft.web.webview2.winforms.webview2#applies-to).<!-- normalize link format -->
 
-If your code calls a new WebView2 API, the WebView2 Runtime on the client machine might be older and not support that API, so a best practice is to look up what version of the SDK first added that API.
-
-For a new API that your WebView2 app uses, you should handle the lack of Runtime support, such as by using `QueryInterface` or `try/catch`.  Find out when the API was introduced, and then find out what version of the Runtime is required to support that API.
-
-Find what version of the WebView2 runtime is needed, to support all the APIs in a version of the WebView2 API.  To do this, see the **Applies to** section of each entry in [Release notes for WebView2 SDK][Webview2ReleaseNotes].  Also check the **Applies to** section of [WebView2 Class](/dotnet/api/microsoft.web.webview2.winforms.webview2#applies-to).<!--same link as above; normalize both-->  For example, for WebView2 SDK version 1.0.664.37, the third part of the SDK version number is 664, so to support the APIs that were added in that version of the SDK, the client machines need to have a Runtime that's version 664 or higher.
-
-Determine which version of the Runtime is required.  In [Release notes for WebView2 SDK][Webview2ReleaseNotes], find the section for your SDK version, and then look up what version of the Runtime to use to have full API compatibility, and also look up the Runtime version number to just get WebView2 working.  Use `QueryInterface` or `try/catch`, for newer WebView2 API calls.
-
+For each recent API that your WebView2 app uses, you should handle the lack of Runtime support, such as by using `QueryInterface` or `try/catch`.
 <!-- / end of incoming text -->
-
 
 WebView2 apps require users to install a [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2].  The WebView2 Runtime automatically updates to the latest version available.  In some scenarios, a user or an IT admin might choose to prevent automatic updating of the WebView2 Runtime.  The resulting outdated Runtime on the client might cause compatibility issues between your updated WebView2 app and the outdated Runtime.
 
@@ -79,7 +66,7 @@ In case updating the WebView2 Runtime is prevented on the client, make sure that
 
 ### The minimum required version of the WebView2 SDK
 
-Most of the APIs in the WebView2 SDK can be used against Microsoft Edge or the WebView2 Runtime version 616.  The WebView2 Runtime needs to have a build number that is greater than or equal to the version number of the WebView2 SDK.  For each WebView2 API, look up which WebView2 SDK version number introduced that API.  Make sure that the Runtime version number is equal to or greater than the SDK version.  A best practice is to check for support, for newer APIs, by using `QueryInterface` or `try/catch`.
+Most of the APIs in the WebView2 SDK can be used against Microsoft Edge or the WebView2 Runtime version 616.  The WebView2 Runtime needs to have a build number that is greater than or equal to the version number of the WebView2 SDK.  For each WebView2 API, look up which WebView2 SDK version number introduced that API.  Make sure that the Runtime version number is equal to or greater than the SDK version.  For newer APIs, a best practice is to check for support by using `QueryInterface` or `try/catch`.
 
 The minimum required version of the WebView2 SDK in order to successfully load a WebView2 instance is found in the WebView2 [Release Notes][Webview2ReleaseNotes] under **Minimum Microsoft Edge version to load**.
 
