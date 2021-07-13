@@ -120,6 +120,7 @@ Microsoft Edge \(EdgeHTML\) Virtual Machines \(VMs\) enable you to access differ
 If you are not able to use the emulators and do not have access to real devices, then cloud-based emulators are the next best thing.  A big advantage of cloud-based emulators over real devices and local emulators is that you are able to automate unit tests for your site across different platforms.  
 
 *   [BrowserStack (commercial)][BrowserStack] is the easiest to use for manual testing.  You select an operating system, select your browser version and device type, select a URL to browse, and it spins up a hosted virtual machine with which you may interact.  You are able to also run multiple emulators in the same screen, enabling you to test the look and feel of your app across multiple devices at the same time.  
+*   [LambdaTest (commercial)][LambdaTest] will help you to perform manual cross browser testing on a combination of 2000+ browsers & operating systems. Users will be able to record video of complex bugs and even share it via integrations like MS Teams, Slack and more. Users can speed-up their testing by running tests in parallel.
 *   [SauceLabs (commercial)][SauceLabs] enables you to run unit tests inside of an emulator, which may be really useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You are also able to do manual testing with your site.  
 *   [Device Anywhere (commercial)][AppExperience] does not use emulators but real devices which you are able to control remotely.  This is very useful in the event where you need to reproduce a problem on a specific device and may not display the bug using any of the options in the previous guides.  
 
@@ -146,6 +147,7 @@ If you are not able to use the emulators and do not have access to real devices,
 [MDNResponsiveDesignMode]: https://developer.mozilla.org/docs/Tools/Responsive_Design_View "Responsive Design Mode | MDN"  
 [MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "Download the Firefox Browser"  
 [SauceLabs]: https://saucelabs.com "Sauce Labs"  
+[LambdaTest]: https://www.lambdatest.com/ "LambdaTest" 
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
