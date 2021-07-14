@@ -14,7 +14,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence.  Review the following content for up-to-date information on product announcements, additions, modifications, and breaking changes to the APIs.  
 
 > [!NOTE]
-> Make sure to re-compile your app after updating the NuGet SDK package.  The WebView team recommends that you use the Canary channel of Microsoft Edge when you develop using the prerelease packages, and use the Evergreen WebView2 Runtime when you use the release packages.  For more information, navigate to [Matching WebView2 Runtime versions][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].
+> Make sure to re-compile your app after updating the NuGet SDK package.  The WebView team recommends that you use the Canary channel of Microsoft Edge when you develop using the prerelease packages, and use the Evergreen WebView2 Runtime when you use the release packages.  For more information, navigate to [Matching the Runtime version with the SDK version][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].
 
 > [!NOTE]
 > WebView2 bug fixes are either Runtime-specific or SDK-specific.  
@@ -767,7 +767,7 @@ Initial developer preview release.
 [Webview2ConceptsEnterpriseGroupPoliciesForWebview2]: ./concepts/enterprise.md#group-policies-for-webview2 "Group policies for WebView2 - Managing WebView2 applications | Microsoft Docs"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
 [Webview2ConceptsVersioningExperimentalApis]: ./concepts/versioning.md#experimental-apis "Experimental APIs - Understanding browser versions and WebView2 | Microsoft Docs"  
-[Webview2ConceptsVersioningMatchingWebview2RuntimeVersions]: ./concepts/versioning.md#matching-webview2-runtime-versions "Matching WebView2 Runtime versions - Understand WebView2 SDK versions | Microsoft Docs"  
+[Webview2ConceptsVersioningMatchingWebview2RuntimeVersions]: ./concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version "Matching the Runtime version with the SDK version - Understand WebView2 SDK versions | Microsoft Docs"  
 [Webview2GetStartedWinforms]: ./get-started/winforms.md "Get started with WebView2 in Windows Forms apps | Microsoft Docs"  
 [Webview2GetStartedWpf]: ./get-started/wpf.md "Get started with WebView2 in WPF | Microsoft Docs"  
 [Webview2HowToDebug]: ./how-to/debug.md "How to debug when developing with WebView2 controls | Microsoft Docs"  

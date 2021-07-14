@@ -33,10 +33,10 @@ If you use the Evergreen WebView2 Runtime, there are some scenarios where the ru
 
 To solve this situation, you can test for the availability of the APIs in the installed runtime, before your code calls the API. This test for newer functionality is similar to other web development best practices that detect supported features before using new web APIs. To test for API availability in the installed runtime, use:  
 
-*   The `queryinterface` in C/C++. 
-*   A try/catch block in .NET or WinUI. 
+*   `QueryInterface` in C/C++. 
+*   A `try/catch` block in .NET or WinUI. 
     
-For more information, navigate to [Determine WebView2 Runtime requirement][Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement].  
+For more information, navigate to [Testing whether the installed Runtime supports a recent API][Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement].  
 
 ## Update the Fixed Version Runtime  
 
@@ -65,7 +65,7 @@ For any WebView2 application, ensure you follow our recommended WebView2 securit
 [Webview2ConceptsDistributionStayCompatibleEvergreenMode]: ../concepts/distribution.md#periodically-test-the-app-against-non-stable-browser-channels "Periodically test the app against non-stable browser channels - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
 [Webview2ConceptsSecurity]: ../concepts/security.md "Best practices for developing secure WebView2 applications | Microsoft Docs"  
 [Webview2ConceptsUserDataFolder]: ../concepts/user-data-folder.md "Manage the user data folder | Microsoft Docs"  
-[Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#determine-webview2-runtime-requirement "Determine WebView2 Runtime requirement - Understand WebView2 SDK versions | Microsoft Docs"  
+[Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#testing-whether-the-installed-runtime-supports-a-recent-api "Testing whether the installed Runtime supports a recent API - Understand WebView2 SDK versions | Microsoft Docs"  
 [Webview2GetStartedWin32]: ../get-started/win32.md "Get started with WebView2 | Microsoft Docs"  
 [Webview2GetStartedWinforms]: ../get-started/winforms.md "Get started with WebView2 in Windows Forms | Microsoft Docs"  
 [Webview2GetStartedWinui]: ../get-started/winui.md "Get started with WebView2 in WinUI 3 (Preview) | Microsoft Docs"  

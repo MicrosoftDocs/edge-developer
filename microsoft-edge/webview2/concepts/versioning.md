@@ -76,11 +76,11 @@ In your WebView2 app, to programmatically test whether a recent API is supported
 > When developing [Evergreen WebView2 apps][Webview2ConceptsDistributionEvergreenDistributionMode], regularly test your app against the latest non-stable Microsoft Edge channels and the WebView2 Runtime.  Because the web platform is constantly evolving, regular testing is the best way to ensure your app performs as intended.
 
 
-## Testing whether the client's Runtime supports a recent API
+## Testing whether the installed Runtime supports a recent API
 
 When you develop a WebView2 app using a recent version of the WebView2 SDK, when you use a recently added API, it's a good practice to test the client's installed WebView2 Runtime to check whether that API is present.  How your app programmatically tests for API support depends on the coding platform.
 
-*   **Win32 C/C++**.  When using `QueryInterface` to obtain a new interface, test for a return value of `E_NOINTERFACE`.  That return value likely indicates that the client's WebView2 Runtime is an older version that doesn't support that interface.  For an example of checking for the existence of specific WebView2 APIs in the Runtime, navigate to [Line 622 - AppWindow.cpp][GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisampleAppwindowCppL622].<!-- outdated?  that cpp file contains neither "catch" nor "queryinterface" nor "E_NOINTERFACE" -->
+*   **Win32 C/C++**.  When using `QueryInterface` to obtain a new interface, test for a return value of `E_NOINTERFACE`.  That return value likely indicates that the client's WebView2 Runtime is an older version that doesn't support that interface.  For an example of checking for the existence of specific WebView2 APIs in the Runtime, navigate to [Line 622 - AppWindow.cpp][GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisampleAppwindowCppL622].<!-- outdated?  that cpp file contains neither "catch" nor "QueryInterface" nor "E_NOINTERFACE" -->
 
 *   **.NET and WinUI**.  Use `try/catch` and check for a `No such interface supported` exception when using methods, properties, and events that were added to more recent versions of the WebView2 SDK.  This exception likely indicates that the client's WebView2 Runtime is an older version that doesn't support that API.
     

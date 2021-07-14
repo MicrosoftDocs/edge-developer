@@ -45,7 +45,7 @@ Pros:
 
 Cons: 
 *  Your WebView2 app cannot specify that a particular version of the WebView2 Runtime is required.
-*  Your app needs to test whether new WebView2 APIs are present, such as by using `QueryInterface` or `try/catch`.  This is because there are a couple of cases where the WebView2 Runtime isn't updated on some clients.
+*  Your app needs to test whether new WebView2 APIs are present in the installed Runtime, such as by using `QueryInterface` in C/C++, or a `try/catch` block in .NET or WinUI.  This is because there are a couple of cases where the WebView2 Runtime isn't updated on some clients.
 
 
 ### Fixed Version
