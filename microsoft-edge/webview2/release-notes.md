@@ -3,7 +3,7 @@ description: Release notes for Microsoft Edge WebView2 SDK
 title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 07/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -19,7 +19,14 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 > [!NOTE]
 > WebView2 bug fixes are either Runtime-specific or SDK-specific.  
 
-The minimum version of Microsoft Edge that supports the core SDK APIs is version 86.0.616.0.
+
+## Minimum version of browser and Runtime for core API support
+
+The minimum version of Microsoft Edge that supports the core APIs of the WebView2 SDK is 86.0.616.0.  This is relevant for a development version of a WebView2 app, using a non-stable Microsoft Edge release.
+
+The minimum version of the WebView2 Runtime that supports the core APIs of the WebView2 SDK is 86.0.616.0.  This is relevant for a production version of a WebView2 app.
+
+The minimum version of Microsoft Edge or the WebView2 Runtime that is required by the WebView2 SDK only changes when a breaking change occurs in the web platform.
 
 
 ## 1.0.902-prerelease
@@ -28,9 +35,9 @@ Release Date: June 1, 2021
 
 [NuGet package for WebView2 SDK 1.0.902-prerelease][NuGetGallery1.0.902-prerelease]
 
-### Required Runtime version
+### Required browser version
 
-This added SDK functionality requires WebView2 Runtime version 92.0.902.0 or higher.
+This prerelease version of the WebView2 SDK requires Microsoft Edge version 92.0.902.0 or higher, for full API compatibility.
 
 ### General
 
@@ -84,7 +91,7 @@ Release Date: May 31, 2021
 
 ### Required Runtime version
 
-Requires WebView2 Runtime version 91.0.864.35 or higher, to use this added SDK functionality.
+This version of the WebView2 SDK requires WebView2 Runtime version 91.0.864.35 or higher, for full API compatibility.
 
 ### General  
 
@@ -112,9 +119,9 @@ Release Date: April 26, 2021
 
 [NuGet package for WebView2 SDK 1.0.865-prerelease][NuGetGallery1.0.865-prerelease]
 
-### Required Runtime version
+### Required browser version
 
-Requires WebView2 Runtime version 91.0.865.0 or higher, to use this added SDK functionality.
+This prerelease version of the WebView2 SDK requires Microsoft Edge version 91.0.865.0 or higher, for full API compatibility.
 
 ### General  
 
@@ -160,7 +167,7 @@ Release Date: April 21, 2021
 
 ### Required Runtime version
 
-Requires WebView2 Runtime version 90.0.818.41 or higher, to use this added SDK functionality.
+This version of the WebView2 SDK requires WebView2 Runtime version 90.0.818.41 or higher, for full API compatibility.
 
 ### General  
 
@@ -178,9 +185,9 @@ Release Date: March 8, 2021
 
 [NuGet package for WebView2 SDK 1.0.824-prerelease][NuGetGallery1.0.824-prerelease]
 
-### Required Runtime version
+### Required browser version
 
-Requires WebView2 Runtime version 91.0.824.0 or higher, to use this added SDK functionality.
+This prerelease version of the WebView2 SDK requires Microsoft Edge version 91.0.824.0 or higher, for full API compatibility.
 
 ### General  
 
@@ -212,7 +219,7 @@ Release Date: March 8, 2021
 
 ### Required Runtime version
 
-Requires WebView2 Runtime version 89.0.774.44 or higher, to use this added SDK functionality.
+This version of the WebView2 SDK requires WebView2 Runtime version 89.0.774.44 or higher, for full API compatibility.
 
 ### General  
 
@@ -241,9 +248,9 @@ Release Date: February 10, 2021
 
 [NuGet package for WebView2 SDK 1.0.790-prerelease][NuGetGallery1.0.790-prerelease]
 
-### Required Runtime version
+### Required browser version
 
-Requires Microsoft Edge version 86.0.616.0 or higher, to use this added SDK functionality.
+This prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0.616.0 or higher.
 
 ### General  
 
@@ -299,7 +306,7 @@ Release Date: January 25, 2021
 
 ### Required Runtime version
 
-Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
+This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or higher.
 
 ### General  
 
@@ -319,9 +326,9 @@ Release Date: December 8, 2020
 
 [NuGet package for WebView2 SDK 1.0.721-prerelease][NuGetGallery1.0.721-prerelease]
 
-### Required Runtime version
+### Required browser version
 
-Requires Microsoft Edge version 86.0.616.0 or higher, to use this added SDK functionality.
+This prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0.616.0 or higher.
 
 ### General  
 
@@ -374,7 +381,7 @@ Release Date: November 20, 2020
 
 ### Required Runtime version
 
-Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
+This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or higher.
 
 ### General  
 
@@ -401,7 +408,7 @@ Release Date: October 19, 2020
 
 ### Required Runtime version
 
-Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
+This prerelease version of the WebView2 SDK requires WebView2 Runtime 86.0.616.0 or higher.
 
 ### General  
 
@@ -436,7 +443,7 @@ Release Date: October 19, 2020
 
 ### Required Runtime version
 
-Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
+This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or higher.
 
 ### General  
 
@@ -455,7 +462,7 @@ Release Date: September 10, 2020
 
 ### Required Runtime version
 
-Requires WebView2 Runtime version 86.0.616.0 or higher, to use this added SDK functionality.
+This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or higher.
 
 ### General  
 
@@ -476,9 +483,9 @@ Release Date: July 20, 2020
 
 [NuGet package for WebView2 SDK 0.9.579][NuGetGallery0.9.579]
 
-### Required Runtime version
+### Required browser version
 
-Requires Microsoft Edge version 86.0.579.0 or higher, to use this added SDK functionality.
+This version of the WebView2 SDK requires Microsoft Edge version 86.0.579.0 or higher.
 
 ### General  
 
@@ -515,7 +522,7 @@ Requires Microsoft Edge version 86.0.579.0 or higher, to use this added SDK func
 
 ### Required Runtime version
 
-Requires Microsoft Edge version 85.0.538.0 or higher, to use this added SDK functionality.
+This version of the WebView2 SDK requires WebView2 Runtime version 85.0.538.0 or higher.
 
 ### General  
 
@@ -549,9 +556,9 @@ Requires Microsoft Edge version 85.0.538.0 or higher, to use this added SDK func
 
 [NuGet package for WebView2 SDK 0.9.515-prerelease][NuGetGallery0.9.515-prerelease]
 
-### Required Runtime version
+### Required browser version
 
-Requires Microsoft Edge version 84.0.515.0 or higher, to use this added SDK functionality.
+This prerelease version of the WebView2 SDK requires Microsoft Edge version 84.0.515.0 or higher.
 
 *   > [!IMPORTANT]
     > **Announcement**:  WebView2 now supports Windows Forms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **pre-release package**.  
@@ -572,7 +579,7 @@ Requires Microsoft Edge version 84.0.515.0 or higher, to use this added SDK func
 
 ### Required Runtime version
 
-Requires Microsoft Edge version 84.0.488.0 or higher, to use this added SDK functionality.
+This version of the WebView2 SDK requires WebView2 Runtime version 84.0.488.0 or higher.
 
 *   > [!IMPORTANT]
     > **Announcement**:  Starting with the upcoming Microsoft Edge version 83, Evergreen WebView no longer targets the Stable browser channel.  Instead, it targets another set of binaries, branded [Evergreen WebView2 Runtime][Webview2ConceptsDistributionEvergreenDistributionMode], that you may chain-install through an installer the WebView team is currently developing.  For more information, navigate to [Distribute a WebView2 app and the WebView2 Runtime][Webview2ConceptsDistribution].  
@@ -619,7 +626,7 @@ Requires Microsoft Edge version 84.0.488.0 or higher, to use this added SDK func
 
 ### Required Runtime version
 
-Requires Microsoft Edge version 82.0.430.0 or higher, to use this added SDK functionality.
+This version of the WebView2 SDK requires WebView2 Runtime version 82.0.430.0 or higher.
 
 The WebView2 SDK is the official Win32 C++ Beta version, which incorporates several feature requests from feedback.  The WebView team tries to limit the number of releases with breaking changes.  As general availability approaches, several major breaking changes are incorporated in the Beta release.  
 
@@ -657,7 +664,7 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 
 ### Required Runtime version
 
-Requires Microsoft Edge version 80.0.355.0 or higher, to use this added SDK functionality.
+This version of the WebView2 SDK requires WebView2 Runtime version 80.0.355.0 or higher.
 
 *   Released WebView2API Sample, a comprehensive guide of the WebView2 SDK.  For more information, navigate to [API Sample][GithubMicrosoftedgeWebview2samplesApisample].  
 *   Added IME support for all languages besides English \([#30][GithubMicrosoftedgeWebviewfeedbackIssue30]\).  
@@ -672,7 +679,7 @@ Requires Microsoft Edge version 80.0.355.0 or higher, to use this added SDK func
 
 ### Required Runtime version
 
-Requires Microsoft Edge version 80.0.314.0 or higher, to use this added SDK functionality.
+This version of the WebView2 SDK requires WebView2 Runtime version 80.0.314.0 or higher.
 
 ### Changes
 
@@ -695,7 +702,7 @@ Requires Microsoft Edge version 80.0.314.0 or higher, to use this added SDK func
 
 ### Required Runtime version
 
-Requires Microsoft Edge version 78.0.270.0 or higher, to use this added SDK functionality.
+This version of the WebView2 SDK requires WebView2 Runtime version 78.0.270.0 or higher.
 
 ### Changes
 *   Added `DocumentTitleChanged` event to indicate document title change \([\#27][GithubMicrosoftedgeWebviewfeedbackIssue27]\).  
@@ -713,7 +720,7 @@ Requires Microsoft Edge version 78.0.270.0 or higher, to use this added SDK func
 
 ### Required Runtime version
 
-Requires Microsoft Edge version 77.0.230.0 or higher, to use this added SDK functionality.
+This version of the WebView2 SDK requires WebView2 Runtime version 77.0.230.0 or higher.
 
 ### Changes
 
@@ -728,7 +735,7 @@ Requires Microsoft Edge version 77.0.230.0 or higher, to use this added SDK func
 
 ### Required Runtime version
 
-Requires Microsoft Edge version 77.0.190.0 or higher, to use this added SDK functionality.
+This version of the WebView2 SDK requires WebView2 Runtime version 77.0.190.0 or higher.
 
 *   Added `get_AreDevToolsEnabled`/`put_AreDevToolsEnabled` to control if users can open DevTools \([\#16][GithubMicrosoftedgeWebviewfeedbackIssue16]\).  
 *   Added `get_IsStatusBarEnabled`/`put_IsStatusBarEnabled` to control if the status bar is displayed \([\#19][GithubMicrosoftedgeWebviewfeedbackIssue19]\).  
@@ -747,15 +754,15 @@ Requires Microsoft Edge version 77.0.190.0 or higher, to use this added SDK func
 
 ### Required Runtime version
 
-Requires Microsoft Edge version 76.0.149.0 or higher.
+This version of the WebView2 SDK requires WebView2 Runtime version 76.0.149.0 or higher.
 
 Initial developer preview release.  
+
 
 <!-- links -->  
 [Webview2ConceptsDistribution]: ./concepts/distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
 [Webview2ConceptsDistributionEvergreenDistributionMode]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution mode - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
 [Webview2ConceptsDistributionFixedVersionDistributionMode]: ./concepts/distribution.md#fixed-version-distribution-mode "Fixed Version distribution mode - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
-<!-- todo: update all aspects of this link: -->
 [Webview2ConceptsDistributionUnderstandRuntimeInstaller]: ./concepts/distribution.md#understanding-the-webview2-runtime "Understanding the WebView2 runtime - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
 [Webview2ConceptsEnterpriseGroupPoliciesForWebview2]: ./concepts/enterprise.md#group-policies-for-webview2 "Group policies for WebView2 - Managing WebView2 applications | Microsoft Docs"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
@@ -1037,7 +1044,6 @@ Initial developer preview release.
 [Webview2ReferenceWin32Icorewebview2experimentalenvironment4ViewWebview210902PrereleaseAddBrowserprocessexited]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment4?view=webview2-1.0.902-prerelease&preserve-view=true#add_browserprocessexited "add_BrowserProcessExited - interface ICoreWebView2ExperimentalEnvironment4 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2experimental3ViewWebview210902PrereleaseAddClientcertificaterequested]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental3?view=webview2-1.0.902-prerelease&preserve-view=true#add_clientcertificaterequested "add_ClientCertificateRequested - interface ICoreWebView2Experimental3 | Microsoft Docs"
 
-
 [Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddDownloadstarting]: /microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_downloadstarting "add_DownloadStarting - interface ICoreWebView2_4 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddFramecreated]: /microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_framecreated "add_FrameCreated - interface ICoreWebView2_4 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2setting4ViewWebview210902PrereleaseGetIsgeneralautofillenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings4?view=webview2-1.0.902-prerelease&preserve-view=true#get_isgeneralautofillenabled "get_IsGeneralAutofillEnabled - interface ICoreWebView2Settings4 | Microsoft Docs"
@@ -1047,9 +1053,7 @@ Initial developer preview release.
 [Webview2ReferenceWin32Icorewebview2setting5ViewWebview210902PrereleaseGetIspinchzoomenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings5?view=webview2-1.0.902-prerelease&preserve-view=true#get_ispinchzoomenabled "get_IsPinchZoomEnabled - interface ICoreWebView2Settings5 | Microsoft Docs"
 
 [Webview2ReferenceWin32Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount]: /microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_allowsinglesignonusingosprimaryaccount "get_AllowSingleSignOnUsingOSPrimaryAccount - interface ICoreWebView2EnvironmentOptions | Microsoft Docs"
-[Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetUseragent]: /microsoft-edge/webview2/reference/win32/icorewebview2settings2?view=webview2-1.0.864.35&preserve-view=true#get_useragent 
 
-/microsoft-edge/webview2/reference/win32/icorewebview2settings2?view=webview2-1.0.864.35&preserve-view=true#get_useragent 
+[Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetUseragent]: /microsoft-edge/webview2/reference/win32/icorewebview2settings2?view=webview2-1.0.864.35&preserve-view=true#get_useragent "get_UserAgent - interface ICoreWebView2Settings2 | Microsoft Docs"
 
-"get_UserAgent - interface ICoreWebView2Setting2 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetArebrowseracceleratorkeysenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings3?view=webview2-1.0.864.35&preserve-view=true#get_arebrowseracceleratorkeysenabled "get_AreBrowserAcceleratorKeysEnabled - interface ICoreWebView2Settings3 | Microsoft Docs"

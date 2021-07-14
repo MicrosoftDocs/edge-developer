@@ -3,7 +3,7 @@ description: Distribution options when releasing an app using Microsoft Edge Web
 title: Distribute a WebView2 app and the WebView2 Runtime
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 07/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -16,21 +16,21 @@ A WebView2 app uses the WebView2 Runtime on client machines.  When you distribut
 
 ## Choosing between Evergreen and Fixed Version distribution modes
 
-The [Download the WebView2 Runtime][Webview2Installer] page provides multiple options for ensuring that the WebView2 Runtime is on client machines.
+The [Download the WebView2 Runtime][Webview2Installer] section of the **Microsoft Edge WebView2** page provides several options for ensuring that the WebView2 Runtime is on client machines.
 
 :::image type="complex" source="../media/runtime-distrib-options.png" alt-text="Options for distributing and updating the WebView2 Runtime" lightbox="../media/runtime-distrib-options.png":::
     Options for distributing and updating the WebView2 Runtime
 :::image-end:::  
 
-*   The **Evergreen Bootstrapper** section of the download page provides a small Evergreen runtime bootstrapper that runs on the client machine, for online users.  You can use the bootstrapper a couple different ways:
+*   The **Evergreen Bootstrapper** section of the page provides a small Evergreen runtime bootstrapper that runs on the client machine, for online users.  You can use the bootstrapper a couple different ways:
 
     *   Link to the bootstrapper, using a link you obtain from the **Get the Link** button.  Your app uses this link to programmatically download the bootstrapper on the end user's device and invoke the bootstrapper.  This approach avoids the need to package anything with your app.  This approach has a dependency on Microsoft's CDN.  This approach only works with clients that are online.
 
     *   Download the bootstrapper (using the **Download** button in the **Bootstrapper** section) and then distribute the bootstrapper with your app.  In this approach, you package the bootstrapper with your app installer/updater or with your app itself, and invoke the bootstrapper that you included with your app.  This approach avoids dependency on Microsoft's CDN.  This approach only works with clients that are online.
 
-*  The **Evergreen Standalone Installer** section of the download page provides a large, standalone Evergreen installer, for offline users.  In this approach, you package the standalone installer with your app installer/updater or app itself, and invoke the Evergreen Standalone installer.  This approach avoids dependency on Microsoft's CDN.  This approach works both with clients that are offline and online.
+*  The **Evergreen Standalone Installer** section of the page provides a large, standalone Evergreen installer, for offline users.  In this approach, you package the standalone installer with your app installer/updater or app itself, and invoke the Evergreen Standalone installer.  This approach avoids dependency on Microsoft's CDN.  This approach works both with clients that are offline and online.
 
-*  The **Fixed Version** section of the download page provides a Fixed Version runtime that you distribute along with your app.
+*  The **Fixed Version** section of the page provides a Fixed Version runtime that you distribute along with your app.
 
 The Evergreen distribution mode is recommended for most apps.  The Evergreen and Fixed Version approaches are summarized below.
 
@@ -71,7 +71,6 @@ If you use the Fixed Version distribution mode, you can skip the remainder of th
 <!-- orig start of this section: -->
 The WebView2 Runtime is a redistributable runtime and serves as the underlying (or _backing_) web platform for WebView2 apps.  The concept is similar to Visual C++ or the .NET Runtime for C++/.NET apps.  The WebView2 Runtime contains modified Microsoft Edge \(Chromium\) binaries that are fine-tuned and tested for apps.  After the WebView2 Runtime is installed, it doesn't appear as a user-visible browser app.  For example, a user does not have a browser desktop shortcut or an entry in the **Start** menu.
 
-
 ### Runtime or browser support during development or production
 
 During development and testing, a WebView2 app can use either option as the backing web platform:
@@ -79,7 +78,6 @@ During development and testing, a WebView2 app can use either option as the back
 *   A non-stable (Insider) Microsoft Edge \(Chromium\) browser channel.  Use this approach to test your app for forward-compatibility, so that you know if a breaking change is coming that will require updating your app.
 
 A production release of a WebView2 app can only use the WebView2 Runtime as the backing web platform, not Microsoft Edge.
-
 
 #### Stable channel isn't supported
 
@@ -116,19 +114,23 @@ For example, when Microsoft publishes the WebView2 SDK version 1.0.800.0, WebVie
 
 Only one installation of the Evergreen WebView2 Runtime is needed for all Evergreen apps on the device.  There are a number of tools available at [Download the WebView2 Runtime][Webview2Installer].  The following tools help you deploy the Evergreen Runtime.  
 
-*   For online clients: _WebView2 Runtime Bootstrapper_ is a tiny \(approximately 2 MB\) installer.  WebView2 Runtime Bootstrapper downloads and installs the Evergreen Runtime from Microsoft servers that matches the user's device architecture.  Use a link to programmatically download the bootstrapper; select the **Get the Link** button at the above download page. 
+*   For online clients: _WebView2 Runtime Bootstrapper_ is a tiny \(approximately 2 MB\) installer.  The WebView2 Runtime Bootstrapper downloads and installs the Evergreen Runtime from Microsoft servers that matches the user's device architecture.
+    *   In the setup part of your WebView2 app, link to the bootstrapper.  Use a link to programmatically download the bootstrapper; select the **Get the Link** button at the above download page.
+    *   Or, download the bootstrapper and package it with your WebView2 app.
+
 *   For offline clients: _WebView2 Runtime Standalone Installer_ is a full installer that installs the Evergreen WebView2 Runtime in offline environments.
     
 Currently, both the bootstrapper and standalone installer only support per-machine installs, which requires elevation of permissions.  If an installer is run without elevation, the user is prompted to elevate permissions.  
 
-Use the following workflows to ensure that the Runtime is already installed before your app launches.  You can adjust your workflow depending on your scenario.  Sample code is available in the [Samples repo][GitHubMicrosoftedgeWebView2samplesWebview2Deployment].  
+Use the following online deployment workflow or offline deployment workflow to ensure that the Runtime is already installed before your app launches.  You can adjust your workflow depending on your scenario.  Sample code is available in the [Samples repo][GitHubMicrosoftedgeWebView2samplesWebview2Deployment].  
 
 #### Online-only deployment  
 
 If you have an online-only deployment scenario where users are assumed to have internet access, complete the following steps.  
 
 1.  During your app setup, run a test to make sure that the WebView2 Runtime is already installed.  To verify that the Runtime is installed, use either of the following approaches:
-    *   Inspect the `pv (REG_SZ)` registry key <!-- for the WebView2 runtime? --> at the following location, to make sure that this regkey exists and is not `null` or empty.  If the regkey exists and is non-null, this means that the WebView2 Runtime is on the client<!--correct?-->.  Find `pv (REG_SZ)` at the following location.  
+
+    *   Inspect the `pv (REG_SZ)` registry key for the WebView2 runtime at the following location.  If this regkey doesn't exist, or if exists and is `null` or an empty string, this means that the WebView2 Runtime is not installed on the client.  Find `pv (REG_SZ)` at the following location.  
         
         On 64-bit Windows:
         
@@ -142,25 +144,31 @@ If you have an online-only deployment scenario where users are assumed to have i
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
         ```  
         
-    *   Run [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] and ensure<!--todo: change "ensure" to "check whether"?--> the `versionInfo` is `NULL`.<!--why should versionInfo be NULL?  what does NULL indicate, here?-->
-1.  If the Runtime is not installed, in your app setup process[correct?], use the link [what link?] to programmatically download the WebView2 Runtime Bootstrapper.
+    *   Alternatively, run [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] and evaluate whether the `versionInfo` is `NULL`.  `NULL` indicates that the Runtime isn't installed.
+
+1.  If the Runtime is not installed, in your app setup process, use the link (from the **Get the Link** button on the download page) to programmatically download the WebView2 Runtime Bootstrapper.
+
 1.  Invoke the WebView2 Runtime Bootstrapper from an elevated process or command prompt by issuing the command `MicrosoftEdgeWebview2Setup.exe /silent /install`.
     
 The above workflow has several benefits:
-*   The Runtime is installed only when needed, or when you are not required to package installers.<!--todo: clarify.  maybe change to: "or when you are not required to include an installer in your app installer or updater."-->
+*   The Runtime is installed only when needed.
+*   You are not required to package a Runtime installer with your WebView2 app.
 *   The WebView2 Runtime Bootstrapper automatically detects the device's architecture (platform) and then installs the matching WebView2 Runtime.
 *   The Runtime is installed silently.  
     
-You can also package the WebView2 Runtime Bootstrapper with your app, instead of programmatically downloading the bootstrapper on-demand.
+Alternatively, instead of programmatically downloading the bootstrapper on-demand by getting a link, as shown above, you can package the Evergreen Bootstrapper for the WebView2 Runtime with your app.
 
 #### Offline deployment  
 
 If you have an offline deployment scenario, where app deployment has to work entirely offline, complete the following steps.  
 
 1.  Download the Evergreen Standalone Installer from [Download the WebView2 Runtime][Webview2Installer] to your development machine.  This is a tool to install the WebView2 Runtime on the client.
+
 1.  Include the Evergreen Standalone Installer in your app installer or updater.  
+
 1.  During your app setup, test whether the WebView2 Runtime is already installed, using either of the following approaches:
-    *   Approach A: Check whether the `pv (REG_SZ)` regkey exists and whether the regkey is `null` or empty.  If this regkey exists and isn't `null` or empty, the WebView2 Runtime is already installed.  Find `pv (REG_SZ)` at the following location:
+
+    *   Check whether the `pv (REG_SZ)` regkey exists and whether the regkey is `null` or empty.  If this regkey doesn't exist, or it is `null` or an empty string, the WebView2 Runtime isn't currently installed on the client.  Find `pv (REG_SZ)` at the following location:
         
         On 64-bit Windows:
         
@@ -174,7 +182,8 @@ If you have an offline deployment scenario, where app deployment has to work ent
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
         ```  
         
-    *   Approach B: Call [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] and check whether the `versionInfo` is `NULL`.  If `versionInfo` is `NULL`, the WebView2 Runtime isn't currently installed.
+    *   Alternatively, call [GetAvailableCoreWebView2BrowserVersionString][ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring] and check whether the `versionInfo` is `NULL`.  If `versionInfo` is `NULL`, the WebView2 Runtime isn't currently installed on the client.
+
 1.  If the WebView2 Runtime is not installed, run the Evergreen Standalone Installer.  If you want to run a silent installation, either run the installer from an elevated process, or copy and run the following command:
     
     ```shell
@@ -227,7 +236,6 @@ Any experimental APIs in a pre-release SDK are not guaranteed to be forward-comp
 For a release version of your app, use a _Release_ version of the WebView2 SDK.  The _stable_ (non-experimental) APIs that are in that SDK version are forward-compatible.  
 
 The WebView2 SDK has been forward-compatible ever since version 1.  If your WebView2 app uses the current version of the SDK, your app continues to work even after the client's WebView2 Runtime is updated.  However, any experimental APIs that are in a version of the WebView2 SDK are not guaranteed to be forward-compatible.
-
 <!-- /para3 -->
 
 
@@ -266,7 +274,7 @@ To use the Fixed Version distribution mode:
     
 ### Known issues for Fixed Version  
 
-Compared to the Evergreen Runtime, Fixed Version does not have an installation process,  <!-- todo: clarify "which", maybe break out as 2 sentences --> which causes [Microsoft PlayReady][MicrosoftPlayReady] to not work without modification.  You can mitigate the problem<!-- todo: reword to be more specific --> as follows.
+Installing the Fixed Version of the WebView2 Runtime on the client causes [Microsoft PlayReady][MicrosoftPlayReady] to stop working.  Fix the PlayReady setup as follows.
 
 1.  Locate the path where you deploy the Fixed Version package on the user's device, such as the following location.
     
