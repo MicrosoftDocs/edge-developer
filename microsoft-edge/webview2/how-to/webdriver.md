@@ -59,7 +59,9 @@ At this point, you need to have installed the WebView2 Runtime, built a WebView2
        New project  
     :::image-end:::  
     
-1.  Next, add Selenium to the project; install Selenium by using the Selenium.WebDriver NuGet package as follows.  To download the Selenium.WebDriver NuGet package, in **Visual Studio**, select **Project** > **Manage NuGet Package**.  The following screen appears.  
+1.  Next, add Selenium to the project; install Selenium by using the Selenium.WebDriver NuGet package as follows.  To download the Selenium.WebDriver NuGet package, in **Visual Studio**, select **Project** > **Manage NuGet Packages**.
+
+1.  Select the **Browse** tab.  The following screen appears.  
     
     :::image type="complex" source="../media/webdriver/download-nuget.png" alt-text="Download NuGet package" lightbox="../media/webdriver/download-nuget.png":::
        Download NuGet package  
