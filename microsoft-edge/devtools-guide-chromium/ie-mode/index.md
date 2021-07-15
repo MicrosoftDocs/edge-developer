@@ -106,5 +106,5 @@ Applications that require IE mode for the website \(or app\) content to function
 
 [WebDriverIndex]: ../../webdriver-chromium/index.md "Use WebDriver (Chromium) for test automation - Microsoft Edge Development | Microsoft Docs"  
 
-[InternetExplorerObject]: https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85) "InternetExplorer object (Windows) | Microsoft Docs"
-[WebBrowserControl]: https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85) "WebBrowser Control (Internet Explorer) | Microsoft Docs"
+[InternetExplorerObject]: https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85) "InternetExplorer object (Windows) | Microsoft Docs"
+[WebBrowserControl]: https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85) "WebBrowser Control (Internet Explorer) | Microsoft Docs"
