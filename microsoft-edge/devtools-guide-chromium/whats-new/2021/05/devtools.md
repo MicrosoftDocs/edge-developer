@@ -184,9 +184,7 @@ To review the history of this feature in the Chromium open-source project, navig
 
 ### Support for const redeclarations in the Console
 
-The Console now supports redeclaration of `const` variables within a given REPL script (a series of statements entered as a group), in addition to the existing `let` and `class` redeclarations. The inability to redeclare `const` variables was a common annoyance for web developers who use the Console to experiment with new JavaScript code.
-
-This support for redeclaration of `const` variables allows yet to paste code into the DevTools console to see how it works.  You can experiment, making small changes to the code, and repeat the process without refreshing the page.  Previously, DevTools threw a syntax error if the code redeclared a `const` binding.
+The Console now supports redeclaration of `const` variables across separate REPL scripts (such as when you run a statement in the Console), in addition to the existing `let` and `class` redeclarations.  This support allows you to experiment with different declarations for `const` variables without refreshing the page.  Previously, DevTools threw a syntax error if you redeclared a `const` binding.
 
 Refer to the example below. `const` redeclaration is supported across separate REPL scripts (refer to variable `a`).  Note that the following scenarios are not supported, by design:
 
@@ -197,28 +195,7 @@ Refer to the example below. `const` redeclaration is supported across separate R
    Redeclaring a const variable is allowed in the console
 :::image-end:::
 
-<!-- screenshot uses https://googlechrome.github.io/samples/intersectionobserver but could use any page, or no page -->
-
-For example, to produce the results shown in the previous screenshot:
-
-1.  In DevTools version 92 or later, in the **Console**, enter the following statement and then select `Enter`.
-
-    ```javascript
-    const a = 'declare';
-    ```
-    
-1.  Enter the following statement and then select `Enter`.  This is a separate REPL script, independent from the above script, so no error message appears.
-
-    ```javascript
-    const a = 'redeclare';
-    ```
-    
-1.  Enter both of the following statements as a single REPL script.  To do this, either copy and paste the following code listing into the **Console**, or type the first statement followed by `Shift`+`Enter` and then type the second statement followed by `Enter`.  The const variable is redeclared within the same REPL script, so now an error message appears.
-
-    ```javascript
-    const b = 'declare';
-    const b = 'no redeclaration on same REPL script';
-    ```
+To learn how to run a single REPL script or a multi-line REPL script, navigate to [The Console as a JavaScript environment](../../../console/console-javascript.md).
     
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1076427][CR1076427].
 
@@ -255,9 +232,9 @@ Cross-origin resource sharing (CORS) errors are now surfaced in the **Issues** t
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1141824][CR1141824].
 
 
-### Renamed XHR label to Fetch\/XHR
+### Renamed XHR filter to Fetch\/XHR
 
-In the **Network** tool, the **XHR** label is now renamed to **Fetch/XHR**. This change makes it clearer that this filter includes both `XMLHttpRequest` and `Fetch` API network requests.
+In the **Network** tool, the **XHR** filter is now renamed to **Fetch/XHR**. This change makes it clearer that this filter includes both `XMLHttpRequest` and `Fetch` API network requests.
 
 :::image type="complex" source="../../media/2021/05/fetch-xhr.msft.png" alt-text="The Network tool now shows Fetch/XHR instead of XHR" lightbox="../../media/2021/05/fetch-xhr.msft.png":::
    The **Network** tool now shows **Fetch/XHR** instead of **XHR**
@@ -272,7 +249,7 @@ To review the history of this feature in the Chromium open-source project, navig
 
 ### Filter Wasm resource type in the Network tool
 
-In the **Network** tool, you can now select the new **Wasm** button to filter the WebAssembly network requests.
+In the **Network** tool, you can now select the new **Wasm** filter to filter the WebAssembly network requests.
 
 :::image type="complex" source="../../media/2021/05/wasm-network-requests.msft.png" alt-text="Filter by Wasm" lightbox="../../media/2021/05/wasm-network-requests.msft.png":::
    Filter by Wasm
@@ -293,11 +270,7 @@ In the **Performance** tool, DevTools now displays **Compute Intersections** in 
 
 <!-- screenshot uses https://googlechrome.github.io/samples/intersectionobserver -->
 
-For more about intersection observers, navigate to [Trust is good, observation is better: Intersection Observer v2][WebDevIntersectionObserverV2].
-
-For information about using the flame chart, navigate to [Analyze a performance recording][DevtoolsEvaluatePerfRefAnalyzeAPerfRecording].
-
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1199137][CR1199137].
+For more about intersection observers, navigate to [Trust is good, observation is better: Intersection Observer v2][WebDevIntersectionObserverV2].  For information about using the flame chart, navigate to [Analyze a performance recording][DevtoolsEvaluatePerfRefAnalyzeAPerfRecording].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1199137][CR1199137].
 
 
 ## Download the Microsoft Edge preview channels
