@@ -86,7 +86,7 @@ After you launch Microsoft Edge \(Chromium\) using a command-line argument, IE m
 IE mode remains unavailable until you completely close and restart Microsoft Edge \(Chromium\).  
 
 
-## Updating IE Automation
+## Replacing IE Automation
 
 If you have an existing application that uses the [InternetExplorer][InternetExplorerObject] object to automate Internet Explorer 11, your application will not work if the Internet Explorer 11 desktop application is not available.  Microsoft Edge \(Chromium\) does not support automating IE mode through the InternetExplorer object, so applications that rely on this object will need to be updated using one of the recommended alternatives below.  Applications that use the [WebBrowser][WebBrowserControl] control will continue to work and will not be affected by the removal of Internet Explorer 11.
 
