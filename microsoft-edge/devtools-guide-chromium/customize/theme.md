@@ -30,6 +30,7 @@ Light themes:
 - Solarized Light  
 
 Dark themes:  
+- Dark+ (Default)  
 - Abyss  
 - Chromium Dark  
 - Kimbie Dark  
