@@ -3,7 +3,7 @@ description: Use virtual devices in Microsoft Edge to build mobile-first website
 title: Emulate mobile devices in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile
@@ -327,6 +327,34 @@ Next to **User agent**, clear the **Select automatically** checkbox.  Then, choo
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Set the user agent string to Microsoft Edge on macOS" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
     Set the user agent string to Microsoft Edge on macOS  
 :::image-end:::  
+
+## Set user agent client hints
+
+If your site employs [user agent client hints](https://docs.microsoft.com/en-us/microsoft-edge/web-platform/user-agent-guidance), use the **Emulated Devices** panel to add devices and set user agent client hints.
+
+1. Open the **contextual menu** (right-click), and choose **Inspect**.
+1. Choose **Settings** > **Devices**.
+1. In the Emulated Devices panel select **Add custom device...** and expand **User agent client hints**.
+
+    :::image type="complex" source="images/emulated-devices-user-agent-client-hints.msft.png" alt-text="Set user agent client hints" lightbox="images/emulated-devices-user-agent-client-hints.msft.png":::
+        Set user agent client hints  
+    :::image-end::: 
+
+1. Type a unique name in the **Device Name** text box such as `Test101`.
+1. Accept the default values or change **Width**, **Height**, and **Device pixel ratio** as needed.
+1. Set User agent client hints as follows.
+    * **Brand** and **Version** such as *Edge* and *92*. Choose **+ Add Brand** to add multiple brand and version pairs.
+    * **Full Browser Version** such as *92.0.1111.0*.
+    * **Platform** and **Version** such as *Windows* and *10.0*.
+    * **Architecture** such as *x86*.
+    * **Device model** such as *Galaxy Nexus*.
+
+    > [!NOTE]
+    > Set or change any of the user agent client hints. There are no required values.
+
+1. Select **Add**. The new device displays in a selected state at the top of the **Emulated Devices** list.
+
+You may also set user agent client hints in [Network Analysis reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference).
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

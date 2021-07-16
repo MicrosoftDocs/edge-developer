@@ -3,7 +3,7 @@ description: A comprehensive reference of Microsoft Edge DevTools Network panel 
 title: Network Analysis reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -160,7 +160,33 @@ To manually override the user agent, use the following steps.
 1.  Turn off the **Select automatically** checkbox.  
 1.  Choose a user agent option from the menu, or enter a custom one in the text box.  
 
-<!--todo: add network condition section when available -->  
+## Set user agent client hints
+
+If your site employs [user agent client hints](https://docs.microsoft.com/en-us/microsoft-edge/web-platform/user-agent-guidance), use the **Network conditions** panel to provide different user agent client hints.
+
+1. Open the **contextual menu** (right-click), and choose **Inspect**.
+1. Choose **Network** > **Network conditions**.
+1. In the User agent panel clear the **Use browser default** checkbox, then choose **User agent client hints**.
+
+    :::image type="complex" source="images/network-conditions-user-agent-client-hints.msft.png" alt-text="Set user agent client hints" lightbox="images/network-conditions-user-agent-client-hints.msft.png":::
+        Set user agent client hints  
+    :::image-end::: 
+
+1. Accept the default value of **Custom...** or choose a pre-defined browser and device from the drop-down list.
+1. For either choice, set User agent client hints as follows.
+    * **Brand** and **Version** such as *Edge* and *92*. Choose **+ Add Brand** to add multiple brand and version pairs.
+    * **Full Browser Version** such as *92.0.1111.0*.
+    * **Platform** and **Version** such as *Windows* and *10.0*.
+    * **Architecture** such as *x86*.
+    * **Device model** such as *Galaxy Nexus*.
+
+    > [!NOTE]
+    > Set or change any of the user agent client hints. There are no required values.
+
+1. Select **Update**. 
+1. To verify changes, choose **Console** and type `navigator.userAgentData`. Expand the results as needed to view changes to user agent data.
+
+You may also set user agent client hints in [Emulate mobile devices in Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/).  
 
 ## Filter requests  
 

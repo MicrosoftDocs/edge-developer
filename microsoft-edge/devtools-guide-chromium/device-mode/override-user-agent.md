@@ -3,7 +3,7 @@ description: Open the Network conditions tool, disable Select automatically, and
 title: Override the user agent string from Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -25,20 +25,21 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 To override the [user agent][MDNUserAgent] string from Microsoft Edge DevTools:  
 
-1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
+1. Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
     
     :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-command-menu.msft.png":::
        The **Command Menu**  
     :::image-end:::  
     
-1.  Type `network conditions`, choose **Show Network conditions**, and select `Enter` to open the **Network conditions** tool.  
-1.  In the **User agent** section, turn off the **Select automatically** checkbox.  
+1. Type `network conditions`, choose **Show Network conditions**, and select `Enter` to open the **Network conditions** tool.  
+1. In the **User agent** section, clear the **Use browser default** checkbox.  
     
     :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="Turn off Select automatically" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
-       Turn off **Select automatically**  
+       Clear **Use browser default** checkbox 
     :::image-end:::  
     
-1.  Choose a user agent string from the list, or enter your own custom string.  
+1. Choose a user agent from the drop-down list or enter a custom user agent.
+1. Choose **User agent client hints** to view and change these values as described in [Network Analysis reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference).
     
 ## Getting in touch with the Microsoft Edge DevTools team  
 
