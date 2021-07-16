@@ -20,17 +20,11 @@ To acquire any of the extensions highlighted below, navigate to Extensions \(sel
 
 Search the Marketplace for the specific extension and choose **Install**.  
 
-:::image type="complex" source="./media/vscode-debugger-install.png" alt-text="Install the Debugger for Microsoft Edge Visual Studio Code extension" lightbox="./media/vscode-debugger-install.png":::
-   Install the **Debugger for Microsoft Edge** Visual Studio Code extension  
+:::image type="complex" source="./media/vscode-edge-tools-install.png" alt-text="Install the Microsoft Edge Tools for Visual Studio Code extension" lightbox="./media/vscode-edge-tools-install.png":::
+   Install the **Microsoft Edge Tools** Visual Studio Code extension  
 :::image-end:::  
 
 :::row:::
-   :::column span="1":::
-      :::image type="complex" source="./media/visual-studio-code-extension-debugger-for-microsoft-edge.msft.png" alt-text="Debugger for Microsoft Edge Visual Studio Code extension" lightbox="./media/visual-studio-code-extension-debugger-for-microsoft-edge.msft.png":::
-         **Debugger for Microsoft Edge** Visual Studio Code extension  
-      :::image-end:::  
-      [Debugger for Microsoft Edge](#debugger-for-microsoft-edge)  
-   :::column-end:::
    :::column span="1":::
       :::image type="complex" source="./media/visual-studio-code-extension-microsoft-edge-tools-for-visual-studio-code.msft.png" alt-text="Microsoft Edge Tools for Visual Studio Code Visual Studio Code extension" lightbox="./media/visual-studio-code-extension-microsoft-edge-tools-for-visual-studio-code.msft.png":::
          **Microsoft Edge Tools for Visual Studio Code** Visual Studio Code extension  
@@ -44,16 +38,6 @@ Search the Marketplace for the specific extension and choose **Install**.
       [webhint](#webhint)  
    :::column-end:::
 :::row-end:::  
-
-## Debugger for Microsoft Edge  
-
-With the [Debugger for Microsoft Edge][VisualstudioMarketplaceDebuggerMicrosoftEdge] Visual Studio Code extension, debug your front-end JavaScript code line-by-line and see `console.log()` statements directly from [Visual Studio Code][VisualstudioCode].  
-      
-Using the Debugger tool, you may launch or attach to both Microsoft Edge \(EdgeHTML\) and Microsoft Edge \(Chromium\).  For a walkthrough of debugging Microsoft Edge from Visual Studio Code and sample `launch.json` configurations, navigate to [Debugger For Microsoft Edge Visual Studio Code Extension][VisualStudioCodeDebuggerEdge].  Choose the following image to see the extension in action.  
-
-:::image type="complex" source="./media/debugger-for-edge.png" alt-text="Debugger for Edge Visual Studio Code extension in action" lightbox="./media/debugger-for-edge.gif":::
-   **Debugger for Microsoft Edge** Visual Studio Code extension in action  
-:::image-end:::  
 
 ## Microsoft Edge Tools for Visual Studio Code
 
@@ -91,8 +75,7 @@ Identify and fix problems in your website by adding the [webhint extension for V
 For more information, navigate to [How to use webhint in Visual Studio Code][VisualStudioCodeWebhint].  
 
 <!--links -->  
-
-[VisualStudioCodeDebuggerEdge]: ./debugger-for-edge.md "Debugger For Microsoft Edge Visual Studio Code Extension | Microsoft Docs"  
+ 
 [VisualStudioCodeMicrosoftEdgeDevtoolsExtension]: ./microsoft-edge-devtools-extension.md "Microsoft Edge DevTools for Visual Studio Code extension | Microsoft Docs"  
 [VisualStudioCodeWebhint]: ./webhint.md "Webhint Visual Studio Code Extension | Microsoft Docs"  
 
