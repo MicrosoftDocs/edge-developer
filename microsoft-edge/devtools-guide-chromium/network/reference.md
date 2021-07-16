@@ -157,8 +157,8 @@ To manually clear browser cookies at any time, hover anywhere in the Requests ta
 To manually override the user agent, use the following steps.  
 
 1.  Open the **Network Conditions** drawer.  
-1.  Turn off the **Select automatically** checkbox.  
-1.  Choose a user agent option from the menu, or enter a custom one in the text box.  
+1.  Clear the **Select automatically** checkbox.  
+1.  Choose a user agent option from the menu, or enter a custom user agent in the text box.  
 
 ## Set user agent client hints
 
