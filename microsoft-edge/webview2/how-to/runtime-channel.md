@@ -1,6 +1,6 @@
 ---
-description: How to specify a WebView2 Runtime channel for your app, to test experimental APIs in a prerelease package.
-title: Specify a WebView2 Runtime channel for your app
+description: How to specify a Microsoft Edge preview channel to use, to test experimental APIs in a prerelease package.
+title: Use experimental APIs from a preview channel
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/14/2021
@@ -9,25 +9,35 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
-# Specify a WebView2 Runtime channel for your app
+# Use experimental APIs from a preview channel
 
-<!-- is the phrase "runtime channel" correct?  It doesn't appear in the docs repo.  "WebView2 Runtime" appears 102/14, and "Microsoft Edge channel" appears 13/5. -->
-
-To develop a WebView2 application, you need the WebView2 SDK and a WebView2 Runtime.  The WebView2 SDK contains API signatures, which allow you to write code using WebView2 APIs in your app.  But to see your WebView2 code build and run, you need a runtime channel,<!--change to "Microsoft Edge channel"? --> which contains the Microsoft Edge binaries that are needed to render your app.
-
-By default, a WebView2 app automatically tries to find and use the WebView2 Evergreen Runtime.  The WebView2 Evergreen Runtime allows you to easily develop code by using the stable-release WebView2 SDK.  However, when you test a prerelease SDK package (which contains experimental APIs), you will often need to direct your application to use the Canary or Dev channel of Microsoft Edge, instead of using the WebView2 Evergreen Runtime.  This article explains how to make your application use the Canary or Dev channel of Microsoft Edge.
-
-There are several ways to make your application use the Canary or Dev channel of Microsoft Edge, rather than the WebView2 Evergreen Runtime:
-*  By using code.
+To try out experimental WebView2 APIs and test your WebView2 app against a prerelease package, you need to make your app use the Beta, Dev, or Canary channel of Microsoft Edge, rather than the WebView2 Evergreen<!--what about Fixed Version?--> Runtime.  There are several ways to make your app use a specified preview channel of Microsoft Edge:
+*  By calling a function.
 *  By using a group policy.
 *  By using a registry override.
 *  By using an environment variable.
 
 These approaches are described below.
 
+This article explains how to make your WebView2 application use the Canary, Dev, or Beta channel of Microsoft Edge,
+to try out experimental WebView2 APIs and to test your app against a prerelease package.
+
+
+To develop a WebView2 application, you need the WebView2 SDK and either a Microsoft Edge preview channel or the WebView2 Runtime.  The WebView2 SDK contains API signatures, which allow you to write code using WebView2 APIs in your app.  For your WebView2 code to build and run, you need a Microsoft Edge preview channel (Beta, Dev, or Canary) or the WebView2 Runtime.  The preview channels and the Runtime contain the Microsoft Edge binaries that are needed to render your app.
+
+By default, a WebView2 app automatically tries to find and use the WebView2 Evergreen Runtime.  The WebView2 Evergreen Runtime allows you to easily develop code by using the stable-release WebView2 SDK.  However, when you test a prerelease SDK package (which contains experimental APIs), you will often need to direct your application to use the Canary or Dev channel of Microsoft Edge, instead of using the WebView2 Evergreen Runtime.
+
+
+<!-- 
+Reword from "runtime channel"; find runtime, channel, and both.
+Standard phrases to use:
+a Microsoft Edge preview channel or the WebView2 Runtime
+a channel or the Runtime
+channel or Runtime
+-->
 
 <!--========================================================================-->
-## Using code
+## Specifying a channel by calling a function
 
 To use code to make your application use the Canary or Dev channel of Microsoft Edge:
 
