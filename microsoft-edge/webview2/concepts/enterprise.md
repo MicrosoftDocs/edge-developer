@@ -20,7 +20,7 @@ IT admins may use group policy objects \(GPO\) to configure policy settings for 
 
 *   [Microsoft Edge - Update policies][EdgeUpdatePolicies] are available for IT admins to manage the install and update aspects of the WebView2 Runtime.  The Microsoft Edge browser and WebView2 Runtime are updated using the same update mechanism.  Unless a policy, such as `Update`, is channel-specific, it applies to both the browser and WebView2 Runtime.  For example, `UpdateSuppressed` allows IT admins to set time during each day to suppress auto-update for both the browser and WebView2 Runtime.  This enables IT admins to configure preferences and proxies once for both the browser and WebView2 Runtime to control their network bandwidth/traffic or for other purposes.  IT admins may follow [Microsoft Edge's guide][ConfigureMicrosoftEdge] to configure Microsoft Edge - Update policies.  
 *   [Microsoft Edge - Browser policies][EdgeBrowserPolicies] doesn't apply to WebView2 applications.  This is by design because apps and browsers have different use cases, and IT admins may not be aware of what applications use WebView2.  Applying browser policies on WebView2 may have unintended consequences.  For example, IT admins may block JavaScript in the browser and all WebView2 apps using JavaScript are broken.  
-*   \(Coming soon\) WebView2-specific policies – WebView2 will expose a small additional set of group policies in cases where managing WebView2 directly makes sense.  We recommend app developers to implement their own group policies to manage their use of WebView2, as it is more straightforward for IT admins to manage the app rather than WebView2 directly.  
+*   [WebView2-specific policies][WebView2Policies] are available to for you to manage WebView2 directly.  However, we recommend that developers implement their own group policies to manage the use of WebView2 because it is easier for administrators to manage the app instead of managing WebView2 directly.  
 
 <!-- Links -->  
 
@@ -31,6 +31,6 @@ IT admins may use group policy objects \(GPO\) to configure policy settings for 
 [EdgeUpdatePolicies]: /deployedge/microsoft-edge-update-policies "Microsoft Edge - Update policies | Microsoft Docs"  
 [EdgeBrowserPolicies]: /deployedge/microsoft-edge-policies "Microsoft Edge - Browser policies | Microsoft Docs"  
 [ConfigureMicrosoftEdge]: /deployedge/configure-microsoft-edge "Configure Microsoft Edge policy settings on Windows | Microsoft Docs"  
-
+[WebView2Policies]: /deployedge/microsoft-edge-webview-policies "Microsoft Edge WebView2 Policy Documentation | Microsoft Docs" 
 
 [GithubMicrosoftedgeWebviewfeddback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"  
