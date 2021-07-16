@@ -30,7 +30,7 @@ For a webpage, you can use the [prefers-color-scheme][MDNPrefersColorScheme] CSS
     :::image-end:::  
     
     > [!IMPORTANT]
-    > Simply typing `dark` or `light` does not reveal the right tool, since there is also a way to [choose a theme for DevTools][DevtoolsCustomizeDarkTheme].  If you are wondering what to choose, make sure that you are choosing a **rendering** menu item, not an **appearance** menu item.  
+    > Simply typing `dark` or `light` does not reveal the right tool, since there is also a way to [choose a theme for DevTools][DevtoolsCustomizeTheme].  If you are wondering what to choose, make sure that you are choosing a **rendering** menu item, not an **appearance** menu item.  
 
 1.  After you choose a color scheme, refresh the current document to display the simulated mode.  
     
@@ -48,7 +48,7 @@ For a webpage, you can use the [prefers-color-scheme][MDNPrefersColorScheme] CSS
 
 <!-- links -->  
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
-[DevtoolsCustomizeDarkTheme]: ../customize/dark-theme.md "Enable Dark Theme In Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsCustomizeTheme]: ../customize/theme.md "Apply color themes to Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsCssIndex]: ../css/index.md "Get started with viewing and changing CSS | Microsoft Docs"  
 <!-- external links -->
 [MDNPrefersColorScheme]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme "prefers-color-scheme | MDN"  
