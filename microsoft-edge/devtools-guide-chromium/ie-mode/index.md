@@ -92,7 +92,7 @@ If you have an existing application that uses the [InternetExplorer][InternetExp
 
 If your automation application does not require IE mode for the website \(or app\) content to function correctly, we recommend updating your application to use Microsoft Edge \(Chromium\) instead of Internet Explorer 11.  Many available automation tools support Microsoft Edge \(Chromium\), including WebDriver and Playwright.  To learn more about automating Microsoft Edge \(Chromium\) using WebDriver, navigate to [WebDriver overview][WebDriverIndex].  To learn more about using Playwright, navigate to [Playwright overview][PlaywrightIndex].
 
-Applications that require IE mode for the website \(or app\) content to function correctly should use the WebBrowser control.  The WebBrowser control uses the Internet Explorer Platform (MSHTML/Trident) to render web content, and will work even if the Internet Explorer 11 desktop application is not available.  
+Applications that require IE mode for the website \(or app\) content to function correctly should use the [WebBrowser][WebBrowserControl] control.  The [WebBrowser][WebBrowserControl] control uses the Internet Explorer platform (MSHTML/Trident) to render web content, and will work even if the Internet Explorer 11 desktop application is not available.  
 
 
 ## Getting in touch with the Microsoft Edge DevTools team  
