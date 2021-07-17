@@ -143,7 +143,7 @@ WinForms uses an approach similar to the Win32/C++ approach described above.
 
 WPF uses an approach similar to the Win32/C++ approach described above.
 
-See [CoreWebView2CreationProperties.BrowserExecutableFolder Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties.browserexecutablefolder?view=webview2-dotnet-1.0.864.35#Microsoft_Web_WebView2_Wpf_CoreWebView2CreationProperties_BrowserExecutableFolder).
+Refer to [CoreWebView2CreationProperties.BrowserExecutableFolder Property](/dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties.browserexecutablefolder#Microsoft_Web_WebView2_Wpf_CoreWebView2CreationProperties_BrowserExecutableFolder).
 
 
 <!-- 2. Group Policy =======================================================-->
@@ -185,7 +185,7 @@ If you want to make your application use a Microsoft Edge preview channel by usi
 
 1.  Select **OK** to close the dialog boxes.
 
-For more information, see [Configure Microsoft Edge policy settings](https://docs.microsoft.com/DeployEdge/configure-microsoft-edge).
+For more information, see [Configure Microsoft Edge policy settings](/deployedge/configure-microsoft-edge).
 
 
 <!-- 3. Registry Override ==================================================-->
@@ -286,5 +286,5 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 
 <!-- links -->
 <!-- external links -->
-[Webview2RefWin32GlobalsCreateCoreWebView2EnvironmentWithOptions]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.864.35#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"
+[Webview2RefWin32GlobalsCreateCoreWebView2EnvironmentWithOptions]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
