@@ -479,8 +479,8 @@
               href: webview2/how-to/webdriver.md
             - name: Use Chromium DevTools Protocol in WebView2
               href: webview2/how-to/chromium-devtools-protocol.md
-            - name: Specify a WebView2 Runtime channel
-              href: webview2/how-to/runtime-channel.md
+            - name: Switch to a preview channel
+              href: webview2/how-to/set-preview-channel.md
         - name: Reference
           href: webview2/webview2-api-reference.md
           items:
