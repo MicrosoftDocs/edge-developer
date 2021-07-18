@@ -25,7 +25,7 @@ If you don't have an account or if you have an existing commercial account with 
 If you have a developer account registered on Partner center, use the corresponding Microsoft account \(MSA\) to sign into your developer account, and then enroll in the Microsoft Edge program.  
 
 > [!NOTE]
-> Today the Microsoft Edge extensions does not support signing up with a work or school account.  In the future, the Microsoft Edge extensions team plans to support linking Azure AD tenants to MSA accounts for extension management.  
+> Today the Microsoft Edge extensions does not support registering with a work or school account. You need to register using an MSA account and then you may link your Azure AD tenants with that account for extension management. 
 
 ## Enroll in the Microsoft Edge program on Partner Center  
 
@@ -98,11 +98,13 @@ If you have a developer account registered on Partner center, use the correspond
     
 ## Next steps  
 
-To display your verification status, navigate to Partner Center > **Account settings**.  While you wait for the verification process to complete, continue to build, test, and prepare your submissions.  
+To display your verification status, navigate to Partner Center > **Account settings**.  While you wait for the verification process to complete, continue to build, test, and prepare your submissions.
 
-For more information, navigate to [Publish an extension][ExtensionsChromiumPublishExtension].  For information on getting started with extensions, navigate to [Getting started with Microsoft Edge (Chromium) extensions][ExtensionsChromiumGettingStartedIndex].  
+For more information, navigate to [Publish an extension][ExtensionsChromiumPublishExtension].  For information on getting started with extensions, navigate to [Getting started with Microsoft Edge (Chromium) extensions][ExtensionsChromiumGettingStartedIndex]. To register your organization for Microsoft Edge program by associating your organization’s Azure Active Directory account with your Microsoft account on Partner Center, navigate to [Add and Manage users][AddandManageUsers]
 
 <!-- links -->  
+
+[AddandManageUsers]: ./aad-account.md "Add and Manage users | Microsoft Docs"
 
 [ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Getting started with Microsoft Edge (Chromium) extensions | Microsoft Docs"  
 [ExtensionsChromiumPublishExtension]:  ./publish-extension.md "Publish an extension | Microsoft Docs"  
