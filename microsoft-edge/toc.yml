@@ -295,6 +295,8 @@
           items:
             - name: Developer registration
               href: extensions-chromium/publish/create-dev-account.md
+            - name: Add and manage users
+              href: extensions-chromium/publish/aad-account.md
             - name: Publish your extension
               href: extensions-chromium/publish/publish-extension.md
             - name: Update your extension
