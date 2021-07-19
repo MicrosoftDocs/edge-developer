@@ -1,5 +1,5 @@
 ---
-description: Learn how to register your organization for Microsoft Edge program on Partner Center
+description: Learn how to add and manage users from your organization on to the Microsoft Edge program
 title: Register your organization for Microsoft Edge program on Partner Center
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
 ---
 
-# Register your organization for Microsoft Edge program on Partner Center
+# Add and manage users from your organization on to the Microsoft Edge program
 
 To add and manage users in Microsoft Edge program to manage extensions, you can now associate your Partner Center account with your organization's Azure Active Directory.
 
