@@ -330,7 +330,7 @@ Next to **User agent**, clear the **Select automatically** checkbox.  Then, choo
 
 ## Set user agent client hints
 
-If your site employs [user agent client hints](https://docs.microsoft.com/en-us/microsoft-edge/web-platform/user-agent-guidance), use the **Emulated Devices** panel to add devices and set user agent client hints.
+If your site employs [user agent client hints](../../web-platform/user-agent-guidance), use the **Emulated Devices** panel to add devices and set user agent client hints.
 
 1. Open the **contextual menu** (right-click), and choose **Inspect**.
 1. Choose **Settings** > **Devices**.
@@ -354,7 +354,7 @@ If your site employs [user agent client hints](https://docs.microsoft.com/en-us/
 
 1. Select **Add**. The new device displays in a selected state at the top of the **Emulated Devices** list.
 
-You may also set user agent client hints in [Network Analysis reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference).
+You may also set user agent client hints in [Network Analysis reference](../devtools-guide-chromium/network/reference).
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 

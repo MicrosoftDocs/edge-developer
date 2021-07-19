@@ -39,7 +39,7 @@ To override the [user agent][MDNUserAgent] string from Microsoft Edge DevTools:
     :::image-end:::  
     
 1. Choose a user agent from the drop-down list or enter a custom user agent.
-1. Choose **User agent client hints** to view and  change these values as described in [Network Analysis reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference).
+1. Choose **User agent client hints** to view and  change these values as described in [Network Analysis reference](../network/reference).
     
 ## Getting in touch with the Microsoft Edge DevTools team  
 

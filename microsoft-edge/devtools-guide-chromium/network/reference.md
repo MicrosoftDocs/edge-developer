@@ -162,7 +162,7 @@ To manually override the user agent, use the following steps.
 
 ## Set user agent client hints
 
-If your site employs [user agent client hints](https://docs.microsoft.com/en-us/microsoft-edge/web-platform/user-agent-guidance), use the **Network conditions** panel to provide different user agent client hints.
+If your site employs [user agent client hints](../../web-platform/user-agent-guidance), use the **Network conditions** panel to provide different user agent client hints.
 
 1. Open the **contextual menu** (right-click), and choose **Inspect**.
 1. Choose **Network** > **Network conditions**.
@@ -186,7 +186,7 @@ If your site employs [user agent client hints](https://docs.microsoft.com/en-us/
 1. Select **Update**. 
 1. To verify changes, choose **Console** and type `navigator.userAgentData`. Expand the results as needed to view changes to user agent data.
 
-You may also set user agent client hints in [Emulate mobile devices in Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/).  
+You may also set user agent client hints in [Emulate mobile devices in Microsoft Edge](../device-mode/).  
 
 ## Filter requests  
 
