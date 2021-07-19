@@ -26,7 +26,7 @@ keywords: microsoft edge, web developement, f12 tools, devtools
 
 In this tutorial, you learn how to use CSS to style a web page.  You also learn how to use Microsoft Edge DevTools to experiment with CSS changes.  
 
-The following article is the second tutorial in a series of tutorials that teaches you the basics of web development and Microsoft Edge DevTools.  You gain hands-on experience by actually building your own website.  You do not have to complete the first tutorial before following the second.  [Set up your code](#set-up-your-code) shows you how to get set up.  
+The following article is the second tutorial in a series of tutorials that teaches you the basics of web development and Microsoft Edge DevTools.  You gain hands-on experience by actually building your own website.  You don't have to complete the first tutorial before following the second.  [Set up your code](#set-up-your-code) shows you how to get set up.  
 
 > [!NOTE]
 > This tutorial is designed for absolute beginners and focuses on both the **fundamentals of web development** and the basics of using DevTools to experiment with CSS.  If you want a tutorial that only focuses on DevTools, navigate to [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].  
@@ -37,7 +37,7 @@ At the beginning of the tutorial, your site should look like the following figur
    What your site currently looks like  
 :::image-end:::  
 
-After you complete the tutorial, you site should look like the following figure.  
+After you complete the tutorial, your site should look like the following figure.  
 
 :::image type="complex" source="../media/beginners-css-intro2.msft.png" alt-text="What your site should look like at the end of the tutorial" lightbox="../media/beginners-css-intro2.msft.png":::
    What your site should look like at the end of the tutorial  
@@ -51,13 +51,13 @@ Follow this tutorial to better understand the following concepts and tasks.
 *   How to use Microsoft Edge DevTools to experiment with CSS.  
 *   The difference between CSS and CSS frameworks.  
 
-You are building a real website.  
+You're building a real website.  
 
 ## Prerequisites  
 
 Before attempting this tutorial, complete the following prerequisites.  
 
-*   Complete [Get Started with HTML and the DOM][DevtoolsBeginnersHtml] or make sure that you have an understanding of HTML and the DOM similar to what is taught in that tutorial.  
+*   Complete [Get Started with HTML and the DOM][DevtoolsBeginnersHtml] or make sure that you have understanding of HTML and the DOM already.  
 *   Download the [Microsoft Edge][MicrosoftEdgeInsider] web browser.  The following tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.  
 
 ## Set up your code  
@@ -79,7 +79,7 @@ To create your site, you must first complete the following actions to set up you
        The Project Options menu  
     :::image-end:::  
 
-1.  Choose **Remix Project**.  Glitch creates a copy of the project that you are able to edit.  
+1.  Choose **Remix Project**.  Glitch creates a copy of the project that you can edit.  
     
     > [!NOTE]
     > Glitch generates a random name for the new project.  
@@ -118,7 +118,7 @@ Complete the following actions to use **inline styles** to apply styles to a sin
        Open `index.html` in the editing tab  
     :::image-end:::  
     
-1.  Add `style="background-color: aliceblue;"` to your `<nav>`.  In the code block below, the fourth line of code is the one you need to change.  The rest is just there, so you are able to ensure that you are putting the new code in the right place.  
+1.  Add `style="background-color: aliceblue;"` to your `<nav>`.  In the code block below, the fourth line of code is the one you need to change.  The rest is here to ensure you are putting the code in the right place.  
     
     ```html
     <header>
@@ -138,7 +138,7 @@ Complete the following actions to use **inline styles** to apply styles to a sin
        The background color behind the **Home** and **Contact** links is now blue  
     :::image-end:::  
     
-## Re-use styles on a single page with internal stylesheets  
+## Reuse styles on a single page with internal stylesheets  
 
 In a previous code snippet, an inline style applied a style to a single `<p>` tag.  
 
@@ -148,7 +148,7 @@ In a previous code snippet, an inline style applied a style to a single `<p>` ta
 </p>
 ```  
 
-What if you wanted all of the `<p>` elements on your webpage to be styled the same way?  You have to copy and paste the code into every single `<p>` tag on your site.  That is a lot of time and effort.  And, if you needed to make an edit, you have to change every tag again.  Complete the following actions to use an **Internal stylesheet** to write your CSS once so that it applies to multiple elements.  
+What if you wanted all of the `<p>` elements on your webpage to be styled the same way?  You would have to copy and paste the code into every single `<p>` tag on your site, which would require a lot of time and effort.  If you needed to make an edit, you would have to change every tag again.  Complete the following actions to use an **Internal stylesheet** to write your CSS once so that it applies to multiple elements.  
 
 1.  In the live tab, choose **Contact** to navigate to the contact page.  Notice the font of **Home** and **Contact**.  
     
@@ -157,7 +157,7 @@ What if you wanted all of the `<p>` elements on your webpage to be styled the sa
     :::image-end:::  
     
 1.  In the **editor tab**, open `contact.html`.  
-1.  Add the following code to `contact.html`.  Remember, the lines starting with `<style>` and ending with `</style>` are what you need to add.  The other code is just there so you know where to put the new code.  
+1.  Add the following code to `contact.html`.  Remember, the lines starting with `<style>` and ending with `</style>` are what you need to add.  The other code is here to know where to put the new code.  
     
     ```html
     ...
@@ -211,7 +211,7 @@ Internal stylesheets apply styles using **selectors**.  Selectors are patterns t
       `font-family`  
    :::column-end:::
    :::column span="2":::
-      The property describes a general way that you are able to change the style of the element.  
+      The property describes which style of the element should be changed.  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -226,7 +226,7 @@ Internal stylesheets apply styles using **selectors**.  Selectors are patterns t
    :::column-end:::
 :::row-end:::  
 
-For example, `font-family: 'Courier New', Courier, serif` gives the browser the following instruction:  "Set the font of elements that match the pattern `li a` to `'Courier New'`.  If that font is not available, use `Courier`.  If that is not available, use `serif`."  
+For example, `font-family: 'Courier New', Courier, serif` gives the browser the following instruction:  "Set the font of elements that match the pattern `li a` to `'Courier New'`.  If that font isn't available, use `Courier`.  If that isn't available either, use `serif`."  
 
 ### Add multiple selectors to a ruleset  
 
@@ -262,11 +262,11 @@ Complete the following actions to use commas to add multiple selectors to a rule
     
 ## Experiment with DevTools  
 
-As you continue your journey to become an expert in web development, you may find that CSS is tricky.  You may write some CSS and expect it to display one way, but the browser does something completely different.  Microsoft Edge DevTools makes it easy to experiment with changes and immediately display how the changes affect the page.  
+As you continue your journey to become an expert in web development, you may find that CSS is tricky.  You might write some code that doesn't display what you intended.  Microsoft Edge DevTools makes it easy to experiment by displaying your changes in the page in real time.  
 
-### Add a declaration to an existing rulest in DevTools  
+### Add a declaration to an existing ruleset in DevTools  
 
-Complete the following actions to iterate on the style of an existing element, add a declaration to an existing ruleset.  
+Complete the following actions to add a declaration to an existing ruleset.  
 
 1.  Hover on the **Home** link, open the contextual menu \(right-click\), and choose **Inspect**.  
     
@@ -343,7 +343,7 @@ Complete the following actions to add new rulesets in DevTools.
        Replace `a` with `a:hover`  
     :::image-end:::  
     
-    `:hover` is a **pseudo-class**.  Use pseudo-classes for style elements that may enter special states.  For example, the `a:hover` style only takes effect when you are hovering over an `<a>` element.  
+    `:hover` is a **pseudo-class**.  Use pseudo-classes for style elements that may enter special states.  For example, the `a:hover` style only takes effect when you're hovering over an `<a>` element.  
     
 1.  Choose between the brackets to add a new declaration.  
 1.  Type `background-color` for the declaration name and select `Enter`.  
@@ -364,7 +364,7 @@ Complete the following actions to add new rulesets in DevTools.
        Hover on the Home link to reveal its green background  
     :::image-end:::  
     
-## Re-use styles across pages with external stylesheets  
+## Reuse styles across pages with external stylesheets  
 
 In a previous step, you added the following code snippet as an internal stylesheet to `contact.html`.  
 
@@ -382,7 +382,7 @@ In a previous step, you added the following code snippet as an internal styleshe
 ...
 ```  
 
-What if you wanted to style `index.html` the same way?  What if you had a large number of pages to which you wanted to apply your styles?  You have to copy and paste the internal stylesheet into every single web page on your site.  Complete the following actions to add an **External stylesheet** to allow you to write your CSS once and apply it to multiple pages.  
+What if you wanted to style `index.html` the same way?  What if you had a large number of pages to which you wanted to apply your styles?  You would have to copy and paste the internal stylesheet into every single web page on your site.  Complete the following actions to add an **External stylesheet** to allow you to write your CSS once and apply it to multiple pages.  
 
 1.  First, refresh the live tab to remove the changes that you made in DevTools.  
     
@@ -438,7 +438,7 @@ What if you wanted to style `index.html` the same way?  What if you had a large 
        Add code to `style.css`  
     :::image-end:::  
     
-    Ensure that you have created an external stylesheet. Your HTML is not aware that it exists.  
+    Ensure that you have created an external stylesheet. Your HTML isn't aware that it exists.  
     
 1.  Open `index.html`.  
 1.  Add `<link rel="stylesheet" href="style.css">` to your HTML.  
@@ -523,10 +523,10 @@ In the last section, you added Bootstrap to your web pages, which changed the fo
        Add classes in `contact.html`  
     :::image-end:::  
     
-1.  View your changes in the live tab.  There is a big, grey box around your header.  
+1.  View your changes in the live tab.  There is a large, grey box around your header.  
     
-    :::image type="complex" source="../media/beginners-css-jumbotron3.msft.png" alt-text="The header now has a big, grey box around it" lightbox="../media/beginners-css-jumbotron3.msft.png":::
-       The header now has a big, grey box around it  
+    :::image type="complex" source="../media/beginners-css-jumbotron3.msft.png" alt-text="The header now has a large, grey box around it" lightbox="../media/beginners-css-jumbotron3.msft.png":::
+       The header now has a large, grey box around it  
     :::image-end:::  
     
 ### Understand classes  
@@ -570,7 +570,7 @@ Complete the following actions to bootstrap and provide classes for aligning ele
        Add the `container-fluid` class  
     :::image-end:::  
     
-1.  Wrap your `<nav>` and `<main>` elements in `<div class="row">`.  Make sure to put `</div>` after `</main>` in order to properly close the new tag.  
+1.  Wrap your `<nav>` and `<main>` elements in `<div class="row">`.  Make sure to put `</div>` after `</main>` to properly close the new tag.  
     
     :::image type="complex" source="../media/beginners-css-align2.msft.png" alt-text="Add a row" lightbox="../media/beginners-css-align2.msft.png":::
        Add a row  
@@ -590,11 +590,11 @@ Complete the following actions to bootstrap and provide classes for aligning ele
     
 ## Next steps  
 
-Congratulations, you are done.  
+Congratulations, you're done.  
 
-*   The best way to get better at web development is to build more sites.  Do not worry about breaking stuff.  Just have fun and learn as much as possible along the way.  
+*   The best way to get better at web development is to build more sites.  Don't worry about breaking stuff.  Just have fun and learn as much as possible along the way.  
 *   To learn more about styling web pages, navigate to [Introduction to CSS][MDNCssFirstSteps].  
-*   To learn more about how to use DevTools to experiment with the CSS of a page, navigate to [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].  
+*   To learn more about how to experiment with CSS in DevTools, navigate to [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
