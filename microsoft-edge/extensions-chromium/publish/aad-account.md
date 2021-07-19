@@ -13,24 +13,16 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 
 To add and manage users in Microsoft Edge program to manage extensions, you can now associate your Partner Center account with your organization's Azure Active Directory.
 
-
-## Before you begin
-
-If you are new to Partner Center and don't have an account or if you have an existing commercial account with Partner Center, create a new [Microsoft account (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] to register with the Microsoft Edge program. To create a Microsoft account (Outlook/live/Hotmail), complete the following actions.
-1. Navigate to [account.microsoft.com][MicrosoftAccount].
-1. Choose **Create a Microsoft account**.
-
-If you have a developer account registered on Partner center, use the corresponding Microsoft account (MSA) to sign into your developer account, and then enroll in the Microsoft Edge program.  
-
-Once the account is set up, continue with steps below to link your Azure AD tenants with this account for extension management.
-
 ## Step 1: Enrol into the Microsoft Edge program on Partner Center 
 
-Today the Microsoft Edge extensions platform **does not support enrolling directly** with a work or school account.
+If you are new to Partner Center and don't have an account or if you have an existing commercial account with Partner Center, create a new [Microsoft account (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] to register with the Microsoft Edge program. Follow the steps mentioned in the [Enroll in the Microsoft Edge program for Partner Center][DeveloperRegistration]. 
 
-1. **If you are already using your work account to log into Partner Centre**, you need to login as a Global Admin or Primary Owner. If you are not the owner, go to https://partner.microsoft.com/en-us/dashboard/account/v3/usermanagement and find out the primary owner of the account.
+1. If you have a developer account registered on Partner center, use the corresponding Microsoft account (MSA) to sign into your developer account, and then enroll in the Microsoft Edge program. Note that Microsoft Edge program on Partner Center **does not support enrolling directly** with a work or school account. 
+    1. **If you are already signed in into Partner Centre using your work account**, you need to login as a Global Admin or Primary Owner. If you are not the owner, go to https://partner.microsoft.com/en-us/dashboard/account/v3/usermanagement and find out the primary owner of the account.
     1. Verify that the primary owner is an MSA (Hotmail/Live/Outlook) user and contact them to register for the Microsoft Edge Add-ons program using steps outlined in the section [Enroll in the Microsoft Edge program for Partner Center][DeveloperRegistration].
     1. If your organization does not have an MSA (Hotmail/Live/Outlook) account as a primary owner, which may happen in case your organization has a commercial account on Partner Center, you will need to register for the Microsoft Edge program with an MSA account. Follow the steps mentioned in the [Enroll in the Microsoft Edge program for Partner Center][DeveloperRegistration].
+
+Once the account is set up, continue with Step 2 below to link your Azure AD tenants with this account for extension management.
 
 ## Step 2: Associate Azure Active Directory with your account
 
