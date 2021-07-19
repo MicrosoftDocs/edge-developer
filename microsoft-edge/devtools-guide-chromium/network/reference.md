@@ -162,7 +162,7 @@ To manually override the user agent, use the following steps.
 
 ## Set user agent client hints
 
-If your site employs [user agent client hints](../../web-platform/user-agent-guidance), use the **Network conditions** panel to provide different user agent client hints.
+If your site employs [user agent client hints](../../web-platform/user-agent-guidance.md), use the **Network conditions** panel to provide different user agent client hints.
 
 1. Open the **contextual menu** (right-click), and choose **Inspect**.
 1. Choose **Network** > **Network conditions**.
@@ -186,7 +186,7 @@ If your site employs [user agent client hints](../../web-platform/user-agent-gui
 1. Select **Update**. 
 1. To verify changes, choose **Console** and type `navigator.userAgentData`. Expand the results as needed to view changes to user agent data.
 
-You may also set user agent client hints in [Emulate mobile devices in Microsoft Edge](../device-mode/).  
+You may also set user agent client hints in [Emulate mobile devices in Microsoft Edge](../device-mode/index.md).  
 
 ## Filter requests  
 
@@ -398,7 +398,7 @@ Use the Network panel to analyze requests.
 
 ### Display a log of requests  
 
-Use the Requests table to display a log of all requests made while DevTools have been open.  To reveals more information about each item, choose or hover on requests.  
+Use the Requests table to display a log of all requests made while DevTools have been open.  To reveal more information about each item, choose or hover on requests.  
 
 :::image type="complex" source="../media/network-network-requests-table.msft.png" alt-text="The Requests table" lightbox="../media/network-network-requests-table.msft.png":::
    The Requests table  
@@ -553,7 +553,7 @@ To display the response body to a request, use the following steps.
 To display HTTP header data about a request, use the following steps.  
 
 1.  Choose the URL of the request, under the **Name** column of the Requests table.  
-1.  Choose the **Headers** psanel.  
+1.  Choose the **Headers** panel.  
 
 :::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="The Headers panel" lightbox="../media/network-resources-headers.msft.png":::
    The **Headers** panel  
@@ -561,7 +561,7 @@ To display HTTP header data about a request, use the following steps.
 
 #### Display HTTP header source  
 
-By default, the **Headers** panel shows header names alphabetically.  To dsiplay the HTTP header names in the order received, use the following steps.  
+By default, the **Headers** panel shows header names alphabetically.  To display the HTTP header names in the order received, use the following steps.  
 
 1.  Open the **Headers** panel for the request that interests you.  For more information, navigate to [Display HTTP headers](#display-http-headers).  
 1.  Choose **view source**, next to the **Request Header** or **Response Header** section.  
