@@ -124,7 +124,7 @@ Hybrid apps allow developers to enjoy the best of both worlds: the ubiquity and 
       Rely on an up-to-date version of Chromium with regular platform updates and security patches.  
    :::column-end:::
    :::column span="1":::
-      \(coming soon\)<!--remove "(coming soon)"?-->  Optionally package the Chromium bits in your app.  
+      Optionally package a specific version of the Chromium bits in your app.  
    :::column-end:::
    :::column span="1":::
       Add web components piece-by-piece to your app.  
