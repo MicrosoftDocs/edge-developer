@@ -8,6 +8,16 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
+<!-- Copyright Kayce Basques 
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+       https://www.apache.org/licenses/LICENSE-2.0
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.  -->
 # Apply color themes to Microsoft Edge DevTools  
 
 Various color themes can be applied to the DevTools. Themes affect the color of panes, buttons, and code syntax highlighting. Starting with [Microsoft Edge 93][WhatsNew93], DevTools offers several new themes from [Visual Studio Code][VSCode] such as Monokai and Solarized Dark.  
@@ -76,3 +86,14 @@ You can also use the [Command Menu][DevtoolsCommandMenu] to change themes.
 [DevtoolsCommandMenu]: ../command-menu/index.md "Command Menu | Microsoft Docs"  
 [WhatsNew93]: ../whats-new/2021/07/devtools.md "What's New In DevTools (Microsoft Edge 93) | Microsoft Docs"  
 [VSCode]: https://code.visualstudio.com  
+
+> [!NOTE]
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
