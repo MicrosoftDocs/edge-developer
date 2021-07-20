@@ -40,7 +40,7 @@ Dark themes:
 - Solarized Dark  
 - Tomorrow Night Blue  
 
-Theme options appear in DevTools **Settings**.
+### Changing theme from Settings  
 
 1.  Choose **Settings** (cog icon) from the toolbar.  You may also open **Settings** by selecting `F1`.  
 
@@ -54,13 +54,13 @@ Theme options appear in DevTools **Settings**.
        Selecting a theme in **Preferences**  
     :::image-end:::  
 
-## Changing theme from the command menu  
+### Changing theme from the command menu  
 
 You can also use the [Command Menu][DevtoolsCommandMenu] to change themes.  
 
 1.  [Open the Command Menu][DevtoolsCommandMenu].  
 1.  Type the word **theme**.
-1.  Choose the command for the theme you want to use, for example **Switch To Abyss theme**
+1.  Choose the command for the theme you want to use, for example **Switch to Abyss theme**
 1.  Select `Enter` to run the command.  
     
     :::image type="complex" source="./media/customize-theme-command-menu.png" alt-text="The list of themes in the command menu" lightbox="./media/customize-theme-command-menu.png":::

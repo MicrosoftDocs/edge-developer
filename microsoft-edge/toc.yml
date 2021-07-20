@@ -143,7 +143,7 @@
               items:
                 - name: Overview
                   href: devtools-guide-chromium/customize/index.md
-                - name: Theme
+                - name: Apply a theme
                   href: devtools-guide-chromium/customize/theme.md
                 - name: Change placement
                   href: devtools-guide-chromium/customize/placement.md
