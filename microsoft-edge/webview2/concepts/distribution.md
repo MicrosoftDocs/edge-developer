@@ -53,9 +53,9 @@ This section is expressed compactly in terms of the download page UI.
 Don't place this section too high up, because these are the How To artifacts developers use for the Evergreen or Fixed Version mode.
 todo: Reduce (constrain) the duplication here with later in the article, eg the **Evergreen Bootstrapper** section here overlaps with the later "Online-only deployment" section.
 -->
-## Downloading the Evergreen Runtime installer or Fixed Version Runtime
+## Understanding the options at the Runtime download page
 
-The [Download the WebView2 Runtime][Webview2Installer] section of the **Microsoft Edge WebView2** page provides several options for ensuring that the WebView2 Runtime is on client machines.
+The [Download the WebView2 Runtime][Webview2Installer] section of the **Microsoft Edge WebView2** page provides several options for ensuring that the WebView2 Runtime is on client machines.  Understanding the options at this page provides a good introduction, to help decide which approach you want to use.
 
 :::image type="complex" source="../media/runtime-distrib-options.png" alt-text="Options for distributing and updating the WebView2 Runtime" lightbox="../media/runtime-distrib-options.png":::
     Options for distributing and updating the WebView2 Runtime
@@ -67,7 +67,7 @@ The [Download the WebView2 Runtime][Webview2Installer] section of the **Microsof
 
     *   Download the bootstrapper (using the **Download** button in the **Bootstrapper** section) and then distribute the bootstrapper with your app.  In this approach, you package the bootstrapper with your app installer/updater or with your app itself, and invoke the bootstrapper that you included with your app.  This approach avoids dependency on Microsoft's CDN.  This approach only works with clients that are online.
 
-*  The **Evergreen Standalone Installer** section of the page provides a large, standalone Evergreen installer, for offline users.  In this approach, you package the standalone installer with your app installer/updater or app itself, and invoke the Evergreen Standalone installer.  This approach avoids dependency on Microsoft's CDN.  This approach works both with clients that are offline and online.
+*  The **Evergreen Standalone Installer** section of the page provides a large, standalone Evergreen installer, primarily for offline users.  In this approach, you package the standalone installer with your app installer/updater or app itself, and invoke the Evergreen Standalone installer.  This approach avoids dependency on Microsoft's CDN.
 
 *  The **Fixed Version** section of the page provides a Fixed Version runtime that you distribute along with your app.
 
