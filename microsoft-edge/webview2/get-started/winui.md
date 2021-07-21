@@ -17,7 +17,7 @@ In this article, get started creating your first WebView2 app and learn about th
 
 Ensure you install the following list of pre-requisites before proceeding.  
 
-*   [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on Windows 10 version 1803 \(build 17134\) or later.  For more information about Windows 10, navigate to [Windows Update: FAQ][MicrosoftSupport12373].  
+*   [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] (Beta, Dev, or Canary) installed on Windows 10 version 1803 \(build 17134\) or later.  For more information about Windows 10, navigate to [Windows Update: FAQ][MicrosoftSupport12373].  
     
     > [!NOTE]
     > The WebView team recommends using the Canary channel and the minimum required version is 82.0.488.0.  

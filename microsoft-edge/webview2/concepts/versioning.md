@@ -3,7 +3,7 @@ description: Version Models used for Microsoft Edge WebView2
 title: Understand WebView2 SDK versions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/19/2021
+ms.date: 07/20/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -11,7 +11,10 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 ---
 # Understand WebView2 SDK versions
 
+The WebView team recommends that you use the Canary preview channel of Microsoft Edge when you use a prerelease version of the WebView2 SDK package, and use the Evergreen WebView2 Runtime when you use a release version of the WebView2 SDK package.
+
 New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge \(Chromium\) browser, which is approximately every six weeks.
+
 
 ## Key points
 
@@ -47,7 +50,18 @@ The NuGet package for the WebView2 SDK contains both a release and prerelease pa
 *  The _prerelease_ package of the SDK is a superset of the release package, with additional, [Experimental APIs](#experimental-apis) that are subject to change based on your feedback.  Avoid using the prerelease version of the WebView2 SDK to build production apps.
 
 
+<!-- possibly condense section, having added para3 -->
 ## Experimental APIs  
+
+<!-- from paragraph 3 of post from github issue 341: -->
+### Experimental APIs are not guaranteed to be forward-compatible
+
+Any experimental APIs in a pre-release SDK are not guaranteed to be forward-compatible.   When a _pre-release_ version of the WebView2 SDK is initially made available, that SDK only works with Microsoft Edge Canary.  After that, the SDK works with the Beta and Dev channels, for the development phase of your app.  A pre-release version of the WebView2 SDK is meant for developers to try out new APIs early and provide feedback before the new APIs are promoted to become stable, forward-compatible APIs.
+
+For a release version of your app, use a _Release_ version of the WebView2 SDK.  The _stable_ (non-experimental) APIs that are in that SDK version are forward-compatible.  
+
+The WebView2 SDK has been forward-compatible ever since version 1.  If your WebView2 app uses the current version of the SDK, your app continues to work even after the client's WebView2 Runtime is updated.  However, any experimental APIs that are in a version of the WebView2 SDK are not guaranteed to be forward-compatible.
+<!-- /para3 -->
 
 The WebView team is seeking feedback on experimental WebView2 APIs that might be included in future releases.  The experimental APIs are marked as `experimental` in the WebView2 SDK.<!--rather, are in an IExperimental interface?-->  To help you evaluate the experimental APIs and share your feedback, navigate to the [WebView feedback repo][GithubMicrosoftedgeWebviewfeedback].
 
@@ -71,14 +85,14 @@ To successfully load a WebView2 instance and use the GA WebView2 APIs, the clien
 For example, to support the core(todo: reword) APIs that are in version [1.0.622.22][Webview2ReleaseNotes1062222] of the WebView2 SDK,
 *   The development machine must have either:
     *   A [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] that has a build number of `86.0.616.0` or newer.
-    *   An [Insider Microsoft Edge channel][MicrosoftedgeinsiderDownload] that has a build number of `86.0.616.0` or newer.
+    *   A [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] that has a build number of `86.0.616.0` or newer.
 *   The client must have a [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] that has a build number of `86.0.616.0` or newer.
 
-The minimum version of the Runtime required by the WebView2 SDK for core(todo: reword) API support only changes when a breaking change occurs in the web platform.  For more information, navigate to [Minimum version of browser and Runtime for core(todo: reword) API support](../release-notes.md), in the WebView2 SDK Release notes.
+The minimum version of the Runtime required by the WebView2 SDK for core(todo: reword) API support only changes when a breaking change occurs in the web platform.  For more information, navigate to [Minimum version of the browser or Runtime to load WebView2](../release-notes.md#minimum-version-of-the-browser-or-runtime-to-load-webview2), in the WebView2 SDK Release notes.
 
 ### Minimum version for full API support
 
-To use the entire set of APIs that are in a version of the SDK, the client's installed WebView2 Runtime (or a non-stable channel of Microsoft Edge) needs to have a version number that is greater than or equal to the version number of the WebView2 SDK.  If an API is added to a version of the SDK, and your app uses that API, the API must be present in the client's installed version of the Runtime, or an exception will be thrown.
+To use the entire set of APIs that are in a version of the SDK, the client's installed WebView2 Runtime needs to have a version number that is greater than or equal to the version number of the WebView2 SDK.  If an API is added to a version of the SDK, and your app uses that API, the API must be present in the client's installed version of the Runtime, or an exception will be thrown.
 
 The minimum required Runtime version to support an API matches the build number (the third number) of the SDK version that the API was first introduced in.  For example, a new API or interface that was added in WebView2 SDK version [1.0.622.22][Webview2ReleaseNotes1062222] requires WebView2 Runtime version `86.0.622.0` or later.
 
@@ -87,10 +101,10 @@ To manually look up the Runtime or browser version requirements for full API sup
 In your WebView2 app, to programmatically test whether a recent API is supported, a best practice is to check for support by using `QueryInterface` or `try/catch`.  This approach is described below.
 
 
-## Testing against non-stable channels
+## Testing against Microsoft Edge preview channels
    
 > [!IMPORTANT]
-> When developing [Evergreen WebView2 apps][Webview2ConceptsDistributionEvergreenDistributionMode], regularly test your app against the latest non-stable Microsoft Edge channels and the WebView2 Runtime.  Because the web platform is constantly evolving, regular testing is the best way to ensure your app performs as intended.
+> When developing [Evergreen WebView2 apps][Webview2ConceptsDistributionEvergreenDistributionMode], regularly test your app against the latest Microsoft Edge preview channels and the WebView2 Runtime.  Because the web platform is constantly evolving, regular testing is the best way to ensure your app performs as intended.
 
 
 ## Testing whether the installed Runtime supports a recent API
@@ -101,8 +115,7 @@ When you develop a WebView2 app using a recent version of the WebView2 SDK, when
 
 *   **.NET and WinUI**.  Use `try/catch` and check for a `No such interface supported` exception when using methods, properties, and events that were added to more recent versions of the WebView2 SDK.  This exception likely indicates that the client's WebView2 Runtime is an older version that doesn't support that API.
     
-If an API is unavailable in the client's installed WebView2 Runtime, consider turning off the associated feature for the user, or inform the user that they must update the WebView2 Runtime to use the feature.
-
+If an API is unavailable in the client's installed WebView2 Runtime, consider providing graceful fallback for the associated feature for the user, or inform the user that they must update the WebView2 Runtime to use the feature.
 
 <!-- uncomment parts of this section?
 ## Versioning  

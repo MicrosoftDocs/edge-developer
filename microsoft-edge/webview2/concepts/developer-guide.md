@@ -21,9 +21,9 @@ Ensure the Evergreen WebView2 Runtime is installed before using your WebView2 ap
 
 ## Run compatibility tests regularly when using the Evergreen WebView2 Runtime
 
-When using the Evergreen WebView2 Runtime, the runtime updates automatically, so you must regularly run compatibility tests. Test the web content in the WebView2 control against the non-stable versions of Microsoft Edge, to ensure that your WebView2 application works as expected.
+When using the Evergreen WebView2 Runtime, the runtime updates automatically, so you must regularly run compatibility tests. Test the web content in the WebView2 control against [Microsoft Edge Insider (preview) Channels][MicrosoftedgeinsiderDownload] (Beta, Dev, or Canary), to ensure that your WebView2 application works as expected.
 
-This guidance is similar to the guidance that we give to web developers. For more information, navigate to [Stay compatible in Evergreen mode][Webview2ConceptsDistributionStayCompatibleEvergreenMode].
+This guidance is similar to the guidance that we give to web developers. For more information, navigate to [Test your app for forward-compatibility][Webview2ConceptsDistributionStayCompatibleEvergreenMode].
 
 ## Ensure APIs are supported by the installed WebView2 Runtime
 
@@ -62,7 +62,7 @@ For any WebView2 application, ensure you follow our recommended WebView2 securit
 <!-- links -->  
 [Webview2ConceptsDistributionDeployingEvergreenWebview2Runtime]: ../concepts/distribution.md#deploying-the-evergreen-webview2-runtime "Deploying the Evergreen WebView2 Runtime - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
 [Webview2ConceptsDistributionFixedVersionDistributionMode]: ../concepts/distribution.md#fixed-version-distribution-mode "Fixed Version distribution mode - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
-[Webview2ConceptsDistributionStayCompatibleEvergreenMode]: ../concepts/distribution.md#periodically-test-the-app-against-non-stable-browser-channels "Periodically test the app against non-stable browser channels - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
+[Webview2ConceptsDistributionStayCompatibleEvergreenMode]: ../concepts/distribution.md#test-your-app-for-forward-compatibility "Test your app for forward-compatibility - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
 [Webview2ConceptsSecurity]: ../concepts/security.md "Best practices for developing secure WebView2 applications | Microsoft Docs"  
 [Webview2ConceptsUserDataFolder]: ../concepts/user-data-folder.md "Manage the user data folder | Microsoft Docs"  
 [Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#testing-whether-the-installed-runtime-supports-a-recent-api "Testing whether the installed Runtime supports a recent API - Understand WebView2 SDK versions | Microsoft Docs"  
@@ -76,3 +76,4 @@ For any WebView2 application, ensure you follow our recommended WebView2 securit
 [Webview2ReferenceNewBrowserVersionAvailable]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable "CoreWebView2Environment.NewBrowserVersionAvailable Event | Microsoft Docs"  
 [WebView2ProcessFailedEvent]: /microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs "ICoreWebView2ProcessFailedEventArgs | Microsoft Docs"  
 
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
