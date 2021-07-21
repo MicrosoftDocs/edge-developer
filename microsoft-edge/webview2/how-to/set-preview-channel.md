@@ -169,7 +169,7 @@ If you want to make your application use a Microsoft Edge preview channel by usi
     <!-- where to put this? -->
     The registry location is: `{HKLM/HKCU}\Software\Policies\Microsoft\Edge\WebView2\{override name}`
 
-1.  Select **Browser Executable Folder** and then fill-in the **Browser Executable Folder** dialog box.  The following screenshots apply to setting the Browser Executable Folder.  Alternatively, select **Release Channel Preference**, which uses similar dialog boxes.
+1.  Select **Browser Executable Folder**.  The following screenshots apply to setting the **Browser Executable Folder**.  Alternatively, select **Release Channel Preference**, which uses similar dialog boxes.
 
     :::image type="complex" source="./media/browser-executable-folder.png" alt-text="Setting the Browser Executable Folder" lightbox="./media/browser-executable-folder.png":::
        Setting the **Browser Executable Folder**
@@ -177,7 +177,7 @@ If you want to make your application use a Microsoft Edge preview channel by usi
 
 1.  Select the **Show** button.<!--Select the **Next Setting** button. ?-->
 
-1.  Fill-in the **Show Contents** dialog box.
+1.  Fill-in the **Show Contents** dialog box.  In the **Value name** column, enter an asterisk to apply to all WebView2 apps, or a `.exe` filename to only affect the specified WebView2 app.  In the **Value** column, enter the path to your WebView2 app's executable file.
 
     :::image type="complex" source="./media/show-contents.png" alt-text="The Show Contents dialog box" lightbox="./media/show-contents.png":::
        The **Show Contents** dialog box
