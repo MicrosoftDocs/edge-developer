@@ -19,12 +19,14 @@ jobs:
           cd scripts
           npm install
       - name: Run script
-        run: node find-references-to-old-versions.js > issues.txt
+        run: |
+          cd scripts
+          node find-references-to-old-versions.js > issues.txt
       - name: Read the issues file
         uses: juliangruber/read-file-action@v1
         id: issues
         with:
-          path: ./issues.txt
+          path: ./scripts/issues.txt
       - name: Create an issue
         uses: JasonEtco/create-an-issue@v2
         env:
