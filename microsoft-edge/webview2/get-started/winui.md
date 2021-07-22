@@ -15,8 +15,8 @@ In this article, get started creating your first WebView2 app and learn about th
         
 ## Step 0 - Set Up Development Environment 
 
-1. Follow steps 1-4 of [Set up your development environment][WindowsAppsWinui3ConfigureYourDevEnvironment]. This guide describes the minimum system requirements, installing visual studio, enabling NuGet package source, and installing the WindowsAppSDK Extension for Visual Studio. 
-1. Install [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on Windows 10 version 1803 \(build 17134\) or later.  For more information about Windows 10, navigate to [Windows Update: FAQ][MicrosoftSupport12373].  
+1. Follow steps 1-4 of [Set up your development environment][WindowsAppsWinui3ConfigureYourDevEnvironment] to install Visual Studio, configure the NuGet package source, and install the Windows App SDK Extension for Visual Studio. 
+1. Install the [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on Windows 10 version 1803 \(build 17134\) or later.  For more information about Windows 10, navigate to [Windows Update: FAQ][MicrosoftSupport12373].  
 1.  To access all developer-specific Visual Studio features, turn on [Developer Mode][WindowsUwpGetStartedEnableYourDeviceForDevelopment].  
     
 ## Step 1 - Create Project  
@@ -172,7 +172,7 @@ To allow users to control the webpage that is displayed in your WebView2 control
     
 ## Step 4 - Navigation events  
 
-For this step we need to import the WebView2 Core library.
+For this step, we need to import the WebView2 Core library.
 
 Add the following line to the top of `MainWindow.xaml.cs`:
 ```csharp
