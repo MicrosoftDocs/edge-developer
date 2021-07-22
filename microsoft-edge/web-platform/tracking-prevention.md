@@ -17,7 +17,7 @@ Microsoft Edge currently offers users three levels of tracking prevention, which
 ![Three settings of tracking prevention][ImageThreeSettingsTrackingPrevention]  
 
 1.  **Basic** - The least restrictive level of tracking prevention that is designed for users who enjoy personalized advertisements and who do not mind being tracked on the web.  Basic only protects users against malicious trackers such as fingerprinters and cryptominers.  
-1.  **Balanced (Default)** - The default level of tracking prevention that is designed for users who want to see less creepy advertisements that follow them around the web while they browse.  Balanced aims to block trackers from sites that users never engage with while minimizing the risk of compatibility issues on the web.  
+1.  **Balanced (Default)** - The default level of tracking prevention that is designed for users who want to see less personalized advertisements while minimizing the risk of compatibility issues as they browse the web.  Balanced aims to block trackers from sites that users never engage with.  
 1.  **Strict** - The most restrictive level of tracking prevention that is designed for users who are okay trading website compatibility for maximum privacy.  
 
 The tracking prevention feature in Microsoft Edge is made up of three main components that work together to determine whether a specific resource from a website should be classified as a tracker and blocked.  The components are as follows:  
