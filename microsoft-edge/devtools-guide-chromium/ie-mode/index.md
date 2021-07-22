@@ -102,7 +102,7 @@ Applications that require IE mode for the website \(or app\) content to function
 <!-- links -->  
 
 [PlaywrightIndex]: ../../playwright/index.md "Playwright - Microsoft Edge Development | Microsoft Docs"
-
+[BlogsWindowsExperienceFutureOfIEEdge]: https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/ "The future of Internet Explorer on Windows 10 is in Microsoft Edge | Windows Experience blog"
 [PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326]: /previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85) "Using the F12 developer tools | Microsoft Docs"  
 
 [WebDriverIndex]: ../../webdriver-chromium/index.md "Use WebDriver (Chromium) for test automation - Microsoft Edge Development | Microsoft Docs"  
