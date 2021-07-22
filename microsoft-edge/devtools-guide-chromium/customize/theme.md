@@ -3,7 +3,7 @@ description: How to apply different color themes to Microsoft Edge DevTools.
 title: Apply color themes to Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -25,6 +25,9 @@ You can apply various color themes to DevTools, including several themes from [V
 :::image type="complex" source="./media/all-devtools-themes.png" alt-text="Various DevTools color themes" lightbox="./media/all-devtools-themes.png":::
    Various DevTools color themes 
 :::image-end:::  
+
+> [!NOTE]
+> Prior to [Microsoft Edge 93][WhatsNew93], DevTools only had a light and dark theme.  
 
 ## Available themes  
 
@@ -80,6 +83,7 @@ You can also use the Command Menu to change themes.
 
 <!-- links -->  
 [DevtoolsCommandMenu]: ../command-menu/index.md "Command Menu | Microsoft Docs"  
+[WhatsNew93]: ../whats-new/2021/07/devtools.md "What's New In DevTools (Microsoft Edge 93) | Microsoft Docs"  
 [VSCode]: https://code.visualstudio.com  
 
 > [!NOTE]
