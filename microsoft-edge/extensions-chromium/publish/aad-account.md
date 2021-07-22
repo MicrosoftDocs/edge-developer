@@ -30,7 +30,7 @@ You can use Azure Active Directory to add and manage additional users in Microso
 
 ### Associate Azure Active Directory with your account
 
-In order to add and manage account users, you must first associate your account with your organization's Azure Active Directory. If your organization already uses Office 365 or other business services from Microsoft, you already have Azure AD. Otherwise, you can create a new Azure AD tenant at no additional charge.
+In order to add and manage account users, you must first associate your account with your organization's Azure Active Directory. If your organization already uses Office 365 or other business services from Microsoft, you already have Azure AD. Otherwise, you can [create a new Azure AD tenant][CreateNewAzureAD] at no additional charge.
 
 See [Associate Azure Active Directory with your Partner Center account][AssociateAADWithPartnerCenterAccount] for more info. While the topic focuses on the Windows apps developer program, associating a tenant works the same way for the Microsoft Edge Program.
 
@@ -50,6 +50,8 @@ If you need help or assistance with associating your Azure AD account or other r
 
 [AssociateAADWithPartnerCenterAccount]: https://docs.microsoft.com/en-us/windows/uwp/publish/associate-azure-ad-with-partner-center
 
+[CreateNewAzureAD]: https://docs.microsoft.com/en-us/windows/uwp/publish/associate-azure-ad-with-partner-center#create-a-brand-new-azure-ad-to-associate-with-your-partner-center-account
+
 [UserManagementPartnerCenter]: https://partner.microsoft.com/en-us/dashboard/account/v3/usermanagement
 
 [AddAADUsersGroups]: https://docs.microsoft.com/en-us/windows/uwp/publish/add-users-groups-and-azure-ad-applications
@@ -61,3 +63,5 @@ If you need help or assistance with associating your Azure AD account or other r
 [MicrosoftAccount]:  https://account.microsoft.com/account "Microsoft account"
 
 [DeveloperRegistration]: ./create-dev-account.md "Register as a Microsoft Edge extensions developer | Microsoft Docs"
+
+
