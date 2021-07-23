@@ -195,7 +195,7 @@ These two approaches are described below.
 
 To make your application use a Microsoft Edge preview channel by using a registry override that sets the browser executable folder:
 
-1.  Open a command prompt.
+1.  Open a PowerShell terminal or PowerShell-enabled command prompt.
 
 1.  Modify and then run the following command:
 
@@ -215,7 +215,7 @@ To undo the above setting, run the following command:
 
 To make your application use a Microsoft Edge preview channel by using a registry override that changes the release channel preference by changing the order of searching for a channel:
 
-1.  Open a command prompt.
+1.  Open a PowerShell terminal or PowerShell-enabled command prompt.
 
 1.  Modify and then run the following command:
 
