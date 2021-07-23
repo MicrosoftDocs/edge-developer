@@ -72,12 +72,12 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 
 > [!NOTE]
 > For WinForms and WPF apps, in order to get full call stack for debugging purpose, native code debugging mode must be enabled.
-1.  Enable native code debugging for WebView2 apps.  
-   1.  In your WebView2 project, open the context menu \(right-click\), and choose **Properties**.  
-   1.  Choose **Debug**, ensure **Enable native code debugging** is selected.
-      :::image type="complex" source="./media/webview-enable-native-debug.png" alt-text="Visual Studio Native Code Debugging Configuration Property" lightbox="./media/webview-enable-native-debug.png":::
-         Visual Studio **Debug** Configuration Property 
-      :::image-end:::  
+> 1.  Enable native code debugging for WebView2 apps.  
+>    1.  In your WebView2 project, open the context menu \(right-click\), and choose **Properties**.  
+>    1.  Choose **Debug**, ensure **Enable native code debugging** is selected.
+>       :::image type="complex" source="./media/webview-enable-native-debug.png" alt-text="Visual Studio Native Code Debugging Configuration Property" lightbox="./media/webview-enable-native-debug.png":::
+>          Visual Studio **Debug** Configuration Property 
+>       :::image-end:::  
 
 ## Deferrals  
 
