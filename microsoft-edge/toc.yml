@@ -411,7 +411,7 @@
           href: web-platform/ie-to-microsoft-edge-redirection.md
         - name: Tracking prevention in Microsoft Edge
           href: web-platform/tracking-prevention.md
-        - name: How to detect Microsoft Edge in your website
+        - name: Detecting Microsoft Edge from your website
           href: web-platform/user-agent-guidance.md
         - name: Customize the password reveal button
           href: web-platform/password-reveal.md
