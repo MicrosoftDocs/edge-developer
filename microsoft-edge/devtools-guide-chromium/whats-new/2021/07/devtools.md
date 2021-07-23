@@ -89,34 +89,31 @@ For more information, navigate to Experimental features (link TBD).  todo.
 
 
 <!-- 4 -->
-<!-- pri1 -->
-## Change your DevTools language directly from Settings
+## Change the DevTools display language directly from Settings
 
 <!-- Title: DevTools Settings: now with language settings -->
-<!-- Subtitle: You can now skip the browser settings and update your DevTools language right from DevTools Settings. -->
+<!-- todo: does the informal language for Title work?  will that title look too much like programming lang instead of display lang?  how about: -->
+<!-- Title: DevTools Settings now includes display language -->
+<!-- Subtitle: You can now skip the browser settings and change the DevTools display language directly within DevTools Settings. -->
 
-Users have been able to match their browser language for a while, but changing it required changing the browser language or defaulting to English. Now users can easily switch their locale in DevTools Settings without messing with their browser settings.
+Previously, to change the display language in DevTools, you had to change the browser language.  Now you can easily switch the locale in DevTools **Settings**, without having to change your browser settings.  To do this, in DevTools, select the **Settings** \(![Settings icon](../../../media/settings-icon-dark.msft.png)\) icon, and then in **Preferences**, select a language from the **Language** drop-down list.
 
-:::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
-   __
+:::image type="complex" source="../../media/2021/07/settings-browser-ui-language.msft.png" alt-text="Changing the DevTools display language directly from DevTools **Settings**" lightbox="../../media/2021/07/settings-browser-ui-language.msft.png":::
+   Changing the DevTools display language directly from DevTools **Settings**
 :::image-end:::
-<!-- Instructions for screenshot
-(how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
-Navigate to DevTools (F12) > Settings > Preferences
-Click the drop-down for "Language" (it will likely be pre-populated with "Browser UI language") -->
 
-For more information, navigate to (TBD).  todo.
+For information about **Settings**, navigate to [Customize Microsoft Edge DevTools](../../../customize/index.md#settings).
 
-Issue: [\[l10n\] Add setting for users to choose DevTools locale](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756).
 <!-- todo: include issue link on each what's new item? -->
+<!-- Issue: [\[l10n\] Add setting for users to choose DevTools locale](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756). -->
+To review the history of this feature in the Chromium open-source project, navigate to Issue [2882756][CR2882756].
+<!-- todo: short link like https://crbug.com/2882756 doesn't work, issue not found.  this long link goes to "Chromium Gerritt", how to name that link? -->
 
 
 <!-- 5 -->
 ## Copy a declaration in the Styles pane for CSS-in-JS libraries
 
 <!-- Title: Better support for CSS-in-JS libraries -->
-<!-- todo: title was: "Better support for CSS-in-JS libraries in DevTools".  deleted "in DevTools", ok? -->
-
 <!-- Subtitle: Copy a single declaration or all declarations for a style rule from the Styles pane, formatted for JavaScript. -->
 
 Previously, when using CSS-in-JS libraries, you were not able to copy CSS declarations (a CSS property and value) formatted for JavaScript. You would have to edit the copied CSS to match JavaScript's syntax.
@@ -141,35 +138,46 @@ To learn more about viewing and changing CSS, navigate to [CSS reference](../../
 
 
 <!-- 6 -->
-<!-- pri1 -->
-## Smoother customization for User-Agent Client Hints
+## Easier customization of User-Agent Client Hints
 
 <!-- Title: Send as many (or as few) Client Hints as you want -->
-<!-- Subtitle: Updated User-Agent Client Hints UI in the Network conditions pane and under Emulated Devices settings -->
+<!-- Subtitle: Updated UI for User-Agent Client Hints in Emulated Devices settings and in the Network conditions tool. -->
 
-Client Hints makes browser information more accessible and improves site compatibility, but they can be time-consuming to test. We replaced the previous debugging experience so you can easily modify User Agent (UA) Client Hints through an accessible UI. You can also test custom UA Client Hints and UA Strings simultaneously.
+<!-- is this a clear contrast between previous vs. new UI/approach? -->
+User-Agent Client Hints makes browser information more accessible <!--than what; is the following correct?--> than a semicolon-delimited User-Agent string, and improves site compatibility.  However, User-Agent Client Hints can be time-consuming to test.  We replaced the previous debugging experience <!-- what was the experience? was it a couple UI controls, or a single UA string? --> so you can easily modify User-Agent Client Hints through a UI with multiple separate fields and controls.  You can also test your custom User-Agent Client Hints and a User-Agent string simultaneously.
 
-:::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
-   __
+To define User-Agent Client Hints for a custom device by using DevTools **Settings**:
+1. Navigate to **DevTools** > **Settings** \(![Settings icon](../../../media/settings-icon-dark.msft.png)\) > **Devices**.
+1. In the **Emulated Devices** settings page, select the **Add custom device** button.
+1. Expand the **User agent client hints** section.
+1. Fill-in some of the fields.
+
+:::image type="complex" source="../../media/2021/07/ua-client-hints-in-settings.msft.png" alt-text="Defining User-Agent Client Hints for a custom device in Settings" lightbox="../../media/2021/07/ua-client-hints-in-settings.msft.png":::
+   Defining User-Agent Client Hints for a custom device in **Settings**
 :::image-end:::
-<!-- Instructions for screenshot
 
-For Devices:
-1. Navigate to DevTools > Settings > Devices
-2. Click on "Add custom device..." button
-3. Select the drop-down arrow next to "User agent client hints"
-4. Fill out a few values, including Device Name (the benefit is that you don't have to fill out everything, so don't fill it out completely)
+To define User-Agent Client Hints for a custom device by using the **Network conditions** tool:
+1. In **DevTools**, select the **Network conditions** tool.  You might need to select **More Tools** (+) and then select **Network conditions**.
+1. In the **User agent** row, clear the **Use browser default** checkbox.
+1. Expand the **User agent client hints** section.
+1. Keep **Custom** selected in the drop-down list, and fill-in some of the fields.  Or, in the drop-down list, select an existing device, to automatically fill-in the fields based on an existing device.
 
-For Network Conditions:
-1. Navigate to DevTools > Network conditions
-2. Deselect "Use browser default" in the "User agent" row
-3. Select the drop-down arrow next to "User agent client hints"
-4. Fill out as many values as you want or use the drop-down with "Custom" pre-selected to fill it out based on an existing example. -->
+:::image type="complex" source="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png" alt-text="Defining User-Agent Client Hints for a custom device in the Network conditions tool" lightbox="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png":::
+   Defining User-Agent Client Hints for a custom device in the **Network conditions** tool
+:::image-end:::
 
-For more information about this feature, navigate to [How to detect Microsoft Edge in your website - Microsoft Edge Development | Microsoft Docs](../../../web-platform/user-agent-guidance.md).
-<!-- (will be updated with tooltip) -->
+For more information about this feature, navigate to [Detecting Microsoft Edge from your website][DevToolsWebPlatformUserAgentGuidance].
+<!-- (will be updated with tooltip) - what tooltip?
+Forthcoming version of the article: todo: compare the What's New screenshots vs this article:
+https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/?branch=pr-en-us-1337#set-user-agent-client-hints
+and
+https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference?branch=pr-en-us-1337#set-user-agent-client-hints
+no captures in:
+https://review.docs.microsoft.com/en-us/microsoft-edge/web-platform/user-agent-guidance?branch=pr-en-us-1296
+-->
 
-<!-- crbug link is avail -->
+<!-- keep this link?  it uses the short URL/site rather than Chrome Gerritt site, ok? -->
+To review the history of this feature in the Chromium open-source project, navigate to Issue [1174299][CR1174299].
 
 
 <!-- 7 -->
@@ -216,11 +224,11 @@ For more information about debugging Console errors, navigate to [Debug errors r
 ## Copy as PowerShell in the Network tool now includes cookies
 
 <!-- Title: Generate PowerShell commands for network requests in the Network tool -->
-<!-- Subtitle: The Copy as PowerShell context menu option now correctly sets the user agent string and cookies when generating PowerShell network requests. -->
+<!-- Subtitle: The Copy as PowerShell context menu option now correctly sets the user-agent string and cookies when generating PowerShell network requests. -->
 
 Previously, in the Network tool, the Copy > Copy as PowerShell context menu option did not include cookies when generating a PowerShell command for a given network request in the Network Activity Log. This meant that the generated PowerShell command could not successfully make the same network request if cookies were required.
 
-Now in Microsoft Edge version 93, the Copy as PowerShell context menu option correctly sets the user agent string and cookies that were observed by the DevTools. The generated PowerShell command can now successfully make the same network request that was observed by the DevTools, even to servers that depend on cookies.
+Now in Microsoft Edge version 93, the Copy as PowerShell context menu option correctly sets the user-agent string and cookies that were observed by the DevTools. The generated PowerShell command can now successfully make the same network request that was observed by the DevTools, even to servers that depend on cookies.
 
 :::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
    __
@@ -296,7 +304,13 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 
 <!-- links -->
+[DevToolsWebPlatformUserAgentGuidance]: ../../../../web-platform/user-agent-guidance.md "Detecting Microsoft Edge from your website | Microsoft Docs"
 <!-- external links -->
+[CR1174299]: https://crbug.com/1174299 "Issue 1174299: UA Client Hints dropped when overriding UA string via Chrome DevTools' Network conditions tab | Chromium bugs"
+<!-- = long-form link https://bugs.chromium.org/p/chromium/issues/detail?id=1174299  -->
+
+[CR2882756]: https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756 "Issue 2882756: \[l10n\] Add setting for users to choose DevTools locale | Chromium bugs"
+
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
 
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"
