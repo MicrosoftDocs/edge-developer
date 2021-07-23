@@ -30,9 +30,7 @@ The only exception is for the `Content` property of `CoreWebView2WebResourceRequ
 
 ## Re-entrancy  
 
-Callbacks including event handlers and completion handlers run serially.  
-After you run an event handler and begin a message loop, you're unable to run any event handler or completion callback in a re-entrant manner.  
-If the app creates a nested message loop or modal UI synchronously within a WebView event handler, this would lead to attempted reentrancy, which isn't supported in WebView2 and would leave the event handler in the stack indefinitely.
+Callbacks including event handlers and completion handlers run serially. After you run an event handler and begin a message loop, you're unable to run any event handler or completion callback in a re-entrant manner. If the app creates a nested message loop or modal UI synchronously within a WebView event handler, this would lead to attempted reentrancy, which isn't supported in WebView2 and would leave the event handler in the stack indefinitely.
 
 ```csharp
 private void Btn_Click(object sender, EventArgs e)
