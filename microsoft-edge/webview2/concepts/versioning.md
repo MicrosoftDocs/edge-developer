@@ -66,7 +66,7 @@ The WebView2 SDK has been forward-compatible ever since version 1.  If your WebV
 The WebView team is seeking feedback on experimental WebView2 APIs that might be included in future releases.  The experimental APIs are marked as `experimental` in the WebView2 SDK.<!--rather, are in an IExperimental interface?-->  To help you evaluate the experimental APIs and share your feedback, navigate to the [WebView feedback repo][GithubMicrosoftedgeWebviewfeedback].
 
 > [!CAUTION]
-> Avoid using the experimental APIs in production apps.  Experimental APIs might be introduced, modified, and removed from a particular SDK version.
+> Experimental APIs may be introduced, modified, and removed from SDK to SDK.  Avoid using the experimental APIs in production apps.  After the release of an API as stable and public, Microsoft supports the experimental version of that API for two releases in a deprecated state. 
 
 > [!NOTE]
 > Experimental APIs might not be available in your installed version of the WebView2 Runtime.  
