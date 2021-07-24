@@ -243,26 +243,35 @@ You may also set network throttling from the **Performance** panel.
     
 ## Override geolocation  
 
-:::row:::
-   :::column span="":::
-      If your page depends on geolocation information from a mobile device to render properly, provide different geolocations using the geolocation overriding UI.  
+ If your page depends on geolocation information from a mobile device to render properly, provide different geolocations using the geolocation overriding UI.
 
+:::row:::
+   :::column span="":::       
       1.  Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Sensors**.  
+         
+   :::column-end:::
+   :::column span="":::
+
+      1.  Open the Command Menu by selecting `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
+      1. Type `Sensors`, and choose **Show Sensors**.  
+            
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::       
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensors for geolocation" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
          **Sensors** for geolocation  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Open the Command Menu.  
-          *   Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
-      1. Type `Sensors`, and choose **Show Sensors**.  
-      
+     
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Show Sensors for geolocation" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
          **Show Sensors** for geolocation  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
+
 
 On the **Sensors** panel, you may select one of the preset locations included in DevTools using the **Location** drop-down menu.  To enter a custom location, choose **Other…** and enter the coordinates of your custom location.  To test your page in an error state when location information is unavailable, choose **Location unavailable**.  
 
@@ -272,20 +281,30 @@ On the **Sensors** panel, you may select one of the preset locations included in
 
 ## Set orientation  
 
+If your page depends on orientation information from a mobile device to render properly, open the orientation UI.  
+
 :::row:::
    :::column span="":::
-      If your page depends on orientation information from a mobile device to render properly, open the orientation UI.  
 
       1.  Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Sensors**.  
+      
+      
+   :::column-end:::
+   :::column span="":::
+      1.  Open the Command Menu by selecting `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
+      1. Type `Sensors`, and choose **Show Sensors**.  
+           
+   :::column-end:::
+:::row-end:::  
+
+:::row:::
+   :::column span="":::
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensors for orientation" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
          **Sensors** for orientation  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Open the Command Menu.  
-          *   Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
-      1. Type `Sensors`, and choose **Show Sensors**.  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Show Sensors for orientation" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
          **Show Sensors** for orientation  
@@ -301,21 +320,30 @@ On the **Sensors** panel, you may select a preset orientation from the **Orienta
 
 ## Set user agent string  
 
+If your page depends on the user agent string from a mobile device to render properly, use the **Network conditions** panel to provide different user agent strings.  
+
 :::row:::
    :::column span="":::
-      If your page depends on the user agent string from a mobile device to render properly, use the **Network conditions** panel to provide different user agent strings.  
       
       1.  Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Network conditions**.  
-      
+           
+   :::column-end:::
+   :::column span="":::
+      1.  Open the Command Menu by selecting `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
+      1. Type `Network conditions`, and choose **Show Network conditions**.  
+           
+   :::column-end:::
+:::row-end:::  
+
+:::row:::
+   :::column span="":::
+            
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Network conditions entry in the More tools menu" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
          **Network conditions** entry in the **More tools** menu  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Open the Command Menu.  
-          *   Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
-      1. Type `Network conditions`, and choose **Show Network conditions**.  
-      
+            
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Show Network conditions" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
          **Show Network conditions**  
       :::image-end:::  
