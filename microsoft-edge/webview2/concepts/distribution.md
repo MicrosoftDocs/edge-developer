@@ -3,7 +3,7 @@ description: Distribution options when releasing an app using Microsoft Edge Web
 title: Distribute a WebView2 app and the WebView2 Runtime
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2021
+ms.date: 07/23/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -48,11 +48,7 @@ Cons:
 *  The Fixed Version WebView2 Runtime can't be installed by using an installer.
 
 
-<!--
-This section is expressed compactly in terms of the download page UI.
-Don't place this section too high up, because these are the How To artifacts developers use for the Evergreen or Fixed Version mode.
-todo: Reduce (constrain) the duplication here with later in the article, eg the **Evergreen Bootstrapper** section here overlaps with the later "Online-only deployment" section.
--->
+<!-- todo: Reduce duplication here with later in the article, eg the **Evergreen Bootstrapper** section here overlaps with the later "Online-only deployment" section. -->
 ## Understanding the options at the Runtime download page
 
 The [Download the WebView2 Runtime][Webview2Installer] section of the **Microsoft Edge WebView2** page provides several options for ensuring that the WebView2 Runtime is on client machines.  Understanding the options at this page provides a good introduction, to help decide which approach you want to use.
@@ -63,7 +59,7 @@ The [Download the WebView2 Runtime][Webview2Installer] section of the **Microsof
 
 *   The **Evergreen Bootstrapper** section of the page provides a small Evergreen runtime bootstrapper that runs on the client machine, for online users.  You can use the bootstrapper a couple different ways:
 
-    *   Link to the bootstrapper, using a link you obtain from the **Get the Link** button.  Your app uses this link to programmatically download the bootstrapper on the user's device and invoke the bootstrapper.  This approach avoids the need to package anything with your app.  This approach has a dependency on Microsoft's CDN.  This approach only works with clients that are online.
+    *   Link to the bootstrapper, using a link you obtain from the **Get the Link** button.  Your app uses this link to programmatically download the bootstrapper on the user's device and invoke the bootstrapper.  This approach avoids the need to package anything with your app.  This approach has a dependency on Microsoft's Content Delivery Network (CDN).  This approach only works with clients that are online.
 
     *   Download the bootstrapper (using the **Download** button in the **Bootstrapper** section) and then distribute the bootstrapper with your app.  In this approach, you package the bootstrapper with your app installer/updater or with your app itself, and invoke the bootstrapper that you included with your app.  This approach avoids dependency on Microsoft's CDN.  This approach only works with clients that are online.
 

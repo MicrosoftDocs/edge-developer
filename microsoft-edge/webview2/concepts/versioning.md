@@ -3,7 +3,7 @@ description: Version Models used for Microsoft Edge WebView2
 title: Understand WebView2 SDK versions
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2021
+ms.date: 07/23/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -30,7 +30,7 @@ When you use a WebView2 SDK that has a build number equal to or less than the We
 If you use the Evergreen Runtime, you can't guarantee that a client's Runtime has been updated to be equal to or greater than your SDK build number, because the Admin might have turned off updating of the WebView2 Runtime, or the client might be offline long-term.  Therefore, it's a good practice to wrap any calls to relatively new WebView2 APIs by using `QueryInterface` or `try-catch`.
 
 
-### Older explanation
+### Details
 <!-- todo: dissolve/merge with the above -->
 
 When you develop and distribute a WebView2 app, the client must at least have a version of the Runtime that can use the set of APIs in the WebView2 General Availability release (build 616) and create a WebView2.  The client ideally should have a version of the Runtime that supports all of the latest APIs that are in the SDK version you use to develop the app.  You must coordinate the WebView2 SDK version that you use for development, and the WebView2 Runtime version that's installed on client machines.

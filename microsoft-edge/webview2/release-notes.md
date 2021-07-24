@@ -3,7 +3,7 @@ description: Release notes for Microsoft Edge WebView2 SDK
 title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/20/2021
+ms.date: 07/23/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -24,7 +24,7 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
-<!-- todo: link, after main branch contains the following new article:
+<!-- todo: link, when article is available:
 To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to [Switch to a preview channel to test upcoming APIs and features](how-to/set-preview-channel.md).
 -->
 
