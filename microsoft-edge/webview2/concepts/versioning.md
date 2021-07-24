@@ -15,13 +15,11 @@ The WebView team recommends that you use the Canary preview channel of Microsoft
 
 New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge \(Chromium\) browser, which is approximately every six weeks.
 
-
-## Key points
-
+<!-- key points: -->
 To use the WebView2 APIs, 86.0.616.0 is the necessary (but not sufficient) minimum version of Microsoft Edge or the WebView2 Runtime.
 WebView2 APIs are forward-compatible; a WebView2 API works when using a WebView2 Runtime that has an equal or higher build number as the SDK build number in which the API was introduced.
-For example, if an API is introduced in SDK 1.0.900.0, that API would work with Runtime 94.0.1000.0, but not with Runtime 90.0.700.0.
-The build number is the third part of the four-part version number for the Webview2 SDK and for Microsoft Edge or the WebView2 Runtime.
+
+For example, if an API is introduced in SDK 1.0.900.0, that API would work with Runtime 94.0.1000.0, but not with Runtime 90.0.700.0.  The build number is the third part of the four-part version number for the Webview2 SDK and for Microsoft Edge or the WebView2 Runtime.
 
 Runtime 86.0.616.0 is a special release, because it is the General Availability release.  Any WebView2 API that was in the General Availability release (WebView2 SDK version 616) works with Runtime version 616 and later.
 
@@ -29,9 +27,8 @@ When you use a WebView2 SDK that has a build number equal to or less than the We
 
 If you use the Evergreen Runtime, you can't guarantee that a client's Runtime has been updated to be equal to or greater than your SDK build number, because the Admin might have turned off updating of the WebView2 Runtime, or the client might be offline long-term.  Therefore, it's a good practice to wrap any calls to relatively new WebView2 APIs by using `QueryInterface` or `try-catch`.
 
-
+<!-- todo: dissolve/merge section with the above -->
 ### Details
-<!-- todo: dissolve/merge with the above -->
 
 When you develop and distribute a WebView2 app, the client must at least have a version of the Runtime that can use the set of APIs in the WebView2 General Availability release (build 616) and create a WebView2.  The client ideally should have a version of the Runtime that supports all of the latest APIs that are in the SDK version you use to develop the app.  You must coordinate the WebView2 SDK version that you use for development, and the WebView2 Runtime version that's installed on client machines.
 
@@ -104,7 +101,9 @@ In your WebView2 app, to programmatically test whether a recent API is supported
 ## Testing against Microsoft Edge preview channels
    
 > [!IMPORTANT]
-> When developing [Evergreen WebView2 apps][Webview2ConceptsDistributionEvergreenDistributionMode], regularly test your app against the latest Microsoft Edge preview channels and the WebView2 Runtime.  Because the web platform is constantly evolving, regular testing is the best way to ensure your app performs as intended.
+> When developing Evergreen WebView2 apps, regularly test your app against the latest Microsoft Edge preview channels and the WebView2 Runtime.  Because the web platform is constantly evolving, regular testing is the best way to ensure your app performs as intended.
+
+For information about Evergreen WebView2 Runtime distribution, navigate to [Distribute a WebView2 app and the WebView2 Runtime][Webview2ConceptsDistribution].
 
 
 ## Testing whether the installed Runtime supports a recent API
@@ -116,6 +115,7 @@ When you develop a WebView2 app using a recent version of the WebView2 SDK, when
 *   **.NET and WinUI**.  Use `try/catch` and check for a `No such interface supported` exception when using methods, properties, and events that were added to more recent versions of the WebView2 SDK.  This exception likely indicates that the client's WebView2 Runtime is an older version that doesn't support that API.
     
 If an API is unavailable in the client's installed WebView2 Runtime, consider providing graceful fallback for the associated feature for the user, or inform the user that they must update the WebView2 Runtime to use the feature.
+
 
 <!-- uncomment parts of this section?
 ## Versioning  
@@ -130,12 +130,11 @@ Different versions of the WebView2 SDK can work with different versions of the c
 
 1.  Checking for failure from `QueryInterface` also accounts for cases where the WebView2 SDK is newer than the client's installed WebView2 Runtime and your app attempts to use an interface of which the installed Runtime is unaware.
 
-1.  When an interface is unavailable in the client's installed Runtime, consider disabling the associated feature if possible, or inform your users to update their WebView2 Runtime.
--->  
+1.  When an interface is unavailable in the client's installed Runtime, consider disabling the associated feature if possible, or inform your users to update their WebView2 Runtime.-->  
 
 
 <!--links -->  
-[Webview2ConceptsDistributionEvergreenDistributionMode]: ./distribution.md#evergreen-distribution-mode "Evergreen distribution mode - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
+[Webview2ConceptsDistribution]: ./distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
 [Webview2ReleaseNotes]: ../release-notes.md "Release notes for WebView2 SDK | Microsoft Docs"  
 [Webview2ReleaseNotes1062222]: ../release-notes.md#1062222 "1.0.622.22 - Release notes for WebView2 SDK | Microsoft Docs"   
 <!-- external links -->

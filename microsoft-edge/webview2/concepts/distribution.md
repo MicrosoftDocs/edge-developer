@@ -75,7 +75,7 @@ The Evergreen distribution mode is recommended for most apps.
 
 When distributing your WebView2 app, make sure that the WebView2 Runtime is present on the client machine.  This requirement applies to both the Evergreen and Fixed Version distribution modes.
 
-If you use the Fixed Version distribution mode, you can skip the next couple of sections and navigate to [Fixed Version distribution mode](#fixed-version-distribution-mode).
+If you use the Fixed Version distribution mode, you can skip the next couple of sections and navigate to [Details about the Fixed Version Runtime distribution mode](#details-about-the-fixed-version-runtime-distribution-mode).
 
 ### Runtime or browser support during development or production
 

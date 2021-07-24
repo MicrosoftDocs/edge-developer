@@ -450,9 +450,11 @@ This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or
 > [!IMPORTANT]
 > **Announcement**:  Win32 C/C++ WebView2 is now Generally Available \(GA\).  Starting this release, Release SDKs are forward-compatible.  For more information, navigate to [GA announcement blog post][WindowsBlogsMsedgedevEdgeWebview2GeneralAvailability].  
 
-*   [Evergreen WebView2 Runtime and installer][Webview2ConceptsDistributionUnderstandRuntimeInstaller] are GA.  Bootstrapper, downlink link for the Bootstrapper, and Standalone Installer for the Evergreen WebView2 Runtime are available on [Microsoft Edge WebView2][MicrosoftDeveloperMicrosoftEdgeWebView2].  Sample code for the installation workflow is also available in the [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain].  
-*   [Fixed Version mode][Webview2ConceptsDistributionFixedVersionDistributionMode] is available for developer preview.  
-    
+*   The Evergreen WebView2 Runtime and installer are GA.  The bootstrapper, the downlink link for the Bootstrapper, and the Standalone Installer for the Evergreen WebView2 Runtime are available on [Microsoft Edge WebView2][MicrosoftDeveloperMicrosoftEdgeWebView2].  Sample code for the installation workflow is also available in the [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain].
+*   Fixed Version mode is available for developer preview.
+
+For more information about the Runtime, Evergreen distribution, and Fixed Version distribution, navigate to [Distribute a WebView2 app and the WebView2 Runtime][Webview2ConceptsDistribution].
+
 
 ## 0.9.622.11  
 
@@ -490,7 +492,8 @@ This version of the WebView2 SDK requires Microsoft Edge version 86.0.579.0 or h
 ### General  
 
 *   > [!IMPORTANT]
-    > **Announcement**: Evergreen WebView2 Runtime and installer is released for preview.  For more information, navigate to [Understanding the WebView2 runtime][Webview2ConceptsDistributionUnderstandRuntimeInstaller].  
+    > **Announcement**: Evergreen WebView2 Runtime and installer is released for preview.  For more information, navigate to [Distribute a WebView2 app and the WebView2 Runtime][Webview2ConceptsDistribution].
+
     
 *   > [!IMPORTANT]
     > **Announcement**:  The following WebView2 SDK Versions are no longer supported after the next SDK release.  
@@ -582,7 +585,7 @@ This prerelease version of the WebView2 SDK requires Microsoft Edge version 84.0
 This version of the WebView2 SDK requires Microsoft Edge version 84.0.488.0 or higher.
 
 *   > [!IMPORTANT]
-    > **Announcement**:  Starting with the upcoming Microsoft Edge version 83, Evergreen WebView no longer targets the Stable browser channel.  Instead, it targets another set of binaries, branded [Evergreen WebView2 Runtime][Webview2ConceptsDistributionEvergreenDistributionMode], that you may chain-install through an installer the WebView team is currently developing.  For more information, navigate to [Distribute a WebView2 app and the WebView2 Runtime][Webview2ConceptsDistribution].  
+    > **Announcement**:  Starting with the upcoming Microsoft Edge version 83, Evergreen WebView no longer targets the Stable browser channel.  Instead, it targets another set of binaries, branded Evergreen WebView2 Runtime, that you can chain-install through an installer that the WebView team is currently developing.  For more information, navigate to [Distribute a WebView2 app and the WebView2 Runtime][Webview2ConceptsDistribution].  
     
 *   > [!IMPORTANT]
     > **Announcement**:  Moving forward, the WebView team releases two packages:  a prerelease package with experimental APIs \(for you to try out\) and a stable release package with stable APIs \(for your confidence\).  To learn about the differences, navigate to [Understanding browser versions and WebView2][Webview2ConceptsVersioning].  
@@ -761,8 +764,6 @@ Initial developer preview release.
 
 <!-- links -->  
 [Webview2ConceptsDistribution]: ./concepts/distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
-[Webview2ConceptsDistributionEvergreenDistributionMode]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution mode - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
-[Webview2ConceptsDistributionFixedVersionDistributionMode]: ./concepts/distribution.md#fixed-version-distribution-mode "Fixed Version distribution mode - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
 [Webview2ConceptsDistributionUnderstandRuntimeInstaller]: ./concepts/distribution.md#understanding-the-webview2-runtime "Understanding the WebView2 runtime - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
 [Webview2ConceptsEnterpriseGroupPoliciesForWebview2]: ./concepts/enterprise.md#group-policies-for-webview2 "Group policies for WebView2 - Managing WebView2 applications | Microsoft Docs"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"  
