@@ -3,7 +3,7 @@ description: Get Started with CSS
 title: "DevTools for beginners: Get started with CSS"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 07/26/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web developement, f12 tools, devtools
@@ -26,7 +26,7 @@ keywords: microsoft edge, web developement, f12 tools, devtools
 
 In this tutorial, you learn how to use CSS to style a web page.  You also learn how to use Microsoft Edge DevTools to experiment with CSS changes.  
 
-The following article is the second tutorial in a series of tutorials that teaches you the basics of web development and Microsoft Edge DevTools.  You gain hands-on experience by actually building your own website.  You don't have to complete the first tutorial before following the second.  [Set up your code](#set-up-your-code) shows you how to get set up.  
+This article is part of a series of tutorials that teaches you the basics of web development and Microsoft Edge DevTools.  You gain hands-on experience by actually building your own website.  You don't have to complete the previous tutorials before doing this one.  [Set up your code](#set-up-your-code) shows you how to get set up.  
 
 > [!NOTE]
 > This tutorial is designed for absolute beginners and focuses on both the **fundamentals of web development** and the basics of using DevTools to experiment with CSS.  If you want a tutorial that only focuses on DevTools, navigate to [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].  
@@ -55,36 +55,36 @@ You're building a real website.
 
 ## Prerequisites  
 
-Before attempting this tutorial, complete the following prerequisites.  
+Complete the following prerequisites before doing this tutorial.  
 
 *   Complete [Get Started with HTML and the DOM][DevtoolsBeginnersHtml] or make sure that you have understanding of HTML and the DOM already.  
 *   Download the [Microsoft Edge][MicrosoftEdgeInsider] web browser.  The following tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.  
 
 ## Set up your code  
 
-To create your site, you must first complete the following actions to set up your code.  
+To create your site, first do the following steps to set up your code.  
 
 > [!NOTE]
 > If you have already completed the first tutorial in the series, skip to the next section.  Continue using your code from the last tutorial, [Get Started with HTML and the DOM][DevtoolsBeginnersHtml].  
 
-1.  Open the [source code][GlitchCookedAmphibianIndex].  The in-focus tab of your browser is referenced as the **editing tab**.  
+1.  Open the [source code][GlitchCookedAmphibianIndex].  The tab of your browser that's currently selected is called the **editing tab**.  
     
     :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="The editing tab" lightbox="../media/beginners-css-setup1.msft.png":::
        The **editing** tab  
     :::image-end:::  
     
-1.  Choose **cooked-amphibian**.  A menu pops up.  
+1.  Select **cooked-amphibian**.  A menu pops up.  
     
     :::image type="complex" source="../media/beginners-css-setup2.msft.png" alt-text="The Project Options menu" lightbox="../media/beginners-css-setup2.msft.png":::
        The Project Options menu  
     :::image-end:::  
 
-1.  Choose **Remix Project**.  Glitch creates a copy of the project that you can edit.  
+1.  Select **Remix Project**.  Glitch creates a copy of the project that you can edit.  
     
     > [!NOTE]
     > Glitch generates a random name for the new project.  
     
-1.  Choose **Show** and choose **In a New Window**.  Another tab opens with a live view of your site.  The in-focus tab of your browser is referenced as the **live tab**.  
+1.  Select **Show** and then select **In a New Window**.  Another tab opens with a live view of your site.  The tab of your browser that's currently selected is called the **live tab**.  
     
     :::image type="complex" source="../media/beginners-css-setup3.msft.png" alt-text="The live tab" lightbox="../media/beginners-css-setup3.msft.png":::
        The **live tab**  
@@ -92,7 +92,7 @@ To create your site, you must first complete the following actions to set up you
 
 ## Understand CSS  
 
-**CSS** is a computer language that determines the layout and styling of web pages.  The following figure is a paragraph with a border.  
+**CSS** is a computer language that controls the layout and styling of web pages.  The following figure is a paragraph with a border.  
 
 :::image type="complex" source="../media/beginners-css-red_paragraph.msft.png" alt-text="The text has been styled with CSS" lightbox="../media/beginners-css-red_paragraph.msft.png":::
    The text has been styled with CSS  
@@ -106,11 +106,11 @@ The following code snippet is the HTML and CSS code used to create the paragraph
 </p>
 ```  
 
-`style="border: 1px dashed red; padding: 5px;"` probably looks new to you.  The rest should look familiar.  If not, complete [Get Started with HTML and the DOM][DevtoolsBeginnersHtml] before attempting the following sections.  
+The HTML attribute `style="border: 1px dashed red; padding: 5px;"` might look new to you.  The rest should look familiar.  If not, complete [Get Started with HTML and the DOM][DevtoolsBeginnersHtml] before attempting the following sections.  
 
 ## Add inline styles  
 
-Complete the following actions to use **inline styles** to apply styles to a single element.  
+You can use **inline styles** to apply styles to a single element.  
 
 1.  Go back to the editing tab and open `index.html`.  
     
@@ -118,7 +118,7 @@ Complete the following actions to use **inline styles** to apply styles to a sin
        Open `index.html` in the editing tab  
     :::image-end:::  
     
-1.  Add `style="background-color: aliceblue;"` to your `<nav>`.  In the code block below, the fourth line of code is the one you need to change.  The rest is here to ensure you are putting the code in the right place.  
+1.  Add the attribute `style="background-color: aliceblue;"` in your `<nav>` element.  In the code block below, the fourth line of code is the only one you need to change.  The other lines of code are shown here to help you put the new attribute in the right place.  
     
     ```html
     <header>
@@ -148,16 +148,16 @@ In a previous code snippet, an inline style applied a style to a single `<p>` ta
 </p>
 ```  
 
-What if you wanted all of the `<p>` elements on your webpage to be styled the same way?  You would have to copy and paste the code into every single `<p>` tag on your site, which would require a lot of time and effort.  If you needed to make an edit, you would have to change every tag again.  Complete the following actions to use an **Internal stylesheet** to write your CSS once so that it applies to multiple elements.  
+What if you wanted all of the `<p>` elements on your webpage to be styled the same way?  You would have to copy and paste the code into every single `<p>` tag on your site, which would require a lot of time and effort.  If you needed to make an edit, you would have to change every tag again.  Instead, in the next steps, you use an **Internal stylesheet** to write your CSS once, so that it applies to multiple elements.  
 
-1.  In the live tab, choose **Contact** to navigate to the contact page.  Notice the font of **Home** and **Contact**.  
+1.  In the live tab, select **Contact** to navigate to the contact page.  Notice the font of the **Home** and **Contact** links.  
     
     :::image type="complex" source="../media/beginners-css-internal1.msft.png" alt-text="The Contact page" lightbox="../media/beginners-css-internal1.msft.png":::
        The Contact page  
     :::image-end:::  
     
 1.  In the **editor tab**, open `contact.html`.  
-1.  Add the following code to `contact.html`.  Remember, the lines starting with `<style>` and ending with `</style>` are what you need to add.  The other code is here to know where to put the new code.  
+1.  Add the following code to `contact.html`.  Remember, the lines starting with `<style>` and ending with `</style>` are what you need to add.  The other code is shown here so you know where to put the new code.  
     
     ```html
     ...
@@ -176,7 +176,7 @@ What if you wanted all of the `<p>` elements on your webpage to be styled the sa
     ```  
     
 1.  Go back to the **live tab**.  
-1.  Choose **Contact** to go back to the contact page.  The font of **Home** and **Contact** has changed.  
+1.  Select **Contact** to go back to the contact page.  Notice the font of the **Home** and **Contact** links has changed.  
     
     :::image type="complex" source="../media/beginners-css-internal2.msft.png" alt-text="The font of the Home and Contact links has changed" lightbox="../media/beginners-css-internal2.msft.png":::
        The font of the **Home** and **Contact** links has changed  
@@ -230,7 +230,7 @@ For example, `font-family: 'Courier New', Courier, serif` gives the browser the 
 
 ### Add multiple selectors to a ruleset  
 
-A block of CSS code like the following code snippet is called a **ruleset**.  
+The following CSS code snippet is called a **ruleset**.  
 
 ```css
 li a {
@@ -238,7 +238,7 @@ li a {
 }
 ```  
 
-Complete the following actions to use commas to add multiple selectors to a ruleset.  
+The following steps describe how you can use commas to add multiple selectors to a ruleset.  
 
 1.  In the **editor tab**, open `contact.html`.  
 1.  After `li a` type `, h1`.  
@@ -254,7 +254,7 @@ Complete the following actions to use commas to add multiple selectors to a rule
     The previous code snippet tells the browser to style `<h1>` elements the same way that it styles elements that match the pattern `li a`.  
     
 1.  Navigate to the **live tab**.  
-1.  Choose the **Contact** link to go back to the contact page.  Now, **Contact Me!** has the same font as the navigation links.  
+1.  Select the **Contact** link to go back to the contact page.  Now, **Contact Me!** has the same font as the navigation links.  
     
     :::image type="complex" source="../media/beginners-css-multiple1.msft.png" alt-text="The text Contact Me!  now has the same font as the Home and Contact links" lightbox="../media/beginners-css-multiple1.msft.png":::
        The text **Contact Me!** now has the same font as the **Home** and **Contact** links  
@@ -266,9 +266,9 @@ As you continue your journey to become an expert in web development, you may fin
 
 ### Add a declaration to an existing ruleset in DevTools  
 
-Complete the following actions to add a declaration to an existing ruleset.  
+To add a declaration to an existing ruleset  
 
-1.  Hover on the **Home** link, open the contextual menu \(right-click\), and choose **Inspect**.  
+1.  Hover on the **Home** link, open the contextual menu \(right-click\), and select **Inspect**.  
     
     :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="Inspect the Home link" lightbox="../media/beginners-css-add1.msft.png":::
        Inspect the Home link  
@@ -293,7 +293,7 @@ Complete the following actions to add a declaration to an existing ruleset.
        :::column-end:::
     :::row-end:::  
     
-1.  Choose the empty line below `font-family: 'Courier New', Courier, Serif` to add a new declaration.  
+1.  Select the empty line below `font-family: 'Courier New', Courier, Serif` to add a new declaration.  
     
     :::image type="complex" source="../media/beginners-css-add4.msft.png" alt-text="Add a new declaration" lightbox="../media/beginners-css-add4.msft.png":::
        Add a new declaration  
@@ -313,9 +313,9 @@ Complete the following actions to add a declaration to an existing ruleset.
     
 ### Edit a declaration in DevTools  
 
-Complete the following actions to edit existing declarations in DevTools.  
+To edit existing declarations in DevTools  
 
-1.  Choose the magenta square next to `magenta`.  A color picker pops up.  
+1.  Select the magenta square next to `magenta`.  A color picker pops up.  
     
     :::image type="complex" source="../media/beginners-css-edit1.msft.png" alt-text="The Color Picker" lightbox="../media/beginners-css-edit1.msft.png":::
        The Color Picker  
@@ -329,9 +329,9 @@ Complete the following actions to edit existing declarations in DevTools.
     
 ### Add a new ruleset in DevTools  
 
-Complete the following actions to add new rulesets in DevTools.  
+To add new rulesets in DevTools  
 
-1.  Choose **New Style Rule** \(![New Style Rule](../media/new-style-rule-icon.msft.png)\) which is next to **.cls**.  An empty ruleset appears with `a` as the selector.  
+1.  Select **New Style Rule** \(![New Style Rule](../media/new-style-rule-icon.msft.png)\) which is next to **.cls**.  An empty ruleset appears with `a` as the selector.  
     
     :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="Add a new rule" lightbox="../media/beginners-css-rule1.msft.png":::
        Add a new rule  
@@ -345,7 +345,8 @@ Complete the following actions to add new rulesets in DevTools.
     
     `:hover` is a **pseudo-class**.  Use pseudo-classes for style elements that may enter special states.  For example, the `a:hover` style only takes effect when you're hovering over an `<a>` element.  
     
-1.  Choose between the brackets to add a new declaration.  
+1.  Select the empty area between the brackets to add a new declaration.  
+
 1.  Type `background-color` for the declaration name and select `Enter`.  
     
     :::image type="complex" source="../media/beginners-css-rule3.msft.png" alt-text="Type background-color" lightbox="../media/beginners-css-rule3.msft.png":::
@@ -382,7 +383,7 @@ In a previous step, you added the following code snippet as an internal styleshe
 ...
 ```  
 
-What if you wanted to style `index.html` the same way?  What if you had a large number of pages to which you wanted to apply your styles?  You would have to copy and paste the internal stylesheet into every single web page on your site.  Complete the following actions to add an **External stylesheet** to allow you to write your CSS once and apply it to multiple pages.  
+What if you wanted to style `index.html` the same way?  What if you had a large number of pages to which you wanted to apply your styles?  You would have to copy and paste the internal stylesheet into every single web page on your site.  The following steps describe how to add an **External stylesheet** to allow you to write your CSS once and apply it to multiple pages.  
 
 1.  First, refresh the live tab to remove the changes that you made in DevTools.  
     
@@ -408,13 +409,13 @@ What if you wanted to style `index.html` the same way?  What if you had a large 
        The inline style has been removed from the nav element  
     :::image-end:::  
     
-1.  Choose **New File**.  
+1.  Select **New File**.  
     
     :::image type="complex" source="../media/beginners-css-external5.msft.png" alt-text="The new file dialog" lightbox="../media/beginners-css-external5.msft.png":::
        The new file dialog  
     :::image-end:::  
     
-1.  Replace `cool-file.js` with `style.css` and choose **Add File**.  
+1.  Replace `cool-file.js` with `style.css` and select **Add File**.  
     
     :::image type="complex" source="../media/beginners-css-external6.msft.png" alt-text="Type style.css" lightbox="../media/beginners-css-external6.msft.png":::
        Type `style.css`  
@@ -467,7 +468,7 @@ What if you wanted to style `index.html` the same way?  What if you had a large 
        The home page  
     :::image-end:::  
     
-1.  Choose the **Contact** link to navigate to the contact page.  The contact page has the same formatting as the home page.  
+1.  Select the **Contact** link to navigate to the contact page.  The contact page has the same formatting as the home page.  
     
     :::image type="complex" source="../media/beginners-css-external11.msft.png" alt-text="The contact page" lightbox="../media/beginners-css-external11.msft.png":::
        The contact page  
@@ -476,6 +477,8 @@ What if you wanted to style `index.html` the same way?  What if you had a large 
 ## Use a CSS framework  
 
 **CSS frameworks** are collections of styles built by other developers that make it easier to create attractive web sites.  Instead of defining styles yourself, a framework provides you a collection of styles that you are able to use on your page elements.  
+
+Do the following steps to add the Bootstrap CSS framework to your page.  
 
 1.  Copy the following code:  
     
@@ -503,7 +506,7 @@ What if you wanted to style `index.html` the same way?  What if you had a large 
     
 ### Use a class  
 
-In the last section, you added Bootstrap to your web pages, which changed the fonts of some of the elements on your site.  CSS frameworks help you make major changes to your page with very little code.  Complete the following actions to change your header.  
+In the last section, you added Bootstrap to your web pages, which changed the fonts of some of the elements on your site.  CSS frameworks help you make major changes to your page with very little code.  Go through the following steps to use one of Bootstrap's classes to change your header.  
 
 1.  Copy the following code snippet.  
     
@@ -545,7 +548,7 @@ Classes let you assign collections of styles to arbitrary elements.  Use the fol
 One advantage of a class is that it lets you apply styles to whatever elements you want.  For example, suppose you want to set the background color of some `<p>` elements to purple, but not all `<p>` elements.  Use the following code snippet to define the style in a class.  
 
 ```css
-.custom-background {
+.my-class-name {
   background-color: purple;
 }
 ```  
@@ -554,14 +557,14 @@ Next, apply the class to only the `<p>` elements that you want to style.
 
 ```html
 <p>The text is not purple.</p>
-<p class="custom-background">The text is purple.</p>
+<p class="my-class-name">The text is purple.</p>
 <p>The text is not purple.</p>
-<p class="custom-background">The text is purple.</p>
+<p class="my-class-name">The text is purple.</p>
 ```  
 
 ### Align elements  
 
-Complete the following actions to bootstrap and provide classes for aligning elements.  
+Complete the following steps to use other Bootstrap classes that are useful for aligning elements.  
 
 1.  Go back to the editor tab and open `index.html`.  
 1.  Add `class="container-fluid"` to your `<body>` tag.  
@@ -590,7 +593,7 @@ Complete the following actions to bootstrap and provide classes for aligning ele
     
 ## Next steps  
 
-Congratulations, you're done.  
+Congratulations, you're done!  
 
 *   The best way to get better at web development is to build more sites.  Don't worry about breaking stuff.  Just have fun and learn as much as possible along the way.  
 *   To learn more about styling web pages, navigate to [Introduction to CSS][MDNCssFirstSteps].  
