@@ -29,17 +29,17 @@ The app info menu is what is shown when a user clicks the 3 dot settings menu in
 This change brings the settings menu more in line with what users expect from a desktop app experience and less like browser UI. 
 
 ### Updated App Info Menu
-:::image type="complex" source="/media/app-info.png" alt-text="Streamlined app info menu" lightbox="/media/app-info.png":::
+:::image type="complex" source="media/app-info.png" alt-text="Streamlined app info menu" lightbox="media/app-info.png":::
    Screen shot of the new streamlined app info menu
 :::image-end:::
 
 ### Privacy Menu
-:::image type="complex" source="/media/privacy-menu.png" alt-text="Privacy controls found in the dedicated Privacy menu" lightbox="/media/privacy-menu.png":::
+:::image type="complex" source="media/privacy-menu.png" alt-text="Privacy controls found in the dedicated Privacy menu" lightbox="media/privacy-menu.png":::
    Privacy controls found in the dedicated Privacy menu
 :::image-end:::
 
 ### More Tools Menu
-:::image type="complex" source="/media/more-tools.png" alt-text="Content related tools menu" lightbox="/media/more-tools.png":::
+:::image type="complex" source="media/more-tools.png" alt-text="Content related tools menu" lightbox="media/more-tools.png":::
    Content related tools now found in More tools menu
 :::image-end:::
 
