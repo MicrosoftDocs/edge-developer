@@ -1,5 +1,5 @@
 ---
-description: The More Tools button, in-context documentation to get started using the DevTools extension, increased support for screen readers in the Console, and more.
+description: PWA related New Features
 title: What's new in Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -10,7 +10,7 @@ keywords: microsoft edge, pwas, pwa, progressive web apps
 ---
 # What's New In Progressive Web Apps
 
-[!INCLUDE [contact DevTools team note](../includes/edge-whats-new-note.md)]
+[!INCLUDE [contact DevTools team note](/includes/edge-whats-new-note.md)]
 
 > [!TIP]
 > The **Microsoft Build 2021** conference was on May 25-27.  Here's a video from Build about the updates to PWA, DevTools and more:
@@ -29,17 +29,17 @@ The app info menu is what is shown when a user clicks the 3 dot settings menu in
 This change brings the settings menu more in line with what users expect from a desktop app experience and less like browser UI. 
 
 ### Updated App Info Menu
-:::image type="complex" source="../media/app-info.png" alt-text="Streamlined top level app info menu" lightbox="../media/app-info.png":::
+:::image type="complex" source="/media/app-info.png" alt-text="Streamlined top level app info menu" lightbox="/media/app-info.png":::
    Screen shot of the new streamlined app info menu
 :::image-end:::
 
 ### Privacy Menu
-:::image type="complex" source="../media/privacy-menu.png" alt-text="Privacy controls found in the dedicated Privacy menu" lightbox="../media/privacy-menu.png":::
+:::image type="complex" source="/media/privacy-menu.png" alt-text="Privacy controls found in the dedicated Privacy menu" lightbox="/media/privacy-menu.png":::
    Privacy controls found in the dedicated Privacy menu
 :::image-end:::
 
 ### More Tools Menu
-:::image type="complex" source="../media/more-tools.png" alt-text="Streamlined top level app info menu" lightbox="../media/more-tools.png":::
+:::image type="complex" source="/media/more-tools.png" alt-text="Streamlined top level app info menu" lightbox="/media/more-tools.png":::
    Content related tools now found in More tools menu
 :::image-end:::
 
@@ -59,18 +59,6 @@ Tabs for each tool have been reformatted to reduce the chance of accidentally cl
 
 Prior to Microsoft Edge version 92, in the **Console**, assistive technologies such as screen readers didn't announce autocomplete suggestions or the results of evaluated expressions. This has been fixed now.
 
-:::row:::
-    :::column:::
-        :::image type="complex" source="../../media/2021/05/screen-reader-support-in-console-autocomplete.msft.png" alt-text="In the Console, screen readers now announce the currently selected autocomplete suggestion" lightbox="../../media/2021/05/screen-reader-support-in-console-autocomplete.msft.png":::
-           In the **Console**, screen readers now announce the currently selected autocomplete suggestion
-        :::image-end:::
-    :::column-end:::
-    :::column:::
-        :::image type="complex" source="../../media/2021/05/screen-reader-support-in-console-evaluated-expression.msft.png" alt-text="In the Console, screen readers now announce the result of an evaluated expression" lightbox="../../media/2021/05/screen-reader-support-in-console-evaluated-expression.msft.png":::
-           In the **Console**, screen readers now announce the result of an evaluated expression
-        :::image-end:::
-    :::column-end:::
-:::row-end:::
 
 
 ## Source Order Viewer
@@ -82,9 +70,7 @@ You can now view the order of source elements overlaid on the rendered webpage, 
 
 The order of content in an HTML document is important for search engine optimization and accessibility.  CSS allows developers to create content that looks different in its on-screen order than the order in the HTML source document.  This is an accessibility problem, because screen-reader users could get a confusing experience.
 
-:::image type="complex" source="../../media/2021/05/source-order-viewer.msft.png" alt-text="Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page" lightbox="../../media/2021/05/source-order-viewer.msft.png":::
-   Activating the **Source Order Viewer** shows the order of the elements in the source as overlays on the page
-:::image-end:::
+
 
 For more information, navigate to [Test keyboard support using the Source Order Viewer](../../../accessibility/test-tab-key-source-order-viewer.md).
 
