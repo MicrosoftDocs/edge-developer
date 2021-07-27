@@ -1,34 +1,36 @@
 ---
-description: __, __, __, and more.
+description: Apply color themes from Visual Studio Code, debug DOM node memory leaks with the new Detached Elements tool, Microsoft Edge Developer Tools for Visual Studio Code now integrates with the Visual Studio Code Debugger workflow, and more.
 title: What's new in DevTools (Microsoft Edge 93)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/28/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # What's New In DevTools (Microsoft Edge 93)
 
-<!-- todo: what date to put? -->
-
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
-<!-- 1 -->
-## Apply themes from VS Code to Edge DevTools
+<!-- 1, done -->
+## Apply themes from Visual Studio Code to DevTools
 
-<!-- Title: Apply themes from VS Code to Edge DevTools -->
-<!-- Subtitle: You can now use some of the most popular color themes from VS Code, such as Monokai and Solarized Dark, in DevTools. -->
+<!-- Title: Apply themes from Visual Studio Code to DevTools -->
+<!-- Subtitle: You can now use some of the most popular color themes from Visual Studio Code, such as Monokai and Solarized Dark, in Microsoft Edge DevTools. -->
 
-In addition to the default light and dark themes, Edge DevTools now supports some of the most popular color themes from VS Code.  To select a color theme, navigate to **Settings** and then select a theme from the **Theme** dropdown list.  Available themes:
+In addition to the existing light and dark themes, Microsoft Edge DevTools now supports some of the most popular color themes from Visual Studio Code.  To select a color theme, navigate to **Settings** and then select a theme from the **Theme** dropdown list.
+
+:::image type="complex" source="../../media/2021/07/all-devtools-themes.msft.png" alt-text="Color themes for DevTools" lightbox="../../media/2021/07/all-devtools-themes.msft.png":::
+   Color themes for DevTools
+:::image-end:::
+
+The supported Visual Studio Code themes are:
 
 Light themes:
-*  Light+ (Default)
 *  Solarized Light
 *  Quiet Light
 
 Dark themes:
-*  Dark+ (Default)
 *  Abyss
 *  Kimbie Dark
 *  Monokai
@@ -37,33 +39,12 @@ Dark themes:
 *  Red
 *  Tomorrow Night Blue
 
-:::image type="complex" source="../../media/2021/07/all-devtools-themes.msft.png" alt-text="Color themes for DevTools" lightbox="../../media/2021/07/all-devtools-themes.msft.png":::
-   Color themes for DevTools
-:::image-end:::
-<!--
-Adjacent Twitter posts June 9:
-Image similar to the above: https://twitter.com/partytimeHXLNT/status/1402727209593409546?s=20
-Video showing selecting a different theme in Settings: https://twitter.com/partytimeHXLNT/status/1402757262825906178?s=20
--->
-
 For more information, navigate to [Apply color themes to Microsoft Edge DevTools](../../../customize/theme.md).
 
-
-<!-- 2 -->
-## New look-and-feel for Edge DevTools 
-
-<!-- Title: New look-and-feel for Edge DevTools -->
-<!-- Subtitle: The Edge DevTools has adopted Fluent UI, giving it a more modern look that better aligns with the rest of the Edge browser. -->
-
-Microsoft Edge DevTools has adopted [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/), giving buttons and menus a more modern look that better aligns with the rest of the Edge browser.
-
-:::image type="complex" source="../../media/2021/07/fluent-ui.msft.png" alt-text="DevTools implemented with Fluent UI design" lightbox="../../media/2021/07/fluent-ui.msft.png":::
-   DevTools implemented with Fluent UI design
-:::image-end:::
-<!-- screenshot the main UI of DevTools with the Sources tool open -->
+<!-- no crbug -->
 
 
-<!-- 3 -->
+<!-- 2, done -->
 ## Debug DOM node memory leaks with the new Detached Elements tool
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
@@ -71,32 +52,99 @@ Microsoft Edge DevTools has adopted [Fluent UI](https://developer.microsoft.com/
 <!-- Title: Introducing the Detached Elements tool -->
 <!-- Subtitle: Use the Detached Elements tool to find and fix DOM node memory leaks. -->
 
-A DOM node is considered "detached" when it is no longer attached to any element of the DOM but is still being retained in memory by Microsoft Edge. The browser cannot garbage collect (GC) the element, because some JavaScript is still referencing the element even though it's no longer on the page or is not longer a part of the DOM.
+A DOM node is considered "detached" when it is no longer attached to any element of the DOM but is still being retained in memory by Microsoft Edge. The browser cannot garbage-collect the element, because some JavaScript is still referencing the element even though it's no longer on the page or is not longer a part of the DOM.
 
-The new **Detached Elements** tool finds all of the detached elements on your page and displays them. You can expand and collapse the detached element to see the parent and child nodes that are also being retained. You can trigger the browser's garbage collection by selecting **Collect garbage** and validate that you have a memory leak when a detached element cannot be GC'd. And you can jump into JavaScript that's referencing the detached element by taking a heap snapshot with the **Analyze** button.
+The new **Detached Elements** tool finds all of the detached elements on your page and displays them. You can expand and collapse a detached element to see the parent and child nodes that are also being retained. You can trigger the browser's garbage collection by selecting **Collect garbage** and validate that you have a memory leak when a detached element cannot be garbage-collected. And you can jump into JavaScript that's referencing the detached element by taking a heap snapshot with the **Analyze** button.
+
+<!-- todo: comment-out or delete steps? -->
+1. In Microsoft Edge Canary, navigate to [Microsoft ToDo](https://to-do.office.com/tasks/inbox).
+1. Open DevTools, then select the **Settings** (gear) icon.
+1. Navigate to the **Experiments** section, then select the **Detached Elements** checkbox.
+1. Select **X** to close **Settings**.  Select `F12` twice to restart DevTools.
+1. Select the **+** (**More Tools**) button and then select **Detached Elements**.
+1. In the webpage, select **Get started**.  If prompted, select a user account to login.
+1. Select the **+** next to **Add a task**, and then select **ADD**.
+1. Select the task you created, select **Add due date**, select **Pick a date**, and then select a date from the calendar.  Then select **Save**.
+1. In DevTools, in the **Detached Elements** tool, select **Get Detached Elements**.
+1. If the **Analyze** button is grayed-out, add another task and date, then select **Get Detached Elements** again.
+1. Select the **Analyze** button in the toolbar and wait for the **Id** column to populate.
+1. In the **Id** column, select an ID.  The **Memory** tool opens in the bottom panel, and displays the retainers list.
+
+:::image type="complex" source="../../media/2021/07/detached-elements-tool.msft.png" alt-text="The Detached Elements tool" lightbox="../../media/2021/07/detached-elements-tool.msft.png":::
+   The **Detached Elements** tool
+:::image-end:::
+
+For more information, navigate to the **Detached Elements** section in [Experimental features](../../../experimental-features/index.md).
+<!-- todo: link to subheading in page, when available -->
+
+<!-- no crbug -->
+
+
+<!-- 3, need screenshot -->
+## Microsoft Edge Developer Tools for Visual Studio Code now integrates with the Visual Studio Code Debugger workflow
+
+<!-- Title: While debugging, launch the DevTools extension by selecting the Inspect button -->
+<!-- Subtitle: Microsoft Edge DevTools for Visual Studio Code now integrates seamlessly with the JavaScript debugging workflow in the editor. -->
+
+If you use the JavaScript debugging workflow in Visual Studio Code, you can now launch the DevTools extension by selecting the **Inspect** button.
+
+:::image type="complex" source="../../media/2021/07/inspect-button.msft.png" alt-text="The Inspect button in Visual Studio Code to launch the DevTools extension" lightbox="../../media/2021/07/inspect-button.msft.png":::
+   The **Inspect** button in Visual Studio Code to launch the DevTools extension
+:::image-end:::
+
+This feature integrates DOM and CSS debugging with the JavaScript debugging workflow in Visual Studio Code.  If you don't have the DevTools extension installed, when you select the **Inspect** button, Visual Studio Code will prompt you to install the extension seamlessly.
+
+Other new features are:
+*  More detailed documentation of the extension.
+*  Several bug fixes.
+*  The tools refresh automatically when you switch between different debugging targets.
+
+For more details, check the changelog file in the [vscode-edge-devtools repo](https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md).
 
 :::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
    __
 :::image-end:::
-<!-- See the work item; follow wiki instructions about "Detached Elements - Overview".
-Take the screenshot with the Memory tool in the drawer, and the Retainers section of the heap snapshot linking to a Calendar.tsx component from the ToDo folks.
+<!-- to plan & make screenshot, see videos -->
+<!-- todo: delete video links? -->
+Videos of this feature in action:
+*  Usage with the extension already installed: [EdgeDevTools Breakpoint Debugging Integration](https://www.youtube.com/watch?v=UqFOICZRPAo)
+*  Usage including automatically installing the extension: [Debugger Installing EdgeDevTools](https://www.youtube.com/watch?v=1-6fRdqyoA0)
 
-A video recording of this feature in action (1:11 long) is available at Microsoft Stream.  todo: link?
--->
+For more information, navigate to [Launching Edge DevTools from the JS Debugger workflow][GithubVscodeEdgeDevtoolsDebuggerIntegration].
 
-For more information, navigate to Experimental features (link TBD).  todo.
-<!-- Not found: PR for new section of Experimental Features doc for Detached Elements -->
+<!-- todo: link to PR articles if available (soon).  Else the github page will link to those -->
+
+Get the [Microsoft Edge Developer Tools for Visual Studio Code extension][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools].  Microsoft Visual Studio Code updates extensions automatically.  To manually update the version, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].
+
+You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools].
+
+<!-- no crbug -->
 
 
-<!-- 4 -->
+<!-- 4, done -->
+## New Fluent UI icons for DevTools
+
+<!-- Title: New look for buttons and menus in Microsoft Edge DevTools -->
+<!-- Subtitle: DevTools has adopted Fluent UI, giving it a more modern look that better aligns with the rest of the Microsoft Edge browser. -->
+
+Microsoft Edge DevTools has adopted [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/), giving buttons and menus a more modern look that better aligns with the rest of the Microsoft Edge browser.
+
+:::image type="complex" source="../../media/2021/07/fluent-ui.msft.png" alt-text="DevTools implemented with Fluent UI design" lightbox="../../media/2021/07/fluent-ui.msft.png":::
+   DevTools implemented with Fluent UI design
+:::image-end:::
+
+<!-- no crbug -->
+
+
+<!-- 5, done -->
 ## Change the DevTools display language directly from Settings
 
-<!-- Title: DevTools Settings: now with language settings -->
-<!-- todo: does the informal language for Title work?  will that title look too much like programming lang instead of display lang?  how about: -->
 <!-- Title: DevTools Settings now includes display language -->
 <!-- Subtitle: You can now skip the browser settings and change the DevTools display language directly within DevTools Settings. -->
 
-Previously, to change the display language in DevTools, you had to change the browser language.  Now you can easily switch the locale in DevTools **Settings**, without having to change your browser settings.  To do this, in DevTools, select the **Settings** \(![Settings icon](../../../media/settings-icon-dark.msft.png)\) icon, and then in **Preferences**, select a language from the **Language** drop-down list.
+Previously, to change the display language in DevTools, you had to change the browser language.  Now you can easily switch the locale in DevTools **Settings**, without having to change your browser settings.  To do this, open **Settings**, and then in **Preferences**, select a language from the **Language** drop-down list.
+
+For options for changing settings, navigate to [Customize Microsoft Edge DevTools](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/customize/).
 
 :::image type="complex" source="../../media/2021/07/settings-browser-ui-language.msft.png" alt-text="Changing the DevTools display language directly from DevTools **Settings**" lightbox="../../media/2021/07/settings-browser-ui-language.msft.png":::
    Changing the DevTools display language directly from DevTools **Settings**
@@ -104,13 +152,10 @@ Previously, to change the display language in DevTools, you had to change the br
 
 For information about **Settings**, navigate to [Customize Microsoft Edge DevTools](../../../customize/index.md#settings).
 
-<!-- todo: include issue link on each what's new item? -->
-<!-- Issue: [\[l10n\] Add setting for users to choose DevTools locale](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756). -->
 To review the history of this feature in the Chromium open-source project, navigate to Issue [2882756][CR2882756].
-<!-- todo: short link like https://crbug.com/2882756 doesn't work, issue not found.  this long link goes to "Chromium Gerritt", how to name that link? -->
 
 
-<!-- 5 -->
+<!-- 6, add easy screenshot -->
 ## Copy a declaration in the Styles pane for CSS-in-JS libraries
 
 <!-- Title: Better support for CSS-in-JS libraries -->
@@ -136,15 +181,18 @@ Now in Microsoft Edge version 93, you are able to copy a single CSS declaration 
 
 To learn more about viewing and changing CSS, navigate to [CSS reference](../../../css/reference.md).
 
+<!-- no crbug -->
 
-<!-- 6 -->
+
+<!-- 7, done -->
 ## Easier customization of User-Agent Client Hints
 
 <!-- Title: Send as many (or as few) Client Hints as you want -->
 <!-- Subtitle: Updated UI for User-Agent Client Hints in Emulated Devices settings and in the Network conditions tool. -->
 
-<!-- is this a clear contrast between previous vs. new UI/approach? -->
-User-Agent Client Hints makes browser information more accessible <!--than what; is the following correct?--> than a semicolon-delimited User-Agent string, and improves site compatibility.  However, User-Agent Client Hints can be time-consuming to test.  We replaced the previous debugging experience <!-- what was the experience? was it a couple UI controls, or a single UA string? --> so you can easily modify User-Agent Client Hints through a UI with multiple separate fields and controls.  You can also test your custom User-Agent Client Hints and a User-Agent string simultaneously.
+User-Agent Client Hints makes browser information more accessible than a semicolon-delimited User-Agent string, and improves site compatibility.  Initially, User-Agent Client Hints were time-consuming to test and debug.  There was less control over the client hints, and client hints had to be filled-in properly for the form to work.
+
+In this release, we redesigned the debugging experience so you can easily modify User-Agent Client Hints through a UI with multiple separate fields and controls.  Also, you can now test your custom User-Agent Client Hints and a User-Agent string simultaneously.  You can now define User-Agent Client Hints for a custom device by using DevTools **Settings** or by using the **Network conditions** tool.
 
 To define User-Agent Client Hints for a custom device by using DevTools **Settings**:
 1. Navigate to **DevTools** > **Settings** \(![Settings icon](../../../media/settings-icon-dark.msft.png)\) > **Devices**.
@@ -166,21 +214,15 @@ To define User-Agent Client Hints for a custom device by using the **Network con
    Defining User-Agent Client Hints for a custom device in the **Network conditions** tool
 :::image-end:::
 
-For more information about this feature, navigate to [Detecting Microsoft Edge from your website][DevToolsWebPlatformUserAgentGuidance].
-<!-- (will be updated with tooltip) - what tooltip?
-Forthcoming version of the article: todo: compare the What's New screenshots vs this article:
-https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/?branch=pr-en-us-1337#set-user-agent-client-hints
-and
-https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference?branch=pr-en-us-1337#set-user-agent-client-hints
-no captures in:
-https://review.docs.microsoft.com/en-us/microsoft-edge/web-platform/user-agent-guidance?branch=pr-en-us-1296
--->
+For more information about this feature, navigate to [Detecting Microsoft Edge from your website][DevToolsWebPlatformUserAgentGuidance].<!--no images?-->
+<!-- optional todo: compare the What's New screenshots vs the screenshots in these two incoming articles: -->
+<!-- todo: link when this PR is merged:
+For more information about this feature, navigate to [Emulate mobile devices in Microsoft Edge DevTools](../../../device-mode/index.md#set-user-agent-client-hints) and [Network Analysis reference](../../../network/reference.md#set-user-agent-client-hints). -->
 
-<!-- keep this link?  it uses the short URL/site rather than Chrome Gerritt site, ok? -->
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1174299][CR1174299].
 
 
-<!-- 7 -->
+<!-- 8, need two screenshots -->
 ## Screen readers now announce errors, warnings, and issues in toolbar and Console
 
 <!-- Title: Better support for errors, warnings, and issues with assistive technology -->
@@ -211,33 +253,30 @@ Navigate to the Console tool
 Draw a red outline around the issues UI in the Console here: Image
 Video recording of feature in action
 (we want to incorporate more multimedia assets into our What's New docs which drives engagement. Check out the wiki for instructions)
-N/A
-Chris it'd be cool to get a video of this a11y fix where the text the screen reader announces is actually displayed as well. -->
+It'd be good to have a video of this a11y fix where the text that the screen reader announces is displayed -->
 
-For more information about debugging Console errors, navigate to [Debug errors reported in Console](Tracking down errors using the Console - Microsoft Edge Development | Microsoft Docs). For more information about issues found by DevTools and improvements you can make to your website (or app), navigate to [Find and fix problems using the Issues tool](Find and fix problems using the Issues tool - Microsoft Edge Development | Microsoft Docs).
+For information about debugging Console errors, navigate to [Debug errors reported in Console](../../../console/console-debug-javascript.md).  For information about issues found by DevTools and improvements you can make to a webpage, navigate to [Find and fix problems using the Issues tool](../../../issues/index.md).
 
-<!-- crbug link
-1223208 - Inappropriate information is announced by screen reader for the Errors and Warnings in the header - chromium -->
+To review the history of this feature in the Chromium open-source project, navigate to Issue [1223208][CR1223208].
 
 
-<!-- 8 -->
+<!-- 9, need easy screenshot -->
 ## Copy as PowerShell in the Network tool now includes cookies
 
 <!-- Title: Generate PowerShell commands for network requests in the Network tool -->
 <!-- Subtitle: The Copy as PowerShell context menu option now correctly sets the user-agent string and cookies when generating PowerShell network requests. -->
 
-Previously, in the Network tool, the Copy > Copy as PowerShell context menu option did not include cookies when generating a PowerShell command for a given network request in the Network Activity Log. This meant that the generated PowerShell command could not successfully make the same network request if cookies were required.
+Previously, in the **Network** tool, the **Copy** > **Copy as PowerShell** context menu option didn't include cookies when generating a PowerShell command for a given network request in the Network Activity Log. This meant that the generated PowerShell command couldn't successfully make the same network request if cookies were required.
 
-Now in Microsoft Edge version 93, the Copy as PowerShell context menu option correctly sets the user-agent string and cookies that were observed by the DevTools. The generated PowerShell command can now successfully make the same network request that was observed by the DevTools, even to servers that depend on cookies.
+Now in Microsoft Edge version 93, the **Copy as PowerShell** context menu option correctly sets the User-Agent string and cookies that were observed by the DevTools.  The generated PowerShell command can now successfully make the same network request that was observed by DevTools, even to servers that depend on cookies.
 
 :::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
    __
 :::image-end:::
 <!-- Instructions for screenshot
-(how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
-Open the DevTools on Microsoft Edge (Chromium) Developer Tools overview - Microsoft Edge Development | Microsoft Docs - https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/
-Navigate to the Network tool
-Refresh the page
+Open the DevTools on page https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/
+Navigate to Network tool
+Refresh page
 Right-click any of the rows in the Network Activity Log
 Expand the Copy entry and highlight the Copy as PowerShell option
 Draw a red outline around the Copy as PowerShell option -->
@@ -245,52 +284,7 @@ Draw a red outline around the Copy as PowerShell option -->
 For more information about the Network Activity Log, navigate to [Network Analysis reference](../../../network/reference.md).
 <!-- "Network Analysis reference | Microsoft Docs" -->
 
-<!-- 932971 - Network tab, Copy as Powershell == doesn't send cookies properly - chromium
-https://bugs.chromium.org/p/chromium/issues/detail?id=932971 -->
-
-
-## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.8
-
-The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extension version 1.1.8 for Microsoft Visual Studio Code has the following changes since the previous release.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.8, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].
-
-You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools].
-
-<!-- 9 -->
-### Microsoft Edge Developer Tools for Visual Studio Code now integrates with the VS Code Debugger workflow
-
-<!-- Title: __ -->
-<!-- Subtitle: Edge DevTools for VS Code now integrates seamlessly with the JavaScript debugging workflow in the editor. -->
-
-If you use the JavaScript debugging workflow in Visual Studio Code, you can now launch the DevTools extension by selecting the **Inspect** button.
-
-:::image type="complex" source="../../media/2021/07/inspect-button.msft.png" alt-text="The Inspect button in Visual Studio Code to launch the DevTools extension" lightbox="../../media/2021/07/inspect-button.msft.png":::
-   The **Inspect** button in Visual Studio Code to launch the DevTools extension
-:::image-end:::
-
-This feature allows you to keep all your JavaScript debugging inside Visual Studio and inspect the DOM and CSS at the same time. If you don't have the DevTools extension installed, Visual Studio Code will prompt you, to install the extension seamlessly.
-
-Other new features are:
-*  More detailed documentation of the extension.
-*  Several bug fixes.
-*  The tools refresh automatically when you switch between different debugging targets.
-
-For more details, check the Changelog of the [vscode-edge-devtools repo](https://github.com/microsoft/vscode-edge-devtools).
-
-:::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
-   __
-:::image-end:::
-<!-- Instructions for screenshot
-See the instructions in the videos, to make the screen shot:
-
-Video recordings of this feature in action:
-
-Usage with already installed extension: ["EdgeDevTools Breakpoint Debugging Integration" - YouTube](https://www.youtube.com/watch?v=UqFOICZRPAo)
-
-Usage with installing: [Debugger Installing EdgeDevTools - YouTube](https://www.youtube.com/watch?v=1-6fRdqyoA0)
--->
-
-For more information, navigate to [Launching Edge DevTools from the JS Debugger workflow](https://microsoft.github.io/vscode-edge-devtools/debugger-integration.html).
-<!-- "Launching Edge DevTools from the JS Debugger workflow - vscode-edge-devtools | GitHub -->
+To review the history of this feature in the Chromium open-source project, navigate to Issue [932971][CR932971].
 
 
 ## Download the Microsoft Edge preview channels
@@ -306,10 +300,12 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 <!-- links -->
 [DevToolsWebPlatformUserAgentGuidance]: ../../../../web-platform/user-agent-guidance.md "Detecting Microsoft Edge from your website | Microsoft Docs"
 <!-- external links -->
-[CR1174299]: https://crbug.com/1174299 "Issue 1174299: UA Client Hints dropped when overriding UA string via Chrome DevTools' Network conditions tab | Chromium bugs"
-<!-- = long-form link https://bugs.chromium.org/p/chromium/issues/detail?id=1174299  -->
-
+[CR1174299]: https://bugs.chromium.org/p/chromium/issues/detail?id=1174299 "Issue 1174299: UA Client Hints dropped when overriding UA string via Chrome DevTools' Network conditions tab | Chromium bugs"
 [CR2882756]: https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756 "Issue 2882756: \[l10n\] Add setting for users to choose DevTools locale | Chromium bugs"
+[CR1223208]: https://bugs.chromium.org/p/chromium/issues/detail?id=1223208 "Inappropriate information is announced by screen reader for the Errors and Warnings in the header | Chromium bugs"
+[CR932971]: https://bugs.chromium.org/p/chromium/issues/detail?id=932971 "932971 - Network tab, Copy as Powershell == doesn't send cookies properly | Chromium bugs"
+
+[GithubVscodeEdgeDevtoolsDebuggerIntegration]: https://microsoft.github.io/vscode-edge-devtools/debugger-integration.html "Launching Edge DevTools from the JS Debugger workflow - vscode-edge-devtools | GitHub"
 
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
 
