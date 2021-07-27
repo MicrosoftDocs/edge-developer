@@ -39,7 +39,7 @@ Dark themes:
 *  Red
 *  Tomorrow Night Blue
 
-For more information, navigate to [Apply color themes to Microsoft Edge DevTools](../../../customize/theme.md).
+For more information, navigate to [Apply color themes to Microsoft Edge DevTools](../../../customize/dark-theme.md).
 
 <!-- no crbug -->
 
@@ -101,9 +101,9 @@ Other new features are:
 
 For more details, check the changelog file in the [vscode-edge-devtools repo](https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md).
 
-:::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
+<!-- :::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
    __
-:::image-end:::
+:::image-end::: -->
 <!-- to plan & make screenshot, see videos -->
 <!-- todo: delete video links? -->
 Videos of this feature in action:
@@ -144,15 +144,11 @@ Microsoft Edge DevTools has adopted [Fluent UI](https://developer.microsoft.com/
 
 Previously, to change the display language in DevTools, you had to change the browser language.  Now you can easily switch the locale in DevTools **Settings**, without having to change your browser settings.  To do this, open **Settings**, and then in **Preferences**, select a language from the **Language** drop-down list.
 
-For options for changing settings, navigate to [Customize Microsoft Edge DevTools](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/customize/).
-
 :::image type="complex" source="../../media/2021/07/settings-browser-ui-language.msft.png" alt-text="Changing the DevTools display language directly from DevTools **Settings**" lightbox="../../media/2021/07/settings-browser-ui-language.msft.png":::
    Changing the DevTools display language directly from DevTools **Settings**
 :::image-end:::
 
-For information about **Settings**, navigate to [Customize Microsoft Edge DevTools](../../../customize/index.md#settings).
-
-To review the history of this feature in the Chromium open-source project, navigate to Issue [2882756][CR2882756].
+For options for changing settings, navigate to [Customize Microsoft Edge DevTools](../../../customize/index.md).  To review the history of this feature in the Chromium open-source project, navigate to Issue [2882756][CR2882756].
 
 
 <!-- 6, add easy screenshot -->
@@ -169,9 +165,9 @@ Now in Microsoft Edge version 93, you are able to copy a single CSS declaration 
 1. Select **Copy declaration as JS** or **Copy all declarations as JS**.
 1. Paste the copied CSS into a JavaScript file in your text editor, such as VS Code.
 
-:::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
+<!-- :::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
    __
-:::image-end:::
+:::image-end::: -->
 <!-- Instructions for screenshot:
 1. Open DevTools > Elements.
 2. In the Styles pane, open the context menu on a declaration in a style rule
@@ -236,9 +232,9 @@ For example, if the DevTools reported 3 errors, screen readers now announce "3 e
  -->
 This fix has been applied to both the notifications in the DevTools toolbar and in the Console.
 
-:::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
+<!-- :::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
    __
-:::image-end:::
+:::image-end::: -->
 <!-- Instructions for screenshot
 (how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
 
@@ -270,9 +266,9 @@ Previously, in the **Network** tool, the **Copy** > **Copy as PowerShell** conte
 
 Now in Microsoft Edge version 93, the **Copy as PowerShell** context menu option correctly sets the User-Agent string and cookies that were observed by the DevTools.  The generated PowerShell command can now successfully make the same network request that was observed by DevTools, even to servers that depend on cookies.
 
-:::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
+<!-- :::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
    __
-:::image-end:::
+:::image-end::: -->
 <!-- Instructions for screenshot
 Open the DevTools on page https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/
 Navigate to Network tool
