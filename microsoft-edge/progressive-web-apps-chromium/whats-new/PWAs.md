@@ -10,7 +10,7 @@ keywords: microsoft edge, pwas, pwa, progressive web apps
 ---
 # What's New In Progressive Web Apps
 
-[!INCLUDE [contact DevTools team note](/includes/edge-whats-new-note.md)]
+[!INCLUDE [contact DevTools team note](includes/edge-whats-new-note.md)]
 
 > [!TIP]
 > The **Microsoft Build 2021** conference was on May 25-27.  Here's a video from Build about the updates to PWA, DevTools and more:
