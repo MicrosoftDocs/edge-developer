@@ -18,7 +18,7 @@ keywords: microsoft edge, pwas, pwa, progressive web apps
 
 
 ## What's New in Edge 92
-Edge 92 became the stable channel of Microsoft Edge on July 22, 2021.
+Edge 92 became the stable channel of Microsoft Edge on July 22, 2021. This article lists updates we made to PWAs from both a developer and consumer point of view.
 
 ## Streamlined App Info Menus
 The app info menu is what is shown when a user clicks the 3 dot settings menu in the apps title bar. We've updated this menu and streamlined the experience for the user by:
