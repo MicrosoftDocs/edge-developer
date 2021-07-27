@@ -973,7 +973,7 @@
       },
       {
         "source_path": "microsoft-edge/devtools-guide-chromium/storage/applicationcache.md",   
-        "redirect_url": "/microsoft-edge/devtools-guide-chromium/",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/index",
         "redirect_document_id": false
       },
       /* redirect to extensions */
