@@ -3,7 +3,7 @@ description: Microsoft Edge (Chromium) and Visual Studio
 title: Visual Studio
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/18/2021
+ms.date: 07/27/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs, visual studio, debugger
