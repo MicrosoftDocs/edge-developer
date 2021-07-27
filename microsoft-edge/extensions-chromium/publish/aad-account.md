@@ -30,16 +30,16 @@ You can use Azure Active Directory to add and manage users in the Microsoft Edge
 
 ### Associate Azure Active Directory with your account
 
-In order to add and manage account users, you must first associate your account with your organization's Azure Active Directory. If your organization already uses Office 365 or other business services from Microsoft, you already have Azure AD. Otherwise, you can [create a new Azure AD tenant][CreateNewAzureAD] here for free.
+In order to add and manage account users, you must first associate your account with your organization's Azure Active Directory. If your organization already uses Office 365 or other business services from Microsoft, you already have Azure AD. Otherwise, you can [create a new Azure AD tenant][../../../windows/uwp/publish/associate-azure-ad-with-partner-center#create-a-brand-new-azure-ad-to-associate-with-your-partner-center-account] here for free.
 
-Navigate to [Associate Azure Active Directory with your Partner Center account][AssociateAADWithPartnerCenterAccount] for more information. While the topic focuses on the Windows apps developer program, associating a tenant works the same way for the Microsoft Edge Program.
+Navigate to [Associate Azure Active Directory with your Partner Center account][../../../windows/uwp/publish/associate-azure-ad-with-partner-center] for more information. While the topic focuses on the Windows apps developer program, associating a tenant works the same way for the Microsoft Edge Program.
 
 > [!IMPORTANT]
 > If you have added users after associating your Azure AD account with your Microsoft account on Partner Center, note that changing roles or permissions of users is not currently supported. However, you can continue to add as many users as you may require and use the filter option of the [user management][UserManagementPartnerCenter] section to locate admins of specific roles.
 
 ## Step 3: Add users, groups, and Azure AD applications to your account
 
-Once you've set up the Azure AD association, you can add users by going to the Users section under Account settings. Each user has full access the extensions available in the program. You can also add groups of users and Azure AD applications to grant them access to your Partner Center account. For more info about adding users, see [Add users, groups, and Azure AD applications][AddAADUsersGroups].
+Once you've set up the Azure AD association, you can add users by going to the Users section under Account settings. Each user has full access the extensions available in the program. You can also add groups of users and Azure AD applications to grant them access to your Partner Center account. For more info about adding users, see [Add users, groups, and Azure AD applications][../../../windows/uwp/publish/add-users-groups-and-azure-ad-applications].
 
 ## Contact us 
 
