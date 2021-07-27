@@ -41,7 +41,6 @@ Release Date: July 26, 2021
 *   Fixed bug in which NewWindowRequested event handler launches two window when handling links with target=_blank.
 *   Fixed a bug in WebView visual hosting would present a black flicker before startup.
 *   Fixed bug when add_WebResourceRequested was not working for WebView2 created via add_NewWindowRequested. \([\#616][GithubMicrosoftedgeWebviewfeedbackIssue616]\)
-*   Fixed a bug where closing out a child form while the find in page bar is open crashes webview2 in parent form. \([\#1097][GithubMicrosoftedgeWebviewfeedbackIssue1097]\)
 *   Allowed the host app to set foreground on a different application in response to certain events (NavigationStarting, AddHostObjectToScript methods, WebMessageReceived, and NewWindowRequested). \([\#1092][GithubMicrosoftedgeWebviewfeedbackIssue1092]\)
 *   Fix bug to fire PermissionRequested event for Microphone. This change is Runtime-specific.\([\#1462][GithubMicrosoftedgeWebviewfeedbackIssue1462]\)
 *   Fixed bug when ExecuteScriptAsync was blocking forever after several successful runs. This change is Runtime-specific. \([\#1348][GithubMicrosoftedgeWebviewfeedbackIssue1348]\)
@@ -56,6 +55,7 @@ Release Date: July 26, 2021
 #### Bug fixes  
 *   Fixed an issue in .NET docs that was causing only the first possible exception to be displayed.
 *   DotNet core libraries now built in release mode. To debug, please ensure to have "Just my code" unchecked.
+*   Fixed a bug where closing out a child form while the find in page bar is open crashes webview2 in parent form. \([\#1097][GithubMicrosoftedgeWebviewfeedbackIssue1097]\)
 
 
 ## 1.0.902.49
