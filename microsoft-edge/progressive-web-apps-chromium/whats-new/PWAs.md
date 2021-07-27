@@ -29,7 +29,7 @@ The app info menu is what is shown when a user clicks the 3 dot settings menu in
 This change brings the settings menu more in line with what users expect from a desktop app experience and less like browser UI. 
 
 ### Updated App Info Menu
-:::image type="complex" source="/media/app-info.png" alt-text="Streamlined top level app info menu" lightbox="/media/app-info.png":::
+:::image type="complex" source="/media/app-info.png" alt-text="Streamlined app info menu" lightbox="/media/app-info.png":::
    Screen shot of the new streamlined app info menu
 :::image-end:::
 
@@ -39,7 +39,7 @@ This change brings the settings menu more in line with what users expect from a 
 :::image-end:::
 
 ### More Tools Menu
-:::image type="complex" source="/media/more-tools.png" alt-text="Streamlined top level app info menu" lightbox="/media/more-tools.png":::
+:::image type="complex" source="/media/more-tools.png" alt-text="Content related tools menu" lightbox="/media/more-tools.png":::
    Content related tools now found in More tools menu
 :::image-end:::
 
@@ -69,12 +69,6 @@ Prior to Microsoft Edge version 92, in the **Console**, assistive technologies s
 You can now view the order of source elements overlaid on the rendered webpage, for better accessibility inspection.
 
 The order of content in an HTML document is important for search engine optimization and accessibility.  CSS allows developers to create content that looks different in its on-screen order than the order in the HTML source document.  This is an accessibility problem, because screen-reader users could get a confusing experience.
-
-
-
-For more information, navigate to [Test keyboard support using the Source Order Viewer](../../../accessibility/test-tab-key-source-order-viewer.md).
-
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1094406][CR1094406].
 
 
 
