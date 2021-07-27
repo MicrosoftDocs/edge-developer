@@ -66,19 +66,19 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 
 ### Open the Snippets tab with a mouse  
 
-1.  Choose the **Sources** tab.  The **Sources** tool appears.  
+1.  Select the **Sources** tab.  The **Sources** tool appears.  
     
     :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="The Sources tool with the Page tab open on the left" lightbox="../media/javascript-sources-page-pane.msft.png":::
        The **Sources** tool with the **Page** tab open on the left  
     :::image-end:::  
     
-1.  In the **Navigator** pane (on the left), choose the **Snippets** tab.  To access the **Snippets** option, you may need to choose **More tabs** \(![More tabs](../media/more-tabs-icon.msft.png)\).  
+1.  In the **Navigator** pane (on the left), select the **Snippets** tab.  To access the **Snippets** option, you may need to select **More tabs** \(![More tabs](../media/more-tabs-icon.msft.png)\).  
     
 ### Open the Snippets tab with the Command Menu  
 
 1.  Select anything in DevTools, so that DevTools has focus.  
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu.  
-1.  Type `Snippets`, choose **Show Snippets**, and then select `Enter` to run the command.  
+1.  Type `Snippets`, select **Show Snippets**, and then select `Enter` to run the command.  
     
     :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="The Show Snippets command" lightbox="../media/javascript-search-show-snippets.msft.png":::
        The **Show Snippets** command  
@@ -89,7 +89,7 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 ### Create a Snippet through the Sources tool  
 
 1.  [Open the Snippets tab](#open-the-snippets-tab).  
-1.  Choose **New snippet**.  
+1.  Select **New snippet**.  
 1.  Enter a name for your Snippet, and then select `Enter`.  
     
     :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Name a Snippet" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
@@ -100,7 +100,7 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 
 1.  Focus your cursor somewhere in DevTools.  
 1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu.  
-1.  Type `Snippet`, choose **Create new snippet**, then select `Enter` to run the command.  
+1.  Type `Snippet`, select **Create new snippet**, then select `Enter` to run the command.  
     
     :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="The command for creating a new Snippet" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
        The command for creating a new Snippet  
@@ -130,7 +130,7 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
 
 1.  [Open the Snippets tab](#open-the-snippets-tab).  
 1.  Choose the name of the Snippet that you want to run.  The Snippet opens in the **Code Editor**.  
-1.  Choose **Run snippet** \(![Run Snippet](../media/run-snippet-icon.msft.png)\).
+1.  Select **Run snippet** \(![Run Snippet](../media/run-snippet-icon.msft.png)\).  
     
 ### Run a Snippet with the Command Menu  
 
@@ -147,13 +147,21 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
 ## Rename Snippets  
 
 1.  [Open the Snippets tab](#open-the-snippets-tab).  
-1.  Hover on the Snippet name, open the contextual menu \(right-click\), and choose **Rename**.  
+1.  Hover on the Snippet name, open the contextual menu \(right-click\), and select **Rename**.  
     
 ## Delete Snippets  
 
 1.  [Open the Snippets tab](#open-the-snippets-tab).  
-1.  Hover on the Snippet name, open the contextual menu \(right-click\), and choose **Remove**.  
-    
+1.  Hover on the Snippet name, open the contextual menu \(right-click\), and select **Remove**.  
+
+## Save Snippets  
+
+By default, Snippets are only available within DevTools, but you can also save them to disk.  
+
+1.  [Open the Snippets tab](#open-the-snippets-tab).  
+1.  Hover on the Snippet name, open the contextual menu \(right-click\), and select **Save as**.  
+1.  Choose a file name and location when prompted.  
+
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
