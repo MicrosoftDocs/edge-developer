@@ -199,8 +199,6 @@
               href: devtools-guide-chromium/inspect-styles/animations.md
             - name: Application
               items:
-                - name: Application cache
-                  href: devtools-guide-chromium/storage/applicationcache.md
                 - name: Cache
                   href: devtools-guide-chromium/storage/cache.md
                 - name: Cookies
