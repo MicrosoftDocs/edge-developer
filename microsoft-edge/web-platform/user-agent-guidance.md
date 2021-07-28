@@ -2,8 +2,8 @@
 description: This article describes how to detect Microsoft Edge data with user-agent client hints and user-agent string
 title: Detecting Microsoft Edge from your website
 author: MSEdgeTeam
-ms.author: v-vchapel
-ms.date: 06/22/2021
+ms.author: msedgedevrel
+ms.date: 07/29/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, user-agent string, ua string, ua overrides, user-agent client hints, user agent client hints, ua client hints, ua ch, feature detection, browser identification, browser detection, header, https header, verify chromium, detect microsoft edge, detecting microsoft edge
@@ -14,21 +14,18 @@ Browsers provide mechanisms for websites to detect browser information such as b
 
 You may want to provide different experiences to users based on their browser. For example, if you include steps on how to configure Microsoft Edge or another browser for use with your site, you may want to detect the browser and then show the appropriate content.
 
-Mechanisms for browser detection with device (client or server) and identifier:
+Mechanisms for browser detection:
 
-| Mechanism | Device and Identifier |  
-|:--- |:--- | 
-| **Feature Detection** \(recommended\) | Client-side: `navigator.userAgentData.brands` JavaScript method |
-| **User-Agent Client Hints** \(recommended\) | Server-side: `Sec-CH-UA` HTTPS header |
-| | Client-side: `navigator.userAgentData` JavaScript method |  
-| **User-Agent String** \(legacy\) | Server-side:`User-Agent` HTTPS header | 
-| | Client-side: `navigator.userAgent` JavaScript method |  
+| Mechanism | Server-side | Client-side |  
+|:--- |:--- |:--- | 
+| **User-Agent Client Hints** \(recommended\) | `Sec-CH-UA` HTTPS header | `navigator.userAgentData` JavaScript method |  
+| **User-Agent string** \(legacy\) | `User-Agent` HTTPS header | `navigator.userAgent` JavaScript method |  
 
 This article describes the methods Microsoft Edge supports for retrieving user agent information.
 
 ## Feature detection
 
-Microsoft recommends detecting if a feature is supported in your browser. For more information, see [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection].
+Microsoft recommends [detecting if a feature is supported][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] in your browser whenever possible instead of detecting the browser.
 
 If you must detect browsers, Microsoft recommends using client hints as follows.
 
@@ -46,11 +43,11 @@ Do not use User-Agent Client Hints to:
 - Block *unsupported* browsers.
 - Restrict access to features on your site.
 
-For more information, navigate to the W3C Community Draft Report at [User-Agent Client Hints][https://wicg.github.io/ua-client-hints/].
+For more information, navigate to the at [W3C Community Draft Report | User-Agent Client Hints][https://wicg.github.io/ua-client-hints/].
 
 ### User-Agent Client Hints HTTPS header
 
-When a browser requests a web page from a server, it sends an HTTPS client header request. The server replies with a specific set of HTTPS response header data. User-Agent Client Hints automatically return the brand and mobile attributes. It can easily include more data.
+When Microsoft Edge sends an HTTPS request to a server, it sends the User-Agent Client Hints headers that correspond to browser brand and mobile information. If the server requires more granular information about the browser, its response includes an `Accept-CH` header. The value of that response header is a comma-separated list of all the Client Hints request headers the server wants from the browser, such as `Accept-CH: Sec-CH-UA-Platform,Sec-CH-UA-Platform-Version`. The next Microsoft Edge HTTPS request to the server will include the requested User-Agent Client Hints headers.
 
 By default, Chromium browsers including Microsoft Edge send the `Accept-CH-UA` response header in the following format.  
 
@@ -59,8 +56,7 @@ Sec-CH-UA: "Chromium";v="92", "Microsoft Edge";v="92","Placeholder;Browser Brand
 Sec-CH-UA-Mobile: ?0
 ```  
 
-The following table shows the available header request hints with sample responses. For example, to discover information such as operating system, include `Sec-CH-UA-Platform` in the header request.
-  
+The following table shows all available hints request headers with sample values.
 
 | User-Agent Request header | Example User-Agent response value |  
 |:--- |:--- |  
@@ -68,7 +64,7 @@ The following table shows the available header request hints with sample respons
 | `Sec-CH-UA-Mobile` | `false` |  
 | `Sec-CH-UA-Full-Version` | `91.0.866.0` |  
 | `Sec-CH-UA-Platform` | `Windows` |  
-| `Sec-CH-UA Platform-Version` | `10.0` |  
+| `Sec-CH-UA-Platform-Version` | `10.0` |  
 | `Sec-CH-UA-Arch` | `x86` |  
 | `Sec-CH-UA-Model` | `Surface Pro` |  
 
@@ -117,12 +113,14 @@ To request more detailed information such as platform, use the following code.
 
 For more information, navigate to [getHighEntropyValues()][GithubWicgUaClientHintsGethighentropyvalues].
 
-### Using feature detection with User-Agent Client Hints
+### User-Agent Client Hints suggested use
 
-Combining User-Agent Client Hints with [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] is the best mechanism for browser identification. Microsoft recommends using it whenever possible to:
+Combining User-Agent Client Hints with [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] is an effective way to deliver compatible web content. Microsoft recommends using this pattern to:
 * Improve code maintainability.
 * Reduce code fragility.  
 * Reduce code breakage from changes to the User-Agent String.
+
+If you need to check for a Chromium-based browser, Microsoft recommends detecting `Chromium`; the engine that powers both Microsoft Edge and Google Chrome.
 
 Use this method to verify the `Chromium` brand and apply detection to all affected Chromium-based browsers.
 
@@ -137,9 +135,9 @@ function isChromium() {
 }
 ```
 
-Brand names and the associated display order change over time. Avoid hard-coding brand names.
+Display orders of brand names change over time. Avoid hard-coding checks for brands at specific indices.
 
-If you cannot use [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection], don't use a hardcoded list of known Chromium-based browsers for verification. Examples of hardcoded browser names include `Microsoft Edge` and `Google Chrome`.  [Feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] may not be available because a fix for a Chromium bug in later versions must be avoided and the affected browsers are difficult to detect.
+If you cannot use [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection], don't use a hardcoded list of known Chromium-based browsers for verification. Examples of hardcoded browser names include `Microsoft Edge` and `Google Chrome`. [Feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] may not be available because a fix for a Chromium bug in later versions must be avoided and the affected browsers are difficult to detect.
 
 ## User-Agent strings
 
@@ -180,7 +178,7 @@ Platform identifiers change based on the operating system, and version numbers i
 
 ## Map the User-Agent string to browser name  
 
-Map the user-agent string tokens to a more human-readable browser name to use in code. This is a common practice across the web. When you map the new `Edg` token to a browser name, Microsoft recommends using a different name than the one used for the legacy Microsoft EdgeHTML browser to avoid accidentally applying any legacy workarounds that do not apply to Chromium-based browsers.
+Map the user-agent string tokens to human-readable browser names to use in code. This practice is common across the web. When you map the new `Edg` token to a browser name, Microsoft recommends using a different name than the one used for the legacy Microsoft EdgeHTML browser to avoid accidentally applying legacy workarounds that do not apply to Chromium-based browsers.
 
 ## User-Agent overrides  
 
