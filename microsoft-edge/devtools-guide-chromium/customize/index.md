@@ -32,7 +32,7 @@ This page lists the ways to customize Microsoft Edge DevTools.
 To open Settings, complete one of the following actions.  
 
 *   Select `F1` while DevTools is in focus.  
-*   Open the **Main Menu** and then choose **Settings**.  
+*   Open the **Main Menu** and then select **Settings**.  
     
 :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Settings" lightbox="../media/customize-settings-preferences.msft.png":::
    **Settings**  
@@ -40,7 +40,7 @@ To open Settings, complete one of the following actions.
 
 ## Drawer  
 
-The **Drawer** is a second panel where tools of your choosing are displayed.  
+The **Drawer** is a second panel where you can choose which tools to display.  
 
 To open \(or close\) the **Drawer**, select `Escape`.  
 
@@ -48,21 +48,21 @@ To open \(or close\) the **Drawer**, select `Escape`.
    The **Drawer**  
 :::image-end:::  
 
-By default, some tools open in the main panel, while others appear in the **Drawer**.  Choose **More** \(`...`\) to open a tool in the **Drawer**.  
+By default, some tools open in the main panel, while others appear in the **Drawer**.  Select **More** \(`...`\) to open a tool in the **Drawer**.  
 
 :::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="The button to open the Drawer" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
    The button to open the **Drawer**  
 :::image-end:::  
 
-You may move tools between the main panel and the drawer.  
+You can move tools between the main panel and the drawer.  
 
-*   To move a tool from the drawer to the main panel, hover on a tool, open the contextual menu \(right-click\) and choose **Move to top**.  
+*   To move a tool from the drawer to the main panel, hover on a tool, open the contextual menu \(right-click\) and select **Move to top**.  
     
     :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="Move tool from the Drawer to the main panel" lightbox="../media/move-from-drawer.msft.png":::
        Move tool from the **Drawer** to the main panel  
     :::image-end:::  
     
-*   To move a tool from the main panel to the drawer, hover on a tool, open the contextual menu \(right-click\) and choose **Move to bottom**.  
+*   To move a tool from the main panel to the drawer, hover on a tool, open the contextual menu \(right-click\) and select **Move to bottom**.  
     
     :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="Move tool from the main panel to the Drawer" lightbox="../media/move-to-drawer.msft.png":::
        Move tool from the main panel to the **Drawer**
@@ -71,7 +71,7 @@ You may move tools between the main panel and the drawer.
 
 ## Reorder panels  
 
-Choose and drag a tool to change the ordering.  Your custom tool order persists across DevTools sessions.  
+Select and drag a tool to change the ordering.  Your custom tool order persists across DevTools sessions.  
 
 > [!NOTE]
 > By default, the **Network** tool is usually the fourth from the left.  In the following figure, the **Network** tool is the first from the left.  
@@ -92,7 +92,7 @@ Navigate to [Microsoft Edge DevTools Placement][DevToolsPlacement].
 
 Navigate to [Apply color themes to Microsoft Edge DevTools][Theme].  
 
-:::image type="complex" source="./media/customize-theme-setting.png" alt-text="Seleting a different color theme" lightbox="./media/customize-theme-setting.png":::
+:::image type="complex" source="./media/customize-theme-setting.png" alt-text="Selecting a different color theme" lightbox="./media/customize-theme-setting.png":::
    Selecting a different color theme  
 :::image-end:::  
 
@@ -101,8 +101,8 @@ Navigate to [Apply color themes to Microsoft Edge DevTools][Theme].
 To turn on DevTools experiments, complete the following actions.  
 
 1.  Navigate to `edge://flags/#enable-devtools-experiments`.  
-1.  Choose **Enable**.  
-1.  Choose **Relaunch Now**, at the bottom of the page.  
+1.  Select **Enable**.  
+1.  Select **Relaunch Now**, at the bottom of the page.  
 
 The next time you open DevTools, a new page named **Experiments** is displayed in [Settings](#settings).  
 

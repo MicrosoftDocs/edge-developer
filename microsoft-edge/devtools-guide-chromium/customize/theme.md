@@ -20,7 +20,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Apply color themes to Microsoft Edge DevTools  
 
-You can apply various color themes to DevTools, including several themes from [Visual Studio Code][VSCode], such as Monokai and Solarized Dark.  Themes affect the color of panes, buttons, and code syntax highlighting. 
+You can apply various color themes to Microsoft Edge DevTools, including several themes from [Visual Studio Code][VSCode], such as Monokai and Solarized Dark.  Themes affect the color of panes, buttons, and code syntax highlighting. 
 
 :::image type="complex" source="./media/all-devtools-themes.png" alt-text="Various DevTools color themes" lightbox="./media/all-devtools-themes.png":::
    Various DevTools color themes 
