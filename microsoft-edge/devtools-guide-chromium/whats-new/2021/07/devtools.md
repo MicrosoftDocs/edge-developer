@@ -75,7 +75,7 @@ The new **Detached Elements** tool finds all of the detached elements on your pa
 :::image-end:::
 
 For more information, navigate to the **Detached Elements** section in [Experimental features](../../../experimental-features/index.md).
-<!-- todo: link to subheading in page, when available -->
+<!-- todo: link to subheading in page, when available.  contact the SME to coordinate.  draft or PR might exist. -->
 
 <!-- no crbug -->
 
