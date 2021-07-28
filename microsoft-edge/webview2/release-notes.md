@@ -26,39 +26,38 @@ Release Date: July 26, 2021
 [NuGet package][NuGetGallery1.0.955-prerelease] \| Minimum Microsoft Edge version to load: 86.0.616.0 or newer \| Full API Compatibility: 93.0.967.0 or newer  
 
 ### General  
-*   General WebView2 performance improvements.
-*   Added some ETW tracing support for WebView2.
-*   Removed Microsoft branding from edge://history.
-*   WebView2 has a new default Download UI.
+*   WebView2 performance improvements.
+*   Added partial Event Tracing for Windows (ETW) support.
+*   Removed Microsoft branding from `edge://history`.
+*   New default Download UI.
 
 #### Experimental Features  
-*   Added [OpenTaskManagerWindow API][Webview2ReferenceWin32Icorewebview2experimental4ViewWebview210955PrereleaseOpentaskmanagerwindow] to launch a webview2 browser task manager.
+*   Added [OpenTaskManagerWindow][Webview2ReferenceWin32Icorewebview2experimental4ViewWebview210955PrereleaseOpentaskmanagerwindow] to launch a WebView2 browser task manager.
 *   Added [NewWindowRequestedEventArgs][Webview2ReferenceWin32Icorewebview2experimentalnewwindowrequestedeventargsViewWebview210955PrereleaseGetName].
 *   Added [PDF Toolbar API][Webview2ReferenceWin32Icorewebview2experimentalnewwindowrequestedeventargsViewWebview210955PrereleaseGetName].
 
 #### Bug fixes  
-*   Fixed bug that broke the edge://downloads and edge://history pages. This change is Runtime-specific.
+*   Fixed bug that broke the `edge://downloads` and `edge://history` pages. This change is Runtime-specific.
 *   Fixed bugs to improve reliability in the WebView2Loader.dll.
-*   Fixed bug in which NewWindowRequested event handler launches two window when handling links with target=_blank.
-*   Fixed a bug in WebView visual hosting would present a black flicker before startup.
-*   Fixed bug when add_WebResourceRequested was not working for WebView2 created via add_NewWindowRequested. \([\#616][GithubMicrosoftedgeWebviewfeedbackIssue616]\)
-*   Allowed the host app to set foreground on a different application in response to certain events (NavigationStarting, AddHostObjectToScript methods, WebMessageReceived, and NewWindowRequested). \([\#1092][GithubMicrosoftedgeWebviewfeedbackIssue1092]\)
-*   Fix bug to fire PermissionRequested event for Microphone. This change is Runtime-specific.\([\#1462][GithubMicrosoftedgeWebviewfeedbackIssue1462]\)
-*   Fixed bug when ExecuteScriptAsync was blocking forever after several successful runs. This change is Runtime-specific. \([\#1348][GithubMicrosoftedgeWebviewfeedbackIssue1348]\)
-*   Fixed bug that prevented non-ASCII filenames from being used for `ResultFilePath` in DownloadStartingEventArgs. \([\#1428][GithubMicrosoftedgeWebviewfeedbackIssue1428]\)
-*   Fixed bug where the default popup's title bar is not displayed entirely. This change is Runtime-specific. \([\#1016][GithubMicrosoftedgeWebviewfeedbackIssue1016]\)
+*   Fixed bug in which `NewWindowRequested` event handler launched two windows when handling links that use `target=_blank`.
+*   Fixed a bug in WebView visual hosting that flickered before startup.
+*   Fixed bug when `add_WebResourceRequested` did not work on WebView2 controls created using `add_NewWindowRequested`. \([\#616][GithubMicrosoftedgeWebviewfeedbackIssue616]\)
+*   Allow the host app to set foreground on a different application in response to events including `NavigationStarting`, `AddHostObjectToScript` methods, `WebMessageReceived`, and `NewWindowRequested`. \([\#1092][GithubMicrosoftedgeWebviewfeedbackIssue1092]\)
+*   Fix bug to trigger the `PermissionRequested` event for the microphone. This change is Runtime-specific.\([\#1462][GithubMicrosoftedgeWebviewfeedbackIssue1462]\)
+*   Fixed bug when `ExecuteScriptAsync` blocked after several successful runs. This change is Runtime-specific. \([\#1348][GithubMicrosoftedgeWebviewfeedbackIssue1348]\)
+*   Fixed bug preventing non-ASCII filenames from being used in `ResultFilePath` in `DownloadStartingEventArgs`. \([\#1428][GithubMicrosoftedgeWebviewfeedbackIssue1428]\)
+*   Fixed bug where the title bar on the default popup was not displayed completely. This change is Runtime-specific. \([\#1016][GithubMicrosoftedgeWebviewfeedbackIssue1016]\)
 *   Added support for virtual host name mapping to work with Service Workers.
 
 #### Promotions
-*   [add_ClientCertificateRequested][Webview2ReferenceWin32Icorewebview25ViewWebview210955PrereleaseAddClientcertificaterequested] API promoted to stable.
+*   [add_ClientCertificateRequested][Webview2ReferenceWin32Icorewebview25ViewWebview210955PrereleaseAddClientcertificaterequested] was promoted to stable.
 
 ### .NET  
     
 #### Bug fixes  
-*   Fixed an issue in .NET docs that was causing only the first possible exception to be displayed.
-*   DotNet core libraries now built in release mode. To debug, please ensure to have "Just my code" unchecked.
-*   Fixed a bug where closing out a child form while the find in page bar is open crashes webview2 in parent form. \([\#1097][GithubMicrosoftedgeWebviewfeedbackIssue1097]\)
-
+*   Fixed an issue in WebView2 .NET API reference documentation that caused only the first exception to be displayed.
+*   .Net core libraries are now built in release mode. To debug, please ensure you clear the **Just my code** checkbox.
+*   Fixed a bug that crashed WebView2 on forms with child forms. The child form, with the find in page bar open, caused WebView2 to crash when the child form was closed. \([\#1097][GithubMicrosoftedgeWebviewfeedbackIssue1097]\)
 
 ## 1.0.902.49
 
@@ -69,18 +68,21 @@ Release Date: July 26, 2021
 ### General  
 
 #### Bug Fixes  
-*   Fix bug that broke IsBuiltInErrorPageEnabled property to disable built in error page for navigation failure and render process failure.  This change is Runtime-specific. \([\#634][GithubMicrosoftedgeWebviewfeedbackIssue634]\)
-*   Fixed an issue where the WebView2 would steal focus away from the user's focus.
-*   Fixed bug when AddScriptToExecuteOnDocumentCreated was not working on child windows. \([\#935][GithubMicrosoftedgeWebviewfeedbackIssue935]\)
-*   Fixed bug which caused inactive tabs to be auto discarded. \([\#637][GithubMicrosoftedgeWebviewfeedbackIssue637]\)
-*   Fixed a bug that some times the Navigation Id of NavigationCompleted Event can be wrong if the navigation is interrupted by another navigation. \([\#1142][GithubMicrosoftedgeWebviewfeedbackIssue1142]\)
+*   Fix bug that broke the `IsBuiltInErrorPageEnabled` property which turned off the error page that's displayed when there's a navigation failure or render process failure.  This change is Runtime-specific. \([\#634][GithubMicrosoftedgeWebviewfeedbackIssue634]\)
+*   Fixed an issue where WebView2 controls took focus away from the user's focus.
+*   Fixed bug when `AddScriptToExecuteOnDocumentCreated` did not work on child windows. \([\#935][GithubMicrosoftedgeWebviewfeedbackIssue935]\)
+*   Fixed bug which caused inactive tabs to be automatically discarded. \([\#637][GithubMicrosoftedgeWebviewfeedbackIssue637]\)
+*   Fixed a bug when a navigation event was interrupted by another navigation event resulting in the Navigation Id of `NavigationCompleted` events to be incorrect. \([\#1142][GithubMicrosoftedgeWebviewfeedbackIssue1142]\)
 
 #### Promotions
-*   [add_FrameCreated][Webview2ReferenceWin32Icorewebview24ViewWebview21090249AddFramecreated] is now stable.
-*   [get_IsGeneralAutofillEnabled][Webview2ReferenceWin32Icorewebview2settings4ViewWebview21090249GetIsgeneralautofillenabled] is now stable.
-*   [get_IsPinchZoomEnabled][Webview2ReferenceWin32Icorewebview2settings5ViewWebview21090249GetIspinchzoomenabled] is now stable.
-*   [Download API][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddDownloadstarting] is  now promoted to stable.
-*   [AddHostObjectToScriptWithOrigins][AddHostObjectToScriptWithOriginsAPI] API promoted to stable with iFrame element support.
+
+The following items are now in stable: 
+
+*   [add_FrameCreated][Webview2ReferenceWin32Icorewebview24ViewWebview21090249AddFramecreated].
+*   [get_IsGeneralAutofillEnabled][Webview2ReferenceWin32Icorewebview2settings4ViewWebview21090249GetIsgeneralautofillenabled].
+*   [get_IsPinchZoomEnabled][Webview2ReferenceWin32Icorewebview2settings5ViewWebview21090249GetIspinchzoomenabled].
+*   [The Download APIs][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddDownloadstarting].
+*   [AddHostObjectToScriptWithOrigins][AddHostObjectToScriptWithOriginsAPI] API with iFrame element support.
 
 ## 1.0.902-prerelease
 
