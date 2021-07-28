@@ -34,6 +34,7 @@ Release Date: July 26, 2021
 #### Experimental Features  
 *   Added [OpenTaskManagerWindow API][Webview2ReferenceWin32Icorewebview2experimental4ViewWebview210955PrereleaseOpentaskmanagerwindow] to launch a webview2 browser task manager.
 *   Added [NewWindowRequestedEventArgs][Webview2ReferenceWin32Icorewebview2experimentalnewwindowrequestedeventargsViewWebview210955PrereleaseGetName].
+*   Added [PDF Toolbar API][Webview2ReferenceWin32Icorewebview2experimentalnewwindowrequestedeventargsViewWebview210955PrereleaseGetName].
 
 #### Bug fixes  
 *   Fixed bug that broke the edge://downloads and edge://history pages. This change is Runtime-specific.
@@ -46,6 +47,7 @@ Release Date: July 26, 2021
 *   Fixed bug when ExecuteScriptAsync was blocking forever after several successful runs. This change is Runtime-specific. \([\#1348][GithubMicrosoftedgeWebviewfeedbackIssue1348]\)
 *   Fixed bug that prevented non-ASCII filenames from being used for `ResultFilePath` in DownloadStartingEventArgs. \([\#1428][GithubMicrosoftedgeWebviewfeedbackIssue1428]\)
 *   Fixed bug where the default popup's title bar is not displayed entirely. This change is Runtime-specific. \([\#1016][GithubMicrosoftedgeWebviewfeedbackIssue1016]\)
+*   Added support for virtual host name mapping to work with Service Workers.
 
 #### Promotions
 *   [add_ClientCertificateRequested][Webview2ReferenceWin32Icorewebview25ViewWebview210955PrereleaseAddClientcertificaterequested] API promoted to stable.
@@ -77,6 +79,8 @@ Release Date: July 26, 2021
 *   [add_FrameCreated][Webview2ReferenceWin32Icorewebview24ViewWebview21090249AddFramecreated] is now stable.
 *   [get_IsGeneralAutofillEnabled][Webview2ReferenceWin32Icorewebview2settings4ViewWebview21090249GetIsgeneralautofillenabled] is now stable.
 *   [get_IsPinchZoomEnabled][Webview2ReferenceWin32Icorewebview2settings5ViewWebview21090249GetIspinchzoomenabled] is now stable.
+*   [Download API][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddDownloadstarting] is  now promoted to stable.
+*   [AddHostObjectToScriptWithOrigins][AddHostObjectToScriptWithOriginsAPI] API promoted to stable with iFrame element support.
 
 ## 1.0.902-prerelease
 
