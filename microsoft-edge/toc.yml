@@ -201,8 +201,6 @@
               href: devtools-guide-chromium/inspect-styles/animations.md
             - name: Application
               items:
-                - name: Application cache
-                  href: devtools-guide-chromium/storage/applicationcache.md
                 - name: Cache
                   href: devtools-guide-chromium/storage/cache.md
                 - name: Cookies
@@ -481,6 +479,8 @@
               href: webview2/how-to/webdriver.md
             - name: Use Chromium DevTools Protocol in WebView2
               href: webview2/how-to/chromium-devtools-protocol.md
+            - name: Switch to a preview channel
+              href: webview2/how-to/set-preview-channel.md
         - name: Reference
           href: webview2/webview2-api-reference.md
           items:
