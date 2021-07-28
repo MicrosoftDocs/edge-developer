@@ -1,6 +1,6 @@
 ---
 description: In the WebView2 threading model, the WebView2 must be created on a UI thread with a message pump.
-title: Threading model
+title: Threading model for WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/28/2021
@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
-# Threading model 
+# Threading model for WebView2
 
 :::row:::
    :::column span="1":::
@@ -112,7 +112,7 @@ private async void Button_Click(object sender, EventArgs e)
 
 ## See also  
 
-*   To get started using WebView2, navigate to [WebView2 Get Started Guides][Webview2IndexGetStarted] guides.  
+*   To get started using WebView2, navigate to [WebView2 Get Started Guides][Webview2IndexGetStarted].  
 *   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] on GitHub.  
 *   For more detailed information about WebView2 APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2WpfWebview2].  
 *   For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].  
