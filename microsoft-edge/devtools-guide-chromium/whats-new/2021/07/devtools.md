@@ -12,7 +12,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
-<!-- 1, done -->
+<!-- 1 -->
 ## Apply themes from Visual Studio Code to DevTools
 
 <!-- Title: Apply themes from Visual Studio Code to DevTools -->
@@ -44,7 +44,7 @@ For more information, navigate to [Apply color themes to Microsoft Edge DevTools
 <!-- no crbug -->
 
 
-<!-- 2, done -->
+<!-- 2 -->
 ## Debug DOM node memory leaks with the new Detached Elements tool
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
@@ -63,10 +63,10 @@ The new **Detached Elements** tool finds all of the detached elements on your pa
 1. Select **X** to close **Settings**.  Select `F12` twice to restart DevTools.
 1. Select the **+** (**More Tools**) button and then select **Detached Elements**.
 1. In the webpage, select **Get started**.  If prompted, select a user account to login.
-1. Select the **+** next to **Add a task**, and then select **ADD**.
+1. Select the **+** next to **Add a task**, and then select **Add**.
 1. Select the task you created, select **Add due date**, select **Pick a date**, and then select a date from the calendar.  Then select **Save**.
 1. In DevTools, in the **Detached Elements** tool, select **Get Detached Elements**.
-1. If the **Analyze** button is grayed-out, add another task and date, then select **Get Detached Elements** again.
+1. If the **Analyze** button is grayed-out, add another task and date, then select **Get Detached Elements** again.<!--added extra step-->
 1. Select the **Analyze** button in the toolbar and wait for the **Id** column to populate.
 1. In the **Id** column, select an ID.  The **Memory** tool opens in the bottom panel, and displays the retainers list.
 
@@ -80,7 +80,7 @@ For more information, navigate to the **Detached Elements** section in [Experime
 <!-- no crbug -->
 
 
-<!-- 3, need screenshot -->
+<!-- 3 -->
 ## Microsoft Edge Developer Tools for Visual Studio Code now integrates with the Visual Studio Code Debugger workflow
 
 <!-- Title: While debugging, launch the DevTools extension by selecting the Inspect button -->
@@ -92,36 +92,30 @@ If you use the JavaScript debugging workflow in Visual Studio Code, you can now 
    The **Inspect** button in Visual Studio Code to launch the DevTools extension
 :::image-end:::
 
-This feature integrates DOM and CSS debugging with the JavaScript debugging workflow in Visual Studio Code.  If you don't have the DevTools extension installed, when you select the **Inspect** button, Visual Studio Code will prompt you to install the extension seamlessly.
+This feature integrates DOM and CSS debugging with the JavaScript debugging workflow in Visual Studio Code.  If you don't have the DevTools extension installed, when you select the **Inspect** button, Visual Studio Code prompts you to install the extension seamlessly.
 
 Other new features are:
 *  More detailed documentation of the extension.
 *  Several bug fixes.
 *  The tools refresh automatically when you switch between different debugging targets.
 
-For more details, check the changelog file in the [vscode-edge-devtools repo](https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md).
+For more details about improvements and fixes, check the changelog file in the [vscode-edge-devtools repo](https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md).
 
-<!-- :::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
-   __
-:::image-end::: -->
-<!-- to plan & make screenshot, see videos -->
-<!-- todo: delete video links? -->
-Videos of this feature in action:
-*  Usage with the extension already installed: [EdgeDevTools Breakpoint Debugging Integration](https://www.youtube.com/watch?v=UqFOICZRPAo)
-*  Usage including automatically installing the extension: [Debugger Installing EdgeDevTools](https://www.youtube.com/watch?v=1-6fRdqyoA0)
+:::image type="complex" source="../../media/2021/07/extension-integrated-debugger.msft.png" alt-text="DevTools extension integrated with Visual Studio Code Debugger workflow" lightbox="../../media/2021/07/extension-integrated-debugger.msft.png":::
+   DevTools extension integrated with Visual Studio Code Debugger workflow
+:::image-end:::
 
 For more information, navigate to [Launching Edge DevTools from the JS Debugger workflow][GithubVscodeEdgeDevtoolsDebuggerIntegration].
-
 <!-- todo: link to PR articles if available (soon).  Else the github page will link to those -->
+<!-- no crbug -->
 
+<!-- standard content for extension items: -->
 Get the [Microsoft Edge Developer Tools for Visual Studio Code extension][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools].  Microsoft Visual Studio Code updates extensions automatically.  To manually update the version, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].
 
 You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools].
 
-<!-- no crbug -->
 
-
-<!-- 4, done -->
+<!-- 4 -->
 ## New Fluent UI icons for DevTools
 
 <!-- Title: New look for buttons and menus in Microsoft Edge DevTools -->
@@ -136,7 +130,7 @@ Microsoft Edge DevTools has adopted [Fluent UI](https://developer.microsoft.com/
 <!-- no crbug -->
 
 
-<!-- 5, done -->
+<!-- 5 -->
 ## Change the DevTools display language directly from Settings
 
 <!-- Title: DevTools Settings now includes display language -->
@@ -151,7 +145,7 @@ Previously, to change the display language in DevTools, you had to change the br
 For options for changing settings, navigate to [Customize Microsoft Edge DevTools](../../../customize/index.md).  To review the history of this feature in the Chromium open-source project, navigate to Issue [2882756][CR2882756].
 
 
-<!-- 6, add easy screenshot -->
+<!-- 6 -->
 ## Copy a declaration in the Styles pane for CSS-in-JS libraries
 
 <!-- Title: Better support for CSS-in-JS libraries -->
@@ -159,28 +153,22 @@ For options for changing settings, navigate to [Customize Microsoft Edge DevTool
 
 Previously, when using CSS-in-JS libraries, you were not able to copy CSS declarations (a CSS property and value) formatted for JavaScript. You would have to edit the copied CSS to match JavaScript's syntax.
 
-Now in Microsoft Edge version 93, you are able to copy a single CSS declaration or all the declarations in a style rule and paste them directly into a JavaScript file without running into syntax issues. To try this feature, complete the following actions:
+Now in Microsoft Edge version 93, you can copy a single CSS declaration or all the declarations in a style rule and paste them directly into a JavaScript file without having syntax issues. To try this feature:
 
-1. Open the contextual menu (right-click) in the Styles pane on a declaration in a style rule.
+1. In the **Styles** pane of the **Elements** tool, right-click a declaration in a style rule.
 1. Select **Copy declaration as JS** or **Copy all declarations as JS**.
-1. Paste the copied CSS into a JavaScript file in your text editor, such as VS Code.
+1. Paste the copied CSS into a JavaScript file in your text editor, such as Visual Studio Code.  For example: `'--more-link': 'lime'`.
 
-<!-- :::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
-   __
-:::image-end::: -->
-<!-- Instructions for screenshot:
-1. Open DevTools > Elements.
-2. In the Styles pane, open the context menu on a declaration in a style rule
-3. See the "Copy declaration as JS" and "Copy all declarations as JS" context menu options.
-4. Take screenshot.
-5. Draw red outlines around both context menu options. -->
+:::image type="complex" source="../../media/2021/07/copy-declaration-as-js.msft.png" alt-text="Context menu for a style rule, including 'Copy declaration as JS' and 'Copy all declarations as JS' commands" lightbox="../../media/2021/07/copy-declaration-as-js.msft.png":::
+   Context menu for a style rule, including **Copy declaration as JS** and **Copy all declarations as JS** commands
+:::image-end:::
 
 To learn more about viewing and changing CSS, navigate to [CSS reference](../../../css/reference.md).
 
 <!-- no crbug -->
 
 
-<!-- 7, done -->
+<!-- 7 -->
 ## Easier customization of User-Agent Client Hints
 
 <!-- Title: Send as many (or as few) Client Hints as you want -->
@@ -218,7 +206,7 @@ For more information about this feature, navigate to [Emulate mobile devices in 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1174299][CR1174299].
 
 
-<!-- 8, need two screenshots -->
+<!-- 8 -->
 ## Screen readers now announce errors, warnings, and issues in toolbar and Console
 
 <!-- Title: Better support for errors, warnings, and issues with assistive technology -->
@@ -226,37 +214,20 @@ To review the history of this feature in the Chromium open-source project, navig
 
 Previously, users of screen readers would only hear the number of errors, warnings, or issues announced in the DevTools toolbar.  The additional information of what type of notification was being announced wasn't included, such as "Error, Warning, or Issue". For example, if the DevTools reported 3 errors, screen readers would just announce "3".
 
-Now in Microsoft Edge version 93, screen readers correctly announce the number of errors, warnings, or issues that the DevTools have detected and the type of notification. For example, if the DevTools reported 3 errors, screen readers now announce "3 errors".
-<!-- todo: what if 2 errors and 3 warnings?
-For example, if the DevTools reported 3 errors, screen readers now announce "3 errors".
- -->
-This fix has been applied to both the notifications in the DevTools toolbar and in the Console.
+Now in Microsoft Edge version 93, screen readers correctly announce the number of errors, warnings, or issues that the DevTools have detected and the type of notification. For example, if the DevTools reported 3 errors, screen readers now announce "3 errors".  This fix has been applied to both the notifications in the DevTools toolbar and in the Console.
 
-<!-- :::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
-   __
-:::image-end::: -->
-<!-- Instructions for screenshot
-(how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
+:::image type="complex" source="../../media/2021/07/screen-reader-errors-warnings-issues.msft.png" alt-text="The errors, warnings, and issues UI in the toolbar and Console" lightbox="../../media/2021/07/screen-reader-errors-warnings-issues.msft.png":::
+   The errors, warnings, and issues UI in the toolbar and **Console**
+:::image-end:::
 
-Screenshot 1:
-Open DevTools on reddit.com
-Draw a red outline around the errors, warnings, and issues UI in the toolbar here: 
-Image
-
-Screenshot 2:
-Open DevTools on reddit.com
-Navigate to the Console tool
-Draw a red outline around the issues UI in the Console here: Image
-Video recording of feature in action
-(we want to incorporate more multimedia assets into our What's New docs which drives engagement. Check out the wiki for instructions)
-It'd be good to have a video of this a11y fix where the text that the screen reader announces is displayed -->
+<!-- It'd be good to have a video of this a11y fix where the text that the screen reader announces is displayed -->
 
 For information about debugging Console errors, navigate to [Debug errors reported in Console](../../../console/console-debug-javascript.md).  For information about issues found by DevTools and improvements you can make to a webpage, navigate to [Find and fix problems using the Issues tool](../../../issues/index.md).
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1223208][CR1223208].
 
 
-<!-- 9, need easy screenshot -->
+<!-- 9 -->
 ## Copy as PowerShell in the Network tool now includes cookies
 
 <!-- Title: Generate PowerShell commands for network requests in the Network tool -->
@@ -264,18 +235,11 @@ To review the history of this feature in the Chromium open-source project, navig
 
 Previously, in the **Network** tool, the **Copy** > **Copy as PowerShell** context menu option didn't include cookies when generating a PowerShell command for a given network request in the Network Activity Log. This meant that the generated PowerShell command couldn't successfully make the same network request if cookies were required.
 
-Now in Microsoft Edge version 93, the **Copy as PowerShell** context menu option correctly sets the User-Agent string and cookies that were observed by the DevTools.  The generated PowerShell command can now successfully make the same network request that was observed by DevTools, even to servers that depend on cookies.
+Now in Microsoft Edge version 93, the **Copy as PowerShell** context menu option correctly sets the User-Agent string and cookies that were observed by DevTools.  The generated PowerShell command can now successfully make the same network request that was observed by DevTools, even to servers that depend on cookies.
 
-<!-- :::image type="complex" source="../../media/2021/07/__.msft.png" alt-text="__" lightbox="../../media/2021/07/__.msft.png":::
-   __
-:::image-end::: -->
-<!-- Instructions for screenshot
-Open the DevTools on page https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/
-Navigate to Network tool
-Refresh page
-Right-click any of the rows in the Network Activity Log
-Expand the Copy entry and highlight the Copy as PowerShell option
-Draw a red outline around the Copy as PowerShell option -->
+:::image type="complex" source="../../media/2021/07/copy-as-powershell.msft.png" alt-text="The Copy as PowerShell command" lightbox="../../media/2021/07/copy-as-powershell.msft.png":::
+   The **Copy as PowerShell** command
+:::image-end:::
 
 For more information about the Network Activity Log, navigate to [Network Analysis reference](../../../network/reference.md).
 <!-- "Network Analysis reference | Microsoft Docs" -->
