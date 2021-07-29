@@ -29,11 +29,10 @@ The Evergreen distribution mode is recommended for most developers.  In the _Eve
 Pros:
 *  The underlying web platform (WebView2 Runtime) updates automatically without additional effort from you.
 *  Less disk space is required for the WebView2 Runtime on client systems, because the WebView2 Runtime is shared by all WebView2 apps that are on the client.
+*  On eligible systems, binaries for Microsoft Edge and the Evergreen WebView2 Runtime are hard-linked together when they are on the same version.  This linking provides benefits for disk footprint, memory, and performance.
 
 Cons:
 *  Your WebView2 app cannot specify that a particular version of the WebView2 Runtime is required.
-*  Your app needs to test whether new WebView2 APIs are present in the installed Runtime, such as by using `QueryInterface` in C/C++, or a `try/catch` block in .NET or WinUI.  This is because there are a couple of cases where the WebView2 Runtime isn't updated on some clients.
-
 
 ### The Fixed Version Runtime distribution mode
 
@@ -103,8 +102,9 @@ The Evergreen WebView2 Runtime will be included as part of the Windows 11 operat
 
 The Evergreen distribution mode ensures that your WebView2 app is taking advantage of the latest WebView2 features and security updates.  The Evergreen distribution mode has the following characteristics:
 
-*   The WebView2 Runtime updates automatically without additional effort from you.
-*   All WebView2 apps that use the Evergreen distribution mode use a shared copy of the Evergreen WebView2 Runtime, which saves disk space.  
+*  The WebView2 Runtime updates automatically without additional effort from you.
+*  All WebView2 apps that use the Evergreen distribution mode use a shared copy of the Evergreen WebView2 Runtime, which saves disk space.
+*  On eligible systems, binaries for Microsoft Edge and the Evergreen WebView2 Runtime are hard-linked together when they are on the same version.  This linking provides benefits for disk footprint, memory, and performance.
 
 <!-- first half of paragraph 1 of post from github issue 341: https://github.com/MicrosoftEdge/WebView2Feedback/issues/341#issuecomment-747084537 -->
 When you use the Evergreen distribution mode of the WebView2 Runtime, your WebView2 app assumes that clients have the latest Runtime.  Your app cannot require a particular version of the WebView2 Runtime for all apps on the client.  By the time a new WebView2 SDK package is released, a compatible version of the WebView2 Runtime has already been distributed to clients.  Therefore it's ok for your WebView2 app to use the APIs that are in the latest version of the WebView2 SDK.
