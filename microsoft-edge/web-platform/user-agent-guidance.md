@@ -49,7 +49,7 @@ For more information, navigate to the at [W3C Community Draft Report | User-Agen
 
 When Microsoft Edge sends an HTTPS request to a server, it sends the User-Agent Client Hints headers that correspond to browser brand and mobile information. If the server requires more granular information about the browser, its response includes an `Accept-CH` header. The value of that response header is a comma-separated list of all the Client Hints request headers the server wants from the browser, such as `Accept-CH: Sec-CH-UA-Platform,Sec-CH-UA-Platform-Version`. The next Microsoft Edge HTTPS request to the server will include the requested User-Agent Client Hints headers.
 
-By default, Chromium browsers including Microsoft Edge send the `Accept-CH-UA` response header in the following format.  
+By default, Chromium browsers including Microsoft Edge send the `Sec-CH-UA` and `Sec-CH-UA-Mobile` response header in the following format.  
 
 ```https
 Sec-CH-UA: "Chromium";v="92", "Microsoft Edge";v="92","Placeholder;Browser Brand";v="99"
