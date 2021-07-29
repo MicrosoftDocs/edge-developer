@@ -47,9 +47,9 @@ For more information, navigate to the specification at [W3C Community Draft Repo
 
 ### User-Agent Client Hints HTTPS header
 
-When Microsoft Edge sends an HTTPS request to a server, it sends the User-Agent Client Hints headers that correspond to browser brand and mobile information. If the server requires more granular information about the browser, its response includes an `Accept-CH` header. The value of that response header is a comma-separated list of all the Client Hints request headers the server wants from the browser, such as `Accept-CH: Sec-CH-UA-Full-Version,Sec-CH-UA-Platform-Version`. The next Microsoft Edge HTTPS request to the server will include the requested User-Agent Client Hints headers.
+When Microsoft Edge sends an HTTPS request to a server, it sends a set of [low entropy][https://wicg.github.io/client-hints-infrastructure/#low-entropy-table] User-Agent Client Hints headers. If the server requires more granular information about the browser, its response includes an `Accept-CH` header. The value of that response header is a comma-separated list of all the Client Hints request headers the server wants from the browser, such as `Accept-CH: Sec-CH-UA-Full-Version,Sec-CH-UA-Platform-Version`. The next Microsoft Edge HTTPS request to the server will include the specified User-Agent Client Hints headers.
 
-By default, Microsoft Edge send the `Sec-CH-UA`, `Sec-CH-UA-Mobile`, and `Sec-CH-UA-Platform` response header in the following format.  
+By default, Microsoft Edge sends the `Sec-CH-UA`, `Sec-CH-UA-Mobile`, and `Sec-CH-UA-Platform` request headers in the following format.  
 
 ```https
 Sec-CH-UA: "Chromium";v="92", "Microsoft Edge";v="92","Placeholder;Browser Brand";v="99"
@@ -59,10 +59,10 @@ Sec-CH-UA-Platform: "Windows"
 
 The following table shows all available hints request headers with sample values.
 
-| User-Agent Request header | Example User-Agent response value |  
+| User-Agent request header | Example User-Agent response value |  
 |:--- |:--- |  
 | `Sec-CH-UA` | `"Chromium";v="91", "Microsoft Edge";v="91","GREASE";v="99"` |  
-| `Sec-CH-UA-Mobile` | `?0`, `?1` |  
+| `Sec-CH-UA-Mobile` | `?0` |  
 | `Sec-CH-UA-Full-Version` | `91.0.866.0` |  
 | `Sec-CH-UA-Platform` | `Windows` |  
 | `Sec-CH-UA-Platform-Version` | `10.0` |  
