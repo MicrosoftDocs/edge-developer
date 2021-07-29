@@ -43,13 +43,13 @@ Do not use User-Agent Client Hints to:
 - Block *unsupported* browsers.
 - Restrict access to features on your site.
 
-For more information, navigate to the at [W3C Community Draft Report | User-Agent Client Hints][https://wicg.github.io/ua-client-hints/].
+For more information, navigate to the specification at [W3C Community Draft Report | User-Agent Client Hints][https://wicg.github.io/ua-client-hints/].
 
 ### User-Agent Client Hints HTTPS header
 
 When Microsoft Edge sends an HTTPS request to a server, it sends the User-Agent Client Hints headers that correspond to browser brand and mobile information. If the server requires more granular information about the browser, its response includes an `Accept-CH` header. The value of that response header is a comma-separated list of all the Client Hints request headers the server wants from the browser, such as `Accept-CH: Sec-CH-UA-Platform,Sec-CH-UA-Platform-Version`. The next Microsoft Edge HTTPS request to the server will include the requested User-Agent Client Hints headers.
 
-By default, Chromium browsers including Microsoft Edge send the `Sec-CH-UA` and `Sec-CH-UA-Mobile` response header in the following format.  
+By default, Microsoft Edge send the `Sec-CH-UA` and `Sec-CH-UA-Mobile` response header in the following format.  
 
 ```https
 Sec-CH-UA: "Chromium";v="92", "Microsoft Edge";v="92","Placeholder;Browser Brand";v="99"
@@ -61,11 +61,12 @@ The following table shows all available hints request headers with sample values
 | User-Agent Request header | Example User-Agent response value |  
 |:--- |:--- |  
 | `Sec-CH-UA` | `"Chromium";v="91", "Microsoft Edge";v="91","GREASE";v="99"` |  
-| `Sec-CH-UA-Mobile` | `false` |  
+| `Sec-CH-UA-Mobile` | `?0`, `?1` |  
 | `Sec-CH-UA-Full-Version` | `91.0.866.0` |  
 | `Sec-CH-UA-Platform` | `Windows` |  
 | `Sec-CH-UA-Platform-Version` | `10.0` |  
-| `Sec-CH-UA-Arch` | `x86` |  
+| `Sec-CH-UA-Arch` | `x86` | 
+| `Sec-CH-UA-Bitness` | `64` |
 | `Sec-CH-UA-Model` | `Surface Pro` |  
 
 > [!NOTE]
@@ -120,7 +121,7 @@ Combining User-Agent Client Hints with [feature detection][MdnLearnToolsTestingC
 * Reduce code fragility.  
 * Reduce code breakage from changes to the User-Agent String.
 
-If you need to check for a Chromium-based browser, Microsoft recommends detecting `Chromium`; the engine that powers both Microsoft Edge and Google Chrome.
+If you need to check for a Chrome-like browser, Microsoft recommends detecting `Chromium`; the engine that powers both Microsoft Edge and Google Chrome.
 
 Use this method to verify the `Chromium` brand and apply detection to all affected Chromium-based browsers.
 
@@ -143,7 +144,7 @@ If you cannot use [feature detection][MdnLearnToolsTestingCrossBrowserTestingFea
 
 User-Agent strings are outdated and have a long history of causing website compatibility issues.
 
-Wherever possible, Microsoft recommends minimizing use of Microsoft Edge browser detection logic based on the user-agent string. If you have a good reason to detect the user agent, the Microsoft Edge team recommends using [User-Agent Client Hints](#user-agent-client-hints) as the primary detection logic. [User-Agent Client Hints](#user-agent-client-hints) also reduces the required number of parsed strings.
+Wherever possible, Microsoft recommends minimizing use of Microsoft Edge browser detection logic based on the user-agent string. If you have a good reason to detect the browser, the Microsoft Edge team recommends using [User-Agent Client Hints](#user-agent-client-hints) as the primary detection logic. [User-Agent Client Hints](#user-agent-client-hints) also reduces the complexity of browser detection code.
 
 For legacy reference, the following format was used for User-Agent string.  
 
