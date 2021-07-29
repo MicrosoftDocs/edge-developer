@@ -41,12 +41,12 @@ Release Date: July 26, 2021
 *   Fixed bugs to improve reliability in the WebView2Loader.dll.
 *   Fixed bug in which `NewWindowRequested` event handler launched two windows when handling links that use `target=_blank`.
 *   Fixed a bug in WebView visual hosting that flickered before startup.
-*   Fixed bug when `add_WebResourceRequested` did not work on WebView2 controls created using `add_NewWindowRequested`. \([\#616][GithubMicrosoftedgeWebviewfeedbackIssue616]\)
+*   Fixed bug when `add_WebResourceRequested` didn't work on WebView2 controls created using `add_NewWindowRequested`. \([\#616][GithubMicrosoftedgeWebviewfeedbackIssue616]\)
 *   Allow the host app to set foreground on a different application in response to events including `NavigationStarting`, `AddHostObjectToScript` methods, `WebMessageReceived`, and `NewWindowRequested`. \([\#1092][GithubMicrosoftedgeWebviewfeedbackIssue1092]\)
 *   Fix bug to trigger the `PermissionRequested` event for the microphone. This change is Runtime-specific.\([\#1462][GithubMicrosoftedgeWebviewfeedbackIssue1462]\)
 *   Fixed bug when `ExecuteScriptAsync` blocked after several successful runs. This change is Runtime-specific. \([\#1348][GithubMicrosoftedgeWebviewfeedbackIssue1348]\)
 *   Fixed bug preventing non-ASCII filenames from being used in `ResultFilePath` in `DownloadStartingEventArgs`. \([\#1428][GithubMicrosoftedgeWebviewfeedbackIssue1428]\)
-*   Fixed bug where the title bar on the default popup was not displayed completely. This change is Runtime-specific. \([\#1016][GithubMicrosoftedgeWebviewfeedbackIssue1016]\)
+*   Fixed bug where the title bar on the default popup wasn't displayed completely. This change is Runtime-specific. \([\#1016][GithubMicrosoftedgeWebviewfeedbackIssue1016]\)
 *   Added support for virtual host name mapping to work with Service Workers.
 
 #### Promotions
@@ -56,7 +56,7 @@ Release Date: July 26, 2021
     
 #### Bug fixes  
 *   Fixed an issue in WebView2 .NET API reference documentation that caused only the first exception to be displayed.
-*   .Net core libraries are now built in release mode. To debug, please ensure you clear the **Just my code** checkbox.
+*   .NET core libraries are now built in release mode. To debug, ensure you clear the **Just my code** checkbox.
 *   Fixed a bug that crashed WebView2 on forms with child forms. The child form, with the find in page bar open, caused WebView2 to crash when the child form was closed. \([\#1097][GithubMicrosoftedgeWebviewfeedbackIssue1097]\)
 
 ## 1.0.902.49
@@ -68,11 +68,11 @@ Release Date: July 26, 2021
 ### General  
 
 #### Bug Fixes  
-*   Fix bug that broke the `IsBuiltInErrorPageEnabled` property which turned off the error page that's displayed when there's a navigation failure or render process failure.  This change is Runtime-specific. \([\#634][GithubMicrosoftedgeWebviewfeedbackIssue634]\)
+*   Fix bug that broke the `IsBuiltInErrorPageEnabled` property, which turned off the error page that's displayed when there's a navigation failure or render process failure.  This change is Runtime-specific. \([\#634][GithubMicrosoftedgeWebviewfeedbackIssue634]\)
 *   Fixed an issue where WebView2 controls took focus away from the user's focus.
-*   Fixed bug when `AddScriptToExecuteOnDocumentCreated` did not work on child windows. \([\#935][GithubMicrosoftedgeWebviewfeedbackIssue935]\)
-*   Fixed bug which caused inactive tabs to be automatically discarded. \([\#637][GithubMicrosoftedgeWebviewfeedbackIssue637]\)
-*   Fixed a bug when a navigation event was interrupted by another navigation event resulting in the Navigation Id of `NavigationCompleted` events to be incorrect. \([\#1142][GithubMicrosoftedgeWebviewfeedbackIssue1142]\)
+*   Fixed bug when `AddScriptToExecuteOnDocumentCreated` didn't work on child windows. \([\#935][GithubMicrosoftedgeWebviewfeedbackIssue935]\)
+*   Fixed a bug that caused inactive tabs to be automatically discarded. \([\#637][GithubMicrosoftedgeWebviewfeedbackIssue637]\)
+*   Fixed a bug when a navigation event was interrupted by another navigation event resulting in the Navigation ID of `NavigationCompleted` events to be incorrect. \([\#1142][GithubMicrosoftedgeWebviewfeedbackIssue1142]\)
 
 #### Promotions
 
