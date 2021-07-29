@@ -47,13 +47,14 @@ For more information, navigate to the specification at [W3C Community Draft Repo
 
 ### User-Agent Client Hints HTTPS header
 
-When Microsoft Edge sends an HTTPS request to a server, it sends the User-Agent Client Hints headers that correspond to browser brand and mobile information. If the server requires more granular information about the browser, its response includes an `Accept-CH` header. The value of that response header is a comma-separated list of all the Client Hints request headers the server wants from the browser, such as `Accept-CH: Sec-CH-UA-Platform,Sec-CH-UA-Platform-Version`. The next Microsoft Edge HTTPS request to the server will include the requested User-Agent Client Hints headers.
+When Microsoft Edge sends an HTTPS request to a server, it sends the User-Agent Client Hints headers that correspond to browser brand and mobile information. If the server requires more granular information about the browser, its response includes an `Accept-CH` header. The value of that response header is a comma-separated list of all the Client Hints request headers the server wants from the browser, such as `Accept-CH: Sec-CH-UA-Full-Version,Sec-CH-UA-Platform-Version`. The next Microsoft Edge HTTPS request to the server will include the requested User-Agent Client Hints headers.
 
-By default, Microsoft Edge send the `Sec-CH-UA` and `Sec-CH-UA-Mobile` response header in the following format.  
+By default, Microsoft Edge send the `Sec-CH-UA`, `Sec-CH-UA-Mobile`, and `Sec-CH-UA-Platform` response header in the following format.  
 
 ```https
 Sec-CH-UA: "Chromium";v="92", "Microsoft Edge";v="92","Placeholder;Browser Brand";v="99"
 Sec-CH-UA-Mobile: ?0
+Sec-CH-UA-Platform: "Windows"
 ```  
 
 The following table shows all available hints request headers with sample values.
@@ -83,7 +84,7 @@ mobile: false }
 
 Microsoft Edge includes a `GREASE` brand value that changes over time. It prevents sites from matching the entire brand list when attempting to detect a version of Microsoft Edge.
 
-To request more detailed information such as platform, use the following code.  
+To request more detailed information such as `platform`, use the following code.
 
 :::row:::
    :::column span="":::
@@ -144,7 +145,7 @@ If you cannot use [feature detection][MdnLearnToolsTestingCrossBrowserTestingFea
 
 User-Agent strings are outdated and have a long history of causing website compatibility issues.
 
-Wherever possible, Microsoft recommends minimizing use of Microsoft Edge browser detection logic based on the user-agent string. If you have a good reason to detect the browser, the Microsoft Edge team recommends using [User-Agent Client Hints](#user-agent-client-hints) as the primary detection logic. [User-Agent Client Hints](#user-agent-client-hints) also reduces the complexity of browser detection code.
+Wherever possible, Microsoft recommends minimizing use of Microsoft Edge browser detection logic based on the User-Agent String. If you have a good reason to detect the browser, the Microsoft Edge team recommends using [User-Agent Client Hints](#user-agent-client-hints) as the primary detection logic. [User-Agent Client Hints](#user-agent-client-hints) also reduces the complexity of browser detection code.
 
 For legacy reference, the following format was used for User-Agent string.  
 
@@ -194,7 +195,7 @@ The overrides specify new user agent values that Microsoft Edge sends instead of
 
 The Microsoft Edge Canary and Dev channels don't currently receive user agent overrides. The Microsoft Edge Canary and Dev channels provide environments that use the default Microsoft Edge user agent. Use the Microsoft Edge Canary and Dev channels to reproduce issues on your website caused by the default Microsoft Edge user agent. To turn off user agent overrides in the Microsoft Edge Beta or Stable channels, complete the following actions.  
 
-1. Open a command prompt. For example, enter **CMD** in the Windows search text box and select the **Command Prompt** app.
+1. Open a command prompt. For example, enter **cmd** in the Windows search text box and select the **Command Prompt** app.
 1. Copy the following code snippet.  
 
     ```shell
