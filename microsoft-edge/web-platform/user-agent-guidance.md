@@ -43,7 +43,8 @@ Do not use User-Agent Client Hints to:
 - Block *unsupported* browsers.
 - Restrict access to features on your site.
 
-For more information, navigate to the specification at [W3C Community Draft Report | User-Agent Client Hints][https://wicg.github.io/ua-client-hints/].
+For more information, navigate to the specification at [W3C Community Draft Report | User-Agent Client Hints][W3CCommunityDraftReportUserAgentClientHints].
+
 
 ### User-Agent Client Hints HTTPS header
 
@@ -217,3 +218,5 @@ The Microsoft Edge Canary and Dev channels don't currently receive user agent ov
 [MdnLearnToolsTestingCrossBrowserTestingFeatureDetection]: https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection "Implementing feature detection | MDN" 
 
 [ReduceUserAgentStringInformation]: https://www.chromestatus.com/feature/5704553745874944 "Feature: Reduce User Agent string information"
+
+[W3CCommunityDraftReportUserAgentClientHints]: https://wicg.github.io/ua-client-hints/ "W3C Community Draft Report | User-Agent Client Hints"
