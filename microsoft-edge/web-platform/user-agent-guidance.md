@@ -33,7 +33,7 @@ If you must detect browsers, Microsoft recommends using client hints as follows.
 
 Microsoft Edge supports User-Agent Client Hints starting with version 90.
 
-User-Agent Client Hints is a cleaner, more privacy-preserving way to access browser information such as browser name, version number, platform, and more. Soon the User-Agent string will be frozen and deprecated by various browsers. For example, the Chrome Platform Status site describes the change in [Feature: Reduce User-Agent string information][https://www.chromestatus.com/feature/5704553745874944].
+User-Agent Client Hints is a cleaner, more privacy-preserving way to access browser information such as browser name, version number, platform, and more. Soon the User-Agent string will be frozen and deprecated by various browsers. For example, the Chrome Platform Status site describes the change in [Feature: Reduce User-Agent string information][ReduceUserAgentStringInformation].
 
 Employ User-Agent Client Hints when you want to:
 - Determine if new browser activity is from the expected user.
@@ -215,3 +215,5 @@ The Microsoft Edge Canary and Dev channels don't currently receive user agent ov
 [GithubWicgUaClientHintsGethighentropyvalues]: https://wicg.github.io/ua-client-hints#getHighEntropyValues "4.1.5. getHighEntropyValues method - User-Agent Client Hints | GitHub"  
 
 [MdnLearnToolsTestingCrossBrowserTestingFeatureDetection]: https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection "Implementing feature detection | MDN" 
+
+[ReduceUserAgentStringInformation]: https://www.chromestatus.com/feature/5704553745874944 "Feature: Reduce User Agent string information"
