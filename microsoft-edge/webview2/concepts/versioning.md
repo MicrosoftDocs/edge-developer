@@ -35,7 +35,7 @@ The release package contains all of the stable, supported Win32 C/C++ and .NET A
 The WebView team is seeking feedback on experimental APIs that may be included in future releases.  The experimental APIs are marked as `experimental` in the SDK.  To help you evaluate the Experimental APIs and share your feedback, navigate to the [WebView feedback repo][GithubMicrosoftedgeWebviewfeedback].  
 
 > [!CAUTION]
-> Experimental APIs may be introduced, modified, and removed from SDK to SDK.  Avoid using the experimental APIs in production apps.  
+> Experimental APIs may be introduced, modified, and removed from SDK to SDK.  Avoid using the experimental APIs in production apps.  After the release of an API as stable and public, Microsoft supports the experimental version of that API for two releases in a deprecated state. 
 
 > [!NOTE]
 > Experimental APIs may not be available in your installed version of the WebView2 Runtime.  
