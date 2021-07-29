@@ -34,7 +34,8 @@ Release Date: July 26, 2021
 #### Experimental Features  
 *   Added [OpenTaskManagerWindow][Webview2ReferenceWin32Icorewebview2experimental4ViewWebview210955PrereleaseOpentaskmanagerwindow] to launch a WebView2 browser task manager.
 *   Added [NewWindowRequestedEventArgs][Webview2ReferenceWin32Icorewebview2experimentalnewwindowrequestedeventargsViewWebview210955PrereleaseGetName].
-*   Added [PDF Toolbar API][Webview2ReferenceWin32Icorewebview2experimentalnewwindowrequestedeventargsViewWebview210955PrereleaseGetName].
+<!-- *   Added [PDF Toolbar API][Webview2ReferenceWin32Icorewebview2experimentalnewwindowrequestedeventargsViewWebview210955PrereleaseGetName]. -->
+*   Added support for virtual host name mapping to work with Service Workers.
 
 #### Bug fixes  
 *   Fixed bug that broke the `edge://downloads` and `edge://history` pages. This change is Runtime-specific.
@@ -47,7 +48,6 @@ Release Date: July 26, 2021
 *   Fixed bug when `ExecuteScriptAsync` blocked after several successful runs. This change is Runtime-specific. \([\#1348][GithubMicrosoftedgeWebviewfeedbackIssue1348]\)
 *   Fixed bug preventing non-ASCII filenames from being used in `ResultFilePath` in `DownloadStartingEventArgs`. \([\#1428][GithubMicrosoftedgeWebviewfeedbackIssue1428]\)
 *   Fixed bug where the title bar on the default popup wasn't displayed completely. This change is Runtime-specific. \([\#1016][GithubMicrosoftedgeWebviewfeedbackIssue1016]\)
-*   Added support for virtual host name mapping to work with Service Workers.
 
 #### Promotions
 *   [add_ClientCertificateRequested][Webview2ReferenceWin32Icorewebview25ViewWebview210955PrereleaseAddClientcertificaterequested] was promoted to stable.
