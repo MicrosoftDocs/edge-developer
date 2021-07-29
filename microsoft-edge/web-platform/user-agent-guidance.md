@@ -1,5 +1,5 @@
 ---
-description: This article describes how to detect Microsoft Edge data with user-agent client hints and user-agent string
+description: This article describes how to detect Microsoft Edge data with user-agent client hints and the user-agent string
 title: Detecting Microsoft Edge from your website
 author: MSEdgeTeam
 ms.author: msedgedevrel
