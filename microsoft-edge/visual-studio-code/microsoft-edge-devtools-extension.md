@@ -32,7 +32,7 @@ This article describes the Microsoft Edge Developer Tools for Visual Studio Code
 
 To open the tools panel, choose the Microsoft Edge Tools icon from the Activity bar.
 
-The Microsoft Edge Developer Tools for Visual Studio Code extension enables you to launch an instance of Edge or generate a `launch.json` file to automate the debugging workflow in the future. 
+The Microsoft Edge Developer Tools for Visual Studio Code extension allows you to launch an instance of Edge or generate a `launch.json` file to automate the debugging workflow. 
 
 :::image type="complex" source="./media/edge-devtools-for-vscode-extension-icon.png" alt-text="Microsoft Edge DevTools for Visual Studio Code extension" lightbox="./media/edge-devtools-for-vscode-extension-icon.png":::
    Microsoft Edge DevTools for Visual Studio Code extension  
