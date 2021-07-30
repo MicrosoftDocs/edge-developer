@@ -199,8 +199,6 @@
               href: devtools-guide-chromium/inspect-styles/animations.md
             - name: Application
               items:
-                - name: Application cache
-                  href: devtools-guide-chromium/storage/applicationcache.md
                 - name: Cache
                   href: devtools-guide-chromium/storage/cache.md
                 - name: Cookies
@@ -445,7 +443,7 @@
               href: webview2/concepts/browser-features.md
             - name: Distributing my app
               href: webview2/concepts/distribution.md
-            - name: Managing User Data Folders
+            - name: Manage the user data folder
               href: webview2/concepts/user-data-folder.md
             - name: Managing WebView2 applications
               href: webview2/concepts/enterprise.md
@@ -479,6 +477,8 @@
               href: webview2/how-to/webdriver.md
             - name: Use Chromium DevTools Protocol in WebView2
               href: webview2/how-to/chromium-devtools-protocol.md
+            - name: Switch to a preview channel
+              href: webview2/how-to/set-preview-channel.md
         - name: Reference
           href: webview2/webview2-api-reference.md
           items:
