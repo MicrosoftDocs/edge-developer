@@ -138,7 +138,7 @@ function isChromium() {
 }
 ```
 
-Display orders of brand names change over time. Avoid hard-coding checks for brands at specific indices.
+Use the above method to avoid hard-coding checks for brands at specific indices. Display orders of brand names can change over time. 
 
 If you cannot use [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection], don't use a hardcoded list of known Chromium-based browsers for verification. Examples of hardcoded browser names include `Microsoft Edge` and `Google Chrome`. [Feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] may not be available because a fix for a Chromium bug in later versions must be avoided and the affected browsers are difficult to detect.
 
