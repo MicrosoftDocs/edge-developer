@@ -144,31 +144,21 @@ To learn more about viewing and changing CSS, navigate to [CSS reference](../../
 
 User-Agent Client Hints makes browser information more accessible than a semicolon-delimited User-Agent string, and improves site compatibility.  Initially, User-Agent Client Hints were time-consuming to test and debug.  There was less control over the client hints, and client hints had to be filled-in properly for the form to work.
 
-In this release, we redesigned the debugging experience so you can easily modify User-Agent Client Hints through a UI with multiple separate fields and controls.  Also, you can now test your custom User-Agent Client Hints and a User-Agent string simultaneously.  You can now define User-Agent Client Hints for a custom device by using DevTools **Settings** or by using the **Network conditions** tool.
-
-To define User-Agent Client Hints for a custom device by using DevTools **Settings**:
-1. Navigate to **DevTools** > **Settings** \(![Settings icon](../../../media/settings-icon-dark.msft.png)\) > **Devices**.
-1. In the **Emulated Devices** settings page, select the **Add custom device** button.
-1. Expand the **User agent client hints** section.
-1. Fill in some of the fields.
+In this release, we redesigned the debugging experience so you can easily modify User-Agent Client Hints through a UI with multiple separate fields and controls.  Also, you can now test your custom User-Agent Client Hints and a User-Agent string simultaneously.  You can now define User-Agent Client Hints for a custom device in **Settings** or in the **Network conditions** tool.
 
 :::image type="complex" source="../../media/2021/07/ua-client-hints-in-settings.msft.png" alt-text="Defining User-Agent Client Hints for a custom device in Settings" lightbox="../../media/2021/07/ua-client-hints-in-settings.msft.png":::
    Defining User-Agent Client Hints for a custom device in **Settings**
 :::image-end:::
 
-To override User-Agent Client Hints for the current page by using the **Network conditions** tool:
-1. In **DevTools**, select the **Network conditions** tool.  You might need to select **More Tools** (+) and then select **Network conditions**.
-1. In the **User agent** row, clear the **Use browser default** checkbox.
-1. Expand the **User agent client hints** section.
-1. Keep **Custom** selected in the drop-down list, and fill in some of the fields.  Or, in the drop-down list, select an existing device, to automatically fill in the fields based on an existing device.
+For more information about defining hints in **Settings**, navigate to [Set user agent client hints](../../..//device-mode/index.md#set-user-agent-client-hints).
+
+You can also override User-Agent Client Hints for the current page by using the **Network conditions** tool.
 
 :::image type="complex" source="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png" alt-text="Defining User-Agent Client Hints for a custom device in the Network conditions tool" lightbox="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png":::
    Defining User-Agent Client Hints for a custom device in the **Network conditions** tool
 :::image-end:::
 
-For more information about this feature, navigate to [Detecting Microsoft Edge from your website][DevToolsWebPlatformUserAgentGuidance].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1174299][CR1174299].
-
-<!-- For more information about this feature, navigate to [Emulate mobile devices in Microsoft Edge DevTools](../../../device-mode/index.md#set-user-agent-client-hints) and [Network Analysis reference](../../../network/reference.md#set-user-agent-client-hints). -->
+For more information about defining hints in the **Network conditions** tool, navigate to [Set user agent client hints](../../../network/reference.md#set-user-agent-client-hints).  To review the history of this feature in the Chromium open-source project, navigate to Issue [1174299][CR1174299].
 
 
 ## Screen readers now announce errors, warnings, and issues in toolbar and Console
@@ -216,9 +206,8 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 
 <!-- links -->
-[DevToolsWebPlatformUserAgentGuidance]: ../../../../web-platform/user-agent-guidance.md "Detecting Microsoft Edge from your website | Microsoft Docs"
 <!-- external links -->
-[FluentUI]: https://developer.microsoft.com/en-us/fluentui#/ "Fluent UI"
+[FluentUI]: https://developer.microsoft.com/en-us/fluentui#/ "Fluent UI | developer.microsoft.com"
 
 [CR1174299]: https://bugs.chromium.org/p/chromium/issues/detail?id=1174299 "Issue 1174299: UA Client Hints dropped when overriding UA string via Chrome DevTools' Network conditions tab | Chromium bugs"
 [CR2882756]: https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756 "Issue 2882756: \[l10n\] Add setting for users to choose DevTools locale | Chromium bugs"
