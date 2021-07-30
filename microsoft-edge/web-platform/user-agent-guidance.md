@@ -3,7 +3,7 @@ description: This article describes how to detect Microsoft Edge data with user-
 title: Detecting Microsoft Edge from your website
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/29/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, user-agent string, ua string, ua overrides, user-agent client hints, user agent client hints, ua client hints, ua ch, feature detection, browser identification, browser detection, header, https header, verify chromium, detect microsoft edge, detecting microsoft edge
@@ -48,7 +48,7 @@ For more information, navigate to the specification at [W3C Community Draft Repo
 
 ### User-Agent Client Hints HTTPS header
 
-When Microsoft Edge sends an HTTPS request to a server, it sends a set of [low entropy][https://wicg.github.io/client-hints-infrastructure/#low-entropy-table] User-Agent Client Hints headers. If the server requires more granular information about the browser, its response includes an `Accept-CH` header. The value of that response header is a comma-separated list of all the Client Hints request headers the server wants from the browser, such as `Accept-CH: Sec-CH-UA-Full-Version,Sec-CH-UA-Platform-Version`. The next Microsoft Edge HTTPS request to the server will include the specified User-Agent Client Hints headers.
+When Microsoft Edge sends an HTTPS request to a server, it sends a set of low entropy User-Agent Client Hints headers. For more information, navigate to [Low entropy hint table][LowEntropyHintTable]. If the server requires more granular information about the browser, its response includes an `Accept-CH` header. The value of that response header is a comma-separated list of all the Client Hints request headers the server wants from the browser, such as `Accept-CH: Sec-CH-UA-Full-Version,Sec-CH-UA-Platform-Version`. The next Microsoft Edge HTTPS request to the server will include the specified User-Agent Client Hints headers.
 
 By default, Microsoft Edge sends the `Sec-CH-UA`, `Sec-CH-UA-Mobile`, and `Sec-CH-UA-Platform` request headers in the following format.  
 
@@ -76,9 +76,9 @@ The following table shows all available hints request headers with sample values
 
 ### User-Agent Client Hints JavaScript API  
 
-You can access User-Agent Client Hints using JavaScript on the client side. When you call the default `navigator.userAgentData` it returns the following response.  
+You can access User-Agent Client Hints using JavaScript on the client side. When you call the default `navigator.userAgentData`, it returns the following response.  
 
-```javascript
+```JSON
 { brands: [ {brand: "Chromium","version":"91"}, {brand: "Microsoft Edge","version":"91"}, {brand: "GREASE","version":"99"}, ]
 mobile: false }
 ```  
@@ -87,32 +87,23 @@ Microsoft Edge includes a `GREASE` brand value that changes over time. It preven
 
 To request more detailed information such as `platform`, use the following code.
 
-:::row:::
-   :::column span="":::
-      The following code snippet sends a request.  
-   :::column-end:::
-   :::column span="":::
-      To receive the following response.  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      ```javascript
-         navigator.userAgentData.getHighEntropyValues(
-             ["architecture", "model", "platform", "platformVersion", "uaFullVersion"])
-             .then(ua => { console.log(ua) });
-      ```  
-   :::column-end:::
-   :::column span="":::
-      ```javascript
-      {architecture: "x86", 
-      model: "", 
-      platform: "Windows", 
-      platformVersion: "10.0", 
-      uaFullVersion: "92.0.866.0"}
-      ```  
-   :::column-end:::
-:::row-end:::  
+The following code snippet sends a request.
+
+```javascript
+navigator.userAgentData.getHighEntropyValues(
+   ["architecture", "model", "platform", "platformVersion", "uaFullVersion"])
+      .then(ua => { console.log(ua) });
+``` 
+
+To receive the following response.  
+
+```javascript
+{architecture: "x86", 
+   model: "", 
+   platform: "Windows", 
+   platformVersion: "10.0", 
+   uaFullVersion: "92.0.866.0"}
+```  
 
 For more information, navigate to [getHighEntropyValues()][GithubWicgUaClientHintsGethighentropyvalues].
 
@@ -123,7 +114,7 @@ Combining User-Agent Client Hints with [feature detection][MdnLearnToolsTestingC
 * Reduce code fragility.  
 * Reduce code breakage from changes to the User-Agent String.
 
-If you need to check for a Chrome-like browser, Microsoft recommends detecting `Chromium`; the engine that powers both Microsoft Edge and Google Chrome.
+If you need to check for a Chrome-like browser, Microsoft recommends detecting `Chromium`, which is the engine that powers Microsoft Edge.
 
 Use this method to verify the `Chromium` brand and apply detection to all affected Chromium-based browsers.
 
@@ -150,26 +141,17 @@ Wherever possible, Microsoft recommends minimizing use of Microsoft Edge browser
 
 For legacy reference, the following format was used for User-Agent string.  
 
-:::row:::
-   :::column span="":::
-      On Windows, the `User-Agent` HTTP request header uses the following format.  
-   :::column-end:::
-   :::column span="":::
-      On Android, the `User-Agent` HTTP request header uses the following format.  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      ```https
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46
-      ```  
-   :::column-end:::
-   :::column span="":::
-      ```https
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Mobile Safari/537.36 Edg/90.0.818.46
-      ```  
-   :::column-end:::
-:::row-end:::  
+On Windows, the `User-Agent` HTTP request header uses the following format.
+
+```https
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46
+```  
+
+On Android, the `User-Agent` HTTP request header uses the following format.
+
+```https
+User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Mobile Safari/537.36 Edg/90.0.818.46
+```    
 
 The response value from `navigator.userAgent` method uses the following format.  
 
@@ -220,3 +202,5 @@ The Microsoft Edge Canary and Dev channels don't currently receive user agent ov
 [ReduceUserAgentStringInformation]: https://www.chromestatus.com/feature/5704553745874944 "Feature: Reduce User Agent string information"
 
 [W3CCommunityDraftReportUserAgentClientHints]: https://wicg.github.io/ua-client-hints/ "W3C Community Draft Report | User-Agent Client Hints"
+
+[LowEntropyHintTable]: https://wicg.github.io/client-hints-infrastructure/#low-entropy-table "Low entropy hint table"
