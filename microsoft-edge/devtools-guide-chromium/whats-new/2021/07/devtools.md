@@ -49,9 +49,9 @@ For more information, navigate to [Apply color themes to Microsoft Edge DevTools
 <!-- Title: Introducing the Detached Elements tool -->
 <!-- Subtitle: Use the Detached Elements tool to find and fix DOM node memory leaks. -->
 
-A DOM node is considered "detached" when it is no longer attached to any element of the DOM but is still being retained in memory by Microsoft Edge. The browser cannot garbage-collect the element, because some JavaScript is still referencing the element even though it's no longer on the page or is not longer a part of the DOM.
+A DOM node is considered "detached" when it is no longer attached to any element of the DOM but is still being retained in memory by Microsoft Edge. The browser cannot garbage-collect the element, because some JavaScript is still referencing the element even though it's no longer on the page or a part of the DOM.
 
-The new **Detached Elements** tool finds all of the detached elements on your page and displays them. You can expand and collapse a detached element to see the parent and child nodes that are also being retained. You can trigger the browser's garbage collection by selecting **Collect garbage** and validate that you have a memory leak when a detached element cannot be garbage-collected. And you can jump into JavaScript that's referencing the detached element by taking a heap snapshot with the **Analyze** button.
+The new **Detached Elements** tool finds all of the detached elements on your page and displays them. You can expand and collapse a detached element to see the parent and child nodes that are also being retained. You can trigger the browser's garbage collection by selecting **Collect garbage** and validate that you have a memory leak when a detached element cannot be garbage-collected. Finally, you can jump into JavaScript that's referencing the detached element by taking a heap snapshot with the **Analyze** button.
 
 :::image type="complex" source="../../media/2021/07/detached-elements-tool.msft.png" alt-text="The Detached Elements tool" lightbox="../../media/2021/07/detached-elements-tool.msft.png":::
    The **Detached Elements** tool
@@ -107,7 +107,7 @@ Microsoft Edge DevTools has adopted [Fluent UI](https://developer.microsoft.com/
 <!-- Title: DevTools Settings now includes display language -->
 <!-- Subtitle: You can now skip the browser settings and change the DevTools display language directly within DevTools Settings. -->
 
-Previously, to change the display language in DevTools, you had to change the browser language.  Now you can easily switch the locale in DevTools **Settings**, without having to change your browser settings.  To do this, open **Settings**, and then in **Preferences**, select a language from the **Language** drop-down list.
+Previously, to change the display language in DevTools, you had to change the browser language.  Now you can easily switch the display language in DevTools **Settings**, without having to change your browser settings.  To do this, open **Settings**, and then in **Preferences**, select a language from the **Language** drop-down list.
 
 :::image type="complex" source="../../media/2021/07/settings-browser-ui-language.msft.png" alt-text="Changing the DevTools display language directly from DevTools **Settings**" lightbox="../../media/2021/07/settings-browser-ui-language.msft.png":::
    Changing the DevTools display language directly from DevTools **Settings**
@@ -155,7 +155,7 @@ To define User-Agent Client Hints for a custom device by using DevTools **Settin
    Defining User-Agent Client Hints for a custom device in **Settings**
 :::image-end:::
 
-To define User-Agent Client Hints for a custom device by using the **Network conditions** tool:
+To override User-Agent Client Hints for the current page by using the **Network conditions** tool:
 1. In **DevTools**, select the **Network conditions** tool.  You might need to select **More Tools** (+) and then select **Network conditions**.
 1. In the **User agent** row, clear the **Use browser default** checkbox.
 1. Expand the **User agent client hints** section.
