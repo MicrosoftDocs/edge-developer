@@ -54,6 +54,7 @@ A DOM node is considered "detached" when it is no longer attached to any element
 The new **Detached Elements** tool finds all of the detached elements on your page and displays them. You can expand and collapse a detached element to see the parent and child nodes that are also being retained. You can trigger the browser's garbage collection by selecting **Collect garbage** and validate that you have a memory leak when a detached element cannot be garbage-collected. Finally, you can jump into JavaScript that's referencing the detached element by taking a heap snapshot with the **Analyze** button.
 
 :::image type="complex" source="../../media/2021/07/detached-elements-tool.msft.png" alt-text="The Detached Elements tool" lightbox="../../media/2021/07/detached-elements-tool.msft.png":::
+
    The **Detached Elements** tool
 :::image-end:::
 
@@ -95,7 +96,7 @@ For more information, navigate to [Launching Edge DevTools from the JS Debugger 
 <!-- Title: New look for buttons and menus in Microsoft Edge DevTools -->
 <!-- Subtitle: DevTools has adopted Fluent UI, giving it a more modern look that better aligns with the rest of the Microsoft Edge browser. -->
 
-Microsoft Edge DevTools has adopted [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/), giving buttons and menus a more modern look that better aligns with the rest of the Microsoft Edge browser.
+Microsoft Edge DevTools has adopted [Fluent UI][FluentUI], giving buttons and menus a more modern look that better aligns with the rest of the Microsoft Edge browser.
 
 :::image type="complex" source="../../media/2021/07/fluent-ui.msft.png" alt-text="DevTools implemented with Fluent UI design" lightbox="../../media/2021/07/fluent-ui.msft.png":::
    DevTools implemented with Fluent UI design
@@ -217,6 +218,8 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 <!-- links -->
 [DevToolsWebPlatformUserAgentGuidance]: ../../../../web-platform/user-agent-guidance.md "Detecting Microsoft Edge from your website | Microsoft Docs"
 <!-- external links -->
+[FluentUI]: https://developer.microsoft.com/en-us/fluentui#/ "Fluent UI"
+
 [CR1174299]: https://bugs.chromium.org/p/chromium/issues/detail?id=1174299 "Issue 1174299: UA Client Hints dropped when overriding UA string via Chrome DevTools' Network conditions tab | Chromium bugs"
 [CR2882756]: https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756 "Issue 2882756: \[l10n\] Add setting for users to choose DevTools locale | Chromium bugs"
 [CR1223208]: https://bugs.chromium.org/p/chromium/issues/detail?id=1223208 "Inappropriate information is announced by screen reader for the Errors and Warnings in the header | Chromium bugs"
