@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual 
 
 The Microsoft Edge Developer Tools for Visual Studio Code extension enables you to use the browser’s Elements and Network tool from within the editor. 
 Without leaving Visual Studio Code, use Microsoft Edge Developer Tools (DevTools) to connect to an instance of Microsoft Edge with the following functionality.
-* See the runtime HTML structure.
+* View the runtime HTML structure.
 * Change the layout.
 * Change styles (CSS).
 * Read console messages.
