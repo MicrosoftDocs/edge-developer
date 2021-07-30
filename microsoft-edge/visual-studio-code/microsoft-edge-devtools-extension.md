@@ -229,9 +229,9 @@ If you want to help make <!--the Microsoft Edge DevTools for Visual Studio Code 
 
 [DebugConsoleVSCode]: https://code.visualstudio.com/Docs/editor/debugging "Debugging in Visual Studio Code"
 
-[EdgeDevToolsConsole]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/ "Use the Console | Microsoft Docs"
+[EdgeDevToolsConsole]: /microsoft-edge/devtools-guide-chromium/console/ "Use the Console | Microsoft Docs"
 
-[ConsoleUtilities]: https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/utilities "Console Utilities API reference | Microsoft Docs"
+[ConsoleUtilities]: /microsoft-edge/devtools-guide-chromium/console/utilities "Console Utilities API reference | Microsoft Docs"
 
 [NodeJS]: https://www.nodejs.org "Node.js"
 
