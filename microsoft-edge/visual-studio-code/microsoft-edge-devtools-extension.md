@@ -53,7 +53,7 @@ Use the Developer Tools extension in VS Code to inspect an HTML Element in Micro
 ## Using Microsoft Edge Developer Tools in Visual Studio Code  
 
 You can use this extension in one of three modes:
-* Launch Microsoft Edge in a new window navigated to your app.
+* Launch Microsoft Edge in a new window, and navigate to your web application.
 * Attach to a running instance of Microsoft Edge.
 * Open a new instance of Microsoft Edge inside Visual Studio Code. 
 
