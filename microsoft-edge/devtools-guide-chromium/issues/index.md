@@ -40,14 +40,13 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 *  [webhint][webhintIo]
 
 
-## Open the Issues tool
-
-Perform the following steps to open the **Issues** tool using a demo page.
-
+## Opening the Issues tool
 
 1.  Navigate to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page][A11ytestingPagewitherrors] in a new tab or window.
 
-1.  Open DevTools.  After a few seconds, the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears, in the upper right corner of DevTools.  The number of issues in your Issues counter might be different.
+1.  Open DevTools.  After a few seconds, the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears, in the upper right corner of DevTools.
+
+1.  Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.
 
 1.  Select the **Issues counter**.  The **Issues** tool opens with issues grouped into different categories.
 
