@@ -44,7 +44,7 @@ Selecting **Launch Instance** opens a browser window and the Edge developer tool
    Select Launch Instance to open the browser in Visual Studio Code  
 :::image-end:::
 
-Use the Developer Tools extension in VS Code to inspect an HTML Element in Microsoft Edge. For example, select **Success!** In the browser and notice that the Elements tool opens with the HTML highlighted. 
+Use the Developer Tools extension in VS Code to inspect an HTML Element in Microsoft Edge. For example, select **Success!** in the browser and notice that the Elements tool opens with the HTML highlighted. 
 
 :::image type="complex" source="./media/edge-devtools-for-vscode-elements.png" alt-text="Elements tool open with HTML highlighted" lightbox="./media/edge-devtools-for-vscode-elements.png":::
    Elements tools open with HTML highlighted  
