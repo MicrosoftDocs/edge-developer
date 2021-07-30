@@ -3,7 +3,7 @@ description: Use virtual devices in Microsoft Edge to build mobile-first website
 title: Emulate mobile devices in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile
@@ -243,26 +243,35 @@ You may also set network throttling from the **Performance** panel.
     
 ## Override geolocation  
 
-:::row:::
-   :::column span="":::
-      If your page depends on geolocation information from a mobile device to render properly, provide different geolocations using the geolocation overriding UI.  
+ If your page depends on geolocation information from a mobile device to render properly, provide different geolocations using the geolocation overriding UI.
 
+:::row:::
+   :::column span="":::       
       1.  Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Sensors**.  
+         
+   :::column-end:::
+   :::column span="":::
+
+      1.  Open the Command Menu by selecting `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
+      1. Type `Sensors`, and choose **Show Sensors**.  
+            
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::       
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensors for geolocation" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
          **Sensors** for geolocation  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Open the Command Menu.  
-          *   Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
-      1. Type `Sensors`, and choose **Show Sensors**.  
-      
+     
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Show Sensors for geolocation" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
          **Show Sensors** for geolocation  
       :::image-end:::  
    :::column-end:::
 :::row-end:::  
+
 
 On the **Sensors** panel, you may select one of the preset locations included in DevTools using the **Location** drop-down menu.  To enter a custom location, choose **Other…** and enter the coordinates of your custom location.  To test your page in an error state when location information is unavailable, choose **Location unavailable**.  
 
@@ -272,20 +281,30 @@ On the **Sensors** panel, you may select one of the preset locations included in
 
 ## Set orientation  
 
+If your page depends on orientation information from a mobile device to render properly, open the orientation UI.  
+
 :::row:::
    :::column span="":::
-      If your page depends on orientation information from a mobile device to render properly, open the orientation UI.  
 
       1.  Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Sensors**.  
+      
+      
+   :::column-end:::
+   :::column span="":::
+      1.  Open the Command Menu by selecting `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
+      1. Type `Sensors`, and choose **Show Sensors**.  
+           
+   :::column-end:::
+:::row-end:::  
+
+:::row:::
+   :::column span="":::
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensors for orientation" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
          **Sensors** for orientation  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Open the Command Menu.  
-          *   Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
-      1. Type `Sensors`, and choose **Show Sensors**.  
       
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Show Sensors for orientation" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
          **Show Sensors** for orientation  
@@ -301,21 +320,30 @@ On the **Sensors** panel, you may select a preset orientation from the **Orienta
 
 ## Set user agent string  
 
+If your page depends on the user agent string from a mobile device to render properly, use the **Network conditions** panel to provide different user agent strings.  
+
 :::row:::
    :::column span="":::
-      If your page depends on the user agent string from a mobile device to render properly, use the **Network conditions** panel to provide different user agent strings.  
       
       1.  Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Network conditions**.  
-      
+           
+   :::column-end:::
+   :::column span="":::
+      1.  Open the Command Menu by selecting `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
+      1. Type `Network conditions`, and choose **Show Network conditions**.  
+           
+   :::column-end:::
+:::row-end:::  
+
+:::row:::
+   :::column span="":::
+            
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Network conditions entry in the More tools menu" lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
          **Network conditions** entry in the **More tools** menu  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
-      1.  Open the Command Menu.  
-          *   Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
-      1. Type `Network conditions`, and choose **Show Network conditions**.  
-      
+            
       :::image type="complex" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Show Network conditions" lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
          **Show Network conditions**  
       :::image-end:::  
@@ -327,6 +355,34 @@ Next to **User agent**, clear the **Select automatically** checkbox.  Then, choo
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Set the user agent string to Microsoft Edge on macOS" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
     Set the user agent string to Microsoft Edge on macOS  
 :::image-end:::  
+
+## Set user agent client hints
+
+If your site employs [user agent client hints](../../web-platform/user-agent-guidance.md), use the **Emulated Devices** panel to add devices and set user agent client hints.
+
+1. Open the **contextual menu** (right-click), and choose **Inspect**.
+1. Choose **Settings** > **Devices**.
+1. In the Emulated Devices panel, select **Add custom device...** and expand **User agent client hints**.
+
+    :::image type="complex" source="images/emulated-devices-user-agent-client-hints.msft.png" alt-text="Set user agent client hints" lightbox="images/emulated-devices-user-agent-client-hints.msft.png":::
+        Set user agent client hints  
+    :::image-end::: 
+
+1. Type a unique name in the **Device Name** text box such as `Test101`.
+1. Accept the default values or change **Width**, **Height**, and **Device pixel ratio** as needed.
+1. Set User agent client hints as follows.
+    * **Brand** and **Version** such as *Edge* and *92*. Choose **+ Add Brand** to add multiple brand and version pairs.
+    * **Full Browser Version** such as *92.0.1111.0*.
+    * **Platform** and **Version** such as *Windows* and *10.0*.
+    * **Architecture** such as *x86*.
+    * **Device model** such as *Galaxy Nexus*.
+
+    > [!NOTE]
+    > Set or change any of the user agent client hints. There are no required values.
+
+1. Select **Add**. The new device displays in a selected state at the top of the **Emulated Devices** list.
+
+You may also set user agent client hints in [Network Analysis reference](../network/reference.md).
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
