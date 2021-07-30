@@ -19,6 +19,71 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 > [!NOTE]
 > WebView2 bug fixes are either Runtime or SDK specific.  
 
+## 1.0.955-prerelease
+
+Release Date: July 26, 2021  
+
+[NuGet package][NuGetGallery1.0.955-prerelease] \| Minimum Microsoft Edge version to load: 86.0.616.0 or newer \| Full API Compatibility: 93.0.967.0 or newer  
+
+### General  
+*   WebView2 performance improvements.
+*   Added partial Event Tracing for Windows (ETW) support.
+*   Removed Microsoft branding from `edge://history`.
+*   New default Download UI.
+
+#### Experimental Features  
+*   Added [OpenTaskManagerWindow][Webview2ReferenceWin32Icorewebview2experimental4ViewWebview210955PrereleaseOpentaskmanagerwindow] to launch a WebView2 browser task manager.
+*   Added [NewWindowRequestedEventArgs][Webview2ReferenceWin32Icorewebview2experimentalnewwindowrequestedeventargsViewWebview210955PrereleaseGetName].
+*   Added support for virtual host name mapping to work with Service Workers.
+*   Added [HiddenPdfToolbarItems][Webview2ReferenceWin32Icorewebview2experimentalsettings6ViewWebview210955PrereleaseGetHiddenpdftoolbaritems] to customize the PDF toolbar items.
+
+#### Bug fixes  
+*   Fixed bug that broke the `edge://downloads` and `edge://history` pages. This change is Runtime-specific.
+*   Fixed bugs to improve reliability in the WebView2Loader.dll.
+*   Fixed bug in which `NewWindowRequested` event handler launched two windows when handling links that use `target=_blank`.
+*   Fixed a bug in WebView visual hosting that flickered before startup.
+*   Fixed bug when `add_WebResourceRequested` didn't work on WebView2 controls created using `add_NewWindowRequested`. \([\#616][GithubMicrosoftedgeWebviewfeedbackIssue616]\)
+*   Allow the host app to set foreground on a different application in response to events including `NavigationStarting`, `AddHostObjectToScript` methods, `WebMessageReceived`, and `NewWindowRequested`. \([\#1092][GithubMicrosoftedgeWebviewfeedbackIssue1092]\)
+*   Fix bug to trigger the `PermissionRequested` event for the microphone. This change is Runtime-specific.\([\#1462][GithubMicrosoftedgeWebviewfeedbackIssue1462]\)
+*   Fixed bug when `ExecuteScriptAsync` blocked after several successful runs. This change is Runtime-specific. \([\#1348][GithubMicrosoftedgeWebviewfeedbackIssue1348]\)
+*   Fixed bug preventing non-ASCII filenames from being used in `ResultFilePath` in `DownloadStartingEventArgs`. \([\#1428][GithubMicrosoftedgeWebviewfeedbackIssue1428]\)
+*   Fixed bug where the title bar on the default popup wasn't displayed completely. This change is Runtime-specific. \([\#1016][GithubMicrosoftedgeWebviewfeedbackIssue1016]\)
+
+#### Promotions
+*   [add_ClientCertificateRequested][Webview2ReferenceWin32Icorewebview25ViewWebview210955PrereleaseAddClientcertificaterequested] was promoted to stable.
+
+### .NET  
+    
+#### Bug fixes  
+*   Fixed an issue in WebView2 .NET API reference documentation that caused only the first exception to be displayed.
+*   .NET core libraries are now built in release mode. To debug, ensure you clear the **Just my code** checkbox.
+*   Fixed a bug that crashed WebView2 on forms with child forms. The child form, with the find in page bar open, caused WebView2 to crash when the child form was closed. \([\#1097][GithubMicrosoftedgeWebviewfeedbackIssue1097]\)
+
+## 1.0.902.49
+
+Release Date: July 26, 2021  
+
+[NuGet package][NuGetGallery1.0.902.49] \| Minimum Runtime version to load: 86.0.616.0 or newer \| Full API Compatibility: 92.0.902.49 or newer  
+
+### General  
+
+#### Bug Fixes  
+*   Fix bug that broke the `IsBuiltInErrorPageEnabled` property, which turned off the error page that's displayed when there's a navigation failure or render process failure.  This change is Runtime-specific. \([\#634][GithubMicrosoftedgeWebviewfeedbackIssue634]\)
+*   Fixed an issue where WebView2 controls took focus away from the user's focus.
+*   Fixed bug when `AddScriptToExecuteOnDocumentCreated` didn't work on child windows. \([\#935][GithubMicrosoftedgeWebviewfeedbackIssue935]\)
+*   Fixed a bug that caused inactive tabs to be automatically discarded. \([\#637][GithubMicrosoftedgeWebviewfeedbackIssue637]\)
+*   Fixed a bug when a navigation event was interrupted by another navigation event resulting in the Navigation ID of `NavigationCompleted` events to be incorrect. \([\#1142][GithubMicrosoftedgeWebviewfeedbackIssue1142]\)
+
+#### Promotions
+
+The following items are now in stable: 
+
+*   [add_FrameCreated][Webview2ReferenceWin32Icorewebview24ViewWebview21090249AddFramecreated].
+*   [get_IsGeneralAutofillEnabled][Webview2ReferenceWin32Icorewebview2settings4ViewWebview21090249GetIsgeneralautofillenabled].
+*   [get_IsPinchZoomEnabled][Webview2ReferenceWin32Icorewebview2settings5ViewWebview21090249GetIspinchzoomenabled].
+*   [The Download APIs][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddDownloadstarting].
+*   [AddHostObjectToScriptWithOrigins][AddHostObjectToScriptWithOriginsAPI] API with iFrame element support.
+
 ## 1.0.902-prerelease
 
 Release Date: June 1, 2021  
@@ -26,14 +91,13 @@ Release Date: June 1, 2021
 [NuGet package][NuGetGallery1.0.902-prerelease] \| Minimum Microsoft Edge version to load: 86.0.616.0 or newer \| Full API Compatibility: 92.0.902.0 or newer  
 
 ### General  
+*   Improved WebView2 startup performance and disk footprint.
 
 #### Experimental Features  
 
 *   Added [IsSwipeNavigationEnabled][Webview2ReferenceWin32Icorewebview2experimentalsettings5ViewWebview210902PrereleaseGetIsswipenavigationenabled] property to enable or disable the ability of the end user to use swiping gesture on touch input enabled devices to navigate in WebView2.
 *   Added [BrowserProcessExited][Webview2ReferenceWin32Icorewebview2experimentalenvironment4ViewWebview210902PrereleaseAddBrowserprocessexited] event.
 *   Added [add_ClientCertificateRequested API][Webview2ReferenceWin32Icorewebview2experimental3ViewWebview210902PrereleaseAddClientcertificaterequested]. It allows showing a client certificate dialog prompt if desired and enables access to required metadata to replace default client certificate dialog prompt.
-*   Added iframe element support for AddHostObjectToScriptWithOrigins.
-*   Improved WebView2 startup performance and disk footprint.
 
 #### Bug fixes  
 
@@ -57,6 +121,7 @@ Release Date: June 1, 2021
 *   [Download API][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddDownloadstarting] is  now promoted to stable.
 *   [PinchZoom API][Webview2ReferenceWin32Icorewebview2setting5ViewWebview210902PrereleaseGetIspinchzoomenabled] is now promoted to stable.
 *   [AddFrameCreated][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddFramecreated] is now promoted to stable.
+*   [AddHostObjectToScriptWithOrigins][AddHostObjectToScriptWithOriginsAPI] API promoted to stable with iFrame element support.
 *   [Autofill API][Webview2ReferenceWin32Icorewebview2setting4ViewWebview210902PrereleaseGetIsgeneralautofillenabled] is now promoted to stable.
     > [!NOTE]
     > There is no current API to delete the locally stored general autofill and password autosave information.  Please provide a control to delete the data, which will involve deleting the entire User Data Folder. 
@@ -875,6 +940,18 @@ Initial developer preview release.
 [GithubMicrosoftedgeWebviewfeedbackIssue448]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/448 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 448"
 [GithubMicrosoftedgeWebviewfeedbackIssue1123]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1123 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1123"
 
+[GithubMicrosoftedgeWebviewfeedbackIssue616]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/616 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 616"
+[GithubMicrosoftedgeWebviewfeedbackIssue1097]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1097 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1097"
+[GithubMicrosoftedgeWebviewfeedbackIssue1092]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1092 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1092"
+[GithubMicrosoftedgeWebviewfeedbackIssue1462]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1462 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1462"
+[GithubMicrosoftedgeWebviewfeedbackIssue1348]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1348 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1348"
+[GithubMicrosoftedgeWebviewfeedbackIssue1428]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1428 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1428"
+[GithubMicrosoftedgeWebviewfeedbackIssue1016]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1016 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1016"
+[GithubMicrosoftedgeWebviewfeedbackIssue634]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/634 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 634"
+[GithubMicrosoftedgeWebviewfeedbackIssue935]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/935 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 935"
+[GithubMicrosoftedgeWebviewfeedbackIssue637]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/637 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 637"
+[GithubMicrosoftedgeWebviewfeedbackIssue1142]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1142 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1142"
+
 [MicrosoftDevblogDotnetAnnouncingGeneralAvailabilityForMicrosoftEdgeWebview2ForNetFixedDistributionMethod]: https://devblogs.microsoft.com/dotnet/announcing-general-availability-for-microsoft-edge-webview2-for-net-and-fixed-distribution-method "Announcing General Availability for Microsoft Edge WebView2 for .NET and Fixed Distribution Method | .NET Blog"  
 
 [MicrosoftDeveloperMicrosoftEdgeWebView2]: https://developer.microsoft.com/microsoft-edge/webview2/ "Microsoft Edge WebView2 | Microsoft Edge Developer"  
@@ -903,9 +980,11 @@ Initial developer preview release.
 [NuGetGallery1.0.790-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.790-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.790 prerelease"  
 [NuGetGallery1.0.818.41]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.818.41 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.818.41"  
 [NuGetGallery1.0.864.35]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.864.35 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.864.35"  
+[NuGetGallery1.0.902.49]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.902.49 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.902.49"  
 [NuGetGallery1.0.824-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.824-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.824 prerelease"  
 [NuGetGallery1.0.865-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.865-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.865 prerelease"  
 [NuGetGallery1.0.902-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.902-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.902 prerelease"  
+[NuGetGallery1.0.955-prerelease]:https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.955-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.955 prerelease"  
 
 [WindowsBlogsMsedgedevEdgeWebview2GeneralAvailability]: https://blogs.windows.com/msedgedev/edge-webview2-general-availability "Announcing Microsoft Edge WebView2 General Availability | Microsoft Edge Blog"  
 [Webview2ReferenceWin32Icorewebview2experimentalsettings5ViewWebview210902PrereleaseGetIsswipenavigationenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings5?view=webview2-1.0.902-prerelease&preserve-view=true#get_isswipenavigationenabled "get_IsSwipeNavigationEnabled - interface ICoreWebView2ExperimentalSettings5 | Microsoft Docs"
@@ -916,6 +995,9 @@ Initial developer preview release.
 [Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddDownloadstarting]: /microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_downloadstarting "add_DownloadStarting - interface ICoreWebView2_4 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddFramecreated]: /microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_framecreated "add_FrameCreated - interface ICoreWebView2_4 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2setting4ViewWebview210902PrereleaseGetIsgeneralautofillenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings4?view=webview2-1.0.902-prerelease&preserve-view=true#get_isgeneralautofillenabled "get_IsGeneralAutofillEnabled - interface ICoreWebView2Settings4 | Microsoft Docs"
+
+[AddHostObjectToScriptWithOriginsAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2frame?view=webview2-1.0.902-prerelease&preserve-view=true#addhostobjecttoscriptwithorigins "AddHostObjectToScriptWithOrigins | Microsoft Docs"
+
 [Webview2ReferenceWin32Icorewebview2setting5ViewWebview210902PrereleaseGetIspinchzoomenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings5?view=webview2-1.0.902-prerelease&preserve-view=true#get_ispinchzoomenabled "get_IsPinchZoomEnabled - interface ICoreWebView2Settings5 | Microsoft Docs"
 
 [Webview2ReferenceWin32Icorewebview2environmentoptionsGetAllowsinglesignonusingosprimaryaccount]: /microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_allowsinglesignonusingosprimaryaccount "get_AllowSingleSignOnUsingOSPrimaryAccount - interface ICoreWebView2EnvironmentOptions | Microsoft Docs"
@@ -925,3 +1007,13 @@ Initial developer preview release.
 
 "get_UserAgent - interface ICoreWebView2Setting2 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2setting2ViewWebview21086435GetArebrowseracceleratorkeysenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings3?view=webview2-1.0.864.35&preserve-view=true#get_arebrowseracceleratorkeysenabled "get_AreBrowserAcceleratorKeysEnabled - interface ICoreWebView2Settings3 | Microsoft Docs"
+
+[Webview2ReferenceWin32Icorewebview2experimental4ViewWebview210955PrereleaseOpentaskmanagerwindow]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental4?view=webview2-1.0.955-prerelease&preserve-view=true#opentaskmanagerwindow "OpenTaskManagerWindow - interface ICoreWebView2Experimental4 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalnewwindowrequestedeventargsViewWebview210955PrereleaseGetName]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalnewwindowrequestedeventargs?view=webview2-1.0.955-prerelease&preserve-view=true#get_name "get_Name - interface ICoreWebView2ExperimentalNewWindowRequestedEventArgs | Microsoft Docs"
+
+[Webview2ReferenceWin32Icorewebview25ViewWebview210955PrereleaseAddClientcertificaterequested]: /microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.955-prerelease&preserve-view=true#add_clientcertificaterequested "add_ClientCertificateRequested - interface ICoreWebView2_5 | Microsoft Docs"
+
+[Webview2ReferenceWin32Icorewebview24ViewWebview21090249AddFramecreated]: /microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902.49&preserve-view=true#add_framecreated "add_FrameCreated - interface ICoreWebView2_4 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2settings4ViewWebview21090249GetIsgeneralautofillenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings4?view=webview2-1.0.902.49&preserve-view=true#get_isgeneralautofillenabled "get_IsGeneralAutofillEnabled - interface ICoreWebView2Settings4 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2settings5ViewWebview21090249GetIspinchzoomenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings5?view=webview2-1.0.902.49&preserve-view=true#get_ispinchzoomenabled "get_IsPinchZoomEnabled - interface ICoreWebView2Settings5 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalsettings6ViewWebview210955PrereleaseGetHiddenpdftoolbaritems]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings6?view=webview2-1.0.955-prerelease&preserve-view=true#get_hiddenpdftoolbaritems "get_HiddenPdfToolbarItems - interface ICoreWebView2ExperimentalSettings6 | Microsoft Docs"

@@ -65,6 +65,14 @@ To test your Internet Explorer 11-based website \(or app\) in Internet Explorer 
     *   Select `F12`.  
     *   Hover anywhere, open a contextual menu \(right-click\), and choose **Inspect element**.  For more information about how to use those tools, navigate to [Using the F12 developer tools][PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326].  
 
+If Internet Explorer 11 is not available, such as on Windows 11, you can use IEChooser to launch the Internet Explorer DevTools to debug the content of your IE mode tabs. To use IEChooser, perform the following steps.
+
+1.  Open IEChooser.
+    1. Open the Run dialog box. For example, press the `Windows logo key` + `R`.
+    2. Enter `%systemroot%\system32\f12\IEChooser.exe`, and then select **Ok**.
+2.  In IEChooser, select the entry for the IE mode tab.
+
+
 ## Remote debugging and IE mode  
 
 Launch Microsoft Edge \(Chromium\) with remote debugging turned on from the command-line interface.  Microsoft Visual Studio, Microsoft Visual Studio Code, and other development tools typically run a command to launch Microsoft Edge.  The following command launches Microsoft Edge with the remote debugging port set to `9222`.  
@@ -77,10 +85,27 @@ After you launch Microsoft Edge \(Chromium\) using a command-line argument, IE m
 
 IE mode remains unavailable until you completely close and restart Microsoft Edge \(Chromium\).  
 
+
+## Replacing Internet Explorer automation  
+
+If you have an existing application that uses the [InternetExplorer][InternetExplorerObject] object to automate Internet Explorer 11, but the Internet Explorer 11 desktop application isn't available, your application won't work.  Internet Explorer 11 will be retired on June 15, 2022.  For more information, navigate to [The future of Internet Explorer on Windows 10 is in Microsoft Edge][BlogsWindowsExperienceFutureOfIEEdge].  Microsoft Edge \(Chromium\) doesn't support automating IE mode through the `InternetExplorer` object, so applications that rely on this object will need to be updated using one of the recommended alternatives below.  Applications that use the [WebBrowser][WebBrowserControl] control will continue to work and won't be affected by the removal of Internet Explorer 11.
+
+If your automation application doesn't require IE mode for the website \(or app\) content to function correctly, we recommend updating your application to use Microsoft Edge \(Chromium\) instead of Internet Explorer 11.  Many available automation tools support Microsoft Edge \(Chromium\), including WebDriver and Playwright.  To learn more about automating Microsoft Edge \(Chromium\) using WebDriver, navigate to [WebDriver overview][WebDriverIndex].  To learn more about using Playwright, navigate to [Playwright overview][PlaywrightIndex].
+
+Applications that require IE mode for the website \(or app\) content to function correctly should use the `WebBrowser` control.  The `WebBrowser` control uses the Internet Explorer platform (MSHTML/Trident) to render web content, and will work even if the Internet Explorer 11 desktop application isn't available.
+
+
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
 
+[PlaywrightIndex]: ../../playwright/index.md "Playwright - Microsoft Edge Development | Microsoft Docs"
+[BlogsWindowsExperienceFutureOfIEEdge]: https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/ "The future of Internet Explorer on Windows 10 is in Microsoft Edge | Windows Experience blog"
 [PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326]: /previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85) "Using the F12 developer tools | Microsoft Docs"  
+
+[WebDriverIndex]: ../../webdriver-chromium/index.md "Use WebDriver (Chromium) for test automation - Microsoft Edge Development | Microsoft Docs"  
+
+[InternetExplorerObject]: /previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85) "InternetExplorer object (Windows) | Microsoft Docs"
+[WebBrowserControl]: /previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85) "WebBrowser Control (Internet Explorer) | Microsoft Docs"

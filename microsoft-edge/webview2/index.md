@@ -151,11 +151,14 @@ A General Availability \(GA\) or Preview version is available on the following p
 *   .NET Framework 4.5 or later  
 *   .NET Core 3.1 or later  
 *   .NET 5  
-*   [WinUI 3.0][UwpToolkitsWinui3] \(Preview\)  
+*   [WinUI 3.0][UwpToolkitsWinui3]  
     
 You may run WebView2 apps on the following versions of Windows.  
 
 *   Windows 10  
+*   Windows 10 IoT Enterprise LTSC x32 2019
+*   Windows 10 IoT Enterprise LTSC x64 2019
+*   Windows 10 IoT Enterprise 21h1 x64
 *   Windows 8.1  
 *   Windows 7 \*\*  
 *   Windows Server 2019  
@@ -191,7 +194,7 @@ For more information on how to build and deploy WebView2 apps, review the concep
 
 [Webview2ConceptsDistribution]: ./concepts/distribution.md "Distribution of apps using WebView2 | Microsoft Docs"  
 [Webview2ConceptsSecurity]: ./concepts/security.md "Best practices for developing secure WebView2 apps | Microsoft Docs"  
-[Webview2ConceptsUserDataFolder]: ./concepts/user-data-folder.md "Manage the User Data Folder | Microsoft Docs"  
+[Webview2ConceptsUserDataFolder]: ./concepts/user-data-folder.md "Manage the user data folder | Microsoft Docs"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "Understand WebView2 SDK versions | Microsoft Docs"  
 [Webview2GetStartedWin32]: ./get-started/win32.md "Get started with WebView2 | Microsoft Docs"  
 [Webview2GetStartedWinforms]: ./get-started/winforms.md "Get started with WebView2 in Windows Forms apps (Preview) | Microsoft Docs"  
