@@ -205,7 +205,7 @@ If you launch the extension from the Run and Debug workflow, the [Debug Console 
 
 Send your feedback by [filing an issue][GithubMicrosoftVscodeEdgeDevtoolsNewIssue] on the [microsoft/vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools] of the extension.  
 
-If you want to help make <!--the Microsoft Edge DevTools for Visual Studio Code -->this extension better, your contributions are welcome.  Find everything you need to get started in the [GitHub repo][GithubMicrosoftVscodeEdgeDevtools] of the extension. 
+If you want to help make <!--the Microsoft Edge DevTools for Visual Studio Code -->this extension better, your contributions are welcome.  Find everything you need to get started in the [microsoft/vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools] of the extension. 
 
 <!--links -->  
 
