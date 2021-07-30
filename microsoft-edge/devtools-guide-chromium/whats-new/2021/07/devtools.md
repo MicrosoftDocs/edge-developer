@@ -64,7 +64,7 @@ To turn on this experiment, navigate to **Settings** > **Experiments** and s
 <!-- todo: link directly to the subheading in the page, when available; test the subheading link -->
 
 
-## The DevTools extension now integrates with the Visual Studio Code debugger
+## The Visual Studio Code debugger now integrates with the DevTools extension
 
 <!-- Title: While debugging, launch the DevTools extension by selecting the Inspect button -->
 <!-- Subtitle: Microsoft Edge DevTools for Visual Studio Code now integrates seamlessly with the JavaScript debugging workflow in the editor. -->
@@ -142,7 +142,7 @@ To learn more about viewing and changing CSS, navigate to [CSS reference][CssRef
 <!-- Title: Send as many (or as few) Client Hints as you want -->
 <!-- Subtitle: Updated UI for User-Agent Client Hints in Emulated Devices settings and in the Network conditions tool. -->
 
-User-Agent Client Hints makes browser information more accessible than a semicolon-delimited User-Agent string, and improves site compatibility.  Initially, User-Agent Client Hints were time-consuming to test and debug.  There was less control over the client hints, and client hints had to be filled-in properly for the form to work.
+User-Agent Client Hints makes browser information more accessible than a semicolon-delimited User-Agent string, and improves site compatibility.  Initially, User-Agent Client Hints were time-consuming to test and debug.  There was less control over the client hints, and client hints had to be filled in properly for the form to work.
 
 In this release, we redesigned the debugging experience so you can easily modify User-Agent Client Hints through a UI with multiple separate fields and controls.  Also, you can now test your custom User-Agent Client Hints and a User-Agent string simultaneously.  You can now define User-Agent Client Hints for a custom device in **Settings** or in the **Network conditions** tool.
 
@@ -166,9 +166,9 @@ For more information about defining hints in the **Network conditions** tool, na
 <!-- Title: Better support for errors, warnings, and issues with assistive technology -->
 <!-- Subtitle: Screen readers now correctly announce the number and the type of notification for errors, warnings, and issues in the DevTools toolbar. -->
 
-Previously, users of screen readers would only hear the number of errors, warnings, or issues announced in the DevTools toolbar.  The additional information of what type of notification was being announced wasn't included, such as "Error, Warning, or Issue". For example, if DevTools reported 3 errors, screen readers would just announce "3".
+Previously, users of screen readers would only hear the number of errors, warnings, or issues announced in the DevTools toolbar.  The additional information of what type of notification was being announced wasn't included, such as "Error", "Warning", or "Issue". For example, if the DevTools reported 3 errors, screen readers would just announce "3".
 
-Now in Microsoft Edge version 93, screen readers correctly announce the number of errors, warnings, or issues that DevTools detected and the type of notification. For example, if DevTools reported 3 errors, screen readers now announce "3 errors".  This fix has been applied to both the notifications in the DevTools toolbar and in the Console.
+Now in Microsoft Edge version 93, screen readers correctly announce the type and number of notifications; errors, warnings, or issues.  For example, if DevTools reports 3 errors and 5 warnings, screen readers now announce "3 errors, 5 warnings".  This fix has been applied to both the notifications in the DevTools toolbar and in the Console.
 
 :::image type="complex" source="../../media/2021/07/screen-reader-errors-warnings-issues.msft.png" alt-text="The errors, warnings, and issues UI in the toolbar and Console" lightbox="../../media/2021/07/screen-reader-errors-warnings-issues.msft.png":::
    The errors, warnings, and issues UI in the toolbar and **Console**
