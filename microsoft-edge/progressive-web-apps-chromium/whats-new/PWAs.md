@@ -31,6 +31,12 @@ Learn more about experimenting with [URL handlers at our experiments page][ExpUR
 
 Register your domain for URL handler trial at our [Origin Trials Developer console][URLHandlerOT].
 
+## Support Share API on MacOS
+
+We have implemented support for the `navigator.share` API for MacOS. The feature is rolling out to stable Edge browsers on MacOS over the coming weeks. 
+
+Learn more about the [navigator.share() API][mdnShareAPI] 
+
 ## What's New in Edge 92
 Edge 92 became the stable channel of Microsoft Edge on July 22, 2021. This article lists updates we made to PWAs from both a developer and consumer point of view.
 
@@ -79,6 +85,11 @@ This feature is being rolled out gradually to all users. In the meantime, if you
    Screen shot of the post-install flyout dialog box
 :::image-end:::
 
+## Restore Web Apps
+Installed sites and PWAs that were running prior to an unexpected shutdown will now restore (be restarted) when the system recovers. 
+
+This can occur due to process failure, system restart, power outage etc. Prior to this change, installed sites and PWAs had indeterminant behavior upon system restore.  
+
 ## Download the Microsoft Edge preview channels
 
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
@@ -100,3 +111,5 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [URLHandlerOT]: https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/web-app-url-handlers/registration/ "Register for Web App URL Handler | Microsoft Developer" 
 
 [WCOOT]: https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/web-app-window-controls-overlay/registration/ "Register for Web App Window Controls Overlay"
+
+[mdnShareAPI]: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share
