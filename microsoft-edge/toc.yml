@@ -145,8 +145,8 @@
               items:
                 - name: Overview
                   href: devtools-guide-chromium/customize/index.md
-                - name: Dark theme
-                  href: devtools-guide-chromium/customize/dark-theme.md
+                - name: Apply a theme
+                  href: devtools-guide-chromium/customize/theme.md
                 - name: Change placement
                   href: devtools-guide-chromium/customize/placement.md
                 - name: Match browser language
