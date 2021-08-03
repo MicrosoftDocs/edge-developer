@@ -27,15 +27,9 @@ Register your origin for Window Controls Overlay trial at our [Origin Trials Dev
 
 Developers can now use the experimental feature Web App URL Handlers in origin trial. 
 
-Learn more about experimenting with URL handlers at our experiments page.
+Learn more about experimenting with [URL handlers at our experiments page][ExpURLHandler].
 
 Register your domain for URL handler trial at our [Origin Trials Developer console][URLHandlerOT].
-
-### Updated App Info Menu
-:::image type="complex" source="media/app-info.png" alt-text="Streamlined app info menu" lightbox="media/app-info.png":::
-   Screen shot of the new streamlined app info menu
-:::image-end:::
-
 
 ## What's New in Edge 92
 Edge 92 became the stable channel of Microsoft Edge on July 22, 2021. This article lists updates we made to PWAs from both a developer and consumer point of view.
