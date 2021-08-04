@@ -88,7 +88,7 @@ This feature is being rolled out gradually to all users. In the meantime, if you
 ## Restore Web Apps
 Installed sites and PWAs that were running prior to an unexpected shutdown will now restore (be restarted) when the system recovers. 
 
-This can occur due to process failure, system restart, power outage etc. Prior to this change, installed sites and PWAs had indeterminant behavior upon system restore.  
+This can occur due to process failure, system restart and power outage. Prior to this change, installed sites and PWAs had indeterminant behavior upon system restore.  
 
 <!-- links -->  
 
