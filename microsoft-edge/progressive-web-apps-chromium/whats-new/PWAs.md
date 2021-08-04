@@ -90,10 +90,6 @@ Installed sites and PWAs that were running prior to an unexpected shutdown will 
 
 This can occur due to process failure, system restart, power outage etc. Prior to this change, installed sites and PWAs had indeterminant behavior upon system restore.  
 
-## Download the Microsoft Edge preview channels
-
-If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
-
 <!-- links -->  
 
 <!--[ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]: /archive/microsoft-edge/legacy/developer/progressive-web-apps/index#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->  
