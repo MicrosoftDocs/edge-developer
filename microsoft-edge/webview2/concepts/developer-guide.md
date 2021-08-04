@@ -39,7 +39,7 @@ To solve this situation, before your code calls a recently added WebView2 API, t
 *   `QueryInterface` in C/C++.
 *   A `try/catch` block in .NET or WinUI.
 
-For more information, navigate to [Testing whether the installed Runtime supports a recent API][Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement].
+For more information, navigate to [Feature-detecting to test whether the installed Runtime supports recently added APIs][Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement].
 
 
 ## Update the Fixed Version Runtime
@@ -81,7 +81,7 @@ For any WebView2 app, make sure to follow our recommended WebView2 security best
 [Webview2ConceptsDistributionStayCompatibleEvergreenMode]: ../concepts/distribution.md#test-your-app-for-forward-compatibility "Test your app for forward-compatibility - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
 [Webview2ConceptsSecurity]: ../concepts/security.md "Best practices for developing secure WebView2 applications | Microsoft Docs"
 [Webview2ConceptsUserDataFolder]: ../concepts/user-data-folder.md "Manage the user data folder | Microsoft Docs"
-[Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#testing-whether-the-installed-runtime-supports-a-recent-api "Testing whether the installed Runtime supports a recent API - Understand WebView2 SDK versions | Microsoft Docs"
+[Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis "Feature-detecting to test whether the installed Runtime supports recently added APIs - Understand WebView2 SDK versions | Microsoft Docs"
 [Webview2GetStartedWin32]: ../get-started/win32.md "Get started with WebView2 | Microsoft Docs"
 [Webview2GetStartedWinforms]: ../get-started/winforms.md "Get started with WebView2 in Windows Forms | Microsoft Docs"
 [Webview2GetStartedWinui]: ../get-started/winui.md "Get started with WebView2 in WinUI 3 (Preview) | Microsoft Docs"
