@@ -376,7 +376,7 @@
         - name: Progressive Web Apps overview
           href: progressive-web-apps-chromium/index.md
         - name: What's new
-          href: progressive-web-apps-chromium/whats-new/PWAs.md
+          href: progressive-web-apps-chromium/whats-new/pwa.md
         - name: Get started with PWAs
           href: progressive-web-apps-chromium/get-started.md
         - name: Offline scenarios
