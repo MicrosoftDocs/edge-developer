@@ -1,0 +1,34 @@
+name: Run checks
+
+on:
+  workflow_dispatch:
+  schedule:
+    # once a month
+    - cron: '0 0 1 * *'
+
+jobs:
+  check-old-versions:
+    name: Check for references of old versions of Edge
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          cd scripts
+          npm install
+      - name: Run script
+        run: |
+          cd scripts
+          node find-references-to-old-versions.js > issues.txt
+      - name: Read the issues file
+        uses: juliangruber/read-file-action@v1
+        id: issues
+        with:
+          path: ./scripts/issues.txt
+      - name: Create an issue
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CONTENT: ${{ steps.issues.outputs.content }}
