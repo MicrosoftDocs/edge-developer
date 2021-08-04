@@ -19,11 +19,11 @@ Microsoft Edge version 93 became the Beta channel of Microsoft Edge on August 3,
 
 ## Window Controls Overlay origin trials
 
-Developers wanting to have more control over the title bar area currently displayed in standalone display mode may want to experiment with Window Controls Overlay. Window Controls Overlay (WCO) is a set of features that work together to provide just the essential controls needed for the app window and provide more of that area to the web content layer. WCO is available for installed desktop PWAs. 
+To have more control over the title bar area that's currently displayed in standalone display mode, you may want to experiment with Window Controls Overlay. Window Controls Overlay (WCO) is a set of features that work together to provide just the essential controls needed for the app window. This layout frees up more space for the web content layer. WCO is available for installed desktop PWAs. 
 
 Learn more about experimenting with Window Controls Overlay at [Experimental features in Progressive Web Apps (PWAs)][ExpWCO].
 
-Register your origin for a Window Controls Overlay trial at our [Origin Trials Developer console][WCOOT].
+Register your origin for the Window Controls Overlay trial at our [Origin Trials Developer console][WCOOT].
 
 ## URL Handlers origin trial
 
@@ -31,11 +31,11 @@ Developers can now use the experimental feature Web App URL Handlers in origin t
 
 Learn more about experimenting with URL handlers at [Experimental features in Progressive Web Apps (PWAs)][ExpURLHandler].
 
-Register your domain for a URL handler trial at our [Origin Trials Developer console][URLHandlerOT].
+Register your domain for the URL handler trial at our [Origin Trials Developer console][URLHandlerOT].
 
-## Support for the Share API on MacOS
+## Support for the Share API on macOS
 
-We have implemented support for the `navigator.share` API for MacOS. The feature is rolling out to stable Edge browsers on MacOS over the coming weeks. 
+We have implemented support for the `navigator.share` API for macOS. The feature is rolling out to stable Microsoft Edge browsers on macOS over the coming weeks. 
 
 Learn more about the [navigator.share() API][mdnShareAPI].
 
@@ -46,13 +46,13 @@ Microsoft Edge version 92 became the stable channel of Microsoft Edge on July 22
 
 ## Protocol handlers origin trial 
 
-You can now register your PWA to handle specific protocols with the host operating system. The Windows trial for this is now available. You can register your origin for the trial at the [origin trial signup page][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].
+You can now register your PWA to handle specific protocols with the host operating system. The Windows trial for protocol handlers is now available. You can register your origin for the trial at the [origin trial signup page][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].
 
 Learn more about using protocol handlers with your PWA at [Experimental features in Progressive Web Apps (PWAs)][ExpProtocolHandlers].
 
 ## Streamlined app-info menus
 
-The _app info_ menu is what is shown when a user clicks the ellipses (...) **Settings** menu in the app's title bar. We've updated this menu and streamlined the experience for the user in the following ways:
+When a user selects the **Settings** (**...**) menu in the app's title bar, the _app info_ menu is shown. We've updated this menu and streamlined the experience for the user in the following ways:
 * Moved the app publisher information to the top level and made it the first thing a user sees.
 * Moved the privacy information and controls into a dedicated 2nd-level **Privacy** menu.
 * Moved content-related tools into a dedicated 2nd-level **More tools** menu.
@@ -79,7 +79,7 @@ These changes make the **Settings** menu provide a user experience that's more l
 
 ## Post-install flyout dialog box
 
-After a PWA is installed from the Edge browser on Windows, users will now be able to select from four options to easily launch their apps: 
+After a PWA is installed from the Microsoft Edge browser on Windows, users can now select from four options to easily launch their apps: 
 * **Pin to taskbar** 
 * **Pin to Start**
 * **Create Desktop shortcut**
@@ -95,9 +95,9 @@ This feature is being rolled out gradually to all users. In the meantime, if you
 
 ## Restore Web Apps
 
-Installed sites and PWAs that were running prior to an unexpected shutdown will now restore (that is, they will be restarted) when the system recovers. 
+Installed sites and PWAs that were running before an unexpected shutdown will now restore (that is, they will be restarted) when the system recovers.
 
-This can occur due to process failure, system restart, or power outage. Prior to this change, installed sites and PWAs had indeterminate behavior upon system restore.  
+An unexpected shutdown can occur due to process failure, system restart, or power outage. Before this change, installed sites and PWAs had indeterminate behavior upon system restore.  
 
 <!-- links -->  
 
