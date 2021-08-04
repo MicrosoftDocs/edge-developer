@@ -463,10 +463,6 @@
               href: webview2/concepts/developer-guide.md
             - name: Win32 API conventions
               href: webview2/concepts/win32-api-conventions.md
-        - name: Release notes
-          href: webview2/release-notes.md
-        - name: Roadmap
-          href: webview2/roadmap.md
         - name: How to
           items:
             - name: Extended JavaScript scenarios in WebView2
@@ -481,6 +477,10 @@
               href: webview2/how-to/chromium-devtools-protocol.md
             - name: Switch to a preview channel
               href: webview2/how-to/set-preview-channel.md
+        - name: Release notes
+          href: webview2/release-notes.md
+        - name: Roadmap
+          href: webview2/roadmap.md
         - name: Reference
           href: webview2/webview2-api-reference.md
           items:
