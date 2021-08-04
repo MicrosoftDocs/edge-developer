@@ -57,7 +57,7 @@ To emulate a user's selection of preferred color theme:
 
 ## See also
 
-*  [Dark or light color scheme simulation][DevToolsColorSchemeSimulation]
+*  [Emulate dark or light schemes in the rendered page][DevToolsColorSchemeSimulation]
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
 
@@ -67,5 +67,5 @@ To emulate a user's selection of preferred color theme:
 
 
 <!-- links -->
-[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Dark or light color scheme simulation | Microsoft Docs"
+[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Emulate dark or light schemes in the rendered page | Microsoft Docs"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

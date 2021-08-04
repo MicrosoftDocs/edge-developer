@@ -39,7 +39,7 @@ Dark themes:
 *  Red
 *  Tomorrow Night Blue
 
-For more information, navigate to [Apply color themes to Microsoft Edge DevTools][CustomizeDarkTheme].
+For more information, navigate to [Apply color themes to DevTools][CustomizeDarkTheme].
 
 
 ## Debug DOM node memory leaks with the new Detached Elements tool
@@ -206,7 +206,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 
 <!-- links -->
-[CustomizeDarkTheme]: ../../../customize/dark-theme.md "Apply color themes to Microsoft Edge DevTools | Microsoft Docs"
+[CustomizeDarkTheme]: ../../../customize/dark-theme.md "Apply color themes to DevTools | Microsoft Docs"
 <!-- todo: link directly to the subheading in the page, when available; test the subheading link:
 [ExperimentalFeaturesDetachedElements]: ../../../experimental-features/index.md#detached-elements "Detached elements | Microsoft Docs" -->
 [CustomizeLocalization]: ../../../customize/localization.md "Change DevTools language settings | Microsoft Docs"
