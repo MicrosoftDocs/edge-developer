@@ -3,7 +3,7 @@ description: Learn about development best practices to use when developing your 
 title: WebView2 development best practices
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2021
+ms.date: 08/03/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -53,6 +53,8 @@ When a new version of the Evergreen WebView2 Runtime is downloaded to the client
 
 When a new version of the runtime is available, your app can automatically take action, such as notifying the user to restart the app.  To detect that a new version of the runtime is available, you can use the [add_NewBrowserVersionAvailable (Win32)][Webview2ReferenceaddNewBrowserVersionAvailable] or [CoreWebView2Environment.NewBrowserVersionAvailable (.NET)][Webview2ReferenceNewBrowserVersionAvailable] event in your code.  If your code handles restarting the app, consider saving the user state before the WebView2 app exits.
 
+<!-- are the Ref links enough, or link to a regular article or article subsection? -->
+
 
 ## Manage the lifetime of the user data folder
 
@@ -64,6 +66,8 @@ WebView2 apps create a user data folder to store data such as cookies, credentia
 Your WebView2 app should listen for and handle the `ProcessFailed` event, so the app can recover from failures of runtime processes that support the WebView2 app process.
 
 WebView2 apps are supported by a collection of runtime processes that run alongside the app process.  These supporting runtime processes can fail for various reasons, such as running out of memory, or being terminated by the user.  When a supporting runtime process fails, WebView2 notifies the app by raising the [ProcessFailed event][WebView2ProcessFailedEvent].
+
+<!-- is the Ref link enough, or link to a long section in regular docs? -->
 
 
 ## Follow recommended WebView2 security best practices

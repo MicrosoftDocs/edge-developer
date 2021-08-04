@@ -451,7 +451,7 @@
               href: webview2/concepts/navigation-events.md
             - name: Process model
               href: webview2/concepts/process-model.md
-            - name: Security Best Practices
+            - name: Security best practices
               href: webview2/concepts/security.md
             - name: Versioning
               href: webview2/concepts/versioning.md

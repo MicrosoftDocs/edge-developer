@@ -3,7 +3,7 @@ description: Release notes for Microsoft Edge WebView2 SDK
 title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2021
+ms.date: 08/03/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -14,7 +14,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence.  Review the following content for up-to-date information on product announcements, additions, modifications, and breaking changes to the APIs.  
 
 > [!NOTE]
-> Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet package.  The WebView team recommends that you use the Canary preview channel of Microsoft Edge when you develop using a prerelease version of the WebView2 SDK package, and use the Evergreen WebView2 Runtime when you use a release version of the WebView2 SDK package.  For more information, navigate to [Matching the Runtime version with the SDK version][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].
+> Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet package.  The WebView team recommends that you use the Canary preview channel of Microsoft Edge when you develop using a prerelease version of the WebView2 SDK package, and use the Evergreen WebView2 Runtime when you use a release version of the WebView2 SDK package.  Canary is the recommended preview channel because it ships at the fastest cadence and has the newest APIs.  For more information, navigate to [Matching the Runtime version with the SDK version][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].
 
 > [!NOTE]
 > WebView2 bug fixes are either Runtime-specific or SDK-specific.  
@@ -24,9 +24,7 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
-<!-- todo: link, when article is available:
 To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to [Switch to a preview channel to test upcoming APIs and features](how-to/set-preview-channel.md).
--->
 
 
 ## 1.0.902-prerelease
@@ -35,9 +33,7 @@ Release Date: June 1, 2021
 
 [NuGet package for WebView2 SDK 1.0.902-prerelease][NuGetGallery1.0.902-prerelease]
 
-### Minimum required browser version
-
-For full API compatibility, this prerelease version of the WebView2 SDK requires Microsoft Edge version 92.0.902.0 or higher.
+**Minimum required browser version:** For full API compatibility, this prerelease version of the WebView2 SDK requires Microsoft Edge version 92.0.902.0 or higher.
 
 ### General
 
@@ -89,9 +85,7 @@ Release Date: May 31, 2021
 
 [NuGet package for WebView2 SDK 1.0.864.35][NuGetGallery1.0.864.35]
 
-### Minimum required Runtime version
-
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 91.0.864.35 or higher.
+**Minimum required Runtime version:** For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 91.0.864.35 or higher.
 
 ### General  
 
@@ -119,9 +113,7 @@ Release Date: April 26, 2021
 
 [NuGet package for WebView2 SDK 1.0.865-prerelease][NuGetGallery1.0.865-prerelease]
 
-### Minimum required browser version
-
-For full API compatibility, this prerelease version of the WebView2 SDK requires Microsoft Edge version 91.0.865.0 or higher.
+**Minimum required browser version:** For full API compatibility, this prerelease version of the WebView2 SDK requires Microsoft Edge version 91.0.865.0 or higher.
 
 ### General  
 
@@ -165,9 +157,7 @@ Release Date: April 21, 2021
 
 [NuGet package for WebView2 SDK 1.0.818.41][NuGetGallery1.0.818.41]
 
-### Minimum required Runtime version
-
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 90.0.818.41 or higher.
+**Minimum required Runtime version:** For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 90.0.818.41 or higher.
 
 ### General  
 
@@ -185,9 +175,7 @@ Release Date: March 8, 2021
 
 [NuGet package for WebView2 SDK 1.0.824-prerelease][NuGetGallery1.0.824-prerelease]
 
-### Minimum required browser version
-
-For full API compatibility, this prerelease version of the WebView2 SDK requires Microsoft Edge version 91.0.824.0 or higher.
+**Minimum required browser version:** For full API compatibility, this prerelease version of the WebView2 SDK requires Microsoft Edge version 91.0.824.0 or higher.
 
 ### General  
 
@@ -217,9 +205,7 @@ Release Date: March 8, 2021
 
 [NuGet package for WebView2 SDK 1.0.774.44][NuGetGallery1.0.774.44]
 
-### Minimum required Runtime version
-
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 89.0.774.44 or higher.
+**Minimum required Runtime version:** For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 89.0.774.44 or higher.
 
 ### General  
 
@@ -248,9 +234,7 @@ Release Date: February 10, 2021
 
 [NuGet package for WebView2 SDK 1.0.790-prerelease][NuGetGallery1.0.790-prerelease]
 
-### Minimum required browser version
-
-This prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0.616.0 or higher.
+**Minimum required browser version:** This prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0.616.0 or higher.
 
 ### General  
 
@@ -304,9 +288,7 @@ Release Date: January 25, 2021
 
 [NuGet package for WebView2 SDK 1.0.705.50][NuGetGallery1.0.705.50]
 
-### Minimum required Runtime version
-
-This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or higher.
+**Minimum required Runtime version:** This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or higher.
 
 ### General  
 
@@ -326,9 +308,7 @@ Release Date: December 8, 2020
 
 [NuGet package for WebView2 SDK 1.0.721-prerelease][NuGetGallery1.0.721-prerelease]
 
-### Minimum required browser version
-
-This prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0.616.0 or higher.
+**Minimum required browser version:** This prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0.616.0 or higher.
 
 ### General  
 
@@ -379,9 +359,7 @@ Release Date: November 20, 2020
 
 [NuGet package for WebView2 SDK 1.0.664.37][NuGetGallery1.0.664.37]
 
-### Minimum required Runtime version
-
-This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or higher.
+**Minimum required Runtime version:** This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or higher.
 
 ### General  
 
@@ -406,9 +384,7 @@ Release Date: October 19, 2020
 
 [NuGet package for WebView2 SDK 1.0.674-prerelease][NuGetGallery1.0.674-prerelease]
 
-### Minimum required Runtime version
-
-This prerelease version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or higher.
+**Minimum required Runtime version:** This prerelease version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or higher.
 
 ### General  
 
@@ -441,9 +417,7 @@ Release Date: October 19, 2020
 
 [NuGet package for WebView2 SDK 1.0.622.22][NuGetGallery1.0.622.22]
 
-### Minimum required Runtime version
-
-This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or higher.
+**Minimum required Runtime version:** This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or higher.
 
 ### General  
 
@@ -462,9 +436,7 @@ Release Date: September 10, 2020
 
 [NuGet package for WebView2 SDK 0.9.622.11][NuGetGallery0.9.622.11]
 
-### Minimum required Runtime version
-
-This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or higher.
+**Minimum required Runtime version:** This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or higher.
 
 ### General  
 
@@ -485,9 +457,7 @@ Release Date: July 20, 2020
 
 [NuGet package for WebView2 SDK 0.9.579][NuGetGallery0.9.579]
 
-### Minimum required browser version
-
-This version of the WebView2 SDK requires Microsoft Edge version 86.0.579.0 or higher.
+**Minimum required browser version:** This version of the WebView2 SDK requires Microsoft Edge version 86.0.579.0 or higher.
 
 ### General  
 
@@ -523,9 +493,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 86.0.579.0 or h
 
 [NuGet package for WebView2 SDK 0.9.538][NuGetGallery0.9.538]
 
-### Minimum required browser version
-
-This version of the WebView2 SDK requires Microsoft Edge version 85.0.538.0 or higher.
+**Minimum required browser version:** This version of the WebView2 SDK requires Microsoft Edge version 85.0.538.0 or higher.
 
 ### General  
 
@@ -559,9 +527,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 85.0.538.0 or h
 
 [NuGet package for WebView2 SDK 0.9.515-prerelease][NuGetGallery0.9.515-prerelease]
 
-### Minimum required browser version
-
-This prerelease version of the WebView2 SDK requires Microsoft Edge version 84.0.515.0 or higher.
+**Minimum required browser version:** This prerelease version of the WebView2 SDK requires Microsoft Edge version 84.0.515.0 or higher.
 
 *   > [!IMPORTANT]
     > **Announcement**:  WebView2 now supports Windows Forms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **prerelease package**.  
@@ -580,9 +546,7 @@ This prerelease version of the WebView2 SDK requires Microsoft Edge version 84.0
 
 [NuGet package for WebView2 SDK 0.9.488][NuGetGallery0.9.488]
 
-### Minimum required browser version
-
-This version of the WebView2 SDK requires Microsoft Edge version 84.0.488.0 or higher.
+**Minimum required browser version:** This version of the WebView2 SDK requires Microsoft Edge version 84.0.488.0 or higher.
 
 *   > [!IMPORTANT]
     > **Announcement**:  Starting with the upcoming Microsoft Edge version 83, Evergreen WebView no longer targets the Stable browser channel.  Instead, it targets another set of binaries, branded Evergreen WebView2 Runtime, that you can chain-install through an installer that the WebView team is currently developing.  For more information, navigate to [Distribute a WebView2 app and the WebView2 Runtime][Webview2ConceptsDistribution].  
@@ -627,9 +591,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 84.0.488.0 or h
 
 [NuGet package for WebView2 SDK 0.9.430][NuGetGallery0.9.430]
 
-### Minimum required browser version
-
-This version of the WebView2 SDK requires Microsoft Edge version 82.0.430.0 or higher.
+**Minimum required browser version:** This version of the WebView2 SDK requires Microsoft Edge version 82.0.430.0 or higher.
 
 The WebView2 SDK is the official Win32 C++ Beta version, which incorporates several feature requests from feedback.  The WebView team tries to limit the number of releases with breaking changes.  As general availability approaches, several major breaking changes are incorporated in the Beta release.  
 
@@ -665,9 +627,7 @@ The WebView2 SDK is the official Win32 C++ Beta version, which incorporates seve
 
 [NuGet package for WebView2 SDK 0.8.355][NuGetGallery0.8.355]
 
-### Minimum required browser version
-
-This version of the WebView2 SDK requires Microsoft Edge version 80.0.355.0 or higher.
+**Minimum required browser version:** This version of the WebView2 SDK requires Microsoft Edge version 80.0.355.0 or higher.
 
 *   Released WebView2API Sample, a comprehensive guide of the WebView2 SDK.  For more information, navigate to [API Sample][GithubMicrosoftedgeWebview2samplesApisample].  
 *   Added IME support for all languages besides English \([#30][GithubMicrosoftedgeWebviewfeedbackIssue30]\).  
@@ -680,9 +640,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 80.0.355.0 or h
 
 [NuGet package for WebView2 SDK 0.8.314][NuGetGallery0.8.314]
 
-### Minimum required browser version
-
-This version of the WebView2 SDK requires Microsoft Edge version 80.0.314.0 or higher.
+**Minimum required browser version:** This version of the WebView2 SDK requires Microsoft Edge version 80.0.314.0 or higher.
 
 ### Changes
 
@@ -703,17 +661,20 @@ This version of the WebView2 SDK requires Microsoft Edge version 80.0.314.0 or h
 
 [NuGet package for WebView2 SDK 0.8.270][NuGetGallery0.8.270]
 
-### Minimum required browser version
-
-This version of the WebView2 SDK requires Microsoft Edge version 78.0.270.0 or higher.
+**Minimum required browser version:** This version of the WebView2 SDK requires Microsoft Edge version 78.0.270.0 or higher.
 
 ### Changes
+
 *   Added `DocumentTitleChanged` event to indicate document title change \([\#27][GithubMicrosoftedgeWebviewfeedbackIssue27]\).  
+
 *   Added `GetWebView2BrowserVersionInfo` API \([\#18][GithubMicrosoftedgeWebviewfeedbackIssue18]\).  
+
 *   Added `NewWindowRequested` event.  
+
 *   Updated `CreateWebView2EnvironmentWithDetails` function to remove `releaseChannelPreference`.  For more information about the `CreateWebView2EnvironmentWithDetails` function, navigate to [CreateWebView2EnvironmentWithDetails][Webview2ReferenceWin32Webview2IdlViewWebview208355Createwebview2environmentwithdetails].  The registry and environment variable override is still supported.  The default channel preference is used unless overridden.  
     During the channel search, the WebView team skips any previous channel version that isn't compatible with the WebView2 SDK.  
-    The WebView team selects the more stable channel to ensure the most consistent behaviors for the end user.  When you test with latest Canary builds, you should create a script to set the `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` environment variable to `1` before launching the app.  
+    The WebView team selects the more stable channel to ensure the most consistent behaviors for the end user.  When you test with the latest Canary build, you should create a script to set the `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` environment variable to `1` before launching the app.  For more information, navigate to [Switch to a preview channel to test upcoming APIs and features](how-to/set-preview-channel.md).
+
 *   Updated the `CreateWebView2EnvironmentWithDetails` function with logic for selecting `userDataFolder` when not specified.  For more information about the `CreateWebView2EnvironmentWithDetails` function, navigate to [CreateWebView2EnvironmentWithDetails][Webview2ReferenceWin32Webview2IdlViewWebview208355Createwebview2environmentwithdetails].  If you previously used the default `userDataFolder` location, when you switch to the new SDK the default `userDataFolder` is reset \(set to a new location in the host code directory\) and your state is also reset.  If the host process doesn't have permission to write to the specified directory, the `CreateWebView2EnvironmentWithDetails` function may fail.  You may copy the data from the old `user data folder` to the new directory.  
     
 
@@ -721,9 +682,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 78.0.270.0 or h
 
 [NuGet package for WebView2 SDK 0.8.230][NuGetGallery0.8.230]
 
-### Minimum required browser version
-
-This version of the WebView2 SDK requires Microsoft Edge version 77.0.230.0 or higher.
+**Minimum required browser version:** This version of the WebView2 SDK requires Microsoft Edge version 77.0.230.0 or higher.
 
 ### Changes
 
@@ -736,9 +695,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 77.0.230.0 or h
 
 [NuGet package for WebView2 SDK 0.8.190][NuGetGallery0.8.190]
 
-### Minimum required browser version
-
-This version of the WebView2 SDK requires Microsoft Edge version 77.0.190.0 or higher.
+**Minimum required browser version:** This version of the WebView2 SDK requires Microsoft Edge version 77.0.190.0 or higher.
 
 *   Added `get_AreDevToolsEnabled`/`put_AreDevToolsEnabled` to control if users can open DevTools \([\#16][GithubMicrosoftedgeWebviewfeedbackIssue16]\).  
 *   Added `get_IsStatusBarEnabled`/`put_IsStatusBarEnabled` to control if the status bar is displayed \([\#19][GithubMicrosoftedgeWebviewfeedbackIssue19]\).  
@@ -755,9 +712,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 77.0.190.0 or h
 
 [NuGet package for WebView2 SDK 0.8.149][NuGetGallery0.8.149]
 
-### Minimum required browser version
-
-This version of the WebView2 SDK requires Microsoft Edge version 76.0.149.0 or higher.
+**Minimum required browser version:** This version of the WebView2 SDK requires Microsoft Edge version 76.0.149.0 or higher.
 
 Initial developer preview release.  
 
