@@ -15,7 +15,7 @@ In the **Shortcuts** page of **Settings**, you can view the defined shortcuts fo
 For an article listing all the default shortcut settings, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  See also [Customize DevTools][DevToolsCustomizeSettings].
 
 
-## Matching keyboard shortcuts from Microsoft Visual Studio Code  
+## Match keyboard shortcuts from Microsoft Visual Studio Code
 
 To match the keyboard shortcut in the Microsoft Edge DevTools for an equivalent action in Visual Studio Code:
 
@@ -36,7 +36,7 @@ For example, to pause or continue running a script in Visual Studio Code, you se
 * [Visual Studio Code Keyboard shortcuts for Windows][VisualStudioCodeShortcutsKeyboardWindows] (PDF file)
 
 
-## Editing the keyboard shortcut for a DevTools action
+## Edit the keyboard shortcut for a DevTools action
 
 1.  [Open DevTools][DevtoolsOpenMain], such as by selecting `F12`.
 1.  Open [Settings][DevToolsCustomizeSettings], such as by selecting the gear icon in the main toolbar, or by selecting `Shift`+`?`.  
