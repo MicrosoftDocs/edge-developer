@@ -17,7 +17,7 @@ Edge 93 became the beta channel of Microsoft Edge on August 3, 2021. This articl
 
 ## Window Controls Overlay Origin Trials
 
-Developers wanting to have more control over the title bar area currently displayed in standalone dislpay mode may want to experiment with Window Controls Overlay. Window Controls Overlay (WCO) is a set of features that work together to provide just the essential controls needed for the app window and provide more of that area to the web content layer. WCO is available for installed desktop PWAs. 
+Developers wanting to have more control over the title bar area currently displayed in standalone display mode may want to experiment with Window Controls Overlay. Window Controls Overlay (WCO) is a set of features that work together to provide just the essential controls needed for the app window and provide more of that area to the web content layer. WCO is available for installed desktop PWAs. 
 
 Learn more about experimenting with [Window Controls Overlay at our experiments page][ExpWCO]. 
 
@@ -25,7 +25,7 @@ Register your origin for Window Controls Overlay trial at our [Origin Trials Dev
 
 ## URL Handlers Origin Trial
 
-Developers can now use the experimental feature Web App URL Handlers in origin trial. 
+Developers can now use the experimental feature Web App URL Handlers in origin trial. This feature allows the registration of an installed PWA to open links from other apps that refer to its scope.
 
 Learn more about experimenting with [URL handlers at our experiments page][ExpURLHandler].
 
