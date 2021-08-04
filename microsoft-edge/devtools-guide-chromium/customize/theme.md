@@ -81,8 +81,6 @@ To use the Command Menu to change which color theme is applied to DevTools:
        The list of themes in the **Command Menu**  
     :::image-end:::  
 
-The **Appearance** commands affect DevTools, not the webpage under development.  The **Rendering** commands instead affect the webpage under development.
-
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
