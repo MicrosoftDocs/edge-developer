@@ -206,7 +206,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 
 <!-- links -->
-[CustomizeDarkTheme]: ../../../customize/dark-theme.md "Apply color themes to DevTools | Microsoft Docs"
+[CustomizeDarkTheme]: ../../../customize/theme.md "Apply color themes to DevTools | Microsoft Docs"
 <!-- todo: link directly to the subheading in the page, when available; test the subheading link:
 [ExperimentalFeaturesDetachedElements]: ../../../experimental-features/index.md#detached-elements "Detached elements | Microsoft Docs" -->
 [CustomizeLocalization]: ../../../customize/localization.md "Change DevTools language settings | Microsoft Docs"
