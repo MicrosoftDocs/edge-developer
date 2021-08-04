@@ -117,6 +117,8 @@ The latest Runtime supports all APIs that are in the latest SDK release build.
 
 ## Feature-detecting to test whether the installed Runtime supports recently added APIs
 
+<!-- this is the main section about QI; other articles should have a couple paragraphs only, and link to here -->
+
 If you use the Evergreen Runtime, there are edge cases where a client's Runtime is not the latest and therefore falls behind the SDK build number, because the Admin might have turned off updating of the WebView2 Runtime, or the client might be offline long-term.
 Therefore, it's a good practice to wrap any calls to relatively new WebView2 APIs by using `QueryInterface` or `try-catch`.
 
@@ -129,11 +131,14 @@ How your app programmatically tests for API support depends on the coding platfo
 
 If an API is unavailable in the client's installed WebView2 Runtime, consider providing graceful fallback for the associated feature for the user, or inform the user that they must update the WebView2 Runtime to use the feature.
 
+This technique is listed as a WebView2 development best practice, at [Test whether APIs are supported by the installed WebView2 Runtime][Webview2ConceptsDevguideTestAPIs].
+
 
 <!--links -->
 [Webview2ConceptsDistribution]: ./distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
 [Webview2ReleaseNotes]: ../release-notes.md "Release notes for WebView2 SDK | Microsoft Docs"
 [Webview2ReleaseNotes1062222]: ../release-notes.md#1062222 "1.0.622.22 - Release notes for WebView2 SDK | Microsoft Docs"
+[Webview2ConceptsDevguideTestAPIs]: developer-guide.md#test-whether-newer-apis-are-supported-by-the-installed-webview2-runtime "Test whether APIs are supported by the installed WebView2 Runtime | Microsoft Docs"
 <!-- external links -->
 [DeployedgeChannels]: /deployedge/microsoft-edge-channels "Overview of the Microsoft Edge channels | Microsoft Docs"
 

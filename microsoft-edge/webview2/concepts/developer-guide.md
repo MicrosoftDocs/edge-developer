@@ -30,6 +30,8 @@ This guidance is similar to the guidance that we give to web developers.  For mo
 
 ## Test whether newer APIs are supported by the installed WebView2 Runtime
 
+<!-- the main section about QueryInterface is in versioning.md; this section should be only a couple paragraphs -->
+
 To run a WebView2 app that was developed with a particular version of the Webview2 SDK, the client must have a compatible version of the WebView2 Runtime installed.  Because APIs are continually being added to WebView2, new versions of the runtime are also released to support the new APIs.  Use feature-detection to make sure that the newer APIs that are used by your WebView2 app are supported by the WebView2 Runtime that's installed on the client.
 
 If you use the Evergreen WebView2 Runtime, there are some scenarios where the runtime on a client hasn't been automatically updated to the latest version.  For example, if a client doesn't have internet access, the runtime isn't automatically updated.  Additionally, some group policies pause updating of the runtime.  When you push an update to your WebView2 app, the app might not work if it tries to call newer APIs that aren't available in the client's installed runtime.
