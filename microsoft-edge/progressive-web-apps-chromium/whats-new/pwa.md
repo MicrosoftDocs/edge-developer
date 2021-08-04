@@ -13,9 +13,9 @@ keywords: microsoft edge, pwas, pwa, progressive web apps
 [!INCLUDE [contact DevTools team note](includes/edge-whats-new-note.md)]
 
 
-## What's New in Edge 93
+## What's New in Microsoft Edge 93
 
-Microsoft Edge version 93 became the Beta channel of Microsoft Edge on August 3, 2021. This article lists updates we made to PWAs from both a developer and consumer point of view.
+Microsoft Edge version 93 became the Beta channel of Microsoft Edge on August 3, 2021. This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
 
 ## Window Controls Overlay origin trials
 
@@ -23,7 +23,7 @@ Developers wanting to have more control over the title bar area currently displa
 
 Learn more about experimenting with Window Controls Overlay at [Experimental features in Progressive Web Apps (PWAs)][ExpWCO].
 
-Register your origin for Window Controls Overlay trial at our [Origin Trials Developer console][WCOOT].
+Register your origin for a Window Controls Overlay trial at our [Origin Trials Developer console][WCOOT].
 
 ## URL Handlers origin trial
 
@@ -31,18 +31,18 @@ Developers can now use the experimental feature Web App URL Handlers in origin t
 
 Learn more about experimenting with URL handlers at [Experimental features in Progressive Web Apps (PWAs)][ExpURLHandler].
 
-Register your domain for URL handler trial at our [Origin Trials Developer console][URLHandlerOT].
+Register your domain for a URL handler trial at our [Origin Trials Developer console][URLHandlerOT].
 
-## Support for Share API on MacOS
+## Support for the Share API on MacOS
 
 We have implemented support for the `navigator.share` API for MacOS. The feature is rolling out to stable Edge browsers on MacOS over the coming weeks. 
 
 Learn more about the [navigator.share() API][mdnShareAPI].
 
 
-## What's New in Edge 92
+## What's New in Microsoft Edge 92
 
-Microsoft Edge version 92 became the stable channel of Microsoft Edge on July 22, 2021. This article lists updates we made to PWAs from both a developer and consumer point of view.
+Microsoft Edge version 92 became the stable channel of Microsoft Edge on July 22, 2021. This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
 
 ## Protocol handlers origin trial 
 
@@ -65,41 +65,39 @@ These changes make the **Settings** menu provide a user experience that's more l
    The new, streamlined app-info menu
 :::image-end:::
 
-#### Dedicated Privacy Menu
+#### Dedicated Privacy menu
 
 :::image type="complex" source="media/privacy-menu.png" alt-text="Privacy controls in the dedicated Privacy menu" lightbox="media/privacy-menu.png":::
    Privacy controls in the dedicated **Privacy** menu
 :::image-end:::
 
-#### Dedicated More Tools Menu
+#### Dedicated More Tools menu
 
-:::image type="complex" source="media/more-tools.png" alt-text="Content related tools menu" lightbox="media/more-tools.png":::
-   Content related tools now found in More tools menu
+:::image type="complex" source="media/more-tools.png" alt-text="Content-related tools are now found in the More Tools menu" lightbox="media/more-tools.png":::
+   Content-related tools are now found in the **More tools** menu
 :::image-end:::
 
-## Post-install flyout
+## Post-install flyout dialog box
 
 After a PWA is installed from the Edge browser on Windows, users will now be able to select from four options to easily launch their apps: 
-* **Pin to Start**
 * **Pin to taskbar** 
+* **Pin to Start**
 * **Create Desktop shortcut**
 * **Auto-start on device login**
 
-For convenience, this flyout is shown the first time the app is launched.
+For convenience, this flyout dialog box is shown the first time the app is launched.
+
+:::image type="complex" source="media/postInstallFlyout.png" alt-text="The post-install flyout dialog box with options for Pin to taskbar, Pin to Start, Create Desktop shortcut, and Auto-start on device login" lightbox="media/postInstallFlyout.png":::
+   The post-install flyout dialog box with options for **Pin to taskbar**, **Pin to Start**, **Create Desktop shortcut**, and **Auto-start on device login**
+:::image-end:::
 
 This feature is being rolled out gradually to all users. In the meantime, if you'd like to use this feature, navigate to `edge://flags` and enable the flag **Web Apps Post Install Dialog**.
 
-#### Post install Flyout example
-
-:::image type="complex" source="media/postInstallFlyout.png" alt-text="Users can select to pin, create shortcut or run on device login" lightbox="media/postInstallFlyout.png":::
-   Screen shot of the post-install flyout dialog box
-:::image-end:::
-
 ## Restore Web Apps
 
-Installed sites and PWAs that were running prior to an unexpected shutdown will now restore (be restarted) when the system recovers. 
+Installed sites and PWAs that were running prior to an unexpected shutdown will now restore (that is, they will be restarted) when the system recovers. 
 
-This can occur due to process failure, system restart and power outage. Prior to this change, installed sites and PWAs had indeterminant behavior upon system restore.  
+This can occur due to process failure, system restart, or power outage. Prior to this change, installed sites and PWAs had indeterminate behavior upon system restore.  
 
 <!-- links -->  
 
