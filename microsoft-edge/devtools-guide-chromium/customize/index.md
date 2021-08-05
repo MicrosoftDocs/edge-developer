@@ -89,7 +89,7 @@ Navigate to [Microsoft Edge DevTools Placement][DevToolsPlacement].
 
 ## Theme  
 
-Navigate to [Apply color themes to Microsoft Edge DevTools][Theme].  
+Navigate to [Apply color themes to DevTools][Theme].  
 
 :::image type="complex" source="./media/customize-theme-setting.png" alt-text="Selecting a different color theme" lightbox="./media/customize-theme-setting.png":::
    Selecting a different color theme  
@@ -116,7 +116,7 @@ The next time you open DevTools, a new page named **Experiments** is displayed i
 <!-- links -->  
 
 [DevToolsPlacement]: ./placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"  
-[Theme]: ./theme.md "Apply color themes to Microsoft Edge DevTools | Microsoft Docs"  
+[Theme]: ./theme.md "Apply color themes to DevTools | Microsoft Docs"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

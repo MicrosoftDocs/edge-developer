@@ -1,9 +1,9 @@
 ---
 description: How to apply different color themes to Microsoft Edge DevTools.
-title: Apply color themes to Microsoft Edge DevTools
+title: Apply color themes to DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/22/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -18,7 +18,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Apply color themes to Microsoft Edge DevTools  
+# Apply color themes to DevTools
 
 You can apply various color themes to Microsoft Edge DevTools, including several themes from [Visual Studio Code][VSCode], such as Monokai and Solarized Dark.  Themes affect the color of panes, buttons, and code syntax highlighting. 
 
@@ -28,6 +28,9 @@ You can apply various color themes to Microsoft Edge DevTools, including several
 
 > [!NOTE]
 > Prior to [Microsoft Edge 93][WhatsNew93], DevTools only had a light and dark theme.  
+
+This article is about changing the appearance of DevTools.  To instead change how the webpage under development is displayed, navigate to [Emulate dark or light schemes in the rendered page][AccessibilityPreferredColorSchemeSimulation].
+
 
 ## Available themes  
 
@@ -50,7 +53,7 @@ Dark themes:
 - Solarized Dark  
 - Tomorrow Night Blue  
 
-## Changing the theme from Settings  
+## Changing the color theme from Settings
 
 1.  Open DevTools, and then select **Settings** (the gear icon).
 
@@ -64,18 +67,20 @@ Dark themes:
        Selecting a theme in **Preferences**  
     :::image-end:::  
 
-## Changing the theme from the Command Menu  
 
-You can also use the Command Menu to change themes.  
+## Changing the color theme from the Command Menu
+
+To use the Command Menu to change which color theme is applied to DevTools:
 
 1.  [Open the Command Menu][DevtoolsCommandMenu].  
 1.  Type the word "theme".
-1.  Select the command for the theme you want to use.  For example, **Appearance: Switch to Abyss theme**.
+1.  Select an **Appearance** command for the theme you want to use.  For example, **Appearance: Switch to Abyss theme** or **Appearance: Switch to Light+ (Default) theme**.
 1.  Select `Enter` to run the command.  
     
     :::image type="complex" source="./media/customize-theme-command-menu.png" alt-text="The list of themes in the Command Menu" lightbox="./media/customize-theme-command-menu.png":::
        The list of themes in the **Command Menu**  
     :::image-end:::  
+
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
@@ -85,6 +90,7 @@ You can also use the Command Menu to change themes.
 [DevtoolsCommandMenu]: ../command-menu/index.md "Command Menu | Microsoft Docs"  
 [WhatsNew93]: ../whats-new/2021/07/devtools.md "What's New In DevTools (Microsoft Edge 93) | Microsoft Docs"  
 [VSCode]: https://code.visualstudio.com  
+[AccessibilityPreferredColorSchemeSimulation]: ../accessibility/preferred-color-scheme-simulation.md "Emulate dark or light schemes in the rendered page | Microsoft Docs"
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
