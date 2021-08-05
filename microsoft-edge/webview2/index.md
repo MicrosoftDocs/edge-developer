@@ -151,6 +151,7 @@ A General Availability \(GA\) or Preview version is available on the following p
 *   .NET Framework 4.5 or later  
 *   .NET Core 3.1 or later  
 *   .NET 5  
+*   .NET 6 (Preview)
 *   [WinUI 3.0][UwpToolkitsWinui3]  
     
 You may run WebView2 apps on the following versions of Windows.  
