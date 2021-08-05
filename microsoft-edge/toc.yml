@@ -145,9 +145,9 @@
               items:
                 - name: Overview
                   href: devtools-guide-chromium/customize/index.md
-                - name: Apply a theme
+                - name: Apply a color theme
                   href: devtools-guide-chromium/customize/theme.md
-                - name: Change placement
+                - name: Change DevTools placement
                   href: devtools-guide-chromium/customize/placement.md
                 - name: Match browser language
                   href: devtools-guide-chromium/customize/localization.md
@@ -279,7 +279,7 @@
               items:
                 - name: Emulate vision deficiencies
                   href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
-                - name: Simulate color schemes
+                - name: Emulate dark or light scheme
                   href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
                 - name: Simulate reduced motion
                   href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
