@@ -106,6 +106,8 @@ In case updating the WebView2 Runtime is prevented on the client, make sure that
 The minimum required Runtime version to support the General Availability release of the SDK (build 616) is older than for the latest Runtime.
 The latest Runtime supports all APIs that are in the latest SDK release build.
 
+To check the compatibility between specific build numbers of the SDK and the Runtime or Microsoft Edge preview channel, navigate to [Release notes for WebView2 SDK][Webview2ReleaseNotes].
+
 
 ## Feature-detecting to test whether the installed Runtime supports recently added APIs
 
