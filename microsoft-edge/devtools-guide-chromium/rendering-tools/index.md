@@ -43,7 +43,7 @@ Take a recording in the **Performance** tool and look for suspiciously long `Eva
 <!--todo: add Recording section when available  -->  
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->  
 
-f you noticing quite a bit of jank in your JavaScript, you may need to take your analysis to the next level and collect a JavaScript CPU profile.  CPU profiles show where runtime is spent within the functions of your page.  Learn how to create CPU profiles in [Speed Up JavaScript Runtime][DevtoolsRenderingToolsJavascriptRuntime].
+If you noticing quite a bit of jank in your JavaScript, you may need to take your analysis to the next level and collect a JavaScript CPU profile.  CPU profiles show where runtime is spent within the functions of your page.  Learn how to create CPU profiles in [Speed Up JavaScript Runtime][DevtoolsRenderingToolsJavascriptRuntime].
 
 ### JavaScript: Problems  
 
