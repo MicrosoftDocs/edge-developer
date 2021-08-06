@@ -3,7 +3,7 @@ description: How to specify a Microsoft Edge preview channel to use, to test exp
 title: Switch to a preview channel to test upcoming APIs and features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/23/2021
+ms.date: 08/03/2021
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -13,33 +13,18 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 Updates of the WebView2 Evergreen Runtime often include new APIs and features.  Some of these updates could potentially break your WebView2 app.  To test the experimental APIs ahead of time and ensure your app's forward-compatibility, you should perform compatibility testing using a preview channel of Microsoft Edge, along with a prerelease version of the WebView2 SDK.
 
+When you test a prerelease SDK package, you need to direct your application to use a preview channel of Microsoft Edge (Beta, Dev, or Canary), instead of defaulting to using the WebView2 Runtime.  Several approaches for doing this are explained below.
 
-## Combinations of the SDK and browser channel 
+The WebView2 Runtime doesn't have the experimental WebView2 APIs.  For your WebView2 code to run when using experimental APIs in a prerelease SDK, your client (on a development machine) needs to have a Microsoft Edge preview channel.  The Canary preview channel is recommended, because it is ahead of the other channels and has the latest experimental APIs.
 
-Experimental WebView2 APIs are for use during development and testing of your WebView2 app, not for a production release of your WebView2 app.
+The prerelease SDK works together with a preview channel as follows:
+*  A prerelease version of the WebView2 SDK contains the method signatures for experimental APIs, which allow you to write code using the experimental WebView2 APIs in your app.  
+*  The preview channels of Microsoft Edge contain the Microsoft Edge binaries that are needed to run and render your app, including the implementation of the experimental APIs.
 
-*   During development and testing of your WebView2 app, to use experimental WebView2 APIs, use the following combination:
-    *   A prerelease version of the WebView2 SDK.
-    *   A Microsoft Edge preview channel (Beta, Dev, or Canary).  Canary is recommended.
+For more information about how SDK versions works in conjunction with the WebView2 Runtime or preview channels of Microsoft Edge, navigate to [Understand WebView2 SDK versions][WebView2ConceptsVersioning].
 
-*   For a production release of your WebView2 app, use the following combination, which doesn't provide experimental WebView2 APIs:
-    *   A release version of the WebView2 SDK.
-    *   The WebView2 Runtime.
 
-To develop a WebView2 application that uses experimental APIs, you need two components:
-*  A _prerelease_ version of the WebView2 SDK.  A release version of the SDK doesn't have experimental WebView2 APIs.
-*  A Microsoft Edge _preview_ channel (Beta, Dev, or Canary), also called a Microsoft Edge _Insiders_ channel.
-   *  The WebView2 Runtime doesn't support the WebView2 experimental APIs.
-   *  The Stable version of Microsoft Edge doesn't support WebView2.
-
-### Relation of the SDK and a channel or Runtime
-
-*   SDK: A rerelease of the WebView2 SDK contains the method signatures for experimental APIs, which allow you to write code using the experimental WebView2 APIs in your app.
-*   Binaries: For your WebView2 code to build and run when using experimental APIs, you need to direct your app to use a Microsoft Edge preview channel (Beta, Dev, or Canary).  The preview channels contain the Microsoft Edge binaries that are needed to render your app when using the experimental APIs.
-
-By [default](#approaches-to-making-your-app-use-a-specific-browser-channel), a WebView2 app automatically tries to find and use the WebView2 Runtime, which doesn't have the experimental WebView2 APIs.  This default allows you to easily develop code with the stable-release WebView2 SDK.  However, when you test a prerelease SDK package (which contains experimental APIs), you need to direct your application to use a specific preview channel of Microsoft Edge.
-
-### Downloading the prerelease SDK and a preview channel
+## Downloading the prerelease SDK and a preview channel
 
 To use experimental APIs, download a prerelease version of the WebView2 SDK from [Microsoft.Web.WebView2 package](https://www.nuget.org/packages/Microsoft.Web.WebView2).
 
@@ -230,7 +215,7 @@ To delete the `ReleaseChannelPreference` registry override, run the command:
 `REG DELETE HKLM\Software\Policies\Microsoft\Edge\WebView2\ReleaseChannelPreference /f`
 
 
-<!--4. Environment Variable ========================================================================-->
+<!-- 4. Environment Variable ========================================================================-->
 ## Using an environment variable
 
 To make your application use a Microsoft Edge preview channel by using an environment variable:
@@ -272,6 +257,7 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
 
 <!-- links -->
+[WebView2ConceptsVersioning]: ../concepts/versioning.md "Understand WebView2 SDK versions | Microsoft Docs"
 <!-- external links -->
 [Webview2RefWin32GlobalsCreateCoreWebView2EnvironmentWithOptions]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
