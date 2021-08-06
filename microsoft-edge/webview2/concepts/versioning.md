@@ -50,7 +50,7 @@ For more information about automatic updating of the Evergreen Runtime, navigate
 
 ## Release cadence
 
-New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge \(Chromium\) browser, which is approximately every four weeks.  This cadence changed from six weeks to four weeks starting with Microsoft Edge version 92.
+New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge \(Chromium\) browser, which has been approximately every six weeks.  This cadence is planned to change to every four weeks starting with Microsoft Edge version 94.
 
 
 ## Minimum version and build number to instantiate WebView2
