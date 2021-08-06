@@ -447,7 +447,7 @@
           items:
             - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
-            - name: Distributing my app
+            - name: Distribute a WebView2 app and Runtime
               href: webview2/concepts/distribution.md
             - name: Manage the user data folder
               href: webview2/concepts/user-data-folder.md
@@ -457,20 +457,16 @@
               href: webview2/concepts/navigation-events.md
             - name: Process model
               href: webview2/concepts/process-model.md
-            - name: Security Best Practices
+            - name: Security best practices
               href: webview2/concepts/security.md
             - name: Versioning
               href: webview2/concepts/versioning.md
             - name: Threading model
               href: webview2/concepts/threading-model.md
-            - name: WebView2 development best practices  
+            - name: Development best practices
               href: webview2/concepts/developer-guide.md
             - name: Win32 API conventions
               href: webview2/concepts/win32-api-conventions.md
-        - name: Release notes
-          href: webview2/release-notes.md
-        - name: Roadmap
-          href: webview2/roadmap.md
         - name: How to
           items:
             - name: Extended JavaScript scenarios in WebView2
@@ -485,6 +481,10 @@
               href: webview2/how-to/chromium-devtools-protocol.md
             - name: Switch to a preview channel
               href: webview2/how-to/set-preview-channel.md
+        - name: Release notes
+          href: webview2/release-notes.md
+        - name: Roadmap
+          href: webview2/roadmap.md
         - name: Reference
           href: webview2/webview2-api-reference.md
           items:

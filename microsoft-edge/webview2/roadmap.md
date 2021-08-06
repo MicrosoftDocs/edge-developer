@@ -30,11 +30,13 @@ The WebView2 team is planning the following major efforts for future updates.
 
 ## WebView2 Runtime and Installer  
 
-[Evergreen distribution model][ConceptDistributionEvergreenModel] allows you to target or chain install the WebView2 Runtime onto your user's machine.  The Evergreen WebView2 Runtime and installer has reached General Availability \(GA\).  
+Evergreen distribution mode allows you to target or chain-install the WebView2 Runtime onto your user's machine.  The Evergreen WebView2 Runtime and installer has reached General Availability \(GA\).  For more information, navigate to [Distribute a WebView2 app and the WebView2 Runtime][ConceptDistribution].
+
 
 ## Fixed version  
 
-[Fixed version distribution model][ConceptsDistributionFixedVersionModel] allows you to package the Microsoft Edge binaries inside your native application.  The Fixed Version has reached General Availability \(GA\).  
+Fixed version distribution mode allows you to package the Microsoft Edge binaries <!--(a specific version of the WebView2 Runtime)--> inside your native application.  The Fixed Version has reached General Availability \(GA\).  For more information, navigate to [Distribute a WebView2 app and the WebView2 Runtime][ConceptDistribution].
+
 
 ## General availability  
 
@@ -52,10 +54,9 @@ You can access WebView2 controls in your applications using [Windows UI Library 
 
  
 <!-- links -->  
-
+[ConceptDistribution]: ./concepts/distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
+<!-- external links -->
 [WindowsAppSDKRoadmap]: https://github.com/microsoft/WindowsAppSDK/blob/main/docs/roadmap.md "Roadmap"
-[ConceptDistributionEvergreenModel]: ./concepts/distribution.md#evergreen-distribution-mode "Evergreen distribution model - Distribution of applications using WebView2 | Microsoft Docs"  
-[ConceptsDistributionFixedVersionModel]: ./concepts/distribution.md#fixed-version-distribution-mode "Fixed version distribution model - Distribution of applications using WebView2 | Microsoft Docs"  
 
 [UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Windows UI Library 3.0 Preview 1 (May 2020) | Microsoft Docs"  
 
