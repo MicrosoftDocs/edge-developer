@@ -1,0 +1,112 @@
+---
+description: Style editing for CSS-in-JS frameworks.
+title: Style editing for CSS-in-JS frameworks
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 08/06/2021
+ms.topic: article
+ms.prod: microsoft-edge
+keywords: microsoft edge, web development, f12 tools, devtools, css, css-in-js
+---
+<!-- Copyright Alex Rudenko
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License. -->
+
+# Style editing for CSS-in-JS frameworks
+
+<!-- from https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#style-editing-for-css-in-js-frameworks -->
+
+The **Styles** pane supports editing styles that were created with the [CSS Object Model (CSSOM)][CsswgDraftsCssom] APIs.  Many CSS-in-JS frameworks and libraries use the CSSOM APIs under the hood to construct styles.
+
+You can edit styles added in JavaScript using [Constructable Stylesheets][WicgConstructStylesheet].  Constructable Stylesheets are a way to create and distribute reusable styles when using [Shadow DOM][MdnShadowDom].
+
+For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) are editable.  The styles are editable in the **Styles** panel.
+
+:::image type="complex" source="../media/css-in-js.msft.png" alt-text="Changing the background property of the h1 styles added with CSSStyleSheet from pink to lightblue" lightbox="../media/css-in-js.msft.png":::
+   Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.
+:::image-end:::
+
+Give this feature a try with a [sample that uses CSS-in-JS][CodepenZoherghadyaliAbdgrpz].
+
+
+## Blog post
+
+This article talks about CSS-in-JS support in DevTools and, in general, what we mean by _CSS-in-JS_ and how it's different from regular CSS.
+
+## What is CSS-in-JS?
+
+The definition of CSS-in-JS is somewhat vague. In a broad sense, it's an approach for managing CSS code using JavaScript. For example, it could mean that the CSS content is defined using JavaScript and the final CSS output is generated on-the-fly by the app.
+
+In the context of DevTools, _CSS-in-JS_ means that the CSS content is injected into the page using CSSOM APIs.  Regular CSS is injected using `<style>` or `<link>` elements, and it has a static source (such as a DOM node or a network resource).  In contrast, CSS-in-JS often doesn't have a static source.  A special case here is that the content of a `<style>` element can be updated using CSSOM API, causing the source to become out of sync with the actual CSS stylesheet.
+
+If you use any CSS-in-JS library (such as styled-component, Emotion, or JSS), the library might inject styles using CSSOM APIs under the hood depending on the mode of development and the browser.
+
+Let's look at some examples on how you can inject a stylesheet using CSSOM API similar to what CSS-in-JS libraries are doing.
+
+```javascript
+// Insert new rule to an existing CSS stylesheet
+const element = document.querySelector('style');
+const stylesheet = element.sheet;
+stylesheet.replaceSync('.some { color: blue; }');
+stylesheet.insertRule('.some { color: green; }');
+```
+
+You can create a completely new stylesheet as well:
+
+```javascript
+// Create a completely new stylesheet
+const sheet = new CSSStyleSheet();
+stylesheet.replaceSync('.some { color: blue; }');
+stylesheet.insertRule('.some { color: green; }');
+```
+
+```javascript
+// Apply constructed stylesheet to the document
+document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
+```
+
+## CSS support in DevTools
+
+In DevTools, the most commonly used feature when dealing with CSS is the **Styles** pane.
+In the **Styles** pane, you can view what CSS-in-JS rules apply to a particular element.  You can also edit the rules and see the changes on the page in realtime.
+
+You can modify CSS rules by using CSSOM APIs.  Sometimes CSS-in-JS styles are described as _constructed_, to indicate that they were constructed using Web APIs.
+
+<!-- video
+https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/video/dPDCek3EhZgLQPGtEG3y0fTn4v82/Jy8q9gPbQknRturLyCsq.mp4
+-->
+
+
+## Getting in touch with the Microsoft Edge DevTools team
+
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
+
+> [!NOTE]
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
+> The original page is found [here](https://developer.chrome.com/blog/css-in-js/) and is authored by [Alex Rudenko][AlexRudenko] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+
+[![Creative Commons License][CCby4Image]][CCA4IL]
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
+
+
+<!-- links -->
+<!-- external links -->
+[CsswgDraftsCssom]: https://drafts.csswg.org/cssom "CSS Object Model (CSSOM) | W3C CSS Working Group Editor Drafts"
+[WicgConstructStylesheet]: https://wicg.github.io/construct-stylesheets/ "Constructable Stylesheet Objects | Web Incubator CG"
+[MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "Using shadow DOM | MDN"
+[CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "Style editing for CSS-in-JS frameworks | CodePen"
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[AlexRudenko]: https://developers.google.com/web/resources/contributors#alex-rudenko

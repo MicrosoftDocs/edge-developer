@@ -245,6 +245,8 @@
                   href: devtools-guide-chromium/inspect-styles/edit-fonts.md
                 - name: Inspect CSS grid
                   href: devtools-guide-chromium/css/grid.md
+                - name: CSS-in-JS
+                  href: devtools-guide-chromium/css/css-in-js.md
                 - name: Force DevTools into Print Preview mode
                   href: devtools-guide-chromium/css/print-preview.md
             - name: Issues
