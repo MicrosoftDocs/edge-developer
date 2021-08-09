@@ -3,7 +3,7 @@ description: New features for Progressive Web Apps (PWAs).
 title: What's New in Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/04/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, pwas, pwa, progressive web apps
@@ -54,28 +54,24 @@ Learn more about using protocol handlers with your PWA at [Experimental features
 
 When a user selects the **Settings** (**...**) menu in the app's title bar, the _app info_ menu is shown. We've updated this menu and streamlined the experience for the user in the following ways:
 * Moved the app publisher information to the top level and made it the first thing a user sees.
-* Moved the privacy information and controls into a dedicated 2nd-level **Privacy** menu.
-* Moved content-related tools into a dedicated 2nd-level **More tools** menu.
-
-These changes make the **Settings** menu provide a user experience that's more like a desktop app than a browser UI.
-
-#### Updated App Info Menu
 
 :::image type="complex" source="media/app-info.png" alt-text="The new, streamlined app-info menu" lightbox="media/app-info.png":::
    The new, streamlined app-info menu
 :::image-end:::
 
-#### Dedicated Privacy menu
+* Moved the privacy information and controls into a dedicated 2nd-level **Privacy** menu.
 
 :::image type="complex" source="media/privacy-menu.png" alt-text="Privacy controls in the dedicated Privacy menu" lightbox="media/privacy-menu.png":::
    Privacy controls in the dedicated **Privacy** menu
 :::image-end:::
 
-#### Dedicated More Tools menu
+* Moved content-related tools into a dedicated 2nd-level **More tools** menu.
 
 :::image type="complex" source="media/more-tools.png" alt-text="Content-related tools are now found in the More Tools menu" lightbox="media/more-tools.png":::
    Content-related tools are now found in the **More tools** menu
 :::image-end:::
+
+These changes make the **Settings** menu provide a user experience that's more like a desktop app than a browser UI.
 
 ## Post-install flyout dialog box
 
