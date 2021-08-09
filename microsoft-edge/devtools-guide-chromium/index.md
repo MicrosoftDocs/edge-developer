@@ -120,10 +120,10 @@ DevTools grew over a period of several years.  You may assume that DevTools are 
        Screenshot of the DevTools display of this article in an emulated mobile phone  
     :::image-end:::  
     
-*   The Tools tab group is a group of tabs that represent different tools that are used in different scenarios.  You may customize each of the tools and each tool may change based on the context.  To open a dropdown menu of more tools, select the **More tabs** \(`>>`\) button.  Each of the tools is introduced later in the following section.  
-*   Next to the Tools tab group are optional error and issues shortcuts.  The shortcuts display when JavaScript errors or issues occur on the current webpage.  The **Open Console to view # errors, # warnings** \(**JavaScript Errors**\) button displays a red circle with an `X` followed by the number of JavaScript errors.  To open the [Console][DevtoolsGuideConsoleIndex] and learn about the error, select the **JavaScript Errors** button.  The **Open Issues to view # issues** \(**Issues**\) button is a blue message icon followed by the number of issues.  To open the [Issues][DevtoolsGuideIssuesIndex] tool, select **Issues** button.  
+*   The main toolbar contains tabs for tools that are used in various scenarios.  You can customize each of the tools, and each tool may change based on the context.  To show a tool that is on a tab that's hidden, select the **More tabs** \(`>>`\) button.   To add a tool to the main toolbar or to the drawer's toolbar, select the **More tools** (`+`) button.  Each tool is introduced below.  
+*   Next to the Tools tab group are optional error and issues shortcuts.  The shortcuts display when JavaScript errors or issues occur on the current webpage.  The **Open Console to view # errors, # warnings** \(**JavaScript Errors**\) button displays a red circle with an `X`, followed by the number of JavaScript errors.  To open the [Console][DevtoolsGuideConsoleIndex] and learn about the error, select the **JavaScript Errors** button.  The **Open Issues to view # issues** \(**Issues**\) button is a blue message icon followed by the number of issues.  To open the [Issues][DevtoolsGuideIssuesIndex] tool, select the **Issues** button.  
 *   The **Settings** button displays a gear icon.  To open DevTools **Settings** webpage, select the **Settings** button.  The **Settings** webpage displays a menu to change **Preferences**, turn on **Experiments**, and much more.  
-*   The **Send Feedback** button displays torso with a chat bubble next to it.  To open the **Send Feedback** dialog, select the **Send Feedback** button.  The **Send Feedback** dialog allows you to enter information to describe what happened and automatically includes a screenshot.  Use it to connect with the DevTools team to report problems, issues, or suggest ideas.  
+*   The **Send Feedback** button displays a torso with a chat bubble next to it.  To open the **Send Feedback** dialog, select the **Send Feedback** button.  The **Send Feedback** dialog allows you to enter information to describe what happened and automatically includes a screenshot.  Use it to connect with the DevTools team to report problems, issues, or suggest ideas.  
 *   The **Customize and control DevTools** \(`...`\) button opens a dropdown menu.  It allows you to define where to dock the DevTools, search, open different tools, and much more.  
     
 In the Tools tab group, you may open the different tools that are available in the DevTools.  The following list describes the most commonly used tools in the DevTools.  
@@ -145,7 +145,7 @@ The DevTools provides lots of features and functionality to use with your web pr
 Screenshot of the command menu in DevTools  
 :::image-end:::  
 
-The command menu allows you to type commands to display, hide, or run features in the DevTools.  With the command menu open, enter the word **changes**, and then select **Show Changes**.  The **Changes** tool opens which is useful when you edit CSS, but is difficult to find in the DevTools UI.  
+The command menu allows you to type commands to display, hide, or run features in the DevTools.  With the command menu open, enter the word **changes**, and then select **Drawer: Show Changes**.  The **Changes** tool opens, which is useful when you edit CSS, but is difficult to find in the DevTools UI.  
 
 :::row:::  
    :::column span="":::  
