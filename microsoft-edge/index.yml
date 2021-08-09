@@ -191,6 +191,8 @@ additionalContent:
               url: /microsoft-edge/extensions-chromium/publish/publish-extension
             - text: Open developer account
               url: /microsoft-edge/extensions-chromium/publish/create-dev-account
+            - text: Add and manage users
+              url: /microsoft-edge/extensions-chromium/publish/aad-account.md
             - text: Update Extension Listing
               url: /microsoft-edge/extensions-chromium/publish/update
             - text: Manage account settings

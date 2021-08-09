@@ -61,7 +61,7 @@ When you open the DevTools, it docks to the left of your browser.  To change the
 1.  Select the **Customize And Control DevTools** \(`...`\) button.  
 1.  To the right of **Placement of the DevTools relative to the page** \(**Dock side**\), choose a **Dock side** option.  
     
-For more information, navigate to [Change Microsoft Edge DevTools placement (Undock, Dock To Bottom, Dock To Left)][DevtoolsGuideCustomizePlacement].  
+For more information, navigate to [Change DevTools placement (Undock, Dock To Bottom, Dock To Left)][DevtoolsGuideCustomizePlacement].  
 
 :::image type="complex" source="./media/devtools-intro-docking-menu.msft.png" alt-text="Screenshot of the Dock side menu in DevTools" lightbox="./media/devtools-intro-docking-menu.msft.png":::  
    Screenshot of the Dock side menu in DevTools  
@@ -206,7 +206,7 @@ If you want to preview the [latest features coming to the DevTools][DevtoolsGuid
 [DevtoolsGuideBeginnersHtml]: ./beginners/html.md "DevTools for beginners: Get started with HTML and the DOM | Microsoft Docs"  
 [DevtoolsGuideCommandMenuIndex]: ./command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"  
 [DevtoolsGuideConsoleIndex]: ./console/index.md "Console overview | Microsoft Docs"  
-[DevtoolsGuideCustomizePlacement]: ./customize/placement.md "Change Microsoft Edge DevTools placement (Undock, Dock To Bottom, Dock To Left) | Microsoft Docs"  
+[DevtoolsGuideCustomizePlacement]: ./customize/placement.md "Change DevTools placement (Undock, Dock To Bottom, Dock To Left) | Microsoft Docs"  
 [DevtoolsGuideDeviceModeIndex]: ./device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideDomIndex]: ./dom/index.md "Get started with viewing and changing the DOM | Microsoft Docs"  
 [DevtoolsGuideEvaluatePerformanceIndex]: ./evaluate-performance/index.md "Get started with analyzing Runtime performance | Microsoft Docs"  
