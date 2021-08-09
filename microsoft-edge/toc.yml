@@ -25,6 +25,8 @@
           items:
             - name: Experimental features
               href: devtools-guide-chromium/experimental-features/index.md
+            - name: Microsoft Edge 93
+              href: devtools-guide-chromium/whats-new/2021/07/devtools.md
             - name: Microsoft Edge 92
               href: devtools-guide-chromium/whats-new/2021/05/devtools.md
             - name: Microsoft Edge 91
@@ -143,9 +145,9 @@
               items:
                 - name: Overview
                   href: devtools-guide-chromium/customize/index.md
-                - name: Dark theme
-                  href: devtools-guide-chromium/customize/dark-theme.md
-                - name: Change placement
+                - name: Apply a color theme
+                  href: devtools-guide-chromium/customize/theme.md
+                - name: Change DevTools placement
                   href: devtools-guide-chromium/customize/placement.md
                 - name: Match browser language
                   href: devtools-guide-chromium/customize/localization.md
@@ -199,8 +201,6 @@
               href: devtools-guide-chromium/inspect-styles/animations.md
             - name: Application
               items:
-                - name: Application cache
-                  href: devtools-guide-chromium/storage/applicationcache.md
                 - name: Cache
                   href: devtools-guide-chromium/storage/cache.md
                 - name: Cookies
@@ -279,7 +279,7 @@
               items:
                 - name: Emulate vision deficiencies
                   href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
-                - name: Simulate color schemes
+                - name: Emulate dark or light scheme
                   href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
                 - name: Simulate reduced motion
                   href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
@@ -339,6 +339,8 @@
           items:
             - name: Developer registration
               href: extensions-chromium/publish/create-dev-account.md
+            - name: Add and manage users
+              href: extensions-chromium/publish/aad-account.md
             - name: Publish your extension
               href: extensions-chromium/publish/publish-extension.md
             - name: Update your extension
@@ -375,6 +377,8 @@
       items:
         - name: Progressive Web Apps overview
           href: progressive-web-apps-chromium/index.md
+        - name: What's new
+          href: progressive-web-apps-chromium/whats-new/pwa.md
         - name: Get started with PWAs
           href: progressive-web-apps-chromium/get-started.md
         - name: Offline scenarios
@@ -411,7 +415,7 @@
           href: web-platform/ie-to-microsoft-edge-redirection.md
         - name: Tracking prevention in Microsoft Edge
           href: web-platform/tracking-prevention.md
-        - name: How to detect Microsoft Edge in your website
+        - name: Detecting Microsoft Edge from your website
           href: web-platform/user-agent-guidance.md
         - name: Customize the password reveal button
           href: web-platform/password-reveal.md
@@ -443,9 +447,9 @@
           items:
             - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
-            - name: Distributing my app
+            - name: Distribute a WebView2 app and Runtime
               href: webview2/concepts/distribution.md
-            - name: Managing User Data Folders
+            - name: Manage the user data folder
               href: webview2/concepts/user-data-folder.md
             - name: Managing WebView2 applications
               href: webview2/concepts/enterprise.md
@@ -453,22 +457,16 @@
               href: webview2/concepts/navigation-events.md
             - name: Process model
               href: webview2/concepts/process-model.md
-            - name: Security Best Practices
+            - name: Security best practices
               href: webview2/concepts/security.md
             - name: Versioning
               href: webview2/concepts/versioning.md
             - name: Threading model
               href: webview2/concepts/threading-model.md
-            - name: WebView2 development best practices  
+            - name: Development best practices
               href: webview2/concepts/developer-guide.md
             - name: Win32 API conventions
               href: webview2/concepts/win32-api-conventions.md
-        - name: Release notes
-          href: webview2/release-notes.md
-        - name: Roadmap
-          href: webview2/roadmap.md
-        - name: Resources, talks, videos, and blogs
-          href: webview2/resources.md
         - name: How to
           items:
             - name: Extended JavaScript scenarios in WebView2
@@ -481,6 +479,14 @@
               href: webview2/how-to/webdriver.md
             - name: Use Chromium DevTools Protocol in WebView2
               href: webview2/how-to/chromium-devtools-protocol.md
+            - name: Switch to a preview channel
+              href: webview2/how-to/set-preview-channel.md
+        - name: Release notes
+          href: webview2/release-notes.md
+        - name: Roadmap
+          href: webview2/roadmap.md
+        - name: Resources, talks, videos, and blogs
+          href: webview2/resources.md
         - name: Reference
           href: webview2/webview2-api-reference.md
           items:
