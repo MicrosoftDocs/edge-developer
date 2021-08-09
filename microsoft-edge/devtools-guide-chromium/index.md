@@ -145,7 +145,7 @@ The DevTools provides lots of features and functionality to use with your web pr
 Screenshot of the command menu in DevTools  
 :::image-end:::  
 
-The command menu allows you to type commands to display, hide, or run features in the DevTools.  With the command menu open, enter the word **changes**, and then select **Show Changes**.  The **Changes** tool opens which is useful when you edit CSS, but is difficult to find in the DevTools UI.  
+The command menu allows you to type commands to display, hide, or run features in the DevTools.  With the command menu open, enter the word **changes**, and then select **Drawer: Show Changes**.  The **Changes** tool opens, which is useful when you edit CSS, but is difficult to find in the DevTools UI.  
 
 :::row:::  
    :::column span="":::  
