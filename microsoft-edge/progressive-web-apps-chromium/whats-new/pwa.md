@@ -52,7 +52,7 @@ Learn more about using protocol handlers with your PWA at [Experimental features
 
 ## Streamlined App Info menu
 
-When a user selects the **Settings** (**...**) menu in the app's title bar, the **App info** menu is displayed.  We've updated the **App info** menu and streamlined the user experience in the following ways, to provide a user experience that's more like a desktop app than a browser UI:
+When a user selects the ellipses (**...**) button in the app's title bar, the **App info** menu is displayed.  We've updated the **App info** menu and streamlined the user experience in the following ways, to provide a user experience that's more like a desktop app than a browser UI:
 *  Moved the app **Publisher** information to the top level and made it the first thing a user sees.
 
    :::image type="complex" source="media/app-info.png" alt-text="The new, streamlined App Info menu" lightbox="media/app-info.png":::
