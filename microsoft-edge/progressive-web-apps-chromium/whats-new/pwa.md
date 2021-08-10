@@ -53,33 +53,33 @@ Learn more about using protocol handlers with your PWA at [Experimental features
 ## Streamlined app-info menus
 
 When a user selects the **Settings** (**...**) menu in the app's title bar, the _app info_ menu is shown. We've updated this menu and streamlined the experience for the user in the following ways:
-* Moved the app publisher information to the top level and made it the first thing a user sees.
+*  Moved the app publisher information to the top level and made it the first thing a user sees.
 
-:::image type="complex" source="media/app-info.png" alt-text="The new, streamlined app-info menu" lightbox="media/app-info.png":::
-   The new, streamlined app-info menu
-:::image-end:::
+   :::image type="complex" source="media/app-info.png" alt-text="The new, streamlined app-info menu" lightbox="media/app-info.png":::
+      The new, streamlined app-info menu
+   :::image-end:::
 
-* Moved the privacy information and controls into a dedicated 2nd-level **Privacy** menu.
+*  Moved the privacy information and controls into a dedicated 2nd-level **Privacy** menu.
 
-:::image type="complex" source="media/privacy-menu.png" alt-text="Privacy controls in the dedicated Privacy menu" lightbox="media/privacy-menu.png":::
-   Privacy controls in the dedicated **Privacy** menu
-:::image-end:::
+   :::image type="complex" source="media/privacy-menu.png" alt-text="Privacy controls in the dedicated Privacy menu" lightbox="media/privacy-menu.png":::
+      Privacy controls in the dedicated **Privacy** menu
+   :::image-end:::
 
-* Moved content-related tools into a dedicated 2nd-level **More tools** menu.
+*  Moved content-related tools into a dedicated 2nd-level **More tools** menu.
 
-:::image type="complex" source="media/more-tools.png" alt-text="Content-related tools are now found in the More Tools menu" lightbox="media/more-tools.png":::
-   Content-related tools are now found in the **More tools** menu
-:::image-end:::
+   :::image type="complex" source="media/more-tools.png" alt-text="Content-related tools are now found in the More Tools menu" lightbox="media/more-tools.png":::
+      Content-related tools are now found in the **More tools** menu
+   :::image-end:::
 
 These changes make the **Settings** menu provide a user experience that's more like a desktop app than a browser UI.
 
 ## Post-install flyout dialog box
 
 After a PWA is installed from the Microsoft Edge browser on Windows, users can now select from four options to easily launch their apps: 
-* **Pin to taskbar** 
-* **Pin to Start**
-* **Create Desktop shortcut**
-* **Auto-start on device login**
+*  **Pin to taskbar** 
+*  **Pin to Start**
+*  **Create Desktop shortcut**
+*  **Auto-start on device login**
 
 For convenience, this flyout dialog box is shown the first time the app is launched.
 
