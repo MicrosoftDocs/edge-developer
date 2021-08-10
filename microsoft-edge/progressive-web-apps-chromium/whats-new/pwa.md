@@ -52,7 +52,7 @@ Learn more about using protocol handlers with your PWA at [Experimental features
 
 ## Streamlined app-info menus
 
-When a user selects the **Settings** (**...**) menu in the app's title bar, the _app info_ menu is shown. We've updated this menu and streamlined the experience for the user in the following ways:
+When a user selects the **Settings** (**...**) menu in the app's title bar, the **App info** menu is displayed.  We've updated the **App info** menu and streamlined the user experience in the following ways, to provide a user experience that's more like a desktop app than a browser UI:
 *  Moved the app publisher information to the top level and made it the first thing a user sees.
 
    :::image type="complex" source="media/app-info.png" alt-text="The new, streamlined app-info menu" lightbox="media/app-info.png":::
@@ -71,7 +71,6 @@ When a user selects the **Settings** (**...**) menu in the app's title bar, the 
       Content-related tools are now found in the **More tools** menu
    :::image-end:::
 
-These changes make the **Settings** menu provide a user experience that's more like a desktop app than a browser UI.
 
 ## Post-install flyout dialog box
 
