@@ -3,7 +3,7 @@ description: Make your PWA more discoverable by publishing in the Microsoft Stor
 title: Publish your Progressive Web App to the Microsoft Store
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/28/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, Microsoft Store
@@ -95,19 +95,20 @@ Now that you have your app publishing information, generate a Windows app packag
 To generate an app package, complete the following actions.  
 
 1.  Navigate to [PWA Builder][PwabuilderMain].  
-1.  Type the URL of your PWA.  
-1.  Choose **Start** > **Build My PWA** > **Windows** > **Options**.  
+1.  Type the URL of your PWA and click **Start**.  
+1.  Once your report is complete, make sure your PWA is store-ready. If your PWA score is too low, you can visit the **Manifest Options** and **Service Worker Options** and check out the sections that need work.
+1.  When your PWA is ready to be published, click **Next** and select the **Store Package** button in the **Windows** section of the publish page.
 1.  Paste the following values that you saved in the [Create an app reservation](#create-an-app-reservation) section.  
     *   **Package ID**  
     *   **Publisher ID**  
     *   **Publisher Display Name**  
         
-    :::image type="complex" source="./media/pwabuilder-publisher-info.msft.png" alt-text="Paste publisher information into PWABuilder" lightbox="./media/pwabuilder-publisher-info.msft.png":::
+    :::image type="complex" source="./media/pwabuilder-windows-package-options.png" alt-text="Paste publisher information into PWABuilder" lightbox="./media/pwabuilder-windows-package-options.png":::
        Paste publisher information into PWABuilder  
     :::image-end:::  
     
-1.  Choose **Done**.  
-1.  To download your Windows app package, choose **Download**.
+1.  Select **Generate**.  
+1.  To download your Windows app package, select **Download**.
 
 Your download is a `.zip` archive that contains an `.msixbundle` file and a `.classic.appxbundle` file.  The two app packages allow your PWA to run on a wide variety of Windows versions.  For more information, navigate to [What is a classic package?][GithubPwaBuilderPwabuilderWindowsChromiumDocsClassicPackageMd].  
 
@@ -130,7 +131,7 @@ To submit your app to the Store, complete the following actions.
         
 1.  On the **Packages** prompt, choose the `.msixbundle` and the `.classic.appxbundle` files you generated in the [Package your PWA](#package-your-pwa-for-the-store) section.  
     
-After you complete your submission, your app is reviewed, typically within between 24 and 48 hours.  After you receive approval, your PWA is available in the Microsoft Store.  
+After you complete your submission, your app is reviewed, typically within 24 to 48 hours.  After you receive approval, your PWA is available in the Microsoft Store.  
 
 ### Measure usage of your Store-installed PWA
 
