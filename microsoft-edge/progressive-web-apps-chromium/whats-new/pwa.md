@@ -50,13 +50,13 @@ You can now register your PWA to handle specific protocols with the host operati
 
 Learn more about using protocol handlers with your PWA at [Experimental features in Progressive Web Apps (PWAs)][ExpProtocolHandlers].
 
-## Streamlined app-info menus
+## Streamlined App Info menu
 
 When a user selects the **Settings** (**...**) menu in the app's title bar, the **App info** menu is displayed.  We've updated the **App info** menu and streamlined the user experience in the following ways, to provide a user experience that's more like a desktop app than a browser UI:
-*  Moved the app publisher information to the top level and made it the first thing a user sees.
+*  Moved the app **Publisher** information to the top level and made it the first thing a user sees.
 
-   :::image type="complex" source="media/app-info.png" alt-text="The new, streamlined app-info menu" lightbox="media/app-info.png":::
-      The new, streamlined app-info menu
+   :::image type="complex" source="media/app-info.png" alt-text="The new, streamlined App Info menu" lightbox="media/app-info.png":::
+      The new, streamlined **App info** menu
    :::image-end:::
 
 *  Moved the privacy information and controls into a dedicated 2nd-level **Privacy** menu.
