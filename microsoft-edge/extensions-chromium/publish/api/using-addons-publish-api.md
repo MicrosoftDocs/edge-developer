@@ -12,7 +12,7 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 
 <!-- find and resolve: tbd, html comments, "placeholder" -->
 
-This article, along with the [Add-ons Publish API Reference][AddonsPublishAPIRef], provides an overview of the proposed Microsoft Edge Add-ons Publish API.  We look forward to your suggestions and feedback on the proposed API contracts.  Please submit your feedback: select the **Edit** button in the upper right to go to the GitHub repo for this article, and then select **Issues**.
+This article, along with the [Add-ons Publish API Reference][AddonsPublishAPIRef], provides an overview of the proposed Microsoft Edge Add-ons Publish API.  We look forward to your suggestions and feedback on the proposed API contracts.  Please submit your feedback at [Issues for the edge-developer repo](https://github.com/MicrosoftDocs/edge-developer/issues).
 
 The Microsoft Edge Add-ons Publish API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons website.  You can use these REST endpoints to automate the process of uploading and publishing add-ons into the Microsoft Edge Add-ons website.
 
