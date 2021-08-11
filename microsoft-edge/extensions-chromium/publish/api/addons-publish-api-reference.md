@@ -14,7 +14,9 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 <!-- ====================================================================== -->
 ## Get the list of products
 
-Gets a list of all products that belong to the account.
+Gets a list of all products that belong to the account.  
+
+Overview: [Getting the list of products](using-addons-publish-api.md#getting-the-list-of-products)
 
 ### Request
 
@@ -76,9 +78,11 @@ This API has the following expected status codes.
 
 
 <!-- ====================================================================== -->
-## Upload a package to a draft submission
+## Upload a package to update an existing draft submission of a product
 
 Uploads a package to the draft submission of a product.
+
+Overview: [Uploading a package to update an existing draft submission of a product](using-addons-publish-api.md#uploading-a-package-to-update-an-existing-draft-submission-of-a-product)
 
 ### Request
 
@@ -125,6 +129,8 @@ This API has the following expected status codes.
 ## Check the status of a package upload
 
 Gets the status of the package upload.
+
+Overview: [Checking the status of a package upload](using-addons-publish-api.md#checking-the-status-of-a-package-upload)
 
 ### Request
 
@@ -208,9 +214,11 @@ This API has the following expected status codes.
 
 
 <!-- ====================================================================== -->
-## Publish the product submission
+## Publish the product draft submission
 
 Publishes the current draft of the product to Microsoft Edge Add-ons.
+
+Overview: [Publishing the product draft submission](using-addons-publish-api.md#publishing-the-product-draft-submission)
 
 ### Request
 
@@ -257,6 +265,8 @@ This API has the following expected status codes.
 ## Check the publishing status
 
 Checks the status of the publish operation.
+
+Overview: [Checking the publishing status](using-addons-publish-api.md#checking-the-publishing-status)
 
 ### Request
 
@@ -338,7 +348,7 @@ This API has the following expected status codes.
 <!-- ====================================================================== -->
 ## Error codes
 
-Here are a list of common error codes and possible reasons.  For a full list, navigate to [Partner Center REST error codes](https://docs.microsoft.com/partner-center/develop/error-codes), or [List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) at Wikipedia.
+Here are a list of common error codes and possible reasons.  For a full list, navigate to [Partner Center REST error codes][PartnerCenterErrorCodes] or [List of HTTP status codes][WikipediaListOfStatusCodes].
 
 ### 4xx: Client error
 
@@ -348,10 +358,14 @@ Here are a list of common error codes and possible reasons.  For a full list, na
 | 401 Unauthorized | The request page needs an authorization. | The auth token is missing, expired, or not valid. |
 | 404 Not Found | The server can't find the requested page. | The specified `productID` or `operationID` isn't valid, or doesn't belong to the developer who is making the request. |
 | 408 Request Timeout | The request took longer than the server was prepared to wait. | There was a timeout while uploading the package. |
-| 429 Too many requests | Too many requests were sent by the user. | When too many requests are sent and they get throttled. |
+| 429 Too many requests | Too many requests were sent by the user. | Too many requests were sent and they got throttled. |
 
 ### 5xx: Server error
 
 | Message  | Description  | Example scenario |
 |---|---|---|
 | 500 Internal Server Error | The request wasn't completed. | The server met an unexpected condition. |
+
+<!-- links -->
+[PartnerCenterErrorCodes]: /partner-center/develop/error-codes "Partner Center REST error codes | Microsoft Docs "
+[WikipediaListOfStatusCodes]: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) "List of HTTP status codes | Wikipedia"
