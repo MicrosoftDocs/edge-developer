@@ -26,7 +26,7 @@ Overview: [Getting the list of products](using-addons-publish-api.md#getting-the
 |---|---|
 | `GET` | `/products` |
 
-### URI parameters
+#### URI parameters
 
 None.
 
@@ -68,7 +68,7 @@ For subsequent submissions, you'll receive either of the following values:
 *  In Review
 *  In the Store, or Failed
 
-### Status codes
+#### Status codes
 
 This API has the following expected status codes.
 
