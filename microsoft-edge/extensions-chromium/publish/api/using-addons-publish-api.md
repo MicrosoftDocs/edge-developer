@@ -131,6 +131,7 @@ Body content: the package file to upload
 -v \
 https://api.partnercenter.microsoft.com/edgeaddons/v1/products/$productID/submissions/draft/package
 ```
+If the request succeeded and the update process began, you receive a 202 Accepted response status code with a Location header. Make 'GET' requests to the URL in the Location header to find out the status of the operation.
 
 API reference: [Upload a package to update an existing submission](addons-publish-api-reference.md#upload-a-package-to-update-an-existing-submission)
 
@@ -179,12 +180,14 @@ Body content: Notes for certification, in plain text format
 > curl \
 -H "Authorization: Bearer $TOKEN" \
 -X POST \
--d “Notes=text value” \
+-d “certificationNotes=text value” \
 -v \
 https://addons.edge.microsoft.com/api/v1/products/$productID/submissions
 ```
 
 `https://addons.edge.microsoft.com/api` is a placeholder and needs to be replaced by another example.
+
+If the request succeeded and the publish process began, you receive a 202 Accepted response status code with a Location header. Make 'GET' requests to the URL in the Location header to find out the status of the operation.
 
 API reference: [Publish the product draft submission](addons-publish-api-reference.md#publish-the-product-draft-submission)
 
