@@ -202,8 +202,6 @@ Header Parameters: $TOKEN: the access token
 -v \ https://addons.edge.microsoft.com/api/v1/products/$productID/submissions/operations/{operationID}
 ```
 
-`https://addons.edge.microsoft.com/api` is a placeholder and needs to be replaced by another example.
-
 API reference: [Check the publishing status](addons-publish-api-reference.md#check-the-publishing-status)
 
 
