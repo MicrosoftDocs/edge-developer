@@ -27,7 +27,7 @@ To update your extension on the store, complete the following steps.
 1.  After you make the changes, select **Save** > **Publish** to update your extension listing, and start the certification process.  
 1.  After the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons store.  
 
-After your extension has been initially published, you will be able to update it programmatically by [Using the Microsoft Edge Add-ons API][UsingAddonsAPI] (a proposal that's open for review).
+After your extension has been initially created, you will be able to update it programmatically by [Using the Microsoft Edge Add-ons API][UsingAddonsAPI] (a proposal that's open for review).
 
 ### Update your extension during the certification step  
 
