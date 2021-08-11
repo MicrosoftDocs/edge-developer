@@ -181,7 +181,7 @@ Body content: Notes for certification, in plain text format
 > curl \
 -H "Authorization: Bearer $TOKEN" \
 -X POST \
--d “certificationNotes=text value” \
+-d "certificationNotes=text value" \
 -v \
 https://addons.edge.microsoft.com/api/v1/products/$productID/submissions
 ```
