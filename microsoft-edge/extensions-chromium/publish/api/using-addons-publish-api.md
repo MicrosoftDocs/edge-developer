@@ -10,9 +10,7 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 ---
 # Using the Microsoft Edge Add-ons Publish API
 
-<!-- find and resolve: tbd, html comments, "placeholder" -->
-
-This article, along with the [Add-ons Publish API Reference][AddonsPublishAPIRef], provides an overview of the proposed Microsoft Edge Add-ons Publish API.  We look forward to your suggestions and feedback on the proposed API contracts.  Please submit your feedback at [Issues for the edge-developer repo](https://github.com/MicrosoftDocs/edge-developer/issues).
+This article, along with the [Add-ons Publish API Reference][AddonsPublishAPIRef], provides an overview of the proposed Microsoft Edge Add-ons Publish API.  We look forward to your suggestions and feedback on the proposed API contracts.  Please submit your feedback as an [Issue about the Add-ons API][GitHubMicrosoftDocsEdgeDeveloperNewIssue].
 
 The Microsoft Edge Add-ons Publish API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons website.  You can use these REST endpoints to automate the process of uploading and publishing add-ons into the Microsoft Edge Add-ons website.
 
@@ -208,4 +206,5 @@ API reference: [Check the publishing status](addons-publish-api-reference.md#che
 <!-- links -->
 [AddonsPublishAPIRef]: addons-publish-api-reference.md "Add-ons Publish API Reference | Microsoft Docs "
 <!-- external links -->
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API%20Feedback] "Enter an Issue about the Add-ons API - MicrosoftDocs/edge-developer - GitHub"
 [AzureOAuthGetToken]: /azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token "OAuth 2.0 client credentials flow on the Microsoft identity platform | Microsoft Docs"
