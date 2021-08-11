@@ -27,7 +27,7 @@ To update your extension on the store, complete the following steps.
 1.  After you make the changes, select **Save** > **Publish** to update your extension listing, and start the certification process.  
 1.  After the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons store.  
 
-After your extension has been initially published, you will be able to update it programmatically by [Using the Microsoft Edge Add-ons API][UsingAddonsAPI] (a proposal out for review).
+After your extension has been initially published, you will be able to update it programmatically by [Using the Microsoft Edge Add-ons API][UsingAddonsAPI] (a proposal that's open for review).
 
 ### Update your extension during the certification step  
 
@@ -66,6 +66,6 @@ To remove your extension from the Microsoft Edge Add-ons store, complete the fol
 Your extension is now removed from the Microsoft Edge Add-ons store.  Users who already installed your extension can continue to use it, but new users don't find it.  
 
 <!-- links -->
-[UsingAddonsAPI]: using-addons-api.md "Using the Microsoft Edge Add-ons API | Microsoft Docs"
+[UsingAddonsAPI]: api/using-addons-api.md "Using the Microsoft Edge Add-ons API | Microsoft Docs"
 <!-- external links -->
 [MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  
