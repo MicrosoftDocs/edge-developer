@@ -182,7 +182,7 @@ There are several responses, for different scenarios.
 {
     "id": "{operationID}",
     "status": "FAILED",
-    "message": "The package upload failed. Please fix the errors and make the request again."
+    "message": "The package upload failed. Please fix the errors and make the request again.",
     "errors": [
        {
            "id": "MANIFEST_FILE_MISSING",
