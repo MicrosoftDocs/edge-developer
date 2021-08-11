@@ -12,7 +12,7 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 
 <!-- find and resolve: tbd, html comments -->
 
-This article, along with the [Add-ons Publish API Reference][AddonsPublishAPIRef], provides an overview of the proposed Microsoft Edge Add-ons Publish API.  We look forward to your suggestions and feedback on the proposed API contracts.  Please submit your feedback at (link TBD).
+This article, along with the [Add-ons Publish API Reference][AddonsPublishAPIRef], provides an overview of the proposed Microsoft Edge Add-ons Publish API.  We look forward to your suggestions and feedback on the proposed API contracts.  Please submit your feedback at (_link TBD_).
 
 The Microsoft Edge Add-ons Publish API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons website.  You can use these REST endpoints to automate the process of uploading and publishing add-ons into the Microsoft Edge Add-ons website.
 
@@ -26,7 +26,7 @@ The tentative date for the availability of the APIs is December 2021.
 |---|---|
 | _product_ | A single product for which you have an entire entry at Partner Center. |
 | _product ID_ | The product ID of the product whose draft needs to be published.  This is the product ID of your product as shown at Partner Center. |
-| _submission_ | A product which has not yet been approved for publishing at Partner Center.  The process of submitting a product for approval has several steps. |
+| _submission_ | A version of the product.  Every update to a product is a submission, whether draft, in review, or published. |
 | _operation_ | A REST operation such as GET or PUT.  There are several operations, defined at [Add-ons Publish API Reference][AddonsPublishAPIRef]. |
 | _operation ID_ | The ID of a REST operation. |
 
@@ -42,7 +42,7 @@ To use the Microsoft Edge Add-ons Publish API, you need to enable the API for yo
 
 1. Enable the APIs.<!-- what UI action to do that?--> This step may take a few minutes.  After the APIs are enabled, the **Client ID**, **Client Secret**, and **Auth Token URL** are displayed on this page.
 
-1. Note the **ClientID**, **Client Secret** and the **Auth Token URL**. You will use them in the next step to get an access token.
+1. Note the **ClientID**, **Client Secret** and the **Auth Token URL**.  You'll use them in the next step to get an access token.
 
 
 <!-- ====================================================================== -->
@@ -109,8 +109,7 @@ API reference: [Get the list of products](addons-publish-api-reference.md#get-th
 
 Use this API to update the package for an add-on.  
 
-
-```
+```rest-api
 Endpoint: /v1/products/$productID/submissions/draft/package
 Type: PUT
 Header Parameters: $TOKEN: the access token; Content-Type: application/zip
@@ -126,7 +125,7 @@ Body content: the package file to upload
 
 ```console
 > curl \
--H "Authorization: Bearer $TOKEN"  \
+-H "Authorization: Bearer $TOKEN" \
 -H "Content-Type: application/zip" \
 -X PUT \
 -T $FILE_NAME \
@@ -142,7 +141,7 @@ API reference: [Upload a package to update an existing draft submission of a pro
 
 Use this API to check the status of package upload.
 
-```
+```rest-api
 Endpoint: /v1/products/$productID/submissions/draft/package/operations/$operationID
 Type: GET
 Header Parameters: $TOKEN: the access token
@@ -152,7 +151,7 @@ Header Parameters: $TOKEN: the access token
 
 ```console
 > curl \
--H "Authorization: Bearer $TOKEN"  \
+-H "Authorization: Bearer $TOKEN" \
 -X GET \
 -v \
 https://addons.edge.microsoft.com/api/v1/products/$productID/submissions/draft/package/operations/$operationID
@@ -168,7 +167,7 @@ Use this API to publish the current draft of the product to the Edge Add-ons web
 
 `https://addons.edge.microsoft.com/api` is a placeholder and needs to be replaced by another example.
 
-```
+```rest-api
 Endpoint: /v1/products/$productID/submissions
 Type: POST
 Header Parameters: $TOKEN: the access token
@@ -179,7 +178,7 @@ Body content: Notes for certification, in plain text format
 
 ```console
 > curl \
--H "Authorization: Bearer $TOKEN"  \
+-H "Authorization: Bearer $TOKEN" \
 -X POST \
 -d “Notes=text value” \
 -v \
@@ -196,7 +195,7 @@ API reference: [Publish the product draft submission](addons-publish-api-referen
 
 Use this API to check the status of the publish operation.
 
-```
+```rest-api
 Endpoint: /v1/products/$productID/submissions/operations/$operationID
 Type: GET
 Header Parameters: $TOKEN: the access token
@@ -206,7 +205,7 @@ Header Parameters: $TOKEN: the access token
 
 ```console
 > curl \
--H "Authorization: Bearer $TOKEN"  \
+-H "Authorization: Bearer $TOKEN" \
 -X GET \
 -v \ https://addons.edge.microsoft.com/api/v1/products/$productID/submissions/operations/{operationID}
 ```

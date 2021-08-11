@@ -357,7 +357,7 @@ Here are a list of common error codes and possible reasons.  For a full list, na
 | 400 Bad Request | The server didn't understand the request. | There's no package (zip file) in the body.  Or, `Content-Type` header is missing or its value is incorrect. |
 | 401 Unauthorized | The request page needs an authorization. | The auth token is missing, expired, or not valid. |
 | 404 Not Found | The server can't find the requested page. | The specified `productID` or `operationID` isn't valid, or doesn't belong to the developer who is making the request. |
-| 408 Request Timeout | The request took longer than the server was prepared to wait. | There was a timeout while uploading the package. |
+| 408 Request Timeout | The request took longer than the server was prepared to wait. | There was a timeout while uploading a package. |
 | 429 Too many requests | Too many requests were sent by the user. | Too many requests were sent and they got throttled. |
 
 ### 5xx: Server error
