@@ -351,6 +351,12 @@
               href: extensions-chromium/publish/manage-settings.md
             - name: Contact extensions support
               href: extensions-chromium/publish/contact-extensions-team.md
+            - name: Microsoft Edge Add-ons Publish API
+              items:
+                - name: Using the Add-ons Publish API
+                  href: extensions-chromium/publish/api/using-addons-publish-api.md
+                - name: Add-ons Publish API Reference
+                  href: extensions-chromium/publish/api/addons-publish-api-reference.md
         - name: Microsoft Edge Add-ons policies
           items:
             - name: Content security policy
