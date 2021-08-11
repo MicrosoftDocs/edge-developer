@@ -78,11 +78,11 @@ This API has the following expected status codes.
 
 
 <!-- ====================================================================== -->
-## Upload a package to update an existing draft submission of a product
+## Upload a package to update an existing submission
 
-Uploads a package to the draft submission of a product.
+Uploads a package to update an existing draft submission of an add-on product.
 
-Overview: [Uploading a package to update an existing draft submission of a product](using-addons-publish-api.md#uploading-a-package-to-update-an-existing-draft-submission-of-a-product)
+Overview: [Uploading a package to update an existing submission](using-addons-publish-api.md#uploading-a-package-to-update-an-existing-submission)
 
 ### Request
 
