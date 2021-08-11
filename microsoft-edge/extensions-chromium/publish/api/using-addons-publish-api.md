@@ -107,7 +107,7 @@ API reference: [Get the list of products](addons-publish-api-reference.md#get-th
 
 Use this API to update the package for an add-on.  This API uploads a package to update an existing draft submission of an add-on product.
 
-```rest-api
+```rest
 Endpoint: /v1/products/$productID/submissions/draft/package
 Type: PUT
 Header Parameters: $TOKEN: the access token; Content-Type: application/zip
@@ -140,7 +140,7 @@ API reference: [Upload a package to update an existing submission](addons-publis
 
 Use this API to check the status of package upload.
 
-```rest-api
+```rest
 Endpoint: /v1/products/$productID/submissions/draft/package/operations/$operationID
 Type: GET
 Header Parameters: $TOKEN: the access token
@@ -166,7 +166,7 @@ Use this API to publish the current draft of the product to the Edge Add-ons web
 
 `https://addons.edge.microsoft.com/api` is a placeholder and needs to be replaced by another example.
 
-```rest-api
+```rest
 Endpoint: /v1/products/$productID/submissions
 Type: POST
 Header Parameters: $TOKEN: the access token
@@ -194,7 +194,7 @@ API reference: [Publish the product draft submission](addons-publish-api-referen
 
 Use this API to check the status of the publish operation.
 
-```rest-api
+```rest
 Endpoint: /v1/products/$productID/submissions/operations/$operationID
 Type: GET
 Header Parameters: $TOKEN: the access token
