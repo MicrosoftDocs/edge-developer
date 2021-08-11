@@ -20,11 +20,13 @@ There are several ways to open the **Issues** tool, such as:
 
 ## View the Accessibility section of the Issues tool
 
-1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.  In the upper right, the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears, as a speech-bubble icon along with the number of automatically detected issues.  A different number might appear in your browser, and the number might update as you use DevTools.
+1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.  In the upper right, the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears.  The **Issues counter** is a speech-bubble icon along with the number of automatically detected issues.
 
     :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="The Issues counter in DevTools, indicating how many problems there are in the current document" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
         The **Issues counter** in DevTools, indicating how many problems there are in the current document
     :::image-end:::
+
+1.  Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.
 
 1.  Select the **Issues counter**.  The **Issues** tool opens, in the **Drawer** at the bottom of DevTools.
 
