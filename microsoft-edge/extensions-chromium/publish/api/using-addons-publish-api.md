@@ -50,7 +50,7 @@ To use the Microsoft Edge Add-ons Publish API, you need to enable the API for yo
 
 After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token using the client credentials grant, send a POST request to the Auth Token URL.  The tenant information is available in the URL that you received in the **Before you begin** steps above.
 
-```console
+```rest
 Endpoint: https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token
 Type: POST
 Header Parameters: Content-Type: application/x-www-form-urlencoded
