@@ -10,6 +10,8 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 ---
 # Add-ons Publish API Reference
 
+This is the REST endpoint reference for the Publish Add-ons API for Microsoft Edge Add-ons.  This API automates publishing updates to add-ons that have been submitted to the Microsoft Edge Add-ons website.
+
 
 <!-- ====================================================================== -->
 ## Get the list of products
