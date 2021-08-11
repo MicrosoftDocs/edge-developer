@@ -10,9 +10,9 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 ---
 # Using the Microsoft Edge Add-ons Publish API
 
-<!-- find and resolve: tbd, html comments, https://addons.edge.microsoft.com/api -->
+<!-- find and resolve: tbd, html comments, "placeholder" -->
 
-This article, along with the [Add-ons Publish API Reference][AddonsPublishAPIRef], provides an overview of the proposed Microsoft Edge Add-ons Publish API.  We look forward to your suggestions and feedback on the proposed API contracts.  Please submit your feedback at (_link TBD_).
+This article, along with the [Add-ons Publish API Reference][AddonsPublishAPIRef], provides an overview of the proposed Microsoft Edge Add-ons Publish API.  We look forward to your suggestions and feedback on the proposed API contracts.  Please submit your feedback: select the **Edit** button in the upper right to go to the GitHub repo for this article, and then select **Issues**.
 
 The Microsoft Edge Add-ons Publish API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons website.  You can use these REST endpoints to automate the process of uploading and publishing add-ons into the Microsoft Edge Add-ons website.
 
@@ -41,7 +41,7 @@ To use the Microsoft Edge Add-ons Publish API, you need to enable the API for yo
 
 1. Under the **Microsoft Edge** program, a new page for **Publish APIs** appears.
 
-1. Enable the APIs.<!-- what UI action to do that?--> This step may take a few minutes.  After the APIs are enabled, the **Client ID**, **Client Secret**, and **Auth Token URL** are displayed on this page.
+1. Select the **Create API credentials** button to generate the API credentials.  This step may take a few minutes.  After the APIs are enabled, the **Client ID**, **Client Secret**, and **Auth Token URL** are displayed on this page.
 
 1. Note the **ClientID**, **Client Secret** and the **Auth Token URL**.  You'll use them in the next step to get an access token.
 
@@ -92,7 +92,7 @@ Once you have an access token, you can use the Microsoft Edge Add-ons Publish AP
 > [!NOTE]
 > Currently, there is no API for creating a new product or updating a product's metadata, such as a description.  You must complete these tasks manually in Microsoft Partner Center.
 
-The examples below use the domain `https://addons.edge.microsoft.com/api`, which is a placeholder and needs to be replaced by another example, given that this API is not live yet.
+The examples below use the domain `https://addons.edge.microsoft.com/api`, which is a placeholder and might be replaced when the APIs are available in production.
 
 
 <!-- ====================================================================== -->
@@ -159,7 +159,7 @@ API reference: [Check the status of a package upload](addons-publish-api-referen
 
 Use this API to publish the current draft of the product to the Edge Add-ons website.
 
-`https://addons.edge.microsoft.com/api` is a placeholder and needs to be replaced by another example.
+`https://addons.edge.microsoft.com/api` is a placeholder and might be replaced when the APIs are available in production.
 
 ```rest
 Endpoint: /v1/products/$productID/submissions
@@ -179,7 +179,7 @@ Body content: Notes for certification, in plain text format
 https://addons.edge.microsoft.com/api/v1/products/$productID/submissions
 ```
 
-`https://addons.edge.microsoft.com/api` is a placeholder and needs to be replaced by another example.
+`https://addons.edge.microsoft.com/api` is a placeholder and might be replaced when the APIs are available in production.
 
 If the request succeeded and the publish process began, you receive a `202 Accepted` response status code with a `Location` header.   To find out the status of the operation, make `GET` requests to the URL in the `Location` header.
 
@@ -206,7 +206,7 @@ Header Parameters: $TOKEN: the access token
 -v \ https://addons.edge.microsoft.com/api/v1/products/$productID/submissions/operations/{operationID}
 ```
 
-`https://addons.edge.microsoft.com/api` is a placeholder and needs to be replaced by another example.
+`https://addons.edge.microsoft.com/api` is a placeholder and might be replaced when the APIs are available in production.
 
 API reference: [Check the publishing status](addons-publish-api-reference.md#check-the-publishing-status)
 
