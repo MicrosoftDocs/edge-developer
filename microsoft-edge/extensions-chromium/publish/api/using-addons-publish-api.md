@@ -87,20 +87,12 @@ For more information, navigate to [OAuth 2.0 client credentials flow on the Micr
 <!-- ====================================================================== -->
 ## Using the Publish API
 
-Once you have an access token, your app can use the Microsoft Edge Add-ons Publish API.  There are endpoints for getting a list of products, updating a product, and publishing a product.<!-- correct list of actions? there wasn't a get-list section below, only in API Ref. -->
+Once you have an access token, you can use the Microsoft Edge Add-ons Publish API.  This API exposes endpoints for getting a list of products, updating products, and publishing products.
 
 > [!NOTE]
 > Currently, there is no API for creating a new product or updating a product's metadata, such as a description.  You must complete these tasks manually in Microsoft Partner Center.
 
 The examples below use the domain `https://addons.edge.microsoft.com/api`, which is a placeholder and needs to be replaced by another example, given that this API is not live yet.
-
-
-<!-- ====================================================================== -->
-## Getting the list of products
-
-<!-- no section in Part 1 of spec -->
-
-API reference: [Get the list of products](addons-publish-api-reference.md#get-the-list-of-products)
 
 
 <!-- ====================================================================== -->
@@ -119,7 +111,7 @@ Body content: the package file to upload
 
 *  Login to Microsoft Partner Center.  Navigate to **Microsoft Edge > Overview**, and then select the extension you want the product ID for.  The extension overview page opens.  The GUID in the URL is the product ID.
 
-*  Call the `/products` API to get a list of all products and their product IDs.  For more information about the `/products` API, navigate to the [Add-ons Publish API Reference][AddonsPublishAPIRef].
+*  Call the `/products` API to get a list of all products and their product IDs.  For more information about the `/products` API, navigate to [Get the list of products](addons-publish-api-reference.md#get-the-list-of-products).
 
 ### Sample request
 
@@ -132,7 +124,8 @@ Body content: the package file to upload
 -v \
 https://api.partnercenter.microsoft.com/edgeaddons/v1/products/$productID/submissions/draft/package
 ```
-If the request succeeded and the update process began, you receive a 202 Accepted response status code with a Location header. Make 'GET' requests to the URL in the Location header to find out the status of the operation.
+
+If the request succeeded and the update process began, you receive a `202 Accepted` response status code with a `Location` header.  To find out the status of the operation, make `GET` requests to the URL in the `Location` header.
 
 API reference: [Upload a package to update an existing submission](addons-publish-api-reference.md#upload-a-package-to-update-an-existing-submission)
 
@@ -188,7 +181,7 @@ https://addons.edge.microsoft.com/api/v1/products/$productID/submissions
 
 `https://addons.edge.microsoft.com/api` is a placeholder and needs to be replaced by another example.
 
-If the request succeeded and the publish process began, you receive a 202 Accepted response status code with a Location header. Make 'GET' requests to the URL in the Location header to find out the status of the operation.
+If the request succeeded and the publish process began, you receive a `202 Accepted` response status code with a `Location` header.   To find out the status of the operation, make `GET` requests to the URL in the `Location` header.
 
 API reference: [Publish the product draft submission](addons-publish-api-reference.md#publish-the-product-draft-submission)
 

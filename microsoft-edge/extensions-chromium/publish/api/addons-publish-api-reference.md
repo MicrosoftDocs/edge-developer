@@ -12,13 +12,13 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 
 This is the REST endpoint reference for the Publish Add-ons API for Microsoft Edge Add-ons.  This API automates publishing updates to add-ons that have been submitted to the Microsoft Edge Add-ons website.
 
+For an overview, navigate to [Using the Microsoft Edge Add-ons Publish API](using-addons-publish-api.md).
+
 
 <!-- ====================================================================== -->
 ## Get the list of products
 
 Gets a list of all products that belong to the account.  
-
-Overview: [Getting the list of products](using-addons-publish-api.md#getting-the-list-of-products)
 
 ### Request
 
@@ -84,8 +84,6 @@ This API has the following expected status codes.
 
 Uploads a package to update an existing draft submission of an add-on product.
 
-Overview: [Uploading a package to update an existing submission](using-addons-publish-api.md#uploading-a-package-to-update-an-existing-submission)
-
 ### Request
 
 | Method | Request URI |
@@ -131,8 +129,6 @@ This API has the following expected status codes.
 ## Check the status of a package upload
 
 Gets the status of the package upload.
-
-Overview: [Checking the status of a package upload](using-addons-publish-api.md#checking-the-status-of-a-package-upload)
 
 ### Request
 
@@ -220,8 +216,6 @@ This API has the following expected status codes.
 
 Publishes the current draft of the product to Microsoft Edge Add-ons.
 
-Overview: [Publishing the product draft submission](using-addons-publish-api.md#publishing-the-product-draft-submission)
-
 ### Request
 
 | Method | Request URI |
@@ -267,8 +261,6 @@ This API has the following expected status codes.
 ## Check the publishing status
 
 Checks the status of the publish operation.
-
-Overview: [Checking the publishing status](using-addons-publish-api.md#checking-the-publishing-status)
 
 ### Request
 
@@ -367,6 +359,12 @@ Here are a list of common error codes and possible reasons.  For a full list, na
 | Message  | Description  | Example scenario |
 |---|---|---|
 | 500 Internal Server Error | The request wasn't completed. | The server met an unexpected condition. |
+
+
+## See also
+
+*  [Using the Microsoft Edge Add-ons Publish API](using-addons-publish-api.md)
+
 
 <!-- links -->
 [PartnerCenterErrorCodes]: /partner-center/develop/error-codes "Partner Center REST error codes | Microsoft Docs "
