@@ -92,7 +92,7 @@ Once you have an access token, you can use the Microsoft Edge Add-ons Publish AP
 > [!NOTE]
 > Currently, there is no API for creating a new product or updating a product's metadata, such as a description.  You must complete these tasks manually in Microsoft Partner Center.
 
-The examples below use the domain `https://addons.edge.microsoft.com/api`, which is a placeholder and might be replaced when the APIs are available in production.
+The examples below use the domain `https://addons.edge.microsoft.com/api`, which is a placeholder and might be replaced when the API is available in production.
 
 
 <!-- ====================================================================== -->
@@ -122,7 +122,7 @@ Body content: the package file to upload
 -X PUT \
 -T $FILE_NAME \
 -v \
-https://api.partnercenter.microsoft.com/edgeaddons/v1/products/$productID/submissions/draft/package
+https://addons.edge.microsoft.com/api/v1/products/$productID/submissions/draft/package
 ```
 
 If the request succeeded and the update process began, you receive a `202 Accepted` response status code with a `Location` header.  To find out the status of the operation, make `GET` requests to the URL in the `Location` header.
@@ -155,11 +155,9 @@ API reference: [Check the status of a package upload](addons-publish-api-referen
 
 
 <!-- ====================================================================== -->
-## Publishing the product draft submission
+## Publishing the submission
 
 Use this API to publish the current draft of the product to the Edge Add-ons website.
-
-`https://addons.edge.microsoft.com/api` is a placeholder and might be replaced when the APIs are available in production.
 
 ```rest
 Endpoint: /v1/products/$productID/submissions
@@ -178,8 +176,6 @@ Body content: Notes for certification, in plain text format
 -v \
 https://addons.edge.microsoft.com/api/v1/products/$productID/submissions
 ```
-
-`https://addons.edge.microsoft.com/api` is a placeholder and might be replaced when the APIs are available in production.
 
 If the request succeeded and the publish process began, you receive a `202 Accepted` response status code with a `Location` header.   To find out the status of the operation, make `GET` requests to the URL in the `Location` header.
 
@@ -205,8 +201,6 @@ Header Parameters: $TOKEN: the access token
 -X GET \
 -v \ https://addons.edge.microsoft.com/api/v1/products/$productID/submissions/operations/{operationID}
 ```
-
-`https://addons.edge.microsoft.com/api` is a placeholder and might be replaced when the APIs are available in production.
 
 API reference: [Check the publishing status](addons-publish-api-reference.md#check-the-publishing-status)
 
