@@ -24,11 +24,12 @@ The tentative date for the availability of the APIs is December 2021.
 
 | Term | Definition |
 |---|---|
-| _product_ | A single product for which you have an entire entry at Partner Center. |
-| _product ID_ | The product ID of the product whose draft needs to be published.  This is the product ID of your product as shown at Partner Center. |
-| _submission_ | A version of the product.  Every update to a product is a submission, whether draft, in review, or published. |
 | _operation_ | A REST operation such as GET or PUT.  There are several operations, defined at [Add-ons Publish API Reference][AddonsPublishAPIRef]. |
 | _operation ID_ | The ID of a REST operation. |
+| _package_ | The `.zip` package that contains the files for your Microsoft Edge Add-on. |
+| _product_ | A Microsoft Edge extension or theme.  Also referred to as a Microsoft Edge _Add-on_. |
+| _product ID_ | The product ID of the product whose draft needs to be published.  The product ID is a 32-character GUID that is associated with a product that is submitted to Partner Center.  For example: `d34f98f5-f9b7-42b1-bebb-98707202b21d`. |
+| _submission_ | An update that is being submitted to an existing product at Partner Center.  Every update to a product is a submission, regardless of whether the status is `In Draft`, `In Review`, or `In the Store` (published). |
 
 
 <!-- ====================================================================== -->
