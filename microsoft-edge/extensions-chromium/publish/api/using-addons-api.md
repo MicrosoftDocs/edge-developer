@@ -1,18 +1,18 @@
 ---
 description: REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons website.
-title: Using the Microsoft Edge Add-ons Publish API
+title: Using the Microsoft Edge Add-ons API
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 08/10/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer, publish api, add-ons publish api
+keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer, add-ons api, publish api
 ---
-# Using the Microsoft Edge Add-ons Publish API
+# Using the Microsoft Edge Add-ons API
 
-This article, along with the [Add-ons Publish API Reference][AddonsPublishAPIRef], provides an overview of the proposed Microsoft Edge Add-ons Publish API.  We look forward to your suggestions and feedback on the proposed API contracts.  Please submit your feedback as an [Issue about the Add-ons API][GitHubMicrosoftDocsEdgeDeveloperNewIssue].
+This article, along with the [Microsoft Edge Add-ons API Reference][AddonsAPIRef], provides an overview of the proposed Microsoft Edge Add-ons API.  We look forward to your suggestions and feedback on the proposed API contracts.  Please submit your feedback as an [Issue about the Add-ons API][GitHubMicrosoftDocsEdgeDeveloperNewIssue].
 
-The Microsoft Edge Add-ons Publish API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons website.  You can use these REST endpoints to automate the process of uploading and publishing add-ons into the Microsoft Edge Add-ons website.
+The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons website.  You can use these REST endpoints to automate the process of uploading and publishing add-ons into the Microsoft Edge Add-ons website.
 
 The tentative date for the availability of the APIs is December 2021.
 
@@ -22,7 +22,7 @@ The tentative date for the availability of the APIs is December 2021.
 
 | Term | Definition |
 |---|---|
-| _operation_ | A REST operation such as GET or PUT.  There are several operations, defined at [Add-ons Publish API Reference][AddonsPublishAPIRef]. |
+| _operation_ | A REST operation such as GET or PUT. |
 | _operation ID_ | The ID of a REST operation. |
 | _package_ | The `.zip` package that contains the files for your Microsoft Edge Add-on. |
 | _product_ | A Microsoft Edge extension or theme.  Also referred to as a Microsoft Edge _Add-on_. |
@@ -33,7 +33,7 @@ The tentative date for the availability of the APIs is December 2021.
 <!-- ====================================================================== -->
 ## Before you begin
 
-To use the Microsoft Edge Add-ons Publish API, you need to enable the API for your project in the Microsoft Partner Center.
+To use the Microsoft Edge Add-ons API, you need to enable the API for your project in the Microsoft Partner Center.
 
 1. Visit Microsoft Partner Center and login to the account from which you have already published an add-on.
 
@@ -83,9 +83,9 @@ For more information, navigate to [OAuth 2.0 client credentials flow on the Micr
 
 
 <!-- ====================================================================== -->
-## Using the Publish API
+## Using the API endpoints
 
-Once you have an access token, you can use the Microsoft Edge Add-ons Publish API.  This API exposes endpoints for getting a list of products, updating products, and publishing products.
+Once you have an access token, you can use the Microsoft Edge Add-ons API.  This API exposes endpoints for getting a list of products, updating products, and publishing products.
 
 > [!NOTE]
 > Currently, there is no API for creating a new product or updating a product's metadata, such as a description.  You must complete these tasks manually in Microsoft Partner Center.
@@ -109,7 +109,7 @@ Body content: the package file to upload
 
 *  Login to Microsoft Partner Center.  Navigate to **Microsoft Edge > Overview**, and then select the extension you want the product ID for.  The extension overview page opens.  The GUID in the URL is the product ID.
 
-*  Call the `/products` API to get a list of all products and their product IDs.  For more information about the `/products` API, navigate to [Get the list of products](addons-publish-api-reference.md#get-the-list-of-products).
+*  Call the `/products` API to get a list of all products and their product IDs.  For more information about the `/products` API, navigate to [Get the list of products](addons-api-reference.md#get-the-list-of-products).
 
 ### Sample request
 
@@ -125,7 +125,7 @@ https://addons.edge.microsoft.com/api/v1/products/$productID/submissions/draft/p
 
 If the request succeeded and the update process began, you receive a `202 Accepted` response status code with a `Location` header.  To find out the status of the operation, make `GET` requests to the URL in the `Location` header.
 
-API reference: [Upload a package to update an existing submission](addons-publish-api-reference.md#upload-a-package-to-update-an-existing-submission)
+API reference: [Upload a package to update an existing submission](addons-api-reference.md#upload-a-package-to-update-an-existing-submission)
 
 
 <!-- ====================================================================== -->
@@ -149,13 +149,13 @@ Header Parameters: $TOKEN: the access token
 https://addons.edge.microsoft.com/api/v1/products/$productID/submissions/draft/package/operations/$operationID
 ```
 
-API reference: [Check the status of a package upload](addons-publish-api-reference.md#check-the-status-of-a-package-upload)
+API reference: [Check the status of a package upload](addons-api-reference.md#check-the-status-of-a-package-upload)
 
 
 <!-- ====================================================================== -->
 ## Publishing the submission
 
-Use this API to publish the current draft of the product to the Edge Add-ons website.
+Use this API to publish the current draft of the product to the Microsoft Edge Add-ons website.
 
 ```rest
 Endpoint: /v1/products/$productID/submissions
@@ -175,9 +175,9 @@ Body content: Notes for certification, in plain text format
 https://addons.edge.microsoft.com/api/v1/products/$productID/submissions
 ```
 
-If the request succeeded and the publish process began, you receive a `202 Accepted` response status code with a `Location` header.   To find out the status of the operation, make `GET` requests to the URL in the `Location` header.
+If the request succeeded and the publishing process began, you receive a `202 Accepted` response status code with a `Location` header.   To find out the status of the operation, make `GET` requests to the URL in the `Location` header.
 
-API reference: [Publish the product draft submission](addons-publish-api-reference.md#publish-the-product-draft-submission)
+API reference: [Publish the product draft submission](addons-api-reference.md#publish-the-product-draft-submission)
 
 
 <!-- ====================================================================== -->
@@ -200,11 +200,11 @@ Header Parameters: $TOKEN: the access token
 -v \ https://addons.edge.microsoft.com/api/v1/products/$productID/submissions/operations/{operationID}
 ```
 
-API reference: [Check the publishing status](addons-publish-api-reference.md#check-the-publishing-status)
+API reference: [Check the publishing status](addons-api-reference.md#check-the-publishing-status)
 
 
 <!-- links -->
-[AddonsPublishAPIRef]: addons-publish-api-reference.md "Add-ons Publish API Reference | Microsoft Docs "
+[AddonsAPIRef]: addons-api-reference.md "Microsoft Edge Add-ons API Reference | Microsoft Docs "
 <!-- external links -->
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API%20] "Enter feedback about the Add-ons API - MicrosoftDocs/edge-developer - GitHub"
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API] "Enter feedback about the Add-ons API - MicrosoftDocs/edge-developer - GitHub"
 [AzureOAuthGetToken]: /azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token "OAuth 2.0 client credentials flow on the Microsoft identity platform | Microsoft Docs"

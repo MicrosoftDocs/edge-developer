@@ -1,18 +1,18 @@
 ---
-description: The Add-ons Publish API Reference, for REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons website.
-title: Add-ons Publish API Reference
+description: The Add-ons API Reference, for REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons website.
+title: Microsoft Edge Add-ons API Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 08/10/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer, publish api, add-ons publish api
+keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer, add-ons api, publish api
 ---
-# Add-ons Publish API Reference
+# Microsoft Edge Add-ons API Reference
 
-This is the REST endpoint reference for the Publish Add-ons API for Microsoft Edge Add-ons.  This API automates publishing updates to add-ons that have been submitted to the Microsoft Edge Add-ons website.
+This is the REST endpoint reference for the Microsoft Edge Add-ons API.  This API automates publishing updates to add-ons that have been submitted to the Microsoft Edge Add-ons website.
 
-For an overview, navigate to [Using the Microsoft Edge Add-ons Publish API](using-addons-publish-api.md).
+For an overview, navigate to [Using the Microsoft Edge Add-ons API][UsingAddonsAPI].
 
 
 <!-- ====================================================================== -->
@@ -363,9 +363,11 @@ Here are a list of common error codes and possible reasons.  For a full list, na
 
 ## See also
 
-*  [Using the Microsoft Edge Add-ons Publish API](using-addons-publish-api.md)
+*  [Using the Microsoft Edge Add-ons API][UsingAddonsAPI]
 
 
 <!-- links -->
+[UsingAddonsAPI]: using-addons-api.md "Using the Microsoft Edge Add-ons API | Microsoft Docs"
+<!-- external links -->
 [PartnerCenterErrorCodes]: /partner-center/develop/error-codes "Partner Center REST error codes | Microsoft Docs "
 [WikipediaListOfStatusCodes]: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) "List of HTTP status codes | Wikipedia"

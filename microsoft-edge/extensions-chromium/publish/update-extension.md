@@ -10,12 +10,13 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 ---
 # Update or remove your extension  
 
-You may update a submitted extension or remove a published extension listing from the Microsoft Edge Add-ons store at any time.  
+You can update a submitted extension or remove a published extension listing from the Microsoft Edge Add-ons store at any time.  
+
 
 ## Update your extension on the Microsoft Edge Add-ons store  
 
 > [!NOTE]
-> The duration of the certification process for an update to an extension may take from a few hours to few days.  
+> The duration of the certification process for an update to an extension can take from a few hours to few days.  
 
 ### Update an existing extension in the Microsoft Edge Add-ons store  
 
@@ -25,10 +26,12 @@ To update your extension on the store, complete the following steps.
 1.  Update either the extension package or the metadata of the extension.  If you update the extension package, ensure that you increase the version in the manifest file.  
 1.  After you make the changes, choose **Save** > **Publish** to update your extension listing, and start the certification process.  
 1.  After the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons store.  
-    
+
+After your extension has been initially published, you will be able to update it programmatically by [Using the Microsoft Edge Add-ons API][UsingAddonsAPI] (proposal).
+
 ### Update your extension during the certification step  
 
-While your extension is still in the certification stage, and before it gets published to the Microsoft Edge Add-ons store, you may update it. If your extension fails the certification process, you may also need to update your extension.    
+While your extension is still in the certification stage, and before it gets published to the Microsoft Edge Add-ons store, you can update it. If your extension fails the certification process, you might also need to update your extension.    
 
 To check the status of your extension, navigate to the dashboard associated with your listing on [Partner Center][MicrosoftPartnerCenter].  
 
@@ -60,8 +63,9 @@ To remove your extension from the Microsoft Edge Add-ons store, complete the fol
 1.  Choose **Extension Overview** on your listing.  
 1.  Choose **Unpublish** to remove the listing from the Microsoft Edge Add-ons store.  
     
-Your extension is now removed from the Microsoft Edge Add-ons store.  Users who already installed your extension may continue to use it, but new users don't find it.  
+Your extension is now removed from the Microsoft Edge Add-ons store.  Users who already installed your extension can continue to use it, but new users don't find it.  
 
-<!-- links -->  
-
+<!-- links -->
+[UsingAddonsAPI]: using-addons-api.md "Using the Microsoft Edge Add-ons API | Microsoft Docs"
+<!-- external links -->
 [MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  
