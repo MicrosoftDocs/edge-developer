@@ -1,5 +1,5 @@
 ---
-description: Add-ons Publish API Reference.
+description: The Add-ons Publish API Reference, for REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons website.
 title: Add-ons Publish API Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel

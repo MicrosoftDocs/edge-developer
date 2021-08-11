@@ -1,5 +1,5 @@
 ---
-description: Using the Microsoft Edge Add-ons Publish API.
+description: REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons website.
 title: Using the Microsoft Edge Add-ons Publish API
 author: MSEdgeTeam
 ms.author: msedgedevrel
