@@ -15,7 +15,7 @@ Windows and other operating systems \(OSs\) contain a [setting that allows users
 
 The exact numbers are not available, but roughly 4% of all Windows users use display settings with reduced color settings.  According to the [2018 Survey of Users with low Vision][WebaimProjectsLowvisionsurvey2Contrastmode] provided by WebAIM, more than half of low vision users use **High Contrast Mode**.  
 
-To make it easier for you \(the developer\) to test how your products appear in **High Contrast Mode**, [Microsoft Edge DevTools][DevtoolsGuideChromiumMain] include a way to simulate it without changing your Operating System settings.  The simulation also helps users of other OSs that do not have the same functionality and therefore are not able to test it.  
+To make it easier for you \(the developer\) to test how your products appear in **High Contrast Mode**, [Microsoft Edge DevTools][DevtoolsGuideChromiumMain] includes a way to simulate it without changing your Operating System settings.  The simulation also helps users of other OSs that do not have the same functionality and therefore are not able to test it.  
 
 The [CSS Media Queries Level 5 specification][CsswgDraftsMediaqueries5ForcedColors] also defines a programmatic way for you to cater for scenarios when the setting is active.  
 
@@ -84,7 +84,7 @@ View and change your CSS like any other web page.  For more information, see [Ge
 
 <!-- links --> 
 
-[DevtoolsGuideChromiumMain]: ../../devtools-guide-chromium.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsGuideChromiumCommandMenuIndexOpen]: ../command-menu/index.md#open-the-command-menu "Open the Command Menu - Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsGuideChromiumCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
 [DevtoolsGuideChromiumRenderingTools]: ../rendering-tools/index.md "Microsoft Edge (Chromium) Rendering Tools | Microsoft Docs"  
