@@ -3,7 +3,7 @@ description: New features for Progressive Web Apps (PWAs).
 title: What's New in Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/04/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, pwas, pwa, progressive web apps
@@ -50,40 +50,35 @@ You can now register your PWA to handle specific protocols with the host operati
 
 Learn more about using protocol handlers with your PWA at [Experimental features in Progressive Web Apps (PWAs)][ExpProtocolHandlers].
 
-## Streamlined app-info menus
+## Streamlined App Info menu
 
-When a user selects the **Settings** (**...**) menu in the app's title bar, the _app info_ menu is shown. We've updated this menu and streamlined the experience for the user in the following ways:
-* Moved the app publisher information to the top level and made it the first thing a user sees.
-* Moved the privacy information and controls into a dedicated 2nd-level **Privacy** menu.
-* Moved content-related tools into a dedicated 2nd-level **More tools** menu.
+When a user selects the ellipses (**...**) button in the app's title bar, the **App info** menu is displayed.  We've updated the **App info** menu and streamlined the user experience in the following ways, to provide a user experience that's more like a desktop app than a browser UI:
+*  Moved the app **Publisher** information to the top level and made it the first thing a user sees.
 
-These changes make the **Settings** menu provide a user experience that's more like a desktop app than a browser UI.
+   :::image type="complex" source="media/app-info.png" alt-text="The new, streamlined App Info menu" lightbox="media/app-info.png":::
+      The new, streamlined **App info** menu
+   :::image-end:::
 
-#### Updated App Info Menu
+*  Moved the privacy information and controls into a dedicated 2nd-level **Privacy** menu.
 
-:::image type="complex" source="media/app-info.png" alt-text="The new, streamlined app-info menu" lightbox="media/app-info.png":::
-   The new, streamlined app-info menu
-:::image-end:::
+   :::image type="complex" source="media/privacy-menu.png" alt-text="Privacy controls in the dedicated Privacy menu" lightbox="media/privacy-menu.png":::
+      Privacy controls in the dedicated **Privacy** menu
+   :::image-end:::
 
-#### Dedicated Privacy menu
+*  Moved content-related tools into a dedicated 2nd-level **More tools** menu.
 
-:::image type="complex" source="media/privacy-menu.png" alt-text="Privacy controls in the dedicated Privacy menu" lightbox="media/privacy-menu.png":::
-   Privacy controls in the dedicated **Privacy** menu
-:::image-end:::
+   :::image type="complex" source="media/more-tools.png" alt-text="Content-related tools are now found in the More Tools menu" lightbox="media/more-tools.png":::
+      Content-related tools are now found in the **More tools** menu
+   :::image-end:::
 
-#### Dedicated More Tools menu
-
-:::image type="complex" source="media/more-tools.png" alt-text="Content-related tools are now found in the More Tools menu" lightbox="media/more-tools.png":::
-   Content-related tools are now found in the **More tools** menu
-:::image-end:::
 
 ## Post-install flyout dialog box
 
 After a PWA is installed from the Microsoft Edge browser on Windows, users can now select from four options to easily launch their apps: 
-* **Pin to taskbar** 
-* **Pin to Start**
-* **Create Desktop shortcut**
-* **Auto-start on device login**
+*  **Pin to taskbar** 
+*  **Pin to Start**
+*  **Create Desktop shortcut**
+*  **Auto-start on device login**
 
 For convenience, this flyout dialog box is shown the first time the app is launched.
 
