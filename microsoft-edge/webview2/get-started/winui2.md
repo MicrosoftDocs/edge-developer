@@ -1,6 +1,6 @@
 ---
-description: Get started guide with WebView2 for  WinUI 3apps
-title: Get started with WebView2 in WinUI 2 apps
+description: Getting started guide for using WebView2 for WinUI 2 apps.
+title: Get started with WebView2 in WinUI 2 apps (internal Preview)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 06/15/2021
@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWebView2, browser control, edge html, get started, Get Started, .NET
 ---
-# Get started with WebView2 in WinUI 2 apps
+# Get started with WebView2 in WinUI 2 apps (internal Preview)
 
 
 ## Step 1\: Install Visual Studio
