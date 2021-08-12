@@ -24,7 +24,7 @@ Select the Languages and Framework of WebView2 you would like to use form the fo
     *   [Windows Forms][DotnetMicrosoftWebWebView2WinformsNamespace]  
 *   WinRT  
     *   [Core][WinrtMicrosoftWebWebview2CoreNamespace]  
-    *   [COM Interop][DotnetMicrosoftWebWebView2CoreNamespace]  
+    *   [COM Interop][WinrtComInteropInterfaces]  
 
 <!-- links -->  
 
