@@ -3,7 +3,7 @@ description: API Reference for Microsoft Edge WebView2 SDK
 title: Microsoft Edge WebView2 API Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 08/16/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -22,9 +22,14 @@ Select the Languages and Framework of WebView2 you would like to use form the fo
     *   [Core][DotnetMicrosoftWebWebView2CoreNamespace]  
     *   [WPF][DotnetMicrosoftWebWebView2WpfNamespace]  
     *   [Windows Forms][DotnetMicrosoftWebWebView2WinformsNamespace]  
-        
+*   WinRT  
+    *   [Core][WinrtMicrosoftWebWebview2CoreNamespace]  
+    *   [COM Interop][DotnetMicrosoftWebWebView2CoreNamespace]  
+
 <!-- links -->  
 
 [DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Microsoft.Web.WebView2.Core Namespace | Microsoft Docs"
 [DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf Namespace | Microsoft Docs"
 [DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"
+[WinrtMicrosoftWebWebview2CoreNamespace]: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index "Microsoft.Web.WebView2.Core Namespace | Microsoft Docs"
+[WinrtComInteropInterfaces]: /microsoft-edge/webview2/reference/winrt/interop/index "WebView2 WinRT COM Interop Reference | Microsoft Docs"
