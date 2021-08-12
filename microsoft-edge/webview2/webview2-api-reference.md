@@ -13,7 +13,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 The Microsoft Edge WebView2 control enables you to host web content in your application using [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com) as the rendering engine.  For more information, navigate to [Overview of Microsoft Edge WebView2](./index.md) and [Get Started with WebView2](./get-started/win32.md).  
 
-Select the Languages and Framework of WebView2 you would like to use form the following list.  
+Select the Languages and Framework of WebView2 you would like to use from the following list.  
 
 ## Languages and Frameworks  
 
