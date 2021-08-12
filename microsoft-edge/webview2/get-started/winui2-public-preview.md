@@ -1,6 +1,6 @@
 ---
 description: Getting started guide for using WebView2 for WinUI 2 apps.
-title: Get started with WebView2 in WinUI 2 apps (public preview)
+title: Get started with WebView2 in WinUI 2 (Windows App SDK) (public Preview)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 08/12/2021
@@ -9,48 +9,30 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWebView2, browser control, edge html, get started, Get Started, .NET
 ---
-# Get started with WebView2 in WinUI 2 apps (public Preview)
+# Get started with WebView2 in WinUI 2 (Windows App SDK) (public Preview)
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Your first WebView2 app uses WinUI 2.  For more information on individual APIs, navigate to [API reference][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].  
-
-> [!NOTE]
-> This draft article is not ready to use.  It needs to be modified from WinUI 3 to WinUI 2.
-
-<!-- presently this is a straight copy of the WinUI3 file winui.md; the only things modified so far are:
-*  The # h1 top-of-page title, the title: YAML field, the description YAML field, and the date.
+<!-- this is a copy of the WinUI3 file winui.md from master branch; the only things modified so far are:
+*  The description YAML field.
+*  The title: YAML field.
+*  The ms.date: YAML field.
+*  The # h1 top-of-page title.
 *  "2" in the first sentence.
-*  These two Notes.
+*  The two NOTEs at top.
 *  Added " (revise for WinUI 2)" suffix to each h2.
 -->
 
 > [!NOTE]
+> This draft article is not ready to use.  It needs to be modified from WinUI 3 to WinUI 2.
+
+> [!NOTE]
 > WinUI 2 Preview uses a prerelease WebView2 SDK.  For full API compatibility, use the Microsoft Edge Canary or Dev channel for your runtime.
 
-
-## Prerequisites (revise for WinUI 2)
-
-Ensure you install the following list of pre-requisites before proceeding.  
-
-*   [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on Windows 10 version 1803 \(build 17134\) or later.  For more information about Windows 10, navigate to [Windows Update: FAQ][MicrosoftSupport12373].  
-    
-    > [!NOTE]
-    > The WebView team recommends using the Canary channel and the minimum required version is 82.0.488.0.  
-    
-*   [Visual Studio][MicrosoftVisualstudioMain] 2019, version 16.9 or later.  For more information, navigate to [Windows UI Library 3 Preview 3][WindowsAppsWinui3ConfigureYourDevEnvironment].  
-    *   Include the following workloads when you install Visual Studio.  
-        *   **.NET desktop development** \(the installer also installs .NET 5\)  
-        *   **Universal Windows Platform development**
-    *   To build C++ apps, you must also include the following workloads.  
-        *   **Desktop development with C++**
-        *   The **C++ \(v142\) Universal Windows Platform tools** optional component of the **Universal Windows Platform development** workload.  To select that component, on the right-hand pane, navigate to **Installation Details** under the **Universal Windows Platform development** section.  
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Your first WebView2 app uses WinUI 2.  For more information on individual APIs, navigate to [API reference][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].  
         
-## Step 0 - Visual Studio settings (revise for WinUI 2)
+## Step 0 - Set Up Development Environment (revise for WinUI 2)
 
-1.  Ensure your system has a NuGet package source enabled for [nuget.org][NugetHome].  For more information, navigate to [Common NuGet configurations][NugetConsumePackagesConfiguringNugetBehavior] and [Windows Community Toolkit][WindowsCommunitytoolkit].  
-1.  Download and install the [Project Reunion VSIX package][VisualstudioMarketplaceProjectreunionMicrosoftprojectreunion].  The installer adds both the WinUI 3 project templates and the NuGet package containing the WinUI 3 libraries to Visual Studio 2019.  
-    
-    For instructions on how to add the `VSIX` package to Visual Studio, navigate to [Finding and Using Visual Studio Extensions][VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox].
-    
+1. Follow steps 1-4 of [Set up your development environment][WindowsAppsWinui3ConfigureYourDevEnvironment] to install Visual Studio, configure the NuGet package source, and install the Windows App SDK Extension for Visual Studio. 
+1. Install the [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on Windows 10 version 1803 \(build 17134\) or later.  For more information about Windows 10, navigate to [Windows Update: FAQ][MicrosoftSupport12373].  
 1.  To access all developer-specific Visual Studio features, turn on [Developer Mode][WindowsUwpGetStartedEnableYourDeviceForDevelopment].  
     
 ## Step 1 - Create Project (revise for WinUI 2)
@@ -206,6 +188,13 @@ To allow users to control the webpage that is displayed in your WebView2 control
     
 ## Step 4 - Navigation events (revise for WinUI 2)
 
+For this step, we need to import the WebView2 Core library.
+
+Add the following line to the top of `MainWindow.xaml.cs`:
+```csharp
+using Microsoft.Web.WebView2.Core;
+```
+
 Apps that host WebView2 controls listen for the following events that are raised by WebView2 controls during webpage navigation.  
 
 *   `NavigationStarting`  
@@ -234,7 +223,7 @@ public MainWindow()
     MyWebView.NavigationStarting += EnsureHttps;
 }
 
-private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs args)
+private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArgs args)
 {
     String uri = args.Uri;
     if (!uri.StartsWith("https://"))
@@ -255,12 +244,12 @@ To build and run your project, select `F5`.  Ensure navigation is blocked to HTT
 You may use host apps to inject JavaScript code into WebView2 controls at runtime.  You may task WebView to run arbitrary JavaScript or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run with specific timing.  
 
 *   Run it after the creation of the global object.  
-*   Run it before any other script included in the HTML document is run.  
+*   Run it before any other script included in the HTML document runs.
     
 As an example, add scripts that send an alert when a user navigates to non-HTTPS sites.  Modify the `EnsureHttps` function to inject a script into the web content that uses [ExecuteScriptAsync][Webviews2ReferenceWpfMicrosoftWebExecutescriptasync].  
 
 ```csharp
-private void EnsureHttps(WebView2 sender, WebView2NavigationStartingEventArgs args)
+private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArgs args)
 {
     String uri = args.Uri;
     if (!uri.StartsWith("https://"))
@@ -316,7 +305,7 @@ To send your WinUI-specific feature requests or bugs, navigate to [Issues - micr
 
 [VisualstudioIdeFindingUsingVisualStudioExtensionsInstallWithoutUsing-ManageExtensionsDialogBox]: /visualstudio/ide/finding-and-using-visual-studio-extensions#install-without-using-the-manage-extensions-dialog-box "Install without using the Manage Extensions dialog box - Manage extensions for Visual Studio | Microsoft Docs"  
 
-[WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/winui/winui3#configure-your-dev-environment "Configure your dev environment - Windows UI Library 3.0 Preview 1 (May 2020) | Microsoft Docs"  
+[WindowsAppsWinui3ConfigureYourDevEnvironment]: /windows/apps/project-reunion/set-up-your-development-environment "Configure your dev environment - Windows UI Library 3.0 Preview 1 (May 2020) | Microsoft Docs"  
 [WindowsCommunitytoolkit]: /windows/communitytoolkit "Windows Community Toolkit Documentation | Microsoft Docs"  
 [WindowsMsixDesktopToUwpPackagingDotNet]: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net "Set up your desktop application for MSIX packaging in Visual Studio | Microsoft Docs"  
 [WindowsUwpGetStartedEnableYourDeviceForDevelopment]: /windows/uwp/get-started/enable-your-device-for-development "Enable your device for development | Microsoft Docs"  
@@ -339,7 +328,7 @@ To send your WinUI-specific feature requests or bugs, navigate to [Issues - micr
 
 [WindowsDotnetcliBlobCoreSdk50100Preview4202681X64]: https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.4.20268.1/dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe " dotnet-sdk-5.0.100-preview.4.20268.1-win-x64.exe"  
 
-[VisualstudioMarketplaceProjectreunionMicrosoftprojectreunion]: https://marketplace.visualstudio.com/items?itemName=ProjectReunion.MicrosoftProjectReunion "Project Reunion | Visual Studio Marketplace"  
+[VisualstudioMarketplaceProjectreunionMicrosoftprojectreunion]: https://marketplace.visualstudio.com/items?itemName=ProjectReunion.MicrosoftProjectReunion "WindowsAppSDK | Visual Studio Marketplace"  
 
 [MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
 
