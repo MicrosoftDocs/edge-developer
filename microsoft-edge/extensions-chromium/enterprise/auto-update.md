@@ -56,7 +56,7 @@ If you host your own extension or app, you must add the `update_url` field to yo
 }
 ```  
 
-## Updated manifest  
+## Update manifest  
 
 The updated manifest returned by the server should be an XML document.  Review the following code snippet for an example of the updated manifest XML file.  
 

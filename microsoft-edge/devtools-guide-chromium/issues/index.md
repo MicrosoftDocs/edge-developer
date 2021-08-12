@@ -1,14 +1,14 @@
 ---
-description: Use the Issues tool to find and fix problems with your website.
-title: Find and fix problems with the Microsoft Edge DevTools Issues tool 
+description: Use the Issues tool to identify and fix problems with the current webpage.
+title: Find and fix problems using the Issues tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright Sam Dutton 
+<!-- Copyright Sam Dutton
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -20,88 +20,123 @@ keywords: microsoft edge, web development, f12 tools, devtools
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
-   limitations under the License.  -->  
-# Find and fix problems with the Microsoft Edge DevTools Issues tool  
+   limitations under the License.  -->
 
-The **Issues** tool in Microsoft Edge DevTools reduces the notification fatigue and clutter of the **Console**.  Use it to find solutions to problems detected by the browser, such as cookie issues and mixed content.  
+# Find and fix problems using the Issues tool
 
-> [!NOTE]
-> In Microsoft Edge 84, the **Issues** tool supports three types of issue:  
-> *   [Cookie problems][MDNSameSiteCookies]  
-> *   [Mixed content][MDNMixedContent]  
-> *   [COEP issues][W3CCOEPSpec]
-> 
-> The Microsoft Edge DevTools team plans to support more issue types in future versions of Microsoft Edge.  
+In Microsoft Edge DevTools, the **Issues** tool automatically analyzes the current webpage, reports issues grouped by type, and provides documentation to help explain and resolve the issues.
 
-## Open the Issues tool in the DevTools drawer  
+The **Issues** tool provides feedback in the following categories:
+*  Accessibility.
+*  Compatibility across browsers.
+*  Performance.
+*  Progressive Web Apps.
+*  Security.
+*  Other.
 
-1.  Navigate to a webpage, such as [samesite-sandbox.glitch.me][GlitchSamesiteSandbox], that contains issues to fix.  
-1.  [Open DevTools][DevtoolsOpen].  
-1.  :::row:::
-       :::column span="":::
-          Choose the **Go to Issues** button in the yellow warning bar.  
-          
-          :::image type="complex" source="../media/issues-open-issues-tab.msft.png" alt-text="Go to Issues button in yellow warning bar when Issues are detected" lightbox="../media/issues-open-issues-tab.msft.png":::
-             The **Go to Issues** button in the yellow warning bar when Issues are detected.  
-          :::image-end:::  
-       :::column-end:::
-       :::column span="":::
-          Alternatively, choose **Issues** from the **More tools** menu.  
-          
-          :::image type="complex" source="../media//issues-more-tools-menu.msft.png" alt-text="Issues tool in More tools menu" lightbox="../media//issues-more-tools-menu.msft.png":::
-             **Issues** tool in **More tools** menu  
-          :::image-end:::  
-       :::column-end:::
-    :::row-end:::
-    
-1.  Choose the **Reload page** button, if necessary.  
-    
-    :::image type="complex" source="../media/issues-tab-before-refresh.msft.png" alt-text="Issues tool in the DevTools Drawer with Reload page button" lightbox="../media/issues-tab-before-refresh.msft.png":::
-       **Issues** tool in the DevTools Drawer with **Reload page** button  
-    :::image-end:::  
+Feedback in the **Issues** tool is provided by several sources, including the Chromium platform, Deque axe, MDN browser compatibility data, and webhint.  For information about these sources of feedback that populate the **Issues** tool, navigate to:
+*  [axe Tools Overview][DequeAxe]
+*  [browser-compat-data repo][MDNCompat]
+*  [webhint][webhintIo]
 
-    The issues reported in the **Console** are quite hard to understand, such as the cookie warnings in the following image.  Based upon the reported issues, it may not be clear what you must do.  
-    
-    :::image type="complex" source="../media/issues-tab-after-refresh.msft.png" alt-text="Issues tool in the DevTools Drawer with three cookie issues" lightbox="../media/issues-tab-after-refresh.msft.png":::
-       **Issues** tool in the DevTools Drawer with three cookie issues  
-    :::image-end:::  
-    
-## View items in the Issues tool  
 
-The **Issues** tool in the DevTools Drawer presents warnings in a structured, aggregated, and actionable way.  
+## Opening the Issues tool
 
-1.  Choose an item in the **Issues** tool to get guidance on how to fix the issue and find affected resources.  
-    
-    :::image type="complex" source="../media/issues-tab-issue-open.msft.png" alt-text="Mark cross-site cookies as Secure issue open in the Issues tool" lightbox="../media/issues-tab-issue-open.msft.png":::
-       **Mark cross-site cookies as Secure** issue open in the **Issues** tool  
-    :::image-end:::  
-    
-    Each item has four components:  
-    
-    *   A headline describing the issue.  
-    *   A description providing the context and the solution.  
-    *   An **AFFECTED RESOURCES** section that links to resources within the appropriate DevTools context such as the Network panel.  
-    *   Links to further guidance.  
-    
-1.  Choose items in **AFFECTED RESOURCES** to view details.  In the following example, the **Mark cross-site cookies as Secure** issue affects one cookie and two requests.  
-    
-    :::image type="complex" source="../media/issues-tab-affected-resources.msft.png" alt-text="Affected resources open in the Issues tool" lightbox="../media/issues-tab-affected-resources.msft.png":::
-       Affected resources open in the **Issues** tool in the DevTools Drawer  
-    :::image-end:::  
-    
-## View issues in context  
+1.  Navigate to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page][A11ytestingPagewitherrors] in a new tab or window.
 
-1.  Choose a resource link to view the item in the appropriate context within DevTools.  In the following example, choose `samesite-sandbox.glitch.me` under **Requests** to show the cookies attached to that request.  
-    
-    :::image type="complex" source="../media/issues-tab-view-request.msft.png" alt-text="View the affected cookie in the DevTools Network tool" lightbox="../media/issues-tab-view-request.msft.png":::
-       View the affected cookie in the DevTools **Network** tool  
-    :::image-end:::  
+1.  Open DevTools.  After a few seconds, the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears in the upper right corner of DevTools.
 
-1.  Scroll to view the item with a problem:  for the following example, the `ck02` cookie.  Hover on the **SameSite** column to review the `None` value that the issue detected.  
-    
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="None value in the SameSite column for the ck02 cookie in the DevTools Network tool" lightbox="../media/issues-tab-view-issue.msft.png":::
-       `None` value in the **SameSite** column for the `ck02` cookie in the DevTools **Network** tool  
-    :::image-end:::  
+1.  Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.
+
+1.  Select the **Issues counter**.  The **Issues** tool opens with issues grouped into different categories.
+
+    :::image type="complex" source="../media/issues-tool-categories.msft.png" alt-text="Categories of issues in the Issues tool on the demo page" lightbox="../media/issues-tool-categories.msft.png":::
+       Categories of issues in the Issues tool on the demo page
+    :::image-end:::
+
+### Other ways to open the Issues tool
+
+There are several additional ways to open the **Issues** tool:
+*  Select the **More Tools** (**+**) menu in the main panel or the **Drawer**, and then select **Issues**.
+*  Select **Customize and control DevTools** > **More tools** > **Issues**.
+*  In the DOM tree in the **Elements** tool, select `Shift` and then click a wavy-underlined element name.  Or, open the context menu on a wavy-underlined element and then select **View issues**.
+
+### Issues are automatically ordered by severity
+
+Within each category of issues, first the errors are listed, then warnings, and then tips.
+
+:::image type="complex" source="../media/issues-ordered-by-severity.msft.png" alt-text="The Issues tool displays Performance issues sorted by severity" lightbox="../media/issues-ordered-by-severity.msft.png":::
+   The **Issues** tool displays Performance issues sorted by severity
+:::image-end:::
+
+### Include third-party issues
+
+To include issues that are caused by third-party sites, at the top of the **Issues** tool, select the **Include third-party issues** checkbox.
+
+
+## Expand entries in the Issues tool
+
+The **Issues** tool presents additional documentation and recommended fixes to apply to each issue.  To expand an issue to get this additional information, select an issue, as follows.
+
+1.  Open the [demo page][A11ytestingPagewitherrors] in a new window or tab, and then open DevTools.
+
+1.  Open the **Issues** tool by selecting the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\).
+
+1.  Select an issue to expand the issue.
+
+    :::image type="complex" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text="The Issues tool displaying additional information on how to fix the issue" lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
+       The **Issues** tool displaying additional information on how to fix the issue
+    :::image-end:::
+
+Each displayed issue has the following components:
+*   A headline describing the issue.
+*   A description providing more context and proposed solutions.
+*   An **AFFECTED RESOURCES** section that links to resources in DevTools, such as the **Elements**, **Sources**, or **Network** tool.
+*   Links to further documentation.
+
+
+## View issues in context of an associated tool
+
+An issue in the **Issues** tool may include one or more links that open different tools, such as the **Elements**, **Sources**, or **Network** tool. You can open one of these tools to perform additional troubleshooting steps. To open a linked tool from the **Issues** tool, perform the following steps.
+
+1.  As described in the previous section, open the demo page and then expand an issue in the **Issues** tool.
+
+1.  In **AFFECTED RESOURCES** > **Open in**, select the tool name.  The affected resource is displayed in the selected tool.
+
+    :::image type="complex" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="Select a tool to open an affected resource from within the Issues tool" lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
+       Select a tool to open an affected resource from within the Issues tool
+    :::image-end:::
+
+    An expanded issue may have a **Network** link, to display the affected resource in the **Network** tool.
+
+    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="The Network tool opens when you select a Network resource link" lightbox="../media/issues-tab-view-issue.msft.png":::
+    The **Network** tool opens when you select a **Network** resource link
+    :::image-end:::
+
+
+## Open issues from the DOM tree
+
+If an element has an associated issue, the DOM tree in the **Elements** tool shows a wavy underline under the element name.  You can open the context menu (right-click) on the element and then select **View issues**, or select `Shift` and left-click the element with the wavy underline.
+
+To display an issue for elements with wavy underlines in the DOM tree, perform the following steps.
+
+1.  Open a page, such as the [demo page][A11ytestingPagewitherrors], in a new tab or window.
+
+1.  Open DevTools and then select the **Elements** tab.
+
+1.  In the DOM tree, expand `<body>` > `<header>` > `<form>`.  Notice that the `<input>` element has a wavy underline.
+
+    :::image type="complex" source="../media/issues-wavy-underlines-dom-tree.msft.png" alt-text="Wavy-underlined issues in the DOM tree in the Elements tool" lightbox="../media/issues-wavy-underlines-dom-tree.msft.png":::
+       Wavy-underlined issues in the **DOM tree** in the **Elements** tool
+    :::image-end:::
+
+1.  Hover over the `<input>` element.  A tooltip displays information about the issue.
+
+1.  Open the context menu on the element with the wavy underline, and then select **View issues**.  The **Issues** tool opens and displays the issue that's associated with that element.
+
+    :::image type="complex" source="../media/issues-opened-from-dom-tree-wavy-underline.msft.png" alt-text="Details about issues on a wavy-underlined element in the DOM tree" lightbox="../media/issues-opened-from-dom-tree-wavy-underline.msft.png":::
+       Details about issues on a wavy-underlined element in the **DOM tree**
+    :::image-end:::
 
 
 ## See also
@@ -109,29 +144,26 @@ The **Issues** tool in the DevTools Drawer presents warnings in a structured, ag
 * [Automatically test a webpage for accessibility issues](../accessibility/test-issues-tool.md)
 
 
-## Getting in touch with the Microsoft Edge DevTools team  
+## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
-<!-- links -->  
-
-[DevtoolsOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
-
-[GlitchSamesiteSandbox]: https://samesite-sandbox.glitch.me "SameSite cookie tests | Glitch"  
-
-[MDNSameSiteCookies]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite "SameSite cookies | MDN"  
-[MDNMixedContent]: https://developer.mozilla.org/docs/Web/Security/Mixed_content "Mixed content | MDN"  
-
-[W3CCOEPSpec]: https://wicg.github.io/cross-origin-embedder-policy "Cross-Origin Embedder Policy | Web Incubator Community Group"  
+<!-- links -->
+[DevtoolsOpenIndex]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
+<!-- external links -->
+[A11ytestingPagewitherrors]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo page | Microsoft Docs"
+[DequeAxe]: https://www.deque.com/axe "axe Tools Overview | Deque"
+[MDNCompat]: https://github.com/mdn/browser-compat-data "MDN Browser Compatibility Data | GitHub"
+[webhintIo]: https://webhint.io "webhint.io"
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton][SamDutton] \(Developer Advocate\).  
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton][SamDutton] \(Developer Advocate\).
+[![Creative Commons License][CCby4Image]][CCA4IL]
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
-[SamDutton]: https://developers.google.com/web/resources/contributors#sam-dutton  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[SamDutton]: https://developers.google.com/web/resources/contributors#sam-dutton

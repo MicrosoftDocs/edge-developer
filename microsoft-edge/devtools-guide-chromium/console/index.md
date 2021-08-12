@@ -37,7 +37,7 @@ The fastest way to directly open the **Console** is to select `Control`+`Shift`+
 
 ## Error reports and Console  
 
-**Console** is the default place where JavaScript and connectivity errors are reported.  If any errors occur, a button displays next to the **Settings** icon in DevTools that provides the number of errors and warnings.  Choose it to open the **Console** and display the problem.  For more information, navigate to [Debug errors reported in Console][DevtoolsConsoleConsoleDebugJavascript].  
+**Console** is the default place where JavaScript and connectivity errors are reported.  If any errors occur, the **Issues counter** is displayed next to the **Settings** icon in DevTools that provides the number of errors and warnings.  Select the **Issues counter** to open the **Issues** tool and display the problem.  For more information, navigate to [Debug errors reported in Console][DevtoolsConsoleConsoleDebugJavascript].
 
 :::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools gives detailed information about the error in the Console" lightbox="../media/console-debug-displays-error.msft.png":::
    DevTools gives detailed information about the error in the **Console**  
@@ -45,7 +45,9 @@ The fastest way to directly open the **Console** is to select `Control`+`Shift`+
 
 ## Inspect and filter information on the current webpage  
 
-When you open the DevTools on a webpage, you're likely to display a deluge of information logged to the **Console**.  The amount of information becomes a problem when you need to identify important information.  To view the important information that needs action, use the [Issues][DevtoolsIssuesIndex] tool in DevTools.  Much of the noise remains, which is why it's a good idea to know about the [automated log and filter options][DevtoolsConsoleConsoleFilters] in the **Console**.  
+When you open DevTools on a webpage, there may be an overwhelming amount of information in the **Console**.  The amount of information becomes a problem when you need to identify important information.  To view the important information that needs action, use the [Issues][DevtoolsIssuesIndex] tool in DevTools.
+
+Issues are gradually being moved from the **Console** to the **Issues** tool.  However, there's still a lot of information in **Console**, which is why it's a good idea to know about the automated log and filter options in the **Console**.  For more information, navigate to [Filter Console messages][DevtoolsConsoleConsoleFilters].
 
 :::image type="complex" source="../media/console-intro-noise.msft.png" alt-text="DevTools with a Console full of messages" lightbox="../media/console-intro-noise.msft.png":::
    DevTools with a **Console** full of messages  
@@ -92,7 +94,7 @@ The **Console** displays the result `4` on the following line.  This **Eager eva
    The **Console** displays the result of `2 + 2` live as you type it  
 :::image-end:::  
 
-To run the JavaScript expression in the **Console** and optionally display a result, select `Enter`.  Then, you may write the next JavaScript code to run in the **Console**.  
+To run the JavaScript expression in the **Console** and optionally display a result, select `Enter`.  Then, you can write the next JavaScript code to run in the **Console**.  
 
 :::image type="complex" source="../media/console-javascript-several-expressions.msft.png" alt-text="Run several lines of JavaScript code in succession" lightbox="../media/console-javascript-several-expressions.msft.png":::
    Run several lines of JavaScript code in succession  
@@ -116,7 +118,7 @@ For more information about all the ways to work with **Console**, navigate to [C
 
 ## Interact with the current webpage in the browser  
 
-The **Console** has access to the [Window][MdnDocsWebApiWindow] object of the browser.  You may write scripts that interact with the current webpage.  To try it, complete the following actions.  
+The **Console** has access to the [Window][MdnDocsWebApiWindow] object of the browser.  You can write scripts that interact with the current webpage.  To try it, complete the following actions.  
 
 1.  Open the **Console**.  
 1.  Copy and paste the following code snippet.  
@@ -129,7 +131,7 @@ The **Console** has access to the [Window][MdnDocsWebApiWindow] object of the br
    Copy the top heading \(`h1`\) content from the DOM and display in the **Console**  
 :::image-end:::  
 
-Instead of only reading from the webpage, you may also change it.  To try it, complete the following actions.  
+Instead of only reading from the webpage, you can also change it.  To try changing the webpage, complete the following actions.  
 
 1.  Open the **Console**.  
 1.  Copy and paste the following code snippet.  
@@ -151,7 +153,6 @@ You changed the main heading of the webpage to **Rocking the Console**.  The **C
     $$('a').forEach(a => a.style.border='1px solid lime');
     ```  
     
-
 :::image type="complex" source="../media/console-intro-changing-styles.msft.png" alt-text="Manipulate a selection of elements using the Console" lightbox="../media/console-intro-changing-styles.msft.png":::
     Manipulate a selection of elements using the **Console**  
 :::image-end:::  
@@ -167,7 +168,6 @@ For more information about the **Console**, navigate to [Console reference][Devt
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
-
 [DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
 [DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "Debug errors reported in Console | Microsoft Docs"  
 [DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "Use the Console to interact with the DOM | Microsoft Docs" 
@@ -176,11 +176,8 @@ For more information about the **Console**, navigate to [Console reference][Devt
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Log messages in the Console tool | Microsoft Docs"  
 [DevtoolsConsoleReference]: ./reference.md "Console reference | Microsoft Docs"  
 [DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
-
-[DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems with the Microsoft Edge DevTools Issues tool | Microsoft Docs"  
-
+[DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"  
+<!-- external links -->
 [GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html "Console messages examples: log, info, error, and warn | GitHub"  
-
 [MdnDocsWebApiWindow]: https://developer.mozilla.org/docs/Web/API/Window "Window | MDN"  
-
 [WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read–eval–print loop | Wikipedia"  

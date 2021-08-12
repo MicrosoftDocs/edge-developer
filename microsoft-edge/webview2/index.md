@@ -11,9 +11,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 ---
 # Introduction to Microsoft Edge WebView2
 
-The Microsoft Edge WebView2 control allows you to embed web technologies \(HTML, CSS, and JavaScript\) in your native apps.  The WebView2 control uses [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native apps.  With WebView2, you can embed web code in different parts of your native app.  Build all of the native app within a single WebView instance.
-
-For information on how to start building a WebView2 app, navigate to [Get started](#get-started).  
+The Microsoft Edge WebView2 control allows you to embed web technologies \(HTML, CSS, and JavaScript\) in your native apps.  The WebView2 control uses [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native apps.  With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView instance.  For information on how to start building a WebView2 app, navigate to [Get Started](#get-started).  
 
 :::image type="complex" source="./media/WebView2/what-webview.png" alt-text="What is WebView?" lightbox="./media/WebView2/what-webview.png":::
    What is WebView?  
@@ -21,13 +19,15 @@ For information on how to start building a WebView2 app, navigate to [Get starte
 
 ## Hybrid app approach  
 
-Developers must often decide between building a web app or a native app.  The decision hinges on the trade-off between reach and power.  Web apps allow for a broad reach.  As a Web developer, you can reuse most of your code across different platforms.  To access all the capabilities of a native platform, use a native app.
+Developers must often decide between building a web app or a native app.  This decision hinges on the tradeoff between reach and power.
+*  Web apps allow for a broad reach.  As a Web developer, you can reuse most of your code across different platforms.
+*  To access all the capabilities of a native platform, use a native app.
 
 :::image type="complex" source="./media/WebView2/web-native.png" alt-text="Web native" lightbox="./media/WebView2/web-native.png":::
    Web native  
 :::image-end:::    
 
-Hybrid apps allow you to bring together the best of both worlds, combining the ubiquity and strength of the web platform, together with the power and full capabilities of the native platform.
+Hybrid apps allow developers to enjoy the best of both worlds: the ubiquity and strength of the web platform, combined with the power and full capabilities of the native platform.  
     
 ## WebView2 benefits   
 
@@ -113,7 +113,7 @@ Hybrid apps allow you to bring together the best of both worlds, combining the u
       ### Evergreen distribution  
    :::column-end:::
    :::column span="1":::
-      ### Fixed  
+      ### Fixed Version distribution 
    :::column-end:::
    :::column span="1":::
       ### Incremental adoption  
@@ -124,16 +124,16 @@ Hybrid apps allow you to bring together the best of both worlds, combining the u
       Rely on an up-to-date version of Chromium with regular platform updates and security patches.  
    :::column-end:::
    :::column span="1":::
-      \(coming soon\)  Choose to package the Chromium bits in your app.  
+      Optionally package a specific version of the Chromium bits in your app.  
    :::column-end:::
    :::column span="1":::
-      Add web components piece by piece to your app.  
+      Add web components piece-by-piece to your app.  
    :::column-end:::
 :::row-end:::  
 
 ## Get started
 
-To build and test your app using the WebView2 control, you need to have the [WebView2 SDK][NugetPackagesMicrosoftWebWebView2] installed.  Select one of the following options to get started.  
+To build and test your app using the WebView2 control, you need to have <!--both [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] and -->the [WebView2 SDK][NugetPackagesMicrosoftWebWebView2] installed.  Select one of the following options to get started.  
 
 *   [Get started with WebView2 in Win32 apps][Webview2GetStartedWin32]  
 *   [Get started with WebView2 in WPF apps][Webview2GetStartedWpf]
@@ -151,12 +151,15 @@ A General Availability \(GA\) or Preview version of WebView2 is available for th
 *   .NET Framework 4.5 or later  
 *   .NET Core 3.1 or later  
 *   .NET 5  
-*   WinUI 2
-*   [WinUI 3.0][UwpToolkitsWinui3] \(Preview\)  
+*   .NET 6 (Preview)
+*   [WinUI 3.0][UwpToolkitsWinui3]  
     
-WebView2 apps run on the following versions of Windows.
+WebView2 apps can run on the following versions of Windows.  
 
 *   Windows 10  
+*   Windows 10 IoT Enterprise LTSC x32 2019
+*   Windows 10 IoT Enterprise LTSC x64 2019
+*   Windows 10 IoT Enterprise 21h1 x64
 *   Windows 8.1  
 *   Windows 7 \*\*  
 *   Windows Server 2019  
@@ -170,12 +173,12 @@ WebView2 apps run on the following versions of Windows.
 
 ## Next steps  
 
-For more information on how to build and deploy WebView2 apps, navigate to the following conceptual documentation and how-to guides.  
+For more information on how to build and deploy WebView2 apps, use the following conceptual documentation and how-to guides.  
 
 ### Concepts  
 
 *   [Understand WebView2 SDK versions][Webview2ConceptsVersioning]  
-*   [Distribution of apps using WebView2][Webview2ConceptsDistribution]  
+*   [Distribute a WebView2 app and the WebView2 Runtime][Webview2ConceptsDistribution]  
 *   [Best practices for developing secure WebView2 apps][Webview2ConceptsSecurity]  
 *   [Manage User Data Folder in WebView2 apps][Webview2ConceptsUserDataFolder]  
  
@@ -189,9 +192,9 @@ For more information on how to build and deploy WebView2 apps, navigate to the f
 [!INCLUDE [contact WebView team note](./includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
-[Webview2ConceptsDistribution]: ./concepts/distribution.md "Distribution of apps using WebView2 | Microsoft Docs"  
+[Webview2ConceptsDistribution]: ./concepts/distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
 [Webview2ConceptsSecurity]: ./concepts/security.md "Best practices for developing secure WebView2 apps | Microsoft Docs"  
-[Webview2ConceptsUserDataFolder]: ./concepts/user-data-folder.md "Manage the User Data Folder | Microsoft Docs"  
+[Webview2ConceptsUserDataFolder]: ./concepts/user-data-folder.md "Manage the user data folder | Microsoft Docs"  
 [Webview2ConceptsVersioning]: ./concepts/versioning.md "Understand WebView2 SDK versions | Microsoft Docs"  
 
 [Webview2GetStartedWin32]: ./get-started/win32.md "Get started with WebView2 in Win32 apps | Microsoft Docs"  

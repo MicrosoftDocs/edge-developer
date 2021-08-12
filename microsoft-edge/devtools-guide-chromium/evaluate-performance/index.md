@@ -244,7 +244,7 @@ Last, there are many ways to improve runtime performance.  This article focused 
 
 <!-- links -->
 
-[DevtoolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
+[DevtoolsCustomizePlacement]: ../customize/placement.md "Change DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
 [DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimize Website Speed With Microsoft Edge DevTools"  
 
 [TwitterEdgeDevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "EdgeDevTools - Post a Tweet | Twitter"  
