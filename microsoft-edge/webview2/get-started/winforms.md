@@ -23,9 +23,6 @@ Ensure you install the following list of pre-requisites before proceeding.
     > The WebView team recommends using the Canary channel and the minimum required version is 82.0.488.0.  
     
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 or later.  
-    
-> [!NOTE]
-> WebView2 currently does not support the .NET 5 and .NET Core designers.  
 
 ## Step 1 - Create a single-window app
 
