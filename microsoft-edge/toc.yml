@@ -1,11 +1,11 @@
 - name: Microsoft Edge documentation
   href: index.yml
-- name: Microsoft Edge Developer documentation
-  href: index-landing.yml
   expanded: true
   items:
     # - name: Microsoft Edge developer documentation
     #   href: developer/index.yml
+    - name: Microsoft Edge developer documentation
+      href: index-landing.yml
     - name: Accessibility
       items:
         - name: Accessibility overview
