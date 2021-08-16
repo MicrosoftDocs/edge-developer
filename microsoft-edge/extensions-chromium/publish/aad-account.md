@@ -17,7 +17,7 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
 
 If you do not have an account and are new to Partner Center, continue to Step **1**. If you have a Partner Center developer account, continue to Step **2**.
 
-1. If you are new to Partner Center and don't have an account or if you have an existing commercial account with Partner Center (see step **2.c** below), and for more information navigate to [Microsoft account (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] (or use an existing one) to register with the Microsoft Edge program. Follow the steps at [Register as a Microsoft Edge extensions developer][DeveloperRegistration]. 
+1. If you are new to Partner Center and don't have an account or if you have an existing commercial account with Partner Center (see step **2.c** below)  use an MSA account to register with the Microsoft Edge program. Follow the steps at [Register as a Microsoft Edge extensions developer][DeveloperRegistration]. 
 
 1. If you have a developer account registered on Partner Center, use the corresponding Microsoft account (MSA) to sign in to your developer account. Then enroll in the Microsoft Edge program. The Microsoft Edge program on the Partner Center **does not support enrolling directly** with a work or school account. 
     1. **If you are already signed in to Partner Center using your work account**, you need to sign in as a Global Admin or Primary Owner. If you are not the owner, navigate to [User management][UserMGMT] to find the primary owner of the account.
