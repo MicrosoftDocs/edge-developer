@@ -26,7 +26,7 @@ The tentative date for the availability of the APIs is December 2021.
 | _operation ID_ | The ID of a REST operation. |
 | _package_ | The `.zip` package that contains the files for your Microsoft Edge Add-on. |
 | _product_ | A Microsoft Edge extension or theme.  Also referred to as a Microsoft Edge _Add-on_. |
-| _product ID_ | The product ID of the product whose draft needs to be published.  The product ID 128 bit GUID that is associated with a product at Partner Center.  For example: `d34f98f5-f9b7-42b1-bebb-98707202b21d`. |
+| _product ID_ | The product ID of the product whose draft needs to be published.  The product ID is a 128-bit GUID that is associated with a product at Partner Center.  For example: `d34f98f5-f9b7-42b1-bebb-98707202b21d`. |
 | _submission_ | An update that is being submitted to an existing product at Partner Center.  Every update to a product is a submission, regardless of whether the status is `In Draft`, `In Review`, or `In the Store` (published). |
 
 
