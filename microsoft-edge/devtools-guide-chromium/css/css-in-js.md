@@ -51,7 +51,7 @@ In the context of DevTools, _CSS-in-JS_ means that the CSS content is injected i
 
 If you use any CSS-in-JS library (such as styled-component, Emotion, or JSS), the library might inject styles using CSSOM APIs under the hood depending on the mode of development and the browser.
 
-Let's look at some examples on how you can inject a stylesheet using CSSOM API similar to what CSS-in-JS libraries are doing.
+Let's look at some examples on how you can inject a stylesheet using CSSOM API similar to how CSS-in-JS libraries work.
 
 ```javascript
 // Insert new rule to an existing CSS stylesheet
