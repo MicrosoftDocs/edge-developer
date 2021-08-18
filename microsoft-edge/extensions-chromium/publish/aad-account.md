@@ -23,8 +23,6 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
 
 
 Creating a developer accounts requires an MSA account, after which a user can link an AD tenant, thus enabling users to login with their work accounts.
-(temp note: added the above line using online VS Code, in working branch not via the temp PR branch.)
-
 
 Different programs on Partner Center require different accounts:
 *  Edge and Windows programs require a developer account.  These are the accounts where the owner is an MSA account.
@@ -32,7 +30,6 @@ Different programs on Partner Center require different accounts:
 See also these articles in the Partner Center docs:
 *  [Manage your Partner Center account](/partner-center/partner-center-account-setup)
 *  [Microsoft Partner Network membership benefits](/partner-center/mpn-overview)
-(temp note: added the above paragraph using online VS Code, in the temp PR branch, not via the working branch.  Check that the working branch ends up containing these lines.)
 
 
 <!-- ====================================================================== -->
