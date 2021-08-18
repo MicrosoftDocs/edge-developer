@@ -22,6 +22,11 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
 | _Azure Active Directory tenant_, _Azure AD tenant_ | An Azure Active Directory account. |
 
 
+Creating a developer accounts requires an MSA account, after which a user can link an AD tenant, thus enabling users to login with their work accounts.
+(temp note: added the above line using online VS Code, in working branch not via the temp PR branch.)
+
+
+
 <!-- ====================================================================== -->
 ## Step 1: Enroll in the Microsoft Edge program on Partner Center
 
