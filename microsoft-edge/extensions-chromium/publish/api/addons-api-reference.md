@@ -32,7 +32,7 @@ None.
 
 #### Request headers
 
-* Required.  `Authorization: <auth token>`
+* Required.  `Authorization: Bearer <auth token>`
 
 #### Request body
 
@@ -74,7 +74,7 @@ This API has the following expected status codes.
 
 | HTTP status code | Description |
 |---|---|
-| 200 | The request is ok |
+| 200 | The request is OK |
 | 4XX | For more details see [Error codes](#error-codes). |
 | 5XX | For more details see [Error codes](#error-codes). |
 
@@ -92,15 +92,13 @@ Uploads a package to update an existing draft submission of an add-on product.
 
 #### URI parameters
 
-You can specify the following additional parameters on the request URI:
-
 | URI parameter | Description |
 |---|---|
 | `productID` | Required.  The product ID of the product to which the package must be uploaded. |
 
 #### Request headers
 
-*  Required.  `Authorization: <auth token>`
+*  Required.  `Authorization: Bearer <auth token>`
 
 *  Required.  `Content-Type: application/zip`
 
@@ -112,7 +110,7 @@ You can specify the following additional parameters on the request URI:
 
 #### Response headers
 
-*  Location: `/products/\{productID}/submissions/draft/package/operations/\{operationID}`
+*  Location: `/products/{productID}/submissions/draft/package/operations/{operationID}`
 
 #### Status codes
 
@@ -138,15 +136,13 @@ Gets the status of the package upload.
 
 #### URI parameters
 
-You can specify the following additional parameters on the request URI:
-
 | URI parameter | Description |
 |---|---|
 | `operationID` | Required.  The operation ID of the upload request submitted in the previous step.  This information is available in the response header.
 
 #### Request headers
 
-* Required.  `Authorization: <auth token>`
+* Required.  `Authorization: Bearer <auth token>`
 
 #### Request body
 
@@ -224,7 +220,6 @@ Publishes the current draft of the product to Microsoft Edge Add-ons.
 
 #### URI parameters
 
-You can specify the following additional parameters on the request URI:
 
 | URI parameter | Description |
 |---|---|
@@ -232,7 +227,7 @@ You can specify the following additional parameters on the request URI:
 
 #### Request headers
 
-* Required.  `Authorization: <auth token>`
+* Required.  `Authorization: Bearer <auth token>`
 
 #### Request body
 
@@ -242,9 +237,7 @@ You can specify the following additional parameters on the request URI:
 
 #### Response headers
 
-When there is a valid publish request, the response returns a header:
-
-`Location: "/products/{productID}/submissions/operations/{operationID}"`
+* Location: `/products/{productID}/submissions/operations/{operationID}`
 
 #### Status codes
 
@@ -274,7 +267,7 @@ None.
 
 #### Request headers
 
-* Required.  `Authorization: <auth token>`
+* Required.  `Authorization: Bearer <auth token>`
 
 #### Request body
 
