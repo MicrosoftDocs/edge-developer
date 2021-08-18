@@ -26,7 +26,7 @@ The tentative date for the availability of the APIs is December 2021.
 | _operation ID_ | The ID of a REST operation. |
 | _package_ | The `.zip` package that contains the files for your Microsoft Edge Add-on. |
 | _product_ | A Microsoft Edge extension or theme.  Also referred to as a Microsoft Edge _Add-on_. |
-| _product ID_ | The product ID of the product whose draft needs to be published.  The product ID is a 32-character GUID that is associated with a product that is submitted to Partner Center.  For example: `d34f98f5-f9b7-42b1-bebb-98707202b21d`. |
+| _product ID_ | The product ID of the product whose draft needs to be published.  The product ID is a 128-bit GUID that is associated with a product at Partner Center.  For example: `d34f98f5-f9b7-42b1-bebb-98707202b21d`. |
 | _submission_ | An update that is being submitted to an existing product at Partner Center.  Every update to a product is a submission, regardless of whether the status is `In Draft`, `In Review`, or `In the Store` (published). |
 
 
@@ -101,7 +101,7 @@ Use this API to update the package for an add-on.  This API uploads a package to
 ```rest
 Endpoint: /v1/products/$productID/submissions/draft/package
 Type: PUT
-Header Parameters: $TOKEN: the access token; Content-Type: application/zip
+Header Parameters: Authorization: Bearer $TOKEN; Content-Type: application/zip
 Body content: the package file to upload
 ```
 
@@ -136,7 +136,7 @@ Use this API to check the status of package upload.
 ```rest
 Endpoint: /v1/products/$productID/submissions/draft/package/operations/$operationID
 Type: GET
-Header Parameters: $TOKEN: the access token
+Header Parameters: Authorization: Bearer $TOKEN
 ```
 
 ### Sample request
@@ -160,7 +160,7 @@ Use this API to publish the current draft of the product to the Microsoft Edge A
 ```rest
 Endpoint: /v1/products/$productID/submissions
 Type: POST
-Header Parameters: $TOKEN: the access token
+Header Parameters: Authorization: Bearer $TOKEN
 Body content: Notes for certification, in plain text format
 ```
 
@@ -188,7 +188,7 @@ Use this API to check the status of the publish operation.
 ```rest
 Endpoint: /v1/products/$productID/submissions/operations/$operationID
 Type: GET
-Header Parameters: $TOKEN: the access token
+Header Parameters: Authorization: Bearer $TOKEN
 ```
 
 ### Sample request
