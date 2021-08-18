@@ -26,6 +26,14 @@ Creating a developer accounts requires an MSA account, after which a user can li
 (temp note: added the above line using online VS Code, in working branch not via the temp PR branch.)
 
 
+Different programs on Partner Center require different accounts:
+*  Edge and Windows programs require a developer account.  These are the accounts where the owner is an MSA account.
+*  Azure marketplace requires a commercial account.  To enroll, the user has to login with their work account.
+See also these articles in the Partner Center docs:
+*  [Manage your Partner Center account](https://docs.microsoft.com/en-us/partner-center/partner-center-account-setup)
+*  [Microsoft Partner Network membership benefits](https://docs.microsoft.com/en-us/partner-center/mpn-overview)
+(temp note: added the above paragraph using online VS Code, in the temp PR branch, not via the working branch.  Check that the working branch ends up containing these lines.)
+
 
 <!-- ====================================================================== -->
 ## Step 1: Enroll in the Microsoft Edge program on Partner Center
