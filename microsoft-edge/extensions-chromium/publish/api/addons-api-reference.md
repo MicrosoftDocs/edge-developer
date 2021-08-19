@@ -3,12 +3,15 @@ description: The Add-ons API Reference, for REST endpoints to automate publishin
 title: Microsoft Edge Add-ons API Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2021
+ms.date: 08/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer, add-ons api, publish api
 ---
-# Microsoft Edge Add-ons API Reference
+# Microsoft Edge Add-ons API Reference (under development)
+
+> [!NOTE]
+> This article is a Request for Comments.  The Microsoft Edge Add-ons API is not yet available for testing, and the Publish APIs page is not yet available at Partner Center.  The Microsoft Edge Add-ons API is under active development and the roadmap continues to evolve based on market changes and customer feedback.  The plans outlined here are not exhaustive and are subject to change.
 
 This is the REST endpoint reference for the Microsoft Edge Add-ons API.  This API automates publishing updates to add-ons that have been submitted to the Microsoft Edge Add-ons website.
 
