@@ -327,6 +327,8 @@
           items:
             - name: API support
               href: extensions-chromium/developer-guide/api-support.md
+            - name: Declare permissions
+              href: extensions-chromium/enterprise/declare-permissions.md
             - name: Port Chromium Extension to Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
             - name: Migrate your extension from manifest v2 to v3
@@ -373,8 +375,6 @@
               href: extensions-chromium/enterprise/hosting-and-updating.md
             - name: Auto-update
               href: extensions-chromium/enterprise/auto-update.md
-            - name: Declare permissions
-              href: extensions-chromium/enterprise/declare-permissions.md
     - name: Origin Trials overview
       href: origin-trials/index.md
     - name: Privacy whitepaper
