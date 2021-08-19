@@ -1,11 +1,9 @@
-- name: Microsoft Edge documentation
+- name: Microsoft Edge documentation # todo: delete hub page from TOC per content team
   href: index.yml
   expanded: true
   items:
-    # - name: Microsoft Edge developer documentation
-    #   href: developer/index.yml
-    - name: Microsoft Edge developer documentation
-      href: index-landing.yml
+    - name: Microsoft Edge Developer documentation
+      href: developer/index.yml
     - name: Accessibility
       items:
         - name: Accessibility overview
