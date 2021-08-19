@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer, add-ons api, publish api
 ---
-# Using the Microsoft Edge Add-ons API
+# Using the Microsoft Edge Add-ons API (under development)
 
 > [!NOTE]
 > This article is a Request for Comments.  The Microsoft Edge Add-ons API is not yet available for testing, and the Publish APIs page is not yet available at Partner Center.  The Microsoft Edge Add-ons API is under active development and the roadmap continues to evolve based on market changes and customer feedback.  The plans outlined here are not exhaustive and are subject to change.
