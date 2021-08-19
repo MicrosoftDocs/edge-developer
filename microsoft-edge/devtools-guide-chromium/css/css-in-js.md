@@ -30,7 +30,11 @@ The **Styles** pane supports editing styles that were created with the [CSS Obje
 
 You can edit styles added in JavaScript using [Constructable Stylesheets][WicgConstructStylesheet].  Constructable Stylesheets are a way to create and distribute reusable styles when using [Shadow DOM][MdnShadowDom].
 
-In the following sample, the `h1` styles added with `CSSStyleSheet` are editable in the **Styles** panel.  The `CSSStyleSheet` object contains the CSSOM APIs, such as `insertRule()`.
+
+<!-- ====================================================================== -->
+## Example of editing style rules that were initially defined by a CSSOM function
+
+In this sample code, style rules are initially defined by calling a CSS Object Model (CSSOM) function, and then the style rules are edited using the **Styles** pane.  The `CSSStyleSheet` object contains the CSSOM APIs, such as `insertRule()`.  The `h1` styles that were initially added by a `CSSStyleSheet` function are then editable in the **Styles** pane.
 
 ```javascript
 //Add CSS-in-JS button
@@ -45,7 +49,7 @@ function addStyle() {
 }
 ```
 
-This sample demonstrates changing the `background` property of the `h1` styles that are added by the CSS Object Model function `insertRule()`.  The `background` is changed from `pink` to `lightblue`.
+This sample demonstrates changing the `background` property of the `h1` styles that are added by the CSS Object Model function `insertRule()`.  The `background` color is initially set by calling a CSS Object Model function, and then can be changed from `pink` to `lightblue` by using the **Styles** pane.
 
 :::image type="complex" source="../media/css-in-js.msft.png" alt-text="Changing the background property of the h1 styles added with CSSStyleSheet from pink to lightblue" lightbox="../media/css-in-js.msft.png":::
    Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.
@@ -54,19 +58,18 @@ This sample demonstrates changing the `background` property of the `h1` styles t
 Give this feature a try with a [sample that uses CSS-in-JS][CodepenZoherghadyaliAbdgrpz].
 
 
-## CSS-in-JS support in DevTools
-
-This section is from the blog post [CSS-in-JS support in DevTools][BlogCssInJsInDevTools].  Here is what we mean by _CSS-in-JS_, and how it's different from regular CSS.
-
+<!-- ====================================================================== -->
 ## What is CSS-in-JS?
 
-The definition of CSS-in-JS is somewhat vague. In a broad sense, it's an approach for managing CSS code using JavaScript. For example, it could mean that the CSS content is defined using JavaScript and the final CSS output is generated on-the-fly by the app.
+This section is an excerpt from the blog post [CSS-in-JS support in DevTools][BlogCssInJsInDevTools].
 
-In the context of DevTools, _CSS-in-JS_ means that the CSS content is injected into the page using CSS Object Model APIs.  Regular CSS is injected using `<style>` or `<link>` elements, and it has a static source (such as a DOM node or a network resource).  In contrast, CSS-in-JS often doesn't have a static source.  A special case here is that the content of a `<style>` element can be updated by using the CSS Object Model API, causing the source to become out of sync with the actual CSS stylesheet.
+Here's what we mean by _CSS-in-JS_, and how it's different from regular CSS.  The definition of _CSS-in-JS_ is somewhat vague.  In a broad sense, it's an approach for managing CSS code using JavaScript.  For example, it could mean that the CSS content is defined using JavaScript and the final CSS output is generated on-the-fly by the app.
+
+In the context of DevTools, _CSS-in-JS_ means that the CSS content is injected into the page by the CSS Object Model APIs.  Regular CSS is injected using `<style>` or `<link>` elements, and it has a static source (such as a DOM node or a network resource).  In contrast, CSS-in-JS often doesn't have a static source.  A special case here is that the content of a `<style>` element can be updated by using the CSS Object Model API, causing the source to become out of sync with the actual CSS stylesheet.
 
 If you use any CSS-in-JS library (such as styled-component, Emotion, or JSS), the library might inject styles using CSS Object Model APIs under the hood, depending on the mode of development and the browser.
 
-Let's look at some examples on how you can inject a stylesheet using the CSSOM API, similar to how CSS-in-JS libraries work.
+Let's look at some examples of how you can inject a stylesheet by using the CSS Object Model API, similar to how CSS-in-JS libraries work.
 
 ```javascript
 // Insert new rule to an existing CSS stylesheet
@@ -92,7 +95,7 @@ document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
 
 ### CSS support in DevTools
 
-In DevTools, the most commonly used feature when dealing with CSS is the **Styles** pane.  In the **Styles** pane, you can view what CSS-in-JS rules apply to a particular element.  You can also edit the CSS-in-JS rules and see the changes on the page in realtime.
+In DevTools, the most commonly used feature when dealing with CSS is the **Styles** pane.  In the **Styles** pane, you can view what CSS-in-JS rules apply to a particular element.  You can also edit the CSS-in-JS rules and see the changes on the page in real time.
 
 The **Styles** pane supports CSS rules that you can modify by using the CSS Object Model APIs.  CSS-in-JS styles are sometimes described as _constructed_, to indicate that these styles were constructed by using Web APIs.
 
