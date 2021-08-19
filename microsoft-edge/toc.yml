@@ -445,10 +445,8 @@
               href: webview2/get-started/win32.md
             - name: WinForms
               href: webview2/get-started/winforms.md
-            - name: WinUI 2 (internal Preview)
+            - name: WinUI 2
               href: webview2/get-started/winui2.md
-            - name: WinUI 2 (public Preview)
-              href: webview2/get-started/winui2-public-preview.md
             - name: WinUI 3
               href: webview2/get-started/winui.md
             - name: WPF
