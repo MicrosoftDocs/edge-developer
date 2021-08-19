@@ -69,7 +69,7 @@ In the context of DevTools, _CSS-in-JS_ means that the CSS content is injected i
 
 If you use any CSS-in-JS library (such as styled-component, Emotion, or JSS), the library might inject styles using CSS Object Model APIs under the hood, depending on the mode of development and the browser.
 
-Let's look at some examples of how you can inject a stylesheet by using the CSS Object Model API, similar to how CSS-in-JS libraries work.
+Let's look at some examples of how you can inject a stylesheet by using the CSS Object Model API, similar to the approach used by some CSS-in-JS libraries.
 
 ```javascript
 // Insert new rule to an existing CSS stylesheet
