@@ -38,6 +38,8 @@ landingContent:
         links:
           - text: Keyboard shortcuts
             url: /microsoft-edge/devtools-guide-chromium/shortcuts
+          - text: Microsoft Edge documentation hub page
+            url: ../index.yml
 
   # Card (optional)
   - title: Test & Automation
