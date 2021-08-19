@@ -3,7 +3,7 @@ description: Style editing for CSS-in-JS frameworks.
 title: Style editing for CSS-in-JS frameworks
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/06/2021
+ms.date: 08/18/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, css, css-in-js
@@ -26,11 +26,26 @@ keywords: microsoft edge, web development, f12 tools, devtools, css, css-in-js
 
 <!-- from https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#style-editing-for-css-in-js-frameworks -->
 
-The **Styles** pane supports editing styles that were created with the [CSS Object Model (CSSOM)][CsswgDraftsCssom] APIs.  Many CSS-in-JS frameworks and libraries use the CSSOM APIs under the hood to construct styles.
+The **Styles** pane supports editing styles that were created with the [CSS Object Model (CSSOM)][CsswgDraftsCssom] APIs.  Many CSS-in-JS frameworks and libraries use the CSS Object Model APIs under the hood to construct styles.
 
 You can edit styles added in JavaScript using [Constructable Stylesheets][WicgConstructStylesheet].  Constructable Stylesheets are a way to create and distribute reusable styles when using [Shadow DOM][MdnShadowDom].
 
-For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) are editable.  The styles are editable in the **Styles** panel.
+In the following sample, the `h1` styles added with `CSSStyleSheet` are editable in the **Styles** panel.  The `CSSStyleSheet` object contains the CSSOM APIs, such as `insertRule()`.
+
+```javascript
+//Add CSS-in-JS button
+
+function addStyle() {
+  const sheet = new CSSStyleSheet();
+  sheet.insertRule(`h1 {
+    background: pink;
+    text-transform: uppercase;
+  }`);
+  document.adoptedStyleSheets = [sheet];
+}
+```
+
+This sample demonstrates changing the `background` property of the `h1` styles that are added by the CSS Object Model function `insertRule()`.  The `background` is changed from `pink` to `lightblue`.
 
 :::image type="complex" source="../media/css-in-js.msft.png" alt-text="Changing the background property of the h1 styles added with CSSStyleSheet from pink to lightblue" lightbox="../media/css-in-js.msft.png":::
    Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.
@@ -39,19 +54,19 @@ For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) are edita
 Give this feature a try with a [sample that uses CSS-in-JS][CodepenZoherghadyaliAbdgrpz].
 
 
-## Blog post
+## CSS-in-JS support in DevTools
 
-This article talks about CSS-in-JS support in DevTools and, in general, what we mean by _CSS-in-JS_ and how it's different from regular CSS.
+This section is from the blog post [CSS-in-JS support in DevTools][BlogCssInJsInDevTools].  Here is what we mean by _CSS-in-JS_, and how it's different from regular CSS.
 
 ## What is CSS-in-JS?
 
 The definition of CSS-in-JS is somewhat vague. In a broad sense, it's an approach for managing CSS code using JavaScript. For example, it could mean that the CSS content is defined using JavaScript and the final CSS output is generated on-the-fly by the app.
 
-In the context of DevTools, _CSS-in-JS_ means that the CSS content is injected into the page using CSSOM APIs.  Regular CSS is injected using `<style>` or `<link>` elements, and it has a static source (such as a DOM node or a network resource).  In contrast, CSS-in-JS often doesn't have a static source.  A special case here is that the content of a `<style>` element can be updated using CSSOM API, causing the source to become out of sync with the actual CSS stylesheet.
+In the context of DevTools, _CSS-in-JS_ means that the CSS content is injected into the page using CSS Object Model APIs.  Regular CSS is injected using `<style>` or `<link>` elements, and it has a static source (such as a DOM node or a network resource).  In contrast, CSS-in-JS often doesn't have a static source.  A special case here is that the content of a `<style>` element can be updated by using the CSS Object Model API, causing the source to become out of sync with the actual CSS stylesheet.
 
-If you use any CSS-in-JS library (such as styled-component, Emotion, or JSS), the library might inject styles using CSSOM APIs under the hood depending on the mode of development and the browser.
+If you use any CSS-in-JS library (such as styled-component, Emotion, or JSS), the library might inject styles using CSS Object Model APIs under the hood, depending on the mode of development and the browser.
 
-Let's look at some examples on how you can inject a stylesheet using CSSOM API similar to how CSS-in-JS libraries work.
+Let's look at some examples on how you can inject a stylesheet using the CSSOM API, similar to how CSS-in-JS libraries work.
 
 ```javascript
 // Insert new rule to an existing CSS stylesheet
@@ -75,12 +90,12 @@ stylesheet.insertRule('.some { color: green; }');
 document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
 ```
 
-## CSS support in DevTools
+### CSS support in DevTools
 
-In DevTools, the most commonly used feature when dealing with CSS is the **Styles** pane.
-In the **Styles** pane, you can view what CSS-in-JS rules apply to a particular element.  You can also edit the rules and see the changes on the page in realtime.
+In DevTools, the most commonly used feature when dealing with CSS is the **Styles** pane.  In the **Styles** pane, you can view what CSS-in-JS rules apply to a particular element.  You can also edit the CSS-in-JS rules and see the changes on the page in realtime.
 
-You can modify CSS rules by using CSSOM APIs.  Sometimes CSS-in-JS styles are described as _constructed_, to indicate that they were constructed using Web APIs.
+The **Styles** pane supports CSS rules that you can modify by using the CSS Object Model APIs.  CSS-in-JS styles are sometimes described as _constructed_, to indicate that these styles were constructed by using Web APIs.
+
 
 <!-- video
 https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/video/dPDCek3EhZgLQPGtEG3y0fTn4v82/Jy8q9gPbQknRturLyCsq.mp4
@@ -101,6 +116,7 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 <!-- links -->
 <!-- external links -->
+[BlogCssInJsInDevTools]: https://developers.google.com/web/updates/2021/02/css-in-js "CSS-in-JS support in DevTools | Google Blog "
 [CsswgDraftsCssom]: https://drafts.csswg.org/cssom "CSS Object Model (CSSOM) | W3C CSS Working Group Editor Drafts"
 [WicgConstructStylesheet]: https://wicg.github.io/construct-stylesheets/ "Constructable Stylesheet Objects | Web Incubator CG"
 [MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "Using shadow DOM | MDN"
