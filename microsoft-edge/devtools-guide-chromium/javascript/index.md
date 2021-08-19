@@ -143,7 +143,7 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
     ```  
     
 1.  On the left, the number of this particular line of code is displayed as **34**.  Choose line **34**.  DevTools displays a red icon to the left of **34**.  The red icon indicates that a line-of-code breakpoint is on this line.  DevTools always pauses before this line of code is run.  
-1.  Choose **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\).  The script continues to run until it reaches line 33.  On lines 31, 32, and 33, DevTools prints the values of `addend1`, `addend2`, and `sum` to the right of the semi-colon on each line.  
+1.  Choose **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\).  The script continues to run until it reaches line 34.  On lines 31, 32, and 33, DevTools prints the values of `addend1`, `addend2`, and `sum` to the right of the semi-colon on each line.  
     
     :::image type="complex" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="DevTools pauses on the line-of-code breakpoint on line 34" lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
        DevTools pauses on the line-of-code breakpoint on line 34  
