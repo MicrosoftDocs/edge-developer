@@ -3,7 +3,7 @@ description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2021
+ms.date: 08/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, privacy, whitepaper, trust
@@ -390,7 +390,7 @@ Secure DNS is off by default for managed machines that are part of an organizati
 
 Microsoft Edge helps you find coupons, rebates and better prices while shopping online.  To help you find coupons or the best price while shopping online, Microsoft Edge downloads a list of shopping domains locally to the client from the Microsoft shopping service.  When you navigate a website, or save an item to your Collections, Microsoft Edge locally determines if the website you're on is a shopping domain or product detail webpage.  If the website is identified as a shopping webpage, Microsoft Edge sends the URL with personally identifiable information removed to the Microsoft shopping service.  Microsoft also sends the product price, product image, product name, ratings, and reviews, along with information about Microsoft Edge and your operating system version to the service.  The data is sent over HTTPS with a randomly generated identifier and cookies if cookies are allowed.  The Microsoft Edge shopping feature requires sharing of cookie information with Bing.  For example, the cookies may be used for debugging, fraud detection, and analytics.  The Microsoft shopping service returns prices from other retailers, historical price trends and any available coupons for that website.  
 
-When you're applying coupons, cookies are stored on your device to correctly attribute the coupon provider.  Cookies are saved by Microsoft-trusted coupon providers only after a coupon is successfully applied on the cart.  After the coupons are applied, information about the success of the coupons is sent back to the Microsoft shopping service to help understand which coupons succeeded or failed.  Data sent to the Microsoft shopping service is sent over HTTPS with a randomly generated identifier which changes per coupon lookup.  
+When you're applying coupons, cookies are stored on your device to correctly attribute the coupon provider.  Cookies are saved by Microsoft-trusted coupon providers only after a coupon is successfully applied on the cart.  After the coupons are applied, information about the success of the coupons is sent back to the Microsoft shopping service to help understand which coupons succeeded or failed.  Data sent to the Microsoft shopping service is sent over HTTPS with a randomly generated identifier which changes per coupon lookup. Edge partners with Bing Shopping to provide a coupons experience where coupons relevant to the user’s query are displayed. In some instances, Microsoft may receive revenue for use of the coupons, although whether a revenue share payment may be received is not factored into the ranking of coupons shown to users. 
 
 :::image type="complex" source="./media/shopping.png" alt-text="Shopping and coupons" lightbox="./media/shopping.png":::
    Shopping and coupons  
@@ -403,7 +403,7 @@ The shopping service is turned on by default for all users.  To change the shopp
 1.  Navigate to `edge://settings/privacy`.  
 1.  Turn off the **Save time and money with Shopping in Microsoft Edge** setting.  
     
-InPrivate browsing uses the shopping setting of the profile that launched the InPrivate session.  
+InPrivate browsing uses the shopping setting of the profile that launched the InPrivate session. 
 
 ## Sign in and Identity  
 
@@ -489,7 +489,14 @@ You may turn off list updates using the following group policy, [Enable componen
 
 ## Translate  
 
-In Microsoft Edge, you may browse the web and translate webpages into a language of your choice.  The built-in translation feature uses a service on your device that samples random portions of a webpage to detect the original language.  If the detected language is not one of your default languages, Microsoft Edge offers to translate the webpage to your displayed language or another language you choose.  Microsoft Edge does not translate a webpage without your permission.  To translate a webpage, open the contextual menu \(right-click\), and choose **Translate**.  To translate the webpage, Microsoft Edge sends the content of the page and a randomly generated token to the Microsoft Azure translation service over a secure HTTPS connection.  The content of the page is not stored for any purpose.  To stop Microsoft Edge from offering to translate webpages, navigate to `edge://settings/languages` and turn off the **Offer to translate pages that are not in a language you read** setting.  
+In Microsoft Edge, you can browse the web and translate webpages into a language of your choice. Microsoft Edge uses [Microsoft Translator][MicrosoftSpeechTranslator] to translate web pages. This feature at first uses a library on your device that samples certain visible portions of a webpage to detect the original language. If the detected language is not one of your preferred languages, Microsoft Edge offers to translate the webpage to your preferred language or another language you choose. You can then translate the page by selecting **Translate**. You can auto-translate all pages in that language by choosing the **Always translate the pages from \<a language\>** checkbox.
+
+Microsoft Edge does not translate a webpage without your permission. If you do decide to translate, Microsoft Edge sends the text of the webpage you want to translate, along with the *to* and *from* language and a service token to Microsoft Translator over a secure HTTPS connection. The service token doesn’t contain any user identifiable information. [Microsoft Translator][MicrosoftSpeechTranslator] then processes the text to remove any identifiers (such as email or phone number) and stores the text for service improvement purposes. The details of this communication are covered under [Microsoft Privacy Statement – Microsoft privacy][MicrosoftPrivacyStatement].
+
+If you want to stop Microsoft Edge from offering to translate webpages, complete the following steps.
+
+1. Navigate to `edge://settings/languages`.
+1. Turn off the **Offer to translate pages that are not in a language you read** toggle and close the webpage.
 
 ## Web apps and Pinned sites  
 
@@ -578,3 +585,7 @@ User feedback is securely sent to Microsoft using HTTPS and stored on secure Mic
 [W3cGeolocationApiMain]: https://w3.org/TR/geolocation-api "Geolocation API Specification 2nd Edition | W3C"  
 
 [TwitterMsedgedev]: https://www.twitter.com/MSEdgeDev "Microsoft Edge Dev | Twitter"  
+
+[MicrosoftPrivacyStatement]: https://privacy.microsoft.com/privacystatement "Microsoft Privacy Statement – Microsoft privacy"
+
+[MicrosoftSpeechTranslator]: https://azure.microsoft.com/services/cognitive-services/speech-translation/ "Speech Translation | Microsoft Azure"
