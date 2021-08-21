@@ -45,8 +45,8 @@ First, update your `popup.html` file with some straight forward markup that disp
         </style>
     </head>
     <body>
-        <h1>Show the NASA picture of the day</h1>
-        <h2>(select the image to remove)</h2>
+        <h1>Show the NASA Picture of the day</h1>
+        <h2>(click on the image to remove)</h2>
         <button id="sendmessageid">Display</button>
         <script src="popup.js"></script>
     </body>
