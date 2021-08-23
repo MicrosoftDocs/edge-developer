@@ -350,7 +350,7 @@ If your page depends on the user agent string from a mobile device to render pro
    :::column-end:::
 :::row-end:::  
 
-Next to **User agent**, clear the **Select automatically** checkbox.  Then, choose **Custom...** to select from a list of predefined user agent strings.  To enter your own user agent string, enter the string in **Enter a custom user agent**.  
+Next to **User agent**, clear the **Use browser default** checkbox.  Then, choose **Custom...** to select from a list of predefined user agent strings.  To enter your own user agent string, enter the string in **Enter a custom user agent**.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Set the user agent string to Microsoft Edge on macOS" lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
     Set the user agent string to Microsoft Edge on macOS  
