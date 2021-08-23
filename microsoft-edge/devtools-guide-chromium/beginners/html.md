@@ -3,7 +3,7 @@ description: Get Started with HTML and the DOM
 title: "DevTools for beginners: Get started with HTML and the DOM"
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/01/2021
+ms.date: 08/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, devtools for beginners, devtools HTML for beginners, devtools DOM for beginners, devtools html tutorial, devtools DOM tutorial, devtools document object model tutorial
@@ -23,13 +23,13 @@ keywords: microsoft edge, web development, f12 tools, devtools, devtools for beg
    limitations under the License.  -->
 # DevTools for beginners: Get started with HTML and the DOM  
 
-This is the first in a series of tutorials that teach you the basics of web development. Learn about a set of web developer tools, named Microsoft Edge DevTools, that may increase your productivity.  
+This is the first in a series of tutorials that teach you the basics of web development. Learn about a set of web developer tools, named Microsoft Edge DevTools, that will increase your productivity.  
 
 This tutorial describes HTML and the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \(DOM\). HTML is one of the core technologies of web development. It is the language that controls the structure and content of webpages. The DOM is also related to the structure and content of webpages, which we learn more about later.
 
 ## Goals  
 
-You're going to learn web development by building a website.  By the time you complete all of the tutorials in the **DevTools for Beginners** series, your finished site may look like the following figure.  
+You're going to learn web development by building a website.  By the time you complete all of the tutorials in the **DevTools for Beginners** series, your finished site will look like the following figure.  
 
 :::image type="complex" source="media/beginners-html-finished.msft.png" alt-text="The finished site" lightbox="media/beginners-html-finished.msft.png":::
    The finished site  
@@ -38,10 +38,10 @@ You're going to learn web development by building a website.  By the time you co
 By the end of this tutorial, you should understand the following concepts.  
 
 *   How HTML and the DOM create the content displayed on webpages.  
-*   How Microsoft Edge DevTools may help you experiment with HTML and DOM changes.  
+*   How Microsoft Edge DevTools can help you experiment with HTML and DOM changes.  
 *   The difference between HTML and the DOM.  
 
-You will also have a working website. You may use the site to host your resume or blog.  
+You will also have a working website. You can use the site to host your resume or blog.  
 
 ## Prerequisites  
 
@@ -60,21 +60,21 @@ You are going to build a site in the Glitch online code editor.
        The editor tab  
     :::image-end:::  
     
-1.  Choose **alluring-shock**. The **Project Options** menu opens.  
+1.  Select **alluring-shock**. The **Project Options** menu opens.  
     
     :::image type="complex" source="media/beginners-html-setup2.msft.png" alt-text="The Project Options menu" lightbox="media/beginners-html-setup2.msft.png":::
        The Project Options menu  
     :::image-end:::  
     
-1.  Choose **Remix Project**. Glitch creates a copy of the project that you may edit and randomly generates a new name for the project. The content is the same as before.  
+1.  Select **Remix Project**. Glitch creates a copy of the project that you can edit and randomly generates a new name for the project. The content is the same as before.  
     
     :::image type="complex" source="media/beginners-html-setup3.msft.png" alt-text="The remixed project" lightbox="media/beginners-html-setup3.msft.png":::
        The remixed project  
     :::image-end:::  
     
-1.  If you plan to complete the next tutorial in this series, choose **Sign In** to Glitch using your Facebook, GitHub, or Google account; or email yourself a magic link. If you choose not to sign in to an account, you cannot edit the project after closing the editor tab.
+1.  If you plan to complete the next tutorial in this series, select **Sign In** to Glitch using your Facebook, GitHub, or Google account; or email yourself a magic link. If you choose not to sign in to an account, you cannot edit the project after closing the editor tab.
 
-1.  Choose **Show** \> **In a New Window**.  A new tab opens, showing the live page. This tab is called the **live tab** throughout this tutorial.  
+1.  Select **Show** > **In a New Window**.  A new tab opens, showing the live page. This tab is called the **live tab** throughout this tutorial.  
     
     :::image type="complex" source="media/beginners-html-setup4.msft.png" alt-text="The live tab" lightbox="media/beginners-html-setup4.msft.png":::
        The live tab  
@@ -173,7 +173,7 @@ Before editing content from Microsoft Edge DevTools, let's understand the differ
         :::image-end:::
     -->
 
-1. Open the **live tab**, hover over `A new element!?!`, open the contextual menu (right-click) and then choose **Inspect**.  
+1. Open the **live tab**, hover over `A new element!?!`, open the contextual menu (right-click) and then select **Inspect**.  
     
     :::image type="complex" source="media/beginners-html-dom3.msft.png" alt-text="Inspecting some text" lightbox="media/beginners-html-dom3.msft.png":::
        Inspecting some text  
@@ -185,17 +185,17 @@ Before editing content from Microsoft Edge DevTools, let's understand the differ
        DevTools is open alongside the page  
     :::image-end:::  
     
-When your page loads, the browser uses the HTML to create the initial content of the page. The DOM represents the current content of the page, which may change over time. 
+When your page loads, the browser uses the HTML to create the initial content of the page. The DOM represents the current content of the page, which can change over time. 
 
 The `<div>A new element!?!</div>` content is added to your page because of the `<script src="new.js"></script>` tag at the bottom of your HTML. This tag causes some JavaScript code to run. Learn more about JavaScript in a [later tutorial](../javascript/index.md).
 
-For now, think of it as a scripting language that may change the content of your page. In this case, JavaScript code adds `<div>A new element!?!</div>` to your page. That is why this text is displayed in the **live** tab, but not in the HTML.  
+For now, think of it as a scripting language that can change the content of your page. In this case, JavaScript code adds `<div>A new element!?!</div>` to your page. That is why this text is displayed in the **live** tab, but not in the HTML.  
 
 ### Edit the DOM  
 
 If you want to quickly experiment with content changes without ever leaving the live tab, try DevTools.  
 
-1.  In DevTools, hover over `Your site!`, open the contextual menu (right-click) and choose **Edit as HTML**.  
+1.  In DevTools, hover over `Your site!`, open the contextual menu (right-click) and select **Edit as HTML**.  
     
 1.  Replace `<p>Your site!</p>` with the following code.  
 
@@ -222,7 +222,7 @@ This workflow is only suitable for experimenting with content changes. If you re
 
 ## Reorder nodes
 
-You may also change the order of DOM nodes. For example, on your web page the navigation menu is near the bottom. To move it to the top, perform the following steps.  
+You can also change the order of DOM nodes. For example, on your web page the navigation menu is near the bottom. To move it to the top, perform the following steps.  
 
 1.  Find the `<nav>` node in the **DOM Tree** of DevTools.  
     
@@ -238,9 +238,9 @@ You may also change the order of DOM nodes. For example, on your web page the na
     
 ### Delete a node
 
-You may also remove nodes from the DOM Tree. Perform the following steps.
+You can also remove nodes from the DOM Tree. Perform the following steps.
 
-1.  In the **DOM Tree**, choose `<div>A new element!?!</div>`. DevTools highlights the node. 
+1.  In the **DOM Tree**, select `<div>A new element!?!</div>`. DevTools highlights the node. 
     
 1.  Select the `Delete` key on your keyboard.  The `<div>A new element!?!</div>` node is removed from the DOM Tree.  
     
