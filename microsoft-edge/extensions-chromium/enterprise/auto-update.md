@@ -56,13 +56,13 @@ If you host your own extension or app, you must add the `update_url` field to yo
 }
 ```  
 
-## Updated manifest  
+## Update manifest  
 
 The updated manifest returned by the server should be an XML document.  Review the following code snippet for an example of the updated manifest XML file.  
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
-<gupdate xmlns='http://www.microsoft.com/update2/response' protocol='2.0'>
+<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
   <app appid='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'>
     <updatecheck codebase='http://contoso.com/mytestextension/mte_v2.crx' version='2.0' />
   </app>

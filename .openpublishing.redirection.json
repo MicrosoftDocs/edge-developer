@@ -971,6 +971,16 @@
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/console/console-log",
         "redirect_document_id": false
       },
+      {
+        "source_path": "microsoft-edge/devtools-guide-chromium/storage/applicationcache.md",   
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/devtools-guide-chromium/customize/dark-theme.md",   
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/customize/theme",
+        "redirect_document_id": false
+      },
       /* redirect to extensions */
       {
         "source_path": "microsoft-edge/extensions-chromium/publish/contact-us.md",
@@ -997,6 +1007,12 @@
       {
         "source_path": "microsoft-edge/visual-studio-code/elements-for-edge.md",
         "redirect_url": "/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension",
+        "redirect_document_id": false
+      },
+      /* redirect to web platform */
+      {
+        "source_path": "microsoft-edge/web-platform/user-agent-string.md",
+        "redirect_url": "/microsoft-edge/web-platform/user-agent-guidance",
         "redirect_document_id": false
       },
       /* redirect to archive legacy content (edgehtml) */

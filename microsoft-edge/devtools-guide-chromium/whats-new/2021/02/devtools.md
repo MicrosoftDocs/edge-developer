@@ -64,7 +64,7 @@ You may now customize the keyboard shortcut for any action in the DevTools.  To 
 1.  Select the keys you want to bind to the action.  
 1.  Choose the checkmark \(![Checkmark Keyboard Shortcut icon](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)\) icon.  
     
-For more information about customizing and editing shortcuts, navigate to [Customize keyboard shortcuts in the Microsoft Edge DevTools][DevtoolsCustomizeShortcuts].  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [174309][CR174309].  
+For more information about customizing and editing shortcuts, navigate to [Customize keyboard shortcuts in DevTools][DevtoolsCustomizeShortcuts].  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [174309][CR174309].  
 
 :::image type="complex" source="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png" alt-text="Customize keyboard shortcuts in the DevTools Settings on Shortcuts with a shortcut in edit mode" lightbox="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png":::
    Customize keyboard shortcuts in the [DevTools Settings][DevtoolsCustomizeIndexSettings] on Shortcuts with a shortcut in edit mode  
@@ -269,7 +269,7 @@ Previously, the `fn.displayName` property allowed you to control debug names for
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
-This experiment provides a **full accessibility tree view** in the **Elements** tool.  The [Accessibility][DevtoolsAccessibilityReferenceAccessibilityPanel] pane provides a partial accessibility tree view, that displays the direct ancestor chain from the root node to the inspected node.  
+This experiment provides a **full accessibility tree view** in the **Elements** tool.  The [Accessibility][DevtoolsAccessibilityTab] pane provides a partial accessibility tree view, that displays the direct ancestor chain from the root node to the inspected node.  
 After you turn on this experiment and reload the DevTools, choose one of the following buttons to switch the display in the Elements tool for all elements on the webpage.  
 
 *   To display the full accessibility tree view , choose the **Switch to Accessibility Tree view**.  
@@ -279,8 +279,8 @@ To turn on the experiment, navigate to [Turn on experimental features][DevtoolsE
 
 :::row:::
    :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="Display the DOM tree view" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
-         Display the **DOM view**  
+      :::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="Display the DOM Tree view" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
+         Display the **DOM Tree view**  
       :::image-end:::  
    :::column-end:::
    :::column span="":::
@@ -300,13 +300,13 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 <!-- links -->  
 
-[DevtoolsAccessibilityReferenceAccessibilityPanel]: ../../../accessibility/reference.md#the-accessibility-panel "The Accessibility panel - Accessibility reference | Microsoft Docs"  
+[DevtoolsAccessibilityTab]: ../../../accessibility/accessibility-tab.md "Test accessibility using the Accessibility tab | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsConsoleReferenceFilterByLogLevel]: ../../../console/reference.md#filter-by-log-level "Filter by log level - Console reference | Microsoft Docs"  
 [DevtoolsConsoleReferenceFilterMessages]: ../../../console/reference.md#filter-messages "Filter messages - Console Reference | Microsoft Docs"  
 [DevtoolsConsoleReferenceOpenConsoleSidebar]: ../../../console/reference.md#open-the-console-sidebar "Open the Console Sidebar - Console reference | Microsoft Docs"  
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Customize keyboard shortcuts in the Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Customize keyboard shortcuts in DevTools | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: ../../../experimental-features/index.md#enable--button-tab-menus-to-open-more-tools "Enable + button tab menus to open more tools - Experimental features | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../../../experimental-features/index.md#turn-on-experimental-features "Turn on experimental features - Experimental features | Microsoft Docs"  
 [DevtoolsNetworkReferenceAddRemoveColumns]: ../../../network/reference.md#add-or-remove-columns "Add or remove columns - Network Analysis reference | Microsoft Docs"  

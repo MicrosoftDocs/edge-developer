@@ -17,10 +17,7 @@ In this article, get started creating your first WebView2 app and learn about th
 
 Ensure you install the following list of pre-requisites before proceeding.  
 
-*   [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).  
-    
-    > [!NOTE]
-    > The WebView team recommends using the Canary channel and the minimum required version is 82.0.488.0.  
+*   [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] (Beta, Dev, or Canary) installed on a supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).  
     
 *   [Visual Studio][MicrosoftVisualstudioMain] 2015 or later with C++ support installed.  
     
@@ -180,7 +177,7 @@ For more information, navigate to [Navigation events][Webview2ConceptsNavigation
    Navigation events  
 :::image-end:::    
 
-In error cases, one or more of the following events may occur depending on whether the navigation is continued to an error webpage.  
+In error cases, one or more of the following events may occur depending on whether the navigation continued to an error webpage.  
 
 *   `SourceChanged`  
 *   `ContentLoading`  
@@ -284,6 +281,7 @@ Congratulations, you built your first WebView2 app.
 
 For additional WebView2 functionality that isn't covered in this article, review the following resources.  
 
+*   To get the code used in this tutorial, navigate to the [MicrosoftEdge/WebView2Samples repo][Win32GithubCode].
 *   To learn more about building WebView2 applications, navigate to [WebView2 development best practices][WV2BestPractices].  
 *   For a comprehensive example of WebView2 capabilities, navigate to [WebView2 API Sample][GithubMicrosoftedgeWebview2samplesApisample].  
 *   For a sample app built using WebView2, navigate to [WebView2Browser][GithubMicrosoftedgeWebview2browser].  
@@ -320,3 +318,5 @@ For additional WebView2 functionality that isn't covered in this article, review
 [MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"  
 
 [Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 Installer"  
+
+[Win32GithubCode]:https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted "Win32 WebView2 Getting Started Guide code"

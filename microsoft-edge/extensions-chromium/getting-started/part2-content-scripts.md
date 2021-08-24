@@ -20,7 +20,7 @@ This tutorial covers the following extension technologies.
 *   Including content pages in existing browser tabs  
 *   Having content pages listen for messages from pop-ups and respond  
 
-You'll learn to update your pop-up menu to replace your static starts image with a title and a standard HTML button.  That button, when selected, passes that stars image, which is embedded in the extension, to the content page.  That image, is inserted into the active browser tab. Follow the below steps for further details.
+You'll learn to update your pop-up menu to replace your static stars image with a title and a standard HTML button.  That button, when selected, passes that stars image, which is embedded in the extension, to the content page.  That image, is inserted into the active browser tab. Follow the below steps for further details.
 
 1.  Remove the image from the pop-up and replace it with a button  
 

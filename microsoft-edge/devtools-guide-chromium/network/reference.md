@@ -3,7 +3,7 @@ description: A comprehensive reference of Microsoft Edge DevTools Network panel 
 title: Network Analysis reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -62,6 +62,10 @@ Capture screenshots to analyze what displays for users while waiting for your pa
 
 To enable screenshots, choose **Network settings**, and on the **Network** tool, turn on the **Capture screenshots** checkbox.  
 
+:::image type="complex" source="../media/network-network-screenshot-box.msft.png" alt-text="Enable Capture screenshots" lightbox="../media/network-network-screenshot-box.msft.png":::
+   Enable **Capture screenshots**  
+:::image-end:::  
+
 Refresh the page while the **Network** tool is in focus to capture screenshots.  
 
 After capturing a screenshot, you interact with it in the following ways.  
@@ -117,7 +121,7 @@ A new class of web apps, named [Progressive Web Apps][DevtoolsProgressiveWebApps
 
 <!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
 
-Choose the **Online** dropdown menu, search under **Presets**, and choose **Offline** to simulate an offline network experience.  
+Choose the **No throttling** dropdown menu, search under **Presets**, and choose **Offline** to simulate an offline network experience.  
 
 :::image type="complex" source="../media/network-network-offline-dropdown.msft.png" alt-text="The Offline dropdown menu" lightbox="../media/network-network-offline-dropdown.msft.png":::
    The **Offline** dropdown menu  
@@ -125,7 +129,7 @@ Choose the **Online** dropdown menu, search under **Presets**, and choose **Offl
 
 ### Emulate slow network connections  
 
-Emulate Slow 3G, Fast 3G, and other connection speeds from the **Online** dropdown menu.  
+Emulate Slow 3G, Fast 3G, and other connection speeds from the **No throttling** dropdown menu.  
 
 :::image type="complex" source="../media/network-network-throttling-menu.msft.png" alt-text="The Throttling dropdown menu" lightbox="../media/network-network-throttling-menu.msft.png":::
    The **Throttling** dropdown menu  
@@ -157,10 +161,36 @@ To manually clear browser cookies at any time, hover anywhere in the Requests ta
 To manually override the user agent, use the following steps.  
 
 1.  Open the **Network Conditions** drawer.  
-1.  Turn off the **Select automatically** checkbox.  
-1.  Choose a user agent option from the menu, or enter a custom one in the text box.  
+1.  Clear the **Select automatically** checkbox.  
+1.  Choose a user agent option from the menu, or enter a custom user agent in the text box.  
 
-<!--todo: add network condition section when available -->  
+## Set user agent client hints
+
+If your site employs [user agent client hints](../../web-platform/user-agent-guidance.md), use the **Network conditions** panel to provide different user agent client hints.
+
+1. Open the **contextual menu** (right-click), and choose **Inspect**.
+1. Choose **Network** > **Network conditions**.
+1. In the User agent panel clear the **Use browser default** checkbox, then choose **User agent client hints**.
+
+    :::image type="complex" source="images/network-conditions-user-agent-client-hints.msft.png" alt-text="Set user agent client hints" lightbox="images/network-conditions-user-agent-client-hints.msft.png":::
+        Set user agent client hints  
+    :::image-end::: 
+
+1. Accept the default value of **Custom...** or choose a pre-defined browser and device from the drop-down list.
+1. For either choice, set User agent client hints as follows.
+    * **Brand** and **Version** such as *Edge* and *92*. Choose **+ Add Brand** to add multiple brand and version pairs.
+    * **Full Browser Version** such as *92.0.1111.0*.
+    * **Platform** and **Version** such as *Windows* and *10.0*.
+    * **Architecture** such as *x86*.
+    * **Device model** such as *Galaxy Nexus*.
+
+    > [!NOTE]
+    > Set or change any of the user agent client hints. There are no required values.
+
+1. Select **Update**. 
+1. To verify changes, choose **Console** and type `navigator.userAgentData`. Expand the results as needed to view changes to user agent data.
+
+You may also set user agent client hints in [Emulate mobile devices in Microsoft Edge](../device-mode/index.md).  
 
 ## Filter requests  
 
@@ -372,7 +402,7 @@ Use the Network panel to analyze requests.
 
 ### Display a log of requests  
 
-Use the Requests table to display a log of all requests made while DevTools have been open.  To reveals more information about each item, choose or hover on requests.  
+Use the Requests table to display a log of all requests made while DevTools have been open.  To reveal more information about each item, choose or hover on requests.  
 
 :::image type="complex" source="../media/network-network-requests-table.msft.png" alt-text="The Requests table" lightbox="../media/network-network-requests-table.msft.png":::
    The Requests table  
@@ -527,7 +557,7 @@ To display the response body to a request, use the following steps.
 To display HTTP header data about a request, use the following steps.  
 
 1.  Choose the URL of the request, under the **Name** column of the Requests table.  
-1.  Choose the **Headers** psanel.  
+1.  Choose the **Headers** panel.  
 
 :::image type="complex" source="../media/network-resources-headers.msft.png" alt-text="The Headers panel" lightbox="../media/network-resources-headers.msft.png":::
    The **Headers** panel  
@@ -535,7 +565,7 @@ To display HTTP header data about a request, use the following steps.
 
 #### Display HTTP header source  
 
-By default, the **Headers** panel shows header names alphabetically.  To dsiplay the HTTP header names in the order received, use the following steps.  
+By default, the **Headers** panel shows header names alphabetically.  To display the HTTP header names in the order received, use the following steps.  
 
 1.  Open the **Headers** panel for the request that interests you.  For more information, navigate to [Display HTTP headers](#display-http-headers).  
 1.  Choose **view source**, next to the **Request Header** or **Response Header** section.  
@@ -932,14 +962,10 @@ Choose **Filter** \(![Filter](../media/filter-icon.msft.png)\) to hide it.
 
 Use large rows when you want more whitespace in your network requests table.  Some columns also provide a little more information when using large rows.  For example, the bottom value of the **Size** column is the uncompressed size of a request.  
 
-:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="An example of large request rows in the Requests pane" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
-   An example of large request rows in the **Requests** pane  
-:::image-end:::  
-
 To enable large rows, turn on the **Use large request rows** checkbox.  
 
-:::image type="complex" source="../media/network-network-requests-use-large-request-rows-on.msft.png" alt-text="The Use large request rows checkbox" lightbox="../media/network-network-requests-use-large-request-rows-on.msft.png":::
-   The **Use large request rows** checkbox  
+:::image type="complex" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="An example of large request rows in the Requests pane" lightbox="../media/network-network-requests-large-request-rows.msft.png":::
+   An example of large request rows in the **Requests** pane  
 :::image-end:::  
 
 ### Hide the Overview pane  

@@ -11,6 +11,7 @@ metadata:
   ms.author: msedgedevrel
   ms.date: 04/06/2021
   ms.localizationpriority: high
+  ms.prod: microsoft-edge
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -191,6 +192,8 @@ additionalContent:
               url: /microsoft-edge/extensions-chromium/publish/publish-extension
             - text: Open developer account
               url: /microsoft-edge/extensions-chromium/publish/create-dev-account
+            - text: Add and manage users
+              url: /microsoft-edge/extensions-chromium/publish/aad-account.md
             - text: Update Extension Listing
               url: /microsoft-edge/extensions-chromium/publish/update
             - text: Manage account settings
@@ -255,8 +258,8 @@ additionalContent:
         # Card
         - title: Reference
           links:
-            - text: Microsoft Edge user agent string
-              url: /microsoft-edge/web-platform/user-agent-string
+            - text: How to detect Microsoft Edge in your website
+              url: /microsoft-edge/web-platform/user-agent-guidance
             - text: Platform Status
               url: https://developer.microsoft.com/microsoft-edge/platform/status
             - text: Visual Studio Code

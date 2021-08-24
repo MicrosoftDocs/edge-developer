@@ -15,17 +15,14 @@ In this article, get started creating your first WebView2 app and learn about th
 
 ## Prerequisites  
 
-Ensure you install the following list of pre-requisites before proceeding.  
+Install the following list of prerequisites before proceeding.
 
-*   [WebView2 Runtime][MicrosoftDeveloperMicrosoftEdgeWebview2] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).  
+*   [WebView2 Runtime][MicrosoftDeveloperMicrosoftEdgeWebview2] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] (Beta, Dev, or Canary) installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).  
     
     > [!NOTE]
     > The WebView team recommends using the Canary channel and the minimum required version is 82.0.488.0.  
     
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 or later.  
-    
-> [!NOTE]
-> WebView2 currently does not support the .NET 5 and .NET Core designers.  
 
 ## Step 1 - Create a single-window app
 
