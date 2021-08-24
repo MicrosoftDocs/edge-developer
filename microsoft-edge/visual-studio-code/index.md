@@ -3,60 +3,53 @@ description: Microsoft Edge (Chromium) and Visual Studio Code
 title: Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/26/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger, webhint
 ---
-# Visual Studio Code overview  
+# Visual Studio Code overview
 
-[Visual Studio Code][VisualStudioCodeDocs] is a lightweight but powerful source code editor.  [Visual Studio Code][VisualStudioCodeDocs] is available for Windows, Linux, and macOS.  It includes built-in support for JavaScript, TypeScript, and Node.js, so it is a great tool for web developers before you customize it.  If you are not using it yet, download [Visual Studio Code][VisualstudioCode].  
+[Visual Studio Code][VisualStudioCodeDocs] is a lightweight but powerful source code editor.  Visual Studio Code is available for Windows, Linux, and macOS.  It includes built-in support for JavaScript, TypeScript, and Node.js, so it is a great tool for web developers before you customize it.  If you are not using it yet, [download Visual Studio Code][VisualstudioCode].
 
-## Extensions  
 
-<!--todo:  Put something like the tiles for extensions Visual Studio Code uses on the https://code.visualstudio.com/Docs#top-extensions page, but I do not think it is a markdown page.  I think it is a web page.  I could not find anything in https://github.com/Microsoft/vscode-docs that looks like the page.  -->  
-
-To acquire any of the extensions highlighted below, navigate to **Extensions** \(select `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS\) in Visual Studio Code.  
-
-Search the Marketplace for the extension, select the extension, and then select **Install**.  
-
-:::image type="complex" source="./media/vscode-edge-tools-install.png" alt-text="Install the Microsoft Edge Tools for Visual Studio Code extension" lightbox="./media/vscode-edge-tools-install.png":::
-   Install the **Microsoft Edge Tools** Visual Studio Code extension  
-:::image-end:::  
-
-:::row:::
-   :::column span="1":::
-      :::image type="complex" source="./media/visual-studio-code-extension-microsoft-edge-tools-for-visual-studio-code.msft.png" alt-text="Microsoft Edge Tools for Visual Studio Code Visual Studio Code extension" lightbox="./media/visual-studio-code-extension-microsoft-edge-tools-for-visual-studio-code.msft.png":::
-         **Microsoft Edge Tools for Visual Studio Code** Visual Studio Code extension  
-      :::image-end:::  
-      [Microsoft Edge Tools for Visual Studio Code](#microsoft-edge-tools-for-visual-studio-code)  
-   :::column-end:::
-   :::column span="1":::
-      :::image type="complex" source="./media/visual-studio-code-extension-webhint.msft.png" alt-text="webhint Visual Studio Code extension" lightbox="./media/visual-studio-code-extension-webhint.msft.png":::
-         **webhint** Visual Studio Code extension  
-      :::image-end:::  
-      [webhint](#webhint)  
-   :::column-end:::
-:::row-end:::  
-
+<!-- ====================================================================== -->
 ## Microsoft Edge Tools for Visual Studio Code
 
-With the [Microsoft Edge Tools for Visual Studio Code][VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode] Visual Studio Code extension, use the **Elements** tool of the Microsoft Edge browser within Visual Studio Code.  Use it for the following actions.  
+With the **Microsoft Edge Tools for Visual Studio Code** extension for Visual Studio Code, you can use the **Elements** tool of the Microsoft Edge browser within Visual Studio Code.  Use the Elements tool to:
+*   Attach to an instance or launch an instance of Microsoft Edge.
+*   Display the runtime HTML structure.
+*   Update the layout.
+*   Fix styling issues.
 
-*   Attach to an instance or launch an instance of Microsoft Edge.  
-*   Display the runtime HTML structure.  
-*   Update the layout.  
-*   Fix styling issues.  
-    
-For more information, navigate to [Microsoft Edge Tools for Visual Studio Code Visual Studio Code extension][VisualStudioCodeMicrosoftEdgeDevtoolsExtension].  <!--  Choose the following image to see the extension in action.  -->  
-      
-:::image type="complex" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="Screenshot of Microsoft Edge Tools for Visual Studio Code Visual Studio Code extension" lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::
-   Screenshot of **Microsoft Edge Tools for Visual Studio Code** Visual Studio Code extension  
-:::image-end:::  
+<!-- differentiate: -->
+:::image type="complex" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="The 'Microsoft Edge Tools for Visual Studio Code' extension for Visual Studio Code" lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::
+   The **Microsoft Edge Tools for Visual Studio Code** extension for Visual Studio Code
+:::image-end:::
 
-## webhint  
-      
-Use [webhint][WebhintMain], a customizable linting tool, to improve the following functionality of your site.  
+:::image type="complex" source="./media/visual-studio-code-extension-microsoft-edge-tools-for-visual-studio-code.msft.png" alt-text="The 'Microsoft Edge Tools for Visual Studio Code' extension for Visual Studio Code" lightbox="./media/visual-studio-code-extension-microsoft-edge-tools-for-visual-studio-code.msft.png":::
+   The **Microsoft Edge Tools for Visual Studio Code** extension for Visual Studio Code
+:::image-end:::
+
+<!-- todo: replace keyboard shortcuts by GUI steps -->
+To install this extension:
+1. In Visual Studio Code, navigate to **Extensions** \(select `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS\).
+1. Search the Marketplace for the extension, select the extension, and then select **Install**.
+
+:::image type="complex" source="./media/vscode-edge-tools-install.png" alt-text="Install the Microsoft Edge Tools for Visual Studio Code extension" lightbox="./media/vscode-edge-tools-install.png":::
+   Install the **Microsoft Edge Tools** Visual Studio Code extension
+:::image-end:::
+
+### See also
+
+*  [Microsoft Edge Tools for Visual Studio Code Visual Studio Code extension][VisualStudioCodeMicrosoftEdgeDevtoolsExtension] - Using the extension.
+*  [Microsoft Edge Tools for Visual Studio Code][VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode] - Information about the extension, in the Visual Studio Marketplace.
+
+
+<!-- ====================================================================== -->
+## webhint
+
+Use [webhint][WebhintMain], a customizable linting tool, to improve the following functionality of your site.
 
 *   Accessibility
 *   Performance
@@ -64,29 +57,41 @@ Use [webhint][WebhintMain], a customizable linting tool, to improve the followin
 *   PWA compatibility
 *   Security
 
-Webhint checks your code for coding practices and common errors. The webhint open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation][OpenjsFoundation].  The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.  <!--  Choose the following image to see the extension in action.  -->  
-      
-:::image type="complex" source="./media/webhint-extension.png" alt-text="Screenshot of webhint Visual Studio Code extension" lightbox="./media/webhint-extension.png":::
-   Screenshot of **webhint** Visual Studio Code extension  
-:::image-end:::  
-      
-Identify and fix problems in your website by adding the [webhint extension for Visual Studio Code][VisualstudioMarketplaceWebhint].  Hints examine HTML, CSS, JavaScript, TypeScript, and more.  Hints appear as wavy underlines in the text editor, and are summarized in the **Problems** pane.  
-      
-For more information, navigate to [How to use webhint in Visual Studio Code][VisualStudioCodeWebhint].  
+The webhint tool checks your code for coding practices and common errors.  The webhint open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation][OpenjsFoundation].  The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.
 
-<!--links -->  
- 
-[VisualStudioCodeMicrosoftEdgeDevtoolsExtension]: ./microsoft-edge-devtools-extension.md "Microsoft Edge DevTools for Visual Studio Code extension | Microsoft Docs"  
-[VisualStudioCodeWebhint]: ./webhint.md "Webhint Visual Studio Code Extension | Microsoft Docs"  
+Identify and fix problems in your website by adding the [webhint extension for Visual Studio Code][VisualstudioMarketplaceWebhint].  Hints examine HTML, CSS, JavaScript, TypeScript, and more.  Hints appear as wavy underlines in the text editor, and are summarized in the **Problems** pane.
 
-[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"  
-[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentation | Visual Studio Code"   
+<!-- differentiate: -->
+:::image type="complex" source="./media/webhint-extension.png" alt-text="The webhint extension for Visual Studio Code" lightbox="./media/webhint-extension.png":::
+   The **webhint** Visual Studio Code extension
+:::image-end:::
 
-[VisualstudioMarketplaceDebuggerMicrosoftEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Debugger for Microsoft Edge | Visual Studio Marketplace"  
-[VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code | Visual Studio Marketplace"  
+:::image type="complex" source="./media/visual-studio-code-extension-webhint.msft.png" alt-text="The webhint extension for Visual Studio Code" lightbox="./media/visual-studio-code-extension-webhint.msft.png":::
+   The **webhint** Visual Studio Code extension
+:::image-end:::
 
-[VisualstudioMarketplaceWebhint]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint | Visual Studio Marketplace"  
+<!-- todo: replace keyboard shortcuts by GUI steps -->
+To install this extension:
+1. In Visual Studio Code, navigate to **Extensions** \(select `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS\).
+1. Search the Marketplace for the **webhint** extension, select the extension, and then select **Install**.
 
-[OpenjsFoundation]:  https://openjsf.org "OpenJS Foundation"  
+### See also 
 
-[WebhintMain]:  https://webhint.io "webhint"  
+*  [How to use webhint in Visual Studio Code][VisualStudioCodeWebhint]
+*  [webhint][WebhintMain]
+
+
+<!--links -->
+[VisualStudioCodeMicrosoftEdgeDevtoolsExtension]: ./microsoft-edge-devtools-extension.md "Microsoft Edge DevTools for Visual Studio Code extension | Microsoft Docs"
+[VisualStudioCodeWebhint]: ./webhint.md "The webhint extension for Visual Studio Code | Microsoft Docs"
+<!-- external links -->
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"
+[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentation | Visual Studio Code"
+
+[VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code | Visual Studio Marketplace"
+
+[VisualstudioMarketplaceWebhint]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint | Visual Studio Marketplace"
+
+[OpenjsFoundation]: https://openjsf.org "OpenJS Foundation"
+
+[WebhintMain]: https://webhint.io "webhint"
