@@ -399,7 +399,7 @@ For more information about Application Guard, navigate to:
 
 ## Opt out of diagnostic data collection
 
-Microsoft Edge Driver sends diagnostic data, such as the [New Session WebDriver command][WebDriverProtocolNewSession], to Microsoft by default.  To turn off the diagnostic data collection for Microsoft Edge Driver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1` or `true`.  For more information about the data that Microsoft Edge Driver collects, navigate to the [Microsoft Edge Privacy Whitepaper][MicrosoftEdgePrivacyWhitepaper].  
+By default, Microsoft Edge Driver sends diagnostic data such as the [New Session WebDriver command][WebDriverProtocolNewSession] to Microsoft.  To turn off the diagnostic data collection for Microsoft Edge Driver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1` or `true`.  For more information about the data that Microsoft Edge Driver collects, navigate to the [Microsoft Edge Privacy Whitepaper][MicrosoftEdgePrivacyWhitepaper].  
 
 
 ## See also
