@@ -15,7 +15,7 @@ In this article, get started creating your first WebView2 app and learn about th
 
 ## Prerequisites  
 
-Install the following list of pre-requisites before proceeding.
+Install the following list of prerequisites before proceeding.
 
 *   [WebView2 Runtime][MicrosoftDeveloperMicrosoftEdgeWebview2] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] (Beta, Dev, or Canary) installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).  
     
