@@ -269,7 +269,7 @@ Kids Mode does not collect data for personalization of the news feed or other Mi
 
 ## Microsoft Edge Driver
 
-Microsoft Edge Driver allows developers to programmatically drive the Microsoft Edge browser with the [WebDriver protocol][WebDriverProtocol].  Microsoft Edge Driver is a separate executable \(ex. msedgedriver.exe\) from Microsoft Edge that developers call from their client code\(ex. a test script\).  Microsoft Edge Driver sends diagnostic data, such as the [New Session WebDriver command][WebDriverProtocolNewSession], to Microsoft by default.  To turn off the diagnostic data collection for Microsoft Edge Driver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1` or `true`.  For more information about Microsoft Edge Driver, navigate to [Use WebDriver to automate Microsoft Edge automation][WebDriverDoc].  
+Microsoft Edge Driver allows developers to drive the Microsoft Edge browser using the [WebDriver protocol][WebDriverProtocol].  The Microsoft Edge Driver is an executable file `msedgedriver.exe` separate from Microsoft Edge that developers call from their client code, such as a test script.  By default, Microsoft Edge Driver sends diagnostic data such as the [New Session WebDriver command][WebDriverProtocolNewSession] to Microsoft.  To turn off the diagnostic data collection for Microsoft Edge Driver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1` or `true`.  For more information about Microsoft Edge Driver, navigate to [Use WebDriver to automate Microsoft Edge automation][WebDriverDoc].  
 
 ## Network time  
 
