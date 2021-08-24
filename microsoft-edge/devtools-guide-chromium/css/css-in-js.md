@@ -1,9 +1,9 @@
 ---
-description: Style editing for CSS-in-JS frameworks.
+description: Copy declarations for a style rule in a way that's formatted for JavaScript and ready to paste into a JavaScript file.  Edit style rules that were initially defined by a CSSOM function.
 title: Style editing for CSS-in-JS frameworks
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/18/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, css, css-in-js
@@ -21,8 +21,31 @@ keywords: microsoft edge, web development, f12 tools, devtools, css, css-in-js
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-
 # Style editing for CSS-in-JS frameworks
+
+
+<!-- ====================================================================== -->
+## Copying style rule declarations for CSS-in-JS libraries, as JavaScript syntax
+
+From the **Styles** pane, you can copy declarations for a style rule in a way that's formatted for JavaScript and ready to paste into a JavaScript file.
+
+When using CSS-in-JS libraries, you can copy CSS declarations (a CSS property and value) automatically formatted for JavaScript.  You don't have to manually edit the copied CSS to match JavaScript's syntax.  You can copy a single CSS declaration or all the declarations in a style rule, and then paste them directly into a JavaScript file without having syntax issues.
+
+To copy a style rule as JavaScript:
+
+1. In the **Styles** pane of the **Elements** tool, open the contextual menu \(right-click\) on a declaration in a style rule.
+1. Select **Copy declaration as JS** or **Copy all declarations as JS**.
+1. Paste the copied CSS into a JavaScript file in your text editor, such as Visual Studio Code.  For example: `'--more-link': 'lime'`.
+
+:::image type="complex" source="images/copy-declaration-as-js.msft.png" alt-text="Context menu for a style rule, including 'Copy declaration as JS' and 'Copy all declarations as JS' commands" lightbox="images/copy-declaration-as-js.msft.png":::
+   Context menu for a style rule, including **Copy declaration as JS** and **Copy all declarations as JS** commands
+:::image-end:::
+
+To learn more about viewing and changing CSS, navigate to [CSS reference][CssReference].
+
+
+<!-- ====================================================================== -->
+## Editing style rules that were initially defined by a CSSOM function
 
 <!-- from https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#style-editing-for-css-in-js-frameworks -->
 
@@ -30,9 +53,7 @@ The **Styles** pane supports editing styles that were created with the [CSS Obje
 
 You can edit styles added in JavaScript using [Constructable Stylesheets][WicgConstructStylesheet].  Constructable Stylesheets are a way to create and distribute reusable styles when using [Shadow DOM][MdnShadowDom].
 
-
-<!-- ====================================================================== -->
-## Example of editing style rules that were initially defined by a CSSOM function
+### Example
 
 In this sample code, style rules are initially defined by calling a CSS Object Model (CSSOM) function, and then the style rules are edited using the **Styles** pane.  The `CSSStyleSheet` object contains the CSSOM APIs, such as `insertRule()`.  The `h1` styles that were initially added by a `CSSStyleSheet` function are then editable in the **Styles** pane.
 
@@ -118,6 +139,7 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 
 <!-- links -->
+[CssReference]: reference.md "CSS reference | Microsoft Docs"
 <!-- external links -->
 [BlogCssInJsInDevTools]: https://developers.google.com/web/updates/2021/02/css-in-js "CSS-in-JS support in DevTools | Google Blog "
 [CsswgDraftsCssom]: https://drafts.csswg.org/cssom "CSS Object Model (CSSOM) | W3C CSS Working Group Editor Drafts"
