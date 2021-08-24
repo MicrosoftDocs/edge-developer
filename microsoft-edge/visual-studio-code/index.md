@@ -14,6 +14,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual 
 
 
 <!-- ====================================================================== -->
+---
 ## Microsoft Edge Tools for Visual Studio Code
 
 With the **Microsoft Edge Tools for Visual Studio Code** extension for Visual Studio Code, you can use the **Elements** tool of the Microsoft Edge browser within Visual Studio Code.  Use the Elements tool to:
@@ -22,22 +23,16 @@ With the **Microsoft Edge Tools for Visual Studio Code** extension for Visual St
 *   Update the layout.
 *   Fix styling issues.
 
-<!-- differentiate: -->
 :::image type="complex" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="The 'Microsoft Edge Tools for Visual Studio Code' extension for Visual Studio Code" lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::
    The **Microsoft Edge Tools for Visual Studio Code** extension for Visual Studio Code
 :::image-end:::
 
-:::image type="complex" source="./media/visual-studio-code-extension-microsoft-edge-tools-for-visual-studio-code.msft.png" alt-text="The 'Microsoft Edge Tools for Visual Studio Code' extension for Visual Studio Code" lightbox="./media/visual-studio-code-extension-microsoft-edge-tools-for-visual-studio-code.msft.png":::
-   The **Microsoft Edge Tools for Visual Studio Code** extension for Visual Studio Code
-:::image-end:::
-
-<!-- todo: replace keyboard shortcuts by GUI steps -->
-To install this extension:
+To install the Microsoft Edge Tools extension:
 1. In Visual Studio Code, navigate to **Extensions** \(select `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS\).
-1. Search the Marketplace for the extension, select the extension, and then select **Install**.
+1. Search the Marketplace for the extension **Microsoft Edge Tools for VS Code**, select the extension, and then select **Install**.
 
-:::image type="complex" source="./media/vscode-edge-tools-install.png" alt-text="Install the Microsoft Edge Tools for Visual Studio Code extension" lightbox="./media/vscode-edge-tools-install.png":::
-   Install the **Microsoft Edge Tools** Visual Studio Code extension
+:::image type="complex" source="./media/vscode-edge-tools-install.png" alt-text="Installing the Microsoft Edge Tools extension for Visual Studio Code." lightbox="./media/vscode-edge-tools-install.png":::
+   Installing the **Microsoft Edge Tools** extension for Visual Studio Code
 :::image-end:::
 
 ### See also
@@ -47,6 +42,7 @@ To install this extension:
 
 
 <!-- ====================================================================== -->
+---
 ## webhint
 
 Use [webhint][WebhintMain], a customizable linting tool, to improve the following functionality of your site.
@@ -63,17 +59,17 @@ Identify and fix problems in your website by adding the [webhint extension for V
 
 <!-- differentiate: -->
 :::image type="complex" source="./media/webhint-extension.png" alt-text="The webhint extension for Visual Studio Code" lightbox="./media/webhint-extension.png":::
-   The **webhint** Visual Studio Code extension
+   The **webhint** extension for Visual Studio Code
 :::image-end:::
 
-:::image type="complex" source="./media/visual-studio-code-extension-webhint.msft.png" alt-text="The webhint extension for Visual Studio Code" lightbox="./media/visual-studio-code-extension-webhint.msft.png":::
-   The **webhint** Visual Studio Code extension
-:::image-end:::
-
-<!-- todo: replace keyboard shortcuts by GUI steps -->
-To install this extension:
+To install the webhint extension:
 1. In Visual Studio Code, navigate to **Extensions** \(select `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS\).
 1. Search the Marketplace for the **webhint** extension, select the extension, and then select **Install**.
+
+:::image type="complex" source="./media/visual-studio-code-extension-webhint.msft.png" alt-text="The webhint Visual Studio Code extension" lightbox="./media/visual-studio-code-extension-webhint.msft.png":::
+   The **webhint** Visual Studio Code extension
+:::image-end:::
+
 
 ### See also 
 
