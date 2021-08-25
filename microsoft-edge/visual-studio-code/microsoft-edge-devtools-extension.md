@@ -66,7 +66,7 @@ Use the Microsoft Edge DevTools extension in Visual Studio Code to inspect an HT
 <!-- ====================================================================== -->
 ## Modes for using Microsoft Edge DevTools in Visual Studio Code
 
-<!-- todo: related this list to the subsequent sections -->
+<!-- todo: relate this list to the subsequent sections -->
 You can use this extension in one of three modes:
 * Launch Microsoft Edge in a new window, and navigate to your web application.
 * Attach to a running instance of Microsoft Edge.
@@ -157,9 +157,9 @@ One of the features of the **Elements** tool is that it displays the source file
 <!-- ====================================================================== -->
 ## Setting up your project to show live changes in the extension
 
-By default, the DevTools extension does not track live changes to the code as you write.  If you want the browser to automatically refresh when you change a file, set up a live reload environment.  This requires [Node.js][NodeJS] and [NPM][NPM] on your machine.
+By default, the Microsoft Edge DevTools extension doesn't track live changes to the code as you write.  If you want the browser to automatically refresh when you change a file, set up a _live reload_ environment, as follows.
 
-The following example shows a folder of production files on your hard drive called `my-project`.  Change the file names and locations as needed for your environment.
+This example shows a folder of production files on your hard drive called `my-project`.  In the following steps, change `my-project` to your folder name, if it is different.
 
 1. Install Node.js and the `reload` NPM package, as follows:
     1. Download and install [Node.js][NodeJS].
@@ -177,14 +177,14 @@ All changes that are saved in this folder now trigger a browser refresh.
 <!-- ====================================================================== -->
 ## Browser debugging with Microsoft Edge DevTools integration in Visual Studio Code
 
-JavaScript debugging is now built in to Visual Studio Code.  Starting with Version 1.5.7 of Visual Studio Code, you can debug in Chrome, Microsoft Edge, or Node.js without installing any other extensions.  If you debug using Microsoft Edge, you can start Microsoft Edge DevTools with the JavaScript debugger.
+JavaScript debugging is now built in to Visual Studio Code.  Starting with Version 1.5.7 of Visual Studio Code, you can debug in Chrome, Microsoft Edge, or Node.js without installing any other extensions.  If you debug using Microsoft Edge, you can start Microsoft Edge DevTools from the JavaScript debugger.
 
 1. To start a session, use either of the following methods:
     * Select **F5**, or on the menu bar select the **Debug** icon and then select **Run and debug**.
     * Open the Visual Studio Code command palette and select **Debug: Open Link**.
 
-    :::image type="complex" source="./media/edge-devtools-for-vscode-start-session.png" alt-text="Start Microsoft Edge DevTools with the JavaScript debugger" lightbox="./media/edge-devtools-for-vscode-start-session.png":::
-       Start Microsoft Edge DevTools with the JavaScript debugger
+    :::image type="complex" source="./media/edge-devtools-for-vscode-start-session.png" alt-text="Start Microsoft Edge DevTools from the JavaScript debugger" lightbox="./media/edge-devtools-for-vscode-start-session.png":::
+       Start Microsoft Edge DevTools from the JavaScript debugger
     :::image-end:::
 
 1. Select **Edge**.
