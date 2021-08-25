@@ -25,18 +25,22 @@ In Visual Studio Code, there are multiple ways to open the Microsoft Edge DevToo
 * From the **Activity Bar**.
 * From the JavaScript Debugger.
 
-You can [download the Microsoft Edge DevTools extension][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] and [check the source code][checkSourceCode].
-
-### Long and short names of the extension
-
 In Visual Studio Code, this extension is referred to by several variations:
 *  **Microsoft Edge Developer Tools for Visual Studio Code** - the full name as shown in the detailed information in the **Extensions Marketplace**.
 *  **Microsoft Edge Tools for VS Code** - the extension as listed when searching in the **Extensions Marketplace**.
-*  **Microsoft Edge Tools** - the icon tooltip in the **Activity Bar** after the extension is installed.
-*  **Edge DevTools** - the tab name after the extension is installed.
+*  **Microsoft Edge Tools** - the icon tooltip in the **Activity Bar**.
+*  **Edge DevTools** - the tab name.
 
 This article uses the name "the Microsoft Edge DevTools extension", except for UI text.
 <!-- follow this global convention for consistency; this is a quote of the UI tab name "Edge DevTools", but adding "Microsoft" -->
+
+
+<!-- ====================================================================== -->
+## Installing the Microsoft Edge DevTools extension
+
+To install the extension from within Visual Studio Code, navigate to [The Microsoft Edge DevTools extension for Visual Studio Code](index.md#the-microsoft-edge-devtools-extension-for-visual-studio-code). <!-- in the article _Visual Studio Code overview_. -->
+
+Or, you can [download the Microsoft Edge DevTools extension][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] from Visual Studio Marketplace, or view the [source code][checkSourceCode] at GitHub.
 
 
 <!-- ====================================================================== -->
@@ -161,9 +165,9 @@ By default, the Microsoft Edge DevTools extension doesn't track live changes to 
 
 This example shows a folder of production files on your hard drive called `my-project`.  In the following steps, change `my-project` to your folder name, if it is different.
 
-1. Install Node.js and the `reload` NPM package, as follows:
+1. Install Node.js and the `reload` npm package, as follows:
     1. Download and install [Node.js][NodeJS].
-    1. To install the [reload NPM package][NPM], open a command prompt and run `npm install reload -g` to install the package globally.
+    1. To install [the reload npm package][NPM], open a command prompt and run `npm install reload -g` to install the package globally.
 
 1. Attach the extension to your live reloading project, as follows:
     1. Navigate to the `my-project` folder in your terminal window and run `reload` to start the local server.
@@ -270,7 +274,7 @@ If you want to help make the Microsoft Edge DevTools extension better, your cont
 
 [VisualstudioMarketplaceElementsMicrosoftEdgeChromium]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Developer Tools for Visual Studio Code | Visual Studio Marketplace"
 
-[checkSourceCode]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | github"
+[checkSourceCode]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
 
 [launchJSON]: https://code.visualstudio.com/Docs/editor/debugging#_launch-configurations "Launch Configurations | Debugging in Visual Studio Code"
 
@@ -282,4 +286,4 @@ If you want to help make the Microsoft Edge DevTools extension better, your cont
 
 [NodeJS]: https://www.nodejs.org "Node.js"
 
-[NPM]: https://www.npmjs.com/package/reload?activeTab=readme "reload - npm"
+[NPM]: https://www.npmjs.com/package/reload?activeTab=readme "The reload npm package | npm"
