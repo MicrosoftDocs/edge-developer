@@ -1,5 +1,5 @@
 ---
-description: Microsoft Edge (Chromium) and Visual Studio Code
+description: Microsoft Edge (Chromium) and Visual Studio Code.
 title: Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -13,35 +13,35 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual 
 Visual Studio Code is a lightweight but powerful source code editor.  Visual Studio Code is available for Windows, Linux, and macOS.  It includes built-in support for JavaScript, TypeScript, and Node.js, so it is a great tool for web developers.
 
 *  [Download Visual Studio Code][VisualstudioCode]
-*  [Visual Studio Code documentation][VisualStudioCodeDocs]
+*  [Getting Started][VisualStudioCodeDocs] - Documentation for Visual Studio Code
 
 This article gives an overview of extensions for Visual Studio Code that add features for users of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
-## The Microsoft Edge Tools extension for Visual Studio Code
+## The Microsoft Edge DevTools extension for Visual Studio Code
 
-With the **Microsoft Edge Tools for Visual Studio Code** extension for Visual Studio Code, you can use the **Elements** tool of the Microsoft Edge browser within Visual Studio Code.  Use the Elements tool to:
+With the **Microsoft Edge DevTools** extension for Visual Studio Code, you can use the **Elements** tool of the Microsoft Edge browser within Visual Studio Code.  Use the Elements tool to:
 *   Attach to an instance or launch an instance of Microsoft Edge.
 *   Display the runtime HTML structure.
 *   Update the layout.
 *   Fix styling issues.
 
-:::image type="complex" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="The 'Microsoft Edge Tools for Visual Studio Code' extension for Visual Studio Code" lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::
-   The **Microsoft Edge Tools for Visual Studio Code** extension for Visual Studio Code
+:::image type="complex" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="The Microsoft Edge DevTools extension for Visual Studio Code" lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::
+   The **Microsoft Edge DevTools** extension for Visual Studio Code
 :::image-end:::
 
-To install the Microsoft Edge Tools extension:
+To install the Microsoft Edge DevTools extension:
 1. In Visual Studio Code, navigate to **Extensions** \(select `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS\).
 1. Search the Marketplace for the extension **Microsoft Edge Tools for VS Code**, select the extension, and then select **Install**.
 
-:::image type="complex" source="./media/vscode-edge-tools-install.png" alt-text="Installing the Microsoft Edge Tools extension for Visual Studio Code." lightbox="./media/vscode-edge-tools-install.png":::
-   Installing the **Microsoft Edge Tools** extension for Visual Studio Code
+:::image type="complex" source="./media/vscode-edge-tools-install.png" alt-text="Installing the Microsoft Edge DevTools extension for Visual Studio Code" lightbox="./media/vscode-edge-tools-install.png":::
+   Installing the **Microsoft Edge DevTools** extension for Visual Studio Code
 :::image-end:::
 
 ### See also
 
-*  [Microsoft Edge Tools for Visual Studio Code Visual Studio Code extension][VisualStudioCodeMicrosoftEdgeDevtoolsExtension] - Using the extension.
+*  [Microsoft Edge DevTools extension for Visual Studio Code][VisualStudioCodeMicrosoftEdgeDevtoolsExtension] - Using the extension.
 *  [Microsoft Edge Tools for Visual Studio Code][VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode] - Information about the extension, in the Visual Studio Marketplace.
 
 
