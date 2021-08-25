@@ -3,7 +3,7 @@ description: Copy declarations for a style rule in a way that's formatted for Ja
 title: Style editing for CSS-in-JS frameworks
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/24/2021
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, css, css-in-js
@@ -25,23 +25,25 @@ keywords: microsoft edge, web development, f12 tools, devtools, css, css-in-js
 
 
 <!-- ====================================================================== -->
-## Copying style rule declarations for CSS-in-JS libraries, as JavaScript syntax
+## Copying style rule declarations to paste them with JavaScript syntax
 
 From the **Styles** pane, you can copy declarations for a style rule in a way that's formatted for JavaScript and ready to paste into a JavaScript file.
 
-When using CSS-in-JS libraries, you can copy CSS declarations (a CSS property and value) automatically formatted for JavaScript.  You don't have to manually edit the copied CSS to match JavaScript's syntax.  You can copy a single CSS declaration or all the declarations in a style rule, and then paste them directly into a JavaScript file without having syntax issues.
+When using CSS-in-JS libraries, you can copy CSS declarations (a CSS property and value) so that they are automatically formatted for JavaScript.  You don't have to manually edit the copied CSS to match JavaScript's syntax.  You can copy a single CSS declaration or all the declarations in a style rule, and then paste them directly into a JavaScript file without having syntax issues.
 
 To copy a style rule as JavaScript:
 
 1. In the **Styles** pane of the **Elements** tool, open the contextual menu \(right-click\) on a declaration in a style rule.
+
 1. Select **Copy declaration as JS** or **Copy all declarations as JS**.
+
 1. Paste the copied CSS into a JavaScript file in your text editor, such as Visual Studio Code.  For example: `'--more-link': 'lime'`.
 
 :::image type="complex" source="images/copy-declaration-as-js.msft.png" alt-text="Context menu for a style rule, including 'Copy declaration as JS' and 'Copy all declarations as JS' commands" lightbox="images/copy-declaration-as-js.msft.png":::
    Context menu for a style rule, including **Copy declaration as JS** and **Copy all declarations as JS** commands
 :::image-end:::
 
-To learn more about viewing and changing CSS, navigate to [CSS reference][CssReference].
+This feature is available starting with Microsoft Edge version 93. <!-- delete statement sometime after September 2, 2021 --> To learn more about viewing and changing CSS, navigate to [CSS reference][CssReference].
 
 
 <!-- ====================================================================== -->
@@ -120,12 +122,10 @@ In DevTools, the most commonly used feature when dealing with CSS is the **Style
 
 The **Styles** pane supports CSS rules that you can modify by using the CSS Object Model APIs.  CSS-in-JS styles are sometimes described as _constructed_, to indicate that these styles were constructed by using Web APIs.
 
-
-<!-- video
-https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/video/dPDCek3EhZgLQPGtEG3y0fTn4v82/Jy8q9gPbQknRturLyCsq.mp4
--->
+<!-- video https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/video/dPDCek3EhZgLQPGtEG3y0fTn4v82/Jy8q9gPbQknRturLyCsq.mp4 -->
 
 
+<!-- ====================================================================== -->
 ## Getting in touch with the Microsoft Edge DevTools team
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
@@ -138,6 +138,7 @@ https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/video/dPDCek3EhZg
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
 
 
+<!-- ====================================================================== -->
 <!-- links -->
 [CssReference]: reference.md "CSS reference | Microsoft Docs"
 <!-- external links -->
