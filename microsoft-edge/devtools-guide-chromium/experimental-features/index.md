@@ -213,13 +213,19 @@ If you prefer the original **What's New** tool, navigate to [Settings][DevtoolsC
 
 ### Enable Search Console Error functionality
 
-For developers that want to more efficiently search for their **Console** errors and identify the solution, there's a new experiment for you. If you select the magnifying glass next to your console error, it will open a new tab with the search results for the error you're debugging. This experiment currently only supports basic errors such as *Failed to load resource*.
+For developers who want to more efficiently search for their **Console** errors and identify the solution, there's a new experiment for you. If you select the magnifying glass next to your console error, it will open a new tab with the search results for the error you're debugging. This experiment currently only supports basic errors, such as `Failed to load resource`.
 
-:::row::: :::column span=""::: :::image type="complex" source="../media/search-console-icon.PNG" alt-text="The Search Console Error magnifying glass icon in the Console pane" lightbox="../media/search-console-icon.PNG"::: The Search Console Error magnifying glass icon in the Console pane
+When you hover over a magnifying glass icon on an error message in the **Console**, the tooltip appears: **Search for this message on the Web**.
+
+:::image type="complex" source="../media/search-console-icon.msft.png" alt-text="The Search Console Error magnifying glass icon in the Console pane" lightbox="../media/search-console-icon.png":::
+   The **Search Console Error** magnifying glass icon in the **Console** pane
 :::image-end:::
-:::column-end::: :::column span=""::: :::image type="complex" source="../media/search-console-new-tab.PNG" alt-text="New tab that opened from Search Console Error feature" lightbox="../media/search-console-new-tab.PNG"::: New tab that opened from Search Console Error feature
+
+When you select the magnifying glass icon, a new tab opens in the browser and shows search results for the error string. For a `Failed to load resource` error, the new tab contains web search results for the string "Failed to load resource" (without quotes).
+
+:::image type="complex" source="../media/search-console-new-tab.msft.png" alt-text="New tab that opened from the Search Console Error feature" lightbox="../media/search-console-new-tab.png":::
+   New tab that opened from the **Search Console Error** feature
 :::image-end:::
-:::column-end::: :::row-end:::
 
 <!--Available in Microsoft Edge version 94 and later.  -->  
 
