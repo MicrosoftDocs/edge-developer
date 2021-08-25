@@ -217,13 +217,13 @@ For developers who want to more efficiently search for their **Console** errors 
 
 When you hover over a magnifying glass icon on an error message in the **Console**, the tooltip appears: **Search for this message on the Web**.
 
-:::image type="complex" source="../media/search-console-icon.msft.png" alt-text="The Search Console Error magnifying glass icon in the Console pane" lightbox="../media/search-console-icon.png":::
+:::image type="complex" source="../media/search-console-icon.msft.png" alt-text="The Search Console Error magnifying glass icon in the Console pane" lightbox="../media/search-console-icon.msft.png":::
    The **Search Console Error** magnifying glass icon in the **Console** pane
 :::image-end:::
 
 When you select the magnifying glass icon, a new tab opens in the browser and shows search results for the error string. For a `Failed to load resource` error, the new tab contains web search results for the string "Failed to load resource" (without quotes).
 
-:::image type="complex" source="../media/search-console-new-tab.msft.png" alt-text="New tab that opened from the Search Console Error feature" lightbox="../media/search-console-new-tab.png":::
+:::image type="complex" source="../media/search-console-new-tab.msft.png" alt-text="New tab that opened from the Search Console Error feature" lightbox="../media/search-console-new-tab.msft.png":::
    New tab that opened from the **Search Console Error** feature
 :::image-end:::
 
