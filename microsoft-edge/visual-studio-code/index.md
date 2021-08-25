@@ -10,12 +10,16 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual 
 ---
 # Visual Studio Code overview
 
-[Visual Studio Code][VisualStudioCodeDocs] is a lightweight but powerful source code editor.  Visual Studio Code is available for Windows, Linux, and macOS.  It includes built-in support for JavaScript, TypeScript, and Node.js, so it is a great tool for web developers before you customize it.  If you are not using it yet, [download Visual Studio Code][VisualstudioCode].
+Visual Studio Code is a lightweight but powerful source code editor.  Visual Studio Code is available for Windows, Linux, and macOS.  It includes built-in support for JavaScript, TypeScript, and Node.js, so it is a great tool for web developers.
+
+*  [Download Visual Studio Code][VisualstudioCode]
+*  [Visual Studio Code documentation][VisualStudioCodeDocs]
+
+This article gives an overview of extensions for Visual Studio Code that add features for users of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
----
-## Microsoft Edge Tools for Visual Studio Code
+## The Microsoft Edge Tools extension for Visual Studio Code
 
 With the **Microsoft Edge Tools for Visual Studio Code** extension for Visual Studio Code, you can use the **Elements** tool of the Microsoft Edge browser within Visual Studio Code.  Use the Elements tool to:
 *   Attach to an instance or launch an instance of Microsoft Edge.
@@ -42,8 +46,7 @@ To install the Microsoft Edge Tools extension:
 
 
 <!-- ====================================================================== -->
----
-## webhint
+## The webhint extension for Visual Studio Code
 
 Use [webhint][WebhintMain], a customizable linting tool, to improve the following functionality of your site.
 
@@ -57,7 +60,6 @@ The webhint tool checks your code for coding practices and common errors.  The w
 
 Identify and fix problems in your website by adding the [webhint extension for Visual Studio Code][VisualstudioMarketplaceWebhint].  Hints examine HTML, CSS, JavaScript, TypeScript, and more.  Hints appear as wavy underlines in the text editor, and are summarized in the **Problems** pane.
 
-<!-- differentiate: -->
 :::image type="complex" source="./media/webhint-extension.png" alt-text="The webhint extension for Visual Studio Code" lightbox="./media/webhint-extension.png":::
    The **webhint** extension for Visual Studio Code
 :::image-end:::
@@ -70,13 +72,13 @@ To install the webhint extension:
    The **webhint** Visual Studio Code extension
 :::image-end:::
 
+### See also
 
-### See also 
-
-*  [How to use webhint in Visual Studio Code][VisualStudioCodeWebhint]
+*  [The webhint extension for Visual Studio Code][VisualStudioCodeWebhint] - How to use webhint in Visual Studio Code.
 *  [webhint][WebhintMain]
 
 
+<!-- ====================================================================== -->
 <!--links -->
 [VisualStudioCodeMicrosoftEdgeDevtoolsExtension]: ./microsoft-edge-devtools-extension.md "Microsoft Edge DevTools for Visual Studio Code extension | Microsoft Docs"
 [VisualStudioCodeWebhint]: ./webhint.md "The webhint extension for Visual Studio Code | Microsoft Docs"
