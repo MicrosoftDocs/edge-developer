@@ -211,6 +211,18 @@ If you prefer the original **What's New** tool, navigate to [Settings][DevtoolsC
 
 <!--Available in Microsoft Edge version 89 and later.  -->  
 
+### Enable Search Console Error functionality
+
+For developers that want to more efficiently search for their **Console** errors and identify the solution, there's a new experiment for you. If you select the magnifying glass next to your console error, it will open a new tab with the search results for the error you're debugging. This experiment currently only supports basic errors such as *Failed to load resource*.
+
+:::row::: :::column span=""::: :::image type="complex" source="../media/search-console-icon.PNG" alt-text="The Search Console Error magnifying glass icon in the Console pane" lightbox="../media/search-console-icon.PNG"::: The Search Console Error magnifying glass icon in the Console pane
+:::image-end:::
+:::column-end::: :::column span=""::: :::image type="complex" source="../media/search-console-new-tab.PNG" alt-text="New tab that opened from Search Console Error feature" lightbox="../media/search-console-new-tab.PNG"::: New tab that opened from Search Console Error feature
+:::image-end:::
+:::column-end::: :::row-end:::
+
+<!--Available in Microsoft Edge version 94 and later.  -->  
+
 ## Previous experimental features  
 
 *   [3D View][Devtools3dViewIndex] is now available and turned on by default in Microsoft Edge version 83 or later.  
