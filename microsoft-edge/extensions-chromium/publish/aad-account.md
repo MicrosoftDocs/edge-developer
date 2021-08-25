@@ -8,19 +8,13 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
 ---
-
 # Add and manage users from your organization on to the Microsoft Edge program
 
-To add and manage users in the Microsoft Edge program to manage extensions, you can now associate your Partner Center account with your organization's Azure Active Directory.
+This article focuses on adding more users to a Partner Center <!--developer? commercial too? --> account.  This article is not relevant to users of a Partner Center _commercial_ account.
 
-| Type of account | Description |
-|---|---|
-| _Partner Center commercial account_ | Enables basic capabilities at Partner Center. |
-| _Partner Center developer account_ | Enables advanced capabilities at Partner Center. |
-| _Microsoft account (MSA)_, _MSA account_ | A Microsoft account (MSA), including Hotmail, Live, or Outlook.  An MSA account is either a work MSA account, a school MSA account, or an MSA account that's associated with a Partner Center developer account. |
-| _Microsoft Edge Program account_ | Enables multiple users to work with Microsoft Edge extensions at Partner Center. |
-| _Azure Active Directory tenant_, _Azure AD tenant_ | An Azure Active Directory account. |
 
+<!-- ====================================================================== -->
+## Prereq - must have a Partner Center account
 
 Creating a developer accounts requires an MSA account, after which a user can link an AD tenant, thus enabling users to login with their work accounts.
 

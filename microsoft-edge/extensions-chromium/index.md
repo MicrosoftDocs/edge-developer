@@ -3,7 +3,7 @@ description: An overview of building and publishing Microsoft Edge (Chromium) Ex
 title: Overview of Microsoft Edge (Chromium) Extensions 
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
+ms.date: 08/25/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge, extensions development, browser extensions, addons, partner center, developer, chromium extensions
@@ -82,11 +82,11 @@ Users may need to install your extension in different browsers. In this scenario
 
 ### Migrate an existing extension to Microsoft Edge  
 
-If you've already developed an extension for another Chromium browser, you may submit it to the Microsoft Edge Add-ons store. You don't need to rewrite your extension, and must verify it works in Microsoft Edge.  When you migrate an existing Chromium extension to other Chromium browsers, ensure the same APIs or alternatives are available for your target browser.  
+If you've already developed an extension for another Chromium browser, you may submit it to the Microsoft Edge Add-ons website. You don't need to rewrite your extension, and must verify it works in Microsoft Edge.  When you migrate an existing Chromium extension to other Chromium browsers, ensure the same APIs or alternatives are available for your target browser.  
 
 For more information on porting your Chrome extension to Microsoft Edge, navigate to [Port Chrome extensions to Microsoft Edge (Chromium)][ExtensionsChromiumDeveloperGuidePortChrome]. After you port your extension to the target browser, the next step is to publish it.  
 
-### Publish to the Microsoft Edge add-ons website  
+### Publish to the Microsoft Edge Add-ons website  
 
 To start publishing your extension to Microsoft Edge, you must [register for a developer account][MicrosoftDeveloperRegistration] with an MSA email account to submit your extension listing to the store.  An MSA email account includes `@outlook.com`, `@live.com`, and so on.  When you choose an email address to register, consider if you must transfer or share ownership of the extension with others in your organization.  After registration is complete, you may create a new extension submission to the store.  
 
