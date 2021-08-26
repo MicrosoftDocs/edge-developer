@@ -1,17 +1,17 @@
 ---  
 description: Get to know the Microsoft Edge (Chromium) Developer Tools  
-title: Microsoft Edge (Chromium) Developer Tools overview  
+title: Microsoft Edge Developer Tools overview  
 author: MSEdgeTeam  
 ms.author: msedgedevrel  
-ms.date: 04/07/2021  
+ms.date: 08/06/2021  
 ms.topic: conceptual  
 ms.prod: microsoft-edge  
 ms.technology: devtools  
 keywords: microsoft edge, web development, f12 tools, devtools  
 ---  
-# Microsoft Edge (Chromium) Developer Tools overview  
+# Microsoft Edge Developer Tools overview  
 
-When you install Microsoft Edge, you get a browser. Also, you get a powerful way to inspect, debug, and even create web projects.  The Developer Tools shipped with the browser are based on the tools in the Chromium open-source project, so you may already be familiar with the tools.  To keep descriptions shorter in this article, the `Microsoft Edge Developer Tools` are now referred to as `DevTools` .  
+When you install Microsoft Edge (Chromium), you get a browser. Also, you get a powerful way to inspect, debug, and even create web projects.  The Developer Tools shipped with the browser are based on the tools in the Chromium open-source project, so you may already be familiar with the tools.  To keep descriptions shorter in this article, the `Microsoft Edge Developer Tools` are now referred to as `DevTools`.  
 
 Use DevTools to review and learn more about the following development tasks.  
 
@@ -33,14 +33,14 @@ And a lot more.  It all starts when you open DevTools and customize each tool to
 
 To open and explore the DevTools, use one any of the following actions.  
 
-*   Hover on any element on the webpage, open the contextual menu \(right-click\), and then choose **Inspect**.  This action opens the **Elements** tool.  
+*   Hover on any element on the webpage, open the contextual menu \(right-click\), and then select **Inspect**.  This action opens the **Elements** tool.  
 *   Select `F12`.  
 *   Select `Ctrl`+`Shift`+`I` on Windows/Linux or `Command`+`Option`+`I` on macOS.  
     
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="./media/devtools-intro-inspect.msft.png" alt-text="Choose Inspect from the contextual menu on any element" lightbox="./media/devtools-intro-inspect.msft.png":::  
-         Choose **Inspect** from the contextual menu on any element  
+      :::image type="complex" source="./media/devtools-intro-inspect.msft.png" alt-text="Select Inspect from the contextual menu on any element" lightbox="./media/devtools-intro-inspect.msft.png":::  
+         Select **Inspect** from the contextual menu on any element  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::  
@@ -51,17 +51,17 @@ To open and explore the DevTools, use one any of the following actions.
 :::row-end:::  
 
 There are two main ways to interact with the DevTools.
-*   Use the mouse  
+*   Use the mouse.  
 *   [Keyboard shortcuts][DevtoolsGuideShortcutsIndex].  Keyboard shortcuts provide a quick way to access functionality and are needed for accessibility.  The Microsoft Edge DevTools team works hard to make all the tools available using the keyboard and assistive technologies such as screen readers.  For more information about how to open the different features in the DevTools, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsGuideOpenIndex].  
 
 ## Dock the DevTools in your browser  
 
 When you open the DevTools, it docks to the left of your browser.  To change the docked location of the DevTools, complete the following actions.  
 
-1.  Choose the **Customize And Control DevTools** \(`...`\) button.  
+1.  Select the **Customize And Control DevTools** \(`...`\) button.  
 1.  To the right of **Placement of the DevTools relative to the page** \(**Dock side**\), choose a **Dock side** option.  
     
-For more information, navigate to [Change DevTools placement (Undock, Dock To Bottom, Dock To Left)][DevtoolsGuideCustomizePlacement].  
+For more information, navigate to [Change DevTools placement (Undock, Dock To bottom, Dock To left)][DevtoolsGuideCustomizePlacement].  
 
 :::image type="complex" source="./media/devtools-intro-docking-menu.msft.png" alt-text="Screenshot of the Dock side menu in DevTools" lightbox="./media/devtools-intro-docking-menu.msft.png":::  
    Screenshot of the Dock side menu in DevTools  
@@ -75,25 +75,25 @@ In **Dock side**, choose any of the following layout options.
     
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="./media/devtools-intro-docking-left.msft.png" alt-text="Choose Dock To Left" lightbox="./media/devtools-intro-docking-left.msft.png":::  
-         Choose **Dock To Left**  
+      :::image type="complex" source="./media/devtools-intro-docking-left.msft.png" alt-text="Select Dock To left" lightbox="./media/devtools-intro-docking-left.msft.png":::  
+         Select **Dock To left**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::  
-      :::image type="complex" source="media/devtools-intro-docking-bottom.msft.png" alt-text="Choose Dock To Bottom" lightbox="media/devtools-intro-docking-bottom.msft.png":::  
-         Choose **Dock To Bottom**  
+      :::image type="complex" source="media/devtools-intro-docking-bottom.msft.png" alt-text="Select Dock To bottom" lightbox="media/devtools-intro-docking-bottom.msft.png":::  
+         Select **Dock To bottom**  
       :::image-end:::  
    :::column-end:::  
 :::row-end:::  
 :::row:::  
    :::column span="":::  
-      :::image type="complex" source="media/devtools-intro-docking-right.msft.png" alt-text="Choose Dock To Right" lightbox="media/devtools-intro-docking-right.msft.png":::  
-         Choose **Dock To Right**  
+      :::image type="complex" source="media/devtools-intro-docking-right.msft.png" alt-text="Select Dock To right" lightbox="media/devtools-intro-docking-right.msft.png":::  
+         Select **Dock To right**  
       :::image-end:::  
    :::column-end:::  
    :::column span="":::  
-      :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="Choose Undock into separate window" lightbox="media/devtools-intro-docking-own-window.msft.png":::  
-         Choose **Undock into separate window**  
+      :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="Select Undock into separate window" lightbox="media/devtools-intro-docking-own-window.msft.png":::  
+         Select **Undock into separate window**  
       :::image-end:::  
    :::column-end:::  
 :::row-end:::  
@@ -108,7 +108,7 @@ DevTools grew over a period of several years.  You may assume that DevTools are 
    Screenshot of the menu bar of the DevTools with labels that explain the different sections.  In order: Inspect tool, Device Emulation tool, Tools tab group, JavaScript Errors, Issues, Settings, Feedback, Customize, and Close.  
 :::image-end:::  
 
-*   The Inspect tool allows you to choose an element on the current webpage.  After you activate it, you may move your mouse over different parts of the webpage to get detailed information about the element and a color overlay to display dimensions, padding, and margin.  
+*   The Inspect tool allows you to choose an element on the current webpage.  After you activate it, you can move your mouse over different parts of the webpage to get detailed information about the element and a color overlay to display dimensions, padding, and margin.  
     
     :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="The Inspect tool with the first headline of this article chosen" lightbox="./media/devtools-intro-inspect-tool.msft.png":::  
        The Inspect tool with the first headline of this article chosen  
@@ -120,11 +120,11 @@ DevTools grew over a period of several years.  You may assume that DevTools are 
        Screenshot of the DevTools display of this article in an emulated mobile phone  
     :::image-end:::  
     
-*   The Tools tab group is a group of tabs that represent different tools that are used in different scenarios.  You may customize each of the tools and each tool may change based on the context.  To open a dropdown menu of more tools, choose the **More tabs** \(`>>`\) button.  Each of the tools is introduced later in the following section.  
-*   Next to the Tools tab group are optional error and issues shortcuts.  The shortcuts display when JavaScript errors or issues occur on the current webpage.  The **Open Console to view # errors, # warnings** \(**JavaScript Errors**\) button displays a red circle with an `X` followed by the number of JavaScript errors.  To open the [Console][DevtoolsGuideConsoleIndex] and learn about the error, choose the **JavaScript Errors** button.  The **Open Issues to view # issues** \(**Issues**\) button is a blue message icon followed by the number of issues.  To open the [Issues][DevtoolsGuideIssuesIndex] tool, choose **Issues** button.  
-*   The **Settings** button displays a gear icon.  To open DevTools **Settings** webpage, choose the **Settings** button.  The **Settings** webpage displays a menu to change **Preferences**, turn on **Experiments**, and much more.  
-*   The **Send Feedback** button displays torso with a chat bubble next to it.  To open the **Send Feedback** dialog, choose the **Send Feedback** button.  The **Send Feedback** dialog allows you to enter information to describe what happened and automatically includes a screenshot.  Use it to connect with the DevTools team to report problems, issues, or suggest ideas.  
-*   The **Customize and control Devtools** \(`...`\) button opens a dropdown menu.  It allows you to define where to dock the DevTools, search, open different tools, and much more.  
+*   The main toolbar contains tabs for tools that are used in various scenarios.  You can customize each of the tools, and each tool may change based on the context.  To show a tool that is on a tab that's hidden, select the **More tabs** \(`>>`\) button.   To add a tool to the main toolbar or to the drawer's toolbar, select the **More tools** (`+`) button.  Each tool is introduced below.  
+*   Next to the Tools tab group are optional error and issues shortcuts.  The shortcuts display when JavaScript errors or issues occur on the current webpage.  The **Open Console to view # errors, # warnings** \(**JavaScript Errors**\) button displays a red circle with an `X`, followed by the number of JavaScript errors.  To open the [Console][DevtoolsGuideConsoleIndex] and learn about the error, select the **JavaScript Errors** button.  The **Open Issues to view # issues** \(**Issues**\) button is a blue message icon followed by the number of issues.  To open the [Issues][DevtoolsGuideIssuesIndex] tool, select the **Issues** button.  
+*   The **Settings** button displays a gear icon.  To open DevTools **Settings** webpage, select the **Settings** button.  The **Settings** webpage displays a menu to change **Preferences**, turn on **Experiments**, and much more.  
+*   The **Send Feedback** button displays a torso with a chat bubble next to it.  To open the **Send Feedback** dialog, select the **Send Feedback** button.  The **Send Feedback** dialog allows you to enter information to describe what happened and automatically includes a screenshot.  Use it to connect with the DevTools team to report problems, issues, or suggest ideas.  
+*   The **Customize and control DevTools** \(`...`\) button opens a dropdown menu.  It allows you to define where to dock the DevTools, search, open different tools, and much more.  
     
 In the Tools tab group, you may open the different tools that are available in the DevTools.  The following list describes the most commonly used tools in the DevTools.  
 
@@ -139,13 +139,13 @@ In the Tools tab group, you may open the different tools that are available in t
 The DevTools provides lots of features and functionality to use with your web product.  Access the different parts of the DevTools in many ways, but the fastest way to access the features you need is to use the command menu.  For more information, navigate to [Run commands with the Microsoft Edge DevTools Command menu][DevtoolsGuideCommandMenuIndex].  To open the command menu, complete one of the following actions.  
 
 *   Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  
-*   Choose **Customize And Control DevTools** \(`...`\), and then choose **Run Command**.  
+*   Select **Customize And Control DevTools** \(`...`\), and then select **Run Command**.  
 
 :::image type="complex" source="./media/devtools-intro-command-menu.msft.png" alt-text="Screenshot of the command menu in DevTools" lightbox="./media/devtools-intro-command-menu.msft.png":::  
 Screenshot of the command menu in DevTools  
 :::image-end:::  
 
-The command menu allows you to type commands to display, hide, or run features in the DevTools.  With the command menu open, enter the word **changes**, and then choose **Drawer Show Changes**.  The **Changes** tool opens which is useful when you edit CSS, but is difficult to find in the DevTools UI.  
+The command menu allows you to type commands to display, hide, or run features in the DevTools.  With the command menu open, enter the word **changes**, and then select **Drawer: Show Changes**.  The **Changes** tool opens, which is useful when you edit CSS, but is difficult to find in the DevTools UI.  
 
 :::row:::  
    :::column span="":::  
@@ -164,7 +164,7 @@ The command menu allows you to type commands to display, hide, or run features i
 
 DevTools are customizable to meet your needs or the way you work.  To change settings, complete one of the following actions.  
 
-*   Choose **Settings** \(the gear icon on the top right\)  
+*   Select **Settings** \(the gear icon on the top right\)  
 *   Select `F1` or `?`.  
     
 In the **Preferences** section, you may change several parts of the DevTools.  For example, you may use the **Match the browser language** setting to use the same language in the DevTools that is use in your browser.  For another example, use the **Theme** setting to change the theme of the DevTools.  
@@ -173,16 +173,14 @@ In the **Preferences** section, you may change several parts of the DevTools.  F
    Screenshot of all the settings in DevTools  
 :::image-end:::  
 
-You may also change the settings of advanced features including the following features.    
+You can also change the settings of advanced features including the following features.    
 
 *   [Workspaces][DevtoolsGuideWorkspacesIndex].  
 *   Filter library code with the **Ignore List**.  
 *   Define the **Devices** you want to include in the device simulation and test mode.  For more information, navigate to [Emulate mobile devices in Microsoft Edge DevTools][DevtoolsGuideDeviceModeIndex].  
 *   Choose a network **Throttling** profile.  
 *   Define simulated **Locations**.  
-*   Customize keyboard shortcuts.  To use the same shortcuts in the DevTools as Visual Studio Code, complete the following actions.  
-    1.  Choose **Match shortcuts from preset**.  
-    1.  Choose **Visual Studio Code**.  
+*   Customize keyboard **Shortcuts**.  For example, to use the same shortcuts in the DevTools as Visual Studio Code select **Match shortcuts from preset** > **Visual Studio Code**.  
         
     :::image type="complex" source="./media/devtools-intro-match-keys.msft.png" alt-text="Screenshot of all the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code" lightbox="./media/devtools-intro-match-keys.msft.png":::  
        Screenshot of all the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code  
@@ -190,7 +188,7 @@ You may also change the settings of advanced features including the following fe
     
 ## Try experimental features  
 
-The DevTools team provides new features as experiments in the DevTools.  To get the full list of experiments, navigate to the DevTools **Settings**, and then choose **Experiments**.  You may turn each of the experiments on or off.  Help decide which one of the experiments is valuable to you.  For more information on the experiments, navigate to [Experimental features][DevtoolsGuideExperimentalFeaturesIndex].  
+The DevTools team provides new features as experiments in the DevTools.  To get the full list of experiments, navigate to the DevTools **Settings**, and then select **Experiments**.  You may turn each of the experiments on or off.  Help decide which one of the experiments is valuable to you.  For more information on the experiments, navigate to [Experimental features][DevtoolsGuideExperimentalFeaturesIndex].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
@@ -200,7 +198,7 @@ If you want to preview the [latest features coming to the DevTools][DevtoolsGuid
 
 ## See also  
 
-*   [DevtoolsGuide for Beginners: Get Started with HTML and the DOM][DevtoolsGuideBeginnersHtml]  
+*   [DevTools for beginners: Get Started with HTML and the DOM][DevtoolsGuideBeginnersHtml]  
 *   [Microsoft Edge (Chromium) DevTools Protocol][DevtoolsProtocolIndex]  
     
 <!-- links -->  
@@ -208,7 +206,7 @@ If you want to preview the [latest features coming to the DevTools][DevtoolsGuid
 [DevtoolsGuideBeginnersHtml]: ./beginners/html.md "DevTools for beginners: Get started with HTML and the DOM | Microsoft Docs"  
 [DevtoolsGuideCommandMenuIndex]: ./command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"  
 [DevtoolsGuideConsoleIndex]: ./console/index.md "Console overview | Microsoft Docs"  
-[DevtoolsGuideCustomizePlacement]: ./customize/placement.md "Change DevTools placement (Undock, Dock To Bottom, Dock To Left) | Microsoft Docs"  
+[DevtoolsGuideCustomizePlacement]: ./customize/placement.md "Change DevTools placement (Undock, Dock To bottom, Dock To left) | Microsoft Docs"  
 [DevtoolsGuideDeviceModeIndex]: ./device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideDomIndex]: ./dom/index.md "Get started with viewing and changing the DOM | Microsoft Docs"  
 [DevtoolsGuideEvaluatePerformanceIndex]: ./evaluate-performance/index.md "Get started with analyzing Runtime performance | Microsoft Docs"  
