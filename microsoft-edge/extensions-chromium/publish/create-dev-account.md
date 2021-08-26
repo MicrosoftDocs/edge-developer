@@ -1,6 +1,6 @@
 ---
 description: Learn how to register to a developer account to publish extensions to Microsoft Edge Add-ons store
-title: Register as a Microsoft Edge extension developer to publish extensions
+title: Register as a Microsoft Edge extension developer
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 08/25/2021
@@ -64,7 +64,8 @@ If you have a Partner Center account for which the Primary Owner is an MSA accou
 
 1.  Navigate to the [developer page][MicrosoftPartnerCenter].
 1.  Select **Partner Center**.  
-1.  If you have an MSA account, sign into it now.  If not, create a new MSA account.  Use the same MSA account that you use to sign into your Partner Center account (a Partner Center account for which the Primary Owner is an MSA account).  After you sign in, a registration form is displayed. The following table describes the fields on the registration form.  
+1.  If you have an MSA account, sign into it now.  If not, either create a new MSA account directly, or login by using your GitHub credentials.  Use the same MSA account that you use to sign into your Partner Center account (a Partner Center account for which the Primary Owner is an MSA account).  After you sign in, a registration form is displayed. The following table describes the fields on the registration form.  
+    1.  Or, sign-in by using your existing GitHub account.  Open the following link in a new tab or window: [Logging in to Partner Center by using your GitHub account](github.md).  Your GitHub account will be linked to a Microsoft account whose credentials you can use to register for the Microsoft Edge program.  Refer to the following table for information about the fields in the registration form.
     
     To enroll in the Microsoft Edge program, sign in to your Partner Center account and complete the form.  
     

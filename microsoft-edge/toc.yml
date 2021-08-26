@@ -339,6 +339,8 @@
           items:
             - name: Developer registration
               href: extensions-chromium/publish/create-dev-account.md
+            - name: Login through GitHub
+              href: extensions-chromium/publish/github.md
             - name: Add and manage users
               href: extensions-chromium/publish/aad-account.md
             - name: Publish your extension
