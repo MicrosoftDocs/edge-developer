@@ -17,7 +17,7 @@ To submit an extension to the Microsoft Edge Add-ons store, you must be register
 
 ## Before you begin  
 
-If you don't have an account or if you have an existing commercial account with Partner Center, create a new [Microsoft account (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] to register with the Microsoft Edge program.  To create a Microsoft account \(Outlook/live/Hotmail\), complete the following actions.  
+If you don't have an account, or if you have an existing _commercial_ account with Partner Center, create a new [Microsoft account (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] (or use an existing Microsoft account (MSA)) to register with the Microsoft Edge program.  To create a Microsoft account \(Outlook/live/Hotmail\), complete the following actions.  
 
 1. Navigate to [account.microsoft.com][MicrosoftAccount].  
 1. Choose **Create a Microsoft account**.
