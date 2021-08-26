@@ -1,6 +1,6 @@
 ---
 description: Resources, talks, videos, and blogs about Microsoft Edge WebView2
-title: Resources, talks, videos, and blogs about WebView2
+title: Videos and blogs about WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 08/09/2021
@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
-# Resources, talks, videos, and blogs about WebView2
+# Videos and blogs about WebView2
 
 These external resources cover Microsoft Edge WebView2.
 
