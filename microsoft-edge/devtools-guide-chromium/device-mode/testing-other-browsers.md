@@ -123,6 +123,7 @@ If you are not able to use the emulators and do not have access to real devices,
 *   [LambdaTest (commercial)][LambdaTest] helps you perform manual cross-browser testing on a combination of 2000+ browsers and operating systems. Users can record videos of complex bugs and share them through integration such as Microsoft Teams, Slack, and more. Users can speed-up their testing by running tests in parallel.
 *   [SauceLabs (commercial)][SauceLabs] enables you to run unit tests inside of an emulator, which may be really useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You are also able to do manual testing with your site.  
 *   [Device Anywhere (commercial)][AppExperience] does not use emulators but real devices which you are able to control remotely.  This is very useful in the event where you need to reproduce a problem on a specific device and may not display the bug using any of the options in the previous guides.  
+*   [TestingBot (commercial)][TestingBot] helps you to do both manual testing and automated testing on 3000+ browser & operating system combinations. Test both your websites and mobile apps on TestingBot's emulators and physical devices.
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
@@ -148,6 +149,7 @@ If you are not able to use the emulators and do not have access to real devices,
 [MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "Download the Firefox Browser"  
 [SauceLabs]: https://saucelabs.com "Sauce Labs"  
 [LambdaTest]: https://www.lambdatest.com/ "LambdaTest" 
+[TestingBot]: https://testingbot.com/ "TestingBot" 
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
