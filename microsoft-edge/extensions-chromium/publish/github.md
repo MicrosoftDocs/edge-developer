@@ -10,41 +10,46 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 ---
 # Logging in to Partner Center by using your GitHub account
 
-If you are a GitHub user, you don’t have to create a new Microsoft account and remember additional passwords. Just use GitHub auth to sign into Partner center and Publish your extensions to the Microsoft Edge add-ons website.
-
-After you have registered into the Microsoft Edge program, you can port your Chrome extensions to create Microsoft Edge extensions.  To allow your to better manage extensions, you can add more users to the Partner Center account by adding an Azure Account directory (AAD) account to your Partner Center account.
-
-
-<!-- ====================================================================== -->
+<!-- alt title: -->
 ## Publish Microsoft Edge add-ons by using your GitHub credentials
 
 Many extension developers use GitHub to build and manage their extension code base.  You can use the same GitHub account to login to Microsoft Partner Center and publish your add-on to the Microsoft Edge Add-ons website. 
 
+If you are a GitHub user, you don’t have to create a new Microsoft account and remember additional passwords.  Just use GitHub authentication to sign into Partner center and Publish your extensions to the Microsoft Edge add-ons website.
 
-<!-- ====================================================================== -->
-## Steps to sign-in using GitHub
+After you have registered into the Microsoft Edge program, you can port your Chrome extensions to create Microsoft Edge extensions.  To allow your to better manage extensions, you can add more users to the Partner Center account by adding an Azure Account directory (AAD) account to your Partner Center account.
 
 To begin submitting extensions by using GitHub, you must register for the Microsoft Edge program in Partner Center by using your GitHub credentials.  You'll need to link to a Microsoft account (an MSA account), as follows.
 
-### Step 1: Go to Partner Center to sign in
+
+<!-- ====================================================================== -->
+## Step 1: Go to Partner Center to sign in
 
 Go to Partner Center.  You'll be taken to the **Sign-in** page, with an option to sign in with your Microsoft account (also called an _MSA account_).
 
-### Step 2: Select “Sign-in options” to view alternative sign in options 
+
+<!-- ====================================================================== -->
+## Step 2: Select “Sign-in options” to view alternative sign in options 
 
 Select **Sign-in options** at the bottom of the page, and then select **Sign in with GitHub**.  Enter your GitHub account credentials you want to use to publish extensions. 
 > [!IMPORTANT]
 > Currently, you can use your personal account only on GitHub to login to Partner Center. You may not be able to use your work account on GitHub to log in as it is not supported at the moment.
 
-### Step 3: Authorize Microsoft to access your GitHub account
+
+<!-- ====================================================================== -->
+## Step 3: Authorize Microsoft to access your GitHub account
 
 Microsoft requires your permission to access your GitHub account.  Select **Authorize Microsoft-corp**.
 
-### Step 4: GitHub credentials linked with Microsoft account
+
+<!-- ====================================================================== -->
+## Step 4: GitHub credentials linked with Microsoft account
 
 Microsoft checks whether your GitHub account is already linked to a Microsoft (MSA) account.  If your GitHub account isn't linked to an MSA account, Microsoft will create a new MSA account and link it to your GitHub credentials.
 
-### Step 5: Register for Microsoft Edge Program on Partner Center using the newly linked GitHub account
+
+<!-- ====================================================================== -->
+## Step 5: Register for Microsoft Edge Program on Partner Center using the newly linked GitHub account
 
 Your GitHub account will now work as a Microsoft (MSA) account.  You can now use your GitHub credentials to register as a Microsoft Edge extension developer.  You can now publish extensions free of charge.
 
