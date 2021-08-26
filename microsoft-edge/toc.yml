@@ -245,6 +245,8 @@
                   href: devtools-guide-chromium/inspect-styles/edit-fonts.md
                 - name: Inspect CSS grid
                   href: devtools-guide-chromium/css/grid.md
+                - name: CSS-in-JS
+                  href: devtools-guide-chromium/css/css-in-js.md
                 - name: Force DevTools into Print Preview mode
                   href: devtools-guide-chromium/css/print-preview.md
             - name: Issues
@@ -409,9 +411,9 @@
       items:
         - name: Visual Studio Code overview
           href: visual-studio-code/index.md
-        - name: Debugger for Edge extension
+        - name: Debugger for Edge
           href: visual-studio-code/debugger-for-edge.md
-        - name: Microsoft Edge Devtools extension
+        - name: Microsoft Edge DevTools extension
           href: visual-studio-code/microsoft-edge-devtools-extension.md
         - name: webhint extension
           href: visual-studio-code/webhint.md
