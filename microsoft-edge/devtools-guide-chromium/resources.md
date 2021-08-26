@@ -1,18 +1,20 @@
----  
-description: Resources, talks, videos, and blogs about Microsoft Edge DevTools  
-title: Resources, talks, videos, and blogs about DevTools
-author: MSEdgeTeam  
-ms.author: msedgedevrel  
-ms.date: 08/11/2021  
-ms.topic: conceptual  
-ms.prod: microsoft-edge  
-ms.technology: devtools  
-keywords: microsoft edge, web development, f12 tools, devtools  
----  
-# Resources, talks, videos, and blogs about DevTools
+---
+description: Resources, talks, videos, and blogs about Microsoft Edge DevTools
+title: Videos and talks about DevTools
+author: MSEdgeTeam
+ms.author: msedgedevrel
+ms.date: 08/25/2021
+ms.topic: conceptual
+ms.prod: microsoft-edge
+ms.technology: devtools
+keywords: microsoft edge, web development, f12 tools, devtools
+---
+# Videos and talks about DevTools
 
 These external resources cover Microsoft Edge DevTools.
 
+
+<!-- ====================================================================== -->
 ## Videos of talks
 
 | Title | Upload date |
@@ -26,12 +28,14 @@ These external resources cover Microsoft Edge DevTools.
 | [MS Build SK121 End-to-end web development with VS Code and Microsoft Edge](https://www.youtube.com/watch?v=EvbZ9svD3DA) | May 2020 |
 
 
+<!-- ====================================================================== -->
 <!-- todo: uncomment when destination is live
-## See also  
+## See also
 
 *   [Resources, talks, videos, and blogs about Microsoft Edge WebView 2](../webview2/resources.md) -->
 
 
-## Getting in touch with the Microsoft Edge DevTools team  
+<!-- ====================================================================== -->
+## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]

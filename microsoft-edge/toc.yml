@@ -297,7 +297,7 @@
                   href: devtools-guide-chromium/javascript/disable.md
             - name: WebAuthn
               href: devtools-guide-chromium/webauthn/index.md
-        - name: Resources, talks, videos, and blogs
+        - name: Videos and talks
           href: devtools-guide-chromium/resources.md
         - name: Reference
           items:
