@@ -137,8 +137,8 @@ Add more controls to your Windows Forms from the toolbox, then process window re
 
 1. Resize the text box as shown.
 
-    :::image type="complex" source="./media/winforms-designer-txtbtn.png" alt-text="WinForms designer" lightbox="./media/winforms-designer-txtbtn.png":::
-       WinForms designer  
+    :::image type="complex" source="./media/winforms-designer-txtbtn.png" alt-text="WinForms designer textbox and button" lightbox="./media/winforms-designer-txtbtn.png":::
+       WinForms designer textbox and button
     :::image-end::: 
 
 1. Choose **View** > **Code** to open the `Form1.cs` file.
