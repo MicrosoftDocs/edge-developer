@@ -1,5 +1,5 @@
 ---
-description: Your job does not end with ensuring your site runs great across Microsoft Edge and Android.  Even though Device Mode is able to simulate a range of other devices like iPhones, we encourage you to check out solutions for emulation provided by other browsers.
+description: Your job doesn't end with making sure your site runs great across Microsoft Edge and Android.  Even though Device Mode can simulate a range of other devices such as smart phones, we encourage you to check out solutions for emulation provided by other browsers.
 title: Emulate and test other browsers
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -23,11 +23,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Emulate and test other browsers
 
-Your job doesn't end with ensuring your site runs great across Microsoft Edge and Android.  Even though **Device Mode** is able to simulate a range of other devices like iPhones, we encourage you to check out solutions for emulation provided by other browsers.
+Your job doesn't end with making sure your site runs great across Microsoft Edge and Android.  Even though **Device Mode** can simulate a range of other devices such as smart phones, we encourage you to check out solutions for emulation provided by other browsers.
 
 ### Summary
 
-*   When you do not have a particular device, or want to do a spot check on something, the best option is to emulate the device right inside your browser.
+*   When you don't have a particular device, or want to do a spot check on something, the best option is to emulate the device right inside your browser.
 *   Device emulators and simulators enable you to mimic your development site on a range of devices, from your workstation.
 *   Cloud-based emulators enable you to automate unit tests for your site across different platforms.
 
@@ -35,11 +35,11 @@ Your job doesn't end with ensuring your site runs great across Microsoft Edge an
 <!-- ====================================================================== -->
 ## Browser emulators
 
-Browser emulators are great for testing the responsiveness of a site, but each does not emulate differences in API, CSS support, and certain behaviors that is displayed on a mobile browser.  Test your site on browsers running on real devices to be certain everything behaves as expected.
+Browser emulators are great for testing the responsiveness of a site.  But a browser emulator doesn't emulate differences in API, CSS support, and certain behaviors that manifest only on a mobile browser on an actual device.  Test your site on browsers running on real devices, to be certain everything behaves as expected.
 
 ### Firefox Responsive Design View
 
-Firefox has a [responsive design view][MDNResponsiveDesignMode] that encourages you to stop thinking in terms of specific devices and instead explore how your design changes at common screen sizes or your own size by dragging the edges.
+Firefox has a [responsive design view][MDNResponsiveDesignMode] that encourages you to stop thinking in terms of specific devices and instead explore how your design changes at common screen sizes, or on your own screen size by dragging the edges of the window.
 
 ### EdgeHTML emulation
 
@@ -51,7 +51,7 @@ Use [IE 11 Emulation][Ie11DevToolsEmulation] to simulate how your page might loo
 <!-- ====================================================================== -->
 ## Device emulators and simulators
 
-Device simulators and emulators simulate not just the browser environment but the entire device.  Each are useful to test things that require OS integration; for example, form input with virtual keyboards.
+Device simulators and emulators simulate not just the browser environment but the entire device.  Each simulator is useful to test things that require OS integration, such as form input with virtual keyboards.
 
 ### Android emulator
 
@@ -61,7 +61,7 @@ Device simulators and emulators simulate not just the browser environment but th
 :::image-end:::
 -->
 
-At the moment, there is no way to install Microsoft Edge on an Android emulator.  However, you can use the Android Browser, the Chromium Content Shell, and Firefox for Android, which we review later in this article.  Chromium Content Shell runs the same Chromium rendering engine as Microsoft Edge, but comes without any of the browser-specific features.
+At the moment, there is no way to install Microsoft Edge on an Android emulator.  However, you can use the Android Browser, the Chromium Content Shell, and Firefox for Android, which we review later in this article.  Chromium Content Shell runs the same Chromium rendering engine as Microsoft Edge, but comes without browser-specific features.
 
 The Android emulator comes with the Android SDK which you need to download as part of [Android Studio][AndroidStudioDownload].  Then follow the instructions to [set up a virtual device][AndroidStudioCreateManageVirtualDevices] and [start the emulator][AndroidStudioRunAppsAndroidEmulator].
 After your emulator is booted, select the **Browser** icon, and test your site on the old Stock Browser for Android.
@@ -123,9 +123,9 @@ Microsoft Edge \(EdgeHTML\) Virtual Machines \(VMs\) enable you to access differ
 <!-- ====================================================================== -->
 ## Cloud-based emulators and simulators
 
-If you are not able to use the emulators and do not have access to real devices, then cloud-based emulators are the next-best thing.  A big advantage of cloud-based emulators over real devices and local emulators is that you are able to automate unit tests for your site across different platforms.
+If you aren't able to use the emulators and you don't have access to real devices, then cloud-based emulators are the next-best thing.  A big advantage of cloud-based emulators over real devices and local emulators is that you can automate unit tests for your site across different platforms.
 
-These are examples of cloud-based emulator products.  Microsoft doesn't endorse specific products from other companies.  This is only a small sampling and is not a comprehensive catalog of products.  The following descriptions are from the products' information sites and are shown here as examples of features or capabilities to consider.
+These are examples of cloud-based emulator products.  Microsoft doesn't endorse specific products from other companies.  This is only a small sampling and is not a comprehensive catalog of products.  The following descriptions are from the products' information sites and are shown here as examples of features or capabilities to consider.  We don't plan to add more products to this list.
 
 *   [BrowserStack][BrowserStack] is easy to use for manual testing.  You select an operating system, select your browser version and device type, select a URL to browse, and it spins up a hosted virtual machine that you can interact with.  You are able to also run multiple emulators in the same screen, enabling you to test the look and feel of your app across multiple devices at the same time.
 
