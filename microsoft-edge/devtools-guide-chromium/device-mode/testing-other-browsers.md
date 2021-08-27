@@ -125,7 +125,7 @@ Microsoft Edge \(EdgeHTML\) Virtual Machines \(VMs\) enable you to access differ
 
 If you aren't able to use the emulators and you don't have access to real devices, then cloud-based emulators are the next-best thing.  A big advantage of cloud-based emulators over real devices and local emulators is that you can automate unit tests for your site across different platforms.
 
-These are examples of cloud-based emulator products.  Microsoft doesn't endorse specific products from other companies.  This is only a small sampling and is not a comprehensive catalog of products.  The following descriptions are from the products' information sites and are shown here as examples of features or capabilities to consider.  We don't plan to add more products to this list.
+The following products are examples of cloud-based emulators and related products.  These descriptions are from the products' information sites and serve as examples of features or capabilities to consider.
 
 *   [BrowserStack][BrowserStack] is easy to use for manual testing.  You select an operating system, select your browser version and device type, select a URL to browse, and it spins up a hosted virtual machine that you can interact with.  You are able to also run multiple emulators in the same screen, enabling you to test the look and feel of your app across multiple devices at the same time.
 
@@ -136,6 +136,8 @@ These are examples of cloud-based emulator products.  Microsoft doesn't endorse 
 *   [SauceLabs][SauceLabs] enables you to run unit tests inside of an emulator, which can be really useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You are also able to do manual testing with your site.
 
 *   [TestingBot][TestingBot] helps you to do both manual testing and automated testing on various browser and operating system combinations.  Test both your websites and mobile apps on TestingBot's emulators and physical devices.
+
+Microsoft doesn't endorse specific products from other companies.  This above is only a representative sampling of products, and we don't plan to add more products to this list.
 
 
 <!-- ====================================================================== -->
