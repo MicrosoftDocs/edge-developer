@@ -147,6 +147,7 @@ Add more controls to your Windows Forms from the toolbox, then process window re
 
 1. Replace the following code:
     
+    ```csharp
         public Form1()
     {
         InitializeComponent();
