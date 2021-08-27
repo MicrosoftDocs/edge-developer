@@ -3,7 +3,7 @@ description: Get started guide with WebView2 for WinForms apps
 title: Get started with WebView2 for WinForms apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 09/01/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -28,19 +28,25 @@ Install the following list of prerequisites before proceeding.
 
 Start with a basic desktop project that contains a single main window.  
 
-1.  In Visual Studio, choose **Windows Forms .NET Framework App** > **Next**.
+1. Open Visual Studio. In the opening panel, choose **Create a new project**.
+
+    :::image type="complex" source="./media/winforms-opening-panel.png" alt-text="Visual Studio opening panel" lightbox="./media/winforms-opening-panel.png":::
+       Visual Studio opening panel  
+    :::image-end:::
+
+1. Locate and to choose **C# Windows Forms .NET Framework App** > **Next**.
     
     :::image type="complex" source="./media/winforms-new-project.png" alt-text="New project" lightbox="./media/winforms-new-project.png":::
        New project  
     :::image-end:::
     
-1.  Enter values for **Project name** and **Location**.  Choose **.NET Framework 4.6.2** or later.  
+1.  Enter values for **Project name** and **Location**.  Choose **.NET Framework 4.6.2 ???NOT AVAILABLE???** or later.  
     
     :::image type="complex" source="./media/winforms-start-proj.png" alt-text="Start project" lightbox="./media/winforms-start-proj.png":::
        Start project  
     :::image-end:::
     
-1.  To create your project, choose **Create**.
+1.  Choose **Create**.
     
 ## Step 2 - Install WebView2 SDK
 
@@ -52,11 +58,19 @@ Use NuGet to add the WebView2 SDK to the project.
        Manage NuGet Packages
     :::image-end:::
     
-1.  In the search bar, type `Microsoft.Web.WebView2` > choose **Microsoft.Web.WebView2**.  
+1.  Choose **Browse**. In the search bar, type `Microsoft.Web.WebView2` and choose **Microsoft.Web.WebView2**.  
     
     :::image type="complex" source="./media/install-nuget.png" alt-text="NuGet" lightbox="./media/install-nuget.png":::
        NuGet  
     :::image-end:::
+
+1. Accept the default version and choose **Install**.
+
+    :::image type="complex" source="./media/winforms-install-webview2-preview.png" alt-text="Preview Changes" lightbox="./media/winforms-install-webview2-preview.png":::
+       Preview Changes  
+    :::image-end:::
+
+1. Choose **OK** to continue.
     
     Start developing apps using the WebView2 API.  To build and run the project, select `F5`.  The running project displays an empty window.  
     
@@ -68,71 +82,97 @@ Use NuGet to add the WebView2 SDK to the project.
 
 Add a WebView to your app.  
 
-1.  Open the **Windows Forms Designer**.  
-1.  Search for **WebView2** in the **Toolbox**.  
+1. Choose **Project** > **Add Form (Windows Forms)...**.  
+1. In the Add New Item panel, choose **Visual C# Items** > **Web** > **Windows Forms** > **Form (Windows Forms)** and choose **Add**.
+1. Choose **View** > **Toolbox**.
+1. In the **Toolbox** choose **WebView2 Windows Forms Control** to expand the options.  
     
     > [!NOTE]
-    > If you are using Visual Studio 2017, by default **WebView2** may not display in the **Toolbox**.  To enable the behavior, choose **Tools** > **Options** > **General** > set the **Automatically Populate Toolbox** setting to `True`.  
+    > If you are using Visual Studio 2017, by default **WebView2** may not display in the **Toolbox**. To enable the behavior, choose **Tools** > **Options** > **General** > and set the **Automatically Populate Toolbox** setting to `True`.  
     
-    Drag and drop the **WebView2** control into the Windows Forms App.
+1. Drag and drop the **WebView2** control into the Windows Forms App.
     
-    :::image type="complex" source="./media/winforms-toolbox.png" alt-text="Toolbox displaying WebView2":::
+    :::image type="complex" source="./media/winforms-toolbox.png" alt-text="Toolbox displaying WebView2" lightbox="./media/winforms-toolbox.png":::
        Toolbox displaying WebView2  
     :::image-end:::  
     
-1.  Set the `(Name)` property to `webView`.
+1. Close the **Toolbox**.
+
+1. In the Properties panel, set the **(Name)** property to **webView**. Use the **Categorized** and **Alphabetical** sort options as needed to find properties.
     
-    :::image type="complex" source="./media/winforms-properties.png" alt-text="Properties of the WebView2 control":::
+    :::image type="complex" source="./media/winforms-properties.png" alt-text="Properties of the WebView2 control" lightbox="./media/winforms-properties.png":::
        Properties of the WebView2 control
     :::image-end:::
     
-1.  The `Source` property sets the initial URI displayed in the WebView2 control.  Set the `Source` property to `https://www.microsoft.com`.  
+1.  The **Source** property sets the initial URI displayed in the WebView2 control. Set the **Source** property to `https://www.microsoft.com`.
+
+1. Select **F5** to build and run your project.
+
+    Make sure the WebView2 control displays [https://www.microsoft.com][MicrosoftMain].
+
+    :::image type="complex" source="./media/winforms-hello-webview.png" alt-text="hello webview" lightbox="./media/winforms-hello-webview.png":::
+       hello webview  
+    :::image-end:::
+
+    > [!NOTE]
+    > If you are working on a high DPI monitor, you may have to [configure your Windows Forms app for high DPI support][DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport].  
     
-    :::image type="complex" source="./media/winforms-source.png" alt-text="The Source property of the WebView2 control":::
-       The **Source** property of the WebView2 control
-    :::image-end:::  
+## Step 4 - Add controls and process window resize events  
 
-To build and run your project, select `F5`.  Ensure your WebView2 control displays [https://www.microsoft.com][MicrosoftMain].
+Add more controls to your Windows Forms from the toolbox, then process window resize events.  
 
-:::image type="complex" source="./media/winforms-hello-webview.png" alt-text="hello webview" lightbox="./media/winforms-hello-webview.png":::
-   hello webview  
-:::image-end:::    
-
-> [!NOTE]
-> If you are working on a high DPI monitor, you may have to [configure your Windows Forms app for high DPI support][DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport].  
-
-## Step 4 - Handle Window Resize Events  
-
-Add a few more controls to your Windows Forms from the toolbox, and then handle window resize events appropriately.  
-
-1.  In the **Windows Forms Designer**, open the **Toolbox**.  
-1.  Drag and Drop a **TextBox** into the Windows Forms App.  Name the **TextBox** `addressBar` in the **Properties Tab**.  
-1.  Drag and Drop a **Button** into the Windows Forms App.  Change the text in the **Button** to `Go!` and name the **Button** `goButton` in the **Properties Tab**.  
-    
-    The app should look like the following image in the designer.  
+1. Choose **View** > **Toolbox**.
+1. In the **Toolbox** choose **Common Controls**. 
+1. Drag and drop **TextBox** control into the Windows Forms App.
+1. In the Properties panel, change the **\(Name\)** to **addressBar**.  
+1. Drag and Drop a **Button** control into the Windows Forms App.
+1. In the Properties panel, change the **\(Name\)** to **goButton**.
+1. Change the **Text** property to **Go!**.
+1. Resize the button as needed to display the text.
+1. Arrange the text box to the left of the button, aligned by the text as shown. 
     
     :::image type="complex" source="./media/winforms-designer.png" alt-text="WinForms designer" lightbox="./media/winforms-designer.png":::
        WinForms designer  
     :::image-end:::  
 
-1.  In the `Form1.cs` file, define `Form_Resize` to keep the controls in place when the App Window is resized.
+1. Resize the text box as shown.
+
+    :::image type="complex" source="./media/winforms-designer-txtbtn.png" alt-text="WinForms designer" lightbox="./media/winforms-designer-txtbtn.png":::
+       WinForms designer  
+    :::image-end::: 
+
+1. Choose **View** > **Code** to open the `Form1.cs` file.
+
+    Define `Form_Resize` to keep the controls in place when the App Window is resized.
+
+1. Replace the following code:
     
-```csharp
-public Form1()
-{
-    InitializeComponent();
-    this.Resize += new System.EventHandler(this.Form_Resize);
-}
+        public Form1()
+    {
+        InitializeComponent();
+    }
+    ```
+    
+    with:
+    
+    ```csharp
+    public Form1()
+    {
+        InitializeComponent();
+        this.Resize += new System.EventHandler(this.Form_Resize);
+    }
+    
+    private void Form_Resize(object sender, EventArgs e)
+    {
+        webView.Size = this.ClientSize - new System.Drawing.Size(webView.Location);
+        goButton.Left = this.ClientSize.Width - goButton.Width;
+        addressBar.Width = goButton.Left - addressBar.Left;
+    }
+    ```  
 
-private void Form_Resize(object sender, EventArgs e)
-{
-    webView.Size = this.ClientSize - new System.Drawing.Size(webView.Location);
-    goButton.Left = this.ClientSize.Width - goButton.Width;
-    addressBar.Width = goButton.Left - addressBar.Left;
-}
-```  
-
-To build and run your project, select `F5`.  Ensure the app displays similar to the following screenshot.
+1. Select **F5** to build and run the project. 
+    
+    Make sure the app display is similar to the following image.
 
 :::image type="complex" source="./media/winforms-app.png" alt-text="app" lightbox="./media/winforms-app.png":::
    App  
