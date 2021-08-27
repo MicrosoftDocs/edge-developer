@@ -43,7 +43,7 @@ Firefox has a [responsive design view][MDNResponsiveDesignMode] that encourages 
 
 To emulate Windows Phones, use the Microsoft Edge \(EdgeHTML\) [built-in emulation][ArchiveMicrosoftEdgeDevtoolsEmulation].  
 
-Use [IE 11 Emulation][Ie11DevToolsEmulation] to simulate how your page may look in older versions of Internet Explorer.  
+Use [IE 11 Emulation][Ie11DevToolsEmulation] to simulate how your page might look in older versions of Internet Explorer.  
 
 ## Device emulators and simulators  
 
@@ -57,7 +57,7 @@ Device simulators and emulators simulate not just the browser environment but th
 :::image-end:::  
 -->  
 
-At the moment, there is no way to install Microsoft Edge on an Android emulator.  However, you may use the Android Browser, the Chromium Content Shell, and Firefox for Android which we review later in this guide.  Chromium Content Shell runs the same Chromium rendering engine as Microsoft Edge, but comes without any of the browser specific features.  
+At the moment, there is no way to install Microsoft Edge on an Android emulator.  However, you can use the Android Browser, the Chromium Content Shell, and Firefox for Android, which we review later in this guide.  Chromium Content Shell runs the same Chromium rendering engine as Microsoft Edge, but comes without any of the browser specific features.  
 
 The Android emulator comes with the Android SDK which you need to download as part of [Android Studio][AndroidStudioDownload].  Then follow the instructions to [set up a virtual device][AndroidStudioCreateManageVirtualDevices] and [start the emulator][AndroidStudioRunAppsAndroidEmulator].  
 Once your emulator is booted, choose on the Browser icon, and test your site on the old Stock Browser for Android.  
@@ -115,14 +115,22 @@ When you are done, learn how to work with the simulator through [Apple Developer
 
 Microsoft Edge \(EdgeHTML\) Virtual Machines \(VMs\) enable you to access different versions of EdgeHTML and IE on your computer via VirtualBox \(or VMWare\).  Choose a [virtual machine on the download page][MicrosoftDeveloperEdgeVms].  
 
-## Cloud-based emulators and simulators  
+## Cloud-based emulators and simulators
 
-If you are not able to use the emulators and do not have access to real devices, then cloud-based emulators are the next best thing.  A big advantage of cloud-based emulators over real devices and local emulators is that you are able to automate unit tests for your site across different platforms.  
+If you are not able to use the emulators and do not have access to real devices, then cloud-based emulators are the next best thing.  A big advantage of cloud-based emulators over real devices and local emulators is that you are able to automate unit tests for your site across different platforms.
 
-*   [BrowserStack (commercial)][BrowserStack] is the easiest to use for manual testing.  You select an operating system, select your browser version and device type, select a URL to browse, and it spins up a hosted virtual machine with which you may interact.  You are able to also run multiple emulators in the same screen, enabling you to test the look and feel of your app across multiple devices at the same time.  
-*   [LambdaTest (commercial)][LambdaTest] helps you perform manual cross-browser testing on a combination of 2000+ browsers and operating systems. Users can record videos of complex bugs and share them through integration such as Microsoft Teams, Slack, and more. Users can speed-up their testing by running tests in parallel.
-*   [SauceLabs (commercial)][SauceLabs] enables you to run unit tests inside of an emulator, which may be really useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You are also able to do manual testing with your site.  
-*   [Device Anywhere (commercial)][AppExperience] does not use emulators but real devices which you are able to control remotely.  This is very useful in the event where you need to reproduce a problem on a specific device and may not display the bug using any of the options in the previous guides.  
+These are examples of cloud-based emulator products.  Microsoft doesn't endorse specific products from other companies.  This is only a small sampling and is not a comprehensive catalog of products.  The following descriptions are from the products' information sites and are shown here as examples of features or capabilities to consider.
+
+*   [BrowserStack][BrowserStack] is easy to use for manual testing.  You select an operating system, select your browser version and device type, select a URL to browse, and it spins up a hosted virtual machine that you can interact with.  You are able to also run multiple emulators in the same screen, enabling you to test the look and feel of your app across multiple devices at the same time.
+
+*   [Device Anywhere][AppExperience] does not use emulators, but real devices which you are able to control remotely.  This is useful when you need to reproduce a problem on a specific device and an issue might not appear in some reports.
+
+*   [LambdaTest][LambdaTest] helps you perform manual cross-browser testing on a combination of various browsers and operating systems.  Users can record videos of complex bugs and share them through integration such as Microsoft Teams, Slack, and more.  Users can speed-up their testing by running tests in parallel.
+
+*   [SauceLabs][SauceLabs] enables you to run unit tests inside of an emulator, which can be really useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You are also able to do manual testing with your site.  
+
+*   [TestingBot][TestingBot] helps you to do both manual testing and automated testing on various browser and operating system combinations.  Test both your websites and mobile apps on TestingBot's emulators and physical devices.
+
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
