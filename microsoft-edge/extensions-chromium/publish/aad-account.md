@@ -43,7 +43,9 @@ First, determine whether you have a Partner Center account.  If you have a Partn
 
 ### If you don't have a Partner Center account
 
-Use a Microsoft account (MSA) to register with the Microsoft Edge program, by following the steps in the article [Register as a Microsoft Edge extension developer][DeveloperRegistration].<!-- = create-dev-account.md-->  As mentioned in that article, you can use your GitHub account to create a Microsoft account (MSA).
+1.  Use a Microsoft account (MSA) to register with the Microsoft Edge program, by following the steps in the article [Register as a Microsoft Edge extension developer][DeveloperRegistration].<!-- = create-dev-account.md-->  As mentioned in that article, you can use your GitHub account to create a Microsoft account (MSA).
+
+Next, do [Step 2: Associate Azure Active Directory with your Microsoft Edge Program account](#step-2-associate-azure-active-directory-with-your-microsoft-edge-program-account) below.
 
 
 ### If the Primary Owner of your Partner Center account isn't a Microsoft account (MSA)
