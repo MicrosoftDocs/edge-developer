@@ -60,7 +60,7 @@ If you don't have a Partner Center account, or you have a Partner Center account
 
 To create a Microsoft account (MSA):
 
-1. Decide if you want to use your existing GitHub account to create a Microsoft account (MSA).  See [Publish add-ons by using your GitHub credentials](github.md).
+1. Decide if you want to use your existing GitHub account to create a Microsoft account (MSA).  See [Publish Microsoft Edge extensions by using a GitHub account](github.md).
 
 1. If you aren't using your GitHub account to create the Microsoft account (MSA), navigate to [account.microsoft.com][MicrosoftAccount].
 
@@ -77,15 +77,16 @@ If you have a Partner Center account for which the Primary Owner is a Microsoft 
 <!-- ====================================================================== -->
 ## Enroll in the Microsoft Edge program on Partner Center
 
-<!-- the link and first two steps were incorrect, unclear the intended path/experience was unclear.  So these two steps are temporary general placeholder steps.  The problem was terse link text and no visible URL.  Provide accurate, specific link text here if possible/static.  This URL behaves differently when short vs. long/deep-link; goes to an orientation/invitation webpage if short URL, or to Partner Center if long URL. -->
+<!-- 1.  Navigate to the [webpage about Partner Center](https://partner.microsoft.com).  You might see a "Join the Microsoft Partner Network" page with a **Become a partner** button, or a "Welcome back" page with a **Visit Partner Center** button.  Select the **Become a partner** button or the **Visit Partner Center** button. -->
 
-1.  Navigate to the webpage about [Partner Center](https://partner.microsoft.com).  You might see a "Join the Microsoft Partner Network" page with a **Become a partner** button, or a "Welcome back" page with a **Visit Partner Center** button.
+<!-- todo: test this step -->
+1.  Navigate to the [Partner Center developer login page](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), and then select **Partner Center**.
 
-1.  Select the **Become a partner** button or the **Visit Partner Center** button.
+1.  If you have a Microsoft account (MSA), sign into it now.  Use the same Microsoft account (MSA) that you use to sign into your Partner Center account.  A _Microsoft account (MSA)_ is an Outlook.com, Live.com, or Hotmail.com account.
 
-1.  If you have a Microsoft account (MSA), sign into it now.  If not, either create a new Microsoft account (MSA) directly, or login by using your GitHub credentials.  Use the same Microsoft account (MSA) that you use to sign into your Partner Center account.  The Partner Center account must have a Primary Owner that's a Microsoft account (MSA)).  After you sign in, a registration form is displayed. The following table describes the fields on the registration form.
+1.  If you don't have a Microsoft account (MSA), either create a new Microsoft account (MSA) directly, or login to Partner Center by using your GitHub account using the next step.  The Partner Center account must have a Primary Owner that's a Microsoft account (MSA).  After you sign in, a registration form is displayed.  Use the following table to help you fill in the fields in the registration form.
 
-    1.  If you want to login to Partner Center by using your existing GitHub account, see [Publish add-ons by using your GitHub credentials](github.md).  Your GitHub account will be linked to a Microsoft account whose credentials you can use to register for the Microsoft Edge program.  Use the following table to help you fill-in fields in the registration form.
+1.  If you want to login to Partner Center by using your existing personal GitHub account, open the article [Publish Microsoft Edge extensions by using a GitHub account](github.md) in a new tab or window, and follow the steps.  Your GitHub account will be linked to an automatically created Microsoft account (MSA) whose credentials you can use to register for the Microsoft Edge program.  Use the following table to help you fill in the fields in the registration form.
 
     To enroll in the Microsoft Edge program, sign in to your Partner Center account and complete the form.
     

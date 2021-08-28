@@ -1,5 +1,5 @@
 ---
-description: Learn how to add and manage users from your organization onto the Microsoft Edge program.
+description: Adding and managing users from your organization onto the Microsoft Edge program to help manage the Partner Center account.  Enable your other team members to publish Microsoft Edge extensions to the Microsoft Edge Add-ons website using your Partner Center account.
 title: Add users to the Microsoft Edge program
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -9,6 +9,11 @@ ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
 ---
 # Add users to the Microsoft Edge program
+
+<!-- better?
+# Add users to your Partner Center account
+-->
+<!-- todo globally: "Microsoft Edge program", or other term? -->
 
 <!-- todo: This article is supposed to only focus narrowly on adding users to an existing Partner Center account that already is able to manage extensions.  But this article currently covers the same ground as create-dev-accounts.md.  Delete/merge into that article. -->
 

@@ -339,7 +339,7 @@
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
             - name: Native messaging
               href: extensions-chromium/developer-guide/native-messaging.md
-        - name: Publish to the Add-ons store
+        - name: Publish to the Add-ons website
           items:
             - name: Register as an extension developer
               href: extensions-chromium/publish/create-dev-account.md
