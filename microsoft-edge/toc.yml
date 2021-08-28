@@ -173,7 +173,7 @@
               items:
                 - name: Use the debugger features
                   href: devtools-guide-chromium/javascript/reference.md
-                - name: Pause your code with breakpoints
+                - name: Pause code with breakpoints
                   href: devtools-guide-chromium/javascript/breakpoints.md
                 - name: Map pre-processed code to source code
                   href: devtools-guide-chromium/javascript/source-maps.md
@@ -327,15 +327,15 @@
           items:
             - name: API support
               href: extensions-chromium/developer-guide/api-support.md
-            - name: Port Chromium Extension to Microsoft Edge
+            - name: Port a Chromium extension to Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
-            - name: Migrate your extension from manifest v2 to v3
+            - name: Migrate an extension from manifest v2 to v3
               href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
             - name: Alternate methods of distributing extensions
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
             - name: Native messaging
               href: extensions-chromium/developer-guide/native-messaging.md
-        - name: Publish to Microsoft Store
+        - name: Publish to the add-ons website
           items:
             - name: Register as an extension developer
               href: extensions-chromium/publish/create-dev-account.md
@@ -343,9 +343,9 @@
               href: extensions-chromium/publish/github.md
             - name: Add and manage users
               href: extensions-chromium/publish/aad-account.md
-            - name: Publish your extension
+            - name: Publish an extension
               href: extensions-chromium/publish/publish-extension.md
-            - name: Update your extension
+            - name: Update an extension
               href: extensions-chromium/publish/update-extension.md
             - name: Submission states
               href: extensions-chromium/publish/submission-states.md
@@ -397,7 +397,7 @@
           href: progressive-web-apps-chromium/webappmanifests.md
         - name: Experimental features
           href: progressive-web-apps-chromium/experimental-features/index.md
-        - name: Publish your PWA to the Microsoft Store
+        - name: Publish a PWA to the Microsoft Store
           href: progressive-web-apps-chromium/microsoft-store.md
     - name: Playwright overview
       href: playwright/index.md

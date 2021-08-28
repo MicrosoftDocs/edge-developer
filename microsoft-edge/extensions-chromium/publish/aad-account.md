@@ -74,11 +74,11 @@ Next, do [Step 2: Associate Azure Active Directory with your Microsoft Edge Prog
 <!-- ====================================================================== -->
 ## Step 2: Associate Azure Active Directory with your Microsoft Edge Program account
 
-Next, you'll link your Azure Active Directory tenants (Azure AD tenants) with your Microsoft Edge Program account, to enable managing Microsoft Edge extensions.  You can use Azure Active Directory to add users to your _Microsoft Edge Program account_ and manage those users in that account.  You can add individual users, groups of users, or Azure Active Directory applications. 
+Next, you'll link your Azure Active Directory tenants (Azure AD tenants) with your Microsoft Edge Program account, to enable managing Microsoft Edge extensions.  You can use Azure Active Directory to add users to your Microsoft Edge Program account and manage those users in that account.  You can add individual users, groups of users, or Azure Active Directory applications.
 
-### Associate Azure Active Directory with your _Microsoft Edge Program account_
+### Associate Azure Active Directory with your Microsoft Edge Program account
 
-To be able to add users to your _Microsoft Edge Program account_, and to manage those users in that account, you must first associate your _Microsoft Edge Program account_ with your organization's Azure Active Directory tenant (Azure AD tenant).  If your organization already uses Office 365 or other business services from Microsoft, you already have an Azure AD tenant.  Otherwise, you can create a new Azure AD tenant for free.
+To be able to add users to your Microsoft Edge Program account, and to manage those users in that account, you must first associate your Microsoft Edge Program account with your organization's Azure Active Directory tenant (Azure AD tenant).  If your organization already uses Office 365 or other business services from Microsoft, you already have an Azure AD tenant.  Otherwise, you can create a new Azure AD tenant for free.
 
 For more information, see the section [Create a brand new Azure AD to associate with your Partner Center account][AssociateAzureADPCnew] in the article _Associate Azure Active Directory with your Partner Center account_.
 
@@ -91,7 +91,7 @@ For more information, see [Associate Azure Active Directory with your Partner Ce
 <!-- ====================================================================== -->
 ## Step 3: Add users, groups, and Azure Active Directory applications to your account
 
-Once you've set up the Azure Active Directory association, on the Partner Center you can add users at **Account settings** > **User management**.  Each user has full access the extensions available in the program.  You can also add groups of users, or add Azure Active Directory applications, to grant them access to your Partner Center account.  For more information about adding users, see [Add users, groups, and Azure AD applications][AddAzure].
+After you've set up the Azure Active Directory association, on the Partner Center you can add users at **Account settings** > **User management**.  Each user has full access the extensions available in the program.  You can also add groups of users, or add Azure Active Directory applications, to grant them access to your Partner Center account.  For more information about adding users, see [Add users, groups, and Azure AD applications][AddAzure].
 
 
 <!-- ====================================================================== -->
@@ -110,7 +110,7 @@ If you need help or assistance with associating your Azure Active Directory acco
 <!-- ====================================================================== -->
 <!-- links -->
 [DeveloperRegistration]: ./create-dev-account.md "Register as a Microsoft Edge extension developer | Microsoft Docs"
-[ContactEdgeExtensions]: ./contact-extensions-team.md "Contact Edge Extensions support | Microsoft Docs"
+[ContactEdgeExtensions]: ./contact-extensions-team.md "Contact Microsoft Edge extensions support | Microsoft Docs"
 
 <!-- DMC/windows/uwp -->
 [AssociateAADWithPartnerCenterAccount]: /windows/uwp/publish/associate-azure-ad-with-partner-center

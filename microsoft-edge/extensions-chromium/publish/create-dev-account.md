@@ -39,36 +39,47 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
 
 <!-- this article has a broader audience than aad-account.md -->
 
-To submit an extension to the Microsoft Edge Add-ons website, you must be registered as a developer with the Microsoft Edge program.  The Microsoft Edge program is located on [Partner Center][MicrosoftPartnerCenter].  
-
-> [!IMPORTANT]
-> There is no registration fee for submitting extensions to the Microsoft Edge program.  
-
-
-<!-- ====================================================================== -->
-## Before you begin  
-
-If you don't have an account, or if you have an existing _commercial_ account with Partner Center, create a new [Microsoft account (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts] (or use an existing Microsoft account (MSA)) to register with the Microsoft Edge program.  To create a Microsoft account (such as an Outlook, Live, or Hotmail account):
-
-1. Navigate to [account.microsoft.com][MicrosoftAccount].  
-1. Select **Create a Microsoft account**.
-1. Complete the registration steps.
-    
-If you have a Partner Center account for which the Primary Owner is an MSA account, use that MSA account to sign into your Partner Center account.  Then enroll in the Microsoft Edge program. 
+To submit an extension to the Microsoft Edge Add-ons website, you must be registered as a developer with the Microsoft Edge program.  The Microsoft Edge program is located on [Partner Center][MicrosoftPartnerCenter].
 
 > [!NOTE]
-> The Microsoft Edge extensions does not currently support registering with a work or school account. You need to register using an MSA account and then link your Azure AD tenants with that account for extension management. 
+> There is no registration fee for submitting extensions to the Microsoft Edge program.
 
 
 <!-- ====================================================================== -->
-## Enroll in the Microsoft Edge program on Partner Center  
+## Before you begin
+
+If you don't have a Partner Center account, or you have a Partner Center account but its Primary Owner isn't an MSA account (such as an Outlook.com, Live.com, or Hotmail.com account), you must either:
+*  Use an existing Microsoft account (MSA)) to register with the Microsoft Edge program.
+*  Create a new [Microsoft account (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts].
+
+To create a Microsoft account (MSA), such as an Outlook.com, Live.com, or Hotmail.com account:
+
+1. Decide if you want to use your existing GitHub account to create an MSA account.  See [Publish add-ons by using your GitHub credentials](github.md).
+
+1. If you aren't using your GitHub account to create the MSA account, navigate to [account.microsoft.com][MicrosoftAccount].
+
+1. Select **Create a Microsoft account**.
+
+1. Complete the registration steps.
+
+If you have a Partner Center account for which the Primary Owner is an MSA account, use that MSA account to sign into your Partner Center account.  Then enroll in the Microsoft Edge program.
+
+> [!NOTE]
+> The Microsoft Edge program does not currently support registering with a work or school account.  You must register using an MSA account and then link your Azure AD tenants with that account, to be able to manage extensions.
+
+
+<!-- ====================================================================== -->
+## Enroll in the Microsoft Edge program on Partner Center
 
 1.  Navigate to the [developer page][MicrosoftPartnerCenter].
-1.  Select **Partner Center**.  
-1.  If you have an MSA account, sign into it now.  If not, either create a new MSA account directly, or login by using your GitHub credentials.  Use the same MSA account that you use to sign into your Partner Center account (a Partner Center account for which the Primary Owner is an MSA account).  After you sign in, a registration form is displayed. The following table describes the fields on the registration form.  
+
+1.  Select **Partner Center**.
+
+1.  If you have an MSA account, sign into it now.  If not, either create a new MSA account directly, or login by using your GitHub credentials.  Use the same MSA account that you use to sign into your Partner Center account (a Partner Center account for which the Primary Owner is an MSA account).  After you sign in, a registration form is displayed. The following table describes the fields on the registration form.
+
     1.  If you want to login to Partner Center by using your existing GitHub account, see [Publish add-ons by using your GitHub credentials](github.md).  Your GitHub account will be linked to a Microsoft account whose credentials you can use to register for the Microsoft Edge program.  Use the following table to help you fill-in fields in the registration form.
-    
-    To enroll in the Microsoft Edge program, sign in to your Partner Center account and complete the form.  
+
+    To enroll in the Microsoft Edge program, sign in to your Partner Center account and complete the form.
     
     :::row:::
        :::column span="1":::
@@ -129,9 +140,9 @@ If you have a Partner Center account for which the Primary Owner is an MSA accou
        :::column-end:::
     :::row-end:::
     
-1.  Before submitting your registration form, read and accept the terms and conditions of the [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement].  
-1.  To complete your enrollment, select **Finish**.  
-    
+1.  Before submitting your registration form, read and accept the terms and conditions of the [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement].
+1.  To complete your enrollment, select **Finish**.
+
 
 <!-- ====================================================================== -->
 ## Next steps
@@ -153,9 +164,9 @@ To display your verification status, navigate to the [Partner Center][MicrosoftP
 
 <!-- links -->
 [AddandManageUsers]: ./aad-account.md "Add and Manage users | Microsoft Docs"
-[ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Getting started with Microsoft Edge (Chromium) extensions | Microsoft Docs"  
-[ExtensionsChromiumPublishExtension]: ./publish-extension.md "Publish an extension | Microsoft Docs"  
-[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer agreement | Microsoft Docs"  
+[ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Getting started with Microsoft Edge (Chromium) extensions | Microsoft Docs"
+[ExtensionsChromiumPublishExtension]: ./publish-extension.md "Publish an extension | Microsoft Docs"
+[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer agreement | Microsoft Docs"
 <!-- external links -->
 [MicrosoftAccount]: https://account.microsoft.com/account "Microsoft account"
 [MicrosoftPartnerCenter]: https://partner.microsoft.com "Partner Center"
