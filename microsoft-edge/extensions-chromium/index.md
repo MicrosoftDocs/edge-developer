@@ -114,13 +114,13 @@ After you've successfully submitted your extension, your extension undergoes a r
 *   [Your first extension (Firefox)][MDNWebextensionsYourFirst]  
 *   [Get started tutorial (Chrome)][ChromeDeveloperExtensionsGetstarted]  
 *   [Get started (Opera)][OperaDevExtensionsGettingStarted]  
-*   [Get started with Microsoft Edge (Chromium) extensions][ExtensionsChromiumGettingStartedIndex]  
+*   [Extension concepts and architecture][ExtensionsChromiumGettingStartedIndex]  
 
 
 <!-- ====================================================================== -->
 <!-- links -->  
 [ExtensionsChromiumDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md "Port Chrome Extension To Microsoft Edge (Chromium) | Microsoft Docs"  
-[ExtensionsChromiumGettingStartedIndex]: ./getting-started/index.md "Getting Started With Microsoft Edge (Chromium) Extensions | Microsoft Docs"  
+[ExtensionsChromiumGettingStartedIndex]: ./getting-started/index.md "Extension concepts and architecture | Microsoft Docs"  
 [ExtensionsChromiumPublish]: ./publish/publish-extension.md "Publish a Microsoft Edge extension | Microsoft Docs"  
 
 [MicrosoftDeveloperEdgeExtensions]: https://developer.microsoft.com/microsoft-edge/extensions "Develop extensions for Microsoft Edge | Microsoft Developer"  

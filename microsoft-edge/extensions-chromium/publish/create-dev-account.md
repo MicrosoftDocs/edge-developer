@@ -10,7 +10,7 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 ---
 # Register as a Microsoft Edge extension developer
 
-If you're new to Partner Center, this article will help you create a Partner Center account <!-- and register as a Microsoft Edge extension developer --> through which you can submit Microsoft Edge extensions to the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
+If you're new to Partner Center, this article will help you create a Partner Center account through which you can submit Microsoft Edge extensions to the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
 
 If you have a Partner Center account, but the Primary Owner of the account isn't a Microsoft account (MSA), this article will help you create and link a suitable account.  This article will help you create a Microsoft account (MSA) if you don't have one, and will help you link the Microsoft account (MSA) to your Partner Center account.
 
@@ -31,15 +31,11 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
 
 
 <!-- ====================================================================== -->
-## Determining if have a Partner Center account and if its Primary Owner is a Microsoft account (MSA)
-
-<!-- A tenant is needed in the article "Add users to the Microsoft Edge program" (aad-account.md), not in the present article. -->
+## Determining if you have a Partner Center developer account
 
 1. You need a Microsoft account (MSA).  If you don't have a Microsoft account (MSA), create one.  One way to create a Microsoft account (MSA) is to use your existing GitHub account to log in to Partner Center - dialog boxes help you automatically create a Microsoft account (MSA).
 1. Use that a Microsoft account (MSA) to login to Partner Center.
 1. Register for the Microsoft Edge program, to be able to submit extensions.
-
-<!-- this article has a broader audience than aad-account.md -->
 
 To submit an extension to the Microsoft Edge Add-ons website, you must be registered as a developer with the Microsoft Edge program.  The Microsoft Edge program is located on [Partner Center][MicrosoftPartnerCenter].
 
@@ -158,9 +154,9 @@ To display your verification status, navigate to [Partner Center][MicrosoftPartn
 
 *  [Publish an extension][ExtensionsChromiumPublishExtension]
 
-*  [Getting started with Microsoft Edge (Chromium) extensions][ExtensionsChromiumGettingStartedIndex]
+*  [Extension concepts and architecture][ExtensionsChromiumGettingStartedIndex]
 
-*  To register for Microsoft Edge program by associating your organization's Azure Active Directory account with your Microsoft account on Partner Center, see [Add and Manage users][AddandManageUsers].
+*  [Add users to the Microsoft Edge program][AddandManageUsers] - Adding additional users to your Microsoft Edge program and your Partner Center developer account.  To enable adding users, you associate your organization's Azure Active Directory account with your Microsoft account (MSA) on Partner Center.
 
 
 <!-- ====================================================================== -->
@@ -170,8 +166,8 @@ To display your verification status, navigate to [Partner Center][MicrosoftPartn
 
 
 <!-- links -->
-[AddandManageUsers]: ./aad-account.md "Add and Manage users | Microsoft Docs"
-[ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Getting started with Microsoft Edge (Chromium) extensions | Microsoft Docs"
+[AddandManageUsers]: ./aad-account.md "Add users to the Microsoft Edge program | Microsoft Docs"
+[ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Extension concepts and architecture | Microsoft Docs"
 [ExtensionsChromiumPublishExtension]: ./publish-extension.md "Publish a Microsoft Edge extension | Microsoft Docs"
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer agreement | Microsoft Docs"
 <!-- external links -->

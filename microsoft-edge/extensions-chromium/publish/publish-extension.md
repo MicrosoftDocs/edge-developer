@@ -18,7 +18,7 @@ Publish your extension to the Microsoft Edge Add-ons website to increase the rea
 <!-- ========================================================================== -->
 ## Before you begin  
 
-You should have a working prototype of your extension ready.  For information on how to create an extension, refer to the [Getting started tutorial][ExtensionsGettingStarted].  
+You should have a working prototype of your extension ready.  For information on how to create an extension, see [Extension concepts and architecture][ExtensionsGettingStarted].  
 
 To publish your extension to the Microsoft Edge Add-ons website, use your active developer account on [Partner Center][MicrosoftPartnerCenter].  If you don't have a developer account, create a new developer account.  To open a new developer account and register to the Microsoft Edge add-ons program, navigate to [Developer registration][DeveloperRegistration].  
 
@@ -181,7 +181,7 @@ After your submission passes certification, your extension is published in the M
 
 <!-- ========================================================================== -->
 <!-- links -->  
-[ExtensionsGettingStarted]: ../getting-started/index.md "Getting Started With Microsoft Edge (Chromium) Extensions | Microsoft Docs"  
+[ExtensionsGettingStarted]: ../getting-started/index.md "Extension concepts and architecture | Microsoft Docs"  
 [DeveloperRegistration]: ./create-dev-account.md "Register as a Microsoft Edge extension developer | Microsoft Docs"  
 [PortChromiumExtension]: ../developer-guide/port-chrome-extension.md "Port your Chromium extension to Microsoft Edge | Microsoft Docs"  
 [MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Add-ons website developer policies | Microsoft Docs"  
