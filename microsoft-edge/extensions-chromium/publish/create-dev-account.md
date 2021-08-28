@@ -171,7 +171,7 @@ To display your verification status, navigate to the [Partner Center][MicrosoftP
 <!-- links -->
 [AddandManageUsers]: ./aad-account.md "Add and Manage users | Microsoft Docs"
 [ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Getting started with Microsoft Edge (Chromium) extensions | Microsoft Docs"
-[ExtensionsChromiumPublishExtension]: ./publish-extension.md "Publish an extension | Microsoft Docs"
+[ExtensionsChromiumPublishExtension]: ./publish-extension.md "Publish a Microsoft Edge extension | Microsoft Docs"
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer agreement | Microsoft Docs"
 <!-- external links -->
 [MicrosoftAccount]: https://account.microsoft.com/account "Microsoft account"

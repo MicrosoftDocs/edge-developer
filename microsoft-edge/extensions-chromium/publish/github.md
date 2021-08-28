@@ -10,9 +10,7 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 ---
 # Publish extensions by using a GitHub account
 
-Many extension developers use GitHub to build and manage their extension code base.  You can use the same GitHub account to login to Microsoft Partner Center and publish your Microsoft Edge add-on to the Microsoft Edge Add-ons website.  If you are a GitHub user, you don't need to create a new Microsoft account and remember additional passwords.  Just use GitHub authentication to sign into Partner center and publish your extensions to the Microsoft Edge add-ons website.
-
-After you have registered in the Microsoft Edge program, you can port your Chrome extensions to create Microsoft Edge extensions.  To help you manage extensions, you can add more users to the Partner Center account by adding an Azure Account directory (AAD) account to your Partner Center account.
+If you are a GitHub user, you don't need to create a new Microsoft account and remember additional passwords.  Just use GitHub authentication to sign into Partner Center and publish your extensions to the Microsoft Edge Add-ons website.  See [](publish-extension.md).
 
 To begin submitting extensions by using GitHub, you must register for the Microsoft Edge program in Partner Center by using your GitHub credentials.  You'll need to link to a Microsoft account (MSA), as follows.
 
@@ -29,9 +27,9 @@ Go to [Partner Center][MicrosoftPartnerCenter].  You'll be taken to the **Sign-i
 
 
 <!-- ====================================================================== -->
-## Step 2: Select "Sign-in options" to view alternative sign-in options 
+## Step 2: Select "Sign-in options" to view alternative sign-in options
 
-Select **Sign-in options** at the bottom of the page, and then select **Sign in with GitHub**.  Enter your GitHub account credentials you want to use to publish extensions. 
+Select **Sign-in options** at the bottom of the page, and then select **Sign in with GitHub**.  Enter your GitHub account credentials that you want to use to publish Microsoft Edge extensions.
 
 
 <!-- ====================================================================== -->
@@ -49,17 +47,17 @@ Microsoft checks whether your GitHub account is already linked to a Microsoft ac
 <!-- ====================================================================== -->
 ## Step 5: Register for Microsoft Edge Program on Partner Center using the newly linked GitHub account
 
-Your GitHub account will now work as a Microsoft account (MSA).  You can now use your GitHub credentials to register as a Microsoft Edge extension developer.  You can now publish extensions free of charge.
+After your GitHub account is linked to a Microsoft account, you can start using your GitHub account to register as a Microsoft Edge extension developer to publish extensions free of charge.  See [Register as a Microsoft Edge extension developer](create-dev-account.md).
 
-You can also port your Chrome extensions to become Microsoft Edge extensions by using this GitHub-based sign-in option.  To better manage your Microsoft Edge extensions, you can optionally register your organization for the Microsoft Edge program on Partner Center by associating your Azure Active Directory (Azure AD) account with your Microsoft account (MSA).
+After you are registered for the Microsoft Edge program, you can port your Chrome extensions to Microsoft Edge.  To help manage your Microsoft Edge extensions, you can add more users to the Partner Center account by linking an Azure Active Directory (Azure AD) account with your Partner Center account.  See [Add users to the Microsoft Edge program](aad-account.md).
 
 
 <!-- ====================================================================== -->
 ## Contact us
 
-Let us know if this was helpful or if you have any feedback.  For help with signing into Partner Center using GitHub or other related questions, navigate to [Contact Microsoft Edge extensions support](contact-extensions-team.md). 
+Let us know if this was helpful or if you have any feedback.  For help with signing into Partner Center using GitHub or other related questions, navigate to [Contact Microsoft Edge extensions support](contact-extensions-team.md).
 
 
+<!-- ====================================================================== -->
 <!-- links -->
-<!-- external links -->
-[MicrosoftPartnerCenter]: https://partner.microsoft.com "Partner Center"  
+[MicrosoftPartnerCenter]: https://partner.microsoft.com "Partner Center"

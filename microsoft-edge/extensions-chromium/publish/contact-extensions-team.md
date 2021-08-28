@@ -20,13 +20,13 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 
 1.  If you have any issues while you submit your extension to Partner Center, navigate to [Publish your extension][ExtensionsPublishPublishExtension].
 
-1.  To feature your extension in a collection on the Microsoft Edge Add-ons store, navigate to [Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page][OfficeFormsPagesResponsepageAspxV4j5cvggr0grqy180bhbrw01uwybfaxnna1zkp3x2vun0ibsu1ymeu3vfy0vurrodewsjgwu00yry4u] and complete the form.
+1.  To feature your extension in a collection on the Microsoft Edge Add-ons website, navigate to [Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page][OfficeFormsPagesResponsepageAspxV4j5cvggr0grqy180bhbrw01uwybfaxnna1zkp3x2vun0ibsu1ymeu3vfy0vurrodewsjgwu00yry4u] and complete the form.
 
 
 <!-- ====================================================================== -->
 ## Report copyright or trademark infringement
 
-If you think an item in the Microsoft Edge Add-ons store violates a copyright or trademark, navigate to [Notices of Infringement][MicrosoftInfoMarketplaceHtml] and complete the form.  The Microsoft Edge extensions team reviews your report and then takes the necessary action.
+If you think an item in the Microsoft Edge Add-ons website violates a copyright or trademark, navigate to [Notices of Infringement][MicrosoftInfoMarketplaceHtml] and complete the form.  The Microsoft Edge extensions team reviews your report and then takes the necessary action.
 
 <!-- links in this repo -->
 [ExtensionsDeveloperGuideApiSupport]: ../developer-guide/api-support.md "Supported APIs for Microsoft Edge extensions | Microsoft Docs"

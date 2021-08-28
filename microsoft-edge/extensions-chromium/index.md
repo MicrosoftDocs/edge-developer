@@ -89,7 +89,7 @@ If you've already developed an extension for another Chromium-based browser, you
 
 For more information on porting your Chrome extension to Microsoft Edge, navigate to [Port Chrome extensions to Microsoft Edge (Chromium)][ExtensionsChromiumDeveloperGuidePortChrome]. After you port your extension to the target browser, the next step is to publish it.  
 
-### Publish to the Microsoft Edge Add-ons website  
+### Publish to the Microsoft Edge Add-ons website
 
 To start publishing your extension to Microsoft Edge, you must [register for a developer account][MicrosoftDeveloperRegistration] with a Microsoft account (MSA) email account to submit your extension listing to the store.  The email address of a Microsoft account (MSA) includes `@outlook.com`, `@live.com`, or ``@hotmail.com`.  When you choose an email address to register, consider whether you must transfer or share ownership of the Microsoft Edge extension with other people in your organization.  After registration is complete, you can create a new extension submission to the store.
 
@@ -121,7 +121,7 @@ After you've successfully submitted your extension, your extension undergoes a r
 <!-- links -->  
 [ExtensionsChromiumDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md "Port Chrome Extension To Microsoft Edge (Chromium) | Microsoft Docs"  
 [ExtensionsChromiumGettingStartedIndex]: ./getting-started/index.md "Getting Started With Microsoft Edge (Chromium) Extensions | Microsoft Docs"  
-[ExtensionsChromiumPublish]: ./publish/publish-extension.md "Publish An Extension | Microsoft Docs"  
+[ExtensionsChromiumPublish]: ./publish/publish-extension.md "Publish a Microsoft Edge extension | Microsoft Docs"  
 
 [MicrosoftDeveloperEdgeExtensions]: https://developer.microsoft.com/microsoft-edge/extensions "Develop extensions for Microsoft Edge | Microsoft Developer"  
 [MicrosoftDeveloperRegistration]: https://developer.microsoft.com/registration "Partner Center | Microsoft Developer"  
