@@ -27,7 +27,7 @@ Create a zip file that represents your extension package.  Your extension packag
 *   The extension manifest that specifies details like the name of the extension, short description, permissions, and default language.  
 *   Images and other files required by your extension.  
     
-The following fields in the manifest are automatically included in your store listing details.  The fields are read-only on the **Store listings** webpage.  The store listings webpage is described later in this article.  Ensure the field values match your preferred display on the store details webpage before you upload your package to Partner Center.  For an example of the code required for the manifest file, review the manifest file basics.  
+The following fields in the manifest are automatically included in your store listing details.  The fields are read-only on the **Store listings** webpage.  The store listings webpage is described later in this article.  Make sure the field values match your preferred display on the store details webpage before you upload your package to Partner Center.  For an example of the code required for the manifest file, review the manifest file basics.  
 
 *   `Name` field in the manifest file, which is the **Display name** on the store details webpage.  
 *   `Description` field in the manifest file, which is the **Short description** on the store details webpage.  Provide a short, catchy description to display at the top of the listing for your extension.  If you include the short description in the extension manifest file, it displays in your store listing.  If you don't include a short description in the manifest file, the first few lines of `Description` display in your store listing.  Provide a brief description to avoid content repetition on your store listing webpage.
@@ -163,7 +163,7 @@ On the **Submit your extension** webpage, add notes for certification to help te
 
 When you submit your extension, use the **Notes for certification** webpage to provide additional information to the certification testers.  The additional information helps ensure that your extension is tested correctly.  If your extension isn't fully tested, it might fail certification.  
 
-Ensure you include the following information, as necessary.  
+Make sure you include the following information, as necessary.  
 
 *   User names and passwords for test accounts.  
 *   Steps to access hidden or locked features.  
@@ -182,7 +182,7 @@ After your submission passes certification, your extension is published in the M
 <!-- ========================================================================== -->
 <!-- links -->  
 [ExtensionsGettingStarted]: ../getting-started/index.md "Getting Started With Microsoft Edge (Chromium) Extensions | Microsoft Docs"  
-[DeveloperRegistration]: ./create-dev-account.md "Register as a Microsoft Edge extensions developer | Microsoft Docs"  
+[DeveloperRegistration]: ./create-dev-account.md "Register as a Microsoft Edge extension developer | Microsoft Docs"  
 [PortChromiumExtension]: ../developer-guide/port-chrome-extension.md "Port your Chromium extension to Microsoft Edge | Microsoft Docs"  
 [MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Add-ons store Developer Policies | Microsoft Docs"  
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"  

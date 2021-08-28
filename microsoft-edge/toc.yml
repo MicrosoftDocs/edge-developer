@@ -337,7 +337,7 @@
               href: extensions-chromium/developer-guide/native-messaging.md
         - name: Publish to Microsoft Store
           items:
-            - name: Developer registration
+            - name: Register as an extension developer
               href: extensions-chromium/publish/create-dev-account.md
             - name: Login through GitHub
               href: extensions-chromium/publish/github.md
