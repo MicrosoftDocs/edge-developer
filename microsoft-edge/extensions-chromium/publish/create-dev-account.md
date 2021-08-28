@@ -12,6 +12,8 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 
 If you're new to Partner Center, this article will help you create a Partner Center account <!-- and register as a Microsoft Edge extension developer --> through which you can submit Microsoft Edge extensions to the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
 
+If you have a Partner Center account, but the Primary Owner of the account isn't a Microsoft account (MSA), this article will help you create and link a suitable account.  It will help you create a Microsoft account (MSA) if you don't have one, and will help you link the Microsoft account (MSA) to your Partner Center account.
+
 
 <!-- ====================================================================== -->
 ## Types of accounts mentioned
@@ -75,11 +77,13 @@ If you have a Partner Center account for which the Primary Owner is a Microsoft 
 <!-- ====================================================================== -->
 ## Enroll in the Microsoft Edge program on Partner Center
 
-1.  Navigate to the [developer page][MicrosoftPartnerCenter].
+<!-- the link and first two steps were incorrect, unclear the intended path/experience was unclear.  So these two steps are temporary general placeholder steps.  The problem was terse link text and no visible URL.  Provide accurate, specific link text here if possible/static.  This URL behaves differently when short vs. long/deep-link; goes to an orientation/invitation webpage if short URL, or to Partner Center if long URL. -->
 
-1.  Select **Partner Center**.
+1.  Navigate to the webpage about [Partner Center](https://partner.microsoft.com).  You might see a "Join the Microsoft Partner Network" page with a **Become a partner** button, or a "Welcome back" page with a **Visit Partner Center** button.
 
-1.  If you have a Microsoft account (MSA), sign into it now.  If not, either create a new Microsoft account (MSA) directly, or login by using your GitHub credentials.  Use the same Microsoft account (MSA) that you use to sign into your Partner Center account (a Partner Center account for which the Primary Owner is a Microsoft account (MSA)).  After you sign in, a registration form is displayed. The following table describes the fields on the registration form.
+1.  Select the **Become a partner** button or the **Visit Partner Center** button.
+
+1.  If you have a Microsoft account (MSA), sign into it now.  If not, either create a new Microsoft account (MSA) directly, or login by using your GitHub credentials.  Use the same Microsoft account (MSA) that you use to sign into your Partner Center account.  The Partner Center account must have a Primary Owner that's a Microsoft account (MSA)).  After you sign in, a registration form is displayed. The following table describes the fields on the registration form.
 
     1.  If you want to login to Partner Center by using your existing GitHub account, see [Publish add-ons by using your GitHub credentials](github.md).  Your GitHub account will be linked to a Microsoft account whose credentials you can use to register for the Microsoft Edge program.  Use the following table to help you fill-in fields in the registration form.
 
@@ -151,13 +155,13 @@ If you have a Partner Center account for which the Primary Owner is a Microsoft 
 <!-- ====================================================================== -->
 ## Next steps
 
-To display your verification status, navigate to the [Partner Center][MicrosoftPartnerCenter] and then select **Account settings**.  Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
+To display your verification status, navigate to [Partner Center][MicrosoftPartnerCenter] and then select **Account settings**.  Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
 
 *  [Publish an extension][ExtensionsChromiumPublishExtension]
 
 *  [Getting started with Microsoft Edge (Chromium) extensions][ExtensionsChromiumGettingStartedIndex]
 
-*  To register for Microsoft Edge program by associating your organization’s Azure Active Directory account with your Microsoft account on Partner Center, navigate to [Add and Manage users][AddandManageUsers].
+*  To register for Microsoft Edge program by associating your organization's Azure Active Directory account with your Microsoft account on Partner Center, see [Add and Manage users][AddandManageUsers].
 
 
 <!-- ====================================================================== -->
@@ -175,6 +179,5 @@ To display your verification status, navigate to the [Partner Center][MicrosoftP
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer agreement | Microsoft Docs"
 <!-- external links -->
 [MicrosoftAccount]: https://account.microsoft.com/account "Microsoft account"
-[MicrosoftPartnerCenter]: https://partner.microsoft.com "Partner Center"
-<!-- unnecessarily specific version of the above?  https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd -->
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"
 [WindowsCommunityEverythingAboutMicrosoftAccounts]: https://community.windows.com/stories/everything-you-need-to-know-about-microsoft-accounts "Everything you need to know about Microsoft accounts | Windows Community"

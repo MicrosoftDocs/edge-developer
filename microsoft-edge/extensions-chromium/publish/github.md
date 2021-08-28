@@ -10,7 +10,7 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 ---
 # Publish extensions by using a GitHub account
 
-If you are a GitHub user, you don't need to create a new Microsoft account and remember additional passwords.  Just use GitHub authentication to sign into Partner Center and publish your extensions to the Microsoft Edge Add-ons website.  See [](publish-extension.md).
+If you are a GitHub user, you don't need to create a new Microsoft account and remember additional passwords.  Just use GitHub authentication to sign into Partner Center and publish your extensions to the Microsoft Edge Add-ons website.  See [Publish a Microsoft Edge extension](publish-extension.md).
 
 To begin submitting extensions by using GitHub, you must register for the Microsoft Edge program in Partner Center by using your GitHub credentials.  You'll need to link to a Microsoft account (MSA), as follows.
 

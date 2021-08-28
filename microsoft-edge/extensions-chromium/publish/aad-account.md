@@ -10,9 +10,11 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 ---
 # Add users to the Microsoft Edge program
 
-<!-- prefer "extension" over "add-on" -->
+<!-- todo: This article is supposed to only focus narrowly on adding users to an existing Partner Center account that already is able to manage extensions.  But this article currently covers the same ground as create-dev-accounts.md.  Delete/merge into that article. -->
 
-This article focuses on adding more users to an existing Partner Center account, and managing those user accounts.  To manage Microsoft Edge extensions (also called _add-ons_), the Primary Owner of the Partner Center account must be a Microsoft account (MSA).  For information about the types of accounts, see [Types of accounts mentioned](create-dev-account.md#types-of-accounts-mentioned).
+To help manage Microsoft Edge extensions, you can add more users to an existing Partner Center account.  To manage Microsoft Edge extensions, the Primary Owner of the Partner Center account must be a Microsoft account (MSA).  For information about the types of accounts, see [Types of accounts mentioned](create-dev-account.md#types-of-accounts-mentioned).
+
+If you know that you already have a Partner Center account that has a Primary Owner that's a Microsoft account (MSA), you can skip ahead to [Step 3: Add users, groups, and Azure Active Directory applications to your account](#step-3-add-users-groups-and-azure-active-directory-applications-to-your-account).
 
 
 <!-- ====================================================================== -->
@@ -20,9 +22,12 @@ This article focuses on adding more users to an existing Partner Center account,
 
 Creating a Partner Center account that can publish Microsoft Edge extensions requires a Microsoft account (MSA), after which a user can link an AD tenant, thus enabling users to login with their work accounts.
 
+<!-- this section shouldn't even mention Windows dev program or Azure marketplace? reduce/delete as redundant/superfluous? -->
 Different programs on Partner Center require different accounts:
-*  Edge and Windows programs require a developer account.  These are the accounts where the owner is a Microsoft account (MSA).
-*  Azure marketplace requires a commercial account.  To enroll, the user has to login with their work account.
+
+*  The Microsoft Edge program and Windows developer programs require a Partner Center developer account.  These are accounts for which the Primary Owner is a Microsoft account (MSA).
+
+*  Azure marketplace requires a _Partner Center commercial account_.  To enroll, the user has to login with their work account.
 
 Also see these articles in the Partner Center documentation:
 *  [Manage your Partner Center account](/partner-center/partner-center-account-setup)
@@ -32,16 +37,16 @@ Also see these articles in the Partner Center documentation:
 <!-- ====================================================================== -->
 ## Step 1: Enroll in the Microsoft Edge program on Partner Center
 
-First, determine whether you have a Partner Center account.  If you have a Partner Center account, determine whether you have a Partner Center commercial account, or a Partner Center developer account.  Try the steps in the sections below, to determine which kind of account you have, and then follow the steps in the section that applies to your type of Partner Center account.
+First, determine whether you have a Partner Center account.  If you have a Partner Center account, determine whether the Primary Owner is a Microsoft Account (MSA), which is required for joining the Microsoft Edge program, to manage Microsoft Edge extensions.  Then follow the steps in the section that applies to your type of Partner Center account.
 
 ### If you don't have a Partner Center account
 
-Use a Microsoft account (MSA) to register with the Microsoft Edge program, by following the steps in the article [Register as a Microsoft Edge extension developer][DeveloperRegistration].<!-- = create-dev-account.md-->  You can use your GitHub account to create a Microsoft account (MSA).
+Use a Microsoft account (MSA) to register with the Microsoft Edge program, by following the steps in the article [Register as a Microsoft Edge extension developer][DeveloperRegistration].<!-- = create-dev-account.md-->  As mentioned in that article, you can use your GitHub account to create a Microsoft account (MSA).
 
 
 ### If the Primary Owner of your Partner Center account isn't a Microsoft account (MSA)
 
-For a Partner Center account to manage Microsoft Edge add-ons, the Primary Owner of the Partner Center account must be a Microsoft account (MSA).
+For a Partner Center account to manage Microsoft Edge extensions, the Primary Owner of the Partner Center account must be a Microsoft account (MSA).
 
 If the Primary Owner of a Partner Center account isn't a Microsoft account (MSA):
 
@@ -66,7 +71,7 @@ Use a Microsoft account (MSA) (not a work Microsoft account (MSA) or a school Mi
 
 1. Verify that the Primary Owner of the Partner Center developer account is a Microsoft account (MSA) user.  This must not be a work Microsoft account (MSA) or a school Microsoft account (MSA).
 
-1. Have the Primary Owner of the Partner Center developer account register for the Microsoft Edge Add-ons program by following the steps in [Register as a Microsoft Edge extension developer][DeveloperRegistration]<!-- = create-dev-account.md--> in the article "Register as a Microsoft Edge extension developer".
+1. Have the Primary Owner of the Partner Center developer account register for the Microsoft Edge program by following the steps in [Register as a Microsoft Edge extension developer][DeveloperRegistration]<!-- = create-dev-account.md--> in the article "Register as a Microsoft Edge extension developer".
 
 Next, do [Step 2: Associate Azure Active Directory with your Microsoft Edge Program account](#step-2-associate-azure-active-directory-with-your-microsoft-edge-program-account) below.
 
@@ -91,7 +96,9 @@ For more information, see [Associate Azure Active Directory with your Partner Ce
 <!-- ====================================================================== -->
 ## Step 3: Add users, groups, and Azure Active Directory applications to your account
 
-After you've set up the Azure Active Directory association, on the Partner Center you can add users at **Account settings** > **User management**.  Each user has full access the extensions available in the program.  You can also add groups of users, or add Azure Active Directory applications, to grant them access to your Partner Center account.  For more information about adding users, see [Add users, groups, and Azure AD applications][AddAzure].
+After you've set up the Azure Active Directory association, on the Partner Center you can add users at **Account settings** > **User management**.  Each user has full access the extensions available in the program.  You can also add groups of users, or add Azure Active Directory applications, to grant them access to your Partner Center account.
+
+For more information about adding users, see [Add users, groups, and Azure AD applications][AddAzure].
 
 
 <!-- ====================================================================== -->
