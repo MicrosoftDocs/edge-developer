@@ -56,7 +56,7 @@ If the Primary Owner of a Partner Center account isn't a Microsoft account (MSA)
 
 1. Navigate to **Account settings** > [User management][UserMGMT] at Partner Center.
 
-1. Find out who is the Primary Owner of the Partner Center commercial account.  Check whether the Primary Owner of the Partner Center developer account is a Microsoft account (MSA).  In this scenario, we expect that it's not a Microsoft account (MSA).
+1. Check whether the Primary Owner of the Partner Center account is a Microsoft account (MSA).  In this scenario, we expect that it's not a Microsoft account (MSA), which means that this is a Partner Center commercial account rather than a Partner Center developer account.
 
 Use a Microsoft account (MSA) (not a work Microsoft account (MSA) or a school Microsoft account (MSA)) to register with the Microsoft Edge program, by following the steps in [Register as a Microsoft Edge extension developer][DeveloperRegistration]<!-- = create-dev-account.md-->.
 
@@ -73,7 +73,7 @@ Use a Microsoft account (MSA) (not a work Microsoft account (MSA) or a school Mi
 
 1. Verify that the Primary Owner of the Partner Center developer account is a Microsoft account (MSA) user.  This must not be a work Microsoft account (MSA) or a school Microsoft account (MSA).
 
-1. Have the Primary Owner of the Partner Center developer account register for the Microsoft Edge program by following the steps in [Register as a Microsoft Edge extension developer][DeveloperRegistration]<!-- = create-dev-account.md--> in the article "Register as a Microsoft Edge extension developer".
+1. Have the Primary Owner of the Partner Center developer account register for the Microsoft Edge program by following the steps in [Register as a Microsoft Edge extension developer][DeveloperRegistration]<!-- = create-dev-account.md-->.
 
 Next, do [Step 2: Associate Azure Active Directory with your Microsoft Edge Program account](#step-2-associate-azure-active-directory-with-your-microsoft-edge-program-account) below.
 
