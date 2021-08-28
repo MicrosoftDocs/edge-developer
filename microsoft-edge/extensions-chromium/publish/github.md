@@ -10,20 +10,20 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 ---
 # Publish Microsoft Edge extensions by using a GitHub account
 
-If you are a GitHub user, you don't need to create a new Microsoft account and remember additional passwords.  Just use GitHub authentication to sign into Partner Center and publish your Microsoft Edge extensions to the Microsoft Edge Add-ons website.  See [Publish a Microsoft Edge extension](publish-extension.md).
-
-To begin submitting extensions by using GitHub, you must register for the Microsoft Edge program in Partner Center by using your GitHub credentials.  You'll need to link to a Microsoft account (MSA), as follows.
+If you are a GitHub user, you don't need to create a new Microsoft account (MSA) and remember additional passwords.  You can just use GitHub authentication to sign into Partner Center and publish your Microsoft Edge extensions to the Microsoft Edge Add-ons website.
 
 > [!NOTE]
-> Currently, you can only use your _personal_ GitHub account to login to Partner Center.  You cannot use your _work_ account on GitHub to log in, because that is not currently supported.
+> Currently, you can only use your _personal_ GitHub account to login to Partner Center.  You cannot use your _work_ account on GitHub to log in; that is not currently supported.
 
-This article discusses several types of accounts; for an overview, see [Types of accounts mentioned](create-dev-account.md#types-of-accounts-mentioned).
+An _Microsoft account (MSA)_ is an Outlook.com, Live.com, or Hotmail.com account.  This article discusses several types of accounts; for an overview, see [Types of accounts mentioned](create-dev-account.md#types-of-accounts-mentioned).
+
+To begin submitting extensions by using GitHub, register for the Microsoft Edge program in Partner Center by using your GitHub credentials.  You'll need to link your GitHub account to a Microsoft account (MSA), as follows.  The Microsoft account (MSA) will be created for you if necessary.
 
 
 <!-- ====================================================================== -->
 ## Step 1: Go to Partner Center to sign in
 
-Go to [Partner Center][MicrosoftPartnerCenter].  You'll be taken to the **Sign-in** page, with an option to sign in with your Microsoft account (MSA).
+Go to the [Partner Center dashboard](https://partner.microsoft.com/dashboard/microsoftedge/overview).  You'll be taken to the **Sign-in** page, with an option to sign in with your Microsoft account (MSA).
 
 
 <!-- ====================================================================== -->
@@ -59,5 +59,6 @@ Let us know if this was helpful or if you have any feedback.  For help with sign
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[MicrosoftPartnerCenter]: https://partner.microsoft.com "Partner Center"
+## See also
+
+*  [Publish a Microsoft Edge extension](publish-extension.md)
