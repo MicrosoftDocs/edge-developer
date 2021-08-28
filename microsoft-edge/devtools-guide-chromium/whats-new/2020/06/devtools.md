@@ -160,7 +160,7 @@ For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) were not 
    Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.
 :::image-end:::  
 
-Give this feature a try with a [sample that uses CSS-in-JS][CodepenZoherghadyaliAbdgrpz].
+Give this feature a try with a [sample that uses CSS-in-JS][CodepenZoherghadyaliAbdgrpz].  For more information, navigate to [Style editing for CSS-in-JS frameworks][CssInJs].
 
 Chromium issue [#946975][CR946975]  
 
@@ -327,7 +327,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
 
 <!-- links -->  
-
+[CssInJs]: ../../../css/css-in-js.md "Style editing for CSS-in-JS frameworks | Microsoft Docs"
 [DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCommandMenu]: ../../../command-menu.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"
