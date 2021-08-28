@@ -12,16 +12,16 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 
 <!-- prefer "extension" over "add-on" -->
 
-This article focuses on adding more users to an existing Partner Center account, and managing those user accounts.  To manage Microsoft Edge extensions (also called _add-ons_), the Primary Owner of the Partner Center account must be an MSA account.  For information about the types of accounts, see [Types of accounts mentioned](create-dev-account.md#types-of-accounts-mentioned).
+This article focuses on adding more users to an existing Partner Center account, and managing those user accounts.  To manage Microsoft Edge extensions (also called _add-ons_), the Primary Owner of the Partner Center account must be a Microsoft account (MSA).  For information about the types of accounts, see [Types of accounts mentioned](create-dev-account.md#types-of-accounts-mentioned).
 
 
 <!-- ====================================================================== -->
-## Making sure you have a Partner Center account with an MSA account as the Primary Owner
+## Making sure you have a Partner Center account with a Microsoft account (MSA) as the Primary Owner
 
-Creating a developer accounts requires an MSA account, after which a user can link an AD tenant, thus enabling users to login with their work accounts.
+Creating a Partner Center account that can publish Microsoft Edge extensions requires a Microsoft account (MSA), after which a user can link an AD tenant, thus enabling users to login with their work accounts.
 
 Different programs on Partner Center require different accounts:
-*  Edge and Windows programs require a developer account.  These are the accounts where the owner is an MSA account.
+*  Edge and Windows programs require a developer account.  These are the accounts where the owner is a Microsoft account (MSA).
 *  Azure marketplace requires a commercial account.  To enroll, the user has to login with their work account.
 
 Also see these articles in the Partner Center documentation:
@@ -36,37 +36,37 @@ First, determine whether you have a Partner Center account.  If you have a Partn
 
 ### If you don't have a Partner Center account
 
-Use an MSA account to register with the Microsoft Edge program, by following the steps in the article [Register as a Microsoft Edge extension developer][DeveloperRegistration].<!-- = create-dev-account.md-->  You can use your GitHub account to create an MSA account.
+Use a Microsoft account (MSA) to register with the Microsoft Edge program, by following the steps in the article [Register as a Microsoft Edge extension developer][DeveloperRegistration].<!-- = create-dev-account.md-->  You can use your GitHub account to create a Microsoft account (MSA).
 
 
-### If the Primary Owner of your Partner Center account isn't an MSA account
+### If the Primary Owner of your Partner Center account isn't a Microsoft account (MSA)
 
-For a Partner Center account to manage Microsoft Edge add-ons, the Primary Owner of the Partner Center account must be an MSA account.
+For a Partner Center account to manage Microsoft Edge add-ons, the Primary Owner of the Partner Center account must be a Microsoft account (MSA).
 
-If the primary owner of a Partner Center account isn't an MSA account:
+If the Primary Owner of a Partner Center account isn't a Microsoft account (MSA):
 
-1. Use the MSA account which corresponds with your Partner Center commercial account to sign in to your Partner Center commercial account.
+1. Use the Microsoft account (MSA) which corresponds with your Partner Center commercial account to sign in to your Partner Center commercial account.
 
 1. Navigate to **Account settings** > [User management][UserMGMT] at Partner Center.
 
-1. Find out who is the primary owner of the Partner Center commercial account.  Check whether the primary owner of the Partner Center developer account is an MSA account (in this scenario, we expect that it's not an MSA account).
+1. Find out who is the Primary Owner of the Partner Center commercial account.  Check whether the Primary Owner of the Partner Center developer account is a Microsoft account (MSA).  In this scenario, we expect that it's not a Microsoft account (MSA).
 
-Use an MSA account (not a work MSA account or a school MSA account) to register with the Microsoft Edge program, by following the steps in [Register as a Microsoft Edge extension developer][DeveloperRegistration]<!-- = create-dev-account.md-->.
+Use a Microsoft account (MSA) (not a work Microsoft account (MSA) or a school Microsoft account (MSA)) to register with the Microsoft Edge program, by following the steps in [Register as a Microsoft Edge extension developer][DeveloperRegistration]<!-- = create-dev-account.md-->.
 
 
 ### If you have a Partner Center developer account
 
-1. If you are already signed in to Partner Center using your work MSA account, sign out.  The Microsoft Edge program on Partner Center doesn't support enrolling by using a work MSA account or a school MSA account.
+1. If you are already signed in to Partner Center using your work Microsoft account (MSA), sign out.  The Microsoft Edge program on Partner Center doesn't support enrolling by using a work Microsoft account (MSA) or a school Microsoft account (MSA).
 
-1. Use the MSA account which corresponds with your Partner Center developer account to sign in to your Partner Center developer account.
+1. Use the Microsoft account (MSA) which corresponds with your Partner Center developer account to sign in to your Partner Center developer account.
 
 1. Navigate to **Account settings** > [User management][UserMGMT] at Partner Center.
 
-1. Find out who is the primary owner of the Partner Center developer account.
+1. Find out who is the Primary Owner of the Partner Center developer account.
 
-1. Verify that the primary owner of the Partner Center developer account is an MSA account user.  This must not be a work MSA account or a school MSA account.
+1. Verify that the Primary Owner of the Partner Center developer account is a Microsoft account (MSA) user.  This must not be a work Microsoft account (MSA) or a school Microsoft account (MSA).
 
-1. Have the primary owner of the Partner Center developer account register for the Microsoft Edge Add-ons program by following the steps in [Register as a Microsoft Edge extension developer][DeveloperRegistration]<!-- = create-dev-account.md--> in the article "Register as a Microsoft Edge extension developer".
+1. Have the Primary Owner of the Partner Center developer account register for the Microsoft Edge Add-ons program by following the steps in [Register as a Microsoft Edge extension developer][DeveloperRegistration]<!-- = create-dev-account.md--> in the article "Register as a Microsoft Edge extension developer".
 
 Next, do [Step 2: Associate Azure Active Directory with your Microsoft Edge Program account](#step-2-associate-azure-active-directory-with-your-microsoft-edge-program-account) below.
 

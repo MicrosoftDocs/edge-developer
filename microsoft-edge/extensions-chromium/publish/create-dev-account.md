@@ -20,21 +20,23 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
 
 | Type of account | Description |
 |---|---|
-| _Microsoft account (MSA)_, _MSA account_ | An Outlook.com, Live.com, or Hotmail.com account. |
-| _GitHub account_ | A user account at GitHub.com.  You can use your GitHub account's login credentials to login to Partner Center—an MSA account will be created for you. |
-| _Partner Center account_ | An account on partner.microsoft.com.  To submit Microsoft Edge extensions, you need a Partner Center account for which the Primary Owner is an MSA account. |
+| _Microsoft account (MSA)_ | An Outlook.com, Live.com, or Hotmail.com account. |
+| _GitHub account_ | A user account at GitHub.com.  You can use your GitHub account's login credentials to login to Partner Center—a Microsoft account (MSA) will be created for you. |
+| _Partner Center account_ | An account on partner.microsoft.com.  To submit Microsoft Edge extensions, you need a Partner Center account for which the Primary Owner is a Microsoft account (MSA). |
 | _Microsoft Edge Program account_ | Enables multiple users to work with Microsoft Edge extensions at Partner Center. |
 | _Azure Active Directory_, _AD account_, _Azure AD_ | An Azure Active Directory account. |
 | _Azure Active Directory tenant_, _AAD tenant_ | A _tenant_ represents an organization.  A tenant is a dedicated instance of Azure AD that an organization or app developer receives at the beginning of a relationship with Microsoft. |
 
+See also [Everything you need to know about Microsoft accounts][WindowsCommunityEverythingAboutMicrosoftAccounts].
+
 
 <!-- ====================================================================== -->
-## How to determine whether you have a Partner Center account and whether its primary owner is an MSA account
+## Determining if have a Partner Center account and if its Primary Owner is a Microsoft account (MSA)
 
 <!-- A tenant is needed in the article "Add users to the Microsoft Edge program" (aad-account.md), not in the present article. -->
 
-1. You need a Microsoft account (MSA).  If you don't have an MSA account, create one.  One way to create an MSA account is to use your existing GitHub account to log in to Partner Center - dialog boxes help you automatically create an MSA account.
-1. Use that MSA account to login to Partner Center.
+1. You need a Microsoft account (MSA).  If you don't have a Microsoft account (MSA), create one.  One way to create a Microsoft account (MSA) is to use your existing GitHub account to log in to Partner Center - dialog boxes help you automatically create a Microsoft account (MSA).
+1. Use that a Microsoft account (MSA) to login to Partner Center.
 1. Register for the Microsoft Edge program, to be able to submit extensions.
 
 <!-- this article has a broader audience than aad-account.md -->
@@ -48,24 +50,26 @@ To submit an extension to the Microsoft Edge Add-ons website, you must be regist
 <!-- ====================================================================== -->
 ## Before you begin
 
-If you don't have a Partner Center account, or you have a Partner Center account but its Primary Owner isn't an MSA account (such as an Outlook.com, Live.com, or Hotmail.com account), you must either:
+If you don't have a Partner Center account, or you have a Partner Center account but its Primary Owner isn't a Microsoft account (MSA), you must either:
 *  Use an existing Microsoft account (MSA)) to register with the Microsoft Edge program.
-*  Create a new [Microsoft account (MSA)][WindowsCommunityEverythingAboutMicrosoftAccounts].
+*  Create a new Microsoft account (MSA).
 
-To create a Microsoft account (MSA), such as an Outlook.com, Live.com, or Hotmail.com account:
+   A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account.
 
-1. Decide if you want to use your existing GitHub account to create an MSA account.  See [Publish add-ons by using your GitHub credentials](github.md).
+To create a Microsoft account (MSA):
 
-1. If you aren't using your GitHub account to create the MSA account, navigate to [account.microsoft.com][MicrosoftAccount].
+1. Decide if you want to use your existing GitHub account to create a Microsoft account (MSA).  See [Publish add-ons by using your GitHub credentials](github.md).
+
+1. If you aren't using your GitHub account to create the Microsoft account (MSA), navigate to [account.microsoft.com][MicrosoftAccount].
 
 1. Select **Create a Microsoft account**.
 
 1. Complete the registration steps.
 
-If you have a Partner Center account for which the Primary Owner is an MSA account, use that MSA account to sign into your Partner Center account.  Then enroll in the Microsoft Edge program.
+If you have a Partner Center account for which the Primary Owner is a Microsoft account (MSA), use that a Microsoft account (MSA) to sign into your Partner Center account.  Then enroll in the Microsoft Edge program.
 
 > [!NOTE]
-> The Microsoft Edge program does not currently support registering with a work or school account.  You must register using an MSA account and then link your Azure AD tenants with that account, to be able to manage extensions.
+> The Microsoft Edge program does not currently support registering with a work or school account.  You must register using a Microsoft account (MSA) and then link your Azure AD tenants with that account, to be able to manage extensions.
 
 
 <!-- ====================================================================== -->
@@ -75,7 +79,7 @@ If you have a Partner Center account for which the Primary Owner is an MSA accou
 
 1.  Select **Partner Center**.
 
-1.  If you have an MSA account, sign into it now.  If not, either create a new MSA account directly, or login by using your GitHub credentials.  Use the same MSA account that you use to sign into your Partner Center account (a Partner Center account for which the Primary Owner is an MSA account).  After you sign in, a registration form is displayed. The following table describes the fields on the registration form.
+1.  If you have a Microsoft account (MSA), sign into it now.  If not, either create a new Microsoft account (MSA) directly, or login by using your GitHub credentials.  Use the same Microsoft account (MSA) that you use to sign into your Partner Center account (a Partner Center account for which the Primary Owner is a Microsoft account (MSA)).  After you sign in, a registration form is displayed. The following table describes the fields on the registration form.
 
     1.  If you want to login to Partner Center by using your existing GitHub account, see [Publish add-ons by using your GitHub credentials](github.md).  Your GitHub account will be linked to a Microsoft account whose credentials you can use to register for the Microsoft Edge program.  Use the following table to help you fill-in fields in the registration form.
 
@@ -158,6 +162,8 @@ To display your verification status, navigate to the [Partner Center][MicrosoftP
 
 <!-- ====================================================================== -->
 ## See also
+
+*  [Everything you need to know about Microsoft accounts][WindowsCommunityEverythingAboutMicrosoftAccounts], at Windows Community.
 
 *  [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant) - General information about Azure Active Directory (Azure AD) tenants, in the Active Directory documentation.
 

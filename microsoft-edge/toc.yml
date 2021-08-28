@@ -311,7 +311,7 @@
               href: devtools-guide-chromium/shortcuts/index.md
     - name: Extensions
       items:
-        - name: Extensions overview
+        - name: Overview of Microsoft Edge extensions
           href: extensions-chromium/index.md
         - name: Getting started
           items:
@@ -339,11 +339,11 @@
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
             - name: Native messaging
               href: extensions-chromium/developer-guide/native-messaging.md
-        - name: Publish to the add-ons website
+        - name: Publish to the Add-ons website
           items:
             - name: Register as an extension developer
               href: extensions-chromium/publish/create-dev-account.md
-            - name: Login through GitHub
+            - name: Publish extensions using a GitHub account
               href: extensions-chromium/publish/github.md
             - name: Add and manage users
               href: extensions-chromium/publish/aad-account.md
