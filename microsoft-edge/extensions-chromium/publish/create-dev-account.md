@@ -1,5 +1,5 @@
 ---
-description: Learn how to register to a developer account to publish extensions to Microsoft Edge Add-ons website.
+description: Learn how to register a Partner Center developer account to publish extensions to the Microsoft Edge Add-ons website.
 title: Register as a Microsoft Edge extension developer
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -12,24 +12,22 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 
 If you're new to Partner Center, this article will help you create a Partner Center account <!-- and register as a Microsoft Edge extension developer --> through which you can submit Microsoft Edge extensions to the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home).
 
-If you have a Partner Center account, but the Primary Owner of the account isn't a Microsoft account (MSA), this article will help you create and link a suitable account.  It will help you create a Microsoft account (MSA) if you don't have one, and will help you link the Microsoft account (MSA) to your Partner Center account.
+If you have a Partner Center account, but the Primary Owner of the account isn't a Microsoft account (MSA), this article will help you create and link a suitable account.  This article will help you create a Microsoft account (MSA) if you don't have one, and will help you link the Microsoft account (MSA) to your Partner Center account.
+
+To add and manage users in the Microsoft Edge program to manage extensions, you can associate your Partner Center account with your organization's Azure Active Directory (Azure AD) tenant.
 
 
 <!-- ====================================================================== -->
-## Types of accounts mentioned
-
-To add and manage users in the Microsoft Edge program to manage extensions, you can now associate your Partner Center account with your organization's Azure Active Directory.
+## Types of accounts related to publishing Microsoft Edge extensions
 
 | Type of account | Description |
 |---|---|
 | _Microsoft account (MSA)_ | An Outlook.com, Live.com, or Hotmail.com account. |
 | _GitHub account_ | A user account at GitHub.com.  You can use your GitHub account's login credentials to login to Partner Center—a Microsoft account (MSA) will be created for you. |
-| _Partner Center account_ | An account on partner.microsoft.com.  To submit Microsoft Edge extensions, you need a Partner Center account for which the Primary Owner is a Microsoft account (MSA). |
+| _Partner Center account_, _Partner Center developer account_ | A _Partner Center account_ is an account on partner.microsoft.com.  To submit Microsoft Edge extensions, you need a _Partner Center developer account_, which is a Partner Center account that has a Microsoft account (MSA) as the Primary Owner. |
 | _Microsoft Edge Program account_ | Enables multiple users to work with Microsoft Edge extensions at Partner Center. |
 | _Azure Active Directory_, _AD account_, _Azure AD_ | An Azure Active Directory account. |
 | _Azure Active Directory tenant_, _AAD tenant_ | A _tenant_ represents an organization.  A tenant is a dedicated instance of Azure AD that an organization or app developer receives at the beginning of a relationship with Microsoft. |
-
-See also [Everything you need to know about Microsoft accounts][WindowsCommunityEverythingAboutMicrosoftAccounts].
 
 
 <!-- ====================================================================== -->
@@ -168,8 +166,6 @@ To display your verification status, navigate to [Partner Center][MicrosoftPartn
 <!-- ====================================================================== -->
 ## See also
 
-*  [Everything you need to know about Microsoft accounts][WindowsCommunityEverythingAboutMicrosoftAccounts], at Windows Community.
-
 *  [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant) - General information about Azure Active Directory (Azure AD) tenants, in the Active Directory documentation.
 
 
@@ -181,4 +177,3 @@ To display your verification status, navigate to [Partner Center][MicrosoftPartn
 <!-- external links -->
 [MicrosoftAccount]: https://account.microsoft.com/account "Microsoft account"
 [MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"
-[WindowsCommunityEverythingAboutMicrosoftAccounts]: https://community.windows.com/stories/everything-you-need-to-know-about-microsoft-accounts "Everything you need to know about Microsoft accounts | Windows Community"

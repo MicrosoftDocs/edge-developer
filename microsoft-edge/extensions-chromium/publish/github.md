@@ -15,7 +15,7 @@ If you are a GitHub user, you don't need to create a new Microsoft account (MSA)
 > [!NOTE]
 > Currently, you can only use your _personal_ GitHub account to login to Partner Center.  You cannot use your _work_ account on GitHub to log in; that is not currently supported.
 
-An _Microsoft account (MSA)_ is an Outlook.com, Live.com, or Hotmail.com account.  This article discusses several types of accounts; for an overview, see [Types of accounts mentioned](create-dev-account.md#types-of-accounts-mentioned).
+An _Microsoft account (MSA)_ is an Outlook.com, Live.com, or Hotmail.com account.  This article discusses several types of accounts; for an overview, see [Types of accounts related to publishing Microsoft Edge extensions](create-dev-account.md#types-of-accounts-related-to-publishing-microsoft-edge-extensions).
 
 To begin submitting extensions by using GitHub, register for the Microsoft Edge program in Partner Center by using your GitHub credentials.  You'll need to link your GitHub account to a Microsoft account (MSA), as follows.  The Microsoft account (MSA) will be created for you if necessary.
 
