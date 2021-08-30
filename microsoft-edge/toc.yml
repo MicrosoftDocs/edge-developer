@@ -357,13 +357,13 @@
               href: extensions-chromium/publish/manage-settings.md
             - name: Contact extensions support
               href: extensions-chromium/publish/contact-extensions-team.md
-            - name: Microsoft Edge Add-ons policies
+            - name: Policies for Microsoft Edge Add-ons
               items:
                 - name: Content security policy
                   href: extensions-chromium/store-policies/csp.md
                 - name: Microsoft Edge developer ADA addendum
                   href: extensions-chromium/store-policies/ada-addendum.md
-                - name: Microsoft Edge Add-ons store developer policies
+                - name: Developer policies
                   href: extensions-chromium/store-policies/developer-policies.md
             - name: Microsoft Edge Add-ons API
               items:
