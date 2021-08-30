@@ -34,13 +34,13 @@ Start with a basic desktop project that contains a single main window.
        Visual Studio opening panel  
     :::image-end:::
 
-1. Locate and to choose **C# Windows Forms .NET Framework App** > **Next**.
+1. Locate and to choose **C# Windows Forms .NET Framework App** then choose **Next**.
     
     :::image type="complex" source="./media/winforms-new-project.png" alt-text="New project" lightbox="./media/winforms-new-project.png":::
        New project  
     :::image-end:::
     
-1.  Enter values for **Project name** and **Location**.  Choose **.NET Framework 4.6.2 ???NOT AVAILABLE???** or later.  
+1.  Enter values for **Project name** and **Location**.  Choose **.NET Framework 4.7.2** or later.  
     
     :::image type="complex" source="./media/winforms-start-proj.png" alt-text="Start project" lightbox="./media/winforms-start-proj.png":::
        Start project  
