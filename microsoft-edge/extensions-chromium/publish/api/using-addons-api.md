@@ -3,18 +3,19 @@ description: REST endpoints to automate publishing updates to add-ons that are s
 title: Using the Microsoft Edge Add-ons API
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/10/2021
+ms.date: 08/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer, add-ons api, publish api
 ---
-# Using the Microsoft Edge Add-ons API
+# Using the Microsoft Edge Add-ons API (under development)
+
+> [!NOTE]
+> This article is a Request for Comments.  The Microsoft Edge Add-ons API is not yet available for testing, and the Publish APIs page is not yet available at Partner Center.  The Microsoft Edge Add-ons API is under active development and the roadmap continues to evolve based on market changes and customer feedback.  The plans outlined here are not exhaustive and are subject to change.
 
 This article, along with the [Microsoft Edge Add-ons API Reference][AddonsAPIRef], provides an overview of the proposed Microsoft Edge Add-ons API.  We look forward to your suggestions and feedback on the proposed API contracts.  Please submit your feedback as an [Issue about the Add-ons API][GitHubMicrosoftDocsEdgeDeveloperNewIssue].
 
 The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons website.  You can use these REST endpoints to automate the process of uploading and publishing add-ons into the Microsoft Edge Add-ons website.
-
-The tentative date for the availability of the APIs is December 2021.
 
 
 <!-- ====================================================================== -->
@@ -35,17 +36,23 @@ The tentative date for the availability of the APIs is December 2021.
 
 To use the Microsoft Edge Add-ons API, you need to enable the API for your project in the Microsoft Partner Center.
 
+> [!NOTE]
+> The **Publish APIs** UI is not yet present at Partner Center.
+
 1. Visit Microsoft Partner Center and login to the account from which you have already published an add-on.
 
-1. Under the **Microsoft Edge** program, a new page for **Publish APIs** appears.
+1. Under the **Microsoft Edge** program, select **Publish APIs**.
 
-1. Select the **Create API credentials** button to generate the API credentials.  This step may take a few minutes.  After the APIs are enabled, the **Client ID**, **Client Secret**, and **Auth Token URL** are displayed on this page.
+1. In the **Publish APIs** page, select the **Create API credentials** button to generate the API credentials.  This step may take a few minutes.  After the APIs are enabled, the **Client ID**, **Client Secret**, and **Auth Token URL** are displayed on this page.
 
 1. Note the **ClientID**, **Client Secret** and the **Auth Token URL**.  You'll use them in the next step to get an access token.
 
 
 <!-- ====================================================================== -->
 ## Retrieving the access token
+
+> [!NOTE]
+> The Microsoft Edge Add-ons API is not yet available for testing.
 
 After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token using the client credentials grant, send a POST request to the Auth Token URL.  The tenant information is available in the URL that you received in the **Before you begin** steps above.
 
@@ -88,7 +95,7 @@ For more information, navigate to [OAuth 2.0 client credentials flow on the Micr
 Once you have an access token, you can use the Microsoft Edge Add-ons API.  This API exposes endpoints for getting a list of products, updating products, and publishing products.
 
 > [!NOTE]
-> Currently, there is no API for creating a new product or updating a product's metadata, such as a description.  You must complete these tasks manually in Microsoft Partner Center.
+> There is no API for creating a new product or updating a product's metadata, such as a description.  You must complete these tasks manually in Microsoft Partner Center.
 
 The examples below use the domain `https://addons.edge.microsoft.com/api`, which is a placeholder and might be replaced when the API is available in production.
 
