@@ -34,12 +34,15 @@ About the Ignite conference at which some of these videos were presented: [Micro
 <!-- ====================================================================== -->
 ## Blog posts
 
-| Title | Description |
+| Title | Date |
 |---|---|
-| [Announcing Project Reunion 0.5!](https://blogs.windows.com/windowsdeveloper/2021/03/29/announcing-project-reunion-0-5/) | March 2021, blog post about WebView2 in Project Reunion through WinUI 3 |
-| [Announcing General Availability of Microsoft Edge WebView2 for .NET and Fixed Version distribution mode](https://blogs.windows.com/msedgedev/2020/11/20/announcing-general-availability-of-microsoft-edge-webview2-for-net-and-fixed-version-distribution-mode/) | November 2020, Microsoft Edge blog |
-| [Announcing Microsoft Edge WebView2 General Availability](https://blogs.windows.com/msedgedev/2020/10/19/edge-webview2-general-availability/) | October 2020, Microsoft Edge blog |
-| [Building hybrid applications with the WebView2 developer preview](https://blogs.windows.com/msedgedev/2019/06/18/building-hybrid-applications-with-the-webview2-developer-preview/) | June 2019, Microsoft Edge blog |
+| [WebView2 Windows App SDK, WinUI2, Runtime, and CDP Helper Updates](https://blogs.windows.com/msedgedev/2021/08/31/webview2-windows-app-sdk-winui2-runtime-cdp-helper/) | August 2021 |
+| [Announcing Project Reunion 0.5!](https://blogs.windows.com/windowsdeveloper/2021/03/29/announcing-project-reunion-0-5/) - WebView2 in Project Reunion through WinUI 3 <!--(Windows Developer Blog)--> | March 2021 |
+| [Announcing General Availability of Microsoft Edge WebView2 for .NET and Fixed Version distribution mode](https://blogs.windows.com/msedgedev/2020/11/20/announcing-general-availability-of-microsoft-edge-webview2-for-net-and-fixed-version-distribution-mode/) | November 2020 |
+| [Announcing Microsoft Edge WebView2 General Availability](https://blogs.windows.com/msedgedev/2020/10/19/edge-webview2-general-availability/) | October 2020 |
+| [Building hybrid applications with the WebView2 developer preview](https://blogs.windows.com/msedgedev/2019/06/18/building-hybrid-applications-with-the-webview2-developer-preview/) | June 2019 |
+
+This is only a sampling.  There are many more posts at the [Microsoft Edge blog](https://blogs.windows.com/msedgedev/).
 
 
 <!-- ====================================================================== -->
