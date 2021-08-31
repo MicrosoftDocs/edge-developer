@@ -132,7 +132,7 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 
 #### Promotions
 
-*   [Download API][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddDownloadstarting] is  now promoted to stable.
+*   [Download API][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddDownloadstarting] is now promoted to stable.
 *   [PinchZoom API][Webview2ReferenceWin32Icorewebview2setting5ViewWebview210902PrereleaseGetIspinchzoomenabled] is now promoted to stable.
 *   [AddFrameCreated][Webview2ReferenceWin32Icorewebview24ViewWebview210902PrereleaseAddFramecreated] is now promoted to stable.
 *   [AddHostObjectToScriptWithOrigins][AddHostObjectToScriptWithOriginsAPI] API promoted to stable with iFrame element support.
@@ -174,6 +174,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 #### Bug Fixes  
 *   Fixed a bug in WebView2 .NET controls that first header is missing when iterating `CoreWebView2WebResourceRequest` headers collection. \([\#1123][GithubMicrosoftedgeWebviewfeedbackIssue1123]\). 
+
 
 
 ## 1.0.865-prerelease  
@@ -602,7 +603,7 @@ This prerelease version of the WebView2 SDK requires Microsoft Edge version 84.0
     > **Announcement**:  WebView2 now supports Windows Forms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **prerelease package**.  
     
 *   For more information about building WPF apps, navigate to the [WPF Get Started Guide][Webview2GetStartedWpf] and the WebView2 [WPF Reference][DotnetApiMicrosoftWebWebview2Wpf] for WPF-specific APIs.  
-*   For more information about building Windows Forms apps, navigate to the [Windows Forms Get Started Guide][Webview2GetStartedWinforms] and the WebView2 [Windows Forms Reference][DotnetApiMicrosoftWebWebview2Winforms] for Windows Forms specific APIs.  
+*   For more information about building Windows Forms apps, navigate to [Get started with WebView2 in WinForms apps][Webview2GetStartedWinforms] and the WebView2 [Windows Forms Reference][DotnetApiMicrosoftWebWebview2Winforms] for Windows Forms specific APIs.  
 *   For more information about the CoreWebView2 APIs, navigate to [.NET Reference][DotnetApiMicrosoftWebWebview2Core].  
 *   > [!CAUTION]
     > **Known Issues**:  The WebView team is aware of some issues in the prerelease that are being resolved in future releases.  

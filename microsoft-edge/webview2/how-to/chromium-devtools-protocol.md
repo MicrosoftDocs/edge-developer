@@ -82,10 +82,9 @@ To create an `HTML file` to find your geolocation, complete following the action
     
 ## Step 2: Display geolocation.html in a WebView2  
 
-1.  To create a WebView2 app, use either of the following get started guides or WebView2 samples.  
-    *   [Get Started with WebView2 in Windows Forms][Webview2GetStartedWinforms]  
-    *   [Get Started with WebView2 in WPF][Webview2GetStartedWpf]  
-    *   [WebView2 samples][GithubMicrosoftedgeWebview2samples]  
+1.  To create a WebView2 app, use a get started guide or the WebView2 samples.
+    *   [Get started](../index.md#get-started)
+    *   [WebView2 samples][GithubMicrosoftedgeWebview2samples]
         
 1.  Set the initial navigation of the WebView2 control to `geolocation.html`.  
     
@@ -174,10 +173,6 @@ To file a Chromium DevTools Protocol bug or issue, complete the following action
 *   [WebView2 samples][GithubMicrosoftedgeWebview2samples]  
     
  <!-- links -->  
-
-[Webview2GetStartedWinforms]: /microsoft-edge/webview2/get-started/winforms "Get started with WebView2 in Windows Forms | Microsoft Docs"  
-[Webview2GetStartedWpf]: /microsoft-edge/webview2/get-started/wpf "Get started with WebView2 in WPF | Microsoft Docs"  
-
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver?view=webview2-dotnet-1.0.774.44&preserve-view=true "CoreWebView2.GetDevToolsProtocolEventReceiver(String) Method | Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString]: /dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync?view=webview2-dotnet-1.0.774.44&preserve-view=true#Microsoft_Web_WebView2_Core_CoreWebView2_CallDevToolsProtocolMethodAsync_System_String_System_String_ "CoreWebView2.CallDevToolsProtocolMethodAsync(String, String) Method | Microsoft Docs"  
 

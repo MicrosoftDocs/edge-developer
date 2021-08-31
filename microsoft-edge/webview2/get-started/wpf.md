@@ -1,6 +1,6 @@
 ---
 description: Get started guide with WebView2 for WPF apps
-title: Get started with WebView2 for WPF apps
+title: Get started with WebView2 in WPF apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/13/2021
@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView2, browser control, edge html, get started, Get Started, .NET
 ---
-# Get started with WebView2 in WPF
+# Get started with WebView2 in WPF apps
 
 In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  For more information on individual APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2Wpf].  
 
