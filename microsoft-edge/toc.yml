@@ -245,6 +245,8 @@
                   href: devtools-guide-chromium/inspect-styles/edit-fonts.md
                 - name: Inspect CSS grid
                   href: devtools-guide-chromium/css/grid.md
+                - name: CSS-in-JS
+                  href: devtools-guide-chromium/css/css-in-js.md
                 - name: Force DevTools into Print Preview mode
                   href: devtools-guide-chromium/css/print-preview.md
             - name: Issues
@@ -353,20 +355,20 @@
               href: extensions-chromium/publish/manage-settings.md
             - name: Contact extensions support
               href: extensions-chromium/publish/contact-extensions-team.md
+            - name: Microsoft Edge Add-ons policies
+              items:
+                - name: Content security policy
+                  href: extensions-chromium/store-policies/csp.md
+                - name: Microsoft Edge developer ADA addendum
+                  href: extensions-chromium/store-policies/ada-addendum.md
+                - name: Microsoft Edge Add-ons store developer policies
+                  href: extensions-chromium/store-policies/developer-policies.md
             - name: Microsoft Edge Add-ons API
               items:
                 - name: Using the Add-ons API
                   href: extensions-chromium/publish/api/using-addons-api.md
                 - name: Add-ons API Reference
                   href: extensions-chromium/publish/api/addons-api-reference.md
-        - name: Microsoft Edge Add-ons policies
-          items:
-            - name: Content security policy
-              href: extensions-chromium/store-policies/csp.md
-            - name: Microsoft Edge developer ADA addendum
-              href: extensions-chromium/store-policies/ada-addendum.md
-            - name: Microsoft Edge Add-ons store developer policies
-              href: extensions-chromium/store-policies/developer-policies.md
         - name: Extensions for enterprise
           items:
             - name: Match patterns
@@ -443,12 +445,14 @@
           items:
             - name: Win32
               href: webview2/get-started/win32.md
+            - name: WinForms
+              href: webview2/get-started/winforms.md
+            - name: WinUI 2
+              href: webview2/get-started/winui2.md
+            - name: WinUI 3
+              href: webview2/get-started/winui.md
             - name: WPF
               href: webview2/get-started/wpf.md
-            - name: Windows Forms
-              href: webview2/get-started/winforms.md
-            - name: WinUI 3.0
-              href: webview2/get-started/winui.md
         - name: Concepts
           items:
             - name: Differences between Microsoft Edge and WebView2
