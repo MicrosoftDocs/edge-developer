@@ -53,6 +53,7 @@ The following sections describe the new experimental features that are available
 | [Enable new CSS Flexbox debugging features](#enable-new-css-flexbox-debugging-features) | 89 or later |  
 | [Enable + button tab menus to open more tools](#enable--button-tab-menus-to-open-more-tools) | 89 or later |  
 | [Enable Welcome tab](#enable-welcome-tab) | 89 or later |  
+| [Enable Search Console Error functionality](#enable-search-console-error-functionality) | 94 or later |
 
 
 <!-- ====================================================================== -->
