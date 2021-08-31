@@ -445,12 +445,14 @@
           items:
             - name: Win32
               href: webview2/get-started/win32.md
+            - name: WinForms
+              href: webview2/get-started/winforms.md
+            - name: WinUI 2
+              href: webview2/get-started/winui2.md
+            - name: WinUI 3
+              href: webview2/get-started/winui.md
             - name: WPF
               href: webview2/get-started/wpf.md
-            - name: Windows Forms
-              href: webview2/get-started/winforms.md
-            - name: WinUI 3.0
-              href: webview2/get-started/winui.md
         - name: Concepts
           items:
             - name: Differences between Microsoft Edge and WebView2

@@ -15,7 +15,7 @@ Using JavaScript in WebView2 controls allows you to customize native apps to mee
 
 ## Before you begin  
 
-This article assumes that you already have a working project.  If you do not have a project and want to follow along, navigate to the [WebView2 Get Started Guide][Webview2GetStartedWpf].  
+This article assumes that you already have a working project.  If you do not have a project and want to follow along, navigate to the [WebView2 get started guides][Webview2MainGetStarted].
 
 ## Basic WebView2 Functions  
 
@@ -106,7 +106,7 @@ Now add code to remove the contextual menu functionality from the WebView2 contr
     
 ## See also  
 
-*   To get started using WebView2, navigate to [WebView2 Get Started Guides][Webview2MainGetStarted].  
+*   To get started using WebView2, navigate to [WebView2 get started guides][Webview2MainGetStarted].  
 *   For a comprehensive example of WebView2 capabilities, navigate to the [WebView2Samples][GithubMicrosoftedgeWebview2samples] repo on GitHub.  
 *   For detailed information on WebView2 APIs, navigate to [API reference][Webview2ApiReference].  
 *   For more information on WebView2, navigate to [WebView2 Resources][Webview2MainNextSteps].  
@@ -116,13 +116,11 @@ Now add code to remove the contextual menu functionality from the WebView2 contr
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
-
 [DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"  
-[Webview2GetStartedWpf]: ../get-started/wpf.md "Get started with WebView2 in WPF (Preview) | Microsoft Docs"  
-[Webview2MainGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
-[Webview2MainNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
+[Webview2MainGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2MainNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
 
 [Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated]: /microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated "AddScriptToExecuteOnDocumentCreated - 0.9.579 - interface ICoreWebView2 | Microsoft Docs"  
 
