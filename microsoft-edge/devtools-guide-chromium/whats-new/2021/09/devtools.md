@@ -1,5 +1,5 @@
 ---
-description: Easily search the web for console message error strings, DevTools extension for Visual Studio Code now has the newest tools and theme support, breakpoint icons are now displayed when using Visual Studio Code themes, and you can navigate to the More Tools button with the keyboard.
+description: Easily search the web for console error message strings, DevTools extension for Visual Studio Code now has the newest tools and theme support, breakpoint icons are now displayed when using Visual Studio Code themes, and you can navigate to the More Tools button with the keyboard.
 title: What's new in DevTools (Microsoft Edge 94)
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -89,7 +89,7 @@ To learn more about using breakpoints for debugging JavaScript code, navigate to
 <!-- ====================================================================== -->
 ## Navigate to the More Tools button with the keyboard
 
-<!-- Title: Use the arrow keys to quickly navigate to the **+** button and open more tools -->
+<!-- Title: Use the arrow keys to quickly navigate to the + button and open more tools -->
 <!-- Subtitle: Improved keyboard accessibility with the arrow keys in the main DevTools toolbar. -->
 
 Previously, you couldn't navigate to the **More Tools** (+) button in DevTools by using the arrow keys in the keyboard when the toolbar had focus.  After the last tool in the toolbar, the arrow keys looped back to the first tool, or they expanded the **More tabs** menu.
@@ -117,7 +117,8 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 <!-- ====================================================================== -->
 <!-- links -->
-[ExpFeaturesSearchConsoleError]: ../../../experimental-features/index.md#enable-search-console-error-functionality "Enable Search Console Error functionality - Experimental features | Microsoft Docs"
+<!-- [ExpFeaturesSearchConsoleError]: ../../../experimental-features/index.md#enable-search-console-error-functionality "Enable Search Console Error functionality - Experimental features | Microsoft Docs" -->
+[ExpFeaturesSearchConsoleError]: ../../../experimental-features/index.md "Enable Search Console Error functionality - Experimental features | Microsoft Docs"
 [DevToolsKeyboardShortcuts]: ../../../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
 [ApplyColorThemesToDevTools]: ../../../customize/theme.md "Apply color themes to DevTools | Microsoft Docs"
 [PauseCodeWithBreakpoints]: ../../../javascript/breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
