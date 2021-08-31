@@ -14,6 +14,9 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 
 Thank you for your interest in developing extensions for the Microsoft Edge Add-ons store.  The Microsoft Edge Add-ons store developer policies \(Add-ons store developer policies\) apply to your extensions, including your submission of extensions through [Partner Center][MicrosoftPartnerCenter] and the provision of such extensions through the Microsoft Edge Add-ons.  
 
+The _Microsoft Edge Add-ons store_ is also called the _Microsoft Edge Add-ons website_.  The _Microsoft Edge Add-ons store developer policies_ are also called the _Microsoft Edge Add-ons website developer policies_.
+
+
 ## Principles  
 
 A few principles to get you started:  

@@ -77,9 +77,11 @@ Microsoft Edge doesn't support the following Extension APIs:
 
 ## Additional considerations for supported APIs
 
-* The user must be signed into Microsoft Edge using an MSA or Azure Active Directory account to use `chrome.identity.getProfileUserInfo`. If the user is signed into Microsoft Edge using an on-premises Active Directory account, the API returns `null` for the email and ID values.
+*  The user must be signed into Microsoft Edge using a Microsoft account (MSA) or Azure Active Directory account to use `chrome.identity.getProfileUserInfo`. If the user is signed into Microsoft Edge using an on-premises Active Directory account, the API returns `null` for the email and ID values.
 
-* Microsoft Edge doesn't support extensions that use Chrome Web Store payments because it uses `identity.getAuthtoken` to request tokens for signed-in users. These tokens are sent to the REST-based licensing API. 
+   A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account.
+
+*  Microsoft Edge doesn't support extensions that use Chrome Web Store payments because it uses `identity.getAuthtoken` to request tokens for signed-in users.  These tokens are sent to the REST-based licensing API.
 
 
 <!-- links -->  
