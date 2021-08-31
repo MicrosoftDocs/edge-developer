@@ -41,7 +41,7 @@ For more information, navigate to [Experimental features: Search Console Error][
 <!-- ====================================================================== -->
 ## DevTools extension for Visual Studio Code includes the latest tools, theme support, and helpful links
 
-<!-- Title: Edge DevTools for VS Code now supports themes and uses the newest codebase -->
+<!-- Title: Edge DevTools for VS Code now supports themes and uses the most recent codebase -->
 <!-- Subtitle: The Edge DevTools extension for VS Code now uses the same version of the Developer Tools as your Microsoft Edge browser and we added ways to learn more and tell us what we could do better. -->
 
 The Microsoft Edge DevTools extension for Visual Studio Code now uses the newest available version of the tools and supports the themes that ship with Visual Studio Code.  The Extension sidebar now provides direct links to our documentation and to file bugs or propose enhancements.  We also added a **Close** button to DevTools, and added support for JavaScript Debugger connections on remote workspaces.
