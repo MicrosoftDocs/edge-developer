@@ -47,7 +47,7 @@ Microsoft Edge sometimes uses origin trials to test features for specific domain
 For more information about Origin Trials, navigate to [Microsoft Edge Origin Trials Developer Console][MicrosoftDeveloperMicrosoftEdgeOriginTrials].  
     
 > [!NOTE]
-> Experimental features are constantly updated and may cause performance issues.  To turn off an experimental feature, navigate to [Turning on experimental features](#turning-on-experimental-features), navigate to the experiment, and then choose `Disabled`.  
+> Experimental features are constantly updated and may cause performance issues.  To turn off an experimental feature, navigate to [Turn on experimental features](#turn-on-experimental-features), navigate to the experiment, and then choose `Disabled`.  
 
 ## Features that are available to test  
 
@@ -87,7 +87,7 @@ Update your manifest to support the protocol that you want to register.  After y
     
 If more than one app registers a protocol, the user is presented with a prompt.  The user chooses the appropriate app from the list presented by the OS or browser.  
 
-To preview protocol handling in Microsoft Edge on Windows, navigate to [Turning on experimental features](#turning-on-experimental-features) and turn on **Desktop PWA Protocol handling**.  
+To preview protocol handling in Microsoft Edge on Windows, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWA Protocol handling**.  
 
 For more information about origin trial is running for protocol handlers, navigate to [Register for Web App Protocol Handler Registration][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].  
 
@@ -131,7 +131,7 @@ This feature allows you to register a PWA with the browser using the web app man
 
 Link handling is validated by the browser using a `web-app-origin-association` JSON file that is located on the origin.  The origin file further fine-tunes the included or excluded paths at the origin.  For detailed instructions about testing the URL handler, navigate to [PWAs as URL Handlers][GithubWicgPwaUrlHandlerBlobMainExplainerMd].  
 
-To preview URL link handling in Microsoft Edge on Windows, navigate to [Turning on experimental features](#turning-on-experimental-features) and turn on **Desktop PWA URL Handling**.  
+To preview URL link handling in Microsoft Edge on Windows, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWA URL Handling**.  
 
 ### Example of the url_handlers in the manifest  
 
@@ -184,7 +184,7 @@ To create an immersive title bar like a native app for your desktop installed we
     
 After it provides an overlay, the entire web client area is available for you to use.  This feature includes a manifest update.  It provides ways for you to determine the size and position of the overlay to help you arrange content.  
 
-To preview the Window Controls Overlays in Microsoft Edge for Windows 10, navigate to [Turning on experimental features](#turning-on-experimental-features) and navigate to **Desktop PWA Window Controls Overlay**.   
+To preview the Window Controls Overlays in Microsoft Edge for Windows 10, navigate to [Turn on experimental features](#turn-on-experimental-features) and navigate to **Desktop PWA Window Controls Overlay**.   
 
 ### Examples of title bar area customization  
 
@@ -489,7 +489,7 @@ This feature allows you to configure your app to automatically launch when the u
 
 ### Turn on Run On OS Login  
 
-To preview the **Run On OS Login** capabilities for your PWA, navigate to [Turning on experimental features](#turning-on-experimental-features) and turn on **Desktop PWAs run on OS login**.  
+To preview the **Run On OS Login** capabilities for your PWA, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWAs run on OS login**.  
 
 :::image type="complex" source="../media/desktop-pwas-run-on-os-login-flag.png" alt-text="Turn on the Desktop PWAs run on OS Login experiment" lightbox="../media/desktop-pwas-run-on-os-login-flag.png":::
    Turn on the **Desktop PWAs run on OS login** experiment  
@@ -559,7 +559,7 @@ The ability to register as a file type handler is in the experimentation phase. 
 
 Chromium-based browsers are testing and shaping this feature.  For more information including code examples, navigate to [Let web applications be file handlers][WebDevFileHandling].  
 
-To preview file handling in Microsoft Edge for Windows 10, navigate to [Turning on experimental features](#turning-on-experimental-features) and turn on **File Handling API**.  
+To preview file handling in Microsoft Edge for Windows 10, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **File Handling API**.  
     
 ## Providing feedback on experimental features  
 

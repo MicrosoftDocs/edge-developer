@@ -1,6 +1,6 @@
 ---
 description: All about 3D View and how to use it.
-title: 3D View   
+title: 3D View overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 12/03/2020
@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-# 3D View   
+# 3D View
 
 Use the **3D View** to debug your web app by navigating through the [Document Object Model (DOM)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.  With it, you may complete the following tasks.  
 
