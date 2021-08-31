@@ -14,7 +14,7 @@ no-loc: ["Enable webhint", "Enable Network Console", "Source Order Viewer", "Ena
 Microsoft Edge DevTools provide access to experimental features that are still in development.  You can test and [provide feedback](#providing-feedback-on-experimental-features) before each feature is released.
 
 Experimental features are available in all of the preview channels of Microsoft Edge.  You can get the latest experimental features by using the Microsoft Edge Canary channel.  This article only covers selected experimental features.  For the full list, see the **Settings** > **Experiments** page in DevTools.
-<!-- first list the sections that are on by default, then other sections in same order as in the Experiments page. -->
+
 
 <!-- ====================================================================== -->
 ## Experimental features which are turned on by default
@@ -56,9 +56,12 @@ To turn on \(or off\) experimental features in Microsoft Edge:
 > Experimental features are constantly being updated and might cause performance issues.  To turn off an experimental feature, open the **Experiments** page and clear the checkbox of the experimental feature that you want to turn off.
 
 
-<!-- on by default in 94 -->
+<!-- ordering for the h2 sections below: first list the sections that are on by default, then other sections in same order as in the Experiments page.  if change to a different ordering scheme, note that scheme here. -->
+
+
 <!-- ====================================================================== -->
 ## Source Order Viewer
+<!-- on by default in 94 -->
 
 **Source Order Viewer** is an experiment that displays the order of elements in the webpage source.  The on-screen display order can differ from the order of the source, which confuses screen reader and keyboard users.  Use the **Source Order Viewer** experiment to find the differences between on-screen display order and the order of the source.
 
@@ -75,9 +78,9 @@ To use the **Source Order Viewer**:
 This experiment is available starting with Microsoft Edge version 86 and is turned on by default.
 
 
-<!-- on by default in 94 -->
 <!-- ====================================================================== -->
 ## Enable webhint
+<!-- on by default in 94 -->
 
 [webhint][WebhintMain] is an open-source tool that provides real-time feedback for websites and local webpages.  The type of feedback provided by [webhint][WebhintMain] includes:
 
@@ -97,9 +100,9 @@ The [webhint][WebhintMain] experiment displays the webhint feedback in the [Issu
 This experiment is available starting with Microsoft Edge version 85 and is turned on by default.
 
 
-<!-- on by default in 94 -->
 <!-- ====================================================================== -->
 ## Enable Composited Layers in 3D View
+<!-- on by default in 94 -->
 
 You can visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.
 
@@ -116,9 +119,9 @@ To use **Composited Layers**, complete the following steps.
 This experiment is available starting with Microsoft Edge version 87 and is turned on by default.
 
 
-<!-- not default.  Present in Experiments as of 94, near bottom of main list -->
 <!-- ====================================================================== -->
 ## Enable Network Console
+<!-- in Experiments as of 94, near bottom of main list -->
 
 **Network Console** is the working title of an experiment to make synthetic network requests over HTTP.  You can use the **Network Console** experiment to send web API requests.
 
@@ -137,10 +140,10 @@ To use the **Network Console**, complete the following steps.
 This experiment is available starting with Microsoft Edge version 85.
 
 
-<!-- not default.  found in Experiments in 94 60% down the main list -->
 <!-- ====================================================================== -->
 ## Enable new Font Editor tool within the Styles pane.
 <!-- keep the period per the ui string literal -->
+<!-- found in Experiments in 94 60% down the main list -->
 
 You can now use the new visual [Font Editor][DevtoolsInspectStylesEditFonts] to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you do the following:
 
@@ -164,7 +167,7 @@ This experiment is available starting with Microsoft Edge version 89.
 
 
 <!-- ====================================================================== -->
-## Previously experimental features which are now permanent regular features
+## Previously Experimental features which are now regular features
 
 These features have been promoted from Experimental to regular features, and have been removed from **Settings** > **Experiments**.
 
@@ -178,12 +181,10 @@ These features have been promoted from Experimental to regular features, and hav
 
 *  The items in the following subsections.
 
-
-<!-- ====================================================================== -->
-## Enable + button tab menus to open more tools
+### Enable + button tab menus to open more tools
 <!-- not in Experiments 94 -->
 
-This was an Experiment starting with Microsoft Edge version 89, and is a regular feature rather than an Experiment, as of version 94.<!-- which release changed this from Experimental?-->
+This was an Experiment starting with Microsoft Edge version 89, and is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
 
 You can now open more tools using the new **More Tools** \(`+`\) icon.  After you turn on the **Enable + button tab menus to open more tools** experiment and reload DevTools, a plus sign \(`+`\) displays to the right of the tab group at the top of the DevTools.  To display a list of other tools that you can add to the tab bar, select the **More Tools** \(`+`\) icon.
 
@@ -191,12 +192,10 @@ You can now open more tools using the new **More Tools** \(`+`\) icon.  After yo
    **More Tools** in the top pane
 :::image-end:::
 
-
-<!-- ====================================================================== -->
-## Enable Welcome tab
+### Enable Welcome tab
 <!-- not in Experiments 94 -->
 
-This was an Experiment starting with Microsoft Edge version 89, and is a regular feature rather than an Experiment, as of version 94.<!-- which release changed this from Experimental?-->
+This was an Experiment starting with Microsoft Edge version 89, and is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
 
 This experiment replaces the **What's New** tool with the new **Welcome** tool.  It displays a refreshed design for the following content.
 
@@ -213,18 +212,17 @@ If you prefer the original **What's New** tool, navigate to [Settings][DevtoolsC
    **Welcome** tool
 :::image-end:::
 
-
 <!-- ====================================================================== -->
 ### Enable new CSS Flexbox debugging features
 <!-- not in Experiments page as of 94 -->
 
-This was an Experiment starting with Microsoft Edge version 89, and is a regular feature rather than an Experiment, as of version 94.<!-- which release changed this from Experimental?-->
+This was an Experiment starting with Microsoft Edge version 89, and is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
 
 <!-- todo: merge into regular articles, add to the above list as a link. -->
 
 This feature provides many new visualizations to help you debug CSS Flexbox layouts.
 
-#### Display persistent overlays on Flexbox layouts with the Inspect tool
+#### Displaying persistent overlays on Flexbox layouts with the Inspect tool
 
 The **Inspect** tool provides a quick way to identify and visualize CSS Flexbox layouts in a website by hovering on them with the mouse.  Select the **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  Then, while debugging the website, hover on a flex container to display outlines around the flex container.
 
@@ -232,7 +230,7 @@ The **Inspect** tool provides a quick way to identify and visualize CSS Flexbox 
    Display Flexbox containers with the **Inspect** tool
 :::image-end:::
 
-#### Display persistent overlays on Flexbox layouts
+#### Displaying persistent overlays on Flexbox layouts
 
 In Microsoft Edge version 89 or later, the CSS Flexbox feature offers the option to turn on persistent overlays on Flexbox layouts.  Persistent overlays provide the following benefits:
 *   Persistent overlays remain visible on the webpage as you scroll, move your mouse, and use other features of the DevTools.
@@ -247,7 +245,7 @@ To toggle persistent overlays on Flexbox layout, do either of the following:
    Flex icons and **Layout** panel in DevTools
 :::image-end:::
 
-#### Configure persistent overlays
+#### Configuring persistent overlays
 
 To configure options for persistent overlays for CSS grids or Flexbox layouts, use the **Layout** pane.  The **Layout** pane is located in the **Elements** tool next to the **Styles** and **Computed** panes.
 
