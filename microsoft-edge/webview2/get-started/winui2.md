@@ -11,7 +11,7 @@ keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWeb
 ---
 # Get started with WebView2 in WinUI 2 apps (public preview)
 
-In this article, get started creating your first WebView2 app and learn about the main features of WebView2. For more information about individual WebView2 APIs, navigate to[Microsoft Edge WebView2 API Reference](https://docs.microsoft.com/microsoft-edge/webview2/webview2-api-reference) and then select the WinRT reference links.
+In this article, get started creating your first WebView2 app and learn about the main features of WebView2. For more information about individual WebView2 APIs, navigate to[Microsoft Edge WebView2 API Reference](../webview2-api-reference.md) and then select the WinRT reference links.
 
 > [!NOTE]
 > The WinUI 2 package takes a dependency on a prerelease WebView2 package.  For full API compatibility, use a preview browser channel as your runtime (that is, the Beta, Dev, or Canary channel of Microsoft Edge).
@@ -77,7 +77,7 @@ In this article, get started creating your first WebView2 app and learn about th
 
 The solution and project is displayed.
 
-:::image type="complex" source="media/new-project-created.msft.png" alt-text="The resulting project" lightbox="new-project-created.msft.png":::
+:::image type="complex" source="media/new-project-created.msft.png" alt-text="The resulting project" lightbox="media/new-project-created.msft.png":::
     The resulting project
 :::image-end:::
 
