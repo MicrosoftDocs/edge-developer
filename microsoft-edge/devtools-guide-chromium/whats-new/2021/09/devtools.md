@@ -15,12 +15,10 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 <!-- 1 -->
 <!-- ====================================================================== -->
-## Search Console Error
+## Look up error messages on the web from the Console
 
 <!-- Title: Debug console errors with our new search feature -->
 <!-- Subtitle: Try search console error for a seamless path to your error's solution. -->
-
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
 
 Search the web for your **Console** error strings, from within DevTools.  When you hover over a magnifying glass icon on an error message in the **Console**, the tooltip is displayed: **Search for this message on the Web**.
 
@@ -34,7 +32,7 @@ When you select the magnifying glass icon, a new tab opens in the browser and sh
    New tab that opened from the **Search Console Error** feature
 :::image-end:::
 
-For more information, navigate to [Experimental features: Search Console Error][ExpFeaturesSearchConsoleError].
+<!-- For more information, navigate to (wait for a PR, then link to near Console docs.) -->
 
 
 <!-- 2 -->
@@ -48,23 +46,17 @@ The Microsoft Edge DevTools extension for Visual Studio Code now uses the newest
 
 Screenshot 1: Dark theme.
 
-:::image type="complex" source="../../media/2021/09/devtools-extension-dark-theme.msft.png" alt-text="Dark theme" lightbox="../../media/2021/09/devtools-extension-dark-theme.msft.png":::
-   Dark theme
-:::image-end:::
-
-Screenshot 2: Light theme, Elements tool.
-
-:::image type="complex" source="../../media/2021/09/devtools-extension-light-elements.msft.png" alt-text="Light theme, Elements tool" lightbox="../../media/2021/09/devtools-extension-light-elements.msft.png":::
-   Light theme, Elements tool
+:::image type="complex" source="../../media/2021/09/devtools-extension-dark-theme.msft.png" alt-text="The Microsoft Edge DevTools extension for Visual Studio Code, with a Dark theme from Visual Studio Code, and a sidebar with Helpful Links" lightbox="../../media/2021/09/devtools-extension-dark-theme.msft.png":::
+   The Microsoft Edge DevTools extension for Visual Studio Code, with a Dark theme from Visual Studio Code, and a sidebar with **Helpful Links**
 :::image-end:::
 
 Screenshot 3: Light theme.
 
-:::image type="complex" source="../../media/2021/09/devtools-extension-light-theme.msft.png" alt-text="Light theme" lightbox="../../media/2021/09/devtools-extension-light-theme.msft.png":::
-   Light theme
+:::image type="complex" source="../../media/2021/09/devtools-extension-light-theme.msft.png" alt-text="The Microsoft Edge DevTools extension for Visual Studio Code, with a Light theme from Visual Studio Code, and a sidebar with Helpful Links" lightbox="../../media/2021/09/devtools-extension-light-theme.msft.png":::
+   The Microsoft Edge DevTools extension for Visual Studio Code, with a Light theme from Visual Studio Code, and a sidebar with **Helpful Links**
 :::image-end:::
 
-For more details about improvements and fixes, check the [changelog file][GithubMicrosoftVscodeEdgeDevtoolsChangelog] in the `vscode-edge-devtools` repo.  Get the [Microsoft Edge Developer Tools for Visual Studio Code extension][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools].  Microsoft Visual Studio Code updates extensions automatically; to update this extension manually instead, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools].
+For more information, navigate to [Microsoft Edge DevTools extension for Visual Studio Code](https://docs.microsoft.com/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension).
 
 
 <!-- 3 -->
@@ -94,7 +86,7 @@ To learn more about using breakpoints for debugging JavaScript code, navigate to
 
 Previously, you couldn't navigate to the **More Tools** (+) button in DevTools by using the arrow keys in the keyboard when the toolbar had focus.  After the last tool in the toolbar, the arrow keys looped back to the first tool, or they expanded the **More tabs** menu.
 
-Starting with Microsoft Edge version 93, the **More tabs** button and the **More Tools** button can be selected by using the arrow keys, when focus is on the toolbar.
+Starting with Microsoft Edge version 93, the **More tabs** (`>>`) button and the **More Tools** button can be selected by using the arrow keys, when focus is on the toolbar.
 
 :::image type="complex" source="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png" alt-text="Using the arrow keys to put focus on the **More tabs** or **More Tools** button" lightbox="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png":::
    Using the arrow keys to put focus on the **More tabs** or **More Tools** button
