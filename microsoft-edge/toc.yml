@@ -389,14 +389,20 @@
           href: progressive-web-apps-chromium/index.md
         - name: What's new
           href: progressive-web-apps-chromium/whats-new/pwa.md
-        - name: Get started with PWAs
-          href: progressive-web-apps-chromium/get-started.md
-        - name: Offline scenarios
-          href: progressive-web-apps-chromium/offline.md
-        - name: Service Workers
-          href: progressive-web-apps-chromium/serviceworker.md
-        - name: Web app manifests
-          href: progressive-web-apps-chromium/webappmanifests.md
+        - name: Developer guide
+          items:
+            - name: Get started with PWAs
+              href: progressive-web-apps-chromium/get-started.md
+            - name: Offline scenarios
+              href: progressive-web-apps-chromium/offline.md
+            - name: Service Workers
+              href: progressive-web-apps-chromium/serviceworker.md
+            - name: Web app manifests
+              href: progressive-web-apps-chromium/webappmanifests.md
+            - name: Advanced features
+              items:
+                - name: Handle files
+                  href: progressive-web-apps-chromium/developer-guide/handle-files.md
         - name: Experimental features
           href: progressive-web-apps-chromium/experimental-features/index.md
         - name: Publish a PWA to the Microsoft Store
