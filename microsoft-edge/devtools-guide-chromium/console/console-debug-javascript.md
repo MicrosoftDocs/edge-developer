@@ -1,5 +1,5 @@
 ---
-description: JavaScript errors are reported by developer tools and debug each in the Console
+description: Debugging and resolving JavaScript-related errors that are reported in the Console.
 title: Fixing JavaScript errors that are reported in the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Fixing JavaScript errors that are reported in the Console
 
-This article is mostly about resolving JavaScript errors that are reported in the Console, although it does have a section about network-related errors as well.  For general use of the **Console** to display and resolve error messages, navigate to [Use the Console](index.md).
+This article is about resolving JavaScript errors that are reported in the Console.  For general use of the **Console** to display and resolve error messages, navigate to [Use the Console](index.md).
 
 
 ## Fix JavaScript errors

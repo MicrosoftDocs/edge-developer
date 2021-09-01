@@ -120,7 +120,7 @@ By default, you run JavaScript code on a single line.  To run a line, type your 
 
 1.  Open the **Console**.  
 1.  Type `doc`.  
-1.  Choose `document` from the dropdown menu.  
+1.  Select `document` from the dropdown menu.  
 1.  Select the `tab` key to choose it.  
 1.  Type `.bo`.  
 1.  Select `tab` to get `document.body`.  
@@ -142,10 +142,10 @@ The **Console** has access to the [Window][MdnDocsWebApiWindow] object of the br
     ```javascript
     document.querySelector('h1').innerHTML
     ```  
-    
-:::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="Copy the top heading (h1) content from the DOM and display in the Console" lightbox="../media/console-intro-reading-DOM.msft.png":::
-   Copy the top heading \(`h1`\) content from the DOM and display in the **Console**  
-:::image-end:::  
+
+:::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="Copying the top heading (h1) content from the DOM and displaying the expression evaluation result in the Console" lightbox="../media/console-intro-reading-DOM.msft.png":::
+   Copying the top heading \(`h1`\) content from the DOM and displaying the expression evaluation result in the **Console**
+:::image-end:::
 
 Instead of only reading from the webpage, you can also change it.  To try changing the webpage, complete the following actions.  
 
