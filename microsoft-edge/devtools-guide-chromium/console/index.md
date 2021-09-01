@@ -58,6 +58,8 @@ For a `Failed to load resource` error, the new tab contains web search results f
    New tab that opened from the **Search Console Error** feature
 :::image-end:::
 
+This feature was introduced in Microsoft Edge version 95.
+
 
 ## Inspect and filter information on the current webpage  
 
