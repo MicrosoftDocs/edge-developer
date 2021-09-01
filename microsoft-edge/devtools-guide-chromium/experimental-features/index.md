@@ -13,13 +13,14 @@ no-loc: ["Enable webhint", "Enable Network Console", "Source Order Viewer", "Ena
 
 Microsoft Edge DevTools provide access to experimental features that are still in development.  You can test and [provide feedback](#providing-feedback-on-experimental-features) before each feature is released.
 
-Experimental features are available in all of the preview channels of Microsoft Edge.  You can get the latest experimental features by using the Microsoft Edge Canary channel.  This article only covers selected experimental features.  For the full list, see the **Settings** > **Experiments** page in DevTools.
+All channels of Microsoft Edge have experimental features.  You can get the latest experimental features by using the Microsoft Edge Canary channel.  This article only covers selected experimental features.  For the full list, see the **Settings** > **Experiments** page in DevTools.
 
 
 <!-- ====================================================================== -->
 ## Experimental features which are turned on by default
 
-As of Microsoft Edge 94, the following experimental features are turned on by default:
+As of Microsoft Edge 94, the following experimental features are turned on by default.  This means that these features can be used right away, without you having to change any settings.  You can turn off these default experimental features, if needed.
+
 <!-- listed in this list in order per Settings > Experiments pane -->
 *  Source order viewer
 *  [Emulation: Support dual screen mode][DevtoolsDeviceModeDualScreenAndFoldables] is turned on by default starting with Microsoft Edge 90.
@@ -169,6 +170,8 @@ This experiment is available starting with Microsoft Edge version 89.
 <!-- ====================================================================== -->
 ## Previously Experimental features which are now regular features
 
+<!-- todo: in a later PR, move these items from here into regular articles -->
+
 These features have been promoted from Experimental to regular features, and have been removed from **Settings** > **Experiments**.
 
 *  [Turn on new CSS grid debugging features][DevtoolsCssGrid] - removed from Experimental status starting with Microsoft Edge 89.
@@ -217,8 +220,6 @@ If you prefer the original **What's New** tool, navigate to [Settings][DevtoolsC
 <!-- not in Experiments page as of 94 -->
 
 This was an Experiment starting with Microsoft Edge version 89, and is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
-
-<!-- todo: merge into regular articles, add to the above list as a link. -->
 
 This feature provides many new visualizations to help you debug CSS Flexbox layouts.
 
