@@ -15,8 +15,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 ## Look up error messages on the web from the Console
 
-<!-- Title: Debug console errors with our new search feature -->
-<!-- Subtitle: Try search console error for a seamless path to your error's solution. -->
+<!-- Title: Quickly debug console errors with our new integrated search feature -->
+<!-- Subtitle: Now you can quickly search for console errors directly from the Console. -->
 
 Search the web for your **Console** error strings, from within DevTools.  In the **Console**, an error message now has a **Search for this message on the Web** button, shown as a magnifying glass.  When you select the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error string.
 
@@ -32,7 +32,12 @@ For more information, navigate to [Look up error messages on the web from the Co
 <!-- Title: Edge DevTools for VS Code now supports themes and uses the most recent codebase -->
 <!-- Subtitle: The Edge DevTools extension for VS Code now uses the same version of the Developer Tools as your Microsoft Edge browser. We also added ways to learn more and for you to tell us what we could do better from within Visual Studio Code. -->
 
-The Microsoft Edge DevTools extension for Visual Studio Code now uses the newest available version of the tools and supports the themes that ship with Visual Studio Code.  The Extension sidebar now provides direct links to our documentation and to file bugs or propose enhancements.  We also added a **Close** button to DevTools, and added support for JavaScript Debugger connections on remote workspaces.
+In this release of the Microsoft Edge DevTools extension for Visual Studio Code, we released the following updates or new features.
+*  Shares the same codebase that's used for the browser-based DevTools. 
+*  Supports themes that ship with Visual Studio Code.
+*  The icon on the sidebar provides links to documentation and access to file bugs or request new features.  
+*  Includes a **Close** button.
+*  Support for JavaScript Debugger connections to remote workspaces.
 
 :::image type="complex" source="../../media/2021/09/devtools-extension-dark-theme.msft.png" alt-text="The extension running inside Visual Studio Code, matching the dark theme of Visual Studio Code, and a new Helpful Links sidebar" lightbox="../../media/2021/09/devtools-extension-dark-theme.msft.png":::
    The extension running inside Visual Studio Code, matching the dark theme of Visual Studio Code, and a new **Helpful Links** sidebar
@@ -52,7 +57,7 @@ For more information, navigate to [Microsoft Edge DevTools extension for Visual 
 <!-- Title: Breakpoint icons are now displayed when using themes from Visual Studio Code -->
 <!-- Subtitle: Setting, removing, and viewing breakpoints is now easier in Microsoft Edge. -->
 
-In Microsoft Edge version 93, you can apply themes from Visual Studio Code to DevTools.  To try this feature, navigate to [Apply color themes to DevTools][ApplyColorThemesToDevTools].
+In Microsoft Edge version 93, you can apply themes used in Visual Studio Code to the DevTools extension.  For more information on this feature, navigate to [Apply color themes to DevTools][ApplyColorThemesToDevTools].
 
 Previously, when using a theme from Visual Studio Code in DevTools, breakpoint icons on the left margin of the code in the **Sources** tool weren't displayed.  Starting in Microsoft Edge 94, breakpoint icons are now displayed as expected.
 
@@ -65,10 +70,10 @@ To learn more about using breakpoints for debugging JavaScript code, navigate to
 
 ## Navigate to the More Tools button with the keyboard
 
-<!-- Title: Use the arrow keys to quickly navigate to the + button and open more tools -->
-<!-- Subtitle: Improved keyboard accessibility with the arrow keys in the main DevTools toolbar. -->
+<!-- Title: Use the arrow keys to navigate to the + button to open more tools -->
+<!-- Subtitle: To open more tools, we have improved keyboard accessibility using the arrow keys on the main DevTools toolbar. -->
 
-Previously, you couldn't navigate to the **More Tools** (+) button in DevTools by using the arrow keys in the keyboard when the toolbar had focus.  After the last tool in the toolbar, the arrow keys looped back to the first tool, or they expanded the **More tabs** menu.
+Previously, you couldn't navigate to the **More Tools** (+) button in DevTools using the arrow keys on the keyboard when the toolbar had focus.  When using the arrow keys, after reaching the last tool in the toolbar, the focus looped back to the first tool, or the **More tabs** menu was displayed.
 
 Starting with Microsoft Edge version 93, the **More tabs** (`>>`) button and the **More Tools** button can be selected by using the arrow keys, when focus is on the toolbar.
 
