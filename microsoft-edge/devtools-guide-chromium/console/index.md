@@ -43,6 +43,22 @@ The fastest way to directly open the **Console** is to select `Control`+`Shift`+
    DevTools gives detailed information about the error in the **Console**  
 :::image-end:::  
 
+
+## Looking up error messages on the web from the Console
+
+Search the web for your **Console** error strings, right from within DevTools.  In the **Console**, an error message has a **Search for this message on the Web** button, shown as a magnifying glass.  When you select the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error string.
+
+:::image type="complex" source="../media/search-console-icon.msft.png" alt-text="The 'Search for this message on the Web' button on an error message in the **Console**" lightbox="../media/search-console-icon.msft.png":::
+   The **Search for this message on the Web** button on an error message in the **Console**
+:::image-end:::
+
+For a `Failed to load resource` error, the new tab contains web search results for the string "Failed to load resource" (without quotes).
+
+:::image type="complex" source="../media/search-console-new-tab.msft.png" alt-text="New tab that opened from the Search Console Error feature" lightbox="../media/search-console-new-tab.msft.png":::
+   New tab that opened from the **Search Console Error** feature
+:::image-end:::
+
+
 ## Inspect and filter information on the current webpage  
 
 When you open DevTools on a webpage, there may be an overwhelming amount of information in the **Console**.  The amount of information becomes a problem when you need to identify important information.  To view the important information that needs action, use the [Issues][DevtoolsIssuesIndex] tool in DevTools.

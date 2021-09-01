@@ -229,7 +229,7 @@
                   href: devtools-guide-chromium/console/reference.md
                 - name: Watch JavaScript expressions in real time
                   href: devtools-guide-chromium/console/live-expressions.md
-                - name: Debug Console errors
+                - name: Fix JavaScript Console errors
                   href: devtools-guide-chromium/console/console-debug-javascript.md
                 - name: Interact with the DOM
                   href: devtools-guide-chromium/console/console-dom-interaction.md
