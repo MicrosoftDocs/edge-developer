@@ -13,30 +13,20 @@ keywords: microsoft edge, web development, f12 tools, devtools
 [!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)]
 
 
-<!-- 1 -->
-<!-- ====================================================================== -->
 ## Look up error messages on the web from the Console
 
 <!-- Title: Debug console errors with our new search feature -->
 <!-- Subtitle: Try search console error for a seamless path to your error's solution. -->
 
-Search the web for your **Console** error strings, from within DevTools.  When you hover over a magnifying glass icon on an error message in the **Console**, the tooltip is displayed: **Search for this message on the Web**.
+Search the web for your **Console** error strings, from within DevTools.  In the **Console**, an error message now has a **Search for this message on the Web** button, shown as a magnifying glass.  When you select the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error string.
 
-:::image type="complex" source="../../media/2021/09/search-console-icon.msft.png" alt-text="The Search Console Error magnifying glass icon in the Console pane" lightbox="../../media/2021/09/search-console-icon.msft.png":::
-   The **Search Console Error** magnifying glass icon in the **Console** pane
+:::image type="complex" source="../../media/2021/09/search-console-icon.msft.png" alt-text="The 'Search for this message on the Web' button on an error message in the **Console**" lightbox="../../media/2021/09/search-console-icon.msft.png":::
+   The **Search for this message on the Web** button on an error message in the **Console**
 :::image-end:::
 
-When you select the magnifying glass icon, a new tab opens in the browser and shows search results for the error string.
-
-:::image type="complex" source="../../media/2021/09/search-console-new-tab.msft.png" alt-text="New tab that opened from the Search Console Error feature" lightbox="../../media/2021/09/search-console-new-tab.msft.png":::
-   New tab that opened from the **Search Console Error** feature
-:::image-end:::
-
-<!-- For more information, navigate to (wait for a PR, then link to near Console docs.) -->
+For more information, navigate to [Look up error messages on the web from the Console][LookupErrorsWebFromConsole].
 
 
-<!-- 2 -->
-<!-- ====================================================================== -->
 ## DevTools extension for Visual Studio Code includes the latest tools, theme support, and helpful links
 
 <!-- Title: Edge DevTools for VS Code now supports themes and uses the most recent codebase -->
@@ -44,31 +34,27 @@ When you select the magnifying glass icon, a new tab opens in the browser and sh
 
 The Microsoft Edge DevTools extension for Visual Studio Code now uses the newest available version of the tools and supports the themes that ship with Visual Studio Code.  The Extension sidebar now provides direct links to our documentation and to file bugs or propose enhancements.  We also added a **Close** button to DevTools, and added support for JavaScript Debugger connections on remote workspaces.
 
-Screenshot 1: Dark theme.
-
-:::image type="complex" source="../../media/2021/09/devtools-extension-dark-theme.msft.png" alt-text="The Microsoft Edge DevTools extension for Visual Studio Code, with a Dark theme from Visual Studio Code, and a sidebar with Helpful Links" lightbox="../../media/2021/09/devtools-extension-dark-theme.msft.png":::
-   The Microsoft Edge DevTools extension for Visual Studio Code, with a Dark theme from Visual Studio Code, and a sidebar with **Helpful Links**
+:::image type="complex" source="../../media/2021/09/devtools-extension-dark-theme.msft.png" alt-text="The extension running inside Visual Studio Code, matching the dark theme of Visual Studio Code, and a new Helpful Links sidebar" lightbox="../../media/2021/09/devtools-extension-dark-theme.msft.png":::
+   The extension running inside Visual Studio Code, matching the dark theme of Visual Studio Code, and a new **Helpful Links** sidebar
 :::image-end:::
 
-Screenshot 3: Light theme.
+The light theme from Visual Studio Code is also supported.
 
-:::image type="complex" source="../../media/2021/09/devtools-extension-light-theme.msft.png" alt-text="The Microsoft Edge DevTools extension for Visual Studio Code, with a Light theme from Visual Studio Code, and a sidebar with Helpful Links" lightbox="../../media/2021/09/devtools-extension-light-theme.msft.png":::
-   The Microsoft Edge DevTools extension for Visual Studio Code, with a Light theme from Visual Studio Code, and a sidebar with **Helpful Links**
+:::image type="complex" source="../../media/2021/09/devtools-extension-light-theme.msft.png" alt-text="The extension running inside Visual Studio Code, matching the light theme of Visual Studio Code, and a new Helpful Links sidebar" lightbox="../../media/2021/09/devtools-extension-light-theme.msft.png":::
+   The extension running inside Visual Studio Code, matching the light theme of Visual Studio Code, and a new **Helpful Links** sidebar
 :::image-end:::
 
 For more information, navigate to [Microsoft Edge DevTools extension for Visual Studio Code](https://docs.microsoft.com/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension).
 
 
-<!-- 3 -->
-<!-- ====================================================================== -->
-## Breakpoint icons are now displayed in Visual Studio Code themes
+## Breakpoint icons are now displayed when using Visual Studio Code themes
 
-<!-- Title: Breakpoint icons are now displayed when using DevTools themes from Visual Studio Code -->
+<!-- Title: Breakpoint icons are now displayed when using themes from Visual Studio Code -->
 <!-- Subtitle: Setting, removing, and viewing breakpoints is now easier in Microsoft Edge. -->
 
 In Microsoft Edge version 93, you can apply themes from Visual Studio Code to DevTools.  To try this feature, navigate to [Apply color themes to DevTools][ApplyColorThemesToDevTools].
 
-When using a theme from Visual Studio Code in DevTools in Microsoft Edge version 93, breakpoint icons weren't displayed when setting breakpoints in the **Sources** tool.  Starting with Microsoft Edge 94, breakpoint icons are now displayed.
+Previously, when using a theme from Visual Studio Code in DevTools, breakpoint icons on the left margin of the code in the **Sources** tool weren't displayed.  Starting in Microsoft Edge 94, breakpoint icons are now displayed as expected.
 
 :::image type="complex" source="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png" alt-text="Breakpoint icons are now displayed when using Visual Studio Code themes" lightbox="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png":::
    Breakpoint icons are now displayed when using Visual Studio Code themes
@@ -77,8 +63,6 @@ When using a theme from Visual Studio Code in DevTools in Microsoft Edge version
 To learn more about using breakpoints for debugging JavaScript code, navigate to [How to pause your code with breakpoints in Microsoft Edge DevTools][PauseCodeWithBreakpoints].
 
 
-<!-- 4 -->
-<!-- ====================================================================== -->
 ## Navigate to the More Tools button with the keyboard
 
 <!-- Title: Use the arrow keys to quickly navigate to the + button and open more tools -->
@@ -109,8 +93,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 <!-- ====================================================================== -->
 <!-- links -->
-<!-- [ExpFeaturesSearchConsoleError]: ../../../experimental-features/index.md#enable-search-console-error-functionality "Enable Search Console Error functionality - Experimental features | Microsoft Docs" -->
-[ExpFeaturesSearchConsoleError]: ../../../experimental-features/index.md "Enable Search Console Error functionality - Experimental features | Microsoft Docs"
+[LookupErrorsWebFromConsole]: ../../../console/console-debug-javascript.md#look-up-error-messages-on the-web-from-the-console "Look up error messages on the web from the Console - Experimental features | Microsoft Docs"
 [DevToolsKeyboardShortcuts]: ../../../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
 [ApplyColorThemesToDevTools]: ../../../customize/theme.md "Apply color themes to DevTools | Microsoft Docs"
 [PauseCodeWithBreakpoints]: ../../../javascript/breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
@@ -118,12 +101,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 <!-- external links -->
 [MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"
 
-[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Update an extension manually - Extension Marketplace | Visual Studio Code"
-
 [VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Developer Tools for Visual Studio Code | Visual Studio Marketplace"
-
-[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
-[GithubMicrosoftVscodeEdgeDevtoolsChangelog]: https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md "Changelog file - vscode-edge-devtools | GitHub"
 
 
 <!-- ====================================================================== -->

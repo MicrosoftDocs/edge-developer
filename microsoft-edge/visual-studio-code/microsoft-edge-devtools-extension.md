@@ -10,16 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual 
 ---
 # Microsoft Edge DevTools extension for Visual Studio Code
 
-<!-- merge-in the notes that use to be in What's New in a now-dissolved parent section:
-Get the [Microsoft Edge Developer Tools for Visual Studio Code extension][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools].
-
-Microsoft Visual Studio Code updates extensions automatically; to update this extension manually instead, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].
-
-You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools].
--->
-
-The Microsoft Edge DevTools extension for Visual Studio Code lets you use the browser's **Elements** tool and **Network** tool from within Visual Studio Code.
-Without leaving Visual Studio Code, use Microsoft Edge DevTools to connect to an instance of Microsoft Edge with the following functionality:
+The Microsoft Edge DevTools extension for Visual Studio Code lets you use the browser's **Elements** tool and **Network** tool from within Visual Studio Code.  Without leaving Visual Studio Code, use Microsoft Edge DevTools to connect to an instance of Microsoft Edge with the following functionality:
 * View the runtime HTML structure.
 * Change the layout.
 * Change styles (CSS).
@@ -48,7 +39,11 @@ This article uses the name "the Microsoft Edge DevTools extension", except for U
 
 To install the extension from within Visual Studio Code, navigate to [The Microsoft Edge DevTools extension for Visual Studio Code](index.md#the-microsoft-edge-devtools-extension-for-visual-studio-code). <!-- in the article _Visual Studio Code overview_. -->
 
-Or, you can [download the Microsoft Edge DevTools extension][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] from Visual Studio Marketplace, or view the [source code][checkSourceCode] at GitHub.
+Or, you can [download the Microsoft Edge DevTools extension][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] from Visual Studio Marketplace.  You can view the [source code][checkSourceCode] at GitHub.
+
+### Updating the extension
+
+Microsoft Visual Studio Code updates extensions automatically.  To update the extension manually, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].
 
 
 <!-- ====================================================================== -->
@@ -78,7 +73,7 @@ Use the Microsoft Edge DevTools extension in Visual Studio Code to inspect an HT
 <!-- ====================================================================== -->
 ## Modes for using Microsoft Edge DevTools in Visual Studio Code
 
-<!-- todo: relate this list to the subsequent sections -->
+<!-- todo: relate/link this list to the subsequent sections -->
 You can use this extension in one of three modes:
 * Launch Microsoft Edge in a new window, and navigate to your web application.
 * Attach to a running instance of Microsoft Edge.
@@ -137,7 +132,7 @@ To debug your project, you might want to change the default page that opens in M
 
 In version 1.1.6 or later, you can customize the DevTools in the Visual Studio Code extension. To customize the settings, in the **Microsoft Edge Tools: Targets** panel, select **…**, and then select **Open Settings**.
 
-You can also view the changes made to the extension. To view the changelog, in the **Microsoft Edge Tools: Targets** panel, select **...**, and then select **View Changelog**.
+You can also view the changes made to the extension. To view the changelog, in the **Microsoft Edge Tools: Targets** panel, select **...**, and then select **View Changelog**.  Or, in the browser, check the [changelog file][GithubMicrosoftVscodeEdgeDevtoolsChangelog] in the `vscode-edge-devtools` repo.
 
 ### Changing to headless mode
 
@@ -276,7 +271,9 @@ If you want to help make the Microsoft Edge DevTools extension better, your cont
 [ConsoleUtilitiesAPI]: /microsoft-edge/devtools-guide-chromium/console/utilities "Console Utilities API reference | Microsoft Docs"
 <!-- external links -->
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
+[GithubMicrosoftVscodeEdgeDevtoolsChangelog]: https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md "Changelog file - vscode-edge-devtools | GitHub"
 [GithubMicrosoftVscodeEdgeDevtoolsNewIssue]: https://github.com/Microsoft/vscode-edge-devtools/issues/new "New Issue - microsoft/vscode-edge-devtools | GitHub"
+[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Update an extension manually - Extension Marketplace | Visual Studio Code"
 
 [VisualstudioMarketplaceElementsMicrosoftEdgeChromium]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Developer Tools for Visual Studio Code | Visual Studio Marketplace"
 
