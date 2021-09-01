@@ -10,7 +10,7 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 ---
 # Alternate extension distribution methods  
 
-Generally, extensions are distributed through the Microsoft Edge Add-ons store. There are some scenarios where developers may need to distribute extensions using alternate methods. For example:
+Generally, extensions are distributed through the Microsoft Edge Add-ons website. There are some scenarios where developers may need to distribute extensions using alternate methods. For example:
 
 1.  The extension is associated with other software, and it should be installed together with the rest of the bundled software.   
 1.  Network administrators want to distribute an extension throughout their organization.   
@@ -22,7 +22,7 @@ Extensions that are not loaded from the Edge Add-ons store are referred to as ex
     
 ## Before you begin  
 
-Ensure that you publish your extension in the Microsoft Edge Add-ons store, or package a `.crx` file and ensure that it installs successfully on your computer.  If you install the `.crx` file using the `update_URL`, ensure you can navigate to your extension at that URL.  
+Ensure that you publish your extension in the Microsoft Edge Add-ons website, or package a `.crx` file and ensure that it installs successfully on your computer.  If you install the `.crx` file using the `update_URL`, ensure you can navigate to your extension at that URL.  
 
 Also, ensure that you have the following information.    
 
@@ -41,7 +41,7 @@ To distribute your extension using the Windows registry, perform the following s
     *   32-bit Windows:  `HKEY_LOCAL_MACHINE\Software\Microsoft\Edge\Extensions`.  
     *   64-bit Windows:  `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Edge\Extensions`.  
 1.  Create a new key, or folder, under **Extensions** with the same name as the ID of your extension. For example, create the key with the name `aaaaaaaaaabbbbbbbbbbcccccccccc`.  
-1.  In the **Extensions** key, create the `update_url` property, and set the value to `https://edge.microsoft.com/extensionwebstorebase/v1/crx`.  The `update_url` property points to the `.crx` file of your extension in the Microsoft Edge Add-ons store.  
+1.  In the **Extensions** key, create the `update_url` property, and set the value to `https://edge.microsoft.com/extensionwebstorebase/v1/crx`.  The `update_url` property points to the `.crx` file of your extension in the Microsoft Edge Add-ons website.  
 
     ```json
     {
@@ -95,7 +95,7 @@ To distribute your extension using a preferences JSON file, perform the followin
         }
         ```  
  
-    *  Copy the following code to your JSON file when installing from the Microsoft Edge Add-ons store on macOS and Linux.
+    *  Copy the following code to your JSON file when installing from the Microsoft Edge Add-ons website on macOS and Linux.
     
         ```json
         {

@@ -31,10 +31,10 @@ When you set your extension to automatically update, your extension shares the f
 
 Previously, non-store based extensions were supported.  Also, you updated the native binaries and the extension at the same time.  
 
-Now, the Microsoft Edge Add-ons store hosts your extensions and you update your extension using the same mechanism as Microsoft Edge.  You don't control the update mechanism.  Be careful when you update extensions that have a dependency on native binaries.  
+Now, the Microsoft Edge Add-ons website hosts your extensions and you update your extension using the same mechanism as Microsoft Edge.  You don't control the update mechanism.  Be careful when you update extensions that have a dependency on native binaries.  
 
 > [!NOTE]
-> This article does not apply to extensions that you publish using the [Partner Center][MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd] dashboard.  You may use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons store.  For more information, navigate to [Update or remove your extension][ExtensionsPublishUpdateExtension].  
+> This article does not apply to extensions that you publish using the [Partner Center][MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd] dashboard.  You may use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons website.  For more information, navigate to [Update a Microsoft Edge extension][ExtensionsPublishUpdateExtension].  
 
 ## Overview  
 
@@ -85,7 +85,7 @@ The default update check frequency is several hours.  To force an update, naviga
 
 ## Advanced usage: request parameters  
 
-The basic mechanism is simple.  To automatically update your extension, complete the following actions.  
+The basic mechanism is simple.  To automatically update your extension:
 
 1.  Upload your static XML file on your web server, such as Apache.  
 1.  Update the XML file as you release new versions of your extensions.  
@@ -139,7 +139,9 @@ If you send a single request and the number of installed extensions that use the
 
 ## Advanced usage: minimum browser version  
 
-As new APIs release for the Microsoft Edge extensions system, you may release an updated version of your extension or app that only works with newer Microsoft Edge versions.  When Microsoft Edge is automatically updated, it may take a few days before most of your users update to that new release.  To ensure that a specific update applies only to Microsoft Edge versions that are current or newer than a specific version, add the `prodversionmin` attribute in your update manifest.  In the following code snippet, the `prodversionmin` attribute value of `3.0.193.0` specifies that your app automatically updated to version `2.0` only when the user is running Microsoft Edge `3.0.193.0` or newer.  
+As new APIs release for the Microsoft Edge extensions system, you may release an updated version of your extension or app that only works with newer Microsoft Edge versions.  When Microsoft Edge is automatically updated, it may take a few days before most of your users update to that new release.  
+
+To make sure that a specific update applies only to Microsoft Edge versions that are current or newer than a specific version, add the `prodversionmin` attribute in your update manifest.  In the following code snippet, the `prodversionmin` attribute value of `3.0.193.0` specifies that your app automatically updated to version `2.0` only when the user is running Microsoft Edge `3.0.193.0` or newer.  
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
@@ -151,8 +153,7 @@ As new APIs release for the Microsoft Edge extensions system, you may release an
 ```  
 
 <!-- links -->  
-
-[ExtensionsPublishUpdateExtension]: ../publish/update-extension.md "Update or remove your extension | Microsoft Docs"  
+[ExtensionsPublishUpdateExtension]: ../publish/update-extension.md "Update a Microsoft Edge extension | Microsoft Docs"  
 
 [MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"  
 
