@@ -24,7 +24,8 @@ Search the web for your **Console** error strings, from within DevTools.  In the
    The **Search for this message on the Web** button on an error message in the **Console**
 :::image-end:::
 
-For more information, navigate to [Look up error messages on the web from the Console][LookupErrorsWebFromConsole].
+<!-- todo: approve and merge PR 1430, update this branch from master, uncomment both link lines: -->
+<!-- For more information, navigate to [Looking up error messages on the web from the Console][LookupErrorsWebFromConsole]. -->
 
 
 ## DevTools extension for Visual Studio Code includes the latest tools, theme support, and helpful links
@@ -73,7 +74,7 @@ To learn more about using breakpoints for debugging JavaScript code, navigate to
 <!-- Title: Use the arrow keys to navigate to the + button to open more tools -->
 <!-- Subtitle: To open more tools, we have improved keyboard accessibility using the arrow keys on the main DevTools toolbar. -->
 
-Previously, you couldn't navigate to the **More Tools** (+) button in DevTools using the arrow keys on the keyboard when the toolbar had focus.  When using the arrow keys, after reaching the last tool in the toolbar, the focus looped back to the first tool, or the **More tabs** menu was displayed.
+Previously, you couldn't navigate to the **More Tools** (`+`) button in DevTools using the arrow keys on the keyboard when the toolbar had focus.  When using the arrow keys, after reaching the last tool in the toolbar, the focus looped back to the first tool, or the **More tabs** menu was displayed.
 
 Starting with Microsoft Edge version 93, the **More tabs** (`>>`) button and the **More Tools** button can be selected by using the arrow keys, when focus is on the toolbar.
 
@@ -96,9 +97,10 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
 
 
+
 <!-- ====================================================================== -->
 <!-- links -->
-[LookupErrorsWebFromConsole]: ../../../console/console-debug-javascript.md#look-up-error-messages-on the-web-from-the-console "Look up error messages on the web from the Console - Experimental features | Microsoft Docs"
+<!-- [LookupErrorsWebFromConsole]: ../../../console/index.md#look-up-error-messages-on the-web-from-the-console "Looking up error messages on the web from the Console - Use the Console | Microsoft Docs" -->
 [DevToolsKeyboardShortcuts]: ../../../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
 [ApplyColorThemesToDevTools]: ../../../customize/theme.md "Apply color themes to DevTools | Microsoft Docs"
 [PauseCodeWithBreakpoints]: ../../../javascript/breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
