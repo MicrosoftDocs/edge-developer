@@ -43,20 +43,22 @@ Each entry in the `file_handlers` array needs to have two properties:
 Consider the following example:  
 
 ```json
-"file_handlers": [
-    {
-        "action": "/newEmail",
-        "accept": {
-            "image/*": [
-                ".png",
-                ".jpg"
-            ],
-            "text/*": [
-                ".txt"
-            ]
+{
+    "file_handlers": [
+        {
+            "action": "/newEmail",
+            "accept": {
+                "image/*": [
+                    ".png",
+                    ".jpg"
+                ],
+                "text/*": [
+                    ".txt"
+                ]
+            }
         }
-    }
-]
+    ]
+}
 ```  
 
 In the above example, one file handler is registered by the app. It will make the operating system present the app as a choice for the user to use when `.png` or `.jpg` image files or `.txt` text files are opened.
@@ -74,6 +76,8 @@ if ('launchQueue' in window) {
     console.error('File Handling API is not supported!');
 }
 ```
+
+**TODO** Explain what the launchQueue is.
 
 ## Handle files in your app  
 
@@ -107,6 +111,8 @@ async function handleFiles(files) {
     }
 }
 ```  
+
+**TODO** Explain what type of object `launchParams.files` is, and link to docs on MDN about it if any.
 
 ## Sample app  
 
