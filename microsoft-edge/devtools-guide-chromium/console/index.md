@@ -43,6 +43,24 @@ The fastest way to directly open the **Console** is to select `Control`+`Shift`+
    DevTools gives detailed information about the error in the **Console**  
 :::image-end:::  
 
+
+## Look up error messages on the web from the Console
+
+Search the web for your **Console** error strings, right from within DevTools.  In the **Console**, an error message has a **Search for this message on the Web** button, shown as a magnifying glass.  When you select the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error string.
+
+:::image type="complex" source="../media/search-console-icon.msft.png" alt-text="The 'Search for this message on the Web' button on an error message in the **Console**" lightbox="../media/search-console-icon.msft.png":::
+   The **Search for this message on the Web** button on an error message in the **Console**
+:::image-end:::
+
+For a `Failed to load resource` error, the new tab contains web search results for the string "Failed to load resource" (without quotes).
+
+:::image type="complex" source="../media/search-console-new-tab.msft.png" alt-text="New tab that opened from the Search Console Error feature" lightbox="../media/search-console-new-tab.msft.png":::
+   New tab that opened from the **Search Console Error** feature
+:::image-end:::
+
+This feature was introduced in Microsoft Edge version 94.
+
+
 ## Inspect and filter information on the current webpage  
 
 When you open DevTools on a webpage, there may be an overwhelming amount of information in the **Console**.  The amount of information becomes a problem when you need to identify important information.  To view the important information that needs action, use the [Issues][DevtoolsIssuesIndex] tool in DevTools.
@@ -104,7 +122,7 @@ By default, you run JavaScript code on a single line.  To run a line, type your 
 
 1.  Open the **Console**.  
 1.  Type `doc`.  
-1.  Choose `document` from the dropdown menu.  
+1.  Select `document` from the dropdown menu.  
 1.  Select the `tab` key to choose it.  
 1.  Type `.bo`.  
 1.  Select `tab` to get `document.body`.  
@@ -126,10 +144,10 @@ The **Console** has access to the [Window][MdnDocsWebApiWindow] object of the br
     ```javascript
     document.querySelector('h1').innerHTML
     ```  
-    
-:::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="Copy the top heading (h1) content from the DOM and display in the Console" lightbox="../media/console-intro-reading-DOM.msft.png":::
-   Copy the top heading \(`h1`\) content from the DOM and display in the **Console**  
-:::image-end:::  
+
+:::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="Copying the top heading (h1) content from the DOM and displaying the expression evaluation result in the Console" lightbox="../media/console-intro-reading-DOM.msft.png":::
+   Copying the top heading \(`h1`\) content from the DOM and displaying the expression evaluation result in the **Console**
+:::image-end:::
 
 Instead of only reading from the webpage, you can also change it.  To try changing the webpage, complete the following actions.  
 

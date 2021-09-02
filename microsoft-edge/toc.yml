@@ -197,7 +197,7 @@
               href: devtools-guide-chromium/service-workers/index.md
         - name: Concepts
           items:
-            - name: 3D view
+            - name: 3D View
               href: devtools-guide-chromium/3d-view/index.md
             - name: Animations
               href: devtools-guide-chromium/inspect-styles/animations.md
@@ -231,7 +231,7 @@
                   href: devtools-guide-chromium/console/reference.md
                 - name: Watch JavaScript expressions in real time
                   href: devtools-guide-chromium/console/live-expressions.md
-                - name: Debug Console errors
+                - name: Fix JavaScript Console errors
                   href: devtools-guide-chromium/console/console-debug-javascript.md
                 - name: Interact with the DOM
                   href: devtools-guide-chromium/console/console-dom-interaction.md
