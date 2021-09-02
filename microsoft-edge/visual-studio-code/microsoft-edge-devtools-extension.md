@@ -130,11 +130,45 @@ To debug your project, you might want to change the default page that opens in M
 <!-- ====================================================================== -->
 ## Changing the extension settings
 
-In version 1.1.6 or later, you can customize the DevTools in the Visual Studio Code extension. To customize the settings, in the **Microsoft Edge Tools: Targets** panel, select **…**, and then select **Open Settings**.
+In version 1.1.6 or later, you can customize DevTools in the Visual Studio Code extension.
 
-You can also view the changes made to the extension. To view the changelog, in the **Microsoft Edge Tools: Targets** panel, select **...**, and then select **View Changelog**.  Or, in the browser, check the [changelog file][GithubMicrosoftVscodeEdgeDevtoolsChangelog] in the `vscode-edge-devtools` repo.
+To customize the settings:
 
-### Changing to headless mode
+1.  In Visual Studio Code, on the **Activity Bar**, select **Microsoft Edge Tools**.
+
+1.  Hover over the upper right corner of the **Microsoft Edge Tools**: **Targets** panel, to the right of the word **TARGETS**.  Several icons are now displayed.
+
+1.  Select the **More Actions** (...) icon to the right of the word **TARGETS**, and then select **Open Settings**.
+
+    :::image type="complex" source="./media/edge-tools-open-settings-icon.msft.png" alt-text="The More Actions icon on the Microsoft Edge Tools: Targets panel, to change the settings of the DevTools extension" lightbox="./media/edge-tools-open-settings-icon.msft.png":::
+       The **More Actions** icon on the **Microsoft Edge Tools: Targets** panel, to change the settings of the DevTools extension
+    :::image-end:::
+
+1.  For the settings to take effect, if a browser instance is running that was started by the extension, you might need to close it.
+
+
+<!-- ====================================================================== -->
+## Viewing the changelog to see changes made to the extension
+
+You can view the changes made to the extension. 
+
+To view the changelog:
+
+1.  In Visual Studio Code, on the **Activity Bar**, select **Microsoft Edge Tools**.
+
+1.  In the **Microsoft Edge Tools**: **Targets** panel, select **...** to the right of the word **TARGET**.  Several icons are now displayed.
+
+1.  Select the **More Actions** (...) icon to the right of the word **TARGETS**, and then select **View Changelog**.
+
+    :::image type="complex" source="./media/view-changelog-menuitem.msft.png" alt-text="The View Changelog menu item, to view changes that have been made to the extension" lightbox="./media/view-changelog-menuitem.msft.png":::
+       The **View Changelog** menu item, to view changes that have been made to the extension
+    :::image-end:::
+
+Or, in the browser, check the [changelog file][GithubMicrosoftVscodeEdgeDevtoolsChangelog] in the `vscode-edge-devtools` repo.
+
+
+<!-- ====================================================================== -->
+## Changing to headless mode
 
 By default, the extension launches Microsoft Edge in a new window, which displays another browser icon on the task bar.
 
@@ -151,6 +185,7 @@ To use only the screencast browser inside Visual Studio Code, select **Settings*
 :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## Opening source files from the Elements tool
 
 One of the features of the **Elements** tool is that it displays the source file that applied styles and event handlers to a selected node in the DOM tree.  Source files appear in the form of links to a URL.  Selecting a link opens that file in the Visual Studio Code editor.
