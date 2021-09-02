@@ -46,7 +46,7 @@ The fastest way to directly open the **Console** is to select `Control`+`Shift`+
 
 ## Look up error messages on the web from the Console
 
-Search the web for your **Console** error strings, right from within DevTools.  In the **Console**, an error message has a **Search for this message on the Web** button, shown as a magnifying glass.  When you select the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error string.
+Search the web for your **Console** error strings, right from within DevTools.  In the **Console**, many error messages have a **Search for this message on the Web** button, shown as a magnifying glass.  When you select the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error string.
 
 :::image type="complex" source="../media/search-console-icon.msft.png" alt-text="The 'Search for this message on the Web' button on an error message in the **Console**" lightbox="../media/search-console-icon.msft.png":::
    The **Search for this message on the Web** button on an error message in the **Console**

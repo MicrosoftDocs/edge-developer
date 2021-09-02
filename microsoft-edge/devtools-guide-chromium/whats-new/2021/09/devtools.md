@@ -18,10 +18,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 <!-- Title: Quickly debug console errors with our new integrated search feature -->
 <!-- Subtitle: Now you can quickly search for console errors directly from the Console. -->
 
-Search the web for your **Console** error strings, from within DevTools.  In the **Console**, an error message now has a **Search for this message on the Web** button, shown as a magnifying glass.  When you select the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error string.
+Search the web for your **Console** error strings, from within DevTools.  In the **Console**, many error messages now have a **Search for this message on the Web** button, shown as a magnifying glass.  When you select the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error string.
 
-<!-- todo: approve and merge PR 1430, update this branch from master, uncomment both link lines: -->
-<!-- For more information, navigate to [Looking up error messages on the web from the Console][LookupErrorsWebFromConsole]. -->
+For more information, navigate to [Look up error messages on the web from the Console][LookupErrorsWebFromConsole].
 
 :::image type="complex" source="../../media/2021/09/search-console-icon.msft.png" alt-text="The 'Search for this message on the Web' button on an error message in the **Console**" lightbox="../../media/2021/09/search-console-icon.msft.png":::
    The **Search for this message on the Web** button on an error message in the **Console**
@@ -100,7 +99,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 <!-- ====================================================================== -->
 <!-- links -->
 [EdgeDevToolsExtensionForVSCode]: ../../../../visual-studio-code/microsoft-edge-devtools-extension.md "Microsoft Edge DevTools extension for Visual Studio Code | Microsoft Docs"
-<!-- [LookupErrorsWebFromConsole]: ../../../console/index.md#look-up-error-messages-on the-web-from-the-console "Looking up error messages on the web from the Console - Use the Console | Microsoft Docs" -->
+[LookupErrorsWebFromConsole]: ../../../console/index.md#look-up-error-messages-on-the-web-from-the-console "Look up error messages on the web from the Console - Use the Console | Microsoft Docs"
 [DevToolsKeyboardShortcuts]: ../../../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
 [ApplyColorThemesToDevTools]: ../../../customize/theme.md "Apply color themes to DevTools | Microsoft Docs"
 [PauseCodeWithBreakpoints]: ../../../javascript/breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
