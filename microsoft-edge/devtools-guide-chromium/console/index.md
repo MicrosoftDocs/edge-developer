@@ -44,7 +44,7 @@ The fastest way to directly open the **Console** is to select `Control`+`Shift`+
 :::image-end:::  
 
 
-## Looking up error messages on the web from the Console
+## Look up error messages on the web from the Console
 
 Search the web for your **Console** error strings, right from within DevTools.  In the **Console**, an error message has a **Search for this message on the Web** button, shown as a magnifying glass.  When you select the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error string.
 
