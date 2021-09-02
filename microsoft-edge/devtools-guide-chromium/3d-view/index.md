@@ -1,6 +1,6 @@
 ---
 description: All about 3D View and how to use it.
-title: 3D View
+title: 3D View overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 12/03/2020
@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-# 3D View  
+# 3D View
 
 Use the **3D View** to debug your web app by navigating through the [Document Object Model (DOM)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.  With it, you may complete the following tasks.  
 
@@ -20,7 +20,7 @@ Use the **3D View** to debug your web app by navigating through the [Document Ob
 
 If you want to explore an early prototype of 3D View project and run the code yourself, navigate to [3D View Sample][GithubMicrosoftedgeDevtoolssamples3dview].  
 
-On the left side, there are three panes that you may use for your debugging experience.  
+On the left side, there are three panes that you can use for your debugging experience.  
 
 *   The [Z-index](#z-index) pane.  Navigate through the different elements in the web app with the z-index context in mind.  The **Z-index** pane is the default pane.  
 *   The [3D DOM](#3d-dom) pane.  Explore the DOM as a whole with all the elements easily accessible.  To access the pane, choose the **DOM** pane next to the **Z-index** pane.  
