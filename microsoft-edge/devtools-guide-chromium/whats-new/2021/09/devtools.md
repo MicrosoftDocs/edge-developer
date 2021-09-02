@@ -34,11 +34,11 @@ Search the web for your **Console** error strings, from within DevTools.  In the
 <!-- Subtitle: The Edge DevTools extension for VS Code now uses the same version of the Developer Tools as your Microsoft Edge browser. We also added ways to learn more and for you to tell us what we could do better from within Visual Studio Code. -->
 
 In this release of the Microsoft Edge DevTools extension for Visual Studio Code, we released the following updates or new features.
-*  Shares the same codebase that's used for the browser-based DevTools. 
+*  Shares the same codebase that's used for the browser-based DevTools.
 *  Supports themes that ship with Visual Studio Code.
-*  The icon on the sidebar provides links to documentation and access to file bugs or request new features.  
-*  Includes a **Close** button.
-*  Support for JavaScript Debugger connections to remote workspaces.
+*  Adds a **Helpful Links** section in the **Microsoft Edge Tools** sidebar, with buttons for **Documentation**, **Report a Bug**, and **Request a Feature**.
+*  Adds a **Close** button.
+*  Adds support for JavaScript Debugger connections to remote workspaces.
 
 For more information, navigate to [Microsoft Edge DevTools extension for Visual Studio Code][EdgeDevToolsExtensionForVSCode].
 
@@ -46,7 +46,7 @@ For more information, navigate to [Microsoft Edge DevTools extension for Visual 
    The extension running inside Visual Studio Code, matching the dark theme of Visual Studio Code, and a new **Helpful Links** sidebar
 :::image-end:::
 
-The light theme from Visual Studio Code is also supported.
+Light themes from Visual Studio Code are also supported.
 
 :::image type="complex" source="../../media/2021/09/devtools-extension-light-theme.msft.png" alt-text="The extension running inside Visual Studio Code, matching the light theme of Visual Studio Code, and a new Helpful Links sidebar" lightbox="../../media/2021/09/devtools-extension-light-theme.msft.png":::
    The extension running inside Visual Studio Code, matching the light theme of Visual Studio Code, and a new **Helpful Links** sidebar

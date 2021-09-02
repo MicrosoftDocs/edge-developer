@@ -57,7 +57,7 @@ The Microsoft Edge DevTools extension lets you easily launch an instance of Edge
    Microsoft Edge DevTools for Visual Studio Code extension
 :::image-end:::
 
-Selecting **Launch Instance** opens a browser window and the Microsoft Edge DevTools in Visual Studio Code.
+Selecting **Launch Instance** opens a browser window, and also opens the **Edge DevTools** tab in Visual Studio Code.
 
 :::image type="complex" source="./media/edge-devtools-for-vscode-launch-instance.png" alt-text="Select Launch Instance to open the browser in Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-launch-instance.png":::
    Select **Launch Instance** to open the browser in Visual Studio Code
@@ -89,7 +89,7 @@ To open a browser instance from Visual Studio Code:
 
 1. On the **Activity Bar**, select **Microsoft Edge Tools**.
 
-1. On the **Microsoft Edge Tools: Targets** panel, select **Launch Instance**.  Microsoft Edge opens, displaying a default page with guidance for more information.  Also, the **DevTools** panel opens in Visual Studio Code.
+1. On the **Microsoft Edge Tools: Targets** panel, select **Launch Instance**.  Microsoft Edge opens, displaying a default page with guidance for more information.  Also, the **Edge DevTools** panel is displayed in Visual Studio Code, containing the **Welcome**, **Elements**, and **Network** tools.
 
     :::image type="complex" source="./media/edge-devtools-for-vscode-targets-launch.png" alt-text="Microsoft Edge and DevTools panel open in Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-targets-launch.png":::
        Microsoft Edge and DevTools panel open in Visual Studio Code
@@ -148,13 +148,9 @@ To customize the settings:
 
 Some settings have a note that reads **(reload required after changing)**.  For such a setting to take effect:
 
-1.  Close the **Edge DevTools** tab.
+1.  Close the browser instance that the extension opened.  This automatically closes the **Edge DevTools** tab as well.
 
-1.  Close the browser instance that the extension opened, if any.
-
-1.  To restart the extension, from the **Activity Bar**, select **Microsoft Edge Tools**.
-
-1.  Select the **Launch Instance** button.
+1.  To restart the extension, from the **Activity Bar**, select **Microsoft Edge Tools**, and then select the **Launch Instance** button.  Microsoft Edge opens, and the **Edge DevTools** tab is displayed.
 
 
 <!-- ====================================================================== -->
@@ -174,7 +170,7 @@ To view the changelog:
        The **View Changelog** menu item, to view changes that have been made to the extension
     :::image-end:::
 
-Or, in the browser, check the [changelog file][GithubMicrosoftVscodeEdgeDevtoolsChangelog] in the `vscode-edge-devtools` repo.
+Or, in the browser, navigate to the [changelog file][GithubMicrosoftVscodeEdgeDevtoolsChangelog] in the `vscode-edge-devtools` repo.
 
 
 <!-- ====================================================================== -->
