@@ -1,6 +1,6 @@
 ---
-description: Use Puppeteer to automate and test in Microsoft Edge
-title: Puppeteer
+description: Use Puppeteer to automate and test in Microsoft Edge.
+title: Puppeteer overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/06/2021
@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, developer, tools, automation, test
 ---
-# Puppeteer overview  
+# Puppeteer overview
 
 [Puppeteer][PuppeteerMain] is a [Node][NodejsMain] library that provides a high-level API to control Microsoft Edge \(Chromium\) using the [DevTools Protocol][GithubChromedevtoolsProtocol].  Puppeteer launches [headless browsers][WikiHeadlessBrowser] by default.  Headless browsers do not display a UI, so instead you must use the command line.  You may also configure Puppeteer to run full \(non-headless\) Microsoft Edge as well.  
 

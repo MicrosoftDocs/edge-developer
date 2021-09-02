@@ -661,7 +661,7 @@ console.warn(object [, object, ...])
 [DevtoolsConsoleReferenceFilter]: ./reference.md#filter-by-log-level "Filter by log level - Console reference | Microsoft Docs"  
 [DevtoolsConsoleReferencePersist]: ./reference.md#persist-messages-across-page-loads "Persist messages across page loads - Console reference | Microsoft Docs"  
 
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools overview | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge Developer Tools overview | Microsoft Docs"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

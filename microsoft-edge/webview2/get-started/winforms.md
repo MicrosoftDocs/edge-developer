@@ -1,6 +1,6 @@
 ---
 description: Get started guide with WebView2 for WinForms apps
-title: Get started with WebView2 for WinForms apps
+title: Get started with WebView2 in WinForms apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/06/2021
@@ -9,13 +9,13 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, winforms apps, winforms, edge, CoreWebView2, browser control, edge html, get started, Get Started, .NET, windows forms
 ---
-# Get started with WebView2 in Windows Forms
+# Get started with WebView2 in WinForms apps
 
 In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  For more information on individual APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2Winforms].  
 
 ## Prerequisites  
 
-Ensure you install the following list of pre-requisites before proceeding.  
+Install the following list of prerequisites before proceeding.
 
 *   [WebView2 Runtime][MicrosoftDeveloperMicrosoftEdgeWebview2] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] (Beta, Dev, or Canary) installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).  
     
@@ -23,9 +23,6 @@ Ensure you install the following list of pre-requisites before proceeding.
     > The WebView team recommends using the Canary channel and the minimum required version is 82.0.488.0.  
     
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 or later.  
-    
-> [!NOTE]
-> WebView2 currently does not support the .NET 5 and .NET Core designers.  
 
 ## Step 1 - Create a single-window app
 
@@ -344,7 +341,7 @@ To continue learning more about WebView2, navigate to the following resources.
 <!-- links -->  
 
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"  
-[Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
+[Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"  
 
 [DotnetApiMicrosoftWebWebview2Winforms]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"  

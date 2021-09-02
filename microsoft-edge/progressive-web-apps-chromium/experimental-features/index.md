@@ -51,16 +51,16 @@ For more information about Origin Trials, navigate to [Microsoft Edge Origin Tri
 
 ## Features that are available to test  
 
-The following list describes the new experimental web app features that are available to test and validate on Microsoft Edge.  
+The following list describes experimental web app features that are available to test and validate on Microsoft Edge. To enable them, navigate to [Turn on experimental features](#turn-on-experimental-features).  
 
-| Feature | Microsoft Edge version | Platform |  
-|:--- |:--- |:--- |  
-| [URI Protocol Handling](#uri-protocol-handling) | 91 or later | Windows and Linux |    
-| [URL Link Handling](#url-link-handling) | 91 or later | Windows|
-| [Window Controls Overlay for Desktop Apps](#window-controls-overlay-for-installed-desktop-web-apps) | 91 or later | Windows 10|   
-| [Run on OS Login](#run-on-os-login) | 88 or later | All |  
-| [Shortcuts](#shortcuts) | 87 or later | All |  
-| [File Handling](#file-handling) | 83 or later | All Desktop |  
+| Feature | Platform |  
+|:--- |:--- |  
+| [URI Protocol Handling](#uri-protocol-handling) | Windows and Linux |    
+| [URL Link Handling](#url-link-handling) | Windows|
+| [Window Controls Overlay for Desktop Apps](#window-controls-overlay-for-installed-desktop-web-apps) | Windows 10|   
+| [Run on OS Login](#run-on-os-login) | All |  
+| [Shortcuts](#shortcuts) | All |  
+| [File Handling](#file-handling) | All Desktop |  
 
 ## URI Protocol Handling  
 
