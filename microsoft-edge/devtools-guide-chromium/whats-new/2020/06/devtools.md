@@ -40,7 +40,7 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
 :::image-end:::  
 
 > [!NOTE]
-> To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.  
+> To enable the experiment, navigate to [Turning on experimental features][DevtoolsExperimentalFeaturesTurnOn] and select the checkbox next to **Enable new CSS Grid debugging features**.  
 > 
 > To try out the experiment with a sample, navigate to [CSS Grid planner example][CodepenRachelweilYzwBzKM].  
 
@@ -70,7 +70,7 @@ You may also use the **Network Console** to create and send HTTP requests direct
 > To display **Network Console** in the main \(top\) panel instead of the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], navigate to [moving tools between panels](#move-tools-between-panels).  
 
 > [!NOTE]
-> To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and choose the checkbox next to **Enable Network Console**.  
+> To enable the experiment, navigate to [Turning on experimental features][DevtoolsExperimentalFeaturesTurnOn] and choose the checkbox next to **Enable Network Console**.  
 > 
 > Open the [Network Log][DevtoolsNetworkIndexLogActivity], open the contextual menu \(right-click\), and choose **Edit and Replay**.  
 
@@ -105,7 +105,7 @@ Chromium issue [#1066579][CR1066579]
 :::image-end:::  
 
 > [!NOTE]
-> To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and choose the checkbox next to **Enable webhint**.  
+> To enable the experiment, navigate to [Turning on experimental features][DevtoolsExperimentalFeaturesTurnOn] and choose the checkbox next to **Enable webhint**.  
 > 
 > Open the [Issues][DevtoolsIssues] panel to display feedback from webhint.  
 
@@ -124,7 +124,7 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
 :::image-end:::  
 
 > [!NOTE]
-> To enable the experiment, navigate to [Turn on experimental features][DevtoolsExperimentalFeaturesTurnOn] and choose the checkbox next to **Enable support to move tabs between panels**.  
+> To enable the experiment, navigate to [Turning on experimental features][DevtoolsExperimentalFeaturesTurnOn] and choose the checkbox next to **Enable support to move tabs between panels**.  
 
 Chromium issue [#897944][CR897944]  
 
@@ -331,7 +331,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCommandMenu]: ../../../command-menu.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turn-on-experimental-features "Turn on experimental features - Experimental features | Microsoft Docs"  
+[DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turning-on-experimental-features "Turning on experimental features - Experimental features | Microsoft Docs"  
 [DevtoolsIssues]: ../../../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
 [DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]: ../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files "Using the Editor pane to view or edit files - Sources Panel Overview | Microsoft Docs"  
 [DevtoolsNetworkIndexLogActivity]: ../../../network/index.md#log-network-activity "Log network activity - Inspect Network Activity In Microsoft Edge DevTools | Microsoft Docs"

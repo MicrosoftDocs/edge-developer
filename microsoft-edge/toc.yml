@@ -195,7 +195,7 @@
               href: devtools-guide-chromium/service-workers/index.md
         - name: Concepts
           items:
-            - name: 3D view
+            - name: 3D View
               href: devtools-guide-chromium/3d-view/index.md
             - name: Animations
               href: devtools-guide-chromium/inspect-styles/animations.md
