@@ -138,13 +138,23 @@ To customize the settings:
 
 1.  Hover over the upper right corner of the **Microsoft Edge Tools**: **Targets** panel, to the right of the word **TARGETS**.  Several icons are now displayed.
 
-1.  Select the **More Actions** (...) icon to the right of the word **TARGETS**, and then select **Open Settings**.
+1.  Select the **More Actions** (`...`) icon to the right of the word **TARGETS**, and then select **Open Settings**.
 
     :::image type="complex" source="./media/edge-tools-open-settings-icon.msft.png" alt-text="The More Actions icon on the Microsoft Edge Tools: Targets panel, to change the settings of the DevTools extension" lightbox="./media/edge-tools-open-settings-icon.msft.png":::
        The **More Actions** icon on the **Microsoft Edge Tools: Targets** panel, to change the settings of the DevTools extension
     :::image-end:::
 
-1.  For the settings to take effect, if a browser instance is running that was started by the extension, you might need to close it.
+### Reloading the extension after changing certain settings
+
+Some settings have a note that reads **(reload required after changing)**.  For such a setting to take effect:
+
+1.  Close the **Edge DevTools** tab.
+
+1.  Close the browser instance that the extension opened, if any.
+
+1.  To restart the extension, from the **Activity Bar**, select **Microsoft Edge Tools**.
+
+1.  Select the **Launch Instance** button.
 
 
 <!-- ====================================================================== -->
@@ -156,9 +166,9 @@ To view the changelog:
 
 1.  In Visual Studio Code, on the **Activity Bar**, select **Microsoft Edge Tools**.
 
-1.  In the **Microsoft Edge Tools**: **Targets** panel, select **...** to the right of the word **TARGET**.  Several icons are now displayed.
+1.  Hover over the upper right corner of the **Microsoft Edge Tools**: **Targets** panel, to the right of the word **TARGETS**.  Several icons are now displayed.
 
-1.  Select the **More Actions** (...) icon to the right of the word **TARGETS**, and then select **View Changelog**.
+1.  Select the **More Actions** (`...`) icon to the right of the word **TARGETS**, and then select **View Changelog**.
 
     :::image type="complex" source="./media/view-changelog-menuitem.msft.png" alt-text="The View Changelog menu item, to view changes that have been made to the extension" lightbox="./media/view-changelog-menuitem.msft.png":::
        The **View Changelog** menu item, to view changes that have been made to the extension
