@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Microsoft Edge Developer documentation # < 60 chars
-summary: Development using Microsoft Edge DevTools, Progressive Web Apps, WebView2, and more. # < 160 chars
+summary: Development using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more. # < 160 chars
 
 metadata:
   # title: default to root title above. # Required; page title displayed in search results. Include the brand. < 60 chars.
