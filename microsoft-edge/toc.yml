@@ -1,9 +1,9 @@
-- name: Microsoft Edge documentation
-  href: index.yml
-  expanded: true
+# - name: Microsoft Edge documentation # hub page, uncommenting causes 2 landing nodes with all docs pushed right
+#  href: index.yml
+- name: Microsoft Edge Developer documentation #landing page
+  href: developer/index.yml
+#  expanded: true
   items:
-    # - name: Microsoft Edge developer documentation
-    #   href: developer/index.yml
     - name: Accessibility
       items:
         - name: Accessibility overview
