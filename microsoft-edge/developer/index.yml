@@ -122,16 +122,12 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Accessibility
-            url: /microsoft-edge/accessibility 
           - text: DevTools Protocol overview
             url: /microsoft-edge/devtools-protocol-chromium
           - text: WebDriver
             url: /microsoft-edge/webdriver-chromium
           - text: Puppeteer
             url: /microsoft-edge/puppeteer
-          - text: Site compatibility-impacting changes
-            url: /microsoft-edge/web-platform/site-impacting-changes
           - text: webhint extension for Visual Studio Code
             url: /microsoft-edge/visual-studio-code/webhint
 
@@ -142,6 +138,8 @@ landingContent:
         links:
           - text: Detecting Microsoft Edge from your website
             url: /microsoft-edge/web-platform/user-agent-guidance
+          - text: Site compatibility-impacting changes
+            url: /microsoft-edge/web-platform/site-impacting-changes
 
   # Card
   - title: Microsoft Edge IDE integration
