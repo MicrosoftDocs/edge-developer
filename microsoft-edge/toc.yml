@@ -2,7 +2,7 @@
   href: developer/index.yml
 - name: Microsoft Edge documentation # hub page
   href: index.yml
-#  expanded: true
+  expanded: true
   items:
     - name: Accessibility
       items:
