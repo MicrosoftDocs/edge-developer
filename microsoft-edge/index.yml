@@ -165,8 +165,6 @@ additionalContent:
               url: /microsoft-edge/web-platform/site-impacting-changes
             - text: webhint
               url: https://webhint.io/docs/user-guide
-            - text: Performance analysis
-              url: /microsoft-edge/performance-analysis
         # Card
         - title: Get started with Extensions
           links:
