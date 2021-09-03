@@ -48,7 +48,7 @@ landingContent:
             url: /microsoft-edge/devtools-guide-chromium/command-menu/index
           - text: Open DevTools
             url: /microsoft-edge/devtools-guide-chromium/open
-          - text: CSS
+          - text: View and change CSS
             url: /microsoft-edge/devtools-guide-chromium/css/index
       - linkListType: reference
         links:
@@ -133,7 +133,7 @@ landingContent:
           - text: Site compatibility-impacting changes
             url: /microsoft-edge/web-platform/site-impacting-changes
           - text: webhint extension for Visual Studio Code
-            url: /microsoft-edge/visual-studio-code/webhint.md
+            url: /microsoft-edge/visual-studio-code/webhint
           - text: Performance analysis
             url: /microsoft-edge/performance-analysis
 
@@ -143,7 +143,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Detecting Microsoft Edge from your website
-            url: /microsoft-edge/web-platform/user-agent-guidance.md
+            url: /microsoft-edge/web-platform/user-agent-guidance
 
   # Card
   - title: Microsoft Edge IDE integration
@@ -155,9 +155,9 @@ landingContent:
           - text: Visual Studio Code overview
             url: /microsoft-edge/visual-studio-code/
           - text: DevTools extension for Visual Studio Code
-            url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension.md
+            url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
           - text: webhint extension for Visual Studio Code
-            url: /microsoft-edge/visual-studio-code/webhint.md
+            url: /microsoft-edge/visual-studio-code/webhint
 
   # Card
   - title: Accessibility
@@ -169,6 +169,6 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Accessibility testing
-            url: /microsoft-edge/accessibility/test.md
+            url: /microsoft-edge/accessibility/test
           - text: Accessibility-testing features in DevTools
-            url: /microsoft-edge/devtools-guide-chromium/accessibility/reference.md
+            url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
