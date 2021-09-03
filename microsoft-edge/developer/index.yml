@@ -82,9 +82,9 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Overview (Chromium)
+          - text: Overview
             url: /microsoft-edge/progressive-web-apps-chromium/index
-          - text: Get started with Progressive Web Apps (Chromium)
+          - text: Get started with Progressive Web Apps
             url: /microsoft-edge/progressive-web-apps-chromium/get-started
           - text: Using DevTools with Progressive Web Apps
             url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
@@ -126,7 +126,7 @@ landingContent:
             url: /microsoft-edge/accessibility 
           - text: DevTools Protocol overview
             url: /microsoft-edge/devtools-protocol-chromium
-          - text: WebDriver (Chromium)
+          - text: WebDriver
             url: /microsoft-edge/webdriver-chromium
           - text: Puppeteer
             url: /microsoft-edge/puppeteer
