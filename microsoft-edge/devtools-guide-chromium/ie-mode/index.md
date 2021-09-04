@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, ie11, internet explorer 11, ie mode
 ---
-# Internet Explorer mode and the DevTools  
+# Use the DevTools in Internet Explorer Mode  
 
 This article describes how Internet Explorer mode \(IE mode\) integrates with the Microsoft Edge \(Chromium\) DevTools.  
 
@@ -28,7 +28,7 @@ In IE mode, the rendering process is based on Internet Explorer 11.  The Microso
 
 IE mode is currently available on Windows 10 Version 1903 \(May 2019 Update\), but is coming soon to all supported Windows platforms.  
 
-## Launching the DevTools on a tab in IE mode  
+## Open the DevTools on a tab in IE mode  
 
 To view the document mode of a web site in IE mode, choose the badge in the address bar.  
 
@@ -36,7 +36,7 @@ To view the document mode of a web site in IE mode, choose the badge in the addr
    View document mode using IE mode badge  
 :::image-end:::  
 
-If a tab is using IE mode, a number of DevTools, such as **Network** and **Performance** will not work because the rendering engine switches from Chromium to Internet Explorer 11 in IE Mode. You'll also notice the following conditions in IE Mode.
+If a tab uses IE mode, a number of DevTools, such as **Network** and **Performance**, do not work because the rendering engine switches from Chromium to Internet Explorer 11. You'll also notice the following conditions.
     
 *   Opening the contextual menu \(right-click\) and choosing **View Source** launches Notepad.  
 *   **Inspect Element** is not visible on the contextual menu \(right-click\).  
@@ -46,14 +46,14 @@ If a tab is using IE mode, a number of DevTools, such as **Network** and **Perfo
    DevTools launched in IE mode  
 :::image-end:::  
 
-Internet Explorer may not be available on your computer. To debug the content of your Internet Explorer 11 based website when a tab uses IE mode, use IEChooser to launch the Internet Explorer DevTools. To use IEChooser, perform the following steps.
+However, Internet Explorer may not be available on your computer. In this scenario, you must open IEChooser to use the Internet Explorer DevTools to debug your website. To use IEChooser, perform the following steps.
 
 1.  Open IEChooser.
     1. Open the Run dialog box. For example, press the `Windows logo key` + `R`.
     2. Enter `%systemroot%\system32\f12\IEChooser.exe`, and then select **Ok**.
 2.  In IEChooser, select the entry for the IE mode tab.
 
-## Remote debugging and IE mode  
+## Remote debugging in IE mode  
 
 Launch Microsoft Edge \(Chromium\) with remote debugging turned on from the command-line interface.  Microsoft Visual Studio, Microsoft Visual Studio Code, and other development tools typically run a command to launch Microsoft Edge.  The following command launches Microsoft Edge with the remote debugging port set to `9222`.  
 
@@ -66,7 +66,7 @@ After you launch Microsoft Edge \(Chromium\) using a command-line argument, IE m
 IE mode remains unavailable until you completely close and restart Microsoft Edge \(Chromium\).  
 
 
-## Replacing Internet Explorer automation  
+## Replace Internet Explorer automation  
 
 If you have an existing application that uses the [InternetExplorer][InternetExplorerObject] object to automate Internet Explorer 11, but the Internet Explorer 11 desktop application isn't available, your application won't work.  Internet Explorer 11 will be retired on June 15, 2022.  For more information, navigate to [The future of Internet Explorer on Windows 10 is in Microsoft Edge][BlogsWindowsExperienceFutureOfIEEdge].  Microsoft Edge \(Chromium\) doesn't support automating IE mode through the `InternetExplorer` object, so applications that rely on this object will need to be updated using one of the recommended alternatives below.  Applications that use the [WebBrowser][WebBrowserControl] control will continue to work and won't be affected by the removal of Internet Explorer 11.
 
