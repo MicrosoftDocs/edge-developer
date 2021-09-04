@@ -1,6 +1,6 @@
 ---
 description: IE mode and the Microsoft Edge (Chromium) DevTools
-title: Internet Explorer mode and the DevTools
+title: Use the DevTools in Internet Explorer Mode
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/03/2021
@@ -30,7 +30,7 @@ IE mode is currently available on Windows 10 Version 1903 \(May 2019 Update\), b
 
 ## Open the DevTools on a tab in IE mode  
 
-To view the document mode of a web site in IE mode, choose the badge in the address bar.  
+To view the document mode of a web site in IE mode, select the badge in the address bar.  
 
 :::image type="complex" source="../media/ie-mode-badge-doc-mode.msft.png" alt-text="View document mode using IE mode badge" lightbox="../media/ie-mode-badge-doc-mode.msft.png":::
    View document mode using IE mode badge  
@@ -38,7 +38,7 @@ To view the document mode of a web site in IE mode, choose the badge in the addr
 
 If a tab uses IE mode, a number of DevTools, such as **Network** and **Performance**, do not work because the rendering engine switches from Chromium to Internet Explorer 11. You'll also notice the following conditions.
     
-*   Opening the contextual menu \(right-click\) and choosing **View Source** launches Notepad.  
+*   Opening the contextual menu \(right-click\) and selecting **View Source** launches Notepad.  
 *   **Inspect Element** is not visible on the contextual menu \(right-click\).  
 *   Selecting `F12` or `Ctrl`+`Shift`+`I` opens a blank instance of the Microsoft Edge \(Chromium\) DevTools and displays the following message: **Developer Tools are not available in Internet Explorer mode.  To debug the page, open it in Internet Explorer 11.**  
 
