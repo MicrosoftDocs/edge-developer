@@ -155,18 +155,16 @@ additionalContent:
           links:
             - text: Accessibility
               url: /microsoft-edge/accessibility 
-            - text: DevTools Protocol (Chromium)
+            - text: DevTools Protocol
               url: /microsoft-edge/devtools-protocol-chromium
-            - text: WebDriver (Chromium)
+            - text: WebDriver
               url: /microsoft-edge/webdriver-chromium
             - text: Puppeteer
               url: /microsoft-edge/puppeteer
             - text: Site compatibility
               url: /microsoft-edge/web-platform/site-impacting-changes
             - text: webhint
-              url: https://webhint.io/docs/user-guide
-            - text: Performance analysis
-              url: /microsoft-edge/performance-analysis
+              url: /microsoft-edge/visual-studio-code/webhint
         # Card
         - title: Get started with Extensions
           links:
@@ -193,7 +191,7 @@ additionalContent:
             - text: Open developer account
               url: /microsoft-edge/extensions-chromium/publish/create-dev-account
             - text: Add and manage users
-              url: /microsoft-edge/extensions-chromium/publish/aad-account.md
+              url: /microsoft-edge/extensions-chromium/publish/aad-account
             - text: Update Extension Listing
               url: /microsoft-edge/extensions-chromium/publish/update
             - text: Manage account settings
@@ -208,9 +206,9 @@ additionalContent:
         # Card
         - title: Progressive Web Apps
           links:
-            - text: Overview (Chromium)
+            - text: Overview
               url: /microsoft-edge/progressive-web-apps-chromium/index
-            - text: Get started with Progressive Web Apps (Chromium)
+            - text: Get started with Progressive Web Apps
               url: /microsoft-edge/progressive-web-apps-chromium/get-started
             - text: Using DevTools with Progressive Web Apps
               url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps

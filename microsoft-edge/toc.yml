@@ -1,9 +1,9 @@
-- name: Microsoft Edge documentation
-  href: index.yml
-  expanded: true
+# - name: Microsoft Edge documentation # hub page, uncommenting causes 2 landing nodes with all docs pushed right
+#  href: index.yml
+- name: Microsoft Edge Developer documentation #landing page
+  href: developer/index.yml
+#  expanded: true
   items:
-    # - name: Microsoft Edge developer documentation
-    #   href: developer/index.yml
     - name: Accessibility
       items:
         - name: Accessibility overview
@@ -195,7 +195,7 @@
               href: devtools-guide-chromium/service-workers/index.md
         - name: Concepts
           items:
-            - name: 3D view
+            - name: 3D View
               href: devtools-guide-chromium/3d-view/index.md
             - name: Animations
               href: devtools-guide-chromium/inspect-styles/animations.md
@@ -229,7 +229,7 @@
                   href: devtools-guide-chromium/console/reference.md
                 - name: Watch JavaScript expressions in real time
                   href: devtools-guide-chromium/console/live-expressions.md
-                - name: Debug Console errors
+                - name: Fix JavaScript Console errors
                   href: devtools-guide-chromium/console/console-debug-javascript.md
                 - name: Interact with the DOM
                   href: devtools-guide-chromium/console/console-dom-interaction.md
