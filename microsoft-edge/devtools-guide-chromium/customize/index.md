@@ -29,9 +29,10 @@ This page lists the ways to customize Microsoft Edge DevTools.
 
 **Settings** > **Preferences** contains many options for customizing DevTools.  
 
-To open Settings, do either of the following.
-*   In DevTools, select the **Settings** \(![Settings icon](../media/settings-icon-dark.msft.png)\) icon.
-*   While DevTools has focus, select `F1`.
+There are two ways to open Settings.  
+
+*   Select the **Settings** icon \(![Settings icon](../media/settings-icon-dark.msft.png)\).  
+*   While DevTools has focus, select `F1`.  
     
 :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Settings" lightbox="../media/customize-settings-preferences.msft.png":::
    **Settings**  
@@ -47,12 +48,6 @@ To open \(or close\) the **Drawer**, select `Escape`.
    The **Drawer**  
 :::image-end:::  
 
-By default, some tools open in the main panel, while others appear in the **Drawer**.  Select **More** \(`...`\) to open a tool in the **Drawer**.  
-
-:::image type="complex" source="../media/customize-drawer-open-more-tools.msft.png" alt-text="The button to open the Drawer" lightbox="../media/customize-drawer-open-more-tools.msft.png":::
-   The button to open the **Drawer**  
-:::image-end:::  
-
 You can move tools between the main panel and the drawer.  
 
 *   To move a tool from the drawer to the main panel, hover on a tool, open the contextual menu \(right-click\) and select **Move to top**.  
@@ -66,17 +61,30 @@ You can move tools between the main panel and the drawer.
     :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="Move tool from the main panel to the Drawer" lightbox="../media/move-to-drawer.msft.png":::
        Move tool from the main panel to the **Drawer**
     :::image-end:::  
-    
 
 ## Reorder panels  
 
 Select and drag a tool to change the ordering.  Your custom tool order persists across DevTools sessions.  
 
 > [!NOTE]
-> By default, the **Network** tool is usually the fourth from the left.  In the following figure, the **Network** tool is the first from the left.  
+> By default, the **Network** tool is usually the fifth from the left.  In the following figure, the **Network** tool is being moved to the first position from the left.  
 
 :::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Custom order of Devtools in a panel" lightbox="../media/customize-network-first-position.msft.png":::
    Custom order of Devtools in a panel  
+:::image-end:::  
+
+## Open and close panels  
+
+Many of the available panels in DevTools are not opened by default to avoid cluttering the interface with rarely used tools. To open a tool in the main panel or the drawer, select the plus button \(![More Tools](../media/open-tab-icon.png)\) to the right of the tabs and choose a tool from the list.  
+
+:::image type="complex" source="../media/open-tool-in-main-panel-or-drawer.png" alt-text="The + button to open a new tool" lightbox="../media/open-tool-in-main-panel-or-drawer.png":::
+   The `+` button to open a new tool  
+:::image-end:::  
+
+Select the close button \(![Close Tool](../media/close-tab-icon.png)\) in a tab to close the associated tool.  
+
+:::image type="complex" source="../media/close-tool-in-main-panel-or-drawer.png" alt-text="The tab's close button" lightbox="../media/close-tool-in-main-panel-or-drawer.png":::
+   The tab's close button  
 :::image-end:::  
 
 ## Change DevTools placement  
@@ -94,16 +102,6 @@ Navigate to [Apply color themes to DevTools][Theme].
 :::image type="complex" source="./media/customize-theme-setting.png" alt-text="Selecting a different color theme" lightbox="./media/customize-theme-setting.png":::
    Selecting a different color theme  
 :::image-end:::  
-
-## Experiments  
-
-To turn on DevTools experiments, complete the following actions.  
-
-1.  Navigate to `edge://flags/#enable-devtools-experiments`.  
-1.  Select **Enable**.  
-1.  Select **Relaunch Now**, at the bottom of the page.  
-
-The next time you open DevTools, a new page named **Experiments** is displayed in [Settings](#settings).  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
