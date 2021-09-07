@@ -13,17 +13,17 @@ keywords: microsoft edge, web development, f12 tools, devtools
 [!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)]
 
 
-## Look up error messages on the web from the Console
+## Search for Console errors on the web
 
 <!-- Title: Quickly debug console errors with our new integrated search feature -->
 <!-- Subtitle: Now you can quickly search for console errors directly from the Console. -->
 
-Search the web for your **Console** error strings, from within DevTools.  In the **Console**, many error messages now have a **Search for this message on the Web** button, shown as a magnifying glass.  When you select the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error string.
+Search the web for your **Console** errors, from within DevTools.  In the **Console**, many errors now have a **Search for this message on the Web** button, shown as a magnifying glass.  When you select the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error.
 
 For more information, navigate to [Look up error messages on the web from the Console][LookupErrorsWebFromConsole].
 
-:::image type="complex" source="../../media/2021/09/search-console-icon.msft.png" alt-text="The 'Search for this message on the Web' button on an error message in the **Console**" lightbox="../../media/2021/09/search-console-icon.msft.png":::
-   The **Search for this message on the Web** button on an error message in the **Console**
+:::image type="complex" source="../../media/2021/09/search-console-icon.msft.png" alt-text="The 'Search for this message on the Web' button on an error in the **Console**" lightbox="../../media/2021/09/search-console-icon.msft.png":::
+   The **Search for this message on the Web** button on an error in the **Console**
 :::image-end:::
 
 
@@ -32,7 +32,7 @@ For more information, navigate to [Look up error messages on the web from the Co
 <!-- Title: Edge DevTools for VS Code now supports themes and uses the most recent codebase -->
 <!-- Subtitle: The Edge DevTools extension for VS Code now uses the same version of the Developer Tools as your Microsoft Edge browser. We also added ways to learn more and for you to tell us what we could do better from within Visual Studio Code. -->
 
-In this release of the Microsoft Edge DevTools extension for Visual Studio Code, we released the following updates or new features.
+In the latest version of the Microsoft Edge DevTools extension for Visual Studio Code, we released the following updates or new features.
 *  Shares the same codebase that's used for the browser-based DevTools.
 *  Supports themes that ship with Visual Studio Code.
 *  Adds a **Helpful Links** section in the **Microsoft Edge Tools** sidebar, with buttons for **Documentation**, **Report a Bug**, and **Request a Feature**.
