@@ -144,21 +144,19 @@ To customize the settings:
        The **More Actions** icon on the **Microsoft Edge Tools: Targets** panel, to change the settings of the DevTools extension
     :::image-end:::
 
-### Reloading the extension after changing certain settings
+### Reloading the extension after changing settings
 
 Some settings have a note that reads **(reload required after changing)**.  For such a setting to take effect:
 
-1.  Close the browser instance that the extension opened.  This automatically closes the **Edge DevTools** tab as well.
+1.  Close the browser opened by the extension.  This action automatically closes the **Edge DevTools** tab as well.
 
 1.  To restart the extension, from the **Activity Bar**, select **Microsoft Edge Tools**, and then select the **Launch Instance** button.  Microsoft Edge opens, and the **Edge DevTools** tab is displayed.
 
 
 <!-- ====================================================================== -->
-## Viewing the changelog to see changes made to the extension
+## Viewing the changelog for changes made to the extension
 
-You can view the changes made to the extension. 
-
-To view the changelog:
+You can view the changes made to the extension. To view the changelog, perform the following steps.
 
 1.  In Visual Studio Code, on the **Activity Bar**, select **Microsoft Edge Tools**.
 
