@@ -36,7 +36,7 @@ In the latest version of the Microsoft Edge DevTools extension for Visual Studio
 *  Shares the same codebase that's used for the browser-based DevTools.
 *  Supports themes that ship with Visual Studio Code.
 *  Adds a **Helpful Links** section in the **Microsoft Edge Tools** sidebar, with buttons for **Documentation**, **Report a Bug**, and **Request a Feature**.
-*  Adds a **Close** button.
+*  Adds a **Close instance** (`X`) button in the **Microsoft Edge Tools** > **Targets** pane, to close the browser that was opened by the extension.
 *  Adds support for JavaScript Debugger connections to remote workspaces.
 
 For more information, navigate to [Microsoft Edge DevTools extension for Visual Studio Code][EdgeDevToolsExtensionForVSCode].
