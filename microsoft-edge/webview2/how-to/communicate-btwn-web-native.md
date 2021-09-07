@@ -150,4 +150,4 @@ Congratulations.  You've successfully embedded web content into native applicati
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
-[CreateButtonWin32]: https://docs.microsoft.com/en-us/windows/win32/controls/create-a-button "How to Create a Button - Win32 apps | Microsoft Docs"  
+[CreateButtonWin32]: https://docs.microsoft.com/windows/win32/controls/create-a-button "How to Create a Button - Win32 apps | Microsoft Docs"  
