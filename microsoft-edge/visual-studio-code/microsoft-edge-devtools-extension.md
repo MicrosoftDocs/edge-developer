@@ -136,9 +136,7 @@ To customize the settings:
 
 1.  In Visual Studio Code, on the **Activity Bar**, select **Microsoft Edge Tools**.
 
-1.  Hover over the upper right corner of the **Microsoft Edge Tools**: **Targets** panel, to the right of the word **TARGETS**.  Several icons are now displayed.
-
-1.  Select the **More Actions** (`...`) icon to the right of the word **TARGETS**, and then select **Open Settings**.
+1. In **Microsoft Edge Tools** > **Targets**, select **More Actions** (...) to the right of the word **TARGETS**, and then select **Open Settings**.  Note: If you are using a mouse, to access **More Actions** (...), select the **Targets** pane or hover over it.
 
     :::image type="complex" source="./media/edge-tools-open-settings-icon.msft.png" alt-text="The More Actions icon on the Microsoft Edge Tools: Targets panel, to change the settings of the DevTools extension" lightbox="./media/edge-tools-open-settings-icon.msft.png":::
        The **More Actions** icon on the **Microsoft Edge Tools: Targets** panel, to change the settings of the DevTools extension
@@ -160,9 +158,7 @@ You can view the changes made to the extension. To view the changelog, perform t
 
 1.  In Visual Studio Code, on the **Activity Bar**, select **Microsoft Edge Tools**.
 
-1.  Hover over the upper right corner of the **Microsoft Edge Tools**: **Targets** panel, to the right of the word **TARGETS**.  Several icons are now displayed.
-
-1.  Select the **More Actions** (`...`) icon to the right of the word **TARGETS**, and then select **View Changelog**.
+1. In **Microsoft Edge Tools** > **Targets**, select **More Actions** (...) to the right of the word **TARGETS**, and then select **View Changelog**.  Note: If you are using a mouse, to access **More Actions** (...), select the **Targets** pane or hover over it.
 
     :::image type="complex" source="./media/view-changelog-menuitem.msft.png" alt-text="The View Changelog menu item, to view changes that have been made to the extension" lightbox="./media/view-changelog-menuitem.msft.png":::
        The **View Changelog** menu item, to view changes that have been made to the extension
