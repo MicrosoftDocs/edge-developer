@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 ---
 # Use Service Workers to manage network requests and push notifications
 
-Service Workers are a special type of Web Worker with the ability to intercept, modify, and respond to all network requests using the `Fetch` API.  Service Workers can access the `Cache` API, and asynchronous client-side data stores, such as `IndexedDB`, to store resources.  
+[Service Workers][MDNServiceWorkerApi] are a special type of Web Worker with the ability to intercept, modify, and respond to all network requests using the `Fetch` API.  Service Workers can access the `Cache` API, and asynchronous client-side data stores, such as `IndexedDB`, to store resources.  
 
 ## Registering a Service Worker  
 
@@ -89,6 +89,6 @@ To learn more about Service Workers, navigate to the following list of related t
 <!-- links -->  
 
 [AzurewebsitesWebpushdemo]: https://webpushdemo.azurewebsites.net "Web Push Notifications |  Microsoft Edge Demos"  
-
+[MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "Service Worker API | MDN"  
 [MDNPwasMakingOfflineServiceWorkers]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Offline_Service_workers "Making PWAs work offline with Service workers - PWAs | MDN"  
 [MDNPwasMakeReengageablesingNotificationsPush]: https://developer.mozilla.org/docs/Web/Progressive_web_apps/Re-engageable_Notifications_Push "How to make PWAs re-engageable using Notifications and Push - PWAs | MDN"  

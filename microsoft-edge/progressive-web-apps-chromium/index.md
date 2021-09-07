@@ -1,15 +1,15 @@
 ---
 description: Progressive Web Apps (Chromium) run natively on Windows 10.  Here is everything you need to know as a web developer.
-title: Progressive Web Apps on Windows
+title: Progressive Web Apps overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 09/06/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
+keywords: progressive web apps, PWA, Edge, JavaScript, UWP, Microsoft Store
 ---
-# Progressive Web Apps on Windows overview  
+# Progressive Web Apps overview  
 
 [Progressive Web Apps][MDNApps] \(PWAs\) provide access to open web technologies for cross-platform interoperability and provide your users with a native, app-like experience customized for their devices. PWAs are websites that are [progressively enhanced][AListApartUnderstandingProgressiveEnhancement] to function like native apps on supporting platforms. The qualities of a PWA combine the best of the web and native apps.  
 
@@ -113,19 +113,27 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
     :::column-end:::
 :::row-end:::  
 
-Build \(or convert\) your existing website to a PWA to enhance engagement with your users. Enhancements include push notifications, app-like integration, and offline support. Continue to build your audience on the open web for users to discover your PWA through search and link-sharing. Best of all, your app is updated using your web server code.  
+PWAs have the same reach as websites: they can be indexed by search engines, can be linked to, and work on all devices from the same codebase. As such they have a much lower development cost than native apps that require a specific codebase  for Android, iOS, and various desktop operating systems.  
+
+You can enhance engagement with your users by converting your existing website to a PWA. Enhancements include push notifications, native app-like integration, and offline support. Continue to build your audience on the open web for users to discover your PWA through search, link-sharing and app stores. Best of all, your app is updated using your web server code.  
 
 ## PWAs on Microsoft Edge (Chromium)  
 
-When you build a Progressive Web App targeting web standard APIs, your app may be deployed across platforms and devices and take advantage of the device-specific capabilities as available. PWAs in Microsoft Edge \(Chromium\) add the following advantages to your website.  
+When you build a Progressive Web App using web standard APIs, your app can be deployed across platforms and devices and take advantage of the device-specific capabilities as available. PWAs in Microsoft Edge add the following advantages to your website.  
 
 *   Your app is built on a standards-based web platform.  
 *   Allows your users to install your app directly from the browser.  
 *   Allows your users to install your app without a Store-based deployment or registration.  
-    
-Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) is [available](https://www.microsoft.com/edge). The following benefits are included.
 
-*   Apps may be installed directly from within the browser using the **Install** icon in the navigation bar.  
+Once installed, your app uses the same code as your website, but runs in a standalone window with no browser frame or address bar.  
+
+:::image type="complex" source="./media/starbucks-coffee-site-and-app-side-by-side.png" alt-text="App menu items under settings" lightbox="./media/starbucks-coffee-site-and-app-side-by-side.png":::
+    The Starbucks Coffee Company website and PWA side by side  
+:::image-end:::  
+    
+Desktop PWAs are supported on any of the platforms Microsoft Edge is [available](https://www.microsoft.com/edge) on. The following benefits are included.  
+
+*   Apps may be installed directly from within the browser using the **App Available** icon in the navigation bar.  
     
     :::image type="complex" source="./media/install-progressive-web-app-icon.png" alt-text="Install app flyout and icon" lightbox="./media/install-progressive-web-app-icon.png":::
        Install app flyout and icon  
@@ -137,17 +145,19 @@ Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) i
        App menu items under settings  
     :::image-end:::  
     
-*   Web Notifications are integrated into the Windows notification system  
-*   Shared cookie store with the browser profile that installed the app  
-*   Access to other browser features using the **Setting and more** \(`...`\) menu including certificate validation, site permissions, tracking protection, and browser extensions  
-*   Full access to [Microsoft Edge DevTools][DevtoolsProgressiveWebApps] for debugging your app  
+*   Apps are integrated in Windows like any other apps. Web Notifications are shown in the Windows notification system, app icons appear in the task bar, the start menu and everywhere else Windows lists apps, apps can automatically be run on login, and more.  
+*   Shared cookie store with the browser profile that installed the app.  
+*   Access to other browser features using the **Setting and more** \(`...`\) menu including certificate validation, site permissions, tracking protection, and browser extensions.  
+*   Full access to [Microsoft Edge DevTools][DevtoolsProgressiveWebApps] for debugging your app.  
     
 > [!NOTE]
-> For more information about PWA benefits, upcoming features, and short demos, navigate to [Build 2020 PWA session][BuildVideo]. 
+> For more information about PWA benefits, upcoming features, and short demos, navigate to [Build 2020 PWA session][BuildVideo].  
 
-## Requirements  
+Microsoft Edge continuously adds new capabilities that make it easier for PWAs to look and feel like great native apps. The gap between web and native is quickly being filled as the result of a collaboration between Microsoft, Google, Intel and others, who are all contributing to open source projects that create new capabilities. This is done through web standards, and therefore remains cross platform.  
 
-To run as a PWA, your server-hosted web app should include following minimum requirements.  
+## What makes a Progressive Web App  
+
+To run as a PWA, your server-hosted web app must meet the following 3 requirements.  
 
 :::row:::
    :::column span="1":::
@@ -159,22 +169,22 @@ To run as a PWA, your server-hosted web app should include following minimum req
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      [Service Workers][MDNServiceWorkerApi]  
+      [Service Worker][PwaServiceWorkers]  
    :::column-end:::
    :::column span="2":::
-      Uses Service Worker threads to act as network proxies between your server and client app.  Service Worker threads provide offline support, resource caching, push notifications, background data sync, and  page-load performance optimizations.    
+      Acts as a network proxy between your server and client app.  Service Worker threads provide offline support, resource caching, push notifications, background data sync, and  page-load performance optimizations.  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      [Web App Manifest][MDNWebAppManifest]  
+      [Web App Manifest][PwaWebAppManifests]  
    :::column-end:::
    :::column span="2":::
-      Provides a JSON-based metadata file that describes key information about your web app, so that Windows 10 and other host platforms provide your PWA users with an installable, native app-like experience.  Key information includes icons, language, and URL entry point. 
+      Provides a JSON-based metadata file that describes key information about your web app, so that Windows 10 and other host platforms provide your PWA users with an installable, native app-like experience.  Key information includes icons, language, and URL entry point.  
    :::column-end:::
 :::row-end:::  
 
-To be a great PWA, your app must also meet the following requirements.  
+Before anything else, a PWA is a website that provides content to your users. Converting it to a PWA means progressively enhancing this, depending on device capabilities, to provide users with a more engaging experience. Therefore, to be a great PWA, your app should also employ web best practices such as the following.  
 
 :::row:::
    :::column span="1":::
@@ -193,7 +203,6 @@ To be a great PWA, your app must also meet the following requirements.
       
       *   CSS [grid][MDNCssGridLayout]  
       *   [flexbox][MDNCssFlexibleBoxLayout]  
-      *   CSS [grid][MDNCssGridLayout] and [flexbox][MDNCssFlexibleBoxLayout]  
       *   [media queries][MDNMediaQueries]  
       *   [responsive images][MDNResponsiveImages]  
           
@@ -210,24 +219,34 @@ To be a great PWA, your app must also meet the following requirements.
 :::row-end:::  
 :::row:::
    :::column span="1":::
+      [Offline experience][PwaOfflineExperience]  
+   :::column-end:::
+   :::column span="2":::
+      Once installed, works regardless of your users' connection status and provides a custom offline page rather than using the browser default offline page.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
       [Validation and testing practices][Webhint]  
    :::column-end:::
    :::column span="2":::
       Uses code quality tools like the [Webhint][Webhint] linter to optimize the efficiency, robustness, safety, and accessibility of your app.  
    :::column-end:::
 :::row-end:::  
-:::row:::
-   :::column span="1":::
-      [Chromium PWA Checklist][WebDevGoodPwaChecklist]  
-   :::column-end:::
-   :::column span="2":::
-      Verifies your PWA against the Google baseline PWA checklist.  
-   :::column-end:::
-:::row-end:::  
 
 > [!NOTE]
 > To turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] app, navigate to [Progressive Web Apps in the Microsoft Store][PwaChromiumMicrosoftStore].  
-  
+
+## PWA success stories  
+
+There are many PWA success stories that can speak to the value of using these technologies for your app.  
+
+*   The Starbucks PWA has increased daily active users twice. Orders on desktop are nearly the same rate as mobile.  
+*   Trivago saw an increase of 150% for people who add its PWA to the home screen. Increased engagement led to a 97% increase in clickouts to hotel offers. Users who go offline while browsing can continue to access the site and 67% continue to browse the site when they come back online.  
+*   West Elm's progressive web app saw a 15% increase in average time spent on site and a 9% lift in revenue per visit.  
+
+To learn more, navigate to [PWA Stats][PwaStats].  
+
 ## See also  
 
 *   [Myth Busting PWAs][Davrous20191018MythBustingPwasNewEdgeEdition]  
@@ -239,7 +258,9 @@ To be a great PWA, your app must also meet the following requirements.
 *   [Designing And Building A Progressive Web App Without A Framework (Part 1)][Smashingmagazine201907ProgressiveWebAppFrameworkPart1]  
 *   [Designing And Building A Progressive Web App Without A Framework (Part 2)][Smashingmagazine201907ProgressiveWebAppFrameworkPart2]  
 *   [Designing And Building A Progressive Web App Without A Framework (Part 3)][Smashingmagazine201907ProgressiveWebAppFrameworkPart3]  
-    
+*   [What makes a good Progressive Web App?][WebDevGoodPwaChecklist]  
+
+
 <!-- links -->  
 
 [DevtoolsRemoteDebuggingIndex]: ../devtools-guide-chromium/remote-debugging/index.md "Get started with remote debugging Android devices | Microsoft Docs"  
@@ -247,6 +268,9 @@ To be a great PWA, your app must also meet the following requirements.
 [DevToolsGuideDeviceModeTestingOtherBrowsers]: ../devtools-guide-chromium/device-mode/testing-other-browsers.md "Emulate and test other browsers | Microsoft Docs"  
 [DevtoolsProgressiveWebApps]: ../devtools-guide-chromium/progressive-web-apps/index.md "Debug Progressive Web Apps | Microsoft Docs"  
 [PwaChromiumMicrosoftStore]: ./microsoft-store.md "Publish your Progressive Web App to the Microsoft Store | Microsoft Docs"
+[PwaServiceWorkers]: ./serviceworker.md "Use Service Workers to manage network requests and push notifications | Microsoft Docs"
+[PwaWebAppManifests]: ./webappmanifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"
+[PwaOfflineExperience]: ./offline.md "Offline and network connectivity support in Progressive Web Apps | Microsoft Docs"
 
 [WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Windows Push Notification Services (WNS) overview | Microsoft Docs"  
 [WindowsUWPDesignDevicesDesigningTv]: /windows/uwp/design/devices/designing-for-tv.md "Designing for Xbox and TV | Microsoft Docs"  
@@ -289,9 +313,7 @@ To be a great PWA, your app must also meet the following requirements.
 [MDNPwaAdvantagesResponsive]: https://developer.mozilla.org/Apps/Progressive/Advantages#Responsive "Responsive - Progressive web app advantages"  
 [MDNPwaAdvantagesSafe]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Safe "Safe - Progressive web app advantages"  
 [MDNResponsiveImages]: https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images "Responsive images | MDN"  
-[MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "Service Worker API | MDN"  
-[MDNSyncManager]: https://developer.mozilla.org/docs/Web/API/SyncManager "SyncManager | MDN"  
-[MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Web App Manifest | MDN"  
+[MDNSyncManager]: https://developer.mozilla.org/docs/Web/API/SyncManager "SyncManager | MDN"   
 
 [BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "PWA video"  
 
@@ -320,3 +342,5 @@ To be a great PWA, your app must also meet the following requirements.
 [WikiDeepLinking]: https://en.wikipedia.org/wiki/Deep_linking "Deep linking - Wikipedia"  
 [WikiHttps]: https://en.wikipedia.org/wiki/HTTPS "HTTPS - Wikipedia"  
 [WikiResponsiveWebDesign]: https://en.wikipedia.org/wiki/Responsive_web_design "Responsive web design - Wikipedia"  
+
+[PwaStats]: https://www.pwastats.com/ "A community-driven list of stats and news related to Progressive Web Apps"  

@@ -387,7 +387,7 @@
       items:
         - name: Progressive Web Apps overview
           href: progressive-web-apps-chromium/index.md
-        - name: Why build a PWA on Desktop
+        - name: Desktop Progressive Web Apps
           href: progressive-web-apps-chromium/desktop-pwas.md
         - name: Developer guide
           items:
