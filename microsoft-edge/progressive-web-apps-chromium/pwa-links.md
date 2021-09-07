@@ -1,6 +1,7 @@
 ---
 description: This page describes Progressive Web App Builder demos and components with links.
 title: Progressive Web App Builder demos and components
+author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/7/2021
 ms.topic: conceptual
