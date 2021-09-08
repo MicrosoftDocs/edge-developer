@@ -62,18 +62,18 @@ You can move tools between the main panel and the drawer.
        Move tool from the main panel to the **Drawer**
     :::image-end:::  
 
-## Reorder panels  
+## Reorder tools  
 
 Select and drag a tool to change the ordering.  Your custom tool order persists across DevTools sessions.  
 
 > [!NOTE]
-> By default, the **Network** tool is usually the fifth from the left.  In the following figure, the **Network** tool is being moved to the first position from the left.  
+> By default, the **Network** tool is usually the fifth tab on the main toolbar.  In the following figure, the **Network** tool is being moved to become the first tab in the main toolbar.  
 
 :::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Custom order of Devtools in a panel" lightbox="../media/customize-network-first-position.msft.png":::
    Custom order of Devtools in a panel  
 :::image-end:::  
 
-## Open and close panels  
+## Open and close tools  
 
 To keep the DevTools interface streamlined, many of the tools are not opened by default. To open a tool in the main panel or the **Drawer**, select the **More Tools** \(![More Tools](../media/open-tab-icon.png)\) button to the right of the tabs, and then select a tool from the list.  
 
@@ -95,12 +95,20 @@ Navigate to [Change DevTools placement (Undock, Dock to bottom, Dock to left)][D
    Undocked DevTools  
 :::image-end:::  
 
-## Theme  
+## Color themes  
 
 Navigate to [Apply color themes to DevTools][Theme].  
 
 :::image type="complex" source="./media/customize-theme-setting.png" alt-text="Selecting a different color theme" lightbox="./media/customize-theme-setting.png":::
    Selecting a different color theme  
+:::image-end:::  
+
+## Restore default settings  
+
+To restore the default theme, placement, tools order, and any other customized settings, select **Settings** > **Preferences** > **Restore defaults and refresh**.  
+
+:::image type="complex" source="../media/restore-default-settings.png" alt-text="Restoring default settings" lightbox="../media/restore-default-settings.png":::
+   Restoring default settings  
 :::image-end:::  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
