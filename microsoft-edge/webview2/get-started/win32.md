@@ -1,6 +1,6 @@
 ---
 description: Get started guide with WebView2 for Win32 apps
-title: Get started with WebView2 for Win32 apps
+title: Get started with WebView2 in Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/06/2021
@@ -9,13 +9,13 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
 ---
-# Get started with WebView2  
+# Get started with WebView2 in Win32 apps
 
 In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  For more information about individual WebView2 APIs, navigate to [API reference][Webview2ReferenceWin32].  
 
 ## Prerequisites  
 
-Ensure you install the following list of pre-requisites before proceeding.  
+Ensure you install the following list of prerequisites before proceeding.  
 
 *   [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] (Beta, Dev, or Canary) installed on a supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).  
     
