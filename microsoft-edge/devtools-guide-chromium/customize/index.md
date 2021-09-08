@@ -78,7 +78,7 @@ Select and drag a tool to change the ordering.  Your custom tool order persists 
 To keep the DevTools interface streamlined, many of the tools are not opened by default. To open a tool in the main panel or the **Drawer**, select the **More Tools** \(![More Tools](../media/open-tab-icon.png)\) button to the right of the tabs, and then select a tool from the list.  
 
 :::image type="complex" source="../media/open-tool-in-main-panel-or-drawer.png" alt-text="The More Tools (+) button to open a new tool" lightbox="../media/open-tool-in-main-panel-or-drawer.png":::
-   The `+` button to open a new tool  
+   The **More Tools** (`+`) button to open a new tool  
 :::image-end:::  
 
 Select the close button \(![Close Tool](../media/close-tab-icon.png)\) in a tab to close the associated tool.  
