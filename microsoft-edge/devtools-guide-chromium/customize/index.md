@@ -89,7 +89,7 @@ To close a tool, select the **Close** \(![Close Tool](../media/close-tab-icon.pn
 
 ## Change DevTools placement  
 
-Navigate to [Microsoft Edge DevTools Placement][DevToolsPlacement].  
+Navigate to [Change DevTools placement (Undock, Dock to bottom, Dock to left)][DevToolsPlacement].  
 
 :::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Undocked DevTools" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
    Undocked DevTools  
