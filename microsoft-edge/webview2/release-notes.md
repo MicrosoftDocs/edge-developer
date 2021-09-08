@@ -26,12 +26,12 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to [Switch to a preview channel to test upcoming APIs and features](how-to/set-preview-channel.md).
 
-
+<!-- 
 ## 1.0.1010-prerelease
 
 Release Date: September 13, 2021  
 
-[NuGet package for WebView2 SDK 1.0.955-prerelease][NuGetGallery1.0.955-prerelease]
+[NuGet package for WebView2 SDK 1.0.1010-prerelease][NuGetGallery1.0.1010-prerelease]
 
 For full API compatibility, this prerelease version of the WebView2 SDK requires Microsoft Edge version 94.0.1010.0 or higher.
 
@@ -69,7 +69,7 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 The following APIs are promoted to stable in this prerelease SDK:
 *   `IsSwipeNavigationEnabled`.
 *   `BrowserProcessExited`.
-*   `OpenBrowserTaskManager`.
+*   `OpenBrowserTaskManager`. -->
 
 ## 1.0.961.33
 
