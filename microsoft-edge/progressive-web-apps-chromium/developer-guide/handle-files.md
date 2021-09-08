@@ -1,6 +1,6 @@
 ---
 title: Handle files in Progressive Web Apps
-description: Learn how to register your PWA as a file handler to more deeply integrate it in the operating system .
+description: Learn how to register your PWA as a file handler to more deeply integrate it in the operating system.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/01/2021
@@ -11,17 +11,15 @@ keywords: progressive web apps, PWA, Edge, JavaScript, files
 ---
 # Handle files in Progressive Web Apps
 
-Having the ability to handle files in your desktop Progressive Web App is a key aspect to making it feel well integrated and native to users.
+Progressive Web Apps that can handle files feel more native to users and better integrated in the operating system.  
 
-Websites can already easily let users upload files to them by [using the `<input type="file">` or drag and drop][MDNFileUpload], but PWAs go one step further and have the ability to register as file handlers on the operating system.
+Websites can already let users upload files by [using the `<input type="file">` or drag and drop][MDNFileUpload], but PWAs go one step further and can register as file handlers on the operating system.  
 
-This allows the operating system to automatically open your PWA to handle the file types that you associated with your app, similar to how Microsoft Word handles `.docx` files.  
+When a PWA is registered as a file handler for certain file types, the operating system can automatically open it those files are opened by the user, similar to how Microsoft Word handles `.docx` files.  
 
 ## Enable the File Handling API  
 
-The File Handling API is experimental and needs to be enabled in Microsoft Edge first.
-
-To enable the API:  
+The File Handling feature is experimental, to enable it:  
 
 1.  Navigate to `edge://flags` in Microsoft Edge.  
 1.  Select **Search flags** and type "file handling API".  
@@ -33,12 +31,12 @@ To enable the API:
 
 ## Define which files your app handles  
 
-The first thing to do is declare which types of files your app handles. This is done in your app [manifest file][ManifestFileDoc], using the `file_handlers` property which accepts an array of objects.
+The first thing to do is declare which types of files your app handles. This is done in your app [manifest file][ManifestFileDoc], using the `file_handlers` array member.
 
 Each entry in the `file_handlers` array needs to have two properties:  
 
 *  `action`: The URL the operating system should request when opening your PWA.
-*  `accept`: An object of accepted file types. The keys of this object are MIME-types (partial types can be used using the wildcard symbol `*`), and the values are arrays of accepted file extensions.  
+*  `accept`: An object of accepted file types. Keys are MIME-types (partial types, using the wildcard symbol `*`, are accepted), and values are arrays of accepted file extensions.  
 
 Consider the following example:  
 
@@ -75,13 +73,11 @@ if ('launchQueue' in window) {
 } else {
     console.error('File Handling API is not supported!');
 }
-```
-
-**TODO** Explain what the launchQueue is.
+```  
 
 ## Handle files in your app  
 
-When your app starts as a result of a file being handled, that's your chance to use the file (or files) content.
+When your app starts because of a file being handled, that's your chance to use the file (or files) content.
 
 Use the following JavaScript code to process the file content, if any:  
 
@@ -112,7 +108,7 @@ async function handleFiles(files) {
 }
 ```  
 
-**TODO** Explain what type of object `launchParams.files` is, and link to docs on MDN about it if any.
+The `launchQueue` object queues all the launched files until a consumer is set with `setConsumer`. To learn more about the `launchQueue` and `launchParams` objects, navigate to the [File Handling explainer][WICGFileHandlingExplainer].  
 
 ## Sample app  
 
@@ -122,3 +118,4 @@ async function handleFiles(files) {
 
 [MDNFileUpload]: https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications
 [ManifestFileDoc]: ../webappmanifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"  
+[WICGFileHandlingExplainer]: https://github.com/WICG/file-handling/blob/main/explainer.md#launch "WICG File Handling explainer | GitHub"
