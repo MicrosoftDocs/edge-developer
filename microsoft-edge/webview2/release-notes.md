@@ -1117,7 +1117,7 @@ Initial developer preview release.
 [GithubMicrosoftedgeWebviewfeedbackIssue1144]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1144 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1144"  
 [GithubMicrosoftedgeWebviewfeedbackIssue411]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/411 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 411"  
 [GithubMicrosoftedgeWebviewfeedbackIssue238]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/238 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 238"  
-[GithubMicrosoftedgeWebviewfeedbackIssue1077]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1077 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1"  
+[GithubMicrosoftedgeWebviewfeedbackIssue1077]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1077 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1077"  
 
 
 
