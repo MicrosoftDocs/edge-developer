@@ -81,7 +81,7 @@ To keep the DevTools interface streamlined, many of the tools are not opened by 
    The **More Tools** (`+`) button to open a new tool  
 :::image-end:::  
 
-Select the close button \(![Close Tool](../media/close-tab-icon.png)\) in a tab to close the associated tool.  
+To close a tool, select the **Close** \(![Close Tool](../media/close-tab-icon.png)\) button in the tool's tab.
 
 :::image type="complex" source="../media/close-tool-in-main-panel-or-drawer.png" alt-text="The tab's close button" lightbox="../media/close-tool-in-main-panel-or-drawer.png":::
    The tab's close button  
