@@ -10,8 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual 
 ---
 # Microsoft Edge DevTools extension for Visual Studio Code
 
-The Microsoft Edge DevTools extension for Visual Studio Code lets you use the browser's **Elements** tool and **Network** tool from within Visual Studio Code.
-Without leaving Visual Studio Code, use Microsoft Edge DevTools to connect to an instance of Microsoft Edge with the following functionality:
+The Microsoft Edge DevTools extension for Visual Studio Code lets you use the browser's **Elements** tool and **Network** tool from within Visual Studio Code.  Without leaving Visual Studio Code, use Microsoft Edge DevTools to connect to an instance of Microsoft Edge with the following functionality:
 * View the runtime HTML structure.
 * Change the layout.
 * Change styles (CSS).
@@ -40,7 +39,11 @@ This article uses the name "the Microsoft Edge DevTools extension", except for U
 
 To install the extension from within Visual Studio Code, navigate to [The Microsoft Edge DevTools extension for Visual Studio Code](index.md#the-microsoft-edge-devtools-extension-for-visual-studio-code). <!-- in the article _Visual Studio Code overview_. -->
 
-Or, you can [download the Microsoft Edge DevTools extension][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] from Visual Studio Marketplace, or view the [source code][checkSourceCode] at GitHub.
+Or, you can [download the Microsoft Edge DevTools extension][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] from Visual Studio Marketplace.  You can view the [source code][checkSourceCode] at GitHub.
+
+### Updating the extension
+
+Microsoft Visual Studio Code updates extensions automatically.  To update the extension manually, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].
 
 
 <!-- ====================================================================== -->
@@ -54,7 +57,7 @@ The Microsoft Edge DevTools extension lets you easily launch an instance of Edge
    Microsoft Edge DevTools for Visual Studio Code extension
 :::image-end:::
 
-Selecting **Launch Instance** opens a browser window and the Microsoft Edge DevTools in Visual Studio Code.
+Selecting **Launch Instance** opens a browser window, and also opens the **Edge DevTools** tab in Visual Studio Code.
 
 :::image type="complex" source="./media/edge-devtools-for-vscode-launch-instance.png" alt-text="Select Launch Instance to open the browser in Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-launch-instance.png":::
    Select **Launch Instance** to open the browser in Visual Studio Code
@@ -70,7 +73,7 @@ Use the Microsoft Edge DevTools extension in Visual Studio Code to inspect an HT
 <!-- ====================================================================== -->
 ## Modes for using Microsoft Edge DevTools in Visual Studio Code
 
-<!-- todo: relate this list to the subsequent sections -->
+<!-- todo: relate/link this list to the subsequent sections -->
 You can use this extension in one of three modes:
 * Launch Microsoft Edge in a new window, and navigate to your web application.
 * Attach to a running instance of Microsoft Edge.
@@ -86,7 +89,7 @@ To open a browser instance from Visual Studio Code:
 
 1. On the **Activity Bar**, select **Microsoft Edge Tools**.
 
-1. On the **Microsoft Edge Tools: Targets** panel, select **Launch Instance**.  Microsoft Edge opens, displaying a default page with guidance for more information.Also, the **DevTools** panel opens in Visual Studio Code.
+1. On the **Microsoft Edge Tools: Targets** panel, select **Launch Instance**.  Microsoft Edge opens, displaying a default page with guidance for more information.  Also, the **Edge DevTools** panel is displayed in Visual Studio Code, containing the **Welcome**, **Elements**, and **Network** tools.
 
     :::image type="complex" source="./media/edge-devtools-for-vscode-targets-launch.png" alt-text="Microsoft Edge and DevTools panel open in Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-targets-launch.png":::
        Microsoft Edge and DevTools panel open in Visual Studio Code
@@ -127,11 +130,45 @@ To debug your project, you might want to change the default page that opens in M
 <!-- ====================================================================== -->
 ## Changing the extension settings
 
-In version 1.1.6 or later, you can customize the DevTools in the Visual Studio Code extension. To customize the settings, in the **Microsoft Edge Tools: Targets** panel, select **…**, and then select **Open Settings**.
+In version 1.1.6 or later, you can customize DevTools in the Visual Studio Code extension.
 
-You can also review the changes made to the extension. To view the changelog, in the **Microsoft Edge Tools: Targets** panel, select **...**, and then select **View Changelog**.
+To customize the settings:
 
-### Changing to headless mode
+1.  In Visual Studio Code, on the **Activity Bar**, select **Microsoft Edge Tools**.
+
+1. In **Microsoft Edge Tools** > **Targets**, select **More Actions** (...) to the right of the word **TARGETS**, and then select **Open Settings**.  Note: If you are using a mouse, to access **More Actions** (...), select the **Targets** pane or hover over it.
+
+    :::image type="complex" source="./media/edge-tools-open-settings-icon.msft.png" alt-text="The More Actions icon on the Microsoft Edge Tools: Targets panel, to change the settings of the DevTools extension" lightbox="./media/edge-tools-open-settings-icon.msft.png":::
+       The **More Actions** icon on the **Microsoft Edge Tools: Targets** panel, to change the settings of the DevTools extension
+    :::image-end:::
+
+### Reloading the extension after changing settings
+
+Some settings have a note that reads **(reload required after changing)**.  For such a setting to take effect:
+
+1.  Close the browser opened by the extension, or in the **Microsoft Edge Tools** > **Targets** pane, select **Close instance** (`X`).  This action automatically closes the **Edge DevTools** tab as well.
+
+1.  In the **Microsoft Edge Tools** > **Targets** pane, select the **Launch Instance** button.  Microsoft Edge opens, and the **Edge DevTools** tab is displayed.
+
+
+<!-- ====================================================================== -->
+## Viewing the changelog for changes made to the extension
+
+You can view the changes made to the extension. To view the changelog, perform the following steps.
+
+1.  In Visual Studio Code, on the **Activity Bar**, select **Microsoft Edge Tools**.
+
+1. In **Microsoft Edge Tools** > **Targets**, select **More Actions** (...) to the right of the word **TARGETS**, and then select **View Changelog**.  Note: If you are using a mouse, to access **More Actions** (...), select the **Targets** pane or hover over it.
+
+    :::image type="complex" source="./media/view-changelog-menuitem.msft.png" alt-text="The View Changelog menu item, to view changes that have been made to the extension" lightbox="./media/view-changelog-menuitem.msft.png":::
+       The **View Changelog** menu item, to view changes that have been made to the extension
+    :::image-end:::
+
+Or, in the browser, navigate to the [changelog file][GithubMicrosoftVscodeEdgeDevtoolsChangelog] in the `vscode-edge-devtools` repo.
+
+
+<!-- ====================================================================== -->
+## Changing to headless mode
 
 By default, the extension launches Microsoft Edge in a new window, which displays another browser icon on the task bar.
 
@@ -141,10 +178,10 @@ Select **Toggle screencast** to display the browser inside the editor, or hide t
    Toggle screencast to view the browser inside the editor
 :::image-end:::
 
-You can also select **Settings** > **Headless mode** to use only the screencast browser inside Visual Studio Code.
+To use only the screencast browser inside Visual Studio Code, select **Settings** > **Headless mode**.
 
-:::image type="complex" source="./media/edge-devtools-for-vscode-settings-headless.png" alt-text="Select Settings > Headless to use only the screencast browser inside Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-settings-headless.png":::
-   Select **Settings > Headless** to use only the screencast browser inside Visual Studio Code
+:::image type="complex" source="./media/edge-devtools-for-vscode-settings-headless.png" alt-text="To use only the screencast browser inside Visual Studio Code, select Settings > Headless mode" lightbox="./media/edge-devtools-for-vscode-settings-headless.png":::
+   To use only the screencast browser inside Visual Studio Code, select **Settings** > **Headless mode**
 :::image-end:::
 
 
@@ -185,14 +222,13 @@ JavaScript debugging is now built in to Visual Studio Code.  Starting with Versi
 
 1. To start a session, use either of the following methods:
     * Select **F5**, or on the menu bar select the **Debug** icon and then select **Run and debug**.
-    * Open the Visual Studio Code command palette and select **Debug: Open Link**.
+    * Open the Visual Studio Code command palette and then select **Debug: Open Link**.
 
     :::image type="complex" source="./media/edge-devtools-for-vscode-start-session.png" alt-text="Start Microsoft Edge DevTools from the JavaScript debugger" lightbox="./media/edge-devtools-for-vscode-start-session.png":::
        Start Microsoft Edge DevTools from the JavaScript debugger
     :::image-end:::
 
-1. Select **Edge**.
-    On the debug toolbar, notice the **Inspect** button.
+1. Select **Edge**.  On the debug toolbar, notice the **Inspect** button.
 
     :::image type="complex" source="./media/edge-devtools-for-vscode-inspect-button.png" alt-text="The Inspect button on the debug toolbar" lightbox="./media/edge-devtools-for-vscode-inspect-button.png":::
        The **Inspect** button on the debug toolbar
@@ -270,7 +306,9 @@ If you want to help make the Microsoft Edge DevTools extension better, your cont
 [ConsoleUtilitiesAPI]: /microsoft-edge/devtools-guide-chromium/console/utilities "Console Utilities API reference | Microsoft Docs"
 <!-- external links -->
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
+[GithubMicrosoftVscodeEdgeDevtoolsChangelog]: https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md "Changelog file - vscode-edge-devtools | GitHub"
 [GithubMicrosoftVscodeEdgeDevtoolsNewIssue]: https://github.com/Microsoft/vscode-edge-devtools/issues/new "New Issue - microsoft/vscode-edge-devtools | GitHub"
+[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Update an extension manually - Extension Marketplace | Visual Studio Code"
 
 [VisualstudioMarketplaceElementsMicrosoftEdgeChromium]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Developer Tools for Visual Studio Code | Visual Studio Marketplace"
 

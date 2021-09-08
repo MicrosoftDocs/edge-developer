@@ -23,7 +23,9 @@ Open DevTools in the browser.  The **Open Console to view errors** button on the
    DevTools gives detailed information about the error in the **Console**  
 :::image-end:::  
 
-The information suggests that the error is on line 16 of the `error.html` file.  Select the `error.html:16` link on the right of the **Console**.  The **Sources** tool opens and highlights the line of code with the error.  
+Many error messages in the **Console** have a **Search for this message on the Web** button, shown as a magnifying glass.  This feature was introduced in Microsoft Edge version 94.  For more information, navigate to [Look up error messages on the web from the Console][LookupErrorsWebFromConsole].
+
+The information in this error message suggests that the error is on line 16 of the `error.html` file.  Select the `error.html:16` link on the right of the error message in the **Console**.  The **Sources** tool opens and highlights the line of code with the error.  
 
 :::image type="complex" source="../media/console-debug-displays-in-sources.msft.png" alt-text="The Sources tool highlights the line of code that causes the error" lightbox="../media/console-debug-displays-in-sources.msft.png":::
    The **Sources** tool highlights the line of code that causes the error  
@@ -194,6 +196,7 @@ The result is a trace to display that `here()` is named `there()` and then `ever
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 <!-- links -->  
+[LookupErrorsWebFromConsole]: index.md#look-up-error-messages-on-the-web-from-the-console "Look up error messages on the web from the Console - Use the Console | Microsoft Docs"
 [GithubMicrosoftedgeDevtoolssamplesConsoleErrorHtml]: https://microsoftedge.github.io/DevToolsSamples/console/error.html "JavaScript error reported in the Console tool | GitHub"  
 [GithubMicrosoftedgeDevtoolssamplesConsoleErrorAssertHtml]: https://microsoftedge.github.io/DevToolsSamples/console/error-assert.html "Creating error reports and assertions in Console | GitHub"  
 [GithubMicrosoftedgeDevtoolssamplesConsoleNetworkErrorHtml]: https://microsoftedge.github.io/DevToolsSamples/console/network-error.html "Network error reported in Console | GitHub"  
