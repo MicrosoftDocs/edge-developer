@@ -137,7 +137,7 @@ The following products are examples of cloud-based emulators and related product
 
 *   [TestingBot][TestingBot] helps you to do both manual testing and automated testing on various browser and operating system combinations.  Test both your websites and mobile apps on TestingBot's emulators and physical devices.
 
-Microsoft doesn't endorse specific products from other companies.  This above is only a representative sampling of products, and we don't plan to add more products to this list. 
+Microsoft doesn't endorse specific products from other companies.  The above is only a representative sampling of products, and we don't plan to add more products to this list.
 
 
 <!-- ====================================================================== -->
