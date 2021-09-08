@@ -23,6 +23,8 @@ keywords: microsoft edge, web development, f12 tools, devtools, css, css-in-js
    limitations under the License. -->
 # Style editing for CSS-in-JS frameworks
 
+In the **Styles** tab, you can copy declarations for a style rule in a way that's formatted for JavaScript and ready to paste into a JavaScript file.  This includes style rules that were defined by CSS-in-JS function calls.  You can also edit style rules that were initially defined by a CSS-in-JS function call.
+
 
 <!-- ====================================================================== -->
 ## Copying style rule declarations to paste them with JavaScript syntax
