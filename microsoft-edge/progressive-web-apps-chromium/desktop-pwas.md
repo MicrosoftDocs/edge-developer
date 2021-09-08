@@ -79,7 +79,9 @@ Like other native apps in Windows, installed PWAs are displayed in various place
       Task bar 
    :::column-end:::
    :::column span="2":::
-      
+      :::image type="complex" source="./media/pwa-and-native-apps-in-taskbar.png" alt-text="PWAs and native apps side by side in the task bar" lightbox="./media/pwa-and-native-apps-in-taskbar.png":::
+         PWAs and native apps side by side in the task bar  
+      :::image-end:::  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -99,8 +101,11 @@ Like other native apps in Windows, installed PWAs are displayed in various place
    :::column-end:::
 :::row-end:::  
 
+PWAs can also expose common tasks to users in the task bar contextual menu.
 
-Shortcuts
+:::image type="complex" source="./media/pwa-shortcuts-in-taskbar.png" alt-text="Common tasks are listed in the task bar contextual menu" lightbox="./media/pwa-shortcuts-in-taskbar.png":::
+   Common tasks are listed in the task bar contextual menu  
+:::image-end:::  
 
 Notification
 
