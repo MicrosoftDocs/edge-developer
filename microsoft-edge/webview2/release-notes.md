@@ -26,7 +26,8 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to [Switch to a preview channel to test upcoming APIs and features](how-to/set-preview-channel.md).
 
-## 1.0.1010-prerelease
+
+<!-- ## 1.0.1010-prerelease
 
 Release Date: September 13, 2021  
 
@@ -64,10 +65,9 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 #### Promotions
 
 The following APIs are promoted to stable:
-*   Client Certificate API.
 *   IsSwipeNavigationEnabled API.
 *   BrowserProcessExited API
-*   BrowserTaskManager API. 
+*   BrowserTaskManager API.  -->
 
 ## 1.0.961.33
 
