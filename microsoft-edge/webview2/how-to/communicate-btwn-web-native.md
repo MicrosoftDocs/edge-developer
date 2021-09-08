@@ -36,7 +36,7 @@ Start by setting up a button on the native side to send a web message. Then add 
 
 1. Use C++ to create a Windows button that calls `SendJsonWebMessage()` when selected.
 
-    For more information about creating a button in C++, navigate to the [How to Create a Button - Win32 apps][CreateButtonWin32].
+    For more information about creating a button in C++, navigate to the [How to Create a Button](/windows/win32/controls/create-a-button).
 
 1. Add this code to be called when the button is selected.
 
@@ -168,7 +168,7 @@ Congratulations.  You've successfully embedded web content into native applicati
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
-[CreateButtonWin32]: ../../../../windows/win32/controls/create-a-button "How to Create a Button - Win32 apps | Microsoft Docs"  
+<!-- [CreateButtonWin32]: ../../../../windows/win32/controls/create-a-button "How to Create a Button - Win32 apps | Microsoft Docs"   -->
 
 [ScenarioWebMessageHTML]: https://github.com/MicrosoftEdge/WebView2Samples/blob/a12bfcc2bc8a1155529c35c7bd4645036f492ca0/SampleApps/WebView2APISample/assets/ScenarioWebMessage.html "ScenarioWebMessage HTML | GitHub Microsoft Edge WebView2 Samples"
 
