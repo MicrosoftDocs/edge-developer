@@ -10,17 +10,17 @@ keywords: progressive web apps, PWA, Edge, Windows, desktop, PWABuilder
 ---
 # Desktop Progressive Web Apps  
 
-PWAs are not only a way for websites to appear on mobile home screens. They are based on standard, cross-browser, web technologies that allow them to be installed and to run everywhere.  
-
-While most consumers have migrated to mobile-first (or mobile-only) ways of consuming content, businesses still mostly operate only on desktop.  
-Building your desktop app as a PWA allows you make use of all the benefits that PWAs come with while targeting those users.  
-
 > [!NOTE]
 > This page focuses on the characteristics and advantages of PWAs on desktop devices. For more information about general PWA benefits, navigate to [Progressive Web Apps overview][PwaOverview].  
 
-With many new web capabilities as well as new features in Microsoft Edge and Windows, there are great opportunities to build immersive experiences that deeply integrate with the desktop operating system, and look and feel native, while only using technologies that will work in other browsers, operating systems and devices.  
+PWAs aren't only a way for websites to appear on mobile home screens. They're based on standard, cross-browser, web technologies that allow them to be installed and to run everywhere.  
 
-Depending on your requirements, you might not have to build your app with native technologies at all as the web has grown capabilities to easily deal with file systems, video, audio, high-performing code, databases, USB, bluetooth, and more.  
+While most consumers have migrated to mobile-first ways of consuming content, businesses still mostly operate on desktop.  
+Building your desktop app as a PWA allows you to make use of all the benefits that PWAs come with while targeting those users.  
+
+With many new web capabilities and new features in Microsoft Edge and Windows, there are great opportunities to build immersive experiences that deeply integrate with the desktop operating system and feel native. Only using web technologies also ensures that your app will work in other browsers, operating systems and devices.  
+
+You might not have to use native technologies at all as the web has grown capabilities to deal with file systems, video, audio, high-performing code, databases, USB, Bluetooth, and more.  
 
 With a shared codebase between your website, mobile app and desktop app (across operating systems), you cut down on development cost.
 
@@ -32,7 +32,7 @@ In Windows, PWAs are first-class app citizens and any device running Microsoft E
 
 ### Installing a PWA  
 
-When Microsoft Edge determines that a website is a PWA and is therefore installable, the **App available** button is displayed in the address bar.
+When Microsoft Edge determines that a website is an installable PWA, the **App available** button is displayed in the address bar.  
 
 :::image type="complex" source="./media/edge-app-available-button.png" alt-text="The App available button in Microsoft Edge address bar" lightbox="./media/edge-app-available-button.png":::
    The **App available** button in Microsoft Edge address bar  
@@ -72,7 +72,7 @@ Since PWAs are deeply integrated in Windows, they show up anywhere other types o
 
 ### Windows integration  
 
-Like other native apps in Windows, installed PWAs get displayed in a variety of places.  
+Like other native apps in Windows, installed PWAs are displayed in various places.  
 
 :::row:::
    :::column span="1":::
@@ -110,13 +110,13 @@ A few examples of impressive APIs that compete with native, that people might no
 
 * Push notifications
 * Periodic sync
-* Media: access to bluethooth, USB
+* Media: access to Bluethooth, USB
 * Intensive WebGL content
 * Native performance with WebAssembly
 
 ## The Microsoft Store  
 
-Because PWAs can be a first-class citizen in the Microsoft Store, a user will be able to engage fully with an installed PWA—from discovery, to installation, to execution—without ever opening the browser.
+Because PWAs are first-class citizens in the Microsoft Store, users can fully engage with them, from discovery, to installation, to execution, without ever opening the browser.  
 
 Pitch about why this is great for distributing PWAs.
 
