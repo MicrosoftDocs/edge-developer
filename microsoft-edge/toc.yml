@@ -407,6 +407,8 @@
                   href: progressive-web-apps-chromium/developer-guide/advanced-features.md
                 - name: Handle files
                   href: progressive-web-apps-chromium/developer-guide/handle-files.md
+                - name: Handle URLs and protocols
+                  href: progressive-web-apps-chromium/developer-guide/handle-urls-protocols.md
                 - name: Display content in the title bar
                   href: progressive-web-apps-chromium/developer-guide/window-controls-overlay.md
         - name: Publish a PWA to the Microsoft Store

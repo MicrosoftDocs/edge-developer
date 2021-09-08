@@ -25,8 +25,8 @@ The File Handling feature is experimental, to enable it:
 1.  Select **Search flags** and type "file handling API".  
 1.  Select **Default** > **Enabled** > **Restart**.  
 
-    :::image type="complex" source="../media/enable-file-handling-experiment.png" alt-text="Edit a localStorage key" lightbox="../media/enable-file-handling-experiment.png":::
-       Enable the File Handling API experiment    
+    :::image type="complex" source="../media/enable-file-handling-experiment.png" alt-text="Enable the File Handling API experiment" lightbox="../media/enable-file-handling-experiment.png":::
+       Enable the File Handling API experiment  
     :::image-end:::  
 
 ## Define which files your app handles  
