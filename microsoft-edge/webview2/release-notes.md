@@ -26,6 +26,71 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to [Switch to a preview channel to test upcoming APIs and features](how-to/set-preview-channel.md).
 
+## 1.0.1010-prerelease
+
+Release Date: September 13, 2021  
+
+[NuGet package for WebView2 SDK 1.0.955-prerelease][NuGetGallery1.0.955-prerelease]
+
+For full API compatibility, this prerelease version of the WebView2 SDK requires Microsoft Edge version 94.0.1010.0 or higher.
+
+### General  
+*   General WebView2 performance improvements.
+*   General reliability fixes. \([\#1605][GithubMicrosoftedgeWebviewfeedbackIssue1605] and[\#1678][GithubMicrosoftedgeWebviewfeedbackIssue1678]\)
+*   Added launch and foreground boost support.
+
+#### Experimental Features  
+*   `EnsureCoreWebView2Async` will now throw an `ArgumentException` if called multiple times with incompatible parameters, such as new environments, to avoid silent failures.
+*   Added [UserDataFolder][Webview2ReferenceWin32Icorewebview2experimentalenvironment5ViewWebview210999PrereleaseGetUserdatafolder] property to Environment Interface. 
+*   Added [navigation & script APIs][Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210999Prerelease] for iFrames. 
+*   Added MemoryUsageTargetLevel API which allows developer to specify desired memory consumption level (low, normal). 
+*   Added ExclusiveUserDataFolderAccess to EnvironmentOptions.
+*   Added HiddenPdfToolbarItems API to customize pdf toolbar items.
+*   Added PrintToPDF API which allows printing the current page to PDF with optional custom settings.
+*   Added AllowExternalDrop property to enable/disable drag and drop of objects outside of webview2 into it.
+*   Added ContextMenu API which allows customization of the webview2 context menu. 
+
+#### Bug fixes  
+*   Improved catching exceptions for host objects in JavaScript.
+*   Replaced WebView2 icon with generic in Devtools windows.
+*   Re-enable the "Tab" screen sharing option when using `MediaDevices.getDisplayMedia()`. \([\#1566][GithubMicrosoftedgeWebviewfeedbackIssue1566]\)
+*   Fixed a bug in the Client Certificate API, where the correct certificate was not getting selected. This is a Runtime change. \([\#1666][GithubMicrosoftedgeWebviewfeedbackIssue1666]\)
+*   Fixed bug that window.chrome.webview was not available in a new window with the same as parent domain. This change is runtime-specific. \([\#1144][GithubMicrosoftedgeWebviewfeedbackIssue1144]\)
+*   Fixed a bug where dropdowns would appear behind topmost window. \([\#411][GithubMicrosoftedgeWebviewfeedbackIssue411]\)
+*   Fixed focus issues with put_IsVisible(false). \([\#238][GithubMicrosoftedgeWebviewfeedbackIssue238]\)
+*   Fixed bug to make SetVirtualHostNameToFolderMapping apply to popup window.
+*   Fixed bugs where an IDispatch object is returned as IUnknown.
+
+#### Promotions
+
+The following APIs are promoted to stable:
+*   Client Certificate API.
+*   IsSwipeNavigationEnabled API.
+*   BrowserProcessExited API
+*   BrowserTaskManager API. 
+
+## 1.0.961.33
+
+Release Date: September 8, 2021  
+
+[NuGet package for WebView2 SDK 1.0.961.33][NuGetGallery1.0.961.33]
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 93.0.961.33 or higher.
+
+### General  
+
+#### Bug Fixes  
+*   Fixed a bug that was causing ERR_SSL_CLIENT_AUTH_CERT_NEEDED errors. This is a Runtime change.
+*   Fixed a bug that special browser keys like Refresh, Home, Back, etc can't be disabled by AreBrowserAcceleratorKeysEnabled. This change is Runtime-specific.
+*   Fixed a bug that doesn't render transparent background color.
+*   Fixed a bug that caused white flicker when loading WebView2.
+*   Fixed a bug in WebView2 .NET controls that WebView2 windows are blank when created in the background. \([\#1077][GithubMicrosoftedgeWebviewfeedbackIssue1077]\)
+*   Fixed a bug where settings were not getting updated for navigations and new window requests to about:blank pages. This is a runtime change.
+
+#### Promotions
+
+The following items are now in stable: 
+*   [Client Certificate API][Webview2ReferenceWin32Icorewebview25ViewWebview21096132AddClientcertificaterequested].
 
 ## 1.0.955-prerelease
 
@@ -1045,6 +1110,17 @@ Initial developer preview release.
 [GithubMicrosoftedgeWebviewfeedbackIssue637]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/637 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 637"
 [GithubMicrosoftedgeWebviewfeedbackIssue1142]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1142 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1142"
 
+[GithubMicrosoftedgeWebviewfeedbackIssue1605]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1605 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1605"  
+[GithubMicrosoftedgeWebviewfeedbackIssue1678]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1678 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1678"  
+[GithubMicrosoftedgeWebviewfeedbackIssue1566]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1566 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1566"  
+[GithubMicrosoftedgeWebviewfeedbackIssue1666]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1666 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1666"  
+[GithubMicrosoftedgeWebviewfeedbackIssue1144]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1144 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1144"  
+[GithubMicrosoftedgeWebviewfeedbackIssue411]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/411 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 411"  
+[GithubMicrosoftedgeWebviewfeedbackIssue238]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/238 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 238"  
+[GithubMicrosoftedgeWebviewfeedbackIssue1077]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1077 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1"  
+
+
+
 [MicrosoftDevblogDotnetAnnouncingGeneralAvailabilityForMicrosoftEdgeWebview2ForNetFixedDistributionMethod]: https://devblogs.microsoft.com/dotnet/announcing-general-availability-for-microsoft-edge-webview2-for-net-and-fixed-distribution-method "Announcing General Availability for Microsoft Edge WebView2 for .NET and Fixed Distribution Method | .NET Blog"  
 
 [MicrosoftDeveloperMicrosoftEdgeWebView2]: https://developer.microsoft.com/microsoft-edge/webview2/ "Microsoft Edge WebView2 | Microsoft Edge Developer"  
@@ -1074,6 +1150,8 @@ Initial developer preview release.
 [NuGetGallery1.0.818.41]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.818.41 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.818.41"  
 [NuGetGallery1.0.864.35]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.864.35 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.864.35"  
 [NuGetGallery1.0.902.49]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.902.49 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.902.49"  
+[NuGetGallery1.0.961.33]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.961.33 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.961.33"  
+
 [NuGetGallery1.0.824-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.824-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.824 prerelease"  
 [NuGetGallery1.0.865-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.865-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.865 prerelease"  
 [NuGetGallery1.0.902-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.902-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.902 prerelease"  
@@ -1107,3 +1185,68 @@ Initial developer preview release.
 [Webview2ReferenceWin32Icorewebview2settings4ViewWebview21090249GetIsgeneralautofillenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings4?view=webview2-1.0.902.49&preserve-view=true#get_isgeneralautofillenabled "get_IsGeneralAutofillEnabled - interface ICoreWebView2Settings4 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2settings5ViewWebview21090249GetIspinchzoomenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings5?view=webview2-1.0.902.49&preserve-view=true#get_ispinchzoomenabled "get_IsPinchZoomEnabled - interface ICoreWebView2Settings5 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2experimentalsettings6ViewWebview210955PrereleaseGetHiddenpdftoolbaritems]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings6?view=webview2-1.0.955-prerelease&preserve-view=true#get_hiddenpdftoolbaritems "get_HiddenPdfToolbarItems - interface ICoreWebView2ExperimentalSettings6 | Microsoft Docs"
+
+# 1.0.999-prerelease (TBD)
+
+## To experimental
+
+[Webview2ReferenceWin32Icorewebview2experimentalenvironment5ViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment5?view=webview2-1.0.999-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalEnvironment5 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalenvironment5ViewWebview210999PrereleaseGetUserdatafolder]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment5?view=webview2-1.0.999-prerelease&preserve-view=true#get_userdatafolder "get_UserDataFolder - interface ICoreWebView2ExperimentalEnvironment5 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalsettings6ViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings6?view=webview2-1.0.999-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalSettings6 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe?view=webview2-1.0.999-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalFrame | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210999PrereleaseAddNavigationstarting]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe?view=webview2-1.0.999-prerelease&preserve-view=true#add_navigationstarting "add_NavigationStarting - interface ICoreWebView2ExperimentalFrame | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210999PrereleaseRemoveNavigationstarting]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe?view=webview2-1.0.999-prerelease&preserve-view=true#remove_navigationstarting "remove_NavigationStarting - interface ICoreWebView2ExperimentalFrame | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210999PrereleaseAddContentloading]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe?view=webview2-1.0.999-prerelease&preserve-view=true#add_contentloading "add_ContentLoading - interface ICoreWebView2ExperimentalFrame | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210999PrereleaseRemoveContentloading]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe?view=webview2-1.0.999-prerelease&preserve-view=true#remove_contentloading "remove_ContentLoading - interface ICoreWebView2ExperimentalFrame | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210999PrereleaseAddNavigationcompleted]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe?view=webview2-1.0.999-prerelease&preserve-view=true#add_navigationcompleted "add_NavigationCompleted - interface ICoreWebView2ExperimentalFrame | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210999PrereleaseRemoveNavigationcompleted]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe?view=webview2-1.0.999-prerelease&preserve-view=true#remove_navigationcompleted "remove_NavigationCompleted - interface ICoreWebView2ExperimentalFrame | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210999PrereleaseAddDomcontentloaded]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe?view=webview2-1.0.999-prerelease&preserve-view=true#add_domcontentloaded "add_DOMContentLoaded - interface ICoreWebView2ExperimentalFrame | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210999PrereleaseRemoveDomcontentloaded]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe?view=webview2-1.0.999-prerelease&preserve-view=true#remove_domcontentloaded "remove_DOMContentLoaded - interface ICoreWebView2ExperimentalFrame | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210999PrereleaseExecutescript]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe?view=webview2-1.0.999-prerelease&preserve-view=true#executescript "ExecuteScript - interface ICoreWebView2ExperimentalFrame | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalframenavigationstartingeventhandlerViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalframenavigationstartingeventhandler?view=webview2-1.0.999-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalFrameNavigationStartingEventHandler | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalframecontentloadingeventhandlerViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalframecontentloadingeventhandler?view=webview2-1.0.999-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalFrameContentLoadingEventHandler | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalframenavigationcompletedeventhandlerViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalframenavigationcompletedeventhandler?view=webview2-1.0.999-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalFrameNavigationCompletedEventHandler | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalframedomcontentloadedeventhandlerViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalframedomcontentloadedeventhandler?view=webview2-1.0.999-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalFrameDOMContentLoadedEventHandler | Microsoft Docs"
+
+## To stable
+
+[Webview2ReferenceWin32Icorewebview26ViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2_6?view=webview2-1.0.999-prerelease&preserve-view=true "interface ICoreWebView2_6 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview26ViewWebview210999PrereleaseOpentaskmanagerwindow]: /microsoft-edge/webview2/reference/win32/icorewebview2_6?view=webview2-1.0.999-prerelease&preserve-view=true#opentaskmanagerwindow "OpenTaskManagerWindow - interface ICoreWebView2_6 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2settings6ViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2settings6?view=webview2-1.0.999-prerelease&preserve-view=true "interface ICoreWebView2Settings6 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2settings6ViewWebview210999PrereleaseGetIsswipenavigationenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings6?view=webview2-1.0.999-prerelease&preserve-view=true#get_isswipenavigationenabled "get_IsSwipeNavigationEnabled - interface ICoreWebView2Settings6 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2settings6ViewWebview210999PrereleaseIsswipenavigationenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings6?view=webview2-1.0.999-prerelease&preserve-view=true#isswipenavigationenabled "IsSwipeNavigationEnabled - interface ICoreWebView2Settings6 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2newwindowrequestedeventargs2ViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs2?view=webview2-1.0.999-prerelease&preserve-view=true "interface ICoreWebView2NewWindowRequestedEventArgs2 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2browserprocessexitedeventhandlerViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventhandler?view=webview2-1.0.999-prerelease&preserve-view=true "interface ICoreWebView2BrowserProcessExitedEventHandler | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2browserprocessexitedeventargsViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs?view=webview2-1.0.999-prerelease&preserve-view=true "interface ICoreWebView2BrowserProcessExitedEventArgs | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2environment5ViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2environment5?view=webview2-1.0.999-prerelease&preserve-view=true "interface ICoreWebView2Environment5 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2environment5ViewWebview210999PrereleaseAddBrowserprocessexited]: /microsoft-edge/webview2/reference/win32/icorewebview2environment5?view=webview2-1.0.999-prerelease&preserve-view=true#add_browserprocessexited "add_BrowserProcessExited - interface ICoreWebView2Environment5 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2environment5ViewWebview210999PrereleaseRemoveBrowserprocessexited]: /microsoft-edge/webview2/reference/win32/icorewebview2environment5?view=webview2-1.0.999-prerelease&preserve-view=true#remove_browserprocessexited "remove_BrowserProcessExited - interface ICoreWebView2Environment5 | Microsoft Docs"
+
+# 1.0.961.33 (TBD)
+
+## To stable
+
+Run `\\edgefs\users\peiche\release_notes\Get-ApiChanges.ps1 -PreviousReleaseVersion 902m92 -CurrentReleaseVersion 961m93 -AnaheimRepoPath d:\anaheim\src -shouldGenerateLink -BuildAndPatch 961.33` and the links below will be copied to the clipboard.
+
+[Webview2ReferenceWin32Icorewebview25ViewWebview21096132]: /microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.961.33&preserve-view=true "interface ICoreWebView2_5 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview25ViewWebview21096132AddClientcertificaterequested]: /microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.961.33&preserve-view=true#add_clientcertificaterequested "add_ClientCertificateRequested - interface ICoreWebView2_5 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview25ViewWebview21096132RemoveClientcertificaterequested]: /microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.961.33&preserve-view=true#remove_clientcertificaterequested "remove_ClientCertificateRequested - interface ICoreWebView2_5 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2clientcertificateViewWebview21096132]: /microsoft-edge/webview2/reference/win32/icorewebview2clientcertificate?view=webview2-1.0.961.33&preserve-view=true "interface ICoreWebView2ClientCertificate | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2clientcertificateViewWebview21096132GetSubject]: /microsoft-edge/webview2/reference/win32/icorewebview2clientcertificate?view=webview2-1.0.961.33&preserve-view=true#get_subject "get_Subject - interface ICoreWebView2ClientCertificate | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2clientcertificateViewWebview21096132GetIssuer]: /microsoft-edge/webview2/reference/win32/icorewebview2clientcertificate?view=webview2-1.0.961.33&preserve-view=true#get_issuer "get_Issuer - interface ICoreWebView2ClientCertificate | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2clientcertificateViewWebview21096132GetValidfrom]: /microsoft-edge/webview2/reference/win32/icorewebview2clientcertificate?view=webview2-1.0.961.33&preserve-view=true#get_validfrom "get_ValidFrom - interface ICoreWebView2ClientCertificate | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2clientcertificateViewWebview21096132GetValidto]: /microsoft-edge/webview2/reference/win32/icorewebview2clientcertificate?view=webview2-1.0.961.33&preserve-view=true#get_validto "get_ValidTo - interface ICoreWebView2ClientCertificate | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2clientcertificateViewWebview21096132GetDerencodedserialnumber]: /microsoft-edge/webview2/reference/win32/icorewebview2clientcertificate?view=webview2-1.0.961.33&preserve-view=true#get_derencodedserialnumber "get_DerEncodedSerialNumber - interface ICoreWebView2ClientCertificate | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2clientcertificateViewWebview21096132GetDisplayname]: /microsoft-edge/webview2/reference/win32/icorewebview2clientcertificate?view=webview2-1.0.961.33&preserve-view=true#get_displayname "get_DisplayName - interface ICoreWebView2ClientCertificate | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2clientcertificateViewWebview21096132Topemencoding]: /microsoft-edge/webview2/reference/win32/icorewebview2clientcertificate?view=webview2-1.0.961.33&preserve-view=true#topemencoding "ToPemEncoding - interface ICoreWebView2ClientCertificate | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2clientcertificateViewWebview21096132GetPemencodedissuercertificatechain]: /microsoft-edge/webview2/reference/win32/icorewebview2clientcertificate?view=webview2-1.0.961.33&preserve-view=true#get_pemencodedissuercertificatechain "get_PemEncodedIssuerCertificateChain - interface ICoreWebView2ClientCertificate | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2clientcertificateViewWebview21096132GetKind]: /microsoft-edge/webview2/reference/win32/icorewebview2clientcertificate?view=webview2-1.0.961.33&preserve-view=true#get_kind "get_Kind - interface ICoreWebView2ClientCertificate | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2clientcertificatecollectionViewWebview21096132]: /microsoft-edge/webview2/reference/win32/icorewebview2clientcertificatecollection?view=webview2-1.0.961.33&preserve-view=true "interface ICoreWebView2ClientCertificateCollection | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2clientcertificatecollectionViewWebview21096132GetCount]: /microsoft-edge/webview2/reference/win32/icorewebview2clientcertificatecollection?view=webview2-1.0.961.33&preserve-view=true#get_count "get_Count - interface ICoreWebView2ClientCertificateCollection | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2clientcertificatecollectionViewWebview21096132Getvalueatindex]: /microsoft-edge/webview2/reference/win32/icorewebview2clientcertificatecollection?view=webview2-1.0.961.33&preserve-view=true#getvalueatindex "GetValueAtIndex - interface ICoreWebView2ClientCertificateCollection | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2stringcollectionViewWebview21096132]: /microsoft-edge/webview2/reference/win32/icorewebview2stringcollection?view=webview2-1.0.961.33&preserve-view=true "interface ICoreWebView2StringCollection | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2stringcollectionViewWebview21096132GetCount]: /microsoft-edge/webview2/reference/win32/icorewebview2stringcollection?view=webview2-1.0.961.33&preserve-view=true#get_count "get_Count - interface ICoreWebView2StringCollection | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2stringcollectionViewWebview21096132Getvalueatindex]: /microsoft-edge/webview2/reference/win32/icorewebview2stringcollection?view=webview2-1.0.961.33&preserve-view=true#getvalueatindex "GetValueAtIndex - interface ICoreWebView2StringCollection | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2clientcertificaterequestedeventhandlerViewWebview21096132]: /microsoft-edge/webview2/reference/win32/icorewebview2clientcertificaterequestedeventhandler?view=webview2-1.0.961.33&preserve-view=true "interface ICoreWebView2ClientCertificateRequestedEventHandler | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2clientcertificaterequestedeventargsViewWebview21096132]: /microsoft-edge/webview2/reference/win32/icorewebview2clientcertificaterequestedeventargs?view=webview2-1.0.961.33&preserve-view=true "interface ICoreWebView2ClientCertificateRequestedEventArgs | Microsoft Docs"
+
