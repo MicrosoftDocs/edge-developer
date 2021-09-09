@@ -17,14 +17,15 @@ The following guide gives you an overview of PWA basics by creating a simple web
 > [!TIP]
 > You can use [PWABuilder][PwaBuilder] to create a new PWA, enhance your existing PWA, or package your PWA for app stores.
 
-<!-- ===== major section ================================================== -->
+
+<!-- ====================================================================== -->
 ## Prerequisites
 
 *   Use [Visual Studio Code][VisualstudioCodeMain] to edit your PWA source code.
 *   Use [Node.js][NodejsMain] as your local web server.
 
 
-<!-- ===== major section ================================================== -->
+<!-- ====================================================================== -->
 ## Creating a basic web app
 
 To create an empty web app, follow the steps in [Node Express App Generator][ExpressjsApplicationGenerator], and name your app `MySamplePwa`.
@@ -57,7 +58,7 @@ Now browse to `http://localhost:3000` to view your new web app.
 <!-- ===== major section ================================================== -->
 ## Getting started building a PWA
 
-Now that you have a simple web app, extend it as a PWA by adding the three requirements for PWAs<!--[3 requirements for PWAs][ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]-->: [HTTPS](#step-1---use-https), a [Web App Manifest](#step-2---create-a-web-app-manifest), and a [Service Worker](#step-3---add-a-service-worker).
+Now that you have a simple web app, extend it as a PWA by adding the three requirements for PWAs: [HTTPS](#step-1---use-https), a [Web App Manifest](#step-2---create-a-web-app-manifest), and a [Service Worker](#step-3---add-a-service-worker).
 
 
 <!-- ===== minor section but still h2 for In This Section ================= -->
@@ -267,7 +268,7 @@ self.addEventListener('push', function (event) {
             body: notificationText,
             icon: 'images/icon512.png'
         });
-        // Make sure the toast notification is displayed before exiting the function.
+        // Make sure the toast notification is displayed.
         event.waitUntil(showNotification);
     }
 });
@@ -305,20 +306,20 @@ To test push notifications for your PWA:
 
 1.  Simulate a server-side push notification.  With your PWA opened at `http://localhost:3000` in your browser, select `F12` to open DevTools.  Select **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.
 
-    A push notification should be displayed near the taskbar.
+    The push notification is displayed near the taskbar.
 
     :::image type="complex" source="./media/devtools-push.png" alt-text="Push a notification from DevTools" lightbox="./media/devtools-push.png":::
         Push a notification from DevTools
     :::image-end:::
 
-    If you don't select \(or activate\) a toast notification, the system automatically dismisses it after several seconds and queues it in your Windows Action Center.
+    If you don't select (or _activate_) a toast notification, the system automatically dismisses it after several seconds and queues it in your Windows Action Center.
 
     :::image type="complex" source="./media/windows-action-center.png" alt-text="Notifications in Windows Action Center" lightbox="./media/windows-action-center.png":::
         Notifications in Windows Action Center
     :::image-end:::
 
 
-<!-- ===== major section ================================================== -->
+<!-- ====================================================================== -->
 ## Next steps
 
 The following steps include additional tasks to help you understand building real-world PWAs.
@@ -330,11 +331,13 @@ The following steps include additional tasks to help you understand building rea
 *   [Cross-browser testing][BrowserStackTestEdgeBrowser].
 *   Implement validation and testing practices such as [Webhint][Webhint].
 
+
+<!-- ====================================================================== -->
 ## See also
 
 *   [Progressive Web Apps on MDN web docs][MDNProgressiveWebApps]
 *   [Progressive Web Apps on web.dev][WebDevProgressiveWebApps]
-*   [Hacker News readers as Progressive Web Apps][HackerNewsProgressiveWebApps] - Compares different frameworks and performance patterns for implementing a sample \(Hacker News reader\) PWA.
+*   [Hacker News readers as Progressive Web Apps][HackerNewsProgressiveWebApps] - Compares different frameworks and performance patterns for implementing a sample PWA (Hacker News reader).
 *   [Myth Busting PWAs][Davrous20191018MythBustingPwasNewEdgeEdition]
 *   [A Progressive Roadmap for your Progressive Web App][CloudfourThinksProgressiveRoadmapYourWebApp]
 *   [Offline POSTs with Progressive Web Apps][MediumWebEdgeOfflinePostsProgressiveWebApps]
@@ -345,10 +348,9 @@ The following steps include additional tasks to help you understand building rea
 *   [Designing And Building A Progressive Web Application Without A Framework (Part 2)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart2]
 *   [Designing And Building A Progressive Web Application Without A Framework (Part 3)][Smashingmagazine201907ProgressiveWebApplicationFrameworkPart3]
 
+
+<!-- ====================================================================== -->
 <!-- links -->
-
-<!--[ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]: /archive/microsoft-edge/legacy/developer/progressive-web-apps/index#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->
-
 [VisualStudioNodejsTutorialPublishAzureAppService]: /azure/javascript/tutorial-vscode-azure-app-service-node-03 "Deploy a Node.js app to Azure with Visual Studio Code | Microsoft Docs"
 
 [AzureCreateFreeAccount]: https://azure.microsoft.com/free "Create Azure free account | Microsoft Azure"
@@ -376,7 +378,7 @@ The following steps include additional tasks to help you understand building rea
 
 [MDNDedicatedWorkerGlobalScopePostMessage]: https://developer.mozilla.org/docs/Web/API/
 [MDNNotificationsApi]: https://developer.mozilla.org/docs/Web/API/Notifications_API "Notifications API | MDN"
-[MDNProgressiveWebApps]: https://developer.mozilla.org/Apps/Progressive "Progressive web apps \(PWAs) | MDN"
+[MDNProgressiveWebApps]: https://developer.mozilla.org/Apps/Progressive "Progressive web apps (PWAs) | MDN"
 [MDNPushApi]: https://developer.mozilla.org/docs/Web/API/Push_API "Push API | MDN"
 [MDNPushManager]: https://developer.mozilla.org/docs/Web/API/PushManager "PushManager | MDN"
 [MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "Service Worker API | MDN"
