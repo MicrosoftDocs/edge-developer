@@ -1,5 +1,5 @@
 ---
-description: This guide gives you an overview of PWA basics and tools for building Progressive Web Apps (Chromium) on Windows.
+description: This guide gives you an overview of PWA basics and tools for building Progressive Web Apps on Windows.
 title: Get started with Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -10,19 +10,22 @@ keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, se
 ---
 # Get started with Progressive Web Apps
 
-Progressive Web Apps \(PWAs\) are web apps that are [progressively enhanced][WikiProgressiveEnhancement].  The progressive enhancements include app-like features, such as installation, offline support, and push notifications.  You can also package your PWA for app stores.  Possible app stores include the Microsoft Store, Google Play, Mac App Store, and more.  The Microsoft Store is the commercial app store built into Windows 10.
+Progressive Web Apps (PWAs) are web apps that are [progressively enhanced][WikiProgressiveEnhancement].  The progressive enhancements include app-like features, such as installation, offline support, and push notifications.  You can also package your PWA for app stores.  Possible app stores include the Microsoft Store, Google Play, Mac App Store, and more.  The Microsoft Store is the commercial app store built into Windows 10.
 
 The following guide gives you an overview of PWA basics by creating a simple web app and extending it as a PWA.  The finished project works across modern browsers.
 
 > [!TIP]
 > You can use [PWABuilder][PwaBuilder] to create a new PWA, enhance your existing PWA, or package your PWA for app stores.
 
+<!-- ===== major section ================================================== -->
 ## Prerequisites
 
 *   Use [Visual Studio Code][VisualstudioCodeMain] to edit your PWA source code.
 *   Use [Node.js][NodejsMain] as your local web server.
 
-## Create a basic web app
+
+<!-- ===== major section ================================================== -->
+## Creating a basic web app
 
 To create an empty web app, follow the steps in [Node Express App Generator][ExpressjsApplicationGenerator], and name your app `MySamplePwa`.
 
@@ -50,11 +53,15 @@ Now browse to `http://localhost:3000` to view your new web app.
    Running your new PWA on localhost
 :::image-end:::
 
-## Get started building a PWA
+
+<!-- ===== major section ================================================== -->
+## Getting started building a PWA
 
 Now that you have a simple web app, extend it as a PWA by adding the three requirements for PWAs<!--[3 requirements for PWAs][ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]-->: [HTTPS](#step-1---use-https), a [Web App Manifest](#step-2---create-a-web-app-manifest), and a [Service Worker](#step-3---add-a-service-worker).
 
-### Step 1 - Use HTTPS
+
+<!-- ===== minor section but still h2 for In This Section ================= -->
+## Step 1 - Use HTTPS
 
 Key parts of the PWA platform, such as [Service Workers][MDNServiceWorkerApi], require the use of HTTPS.  When your PWA goes live, you must publish it to an HTTPS URL.
 
@@ -64,7 +71,9 @@ For debugging purposes, Microsoft Edge also permits `http://localhost` to use th
 
 The following guide, use `http://localhost` to build your PWA.
 
-### Step 2 - Create a Web App Manifest
+
+<!-- ===== minor section but still h2 for In This Section ================= -->
+## Step 2 - Create a Web App Manifest
 
 A [Web App Manifest][MDNWebAppManifest] is a JSON file containing metadata about your app, such as name, description, icons, and more.
 
@@ -101,7 +110,9 @@ To add an app manifest to the web app:
     <link rel="manifest" href="/manifest.json">
     ```
 
-### Step 3 - Add a Service Worker
+
+<!-- ===== minor section but still h2 for In This Section ================= -->
+## Step 3 - Add a Service Worker
 
 Service workers are the key technology behind PWAs, enabling scenarios like offline support, advanced caching, and running background tasks previously limited to native apps.
 
@@ -148,10 +159,10 @@ Use the following steps to confirm that your service worker runs.
 1.  View the service worker cache by expanding **Cache Storage** and select **pwabuilder-precache**.  All of the resources cached by the service worker should be displayed.  The resources cached by the service worker include the app icon, app manifest, CSS, and JavaScript files.
 
     :::image type="complex" source="./media/devtools-cache.png" alt-text="Service Worker cache in Microsoft Edge DevTools" lightbox="./media/devtools-cache.png":::
-       Service Worker cache in Microsoft Edge DevTools \(F12\)
+       Service Worker cache in Microsoft Edge DevTools (F12)
     :::image-end:::
 
-1.  Try your PWA as an offline app.  In Microsoft Edge DevTools \(`F12`\), select **Network** then change the **Online** status to **Offline**.
+1.  Try your PWA as an offline app.  In DevTools, select **Network** then change the **Online** status to **Offline**.
 
     :::image type="complex" source="./media/devtools-offline.png" alt-text="Setting app to offline mode in Microsoft Edge DevTools" lightbox="./media/devtools-offline.png":::
        Setting app to offline mode in Microsoft Edge DevTools
@@ -163,7 +174,9 @@ Use the following steps to confirm that your service worker runs.
        PWA running offline
     :::image-end:::
 
-## Add push notifications to your PWA
+
+<!-- ===== major section ================================================== -->
+## Adding push notifications to your PWA
 
 To create PWAs that support push notifications:
 
@@ -174,11 +187,15 @@ Just like with Service Workers, the push notification APIs are standards-based A
 
 The following steps have been adapted from the Push Rich Demo in [Service Worker Cookbook][ServiceWorkerCookbookPushRichDemo] provided by Mozilla, which has a number of other useful Web Push and service worker recipes.
 
-### Step 1 - Generate VAPID keys
+
+<!-- ===== minor section but still h2 for In This Section ================= -->
+## Step 1 - Generate VAPID keys
 
 Push notifications require VAPID \(Voluntary Application Server Identification\) keys in order to send push messages to the PWA client.  There are several VAPID key generators available online \(for example, [vapidkeys.com][VapidkeysMain]\).  After generation, you should get a JSON object containing a public and private key.  Save the keys for later steps in the following tutorial.  For information about VAPID and WebPush, navigate to [Sending VAPID identified WebPush Notifications using the Mozilla Push Service][MozillaServicesSendingVapidWebPushNotificationsPush].
 
-### Step 2 - Subscribe to push notifications
+
+<!-- ===== minor section but still h2 for In This Section ================= -->
+## Step 2 - Subscribe to push notifications
 
 Service workers handle push events and toast notification interactions in your PWA.  To subscribe the PWA to server push notifications, make sure the following conditions are met:
 
@@ -228,7 +245,9 @@ function urlBase64ToUint8Array(base64String) {
 
 For more information, navigate to [PushManager][MDNPushManager] and [Web-Push][NPMWebPushUsage].
 
-### Step 3 - Listen for push notifications
+
+<!-- ===== minor section but still h2 for In This Section ================= -->
+## Step 3 - Listen for push notifications
 
 After a subscription is created in your PWA, add handlers to the service worker to respond to push events.  Push event are sent from the server to display toast notifications.  Toast notifications display data for a received message.  To complete any of the following tasks, you must add a `click` handler:
 
@@ -273,7 +292,8 @@ self.addEventListener('notificationclick', function (event) {
 });
 ```
 
-### Step 4 - Try it out
+<!-- ===== minor section but still h2 for In This Section ================= -->
+## Step 4 - Try it out
 
 To test push notifications for your PWA:
 
@@ -285,23 +305,20 @@ To test push notifications for your PWA:
 
 1.  Simulate a server-side push notification.  With your PWA opened at `http://localhost:3000` in your browser, select `F12` to open DevTools.  Select **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.
 
-    :::row:::
-       :::column span="":::
-          A push notification should display near the taskbar.
+    A push notification should be displayed near the taskbar.
 
-          :::image type="complex" source="./media/devtools-push.png" alt-text="Push a notification from DevTools" lightbox="./media/devtools-push.png":::
-             Push a notification from DevTools
-          :::image-end:::
-       :::column-end:::
-       :::column span="":::
-          If you don't select \(or activate\) a toast notification, the system automatically dismisses it after several seconds and queues it in your Windows Action Center.
+    :::image type="complex" source="./media/devtools-push.png" alt-text="Push a notification from DevTools" lightbox="./media/devtools-push.png":::
+        Push a notification from DevTools
+    :::image-end:::
 
-          :::image type="complex" source="./media/windows-action-center.png" alt-text="Notifications in Windows Action Center" lightbox="./media/windows-action-center.png":::
-             Notifications in Windows Action Center
-          :::image-end:::
-       :::column-end:::
-    :::row-end:::
+    If you don't select \(or activate\) a toast notification, the system automatically dismisses it after several seconds and queues it in your Windows Action Center.
 
+    :::image type="complex" source="./media/windows-action-center.png" alt-text="Notifications in Windows Action Center" lightbox="./media/windows-action-center.png":::
+        Notifications in Windows Action Center
+    :::image-end:::
+
+
+<!-- ===== major section ================================================== -->
 ## Next steps
 
 The following steps include additional tasks to help you understand building real-world PWAs.
