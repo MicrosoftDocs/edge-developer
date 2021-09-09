@@ -4,7 +4,7 @@
   href: developer/index.yml
 #  expanded: true
   items:
-# Card: DevTools ==============================================================
+# equivalent card: DevTools ===================================================
     - name: DevTools
       items:
         - name: DevTools overview
@@ -297,7 +297,7 @@
               href: devtools-protocol-chromium/index.md
             - name: Keyboard shortcuts
               href: devtools-guide-chromium/shortcuts/index.md
-# Card: Extensions ============================================================
+# equivalent card: Extensions =================================================
     - name: Extensions
       items:
         - name: Overview of Microsoft Edge extensions
@@ -368,7 +368,7 @@
               href: extensions-chromium/enterprise/hosting-and-updating.md
             - name: Auto-update
               href: extensions-chromium/enterprise/auto-update.md
-# Card: Progressive Web Apps ==================================================
+# equivalent card: Progressive Web Apps =======================================
     - name: Progressive Web Apps
       items:
         - name: Progressive Web Apps overview
@@ -387,7 +387,7 @@
           href: progressive-web-apps-chromium/experimental-features/index.md
         - name: Publish a PWA to the Microsoft Store
           href: progressive-web-apps-chromium/microsoft-store.md
-# Card: WebView2 ==============================================================
+# equivalent card: WebView2 ===================================================
     - name: WebView2
       items:
         - name: WebView2 overview
@@ -465,22 +465,24 @@
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                 - name: COM Interop
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
-# Card: Test & Automation =====================================================
-    - name: DevTools Protocol overview
-      href: test-and-automation/devtools-protocol-overview-aux-node.md
-    - name: WebDriver
+# equivalent card: Test & Automation ==========================================
+    - name: Test and automation
       items:
-        - name: WebDriver overview
-          href: webdriver-chromium/index.md
-        - name: Capabilities and EdgeOptions
-          href: webdriver-chromium/capabilities-edge-options.md
-        - name: Verifying downloads of Selenium Tools for Microsoft Edge
-          href: webdriver-chromium/verify-selenium-tools.md
-    - name: Puppeteer overview
-      href: puppeteer/index.md
-    - name: webhint
-      href: test-and-automation/webhint-aux-node.md
-# Card: Web platform ==========================================================
+        - name: DevTools Protocol overview
+          href: test-and-automation/devtools-protocol-overview-aux-node.md
+        - name: WebDriver
+          items:
+            - name: WebDriver overview
+              href: webdriver-chromium/index.md
+            - name: Capabilities and EdgeOptions
+              href: webdriver-chromium/capabilities-edge-options.md
+            - name: Verifying downloads of Selenium Tools for Microsoft Edge
+              href: webdriver-chromium/verify-selenium-tools.md
+        - name: Puppeteer overview
+          href: puppeteer/index.md
+        - name: webhint
+          href: test-and-automation/webhint-aux-node.md
+# equivalent card: Web platform ===============================================
     - name: Web platform
       items:
         - name: Site compatibility-impacting changes coming to Microsoft Edge
@@ -493,7 +495,7 @@
           href: web-platform/user-agent-guidance.md
         - name: Customize the password reveal button
           href: web-platform/password-reveal.md
-# Card: Microsoft Edge IDE integration ========================================
+# equivalent card: Microsoft Edge IDE integration =============================
     - name: Visual Studio overview
       href: visual-studio/index.md
     - name: Visual Studio Code
@@ -506,7 +508,7 @@
           href: visual-studio-code/microsoft-edge-devtools-extension.md
         - name: webhint extension
           href: visual-studio-code/webhint.md
-# Card: Accessibility =========================================================
+# equivalent card: Accessibility ==============================================
     - name: Accessibility
       items:
         - name: Accessibility overview
