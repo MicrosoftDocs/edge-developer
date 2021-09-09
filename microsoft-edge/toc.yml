@@ -496,18 +496,20 @@
         - name: Customize the password reveal button
           href: web-platform/password-reveal.md
 # equivalent card: Microsoft Edge IDE integration =============================
-    - name: Visual Studio overview
-      href: visual-studio/index.md
-    - name: Visual Studio Code
+    - name: Microsoft Edge IDE integration
       items:
-        - name: Visual Studio Code overview
-          href: visual-studio-code/index.md
-        - name: Debugger for Edge
-          href: visual-studio-code/debugger-for-edge.md
-        - name: Microsoft Edge DevTools extension
-          href: visual-studio-code/microsoft-edge-devtools-extension.md
-        - name: webhint extension
-          href: visual-studio-code/webhint.md
+        - name: Visual Studio overview
+          href: visual-studio/index.md
+        - name: Visual Studio Code
+          items:
+            - name: Visual Studio Code overview
+              href: visual-studio-code/index.md
+            - name: Debugger for Edge
+              href: visual-studio-code/debugger-for-edge.md
+            - name: Microsoft Edge DevTools extension
+              href: visual-studio-code/microsoft-edge-devtools-extension.md
+            - name: webhint extension
+              href: visual-studio-code/webhint.md
 # equivalent card: Accessibility ==============================================
     - name: Accessibility
       items:
