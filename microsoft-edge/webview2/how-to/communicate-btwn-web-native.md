@@ -309,7 +309,7 @@ Congratulations.  You've successfully embedded web content into native applicati
 
 [UseJavaScriptInWebView2Apps]: /javascript "Use JavaScript in WebView2 apps - Microsoft Edge Development | Microsoft Docs"
 
-[WebView2inWin32apps]: ../get-started/win32 "Get Started with WebView2 in Win32 apps | Microsoft Edge Development"
+[WebView2inWin32apps]: ../get-started/win32.md "Get Started with WebView2 in Win32 apps | Microsoft Edge Development"
 
 [WebView2SamplesWin32GettingStarted]: https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted "WebView2 Samples - Win 32 Getting Started - Microsoft Edge | GitHub Repo"
 
