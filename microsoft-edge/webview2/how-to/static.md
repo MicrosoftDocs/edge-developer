@@ -38,15 +38,6 @@ For apps that don't want to ship a `WebView2Loader.dll`, complete the following 
        Inserted code snippet  
     :::image-end:::  
     
-1.  Edit the additional dependencies of the build configuration for your app.  To begin, find all of the `<AdditionalDependencies>` tags. For each, add `version.lib` as an additional dependency to every different build configuration in the `.vcxproj` file.  
-    
-    :::image type="complex" source="./media/version-lib.png" alt-text="Adding version.lib to ItemDefinitionGroups" lightbox="./media/version-lib.png":::
-       Adding `version.lib` to `ItemDefinitionGroups`  
-    :::image-end:::  
-    
-    > [!NOTE]
-    > The WebView2 team aims to automate adding the additional dependency in future releases.  
-    
 1.  Compile and run your app.  
     
 ## Getting in touch with the WebView2 team  
