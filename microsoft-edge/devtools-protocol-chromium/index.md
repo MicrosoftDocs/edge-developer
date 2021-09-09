@@ -1,13 +1,13 @@
 ---
 description: Update to the Microsoft Edge DevTools Protocol
-title: Microsoft Edge DevTools Protocol Update
+title: Microsoft Edge DevTools Protocol overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/06/2021
 ms.topic: reference
 ms.prod: microsoft-edge
 ---
-# Microsoft Edge (Chromium) DevTools Protocol overview  
+# Microsoft Edge DevTools Protocol overview  
 
 With the shift in the underlying web platform of Microsoft Edge to Chromium, the [Microsoft Edge (EdgeHTML) DevTools Protocol](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) will not be receiving any further updates.  The Microsoft Edge \(Chromium\) DevTools Protocol will match the APIs of the Chrome DevTools Protocol going forward.  
 
@@ -20,7 +20,8 @@ You can find documentation on those domains and methods by referring to the [Chr
 
 Here's how to attach a custom tooling client to the DevTools Server in Microsoft Edge \(Chromium\).  
 
-1.  Ensure all instances of Microsoft Edge \(Chromium\) are closed.  
+1.  Close all instances of Microsoft Edge \(Chromium\).
+
 1.  Launch Microsoft Edge \(Chromium\) with the remote debugging port:. 
     
     ```shell
@@ -41,7 +42,8 @@ Here's how to attach a custom tooling client to the DevTools Server in Microsoft
     
 1.  Finally, connect to the `webSocketDebuggerUrl` of the desired target and issue commands/subscribe to event messages through the DevTools web socket server.  
 
-## DevTools Protocol HTTP Endpoints  
+
+## DevTools Protocol HTTP Endpoints
 
 The Microsoft Edge \(Chromium\) DevTools Protocol supports the following HTTP endpoints.  
 

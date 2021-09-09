@@ -466,6 +466,8 @@
                 - name: COM Interop
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
 # Card: Test & Automation =====================================================
+    - name: DevTools Protocol overview
+      href: test-and-automation/devtools-protocol-overview-aux-node.md
     - name: WebDriver
       items:
         - name: WebDriver overview
@@ -476,6 +478,8 @@
           href: webdriver-chromium/verify-selenium-tools.md
     - name: Puppeteer overview
       href: puppeteer/index.md
+    - name: webhint
+      href: test-and-automation/webhint-aux-node.md
 # Card: Web platform ==========================================================
     - name: Web platform
       items:
