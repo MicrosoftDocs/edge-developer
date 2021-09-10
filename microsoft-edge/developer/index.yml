@@ -94,7 +94,7 @@ landingContent:
           - text: Web App Manifests
             url: /microsoft-edge/progressive-web-apps-chromium/webappmanifests
   # Card
-  - title: WebView2
+  - title: WebView2 control
     linkLists:
       - linkListType: overview
         links:
@@ -130,7 +130,7 @@ landingContent:
           - text: webhint extension for Visual Studio Code
             url: /microsoft-edge/visual-studio-code/webhint
   # Card
-  - title: Web Platform
+  - title: Web platform
     linkLists:
       - linkListType: how-to-guide
         links:

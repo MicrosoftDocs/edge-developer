@@ -5,7 +5,7 @@
 #  expanded: true
   items:
 # equivalent card: DevTools ===================================================
-    - name: DevTools
+    - name: Microsoft Edge DevTools
       items:
         - name: DevTools overview
           href: devtools-guide-chromium/index.md
@@ -298,7 +298,7 @@
             - name: Keyboard shortcuts
               href: devtools-guide-chromium/shortcuts/index.md
 # equivalent card: Extensions =================================================
-    - name: Extensions
+    - name: Microsoft Edge Extensions
       items:
         - name: Overview of Microsoft Edge extensions
           href: extensions-chromium/index.md
@@ -388,7 +388,7 @@
         - name: Publish a PWA to the Microsoft Store
           href: progressive-web-apps-chromium/microsoft-store.md
 # equivalent card: WebView2 ===================================================
-    - name: WebView2
+    - name: WebView2 control
       items:
         - name: WebView2 overview
           href: webview2/index.md
@@ -465,7 +465,7 @@
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                 - name: COM Interop
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
-# equivalent card: Test & Automation ==========================================
+# equivalent card: Test and automation ==========================================
     - name: Test and automation
       items:
         - name: DevTools Protocol

@@ -200,7 +200,7 @@ conceptualContent:
               itemType: concept
               text: Web App Manifests
         # Card
-        - title: WebView2
+        - title: WebView2 control
           links:
             - url: /microsoft-edge/webview2/index
               itemType: overview
@@ -239,7 +239,7 @@ conceptualContent:
               itemType: how-to-guide
               text: webhint extension for Visual Studio Code
         # Card
-        - title: Web Platform
+        - title: Web platform
           links:
             - url: /microsoft-edge/web-platform/user-agent-guidance
               itemType: how-to-guide
