@@ -24,7 +24,7 @@ This page provides links to Progressive Web App \(PWA\) Builder demos and compon
 
 [Picture-in-Picture API][pwaPictureInPictureAPI] - Creates a floating, always-on-top element to display video sources.
 
-[Screen Capture API][pwaScreenCaptureAPI] - Allows the user to grant you a media stream of their screen.
+[Screen Capture API][pwaScreenCaptureAPI] - Allows users to share their screen with someone by streaming.
 
 [Share Target API][pwaShareTargetAPI] - Lets you register your PWA as a share target to receive shared content.
 
@@ -50,7 +50,7 @@ This page provides links to Progressive Web App \(PWA\) Builder demos and compon
 
 [People Picker Graph Component][pwaPeoplePickerGraphComponent] - Enables the user to view, add, or remove **People** objects from a dynamic drop-down list as the user types.
 
-[Sign in with Microsoft, Google, or Facebook][pwaSignIn] - Lets your users sign in through their Microsoft, Google, or Facebook account by using `pwa-auth`. Your app receives the user's email address, name, and profile picture.
+[Sign in with Microsoft, Google, or Facebook][pwaSignIn] - Lets your users sign-in through their Microsoft, Google, or Facebook account by using `pwa-auth`. Your app receives the user's email address, name, and profile picture.
 
 [Tasks Graph Component][pwaTasksGraphComponent] - Returns the tasks for the signed-in user from the Microsoft Graph API.
 
