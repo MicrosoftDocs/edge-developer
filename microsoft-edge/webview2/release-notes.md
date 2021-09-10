@@ -24,7 +24,9 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
-To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to [Switch to a preview channel to test upcoming APIs and features](how-to/set-preview-channel.md).
+To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to [Switch to a preview channel to test upcoming APIs and features][SwitchToPreviewChannel].
+
+
 ## 1.0.1010-prerelease
 
 Release Date: September 13, 2021  
@@ -42,7 +44,7 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 *   Removed silent failures by using `EnsureCoreWebView2Async`, which throws an `ArgumentException` when called multiple times with incompatible parameters.
 *   Changed default handling of the [UserDataFolder][Webview2ReferenceWin32Icorewebview2experimentalenvironment5ViewWebview210999PrereleaseGetUserdatafolder] property in the environment object. 
     > [!CAUTION]
-    > **Breaking Change**:  The default handling for the UDF if the developer doesn't specify where to put it will be changing. For more details, navigate to [Announcement: User directory folder default handling updates][WebView2UDFAnnouncement].
+    > **Breaking Change**:  The default handling for the UDF if the developer doesn't specify where to put it will be changing. For details, navigate to [Announcement: User directory folder default handling updates][WebView2UDFAnnouncement].
 *   Added [navigation & script APIs][Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210999Prerelease] for iframes. 
 *   Added `MemoryUsageTargetLevel` which allows developers to specify memory consumption levels, such as low, or normal. 
 *   Added `ExclusiveUserDataFolderAccess` to environment options.
@@ -56,10 +58,10 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 *   Replaced WebView2 icon with a generic icon in DevTools windows.
 *   Turn on the Tab screen sharing option when `MediaDevices.getDisplayMedia()` is used. \([\#1566][GithubMicrosoftedgeWebviewfeedbackIssue1566]\)
 *   Fixed a bug in the Client Certificate API, when the correct certificate was not selected. This is a Runtime change. \([\#1666][GithubMicrosoftedgeWebviewfeedbackIssue1666]\)
-*   Fixed bug where `window.chrome.webview` was unavailable in new windows in the same parent domain. This change is runtime-specific. \([\#1144][GithubMicrosoftedgeWebviewfeedbackIssue1144]\)
-*   Fixed a bug where dropdown menus or lists displayed behind the window with the focus. \([\#411][GithubMicrosoftedgeWebviewfeedbackIssue411]\)
+*   Fixed bug where `window.chrome.webview` was unavailable in new windows in the same parent domain. This change is Runtime-specific. \([\#1144][GithubMicrosoftedgeWebviewfeedbackIssue1144]\)
+*   Fixed a bug where dropdown menus or lists were displayed behind the window that has focus. \([\#411][GithubMicrosoftedgeWebviewfeedbackIssue411]\)
 *   Fixed focus issues when using `put_IsVisible(false)`. \([\#238][GithubMicrosoftedgeWebviewfeedbackIssue238]\)
-*   Fixed bug to apply `SetVirtualHostNameToFolderMapping` to popup windows.
+*   Fixed a bug to apply `SetVirtualHostNameToFolderMapping` to popup windows.
 *   Fixed bugs where an `IDispatch` objects were returned as `IUnknown`.
 
 #### Promotions
@@ -82,10 +84,10 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 #### Bug Fixes  
 *   Fixed a bug that caused `ERR_SSL_CLIENT_AUTH_CERT_NEEDED` errors. This is a Runtime change.
 *   Fixed a bug that special browser keys like **Refresh**, **Home**, **Back**, and so on can't be turned off using `AreBrowserAcceleratorKeysEnabled`. This change is Runtime-specific.
-*   Fixed a bug that doesn't render the transparent background color.
+*   Fixed a bug where the transparent background color isn't rendered.
 *   Fixed a bug that caused a white flicker when loading WebView2.
 *   Fixed a bug in WebView2 .NET controls where WebView2 windows were blank when created in the background. \([\#1077][GithubMicrosoftedgeWebviewfeedbackIssue1077]\)
-*   Fixed a bug where settings were not updated when the user navigated to or a new window displayed `about:blank` pages. This is a runtime change.
+*   Fixed a bug where settings were not updated when the user navigated to or a new window displayed `about:blank` pages. This is a Runtime change.
 
 #### Promotions
 
@@ -808,7 +810,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 78.0.270.0 or h
 
 *   Updated `CreateWebView2EnvironmentWithDetails` function to remove `releaseChannelPreference`.  For more information about the `CreateWebView2EnvironmentWithDetails` function, navigate to [CreateWebView2EnvironmentWithDetails][Webview2ReferenceWin32Webview2IdlViewWebview208355Createwebview2environmentwithdetails].  The registry and environment variable override is still supported.  The default channel preference is used unless overridden.  
     During the channel search, the WebView team skips any previous channel version that isn't compatible with the WebView2 SDK.  
-    The WebView team selects the more stable channel to ensure the most consistent behaviors for the end user.  When you test with the latest Canary build, you should create a script to set the `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` environment variable to `1` before launching the app.  For more information, navigate to [Switch to a preview channel to test upcoming APIs and features](how-to/set-preview-channel.md).
+    The WebView team selects the more stable channel to ensure the most consistent behaviors for the end user.  When you test with the latest Canary build, you should create a script to set the `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` environment variable to `1` before launching the app.  For more information, navigate to [Switch to a preview channel to test upcoming APIs and features][SwitchToPreviewChannel].
 
 *   Updated the `CreateWebView2EnvironmentWithDetails` function with logic for selecting `userDataFolder` when not specified.  For more information about the `CreateWebView2EnvironmentWithDetails` function, navigate to [CreateWebView2EnvironmentWithDetails][Webview2ReferenceWin32Webview2IdlViewWebview208355Createwebview2environmentwithdetails].  If you previously used the default `userDataFolder` location, when you switch to the new SDK the default `userDataFolder` is reset \(set to a new location in the host code directory\) and your state is also reset.  If the host process doesn't have permission to write to the specified directory, the `CreateWebView2EnvironmentWithDetails` function may fail.  You may copy the data from the old `user data folder` to the new directory.  
     
@@ -853,6 +855,7 @@ Initial developer preview release.
 
 
 <!-- links -->  
+[SwitchToPreviewChannel]: how-to/set-preview-channel.md "Switch to a preview channel to test upcoming APIs and features | Microsoft Edge Developer docs"
 [Webview2ConceptsDistribution]: ./concepts/distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
 [Webview2ConceptsDistributionUnderstandRuntimeInstaller]: ./concepts/distribution.md#understanding-the-webview2-runtime "Understanding the WebView2 runtime - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
 [Webview2ConceptsEnterpriseGroupPoliciesForWebview2]: ./concepts/enterprise.md#group-policies-for-webview2 "Group policies for WebView2 - Managing WebView2 applications | Microsoft Docs"  
@@ -1123,7 +1126,7 @@ Initial developer preview release.
 [MicrosoftDevblogDotnetAnnouncingGeneralAvailabilityForMicrosoftEdgeWebview2ForNetFixedDistributionMethod]: https://devblogs.microsoft.com/dotnet/announcing-general-availability-for-microsoft-edge-webview2-for-net-and-fixed-distribution-method "Announcing General Availability for Microsoft Edge WebView2 for .NET and Fixed Distribution Method | .NET Blog"  
 
 [MicrosoftDeveloperMicrosoftEdgeWebView2]: https://developer.microsoft.com/microsoft-edge/webview2/ "Microsoft Edge WebView2 | Microsoft Edge Developer"  
-
+<!-- NuGet links -->
 [NuGetGallery]: https://www.nuget.org/packages/Microsoft.Web.WebView2 "NuGet Gallery | Microsoft.Web.WebView2"  
 [NuGetGallery0.8.149]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.149 "NuGet Gallery | Microsoft.Web.WebView2 v0.8.149"  
 [NuGetGallery0.8.190]: https://www.nuget.org/packages/Microsoft.Web.WebView2/0.8.190 "NuGet Gallery | Microsoft.Web.WebView2 v0.8.190"  
@@ -1147,15 +1150,15 @@ Initial developer preview release.
 [NuGetGallery1.0.774.44]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.774.44 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.774.44"  
 [NuGetGallery1.0.790-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.790-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.790 prerelease"  
 [NuGetGallery1.0.818.41]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.818.41 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.818.41"  
-[NuGetGallery1.0.864.35]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.864.35 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.864.35"  
-[NuGetGallery1.0.902.49]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.902.49 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.902.49"  
-[NuGetGallery1.0.961.33]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.961.33 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.961.33"  
-
 [NuGetGallery1.0.824-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.824-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.824 prerelease"  
+[NuGetGallery1.0.864.35]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.864.35 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.864.35"  
 [NuGetGallery1.0.865-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.865-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.865 prerelease"  
 [NuGetGallery1.0.902-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.902-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.902 prerelease"  
-[NuGetGallery1.0.955-prerelease]:https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.955-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.955 prerelease"  
-
+[NuGetGallery1.0.902.49]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.902.49 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.902.49"  
+[NuGetGallery1.0.955-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.955-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.955 prerelease"  
+[NuGetGallery1.0.961.33]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.961.33 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.961.33"  
+[NuGetGallery1.0.1010-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1010-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.1010-prerelease"
+<!-- end of NuGet links -->
 [WindowsBlogsMsedgedevEdgeWebview2GeneralAvailability]: https://blogs.windows.com/msedgedev/edge-webview2-general-availability "Announcing Microsoft Edge WebView2 General Availability | Microsoft Edge Blog"  
 [Webview2ReferenceWin32Icorewebview2experimentalsettings5ViewWebview210902PrereleaseGetIsswipenavigationenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings5?view=webview2-1.0.902-prerelease&preserve-view=true#get_isswipenavigationenabled "get_IsSwipeNavigationEnabled - interface ICoreWebView2ExperimentalSettings5 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2experimentalenvironment4ViewWebview210902PrereleaseAddBrowserprocessexited]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment4?view=webview2-1.0.902-prerelease&preserve-view=true#add_browserprocessexited "add_BrowserProcessExited - interface ICoreWebView2ExperimentalEnvironment4 | Microsoft Docs"
@@ -1184,7 +1187,6 @@ Initial developer preview release.
 [Webview2ReferenceWin32Icorewebview2settings4ViewWebview21090249GetIsgeneralautofillenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings4?view=webview2-1.0.902.49&preserve-view=true#get_isgeneralautofillenabled "get_IsGeneralAutofillEnabled - interface ICoreWebView2Settings4 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2settings5ViewWebview21090249GetIspinchzoomenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2settings5?view=webview2-1.0.902.49&preserve-view=true#get_ispinchzoomenabled "get_IsPinchZoomEnabled - interface ICoreWebView2Settings5 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2experimentalsettings6ViewWebview210955PrereleaseGetHiddenpdftoolbaritems]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings6?view=webview2-1.0.955-prerelease&preserve-view=true#get_hiddenpdftoolbaritems "get_HiddenPdfToolbarItems - interface ICoreWebView2ExperimentalSettings6 | Microsoft Docs"
-
 
 [Webview2ReferenceWin32Icorewebview2experimentalenvironment5ViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment5?view=webview2-1.0.999-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalEnvironment5 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2experimentalenvironment5ViewWebview210999PrereleaseGetUserdatafolder]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment5?view=webview2-1.0.999-prerelease&preserve-view=true#get_userdatafolder "get_UserDataFolder - interface ICoreWebView2ExperimentalEnvironment5 | Microsoft Docs"
@@ -1215,7 +1217,6 @@ Initial developer preview release.
 [Webview2ReferenceWin32Icorewebview2environment5ViewWebview210999PrereleaseAddBrowserprocessexited]: /microsoft-edge/webview2/reference/win32/icorewebview2environment5?view=webview2-1.0.999-prerelease&preserve-view=true#add_browserprocessexited "add_BrowserProcessExited - interface ICoreWebView2Environment5 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2environment5ViewWebview210999PrereleaseRemoveBrowserprocessexited]: /microsoft-edge/webview2/reference/win32/icorewebview2environment5?view=webview2-1.0.999-prerelease&preserve-view=true#remove_browserprocessexited "remove_BrowserProcessExited - interface ICoreWebView2Environment5 | Microsoft Docs"
 
-
 [Webview2ReferenceWin32Icorewebview25ViewWebview21096132]: /microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.961.33&preserve-view=true "interface ICoreWebView2_5 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview25ViewWebview21096132AddClientcertificaterequested]: /microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.961.33&preserve-view=true#add_clientcertificaterequested "add_ClientCertificateRequested - interface ICoreWebView2_5 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview25ViewWebview21096132RemoveClientcertificaterequested]: /microsoft-edge/webview2/reference/win32/icorewebview2_5?view=webview2-1.0.961.33&preserve-view=true#remove_clientcertificaterequested "remove_ClientCertificateRequested - interface ICoreWebView2_5 | Microsoft Docs"
@@ -1237,5 +1238,3 @@ Initial developer preview release.
 [Webview2ReferenceWin32Icorewebview2stringcollectionViewWebview21096132Getvalueatindex]: /microsoft-edge/webview2/reference/win32/icorewebview2stringcollection?view=webview2-1.0.961.33&preserve-view=true#getvalueatindex "GetValueAtIndex - interface ICoreWebView2StringCollection | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2clientcertificaterequestedeventhandlerViewWebview21096132]: /microsoft-edge/webview2/reference/win32/icorewebview2clientcertificaterequestedeventhandler?view=webview2-1.0.961.33&preserve-view=true "interface ICoreWebView2ClientCertificateRequestedEventHandler | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2clientcertificaterequestedeventargsViewWebview21096132]: /microsoft-edge/webview2/reference/win32/icorewebview2clientcertificaterequestedeventargs?view=webview2-1.0.961.33&preserve-view=true "interface ICoreWebView2ClientCertificateRequestedEventArgs | Microsoft Docs"
-
-
