@@ -46,7 +46,7 @@ npm start
 
 Now browse to `http://localhost:3000` to view your new web app.  
 
-:::image type="complex" source="./media/visual-studio-nodejs-express-index.png" alt-text="Running your new PWA on localhost" lightbox="./media/visual-studio-nodejs-express-index.png":::
+:::image type="complex" source="../media/visual-studio-nodejs-express-index.png" alt-text="Running your new PWA on localhost" lightbox="../media/visual-studio-nodejs-express-index.png":::
    Running your new PWA on localhost  
 :::image-end:::  
 
@@ -94,7 +94,7 @@ To add an app manifest to the web app:
     ```  
     
 1.  Save the file as `/MySamplePwa/public/manifest.json`.  
-1.  Add a 512x512 app icon image named `icon512.png` to `/MySamplePwa/public/images`.  You may use the [sample image](./media/progressive-web-app.png) for testing purposes.  
+1.  Add a 512x512 app icon image named `icon512.png` to `/MySamplePwa/public/images`.  You may use the [sample image](../media/progressive-web-app.png) for testing purposes.  
 1.  In Visual Studio Code, open `/public/index.html`, and add the following code snippet inside the `<head>` tag.  
     
     ```html
@@ -141,25 +141,25 @@ Use the following steps to confirm that your service worker runs.
     
 1.  In Microsoft Edge, select `F12` to open the Microsoft Edge DevTools.  Select **Application**, then **Service Workers** to view the service workers.  If the service worker is not displayed, refresh the page.  
     
-    :::image type="complex" source="./media/devtools-sw-overview.png" alt-text="Microsoft Edge DevTools Service Worker overview" lightbox="./media/devtools-sw-overview.png":::
+    :::image type="complex" source="../media/devtools-sw-overview.png" alt-text="Microsoft Edge DevTools Service Worker overview" lightbox="../media/devtools-sw-overview.png":::
        Microsoft Edge DevTools Service Worker overview  
     :::image-end:::  
     
 1.  View the service worker cache by expanding **Cache Storage** and select **pwabuilder-precache**.  All of the resources cached by the service worker should be displayed.  The resources cached by the service worker include the app icon, app manifest, CSS, and JavaScript files.  
     
-    :::image type="complex" source="./media/devtools-cache.png" alt-text="Service Worker cache in Microsoft Edge DevTools" lightbox="./media/devtools-cache.png":::
+    :::image type="complex" source="../media/devtools-cache.png" alt-text="Service Worker cache in Microsoft Edge DevTools" lightbox="../media/devtools-cache.png":::
        Service Worker cache in Microsoft Edge DevTools \(F12\)  
     :::image-end:::  
     
 1.  Try your PWA as an offline app.  In Microsoft Edge DevTools \(`F12`\), choose **Network** then change the **Online** status to **Offline**.  
     
-    :::image type="complex" source="./media/devtools-offline.png" alt-text="Setting app to offline mode in Microsoft Edge DevTools" lightbox="./media/devtools-offline.png":::
+    :::image type="complex" source="../media/devtools-offline.png" alt-text="Setting app to offline mode in Microsoft Edge DevTools" lightbox="../media/devtools-offline.png":::
        Setting app to offline mode in Microsoft Edge DevTools  
     :::image-end:::  
     
 1.  Refresh your app and it should display the offline mechanism for serving the resources of your app from the cache.  
     
-    :::image type="complex" source="./media/visual-studio-nodejs-express-index.png" alt-text="PWA running offline" lightbox="./media/visual-studio-nodejs-express-index.png":::
+    :::image type="complex" source="../media/visual-studio-nodejs-express-index.png" alt-text="PWA running offline" lightbox="../media/visual-studio-nodejs-express-index.png":::
        PWA running offline  
     :::image-end:::  
     
@@ -278,7 +278,7 @@ To test push notifications for your PWA, complete the following steps.
 
 1.  Navigate to your PWA at `http://localhost:3000`.  When your service worker activates and attempts to subscribe your PWA to push notifications, Microsoft Edge prompts you to allow your PWA to show notifications.  Select **Allow**.  
     
-    :::image type="complex" source="./media/notification-permission.png" alt-text="Permission dialog for enabling notifications" lightbox="./media/notification-permission.png":::
+    :::image type="complex" source="../media/notification-permission.png" alt-text="Permission dialog for enabling notifications" lightbox="../media/notification-permission.png":::
        Permission dialog for enabling notifications  
     :::image-end:::  
     
@@ -288,14 +288,14 @@ To test push notifications for your PWA, complete the following steps.
        :::column span="":::
           A push notification should display near the taskbar.  
           
-          :::image type="complex" source="./media/devtools-push.png" alt-text="Push a notification from DevTools" lightbox="./media/devtools-push.png":::
+          :::image type="complex" source="../media/devtools-push.png" alt-text="Push a notification from DevTools" lightbox="../media/devtools-push.png":::
              Push a notification from DevTools  
           :::image-end:::  
        :::column-end:::
        :::column span="":::
           If you do not select \(or activate\) a toast notification, the system automatically dismisses it after several seconds and queues it in your Windows Action Center.  
           
-          :::image type="complex" source="./media/windows-action-center.png" alt-text="Notifications in Windows Action Center" lightbox="./media/windows-action-center.png":::
+          :::image type="complex" source="../media/windows-action-center.png" alt-text="Notifications in Windows Action Center" lightbox="../media/windows-action-center.png":::
              Notifications in Windows Action Center  
           :::image-end:::  
        :::column-end:::

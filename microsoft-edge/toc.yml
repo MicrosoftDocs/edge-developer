@@ -387,38 +387,42 @@
       href: privacy-whitepaper/index.md
     - name: Progressive Web Apps
       items:
-        - name: Progressive Web Apps overview
+        - name: Overview of PWA
           href: progressive-web-apps-chromium/index.md
-        - name: Desktop Progressive Web Apps
-          href: progressive-web-apps-chromium/desktop-pwas.md
+        - name: Getting started
+          items:
+            - name: The anatomy of a PWA
+              href: progressive-web-apps-chromium/getting-started/pwa-anatomy.md
+            - name: PWAs on desktop
+              href: progressive-web-apps-chromium/getting-started/pwa-desktop.md
+            - name: Publishing PWAs to the Microsoft Store
+              href: progressive-web-apps-chromium/getting-started/microsoft-store.md
         - name: Developer guide
           items:
             - name: Get started with PWAs
-              href: progressive-web-apps-chromium/get-started.md
-            - name: Offline scenarios
-              href: progressive-web-apps-chromium/offline.md
-            - name: Service Workers
-              href: progressive-web-apps-chromium/serviceworker.md
+              href: progressive-web-apps-chromium/developer-guide/index.md
             - name: Web app manifests
-              href: progressive-web-apps-chromium/webappmanifests.md
+              href: progressive-web-apps-chromium/developer-guide/webappmanifests.md
+            - name: Service Workers
+              href: progressive-web-apps-chromium/developer-guide/serviceworker.md
+            - name: Offline scenarios
+              href: progressive-web-apps-chromium/developer-guide/offline.md
             - name: Advanced features
               items:
-                - name: Advanced Progressive Web Apps features overview
+                - name: Advanced PWA features overview
                   href: progressive-web-apps-chromium/developer-guide/advanced-features.md
+                - name: Origin trials
+                  href: progressive-web-apps-chromium/developer-guide/origin-trials.md
                 - name: Handle files
                   href: progressive-web-apps-chromium/developer-guide/handle-files.md
                 - name: Handle URLs and protocols
                   href: progressive-web-apps-chromium/developer-guide/handle-urls-protocols.md
                 - name: Display content in the title bar
                   href: progressive-web-apps-chromium/developer-guide/window-controls-overlay.md
-        - name: Publish a PWA to the Microsoft Store
-          href: progressive-web-apps-chromium/microsoft-store.md
-        - name: Debug your PWA
-          href: progressive-web-apps-chromium/debug-pwa.md
+                - name: Sharing with other apps
+                  href: progressive-web-apps-chromium/developer-guide/share.md
         - name: What's new
           href: progressive-web-apps-chromium/whats-new/pwa.md
-        - name: Experimental features
-          href: progressive-web-apps-chromium/experimental-features/index.md
         - name: Sample PWAs
           href: progressive-web-apps-chromium/sample-pwas.md
     - name: Playwright overview

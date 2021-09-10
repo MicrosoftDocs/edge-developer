@@ -10,6 +10,8 @@ keywords: microsoft edge, experiment, progressive web apps, web apps, PWAs, PWA
 ---
 # Experimental features in Progressive Web Apps (PWAs)  
 
+**TODO** Remove this page once all features have been migrated over as individual pages under /advanced-features/
+
 Microsoft Edge provides access to experimental features that are still in development.  To determine if each feature is ready and when to release each, test and [provide feedback](#providing-feedback-on-experimental-features).  
 
 Experimental features are available in all channels of Microsoft Edge, but the latest experimental features are only available in the Microsoft Edge Canary channel.  

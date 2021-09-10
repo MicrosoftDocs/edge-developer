@@ -59,7 +59,7 @@ To create an app reservation, complete the following actions.
         *   If **Windows & Xbox** is displayed, your app is already enrolled.  
         *   If **Windows & Xbox** isn't displayed, choose **Add program**.  
     
-    :::image type="complex" source="./media/windows-partner-center-add-program.msft.png" alt-text="Add a program in the Windows Partner Center dashboard" lightbox="./media/windows-partner-center-add-program.msft.png":::
+    :::image type="complex" source="../media/windows-partner-center-add-program.msft.png" alt-text="Add a program in the Windows Partner Center dashboard" lightbox="../media/windows-partner-center-add-program.msft.png":::
        Add a program in the Windows Partner Center dashboard
     :::image-end:::  
     
@@ -73,13 +73,13 @@ To create an app reservation, complete the following actions.
     1.  Type the name of your app in the prompt.  
     1.  Choose `Reserve product name`.  
         
-    :::image type="complex" source="./media/windows-partner-center-create-app.msft.png" alt-text="Create an app reservation in Windows Partner Center" lightbox="./media/windows-partner-center-create-app.msft.png":::
+    :::image type="complex" source="../media/windows-partner-center-create-app.msft.png" alt-text="Create an app reservation in Windows Partner Center" lightbox="../media/windows-partner-center-create-app.msft.png":::
        Create an app reservation in Windows Partner Center  
     :::image-end:::  
     
 1.  To display your publisher details for use in the [Package your PWA](#package-your-pwa-for-the-store) section, choose **Product management** > **Product Identity**.  
     
-    :::image type="complex" source="./media/windows-partner-center-publisher-info.msft.png" alt-text="Copy your publisher information from Windows Partner Center" lightbox="./media/windows-partner-center-publisher-info.msft.png":::
+    :::image type="complex" source="../media/windows-partner-center-publisher-info.msft.png" alt-text="Copy your publisher information from Windows Partner Center" lightbox="../media/windows-partner-center-publisher-info.msft.png":::
        Copy your publisher information from Windows Partner Center  
     :::image-end:::  
     
@@ -103,7 +103,7 @@ To generate an app package, complete the following actions.
     *   **Publisher ID**  
     *   **Publisher Display Name**  
         
-    :::image type="complex" source="./media/pwabuilder-windows-package-options.png" alt-text="Paste publisher information into PWABuilder" lightbox="./media/pwabuilder-windows-package-options.png":::
+    :::image type="complex" source="../media/pwabuilder-windows-package-options.png" alt-text="Paste publisher information into PWABuilder" lightbox="../media/pwabuilder-windows-package-options.png":::
        Paste publisher information into PWABuilder  
     :::image-end:::  
     
@@ -120,7 +120,7 @@ To submit your app to the Store, complete the following actions.
 1.  Choose your app.  
 1.  Choose **Start your Submission**.  
     
-    :::image type="complex" source="./media/windows-partner-center-start-submission.msft.png" alt-text="Start a new app submission on Windows Partner Center" lightbox="./media/windows-partner-center-start-submission.msft.png":::
+    :::image type="complex" source="../media/windows-partner-center-start-submission.msft.png" alt-text="Start a new app submission on Windows Partner Center" lightbox="../media/windows-partner-center-start-submission.msft.png":::
        Start a new app submission on Windows Partner Center  
     :::image-end:::  
     

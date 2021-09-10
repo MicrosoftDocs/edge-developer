@@ -117,5 +117,5 @@ The `launchQueue` object queues all the launched files until a consumer is set w
 <!-- links -->  
 
 [MDNFileUpload]: https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications
-[ManifestFileDoc]: ../webappmanifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"  
+[ManifestFileDoc]: ./webappmanifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"  
 [WICGFileHandlingExplainer]: https://github.com/WICG/file-handling/blob/main/explainer.md#launch "WICG File Handling explainer | GitHub"

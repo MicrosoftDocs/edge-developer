@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Edge, Windows, desktop, PWABuilder
 # Desktop Progressive Web Apps  
 
 > [!NOTE]
-> This page focuses on the characteristics and advantages of PWAs on desktop devices. For more information about general PWA benefits, navigate to [Progressive Web Apps overview][PwaOverview].  
+> This page focuses on the characteristics and advantages of PWAs on desktop devices. For more information about general PWA benefits, navigate to [The anatomy of a PWA][PwaAnatomy].  
 
 PWAs aren't only a way for websites to appear on mobile home screens. They're based on standard, cross-browser, web technologies that allow them to be installed and to run everywhere.  
 
@@ -34,13 +34,13 @@ In Windows, PWAs are first-class app citizens and any device running Microsoft E
 
 When Microsoft Edge determines that a website is an installable PWA, the **App available** button is displayed in the address bar.  
 
-:::image type="complex" source="./media/edge-app-available-button.png" alt-text="The App available button in Microsoft Edge address bar" lightbox="./media/edge-app-available-button.png":::
+:::image type="complex" source="../media/edge-app-available-button.png" alt-text="The App available button in Microsoft Edge address bar" lightbox="../media/edge-app-available-button.png":::
    The **App available** button in Microsoft Edge address bar  
 :::image-end:::  
 
 Select the **App available** to install the PWA on Windows.
 
-:::image type="complex" source="./media/edge-app-install-flyout.png" alt-text="The installation prompt in Microsoft Edge" lightbox="./media/edge-app-install-flyout.png":::
+:::image type="complex" source="../media/edge-app-install-flyout.png" alt-text="The installation prompt in Microsoft Edge" lightbox="../media/edge-app-install-flyout.png":::
    The installation prompt in Microsoft Edge  
 :::image-end:::  
 
@@ -50,7 +50,7 @@ Many PWAs are also present on the Microsoft Store and can be installed directly 
 
 To install a PWA from the Microsoft Store, select **Get** on the app page.  
 
-:::image type="complex" source="./media/install-twitter-microsoft-store.png" alt-text="Installing an app from the Microsoft Store" lightbox="./media/install-twitter-microsoft-store.png":::
+:::image type="complex" source="../media/install-twitter-microsoft-store.png" alt-text="Installing an app from the Microsoft Store" lightbox="../media/install-twitter-microsoft-store.png":::
    Installing an app from the Microsoft Store  
 :::image-end:::  
 
@@ -58,15 +58,15 @@ To install a PWA from the Microsoft Store, select **Get** on the app page.
 
 You can see the list of installed PWAs in Microsoft Edge by navigating to `edge://apps`.  
 
-:::image type="complex" source="./media/edge-apps-listing.png" alt-text="The list of installed apps in edge://apps" lightbox="./media/edge-apps-listing.png":::
+:::image type="complex" source="../media/edge-apps-listing.png" alt-text="The list of installed apps in edge://apps" lightbox="../media/edge-apps-listing.png":::
    The list of installed apps in `edge://apps`  
 :::image-end:::  
 
-On this page, you can select any app to launch it, or select the delete icon \(![Uninstall app](./media/uninstall-app-button.png)\) to uninstall it.  
+On this page, you can select any app to launch it, or select the delete icon \(![Uninstall app](../media/uninstall-app-button.png)\) to uninstall it.  
 
 Since PWAs are deeply integrated in Windows, they show up anywhere other types of Windows apps get displayed, including in the **Apps & features** system setting.  
 
-:::image type="complex" source="./media/pwa-in-apps-and-features-settings.png" alt-text="The list of installed apps on Windows also display PWAs" lightbox="./media/pwa-in-apps-and-features-settings.png":::
+:::image type="complex" source="../media/pwa-in-apps-and-features-settings.png" alt-text="The list of installed apps on Windows also display PWAs" lightbox="../media/pwa-in-apps-and-features-settings.png":::
    The list of installed apps on Windows also display PWAs  
 :::image-end:::  
 
@@ -79,7 +79,7 @@ Like other native apps in Windows, installed PWAs are displayed in various place
       Task bar 
    :::column-end:::
    :::column span="2":::
-      :::image type="complex" source="./media/pwa-and-native-apps-in-taskbar.png" alt-text="PWAs and native apps side by side in the task bar" lightbox="./media/pwa-and-native-apps-in-taskbar.png":::
+      :::image type="complex" source="../media/pwa-and-native-apps-in-taskbar.png" alt-text="PWAs and native apps side by side in the task bar" lightbox="../media/pwa-and-native-apps-in-taskbar.png":::
          PWAs and native apps side by side in the task bar  
       :::image-end:::  
    :::column-end:::
@@ -103,7 +103,7 @@ Like other native apps in Windows, installed PWAs are displayed in various place
 
 PWAs can also expose common tasks to users in the task bar contextual menu.
 
-:::image type="complex" source="./media/pwa-shortcuts-in-taskbar.png" alt-text="Common tasks are listed in the task bar contextual menu" lightbox="./media/pwa-shortcuts-in-taskbar.png":::
+:::image type="complex" source="../media/pwa-shortcuts-in-taskbar.png" alt-text="Common tasks are listed in the task bar contextual menu" lightbox="../media/pwa-shortcuts-in-taskbar.png":::
    Common tasks are listed in the task bar contextual menu  
 :::image-end:::  
 
@@ -130,5 +130,5 @@ The Microsoft Store is now one of the most used apps on PCs
 
 <!-- Links -->
 
-[PwaOverview]: ./index.md "Progressive Web Apps overview | Microsoft Docs"  
+[PwaAnatomy]: ./pwa-anatomy.md "The anatomy of a PWA | Microsoft Docs"  
 [PwaMicrosoftStore]: ./microsoft-store.md "Publish your Progressive Web App to the Microsoft Store | Microsoft Docs"  

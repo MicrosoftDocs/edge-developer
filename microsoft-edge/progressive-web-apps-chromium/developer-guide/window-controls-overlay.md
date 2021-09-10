@@ -96,5 +96,5 @@ Knowing where the overlay is, and how big it is is important as it may not alway
 
 [MdnManifestDisplayProperty]: https://developer.mozilla.org/en-US/docs/Web/Manifest/display
 [MdnEnvCssFunction]: https://developer.mozilla.org/en-US/docs/Web/CSS/env()
-[ManifestFileDoc]: ../webappmanifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"  
+[ManifestFileDoc]: ./webappmanifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"  
 [MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Origin Trials | Microsoft Edge Developer"  
