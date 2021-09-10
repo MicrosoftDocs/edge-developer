@@ -19,17 +19,17 @@ Use the DevTools Protocol to instrument, inspect, debug, and profile browsers in
 
 ## Using the DevTools Protocol  
 
-Here's how to attach a custom tooling client to the DevTools Server in Microsoft Edge \(Chromium\).  
+To attach a custom tooling client to the DevTools Server in Microsoft Edge (Chromium):
 
 1.  Close all instances of Microsoft Edge \(Chromium\).
 
-1.  Launch Microsoft Edge \(Chromium\) with the remote debugging port:. 
+1.  Launch Microsoft Edge \(Chromium\) with the remote debugging port.
     
     ```shell
     msedge.exe --remote-debugging-port=9222
     ```  
     
-1.  Optionally, you can start a separate instance of Edge using a distinct user profile if desired.  
+1.  Optionally, you can start a separate instance of Edge using a distinct user profile.
     
     ```shell
     msedge.exe --user-data-dir=<some directory>
@@ -44,7 +44,7 @@ Here's how to attach a custom tooling client to the DevTools Server in Microsoft
 1.  Finally, connect to the `webSocketDebuggerUrl` of the desired target and issue commands/subscribe to event messages through the DevTools web socket server.  
 
 
-## DevTools Protocol HTTP Endpoints
+## DevTools Protocol HTTP endpoints
 
 The Microsoft Edge \(Chromium\) DevTools Protocol supports the following HTTP endpoints.  
 

@@ -470,6 +470,12 @@
       items:
         - name: DevTools Protocol
           href: test-and-automation/devtools-protocol-overview-aux-node.md
+        - name: Origin Trials
+          href: origin-trials/index.md
+        - name: Playwright
+          href: playwright/index.md
+        - name: Puppeteer
+          href: puppeteer/index.md
         - name: WebDriver
           items:
             - name: WebDriver overview
@@ -478,12 +484,6 @@
               href: webdriver-chromium/capabilities-edge-options.md
             - name: Verifying downloads of Selenium Tools for Microsoft Edge
               href: webdriver-chromium/verify-selenium-tools.md
-        - name: Origin Trials
-          href: origin-trials/index.md
-        - name: Playwright
-          href: playwright/index.md
-        - name: Puppeteer
-          href: puppeteer/index.md
         - name: webhint
           href: test-and-automation/webhint-aux-node.md
 # equivalent card: Web platform ===============================================
