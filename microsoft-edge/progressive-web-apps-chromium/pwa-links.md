@@ -46,7 +46,7 @@ This page provides links to Progressive Web App \(PWA\) Builder demos and compon
 
 [Install your PWA][pwaInstallYourPWA] - Gives users a button to install your PWA directly from the browser.
 
-[People Graph Component][pwaPeopleGraphComponent] - Returns the Contacts for the signed in user from the Microsoft Graph API.
+[People Graph Component][pwaPeopleGraphComponent] - Returns the Contacts for the signed-in user from the Microsoft Graph API.
 
 [People Picker Graph Component][pwaPeoplePickerGraphComponent] - Enables the user to view, add, or remove people objects from a dynamic drop-down list as they type.
 
