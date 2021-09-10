@@ -19,7 +19,7 @@ Some common use cases include:
 
 ## Before you begin
 
-Clone the [Win32 WebView2 repo][WebView2SamplesWin32GettingStarted]. Build and run the WebView2 sample application as described in [Get Started with WebView2 in Win32 apps][WebView2inWin32apps]. 
+Clone the [WebView2 Samples repo][WebView2Samples]. Build and run the WebView2 sample application as described in [Get Started with WebView2 in Win32 apps][WebView2inWin32apps]. 
 
 
 ## Simple Messages
@@ -57,12 +57,12 @@ Start by setting up a button on the native side to send a web message. Then add 
     }
     ```
 
-    The example uses a JavaScript event listener on the web.
-
-    > [!NOTE] 
+        > [!NOTE] 
     > The rest of this tutorial uses the HTML file from the WebView2 sample. Compare your HTML file as you work or copy and paste the content from [ScenarioWebMessage.html][ScenarioWebMessageHTML].
 
-1. The `ScenarioWebMessage.html` file includes the following JavaScript in the header.
+    The example uses a JavaScript event listener on the web.
+
+1. The [ScenarioWebMessage.html][ScenarioWebMessageHTML] file includes the following JavaScript in the header.
 
     ```JavaScript
     window.chrome.webview.addEventListener('message', arg => {
@@ -104,7 +104,8 @@ Start by setting up a button on the native side to send a web message. Then add 
         return true;
     ```
 
-1. Save and run the project to view the results in Microsoft Edge WebView2.
+    <!-- Does the reader need to do anything to see this? Save and run in Visual Studio? -->
+1. ???Need conclusion or how to see this in action???.
 
 ### Receiving message strings via postMessage
 
@@ -175,7 +176,7 @@ The C++ file handles the title text and communicates it to the host app as a str
     ```
 
     <!-- Does the reader need to do anything to see this? Save and run in Visual Studio? -->
-1. Save and run the project to view the results in Microsoft Edge WebView2.
+1. ???Need conclusion or how to see this in action???.
 
 ### Round-trip messages:
 
@@ -261,31 +262,31 @@ When requested by the host app, the C++ file gets the window bounds and sends th
 1. The window bounds display on the web page.
 
     <!-- Does the reader need to do anything to see this? Save and run in Visual Studio? -->
-1. Save and run the project to view the results in Microsoft Edge WebView2.
+1. ???Need conclusion or how to see this in action???.
 
 ## JavaScript Code
 
-Let the host app run JavaScript on the web side. The host app specifies the code to run and passes it to the WebView control. 
+Set up the host app run JavaScript on the web side. The host app specifies the code to run and passes it to the WebView control. 
 
-
-1. Send JavaScript code to execute on web side via `ExecuteScriptAsync`.
+1. Send JavaScript code to execute on web side using `ExecuteScriptAsync`.
 
     If you want to send JavaScript information to the page using WebView2, use the `ExecuteScriptAsync` function, which returns the JavaScript result back to the `ExecuteScript` caller. 
 
     This method is often used to send code that executes on the web.
 
-    For more information about navigate to: [Use JavaScript in WebView2 apps][UseJavaScriptInWebView2Apps].
+    For more information navigate to: [Use JavaScript in WebView2 apps][UseJavaScriptInWebView2Apps].
 
 
 ## Native Objects
 
-Pass the native object/ reference to the web. Then call the object's functions/methods from the web.
+Pass the native object to the web. Then call the object's methods from the web.
 
 <!-- "Allow web to access native objects" note from Jason -->
 
-AddHostObjectToScript
+`AddHostObjectToScript`
 
 To use messages that represent method calls, use the `AddHostObjectToScript` API. At a high level, this API lets you expose native (host) objects into the web side and act as a proxy. You may access these objects using `window.chrome.webview.hostObjects.{name}`.
+
 1. Full tutorial TBD
 
 
@@ -311,10 +312,10 @@ Congratulations.  You've successfully embedded web content into native applicati
 
 [WebView2inWin32apps]: ../get-started/win32.md "Get Started with WebView2 in Win32 apps | Microsoft Edge Development"
 
-[WebView2SamplesWin32GettingStarted]: https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted "WebView2 Samples - Win 32 Getting Started - Microsoft Edge | GitHub Repo"
-
 [WebView2APISampleRC]: https://github.com/MicrosoftEdge/WebView2Samples/blob/c7d7c75184dec0c46634f27a8f4beba320b04618/SampleApps/WebView2APISample/WebView2APISample.rc "WebView2APISample RC | GitHub Microsoft Edge WebView2 Samples"
 
 [ScriptComponentCPP]: https://github.com/MicrosoftEdge/WebView2Samples/blob/c7d7c75184dec0c46634f27a8f4beba320b04618/SampleApps/WebView2APISample/ScriptComponent.cpp "ScriptComponent C++ | GitHub Microsoft Edge WebView2 Samples"
 
 [ScenarioWebMessageCPP]: https://github.com/MicrosoftEdge/WebView2Samples/blob/a12bfcc2bc8a1155529c35c7bd4645036f492ca0/SampleApps/WebView2APISample/ScenarioWebMessage.cpp "ScenarioWebMessage C++ | GitHub Microsoft Edge WebView2 Samples"
+
+[WebView2Samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - Microsoft Edge | GitHub Repo"
