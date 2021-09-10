@@ -57,7 +57,7 @@ Start by setting up a button on the native side to send a web message. Then add 
     }
     ```
 
-        > [!NOTE] 
+    > [!NOTE] 
     > The rest of this tutorial uses the HTML file from the WebView2 sample. Compare your HTML file as you work or copy and paste the content from [ScenarioWebMessage.html][ScenarioWebMessageHTML].
 
     The example uses a JavaScript event listener on the web.
