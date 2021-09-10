@@ -25,6 +25,49 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to [Switch to a preview channel to test upcoming APIs and features](how-to/set-preview-channel.md).
+## 1.0.1010-prerelease
+
+Release Date: September 13, 2021  
+
+[NuGet package for WebView2 SDK 1.0.1010-prerelease][NuGetGallery1.0.1010-prerelease]
+
+For full API compatibility, this prerelease version of the WebView2 SDK requires Microsoft Edge version 94.0.1010.0 or higher.
+
+### General  
+*   WebView2 performance improvements.
+*   Reliability fixes. \([\#1605][GithubMicrosoftedgeWebviewfeedbackIssue1605] and[\#1678][GithubMicrosoftedgeWebviewfeedbackIssue1678]\)
+*   Added performance improvements during startup and when the host app is in the foreground.
+
+#### Experimental Features  
+*   Removed silent failures by using `EnsureCoreWebView2Async`, which throws an `ArgumentException` when called multiple times with incompatible parameters.
+*   Changed default handling of the [UserDataFolder][Webview2ReferenceWin32Icorewebview2experimentalenvironment5ViewWebview210999PrereleaseGetUserdatafolder] property in the environment object. 
+    > [!CAUTION]
+    > **Breaking Change**:  The default handling for the UDF if the developer doesn't specify where to put it will be changing. For more details, navigate to [Announcement: User directory folder default handling updates][WebView2UDFAnnouncement].
+*   Added [navigation & script APIs][Webview2ReferenceWin32Icorewebview2experimentalframeViewWebview210999Prerelease] for iframes. 
+*   Added `MemoryUsageTargetLevel` which allows developers to specify memory consumption levels, such as low, or normal. 
+*   Added `ExclusiveUserDataFolderAccess` to environment options.
+*   Added `HiddenPdfToolbarItems` to customize PDF toolbar items.
+*   Added `PrintToPdf`, which allows printing the current page to PDF. Also, you can use optional custom settings with this new API.
+*   Added `AllowExternalDrop` property to allow the dragging and dropping of objects from outside a WebView2 control into it. 
+*   Added ContextMenu APIs which allow customization of the WebView2 context menu. 
+
+#### Bug fixes  
+*   Improved how host objects exceptions are caught in your JavaScript code.
+*   Replaced WebView2 icon with a generic icon in DevTools windows.
+*   Turn on the Tab screen sharing option when `MediaDevices.getDisplayMedia()` is used. \([\#1566][GithubMicrosoftedgeWebviewfeedbackIssue1566]\)
+*   Fixed a bug in the Client Certificate API, when the correct certificate was not selected. This is a Runtime change. \([\#1666][GithubMicrosoftedgeWebviewfeedbackIssue1666]\)
+*   Fixed bug where `window.chrome.webview` was unavailable in new windows in the same parent domain. This change is runtime-specific. \([\#1144][GithubMicrosoftedgeWebviewfeedbackIssue1144]\)
+*   Fixed a bug where dropdown menus or lists displayed behind the window with the focus. \([\#411][GithubMicrosoftedgeWebviewfeedbackIssue411]\)
+*   Fixed focus issues when using `put_IsVisible(false)`. \([\#238][GithubMicrosoftedgeWebviewfeedbackIssue238]\)
+*   Fixed bug to apply `SetVirtualHostNameToFolderMapping` to popup windows.
+*   Fixed bugs where an `IDispatch` objects were returned as `IUnknown`.
+
+#### Promotions
+
+The following APIs are promoted to stable in this prerelease SDK:
+*   `IsSwipeNavigationEnabled`.
+*   `BrowserProcessExited`.
+*   `OpenBrowserTaskManager`.
 
 ## 1.0.961.33
 
