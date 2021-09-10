@@ -1,6 +1,6 @@
 ---
-description: This guide gives you an overview of PWA basics and tools for building Progressive Web Apps (Chromium) on Windows.
-title: Get started with Progressive Web Apps (Chromium)
+description: This guide gives you an overview of PWA basics and tools for building Progressive Web Apps on Windows.
+title: Get started with Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/16/2021
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, service worker, push
 ---
-# Get started with Progressive Web Apps (Chromium)  
+# Get started with Progressive Web Apps  
 
 Progressive Web Apps \(PWAs\) are web apps that are [progressively enhanced][WikiProgressiveEnhancement].  The progressive enhancements include app-like features, such as installation, offline support, and push notifications.  You may also package your PWA for app stores.  Possible app stores include the Microsoft Store, Google Play, Mac App Store, and more.  The Microsoft Store is the commercial app store built into Windows 10.  
 

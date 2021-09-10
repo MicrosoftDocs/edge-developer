@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, UWP, Microsoft Store
 ---
 # The anatomy of a PWA  
 
-[Progressive Web Apps][MDNApps] \(PWAs\) provide access to open web technologies for cross-platform interoperability and provide your users with a native, app-like experience customized for their devices. PWAs are websites that are [progressively enhanced][AListApartUnderstandingProgressiveEnhancement] to function like native apps on supporting platforms. The qualities of a PWA combine the best of the web and native apps.  
+
 
 :::row:::
     :::column:::
@@ -237,16 +237,6 @@ Before anything else, a PWA is a website that provides content to your users. Co
 > [!NOTE]
 > To turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] app, navigate to [Progressive Web Apps in the Microsoft Store][PwaChromiumMicrosoftStore].  
 
-## PWA success stories  
-
-There are many PWA success stories that can speak to the value of using these technologies for your app.  
-
-*   The Starbucks PWA has increased daily active users twice. Orders on desktop are nearly the same rate as mobile.  
-*   Trivago saw an increase of 150% for people who add its PWA to the home screen. Increased engagement led to a 97% increase in clickouts to hotel offers. Users who go offline while browsing can continue to access the site and 67% continue to browse the site when they come back online.  
-*   West Elm's progressive web app saw a 15% increase in average time spent on site and a 9% lift in revenue per visit.  
-
-To learn more, navigate to [PWA Stats][PwaStats].  
-
 ## See also  
 
 *   [Myth Busting PWAs][Davrous20191018MythBustingPwasNewEdgeEdition]  
@@ -293,9 +283,6 @@ To learn more, navigate to [PWA Stats][PwaStats].
 
 [AaronGustafsonNotebookPwaQa]: https://www.aaron-gustafson.com/notebook/pwa-qa "PWA Q&A"  
 
-[AListApartUnderstandingProgressiveEnhancement]: https://alistapart.com/article/understandingprogressiveenhancement "Understanding Progressive Enhancement - A List Apart"  
-
-[MDNApps]: https://developer.mozilla.org/Apps/Progressive "apps | MDN"  
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"  
 [MDNCrossBrowserTesting]: https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing "Cross browser testing | MDN"  
 [MDNCssFlexibleBoxLayout]: https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout "CSS Flexible Box Layout | MDN"  
@@ -342,5 +329,3 @@ To learn more, navigate to [PWA Stats][PwaStats].
 [WikiDeepLinking]: https://en.wikipedia.org/wiki/Deep_linking "Deep linking - Wikipedia"  
 [WikiHttps]: https://en.wikipedia.org/wiki/HTTPS "HTTPS - Wikipedia"  
 [WikiResponsiveWebDesign]: https://en.wikipedia.org/wiki/Responsive_web_design "Responsive web design - Wikipedia"  
-
-[PwaStats]: https://www.pwastats.com/ "A community-driven list of stats and news related to Progressive Web Apps"  
