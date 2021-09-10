@@ -515,18 +515,17 @@
             - name: webhint extension
               href: visual-studio-code/webhint.md
 # equivalent card: Accessibility ==============================================
-    - name: Accessibility
+    - name: Accessibility in Microsoft Edge
       items:
         - name: Accessibility overview
           href: accessibility/index.md
-        - name: Design
+        - name: Designing accessible websites
           href: accessibility/design.md
-        - name: Build
+        - name: Building accessible websites
           href: accessibility/build/index.md
-          items:
-            - name: ARIA and UI automation
-              href: accessibility/build/ARIA-and-UI-Automation.md
-        - name: Test
+        - name: ARIA and UI automation
+          href: accessibility/build/ARIA-and-UI-Automation.md
+        - name: Accessibility testing
           href: accessibility/test.md
 # SORT into the above card sections ===========================================
     - name: Privacy whitepaper

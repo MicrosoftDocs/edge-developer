@@ -1,6 +1,6 @@
 ---
 description: Learn how to build, design, and test accessible websites within Microsoft Edge.
-title: Accessibility
+title: Accessibility overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/16/2020
@@ -45,13 +45,13 @@ The [Web Accessibility Initiative (WAI)][W3CWaiHome] provided bt the W3C is an e
 
 <!-- links -->  
 
-[AccessibilityBuild]: ./build/index.md "Building Accessible Websites | Microsoft Doc"  
-[AccessibilityDesign]: ./design.md "Designing Accessible Websites | Microsoft Doc"  
-[AccessibilityTest]: ./test.md "Accessibility Testing | Microsoft Docs"  
+[AccessibilityBuild]: ./build/index.md "Building accessible websites | Microsoft Doc"  
+[AccessibilityDesign]: ./design.md "Designing accessible websites | Microsoft Doc"  
+[AccessibilityTest]: ./test.md "Accessibility testing | Microsoft Docs"  
 
-[WindowsWin32AutoEntryui]: /windows/win32/winauto/entry-uiauto-win32 "UI Automation | Microsoft Doc"  
+[WindowsWin32AutoEntryui]: /windows/win32/winauto/entry-uiauto-win32 "UI automation | Microsoft Doc"  
 
-[ArchiveBlogsWinuiautomation]: /archive/blogs/winuiautomation/ "Microsoft Windows UI Automation Blog | Microsoft Doc"  
+[ArchiveBlogsWinuiautomation]: /archive/blogs/winuiautomation/ "Microsoft Windows UI Automation blog | Microsoft Doc"  
 
 [HTML5Accessibility]: https://html5accessibility.com "HTML5 Accessibility"  
 

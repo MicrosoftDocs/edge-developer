@@ -263,7 +263,7 @@ conceptualContent:
               itemType: overview
               text: webhint extension for Visual Studio Code
         # Card
-        - title: Accessibility
+        - title: Accessibility in Microsoft Edge
           links:
             - url: /microsoft-edge/accessibility/
               itemType: overview

@@ -1,7 +1,7 @@
 ---
 ms.assetid: ffd1bc60-2ef1-4f11-8156-b63544cede77
 description: Learn how Microsoft Edge can recognize ARIA info, then expose it to assistive technologies that can then use Microsoft UI Automation APIs.
-title: Accessibility - ARIA and UI automation
+title: ARIA and UI automation in Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/05/2020
@@ -11,7 +11,7 @@ keywords: accessibility, accessibility for developers, accessible websites, edge
 ms.custom: seodec18
 ---
 
-# ARIA and UI Automation in Microsoft Edge
+# ARIA and UI automation in Microsoft Edge
 
 The W3C defines Accessible Rich Internet Applications (ARIA) as a syntax for making dynamic web content and custom UI accessible. Microsoft Edge recognizes the ARIA role, state, and property information and exposes it to assistive technologies, which in turn can use the [Microsoft UI Automation](https://blogs.msdn.microsoft.com/winuiautomation/) APIs to retrieve the information.
 

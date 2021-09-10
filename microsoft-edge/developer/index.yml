@@ -152,7 +152,7 @@ landingContent:
           - text: webhint extension for Visual Studio Code
             url: /microsoft-edge/visual-studio-code/webhint
   # Card
-  - title: Accessibility
+  - title: Accessibility in Microsoft Edge
     linkLists:
       - linkListType: overview
         links:
