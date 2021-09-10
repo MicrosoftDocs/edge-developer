@@ -9,12 +9,13 @@ ms.prod: microsoft-edge
 ---
 # Microsoft Edge DevTools Protocol overview  
 
-With the shift in the underlying web platform of Microsoft Edge to Chromium, the [Microsoft Edge (EdgeHTML) DevTools Protocol](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) will not be receiving any further updates.  The Microsoft Edge \(Chromium\) DevTools Protocol will match the APIs of the Chrome DevTools Protocol going forward.  
-
-You can find documentation on those domains and methods by referring to the [Chrome DevTools Protocol Viewer](https://chromedevtools.github.io/devtools-protocol/tot).  
+Use the DevTools Protocol to instrument, inspect, debug, and profile browsers including Microsoft Edge.  The Microsoft Edge DevTools Protocol matches the APIs of the Chrome DevTools Protocol.  For reference documentation, navigate to [Chrome DevTools Protocol Viewer](https://chromedevtools.github.io/devtools-protocol/tot).  
 
 > [!NOTE]
+> With the shift in the underlying web platform of Microsoft Edge to Chromium, the [Microsoft Edge (EdgeHTML) DevTools Protocol](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) will not be receiving any further updates.  The Microsoft Edge \(Chromium\) DevTools Protocol will match the APIs of the Chrome DevTools Protocol going forward.  
+> 
 > Any methods that were prefixed with `ms` in the [Microsoft Edge (EdgeHTML) DevTools Protocol](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) are no longer supported in the Microsoft Edge \(Chromium\) DevTools Protocol.  
+
 
 ## Using the DevTools Protocol  
 

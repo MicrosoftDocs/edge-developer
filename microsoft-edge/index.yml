@@ -129,7 +129,6 @@ conceptualContent:
             - itemType: reference
               text: Hosting and Updating
               url: /microsoft-edge/extensions-chromium/enterprise/hosting-and-updating
-
 # =============================================================================
     - title: Microsoft Edge for Developers # < 60 chars (optional)
     # summary:  # < 160 chars (optional)
@@ -156,11 +155,11 @@ conceptualContent:
               itemType: reference
               text: Keyboard shortcuts
         # Card
-        - title: Microsoft Edge Extensions
+        - title: Microsoft Edge extensions
           links:
             - url: /microsoft-edge/extensions-chromium/index
               itemType: overview
-              text: Extensions Overview
+              text: Extensions overview
             - url: /microsoft-edge/extensions-chromium/getting-started/index
               itemType: overview
               text: Getting started tutorial
@@ -184,7 +183,7 @@ conceptualContent:
           links:
             - url: /microsoft-edge/progressive-web-apps-chromium/index
               itemType: overview
-              text: Overview
+              text: Progressive Web Apps overview
             - url: /microsoft-edge/progressive-web-apps-chromium/get-started
               itemType: overview
               text: Get started with Progressive Web Apps
@@ -205,7 +204,7 @@ conceptualContent:
           links:
             - url: /microsoft-edge/webview2/index
               itemType: overview
-              text: Overview
+              text: WebView2 overview
             - url: /microsoft-edge/webview2/gettingstarted/win32
               itemType: get-started
               text: Getting Started with WebView2
@@ -219,17 +218,23 @@ conceptualContent:
               itemType: reference
               text: Microsoft Edge WebView2 API Reference
         # Card
-        - title: Test & Automation
+        - title: Test and automation
           links:
             - url: /microsoft-edge/devtools-protocol-chromium
               itemType: how-to-guide
-              text: DevTools Protocol overview
-            - url: /microsoft-edge/webdriver-chromium
-              itemType: how-to-guide
-              text: WebDriver
+              text: DevTools Protocol
+            - url: /microsoft-edge/origin-trials/index
+              itemType: overview
+              text: Origin Trials
+            - url: /microsoft-edge/playwright/index
+              itemType: overview
+              text: Playwright
             - url: /microsoft-edge/puppeteer
               itemType: how-to-guide
               text: Puppeteer
+            - url: /microsoft-edge/webdriver-chromium
+              itemType: how-to-guide
+              text: WebDriver
             - url: /microsoft-edge/visual-studio-code/webhint
               itemType: how-to-guide
               text: webhint extension for Visual Studio Code
@@ -295,7 +300,6 @@ additionalContent:
         - summary: Helpful support resources for users is available.
           title: User Support
           url: https://support.microsoft.com/microsoft-edge
-
     - title: Reference and Legacy Docs # < 60 chars (optional)
       # summary: sectionsummary # < 160 chars (optional)
       items:
