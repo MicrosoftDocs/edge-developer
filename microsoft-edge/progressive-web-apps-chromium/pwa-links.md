@@ -22,7 +22,7 @@ This page provides links to Progressive Web App \(PWA\) Builder demos and compon
 
 [Periodic Background Sync API][pwaPeriodicBackgroundSyncAPI] - Allows your app to sync with your server in the background, ensuring your data is always fresh.
 
-[Picture-in-Picture API][pwaPictureInPictureAPI] - Creates a floating always-on-top element to display video sources.
+[Picture-in-Picture API][pwaPictureInPictureAPI] - Creates a floating, always-on-top element to display video sources.
 
 [Screen Capture API][pwaScreenCaptureAPI] - Allows the user to grant you a media stream of their screen.
 
