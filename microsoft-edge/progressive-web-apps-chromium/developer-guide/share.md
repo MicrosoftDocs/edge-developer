@@ -116,7 +116,7 @@ The first thing to do is register your PWA as a share target. To register, use t
 
 The `share_target` member must contain the necessary information for the system to pass the shared content to your app. Consider the following manifest code.  
 
-```javascript
+```json
 {
     "share_target": {
         "action": "/handle-shared-content/",
@@ -134,7 +134,7 @@ When your app is picked by the user as the target for shared content, the PWA is
 
 You can map the default `title`, `text`, and `url` query parameters to other names if you already have existing code that uses other names.  
 
-```javascript
+```json
 {
     "share_target": {
         "action": "/handle-shared-content/",
@@ -166,7 +166,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 If the shared data is meant to change your app in any way, for example by updating some of the content stored in the app, you must use the `POST` method and define an encoding type with `enctype`.  
 
-```javascript
+```json
 {
     "share_target": {
         "action": "/post-shared-content",
@@ -209,7 +209,7 @@ In the above code snippet, the service worker intercepts the `POST` request, use
 
 Apps can also share files. To handle files in your PWA, you must use the `POST` method and the `multipart/form-data` encoding type. Additionally, you must declare the types of files that your app can handle.  
 
-```javascript
+```json
 {
     "share_target": {
         "action": "/store-code-snippet",

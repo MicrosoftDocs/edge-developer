@@ -66,8 +66,8 @@ On this page, you can select any app to launch it, or select the delete icon \(!
 
 Since PWAs are deeply integrated in Windows, they show up anywhere other types of Windows apps get displayed, including in the **Apps & features** system setting.  
 
-:::image type="complex" source="./media/pwa-in-apps-and-features-settings.png" alt-text="The list of installed apps in edge://apps" lightbox="./media/pwa-in-apps-and-features-settings.png":::
-   The list of installed apps in `edge://apps`  
+:::image type="complex" source="./media/pwa-in-apps-and-features-settings.png" alt-text="The list of installed apps on Windows also display PWAs" lightbox="./media/pwa-in-apps-and-features-settings.png":::
+   The list of installed apps on Windows also display PWAs  
 :::image-end:::  
 
 ### Windows integration  

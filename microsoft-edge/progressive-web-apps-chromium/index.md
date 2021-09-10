@@ -127,7 +127,7 @@ When you build a Progressive Web App using web standard APIs, your app can be de
 
 Once installed, your app uses the same code as your website, but runs in a standalone window with no browser frame or address bar.  
 
-:::image type="complex" source="./media/starbucks-coffee-site-and-app-side-by-side.png" alt-text="App menu items under settings" lightbox="./media/starbucks-coffee-site-and-app-side-by-side.png":::
+:::image type="complex" source="./media/starbucks-coffee-site-and-app-side-by-side.png" alt-text="The Starbucks Coffee Company website and PWA side by side" lightbox="./media/starbucks-coffee-site-and-app-side-by-side.png":::
     The Starbucks Coffee Company website and PWA side by side  
 :::image-end:::  
     
