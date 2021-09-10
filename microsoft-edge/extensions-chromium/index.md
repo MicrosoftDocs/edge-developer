@@ -109,20 +109,24 @@ After you've successfully submitted your extension, your extension undergoes a r
 <!-- ====================================================================== -->
 ## See also  
 
-*   [Port a Google Chrome extension][ExtensionworkshopPorting]  
-*   [Build a Safari App extension][AppleDeveloperSafariservicesAppExtensionsBuilding]  
-*   [Your first extension (Firefox)][MDNWebextensionsYourFirst]  
-*   [Get started tutorial (Chrome)][ChromeDeveloperExtensionsGetstarted]  
-*   [Get started (Opera)][OperaDevExtensionsGettingStarted]  
-*   [Extension concepts and architecture][ExtensionsChromiumGettingStartedIndex]  
+*  [Port a Google Chrome extension][ExtensionworkshopPorting]  
+*  [Build a Safari App extension][AppleDeveloperSafariservicesAppExtensionsBuilding]  
+*  [Your first extension (Firefox)][MDNWebextensionsYourFirst]  
+*  [Get started tutorial (Chrome)][ChromeDeveloperExtensionsGetstarted]  
+*  [Get started (Opera)][OperaDevExtensionsGettingStarted]  
+*  [Extension concepts and architecture][ExtensionsChromiumGettingStartedIndex]  
+*  [Microsoft Edge DevTools extension for Visual Studio Code][EdgeDevToolsVSCode]
+*  [webhint extension for Visual Studio Code][WebhintVSCode]
 
 
 <!-- ====================================================================== -->
 <!-- links -->  
-[ExtensionsChromiumDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md "Port Chrome Extension To Microsoft Edge (Chromium) | Microsoft Docs"  
+[ExtensionsChromiumDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md "Port a Chrome extension to Microsoft Edge | Microsoft Docs"  
 [ExtensionsChromiumGettingStartedIndex]: ./getting-started/index.md "Extension concepts and architecture | Microsoft Docs"  
 [ExtensionsChromiumPublish]: ./publish/publish-extension.md "Publish a Microsoft Edge extension | Microsoft Docs"  
-
+[EdgeDevToolsVSCode]: ../visual-studio-code/microsoft-edge-devtools-extension.md "Microsoft Edge DevTools extension for Visual Studio Code | Microsoft Docs"
+[WebhintVSCode]: ../visual-studio-code/webhint.md "webhint extension for Visual Studio Code | Microsoft Docs"
+<!-- external links -->
 [MicrosoftDeveloperEdgeExtensions]: https://developer.microsoft.com/microsoft-edge/extensions "Develop extensions for Microsoft Edge | Microsoft Developer"  
 [MicrosoftDeveloperRegistration]: https://developer.microsoft.com/registration "Partner Center | Microsoft Developer"  
 
