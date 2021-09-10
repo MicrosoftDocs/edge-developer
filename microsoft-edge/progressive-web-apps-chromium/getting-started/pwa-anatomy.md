@@ -11,150 +11,6 @@ keywords: progressive web apps, PWA, Edge, JavaScript, UWP, Microsoft Store
 ---
 # The anatomy of a PWA  
 
-
-
-:::row:::
-    :::column:::
-        :::image type="icon" source="../media/i_search-small.png":::  
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="../media/i_package-small.png":::  
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="../media/i_push-notification-small.png":::  
-    :::column-end:::
-:::row-end:::  
-:::row:::
-    :::column:::
-        ### [Discoverable][MDNPwaAdvantagesDiscoverable]  
-    :::column-end:::
-    :::column:::
-        ### [Installable][MDNPwaAdvantagesInstallable]  
-    :::column-end:::
-    :::column:::
-        ### [Re-engageable][MDNPwaAdvantagesReEngageable]  
-    :::column-end:::
-:::row-end:::  
-:::row:::
-    :::column:::
-        From web search results and supporting app stores  
-    :::column-end:::
-    :::column:::
-        Pin and launch from the home screen, Start Menu, Taskbar, and so on  
-    :::column-end:::
-    :::column:::
-        Send push notifications, even when the app is not active  
-    :::column-end:::
-:::row-end:::  
-:::row:::
-    :::column:::
-        :::image type="icon" source="../media/i_offline-small.png":::  
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="../media/i_progressive-small.png":::  
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="../media/i_security-small.png":::  
-    :::column-end:::
-:::row-end:::  
-:::row:::
-    :::column:::
-        ### [Network Independent][MDNPwaAdvantagesNetworkIndependent]  
-    :::column-end:::
-    :::column:::
-        ### [Progressive][MDNPwaAdvantagesProgressive]  
-    :::column-end:::
-    :::column:::
-        ### [Safe][MDNPwaAdvantagesSafe]  
-    :::column-end:::
-:::row-end:::  
-:::row:::
-    :::column:::
-        Works offline and in low-network conditions  
-    :::column-end:::
-    :::column:::
-        Experience scales up (or down) with device capabilities  
-    :::column-end:::
-    :::column:::
-        Provides a secure HTTPS endpoint and other user safeguards  
-    :::column-end:::
-:::row-end:::  
-:::row:::
-    :::column:::
-        :::image type="icon" source="../media/i_responsive-small.png":::  
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="../media/i_link-small.png":::  
-    :::column-end:::
-    :::column:::
-        &nbsp;  
-    :::column-end:::
-:::row-end:::  
-:::row:::
-    :::column:::
-        ### [Responsive][MDNPwaAdvantagesResponsive]  
-    :::column-end:::
-    :::column:::
-        ### [Linkable][MDNPwaAdvantagesLinkable]  
-    :::column-end:::
-    :::column:::
-        &nbsp;  
-    :::column-end:::
-:::row-end:::  
-:::row:::
-    :::column:::
-        Adapts to the user's screen size or orientation and input method  
-    :::column-end:::
-    :::column:::
-        Share and launch from a standard hyperlink  
-    :::column-end:::
-    :::column:::
-        &nbsp;  
-    :::column-end:::
-:::row-end:::  
-
-PWAs have the same reach as websites: they can be indexed by search engines, can be linked to, and work on all devices from the same codebase. As such they have a much lower development cost than native apps that require a specific codebase  for Android, iOS, and various desktop operating systems.  
-
-You can enhance engagement with your users by converting your existing website to a PWA. Enhancements include push notifications, native app-like integration, and offline support. Continue to build your audience on the open web for users to discover your PWA through search, link-sharing and app stores. Best of all, your app is updated using your web server code.  
-
-## PWAs on Microsoft Edge (Chromium)  
-
-When you build a Progressive Web App using web standard APIs, your app can be deployed across platforms and devices and take advantage of the device-specific capabilities as available. PWAs in Microsoft Edge add the following advantages to your website.  
-
-*   Your app is built on a standards-based web platform.  
-*   Allows your users to install your app directly from the browser.  
-*   Allows your users to install your app without a Store-based deployment or registration.  
-
-Once installed, your app uses the same code as your website, but runs in a standalone window with no browser frame or address bar.  
-
-:::image type="complex" source="../media/starbucks-coffee-site-and-app-side-by-side.png" alt-text="The Starbucks Coffee Company website and PWA side by side" lightbox="../media/starbucks-coffee-site-and-app-side-by-side.png":::
-    The Starbucks Coffee Company website and PWA side by side  
-:::image-end:::  
-    
-Desktop PWAs are supported on any of the platforms Microsoft Edge is [available](https://www.microsoft.com/edge) on. The following benefits are included.  
-
-*   Apps may be installed directly from within the browser using the **App Available** icon in the navigation bar.  
-    
-    :::image type="complex" source="../media/install-progressive-web-app-icon.png" alt-text="Install app flyout and icon" lightbox="../media/install-progressive-web-app-icon.png":::
-       Install app flyout and icon  
-    :::image-end:::  
-    
-*   Apps may also be installed, run, and managed from the **Settings** > **Apps** menu  
-    
-    :::image type="complex" source="../media/app-menus.png" alt-text="App menu items under settings" lightbox="../media/app-menus.png":::
-       App menu items under settings  
-    :::image-end:::  
-    
-*   Apps are integrated in Windows like any other apps. Web Notifications are shown in the Windows notification system, app icons appear in the task bar, the start menu and everywhere else Windows lists apps, apps can automatically be run on login, and more.  
-*   Shared cookie store with the browser profile that installed the app.  
-*   Access to other browser features using the **Setting and more** \(`...`\) menu including certificate validation, site permissions, tracking protection, and browser extensions.  
-*   Full access to [Microsoft Edge DevTools][DevtoolsProgressiveWebApps] for debugging your app.  
-    
-> [!NOTE]
-> For more information about PWA benefits, upcoming features, and short demos, navigate to [Build 2020 PWA session][BuildVideo].  
-
-Microsoft Edge continuously adds new capabilities that make it easier for PWAs to look and feel like great native apps. The gap between web and native is quickly being filled as the result of a collaboration between Microsoft, Google, Intel and others, who are all contributing to open source projects that create new capabilities. This is done through web standards, and therefore remains cross platform.  
-
 ## What makes a Progressive Web App  
 
 To run as a PWA, your server-hosted web app must meet the following 3 requirements.  
@@ -237,6 +93,41 @@ Before anything else, a PWA is a website that provides content to your users. Co
 > [!NOTE]
 > To turn your PWA into a [Microsoft Store][MicrosoftDeveloperStore] app, navigate to [Progressive Web Apps in the Microsoft Store][PwaChromiumMicrosoftStore].  
 
+## PWAs on Microsoft Edge (Chromium)  
+
+When you build a Progressive Web App using web standard APIs, your app can be deployed across platforms and devices and take advantage of the device-specific capabilities as available. PWAs in Microsoft Edge add the following advantages to your website.  
+
+*   Your app is built on a standards-based web platform.  
+*   Allows your users to install your app directly from the browser.  
+*   Allows your users to install your app without a Store-based deployment or registration.  
+
+Once installed, your app uses the same code as your website, but runs in a standalone window with no browser frame or address bar.  
+
+:::image type="complex" source="../media/starbucks-coffee-site-and-app-side-by-side.png" alt-text="The Starbucks Coffee Company website and PWA side by side" lightbox="../media/starbucks-coffee-site-and-app-side-by-side.png":::
+    The Starbucks Coffee Company website and PWA side by side  
+:::image-end:::  
+    
+Desktop PWAs are supported on any of the platforms Microsoft Edge is [available](https://www.microsoft.com/edge) on. The following benefits are included.  
+
+*   Apps may be installed directly from within the browser using the **App Available** icon in the navigation bar.  
+    
+    :::image type="complex" source="../media/install-progressive-web-app-icon.png" alt-text="Install app flyout and icon" lightbox="../media/install-progressive-web-app-icon.png":::
+       Install app flyout and icon  
+    :::image-end:::  
+    
+*   Apps may also be installed, run, and managed from the **Settings** > **Apps** menu  
+    
+    :::image type="complex" source="../media/app-menus.png" alt-text="App menu items under settings" lightbox="../media/app-menus.png":::
+       App menu items under settings  
+    :::image-end:::  
+    
+*   Apps are integrated in Windows like any other apps. Web Notifications are shown in the Windows notification system, app icons appear in the task bar, the start menu and everywhere else Windows lists apps, apps can automatically be run on login, and more.  
+*   Shared cookie store with the browser profile that installed the app.  
+*   Access to other browser features using the **Setting and more** \(`...`\) menu including certificate validation, site permissions, tracking protection, and browser extensions.  
+*   Full access to [Microsoft Edge DevTools][DevtoolsProgressiveWebApps] for debugging your app.  
+
+Microsoft Edge continuously adds new capabilities that make it easier for PWAs to look and feel like great native apps. The gap between web and native is quickly being filled as the result of a collaboration between Microsoft, Google, Intel and others, who are all contributing to open source projects that create new capabilities. This is done through web standards, and therefore remains cross platform.  
+
 ## See also  
 
 *   [Myth Busting PWAs][Davrous20191018MythBustingPwasNewEdgeEdition]  
@@ -291,18 +182,8 @@ Before anything else, a PWA is a website that provides content to your users. Co
 [MDNMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries "Media queries | MDN"  
 [MDNNotificationsApi]: https://developer.mozilla.org/docs/Web/API/Notifications_API "Notifications API | MDN"  
 [MDNPushApi]: https://developer.mozilla.org/docs/Web/API/Push_API "Push API | MDN"  
-[MDNPwaAdvantagesDiscoverable]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Discoverable "Discoverable - Progressive web app advantages"  
-[MDNPwaAdvantagesInstallable]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Installable "Installable - Progressive web app advantages"  
-[MDNPwaAdvantagesLinkable]: https://developer.mozilla.org/Apps/Progressive/Advantages#Linkable "Linkable - Progressive web app advantages"  
-[MDNPwaAdvantagesNetworkIndependent]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Network_independent "Network independent - Progressive web app advantages"  
-[MDNPwaAdvantagesProgressive]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Progressive "Progressive - Progressive web app advantages"  
-[MDNPwaAdvantagesReEngageable]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Re-engageable "Re-engageable - Progressive web app advantages"  
-[MDNPwaAdvantagesResponsive]: https://developer.mozilla.org/Apps/Progressive/Advantages#Responsive "Responsive - Progressive web app advantages"  
-[MDNPwaAdvantagesSafe]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Safe "Safe - Progressive web app advantages"  
 [MDNResponsiveImages]: https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images "Responsive images | MDN"  
 [MDNSyncManager]: https://developer.mozilla.org/docs/Web/API/SyncManager "SyncManager | MDN"   
-
-[BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "PWA video"  
 
 [CloudfourThinksProgressiveRoadmapYourWebApp]: https://cloudfour.com/thinks/a-progressive-roadmap-for-your-progressive-web-app "A Progressive Roadmap for your Progressive Web App"  
 

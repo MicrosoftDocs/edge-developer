@@ -27,6 +27,113 @@ PWAs can also be **submitted to the Microsoft Store** where millions of Windows 
     PWAs on Windows, in Microsoft Edge, and the Microsoft Store  
 :::image-end:::  
 
+> [!NOTE]
+> For more information about PWA benefits, upcoming features, and short demos, navigate to [Build 2020 PWA session][BuildVideo].  
+
+## Characteristics of a PWA  
+
+PWAs have the same reach as websites: they can be indexed by search engines, can be linked to, and work on all devices from the same codebase. As such they have a much lower development cost than native apps that require a specific codebase  for Android, iOS, and various desktop operating systems.  
+
+:::row:::
+    :::column:::
+        :::image type="icon" source="./media/i_search-small.png":::  
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="./media/i_package-small.png":::  
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="./media/i_push-notification-small.png":::  
+    :::column-end:::
+:::row-end:::  
+:::row:::
+    :::column:::
+        ### [Discoverable][MDNPwaAdvantagesDiscoverable]  
+    :::column-end:::
+    :::column:::
+        ### [Installable][MDNPwaAdvantagesInstallable]  
+    :::column-end:::
+    :::column:::
+        ### [Re-engageable][MDNPwaAdvantagesReEngageable]  
+    :::column-end:::
+:::row-end:::  
+:::row:::
+    :::column:::
+        From web search results and supporting app stores  
+    :::column-end:::
+    :::column:::
+        Pin and launch from the home screen, Start Menu, Taskbar, and so on  
+    :::column-end:::
+    :::column:::
+        Send push notifications, even when the app is not active  
+    :::column-end:::
+:::row-end:::  
+:::row:::
+    :::column:::
+        :::image type="icon" source="./media/i_offline-small.png":::  
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="./media/i_progressive-small.png":::  
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="./media/i_security-small.png":::  
+    :::column-end:::
+:::row-end:::  
+:::row:::
+    :::column:::
+        ### [Network Independent][MDNPwaAdvantagesNetworkIndependent]  
+    :::column-end:::
+    :::column:::
+        ### [Progressive][MDNPwaAdvantagesProgressive]  
+    :::column-end:::
+    :::column:::
+        ### [Safe][MDNPwaAdvantagesSafe]  
+    :::column-end:::
+:::row-end:::  
+:::row:::
+    :::column:::
+        Works offline and in low-network conditions  
+    :::column-end:::
+    :::column:::
+        Experience scales up (or down) with device capabilities  
+    :::column-end:::
+    :::column:::
+        Provides a secure HTTPS endpoint and other user safeguards  
+    :::column-end:::
+:::row-end:::  
+:::row:::
+    :::column:::
+        :::image type="icon" source="./media/i_responsive-small.png":::  
+    :::column-end:::
+    :::column:::
+        :::image type="icon" source="./media/i_link-small.png":::  
+    :::column-end:::
+    :::column:::
+        &nbsp;  
+    :::column-end:::
+:::row-end:::  
+:::row:::
+    :::column:::
+        ### [Responsive][MDNPwaAdvantagesResponsive]  
+    :::column-end:::
+    :::column:::
+        ### [Linkable][MDNPwaAdvantagesLinkable]  
+    :::column-end:::
+    :::column:::
+        &nbsp;  
+    :::column-end:::
+:::row-end:::  
+:::row:::
+    :::column:::
+        Adapts to the user's screen size or orientation and input method  
+    :::column-end:::
+    :::column:::
+        Share and launch from a standard hyperlink  
+    :::column-end:::
+    :::column:::
+        &nbsp;  
+    :::column-end:::
+:::row-end:::  
+
 ## Success stories  
 
 Using PWA technologies is a great way to make your app **safe**, **discoverable**, **linkable**, **easy to install** and update, **responsive**, and **network independent**. Many businesses use PWAs and have had success stories.  
@@ -83,3 +190,12 @@ To read more success stories, navigate to [PWA Stats][PwaStats].
 [AdvancedFeatures]: ./developer-guide/advanced-features.md "Advanced Progressive Web Apps features | Microsoft Docs"
 [WhatsNew]: ./whats-new/pwa.md "What's New in Progressive Web Apps | Microsoft Docs"
 [SamplesAndDemos]: ./sample-pwas.md "Demo Progressive Web Apps | Microsoft Docs"  
+[MDNPwaAdvantagesDiscoverable]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Discoverable "Discoverable - Progressive web app advantages"  
+[MDNPwaAdvantagesInstallable]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Installable "Installable - Progressive web app advantages"  
+[MDNPwaAdvantagesLinkable]: https://developer.mozilla.org/Apps/Progressive/Advantages#Linkable "Linkable - Progressive web app advantages"  
+[MDNPwaAdvantagesNetworkIndependent]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Network_independent "Network independent - Progressive web app advantages"  
+[MDNPwaAdvantagesProgressive]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Progressive "Progressive - Progressive web app advantages"  
+[MDNPwaAdvantagesReEngageable]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Re-engageable "Re-engageable - Progressive web app advantages"  
+[MDNPwaAdvantagesResponsive]: https://developer.mozilla.org/Apps/Progressive/Advantages#Responsive "Responsive - Progressive web app advantages"  
+[MDNPwaAdvantagesSafe]: https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Safe "Safe - Progressive web app advantages"  
+[BuildVideo]: https://www.youtube.com/watch?v=y4p_QHZtMKM "PWA video"  
