@@ -39,11 +39,6 @@ The functional relationship between these components is as follows.
 The following sections describe how to get started with WebDriver for Microsoft Edge \(Chromium\).  
 
 
-## Install Microsoft Edge (Chromium)  
-
-Ensure you install [Microsoft Edge (Chromium)][MicrosoftEdge].  To confirm that you have Microsoft Edge \(Chromium\) installed, navigate to `edge://settings/help`, and verify that the version number is 75 or later.
-
-
 ## Download Microsoft Edge Driver
 
 To begin automating tests, use the following steps to ensure that the WebDriver version you install matches your browser version.  
@@ -73,10 +68,7 @@ This article provides instructions for using the Selenium framework, but you can
 
 If you are using Selenium, the Microsoft Edge team recommends [Selenium 4.0.0-beta2][NugetPackagesSeleniumWebdriver400beta02] or later, because that version of Selenium supports Microsoft Edge \(Chromium\).  However, you can control Microsoft Edge \(Chromium\) in all older versions of Selenium, including the current stable Selenium 3 release.  
 
-> [!IMPORTANT]
-> If you previously automated or tested Microsoft Edge \(Chromium\) using `ChromeDriver` and `ChromeOptions` classes, your WebDriver code does not run on Microsoft Edge Version 80 or later.  To solve the problem, update your tests to use the `EdgeOptions` class and download [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver].  
-
-### Using Selenium 4
+### Using Selenium 4  
 
 The Selenium WebDriver testing framework can be used on any platform, and is available for Java, Python, C#, Ruby, and JavaScript.
 
