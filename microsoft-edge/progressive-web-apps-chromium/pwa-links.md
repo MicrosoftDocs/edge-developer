@@ -40,7 +40,7 @@ This page provides links to Progressive Web App \(PWA\) Builder demos and compon
 
 [2D inking on the web][pwa2DInking] - In just 2 lines of code, add a fast, low-latency inking canvas with an optional toolbar.
 
-[Agenda Graph Component][pwaAgendaGraphComponent] - Returns calendar events for the signed in user from the Microsoft Graph API.
+[Agenda Graph Component][pwaAgendaGraphComponent] - Returns calendar events for the signed-in user from the Microsoft Graph API.
 
 [Graph Login Component][pwaGraphLoginComponent] - A button and flyout control to support Microsoft identity platform authentication.
 
