@@ -100,6 +100,10 @@ Let's take the example of a PWA hosted at `https://app.contoso.com` trying to ha
 
 To learn more about the valid members in `web-app-origin-association`, navigate to the [URL Handlers explainer][WICGUrlHandlerExplainer].  
 
+### Testing URL handling  
+
+**TODO** Notes about the fact that this must be with the default browser, and from a desktop app (outlook won't work as there is some URL security scanning that starts the browser). Can try from windows+R.  
+
 ## Handle protocols  
 
 **TODO**

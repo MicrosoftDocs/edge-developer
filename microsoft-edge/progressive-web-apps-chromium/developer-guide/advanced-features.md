@@ -16,11 +16,13 @@ keywords: progressive web apps, PWA, API
 | [Handle files][FileHandling] | Register your PWA to natively handle files | 
 | [Handle URLs and protocols][UrlsProtocolsHandling] | Register your PWA to handle URLs and protocols | 
 | [Display content in the title bar][WindowControlsOverlay] | Use the full surface area of the window your PWA is in to display content | 
+| [Sharing with other apps][Share] | Share content with other apps and accept shared content | 
 | TODO | Add more APIs and link them to docs pages |   
 
 
 <!-- links -->  
 
-[FileHandling]: ./devtools-guide-chromium/handling-files.md "Handle files in Progressive Web Apps | Microsoft Docs"  
-[UrlsProtocolsHandling]: ./devtools-guide-chromium/handling-urls-protocols.md "Handle URLs and protocols in Progressive Web Apps | Microsoft Docs"  
-[WindowControlsOverlay]: ./devtools-guide-chromium/window-controls-overlay.md "Display content in the title bar | Microsoft Docs"  
+[FileHandling]: ./handle-files "Handle files in Progressive Web Apps | Microsoft Docs"  
+[UrlsProtocolsHandling]: ./handle-urls-protocols "Handle URLs and protocols in Progressive Web Apps | Microsoft Docs"  
+[WindowControlsOverlay]: ./window-controls-overlay "Display content in the title bar | Microsoft Docs"  
+[Share]: ./share "Sharing with other apps | Microsoft Docs"  
