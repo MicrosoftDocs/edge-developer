@@ -22,7 +22,7 @@ keywords: progressive web apps, PWA, API
 
 <!-- links -->  
 
-[FileHandling]: ./handle-files "Handle files in Progressive Web Apps | Microsoft Docs"  
-[UrlsProtocolsHandling]: ./handle-urls-protocols "Handle URLs and protocols in Progressive Web Apps | Microsoft Docs"  
-[WindowControlsOverlay]: ./window-controls-overlay "Display content in the title bar | Microsoft Docs"  
-[Share]: ./share "Sharing with other apps | Microsoft Docs"  
+[FileHandling]: ./handle-files.md "Handle files in Progressive Web Apps | Microsoft Docs"  
+[UrlsProtocolsHandling]: ./handle-urls-protocols.md "Handle URLs and protocols in Progressive Web Apps | Microsoft Docs"  
+[WindowControlsOverlay]: ./window-controls-overlay.md "Display content in the title bar | Microsoft Docs"  
+[Share]: ./share.md "Sharing with other apps | Microsoft Docs"  
