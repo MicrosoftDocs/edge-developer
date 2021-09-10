@@ -37,7 +37,7 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 
 ### General  
 *   WebView2 performance improvements.
-*   Reliability fixes. \([\#1605][GithubMicrosoftedgeWebviewfeedbackIssue1605] and[\#1678][GithubMicrosoftedgeWebviewfeedbackIssue1678]\)
+*   Reliability fixes. \([\#1605][GithubMicrosoftedgeWebviewfeedbackIssue1605] and [\#1678][GithubMicrosoftedgeWebviewfeedbackIssue1678]\)
 *   Added performance improvements during startup and when the host app is in the foreground.
 
 #### Experimental Features  
