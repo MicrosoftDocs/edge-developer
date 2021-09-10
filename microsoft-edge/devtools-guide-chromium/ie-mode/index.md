@@ -1,6 +1,6 @@
 ---
 description: IE mode and the Microsoft Edge (Chromium) DevTools
-title: Use the DevTools in Internet Explorer Mode
+title: Use the DevTools in Internet Explorer mode
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/03/2021
@@ -8,13 +8,13 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, ie11, internet explorer 11, ie mode
 ---
-# Use the DevTools in Internet Explorer Mode  
+# Use the DevTools in Internet Explorer mode  
 
 This article describes how Internet Explorer mode \(IE mode\) integrates with the Microsoft Edge \(Chromium\) DevTools.  
 
 ## Understanding IE mode  
 
-IE mode allows enterprises to specify a list of web sites that only work in Internet Explorer 11.  When you navigate to these web sites in Microsoft Edge \(Chromium\), an instance of Internet Explorer 11 runs and renders the site in a tab.  The functionality allows enterprises to manage compatibility with technologies that are currently not compatible with any modern web browsers.  Support for the following technologies is included in IE mode.  
+IE mode allows enterprises to specify a list of web sites that only work in Internet Explorer 11.  When you navigate to these web sites in Microsoft Edge \(Chromium\), an instance of Internet Explorer 11 runs and renders the site in a tab.  IE mode allows enterprises to manage compatibility with technologies that are currently not compatible with any modern web browsers.  Support for the following technologies is included in IE mode.  
 
 *   IE document modes.  
 *   ActiveX controls.  
@@ -26,7 +26,7 @@ In IE mode, the rendering process is based on Internet Explorer 11.  The Microso
    IE mode badge in the address bar  
 :::image-end:::  
 
-IE mode is currently available on Windows 10 Version 1903 \(May 2019 Update\), but is coming soon to all supported Windows platforms.  
+IE mode is available on Windows 10 Version 1903 \(May 2019 Update\), but is coming to all supported Windows platforms.  
 
 ## Open the DevTools on a tab in IE mode  
 
@@ -40,7 +40,7 @@ If a tab uses IE mode, a number of DevTools, such as **Network** and **Performan
     
 *   Opening the contextual menu \(right-click\) and selecting **View Source** launches Notepad.  
 *   **Inspect Element** is not visible on the contextual menu \(right-click\).  
-*   Selecting `F12` or `Ctrl`+`Shift`+`I` opens a blank instance of the Microsoft Edge \(Chromium\) DevTools and displays the following message: **Developer Tools are not available in Internet Explorer mode.  To debug the page, open it in Internet Explorer 11.**  
+*   Selecting `F12` or `Ctrl`+`Shift`+`I` opens a blank instance of the Microsoft Edge DevTools and displays the following message: **Developer Tools are not available in Internet Explorer mode.  To debug the page, open it in Internet Explorer 11.**  
 
 :::image type="complex" source="../media/ie-mode-devtools.msft.png" alt-text="DevTools launched in IE mode" lightbox="../media/ie-mode-devtools.msft.png":::
    DevTools launched in IE mode  
