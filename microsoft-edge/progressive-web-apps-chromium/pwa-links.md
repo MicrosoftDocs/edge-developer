@@ -3,7 +3,7 @@ description: This page describes Progressive Web App Builder demos and component
 title: Progressive Web App Builder demos and components
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/7/2021
+ms.date: 09/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Microsoft Edge, PWABuilder, PWA Builder, PWA Builder demos, PWA Builder components
@@ -18,7 +18,7 @@ This page provides links to Progressive Web App \(PWA\) Builder demos and compon
 
 [Low-latency canvas API][pwaLowLatencyCanvasAPI] - Tells the canvas to skip most of the rendering pipeline in the browser to get pixels on screen with minimal latency.
 
-[Native File System API][pwaNativeFileSystemAPI] - Allows you to read and write files just like a native app.
+[Native File System API][pwaNativeFileSystemAPI] - Lets you read and write files just like a native app.
 
 [Periodic Background Sync API][pwaPeriodicBackgroundSyncAPI] - Allows your app to sync with your server in the background, ensuring your data is always fresh.
 
@@ -26,19 +26,19 @@ This page provides links to Progressive Web App \(PWA\) Builder demos and compon
 
 [Screen Capture API][pwaScreenCaptureAPI] - Allows the user to grant you a media stream of their screen.
 
-[Share Target API][pwaShareTargetAPI] - Allows you to register your PWA as a share target to receive shared content.
+[Share Target API][pwaShareTargetAPI] - Lets you register your PWA as a share target to receive shared content.
 
 [Wake Lock API][pwaWakeLockAPI] - Allows your PWA to keep the screen awake on a device.
 
-[Web Near-Field Communication API][pwaWebNFCAPI] - Allows you to interact with Near-Field Communication (NFC) tags.
+[Web Near-Field Communication API][pwaWebNFCAPI] - Lets you interact with Near-Field Communication (NFC) tags.
 
 [Web Share API][pwaWebShareAPI] - Allows you to share URLs and files using the native share UI.
 
-[Web Shortcuts API][pwaWebShortcutsAPI] - Allows you to create a list of shortcuts, or *jumplists*, for your PWA.
+[Web Shortcuts API][pwaWebShortcutsAPI] - Allows you to create a list of shortcuts, or *jump lists*, for your PWA.
 
 ## Components
 
-[2D inking on the web][pwa2DInking] - In just 2 lines of code, add a fast, low-latency inking canvas with an optional toolbar.
+[2D inking on the web][pwa2DInking] - In just two lines of code, add a fast, low-latency inking canvas with an optional toolbar.
 
 [Agenda Graph Component][pwaAgendaGraphComponent] - Returns calendar events for the signed-in user from the Microsoft Graph API.
 
@@ -50,7 +50,7 @@ This page provides links to Progressive Web App \(PWA\) Builder demos and compon
 
 [People Picker Graph Component][pwaPeoplePickerGraphComponent] - Enables the user to view, add, or remove **People** objects from a dynamic drop-down list as the user types.
 
-[Sign in with Microsoft, Google, or Facebook][pwaSignIn] - Lets your users sign-in through their Microsoft, Google, or Facebook account by using `pwa-auth`. Your app receives the user's email address, name, and profile picture.
+[Sign in with Microsoft, Google, or Facebook][pwaSignIn] - Lets your users sign in through their Microsoft, Google, or Facebook account by using `pwa-auth`. Your app receives the user's email address, name, and profile picture.
 
 [Tasks Graph Component][pwaTasksGraphComponent] - Returns the tasks for the signed in user from the Microsoft Graph API.
 
