@@ -42,7 +42,7 @@ This page provides links to Progressive Web App \(PWA\) Builder demos and compon
 
 [Agenda Graph Component][pwaAgendaGraphComponent] - Returns calendar events for the signed in user from the Microsoft Graph API.
 
-[Graph Login Component][pwaGraphLoginComponent] - A button and flyout control to facilitate Microsoft identity platform authentication.
+[Graph Login Component][pwaGraphLoginComponent] - A button and flyout control to support Microsoft identity platform authentication.
 
 [Install your PWA][pwaInstallYourPWA] - Gives users a button to install your PWA directly from the browser.
 
