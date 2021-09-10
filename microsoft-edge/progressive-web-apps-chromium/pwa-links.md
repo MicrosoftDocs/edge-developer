@@ -14,7 +14,7 @@ This page provides links to Progressive Web App \(PWA\) Builder demos and compon
 
 ## Demos
 
-[Background Fetch API][pwaBackgroundFetchAPI] - Enables your web app to fetch large content videos, podcasts, and so on, in the background. Fetch works even when your PWA isn't open.
+[Background Fetch API][pwaBackgroundFetchAPI] - Enables your web app to fetch large content such as videos and podcasts in the background. The `Fetch` API works even when your PWA isn't open.
 
 [Low-latency canvas API][pwaLowLatencyCanvasAPI] - Tells the canvas to skip most of the rendering pipeline in the browser to get pixels on screen with minimal latency.
 
