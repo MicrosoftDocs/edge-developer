@@ -1,6 +1,6 @@
 ---
-description: Use Playwright to automate and test in Microsoft Edge
-title: Playwright
+description: Use Playwright to automate and test in Microsoft Edge.
+title: Use Playwright to automate and test in Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 11/24/2020
@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, developer, tools, automation, test, playwright, node, javascript, npm
 ---
-# Playwright  
+# Use Playwright to automate and test in Microsoft Edge
 
 [Playwright][PlaywrightMain] is a [Node.js][NodejsMain] library to automate [Chromium][ChromiumHome], [Firefox][FirefoxMain], and [WebKit][WebKitMain] with a single API.  Playwright is built to enable cross-browser web automation that is ever-green, capable, reliable, and fast.  Since [Microsoft Edge is built on the open-source Chromium web platform][MicrosoftBlogsWindowsExperience20181206], Playwright is also able to automate Microsoft Edge.  
 
