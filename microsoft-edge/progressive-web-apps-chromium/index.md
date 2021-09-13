@@ -11,7 +11,9 @@ keywords: progressive web apps, PWA, Edge, JavaScript, UWP, Microsoft Store
 ---
 # Progressive Web Apps overview  
 
-## What's a PWA  
+:::image type="complex" source="./media/pwa-rainbow-logo.png" alt-text="The PWA logo" lightbox="./media/pwa-rainbow-logo.png":::
+    The PWA logo  
+:::image-end:::  
 
 **[Progressive Web Apps][MDNApps]** \(PWAs\) provide access to open web technologies for cross-platform interoperability and provide your users with a native, app-like experience customized for their devices. 
 
@@ -19,7 +21,7 @@ PWAs are websites that are **[progressively enhanced][AListApartUnderstandingPro
 
 The qualities of a PWA combine **the best of the web and native apps**. PWAs run in browsers, like websites, but have access to native app features like the ability to work offline, be installed as a native app, support push notifications and periodic updates, access hardware features, and more.  
 
-**PWAs are first-class citizens on Windows**. When installed, they behave like other apps. They can be added to the start menu, pinned to the task bar, handle files, run on user login, and more.  
+**PWAs are first-class citizens on Windows**. When installed, they behave like other apps. They can be added to the Start Menu, pinned to the Taskbar, handle files, run on user login, and more.  
 
 PWAs can also be **submitted to the Microsoft Store** where millions of Windows users can discover and easily install them alongside other Windows apps.  
 
@@ -197,7 +199,7 @@ To read more success stories, navigate to [PWA Stats][PwaStats].
 [TrivagoSuccessStory]: https://www.thinkwithgoogle.com/intl/en-gb/marketing-strategies/app-and-mobile/trivago-embrace-progressive-web-apps-as-the-future-of-mobile/  "The next billion users: trivago embrace progressive web apps as the future of mobile | Think With Google"  
 [TinderSuccessStory]: https://medium.com/@addyosmani/a-tinder-progressive-web-app-performance-case-study-78919d98ece0 "A Tinder Progress Web App Performance Case Study | Medium.com"
 [AnatomyOfAPWA]: ./getting-started/pwa-anatomy.md "The anatomy of a PWA | Microsoft Docs"
-[PWAsOnDesktop]: ./getting-started/pwa-desktop.md "Desktop Progressive Web Apps | Microsoft Docs"
+[PWAsOnDesktop]: ./getting-started/pwa-desktop.md "Progressive Web Apps on desktop | Microsoft Docs"
 [PublishingToTheMicrosoftStore]: ./getting-started/microsoft-store.md "Publish your Progressive Web App to the Microsoft Store | Microsoft Docs"
 [GettingStarted]: ./developer-guide/index.md "Get started with Progressive Web Apps | Microsoft Docs"
 [AdvancedFeatures]: ./developer-guide/advanced-features.md "Advanced Progressive Web Apps features | Microsoft Docs"

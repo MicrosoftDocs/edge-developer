@@ -1,14 +1,14 @@
 ---
 description: This guide gives you an overview of the benefits of using PWA to build desktop applications.
-title: Desktop Progressive Web Apps
+title: Progressive Web Apps on desktop
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/02/2021
+ms.date: 09/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: progressive web apps, PWA, Edge, Windows, desktop, PWABuilder
+keywords: progressive web apps, PWA, Edge, Windows, desktop, installation, integration, microsoft store
 ---
-# Desktop Progressive Web Apps  
+# Progressive Web Apps   on desktop
 
 > [!NOTE]
 > This page focuses on the characteristics and advantages of PWAs on desktop devices. For more information about general PWA benefits, navigate to [The anatomy of a PWA][PwaAnatomy].  
@@ -26,7 +26,7 @@ With a shared codebase between your website, mobile app and desktop app (across 
 
 Your app can also be published on the [Microsoft Store][PwaMicrosoftStore], making it more familiar and trustworthy for Windows users to discover and install.  
 
-## Installation experience and Windows integration  
+## Installation experience    
 
 In Windows, PWAs are first-class app citizens and any device running Microsoft Edge gets full access to the technologies and characteristics of Progressive Web Apps.  
 
@@ -70,65 +70,57 @@ Since PWAs are deeply integrated in Windows, they show up anywhere other types o
    The list of installed apps on Windows also display PWAs  
 :::image-end:::  
 
-### Windows integration  
+## Windows integration  
 
-Like other native apps in Windows, installed PWAs are displayed in various places.  
+PWAs are displayed like native apps on Windows. They appear in the Taskbar (where they can be pinned), in the Start Menu, or when switching between apps with `Alt`+`Tab`.  
 
-:::row:::
-   :::column span="1":::
-      Task bar 
-   :::column-end:::
-   :::column span="2":::
-      :::image type="complex" source="../media/pwa-and-native-apps-in-taskbar.png" alt-text="PWAs and native apps side by side in the task bar" lightbox="../media/pwa-and-native-apps-in-taskbar.png":::
-         PWAs and native apps side by side in the task bar  
-      :::image-end:::  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="1":::
-      Start menu
-   :::column-end:::
-   :::column span="2":::
-       
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="1":::
-      Alt+tab  
-   :::column-end:::
-   :::column span="2":::
-       
-   :::column-end:::
-:::row-end:::  
-
-PWAs can also expose common tasks to users in the task bar contextual menu.
-
-:::image type="complex" source="../media/pwa-shortcuts-in-taskbar.png" alt-text="Common tasks are listed in the task bar contextual menu" lightbox="../media/pwa-shortcuts-in-taskbar.png":::
-   Common tasks are listed in the task bar contextual menu  
+:::image type="complex" source="../media/windows-start-menu.png" alt-text="PWAs and native apps side by side in the Taskbar and Start Menu" lightbox="../media/windows-start-menu.png":::
+   PWAs and native apps side by side in the Taskbar and Start Menu  
 :::image-end:::  
 
-Notification
+PWAs can also expose common tasks to users as shortcuts in the Windows Taskbar contextual menu. To learn about how to define shortcuts in your PWA, navigate to [Define app shortcuts][AppShortcutsFeature].  
 
-## Web capabilities bridging the gap to native  
+:::image type="complex" source="../media/pwa-shortcuts-in-taskbar.png" alt-text="Common tasks are listed in the Taskbar contextual menu" lightbox="../media/pwa-shortcuts-in-taskbar.png":::
+   Common tasks are listed in the Taskbar contextual menu  
+:::image-end:::  
 
-A few examples of impressive APIs that compete with native, that people might not have thought about. 
+PWAs can also display notifications in the operating system's own notification service. This helps make PWAs better integrated in Windows and makes it easy for users to easily re-engage with your app, especially when coupled with Push messages. Navigate to [Re-engage users with notifications and push messages][PushNotficationsFeature] to learn more.  
 
-* Push notifications
-* Periodic sync
-* Media: access to Bluethooth, USB
-* Intensive WebGL content
-* Native performance with WebAssembly
+:::image type="complex" source="../media/windows-action-center.png" alt-text="Notifications in Windows Action Center" lightbox="../media/windows-action-center.png":::
+   Notifications in Windows Action Center  
+:::image-end:::  
+
+## Bridging the gap to native  
+
+There are many new web capabilities built-in to Microsoft Edge that can make your app look and feel more native on Desktop and offer your users with engaging experiences.  
+
+With you PWAs, you can:
+
+*   Handle files.  
+*   Share content with other apps.  
+*   Access the clipboard.  
+*   Data sync and fetch work in the background.  
+*   Access device hardware such as Bluetooth and USB.  
+*   Store content in databases.  
+*   Take advantage of hardware accelerated graphics.  
+*   Use CSS layouts, animations, and filters to achieve a desktop look.  
+*   Run near-native performance code with WebAssembly.  
+
+There isn't much you can't do today with Web technologies, and thanks to Microsoft Edge, PWAs on desktop can take full advantage of this to bridge the gap to what users expect native apps to be capable of.
+
+Navigate to [Myth Busting PWAs][Davrous20191018MythBustingPwasNewEdgeEdition] for more information about what PWAs can do.  
 
 ## The Microsoft Store  
 
 Because PWAs are first-class citizens in the Microsoft Store, users can fully engage with them, from discovery, to installation, to execution, without ever opening the browser.  
 
-Pitch about why this is great for distributing PWAs.
+As the most used app on PCs, the Microsoft Store provides a trustworthy and familiar experience for your users to install your app. Additionally, it provides you with analytics.  
 
-Discoverability (people naturally look there), Trustworthiness, Easy install, App analytics thanks to the store.
-The Microsoft Store is now one of the most used apps on PCs  
 
 <!-- Links -->
 
 [PwaAnatomy]: ./pwa-anatomy.md "The anatomy of a PWA | Microsoft Docs"  
 [PwaMicrosoftStore]: ./microsoft-store.md "Publish your Progressive Web App to the Microsoft Store | Microsoft Docs"  
+[AppShortcutsFeature]: ../developer-guide/shortcuts.md "Define app shortcuts | Microsoft Docs"  
+[PushNotficationsFeature]: ../developer-guide/push-notifications.md "Re-engage users with notifications and push messages | Microsoft Docs"  
+[Davrous20191018MythBustingPwasNewEdgeEdition]: https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition "Myth Busting PWAs – The New Edge Edition"  

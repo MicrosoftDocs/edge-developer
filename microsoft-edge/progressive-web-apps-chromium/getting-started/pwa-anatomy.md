@@ -121,7 +121,7 @@ Desktop PWAs are supported on any of the platforms Microsoft Edge is [available]
        App menu items under settings  
     :::image-end:::  
     
-*   Apps are integrated in Windows like any other apps. Web Notifications are shown in the Windows notification system, app icons appear in the task bar, the start menu and everywhere else Windows lists apps, apps can automatically be run on login, and more.  
+*   Apps are integrated in Windows like any other apps. Web Notifications are shown in the Windows notification system, app icons appear in the Taskbar, the Start Menu and everywhere else Windows lists apps, apps can automatically be run on login, and more.  
 *   Shared cookie store with the browser profile that installed the app.  
 *   Access to other browser features using the **Setting and more** \(`...`\) menu including certificate validation, site permissions, tracking protection, and browser extensions.  
 *   Full access to [Microsoft Edge DevTools][DevtoolsProgressiveWebApps] for debugging your app.  
@@ -138,14 +138,6 @@ Microsoft Edge continuously adds new capabilities that make it easier for PWAs t
 [PwaServiceWorkers]: ../developer-guide/serviceworker.md "Use Service Workers to manage network requests and push notifications | Microsoft Docs"
 [PwaWebAppManifests]: ../developer-guide/webappmanifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"
 [PwaOfflineExperience]: ../developer-guide/offline.md "Offline and network connectivity support in Progressive Web Apps | Microsoft Docs"
-
-[WindowsUWPControlsPatternTilesNotificationsWns]: /windows/uwp/controls-and-patterns/tiles-and-notifications-windows-push-notification-services--wns--overview.md "Windows Push Notification Services (WNS) overview | Microsoft Docs"  
-[WindowsUWPDesignDevicesDesigningTv]: /windows/uwp/design/devices/designing-for-tv.md "Designing for Xbox and TV | Microsoft Docs"  
-[WindowsUWPDesignDevicesIndex]: /windows/uwp/design/devices/index.md "UI considerations for UWP devices | Microsoft Docs"  
-[WindowsUWPGetStartedGuide]: /windows/uwp/get-started/universal-application-platform-guide.md "What's a Universal Windows Platform (UWP) app? | Microsoft Docs"  
-[WindowsUWPLaunchResumeBackgroundTasks]: /windows/uwp/launch-resume/support-your-app-with-background-tasks.md "Support your app with background tasks | Microsoft Docs"  
-[WindowsUWPPublishIndex]: /windows/uwp/publish/index.md "Publish Windows apps and games | Microsoft Docs"  
-[WindowsUWPPublishDeveloperAccount]: /windows/uwp/publish/opening-a-developer-account.md "Opening a developer account | Microsoft Docs"  
 
 [WindowsBlogsWelcomingPWAsEdgeWindows]: https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/#56z7mJwKsykfbR4I.97 "Welcoming Progressive Web Apps to Microsoft Edge and Windows 10 - Windows Blogs"  
 [MicrosoftDeveloperEdgePlatformStatusBackgroundSync]: https://developer.microsoft.com/microsoft-edge/platform/status/backgroundsyncapi "Background Sync API - Microsoft Edge Platform Status"  

@@ -413,14 +413,18 @@
                   href: progressive-web-apps-chromium/developer-guide/advanced-features.md
                 - name: Origin trials
                   href: progressive-web-apps-chromium/developer-guide/origin-trials.md
+                - name: Re-engage users with notifications and push messages
+                  href: progressive-web-apps-chromium/developer-guide/push-notifications.md
                 - name: Handle files
                   href: progressive-web-apps-chromium/developer-guide/handle-files.md
                 - name: Handle URLs and protocols
                   href: progressive-web-apps-chromium/developer-guide/handle-urls-protocols.md
                 - name: Display content in the title bar
                   href: progressive-web-apps-chromium/developer-guide/window-controls-overlay.md
-                - name: Sharing with other apps
+                - name: Share with other apps
                   href: progressive-web-apps-chromium/developer-guide/share.md
+                - name: Define app shortcuts
+                  href: progressive-web-apps-chromium/developer-guide/shortcuts.md
         - name: What's new
           href: progressive-web-apps-chromium/whats-new/pwa.md
         - name: Sample PWAs

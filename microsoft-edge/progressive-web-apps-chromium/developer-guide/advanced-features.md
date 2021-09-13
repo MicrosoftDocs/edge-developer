@@ -22,10 +22,12 @@ keywords: progressive web apps, PWA, API
 
 | Feature | Description |  
 |:--- |:---  
+| [Re-engage users with notifications and push messages][PushNotifications] | Use the Push and Notifications APIs to re-engage users with your app | 
 | [Handle files][FileHandling] | Register your PWA to natively handle files | 
 | [Handle URLs and protocols][UrlsProtocolsHandling] | Register your PWA to handle URLs and protocols | 
 | [Display content in the title bar][WindowControlsOverlay] | Use the full surface area of the window your PWA is in to display content | 
-| [Sharing with other apps][Share] | Share content with other apps and accept shared content | 
+| [Share with other apps][Share] | Share content with other apps and accept shared content | 
+| [Define app shortcuts][AppShortcuts] | Define common tasks to be added to the Taskbar's contextual menu | 
 | TODO | Add more APIs and link them to docs pages |   
 
 ## Toggle experimental features  
@@ -45,7 +47,9 @@ To turn on \(or off\) experimental features in Microsoft Edge, complete the foll
 <!-- links -->  
 
 [OriginTrials]: ./origin-trials.md "Origin trials | Microsoft Docs"
+[PushNotifications]: ./push-notifications.md "Re-engage users with notifications and push messages | Microsoft Docs"
 [FileHandling]: ./handle-files.md "Handle files in Progressive Web Apps | Microsoft Docs"  
 [UrlsProtocolsHandling]: ./handle-urls-protocols.md "Handle URLs and protocols in Progressive Web Apps | Microsoft Docs"  
 [WindowControlsOverlay]: ./window-controls-overlay.md "Display content in the title bar | Microsoft Docs"  
-[Share]: ./share.md "Sharing with other apps | Microsoft Docs"  
+[Share]: ./share.md "Share with other apps | Microsoft Docs"  
+[AppShortcuts]: ./shortcuts.md "Define app shortcuts | Microsoft Docs"  

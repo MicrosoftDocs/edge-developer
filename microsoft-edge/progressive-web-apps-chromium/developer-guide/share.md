@@ -1,5 +1,5 @@
 ---
-title: Sharing with other apps
+title: Share with other apps
 description: Learn how to share content from your PWA with other apps and accept shared content from other apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, share
 ---
-# Sharing with other apps  
+# Share with other apps  
 
 Sharing content between apps was made popular by mobile devices where manipulating files or copying content is less intuitive than on desktop operating systems. On mobile, it is common to share an image to a friend using a text message for example.  
 
