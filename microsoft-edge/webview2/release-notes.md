@@ -33,7 +33,7 @@ Release Date: September 13, 2021
 
 [NuGet package for WebView2 SDK 1.0.1010-prerelease][NuGetGallery1.0.1010-prerelease]
 
-For full API compatibility, this prerelease version of the WebView2 SDK requires Microsoft Edge version 94.0.1010.0 or higher.
+For full API compatibility, this prerelease version of the WebView2 SDK requires Microsoft Edge version 95.0.1010.0 or higher.
 
 ### General  
 *   WebView2 performance improvements.
