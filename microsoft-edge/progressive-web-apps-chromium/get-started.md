@@ -3,7 +3,7 @@ description: This guide gives you an overview of PWA basics and tools for buildi
 title: Get started with Progressive Web Apps (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/16/2021
+ms.date: 09/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, service worker, push
@@ -60,7 +60,7 @@ Key parts of the PWA platform, such as [Service Workers][MDNServiceWorkerApi], r
 
 For debugging purposes, Microsoft Edge also permits `http://localhost` to use the PWA APIs.  
 
-[Publish your web app as a live site][VisualStudioNodejsTutorialPublishAzureAppService], but ensure your server is configured for HTTPS.  For example, you may create an [Azure free account][AzureCreateFreeAccount].  Host your site on the [Microsoft Azure App Service][AzureWebApps] and it is served over HTTPS by default.  
+[Publish your web app as a live site][VisualStudioNodejsTutorialPublishAzureAppService], but make sure your server is configured for HTTPS.  For example, you may create an [Azure free account][AzureCreateFreeAccount].  Host your site on the [Microsoft Azure App Service][AzureWebApps] and it is served over HTTPS by default.  
 
 The following guide, use `http://localhost` to build your PWA.  
 
@@ -115,21 +115,20 @@ Service workers are background tasks that intercept network requests from your w
     
 Service workers are defined in a special JavaScript file.  For more information, navigate to [Using Service Workers][MDNUsingServiceWorkers] and [Service Worker API][MDNServiceWorkerApi].  
 
-To build a service worker in your project, use the **Cache-first network** service worker recipe from [PWA Builder][PwaBuilderServiceWorker].  
+To build a service worker in your project, use the **Cache-first network** service worker recipe.  
 
-1.  Navigate to [pwabuilder.com/serviceworker][PwaBuilderServiceWorker], select the **Cache-first network** service worker, and select the **Download** button.  The downloaded file contains the following files:
+1. Copy the source files [pwabuilder-sw-register.js][PwaBuilderServiceWorkerRegisterJS] and [pwabuilder-sw.js][PwaBuilderServiceWorkerJS] to the `public` folder in your web app project.
     
     *   `pwabuilder-sw-register.js`  
     *   `pwabuilder-sw.js`  
-        
-1.  Copy the downloaded files to the `public` folder in your web app project.  
+         
 1.  In Visual Studio Code, open `/public/index.html` and add the following code snippet inside the `<head>` tag.  
     
     ```html
     <script type="module" src="/pwabuilder-sw-register.js"></script>
     ```  
     
-Your web app now has a service worker that uses the cache-first strategy.  You new service worker fetches resources from the cache first, and from the network only as needed.  Cached resources include images, JavaScript, CSS, and HTML.
+Your web app now has a service worker that uses the cache-first strategy.  The new service worker fetches resources from the cache first, and from the network only as needed.  Cached resources include images, JavaScript, CSS, and HTML.
 
 Use the following steps to confirm that your service worker runs.  
 
@@ -172,7 +171,7 @@ You may create PWAs that support push notifications by completing the following 
     
 Just like with Service Workers, the push notification APIs are standards-based APIs.  The push notification APIs work across browsers, so your code should work everywhere that PWAs are supported.  For more information about delivering push messages to different browsers on your server, navigate to [Web-Push][NPMWebPush].  
 
-The following steps have been adapted from the Push Rich Demo in [Service Worker Cookbook][ServiceWorkerCookbookPushRichDemo] provided by Mozilla, which has a number of other useful Web Push and service worker recipes.  
+The following steps have been adapted from the Push Rich Demo in [Service Worker Cookbook][ServiceWorkerCookbookPushRichDemo] provided by Mozilla, which has many other useful Web Push and service worker recipes.  
 
 ### Step 1 - Generate VAPID keys  
 
@@ -303,7 +302,7 @@ To test push notifications for your PWA, complete the following steps.
     
 ## Next steps  
 
-The following steps include additional tasks to help you understand building real-world PWAs.  
+The following steps include more tasks to help you understand building real-world PWAs.  
 
 *   Manage and store push subscriptions  
 *   [Encrypt][NPMWebPushEncrypt] payload data  
@@ -378,7 +377,12 @@ The following steps include additional tasks to help you understand building rea
 [ProgressiveWebApps]: https://pwa.rocks "Progressive Web Apps"  
 
 [PwaBuilder]: https://www.pwabuilder.com "PWA Builder"  
-[PwaBuilderServiceWorker]: https://www.pwabuilder.com/serviceworker "Service Worker | PWA Builder"  
+<!-- outdated link
+[PwaBuilderServiceWorker]: https://www.pwabuilder.com/serviceworker "Service Worker | PWA Builder" -->
+
+[PwaBuilderServiceWorkerJS]: https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw.js " pwabuilder-serviceworkers/pwabuilder-sw.js | GitHub"
+
+[PwaBuilderServiceWorkerRegisterJS]: https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw-register.js " pwabuilder-serviceworkers/pwabuilder-sw-register.js | GitHub"  
 
 [ServiceWorkerCookbookPushRichDemo]: https://serviceworke.rs/push-rich_demo.html "Push Rich Demo | ServiceWorker Cookbook"  
 
