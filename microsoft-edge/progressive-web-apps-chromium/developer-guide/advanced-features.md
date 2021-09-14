@@ -28,6 +28,7 @@ keywords: progressive web apps, PWA, API
 | [Display content in the title bar][WindowControlsOverlay] | Use the full surface area of the window your PWA is in to display content | 
 | [Share with other apps][Share] | Share content with other apps and accept shared content | 
 | [Define app shortcuts][AppShortcuts] | Define common tasks to be added to the Taskbar's contextual menu | 
+| [Synchronize and update in the background][BackgroundSyncs] | Synchronize content, update cache, and do long fetches in the background when connected | 
 | TODO | Add more APIs and link them to docs pages |   
 
 ## Toggle experimental features  
@@ -53,3 +54,4 @@ To turn on \(or off\) experimental features in Microsoft Edge, complete the foll
 [WindowControlsOverlay]: ./window-controls-overlay.md "Display content in the title bar | Microsoft Docs"  
 [Share]: ./share.md "Share with other apps | Microsoft Docs"  
 [AppShortcuts]: ./shortcuts.md "Define app shortcuts | Microsoft Docs"  
+[BackgroundSyncs]: ./background-syncs.md "Synchronize content, update cache, and do long fetches in the background when connected | Microsoft Docs"
