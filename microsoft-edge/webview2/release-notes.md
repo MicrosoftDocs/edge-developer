@@ -29,7 +29,7 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to
 
 ## 1.0.1010-prerelease
 
-Release Date: September 13, 2021  
+Release Date: September 14, 2021  
 
 [NuGet package for WebView2 SDK 1.0.1010-prerelease][NuGetGallery1.0.1010-prerelease]
 
