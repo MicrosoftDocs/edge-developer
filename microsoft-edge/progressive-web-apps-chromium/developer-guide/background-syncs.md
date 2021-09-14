@@ -34,6 +34,20 @@ Allowing users to continue using the app and perform actions even when offline c
 > [!NOTE]
 > The Background Sync API should be used for small amounts of data. It requires the service worker to be alive for the entire duration of the data transfer. Because devices can decide to terminate service workers to preserve battery life, the API should not be used to fetch large files. Use the Background Fetch API instead.  
 
+### Check support  
+
+While this API is available in Microsoft Edge, you should make sure it is supported in the other browsers and devices your app will end up running. This can be done by testing if the `ServiceWorkerRegistration` object has a `sync` property:  
+
+```javascript
+navigator.serviceWorker.ready.then(registration => {
+    if (registration.sync) {
+        // Background Sync is supported.
+    } else {
+        // Background Sync is not supported.
+    }
+});
+```  
+
 ### Request a sync  
 
 The first thing to do is to request a sync. This can be done by your app frontend or your service worker.  
@@ -76,7 +90,7 @@ In the example code above, a `sync` event listener is added in the service worke
 
 Typically, the `doTheWork` function will send the information to the server that couldn't be sent when the user was offline. It may be useful to store this information in [IndexedDB][MDNIndexedDB] storage from the frontend so it can later be retrieved from the service worker when `doTheWork` is executed.  
 
-For more information about the `Sync` event, the `ServiceWorkerRegistration`, and the `SyncManager` interface, navigate to the [Web Background Synchronization draft specification][WICGBackgroundSyncSpec].  
+For more information about the `Sync` event, the `ServiceWorkerRegistration`, and the `SyncManager` interface, navigate to the [Web Background Synchronization draft specification][WICGBackgroundSyncSpec] and to the [Web Background Synchronization API documentation][MDNBackgroundSync].  
 
 ## Get new content regularly with the Periodic Background Sync API  
 
@@ -85,25 +99,78 @@ The Periodic Background Sync API lets PWAs retrieve fresh content periodically, 
 > [!NOTE]
 > The periodic sync only occurs when the device is on a known network (i.e. one it has already been connected to before), and Microsoft Edge limits the frequency of the syncs to match how much the person uses the app.  
 
-**TODO**  
+### Check support  
 
-API: https://developer.mozilla.org/en-US/docs/Web/API/Web_Periodic_Background_Synchronization_API  
+To check if this API is supported in the browsers and devices your app will end up running in, test if the `ServiceWorkerRegistration` object has a `periodicSync` property:  
+
+```javascript
+navigator.serviceWorker.ready.then(registration => {
+    if (registration.periodicSync) {
+        // Periodic Background Sync is supported.
+    } else {
+        // Periodic Background Sync is not supported.
+    }
+});
+```  
+
+### Request the user permission  
+
+Periodic background synchronizations require the permission from the user. This will happen only once per application and is done using the Permissions API.  
+
+```javascript
+const status = await navigator.permissions.query({name: 'periodic-background-sync'});
+if (status.state === 'granted') {
+  // Periodic background sync can be used.
+} else {
+  // Periodic background sync cannot be used.
+}
+```  
+
+### Register a periodic sync  
+
+To register a periodic sync, you need to define a minimum interval and a unique tag name (so that multiple periodic background syncs can be registered).  
+
+```javascript
+async function registerPeriodicSync() {
+    await registration.periodicSync.register('get-daily-news', {
+        minInterval: 24 * 60 * 60 * 1000
+    });
+}
+```  
+
+The `minInterval` used in the code above corresponds to 1 day in milliseconds. This is a minimum interval only and Microsoft Edge will take other factors into account before alerting your service worker with a periodic sync event such as the network connection and whether the user regularly engages with the app.  
+
+### React to periodic sync events  
+
+When Microsoft Edge decides it is a good time to run the periodic sync, it sends a `periodicsync` event to your service worker. You can handle the event using the same tag name specified when registering the sync.  
+
+```javascript
+self.addEventListener('periodicsync', event => {
+    if (event.tag === 'get-daily-news') {
+        event.waitUntil(getDailyNewsInCache());
+    }
+});
+```
+
+The `getDailyNewsInCache` function is where you have a chance to fetch new content from the server and store it in cache. This function is expected to return a promise that signals if the sync succeeded or failed.  
+
+For more information about the `PeriodicSync` event, the `ServiceWorkerRegistration`, and the `PeriodicSyncManager` interface, navigate to the [Web Periodic Background Synchronization draft specification][WICGPeriodicBackgroundSyncSpec] and to the [Web Periodic Background Synchronization API documentation][MDNPeriodicBackgroundSync].  
 
 ## Fetch large files when the app or service worker are not running with the Background Fetch API  
 
-The Background Fetch API allows to completely delegate downloading large amounts of data to the device. This way, the app doesn't have to be used while the download is in progress, and the service worker doesn't have to be running either.  
+The Background Fetch API allows to completely delegate downloading large amounts of data to the device. This way, the app and the service worker don't have to be running while the download is in progress.  
 
-This API is useful for apps that let users download music, movies, or podcasts for offline use cases. Because the download is delegated to the system, which knows how to handle a flaky connection or even a complete loss of connectivity, it can pause and resume the download when necessary.  
+This API is useful for apps that let users download large files (like music, movies, or podcasts) for offline use cases. Because the download is delegated to the system, which knows how to handle a flaky connection or even a complete loss of connectivity, it can pause and resume the download when necessary.  
 
 **TODO**  
 
-API: https://developer.mozilla.org/en-US/docs/Web/API/Background_Fetch_API  
+For more information about the API, navigate to the [Background Fetch draft specification][WICGBackgroundFetchSpec] and to the [Background Fetch API documentation][MDNPBackgroundFetch].  
 
 ## Re-engage users with the Notifications API  
+ 
 
-(mostly link to the page about this)  
+## Demo  
 
-## Sample app  
 
 ## Debugging background tasks  
 
@@ -111,4 +178,9 @@ API: https://developer.mozilla.org/en-US/docs/Web/API/Background_Fetch_API
 <!-- Links -->
 
 [WICGBackgroundSyncSpec]: https://wicg.github.io/background-sync/spec/ "Web Background Synchronization Draft Community Group Report | WICG"  
+[WICGPeriodicBackgroundSyncSpec]: https://wicg.github.io/periodic-background-sync/ "Web Periodic Background Synchronization Draft Community Group Report | WICG"  
+[WICGBackgroundFetchSpec]: https://wicg.github.io/background-fetch/ "Background Fetch Draft Community Group Report | WICG"
 [MDNIndexedDB]: https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API "IndexedDB API - Web APIs | MDN"  
+[MDNBackgroundSync]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Background_Synchronization_API "Web Background Synchronization API - Web APIs | MDN"  
+[MDNPeriodicBackgroundSync]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Periodic_Background_Synchronization_API "Web Periodic Background Synchronization API - Web APIs | MDN"  
+[MDNPBackgroundFetch]: https://developer.mozilla.org/en-US/docs/Web/API/Background_Fetch_API "Background Fetch API - Web APIs | MDN"  
