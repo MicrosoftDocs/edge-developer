@@ -3,7 +3,7 @@ description: Resources, talks, videos, and blogs about Microsoft Edge DevTools
 title: Videos and blogs about DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/25/2021
+ms.date: 09/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -33,7 +33,8 @@ These external resources cover Microsoft Edge DevTools.
 
 | Title | Date |
 |---|---|
-| Article: [What's New With DevTools: Cross-Browser Edition](https://www.smashingmagazine.com/2021/09/devtools-cross-browser-edition/) | September 2021 |
+| [Make Microsoft Edge DevTools your own](https://blogs.windows.com/msedgedev/2021/09/14/edge-devtools-93-personalization/) | September 2021 |
+| [What's New With DevTools: Cross-Browser Edition](https://www.smashingmagazine.com/2021/09/devtools-cross-browser-edition/) <!--article--> | September 2021 |
 
 This is only a sampling.  There are many more posts at the [Microsoft Edge blog](https://blogs.windows.com/msedgedev/) and [DevTools Tips](https://devtoolstips.org).
 
