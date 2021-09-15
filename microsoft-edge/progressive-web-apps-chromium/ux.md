@@ -74,10 +74,10 @@ PWAs can also display notifications in the operating system's own notification s
    Notifications in Windows Action Center  
 :::image-end:::  
 
-<!-- Links -->
 
-[PwaAnatomy]: ./pwa-anatomy.md "The anatomy of a PWA | Microsoft Docs"  
-[PwaMicrosoftStore]: ../how-to/microsoft-store.md "Publish your Progressive Web App to the Microsoft Store | Microsoft Docs"  
-[AppShortcutsFeature]: ../how-to/shortcuts.md "Define app shortcuts | Microsoft Docs"  
-[PushNotficationsFeature]: ../how-to/push-notifications.md "Re-engage users with notifications and push messages | Microsoft Docs"  
+<!-- links -->
+[PwaMicrosoftStore]: how-to/microsoft-store.md "Publish your Progressive Web App to the Microsoft Store | Microsoft Docs"  
+[AppShortcutsFeature]: how-to/shortcuts.md "Define app shortcuts | Microsoft Docs"
+[PushNotficationsFeature]: how-to/push-notifications.md "Re-engage users with notifications and push messages | Microsoft Docs"
+<!-- external links -->
 [Davrous20191018MythBustingPwasNewEdgeEdition]: https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition "Myth Busting PWAs – The New Edge Edition"  
