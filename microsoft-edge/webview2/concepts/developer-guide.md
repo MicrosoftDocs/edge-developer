@@ -105,4 +105,4 @@ For any WebView2 app, make sure to follow our recommended WebView2 security best
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
 
-[CreateCoreWebView2Environment]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.961.33#createcorewebview2environment "CreateCoreWebView2Environment | Microsoft Docs"
+[CreateCoreWebView2Environment]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment "CreateCoreWebView2Environment | Microsoft Docs"
