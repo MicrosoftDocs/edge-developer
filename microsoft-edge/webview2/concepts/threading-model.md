@@ -28,6 +28,10 @@ The WebView2 must be created on a UI thread that uses a message pump.  All callb
 
 The only exception is for the `Content` property of `CoreWebView2WebResourceRequest`.  The `Content` property stream is read from a background thread.  The stream should be agile or should be created from a background STA, to prevent performance degradation of the UI thread.  
 
+> [!NOTE]
+> Object properties are also single threaded. 
+> Ex. Calling CoreWebView2CookieManager.GetCookiesAsync(null) from a non-Main thread will call succeeds (cookies are returned), however attempting to access the cookie's property (e.g. c.Domain) will throw an exception.
+
 ## Re-entrancy  
 
 Callbacks, including event handlers and completion handlers, run serially.  After you run an event handler and begin a message loop, an event handler or completion callback cannot be run in a re-entrant manner.  If a WebView2 app tries to create a nested message loop or modal UI synchronously within a WebView event handler, this approach leads to attempted reentrancy.  Such reentrancy isn't supported in WebView2 and would leave the event handler in the stack indefinitely.
