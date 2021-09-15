@@ -8,21 +8,15 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, desktop, installation, integration, microsoft store, ux
 ---
-# The user experience of PWAs 
+# The user experience of PWAs  
 
-## Installation experience    
+On Windows, PWAs are first-class app citizens and any device running Microsoft Edge gets full access to the technologies and characteristics of Progressive Web Apps.  
 
-In Windows, PWAs are first-class app citizens and any device running Microsoft Edge gets full access to the technologies and characteristics of Progressive Web Apps.  
-
-### Installing a PWA  
+## Installing a PWA  
 
 When Microsoft Edge determines that a website is an installable PWA, the **App available** button is displayed in the address bar.  
 
-:::image type="complex" source="./media/edge-app-available-button.png" alt-text="The App available button in Microsoft Edge address bar" lightbox="./media/edge-app-available-button.png":::
-   The **App available** button in Microsoft Edge address bar  
-:::image-end:::  
-
-Select the **App available** to install the PWA on Windows.
+Select the **App available** button to install the PWA.  
 
 :::image type="complex" source="./media/edge-app-install-flyout.png" alt-text="The installation prompt in Microsoft Edge" lightbox="./media/edge-app-install-flyout.png":::
    The installation prompt in Microsoft Edge  
@@ -38,9 +32,9 @@ To install a PWA from the Microsoft Store, select **Get** on the app page.
    Installing an app from the Microsoft Store  
 :::image-end:::  
 
-### Managing PWAs  
+## Managing PWAs  
 
-You can see the list of installed PWAs in Microsoft Edge by navigating to `edge://apps`.  
+You can find the list of installed PWAs in Microsoft Edge by navigating to `edge://apps`.  
 
 :::image type="complex" source="./media/edge-apps-listing.png" alt-text="The list of installed apps in edge://apps" lightbox="./media/edge-apps-listing.png":::
    The list of installed apps in `edge://apps`  
@@ -68,7 +62,7 @@ PWAs can also expose common tasks to users as shortcuts in the Windows Taskbar c
    Common tasks are listed in the Taskbar contextual menu  
 :::image-end:::  
 
-PWAs can also display notifications in the operating system's own notification service. This helps make PWAs better integrated in Windows and makes it easy for users to easily re-engage with your app, especially when coupled with Push messages. Navigate to [Re-engage users with notifications and push messages][PushNotficationsFeature] to learn more.  
+PWAs can also display notifications in the operating system's own notification service. This helps users re-engage with your app. Navigate to [Re-engage users with notifications and push messages][PushNotficationsFeature] to learn more.  
 
 :::image type="complex" source="./media/windows-action-center.png" alt-text="Notifications in Windows Action Center" lightbox="./media/windows-action-center.png":::
    Notifications in Windows Action Center  
