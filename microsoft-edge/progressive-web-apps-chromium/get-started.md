@@ -1,6 +1,6 @@
 ---
 description: This guide gives you an overview of PWA basics and tools for building Progressive Web Apps (Chromium) on Windows.
-title: Get started with Progressive Web Apps (Chromium)
+title: Get started with Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2021
