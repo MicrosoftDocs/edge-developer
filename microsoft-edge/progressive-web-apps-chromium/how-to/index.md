@@ -50,6 +50,58 @@ Now browse to `http://localhost:3000` to view your new web app.
    Running your new PWA on localhost  
 :::image-end:::  
 
+## Apply best practices  
+
+Before turning your site into a PWA, note that a great PWA is, before anything else, a great website that should apply web best practices such as the following.  
+
+:::row:::
+   :::column span="1":::
+      [Cross-browser compatibility][MDNCrossBrowserTesting]  
+   :::column-end:::
+   :::column span="2":::
+      Ensure your PWA works by [testing][MicrosoftDeveloperEdgeToolsRemote] in different browsers and environments.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Responsive design][WikiResponsiveWebDesign]  
+   :::column-end:::
+   :::column span="2":::
+      Employs fluid layouts and flexible images.  Responsive design includes the following elements that adapt your UX to your user's device.  
+      
+      *   CSS [grid][MDNCssGridLayout]  
+      *   [flexbox][MDNCssFlexibleBoxLayout]  
+      *   [media queries][MDNMediaQueries]  
+      *   [responsive images][MDNResponsiveImages]  
+          
+      Uses [device emulation tools][DevToolsGuideDeviceModeTestingOtherBrowsers] from your browser to locally test, or create a remote debugging session on [Windows][DevtoolsRemoteDebuggingWindows] or [Android][DevtoolsRemoteDebuggingIndex] to test directly on a target device.
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Deep linking][WikiDeepLinking]  
+   :::column-end:::
+   :::column span="2":::
+      Routes each page of your site to a unique URL so existing users may help you engage an even broader audience through social media sharing.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Offline experience][PwaOfflineExperience]  
+   :::column-end:::
+   :::column span="2":::
+      Once installed, works regardless of your users' connection status and provides a custom offline page rather than using the browser default offline page.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Validation and testing practices][Webhint]  
+   :::column-end:::
+   :::column span="2":::
+      Uses code quality tools like the [Webhint][Webhint] linter to optimize the efficiency, robustness, safety, and accessibility of your app.  
+   :::column-end:::
+:::row-end:::  
+
 ## Get started building a PWA  
 
 Now that you have a simple web app, extend it as a PWA by adding the three requirements for PWAs.  
@@ -420,3 +472,16 @@ The following steps include additional tasks to help you understand building rea
 [WebDevProgressiveWebApps]: https://developers.google.com/web/progressive-web-apps "Progressive Web Apps | web.dev"  
 
 [WikiProgressiveEnhancement]: https://en.wikipedia.org/wiki/Progressive_enhancement "Progressive enhancement | Wikipedia"  
+[DevtoolsRemoteDebuggingIndex]: ../../devtools-guide-chromium/remote-debugging/index.md "Get started with remote debugging Android devices | Microsoft Docs"  
+[DevtoolsRemoteDebuggingWindows]: ../../devtools-guide-chromium/remote-debugging/windows.md "Get Started with Remote Debugging Windows 10 Devices | Microsoft Docs"  
+[DevToolsGuideDeviceModeTestingOtherBrowsers]: ../../devtools-guide-chromium/device-mode/testing-other-browsers.md "Emulate and test other browsers | Microsoft Docs"  
+[PwaOfflineExperience]: ../how-to/offline.md "Offline and network connectivity support in Progressive Web Apps | Microsoft Docs"
+[MicrosoftDeveloperEdgeToolsRemote]: https://developer.microsoft.com/microsoft-edge/tools/remote "Instant testing"  
+[MDNCrossBrowserTesting]: https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing "Cross browser testing | MDN"  
+[MDNCssFlexibleBoxLayout]: https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout "CSS Flexible Box Layout | MDN"  
+[MDNCssGridLayout]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout "CSS Grid Layout | MDN"  
+[MDNMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries "Media queries | MDN"  
+[MDNResponsiveImages]: https://developer.mozilla.org/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images "Responsive images | MDN"  
+[Webhint]: https://webhint.io "webhint"  
+[WikiDeepLinking]: https://en.wikipedia.org/wiki/Deep_linking "Deep linking - Wikipedia"  
+[WikiResponsiveWebDesign]: https://en.wikipedia.org/wiki/Responsive_web_design "Responsive web design - Wikipedia"  

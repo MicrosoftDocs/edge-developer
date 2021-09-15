@@ -389,6 +389,8 @@
       items:
         - name: PWA overview
           href: progressive-web-apps-chromium/index.md
+        - name: The user experience of PWAs
+          href: progressive-web-apps-chromium/ux.md
         - name: How to
           items:
             - name: Get started with PWAs
