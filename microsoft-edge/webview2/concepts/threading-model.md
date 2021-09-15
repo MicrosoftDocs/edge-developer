@@ -29,7 +29,7 @@ The WebView2 must be created on a UI thread that uses a message pump.  All callb
 The only exception is for the `Content` property of `CoreWebView2WebResourceRequest`.  The `Content` property stream is read from a background thread.  The stream should be agile or should be created from a background STA, to prevent performance degradation of the UI thread.  
 
 > [!NOTE]
-> Object properties are single-threaded.  For example, calling `CoreWebView2CookieManager.GetCookiesAsync(null)` from a thread other than `Main` will succeed (that is, cookies are returned); however, attempting to access the cookie's properties (such as `c.Domain`) will throw an exception.
+> Object properties are single-threaded.  For example, calling `CoreWebView2CookieManager.GetCookiesAsync(null)` from a thread other than `Main` will succeed (that is, cookies are returned); however, attempting to access the cookies' properties (such as `c.Domain`) after such a call will throw an exception.
 
 ## Re-entrancy  
 
