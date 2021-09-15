@@ -73,12 +73,12 @@ WebView2 apps are supported by a collection of runtime processes that run alongs
 
 ## Event Handlers on the Environment Object
 
-If your app's event handlers on the [environment object][CreateCoreWebView2Environment] holds a reference to the environment object, and the app simply releases the reference to the environment and event handlers without removing the event handlers, there might be a circular reference between the environment object and handler objects which will leak memory.
+If any of your app's event handlers on the [environment object][CreateCoreWebView2Environment] hold a reference to the environment object, and the app simply releases the reference to the environment and event handlers without removing the event handlers, there might be a circular reference between the environment object and handler objects, which will leak memory.
 
-In order to prevent this:
-*   For any add event handler, remove the event handler before releasing the environment object.
-*   Avoid holding any reference to the environment object in the event handlers. The handler can access the environment object from the sender argument of the event completed callback.
-*   If the app wants to hold a reference to WebView2 objects, it should try to use a weak reference whenever possible.
+In order to prevent this memory leak:
+*   For any added event handler, remove the event handler before releasing the environment object.
+*   Avoid holding a reference to the environment object in the event handlers. The handler can access the environment object from the sender argument of the "event completed" callback.
+*   If you want the app to hold a reference to any WebView2 object, try to use a weak reference whenever possible.
 
 
 ## Follow recommended WebView2 security best practices
