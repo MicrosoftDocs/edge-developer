@@ -162,8 +162,8 @@ Confirm that your service worker runs, as follows:
 
 To create a PWA that supports push notifications:
 
-1.  Subscribe to a messaging service using the [Push API][MDNPushApi]  
-1.  Display a toast message when a message is received from the service using the [Notifications API][MDNNotificationsApi]  
+1.  Subscribe to a messaging service using the [Push API][MDNPushApi].
+1.  Display a toast message when a message is received from the service using the [Notifications API][MDNNotificationsApi].
     
 Just like with Service Workers, the push notification APIs are standards-based APIs.  The push notification APIs work across browsers, so your code should work everywhere that PWAs are supported.  For more information about delivering push messages to different browsers on your server, navigate to [Web-Push][NPMWebPush].  
 
