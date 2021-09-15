@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, service worker, push
 ---
-# Get started with Progressive Web Apps (Chromium)  
+# Get started with Progressive Web Apps
 
 Progressive Web Apps \(PWAs\) are web apps that are [progressively enhanced][WikiProgressiveEnhancement].  The progressive enhancements include app-like features, such as installation, offline support, and push notifications.  You can also package your PWA for app stores, such as Microsoft Store, Google Play, and Mac App Store.  The Microsoft Store is the commercial app store built into Windows 10.  
 
@@ -161,7 +161,7 @@ Use the following steps to confirm that your service worker runs.
     
 ## Add push notifications to your PWA  
 
-To create PWAs that support push notifications:
+To create a PWA that supports push notifications:
 
 1.  Subscribe to a messaging service using the [Push API][MDNPushApi]  
 1.  Display a toast message when a message is received from the service using the [Notifications API][MDNNotificationsApi]  
