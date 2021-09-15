@@ -52,7 +52,32 @@ Now browse to `http://localhost:3000` to view your new web app.
 
 ## Get started building a PWA  
 
-Now that you have a simple web app, extend it as a PWA by adding the three requirements for PWAs<!--[3 requirements for PWAs][ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]-->: [HTTPS](#step-1---use-https), a [Web App Manifest](#step-2---create-a-web-app-manifest), and a [Service Worker](#step-3---add-a-service-worker).  
+Now that you have a simple web app, extend it as a PWA by adding the three requirements for PWAs.  
+
+:::row:::
+   :::column span="1":::
+      [HTTPS](#step-1---use-https)  
+   :::column-end:::
+   :::column span="2":::
+      Protects your users by providing a secure connection for server or app communication.  Service Workers and other PWA technologies only work with web resources served over a secure connection \(or from `localhost` for debugging purposes\).  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Web App Manifest](#step-2---create-a-web-app-manifest)  
+   :::column-end:::
+   :::column span="2":::
+      Provides a JSON-based metadata file that describes key information about your web app, so that Windows 10 and other host platforms provide your PWA users with an installable, native app-like experience.  Key information includes icons, language, and URL entry point.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Service Worker](#step-3---add-a-service-worker)  
+   :::column-end:::
+   :::column span="2":::
+      Acts as a network proxy between your server and client app.  Service Worker threads provide offline support, resource caching, push notifications, background data sync, and  page-load performance optimizations.  
+   :::column-end:::
+:::row-end:::  
 
 ### Step 1 - Use HTTPS  
 

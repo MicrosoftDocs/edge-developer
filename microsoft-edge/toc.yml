@@ -387,46 +387,40 @@
       href: privacy-whitepaper/index.md
     - name: Progressive Web Apps
       items:
-        - name: Overview of PWA
+        - name: PWA overview
           href: progressive-web-apps-chromium/index.md
-        - name: Getting started
-          items:
-            - name: The anatomy of a PWA
-              href: progressive-web-apps-chromium/getting-started/pwa-anatomy.md
-            - name: PWAs on desktop
-              href: progressive-web-apps-chromium/getting-started/pwa-desktop.md
-            - name: Publishing PWAs to the Microsoft Store
-              href: progressive-web-apps-chromium/getting-started/microsoft-store.md
-        - name: Developer guide
+        - name: How to
           items:
             - name: Get started with PWAs
-              href: progressive-web-apps-chromium/developer-guide/index.md
-            - name: Web app manifests
-              href: progressive-web-apps-chromium/developer-guide/webappmanifests.md
-            - name: Service Workers
-              href: progressive-web-apps-chromium/developer-guide/serviceworker.md
+              href: progressive-web-apps-chromium/how-to/index.md
+            - name: Web app manifest
+              href: progressive-web-apps-chromium/how-to/webappmanifests.md
+            - name: Service Worker
+              href: progressive-web-apps-chromium/how-to/serviceworker.md
             - name: Offline scenarios
-              href: progressive-web-apps-chromium/developer-guide/offline.md
-            - name: Advanced features
+              href: progressive-web-apps-chromium/how-to/offline.md
+            - name: Publish PWAs to the Microsoft Store
+              href: progressive-web-apps-chromium/how-to/microsoft-store.md
+            - name: Origin trials
+              href: progressive-web-apps-chromium/how-to/origin-trials.md
+            - name: Integrate PWAs on desktop
               items:
                 - name: Advanced PWA features overview
-                  href: progressive-web-apps-chromium/developer-guide/advanced-features.md
-                - name: Origin trials
-                  href: progressive-web-apps-chromium/developer-guide/origin-trials.md
+                  href: progressive-web-apps-chromium/how-to/advanced-features.md
                 - name: Re-engage users with notifications and push messages
-                  href: progressive-web-apps-chromium/developer-guide/push-notifications.md
+                  href: progressive-web-apps-chromium/how-to/push-notifications.md
                 - name: Handle files
-                  href: progressive-web-apps-chromium/developer-guide/handle-files.md
+                  href: progressive-web-apps-chromium/how-to/handle-files.md
                 - name: Handle URLs and protocols
-                  href: progressive-web-apps-chromium/developer-guide/handle-urls-protocols.md
+                  href: progressive-web-apps-chromium/how-to/handle-urls-protocols.md
                 - name: Display content in the title bar
-                  href: progressive-web-apps-chromium/developer-guide/window-controls-overlay.md
+                  href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
                 - name: Share with other apps
-                  href: progressive-web-apps-chromium/developer-guide/share.md
+                  href: progressive-web-apps-chromium/how-to/share.md
                 - name: Define app shortcuts
-                  href: progressive-web-apps-chromium/developer-guide/shortcuts.md
+                  href: progressive-web-apps-chromium/how-to/shortcuts.md
                 - name: Synchronize and update in the background
-                  href: progressive-web-apps-chromium/developer-guide/background-syncs.md
+                  href: progressive-web-apps-chromium/how-to/background-syncs.md
         - name: What's new
           href: progressive-web-apps-chromium/whats-new/pwa.md
         - name: Sample PWAs
