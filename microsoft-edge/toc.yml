@@ -408,7 +408,7 @@
             - name: Integrate PWAs on desktop
               items:
                 - name: Re-engage users with notifications and push messages
-                  href: progressive-web-apps-chromium/how-to/push-notifications.md
+                  href: progressive-web-apps-chromium/how-to/notifications-badges.md
                 - name: Handle files
                   href: progressive-web-apps-chromium/how-to/handle-files.md
                 - name: Handle URLs and protocols
