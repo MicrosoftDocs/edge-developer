@@ -10,12 +10,12 @@ keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, se
 ---
 # Get started with Progressive Web Apps (Chromium)  
 
-Progressive Web Apps \(PWAs\) are web apps that are [progressively enhanced][WikiProgressiveEnhancement].  The progressive enhancements include app-like features, such as installation, offline support, and push notifications.  You may also package your PWA for app stores.  Possible app stores include the Microsoft Store, Google Play, Mac App Store, and more.  The Microsoft Store is the commercial app store built into Windows 10.  
+Progressive Web Apps \(PWAs\) are web apps that are [progressively enhanced][WikiProgressiveEnhancement].  The progressive enhancements include app-like features, such as installation, offline support, and push notifications.  You can also package your PWA for app stores, such as Microsoft Store, Google Play, and Mac App Store.  The Microsoft Store is the commercial app store built into Windows 10.  
 
 The following guide gives you an overview of PWA basics by creating a simple web app and extending it as a PWA.  The finished project works across modern browsers.  
 
 > [!TIP]
-> You may use [PWABuilder][PwaBuilder] to create a new PWA, enhance your existing PWA, or package your PWA for app stores.  
+> You can use [PWABuilder][PwaBuilder] to create a new PWA, enhance your existing PWA, or package your PWA for app stores.  
 
 ## Prerequisites  
 
@@ -60,7 +60,7 @@ Key parts of the PWA platform, such as [Service Workers][MDNServiceWorkerApi], r
 
 For debugging purposes, Microsoft Edge also permits `http://localhost` to use the PWA APIs.  
 
-[Publish your web app as a live site][VisualStudioNodejsTutorialPublishAzureAppService], but make sure your server is configured for HTTPS.  For example, you may create an [Azure free account][AzureCreateFreeAccount].  Host your site on the [Microsoft Azure App Service][AzureWebApps] and it is served over HTTPS by default.  
+[Publish your web app as a live site][VisualStudioNodejsTutorialPublishAzureAppService], but make sure your server is configured for HTTPS.  For example, you can create an [Azure free account][AzureCreateFreeAccount].  Host your site on the [Microsoft Azure App Service][AzureWebApps] and it is served over HTTPS by default.  
 
 The following guide, use `http://localhost` to build your PWA.  
 
@@ -70,7 +70,7 @@ A [Web App Manifest][MDNWebAppManifest] is a JSON file containing metadata about
 
 To add an app manifest to the web app:  
 
-1.  In Visual Studio Code, choose **File** > **Open Folder** and choose the `MySamplePwa` directory you created earlier.  
+1.  In Visual Studio Code, select **File** > **Open Folder** and then select the `MySamplePwa` directory you created earlier.  
 1.  Select `Ctrl`+`N` to create a new file, and paste in the following code snippet.  
     
     ```json
@@ -94,7 +94,7 @@ To add an app manifest to the web app:
     ```  
     
 1.  Save the file as `/MySamplePwa/public/manifest.json`.  
-1.  Add a 512x512 app icon image named `icon512.png` to `/MySamplePwa/public/images`.  You may use the [sample image](./media/progressive-web-app.png) for testing purposes.  
+1.  Add a 512x512 app icon image named `icon512.png` to `/MySamplePwa/public/images`.  You can use the [sample image](./media/progressive-web-app.png) for testing purposes.  
 1.  In Visual Studio Code, open `/public/index.html`, and add the following code snippet inside the `<head>` tag.  
     
     ```html
@@ -147,7 +147,7 @@ Use the following steps to confirm that your service worker runs.
        Service Worker cache in Microsoft Edge DevTools \(F12\)  
     :::image-end:::  
     
-1.  Try your PWA as an offline app.  In Microsoft Edge DevTools \(`F12`\), choose **Network** then change the **Online** status to **Offline**.  
+1.  Try your PWA as an offline app, as follows.  In Microsoft Edge DevTools \(`F12`\), select **Network**, and then change the **Online** status to **Offline**.  
     
     :::image type="complex" source="./media/devtools-offline.png" alt-text="Setting app to offline mode in Microsoft Edge DevTools" lightbox="./media/devtools-offline.png":::
        Setting app to offline mode in Microsoft Edge DevTools  
@@ -161,7 +161,7 @@ Use the following steps to confirm that your service worker runs.
     
 ## Add push notifications to your PWA  
 
-You may create PWAs that support push notifications by completing the following tasks.  
+To create PWAs that support push notifications:
 
 1.  Subscribe to a messaging service using the [Push API][MDNPushApi]  
 1.  Display a toast message when a message is received from the service using the [Notifications API][MDNNotificationsApi]  
@@ -176,13 +176,13 @@ Push notifications require VAPID \(Voluntary Application Server Identification\)
 
 ### Step 2 - Subscribe to push notifications  
 
-Service workers handle push events and toast notification interactions in your PWA.  To subscribe the PWA to server push notifications, ensure the following conditions are met.  
+Service workers handle push events and toast notification interactions in your PWA.  To subscribe the PWA to server push notifications, make sure the following conditions are met.  
 
-*   Your PWA is installed, active, and registered  
-*   Your code to complete the subscription task is on the main UI thread of the PWA  
-*   You have network connectivity  
+*   Your PWA is installed, active, and registered.
+*   Your code to complete the subscription task is on the main UI thread of the PWA.
+*   You have network connectivity.
     
-Before a new push subscription is created, Microsoft Edge verifies if the user granted the PWA permission to receive notifications.  If not, the user is prompted by the browser for permission.  If the permission is denied, the request to `registration.pushManager.subscribe` throws a `DOMException`, which must be handled.  For more on permission management, navigate to [Push Notifications in Microsoft Edge][WindowsBlogsWebNotificationsEdge].  
+Before a new push subscription is created, Microsoft Edge checks whether the user granted the PWA permission to receive notifications.  If not, the user is prompted by the browser for permission.  If the permission is denied, the request to `registration.pushManager.subscribe` throws a `DOMException`, which must be handled.  For more on permission management, navigate to [Push Notifications in Microsoft Edge][WindowsBlogsWebNotificationsEdge].  
 
 In your `pwabuilder-sw-register.js` file, append the following code snippet.  
 
@@ -243,7 +243,7 @@ self.addEventListener('push', function (event) {
             body: notificationText,
             icon: 'images/icon512.png'
         });
-        // Ensure the toast notification is displayed before exiting the function.
+        // Make sure the toast notification is displayed, before exiting the function.
         event.waitUntil(showNotification);
     }
 });
@@ -278,7 +278,7 @@ To test push notifications for your PWA, complete the following steps.
        Permission dialog for enabling notifications  
     :::image-end:::  
     
-1.  Simulate a server-side push notification.  With your PWA opened at `http://localhost:3000` in your browser, select `F12` to open the DevTools.  Choose **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.  
+1.  Simulate a server-side push notification, as follows.  With your PWA opened at `http://localhost:3000` in your browser, select `F12` to open the DevTools.  Select **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.  
     
     :::row:::
        :::column span="":::
