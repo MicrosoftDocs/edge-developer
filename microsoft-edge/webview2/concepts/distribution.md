@@ -270,7 +270,7 @@ Installing the Fixed Version of the WebView2 Runtime on the client causes [Micro
 
 ### Files to ship with app
 
-The WebView2Loader code needs to be shipped with the app. This can be done by [statically linking](https://docs.microsoft.com/en-us/microsoft-edge/webview2/how-to/static) WebView2Loader.lib into the app binaries, or by including the WebView2Loader.dll that matches the app's architecture. Note, the WebView2Loader.dll is a native and architecture specific binary, and so you need to include all flavors that you expect your app to run in. For example, for x86 you would include the x86 WebView2Loader.dll, and for AnyCPU you would include the x86, x64, and arm64 WebView2Loader.dlls. These are loaded from specific architecture folders.
+The WebView2Loader code needs to be shipped with the app. This can be done by [statically linking]() WebView2Loader.lib into the app binaries, or by including the WebView2Loader.dll that matches the app's architecture. Note, the WebView2Loader.dll is a native and architecture specific binary, and so you need to include all flavors that you expect your app to run in. For example, for x86 you would include the x86 WebView2Loader.dll, and for AnyCPU you would include the x86, x64, and arm64 WebView2Loader.dlls. These are loaded from specific architecture folders.
 
 Example Folder Structure:
 \<myApp>
@@ -317,3 +317,4 @@ Example Folder Structure:
 [GitHubMicrosoftEdgeWebView2SamplesWebview2Deployment]: https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment "WebView2 Deployment - MicrosoftEdge/WebView2Samples | GitHub"  
 
 [MicrosoftPlayReady]: https://www.microsoft.com/playready "Microsoft PlayReady"  
+[StaticallylinktheWebView2loaderlibrary]: /microsoft-edge/webview2/how-to/static "Statically link the WebView2 loader library"
