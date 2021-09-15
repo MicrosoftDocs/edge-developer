@@ -129,16 +129,15 @@ The following products are examples of cloud-based emulators and related product
 
 *   [BrowserStack][BrowserStack] helps you perform manual testing.  You select an operating system, a browser version, a device type, and a URL to browse, and then BrowserStack spins up a hosted virtual machine that you can interact with.  You can run multiple emulators in the same screen, to test the look and feel of your app across multiple devices at the same time.
 
-*   [Device Anywhere][AppExperience] does not use emulators, but real devices which you are able to control remotely.  This is useful when you need to reproduce a problem on a specific device and an issue might not appear in some reports.
+*   [Device Anywhere][AppExperience] doesn't use emulators, but real devices which you are able to control remotely.  This is useful when you need to reproduce a problem on a specific device and an issue might not appear in some reports.
 
-*   [LambdaTest][LambdaTest] helps you perform manual cross-browser testing on a combination of various browsers and operating systems.  Users can record videos of complex bugs and share them through integration such as Microsoft Teams, Slack, and more.  Users can speed-up their testing by running tests in parallel.
+*   [LambdaTest][LambdaTest] helps you perform manual cross-browser testing on a combination of various browsers and operating systems.  You can record videos of complex bugs and share them through integration such as Microsoft Teams, Slack, and more.  You can speed-up your testing by running tests in parallel.
 
 *   [SauceLabs][SauceLabs] enables you to run unit tests inside of an emulator, which can be useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You can also do manual testing with your site.
 
 *   [TestingBot][TestingBot] helps you do both manual testing and automated testing on various browser and operating system combinations.  Test both your websites and mobile apps on TestingBot's emulators and physical devices.
 
-The above is a representative sampling of product capabilities, not an endorsement.  We don't plan to add more products to this list.
-
+(This list is closed for additions.)
 
 <!-- ====================================================================== -->
 ## Getting in touch with the Microsoft Edge DevTools team
