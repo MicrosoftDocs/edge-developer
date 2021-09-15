@@ -118,9 +118,6 @@ Service workers are defined in a special JavaScript file.  For more information,
 To build a service worker in your project, use the **Cache-first network** service worker recipe.  
 
 1. Copy the source files [pwabuilder-sw-register.js][PwaBuilderServiceWorkerRegisterJS] and [pwabuilder-sw.js][PwaBuilderServiceWorkerJS] to the `public` folder in your web app project.
-    
-    *   `pwabuilder-sw-register.js`  
-    *   `pwabuilder-sw.js`  
          
 1.  In Visual Studio Code, open `/public/index.html` and add the following code snippet inside the `<head>` tag.  
     
