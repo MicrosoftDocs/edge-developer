@@ -401,12 +401,10 @@
               href: progressive-web-apps-chromium/how-to/offline.md
             - name: Publish PWAs to the Microsoft Store
               href: progressive-web-apps-chromium/how-to/microsoft-store.md
-            - name: Origin trials
+            - name: Experimental features and origin trials
               href: progressive-web-apps-chromium/how-to/origin-trials.md
             - name: Integrate PWAs on desktop
               items:
-                - name: Advanced PWA features overview
-                  href: progressive-web-apps-chromium/how-to/advanced-features.md
                 - name: Re-engage users with notifications and push messages
                   href: progressive-web-apps-chromium/how-to/push-notifications.md
                 - name: Handle files
@@ -423,8 +421,8 @@
                   href: progressive-web-apps-chromium/how-to/background-syncs.md
         - name: What's new
           href: progressive-web-apps-chromium/whats-new/pwa.md
-        - name: Sample PWAs
-          href: progressive-web-apps-chromium/sample-pwas.md
+        - name: Demo PWAs
+          href: progressive-web-apps-chromium/demo-pwas.md
     - name: Playwright overview
       href: playwright/index.md
     - name: Puppeteer overview
