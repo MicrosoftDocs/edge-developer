@@ -30,7 +30,7 @@ The only exception is for the `Content` property of `CoreWebView2WebResourceRequ
 
 > [!NOTE]
 > Object properties are also single threaded. 
-> Ex. Calling CoreWebView2CookieManager.GetCookiesAsync(null) from a non-Main thread will call succeeds (cookies are returned), however attempting to access the cookie's property (e.g. c.Domain) will throw an exception.
+> Ex. Calling CoreWebView2CookieManager.GetCookiesAsync(null) from a non-Main thread will succeed (cookies are returned), however attempting to access the cookie's property (e.g. c.Domain) will throw an exception.
 
 ## Re-entrancy  
 
