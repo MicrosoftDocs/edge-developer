@@ -71,6 +71,15 @@ WebView2 apps are supported by a collection of runtime processes that run alongs
 
 <!-- is the Ref link enough, or link to a long section in regular docs? -->
 
+## Event Handlers on the Environment Object
+
+If your app's event handlers on the [environment object][CreateCoreWebView2Environment] holds a reference to the environment object, and the app simply releases the reference to the environment and event handlers without removing the event handlers, there might be a circular reference between the environment object and handler objects which will leak memory.
+
+In order to prevent this:
+*   For any add event handler, remove the event handler before releasing the environment object.
+*   Avoid holding any reference to the environment object in the event handlers. The handler can access the environment object from the sender argument of the event completed callback.
+*   If the app wants to hold a reference to WebView2 objects, it should try to use a weak reference whenever possible.
+
 
 ## Follow recommended WebView2 security best practices
 
@@ -95,3 +104,5 @@ For any WebView2 app, make sure to follow our recommended WebView2 security best
 [WebView2ProcessFailedEvent]: /microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs "ICoreWebView2ProcessFailedEventArgs | Microsoft Docs"
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
+
+[CreateCoreWebView2Environment]: /microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-1.0.961.33#createcorewebview2environment "CreateCoreWebView2Environment | Microsoft Docs"
