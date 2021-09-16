@@ -61,6 +61,8 @@ The `CoreWebView2Environment` represents a user data folder and the collection o
 
 To react to crashes and hangs in the browser and renderer processes, use the `ProcessFailed` event of `CoreWebView2`.
 
+<!-- todo: Add info about the new APIs BrowserProcessExited and ProcessInfo. -->
+
 To safely shut down associated browser and renderer processes, use the `Close` method of `CoreWebView2Controller`.
 
 To open the **Browser Task Manager** window from the **DevTools** window of a WebView2 instance, do either of the following:
