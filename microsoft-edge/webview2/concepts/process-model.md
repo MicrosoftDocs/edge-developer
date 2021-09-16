@@ -33,7 +33,7 @@ A collection of WebView2 Runtime processes, or WebView2 Process Group, is compos
    Process 1  
 :::image-end:::    
 
-Other than the browser process, the number and presence of processes in this collection can change as a WebView2 application makes use of WebView2 features. For example, creating a new WebView from the same `CoreWebView2Environment` with a different domain in the `Source` property will usually start a new render process. The logic that decides when these additional processes are created depends on the Chromium architecture, and is beyond the scope of the WebView2 Runtime.
+Other than the browser process, the number and presence of processes in this collection can change as a WebView2 application makes use of WebView2 features. For example, creating a new WebView from the same `CoreWebView2Environment` with a different domain in the `Source` property will usually start a new renderer process. The logic that decides when these additional processes are created depends on the Chromium architecture, and is beyond the scope of the WebView2 Runtime.
 
 For example, the number of render processes varies based on the following conditions.  
 
