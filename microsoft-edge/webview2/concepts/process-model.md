@@ -52,7 +52,7 @@ All processes in a WebView2 Runtime processes collection are tied to the browser
 To make use of multiple User Data Folders, a WebView2 application needs to create different `CoreWebView2Environment` objects, each configured with a different User Data Folder value. When the first `WebView2` instance is created over a given User Data Folder (through the configured `CoreWebView2Environment`), the browser process for the WebView2 Runtime processes collection associacted to that UDF will be started, and all additional processes will be managed by its lifetime.
 
 <!-- TODO: update with profile info -->
-The `CoreWebView2Environment` represents a User Data Folder and the collection of processes associated to it.  A given render process is not associated to single `CoreWebView2` instance, as it can serve frames in multiple `CoreWebView2` instances using the same User Data Folder, depending on website isolation as previously described.  
+The `CoreWebView2Environment` represents a User Data Folder and the collection of processes associated to it.  A given renderer process is not associated to single `CoreWebView2` instance, as it can serve frames in multiple `CoreWebView2` instances using the same User Data Folder, depending on website isolation as previously described.  
 
 
 ## Handling process events and lifetime
