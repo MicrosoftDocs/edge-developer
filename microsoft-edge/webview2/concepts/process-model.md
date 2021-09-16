@@ -11,14 +11,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 ---
 # The WebView2 process model
 
-:::row:::
-   :::column span="1":::
-      Supported platforms:
-   :::column-end:::
-   :::column span="2":::
-      Win32, Windows Forms, WinUI, WPF
-   :::column-end:::
-:::row-end:::
+Supported platforms: Win32, Windows Forms, WinUI, WPF.
 
 The WebView2 Runtime uses the same process model as the Microsoft Edge browser.  This browser process model is described at [Inside look at modern web browser (part 1)][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture].
 
@@ -35,7 +28,7 @@ A collection of WebView2 Runtime processes, or WebView2 Process Group, is compos
    Process 1
 :::image-end:::
 
-Other than the browser process, the number and presence of processes in this collection can change as a WebView2 application makes use of WebView2 features.  For example, creating a new WebView from the same `CoreWebView2Environment` with a different domain in the `Source` property will usually start a new renderer process.  The logic that controls when these additional processes are created depends on the Chromium architecture, and is beyond the scope of the WebView2 Runtime.
+Other than the browser process, the number and presence of processes in this collection can change as a WebView2 application makes use of WebView2 features.  For example, creating a new WebView from the same `CoreWebView2Environment` with a different domain in the `Source` property will usually start a new renderer process.  The logic that controls when these extra processes are created depends on the Chromium architecture, and is beyond the scope of the WebView2 Runtime.
 
 For example, the number of renderer processes varies based on the following conditions:
 *   Use of the _Site Isolation_ feature in the WebView2 Runtime.  See [Per-frame renderer processes - Site Isolation](https://developers.google.com/web/updates/2018/09/inside-browser-part1#site-isolation).
@@ -45,7 +38,7 @@ For example, the number of renderer processes varies based on the following cond
 <!-- ====================================================================== -->
 ## WebView2 Runtime processes and the user data folder
 
-All processes in a WebView2 Runtime processes collection are tied to the browser process, which in turn is associated with a single user data folder (UDF).  If an application makes use of multiple user data folders, a WebView2 Runtime processes collection will be created for each of these user data folders. 
+All processes in a WebView2 Runtime processes collection are tied to the browser process, which in turn is associated with a single user data folder (UDF).  If an application makes use of multiple user data folders, a collection of WebView2 Runtime processes will be created for each of these user data folders.
 
 A user data folder can be shared by multiple applications, but be sure to consider the implications on performance and management, as described in [Manage the user data folder][WebView2ManageUDF].
 
@@ -55,7 +48,7 @@ A user data folder can be shared by multiple applications, but be sure to consid
 
 To make use of multiple user data folders, a WebView2 application needs to create different `CoreWebView2Environment` objects.  A `WebView2` instance is created for a given user data folder through the configured `CoreWebView2Environment` object.  Each `CoreWebView2Environment` object needs to be configured with a different user data folder value.
 
-When the first `WebView2` instance is created for a given user data folder, the browser process for the WebView2 Runtime processes collection that is associated with that UDF will be started.  All additional processes will be managed by the lifetime of that browser process.
+When the first `WebView2` instance is created for a given user data folder, the browser process for the WebView2 Runtime processes collection that is associated with that UDF will be started.  All more processes will be managed by the lifetime of that browser process.
 
 <!-- TODO: update with profile info -->
 The `CoreWebView2Environment` represents a user data folder and the collection of processes associated with it.  A given renderer process is not associated with a single `CoreWebView2` instance, because the renderer process can serve frames in multiple `CoreWebView2` instances that use the same user data folder, depending on website isolation.  See [Per-frame renderer processes - Site Isolation](https://developers.google.com/web/updates/2018/09/inside-browser-part1#site-isolation).
