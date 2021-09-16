@@ -1,5 +1,5 @@
 ---
-description: The WebView2 process model.
+description: The WebView2 Runtime process model, the user data folder, and site isolation.
 title: The WebView2 process model
 author: MSEdgeTeam
 ms.author: msedgedevrel
