@@ -38,15 +38,6 @@ For apps that don't want to ship a `WebView2Loader.dll`, complete the following 
        Inserted code snippet  
     :::image-end:::  
     
-1.  Edit the additional dependencies of the build configuration for your app.  To begin, find all of the `<AdditionalDependencies>` tags. For each, add `version.lib` as an additional dependency to every different build configuration in the `.vcxproj` file.  
-    
-    :::image type="complex" source="./media/version-lib.png" alt-text="Adding version.lib to ItemDefinitionGroups" lightbox="./media/version-lib.png":::
-       Adding `version.lib` to `ItemDefinitionGroups`  
-    :::image-end:::  
-    
-    > [!NOTE]
-    > The WebView2 team aims to automate adding the additional dependency in future releases.  
-    
 1.  Compile and run your app.  
     
 ## Getting in touch with the WebView2 team  
@@ -65,8 +56,8 @@ For apps that don't want to ship a `WebView2Loader.dll`, complete the following 
 [DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"  
-[Webview2MainNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
-[Webview2MainGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
+[Webview2MainNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2MainGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
 
 [GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"  
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  

@@ -1,17 +1,17 @@
 ---
 description: Learn how to test your website or app in Microsoft Edge or automate the browser with WebDriver
-title: Use WebDriver (Chromium) for test automation  
+title: Use WebDriver to automate Microsoft Edge  
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/24/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, html, css, javascript, developer, webdriver, selenium, testing, tools, automation, test
 ---
-# Use WebDriver (Chromium) for test automation  
+# Use WebDriver to automate Microsoft Edge  
 
-WebDriver allows developers to create automated tests that simulate user interaction.  WebDriver tests and simulations differ from JavaScript unit tests in the following ways.  
+WebDriver allows developers to automate Microsoft Edge by simulating user interaction.  WebDriver tests and simulations differ from JavaScript unit tests in the following ways.  
 
 *   Accesses functionality and information not available to JavaScript running in browsers.  
 *   Simulates user events or OS-level events more accurately.  
@@ -37,11 +37,6 @@ The functional relationship between these components is as follows.
 | Internet Explorer Driver | An implementation of the WebDriver protocol specifically for Internet Explorer.  To run legacy end-to-end tests for Internet Explorer, we recommend using Internet Explorer Driver. |
 
 The following sections describe how to get started with WebDriver for Microsoft Edge \(Chromium\).  
-
-
-## Install Microsoft Edge (Chromium)  
-
-Ensure you install [Microsoft Edge (Chromium)][MicrosoftEdge].  To confirm that you have Microsoft Edge \(Chromium\) installed, navigate to `edge://settings/help`, and verify that the version number is 75 or later.
 
 
 ## Download Microsoft Edge Driver
@@ -73,10 +68,7 @@ This article provides instructions for using the Selenium framework, but you can
 
 If you are using Selenium, the Microsoft Edge team recommends [Selenium 4.0.0-beta2][NugetPackagesSeleniumWebdriver400beta02] or later, because that version of Selenium supports Microsoft Edge \(Chromium\).  However, you can control Microsoft Edge \(Chromium\) in all older versions of Selenium, including the current stable Selenium 3 release.  
 
-> [!IMPORTANT]
-> If you previously automated or tested Microsoft Edge \(Chromium\) using `ChromeDriver` and `ChromeOptions` classes, your WebDriver code does not run on Microsoft Edge Version 80 or later.  To solve the problem, update your tests to use the `EdgeOptions` class and download [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver].  
-
-### Using Selenium 4
+### Using Selenium 4  
 
 The Selenium WebDriver testing framework can be used on any platform, and is available for Java, Python, C#, Ruby, and JavaScript.
 
@@ -397,6 +389,11 @@ For more information about Application Guard, navigate to:
 *  [Microsoft Defender Application Guard overview][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10]
 
 
+## Opt out of diagnostic data collection
+
+By default, Microsoft Edge Driver sends diagnostic data such as the status of the [New Session WebDriver command][WebDriverProtocolNewSession] to Microsoft.  To turn off the diagnostic data collection for Microsoft Edge Driver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1`.  For more information about the data that Microsoft Edge Driver collects, navigate to the [Microsoft Edge Privacy Whitepaper][MicrosoftEdgePrivacyWhitepaper].  
+
+
 ## See also
 
 *  [Selenium documentation][SeleniumDocumentation] - Information about WebDriver in the context of Selenium, and how to write automated WebDriver tests using Selenium.
@@ -414,6 +411,8 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, We
 <!-- links -->  
 [DevtoolsIndex]: ../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [WebdriverCapabilitiesEdgeOptions]: ./capabilities-edge-options.md "Capabilities and EdgeOptions | Microsoft Docs"  
+[MicrosoftEdgePrivacyWhitepaper]: /microsoft-edge/privacy-whitepaper#microsoft-edge-driver
+
 <!-- external links -->
 [DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability - Microsoft Edge - Policies | Microsoft Docs"  
 [DeployedgeMicrosoftEdgeSecurityWindowsDefenderApplicationGuard]: /deployedge/microsoft-edge-security-windows-defender-application-guard "Microsoft Edge support for Microsoft Defender Application Guard | Microsoft Docs"
@@ -458,5 +457,6 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, We
 [VisualStudio]: https://visualstudio.microsoft.com/ "Visual Studio"  
 
 [W3CWebdriver]: https://w3.org/TR/webdriver2 "WebDriver | W3C"  
+[WebDriverProtocolNewSession]: https://www.w3.org/TR/webdriver2/#new-session "8.1 New Session | W3C Working Draft 24 August 2020"
 
 [WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "Headless browser | Wikipedia"  

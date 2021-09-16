@@ -265,7 +265,11 @@ To enhance the Kids Mode experience, Microsoft Edge adds a safe keyword to the h
 1.  Choose **Settings** > **Privacy**.  
 1.  Choose **Choose what to clear**.  
     
-Kids Mode does not collect data for personalization of the news feed or other Microsoft services.  You may no change the privacy settings for Kids Mode.  Other settings like Windows Defender SmartScreen and diagnostic data are configured according to the profile in which Kids Mode was launched.  For more information about diagnostic data about how you use the browser and Windows Defender SmartScreen, navigate to the [Diagnostic Data](#diagnostic-data) and [SmartScreen](#smartscreen).  
+Kids Mode does not collect data for personalization of the news feed or other Microsoft services.  You may not change the privacy settings for Kids Mode.  Other settings like Windows Defender SmartScreen and diagnostic data are configured according to the profile in which Kids Mode was launched.  For more information about diagnostic data about how you use the browser and Windows Defender SmartScreen, navigate to the [Diagnostic Data](#diagnostic-data) and [SmartScreen](#smartscreen).  
+
+## Microsoft Edge Driver
+
+Microsoft Edge Driver allows developers to drive the Microsoft Edge browser using the [WebDriver protocol][WebDriverProtocol].  The Microsoft Edge Driver is an executable file `msedgedriver.exe` separate from Microsoft Edge that developers call from their client code, such as a test script.  By default, Microsoft Edge Driver sends diagnostic data such as the status of the [New Session WebDriver command][WebDriverProtocolNewSession] to Microsoft.  To turn off the diagnostic data collection for Microsoft Edge Driver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1`.  For more information about Microsoft Edge Driver, navigate to [Use WebDriver to automate Microsoft Edge automation][WebDriverDoc].  
 
 ## Network time  
 
@@ -554,6 +558,8 @@ User feedback is securely sent to Microsoft using HTTPS and stored on secure Mic
 [WindowsSecurityThreatProtectionIntelligenceCriteriaPotentiallyUnwanted]: /windows/security/threat-protection/intelligence/criteria#potentially-unwanted-application-pua "Potentially unwanted application (PUA) - How Microsoft identifies malware and potentially unwanted applications | Microsoft Docs"  
 [WindowsSecurityThreatProtectionWindowsDefender]: /windows/security/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus "Detect and block potentially unwanted applications | Microsoft Docs"  
 
+[WebDriverDoc]: /microsoft-edge/webdriver-chromium "Use WebDriver to automate Microsoft Edge | Microsoft Docs"
+
 [BingMain]: https://bing.com "Bing"  
 
 [ChromiumMain]: https://www.chromium.org "The Chromium Projects"  
@@ -583,6 +589,9 @@ User feedback is securely sent to Microsoft using HTTPS and stored on secure Mic
 
 [W3cEncryptedMediaPrivacy]: https://w3.org/TR/encrypted-media#privacy "11. Privacy - Encrypted Media Extensions | W3C"  
 [W3cGeolocationApiMain]: https://w3.org/TR/geolocation-api "Geolocation API Specification 2nd Edition | W3C"  
+
+[WebDriverProtocol]: https://www.w3.org/TR/webdriver2/ "WebDriver | W3C Working Draft 24 August 2020"
+[WebDriverProtocolNewSession]: https://www.w3.org/TR/webdriver2/#new-session "8.1 New Session | W3C Working Draft 24 August 2020"
 
 [TwitterMsedgedev]: https://www.twitter.com/MSEdgeDev "Microsoft Edge Dev | Twitter"  
 

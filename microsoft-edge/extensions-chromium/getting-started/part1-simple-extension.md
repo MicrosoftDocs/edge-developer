@@ -12,14 +12,13 @@ keywords: edge-chromium, web development, html, css, javascript, developer, exte
 
 ## Overview  
 
-The goal for this tutorial is to build a Microsoft Edge (Chromium) extension starting with an empty directory.  You are building an extension that pops up the NASA picture of the day. 
-In this tutorial, learn how to create an extension by completing the following actions.  
+The goal for this tutorial is to build a Microsoft Edge (Chromium) extension, starting with an empty directory.  You are building an extension that pops up the NASA picture of the day.  In this tutorial, you'll learn how to create an extension by:
 
 *   Creating a `manifest.json` file.  
 *   Adding icons.  
 *   Opening a default pop-up dialog.  
 
-## Before you Begin
+## Before you begin
 
 To test out the completed extension that you are building in this tutorial, download the [source code][ArchiveExtensionGettingStartedPart1].  
 

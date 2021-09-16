@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, emulation, devic
 ---
 # Emulate dual-screen and foldable devices in Microsoft Edge DevTools  
 
-In Microsoft Edge version 89 or later, you may emulate the following dual-screen and foldable devices.  
+You can emulate the following dual-screen and foldable devices in Microsoft Edge DevTools.  
 
 *   [Surface Duo][SurfaceDevicesDuo]  
 *   [Samsung Galaxy Fold][SamsungMobileGalaxyFold]  

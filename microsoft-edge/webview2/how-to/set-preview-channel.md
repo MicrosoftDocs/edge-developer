@@ -196,7 +196,7 @@ To undo the above setting, run the following command:
 
 `REG DELETE HKLM\Software\Policies\Microsoft\Edge\WebView2\BrowserExecutableFolder /f`
 
-### Registry override: browser executable folder
+### Registry override: release channel preference
 
 To make your application use a Microsoft Edge preview channel by using a registry override that changes the release channel preference by changing the order of searching for a channel:
 

@@ -1,21 +1,21 @@
 ---
 description: This guide gives you an overview of PWA basics and tools for building Progressive Web Apps (Chromium) on Windows.
-title: Get started with Progressive Web Apps (Chromium)
+title: Get started with Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/16/2021
+ms.date: 09/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, service worker, push
 ---
-# Get started with Progressive Web Apps (Chromium)  
+# Get started with Progressive Web Apps
 
-Progressive Web Apps \(PWAs\) are web apps that are [progressively enhanced][WikiProgressiveEnhancement].  The progressive enhancements include app-like features, such as installation, offline support, and push notifications.  You may also package your PWA for app stores.  Possible app stores include the Microsoft Store, Google Play, Mac App Store, and more.  The Microsoft Store is the commercial app store built into Windows 10.  
+Progressive Web Apps \(PWAs\) are web apps that are [progressively enhanced][WikiProgressiveEnhancement].  The progressive enhancements include app-like features, such as installation, offline support, and push notifications.  You can also package your PWA for app stores, such as Microsoft Store, Google Play, and Mac App Store.  The Microsoft Store is the commercial app store built into Windows 10.  
 
 The following guide gives you an overview of PWA basics by creating a simple web app and extending it as a PWA.  The finished project works across modern browsers.  
 
 > [!TIP]
-> You may use [PWABuilder][PwaBuilder] to create a new PWA, enhance your existing PWA, or package your PWA for app stores.  
+> You can use [PWABuilder][PwaBuilder] to create a new PWA, enhance your existing PWA, or package your PWA for app stores.  
 
 ## Prerequisites  
 
@@ -60,7 +60,7 @@ Key parts of the PWA platform, such as [Service Workers][MDNServiceWorkerApi], r
 
 For debugging purposes, Microsoft Edge also permits `http://localhost` to use the PWA APIs.  
 
-[Publish your web app as a live site][VisualStudioNodejsTutorialPublishAzureAppService], but ensure your server is configured for HTTPS.  For example, you may create an [Azure free account][AzureCreateFreeAccount].  Host your site on the [Microsoft Azure App Service][AzureWebApps] and it is served over HTTPS by default.  
+[Publish your web app as a live site][VisualStudioNodejsTutorialPublishAzureAppService], but make sure your server is configured for HTTPS.  For example, you can create an [Azure free account][AzureCreateFreeAccount].  Host your site on the [Microsoft Azure App Service][AzureWebApps] and it is served over HTTPS by default.  
 
 The following guide, use `http://localhost` to build your PWA.  
 
@@ -70,7 +70,7 @@ A [Web App Manifest][MDNWebAppManifest] is a JSON file containing metadata about
 
 To add an app manifest to the web app:  
 
-1.  In Visual Studio Code, choose **File** > **Open Folder** and choose the `MySamplePwa` directory you created earlier.  
+1.  In Visual Studio Code, select **File** > **Open Folder** and then select the `MySamplePwa` directory you created earlier.  
 1.  Select `Ctrl`+`N` to create a new file, and paste in the following code snippet.  
     
     ```json
@@ -94,7 +94,7 @@ To add an app manifest to the web app:
     ```  
     
 1.  Save the file as `/MySamplePwa/public/manifest.json`.  
-1.  Add a 512x512 app icon image named `icon512.png` to `/MySamplePwa/public/images`.  You may use the [sample image](./media/progressive-web-app.png) for testing purposes.  
+1.  Add a 512x512 app icon image named `icon512.png` to `/MySamplePwa/public/images`.  You can use the [sample image](./media/progressive-web-app.png) for testing purposes.  
 1.  In Visual Studio Code, open `/public/index.html`, and add the following code snippet inside the `<head>` tag.  
     
     ```html
@@ -103,37 +103,32 @@ To add an app manifest to the web app:
     
 ### Step 3 - Add a Service Worker  
 
-Service workers are the key technology behind PWAs, enabling scenarios like offline support, advanced caching, and running background tasks previously limited to native apps.  
+Service workers are the key technology behind PWAs, enabling scenarios that were previously limited to native apps, such as offline support, advanced caching, and running background tasks.
 
-Service workers are background tasks that intercept network requests from your web app.  Service workers attempt to complete tasks, even when your PWA is not running.  Tasks include the following actions.  
+Service workers are background tasks that intercept network requests from your web app.  Service workers attempt to complete tasks, even when your PWA is not running.  Tasks include:
 
-*   Serving requested resources from a cache  
-*   Sending push notifications  
-*   Running background fetch tasks  
-*   Badging icons  
-*   and more  
-    
+*   Serving requested resources from a cache.
+*   Sending push notifications.
+*   Running background fetch tasks.
+*   Badging icons.
+
 Service workers are defined in a special JavaScript file.  For more information, navigate to [Using Service Workers][MDNUsingServiceWorkers] and [Service Worker API][MDNServiceWorkerApi].  
 
-To build a service worker in your project, use the **Cache-first network** service worker recipe from [PWA Builder][PwaBuilderServiceWorker].  
+To build a service worker in your project, use the **Cache-first network** service worker recipe from PWA Builder, as follows.
 
-1.  Navigate to [pwabuilder.com/serviceworker][PwaBuilderServiceWorker], select the **Cache-first network** service worker, and select the **Download** button.  The downloaded file contains the following files:
-    
-    *   `pwabuilder-sw-register.js`  
-    *   `pwabuilder-sw.js`  
-        
-1.  Copy the downloaded files to the `public` folder in your web app project.  
+1. Copy the source files [pwabuilder-sw-register.js][PwaBuilderServiceWorkerRegisterJS] and [pwabuilder-sw.js][PwaBuilderServiceWorkerJS] to the `public` folder in your web app project.
+         
 1.  In Visual Studio Code, open `/public/index.html` and add the following code snippet inside the `<head>` tag.  
     
     ```html
     <script type="module" src="/pwabuilder-sw-register.js"></script>
     ```  
     
-Your web app now has a service worker that uses the cache-first strategy.  You new service worker fetches resources from the cache first, and from the network only as needed.  Cached resources include images, JavaScript, CSS, and HTML.
+Your web app now has a service worker that uses the cache-first strategy.  The new service worker fetches resources from the cache first, and from the network only as needed.  Cached resources include images, JavaScript, CSS, and HTML.
 
-Use the following steps to confirm that your service worker runs.  
+Confirm that your service worker runs, as follows:
 
-1.  Navigate to your web app using `http://localhost:3000`.  If your web app is not available, run the following command.   
+1.  Navigate to your web app using `http://localhost:3000`.  If your web app is not available, run the following command.
     
     ```shell
     npm start
@@ -151,13 +146,13 @@ Use the following steps to confirm that your service worker runs.
        Service Worker cache in Microsoft Edge DevTools \(F12\)  
     :::image-end:::  
     
-1.  Try your PWA as an offline app.  In Microsoft Edge DevTools \(`F12`\), choose **Network** then change the **Online** status to **Offline**.  
+1.  Try your PWA as an offline app, as follows.  In Microsoft Edge DevTools \(`F12`\), select **Network**, and then change the **Online** status to **Offline**.  
     
     :::image type="complex" source="./media/devtools-offline.png" alt-text="Setting app to offline mode in Microsoft Edge DevTools" lightbox="./media/devtools-offline.png":::
        Setting app to offline mode in Microsoft Edge DevTools  
     :::image-end:::  
     
-1.  Refresh your app and it should display the offline mechanism for serving the resources of your app from the cache.  
+1.  Refresh your app.  It should display the offline mechanism for serving the resources of your app from the cache.  
     
     :::image type="complex" source="./media/visual-studio-nodejs-express-index.png" alt-text="PWA running offline" lightbox="./media/visual-studio-nodejs-express-index.png":::
        PWA running offline  
@@ -165,14 +160,14 @@ Use the following steps to confirm that your service worker runs.
     
 ## Add push notifications to your PWA  
 
-You may create PWAs that support push notifications by completing the following tasks.  
+To create a PWA that supports push notifications:
 
-1.  Subscribe to a messaging service using the [Push API][MDNPushApi]  
-1.  Display a toast message when a message is received from the service using the [Notifications API][MDNNotificationsApi]  
+1.  Subscribe to a messaging service using the [Push API][MDNPushApi].
+1.  Display a toast message when a message is received from the service using the [Notifications API][MDNNotificationsApi].
     
 Just like with Service Workers, the push notification APIs are standards-based APIs.  The push notification APIs work across browsers, so your code should work everywhere that PWAs are supported.  For more information about delivering push messages to different browsers on your server, navigate to [Web-Push][NPMWebPush].  
 
-The following steps have been adapted from the Push Rich Demo in [Service Worker Cookbook][ServiceWorkerCookbookPushRichDemo] provided by Mozilla, which has a number of other useful Web Push and service worker recipes.  
+The following steps have been adapted from the Push Rich Demo in [Service Worker Cookbook][ServiceWorkerCookbookPushRichDemo] provided by Mozilla, which has many other useful Web Push and service worker recipes.  
 
 ### Step 1 - Generate VAPID keys  
 
@@ -180,13 +175,13 @@ Push notifications require VAPID \(Voluntary Application Server Identification\)
 
 ### Step 2 - Subscribe to push notifications  
 
-Service workers handle push events and toast notification interactions in your PWA.  To subscribe the PWA to server push notifications, ensure the following conditions are met.  
+Service workers handle push events and toast notification interactions in your PWA.  To subscribe the PWA to server push notifications:
 
-*   Your PWA is installed, active, and registered  
-*   Your code to complete the subscription task is on the main UI thread of the PWA  
-*   You have network connectivity  
+*   Make sure your PWA is installed, active, and registered.
+*   Make sure your code to complete the subscription task is on the main UI thread of the PWA.
+*   Make sure you have network connectivity.
     
-Before a new push subscription is created, Microsoft Edge verifies if the user granted the PWA permission to receive notifications.  If not, the user is prompted by the browser for permission.  If the permission is denied, the request to `registration.pushManager.subscribe` throws a `DOMException`, which must be handled.  For more on permission management, navigate to [Push Notifications in Microsoft Edge][WindowsBlogsWebNotificationsEdge].  
+Before a new push subscription is created, Microsoft Edge checks whether the user granted the PWA permission to receive notifications.  If not, the user is prompted by the browser for permission.  If the permission is denied, the request to `registration.pushManager.subscribe` throws a `DOMException`, which must be handled.  For more on permission management, navigate to [Push Notifications in Microsoft Edge][WindowsBlogsWebNotificationsEdge].  
 
 In your `pwabuilder-sw-register.js` file, append the following code snippet.  
 
@@ -230,11 +225,11 @@ For more information, navigate to [PushManager][MDNPushManager] and [Web-Push][N
 
 ### Step 3 - Listen for push notifications  
 
-After a subscription is created in your PWA, add handlers to the service worker to respond to push events.  Push event are sent from the server to display toast notifications.  Toast notifications display data for a received message.  To complete the following tasks, you must add a `click` handler.  
+After a subscription is created in your PWA, add handlers to the service worker to respond to push events.  Push event are sent from the server to display toast notifications.  Toast notifications display data for a received message.  To complete any of the following tasks, you must add a `click` handler:
 
-*   Dismiss the toast notification  
-*   Open, focus, or open and focus any open windows  
-*   Open and focus a new window to display a PWA client page  
+*   Dismissing the toast notification.
+*   Opening, focusing, or opening and focusing any open windows.
+*   Opening and focusing a new window to display a PWA client page.
     
 In your `pwabuilder-sw.js` file, add the following handlers.  
 
@@ -247,7 +242,7 @@ self.addEventListener('push', function (event) {
             body: notificationText,
             icon: 'images/icon512.png'
         });
-        // Ensure the toast notification is displayed before exiting the function.
+        // Make sure the toast notification is displayed, before exiting the function.
         event.waitUntil(showNotification);
     }
 });
@@ -274,7 +269,7 @@ self.addEventListener('notificationclick', function (event) {
 
 ### Step 4 - Try it out  
 
-To test push notifications for your PWA, complete the following steps.  
+To test push notifications for your PWA:
 
 1.  Navigate to your PWA at `http://localhost:3000`.  When your service worker activates and attempts to subscribe your PWA to push notifications, Microsoft Edge prompts you to allow your PWA to show notifications.  Select **Allow**.  
     
@@ -282,7 +277,7 @@ To test push notifications for your PWA, complete the following steps.
        Permission dialog for enabling notifications  
     :::image-end:::  
     
-1.  Simulate a server-side push notification.  With your PWA opened at `http://localhost:3000` in your browser, select `F12` to open the DevTools.  Choose **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.  
+1.  Simulate a server-side push notification, as follows.  With your PWA opened at `http://localhost:3000` in your browser, select `F12` to open the DevTools.  Select **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.  
     
     :::row:::
        :::column span="":::
@@ -303,14 +298,14 @@ To test push notifications for your PWA, complete the following steps.
     
 ## Next steps  
 
-The following steps include additional tasks to help you understand building real-world PWAs.  
+To build a robust, real-world PWA, consider the following:
 
-*   Manage and store push subscriptions  
-*   [Encrypt][NPMWebPushEncrypt] payload data  
-*   Responsive design  
-*   Deep-linking  
-*   [Cross-browser testing][BrowserStackTestEdgeBrowser]  
-*   Implement validation and testing practices such as [Webhint][Webhint]  
+*   Managing and storing push subscriptions.
+*   [Encrypting][NPMWebPushEncrypt] payload data.
+*   Responsive design.
+*   Deep-linking.
+*   [Cross-browser testing][BrowserStackTestEdgeBrowser].
+*   Validation and testing practices such as [Webhint][Webhint].
     
 ## See also  
 
@@ -378,7 +373,12 @@ The following steps include additional tasks to help you understand building rea
 [ProgressiveWebApps]: https://pwa.rocks "Progressive Web Apps"  
 
 [PwaBuilder]: https://www.pwabuilder.com "PWA Builder"  
-[PwaBuilderServiceWorker]: https://www.pwabuilder.com/serviceworker "Service Worker | PWA Builder"  
+<!-- outdated link
+[PwaBuilderServiceWorker]: https://www.pwabuilder.com/serviceworker "Service Worker | PWA Builder" -->
+
+[PwaBuilderServiceWorkerJS]: https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw.js " pwabuilder-serviceworkers/pwabuilder-sw.js | GitHub"
+
+[PwaBuilderServiceWorkerRegisterJS]: https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw-register.js " pwabuilder-serviceworkers/pwabuilder-sw-register.js | GitHub"  
 
 [ServiceWorkerCookbookPushRichDemo]: https://serviceworke.rs/push-rich_demo.html "Push Rich Demo | ServiceWorker Cookbook"  
 
