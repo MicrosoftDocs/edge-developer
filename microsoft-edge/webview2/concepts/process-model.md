@@ -19,7 +19,7 @@ The WebView2 Runtime uses the same process model as the Microsoft Edge browser. 
 <!-- ====================================================================== -->
 ## Processes in the WebView2 Runtime
 
-A collection of WebView2 Runtime processes is called a _WebView2 process group_.  A WebView2 process group is composed of the following processes:
+A _WebView2 process group_ is a collection of WebView2 Runtime processes.  A WebView2 process group includes the following:
 *  A single browser process.
 *  One or more renderer processes.
 *  Other helper processes, such as the GPU process and the Audio service process.
