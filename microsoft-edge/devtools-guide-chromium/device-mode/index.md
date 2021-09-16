@@ -109,7 +109,7 @@ Test your webpage in landscape orientation.
     :::image-end:::  
     
 > [!NOTE]
-> The **Rotate** button disappears if your **Device Toolbar** is narrow.  
+> The **Rotate** button disappears if your **Device Toolbar** is narrow. To access the **Rotate** button, increase the width of the **Device Toolbar**.  
 
 :::image type="complex" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="The Device Toolbar" lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
    The **Device Toolbar**  
