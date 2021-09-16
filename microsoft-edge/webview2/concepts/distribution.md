@@ -247,7 +247,9 @@ To use the Fixed Version distribution mode:
     
 ### Known issues for Fixed Version  
 
-Installing the Fixed Version of the WebView2 Runtime on the client causes [Microsoft PlayReady][MicrosoftPlayReady] to stop working.  Fix the PlayReady setup as follows.
+*   Currently, Fixed Version cannot be run from a network location or UNC path. 
+ 
+*   Installing the Fixed Version of the WebView2 Runtime on the client causes [Microsoft PlayReady][MicrosoftPlayReady] to stop working.  Fix the PlayReady setup as follows.
 
 1.  Locate the path where you deploy the Fixed Version package on the user's device, such as the following location.
     

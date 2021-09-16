@@ -115,7 +115,6 @@ The following table lists the shortcuts that are always turned off in WebView2. 
 | Help | `F1` |  
 | Focus Next Pane `*` | `F6` |  
 | Focus Previous Pane `*` | `Shift`+`F6` |  
-| Caret Browsing `*` | `F7` |  
 | Reading View `*` | `F9` |  
 | Focus Menu Bar | `F10` |  
 | Show Identity Menu `*` | `Ctrl`+`Shift`+`M` |  
