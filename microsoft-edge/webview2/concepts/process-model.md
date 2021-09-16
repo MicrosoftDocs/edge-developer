@@ -30,7 +30,7 @@ A collection of WebView2 Runtime processes is called a _WebView2 process group_.
 
 The number and presence of processes in a WebView2 process group can change as a WebView2 application makes use of WebView2 features.  (However, there's only a single, specific browser process in a WebView2 process group.)  For example, creating a new WebView from the same `CoreWebView2Environment`, but with a different domain in the `Source` property, will usually start a new renderer process.
 
-For example, the number of renderer processes varies based on the following conditions:
+The number of renderer processes can vary based on the following conditions:
 *   Use of the _Site Isolation_ feature in the WebView2 Runtime.  See [Per-frame renderer processes - Site Isolation](https://developers.google.com/web/updates/2018/09/inside-browser-part1#site-isolation).
 *   The number of distinct disconnected origins that are rendered in instances of WebView2 that use the same user data folder.
 
