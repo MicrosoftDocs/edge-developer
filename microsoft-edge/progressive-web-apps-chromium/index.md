@@ -1,6 +1,6 @@
 ---
-description: Progressive Web Apps (Chromium) run natively on Windows 10.  Here is everything you need to know as a web developer.
-title: Progressive Web Apps overview
+description: Progressive Web Apps run natively on Windows 10.  Here is everything you need to know as a web developer.
+title: Overview of Progressive Web Apps (PWAs)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/10/2021
@@ -9,9 +9,9 @@ ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, UWP, Microsoft Store
 ---
-# Progressive Web Apps overview  
+# Overview of Progressive Web Apps (PWAs)  
 
-**[Progressive Web Apps][MDNApps]** \(PWAs\) provide access to open web technologies for cross-platform interoperability and provide your users with a native, app-like experience customized for their devices. 
+**[Progressive Web Apps][MDNApps]** (PWAs) provide access to open web technologies for cross-platform interoperability and provide your users with a native, app-like experience customized for their devices. 
 
 PWAs are websites that are **[progressively enhanced][AListApartUnderstandingProgressiveEnhancement]** to function like native apps on supporting platforms, and like regular web sites on other browsers.  
 

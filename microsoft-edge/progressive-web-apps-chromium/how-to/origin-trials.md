@@ -16,6 +16,8 @@ Some of the PWA features in Microsoft Edge are still experimental. Experimental 
 *   By enabling the corresponding flag in Microsoft Edge.
 *   By enrolling your site in an origin trial to test features in production with your users.  
 
+
+<!-- ====================================================================== -->
 ## Toggle experimental features  
 
 To turn on \(or off\) experimental features in Microsoft Edge, complete the following steps.  
@@ -25,17 +27,31 @@ To turn on \(or off\) experimental features in Microsoft Edge, complete the foll
 1.  Navigate to the relevant experiment.  
 1.  Select the dropdown menu next to the experiment description and select **Enabled** to enable the feature or **Disabled** to disable it.  
     
-    :::image type="complex" source="../media/turn-on-experimental-flag.png" alt-text="Choose Enabled to turn on an experiment" lightbox="../media/turn-on-experimental-flag.png":::
-       Choose **Enabled** to turn on an experiment  
+    :::image type="complex" source="../media/turn-on-experimental-flag.png" alt-text="Select Enabled to turn on an experiment" lightbox="../media/turn-on-experimental-flag.png":::
+       Select **Enabled** to turn on an experiment  
     :::image-end:::  
 
+
+<!-- ====================================================================== -->
 ## Enroll your site in an origin trial  
 
-Microsoft Edge sometimes uses origin trials to test features for specific domains or websites.  
-
-If you're a website owner, you can use an origin trial for your website to apply a specific feature in production. An origin trial provides features to a percentage of Microsoft Edge users who visit your website.  
+Microsoft Edge sometimes uses origin trials to test features for specific domains or websites. You may want to use an origin trial for your website to apply a specific feature. If you're a website owner, you can enroll in an origin trial. An origin trial provides features to a percentage of Microsoft Edge users who visit your website.  
 
 For more information about Origin Trials, navigate to [Microsoft Edge Origin Trials Developer Console][MicrosoftDeveloperMicrosoftEdgeOriginTrials].  
+
+
+<!-- ====================================================================== -->
+## Features that are available to test
+
+The following list describes experimental web app features that are available to test and validate on Microsoft Edge. To enable them, navigate to [Toggle experimental features](#toggle-experimental-features).  
+
+| Feature | Platform |
+|:--- |:--- |
+| [URI Protocol Handling](handle-urls-protocols.md) | Windows and Linux |
+| [URL Link Handling](handle-urls-protocols.md) | Windows|
+| [Window Controls Overlay for Desktop Apps](window-controls-overlay.md) | Windows 10|
+| [The Shortcuts object in the manifest](shortcuts.md) | All |
+| [File Handling](handle-files.md) | All Desktop |
 
 <!-- Links -->
 

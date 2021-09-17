@@ -387,7 +387,7 @@
       href: privacy-whitepaper/index.md
     - name: Progressive Web Apps
       items:
-        - name: PWA overview
+        - name: Overview of Progressive Web Apps (PWAs)
           href: progressive-web-apps-chromium/index.md
         - name: The user experience of PWAs
           href: progressive-web-apps-chromium/ux.md
@@ -407,7 +407,7 @@
               href: progressive-web-apps-chromium/how-to/origin-trials.md
             - name: Integrate PWAs on desktop
               items:
-                - name: Re-engage users with notifications and push messages
+                - name: Re-engage users with notifications, push messages, and badges
                   href: progressive-web-apps-chromium/how-to/notifications-badges.md
                 - name: Handle files
                   href: progressive-web-apps-chromium/how-to/handle-files.md
@@ -421,6 +421,8 @@
                   href: progressive-web-apps-chromium/how-to/shortcuts.md
                 - name: Synchronize and update in the background
                   href: progressive-web-apps-chromium/how-to/background-syncs.md
+                - name: Run on OS login
+                  href: progressive-web-apps-chromium/how-to/run-on-os-login.md
         - name: What's new
           href: progressive-web-apps-chromium/whats-new/pwa.md
         - name: Demo PWAs

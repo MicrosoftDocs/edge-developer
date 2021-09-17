@@ -62,12 +62,14 @@ PWAs can also expose common tasks to users as shortcuts in the Windows Taskbar c
    Common tasks are listed in the Taskbar contextual menu  
 :::image-end:::  
 
-PWAs can also display notifications in the operating system's own notification service. This helps users re-engage with your app. Navigate to [Re-engage users with notifications and push messages][PushNotficationsFeature] to learn more.  
+PWAs can also display notifications in the operating system's own notification service. This helps users re-engage with your app. Navigate to [Re-engage users with notifications, push messages, and badges][PushNotficationsFeature] to learn more.  
 
 :::image type="complex" source="./media/windows-action-center.png" alt-text="Notifications in Windows Action Center" lightbox="./media/windows-action-center.png":::
    Notifications in Windows Action Center  
 :::image-end:::  
 
 
+<!-- Links -->
+
 [AppShortcutsFeature]: ./how-to/shortcuts.md "Define app shortcuts | Microsoft Docs"  
-[PushNotficationsFeature]: ./how-to/push-notifications.md "Re-engage users with notifications and push messages | Microsoft Docs"  
+[PushNotficationsFeature]: ./how-to/notifications-badges.md "Re-engage users with notifications, push messages, and badges | Microsoft Docs"  
