@@ -3,7 +3,7 @@ description: Learn how to debug WebView2 controls.
 title: Get started debugging WebView2 applications
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 09/15/2021
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -89,7 +89,10 @@ Complete the following actions to debug your WebView2 app.
     :::image type="complex" source="./media/console.png" alt-text=" Visual Studio Debug Console" lightbox="./media/console.png"::: 
        Visual Studio **Debug Console**  
     :::image-end:::  
-    
+
+> [!NOTE]
+> If you use the WebView2 [SetVirtualHostNameToFolderMapping][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Setvirtualhostnametofoldermapping] method, the debugger in Visual Studio 2019 doesn't understand the virtual source path mapping, so breakpoints don't work correctly.  This source path mapping works when you use the debugger in Visual Studio Code.
+
 ## [Visual Studio Code](#tab/visualstudiocode)  
 
 Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.  <!--Ensure that you're using Visual Studio Code version [insert build here] or later.  -->  
@@ -232,6 +235,7 @@ In Visual Studio Code, complete the following actions to debug your code.
     
     *   The debugger doesn't stop at the breakpoint, and you have debug output.  To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.  The debugger doesn't perform source path mapping.  
     *   You can't attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  For more information, navigate to [additionalBrowserArguments for dotnet][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] and [additionalBrowserArguments for Win32][Webview2ReferenceWin32Webview2IdlParameters].  
+
         
 * * *  
 
@@ -250,6 +254,7 @@ In Visual Studio Code, complete the following actions to debug your code.
 
 [DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
+[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Setvirtualhostnametofoldermapping]: /dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping "CoreWebView2.SetVirtualHostNameToFolderMapping(String, String, CoreWebView2HostResourceAccessKind) Method (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
 [Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: /dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments "CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
 [Webview2ReferenceWin32Webview2IdlParameters]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions  "CreateCoreWebView2Environment - Globals | Microsoft Docs"  
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"  
