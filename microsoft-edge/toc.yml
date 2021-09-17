@@ -440,7 +440,7 @@
               href: webview2/how-to/debug.md
             - name: Automate with Edge Driver
               href: webview2/how-to/webdriver.md
-            - name: Use Chromium DevTools Protocol in WebView2
+            - name: Use Chrome DevTools Protocol in WebView2
               href: webview2/how-to/chromium-devtools-protocol.md
             - name: Switch to a preview channel
               href: webview2/how-to/set-preview-channel.md

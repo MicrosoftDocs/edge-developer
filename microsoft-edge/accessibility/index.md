@@ -68,4 +68,3 @@ For information on which new HTML features are accessibly supported by Microsoft
 [W3CWaiTeachAdvocate]: https://w3.org/wai/teach-advocate "Teach and Advocate Overview | Web Accessibility Initiative (WAI) | W3C"  
 
 [WHODisabilities]: https://who.int/topics/disabilities "Disabilities | WHO"  
-
