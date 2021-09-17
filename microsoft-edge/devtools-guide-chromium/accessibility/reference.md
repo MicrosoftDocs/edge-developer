@@ -1,5 +1,5 @@
 ---
-description: A list of the accessibility-testing features in Microsoft Edge DevTools.
+description: Webpage accessibility aspects to test, and the corresponding features in Microsoft DevTools.
 title: Accessibility-testing features in DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -11,10 +11,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 # Accessibility-testing features in DevTools
 
 To test your webpages for accessibility, first make a checklist of accessibility aspects to test, and then use the relevant DevTools features to check each aspect.
-
-
-<!-- ====================================================================== -->
-## Accessibility aspects to test and the corresponding DevTools features
 
 | Accessibility aspect to check | Feature of DevTools | Article or subheading |
 |---|---|---|
@@ -41,10 +37,11 @@ To test your webpages for accessibility, first make a checklist of accessibility
 <!-- ====================================================================== -->
 ## See also
 
+Articles about DevTools:
 *   [Overview of accessibility testing using DevTools][DevtoolsAccessibilityAccessibilitytestingindevtools]
 *   [Navigate Microsoft Edge DevTools with assistive technology][DevtoolsAccessibilityNavigation]
 
-Articles not specific to DevTools:
+General articles:
 *   [Accessibility overview][DevtoolsAccessibilityOverview]
 *   [Accessibility testing][DevtoolsAccessibilityTest]
 
@@ -53,11 +50,13 @@ External articles:
 *   [Screen reader][MDNScreenReader]
 
 
+<!-- ====================================================================== -->
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
 
+<!-- ====================================================================== -->
 <!-- links -->  
 [DevtoolsAccessibilityOverview]: ../../accessibility/index.md "Accessibility overview | Microsoft Docs"
 [DevtoolsAccessibilityTest]: ../../accessibility/test.md "Accessibility testing | Microsoft Docs"

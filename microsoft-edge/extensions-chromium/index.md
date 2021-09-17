@@ -132,7 +132,7 @@ Extensions for Visual Studio Code rather than for Microsoft Edge:
 [EdgeDevToolsVSCode]: ../visual-studio-code/microsoft-edge-devtools-extension.md "Microsoft Edge DevTools extension for Visual Studio Code | Microsoft Docs"
 [WebhintVSCode]: ../visual-studio-code/webhint.md "webhint extension for Visual Studio Code | Microsoft Docs"
 <!-- external links -->
-[ManageExtensionsEnterprise]: /deployedge/microsoft-edge-manage-extensions.md "Manage Microsoft Edge extensions in the enterprise | Microsoft Edge Enterprise docs"
+[ManageExtensionsEnterprise]: /deployedge/microsoft-edge-manage-extensions "Manage Microsoft Edge extensions in the enterprise | Microsoft Edge Enterprise docs"
 [MicrosoftDeveloperEdgeExtensions]: https://developer.microsoft.com/microsoft-edge/extensions "Develop extensions for Microsoft Edge | Microsoft Developer"  
 [MicrosoftDeveloperRegistration]: https://developer.microsoft.com/registration "Partner Center | Microsoft Developer"  
 

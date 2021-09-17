@@ -268,16 +268,18 @@ conceptualContent:
         # Card
         - title: Accessibility in Microsoft Edge
           links:
+            - url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
+              itemType: overview
+              text: Accessibility-testing features in DevTools
             - url: /microsoft-edge/accessibility/
               itemType: overview
               text: Accessibility overview
+            - url: /microsoft-edge/devtools-guide-chromium/accessibility/accessibility-testing-in-devtools
+              itemType: how-to-guide
+              text: Overview of accessibility testing using DevTools
             - url: /microsoft-edge/accessibility/test
               itemType: how-to-guide
               text: Accessibility testing
-            - url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
-              itemType: how-to-guide
-              text: Accessibility-testing features in DevTools
-
 # =============================================================================
 # additionalContent section (optional)
 # Card with summary style

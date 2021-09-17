@@ -23,7 +23,11 @@ Here are some best practices, code samples, and further resources for you to lea
 <!-- ====================================================================== -->
 ## Accessibility in Microsoft Edge  
 
-In Microsoft Edge, we introduced modern [UI Automation API][WindowsWin32AutoEntryui] \(UIA API\).  The change to UIA was a major investment in browser accessibility, and it lays the foundation for a more inclusive web experience for users who depend on assistive technology in Windows 10.  Users also benefit from the evergreen nature of the Chromium engine.  
+In Microsoft Edge, we introduced the [UI Automation API][WindowsWin32AutoEntryui] (UIA API).  The change to UIA was a major investment in browser accessibility, and it lays the foundation for a more inclusive web experience for users who depend on assistive technology in Windows 10.  Users also benefit from the evergreen nature of the Chromium engine.
+
+The [Microsoft UI Automation API][WindowsWin32AutoEntryui] is an accessibility framework that enables Windows applications to provide and consume programmatic information about user interfaces (UIs).  It provides programmatic access to most UI elements on the desktop.  It enables assistive technology products, such as screen readers, to provide information about the UI to end users and to manipulate the UI by means other than standard input.  UI Automation also allows automated test scripts to interact with the UI.
+
+The [Microsoft Windows UI Automation blog][ArchiveBlogsWinuiautomation] has posts about the Windows Automation API.
 
 The accessibility system in Microsoft Edge inherently supports modern web standards including ARIA, HTML5, and CSS3.  The following diagram of the simplified browser pipeline follows webpage content into an accessible presentation layer.  
 
@@ -41,12 +45,12 @@ For information on which new HTML features are accessibly supported by Microsoft
 
 *  [Accessibility-testing features in DevTools](../devtools-guide-chromium/accessibility/reference.md) - a checklist of accessibility aspects to test and the corresponding DevTools features.
 *  [Overview of accessibility testing using DevTools](../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md) - a walkthrough of testing a demo page for accessibility by using the DevTools features.
-*  [Microsoft Windows UI Automation blog][ArchiveBlogsWinuiautomation] - posts about the Windows Automation API.
 
+W3C articles:
 *  [W3C Web Accessibility Initiative (WAI)][W3CWaiHome]
    *  [Getting Started with Web Accessibility][W3CWaiGettingstartedOverview]
    *  [Designing for Inclusion][W3CWaiFundamentals]
-   *  [tutorials and presentations][W3CWaiTeachAdvocate]
+   *  [Tutorials and presentations][W3CWaiTeachAdvocate]
 
 
 <!-- ====================================================================== -->
