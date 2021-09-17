@@ -81,7 +81,7 @@ Within the `fetch` handler, you can control whether a request goes to the networ
 *   Supply a placeholder image for certain image requests.
 *   Generate a response directly in the Service Worker.
 
-For an example of what you can do with the `fetch` event, see [Use caching to improve the performance of PWAs](offline.md#use-caching-to-improve-the-performance-of-PWAs) in the article "Offline and network connectivity support in Progressive Web Apps".
+For an example of what you can do with the `fetch` event, see [Use caching to improve the performance of PWAs](offline.md#use-caching-to-improve-the-performance-of-pwas) in the article "Offline and network connectivity support in Progressive Web Apps".
 
 <!-- show that chunk in present article, to show what its doing within the fetch, eg using fetch in sw's, ... the interlock is fine -->
 
