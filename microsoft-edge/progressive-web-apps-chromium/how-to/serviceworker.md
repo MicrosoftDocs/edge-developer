@@ -85,16 +85,13 @@ For an example of what you can do with the `fetch` event, see [Use caching to im
 
 <!-- show that chunk in present article, to show what its doing within the fetch, eg using fetch in sw's, ... the interlock is fine -->
 
-Also see [Step 3 - Add a Service Worker](index.md#step-3---add-a-service-worker) in the article "Get started with Progressive Web Apps".  That section uses the **Cache-first network** service worker recipe from PWA Builder.  However, that approach is less useful than it previously was, because it uses workbox(todo: clarify/confirm) and therefore needs to be simplified and updated.
-
-<!-- todo: where put link?  a copy is in article webappmanifests.md -->
-[Getting Started with Progressive Web Apps (Workshop)](https://noti.st/aarongustafson/co3b5z/getting-started-with-progressive-web-apps-workshop)
+Also see [Step 3 - Add a Service Worker](index.md#step-3---add-a-service-worker) in the article "Get started with Progressive Web Apps".  That section uses the **Cache-first network** service worker recipe from PWA Builder.  However, that approach is less useful than it previously was, because it uses workbox(todo: clarify/confirm) and therefore needs to be simplified and updated.  
 
 
 <!-- ====================================================================== -->
 ## Push notifications
 
-Service workers can push notifications to users.  Push notifications can prompt users to re-engage with your application after time has elapsed.  See [Web Push Notifications][AzurewebsitesWebpushdemo].
+Service workers can push notifications to users.  Push notifications can prompt users to re-engage with your application after time has elapsed.  To learn more, navigate to [Re-engage users with notifications, push messages, and badges](./notifications-badges.md).  
 
 
 <!-- ====================================================================== -->

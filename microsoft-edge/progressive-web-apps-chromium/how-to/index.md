@@ -95,7 +95,7 @@ Before turning your site into a PWA, note that a great PWA is, before anything e
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      [Offline experience][PwaOfflineExperience]  
+      [Offline experience](./offline.md)  
    :::column-end:::
    :::column span="2":::
       Once installed, works regardless of your users' connection status and provides a custom offline page rather than using the browser default offline page.  
@@ -289,6 +289,7 @@ To build a robust, real-world PWA, consider the following:
 [MDNServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "Service Worker API | MDN"
 [MDNUsingServiceWorkers]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers "Using Service Workers | MDN"
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Web App Manifest | MDN"
+[MDNCrossBrowserTesting]: https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing "Cross browser testing | MDN"
 
 [MediumWebEdgeOfflinePostsProgressiveWebApps]: https://medium.com/web-on-the-edge/offline-posts-with-progressive-web-apps-fc2dc4ad895 "Offline POSTs with Progressive Web Apps"
 
@@ -318,3 +319,5 @@ To build a robust, real-world PWA, consider the following:
 [WebDevProgressiveWebApps]: https://developers.google.com/web/progressive-web-apps "Progressive Web Apps | web.dev"
 
 [WikiProgressiveEnhancement]: https://en.wikipedia.org/wiki/Progressive_enhancement "Progressive enhancement | Wikipedia"
+[WikiResponsiveWebDesign]: https://en.wikipedia.org/wiki/Responsive_web_design "Responsive web design - Wikipedia"
+[WikiDeepLinking]: https://en.wikipedia.org/wiki/Deep_linking "Deep linking - Wikipedia"
