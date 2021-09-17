@@ -405,8 +405,6 @@
           href: progressive-web-apps-chromium/experimental-features/index.md
         - name: Publish in the Microsoft Store
           href: progressive-web-apps-chromium/microsoft-store.md
-        - name: PWABuilder
-          href: progressive-web-apps-chromium/pwabuilder.md
     - name: Playwright overview
       href: playwright/index.md
     - name: Puppeteer overview
