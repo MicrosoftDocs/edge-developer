@@ -11,18 +11,12 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 ---
 # Win32 C++ WebView2 API conventions  
 
-:::row:::
-   :::column span="1":::
-      Supported platforms:
-   :::column-end:::
-   :::column span="2":::
-      Win32
-   :::column-end:::
-:::row-end:::  
+Supported platforms: Win32.
+
 
 ## Prerequisites  
 
-*   Experience using Win32 API  
+*   Experience using the Win32 API.
 
 ## Async methods  
 

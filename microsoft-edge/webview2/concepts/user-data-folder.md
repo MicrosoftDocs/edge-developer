@@ -41,9 +41,9 @@ Your application may need to delete user data folders for the following reasons:
 
 ## Share user data folders  
 
-WebView2 controls may share the same user data folders to:  
+WebView2 controls can share the same user data folders, to do the following:
 
-*   [Optimize system resources](../concepts/process-model.md) by running in one browser process.  
+*   Optimize system resources by running in one browser process.  See [The WebView2 process model](../concepts/process-model.md).
 *   Share browser history and cached resources.  
     
 Consider the following when sharing user data folders:  

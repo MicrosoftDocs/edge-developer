@@ -11,14 +11,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 ---
 # Navigation events  
 
-:::row:::
-   :::column span="1":::
-      Supported platforms:
-   :::column-end:::
-   :::column span="2":::
-      Win32, Windows Forms, WinUi, WPF
-   :::column-end:::
-:::row-end:::  
+Supported platforms: Win32, Windows Forms, WinUi, WPF.
 
 Navigation events run when specific asynchronous actions occur to the content displayed in a WebView2 instance.  For example, when a WebView2 user navigates to a new website, the native content listens for the change using `NavigationStarting` event.  When the navigation action completes, `NavigationCompleted` runs.  For a good example of navigation events, navigate to [WebView2 Get Started guide][Webview2IndexGetStarted].  
 
