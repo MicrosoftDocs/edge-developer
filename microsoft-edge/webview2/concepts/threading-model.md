@@ -11,14 +11,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 ---
 # Threading model for WebView2
 
-:::row:::
-   :::column span="1":::
-      Supported platforms:
-   :::column-end:::
-   :::column span="2":::
-      Win32, Windows Forms, WinUi, WPF
-   :::column-end:::
-:::row-end:::  
+Supported platforms: Win32, Windows Forms, WinUi, WPF.
 
 The WebView2 control is based on the [Component Object Model (COM)][WindowsWin32ComTheComponentObjectModel] and must run on a [Single Threaded Apartments (STA)][WindowsWin32ComSingleThreadedApartments] thread.  
 

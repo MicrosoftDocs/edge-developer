@@ -120,7 +120,7 @@ Use this method to verify the `Chromium` brand and apply detection to all affect
 
 ```javascript
 function isChromium() {
-    for (brand_version_pair in navigator.userAgentData.brands) {
+    for (brand_version_pair of navigator.userAgentData.brands) {
         if (brand_version_pair.brand == "Chromium"){
             return true;
         }
