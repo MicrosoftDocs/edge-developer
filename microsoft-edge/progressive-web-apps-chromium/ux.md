@@ -68,7 +68,6 @@ PWAs can also display notifications in the operating system's own notification s
    Notifications in Windows Action Center  
 :::image-end:::  
 
-<!-- Links -->
 
 [AppShortcutsFeature]: ./how-to/shortcuts.md "Define app shortcuts | Microsoft Docs"  
 [PushNotficationsFeature]: ./how-to/push-notifications.md "Re-engage users with notifications and push messages | Microsoft Docs"  
