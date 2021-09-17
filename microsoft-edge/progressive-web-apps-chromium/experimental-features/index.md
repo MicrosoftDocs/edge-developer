@@ -66,7 +66,7 @@ The following list describes experimental web app features that are available to
 | [URL Link Handling](#url-link-handling) | Windows|
 | [Window Controls Overlay for Desktop Apps](#window-controls-overlay-for-installed-desktop-web-apps) | Windows 10|
 | [Run on OS Login](#run-on-os-login) | All |
-| [Shortcuts](#shortcuts) | All |
+| [The Shortcuts object in the manifest](#the-shortcuts-object-in-the-manifest) | All |
 | [File Handling](#file-handling) | All Desktop |
 
 
@@ -183,7 +183,7 @@ A PWA matches a URI for URL handling if the URI matches one of the origin string
 
 The `url_handlers` member contains an origin that encompasses the scope and other unrelated origins of the requesting PWA.  Not restricting URIs to the same scope or domain as the requesting PWA allows you to use different domain names for the same content but handle them with the same PWA.
 
-#### Wildcard matching
+### Wildcard matching
 
 Use the wildcard character (`*`) to match one or more characters.
 
@@ -564,7 +564,7 @@ When a user invokes a shortcut, the UI navigates to the address that's specified
 ]
 ```
 
-#### Properties of shortcuts
+### Properties of shortcuts
 
 The following properties define each shortcut.
 

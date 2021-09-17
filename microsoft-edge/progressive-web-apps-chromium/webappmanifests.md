@@ -47,7 +47,7 @@ Most operating systems provide quick access to key app features using shortcuts 
 
 When added to a complete Web App Manifest, adding the previous code snippet enables two shortcuts on the context menu on the icon of the app.  The first is named `Play Later` and has a custom icon.  The second is named `Subscriptions` and does not have an icon because the `icons` property is optional.  The `description` property is also optional and may be used to provide additional information for accessibility purposes.
 
-See also [Shortcuts](experimental-features/index.md#shortcuts) in the article "Experimental features in Progressive Web Apps (PWAs)".
+See also [The Shortcuts object in the manifest](experimental-features/index.md#the-shortcuts-object-in-the-manifest) in the article "Experimental features in Progressive Web Apps (PWAs)".
 
 
 <!-- ====================================================================== -->
