@@ -17,7 +17,7 @@ The W3C defines Accessible Rich Internet Applications (ARIA) as a syntax for mak
 
 Visit [HTML5Accessibility](https://html5accessibility.com) for information on which new HTML5 features are accessibly supported by Microsoft Edge.
 
-The Microsoft Edge rendering engine (EdgeHTML) builds an accessible projection of web pages, conforming to the following W3C specifications:
+The Microsoft Edge rendering engine builds an accessible projection of web pages, conforming to the following W3C specifications:
 
 1. The [HTML Accessibility API Mappings](https://w3.org/TR/html-aam-1.0/) specification defines how HTML elements and attributes map to ARIA and UI Automation objects.
    * [Working draft](https://w3.org/TR/html-aam-1.0/) - stable version of the specification

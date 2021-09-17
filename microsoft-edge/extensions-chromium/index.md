@@ -109,6 +109,7 @@ After you've successfully submitted your extension, your extension undergoes a r
 <!-- ====================================================================== -->
 ## See also  
 
+*  [Manage Microsoft Edge extensions in the enterprise][ManageExtensionsEnterprise]
 *  [Port a Google Chrome extension][ExtensionworkshopPorting]  
 *  [Build a Safari App extension][AppleDeveloperSafariservicesAppExtensionsBuilding]  
 *  [Your first extension (Firefox)][MDNWebextensionsYourFirst]  
@@ -127,6 +128,7 @@ After you've successfully submitted your extension, your extension undergoes a r
 [EdgeDevToolsVSCode]: ../visual-studio-code/microsoft-edge-devtools-extension.md "Microsoft Edge DevTools extension for Visual Studio Code | Microsoft Docs"
 [WebhintVSCode]: ../visual-studio-code/webhint.md "webhint extension for Visual Studio Code | Microsoft Docs"
 <!-- external links -->
+[ManageExtensionsEnterprise]: /deployedge/microsoft-edge-manage-extensions.md "Manage Microsoft Edge extensions in the enterprise | Microsoft Edge Enterprise docs"
 [MicrosoftDeveloperEdgeExtensions]: https://developer.microsoft.com/microsoft-edge/extensions "Develop extensions for Microsoft Edge | Microsoft Developer"  
 [MicrosoftDeveloperRegistration]: https://developer.microsoft.com/registration "Partner Center | Microsoft Developer"  
 

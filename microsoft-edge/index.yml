@@ -123,6 +123,9 @@ conceptualContent:
         # Card
         - title: Extensions for enterprise
           links:
+            - itemType: overview
+              text: Manage Microsoft Edge extensions in the enterprise
+              url: /deployedge/microsoft-edge-manage-extensions
             - itemType: reference
               text: Match Patterns
               url: /microsoft-edge/extensions-chromium/enterprise/match-patterns

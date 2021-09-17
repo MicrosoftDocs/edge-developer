@@ -300,7 +300,7 @@
             - name: Keyboard shortcuts
               href: devtools-guide-chromium/shortcuts/index.md
 # equivalent card: Extensions =================================================
-    - name: Microsoft Edge Extensions
+    - name: Microsoft Edge extensions
       items:
         - name: Overview of Microsoft Edge extensions
           href: extensions-chromium/index.md
