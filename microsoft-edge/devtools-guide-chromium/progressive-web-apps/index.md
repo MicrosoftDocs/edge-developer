@@ -1,6 +1,6 @@
 ---
-description: Use the Application panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.
-title: Debug Progressive Web Apps
+description: Use the Application panel of Microsoft Edge DevTools to develop Progressive Web Apps (PWAs), such as to inspect, modify, and debug web app manifests, service workers, and service worker caches.
+title: Debug Progressive Web Apps (PWAs)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
@@ -21,30 +21,27 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->  
-# Debug Progressive Web Apps  
+# Debug Progressive Web Apps (PWAs)
 
-Use the **Application** panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.  
+This article covers the Progressive Web App (PWA) features of the **Application** tool (or _panel_).
 
-<!--Related Guides:  
+The following DevTools features are related to developing Progressive Web Apps:
+*  Use the **Application** tool to inspect, modify, and debug web app manifests, service workers, and service worker caches.  
+*  Use the **Manifest** pane to inspect your web app manifest and trigger Add to Homescreen events.  
+*  Use the **Service Workers** pane for a whole range of service-worker-related tasks, like unregistering or updating a service, emulating push events, going offline, or stopping a service worker.  
+*  View your service worker cache from the **Cache Storage** pane.  
+*  Unregister a service worker and clear all storage and caches with a single button choose from the **Clear storage** pane.  
 
-*   [Progressive Web Apps](/web/progressive-web-apps)  -->
+See also [Overview of Progressive Web Apps (PWAs)](../../progressive-web-apps-chromium/index.md).
 
-<!--TODO:  Link web "Progressive Web Apps" section when available. -->
 
-This guide only discusses the Progressive Web App features of the **Application** panel.  <!--If you're looking for help on the other panes, check out the last section of this guide, [Other Application panel guides](#other-application-panel-guides).  -->
+<!-- ========================================================================== -->
+## Web app manifests
 
-<!--TODO:  Link to sections when available. -->
-
-### Summary  
-
-*   Use the **Manifest** pane to inspect your web app manifest and trigger Add to Homescreen events.  
-*   Use the **Service Workers** pane for a whole range of service-worker-related tasks, like unregistering or updating a service, emulating push events, going offline, or stopping a service worker.  
-*   View your service worker cache from the **Cache Storage** pane.  
-*   Unregister a service worker and clear all storage and caches with a single button choose from the **Clear storage** pane.  
-    
-## Web app manifest  
-
-If you want your users to be able to add your app to their mobile homescreens, you need a web app manifest.  The manifest defines how the app appears on the homescreen, where to direct the user when launching from homescreen, and what the app looks like on launch.  
+If you want your users to be able to add your app to their mobile homescreens, you need a web app manifest.  A web app manifest defines the following:
+*  How the app appears on the home screen.
+*  Where to direct the user when launching from the home screen.
+*  What the app looks like on launch.  
 
 <!--Related Guides:  
 
@@ -89,6 +86,8 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
+
+<!-- ========================================================================== -->
 ## Service workers  
 
 Service workers are a fundamental technology in the future web platform.  They are scripts that the browser runs in the background, separate from a web page.  The scripts allow you to access features that without the need of a web page or user interaction, like push notifications, background sync, and offline experiences.  
@@ -130,6 +129,8 @@ up.
 <!--TODO:  Capture Service Worker Errors sample when available. -->
 <!--TODO:  Link Web "How tickle works" sections when available. -->
 
+
+<!-- ========================================================================== -->
 ## Service worker caches  
 
 The **Cache Storage** pane provides a read-only list of resources that have been cached using the \(service worker\) [Cache API][MDNWebCacheAPI].  
@@ -147,6 +148,8 @@ If you have two or more caches open, the caches display under the following **Ca
    The **Cache Storage** dropdown  
 :::image-end:::  
 
+
+<!-- ========================================================================== -->
 ## Quota usage  
 
 Some responses within the **Cache Storage** pane may be flagged as being "opaque".  This refers to a response retrieved from a different origin, like from a **CDN** or remote API, when [CORS][FetchHttpCorsProtocol] is not enabled.  
@@ -167,6 +170,8 @@ Related Guides:
     
 <!--TODO:  Link Work container storage quota for opaque responses section when available. -->
 
+
+<!-- ========================================================================== -->
 ## Clear storage  
 
 The **Clear Storage** pane is a very useful feature when developing progressive web apps.  This pane lets you unregister service workers and clear all caches and storage with a single button choose.  <!--Check out the section below to learn more.  -->
@@ -186,14 +191,17 @@ Related Guides:
 *   [Inspect page resources](/iterate/manage-data/page-resources)  
 *   [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
     
+
+<!-- ========================================================================== -->
 ## Getting in touch with the Microsoft Edge DevTools team  
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
+
+<!-- ========================================================================== -->
 <!-- links -->  
-
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
-
+<!-- external links -->
 [ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium Issue 796060: Cache Storage value rises on each refresh when Analytics code is in the html"  
 
 [FetchHttpCorsProtocol]: https://fetch.spec.whatwg.org/#http-cors-protocol  
