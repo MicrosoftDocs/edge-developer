@@ -39,9 +39,10 @@ For information on which new HTML features are accessibly supported by Microsoft
 <!-- ====================================================================== -->
 ## See also
 
-*  [Accessibility-testing features in DevTools](../devtools-guide-chromium/accessibility/reference.md)
-*  [Overview of accessibility testing using DevTools](../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md)
+*  [Accessibility-testing features in DevTools](../devtools-guide-chromium/accessibility/reference.md) - a checklist of accessibility aspects to test and the corresponding DevTools features.
+*  [Overview of accessibility testing using DevTools](../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md) - a walkthrough of testing a demo page for accessibility by using the DevTools features.
 *  [Microsoft Windows UI Automation blog][ArchiveBlogsWinuiautomation] - posts about the Windows Automation API.
+
 *  [W3C Web Accessibility Initiative (WAI)][W3CWaiHome]
    *  [Getting Started with Web Accessibility][W3CWaiGettingstartedOverview]
    *  [Designing for Inclusion][W3CWaiFundamentals]

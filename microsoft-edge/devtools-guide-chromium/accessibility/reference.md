@@ -12,6 +12,10 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 To test your webpages for accessibility, first make a checklist of accessibility aspects to test, and then use the relevant DevTools features to check each aspect.
 
+
+<!-- ====================================================================== -->
+## Accessibility aspects to test and the corresponding DevTools features
+
 | Accessibility aspect to check | Feature of DevTools | Article or subheading |
 |---|---|---|
 | Verify that images have alt text | **Issues** tool > **Accessibility** section of report | [Verify that images have alt text](test-issues-tool.md#verify-that-images-have-alt-text) |
@@ -34,11 +38,17 @@ To test your webpages for accessibility, first make a checklist of accessibility
 | Verify that the webpage layout is usable when narrow | **Device Emulation** tool | [Verify that the webpage layout is usable when narrow](accessibility-testing-in-devtools.md#verify-that-the-webpage-layout-is-usable-when-narrow), and [Emulate mobile devices in Microsoft Edge DevTools](../device-mode/index.md) |
 
 
+<!-- ====================================================================== -->
 ## See also
 
 *   [Overview of accessibility testing using DevTools][DevtoolsAccessibilityAccessibilitytestingindevtools]
 *   [Navigate Microsoft Edge DevTools with assistive technology][DevtoolsAccessibilityNavigation]
+
+Articles not specific to DevTools:
+*   [Accessibility overview][DevtoolsAccessibilityOverview]
 *   [Accessibility testing][DevtoolsAccessibilityTest]
+
+External articles:
 *   [Accessibility principles and best practices][MDNAccessibility]
 *   [Screen reader][MDNScreenReader]
 
@@ -49,6 +59,7 @@ To test your webpages for accessibility, first make a checklist of accessibility
 
 
 <!-- links -->  
+[DevtoolsAccessibilityOverview]: ../../accessibility/index.md "Accessibility overview | Microsoft Docs"
 [DevtoolsAccessibilityTest]: ../../accessibility/test.md "Accessibility testing | Microsoft Docs"
 [DevtoolsAccessibilityAccessibilitytestingindevtools]: accessibility-testing-in-devtools.md "Overview of accessibility testing using DevTools | Microsoft Docs"
 [DevtoolsAccessibilityNavigation]: ./navigation.md "Navigate Microsoft Edge DevTools with assistive technology | Microsoft Docs"  

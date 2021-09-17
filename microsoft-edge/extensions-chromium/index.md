@@ -109,13 +109,17 @@ After you've successfully submitted your extension, your extension undergoes a r
 <!-- ====================================================================== -->
 ## See also  
 
+*  [Extension concepts and architecture][ExtensionsChromiumGettingStartedIndex]
 *  [Manage Microsoft Edge extensions in the enterprise][ManageExtensionsEnterprise]
+
+External links:
 *  [Port a Google Chrome extension][ExtensionworkshopPorting]  
 *  [Build a Safari App extension][AppleDeveloperSafariservicesAppExtensionsBuilding]  
 *  [Your first extension (Firefox)][MDNWebextensionsYourFirst]  
 *  [Get started tutorial (Chrome)][ChromeDeveloperExtensionsGetstarted]  
 *  [Get started (Opera)][OperaDevExtensionsGettingStarted]  
-*  [Extension concepts and architecture][ExtensionsChromiumGettingStartedIndex]  
+
+Extensions for Visual Studio Code rather than for Microsoft Edge:
 *  [Microsoft Edge DevTools extension for Visual Studio Code][EdgeDevToolsVSCode]
 *  [webhint extension for Visual Studio Code][WebhintVSCode]
 
