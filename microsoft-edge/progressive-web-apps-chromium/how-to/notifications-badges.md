@@ -11,9 +11,179 @@ keywords: progressive web apps, PWA, Edge, Windows, push, notifications, badges
 ---
 # Re-engage users with notifications, push messages, and badges  
 
-## Notify the user with a toast message  
+Using Background Sync, Periodic Background Sync, and Background Fetch, Progressive Web Apps are able to do work when the app is not running, like updating data in the cache or sending messages when the device regains connectivity. In order to re-engage the user with the app, once a background task has been completed, notifications and badges can be used.  
+
+Notifications are useful for apps to take part in the system's notification center and display images and text information. They are useful to alert the user about an important change of state in your app. Notifications tend to be disruptive to the user's workflow however, and should be used rarely.  
+
+Badges can be more user-friendly and can therefore be used more frequently. They don't interrupt the user's workflow and are useful to display a small amount of information like a number of received messages for example.  
+
+## Notify the user with a message in the action center  
+
+PWAs can display notifications using the Notifications API.  Navigate to the [Notifications API documentation][MDNNotificationsAPI] to learn more.  
+
+### Check for support  
+
+Before using the API, check that it is supported.
+
+```javascript
+if ("Notification" in window) {
+    console.log("The Notifications API is support");
+}
+```  
+
+### Request permission  
+
+The Notifications API can only be used after having requested the user's permission to display messages. To request permission, use the `requestPermission` function. This should be done in response to a user action only. Doing so is a best practice to avoid interrupting the user with permission prompts while they haven't interacted with a feature that uses notifications yet.  
+
+```javascript
+button.addEventListener("click", () => {
+    Notifications.requestPermission().then(permission => {
+        if (permission === "granted") {
+            console.log("The user accepted!");
+        }
+    });
+});
+```  
+
+You can later check the permission status again.  
+
+```javascript
+if (Notification.permission === "granted") {
+    console.log("The user already accepted");
+}
+```  
+
+### Display the notification  
+
+Once you know that the API is supported and the user has accepted notifications, you can display one by creating a `Notification` object.  
+
+```javascript
+const notification = new Notification("Hello World!");
+```  
+
+:::image type="complex" source="../media/notification-text-only.png" alt-text="A text only notification" lightbox="../media/notification-text-only.png":::
+    A text only notification
+:::image-end:::  
+
+The above code will display a text-only notification message, but it is also possible to customize the aspect of the message with additional properties.  
+
+```javascript
+const notification = new Notification("Hello World!", {
+    body: "This is my first notification message",
+    icon: "/assets/logo-192.png",
+});
+```  
+
+:::image type="complex" source="../media/notification-with-image.png" alt-text="A notification with some text and an image" lightbox="../media/notification-with-image.png":::
+    A notification with some text and an image
+:::image-end:::  
+
+You can also display notifications from your app's service worker. This is useful as the service worker may be doing work while your app isn't running. To send a notification from your service worker, use the `ServiceWorkerRegistration.showNotification` function.  
+
+```javascript
+self.registration.showNotification("Hello from the Service Worker!");
+```  
+
+The `showNotification` function supports the same arguments as the `Notification` constructor used in the previous example, as well as the `actions` property described in the following section.  
+
+### Add actions to notifications  
+
+It is possible to add actions for the user to perform in a notification. This is only supported in persistent notifications shown using the `ServiceWorkerRegistration.showNotification` function.  
+
+```javascript
+self.registration.showNotification("Your content is ready", {
+    body: "Your content is ready to be viewed. View it now?",
+    icon: "/assets/logo-192.png",
+    actions: [
+        {
+            action: "view-content",
+            title: "Yes"
+        },
+        {
+            action: "go-home",
+            title: "No"
+        }
+    ]
+});
+```  
+
+:::image type="complex" source="../media/notification-with-actions.png" alt-text="A notification with some text, an image, and two actions" lightbox="../media/notification-with-actions.png":::
+    A notification with some text, an image, and two actions
+:::image-end:::  
+
+When the user clicks on one of the action buttons, your PWA can handle it by listening to the `notificationclick` event, close the notification and execute some code.  
+
+```javascript
+self.addEventListener('notificationclick', event => {
+    // Close the notification.
+    event.notification.close();
+  
+    // React to the action.
+    if (event.action === 'view-content') {
+        console.log("view-content action was clicked");
+    } else if (event.action === 'go-home') {
+        console.log("go-home action was clicked");
+    } else {
+        console.log("main body of the notification was clicked");
+    }
+}, false);
+```  
+
+To learn more about notification actions, navigate to the [NotificationAction documentation][MDNNotificationActionAPI].  
 
 ## Display a badge on the app icon  
+
+PWAs can display a badge on their app icon by using the App Badging API. The badge can either be empty or contain a number. Navigate to the [App Badging API documentation][MDNAppBadgingAPI] to learn more.  
+
+### Check for support  
+
+Before using the App Badging API, check that it is supported in the browser engine your app runs in.  
+
+```javascript
+if (navigator.setAppBadge) {
+    console.log("The App Badging API is supported!");
+}
+```  
+
+### Displaying the badge  
+
+To set the badge, use the following code from your app frontend or service worker.  
+
+```javascript
+// To display an empty badge
+navigator.setAppBadge();
+
+// To display a number in the badge
+navigator.setAppBadge(42);
+```  
+
+<!-- TODO: Add a screenshot -->
+
+The `setAppBadge` function returns a promise which can be used to know when the badge was added, and to catch potential errors.  
+
+```javascript
+navigator.setAppBadge(42).then(() => {
+    console.log("The badge was added");
+}).catch(e => {
+    console.error("Error displaying the badge", e);
+});
+```  
+
+### Clearing the badge  
+
+To remove the badge on the app icon, use the following code from your frontend or service worker.  
+
+```javascript
+navigator.clearAppBadge();
+```  
+
+The `clearAppBadge` also returns a promise that can be used to handle potential errors.  
+
+Additionally, you can also use `setAppBadge` again but passing `0` as the value.  
+
+```javascript
+navigator.setAppBadge(0);
+```  
 
 ## Add push notifications to your PWA  
 
@@ -158,14 +328,23 @@ To test push notifications for your PWA:
 
 
 <!-- ====================================================================== -->
+## See also  
+
+*   [Web Push Notifications Demo][AzurewebsitesWebpushdemo]
+
+<!-- ====================================================================== -->
 <!-- links -->
 <!-- external links -->
 [MDNPushApi]: https://developer.mozilla.org/docs/Web/API/Push_API "Push API | MDN"
 [MDNNotificationsApi]: https://developer.mozilla.org/docs/Web/API/Notifications_API "Notifications API | MDN"
 [NPMWebPush]: https://www.npmjs.com/package/web-push "web-push | npm"
+[MDNAppBadgingAPI]: https://developer.mozilla.org/en-US/docs/Web/API/Badging_API "Badging API - Web APIs | MDN"
+[MDNPushManager]: https://developer.mozilla.org/docs/Web/API/PushManager "PushManager | MDN"
+[MDNNotificationsAPI]: https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API "Notifications API - Web APIs | MDN"
+[MDNNotificationActionAPI]: https://developer.mozilla.org/en-US/docs/Web/API/NotificationAction "NotificationAction - Web APIs | MDN"
 [ServiceWorkerCookbookPushRichDemo]: https://serviceworke.rs/push-rich_demo.html "Push Rich Demo | ServiceWorker Cookbook"
 [VapidkeysMain]: https://vapidkeys.com "Secure VAPID Key Generator | VapidKeys"
 [MozillaServicesSendingVapidWebPushNotificationsPush]: https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service "Sending VAPID identified WebPush Notifications via Mozilla's Push Service | Mozilla Services"
 [WindowsBlogsWebNotificationsEdge]: https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge#UAbvU2ymUlHO8EUV.97 "Web Notifications in Microsoft Edge | Windows Blogs"
-[MDNPushManager]: https://developer.mozilla.org/docs/Web/API/PushManager "PushManager | MDN"
 [NPMWebPushUsage]: https://www.npmjs.com/package/web-push#usage "Usage - web-push | NPM"
+[AzurewebsitesWebpushdemo]: https://webpushdemo.azurewebsites.net "Web Push Notifications |  Microsoft Edge Demos"
