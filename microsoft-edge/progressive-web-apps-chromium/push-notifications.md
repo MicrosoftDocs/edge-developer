@@ -10,32 +10,32 @@ keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, se
 ---
 # Add push notifications to your PWA
 
-To create PWAs that support push notifications:
+To create a PWA that supports push notifications:
 
 1.  Subscribe to a messaging service using the [Push API][MDNPushApi].
 1.  Display a toast message when a message is received from the service using the [Notifications API][MDNNotificationsApi].
 
 Just like with Service Workers, the push notification APIs are standards-based APIs.  The push notification APIs work across browsers, so your code should work everywhere that PWAs are supported.  For more information about delivering push messages to different browsers on your server, navigate to [Web-Push][NPMWebPush].
 
-The following steps have been adapted from the Push Rich Demo in [Service Worker Cookbook][ServiceWorkerCookbookPushRichDemo] provided by Mozilla, which has a number of other useful Web Push and service worker recipes.
+The following steps have been adapted from the Push Rich Demo in [Service Worker Cookbook][ServiceWorkerCookbookPushRichDemo] provided by Mozilla, which has many useful Web Push and service worker recipes.
 
 
 <!-- ====================================================================== -->
 ## Step 1 - Generate VAPID keys
 
-Push notifications require VAPID \(Voluntary Application Server Identification\) keys in order to send push messages to the PWA client.  There are several VAPID key generators available online \(for example, [vapidkeys.com][VapidkeysMain]\).  After generation, you should get a JSON object containing a public and private key.  Save the keys for later steps in the following tutorial.  For information about VAPID and WebPush, navigate to [Sending VAPID identified WebPush Notifications using the Mozilla Push Service][MozillaServicesSendingVapidWebPushNotificationsPush].
+Push notifications require VAPID (Voluntary Application Server Identification) keys in order to send push messages to the PWA client.  There are several VAPID key generators available online (for example, [vapidkeys.com][VapidkeysMain]).  After generation, you should get a JSON object containing a public and private key.  Save the keys for later steps in the following tutorial.  For information about VAPID and WebPush, navigate to [Sending VAPID identified WebPush Notifications using the Mozilla Push Service][MozillaServicesSendingVapidWebPushNotificationsPush].
 
 
 <!-- ====================================================================== -->
 ## Step 2 - Subscribe to push notifications
 
-Service workers handle push events and toast notification interactions in your PWA.  To subscribe the PWA to server push notifications, make sure the following conditions are met:
+Service workers handle push events and toast notification interactions in your PWA.  To subscribe the PWA to server push notifications:
 
-*   Your PWA is installed, active, and registered.
-*   Your code to complete the subscription task is on the main UI thread of the PWA.
-*   You have network connectivity.
+*   Make sure your PWA is installed, active, and registered.
+*   Make sure your code to complete the subscription task is on the main UI thread of the PWA.
+*   Make sure you have network connectivity.
 
-Before a new push subscription is created, Microsoft Edge verifies that the user has granted the PWA permission to receive notifications.  If not, the user is prompted by the browser for permission.  If the permission is denied, the request to `registration.pushManager.subscribe` throws a `DOMException`, which must be handled.  For more on permission management, navigate to [Push Notifications in Microsoft Edge][WindowsBlogsWebNotificationsEdge].
+Before a new push subscription is created, Microsoft Edge checks whether the user has granted the PWA permission to receive notifications.  If not, the user is prompted by the browser for permission.  If the permission is denied, the request to `registration.pushManager.subscribe` throws a `DOMException`, which must be handled.  For more on permission management, navigate to [Push Notifications in Microsoft Edge][WindowsBlogsWebNotificationsEdge].
 
 In your `pwabuilder-sw-register.js` file, append the following code snippet:
 
@@ -75,7 +75,7 @@ function urlBase64ToUint8Array(base64String) {
 }
 ```
 
-For more information, navigate to [PushManager][MDNPushManager] and [Web-Push][NPMWebPushUsage].
+See also [PushManager][MDNPushManager] and [Web-Push][NPMWebPushUsage].
 
 
 <!-- ====================================================================== -->
@@ -88,7 +88,7 @@ After a subscription is created in your PWA, add handlers to the service worker 
 *   Putting focus on a window.
 *   Opening and putting focus on a new window to display a PWA client page.
 
-To add a `click` handler, in your `pwabuilder-sw.js` file, add the following handlers for the `push` event and the 'notificationclick' event:
+To add a `click` handler, in your `pwabuilder-sw.js` file, add the following handlers for the `push` event and the `notificationclick` event:
 
 ```javascript
 // Respond to a server push with a user notification.
@@ -135,7 +135,7 @@ To test push notifications for your PWA:
        Permission dialog for enabling notifications
     :::image-end:::
 
-1.  Simulate a server-side push notification.  With your PWA opened at `http://localhost:3000` in your browser, select `F12` to open DevTools.  Select **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.
+1.  Simulate a server-side push notification, as follows.  With your PWA opened at `http://localhost:3000` in your browser, select `F12` to open DevTools.  Select **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.
 
     The push notification is displayed near the taskbar.
 
@@ -148,3 +148,17 @@ To test push notifications for your PWA:
     :::image type="complex" source="./media/windows-action-center.png" alt-text="Notifications in Windows Action Center" lightbox="./media/windows-action-center.png":::
         Notifications in Windows Action Center
     :::image-end:::
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+<!-- external links -->
+[MDNPushApi]: https://developer.mozilla.org/docs/Web/API/Push_API "Push API | MDN"
+[MDNNotificationsApi]: https://developer.mozilla.org/docs/Web/API/Notifications_API "Notifications API | MDN"
+[NPMWebPush]: https://www.npmjs.com/package/web-push "web-push | npm"
+[ServiceWorkerCookbookPushRichDemo]: https://serviceworke.rs/push-rich_demo.html "Push Rich Demo | ServiceWorker Cookbook"
+[VapidkeysMain]: https://vapidkeys.com "Secure VAPID Key Generator | VapidKeys"
+[MozillaServicesSendingVapidWebPushNotificationsPush]: https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service "Sending VAPID identified WebPush Notifications via Mozilla's Push Service | Mozilla Services"
+[WindowsBlogsWebNotificationsEdge]: https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge#UAbvU2ymUlHO8EUV.97 "Web Notifications in Microsoft Edge | Windows Blogs"
+[MDNPushManager]: https://developer.mozilla.org/docs/Web/API/PushManager "PushManager | MDN"
+[NPMWebPushUsage]: https://www.npmjs.com/package/web-push#usage "Usage - web-push | NPM"
