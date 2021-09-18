@@ -311,6 +311,8 @@
               href: devtools-protocol-chromium/index.md
             - name: Keyboard shortcuts
               href: devtools-guide-chromium/shortcuts/index.md
+        - name: Contacting the DevTools team
+          href: devtools-guide-chromium/contact.md
     - name: Extensions
       items:
         - name: Overview of Microsoft Edge extensions
