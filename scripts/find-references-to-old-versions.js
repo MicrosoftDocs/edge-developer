@@ -66,7 +66,7 @@ async function findMatchingPatternsInAllSourceFiles() {
 async function findCurrentEdgeVersion() {
     const response = await fetch(RELEASE_NOTES_PAGE);
     const content = await response.text();
-    
+
     const match = content.match(/<h2[^>]*>Version ([0-9]+)/);
     if (match && match.length === 2) {
         return parseInt(match[1], 10);

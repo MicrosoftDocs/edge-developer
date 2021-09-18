@@ -1,6 +1,6 @@
 ---
 description: Test your extension by sideloading it in the browser
-title: Sideload your extension 
+title: Sideload your extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/24/2020
@@ -27,12 +27,12 @@ To sideload your extension, follow these steps.
           Turn on Developer Mode
        :::image-end:::
 
-1.  When installing your extension for the first time, choose **Load Unpacked**.  You'll be prompted for the directory with your extension source files.  Your extension is installed in your browser, similar to extensions installed from the store.  
+1.  When installing your extension for the first time, choose **Load Unpacked**.  You'll be prompted for the directory with your extension source files.  Your extension is installed in your browser, similar to extensions installed from the store.
 
        :::image type="complex" source="./media/part1-installed-extension.png" alt-text="Installed extensions page showing a sideloaded extension":::
           Installed extensions page showing a sideloaded extension
        :::image-end:::
 
-During development, you may also need to perform the following tasks.
-* Update the extension. Navigate to `edge://extensions`, and then select **Reload** to update your extension.  
-* Remove the extension from your browser. Navigate to `edge://extensions`, and then select `Remove` on your extension.
+During development, you may also need to do the following:
+* Update the extension.  Navigate to `edge://extensions`, and then select **Reload** to update your extension.
+* Remove the extension from your browser.  Navigate to `edge://extensions`, and then select `Remove` on your extension.
