@@ -16,9 +16,9 @@ metadata:
 # highlightedContent section (optional)
 # Maximum of 8 items
 highlightedContent:
-# itemType: architecture | concept | deploy | download | 
-#           get-started | how-to-guide | learn | overview | 
-#           quickstart | reference | tutorial | video | 
+# itemType: architecture | concept | deploy | download |
+#           get-started | how-to-guide | learn | overview |
+#           quickstart | reference | tutorial | video |
 #           whats-new
   items:
     # Card
@@ -53,9 +53,9 @@ highlightedContent:
 
 # conceptualContent section (optional)
 conceptualContent:
-# itemType: architecture | concept | deploy | download | 
-#           get-started | how-to-guide | learn | overview | 
-#           quickstart | reference | tutorial | video | 
+# itemType: architecture | concept | deploy | download |
+#           get-started | how-to-guide | learn | overview |
+#           quickstart | reference | tutorial | video |
 #           whats-new
   title: Microsoft Edge for Enterprise # < 60 chars (optional)
   # summary:  # < 160 chars (optional)
@@ -154,7 +154,7 @@ additionalContent:
         - title: Test & Automation
           links:
             - text: Accessibility
-              url: /microsoft-edge/accessibility 
+              url: /microsoft-edge/accessibility
             - text: DevTools Protocol
               url: /microsoft-edge/devtools-protocol-chromium
             - text: WebDriver

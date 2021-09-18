@@ -34,6 +34,7 @@ To test your webpages for accessibility, first make a checklist of accessibility
 | Verify that the webpage layout is usable when narrow | **Device Emulation** tool | [Verify that the webpage layout is usable when narrow](accessibility-testing-in-devtools.md#verify-that-the-webpage-layout-is-usable-when-narrow), and [Emulate mobile devices in Microsoft Edge DevTools](../device-mode/index.md) |
 
 
+<!-- ====================================================================== -->
 ## See also
 
 *   [Overview of accessibility testing using DevTools][DevtoolsAccessibilityAccessibilitytestingindevtools]
@@ -43,15 +44,17 @@ To test your webpages for accessibility, first make a checklist of accessibility
 *   [Screen reader][MDNScreenReader]
 
 
-## Getting in touch with the Microsoft Edge DevTools team  
+<!-- ====================================================================== -->
+## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
 
-<!-- links -->  
+<!-- ====================================================================== -->
+<!-- links -->
 [DevtoolsAccessibilityTest]: ../../accessibility/test.md "Accessibility testing | Microsoft Docs"
 [DevtoolsAccessibilityAccessibilitytestingindevtools]: accessibility-testing-in-devtools.md "Overview of accessibility testing using DevTools | Microsoft Docs"
-[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigate Microsoft Edge DevTools with assistive technology | Microsoft Docs"  
+[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigate Microsoft Edge DevTools with assistive technology | Microsoft Docs"
 <!-- external -->
-[MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "Accessibility | MDN"  
-[MDNScreenReader]: https://developer.mozilla.org/docs/Glossary/Screen_reader "Screen reader | MDN"  
+[MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "Accessibility | MDN"
+[MDNScreenReader]: https://developer.mozilla.org/docs/Glossary/Screen_reader "Screen reader | MDN"
