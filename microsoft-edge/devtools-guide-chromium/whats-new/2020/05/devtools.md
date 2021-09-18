@@ -270,14 +270,17 @@ App shortcuts help users quickly start common or recommended tasks within a web 
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.  
 
-## Getting in touch with Microsoft Edge Devtools team  
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 <!--[DevtoolsWhatsNew201901Inspect]: ../../../whats-new/2019/01/devtools.md#inspect "Detailed tooltips in Inspect Mode - What's New In DevTools (Edge 73) | Microsoft Docs"  -->  
-
 [DevtoolsConsoleApiDir]: ../../../console/api.md#dir "dir - Console API Reference | Microsoft Docs"  
 [DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]: ../../../console/utilities.md#recently-chosen-element-or-javascript-object "Recently chosen element or JavaScript object - Console Utilities API Reference | Microsoft Docs"  
 [DevtoolsCssReferenceColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "Change colors with the Color Picker - CSS Reference | Microsoft Docs"  

@@ -65,11 +65,13 @@ To audit a page using the Lighthouse tool, perform the following steps.
 1.  To return to the configuration options, in DevTools, select **Perform an audit** (`+`).    
 
 
-## Getting in touch with the Microsoft Edge DevTools team  
+<!-- ====================================================================== -->
+## See also
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
@@ -78,7 +80,9 @@ To audit a page using the Lighthouse tool, perform the following steps.
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 
-<!-- links -->  
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [ChromeWebStoreAxe]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd "axe - Web Accessibility Testing - Chrome Web Store"  
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

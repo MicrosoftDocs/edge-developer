@@ -88,12 +88,9 @@ Playwright launches Microsoft Edge, navigates to `https://www.microsoft.com/edge
 
 For more information about Playwright, navigate to the [Playwright website][PlaywrightMain].  Check out the  [Playwright repo][PlaywrightRepo] on GitHub.  To share your feedback on automating and testing your website or app with Playwright, [file an issue][PlaywrightRepoNewIssue].  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../devtools-guide-chromium/includes/contact-devtools-team-note.md)]  
-
-<!-- links -->  
-
+<!-- ====================================================================== -->
+<!-- links -->
 [WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver (Chromium) | Microsoft Docs"  
 [PuppeteerMain]: ../puppeteer/index.md "Puppeteer | Microsoft Docs"  
 

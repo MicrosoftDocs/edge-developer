@@ -43,11 +43,15 @@ To simulate the operating system's reduced motion setting, without having to cha
 1.  Refresh the webpage and check whether your animations run.
 
 
+<!-- ====================================================================== -->
 ## See also
 
-* [Verify that the page is usable with UI animation turned off](test-reduced-ui-motion.md) - A walkthrough using a demo page, with explanations.
+*  [Verify that the page is usable with UI animation turned off](test-reduced-ui-motion.md) - A walkthrough using a demo page, with explanations.
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
-    
-<!-- links -->  
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "prefers-reduced-motion | MDN"  

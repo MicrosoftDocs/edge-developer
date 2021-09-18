@@ -46,17 +46,14 @@ Since that expression always represents the focused element, you now have a way 
 *   Hover on the result, open the contextual menu \(right-click\), and choose **Store as global variable** to create a variable reference to the node that you are able to use in the **Console**.  
 
 
+<!-- ====================================================================== -->
 ## See also
 
 *  [Analyze the lack of indication of keyboard focus in a sidebar menu](test-analyze-no-focus-indicator.md)
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-
-<!-- links -->  
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
@@ -64,6 +61,10 @@ Since that expression always represents the focused element, you now have a way 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  

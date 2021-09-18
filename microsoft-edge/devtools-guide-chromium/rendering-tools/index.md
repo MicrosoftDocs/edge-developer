@@ -176,12 +176,16 @@ The following table describes some common paint and composite problems and poten
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->  
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Speed up JavaScript runtime | Microsoft Docs"  
 [DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "Turn on advanced paint instrumentation - Performance analysis reference | Microsoft Docs"
 

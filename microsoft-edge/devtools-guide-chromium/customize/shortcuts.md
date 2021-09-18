@@ -70,7 +70,16 @@ While you edit the keyboard shortcuts for an action, to discard your changes, se
 > [!NOTE]
 > If a keyboard shortcut is currently assigned to one action, you are blocked from saving it to another action.  Instead, delete the keyboard shortcut from the previous action, and then add it to the new action.  
 
-<!-- links -->  
+
+<!-- ====================================================================== -->
+## See also
+
+*  [Contacting the Microsoft Edge DevTools team][Contact]
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsCustomizeSettings]: ./index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsOpenMain]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  

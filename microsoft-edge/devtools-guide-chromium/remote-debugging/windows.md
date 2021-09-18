@@ -158,8 +158,16 @@ The **Audits** tool, the **3D View** tool, the **Emulated Devices** section in *
 
 The file explorer does not launch from the DevTools in the **Sources** tool or in the **Security** panel when you remote debug.  The team plans to fix the tools in a future update of Microsoft Edge.  
 
-<!-- links -->
 
+<!-- ====================================================================== -->
+## See also
+
+*  [Contacting the Microsoft Edge DevTools team][Contact]
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsIndex]: ../index.md "Microsoft Edge Developer Tools overview | Microsoft Docs"  
 [DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Debug Progressive Web Apps | Microsoft Docs"  
 

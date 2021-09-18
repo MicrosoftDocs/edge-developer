@@ -83,12 +83,16 @@ You may also use **Command Menu** to access the different simulations.
 > The **Emulate vision deficiencies** tools simulate approximations of how a person with each deficiency may see your product.  Each person is different, therefore vision deficiencies vary in severity from person to person.  To better meet the needs of your users, avoid any color combination that may be an issue.  The **Emulate vision deficiencies** tools are not a full accessibility assessment of your product.  Instead, the **Emulate vision deficiencies** tools should  give you a good first step to avoid problems.  
 
 
+<!-- ====================================================================== -->
 ## See also
 
-* [Verify that the page is usable with blurred vision](test-blurred-vision.md)
+*  [Verify that the page is usable with blurred vision](test-blurred-vision.md)
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
-<!-- links -->  
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analyze runtime performance | Microsoft Docs"  
 

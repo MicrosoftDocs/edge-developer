@@ -406,12 +406,25 @@ Many of the instructions in this tutorial instruct you to hover on a node in the
    Where to choose if all of the options are not displayed  
 :::image-end:::  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+> [!NOTE]
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/dom/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+
+[![Creative Commons License][CCby4Image]][CCA4IL]  
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge \(Chromium\) Developer Tools | Microsoft Docs"  
 [DevToolsCssGetStarted]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
 [DevToolsShortcutsElements]: ../shortcuts/index.md#elements-tool-keyboard-shortcuts "Elements tool keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  
@@ -419,13 +432,6 @@ Many of the instructions in this tutorial instruct you to hover on a node in the
 [GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft Edge (Chromium) DevTools DOM Example | Glitch"
 
 [MDNIntroductionToDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introduction to the DOM | MDN"  
-
-> [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/dom/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
-
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

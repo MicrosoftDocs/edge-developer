@@ -185,13 +185,17 @@ Related Guides:
 
 *   [Inspect page resources](/iterate/manage-data/page-resources)  
 *   [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
-    
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- links -->  
+<!-- ====================================================================== -->
+## See also
 
+*  [Contacting the Microsoft Edge DevTools team][Contact]
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 
 [ChromiumIssues796060#c17]: https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17 "Chromium Issue 796060: Cache Storage value rises on each refresh when Analytics code is in the html"  

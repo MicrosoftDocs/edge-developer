@@ -73,12 +73,16 @@ The web is a great platform for the new class of foldable and dual-screen device
 *   [The Microsoft Edge web platform explainer for new APIs to build web experiences on foldable and dual-screen devices][GithubMicrosoftedgeMsedgeexplainersFoldablesExplainer]  
 *   [Recording of Microsoft 365 Developer Day session: How to build dual-screen experiences for websites and web apps][YoutubeDxrzwsqxpvc]  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [ProgressiveWebAppsIndex]: ../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"  
 [DevtoolsRemoteDebuggingMain]: ./index.md "Get started with remote debugging Android devices | Microsoft Docs"  

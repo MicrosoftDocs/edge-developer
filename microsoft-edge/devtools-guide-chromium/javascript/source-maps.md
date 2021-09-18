@@ -105,12 +105,16 @@ If you expand the **Sources** sub-panel you now display a new file with the cust
    Work with `sourceURL`  
 :::image-end:::  
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [BabelJS]: https://babeljs.io "Babel is a JavaScript compiler"  
 
 [CoffeeScriptMain]: https://coffeescript.org "CoffeeScript"  

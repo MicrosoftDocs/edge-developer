@@ -505,15 +505,16 @@ Another way to find out what to do to improve your web product is to use the [we
     Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem
 :::image-end:::
 
-We're constantly working on new accessibility features for DevTools.  If there is anything you are missing, send us a message and tell us what we can do.
+
+<!-- ====================================================================== -->
+## See also
+
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-
+<!-- ====================================================================== -->
 <!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsMediaQueries]: ../device-mode/index.md#show-media-queries "Show media queries - Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
 [DevToolsDeviceModeIndex]: ../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsAccessibilityReference]: reference.md "Accessibility-testing features in DevTools | Microsoft Docs"

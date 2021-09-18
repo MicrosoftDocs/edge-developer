@@ -32,13 +32,17 @@ When you use the **Sources** tool to [step through code][DevToolsJavascriptStepT
     :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Enable the Mark content scripts as Library code checkbox" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
        Enable the **Mark content scripts as Library code** checkbox  
     :::image-end:::  
-    
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-devtools-team-note.md)]  
 
-<!-- links -->  
+<!-- ====================================================================== -->
+## See also
 
+*  [Contacting the Microsoft Edge DevTools team][Contact]
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "Step 4: Step through the code - Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]

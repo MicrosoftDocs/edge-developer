@@ -256,19 +256,14 @@ To configure options for persistent overlays for CSS grids or Flexbox layouts, u
 
 
 <!-- ====================================================================== -->
-## Providing feedback on experimental features
+## See also
 
-To provide feedback on Microsoft Edge DevTools experiments, or anything else related to DevTools.
-
-*   Send your feedback using the **Send Feedback** icon in the DevTools
-*   Tweet at [@EdgeDevTools][TwitterEdgedevtools]
-
-:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in Microsoft Edge DevTools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
-   The **Send Feedback** icon in Microsoft Edge DevTools
-:::image-end:::
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
+<!-- ====================================================================== -->
 <!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [Devtools3dViewIndex]: ../3d-view/index.md "3D View | Microsoft Docs"
 [DevtoolsCssGrid]: ../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsCustomizeIndex]: ../customize/index.md "Customize Microsoft Edge DevTools | Microsoft Docs"

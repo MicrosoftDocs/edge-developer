@@ -47,16 +47,15 @@ The styles of the page have a CSS pseudo-class rule for the `hover` state that i
 Also, notice that the links have a CSS property setting of `outline: none`.  This is a common practice, to remove the outline which browsers automatically add to elements when you focus on them using a keyboard.  Not using `focus` styling causes confusion for your users.
 
 
-## See also 
+<!-- ====================================================================== -->
+## See also
 
 *  [Track which element has focus](focus.md)
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
-## Getting in touch with the Microsoft Edge DevTools team  
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-
+<!-- ====================================================================== -->
 <!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

@@ -40,21 +40,27 @@ To override the [user agent][MDNUserAgent] string from Microsoft Edge DevTools:
     
 1. Choose a user agent from the drop-down list or enter a custom user agent.
 1. Choose **User agent client hints** to view and  change these values as described in [Network Analysis reference](../network/reference.md).
-    
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- links -->  
+<!-- ====================================================================== -->
+## See also
 
-[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "User agent | MDN"  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/override-user-agent) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "User agent | MDN"  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

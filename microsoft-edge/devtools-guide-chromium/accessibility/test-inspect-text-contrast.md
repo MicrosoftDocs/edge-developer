@@ -54,18 +54,17 @@ Use the following DevTools features to inspect text-color contrast.
 *  Emulate a non-default state, such as the `hover` state, by using **Toggle Element State** in the **Styles** pane, described in [Verify accessibility of all states of elements](test-inspect-states.md).
 
 
+<!-- ====================================================================== -->
 ## See also
 
 *  [Verify accessibility of all states of elements][DevtoolsAccessibilityTestInspectStates]
 *  [Use the Inspect tool to detect accessibility issues by hovering over the webpage](test-inspect-tool.md)
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
-## Getting in touch with the Microsoft Edge DevTools team  
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-
+<!-- ====================================================================== -->
 <!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsAccessibilityTestInspectStates]: test-inspect-states.md "Verify accessibility of all states of elements | Microsoft Docs"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

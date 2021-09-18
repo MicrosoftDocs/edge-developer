@@ -171,13 +171,17 @@ If you want to debug or test the Media Queries you defined in your CSS, use the 
     :::image type="complex" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="Reveal Media Queries in Sources Editor" lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
        Reveal Media Queries in Sources Editor  
     :::image-end:::  
-    
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- links -->  
+<!-- ====================================================================== -->
+## See also
 
+*  [Contacting the Microsoft Edge DevTools team][Contact]
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Change DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
 
 [GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "CSS Examples - Microsoft Edge (Chromium) DevTools | Glitch"  

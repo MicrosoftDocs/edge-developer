@@ -134,12 +134,16 @@ Hover on a function to display the name and timing data.  The following informat
    View functions details in chart  
 :::image-end:::  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsConsoleUtilities]: ../console/utilities.md "Console utilities API reference | Microsoft Docs"  
 [DevtoolsConsoleUtilitiesProfile]: ../console/utilities.md#profile "profile - Console utilities API reference | Microsoft Docs"  
 [DevtoolsConsoleUtilitiesProfileEnd]: ../console/utilities.md#profileend "profileEnd - Console utilities API reference | Microsoft Docs"  

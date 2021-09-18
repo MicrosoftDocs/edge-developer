@@ -60,11 +60,13 @@ In DevTools, one way to view the contrast ratio of a text element is to use the 
 1. To try different colors, select within the visual picker, or select a color swatch at the bottom of the Color Picker.
     
 
-## Getting in touch with the Microsoft Edge DevTools team  
+<!-- ====================================================================== -->
+## See also
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
@@ -73,7 +75,9 @@ In DevTools, one way to view the contrast ratio of a text element is to use the 
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 
-<!-- links -->  
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [W3CContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced "Contrast (Enhanced) Level AAA | W3C"  
 [W3CContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum "Contrast (Minimum) Level AA | W3C"  
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

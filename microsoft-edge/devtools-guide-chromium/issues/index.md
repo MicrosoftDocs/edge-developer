@@ -139,16 +139,16 @@ To display an issue for elements with wavy underlines in the DOM tree, perform t
     :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## See also
 
-* [Automatically test a webpage for accessibility issues](../accessibility/test-issues-tool.md)
+*  [Automatically test a webpage for accessibility issues](../accessibility/test-issues-tool.md)
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsOpenIndex]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
 <!-- external links -->
 [A11ytestingPagewitherrors]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo page | Microsoft Docs"

@@ -563,13 +563,17 @@ To view scroll performance issues, complete the following actions.
     :::image type="complex" source="../media/evaluate-performance-bing-console-drawer-rendering-scrolling-performance-issues.msft.png" alt-text="Scrolling Performance Issues indicates that non-layer viewport-constrained objects may harm scroll performance" lightbox="../media/evaluate-performance-bing-console-drawer-rendering-scrolling-performance-issues.msft.png":::
        **Scrolling Performance Issues** indicates that non-layer viewport-constrained objects may harm scroll performance  
     :::image-end:::  
-    
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- links -->  
+<!-- ====================================================================== -->
+## See also
 
+*  [Contacting the Microsoft Edge DevTools team][Contact]
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
 [DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "Open the Command Menu - Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceGettingStarted]: ./index.md "Get started with analyzing runtime performance | Microsoft Docs"  

@@ -111,19 +111,14 @@ To restore the default theme, placement, tools order, and any other customized s
    Restoring default settings  
 :::image-end:::  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- image links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
-[ImageMoreIcon]: ../media/more-icon.msft.png  
 
-<!-- links -->  
-
-[DevToolsPlacement]: ./placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"  
-[Theme]: ./theme.md "Apply color themes to DevTools | Microsoft Docs"  
-
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
@@ -135,3 +130,12 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[DevToolsPlacement]: ./placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"  
+[Theme]: ./theme.md "Apply color themes to DevTools | Microsoft Docs"  
+<!-- image links -->  
+[ImageMoreIcon]: ../media/more-icon.msft.png  

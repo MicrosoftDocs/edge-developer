@@ -31,16 +31,15 @@ To check whether a webpage is usable with blurred vision:
 1.  In the **Rendering** tool, in **Emulate vision deficiencies**, select **No emulation** to remove the blurred vision simulation.
 
 
+<!-- ====================================================================== -->
 ## See also
 
 *  [Emulate vision deficiencies](emulate-vision-deficiencies.md)
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
-## Getting in touch with the Microsoft Edge DevTools team  
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-
+<!-- ====================================================================== -->
 <!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

@@ -259,12 +259,16 @@ If you have more feedback on the topics or anything else, please use any of the 
 *   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]  
 *   [Twitter][TwitterAlphabetBrowserDevTools]  -->  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsCssIndex]: ../css/index.md "Get started with viewing and changing CSS | Microsoft Docs"  
 
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  

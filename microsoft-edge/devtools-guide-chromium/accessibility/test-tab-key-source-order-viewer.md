@@ -63,15 +63,14 @@ To activate and use the Source Order Viewer, with the demo page:
 1.  Scroll the page to see all of the numeric overlays, including on the page footer section.
 
 
+<!-- ====================================================================== -->
 ## See also
 
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
-## Getting in touch with the Microsoft Edge DevTools team  
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-
+<!-- ====================================================================== -->
 <!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

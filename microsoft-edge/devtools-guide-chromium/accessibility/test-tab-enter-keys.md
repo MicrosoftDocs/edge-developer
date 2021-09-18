@@ -61,15 +61,14 @@ Based on the above walkthrough, we found the following issues that need to be fi
 *  The order of the keyboard access through sections of the page is not correct.  You navigate through all the **More** links in the document before you reach the sidebar navigation menu.  By the time the `Tab` key puts focus on the sidebar navigation menu, you have already traversed all the page content. The sidebar navigation menu was intended to provide easy access to the page content.  For more information on how to solve this issue, navigate to [Test keyboard support using the Source Order Viewer](test-tab-key-source-order-viewer.md).
 
 
+<!-- ====================================================================== -->
 ## See also
 
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
-## Getting in touch with the Microsoft Edge DevTools team  
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-
+<!-- ====================================================================== -->
 <!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

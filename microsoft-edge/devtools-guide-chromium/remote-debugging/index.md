@@ -142,12 +142,16 @@ You are able to interact with the screencast in the following ways.
 > *   Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of the performance of your page.  
 > *   If your Android device screen locks, the content of your screencast disappears.  Unlock your Android device screen to automatically resume the screencast.  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [AndroidDeveloperStudioDevOptions]: https://developer.android.com/studio/debug/dev-options "Configure on-device developer options | Android Developer"  
 [AndroidDeveloperToolsOemUsb]: https://developer.android.com/tools/extras/oem-usb.html "Install OEM USB drivers | Android Developers"  
 

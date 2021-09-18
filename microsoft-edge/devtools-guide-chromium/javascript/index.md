@@ -218,17 +218,18 @@ For more information about when and how to use each type, navigate to [Pause you
 
 A couple of code stepping controls aren't explained in this article.  For more information, navigate to [Step over line of code][DevToolsJavascriptReferenceStepThroughCode] in the "Use the debugger features" article.
 
-### See also
 
-*   [Use the debugger features][DevToolsJavascriptReference] - Using the UI of the debugger in the Sources tool.
-*   [Sources tool overview][DevToolsSourcesIndex] - Introduces the JavaScript debugger and code editor.
+<!-- ====================================================================== -->
+## See also
 
-## Getting in touch with the Microsoft Edge DevTools team  
+*  [Use the debugger features][DevToolsJavascriptReference] - Using the UI of the debugger in the Sources tool.
+*  [Sources tool overview][DevToolsSourcesIndex] - Introduces the JavaScript debugger and code editor.
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- links -->  
-
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsJavascriptReference]: ./reference.md "Use the debugger features | Microsoft Docs"  
 [DevToolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"  
 [DevToolsJavscriptBreakpoints]: ./breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"

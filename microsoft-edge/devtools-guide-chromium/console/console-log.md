@@ -201,12 +201,16 @@ console.table(contentElements,['nodeName', 'innerText', 'offsetHeight'])
 
 You may be tempted to use the log methods as your main means to debug webpages, because log methods are simple to use.  Consider the result of any `console.log()` request.  Live products shouldn't use any log that was used to debug.  It may reveal inside information to people.  And the noise created in the **Console** is overwhelming.  When you use [Breakpoint Debugging][DevtoolsJavascriptBreakpoints] or [Live Expressions][DevtoolsConsoleLiveExpressions], you may find that your workflows are more effective and you get better results.  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
 [DevtoolsConsoleConsoleFilters]: ./console-filters.md "Filter Console messages | Microsoft Docs"  
 [DevtoolsConsoleLiveExpressions]: ./live-expressions.md "Monitor changes in JavaScript using Live Expressions | Microsoft Docs"  

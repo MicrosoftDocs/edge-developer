@@ -234,11 +234,16 @@ The Lighthouse report is organized into sections that correspond with each of th
 
 To run a new audit, use `Shift`+`Tab` to exit the report and select the **Generate report** button.  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsAccessibilityReference]: reference.md "Accessibility-testing features in DevTools | Microsoft Docs"  
 [DevtoolsAccessibilityTab]: accessibility-tab.md "Test accessibility using the Accessibility tab | Microsoft Docs"  
 [MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  

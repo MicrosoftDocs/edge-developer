@@ -319,18 +319,19 @@ If you find yourself running the same debug code in the Console over and over, c
 
 See [Run snippets of JavaScript on any webpage][DevToolsJavascriptSnippets].  
 
-## See also  
 
-*   [Get Started With Debugging JavaScript In Microsoft Edge DevTools][DevToolsJavascriptGetStarted] - A simple, short tutorial using existing code, with screen captures.
-*   [Sources tool overview][DevToolsSourcesIndex] - The **Sources** tool includes the JavaScript debugger and editor.
-*   [Disable JavaScript with Microsoft Edge DevTools][DevToolsJavascriptDisable].
+<!-- ====================================================================== -->
+## See also
 
-## Getting in touch with the Microsoft Edge DevTools team  
+*  [Get Started With Debugging JavaScript In Microsoft Edge DevTools][DevToolsJavascriptGetStarted] - A simple, short tutorial using existing code, with screen captures.
+*  [Sources tool overview][DevToolsSourcesIndex] - The **Sources** tool includes the JavaScript debugger and editor.
+*  [Disable JavaScript with Microsoft Edge DevTools][DevToolsJavascriptDisable].
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- links -->  
-
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsJavascriptBreakpoints]: ./breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsJavascriptDisable]: ./disable.md "Disable JavaScript with Microsoft Edge DevTools | Microsoft Docs"  
 [DevToolsJavascriptGetStarted]: ./index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"  

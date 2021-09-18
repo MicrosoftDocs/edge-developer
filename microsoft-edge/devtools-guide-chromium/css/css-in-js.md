@@ -128,10 +128,12 @@ The **Styles** pane supports CSS rules that you can modify by using the CSS Obje
 
 
 <!-- ====================================================================== -->
-## Getting in touch with the Microsoft Edge DevTools team
+## See also
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
 > The original page is found [here](https://developer.chrome.com/blog/css-in-js/) and is authored by [Alex Rudenko][AlexRudenko] \(Technical Writer, Chrome DevTools \& Lighthouse\).
@@ -142,6 +144,7 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 <!-- ====================================================================== -->
 <!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [CssReference]: reference.md "CSS reference | Microsoft Docs"
 <!-- external links -->
 [BlogCssInJsInDevTools]: https://developers.google.com/web/updates/2021/02/css-in-js "CSS-in-JS support in DevTools | Google Blog "

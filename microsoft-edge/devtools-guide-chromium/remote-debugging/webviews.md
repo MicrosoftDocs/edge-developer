@@ -76,12 +76,16 @@ Your Android WebViews aren't displayed on the `edge://inspect` page?
 *   Verify that Android WebView debugging is turned on for your app.  
 *   On your device, open the app with the Android WebView you want to debug.  Then, refresh `edge://inspect`.  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [RemoteDebuggingGettingStarted]: ./index.md "Get Started with Remote Debugging Android Devices | Microsoft Docs"  
 
 [AndroidDeveloperWebViewsSetWebContentsDebuggingEnabled]: https://developer.android.com/reference/android/webkit/WebView.html#setWebContentsDebuggingEnabled(boolean) "setWebContentsDebuggingEnabled - WebView | Android Developers"  

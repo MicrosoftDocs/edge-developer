@@ -148,12 +148,16 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Run | `Enter` | `Return` |  
 | Expand all subproperties of an object that are logged to the Console | Hold `Alt`, then choose **Expand** \(![Expand](../media/expand-icon.msft.png)\) | Hold `Alt`, then choose **Expand** \(![Expand](../media/expand-icon.msft.png)\) |  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "Change DevTools placement - Customize Microsoft Edge DevTools | Microsoft Docs"  

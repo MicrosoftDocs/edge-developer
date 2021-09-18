@@ -55,12 +55,16 @@ To re-enable JavaScript, complete the following actions.
 *   Open the **Command Menu** again and run the `Enable JavaScript` command.  
 *   Close DevTools.  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]

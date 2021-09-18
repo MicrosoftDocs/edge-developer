@@ -200,12 +200,15 @@ For more information about the Network Activity Log, navigate to [Network Analys
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
-## Getting in touch with Microsoft Edge DevTools team
+<!-- ====================================================================== -->
+## See also
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
+<!-- ====================================================================== -->
 <!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [CustomizeDarkTheme]: ../../../customize/theme.md "Apply color themes to DevTools | Microsoft Docs"
 <!-- todo: link directly to the subheading in the page, when available; test the subheading link:
 [ExperimentalFeaturesDetachedElements]: ../../../experimental-features/index.md#detached-elements "Detached elements | Microsoft Docs" -->

@@ -539,12 +539,16 @@ When you open the **Color Picker**, the **Eyedropper** \(![Eyedropper](../media/
     
 <!--todo:  add the section on the Angle clock section for What's New 88.  -->  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsCommandMenu]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevToolsCSSGetStarted]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
 [DevToolsCSSGetStartedAddPseudoState]: ../css/index.md#add-a-pseudostate-to-a-class "Add a pseudostate to a class - Get Started With Viewing And Changing CSS | Microsoft Docs"  

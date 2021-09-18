@@ -57,7 +57,15 @@ This article is about changing the appearance of the webpage under development. 
 1.  To restore the setting, in the Command Menu, type "emulate" or "scheme" and then select **Rendering: Do not emulate CSS prefers-color-scheme**.  When you refresh the page, your own operating system or browser setting for light or dark mode preference will be applied.
 
 
-<!-- links -->  
+<!-- ====================================================================== -->
+## See also
+
+*  [Contacting the Microsoft Edge DevTools team][Contact]
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCustomizeTheme]: ../customize/theme.md "Apply color themes to DevTools | Microsoft Docs"
 [DevtoolsCssIndex]: ../css/index.md "Get started with viewing and changing CSS | Microsoft Docs"  

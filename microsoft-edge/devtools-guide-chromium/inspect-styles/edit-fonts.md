@@ -99,12 +99,16 @@ The CSS Properties editor also includes preset keywords.  To use the preset keyw
    Open the preset keyword interface  
 :::image-end:::  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndex]: ../experimental-features/index.md "Experimental features | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../experimental-features/index.md#turning-on-experimental-features "Turning on experimental features - Experimental features | Microsoft Docs"  

@@ -649,12 +649,16 @@ console.warn(object [, object, ...])
 
 ---  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Logs in the Console tool | Microsoft Docs"  
 [DevtoolConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
 [DevtoolsConsoleReferenceClear]: ./reference.md#clear-the-console "Clear the Console - Console reference | Microsoft Docs"  

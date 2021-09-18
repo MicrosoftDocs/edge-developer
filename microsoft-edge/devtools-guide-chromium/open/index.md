@@ -115,13 +115,17 @@ To change the `F12` keyboard shortcut setting that opens the DevTools, complete 
     > 
     > *   Select `Ctrl`+`Shift`+`I`.  
     > *   Open the contextual menu \(right-click\) > **Inspect**.  
-    
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- links -->  
+<!-- ====================================================================== -->
+## See also
 
+*  [Contacting the Microsoft Edge DevTools team][Contact]
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsConsoleIndex]: ../console/index.md "Console Overview | Microsoft Docs"  
 [DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
 

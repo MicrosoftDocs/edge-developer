@@ -103,12 +103,16 @@ If your web server is running off of a non-standard port, remember to specify th
 > [!TIP]
 > To resume normal browsing, remember to revert the proxy settings on your Android device after you disconnect from the development machine.  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [RemoteDebuggingGettingStarted]: ./index.md "Get started with remote debugging Android devices | Microsoft Docs"  
 
 [CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Charles Web Debugging Proxy"  

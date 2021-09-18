@@ -93,20 +93,16 @@ In the following figure, the long, blue bar in the **Waterfall** next to the png
 *   Consider hosting your content on a CDN or changing hosting providers.  
 *   Send fewer bytes by optimizing your requests.  
     
-<!--   ## Contribute knowledge  
 
-Do you have a network issue that should be added to this guide?  
+<!-- ====================================================================== -->
+## See also
 
-*   Send a tweet to [@EdgeDevTools][MicrosoftEdgeTweet].  
-*   Choose **Send Feedback** \(![Send Feedback](../media/smile-icon.msft.png)\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.  
-*   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->  
-    
-## Getting in touch with the Microsoft Edge DevTools team  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- links -->  
-
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [NetworkPerformance]: ./index.md "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  
 
 [MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]  

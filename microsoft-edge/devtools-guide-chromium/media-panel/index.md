@@ -103,13 +103,17 @@ You may choose to hide \(or show\) each media player for an easier debugging exp
     :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="Export media information" lightbox="../media/media-panel-save.msft.png":::
        Export media information  
     :::image-end:::  
-    
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- links -->  
+<!-- ====================================================================== -->
+## See also
 
+*  [Contacting the Microsoft Edge DevTools team][Contact]
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsGuideChromiumOpen]: ../open/index.md "Open Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
 
 [DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Get started with remote debugging Android devices | Microsoft Docs"  
@@ -127,4 +131,3 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
 [JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  
-

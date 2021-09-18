@@ -261,13 +261,17 @@ To clear the **Console**, complete any of the following workflows.
 *   Enter `clear()` in the **Console** and select `Enter`.  
 *   Run `console.clear()` from the JavaScript for your webpage.  
 *   Select `Control`+`L` while the **Console** is in focus.  
-    
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- links -->  
+<!-- ====================================================================== -->
+## See also
 
+*  [Contacting the Microsoft Edge DevTools team][Contact]
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Log messages in the Console tool | Microsoft Docs"  
 [DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Console as a JavaScript environment | Microsoft Docs"  

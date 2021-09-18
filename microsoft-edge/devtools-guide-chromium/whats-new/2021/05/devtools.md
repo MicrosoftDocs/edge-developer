@@ -278,12 +278,15 @@ For more about intersection observers, navigate to [Trust is good, observation i
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
-## Getting in touch with Microsoft Edge DevTools team
+<!-- ====================================================================== -->
+## See also
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
+<!-- ====================================================================== -->
 <!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsEvaluatePerfRefAnalyzeAPerfRecording]: ../../../evaluate-performance/reference.md#analyze-a-performance-recording "Analyze a performance recording | Microsoft Docs"
 <!-- external links -->
 [XhrSpecWhatwgOrg]: https://xhr.spec.whatwg.org "XMLHttpRequest spec | WHATWG"

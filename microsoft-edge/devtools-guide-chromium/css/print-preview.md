@@ -40,12 +40,16 @@ The [print media query][MDNUsingMediaQueries] controls how your page looks when 
     
 From here, you may display and change your CSS, like any other web page.  Navigate to [Get Started With Viewing And Changing CSS][DevToolsCSSGetStarted].  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
 [DevToolsCSSGetStarted]: ./index.md "Get started with viewing and changing CSS | Microsoft Docs"  
 

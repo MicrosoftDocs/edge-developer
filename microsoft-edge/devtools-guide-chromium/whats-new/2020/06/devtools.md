@@ -322,11 +322,16 @@ Chromium issue [#1041830][CR1041830]
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.  
 
-## Getting in touch with Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [CssInJs]: ../../../css/css-in-js.md "Style editing for CSS-in-JS frameworks | Microsoft Docs"
 [DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCommandMenu]: ../../../command-menu.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"

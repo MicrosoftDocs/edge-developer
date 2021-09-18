@@ -162,12 +162,16 @@ By default, Snippets are only available within DevTools, but you can also save t
 1.  Hover on the Snippet name, open the contextual menu \(right-click\), and select **Save as**.  
 1.  Choose a file name and location when prompted.  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsConsoleIndex]: ../console/index.md "Console overview | Microsoft Docs"  
 [DevToolsSourcesTool]: ../sources/index.md "Sources tool overview | Microsoft Docs"  
 [DevtoolsJavascriptOverrides]: ./overrides.md "Overrides | Microsoft Docs"  

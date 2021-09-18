@@ -29,7 +29,9 @@ Use DevTools to review and learn more about the following development tasks.
 
 And a lot more.  It all starts when you open DevTools and customize each tool to your needs.  
 
-## Open the DevTools  
+
+<!-- ====================================================================== -->
+## Opening DevTools  
 
 To open and explore the DevTools, use one any of the following actions.  
 
@@ -186,24 +188,27 @@ You can also change the settings of advanced features including the following fe
        Screenshot of all the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code  
     :::image-end:::  
     
+
+<!-- ====================================================================== -->
 ## Try experimental features  
 
 The DevTools team provides new features as experiments in the DevTools.  To get the full list of experiments, navigate to the DevTools **Settings**, and then select **Experiments**.  You may turn each of the experiments on or off.  Help decide which one of the experiments is valuable to you.  For more information on the experiments, navigate to [Experimental features][DevtoolsGuideExperimentalFeaturesIndex].  
 
-## Getting in touch with the Microsoft Edge DevTools team  
+To preview the [latest features coming to the DevTools][DevtoolsGuideWhatsNew202102Devtools], download [Microsoft Edge Canary][MicrosoftedgeinsiderDownload], which builds nightly.  
 
-[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]  
 
-If you want to preview the [latest features coming to the DevTools][DevtoolsGuideWhatsNew202102Devtools], download [Microsoft Edge Canary][MicrosoftedgeinsiderDownload], which builds nightly.  
+<!-- ====================================================================== -->
+## See also
 
-## See also  
+*  [DevTools for beginners: Get Started with HTML and the DOM][DevtoolsGuideBeginnersHtml]
+*  [Microsoft Edge (Chromium) DevTools Protocol][DevtoolsProtocolIndex]
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
-*   [DevTools for beginners: Get Started with HTML and the DOM][DevtoolsGuideBeginnersHtml]  
-*   [Microsoft Edge (Chromium) DevTools Protocol][DevtoolsProtocolIndex]  
-    
-<!-- links -->  
 
-[DevtoolsGuideBeginnersHtml]: ./beginners/html.md "DevTools for beginners: Get started with HTML and the DOM | Microsoft Docs"  
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[DevtoolsGuideBeginnersHtml]: ./beginners/html.md "DevTools for beginners: Get started with HTML and the DOM | Microsoft Docs"
 [DevtoolsGuideCommandMenuIndex]: ./command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"  
 [DevtoolsGuideConsoleIndex]: ./console/index.md "Console overview | Microsoft Docs"  
 [DevtoolsGuideCustomizePlacement]: ./customize/placement.md "Change DevTools placement (Undock, Dock To bottom, Dock To left) | Microsoft Docs"  
@@ -225,9 +230,7 @@ If you want to preview the [latest features coming to the DevTools][DevtoolsGuid
 [DevtoolsGuideWhatsNew202102Devtools]: ./whats-new/2021/02/devtools.md "What's New In DevTools (Microsoft Edge 90) | Microsoft Docs"  
 [DevtoolsGuideWorkspacesIndex]: ./workspaces/index.md "Edit files with Workspaces | Microsoft Docs"  
 [DevtoolsProtocolIndex]: ../devtools-protocol-chromium/index.md "Microsoft Edge (Chromium) DevTools Protocol overview | Microsoft Docs"  
-
+<!-- external links -->
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge Add-ons"  
-
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"  
-
 [GoogleChromeWebstoreExtensions]: https://chrome.google.com/webstore/category/extensions "Extensions | Chrome Web Store"  

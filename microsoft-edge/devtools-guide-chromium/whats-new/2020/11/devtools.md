@@ -340,12 +340,16 @@ For example, the **Network** tool previously used `kB` in the labels, but used `
 
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.  
 
-## Getting in touch with Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: ../10/devtools.md#customize-keyboard-shortcuts-in-settings "Customize keyboard shortcuts in Settings - What's New In DevTools (Microsoft Edge 87) | Microsoft Docs"  
 [WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: ../06/devtools.md#webhint-feedback-in-the-issues-panel "webhint feedback in the Issues panel - What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"  
 

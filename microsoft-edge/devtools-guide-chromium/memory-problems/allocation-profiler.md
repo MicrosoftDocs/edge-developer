@@ -78,12 +78,16 @@ Choosing on a specific object in the heap shows the retaining tree in the bottom
 
 You are able to view memory allocation by JavaScript function.  For more information, navigate to [Investigate memory allocation by function][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsOpenIndex]: ../open/index.md "Open Microsoft Edge (Chromium) DevTools | Microsoft Docs"
 [DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Investigate memory allocation by function - Fix Memory Problems | Microsoft Docs"  
 

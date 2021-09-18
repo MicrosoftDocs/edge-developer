@@ -82,21 +82,27 @@ To use the Command Menu to change which color theme is applied to DevTools:
     :::image-end:::  
 
 
-## Getting in touch with the Microsoft Edge DevTools team  
+<!-- ====================================================================== -->
+## See also
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
-<!-- links -->  
-[DevtoolsCommandMenu]: ../command-menu/index.md "Command Menu | Microsoft Docs"  
-[WhatsNew93]: ../whats-new/2021/07/devtools.md "What's New In DevTools (Microsoft Edge 93) | Microsoft Docs"  
-[VSCode]: https://code.visualstudio.com  
-[AccessibilityPreferredColorSchemeSimulation]: ../accessibility/preferred-color-scheme-simulation.md "Emulate dark or light schemes in the rendered page | Microsoft Docs"
 
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
 [![Creative Commons License][CCby4Image]][CCA4IL]  
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[DevtoolsCommandMenu]: ../command-menu/index.md "Command Menu | Microsoft Docs"  
+[WhatsNew93]: ../whats-new/2021/07/devtools.md "What's New In DevTools (Microsoft Edge 93) | Microsoft Docs"  
+[VSCode]: https://code.visualstudio.com  
+[AccessibilityPreferredColorSchemeSimulation]: ../accessibility/preferred-color-scheme-simulation.md "Emulate dark or light schemes in the rendered page | Microsoft Docs"
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  

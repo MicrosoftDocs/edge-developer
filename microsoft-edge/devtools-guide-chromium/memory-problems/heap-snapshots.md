@@ -245,12 +245,16 @@ To read more about DOM leaks and memory analysis fundamentals checkout [Finding 
 
 <!--todo: add heap profiling dom leaks section when available  -->  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsMemoryProblems101ObjectSizes]: ./memory-101.md#object-sizes "Object sizes - Memory Terminology | Microsoft Docs"  
 [DevtoolsMemoryProblems101ObjectsRetainingTree]: ./memory-101.md#objects-retaining-tree "Objects retaining tree - Memory Terminology | Microsoft Docs"  
 

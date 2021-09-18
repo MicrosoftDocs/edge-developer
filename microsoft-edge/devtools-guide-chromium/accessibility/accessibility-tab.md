@@ -61,7 +61,6 @@ View the ARIA attributes of an element in the **Accessibility** tab.
 
 ## View the computed accessibility properties of an element  
 
-
 Some accessibility properties are dynamically calculated by the browser.  These properties are displayed in the **Computed Properties** section of the **Accessibility** tab.  
 
 View the computed accessibility properties of an element in the **Accessibility** tab.
@@ -74,11 +73,13 @@ View the computed accessibility properties of an element in the **Accessibility*
 :::image-end:::  
 
 
-## Getting in touch with the Microsoft Edge DevTools team  
+<!-- ====================================================================== -->
+## See also
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
@@ -87,7 +88,9 @@ View the computed accessibility properties of an element in the **Accessibility*
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
 
 
+<!-- ====================================================================== -->
 <!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "View only the CSS that is actually applied to an element - CSS Reference | Microsoft Docs"  
 [MDNAccessibilityTree]: https://developer.mozilla.org/docs/Glossary/AOM "Accessibility tree (AOM) | MDN"  
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies  

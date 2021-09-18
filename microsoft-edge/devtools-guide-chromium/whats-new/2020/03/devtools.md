@@ -271,14 +271,17 @@ Enable the new **Show only the minimum safe area for maskable icons** checkbox i
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.  
 
-## Getting in touch with Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [WhatsNew81]: ../01/devtools.md "What's New In DevTools (Microsoft Edge 81) | Microsoft Docs"  
-
 [DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsCssIndex]: ../../../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
 [DevtoolsCssReferenceColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "Change colors with the Color Picker | Microsoft Docs"  

@@ -754,12 +754,16 @@ values(object);
 
 ---  
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+<!-- ====================================================================== -->
+## See also
 
-<!-- links -->  
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
 [DevToolsConsoleApiConsoleDirObject]: ./api.md#dir "dir - Console API reference | Microsoft Docs"  
 
