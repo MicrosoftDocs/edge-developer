@@ -311,7 +311,7 @@
               href: devtools-protocol-chromium/index.md
             - name: Keyboard shortcuts
               href: devtools-guide-chromium/shortcuts/index.md
-        - name: Contacting the DevTools team
+        - name: Contact
           href: devtools-guide-chromium/contact.md
     - name: Extensions
       items:
