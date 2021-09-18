@@ -11,7 +11,7 @@ no-loc: ["Enable webhint", "Enable Network Console", "Source Order Viewer", "Ena
 ---
 # Experimental features
 
-Microsoft Edge DevTools provide access to experimental features that are still in development.  You can test and [provide feedback](#providing-feedback-on-experimental-features) before each feature is released.
+Microsoft Edge DevTools provide access to experimental features that are still in development.  You can try out these features and [provide feedback][Contact] before each feature is released.
 
 All channels of Microsoft Edge have experimental features.  You can get the latest experimental features by using the Microsoft Edge Canary channel.  This article only covers selected experimental features.  For the full list, see the **Settings** > **Experiments** page in DevTools.
 

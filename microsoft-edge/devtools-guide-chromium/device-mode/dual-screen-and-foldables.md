@@ -60,7 +60,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis](../media/experi
 > [!NOTE]
 > The following is a list of current known issues.  
 > 
-> *   When you use a [Microsoft Remote Desktop client][RemoteDesktopClientDocs] to connect to a remote PC and emulate the [Surface Duo][SurfaceDevicesDuo] or [Samsung Galaxy Fold][SamsungMobileGalaxyFold], the pointer may shake or stutter.  If you run into the issue, [send feedback](#getting-in-touch-with-the-microsoft-edge-devtools-team).  
+> *   When you use a [Microsoft Remote Desktop client][RemoteDesktopClientDocs] to connect to a remote PC and emulate the [Surface Duo][SurfaceDevicesDuo] or [Samsung Galaxy Fold][SamsungMobileGalaxyFold], the pointer may shake or stutter.  If you run into the issue, contact the Microsoft Edge DevTools team.
 
 ## Additional Resources  
 

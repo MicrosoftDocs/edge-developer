@@ -208,7 +208,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [CustomizeDarkTheme]: ../../../customize/theme.md "Apply color themes to DevTools | Microsoft Docs"
 <!-- todo: link directly to the subheading in the page, when available; test the subheading link:
 [ExperimentalFeaturesDetachedElements]: ../../../experimental-features/index.md#detached-elements "Detached elements | Microsoft Docs" -->
