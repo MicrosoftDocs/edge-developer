@@ -528,7 +528,7 @@ To turn off speech translated to text, you may deny microphone access from any s
 
 ## Spellcheck  
 
-Microsoft Edge checks your spelling as you type in the browser.  The spellcheck service is completed locally on the device. Microsoft Edge does not send information about your typing to Microsoft for spellcheck. You can turn off the feature. Navigate to `edge://settings/languages`. In **Check Spelling** turn off the setting for each desired language.  
+Microsoft Edge checks your spelling as you type in the browser.  The spellcheck service is completed locally on the device. Microsoft Edge does not send information about your typing to Microsoft for spellcheck. You can turn off the feature. Navigate to `edge://settings/languages`. In **Check Spelling**, turn off the setting for each desired language.  
 
 When you add a new language to Microsoft Edge, the browser downloads the dictionary for the new language to the device using HTTPS.  The dictionary is used for the built-in spellcheck service.  Deleting the language from your Microsoft Edge settings deletes the dictionary from the device.  Guest mode does not use the custom dictionary from the profile or any added languages.  To add or remove words in your local dictionary, navigate to `edge://settings/languages` and under **Check Spelling** select **Add or delete words**.  
 
