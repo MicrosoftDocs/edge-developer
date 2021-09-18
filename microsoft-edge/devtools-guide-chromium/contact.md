@@ -17,13 +17,13 @@ Send your feedback to help improve Microsoft Edge DevTools.  There are several w
 <!-- ====================================================================== -->
 ## The Send Feedback icon and window
 
-*  To send feedback about Microsoft Edge DevTools or the Microsoft Edge Developer documentation, select the **Send Feedback** icon in DevTools.  Or, in DevTools, select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS).  This approach sends a message to the Microsoft Edge development team.  Use this approach when your communication is specifically about Microsoft Edge and developing for it.
+*  To send feedback about Microsoft Edge DevTools or the Microsoft Edge Developer documentation, select the **Send Feedback** icon in DevTools.  Or, in DevTools, select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS).  This approach creates a tracked issue for the Microsoft Edge development team.  Use this approach when your communication is specifically about Microsoft Edge and developing for it.
 
 :::image type="complex" source="media/devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in Microsoft Edge DevTools" lightbox="media/devtools-send-feedback.msft.png":::
    The **Send Feedback** icon in Microsoft Edge DevTools
 :::image-end:::
 
-Selecting the **Send Feedback** icon opens the **Send Feedback** Microsoft Edge window.
+Selecting the **Send Feedback** icon opens a **Send Feedback** window.
 
 :::image type="complex" source="media/send-feedback-dbox.msft.png" alt-text="The Send Feedback window" lightbox="media/send-feedback-dbox.msft.png":::
    The **Send Feedback** window
@@ -33,7 +33,7 @@ Selecting the **Send Feedback** icon opens the **Send Feedback** Microsoft Edge 
 <!-- ====================================================================== -->
 ## Tweeting at EdgeDevTools
 
-At Twitter, you can send a tweet to [@EdgeDevTools][PostTweetEdgeDevTools].  This approach causes __.  Use this approach when __.
+At Twitter, you can send a tweet to [@EdgeDevTools][PostTweetEdgeDevTools].  This approach causes __.  Use this approach when __.  Your message is visible only to __.
 
 
 <!-- ====================================================================== -->
