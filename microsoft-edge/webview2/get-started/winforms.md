@@ -3,7 +3,7 @@ description: Get started guide with WebView2 for WinForms apps
 title: Get started with WebView2 in WinForms apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2021
+ms.date: 09/20/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -13,64 +13,70 @@ keywords: WebView2, webview2, WebView, webview, winforms apps, winforms, edge, C
 
 In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  For more information on individual APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2Winforms].  
 
+
+<!-- ====================================================================== -->
 ## Prerequisites  
 
 Install the following list of prerequisites before proceeding.
 
-*   [WebView2 Runtime][MicrosoftDeveloperMicrosoftEdgeWebview2] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] (Beta, Dev, or Canary) installed on supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).  
+*   [WebView2 Runtime][MicrosoftDeveloperMicrosoftEdgeWebview2] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] (Beta, Dev, or Canary) installed on supported OS (currently Windows 10, Windows 8.1, and Windows 7).  
     
     > [!NOTE]
     > The WebView team recommends using the Canary channel and the minimum required version is 82.0.488.0.  
     
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 or later.  
 
+
+<!-- ====================================================================== -->
 ## Step 1 - Create a single-window app
 
 Start with a basic desktop project that contains a single main window.  
 
-1. Open Visual Studio. In the opening panel, choose **Create a new project**.
+1. Open Visual Studio. In the opening panel, select **Create a new project**.
 
     :::image type="complex" source="./media/winforms-opening-panel.png" alt-text="Visual Studio opening panel" lightbox="./media/winforms-opening-panel.png":::
        Visual Studio opening panel  
     :::image-end:::
 
-1. Locate and to choose **C# Windows Forms .NET Framework App** then choose **Next**.
+1. Select **C# Windows Forms .NET Framework App**, and then select **Next**.
     
     :::image type="complex" source="./media/winforms-new-project.png" alt-text="New project" lightbox="./media/winforms-new-project.png":::
        New project  
     :::image-end:::
     
-1.  Enter values for **Project name** and **Location**.  Choose **.NET Framework 4.7.2** or later.  
+1.  Enter values for **Project name** and **Location**.  Select **.NET Framework 4.7.2** or later.  
     
     :::image type="complex" source="./media/winforms-start-proj.png" alt-text="Start project" lightbox="./media/winforms-start-proj.png":::
        Start project  
     :::image-end:::
     
-1.  Choose **Create**.
-    
+1.  Select **Create**.
+
+
+<!-- ====================================================================== -->
 ## Step 2 - Install WebView2 SDK
 
 Use NuGet to add the WebView2 SDK to the project.  
 
-1.  Hover on the project, open the contextual menu \(right-click\), and choose **Manage NuGet Packages...**.  
+1.  Hover on the project, open the contextual menu (right-click), and then select **Manage NuGet Packages**.  
     
     :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="Manage NuGet Packages":::
        Manage NuGet Packages
     :::image-end:::
     
-1.  Choose **Browse**. In the search bar, type `Microsoft.Web.WebView2` and choose **Microsoft.Web.WebView2**.  
+1.  Select **Browse**.  In the search bar, type `Microsoft.Web.WebView2` and then select **Microsoft.Web.WebView2**.  
     
     :::image type="complex" source="./media/install-nuget.png" alt-text="NuGet" lightbox="./media/install-nuget.png":::
        NuGet  
     :::image-end:::
 
-1. Accept the default version and choose **Install**.
+1. Accept the default version and then select **Install**.
 
     :::image type="complex" source="./media/winforms-install-webview2-preview.png" alt-text="Preview Changes" lightbox="./media/winforms-install-webview2-preview.png":::
        Preview Changes  
     :::image-end:::
 
-1. Choose **OK** to continue.
+1. Select **OK** to continue.
     
     Start developing apps using the WebView2 API.  To build and run the project, select `F5`.  The running project displays an empty window.  
     
@@ -78,17 +84,19 @@ Use NuGet to add the WebView2 SDK to the project.
        Empty app  
     :::image-end:::
     
+
+<!-- ====================================================================== -->
 ## Step 3 - Create a single WebView  
 
 Add a WebView to your app.  
 
-1. Choose **Project** > **Add Form (Windows Forms)...**.  
-1. In the Add New Item panel, choose **Visual C# Items** > **Web** > **Windows Forms** > **Form (Windows Forms)** and choose **Add**.
-1. Choose **View** > **Toolbox**.
-1. In the **Toolbox** choose **WebView2 Windows Forms Control** to expand the options.  
+1. Select **Project** > **Add Form (Windows Forms)**.  
+1. In the **Add New Item** panel, select **Visual C# Items** > **Web** > **Windows Forms** > **Form (Windows Forms)** and then select **Add**.
+1. Select **View** > **Toolbox**.
+1. In the **Toolbox**, select **WebView2 Windows Forms Control** to expand the options.  
     
     > [!NOTE]
-    > If you are using Visual Studio 2017, by default **WebView2** may not display in the **Toolbox**. To enable the behavior, choose **Tools** > **Options** > **General** > and set the **Automatically Populate Toolbox** setting to `True`.  
+    > If you are using Visual Studio 2017, by default **WebView2** isn't displayed in the **Toolbox**. To enable **WebView2** to be displayed in the **Toolbox**, select **Tools** > **Options** > **General** > and set the **Automatically Populate Toolbox** setting to `True`.  
     
 1. Drag and drop the **WebView2** control into the Windows Forms App.
     
@@ -98,7 +106,7 @@ Add a WebView to your app.
     
 1. Close the **Toolbox**.
 
-1. In the Properties panel, set the **(Name)** property to **webView**. Use the **Categorized** and **Alphabetical** sort options as needed to find properties.
+1. In the **Properties** panel, set the **(Name)** property to **webView**. Use the **Categorized** and **Alphabetical** sort options as needed to find properties.
     
     :::image type="complex" source="./media/winforms-properties.png" alt-text="Properties of the WebView2 control" lightbox="./media/winforms-properties.png":::
        Properties of the WebView2 control
@@ -115,21 +123,23 @@ Add a WebView to your app.
     :::image-end:::
 
     > [!NOTE]
-    > If you are working on a high DPI monitor, you may have to [configure your Windows Forms app for high DPI support][DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport].  
+    > If you are working on a high-resolution monitor, you may have to [configure your Windows Forms app for high DPI support][DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport].  
     
+
+<!-- ====================================================================== -->
 ## Step 4 - Add controls and process window resize events  
 
-Add more controls to your Windows Forms from the toolbox, then process window resize events.  
+Add more controls to your Windows forms from the toolbox, and then process window resize events, as follows.
 
-1. Choose **View** > **Toolbox**.
-1. In the **Toolbox** choose **Common Controls**. 
-1. Drag and drop **TextBox** control into the Windows Forms App.
-1. In the Properties panel, change the **\(Name\)** to **addressBar**.  
-1. Drag and Drop a **Button** control into the Windows Forms App.
-1. In the Properties panel, change the **\(Name\)** to **goButton**.
-1. Change the **Text** property to **Go!**.
+1. Select **View** > **Toolbox**.
+1. In the **Toolbox**, select **Common Controls**. 
+1. Drag and drop **TextBox** control into the Windows Forms app.
+1. In the **Properties** panel, change the **(Name)** to **addressBar**.  
+1. Drag and drop a **Button** control into the Windows Forms app.
+1. In the **Properties** panel, change the **(Name)** to **goButton**.
+1. Change the **Text** property to **Go!**
 1. Resize the button as needed to display the text.
-1. Arrange the text box to the left of the button, aligned by the text as shown. 
+1. Arrange the text box to the left of the button, aligned by the text as shown.
     
     :::image type="complex" source="./media/winforms-designer.png" alt-text="WinForms designer" lightbox="./media/winforms-designer.png":::
        WinForms designer  
@@ -141,9 +151,9 @@ Add more controls to your Windows Forms from the toolbox, then process window re
        WinForms designer textbox and button
     :::image-end::: 
 
-1. Choose **View** > **Code** to open the `Form1.cs` file.
+1. Select **View** > **Code** to open the `Form1.cs` file.
 
-    Define `Form_Resize` to keep the controls in place when the App Window is resized.
+    Define `Form_Resize` to keep the controls in place when the app window is resized, as follows.
 
 1. Replace the following code:
     
@@ -179,6 +189,8 @@ Add more controls to your Windows Forms from the toolbox, then process window re
    App  
 :::image-end:::  
 
+
+<!-- ====================================================================== -->
 ## Step 5 - Navigation
 
 Add the ability to allow users to change the URL that the WebView2 control displays by adding an address bar to the app.  
@@ -208,15 +220,17 @@ Add the ability to allow users to change the URL that the WebView2 control displ
     }
     ```  
     
-To build and run your project, select `F5`.  Enter a new URL in the address bar, and select **Go**.  For example, enter `https://www.bing.com`.  Ensure the WebView2 control navigates to the URL.  
+To build and run your project, select `F5`.  Enter a new URL in the address bar, and select **Go**.  For example, enter `https://www.bing.com`.  Make sure the WebView2 control navigates to the URL.  
 
 > [!NOTE]
-> Ensure a complete URL is entered in the address bar.  An `ArgumentException` is thrown if the URL does not start with `http://` or `https://`
+> Make sure a complete URL is entered in the address bar.  An `ArgumentException` is thrown if the URL does not start with `http://` or `https://`
 
 :::image type="complex" source="./media/winforms-bing.png" alt-text="bing.com" lightbox="./media/winforms-bing.png":::
    bing.com  
 :::image-end:::  
 
+
+<!-- ====================================================================== -->
 ## Step 6 - Navigation events  
 
 During webpage navigation, the WebView2 control raises events.  The app that hosts WebView2 controls listens for the following events.  
@@ -267,11 +281,13 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 
 In the constructor, `EnsureHttps` is registered as the event handler on the `NavigationStarting` event on the WebView2 control.  
 
-To build and run your project, select `F5`.  Ensure when navigating to an HTTP site, the WebView remains unchanged.  However, the WebView will navigate to HTTPS sites.
+To build and run your project, select `F5`.  Make sure when navigating to an HTTP site, the WebView remains unchanged.  However, the WebView will navigate to HTTPS sites.
 
+
+<!-- ====================================================================== -->
 ## Step 7 - Scripting  
 
-You may use host apps to inject JavaScript code into WebView2 controls at runtime.  You may task WebView to run arbitrary JavaScript or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run with specific timing.  
+You can use host apps to inject JavaScript code into WebView2 controls at runtime.  You can task WebView to run arbitrary JavaScript or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run with specific timing.  
 
 *   Run it after the creation of the global object.  
 *   Run it before any other script included in the HTML document is run.  
@@ -290,17 +306,19 @@ void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
 }
 ```  
 
-To build and run your project, select `F5`.  Ensure the app displays an alert when you navigate to a website that doesn't use HTTPS.  
+To build and run your project, select `F5`.  Make sure the app displays an alert when you navigate to a website that doesn't use HTTPS.  
 
 :::image type="complex" source="./media/winforms-https.png" alt-text="https" lightbox="./media/winforms-https.png":::
    https  
 :::image-end:::  
 
+
+<!-- ====================================================================== -->
 ## Step 8 - Communication between host and web content  
 
-The host and web content may use `postMessage` to communicate with each other as follows:  
+The host and web content can use `postMessage` to communicate with each other as follows:  
 
-*   Web content in a WebView2 control may use `window.chrome.webview.postMessage` to post a message to the host.  The host handles the message using any registered `WebMessageReceived` on the host.  
+*   Web content in a WebView2 control can use `window.chrome.webview.postMessage` to post a message to the host.  The host handles the message using any registered `WebMessageReceived` on the host.  
 *   Hosts post messages to web content in a WebView2 control using `CoreWebView2.PostWebMessageAsString` or `CoreWebView2.PostWebMessageAsJSON`.  These messages are caught by handlers added to `window.chrome.webview.addEventListener`.  
     
 The communication mechanism passes messages from web content to the host using native capabilities.  
@@ -364,27 +382,30 @@ To build and run the app, select `F5`.  Now, the address bar displays the URI in
    Final app  
 :::image-end:::  
 
-Congratulations, you built your first WebView2 app.  
+Congratulations, you built your first WebView2 app!
 
+
+<!-- ====================================================================== -->
 ## Next steps  
 
-To continue learning more about WebView2, navigate to the following resources.  
+*  [WebView2 development best practices][WV2BestPractices]
+*  [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain] - A comprehensive example of WebView2 capabilities.
+*  [Next steps][Webview2IndexNextSteps] - Conceptual and how-to articles about building and deploying WebView2 apps.
+*  [WebView2 API reference][DotnetApiMicrosoftWebWebview2WinformsWebview2]
 
-*   Building WebView2 applications: [WebView2 development best practices][WV2BestPractices].  
-*   Comprehensive example of WebView2 capabilities: [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain].  
-*   More information about WebView2: [WebView2 Resources][Webview2IndexNextSteps].  
-*   Detailed information about the WebView2 API: [API reference][DotnetApiMicrosoftWebWebview2WinformsWebview2].  
-    
+
+<!-- ====================================================================== -->
 ## Getting in touch with the Microsoft Edge WebView team  
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
-<!-- links -->  
 
+<!-- ====================================================================== -->
+<!-- links -->  
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"  
-
+<!-- external links -->
 [DotnetApiMicrosoftWebWebview2Winforms]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2WinformsWebview2]: /dotnet/api/microsoft.web.webview2.winforms.webview2 "WebView2 Class | Microsoft Docs"  
 [DotnetApiMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async "WebView2.EnsureCoreWebView2Async(CoreWebView2Environment) Method | Microsoft Docs"  
