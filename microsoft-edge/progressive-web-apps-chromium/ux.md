@@ -68,6 +68,39 @@ PWAs can also display notifications in the operating system's own notification s
    Notifications in Windows Action Center  
 :::image-end:::  
 
+### Starting PWAs when the user logs in  
+
+PWAs can launch automatically when the users into Windows. This capability allows a user to engage with the app as soon as the user logs into the OS.  
+
+To turn on the `Start app when you sign in` feature for an installed PWA:  
+
+1.  Open Microsoft Edge.
+1.  Navigate to `edge://apps`.
+1.  Hover on your app.
+1.  Open the contextual menu (right-click) and then select **Start app when you sign in**.
+
+:::image type="complex" source="./media/turn-on-run-on-os-login-flag.png" alt-text="Use the contextual menu to turn on the Start app when you sign in feature in Microsoft Edge" lightbox="./media/turn-on-run-on-os-login-flag.png":::
+   Use the contextual menu to turn on the **Start app when you sign in** feature in Microsoft Edge
+:::image-end:::  
+
+Upon installation of an app, users are also given a chance to turn on the feature in the post-installation dialog.  
+
+:::image type="complex" source="./media/post-install-run-on-os-login.png" alt-text="The post-installation dialog automatically opens once an app is installed" lightbox="./media/post-install-run-on-os-login.png":::
+   The post-installation dialog automatically opens once an app is installed  
+:::image-end:::  
+
+## App info menu  
+
+When a user selects the ellipses (**...**) button in the app's title bar, the **App info** menu is displayed. This menu contains useful information about the app, such as:  
+
+*  The app icon, name, and publisher.  
+*  The various app permissions that have been granted.  
+*  Privacy information such as the number of cookies used.  
+*  Lists of extensions and tools that can be used in the app.  
+
+:::image type="complex" source="./media/app-info-menu.png" alt-text="The App info menu" lightbox="./media/app-info-menu.png":::
+   The App info menu  
+:::image-end::: 
 
 <!-- Links -->
 

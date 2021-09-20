@@ -421,8 +421,6 @@
                   href: progressive-web-apps-chromium/how-to/shortcuts.md
                 - name: Synchronize and update in the background
                   href: progressive-web-apps-chromium/how-to/background-syncs.md
-                - name: Run on OS login
-                  href: progressive-web-apps-chromium/how-to/run-on-os-login.md
         - name: What's new
           href: progressive-web-apps-chromium/whats-new/pwa.md
         - name: Demo PWAs
