@@ -1,6 +1,6 @@
 ---
-description: Learn how to manage user data folders in WebView2 applications
-title: Manage user data folder in WebView2 applications.
+description: Learn how to manage user data folders in WebView2 applications.
+title: Manage the user data folder
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/06/2021
@@ -29,7 +29,7 @@ To specify the location of the user data folder, include the `userDataFolder` pa
     
 ## Delete user data folders  
 
-Your application may need to delete user data folders:  
+Your application may need to delete user data folders for the following reasons:
 
 *   When uninstalling your app.  If you are uninstalling packaged Windows Store apps, Windows deletes user data folders automatically.  
 *   To clean up all browsing data history.  
@@ -37,21 +37,21 @@ Your application may need to delete user data folders:
 *   To remove previous session data.  
     
 > [!NOTE]
-> Files in user data folders may still be in use after the WebView2 application is closed.  In this situation, wait for the browser process and all child processes to exit before deleting the folder.  You may retrieve the process id of the browser process using the `BrowserProcessId` property of the WebView2.  
+> Files in user data folders may still be in use after the WebView2 application is closed.  In this situation, wait for the browser process and all child processes to exit before deleting the folder.  You can retrieve the process ID of the browser process using the `BrowserProcessId` property of the WebView2.  
 
 ## Share user data folders  
 
-WebView2 controls may share the same user data folders to:  
+WebView2 controls can share the same user data folders, to do the following:
 
-*   [Optimize system resources](../concepts/process-model.md) by running in one browser process.  
+*   Optimize system resources by running in one browser process.  See [The WebView2 process model](../concepts/process-model.md).
 *   Share browser history and cached resources.  
     
 Consider the following when sharing user data folders:  
 
-1.  When re-creating WebView2 controls to update browser versions using [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) \(Win32\) or [NewBrowserVersionAvailable](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) \(.NET\) events, ensure browser processes exit and close WebView2 controls that share the same user data folder.  To retrieve the process id of the browser process, use the `BrowserProcessId` property of the WebView2 control.  
+1.  When re-creating WebView2 controls to update browser versions using [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) \(Win32\) or [NewBrowserVersionAvailable](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) \(.NET\) events, ensure browser processes exit and close WebView2 controls that share the same user data folder.  To retrieve the process ID of the browser process, use the `BrowserProcessId` property of the WebView2 control.  
 1.  WebView2 controls that share the same user data folder must use the same options for [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) \(Win32\) or [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) \(.NET\).  If not, the WebView2 creation will fail with `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)`.  
     
-To isolate different parts of your application or when sharing data between WebView2 controls is not needed, you may choose to use different user data folders.  For example, an application may consist of two WebView2 controls, one for displaying an advertisement and the other for displaying application content.  In this scenario, developers may opt to use different user data folders for each WebView2 control.  
+To isolate different parts of your application, or when sharing data between WebView2 controls is not needed, you can use different user data folders.  For example, an application may consist of two WebView2 controls, one for displaying an advertisement and the other for displaying application content.  You can use different user data folders for each WebView2 control.
 
 > [!NOTE]
-> Each WebView2 browser process consumes additional memory and disk space.  Therefore, we recommend not running WebView2s with too many different user data folders at the same time.  
+> Each WebView2 browser process consumes additional memory and disk space.  Therefore, we recommend not running a WebView2 control with too many different user data folders at the same time.  

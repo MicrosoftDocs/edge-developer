@@ -15,7 +15,7 @@ Extensions communicate with a native Win32 app installed on a user's device usin
 To acquire the extension and native app host, you have two distribution models.  
 
 *   Package your extension and the host together.  When a user installs the package, both the extension and the host are installed.  
-*   Install your extension using the [Microsoft Edge Add-ons store][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome], and your extension prompts users to install the host.  
+*   Install your extension using the [Microsoft Edge Add-ons website][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome], and your extension prompts users to install the host.  
 
 To create your extension to send and receive messages with native app hosts, complete the following steps.  
 
@@ -155,7 +155,7 @@ To sideload your extension during development and retrieve `microsoft_catalog_ex
 1.  Navigate to `edge://extensions` page and verify your extension is listed.  
 1.  Copy the key from `microsoft_catalog_extension_id` \(ID\) from the extension listing on the page.  
     
-When you're ready to distribute your extension to users, publish your extension to the Microsoft Edge Add-ons store.  The extension ID of the published extension may differ from the ID used while sideloading your extension.  If the ID changed, update `allowed_origins` in the host manifest file with the ID of your published extension.  
+When you're ready to distribute your extension to users, publish your extension to the Microsoft Edge Add-ons website.  The extension ID of the published extension may differ from the ID used while sideloading your extension.  If the ID changed, update `allowed_origins` in the host manifest file with the ID of your published extension.  
 
 ## Step 3 - Copy the native messaging host manifest file to your system  
 

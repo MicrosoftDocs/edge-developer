@@ -176,7 +176,7 @@ Now in Microsoft Edge version 93, screen readers correctly announce the type and
 
 <!-- It'd be good to have a video of this a11y fix where the text that the screen reader announces is displayed -->
 
-For information about debugging Console errors, navigate to [Debug errors reported in Console][ConsoleConsoleDebugJavascript].  For information about issues found by DevTools and improvements you can make to a webpage, navigate to [Find and fix problems using the Issues tool][IssuesIndex].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1223208][CR1223208].
+For information about debugging Console errors, navigate to [Fixing JavaScript errors that are reported in the Console][ConsoleConsoleDebugJavascript].  For information about issues found by DevTools and improvements you can make to a webpage, navigate to [Find and fix problems using the Issues tool][IssuesIndex].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1223208][CR1223208].
 
 
 ## Copy as PowerShell in the Network tool now includes cookies
@@ -213,7 +213,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [CssReference]: ../../../css/reference.md "CSS reference | Microsoft Docs"
 [DeviceModeIndexSetUach]: ../../../device-mode/index.md#set-user-agent-client-hints "Set user agent client hints | Microsoft Docs"
 [NetworkReferenceSetUach]: ../../../network/reference.md#set-user-agent-client-hints "Set user agent client hints | Microsoft Docs"
-[ConsoleConsoleDebugJavascript]: ../../../console/console-debug-javascript.md "Debug errors reported in Console | Microsoft Docs"
+[ConsoleConsoleDebugJavascript]: ../../../console/console-debug-javascript.md "Fixing JavaScript errors that are reported in the Console | Microsoft Docs"
 [IssuesIndex]: ../../../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
 [NetworkReference]: ../../../network/reference.md "Network Analysis reference | Microsoft Docs"
 

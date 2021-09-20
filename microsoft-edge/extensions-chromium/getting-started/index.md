@@ -1,6 +1,6 @@
 ---
-description: Learn about Chromium Extensions, and core concepts to build extensions.
-title: Microsoft Edge (Chromium) Extensions concepts and architecture
+description: The architecture of Microsoft Edge (Chromium) extensions, and core concepts to build extensions.
+title: Extension concepts and architecture
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
@@ -8,11 +8,11 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, web development, html, css, javascript, developer, extensions
 ---
-# Extension concepts and architecture  
+# Extension concepts and architecture
 
-This article provides a brief introduction to concepts that help you build an extension.  To understand Microsoft Edge \(Chromium\) extensions, follow along to understand how multi-tab browsers work.  
+This article introduces concepts that will help you build a Microsoft Edge extension.  Follow along to understand how multi-tab browsers work.
 
-## Understand how browsers work  
+## Understand how browsers work
 
 The following list outlines helpful information to understand before building your extension.  
 
@@ -23,7 +23,9 @@ The following list outlines helpful information to understand before building yo
     :::image-end:::  
     
 1.  Each tab handles one GET request.  Each tab uses a URL to get a single stream of data, which is normally an HTML document.  That single stream or page, includes instructions like JavaScript include tags, image references, CSS references, and more.  All resources are downloaded to that one tab page, and then the page is rendered in the tab.  
+
 1.  Communication occurs between each tab and a remote server.  Each tab runs in an isolated environment.  Each tab is still connected to the internet, but each is isolated from other tabs.  A tab may run JavaScript to communicate with a server.  The server is the originating server for the first GET request that was entered into the URL bar of the tab.  
+
 1.  The extension model uses a different communication model.  Similar to a tab page, an extension runs in an individual thread that is isolated from other tab page threads.  A tab sends single GET requests to remote servers, and then renders the page.  However, an extension works similar to a remote server.  Installing an extension in a browser creates a standalone web server in the browser.  The extension is isolated from all tab pages.  
     
     :::image type="complex" source="./media/index-image3-upsidedown.png" alt-text="Extensions use a different communication model" lightbox="./media/index-image3-upsidedown.png":::

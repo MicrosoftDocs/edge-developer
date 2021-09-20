@@ -11,18 +11,12 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 ---
 # Win32 C++ WebView2 API conventions  
 
-:::row:::
-   :::column span="1":::
-      Supported platforms:
-   :::column-end:::
-   :::column span="2":::
-      Win32
-   :::column-end:::
-:::row-end:::  
+Supported platforms: Win32.
+
 
 ## Prerequisites  
 
-*   Experience using Win32 API  
+*   Experience using the Win32 API.
 
 ## Async methods  
 
@@ -143,11 +137,6 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
-
-[Webview2GetStartedWin32]: ../get-started/win32.md "Get started with WebView2 | Microsoft Docs"  
-
 [Webview2ReferenceWin32Icorewebview2CapturePreview]: /microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview "CapturePreview - interface ICoreWebView2 | Microsoft Docs"  
-
 [CppCxWrlCallbackFunction]: /cpp/cppcx/wrl/callback-function-wrl "Callback Function (WRL) | Microsoft Docs"  
-
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 Class | Microsoft Docs"  
