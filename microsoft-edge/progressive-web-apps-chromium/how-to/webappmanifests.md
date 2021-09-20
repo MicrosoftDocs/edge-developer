@@ -9,13 +9,43 @@ ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
 ---
-# Use a Web App Manifest to integrate a Progressive Web App into the Operating System
+# Use a Web App Manifest to integrate a Progressive Web App into the Operating System  
 
-<!-- todo: above the Shortcuts section, add basics/code, like in the workshop or MDN content overview of properties (want the barebones that are needed to get started).  The workshop walks through effects (slide 55 "A little color").  The workshop might be helpful to watch when writing, to explain the bits & pieces.  Walks through web app manifests & service workers. -->
+A Web App Manifest of a website governs how your Progressive Web App (PWA) looks and behaves when installed on a device. The Web App Manifest provides information such as the name of your app, the file location of icons that represent your app in system menus, and the theme colors that the operating system (OS) uses in the title bar.  
 
-<!-- todo: when these experimental features land in the manifest and so are no longer experimental, move the "URI Protocol Handling" & "URL Link Handling" sections from article [Experimental features in Progressive Web Apps (PWAs)](experimental-features/index.md) into the present article, but preserve the two headings there, move them to the bottom, with a link pointing to the moved sections in this article. -->
+A Web App Manifest is a JSON file that must be referenced from your website's HTML page using a manifest link. Insert the following code in between the `<head>` and `</head>` tags of your website's HTML page to link to your manifest file:  
 
-A Web App Manifest of a website governs how your Progressive Web App (PWA) looks and behaves when installed on a device.  The Web App Manifest provides information such as the name of your app, the file location of icons that represent your app in system menus, and the theme colors that the operating system (OS) uses in the title bar.    
+```html
+<link rel="manifest" href="/manifest.json">
+```  
+
+> [!NOTE]
+> The manifest file's content must be valid JSON, but the file can also be named like `app_name.webmanifest`. If you do choose to use the `webmanifest` extension, verify that your HTTP server serves it with the `application/manifest+json` MIME type.  
+
+At a minimum, a manifest file should contain the following information:  
+
+```json
+{
+    "lang": "en-US",
+    "name": "My Sample PWA",
+    "short_name": "SamplePWA",
+    "description": "A sample PWA for testing purposes"
+}
+```  
+
+A PWA can be customized further using other manifest members such as the following:  
+
+| Member | Description |  
+|:--- |:--- |  
+| `start_url` | The preferred URL that should be navigated to when the operating system launches your app. |  
+| `scope` | Defines the navigation scope for the app. Outside of this scope, the visited page reverts to a normal webpage, not a PWA. This defaults to `start_url`. |  
+| `display` | What the app should look like. This changes how much of the browser UI is shown to the user. |  
+| `theme_color` | The default theme color for the app. This affects how the OS displays the site. |
+| `background_color` | The background color of the window where the app is launched, before the stylesheet is applied. |  
+| `orientation` | On supporting devices, this defines the default orientation for the app (such as landscape or portrait). |  
+| `icons` | Array of icon image objects that are used by the OS in different contexts. |  
+
+Below is a manifest file that uses these manifest members:  
 
 ```json
 {
@@ -24,10 +54,11 @@ A Web App Manifest of a website governs how your Progressive Web App (PWA) looks
     "short_name": "SamplePWA",
     "description": "A sample PWA for testing purposes",
     "start_url": "/",
-    "background_color": "#2f3d58",
-    "theme_color": "#2f3d58",
-    "orientation": "any",
+    "scope": "/",
     "display": "standalone",
+    "theme_color": "#2f3d58",
+    "background_color": "#2f3d58",
+    "orientation": "any",
     "icons": [
         {
             "src": "/icon512.png",
@@ -37,7 +68,11 @@ A Web App Manifest of a website governs how your Progressive Web App (PWA) looks
 }
 ```  
 
-A Web App Manifest also enables you to unlock powerful features that allow your app to behave like native apps.  
+To learn more about manifest members, navigate to the [Web app manifests documentation][MDNWebAppManifests].  
+
+Using a manifest also enables you to unlock powerful features that allow your app to behave like native apps, like adding app shortcuts or identifying as a share target.  
+
+<!-- todo: when these experimental features land in the manifest and so are no longer experimental, move the "URI Protocol Handling" & "URL Link Handling" sections from article [Experimental features in Progressive Web Apps (PWAs)](experimental-features/index.md) into the present article, but preserve the two headings there, move them to the bottom, with a link pointing to the moved sections in this article. -->
 
 
 <!-- ====================================================================== -->
@@ -95,15 +130,10 @@ To learn more about using the Share Target feature, navigate to [Share with othe
 ## See also
 
 *  [Getting Started with Progressive Web Apps (Workshop)][AaronPWAWorkshop].
-*  [Web App Manifests][MDNWebAppManifests].
-*  [Web Share Target][GitHubWicgWebShareTarget].
-*  [Web Share][GithubW3cWebShare].
 
 
 <!-- ====================================================================== -->
 <!-- links -->
 <!-- external links -->
 [MDNWebAppManifests]: https://developer.mozilla.org/docs/Web/Manifest "Web app manifests | MDN"
-[GitHubWicgWebShareTarget]: https://wicg.github.io/web-share-target "Web Share Target API | WICG"
-[GithubW3cWebShare]: https://w3c.github.io/web-share/ "Web Share API | WICG"
 [AaronPWAWorkshop]: https://noti.st/aarongustafson/co3b5z/getting-started-with-progressive-web-apps-workshop "Getting Started with Progressive Web Apps [Workshop]"
