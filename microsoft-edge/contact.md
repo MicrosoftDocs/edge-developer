@@ -17,9 +17,9 @@ Send your feedback to help improve Microsoft Edge DevTools and other features th
 
 
 <!-- ====================================================================== -->
-## The Send Feedback icon and window
+## The Send Feedback button and window
 
-*  To send feedback about developing using Microsoft Edge, or about the Microsoft Edge Developer documentation, press `F12` to open DevTools and then select the **Send Feedback** icon in DevTools.  Or, in DevTools, select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS).  This approach creates a tracked issue for the Microsoft Edge development team.
+*  To send feedback about developing using Microsoft Edge, or about the Microsoft Edge Developer documentation, [open DevTools](devtools-guide-chromium/index.md#opening-devtools) and then select the **Send Feedback** icon in DevTools.  Or, in DevTools, select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS).  This approach creates a tracked issue for the Microsoft Edge development team.
 
 :::image type="complex" source="media/devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in Microsoft Edge DevTools" lightbox="media/devtools-send-feedback.msft.png":::
    The **Send Feedback** icon in Microsoft Edge DevTools
@@ -41,7 +41,7 @@ Selecting the **Send Feedback** icon opens a **Send Feedback** window.
 
 You can [file an issue](https://github.com/MicrosoftDocs/edge-developer/issues) against the Microsoft Edge Developer documentation, directly in the `edge-developer` repo.
 
-You can also make a fork of this GitHub repo and [contribute to the edge-developer documentation repo](https://github.com/MicrosoftDocs/edge-developer#contributing).  The `edge-developer` GitHub repo contains the source files for the Microsoft Edge Developer documentation.  The `edge-developer` repo also contains the high-level navigation hub page ([Microsoft Edge documentation](/microsoft-edge/)) that covers both the Microsoft Edge Enterprise docs and the Microsoft Edge Developer docs.
+You can also make a fork of this GitHub repo and [contribute to the edge-developer documentation repo](https://github.com/MicrosoftDocs/edge-developer#contributing).  The `edge-developer` GitHub repo contains the source files for the Microsoft Edge Developer documentation.  This repo also contains the high-level navigation hub page ([Microsoft Edge documentation](/microsoft-edge/)) that covers both the Microsoft Edge Enterprise docs and the Microsoft Edge Developer docs.
 
 
 <!-- ====================================================================== -->
@@ -58,7 +58,7 @@ Share your feedback to help build rich WebView2 experiences.  To submit feature 
 
 
 <!-- ====================================================================== -->
-## Visual Studio team
+## The Visual Studio team
 
 The Microsoft Visual Studio and Microsoft Edge teams want to learn more about how you work with JavaScript in Visual Studio.  To send your feedback, select the **Send Feedback** icon in Visual Studio or tweet [@VisualStudio and @EdgeDevTools][TwitterIntentTweetViualstudioEdgdevtools].  
 
@@ -68,11 +68,11 @@ The Microsoft Visual Studio and Microsoft Edge teams want to learn more about ho
 
 
 <!-- ====================================================================== -->
-## Microsoft Edge DevTools Extension team
+## Microsoft Edge DevTools extension
 
-Send your feedback by [filing an issue][GithubMicrosoftVscodeEdgeDevtoolsNewIssue] on the [microsoft/vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools] of the extension.
+Send your feedback about Microsoft Edge DevTools for Visual Studio Code by [filing an issue][GithubMicrosoftVscodeEdgeDevtoolsNewIssue] on the `vscode-edge-devtools` repo.
 
-If you want to help make the Microsoft Edge DevTools extension better, your contributions are welcome.  Find everything you need to get started in the [microsoft/vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools] of the extension.
+If you want to help make the Microsoft Edge DevTools extension better, your contributions are welcome.  Find everything you need to get started in the [vscode-edge-devtools][GithubMicrosoftVscodeEdgeDevtools] repo.
 
 
 <!-- ====================================================================== -->
@@ -80,7 +80,7 @@ If you want to help make the Microsoft Edge DevTools extension better, your cont
 
 Send your feedback about the webhint extension for Visual Studio Code by [filing an issue][GithubWebhintioIssuesNew] in the [webhint GitHub repo][GithubWebhintio].
 
-To contribute to the webhint extension, navigate to [Contributing][GithubWebhintioExtensionVscodeContributing] at the `webhintio/hint` repo.
+[Contribute to the webhint extension][GithubWebhintioExtensionVscodeContributing] at the `webhintio/hint` repo.
 
 
 <!-- ====================================================================== -->
