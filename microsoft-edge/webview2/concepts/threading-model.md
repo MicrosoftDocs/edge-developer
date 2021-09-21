@@ -86,13 +86,15 @@ When using a `Deferral` in C#, the best practice is to use it with a `using` blo
 For example, don't do the following, because if there's an exception before calling `Complete`, the `WebResourceRequested` event isn't considered "handled", and blocks WebView2 from rendering that web content.
 
 ```csharp
-private async void WebView2WebResourceRequestedHandler(CoreWebView2 sender, CoreWebView2WebResourceRequestedEventArgs eventArgs)
+private async void WebView2WebResourceRequestedHandler(CoreWebView2 sender, 
+                           CoreWebView2WebResourceRequestedEventArgs eventArgs)
 {
    var deferral = eventArgs.GetDeferral();
 
    args.Response = await CreateResponse(eventArgs);
 
-   // NOT recommended. If CreateResponse throws the deferral isn't completed.
+   // Calling Complete is not recommended, because if CreateResponse
+   // throws an exception, the deferral isn't completed.
    deferral.Complete();
 }
 ```
@@ -100,15 +102,18 @@ private async void WebView2WebResourceRequestedHandler(CoreWebView2 sender, Core
 Instead, use a `using` block, as in the following example. The `using` block ensures that the `Deferral` is completed, whether or not there's an exception.
 
 ```csharp
-private async void WebView2WebResourceRequestedHandler(CoreWebView2 sender, CoreWebView2WebResourceRequestedEventArgs eventArgs)
+private async void WebView2WebResourceRequestedHandler(CoreWebView2 sender, 
+                           CoreWebView2WebResourceRequestedEventArgs eventArgs)
 {
-   // Using block ensures the deferral is completed regardless of exception.
+   // The using block ensures that the deferral is completed, regardless of
+   // whether there's an exception.
    using (eventArgs.GetDeferral())
    {
       args.Response = await CreateResponse(eventArgs);
    }
 }
 ```
+
 
 ## Block the UI thread  
 
