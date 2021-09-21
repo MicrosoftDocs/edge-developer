@@ -1,6 +1,6 @@
 ---
-description: Read up on resources for inclusive design tools and best practices.
-title: Accessibility - Design
+description: Resources for inclusive design tools and best practices.
+title: Designing accessible websites
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 10/27/2020
@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 ms.assetid: 8468f8e1-9f4a-426c-a969-76eab9419137
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
 ---
-# Designing Accessible Websites  
+# Designing accessible websites
 
 Creating an inclusive design makes technology usable by all people no matter their age, education, geographic location, language, or disability.  People using technology and browsing the web have a wide range of abilities and preferences.  As you design your website, keep in mind the following key accessibility scenarios:
 
@@ -21,7 +21,7 @@ Creating an inclusive design makes technology usable by all people no matter the
     *   Using shortcut keys to efficiently access other app functionality.
 *   Accessible visual experience—Users who are visually impaired need a sufficient text contrast ratio for text content, and a good visual experience with high contrast themes overall.  Users who are color blind need information to be conveyed in ways other than through color.
 
-Many common accessibility issues on the web can be solved through good coding practice.  The [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20) documentation provides techniques and best practices to help you design more accessible dynamic web applications.  For more information on building accessible websites, navigate to [Building Accessible Websites](./build/index.md) .
+Many common accessibility issues on the web can be solved through good coding practice.  The [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20) documentation provides techniques and best practices to help you design more accessible dynamic web applications.  For more information, navigate to [Building accessible websites](./build/index.md).
 
 ## Resources  
 
