@@ -140,7 +140,7 @@ The Visual Studio debugger is now attached to Microsoft Edge.  You can pause the
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md#the-visual-studio-team "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
+[Contact]: ../contact.md#visual-studio-for-web-development "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 <!-- external links -->
 [VisualStudioWindowsIndex]: /visualstudio/windows/index "Visual Studio documentation | Microsoft Docs"  
 
