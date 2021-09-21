@@ -73,63 +73,63 @@ If you have a Partner Center account for which the Primary Owner is a Microsoft 
 
     :::row:::
        :::column span="1":::
-          **Account country/region**  
+          **Account country/region**
        :::column-end:::
        :::column span="2":::
-          This field is either where you live or your business is located.  
-          
-          > [!IMPORTANT]
-          > After enrollment, the value of this field is read-only.  
-          
-       :::column-end:::
-    :::row-end:::
-    :::row:::
-       :::column span="1":::
-          **Account type**  
-       :::column-end:::
-       :::column span="2":::
-          The Microsoft Edge program in [Partner Center][MicrosoftPartnerCenter] offers both individual and company accounts. The accounts are described in detail in the following bullets.  Both account types enable you to publish extensions to the Microsoft Edge Add-ons website.  
-          
-          > [!IMPORTANT]
-          > After enrollment, you are not able to change the value of this field.  
-          
-          *   **Individual account**  
-              An individual account is appropriate for a developer not associated with a company. The account verification process is shorter, and involves verifying that the publisher display name is available.  
+          This field is either where you live or your business is located.
 
-          *   **Company account**  
+          > [!IMPORTANT]
+          > After enrollment, the value of this field is read-only.
+
+       :::column-end:::
+    :::row-end:::
+    :::row:::
+       :::column span="1":::
+          **Account type**
+       :::column-end:::
+       :::column span="2":::
+          The Microsoft Edge program in [Partner Center][MicrosoftPartnerCenter] offers both individual and company accounts. The accounts are described in detail in the following bullets.  Both account types enable you to publish extensions to the Microsoft Edge Add-ons website.
+
+          > [!IMPORTANT]
+          > After enrollment, you are not able to change the value of this field.
+
+          *   **Individual account**
+              An individual account is appropriate for a developer not associated with a company. The account verification process is shorter, and involves verifying that the publisher display name is available.
+
+          *   **Company account**
               A company account is associated with an organization or business. The account verification process is longer, and involves confirmation that you are authorized to create the account for your company.  The duration of the process can range from a few days to a few weeks.  Your company might receive phone calls from Microsoft verification partners.
-              
+
        :::column-end:::
     :::row-end:::
     :::row:::
        :::column span="1":::
-          **Publisher display name**  
+          **Publisher display name**
        :::column-end:::
        :::column span="2":::
-          This field contains the name that's displayed in the Microsoft Edge Add-ons website.  To use a particular name, that name must be available and you must have the rights to use it.  Company accounts must use the registered business name of your organization.  
-          
+          This field contains the name that's displayed in the Microsoft Edge Add-ons website.  To use a particular name, that name must be available and you must have the rights to use it.  Company accounts must use the registered business name of your organization.
+
           > [!NOTE]
-          > The maximum length for this field is fifty (50) characters.  
-          
+          > The maximum length for this field is fifty (50) characters.
+
        :::column-end:::
     :::row-end:::
     :::row:::
        :::column span="1":::
-          **Contact details**  
+          **Contact details**
        :::column-end:::
        :::column span="2":::
-          This field contains any contact information that Microsoft uses to contact you about any account issues. After registration is complete, you receive an email confirmation. For a company account, you must use the registered email address associated with your organization.  
+          This field contains any contact information that Microsoft uses to contact you about any account issues. After registration is complete, you receive an email confirmation. For a company account, you must use the registered email address associated with your organization.
        :::column-end:::
     :::row-end:::
     :::row:::
        :::column span="1":::
-          **Company approver**  
+          **Company approver**
        :::column-end:::
        :::column span="2":::
-          For a company account, you must provide the contact information of your company approver.  The contact information includes name, email address, and phone number.  As a part of the verification process, Microsoft contacts the specified company approver, to make sure that your extension belongs to your organization.  
+          For a company account, you must provide the contact information of your company approver.  The contact information includes name, email address, and phone number.  As a part of the verification process, Microsoft contacts the specified company approver, to make sure that your extension belongs to your organization.
        :::column-end:::
     :::row-end:::
-    
+
 1.  Before submitting your registration form, read and accept the terms and conditions of the [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement].
 
 1.  To complete your enrollment, select **Finish**.
