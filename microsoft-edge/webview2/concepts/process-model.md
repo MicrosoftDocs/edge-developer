@@ -1,9 +1,9 @@
 ---
-description: The WebView2 Runtime process model, the user data folder, and site isolation.
+description: The WebView2 Runtime process model, and how it works with the user data folder and site isolation.
 title: The WebView2 process model
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/16/2021
+ms.date: 09/21/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -61,7 +61,7 @@ The `CoreWebView2Environment` represents a user data folder and the collection o
 
 To react to crashes and hangs in the browser and renderer processes, use the `ProcessFailed` event of `CoreWebView2`.
 
-<!-- todo: Add info about the new APIs BrowserProcessExited and ProcessInfo. -->
+<!-- todo: add info about the new APIs BrowserProcessExited and ProcessInfo -->
 
 To safely shut down associated browser and renderer processes, use the `Close` method of `CoreWebView2Controller`.
 
