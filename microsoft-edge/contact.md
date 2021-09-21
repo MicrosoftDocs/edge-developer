@@ -28,7 +28,7 @@ There are several ways to get in touch with the Microsoft Edge team.
 Selecting the **Send Feedback** icon opens a **Send Feedback** window.
 
 :::image type="complex" source="media/send-feedback-dbox.msft.png" alt-text="The Send Feedback window" lightbox="media/send-feedback-dbox.msft.png":::
-   The **Send Feedback** window
+   The **Send feedback** window
 :::image-end:::
 
 <!-- a related verbose section:
