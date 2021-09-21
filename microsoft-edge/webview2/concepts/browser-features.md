@@ -3,7 +3,7 @@ description: Feature differences between Microsoft Edge and WebView2
 title: Feature differences between Microsoft Edge and WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/23/2021
+ms.date: 09/21/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -30,15 +30,15 @@ In the context of WebView2, browser features adhere to the following design guid
 The following table displays the WebView2 features that differ from the Microsoft Edge browser.   
 
 *   **Default state** indicates that the feature is part of the default experience on a new WebView2 instance.  
-*   **Configurable** indicates that you may turn on or off the feature using WebView2 APIs or command-line switches.  
+*   **Configurable** indicates that you can turn on or off the feature using WebView2 APIs or command-line switches.  
     
 > [!NOTE]  
 > This article doesn't cover modifying features using command-line switches.  For more information about turning on and off features with command-line switches, navigate to [List of Chromium Command Line Switches][PeterExperimentsChromiumCommandLineSwitches].  
     
 | Feature | Default state | Configurable | Details |  
 |:--- |:--- |:--- | :--- |  
-| Autofill for Addresses | On | Yes | This feature is turned on by default, you may turn it on or off using WebView2 Autofill APIs.  |  
-| Autofill for Passwords | On | Yes | This feature is turned on by default, you may turn it on or off using WebView2 Autofill APIs.  |  
+| Autofill for Addresses | On | Yes | This feature is turned on by default.  You can turn this feature on or off by using the WebView2 Autofill APIs.  |  
+| Autofill for Passwords | On | Yes | This feature is turned on by default.  You can turn this feature on or off by using the WebView2 Autofill APIs.  |  
 | Autofill for Payments | Off | No | This feature is turned off.  |  
 | Browser Extensions | Off | No | This feature is turned off.  |  
 | Browser Task Manager | Off | No | This feature is turned off.  |  
@@ -51,10 +51,10 @@ The following table displays the WebView2 features that differ from the Microsof
 | IE Mode | Off | No | This feature is turned off. WebView2 doesn't support IE mode and has differences in behavior compared to IE (such as MHT or BIN support). |  
 | Immersive Reader | Off | No | This feature depends on the browser UI for interaction.  This feature is turned off.  |  
 | Intrusive Ads | Off | No | This feature is turned off.  |  
-| Keyboard Shortcuts | Review Details | Review Details | The keyboard shortcuts that are turned off by default either don't make sense or cause problems in WebView2.  You may not turn on or off these shortcuts.  Instead, you may listen for a key combination using the `AcceleratorKeyPressed` event and create a custom response if needed.  For more information, navigate to [Additional keyboard shortcuts information](#additional-keyboard-shortcuts-information). | 
+| Keyboard Shortcuts | Review Details | Review Details | The keyboard shortcuts that are turned off by default either don't make sense or cause problems in WebView2.  You cannot turn these shortcuts off or on.  Instead, you can listen for a key combination using the `AcceleratorKeyPressed` event and create a custom response if needed.  For more information, navigate to [Additional keyboard shortcuts information](#additional-keyboard-shortcuts-information). | 
 | PDF Annotations | Off | No | This feature is turned off. The PDF viewing feature is enabled, but drawing, inking, and highlighting in a PDF are not enabled. For more information, navigate to [Disabling Feature: PDF Annotations Support](https://github.com/MicrosoftEdge/WebView2Announcements/issues/21). |
 | Read Aloud | Off | No | This feature is turned off.  |  
-| Smart Screen | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Additionally, you may turn off Smart Screen using a command-line switch.  |  
+| Smart Screen | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Additionally, you can turn off Smart Screen by using a command-line switch.  |  
 | Translate | Off | No | This feature is turned off.  |  
 | Tracking Prevention | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Tracking prevention is always set to balanced.|  
 | Profile and Identity | Off | No | The feature that syncs your favorites, cookies, and so on, is turned off.  | 
@@ -92,9 +92,9 @@ The following Microsoft Edge and Google Chrome settings webpages aren't availabl
     
 ## Additional keyboard shortcuts information  
 
-Keyboard shortcuts or key bindings are supported in Microsoft Edge and WebView2. When Microsoft Edge updates, the default key bindings may change.  Furthermore, a keyboard shortcut that is turned off by default may turn on if the feature is now supported in WebView2. To avoid changes to your keyboard shortcuts, you may set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, which turns off all keys that access browser features, but keeps all basic text-editing and movement shortcuts turned on.  
+Keyboard shortcuts or key bindings are supported in Microsoft Edge and WebView2.  When Microsoft Edge is updated, the default key bindings might change.  Furthermore, a keyboard shortcut that is turned off by default might instead be turned on, if the feature is now supported in WebView2.  To avoid such changes to your keyboard shortcuts, you can set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, which turns off all keys that access browser features, but keeps all basic text-editing and movement shortcuts turned on.  
 
-The following table lists the shortcuts that are always turned off in WebView2.  An asterisk \(`*`\) character indicates that the shortcut isn't turned off, but the feature it accesses is turned off or doesn't apply to WebView2.  
+The following shortcuts are always turned off in WebView2.  An asterisk (`*`) indicates that the shortcut isn't turned off, but the feature that it accesses is turned off, or the feature doesn't apply to WebView2.  
 
 | Action | Windows |  
 |:--- |:--- |  
@@ -115,7 +115,6 @@ The following table lists the shortcuts that are always turned off in WebView2. 
 | Help | `F1` |  
 | Focus Next Pane `*` | `F6` |  
 | Focus Previous Pane `*` | `Shift`+`F6` |  
-| Caret Browsing `*` | `F7` |  
 | Reading View `*` | `F9` |  
 | Focus Menu Bar | `F10` |  
 | Show Identity Menu `*` | `Ctrl`+`Shift`+`M` |  
