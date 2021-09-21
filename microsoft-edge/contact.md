@@ -47,20 +47,20 @@ You can also make a fork of this GitHub repo and [contribute to the edge-develop
 <!-- ====================================================================== -->
 ## EdgeDevTools Twitter account
 
-Regarding developing with DevTools in Microsoft Edge, you can send a tweet to [@EdgeDevTools][PostTweetEdgeDevTools].
+Regarding developing with [DevTools](devtools-guide-chromium/index.md) in Microsoft Edge, you can send a tweet to [@EdgeDevTools][PostTweetEdgeDevTools].
 <!-- This approach causes __.  Use this approach when __.  Your message is visible only to __. -->
 
 
 <!-- ====================================================================== -->
 ## The WebView2 control
 
-Share your feedback to help build rich WebView2 experiences.  To submit feature suggestions or bugs about the WebView2 control, or to search for known issues, use the [WebView2Feedback][GithubMicrosoftedgeWebviewfeedback] repo.
+Share your feedback to help build rich WebView2 experiences.  To submit feature suggestions or bugs about [the WebView2 control](webview2/index.md), or to search for known issues, use the [WebView2Feedback][GithubMicrosoftedgeWebviewfeedback] repo.
 
 
 <!-- ====================================================================== -->
 ## Visual Studio for web development
 
-The Microsoft Visual Studio and Microsoft Edge teams want to learn more about how you work with JavaScript in Visual Studio.  To send your feedback, select the **Send Feedback** icon in Visual Studio or tweet [@VisualStudio and @EdgeDevTools][TwitterIntentTweetViualstudioEdgdevtools].  
+The Microsoft Visual Studio and Microsoft Edge teams want to learn more about how you work with JavaScript in Visual Studio and [use Visual Studio for web development](visual-studio/index.md).  To send your feedback, select the **Send Feedback** icon in Visual Studio or tweet [@VisualStudio and @EdgeDevTools][TwitterIntentTweetViualstudioEdgdevtools].  
 
 :::image type="complex" source="visual-studio/media/feedback-icon.png" alt-text="The Send Feedback icon in Visual Studio" lightbox="visual-studio/media/feedback-icon.png":::
    The **Send Feedback** icon in Visual Studio  
@@ -68,9 +68,9 @@ The Microsoft Visual Studio and Microsoft Edge teams want to learn more about ho
 
 
 <!-- ====================================================================== -->
-## Microsoft Edge DevTools extension
+## Microsoft Edge DevTools for Visual Studio Code
 
-Send your feedback about Microsoft Edge DevTools for Visual Studio Code by [filing an issue][GithubMicrosoftVscodeEdgeDevtoolsNewIssue] on the `vscode-edge-devtools` repo.
+Send your feedback about [Microsoft Edge DevTools for Visual Studio Code](visual-studio-code/microsoft-edge-devtools-extension.md) by [filing an issue][GithubMicrosoftVscodeEdgeDevtoolsNewIssue] on the `vscode-edge-devtools` repo.
 
 If you want to help make the Microsoft Edge DevTools extension better, your contributions are welcome.  Find everything you need to get started in the [vscode-edge-devtools][GithubMicrosoftVscodeEdgeDevtools] repo.
 
@@ -78,7 +78,7 @@ If you want to help make the Microsoft Edge DevTools extension better, your cont
 <!-- ====================================================================== -->
 ## The webhint extension for Visual Studio Code
 
-Send your feedback about the webhint extension for Visual Studio Code by [filing an issue][GithubWebhintioIssuesNew] in the [webhint GitHub repo][GithubWebhintio].
+Send your feedback about the [webhint extension for Visual Studio Code](visual-studio-code/webhint.md) by [filing an issue][GithubWebhintioIssuesNew] in the [webhint GitHub repo][GithubWebhintio].
 
 [Contribute to the webhint extension][GithubWebhintioExtensionVscodeContributing] at the `webhintio/hint` repo.
 
