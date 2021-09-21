@@ -3,7 +3,7 @@ description: In the WebView2 threading model, the WebView2 must be created on a 
 title: Threading model for WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/28/2021
+ms.date: 09/21/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
