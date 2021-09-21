@@ -19,17 +19,17 @@ Consider the following use cases:
 *   A news app that fetches new articles every day for users to read next time they open the app.  
 *   A music app that lets users download songs for listening offline.  
 
-All three use cases, and more, are possible with the following APIs:  
+All three use cases are possible with PWAs by using the Background Sync, Periodic Background Sync, and Background Fetch APIs.  
 
-*   Background Sync.  
-*   Periodic Background Sync.  
-*   Background Fetch.  
+Although these APIs have similar names, they are different in nature.  
 
-Although these APIs have similar names, they are different in nature and are used for different use cases.  
 
+<!-- ====================================================================== -->
 ## Synchronize data with the server with the Background Sync API  
 
-Allowing users to continue using the app and perform actions even when offline can be done with the Background Sync API. For example, an email app can let its users compose and send messages at any time. The app frontend can try to send the message right away, and if the device is offline the service worker can, in turn, catch the failed request and use the Background Sync API to defer the task until connected.  
+Allowing users to continue using the app and perform actions even when they are offline can be done with the Background Sync API. For example, an email app can let its users compose and send messages at any time. The app frontend can try to send the message right away, and if the device is offline the service worker can, in turn, catch the failed request and use the Background Sync API to defer the task until connected.  
+
+Another example for using the Background Sync API is loading content in the background for the user.  
 
 > [!NOTE]
 > The Background Sync API should be used for small amounts of data. It requires the service worker to be alive for the entire duration of the data transfer. Because devices can decide to terminate service workers to preserve battery life, the API should not be used to fetch large files. Use the [Background Fetch API](#fetch-large-files-when-the-app-or-service-worker-are-not-running-with-the-background-fetch-api) instead.  
@@ -60,7 +60,7 @@ The first thing to do is to request a sync. This can be done by your app fronten
 To request a sync, you need a `ServiceWorkerRegistration` and a tag name. From the app frontend code, do the following:  
 
 ```javascript
-async function requestSync() {
+async function requestBackgroundSync() {
     const registration = await navigator.serviceWorker.ready;
     await registration.sync.register('my-tag-name');
 }
@@ -69,8 +69,8 @@ async function requestSync() {
 Or, from the service worker, do this instead:  
 
 ```javascript
-async function requestSync() {
-    await registration.sync.register('my-tag-name');
+async function requestBackgroundSync() {
+    await self.registration.sync.register('my-tag-name');
 }
 ```  
 
@@ -94,6 +94,72 @@ Typically, the `doTheWork` function will send the information to the server that
 
 For more information about the `Sync` event, the `ServiceWorkerRegistration`, and the `SyncManager` interface, navigate to the [Background Synchronization draft specification][WICGBackgroundSyncSpec] and to the [Background Synchronization API documentation][MDNBackgroundSync].  
 
+### Demo PWA  
+
+[My Movie List PWA][DemoMyMovieListPWA] is a demo app that uses the Background Sync API to fetch movie information later if the user is offline.
+
+:::image type="complex" source="../media/my-movie-list-pwa-demo.png" alt-text="My Movie List PWA demo app" lightbox="../media/my-movie-list-pwa-demo.png":::
+   My Movie List PWA demo app
+:::image-end:::  
+
+To test the feature:
+
+1.  Install the app.
+
+1.  Search for movies using the search input field.
+
+1.  Go offline.
+
+    1.  Select **F12** to open DevTools.
+    1.  Select **Application** > **Service Workers** > **Offline**.
+
+    :::image type="complex" source="../media/devtools-go-offline.png" alt-text="Simulate being offline with DevTools" lightbox="../media/devtools-go-offline.png":::
+        Simulate being offline with DevTools
+    :::image-end:::  
+
+1.  Select **More info** in one of the movie results.
+
+1.  A message appears in the app informing you that you are offline and saying that the movie details will be retrieved automatically later.
+
+    :::image type="complex" source="../media/my-movie-list-pwa-demo-offline.png" alt-text="The offline message" lightbox="../media/my-movie-list-pwa-demo-offline.png":::
+       The offline message
+    :::image-end:::  
+
+1.  Go online by selecting **Offline** in DevTools again.
+
+1.  Reload the app. The movie details now appear.
+
+Navigate to the [source code on GitHub][DemoMyMovieListPWAGitHub].
+
+### Debug background syncs with DevTools  
+
+You don't have to go offline, then online, and wait for Microsoft Edge to trigger a `sync` event to test your background sync code as DevTools lets you simulate this event.
+
+To simulate a `sync` event:
+
+*  Open DevTools (**F12**).
+*  Select **Application** > **Service Workers**.
+*  Type the tag name you used when registering the sync in the **Sync** input field.
+*  Select the **Sync** button.
+
+:::image type="complex" source="../media/devtools-simulate-background-sync.png" alt-text="Simulate a background sync in the Application panel" lightbox="../media/devtools-simulate-background-sync.png":::
+    Simulate a background sync in the Application panel
+:::image-end:::  
+
+You can also log the background sync activity generated by your app in DevTools.
+
+*  Open DevTools (**F12**).
+*  Select **Application** > **Background Sync**.
+*  Select **Start recording events**.
+
+Sync registrations and dispatches appear in the event log table.
+
+:::image type="complex" source="../media/devtools-background-sync-log.png" alt-text="Log background sync events" lightbox="../media/devtools-background-sync-log.png":::
+    Log background sync events
+:::image-end:::  
+
+
+<!-- ====================================================================== -->
 ## Regularly get fresh content with the Periodic Background Sync API  
 
 The Periodic Background Sync API lets PWAs retrieve fresh content periodically, in the background, so users can immediately access it when they later open the app again. Using this API, PWAs don't have to download new content (like new articles) while the user is using the app, which could slow down the experience, and instead would retrieve it at a more convenient time.  
@@ -160,6 +226,12 @@ The `getDailyNewsInCache` function is where your service worker can fetch new co
 
 For more information about the `PeriodicSync` event, the `ServiceWorkerRegistration`, and the `PeriodicSyncManager` interface, navigate to the [Web Periodic Background Synchronization draft specification][WICGPeriodicBackgroundSyncSpec] and to the [Web Periodic Background Synchronization API documentation][MDNPeriodicBackgroundSync].  
 
+### Demo PWA  
+
+### Debug periodic background syncs with DevTools  
+
+
+<!-- ====================================================================== -->
 ## Fetch large files when the app or service worker are not running with the Background Fetch API  
 
 The Background Fetch API allows PWAs to completely delegate downloading large amounts of data to the browser engine. This way, the app and service worker don't have to be running at all while the download is in progress.  
@@ -192,6 +264,12 @@ Above, `my-download-id` should be a unique string identifier for this background
 
 You can find more information about the `fetch` function on the [BackgroundFetchManager.fetch() documentation][MDNFetchFunction] and at [Introducing Background Fetch][GoogleDevIntroducingBackgroundFetch].  
 
+### Demo PWA  
+
+### Debug background fetch with DevTools  
+
+
+<!-- ====================================================================== -->
 ## Re-engage users with notifications and badges  
 
 The Notifications and App Badging APIs can be used to let users know that background tasks, downloads, or fresh content have been completed without interrupting their workflows. Using notifications and badges can increase user re-engagement with your app.  
@@ -199,11 +277,6 @@ The Notifications and App Badging APIs can be used to let users know that backgr
 With Microsoft Edge, notifications integrate with the system notification center, and badges appear on app icons in the Task Bar.  
 
 Navigate to [Re-engage users with notifications, push messages, and badges][NotificationsBadges] to learn how to use these APIs.  
-
-## Demo  
-
-
-## Debugging background tasks  
 
 
 <!-- Links -->
@@ -220,3 +293,5 @@ Navigate to [Re-engage users with notifications, push messages, and badges][Noti
 [MDNFetchFunction]: https://developer.mozilla.org/en-US/docs/Web/API/BackgroundFetchManager/fetch "BackgroundFetchManager.fetch() - Web APIs | MDN"  
 [GoogleDevIntroducingBackgroundFetch]: https://developers.google.com/web/updates/2018/12/background-fetch "Introducing Background Fetch | Web | Google Developers"  
 [NotificationsBadges]: ./notifications-badges.md "Re-engage users with notifications, push messages, and badges | Microsoft Docs"  
+[DemoMyMovieListPWA]: https://quirky-rosalind-ac1e65.netlify.app/ "My Movie List PWA"
+[DemoMyMovieListPWAGitHub]: https://github.com/captainbrosset/movies-db-pwa/ "My Movie List PWA | GitHub"
