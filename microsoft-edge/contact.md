@@ -17,12 +17,6 @@ Send your feedback to help improve Microsoft Edge DevTools and other features th
 
 
 <!-- ====================================================================== -->
-## Entering an issue in the edge-developer repo, or editing the docs
-
-The `edge-developer` GitHub repo contains the source files for the Microsoft Edge Developer documentation.  (The `edge-developer` repo also contains the high-level navigation hub page that covers both the Microsoft Edge Enterprise docs and the Microsoft Edge Developer docs.)  You can [file an issue](https://github.com/MicrosoftDocs/edge-developer/issues) against the Microsoft Edge Developer documentation, directly in the `edge-developer` repo.  You can also make a fork of this GitHub repo and [contribute to the edge-developer documentation repo](https://github.com/MicrosoftDocs/edge-developer#contributing).
-
-
-<!-- ====================================================================== -->
 ## The Send Feedback icon and window
 
 *  To send feedback about developing using Microsoft Edge, or about the Microsoft Edge Developer documentation, press `F12` to open DevTools and then select the **Send Feedback** icon in DevTools.  Or, in DevTools, select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS).  This approach creates a tracked issue for the Microsoft Edge development team.
@@ -43,6 +37,14 @@ Selecting the **Send Feedback** icon opens a **Send Feedback** window.
 
 
 <!-- ====================================================================== -->
+## Entering an issue in the edge-developer repo, or editing the docs
+
+You can [file an issue](https://github.com/MicrosoftDocs/edge-developer/issues) against the Microsoft Edge Developer documentation, directly in the `edge-developer` repo.
+
+You can also make a fork of this GitHub repo and [contribute to the edge-developer documentation repo](https://github.com/MicrosoftDocs/edge-developer#contributing).  The `edge-developer` GitHub repo contains the source files for the Microsoft Edge Developer documentation.  The `edge-developer` repo also contains the high-level navigation hub page ([Microsoft Edge documentation](/microsoft-edge/)) that covers both the Microsoft Edge Enterprise docs and the Microsoft Edge Developer docs.
+
+
+<!-- ====================================================================== -->
 ## EdgeDevTools Twitter account
 
 Regarding developing with DevTools in Microsoft Edge, you can send a tweet to [@EdgeDevTools][PostTweetEdgeDevTools].
@@ -56,24 +58,9 @@ Share your feedback to help build rich WebView2 experiences.  To submit feature 
 
 
 <!-- ====================================================================== -->
-## The Web We Want initiative
-
-You can submit a suggestion at [The Web We Want initiative](web-we-want/index.md).  Use this approach when you want to communicate across browser teams or standards bodies.
-
-The Web We Want is a cross-browser initiative to identify missing features for web standards or browsers.  Use this communication channel to let browser vendors and standards groups know your request.
-
-*  Submit web platform or developer tool features.  
-*  View the list of submitted Wants, and vote on them.
-*  Participate in discussions.
-*  Use the links to resources.
-
-You can follow the Web We Want initiative on Twitter or LinkedIn, and participate in surveys to prioritize submitted Wants.
-
-
-<!-- ====================================================================== -->
 ## Visual Studio team
 
-The Microsoft Visual Studio and Microsoft Edge teams wants to learn more about how you work with JavaScript in Visual Studio.  To send your feedback, select the **Send Feedback** icon in Visual Studio or tweet [@VisualStudio and @EdgeDevTools][TwitterIntentTweetViualstudioEdgdevtools].  
+The Microsoft Visual Studio and Microsoft Edge teams want to learn more about how you work with JavaScript in Visual Studio.  To send your feedback, select the **Send Feedback** icon in Visual Studio or tweet [@VisualStudio and @EdgeDevTools][TwitterIntentTweetViualstudioEdgdevtools].  
 
 :::image type="complex" source="visual-studio/media/feedback-icon.png" alt-text="The Send Feedback icon in Visual Studio" lightbox="visual-studio/media/feedback-icon.png":::
    The **Send Feedback** icon in Visual Studio  
@@ -94,6 +81,21 @@ If you want to help make the Microsoft Edge DevTools extension better, your cont
 Send your feedback about the webhint extension for Visual Studio Code by [filing an issue][GithubWebhintioIssuesNew] in the [webhint GitHub repo][GithubWebhintio].
 
 To contribute to the webhint extension, navigate to [Contributing][GithubWebhintioExtensionVscodeContributing] at the `webhintio/hint` repo.
+
+
+<!-- ====================================================================== -->
+## The Web We Want initiative
+
+You can submit a suggestion at [The Web We Want initiative](web-we-want/index.md).  Use this approach when you want to communicate across browser teams or standards bodies.
+
+The Web We Want is a cross-browser initiative to identify missing features for web standards or browsers.  Use this communication channel to let browser vendors and standards groups know your request.
+
+*  Submit web platform or developer tool features.  
+*  View the list of submitted Wants, and vote on them.
+*  Participate in discussions.
+*  Use the links to resources.
+
+You can follow the Web We Want initiative on Twitter or LinkedIn, and participate in surveys to prioritize submitted Wants.
 
 
 <!-- ====================================================================== -->
