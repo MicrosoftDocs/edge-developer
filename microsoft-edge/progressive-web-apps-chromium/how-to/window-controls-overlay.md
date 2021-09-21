@@ -88,9 +88,6 @@ Knowing where the overlay is, and how big it is is important as it may not alway
 
 **TODO**
 
-## Sample app  
-
-**TODO** Link to an app on our sample catalog that uses this API, and link to its source code on GitHub.
 
 <!-- links -->  
 

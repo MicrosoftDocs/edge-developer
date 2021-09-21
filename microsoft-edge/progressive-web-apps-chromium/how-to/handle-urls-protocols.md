@@ -120,9 +120,6 @@ Protocol handling is also experimental, to enable it:
        Enable the Protocol Handling API experiment  
     :::image-end:::  
 
-## Sample app  
-
-**TODO** Link to an app on our sample catalog that uses this API, and link to its source code on GitHub.
 
 <!-- links -->  
 

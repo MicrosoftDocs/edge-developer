@@ -110,9 +110,6 @@ async function handleFiles(files) {
 
 The `launchQueue` object queues all the launched files until a consumer is set with `setConsumer`. To learn more about the `launchQueue` and `launchParams` objects, navigate to the [File Handling explainer][WICGFileHandlingExplainer].  
 
-## Sample app  
-
-**TODO** Link to an app on our sample catalog that uses this API, and link to its source code on GitHub.
 
 <!-- links -->  
 

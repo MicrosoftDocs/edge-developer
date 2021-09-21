@@ -66,9 +66,6 @@ The following properties can be used.
 
 To learn more, navigate to the [Shortcuts MDN documentation][MDNShortcuts].  
 
-## Sample app  
-
-**TODO**  
 
 ## Debug shortcuts  
 

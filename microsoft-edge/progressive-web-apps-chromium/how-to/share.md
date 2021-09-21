@@ -256,10 +256,6 @@ self.addEventListener('fetch', event => {
 });
 ```  
 
-## Sample app  
-
-**TODO** Link to an app on our sample catalog that uses this API, and link to its source code on GitHub.  
-
 <!-- links -->  
 
 [MDNWebShareAPI]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API
