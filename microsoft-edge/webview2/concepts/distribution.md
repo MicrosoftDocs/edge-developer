@@ -272,17 +272,17 @@ Installing the Fixed Version of the WebView2 Runtime on the client causes [Micro
 
 The `WebView2Loader` code needs to be shipped with the app. This can be done by [statically linking]() `WebView2Loader.lib` into the app binaries, or by including the `WebView2Loader.dll` that matches the app's architecture. 
 
-Note that the `WebView2Loader.dll` is a native and architecture-specific binary, and so you need to include all flavors that you expect your app to run in. For example, for x86 you would include the x86 `WebView2Loader.dll`, and for AnyCPU you would include the x86, x64, and arm64 `WebView2Loader.dll` files. These are loaded from specific architecture folders.
+Note that the `WebView2Loader.dll` is a native and architecture-specific binary, and so you need to include all flavors that you expect your app to run in. For example, for x86 you would include the x86 `WebView2Loader.dll`, and for AnyCPU you would include the x86, x64, and arm64 `WebView2Loader.dll` files. For managed apps these are loaded from specific architecture folders.
 
-Example folder structure:
+Example native app folder structure:
 ```
 \<myApp>
     \WebView2Loader.dll
 ```
 
-For .NET apps, you also need to include the WebView2 .NET assemblies for the core WebView2 functionality (`Microsoft.Web.WebView2.Core.dll`) and for the WPF/WinForms-specific functionality (`Microsoft.Web.WebView2.Winforms.dll` or `Microsoft.Web.WebView2.WPF.dll`).
+For .NET managed apps, you also need to include the WebView2 .NET assemblies for the core WebView2 functionality (`Microsoft.Web.WebView2.Core.dll`) and for the WPF/WinForms-specific functionality (`Microsoft.Web.WebView2.Winforms.dll` or `Microsoft.Web.WebView2.WPF.dll`).
 
-Example folder structure:
+Example native app folder structure:
 ```
 \<myApp>
     \Microsoft.Web.WebView2.Core.dll
