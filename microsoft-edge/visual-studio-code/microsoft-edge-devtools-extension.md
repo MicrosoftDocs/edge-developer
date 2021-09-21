@@ -214,6 +214,36 @@ This example shows a folder of production files on your hard drive called `my-pr
 
 All changes that are saved in this folder now trigger a browser refresh.
 
+<!-- ====================================================================== -->
+## Syncing live changes from from the Styles tool using CSS Mirror editing
+
+The Styles tool of the Microsoft Edge DevTools is excellent to debug and tweak CSS properties styles. One problem is that whilst these changes show up live in the browser, they don't reflect in your source files. This means that at the end of your CSS debugging, you need to copy and paste what you changed back into your sources.
+
+CSS Mirror Editing is an experimental feature of the Microsoft Edge DevTools extension that works around that problem. When you turn on Mirror Editing, any change done with the Styles tool of the DevTools also changes the file in your workspace.
+
+In the following example, we have `index.html` currently open in Visual Studio Code and the Edge DevTools extension open. When we select the flexbox icon in the `.searchbar` CSS selector and change the `flex-direction` to column, we do not only see the change in the browser and the DevTools, but VS Code will also automatically navigate to the right style sheet file and appropriate line number and insert the `flex-direction: column` CSS code. 
+
+:::image type="complex" source="./media/CSS-mirror-editing-start.msft.png" alt-text="Selecting the flexbox icon in the Styles tool to create a CSS change" lightbox="./media/CSS-mirror-editing-start.msft.png":::
+   Selecting the flexbox icon in the Styles tool to create a CSS change
+:::image-end:::
+
+:::image type="complex" source="./media/CSS-mirror-editing-changed-file.msft.png" alt-text="Changing the CSS setting created a new line of code in the correct CSS source file" lightbox="./media/CSS-mirror-editing-changed-file.msft.png":::
+   Changing the CSS setting created a new line of code in the correct CSS source file
+:::image-end:::
+
+You can edit any selector or create new ones in the Styles tool and all changes will get mirrored in the right CSS source file. The extension only changes the file, it doesn't automatically save the changes back to your harddrive. This is a security measure to make sure you don't accidentally overwrite any of your code.
+
+You can enable and disable CSS Mirror Editing using the button in the targets pane of the extension or by using the Command Menu and looking for `mirror`.
+
+:::image type="complex" source="./media/CSS-mirror-editing-button.msft.png" alt-text="In the extension panel you can find a quick explanation of CSS mirror editing, the button to turn the functionality on and off and a link to provide us feedback." lightbox="./media/CSS-mirror-editing-button.msft.png":::
+   In the extension panel you can find a quick explanation of CSS mirror editing, the button to turn the functionality on and off and a link to provide us feedback.
+:::image-end:::
+
+:::image type="complex" source="./media/CSS-mirror-editing-changed-file.msft.png" alt-text="Using the command menu and searching for mirror you can focus the CSS mirror editing view and turn the functionality on and off." lightbox="./media/CSS-mirror-editing-changed-file.msft.png":::
+   Using the command menu and searching for mirror you can focus the CSS mirror editing view and turn the functionality on and off.
+:::image-end:::
+
+We are still actively looking to improve this feature and set up a [tracking issue](CSSMirrorEditingTracking) on GitHub where we welcome your feedback.
 
 <!-- ====================================================================== -->
 ## Browser debugging with Microsoft Edge DevTools integration in Visual Studio Code
@@ -301,6 +331,7 @@ If you want to help make the Microsoft Edge DevTools extension better, your cont
 
 
 <!--links -->
+[CSSMirrorEditingTracking]: https://github.com/microsoft/vscode-edge-devtools/issues/476 "CSS Mirror Editing tracking issue"
 [VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"
 [VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentation | Visual Studio Code"
 [ConsoleUtilitiesAPI]: /microsoft-edge/devtools-guide-chromium/console/utilities "Console Utilities API reference | Microsoft Docs"
