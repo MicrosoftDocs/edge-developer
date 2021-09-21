@@ -207,7 +207,7 @@ To preview the [latest features coming to the DevTools][DevtoolsGuideWhatsNew202
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
+[Contact]: ../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [DevtoolsGuideBeginnersHtml]: ./beginners/html.md "DevTools for beginners: Get started with HTML and the DOM | Microsoft Docs"
 [DevtoolsGuideCommandMenuIndex]: ./command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"  
 [DevtoolsGuideConsoleIndex]: ./console/index.md "Console overview | Microsoft Docs"  

@@ -58,7 +58,7 @@ Share your feedback to help build rich WebView2 experiences.  To submit feature 
 <!-- ====================================================================== -->
 ## The Web We Want initiative
 
-You can submit a suggestion at [The Web We Want initiative](../web-we-want/index.md).  Use this approach when you want to communicate across browser teams or standards bodies.
+You can submit a suggestion at [The Web We Want initiative](web-we-want/index.md).  Use this approach when you want to communicate across browser teams or standards bodies.
 
 The Web We Want is a cross-browser initiative to identify missing features for web standards or browsers.  Use this communication channel to let browser vendors and standards groups know your request.
 
@@ -75,7 +75,7 @@ You can follow the Web We Want initiative on Twitter or LinkedIn, and participat
 
 The Microsoft Visual Studio and Microsoft Edge teams wants to learn more about how you work with JavaScript in Visual Studio.  To send your feedback, select the **Send Feedback** icon in Visual Studio or tweet [@VisualStudio and @EdgeDevTools][TwitterIntentTweetViualstudioEdgdevtools].  
 
-:::image type="complex" source="visual-studio/media/feedback-icon.png" alt-text="The Send Feedback icon in Visual Studio" lightbox="./media/feedback-icon.png":::
+:::image type="complex" source="visual-studio/media/feedback-icon.png" alt-text="The Send Feedback icon in Visual Studio" lightbox="visual-studio/media/feedback-icon.png":::
    The **Send Feedback** icon in Visual Studio  
 :::image-end:::  
 

@@ -390,7 +390,7 @@ Congratulations, you built your first WebView2 app!
 
 *  [WebView2 development best practices][WV2BestPractices]
 *  [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain] - A comprehensive example of WebView2 capabilities.
-*  [Next steps][Webview2IndexNextSteps] - Conceptual and how-to articles about building and deploying WebView2 apps.
+*  [See also][Webview2IndexNextSteps] - Conceptual and how-to articles about building and deploying WebView2 apps.
 *  [WebView2 API reference][DotnetApiMicrosoftWebWebview2WinformsWebview2]
 *  [Contacting the Microsoft Edge team][Contact] - Share your feedback to help build rich WebView2 experiences, by using the `WebView2Feedback` repo.
 
@@ -399,7 +399,7 @@ Congratulations, you built your first WebView2 app!
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"  
-[Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2IndexNextSteps]: ../index.md#see-also "See also - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"  
 <!-- external links -->
 [DotnetApiMicrosoftWebWebview2Winforms]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"  
