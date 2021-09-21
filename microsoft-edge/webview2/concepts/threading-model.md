@@ -17,9 +17,12 @@ The WebView2 control is based on the [Component Object Model (COM)][WindowsWin32
 
 ## Thread safety  
 
-The WebView2 must be created on a UI thread that uses a message pump.  All callbacks occur on that thread and requests into the WebView2 must be done on that thread.  It isn't safe to use the WebView2 from another thread.  
+The WebView2 must be created on a UI thread that uses a message pump.  All callbacks occur on that thread, and requests into the WebView2 must be done on that thread.  It isn't safe to use the WebView2 from another thread.  
 
 The only exception is for the `Content` property of `CoreWebView2WebResourceRequest`.  The `Content` property stream is read from a background thread.  The stream should be agile or should be created from a background STA, to prevent performance degradation of the UI thread.  
+
+> [!NOTE]
+> Object properties are single-threaded.  For example, calling `CoreWebView2CookieManager.GetCookiesAsync(null)` from a thread other than `Main` will succeed (that is, cookies are returned); however, attempting to access the cookies' properties (such as `c.Domain`) after such a call will throw an exception.
 
 ## Re-entrancy  
 
