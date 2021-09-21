@@ -11,13 +11,13 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Contacting the Microsoft Edge team
 
-Send your feedback to help improve Microsoft Edge DevTools and other features that are covered in the Microsoft Edge Developer documentation.  Contact the Microsoft Edge team to submit feature requests or bug reports of issues about developing for Microsoft Edge, including development using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more.
+Send your feedback to help improve Microsoft Edge DevTools and other features that are covered in the Microsoft Edge Developer documentation.  Contact the Microsoft Edge team to submit feature requests or bug reports of issues about developing for Microsoft Edge, including development using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver and Puppeteer automation, the WebView2 control, and more.
 
 There are several ways to get in touch with the Microsoft Edge team.
 
 
 <!-- ====================================================================== -->
-## The Send Feedback button and window
+## The Send Feedback button
 
 *  To send feedback about developing using Microsoft Edge, or about the Microsoft Edge Developer documentation, [open DevTools](devtools-guide-chromium/index.md#opening-devtools) and then select the **Send Feedback** icon in DevTools.  Or, in DevTools, select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS).  This approach creates a tracked issue for the Microsoft Edge development team.
 
@@ -37,7 +37,7 @@ Selecting the **Send Feedback** icon opens a **Send Feedback** window.
 
 
 <!-- ====================================================================== -->
-## Entering an issue in the edge-developer repo, or editing the docs
+## Enter an issue in the edge-developer repo, or edit the docs
 
 You can [file an issue](https://github.com/MicrosoftDocs/edge-developer/issues) against the Microsoft Edge Developer documentation, directly in the `edge-developer` repo.
 
@@ -52,13 +52,13 @@ Regarding developing with DevTools in Microsoft Edge, you can send a tweet to [@
 
 
 <!-- ====================================================================== -->
-## Feedback about the WebView2 control
+## The WebView2 control
 
 Share your feedback to help build rich WebView2 experiences.  To submit feature suggestions or bugs about the WebView2 control, or to search for known issues, use the [WebView2Feedback][GithubMicrosoftedgeWebviewfeedback] repo.
 
 
 <!-- ====================================================================== -->
-## The Visual Studio team
+## Visual Studio for web development
 
 The Microsoft Visual Studio and Microsoft Edge teams want to learn more about how you work with JavaScript in Visual Studio.  To send your feedback, select the **Send Feedback** icon in Visual Studio or tweet [@VisualStudio and @EdgeDevTools][TwitterIntentTweetViualstudioEdgdevtools].  
 
@@ -76,7 +76,7 @@ If you want to help make the Microsoft Edge DevTools extension better, your cont
 
 
 <!-- ====================================================================== -->
-## The webhint team
+## The webhint extension for Visual Studio Code
 
 Send your feedback about the webhint extension for Visual Studio Code by [filing an issue][GithubWebhintioIssuesNew] in the [webhint GitHub repo][GithubWebhintio].
 
