@@ -67,7 +67,7 @@ The top part of the **Inspect** overlay, which is above the **Accessibility** se
 *   Margin and padding in pixels.
 
 
-## Identify nested regions using color highlighting 
+## Identify nested regions using color highlighting
 
 <!-- general info about the Inspect tool, not particularly focused on accessibility -->
 
@@ -114,9 +114,9 @@ After selecting an element in the rendered page, you could then use the **Access
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
 
-## Getting in touch with the Microsoft Edge DevTools team  
+## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
 
 <!-- links -->
