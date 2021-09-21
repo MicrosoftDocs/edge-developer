@@ -239,7 +239,7 @@ You can enable and disable CSS Mirror Editing using the button in the targets pa
    In the extension panel you can find a quick explanation of CSS mirror editing, the button to turn the functionality on and off and a link to provide us feedback.
 :::image-end:::
 
-:::image type="complex" source="./media/CSS-mirror-editing-changed-file.msft.png" alt-text="Using the command menu and searching for mirror you can focus the CSS mirror editing view and turn the functionality on and off." lightbox="./media/CSS-mirror-editing-changed-file.msft.png":::
+:::image type="complex" source="./media/CSS-mirror-editing-command.msft.png" alt-text="Using the command menu and searching for mirror you can focus the CSS mirror editing view and turn the functionality on and off." lightbox="./media/CSS-mirror-editing-command.msft.png":::
    Using the command menu and searching for mirror you can focus the CSS mirror editing view and turn the functionality on and off.
 :::image-end:::
 
@@ -331,11 +331,11 @@ If you want to help make the Microsoft Edge DevTools extension better, your cont
 
 
 <!--links -->
-[CSSMirrorEditingTracking]: https://github.com/microsoft/vscode-edge-devtools/issues/476 "CSS Mirror Editing tracking issue"
 [VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"
 [VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentation | Visual Studio Code"
 [ConsoleUtilitiesAPI]: /microsoft-edge/devtools-guide-chromium/console/utilities "Console Utilities API reference | Microsoft Docs"
 <!-- external links -->
+[CSSMirrorEditingTracking]: https://github.com/microsoft/vscode-edge-devtools/issues/476 "CSS Mirror Editing: Known Issues and Feedback · Issue #476 · microsoft/vscode-edge-devtools"
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
 [GithubMicrosoftVscodeEdgeDevtoolsChangelog]: https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md "Changelog file - vscode-edge-devtools | GitHub"
 [GithubMicrosoftVscodeEdgeDevtoolsNewIssue]: https://github.com/Microsoft/vscode-edge-devtools/issues/new "New Issue - microsoft/vscode-edge-devtools | GitHub"
