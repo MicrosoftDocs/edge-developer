@@ -11,9 +11,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Contacting the Microsoft Edge team
 
-Contact the Microsoft Edge team to submit feature requests or bug reports of issues about developing for Microsoft Edge, including development using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more.
+Send your feedback to help improve Microsoft Edge DevTools and other features that are covered in the Microsoft Edge Developer documentation.  Contact the Microsoft Edge team to submit feature requests or bug reports of issues about developing for Microsoft Edge, including development using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more.
 
-Send your feedback to help improve Microsoft Edge DevTools and other features that are covered in the Microsoft Edge Developer documentation.  There are several ways to get in touch with the Microsoft Edge DevTools team.
+There are several ways to get in touch with the Microsoft Edge team.
 
 
 <!-- ====================================================================== -->
