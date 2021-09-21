@@ -518,5 +518,5 @@
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                 - name: COM Interop
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
-        - name: Contact Microsoft Edge team
-          href: contact.md
+    - name: Contact Microsoft Edge team
+      href: contact.md
