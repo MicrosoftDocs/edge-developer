@@ -26,6 +26,19 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to [Switch to a preview channel to test upcoming APIs and features][SwitchToPreviewChannel].
 
+## 1.0.1018-prerelease
+
+Release Date: September 20, 2021  
+
+[NuGet package for WebView2 SDK 1.0.1018-prerelease][NuGetGallery1.0.1018-prerelease]
+
+For full API compatibility, this prerelease version of the WebView2 SDK requires Microsoft Edge version 95.0.1018.0 or higher.
+
+### General  
+
+#### Experimental Features  
+*   Added Media API that enables developers to mute/unmute media within the webview.
+*   Added support for multiple user profiles with WebView2. 
 
 ## 1.0.1010-prerelease
 
@@ -1158,6 +1171,7 @@ Initial developer preview release.
 [NuGetGallery1.0.955-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.955-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.955 prerelease"  
 [NuGetGallery1.0.961.33]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.961.33 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.961.33"  
 [NuGetGallery1.0.1010-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1010-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.1010-prerelease"
+[NuGetGallery1.0.1018-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1018-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.1018-prerelease"
 <!-- end of NuGet links -->
 [WindowsBlogsMsedgedevEdgeWebview2GeneralAvailability]: https://blogs.windows.com/msedgedev/edge-webview2-general-availability "Announcing Microsoft Edge WebView2 General Availability | Microsoft Edge Blog"  
 [Webview2ReferenceWin32Icorewebview2experimentalsettings5ViewWebview210902PrereleaseGetIsswipenavigationenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings5?view=webview2-1.0.902-prerelease&preserve-view=true#get_isswipenavigationenabled "get_IsSwipeNavigationEnabled - interface ICoreWebView2ExperimentalSettings5 | Microsoft Docs"
