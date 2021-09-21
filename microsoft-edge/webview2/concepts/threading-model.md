@@ -81,9 +81,9 @@ For instance, you can use the `NewWindowRequested` event to provide a `CoreWebVi
 
 ### Deferrals in C#
 
-When using a `Deferral` in C# the best practice is to use it with a `using` block. The `using` block will ensure that the `Deferral` is completed even if an exception is thrown in the middle of the `using` block. If instead you have code to explicitly call `Complete`, but an exception is thrown before your `Complete` call occurs then the deferral isn't completed until some time later when the garbage collector eventually collects and disposes of the deferral. In the interim the WebView2 will be waiting for the app code to handle the event.
+When using a `Deferral` in C#, the best practice is to use it with a `using` block. The `using` block ensures that the `Deferral` is completed even if an exception is thrown in the middle of the `using` block. If instead, you have code to explicitly call `Complete`, but an exception is thrown before your `Complete` call occurs, then the deferral isn't completed until some time later, when the garbage collector eventually collects and disposes of the deferral. In the interim, the WebView2 waits for the app code to handle the event.
 
-For example, don't do the following because if there's an exception before calling `Complete` the WebResourceRequested event won't be considered handled and will block WebView2 from rendering that web content.
+For example, don't do the following, because if there's an exception before calling `Complete`, the `WebResourceRequested` event isn't considered "handled", and blocks WebView2 from rendering that web content.
 
 ```csharp
 private async void WebView2WebResourceRequestedHandler(CoreWebView2 sender, CoreWebView2WebResourceRequestedEventArgs eventArgs)
@@ -97,7 +97,7 @@ private async void WebView2WebResourceRequestedHandler(CoreWebView2 sender, Core
 }
 ```
 
-Instead use a `using` block as in the following example. The `using` block will ensure the `Deferral` is completed whether or not there's an exception.
+Instead, use a `using` block, as in the following example. The `using` block ensures that the `Deferral` is completed, whether or not there's an exception.
 
 ```csharp
 private async void WebView2WebResourceRequestedHandler(CoreWebView2 sender, CoreWebView2WebResourceRequestedEventArgs eventArgs)
