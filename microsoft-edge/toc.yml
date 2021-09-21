@@ -407,7 +407,7 @@
       href: playwright/index.md
     - name: Puppeteer overview
       href: puppeteer/index.md
-    - name: Visual Studio overview
+    - name: Visual Studio for web development
       href: visual-studio/index.md
     - name: Visual Studio Code
       items:
