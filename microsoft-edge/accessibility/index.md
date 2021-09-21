@@ -1,6 +1,6 @@
 ---
 description: Learn how to build, design, and test accessible websites within Microsoft Edge.
-title: Accessibility
+title: Accessibility overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/16/2020
@@ -19,9 +19,15 @@ Designing websites and other technologies for inclusion creates an experience en
 
 Here are some best practices, code samples, and further resources for you to learn more about [Designing][AccessibilityDesign], [Building][AccessibilityBuild], and [Testing][AccessibilityTest] accessible websites in Microsoft Edge.
 
+
+<!-- ====================================================================== -->
 ## Accessibility in Microsoft Edge
 
-In Microsoft Edge, we introduced modern [UI Automation API][WindowsWin32AutoEntryui] \(UIA API\).  The change to UIA was a major investment in browser accessibility, and it lays the foundation for a more inclusive web experience for users who depend on assistive technology in Windows 10.  Users also benefit from the evergreen nature of the Chromium engine.
+In Microsoft Edge, we introduced the [UI Automation API][WindowsWin32AutoEntryui] (UIA API).  The change to UIA was a major investment in browser accessibility, and it lays the foundation for a more inclusive web experience for users who depend on assistive technology in Windows 10.  Users also benefit from the evergreen nature of the Chromium engine.
+
+The [Microsoft UI Automation API][WindowsWin32AutoEntryui] is an accessibility framework that enables Windows applications to provide and consume programmatic information about user interfaces (UIs).  It provides programmatic access to most UI elements on the desktop.  It enables assistive technology products, such as screen readers, to provide information about the UI to end users and to manipulate the UI by means other than standard input.  UI Automation also allows automated test scripts to interact with the UI.
+
+The [Microsoft Windows UI Automation blog][ArchiveBlogsWinuiautomation] has posts about the Windows Automation API.
 
 The accessibility system in Microsoft Edge inherently supports modern web standards including ARIA, HTML5, and CSS3.  The following diagram of the simplified browser pipeline follows webpage content into an accessible presentation layer.
 
@@ -31,27 +37,31 @@ The accessibility system in Microsoft Edge inherently supports modern web standa
 
 The Microsoft Edge team works with the W3C and other browser vendors on an ongoing basis to ensure that new web platform features have sufficient built-in accessibility.
 
-For information on which new HTML5 features are accessibly supported by Microsoft Edge, navigate to [HTML5Accessibility][HTML5Accessibility].
+For information on which new HTML features are accessibly supported by Microsoft Edge, navigate to [HTML5Accessibility][HTML5Accessibility].
 
-## Resources
 
-#### Microsoft Windows UI Automation Blog
+<!-- ====================================================================== -->
+## See also
 
-The [Microsoft Windows UI Automation blog][ArchiveBlogsWinuiautomation] covers topics related to the Windows Automation API.
+*  [Accessibility-testing features in DevTools](../devtools-guide-chromium/accessibility/reference.md) - a checklist of accessibility aspects to test and the corresponding DevTools features.
+*  [Overview of accessibility testing using DevTools](../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md) - a walkthrough of testing a demo page for accessibility by using the DevTools features.
 
-#### Web Accessibility Initiative (WAI)
+W3C articles:
+*  [W3C Web Accessibility Initiative (WAI)][W3CWaiHome]
+   *  [Getting Started with Web Accessibility][W3CWaiGettingstartedOverview]
+   *  [Designing for Inclusion][W3CWaiFundamentals]
+   *  [Tutorials and presentations][W3CWaiTeachAdvocate]
 
-The [Web Accessibility Initiative (WAI)][W3CWaiHome] provided bt the W3C is an effort to help improve the accessibility of the web.  The site provides a variety of resources for [Getting Started with Web Accessibility][W3CWaiGettingstartedOverview], [Designing for Inclusion][W3CWaiFundamentals], [tutorials and presentations][W3CWaiTeachAdvocate], and more.
 
+<!-- ====================================================================== -->
 <!-- links -->
+[AccessibilityBuild]: ./build/index.md "Building accessible websites | Microsoft Doc"
+[AccessibilityDesign]: ./design.md "Designing accessible websites | Microsoft Doc"
+[AccessibilityTest]: ./test.md "Accessibility testing | Microsoft Docs"
+<!-- external links -->
+[WindowsWin32AutoEntryui]: /windows/win32/winauto/entry-uiauto-win32 "UI automation | Microsoft Doc"
 
-[AccessibilityBuild]: ./build/index.md "Building Accessible Websites | Microsoft Doc"
-[AccessibilityDesign]: ./design.md "Designing Accessible Websites | Microsoft Doc"
-[AccessibilityTest]: ./test.md "Accessibility Testing | Microsoft Docs"
-
-[WindowsWin32AutoEntryui]: /windows/win32/winauto/entry-uiauto-win32 "UI Automation | Microsoft Doc"
-
-[ArchiveBlogsWinuiautomation]: /archive/blogs/winuiautomation/ "Microsoft Windows UI Automation Blog | Microsoft Doc"
+[ArchiveBlogsWinuiautomation]: /archive/blogs/winuiautomation/ "Microsoft Windows UI Automation blog | Microsoft Doc"
 
 [HTML5Accessibility]: https://html5accessibility.com "HTML5 Accessibility"
 
@@ -61,5 +71,4 @@ The [Web Accessibility Initiative (WAI)][W3CWaiHome] provided bt the W3C is an e
 [W3CWaiHome]: https://w3.org/wai "Web Accessibility Initiative (WAI) | W3C"
 [W3CWaiTeachAdvocate]: https://w3.org/wai/teach-advocate "Teach and Advocate Overview | Web Accessibility Initiative (WAI) | W3C"
 
-[WHODisabilities]: https://who.int/topics/disabilities "Disabilities | WHO"
-
+[WHODisabilities]: https://who.int/topics/disabilities "Disabilities | WHO"  
