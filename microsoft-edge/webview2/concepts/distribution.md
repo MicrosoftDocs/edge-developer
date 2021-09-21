@@ -247,26 +247,56 @@ To use the Fixed Version distribution mode:
     
 ### Known issues for Fixed Version  
 
-Installing the Fixed Version of the WebView2 Runtime on the client causes [Microsoft PlayReady][MicrosoftPlayReady] to stop working.  Fix the PlayReady setup as follows.
+*   Currently, Fixed Version cannot be run from a network location or UNC path. 
+ 
+*   Installing the Fixed Version of the WebView2 Runtime on the client causes [Microsoft PlayReady][MicrosoftPlayReady] to stop working.  Fix the PlayReady setup as follows.
 
-1.  Locate the path where you deploy the Fixed Version package on the user's device, such as the following location.
+    1.  Locate the path where you deploy the Fixed Version package on the user's device, such as the following location.
+        
+        ```text
+        D:\myapp\Microsoft.WebView2.FixedVersionRuntime.87.0.664.8.x64
+        ```  
+        
+    1.  Run the following commands on the user's device.
     
-    ```text
-    D:\myapp\Microsoft.WebView2.FixedVersionRuntime.87.0.664.8.x64
-    ```  
+        ```shell
+        icacls {Fixed Version path} /grant *S-1-15-2-2:(OI)(CI)(RX)
+        icacls {Fixed Version path} /grant *S-1-15-2-1:(OI)(CI)(RX)
+        ```  
     
-1.  Run the following commands on the user's device.
+    1.  PlayReady should be working now on the user's device.  To confirm that PlayReady is installed correctly, in the **Security** tab of the **Fixed Version** folder, make sure permissions are granted for `ALL APPLICATION PACKAGES` and `ALL RESTRICTED APPLICATION PACKAGES`, as shown below.
+    
+        :::image type="complex" source="../media/play-ready-permission.png" alt-text="Permission for PlayReady" lightbox="../media/play-ready-permission.png":::
+            Permission for PlayReady  
+        :::image-end:::  
 
-    ```shell
-    icacls {Fixed Version path} /grant *S-1-15-2-2:(OI)(CI)(RX)
-    icacls {Fixed Version path} /grant *S-1-15-2-1:(OI)(CI)(RX)
-    ```  
+### Files to ship with the app
 
-1.  PlayReady should be working now on the user's device.  To confirm that PlayReady is installed correctly, in the **Security** tab of the **Fixed Version** folder, make sure permissions are granted for `ALL APPLICATION PACKAGES` and `ALL RESTRICTED APPLICATION PACKAGES`, as shown below.
+The `WebView2Loader` code needs to be shipped with the app.  This can be done by [statically linking][StaticallylinktheWebView2loaderlibrary] `WebView2Loader.lib` into the app binaries, or by including the `WebView2Loader.dll` that matches the app's architecture. 
 
-    :::image type="complex" source="../media/play-ready-permission.png" alt-text="Permission for PlayReady" lightbox="../media/play-ready-permission.png":::
-        Permission for PlayReady  
-    :::image-end:::  
+`WebView2Loader.dll` is a native and architecture-specific binary, so you need to include all flavors of this binary that you expect your app to run in.  For example, for x86 you would include the x86 version of `WebView2Loader.dll`, and for AnyCPU you would include the x86, x64, and arm64 versions of `WebView2Loader.dll`.  For a managed app, the correct version of `WebView2Loader.dll` is loaded from the appropriate architecture-specific folder.
+
+Example native app folder structure:
+
+```
+\<myApp>
+    \WebView2Loader.dll
+```
+
+For .NET managed apps, you also need to include the WebView2 .NET assemblies for the core WebView2 functionality (`Microsoft.Web.WebView2.Core.dll`) and for the WPF/WinForms-specific functionality (`Microsoft.Web.WebView2.Winforms.dll` or `Microsoft.Web.WebView2.WPF.dll`).
+
+Example native app folder structure:
+
+```
+\<myApp>
+    \Microsoft.Web.WebView2.Core.dll
+    \Microsoft.Web.WebView2.Winforms.dll
+    \Microsoft.Web.WebView2.WPF.dll
+    \runtimes
+        \win-arm64\native\WebView2Loader.dll (arm64)
+        \win-x64\native\WebView2Loader.dll (x64)
+        \win-x86\native\WebView2Loader.dll (x86)
+```
 
 
 <!-- ====================================================================== -->
@@ -275,6 +305,7 @@ Installing the Fixed Version of the WebView2 Runtime on the client causes [Micro
 [HowToWebdriver]: ../how-to/webdriver.md "Automating and testing WebView2 with Microsoft Edge Driver | Microsoft Docs"  
 [Webview2ConceptsDevguideManageVersionsRuntime]: developer-guide.md#manage-new-versions-of-the-runtime "Manage new versions of the Runtime | Microsoft Docs"
 [Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis "Feature-detecting to test whether the installed Runtime supports recently added APIs - Understand WebView2 SDK versions | Microsoft Docs"
+[StaticallylinktheWebView2loaderlibrary]: ../how-to/static.md "Statically link the WebView2 loader library | Microsoft Edge Developer documentation"
 <!-- external links -->
 [ReferenceWin32Webview2IdlCreatecorewebview2environmentwithoptions]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"  
 [ReferenceWin32Webview2IdlGetavailablecorewebview2browserversionstring]: /microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring "GetAvailableCoreWebView2BrowserVersionString - Globals | Microsoft Docs"  
