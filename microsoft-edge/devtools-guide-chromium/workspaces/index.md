@@ -263,12 +263,12 @@ If you have more feedback on the topics or anything else, please use any of the 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [DevToolsCssIndex]: ../css/index.md "Get started with viewing and changing CSS | Microsoft Docs"  
 
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->  

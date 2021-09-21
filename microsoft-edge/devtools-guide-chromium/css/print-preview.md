@@ -44,12 +44,12 @@ From here, you may display and change your CSS, like any other web page.  Naviga
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
 [DevToolsCSSGetStarted]: ./index.md "Get started with viewing and changing CSS | Microsoft Docs"  
 

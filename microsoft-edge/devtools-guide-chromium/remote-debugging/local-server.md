@@ -107,12 +107,12 @@ If your web server is running off of a non-standard port, remember to specify th
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [RemoteDebuggingGettingStarted]: ./index.md "Get started with remote debugging Android devices | Microsoft Docs"  
 
 [CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Charles Web Debugging Proxy"  

@@ -234,12 +234,12 @@ After you have identified the problem, you are able to use an **Allocation instr
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [DevtoolsEvaluatePerformanceReferenceRecord]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-performance "Record performance - Performance Analysis Reference"  
 <!-- image links -->  
 [ImageForceGarbageCollectionIcon]: ../media/collect-garbage-icon.msft.png  

@@ -90,12 +90,12 @@ Choose **Clear All** \(![Clear All](../media/clear-icon.msft.png)\) to delete al
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools"  
 [DevToolsOpen]: /microsoft-edge/devtools-guide-chromium/open "Open Microsoft Edge DevTools"  
 

@@ -224,12 +224,12 @@ A couple of code stepping controls aren't explained in this article.  For more i
 
 *  [Use the debugger features][DevToolsJavascriptReference] - Using the UI of the debugger in the Sources tool.
 *  [Sources tool overview][DevToolsSourcesIndex] - Introduces the JavaScript debugger and code editor.
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [DevToolsJavascriptReference]: ./reference.md "Use the debugger features | Microsoft Docs"  
 [DevToolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"  
 [DevToolsJavscriptBreakpoints]: ./breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"

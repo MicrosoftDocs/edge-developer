@@ -516,12 +516,12 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [DevtoolsEvaluatePerformanceReference]: ../evaluate-performance/reference.md "Performance analysis reference | Microsoft Docs"  
 
 [CourseraIntroductionWebDevelopmentClass]: https://www.coursera.org/learn/web-development#syllabus "Introduction to Web Development class | Coursera"  

@@ -93,12 +93,12 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../../../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [EdgeDevToolsExtensionForVSCode]: ../../../../visual-studio-code/microsoft-edge-devtools-extension.md "Microsoft Edge DevTools extension for Visual Studio Code | Microsoft Docs"
 [LookupErrorsWebFromConsole]: ../../../console/index.md#look-up-error-messages-on-the-web-from-the-console "Look up error messages on the web from the Console - Use the Console | Microsoft Docs"
 [DevToolsKeyboardShortcuts]: ../../../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"

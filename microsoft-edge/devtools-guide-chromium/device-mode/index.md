@@ -388,7 +388,7 @@ You may also set user agent client hints in [Network Analysis reference](../netw
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
@@ -402,7 +402,7 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 <!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community | Microsoft Docs"  -->
 [DevToolsRemoteDebugging]: ../remote-debugging/index.md "Get started with remote debugging Android devices | Microsoft Docs"  
 

@@ -275,12 +275,12 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../../../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [WhatsNew81]: ../01/devtools.md "What's New In DevTools (Microsoft Edge 81) | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsCssIndex]: ../../../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  

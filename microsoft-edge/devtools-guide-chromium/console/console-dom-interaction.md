@@ -259,12 +259,12 @@ You may find it useful to manipulate the DOM from the **Console**.  You may soon
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Console as a JavaScript environment | Microsoft Docs"  
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Logs in the Console tool | Microsoft Docs"  
 [DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  

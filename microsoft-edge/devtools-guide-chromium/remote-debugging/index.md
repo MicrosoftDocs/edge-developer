@@ -146,12 +146,12 @@ You are able to interact with the screencast in the following ways.
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [AndroidDeveloperStudioDevOptions]: https://developer.android.com/studio/debug/dev-options "Configure on-device developer options | Android Developer"  
 [AndroidDeveloperToolsOemUsb]: https://developer.android.com/tools/extras/oem-usb.html "Install OEM USB drivers | Android Developers"  
 

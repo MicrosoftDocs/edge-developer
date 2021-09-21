@@ -410,7 +410,7 @@ Many of the instructions in this tutorial instruct you to hover on a node in the
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
@@ -424,7 +424,7 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge \(Chromium\) Developer Tools | Microsoft Docs"  
 [DevToolsCssGetStarted]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
 [DevToolsShortcutsElements]: ../shortcuts/index.md#elements-tool-keyboard-shortcuts "Elements tool keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"  

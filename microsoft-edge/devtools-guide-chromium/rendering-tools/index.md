@@ -180,12 +180,12 @@ The following table describes some common paint and composite problems and poten
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Speed up JavaScript runtime | Microsoft Docs"  
 [DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "Turn on advanced paint instrumentation - Performance analysis reference | Microsoft Docs"
 

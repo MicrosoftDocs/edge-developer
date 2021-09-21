@@ -152,7 +152,7 @@ Now you can change the content of the WebView2 control to add your own content.
 ## See also
 
 *  [WebView2 development best practices][WV2BestPractices]
-*  [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain] - a comprehensive example of WebView2 capabilities.
+*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain] - a comprehensive example of WebView2 capabilities.
 *  [WebView2 Resources][Webview2IndexNextSteps]
 *  [WebView2 spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] - detailed information about the WebView2 API.
 *  [Contacting the Microsoft Edge team][Contact] - Share your feedback to help build rich WebView2 experiences, by using the `WebView2Feedback` repo.  To send WinUI-specific feature requests or bugs, navigate to [Issues - microsoft/microsoft-ui-xaml][GithubMicrosoftMicrosoftUiXamlIssues] and then select **New issue**.

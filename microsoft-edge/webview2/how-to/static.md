@@ -39,20 +39,21 @@ For apps that don't want to ship a `WebView2Loader.dll`, complete the following 
     :::image-end:::  
     
 1.  Compile and run your app.  
-    
-## Getting in touch with the WebView2 team  
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
-## See also  
+<!-- ====================================================================== -->
+## See also
 
-*   To get started using WebView2, navigate to [WebView2 Get Started Guides][Webview2MainGetStarted].  
-*   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples][GithubMicrosoftedgeWebview2samples] on GitHub.
-*   For more detailed information about WebView2 APIs, navigate to [API reference][Webview2ApiReference].
-*   For more information about WebView2, navigate to [WebView2 Resources][Webview2MainNextSteps].
-    
-<!-- links -->  
+*  [WebView2 Get Started Guides][Webview2MainGetStarted]
+*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] - a comprehensive example of WebView2 capabilities.
+*  [WebView2 API reference][Webview2ApiReference]
+*  [WebView2 Resources][Webview2MainNextSteps]
+*  [Contacting the Microsoft Edge team][Contact] - Share your feedback to help build rich WebView2 experiences, by using the `WebView2Feedback` repo.
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"  

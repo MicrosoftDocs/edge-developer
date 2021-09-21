@@ -59,12 +59,12 @@ To re-enable JavaScript, complete the following actions.
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [DevToolsOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
 > [!NOTE]

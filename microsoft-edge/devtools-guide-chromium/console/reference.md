@@ -266,12 +266,12 @@ To clear the **Console**, complete any of the following workflows.
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Log messages in the Console tool | Microsoft Docs"  
 [DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Console as a JavaScript environment | Microsoft Docs"  

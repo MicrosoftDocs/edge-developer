@@ -239,21 +239,22 @@ In Visual Studio Code, complete the following actions to debug your code.
         
 * * *  
 
-## See also  
 
-*   To get started using WebView2, navigate to [WebView2 Get Started Guides][Webview2MainGetStarted].  
-*   For a comprehensive example of WebView2 capabilities, navigate to the [WebView2Samples][GithubMicrosoftedgeWebview2samples] repo on GitHub.
-*   For more detailed information about WebView2 APIs, navigate to [API reference][Webview2ApiReference].
-*   For more information about WebView2, navigate to [WebView2 Resources][Webview2MainNextSteps].
-    
-## Getting in touch with the Microsoft Edge WebView team  
+<!-- ====================================================================== -->
+## See also
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
+*  [WebView2 Get Started Guides][Webview2MainGetStarted]
+*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] - a comprehensive example of WebView2 capabilities.
+*  [WebView2 API reference][Webview2ApiReference]
+*  [WebView2 Resources][Webview2MainNextSteps]
+*  [Contacting the Microsoft Edge team][Contact] - Share your feedback to help build rich WebView2 experiences, by using the `WebView2Feedback` repo.
 
-<!-- links -->  
 
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
-
+<!-- external links -->
 [Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Setvirtualhostnametofoldermapping]: /dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping "CoreWebView2.SetVirtualHostNameToFolderMapping(String, String, CoreWebView2HostResourceAccessKind) Method (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
 [Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: /dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments "CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property (Microsoft.Web.WebView2.Core) | Microsoft Docs"  
 [Webview2ReferenceWin32Webview2IdlParameters]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions  "CreateCoreWebView2Environment - Globals | Microsoft Docs"  

@@ -45,7 +45,7 @@ To override the [user agent][MDNUserAgent] string from Microsoft Edge DevTools:
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
@@ -59,7 +59,7 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "User agent | MDN"  
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0  

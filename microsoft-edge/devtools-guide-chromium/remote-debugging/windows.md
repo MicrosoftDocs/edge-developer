@@ -162,12 +162,12 @@ The file explorer does not launch from the DevTools in the **Sources** tool or i
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [DevtoolsIndex]: ../index.md "Microsoft Edge Developer Tools overview | Microsoft Docs"  
 [DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Debug Progressive Web Apps | Microsoft Docs"  
 
