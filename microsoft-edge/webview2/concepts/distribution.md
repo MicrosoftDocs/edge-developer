@@ -251,25 +251,25 @@ To use the Fixed Version distribution mode:
  
 *   Installing the Fixed Version of the WebView2 Runtime on the client causes [Microsoft PlayReady][MicrosoftPlayReady] to stop working.  Fix the PlayReady setup as follows.
 
-1.  Locate the path where you deploy the Fixed Version package on the user's device, such as the following location.
+    1.  Locate the path where you deploy the Fixed Version package on the user's device, such as the following location.
+        
+        ```text
+        D:\myapp\Microsoft.WebView2.FixedVersionRuntime.87.0.664.8.x64
+        ```  
+        
+    1.  Run the following commands on the user's device.
     
-    ```text
-    D:\myapp\Microsoft.WebView2.FixedVersionRuntime.87.0.664.8.x64
-    ```  
+        ```shell
+        icacls {Fixed Version path} /grant *S-1-15-2-2:(OI)(CI)(RX)
+        icacls {Fixed Version path} /grant *S-1-15-2-1:(OI)(CI)(RX)
+        ```  
     
-1.  Run the following commands on the user's device.
-
-    ```shell
-    icacls {Fixed Version path} /grant *S-1-15-2-2:(OI)(CI)(RX)
-    icacls {Fixed Version path} /grant *S-1-15-2-1:(OI)(CI)(RX)
-    ```  
-
-1.  PlayReady should be working now on the user's device.  To confirm that PlayReady is installed correctly, in the **Security** tab of the **Fixed Version** folder, make sure permissions are granted for `ALL APPLICATION PACKAGES` and `ALL RESTRICTED APPLICATION PACKAGES`, as shown below.
-
-    :::image type="complex" source="../media/play-ready-permission.png" alt-text="Permission for PlayReady" lightbox="../media/play-ready-permission.png":::
-        Permission for PlayReady  
-    :::image-end:::  
-
+    1.  PlayReady should be working now on the user's device.  To confirm that PlayReady is installed correctly, in the **Security** tab of the **Fixed Version** folder, make sure permissions are granted for `ALL APPLICATION PACKAGES` and `ALL RESTRICTED APPLICATION PACKAGES`, as shown below.
+    
+        :::image type="complex" source="../media/play-ready-permission.png" alt-text="Permission for PlayReady" lightbox="../media/play-ready-permission.png":::
+            Permission for PlayReady  
+        :::image-end:::  
+    
 
 <!-- ====================================================================== -->
 <!-- links -->  
