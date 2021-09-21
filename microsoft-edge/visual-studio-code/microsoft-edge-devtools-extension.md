@@ -3,7 +3,7 @@ description: Using the Microsoft Edge Developer Tools extension for Visual Studi
 title: Microsoft Edge DevTools extension for Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/24/2021
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, microsoft edge developer tools, microsoft edge developer tools extension
@@ -214,20 +214,21 @@ This example shows a folder of production files on your hard drive called `my-pr
 
 All changes that are saved in this folder now trigger a browser refresh.
 
+
 <!-- ====================================================================== -->
-## Syncing live changes from from the Styles tool using CSS Mirror editing
+## Syncing live changes from the Styles tool by using CSS Mirror Editing
 
-The Styles tool of the Microsoft Edge DevTools is excellent to debug and tweak CSS properties styles. One problem is that whilst these changes show up live in the browser, they don't reflect in your source files. This means that at the end of your CSS debugging, you need to copy and paste what you changed back into your sources.
+The Styles tool in Microsoft Edge DevTools is excellent for debugging and tweaking CSS property styles.  One problem is that although these changes show up live in the browser, they aren't reflected in your source files.  This means that at the end of your CSS debugging session, you need to copy and paste what you changed back into your source files.
 
-CSS Mirror Editing is an experimental feature of the Microsoft Edge DevTools extension that works around that problem. When you turn on Mirror Editing, any change done with the Styles tool of the DevTools also changes the file in your workspace.
+CSS Mirror Editing is an experimental feature of the Microsoft Edge DevTools extension that works around that problem.  When you turn on Mirror Editing, any change that's made in the Styles tool of DevTools also changes the file that's in your workspace.
 
-In the following example, we have `index.html` currently open in Visual Studio Code and the Edge DevTools extension open. When we select the flexbox icon in the `.searchbar` CSS selector and change the `flex-direction` to column, we do not only see the change in the browser and the DevTools, but VS Code will also automatically navigate to the right style sheet file and appropriate line number and insert the `flex-direction: column` CSS code. 
+In the following example, we have `index.html` currently open in Visual Studio Code, and the Edge DevTools extension is open.  When we select the flexbox icon in the `.searchbar` CSS selector and change the `flex-direction` to `column`, we not only see the change in the browser and in DevTools, but VS Code also automatically navigates to the correct style sheet file and the appropriate line number, and inserts the `flex-direction: column` CSS code. 
 
-:::image type="complex" source="./media/CSS-mirror-editing-start.msft.png" alt-text="Selecting the flexbox icon in the Styles tool to create a CSS change" lightbox="./media/CSS-mirror-editing-start.msft.png":::
+:::image type="complex" source="./media/css-mirror-editing-start.msft.png" alt-text="Selecting the flexbox icon in the Styles tool to create a CSS change" lightbox="./media/css-mirror-editing-start.msft.png":::
    Selecting the flexbox icon in the Styles tool to create a CSS change
 :::image-end:::
 
-:::image type="complex" source="./media/CSS-mirror-editing-changed-file.msft.png" alt-text="Changing the CSS setting created a new line of code in the correct CSS source file" lightbox="./media/CSS-mirror-editing-changed-file.msft.png":::
+:::image type="complex" source="./media/css-mirror-editing-changed-file.msft.png" alt-text="Changing the CSS setting created a new line of code in the correct CSS source file" lightbox="./media/css-mirror-editing-changed-file.msft.png":::
    Changing the CSS setting created a new line of code in the correct CSS source file
 :::image-end:::
 
@@ -235,15 +236,16 @@ You can edit any selector or create new ones in the Styles tool and all changes 
 
 You can enable and disable CSS Mirror Editing using the button in the targets pane of the extension or by using the Command Menu and looking for `mirror`.
 
-:::image type="complex" source="./media/CSS-mirror-editing-button.msft.png" alt-text="In the extension panel you can find a quick explanation of CSS mirror editing, the button to turn the functionality on and off and a link to provide us feedback." lightbox="./media/CSS-mirror-editing-button.msft.png":::
+:::image type="complex" source="./media/css-mirror-editing-button.msft.png" alt-text="In the extension panel you can find a quick explanation of CSS mirror editing, the button to turn the functionality on and off and a link to provide us feedback." lightbox="./media/css-mirror-editing-button.msft.png":::
    In the extension panel you can find a quick explanation of CSS mirror editing, the button to turn the functionality on and off and a link to provide us feedback.
 :::image-end:::
 
-:::image type="complex" source="./media/CSS-mirror-editing-command.msft.png" alt-text="Using the command menu and searching for mirror you can focus the CSS mirror editing view and turn the functionality on and off." lightbox="./media/CSS-mirror-editing-command.msft.png":::
+:::image type="complex" source="./media/css-mirror-editing-command.msft.png" alt-text="Using the command menu and searching for mirror you can focus the CSS mirror editing view and turn the functionality on and off." lightbox="./media/css-mirror-editing-command.msft.png":::
    Using the command menu and searching for mirror you can focus the CSS mirror editing view and turn the functionality on and off.
 :::image-end:::
 
-We are still actively looking to improve this feature and set up a [tracking issue](CSSMirrorEditingTracking) on GitHub where we welcome your feedback.
+We are continuing to improve this feature and have set up a tracking issue on GitHub, [CSS Mirror Editing][CSSMirrorEditingTracking], where we welcome your feedback.
+
 
 <!-- ====================================================================== -->
 ## Browser debugging with Microsoft Edge DevTools integration in Visual Studio Code
