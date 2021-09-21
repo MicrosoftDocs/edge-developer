@@ -77,7 +77,38 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 
 Some WebView2 events read values that are set on the related event arguments, or start some action after the event handler completes.  If you also need to run an asynchronous operation, such as an event handler, use the `GetDeferral` method on the event arguments of the associated events.  The returned `Deferral` object ensures that the event handler isn't considered complete until the `Complete` method of the `Deferral` is requested.  
 
-For instance, you can use the `NewWindowRequested` event to provide a `CoreWebView2` to connect as a child window when the event handler completes.  But if you need to asynchronously create the `CoreWebView2`, you should request the `GetDeferral` method on the `NewWindowRequestedEventArgs`.  After you've asynchronously created the `CoreWebView2` and set the `NewWindow` property on the `NewWindowRequestedEventArgs`, request `Complete` on the `Deferral` object that's returned by the `GetDeferral` method.  
+For instance, you can use the `NewWindowRequested` event to provide a `CoreWebView2` to connect as a child window when the event handler completes.  But if you need to asynchronously create the `CoreWebView2`, you should call the `GetDeferral` method on the `NewWindowRequestedEventArgs`.  After you've asynchronously created the `CoreWebView2` and set the `NewWindow` property on the `NewWindowRequestedEventArgs`, call `Complete` on the `Deferral` object that's returned by the `GetDeferral` method.  
+
+### Deferrals in C#
+
+When using a `Deferral` in C# the best practice is to use it with a `using` block. The `using` block will ensure that the `Deferral` is completed even if an exception is thrown in the middle of the `using` block. If instead you have code to explicitly call `Complete`, but an exception is thrown before your `Complete` call occurs then the deferral isn't completed until some time later when the garbage collector eventually collects and disposes of the deferral. In the interim the WebView2 will be waiting for the app code to handle the event.
+
+For example, don't do the following because if there's an exception before calling `Complete` the WebResourceRequested event won't be considered handled and will block WebView2 from rendering that web content.
+
+```csharp
+private async void WebView2WebResourceRequestedHandler(CoreWebView2 sender, CoreWebView2WebResourceRequestedEventArgs eventArgs)
+{
+   var deferral = eventArgs.GetDeferral();
+
+   args.Response = await CreateResponse(eventArgs);
+
+   // NOT recommended. If CreateResponse throws the deferral isn't completed.
+   deferral.Complete();
+}
+```
+
+Instead use a `using` block as in the following example. The `using` block will ensure the `Deferral` is completed whether or not there's an exception.
+
+```csharp
+private async void WebView2WebResourceRequestedHandler(CoreWebView2 sender, CoreWebView2WebResourceRequestedEventArgs eventArgs)
+{
+   // Using block ensures the deferral is completed regardless of exception.
+   using (eventArgs.GetDeferral())
+   {
+      args.Response = await CreateResponse(eventArgs);
+   }
+}
+```
 
 ## Block the UI thread  
 
