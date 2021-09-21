@@ -390,7 +390,7 @@
         - name: Publish a PWA to the Microsoft Store
           href: progressive-web-apps-chromium/microsoft-store.md
 # equivalent card: WebView2 ===================================================
-    - name: WebView2 control
+    - name: WebView2
       items:
         - name: WebView2 overview
           href: webview2/index.md

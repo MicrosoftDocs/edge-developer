@@ -203,7 +203,7 @@ conceptualContent:
               itemType: concept
               text: Web App Manifests
         # Card
-        - title: WebView2 control
+        - title: WebView2
           links:
             - url: /microsoft-edge/webview2/index
               itemType: overview
