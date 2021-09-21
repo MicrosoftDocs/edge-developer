@@ -293,18 +293,18 @@ If you launch the extension from the Run and Debug workflow, the [Debug Console 
 
 
 <!-- ====================================================================== -->
-## Getting in touch with the Microsoft Edge DevTools Extension team
+## See also
 
-Send your feedback by [filing an issue][GithubMicrosoftVscodeEdgeDevtoolsNewIssue] on the [microsoft/vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools] of the extension.
-
-If you want to help make the Microsoft Edge DevTools extension better, your contributions are welcome.  Find everything you need to get started in the [microsoft/vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools] of the extension.
+*  [Contacting the Microsoft Edge team][Contact]
 
 
-<!--links -->
-[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"
-[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentation | Visual Studio Code"
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [ConsoleUtilitiesAPI]: /microsoft-edge/devtools-guide-chromium/console/utilities "Console Utilities API reference | Microsoft Docs"
 <!-- external links -->
+[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"
+[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentation | Visual Studio Code"
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
 [GithubMicrosoftVscodeEdgeDevtoolsChangelog]: https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md "Changelog file - vscode-edge-devtools | GitHub"
 [GithubMicrosoftVscodeEdgeDevtoolsNewIssue]: https://github.com/Microsoft/vscode-edge-devtools/issues/new "New Issue - microsoft/vscode-edge-devtools | GitHub"

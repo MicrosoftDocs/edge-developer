@@ -854,7 +854,15 @@ This version of the WebView2 SDK requires Microsoft Edge version 76.0.149.0 or h
 Initial developer preview release.  
 
 
-<!-- links -->  
+<!-- ====================================================================== -->
+## See also
+
+*  [Contacting the Microsoft Edge team][Contact] - Share your feedback to help build rich WebView2 experiences, by using the `WebView2Feedback` repo.
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [SwitchToPreviewChannel]: how-to/set-preview-channel.md "Switch to a preview channel to test upcoming APIs and features | Microsoft Edge Developer docs"
 [Webview2ConceptsDistribution]: ./concepts/distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
 [Webview2ConceptsDistributionUnderstandRuntimeInstaller]: ./concepts/distribution.md#understanding-the-webview2-runtime "Understanding the WebView2 runtime - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
@@ -1244,5 +1252,3 @@ Initial developer preview release.
 [Webview2ReferenceWin32ICoreWebView2ExperimentalEnvironmentOptionsViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.1010-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalEnvironmentOptions | Microsoft Docs"
 [Webview2ReferenceWin32ICoreWebView2ExperimentalSettings6ViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings6?view=webview2-1.0.1010-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalSettings6 | Microsoft Docs"
 [Webview2ReferenceWin32ICoreWebView2ExperimentalCompositionController3ViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller3?view=webview2-1.0.1010-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalCompositionController3 | Microsoft Docs"
-
-

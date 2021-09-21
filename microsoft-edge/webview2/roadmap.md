@@ -52,8 +52,16 @@ The .NET SDK has reached GA.
 
 You can access WebView2 controls in your applications using [Windows UI Library 3 (WinUI3)][UwpToolkitsWinui3Index] with the Windows App SDK. This is currently in preview. For more information, navigate to the [Windows App SDK roadmap][WindowsAppSDKRoadmap].
 
- 
-<!-- links -->  
+
+<!-- ====================================================================== -->
+## See also
+
+*  [Contacting the Microsoft Edge team][Contact] - Share your feedback to help build rich WebView2 experiences, by using the `WebView2Feedback` repo.
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [ConceptDistribution]: ./concepts/distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
 <!-- external links -->
 [WindowsAppSDKRoadmap]: https://github.com/microsoft/WindowsAppSDK/blob/main/docs/roadmap.md "Roadmap"

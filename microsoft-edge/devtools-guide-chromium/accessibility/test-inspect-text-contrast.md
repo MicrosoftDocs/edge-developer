@@ -60,11 +60,11 @@ Use the following DevTools features to inspect text-color contrast.
 *  [Verify accessibility of all states of elements][DevtoolsAccessibilityTestInspectStates]
 *  [Use the Inspect tool to detect accessibility issues by hovering over the webpage](test-inspect-tool.md)
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [DevtoolsAccessibilityTestInspectStates]: test-inspect-states.md "Verify accessibility of all states of elements | Microsoft Docs"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

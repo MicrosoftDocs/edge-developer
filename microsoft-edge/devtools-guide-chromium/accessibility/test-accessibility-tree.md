@@ -41,11 +41,11 @@ Any element in the tree that doesn't have a name, or has a role of `generic` (su
 
 *  [View the position of an element in the Accessibility Tree][DevtoolsAccessibilityAccessibilityTabViewTree]
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [DevtoolsAccessibilityAccessibilityTabViewTree]: accessibility-tab.md#view-the-position-of-an-element-in-the-accessibility-tree "View the position of an element in the Accessibility Tree - Test accessibility using the Accessibility tab | Microsoft Docs"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

@@ -87,12 +87,12 @@ You may also use **Command Menu** to access the different simulations.
 ## See also
 
 *  [Verify that the page is usable with blurred vision](test-blurred-vision.md)
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [DevToolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analyze runtime performance | Microsoft Docs"  
 

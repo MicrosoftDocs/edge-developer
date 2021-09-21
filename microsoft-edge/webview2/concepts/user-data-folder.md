@@ -55,3 +55,14 @@ To isolate different parts of your application, or when sharing data between Web
 
 > [!NOTE]
 > Each WebView2 browser process consumes additional memory and disk space.  Therefore, we recommend not running a WebView2 control with too many different user data folders at the same time.  
+
+
+<!-- ====================================================================== -->
+## See also
+
+*  [Contacting the Microsoft Edge team][Contact] - Share your feedback to help build rich WebView2 experiences, by using the `WebView2Feedback` repo.
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"

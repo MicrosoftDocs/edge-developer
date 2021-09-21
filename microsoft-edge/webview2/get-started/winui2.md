@@ -145,24 +145,22 @@ The solution and project is displayed.
 
 1.  In Visual Studio, on the **Debug** menu, select **Stop Debugging**.  The app window closes.
 
-Now you can change the content of the WebView2 control to your own content.
+Now you can change the content of the WebView2 control to add your own content.
 
 
-## Next steps  
+<!-- ====================================================================== -->
+## See also
 
-*   To learn more about building WebView2 applications, navigate to [WebView2 development best practices][WV2BestPractices].  
-*   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain].  
-*   For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].  
-*   For detailed information about the WebView2 API, navigate to [WebView2 spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].  
+*  [WebView2 development best practices][WV2BestPractices]
+*  [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain] - a comprehensive example of WebView2 capabilities.
+*  [WebView2 Resources][Webview2IndexNextSteps]
+*  [WebView2 spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] - detailed information about the WebView2 API.
+*  [Contacting the Microsoft Edge team][Contact] - Share your feedback to help build rich WebView2 experiences, by using the `WebView2Feedback` repo.  To send WinUI-specific feature requests or bugs, navigate to [Issues - microsoft/microsoft-ui-xaml][GithubMicrosoftMicrosoftUiXamlIssues] and then select **New issue**.
 
-    
-## Getting in touch with the Microsoft Edge WebView team  
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
-
-To send your WinUI-specific feature requests or bugs, navigate to [Issues - microsoft/microsoft-ui-xaml][GithubMicrosoftMicrosoftUiXamlIssues] and then select **New issue**.  
-
-<!-- links -->  
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
 <!-- external links -->

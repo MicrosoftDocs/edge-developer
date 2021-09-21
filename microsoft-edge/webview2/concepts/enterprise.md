@@ -26,12 +26,16 @@ IT admins can use group policy objects \(GPO\) to configure policy settings for 
 *   [WebView2-specific policies][WebView2Policies] are available to for you<!--dev, or admin?--> to manage WebView2 directly.  However, we recommend that WebView2 app developers implement their own group policies to manage the use of WebView2, because it's easier for administrators to manage the app instead of managing WebView2 directly.  
 
 
+<!-- ====================================================================== -->
 ## See also
 
 *  [Distribute a WebView2 app and the WebView2 Runtime][Webview2ConceptsDistribution] - About the Evergreen, self-updating WebView2 Runtime.
+*  [Contacting the Microsoft Edge team][Contact] - Share your feedback to help build rich WebView2 experiences, by using the `WebView2Feedback` repo.
 
 
+<!-- ====================================================================== -->
 <!-- links -->
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [Webview2ConceptsDistribution]: ./distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
 [WebView2Landing]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"  
 <!-- external links -->

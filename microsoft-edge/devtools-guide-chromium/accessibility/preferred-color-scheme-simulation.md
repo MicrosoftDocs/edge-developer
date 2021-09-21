@@ -60,12 +60,12 @@ This article is about changing the appearance of the webpage under development. 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contacting the Microsoft Edge team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[Contact]: ../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
 [DevtoolsCustomizeTheme]: ../customize/theme.md "Apply color themes to DevTools | Microsoft Docs"
 [DevtoolsCssIndex]: ../css/index.md "Get started with viewing and changing CSS | Microsoft Docs"  

@@ -327,23 +327,22 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
        addressBar
     :::image-end:::
     
-Congratulations, you built your first WebView2 app.  
+Congratulations, you built your first WebView2 app!
 
-## Next steps  
 
-To continue learning more about WebView2, navigate to the following resources.  
+<!-- ====================================================================== -->
+## See also
 
-*   To learn more about building WebView2 applications, navigate to [WebView2 development best practices][WV2BestPractices].  
-*   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain] on GitHub.  
-*   For more detailed information about WebView2 API, navigate to [API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2).  
-*   For more information about  WebView2, navigate to [WebView2 Resources](../index.md#next-steps).  
-    
-## Getting in touch with the Microsoft Edge WebView team  
+*  [WebView2 development best practices][WV2BestPractices]
+*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain] - a comprehensive example of WebView2 capabilities.
+*  [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
+*  [WebView2 Resources](../index.md#next-steps)
+*  [Contacting the Microsoft Edge team][Contact] - Share your feedback to help build rich WebView2 experiences, by using the `WebView2Feedback` repo.
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
-<!-- links -->  
- 
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"  
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"  
 
