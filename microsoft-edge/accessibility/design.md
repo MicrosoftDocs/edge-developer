@@ -23,20 +23,20 @@ Creating an inclusive design makes technology usable by all people no matter the
 
 Many common accessibility issues on the web can be solved through good coding practice.  The [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20) documentation provides techniques and best practices to help you design more accessible dynamic web applications.  For more information, navigate to [Building accessible websites](./build/index.md).
 
-## Resources  
+## Resources
 
-#### [Designing for Inclusion](https://w3.org/WAI/users/Overview.html)  
+#### [Designing for Inclusion](https://w3.org/WAI/users/Overview.html)
 
 Designing for Inclusion by the W3C Web Accessibility Initiative provides resources to help you better understand users with disabilities and how to design your website with them in mind.
 
-#### [Designing inclusive software](https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software)  
+#### [Designing inclusive software](https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software)
 
 Designing inclusive software discusses Microsoft design principles and practices for the Universal Windows Platform (UWP).
 
-#### [How People with Disabilities Use the Web](https://www.w3.org/WAI/intro/people-use-web/Overview.html)  
+#### [How People with Disabilities Use the Web](https://www.w3.org/WAI/intro/people-use-web/Overview.html)
 
 This resource by the W3C introduces how people with disabilities, including people with age-related impairments, use the Web.
 
-#### [Inclusive Design Toolkit](https://www.microsoft.com/design/practice#howwemake-section)  
+#### [Inclusive Design Toolkit](https://www.microsoft.com/design/practice#howwemake-section)
 
 Microsoft developed the Inclusive Design Toolkit to show how human diversity can create better design constraints and how to connect seemingly niche solutions to broader markets.

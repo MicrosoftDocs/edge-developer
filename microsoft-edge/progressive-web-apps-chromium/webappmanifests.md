@@ -11,11 +11,11 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 ---
 # Use the Web App Manifest to integrate your Progressive Web App into the Operating System
 
-A Web App Manifest of a website governs how your Progressive Web App \(PWA\) looks and behaves when installed on a device.  At the most basic level, the Manifest provides details on the name of your app, icons to use to represent your app in system menus, and the theme colors the operating system \(OS\) uses in the title bar.  The Manifest also enables you to unlock powerful features that allow your app to behave like other native apps on the system.  
+A Web App Manifest of a website governs how your Progressive Web App \(PWA\) looks and behaves when installed on a device.  At the most basic level, the Manifest provides details on the name of your app, icons to use to represent your app in system menus, and the theme colors the operating system \(OS\) uses in the title bar.  The Manifest also enables you to unlock powerful features that allow your app to behave like other native apps on the system.
 
-## Use shortcuts to provide quick access to features  
+## Use shortcuts to provide quick access to features
 
-Most operating systems provide quick access to key app features using shortcuts on the context menu connected to the icon of the app.  To use shortcuts in your PWA, include the `shortcuts` property in your Web App Manifest.  The following code snippet displays how to define a shortcut in your web app manifest.  
+Most operating systems provide quick access to key app features using shortcuts on the context menu connected to the icon of the app.  To use shortcuts in your PWA, include the `shortcuts` property in your Web App Manifest.  The following code snippet displays how to define a shortcut in your web app manifest.
 
 ```json
 "shortcuts": [
@@ -37,9 +37,9 @@ Most operating systems provide quick access to key app features using shortcuts 
         "url": "/subscriptions?sort=desc"
     }
 ]
-```  
+```
 
-When added to a complete Web App Manifest, adding the previous code snippet enables two shortcuts on the context menu on the icon of the app.  The first is named `Play Later` and has a custom icon.  The second is named `Subscriptions` and does not have an icon because the `icons` property is optional.  The `description` property is also optional and may be used to provide additional information for accessibility purposes.  
+When added to a complete Web App Manifest, adding the previous code snippet enables two shortcuts on the context menu on the icon of the app.  The first is named `Play Later` and has a custom icon.  The second is named `Subscriptions` and does not have an icon because the `icons` property is optional.  The `description` property is also optional and may be used to provide additional information for accessibility purposes.
 
 ## Identify your app as a Share Target
 
@@ -58,19 +58,19 @@ Many operating systems enable users to quickly share links and files with native
 
 When added to the Web App Manifest, this establishes `"/share.html"` as the action page for a share. Additionally, it defines three parameters that would be passed to that action page:`"title"`, `"text"`, and `"url"`.  These parameters will be stored in the `"name"`, `"description"`, and `"link"` properties of the [ShareData][GitHubWicgWebShareDomSharedata] object.  By default, the action page receives the parameters as part of a GET request, but you can specify the request `method` and encoding \(as `enctype`\), just like you would on a web form.
 
-## See also  
+## See also
 
-To learn more about Web App Manifests, navigate to the following list of related topics.  
+To learn more about Web App Manifests, navigate to the following list of related topics.
 
-*   [Web App Manifests][MDNWebAppManifests]  
+*   [Web App Manifests][MDNWebAppManifests]
 *   [Web Share Target][GitHubWicgWebShareTarget]
 *   [Web Share][GithubW3cWebShare]
-    
-<!-- links -->  
 
-[MDNWebAppManifests]: https://developer.mozilla.org/docs/Web/Manifest "Web app manifests | MDN"  
+<!-- links -->
+
+[MDNWebAppManifests]: https://developer.mozilla.org/docs/Web/Manifest "Web app manifests | MDN"
 
 [GitHubWicgWebShareTarget]: https://wicg.github.io/web-share-target "Web Share Target API | WICG"
-[GitHubWicgWebShareDomSharedata]: https://wicg.github.io/web-share#dom-sharedata "ShareData dictionary - Web Share API | WICG"  
+[GitHubWicgWebShareDomSharedata]: https://wicg.github.io/web-share#dom-sharedata "ShareData dictionary - Web Share API | WICG"
 
 [GithubW3cWebShare]: https://w3c.github.io/web-share/ "Web Share API | WICG"

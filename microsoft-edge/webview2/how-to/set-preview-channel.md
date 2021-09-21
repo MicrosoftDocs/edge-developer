@@ -18,7 +18,7 @@ When you test a prerelease SDK package, you need to direct your application to u
 The WebView2 Runtime doesn't have the experimental WebView2 APIs.  For your WebView2 code to run when using experimental APIs in a prerelease SDK, your client (on a development machine) needs to have a Microsoft Edge preview channel.  The Canary preview channel is recommended, because it is ahead of the other channels and has the latest experimental APIs.
 
 The prerelease SDK works together with a preview channel as follows:
-*  A prerelease version of the WebView2 SDK contains the method signatures for experimental APIs, which allow you to write code using the experimental WebView2 APIs in your app.  
+*  A prerelease version of the WebView2 SDK contains the method signatures for experimental APIs, which allow you to write code using the experimental WebView2 APIs in your app.
 *  The preview channels of Microsoft Edge contain the Microsoft Edge binaries that are needed to run and render your app, including the implementation of the experimental APIs.
 
 For more information about how SDK versions works in conjunction with the WebView2 Runtime or preview channels of Microsoft Edge, navigate to [Understand WebView2 SDK versions][WebView2ConceptsVersioning].
@@ -60,7 +60,7 @@ If you set the release channel preference by using a group policy, registry over
 <!-- 1. Code ===============================================================-->
 ## Using code
 
-If you want to make your application use a Microsoft Edge preview channel by calling a function, complete the following steps.  
+If you want to make your application use a Microsoft Edge preview channel by calling a function, complete the following steps.
 
 This approach is only useful for local testing and should not be shipped.  That's because this approach requires finding the Edge browser install path, which could change in future updates.
 
@@ -68,7 +68,7 @@ This approach is only useful for local testing and should not be shipped.  That'
 
 We'll use the [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample) to demonstrate this procedure.
 
-1.  On your development machine, find the path containing the Microsoft Edge preview channel.  For example: 
+1.  On your development machine, find the path containing the Microsoft Edge preview channel.  For example:
 
     `C:\\Users\\myname\\AppData\\Local\\Microsoft\\Edge SxS\\Application\\93.0.929.0`
 
@@ -146,13 +146,13 @@ If you want to make your application use a Microsoft Edge preview channel by usi
 
     :::image type="complex" source="./media/local-group-policy-editor.png" alt-text="Local Group Policy Editor dialog box" lightbox="./media/local-group-policy-editor.png":::
        **Local Group Policy Editor** dialog box
-    :::image-end:::  
+    :::image-end:::
 
 1.  Select **Browser Executable Folder**.  The following screenshots apply to setting the **Browser Executable Folder**.  Alternatively, select **Release Channel Preference**, which uses similar dialog boxes.
 
     :::image type="complex" source="./media/browser-executable-folder.png" alt-text="Setting the Browser Executable Folder" lightbox="./media/browser-executable-folder.png":::
        Setting the **Browser Executable Folder**
-    :::image-end:::  
+    :::image-end:::
 
 1.  Select the **Show** button.
 
@@ -160,7 +160,7 @@ If you want to make your application use a Microsoft Edge preview channel by usi
 
     :::image type="complex" source="./media/show-contents.png" alt-text="The Show Contents dialog box" lightbox="./media/show-contents.png":::
        The **Show Contents** dialog box
-    :::image-end:::  
+    :::image-end:::
 
 1.  Select **OK** to close the dialog boxes.
 
@@ -224,25 +224,25 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 
     :::image type="complex" source="./media/search-bar-edit-sys-env-vars.png" alt-text="Using the Windows search bar to find where to edit environment variables" lightbox="./media/search-bar-edit-sys-env-vars.png":::
        Using the Windows search bar to find where to edit environment variables
-    :::image-end:::  
+    :::image-end:::
 
 1.  In the **System Properties** dialog box, select the **Advanced** tab, and then select the **Environment Variables** button.
 
     :::image type="complex" source="./media/system-properties-env-vars.png" alt-text="The Environment Variables button in the System Properties dialog box" lightbox="./media/system-properties-env-vars.png":::
        The **Environment Variables** button in the **System Properties** dialog box
-    :::image-end:::  
+    :::image-end:::
 
 1.  In the **User variables** section of the **Environment Variables** dialog box, select **New**.
 
 1.  In the **New User Variable** dialog box, set the **Variable name** to `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`, and set the **Variable value** to the path to your preferred browser channel.
 
-    Alternatively, set the **Variable name** to `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE`, and set the **Variable value** to `1`.  
+    Alternatively, set the **Variable name** to `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE`, and set the **Variable value** to `1`.
 
 1.  Select **OK** to close the dialog boxes.
 
     :::image type="complex" source="./media/env-vars-new-user-variable.png" alt-text="Adding a new environment variable, as a user variable" lightbox="./media/env-vars-new-user-variable.png":::
        Adding a new environment variable, as a user variable
-    :::image-end:::  
+    :::image-end:::
 
 > [!NOTE]
 > This approach sets the environment variable for all WebView2 apps, not just the app you're testing.  To set this environment variable for only the WebView2 app which you are testing, if you're running your app from the command prompt, set the environment variable `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE=1`.  That sets the environment variable just for the current `cmd.exe` command-prompt process and for any new child processes from that `cmd.exe` instance.  Then the environment variable only applies to the WebView2 app that you're testing.
