@@ -26,6 +26,7 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to [Switch to a preview channel to test upcoming APIs and features][SwitchToPreviewChannel].
 
+
 ## 1.0.1018-prerelease
 
 Release Date: September 20, 2021
@@ -37,13 +38,13 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 ### General
 
 #### Experimental Features
-*   Added [Media API][Webview2ReferenceWin32Icorewebview2experimental9ViewWebview2101018Prerelease] that enables developers to mute/unmute media within the webview.
+*   Added [Media API][Webview2ReferenceWin32Icorewebview2experimental9ViewWebview2101018Prerelease] that enables developers to mute/unmute media within the WebView.
 *   Added support for [multiple user profiles][Webview2ReferenceWin32Icorewebview2experimentalenvironment8ViewWebview2101018Prerelease] with WebView2.
 
 #### Bug fixes
-*   Fixed bug where webview2 stops rendering when app is spanning monitors and monitor scale changes.
-*   Fixed bug where closing download UI crashes WebView2 when having multiple download windows open. \([\#1723][GithubMicrosoftedgeWebviewfeedbackIssue1723]\)
-*   Fixed build/initialization error when PlatformTarget isn't set in user's .NET project. \([\#730][GithubMicrosoftedgeWebviewfeedbackIssue730] and [\#1548][GithubMicrosoftedgeWebviewfeedbackIssue1548]\)
+*   Fixed a bug where WebView2 stops rendering when the app is spanning monitors and the monitor scale changes.
+*   Fixed a bug where closing the download UI crashes WebView2 when multiple download windows are open. \([\#1723][GithubMicrosoftedgeWebviewfeedbackIssue1723]\)
+*   Fixed a build/initialization error when PlatformTarget isn't set in the user's .NET project. \([\#730][GithubMicrosoftedgeWebviewfeedbackIssue730] and [\#1548][GithubMicrosoftedgeWebviewfeedbackIssue1548]\)
 
 ## 1.0.1010-prerelease
 
@@ -1141,7 +1142,7 @@ Initial developer preview release.
 [GithubMicrosoftedgeWebviewfeedbackIssue1077]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1077 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1077"
 [GithubMicrosoftedgeWebviewfeedbackIssue1723]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1723 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1723"
 [GithubMicrosoftedgeWebviewfeedbackIssue730]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/730 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 730"
-[GithubMicrosoftedgeWebviewfeedbackIssue1528]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1528 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1528"
+[GithubMicrosoftedgeWebviewfeedbackIssue1548]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1548 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1548"
 [WebView2UDFAnnouncement]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1410 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1410"
 
 [MicrosoftDevblogDotnetAnnouncingGeneralAvailabilityForMicrosoftEdgeWebview2ForNetFixedDistributionMethod]: https://devblogs.microsoft.com/dotnet/announcing-general-availability-for-microsoft-edge-webview2-for-net-and-fixed-distribution-method "Announcing General Availability for Microsoft Edge WebView2 for .NET and Fixed Distribution Method | .NET Blog"
