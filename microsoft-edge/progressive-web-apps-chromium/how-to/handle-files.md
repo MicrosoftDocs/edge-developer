@@ -11,45 +11,41 @@ keywords: progressive web apps, PWA, Edge, JavaScript, files
 ---
 # Handle files in Progressive Web Apps
 
-Progressive Web Apps that can handle files feel more native to users and better integrated in the operating system.  
+Progressive Web Apps that can handle files feel more native to users and better integrated in the operating system.
 
-Websites can already let users upload files by [using the `<input type="file">` or drag and drop][MDNFileUpload], but PWAs go one step further and can register as file handlers on the operating system.  
+Websites can already let users upload files by [using the `<input type="file">` or drag and drop][MDNFileUpload], but PWAs go one step further and can register as file handlers on the operating system.
 
-When a PWA is registered as a file handler for certain file types, the operating system can automatically open it those files are opened by the user, similar to how Microsoft Word handles `.docx` files.  
+When a PWA is registered as a file handler for certain file types, the operating system can automatically launch the app when those files are opened by the user, similar to how Microsoft Word handles `.docx` files.
 
-## Enable the File Handling API  
+## Enable the File Handling API
 
-The File Handling feature is experimental, to enable it:  
+The File Handling feature is experimental, to enable it:
 
-1.  Navigate to `edge://flags` in Microsoft Edge.  
-1.  Select **Search flags** and type "file handling API".  
-1.  Select **Default** > **Enabled** > **Restart**.  
+1.  Navigate to `edge://flags` in Microsoft Edge.
+1.  Select **Search flags** and type "file handling API".
+1.  Select **Default** > **Enabled** > **Restart**.
 
     :::image type="complex" source="../media/enable-file-handling-experiment.png" alt-text="Enable the File Handling API experiment" lightbox="../media/enable-file-handling-experiment.png":::
-       Enable the File Handling API experiment  
-    :::image-end:::  
+       Enable the File Handling API experiment
+    :::image-end:::
 
-## Define which files your app handles  
+## Define which files your app handles
 
-The first thing to do is declare which types of files your app handles. This is done in your app [manifest file][ManifestFileDoc], using the `file_handlers` array member.
+The first thing to do is to declare which types of files your app handles. This is done in your app [manifest file][ManifestFileDoc], using the `file_handlers` array member.
 
-Each entry in the `file_handlers` array needs to have two properties:  
+Each entry in the `file_handlers` array needs to have two properties:
 
-*  `action`: The URL the operating system should request when opening your PWA.
-*  `accept`: An object of accepted file types. Keys are MIME-types (partial types, using the wildcard symbol `*`, are accepted), and values are arrays of accepted file extensions.  
+*  `action`: The URL the operating system should navigate to when launching your PWA.
+*  `accept`: An object of accepted file types. Keys are MIME-types (partial types, using the wildcard symbol `*`, are accepted), and values are arrays of accepted file extensions.
 
-Consider the following example:  
+Consider the following example:
 
 ```json
 {
     "file_handlers": [
         {
-            "action": "/newEmail",
+            "action": "/openFile",
             "accept": {
-                "image/*": [
-                    ".png",
-                    ".jpg"
-                ],
                 "text/*": [
                     ".txt"
                 ]
@@ -57,15 +53,15 @@ Consider the following example:
         }
     ]
 }
-```  
+```
 
-In the above example, one file handler is registered by the app. It will make the operating system present the app as a choice for the user to use when `.png` or `.jpg` image files or `.txt` text files are opened.
+In this example, the app registers a single file handler for that accepts text files. When a `.txt` file is opened by the user by, for example, double-clicking its icon on the desktop, then the operating system launches the app using the `/openFile` URL.
 
-## Detect if the File Handling API is available  
+## Detect if the File Handling API is available
 
-Before handling the files, your app needs to check if the File Handling API is available on the device and browser running your app.
+Before handling the files, your app needs to check if the File Handling API is available on the device and browser.
 
-The check if the API is available use the following code:  
+The check if the API is available test if the `launchQueue` object exists:
 
 ```javascript
 if ('launchQueue' in window) {
@@ -73,24 +69,19 @@ if ('launchQueue' in window) {
 } else {
     console.error('File Handling API is not supported!');
 }
-```  
+```
 
-## Handle files in your app  
+## Handle files on launch
 
-When your app starts because of a file being handled, that's your chance to use the file (or files) content.
+When your app is launched by the OS after a file was opened, you can use the `launchQueue` object to access the file content.
 
-Use the following JavaScript code to process the file content, if any:  
+Use the following JavaScript code to process the text content:
 
 ```javascript
 if ('launchQueue' in window) {
     console.log('File handling API is supported!');
 
-    launchQueue.setConsumer((launchParams) => {
-        if (!launchParams.files.length) {
-            // No files to handle.
-            return;
-        }
-        // Handle the first file only.
+    launchQueue.setConsumer(launchParams => {
         handleFiles(launchParams.files);
     });
 } else {
@@ -106,9 +97,35 @@ async function handleFiles(files) {
         console.log(`${file.name} handled, content: ${text}`);
     }
 }
-```  
+```
 
-The `launchQueue` object queues all the launched files until a consumer is set with `setConsumer`. To learn more about the `launchQueue` and `launchParams` objects, navigate to the [File Handling explainer][WICGFileHandlingExplainer].  
+The `launchQueue` object queues all the launched files until a consumer is set with `setConsumer`. To learn more about the `launchQueue` and `launchParams` objects, navigate to the [File Handling explainer][WICGFileHandlingExplainer].
+
+## Demo
+
+My Tracks is a PWA demo app that uses the File Handling feature to handle `.gpx` files. To try the feature with this demo app:
+
+*  [Enable the feature](#enable-the-file-handling-api) in Microsoft Edge.
+*  Navigate to [My Tracks][MyTracksDemoApp] and install the app.
+*  Download a GPX file on your computer. You can use this [test GPX file][TestGPXFile].
+*  Open the downloaded GPX file.
+
+Notice that the app launches automatically and that Microsoft Edge requests your permission to handle this file.
+
+:::image type="complex" source="../media/my-tracks-allow-file-handling.png" alt-text="The permission request dialog" lightbox="../media/my-tracks-allow-file-handling.png":::
+    The permission request dialog
+:::image-end:::
+
+If you allow the app to handle the file, a new entry appears in the app's sidebar, and you can click the checkbox next to it to visualize the corresponding GPS track.
+
+:::image type="complex" source="../media/my-tracks-new-file.png" alt-text="The new GPS track handled by the My Tracks app" lightbox="../media/my-tracks-new-file.png":::
+    The new GPS track handled by the My Tracks app
+:::image-end:::
+
+The source code for this app can be accessed on the [My Tracks GitHub repository][MyTracksDemoAppGitHub].
+
+* The [manifest.json][MyTracksDemoAppManifestJsonFile] source file uses the `file_handlers` array to request handling `.gpx` files.
+* The [file.js][MyTracksDemoAppFileJsFile] source file uses the `launchQueue` object to handle incoming files.
 
 
 <!-- links -->  
@@ -116,3 +133,8 @@ The `launchQueue` object queues all the launched files until a consumer is set w
 [MDNFileUpload]: https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications
 [ManifestFileDoc]: ./webappmanifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"  
 [WICGFileHandlingExplainer]: https://github.com/WICG/file-handling/blob/main/explainer.md#launch "WICG File Handling explainer | GitHub"
+[MyTracksDemoApp]: https://captainbrosset.github.io/mytracks/ "My Tracks"
+[MyTracksDemoAppGitHub]: https://github.com/captainbrosset/mytracks "Sample web app to demonstrate PWA desktop features | GitHub"
+[TestGPXFile]: https://www.visugpx.com/download.php?id=okB1eM4fzj
+[MyTracksDemoAppManifestJsonFile]: https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json
+[MyTracksDemoAppFileJsFile]: https://github.com/captainbrosset/mytracks/blob/main/src/file.js
