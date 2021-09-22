@@ -3,7 +3,7 @@ description: This article describes how to detect Microsoft Edge data with user-
 title: Detecting Microsoft Edge from your website
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/30/2021
+ms.date: 09/22/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, user-agent string, ua string, ua overrides, user-agent client hints, user agent client hints, ua client hints, ua ch, feature detection, browser identification, browser detection, header, https header, verify chromium, detect microsoft edge, detecting microsoft edge
@@ -106,6 +106,11 @@ To receive the following response.
 ```
 
 For more information, navigate to [getHighEntropyValues()][GithubWicgUaClientHintsGethighentropyvalues].
+
+### platformVersion Hint
+The Operating System version token in the `User-Agent` header has not been updated for Windows 11; it will still report `Windows NT 10.0`. 
+
+To distinguish between Windows 10 and Windows 11, request the `platformVersion` client hint in Microsoft Edge version 95 or later. Values between and including `1.0.0` and `12.0.0` represent releases of Windows 10, while values of `14.0.0` and later represent releases of Windows 11.
 
 ### User-Agent Client Hints suggested use
 
