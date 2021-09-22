@@ -49,5 +49,5 @@ To simulate the operating system's reduced motion setting, without having to cha
 
     
 <!-- links -->  
-[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsIndex]: ../index.md "Microsoft Edge Developer Tools | Microsoft Docs"  
 [MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "prefers-reduced-motion | MDN"  

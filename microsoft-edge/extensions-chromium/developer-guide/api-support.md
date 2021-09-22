@@ -10,7 +10,7 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, ex
 ---
 # Supported APIs for Microsoft Edge extensions
 
-The following table provides a list of APIs that you can use when building extensions for the Microsoft Edge \(Chromium\) browser.
+The following table provides a list of APIs that you can use when building extensions for the Microsoft Edge browser.
 
 | API                                   | Description                                            
 |---------------------------------------|----------------------------------------------------------|

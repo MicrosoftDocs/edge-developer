@@ -1,5 +1,5 @@
 ---
-description: Microsoft Edge (Chromium) and Visual Studio
+description: Microsoft Edge and Visual Studio
 title: Visual Studio
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -127,7 +127,7 @@ Previously, you launched Microsoft Edge from Visual Studio.  Alternatively, you 
 
 1.  Choose the tab you want to debug from the list, and then select **Attach**.  
 
-1.  In the **Select Code Type** dialog, select **JavaScript (Microsoft Edge - Chromium)** and select **OK**.  
+1.  In the **Select Code Type** dialog, select **JavaScript (Microsoft Edge)** and select **OK**.  
 
 The Visual Studio debugger is now attached to Microsoft Edge.  You can pause the running of JavaScript, set breakpoints, and view `console.log()` statements directly in the Debug Output window in Visual Studio.  
 

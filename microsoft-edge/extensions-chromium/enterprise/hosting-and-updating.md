@@ -1,12 +1,12 @@
 ---
-description: Host and publish extensions in the enterprise for Microsoft Edge (Chromium).
+description: Host and publish extensions in the enterprise for Microsoft Edge.
 title: Publish and update extensions in the Microsoft Edge Add-ons website
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 02/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
+keywords: microsoft edge, extensions development, browser extensions, addons, partner center, developer
 ---
 # Publish and update extensions in the Microsoft Edge Add-ons website  
 

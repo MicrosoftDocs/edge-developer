@@ -241,7 +241,7 @@ To run a new audit, use `Shift`+`Tab` to exit the report and select the **Genera
 <!-- links -->  
 [DevtoolsAccessibilityReference]: reference.md "Accessibility-testing features in DevTools | Microsoft Docs"  
 [DevtoolsAccessibilityTab]: accessibility-tab.md "Test accessibility using the Accessibility tab | Microsoft Docs"  
-[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge Developer Tools | Microsoft Docs"  
 [DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsConsoleIndex]: ../console/index.md "Console Overview | Microsoft Docs"  
 [DevtoolsCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  

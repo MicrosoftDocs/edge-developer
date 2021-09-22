@@ -152,7 +152,7 @@ Navigate to [Filter by resource type][DevtoolsNetworkFilterByResourceType].
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge  Developer tools | Microsoft Docs"  
 [DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "Filter by resource type - Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "Inspect the details of the resource - Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity "Log network activity - Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  

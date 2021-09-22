@@ -1,5 +1,5 @@
 ---
-description: Progressive Web Apps (Chromium) run natively on Windows 10.  Here is everything you need to know as a web developer.
+description: Progressive Web Apps run natively on Windows 10.  Here is everything you need to know as a web developer.
 title: Progressive Web Apps on Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -115,15 +115,15 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 
 Build \(or convert\) your existing website to a PWA to enhance engagement with your users. Enhancements include push notifications, app-like integration, and offline support. Continue to build your audience on the open web for users to discover your PWA through search and link-sharing. Best of all, your app is updated using your web server code.  
 
-## PWAs on Microsoft Edge (Chromium)  
+## PWAs on Microsoft Edge  
 
-When you build a Progressive Web App targeting web standard APIs, your app may be deployed across platforms and devices and take advantage of the device-specific capabilities as available. PWAs in Microsoft Edge \(Chromium\) add the following advantages to your website.  
+When you build a Progressive Web App targeting web standard APIs, your app may be deployed across platforms and devices and take advantage of the device-specific capabilities as available. PWAs in Microsoft Edge add the following advantages to your website.  
 
 *   Your app is built on a standards-based web platform.  
 *   Allows your users to install your app directly from the browser.  
 *   Allows your users to install your app without a Store-based deployment or registration.  
     
-Desktop PWAs are supported on any of the platforms Microsoft Edge \(Chromium\) is [available](https://www.microsoft.com/edge). The following benefits are included.
+Desktop PWAs are supported on any of the platforms Microsoft Edge is [available](https://www.microsoft.com/edge). The following benefits are included.
 
 *   Apps may be installed directly from within the browser using the **Install** icon in the navigation bar.  
     

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, web development, html, css, javascript, developer, extensions
+keywords: microsoft edge, web development, html, css, javascript, developer, extensions
 ---
 # Create an extension tutorial - Part 1  
 
 ## Overview  
 
-The goal for this tutorial is to build a Microsoft Edge (Chromium) extension, starting with an empty directory.  You are building an extension that pops up the NASA picture of the day.  In this tutorial, you'll learn how to create an extension by:
+The goal for this tutorial is to build a Microsoft Edge extension, starting with an empty directory.  You are building an extension that pops up the NASA picture of the day.  In this tutorial, you'll learn how to create an extension by:
 
 *   Creating a `manifest.json` file.  
 *   Adding icons.  
@@ -33,7 +33,7 @@ The following code snippet outlines the basic information needed in your `manife
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 2,
-    "description": "A Chromium extension to display the NASA picture of the day."
+    "description": "An extension to display the NASA picture of the day."
 }
 ```  
 
@@ -68,7 +68,7 @@ Next, add the icons to the `manifest.json` file. Update your `manifest.json` fil
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 2,
-    "description": "A chromium extension to show the NASA picture of the day.",
+    "description": "An extension to display the NASA picture of the day.",
     "icons": {
         "16": "icons/nasapod16x16.png",
         "32": "icons/nasapod32x32.png",
@@ -121,7 +121,7 @@ Finally, ensure you register the pop-up in `manifest.json` under `browser_action
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 2,
-    "description": "A chromium extension to display the NASA picture of the day.",
+    "description": "An extension to display the NASA picture of the day.",
     "icons": {
         "16": "icons/nasapod16x16.png",
         "32": "icons/nasapod32x32.png",

@@ -1,12 +1,12 @@
 ---
-description: The architecture of Microsoft Edge (Chromium) extensions, and core concepts to build extensions.
+description: The architecture of Microsoft Edge extensions, and core concepts to build extensions.
 title: Extension concepts and architecture
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, web development, html, css, javascript, developer, extensions
+keywords: microsoft edge, web development, html, css, javascript, developer, extensions
 ---
 # Extension concepts and architecture
 

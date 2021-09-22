@@ -89,7 +89,7 @@ You may also use **Command Menu** to access the different simulations.
 
 
 <!-- links -->  
-[DevToolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevToolsIndex]: ../index.md "Microsoft Edge Developer Tools | Microsoft Docs"  
 [DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analyze runtime performance | Microsoft Docs"  
 
 [ColorblindawarenessMain]: https://www.colourblindawareness.org "The Colour Blind Awareness organisation"  

@@ -180,7 +180,7 @@ If you want to debug or test the Media Queries you defined in your CSS, use the 
 
 [DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Change DevTools Placement (Undock, Dock To Bottom, Dock To Left)"  
 
-[GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "CSS Examples - Microsoft Edge (Chromium) DevTools | Glitch"  
+[GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "CSS Examples - Microsoft Edge DevTools | Glitch"  
 
 [MDNUsingMediaGueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Using media queries | MDN"  
 

@@ -1,5 +1,5 @@
 ---  
-description: Get to know the Microsoft Edge (Chromium) Developer Tools  
+description: Get to know the Microsoft Edge Developer Tools  
 title: Microsoft Edge Developer Tools overview  
 author: MSEdgeTeam  
 ms.author: msedgedevrel  
@@ -7,11 +7,11 @@ ms.date: 08/06/2021
 ms.topic: conceptual  
 ms.prod: microsoft-edge  
 ms.technology: devtools  
-keywords: microsoft edge, web development, f12 tools, devtools  
+keywords: microsoft edge, web development, f12 tools, devtools, microsoft edge developer tools  
 ---  
 # Microsoft Edge Developer Tools overview  
 
-When you install Microsoft Edge (Chromium), you get a browser. Also, you get a powerful way to inspect, debug, and even create web projects.  The Developer Tools shipped with the browser are based on the tools in the Chromium open-source project, so you may already be familiar with the tools.  To keep descriptions shorter in this article, the `Microsoft Edge Developer Tools` are now referred to as `DevTools`.  
+When you install Microsoft Edge, you get a browser. Also, you get a powerful way to inspect, debug, and even create web projects.  The Developer Tools shipped with the browser are based on open-source project tools, so you may already be familiar with them.  To keep descriptions shorter in this article, the `Microsoft Edge Developer Tools` are now referred to as `DevTools`.  
 
 Use DevTools to review and learn more about the following development tasks.  
 
@@ -199,7 +199,7 @@ If you want to preview the [latest features coming to the DevTools][DevtoolsGuid
 ## See also  
 
 *   [DevTools for beginners: Get Started with HTML and the DOM][DevtoolsGuideBeginnersHtml]  
-*   [Microsoft Edge (Chromium) DevTools Protocol][DevtoolsProtocolIndex]  
+*   [Microsoft Edge DevTools Protocol][DevtoolsProtocolIndex]  
     
 <!-- links -->  
 
@@ -224,7 +224,7 @@ If you want to preview the [latest features coming to the DevTools][DevtoolsGuid
 [DevtoolsGuideStorageSessionstorage]: ./storage/sessionstorage.md "View and edit session storage with Microsoft Edge DevTools | Microsoft Docs"  
 [DevtoolsGuideWhatsNew202102Devtools]: ./whats-new/2021/02/devtools.md "What's New In DevTools (Microsoft Edge 90) | Microsoft Docs"  
 [DevtoolsGuideWorkspacesIndex]: ./workspaces/index.md "Edit files with Workspaces | Microsoft Docs"  
-[DevtoolsProtocolIndex]: ../devtools-protocol-chromium/index.md "Microsoft Edge (Chromium) DevTools Protocol overview | Microsoft Docs"  
+[DevtoolsProtocolIndex]: ../devtools-protocol-chromium/index.md "Microsoft Edge DevTools Protocol overview | Microsoft Docs"  
 
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge Add-ons"  
 

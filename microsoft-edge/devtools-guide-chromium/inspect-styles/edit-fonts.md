@@ -105,6 +105,6 @@ The CSS Properties editor also includes preset keywords.  To use the preset keyw
 
 <!-- links -->  
 
-[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsIndex]: ../index.md "Microsoft Edge Developer Tools | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndex]: ../experimental-features/index.md "Experimental features | Microsoft Docs"  
 [DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../experimental-features/index.md#turning-on-experimental-features "Turning on experimental features - Experimental features | Microsoft Docs"  

@@ -116,7 +116,7 @@ Now add code to remove the contextual menu functionality from the WebView2 contr
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->  
-[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge Developer Tools | Microsoft Docs"  
 
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"  
 [Webview2MainGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  

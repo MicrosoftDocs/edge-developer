@@ -210,7 +210,7 @@ Workplace collaboration and communication tool Microsoft Teams is also built wit
 
 ### Overlay Window Controls on a Frameless Window  
 
-To maximize the addressable area for web content, the browser creates a frameless window.  A frameless window removes all browser UI, except for the window controls provided as an overlay.  The window controls overlay allows users to still minimize, maximize, restore, and close the app.  It also provides access to relevant browser controls using the web app menu.  For Chromium-based browsers, the overlay includes the following controls.  
+To maximize the addressable area for web content, the browser creates a frameless window.  A frameless window removes all browser UI, except for the window controls provided as an overlay.  The window controls overlay allows users to still minimize, maximize, restore, and close the app.  It also provides access to relevant browser controls using the web app menu.  For Microsoft Edge, the overlay includes the following controls.  
 
 *   A draggable region the same width and height of each of the window control buttons  
 *   The **Settings and more** \(...\) button  
@@ -478,7 +478,7 @@ body {
 }
 ```  
 
-Chromium-based browsers are testing and shaping this feature.  For more information including code examples, navigate to [Customize the window controls overlay of your PWA's title bar][WebDevWindowControlsOverlay].  
+Open-source projects are testing and shaping this feature.  For more information including code examples, navigate to [Customize the window controls overlay of your PWA's title bar][WebDevWindowControlsOverlay].  
 
 ## Run On OS Login  
 
@@ -557,7 +557,7 @@ The following properties define each shortcut.
 
 The ability to register as a file type handler is in the experimentation phase.  You may specify the file types that your app handles in a manifest entry.  During installation, the user's host OS registers your app as a file handler for the listed file types.  Ensure the existence of the feature `launchQueue` in your apps startup code and that it handles the file.  
 
-Chromium-based browsers are testing and shaping this feature.  For more information including code examples, navigate to [Let web applications be file handlers][WebDevFileHandling].  
+COpen-source projects are testing and shaping this feature.  For more information including code examples, navigate to [Let web applications be file handlers][WebDevFileHandling].  
 
 To preview file handling in Microsoft Edge for Windows 10, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **File Handling API**.  
     

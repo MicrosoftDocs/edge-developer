@@ -20,15 +20,15 @@ Remote debug live content on a Windows 10 device from your Windows or macOS comp
 
 The host or debuggee machine is the Windows 10 device that you want to debug.  It may be a remote device that is hard for you to physically access or it may not have keyboard and mouse peripherals, making it difficult to interact with the Microsoft Edge DevTools on that device.  To set up the host \(debuggee\) machine, you need to complete the following actions.  
 
-*   Install and configure [Microsoft Edge (Chromium)][MicrosoftEdgeMain]  
+*   Install and configure [Microsoft Edge][MicrosoftEdgeMain]  
 *   Install the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] from the [Microsoft Store][MicrosoftStoreAppsWindows]  
 *   Activate [Developer Mode][WindowsAppsGetStartedEnableYourDeviceForDevelopment] and enable [Device Portal][WindowsUwpDebugTestPerfDevicePortal]  
     
-### Install and configure Microsoft Edge (Chromium)  
+### Install and configure Microsoft Edge
 
-If you have not already, install Microsoft Edge \(Chromium\) from [this page][MicrosoftEdgeMain].  If you are using a pre-installed version of Microsoft Edge on the host \(debuggee\) machine, verify that you have Microsoft Edge \(Chromium\) and not Microsoft Edge \(EdgeHTML\).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.  
+If you have not already, install Microsoft Edge from [this page][MicrosoftEdgeMain].  If you are using a pre-installed version of Microsoft Edge on the host \(debuggee\) machine, verify that you have Microsoft Edge and not Microsoft Edge \(EdgeHTML\).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.  
 
-Now navigate to `edge://flags` in Microsoft Edge \(Chromium\).  In **Search flags**, type in **Enable remote debugging through Windows Device Portal**.  Set that flag to **Enabled**.  Then, choose the **Restart** button to restart Microsoft Edge \(Chromium\).  
+Now navigate to `edge://flags` in Microsoft Edge.  In **Search flags**, type in **Enable remote debugging through Windows Device Portal**.  Set that flag to **Enabled**.  Then, choose the **Restart** button to restart Microsoft Edge.  
 
 :::image type="complex" source="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png" alt-text="Setting the Enable remote debugging through Windows Device Portal flag to Enabled" lightbox="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png":::
    Setting the **Enable remote debugging through Windows Device Portal** flag to **Enabled**  
@@ -74,15 +74,15 @@ You enter the information on the client \(debugger\) device in the [next section
 
 The client or debugger machine is the device you want to debug from.  This device may be your daily development machine or it may just be your PC or MacBook when working from home.  
 
-To set up the client \(debugger\) machine, install Microsoft Edge \(Chromium\) from [this page][MicrosoftEdgeMain] if you have not already.  If you are using a pre-installed version of Microsoft Edge on the host \(debuggee\) machine, verify that you have Microsoft Edge \(Chromium\) and not Microsoft Edge \(EdgeHTML\).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.  
+To set up the client \(debugger\) machine, install Microsoft Edge from [this page][MicrosoftEdgeMain] if you have not already.  If you are using a pre-installed version of Microsoft Edge on the host \(debuggee\) machine, verify that you have Microsoft Edge and not Microsoft Edge \(EdgeHTML\).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.  
 
-Now navigate to `edge://flags` in Microsoft Edge \(Chromium\).  In **Search flags**, type in **Enable remote Windows device debugging in edge://inspect**.  Set that flag to **Enabled**.  Then, choose the **Restart** button to restart Microsoft Edge \(Chromium\).  
+Now navigate to `edge://flags` in Microsoft Edge.  In **Search flags**, type in **Enable remote Windows device debugging in edge://inspect**.  Set that flag to **Enabled**.  Then, choose the **Restart** button to restart Microsoft Edge.  
 
 :::image type="complex" source="../media/remote-debugging-windows-media-edge-flags-on-client.msft.png" alt-text="Setting the Enable remote Windows device debugging through edge://inspect flag to Enabled" lightbox="../media/remote-debugging-windows-media-edge-flags-on-client.msft.png":::
    Setting the **Enable remote Windows device debugging through edge://inspect** flag to **Enabled**  
 :::image-end:::  
 
-Now navigate to the `edge://inspect` page in Microsoft Edge \(Chromium\).  By default, you should be on the **Devices** section.  Under **Connect to a remote Windows device**, enter the IP address and the connection port of the host \(debuggee\) machine in the textbox following this pattern: http://`IP address`:`connection port`.  Now choose **Connect to Device**.  
+Now navigate to the `edge://inspect` page in Microsoft Edge.  By default, you should be on the **Devices** section.  Under **Connect to a remote Windows device**, enter the IP address and the connection port of the host \(debuggee\) machine in the textbox following this pattern: http://`IP address`:`connection port`.  Now choose **Connect to Device**.  
 
 :::image type="complex" source="../media/remote-debugging-windows-media-edge-inspect.msft.png" alt-text="The edge://inspect page on the client" lightbox="../media/remote-debugging-windows-media-edge-inspect.msft.png":::
    The `edge://inspect` page on the client  

@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.date: 09/24/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium, web development, html, css, javascript, developer, extensions
+keywords: microsoft edge, web development, html, css, javascript, developer, extensions
 ---
 
 # Sideload an extension
 
-During development, you may use the Microsoft Edge \(Chromium\) browser to run and debug your extension safely. By sideloading your extension locally in your browser, you can run and test your extension. This article explains how to sideload extensions into Microsoft Edge.
+During development, you may use the Microsoft Edge browser to run and debug your extension safely. By sideloading your extension locally in your browser, you can run and test your extension. This article explains how to sideload extensions into Microsoft Edge.
 
 To sideload your extension, follow these steps.
 

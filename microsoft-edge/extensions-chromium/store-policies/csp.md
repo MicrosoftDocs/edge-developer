@@ -1,5 +1,5 @@
 ---
-description: Content Security Policy for Edge (Chromium) Extensions.
+description: Content Security Policy for Edge Extensions.
 title: Content Security Policy (CSP)
 author: MSEdgeTeam
 ms.author: msedgedevrel

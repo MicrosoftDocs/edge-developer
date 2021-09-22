@@ -111,7 +111,7 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge  Developer tools | Microsoft Docs"  
 [DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Log network activity | Microsoft Docs"  
 
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"  

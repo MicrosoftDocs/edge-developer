@@ -1,6 +1,6 @@
 ---
-description: This page provides documentation on the Microsoft Edge (Chromium) tracking prevention feature
-title: Tracking Prevention in Microsoft Edge (Chromium)
+description: This page provides documentation on the Microsoft Edge tracking prevention feature
+title: Tracking Prevention in Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 01/07/2021
@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, tracking prevention, trackers, cookies, storage, ad blocking, tracker blocking, tracking protection
 ---
-# Tracking Prevention in Microsoft Edge (Chromium)  
+# Tracking Prevention in Microsoft Edge
 
 The tracking prevention feature in Microsoft Edge protects users from online tracking by restricting the ability of trackers to access browser-based storage as well as the network.  It is built to uphold the Microsoft Edge [browser privacy promise][MicrosoftEdgeBrowserPrivacyPromise] while also ensuring that there is no impact by default to website compatibility or the economic viability of the web.  
 
@@ -97,7 +97,7 @@ The org engagement mitigation is currently only applied in Balanced mode so that
 
 Based on recent user feedback Microsoft received, Microsoft Edge maintains a small list of sites \(most of which are in the Disconnect Content category\) that were breaking due to tracking prevention despite having the above two mitigations in place. Sites on this list are exempt from tracking prevention enforcements.  The list can be found on disk at the [locations](#determining-whetherhow-a-particular-url-is-classified) described below.  Users may override entries on it using the **Block** option in `edge://settings/content/cookies`.
 
-To avoid maintaining this list moving forwards, Microsoft is currently working on the [Storage Access API][GitHubMsExplainersStorageAccessApi] in the Chromium codebase.  The [Storage Access API][GitHubMsExplainersStorageAccessApi] gives site developers a way to request storage access from users directly, providing users with more transparency into how their privacy settings are affecting their browsing experience, and giving site developers controls to quickly and intuitively unblock themselves.
+To avoid maintaining this list moving forwards, Microsoft is currently working on the [Storage Access API][GitHubMsExplainersStorageAccessApi] in the open-source codebase.  The [Storage Access API][GitHubMsExplainersStorageAccessApi] gives site developers a way to request storage access from users directly, providing users with more transparency into how their privacy settings are affecting their browsing experience, and giving site developers controls to quickly and intuitively unblock themselves.
 
 After the [Storage Access API][GitHubMsExplainersStorageAccessApi] is implemented, Microsoft will deprecate the CompatExceptions list and reach out to the affected sites both to make them aware of the issues, and to request that they use the [Storage Access API][GitHubMsExplainersStorageAccessApi] moving forward.  
 

@@ -1,5 +1,5 @@
 ---
-description: A reference for WebDriver capabilities and Microsoft Edge-specific options supported by EdgeDriver (Chromium).
+description: A reference for WebDriver capabilities and Microsoft Edge-specific options supported by EdgeDriver.
 title: Capabilities and EdgeOptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -84,8 +84,8 @@ The following list contains all of the Microsoft Edge-specific capabilities that
 
 <!-- links -->  
 [DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Get started with Remote Debugging Windows 10 devices | Microsoft Docs"  
-[WebdriverIndexChooseAWebdriverTestingFramework]: ./index.md#choose-a-webdriver-testing-framework "Choose a WebDriver testing framework - Use WebDriver (Chromium) for test automation | Microsoft Docs"
-[WebdriverIndexAutomateMicrosoftEdgeChromium]: ./index.md#automate-microsoft-edge-chromium "Automate Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"    
+[WebdriverIndexChooseAWebdriverTestingFramework]: ./index.md#choose-a-webdriver-testing-framework "Choose a WebDriver testing framework - Use WebDriver for test automation | Microsoft Docs"
+[WebdriverIndexAutomateMicrosoftEdgeChromium]: ./index.md#automate-microsoft-edge-chromium "Automate Microsoft Edge - WebDriver | Microsoft Docs"    
 <!-- external links -->
 [SeleniumMain]: https://www.selenium.dev "SeleniumHQ Browser Automation"  
 [SharedCapabilitiesSeleniumDocumentation]: https://www.selenium.dev/documentation/en/driver_idiosyncrasies/shared_capabilities/ "Shared capabilities | Selenium Documentation"   

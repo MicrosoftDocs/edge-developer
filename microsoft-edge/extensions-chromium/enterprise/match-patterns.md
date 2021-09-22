@@ -1,12 +1,12 @@
 ---
-description: Enterprise policy documentation for Edge (Chromium) Extensions.
+description: Enterprise policy documentation for Edge Extensions.
 title: Match Patterns
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
+keywords: microsoft edge, extensions development, browser extensions, addons, partner center, developer
 ---
 <!-- Copyright A. W. Fuchs
 

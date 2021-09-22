@@ -11,9 +11,9 @@ keywords: microsoft edge, web development, developer, tools, automation, test
 ---
 # Puppeteer overview
 
-[Puppeteer][PuppeteerMain] is a [Node][NodejsMain] library that provides a high-level API to control Microsoft Edge \(Chromium\) using the [DevTools Protocol][GithubChromedevtoolsProtocol].  Puppeteer launches [headless browsers][WikiHeadlessBrowser] by default.  Headless browsers do not display a UI, so instead you must use the command line.  You may also configure Puppeteer to run full \(non-headless\) Microsoft Edge as well.  
+[Puppeteer][PuppeteerMain] is a [Node][NodejsMain] library that provides a high-level API to control Microsoft Edge using the [DevTools Protocol][GithubChromedevtoolsProtocol].  Puppeteer launches [headless browsers][WikiHeadlessBrowser] by default.  Headless browsers do not display a UI, so instead you must use the command line.  You may also configure Puppeteer to run full \(non-headless\) Microsoft Edge as well.  
 
-By default, when you install Puppeteer, the installer downloads a recent version of [Chromium][ChromiumHome], the open-source browser that [Microsoft Edge is also built upon][MicrosoftBlogsWindowsExperience20181206].  If you have Microsoft Edge \(Chromium\) installed, you may use [puppeteer-core][PuppeteerApivscore].  `puppeteer-core` is a lightweight version of Puppeteer that launches an existing browser installation, like Microsoft Edge \(Chromium\).  To download Microsoft Edge \(Chromium\), navigate to [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload].  
+By default, when you install Puppeteer, the installer downloads a recent version of [Chromium][ChromiumHome], the open-source browser that [Microsoft Edge is also built upon][MicrosoftBlogsWindowsExperience20181206].  If you have Microsoft Edge  installed, you may use [puppeteer-core][PuppeteerApivscore].  `puppeteer-core` is a lightweight version of Puppeteer that launches an existing browser installation, like Microsoft Edge.  To download Microsoft Edge, navigate to [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload].  
 
 ## Installing puppeteer-core  
 
@@ -32,7 +32,7 @@ yarn add puppeteer-core
 > [!NOTE]
 > `puppeteer-core` relies on Node v8.9.0 or later.  The example below uses `async`/`await` which is only supported in Node v7.6.0 or later.  Run `node -v` from the command-line to ensure you have a compatible version of Node.js.  
 
-`puppeteer-core` should be familiar to users of other browser-testing-frameworks like [WebDriver][WebdriverChromiumMain].  You create an instance of the browser, open a page, and then manipulate it with the Puppeteer API.  In the following code sample, `puppeteer-core` launches Microsoft Edge \(Chromium\), navigates to `https://www.microsoftedgeinsider.com`, and saves a screenshot as `example.png`.  
+`puppeteer-core` should be familiar to users of other browser-testing-frameworks like [WebDriver][WebdriverChromiumMain].  You create an instance of the browser, open a page, and then manipulate it with the Puppeteer API.  In the following code sample, `puppeteer-core` launches Microsoft Edge, navigates to `https://www.microsoftedgeinsider.com`, and saves a screenshot as `example.png`.  
 
 Copy the following code snippet and save it as `example.js`.  
 
@@ -51,7 +51,7 @@ const puppeteer = require('puppeteer-core');
 })();
 ```  
 
-Change `executablePath` to point to your installation of Microsoft Edge \(Chromium\).  For example, on macOS, the `executablePath` for Microsoft Edge Canary should be set to `/Applications/Microsoft\ Edge\ Canary.app/`.  To find the `executablePath`, navigate to `edge://version` and copy the **Executable path** on that page or install the [edge-paths][npmEdgePaths] package with one of the following commands.  
+Change `executablePath` to point to your installation of Microsoft Edge.  For example, on macOS, the `executablePath` for Microsoft Edge Canary should be set to `/Applications/Microsoft\ Edge\ Canary.app/`.  To find the `executablePath`, navigate to `edge://version` and copy the **Executable path** on that page or install the [edge-paths][npmEdgePaths] package with one of the following commands.  
 
 ```shell
 npm i edge-paths
@@ -61,7 +61,7 @@ npm i edge-paths
 yarn add edge-paths
 ```  
  
-The code sample below uses the [edge-paths][npmEdgePaths] package to programmatically find the path to your installation of Microsoft Edge \(Chromium\) on your OS.
+The code sample below uses the [edge-paths][npmEdgePaths] package to programmatically find the path to your installation of Microsoft Edge on your OS.
 
 ```javascript
 const edgePaths = require("edge-paths");
@@ -98,7 +98,7 @@ The Microsoft Edge Developer team is eager to hear your feedback about using Pup
 
 <!--## See also  
 
-*   [WebDriver (Chromium)][WebdriverChromiumMain]  
+*   [WebDriver][WebdriverChromiumMain]  
 *   [WebDriver (EdgeHTML)][ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]  
 *   [Chrome DevTools Protocol Viewer on GitHub][GithubChromedevtoolsProtocol]  
 *   [Microsoft Edge:  Making the web better through more open source collaboration on Microsoft Experience Blog][MicrosoftBlogsWindowsExperience20181206]  
@@ -112,7 +112,7 @@ The Microsoft Edge Developer team is eager to hear your feedback about using Pup
 
 <!-- links -->  
 
-[WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver (Chromium) | Microsoft Docs"  
+[WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver | Microsoft Docs"  
 
 <!--  [ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
 

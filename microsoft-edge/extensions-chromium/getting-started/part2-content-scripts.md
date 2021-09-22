@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 01/07/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium, web development, html, css, javascript, developer, extensions
+keywords: microsoft edge, web development, html, css, javascript, developer, extensions
 ---
 # Create an extension tutorial Part 2  
   
@@ -45,7 +45,7 @@ First, update your `popup.html` file with some straight forward markup that disp
         </style>
     </head>
     <body>
-        <h1>Show the NASA picture of the day</h1>
+        <h1>Display the NASA picture of the day</h1>
         <h2>(select the image to remove)</h2>
         <button id="sendmessageid">Display</button>
         <script src="popup.js"></script>
@@ -142,7 +142,7 @@ The updated `manifest.json` that includes the `content-scripts` and `web_accessi
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
     "manifest_version": 2,
-    "description": "A Chromium extension to show the NASA picture of the day.",
+    "description": "An extension to display the NASA picture of the day.",
     "icons": {
         "16": "icons/nasapod16x16.png",
         "32": "icons/nasapod32x32.png",

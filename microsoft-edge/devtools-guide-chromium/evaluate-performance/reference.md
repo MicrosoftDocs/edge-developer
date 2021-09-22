@@ -548,7 +548,7 @@ To turn on Layer Borders, complete the following actions,
        **Layer Borders**  
     :::image-end:::  
     
-Navigate to the comments in [debug_colors.cc][ChromiumDebugColors] for an explanation of the color-codings.  
+Navigate to the comments in [debug_colors.cc][DebugColors] for an explanation of the color-codings.  
 
 ### Find scroll performance issues in realtime  
 
@@ -570,13 +570,13 @@ To view scroll performance issues, complete the following actions.
 
 <!-- links -->  
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge  Developer tools | Microsoft Docs"  
 [DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "Open the Command Menu - Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"  
 [DevtoolsEvaluatePerformanceGettingStarted]: ./index.md "Get started with analyzing runtime performance | Microsoft Docs"  
 
 [ActivityTabsDemo]: https://microsoft-edge-chromium-devtools.glitch.me/perf/activitytabs.html "Activity Tabs Demo | glitch"  
 
-[ChromiumDebugColors]: https://cs.chromium.org/chromium/src/cc/debug/debug_colors.cc "debug_colors.cc - Code Search"  
+[DebugColors]: https://cs.chromium.org/chromium/src/cc/debug/debug_colors.cc "debug_colors.cc - Code Search"  
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  

@@ -33,7 +33,7 @@ ms.localizationpriority: high
 
 Microsoft Edge Dev is now supported on Ubuntu, Debian, Fedora, and openSUSE distributions.  Download and install the Microsoft Edge Dev `.deb` or `.rpm` package directly from the [Microsoft Edge Insider site][MicrosoftinsiderDownloadPlatformLinux] or use the standard package management tools of your Linux distribution.  
 
-If you are using a Linux environment in your continuous integration and delivery \(CI/CD\) solutions, Microsoft Edge Driver is also available on Linux.  To get started automating Microsoft Edge Dev with Microsoft Edge Driver, navigate to [Microsoft Edge Driver Downloads page][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads].  For help with automating Microsoft Edge Dev along with Microsoft Edge Driver, navigate to [Use WebDriver (Chromium) for test automation][WebdriverChromiumMain].  
+If you are using a Linux environment in your continuous integration and delivery \(CI/CD\) solutions, Microsoft Edge Driver is also available on Linux.  To get started automating Microsoft Edge Dev with Microsoft Edge Driver, navigate to [Microsoft Edge Driver Downloads page][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads].  For help with automating Microsoft Edge Dev along with Microsoft Edge Driver, navigate to [Use WebDriver for test automation][WebdriverMain].  
 
 :::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="DevTools in Microsoft Edge on Linux" lightbox="../../media/2020/11/edge-on-linux.msft.png":::
    DevTools in Microsoft Edge on Linux  
@@ -365,7 +365,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 [ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"  
 
-[WebdriverChromiumMain]: ../../../../webdriver-chromium/index.md "Use WebDriver (Chromium) for test automation | Microsoft Docs"  
+[WebdriverMain]: ../../../../webdriver-chromium/index.md "Use WebDriver for test automation | Microsoft Docs"  
 
 [MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "Download WebDriver | Microsoft Developer"  
 
