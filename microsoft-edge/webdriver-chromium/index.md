@@ -432,7 +432,7 @@ The Microsoft Edge team is eager to hear your feedback about using WebDriver, We
 
 [MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]: https://developer.microsoft.com/microsoft-edge/tools/webdriver "Microsoft Edge Driver | Microsoft Edge Developer"
 
-[MicrosoftEdge]: https://www.microsoft.com/edge "Download New Microsoft Edge Browser"
+[MicrosoftEdge]: https://www.microsoft.com/edge "Download Microsoft Edge Browser | Microsoft"
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
 

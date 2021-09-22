@@ -84,7 +84,7 @@ The following list contains all of the Microsoft Edge-specific capabilities that
 <!-- links -->
 [DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Get started with Remote Debugging Windows 10 devices | Microsoft Docs"
 [WebdriverIndexChooseAWebdriverTestingFramework]: ./index.md#choose-a-webdriver-testing-framework "Choose a WebDriver testing framework - Use WebDriver (Chromium) for test automation | Microsoft Docs"
-[WebdriverIndexAutomateMicrosoftEdge]: ./index.md#automate-microsoft-edge "Automate Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"
+[WebdriverIndexAutomateMicrosoftEdge]: ./index.md#automate-microsoft-edge "Automate Microsoft Edge - WebDriver (Chromium) | Microsoft Docs"
 <!-- external links -->
 [SeleniumMain]: https://www.selenium.dev "SeleniumHQ Browser Automation"
 [SharedCapabilitiesSeleniumDocumentation]: https://www.selenium.dev/documentation/en/driver_idiosyncrasies/shared_capabilities/ "Shared capabilities | Selenium Documentation"

@@ -171,7 +171,7 @@ The file explorer does not launch from the DevTools in the **Sources** tool or i
 [WindowsUwpDebugTestPerfDevicePortalSetup]: /windows/uwp/debug-test-perf/device-portal#setup "Setup - Windows Device Portal overview | Microsoft Docs"
 [WindowsUwpDebugTestPerfDevicePortalDesktopRegistryBasedConfigurationForDevicePortal]: /windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration-for-device-portal "Registry-based configuration for Device Portal - Device Portal for Windows Desktop | Microsoft Docs"
 
-[MicrosoftEdgeMain]: https://www.microsoft.com/edge "Download New Microsoft Edge Browser"
+[MicrosoftEdgeMain]: https://www.microsoft.com/edge "Download Microsoft Edge Browser | Microsoft"
 
 [MicrosoftStoreAppsWindows]: https://www.microsoft.com/store/apps/windows "Windows Apps | Microsoft Store"
 
