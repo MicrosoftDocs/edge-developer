@@ -141,11 +141,24 @@ Navigate to the [source code on GitHub][DemoDevToolsTipsGitHub]. In particular, 
 
 ## Handle protocols
 
-**TODO**
+Similar to URL Handling, Progressive Web Apps can also handle protocols to create a more engaging experience.
+
+A URL (or Uniform Resource Locator) is a string that allows clients to identify a resource on the Web, and it contains an initial part, the protocol, that lets clients know how to retrieve the resource.
+
+Examples of protocols include:
+
+| Protocol | Example |
+|:--- |:--- |
+| `http` | http://contoso.com/ |
+| `mailto` | mailto:contact@contoso.com |
+
+With Protocol Handling, PWAs can register to handle specific protocols when getting installed. For example, an email client app can register to the `mailto` protocol, or a geolocation app can register to the `geo` protocol.
+
+To learn more about other existing protocols, navigate to the [list of URI schemes][WikiListOfURISchemes].
 
 ### Enable protocol handling
 
-Protocol handling is also experimental, to enable it:
+Protocol Handling is an experimental feature, to enable it:
 
 1.  Navigate to `edge://flags` in Microsoft Edge.
 1.  Select **Search flags** and type "protocol handling".
@@ -155,11 +168,34 @@ Protocol handling is also experimental, to enable it:
        Enable the Protocol Handling API experiment
     :::image-end:::
 
+Protocol Handling is also an origin trial in Microsoft Edge. Navigate to [Enroll your site in an origin trial][OriginTrials] to learn more.
+
+### Register protocols to handle
+
+The only thing to do is to use Protocol Handling is declare which protocols your app handles. This is done in your app [manifest file][ManifestFileDoc], using the `protocol_handlers` array member.
+
+Each entry in the `protocol_handlers` array contains a `protocol` string and a `url` string:
+
+```json
+{
+    "protocol_handlers": [
+        {
+            "protocol": "mailto",
+            "url": "/newEmail?to=%s"
+        }
+    ]
+}
+```
+
+In the above example, the app is registered to handle the `mailto` protocol and when the operating system launches the app in response to it, it navigates to the `/newEmail` URL.
+
+The `%s` placeholder will be replaced with the full URL being handled.
 
 ## See also
 
 *  [Handling URLs in PWAs video][URLHandlingVideoTutorial].
 *  [PWAs as URL Handlers][URLHandlersWebDev]
+*  [URL protocol handler registration for PWAs][ProtocolHandlersWebDev].
 
 <!-- links -->
 
@@ -171,3 +207,5 @@ Protocol handling is also experimental, to enable it:
 [DemoDevToolsTipsGitHub]: https://github.com/captainbrosset/devtools-tips/ "DevTools Tips | GitHub"
 [DemoDevToolsTipsManifestJson]: https://github.com/captainbrosset/devtools-tips/blob/main/src/manifest.json
 [DemoDevToolsTipsWebAppOriginAssociation]: https://github.com/captainbrosset/devtools-tips/blob/main/src/.well-known/web-app-origin-association
+[ProtocolHandlersWebDev]: https://web.dev/url-protocol-handler/ "URL protocol handler registration for PWAs | web.dev"
+[WikiListOfURISchemes]: https://en.wikipedia.org/wiki/List_of_URI_schemes "List of URI schemes | Wikipedia"
