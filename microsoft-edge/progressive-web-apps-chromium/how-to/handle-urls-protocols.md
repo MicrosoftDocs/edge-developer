@@ -3,40 +3,42 @@ title: Handle URLs and protocols in Progressive Web Apps
 description: Learn how to register your PWA as a URL or protocol handler to more deeply integrate it in the operating system with other applications.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/08/2021
+ms.date: 09/22/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, URL, protocol
 ---
-# Handle URLs and protocols in Progressive Web Apps  
+# Handle URLs and protocols in Progressive Web Apps
 
-## Handle URLs  
+## Handle URLs
 
 Native applications on many operating systems can be associated with URLs. They can request to be launched when associated URLs are activated. For example, when a user clicks on a Spotify link in an email or a chat message, the installed Spotify app can launch to handle the link.
 
-Progressive Web Apps can also handle URLs and doing so can create a more engaging experience.  
+Progressive Web Apps can also handle URLs and doing so can create a more engaging experience.
 
 > [!NOTE]
-> At the moment, in-browser page navigation does not trigger PWA URL handling.  
+> At the moment, in-browser page navigation does not trigger PWA URL handling.
 
-### Enable URL handling  
+### Enable URL handling
 
-URL handling is still experimental, to enable it:  
+URL handling is still experimental, to enable it:
 
-1.  Navigate to `edge://flags` in Microsoft Edge.  
-1.  Select **Search flags** and type "url handling".  
-1.  Select **Default** > **Enabled** > **Restart**.  
+1.  Navigate to `edge://flags` in Microsoft Edge.
+1.  Select **Search flags** and type "url handling".
+1.  Select **Default** > **Enabled** > **Restart**.
 
     :::image type="complex" source="../media/enable-url-handling-experiment.png" alt-text="Enable the URL handling API experiment" lightbox="../media/enable-url-handling-experiment.png":::
-       Enable the URL Handling API experiment  
-    :::image-end:::  
+       Enable the URL Handling API experiment
+    :::image-end:::
 
-### Define which URLs your app handles  
+URL Handling is also an origin trial in Microsoft Edge. Navigate to [Enroll your site in an origin trial][OriginTrials] to learn more.
+
+### Define which URLs your app handles
 
 The first thing to do is declare which URLs your app handles. This is done in your app [manifest file][ManifestFileDoc], using the `url_handlers` array member.
 
-Each entry in the `url_handlers` array contains a `origin` string, which is a pattern for matching origins.  
+Each entry in the `url_handlers` array contains a `origin` string, which is a pattern for matching origins.
 
 ```json
 {
@@ -52,19 +54,19 @@ Each entry in the `url_handlers` array contains a `origin` string, which is a pa
         }
     ]
 }
-```  
+```
 
-In the above example, the app is registered to handle URLs that have their origins set to `contoso.com` or any of its subdomains, as well as `conto.so`.  
+In the above example, the app is registered to handle URLs that have their origins set to `contoso.com` or any of its subdomains, as well as `conto.so`.
 
-### Verify the origin ownership  
+### Verify the origin ownership
 
-Microsoft Edge needs to verify the PWA's ownership of the handled URLs to successfully launch the app. This is required when the handled URL and the PWA are both on the same origin and when they're not. In most cases, the PWA will handle URLs that have the same origin, but this is not required.  
+Microsoft Edge needs to verify the PWA's ownership of the handled URLs to successfully launch the app. This is required when the handled URL and the PWA are both on the same origin and when they're not. In most cases, the PWA will handle URLs that have the same origin, but this is not required.
 
-Origin ownership is established with the `web-app-origin-association` JSON file, which is used by Microsoft Edge to validate the handshake between the PWA and the URL.  
+Origin ownership is established with the `web-app-origin-association` JSON file, which is used by Microsoft Edge to validate the handshake between the PWA and the URL.
 
 Let's take the example of a PWA hosted at `https://app.contoso.com` trying to handle `https://contoso.com` and `https://partnerapp.com` URLs.
 
-*  To establish the PWA's ownership of the `contoso.com` origin, the following JSON content needs to be added to `https://contoso.com/.well-known/web-app-origin-association`.  
+*  To establish the PWA's ownership of the `contoso.com` origin, the following JSON content needs to be available at `https://contoso.com/.well-known/web-app-origin-association`.
 
     ```json
     {
@@ -79,9 +81,9 @@ Let's take the example of a PWA hosted at `https://app.contoso.com` trying to ha
             }
         ]
     }
-    ```  
+    ```
 
-*  To establish the PWA's ownership of the `partnerapp.com` origin, the same JSON content needs to be added to `https://partnerapp.com/.well-known/web-app-origin-association`.  
+*  To establish the PWA's ownership of the `partnerapp.com` origin, the same JSON content needs to be available at `https://partnerapp.com/.well-known/web-app-origin-association`.
 
     ```json
     {
@@ -96,31 +98,76 @@ Let's take the example of a PWA hosted at `https://app.contoso.com` trying to ha
             }
         ]
     }
-    ```  
+    ```
 
-To learn more about the valid members in `web-app-origin-association`, navigate to the [URL Handlers explainer][WICGUrlHandlerExplainer].  
+To learn more about the valid members in `web-app-origin-association`, navigate to the [URL Handlers explainer][WICGUrlHandlerExplainer].
 
-### Testing URL handling  
+### Testing URL handling
 
-**TODO** Notes about the fact that this must be with the default browser, and from a desktop app (outlook won't work as there is some URL security scanning that starts the browser). Can try from windows+R.  
+Testing your app's URL handling from a web browser won't work since page navigation in browsers do not trigger URL handling at the OS level.
 
-## Handle protocols  
+To test the feature, send yourself a URL in a chat message app, or a desktop email client like Windows Mail. You can also use the Windows Run app:
+
+*  Press `Windows logo key` + `R`.
+*  Enter a URL your app handles.
+*  Press `Enter`.
+
+### Demo
+
+[DevTools Tips][DemoDevToolsTips] is a PWA that handles URLs to its own domain so that the app opens instead of the website when one is used.
+
+To test URL handling on DevTools Tips:
+
+*  [Enable the feature](#enable-url-handling) in Microsoft Edge.
+*  Navigate to [DevTools Tips][DemoDevToolsTips].
+*  Install the app locally.
+*  Press `Windows logo key` + `R` to open the Windows Run app.
+*  Enter a URL to one of the tips on the site such as https://devtoolstips.org/tips/en/find-css-changes/
+*  Press `Enter`.
+
+Windows knows that your app is registered to handle this URL and asks you to choose which app you want to use. Select the DevTools Tips apps. You can also select **Remember my choice** to avoid seeing this dialog every time.
+
+:::image type="complex" source="../media/devtools-tips-url-handling-app-selection.png" alt-text="Selecting an application to handle URLs on Windows" lightbox="../media/devtools-tips-url-handling-app-selection.png":::
+   Selecting an application to handle URLs on Windows
+:::image-end:::
+
+The app launches and displays the tips page.
+
+:::image type="complex" source="../media/devtools-tips-url-handling.png" alt-text="The DevTools Tips app" lightbox="../media/devtools-tips-url-handling.png":::
+   The DevTools Tips app
+:::image-end:::
+
+Navigate to the [source code on GitHub][DemoDevToolsTipsGitHub]. In particular, the app registers the handled URLs in the [manifest.json][DemoDevToolsTipsManifestJson] file and the website establishes the app's ownership in the [web-app-origin-association][DemoDevToolsTipsWebAppOriginAssociation] file.
+
+## Handle protocols
 
 **TODO**
 
-### Enable protocol handling  
+### Enable protocol handling
 
-Protocol handling is also experimental, to enable it:  
+Protocol handling is also experimental, to enable it:
 
-1.  Navigate to `edge://flags` in Microsoft Edge.  
-1.  Select **Search flags** and type "protocol handling".  
-1.  Select **Default** > **Enabled** > **Restart**.  
+1.  Navigate to `edge://flags` in Microsoft Edge.
+1.  Select **Search flags** and type "protocol handling".
+1.  Select **Default** > **Enabled** > **Restart**.
 
     :::image type="complex" source="../media/enable-protocol-handling-experiment.png" alt-text="Enable the Protocol handling API experiment" lightbox="../media/enable-protocol-handling-experiment.png":::
-       Enable the Protocol Handling API experiment  
-    :::image-end:::  
+       Enable the Protocol Handling API experiment
+    :::image-end:::
 
 
-<!-- links -->  
+## See also
 
-[WICGUrlHandlerExplainer]: https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#web-app-origin-association-file
+*  [Handling URLs in PWAs video][URLHandlingVideoTutorial].
+*  [PWAs as URL Handlers][URLHandlersWebDev]
+
+<!-- links -->
+
+[WICGUrlHandlerExplainer]: https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#web-app-origin-association-file "PWAs as URL Handlers | WICG"
+[OriginTrials]: ./origin-trials.md#enroll-your-site-in-an-origin-trial "Experimental features and origin trials | Microsoft Docs"
+[URLHandlingVideoTutorial]: https://www.youtube.com/watch?v=jYc7ih9Xwqw "Handle URLs natively in your Progressive Web App video tutorial | YouTube"
+[URLHandlersWebDev]: https://web.dev/pwa-url-handler/ "PWAs as URL Handlers | web.dev"
+[DemoDevToolsTips]: https://devtoolstips.org/ "DevTools Tips"
+[DemoDevToolsTipsGitHub]: https://github.com/captainbrosset/devtools-tips/ "DevTools Tips | GitHub"
+[DemoDevToolsTipsManifestJson]: https://github.com/captainbrosset/devtools-tips/blob/main/src/manifest.json
+[DemoDevToolsTipsWebAppOriginAssociation]: https://github.com/captainbrosset/devtools-tips/blob/main/src/.well-known/web-app-origin-association
