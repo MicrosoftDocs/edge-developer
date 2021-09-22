@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright Kayce Basques 
+<!-- Copyright Kayce Basques
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -21,95 +21,95 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# View Web SQL data with Microsoft Edge DevTools  
+# View Web SQL data with Microsoft Edge DevTools
 
 > [!WARNING]
-> The Web SQL specification is [not being maintained][W3CWebSQLStatus].  
+> The Web SQL specification is [not being maintained][W3CWebSQLStatus].
 
-This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect Web SQL data.  
+This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect Web SQL data.
 
-## View Web SQL Data  
+## View Web SQL Data
 
-1.  Choose the **Sources** tool to open the **Sources** tool.  The **Manifest** pane usually opens by default.  
-    
+1.  Choose the **Sources** tool to open the **Sources** tool.  The **Manifest** pane usually opens by default.
+
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
-       The **Manifest** pane  
-    :::image-end:::  
-    
-1.  Expand the **Web SQL** section to view databases and tables.  In the following figure, below **html5meetup** is a database and **rooms** is a table.  
-    
+       The **Manifest** pane
+    :::image-end:::
+
+1.  Expand the **Web SQL** section to view databases and tables.  In the following figure, below **html5meetup** is a database and **rooms** is a table.
+
     :::image type="complex" source="../media/storage-application-storage-web-sql.msft.png" alt-text="The Web SQL pane" lightbox="../media/storage-application-storage-web-sql.msft.png":::
-       The **Web SQL** pane  
-    :::image-end:::  
-    
-1.  Choose a table to view the data for that table.  
-    
+       The **Web SQL** pane
+    :::image-end:::
+
+1.  Choose a table to view the data for that table.
+
     :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png" alt-text="View the data of a Web SQL table" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png":::
-       View the data of a Web SQL table  
-    :::image-end:::  
-    
-## Edit Web SQL data  
+       View the data of a Web SQL table
+    :::image-end:::
 
-You are not able to edit Web SQL data when viewing a Web SQL table, such as in previous above.  But you may run statements from the Web SQL Console that edit or delete tables.  Navigate to [Run Web SQL queries](#run-web-sql-queries).  
+## Edit Web SQL data
 
-## Run Web SQL queries  
+You are not able to edit Web SQL data when viewing a Web SQL table, such as in previous above.  But you may run statements from the Web SQL Console that edit or delete tables.  Navigate to [Run Web SQL queries](#run-web-sql-queries).
 
-1.  Choose a database to open a console for that database.  
-1.  Type a Web SQL statement, then select `Enter` to run it.  
-    
+## Run Web SQL queries
+
+1.  Choose a database to open a console for that database.
+1.  Type a Web SQL statement, then select `Enter` to run it.
+
     :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Use the Web SQL Console to delete a row from a table" lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
-       Use the Web SQL Console to delete a row from a table  
-    :::image-end:::  
-    
-## Refresh a Web SQL table  
+       Use the Web SQL Console to delete a row from a table
+    :::image-end:::
 
-DevTools does not update tables in real-time.  To update the data in a table, complete the following actions.  
+## Refresh a Web SQL table
 
-1.  [View the data in a Web SQL table](#view-web-sql-data).  
-1.  Choose **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\).  
-    
-## Filter out columns in a Web SQL table  
+DevTools does not update tables in real-time.  To update the data in a table, complete the following actions.
 
-1.  [View the data in a Web SQL table](#view-web-sql-data).  
-1.  Use the **Visible columns** text box to specify what columns you want to show.  Provide the column names as a CSV list.  
-    
+1.  [View the data in a Web SQL table](#view-web-sql-data).
+1.  Choose **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\).
+
+## Filter out columns in a Web SQL table
+
+1.  [View the data in a Web SQL table](#view-web-sql-data).
+1.  Use the **Visible columns** text box to specify what columns you want to show.  Provide the column names as a CSV list.
+
     :::image type="complex" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="Use the Visible Columns text box to reduce the number of columns shown" lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
-       Use the **Visible Columns** text box to reduce the number of columns shown  
-    :::image-end:::  
-    
-## Delete all Web SQL data  
+       Use the **Visible Columns** text box to reduce the number of columns shown
+    :::image-end:::
 
-1.  Open the **Clear Storage** pane.  
-1.  Make sure that the **Web SQL** checkbox is turned on.  
-    
+## Delete all Web SQL data
+
+1.  Open the **Clear Storage** pane.
+1.  Make sure that the **Web SQL** checkbox is turned on.
+
     :::image type="complex" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="The Web SQL checkbox" lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
-       The **Web SQL** checkbox  
-    :::image-end:::  
-    
-1.  Choose **Clear site data**.  
-    
+       The **Web SQL** checkbox
+    :::image-end:::
+
+1.  Choose **Clear site data**.
+
     :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="The Clear Site Data button" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
-       The **Clear Site Data** button  
-    :::image-end:::  
-    
-## Getting in touch with the Microsoft Edge DevTools team  
+       The **Clear Site Data** button
+    :::image-end:::
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+## Getting in touch with the Microsoft Edge DevTools team
 
-<!-- links -->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge  Developer Tools | Microsoft Docs"  
+<!-- links -->
 
-[W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Web SQL database | W3C"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge  Developer Tools | Microsoft Docs"
+
+[W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Web SQL database | W3C"
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/websql) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/websql) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques

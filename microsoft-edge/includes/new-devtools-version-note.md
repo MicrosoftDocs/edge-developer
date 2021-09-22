@@ -6,12 +6,11 @@ ms.topic: include
 ms.date: 03/26/2020
 ---
 > [!NOTE]
-> Microsoft Edge is built using Chromium, starting at version 75.  For more information, [download Microsoft Edge][MicrosoftEdge], and try out the new [Microsoft Edge Developer Tools][DevtoolsGuideChromium].
+> Microsoft Edge is built using Chromium, starting at version 75.  For more information, [download Microsoft Edge][MicrosoftEdge], and try out the [Microsoft Edge Developer Tools][DevtoolsGuideChromium].
 
-<!-- image links -->  
+<!-- image links -->
 
-<!-- links -->  
+<!-- links -->
+[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge Developer Tools"
 
-[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge  Developer Tools"  
-
-[MicrosoftEdge]: https://www.microsoft.com/edge "Download Microsoft Edge Browser | Microsoft"  
+[MicrosoftEdge]: https://www.microsoft.com/edge "Download Microsoft Edge Browser | Microsoft"
