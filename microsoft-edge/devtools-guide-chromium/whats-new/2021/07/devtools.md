@@ -44,7 +44,7 @@ For more information, navigate to [Apply color themes to DevTools][CustomizeDark
 
 ## Debug DOM node memory leaks with the new Detached Elements tool
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
+:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
 <!-- Title: Introducing the Detached Elements tool -->
 <!-- Subtitle: Use the Detached Elements tool to find and fix DOM node memory leaks. -->

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright Kayce Basques 
+<!-- Copyright Kayce Basques
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
@@ -20,66 +20,66 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Apply color themes to DevTools
 
-You can apply various color themes to Microsoft Edge DevTools, including several themes from [Visual Studio Code][VSCode], such as Monokai and Solarized Dark.  Themes affect the color of panes, buttons, and code syntax highlighting. 
+You can apply various color themes to Microsoft Edge DevTools, including several themes from [Visual Studio Code][VSCode], such as Monokai and Solarized Dark.  Themes affect the color of panes, buttons, and code syntax highlighting.
 
 :::image type="complex" source="./media/all-devtools-themes.png" alt-text="Various DevTools color themes" lightbox="./media/all-devtools-themes.png":::
-   Various DevTools color themes 
-:::image-end:::  
+   Various DevTools color themes
+:::image-end:::
 
 > [!NOTE]
-> Prior to [Microsoft Edge 93][WhatsNew93], DevTools only had a light and dark theme.  
+> Prior to [Microsoft Edge 93][WhatsNew93], DevTools only had a light and dark theme.
 
 This article is about changing the appearance of DevTools.  To instead change how the webpage under development is displayed, navigate to [Emulate dark or light schemes in the rendered page][AccessibilityPreferredColorSchemeSimulation].
 
 
-## Available themes  
+## Available themes
 
 By default, the DevTools theme is set to **System preference** (also called **system preferred color theme**).  If your operating system is set to Light theme, DevTools uses the **Light+** theme.  If your operating system is set to Dark theme, DevTools uses the **Dark+** theme.  However, you can change DevTools to any of several other themes, so that DevTools isn't affected when you set the operating system to Light or Dark theme.
 
-Light themes:  
-- Light+ (Default)  
-- Chromium Light  
-- Quiet Light  
-- Solarized Light  
+Light themes:
+- Light+ (Default)
+- Chromium Light
+- Quiet Light
+- Solarized Light
 
-Dark themes:  
-- Dark+ (Default)  
-- Abyss  
-- Chromium Dark  
-- Kimbie Dark  
-- Monokai  
-- Monokai Dimmed  
-- Red  
-- Solarized Dark  
-- Tomorrow Night Blue  
+Dark themes:
+- Dark+ (Default)
+- Abyss
+- Chromium Dark
+- Kimbie Dark
+- Monokai
+- Monokai Dimmed
+- Red
+- Solarized Dark
+- Tomorrow Night Blue
 
 ## Changing the color theme from Settings
 
 1.  Open DevTools, and then select **Settings** (the gear icon).
 
     :::image type="complex" source="./media/setting-button.png" alt-text="The Settings (gear) icon" lightbox="./media/setting-button.png":::
-       The **Settings** (gear) icon  
-    :::image-end:::  
+       The **Settings** (gear) icon
+    :::image-end:::
 
-1.  Select **Preferences**, and then in the **Appearance** section, select a theme from the **Theme** dropdown list.  
-    
+1.  Select **Preferences**, and then in the **Appearance** section, select a theme from the **Theme** dropdown list.
+
     :::image type="complex" source="./media/customize-theme-setting.png" alt-text="Selecting a theme in Preferences" lightbox="./media/customize-theme-setting.png":::
-       Selecting a theme in **Preferences**  
-    :::image-end:::  
+       Selecting a theme in **Preferences**
+    :::image-end:::
 
 
 ## Changing the color theme from the Command Menu
 
 To use the Command Menu to change which color theme is applied to DevTools:
 
-1.  [Open the Command Menu][DevtoolsCommandMenu].  
+1.  [Open the Command Menu][DevtoolsCommandMenu].
 1.  Type the word "theme".
 1.  Select an **Appearance** command for the theme you want to use.  For example, **Appearance: Switch to Abyss theme** or **Appearance: Switch to Light+ (Default) theme**.
-1.  Select `Enter` to run the command.  
-    
+1.  Select `Enter` to run the command.
+
     :::image type="complex" source="./media/customize-theme-command-menu.png" alt-text="The list of themes in the Command Menu" lightbox="./media/customize-theme-command-menu.png":::
-       The list of themes in the **Command Menu**  
-    :::image-end:::  
+       The list of themes in the **Command Menu**
+    :::image-end:::
 
 
 <!-- ====================================================================== -->

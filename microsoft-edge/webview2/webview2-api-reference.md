@@ -9,22 +9,22 @@ ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control
 ---
-# Microsoft Edge WebView2 API Reference  
+# Microsoft Edge WebView2 API Reference
 
-The Microsoft Edge WebView2 control enables you to host web content in your application using [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com) as the rendering engine.  For more information, navigate to [Overview of Microsoft Edge WebView2](./index.md) and [Get started with WebView2](./get-started/win32.md).  
+The Microsoft Edge WebView2 control enables you to host web content in your application using [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com) as the rendering engine.  For more information, navigate to [Overview of Microsoft Edge WebView2](./index.md) and [Get started with WebView2](./get-started/win32.md).
 <!-- linking to a parent node of the TOC ("Get started with WebView2") isn't supported, so the above link goes to the first child article, but with link text of the parent TOC node. -->
 
 
-## Languages and Frameworks  
+## Languages and Frameworks
 WebView2 is available for the following languages and frameworks.
-*   [Win32 C++](/microsoft-edge/webview2/reference/win32/index)  
-*   .NET  
-    *   [Core][DotnetMicrosoftWebWebView2CoreNamespace]  
-    *   [WPF][DotnetMicrosoftWebWebView2WpfNamespace]  
-    *   [Windows Forms][DotnetMicrosoftWebWebView2WinformsNamespace]  
-*   WinRT  
-    *   [Core][WinrtMicrosoftWebWebview2CoreNamespace]  
-    *   [COM Interop][WinrtComInteropInterfaces]  
+*   [Win32 C++](/microsoft-edge/webview2/reference/win32/index)
+*   .NET
+    *   [Core][DotnetMicrosoftWebWebView2CoreNamespace]
+    *   [WPF][DotnetMicrosoftWebWebView2WpfNamespace]
+    *   [Windows Forms][DotnetMicrosoftWebWebView2WinformsNamespace]
+*   WinRT
+    *   [Core][WinrtMicrosoftWebWebview2CoreNamespace]
+    *   [COM Interop][WinrtComInteropInterfaces]
 
 
 <!-- ====================================================================== -->

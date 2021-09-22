@@ -19,7 +19,7 @@ To use the Inspect tool and Event Listeners tab to analyze the lack of keyboard 
 <!-- 1. Inspect tool: Accessibility section: keyboard-focusable row -->
 
 1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
-    
+
 1.  Select the **Inspect** \(![Inspect icon](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
 1.  Hover over the **50**, **100**, and **200** donation buttons.  The Inspect tool appears on the webpage, as an overlay.  The **keyboard-focusable** row of the Inspect overlay shows that none of the donation amount buttons are keyboard-accessible, as indicated by a gray circle with diagonal line.  The buttons have no name, and have a role of `generic` because they are `div` elements, which means that the buttons aren't accessible to assistive technology.
@@ -27,7 +27,7 @@ To use the Inspect tool and Event Listeners tab to analyze the lack of keyboard 
     :::image type="complex" source="../media/a11y-testing-donation-button-info.msft.png" alt-text="Inspecting the buttons of the form shows that they aren't keyboard-accessible" lightbox="../media/a11y-testing-donation-button-info.msft.png":::
         Inspecting the buttons of the form shows that they aren't keyboard-accessible
     :::image-end:::
-    
+
 1.  When the **Inspect** tool is active, on the webpage, select the **Other** input textbox, above the **Donate** button.  The **Elements** tool opens, showing the DOM tree for the webpage.  The element `<input id="freedonation" class="smallinput">` is selected.
 
     ```html
@@ -74,7 +74,7 @@ donations.addEventListener('click', e => {
   }
   if (t.classList.contains('submitbutton')) {
     alert('Thanks for your donation!')
-  } 
+  }
 })
 ```
 

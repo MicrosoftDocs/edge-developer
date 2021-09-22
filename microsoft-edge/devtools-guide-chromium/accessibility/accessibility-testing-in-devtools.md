@@ -17,6 +17,7 @@ In this article, we cover some of the features you can use in DevTools to test f
 :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## Automated testing by using the Issues tool
 
 When you open the demo page in the browser and open DevTools, notice that some issues are automatically detected in the **Issues counter**.  Select the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) to open the [Issues tool][DevToolsIssuesTool] to view the issues and more information.
@@ -52,7 +53,7 @@ In this case, the HTML has a `label` element that doesn't work.
 <input type="submit" value="go">
 ```
 
-The use of the `label` element here is wrong, because there's no connection between the `label` element and the `input` element.  A valid HTML label would put focus on the search input textbox when you select the **Search** label. 
+The use of the `label` element here is wrong, because there's no connection between the `label` element and the `input` element.  A valid HTML label would put focus on the search input textbox when you select the **Search** label.
 
 You can solve this problem by either nesting the `input` element in a `label` element, or adding a `for` attribute that points to an `id` attribute of the `input` element.  To view a correct connection, select the **Other** label on the donation form.
 
@@ -102,7 +103,7 @@ By making the browser window narrow and using the arrow keys to scroll the page,
 You can simulate a narrow viewport by resizing the browser window, but a better way to test the responsiveness of your design is to use the **Device Emulation** tool.  Here are some features of the **Device Emulation** tool that help you find accessibility issues of any website:
 
 *  Without resizing the browser window, resize the page and test whether your [CSS media queries][DevToolsMediaQueries] trigger a change in layout.
-*  Check for dependencies that use a mouse. By default, device emulation assumes a touch device. This means that any functionality of your product that relies on hover interaction will not work. 
+*  Check for dependencies that use a mouse. By default, device emulation assumes a touch device. This means that any functionality of your product that relies on hover interaction will not work.
 *  Do visual testing by simulating different devices, zoom levels, and pixel ratios.
 *  Test how your product behaves on unreliable connections or when the user is offline.  Showing the most important interactions to a user on a slow connection is also an accessibility consideration.
 
@@ -120,15 +121,16 @@ The DOM tree in the **Elements** tool automatically flags issues directly in the
 These issues that were found by the **Issues** tool are some relatively obvious accessibility problems that can be avoided.  Using the **Issues** tool and its guided explanations to fix them sets you on the way towards an accessible product.
 
 
+<!-- ====================================================================== -->
 ## Limits of automated testing
 
 The [Issues tool][DevToolsIssuesTool], [Accessibility Insights][AccessibilityInsights], and [Lighthouse][Lighthouse] are tools that automatically generate an accessibility report for a webpage.  Getting an automated report from such tools is only the beginning of your accessibility-testing journey.
 
 Accessibility is about human interaction—people with different needs using your products within various technical environments.  This testing can't be fully automated, but needs verification by a human navigating the product.  In the best scenario, you'd have access to testers with different accessibility needs, and testers using various environments.  But you can already do a lot yourself by using the keyboard to navigate and by inspecting different parts of the page.
 
-On the demo page, there are additional issues that automated testing can't detect including: 
+On the demo page, there are additional issues that automated testing can't detect including:
 
-*  Issues that arise after you interact with the page. 
+*  Issues that arise after you interact with the page.
 *  Issues related to changes in display, such as making the window narrow.
 
 One of those issues is the donation form.  When you use a mouse, you can click the different options to donate money.  But when you try to use the keyboard to access the donation form, nothing happens. To solve this issue, you need to use the **Inspect** tool.
@@ -138,6 +140,7 @@ One of those issues is the donation form.  When you use a mouse, you can click t
 :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## Using the Inspect tool to detect accessibility issues
 
 Use the **Inspect** tool to detect accessibility issues by hovering over parts of the webpage.  The **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) tool is in the top-left corner of DevTools.  Turn on the Inspect tool by selecting the **Inspect** tool button.
@@ -206,6 +209,7 @@ For detailed walkthrough steps, navigate to [Use the Inspect tool to hover over 
 <!-- = test-inspect-tool.md#use-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css -->
 
 
+<!-- ====================================================================== -->
 ## Verify keyboard support by using the Tab and Enter keys
 
 Not all people use pointer or touch devices, and some people may have low vision. To cater for these scenarios, ensure that UIs work with keyboards.
@@ -244,17 +248,18 @@ We found some issues here to fix:
 
 * The sidebar navigation menu doesn't show users where the `Tab` focus is, when using keyboards to move around on the page.
 * On the donation form, the **50, 100, ** and **200** buttons and form submit functionality doesn't work when using the keyboard.
-* The keyboard tab order is incorrect. The `Tab` key navigates through all the **More** links on the page before the sidebar navigation menu.  This `Tab` order isn't helpful because the sidebar navigation is intended to take you to the different sections of that page. 
+* The keyboard tab order is incorrect. The `Tab` key navigates through all the **More** links on the page before the sidebar navigation menu.  This `Tab` order isn't helpful because the sidebar navigation is intended to take you to the different sections of that page.
 
 Let's analyze these problems using DevTools.
 
 
+<!-- ====================================================================== -->
 ## Analyze keyboard accessibility issues using DevTools
 
 
 ### Analyzing the lack of indication of keyboard focus in the sidebar menu
 
-To find out why the sidebar navigation isn't optimized as expected for use with keyboards, start by using the **Inspect** tool to highlight a link in the sidebar navigation menu, and then drill down in the DOM tree to the `a` element. 
+To find out why the sidebar navigation isn't optimized as expected for use with keyboards, start by using the **Inspect** tool to highlight a link in the sidebar navigation menu, and then drill down in the DOM tree to the `a` element.
 
 :::image type="complex" source="../media/a11y-testing-menu-link.msft.png" alt-text="Inspecting the source code and the applied styles of a link in the sidebar navigation menu" lightbox="../media/a11y-testing-menu-link.msft.png":::
     Inspecting the source code and the applied styles of a link in the sidebar navigation menu
@@ -266,7 +271,7 @@ In the **Styles** tab, you can see the CSS that's applied to the link, and if yo
     The styles that are applied to the link, shown in the Sources tool
 :::image-end:::
 
-In the above example, the styles of the page include a `hover` state on the menu item when you use a mouse, but there's no `focus` state in the CSS for keyboard users.  
+In the above example, the styles of the page include a `hover` state on the menu item when you use a mouse, but there's no `focus` state in the CSS for keyboard users.
 
 Also, in this example, the links use `outline: none`. This style is used to remove the outline that's automatically added by browsers to elements when they have focus and keyboards are used.  To avoid this problem, don't use `outline: none`.
 
@@ -336,7 +341,7 @@ For detailed walkthrough steps, navigate to [Check the Accessibility Tree for ke
 
 ### Analyzing the order of keyboard access to sections of the page
 
-Another issue is the unclear tab order on the page.  Keyboard users reach the sidebar navigation menu only after tabbing through all the **More** links throughout the entire page.  In this example, the sidebar navigation menu is intended to be a shortcut to different sections of that page.  This tab order leads to a poor user experience. 
+Another issue is the unclear tab order on the page.  Keyboard users reach the sidebar navigation menu only after tabbing through all the **More** links throughout the entire page.  In this example, the sidebar navigation menu is intended to be a shortcut to different sections of that page.  This tab order leads to a poor user experience.
 
 The reason for the confusing `Tab` order is that it is determined by the source order of the document.  The tab order can also be modified by using the `tabindex` attribute on an element which takes that element out of the default source order.
 
@@ -344,7 +349,7 @@ In the source code of the document, the sidebar navigation menu appears after th
 
 The source order of a document is important for assistive technology, and can be different than the order in which elements appear on the rendered page.  Using CSS, you can re-order page elements in a visual way, but that doesn't mean that assistive technology such as screen readers would represent page elements in the same order as that CSS.
 
-You can test the order of page elements by using the **Source Order Viewer** in the **Accessibility** tab.  Scroll down all the way and select the **Show Source Order** checkbox.  Now, when you navigate the DOM tree in the **Elements** tool, such as selecting the `header` element, numeric overlays are displayed on sections of the rendered page which represent the source order. 
+You can test the order of page elements by using the **Source Order Viewer** in the **Accessibility** tab.  Scroll down all the way and select the **Show Source Order** checkbox.  Now, when you navigate the DOM tree in the **Elements** tool, such as selecting the `header` element, numeric overlays are displayed on sections of the rendered page which represent the source order.
 
 :::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="Turning on the Source Order Viewer shows the order of the elements in the source code as numeric overlays on the page" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
     Turning on the **Source Order Viewer** shows the order of the elements in the source code as numeric overlays on the page
@@ -353,6 +358,7 @@ You can test the order of page elements by using the **Source Order Viewer** in 
 For detailed walkthrough steps, navigate to [Test keyboard support using the Source Order Viewer](test-tab-key-source-order-viewer.md).
 
 
+<!-- ====================================================================== -->
 ## Testing contrast of text colors in various states
 
 The **Inspect** tool reports accessibility issues for one state at a time.  First, we'll describe the limitation of using the Inspect tool to view only the static state of a page element.  Then we'll explain how to inspect other states of a page element, by selecting **\:hov (Toggle Element State)** on the **Styles** tab.
@@ -415,6 +421,7 @@ After the simulated state is applied, you can use the **Inspect** tool again to 
 State simulation is also a good way to check whether you considered different user needs.  For the sidebar navigation menu, you can detect that the `:focus` state has a contrast issue.
 
 
+<!-- ====================================================================== -->
 ## Use the Rendering tool to test accessibility for visual impairment
 
 ### Check contrast issues with dark theme and light themes
@@ -488,6 +495,7 @@ This CSS media query conditionally runs the "smooth scrolling" animation.  But t
 For detailed walkthrough steps, navigate to [Verify that the page is usable with UI animation turned off](test-reduced-ui-motion.md).
 
 
+<!-- ====================================================================== -->
 ## What to do next?
 
 We've covered quite a few tools you can use to make sure that you catch accessibility problems in your products.  Such tools range from automated checks and manual detail checks to simulation of different states and environments.  These tools are summarized in [Accessibility-testing features in DevTools](reference.md).  Automated tools can't find all the problems in a product, because many of the accessibility barriers show up only during interactive use.
@@ -524,7 +532,7 @@ Another way to find out what to do to improve your web product is to use the [we
 [DevToolsVisionDeficiencies]: ./emulate-vision-deficiencies.md "Emulate vision deficiencies | Microsoft Docs"
 <!-- links into test-issues-tool.md -->
 [DevToolsAccessibilityTestIssuesToolViewAccSection]: test-issues-tool.md#view-the-accessibility-section-of-the-issues-tool "View the Accessibility section of the Issues tool - Automatically test a webpage for accessibility issues | Microsoft Docs"
-[DevtoolsAccessibilityTestIssuesToolCheckFieldsLabels]: test-issues-tool.md#verify-that-input-fields-have-labels "Verify that input fields have labels - Automatically test a webpage for accessibility issues | Microsoft Docs" 
+[DevtoolsAccessibilityTestIssuesToolCheckFieldsLabels]: test-issues-tool.md#verify-that-input-fields-have-labels "Verify that input fields have labels - Automatically test a webpage for accessibility issues | Microsoft Docs"
 [DevtoolsAccessibilityTestIssuesToolCheckAltText]: test-issues-tool.md#verify-that-images-have-alt-text "Verify that images have alt text - Automatically test a webpage for accessibility issues | Microsoft Docs "
 [DevtoolsAccessibilityTestIssuesToolCheckContrast]: test-issues-tool.md#verify-that-text-colors-have-enough-contrast "Verify that text colors have enough contrast - Automatically test a webpage for accessibility issues | Microsoft Docs"
 <!-- links into test-inspect-tool.md -->

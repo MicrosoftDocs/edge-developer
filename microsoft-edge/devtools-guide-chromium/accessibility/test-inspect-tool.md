@@ -67,7 +67,7 @@ The top part of the **Inspect** overlay, which is above the **Accessibility** se
 *   Margin and padding in pixels.
 
 
-## Identify nested regions using color highlighting 
+## Identify nested regions using color highlighting
 
 <!-- general info about the Inspect tool, not particularly focused on accessibility -->
 

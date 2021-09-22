@@ -34,7 +34,7 @@ To check whether the page is usable with animations turned off:
 
     Next, emulate the operating system setting to reduce animation, as follows.
 
-1.  Select **Esc** to open the Drawer at the bottom of DevTools.  Select the **More tools** (**+**) button at the top of the Drawer to see the list of tools, and then select **Rendering**.  
+1.  Select **Esc** to open the Drawer at the bottom of DevTools.  Select the **More tools** (**+**) button at the top of the Drawer to see the list of tools, and then select **Rendering**.
 
 1.  In the **Emulate CSS media feature prefers-reduced-motion** dropdown list, select **prefers-reduced-motion: reduced**.
 
@@ -45,8 +45,8 @@ To check whether the page is usable with animations turned off:
 1.  In the webpage, select the blue menu items, such as **Horses** or **Alpacas**.  Now the webpage instantly scrolls to the selected section, rather than using the smooth-scrolling animation.
 
 1.  In the **Rendering** tool, below **Emulate CSS media feature prefers-reduced-motion**, select **No emulation** to remove this setting.
-   
-Notice that the demo webpage still runs the following animations, even with the above media query and emulation settings. When building your web product, ensure you fix all similar animations.  
+
+Notice that the demo webpage still runs the following animations, even with the above media query and emulation settings. When building your web product, ensure you fix all similar animations.
 *  Animation of the blue menu items when you hover over them.
 *  Animation of the circles on the **More** links when you hover over them.
 

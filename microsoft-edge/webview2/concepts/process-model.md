@@ -1,9 +1,9 @@
 ---
-description: The WebView2 process model.
+description: The WebView2 Runtime process model, and how it works with the user data folder and site isolation.
 title: The WebView2 process model
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 09/21/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -19,20 +19,22 @@ The WebView2 Runtime uses the same process model as the Microsoft Edge browser. 
 <!-- ====================================================================== -->
 ## Processes in the WebView2 Runtime
 
-A collection of WebView2 Runtime processes, or WebView2 Process Group, is composed of the following processes:
+A _WebView2 process group_ is a collection of WebView2 Runtime processes.  A WebView2 process group includes the following:
 *  A single browser process.
-*  One or more render processes.
+*  One or more renderer processes.
 *  Other helper processes, such as the GPU process and the Audio service process.
 
 :::image type="complex" source="../media/process-model-1.png" alt-text="Process 1" lightbox="../media/process-model-1.png":::
    Process 1
 :::image-end:::
 
-Other than the browser process, the number and presence of processes in this collection can change as a WebView2 application makes use of WebView2 features.  For example, creating a new WebView from the same `CoreWebView2Environment` with a different domain in the `Source` property will usually start a new renderer process.  The logic that controls when these extra processes are created depends on the Chromium architecture, and is beyond the scope of the WebView2 Runtime.
+The number and presence of processes in a WebView2 process group can change as a WebView2 application makes use of WebView2 features.  (However, there's only a single, specific browser process in a WebView2 process group.)  For example, creating a new WebView from the same `CoreWebView2Environment`, but with a different domain in the `Source` property, will usually start a new renderer process.
 
-For example, the number of renderer processes varies based on the following conditions:
+The number of renderer processes can vary based on the following conditions:
 *   Use of the _Site Isolation_ feature in the WebView2 Runtime.  See [Per-frame renderer processes - Site Isolation](https://developers.google.com/web/updates/2018/09/inside-browser-part1#site-isolation).
 *   The number of distinct disconnected origins that are rendered in instances of WebView2 that use the same user data folder.
+
+The logic that controls when these extra processes are created depends on the Chromium architecture, and is beyond the scope of the WebView2 Runtime.
 
 
 <!-- ====================================================================== -->
@@ -58,6 +60,8 @@ The `CoreWebView2Environment` represents a user data folder and the collection o
 ## Handling process events and lifetime
 
 To react to crashes and hangs in the browser and renderer processes, use the `ProcessFailed` event of `CoreWebView2`.
+
+<!-- todo: add info about the new APIs BrowserProcessExited and ProcessInfo -->
 
 To safely shut down associated browser and renderer processes, use the `Close` method of `CoreWebView2Controller`.
 

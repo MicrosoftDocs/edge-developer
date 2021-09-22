@@ -34,19 +34,19 @@ To emulate a user's selection of preferred color theme:
 
 
 1.  Select the **Issues** tool, and then expand the **Accessibility** section.  Depending on various factors, you might get `Insufficient color contrast` warnings. Notice in **AFFECTED RESOURCES** there are 6 elements with insufficient color contrast.
-    
+
     :::image type="complex" source="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png" alt-text="New contrast issues detected because of the change to light theme" lightbox="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png":::
         New contrast issues detected because of the change to light theme
     :::image-end:::
-    
-    On our demo page, the **Donation status** section of the page is unreadable in light mode, and needs to change. 
-    
+
+    On our demo page, the **Donation status** section of the page is unreadable in light mode, and needs to change.
+
     :::image type="complex" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="The Donation Status section has contrast issues in light mode" lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
         The **Donation Status** section has contrast issues in light mode
     :::image-end:::
-    
+
 1.  In DevTools, select the **Elements** tool, and then select **Ctrl+F** on Windows/Linux or **Command+F** on macOS.  The **Find** textbox appears, to search within the HTML DOM tree.
- 
+
 1.  Enter `scheme`.  The following CSS media queries are found, and the corresponding CSS files can now be updated.
 
     ```html

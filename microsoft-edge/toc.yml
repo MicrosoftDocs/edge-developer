@@ -4,20 +4,8 @@
   href: developer/index.yml
 #  expanded: true
   items:
-    - name: Accessibility
-      items:
-        - name: Accessibility overview
-          href: accessibility/index.md
-        - name: Design
-          href: accessibility/design.md
-        - name: Build
-          href: accessibility/build/index.md
-          items:
-            - name: ARIA and UI automation
-              href: accessibility/build/ARIA-and-UI-Automation.md
-        - name: Test
-          href: accessibility/test.md
-    - name: DevTools
+# equivalent card: DevTools ===================================================
+    - name: Microsoft Edge DevTools
       items:
         - name: DevTools overview
           href: devtools-guide-chromium/index.md
@@ -307,11 +295,12 @@
               href: devtools-guide-chromium/console/api.md
             - name: Console Utilities API reference
               href: devtools-guide-chromium/console/utilities.md
-            - name: DevTools Protocol overview
+            - name: DevTools Protocol
               href: devtools-protocol-chromium/index.md
             - name: Keyboard shortcuts
               href: devtools-guide-chromium/shortcuts/index.md
-    - name: Extensions
+# equivalent card: Extensions =================================================
+    - name: Microsoft Edge extensions
       items:
         - name: Overview of Microsoft Edge extensions
           href: extensions-chromium/index.md
@@ -381,10 +370,7 @@
               href: extensions-chromium/enterprise/hosting-and-updating.md
             - name: Auto-update
               href: extensions-chromium/enterprise/auto-update.md
-    - name: Origin Trials overview
-      href: origin-trials/index.md
-    - name: Privacy whitepaper
-      href: privacy-whitepaper/index.md
+# equivalent card: Progressive Web Apps =======================================
     - name: Progressive Web Apps
       items:
         - name: Progressive Web Apps overview
@@ -403,44 +389,7 @@
           href: progressive-web-apps-chromium/experimental-features/index.md
         - name: Publish a PWA to the Microsoft Store
           href: progressive-web-apps-chromium/microsoft-store.md
-    - name: Playwright overview
-      href: playwright/index.md
-    - name: Puppeteer overview
-      href: puppeteer/index.md
-    - name: Visual Studio for web development
-      href: visual-studio/index.md
-    - name: Visual Studio Code
-      items:
-        - name: Visual Studio Code overview
-          href: visual-studio-code/index.md
-        - name: Debugger for Edge
-          href: visual-studio-code/debugger-for-edge.md
-        - name: Microsoft Edge DevTools extension
-          href: visual-studio-code/microsoft-edge-devtools-extension.md
-        - name: webhint extension
-          href: visual-studio-code/webhint.md
-    - name: Web platform
-      items:
-        - name: Site compatibility-impacting changes coming to Microsoft Edge
-          href: web-platform/site-impacting-changes.md
-        - name: Moving users to Microsoft Edge from IE
-          href: web-platform/ie-to-microsoft-edge-redirection.md
-        - name: Tracking prevention in Microsoft Edge
-          href: web-platform/tracking-prevention.md
-        - name: Detecting Microsoft Edge from your website
-          href: web-platform/user-agent-guidance.md
-        - name: Customize the password reveal button
-          href: web-platform/password-reveal.md
-    - name: Web We Want overview
-      href: web-we-want/index.md
-    - name: WebDriver
-      items:
-        - name: WebDriver overview
-          href: webdriver-chromium/index.md
-        - name: Capabilities and EdgeOptions
-          href: webdriver-chromium/capabilities-edge-options.md
-        - name: Verifying downloads of Selenium Tools for Microsoft Edge
-          href: webdriver-chromium/verify-selenium-tools.md
+# equivalent card: WebView2 ===================================================
     - name: WebView2
       items:
         - name: WebView2 overview
@@ -491,7 +440,7 @@
               href: webview2/how-to/debug.md
             - name: Automate with Edge Driver
               href: webview2/how-to/webdriver.md
-            - name: Use Chromium DevTools Protocol in WebView2
+            - name: Use Chrome DevTools Protocol in WebView2
               href: webview2/how-to/chromium-devtools-protocol.md
             - name: Switch to a preview channel
               href: webview2/how-to/set-preview-channel.md
@@ -518,5 +467,72 @@
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                 - name: COM Interop
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
+# equivalent card: Test and automation ==========================================
+    - name: Test and automation
+      items:
+        - name: DevTools Protocol
+          href: test-and-automation/devtools-protocol-overview-aux-node.md
+        - name: Origin Trials
+          href: origin-trials/index.md
+        - name: Playwright
+          href: playwright/index.md
+        - name: Puppeteer
+          href: puppeteer/index.md
+        - name: WebDriver
+          items:
+            - name: WebDriver overview
+              href: webdriver-chromium/index.md
+            - name: Capabilities and EdgeOptions
+              href: webdriver-chromium/capabilities-edge-options.md
+            - name: Verifying downloads of Selenium Tools for Microsoft Edge
+              href: webdriver-chromium/verify-selenium-tools.md
+        - name: webhint
+          href: test-and-automation/webhint-aux-node.md
+# equivalent card: Web platform ===============================================
+    - name: Web platform
+      items:
+        - name: Site compatibility-impacting changes coming to Microsoft Edge
+          href: web-platform/site-impacting-changes.md
+        - name: Moving users to Microsoft Edge from IE
+          href: web-platform/ie-to-microsoft-edge-redirection.md
+        - name: Tracking prevention in Microsoft Edge
+          href: web-platform/tracking-prevention.md
+        - name: Detecting Microsoft Edge from your website
+          href: web-platform/user-agent-guidance.md
+        - name: Customize the password reveal button
+          href: web-platform/password-reveal.md
+# equivalent card: Microsoft Edge IDE integration =============================
+    - name: Microsoft Edge IDE integration
+      items:
+        - name: Visual Studio overview
+          href: visual-studio/index.md
+        - name: Visual Studio Code
+          items:
+            - name: Visual Studio Code overview
+              href: visual-studio-code/index.md
+            - name: Debugger for Edge
+              href: visual-studio-code/debugger-for-edge.md
+            - name: Microsoft Edge DevTools extension
+              href: visual-studio-code/microsoft-edge-devtools-extension.md
+            - name: webhint extension
+              href: visual-studio-code/webhint.md
+# equivalent card: Accessibility ==============================================
+    - name: Accessibility in Microsoft Edge
+      items:
+        - name: Accessibility overview
+          href: accessibility/index.md
+        - name: Designing accessible websites
+          href: accessibility/design.md
+        - name: Building accessible websites
+          href: accessibility/build/index.md
+        - name: ARIA and UI automation
+          href: accessibility/build/ARIA-and-UI-Automation.md
+        - name: Accessibility testing
+          href: accessibility/test.md
+# SORT into the above card sections ===========================================
+    - name: Privacy whitepaper
+      href: privacy-whitepaper/index.md
+    - name: Web We Want overview
+      href: web-we-want/index.md
     - name: Contact Microsoft Edge team
       href: contact.md

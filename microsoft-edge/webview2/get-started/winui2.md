@@ -32,7 +32,7 @@ In this article, get started creating your first WebView2 app and learn about th
 
 1.  Select **Desktop development with C++**.
 
-1.  Select **Universal Windows Platform development**.  
+1.  Select **Universal Windows Platform development**.
 
 1. On the right, expand **Installation Details** > **Universal Windows Platform development**, and then select **C++ (v142) Universal Windows Platform tools**.
 
@@ -45,7 +45,7 @@ In this article, get started creating your first WebView2 app and learn about th
 
 ## Step 3\: Create a UWP app
 
-1.  In Visual Studio, select **File** > **New** > **Project**.  Or use the startup screen of Visual Studio, then select **Create a new project**.  The **Create a new project** dialog box appears.  
+1.  In Visual Studio, select **File** > **New** > **Project**.  Or use the startup screen of Visual Studio, then select **Create a new project**.  The **Create a new project** dialog box appears.
 
 1.  On the **All languages** dropdown list, select **C#**.
 
@@ -86,7 +86,7 @@ The solution and project is displayed.
 
 1.  Right-click the project in Solution Explorer, and then select **Manage NuGet Packages**.
 
-1.  Select the **Browse** tab. 
+1.  Select the **Browse** tab.
 
 1.  Select the **Include prerelease** check box.
 
@@ -107,12 +107,12 @@ The solution and project is displayed.
 
 ## Step 5\: Instantiate the WebView2 control in XAML code
 
-### Add the project reference for the WebView2 control 
+### Add the project reference for the WebView2 control
 
 1.  In the `MainPage.xaml` file, in the `<Page>` element, add the following attribute below the other `xmlns:` attributes.
 
     ```xml
-    xmlns:control="using:Microsoft.UI.Xaml.Controls" 
+    xmlns:control="using:Microsoft.UI.Xaml.Controls"
     ```
 
 ### Add the WebView2 control to the grid
@@ -164,6 +164,6 @@ Now you can change the content of the WebView2 control to add your own content.
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"  
 [Webview2IndexNextSteps]: ../index.md#see-also "See also - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
 <!-- external links -->
-[GithubMicrosoftMicrosoftUiXamlIssues]: https://github.com/microsoft/microsoft-ui-xaml/issues "Issues - microsoft/microsoft-ui-xaml | GitHub"  
-[GithubMicrosoftMicrosoftUiXamlSpecsWebview2]: https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md "WebView2 spec - microsoft/microsoft-ui-xaml-specs | GitHub"  
-[GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
+[GithubMicrosoftMicrosoftUiXamlIssues]: https://github.com/microsoft/microsoft-ui-xaml/issues "Issues - microsoft/microsoft-ui-xaml | GitHub"
+[GithubMicrosoftMicrosoftUiXamlSpecsWebview2]: https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md "WebView2 spec - microsoft/microsoft-ui-xaml-specs | GitHub"
+[GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"
