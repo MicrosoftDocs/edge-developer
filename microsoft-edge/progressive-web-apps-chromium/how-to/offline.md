@@ -17,7 +17,7 @@ For many years, organizations were reluctant to invest heavily in web-based soft
 <!-- ====================================================================== -->
 ## Use caching to improve the performance of PWAs
 
-With the introduction of [Service Workers][MDNServiceWorker], the web platform added the `Cache` API to provide access to managed cached resources.  This Promise-based API allows developers to store and retrieve many web resources—HTML, CSS, JavaScript, images, JSON, and so on.  Usually the `Cache` API is used in the context of a Service Worker, but the `Cache` API is also available in the main thread on the `window` object.
+With the introduction of [Service Workers][MDNServiceWorker], the web platform added the `Cache` API to provide access to managed cached resources. This Promise-based API allows developers to store and retrieve many web resources—HTML, CSS, JavaScript, images, JSON, and so on. Usually, the Cache API is used within the context of a Service Worker, but it is also available in the main thread on the `window` object.
 
 One common use for the `Cache` API is to pre-cache critical resources when a Service Worker is installed, as shown in the following code snippet.
 
@@ -37,12 +37,12 @@ self.addEventListener( "install", function( event ){
 });
 ```
 
-This code runs during the Service Worker `install` life cycle event.  This code opens a cache named `static-cache` and then, when it has a pointer to the cache, adds four resources to it using the `addAll()` method.  This approach is often coupled with cache retrieval during a `fetch` event.
+This code, which runs during the Service Worker `install` life cycle event, opens a cache named `static-cache` and then, when it has a pointer to the cache, adds four resources to it using the `addAll()` method.  Often the approach is coupled with cache retrieval during a `fetch` event.
 
 ```javascript
 self.addEventListener( "fetch", event => {
-    const request = event.request,
-          url = request.url;
+    const request = event.request;
+    const url = request.url;
 
     // If we are requesting an HTML page.
     if ( request.headers.get("Accept").includes("text/html") ) {
@@ -74,26 +74,21 @@ self.addEventListener( "fetch", event => {
 });
 ```
 
-See also [Using fetch in Service Workers](serviceworker.md#using-fetch-in-service-workers) in the article "Use Service Workers to manage network requests and push notifications".
+The code snippet runs within the Service Worker whenever the browser makes a `fetch` request for this site. Within that event, there is a conditional statement that runs if the request is for an HTML file. The Service Worker checks to see if the file already exists in any cache \(using the `match()` method\). If the request exists in the cache, that cached result is returned. If not, a new `fetch` for that resource is run, a copy of the response is cached for later, and the response is returned. If the `fetch` fails because the network is unavailable, the offline page is returned from the cache.
 
-The above code snippet runs within the Service Worker whenever the browser makes a `fetch` request for this site.  Within that event, there is a conditional statement that runs if the request is for an HTML file.  The Service Worker checks to see if the file already exists in any cache (by using the `match()` method).  If the request exists in the cache, that cached result is returned.  If not, a new `fetch` for that resource is run, a copy of the response is cached for later, and the response is returned.  If the `fetch` fails because the network is unavailable, the offline page is returned from the cache.
+This simple introduction shows how to use caching in your progressive web app (PWA). Each PWA is different and may use different caching strategies. Your code may look different, and you may use different caching strategies for different routes within the same application.
 
-This simple introduction shows how to use caching in your progressive web app (PWA).  Each PWA is different and may use different caching strategies.  Your code might look different, and you can use different caching strategies for different routes within the same application.
-
-
-<!-- ====================================================================== -->
 ## Use IndexedDB in your PWA to store structured data
 
 `IndexedDB` is an API for storing structured data. Similar to the `Cache` API, it is also asynchronous, which means you can use it in the main thread or with Web Workers such as Service Workers.  Use the `IndexedDB` API for storing a significant amount of structured data on the client, or binary data, such as encrypted media objects.  See [MDN primer on using IndexedDB][MDNIndexeddbApiUsing].
 
-
-<!-- ====================================================================== -->
 ## Understand storage options for PWAs
 
-Sometimes you may need to store small amounts of data in order to provide a better offline experience for your users. If that is the case, you might find that the simplicity of the key-value pair system of web storage meets your needs.
+Sometimes you may need to store small amounts of data in order to provide a better offline experience for your users. If that is the case, you may find the simplicity of the key-value pair system of web storage meets your needs.
 
 > [!IMPORTANT]
 > Web Storage is a synchronous process and is not available for use within worker threads such as Service Workers. Heavy usage may create performance issues for your application.
+
 
 There are 2 types of Web Storage: `localStorage` and `sessionStorage`. Each is maintained as a separate data store isolated to the domain that created it. `sessionStorage` persists only for the duration of the browsing session (for example, while the browser is open, which includes refresh and restores). `localStorage` persists until the data is removed by the code, the user, or the browser (for example, when there is limited storage available). The following code snippet shows how to use `localStorage`, which is similar to how `sessionStorage` is used.
 
@@ -105,7 +100,7 @@ var data = {
 localStorage.setItem( window.location, JSON.stringify(data) );
 ```
 
-This code snippet grabs metadata about the current page and stores it in a JavaScript object. Then it stores that value as JSON in `localStorage` using the `setItem()` method, and assigns a key equal to the current `window.location` URL. You can retrieve the information from `localStorage` by using the `getItem()` method.
+This code snippet grabs metadata about the current page and stores it in a JavaScript object. Then it stores that value as JSON in `localStorage` using the `setItem()` method, and assigns a key equal to the current `window.location` URL. You may retrieve the information from `localStorage` using the `getItem()` method.
 
 The following code snippet shows how to use caching with `localstorage` to enumerate cached pages and extract metadata to perform a task, such as building a list of links.
 
@@ -156,9 +151,9 @@ window.addEventListener("offline", function(){
 });
 ```
 
-
-<!-- ====================================================================== -->
 ## See also
+
+To learn more about managing offline scenarios, navigate to the following pages.
 
 *   [Cache][MDNCache]
 *   [IndexedDB][MDNIndexeddbApi]
@@ -168,10 +163,8 @@ window.addEventListener("offline", function(){
 *   [Online and Offline Events][MDNNavigatoronlineOfflineEvents]
 *   [Request with Intent: Caching Strategies in the Age of PWAs][AlistapartRequestIntentCachingStrategiesAgePwas]
 
-
-<!-- ====================================================================== -->
 <!-- links -->
-<!-- external links -->
+
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"
 [MDNIndexeddbApi]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "IndexedDB API | MDN"
 [MDNIndexeddbApiUsing]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "Using IndexDb - IndexDB API | MDN"

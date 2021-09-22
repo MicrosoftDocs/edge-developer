@@ -9,20 +9,20 @@ ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
 ---
-# Use a Web App Manifest to integrate a Progressive Web App into the Operating System  
+# Use a Web App Manifest to integrate a Progressive Web App into the Operating System
 
-A Web App Manifest of a website governs how your Progressive Web App (PWA) looks and behaves when installed on a device. The Web App Manifest provides information such as the name of your app, the file location of icons that represent your app in system menus, and the theme colors that the operating system (OS) uses in the title bar.  
+A Web App Manifest of a website governs how your Progressive Web App (PWA) looks and behaves when installed on a device. The Web App Manifest provides information such as the name of your app, the file location of icons that represent your app in system menus, and the theme colors that the operating system (OS) uses in the title bar.
 
-A Web App Manifest is a JSON file that must be referenced from your website's HTML page using a manifest link. Insert the following code in between the `<head>` and `</head>` tags of your website's HTML page to link to your manifest file:  
+A Web App Manifest is a JSON file that must be referenced from your website's HTML page using a manifest link. Insert the following code in between the `<head>` and `</head>` tags of your website's HTML page to link to your manifest file:
 
 ```html
 <link rel="manifest" href="/manifest.json">
-```  
+```
 
 > [!NOTE]
-> The manifest file's content must be valid JSON, but the file can also be named like `app_name.webmanifest`. If you do choose to use the `webmanifest` extension, verify that your HTTP server serves it with the `application/manifest+json` MIME type.  
+> The manifest file's content must be valid JSON, but the file can also be named like `app_name.webmanifest`. If you do choose to use the `webmanifest` extension, verify that your HTTP server serves it with the `application/manifest+json` MIME type.
 
-At a minimum, a manifest file should contain the following information:  
+At a minimum, a manifest file should contain the following information:
 
 ```json
 {
@@ -31,21 +31,21 @@ At a minimum, a manifest file should contain the following information:
     "short_name": "SamplePWA",
     "description": "A sample PWA for testing purposes"
 }
-```  
+```
 
-A PWA can be customized further using other manifest members such as the following:  
+A PWA can be customized further using other manifest members such as the following:
 
-| Member | Description |  
-|:--- |:--- |  
-| `start_url` | The preferred URL that should be navigated to when the operating system launches your app. |  
-| `scope` | Defines the navigation scope for the app. Outside of this scope, the visited page reverts to a normal webpage, not a PWA. This defaults to `start_url`. |  
-| `display` | What the app should look like. This changes how much of the browser UI is shown to the user. |  
+| Member | Description |
+|:--- |:--- |
+| `start_url` | The preferred URL that should be navigated to when the operating system launches your app. |
+| `scope` | Defines the navigation scope for the app. Outside of this scope, the visited page reverts to a normal webpage, not a PWA. This defaults to `start_url`. |
+| `display` | What the app should look like. This changes how much of the browser UI is shown to the user. |
 | `theme_color` | The default theme color for the app. This affects how the OS displays the site. |
-| `background_color` | The background color of the window where the app is launched, before the stylesheet is applied. |  
-| `orientation` | On supporting devices, this defines the default orientation for the app (such as landscape or portrait). |  
-| `icons` | Array of icon image objects that are used by the OS in different contexts. |  
+| `background_color` | The background color of the window where the app is launched, before the stylesheet is applied. |
+| `orientation` | On supporting devices, this defines the default orientation for the app (such as landscape or portrait). |
+| `icons` | Array of icon image objects that are used by the OS in different contexts. |
 
-Below is a manifest file that uses these manifest members:  
+Below is a manifest file that uses these manifest members:
 
 ```json
 {
@@ -66,11 +66,11 @@ Below is a manifest file that uses these manifest members:
         }
     ]
 }
-```  
+```
 
-To learn more about manifest members, navigate to the [Web app manifests documentation][MDNWebAppManifests].  
+To learn more about manifest members, navigate to the [Web app manifests documentation][MDNWebAppManifests].
 
-Using a manifest also enables you to unlock powerful features that allow your app to behave like native apps, like adding app shortcuts or identifying as a share target.  
+Using a manifest also enables you to unlock powerful features that allow your app to behave like native apps, like adding app shortcuts or identifying as a share target.
 
 <!-- todo: when these experimental features land in the manifest and so are no longer experimental, move the "URI Protocol Handling" & "URL Link Handling" sections from article [Experimental features in Progressive Web Apps (PWAs)](experimental-features/index.md) into the present article, but preserve the two headings there, move them to the bottom, with a link pointing to the moved sections in this article. -->
 
@@ -78,7 +78,7 @@ Using a manifest also enables you to unlock powerful features that allow your ap
 <!-- ====================================================================== -->
 ## Use shortcuts to provide quick access to features
 
-Most operating systems provide quick access to key app features using shortcuts on the context menu connected to the icon of the app.  To use shortcuts in your PWA, include the `shortcuts` property in your Web App Manifest.  The following code snippet shows how to define a shortcut in your web app manifest.  
+Most operating systems provide quick access to key app features using shortcuts on the context menu connected to the icon of the app.  To use shortcuts in your PWA, include the `shortcuts` property in your Web App Manifest.  The following code snippet shows how to define a shortcut in your web app manifest.
 
 ```json
 "shortcuts": [
@@ -100,15 +100,15 @@ Most operating systems provide quick access to key app features using shortcuts 
         "url": "/subscriptions?sort=desc"
     }
 ]
-```  
+```
 
-To learn more about shortcuts, navigate to [Define app shortcuts](shortcuts.md).  
+To learn more about shortcuts, navigate to [Define app shortcuts](shortcuts.md).
 
 
 <!-- ====================================================================== -->
 ## Identify your app as a Share Target
 
-To enable users to quickly share links and files with native applications, use the `share_target` object in the Web App Manifest.  An `action` page is similar to a form.  In the `share_target` object, you define the `action` page and the parameters that you expect to be passed into the `action` page.  
+To enable users to quickly share links and files with native applications, use the `share_target` object in the Web App Manifest.  An `action` page is similar to a form.  In the `share_target` object, you define the `action` page and the parameters that you expect to be passed into the `action` page.
 
 ```json
 "share_target": {
@@ -119,11 +119,11 @@ To enable users to quickly share links and files with native applications, use t
         "url": "link"
     }
 }
-```  
+```
 
-The above `share_target` object establishes `/share.html` as the `action` page for a share.  This example also defines three parameters that would be passed to that `action` page: `title`, `text`, and `url`.  
+The above `share_target` object establishes `/share.html` as the `action` page for a share.  This example also defines three parameters that would be passed to that `action` page: `title`, `text`, and `url`.
 
-To learn more about using the Share Target feature, navigate to [Share with other apps](share.md).  
+To learn more about using the Share Target feature, navigate to [Share with other apps](share.md).
 
 
 <!-- ====================================================================== -->

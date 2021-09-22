@@ -8,16 +8,18 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, Microsoft Store
 ---
-# Publish a Progressive Web App in the Microsoft Store
 
-Publishing your Progressive Web App (PWA) in the [Microsoft Store][WindowsUwpPublishIndex] brings the following advantages.
+# Publish your Progressive Web App to the Microsoft Store
+
+Publishing your Progressive Web App \(PWA\) to the [Microsoft Store][WindowsUwpPublishIndex] brings the following advantages.
 
 :::row:::
    :::column span="1":::
       **Discoverability**
    :::column-end:::
    :::column span="2":::
-      Users naturally look for apps in the app store.  When you publish to the Microsoft Store, millions of Windows users can discover your PWA alongside other Windows apps.  The Store showcases apps through categories, curated collections, and more.  The app discovery portals provide an easy browsing and shopping experience for potential users of your app.  You can even [enhance your Store listing][WindowsUwpPublishAppScreenshotsImages] with screenshots, a hero image, and video trailers.
+
+      Users naturally look for apps in the app store.  When you publish to the Microsoft Store, millions of Windows users may discover your PWA alongside other Windows apps.  The Store showcases apps through categories, curated collections, and more.  The app discovery portals provide an easy browsing and shopping experience for potential users of your app.  You may even [enhance your Store listing][WindowsUwpPublishAppScreenshotsImages] with screenshots, a hero image, and video trailers.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -25,7 +27,8 @@ Publishing your Progressive Web App (PWA) in the [Microsoft Store][WindowsUwpPub
       **Trustworthiness**
    :::column-end:::
    :::column span="2":::
-      Windows customers know they can trust their Microsoft Store purchases and downloads, because they adhere to the rigorous Microsoft [quality and safety standards][LegalWindowsAgreementsStorePolicies].
+
+      Windows customers know they may trust their Microsoft Store purchases and downloads, because they adhere to the rigorous Microsoft [quality and safety standards][LegalWindowsAgreementsStorePolicies].
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -48,7 +51,6 @@ Publishing your Progressive Web App (PWA) in the [Microsoft Store][WindowsUwpPub
 To publish your PWA to the Microsoft Store, no code changes are required.  Instead, you create an app reservation, package your PWA, and submit your package to the Store.  The following sections explain the steps.
 
 
-<!-- ====================================================================== -->
 ## Create an app reservation
 
 [Windows Partner Center][MicrosoftPartnerDashboardWindowsOverview] is the hub for you to submit your app to the Microsoft Store.
@@ -75,11 +77,13 @@ To create an app reservation, complete the following actions.
     1.  Type the name of your app in the prompt.
     1.  Choose `Reserve product name`.
 
+
     :::image type="complex" source="../media/windows-partner-center-create-app.msft.png" alt-text="Create an app reservation in Windows Partner Center" lightbox="../media/windows-partner-center-create-app.msft.png":::
        Create an app reservation in Windows Partner Center
     :::image-end:::
 
 1.  To display your publisher details for use in the [Package your PWA](#package-your-pwa-for-the-store) section, choose **Product management** > **Product Identity**.
+
 
     :::image type="complex" source="../media/windows-partner-center-publisher-info.msft.png" alt-text="Copy your publisher information from Windows Partner Center" lightbox="../media/windows-partner-center-publisher-info.msft.png":::
        Copy your publisher information from Windows Partner Center
@@ -91,7 +95,6 @@ To create an app reservation, complete the following actions.
     *   **Publisher Display Name**
 
 
-<!-- ====================================================================== -->
 ## Package your PWA for the Store
 
 Now that you have your app publishing information, generate a Windows app package for your PWA.
@@ -107,6 +110,7 @@ To generate an app package, complete the following actions.
     *   **Publisher ID**
     *   **Publisher Display Name**
 
+
     :::image type="complex" source="../media/pwabuilder-windows-package-options.png" alt-text="Paste publisher information into PWABuilder" lightbox="../media/pwabuilder-windows-package-options.png":::
        Paste publisher information into PWABuilder
     :::image-end:::
@@ -117,8 +121,7 @@ To generate an app package, complete the following actions.
 Your download is a `.zip` archive that contains an `.msixbundle` file and a `.classic.appxbundle` file.  The two app packages allow your PWA to run on a wide variety of Windows versions.  For more information, navigate to [What is a classic package?][GithubPwaBuilderPwabuilderWindowsChromiumDocsClassicPackageMd].
 
 
-<!-- ====================================================================== -->
-## Submit your app package to the Store
+### Submit your app package to the Store
 
 To submit your app to the Store, complete the following actions.
 
@@ -154,7 +157,6 @@ Use this feature to measure distinct traffic from your Store-installed PWA.  Bas
 This feature was introduced in Microsoft Edge version 91.
 
 
-<!-- ====================================================================== -->
 ## See also
 
 PWABuilder provides more documentation to help you get your PWA in the Microsoft Store.
@@ -166,8 +168,8 @@ PWABuilder provides more documentation to help you get your PWA in the Microsoft
 *   [App packaging explainer][GithubPwaBuilderPwabuilderWindowsChromiumDocsClassicPackageMd]
 
 
-<!-- ====================================================================== -->
 <!-- links -->
+
 [LegalWindowsAgreementsStorePolicies]: /legal/windows/agreements/store-policies "Microsoft Store Policies | Microsoft Docs"
 
 [WindowsUwpPublishAnalytics]: /windows/uwp/publish/analytics "Analyze app performance | Microsoft Docs"

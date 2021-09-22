@@ -22,7 +22,7 @@ Microsoft Edge version 93 became the Beta channel of Microsoft Edge on August 3,
 <!-- ====================================================================== -->
 ## Window Controls Overlay origin trials
 
-To have more control over the title bar area that's currently displayed in standalone display mode, you may want to experiment with Window Controls Overlay.  Window Controls Overlay (WCO) is a set of features that work together to provide just the essential controls needed for the app window.  This layout frees up more space for the web content layer. WCO is available for installed desktop PWAs.
+To have more control over the title bar area that's currently displayed in standalone display mode, you may want to experiment with Window Controls Overlay. Window Controls Overlay (WCO) is a set of features that work together to provide just the essential controls needed for the app window. This layout frees up more space for the web content layer. WCO is available for installed desktop PWAs.
 
 Learn more about experimenting with Window Controls Overlay at [Experimental features in Progressive Web Apps (PWAs)][ExpWCO].
 
@@ -107,8 +107,11 @@ This feature is being rolled out gradually to all users.  In the meantime, if yo
 
 Installed sites and PWAs that were running before an unexpected shutdown will now restore (that is, they will be restarted) when the system recovers.
 
-An unexpected shutdown can occur due to process failure, system restart, or power outage.  Before this change, installed sites and PWAs had indeterminate behavior upon system restore.
+An unexpected shutdown can occur due to process failure, system restart, or power outage. Before this change, installed sites and PWAs had indeterminate behavior upon system restore.
 
+<!-- links -->
+
+<!--[ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]: /archive/microsoft-edge/legacy/developer/progressive-web-apps/index#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->
 
 <!-- ====================================================================== -->
 <!-- links -->
