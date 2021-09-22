@@ -471,7 +471,8 @@
     - name: Test and automation
       items:
         - name: DevTools Protocol
-          href: test-and-automation/devtools-protocol-overview-aux-node.md
+          href: devtools-protocol-chromium/index.md
+          # href: test-and-automation/devtools-protocol-overview-aux-node.md
         - name: Origin Trials
           href: origin-trials/index.md
         - name: Playwright
