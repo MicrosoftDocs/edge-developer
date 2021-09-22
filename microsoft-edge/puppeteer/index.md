@@ -95,26 +95,26 @@ This is just a simple example of the automation and testing scenarios enabled by
 *  [Contacting the Microsoft Edge team][Contact]
 <!--
 probably commented out here b/c already in main body
-*   [WebDriver (Chromium)][WebdriverChromiumMain]  
-*   [WebDriver (EdgeHTML)][ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]  
-*   [Chrome DevTools Protocol Viewer on GitHub][GithubChromedevtoolsProtocol]  
-*   [Microsoft Edge:  Making the web better through more open source collaboration on Microsoft Experience Blog][MicrosoftBlogsWindowsExperience20181206]  
-*   [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload]  
-*   [Chromium on The Chromium Projects][ChromiumHome]  
-*   [Node.js][NodejsMain]  
-*   [Puppeteer][PuppeteerMain]  
-*   [puppeteer vs. puppeteer-core][PuppeteerApivscore]  
-*   [page.setViewport() on Puppeteer][PuppeteerApipagesetviewport]  
+*   [WebDriver (Chromium)][WebdriverChromiumMain]
+*   [WebDriver (EdgeHTML)][ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]
+*   [Chrome DevTools Protocol Viewer on GitHub][GithubChromedevtoolsProtocol]
+*   [Microsoft Edge:  Making the web better through more open source collaboration on Microsoft Experience Blog][MicrosoftBlogsWindowsExperience20181206]
+*   [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload]
+*   [Chromium on The Chromium Projects][ChromiumHome]
+*   [Node.js][NodejsMain]
+*   [Puppeteer][PuppeteerMain]
+*   [puppeteer vs. puppeteer-core][PuppeteerApivscore]
+*   [page.setViewport() on Puppeteer][PuppeteerApipagesetviewport]
 *   [Headless browser on Wikipedia][WikiHeadlessBrowser]
--->  
+-->
 
 
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver (Chromium) | Microsoft Docs"  
+[WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver (Chromium) | Microsoft Docs"
 <!-- external links -->
-[GithubChromedevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Chrome DevTools Protocol Viewer | GitHub"  
+[GithubChromedevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Chrome DevTools Protocol Viewer | GitHub"
 
 [MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge:  Making the web better through more open-source collaboration | Microsoft Experience Blog"
 
@@ -132,6 +132,6 @@ probably commented out here b/c already in main body
 
 [TwitterIntentTweetEdgedevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools - Post a Tweet | Twitter"
 
-[WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "Headless browser | Wikipedia"  
+[WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "Headless browser | Wikipedia"
 
-<!--  [ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->  
+<!--  [ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->

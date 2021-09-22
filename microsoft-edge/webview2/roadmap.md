@@ -62,7 +62,7 @@ You can access WebView2 controls in your applications using [Windows UI Library 
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[ConceptDistribution]: ./concepts/distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"  
+[ConceptDistribution]: ./concepts/distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
 <!-- external links -->
 [WindowsAppSDKRoadmap]: https://github.com/microsoft/WindowsAppSDK/blob/main/docs/roadmap.md "Roadmap"
 

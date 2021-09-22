@@ -90,7 +90,7 @@ To filter more and expand the choice, choose the triangle icon next to it.  That
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
+[DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"
 
 [MdnDocsWebJavascriptGuideRegularExpressions]: https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions "Regular Expressions | MDN"
 

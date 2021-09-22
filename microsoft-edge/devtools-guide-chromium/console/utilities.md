@@ -764,8 +764,8 @@ values(object);
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
-[DevToolsConsoleApiConsoleDirObject]: ./api.md#dir "dir - Console API reference | Microsoft Docs"  
+[DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"
+[DevToolsConsoleApiConsoleDirObject]: ./api.md#dir "dir - Console API reference | Microsoft Docs"
 
 [DevtoolsJavascriptBreakpoints]: ../javascript/breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
 

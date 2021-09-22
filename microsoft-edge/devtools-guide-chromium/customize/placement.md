@@ -91,8 +91,8 @@ DevTools may be undocked to a separate window, which you may move to a separate 
     You may also access the commands from the [main menu](#change-placement-from-the-main-menu).
 
     :::image type="complex" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="The Undock command" lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
-       The Undock command  
-    :::image-end:::  
+       The Undock command
+    :::image-end:::
 
 
 <!-- ====================================================================== -->
@@ -113,9 +113,9 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[DevtoolsCommandMenu]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"  
+[DevtoolsCommandMenu]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques

@@ -89,8 +89,8 @@ DevTools does not update tables in real-time.  To update the data in a table, co
 1.  Choose **Clear site data**.
 
     :::image type="complex" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="The Clear Site Data button" lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
-       The **Clear Site Data** button  
-    :::image-end:::  
+       The **Clear Site Data** button
+    :::image-end:::
 
 
 <!-- ====================================================================== -->
@@ -102,7 +102,7 @@ DevTools does not update tables in real-time.  To update the data in a table, co
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
 
 [W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Web SQL database | W3C"
 

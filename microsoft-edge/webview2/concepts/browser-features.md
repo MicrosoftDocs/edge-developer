@@ -189,6 +189,6 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 
 [GithubMicrosoftedgeWebview2feedbackIssues308]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/308 "Add support for HTML5 Notification API (#308) | GitHub"
 
-[PeterExperimentsChromiumCommandLineSwitches]: https://peter.sh/experiments/chromium-command-line-switches "List of Chromium Command Line Switches | Peter Beverloo"  
+[PeterExperimentsChromiumCommandLineSwitches]: https://peter.sh/experiments/chromium-command-line-switches "List of Chromium Command Line Switches | Peter Beverloo"
 
-<!-- [Webview2ReferenceDownloadApi]: ./download-api.md "download API | Microsoft Docs" -->  
+<!-- [Webview2ReferenceDownloadApi]: ./download-api.md "download API | Microsoft Docs" -->

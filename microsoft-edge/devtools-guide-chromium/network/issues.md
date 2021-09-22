@@ -100,7 +100,7 @@ Do you have a network issue that should be added to this guide?
 *   Send a tweet to [@EdgeDevTools][MicrosoftEdgeTweet].
 *   Choose **Send Feedback** \(![Send Feedback](../media/smile-icon.msft.png)\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.
 *   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->
-    
+
 
 <!-- ====================================================================== -->
 ## See also
@@ -111,7 +111,7 @@ Do you have a network issue that should be added to this guide?
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[NetworkPerformance]: ./index.md "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"  
+[NetworkPerformance]: ./index.md "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"
 
 [MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]
 

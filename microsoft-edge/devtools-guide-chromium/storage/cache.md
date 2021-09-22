@@ -102,8 +102,8 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
 1.  Choose **Clear site data**.
 
     :::image type="complex" source="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png" alt-text="The Clear Site Data button" lightbox="../media/storage-application-clear-storage-cache-storage-checkbox-clear-site-data-button.msft.png":::
-       The **Clear Site Data** button  
-    :::image-end:::  
+       The **Clear Site Data** button
+    :::image-end:::
 
 
 <!-- ====================================================================== -->
@@ -115,8 +115,8 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
-[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Log network activity | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"
+[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Log network activity | Microsoft Docs"
 
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"
 [MDNHTTPCaching]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP caching | MDN"

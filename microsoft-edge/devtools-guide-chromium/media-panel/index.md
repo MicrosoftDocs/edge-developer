@@ -101,8 +101,8 @@ You may choose to hide \(or show\) each media player for an easier debugging exp
 1.  To download the media player info as a JSON file, hover on a media player, open the contextual menu \(right-click\), and choose **Save player info**.
 
     :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="Export media information" lightbox="../media/media-panel-save.msft.png":::
-       Export media information  
-    :::image-end:::  
+       Export media information
+    :::image-end:::
 
 
 <!-- ====================================================================== -->
@@ -114,7 +114,7 @@ You may choose to hide \(or show\) each media player for an easier debugging exp
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Open Microsoft Edge (Chromium) DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Open Microsoft Edge (Chromium) DevTools | Microsoft Docs"
 
 [DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Get started with remote debugging Android devices | Microsoft Docs"
 
@@ -127,7 +127,7 @@ You may choose to hide \(or show\) each media player for an easier debugging exp
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen

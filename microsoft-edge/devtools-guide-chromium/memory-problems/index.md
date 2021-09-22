@@ -240,10 +240,10 @@ After you have identified the problem, you are able to use an **Allocation instr
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[DevtoolsEvaluatePerformanceReferenceRecord]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-performance "Record performance - Performance Analysis Reference"  
-<!-- image links -->  
-[ImageForceGarbageCollectionIcon]: ../media/collect-garbage-icon.msft.png  
-[ImageStopRecordingIcon]: ../media/stop-recording-icon.msft.png  
+[DevtoolsEvaluatePerformanceReferenceRecord]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-performance "Record performance - Performance Analysis Reference"
+<!-- image links -->
+[ImageForceGarbageCollectionIcon]: ../media/collect-garbage-icon.msft.png
+[ImageStopRecordingIcon]: ../media/stop-recording-icon.msft.png
 
 <!--[RAIL]: /profile/evaluate-performance/rail  -->
 <!--[recording]: /profile/evaluate-performance/timeline-tool#make-a-recording ""  -->

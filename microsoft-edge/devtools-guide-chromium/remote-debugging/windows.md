@@ -168,8 +168,8 @@ The file explorer does not launch from the DevTools in the **Sources** tool or i
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[DevtoolsIndex]: ../index.md "Microsoft Edge Developer Tools overview | Microsoft Docs"  
-[DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Debug Progressive Web Apps | Microsoft Docs"  
+[DevtoolsIndex]: ../index.md "Microsoft Edge Developer Tools overview | Microsoft Docs"
+[DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Debug Progressive Web Apps | Microsoft Docs"
 
 [DotnetFrameworkWcfFeatureDetailsHowToViewCertificatesWithMmcSnapInViewCertificatesWithCertificateManagerTool]: /dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in#view-certificates-with-the-certificate-manager-tool "View certificates with the Certificate Manager tool - How to: View certificates with the MMC snap-in | Microsoft Docs"
 

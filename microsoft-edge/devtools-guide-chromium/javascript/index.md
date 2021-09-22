@@ -230,8 +230,8 @@ A couple of code stepping controls aren't explained in this article.  For more i
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[DevToolsJavascriptReference]: ./reference.md "Use the debugger features | Microsoft Docs"  
-[DevToolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"  
+[DevToolsJavascriptReference]: ./reference.md "Use the debugger features | Microsoft Docs"
+[DevToolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"
 [DevToolsJavscriptBreakpoints]: ./breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
 [DevToolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "Step through code - Use the debugger features | Microsoft Docs"
 

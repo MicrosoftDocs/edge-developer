@@ -140,8 +140,8 @@ To display a push notification to a user, a **service worker** must first use th
 1.  Choose an event to view the details in the space below the table.
 
     :::image type="complex" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="View the details of an event in the Push Messaging pane" lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
-       View the details of an event in the **Push Messaging** pane  
-    :::image-end:::  
+       View the details of an event in the **Push Messaging** pane
+    :::image-end:::
 
 
 <!-- ====================================================================== -->
@@ -153,9 +153,9 @@ To display a push notification to a user, a **service worker** must first use th
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-<!--[BackgroundFetchAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2018/12/background-fetch.md "Background Fetch API"  -->  
+<!--[BackgroundFetchAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2018/12/background-fetch.md "Background Fetch API"  -->
 <!--[BackgroundSyncAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2015/12/background-sync.md  "Background Sync API"  -->
-[OpenDevTools]: ../open/index.md "Open Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
+[OpenDevTools]: ../open/index.md "Open Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
 
 [MDNNotifications]: https://developer.mozilla.org/docs/Web/API/Notifications_API "Notifications API | MDN"
 [MDNPush]: https://developer.mozilla.org/docs/Web/API/Push_API "Push API | MDN"

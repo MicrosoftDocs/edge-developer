@@ -172,9 +172,9 @@ By default, Snippets are only available within DevTools, but you can also save t
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[DevtoolsConsoleIndex]: ../console/index.md "Console overview | Microsoft Docs"  
-[DevToolsSourcesTool]: ../sources/index.md "Sources tool overview | Microsoft Docs"  
-[DevtoolsJavascriptOverrides]: ./overrides.md "Overrides | Microsoft Docs"  
+[DevtoolsConsoleIndex]: ../console/index.md "Console overview | Microsoft Docs"
+[DevToolsSourcesTool]: ../sources/index.md "Sources tool overview | Microsoft Docs"
+[DevtoolsJavascriptOverrides]: ./overrides.md "Overrides | Microsoft Docs"
 
 [MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Scratchpad | MDN"
 [WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "Bookmarklet | Wikipedia"

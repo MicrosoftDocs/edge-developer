@@ -115,7 +115,7 @@ If you expand the **Sources** sub-panel you now display a new file with the cust
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[BabelJS]: https://babeljs.io "Babel is a JavaScript compiler"  
+[BabelJS]: https://babeljs.io "Babel is a JavaScript compiler"
 
 [CoffeeScriptMain]: https://coffeescript.org "CoffeeScript"
 

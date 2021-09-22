@@ -54,7 +54,7 @@ Consider the following when sharing user data folders:
 To isolate different parts of your application, or when sharing data between WebView2 controls is not needed, you can use different user data folders.  For example, an application may consist of two WebView2 controls, one for displaying an advertisement and the other for displaying application content.  You can use different user data folders for each WebView2 control.
 
 > [!NOTE]
-> Each WebView2 browser process consumes additional memory and disk space.  Therefore, we recommend not running a WebView2 control with too many different user data folders at the same time.  
+> Each WebView2 browser process consumes additional memory and disk space.  Therefore, we recommend not running a WebView2 control with too many different user data folders at the same time.
 
 
 <!-- ====================================================================== -->

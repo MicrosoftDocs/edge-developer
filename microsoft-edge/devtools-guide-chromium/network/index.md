@@ -361,8 +361,8 @@ Navigate to the [Network Reference][DevtoolsNetworkReference] to discover more D
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-<!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->  
-[DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"  
+<!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->
+[DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"
 [DevtoolsNetworkReference]: ./reference.md "Network analysis reference | Microsoft Docs"
 [DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Filter requests - Network analysis reference | Microsoft Docs"
 [DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "Hide the Overview pane - Network analysis reference | Microsoft Docs"

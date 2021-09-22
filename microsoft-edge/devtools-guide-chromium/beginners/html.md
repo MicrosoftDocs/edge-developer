@@ -295,8 +295,8 @@ You're almost done. You made a few changes to the page in DevTools, but they're 
 1.  Go back to the **editor tab** and replace the content of your `index.html` file with the code that you copied.
 
     :::image type="complex" source="media/beginners-html-copy2.msft.png" alt-text="How your index.html file should look" lightbox="media/beginners-html-copy2.msft.png":::
-       How your `index.html` file should look  
-    :::image-end:::  
+       How your `index.html` file should look
+    :::image-end:::
 
 
 ## Next steps
@@ -315,7 +315,7 @@ You're almost done. You made a few changes to the page in DevTools, but they're 
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[DevToolsBeginnersCss]: ./css.md "DevTools For Beginners: Get Started with CSS | Microsoft Docs"  
+[DevToolsBeginnersCss]: ./css.md "DevTools For Beginners: Get Started with CSS | Microsoft Docs"
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"
 

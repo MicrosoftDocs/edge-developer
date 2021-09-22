@@ -206,8 +206,8 @@ debug(hey); // This does not work.  hey() is out of scope.
 Ensuring the target function is in scope is tricky if you are running the `debug()` method from the DevTools Console.  Here is one strategy:
 
 1.  Set a [line-of-code breakpoint](#line-of-code-breakpoints) somewhere where the function is in scope.
-1.  Trigger the breakpoint.  
-1.  Run the `debug()` method in the DevTools Console while the code is still paused on your line-of-code breakpoint.  
+1.  Trigger the breakpoint.
+1.  Run the `debug()` method in the DevTools Console while the code is still paused on your line-of-code breakpoint.
 
 
 <!-- ====================================================================== -->
@@ -222,9 +222,9 @@ Ensuring the target function is in scope is tricky if you are running the `debug
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[DevtoolsJavascriptReference]: ./reference.md "Use the debugger features | Microsoft Docs"  
-[DevtoolsJavascriptIndex]: index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
-[DevtoolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"  
+[DevtoolsJavascriptReference]: ./reference.md "Use the debugger features | Microsoft Docs"
+[DevtoolsJavascriptIndex]: index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"
 
 [MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "Fetch API | MDN"
 

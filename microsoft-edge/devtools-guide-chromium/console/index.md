@@ -179,7 +179,7 @@ You changed the main heading of the webpage to **Rocking the Console**.  The **C
 <!-- ====================================================================== -->
 ## See also
 
-*  [Use the Console to interact with the DOM][DevtoolsConsoleConsoleDomInteraction].  
+*  [Use the Console to interact with the DOM][DevtoolsConsoleConsoleDomInteraction].
 *  [Console reference][DevtoolsConsoleReference]
 *  [Console Utilities API reference][DevtoolsConsoleUtilities]
 *  [Console API reference][DevtoolsConsoleApi]
@@ -189,15 +189,15 @@ You changed the main heading of the webpage to **Rocking the Console**.  The **C
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"  
-[DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "Fixing JavaScript errors that are reported in the Console | Microsoft Docs"  
-[DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "Use the Console to interact with the DOM | Microsoft Docs" 
-[DevtoolsConsoleConsoleFilters]: ./console-filters.md "Filter Console messages | Microsoft Docs"  
-[DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Console as a JavaScript environment | Microsoft Docs"  
-[DevtoolsConsoleConsoleLog]: ./console-log.md "Log messages in the Console tool | Microsoft Docs"  
-[DevtoolsConsoleReference]: ./reference.md "Console reference | Microsoft Docs"  
-[DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
-[DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"  
+[DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"
+[DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "Fixing JavaScript errors that are reported in the Console | Microsoft Docs"
+[DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "Use the Console to interact with the DOM | Microsoft Docs"
+[DevtoolsConsoleConsoleFilters]: ./console-filters.md "Filter Console messages | Microsoft Docs"
+[DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Console as a JavaScript environment | Microsoft Docs"
+[DevtoolsConsoleConsoleLog]: ./console-log.md "Log messages in the Console tool | Microsoft Docs"
+[DevtoolsConsoleReference]: ./reference.md "Console reference | Microsoft Docs"
+[DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"
+[DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
 <!-- external links -->
 [GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html "Console messages examples: log, info, error, and warn | GitHub"
 [MdnDocsWebApiWindow]: https://developer.mozilla.org/docs/Web/API/Window "Window | MDN"

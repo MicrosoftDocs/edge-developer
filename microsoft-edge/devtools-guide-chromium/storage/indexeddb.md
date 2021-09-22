@@ -139,8 +139,8 @@ IndexedDB keys and values are not editable from the **Application** tool.  Since
 1.  Choose **Clear site data**.
 
     :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="The Clear storage pane" lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
-       The **Clear storage** pane  
-    :::image-end:::  
+       The **Clear storage** pane
+    :::image-end:::
 
 
 <!-- ====================================================================== -->
@@ -152,8 +152,8 @@ IndexedDB keys and values are not editable from the **Application** tool.  Since
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
-[DevtoolsJavascriptSnippets]: ../javascript/snippets.md "Run snippets of JavaScript on any page with Microsoft Edge DevTools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"
+[DevtoolsJavascriptSnippets]: ../javascript/snippets.md "Run snippets of JavaScript on any page with Microsoft Edge DevTools | Microsoft Docs"
 
 [ChromiumIssue943770]: https://crbug.com/943770 "943770 - DevTools: Show iframe IndexedDB databases - chromium - Monorail"
 

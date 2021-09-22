@@ -46,7 +46,7 @@ When constructing a message to send into a WebView, prefer using `PostWebMessage
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[Webview2Main]: ../index.md "Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
+[Webview2Main]: ../index.md "Introduction to Microsoft Edge WebView2 | Microsoft Docs"
 
 [Webview2ReferenceWin32Icorewebview2settings]: /microsoft-edge/webview2/reference/win32/icorewebview2settings "interface ICoreWebView2Settings | Microsoft Docs"
 

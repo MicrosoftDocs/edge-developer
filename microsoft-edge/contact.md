@@ -60,11 +60,11 @@ Share your feedback to help build rich WebView2 experiences.  To submit feature 
 <!-- ====================================================================== -->
 ## Visual Studio for web development
 
-The Microsoft Visual Studio and Microsoft Edge teams want to learn more about how you work with JavaScript in Visual Studio and [use Visual Studio for web development](visual-studio/index.md).  To send your feedback, select the **Send Feedback** icon in Visual Studio or tweet [@VisualStudio and @EdgeDevTools][TwitterIntentTweetViualstudioEdgdevtools].  
+The Microsoft Visual Studio and Microsoft Edge teams want to learn more about how you work with JavaScript in Visual Studio and [use Visual Studio for web development](visual-studio/index.md).  To send your feedback, select the **Send Feedback** icon in Visual Studio or tweet [@VisualStudio and @EdgeDevTools][TwitterIntentTweetViualstudioEdgdevtools].
 
 :::image type="complex" source="visual-studio/media/feedback-icon.png" alt-text="The Send Feedback icon in Visual Studio" lightbox="visual-studio/media/feedback-icon.png":::
-   The **Send Feedback** icon in Visual Studio  
-:::image-end:::  
+   The **Send Feedback** icon in Visual Studio
+:::image-end:::
 
 
 <!-- ====================================================================== -->
@@ -90,7 +90,7 @@ You can submit a suggestion at [The Web We Want initiative](web-we-want/index.md
 
 The Web We Want is a cross-browser initiative to identify missing features for web standards or browsers.  Use this communication channel to let browser vendors and standards groups know your request.
 
-*  Submit web platform or developer tool features.  
+*  Submit web platform or developer tool features.
 *  View the list of submitted Wants, and vote on them.
 *  Participate in discussions.
 *  Use the links to resources.
@@ -103,8 +103,8 @@ You can follow the Web We Want initiative on Twitter or LinkedIn, and participat
 [PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a Tweet"
 [EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"
 [GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "New Issue - MicrosoftDocs/edge-developer - GitHub"
-[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"  
-[TwitterIntentTweetViualstudioEdgdevtools]: https://twitter.com/intent/tweet?text=@VisualStudio+@EdgeDevTools "Tweet to @VisualStudio and @EdgeDevTools | Twitter"  
+[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"
+[TwitterIntentTweetViualstudioEdgdevtools]: https://twitter.com/intent/tweet?text=@VisualStudio+@EdgeDevTools "Tweet to @VisualStudio and @EdgeDevTools | Twitter"
 [GithubMicrosoftVscodeEdgeDevtoolsNewIssue]: https://github.com/Microsoft/vscode-edge-devtools/issues/new "New Issue - microsoft/vscode-edge-devtools | GitHub"
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
 [GithubWebhintioIssuesNew]: https://github.com/webhintio/hint/issues/new "New Issues - webhintio/hint | GitHub"

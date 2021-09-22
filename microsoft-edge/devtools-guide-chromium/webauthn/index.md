@@ -120,7 +120,7 @@ To remove a virtual authenticator, next to the authenticator, choose the **Remov
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
 
 [AppspotWebauthndemo]: https://webauthndemo.appspot.com "Webauthn demo | Appspot"
 

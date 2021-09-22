@@ -111,10 +111,10 @@ To change the `F12` keyboard shortcut setting that opens the DevTools, complete 
 1.  After you set the toggle to off, verify that `F12` no longer opens DevTools.
 
     > [!NOTE]
-    > After turning off **Open the DevTools when the F12 key is pressed**, perform one of the following actions to open the DevTools.  
-    > 
-    > *   Select `Ctrl`+`Shift`+`I`.  
-    > *   Open the contextual menu \(right-click\) > **Inspect**.  
+    > After turning off **Open the DevTools when the F12 key is pressed**, perform one of the following actions to open the DevTools.
+    >
+    > *   Select `Ctrl`+`Shift`+`I`.
+    > *   Open the contextual menu \(right-click\) > **Inspect**.
 
 
 <!-- ====================================================================== -->
@@ -126,8 +126,8 @@ To change the `F12` keyboard shortcut setting that opens the DevTools, complete 
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[DevtoolsConsoleIndex]: ../console/index.md "Console Overview | Microsoft Docs"  
-[DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"  
+[DevtoolsConsoleIndex]: ../console/index.md "Console Overview | Microsoft Docs"
+[DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
 
 <!--[ConsoleGetStarted]: /microsoft-edge/devtools-guide-chromium/console/get-started ""  -->
 <!--[GetStartedCSS]: /microsoft-edge/devtools-guide-chromium/css "CSS"  -->

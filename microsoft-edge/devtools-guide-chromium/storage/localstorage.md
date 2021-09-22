@@ -93,8 +93,8 @@ Since you are able to run JavaScript in the **Console**, and since the **Console
 1.  Run your `localStorage` expressions in the Console, the same as you do in your JavaScript.
 
     :::image type="complex" source="../media/storage-console-local-storage-interaction.msft.png" alt-text="Interact with localStorage from the Console" lightbox="../media/storage-console-local-storage-interaction.msft.png":::
-       Interact with `localStorage` from the **Console**  
-    :::image-end:::  
+       Interact with `localStorage` from the **Console**
+    :::image-end:::
 
 
 <!-- ====================================================================== -->
@@ -106,7 +106,7 @@ Since you are able to run JavaScript in the **Console**, and since the **Console
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"
 
 [MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window.localStorage | MDN"
 

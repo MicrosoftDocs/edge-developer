@@ -30,8 +30,8 @@ When you use the **Sources** tool to [step through code][DevToolsJavascriptStepT
 1.  Turn on the **Mark content scripts as Library code** checkbox.
 
     :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Enable the Mark content scripts as Library code checkbox" lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
-       Enable the **Mark content scripts as Library code** checkbox  
-    :::image-end:::  
+       Enable the **Mark content scripts as Library code** checkbox
+    :::image-end:::
 
 
 <!-- ====================================================================== -->
@@ -43,7 +43,7 @@ When you use the **Sources** tool to [step through code][DevToolsJavascriptStepT
 <!-- ====================================================================== -->
 <!-- links -->
 [Contact]: ../../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "Step 4: Step through the code - Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"  
+[DevToolsJavascriptStepThroughCode]: ../index.md#step-4-step-through-the-code "Step 4: Step through the code - Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
