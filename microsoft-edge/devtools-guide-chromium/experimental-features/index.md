@@ -121,6 +121,22 @@ This experiment is available starting with Microsoft Edge version 87 and is turn
 
 
 <!-- ====================================================================== -->
+## Enable opening source files in Visual Studio Code
+<!-- in Experiments as of 96, near bottom of main list -->
+
+**Open source files in Visual Studio Code** is the working title of an experiment to replace the editor of the Sources tool with Visual Studio Code for local files. Once activated, Developer Tools will detect when you work on local files and ask you do pick a folder as your Workspace. Once you set up the workspace, activating any link to a file in the Developer Tools will open Visual Studio Code. 
+
+:::image type="complex" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="Activating a link in the Styles tool opens the file in Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
+    Activating a link in the **Styles** tool opens the file in Visual Studio Code
+:::image-end:::
+
+Any Developer Tools edits will now change the file on the hard drive and sync live with Visual Studio Code.
+
+You can read up on how to set up your workspace in the [Opening Sources in Visual Studio Code][OpenSourcesInVSCode] article.
+
+This experiment is available starting with Microsoft Edge version 96.
+
+<!-- ====================================================================== -->
 ## Enable Network Console
 <!-- in Experiments as of 94, near bottom of main list -->
 
@@ -269,6 +285,7 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 
 
 <!-- links -->
+[OpenSourcesInVSCode]: ../sources/opening-sources-in-vscode.md "Open local sources in Microsoft Visual Studio Code" 
 [Devtools3dViewIndex]: ../3d-view/index.md "3D View | Microsoft Docs"
 [DevtoolsCssGrid]: ../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsCustomizeIndex]: ../customize/index.md "Customize Microsoft Edge DevTools | Microsoft Docs"
