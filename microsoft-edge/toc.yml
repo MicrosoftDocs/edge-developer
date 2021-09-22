@@ -472,7 +472,6 @@
       items:
         - name: DevTools Protocol
           href: devtools-protocol-chromium/index.md
-          # href: test-and-automation/devtools-protocol-overview-aux-node.md
         - name: Origin Trials
           href: origin-trials/index.md
         - name: Playwright
@@ -488,7 +487,7 @@
             - name: Verifying downloads of Selenium Tools for Microsoft Edge
               href: webdriver-chromium/verify-selenium-tools.md
         - name: webhint
-          href: test-and-automation/webhint-aux-node.md
+          href: visual-studio-code/webhint.md
 # equivalent card: Web platform ===============================================
     - name: Web platform
       items:
