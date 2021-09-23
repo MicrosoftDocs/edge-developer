@@ -12,9 +12,9 @@ keywords: microsoft edge, web development, f12 tools, devtools, remote, debuggin
 
 Remote debug live content on a Windows 10 and later device from your Windows or macOS computer.  This tutorial teaches you the following tasks.
 
-*   Set up your Windows 10 and later device for remote debugging and connect to it from your development machine.
-*   Inspect and debug live content on your Windows 10 and later device from your development machine.
-*   Screencast content from your Windows 10 and later device onto a DevTools instance on your development machine.
+*   Set up your Windows device for remote debugging and connect to it from your development machine.
+*   Inspect and debug live content on your Windows device from your development machine.
+*   Screencast content from your Windows device onto a DevTools instance on your development machine.
 
 ## Step 1: Set up the host (debuggee machine)
 
