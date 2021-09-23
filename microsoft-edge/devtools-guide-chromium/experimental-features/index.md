@@ -57,11 +57,11 @@ To turn on \(or off\) experimental features in Microsoft Edge:
 > Experimental features are constantly being updated and might cause performance issues.  To turn off an experimental feature, open the **Experiments** page and clear the checkbox of the experimental feature that you want to turn off.
 
 
-<!-- ordering for the h2 sections below: first list the sections that are on by default, then other sections in same order as in the Experiments page.  if change to a different ordering scheme, note that scheme here. -->
+<!-- ordering for the h2 sections below: same order as in the Experiments page.  if change to a different ordering scheme, note that scheme here. -->
 
 
 <!-- ====================================================================== -->
-## Source Order Viewer
+## Source order viewer
 <!-- on by default in 94 -->
 
 **Source Order Viewer** is an experiment that displays the order of elements in the webpage source.  The on-screen display order can differ from the order of the source, which confuses screen reader and keyboard users.  Use the **Source Order Viewer** experiment to find the differences between on-screen display order and the order of the source.
@@ -77,6 +77,32 @@ To use the **Source Order Viewer**:
 :::image-end:::
 
 This experiment is available starting with Microsoft Edge version 86 and is turned on by default.
+
+
+<!-- ====================================================================== -->
+## Enable new Font Editor tool within the Styles pane.
+<!-- keep the period per the ui string literal -->
+<!-- found in Experiments in 94 60% down main list -->
+
+You can now use the new visual [Font Editor][DevtoolsInspectStylesEditFonts] to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you do the following:
+
+*   Switch between units for different font properties
+*   Switch between keywords for different font properties
+*   Convert units
+*   Generate accurate CSS code
+
+To use the new visual **Font Editor**:
+1.  Open the **Elements** tool.
+1.  Open the **Styles** pane.
+1.  Select the **Font Editor** icon.
+
+For more information about the new visual **Font Editor**, navigate to [Edit CSS font styles and settings in the Styles pane in DevTools][DevtoolsInspectStylesEditFonts].
+
+:::image type="complex" source="../media/font-editor-open.msft.png" alt-text="The visual Font Editor pane is highlighted" lightbox="../media/font-editor-open.msft.png":::
+   The visual **Font Editor** pane is highlighted
+:::image-end:::
+
+This experiment is available starting with Microsoft Edge version 89.
 
 
 <!-- ====================================================================== -->
@@ -121,23 +147,6 @@ This experiment is available starting with Microsoft Edge version 87 and is turn
 
 
 <!-- ====================================================================== -->
-## Enable opening source files in Visual Studio Code
-<!-- in Experiments as of 96, near bottom of main list -->
-
-The **Open source files in Visual Studio Code** experiment replaces the code editor of the Sources tool with Visual Studio Code, for editing local files.  When you turn on this experiment, Developer Tools detects when you edit a local file, and prompts you to select a folder to use as your Workspace.  After you select a folder to use as your Workspace, selecting any link to a file in DevTools opens the file in Visual Studio Code, rather than in the code editor of the Sources tool in DevTools.
-
-:::image type="complex" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="Selecting a file link in the Styles tool opens the file in Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
-    Selecting a file link in the **Styles** tool opens the file in Visual Studio Code
-:::image-end:::
-
-Any edits that you make in DevTools will now change the file on the hard drive and sync live with Visual Studio Code.
-
-You can read up on how to set up your workspace in [Opening Sources in Visual Studio Code][OpenSourcesInVSCode].
-
-This experiment is available starting with Microsoft Edge version 96.
-
-
-<!-- ====================================================================== -->
 ## Enable Network Console
 <!-- in Experiments as of 94, near bottom of main list -->
 
@@ -159,29 +168,20 @@ This experiment is available starting with Microsoft Edge version 85.
 
 
 <!-- ====================================================================== -->
-## Enable new Font Editor tool within the Styles pane.
-<!-- keep the period per the ui string literal -->
-<!-- found in Experiments in 94 60% down the main list -->
+## Open source files in Visual Studio Code
+<!-- in Experiments as of 96, at end of main list -->
 
-You can now use the new visual [Font Editor][DevtoolsInspectStylesEditFonts] to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you do the following:
+The **Open source files in Visual Studio Code** experiment replaces the code editor of the Sources tool with Visual Studio Code, for editing local files.  When you turn on this experiment, Developer Tools detects when you edit a local file, and prompts you to select a folder to use as your Workspace.  After you select a folder to use as your Workspace, selecting any link to a file in DevTools opens the file in Visual Studio Code, rather than in the code editor of the Sources tool in DevTools.
 
-*   Switch between units for different font properties
-*   Switch between keywords for different font properties
-*   Convert units
-*   Generate accurate CSS code
-
-To use the new visual **Font Editor**:
-1.  Open the **Elements** tool.
-1.  Open the **Styles** pane.
-1.  Select the **Font Editor** icon.
-
-For more information about the new visual **Font Editor**, navigate to [Edit CSS font styles and settings in the Styles pane in DevTools][DevtoolsInspectStylesEditFonts].
-
-:::image type="complex" source="../media/font-editor-open.msft.png" alt-text="The visual Font Editor pane is highlighted" lightbox="../media/font-editor-open.msft.png":::
-   The visual **Font Editor** pane is highlighted
+:::image type="complex" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="Selecting a file link in the Styles tool opens the file in Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
+    Selecting a file link in the **Styles** tool opens the file in Visual Studio Code
 :::image-end:::
 
-This experiment is available starting with Microsoft Edge version 89.
+Any edits that you make in DevTools will now change the file on the hard drive and sync live with Visual Studio Code.
+
+You can read up on how to set up your workspace in [Opening Sources in Visual Studio Code][OpenSourcesInVSCode].
+
+This experiment is available starting with Microsoft Edge version 96.
 
 
 <!-- ====================================================================== -->
