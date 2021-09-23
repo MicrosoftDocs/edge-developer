@@ -141,7 +141,7 @@ Navigate to the [source code on GitHub][DemoDevToolsTipsGitHub]. In particular, 
 
 ## Handle protocols
 
-Similar to URL Handling, Progressive Web Apps can also handle protocols to create a more engaging experience.
+Similar to URL Handling, Progressive Web Apps can handle protocols to create a more engaging experience.
 
 A URL (or Uniform Resource Locator) is a string that allows clients to identify a resource on the Web, and it contains an initial part, the protocol, that lets clients know how to retrieve the resource.
 
@@ -152,7 +152,9 @@ Examples of protocols include:
 | `http` | http://contoso.com/ |
 | `mailto` | mailto:contact@contoso.com |
 
-With Protocol Handling, PWAs can register to handle specific protocols when getting installed. For example, an email client app can register to the `mailto` protocol, or a geolocation app can register to the `geo` protocol.
+With Protocol Handling, PWAs can register to handle specific protocols when getting installed. For example, an email client app can register to handle the `mailto` protocol, or a geo location app can register to handle the `geo` protocol.
+
+Custom protocols can also be handled if a PWA registers a protocol that starts with the `web+` prefix.
 
 To learn more about other existing protocols, navigate to the [list of URI schemes][WikiListOfURISchemes].
 
@@ -209,3 +211,4 @@ The `%s` placeholder will be replaced with the full URL being handled.
 [DemoDevToolsTipsWebAppOriginAssociation]: https://github.com/captainbrosset/devtools-tips/blob/main/src/.well-known/web-app-origin-association
 [ProtocolHandlersWebDev]: https://web.dev/url-protocol-handler/ "URL protocol handler registration for PWAs | web.dev"
 [WikiListOfURISchemes]: https://en.wikipedia.org/wiki/List_of_URI_schemes "List of URI schemes | Wikipedia"
+[ManifestFileDoc]: ./webappmanifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"
