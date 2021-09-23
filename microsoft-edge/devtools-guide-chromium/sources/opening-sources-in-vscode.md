@@ -73,13 +73,15 @@ If you go to the DevTools **Settings** page by selecting **Settings** (the gear 
    The settings pane of the workspace showing several options
 :::image-end:::
 
+The **Settings** > **Workspace** page lists your workspaces, along with configuration options.
+
 *  To set whether to open source files in Visual Studio Code, select the **Open source files in Visual Studio Code** checkbox.
 
 *  To automatically save DevTools changes to disk, select the **Save DevTools changes to disk** checkbox.
 
 *  To automatically exclude folders from a workspace folder, use the **Folder exclude pattern** text box.
 
-*  The **Excluded folders** section displays a list of workspaces you have set up.  To specify any folders to exclude for a workspace, select the **Add** button.
+*  To exclude a folder from a specific workspace, next to **Excluded folders**, select the **Add** button.
 
 *  To add an additional workspace, select the **Add folder** button.
 
