@@ -179,7 +179,7 @@ The **Open source files in Visual Studio Code** experiment replaces the code edi
 
 Any edits that you make in DevTools will now change the file on the hard drive and sync live with Visual Studio Code.
 
-You can read up on how to set up your workspace in [Opening Sources in Visual Studio Code][OpenSourcesInVSCode].
+You can read about setting up your workspace in [Opening Sources in Visual Studio Code][OpenSourcesInVSCode].
 
 This experiment is available starting with Microsoft Edge version 96.
 
