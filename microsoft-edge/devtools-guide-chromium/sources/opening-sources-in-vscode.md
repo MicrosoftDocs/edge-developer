@@ -29,25 +29,25 @@ When you open a URL to a local server (`http://localhost`, or `http://127.0.0.1`
    Developer Tools showing an information bar asking you to identify your root folder
 :::image-end:::
 
-If you select the `Set root folder` button, your operating system ask you to navigate to the folder and select it.
+If you select the **Set root folder** button, the operating system prompts you to navigate to the folder and select it.
 
 :::image type="complex" source="../media/experiment-sources-in-code-pick-folder.msft.png" alt-text="Picking the location of the root folder using the file manager of your operating system" lightbox="../media/experiment-sources-in-code-pick-folder.msft.png":::
    Picking the location of the root folder using the file manager of your operating system
 :::image-end:::
 
-Once you select the folder, you need to allow DevTools to get full access to the folder. You'll get another prompt near the toolbar asking you to grant permission to DevTools to access the folder.
+After you select a root folder, you need to grant DevTools full access to the folder.  Above the toolbar, a prompt with **Allow** or **Deny** buttons asks you whether to grant permission to DevTools to access the folder.
 
 :::image type="complex" source="../media/experiment-sources-in-code-allow-access.msft.png" alt-text="DevTools asking to get access to the folder" lightbox="../media/experiment-sources-in-code-allow-access.msft.png":::
    DevTools asking to get access to the folder
 :::image-end:::
 
-After you grant permission, the folder you select is added as a Workspace to the Developer Tools.  This means that any file you edit in DevTools now opens in Microsoft Visual Studio Code instead of in the Sources tool. As an indicator, we show a `linked` icon next to the file name.  In this example, we'll select the `base.css` link in the **Styles** tool.
+After you grant permission, the folder you select is added as a Workspace in DevTools, in the **Filesystem** tab of the **Sources** tool.  This means that any file you edit in DevTools now opens in Microsoft Visual Studio Code instead of in the Sources tool. As an indicator, we show a `linked` icon next to the file name.  In this example, we'll select the `base.css` link in the **Styles** tool.
 
 :::image type="complex" source="../media/experiment-sources-in-code-selecting-link.msft.png" alt-text="Selecting a file link in the Styles tool opens the file in Visual Studio Code" lightbox="../media/experiment-sources-in-code-selecting-link.msft.png":::
    Selecting a file link in the **Styles** tool opens the file in Visual Studio Code
 :::image-end:::
 
-DevTools opens an instance of Visual Studio Code and shows all the files in the root folder.  DevTools also opens the file you've select at the correct line of the CSS selector.
+DevTools opens an instance of Visual Studio Code and shows all the files in the root folder.  DevTools also opens the file you've selected, scrolled to the correct line of the CSS selector.
 
 :::image type="complex" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="Visual Studio Code open with the root folder files and the selected file open" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
    Visual Studio Code open with the root folder files and the selected file open
@@ -69,9 +69,13 @@ If you go to the DevTools **Settings** page by selecting **Settings** (the gear 
    The settings pane of the workspace showing several options
 :::image-end:::
 
-You can set whether to open source files in Visual Studio Code, and whether to automatically save DevTools changes to disk.  You can also automatically exclude folders.
+To set whether to open source files in Visual Studio Code, select the **Open source files in Visual Studio Code** checkbox.
 
-**Settings** > **Workspace** also displays a list of workspaces you have set up, and allows you to specify any folders to exclude for each of your workspaces.
+To automatically save DevTools changes to disk, select the **Save DevTools changes to disk** checkbox.
+
+To automatically exclude folders that might be in your workspace folder, use the **Folder exclude pattern** text box.
+
+The **Excluded folders** section displays a list of workspaces you have set up.  To specify any folders to exclude for a workspace, select the **Add folder** button.
 
 
 <!-- ====================================================================== -->
