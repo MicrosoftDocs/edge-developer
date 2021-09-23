@@ -124,17 +124,18 @@ This experiment is available starting with Microsoft Edge version 87 and is turn
 ## Enable opening source files in Visual Studio Code
 <!-- in Experiments as of 96, near bottom of main list -->
 
-**Open source files in Visual Studio Code** is the working title of an experiment to replace the editor of the Sources tool with Visual Studio Code for local files. Once activated, Developer Tools will detect when you work on local files and ask you do pick a folder as your Workspace. Once you set up the workspace, activating any link to a file in the Developer Tools will open Visual Studio Code. 
+The **Open source files in Visual Studio Code** experiment replaces the code editor of the Sources tool with Visual Studio Code, for editing local files.  When you turn on this experiment, Developer Tools detects when you edit a local file, and prompts you to select a folder to use as your Workspace.  After you select a folder to use as your Workspace, selecting any link to a file in DevTools opens the file in Visual Studio Code, rather than in the code editor of the Sources tool in DevTools.
 
-:::image type="complex" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="Activating a link in the Styles tool opens the file in Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
-    Activating a link in the **Styles** tool opens the file in Visual Studio Code
+:::image type="complex" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="Selecting a file link in the Styles tool opens the file in Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
+    Selecting a file link in the **Styles** tool opens the file in Visual Studio Code
 :::image-end:::
 
-Any Developer Tools edits will now change the file on the hard drive and sync live with Visual Studio Code.
+Any edits that you make in DevTools will now change the file on the hard drive and sync live with Visual Studio Code.
 
-You can read up on how to set up your workspace in the [Opening Sources in Visual Studio Code][OpenSourcesInVSCode] article.
+You can read up on how to set up your workspace in [Opening Sources in Visual Studio Code][OpenSourcesInVSCode].
 
 This experiment is available starting with Microsoft Edge version 96.
+
 
 <!-- ====================================================================== -->
 ## Enable Network Console
