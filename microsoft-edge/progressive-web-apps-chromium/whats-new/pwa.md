@@ -27,7 +27,7 @@ We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) 
 
 ## What's New in Microsoft Edge 93
 
-Microsoft Edge version 93 became the Beta channel of Microsoft Edge on August 3, 2021. This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
+Microsoft Edge version 93 became the Stable channel of Microsoft Edge on September 2, 2021. This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
 
 ### Window Controls Overlay origin trials
 
