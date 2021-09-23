@@ -1,30 +1,33 @@
 ---
-description: New features for Progressive Web Apps (PWAs).
+description: New features and origin trials for Progressive Web Apps (PWAs).
 title: What's New in Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/09/2021
+ms.date: 09/23/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, pwas, pwa, progressive web apps
+keywords: microsoft edge, pwas, pwa, progressive web apps, origin trials
 ---
 # What's New in Progressive Web Apps
 
 [!INCLUDE [contact DevTools team note](includes/edge-whats-new-note.md)]
 
 
+<!-- ====================================================================== -->
 ## What's New in Microsoft Edge 94
 
-Edge 94 release moved to stable on Sept 23, 2021. This release cycle was short - just 3 weeks from Edge 93 Stable to Edge 94 Stable as we snapped to the new [four week release cycle][4weekReleaseBlog], matching Chromium's update to [milestones every 4 weeks.][Chromium4weekM]
+Microsoft Edge version 94 release moved to Stable on Sept 23, 2021.  This release cycle was short—just<!-- em dash --> 3 weeks from Microsoft Edge 93 Stable to Microsoft Edge 94 Stable as we snapped to the new [four week release cycle][4weekReleaseBlog].  This new release cadence matches the new cadence of Chromium milestones, described in [Speeding up Chrome's release cycle][Chromium4weekM].
 
-Due to the shortened cycle of 94, we focused on stablizing the release cycle and shifted feature development to Edge 95.
+Due to the shortened release cycle of Microsoft Edge version 94, we focused on stabilizing the release cycle logistics, and shifted feature development to Microsoft Edge version 95.
 
-The origin trials remain active for:
-*  [Window Controls Overlay for desktop PWAs](#window-controls-overlay-origin-trials)
-*  [URL Handlers](#url-handlers-origin-trial) 
+The origin trials remain active for the following features:
+*  [Window Controls Overlay for desktop PWAs](#window-controls-overlay-origin-trials).
+*  [URL Handlers](#url-handlers-origin-trial).
 
-We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) to end with Edge 94 as we take final feedback and get ready to move the feature to stable. 
+We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) to end with Microsoft Edge version 94 as we take final feedback and get ready to move the protocol handlers feature to Stable.  In case you are enrolled in the origin trial for protocol handlers, we plan to end the trial period after Microsoft Edge version 94.  We'll then determine when this feature will become Stable.
 
+
+<!-- ====================================================================== -->
 ## What's New in Microsoft Edge 93
 
 Microsoft Edge version 93 became the Stable channel of Microsoft Edge on September 2, 2021. This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
@@ -52,6 +55,7 @@ We have implemented support for the `navigator.share` API for macOS. The feature
 Learn more about the [navigator.share() API][mdnShareAPI].
 
 
+<!-- ====================================================================== -->
 ## What's New in Microsoft Edge 92
 
 Microsoft Edge version 92 became the stable channel of Microsoft Edge on July 22, 2021. This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
@@ -83,7 +87,6 @@ When a user selects the ellipses (**...**) button in the app's title bar, the **
       Content-related tools are now found in the **More tools** menu
    :::image-end:::
 
-
 ### Post-install flyout dialog box
 
 After a PWA is installed from the Microsoft Edge browser on Windows, users can now select from four options to easily launch their apps:
@@ -106,8 +109,9 @@ Installed sites and PWAs that were running before an unexpected shutdown will no
 
 An unexpected shutdown can occur due to process failure, system restart, or power outage. Before this change, installed sites and PWAs had indeterminate behavior upon system restore.
 
-<!-- links -->
 
+<!-- ====================================================================== -->
+<!-- links -->
 <!--[ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]: /archive/microsoft-edge/legacy/developer/progressive-web-apps/index#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->
 
 [ExpWCO]: ../experimental-features/index.md#window-controls-overlay-for-installed-desktop-web-apps "Window Controls Overlay for installed desktop web apps - Experimental Features"
@@ -124,9 +128,8 @@ An unexpected shutdown can occur due to process failure, system restart, or powe
 
 [WCOOT]: https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/web-app-window-controls-overlay/registration/ "Register for Web App Window Controls Overlay"
 
-[mdnShareAPI]: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share
+[mdnShareAPI]: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share "navigator.share() method of the Web Share API | MDN"
 
-[4weekReleaseBlog]: https://blogs.windows.com/msedgedev/2021/03/12/new-release-cycles-microsoft-edge-extended-stable/
+[4weekReleaseBlog]: https://blogs.windows.com/msedgedev/2021/03/12/new-release-cycles-microsoft-edge-extended-stable/ "Serving our customers more effectively with new release cycles for Microsoft Edge | Microsoft Edge Blog"
 
-[Chromium4weekM]: https://blog.chromium.org/2021/03/speeding-up-release-cycle.html
-
+[Chromium4weekM]: https://blog.chromium.org/2021/03/speeding-up-release-cycle.html "Speeding up Chrome's release cycle | Chromium Blog"
