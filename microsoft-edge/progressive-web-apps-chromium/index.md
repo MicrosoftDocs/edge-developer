@@ -1,5 +1,5 @@
 ---
-description: Progressive Web Apps run natively on Windows 10.  Here is everything you need to know as a web developer.
+description: Progressive Web Apps run on Windows 10. Here is everything you need to know as a web developer.
 title: Overview of Progressive Web Apps (PWAs)
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -11,11 +11,11 @@ keywords: progressive web apps, PWA, Edge, JavaScript, UWP, Microsoft Store
 ---
 # Overview of Progressive Web Apps (PWAs)
 
-**[Progressive Web Apps][MDNApps]** (PWAs) provide access to open web technologies for cross-platform interoperability and provide your users with a native, app-like experience customized for their devices.
+**[Progressive Web Apps][MDNApps]** (PWAs) provide access to open web technologies for cross-platform interoperability and provide your users with an app-like experience customized for their devices.
 
-PWAs are websites that are **[progressively enhanced][AListApartUnderstandingProgressiveEnhancement]** to function like native apps on supporting platforms, and like regular web sites on other browsers.
+PWAs are websites that are **[progressively enhanced][AListApartUnderstandingProgressiveEnhancement]** to function like installed apps on supporting platforms, and like regular web sites on other browsers.
 
-The qualities of a PWA combine **the best of the web and native apps**. PWAs run in browsers, like websites, but have access to native app features like the ability to work offline, be installed as a native app, support push notifications and periodic updates, access hardware features, and more.
+The qualities of a PWA combine **the best of the web and compiled apps**. PWAs run in browsers, like websites, but have access to app features like the ability to work offline, be installed on the operating system, support push notifications and periodic updates, access hardware features, and more.
 
 **PWAs are first-class citizens on Windows**. When installed, they behave like other apps. They can be added to the Start Menu, pinned to the Taskbar, handle files, run on user login, and more.
 
@@ -27,105 +27,65 @@ PWAs can also be **submitted to the Microsoft Store** where millions of Windows 
 
 ## Characteristics of a PWA
 
-PWAs have the same reach as websites: they can be indexed by search engines, can be linked to, and work on all devices from the same codebase. As such they have a much lower development cost than native apps that require a specific codebase  for Android, iOS, and various desktop operating systems.
+PWAs have the same reach as websites: they can be indexed by search engines, can be linked to, and work on all devices from the same codebase. As such they have a much lower development cost than compiled apps that require a specific codebase for Android, iOS, and various desktop operating systems.
 
+<!-- Note that the formatting in this grid is important as it ensures that icons, subtitles, and descriptions within cells are close enough that they feel related.
+Ensure that the there are 2 trailing spaces after each subtitle to cause a <br>
+but avoid an empty line. -->
 :::row:::
     :::column:::
         :::image type="icon" source="./media/i_search-small.png":::
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/i_package-small.png":::
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/i_push-notification-small.png":::
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        ### [Discoverable][MDNPwaAdvantagesDiscoverable]
-    :::column-end:::
-    :::column:::
-        ### [Installable][MDNPwaAdvantagesInstallable]
-    :::column-end:::
-    :::column:::
-        ### [Re-engageable][MDNPwaAdvantagesReEngageable]
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
+        
+        **[Discoverable][MDNPwaAdvantagesDiscoverable]**  
         From web search results and supporting app stores
     :::column-end:::
     :::column:::
+        :::image type="icon" source="./media/i_package-small.png":::
+        
+        **[Installable][MDNPwaAdvantagesInstallable]**  
         Pin and launch from the home screen, Start Menu, Taskbar, and so on
     :::column-end:::
     :::column:::
+        :::image type="icon" source="./media/i_push-notification-small.png":::
+        
+        **[Re-engageable][MDNPwaAdvantagesReEngageable]**  
         Send push notifications, even when the app is not active
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
         :::image type="icon" source="./media/i_offline-small.png":::
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/i_progressive-small.png":::
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/i_security-small.png":::
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        ### [Network Independent][MDNPwaAdvantagesNetworkIndependent]
-    :::column-end:::
-    :::column:::
-        ### [Progressive][MDNPwaAdvantagesProgressive]
-    :::column-end:::
-    :::column:::
-        ### [Safe][MDNPwaAdvantagesSafe]
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
+
+        **[Network Independent][MDNPwaAdvantagesNetworkIndependent]**  
         Works offline and in low-network conditions
     :::column-end:::
     :::column:::
+        :::image type="icon" source="./media/i_progressive-small.png":::
+
+        **[Progressive][MDNPwaAdvantagesProgressive]**  
         Experience scales up (or down) with device capabilities
     :::column-end:::
     :::column:::
+        :::image type="icon" source="./media/i_security-small.png":::
+
+        **[Safe][MDNPwaAdvantagesSafe]**  
         Provides a secure HTTPS endpoint and other user safeguards
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
         :::image type="icon" source="./media/i_responsive-small.png":::
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/i_link-small.png":::
-    :::column-end:::
-    :::column:::
-        &nbsp;
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        ### [Responsive][MDNPwaAdvantagesResponsive]
-    :::column-end:::
-    :::column:::
-        ### [Linkable][MDNPwaAdvantagesLinkable]
-    :::column-end:::
-    :::column:::
-        &nbsp;
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
+
+        **[Responsive][MDNPwaAdvantagesResponsive]**  
         Adapts to the user's screen size or orientation and input method
     :::column-end:::
     :::column:::
+        :::image type="icon" source="./media/i_link-small.png":::
+
+        **[Linkable][MDNPwaAdvantagesLinkable]**  
         Share and launch from a standard hyperlink
     :::column-end:::
     :::column:::
-        &nbsp;
     :::column-end:::
 :::row-end:::
 
@@ -136,31 +96,31 @@ PWAs aren't only a way for websites to appear on mobile home screens. They're ba
 While most consumers have migrated to mobile-first ways of consuming content, businesses still mostly operate on desktop.
 Building your desktop app as a PWA allows you to make use of all the benefits that PWAs come with while targeting those users.
 
-With many new web capabilities and new features in Microsoft Edge and Windows, there are great opportunities to build immersive experiences that deeply integrate with the desktop operating system and feel native. Only using web technologies also ensures that your app will work in other browsers, operating systems and devices.
+With many new web capabilities and new features in Microsoft Edge and Windows, there are great opportunities to build immersive experiences that deeply integrate with the desktop operating system. Only using web technologies also ensures that your app will work in other browsers, operating systems and devices.
 
-You might not have to use native technologies at all as the web has grown capabilities to deal with file systems, video, audio, high-performing code, databases, USB, Bluetooth, and more.
+You might not have to use proprietary technologies at all as the web has grown capabilities to deal with file systems, video, audio, high-performing code, databases, USB, Bluetooth, and more.
 
-With a shared codebase between your website, mobile app and desktop app (across operating systems), you cut down on development cost.
+With a shared codebase between your website, mobile app, and desktop app (across operating systems), you cut down on development cost.
 
 Your app can also be published on the [Microsoft Store][PwaMicrosoftStore], making it more familiar and trustworthy for Windows users to discover and install.
 
-## Bridging the gap to native
+## Bridging the gap to desktop apps
 
-There are many new web capabilities built-in to Microsoft Edge that can make your app look and feel more native on Desktop and offer your users with engaging experiences.
+There are many new web capabilities built-in to Microsoft Edge that can make your app feel more integrated on Desktop and offer your users with engaging experiences.
 
 With you PWAs, you can:
 
 *   Handle files.
 *   Share content with other apps.
 *   Access the clipboard.
-*   Data sync and fetch work in the background.
+*   Sync data and fetch resources in the background.
 *   Access device hardware such as Bluetooth and USB.
 *   Store content in databases.
 *   Take advantage of hardware accelerated graphics.
-*   Use CSS layouts, animations, and filters to achieve a desktop look.
-*   Run near-native performance code with WebAssembly.
+*   Use CSS layouts, animations, and filters to create advanced designs.
+*   Run near-compiled performance code with WebAssembly.
 
-There isn't much you can't do today with Web technologies, and thanks to Microsoft Edge, PWAs on desktop can take full advantage of this to bridge the gap to what users expect native apps to be capable of.
+There isn't much you can't do today with Web technologies, and thanks to Microsoft Edge, PWAs on desktop can take full advantage of this to bridge the gap to what users expect desktop apps to be capable of.
 
 Navigate to [Myth Busting PWAs][Davrous20191018MythBustingPwasNewEdgeEdition] for more information about what PWAs can do.
 
@@ -168,7 +128,7 @@ Navigate to [Myth Busting PWAs][Davrous20191018MythBustingPwasNewEdgeEdition] fo
 
 Because PWAs are first-class citizens in the Microsoft Store, users can fully engage with them, from discovery, to installation, to execution, without ever opening the browser.
 
-As the most used app on PCs, the Microsoft Store provides a trustworthy and familiar experience for your users to install your app. Additionally, it provides you with analytics.
+As the most used app on PCs, the Microsoft Store provides a trustworthy and familiar experience for your users to install your app. Additionally, you can view detailed usage statistics and charts that let you know how your apps in the Microsoft Store are doing.
 
 ## Success stories
 
@@ -176,9 +136,9 @@ Using PWA technologies is a great way to make your app **safe**, **discoverable*
 
 *   The Starbucks PWA has increased daily active users twice and orders on desktop are nearly the same rate as mobile ([source][StarbucksSuccessStory]).
 *   Trivago saw an increase of 150% for people who add its PWA to the home screen and the increased engagement led to a 97% increase in clickouts to hotel offers ([source][TrivagoSuccessStory]).
-*   Tinder cut load times from 11.91 seconds to 4.68 seconds with their PWA and the app is 90% smaller than the native Android app ([source][TinderSuccessStory]).
+*   Tinder cut load times from 11.91 seconds to 4.68 seconds with their PWA and the app is 90% smaller than the compiled Android app ([source][TinderSuccessStory]).
 
-To read more success stories, navigate to [PWA Stats][PwaStats].
+Read more success stories on the [PWA Stats][PwaStats] website.
 
 ## See also
 
