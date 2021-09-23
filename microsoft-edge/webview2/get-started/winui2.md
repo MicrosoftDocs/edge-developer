@@ -11,7 +11,7 @@ keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWeb
 ---
 # Get started with WebView2 in WinUI 2 apps (public preview)
 
-In this article, get started creating your first WebView2 app and learn about the main features of WebView2. For more information about individual WebView2 APIs, navigate to[Microsoft Edge WebView2 API Reference](../webview2-api-reference.md) and then select the WinRT reference links.
+In this article, get started creating your first WebView2 app and learn about the main features of WebView2. For more information about individual WebView2 APIs, navigate to [Microsoft Edge WebView2 API Reference](../webview2-api-reference.md) and then select the WinRT reference links.
 
 > [!NOTE]
 > The WinUI 2 package takes a dependency on a prerelease WebView2 package.  For full API compatibility, use a preview browser channel as your runtime (that is, the Beta, Dev, or Canary channel of Microsoft Edge).
@@ -32,7 +32,7 @@ In this article, get started creating your first WebView2 app and learn about th
 
 1.  Select **Desktop development with C++**.
 
-1.  Select **Universal Windows Platform development**.  
+1.  Select **Universal Windows Platform development**.
 
 1. On the right, expand **Installation Details** > **Universal Windows Platform development**, and then select **C++ (v142) Universal Windows Platform tools**.
 
@@ -45,7 +45,7 @@ In this article, get started creating your first WebView2 app and learn about th
 
 ## Step 3\: Create a UWP app
 
-1.  In Visual Studio, select **File** > **New** > **Project**.  Or use the startup screen of Visual Studio, then select **Create a new project**.  The **Create a new project** dialog box appears.  
+1.  In Visual Studio, select **File** > **New** > **Project**.  Or use the startup screen of Visual Studio, then select **Create a new project**.  The **Create a new project** dialog box appears.
 
 1.  On the **All languages** dropdown list, select **C#**.
 
@@ -86,7 +86,7 @@ The solution and project is displayed.
 
 1.  Right-click the project in Solution Explorer, and then select **Manage NuGet Packages**.
 
-1.  Select the **Browse** tab. 
+1.  Select the **Browse** tab.
 
 1.  Select the **Include prerelease** check box.
 
@@ -107,12 +107,12 @@ The solution and project is displayed.
 
 ## Step 5\: Instantiate the WebView2 control in XAML code
 
-### Add the project reference for the WebView2 control 
+### Add the project reference for the WebView2 control
 
 1.  In the `MainPage.xaml` file, in the `<Page>` element, add the following attribute below the other `xmlns:` attributes.
 
     ```xml
-    xmlns:control="using:Microsoft.UI.Xaml.Controls" 
+    xmlns:control="using:Microsoft.UI.Xaml.Controls"
     ```
 
 ### Add the WebView2 control to the grid
@@ -148,24 +148,24 @@ The solution and project is displayed.
 Now you can change the content of the WebView2 control to your own content.
 
 
-## Next steps  
+## Next steps
 
-*   To learn more about building WebView2 applications, navigate to [WebView2 development best practices][WV2BestPractices].  
-*   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain].  
-*   For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].  
-*   For detailed information about the WebView2 API, navigate to [WebView2 spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].  
+*   To learn more about building WebView2 applications, navigate to [WebView2 development best practices][WV2BestPractices].
+*   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain].
+*   For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].
+*   For detailed information about the WebView2 API, navigate to [WebView2 spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].
 
-    
-## Getting in touch with the Microsoft Edge WebView team  
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
+## Getting in touch with the Microsoft Edge WebView team
 
-To send your WinUI-specific feature requests or bugs, navigate to [Issues - microsoft/microsoft-ui-xaml][GithubMicrosoftMicrosoftUiXamlIssues] and then select **New issue**.  
+[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
 
-<!-- links -->  
-[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"  
-[Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
+To send your WinUI-specific feature requests or bugs, navigate to [Issues - microsoft/microsoft-ui-xaml][GithubMicrosoftMicrosoftUiXamlIssues] and then select **New issue**.
+
+<!-- links -->
+[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"
+[Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
 <!-- external links -->
-[GithubMicrosoftMicrosoftUiXamlIssues]: https://github.com/microsoft/microsoft-ui-xaml/issues "Issues - microsoft/microsoft-ui-xaml | GitHub"  
-[GithubMicrosoftMicrosoftUiXamlSpecsWebview2]: https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md "WebView2 spec - microsoft/microsoft-ui-xaml-specs | GitHub"  
-[GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
+[GithubMicrosoftMicrosoftUiXamlIssues]: https://github.com/microsoft/microsoft-ui-xaml/issues "Issues - microsoft/microsoft-ui-xaml | GitHub"
+[GithubMicrosoftMicrosoftUiXamlSpecsWebview2]: https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md "WebView2 spec - microsoft/microsoft-ui-xaml-specs | GitHub"
+[GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"

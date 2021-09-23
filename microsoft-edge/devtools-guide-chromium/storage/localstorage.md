@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright Kayce Basques 
+<!-- Copyright Kayce Basques
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -20,100 +20,100 @@ keywords: microsoft edge, web development, f12 tools, devtools
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
-   limitations under the License.  -->  
-# View and edit local storage with Microsoft Edge DevTools  
+   limitations under the License.  -->
+# View and edit local storage with Microsoft Edge DevTools
 
-This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view, edit, and delete [localStorage][MDNWindowsLocalStorage] key-value pairs.  
+This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view, edit, and delete [localStorage][MDNWindowsLocalStorage] key-value pairs.
 
-## View localStorage keys and values  
+## View localStorage keys and values
 
-1.  Choose the **Application** tab to open the **Application** tool.  The **Manifest** pane is shown by default.  
-    
+1.  Choose the **Application** tab to open the **Application** tool.  The **Manifest** pane is shown by default.
+
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
-       The **Manifest** pane  
-    :::image-end:::  
-    
-1.  Expand the **Local Storage** menu.  
-    
+       The **Manifest** pane
+    :::image-end:::
+
+1.  Expand the **Local Storage** menu.
+
     :::image type="complex" source="../media/storage-application-local-storage.msft.png" alt-text="The Local Storage menu" lightbox="../media/storage-application-local-storage.msft.png":::
-       The **Local Storage** menu  
-    :::image-end:::  
-    
-1.  Choose a domain to view the key-value pairs.  
-    
+       The **Local Storage** menu
+    :::image-end:::
+
+1.  Choose a domain to view the key-value pairs.
+
     :::image type="complex" source="../media/storage-application-local-storage-view-key-value.msft.png" alt-text="The localStorage key-value pairs for the https://www.bing.com domain" lightbox="../media/storage-application-local-storage-view-key-value.msft.png":::
-       The `localStorage` key-value pairs for the `https://www.bing.com` domain  
-    :::image-end:::  
-    
-1.  Choose a row of the table to view the value in the viewer below the table.  
-    
+       The `localStorage` key-value pairs for the `https://www.bing.com` domain
+    :::image-end:::
+
+1.  Choose a row of the table to view the value in the viewer below the table.
+
     :::image type="complex" source="../media/storage-application-local-storage-view-key-value-selected.msft.png" alt-text="View the value of the eventLogQueue_Online key" lightbox="../media/storage-application-local-storage-view-key-value-selected.msft.png":::
-       View the value of the `eventLogQueue_Online` key  
-    :::image-end:::  
-    
-## Create a new localStorage key-value pair  
+       View the value of the `eventLogQueue_Online` key
+    :::image-end:::
 
-1.  [View the localStorage key-value pairs of a domain](#view-localstorage-keys-and-values).  
-1.  Double-click the empty part of the table.  DevTools creates a new row and focuses your cursor in the **Key** column.  
-    
+## Create a new localStorage key-value pair
+
+1.  [View the localStorage key-value pairs of a domain](#view-localstorage-keys-and-values).
+1.  Double-click the empty part of the table.  DevTools creates a new row and focuses your cursor in the **Key** column.
+
     :::image type="complex" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="The empty part of the table to double-click in order to create a new key-value pair" lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
-       The empty part of the table to double-click in order to create a new key-value pair  
-    :::image-end:::  
-    
-## Edit localStorage keys or values  
+       The empty part of the table to double-click in order to create a new key-value pair
+    :::image-end:::
 
-1.  [View the localStorage key-value pairs of a domain](#view-localstorage-keys-and-values).  
-1.  Double-click a cell in the **Key** or **Value** column to edit that key or value.  
-    
+## Edit localStorage keys or values
+
+1.  [View the localStorage key-value pairs of a domain](#view-localstorage-keys-and-values).
+1.  Double-click a cell in the **Key** or **Value** column to edit that key or value.
+
     :::image type="complex" source="../media/storage-application-local-storage-edit-key-value.msft.png" alt-text="Edit a localStorage key" lightbox="../media/storage-application-local-storage-edit-key-value.msft.png":::
-       Edit a `localStorage` key  
-    :::image-end:::  
-    
-## Delete localStorage key-value pairs  
+       Edit a `localStorage` key
+    :::image-end:::
 
-1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).  
-1.  Choose the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.  
-1.  Select the `Delete` key or choose **Delete Selected** \(![Delete Selected](../media/delete-icon.msft.png)\).  
-    
-## Delete all `localStorage` key-value pairs for a domain  
+## Delete localStorage key-value pairs
 
-1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).  
-1.  Choose **Clear All** \(![Clear All](../media/clear-icon.msft.png)\).  
-    
-## Interact with localStorage from the Console  
+1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).
+1.  Choose the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.
+1.  Select the `Delete` key or choose **Delete Selected** \(![Delete Selected](../media/delete-icon.msft.png)\).
 
-Since you are able to run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it is possible to interact with `localStorage` from the **Console**.  
+## Delete all `localStorage` key-value pairs for a domain
 
-1.  Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `localStorage` key-value pairs of a domain other than the page that is displayed.  
-    
+1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).
+1.  Choose **Clear All** \(![Clear All](../media/clear-icon.msft.png)\).
+
+## Interact with localStorage from the Console
+
+Since you are able to run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it is possible to interact with `localStorage` from the **Console**.
+
+1.  Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `localStorage` key-value pairs of a domain other than the page that is displayed.
+
     :::image type="complex" source="../media/storage-console-local-storage.msft.png" alt-text="Change the JavaScript context of the Console" lightbox="../media/storage-console-local-storage.msft.png":::
-       Change the JavaScript context of the Console  
-    :::image-end:::  
-    
-1.  Run your `localStorage` expressions in the Console, the same as you do in your JavaScript.  
-    
+       Change the JavaScript context of the Console
+    :::image-end:::
+
+1.  Run your `localStorage` expressions in the Console, the same as you do in your JavaScript.
+
     :::image type="complex" source="../media/storage-console-local-storage-interaction.msft.png" alt-text="Interact with localStorage from the Console" lightbox="../media/storage-console-local-storage-interaction.msft.png":::
-       Interact with `localStorage` from the **Console**  
-    :::image-end:::  
-    
-## Getting in touch with the Microsoft Edge DevTools team  
+       Interact with `localStorage` from the **Console**
+    :::image-end:::
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
+## Getting in touch with the Microsoft Edge DevTools team
 
-<!-- links -->  
+[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
+<!-- links -->
 
-[MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window.localStorage | MDN"  
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"
+
+[MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window.localStorage | MDN"
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques

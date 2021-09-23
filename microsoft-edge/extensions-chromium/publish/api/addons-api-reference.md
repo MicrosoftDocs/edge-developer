@@ -21,7 +21,7 @@ For an overview, navigate to [Using the Microsoft Edge Add-ons API][UsingAddonsA
 <!-- ====================================================================== -->
 ## Get the list of products
 
-Gets a list of all products that belong to the account.  
+Gets a list of all products that belong to the account.
 
 ### Request
 
