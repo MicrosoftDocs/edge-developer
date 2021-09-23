@@ -77,9 +77,11 @@ To set whether to open source files in Visual Studio Code, select the **Open sou
 
 To automatically save DevTools changes to disk, select the **Save DevTools changes to disk** checkbox.
 
-To automatically exclude folders that might be in your workspace folder, use the **Folder exclude pattern** text box.
+To automatically exclude folders from a workspace folder, use the **Folder exclude pattern** text box.
 
-The **Excluded folders** section displays a list of workspaces you have set up.  To specify any folders to exclude for a workspace, select the **Add folder** button.
+The **Excluded folders** section displays a list of workspaces you have set up.  To specify any folders to exclude for a workspace, select the **Add** button.
+
+To add an additional workspace, select the **Add folder** button.
 
 
 <!-- ====================================================================== -->
