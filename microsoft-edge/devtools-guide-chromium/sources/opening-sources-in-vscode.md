@@ -13,17 +13,21 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 The `Open source files in Visual Studio Code` experiment allows you to use Microsoft Edge DevTools but then edit your files in Visual Studio Code instead of in the code editor of the DevTools Sources tool.
 
-If you use Visual Studio Code and you use the Developer Tools to change some of your CSS, it seems strange that instead of using your code editor, you have to use the code editor in the Sources tool.  With this experiment, we want to change this.  This is why we added a new experiment to the Developer Tools.  When you select the `Open source files in Visual Studio Code` experiment and re-start DevTools, local files will get a different treatment.
+If you use Visual Studio Code and you use DevTools to change your CSS rules, it seems strange that instead of using the code editor in Visual Studio Code, you have to use the code editor in the Sources tool of DevTools.  With this experiment, we want to change this.  This is why we added a new experiment to the Developer Tools.  When you turn on the **Open source files in Visual Studio Code** experiment, local files will get a different treatment.
 
 
 <!-- ====================================================================== -->
 ## Setting up editing local files in Visual Studio Code
 
+First, select DevTools > **Settings** > **Experiments** > **Open source files in Visual Studio Code**, and then re-start DevTools.
+
+With this experiment enabled, suppose that in Microsoft Edge, you go to a local server (such as `http://localhost` or `http://127.0.0.1`), or open a local file.
+
 :::image type="complex" source="../media/experiment-sources-in-code-local-project.msft..png" alt-text="Microsoft Edge with a local file open." lightbox="../media/experiment-sources-in-code-local-project.msft..png":::
    Microsoft Edge with a local file open.
 :::image-end:::
 
-When you open a URL to a local server (`http://localhost`, or `http://127.0.0.1`) or a local file in Microsoft Edge and you open the Developer Tools, you get asked to identify your root folder. You can opt out by selecting the `Don't show again` button and you can get more information by selecting the `Learn more` link.
+When you open DevTools, you are prompted to identify your root folder.  You can opt out by selecting **Close** (`x`) or selecting the `Don't show again` button.  You can get more information by selecting the `Learn more` link.
 
 :::image type="complex" source="../media/experiment-sources-in-code-identify-root-folder.msft.png" alt-text="Developer Tools showing an information bar asking you to identify your root folder" lightbox="../media/experiment-sources-in-code-identify-root-folder.msft.png":::
    Developer Tools showing an information bar asking you to identify your root folder
