@@ -32,13 +32,13 @@ We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) 
 
 Microsoft Edge version 93 became the Stable channel of Microsoft Edge on September 2, 2021. This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
 
-### Measure usage of your Store installed PWA
+### Measure usage of your Store-installed PWA
 
-Microsoft Edge will now include a referrer header with the request for the first navigation of your Microsoft Store installed PWA. 
+Microsoft Edge now includes a referrer header with the request for the first navigation of your Microsoft Store-installed PWA.
 
-First introduced with Edge 91, we shipped a bug fix in Edge 93. 
+This feature was first introduced in Microsoft Edge version 91, and we shipped a bug fix in Microsoft Edge version 93.
 
-Learn more on our [PWA and Microsoft Store documentation][StoreandPWAs]. 
+Learn more in our [PWA and Microsoft Store documentation][StoreandPWAs]. 
 
 ### Window Controls Overlay origin trials
 
@@ -120,7 +120,7 @@ An unexpected shutdown can occur due to process failure, system restart, or powe
 
 <!-- ====================================================================== -->
 <!-- links -->
-<!--[ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]: /archive/microsoft-edge/legacy/developer/progressive-web-apps/index#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->
+[StoreandPWAs]: ../microsoft-store#measure-usage-of-your-store-installed-pwa "Measure usage of your Store-installed PWA - Publish your Progressive Web App to the Microsoft Store"
 
 [ExpWCO]: ../experimental-features/index.md#window-controls-overlay-for-installed-desktop-web-apps "Window Controls Overlay for installed desktop web apps - Experimental Features"
 
@@ -128,17 +128,19 @@ An unexpected shutdown can occur due to process failure, system restart, or powe
 
 [ExpURLHandler]: ../experimental-features/index.md#url-link-handling "URL Link Handling - Experimental Features"
 
+<!-- external links -->
 [MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Origin Trials | Microsoft Edge Developer"
 
 [MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration "Register for Web App Protocol Handler Registration | Microsoft Developer"
 
-[URLHandlerOT]: https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/web-app-url-handlers/registration/ "Register for Web App URL Handler | Microsoft Developer"
+[URLHandlerOT]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-url-handlers/registration/ "Register for Web App URL Handler | Microsoft Developer"
 
-[WCOOT]: https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/web-app-window-controls-overlay/registration/ "Register for Web App Window Controls Overlay"
+[WCOOT]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-window-controls-overlay/registration/ "Register for Web App Window Controls Overlay"
 
-[mdnShareAPI]: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share "navigator.share() method of the Web Share API | MDN"
+[mdnShareAPI]: https://developer.mozilla.org/docs/Web/API/Navigator/share "navigator.share() method of the Web Share API | MDN"
 
 [4weekReleaseBlog]: https://blogs.windows.com/msedgedev/2021/03/12/new-release-cycles-microsoft-edge-extended-stable/ "Serving our customers more effectively with new release cycles for Microsoft Edge | Microsoft Edge Blog"
 
-[StoreandPWAs]: ../microsoft-store#measure-usage-of-your-store-installed-pwa
 [Chromium4weekM]: https://blog.chromium.org/2021/03/speeding-up-release-cycle.html "Speeding up Chrome's release cycle | Chromium Blog"
+
+<!--[ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]: /archive/microsoft-edge/legacy/developer/progressive-web-apps/index#requirements "Requirements - Progressive Web Apps \(EdgeHTML\) on Windows | Microsoft Docs"  -->
