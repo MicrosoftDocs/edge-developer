@@ -18,7 +18,7 @@ keywords: microsoft edge, pwas, pwa, progressive web apps, origin trials
 
 Microsoft Edge version 94 release moved to Stable on Sept 23, 2021.  This release cycle was short—just<!-- em dash --> 3 weeks from Microsoft Edge 93 Stable to Microsoft Edge 94 Stable as we snapped to the new [four week release cycle][4weekReleaseBlog].  This new release cadence matches the new cadence of Chromium milestones, described in [Speeding up Chrome's release cycle][Chromium4weekM].
 
-Due to the shortened release cycle of Microsoft Edge version 94, we focused on stabilizing the release cycle logistics, and shifted feature development to Microsoft Edge version 95.
+Due to the shortened release cycle of Microsoft Edge version 94, we focused on stabilizing the release cycle logistics, and we shifted feature development to Microsoft Edge version 95.
 
 The origin trials remain active for the following features:
 *  [Window Controls Overlay for desktop PWAs](#window-controls-overlay-origin-trials).
