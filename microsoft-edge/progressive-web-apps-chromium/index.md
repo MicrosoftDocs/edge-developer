@@ -1,5 +1,5 @@
 ---
-description: Progressive Web Apps (Chromium) run natively on Windows 10.  Here is everything you need to know as a web developer.
+description: Progressive Web Apps (Chromium) run natively on Windows 10 and later.  Here is everything you need to know as a web developer.
 title: Progressive Web Apps on Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -170,7 +170,7 @@ To run as a PWA, your server-hosted web app should include following minimum req
       [Web App Manifest][MDNWebAppManifest]
    :::column-end:::
    :::column span="2":::
-      Provides a JSON-based metadata file that describes key information about your web app, so that Windows 10 and other host platforms provide your PWA users with an installable, native app-like experience.  Key information includes icons, language, and URL entry point.
+      Provides a JSON-based metadata file that describes key information about your web app, so that Windows 10 or later, and other host platforms provide your PWA users with an installable, native app-like experience.  Key information includes icons, language, and URL entry point.
    :::column-end:::
 :::row-end:::
 

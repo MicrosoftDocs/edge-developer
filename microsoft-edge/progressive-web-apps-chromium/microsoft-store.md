@@ -33,7 +33,7 @@ Publishing your Progressive Web App \(PWA\) to the [Microsoft Store][WindowsUwpP
       **Easy install**
    :::column-end:::
    :::column span="2":::
-      The Microsoft Store provides a consistent and user-friendly install experience across [all Windows 10 apps][MicrosoftStoreAppsWindows].
+      The Microsoft Store provides a consistent and user-friendly install experience across [all Windows 10 and later apps][MicrosoftStoreAppsWindows].
    :::column-end:::
 :::row-end:::
 :::row:::

@@ -61,7 +61,7 @@ Hybrid apps allow developers to enjoy the best of both worlds: the ubiquity and 
       Web development allows for faster deployment and iteration.
    :::column-end:::
    :::column span="1":::
-      Support for a consistent user experience across Windows 7, Windows 8, and Windows 10.
+      Support for a consistent user experience across Windows 7, Windows 8, Windows 10, and Windows 11.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -156,6 +156,7 @@ A General Availability \(GA\) or Preview version of WebView2 is available for th
 
 WebView2 apps can run on the following versions of Windows.
 
+*   Windows 11
 *   Windows 10
 *   Windows 10 IoT Enterprise LTSC x32 2019
 *   Windows 10 IoT Enterprise LTSC x64 2019

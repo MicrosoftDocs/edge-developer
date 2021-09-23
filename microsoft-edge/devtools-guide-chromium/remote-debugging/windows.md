@@ -1,24 +1,24 @@
 ---
-description: Get started with Remote Debugging Windows 10 devices
-title: Get started with remote debugging Windows 10 Devices
+description: Get started with Remote Debugging Windows 10 and later devices
+title: Get started with remote debugging Windows 10 and later Devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, remote, debugging, windows 10, windows, device portal
+keywords: microsoft edge, web development, f12 tools, devtools, remote, debugging, windows 10, Windows 10 and later, Windows 11, windows, device portal
 ---
-# Get started with remote debugging Windows 10 Devices
+# Get started with remote debugging Windows 10 and later Devices
 
-Remote debug live content on a Windows 10 device from your Windows or macOS computer.  This tutorial teaches you the following tasks.
+Remote debug live content on a Windows 10 and later device from your Windows or macOS computer.  This tutorial teaches you the following tasks.
 
-*   Set up your Windows 10 device for remote debugging and connect to it from your development machine.
-*   Inspect and debug live content on your Windows 10 device from your development machine.
-*   Screencast content from your Windows 10 device onto a DevTools instance on your development machine.
+*   Set up your Windows 10 and later device for remote debugging and connect to it from your development machine.
+*   Inspect and debug live content on your Windows 10 and later device from your development machine.
+*   Screencast content from your Windows 10 and later device onto a DevTools instance on your development machine.
 
 ## Step 1: Set up the host (debuggee machine)
 
-The host or debuggee machine is the Windows 10 device that you want to debug.  It may be a remote device that is hard for you to physically access or it may not have keyboard and mouse peripherals, making it difficult to interact with the Microsoft Edge DevTools on that device.  To set up the host \(debuggee\) machine, you need to complete the following actions.
+The host or debuggee machine is the Windows 10 and later device that you want to debug.  It may be a remote device that is hard for you to physically access or it may not have keyboard and mouse peripherals, making it difficult to interact with the Microsoft Edge DevTools on that device.  To set up the host \(debuggee\) machine, you need to complete the following actions.
 
 *   Install and configure [Microsoft Edge (Chromium)][MicrosoftEdgeMain]
 *   Install the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] from the [Microsoft Store][MicrosoftStoreAppsWindows]
@@ -39,7 +39,7 @@ Now navigate to `edge://flags` in Microsoft Edge \(Chromium\).  In **Search flag
 Install the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] from the [Microsoft Store][MicrosoftStoreAppsWindows].
 
 > [!NOTE]
-> The **Get** button for the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] may be disabled if you are on Windows 10 version 1809 or earlier.  To set up the host \(debuggee\) machine, it must be running Windows 10 version 1903 or later.  Update the host \(debuggee\) machine to acquire the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt].
+> The **Get** button for the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] may be disabled if you are on Windows 10 and later version 1809 or earlier.  To set up the host \(debuggee\) machine, it must be running Windows 10 version 1903 or later.  Update the host \(debuggee\) machine to acquire the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt].
 
 :::image type="complex" source="../media/remote-debugging-windows-media-remote-tools-in-store.msft.png" alt-text="The Remote Tools for Microsoft Edge \(Beta\) in the Microsoft Store" lightbox="../media/remote-debugging-windows-media-remote-tools-in-store.msft.png":::
    The [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] in the [Microsoft Store][MicrosoftStoreAppsWindows]
@@ -56,7 +56,7 @@ If it is listed as **Public**, navigate to **Settings** > **Network & Internet**
 Now, open the **Settings** app.  In **Find a setting**, enter `Developer settings` and choose it.  Toggle on **Developer Mode**.  You may now turn on the **Device Portal** by setting **Turn on remote diagnostics over local area network connections** to **On**.  You may then optionally turn **Authentication** on so that the client \(debugger\) device must provide the correct credentials to connect to this device.
 
 > [!NOTE]
-> If **Turn on remote diagnostics over local area network connections.** was previously turned on, you must turn it off and turn it on again for **Device Portal** to work with the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt].  If  a **For developers** section is not displayed in **Settings**, **Device Portal** may already be turned on so try restarting the Windows 10 device instead.
+> If **Turn on remote diagnostics over local area network connections.** was previously turned on, you must turn it off and turn it on again for **Device Portal** to work with the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt].  If  a **For developers** section is not displayed in **Settings**, **Device Portal** may already be turned on so try restarting the Windows 10 and later device instead.
 
 :::image type="complex" source="../media/remote-debugging-windows-media-host-settings.msft.png" alt-text="The Settings app with Developer Mode and Device Portal configured" lightbox="../media/remote-debugging-windows-media-host-settings.msft.png":::
    The **Settings** app with **Developer Mode** and **Device Portal** configured
@@ -144,7 +144,7 @@ You are able to interact with the screencast in multiple ways:
 *   To scroll, use your trackpad or mouse wheel, or fling with your mouse pointer.
 
 Some notes on screencasts:
-*   Screencasts only display page content.  Transparent portions of the screencast represent device interfaces, such as the Microsoft Edge address bar, the Windows 10 taskbar, or the Windows 10 keyboard.
+*   Screencasts only display page content.  Transparent portions of the screencast represent device interfaces, such as the Microsoft Edge address bar, the Windows 10 and later taskbar, or the Windows 10 and later keyboard.
 *   Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of the performance of your page.
 *   If your host device screen locks, the content of your screencast disappears.  Unlock your host device screen to automatically resume the screencast.
 
