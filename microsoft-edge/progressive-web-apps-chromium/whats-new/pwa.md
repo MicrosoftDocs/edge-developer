@@ -46,7 +46,7 @@ To have more control over the title bar area that's currently displayed in stand
 
 Learn more about experimenting with Window Controls Overlay at [Experimental features in Progressive Web Apps (PWAs)][ExpWCO].
 
-Register your origin for the Window Controls Overlay trial at our [Origin Trials Developer console][WCOOT].
+Register your origin for the **Web App Window Controls Overlay** trial at our [Origin Trials Developer Console][WCOOT].
 
 ### URL Handlers origin trial
 
@@ -54,7 +54,7 @@ Developers can now use the experimental feature Web App URL Handlers in origin t
 
 Learn more about experimenting with URL handlers at [Experimental features in Progressive Web Apps (PWAs)][ExpURLHandler].
 
-Register your domain for the URL handler trial at our [Origin Trials Developer console][URLHandlerOT].
+Register your domain for the **Web App URL Handlers** trial at our [Origin Trials Developer Console][URLHandlerOT].
 
 ### Support for the Share API on macOS
 
@@ -70,7 +70,7 @@ Microsoft Edge version 92 became the stable channel of Microsoft Edge on July 22
 
 ### Protocol handlers origin trial
 
-You can now register your PWA to handle specific protocols with the host operating system. The Windows trial for protocol handlers is now available. You can register your origin for the trial at the [origin trial signup page][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].
+You can now register your PWA to handle specific protocols with the host operating system. The Windows trial for protocol handlers is now available. You can register your origin for the **Web App Protocol Handler** trial at the [origin trial signup page][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].
 
 Learn more about using protocol handlers with your PWA at [Experimental features in Progressive Web Apps (PWAs)][ExpProtocolHandlers].
 
@@ -129,14 +129,16 @@ An unexpected shutdown can occur due to process failure, system restart, or powe
 [ExpURLHandler]: ../experimental-features/index.md#url-link-handling "URL Link Handling - Experimental Features"
 
 <!-- external links -->
+<!-- origin trials -->
 [MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Origin Trials | Microsoft Edge Developer"
 
-[MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration "Register for Web App Protocol Handler Registration | Microsoft Developer"
+[MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration "Register for Web App Protocol Handler origin trial | Microsoft Developer"
 
-[URLHandlerOT]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-url-handlers/registration/ "Register for Web App URL Handler | Microsoft Developer"
+[URLHandlerOT]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-url-handlers/registration/ "Register for Web App URL Handler origin trial | Microsoft Edge Developer"
 
-[WCOOT]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-window-controls-overlay/registration/ "Register for Web App Window Controls Overlay"
+[WCOOT]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-window-controls-overlay/registration/ "Register for Web App Window Controls Overlay origin trial | Microsoft Edge Developer"
 
+<!-- other -->
 [mdnShareAPI]: https://developer.mozilla.org/docs/Web/API/Navigator/share "navigator.share() method of the Web Share API | MDN"
 
 [4weekReleaseBlog]: https://blogs.windows.com/msedgedev/2021/03/12/new-release-cycles-microsoft-edge-extended-stable/ "Serving our customers more effectively with new release cycles for Microsoft Edge | Microsoft Edge Blog"
