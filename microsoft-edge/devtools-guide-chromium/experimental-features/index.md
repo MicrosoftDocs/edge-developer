@@ -171,15 +171,15 @@ This experiment is available starting with Microsoft Edge version 85.
 ## Open source files in Visual Studio Code
 <!-- in Experiments as of 96, at end of main list -->
 
-The **Open source files in Visual Studio Code** experiment replaces the code editor of the Sources tool with Visual Studio Code, for editing local files.  When you turn on this experiment, Developer Tools detects when you edit a local file, and prompts you to select a folder to use as your Workspace.  After you select a folder to use as your Workspace, selecting any link to a file in DevTools opens the file in Visual Studio Code, rather than in the code editor of the Sources tool in DevTools.
+The **Open source files in Visual Studio Code** experiment replaces the code editor of the Sources tool with Visual Studio Code, for editing local files.  When you turn on this experiment, Developer Tools detects when you edit a local file, and prompts you to select a folder to use as your Workspace.
+
+After you select a folder to use as your Workspace, selecting any link to a file in DevTools opens the file in Visual Studio Code, rather than in the code editor of the Sources tool in DevTools.
 
 :::image type="complex" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="Selecting a file link in the Styles tool opens the file in Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
     Selecting a file link in the **Styles** tool opens the file in Visual Studio Code
 :::image-end:::
 
-Any edits that you make in DevTools will now change the file on the hard drive and sync live with Visual Studio Code.
-
-You can read about setting up your workspace in [Opening Sources in Visual Studio Code][OpenSourcesInVSCode].
+Any edits that you make in DevTools will now change the file on the hard drive and sync live with Visual Studio Code.  You can read about setting up your workspace in [Opening source files in Visual Studio Code][OpenSourcesInVSCode].
 
 This experiment is available starting with Microsoft Edge version 96.
 
@@ -286,7 +286,7 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 
 
 <!-- links -->
-[OpenSourcesInVSCode]: ../sources/opening-sources-in-vscode.md "Open local sources in Microsoft Visual Studio Code" 
+[OpenSourcesInVSCode]: ../sources/opening-sources-in-vscode.md "Opening source files in Visual Studio Code"
 [Devtools3dViewIndex]: ../3d-view/index.md "3D View | Microsoft Docs"
 [DevtoolsCssGrid]: ../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsCustomizeIndex]: ../customize/index.md "Customize Microsoft Edge DevTools | Microsoft Docs"
