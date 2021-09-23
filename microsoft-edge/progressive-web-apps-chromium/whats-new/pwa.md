@@ -120,7 +120,7 @@ An unexpected shutdown can occur due to process failure, system restart, or powe
 
 <!-- ====================================================================== -->
 <!-- links -->
-[StoreandPWAs]: ../microsoft-store#measure-usage-of-your-store-installed-pwa "Measure usage of your Store-installed PWA - Publish your Progressive Web App to the Microsoft Store"
+[StoreandPWAs]: ../microsoft-store.md#measure-usage-of-your-store-installed-pwa "Measure usage of your Store-installed PWA - Publish your Progressive Web App to the Microsoft Store"
 
 [ExpWCO]: ../experimental-features/index.md#window-controls-overlay-for-installed-desktop-web-apps "Window Controls Overlay for installed desktop web apps - Experimental Features"
 
