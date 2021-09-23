@@ -29,6 +29,14 @@ We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) 
 
 Microsoft Edge version 93 became the Stable channel of Microsoft Edge on September 2, 2021. This article lists updates we made to Progressive Web Apps (PWAs) from both a developer and consumer point of view.
 
+### Measure usage of your Store installed PWA
+
+Microsoft Edge will now include a referrer header with the request for the first navigation of your Microsoft Store installed PWA. 
+
+First introduced with Edge 91, we shipped a bug fix in Edge 93. 
+
+Learn more on our [PWA and Microsoft Store documentation][StoreandPWAs]. 
+
 ### Window Controls Overlay origin trials
 
 To have more control over the title bar area that's currently displayed in standalone display mode, you may want to experiment with Window Controls Overlay. Window Controls Overlay (WCO) is a set of features that work together to provide just the essential controls needed for the app window. This layout frees up more space for the web content layer. WCO is available for installed desktop PWAs.
@@ -130,3 +138,4 @@ An unexpected shutdown can occur due to process failure, system restart, or powe
 
 [Chromium4weekM]: https://blog.chromium.org/2021/03/speeding-up-release-cycle.html
 
+[StoreandPWAs]: ../microsoft-store#measure-usage-of-your-store-installed-pwa
