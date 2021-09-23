@@ -38,7 +38,7 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 ### General
 
 #### Experimental Features
-*   Added [Media API][Webview2ReferenceWin32Icorewebview2experimental9ViewWebview2101018Prerelease] that enables developers to mute/unmute media within the WebView.
+*   Added a [media API][Webview2ReferenceWin32Icorewebview2experimental9ViewWebview2101018Prerelease] that enables developers to mute/unmute media within the WebView.
 *   Added support for [multiple user profiles][Webview2ReferenceWin32Icorewebview2experimentalenvironment8ViewWebview2101018Prerelease] with WebView2.
 
 #### Bug fixes
@@ -1268,6 +1268,6 @@ Initial developer preview release.
 [Webview2ReferenceWin32ICoreWebView2ExperimentalSettings6ViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings6?view=webview2-1.0.1010-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalSettings6 | Microsoft Docs"
 [Webview2ReferenceWin32ICoreWebView2ExperimentalCompositionController3ViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller3?view=webview2-1.0.1010-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalCompositionController3 | Microsoft Docs"
 
-[Webview2ReferenceWin32Icorewebview2experimental9ViewWebview2101018Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental9?view=webview2-1.0.1018-prerelease&preserve-view=true "interface ICoreWebView2Experimental9 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimental9ViewWebview2101018Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental9?view=webview2-1.0.1018-prerelease&preserve-view=true#summary "interface ICoreWebView2Experimental9 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2experimentalenvironment8ViewWebview2101018Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment8?view=webview2-1.0.1018-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalEnvironment8 | Microsoft Docs"
 
