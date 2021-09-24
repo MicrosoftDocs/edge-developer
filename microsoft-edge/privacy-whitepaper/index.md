@@ -410,9 +410,12 @@ The shopping service is turned on by default for all users.  To change the shopp
 InPrivate browsing uses the shopping setting of the profile that launched the InPrivate session.
 
 ## Travel
-Microsoft Edge helps you find recommendation while doing your online Travel activities. To help you find recommendations while planning your travel online, Microsoft Edge downloads a list of travel domains' information locally to the client from the Microsoft Travel service. 
 
-When you navigate a website, Microsoft Edge locally determines if the website you're on is a travel domain. If the website is identified as a Travel related webpage, Microsoft Edge sends the domain, flight dates, from & to locations and passenger count along with information about Microsoft Edge and cookies, if cookies are allowed, to the service. This data does not include any personally identifiable information and is sent over HTTPS. The Microsoft Edge travel feature requires sharing of cookie information with Bing. For example, the cookies may be used for debugging, fraud detection, and analytics. When a user visits Bing.com on their browser and updates any settings on Bing pages, Bing.com creates and stores this information in a cookie on user’s browser. This cookie is shared across Bing.com pages, and Edge sends this to the Microsoft Travel service to keep user’s experience consistent.
+Microsoft Edge helps you find recommendations while doing your online Travel activities.  To help you find recommendations while planning your travel online, Microsoft Edge downloads a list of travel domains' information locally to the client from the Microsoft Travel service.
+
+When you navigate a website, Microsoft Edge locally determines if the website you're on is a travel domain. If the website is identified as a Travel-related webpage, Microsoft Edge sends the domain, flight dates, from & to locations and passenger count along with information about Microsoft Edge and cookies, if cookies are allowed, to the service. This data does not include any personally identifiable information and is sent over HTTPS. 
+
+The Microsoft Edge travel feature requires sharing of cookie information with Bing. For example, the cookies may be used for debugging, fraud detection, and analytics. When a user visits Bing.com on their browser and updates any settings on Bing pages, Bing.com creates and stores this information in a cookie on user’s browser. This cookie is shared across Bing.com pages, and Edge sends this to the Microsoft Travel service to keep user’s experience consistent.
 
 The Travel service is turned on by default for all users. To change the travel setting in Microsoft Edge, complete the following actions.
 1.	Navigate to edge://settings/privacy.
