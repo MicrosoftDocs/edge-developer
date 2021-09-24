@@ -104,7 +104,7 @@ With a shared codebase between your website, mobile app, and desktop app (across
 
 Your app can also be published on the [Microsoft Store][PwaMicrosoftStore], making it more familiar and trustworthy for Windows users to discover and install.
 
-## Bridging the gap to desktop apps
+## Bridging the gap between web and desktop apps
 
 There are many new web capabilities built-in to Microsoft Edge that can make your app feel more integrated on Desktop and offer your users with engaging experiences.
 
@@ -120,19 +120,19 @@ With you PWAs, you can:
 *   Use CSS layouts, animations, and filters to create advanced designs.
 *   Run near-compiled performance code with WebAssembly.
 
-There isn't much you can't do today with Web technologies, and thanks to Microsoft Edge, PWAs on desktop can take full advantage of this to bridge the gap to what users expect desktop apps to be capable of.
+There isn't much you can't do today with Web technologies, and thanks to Microsoft Edge, PWAs on desktop can take full advantage of this to deliver what users expect desktop apps to do.
 
 Navigate to [Myth Busting PWAs][Davrous20191018MythBustingPwasNewEdgeEdition] for more information about what PWAs can do.
 
 ## The Microsoft Store
 
-Because PWAs are first-class citizens in the Microsoft Store, users can fully engage with them, from discovery, to installation, to execution, without ever opening the browser.
+Because PWAs are first-class citizens in the [Microsoft Store][PwaMicrosoftStore], users can fully engage with them, from discovery, to installation, to execution, without ever opening the browser.
 
 As the most used app on PCs, the Microsoft Store provides a trustworthy and familiar experience for your users to install your app. Additionally, you can view detailed usage statistics and charts that let you know how your apps in the Microsoft Store are doing.
 
 ## Success stories
 
-Using PWA technologies is a great way to make your app **safe**, **discoverable**, **linkable**, **easy to install** and update, **responsive**, and **network independent**. Many businesses use PWAs and have had success stories.
+Using PWA technologies is a great way to make your app **safe**, **discoverable**, **linkable**, **easy to install** and update, **responsive**, and **network independent**. Many businesses use PWAs and have had success.
 
 *   The Starbucks PWA has increased daily active users twice and orders on desktop are nearly the same rate as mobile ([source][StarbucksSuccessStory]).
 *   Trivago saw an increase of 150% for people who add its PWA to the home screen and the increased engagement led to a 97% increase in clickouts to hotel offers ([source][TrivagoSuccessStory]).

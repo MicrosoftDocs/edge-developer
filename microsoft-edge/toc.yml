@@ -411,7 +411,7 @@
                   href: progressive-web-apps-chromium/how-to/background-syncs.md
         - name: What's new
           href: progressive-web-apps-chromium/whats-new/pwa.md
-        - name: Demo PWAs
+        - name: Sample PWAs
           href: progressive-web-apps-chromium/demo-pwas.md
 # equivalent card: WebView2 ===================================================
     - name: WebView2
