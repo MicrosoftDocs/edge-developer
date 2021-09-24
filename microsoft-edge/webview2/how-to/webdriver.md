@@ -15,6 +15,8 @@ Because WebView2 uses the Microsoft Edge \(Chromium\) web platform, WebView2 dev
 
 Get started with the following steps.
 
+
+<!-- ====================================================================== -->
 ## Step 1: Download the WebView2API Sample
 
 If you don't have an existing WebView2 project, download the [WebView2API Sample app][GithubMicrosoftedgewebview2samplesSampleappsWebview2apisample], which is a comprehensive sample of the latest WebView2 SDK.  Make sure you've satisfied the [prerequisites for the WebView2API Sample app][GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisamplePrerequisites].
@@ -25,6 +27,8 @@ Once you've cloned the repo, build the project in Visual Studio.  It should look
    WebView2API Sample app
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 2: Install Microsoft Edge Driver
 
 Follow the instructions to install [Microsoft Edge Driver][WebdriverChromiumDownloadMicrosoftEdgeDriver].  Microsoft Edge Driver is the browser-specific driver required by Selenium to automate and test WebView2.
@@ -34,6 +38,8 @@ Make sure the version of Microsoft Edge Driver matches the version of the WebVie
 *  To locate the latest WebView2 SDK release, navigate to [Release notes for WebView2 SDK][Webview2ReleaseNotes].
 *  To find out which version of the WebView2 Runtime you currently have, navigate to `edge://settings/help`.
 
+
+<!-- ====================================================================== -->
 ## Step 3: Add Selenium to the WebView2API Sample
 
 By this point, you've installed the WebView2 Runtime, built a WebView2 project, and installed Microsoft Edge Driver.  Next, get started using Selenium, as follows.
@@ -93,6 +99,8 @@ By this point, you've installed the WebView2 Runtime, built a WebView2 project, 
     using System.Threading.Tasks;
     ```
 
+
+<!-- ====================================================================== -->
 ## Step 4: Drive WebView2 with Selenium and Microsoft Edge Driver
 
 1.  To drive WebView2 with Selenium and Microsoft Edge Driver, first create the `EdgeOptions` object, by copying and pasting the following code snippet.
@@ -145,16 +153,23 @@ Congratulations.  You've successfully automated a WebView2 project and driven We
 > [!Note]
 > [edge-selenium-tools][GithubSeleniumProject] is a project that the Microsoft Edge team created to allow Selenium 3 users to drive Edge Chromium and WebView2 using the same API that's provided in Selenium 4.
 
+
+<!-- ====================================================================== -->
 ## See also
 
-*   For a comprehensive look at how the APIs Selenium drives WebView2 or Microsoft Edge \(Chromium\), navigate to [WebDriver on Selenium documentation][SeleniumWebdriver].
-*   To learn more about the WebView2 control and how to use it when embedding web content in your native app, navigate to [Introduction to Microsoft Edge WebView2][WebViewIndex].
-*   To learn more about automating Microsoft Edge \(Chromium\), navigate to [Use WebDriver (Chromium) for test automation][WebdriverChromium].
+*  [Attaching WebDriver to WebView2](attach-webdriver.md)
+*  [WebDriver on Selenium documentation][SeleniumWebdriver] - How the APIs Selenium drives WebView2 or Microsoft Edge.
+*  [Introduction to Microsoft Edge WebView2][WebViewIndex] - How to use the WebView2 control to embed web content in your native app.
+*  [Use WebDriver (Chromium) for test automation][WebdriverChromium] - Automating Microsoft Edge.
 
+
+<!-- ====================================================================== -->
 ## Getting in touch with the Microsoft Edge WebView team
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
 
+
+<!-- ====================================================================== -->
 <!-- links -->
 [WebdriverChromium]: ../../webdriver-chromium/index.md "Use WebDriver (Chromium) for test automation | Microsoft Docs"
 [WebdriverChromiumDownloadMicrosoftEdgeDriver]: ../../webdriver-chromium/index.md#download-microsoft-edge-driver "Download Microsoft Edge Driver - Use WebDriver (Chromium) for test automation | Microsoft Docs"
