@@ -13,40 +13,30 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 When you install Microsoft Edge, you not only get a browser, you also get Developer Tools, providing a powerful way to inspect, debug, and even create web projects.  The Developer Tools shipped with the browser are partly based on the tools in the Chromium open-source project, so you might already be familiar with some of these tools.  The Microsoft Edge Developer Tools are also called `Microsoft Edge DevTools`, or simply `DevTools`.
 
-<!-- unlink?  premature or overemph on nav/leaving? detracts from the point, of describing the value-add -->
 With DevTools, you can:
-*   [Inspect and change the current webpage][DevtoolsGuideDomIndex] live in the browser.
-*   [Emulate how your product behaves on different devices][DevtoolsGuideDeviceModeIndex] and simulate a mobile environment, complete with different network conditions.
-*   [Inspect, tweak, and change the styles of elements][DevtoolsGuideInspectStylesEditFonts] in the webpage using live tools with a visual interface.
-*   [Debug your JavaScript][DevtoolsGuideJavascriptIndex] using breakpoint debugging and with the [live console][DevtoolsGuideConsoleIndex].
-*   Find [accessibility, performance, compatibility, and security issues][DevtoolsGuideIssuesIndex] in your products and learn how to use DevTools to fix each.
-*   [Inspect the network traffic][DevtoolsGuideNetworkIndex] and review the location of the problems.
-*   [Inspect where the browser stored content][DevtoolsGuideStorageSessionstorage] in various formats.<!-- Is the link meant to be local or session storage? -->
-*   [Evaluate the performance][DevtoolsGuideEvaluatePerformanceIndex] of your product to find [memory problems][DevtoolsGuideMemoryProblemsIndex] and [rendering issues][DevtoolsGuideRenderingToolsIndex].
-*   [Use a development environment][DevtoolsGuideSourcesIndex] to [sync changes in DevTools with the file system][DevtoolsGuideWorkspacesIndex] and [override files][DevtoolsGuideJavascriptOverrides] from the web.
+*   Inspect and change the current webpage] live in the browser.
+*   Emulate how your product behaves on different devices and simulate a mobile environment, complete with different network conditions.
+*   Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.
+*   Debug your JavaScript using breakpoint debugging and with the live console.
+*   Find accessibility, performance, compatibility, and security issues in your products and learn how to use DevTools to fix each.
+*   Inspect the network traffic and review the location of the problems.
+*   Inspect where the browser stored content in various formats.
+*   Evaluate the performance of your product to find memory problems and rendering issues.
+*   Use a development environment to sync changes in DevTools with the file system and from the web.
 
 
 <!-- ====================================================================== -->
 ## Opening DevTools
 
-To open and explore DevTools, do any of the following:
+To open DevTools, do any of the following:
 
 *   Hover on any element on the webpage, open the context menu (right-click), and then select **Inspect**.  DevTools opens, with the **Elements** tool selected.
 *   Select `F12`.
 *   Select `Ctrl`+`Shift`+`I` on Windows/Linux or `Command`+`Option`+`I` on macOS.
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="./media/devtools-intro-inspect.msft.png" alt-text="Select Inspect from the context menu on any element" lightbox="./media/devtools-intro-inspect.msft.png":::
-         Select **Inspect** from the context menu on any element
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="./media/devtools-intro-inspect-devtools-open.png" alt-text="DevTools opens with the chosen element highlighted" lightbox="./media/devtools-intro-inspect-devtools-open.png":::
-         DevTools opens with the chosen element highlighted
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+:::image type="content" source="./media/devtools-intro-inspect.msft.png" alt-text="Select Inspect from the context menu on any element.":::
+
+:::image type="content" source="./media/devtools-intro-inspect-devtools-open.png" alt-text="DevTools opens with the chosen element highlighted.":::
 
 There are two main ways to interact with DevTools.
 *   Use the mouse.
@@ -56,15 +46,52 @@ See also [Open Microsoft Edge DevTools][DevtoolsGuideOpenIndex] - how to open th
 
 
 <!-- ====================================================================== -->
+## Tools in DevTools
+
+Tools are also called panels.  Most tools have a tab on the toolbar.
+
+| Tool | Purpose | Article |
+|---|---|---|
+| Welcome |  |  |
+| Elements |  |  |
+| Console |  |  |
+| Sources |  |  |
+| Network |  |  |
+| Performance |  |  |
+| Memory |  |  |
+| Application |  |  |
+| Security |  |  |
+| Lighthouse |  |  |
+| 3D View |  |  |
+| Animations |  |  |
+| Changes |  |  |
+| Coverage |  |  |
+| Developer Resources |  |  |
+| Issues |  |  |
+| JavaScript Profiler |  |  |
+| Layers |  |  |
+| Media |  |  |
+| Memory Inspector |  |  |
+| Network conditions |  |  |
+| Network request blocking |  |  |
+| Performance monitor |  |  |
+| Quick source |  |  |
+| Rendering |  |  |
+| Search |  |  |
+| Sensors |  |  |
+| WebAudio |  |  |
+| WebAuthn |  |  |
+| Inspect |  |  |
+ 
+
+<!-- ====================================================================== -->
 ## Changing where DevTools is docked in the browser
 
 When you open DevTools, it docks to the left of your browser.  To change the docked location of DevTools:
 1.  Select the **Customize and control DevTools** (`...`) button.
 1.  To the right of **Placement of DevTools relative to the page** (**Dock side**), select a layout option.
 
-:::image type="complex" source="./media/devtools-intro-docking-menu.msft.png" alt-text="Screenshot of the Dock side menu in DevTools" lightbox="./media/devtools-intro-docking-menu.msft.png":::
-   The Dock side menu in DevTools
-:::image-end:::
+:::image type="content" source="./media/devtools-intro-docking-menu.msft.png" alt-text="Screenshot of the Dock side menu in DevTools.":::
 
 In **Dock side**, select a layout option:
 
@@ -141,15 +168,11 @@ The main toolbar in DevTools has the following sections:
 
 *   When you select the **Inspect** tool, you can select an element on the current webpage.  While the **Inspect** tool is active, you can move your mouse over different parts of the webpage to get detailed information about page elements, and a multi-color overlay that shows the layout dimensions, padding, and margin of the page element.
 
-    :::image type="complex" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="The Inspect tool while hovering over with the first headline of this article" lightbox="./media/devtools-intro-inspect-tool.msft.png":::
-       The Inspect tool while hovering over with the first headline of this article
-    :::image-end:::
+    :::image type="content" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="The Inspect tool while hovering over with the first headline of this article.":::
 
 *   The [Device Emulation][DevtoolsGuideDeviceModeIndex] tool displays the current web product in an emulated device mode.  The **Device Emulation** tool allows you to run and test how your product reacts when you resize the browser.  It also gives you an estimation of the layout and behavior on a mobile device.
 
-    :::image type="complex" source="./media/devtools-intro-device-emulation.msft.png" alt-text="DevTools display of this article in an emulated mobile phone" lightbox="./media/devtools-intro-device-emulation.msft.png":::
-       DevTools display of this article in an emulated mobile phone
-    :::image-end:::
+    :::image type="content" source="./media/devtools-intro-device-emulation.msft.png" alt-text="DevTools display of this article in an emulated mobile phone.":::
 
 *   The main toolbar contains tabs for tools that are used in various scenarios.  You can customize each of the tools, and the content of a tool can change based on the context.  To show a tool that is on a tab that's hidden, select the **More tabs** (`>>`) button.   To add a tool to the main toolbar or to the drawer's toolbar, select the **More tools** (`+`) button.  Each tool is introduced below.
 
@@ -174,23 +197,17 @@ To open the command menu, do any of the following:
 *   Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
 *   Select **Customize And Control DevTools** (`...`), and then select **Run Command**.
 
-:::image type="complex" source="./media/devtools-intro-command-menu.msft.png" alt-text="Screenshot of the command menu in DevTools" lightbox="./media/devtools-intro-command-menu.msft.png":::
-Screenshot of the command menu in DevTools
-:::image-end:::
+:::image type="content" source="./media/devtools-intro-command-menu.msft.png" alt-text="Screenshot of the command menu in DevTools.":::
 
 The command menu allows you to type commands to display, hide, or run features in DevTools.  With the command menu open, enter the word **changes**, and then select **Drawer: Show Changes**.  The **Changes** tool opens, which is useful when you edit CSS.  In this case, the command menu provides a fast alternative to selecting **More Tools** (...) and then selecting **Changes**, or editing a `.js` file in the **Sources** tool, then right-clicking and selecting **Local modifications**.
 
 The command menu displays the options after you type `changes`:
 
-:::image type="complex" source="./media/devtools-intro-command-menu-show-changes.msft.png" alt-text="Command menu displays the options after you type changes" lightbox="./media/devtools-intro-command-menu-show-changes.msft.png":::
-   Command menu displays the options after you type `changes`
-:::image-end:::
+:::image type="content" source="./media/devtools-intro-command-menu-show-changes.msft.png" alt-text="Command menu displays the options after you type changes.":::
 
 DevTools with the **Changes** tool open:
 
-:::image type="complex" source="./media/devtools-intro-showing-changes.msft.png" alt-text="DevTools with the Changes tool open" lightbox="./media/devtools-intro-showing-changes.msft.png":::
-   DevTools with the **Changes** tool open
-:::image-end:::
+:::image type="content" source="./media/devtools-intro-showing-changes.msft.png" alt-text="DevTools with the Changes tool open.":::
 
 See also [Run commands with the Microsoft Edge DevTools Command menu][DevtoolsGuideCommandMenuIndex].
 
@@ -204,9 +221,7 @@ You can customize DevTools to meet your needs for the way you work.  To change s
 
 In the **Preferences** section, you can change several parts of DevTools.  For example, you can use the **Match the browser language** setting to use the same language in DevTools that is used in your browser.  For another example, use the **Theme** setting to change the color theme of DevTools.
 
-:::image type="complex" source="media/devtools-intro-all-settings.msft.png" alt-text="Screenshot of all the settings in DevTools" lightbox="./media/devtools-intro-all-settings.msft.png":::
-   Screenshot of all the settings in DevTools
-:::image-end:::
+:::image type="content" source="media/devtools-intro-all-settings.msft.png" alt-text="Screenshot of all the settings in DevTools.":::
 
 You can also change the settings of advanced features, such as:
 *   [Workspaces][DevtoolsGuideWorkspacesIndex].
@@ -216,9 +231,7 @@ You can also change the settings of advanced features, such as:
 *   Define simulated **Locations**.
 *   Customize keyboard **Shortcuts**.  For example, to use the same shortcuts in DevTools as in Visual Studio Code, select **Match shortcuts from preset** > **Visual Studio Code**.
 
-    :::image type="complex" source="./media/devtools-intro-match-keys.msft.png" alt-text="Screenshot of all the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code" lightbox="./media/devtools-intro-match-keys.msft.png":::
-       Screenshot of all the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code
-    :::image-end:::
+    :::image type="content" source="./media/devtools-intro-match-keys.msft.png" alt-text="Screenshot of all the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code.":::
 
 
 <!-- ====================================================================== -->
@@ -239,7 +252,20 @@ To preview the [latest features coming to DevTools][DevtoolsGuideWhatsNew202102D
 ## See also
 
 *   [DevTools for beginners: Get Started with HTML and the DOM][DevtoolsGuideBeginnersHtml]
-*   [Microsoft Edge DevTools Protocol][DevtoolsProtocolIndex]
+*   [Inspect and change the current webpage][DevtoolsGuideDomIndex]
+*   [Emulate how your product behaves on different devices][DevtoolsGuideDeviceModeIndex]
+*   [Inspect, tweak, and change the styles of elements][DevtoolsGuideInspectStylesEditFonts]
+*   [Debug your JavaScript][DevtoolsGuideJavascriptIndex]
+*   [live console][DevtoolsGuideConsoleIndex]
+*   [accessibility, performance, compatibility, and security issues][DevtoolsGuideIssuesIndex]
+*   [Inspect the network traffic][DevtoolsGuideNetworkIndex]
+*   [Inspect where the browser stored content][DevtoolsGuideStorageSessionstorage]
+*   [Evaluate the performance][DevtoolsGuideEvaluatePerformanceIndex]
+*   [memory problems][DevtoolsGuideMemoryProblemsIndex]
+*   [rendering issues][DevtoolsGuideRenderingToolsIndex]
+*   [Use a development environment][DevtoolsGuideSourcesIndex]
+*   [sync changes in DevTools with the file system][DevtoolsGuideWorkspacesIndex]
+*   [override files from the web][DevtoolsGuideJavascriptOverrides]
 
 
 <!-- ====================================================================== -->
@@ -265,7 +291,6 @@ To preview the [latest features coming to DevTools][DevtoolsGuideWhatsNew202102D
 [DevtoolsGuideStorageSessionstorage]: ./storage/sessionstorage.md "View and edit session storage with Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsGuideWhatsNew202102Devtools]: ./whats-new/2021/02/devtools.md "What's New In DevTools (Microsoft Edge 90) | Microsoft Docs"
 [DevtoolsGuideWorkspacesIndex]: ./workspaces/index.md "Edit files with Workspaces | Microsoft Docs"
-[DevtoolsProtocolIndex]: ../devtools-protocol-chromium/index.md "Microsoft Edge DevTools Protocol overview | Microsoft Docs"
 <!-- external links -->
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge Add-ons"
 
