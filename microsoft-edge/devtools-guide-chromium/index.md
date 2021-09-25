@@ -87,42 +87,29 @@ Tools are also called panels.  Most tools have a tab on the toolbar.
 <!-- ====================================================================== -->
 ## Changing where DevTools is docked in the browser
 
-When you open DevTools, it docks to the left of your browser.  To change the docked location of DevTools:
+To change where DevTools is placed within the browser window:
 1.  Select the **Customize and control DevTools** (`...`) button.
 1.  To the right of **Placement of DevTools relative to the page** (**Dock side**), select a layout option.
 
 :::image type="content" source="./media/devtools-intro-docking-menu.msft.png" alt-text="Screenshot of the Dock side menu in DevTools.":::
 
-In **Dock side**, select a layout option:
+**Dock to left** or **Dock to right** keeps DevTools side-by-side with your web product, and is excellent when you [emulate mobile devices][DevtoolsGuideDeviceModeIndex].  The **Dock to left** and **Dock to right** options work best with high-resolution displays.
 
-*   **Undock into separate window**.   Helps you work with several monitors or if you need to work on a full screen app.
-*   **Dock to left** or **Dock to right**.  Helps you keep DevTools side by side with your web product, and is excellent when you emulate mobile devices.  The **Dock to left** and **Dock to right** options work best with high-resolution displays.  For more information about emulation devices, see [Emulate mobile devices in Microsoft Edge DevTools][DevtoolsGuideDeviceModeIndex].
-*   **Dock to bottom**.  Helps you when you do not have enough horizontal display space, or you want to debug long text in the DOM or **Console**.
+**Dock to right** is the default placement of DevTools:
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="./media/devtools-intro-docking-left.msft.png" alt-text="Select Dock To left" lightbox="./media/devtools-intro-docking-left.msft.png":::
-         Select **Dock To left**
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="media/devtools-intro-docking-bottom.msft.png" alt-text="Select Dock To bottom" lightbox="media/devtools-intro-docking-bottom.msft.png":::
-         Select **Dock To bottom**
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="media/devtools-intro-docking-right.msft.png" alt-text="Select Dock To right" lightbox="media/devtools-intro-docking-right.msft.png":::
-         Select **Dock To right**
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="media/devtools-intro-docking-own-window.msft.png" alt-text="Select Undock into separate window" lightbox="media/devtools-intro-docking-own-window.msft.png":::
-         Select **Undock into separate window**
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+:::image type="content" source="media/devtools-intro-docking-right.msft.png" alt-text="Screenshot of DevTools docked to the right.":::
+
+**Dock to left** is an another side-by-side option:
+
+:::image type="content" source="media/devtools-intro-docking-left.msft.png" alt-text="Screenshot of DevTools docked to the left.":::
+
+**Dock to bottom** helps you when you don't have enough horizontal display space, or you want to debug long text in the DOM or **Console**:
+
+:::image type="content" source="media/devtools-intro-docking-bottom.msft.png" alt-text="Screenshot of DevTools docked to the bottom.":::
+
+**Undock into separate window** helps you work with several monitors or if you need to work on a full-screen app:
+
+:::image type="content" source="media/devtools-intro-docking-own-window.msft.png" alt-text="Screenshot of DevTools undocked into a separate window.":::
 
 See also [Change DevTools placement (Undock, Dock To bottom, Dock To left)][DevtoolsGuideCustomizePlacement].
 
