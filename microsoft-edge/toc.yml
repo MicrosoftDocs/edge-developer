@@ -395,6 +395,8 @@
               href: progressive-web-apps-chromium/how-to/origin-trials.md
             - name: Integrate PWAs on desktop
               items:
+                - name: Define icons and a theme color
+                  href: progressive-web-apps-chromium/how-to/icon-theme-color.md
                 - name: Re-engage users with notifications, push messages, and badges
                   href: progressive-web-apps-chromium/how-to/notifications-badges.md
                 - name: Handle files
