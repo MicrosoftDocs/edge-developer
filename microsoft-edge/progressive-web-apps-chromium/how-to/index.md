@@ -58,60 +58,6 @@ Now browse to `http://localhost:3000` to view your new web app.
 
 
 <!-- ====================================================================== -->
-## Apply best practices  
-
-Before turning your site into a PWA, note that a great PWA is, before anything else, a great website that should apply web best practices such as the following.  
-
-:::row:::
-   :::column span="1":::
-      [Cross-browser compatibility][MDNCrossBrowserTesting]  
-   :::column-end:::
-   :::column span="2":::
-      Ensure your PWA works by [testing][MicrosoftDeveloperEdgeToolsRemote] in different browsers and environments.  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="1":::
-      [Responsive design][WikiResponsiveWebDesign]  
-   :::column-end:::
-   :::column span="2":::
-      Employs fluid layouts and flexible images.  Responsive design includes the following elements that adapt your UX to your user's device.  
-      
-      *   CSS [grid][MDNCssGridLayout]  
-      *   [flexbox][MDNCssFlexibleBoxLayout]  
-      *   [media queries][MDNMediaQueries]  
-      *   [responsive images][MDNResponsiveImages]  
-          
-      Uses [device emulation tools][DevToolsGuideDeviceModeTestingOtherBrowsers] from your browser to locally test, or create a remote debugging session on [Windows][DevtoolsRemoteDebuggingWindows] or [Android][DevtoolsRemoteDebuggingIndex] to test directly on a target device.
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="1":::
-      [Deep linking][WikiDeepLinking]  
-   :::column-end:::
-   :::column span="2":::
-      Routes each page of your site to a unique URL so existing users can help you engage an even broader audience through social media sharing.  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="1":::
-      [Offline experience](./offline.md)  
-   :::column-end:::
-   :::column span="2":::
-      Once installed, works regardless of your users' connection status and provides a custom offline page rather than using the browser default offline page.  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="1":::
-      [Validation and testing practices][Webhint]  
-   :::column-end:::
-   :::column span="2":::
-      Uses code quality tools like the [Webhint][Webhint] linter to optimize the efficiency, robustness, safety, and accessibility of your app.  
-   :::column-end:::
-:::row-end:::  
-
-
-<!-- ====================================================================== -->
 ## Getting started building a PWA
 
 Now that you have a simple web app, extend it as a PWA by adding the three requirements for PWAs: [HTTPS](#step-1---use-https), a [Web App Manifest](#step-2---create-a-web-app-manifest), and a [Service Worker](#step-3---add-a-service-worker).
@@ -134,9 +80,9 @@ A [Web App Manifest][MDNWebAppManifest] is a JSON file containing metadata about
 
 To add an app manifest to the web app:
 
-1.  In Visual Studio Code, select **File** > **Open Folder** and then select the `MySamplePwa` directory that you created earlier.  
-1.  Select `Ctrl`+`N` to create a new file, and paste in the following code snippet.  
-    
+1.  In Visual Studio Code, select **File** > **Open Folder** and then select the `MySamplePwa` directory that you created earlier.
+1.  Select `Ctrl`+`N` to create a new file, and paste in the following code snippet.
+
     ```json
     {
         "lang": "en-us",
@@ -228,16 +174,57 @@ Confirm that your service worker runs, as follows:
 
 
 <!-- ====================================================================== -->
-## Next steps
+## Next steps 
 
-To build a robust, real-world PWA, consider the following:
+To build a robust, real-world PWA, consider the following web best practices:
 
-*   Managing and storing push subscriptions.
-*   [Encrypting][NPMWebPushEncrypt] payload data.
-*   Responsive design.
-*   Deep-linking.
-*   [Cross-browser testing][BrowserStackTestEdgeBrowser].
-*   Validation and testing practices such as [Webhint][Webhint].
+:::row:::
+   :::column span="1":::
+      [Cross-browser compatibility][MDNCrossBrowserTesting]  
+   :::column-end:::
+   :::column span="2":::
+      Ensure your PWA works by [testing][MicrosoftDeveloperEdgeToolsRemote] in different browsers and environments.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Responsive design][WikiResponsiveWebDesign]  
+   :::column-end:::
+   :::column span="2":::
+      Employs fluid layouts and flexible images.  Responsive design includes the following elements that adapt your UX to your user's device.  
+      
+      *   CSS [grid][MDNCssGridLayout]  
+      *   [flexbox][MDNCssFlexibleBoxLayout]  
+      *   [media queries][MDNMediaQueries]  
+      *   [responsive images][MDNResponsiveImages]  
+          
+      Uses [device emulation tools][DevToolsGuideDeviceModeTestingOtherBrowsers] from your browser to locally test, or create a remote debugging session on [Windows][DevtoolsRemoteDebuggingWindows] or [Android][DevtoolsRemoteDebuggingIndex] to test directly on a target device.
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Deep linking][WikiDeepLinking]  
+   :::column-end:::
+   :::column span="2":::
+      Routes each page of your site to a unique URL so existing users can help you engage an even broader audience through social media sharing.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Offline experience](./offline.md)  
+   :::column-end:::
+   :::column span="2":::
+      Once installed, works regardless of your users' connection status and provides a custom offline page rather than using the browser default offline page.  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      [Validation and testing practices][Webhint]  
+   :::column-end:::
+   :::column span="2":::
+      Uses code quality tools like the [Webhint][Webhint] linter to optimize the efficiency, robustness, safety, and accessibility of your app.  
+   :::column-end:::
+:::row-end:::  
 
 
 <!-- ====================================================================== -->
