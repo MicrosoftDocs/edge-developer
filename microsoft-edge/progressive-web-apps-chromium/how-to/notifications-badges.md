@@ -9,19 +9,20 @@ ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, Windows, push, notifications, badges
 ---
-# Re-engage users with notifications, push messages, and badges  
+# Re-engage users with notifications, push messages, and badges
 
-Using Background Sync, Periodic Background Sync, and Background Fetch, Progressive Web Apps are able to do work when the app is not running, like updating data in the cache or sending messages when the device regains connectivity. In order to re-engage the user with the app, once a background task has been completed, notifications and badges can be used.  
+Using Background Sync, Periodic Background Sync, and Background Fetch, Progressive Web Apps are able to do work when the app is not running, like updating data in the cache or sending messages when the device regains connectivity. In order to re-engage the user with the app, once a background task has been completed, notifications and badges can be used.
 
-Notifications are useful for apps to take part in the system's notification center and display images and text information. They are useful to alert the user about an important change of state in your app. Notifications tend to be disruptive to the user's workflow however, and should be used rarely.  
+Notifications are useful for apps to take part in the system's notification center and display images and text information. They are useful to alert the user about an important change of state in your app. Notifications tend to be disruptive to the user's workflow however, and should be used rarely.
 
-Badges can be more user-friendly and can therefore be used more frequently. They don't interrupt the user's workflow and are useful to display a small amount of information like a number of received messages for example.  
+Badges can be more user-friendly and can therefore be used more frequently. They don't interrupt the user's workflow and are useful to display a small amount of information like a number of received messages for example.
 
-## Notify the user with a message in the action center  
 
-PWAs can display notifications using the Notifications API.  Navigate to the [Notifications API documentation][MDNNotificationsAPI] to learn more.  
+## Display notifications in the action center
 
-### Check for support  
+PWAs can display notifications using the [Notifications API][MDNNotificationsAPI].
+
+### Check for support
 
 Before using the API, check that it is supported.
 
@@ -29,11 +30,11 @@ Before using the API, check that it is supported.
 if ("Notification" in window) {
     console.log("The Notifications API is support");
 }
-```  
+```
 
-### Request permission  
+### Request permission
 
-The Notifications API can only be used after having requested the user's permission to display messages. To request permission, use the `requestPermission` function. This should be done in response to a user action only. Doing so is a best practice to avoid interrupting the user with permission prompts while they haven't interacted with a feature that uses notifications yet.  
+The Notifications API can only be used after having requested the user's permission to display messages. To request permission, use the `requestPermission` function. This should be done in response to a user action only. Doing so is a best practice to avoid interrupting the user with permission prompts while they haven't interacted with a feature that uses notifications yet.
 
 ```javascript
 button.addEventListener("click", () => {
@@ -43,52 +44,52 @@ button.addEventListener("click", () => {
         }
     });
 });
-```  
+```
 
-You can later check the permission status again.  
+You can later check the permission status again.
 
 ```javascript
 if (Notification.permission === "granted") {
     console.log("The user already accepted");
 }
-```  
+```
 
-### Display the notification  
+### Display the notification
 
-Once you know that the API is supported and the user has accepted notifications, you can display one by creating a `Notification` object.  
+Once you know that the API is supported and the user has accepted notifications, you can display one by creating a `Notification` object.
 
 ```javascript
 const notification = new Notification("Hello World!");
-```  
+```
 
 :::image type="complex" source="../media/notification-text-only.png" alt-text="A text only notification" lightbox="../media/notification-text-only.png":::
     A text only notification
-:::image-end:::  
+:::image-end:::
 
-The above code will display a text-only notification message, but it is also possible to customize the aspect of the message with additional properties.  
+The above code will display a text-only notification message, but it is also possible to customize the aspect of the message with additional properties.
 
 ```javascript
 const notification = new Notification("Hello World!", {
     body: "This is my first notification message",
     icon: "/assets/logo-192.png",
 });
-```  
+```
 
 :::image type="complex" source="../media/notification-with-image.png" alt-text="A notification with some text and an image" lightbox="../media/notification-with-image.png":::
     A notification with some text and an image
-:::image-end:::  
+:::image-end:::
 
-You can also display notifications from your app's service worker. This is useful as the service worker may be doing work while your app isn't running. To send a notification from your service worker, use the `ServiceWorkerRegistration.showNotification` function.  
+You can also display notifications from your app's service worker. This is useful as the service worker may be doing work while your app isn't running. To send a notification from your service worker, use the `ServiceWorkerRegistration.showNotification` function.
 
 ```javascript
 self.registration.showNotification("Hello from the Service Worker!");
-```  
+```
 
-The `showNotification` function supports the same arguments as the `Notification` constructor used in the previous example, as well as the `actions` property described in the following section.  
+The `showNotification` function supports the same arguments as the `Notification` constructor used in the previous example, as well as the `actions` property described in the following section.
 
-### Add actions to notifications  
+### Add actions to notifications
 
-It is possible to add actions for the user to perform in a notification. This is only supported in persistent notifications shown using the `ServiceWorkerRegistration.showNotification` function.  
+It is possible to add actions for the user to perform in a notification. This is only supported in persistent notifications shown using the `ServiceWorkerRegistration.showNotification` function.
 
 ```javascript
 self.registration.showNotification("Your content is ready", {
@@ -105,13 +106,13 @@ self.registration.showNotification("Your content is ready", {
         }
     ]
 });
-```  
+```
 
 :::image type="complex" source="../media/notification-with-actions.png" alt-text="A notification with some text, an image, and two actions" lightbox="../media/notification-with-actions.png":::
     A notification with some text, an image, and two actions
-:::image-end:::  
+:::image-end:::
 
-When the user clicks on one of the action buttons, your PWA can handle it by listening to the `notificationclick` event, close the notification and execute some code.  
+When the user clicks on one of the action buttons, your PWA can handle it by listening to the `notificationclick` event, close the notification and execute some code.
 
 ```javascript
 self.addEventListener('notificationclick', event => {
@@ -127,27 +128,28 @@ self.addEventListener('notificationclick', event => {
         console.log("main body of the notification was clicked");
     }
 }, false);
-```  
+```
 
-To learn more about notification actions, navigate to the [NotificationAction documentation][MDNNotificationActionAPI].  
+To learn more about notification actions, navigate to the [NotificationAction documentation][MDNNotificationActionAPI].
 
-## Display a badge on the app icon  
 
-PWAs can display a badge on their app icon by using the App Badging API. The badge can either be empty or contain a number. Navigate to the [App Badging API documentation][MDNAppBadgingAPI] to learn more.  
+## Display a badge on the app icon
 
-### Check for support  
+PWAs can display a badge on their app icon by using the [App Badging API][MDNAppBadgingAPI]. The badge can either be empty or contain a number.
 
-Before using the App Badging API, check that it is supported in the browser engine your app runs in.  
+### Check for support
+
+Before using the App Badging API, check that it is supported in the browser engine your app runs in.
 
 ```javascript
 if (navigator.setAppBadge) {
     console.log("The App Badging API is supported!");
 }
-```  
+```
 
-### Displaying the badge  
+### Displaying the badge
 
-To set the badge, use the following code from your app frontend or service worker.  
+To set the badge, use the following code from your app frontend or service worker.
 
 ```javascript
 // To display an empty badge
@@ -155,11 +157,13 @@ navigator.setAppBadge();
 
 // To display a number in the badge
 navigator.setAppBadge(42);
-```  
+```
 
-<!-- TODO: Add a screenshot -->
+:::image type="complex" source="../media/app-badge-in-taskbar.png" alt-text="A PWA icon in the Windows Taskbar, with a badge showing the number 42":::
+    Badges appear on the app icon, in the Taskbar
+:::image-end:::
 
-The `setAppBadge` function returns a promise which can be used to know when the badge was added, and to catch potential errors.  
+The `setAppBadge` function returns a promise which can be used to know when the badge was added, and to catch potential errors.
 
 ```javascript
 navigator.setAppBadge(42).then(() => {
@@ -167,27 +171,27 @@ navigator.setAppBadge(42).then(() => {
 }).catch(e => {
     console.error("Error displaying the badge", e);
 });
-```  
+```
 
-### Clearing the badge  
+### Clearing the badge
 
-To remove the badge on the app icon, use the following code from your frontend or service worker.  
+To remove the badge on the app icon, use the following code from your frontend or service worker.
 
 ```javascript
 navigator.clearAppBadge();
-```  
+```
 
-The `clearAppBadge` also returns a promise that can be used to handle potential errors.  
+The `clearAppBadge` also returns a promise that can be used to handle potential errors.
 
-Additionally, you can also use `setAppBadge` again but passing `0` as the value.  
+Additionally, you can also use `setAppBadge` again but passing `0` as the value.
 
 ```javascript
 navigator.setAppBadge(0);
-```  
+```
 
-## Add push notifications to your PWA  
+## Add push notifications to your PWA
 
-To create a PWA that supports push notifications:  
+To create a PWA that supports push notifications:
 
 1.  Subscribe to a messaging service using the [Push API][MDNPushApi].
 1.  Display a toast message when a message is received from the service using the [Notifications API][MDNNotificationsApi].
@@ -328,7 +332,7 @@ To test push notifications for your PWA:
 
 
 <!-- ====================================================================== -->
-## See also  
+## See also
 
 *   [Web Push Notifications Demo][AzurewebsitesWebpushdemo]
 
