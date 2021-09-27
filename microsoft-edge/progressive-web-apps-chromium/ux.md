@@ -17,13 +17,12 @@ On Windows, PWAs are first-class app citizens and any device running Microsoft E
 
 When Microsoft Edge determines that a website is an installable PWA, the **App available** button is displayed in the address bar.
 
-Select the **App available** button to install the PWA.
+1.  Select the **App available** button to install the PWA.
+1.  Select **Install** to complete the installation and run the PWA in Windows.
 
 :::image type="complex" source="./media/edge-app-install-flyout.png" alt-text="The installation prompt in Microsoft Edge" lightbox="./media/edge-app-install-flyout.png":::
    The installation prompt in Microsoft Edge
 :::image-end:::
-
-Select **Install** to complete the installation and run the PWA in Windows.
 
 Many PWAs are also present on the Microsoft Store and can be installed directly from there without even opening Microsoft Edge.
 
@@ -38,13 +37,17 @@ To install a PWA from the Microsoft Store, select **Get** on the app page.
 
 You can find the list of installed PWAs in Microsoft Edge by navigating to `edge://apps`.
 
+On this page, you can select any app to launch it, or select the delete icon \(![Uninstall app](./media/uninstall-app-button.png)\) to uninstall it.
+
 :::image type="complex" source="./media/edge-apps-listing.png" alt-text="The list of installed apps in edge://apps" lightbox="./media/edge-apps-listing.png":::
    The list of installed apps in `edge://apps`
 :::image-end:::
 
-On this page, you can select any app to launch it, or select the delete icon \(![Uninstall app](./media/uninstall-app-button.png)\) to uninstall it.
+You can also manage PWAs in the **Apps & features** system setting, like other Windows apps.
 
-Since PWAs are deeply integrated in Windows, they show up anywhere other types of Windows apps get displayed, including in the **Apps & features** system setting.
+1.  In Windows, select **Start** > **Settings**.
+1.  Type "apps" in the **Find a setting** search field and select **Add or remove programs**.
+1.  Find the PWA you want to manage in the list of apps and select it to find more information or remove it.
 
 :::image type="complex" source="./media/pwa-in-apps-and-features-settings.png" alt-text="The list of installed apps on Windows also display PWAs" lightbox="./media/pwa-in-apps-and-features-settings.png":::
    The list of installed apps on Windows also display PWAs
@@ -55,8 +58,12 @@ Since PWAs are deeply integrated in Windows, they show up anywhere other types o
 
 PWAs are displayed like native apps on Windows. They appear in the Taskbar (where they can be pinned), in the Start Menu, or when switching between apps with `Alt`+`Tab`.
 
-:::image type="complex" source="./media/windows-start-menu.png" alt-text="PWAs and native apps side by side in the Taskbar and Start Menu" lightbox="./media/windows-start-menu.png":::
-   PWAs and native apps side by side in the Taskbar and Start Menu
+:::image type="complex" source="./media/pwas-in-the-taskbar.png" alt-text="PWAs and native apps side by side in the Taskbar":::
+   PWAs and native apps side by side in the Taskbar
+:::image-end:::
+
+:::image type="complex" source="./media/pwas-in-alttab.png" alt-text="PWAs and native apps are displayed when switching between widows with Alt+Tab":::
+   PWAs and native apps are displayed when switching between widows with `Alt`+`Tab`
 :::image-end:::
 
 PWAs can also expose common tasks to users as shortcuts that appear in the app's icon contextual menu (right-click). Learn more about [defining shortcuts][AppShortcutsFeature].
@@ -66,10 +73,6 @@ PWAs can also expose common tasks to users as shortcuts that appear in the app's
 :::image-end:::
 
 PWAs can also display notifications in the operating system's own notification service. This helps users re-engage with your app. Learn more about [using notifications, push messages, and badges][PushNotficationsFeature].
-
-:::image type="complex" source="./media/windows-action-center.png" alt-text="Notifications in Windows Action Center" lightbox="./media/windows-action-center.png":::
-   Notifications in Windows Action Center
-:::image-end:::
 
 ### Starting PWAs when the user logs in
 
