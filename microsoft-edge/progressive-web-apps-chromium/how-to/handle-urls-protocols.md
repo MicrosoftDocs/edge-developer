@@ -32,7 +32,7 @@ URL handling is still experimental, to enable it:
        Enable the URL Handling API experiment
     :::image-end:::
 
-URL Handling is also an origin trial in Microsoft Edge. Navigate to [Enroll your site in an origin trial][OriginTrials] to learn more.
+URL Handling is also an origin trial in Microsoft Edge. Learn [how to enroll your site in an origin trial][OriginTrials].
 
 ### Define which URLs your app handles
 
@@ -133,11 +133,8 @@ Windows knows that your app is registered to handle this URL and asks you to cho
 
 The app launches and displays the tips page.
 
-:::image type="complex" source="../media/devtools-tips-url-handling.png" alt-text="The DevTools Tips app" lightbox="../media/devtools-tips-url-handling.png":::
-   The DevTools Tips app
-:::image-end:::
+You can find the [source code on GitHub][DemoDevToolsTipsGitHub]. In particular, the app registers the handled URLs in the [manifest.json][DemoDevToolsTipsManifestJson] file and the website establishes the app's ownership in the [web-app-origin-association][DemoDevToolsTipsWebAppOriginAssociation] file.
 
-Navigate to the [source code on GitHub][DemoDevToolsTipsGitHub]. In particular, the app registers the handled URLs in the [manifest.json][DemoDevToolsTipsManifestJson] file and the website establishes the app's ownership in the [web-app-origin-association][DemoDevToolsTipsWebAppOriginAssociation] file.
 
 ## Handle protocols
 
@@ -170,11 +167,11 @@ Protocol Handling is an experimental feature, to enable it:
        Enable the Protocol Handling API experiment
     :::image-end:::
 
-Protocol Handling is also an origin trial in Microsoft Edge. Navigate to [Enroll your site in an origin trial][OriginTrials] to learn more.
+Protocol Handling is also an origin trial in Microsoft Edge. Learn [how to enroll your site in an origin trial][OriginTrials].
 
 ### Register protocols to handle
 
-The only thing to do is to use Protocol Handling is declare which protocols your app handles. This is done in your app [manifest file][ManifestFileDoc], using the `protocol_handlers` array member.
+To use Protocol Handling, declare which protocols your app handles. This is done in your app [manifest file][ManifestFileDoc], using the `protocol_handlers` array member.
 
 Each entry in the `protocol_handlers` array contains a `protocol` string and a `url` string:
 
@@ -189,9 +186,7 @@ Each entry in the `protocol_handlers` array contains a `protocol` string and a `
 }
 ```
 
-In the above example, the app is registered to handle the `mailto` protocol and when the operating system launches the app in response to it, it navigates to the `/newEmail` URL.
-
-The `%s` placeholder will be replaced with the full URL being handled.
+In the above example, the app is registered to handle the `mailto` protocol and when the operating system launches the app in response to it, it navigates to the `/newEmail` URL, replacing the `%s` placeholder with the full URL being handled.
 
 ## See also
 
