@@ -44,7 +44,9 @@ Use this list of sample apps to learn more about how to use PWA features and API
 
         *  [Web Share][FeatureShare]
         *  [URL handling][FeatureUrlHandling]
+        *  [Background sync][FeatureBackgroundSync]
         *  [Periodic background sync][FeaturePeriodicBackgroundSync]
+        *  [Notifications][FeatureNotifications]
     :::column-end:::
     :::column:::
         :::image type="complex" source="./media/devtools-tips.png" alt-text="A screenshot of the devtools-tips app" lightbox="./media/devtools-tips.png":::
@@ -84,6 +86,7 @@ Use this list of sample apps to learn more about how to use PWA features and API
         Features:
 
         *  [Background sync][FeatureBackgroundSync]
+        *  [Notifications][FeatureNotifications]
     :::column-end:::
     :::column:::
         :::image type="complex" source="./media/my-movies.png" alt-text="A screenshot of the My Movies app" lightbox="./media/my-movies.png":::
@@ -113,3 +116,4 @@ Use this list of sample apps to learn more about how to use PWA features and API
 [FeatureFileHandling]: ./how-to/handle-files.md "Handle files in Progressive Web Apps | Microsoft Docs"
 [FeaturePeriodicBackgroundSync]: ./how-to/background-syncs.md#regularly-get-fresh-content-with-the-periodic-background-sync-api "Regularly get fresh content with the Periodic Background Sync API | Microsoft Docs"
 [FeatureBackgroundSync]: ./how-to/background-syncs.md#synchronize-data-with-the-server-with-the-background-sync-api "Synchronize data with the server with the Background Sync API | Microsoft Docs"
+[FeatureNotifications]: ./how-to/notifications-badges.md#display-notifications-in-the-action-center "Display notifications in the action center | Microsoft Docs"
