@@ -94,6 +94,24 @@ Use this list of sample apps to learn more about how to use PWA features and API
         :::image-end:::
     :::column-end:::
 :::row-end:::
+:::row:::
+    :::column span="2":::
+        **Yahtzee**
+
+        [App][Yahtzee], [source code][YahtzeeSourceCode].
+
+        Play Yahtzee.
+
+        Features:
+
+        *  [Window Controls Overlay][FeatureWindowControlsOverlay]
+    :::column-end:::
+    :::column:::
+        :::image type="complex" source="./media/yahtzee.png" alt-text="A screenshot of the Yahtzee app" lightbox="./media/yahtzee.png":::
+           The Yahtzee app
+        :::image-end:::
+    :::column-end:::
+:::row-end:::
 
 
 <!-- Links -->
@@ -106,6 +124,8 @@ Use this list of sample apps to learn more about how to use PWA features and API
 [MyTracksSourceCode]: https://github.com/captainbrosset/mytracks "My Tracks | GitHub"
 [MyMovies]: https://quirky-rosalind-ac1e65.netlify.app/ "My Movies"
 [MyMoviesSourceCode]: https://github.com/captainbrosset/movies-db-pwa "My Movies | GitHub"
+[Yahtzee]: https://yahtzee-pwa.glitch.me/ "Yahtzee"
+[YahtzeeSourceCode]: https://glitch.com/edit/#!/yahtzee-pwa "Yahtzee | Glitch"
 
 [FeatureShortcut]: ./how-to/shortcuts.md "Define app shortcuts | Microsoft Docs"
 [FeatureShare]: ./how-to/share.md#sharing-content "Sharing content | Microsoft Docs"
