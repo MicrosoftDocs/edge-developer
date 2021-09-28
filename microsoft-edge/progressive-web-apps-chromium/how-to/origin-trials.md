@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Microsoft Edge, experimental, origin trials
 ---
 # Experimental features and origin trials
 
-Some of the PWA features in Microsoft Edge are still experimental. Experimental features can be used in 2 ways:
+Some of the PWA features in Microsoft Edge are still experimental. Experimental features can be used in two ways:
 
 *   By enabling the corresponding flag in Microsoft Edge.
 *   By enrolling your site in an origin trial to test features in production with your users.
@@ -25,7 +25,7 @@ To turn on \(or off\) experimental features in Microsoft Edge, complete the foll
 1.  Open Microsoft Edge.
 1.  Navigate to `edge://flags`.
 1.  Navigate to the relevant experiment.
-1.  Select the dropdown menu next to the experiment description and select **Enabled** to enable the feature or **Disabled** to disable it.
+1.  Select the dropdown menu next to the experiment description and select **Enabled** to turn on the feature or **Disabled** to turn it off.
 
     :::image type="complex" source="../media/turn-on-experimental-flag.png" alt-text="Select Enabled to turn on an experiment" lightbox="../media/turn-on-experimental-flag.png":::
        Select **Enabled** to turn on an experiment
