@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Microsoft Edge, experimental, origin trials
 ---
 # Experimental features and origin trials
 
-Some of the PWA features in Microsoft Edge are still experimental. Experimental features can be used in 2 ways:
+Some of the PWA features in Microsoft Edge are still experimental. Experimental features can be used in two ways:
 
 *   By enabling the corresponding flag in Microsoft Edge.
 *   By enrolling your site in an origin trial to test features in production with your users.
