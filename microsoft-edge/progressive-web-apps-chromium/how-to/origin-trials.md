@@ -25,7 +25,7 @@ To turn on \(or off\) experimental features in Microsoft Edge, complete the foll
 1.  Open Microsoft Edge.
 1.  Navigate to `edge://flags`.
 1.  Navigate to the relevant experiment.
-1.  Select the dropdown menu next to the experiment description and select **Enabled** to enable the feature or **Disabled** to disable it.
+1.  Select the dropdown menu next to the experiment description and select **Enabled** to turn on the feature or **Disabled** to turn it off.
 
     :::image type="complex" source="../media/turn-on-experimental-flag.png" alt-text="Select Enabled to turn on an experiment" lightbox="../media/turn-on-experimental-flag.png":::
        Select **Enabled** to turn on an experiment
