@@ -21,30 +21,6 @@ The qualities of a PWA combine **the best of the web and compiled apps**. PWAs r
 
 PWAs can also be **submitted to the Microsoft Store** where millions of Windows users can discover and easily install them alongside other Windows apps.
 
-:::row:::
-    :::column:::
-        :::image type="complex" source="./media/list-of-edge-apps.png" alt-text="Screenshot of the edge://apps page that lists the PWAs installed in Microsoft Edge" lightbox="./media/list-of-edge-apps.png":::
-            The edge://apps page lists the PWAs installed in Microsoft Edge
-        :::image-end:::
-    :::column-end:::
-    :::column:::
-        :::image type="complex" source="./media/twitter-pwa.png" alt-text="Screenshot of the Twitter PWA installed on Windows" lightbox="./media/twitter-pwa.png":::
-            The Twitter PWA on Windows
-        :::image-end:::
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        :::image type="complex" source="./media/tik-tok-pwa.png" alt-text="Screenshot of the TikTok PWA installed on Windows" lightbox="./media/tik-tok-pwa.png":::
-            The TikTok PWA on Windows
-        :::image-end:::
-    :::column-end:::
-    :::column:::
-        :::image type="complex" source="./media/microsoft-store.png" alt-text="Screenshot of the Microsoft Store, where PWAs can be installed from" lightbox="./media/microsoft-store.png":::
-            PWAs can be installed from the Microsoft Store
-        :::image-end:::
-    :::column-end:::
-:::row-end:::
 
 ## Characteristics of a PWA
 
@@ -110,6 +86,7 @@ but avoid an empty line. -->
     :::column-end:::
 :::row-end:::
 
+
 ## PWAs on desktop
 
 PWAs aren't only a way for websites to appear on mobile home screens. They're based on standard, cross-browser, web technologies that allow them to be installed and to run everywhere.
@@ -120,11 +97,10 @@ With many new web capabilities and new features in Microsoft Edge and Windows, t
 
 You might not have to use proprietary technologies at all as the web has grown [capabilities](#bridging-the-gap-between-web-and-desktop-apps) to deal with file systems, video, audio, high-performing code, databases, USB, Bluetooth, and more.
 
-With a shared codebase between your website, mobile app, and desktop app (across operating systems), you cut down on development cost.
-
-Your app can also be published on the [Microsoft Store](#the-microsoft-store), making it more familiar and trustworthy for Windows users to discover and install.
+With a shared codebase between your website, mobile app, and desktop app (across operating systems) you cut down on development cost. Your app can also be published on the [Microsoft Store](#the-microsoft-store), making it more familiar and trustworthy for Windows users to discover and install.
 
 Learn more about [how PWAs integrate on Windows][PwaWindowsUx].
+
 
 ## Bridging the gap between web and desktop apps
 
@@ -146,6 +122,7 @@ There isn't much you can't do today with Web technologies, and thanks to Microso
 
 Navigate to [Myth Busting PWAs][Davrous20191018MythBustingPwasNewEdgeEdition] for more information about what PWAs can do.
 
+
 ## The Microsoft Store
 
 Because PWAs are first-class citizens in the [Microsoft Store][PwaMicrosoftStore], users can fully engage with them, from discovery, to installation, to execution, without ever opening the browser.
@@ -153,6 +130,7 @@ Because PWAs are first-class citizens in the [Microsoft Store][PwaMicrosoftStore
 As the most used app on PCs, the Microsoft Store provides a trustworthy and familiar experience for your users to install your app. Additionally, you can view detailed usage statistics and charts that let you know how your apps in the Microsoft Store are doing.
 
 Learn how to [publish your PWA to the Microsoft Store][PwaPublishToStore].
+
 
 ## Success stories
 
@@ -163,6 +141,7 @@ Using PWA technologies is a great way to make your app **safe**, **discoverable*
 *   Tinder cut load times from 11.91 seconds to 4.68 seconds with their PWA and the app is 90% smaller than the compiled Android app ([source][TinderSuccessStory]).
 
 Read more success stories on the [PWA Stats][PwaStats] website.
+
 
 ## See also
 
@@ -177,6 +156,7 @@ Read more success stories on the [PWA Stats][PwaStats] website.
 *   [Designing And Building A Progressive Web App Without A Framework (Part 2)][Smashingmagazine201907ProgressiveWebAppFrameworkPart2]
 *   [Designing And Building A Progressive Web App Without A Framework (Part 3)][Smashingmagazine201907ProgressiveWebAppFrameworkPart3]
 *   [What makes a good Progressive Web App?][WebDevGoodPwaChecklist]
+
 
 <!-- Links -->
 

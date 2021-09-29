@@ -21,10 +21,10 @@ By default, the app area starts right below the reserved title bar area.
 
 Having the ability to display content where the title bar normally is can help PWAs feel more native.
 
-Many desktop applications like Visual Studio Code, Microsoft Teams, Microsoft Edge, or Spotify already do this.
+Many desktop applications like Visual Studio Code, Microsoft Teams, or Microsoft Edge already do this.
 
-:::image type="complex" source="../media/spotify-titlebar.png" alt-text="Spotify displays content in the title bar area" lightbox="../media/spotify-titlebar.png":::
-    Spotify displays content in the title bar area
+:::image type="complex" source="../media/vscode-titlebar.png" alt-text="VS Code displays content in the title bar area" lightbox="../media/vscode-titlebar.png":::
+    VS Code displays content in the title bar area
 :::image-end:::
 
 The Window Controls Overlay API allows you to display web content over the entire surface area of the app, moves the critical system required window controls into an overlay, and makes it possible for your content to stay clear of this overlay.  
