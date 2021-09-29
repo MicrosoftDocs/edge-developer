@@ -31,7 +31,7 @@ Release Date: September 27, 2021
 
 [NuGet package for WebView2 SDK 1.0.992.28][NuGetGallery1.0.992.28]
 
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 94.0.992.28 or higher.
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 94.0.992.31 or higher.
 
 ### General
 
