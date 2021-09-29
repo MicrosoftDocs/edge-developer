@@ -36,7 +36,6 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 ### General
 
 #### Bug Fixes
-*   Fixed inconsistent crash in WebView2 process when opening a new window.
 *   Fixed missing WebView2 DLLs (leading to initialization failure) when PlatformTarget isn't set in user's .NET project. \([\#1061][GithubMicrosoftedgeWebviewfeedbackIssue1061]\)
 
 #### Promotions
