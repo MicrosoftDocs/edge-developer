@@ -401,8 +401,10 @@
                   href: progressive-web-apps-chromium/how-to/notifications-badges.md
                 - name: Handle files
                   href: progressive-web-apps-chromium/how-to/handle-files.md
-                - name: Handle URLs and protocols
-                  href: progressive-web-apps-chromium/how-to/handle-urls-protocols.md
+                - name: Handle URLs
+                  href: progressive-web-apps-chromium/how-to/handle-urls.md
+                - name: Handle protocols
+                  href: progressive-web-apps-chromium/how-to/handle-protocols.md
                 - name: Display content in the title bar
                   href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
                 - name: Share with other apps

@@ -47,12 +47,17 @@ The following list describes experimental web app features that are available to
 
 | Feature | Platform |
 |:--- |:--- |
-| [URI Protocol Handling](handle-urls-protocols.md) | Windows and Linux |
-| [URL Link Handling](handle-urls-protocols.md) | Windows |
-| [Window Controls Overlay for Desktop Apps](window-controls-overlay.md) | All |
-| [The Shortcuts object in the manifest](shortcuts.md) | All |
-| [File Handling](handle-files.md) | All Desktop |
+| [URI Protocol Handling][FeatureProtocolHandling] | Windows and Linux |
+| [URL Link Handling][FeatureUrlHandling] | Windows |
+| [Window Controls Overlay for Desktop Apps][FeatureWindowControlsOverlay] | All |
+| [The Shortcuts object in the manifest][FeatureShortcuts] | All |
+| [File Handling][FeatureFileHandling] | All Desktop |
 
 <!-- Links -->
 
 [MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Origin Trials | Microsoft Edge Developer"
+[FeatureWindowControlsOverlay]: ./window-controls-overlay.md "Display content in the title bar | Microsoft Docs"
+[FeatureUrlHandling]: ./handle-urls.md "Handle URLs in Progressive Web Apps | Microsoft Docs"
+[FeatureProtocolHandling]: ./handle-protocols.md "Handle protocols in Progressive Web Apps | Microsoft Docs"
+[FeatureShortcuts]: ./shortcuts.md "Define app shortcuts | Microsoft Docs"
+[FeatureFileHandling]: ./handle-files.md "Handle files in Progressive Web Apps | Microsoft Docs"
