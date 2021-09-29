@@ -19,13 +19,31 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 > [!NOTE]
 > WebView2 bug fixes are either Runtime-specific or SDK-specific.
 
-
 ## Minimum version of the browser or Runtime to load WebView2
 
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to [Switch to a preview channel to test upcoming APIs and features][SwitchToPreviewChannel].
 
+## 1.0.992.28
+
+Release Date: September 27, 2021
+
+[NuGet package for WebView2 SDK 1.0.992.28][NuGetGallery1.0.992.28]
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 94.0.992.28 or higher.
+
+### General
+
+#### Bug Fixes
+*   Fixed inconsistent crash in WebView2 process when opening a new window.
+*   Fixed missing WebView2 DLLs (leading to initialization failure) when PlatformTarget isn't set in user's .NET project. \([\#1061][GithubMicrosoftedgeWebviewfeedbackIssue1061]\)
+
+#### Promotions
+The following items are now stable:
+*   [OpenTaskManager Window API][OpenTaskManagerWindowAPI].
+*   [isSwipeNavigationEnabled property][isSwipeNavigationEnabledproperty].
+*   [BrowserProcessExited API][BrowserProcessExitedAPI].
 
 ## 1.0.1018-prerelease
 
@@ -1141,6 +1159,7 @@ Initial developer preview release.
 [GithubMicrosoftedgeWebviewfeedbackIssue238]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/238 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 238"
 [GithubMicrosoftedgeWebviewfeedbackIssue1077]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1077 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1077"
 [GithubMicrosoftedgeWebviewfeedbackIssue1723]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1723 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1723"
+[GithubMicrosoftedgeWebviewfeedbackIssue1061]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1061 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1061"
 [GithubMicrosoftedgeWebviewfeedbackIssue730]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/730 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 730"
 [GithubMicrosoftedgeWebviewfeedbackIssue1548]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1548 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1548"
 [WebView2UDFAnnouncement]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1410 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1410"
@@ -1179,6 +1198,7 @@ Initial developer preview release.
 [NuGetGallery1.0.902.49]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.902.49 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.902.49"
 [NuGetGallery1.0.955-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.955-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.955 prerelease"
 [NuGetGallery1.0.961.33]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.961.33 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.961.33"
+[NuGetGallery1.0.992.28]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.992.28 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.992.28"
 [NuGetGallery1.0.1010-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1010-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.1010-prerelease"
 [NuGetGallery1.0.1018-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1018-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.1018-prerelease"
 <!-- end of NuGet links -->
@@ -1270,4 +1290,6 @@ Initial developer preview release.
 
 [Webview2ReferenceWin32Icorewebview2experimental9ViewWebview2101018Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental9?view=webview2-1.0.1018-prerelease&preserve-view=true#summary "interface ICoreWebView2Experimental9 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2experimentalenvironment8ViewWebview2101018Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment8?view=webview2-1.0.1018-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalEnvironment8 | Microsoft Docs"
-
+[OpenTaskManagerWindowAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2_6?view=webview2-1.0.992.28&preserve-view=true#summary "interface ICoreWebView2_6 | Microsoft Docs"
+[OpenTaskManagerWindowAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2settings6?view=webview2-1.0.992.28&preserve-view=true#summary "interface ICoreWebView2Settings6 | Microsoft Docs"
+[OpenTaskManagerWindowAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs?view=webview2-1.0.992.28&preserve-view=true#summary "interface ICoreWebView2BrowserProcessExitedEventArgs | Microsoft Docs"
