@@ -44,6 +44,7 @@ The following items are now stable:
 *   [OpenTaskManager Window API][OpenTaskManagerWindowAPI].
 *   [isSwipeNavigationEnabled property][isSwipeNavigationEnabledproperty].
 *   [BrowserProcessExited API][BrowserProcessExitedAPI].
+*   [get_Name property][get_Nameproperty].
 
 ## 1.0.1018-prerelease
 
@@ -1291,5 +1292,6 @@ Initial developer preview release.
 [Webview2ReferenceWin32Icorewebview2experimental9ViewWebview2101018Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental9?view=webview2-1.0.1018-prerelease&preserve-view=true#summary "interface ICoreWebView2Experimental9 | Microsoft Docs"
 [Webview2ReferenceWin32Icorewebview2experimentalenvironment8ViewWebview2101018Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment8?view=webview2-1.0.1018-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalEnvironment8 | Microsoft Docs"
 [OpenTaskManagerWindowAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2_6?view=webview2-1.0.992.28&preserve-view=true#summary "interface ICoreWebView2_6 | Microsoft Docs"
-[OpenTaskManagerWindowAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2settings6?view=webview2-1.0.992.28&preserve-view=true#summary "interface ICoreWebView2Settings6 | Microsoft Docs"
-[OpenTaskManagerWindowAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs?view=webview2-1.0.992.28&preserve-view=true#summary "interface ICoreWebView2BrowserProcessExitedEventArgs | Microsoft Docs"
+[isSwipeNavigationEnabledproperty]: /microsoft-edge/webview2/reference/win32/icorewebview2settings6?view=webview2-1.0.992.28&preserve-view=true#summary "interface ICoreWebView2Settings6 | Microsoft Docs"
+[BrowserProcessExitedAPI]: /microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs?view=webview2-1.0.992.28&preserve-view=true#summary "interface ICoreWebView2BrowserProcessExitedEventArgs | Microsoft Docs"
+[get_Nameproperty]: /microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs2?view=webview2-1.0.992.28#get_name&preserve-view=true#summary "interface ICoreWebView2NewWindowRequestedEventArgs2 | Microsoft Docs"
