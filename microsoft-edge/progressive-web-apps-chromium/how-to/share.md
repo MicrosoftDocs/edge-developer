@@ -27,7 +27,7 @@ PWAs that register as share targets feel more natively integrated into the OS an
 PWAs can use the [Web Share API][MDNWebShareAPI] to trigger the operating system share dialog.
 
 > [!NOTE]
-> Web sharing only works on sites served over HTTPS (which is the case for PWAs), and can only be invoked as a result to a user action.
+> Web sharing only works on sites served over HTTPS (which is the case for PWAs), and can only be invoked in response to a user action.
 
 To share content such as links, text, or files, use the `navigator.share` function. The function accepts an object that should have at least one of the following properties:
 
@@ -38,7 +38,7 @@ To share content such as links, text, or files, use the `navigator.share` functi
 
 ```javascript
 function shareSomeContent(title, text, url) {
-  if (navigator.share) {
+  if (!navigator.share) {
     return;
   }
 
@@ -56,7 +56,7 @@ Because a promise is used here, it is possible to use an `async` function to rew
 
 ```javascript
 async function shareSomeContent(title, text, url) {
-  if (navigator.share) {
+  if (!navigator.share) {
     return;
   }
 
@@ -64,7 +64,7 @@ async function shareSomeContent(title, text, url) {
     await navigator.share({title, text, url});
     console.log('The content was shared successfully');
   } catch (e) {
-    console.error('Error sharing the content', error);
+    console.error('Error sharing the content', e);
   }
 }
 ```
@@ -290,7 +290,7 @@ self.addEventListener('fetch', event => {
 
 [MDNWebShareAPI]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API "Web Share API - Web APIs | MDN"
 [MDNFileInterface]: https://developer.mozilla.org/en-US/docs/Web/API/File "File - Web APIs | MDN"
-[W3CWebShareTargetAPI]: https://w3c.github.io/web-share-target/ "Web Share Target API | W3C"
+[W3CWebShareTargetAPI]: https://w3c.github.io/web-share-target/level-2/ "Web Share Target API | W3C"
 [BackgroundSync]: ./background-syncs.md "Synchronize and update in the background | Microsoft Docs"
 [ShareWebDev]: https://web.dev/web-share/ "Integrate with the OS sharing UI with the Web Share API | web.dev"
 [ShareTargetWebDev]: https://web.dev/web-share-target/ "Receiving shared data with the Web Share Target API | web.dev"
