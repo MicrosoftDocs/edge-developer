@@ -44,7 +44,7 @@ The following items are now stable:
 *   [OpenTaskManagerWindow API][OpenTaskManagerWindowAPI].
 *   [isSwipeNavigationEnabled property][isSwipeNavigationEnabledproperty].
 *   [BrowserProcessExited API][BrowserProcessExitedAPI].
-*   [get_Name property][get_Nameproperty].
+*   [get_Name property][get_Nameproperty] on ICoreWebView2NewWindowRequestedEventArgs2 interface.
 
 ## 1.0.1018-prerelease
 
