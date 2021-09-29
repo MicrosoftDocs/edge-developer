@@ -43,9 +43,7 @@ To turn on \(or off\) experimental features in Microsoft Edge:
 
 1.  On the left side of the **Settings** pane, select the **Experiments** section.
 
-    :::image type="complex" source="../media/experiments-devtools.msft.png" alt-text="The Experiments page in Settings" lightbox="../media/experiments-devtools.msft.png":::
-       The **Experiments** page in **Settings**
-    :::image-end:::
+    :::image type="content" source="../media/experiments-devtools.msft.png" alt-text="The Experiments page in Settings" lightbox="../media/experiments-devtools.msft.png":::
 
 1.  On the **Experiments** page, scroll through the list of all available experimental features and select the checkbox next to each feature that you want to test.  Some experiments are turned on by default.
 
@@ -72,9 +70,7 @@ To use the **Source Order Viewer**:
 1.  Under the **Source Order Viewer** section, select the **Show Source Order** checkbox.
 1.  Highlight any HTML element to display an overlay that the order in the webpage source.
 
-:::image type="complex" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
-   **Source Order Viewer** in the **Accessibility** pane
-:::image-end:::
+:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
 
 This experiment is available starting with Microsoft Edge version 86 and is turned on by default.
 
@@ -94,9 +90,7 @@ This experiment is available starting with Microsoft Edge version 86 and is turn
 
 The [webhint][WebhintMain] experiment displays the webhint feedback in the [Issues][DevtoolsIssuesIndex] panel.  Select an issue, to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.
 
-:::image type="complex" source="../media/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel" lightbox="../media/experiments-webhint.msft.png":::
-   webhint feedback in the **Issues** panel
-:::image-end:::
+:::image type="content" source="../media/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel" lightbox="../media/experiments-webhint.msft.png":::
 
 This experiment is available starting with Microsoft Edge version 85 and is turned on by default.
 
@@ -113,9 +107,7 @@ To use **Composited Layers**, complete the following steps.
 1.  Open the **Composited Layers** pane.
 1.  All of the painted layers of the app are displayed.  Try this feature with your own web apps.
 
-:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Composited Layers pane" lightbox="../media/experiments-layers.msft.png":::
-   **Composited Layers** pane
-:::image-end:::
+:::image type="content" source="../media/experiments-layers.msft.png" alt-text="Composited Layers pane" lightbox="../media/experiments-layers.msft.png":::
 
 This experiment is available starting with Microsoft Edge version 87 and is turned on by default.
 
@@ -134,9 +126,7 @@ To use the **Network Console**, complete the following steps.
 1.  When the **Network Console** opens, edit the network request information.
 1.  Select **Send**.
 
-:::image type="complex" source="../media/network-network-console.msft.png" alt-text="Network Console in the Console drawer" lightbox="../media/network-network-console.msft.png":::
-   **Network Console** in the **Console** drawer
-:::image-end:::
+:::image type="content" source="../media/network-network-console.msft.png" alt-text="Network Console in the Console drawer" lightbox="../media/network-network-console.msft.png":::
 
 This experiment is available starting with Microsoft Edge version 85.
 
@@ -160,9 +150,7 @@ To use the new visual **Font Editor**:
 
 For more information about the new visual **Font Editor**, navigate to [Edit CSS font styles and settings in the Styles pane in DevTools][DevtoolsInspectStylesEditFonts].
 
-:::image type="complex" source="../media/font-editor-open.msft.png" alt-text="The visual Font Editor pane is highlighted" lightbox="../media/font-editor-open.msft.png":::
-   The visual **Font Editor** pane is highlighted
-:::image-end:::
+:::image type="content" source="../media/font-editor-open.msft.png" alt-text="The visual Font Editor pane is highlighted" lightbox="../media/font-editor-open.msft.png":::
 
 This experiment is available starting with Microsoft Edge version 89.
 
@@ -191,9 +179,7 @@ This was an Experiment starting with Microsoft Edge version 89, and is a regular
 
 You can now open more tools using the new **More Tools** \(`+`\) icon.  After you turn on the **Enable + button tab menus to open more tools** experiment and reload DevTools, a plus sign \(`+`\) displays to the right of the tab group at the top of the DevTools.  To display a list of other tools that you can add to the tab bar, select the **More Tools** \(`+`\) icon.
 
-:::image type="complex" source="../media/experiments-more-tools-button.msft.png" alt-text="More Tools in the top pane" lightbox="../media/experiments-more-tools-button.msft.png":::
-   **More Tools** in the top pane
-:::image-end:::
+:::image type="content" source="../media/experiments-more-tools-button.msft.png" alt-text="More Tools in the top pane" lightbox="../media/experiments-more-tools-button.msft.png":::
 
 ### Enable Welcome tab
 <!-- not in Experiments 94 -->
@@ -211,9 +197,7 @@ The **Welcome** tool opens automatically after each update to Microsoft Edge.  T
 
 If you prefer the original **What's New** tool, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments** and remove the checkbox next to **Enable Welcome tab**.
 
-:::image type="complex" source="../media/experiments-welcome.msft.png" alt-text="Welcome tool" lightbox="../media/experiments-welcome.msft.png":::
-   **Welcome** tool
-:::image-end:::
+:::image type="content" source="../media/experiments-welcome.msft.png" alt-text="Welcome tool" lightbox="../media/experiments-welcome.msft.png":::
 
 <!-- ====================================================================== -->
 ### Enable new CSS Flexbox debugging features
@@ -227,9 +211,7 @@ This feature provides many new visualizations to help you debug CSS Flexbox layo
 
 The **Inspect** tool provides a quick way to identify and visualize CSS Flexbox layouts in a website by hovering on them with the mouse.  Select the **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  Then, while debugging the website, hover on a flex container to display outlines around the flex container.
 
-:::image type="complex" source="../media/flexbox-hover.msft.png" alt-text="Display Flexbox containers with the Inspect tool" lightbox="../media/flexbox-hover.msft.png":::
-   Display Flexbox containers with the **Inspect** tool
-:::image-end:::
+:::image type="content" source="../media/flexbox-hover.msft.png" alt-text="Display Flexbox containers with the Inspect tool" lightbox="../media/flexbox-hover.msft.png":::
 
 #### Displaying persistent overlays on Flexbox layouts
 
@@ -242,28 +224,24 @@ To toggle persistent overlays on Flexbox layout, do either of the following:
 *   Select the **Flexbox** oval icon next to any Flexbox container displayed in the DOM tree of the **Elements** tool.
 *   Open the new **Layout** panel located in the **Elements** tool, and select the checkbox next to each Flexbox container you want to highlight.
 
-:::image type="complex" source="../media/flexbox-overlay.msft.png" alt-text="Flex icons and Layout panel in DevTools" lightbox="../media/flexbox-overlay.msft.png":::
-   Flex icons and **Layout** panel in DevTools
-:::image-end:::
+:::image type="content" source="../media/flexbox-overlay.msft.png" alt-text="Flex icons and Layout panel in DevTools" lightbox="../media/flexbox-overlay.msft.png":::
 
 #### Configuring persistent overlays
 
 To configure options for persistent overlays for CSS grids or Flexbox layouts, use the **Layout** pane.  The **Layout** pane is located in the **Elements** tool next to the **Styles** and **Computed** panes.
 
-:::image type="complex" source="../media/flexbox-layout.msft.png" alt-text="Layout panel" lightbox="../media/flexbox-layout.msft.png":::
-   Layout panel
-:::image-end:::
+:::image type="content" source="../media/flexbox-layout.msft.png" alt-text="Layout panel" lightbox="../media/flexbox-layout.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge team][Contact]
+*  [Contacting the Microsoft Edge team][Contact] to provide feedback on Microsoft Edge DevTools experiments, or anything else related to DevTools.
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
+[Contact]: ../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [Devtools3dViewIndex]: ../3d-view/index.md "3D View | Microsoft Docs"
 [DevtoolsCssGrid]: ../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsCustomizeIndex]: ../customize/index.md "Customize Microsoft Edge DevTools | Microsoft Docs"

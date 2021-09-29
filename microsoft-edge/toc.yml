@@ -299,6 +299,8 @@
               href: devtools-protocol-chromium/index.md
             - name: Keyboard shortcuts
               href: devtools-guide-chromium/shortcuts/index.md
+        - name: Contact DevTools team
+          href: devtools-guide-chromium/contact.md
 # equivalent card: Extensions =================================================
     - name: Microsoft Edge extensions
       items:
@@ -467,6 +469,8 @@
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                 - name: COM Interop
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
+        - name: Contact WebView2 team
+          href: webview2/contact.md
 # equivalent card: Test and automation ==========================================
     - name: Test and automation
       items:
@@ -534,5 +538,3 @@
       href: privacy-whitepaper/index.md
     - name: Web We Want overview
       href: web-we-want/index.md
-    - name: Contact Microsoft Edge team
-      href: contact.md
