@@ -3,7 +3,7 @@ description: Release notes for Microsoft Edge WebView2 SDK
 title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/14/2021
+ms.date: 09/21/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -26,6 +26,25 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to [Switch to a preview channel to test upcoming APIs and features][SwitchToPreviewChannel].
 
+
+## 1.0.1018-prerelease
+
+Release Date: September 20, 2021
+
+[NuGet package for WebView2 SDK 1.0.1018-prerelease][NuGetGallery1.0.1018-prerelease]
+
+For full API compatibility, this prerelease version of the WebView2 SDK requires Microsoft Edge version 95.0.1018.0 or higher.
+
+### General
+
+#### Experimental Features
+*   Added a [media API][Webview2ReferenceWin32Icorewebview2experimental9ViewWebview2101018Prerelease] that enables developers to mute/unmute media within the WebView.
+*   Added support for [multiple user profiles][Webview2ReferenceWin32Icorewebview2experimentalenvironment8ViewWebview2101018Prerelease] with WebView2.
+
+#### Bug fixes
+*   Fixed a bug where WebView2 stops rendering when the app is spanning monitors and the monitor scale changes.
+*   Fixed a bug where closing the download UI crashes WebView2 when multiple download windows are open. \([\#1723][GithubMicrosoftedgeWebviewfeedbackIssue1723]\)
+*   Fixed a build/initialization error when PlatformTarget isn't set in the user's .NET project. \([\#730][GithubMicrosoftedgeWebviewfeedbackIssue730] and [\#1548][GithubMicrosoftedgeWebviewfeedbackIssue1548]\)
 
 ## 1.0.1010-prerelease
 
@@ -1129,6 +1148,9 @@ Initial developer preview release.
 [GithubMicrosoftedgeWebviewfeedbackIssue411]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/411 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 411"
 [GithubMicrosoftedgeWebviewfeedbackIssue238]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/238 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 238"
 [GithubMicrosoftedgeWebviewfeedbackIssue1077]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1077 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1077"
+[GithubMicrosoftedgeWebviewfeedbackIssue1723]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1723 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1723"
+[GithubMicrosoftedgeWebviewfeedbackIssue730]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/730 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 730"
+[GithubMicrosoftedgeWebviewfeedbackIssue1548]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1548 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1548"
 [WebView2UDFAnnouncement]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1410 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1410"
 
 [MicrosoftDevblogDotnetAnnouncingGeneralAvailabilityForMicrosoftEdgeWebview2ForNetFixedDistributionMethod]: https://devblogs.microsoft.com/dotnet/announcing-general-availability-for-microsoft-edge-webview2-for-net-and-fixed-distribution-method "Announcing General Availability for Microsoft Edge WebView2 for .NET and Fixed Distribution Method | .NET Blog"
@@ -1166,6 +1188,7 @@ Initial developer preview release.
 [NuGetGallery1.0.955-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.955-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.955 prerelease"
 [NuGetGallery1.0.961.33]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.961.33 "NuGet Gallery | Microsoft.Web.WebView2 v1.0.961.33"
 [NuGetGallery1.0.1010-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1010-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.1010-prerelease"
+[NuGetGallery1.0.1018-prerelease]: https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1018-prerelease "NuGet Gallery | Microsoft.Web.WebView2 v1.0.1018-prerelease"
 <!-- end of NuGet links -->
 [WindowsBlogsMsedgedevEdgeWebview2GeneralAvailability]: https://blogs.windows.com/msedgedev/edge-webview2-general-availability "Announcing Microsoft Edge WebView2 General Availability | Microsoft Edge Blog"
 [Webview2ReferenceWin32Icorewebview2experimentalsettings5ViewWebview210902PrereleaseGetIsswipenavigationenabled]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings5?view=webview2-1.0.902-prerelease&preserve-view=true#get_isswipenavigationenabled "get_IsSwipeNavigationEnabled - interface ICoreWebView2ExperimentalSettings5 | Microsoft Docs"
@@ -1252,3 +1275,5 @@ Initial developer preview release.
 [Webview2ReferenceWin32ICoreWebView2ExperimentalEnvironmentOptionsViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironmentoptions?view=webview2-1.0.1010-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalEnvironmentOptions | Microsoft Docs"
 [Webview2ReferenceWin32ICoreWebView2ExperimentalSettings6ViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings6?view=webview2-1.0.1010-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalSettings6 | Microsoft Docs"
 [Webview2ReferenceWin32ICoreWebView2ExperimentalCompositionController3ViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller3?view=webview2-1.0.1010-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalCompositionController3 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimental9ViewWebview2101018Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimental9?view=webview2-1.0.1018-prerelease&preserve-view=true#summary "interface ICoreWebView2Experimental9 | Microsoft Docs"
+[Webview2ReferenceWin32Icorewebview2experimentalenvironment8ViewWebview2101018Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment8?view=webview2-1.0.1018-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalEnvironment8 | Microsoft Docs"

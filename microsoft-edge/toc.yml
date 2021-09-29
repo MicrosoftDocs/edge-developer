@@ -281,6 +281,8 @@
               items:
                 - name: Sources tool overview
                   href: devtools-guide-chromium/sources/index.md
+                - name: Open source files in Visual Studio Code
+                  href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
                 - name: Overrides
                   href: devtools-guide-chromium/javascript/overrides.md
                 - name: Snippets
@@ -514,6 +516,8 @@
           items:
             - name: Visual Studio Code overview
               href: visual-studio-code/index.md
+            - name: Open source files in Visual Studio Code
+              href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
             - name: Debugger for Edge
               href: visual-studio-code/debugger-for-edge.md
             - name: Microsoft Edge DevTools extension
