@@ -41,7 +41,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 #### Promotions
 The following items are now stable:
-*   [OpenTaskManager Window API][OpenTaskManagerWindowAPI].
+*   [OpenTaskManagerWindow API][OpenTaskManagerWindowAPI].
 *   [isSwipeNavigationEnabled property][isSwipeNavigationEnabledproperty].
 *   [BrowserProcessExited API][BrowserProcessExitedAPI].
 *   [get_Name property][get_Nameproperty].
