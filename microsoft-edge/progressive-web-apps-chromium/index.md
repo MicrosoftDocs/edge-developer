@@ -89,9 +89,9 @@ but avoid an empty line. -->
 
 ## PWAs on desktop
 
-PWAs aren't only a way for websites to appear on mobile home screens. They're based on standard, cross-browser, web technologies that allow them to be installed and to run everywhere.
+PWAs are not limited to displaying websites on mobile home screens. PWAs are based on standard, cross-browser, web technologies that allow them to be installed and to run in many different environments.
 
-While most consumers have migrated to mobile-first ways of consuming content, businesses still mostly operate on desktop. Building your desktop app as a PWA allows you to make use of all the benefits that PWAs come with while targeting those users.
+In recent years, desktop browsing has grown, and desktop computing continues to be the primary productivity environment for many users. Fortunately, PWAs can provide fully tailored, installable experiences on a desktop operating system that inherit the benefits of that environment, while still working across platform from the same code and servers that power your in-browser and mobile experiences.
 
 With many new web capabilities and new features in Microsoft Edge and Windows, there are great opportunities to build immersive experiences that deeply integrate with the desktop operating system. Only using web technologies also ensures that your app will work in other browsers, operating systems and devices.
 

@@ -26,10 +26,9 @@ At a minimum, a manifest file should contain the following information:
 
 ```json
 {
-    "lang": "en-US",
     "name": "My Sample PWA",
-    "short_name": "SamplePWA",
-    "description": "A sample PWA for testing purposes"
+    "lang": "en-US",
+    "start_url": "/"
 }
 ```
 
@@ -37,6 +36,9 @@ A PWA can be customized further using other manifest members such as the followi
 
 | Member | Description |
 |:--- |:--- |
+| `name` | The name of the app, used by the OS to display next to the app's icon. |
+| `short_name` | This can be used to display the name of the app when there isn't enough space for `name`. |
+| `lang` | The primary language of the app. |
 | `start_url` | The preferred URL that should be navigated to when the operating system launches your app. |
 | `scope` | Defines the navigation scope for the app. Outside of this scope, the visited page reverts to a normal webpage, not a PWA. This defaults to `start_url`. |
 | `display` | What the app should look like. This changes how much of the browser UI is shown to the user. |
@@ -44,13 +46,14 @@ A PWA can be customized further using other manifest members such as the followi
 | `background_color` | The background color of the window where the app is launched, before the stylesheet is applied. |
 | `orientation` | On supporting devices, this defines the default orientation for the app (such as landscape or portrait). |
 | `icons` | Array of icon image objects that are used by the OS in different contexts. |
+| `description` | What the app is about. |
 
 Below is a manifest file that uses these manifest members:
 
 ```json
 {
-    "lang": "en-us",
     "name": "My Sample PWA",
+    "lang": "en-us",
     "short_name": "SamplePWA",
     "description": "A sample PWA for testing purposes",
     "start_url": "/",

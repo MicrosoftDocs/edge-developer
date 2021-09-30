@@ -117,7 +117,7 @@ To add an app manifest to the web app:
 
 Service workers are the key technology behind PWAs, enabling scenarios that were previously limited to native apps, such as offline support, advanced caching, and running background tasks.
 
-Service workers are background tasks that intercept network requests from your web app.  Service workers attempt to complete tasks, even when your PWA is not running.  Tasks include:
+Service workers are specialized [Web Workers][MDNWebWorkers] that intercept network requests from your web app. Service workers can run tasks, even when your PWA is not running, including:
 
 *   Serving requested resources from a cache.
 *   Sending push notifications.
@@ -170,7 +170,7 @@ Confirm that your service worker runs, as follows:
        PWA running offline
     :::image-end:::
 
-<!-- todo: add an ending of the article here -->
+<!-- todo: add an ending of the article here. Say that the app can now be installed, show a breakdown of what the service worker does. -->
 
 
 <!-- ====================================================================== -->
@@ -277,6 +277,7 @@ To build a robust, real-world PWA, consider the following web best practices:
 [MDNUsingServiceWorkers]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers "Using Service Workers | MDN"
 [MDNWebAppManifest]: https://developer.mozilla.org/docs/Web/Manifest "Web App Manifest | MDN"
 [MDNCrossBrowserTesting]: https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing "Cross browser testing | MDN"
+[MDNWebWorkers]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API "Web Workers API - Web APIs | MDN"
 
 [MediumWebEdgeOfflinePostsProgressiveWebApps]: https://medium.com/web-on-the-edge/offline-posts-with-progressive-web-apps-fc2dc4ad895 "Offline POSTs with Progressive Web Apps"
 
