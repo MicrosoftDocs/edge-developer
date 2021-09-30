@@ -108,54 +108,45 @@ By this point, you've installed the WebView2 Runtime, built a WebView2 project, 
     using System.Threading.Tasks;
     ```
 
-You've now set up an empty Visual Studio project that's suitable for Selenium testing.  Next, configure Selenium to drive WebView2 by one of two approaches: the "basic/launch" approach, or the "advanced/attach" approach.  These two approaches are described below.
+You've now set up an empty Visual Studio project that's suitable for Selenium testing.  Next, configure Selenium to drive WebView2 by using either the "launch" approach or the "attach" approach.
 
 
 <!-- ====================================================================== -->
-## Step 4: Choosing whether Microsoft Edge Driver should launch or attach to your WebView2 app
+## Step 4: Choosing whether Microsoft Edge Driver should launch your app or attach to it
 
-Next, decide whether to configure Selenium to drive WebView2 by using the "basic/launch" approach or the "advanced/attach" approach.
+Decide whether to configure Selenium to drive WebView2 by using the "launch" or "attach" approach.
 
-In some scenarios, it is appropriate to let Microsoft Edge Driver handle the WebView2 launch ("basic"); in other scenarios, it's appropriate to attach to a running WebView2 instance ("advanced").
+* The "launch" approach: In some scenarios, it's appropriate to let Microsoft Edge Driver handle launching your WebView2 app.
+You launch your app outside of Microsoft Edge Driver, and then attach Microsoft Edge Driver to a running WebView2 instance.
+
+* The "attach" approach: In other scenarios, it's appropriate to attach Microsoft Edge Driver to a running WebView2 instance.  This "attach" approach is for a WebView2 app that's not compatible with the "launch" approach.
 
 ### Approach 1: Letting Microsoft Edge Driver launch your WebView2 app
 <!-- preferred phrase -->
 
-If you have a simple app that creates a single WebView2 instance and that instance is active immediately upon launch, then you can use the "basic/launch" scenario; use the section "Step 4: Drive WebView2 with Selenium and Microsoft Edge Driver".  In this scenario, there's one WebView2 instance, and it is available upon launch without needing to navigate through any native UI.
+If you have a simple app that creates a single WebView2 instance and that instance is active immediately upon launch, then you can use the "launch" approach; use [Step 4a: Letting Microsoft Edge Driver launch your WebView2 app](#step-4a-letting-microsoft-edge-driver-launch-your-webview2-app).
+
+In this scenario, there's one WebView2 instance, and it is available upon launch without needing to navigate through any native UI.
 
 ### Approach 2: Attaching Microsoft Edge Driver to a running WebView2 app
 <!-- preferred phrase -->
 
-If you have any situation that doesn't fit the basic scenario above, you should attach to a running WebView2 instance instead of letting EdgeDriver handle the WebView2 launch; use "Step 4b ("advanced"): Attach to a running WebView2 app with Selenium and Microsoft Edge Driver".  Some examples of scenarios that don't fit the "basic/launch" scenario above are:
+If you have any situation that doesn't fit the "launch" scenario above, you should attach Microsoft Edge Driver to a running WebView2 instance (instead of letting Microsoft Edge Driver handle the WebView2 launch); use [Step 4b: Attaching Microsoft Edge Driver to a running WebView2 app](#step-4b-attaching-microsoft-edge-driver-to-a-running-webview2-app).
+
+Some examples of scenarios that don't fit the "launch" scenario are:
 *  You need to navigate through some native UI before the WebView2 instance is created.
 *  Your app creates multiple WebView2 instances, and you want to attach to a specific instance.
 
-In such scenarios, we recommend attaching to a specific instance of WebView2, because having EdgeDriver launch your WebView2 app is for relatively simple scenarios only.  When EdgeDriver launches your app, it automatically attaches to the first WebView2 instance that is created, and will fail if no WebView2 instance is found.
+In such scenarios, we recommend attaching to a specific instance of WebView2, because having Microsoft Edge Driver launch your WebView2 app is for relatively simple scenarios only.  When Microsoft Edge Driver launches your app, it automatically attaches to the first WebView2 instance that is created, and will fail if no WebView2 instance is found.
 
-<!-- todo: copy caveat to here from WebDriver article, maybe in more than one spot, "Selenium is just one supported way" -->
-
-<!-- 
-There are common steps (you must know Selenium, download Microsoft Edge Driver, make sure the versions match.  What you do with your WebDriver framework, such as Selenium, will differ between the "basic" aka "launch" and the "advanced" aka "attach" scenarios.
-
-*  The "basic/launch" approach: launch your app outside of Microsoft Edge Driver and then attach Microsoft Edge Driver to a running WebView2 instance.
-
-*  The "advanced/attach" approach: A complex WebView2 app that's not compatible with the "basic" scenario.  
--->
-
-<!-- 
-Step 4a = "basic/launch" scenario steps.
-Step 4b = "advanced/attached" scenario steps, where you have multiple WebView2 instances and WebDriver.
--->
+Regardless of whether you use the "launch" or "attach" approach, you must know Selenium, download Microsoft Edge Driver, and make sure the versions match.  What you do with your WebDriver framework, such as Selenium, will differ between the "launch" versus "attach" approaches.
 
 
-<!-- ====================================================================== -->
-<!-- one scenario breaks out here; the above step1-3 are general relevance regardless of two scenarios "basic/launch" vs "advanced/attach"-->
 <!-- ====================================================================== -->
 ## Step 4a: Letting Microsoft Edge Driver launch your WebView2 app
+<!-- old title: Drive WebView2 with Selenium and Microsoft Edge Driver -->
 
 Note: Selenium with C# is just one of many WebDriver testing frameworks.
-
-<!-- old title: Step 4: Drive WebView2 with Selenium and Microsoft Edge Driver -->
 
 Use this "basic/launch" approach if you have a simple app that creates a single WebView2 instance and that instance is active immediately upon launch.  In this scenario, there's one WebView2 instance, and it is available upon launch without needing to navigate through any native UI.  
 
@@ -213,7 +204,6 @@ This is the end of the article, if you are using the "basic/launch" approach.
 
 This section explains how to attach Microsoft Edge Driver to an already-running WebView2 instance.  If you don't have just a single WebView2 instance, or your WebView2 instance requires navigating through some native UI, use this section and approach.
 
-
 A problem is that to automate a WebView2-based app, you sometimes first need to perform some actions in the native GUI in order to launch the WebView2 control.  As a solution, you need to navigate the native UI outside of Microsoft Edge Driver, and somehow ensure that the WebView2 instance is displayed, as follows.
 
 In this scenario, where you have some native UI to navigate, you launch your app using a tool other than Microsoft Edge Driver (such as WinAppDriver), then trigger the WebView2 instantiation, and then attach Microsoft Edge Driver to the running WebView2 instance.
@@ -230,7 +220,9 @@ In addition to ensuring the WebView2 instance is activated, you need to set its 
 
 ### Launching the WebView2 app with remote debugging enabled
 
-1. This step happens when you're coding your app.  You need to provide this extra command-line parameter when you're instantiating your WebView2 control.  Enable remote debugging, as follows:  Configure your WebView2 instance with the `--remote-debugging-port=<port>` additional command-line parameter using one of the recommended approaches in [Globals, in WebView2 Win32 C++ Reference][Webview2ReferenceWin32Globals].  You need to choose an available port number for this parameter.
+The next step happens when you're coding your app.  You need to provide this extra command-line parameter when you're instantiating your WebView2 control.  Enable remote debugging, as follows.
+
+1. Configure your WebView2 instance with the `--remote-debugging-port=<port>` additional command-line parameter using one of the recommended approaches in [Globals, in WebView2 Win32 C++ Reference][Webview2ReferenceWin32Globals].  Choose an available port number for this parameter.
 
 1. Launch your app.  How you launch your app depends on what other native UI tools you're using.
 
@@ -252,8 +244,7 @@ At `localhost:9222` above, the port number given on this line should match the p
 
 For more info about the `DebuggerAddress` property of the `EdgeOptions` object, see [EdgeOptions object][WebDriverCapabilitiesEdgeOptionsObject].
 
-Congratulations!  You've successfully automated a WebView2 project and driven WebView2 by using Selenium and Microsoft Edge Driver by using the "advanced/attach" approach.
-
+Congratulations!  You've successfully automated a WebView2 project and driven WebView2 by using Selenium and Microsoft Edge Driver, by attaching Microsoft Edge Driver to a running WebView2 app.
 
 <!-- ====================================================================== -->
 ## See also
