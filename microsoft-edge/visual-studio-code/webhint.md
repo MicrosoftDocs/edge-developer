@@ -96,12 +96,10 @@ To contribute to the extension, navigate to [Contributing][GithubWebhintioExtens
 
 *  [Accessibility][AccessibilityIndex]
 *  [Visual Studio Code][VisualstudiocodeIndex]
-*  [Contacting the Microsoft Edge team][Contact] - including feedback about webhint, and contributing to the webhint code.
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [AccessibilityIndex]: /microsoft-edge/accessibility "Accessibility | Microsoft Docs"
 [VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Visual Studio Code | Microsoft Docs"
 <!-- external links -->
