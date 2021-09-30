@@ -11,9 +11,9 @@ keywords: progressive web apps, PWA, Edge, JavaScript, URL
 ---
 # Handle URLs in Progressive Web Apps
 
-Native applications on many operating systems can be associated with URLs. They can request to be launched when associated URLs are activated. For example, when a user clicks on a Spotify link in an email or a chat message, the installed Spotify app can launch to handle the link.
+Native applications on many operating systems can be associated with URLs. They can request to be launched, instead of the browser, when associated URLs are activated.
 
-Progressive Web Apps can also handle URLs and doing so can create a more engaging experience.
+Progressive Web Apps can also handle URLs in the same way, and doing so can create a more engaging experience.
 
 > [!NOTE]
 > At the moment, in-browser page navigation does not trigger PWA URL handling.
@@ -106,7 +106,7 @@ To learn more about the valid members in `web-app-origin-association`, navigate 
 
 ## Testing URL handling
 
-Testing your app's URL handling from a web browser won't work since page navigation in browsers do not trigger URL handling at the OS level.
+Testing your app's URL handling from a web browser won't work since in-browser page navigation does not trigger URL handling at the OS level.
 
 To test the feature, send yourself a URL in a chat message app, or a desktop email client like Windows Mail. You can also use the Windows Run app:
 
@@ -114,6 +114,8 @@ To test the feature, send yourself a URL in a chat message app, or a desktop ema
 *  Enter a URL your app handles.
 *  Press `Enter`.
 
+> [!NOTE]
+> At the moment, only PWAs that were installed from the default system browser can handle URLs.
 
 ## Demo
 
