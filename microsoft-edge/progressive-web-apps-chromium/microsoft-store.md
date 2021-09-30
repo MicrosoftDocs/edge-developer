@@ -143,7 +143,7 @@ Referer: app-info://platform/microsoft-store
 
 Use this feature to measure distinct traffic from your Store-installed PWA.  Based on the traffic, you can adjust your app’s content to improve the user experience.  This feature is accessible to both client and server code. To access this information on the client side, you can query `document.referrer` in your JavaScript.
 
-This feature was first introduced in Microsoft Edge version 91 and the DOM API was introduced in version 93.
+This feature was first introduced in Microsoft Edge version 91, and the DOM API was introduced in Microsoft Edge version 93.
 
 ## See also
 
