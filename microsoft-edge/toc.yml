@@ -471,7 +471,7 @@
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                 - name: COM Interop
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
-        - name: Contact WebView2 team
+        - name: Contact WebView team
           href: webview2/contact.md
 # equivalent card: Test and automation ==========================================
     - name: Test and automation

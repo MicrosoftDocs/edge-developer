@@ -216,12 +216,12 @@ Ensuring the target function is in scope is tricky if you are running the `debug
 *  [Use the debugger features][DevtoolsJavascriptReference] - Using the UI of the debugger in the **Sources** tool.
 *  [Get started with debugging JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex] - An introductory tutorial using an existing webpage.
 *  [Sources tool overview][DevtoolsSourcesIndex] - The debugger is part of the **Sources** tool, which includes a JavaScript editor.
-*  [Contacting the Microsoft Edge team][Contact]
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsJavascriptReference]: ./reference.md "Use the debugger features | Microsoft Docs"
 [DevtoolsJavascriptIndex]: index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"

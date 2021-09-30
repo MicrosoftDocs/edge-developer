@@ -253,12 +253,12 @@ To configure options for persistent overlays for CSS grids or Flexbox layouts, u
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge team][Contact] to provide feedback on Microsoft Edge DevTools experiments, or anything else related to DevTools.
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [OpenSourcesInVSCode]: ../sources/opening-sources-in-vscode.md "Opening source files in Visual Studio Code"
 [Devtools3dViewIndex]: ../3d-view/index.md "3D View | Microsoft Docs"
 [DevtoolsCssGrid]: ../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Microsoft Docs"

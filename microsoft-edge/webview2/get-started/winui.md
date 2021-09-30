@@ -268,12 +268,12 @@ Congratulations, you built your first WebView2 app!
 *  [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain] - a comprehensive example of WebView2 capabilities.
 *  [See also][Webview2IndexNextSteps] in _Introduction to Microsoft Edge WebView2_.
 *  [WebView2 spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] - detailed information about the WebView2 API.
-*  [Contacting the Microsoft Edge team][Contact] - Share your feedback to help build rich WebView2 experiences, by using the `WebView2Feedback` repo.  To send WinUI-specific feature requests or bugs, use **Issues** in the [microsoft-ui-xaml][GithubMicrosoftMicrosoftUiXamlIssues] repo.
+*  [Contacting the Microsoft Edge WebView team][Contact] - To send WinUI-specific feature requests or bugs, use **Issues** in the [microsoft-ui-xaml][GithubMicrosoftMicrosoftUiXamlIssues] repo.
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
+[Contact]: ../contact.md "Contacting the Microsoft Edge WebView team | Microsoft Edge Developer documentation"
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"
 [Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Introduction to Microsoft Edge WebView2 | Microsoft Docs"

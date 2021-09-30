@@ -83,12 +83,12 @@ Applications that require IE mode for the website (or app) content to function c
 *  [What is Internet Explorer (IE) mode?][EnterpriseWhatIsIEMode]
 *  [Configure IE mode policies][EnterpriseConfigureIEModePolicies]
 *  [Fix web compatibility issues using document modes and the Enterprise Mode site list][IEDocumentModes]
-*  [Contacting the Microsoft Edge team][Contact]
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [PlaywrightIndex]: ../../playwright/index.md "Use Playwright to automate and test in Microsoft Edge | Microsoft Edge Developer docs"
 [WebDriverIndex]: ../../webdriver-chromium/index.md "Use WebDriver to automate Microsoft Edge | Microsoft Edge Developer docs"
 <!-- external links -->

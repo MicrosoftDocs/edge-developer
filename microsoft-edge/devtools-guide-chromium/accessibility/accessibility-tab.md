@@ -79,8 +79,18 @@ View the computed accessibility properties of an element in the **Accessibility*
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge team][Contact]
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
+[DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "View only the CSS that is actually applied to an element - CSS Reference | Microsoft Docs"
+[MDNAccessibilityTree]: https://developer.mozilla.org/docs/Glossary/AOM "Accessibility tree (AOM) | MDN"
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 
 <!-- ====================================================================== -->
 > [!NOTE]
@@ -89,14 +99,3 @@ View the computed accessibility properties of an element in the **Accessibility*
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "View only the CSS that is actually applied to an element - CSS Reference | Microsoft Docs"
-[MDNAccessibilityTree]: https://developer.mozilla.org/docs/Glossary/AOM "Accessibility tree (AOM) | MDN"
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png

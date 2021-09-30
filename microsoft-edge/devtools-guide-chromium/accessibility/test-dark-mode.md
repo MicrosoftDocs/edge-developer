@@ -60,11 +60,11 @@ To emulate a user's selection of preferred color theme:
 
 *  [Emulate dark or light schemes in the rendered page][DevToolsColorSchemeSimulation]
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
-*  [Contacting the Microsoft Edge team][Contact]
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Emulate dark or light schemes in the rendered page | Microsoft Docs"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

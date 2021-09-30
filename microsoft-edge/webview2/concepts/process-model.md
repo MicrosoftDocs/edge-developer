@@ -80,12 +80,12 @@ All processes that are associated with the browser process of your WebView2 are 
 *  [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] - a comprehensive example of WebView2 capabilities.
 *  [WebView2 API reference][DotnetApiMicrosoftWebWebview2WpfWebview2]
 *  [See also][Webview2IndexNextSteps] in _Introduction to Microsoft Edge WebView2_.
-*  [Contacting the Microsoft Edge team][Contact] - Share your feedback to help build rich WebView2 experiences, by using the `WebView2Feedback` repo.
+*  [Contacting the Microsoft Edge WebView team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
+[Contact]: ../contact.md "Contacting the Microsoft Edge WebView team | Microsoft Edge Developer documentation"
 [Webview2IndexGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
 [Webview2IndexNextSteps]: ../index.md#see-also "See also - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
 [WebView2ManageUDF]: ./user-data-folder.md "Manage the user data folder | Microsoft Docs"

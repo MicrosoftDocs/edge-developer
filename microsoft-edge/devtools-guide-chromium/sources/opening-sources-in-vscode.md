@@ -87,9 +87,11 @@ The **Settings** > **Workspace** page lists your workspaces, along with configur
 
 
 <!-- ====================================================================== -->
-## Getting in touch with the Microsoft Edge DevTools team
+## See also
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
+
+<!-- ====================================================================== -->
 <!-- links -->
-<!-- external: -->
+[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"

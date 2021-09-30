@@ -286,12 +286,12 @@ Congratulations, you built your first WebView2 app!
 *  [WebView2 API Sample][GithubMicrosoftedgeWebview2samplesApisample] - a comprehensive example of WebView2 capabilities.
 *  [WebView2Browser][GithubMicrosoftedgeWebview2browser] - a sample app built using WebView2.
 *  [WebView2 API reference][Webview2ReferenceWin32]
-*  [Contacting the Microsoft Edge team][Contact] - Share your feedback to help build rich WebView2 experiences, by using the `WebView2Feedback` repo.
+*  [Contacting the Microsoft Edge WebView team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
+[Contact]: ../contact.md "Contacting the Microsoft Edge WebView team | Microsoft Edge Developer documentation"
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Microsoft Edge Developer"
 
