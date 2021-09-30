@@ -148,7 +148,7 @@ Regardless of whether you use the "launch" or "attach" approach, you must know S
 
 Note: Selenium with C# is just one of many WebDriver testing frameworks.
 
-Use this "basic/launch" approach if you have a simple app that creates a single WebView2 instance and that instance is active immediately upon launch.  In this scenario, there's one WebView2 instance, and it is available upon launch without needing to navigate through any native UI.  
+Use this "launch" approach if you have a simple app that creates a single WebView2 instance and that instance is active immediately upon launch.  In this scenario, there's one WebView2 instance, and it is available upon launch without needing to navigate through any native UI.  
 
 1.  To drive WebView2 with Selenium and Microsoft Edge Driver, first create the `EdgeOptions` object, by copying and pasting the following code snippet.
 
@@ -193,9 +193,9 @@ Use this "basic/launch" approach if you have a simple app that creates a single 
 
     :::image type="content" source="../media/webdriver/microsoft.png" alt-text="Selenium running WebView2" lightbox="../media/webdriver/microsoft.png":::
 
-Congratulations!  You've successfully automated a WebView2 project and driven WebView2 by using Selenium and Microsoft Edge Driver, per the "basic/launch" approach.
+Congratulations!  You've successfully automated a WebView2 project and driven WebView2 by using Selenium and Microsoft Edge Driver, per the "launch" approach.
 
-This is the end of the article, if you are using the "basic/launch" approach.
+This is the end of the article, if you are using the "launch" approach.
 
 
 <!-- ====================================================================== -->
