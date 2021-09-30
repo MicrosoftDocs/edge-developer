@@ -15,45 +15,40 @@ Accessibility testing is a form of usability testing to verify your website is u
 
 Use the following tools and testing procedures to evaluate your website for accessibility:
 
-#### Accessibility testing in DevTools
+
+<!-- ====================================================================== -->
+## Accessibility testing in DevTools
 
 *   [Accessibility-testing features in DevTools][DevtoolsAccessibilityReference] - An accessibility-testing checklist and which features of DevTools to use for each test.
 
 *   [Overview of accessibility testing using DevTools][DevtoolsAccessibilityAccessibilitytestingindevtools] - A walkthrough of using various DevTools features to test for accessibility problems.
 
-#### [Accessibility Evaluation Resources](https://www.w3.org/WAI/eval/Overview.html)
 
-Accessibility Evaluation Resources is a multi-page resource by the W3C that outlines different approaches for evaluating websites for accessibility.
+<!-- ====================================================================== -->
+## External articles and websites
 
-#### [Assistive technology compatibility tests](http://www.powermapper.com/tests)
+*  [Assistive technology compatibility tests](http://www.powermapper.com/tests) - Test results showing how different content types and standards behave in assistive technologies (AT) such as screen readers.
 
-Test results showing how different content types and standards behave in assistive technologies (AT) like screen readers.
+*  [HTML5Accessibility](https://html5accessibility.com) - This site tests which new HTML5 features are accessibly supported by major browsers.
 
-#### [Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/eval/preliminary.html)
+*  [webhint](https://webhint.io) - Use webhint to check for out-of-date libraries, security improvements, performance problems, and accessibility issues.
 
-A series of quick checks by the WAI that help you assess the accessibility of a web page.
+*  [Web Accessibility Checker](https://visualstudiogallery.msdn.microsoft.com/3aabefab-1681-4fea-8f95-6a62e2f0f1ec) - A Visual Studio extension that performs accessibility checks on any ASP.NET web app.
 
-#### [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref)
+*  [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/index.html) - A list of web accessibility evaluation tools to help determine if websites meet accessibility guidelines.
 
-A quick reference to Web Content Accessibility Guidelines \(WCAG\) 2.0 requirements (success criteria) and techniques.
+### The Web Accessibility Initiative (WAI)
 
-#### [HTML5Accessibility](https://html5accessibility.com)
+*  [Accessibility Evaluation Resources](https://www.w3.org/WAI/eval/Overview.html) - Approaches for evaluating websites for accessibility.
 
-This site tests which new HTML5 features are accessibly supported by major browsers.
+*  [Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/eval/preliminary.html) - Quick checks that help you assess the accessibility of a web page.
 
-#### [webhint](https://webhint.io)
+*  [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref) - A quick reference to Web Content Accessibility Guidelines (WCAG), requirements, success criteria, and techniques.
 
-Use [webhint](https://webhint.io/) to check for out-of-date libraries, security improvements, performance problems, accessibility issues and more.
 
-#### [Web Accessibility Checker](https://visualstudiogallery.msdn.microsoft.com/3aabefab-1681-4fea-8f95-6a62e2f0f1ec)
-
-A Visual Studio extension that performs accessibility checks on any ASP.NET web app.
-
-#### [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/index.html)
-
-A list of web accessibility evaluation tools to help determine if websites meet accessibility guidelines.
-
-<!-- links: -->
-
-[DevtoolsAccessibilityAccessibilitytestingindevtools]: ../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md "Overview of accessibility testing using DevTools | Microsoft Docs"
-[DevtoolsAccessibilityReference]: ../devtools-guide-chromium/accessibility/reference.md "Accessibility-testing features in DevTools | Microsoft Docs"
+<!-- ====================================================================== -->
+<!-- links -->
+[DevtoolsAccessibilityAccessibilitytestingindevtools]: ../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md "Overview of accessibility testing using DevTools | Microsoft Edge Developer documentation"
+[DevtoolsAccessibilityReference]: ../devtools-guide-chromium/accessibility/reference.md "Accessibility-testing features in DevTools | Microsoft Edge Developer documentation"
+<!-- external links -->
+[Assistive technology compatibility tests](http://www.powermapper.com/tests)
