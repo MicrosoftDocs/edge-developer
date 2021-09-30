@@ -133,14 +133,15 @@ The Visual Studio debugger is now attached to Microsoft Edge.  You can pause the
 
 
 <!-- ====================================================================== -->
-## See also
+## Getting in touch with the Microsoft Visual Studio team
 
-*  [Contacting the Visual Studio team][Contact] - including feedback about how you work with JavaScript in Visual Studio.
+The Microsoft Visual Studio and Microsoft Edge teams wants to learn more about how you work with JavaScript in Visual Studio.  To send your feedback, select the **Send Feedback** icon in Visual Studio, or tweet [@VisualStudio and @EdgeDevTools][TwitterIntentTweetViualstudioEdgdevtools].
+
+:::image type="content" source="./media/feedback-icon.png" alt-text="The Send Feedback icon in Visual Studio" lightbox="./media/feedback-icon.png":::
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md#visual-studio-for-web-development "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 <!-- external links -->
 [VisualStudioWindowsIndex]: /visualstudio/windows/index "Visual Studio documentation | Microsoft Docs"
 

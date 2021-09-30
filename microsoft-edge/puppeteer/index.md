@@ -92,7 +92,6 @@ This is just a simple example of the automation and testing scenarios enabled by
 <!-- ====================================================================== -->
 ## See also
 
-*  [Contacting the Microsoft Edge team][Contact]
 <!--
 probably commented out here b/c already in main body
 *   [WebDriver (Chromium)][WebdriverChromiumMain]
@@ -107,11 +106,12 @@ probably commented out here b/c already in main body
 *   [page.setViewport() on Puppeteer][PuppeteerApipagesetviewport]
 *   [Headless browser on Wikipedia][WikiHeadlessBrowser]
 -->
+*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
+[Contact]: ../devtools-guide-chromium/contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver (Chromium) | Microsoft Docs"
 <!-- external links -->
 [GithubChromedevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Chrome DevTools Protocol Viewer | GitHub"

@@ -325,9 +325,11 @@ If you launch the extension from the Run and Debug workflow, the [Debug Console 
 
 
 <!-- ====================================================================== -->
-## See also
+## Getting in touch with the Microsoft Edge DevTools Extension team
 
-*  [Contacting the Microsoft Edge team][Contact]
+Send your feedback by [filing an issue][GithubMicrosoftVscodeEdgeDevtoolsNewIssue] in the `vscode-edge-devtools` repo.
+
+If you want to help make the Microsoft Edge DevTools extension better, your contributions are welcome.  Find everything you need to get started in the [vscode-edge-devtools][GithubMicrosoftVscodeEdgeDevtools] repo.
 
 
 <!-- ====================================================================== -->

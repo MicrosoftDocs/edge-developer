@@ -398,12 +398,18 @@ By default, Microsoft Edge Driver sends diagnostic data such as the status of th
 ## See also
 
 *  [Selenium documentation][SeleniumDocumentation] - Information about WebDriver in the context of Selenium, and how to write automated WebDriver tests using Selenium.
-*  [Contacting the Microsoft Edge team][Contact] - Sending feedback about using WebDriver, WebDriver testing frameworks (such as Selenium), and Microsoft Edge for web development.
+
+
+<!-- ====================================================================== -->
+## Getting in touch with the Microsoft Edge DevTools team
+
+The Microsoft Edge team is eager to hear your feedback about using WebDriver, WebDriver testing frameworks (such as Selenium), and Microsoft Edge.  To send the team your questions or comments, select the **Send Feedback** icon in Microsoft Edge DevTools, or send a tweet [@EdgeDevTools][TwitterTweetEdgeDevTools].
+
+:::image type="content" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
 [DevtoolsIndex]: ../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
 [WebdriverCapabilitiesEdgeOptions]: ./capabilities-edge-options.md "Capabilities and EdgeOptions | Microsoft Docs"
 [MicrosoftEdgePrivacyWhitepaper]: /microsoft-edge/privacy-whitepaper#microsoft-edge-driver
