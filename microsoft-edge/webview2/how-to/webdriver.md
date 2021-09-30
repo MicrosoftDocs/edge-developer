@@ -25,7 +25,7 @@ To create automated tests to simulate user interactions in your WebView2 app, yo
 
 Because WebView2 uses the Microsoft Edge (Chromium) web platform, WebView2 developers can take advantage of standard web tooling, such as Selenium, for debugging and automation.  Selenium is a testing framework that uses the WebDriver protocol.  Selenium implements the W3C [WebDriver][W3cWebdriver2] API.  You can use Selenium to create automated tests to simulate user interactions in Microsoft Edge.
 
-For the relationship between the WebDriver protocol, Microsoft Edge Driver as an implementation of that protocol, and the Selenium test framework, see [WebDriver overview](../webdriver-chromium/index.md#relationship-between-webdriver-and-other-software).
+For the relationship between the WebDriver protocol, Microsoft Edge Driver as an implementation of that protocol, and the Selenium test framework, see [WebDriver overview](../../webdriver-chromium/index.md#relationship-between-webdriver-and-other-software).
 
 
 <!-- ====================================================================== -->
@@ -222,7 +222,7 @@ Microsoft Edge Driver doesn't handle native UI automation, but here are some oth
 
 *  Windows Application Driver ([WinAppDriver](https://github.com/Microsoft/WinAppDriver)) is a service to support Selenium-like UI Test Automation on Windows Applications.  This service supports testing Universal Windows Platform (UWP), Windows Forms (WinForms), Windows Presentation Foundation (WPF), and Classic Windows (Win32) apps on Windows 10 PCs.
 
-*  Using Microsoft Native UI automation directly.  The [Microsoft UI Automation](https://docs.microsoft.com/windows/win32/winauto/entry-uiauto-win32) framework allows automated test scripts to interact with the UI.  Microsoft UI Automation enables Windows applications to provide and consume programmatic information about user interfaces (UIs).  It provides programmatic access to most UI elements on the desktop.  It enables assistive technology products, such as screen readers, to provide information about the UI to end users and to manipulate the UI by standard input and by means other than standard input. <!-- condense that; 1st para -->
+*  Using Microsoft Native UI automation directly.  The [Microsoft UI Automation][MicrosoftUIAutomation] framework allows automated test scripts to interact with the UI.  Microsoft UI Automation enables Windows applications to provide and consume programmatic information about user interfaces (UIs).  It provides programmatic access to most UI elements on the desktop.  It enables assistive technology products, such as screen readers, to provide information about the UI to end users and to manipulate the UI by standard input and by means other than standard input. <!-- condense that; 1st para -->
 
 * Use a flag such as a command-line parameter or an environment variable to tell your app to launch directly to the WebView2 instance, to avoid the need for navigating native UI.  <!-- create a special test mode that displays __. -->
 
@@ -230,7 +230,7 @@ In addition to ensuring the WebView2 instance is activated, you need to set its 
 
 ### Launching the WebView2 app with remote debugging enabled
 
-1. This step happens when you're coding your app.  You need to provide this extra command-line parameter when you're instantiating your WebView2 control.  Enable remote debugging, as follows:  Configure your WebView2 instance with the `--remote-debugging-port=<port>` additional command-line parameter using one of the recommended approaches in [Globals, in WebView2 Win32 C++ Reference](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/0-9-538/webview2-idl).  You need to choose an available port number for this parameter.
+1. This step happens when you're coding your app.  You need to provide this extra command-line parameter when you're instantiating your WebView2 control.  Enable remote debugging, as follows:  Configure your WebView2 instance with the `--remote-debugging-port=<port>` additional command-line parameter using one of the recommended approaches in [Globals, in WebView2 Win32 C++ Reference][Webview2ReferenceWin32Globals].  You need to choose an available port number for this parameter.
 
 1. Launch your app.  How you launch your app depends on what other native UI tools you're using.
 
@@ -250,7 +250,7 @@ EdgeDriver edgeDriver = new EdgeDriver(edgeOptions);
 
 At `localhost:9222` above, the port number given on this line should match the port number that you chose when setting `--remote-debugging-port` above.
 
-For more info about the `DebuggerAddress` property of the `EdgeOptions` object, see [EdgeOptions object](https://docs.microsoft.com/microsoft-edge/webdriver-chromium/capabilities-edge-options#edgeoptions-object).
+For more info about the `DebuggerAddress` property of the `EdgeOptions` object, see [EdgeOptions object][WebDriverCapabilitiesEdgeOptionsObject].
 
 Congratulations!  You've successfully automated a WebView2 project and driven WebView2 by using Selenium and Microsoft Edge Driver by using the "advanced/attach" approach.
 
@@ -258,7 +258,6 @@ Congratulations!  You've successfully automated a WebView2 project and driven We
 <!-- ====================================================================== -->
 ## See also
 
-*  [Attaching WebDriver to WebView2](attach-webdriver.md)
 *  [WebDriver on Selenium documentation][SeleniumWebdriver] - How the APIs Selenium drives WebView2 or Microsoft Edge.
 *  [Introduction to Microsoft Edge WebView2][WebViewIndex] - How to use the WebView2 control to embed web content in your native app.
 *  [Use WebDriver (Chromium) for test automation][WebdriverChromium] - Automating Microsoft Edge.
@@ -277,7 +276,11 @@ Congratulations!  You've successfully automated a WebView2 project and driven We
 [WebdriverChromiumDownloadMicrosoftEdgeDriver]: ../../webdriver-chromium/index.md#download-microsoft-edge-driver "Download Microsoft Edge Driver - Use WebDriver (Chromium) for test automation | Microsoft Docs"
 [WebViewIndex]: ../index.md "Introduction to Microsoft Edge WebView2 - Microsoft Docs"
 [Webview2ReleaseNotes]: ../release-notes.md "Release notes for WebView2 SDK | Microsoft Docs"
+[WebDriverCapabilitiesEdgeOptionsObject]: ../../webdriver-chromium/capabilities-edge-options.md#edgeoptions-object "EdgeOptions object | Microsoft docs"
 <!-- external links -->
+[MicrosoftUIAutomation]: /windows/win32/winauto/entry-uiauto-win32 "Microsoft UI Automation | Microsoft Docs"
+[Webview2ReferenceWin32Globals]: /microsoft-edge/webview2/reference/win32/0-9-538/webview2-idl "Globals, in WebView2 Win32 C++ Reference | Microsoft Docs"
+
 [MicrosoftDeveloperMicrosoftEdgeWebDriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "Download WebDriver | Microsoft Edge Developer"
 
 [GithubMicrosoftedgewebview2samplesSampleappsWebview2apisample]: https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample "WebView2 API Sample - MicrosoftEdge/WebView2Samples | GitHub"
