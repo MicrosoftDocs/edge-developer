@@ -29,26 +29,38 @@ Use the following tools and testing procedures to evaluate your website for acce
 
 <!-- *  [Assistive technology compatibility tests](http://www.powermapper.com/tests) - Test results showing how different content types and standards behave in assistive technologies (AT) such as screen readers. -->
 
+<!-- failed: renders [][], b/c there was no blank line between? -->
 *  [Assistive technology compatibility tests][powermapper com tests] - Test results showing how different content types and standards behave in assistive technologies (AT) such as screen readers.
+
 [powermapper com tests]: http://www.powermapper.com/tests "Assistive technology compatibility tests | Powermapper.com"
 
+<!-- failed: renders [][], b/c there was no blank line between? -->
 *  [HTML5Accessibility][html5accessibility com] - This site tests which new HTML5 features are accessibly supported by major browsers.
+
 [html5accessibility com]: https://html5accessibility.com "html5accessibility.com"
 
+<!-- failed: renders [][], b/c there was no blank line between? -->
 *  [webhint][webhint] - Use webhint to check for out-of-date libraries, security improvements, performance problems, and accessibility issues.
+
 [webhint]: https://webhint.io
 
+<!-- failed: renders [][], b/c there was no blank line between? -->
 *  [Web Accessibility Checker][Web Accessibility Checker] - A Visual Studio extension that performs accessibility checks on any ASP.NET web app.
+
 [Web Accessibility Checker]: https://visualstudiogallery.msdn.microsoft.com/3aabefab-1681-4fea-8f95-6a62e2f0f1ec
 
+<!-- works incl tooltip -->
 *  [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/index.html 'Web Accessibility Evaluation Tools List') - A list of web accessibility evaluation tools to help determine if websites meet accessibility guidelines.
 
 ### The Web Accessibility Initiative (WAI)
 
+<!-- works incl tooltip -->
 *  [Accessibility Evaluation Resources](https://www.w3.org/WAI/eval/Overview.html 'Accessibility Evaluation Resources') - Approaches for evaluating websites for accessibility.
 
+<!-- works, no tooltip -->
 *  [Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/eval/preliminary.html) - Quick checks that help you assess the accessibility of a web page.
 
+<!-- works, no tooltip -->
 *  [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref) - A quick reference to Web Content Accessibility Guidelines (WCAG), requirements, success criteria, and techniques.
 
 
