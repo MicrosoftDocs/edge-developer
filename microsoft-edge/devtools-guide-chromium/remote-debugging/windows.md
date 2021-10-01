@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, remote, debugging, windows 10, Windows 10 and later, windows, device portal
 ---
-# Get started with remote debugging Windows 10 and later Devices
+# Get started with remote debugging Windows devices
 
 Remote debug live content on a Windows 10 and later device from your Windows or macOS computer.  This tutorial teaches you the following tasks.
 
