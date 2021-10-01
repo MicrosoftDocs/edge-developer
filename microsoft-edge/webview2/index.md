@@ -156,7 +156,6 @@ A General Availability \(GA\) or Preview version of WebView2 is available for th
 
 WebView2 apps can run on the following versions of Windows.
 
-*   Windows 11
 *   Windows 10
 *   Windows 10 IoT Enterprise LTSC x32 2019
 *   Windows 10 IoT Enterprise LTSC x64 2019
