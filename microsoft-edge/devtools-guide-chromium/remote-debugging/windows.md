@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, remote, debugging, windows 10, Windows 10 and later, Windows 11, windows, device portal
+keywords: microsoft edge, web development, f12 tools, devtools, remote, debugging, windows 10, Windows 10 and later, windows, device portal
 ---
 # Get started with remote debugging Windows 10 and later Devices
 
