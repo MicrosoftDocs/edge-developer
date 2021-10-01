@@ -1,6 +1,6 @@
 ---
 description: Get started with Remote Debugging Windows 10 and later devices
-title: Get started with remote debugging Windows 10 and later Devices
+title: Get started with remote debugging Windows devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/23/2021
