@@ -62,15 +62,13 @@ States do not change the nature of the object, but represent information associa
 <div role="checkbox" aria-checked="false">Accept</div>
 ```
 
-Go to [The Roles Model](https://www.w3.org/TR/wai-aria-1.1#roles 'The Roles Model - Accessible Rich Internet Applications (WAI-ARIA) 1.1 | W3C') by the W3C to see a full list of roles, properties, and states.
-
-For more information on ARIA, navigate to ARIA in the [Resources](#resources) section.
+To see a full list of roles, properties, and states, go to [The Roles Model](https://www.w3.org/TR/wai-aria-1.1#roles 'The Roles Model - Accessible Rich Internet Applications (WAI-ARIA) 1.1 | W3C') at W3C.
 
 
 <!-- ====================================================================== -->
 ## Assistive technology compatibility testing
 
-Verifying that the website you are building works with real assistive technologies is the best way to ensure a good experience for your users with disabilities.  Since many assistive technologies make use of the keyboard, testing the keyboard accessibility of your website is a good place to start.
+Verifying that the website you are building works with real assistive technologies is the best way to ensure that you provide a good experience for users with disabilities.  Since many assistive technologies make use of the keyboard, testing the keyboard accessibility of your website is a good place to start.
 
 [Keyboard compatibility testing][W3cPerspectiveVideosKeyboard] validates that users have access to all interactive controls without requiring a mouse.  Microsoft [Accessibility Insights for Web][AccessibilityinsightsWebOverview] is a browser extension for Microsoft Edge and Chrome that guides you and reveals several common issues.
 
@@ -87,7 +85,7 @@ WebAIM conducts surveys with [screen reader][WebaimProjectsScreenreadersurvey8] 
 
 Assistive technologies are sophisticated tools.  Do not assume that you are able to immediately start testing with an assistive technology without first learning about how it works.  Learning to test with a screen reader has an especially steep learning curve.  A novice user of screen readers might think that a screen reader has a bug, while the issue might actually be an error in using the screen reader.
 
-For more information about learning to test with assistive technologies, navigate to [Testing with Screen Readers][WebaimArticlesScreenreaderTesting] on WebAIM.
+[Testing with Screen Readers][WebaimArticlesScreenreaderTesting] at WebAIM provides more information about learning to test with assistive technologies.
 
 ### Testing locally
 
@@ -127,7 +125,7 @@ The W3C [Web Accessibility Initiative (WAI)](https://w3.org/WAI) is an effort to
 
 ### TPGi, LLC
 
-[TPGi, LLC](https://www.tpgi.com/blog) provides consulting and technology solutions to organizations around the world to ensure their clients reach all audiences effectively and efficiently, while meeting governmental and international standards.  Their blog covers topics like web accessibility best practices, accessibility tools, and accessibility trends.
+[TPGi, LLC](https://www.tpgi.com/blog) provides consulting and technology solutions to organizations around the world to ensure that their clients reach all audiences effectively and efficiently, while meeting governmental and international standards.  Their blog covers topics like web accessibility best practices, accessibility tools, and accessibility trends.
 
 ### Simply Accessible
 
@@ -143,7 +141,7 @@ The W3C [Web Accessibility Initiative (WAI)](https://w3.org/WAI) is an effort to
 
 ### ally.js - Tutorials
 
-JavaScript library to help modern web applications with accessibility concerns by making accessibility simpler.  For more information, navigate to [ally.js - Tutorials](http://allyjs.io/tutorials).
+JavaScript library to help modern web applications with accessibility concerns by making accessibility simpler.  For more information, go to [ally.js - Tutorials](http://allyjs.io/tutorials).
 
 ### OpenAjax examples
 
@@ -151,7 +149,7 @@ The [OpenAjax Alliance website](http://oaa-accessibility.org) is an excellent re
 
 ### Patterns
 
-[The A11Y Project](http://a11yproject.com) offers a library of accessible widgets and patterns like menus, buttons, tooltips, and more.  For more information, navigate to [Patterns](http://a11yproject.com/patterns.html).
+[The A11Y Project](http://a11yproject.com) offers a library of accessible widgets and patterns like menus, buttons, tooltips, and more.  For more information, go to [Patterns](http://a11yproject.com/patterns.html).
 
 
 <!-- ====================================================================== -->
@@ -159,71 +157,71 @@ The [OpenAjax Alliance website](http://oaa-accessibility.org) is an excellent re
 
 ### Accessibility: Creating accessible extension icons for Microsoft Edge
 
-Get guidance on creating accessible extensions icons for Microsoft Edge.  For more information, navigate to [Accessibility: Creating accessible extension icons for Microsoft Edge](/archive/microsoft-edge/legacy/developer/extensions/guides/accessibility).
+Get guidance on creating accessible extensions icons for Microsoft Edge.  For more information, go to [Accessibility: Creating accessible extension icons for Microsoft Edge](/archive/microsoft-edge/legacy/developer/extensions/guides/accessibility).
 
 ### Accessible Name and Description: Computation and Mappings 1.1
 
-This W3C mapping document explains how browsers determine name and descriptions of accessible objects from web content languages and expose them in accessibility APIs.  For more information, navigate to [Accessible Name and Description: Computation and Mappings 1.1](https://www.w3.org/TR/accname-1.1).
+This W3C mapping document explains how browsers determine name and descriptions of accessible objects from web content languages and expose them in accessibility APIs.  For more information, go to [Accessible Name and Description: Computation and Mappings 1.1](https://www.w3.org/TR/accname-1.1).
 
 ### Accessibility Evaluation Resources
 
-Accessibility Evaluation Resources is a multi-page resource by the W3C that outlines different approaches for evaluating websites for accessibility.  For more information, navigate to [Accessibility Evaluation Resources](https://www.w3.org/WAI/eval/Overview.html).
+Accessibility Evaluation Resources is a multi-page resource by the W3C that outlines different approaches for evaluating websites for accessibility.  For more information, go to [Accessibility Evaluation Resources](https://www.w3.org/WAI/eval/Overview.html).
 
 ### Assistive technology compatibility tests
 
-Test results showing how different content types and standards behave in assistive technologies (AT) like screen readers.  For more information, navigate to [Assistive technology compatibility tests](http://www.powermapper.com/tests).
+Test results showing how different content types and standards behave in assistive technologies (AT) like screen readers.  For more information, go to [Assistive technology compatibility tests](http://www.powermapper.com/tests).
 
 ### Building accessible websites just got a lot easier
 
-This .NET Web Development and Tools blog post describes the Visual Studio extension [Web Accessibility Checker](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebAccessibilityChecker).  For more information, navigate to [Building accessible websites just got a lot easier](https://devblogs.microsoft.com/aspnet/building-accessible-websites-just-got-a-lot-easier).
+This .NET Web Development and Tools blog post describes the Visual Studio extension [Web Accessibility Checker](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebAccessibilityChecker).  For more information, go to [Building accessible websites just got a lot easier](https://devblogs.microsoft.com/aspnet/building-accessible-websites-just-got-a-lot-easier).
 
 ### Core Accessibility API Mappings 1.1
 
-This W3C mapping document explains how the semantics of web content languages are exposed to accessibility APIs.  For more information, navigate to [Core Accessibility API Mappings 1.1](https://www.w3.org/TR/core-aam-1.1).
+This W3C mapping document explains how the semantics of web content languages are exposed to accessibility APIs.  For more information, go to [Core Accessibility API Mappings 1.1](https://www.w3.org/TR/core-aam-1.1).
 
 ### Easy Checks – A First Review of Web Accessibility
 
-A series of quick checks by the WAI that help you asses the accessibility of a web page.  For more information, navigate to [Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/eval/preliminary.html).
+A series of quick checks by the WAI that help you asses the accessibility of a web page.  For more information, go to [Easy Checks – A First Review of Web Accessibility](https://www.w3.org/WAI/eval/preliminary.html).
 
 ### How to Meet WCAG 2.0
 
-A quick reference to Web Content Accessibility Guidelines (WCAG) 2.0 requirements (success criteria) and techniques.  For more information, navigate to [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref).
+A quick reference to Web Content Accessibility Guidelines (WCAG) 2.0 requirements (success criteria) and techniques.  For more information, go to [How to Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref).
 
 ### HTML Accessibility API Mappings 1.0
 
-This W3C mappings document explains how HTML5.1 element and attributes map to platform accessibility APIs.  For more information, navigate to [HTML Accessibility API Mappings 1.0](https://www.w3.org/TR/html-aam-1.0).
+This W3C mappings document explains how HTML5.1 element and attributes map to platform accessibility APIs.  For more information, go to [HTML Accessibility API Mappings 1.0](https://www.w3.org/TR/html-aam-1.0).
 
 ### Quick Tips
 
-A list of quick web development tips for accessibility by [The A11Y Project](http://a11yproject.com 'The A11Y Project').  For more information, navigate to [Quick Tips](http://a11yproject.com#Quick-tips 'Quick Tips').
+A list of quick web development tips for accessibility by [The A11Y Project](http://a11yproject.com 'The A11Y Project').  For more information, go to [Quick Tips](http://a11yproject.com#Quick-tips 'Quick Tips').
 
 ### Site Scan
 
-The Site Scan tool on Microsoft Edge Dev Center checks for out-of-date libraries, layout issues, and accessibility issues.  For more information, navigate to [Site Scan](https://developer.microsoft.com/microsoft-edge/tools 'Site Scan | Microsoft').
+The Site Scan tool on Microsoft Edge Dev Center checks for out-of-date libraries, layout issues, and accessibility issues.  For more information, go to [Site Scan](https://developer.microsoft.com/microsoft-edge/tools 'Site Scan | Microsoft').
 
 ### Techniques for WCAG 2.0
 
-Techniques from the W3C that provide guidance for web developers on meeting [Web Content Accessibility Guidelines (WCAG) 2.0](https://w3.org/TR/WCAG20) success criteria.  For more information, navigate to [Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/Overview.html).
+Techniques from the W3C that provide guidance for web developers on meeting [Web Content Accessibility Guidelines (WCAG) 2.0](https://w3.org/TR/WCAG20) success criteria.  For more information, go to [Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/Overview.html).
 
 ### Tips on Developing for Web Accessibility
 
-Tips from the W3C on developing web content that is more accessible to people with disabilities.  For more information, navigate to [Tips on Developing for Web Accessibility](https://w3.org/WAI/gettingstarted/tips/developing.html 'Tips on Developing for Web Accessibility | W3C WAI').
+Tips from the W3C on developing web content that is more accessible to people with disabilities.  For more information, go to [Tips on Developing for Web Accessibility](https://w3.org/WAI/gettingstarted/tips/developing.html 'Tips on Developing for Web Accessibility | W3C WAI').
 
 ### WAI-ARIA Authoring Practices 1.1
 
-A document by the W3C that provides readers with an understanding of how to use WAI-ARIA 1.1 and recommends approaches to make widgets, navigation, and behaviors accessible using WAI-ARIA roles, states, and properties.  For more information, navigate to [WAI-ARIA Authoring Practices 1.1](http://w3c.github.io/aria-practices 'WAI-ARIA Authoring Practices 1.1 | W3C').
+A document by the W3C that provides readers with an understanding of how to use WAI-ARIA 1.1 and recommends approaches to make widgets, navigation, and behaviors accessible using WAI-ARIA roles, states, and properties.  For more information, go to [WAI-ARIA Authoring Practices 1.1](http://w3c.github.io/aria-practices 'WAI-ARIA Authoring Practices 1.1 | W3C').
 
 ### WAI Guidelines and Techniques
 
-A series of web accessibility guidelines and standards developed by the WAI.  For more information, navigate to [WAI Guidelines and Techniques](https://w3.org/WAI/guid-tech.html 'WAI Guidelines and Techniques | W3C WAI').
+A series of web accessibility guidelines and standards developed by the WAI.  For more information, go to [WAI Guidelines and Techniques](https://w3.org/WAI/guid-tech.html 'WAI Guidelines and Techniques | W3C WAI').
 
 ### Web Accessibility Evaluation Tools List
 
-A list of web accessibility evaluation tools to help determine if websites meet accessibility guidelines.  For more information, navigate to [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/index.html 'Web Accessibility Evaluation Tools List | W3C WAI').
+A list of web accessibility evaluation tools to help determine if websites meet accessibility guidelines.  For more information, go to [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/index.html 'Web Accessibility Evaluation Tools List | W3C WAI').
 
 ### Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone
 
-A series of short situational videos by the W3C about the impact of accessibility and the benefits for everyone.  For more information, navigate to [Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone](https://w3.org/WAI/perspectives 'Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone | W3C WAI').
+A series of short situational videos by the W3C about the impact of accessibility and the benefits for everyone.  For more information, go to [Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone](https://w3.org/WAI/perspectives 'Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone | W3C WAI').
 
 
 <!-- ====================================================================== -->
