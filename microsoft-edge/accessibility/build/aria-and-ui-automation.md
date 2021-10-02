@@ -18,17 +18,17 @@ Visit [HTML5Accessibility](https://html5accessibility.com) for information on wh
 
 The Microsoft Edge rendering engine builds an accessible projection of web pages, conforming to the following W3C specifications:
 
-1. The [HTML Accessibility API Mappings](https://w3.org/TR/html-aam-1.0/) specification defines how HTML elements and attributes map to ARIA and UI Automation objects.
-   * [Working draft](https://w3.org/TR/html-aam-1.0/) - stable version of the specification.
-   * [Editor's draft](https://w3c.github.io/html-aam/) - work in progress.  Note that while this spec has the latest changes, the changes may not be available in Microsoft Edge yet.
+The [HTML Accessibility API Mappings](https://w3.org/TR/html-aam-1.0/) specification defines how HTML elements and attributes map to ARIA and UI Automation objects.
+* [Working draft](https://w3.org/TR/html-aam-1.0/) - stable version of the specification.
+* [Editor's draft](https://w3c.github.io/html-aam/) - work in progress.  Note that while this spec has the latest changes, the changes may not be available in Microsoft Edge yet.
 
-2. The [Core Accessibility API Mappings](https://w3.org/TR/core-aam-1.1/) specification defines general principles for building the accessibility tree and mapping ARIA elements and attributes to UI Automation objects.
-   * [Working draft](https://w3.org/TR/core-aam-1.1/) - stable version of the specification.
-   * [Editor's draft](https://w3c.github.io/core-aam/) - work in progress.  Note that while this spec has the latest changes, the changes may not be available in Microsoft Edge yet.
+The [Core Accessibility API Mappings](https://w3.org/TR/core-aam-1.1/) specification defines general principles for building the accessibility tree and mapping ARIA elements and attributes to UI Automation objects.
+* [Working draft](https://w3.org/TR/core-aam-1.1/) - stable version of the specification.
+* [Editor's draft](https://w3c.github.io/core-aam/) - work in progress.  Note that while this spec has the latest changes, the changes may not be available in Microsoft Edge yet.
 
-3. The [Accessible Name and Description: Computation and API Mappings](https://w3.org/TR/accname-aam-1.1/) specification defines how to compute the name and description of accessible objects given the HTML and the ARIA elements and attributes values available for the accessible elements.
-   * [Working draft](https://w3.org/TR/accname-aam-1.1/) - stable version of the specification.
-   * [Editor's draft](https://w3c.github.io/accname/) - work in progress.  Note that while this spec has the latest changes, the changes may not be available in Microsoft Edge yet.
+The [Accessible Name and Description: Computation and API Mappings](https://w3.org/TR/accname-aam-1.1/) specification defines how to compute the name and description of accessible objects given the HTML and the ARIA elements and attributes values available for the accessible elements.
+* [Working draft](https://w3.org/TR/accname-aam-1.1/) - stable version of the specification.
+* [Editor's draft](https://w3c.github.io/accname/) - work in progress.  Note that while this spec has the latest changes, the changes may not be available in Microsoft Edge yet.
 
 
 <!-- ====================================================================== -->

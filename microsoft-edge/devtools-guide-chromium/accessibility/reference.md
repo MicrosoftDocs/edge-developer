@@ -59,7 +59,7 @@ External articles:
 <!-- ====================================================================== -->
 <!-- links -->
 [DevtoolsAccessibilityOverview]: ../../accessibility/index.md "Accessibility overview | Microsoft Docs"
-[DevtoolsAccessibilityTest]: ../../accessibility/test.md "Accessibility testing | Microsoft Docs"
+[DevtoolsAccessibilityTest]: ../../accessibility/test.md "Resources for accessibility testing | Microsoft Docs"
 [DevtoolsAccessibilityAccessibilitytestingindevtools]: accessibility-testing-in-devtools.md "Overview of accessibility testing using DevTools | Microsoft Docs"
 [DevtoolsAccessibilityNavigation]: ./navigation.md "Navigate Microsoft Edge DevTools with assistive technology | Microsoft Docs"
 <!-- external -->

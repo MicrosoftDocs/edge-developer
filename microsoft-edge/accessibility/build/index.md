@@ -1,7 +1,7 @@
 ---
 ms.assetid: 1b3ebc25-d023-4f23-bbba-dce066c20de8
 description: How best practices and Accessible Rich Internet Applications (ARIA) can come together to create an accessible website.
-title: Building accessible websites
+title: Resources about building accessible websites
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/11/2021
@@ -10,13 +10,13 @@ ms.prod: microsoft-edge
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
 ms.custom: seodec18
 ---
-# Building accessible websites
+# Resources about building accessible websites
 
 The web is filled with dynamic and complex websites, applications, and user interfaces built using a combination of HTML, CSS, and JavaScript.  However, when designed and built without accessibility in mind, these complex websites are difficult to use by people who rely on [assistive technologies](https://webaim.org/articles/motor/assistive) to browse the web.
 
 Building websites that are accessible to people with disabilities requires semantic information about the user interface.  Accessible websites allow assistive technologies, like screen readers, to convey the necessary information to help people with a range of abilities use the website.
 
-Visit [HTML5Accessibility](https://html5accessibility.com 'HTML5 Accessibility .com') for information on which new HTML5 features are accessibly supported by Microsoft Edge.
+Visit [HTML5Accessibility](https://html5accessibility.com) for information on which new HTML5 features are accessibly supported by Microsoft Edge.
 
 
 <!-- ====================================================================== -->
@@ -30,39 +30,39 @@ For applications on Microsoft platforms and on the web, the assistive technology
 
 For web developers, certain HTML elements are mapped to UI Automation objects, so in selecting those HTML elements, the developer can use the accessibility properties and events built in to those elements.  While developing your website, you usually only need to make sure that the API is correctly written to, or that the appropriate element is specified, for the application to be accessible.
 
-Check out [ARIA and UI automation in Microsoft Edge](./aria-and-ui-automation.md 'ARIA and UI automation in Microsoft Edge') for more information.  Accessible Universal Windows Platform (UWP) apps are explained at [Accessibility](/windows/uwp/design/accessibility/accessibility 'Accessibility | Windows Dev Center') in Windows Dev Center.
+Check out [ARIA and UI automation in Microsoft Edge](./aria-and-ui-automation.md) for more information.  Accessible Universal Windows Platform (UWP) apps are explained at [Accessibility](/windows/uwp/design/accessibility/accessibility) in Windows Dev Center.
 
-Many common accessibility issues with dynamic content can be addressed by good coding practice.  The [WCAG 2.0](https://www.w3.org/TR/WCAG20 'WCAG 2.0') documentation includes many techniques and best practices to help you create more accessible dynamic web applications.  Even when coded properly, however, dynamic content is not necessarily accessible.  [Accessible Rich Internet Applications (ARIA)](#aria) helps overcome this issue.
+Many common accessibility issues with dynamic content can be addressed by good coding practice.  The [WCAG 2.0](https://www.w3.org/TR/WCAG20) documentation includes many techniques and best practices to help you create more accessible dynamic web applications.  Even when coded properly, however, dynamic content is not necessarily accessible.  [Accessible Rich Internet Applications (ARIA)](#aria) helps overcome this issue.
 
-For more information on web accessibility, check out the [Introduction to Web Accessibility](https://www.w3.org/WAI/intro/accessibility.php 'Introduction to Web Accessibility') by the [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI 'Web Accessibility Initiative (WAI)').
+For more information on web accessibility, check out the [Introduction to Web Accessibility](https://www.w3.org/WAI/intro/accessibility.php) by the [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI).
 
 
 <!-- ====================================================================== -->
 ## ARIA
 
-The [Accessible Rich Internet Applications (ARIA)](https://www.w3.org/TR/wai-aria 'Accessible Rich Internet Applications (ARIA)') specification by the W3C's [Web Accessibility Initiative](https://www.w3.org/WAI 'Web Accessibility Initiative | W3C WAI') defines as a syntax for making dynamic web content and custom user interfaces accessible to all people.  ARIA extends HTML by using additional attributes (roles, properties, and states) that are designed to convey custom semantics.  These attributes are used by browsers to pass along the controls' state and role to the accessibility API.
+The [Accessible Rich Internet Applications (ARIA)](https://www.w3.org/TR/wai-aria) specification by the W3C's [Web Accessibility Initiative](https://www.w3.org/WAI) defines as a syntax for making dynamic web content and custom user interfaces accessible to all people.  ARIA extends HTML by using additional attributes (roles, properties, and states) that are designed to convey custom semantics.  These attributes are used by browsers to pass along the controls' state and role to the accessibility API.
 
 ### Roles, properties, and states
 
-ARIA roles are set on elements using the [role](https://developer.mozilla.org/docs/Web/HTML/Reference 'Mozilla HTML Reference') attribute to give assistive technologies and accessibility APIs information about the element.  For example, the below `<li>` element is assigned `role="menuitem"` to signify it's an item in a menu.
+ARIA roles are set on elements using the [role](https://developer.mozilla.org/docs/Web/HTML/Reference) attribute to give assistive technologies and accessibility APIs information about the element.  For example, the below `<li>` element is assigned `role="menuitem"` to signify it's an item in a menu.
 
 ```html
 <li role="menuitem">Home</li>
 ```
 
-ARIA states and properties are aria-prefixed attributes that provide specific information about an object to help form the definition of the nature of roles.  Properties are attributes that are essential to the nature of an object, like [aria-readonly](https://developer.mozilla.org/docs/Web/Accessibility/ARIA 'aria-readonly - ARIA | MDN') and [aria-haspopup](https://developer.mozilla.org/docs/Web/Accessibility/ARIA 'aria-haspopup - ARIA | MDN').  Changing a property affects the meaning of the object.  In the example below, the property `aria-haspopup="true"` is set on a `<li>` menu item to signify it has a popup.
+ARIA states and properties are aria-prefixed attributes that provide specific information about an object to help form the definition of the nature of roles.  Properties are attributes that are essential to the nature of an object, like [aria-readonly](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) and [aria-haspopup](https://developer.mozilla.org/docs/Web/Accessibility/ARIA).  Changing a property affects the meaning of the object.  In the example below, the property `aria-haspopup="true"` is set on a `<li>` menu item to signify it has a popup.
 
 ```html
 <li role="menuitem" aria-haspopup="true">Open</li>
 ```
 
-States do not change the nature of the object, but represent information associated with the object or user interaction with the object, like [aria-hidden](https://developer.mozilla.org/docs/Web/Accessibility/ARIA 'aria-hidden - ARIA | MDN') or [aria-checked](https://developer.mozilla.org/docs/Web/Accessibility/ARIA 'aria-checked - ARIA | MDN').  For example, the state `aria-checked="false"` in the example below represents that the checkbox is not checked.
+States do not change the nature of the object, but represent information associated with the object or user interaction with the object, like [aria-hidden](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) or [aria-checked](https://developer.mozilla.org/docs/Web/Accessibility/ARIA).  For example, the state `aria-checked="false"` in the example below represents that the checkbox is not checked.
 
 ```html
 <div role="checkbox" aria-checked="false">Accept</div>
 ```
 
-To see a full list of roles, properties, and states, go to [The Roles Model](https://www.w3.org/TR/wai-aria-1.1#roles 'The Roles Model - Accessible Rich Internet Applications (WAI-ARIA) 1.1 | W3C') at W3C.
+To see a full list of roles, properties, and states, go to [The Roles Model](https://www.w3.org/TR/wai-aria-1.1#roles) at W3C.
 
 
 <!-- ====================================================================== -->
@@ -70,7 +70,7 @@ To see a full list of roles, properties, and states, go to [The Roles Model](htt
 
 Verifying that the website you are building works with real assistive technologies is the best way to ensure that you provide a good experience for users with disabilities.  Since many assistive technologies make use of the keyboard, testing the keyboard accessibility of your website is a good place to start.
 
-[Keyboard compatibility testing][W3cPerspectiveVideosKeyboard] validates that users have access to all interactive controls without requiring a mouse.  Microsoft [Accessibility Insights for Web][AccessibilityinsightsWebOverview] is a browser extension for Microsoft Edge and Chrome that guides you and reveals several common issues.
+[Keyboard compatibility testing](https://www.w3.org/WAI/perspective-videos/keyboard) validates that users have access to all interactive controls without requiring a mouse.  Microsoft [Accessibility Insights for Web](https://accessibilityinsights.io/docs/web/overview) is a browser extension for Microsoft Edge and Chrome that guides you and reveals several common issues.
 
 Once you are confident that your website works well with a keyboard, try it with other assistive technologies, such as screen readers.  It uncover issues in the following.
 
@@ -79,23 +79,23 @@ Once you are confident that your website works well with a keyboard, try it with
 
 Different browsers might map elements to the platform accessibility APIs differently than Microsoft Edge maps them.  While building your interface, it's important to consider each difference.
 
-WebAIM conducts surveys with [screen reader][WebaimProjectsScreenreadersurvey8] and [low vision][WebaimProjectsLowvisionsurvey2] users that help you decide which assistive technologies and browsers to test.
+WebAIM conducts surveys with [screen reader](https://webaim.org/projects/screenreadersurvey8) and [low vision](https://webaim.org/projects/lowvisionsurvey2) users that help you decide which assistive technologies and browsers to test.
 
 ### Learning how to test
 
 Assistive technologies are sophisticated tools.  Do not assume that you are able to immediately start testing with an assistive technology without first learning about how it works.  Learning to test with a screen reader has an especially steep learning curve.  A novice user of screen readers might think that a screen reader has a bug, while the issue might actually be an error in using the screen reader.
 
-[Testing with Screen Readers][WebaimArticlesScreenreaderTesting] at WebAIM provides more information about learning to test with assistive technologies.
+[Testing with Screen Readers](https://webaim.org/articles/screenreader_testing) at WebAIM provides more information about learning to test with assistive technologies.
 
 ### Testing locally
 
-Most devices include assistive technology that is built-in to the OS.  Microsoft Windows includes the [Windows Narrator][MicrosoftSupport22798] screen reader and [Windows Magnifier][MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198].  3rd party assistive technologies like [NVDA][NvaccessAboutNvda], [FreedomscientificSoftwareJaws], and [ZoomText][FreedomscientificSoftwareZoomtext] are available to download.  Apple macOS includes the [VoiceOver][AppleAccessibilityMacVision] screen reader.  And iOS, Android, and Linux all support a variety of assistive technologies.
+Most devices include assistive technology that is built-in to the OS.  Microsoft Windows includes the [Windows Narrator](https://support.microsoft.com/help/22798) screen reader and [Windows Magnifier](https://support.microsoft.com/windows/414948ba-8b1c-d3bd-8615-0e5e32204198).  3rd party assistive technologies like [NVDA](https://www.nvaccess.org/about-nvda), [FreedomscientificSoftwareJaws](https://www.freedomscientific.com/products/software/jaws), and [ZoomText](https://www.freedomscientific.com/products/software/zoomtext) are available to download.  Apple macOS includes the [VoiceOver](https://www.apple.com/accessibility/mac/vision) screen reader.  And iOS, Android, and Linux all support a variety of assistive technologies.
 
 ### Testing in virtual machines and emulators
 
-Under macOS, if you want to test with an assistive technology only available for Windows, like Windows Narrator or NVDA, create a Windows virtual machine.  Virtual machines with Microsoft Edge (EdgeHTML) and IE are available for VirtualBox and VMWare on the [Virtual Machines download page][MicrosoftDeveloperEdgeVms].
+Under macOS, if you want to test with an assistive technology only available for Windows, like Windows Narrator or NVDA, create a Windows virtual machine.  Virtual machines with Microsoft Edge (EdgeHTML) and IE are available for VirtualBox and VMWare on the [Virtual Machines download page](https://developer.microsoft.com/microsoft-edge/tools/vms).
 
-[Android Studio][AndroidDeveloperSdkInstallingStudioHtml] includes an emulator that for you to test assistive technologies in the [Android Accessibility Suite][GooglePlayStoreAndroidAccessibilitySuite].  Follow the instructions to [set up a virtual device][AndroidDeveloperDevicesManagingAvdsHtml] and [start the emulator][AndroidDeveloperDevicesEmulatorHtml], then install [Android Accessibility Suite][GooglePlayStoreAndroidAccessibilitySuite] from the GooglePlay store.
+[Android Studio](https://developer.android.com/sdk/installing/studio.html) includes an emulator that for you to test assistive technologies in the [Android Accessibility Suite](https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback).  Follow the instructions to [set up a virtual device](https://developer.android.com/tools/devices/managing-avds.html) and [start the emulator](https://developer.android.com/tools/devices/emulator.html), then install [Android Accessibility Suite][GooglePlayStoreAndroidAccessibilitySuite] from the GooglePlay store.
 
 > [!NOTE]
 > The iOS Simulator does not currently include VoiceOver.
@@ -104,7 +104,7 @@ Under macOS, if you want to test with an assistive technology only available for
 
 If an assistive technology is not available on your OS or you not possible to install one on a virtual machine or emulator, cloud-based assistive technology testing tools are the next best thing.
 
-*   [Assistiv Labs (commercial)][AssistivlabsMain] enables you to manually test with assistive technologies through any modern web browser.  Select an assistive technology and browser and it connects you with a virtual machine, emulator, or real device that you can interact with.
+*   [Assistiv Labs (commercial)](https://assistivlabs.com) enables you to manually test with assistive technologies through any modern web browser.  Select an assistive technology and browser and it connects you with a virtual machine, emulator, or real device that you can interact with.
 
 
 <!-- ====================================================================== -->
@@ -193,11 +193,11 @@ This W3C mappings document explains how HTML5.1 element and attributes map to pl
 
 ### Quick Tips
 
-A list of quick web development tips for accessibility by [The A11Y Project](http://a11yproject.com 'The A11Y Project').  For more information, go to [Quick Tips](http://a11yproject.com#Quick-tips 'Quick Tips').
+A list of quick web development tips for accessibility by [The A11Y Project](http://a11yproject.com).  For more information, go to [Quick Tips](http://a11yproject.com#Quick-tips).
 
 ### Site Scan
 
-The Site Scan tool on Microsoft Edge Dev Center checks for out-of-date libraries, layout issues, and accessibility issues.  For more information, go to [Site Scan](https://developer.microsoft.com/microsoft-edge/tools 'Site Scan | Microsoft').
+The Site Scan tool on Microsoft Edge Dev Center checks for out-of-date libraries, layout issues, and accessibility issues.  For more information, go to [Site Scan](https://developer.microsoft.com/microsoft-edge/tools).
 
 ### Techniques for WCAG 2.0
 
@@ -205,51 +205,20 @@ Techniques from the W3C that provide guidance for web developers on meeting [Web
 
 ### Tips on Developing for Web Accessibility
 
-Tips from the W3C on developing web content that is more accessible to people with disabilities.  For more information, go to [Tips on Developing for Web Accessibility](https://w3.org/WAI/gettingstarted/tips/developing.html 'Tips on Developing for Web Accessibility | W3C WAI').
+Tips from the W3C on developing web content that is more accessible to people with disabilities.  For more information, go to [Tips on Developing for Web Accessibility](https://w3.org/WAI/gettingstarted/tips/developing.html).
 
 ### WAI-ARIA Authoring Practices 1.1
 
-A document by the W3C that provides readers with an understanding of how to use WAI-ARIA 1.1 and recommends approaches to make widgets, navigation, and behaviors accessible using WAI-ARIA roles, states, and properties.  For more information, go to [WAI-ARIA Authoring Practices 1.1](http://w3c.github.io/aria-practices 'WAI-ARIA Authoring Practices 1.1 | W3C').
+A document by the W3C that provides readers with an understanding of how to use WAI-ARIA 1.1 and recommends approaches to make widgets, navigation, and behaviors accessible using WAI-ARIA roles, states, and properties.  For more information, go to [WAI-ARIA Authoring Practices 1.1](http://w3c.github.io/aria-practices).
 
 ### WAI Guidelines and Techniques
 
-A series of web accessibility guidelines and standards developed by the WAI.  For more information, go to [WAI Guidelines and Techniques](https://w3.org/WAI/guid-tech.html 'WAI Guidelines and Techniques | W3C WAI').
+A series of web accessibility guidelines and standards developed by the WAI.  For more information, go to [WAI Guidelines and Techniques](https://w3.org/WAI/guid-tech.html).
 
 ### Web Accessibility Evaluation Tools List
 
-A list of web accessibility evaluation tools to help determine if websites meet accessibility guidelines.  For more information, go to [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/index.html 'Web Accessibility Evaluation Tools List | W3C WAI').
+A list of web accessibility evaluation tools to help determine if websites meet accessibility guidelines.  For more information, go to [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/index.html).
 
 ### Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone
 
-A series of short situational videos by the W3C about the impact of accessibility and the benefits for everyone.  For more information, go to [Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone](https://w3.org/WAI/perspectives 'Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone | W3C WAI').
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Virtual Machines | Microsoft Edge Developer"
-
-[MicrosoftSupport22798]: https://support.microsoft.com/help/22798 "Complete guide to Narrator | Microsoft Support"
-[MicrosoftSupportWindows414948ba8b1cD3bd86150e5e32204198]: https://support.microsoft.com/windows/414948ba-8b1c-d3bd-8615-0e5e32204198 "Use Magnifier to make things on the screen easier to see | Microsoft Support"
-
-[AccessibilityinsightsWebOverview]: https://accessibilityinsights.io/docs/web/overview "Accessibility Insights for Web | Accessibility Insights"
-
-[AndroidDeveloperDevicesManagingAvdsHtml]: https://developer.android.com/tools/devices/managing-avds.html "Create and manage virtual devices | Android Developers"
-[AndroidDeveloperDevicesEmulatorHtml]: https://developer.android.com/tools/devices/emulator.html "Run apps on the Android Emulator | Android Developers"
-[AndroidDeveloperSdkInstallingStudioHtml]: https://developer.android.com/sdk/installing/studio.html "Download Android Studio | Android Developers"
-
-[AppleAccessibilityMacVision]: https://www.apple.com/accessibility/mac/vision "Vision Accessibility - Mac | Apple"
-
-[AssistivlabsMain]: https://assistivlabs.com "Assistiv Labs"
-
-[FreedomscientificSoftwareJaws]: https://www.freedomscientific.com/products/software/jaws "JAWS® | Freedom Scientific"
-[FreedomscientificSoftwareZoomtext]: https://www.freedomscientific.com/products/software/zoomtext "ZoomText | Freedom Scientific"
-
-[GooglePlayStoreAndroidAccessibilitySuite]: https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback "Android Accessibility Suite | GooglePlay Store"
-
-[NvaccessAboutNvda]: https://www.nvaccess.org/about-nvda "About NVDA | NV Access"
-
-[W3cPerspectiveVideosKeyboard]: https://www.w3.org/WAI/perspective-videos/keyboard "Keyboard Compatibility | W3C"
-
-[WebaimProjectsLowvisionsurvey2]: https://webaim.org/projects/lowvisionsurvey2 "Survey of Users with Low Vision \#2 Results | WebAIM"
-[WebaimProjectsScreenreadersurvey8]: https://webaim.org/projects/screenreadersurvey8 "Screen Reader User Survey \#8 Results | WebAIM"
-[WebaimArticlesScreenreaderTesting]: https://webaim.org/articles/screenreader_testing "Testing with Screen Readers | WebAIM"
+A series of short situational videos by the W3C about the impact of accessibility and the benefits for everyone.  For more information, go to [Web Accessibility Perspectives: Explore the Impact and Benefits for Everyone](https://w3.org/WAI/perspectives).
