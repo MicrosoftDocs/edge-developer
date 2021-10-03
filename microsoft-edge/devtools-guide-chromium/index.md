@@ -142,7 +142,7 @@ Finally, these more specialized tools (tabs) are on the toolbar by default:
 
 ### Tool, tab, or panel
 
-Often the words "tool", "tab", or "panel" can be used interchangeably.  In the command menu, the tools are called _panels_; for example, the **Elements** tool is called the **Elements** panel.  To switch to the the **Elements** tool, you select the **Elements** tab.  There's a **More Tools** button and list, and there's a **More tabs** button on the toolbar, both of which are used to select tools, which are also called _panels_.
+Often the words "tool", "tab", or "panel" can be used interchangeably.  In the command menu, the tools are called _panels_; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you select the **Elements** tab.  There's a **More Tools** button and list, and there's a **More tabs** button on the toolbar, both of which are used to select tools, which are also called _panels_.
 
 
 ### Sections of the toolbar
