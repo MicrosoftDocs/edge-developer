@@ -29,17 +29,13 @@ The **Console** tool is helpful when you complete multiple tasks in the DevTools
 
 ## assert
 
-This method writes an [error](#error) to the **Console** when `expression` evaluates to `false`.
-
-### JavaScript syntax
+Writes an [error](#error) to the **Console** when `expression` evaluates to `false`.
 
 ```javascript
 console.assert(expression, object)
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Error`
-
-### JavaScript example
 
 :::row:::
    :::column span="1":::
@@ -69,17 +65,13 @@ console.assert(expression, object)
 
 ## clear
 
-This method clears the **Console**.
+Clears the **Console**.
 
 If [Preserve Log][DevtoolsConsoleReferenceFilter] is turned on, the [clear](#clear) method is turned off.
-
-### JavaScript syntax
 
 ```javascript
 console.clear()
 ```
-
-### JavaScript example
 
 :::row:::
    :::column span="1":::
@@ -108,17 +100,13 @@ console.clear()
 
 ## count
 
-This method writes the number of times that the [count](#count) method has been invoked at the same line and with the same `label`.  Use the [countReset](#countreset) method to reset the count.
-
-### JavaScript syntax
+Writes the number of times that the [count](#count) method has been invoked at the same line and with the same `label`.  Use the [countReset](#countreset) method to reset the count.
 
 ```javascript
 console.count([label])
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Info`
-
-### JavaScript example
 
 :::row:::
    :::column span="1":::
@@ -148,15 +136,11 @@ console.count([label])
 
 ## countReset
 
-This method resets a count.
-
-### JavaScript syntax
+Resets a count.
 
 ```javascript
 console.countReset([label])
 ```
-
-### JavaScript example
 
 :::row:::
    :::column span="1":::
@@ -182,17 +166,13 @@ console.countReset([label])
 
 ## debug
 
-This method is identical to the [log](#log) method, except different log level.
-
-### JavaScript syntax
+Identical to the [log](#log) method, except different log level.
 
 ```javascript
 console.debug(object [, object, ...])
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Verbose`
-
-### JavaScript example
 
 :::row:::
    :::column span="1":::
@@ -219,17 +199,13 @@ console.debug(object [, object, ...])
 
 ## dir
 
-This method prints a JSON representation of the specified object.
-
-### JavaScript syntax
+Prints a JSON representation of the specified object.
 
 ```javascript
 console.dir(object)
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Info`
-
-### JavaScript example
 
 :::row:::
    :::column span="1":::
@@ -256,17 +232,13 @@ console.dir(object)
 
 ## dirxml
 
-This method prints an XML representation of the descendants of `node`.
-
-### JavaScript syntax
+Prints an XML representation of the descendants of `node`.
 
 ```javascript
 console.dirxml(node)
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Info`
-
-### JavaScript example
 
 :::row:::
    :::column span="1":::
@@ -293,17 +265,13 @@ console.dirxml(node)
 
 ## error
 
-This method prints the `object` to the **Console**, formats it as an error, and includes a stack trace.
-
-### JavaScript syntax
+Prints the `object` to the **Console**, formats it as an error, and includes a stack trace.
 
 ```javascript
 console.error(object [, object, ...])
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Error`
-
-### JavaScript example
 
 :::row:::
    :::column span="1":::
@@ -330,15 +298,11 @@ console.error(object [, object, ...])
 
 ## group
 
-This method visually groups messages together until the [groupEnd](#groupend) method is used.  Use the [groupCollapsed](#groupcollapsed) method to collapse the group when it initially logs to the **Console**.
-
-### JavaScript syntax
+Visually groups messages together until the [groupEnd](#groupend) method is used.  Use the [groupCollapsed](#groupcollapsed) method to collapse the group when it initially logs to the **Console**.
 
 ```javascript
 console.group(label)
 ```
-
-### JavaScript example
 
 :::row:::
    :::column span="1":::
@@ -371,9 +335,7 @@ console.group(label)
 
 ## groupCollapsed
 
-This method is identical to the [log](#log) method, except the group is initially collapsed when it logs to the **Console**.
-
-### JavaScript syntax
+Identical to the [log](#log) method, except the group is initially collapsed when it logs to the **Console**.
 
 ```javascript
 console.groupCollapsed(label)
@@ -383,9 +345,7 @@ console.groupCollapsed(label)
 
 ## groupEnd
 
-This method stops visually grouping messages.  Navigate to the [group](#group) method.
-
-### JavaScript syntax
+Stops visually grouping messages.  Navigate to the [group](#group) method.
 
 ```javascript
 console.groupEnd(label)
@@ -395,17 +355,13 @@ console.groupEnd(label)
 
 ## info
 
-This method is identical to the [log](#log) method.
-
-### JavaScript syntax
+Identical to the [log](#log) method.
 
 ```javascript
 console.info(object [, object, ...])
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Info`
-
-### JavaScript example
 
 :::row:::
    :::column span="1":::
@@ -432,17 +388,13 @@ console.info(object [, object, ...])
 
 ## log
 
-This method prints a message to the **Console**.
-
-### JavaScript syntax
+Prints a message to the **Console**.
 
 ```javascript
 console.log(object [, object, ...])
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Info`
-
-### JavaScript example
 
 :::row:::
    :::column span="1":::
@@ -469,17 +421,13 @@ console.log(object [, object, ...])
 
 ## table
 
-This method logs an array of objects as a table.
-
-### JavaScript syntax
+Logs an array of objects as a table.
 
 ```javascript
 console.table(array)
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Info`
-
-### JavaScript example
 
 :::row:::
    :::column span="1":::
@@ -520,15 +468,11 @@ console.table(array)
 
 ## time
 
-This method starts a new timer.  Use the [timeEnd](#timeend) method to stop the timer and print the elapsed time to the **Console**.
-
-### JavaScript syntax
+Starts a new timer.  Use the [timeEnd](#timeend) method to stop the timer and print the elapsed time to the **Console**.
 
 ```javascript
 console.time([label])
 ```
-
-### JavaScript example
 
 :::row:::
    :::column span="1":::
@@ -559,9 +503,7 @@ console.time([label])
 
 ## timeEnd
 
-This method stops a timer.  For more information, navigate to the [time](#time) method.
-
-### JavaScript syntax
+Stops a timer.  For more information, navigate to the [time](#time) method.
 
 ```javascript
 console.timeEnd([label])
@@ -573,17 +515,13 @@ console.timeEnd([label])
 
 ## trace
 
-This method prints a stack trace to the **Console**.
-
-### JavaScript syntax
+Prints a stack trace to the **Console**.
 
 ```javascript
 console.trace()
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Info`
-
-### JavaScript example
 
 :::row:::
    :::column span="1":::
@@ -614,17 +552,13 @@ console.trace()
 
 ## warn
 
-This method prints a warning to the **Console**.
-
-### JavaScript syntax
+Prints a warning to the **Console**.
 
 ```javascript
 console.warn(object [, object, ...])
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Warning`
-
-### JavaScript example
 
 :::row:::
    :::column span="1":::

@@ -41,7 +41,7 @@ Within each tool, there are one or more sets of tabs.  For example, the **Elemen
 <!-- ====================================================================== -->
 ## Keyboard shortcuts
 
-The [DevTools Keyboard Shortcuts reference][DevtoolsShortcuts] is a helpful cheat sheet.  Be sure to bookmark it and refer back to it as you explore the different tools.
+For the default keyboard shortcuts for DevTools, see [Keyboard shortcuts][DevtoolsShortcuts].  Be sure to bookmark it and refer back to it as you explore the different tools.
 
 
 <!-- ====================================================================== -->
