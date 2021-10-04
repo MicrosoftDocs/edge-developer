@@ -77,7 +77,7 @@ Previously, you couldn't navigate to the **More Tools** (`+`) button in DevTools
 
 Starting with Microsoft Edge version 93, the **More tabs** (`>>`) button and the **More Tools** button can be selected by using the arrow keys, when focus is on the toolbar.
 
-To learn more about how to navigate the DevTools with the keyboard, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevToolsKeyboardShortcuts].
+For the default keyboard shortcuts for DevTools, see [keyboard shortcuts][DevToolsKeyboardShortcuts].
 
 :::image type="complex" source="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png" alt-text="Using the arrow keys to put focus on the **More tabs** or **More Tools** button" lightbox="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png":::
    Using the arrow keys to put focus on the **More tabs** or **More Tools** button
@@ -100,7 +100,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 <!-- links -->
 [EdgeDevToolsExtensionForVSCode]: ../../../../visual-studio-code/microsoft-edge-devtools-extension.md "Microsoft Edge DevTools extension for Visual Studio Code | Microsoft Docs"
 [LookupErrorsWebFromConsole]: ../../../console/index.md#look-up-error-messages-on-the-web-from-the-console "Look up error messages on the web from the Console - Use the Console | Microsoft Docs"
-[DevToolsKeyboardShortcuts]: ../../../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
+[DevToolsKeyboardShortcuts]: ../../../shortcuts/index.md "Keyboard shortcuts | Microsoft Docs"
 [ApplyColorThemesToDevTools]: ../../../customize/theme.md "Apply color themes to DevTools | Microsoft Docs"
 [PauseCodeWithBreakpoints]: ../../../javascript/breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
 

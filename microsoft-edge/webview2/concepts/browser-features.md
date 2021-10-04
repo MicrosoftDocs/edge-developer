@@ -182,7 +182,7 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true "CoreWebView2Controller.AcceleratorKeyPressed Event | Microsoft Docs"
 
-[DevtoolsShortcutsIndex]: ../../devtools-guide-chromium/shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
+[DevtoolsShortcutsIndex]: ../../devtools-guide-chromium/shortcuts/index.md "Keyboard shortcuts | Microsoft Docs"
 
 [GithubMicrosoftedgeWebview2feedbackIssues308]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/308 "Add support for HTML5 Notification API (#308) | GitHub"
 

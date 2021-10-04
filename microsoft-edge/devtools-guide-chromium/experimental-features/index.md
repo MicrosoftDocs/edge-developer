@@ -296,7 +296,7 @@ To provide feedback on Microsoft Edge DevTools experiments, or anything else rel
 [DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Edit CSS font styles and settings in the Styles pane in DevTools | Microsoft Docs"
 [DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
 [DevtoolsOpenIndex]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
+[DevtoolsShortcutsIndex]: ../shortcuts/index.md "Keyboard shortcuts | Microsoft Docs"
 <!-- external links: -->
 [MicrosoftEdgeMain]: https://www.microsoft.com/edge "Microsoft Edge"
 [TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"
