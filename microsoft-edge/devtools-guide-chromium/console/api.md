@@ -27,6 +27,7 @@ The **Console** tool is helpful when you complete multiple tasks in the DevTools
 
 ---
 
+<!-- ====================================================================== -->
 ## assert
 
 Writes an [error](#error) to the **Console** when `expression` evaluates to `false`.
@@ -36,6 +37,8 @@ console.assert(expression, object)
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Error`
+
+### Example
 
 :::row:::
    :::column span="1":::
@@ -63,6 +66,7 @@ console.assert(expression, object)
 
 ---
 
+<!-- ====================================================================== -->
 ## clear
 
 Clears the **Console**.
@@ -72,6 +76,8 @@ If [Preserve Log][DevtoolsConsoleReferenceFilter] is turned on, the [clear](#cle
 ```javascript
 console.clear()
 ```
+
+### Example
 
 :::row:::
    :::column span="1":::
@@ -98,6 +104,7 @@ console.clear()
 
 ---
 
+<!-- ====================================================================== -->
 ## count
 
 Writes the number of times that the [count](#count) method has been invoked at the same line and with the same `label`.  Use the [countReset](#countreset) method to reset the count.
@@ -107,6 +114,8 @@ console.count([label])
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Info`
+
+### Example
 
 :::row:::
    :::column span="1":::
@@ -134,6 +143,7 @@ console.count([label])
 
 ---
 
+<!-- ====================================================================== -->
 ## countReset
 
 Resets a count.
@@ -141,6 +151,8 @@ Resets a count.
 ```javascript
 console.countReset([label])
 ```
+
+### Example
 
 :::row:::
    :::column span="1":::
@@ -164,6 +176,7 @@ console.countReset([label])
 
 ---
 
+<!-- ====================================================================== -->
 ## debug
 
 Identical to the [log](#log) method, except different log level.
@@ -173,6 +186,8 @@ console.debug(object [, object, ...])
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Verbose`
+
+### Example
 
 :::row:::
    :::column span="1":::
@@ -197,6 +212,7 @@ console.debug(object [, object, ...])
 
 ---
 
+<!-- ====================================================================== -->
 ## dir
 
 Prints a JSON representation of the specified object.
@@ -206,6 +222,8 @@ console.dir(object)
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Info`
+
+### Example
 
 :::row:::
    :::column span="1":::
@@ -230,6 +248,7 @@ console.dir(object)
 
 ---
 
+<!-- ====================================================================== -->
 ## dirxml
 
 Prints an XML representation of the descendants of `node`.
@@ -239,6 +258,8 @@ console.dirxml(node)
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Info`
+
+### Example
 
 :::row:::
    :::column span="1":::
@@ -263,6 +284,7 @@ console.dirxml(node)
 
 ---
 
+<!-- ====================================================================== -->
 ## error
 
 Prints the `object` to the **Console**, formats it as an error, and includes a stack trace.
@@ -272,6 +294,8 @@ console.error(object [, object, ...])
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Error`
+
+### Example
 
 :::row:::
    :::column span="1":::
@@ -296,6 +320,7 @@ console.error(object [, object, ...])
 
 ---
 
+<!-- ====================================================================== -->
 ## group
 
 Visually groups messages together until the [groupEnd](#groupend) method is used.  Use the [groupCollapsed](#groupcollapsed) method to collapse the group when it initially logs to the **Console**.
@@ -303,6 +328,8 @@ Visually groups messages together until the [groupEnd](#groupend) method is used
 ```javascript
 console.group(label)
 ```
+
+### Example
 
 :::row:::
    :::column span="1":::
@@ -333,6 +360,7 @@ console.group(label)
 
 ---
 
+<!-- ====================================================================== -->
 ## groupCollapsed
 
 Identical to the [log](#log) method, except the group is initially collapsed when it logs to the **Console**.
@@ -343,6 +371,7 @@ console.groupCollapsed(label)
 
 ---
 
+<!-- ====================================================================== -->
 ## groupEnd
 
 Stops visually grouping messages.  Navigate to the [group](#group) method.
@@ -353,6 +382,7 @@ console.groupEnd(label)
 
 ---
 
+<!-- ====================================================================== -->
 ## info
 
 Identical to the [log](#log) method.
@@ -362,6 +392,8 @@ console.info(object [, object, ...])
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Info`
+
+### Example
 
 :::row:::
    :::column span="1":::
@@ -386,6 +418,7 @@ console.info(object [, object, ...])
 
 ---
 
+<!-- ====================================================================== -->
 ## log
 
 Prints a message to the **Console**.
@@ -395,6 +428,8 @@ console.log(object [, object, ...])
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Info`
+
+### Example
 
 :::row:::
    :::column span="1":::
@@ -419,6 +454,7 @@ console.log(object [, object, ...])
 
 ---
 
+<!-- ====================================================================== -->
 ## table
 
 Logs an array of objects as a table.
@@ -428,6 +464,8 @@ console.table(array)
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Info`
+
+### Example
 
 :::row:::
    :::column span="1":::
@@ -466,6 +504,7 @@ console.table(array)
 
 ---
 
+<!-- ====================================================================== -->
 ## time
 
 Starts a new timer.  Use the [timeEnd](#timeend) method to stop the timer and print the elapsed time to the **Console**.
@@ -473,6 +512,8 @@ Starts a new timer.  Use the [timeEnd](#timeend) method to stop the timer and pr
 ```javascript
 console.time([label])
 ```
+
+### Example
 
 :::row:::
    :::column span="1":::
@@ -501,6 +542,7 @@ console.time([label])
 
 ---
 
+<!-- ====================================================================== -->
 ## timeEnd
 
 Stops a timer.  For more information, navigate to the [time](#time) method.
@@ -513,6 +555,7 @@ console.timeEnd([label])
 
 ---
 
+<!-- ====================================================================== -->
 ## trace
 
 Prints a stack trace to the **Console**.
@@ -522,6 +565,8 @@ console.trace()
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Info`
+
+### Example
 
 :::row:::
    :::column span="1":::
@@ -550,6 +595,7 @@ console.trace()
 
 ---
 
+<!-- ====================================================================== -->
 ## warn
 
 Prints a warning to the **Console**.
@@ -559,6 +605,8 @@ console.warn(object [, object, ...])
 ```
 
 [Log level][DevtoolsConsoleReferencePersist]: `Warning`
+
+### Example
 
 :::row:::
    :::column span="1":::
@@ -583,12 +631,15 @@ console.warn(object [, object, ...])
 
 ---
 
+
+<!-- ====================================================================== -->
 ## Getting in touch with the Microsoft Edge DevTools team
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
-<!-- links -->
 
+<!-- ====================================================================== -->
+<!-- links -->
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Logs in the Console tool | Microsoft Docs"
 [DevtoolConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"
 [DevtoolsConsoleReferenceClear]: ./reference.md#clear-the-console "Clear the Console - Console reference | Microsoft Docs"
