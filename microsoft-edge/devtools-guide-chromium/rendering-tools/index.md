@@ -183,7 +183,7 @@ The following table describes some common paint and composite problems and poten
 <!-- links -->
 
 [DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Speed up JavaScript runtime | Microsoft Docs"
-[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "Turn on advanced paint instrumentation - Performance analysis reference | Microsoft Docs"
+[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "Turn on advanced paint instrumentation - Performance analysis features | Microsoft Docs"
 
 <!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: ./rendering-tools/forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts | Microsoft Docs"  -->
 

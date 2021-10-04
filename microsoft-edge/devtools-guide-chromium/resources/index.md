@@ -1,6 +1,6 @@
 ---
 description: Organize resources by frame, domain, type, or other criteria.
-title: View page resources with Microsoft Edge DevTools
+title: View page resources
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
@@ -21,13 +21,21 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# View page resources with Microsoft Edge DevTools
+# View page resources
 
-This guide teaches you how to use Microsoft Edge DevTools to view the resources of a web page.  Resources are the files that a page needs in order to display correctly.  Examples of resources include CSS, JavaScript, and HTML files, as well as images.
+Resources are the files that a page needs in order to display correctly.  Examples of resources include:
+*  CSS files.
+*  JavaScript files.
+*  HTML files.
+*  Image files.
+
+You can view the resources that make up a web page from within several tools, or panels.
 
 This guide assumes that you are familiar with the basics of [web development][MDNLearnWebDevelopment] and [Microsoft Edge DevTools][MicrosoftEdgeDevTools].
 
-## Open resources
+
+<!-- ====================================================================== -->
+## Open resources from the Command Menu
 
 When you know the name of the resource that you want to inspect, the **Command Menu** provides a fast way of opening the resource.
 
@@ -43,7 +51,9 @@ When you know the name of the resource that you want to inspect, the **Command M
        Type a filename in the **Open File** dialog
     :::image-end:::
 
-### Open resources in the Network tool
+
+<!-- ====================================================================== -->
+## Open resources in the Network tool
 
 Navigate to [Inspect the details of a resource][DevtoolsNetworkInspectDetailsResource].
 
@@ -59,9 +69,9 @@ The [Browse resources](#browse-resources) section below shows you how to view re
    **Reveal in Network panel**
 :::image-end:::
 
-## Browse resources
 
-### Browse resources in the Network panel
+<!-- ====================================================================== -->
+## Browse resources in the Network panel
 
 Navigate to [Log network activity][DevtoolsNetworkLogActivity].
 
@@ -69,7 +79,9 @@ Navigate to [Log network activity][DevtoolsNetworkLogActivity].
    Page resources in the **Network** Log
 :::image-end:::
 
-### Browse by directory
+
+<!-- ====================================================================== -->
+## Browse resources by directory in the Sources tool
 
 To view the resources of a webpage organized by directory:
 
@@ -97,7 +109,9 @@ To view the resources of a webpage organized by directory:
        View a file in the **Editor**
     :::image-end:::
 
-### Browse by filename
+
+<!-- ====================================================================== -->
+## Browse resources by filename in the Sources tool
 
 By default, the **Page** tab groups resources by directory.  To display the resources for each domain as a flat list, instead of grouping them by directory:
 
@@ -115,7 +129,9 @@ By default, the **Page** tab groups resources by directory.  To display the reso
        The **Page** tab after clearing the **Group by folder** check mark
     :::image-end:::
 
-### Browse by file type
+
+<!-- ====================================================================== -->
+## Browse resources by file type in the **Application** tool
 
 To group resources together based on their file type:
 
@@ -138,7 +154,9 @@ To group resources together based on their file type:
        View a resource in the **Application** panel
     :::image-end:::
 
-#### Browse files by type in the Network panel
+
+<!-- ====================================================================== -->
+## Browse files by type in the Network panel
 
 Navigate to [Filter by resource type][DevtoolsNetworkFilterByResourceType].
 
@@ -146,12 +164,15 @@ Navigate to [Filter by resource type][DevtoolsNetworkFilterByResourceType].
    Filter for CSS in the **Network** Log
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Getting in touch with the Microsoft Edge DevTools team
 
 [!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
-<!-- links -->
 
+<!-- ====================================================================== -->
+<!-- links -->
 [MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"
 [DevtoolsNetworkFilterByResourceType]: ../network/index.md#filter-by-resource-type "Filter by resource type - Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsNetworkInspectDetailsResource]: ../network/index.md#inspect-the-details-of-the-resource "Inspect the details of the resource - Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"

@@ -285,7 +285,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Customize keyboard shortcuts in DevTools | Microsoft Docs"
 [DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action "Edit keyboard shortcuts for any action in the DevTools | Microsoft Docs"
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsEvaluatePerformanceReference]: ../../../evaluate-performance/reference.md "Performance analysis reference | Microsoft Docs"
+[DevtoolsEvaluatePerformanceReference]: ../../../evaluate-performance/reference.md "Performance analysis features | Microsoft Docs"
 [DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: ../../../experimental-features/index.md#emulation-support-dual-screen-mode "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"
 [DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features.md#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"
 <!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | Microsoft Docs"  -->
@@ -299,7 +299,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsCssGrid]:  ../../../css/grid.md "Inspect CSS Grid | Microsoft Docs"
 [DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab - Performance Analysis Reference | Microsoft Docs"
+[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab - Performance analysis features | Microsoft Docs"
 [DevtoolsMediaIndex]: ../../../media/index.md "View and debug media players information | Microsoft Docs"
 [DevtoolsNetworkReferenceFilterRequestsProperties]: ../../../network/reference.md#filter-requests-by-properties  "Filter requests by properties - Network Analysis reference | Microsoft Docs"
 [DevtoolsWebauthnIndex]: ../../../webauthn/index.md "Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools | Microsoft Docs"

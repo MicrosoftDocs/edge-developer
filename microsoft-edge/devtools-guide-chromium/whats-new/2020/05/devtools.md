@@ -280,7 +280,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 [DevtoolsConsoleApiDir]: ../../../console/api.md#dir "dir - Console API Reference | Microsoft Docs"
 [DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]: ../../../console/utilities.md#recently-chosen-element-or-javascript-object "Recently chosen element or JavaScript object - Console Utilities API Reference | Microsoft Docs"
-[DevtoolsCssReferenceColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "Change colors with the Color Picker - CSS Reference | Microsoft Docs"
+[DevtoolsCssReferenceColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "Change colors with the Color Picker - CSS features | Microsoft Docs"
 [DevtoolsDrawer]: ../../../customize/index.md#drawer "Drawer - Customize Overview | Microsoft Docs"
 [DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
 [DevtoolsIssuesIndex]: ../../../issues/index.md "Find And Fix Problems With The Microsoft Edge DevTools Issues Tab | Microsoft Docs"

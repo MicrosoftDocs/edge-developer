@@ -1,6 +1,6 @@
 ---
-description: Discover new workflows for viewing and changing CSS in Microsoft Edge DevTools.
-title: CSS reference
+description: Features for viewing and changing CSS rules in Microsoft Edge DevTools.
+title: CSS features
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# CSS reference
+# CSS features
 
 Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.
 

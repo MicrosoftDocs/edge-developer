@@ -490,7 +490,7 @@ Reduce JavaScript activity by removing the request to `mineBitcoin`:
 Looks like that last change caused a massive jump in performance!
 
 > [!NOTE]
-> This section provided a rather brief introduction to the Performance panel.  To learn more about how to analyze page performance, navigate to [Performance Analysis Reference][DevtoolsEvaluatePerformanceReference].
+> This section provided a rather brief introduction to the Performance panel.  To learn more about how to analyze page performance, navigate to [Performance analysis features][DevtoolsEvaluatePerformanceReference].
 
 <!--todo: add section when available -->
 
@@ -518,7 +518,7 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 
 <!-- links -->
 
-[DevtoolsEvaluatePerformanceReference]: ../evaluate-performance/reference.md "Performance analysis reference | Microsoft Docs"
+[DevtoolsEvaluatePerformanceReference]: ../evaluate-performance/reference.md "Performance analysis features | Microsoft Docs"
 
 [CourseraIntroductionWebDevelopmentClass]: https://www.coursera.org/learn/web-development#syllabus "Introduction to Web Development class | Coursera"
 
