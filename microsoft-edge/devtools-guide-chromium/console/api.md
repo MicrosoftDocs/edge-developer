@@ -23,7 +23,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Console API reference
 
-The **Console** tool is helpful when you complete multiple tasks in the DevTools.  APIs are available to include in your scripts. Convenience methods are only available for use in the **Console** tool, such as the `debug()` and `monitorEvents()` methods.  For more information on getting started with the **Console**, navigate to [Get started with logging messages to the Console][DevtoolsConsoleConsoleLog].  For more information on the convenience methods in the **Console**, navigate to [Console Utilities API Reference][DevtoolConsoleUtilities].
+The **Console** tool is helpful when you complete multiple tasks in the DevTools.  APIs are available to include in your scripts. Convenience methods are only available for use in the **Console** tool, such as the `debug()` and `monitorEvents()` methods.  For more information on getting started with the **Console**, see [Get started with logging messages to the Console][DevtoolsConsoleConsoleLog].  For more information on the convenience methods in the **Console**, see [Console Utilities API Reference][DevtoolConsoleUtilities].
 
 ---
 
@@ -40,29 +40,16 @@ console.assert(expression, object)
 
 ### Example
 
-:::row:::
-   :::column span="1":::
-      Input
-   :::column-end:::
-   :::column span="3":::
-      ```javascript
-      const x = 5;
-      const y = 3;
-      const reason = 'x is expected to be less than y';
-      console.assert(x < y, {x, y, reason});
-      ```
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Output
-   :::column-end:::
-   :::column span="3":::
-      :::image type="complex" source="../media/console-demo-assert-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-assert-button.msft.png":::
-         The result of the `console.assert()` example
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+```javascript
+const x = 5;
+const y = 3;
+const reason = 'x is expected to be less than y';
+console.assert(x < y, {x, y, reason});
+```
+
+#### Output
+
+:::image type="content" source="../media/console-demo-assert-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-assert-button.msft.png":::
 
 ---
 
@@ -76,27 +63,6 @@ If [Preserve Log][DevtoolsConsoleReferenceFilter] is turned on, the [clear](#cle
 ```javascript
 console.clear()
 ```
-
-### Example
-
-:::row:::
-   :::column span="1":::
-      Input
-   :::column-end:::
-   :::column span="3":::
-      ```javascript
-      console.clear();
-      ```
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Output
-   :::column-end:::
-   :::column span="3":::
-
-   :::column-end:::
-:::row-end:::
 
 ### See also
 
@@ -117,29 +83,16 @@ console.count([label])
 
 ### Example
 
-:::row:::
-   :::column span="1":::
-      Input
-   :::column-end:::
-   :::column span="3":::
-      ```javascript
-      console.count();
-      console.count('coffee');
-      console.count();
-      console.count();
-      ```
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Output
-   :::column-end:::
-   :::column span="3":::
-      :::image type="complex" source="../media/console-demo-count-button.msft.png" alt-text="The result of the console.count() example" lightbox="../media/console-demo-count-button.msft.png":::
-         The result of the `console.count()` example
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+```javascript
+console.count();
+console.count('coffee');
+console.count();
+console.count();
+```
+
+#### Output
+
+:::image type="content" source="../media/console-demo-count-button.msft.png" alt-text="The result of the console.count() example" lightbox="../media/console-demo-count-button.msft.png":::
 
 ---
 
@@ -154,25 +107,10 @@ console.countReset([label])
 
 ### Example
 
-:::row:::
-   :::column span="1":::
-      Input
-   :::column-end:::
-   :::column span="3":::
-      ```javascript
-      console.countReset();
-      console.countReset('coffee');
-      ```
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Output
-   :::column-end:::
-   :::column span="3":::
-
-   :::column-end:::
-:::row-end:::
+```javascript
+console.countReset();
+console.countReset('coffee');
+```
 
 ---
 
@@ -189,26 +127,13 @@ console.debug(object [, object, ...])
 
 ### Example
 
-:::row:::
-   :::column span="1":::
-      Input
-   :::column-end:::
-   :::column span="3":::
-      ```javascript
-      console.debug('debug');
-      ```
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Output
-   :::column-end:::
-   :::column span="3":::
-      :::image type="complex" source="../media/console-demo-debug-button.msft.png" alt-text="The result of the console.debug() example" lightbox="../media/console-demo-debug-button.msft.png":::
-         The result of the `console.debug()` example
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+```javascript
+console.debug('debug');
+```
+
+#### Output
+
+:::image type="content" source="../media/console-demo-debug-button.msft.png" alt-text="The result of the console.debug() example" lightbox="../media/console-demo-debug-button.msft.png":::
 
 ---
 
@@ -225,26 +150,13 @@ console.dir(object)
 
 ### Example
 
-:::row:::
-   :::column span="1":::
-      Input
-   :::column-end:::
-   :::column span="3":::
-      ```javascript
-      console.dir(document.head);
-      ```
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Output
-   :::column-end:::
-   :::column span="3":::
-      :::image type="complex" source="../media/console-demo-dir-button.msft.png" alt-text="The result of the console.dir() example" lightbox="../media/console-demo-dir-button.msft.png":::
-         The result of the `console.dir()` example
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+```javascript
+console.dir(document.head);
+```
+
+#### Output
+
+:::image type="content" source="../media/console-demo-dir-button.msft.png" alt-text="The result of the console.dir() example" lightbox="../media/console-demo-dir-button.msft.png":::
 
 ---
 
@@ -261,26 +173,13 @@ console.dirxml(node)
 
 ### Example
 
-:::row:::
-   :::column span="1":::
-      Input
-   :::column-end:::
-   :::column span="3":::
-      ```javascript
-      console.dirxml(document);
-      ```
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Output
-   :::column-end:::
-   :::column span="3":::
-      :::image type="complex" source="../media/console-demo-dirxml-button.msft.png" alt-text="The result of the console.dirxml() example" lightbox="../media/console-demo-dirxml-button.msft.png":::
-         The result of the `console.dirxml()` example
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+```javascript
+console.dirxml(document);
+```
+
+#### Output
+
+:::image type="content" source="../media/console-demo-dirxml-button.msft.png" alt-text="The result of the console.dirxml() example" lightbox="../media/console-demo-dirxml-button.msft.png":::
 
 ---
 
@@ -297,26 +196,13 @@ console.error(object [, object, ...])
 
 ### Example
 
-:::row:::
-   :::column span="1":::
-      Input
-   :::column-end:::
-   :::column span="3":::
-      ```javascript
-      console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
-      ```
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Output
-   :::column-end:::
-   :::column span="3":::
-      :::image type="complex" source="../media/console-demo-error-button.msft.png" alt-text="The result of the console.error() example" lightbox="../media/console-demo-error-button.msft.png":::
-         The result of the `console.error()` example
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+```javascript
+console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
+```
+
+#### Output
+
+:::image type="content" source="../media/console-demo-error-button.msft.png" alt-text="The result of the console.error() example" lightbox="../media/console-demo-error-button.msft.png":::
 
 ---
 
@@ -331,32 +217,19 @@ console.group(label)
 
 ### Example
 
-:::row:::
-   :::column span="1":::
-      Input
-   :::column-end:::
-   :::column span="3":::
-      ```javascript
-      const label = 'Adolescent Irradiated Espionage Tortoises';
-      console.group(label);
-      console.info('Leo');
-      console.info('Mike');
-      console.info('Don');
-      console.info('Raph');
-      console.groupEnd(label);
-      ```
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Output
-   :::column-end:::
-   :::column span="3":::
-      :::image type="complex" source="../media/console-demo-group-button.msft.png" alt-text="The result of the console.group() example" lightbox="../media/console-demo-group-button.msft.png":::
-         The result of the `console.group()` example
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+```javascript
+const label = 'Adolescent Irradiated Espionage Tortoises';
+console.group(label);
+console.info('Leo');
+console.info('Mike');
+console.info('Don');
+console.info('Raph');
+console.groupEnd(label);
+```
+
+#### Output
+
+:::image type="content" source="../media/console-demo-group-button.msft.png" alt-text="The result of the console.group() example" lightbox="../media/console-demo-group-button.msft.png":::
 
 ---
 
@@ -374,7 +247,7 @@ console.groupCollapsed(label)
 <!-- ====================================================================== -->
 ## groupEnd
 
-Stops visually grouping messages.  Navigate to the [group](#group) method.
+Stops visually grouping messages.  See the [group](#group) method.
 
 ```javascript
 console.groupEnd(label)
@@ -395,26 +268,13 @@ console.info(object [, object, ...])
 
 ### Example
 
-:::row:::
-   :::column span="1":::
-      Input
-   :::column-end:::
-   :::column span="3":::
-      ```javascript
-      console.info('info');
-      ```
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Output
-   :::column-end:::
-   :::column span="3":::
-      :::image type="complex" source="../media/console-demo-info-button.msft.png" alt-text="The result of the console.info() example" lightbox="../media/console-demo-info-button.msft.png":::
-         The result of the `console.info()` example
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+```javascript
+console.info('info');
+```
+
+#### Output
+
+:::image type="content" source="../media/console-demo-info-button.msft.png" alt-text="The result of the console.info() example" lightbox="../media/console-demo-info-button.msft.png":::
 
 ---
 
@@ -431,26 +291,13 @@ console.log(object [, object, ...])
 
 ### Example
 
-:::row:::
-   :::column span="1":::
-      Input
-   :::column-end:::
-   :::column span="3":::
-      ```javascript
-      console.log('log');
-      ```
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Output
-   :::column-end:::
-   :::column span="3":::
-      :::image type="complex" source="../media/console-demo-log-button.msft.png" alt-text="The result of the console.log() example" lightbox="../media/console-demo-log-button.msft.png":::
-         The result of the `console.log()` example
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+```javascript
+console.log('log');
+```
+
+#### Output
+
+:::image type="content" source="../media/console-demo-log-button.msft.png" alt-text="The result of the console.log() example" lightbox="../media/console-demo-log-button.msft.png":::
 
 ---
 
@@ -467,40 +314,27 @@ console.table(array)
 
 ### Example
 
-:::row:::
-   :::column span="1":::
-      Input
-   :::column-end:::
-   :::column span="3":::
-      ```javascript
-      console.table([
-          {
-              first: 'René',
-              last: 'Magritte',
-          },
-          {
-              first: 'Chaim',
-              last: 'Soutine',
-              birthday: '18930113',
-          },
-          {
-              first: 'Henri',
-              last: 'Matisse',
-          }
-      ]);
-      ```
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Output
-   :::column-end:::
-   :::column span="3":::
-      :::image type="complex" source="../media/console-demo-table-button.msft.png" alt-text="The result of the console.table() example" lightbox="../media/console-demo-table-button.msft.png":::
-         The result of the `console.table()` example
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+```javascript
+console.table([
+      {
+         first: 'René',
+         last: 'Magritte',
+      },
+      {
+         first: 'Chaim',
+         last: 'Soutine',
+         birthday: '18930113',
+      },
+      {
+         first: 'Henri',
+         last: 'Matisse',
+      }
+]);
+```
+
+#### Output
+
+:::image type="content" source="../media/console-demo-table-button.msft.png" alt-text="The result of the console.table() example" lightbox="../media/console-demo-table-button.msft.png":::
 
 ---
 
@@ -515,37 +349,24 @@ console.time([label])
 
 ### Example
 
-:::row:::
-   :::column span="1":::
-      Input
-   :::column-end:::
-   :::column span="3":::
-      ```javascript
-      console.time();
-      for (var i = 0; i < 100000; i++) {
-          let square = i ** 2;
-      }
-      console.timeEnd();
-      ```
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Output
-   :::column-end:::
-   :::column span="3":::
-      :::image type="complex" source="../media/console-demo-time-button.msft.png" alt-text="The result of the console.time() example" lightbox="../media/console-demo-time-button.msft.png":::
-         The result of the `console.time()` example
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+```javascript
+console.time();
+for (var i = 0; i < 100000; i++) {
+      let square = i ** 2;
+}
+console.timeEnd();
+```
+
+#### Output
+
+:::image type="content" source="../media/console-demo-time-button.msft.png" alt-text="The result of the console.time() example" lightbox="../media/console-demo-time-button.msft.png":::
 
 ---
 
 <!-- ====================================================================== -->
 ## timeEnd
 
-Stops a timer.  For more information, navigate to the [time](#time) method.
+Stops a timer.  For more information, see the [time](#time) method.
 
 ```javascript
 console.timeEnd([label])
@@ -568,30 +389,17 @@ console.trace()
 
 ### Example
 
-:::row:::
-   :::column span="1":::
-      Input
-   :::column-end:::
-   :::column span="3":::
-      ```javascript
-      const first = () => { second(); };
-      const second = () => { third(); };
-      const third = () => { fourth(); };
-      const fourth = () => { console.trace(); };
-      first();
-      ```
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Output
-   :::column-end:::
-   :::column span="3":::
-      :::image type="complex" source="../media/console-demo-trace-button.msft.png" alt-text="The result of the console.trace() example" lightbox="../media/console-demo-trace-button.msft.png":::
-         The result of the `console.trace()` example
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+```javascript
+const first = () => { second(); };
+const second = () => { third(); };
+const third = () => { fourth(); };
+const fourth = () => { console.trace(); };
+first();
+```
+
+#### Output
+
+:::image type="content" source="../media/console-demo-trace-button.msft.png" alt-text="The result of the console.trace() example" lightbox="../media/console-demo-trace-button.msft.png":::
 
 ---
 
@@ -608,26 +416,13 @@ console.warn(object [, object, ...])
 
 ### Example
 
-:::row:::
-   :::column span="1":::
-      Input
-   :::column-end:::
-   :::column span="3":::
-      ```javascript
-      console.warn('warn');
-      ```
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Output
-   :::column-end:::
-   :::column span="3":::
-      :::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="The result of the console.warn() example" lightbox="../media/console-demo-warn-button.msft.png":::
-         The result of the `console.warn()` example
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+```javascript
+console.warn('warn');
+```
+
+#### Output
+
+:::image type="content" source="../media/console-demo-warn-button.msft.png" alt-text="The result of the console.warn() example" lightbox="../media/console-demo-warn-button.msft.png":::
 
 ---
 
