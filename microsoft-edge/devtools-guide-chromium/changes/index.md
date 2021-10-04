@@ -10,29 +10,44 @@ keywords: microsoft edge, web development, f12 tools, devtools, changes
 ---
 # Changes tool
 
-<!-- check other doc set -->
+<!-- todo: needs edit pass, merge two sections -->
 
 The **Changes tool** tracks any changes you have made to CSS or JavaScript in the DevTools.  You are able to use the **Changes tool** to quickly display all your changes and take those back to your editor/IDE.
 
-To open the **Changes tool**, select `Ctrl`+`Shift`+`P` in the DevTools to open the [Command Menu][DevtoolsCommandMenuIndex] and type `changes`.  choose and run the **Show Changes** command to open the **Changes tool** in the DevTools drawer.
+<!-- check other doc set for info about "changes tool" -->
+
+<!-- copied from
+https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/03/devtools#use-the-arrow-keys-to-scroll-in-the-changes-tool
+-->
+<!-- ====================================================================== -->
+## Use the arrow keys to scroll in the Changes tool
+
+To open the **Changes tool**, select `Ctrl`+`Shift`+`P` in the DevTools to open the [Command Menu](../command-menu/index.md) and type `changes`.  select and run the **Show Changes** command to open the **Changes tool** in the DevTools drawer.
 
 When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to display all of your minified code.  Starting in Microsoft Edge 83, you may now scroll horizontally using the arrow keys on your keyboard.
 
-:::image type="content" source="../../media/2020/03/changes.msft.png" alt-text="In Microsoft Edge 83, you may scroll horizontally with the arrow keys to display your minified code in the Changes tool" lightbox="../../media/2020/03/changes.msft.png":::
+:::image type="content" source="media/changes.msft.png" alt-text="Scrolling horizontally with arrow keys to display minified code in the Changes tool.":::
 
 
+<!-- copied from Microsoft Edge Developer Tools overview -->
+<!-- ====================================================================== -->
 ## Command Menu
 
-The command menu allows you to type commands to display, hide, or run features in the DevTools.  With the command menu open, enter the word **changes**, and then select **Drawer: Show Changes**.  The **Changes** tool opens, which is useful when you edit CSS.  In this case, the command menu provides a fast alternative to selecting **More Tools** (...) and then selecting **Changes**, or editing a `.js` file in the **Sources** tool, then right-clicking and selecting **Local modifications**.
+The Command Menu allows you to type commands to display, hide, or run features in the DevTools.
 
-The command menu displays the options after you type `changes`:
+1. Open the **Command Menu**.  To do this, you can select `Ctrl`+`Shift`+`P` in DevTools.
+1. Enter the word **changes**, and then select **Drawer: Show Changes**.
 
-:::image type="complex" source="./media/devtools-intro-command-menu-show-changes.msft.png" alt-text="Command menu displays the options after you type changes" lightbox="./media/devtools-intro-command-menu-show-changes.msft.png":::
-   Command menu displays the options after you type `changes`
-:::image-end:::
+The **Changes** tool opens, which is useful when you edit CSS.  In this case, the command menu provides a fast alternative to selecting **More Tools** (...) and then selecting **Changes**, or editing a `.js` file in the **Sources** tool, then right-clicking and selecting **Local modifications**.
+
+The Command Menu displays the options after you type `changes`:
+
+<!-- if make this image smaller, maybe keep the big image and use as lightbox, use different .png names -->
+
+:::image type="content" source="media/devtools-intro-command-menu-show-changes.msft.png" alt-text="Command menu displays the options after you type changes":::
 
 DevTools with the **Changes** tool open:
 
-:::image type="complex" source="./media/devtools-intro-showing-changes.msft.png" alt-text="DevTools with the Changes tool open" lightbox="./media/devtools-intro-showing-changes.msft.png":::
-   DevTools with the **Changes** tool open
-:::image-end:::
+<!-- if make this image smaller, maybe keep the big image and use as lightbox, use different .png names -->
+
+:::image type="content" source="media/devtools-intro-showing-changes.msft.png" alt-text="DevTools with the Changes tool open":::

@@ -35,5 +35,5 @@ The **Quick source** tool is also called the **Quick source** panel or the **Qui
 <!-- ====================================================================== -->
 ## See also
 
-* [Save a JavaScript change to disk](../workspaces/index.md#step--4-save-a-javascript-change-to-disk) in _Edit files with Workspaces_.
+* [Save a JavaScript change to disk](../workspaces/index.md#step-4-save-a-javascript-change-to-disk) in _Edit files with Workspaces_.
 * [Sources tool overview](../sources/index.md)
