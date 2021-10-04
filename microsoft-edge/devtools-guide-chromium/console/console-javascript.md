@@ -1,6 +1,6 @@
 ---
 description: An introduction to using the Console tool inside the Microsoft Edge Developer Tools as a JavaScript environment.
-title: The Console as a JavaScript environment
+title: Run JavaScript in the Console
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/13/2021
@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, JavaScript, web development, f12 tools, devtools
 ---
-# The Console as a JavaScript environment
+# Run JavaScript in the Console
 
-The **Console** tool inside the browser DevTools is a [REPL][WikiReadEvalPrintLoop] environment.  It means that you may write any JavaScript in the **Console** that runs immediately.
+The **Console** tool inside the browser DevTools is a [REPL][WikiReadEvalPrintLoop] environment.  It means that you can write any JavaScript in the **Console** that runs immediately.
 
-To try it, complete the following actions.
+To try it:
 
 1.  Open the **Console**.
     *   Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).
@@ -32,11 +32,11 @@ If you select `Enter`, the **Console** runs the JavaScript command, gives you th
 
 The last example may seem scary, but the **Console** helps you write complex JavaScript using an excellent autocompletion feature.  This feature is a great way to learn about methods you didn't know before.
 
-To try it, complete the following actions.
+To try it:
 
 1.  Type `doc`.
-1.  Choose `document` from the dropdown menu.
-1.  Select the `tab` key to choose it.
+1.  Select `document` from the dropdown menu.
+1.  Select the `tab` key to select it.
 1.  Type `.bo`.
 1.  Select `tab` to get `document.body`.
 1.  Type another `.` to get a large list of possible properties and methods available on the body of the current webpage.
@@ -47,7 +47,7 @@ To try it, complete the following actions.
 
 ## Console history
 
-As with many other command-line experiences, you also have a history of commands.  Select `Arrow Up` to display the commands you entered before.  Autocompletion also keeps a history of the commands you previously typed.  You may type the first few letters of earlier commands and your previous choices display in a textbox.
+As with many other command-line experiences, you also have a history of commands.  Select `Arrow Up` to display the commands you entered before.  Autocompletion also keeps a history of the commands you previously typed.  You can type the first few letters of earlier commands and your previous choices display in a textbox.
 
 Also, the **Console** also offers quite a few [utility methods][DevtoolsConsoleUtilities] that make your life easier.  For example, `$_` always contains the result of the last expression you ran in the **Console**.
 
@@ -73,7 +73,7 @@ If you start a multiline statement in the **Console**, it gets automatically rec
 
 Other than in your own scripts, **Console** supports [top level await][GithubTc39ProposalTopLevelAwait] to run arbitrary asynchronous JavaScript in it.  For example, use the `fetch` API without wrapping the `await` statement with an async function.
 
-To get the last 50 issues filed on the [Microsoft Edge Developer Tools for Visual Studio Code][GithubMicrosoftVscodeEdgeDevtools] GitHub repo, complete the following actions.
+To get the last 50 issues filed on the [Microsoft Edge Developer Tools for Visual Studio Code][GithubMicrosoftVscodeEdgeDevtools] GitHub repo:
 
 1.  Open the **Console**.
 1.  Copy and paste the following code snippet to get an object that contains 10 entries.
@@ -88,13 +88,13 @@ To get the last 50 issues filed on the [Microsoft Edge Developer Tools for Visua
     **Console** displays the result of a top-level async `fetch` request
 :::image-end:::
 
-The 10 entries are hard to recognize, since a lot of information is displayed.  Luckily enough, you may use the `console.table()` log method to only receive the information in which you're interested.
+The 10 entries are hard to recognize, since a lot of information is displayed.  You can use the `console.table()` log method to only receive the information in which you're interested.
 
 :::image type="complex" source="../media/console-javascript-filtered-with-table.msft.png" alt-text="Display the last result in a human readable format using console.table" lightbox="../media/console-javascript-filtered-with-table.msft.png":::
     Display the last result in a human readable format using `console.table`
 :::image-end:::
 
-To reuse the data returned from an expression, you may use the `copy()` utility method of the **Console**.  The following code snippet sends the request and copies the data from the response to the clipboard.
+To reuse the data returned from an expression, you can use the `copy()` utility method of the **Console**.  The following code snippet sends the request and copies the data from the response to the clipboard.
 
 ```javascript
 copy(await (await fetch(
@@ -102,7 +102,7 @@ copy(await (await fetch(
 )).json())
 ```
 
-Use the **Console** as a great way to practice JavaScript functionality and to do some quick calculations.  The real power is the fact that you have access to the [window][MdnDocsWebApiWindow] object.  You may [interact with the DOM in Console][DevtoolsConsoleConsoleDomInteraction].
+Use the **Console** as a great way to practice JavaScript functionality and to do some quick calculations.  The real power is the fact that you have access to the [window][MdnDocsWebApiWindow] object.  You can [interact with the DOM in Console][DevtoolsConsoleConsoleDomInteraction].
 
 ## Getting in touch with the Microsoft Edge DevTools team
 

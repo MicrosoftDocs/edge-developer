@@ -195,7 +195,7 @@ Refer to the example below. `const` redeclaration is supported across separate R
    Redeclaring a const variable is allowed in the console
 :::image-end:::
 
-To learn how to run a single REPL script or a multi-line REPL script, navigate to [The Console as a JavaScript environment](../../../console/console-javascript.md).
+To learn how to run a single REPL script or a multi-line REPL script, navigate to [Run JavaScript in the Console](../../../console/console-javascript.md).
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1076427][CR1076427].
 

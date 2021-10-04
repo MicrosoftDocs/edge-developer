@@ -70,7 +70,7 @@
                   href: devtools-guide-chromium/console/index.md
                 - name: Log messages
                   href: devtools-guide-chromium/console/console-log.md
-                - name: The Console as a JavaScript environment
+                - name: Run JavaScript in the Console
                   href: devtools-guide-chromium/console/console-javascript.md
                 - name: Console features reference
                   href: devtools-guide-chromium/console/reference.md
