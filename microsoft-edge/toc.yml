@@ -72,7 +72,7 @@
                   href: devtools-guide-chromium/console/console-log.md
                 - name: The Console as a JavaScript environment
                   href: devtools-guide-chromium/console/console-javascript.md
-                - name: Console reference
+                - name: Console features reference
                   href: devtools-guide-chromium/console/reference.md
                 - name: Console API reference
                   href: devtools-guide-chromium/console/api.md

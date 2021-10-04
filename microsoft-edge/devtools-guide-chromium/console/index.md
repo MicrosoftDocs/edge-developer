@@ -179,7 +179,7 @@ For more information about working with the DOM, navigate to [Use the Console to
 
 ## Learn more about Console
 
-For more information about the **Console**, navigate to [Console reference][DevtoolsConsoleReference], [Console Utilities API reference][DevtoolsConsoleUtilities], and [Console API reference][DevtoolsConsoleApi].
+For more information about the **Console**, navigate to [Console features reference][DevtoolsConsoleReference], [Console Utilities API reference][DevtoolsConsoleUtilities], and [Console API reference][DevtoolsConsoleApi].
 
 ## Getting in touch with the Microsoft Edge DevTools team
 
@@ -192,7 +192,7 @@ For more information about the **Console**, navigate to [Console reference][Devt
 [DevtoolsConsoleConsoleFilters]: ./console-filters.md "Filter Console messages | Microsoft Docs"
 [DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Console as a JavaScript environment | Microsoft Docs"
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Log messages in the Console tool | Microsoft Docs"
-[DevtoolsConsoleReference]: ./reference.md "Console reference | Microsoft Docs"
+[DevtoolsConsoleReference]: ./reference.md "Console features reference | Microsoft Docs"
 [DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"
 [DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
 <!-- external links -->
