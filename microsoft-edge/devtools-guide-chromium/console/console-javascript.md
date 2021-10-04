@@ -16,7 +16,7 @@ To try it:
 
 1.  Open the **Console**.
     *   Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).
-1.  Type `2 + 2`.  The **Console** already displays the result `4` on the next line while you type it.  The `Eager evaluation` feature helps you write valid JavaScript.  It displays the result while you type whether it's wrong or if a valid result exists.
+1.  Type `2 + 2`.  The **Console** already displays the result `4` on the next line while you type it.  The `Eager evaluation` feature helps you write valid JavaScript.  It displays the result while you type, regardless of whether your JavaScript is correct, and regardless of whether a valid result exists.
 
 :::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console displays the result of 2 + 2 live as you type it" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
    **Console** displays the result of `2 + 2` live as you type it
