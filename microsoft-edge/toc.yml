@@ -237,7 +237,9 @@
                   href: devtools-guide-chromium/accessibility/accessibility-tab.md
 # Issues
         - name: Issues tool
-          href: devtools-guide-chromium/issues/index.md
+          items:
+            - name: Issues tool overview
+              href: devtools-guide-chromium/issues/index.md
             - name: Automatically test a webpage for accessibility issues
               href: devtools-guide-chromium/accessibility/test-issues-tool.md
 # JavaScript Profiler
@@ -305,28 +307,28 @@
                 - name: Timeline event reference
                   href: devtools-guide-chromium/evaluate-performance/performance-reference.md
 # Performance monitor
-            - name: Performance monitor tool (NEW ARTICLE)
-              href: devtools-guide-chromium/performance-monitor/index.md
+        - name: Performance monitor tool (NEW ARTICLE)
+          href: devtools-guide-chromium/performance-monitor/index.md
 # Quick source
-            - name: Quick source tool (NEW ARTICLE)
-              href: devtools-guide-chromium/quick-source/index.md
+        - name: Quick source tool (NEW ARTICLE)
+          href: devtools-guide-chromium/quick-source/index.md
 # Rendering
-            - name: Rendering tool
-              items:
-                - name: Emulate vision deficiencies
-                  href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
-                - name: Emulate dark or light scheme
-                  href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
-                - name: Simulate reduced motion
-                  href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
-                - name: Check for contrast issues with dark theme and light theme
-                  href: devtools-guide-chromium/accessibility/test-dark-mode.md
-                - name: Verify that the page is usable by people with color blindness
-                  href: devtools-guide-chromium/accessibility/test-color-blindness.md
-                - name: Verify that the page is usable with blurred vision
-                  href: devtools-guide-chromium/accessibility/test-blurred-vision.md
-                - name: Verify that the page is usable with UI animation turned off
-                  href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
+        - name: Rendering tool
+          items:
+            - name: Emulate vision deficiencies
+              href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
+            - name: Emulate dark or light scheme
+              href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
+            - name: Simulate reduced motion
+              href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
+            - name: Check for contrast issues with dark theme and light theme
+              href: devtools-guide-chromium/accessibility/test-dark-mode.md
+            - name: Verify that the page is usable by people with color blindness
+              href: devtools-guide-chromium/accessibility/test-color-blindness.md
+            - name: Verify that the page is usable with blurred vision
+              href: devtools-guide-chromium/accessibility/test-blurred-vision.md
+            - name: Verify that the page is usable with UI animation turned off
+              href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
 # Search
         - name: Search tool (NEW ARTICLE)
           href: devtools-guide-chromium/search/index.md
