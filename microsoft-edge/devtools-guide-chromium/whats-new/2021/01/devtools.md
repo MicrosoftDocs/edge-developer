@@ -422,7 +422,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [DevtoolsWhatsNew85]: ../../2020/06/devtools.md "What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"
 
 [DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/color-picker.md "Test text-color contrast using the Color Picker | Microsoft Docs"
-[DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Change CSS - CSS reference | Microsoft Docs"
+[DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Change CSS - CSS features reference | Microsoft Docs"
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Customize keyboard shortcuts in DevTools | Microsoft Docs"
 [DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices "Test on foldable and dual-screen devices - Emulate dual-screen and foldable devices in Microsoft Edge DevTools | Microsoft Docs"
