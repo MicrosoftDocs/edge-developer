@@ -21,7 +21,7 @@ This article explains how to automate and test your WebView2 app with Microsoft 
 
 This article provides instructions for using the Selenium framework and C#, but you can use any library, framework, and programming language that supports WebDriver.  To accomplish the same tasks using a WebDriver testing framework other than Selenium, consult the official documentation for your framework of choice.
 
-To create automated tests to simulate user interactions in your WebView2 app, you can use Microsoft Edge Driver.  The W3C WebDriver protocol allows programs to control the behavior of web browsers.   Microsoft Edge Driver is Microsoft's implementation of the WebDriver protocol, specifically for Microsoft Edge.  Test authors write tests that use WebDriver commands that Microsoft Edge Driver receives.  Microsoft Edge Driver then sends the WebDriver commands to Microsoft Edge.
+To create automated tests to simulate user interactions in your WebView2 app, you can use Microsoft Edge Driver.  The W3C WebDriver protocol allows programs to control the behavior of web browsers.  Microsoft Edge Driver is Microsoft's implementation of the WebDriver protocol, specifically for Microsoft Edge.  Test authors write tests that use WebDriver commands that Microsoft Edge Driver receives.  Microsoft Edge Driver then sends the WebDriver commands to Microsoft Edge.
 
 Because WebView2 uses the Microsoft Edge (Chromium) web platform, WebView2 developers can take advantage of standard web tooling, such as Selenium, for debugging and automation.  Selenium is a testing framework that uses the WebDriver protocol.  Selenium implements the W3C [WebDriver][W3cWebdriver2] API.  You can use Selenium to create automated tests to simulate user interactions in Microsoft Edge.
 
@@ -150,7 +150,9 @@ Note: Selenium with C# is just one of many WebDriver testing frameworks.
 
 Use this "launch" approach if you have a simple app that creates a single WebView2 instance and that instance is active immediately upon launch.  In this scenario, there's one WebView2 instance, and it is available upon launch without needing to navigate through any native UI.  
 
-1.  To drive WebView2 with Selenium and Microsoft Edge Driver, first create the `EdgeOptions` object, by copying and pasting the following code snippet.
+To drive WebView2 with Selenium and Microsoft Edge Driver:
+
+1.  Create the `EdgeOptions` object, by copying and pasting the following code snippet:
 
     ```csharp
     static void Main(string[] args)
@@ -158,13 +160,13 @@ Use this "launch" approach if you have a simple app that creates a single WebVie
         EdgeOptions edgeOptions = new EdgeOptions();
     ```
 
-1.  Next, we'll add code that does the following:
+    Next, we'll add code that does the following:
 
     *   Configure `edgeOptions` to use Chromium and WebView2, by setting the options `UseChromium` and `UseWebView` to `true`.
     *   Set `edgeOptions.BinaryLocation` to the file path of your host app binary.
     *   Create the `EdgeDriver` object using `edgeOptions`.
 
-    Copy the following code and paste it below `edgeOptions`.
+1.  Copy the following code and paste it below `edgeOptions`:
 
     ```csharp
     //Set edgeOptions to use Chromium and WebView2
@@ -180,7 +182,7 @@ Use this "launch" approach if you have a simple app that creates a single WebVie
 
     `EdgeDriver` has now been configured to drive the WebView2 in your project.  For example, if you're using the **WebView2API Sample**, your code can now navigate to `https://microsoft.com` by running the `e.Url = @"https://www.microsoft.com";` command, as shown in the next code listing.
 
-1.  Verify that Selenium can drive WebView2, by setting a breakpoint on the `e.Url` line and running the project.
+1.  Verify that Selenium can drive WebView2.  To do this, set a breakpoint on the line `e.Url = @"https://www.microsoft.com";`, and then run the project.
 
     ```csharp
         //Navigate the WebView2API Sample from bing.com to microsoft.com
