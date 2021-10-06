@@ -181,7 +181,7 @@ To build a robust, real-world PWA, consider the following web best practices:
       [Responsive design][WikiResponsiveWebDesign]
    :::column-end:::
    :::column span="2":::
-      Employs fluid layouts and flexible images.  Responsive design includes the following elements that adapt your UX to your user's device.
+      Employs fluid layouts and flexible images.  Responsive design includes the following elements that adapt your UX to your user's device:
 
       *   CSS [grid][MDNCssGridLayout]
       *   [flexbox][MDNCssFlexibleBoxLayout]
@@ -204,7 +204,7 @@ To build a robust, real-world PWA, consider the following web best practices:
       [Offline experience](./offline.md)
    :::column-end:::
    :::column span="2":::
-      Once installed, works regardless of your users' connection status and provides a custom offline page rather than using the browser default offline page.
+      Once installed, works regardless of users' connection status, and provides a custom offline page rather than using the browser's default offline page.
    :::column-end:::
 :::row-end:::
 :::row:::
