@@ -22,7 +22,7 @@ Examples of protocols include:
 | `http` | http://contoso.com/ |
 | `mailto` | mailto:contact@contoso.com |
 
-With Protocol Handling, PWAs can register to handle specific protocols when getting installed. For example, an email client app can register to handle the `mailto` protocol, or a geo location app can register to handle the `geo` protocol.
+With Protocol Handling, PWAs can register to handle certain allowed protocols when getting installed. For example, an email client app can register to handle the `mailto` protocol, or a geo location app can register to handle the `geo` protocol.
 
 Custom protocols can also be handled if a PWA registers a protocol that starts with the `web+` prefix.
 
