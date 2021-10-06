@@ -22,6 +22,8 @@ There are two sides to sharing content, and both can be used by PWAs.
 
 PWAs that register as share targets feel more natively integrated into the OS and more engaging to users.
 
+
+<!-- ====================================================================== -->
 ## Sharing content
 
 PWAs can use the [Web Share API][MDNWebShareAPI] to trigger the operating system share dialog.
@@ -71,11 +73,9 @@ async function shareSomeContent(title, text, url) {
 
 On Windows, the above code will trigger the share dialog, allowing the user to pick an app to receive the shared content.
 
-:::image type="complex" source="../media/windows-share-dialog.png" alt-text="The share dialog on Windows" lightbox="../media/windows-share-dialog.png":::
-    The share dialog on Windows  
-:::image-end:::
+:::image type="content" source="../media/windows-share-dialog.png" alt-text="The share dialog on Windows." lightbox="../media/windows-share-dialog.png":::
 
-Once the user has chosen an app to receive the shared content, it is up to this app to handle it any way it chooses. An email app may choose to use the `title` as the email subject and the `text` as the body for example.
+Once the user has chosen an app to receive the shared content, it is up to this app to handle it any way it chooses. An email app might use the `title` as the email subject and the `text` as the body, for example.
 
 ### Sharing files
 
@@ -113,18 +113,17 @@ In the above code snippet, the `getImageFileFromURL` function fetches an image u
 
 To test the feature:
 
-*  Navigate to [DevTools Tips][DemoDevToolsTips].
+*  Go to [DevTools Tips][DemoDevToolsTips].
 *  Choose any of the tips displayed on the home page.
 *  Select **Share tip**.
 
-:::image type="complex" source="../media/devtools-tips-share.png" alt-text="Screenshot of the Windows share dialog opened on the DevTools Tips website" lightbox="../media/devtools-tips-share.png":::
-    The Windows share dialog allows users to pick an app to share the content with
-:::image-end:::
+:::image type="content" source="../media/devtools-tips-share.png" alt-text="The Windows share dialog allows users to pick an app to share the content with." lightbox="../media/devtools-tips-share.png":::
 
 You can find the [source code on GitHub][DemoDevToolsTipsGitHub]. In particular, the app uses the Web Share API in the [share.js][DemoDevToolsTipsShareFunction] source file.
 
 
-## Receiving shared content  
+<!-- ====================================================================== -->
+## Receiving shared content
 
 Using the Web Share Target API, PWAs can also register to be displayed as apps in the system share dialog, and handle shared content coming from other apps. You can learn more about the Web Share Target API at the [Web Share Target API W3C specification draft][W3CWebShareTargetAPI].
 
@@ -133,7 +132,7 @@ Using the Web Share Target API, PWAs can also register to be displayed as apps i
 
 ### Register as a target
 
-The first thing to do is register your PWA as a share target. To register, use the `share_target` manifest member. Upon installation of your app, the operating system will use the `share_target` member to include your app in the system share dialog and will know what to do when your app is picked by the user.  
+The first thing to do is register your PWA as a share target. To register, use the `share_target` manifest member. Upon installation of your app, the operating system will use the `share_target` member to include your app in the system share dialog and will know what to do when your app is picked by the user.
 
 The `share_target` member must contain the necessary information for the system to pass the shared content to your app. Consider the following manifest code.
 
@@ -185,7 +184,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 ### Handle POST shared data
 
-If the shared data is meant to change your app in any way, for example by updating some of the content stored in the app, you must use the `POST` method and define an encoding type with `enctype`.  
+If the shared data is meant to change your app in any way, for example by updating some of the content stored in the app, you must use the `POST` method and define an encoding type with `enctype`.
 
 ```json
 {
@@ -211,7 +210,7 @@ self.addEventListener('fetch', event => {
     if (event.request.method === 'POST' && url.pathname === '/post-shared-content') {
         event.respondWith((async () => {
             const data = await event.request.formData();
-            
+
             const title = data.get('title');
             const text = data.get('text');
             const url = data.get('url');
@@ -226,7 +225,7 @@ self.addEventListener('fetch', event => {
 
 In the above code snippet, the service worker intercepts the `POST` request, uses the data in some way (like storing the content locally for example), and redirects the user to a success page. This way, the app can work even if the network is down. It can choose to only store the content locally, or send it to the server later when connectivity is back (for example using [Background Sync][BackgroundSync]).
 
-### Handle files  
+### Handle files
 
 Apps can also handle shared files. To handle files in your PWA, you must use the `POST` method and the `multipart/form-data` encoding type. Additionally, you must declare the types of files that your app can handle.
 
@@ -247,7 +246,7 @@ Apps can also handle shared files. To handle files in your PWA, you must use the
         }
     }
 }
-```  
+```
 
 The above manifest code tells the system that your app can accept text files with various mime types. File extensions can also be passed in the `accept` array like `.txt` for example.
 
@@ -260,7 +259,7 @@ self.addEventListener('fetch', event => {
     if (event.request.method === 'POST' && url.pathname === '/store-code-snippet') {
         event.respondWith((async () => {
             const data = await event.request.formData();
-            
+
             const filename = data.get('title');
             const file = data.get('textFile');
 
@@ -280,16 +279,17 @@ self.addEventListener('fetch', event => {
 ```
 
 
+<!-- ====================================================================== -->
 ## See also
 
 *  [Integrate with the OS sharing UI with the Web Share API][ShareWebDev]
 *  [Receiving shared data with the Web Share Target API][ShareTargetWebDev]
 
 
-<!-- links -->  
-
-[MDNWebShareAPI]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API "Web Share API - Web APIs | MDN"
-[MDNFileInterface]: https://developer.mozilla.org/en-US/docs/Web/API/File "File - Web APIs | MDN"
+<!-- ====================================================================== -->
+<!-- links -->
+[MDNWebShareAPI]: https://developer.mozilla.org/docs/Web/API/Web_Share_API "Web Share API - Web APIs | MDN"
+[MDNFileInterface]: https://developer.mozilla.org/docs/Web/API/File "File - Web APIs | MDN"
 [W3CWebShareTargetAPI]: https://w3c.github.io/web-share-target/level-2/ "Web Share Target API | W3C"
 [BackgroundSync]: ./background-syncs.md "Synchronize and update in the background | Microsoft Docs"
 [ShareWebDev]: https://web.dev/web-share/ "Integrate with the OS sharing UI with the Web Share API | web.dev"

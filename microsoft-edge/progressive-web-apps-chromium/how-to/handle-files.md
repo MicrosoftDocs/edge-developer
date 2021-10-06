@@ -13,7 +13,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, files
 
 Progressive Web Apps that can handle files feel more native to users and better integrated in the operating system.
 
-Websites can already let users upload files by [using the `<input type="file">` or drag and drop][MDNFileUpload], but PWAs go one step further and can register as file handlers on the operating system.
+Websites can already let users upload files by [using the `<input type="file">` or drag and drop](https://developer.mozilla.org/docs/Web/API/File/Using_files_from_web_applications), but PWAs go one step further and can register as file handlers on the operating system.
 
 When a PWA is registered as a file handler for certain file types, the operating system can automatically launch the app when those files are opened by the user, similar to how Microsoft Word handles `.docx` files.
 
@@ -29,13 +29,13 @@ To enable the File Handling feature:
 1.  Select **Search flags** and type "file handling API".
 1.  Select **Default** > **Enabled** > **Restart**.
 
-    :::image type="content" source="../media/enable-file-handling-experiment.png" alt-text="Enable the 'File Handling API' experiment" lightbox="../media/enable-file-handling-experiment.png":::
+    :::image type="content" source="../media/enable-file-handling-experiment.png" alt-text="Enable the 'File Handling API' experiment." lightbox="../media/enable-file-handling-experiment.png":::
 
 
 <!-- ====================================================================== -->
 ## Define which files your app handles
 
-The first thing to do is to declare which types of files your app handles. This is done in your app [manifest file][ManifestFileDoc], using the `file_handlers` array member.
+The first thing to do is to declare which types of files your app handles. This is done in your app [manifest file](./web-app-manifests.md), using the `file_handlers` array member.
 
 Each entry in the `file_handlers` array needs to have two properties:
 
@@ -107,7 +107,7 @@ async function handleFiles(files) {
 }
 ```
 
-The `launchQueue` object queues all the launched files until a consumer is set with `setConsumer`. To learn more about the `launchQueue` and `launchParams` objects, go to the [File Handling explainer][WICGFileHandlingExplainer].
+The `launchQueue` object queues all the launched files until a consumer is set with `setConsumer`. To learn more about the `launchQueue` and `launchParams` objects, go to the [File Handling explainer](https://github.com/WICG/file-handling/blob/main/explainer.md#launch).
 
 
 <!-- ====================================================================== -->
@@ -122,11 +122,11 @@ My Tracks is a PWA demo app that uses the File Handling feature to handle `.gpx`
 
 Notice that the app launches automatically and that Microsoft Edge requests your permission to handle this file.
 
-:::image type="content" source="../media/my-tracks-allow-file-handling.png" alt-text="The 'Open file?' permission request dialog" lightbox="../media/my-tracks-allow-file-handling.png":::
+:::image type="content" source="../media/my-tracks-allow-file-handling.png" alt-text="The 'Open file?' permission request dialog." lightbox="../media/my-tracks-allow-file-handling.png":::
 
 If you allow the app to handle the file, a new entry appears in the app's sidebar, and you can click the checkbox next to it to visualize the corresponding GPS track.
 
-:::image type="content" source="../media/my-tracks-new-file.png" alt-text="The new GPS track handled by the My Tracks app" lightbox="../media/my-tracks-new-file.png":::
+:::image type="content" source="../media/my-tracks-new-file.png" alt-text="The new GPS track handled by the My Tracks app." lightbox="../media/my-tracks-new-file.png":::
 
 The source code for this app can be accessed on the [My Tracks GitHub repository][MyTracksDemoAppGitHub].
 
@@ -135,10 +135,7 @@ The source code for this app can be accessed on the [My Tracks GitHub repository
 
 
 <!-- ====================================================================== -->
-<!-- links -->  
-[MDNFileUpload]: https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications
-[ManifestFileDoc]: ./web-app-manifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"  
-[WICGFileHandlingExplainer]: https://github.com/WICG/file-handling/blob/main/explainer.md#launch "WICG File Handling explainer | GitHub"
+<!-- links -->
 [MyTracksDemoApp]: https://captainbrosset.github.io/mytracks/ "My Tracks"
 [MyTracksDemoAppGitHub]: https://github.com/captainbrosset/mytracks "Sample web app to demonstrate PWA desktop features | GitHub"
 [TestGPXFile]: https://www.visugpx.com/download.php?id=okB1eM4fzj

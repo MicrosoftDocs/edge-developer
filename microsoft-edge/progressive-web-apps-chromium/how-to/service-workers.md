@@ -52,7 +52,7 @@ The lifecycle of a Service Worker consists of multiple steps, with each step tri
     });
     ```
 
-1.  The Service Worker is ready to run when the page is refreshed or when the user navigates to a new page on the site. If you want to run the Service Worker without waiting, use the `self.skipWaiting()` method during the `install` event.
+1.  The Service Worker is ready to run when the page is refreshed or when the user goes to a new page on the site. If you want to run the Service Worker without waiting, use the `self.skipWaiting()` method during the `install` event.
 
     ```javascript
     self.addEventListener( "install", event => {
@@ -87,7 +87,7 @@ Within the `fetch` handler, you can control whether a request goes to the networ
 <!-- ====================================================================== -->
 ## Push Notifications
 
-Service Workers can push notifications to users.  Push notifications can prompt users to re-engage with your application after time has elapsed.  To learn more, go to [Re-engage users with notifications, push messages, and badges](./notifications-badges.md).  
+Service Workers can push notifications to users.  Push notifications can prompt users to re-engage with your application after time has elapsed.  To learn more, go to [Re-engage users with notifications, push messages, and badges](./notifications-badges.md).
 
 
 <!-- ====================================================================== -->

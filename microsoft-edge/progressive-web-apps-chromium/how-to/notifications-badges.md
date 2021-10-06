@@ -18,6 +18,7 @@ Notifications are useful for apps to take part in the system's notification cent
 Badges can be more user-friendly and can therefore be used more frequently. They don't interrupt the user's workflow and are useful to display a small amount of information like a number of received messages for example.
 
 
+<!-- ====================================================================== -->
 ## Display notifications in the action center
 
 PWAs can display notifications using the [Notifications API][MDNNotificationsAPI].
@@ -62,9 +63,7 @@ Once you know that the API is supported and the user has accepted notifications,
 const notification = new Notification("Hello World!");
 ```
 
-:::image type="complex" source="../media/notification-text-only.png" alt-text="A text only notification" lightbox="../media/notification-text-only.png":::
-    A text only notification
-:::image-end:::
+:::image type="content" source="../media/notification-text-only.png" alt-text="A text only notification." lightbox="../media/notification-text-only.png":::
 
 The above code will display a text-only notification message, but it is also possible to customize the aspect of the message with additional properties.
 
@@ -75,11 +74,9 @@ const notification = new Notification("Hello World!", {
 });
 ```
 
-:::image type="complex" source="../media/notification-with-image.png" alt-text="A notification with some text and an image" lightbox="../media/notification-with-image.png":::
-    A notification with some text and an image
-:::image-end:::
+:::image type="content" source="../media/notification-with-image.png" alt-text="A notification with some text and an image." lightbox="../media/notification-with-image.png":::
 
-You can also display notifications from your app's service worker. This is useful as the service worker may be doing work while your app isn't running. To send a notification from your service worker, use the `ServiceWorkerRegistration.showNotification` function.
+You can also display notifications from your app's service worker. This is useful because the service worker may be doing work while your app isn't running. To send a notification from your service worker, use the `ServiceWorkerRegistration.showNotification` function.
 
 ```javascript
 self.registration.showNotification("Hello from the Service Worker!");
@@ -108,9 +105,7 @@ self.registration.showNotification("Your content is ready", {
 });
 ```
 
-:::image type="complex" source="../media/notification-with-actions.png" alt-text="A notification with some text, an image, and two actions" lightbox="../media/notification-with-actions.png":::
-    A notification with some text, an image, and two actions
-:::image-end:::
+:::image type="content" source="../media/notification-with-actions.png" alt-text="A notification with some text, an image, and two actions" lightbox="../media/notification-with-actions.png":::
 
 When the user clicks on one of the action buttons, your PWA can handle it by listening to the `notificationclick` event, close the notification and execute some code.
 
@@ -118,7 +113,7 @@ When the user clicks on one of the action buttons, your PWA can handle it by lis
 self.addEventListener('notificationclick', event => {
     // Close the notification.
     event.notification.close();
-  
+
     // React to the action.
     if (event.action === 'view-content') {
         console.log("view-content action was clicked");
@@ -130,9 +125,10 @@ self.addEventListener('notificationclick', event => {
 }, false);
 ```
 
-To learn more about notification actions, navigate to the [NotificationAction documentation][MDNNotificationActionAPI].
+To learn more about notification actions, go to the [NotificationAction documentation][MDNNotificationActionAPI].
 
 
+<!-- ====================================================================== -->
 ## Display a badge on the app icon
 
 PWAs can display a badge on their app icon by using the [App Badging API][MDNAppBadgingAPI]. The badge can either be empty or contain a number.
@@ -159,9 +155,7 @@ navigator.setAppBadge();
 navigator.setAppBadge(42);
 ```
 
-:::image type="complex" source="../media/app-badge-in-taskbar.png" alt-text="A PWA icon in the Windows Taskbar, with a badge showing the number 42":::
-    Badges appear on the app icon, in the Taskbar
-:::image-end:::
+:::image type="content" source="../media/app-badge-in-taskbar.png" alt-text="A PWA icon in the Windows Taskbar, with a badge showing the number 42":::
 
 The `setAppBadge` function returns a promise which can be used to know when the badge was added, and to catch potential errors.
 
@@ -189,6 +183,8 @@ Additionally, you can also use `setAppBadge` again but passing `0` as the value.
 navigator.setAppBadge(0);
 ```
 
+
+<!-- ====================================================================== -->
 ## Add push notifications to your PWA
 
 To create a PWA that supports push notifications:
@@ -196,7 +192,7 @@ To create a PWA that supports push notifications:
 1.  Subscribe to a messaging service using the [Push API][MDNPushApi].
 1.  Display a toast message when a message is received from the service using the [Notifications API][MDNNotificationsApi].
 
-Just like with Service Workers, the push notification APIs are standards-based APIs.  The push notification APIs work across browsers, so your code should work everywhere that PWAs are supported.  For more information about delivering push messages to different browsers on your server, navigate to [Web-Push][NPMWebPush].
+Just like with Service Workers, the push notification APIs are standards-based APIs.  The push notification APIs work across browsers, so your code should work everywhere that PWAs are supported.  For more information about delivering push messages to different browsers on your server, go to [Web-Push][NPMWebPush].
 
 The following steps have been adapted from the Push Rich Demo in [Service Worker Cookbook][ServiceWorkerCookbookPushRichDemo] provided by Mozilla, which has many useful Web Push and service worker recipes.
 
@@ -204,7 +200,7 @@ The following steps have been adapted from the Push Rich Demo in [Service Worker
 <!-- ====================================================================== -->
 ### Step 1 - Generate VAPID keys
 
-Push notifications require VAPID (Voluntary Application Server Identification) keys in order to send push messages to the PWA client.  There are several VAPID key generators available online (for example, [vapidkeys.com][VapidkeysMain]).  After generation, you should get a JSON object containing a public and private key.  Save the keys for later steps in the following tutorial.  For information about VAPID and WebPush, navigate to [Sending VAPID identified WebPush Notifications using the Mozilla Push Service][MozillaServicesSendingVapidWebPushNotificationsPush].
+Push notifications require VAPID (Voluntary Application Server Identification) keys in order to send push messages to the PWA client.  There are several VAPID key generators available online (for example, [vapidkeys.com][VapidkeysMain]).  After generation, you should get a JSON object containing a public and private key.  Save the keys for later steps in the following tutorial.  For information about VAPID and WebPush, go to [Sending VAPID identified WebPush Notifications using the Mozilla Push Service][MozillaServicesSendingVapidWebPushNotificationsPush].
 
 
 <!-- ====================================================================== -->
@@ -216,7 +212,7 @@ Service workers handle push events and toast notification interactions in your P
 *   Make sure your code to complete the subscription task is on the main UI thread of the PWA.
 *   Make sure you have network connectivity.
 
-Before a new push subscription is created, Microsoft Edge checks whether the user has granted the PWA permission to receive notifications.  If not, the user is prompted by the browser for permission.  If the permission is denied, the request to `registration.pushManager.subscribe` throws a `DOMException`, which must be handled.  For more on permission management, navigate to [Push Notifications in Microsoft Edge][WindowsBlogsWebNotificationsEdge].
+Before a new push subscription is created, Microsoft Edge checks whether the user has granted the PWA permission to receive notifications.  If not, the user is prompted by the browser for permission.  If the permission is denied, the request to `registration.pushManager.subscribe` throws a `DOMException`, which must be handled.  For more on permission management, go to [Push Notifications in Microsoft Edge][WindowsBlogsWebNotificationsEdge].
 
 In your `pwabuilder-sw-register.js` file, append the following code snippet:
 
@@ -310,25 +306,19 @@ self.addEventListener('notificationclick', function (event) {
 
 To test push notifications for your PWA:
 
-1.  Navigate to your PWA at `http://localhost:3000`.  When your service worker activates and attempts to subscribe your PWA to push notifications, Microsoft Edge prompts you to allow your PWA to show notifications.  Select **Allow**.
+1.  Go to your PWA at `http://localhost:3000`.  When your service worker activates and attempts to subscribe your PWA to push notifications, Microsoft Edge prompts you to allow your PWA to show notifications.  Select **Allow**.
 
-    :::image type="complex" source="../media/notification-permission.png" alt-text="Permission dialog for enabling notifications" lightbox="../media/notification-permission.png":::
-       Permission dialog for enabling notifications
-    :::image-end:::
+    :::image type="content" source="../media/notification-permission.png" alt-text="Permission dialog for enabling notifications." lightbox="../media/notification-permission.png":::
 
 1.  Simulate a server-side push notification, as follows.  With your PWA opened at `http://localhost:3000` in your browser, select `F12` to open DevTools.  Select **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.
 
     The push notification is displayed near the taskbar.
 
-    :::image type="complex" source="../media/devtools-push.png" alt-text="Push a notification from DevTools" lightbox="../media/devtools-push.png":::
-        Push a notification from DevTools
-    :::image-end:::
+    :::image type="content" source="../media/devtools-push.png" alt-text="Push a notification from DevTools." lightbox="../media/devtools-push.png":::
 
     If you don't select (or _activate_) a toast notification, the system automatically dismisses it after several seconds and queues it in your Windows Action Center.
 
-    :::image type="complex" source="../media/windows-action-center.png" alt-text="Notifications in Windows Action Center" lightbox="../media/windows-action-center.png":::
-        Notifications in Windows Action Center
-    :::image-end:::
+    :::image type="content" source="../media/windows-action-center.png" alt-text="Notifications in Windows Action Center." lightbox="../media/windows-action-center.png":::
 
 
 <!-- ====================================================================== -->
@@ -336,16 +326,16 @@ To test push notifications for your PWA:
 
 *   [Web Push Notifications Demo][AzurewebsitesWebpushdemo]
 
+
 <!-- ====================================================================== -->
-<!-- links -->
 <!-- external links -->
 [MDNPushApi]: https://developer.mozilla.org/docs/Web/API/Push_API "Push API | MDN"
 [MDNNotificationsApi]: https://developer.mozilla.org/docs/Web/API/Notifications_API "Notifications API | MDN"
 [NPMWebPush]: https://www.npmjs.com/package/web-push "web-push | npm"
-[MDNAppBadgingAPI]: https://developer.mozilla.org/en-US/docs/Web/API/Badging_API "Badging API - Web APIs | MDN"
+[MDNAppBadgingAPI]: https://developer.mozilla.org/docs/Web/API/Badging_API "Badging API - Web APIs | MDN"
 [MDNPushManager]: https://developer.mozilla.org/docs/Web/API/PushManager "PushManager | MDN"
-[MDNNotificationsAPI]: https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API "Notifications API - Web APIs | MDN"
-[MDNNotificationActionAPI]: https://developer.mozilla.org/en-US/docs/Web/API/NotificationAction "NotificationAction - Web APIs | MDN"
+[MDNNotificationsAPI]: https://developer.mozilla.org/docs/Web/API/Notifications_API "Notifications API - Web APIs | MDN"
+[MDNNotificationActionAPI]: https://developer.mozilla.org/docs/Web/API/NotificationAction "NotificationAction - Web APIs | MDN"
 [ServiceWorkerCookbookPushRichDemo]: https://serviceworke.rs/push-rich_demo.html "Push Rich Demo | ServiceWorker Cookbook"
 [VapidkeysMain]: https://vapidkeys.com "Secure VAPID Key Generator | VapidKeys"
 [MozillaServicesSendingVapidWebPushNotificationsPush]: https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service "Sending VAPID identified WebPush Notifications via Mozilla's Push Service | Mozilla Services"

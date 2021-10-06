@@ -11,19 +11,19 @@ keywords: progressive web apps, PWA, Edge, JavaScript, window controls overlay, 
 ---
 # Display content in the title bar
 
-While it is possible for PWAs on mobile to define how they want to be displayed with the [display](https://developer.mozilla.org/docs/Web/Manifest/display) property in the app manifest file, desktop PWAs can't use this to create an immersive, native-like, experience.  
+While it is possible for PWAs on mobile to define how they want to be displayed with the [display](https://developer.mozilla.org/docs/Web/Manifest/display) property in the app manifest file, desktop PWAs can't use this to create an immersive, native-like, experience.
 
-By default, the app area starts right below the reserved title bar area.  
+By default, the app area starts right below the reserved title bar area.
 
-:::image type="content" source="../media/my-tracks-titlebar.png" alt-text="The default Windows app title bar shown on the My Tracks demo PWA" lightbox="../media/my-tracks-titlebar.png":::
+:::image type="content" source="../media/my-tracks-titlebar.png" alt-text="The default Windows app title bar shown on the My Tracks demo PWA." lightbox="../media/my-tracks-titlebar.png":::
 
 Having the ability to display content where the title bar normally is can help PWAs feel more native.
 
 Many desktop applications like Visual Studio Code, Microsoft Teams, or Microsoft Edge already do this.
 
-:::image type="content" source="../media/vscode-titlebar.png" alt-text="VS Code displays content in the title bar area" lightbox="../media/vscode-titlebar.png":::
+:::image type="content" source="../media/vscode-titlebar.png" alt-text="VS Code displays content in the title bar area." lightbox="../media/vscode-titlebar.png":::
 
-The Window Controls Overlay API allows you to display web content over the entire surface area of the app, moves the critical system required window controls into an overlay, and makes it possible for your content to stay clear of this overlay.  
+The Window Controls Overlay API allows you to display web content over the entire surface area of the app, moves the critical system required window controls into an overlay, and makes it possible for your content to stay clear of this overlay.
 
 
 <!-- ====================================================================== -->
@@ -33,15 +33,15 @@ The Window Controls Overlay API is experimental and needs to be enabled in Micro
 
 To enable the API:
 
-1.  Navigate to `edge://flags` in Microsoft Edge.
+1.  Go to `edge://flags` in Microsoft Edge.
 1.  Select **Search flags** and type "window controls overlay".
 1.  Select **Default** > **Enabled** > **Restart**.
 
-    :::image type="content" source="../media/enable-window-controls-overlay-experiment.png" alt-text="Enable the Window Controls Overlay API experiment" lightbox="../media/enable-window-controls-overlay-experiment.png":::
+    :::image type="content" source="../media/enable-window-controls-overlay-experiment.png" alt-text="Enable the Window Controls Overlay API experiment." lightbox="../media/enable-window-controls-overlay-experiment.png":::
 
 The Window Controls Overlay API is also available as an origin trials feature. You can use an origin trial for your app's users to benefit from this feature without having to enable it.
 
-For more information about Origin Trials, navigate to [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials).
+For more information about Origin Trials, go to [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials).
 
 
 <!-- ====================================================================== -->
@@ -59,13 +59,13 @@ The first thing to do is to enable the feature in your app [manifest file](./web
 <!-- ====================================================================== -->
 ## Toggle the title bar
 
-Once enabled, users of the app can choose to have the title bar or not by clicking on the title bar toggle button.
+Once enabled, users of the app can choose to have the title bar or not, by clicking the title bar toggle button.
 
-:::image type="content" source="../media/my-tracks-titlebar-toggle.png" alt-text="Select the title bar toggle button" lightbox="../media/my-tracks-titlebar-toggle.png":::
+:::image type="content" source="../media/my-tracks-titlebar-toggle.png" alt-text="Select the title bar toggle button." lightbox="../media/my-tracks-titlebar-toggle.png":::
 
 Since users can make this choice, and because your app can also run in a web browser, or on a mobile device, your code can't make any assumptions as to whether the window controls overlay is displayed. It is therefore important for your code to react to title bar geometry changes.
 
-To learn more about this, navigate to [React to overlay changes](#react-to-overlay-changes).
+To learn more about this, go to [React to overlay changes](#react-to-overlay-changes).
 
 
 <!-- ====================================================================== -->
@@ -94,11 +94,11 @@ You can use these variables to position and size your own title bar for example.
 }
 ```
 
-Knowing where the overlay is, and how big it is is important as it may not always be on the same side (e.g. it is on the left side on macOS, and on the right side on Windows), and may not always be the same size.
+Knowing where the overlay is, and how big it is is important as it may not always be on the same side (e.g. it is on the left side on macOS, and on the right side on Windows), and might not always be the same size.
 
 
 <!-- ====================================================================== -->
-## Make regions of your app drag handlers for the window  
+## Make regions of your app drag handlers for the window
 
 When the title bar is hidden, only the system critical window controls remain visible (the maximize, minimize, close, and app info buttons), which means that there is very little space available for users to move the app around.
 
@@ -125,7 +125,7 @@ You can use the `geometrychange` event and the `visible` property on the `naviga
 
 > [!NOTE]
 > The `geometrychange` is fired very frequently when the user resizes the window. To avoid running layout-changing code too often and cause performance problems in your app, it is recommended to use a `debounce` function to limit how many times the event is handled.
-> Navigate to [The Difference Between Throttling and Debouncing][CssTricksThrottlingDebouncing] to learn more about `debounce`.
+> To learn more about `debounce`, go to [The Difference Between Throttling and Debouncing][CssTricksThrottlingDebouncing].
 
 ```javascript
 const debounce = (func, wait) => {
@@ -159,12 +159,12 @@ if ('windowControlsOverlay' in navigator) {
 My Tracks is a PWA demo app that uses the Window Controls Overlay feature.
 
 * [Enable the feature](#enable-the-feature-in-your-app) in Microsoft Edge.
-* Navigate to [My Tracks][MyTracksDemoApp] and install the app.
+* Go to [My Tracks][MyTracksDemoApp] and install the app.
 * Select the **Hide title bar** button from the app title bar.
 
 Notice that the app now displays content all the way to the top of the window frame, where the title bar used to be. The top area of the map is also a drag handler to let users move the window.
 
-:::image type="content" source="../media/my-tracks-draggable-titlebar.png" alt-text="The top area of the map can be used to move the window" lightbox="../media/my-tracks-draggable-titlebar.png":::
+:::image type="content" source="../media/my-tracks-draggable-titlebar.png" alt-text="The top area of the map can be used to move the window." lightbox="../media/my-tracks-draggable-titlebar.png":::
 
 The source code for this app can be accessed on the [My Tracks GitHub repository][MyTracksDemoAppGitHub].
 
@@ -174,13 +174,13 @@ The source code for this app can be accessed on the [My Tracks GitHub repository
 
 
 <!-- ====================================================================== -->
-## See also  
+## See also
 
 *   [Window Controls Overlay video tutorial](https://www.youtube.com/watch?v=NvClp35dFVI)
 *   [Customize the window controls overlay of your PWA's title bar][WebDevWindowControlsOverlay]
 
 
-<!-- links -->  
+<!-- links -->
 [CssTricksThrottlingDebouncing]: https://css-tricks.com/the-difference-between-throttling-and-debouncing/ "The Difference Between Throttling and Debouncing  | CSS-Tricks"
 [WebDevWindowControlsOverlay]: https://web.dev/window-controls-overlay/ "Customize the window controls overlay of your PWA's title bar | web.dev"
 [MyTracksDemoApp]: https://captainbrosset.github.io/mytracks/ "My Tracks"

@@ -74,17 +74,21 @@ self.addEventListener( "fetch", event => {
 });
 ```
 
-The code snippet runs within the Service Worker whenever the browser makes a `fetch` request for this site. Within that event, there is a conditional statement that runs if the request is for an HTML file. The Service Worker checks to see if the file already exists in any cache \(using the `match()` method\). If the request exists in the cache, that cached result is returned. If not, a new `fetch` for that resource is run, a copy of the response is cached for later, and the response is returned. If the `fetch` fails because the network is unavailable, the offline page is returned from the cache.
+The code snippet runs within the Service Worker whenever the browser makes a `fetch` request for this site. Within that event, there is a conditional statement that runs if the request is for an HTML file. The Service Worker checks to see if the file already exists in any cache (using the `match()` method). If the request exists in the cache, that cached result is returned. If not, a new `fetch` for that resource is run, a copy of the response is cached for later, and the response is returned. If the `fetch` fails because the network is unavailable, the offline page is returned from the cache.
 
-This simple introduction shows how to use caching in your progressive web app (PWA). Each PWA is different and may use different caching strategies. Your code may look different, and you may use different caching strategies for different routes within the same application.
+This simple introduction shows how to use caching in your progressive web app (PWA). Each PWA is different and may use different caching strategies. Your code may look different, and you can use different caching strategies for different routes within the same application.
 
+
+<!-- ====================================================================== -->
 ## Use IndexedDB in your PWA to store structured data
 
 `IndexedDB` is an API for storing structured data. Similar to the `Cache` API, it is also asynchronous, which means you can use it in the main thread or with Web Workers such as Service Workers.  Use the `IndexedDB` API for storing a significant amount of structured data on the client, or binary data, such as encrypted media objects.  See [MDN primer on using IndexedDB][MDNIndexeddbApiUsing].
 
+
+<!-- ====================================================================== -->
 ## Understand storage options for PWAs
 
-Sometimes you may need to store small amounts of data in order to provide a better offline experience for your users. If that is the case, you may find the simplicity of the key-value pair system of web storage meets your needs.
+Sometimes you might need to store small amounts of data in order to provide a better offline experience for your users. If that is the case, you might find that the simplicity of the key-value pair system of web storage meets your needs.
 
 > [!IMPORTANT]
 > Web Storage is a synchronous process and is not available for use within worker threads such as Service Workers. Heavy usage may create performance issues for your application.
@@ -100,7 +104,7 @@ var data = {
 localStorage.setItem( window.location, JSON.stringify(data) );
 ```
 
-This code snippet grabs metadata about the current page and stores it in a JavaScript object. Then it stores that value as JSON in `localStorage` using the `setItem()` method, and assigns a key equal to the current `window.location` URL. You may retrieve the information from `localStorage` using the `getItem()` method.
+This code snippet grabs metadata about the current page and stores it in a JavaScript object. Then it stores that value as JSON in `localStorage` using the `setItem()` method, and assigns a key equal to the current `window.location` URL. You can retrieve the information from `localStorage` by using the `getItem()` method.
 
 The following code snippet shows how to use caching with `localstorage` to enumerate cached pages and extract metadata to perform a task, such as building a list of links.
 
@@ -151,9 +155,9 @@ window.addEventListener("offline", function(){
 });
 ```
 
-## See also
 
-To learn more about managing offline scenarios, navigate to the following pages.
+<!-- ====================================================================== -->
+## See also
 
 *   [Cache][MDNCache]
 *   [IndexedDB][MDNIndexeddbApi]
@@ -163,8 +167,9 @@ To learn more about managing offline scenarios, navigate to the following pages.
 *   [Online and Offline Events][MDNNavigatoronlineOfflineEvents]
 *   [Request with Intent: Caching Strategies in the Age of PWAs][AlistapartRequestIntentCachingStrategiesAgePwas]
 
-<!-- links -->
 
+<!-- ====================================================================== -->
+<!-- links -->
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"
 [MDNIndexeddbApi]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "IndexedDB API | MDN"
 [MDNIndexeddbApiUsing]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "Using IndexDb - IndexDB API | MDN"

@@ -38,7 +38,7 @@ Protocol Handling is an experimental feature, to enable it:
 1.  Select **Search flags** and type "protocol handling".
 1.  Select **Default** > **Enabled** > **Restart**.
 
-:::image type="content" source="../media/enable-protocol-handling-experiment.png" alt-text="Enable the 'Protocol handling' API experiment" lightbox="../media/enable-protocol-handling-experiment.png":::
+:::image type="content" source="../media/enable-protocol-handling-experiment.png" alt-text="Enable the 'Protocol handling' API experiment." lightbox="../media/enable-protocol-handling-experiment.png":::
 
 Protocol Handling is also an origin trial in Microsoft Edge. Learn [how to enroll your site in an origin trial](./origin-trials.md#enroll-your-site-in-an-origin-trial).
 

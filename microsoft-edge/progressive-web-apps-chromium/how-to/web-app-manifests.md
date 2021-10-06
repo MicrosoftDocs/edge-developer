@@ -20,7 +20,7 @@ A Web App Manifest is a JSON file that must be referenced from your website's HT
 ```
 
 > [!NOTE]
-> The manifest file's content must be valid JSON, but the file can also be named like `app_name.webmanifest`. If you do choose to use the `webmanifest` extension, verify that your HTTP server serves it with the `application/manifest+json` MIME type.
+> The manifest file's content must be valid JSON, but the file can also be named like `app_name.webmanifest`. If you choose to use the `webmanifest` extension, verify that your HTTP server serves it with the `application/manifest+json` MIME type.
 
 At a minimum, a manifest file should contain the following information:
 
@@ -71,7 +71,7 @@ Below is a manifest file that uses these manifest members:
 }
 ```
 
-To learn more about manifest members, navigate to the [Web app manifests documentation][MDNWebAppManifests].
+To learn more about manifest members, go to the [Web app manifests documentation][MDNWebAppManifests].
 
 Using a manifest also enables you to unlock powerful features that allow your app to behave like native apps, like adding app shortcuts or identifying as a share target.
 
@@ -105,7 +105,7 @@ Most operating systems provide quick access to key app features using shortcuts 
 ]
 ```
 
-To learn more about shortcuts, navigate to [Define app shortcuts](shortcuts.md).
+To learn more about shortcuts, go to [Define app shortcuts](shortcuts.md).
 
 
 <!-- ====================================================================== -->
@@ -126,7 +126,7 @@ To enable users to quickly share links and files with native applications, use t
 
 The above `share_target` object establishes `/share.html` as the `action` page for a share.  This example also defines three parameters that would be passed to that `action` page: `title`, `text`, and `url`.
 
-To learn more about using the Share Target feature, navigate to [Share with other apps](share.md).
+To learn more about using the Share Target feature, go to [Share with other apps](share.md).
 
 
 <!-- ====================================================================== -->
