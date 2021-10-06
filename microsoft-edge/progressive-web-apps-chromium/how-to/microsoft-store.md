@@ -124,10 +124,7 @@ To submit your app to the Store:
 
     :::image type="content" source="../media/windows-partner-center-start-submission.msft.png" alt-text="Start a new app submission on Windows Partner Center." lightbox="../media/windows-partner-center-start-submission.msft.png":::
 
-1.  Complete the following prompts for information about your app.
-    *   pricing
-    *   age rating
-    *   and more
+1.  When you are prompted, provide information about your app, such as pricing and age rating.
 
 1.  On the **Packages** prompt, select the `.msixbundle` and the `.classic.appxbundle` files you generated in the [Package your PWA](#package-your-pwa-for-the-store) section.
 

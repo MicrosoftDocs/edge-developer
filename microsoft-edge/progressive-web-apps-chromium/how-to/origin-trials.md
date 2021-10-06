@@ -20,7 +20,7 @@ Some of the PWA features in Microsoft Edge are still experimental. Experimental 
 <!-- ====================================================================== -->
 ## Toggle experimental features
 
-To turn on (or off) experimental features in Microsoft Edge, complete the following steps.
+To turn experimental features on or off:
 
 1.  Open Microsoft Edge.
 1.  Go to `edge://flags`.

@@ -285,7 +285,7 @@ You can find more information about the `fetch` function on the [BackgroundFetch
 <!-- ====================================================================== -->
 ## Re-engage users with notifications and badges
 
-The Notifications and App Badging APIs can be used to let users know that background tasks, downloads, or fresh content have been completed without interrupting their workflows. Using notifications and badges can increase user re-engagement with your app.
+The Notifications and App Badging APIs can be used to let users know that background tasks, downloads, or fresh content have been completed, without interrupting their workflows. Using notifications and badges can increase user re-engagement with your app.
 
 With Microsoft Edge, notifications integrate with the system notification center, and badges appear on app icons in the Task Bar.
 
