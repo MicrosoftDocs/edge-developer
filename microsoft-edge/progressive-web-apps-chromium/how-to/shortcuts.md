@@ -62,7 +62,7 @@ The following properties can be used:
 | `url` | The URI in the web app that opens when the shortcut is activated. |
 | `icons` | A set of icons that represents the shortcut. |
 
-To learn more, go to the [Shortcuts MDN documentation](https://developer.mozilla.org/docs/Web/Manifest/shortcuts).
+To learn more, see the [Shortcuts MDN documentation](https://developer.mozilla.org/docs/Web/Manifest/shortcuts).
 
 
 <!-- ====================================================================== -->
@@ -76,4 +76,4 @@ You can test that your shortcuts are configured correctly by using the **Applica
 
 :::image type="content" source="../media/devtools-debug-shortcuts.png" alt-text="Shortcuts are listed in the Application panel." lightbox="../media/devtools-debug-shortcuts.png":::
 
-To learn more about using the Application panel to debug PWAs, go to [Debug Progressive Web Apps](../../devtools-guide-chromium/progressive-web-apps/index.md).
+To learn more about using the Application panel to debug PWAs, see [Debug Progressive Web Apps](../../devtools-guide-chromium/progressive-web-apps/index.md).

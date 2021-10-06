@@ -140,7 +140,7 @@ Your web app now has a service worker that uses the cache-first strategy.  The n
 
 Confirm that your service worker runs, as follows:
 
-1.  Go to your web app using `http://localhost:3000`.  If your web app is not available, run the following command.
+1.  Go to your web app at `http://localhost:3000`.  If your web app is not available, run the following command.
 
     ```shell
     npm start
@@ -183,7 +183,7 @@ To build a robust, real-world PWA, consider the following web best practices:
       [Cross-browser compatibility][MDNCrossBrowserTesting]
    :::column-end:::
    :::column span="2":::
-      Ensure your PWA works by [testing][MicrosoftDeveloperEdgeToolsRemote] in different browsers and environments.
+      Make sure your PWA works, by [testing][MicrosoftDeveloperEdgeToolsRemote] it in different browsers and environments.
    :::column-end:::
 :::row-end:::
 :::row:::

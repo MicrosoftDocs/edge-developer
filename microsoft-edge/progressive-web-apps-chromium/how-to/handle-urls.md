@@ -102,7 +102,7 @@ Let's take the example of a PWA hosted at `https://app.contoso.com` trying to ha
     }
     ```
 
-To learn more about the valid members in `web-app-origin-association`, go to the [URL Handlers explainer][WICGUrlHandlerExplainer].
+To learn more about the valid members in `web-app-origin-association`, see the [URL Handlers explainer][WICGUrlHandlerExplainer].
 
 
 <!-- ====================================================================== -->

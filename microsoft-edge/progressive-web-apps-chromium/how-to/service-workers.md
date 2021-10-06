@@ -87,7 +87,7 @@ Within the `fetch` handler, you can control whether a request goes to the networ
 <!-- ====================================================================== -->
 ## Push Notifications
 
-Service Workers can push notifications to users.  Push notifications can prompt users to re-engage with your application after time has elapsed.  To learn more, go to [Re-engage users with notifications, push messages, and badges](./notifications-badges.md).
+Service Workers can push notifications to users.  Push notifications can prompt users to re-engage with your application after time has elapsed.  To learn more, see [Re-engage users with notifications, push messages, and badges](./notifications-badges.md).
 
 
 <!-- ====================================================================== -->

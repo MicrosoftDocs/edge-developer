@@ -65,7 +65,7 @@ Once enabled, users of the app can choose to have the title bar or not, by click
 
 Since users can make this choice, and because your app can also run in a web browser, or on a mobile device, your code can't make any assumptions as to whether the window controls overlay is displayed. It is therefore important for your code to react to title bar geometry changes.
 
-To learn more about this, go to [React to overlay changes](#react-to-overlay-changes).
+To learn more, see [React to overlay changes](#react-to-overlay-changes).
 
 
 <!-- ====================================================================== -->
@@ -125,7 +125,7 @@ You can use the `geometrychange` event and the `visible` property on the `naviga
 
 > [!NOTE]
 > The `geometrychange` is fired very frequently when the user resizes the window. To avoid running layout-changing code too often and cause performance problems in your app, it is recommended to use a `debounce` function to limit how many times the event is handled.
-> To learn more about `debounce`, go to [The Difference Between Throttling and Debouncing][CssTricksThrottlingDebouncing].
+> To learn more about `debounce`, see [The Difference Between Throttling and Debouncing][CssTricksThrottlingDebouncing].
 
 ```javascript
 const debounce = (func, wait) => {

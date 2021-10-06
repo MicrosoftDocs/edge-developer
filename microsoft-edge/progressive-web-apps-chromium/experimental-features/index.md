@@ -25,10 +25,10 @@ To turn on (or off) experimental features in Microsoft Edge, complete the follow
 1.  Open Microsoft Edge.
 
     > [!NOTE]
-    > Ensure you use a Microsoft Edge version that has the Experiment listed in this article.  Go to [Experimental features](#features-that-are-available-to-test).
+    > Make sure you use a Microsoft Edge version that has the Experiment listed in this article.  See [Experimental features](#features-that-are-available-to-test).
 
 1.  Go to `edge://flags`.
-1.  Go to the relevant experiment.
+1.  Navigate to the relevant experiment.
 1.  Select the dropdown menu next to the experiment description and select `Enabled`.
 
     :::image type="content" source="../media/turn-on-experimental-flag.png" alt-text="Select Enabled to turn on an experiment." lightbox="../media/turn-on-experimental-flag.png":::
@@ -46,7 +46,7 @@ To turn on (or off) experimental features in Microsoft Edge, complete the follow
 
 Microsoft Edge sometimes uses origin trials to test features for specific domains or websites.  You may want to use an origin trial for your website to apply a specific feature.  If you're a website owner, you can enroll in an origin trial.  An origin trial provides features to a percentage of Microsoft Edge users who visit your website.
 
-For more information about Origin Trials, go to [Microsoft Edge Origin Trials Developer Console][MicrosoftDeveloperMicrosoftEdgeOriginTrials].
+For more information about Origin Trials, see [Microsoft Edge Origin Trials Developer Console][MicrosoftDeveloperMicrosoftEdgeOriginTrials].
 
 > [!NOTE]
 > Experimental features are constantly updated and may cause performance issues.  To turn off an experimental feature, go to [Turn on experimental features](#turn-on-experimental-features), navigate to the experiment, and then select `Disabled`.
@@ -72,7 +72,7 @@ The following list describes experimental web app features that are available to
 
 A uniform resource identifier (URI) can be used to define more than just links to webpages and web content using the HTTP or FTP protocol.  URIs can be used to describe links to anything that you codify into a schema.  For example, the `mailto://` protocol is used to describe an email link and the operating system (OS) or browser decides which webpage or app should handle that protocol.
 
-For more information about existing browser-based support, go to [Web-based protocol handlers][MdnDocsWebApiNavigatorRegisterprotocolhandlerWebBasedProtocolHandlers].
+For more information about existing browser-based support, see [Web-based protocol handlers][MdnDocsWebApiNavigatorRegisterprotocolhandlerWebBasedProtocolHandlers].
 
 This feature allows you to:
 
@@ -95,7 +95,7 @@ If more than one app registers a protocol, the user is presented with a prompt. 
 
 To preview protocol handling in Microsoft Edge on Windows, go to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWA Protocol handling**.
 
-For more information about origin trial is running for protocol handlers, go to [Register for Web App Protocol Handler Registration][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].
+For more information about origin trial is running for protocol handlers, see [Register for Web App Protocol Handler Registration][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].
 
 ### Example Manifest
 
@@ -137,7 +137,7 @@ A uniform resource locator (URL) is a type of URI.  Create a more engaging exper
 
 This feature allows you to register a PWA with the browser using the web app manifest and declare that the browser handles specific links.  To register a PWA with the browser, add the optional `url_handlers` member to the manifest file.  The `url_handlers` member is an `object[]` that groups the origins of URIs that the app wishes to handle.
 
-Link handling is validated by the browser using a `web-app-origin-association` JSON file that is located on the origin.  The origin file further fine-tunes the included or excluded paths at the origin.  For detailed instructions about testing the URL handler, go to [PWAs as URL Handlers][GithubWicgPwaUrlHandlerBlobMainExplainerMd].
+Link handling is validated by the browser using a `web-app-origin-association` JSON file that is located on the origin.  The origin file further fine-tunes the included or excluded paths at the origin.  For detailed instructions about testing the URL handler, see [PWAs as URL Handlers][GithubWicgPwaUrlHandlerBlobMainExplainerMd].
 
 To preview URL link handling in Microsoft Edge on Windows, go to [Turn on experimental features](#turn-on-experimental-features) and turn on **Desktop PWA URL Handling**.
 
@@ -237,7 +237,7 @@ Besides the previously listed controls, the UI displayed in the overlay is dynam
 
 ### Working around the Window Controls Overlay
 
-Your web content must be aware of the reserved area for the controls overlay.  Ensure the reserved area doesn't expect user interaction.  Query the browser for the bounding rectangle and visibility of the controls overlay.  The information is provided to you through JavaScript APIs and CSS environment variables.
+Your web content must be aware of the reserved area for the controls overlay.  Make sure that the reserved area doesn't expect user interaction.  Query the browser for the bounding rectangle and visibility of the controls overlay.  The information is provided to you through JavaScript APIs and CSS environment variables.
 
 #### JavaScript APIs
 
@@ -348,7 +348,7 @@ The draggable and non-draggable regions are set using `-webkit-app-region: drag`
 }
 ```
 
-For the `body` element, margins are set to `0` to ensure the title bar reaches to the edges of the window.
+For the `body` element, margins are set to `0` to ensure that the title bar reaches to the edges of the window.
 
 ```css
 body {
@@ -482,7 +482,7 @@ body {
 }
 ```
 
-Chromium-based browsers are testing and shaping this feature.  For more information including code examples, go to [Customize the window controls overlay of your PWA's title bar][WebDevWindowControlsOverlay].
+Chromium-based browsers are testing and shaping this feature.  For more information including code examples, see [Customize the window controls overlay of your PWA's title bar][WebDevWindowControlsOverlay].
 
 
 <!-- ====================================================================== -->
@@ -559,9 +559,9 @@ The following properties define each shortcut.
 <!-- ====================================================================== -->
 ## File Handling
 
-The ability to register as a file type handler is in the experimentation phase.  You can specify the file types that your app handles in a manifest entry.  During installation, the user's host OS registers your app as a file handler for the listed file types.  Ensure the existence of the feature `launchQueue` in your apps startup code and that it handles the file.
+The ability to register as a file type handler is in the experimentation phase.  You can specify the file types that your app handles in a manifest entry.  During installation, the user's host OS registers your app as a file handler for the listed file types.  Make sure `launchQueue` exists in your app's startup code and that it handles the file.
 
-Chromium-based browsers are testing and shaping this feature.  For more information including code examples, go to [Let web applications be file handlers][WebDevFileHandling].
+Chromium-based browsers are testing and shaping this feature.  For more information, including code examples, see [Let web applications be file handlers][WebDevFileHandling].
 
 To preview file handling in Microsoft Edge for Windows 10, go to [Turn on experimental features](#turn-on-experimental-features) and turn on **File Handling API**.
 

@@ -48,7 +48,7 @@ navigator.serviceWorker.ready.then(registration => {
 });
 ```
 
-To learn more about the `ServiceWorkerRegistration` interface, go to the [ServiceWorkerRegistration documentation](https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration).
+To learn more about the `ServiceWorkerRegistration` interface, see the [ServiceWorkerRegistration documentation](https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration).
 
 ### Request a sync
 
@@ -92,7 +92,7 @@ In the example code above, a `sync` event listener is added in the service worke
 
 Typically, the `doTheWork` function will send the information to the server that couldn't be sent when the user was offline. It may be useful to store this information in [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) storage from the frontend so that it can later be retrieved from the service worker when `doTheWork` is executed.
 
-For more information about the `Sync` event, the `ServiceWorkerRegistration`, and the `SyncManager` interface, go to the [Background Synchronization draft specification](https://wicg.github.io/background-sync/spec/) and [Background Synchronization API documentation](https://developer.mozilla.org/docs/Web/API/Background_Synchronization_API).
+For more information about the `Sync` event, the `ServiceWorkerRegistration`, and the `SyncManager` interface, see the [Background Synchronization draft specification](https://wicg.github.io/background-sync/spec/) and [Background Synchronization API documentation](https://developer.mozilla.org/docs/Web/API/Background_Synchronization_API).
 
 ### Demo PWA
 
@@ -123,7 +123,7 @@ To test the feature:
 
 1.  Reload the app. The movie details now appear.
 
-Go to the [source code on GitHub](https://github.com/captainbrosset/movies-db-pwa/).
+For the sample code, go to the [source code on GitHub](https://github.com/captainbrosset/movies-db-pwa/).
 
 ### Debug background syncs with DevTools
 
@@ -184,7 +184,7 @@ if (status.state === 'granted') {
 }
 ```
 
-To learn more about the Permissions API, go to the [Permissions API documentation](https://developer.mozilla.org/docs/Web/API/Permissions_API).
+To learn more about the Permissions API, see the [Permissions API documentation](https://developer.mozilla.org/docs/Web/API/Permissions_API).
 
 ### Register a periodic sync
 
@@ -289,4 +289,4 @@ The Notifications and App Badging APIs can be used to let users know that backgr
 
 With Microsoft Edge, notifications integrate with the system notification center, and badges appear on app icons in the Task Bar.
 
-To learn how to use these APIs, go to [Re-engage users with notifications, push messages, and badges](./notifications-badges.md).
+To learn how to use these APIs, see [Re-engage users with notifications, push messages, and badges](./notifications-badges.md).

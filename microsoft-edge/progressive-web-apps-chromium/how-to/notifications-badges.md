@@ -125,7 +125,7 @@ self.addEventListener('notificationclick', event => {
 }, false);
 ```
 
-To learn more about notification actions, go to the [NotificationAction documentation][MDNNotificationActionAPI].
+To learn more about notification actions, see the [NotificationAction documentation][MDNNotificationActionAPI].
 
 
 <!-- ====================================================================== -->
@@ -200,7 +200,7 @@ The following steps have been adapted from the Push Rich Demo in [Service Worker
 <!-- ====================================================================== -->
 ### Step 1 - Generate VAPID keys
 
-Push notifications require VAPID (Voluntary Application Server Identification) keys in order to send push messages to the PWA client.  There are several VAPID key generators available online (for example, [vapidkeys.com][VapidkeysMain]).  After generation, you should get a JSON object containing a public and private key.  Save the keys for later steps in the following tutorial.  For information about VAPID and WebPush, go to [Sending VAPID identified WebPush Notifications using the Mozilla Push Service][MozillaServicesSendingVapidWebPushNotificationsPush].
+Push notifications require VAPID (Voluntary Application Server Identification) keys in order to send push messages to the PWA client.  There are several VAPID key generators available online (for example, [vapidkeys.com][VapidkeysMain]).  After generation, you should get a JSON object containing a public and private key.  Save the keys for later steps in the following tutorial.  For information about VAPID and WebPush, see [Sending VAPID identified WebPush Notifications using the Mozilla Push Service][MozillaServicesSendingVapidWebPushNotificationsPush].
 
 
 <!-- ====================================================================== -->
