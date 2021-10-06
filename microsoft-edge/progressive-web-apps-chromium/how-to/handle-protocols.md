@@ -26,27 +26,27 @@ With Protocol Handling, PWAs can register to handle specific protocols when gett
 
 Custom protocols can also be handled if a PWA registers a protocol that starts with the `web+` prefix.
 
-To learn more about other existing protocols, navigate to the [list of URI schemes][WikiListOfURISchemes].
+To learn more about other existing protocols, see [List of URI schemes](https://en.wikipedia.org/wiki/List_of_URI_schemes) at Wikipedia.
 
 
+<!-- ====================================================================== -->
 ## Enable protocol handling
 
 Protocol Handling is an experimental feature, to enable it:
 
-1.  Navigate to `edge://flags` in Microsoft Edge.
+1.  Go to `edge://flags` in Microsoft Edge.
 1.  Select **Search flags** and type "protocol handling".
 1.  Select **Default** > **Enabled** > **Restart**.
 
-    :::image type="complex" source="../media/enable-protocol-handling-experiment.png" alt-text="Enable the Protocol handling API experiment" lightbox="../media/enable-protocol-handling-experiment.png":::
-       Enable the Protocol Handling API experiment
-    :::image-end:::
+:::image type="content" source="../media/enable-protocol-handling-experiment.png" alt-text="Enable the 'Protocol handling' API experiment" lightbox="../media/enable-protocol-handling-experiment.png":::
 
-Protocol Handling is also an origin trial in Microsoft Edge. Learn [how to enroll your site in an origin trial][OriginTrials].
+Protocol Handling is also an origin trial in Microsoft Edge. Learn [how to enroll your site in an origin trial](./origin-trials.md#enroll-your-site-in-an-origin-trial).
 
 
+<!-- ====================================================================== -->
 ## Register protocols to handle
 
-To use Protocol Handling, declare which protocols your app handles. This is done in your app [manifest file][ManifestFileDoc], using the `protocol_handlers` array member.
+To use Protocol Handling, declare which protocols your app handles. This is done in your app [manifest file](./web-app-manifests.md), using the `protocol_handlers` array member.
 
 Each entry in the `protocol_handlers` array contains a `protocol` string and a `url` string:
 
@@ -64,13 +64,7 @@ Each entry in the `protocol_handlers` array contains a `protocol` string and a `
 In the above example, the app is registered to handle the `mailto` protocol and when the operating system launches the app in response to it, it navigates to the `/newEmail` URL, replacing the `%s` placeholder with the full URL being handled.
 
 
+<!-- ====================================================================== -->
 ## See also
 
-*  [URL protocol handler registration for PWAs][ProtocolHandlersWebDev].
-
-<!-- links -->
-
-[OriginTrials]: ./origin-trials.md#enroll-your-site-in-an-origin-trial "Experimental features and origin trials | Microsoft Docs"
-[ProtocolHandlersWebDev]: https://web.dev/url-protocol-handler/ "URL protocol handler registration for PWAs | web.dev"
-[WikiListOfURISchemes]: https://en.wikipedia.org/wiki/List_of_URI_schemes "List of URI schemes | Wikipedia"
-[ManifestFileDoc]: ./webappmanifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"
+*  [URL protocol handler registration for PWAs](https://web.dev/url-protocol-handler/)

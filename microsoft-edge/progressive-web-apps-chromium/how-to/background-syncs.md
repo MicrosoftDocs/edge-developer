@@ -308,7 +308,6 @@ Navigate to [Re-engage users with notifications, push messages, and badges][Noti
 
 
 <!-- Links -->
-
 [WICGBackgroundSyncSpec]: https://wicg.github.io/background-sync/spec/ "Web Background Synchronization Draft Community Group Report | WICG"  
 [WICGPeriodicBackgroundSyncSpec]: https://wicg.github.io/periodic-background-sync/ "Web Periodic Background Synchronization Draft Community Group Report | WICG"  
 [WICGBackgroundFetchSpec]: https://wicg.github.io/background-fetch/ "Background Fetch Draft Community Group Report | WICG"

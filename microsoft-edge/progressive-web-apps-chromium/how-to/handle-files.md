@@ -17,18 +17,22 @@ Websites can already let users upload files by [using the `<input type="file">` 
 
 When a PWA is registered as a file handler for certain file types, the operating system can automatically launch the app when those files are opened by the user, similar to how Microsoft Word handles `.docx` files.
 
+
+<!-- ====================================================================== -->
 ## Enable the File Handling API
 
-The File Handling feature is experimental, to enable it:
+The File Handling feature is experimental.
 
-1.  Navigate to `edge://flags` in Microsoft Edge.
+To enable the File Handling feature:
+
+1.  Go to `edge://flags` in Microsoft Edge.
 1.  Select **Search flags** and type "file handling API".
 1.  Select **Default** > **Enabled** > **Restart**.
 
-    :::image type="complex" source="../media/enable-file-handling-experiment.png" alt-text="Enable the File Handling API experiment" lightbox="../media/enable-file-handling-experiment.png":::
-       Enable the File Handling API experiment
-    :::image-end:::
+    :::image type="content" source="../media/enable-file-handling-experiment.png" alt-text="Enable the 'File Handling API' experiment" lightbox="../media/enable-file-handling-experiment.png":::
 
+
+<!-- ====================================================================== -->
 ## Define which files your app handles
 
 The first thing to do is to declare which types of files your app handles. This is done in your app [manifest file][ManifestFileDoc], using the `file_handlers` array member.
@@ -57,11 +61,13 @@ Consider the following example:
 
 In this example, the app registers a single file handler for that accepts text files. When a `.txt` file is opened by the user by, for example, double-clicking its icon on the desktop, then the operating system launches the app using the `/openFile` URL.
 
-## Detect if the File Handling API is available
 
-Before handling the files, your app needs to check if the File Handling API is available on the device and browser.
+<!-- ====================================================================== -->
+## Detect whether the File Handling API is available
 
-The check if the API is available test if the `launchQueue` object exists:
+Before handling the files, your app needs to check whether the File Handling API is available on the device and browser.
+
+To check whether the File Handling API is available, test whether the `launchQueue` object exists, as follows:
 
 ```javascript
 if ('launchQueue' in window) {
@@ -71,6 +77,8 @@ if ('launchQueue' in window) {
 }
 ```
 
+
+<!-- ====================================================================== -->
 ## Handle files on launch
 
 When your app is launched by the OS after a file was opened, you can use the `launchQueue` object to access the file content.
@@ -99,28 +107,26 @@ async function handleFiles(files) {
 }
 ```
 
-The `launchQueue` object queues all the launched files until a consumer is set with `setConsumer`. To learn more about the `launchQueue` and `launchParams` objects, navigate to the [File Handling explainer][WICGFileHandlingExplainer].
+The `launchQueue` object queues all the launched files until a consumer is set with `setConsumer`. To learn more about the `launchQueue` and `launchParams` objects, go to the [File Handling explainer][WICGFileHandlingExplainer].
 
+
+<!-- ====================================================================== -->
 ## Demo
 
 My Tracks is a PWA demo app that uses the File Handling feature to handle `.gpx` files. To try the feature with this demo app:
 
 *  [Enable the feature](#enable-the-file-handling-api) in Microsoft Edge.
-*  Navigate to [My Tracks][MyTracksDemoApp] and install the app.
+*  Go to [My Tracks][MyTracksDemoApp] and install the app.
 *  Download a GPX file on your computer. You can use this [test GPX file][TestGPXFile].
 *  Open the downloaded GPX file.
 
 Notice that the app launches automatically and that Microsoft Edge requests your permission to handle this file.
 
-:::image type="complex" source="../media/my-tracks-allow-file-handling.png" alt-text="The permission request dialog" lightbox="../media/my-tracks-allow-file-handling.png":::
-    The permission request dialog
-:::image-end:::
+:::image type="content" source="../media/my-tracks-allow-file-handling.png" alt-text="The 'Open file?' permission request dialog" lightbox="../media/my-tracks-allow-file-handling.png":::
 
 If you allow the app to handle the file, a new entry appears in the app's sidebar, and you can click the checkbox next to it to visualize the corresponding GPS track.
 
-:::image type="complex" source="../media/my-tracks-new-file.png" alt-text="The new GPS track handled by the My Tracks app" lightbox="../media/my-tracks-new-file.png":::
-    The new GPS track handled by the My Tracks app
-:::image-end:::
+:::image type="content" source="../media/my-tracks-new-file.png" alt-text="The new GPS track handled by the My Tracks app" lightbox="../media/my-tracks-new-file.png":::
 
 The source code for this app can be accessed on the [My Tracks GitHub repository][MyTracksDemoAppGitHub].
 
@@ -128,10 +134,10 @@ The source code for this app can be accessed on the [My Tracks GitHub repository
 * The [file.js][MyTracksDemoAppFileJsFile] source file uses the `launchQueue` object to handle incoming files.
 
 
+<!-- ====================================================================== -->
 <!-- links -->  
-
 [MDNFileUpload]: https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications
-[ManifestFileDoc]: ./webappmanifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"  
+[ManifestFileDoc]: ./web-app-manifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"  
 [WICGFileHandlingExplainer]: https://github.com/WICG/file-handling/blob/main/explainer.md#launch "WICG File Handling explainer | GitHub"
 [MyTracksDemoApp]: https://captainbrosset.github.io/mytracks/ "My Tracks"
 [MyTracksDemoAppGitHub]: https://github.com/captainbrosset/mytracks "Sample web app to demonstrate PWA desktop features | GitHub"

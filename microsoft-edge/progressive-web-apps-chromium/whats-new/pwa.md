@@ -105,9 +105,7 @@ After a PWA is installed from the Microsoft Edge browser on Windows, users can n
 
 For convenience, this flyout dialog box is shown the first time the app is launched.
 
-:::image type="complex" source="media/postInstallFlyout.png" alt-text="The post-install flyout dialog box with options for Pin to Taskbar, Pin to Start, Create Desktop Shortcut, and Auto-Start on Device Login" lightbox="media/postInstallFlyout.png":::
-   The post-install flyout dialog box with options for **Pin to taskbar**, **Pin to Start**, **Create Desktop shortcut**, and **Auto-start on device login**
-:::image-end:::
+:::image type="content" source="media/post-install-flyout.png" alt-text="The post-install flyout dialog box with options for Pin to Taskbar, Pin to Start, Create Desktop Shortcut, and Auto-Start on Device Login" lightbox="media/post-install-flyout.png":::
 
 This feature is being rolled out gradually to all users.  In the meantime, if you'd like to use this feature, navigate to `edge://flags` and enable the flag **Web Apps Post Install Dialog**.
 

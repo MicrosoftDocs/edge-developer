@@ -384,9 +384,9 @@
             - name: Get started with PWAs
               href: progressive-web-apps-chromium/how-to/index.md
             - name: Web app manifest
-              href: progressive-web-apps-chromium/how-to/webappmanifests.md
-            - name: Service Worker
-              href: progressive-web-apps-chromium/how-to/serviceworker.md
+              href: progressive-web-apps-chromium/how-to/web-app-manifests.md
+            - name: Service Workers
+              href: progressive-web-apps-chromium/how-to/service-workers.md
             - name: Offline scenarios
               href: progressive-web-apps-chromium/how-to/offline.md
             - name: Publish PWAs to the Microsoft Store

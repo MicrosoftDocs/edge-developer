@@ -82,8 +82,7 @@ You can test that your shortcuts are configured correctly by using the **Applica
 To learn more about using the Application panel to debug PWAs, navigate to [Debug Progressive Web Apps][ApplicationManifestDevTools].  
 
 <!-- Links -->
-
-[ManifestFileDoc]: ./webappmanifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"  
+[ManifestFileDoc]: ./web-app-manifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"  
 [MDNShortcuts]: https://developer.mozilla.org/en-US/docs/Web/Manifest/shortcuts "shortcuts - Web App Manifest | MDN"  
 [OpenDevTools]: ../../devtools-guide-chromium/open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 [ApplicationManifestDevTools]: ../../devtools-guide-chromium/progressive-web-apps/index.md "Debug Progressive Web Apps | Microsoft Docs"  

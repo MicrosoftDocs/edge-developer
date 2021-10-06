@@ -156,4 +156,4 @@ You can find the [source code on GitHub][DemoDevToolsTipsGitHub]. In particular,
 [DemoDevToolsTipsGitHub]: https://github.com/captainbrosset/devtools-tips/ "DevTools Tips | GitHub"
 [DemoDevToolsTipsManifestJson]: https://github.com/captainbrosset/devtools-tips/blob/main/src/manifest.json
 [DemoDevToolsTipsWebAppOriginAssociation]: https://github.com/captainbrosset/devtools-tips/blob/main/src/.well-known/web-app-origin-association
-[ManifestFileDoc]: ./webappmanifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"
+[ManifestFileDoc]: ./web-app-manifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"
