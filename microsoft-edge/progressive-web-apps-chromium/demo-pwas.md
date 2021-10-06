@@ -12,96 +12,91 @@ keywords: progressive web apps, PWA, demos, samples
 
 Use this list of sample apps to learn more about how to use PWA features and APIs.
 
-:::row:::
-    :::column span="2":::
-        **Webboard**
+## Webboard
 
-        [App][Webboard], [source code][WebboardSourceCode].
+Intelligent whiteboarding app.
 
-        Intelligent whiteboarding app.
+[App][Webboard], [source code][WebboardSourceCode].
 
-        Features:
+Features:
 
-        *  [Shortcuts][FeatureShortcut]
-        *  [Web Share][FeatureShare]
-        *  [Share Target][FeatureShareTarget]
-    :::column-end:::
-    :::column:::
-        :::image type="content" source="./media/webboard.png" alt-text="The Webboard drawing app." lightbox="./media/webboard.png":::
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="2":::
-        **DevTools Tips**
+*  [Shortcuts][FeatureShortcut]
+*  [Web Share][FeatureShare]
+*  [Share Target][FeatureShareTarget]
 
-        [App][DevToolsTips], [source code][DevToolsTipsSourceCode].
+:::image type="content" source="./media/webboard.png" alt-text="The Webboard drawing app." lightbox="./media/webboard.png":::
 
-        List of tips and tricks for DevTools.
+## DevTools Tips
 
-        Features:
+List of tips and tricks for DevTools.
 
-        *  [Web Share][FeatureShare]
-        *  [URL handling][FeatureUrlHandling]
-        *  [Background sync][FeatureBackgroundSync]
-        *  [Periodic background sync][FeaturePeriodicBackgroundSync]
-        *  [Notifications][FeatureNotifications]
-    :::column-end:::
-    :::column:::
-        :::image type="content" source="./media/devtools-tips.png" alt-text="The devtools-tips app." lightbox="./media/devtools-tips.png":::
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="2":::
-        **My Tracks**
+[App][DevToolsTips], [source code][DevToolsTipsSourceCode].
 
-        [App][MyTracks], [source code][MyTracksSourceCode].
+Features:
 
-        GPS tracks visualization app.
+*  [Web Share][FeatureShare]
+*  [URL handling][FeatureUrlHandling]
+*  [Background sync][FeatureBackgroundSync]
+*  [Periodic background sync][FeaturePeriodicBackgroundSync]
+*  [Notifications][FeatureNotifications]
 
-        Features:
+:::image type="content" source="./media/devtools-tips.png" alt-text="The devtools-tips app." lightbox="./media/devtools-tips.png":::
 
-        *  [Window Controls Overlay][FeatureWindowControlsOverlay]
-        *  [Protocol handling][FeatureProtocolHandling]
-        *  [Shortcuts][FeatureShortcut]
-        *  [File handling][FeatureFileHandling]
-    :::column-end:::
-    :::column:::
-        :::image type="content" source="./media/my-tracks.png" alt-text="The My Tracks app." lightbox="./media/my-tracks.png":::
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="2":::
-        **My Movies**
+## My Tracks
 
-        [App][MyMovies], [source code][MyMoviesSourceCode].
+GPS tracks visualization app.
 
-        Search and store movies.
+[App][MyTracks], [source code][MyTracksSourceCode].
 
-        Features:
+Features:
 
-        *  [Background sync][FeatureBackgroundSync]
-        *  [Notifications][FeatureNotifications]
-    :::column-end:::
-    :::column:::
-        :::image type="content" source="./media/my-movies.png" alt-text="The My Movies app." lightbox="./media/my-movies.png":::
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="2":::
-        **Yahtzee**
+*  [Window Controls Overlay][FeatureWindowControlsOverlay]
+*  [Protocol handling][FeatureProtocolHandling]
+*  [Shortcuts][FeatureShortcut]
+*  [File handling][FeatureFileHandling]
 
-        [App][Yahtzee], [source code][YahtzeeSourceCode].
+:::image type="content" source="./media/my-tracks.png" alt-text="The My Tracks app." lightbox="./media/my-tracks.png":::
 
-        Play Yahtzee.
+## My Movies
 
-        Features:
+Search and store movies.
 
-        *  [Window Controls Overlay][FeatureWindowControlsOverlay]
-    :::column-end:::
-    :::column:::
-        :::image type="content" source="./media/yahtzee.png" alt-text="The Yahtzee app." lightbox="./media/yahtzee.png":::
-    :::column-end:::
-:::row-end:::
+[App][MyMovies], [source code][MyMoviesSourceCode].
+
+Features:
+
+*  [Background sync][FeatureBackgroundSync]
+*  [Notifications][FeatureNotifications]
+
+:::image type="content" source="./media/my-movies.png" alt-text="The My Movies app." lightbox="./media/my-movies.png":::
+
+## Yahtzee
+
+Play Yahtzee.
+
+[App][Yahtzee], [source code][YahtzeeSourceCode].
+
+Features:
+
+*  [Window Controls Overlay][FeatureWindowControlsOverlay]
+
+:::image type="content" source="./media/yahtzee.png" alt-text="The Yahtzee app." lightbox="./media/yahtzee.png":::
+
+## BPM Techno
+
+A real-time BPM counter.
+
+[App][BPMTechno], [source code][BPMTechnoSourceCode].
+
+Features:
+
+*  [Shortcuts][FeatureShortcut]
+*  [URL handling][FeatureUrlHandling]
+*  [File handling][FeatureFileHandling]
+*  [Protocol handling][FeatureProtocolHandling]
+*  [Share Target][FeatureShareTarget]
+
+:::image type="content" source="./media/bpm-techno.png" alt-text="The BPM Techno app." lightbox="./media/bpm-techno.png":::
 
 
 <!-- ====================================================================== -->
@@ -116,6 +111,8 @@ Use this list of sample apps to learn more about how to use PWA features and API
 [MyMoviesSourceCode]: https://github.com/captainbrosset/movies-db-pwa "My Movies | GitHub"
 [Yahtzee]: https://yahtzee-pwa.glitch.me/ "Yahtzee"
 [YahtzeeSourceCode]: https://glitch.com/edit/#!/yahtzee-pwa "Yahtzee | Glitch"
+[BPMTechno]: https://bpmtech.no/ "BPM Techno - Free Online Real-Time BPM Counter for DJ"
+[BPMTechnoSourceCode]: https://github.com/webmaxru/bpm-counter "BPM Techno | GitHub"
 
 [FeatureShortcut]: ./how-to/shortcuts.md "Define app shortcuts | Microsoft Docs"
 [FeatureShare]: ./how-to/share.md#sharing-content "Sharing content | Microsoft Docs"
