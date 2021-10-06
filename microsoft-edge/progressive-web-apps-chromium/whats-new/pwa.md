@@ -116,9 +116,9 @@ An unexpected shutdown can occur due to process failure, system restart, or powe
 
 <!-- ====================================================================== -->
 <!-- links -->
-[ExpWCO]: ../experimental-features/index.md#window-controls-overlay-for-installed-desktop-web-apps "Window Controls Overlay for installed desktop web apps - Experimental Features"
-[ExpProtocolHandlers]: ../experimental-features/index.md#uri-protocol-handling "URI Protocol Handling - Experimental Features"
-[ExpURLHandler]: ../experimental-features/index.md#url-link-handling "URL Link Handling - Experimental Features"
+[ExpWCO]: ../how-to/window-controls-overlay.md "Display content in the title bar | Microsoft Docs"
+[ExpProtocolHandlers]: ../how-to/handle-protocols.md "Handle protocols in Progressive Web Apps | Microsoft Docs"
+[ExpURLHandler]: ../how-to/handle-urls.md "Handle URLs in Progressive Web Apps | Microsoft Docs"
 
 <!-- external links -->
 <!-- origin trials -->
