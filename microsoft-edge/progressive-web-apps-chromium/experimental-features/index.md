@@ -506,7 +506,7 @@ To turn on the `Start app when you sign in` feature for an installed PWA,
 1.  Hover on your app.
 1.  Open the contextual menu \(right-click\) and then choose **Start app when you sign in**.
 
-    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="Use the contextual menu to turn on the Start app when you sign in feature in Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
+    :::image type="complex" source="../media/turn-on-run-on-os-login-flag.png" alt-text="Use the contextual menu to turn on the 'Start app when you sign in' feature in Microsoft Edge" lightbox="../media/turn-on-run-on-os-login-flag.png":::
        Use the contextual menu to turn on the **Start app when you sign in** feature in Microsoft Edge
     :::image-end:::
 

@@ -22,63 +22,55 @@ The qualities of a PWA combine **the best of the web and compiled apps**. PWAs r
 PWAs can also be **submitted to the Microsoft Store** where millions of Windows users can discover and easily install them alongside other Windows apps.
 
 
+<!-- ====================================================================== -->
 ## Characteristics of a PWA
 
 PWAs have the same reach as websites: they can be indexed by search engines, can be linked to, and work on all devices from the same codebase. As such they have a much lower development cost than compiled apps that require a specific codebase for Android, iOS, and various desktop operating systems.
 
-<!-- Note that the formatting in this grid is important as it ensures that icons, subtitles, and descriptions within cells are close enough that they feel related.
-Ensure that the there are 2 trailing spaces after each subtitle to cause a <br>
-but avoid an empty line. -->
+<!-- in the below table, keep two trailing spaces after each image line's ::: to keep card elements tight but not concat'd -->
+
 :::row:::
     :::column:::
-        :::image type="icon" source="./media/i_search-small.png":::
-        
+        :::image type="icon" source="./media/i_search-small.png":::  
         **[Discoverable][MDNPwaAdvantagesDiscoverable]**  
         From web search results and supporting app stores
     :::column-end:::
     :::column:::
-        :::image type="icon" source="./media/i_package-small.png":::
-        
+        :::image type="icon" source="./media/i_package-small.png":::  
         **[Installable][MDNPwaAdvantagesInstallable]**  
         Pin and launch from the home screen, Start Menu, Taskbar, and so on
     :::column-end:::
     :::column:::
-        :::image type="icon" source="./media/i_push-notification-small.png":::
-        
+        :::image type="icon" source="./media/i_push-notification-small.png":::  
         **[Re-engageable][MDNPwaAdvantagesReEngageable]**  
         Send push notifications, even when the app is not active
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-        :::image type="icon" source="./media/i_offline-small.png":::
-
+        :::image type="icon" source="./media/i_offline-small.png":::  
         **[Network Independent][MDNPwaAdvantagesNetworkIndependent]**  
         Works offline and in low-network conditions
     :::column-end:::
     :::column:::
-        :::image type="icon" source="./media/i_progressive-small.png":::
-
+        :::image type="icon" source="./media/i_progressive-small.png":::  
         **[Progressive][MDNPwaAdvantagesProgressive]**  
         Experience scales up (or down) with device capabilities
     :::column-end:::
     :::column:::
-        :::image type="icon" source="./media/i_security-small.png":::
-
+        :::image type="icon" source="./media/i_security-small.png":::  
         **[Safe][MDNPwaAdvantagesSafe]**  
         Provides a secure HTTPS endpoint and other user safeguards
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-        :::image type="icon" source="./media/i_responsive-small.png":::
-
+        :::image type="icon" source="./media/i_responsive-small.png":::  
         **[Responsive][MDNPwaAdvantagesResponsive]**  
         Adapts to the user's screen size or orientation and input method
     :::column-end:::
     :::column:::
-        :::image type="icon" source="./media/i_link-small.png":::
-
+        :::image type="icon" source="./media/i_link-small.png":::  
         **[Linkable][MDNPwaAdvantagesLinkable]**  
         Share and launch from a standard hyperlink
     :::column-end:::
@@ -87,6 +79,7 @@ but avoid an empty line. -->
 :::row-end:::
 
 
+<!-- ====================================================================== -->
 ## PWAs on desktop
 
 PWAs are not limited to displaying websites on mobile home screens. PWAs are based on standard, cross-browser, web technologies that allow them to be installed and to run in many different environments.
@@ -102,6 +95,7 @@ With a shared codebase between your website, mobile app, and desktop app (across
 Learn more about [how PWAs integrate on Windows][PwaWindowsUx].
 
 
+<!-- ====================================================================== -->
 ## Bridging the gap between web and desktop apps
 
 There are many new web capabilities built-in to Microsoft Edge that can make your app feel more integrated on Desktop and offer your users with engaging experiences.
@@ -123,6 +117,7 @@ There isn't much you can't do today with Web technologies, and thanks to Microso
 Navigate to [Myth Busting PWAs][Davrous20191018MythBustingPwasNewEdgeEdition] for more information about what PWAs can do.
 
 
+<!-- ====================================================================== -->
 ## The Microsoft Store
 
 Because PWAs are first-class citizens in the [Microsoft Store][PwaMicrosoftStore], users can fully engage with them, from discovery, to installation, to execution, without ever opening the browser.
@@ -132,6 +127,7 @@ As the most used app on PCs, the Microsoft Store provides a trustworthy and fami
 Learn how to [publish your PWA to the Microsoft Store][PwaPublishToStore].
 
 
+<!-- ====================================================================== -->
 ## Success stories
 
 Using PWA technologies is a great way to make your app **safe**, **discoverable**, **linkable**, **easy to install** and update, **responsive**, and **network independent**. Many businesses use PWAs and have had success.
@@ -143,6 +139,7 @@ Using PWA technologies is a great way to make your app **safe**, **discoverable*
 Read more success stories on the [PWA Stats][PwaStats] website.
 
 
+<!-- ====================================================================== -->
 ## See also
 
 *   [Microsoft Build 2020 PWA session][BuildVideo]
@@ -158,8 +155,8 @@ Read more success stories on the [PWA Stats][PwaStats] website.
 *   [What makes a good Progressive Web App?][WebDevGoodPwaChecklist]
 
 
+<!-- ====================================================================== -->
 <!-- Links -->
-
 [MDNApps]: https://developer.mozilla.org/Apps/Progressive "Progressive Web Apps | MDN"
 [AListApartUnderstandingProgressiveEnhancement]: https://alistapart.com/article/understandingprogressiveenhancement "Understanding Progressive Enhancement - A List Apart"
 [PwaStats]: https://www.pwastats.com/ "A community-driven list of stats and news related to Progressive Web Apps"
