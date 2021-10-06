@@ -10,7 +10,7 @@ keywords: progressive web apps, PWA, Edge, Windows, desktop, installation, integ
 ---
 # The user experience of PWAs
 
-On Windows, PWAs are first-class app citizens and any device running Microsoft Edge gets full access to the technologies and characteristics of Progressive Web Apps.
+On Windows, PWAs are first-class app citizens.  Any device running Microsoft Edge gets full access to the technologies and characteristics of Progressive Web Apps.
 
 
 <!-- ====================================================================== -->
@@ -63,7 +63,7 @@ PWAs can also display notifications in the operating system's own notification s
 
 ### Starting PWAs when the user logs in
 
-PWAs can launch automatically when the user logs in on Windows so they can immediately engage with the app.
+PWAs can launch automatically when the user logs in on Windows, so they can immediately engage with the app.
 
 To turn this feature on for an installed PWA:
 
@@ -74,9 +74,9 @@ To turn this feature on for an installed PWA:
 
 :::image type="content" source="./media/turn-on-run-on-os-login-flag.png" alt-text="Use the context menu to turn on the 'Start app when you sign in' feature in Microsoft Edge." lightbox="./media/turn-on-run-on-os-login-flag.png":::
 
-Upon installation of an app, users are also given a chance to turn on the feature in the post-installation dialog.
+After installing an app, users are also given a chance to turn on the feature, in the post-installation dialog.
 
-:::image type="content" source="./media/post-install-run-on-os-login.png" alt-text="The post-installation dialog automatically opens once an app is installed." lightbox="./media/post-install-run-on-os-login.png":::
+:::image type="content" source="./media/post-install-run-on-os-login.png" alt-text="The post-installation dialog automatically opens after an app is installed." lightbox="./media/post-install-run-on-os-login.png":::
 
 
 <!-- ====================================================================== -->

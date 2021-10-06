@@ -53,8 +53,6 @@ npm start
 Now browse to `http://localhost:3000` to view your new web app.
 
 :::image type="content" source="../media/visual-studio-nodejs-express-index.png" alt-text="Running your new PWA on localhost." lightbox="../media/visual-studio-nodejs-express-index.png":::
-   Running your new PWA on localhost
-:::image-end:::
 
 
 <!-- ====================================================================== -->
@@ -146,29 +144,21 @@ Confirm that your service worker runs, as follows:
     npm start
     ```
 
-1.  In Microsoft Edge, select `F12` to open Microsoft Edge DevTools.  Select **Application**, then **Service Workers** to view the service workers.  If the service worker is not displayed, refresh the page.
+1.  In Microsoft Edge, select `F12` to open DevTools.  Select **Application**, then **Service Workers** to view the service workers.  If the service worker is not displayed, refresh the page.
 
-    :::image type="content" source="../media/devtools-sw-overview.png" alt-text="Microsoft Edge DevTools Service Worker overview." lightbox="../media/devtools-sw-overview.png":::
-       Microsoft Edge DevTools Service Worker overview
-    :::image-end:::
+    :::image type="content" source="../media/devtools-sw-overview.png" alt-text="DevTools Service Worker overview." lightbox="../media/devtools-sw-overview.png":::
 
 1.  View the service worker cache by expanding **Cache Storage** and select **pwabuilder-precache**.  All of the resources cached by the service worker should be displayed.  The resources cached by the service worker include the app icon, app manifest, CSS, and JavaScript files.
 
-    :::image type="content" source="../media/devtools-cache.png" alt-text="Service Worker cache in Microsoft Edge DevTools." lightbox="../media/devtools-cache.png":::
-       Service Worker cache in Microsoft Edge DevTools
-    :::image-end:::
+    :::image type="content" source="../media/devtools-cache.png" alt-text="Service Worker cache in DevTools." lightbox="../media/devtools-cache.png":::
 
 1.  Try your PWA as an offline app, as follows.  In DevTools, select **Network**, and then change the status from **Online** to **Offline**.
 
     :::image type="content" source="../media/devtools-offline.png" alt-text="Setting the app to offline mode in DevTools." lightbox="../media/devtools-offline.png":::
-       Setting the app to offline mode in DevTools
-    :::image-end:::
 
 1.  Refresh your app.  It should display the offline mechanism for serving the resources of your app from the cache.
 
-    :::image type="content" source="../media/visual-studio-nodejs-express-index.png" alt-text="PWA running offline." lightbox="../media/visual-studio-nodejs-express-index.png":::
-       PWA running offline
-    :::image-end:::
+    :::image type="content" source="../media/visual-studio-nodejs-express-index.png" alt-text="A PWA running offline." lightbox="../media/visual-studio-nodejs-express-index.png":::
 
 <!-- todo: add an ending of the article here. Say that the app can now be installed, show a breakdown of what the service worker does. -->
 

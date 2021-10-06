@@ -73,7 +73,7 @@ Below is a manifest file that uses these manifest members:
 
 To learn more about manifest members, see the [Web app manifests documentation][MDNWebAppManifests] at MDN.
 
-Using a manifest also enables you to unlock powerful features that allow your app to behave like native apps, like adding app shortcuts or identifying as a share target.
+Using a manifest also enables you to unlock powerful features that allow your app to behave like native apps, such as adding app shortcuts, or identifying as a share target.
 
 <!-- todo: when these experimental features land in the manifest and so are no longer experimental, move the "URI Protocol Handling" & "URL Link Handling" sections from article [Experimental features in Progressive Web Apps (PWAs)](experimental-features/index.md) into the present article, but preserve the two headings there, move them to the bottom, with a link pointing to the moved sections in this article. -->
 
