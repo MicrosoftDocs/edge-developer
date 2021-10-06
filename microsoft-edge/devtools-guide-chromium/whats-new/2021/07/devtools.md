@@ -134,7 +134,7 @@ Now in Microsoft Edge version 93, you can copy a single CSS declaration or all t
    Context menu for a style rule, including **Copy declaration as JS** and **Copy all declarations as JS** commands
 :::image-end:::
 
-To learn more about viewing and changing CSS, navigate to [CSS reference][CssReference].
+To learn more about viewing and changing CSS, navigate to [CSS features reference][CssReference].
 
 
 ## Easier customization of User-Agent Client Hints
@@ -210,7 +210,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 <!-- todo: link directly to the subheading in the page, when available; test the subheading link:
 [ExperimentalFeaturesDetachedElements]: ../../../experimental-features/index.md#detached-elements "Detached elements | Microsoft Docs" -->
 [CustomizeLocalization]: ../../../customize/localization.md "Change DevTools language settings | Microsoft Docs"
-[CssReference]: ../../../css/reference.md "CSS reference | Microsoft Docs"
+[CssReference]: ../../../css/reference.md "CSS features reference | Microsoft Docs"
 [DeviceModeIndexSetUach]: ../../../device-mode/index.md#set-user-agent-client-hints "Set user agent client hints | Microsoft Docs"
 [NetworkReferenceSetUach]: ../../../network/reference.md#set-user-agent-client-hints "Set user agent client hints | Microsoft Docs"
 [ConsoleConsoleDebugJavascript]: ../../../console/console-debug-javascript.md "Fixing JavaScript errors that are reported in the Console | Microsoft Docs"
@@ -238,7 +238,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-xx) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-93) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
