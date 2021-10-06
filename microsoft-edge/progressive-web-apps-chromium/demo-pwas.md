@@ -1,5 +1,5 @@
 ---
-description: This page lists sample apps you can use to learn more about how to build PWAs.
+description: A list of sample apps you can use to learn more about how to build Programmable Web Apps (PWAs).
 title: Sample PWAs
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -27,9 +27,7 @@ Use this list of sample apps to learn more about how to use PWA features and API
         *  [Share Target][FeatureShareTarget]
     :::column-end:::
     :::column:::
-        :::image type="complex" source="./media/webboard.png" alt-text="A screenshot of the Webboard drawing app" lightbox="./media/webboard.png":::
-           The Webboard drawing app
-        :::image-end:::
+        :::image type="content" source="./media/webboard.png" alt-text="The Webboard drawing app." lightbox="./media/webboard.png":::
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -49,9 +47,7 @@ Use this list of sample apps to learn more about how to use PWA features and API
         *  [Notifications][FeatureNotifications]
     :::column-end:::
     :::column:::
-        :::image type="complex" source="./media/devtools-tips.png" alt-text="A screenshot of the devtools-tips app" lightbox="./media/devtools-tips.png":::
-           The DevTools Tips app
-        :::image-end:::
+        :::image type="content" source="./media/devtools-tips.png" alt-text="The devtools-tips app." lightbox="./media/devtools-tips.png":::
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -70,9 +66,7 @@ Use this list of sample apps to learn more about how to use PWA features and API
         *  [File handling][FeatureFileHandling]
     :::column-end:::
     :::column:::
-        :::image type="complex" source="./media/my-tracks.png" alt-text="A screenshot of the My Tracks app" lightbox="./media/my-tracks.png":::
-           The My Tracks app
-        :::image-end:::
+        :::image type="content" source="./media/my-tracks.png" alt-text="The My Tracks app." lightbox="./media/my-tracks.png":::
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -89,9 +83,7 @@ Use this list of sample apps to learn more about how to use PWA features and API
         *  [Notifications][FeatureNotifications]
     :::column-end:::
     :::column:::
-        :::image type="complex" source="./media/my-movies.png" alt-text="A screenshot of the My Movies app" lightbox="./media/my-movies.png":::
-           The My Movies app
-        :::image-end:::
+        :::image type="content" source="./media/my-movies.png" alt-text="The My Movies app." lightbox="./media/my-movies.png":::
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -107,15 +99,13 @@ Use this list of sample apps to learn more about how to use PWA features and API
         *  [Window Controls Overlay][FeatureWindowControlsOverlay]
     :::column-end:::
     :::column:::
-        :::image type="complex" source="./media/yahtzee.png" alt-text="A screenshot of the Yahtzee app" lightbox="./media/yahtzee.png":::
-           The Yahtzee app
-        :::image-end:::
+        :::image type="content" source="./media/yahtzee.png" alt-text="The Yahtzee app." lightbox="./media/yahtzee.png":::
     :::column-end:::
 :::row-end:::
 
 
+<!-- ====================================================================== -->
 <!-- Links -->
-
 [Webboard]: https://webboard.app/ "Webboard"
 [WebboardSourceCode]: https://github.com/pwa-builder/web-whiteboard "Webboard | GitHub"
 [DevToolsTips]: https://devtoolstips.org "DevTools Tips"

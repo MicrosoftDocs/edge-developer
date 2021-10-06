@@ -12,12 +12,10 @@ Use the following options to discuss the new features and changes in the post, o
 *   Submit a suggestion to [The Web We Want][TheWebWeWant].
 *   To file bugs about this article, use the following **Feedback** section.
 
-:::image type="complex" source="../media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools" lightbox="../media/bing-devtools-send-feedback.msft.png":::
-   The **Send Feedback** icon in Microsoft Edge DevTools
-:::image-end:::
+:::image type="content" source="../media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in DevTools." lightbox="../media/bing-devtools-send-feedback.msft.png":::
+
 
 <!-- links -->
-
 [PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a Tweet"
 
 [EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"

@@ -14,6 +14,7 @@ keywords: progressive web apps, PWA, Edge, Windows, theme, color, icon
 PWAs installed on Windows have abilities to customize the way they appear in the operating system that websites do not have. They can define a set of icons and a theme color for the title bar.
 
 
+<!-- ====================================================================== -->
 ## Define icons
 
 In Windows, apps are recognizable to users by their icons. Icons appear in the Taskbar, in the Start Menu, and in other places like system settings.
@@ -63,6 +64,7 @@ Learn more about [the icons member][MDNIconManifestMember].
 <!-- TODO: add information about which sizes Windows require at a minimum, and which sizes are used where -->
 
 
+<!-- ====================================================================== -->
 ## Choose a theme color
 
 On Windows, PWAs have their own application window, with a title bar containing the name of the app and the system critical close, maximize, and minimize buttons.
@@ -71,9 +73,7 @@ The web content created by the PWA fills the entire surface area of the window, 
 
 The image below shows what a PWA looks like when not using a theme color and when using one that matches the main app color.
 
-:::image type="complex" source="../media/app-theme-color-before-after.png" alt-text="A before and after image comparison of a PWA without theme_color and the same PWA with theme_color" lightbox="../media/app-theme-color-before-after.png":::
-    The difference between not using and using a theme color
-:::image-end:::
+:::image type="content" source="../media/app-theme-color-before-after.png" alt-text="The difference between not using and using a theme color." lightbox="../media/app-theme-color-before-after.png":::
 
 The define a theme color, use the `theme_color` web app manifest member as shown below:
 
@@ -94,9 +94,10 @@ Individual web pages can also define a theme color using the [`theme-color` meta
 
 *   [PWABuilder Image Generator][PWABuilderImageGenerator]
 
+
 <!-- ====================================================================== -->
 <!-- links -->
-[MDNIconManifestMember]: https://developer.mozilla.org/en-US/docs/Web/Manifest/icons "icons - Web app manifests | MDN"
+[MDNIconManifestMember]: https://developer.mozilla.org/docs/Web/Manifest/icons "icons - Web app manifests | MDN"
 [PWABuilderImageGenerator]: https://www.pwabuilder.com/imageGenerator "Image Generator | PWABuiler.com"
-[MDNThemeColorMeta]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color "theme-color - HTML | MDN"
+[MDNThemeColorMeta]: https://developer.mozilla.org/docs/Web/HTML/Element/meta/name/theme-color "theme-color - HTML | MDN"
 [WindowControlsOverlay]: ./window-controls-overlay.md "Display content in the title bar | Microsoft Docs"
