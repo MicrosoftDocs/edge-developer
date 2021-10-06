@@ -37,7 +37,7 @@ self.addEventListener( "install", function( event ){
 });
 ```
 
-This code, which runs during the Service Worker `install` life cycle event, opens a cache named `static-cache` and then, when it has a pointer to the cache, adds four resources to it using the `addAll()` method.  Often the approach is coupled with cache retrieval during a `fetch` event.
+This code, which runs during the Service Worker `install` life cycle event, opens a cache named `static-cache`.  Then, when it has a pointer to the cache, it adds four resources to the cache by using the `addAll()` method.  Often this approach is coupled with cache retrieval during a `fetch` event.
 
 ```javascript
 self.addEventListener( "fetch", event => {
@@ -74,7 +74,11 @@ self.addEventListener( "fetch", event => {
 });
 ```
 
-The code snippet runs within the Service Worker whenever the browser makes a `fetch` request for this site. Within that event, there is a conditional statement that runs if the request is for an HTML file. The Service Worker checks to see if the file already exists in any cache (using the `match()` method). If the request exists in the cache, that cached result is returned. If not, a new `fetch` for that resource is run, a copy of the response is cached for later, and the response is returned. If the `fetch` fails because the network is unavailable, the offline page is returned from the cache.
+The code snippet runs within the Service Worker whenever the browser makes a `fetch` request for this site. Within that event, there is a conditional statement that runs if the request is for an HTML file. The Service Worker checks to see whether the file already exists in any cache, by using the `match()` method:
+
+*  If the request exists in the cache, that cached result is returned.
+*  If the request doesn't exist in the cache, a new `fetch` for that resource is run, a copy of the response is cached for later, and the response is returned.
+   * If the `fetch` fails because the network is unavailable, the offline page is returned from the cache.
 
 This simple introduction shows how to use caching in your progressive web app (PWA). Each PWA is different and may use different caching strategies. Your code may look different, and you can use different caching strategies for different routes within the same application.
 
@@ -88,13 +92,18 @@ This simple introduction shows how to use caching in your progressive web app (P
 <!-- ====================================================================== -->
 ## Understand storage options for PWAs
 
-Sometimes you might need to store small amounts of data in order to provide a better offline experience for your users. If that is the case, you might find that the simplicity of the key-value pair system of web storage meets your needs.
+Sometimes you might need to store small amounts of data in order to provide a better offline experience for your users. If that is the case, you might find that the simplicity of the key-value pair system of Web Storage meets your needs.
 
 > [!IMPORTANT]
 > Web Storage is a synchronous process and is not available for use within worker threads such as Service Workers. Heavy usage may create performance issues for your application.
 
 
-There are 2 types of Web Storage: `localStorage` and `sessionStorage`. Each is maintained as a separate data store isolated to the domain that created it. `sessionStorage` persists only for the duration of the browsing session (for example, while the browser is open, which includes refresh and restores). `localStorage` persists until the data is removed by the code, the user, or the browser (for example, when there is limited storage available). The following code snippet shows how to use `localStorage`, which is similar to how `sessionStorage` is used.
+There are 2 types of Web Storage: `localStorage` and `sessionStorage`. Each type of Web Storage is maintained as a separate data store isolated to the domain that created it.
+
+*  `sessionStorage` persists only for the duration of the browsing session (for example, while the browser is open, which includes refresh and restores). 
+*  `localStorage` persists until the data is removed by the code, the user, or the browser (for example, when there is limited storage available).
+
+The following code snippet shows how to use `localStorage`, which is similar to how `sessionStorage` is used.
 
 ```javascript
 var data = {
@@ -136,11 +145,11 @@ The `insertOfflineLink()` method passes the URL of the request into the `localSt
 <!-- ====================================================================== -->
 ## Test for network connections in your PWA
 
-In addition to storing information for offline use, it is helpful to know when a network connection is available in order to synchronize data or inform users that the network status has changed. Use the following options to test for network connectivity.
+In addition to storing information for offline use, it's helpful to know when a network connection is available, in order to synchronize data or inform users that the network status has changed. Use the following options to test for network connectivity.
 
 ### navigator.onLine
 
-The `navigator.onLine` property is a boolean that lets you know the current status of the network. If the value is `true`, the user is online, otherwise the user is offline.
+The `navigator.onLine` property is a boolean that lets you know the current status of the network. If the value is `true`, the user is online; otherwise, the user is offline.
 
 ### Online and Offline Events
 
@@ -159,25 +168,20 @@ window.addEventListener("offline", function(){
 <!-- ====================================================================== -->
 ## See also
 
-*   [Cache][MDNCache]
+*   [Cache](https://developer.mozilla.org/docs/Web/API/Cache)
 *   [IndexedDB][MDNIndexeddbApi]
 *   [Service Worker][MDNServiceWorker]
 *   [Web Storage][MDNWebStorageApi]
 *   [navigator.onLine][MDNNavigatoronline]
 *   [Online and Offline Events][MDNNavigatoronlineOfflineEvents]
-*   [Request with Intent: Caching Strategies in the Age of PWAs][AlistapartRequestIntentCachingStrategiesAgePwas]
+*   [Request with Intent: Caching Strategies in the Age of PWAs](https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas)
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"
 [MDNIndexeddbApi]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "IndexedDB API | MDN"
 [MDNIndexeddbApiUsing]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "Using IndexDb - IndexDB API | MDN"
 [MDNServiceWorker]: https://developer.mozilla.org/docs/Web/API/ServiceWorker "ServiceWorker | MDN"
 [MDNWebStorageApi]: https://developer.mozilla.org/docs/Web/API/Web_Storage_API "Web Storage API | MDN"
 [MDNNavigatoronline]: https://developer.mozilla.org/docs/Web/API/NavigatorOnLine "NavigatorOnLine | MDN"
 [MDNNavigatoronlineOfflineEvents]: https://developer.mozilla.org/docs/Web/API/NavigatorOnLine/Online_and_offline_events "Online and offline events - NavigatorOnLine | MDN"
-
-[AbookapartGoingOffline]: https://abookapart.com/products/going-offline "Going Offline by Jeremy Keith | A Book Apart"
-
-[AlistapartRequestIntentCachingStrategiesAgePwas]: https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas "Request with Intent: Caching Strategies in the Age of PWAs by Aaron Gustafson | A List Apart"
