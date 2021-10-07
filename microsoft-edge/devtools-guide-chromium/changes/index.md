@@ -44,10 +44,10 @@ The Command Menu displays the options after you type `changes`:
 
 <!-- if make this image smaller, maybe keep the big image and use as lightbox, use different .png names -->
 
-:::image type="content" source="media/devtools-intro-command-menu-show-changes.msft.png" alt-text="Command menu displays the options after you type changes":::
+:::image type="content" source="media/devtools-intro-command-menu-show-changes-resized.msft.png" alt-text="Command menu displays the options after you type changes." lightbox="media/devtools-intro-command-menu-show-changes.msft.png":::
 
 DevTools with the **Changes** tool open:
 
 <!-- if make this image smaller, maybe keep the big image and use as lightbox, use different .png names -->
 
-:::image type="content" source="media/devtools-intro-showing-changes.msft.png" alt-text="DevTools with the Changes tool open":::
+:::image type="content" source="media/devtools-intro-showing-changes-resized.msft.png" alt-text="DevTools with the Changes tool open." lightbox="media/devtools-intro-showing-changes.msft.png":::
