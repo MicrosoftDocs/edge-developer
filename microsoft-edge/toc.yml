@@ -301,7 +301,7 @@
               href: devtools-protocol-chromium/index.md
             - name: Keyboard shortcuts
               href: devtools-guide-chromium/shortcuts/index.md
-        - name: Contact
+        - name: Contact the DevTools team
           href: devtools-guide-chromium/contact.md
 # equivalent card: Extensions =================================================
     - name: Microsoft Edge extensions
@@ -471,7 +471,7 @@
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                 - name: COM Interop
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
-        - name: Contact
+        - name: Contact the WebView2 team
           href: webview2/contact.md
 # equivalent card: Test and automation ==========================================
     - name: Test and automation
