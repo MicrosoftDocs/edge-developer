@@ -122,29 +122,6 @@
           items:
             - name: About Panel and Drawer tools
               href: devtools-guide-chromium/about-panel-drawer-tools.md
-    # Console (Panel or Drawer)
-            - name: Console
-              items:
-                - name: Console overview
-                  href: devtools-guide-chromium/console/index.md
-                - name: Log messages
-                  href: devtools-guide-chromium/console/console-log.md
-                - name: Run JavaScript in the Console
-                  href: devtools-guide-chromium/console/console-javascript.md
-                - name: Console features reference
-                  href: devtools-guide-chromium/console/reference.md
-                - name: Console API reference
-                  href: devtools-guide-chromium/console/api.md
-                - name: Console Utilities API reference
-                  href: devtools-guide-chromium/console/utilities.md
-                - name: Watch JavaScript expressions in real time
-                  href: devtools-guide-chromium/console/live-expressions.md
-                - name: Fix JavaScript Console errors
-                  href: devtools-guide-chromium/console/console-debug-javascript.md
-                - name: Interact with the DOM
-                  href: devtools-guide-chromium/console/console-dom-interaction.md
-                - name: Filter Console messages
-                  href: devtools-guide-chromium/console/console-filters.md
     # 3D View
             - name: 3D View
               href: devtools-guide-chromium/3d-view/index.md
@@ -173,6 +150,29 @@
     # Changes
             - name: Changes*
               href: devtools-guide-chromium/changes/index.md
+    # Console (Panel or Drawer)
+            - name: Console
+              items:
+                - name: Console overview
+                  href: devtools-guide-chromium/console/index.md
+                - name: Log messages
+                  href: devtools-guide-chromium/console/console-log.md
+                - name: Run JavaScript in the Console
+                  href: devtools-guide-chromium/console/console-javascript.md
+                - name: Console features reference
+                  href: devtools-guide-chromium/console/reference.md
+                - name: Console API reference
+                  href: devtools-guide-chromium/console/api.md
+                - name: Console Utilities API reference
+                  href: devtools-guide-chromium/console/utilities.md
+                - name: Watch JavaScript expressions in real time
+                  href: devtools-guide-chromium/console/live-expressions.md
+                - name: Fix JavaScript Console errors
+                  href: devtools-guide-chromium/console/console-debug-javascript.md
+                - name: Interact with the DOM
+                  href: devtools-guide-chromium/console/console-dom-interaction.md
+                - name: Filter Console messages
+                  href: devtools-guide-chromium/console/console-filters.md
     # Coverage
             - name: Coverage
               href: devtools-guide-chromium/coverage/index.md
