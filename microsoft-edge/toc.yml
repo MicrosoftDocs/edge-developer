@@ -105,20 +105,20 @@
                 - name: Get started with remote debugging Android WebViews
                   href: devtools-guide-chromium/remote-debugging/webviews.md
 # Keyboard shortcuts
-        - name: Keyboard shortcuts
-          href: devtools-guide-chromium/shortcuts/index.md
+            - name: Keyboard shortcuts
+              href: devtools-guide-chromium/shortcuts/index.md
 # Page resources
-        - name: View page resources
-          href: devtools-guide-chromium/resources/index.md
+            - name: View page resources
+              href: devtools-guide-chromium/resources/index.md
 # IE mode
-        - name: Use DevTools in IE mode
-          href: devtools-guide-chromium/ie-mode/index.md
+            - name: Use DevTools in IE mode
+              href: devtools-guide-chromium/ie-mode/index.md
 # Service workers
-        - name: Service worker troubleshooting
-          href: devtools-guide-chromium/service-workers/index.md
+            - name: Service worker troubleshooting
+              href: devtools-guide-chromium/service-workers/index.md
 # DevTools Protocol
-        - name: DevTools Protocol
-          href: devtools-protocol-chromium/index.md
+            - name: DevTools Protocol
+              href: devtools-protocol-chromium/index.md
 # ===============================================================================
 # PANEL TOOLS, DRAWER TOOLS, AND OTHER TOOLS
         - name: Panel and Drawer tools
