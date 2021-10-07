@@ -7,16 +7,13 @@
     - name: Microsoft Edge DevTools
       items:
 # ===============================================================================
-# TOP MATTER
-# Overview
-        - name: DevTools overview
-          href: devtools-guide-chromium/index.md
-        - name: Open DevTools
-          href: devtools-guide-chromium/open/index.md
-# ===============================================================================
 # Getting Started (not nece'ly tuts)
         - name: Getting started
           items:
+                - name: DevTools overview
+                  href: devtools-guide-chromium/index.md
+                - name: Open DevTools
+                  href: devtools-guide-chromium/open/index.md
                 - name: Get started with CSS
                   href: devtools-guide-chromium/beginners/css.md # in toc twice
                 - name: Get started with viewing and changing CSS
