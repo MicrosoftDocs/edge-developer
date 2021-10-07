@@ -120,6 +120,8 @@
 # PANEL TOOLS, DRAWER TOOLS, AND OTHER TOOLS
         - name: Panel and Drawer tools
           items:
+            - name: About Panel and Drawer tools
+              href: devtools-guide-chromium/about-panel-drawer-tools.md
     # Console (Panel or Drawer)
             - name: Console
               items:
