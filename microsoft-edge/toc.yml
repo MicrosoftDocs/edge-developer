@@ -8,7 +8,7 @@
       items:
 # ===============================================================================
 # TOP MATTER
-# Overview (non-panel)
+# Overview
         - name: DevTools overview
           href: devtools-guide-chromium/index.md
         - name: Open DevTools
@@ -46,13 +46,21 @@
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
 # ===============================================================================
+# Getting Started (not nece'ly tuts)
+        - name: Getting started
+          items:
+                - name: Get started with CSS
+                  href: devtools-guide-chromium/beginners/css.md
+                - name: Get started with viewing and changing CSS
+                  href: devtools-guide-chromium/css/index.md
+# ===============================================================================
 # FEATURES THAT AREN'T PANEL TOOLS OR DRAWER TOOLS
         - name: Features
           items:
-    # Command Menu (non-panel)
+# Command Menu
             - name: Command menu
               href: devtools-guide-chromium/command-menu/index.md
-    # Inspect (non-panel)
+# Inspect
             - name: Inspect tool
               items:
                 - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage
@@ -63,7 +71,7 @@
                   href: devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
                 - name: Analyze the lack of keyboard support in a form
                   href: devtools-guide-chromium/accessibility/test-analyze-no-keyboard-support.md
-    # customization, themes, docking (non-panel)
+# Customization, themes, docking
             - name: Customizing DevTools
               items:
                 - name: Overview
@@ -76,7 +84,7 @@
                   href: devtools-guide-chromium/customize/localization.md
                 - name: Customize shortcuts
                   href: devtools-guide-chromium/customize/shortcuts.md
-    # Accessibility (cross-tools)
+# Accessibility (cross-tools)
             - name: Accessibility features
               items:
                 - name: Accessibility-testing features in DevTools
@@ -87,7 +95,7 @@
                   href: devtools-guide-chromium/accessibility/navigation.md
                 - name: Track which element has focus
                   href: devtools-guide-chromium/accessibility/focus.md
-    # Device Emulation (non-panel)
+# Device Emulation
             - name: Device testing and emulation
               items:
                 - name: Emulation overview
@@ -102,7 +110,7 @@
                   href: devtools-guide-chromium/device-mode/geolocation.md
                 - name: Simulate device orientation
                   href: devtools-guide-chromium/device-mode/orientation.md
-    # JavaScript debugging (non-panel)
+# JavaScript debugging
             - name: JavaScript debugging
               items:
                 - name: Get started with debugging JavaScript
@@ -115,7 +123,7 @@
                   href: devtools-guide-chromium/javascript/source-maps.md
                 - name: Mark content scripts as Library Code
                   href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
-    # Remote debugging
+# Remote debugging
             - name: Remote debugging
               items:
                 - name: Remote devices
@@ -128,12 +136,27 @@
                   href: devtools-guide-chromium/remote-debugging/windows.md
                 - name: Get started with remote debugging Android WebViews
                   href: devtools-guide-chromium/remote-debugging/webviews.md
+# Keyboard shortcuts
+        - name: Keyboard shortcuts
+          href: devtools-guide-chromium/shortcuts/index.md
+# Page resources
+        - name: View page resources
+          href: devtools-guide-chromium/resources/index.md
+# IE mode
+        - name: Use DevTools in IE mode
+          href: devtools-guide-chromium/ie-mode/index.md
+# Service workers
+        - name: Service worker troubleshooting
+          href: devtools-guide-chromium/service-workers/index.md
+# DevTools Protocol
+        - name: DevTools Protocol
+          href: devtools-protocol-chromium/index.md
 # ===============================================================================
 # PANEL TOOLS, DRAWER TOOLS, AND OTHER TOOLS
         - name: Panel and Drawer tools
           items:
     # Console (Panel or Drawer)
-            - name: Console (Panel or Drawer)
+            - name: Console
               items:
                 - name: Console overview
                   href: devtools-guide-chromium/console/index.md
@@ -353,23 +376,6 @@
     # Welcome
             - name: Welcome
               href: devtools-guide-chromium/welcome/index.md
-# ===============================================================================
-# BOTTOM MATTER
-# keyboard shortcuts (non-panel)
-        - name: Keyboard shortcuts
-          href: devtools-guide-chromium/shortcuts/index.md
-# page resources (non-panel)
-        - name: View page resources
-          href: devtools-guide-chromium/resources/index.md
-# IE mode (non-panel)
-        - name: Use DevTools in IE mode
-          href: devtools-guide-chromium/ie-mode/index.md
-# Service workers (non-panel)
-        - name: Service worker troubleshooting
-          href: devtools-guide-chromium/service-workers/index.md
-# DevTools Protocol (non-panel)
-        - name: DevTools Protocol
-          href: devtools-protocol-chromium/index.md
 # equivalent card: Extensions =================================================
     - name: Microsoft Edge extensions
       items:
