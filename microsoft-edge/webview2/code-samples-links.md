@@ -41,7 +41,7 @@ WebView2 sample apps include solutions for Win32, WPF, WinForms, and WinUI.
 
     * UWP / WinUI samples  are available from the [WinUI Controls Gallery]().
 
-* To learn about deploying [Evergreen WebView2 Runtime](https://docs.microsoft.com/microsoft-edge/webview2/concepts/distribution#deploying-the-evergreen-webview2-runtime) with your applications, use the following samples.
+* To learn about deploying [Evergreen WebView2 Runtime](../concepts/distribution#deploying-the-evergreen-webview2-runtime) with your applications, use the following samples.
 
     * [WV2DeploymentWiXCustomActionSample]() creates a [WiX](https://wixtoolset.org/) installer for [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) and uses [WiX Custom Action](https://wixtoolset.org/documentation/manual/v3/wixdev/extensions/authoring_custom_actions.html) to chain-install the Evergreen WebView2 Runtime.
 
