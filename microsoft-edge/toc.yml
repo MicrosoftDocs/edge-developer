@@ -132,7 +132,7 @@
         - name: Panel and Drawer tools
           items:
     # Console (Panel or Drawer)
-            - name: Console [Panel or Drawer]
+            - name: Console (Panel or Drawer)
               items:
                 - name: Console overview
                   href: devtools-guide-chromium/console/index.md
@@ -155,13 +155,13 @@
                 - name: Filter Console messages
                   href: devtools-guide-chromium/console/console-filters.md
     # 3D View
-            - name: 3D View [Drawer]
+            - name: 3D View (Drawer)
               href: devtools-guide-chromium/3d-view/index.md
     # Animations
-            - name: Animations [Drawer]
+            - name: Animations (Drawer)
               href: devtools-guide-chromium/inspect-styles/animations.md
     # Application
-            - name: Application [Panel]
+            - name: Application (Panel)
               items:
                 - name: Cache
                   href: devtools-guide-chromium/storage/cache.md
@@ -180,16 +180,16 @@
                 - name: WebSQL
                   href: devtools-guide-chromium/storage/websql.md
     # Changes
-            - name: Changes [Drawer] (NEW ARTICLE)
+            - name: Changes (Drawer)*
               href: devtools-guide-chromium/changes/index.md
     # Coverage
-            - name: Coverage [Drawer]
+            - name: Coverage (Drawer)
               href: devtools-guide-chromium/coverage/index.md
     # Developer Resources
-            - name: Developer Resources [Drawer] (NEW ARTICLE)
+            - name: Developer Resources (Drawer)*
               href: devtools-guide-chromium/developer-resources/index.md
     # Elements
-            - name: Elements [Panel]
+            - name: Elements (Panel)
               items:
                 - name: Get started with CSS
                   href: devtools-guide-chromium/beginners/css.md
@@ -226,28 +226,28 @@
                     - name: Test accessibility using the Accessibility tab
                       href: devtools-guide-chromium/accessibility/accessibility-tab.md
     # Issues
-            - name: Issues [Drawer]
+            - name: Issues (Drawer)
               items:
                 - name: Issues tool overview
                   href: devtools-guide-chromium/issues/index.md
                 - name: Automatically test a webpage for accessibility issues
                   href: devtools-guide-chromium/accessibility/test-issues-tool.md
     # JavaScript Profiler
-            - name: JavaScript Profiler [Panel] (NEW ARTICLE)
+            - name: JavaScript Profiler (Panel)*
               href: devtools-guide-chromium/javascript-profiler/index.md
     # Layers
-            - name: Layers  [Panel] (NEW ARTICLE)
+            - name: Layers  (Panel)*
               href: devtools-guide-chromium/layers/index.md
     # Lighthouse
-            - name: Lighthouse [Panel]
+            - name: Lighthouse (Panel)
               items:
                 - name: Test accessibility using Lighthouse
                   href: devtools-guide-chromium/accessibility/lighthouse.md
     # Media
-            - name: Media [Panel]
+            - name: Media (Panel)
               href: devtools-guide-chromium/media-panel/index.md
     # Memory
-            - name: Memory [Panel]
+            - name: Memory (Panel)
               items:
                 - name: Memory overview
                   href: devtools-guide-chromium/memory-problems/index.md
@@ -262,10 +262,10 @@
                 - name: Fix memory problems
                   href: devtools-guide-chromium/memory-problems/index.md
     # Memory Inspector
-            - name: Memory Inspector [Drawer] (NEW ARTICLE)
+            - name: Memory Inspector (Drawer)*
               href: devtools-guide-chromium/memory-inspector/index.md
     # Network
-            - name: Network [Panel]
+            - name: Network (Panel)
               items:
                 - name: Overview
                   href: devtools-guide-chromium/network/reference.md
@@ -274,13 +274,13 @@
                 - name: Inspect network activity
                   href: devtools-guide-chromium/network/index.md
     # Network conditions
-            - name: Network conditions [Drawer]
+            - name: Network conditions (Drawer)
               href: devtools-guide-chromium/network-conditions/index.md
     # Network request blocking
-            - name: Network request blocking [Drawer]
+            - name: Network request blocking (Drawer)
               href: devtools-guide-chromium/network-request-blocking/index.md
     # Performance
-            - name: Performance [Panel]
+            - name: Performance (Panel)
               items:
                 - name: Analyze runtime performance
                   href: devtools-guide-chromium/rendering-tools/index.md  # not Rendering tool
@@ -297,13 +297,13 @@
                     - name: Timeline event reference
                       href: devtools-guide-chromium/evaluate-performance/performance-reference.md
     # Performance monitor
-            - name: Performance monitor [Drawer] (NEW ARTICLE)
+            - name: Performance monitor (Drawer)*
               href: devtools-guide-chromium/performance-monitor/index.md
     # Quick source
-            - name: Quick source [Drawer] (NEW ARTICLE)
+            - name: Quick source (Drawer)*
               href: devtools-guide-chromium/quick-source/index.md
     # Rendering
-            - name: Rendering [Drawer]
+            - name: Rendering (Drawer)
               items:
                 - name: Emulate vision deficiencies
                   href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
@@ -320,16 +320,16 @@
                 - name: Verify that the page is usable with UI animation turned off
                   href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
     # Search
-            - name: Search [Drawer] (NEW ARTICLE)
+            - name: Search (Drawer)*
               href: devtools-guide-chromium/search/index.md
     # Security
-            - name: Security [Panel]
+            - name: Security (Panel)
               href: devtools-guide-chromium/security/index.md
     # Sensors
-            - name: Sensors [Drawer] (NEW ARTICLE)
+            - name: Sensors (Drawer)*
               href: devtools-guide-chromium/sensors/index.md
     # Sources
-            - name: Sources [Panel]
+            - name: Sources (Panel)
               items:
                 - name: Sources tool overview
                   href: devtools-guide-chromium/sources/index.md
@@ -344,13 +344,13 @@
                 - name: Disable JavaScript
                   href: devtools-guide-chromium/javascript/disable.md
     # WebAudio
-            - name: WebAudio [Drawer] (NEW ARTICLE)
+            - name: WebAudio (Drawer)*
               href: devtools-guide-chromium/webaudio/index.md
     # WebAuthn
-            - name: WebAuthn [Drawer]
+            - name: WebAuthn (Drawer)
               href: devtools-guide-chromium/webauthn/index.md
     # Welcome
-            - name: Welcome [Panel]
+            - name: Welcome (Panel)
               href: devtools-guide-chromium/welcome/index.md
 # ===============================================================================
 # BOTTOM MATTER
