@@ -20,6 +20,9 @@ In Google Chrome DevTools, a given tool can only appear on the main toolbar (Pan
 
 In Microsoft Edge DevTools, any of these tools can by added to either the main toolbar or on the Drawer toolbar, so the distinction between Panel tools and Drawer tools is less pronounced than in Google Chrome DevTools.
 
+For an overview of all of the Panel tools, Drawer tools, and a few other tools such as the Inspect tool and Device Emulator, see [Microsoft Edge Developer Tools overview
+](index.md).<!-- see [DevTools overview] -->
+
 
 <!-- ====================================================================== -->
 ## Opening any tool on the main toolbar at the top of DevTools
