@@ -31,13 +31,13 @@ This example shows how the sample app changes the color of text in the front end
 
 To demo this functionality run the sample app, click on the Scenario tab, and click on the Web Messaging option. You should see a screen like below:
   
-:::image type="complex" source="../media/ScenarioWebMessaging.png" alt-text="Web Messaging Demo" lightbox="./media/ScenarioWebMessaging.png":::
+:::image type="complex" source="../media/ScenarioWebMessaging.png" alt-text="Web Messaging Demo" lightbox="../media/ScenarioWebMessaging.png":::
     Web Messaging Demo
 :::image-end:::      
 
 Notice the first section titled Posting Messages. Lets follow this instruction by clicking Script -> Post Message JSON. And clicking OK in the popup that comes up. You'll notice that the message turns blue. 
 
-:::image type="complex" source="../media/postmessagejson.png" alt-text="Post Message JSON Demo" lightbox="./media/postmessagejson.png":::
+:::image type="complex" source="../media/postmessagejson.png" alt-text="Post Message JSON Demo" lightbox="../media/postmessagejson.png":::
     Post Message JSON Demo
 :::image-end:::      
 
