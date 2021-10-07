@@ -45,26 +45,94 @@
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
-# ===============================================================================
-# NON-PANEL TOOLS (OR NON-PANEL TOOL-RELATED)
-        - name: Tools that aren't panels
+# FEATURES THAT AREN'T PANEL TOOLS OR DRAWER TOOLS
+#        - name: Features
+#          items:
+# Command Menu (non-panel)
+        - name: Command menu
+          href: devtools-guide-chromium/command-menu/index.md
+# Inspect (non-panel)
+        - name: Inspect tool
           items:
-    # Accessibility (non-panel)
-            - name: Accessibility features
-              items:
-                - name: Accessibility-testing features in DevTools
-                  href: devtools-guide-chromium/accessibility/reference.md
-                - name: Overview of accessibility testing using DevTools
-                  href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md
-                - name: Navigate DevTools with assistive technology
-                  href: devtools-guide-chromium/accessibility/navigation.md
-                - name: Track which element has focus
-                  href: devtools-guide-chromium/accessibility/focus.md
-    # Command Menu (non-panel)
-            - name: Command menu
-              href: devtools-guide-chromium/command-menu/index.md
-    # Console (non-panel)
-            - name: Console
+            - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage
+              href: devtools-guide-chromium/accessibility/test-inspect-tool.md
+            - name: Check for keyboard support by using the Tab and Enter keys
+              href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
+            - name: Analyze the lack of indication of keyboard focus in a sidebar menu
+              href: devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
+            - name: Analyze the lack of keyboard support in a form
+              href: devtools-guide-chromium/accessibility/test-analyze-no-keyboard-support.md
+# customization, themes, docking (non-panel)
+        - name: Customizing DevTools
+          items:
+            - name: Overview
+              href: devtools-guide-chromium/customize/index.md
+            - name: Apply a color theme
+              href: devtools-guide-chromium/customize/theme.md
+            - name: Change DevTools placement
+              href: devtools-guide-chromium/customize/placement.md
+            - name: Match browser language
+              href: devtools-guide-chromium/customize/localization.md
+            - name: Customize shortcuts
+              href: devtools-guide-chromium/customize/shortcuts.md
+# Accessibility (cross-tools)
+        - name: Accessibility features
+          items:
+            - name: Accessibility-testing features in DevTools
+              href: devtools-guide-chromium/accessibility/reference.md
+            - name: Overview of accessibility testing using DevTools
+              href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md
+            - name: Navigate DevTools with assistive technology
+              href: devtools-guide-chromium/accessibility/navigation.md
+            - name: Track which element has focus
+              href: devtools-guide-chromium/accessibility/focus.md
+# Device Emulation (non-panel)
+        - name: Device testing and emulation
+          items:
+            - name: Emulation overview
+              href: devtools-guide-chromium/device-mode/index.md
+            - name: Emulate dual-screen and foldable devices
+              href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
+            - name: Emulate and test other browsers
+              href: devtools-guide-chromium/device-mode/testing-other-browsers.md
+            - name: Override the user agent string
+              href: devtools-guide-chromium/device-mode/override-user-agent.md
+            - name: Override geolocation
+              href: devtools-guide-chromium/device-mode/geolocation.md
+            - name: Simulate device orientation
+              href: devtools-guide-chromium/device-mode/orientation.md
+# JavaScript debugging (non-panel)
+        - name: JavaScript debugging
+          items:
+            - name: Get started with debugging JavaScript
+              href: devtools-guide-chromium/javascript/index.md
+            - name: Use the debugger features
+              href: devtools-guide-chromium/javascript/reference.md
+            - name: Pause code with breakpoints
+              href: devtools-guide-chromium/javascript/breakpoints.md
+            - name: Map pre-processed code to source code
+              href: devtools-guide-chromium/javascript/source-maps.md
+            - name: Mark content scripts as Library Code
+              href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
+# Remote debugging
+        - name: Remote debugging
+          items:
+            - name: Remote devices
+              href: devtools-guide-chromium/remote-debugging/local-server.md
+            - name: Get started with remote debugging Android devices
+              href: devtools-guide-chromium/remote-debugging/index.md
+            - name: Get started with remote debugging with Surface Duo emulators
+              href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
+            - name: Get started with remote debugging Windows 10 devices
+              href: devtools-guide-chromium/remote-debugging/windows.md
+            - name: Get started with remote debugging Android WebViews
+              href: devtools-guide-chromium/remote-debugging/webviews.md
+# ===============================================================================
+# PANEL TOOLS, DRAWER TOOLS, AND OTHER TOOLS
+        - name: Panel and Drawer tools
+          items:
+    # Console (Panel or Drawer)
+            - name: Console [Panel or Drawer]
               items:
                 - name: Console overview
                   href: devtools-guide-chromium/console/index.md
@@ -86,83 +154,14 @@
                   href: devtools-guide-chromium/console/console-dom-interaction.md
                 - name: Filter Console messages
                   href: devtools-guide-chromium/console/console-filters.md
-    # Device Emulation (non-panel)
-            - name: Device testing and emulation
-              items:
-                - name: Emulation overview
-                  href: devtools-guide-chromium/device-mode/index.md
-                - name: Emulate dual-screen and foldable devices
-                  href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
-                - name: Emulate and test other browsers
-                  href: devtools-guide-chromium/device-mode/testing-other-browsers.md
-                - name: Override the user agent string
-                  href: devtools-guide-chromium/device-mode/override-user-agent.md
-                - name: Override geolocation
-                  href: devtools-guide-chromium/device-mode/geolocation.md
-                - name: Simulate device orientation
-                  href: devtools-guide-chromium/device-mode/orientation.md
-    # Inspect (non-panel)
-            - name: Inspect tool
-              items:
-                - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage
-                  href: devtools-guide-chromium/accessibility/test-inspect-tool.md
-                - name: Check for keyboard support by using the Tab and Enter keys
-                  href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
-                - name: Analyze the lack of indication of keyboard focus in a sidebar menu
-                  href: devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
-                - name: Analyze the lack of keyboard support in a form
-                  href: devtools-guide-chromium/accessibility/test-analyze-no-keyboard-support.md
-    # customization, themes, docking (non-panel)
-            - name: Customizing DevTools
-              items:
-                - name: Overview
-                  href: devtools-guide-chromium/customize/index.md
-                - name: Apply a color theme
-                  href: devtools-guide-chromium/customize/theme.md
-                - name: Change DevTools placement
-                  href: devtools-guide-chromium/customize/placement.md
-                - name: Match browser language
-                  href: devtools-guide-chromium/customize/localization.md
-                - name: Customize shortcuts
-                  href: devtools-guide-chromium/customize/shortcuts.md
-    # JavaScript debugging (non-panel)
-            - name: JavaScript debugging
-              items:
-                - name: Get started with debugging JavaScript
-                  href: devtools-guide-chromium/javascript/index.md
-                - name: Use the debugger features
-                  href: devtools-guide-chromium/javascript/reference.md
-                - name: Pause code with breakpoints
-                  href: devtools-guide-chromium/javascript/breakpoints.md
-                - name: Map pre-processed code to source code
-                  href: devtools-guide-chromium/javascript/source-maps.md
-                - name: Mark content scripts as Library Code
-                  href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
-    # remote debugging (non-panel)
-            - name: Remote debugging
-              items:
-                - name: Remote devices
-                  href: devtools-guide-chromium/remote-debugging/local-server.md
-                - name: Get started with remote debugging Android devices
-                  href: devtools-guide-chromium/remote-debugging/index.md
-                - name: Get started with remote debugging with Surface Duo emulators
-                  href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
-                - name: Get started with remote debugging Windows 10 devices
-                  href: devtools-guide-chromium/remote-debugging/windows.md
-                - name: Get started with remote debugging Android WebViews
-                  href: devtools-guide-chromium/remote-debugging/webviews.md
-# ===============================================================================
-# PANEL TOOLS (tools with tab in toolbar)
-        - name: Panels (tools)
-          items:
     # 3D View
-            - name: 3D View tool
+            - name: 3D View [Drawer]
               href: devtools-guide-chromium/3d-view/index.md
     # Animations
-            - name: Animations tool
+            - name: Animations [Drawer]
               href: devtools-guide-chromium/inspect-styles/animations.md
     # Application
-            - name: Application tool
+            - name: Application [Panel]
               items:
                 - name: Cache
                   href: devtools-guide-chromium/storage/cache.md
@@ -181,16 +180,16 @@
                 - name: WebSQL
                   href: devtools-guide-chromium/storage/websql.md
     # Changes
-            - name: Changes tool (NEW ARTICLE)
+            - name: Changes [Drawer] (NEW ARTICLE)
               href: devtools-guide-chromium/changes/index.md
     # Coverage
-            - name: Coverage tool
+            - name: Coverage [Drawer]
               href: devtools-guide-chromium/coverage/index.md
     # Developer Resources
-            - name: Developer Resources tool (NEW ARTICLE)
+            - name: Developer Resources [Drawer] (NEW ARTICLE)
               href: devtools-guide-chromium/developer-resources/index.md
     # Elements
-            - name: Elements tool (CSS)
+            - name: Elements [Panel]
               items:
                 - name: Get started with CSS
                   href: devtools-guide-chromium/beginners/css.md
@@ -227,28 +226,28 @@
                     - name: Test accessibility using the Accessibility tab
                       href: devtools-guide-chromium/accessibility/accessibility-tab.md
     # Issues
-            - name: Issues tool
+            - name: Issues [Drawer]
               items:
                 - name: Issues tool overview
                   href: devtools-guide-chromium/issues/index.md
                 - name: Automatically test a webpage for accessibility issues
                   href: devtools-guide-chromium/accessibility/test-issues-tool.md
     # JavaScript Profiler
-            - name: JavaScript Profiler tool (NEW ARTICLE)
+            - name: JavaScript Profiler [Panel] (NEW ARTICLE)
               href: devtools-guide-chromium/javascript-profiler/index.md
     # Layers
-            - name: Layers tool (NEW ARTICLE)
+            - name: Layers  [Panel] (NEW ARTICLE)
               href: devtools-guide-chromium/layers/index.md
     # Lighthouse
-            - name: Lighthouse tool
+            - name: Lighthouse [Panel]
               items:
                 - name: Test accessibility using Lighthouse
                   href: devtools-guide-chromium/accessibility/lighthouse.md
     # Media
-            - name: Media tool
+            - name: Media [Panel]
               href: devtools-guide-chromium/media-panel/index.md
     # Memory
-            - name: Memory tool
+            - name: Memory [Panel]
               items:
                 - name: Memory overview
                   href: devtools-guide-chromium/memory-problems/index.md
@@ -263,10 +262,10 @@
                 - name: Fix memory problems
                   href: devtools-guide-chromium/memory-problems/index.md
     # Memory Inspector
-            - name: Memory Inspector tool (NEW ARTICLE)
+            - name: Memory Inspector [Drawer] (NEW ARTICLE)
               href: devtools-guide-chromium/memory-inspector/index.md
     # Network
-            - name: Network tool
+            - name: Network [Panel]
               items:
                 - name: Overview
                   href: devtools-guide-chromium/network/reference.md
@@ -275,13 +274,13 @@
                 - name: Inspect network activity
                   href: devtools-guide-chromium/network/index.md
     # Network conditions
-            - name: Network conditions tool
+            - name: Network conditions [Drawer]
               href: devtools-guide-chromium/network-conditions/index.md
     # Network request blocking
-            - name: Network request blocking tool
+            - name: Network request blocking [Drawer]
               href: devtools-guide-chromium/network-request-blocking/index.md
     # Performance
-            - name: Performance tool
+            - name: Performance [Panel]
               items:
                 - name: Analyze runtime performance
                   href: devtools-guide-chromium/rendering-tools/index.md  # not Rendering tool
@@ -298,13 +297,13 @@
                     - name: Timeline event reference
                       href: devtools-guide-chromium/evaluate-performance/performance-reference.md
     # Performance monitor
-            - name: Performance monitor tool (NEW ARTICLE)
+            - name: Performance monitor [Drawer] (NEW ARTICLE)
               href: devtools-guide-chromium/performance-monitor/index.md
     # Quick source
-            - name: Quick source tool (NEW ARTICLE)
+            - name: Quick source [Drawer] (NEW ARTICLE)
               href: devtools-guide-chromium/quick-source/index.md
     # Rendering
-            - name: Rendering tool
+            - name: Rendering [Drawer]
               items:
                 - name: Emulate vision deficiencies
                   href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
@@ -321,16 +320,16 @@
                 - name: Verify that the page is usable with UI animation turned off
                   href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
     # Search
-            - name: Search tool (NEW ARTICLE)
+            - name: Search [Drawer] (NEW ARTICLE)
               href: devtools-guide-chromium/search/index.md
     # Security
-            - name: Security tool
+            - name: Security [Panel]
               href: devtools-guide-chromium/security/index.md
     # Sensors
-            - name: Sensors tool (NEW ARTICLE)
+            - name: Sensors [Drawer] (NEW ARTICLE)
               href: devtools-guide-chromium/sensors/index.md
     # Sources
-            - name: Sources tool
+            - name: Sources [Panel]
               items:
                 - name: Sources tool overview
                   href: devtools-guide-chromium/sources/index.md
@@ -345,13 +344,13 @@
                 - name: Disable JavaScript
                   href: devtools-guide-chromium/javascript/disable.md
     # WebAudio
-            - name: WebAudio tool (NEW ARTICLE)
+            - name: WebAudio [Drawer] (NEW ARTICLE)
               href: devtools-guide-chromium/webaudio/index.md
     # WebAuthn
-            - name: WebAuthn tool
+            - name: WebAuthn [Drawer]
               href: devtools-guide-chromium/webauthn/index.md
     # Welcome
-            - name: Welcome tool (NEW ARTICLE)
+            - name: Welcome [Panel]
               href: devtools-guide-chromium/welcome/index.md
 # ===============================================================================
 # BOTTOM MATTER
