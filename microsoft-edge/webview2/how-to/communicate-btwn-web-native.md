@@ -19,20 +19,29 @@ Some common use cases include:
 
 ## Before you begin
 
-Clone the [WebView2 Samples repo][WebView2Samples]. Build and run the WebView2 sample application as described in [Get Started with WebView2 in Win32 apps][WebView2inWin32apps]. 
+In this tutorial we will walk through code in the Sample App to demonstrate some of the communication capabilties in WebView2. Clone the [WebView2 Samples App][WebView2Samples], build, and run to follow along. 
 
+## Scenario: Simple Messaging
 
-## Simple Messages
-
-WebView2 controls let you exchange simple messages between web-based applications and natively hosted application. The messages can be text or data.
-
-You can use most common data types such as `JSON` or `String` to send messages between the host application and WebView2.
+WebView2 controls let you exchange simple messages between web and native sides of an application. You can use data types such as `JSON` or `String` to send messages between the host application and WebView2.
 
 ### Sending Messages from the host app to WebView2
 
-This example changes the color of text in a message. The host app sends a message to the WebView2 control with the text and new color.
+This example shows how the sample app changes the color of text in the front end based on a message from the host app.
 
-Start by setting up a button on the native side to send a web message. Then add the sample code provided to post the web message with blue text.
+To demo this functionality run the sample app, click on the Scenario tab, and click on the Web Messaging option. You should see a screen like below:
+  
+:::image type="complex" source="./media/ScenarioWebMessaging.png" alt-text="Web Messaging Demo" lightbox="./media/ScenarioWebMessaging.png":::
+    Web Messaging Demo
+:::image-end:::      
+
+Notice the first section titled Posting Messages. Lets follow this instruction by clicking Script -> Post Message JSON. And clicking OK in the popup that comes up. You'll notice that the message turns blue. 
+
+:::image type="complex" source="./media/postmessagejson.png" alt-text="Post Message JSON Demo" lightbox="./media/postmessagejson.png":::
+    Post Message JSON Demo
+:::image-end:::      
+
+Let's dive deeper into how we were able to accomplish this. The sample starts by creating a button on the native side to send a web message. Then it adds the code (provided below) to post the web message to change the color of the web text to blue.
 
 1. The example includes C++ code to create a Windows button that calls `SendJsonWebMessage()` when selected.
 
@@ -103,13 +112,11 @@ Start by setting up a button on the native side to send a web message. Then add 
         SendJsonWebMessage();
         return true;
     ```
-
-    <!-- Does the reader need to do anything to see this? Save and run in Visual Studio? -->
-1. ???Need conclusion or how to see this in action???.
+Done! That is how WebView2 communicates through simple messages.
 
 ### Receiving message strings via postMessage
 
-This example changes the text of the title bar. The host app receives a message from WebView2 with the new title bar text.
+This example follows the 'Recieving Messages section' to change the text of the title bar. The host app receives a message from WebView2 with the new title bar text.
 
 The C++ file handles the title text and communicates it to the host app as a string.
 
@@ -175,12 +182,9 @@ The C++ file handles the title text and communicates it to the host app as a str
     }).Get(), &m_webMessageReceivedToken));
     ```
 
-    <!-- Does the reader need to do anything to see this? Save and run in Visual Studio? -->
-1. ???Need conclusion or how to see this in action???.
-
 ### Round-trip messages:
 
-This example shows a round-trip message from WebView2 to the host app, and back. The host app receives a request from WebView2 and returns the bounds of the active window.
+This example follows the section in the WebMessage sample page titled 'Round Trip' and shows a round-trip message from WebView2 to the host app, and back. The host app receives a request from WebView2 and returns the bounds of the active window.
 
 When requested by the host app, the C++ file gets the window bounds and sends the data to WebView2 as a JSON web message.
 
@@ -261,10 +265,7 @@ When requested by the host app, the C++ file gets the window bounds and sends th
 
 1. The window bounds display on the web page.
 
-    <!-- Does the reader need to do anything to see this? Save and run in Visual Studio? -->
-1. ???Need conclusion or how to see this in action???.
-
-## JavaScript Code
+## Scenario: Sending JavaScript Code
 
 Set up the host app run JavaScript on the web side. The host app specifies the code to run and passes it to the WebView control. 
 
@@ -277,7 +278,7 @@ Set up the host app run JavaScript on the web side. The host app specifies the c
     For more information navigate to: [Use JavaScript in WebView2 apps][UseJavaScriptInWebView2Apps].
 
 
-## Native Objects
+## Scenario: Sending Native Objects
 
 Pass the native object to the web. Then call the object's methods from the web.
 
@@ -289,15 +290,7 @@ To use messages that represent method calls, use the `AddHostObjectToScript` API
 
 1. Full tutorial TBD
 
-
-
 Congratulations.  You've successfully embedded web content into native applications.  
-
-
-
-## See also  
-
-* ???.
     
 ## Getting in touch with the Microsoft Edge WebView team  
 
