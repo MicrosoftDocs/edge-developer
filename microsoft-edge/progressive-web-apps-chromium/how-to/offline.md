@@ -11,11 +11,11 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 ---
 # Offline and network connectivity support in Progressive Web Apps
 
-For many years, organizations were reluctant to invest heavily in web-based software over native software, because web applications depended on stable network connections.  Today, the web platform offers robust options that enable users to continue working even if the network connection becomes unstable or goes offline.
+For many years, organizations were reluctant to invest heavily in web-based software over native software, because web applications depended on stable network connections. The Progressive Web Apps (PWA) platform offers robust options that enable users to continue working even if the network connection becomes unstable or goes offline.
 
 
 <!-- ====================================================================== -->
-## Use caching to improve the performance of PWAs
+## Use caching to improve PWA performance
 
 With the introduction of [Service Workers][MDNServiceWorker], the web platform added the `Cache` API to provide access to managed cached resources. This Promise-based API allows developers to store and retrieve many web resources—HTML, CSS, JavaScript, images, JSON, and so on. Usually, the Cache API is used within the context of a Service Worker, but it is also available in the main thread on the `window` object.
 
@@ -37,7 +37,7 @@ self.addEventListener( "install", function( event ){
 });
 ```
 
-This code, which runs during the Service Worker `install` life cycle event, opens a cache named `static-cache`.  Then, when it has a pointer to the cache, it adds four resources to the cache by using the `addAll()` method.  Often this approach is coupled with cache retrieval during a `fetch` event.
+This code runs during the Service Worker `install` life cycle event, and opens a cache named `static-cache`. When it has a pointer to the cache, it adds four resources to the cache using the `addAll()` method.  This approach is often coupled with cache retrieval during a `fetch` event.
 
 ```javascript
 self.addEventListener( "fetch", event => {
@@ -86,7 +86,7 @@ This simple introduction shows how to use caching in your progressive web app (P
 <!-- ====================================================================== -->
 ## Use IndexedDB in your PWA to store structured data
 
-`IndexedDB` is an API for storing structured data. Similar to the `Cache` API, it is also asynchronous, which means you can use it in the main thread or with Web Workers such as Service Workers.  Use the `IndexedDB` API for storing a significant amount of structured data on the client, or binary data, such as encrypted media objects.  See [MDN primer on using IndexedDB][MDNIndexeddbApiUsing].
+`IndexedDB` is an API for storing structured data. Similar to the `Cache` API, it is also asynchronous. This means you can use it in the main thread, or with Web Workers such as Service Workers. Use the `IndexedDB` API for storing a significant amount of structured data on the client, or binary data, such as encrypted media objects.  See [MDN primer on using IndexedDB][MDNIndexeddbApiUsing].
 
 
 <!-- ====================================================================== -->
@@ -97,11 +97,10 @@ Sometimes you might need to store small amounts of data in order to provide a be
 > [!IMPORTANT]
 > Web Storage is a synchronous process and is not available for use within worker threads such as Service Workers. Heavy usage may create performance issues for your application.
 
-
-There are 2 types of Web Storage: `localStorage` and `sessionStorage`. Each type of Web Storage is maintained as a separate data store isolated to the domain that created it.
-
-*  `sessionStorage` persists only for the duration of the browsing session (for example, while the browser is open, which includes refresh and restores). 
-*  `localStorage` persists until the data is removed by the code, the user, or the browser (for example, when there is limited storage available).
+There are two types of Web Storage: `localStorage` and `sessionStorage`. Each type of Web Storage is maintained as a separate data store isolated to the domain that created it.
+ 
+*  `sessionStorage` persists only for the duration of the browsing session. For example, while the browser is open, which includes refresh and restores. 
+*  `localStorage` persists until the data is removed by the code, the user, or the browser. For example, when there is limited storage available.
 
 The following code snippet shows how to use `localStorage`, which is similar to how `sessionStorage` is used.
 
