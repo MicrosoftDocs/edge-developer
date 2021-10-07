@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft S
 ---
 # Offline and network connectivity support in Progressive Web Apps
 
-For many years, organizations were reluctant to invest heavily in web-based software over native software, because web applications depended on stable network connections. The Progressive Web Apps (PWA) platform offers robust options that enable users to continue working even if the network connection becomes unstable or goes offline.
+For many years, organizations were reluctant to invest heavily in web-based software over native software, because web applications depended on stable network connections. Today, the Progressive Web Apps (PWA) platform offers robust options that enable users to continue working even if the network connection becomes unstable or goes offline.
 
 
 <!-- ====================================================================== -->
