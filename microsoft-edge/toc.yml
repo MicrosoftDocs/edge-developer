@@ -13,46 +13,14 @@
           href: devtools-guide-chromium/index.md
         - name: Open DevTools
           href: devtools-guide-chromium/open/index.md
-        - name: What's new
-          items:
-            - name: Experimental features
-              href: devtools-guide-chromium/experimental-features/index.md
-            - name: Microsoft Edge 94
-              href: devtools-guide-chromium/whats-new/2021/09/devtools.md
-            - name: Microsoft Edge 93
-              href: devtools-guide-chromium/whats-new/2021/07/devtools.md
-            - name: Microsoft Edge 92
-              href: devtools-guide-chromium/whats-new/2021/05/devtools.md
-            - name: Microsoft Edge 91
-              href: devtools-guide-chromium/whats-new/2021/04/devtools.md
-            - name: Microsoft Edge 90
-              href: devtools-guide-chromium/whats-new/2021/02/devtools.md
-            - name: Microsoft Edge 89
-              href: devtools-guide-chromium/whats-new/2021/01/devtools.md
-            - name: Microsoft Edge 88
-              href: devtools-guide-chromium/whats-new/2020/11/devtools.md
-            - name: Microsoft Edge 87
-              href: devtools-guide-chromium/whats-new/2020/10/devtools.md
-            - name: Microsoft Edge 86
-              href: devtools-guide-chromium/whats-new/2020/08/devtools.md
-            - name: Microsoft Edge 85
-              href: devtools-guide-chromium/whats-new/2020/06/devtools.md
-            - name: Microsoft Edge 84
-              href: devtools-guide-chromium/whats-new/2020/05/devtools.md
-            - name: Microsoft Edge 83
-              href: devtools-guide-chromium/whats-new/2020/03/devtools.md
-            - name: Microsoft Edge 81
-              href: devtools-guide-chromium/whats-new/2020/01/devtools.md
-            - name: Microsoft Edge 80
-              href: devtools-guide-chromium/whats-new/2019/12/devtools.md
 # ===============================================================================
 # Getting Started (not nece'ly tuts)
         - name: Getting started
           items:
                 - name: Get started with CSS
-                  href: devtools-guide-chromium/beginners/css.md
+                  href: devtools-guide-chromium/beginners/css.md # in toc twice
                 - name: Get started with viewing and changing CSS
-                  href: devtools-guide-chromium/css/index.md
+                  href: devtools-guide-chromium/css/index.md # in toc twice
 # ===============================================================================
 # FEATURES THAT AREN'T PANEL TOOLS OR DRAWER TOOLS
         - name: Features
@@ -376,6 +344,38 @@
     # Welcome
             - name: Welcome
               href: devtools-guide-chromium/welcome/index.md
+        - name: What's new
+          items:
+            - name: Experimental features
+              href: devtools-guide-chromium/experimental-features/index.md
+            - name: Microsoft Edge 94
+              href: devtools-guide-chromium/whats-new/2021/09/devtools.md
+            - name: Microsoft Edge 93
+              href: devtools-guide-chromium/whats-new/2021/07/devtools.md
+            - name: Microsoft Edge 92
+              href: devtools-guide-chromium/whats-new/2021/05/devtools.md
+            - name: Microsoft Edge 91
+              href: devtools-guide-chromium/whats-new/2021/04/devtools.md
+            - name: Microsoft Edge 90
+              href: devtools-guide-chromium/whats-new/2021/02/devtools.md
+            - name: Microsoft Edge 89
+              href: devtools-guide-chromium/whats-new/2021/01/devtools.md
+            - name: Microsoft Edge 88
+              href: devtools-guide-chromium/whats-new/2020/11/devtools.md
+            - name: Microsoft Edge 87
+              href: devtools-guide-chromium/whats-new/2020/10/devtools.md
+            - name: Microsoft Edge 86
+              href: devtools-guide-chromium/whats-new/2020/08/devtools.md
+            - name: Microsoft Edge 85
+              href: devtools-guide-chromium/whats-new/2020/06/devtools.md
+            - name: Microsoft Edge 84
+              href: devtools-guide-chromium/whats-new/2020/05/devtools.md
+            - name: Microsoft Edge 83
+              href: devtools-guide-chromium/whats-new/2020/03/devtools.md
+            - name: Microsoft Edge 81
+              href: devtools-guide-chromium/whats-new/2020/01/devtools.md
+            - name: Microsoft Edge 80
+              href: devtools-guide-chromium/whats-new/2019/12/devtools.md
 # equivalent card: Extensions =================================================
     - name: Microsoft Edge extensions
       items:
