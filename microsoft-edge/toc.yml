@@ -530,7 +530,7 @@
         - name: Accessibility testing
           href: accessibility/test.md
 # SORT into the above card sections ===========================================
-    - name: Privacy in Microsoft Edge
+    - name: Privacy whitepaper
       href: privacy-whitepaper/index.md
     - name: The Web We Want initiative
       href: web-we-want/index.md
