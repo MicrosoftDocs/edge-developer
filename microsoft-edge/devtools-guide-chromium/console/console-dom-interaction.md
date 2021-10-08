@@ -255,12 +255,9 @@ You may find it useful to manipulate the DOM from the **Console**.  You may soon
 *   Store your scripts for the **Console** as [Snippets][DevToolsJavascriptSnippets].
 *   Run the scripts in a webpage using a keyboard shortcut or the editor.
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Console as a JavaScript environment | Microsoft Docs"
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Logs in the Console tool | Microsoft Docs"
 [DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"

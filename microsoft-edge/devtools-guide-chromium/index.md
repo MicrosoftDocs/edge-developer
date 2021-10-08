@@ -225,20 +225,14 @@ You can also change the settings of advanced features, such as:
 
 The DevTools team provides new features as _experiments_ in DevTools.  You can turn each of the experiments on or off.  To see the full list of [Experimental features][DevtoolsGuideExperimentalFeaturesIndex], in DevTools, select **Settings** (the gear icon), and then select **Experiments**.
 
-
-<!-- ====================================================================== -->
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]
-
 To preview the [latest features coming to the DevTools][DevtoolsGuideWhatsNew202102Devtools], download [Microsoft Edge Canary][MicrosoftedgeinsiderDownload], which builds nightly.
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*   [DevTools for beginners: Get Started with HTML and the DOM][DevtoolsGuideBeginnersHtml]
-*   [Microsoft Edge (Chromium) DevTools Protocol][DevtoolsProtocolIndex]
+*  [DevTools for beginners: Get Started with HTML and the DOM][DevtoolsGuideBeginnersHtml]
+*  [Microsoft Edge (Chromium) DevTools Protocol][DevtoolsProtocolIndex]
 
 
 <!-- ====================================================================== -->
@@ -267,7 +261,5 @@ To preview the [latest features coming to the DevTools][DevtoolsGuideWhatsNew202
 [DevtoolsProtocolIndex]: ../devtools-protocol-chromium/index.md "Microsoft Edge (Chromium) DevTools Protocol overview | Microsoft Docs"
 <!-- external links -->
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge Add-ons"
-
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
-
 [GoogleChromeWebstoreExtensions]: https://chrome.google.com/webstore/category/extensions "Extensions | Chrome Web Store"

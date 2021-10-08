@@ -253,14 +253,8 @@ Congratulations!  You've successfully automated a WebView2 project and driven We
 
 *  [WebDriver on Selenium documentation][SeleniumWebdriver] - How the APIs Selenium drives WebView2 or Microsoft Edge.
 *  [Introduction to Microsoft Edge WebView2][WebViewIndex] - How to use the WebView2 control to embed web content in your native app.
-*  [Use WebDriver (Chromium) for test automation][WebdriverChromium] - Automating Microsoft Edge.
+*  [Use WebDriver for test automation][WebdriverChromium] - Automating Microsoft Edge.
 *  [edge-selenium-tools][GithubSeleniumProject] - a project that the Microsoft Edge team created to allow Selenium 3 users to drive Microsoft Edge (Chromium) and WebView2 using the same API that's provided in Selenium 4.
-
-
-<!-- ====================================================================== -->
-## Getting in touch with the Microsoft Edge WebView team
-
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
 
 
 <!-- ====================================================================== -->
