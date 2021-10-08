@@ -14,9 +14,38 @@ keywords: microsoft edge, pwas, pwa, progressive web apps, origin trials
 
 
 <!-- ====================================================================== -->
+## What's New in Microsoft Edge 96
+
+### Improvements to the way way you manage your apps
+
+Microsoft Edge Canary reached version 96 on October 5. We are testing a new design to better manage your installed web apps with a subset of our users. Navigating to `edge://apps` on your browser now displays a redesigned hub that lists installed PWAs and websites as apps. 
+
+You can sort your apps by recently used, alphabetically based on title, or date of installation. You can also arrange apps in a list or grid view. 
+
+:::image type="complex" source="media/edgeapps-redesign.jpg" alt-text="Microsoft Edge now has a new app management page" lightbox="media/edgeappsredesign.jpg":::
+      Microsoft Edge now has a new app management page
+   :::image-end:::
+
+Additionally, you can easily pin them to the taskbar or Start menu, as well as creating a shortcut and enabling them to run on user login. 
+
+Finally, there is now a way to easily access the permissions and privacy details for the associated origin as well as more application details.
+
+:::image type="complex" source="media/edgeapps-details.jpg" alt-text="Microsoft Edge's app details page" lightbox="media/edgeapps-redesign.jpg":::
+      Microsoft Edge's app details page
+   :::image-end:::
+
+## What's New in Microsoft Edge 95
+
+Microsoft Edge version 95 moved to Beta channel on September 28, 2021. 
+The origin trials remain active for the following features:
+*  [Window Controls Overlay for desktop PWAs](#window-controls-overlay-origin-trials).
+*  [URL Handlers](#url-handlers-origin-trial).
+
+We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) to end on October 21, 2021.
+
 ## What's New in Microsoft Edge 94
 
-Microsoft Edge version 94 release moved to Stable on Sept 23, 2021.  This release cycle was short—just<!-- em dash --> 3 weeks from Microsoft Edge 93 Stable to Microsoft Edge 94 Stable as we snapped to the new [four week release cycle][4weekReleaseBlog].  This new release cadence matches the new cadence of Chromium milestones, described in [Speeding up Chrome's release cycle][Chromium4weekM].
+Microsoft Edge version 94 moved to Stable on Sept 23, 2021. This release cycle was short—just<!-- em dash --> 3 weeks from Microsoft Edge 93 Stable to Microsoft Edge 94 Stable as we snapped to the new [four week release cycle][4weekReleaseBlog].  This new release cadence matches the new cadence of Chromium milestones, described in [Speeding up Chrome's release cycle][Chromium4weekM].
 
 Due to the shortened release cycle of Microsoft Edge version 94, we focused on stabilizing the release cycle logistics, and we shifted feature development to Microsoft Edge version 95.
 
