@@ -128,19 +128,6 @@ The **Styles** pane supports CSS rules that you can modify by using the CSS Obje
 
 
 <!-- ====================================================================== -->
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-> [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/css-in-js/) and is authored by [Alex Rudenko][AlexRudenko] \(Technical Writer, Chrome DevTools \& Lighthouse\).
-
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-
-<!-- ====================================================================== -->
 <!-- links -->
 [CssReference]: reference.md "CSS features reference | Microsoft Docs"
 <!-- external links -->
@@ -154,3 +141,12 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies
 [AlexRudenko]: https://developers.google.com/web/resources/contributors#alex-rudenko
+
+
+<!-- ====================================================================== -->
+> [!NOTE]
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
+> The original page is found [here](https://developer.chrome.com/blog/css-in-js/) and is authored by [Alex Rudenko][AlexRudenko] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+
+[![Creative Commons License][CCby4Image]][CCA4IL]
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

@@ -139,11 +139,6 @@ The following products are examples of cloud-based emulators and related product
 
 (This list is closed for additions.)
 
-<!-- ====================================================================== -->
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
 
 <!-- ====================================================================== -->
 <!-- links -->
@@ -166,6 +161,8 @@ The following products are examples of cloud-based emulators and related product
 [SauceLabs]: https://saucelabs.com "Sauce Labs"
 [TestingBot]: https://testingbot.com/ "TestingBot"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\) and [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate at Google | Tools, Performance, Animation, UX\).

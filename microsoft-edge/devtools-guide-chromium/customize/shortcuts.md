@@ -83,6 +83,8 @@ For example, to pause or continue running a script in Visual Studio Code, you se
 > [!NOTE]
 > If a keyboard shortcut is currently assigned to one action, you are blocked from saving it to another action.  Instead, delete the keyboard shortcut from the previous action, and then add it to the new action.
 
+
+<!-- ====================================================================== -->
 <!-- links -->
 [DevToolsCustomizeSettings]: ./index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsOpenMain]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"

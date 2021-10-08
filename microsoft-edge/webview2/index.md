@@ -171,26 +171,19 @@ WebView2 apps can run on the following versions of Windows.
 > [!IMPORTANT]
 > \*\* WebView2 support for Windows 7 and Windows Server 2008 R2 has the same support cycle as Microsoft Edge.  For more information, navigate to [Microsoft Edge supported Operating Systems][DeployedgeMicrosoftEdgeSupportedOS].
 
-## Next steps
 
-For more information on how to build and deploy WebView2 apps, use the following conceptual documentation and how-to guides.
+<!-- ====================================================================== -->
+## See also
 
-### Concepts
+*  [Understand WebView2 SDK versions][Webview2ConceptsVersioning]
+*  [Distribute a WebView2 app and the WebView2 Runtime][Webview2ConceptsDistribution]
+*  [Best practices for developing secure WebView2 apps][Webview2ConceptsSecurity]
+*  [Manage User Data Folder in WebView2 apps][Webview2ConceptsUserDataFolder]
+*  [How to Debug with WebView2][Webview2HowToDebug]
+*  [Automating and testing WebView2 with Microsoft Edge Driver][Webview2HowToWebdriver]
 
-*   [Understand WebView2 SDK versions][Webview2ConceptsVersioning]
-*   [Distribute a WebView2 app and the WebView2 Runtime][Webview2ConceptsDistribution]
-*   [Best practices for developing secure WebView2 apps][Webview2ConceptsSecurity]
-*   [Manage User Data Folder in WebView2 apps][Webview2ConceptsUserDataFolder]
 
-### How-To guides
-
-*   [How to Debug with WebView2][Webview2HowToDebug]
-*   [Automating and testing WebView2 with Microsoft Edge Driver][Webview2HowToWebdriver]
-
-## Getting in touch with the Microsoft Edge WebView team
-
-[!INCLUDE [contact WebView team note](./includes/contact-webview-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 [Webview2ConceptsDistribution]: ./concepts/distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
 [Webview2ConceptsSecurity]: ./concepts/security.md "Best practices for developing secure WebView2 apps | Microsoft Docs"

@@ -298,18 +298,16 @@ You're almost done. You made a few changes to the page in DevTools, but they're 
        How your `index.html` file should look
     :::image-end:::
 
+
 ## Next steps
 
 *   Complete the next tutorial in this series, [Get Started with CSS][DevToolsBeginnersCss], to learn how to style your page and experiment with style changes in Microsoft Edge DevTools.
 *   Read [Introduction to the DOM][MDNIntroductionDom] to learn more about the DOM.
 *   Check out a course like [Introduction to Web Development][CourseraIntroductionToWebDevelopment] for more hands-on web development experience.
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-<!--- links --->
-
+<!-- ====================================================================== -->
+<!-- links -->
 [DevToolsBeginnersCss]: ./css.md "DevTools For Beginners: Get Started with CSS | Microsoft Docs"
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"

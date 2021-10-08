@@ -1,6 +1,6 @@
 ---
-description: Microsoft Edge (Chromium) and Visual Studio
-title: Visual Studio
+description: Microsoft Edge and Visual Studio web development.
+title: Visual Studio for web development
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 07/27/2021
@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs, visual studio, debugger
 ---
-# Visual Studio
+# Visual Studio for web development
 
 Microsoft [Visual Studio][MicrosoftVisualstudioVs] is an integrated development environment \(IDE\).   Use it to edit, debug, build, and publish your web apps.  It is a feature-rich program that can be used for many aspects of your web development.  Over and above the standard editor and debugger that most IDEs provide, Visual Studio includes the following features to ease your development process.
 
@@ -129,18 +129,20 @@ Previously, you launched Microsoft Edge from Visual Studio.  Alternatively, you 
 
 1.  In the **Select Code Type** dialog, select **JavaScript (Microsoft Edge - Chromium)** and select **OK**.
 
-The Visual Studio debugger is now attached to Microsoft Edge.  You can pause the running of JavaScript, set breakpoints, and view `console.log()` statements directly in the Debug Output window in Visual Studio.
+The Visual Studio debugger is now attached to Microsoft Edge.  You can pause the running of JavaScript, set breakpoints, and view `console.log()` statements directly in the **Debug Output** window in Visual Studio.
 
+
+<!-- ====================================================================== -->
 ## Getting in touch with the Microsoft Visual Studio team
 
-The Microsoft Visual Studio and Microsoft Edge teams wants to learn more about how you work with JavaScript in Visual Studio.  To send your feedback, select the **Send Feedback** icon in Visual Studio or tweet [@VisualStudio and @EdgeDevTools][TwitterIntentTweetViualstudioEdgdevtools].
+The Microsoft Visual Studio and Microsoft Edge teams wants to learn more about how you work with JavaScript in Visual Studio.  To send your feedback, select the **Send Feedback** icon in Visual Studio, or tweet [@VisualStudio and @EdgeDevTools][TwitterIntentTweetViualstudioEdgdevtools].
 
-:::image type="complex" source="./media/feedback-icon.png" alt-text="The Send Feedback icon in Visual Studio" lightbox="./media/feedback-icon.png":::
-   The **Send Feedback** icon in Visual Studio
-:::image-end:::
+:::image type="content" source="./media/feedback-icon.png" alt-text="The Send Feedback icon in Visual Studio" lightbox="./media/feedback-icon.png":::
 
+
+<!-- ====================================================================== -->
 <!-- links -->
-
+<!-- external links -->
 [VisualStudioWindowsIndex]: /visualstudio/windows/index "Visual Studio documentation | Microsoft Docs"
 
 [MicrosoftVisualstudioDownloads]: https://visualstudio.microsoft.com/downloads "Download Visual Studio"

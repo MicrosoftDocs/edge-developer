@@ -88,7 +88,7 @@ As an alternative approach, you can use **Command Menu** to access the different
 <!-- ====================================================================== -->
 ## See also
 
-* [Verify that the page is usable with blurred vision](test-blurred-vision.md)
+*  [Verify that the page is usable with blurred vision](test-blurred-vision.md)
 
 
 <!-- ====================================================================== -->

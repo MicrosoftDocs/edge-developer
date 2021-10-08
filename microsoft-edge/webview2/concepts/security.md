@@ -36,8 +36,9 @@ When examining the result of an `ExecuteScript` method call, a `WebMessageReceiv
 
 When constructing a message to send into a WebView, prefer using `PostWebMessageAsJson` and construct the JSON string parameter using a JSON library. This avoids any potential accidents of encoding information into a JSON string or script and ensure no attacker controlled input can modify the rest of the JSON message or run arbitrary script. -->
 
-<!-- links -->
 
+<!-- ====================================================================== -->
+<!-- links -->
 [Webview2Main]: ../index.md "Introduction to Microsoft Edge WebView2 | Microsoft Docs"
 
 [Webview2ReferenceWin32Icorewebview2settings]: /microsoft-edge/webview2/reference/win32/icorewebview2settings "interface ICoreWebView2Settings | Microsoft Docs"
