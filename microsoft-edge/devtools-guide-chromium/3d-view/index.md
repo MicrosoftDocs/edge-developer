@@ -140,14 +140,7 @@ The **Composited Layers** pane opens the elements of the **Layers** tool without
 
 
 <!-- ====================================================================== -->
-## Getting in touch with the Microsoft Edge DevTools team
-
-The Microsoft Edge Devtools team is working on the UI and adding more functionality to the 3D View based on your feedback.  Send your feedback to help improve the Microsoft Edge DevTools.  Select the **Send Feedback** icon in the DevTools or select `Alt`+`Shift`+`I` on Windows/Linux or `Option`+`Shift`+`I` on macOS and enter any feedback or feature requests you have for the DevTools.
-
-
-<!-- ====================================================================== -->
 <!-- links -->
 [GithubMicrosoftedgeDevtoolssamples3dview]: https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView "Microsoft Edge DevTools 3D View - MicrosoftEdge/DevToolsSamples | GitHub"
-
 [MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Document Object Model (DOM) | MDN"
 [MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"

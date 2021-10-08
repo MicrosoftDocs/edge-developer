@@ -247,12 +247,6 @@ To run a new audit, use `Shift`+`Tab` to exit the report and select the **Genera
 
 
 <!-- ====================================================================== -->
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
 [DevtoolsAccessibilityReference]: reference.md "Accessibility-testing features in DevTools | Microsoft Docs"
 [DevtoolsAccessibilityTab]: accessibility-tab.md "Test accessibility using the Accessibility tab | Microsoft Docs"

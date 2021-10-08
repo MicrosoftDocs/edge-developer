@@ -294,12 +294,9 @@ To turn on the experiment, navigate to [Turning on experimental features][Devtoo
 
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
 
-## Getting in touch with Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsAccessibilityTab]: ../../../accessibility/accessibility-tab.md "Test accessibility using the Accessibility tab | Microsoft Docs"
 [DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"
 [DevtoolsConsoleReferenceFilterByLogLevel]: ../../../console/reference.md#filter-by-log-level "Filter by log level - Console reference | Microsoft Docs"
