@@ -174,15 +174,7 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge WebView team][Contact]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge WebView team | Microsoft Edge Developer documentation"
-
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true "CoreWebView2Controller.AcceleratorKeyPressed Event | Microsoft Docs"
 
 [DevtoolsShortcutsIndex]: ../../devtools-guide-chromium/shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"

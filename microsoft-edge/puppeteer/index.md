@@ -106,12 +106,11 @@ probably commented out here b/c already in main body
 *   [page.setViewport() on Puppeteer][PuppeteerApipagesetviewport]
 *   [Headless browser on Wikipedia][WikiHeadlessBrowser]
 -->
-*  [Contacting the Microsoft Edge DevTools team][Contact]
+*  [Contact the Microsoft Edge DevTools team](../devtools-guide-chromium/contact.md) to send feedback about using Puppeteer, puppeteer-core, and Microsoft Edge.
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../devtools-guide-chromium/contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver (Chromium) | Microsoft Docs"
 <!-- external links -->
 [GithubChromedevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Chrome DevTools Protocol Viewer | GitHub"

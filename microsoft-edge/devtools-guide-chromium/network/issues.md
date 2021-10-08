@@ -103,14 +103,7 @@ Do you have a network issue that should be added to this guide?
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge DevTools team][Contact]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [NetworkPerformance]: ./index.md "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"
 
 [MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]

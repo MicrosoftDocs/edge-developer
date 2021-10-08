@@ -72,14 +72,7 @@ While you edit the keyboard shortcuts for an action, to discard your changes, se
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge DevTools team][Contact]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsCustomizeSettings]: ./index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsOpenMain]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
 [DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"

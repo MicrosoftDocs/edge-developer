@@ -169,14 +169,7 @@ Each wrapper object holds a reference to the corresponding native object, for re
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge DevTools team][Contact]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "How to Record Heap Snapshots | Microsoft Docs"
 
 [V8FastProperties]: https://v8.dev/blog/fast-properties "Fast properties in V8 | V8"

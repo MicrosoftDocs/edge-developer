@@ -978,14 +978,7 @@ By default, DevTools displays the **Overview** pane.  To hide it, turn off the *
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge DevTools team][Contact]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Debug Progressive Web Apps | Microsoft Docs"
 <!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->
 <!-- external links -->

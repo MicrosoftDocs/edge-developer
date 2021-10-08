@@ -53,14 +53,7 @@ Delete the `>` character and type `?` to display other actions that are availabl
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge DevTools team][Contact]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [JavascriptDisable]: ../javascript/disable.md "Disable JavaScript With Microsoft Edge DevTools | Microsoft Docs"
 
 [VisualStudioCodeUICommandPalette]: https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette "Command palette - Visual Studio Code UI"

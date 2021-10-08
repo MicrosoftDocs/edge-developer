@@ -307,14 +307,7 @@ You're almost done. You made a few changes to the page in DevTools, but they're 
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge DevTools team][Contact]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsBeginnersCss]: ./css.md "DevTools For Beginners: Get Started with CSS | Microsoft Docs"
 
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"

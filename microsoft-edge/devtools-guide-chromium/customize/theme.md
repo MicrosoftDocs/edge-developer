@@ -83,14 +83,7 @@ To use the Command Menu to change which color theme is applied to DevTools:
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge DevTools team][Contact]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsCommandMenu]: ../command-menu/index.md "Command Menu | Microsoft Docs"
 [WhatsNew93]: ../whats-new/2021/07/devtools.md "What's New In DevTools (Microsoft Edge 93) | Microsoft Docs"
 [VSCode]: https://code.visualstudio.com

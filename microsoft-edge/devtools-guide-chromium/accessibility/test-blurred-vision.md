@@ -36,7 +36,6 @@ To check whether a webpage is usable with blurred vision:
 
 *  [Emulate vision deficiencies](emulate-vision-deficiencies.md)
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
-*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
 <!-- ====================================================================== -->

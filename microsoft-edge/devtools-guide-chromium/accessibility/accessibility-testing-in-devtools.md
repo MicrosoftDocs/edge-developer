@@ -515,14 +515,7 @@ Another way to find out what to do to improve your web product is to use the [we
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge DevTools team][Contact]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsMediaQueries]: ../device-mode/index.md#show-media-queries "Show media queries - Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
 [DevToolsDeviceModeIndex]: ../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsAccessibilityReference]: reference.md "Accessibility-testing features in DevTools | Microsoft Docs"

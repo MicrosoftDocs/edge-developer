@@ -233,12 +233,10 @@ To preview the [latest features coming to the DevTools][DevtoolsGuideWhatsNew202
 
 *  [DevTools for beginners: Get Started with HTML and the DOM][DevtoolsGuideBeginnersHtml]
 *  [Microsoft Edge (Chromium) DevTools Protocol][DevtoolsProtocolIndex]
-*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsGuideBeginnersHtml]: ./beginners/html.md "DevTools for beginners: Get started with HTML and the DOM | Microsoft Docs"
 [DevtoolsGuideCommandMenuIndex]: ./command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"
 [DevtoolsGuideConsoleIndex]: ./console/index.md "Console overview | Microsoft Docs"

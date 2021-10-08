@@ -115,12 +115,5 @@ Use the editor provided with the **Sources** tool of DevTools or any editor you 
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge DevTools team][Contact]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsSourcesTool]: ../sources/index.md "Sources tool overview | Microsoft Docs"

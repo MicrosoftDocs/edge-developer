@@ -28,14 +28,7 @@ WebView2 is available for the following languages and frameworks.
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge WebView team][Contact]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
-[Contact]: contact.md "Contacting the Microsoft Edge WebView team | Microsoft Edge Developer documentation"
 [DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Microsoft.Web.WebView2.Core Namespace | Microsoft Docs"
 [DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf Namespace | Microsoft Docs"
 [DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"

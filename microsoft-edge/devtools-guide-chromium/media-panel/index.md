@@ -106,14 +106,7 @@ You may choose to hide \(or show\) each media player for an easier debugging exp
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge DevTools team][Contact]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsGuideChromiumOpen]: ../open/index.md "Open Microsoft Edge (Chromium) DevTools | Microsoft Docs"
 
 [DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Get started with remote debugging Android devices | Microsoft Docs"

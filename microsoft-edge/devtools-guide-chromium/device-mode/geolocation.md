@@ -42,17 +42,7 @@ If you are building a UI that changes depending on where the user is located, yo
        Choose `Tokyo` from the **Geolocation** list
     :::image-end:::
 
-
-<!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge DevTools team][Contact]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
-<!--[WebFundamentalsNativeHardwareUserLocationIndex]: /web/fundamentals/native-hardware/user-location/index "User Location"  -->
+<!-- /web/fundamentals/native-hardware/user-location/index -->
 
 
 <!-- ====================================================================== -->

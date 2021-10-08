@@ -137,14 +137,7 @@ This section lists events that belong to Painting category and their properties.
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge DevTools team][Contact]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [ConsoleApiTime]: /microsoft-edge/devtools-guide-chromium/console/api#time "time - Console API Reference"
 [ConsoleApiTimeEnd]: /microsoft-edge/devtools-guide-chromium/console/api#timeend "timeEnd - Console API Reference"
 <!--[EvaluatePerformanceTimelineTool]: timeline-tool "How to Use the Timeline Tool"  -->

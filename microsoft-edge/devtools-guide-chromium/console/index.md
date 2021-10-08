@@ -183,12 +183,10 @@ You changed the main heading of the webpage to **Rocking the Console**.  The **C
 *  [Console reference][DevtoolsConsoleReference]
 *  [Console Utilities API reference][DevtoolsConsoleUtilities]
 *  [Console API reference][DevtoolsConsoleApi]
-*  [Contacting the Microsoft Edge DevTools team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"
 [DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "Fixing JavaScript errors that are reported in the Console | Microsoft Docs"
 [DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "Use the Console to interact with the DOM | Microsoft Docs"

@@ -353,14 +353,7 @@ Navigate to the [Network Reference][DevtoolsNetworkReference] to discover more D
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge DevTools team][Contact]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->
 [DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"
 [DevtoolsNetworkReference]: ./reference.md "Network analysis reference | Microsoft Docs"

@@ -300,14 +300,7 @@ Example native app folder structure:
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge WebView team][Contact]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge WebView team | Microsoft Edge Developer documentation"
 [ConceptsVersioning]: ./versioning.md "Understanding browser versions and WebView2 | Microsoft Docs"
 [HowToWebdriver]: ../how-to/webdriver.md "Automating and testing WebView2 with Microsoft Edge Driver | Microsoft Docs"
 [Webview2ConceptsDevguideManageVersionsRuntime]: developer-guide.md#manage-new-versions-of-the-runtime "Manage new versions of the Runtime | Microsoft Docs"

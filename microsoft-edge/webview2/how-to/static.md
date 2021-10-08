@@ -48,12 +48,10 @@ For apps that don't want to ship a `WebView2Loader.dll`, complete the following 
 *  [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] - a comprehensive example of WebView2 capabilities.
 *  [WebView2 API reference][Webview2ApiReference]
 *  [See also][Webview2MainNextSteps] in _Introduction to Microsoft Edge WebView2_.
-*  [Contacting the Microsoft Edge WebView team][Contact]
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge WebView team | Microsoft Edge Developer documentation"
 [DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
 
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"

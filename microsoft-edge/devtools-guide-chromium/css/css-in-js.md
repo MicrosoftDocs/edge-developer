@@ -128,14 +128,7 @@ The **Styles** pane supports CSS rules that you can modify by using the CSS Obje
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge DevTools team][Contact]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [CssReference]: reference.md "CSS reference | Microsoft Docs"
 <!-- external links -->
 [BlogCssInJsInDevTools]: https://developers.google.com/web/updates/2021/02/css-in-js "CSS-in-JS support in DevTools | Google Blog "

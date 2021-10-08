@@ -113,14 +113,7 @@ To restore the default theme, placement, tools order, and any other customized s
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge DevTools team][Contact]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge DevTools team | Microsoft Edge Developer documentation"
 [DevToolsPlacement]: ./placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"
 [Theme]: ./theme.md "Apply color themes to DevTools | Microsoft Docs"
 <!-- image links -->
