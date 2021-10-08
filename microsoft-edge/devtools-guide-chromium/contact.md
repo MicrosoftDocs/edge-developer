@@ -1,6 +1,6 @@
 ---
 description: Contacting the Microsoft Edge DevTools team to submit feature requests or bug reports of issues about developing for Microsoft Edge.
-title: Contacting the Microsoft Edge DevTools team
+title: Contact the Microsoft Edge DevTools team
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/29/2021
@@ -9,12 +9,7 @@ ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-# Contacting the Microsoft Edge DevTools team
-
-<!-- todo:
-*  In articles other than DevTools & WebView2, manually handle each, by using public docs, & local bak of present file.
--->
-
+# Contact the Microsoft Edge DevTools team
 
 Send your feedback to help improve Microsoft Edge DevTools.  Contact the Microsoft Edge DevTools team to submit feature requests or bug reports of issues about developing for Microsoft Edge.
 
@@ -24,7 +19,7 @@ There are several ways to get in touch with the Microsoft Edge DevTools team.
 <!-- ====================================================================== -->
 ## Using the Send Feedback window
 
-*  To send feedback about developing using Microsoft Edge, or about the Microsoft Edge Developer documentation, [open DevTools][OpeningDevTools] and then select the **Send Feedback** icon.  Or, in DevTools, select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS).  This approach creates a tracked issue for the Microsoft Edge development team.
+To report a bug in DevTools or to request a new feature, [open DevTools][OpeningDevTools] and then select the **Send Feedback** icon.  Or, in DevTools, select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS).  This approach creates a tracked issue for the Microsoft Edge development team.
 
 :::image type="content" source="../media/devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in Microsoft Edge DevTools" lightbox="../media/devtools-send-feedback.msft.png":::
 
@@ -34,17 +29,11 @@ Selecting the **Send Feedback** icon opens a **Send Feedback** window.
 
 
 <!-- ====================================================================== -->
-## Entering an issue in the edge-developer repo
+## File a documentation issue
 
 To enter a GitHub issue from within a documentation article, in the **Feedback** section at the bottom of an article, select the **This page** button.
 
 Or you can [file an issue][GitHubMicrosoftDocsEdgeDeveloperNewIssue] against the Microsoft Edge Developer documentation, directly in the `edge-developer` repo.
-
-
-<!-- ====================================================================== -->
-## Contributing to the documentation
-
-You can make a fork of the `edge-developer` GitHub repo and [contribute to the edge-developer documentation repo][ContributeEdgeDevDocsRepo].  The `edge-developer` GitHub repo contains the source files for the Microsoft Edge Developer documentation.
 
 
 <!-- ====================================================================== -->
@@ -54,9 +43,9 @@ Microsoft Edge DevTools has an [EdgeDevTools Twitter account][EdgeDevToolsTwitte
 
 
 <!-- ====================================================================== -->
-## The Web We Want initiative
+## Submit a cross-browser suggestion to the Web We Want
 
-You can submit a suggestion at [The Web We Want initiative][WebWeWant].  Use this approach when you want to communicate across browser teams or standards bodies.
+To make a feature request across browser teams or standards bodies, submit a request at [The Web We Want initiative][WebWeWant].
 
 The Web We Want is a cross-browser initiative to identify missing features for web standards or browsers.  Use this communication channel to let browser vendors and standards groups know your request.
 
