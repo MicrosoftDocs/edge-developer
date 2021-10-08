@@ -11,15 +11,13 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Contact the Microsoft Edge WebView2 team
 
-Share your feedback to help build richer WebView2 experiences. To submit feature requests or bugs, or search for known issues, navigate to the Microsoft Edge WebView2 feedback repo.
-
-There are several ways to get in touch with the Microsoft Edge WebView2 team.
+Share your feedback to help build richer WebView2 experiences.
 
 
 <!-- ====================================================================== -->
 ## Submit feature requests or bugs in the WebView2Feedback repo
 
-Share your feedback to help build rich WebView2 experiences.  To submit feature suggestions or bugs about [the WebView2 control][IntroWebView2], or to search for known issues, use the [WebView2Feedback][GithubMicrosoftedgeWebviewfeedback] repo.
+To submit feature suggestions or bugs about [the WebView2 control][IntroWebView2], or to search for known issues, use the [WebView2Feedback][GithubMicrosoftedgeWebviewfeedback] repo.
 
 The `WebView2Feedback` repo is a place for developers to share tips or best practices, report feedback, or search existing issues for WebView2.
 
