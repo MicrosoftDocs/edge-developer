@@ -229,7 +229,7 @@
               href: devtools-guide-chromium/coverage/index.md
             - name: Elements
               items:
-                - name: CSS reference
+                - name: CSS features reference
                   href: devtools-guide-chromium/css/reference.md
                 - name: Edit CSS font styles and settings
                   href: devtools-guide-chromium/inspect-styles/edit-fonts.md

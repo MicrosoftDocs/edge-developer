@@ -63,9 +63,22 @@ For example, to pause or continue running a script in Visual Studio Code, you se
 
 1.  Select your new keyboard shortcut to trigger the action in DevTools.
 
-On the **Shortcuts** page, the **Custom Keyboard Shortcut** \(![CustomKeyboardShortcut](../media/custom-keyboard-shortcut-icon.msft.png)\) icon displays keyboard shortcuts that you have customized.  To reset all shortcuts, select **Restore default shortcuts**.
 
-While you edit the keyboard shortcuts for an action, to discard your changes, select the X \(![XKeyboardShortcut](../media/discard-changes-keyboard-shortcut-icon.msft.png)\) icon.  To remove shortcuts for a specific action, select the **Delete shortcut** \(![DeleteKeyboardShortcut](../media/delete-keyboard-shortcut-icon.msft.png)\) icon.
+### Icons and buttons
+
+<!-- keep in same order as screenshot: -->
+
+*  If there's a **Custom Keyboard Shortcut** (![CustomKeyboardShortcut](../media/custom-keyboard-shortcut-icon.msft.png)) icon displayed next to a checkbox, it indicates that you have customized the keyboard shortcut.
+
+*  To remove a keyboard shortcut for an action while you are editing the keyboard shortcuts for an action, select the **Delete shortcut** (![DeleteKeyboardShortcut](../media/delete-keyboard-shortcut-icon.msft.png)) icon.
+
+*  To add an additional keyboard shortcut for an action while you are editing the keyboard shortcuts for an action, select the **Add a shortcut** link, or select the **Custom Keyboard Shortcut** (![CustomKeyboardShortcut](../media/custom-keyboard-shortcut-icon.msft.png)) icon.
+
+*  To save a modified or added keyboard shortcut while you are editing the keyboard shortcuts for an action, select the checkmark (![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)) icon.
+
+*  To discard your changes while you are editing the keyboard shortcuts for an action, select the X (![XKeyboardShortcut](../media/discard-changes-keyboard-shortcut-icon.msft.png)) icon.
+
+*  To reset all shortcuts, select the **Restore default shortcuts** button.
 
 > [!NOTE]
 > If a keyboard shortcut is currently assigned to one action, you are blocked from saving it to another action.  Instead, delete the keyboard shortcut from the previous action, and then add it to the new action.

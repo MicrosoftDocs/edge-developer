@@ -78,7 +78,7 @@ View the computed accessibility properties of an element in the **Accessibility*
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "View only the CSS that is actually applied to an element - CSS Reference | Microsoft Docs"
+[DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "View only the CSS that is actually applied to an element - CSS features reference | Microsoft Docs"
 [MDNAccessibilityTree]: https://developer.mozilla.org/docs/Glossary/AOM "Accessibility tree (AOM) | MDN"
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
