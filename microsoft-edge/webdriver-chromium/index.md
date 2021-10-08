@@ -398,7 +398,6 @@ By default, Microsoft Edge Driver sends diagnostic data such as the status of th
 ## See also
 
 *  [Selenium documentation][SeleniumDocumentation] - Information about WebDriver in the context of Selenium, and how to write automated WebDriver tests using Selenium.
-*  [feedback about using WebDriver, WebDriver testing frameworks (such as Selenium), and Microsoft Edge.
 *  [Contact the Microsoft Edge DevTools team](../devtools-guide-chromium/contact.md) to send feedback about using WebDriver, WebDriver testing frameworks (such as Selenium), and Microsoft Edge.
 
 

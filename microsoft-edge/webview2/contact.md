@@ -17,17 +17,13 @@ Share your feedback to help build richer WebView2 experiences.
 <!-- ====================================================================== -->
 ## Submit feature requests or bugs in the WebView2Feedback repo
 
-To submit feature suggestions or bugs about [the WebView2 control][IntroWebView2], or to search for known issues, use the [WebView2Feedback][GithubMicrosoftedgeWebviewfeedback] repo.
-
-The `WebView2Feedback` repo is a place for developers to share tips or best practices, report feedback, or search existing issues for WebView2.
+To submit feature suggestions or bugs about [the WebView2 control][IntroWebView2], or to search for known issues, use the [WebView2Feedback][GithubMicrosoftedgeWebviewfeedback] repo.  The `WebView2Feedback` repo is a place for developers to share tips or best practices, report feedback, or search existing issues for WebView2.
 
 
 <!-- ====================================================================== -->
 ## File a documentation issue
 
-To enter a GitHub issue from within a documentation article, in the **Feedback** section at the bottom of an article, select the **This page** button.
-
-Or you can [file an issue][GitHubMicrosoftDocsEdgeDeveloperNewIssue] against the Microsoft Edge Developer documentation, directly in the `edge-developer` repo.
+To enter a GitHub issue from within a documentation article, in the **Feedback** section at the bottom of an article, select the **This page** button.  Or, you can [file an issue][GitHubMicrosoftDocsEdgeDeveloperNewIssue] against the Microsoft Edge Developer documentation directly in the `edge-developer` repo.
 
 
 <!-- ====================================================================== -->
