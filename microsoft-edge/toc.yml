@@ -41,7 +41,7 @@
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
-        - name: Tutorials
+        - name: Get started
           items:
             - name: For beginners
               items:
@@ -77,7 +77,7 @@
                   href: devtools-guide-chromium/remote-debugging/windows.md
                 - name: Get started with remote debugging Android WebViews
                   href: devtools-guide-chromium/remote-debugging/webviews.md
-        - name: How-to guides
+        - name: Features
           items:
             - name: Accessibility
               items:
@@ -183,7 +183,7 @@
                   href: devtools-guide-chromium/evaluate-performance/performance-reference.md
             - name: Service worker troubleshooting
               href: devtools-guide-chromium/service-workers/index.md
-        - name: Concepts
+        - name: Tools
           items:
             - name: 3D View
               href: devtools-guide-chromium/3d-view/index.md
@@ -213,10 +213,14 @@
                   href: devtools-guide-chromium/console/index.md
                 - name: Log messages
                   href: devtools-guide-chromium/console/console-log.md
-                - name: Run JavaScript
+                - name: Run JavaScript in the Console
                   href: devtools-guide-chromium/console/console-javascript.md
-                - name: Reference
+                - name: Console features reference
                   href: devtools-guide-chromium/console/reference.md
+                - name: Console API reference
+                  href: devtools-guide-chromium/console/api.md
+                - name: Console Utilities API reference
+                  href: devtools-guide-chromium/console/utilities.md
                 - name: Watch JavaScript expressions in real time
                   href: devtools-guide-chromium/console/live-expressions.md
                 - name: Fix JavaScript Console errors
@@ -291,16 +295,10 @@
                   href: devtools-guide-chromium/javascript/disable.md
             - name: WebAuthn
               href: devtools-guide-chromium/webauthn/index.md
-        - name: Reference
-          items:
-            - name: Console API reference
-              href: devtools-guide-chromium/console/api.md
-            - name: Console Utilities API reference
-              href: devtools-guide-chromium/console/utilities.md
-            - name: DevTools Protocol
-              href: devtools-protocol-chromium/index.md
-            - name: Keyboard shortcuts
-              href: devtools-guide-chromium/shortcuts/index.md
+        - name: DevTools Protocol
+          href: devtools-protocol-chromium/index.md
+        - name: Keyboard shortcuts
+          href: devtools-guide-chromium/shortcuts/index.md
         - name: Contact the DevTools team
           href: devtools-guide-chromium/contact.md
 # equivalent card: Extensions =================================================
