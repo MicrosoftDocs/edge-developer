@@ -184,6 +184,8 @@
               href: devtools-guide-chromium/service-workers/index.md
             - name: DevTools Protocol
               href: devtools-protocol-chromium/index.md
+            - name: Keyboard shortcuts
+              href: devtools-guide-chromium/shortcuts/index.md
 # =============================================================================
         - name: Tools
           items:
@@ -297,8 +299,6 @@
                   href: devtools-guide-chromium/javascript/disable.md
             - name: WebAuthn
               href: devtools-guide-chromium/webauthn/index.md
-        - name: Keyboard shortcuts
-          href: devtools-guide-chromium/shortcuts/index.md
         - name: Contact the DevTools team
           href: devtools-guide-chromium/contact.md
 # =============================================================================
