@@ -1,10 +1,7 @@
-# - name: Microsoft Edge documentation # hub page, uncommenting causes 2 landing nodes with all docs pushed right
-#  href: index.yml
 - name: Microsoft Edge Developer documentation #landing page
   href: developer/index.yml
-#  expanded: true
   items:
-# equivalent card: DevTools ===================================================
+# =============================================================================
     - name: Microsoft Edge DevTools
       items:
         - name: DevTools overview
@@ -41,6 +38,7 @@
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
+# =============================================================================
         - name: Get started
           items:
             - name: For beginners
@@ -77,6 +75,7 @@
                   href: devtools-guide-chromium/remote-debugging/windows.md
                 - name: Get started with remote debugging Android WebViews
                   href: devtools-guide-chromium/remote-debugging/webviews.md
+# =============================================================================
         - name: Features
           items:
             - name: Accessibility
@@ -183,6 +182,9 @@
                   href: devtools-guide-chromium/evaluate-performance/performance-reference.md
             - name: Service worker troubleshooting
               href: devtools-guide-chromium/service-workers/index.md
+            - name: DevTools Protocol
+              href: devtools-protocol-chromium/index.md
+# =============================================================================
         - name: Tools
           items:
             - name: 3D View
@@ -295,13 +297,11 @@
                   href: devtools-guide-chromium/javascript/disable.md
             - name: WebAuthn
               href: devtools-guide-chromium/webauthn/index.md
-        - name: DevTools Protocol
-          href: devtools-protocol-chromium/index.md
         - name: Keyboard shortcuts
           href: devtools-guide-chromium/shortcuts/index.md
         - name: Contact the DevTools team
           href: devtools-guide-chromium/contact.md
-# equivalent card: Extensions =================================================
+# =============================================================================
     - name: Microsoft Edge extensions
       items:
         - name: Overview of Microsoft Edge extensions
@@ -372,7 +372,7 @@
               href: extensions-chromium/enterprise/hosting-and-updating.md
             - name: Auto-update
               href: extensions-chromium/enterprise/auto-update.md
-# equivalent card: Progressive Web Apps =======================================
+# =============================================================================
     - name: Progressive Web Apps
       items:
         - name: Progressive Web Apps overview
@@ -391,7 +391,7 @@
           href: progressive-web-apps-chromium/experimental-features/index.md
         - name: Publish a PWA to the Microsoft Store
           href: progressive-web-apps-chromium/microsoft-store.md
-# equivalent card: WebView2 ===================================================
+# =============================================================================
     - name: WebView2
       items:
         - name: WebView2 overview
@@ -471,7 +471,7 @@
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
         - name: Contact the WebView2 team
           href: webview2/contact.md
-# equivalent card: Test and automation ==========================================
+# =============================================================================
     - name: Test and automation
       items:
         - name: DevTools Protocol
@@ -492,7 +492,7 @@
               href: webdriver-chromium/verify-selenium-tools.md
         - name: webhint
           href: test-and-automation/webhint-aux-node.md
-# equivalent card: Web platform ===============================================
+# =============================================================================
     - name: Web platform
       items:
         - name: Site compatibility-impacting changes coming to Microsoft Edge
@@ -505,7 +505,7 @@
           href: web-platform/user-agent-guidance.md
         - name: Customize the password reveal button
           href: web-platform/password-reveal.md
-# equivalent card: Microsoft Edge IDE integration =============================
+# =============================================================================
     - name: Microsoft Edge IDE integration
       items:
         - name: Visual Studio overview
@@ -522,7 +522,7 @@
               href: visual-studio-code/microsoft-edge-devtools-extension.md
             - name: webhint extension
               href: visual-studio-code/webhint.md
-# equivalent card: Accessibility ==============================================
+# =============================================================================
     - name: Accessibility in Microsoft Edge
       items:
         - name: Accessibility overview
@@ -535,7 +535,7 @@
           href: accessibility/build/ARIA-and-UI-Automation.md
         - name: Accessibility testing
           href: accessibility/test.md
-# SORT into the above card sections ===========================================
+# =============================================================================
     - name: Privacy whitepaper
       href: privacy-whitepaper/index.md
     - name: Web We Want overview
