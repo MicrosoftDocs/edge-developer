@@ -18,7 +18,7 @@ keywords: microsoft edge, pwas, pwa, progressive web apps, origin trials
 
 ### New hub design for managing your installed web apps
 
-Microsoft Edge Canary reached version 96 on October 5, 2021.  With a subset of our users, we're testing a new design to better manage your installed web apps.  When you go to `edge://apps` in your browser, it now displays a redesigned hub that lists installed PWAs and websites as apps. 
+Microsoft Edge Canary reached version 96 on October 5, 2021.  With a subset of our users, we're testing a new design to better manage your installed web apps.  When you go to [edge://apps](edge://apps) in your browser, it now displays a redesigned hub that lists installed PWAs and websites as apps.
 
 You can sort your apps by any of the following:
 *  Recently used.
@@ -52,7 +52,7 @@ We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) 
 <!-- ====================================================================== -->
 ## What's New in Microsoft Edge 94
 
-Microsoft Edge version 94 moved to Stable on Sept 23, 2021. This release cycle was short—just<!-- em dash --> 3 weeks from Microsoft Edge 93 Stable to Microsoft Edge 94 Stable as we snapped to the new [four week release cycle][4weekReleaseBlog].  This new release cadence matches the new cadence of Chromium milestones, described in [Speeding up Chrome's release cycle][Chromium4weekM].
+Microsoft Edge version 94 moved to Stable on September 23, 2021. This release cycle was short—just<!-- em dash --> 3 weeks from Microsoft Edge 93 Stable to Microsoft Edge 94 Stable, as we snapped to the new [4-week release cycle][4weekReleaseBlog].  This new release cadence matches the new cadence of Chromium milestones, described in [Speeding up Chrome's release cycle][Chromium4weekM].
 
 Due to the shortened release cycle of Microsoft Edge version 94, we focused on stabilizing the release cycle logistics, and we shifted feature development to Microsoft Edge version 95.
 
