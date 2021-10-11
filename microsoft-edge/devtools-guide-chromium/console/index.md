@@ -175,16 +175,17 @@ You changed the main heading of the webpage to **Rocking the Console**.  The **C
     Manipulate a selection of elements using the **Console**
 :::image-end:::
 
-For more information about working with the DOM, navigate to [Use the Console to interact with the DOM][DevtoolsConsoleConsoleDomInteraction].
 
-## Learn more about Console
+<!-- ====================================================================== -->
+## See also
 
-For more information about the **Console**, navigate to [Console reference][DevtoolsConsoleReference], [Console Utilities API reference][DevtoolsConsoleUtilities], and [Console API reference][DevtoolsConsoleApi].
+*  [Use the Console to interact with the DOM][DevtoolsConsoleConsoleDomInteraction].
+*  [Console reference][DevtoolsConsoleReference]
+*  [Console Utilities API reference][DevtoolsConsoleUtilities]
+*  [Console API reference][DevtoolsConsoleApi]
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 [DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"
 [DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "Fixing JavaScript errors that are reported in the Console | Microsoft Docs"

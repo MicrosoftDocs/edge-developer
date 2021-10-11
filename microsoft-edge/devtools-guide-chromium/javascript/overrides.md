@@ -113,10 +113,7 @@ The file is stored in your overrides folder.  Verify that DevTools create a fold
 
 Use the editor provided with the **Sources** tool of DevTools or any editor you want to change the files.  Changes are synced across all the products that access the files in the overrides folder.
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevToolsSourcesTool]: ../sources/index.md "Sources tool overview | Microsoft Docs"

@@ -79,11 +79,8 @@ When you use **Live Expressions**, you always get the information on the same pa
 
 **Live Expressions** run exclusively on your computer and you don't need to change anything in your code to display.  **Live Expressions** are a great way to ensure that you only display the information you want to debug.  Also, **Live Expressions** help you limit the noise on your users' computers.
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html "Console messages examples: Using table | GitHub"
 [GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html "Mouse movement without logging | GitHub"
