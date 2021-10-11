@@ -27,7 +27,7 @@ Many PWAs are also present on the Microsoft Store and can be installed directly 
 
 To install a PWA from the Microsoft Store, select **Get** on the app page.
 
-:::image type="content" source="./media/install-twitter-microsoft-store.png" alt-text="Installing an app from the Microsoft Store." lightbox="./media/install-twitter-microsoft-store.png":::
+:::image type="content" source="./media/install-webboard-microsoft-store.png" alt-text="Installing an app from the Microsoft Store." lightbox="./media/install-webboard-microsoft-store.png":::
 
 
 <!-- ====================================================================== -->
