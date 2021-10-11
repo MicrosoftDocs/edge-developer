@@ -3,7 +3,7 @@ description: New features and origin trials for Progressive Web Apps (PWAs).
 title: What's New in Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/23/2021
+ms.date: 10/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, pwas, pwa, progressive web apps, origin trials
@@ -14,9 +14,45 @@ keywords: microsoft edge, pwas, pwa, progressive web apps, origin trials
 
 
 <!-- ====================================================================== -->
+## What's New in Microsoft Edge 96
+
+### New hub design for managing your installed web apps
+
+Microsoft Edge Canary reached version 96 on October 5, 2021.  With a subset of our users, we're testing a new design to better manage your installed web apps.  When you go to `edge://apps` in your browser, it now displays a redesigned hub that lists installed PWAs and websites as apps.
+
+You can sort your apps by any of the following:
+*  Recently used.
+*  Alphabetically, based on title.
+*  Date of installation.
+
+You can also arrange apps in a list or grid view. 
+
+:::image type="content" source="media/edgeapps-redesign.jpg" alt-text="Microsoft Edge now has a new app management page." lightbox="media/edgeapps-redesign.jpg":::
+
+Additionally, you can easily pin apps to the taskbar or **Start** menu.  You can create a shortcut, and enable apps to run on user login. 
+
+Also, there's now a way to easily access the following:
+*  Permissions and privacy details for the associated origin.
+*  More details about the application.
+
+:::image type="content" source="media/edgeapps-details.jpg" alt-text="Microsoft Edge's app details page." lightbox="media/edgeapps-details.jpg":::
+
+
+<!-- ====================================================================== -->
+## What's New in Microsoft Edge 95
+
+Microsoft Edge version 95 moved to Beta channel on September 28, 2021. 
+The origin trials remain active for the following features:
+*  [Window Controls Overlay for desktop PWAs](#window-controls-overlay-origin-trials).
+*  [URL Handlers](#url-handlers-origin-trial).
+
+We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) to end on October 21, 2021.
+
+
+<!-- ====================================================================== -->
 ## What's New in Microsoft Edge 94
 
-Microsoft Edge version 94 release moved to Stable on Sept 23, 2021.  This release cycle was short—just<!-- em dash --> 3 weeks from Microsoft Edge 93 Stable to Microsoft Edge 94 Stable as we snapped to the new [four week release cycle][4weekReleaseBlog].  This new release cadence matches the new cadence of Chromium milestones, described in [Speeding up Chrome's release cycle][Chromium4weekM].
+Microsoft Edge version 94 moved to Stable on September 23, 2021. This release cycle was short—just<!-- em dash --> 3 weeks from Microsoft Edge 93 Stable to Microsoft Edge 94 Stable, as we snapped to the new [4-week release cycle][4weekReleaseBlog].  This new release cadence matches the new cadence of Chromium milestones, described in [Speeding up Chrome's release cycle][Chromium4weekM].
 
 Due to the shortened release cycle of Microsoft Edge version 94, we focused on stabilizing the release cycle logistics, and we shifted feature development to Microsoft Edge version 95.
 
