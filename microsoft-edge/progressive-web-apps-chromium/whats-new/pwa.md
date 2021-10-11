@@ -18,7 +18,7 @@ keywords: microsoft edge, pwas, pwa, progressive web apps, origin trials
 
 ### New hub design for managing your installed web apps
 
-Microsoft Edge Canary reached version 96 on October 5, 2021.  With a subset of our users, we're testing a new design to better manage your installed web apps.  When you go to [edge://apps](edge://apps) in your browser, it now displays a redesigned hub that lists installed PWAs and websites as apps.
+Microsoft Edge Canary reached version 96 on October 5, 2021.  With a subset of our users, we're testing a new design to better manage your installed web apps.  When you go to `edge://apps` in your browser, it now displays a redesigned hub that lists installed PWAs and websites as apps.
 
 You can sort your apps by any of the following:
 *  Recently used.
