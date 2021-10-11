@@ -17,7 +17,7 @@ PWAs are websites that are **[progressively enhanced][AListApartUnderstandingPro
 
 The qualities of a PWA combine **the best of the web and compiled apps**. PWAs run in browsers, like websites, but have access to app features like the ability to work offline, be installed on the operating system, support push notifications and periodic updates, access hardware features, and more.
 
-**PWAs are first-class citizens on Windows**. When installed, they behave like other apps. They can be added to the Start Menu, pinned to the Taskbar, handle files, run on user login, and more.
+When installed, **PWAs are just like other apps on Windows**. They can be added to the Start Menu, pinned to the Taskbar, handle files, run on user login, and more.
 
 PWAs can also be **submitted to the Microsoft Store** where millions of Windows users can discover and easily install them alongside other Windows apps.
 
@@ -120,7 +120,7 @@ Check out [Myth Busting PWAs][Davrous20191018MythBustingPwasNewEdgeEdition] for 
 <!-- ====================================================================== -->
 ## The Microsoft Store
 
-Because PWAs are first-class citizens in the [Microsoft Store][PwaMicrosoftStore], users can fully engage with them, from discovery, to installation, to execution, without ever opening the browser.
+Because PWAs are just like other apps in the [Microsoft Store][PwaMicrosoftStore], users can fully engage with them, from discovery, to installation, to execution, without ever opening the browser.
 
 As the most used app on PCs, the Microsoft Store provides a trustworthy and familiar experience for your users to install your app. Additionally, you can view detailed usage statistics and charts that let you know how your apps in the Microsoft Store are doing.
 

@@ -10,7 +10,7 @@ keywords: progressive web apps, PWA, Edge, Windows, desktop, installation, integ
 ---
 # The user experience of PWAs
 
-On Windows, PWAs are first-class app citizens.  Any device running Microsoft Edge gets full access to the technologies and characteristics of Progressive Web Apps.
+On Windows, PWAs are just like other apps.  Any device running Microsoft Edge gets full access to the technologies and characteristics of Progressive Web Apps.
 
 
 <!-- ====================================================================== -->
