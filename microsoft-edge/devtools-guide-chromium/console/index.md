@@ -180,7 +180,7 @@ You changed the main heading of the webpage to **Rocking the Console**.  The **C
 ## See also
 
 *  [Use the Console to interact with the DOM][DevtoolsConsoleConsoleDomInteraction].
-*  [Console reference][DevtoolsConsoleReference]
+*  [Console features reference][DevtoolsConsoleReference]
 *  [Console Utilities API reference][DevtoolsConsoleUtilities]
 *  [Console API reference][DevtoolsConsoleApi]
 
@@ -193,7 +193,7 @@ You changed the main heading of the webpage to **Rocking the Console**.  The **C
 [DevtoolsConsoleConsoleFilters]: ./console-filters.md "Filter Console messages | Microsoft Docs"
 [DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Console as a JavaScript environment | Microsoft Docs"
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Log messages in the Console tool | Microsoft Docs"
-[DevtoolsConsoleReference]: ./reference.md "Console reference | Microsoft Docs"
+[DevtoolsConsoleReference]: ./reference.md "Console features reference | Microsoft Docs"
 [DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"
 [DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
 <!-- external links -->
