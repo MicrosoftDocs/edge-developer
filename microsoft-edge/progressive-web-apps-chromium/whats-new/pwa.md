@@ -16,7 +16,7 @@ keywords: microsoft edge, pwas, pwa, progressive web apps, origin trials
 <!-- ====================================================================== -->
 ## What's New in Microsoft Edge 96
 
-### Improvements to the way way you manage your apps
+### New hub design for managing your installed web apps
 
 Microsoft Edge Canary reached version 96 on October 5, 2021.  With a subset of our users, we're testing a new design to better manage your installed web apps.  When you go to `edge://apps` in your browser, it now displays a redesigned hub that lists installed PWAs and websites as apps. 
 
@@ -31,7 +31,7 @@ You can also arrange apps in a list or grid view.
 
 Additionally, you can easily pin apps to the taskbar or **Start** menu.  You can create a shortcut, and enable apps to run on user login. 
 
-Finally, there's now a way to easily access the following:
+Also, there's now a way to easily access the following:
 *  Permissions and privacy details for the associated origin.
 *  More details about the application.
 
