@@ -377,22 +377,48 @@
 # equivalent card: Progressive Web Apps =======================================
     - name: Progressive Web Apps
       items:
-        - name: Progressive Web Apps overview
+        - name: Overview of Progressive Web Apps (PWAs)
           href: progressive-web-apps-chromium/index.md
+        - name: The user experience of PWAs
+          href: progressive-web-apps-chromium/ux.md
+        - name: How to
+          items:
+            - name: Get started with PWAs
+              href: progressive-web-apps-chromium/how-to/index.md
+            - name: Web app manifest
+              href: progressive-web-apps-chromium/how-to/web-app-manifests.md
+            - name: Service Workers
+              href: progressive-web-apps-chromium/how-to/service-workers.md
+            - name: Offline scenarios
+              href: progressive-web-apps-chromium/how-to/offline.md
+            - name: Publish PWAs to the Microsoft Store
+              href: progressive-web-apps-chromium/how-to/microsoft-store.md
+            - name: Experimental features and origin trials
+              href: progressive-web-apps-chromium/how-to/origin-trials.md
+            - name: Integrate PWAs on desktop
+              items:
+                - name: Define icons and a theme color
+                  href: progressive-web-apps-chromium/how-to/icon-theme-color.md
+                - name: Re-engage users with notifications, push messages, and badges
+                  href: progressive-web-apps-chromium/how-to/notifications-badges.md
+                - name: Handle files
+                  href: progressive-web-apps-chromium/how-to/handle-files.md
+                - name: Handle URLs
+                  href: progressive-web-apps-chromium/how-to/handle-urls.md
+                - name: Handle protocols
+                  href: progressive-web-apps-chromium/how-to/handle-protocols.md
+                - name: Display content in the title bar
+                  href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
+                - name: Share with other apps
+                  href: progressive-web-apps-chromium/how-to/share.md
+                - name: Define app shortcuts
+                  href: progressive-web-apps-chromium/how-to/shortcuts.md
+                - name: Synchronize and update in the background
+                  href: progressive-web-apps-chromium/how-to/background-syncs.md
         - name: What's new
           href: progressive-web-apps-chromium/whats-new/pwa.md
-        - name: Get started with PWAs
-          href: progressive-web-apps-chromium/get-started.md
-        - name: Offline scenarios
-          href: progressive-web-apps-chromium/offline.md
-        - name: Service Workers
-          href: progressive-web-apps-chromium/serviceworker.md
-        - name: Web app manifests
-          href: progressive-web-apps-chromium/webappmanifests.md
-        - name: Experimental features
-          href: progressive-web-apps-chromium/experimental-features/index.md
-        - name: Publish a PWA to the Microsoft Store
-          href: progressive-web-apps-chromium/microsoft-store.md
+        - name: Sample PWAs
+          href: progressive-web-apps-chromium/demo-pwas.md
 # equivalent card: WebView2 ===================================================
     - name: WebView2
       items:
