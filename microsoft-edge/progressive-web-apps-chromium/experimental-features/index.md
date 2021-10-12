@@ -57,7 +57,7 @@ The following list describes experimental web app features that are available to
 |:--- |:--- |
 | [URI Protocol Handling](#uri-protocol-handling) | Windows and Linux |
 | [URL Link Handling](#url-link-handling) | Windows|
-| [Window Controls Overlay for Desktop Apps](#window-controls-overlay-for-installed-desktop-web-apps) | Windows 10 and later|
+| [Window Controls Overlay for Desktop Apps](#window-controls-overlay-for-installed-desktop-web-apps) | Windows 10 or later|
 | [Run on OS Login](#run-on-os-login) | All |
 | [Shortcuts](#shortcuts) | All |
 | [File Handling](#file-handling) | All Desktop |
@@ -184,7 +184,7 @@ To create an immersive title bar like a native app for your desktop installed we
 
 After it provides an overlay, the entire web client area is available for you to use.  This feature includes a manifest update.  It provides ways for you to determine the size and position of the overlay to help you arrange content.
 
-To preview the Window Controls Overlays in Microsoft Edge for Windows 10 and later, navigate to [Turn on experimental features](#turn-on-experimental-features) and navigate to **Desktop PWA Window Controls Overlay**.
+To preview the Window Controls Overlays in Microsoft Edge for Windows 10 or later, navigate to [Turn on experimental features](#turn-on-experimental-features) and navigate to **Desktop PWA Window Controls Overlay**.
 
 ### Examples of title bar area customization
 
@@ -517,8 +517,8 @@ To turn on the `Start app when you sign in` feature for an installed PWA,
 
 When a user invokes a shortcut, the user navigates to the address specified by the `url` member of the shortcut.
 
-:::image type="complex" source="../media/jumplists-on-windows-10.png" alt-text="An example of Jumplists on Windows 10 and later" lightbox="../media/jumplists-on-windows-10.png":::
-   An example of **Jumplists** on Windows 10 and later
+:::image type="complex" source="../media/jumplists-on-windows-10.png" alt-text="An example of Jumplists on Windows 10 or later" lightbox="../media/jumplists-on-windows-10.png":::
+   An example of **Jumplists** on Windows 10 or later
 :::image-end:::
 
 ### Shortcuts in the Manifest file
@@ -559,7 +559,7 @@ The ability to register as a file type handler is in the experimentation phase. 
 
 Chromium-based browsers are testing and shaping this feature.  For more information including code examples, navigate to [Let web applications be file handlers][WebDevFileHandling].
 
-To preview file handling in Microsoft Edge for Windows 10 and later, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **File Handling API**.
+To preview file handling in Microsoft Edge for Windows 10 or later, navigate to [Turn on experimental features](#turn-on-experimental-features) and turn on **File Handling API**.
 
 ## Providing feedback on experimental features
 

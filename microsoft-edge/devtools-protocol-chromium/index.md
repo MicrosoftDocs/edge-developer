@@ -131,11 +131,11 @@ String(“Target is closing”)
 <!-- ====================================================================== -->
 ## Remote Tools for Microsoft Edge (Beta)
 
-You are now able to install the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows).  This app enables you to remotely debug Microsoft Edge (Chromium) running on a Windows 10 and later device from your development machine.
+You are now able to install the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows).  This app enables you to remotely debug Microsoft Edge running on a Windows 10 or later device from your development machine.
 
 To learn how to set up your Windows device and connect to it from your development machine, navigate to [Get started with remote debugging Windows devices](../devtools-guide-chromium/remote-debugging/windows.md).
 
-The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) uses the same Microsoft Edge (Chromium) DevTools Protocol as the [DevTools](../devtools-guide-chromium/index.md) to communicate with Microsoft Edge running on the Windows 10 and later device you want to debug.  This app just prepends `/msedge/` and a process ID (`pid`) before each call to the protocol.  It supports the following HTTP endpoints.
+The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) uses the same Microsoft Edge DevTools Protocol as the [DevTools](../devtools-guide-chromium/index.md) to communicate with Microsoft Edge running on the Windows 10 or later device you want to debug.  This app just prepends `/msedge/` and a process ID (`pid`) before each call to the protocol.  It supports the following HTTP endpoints.
 
 The following Reference sections are for Remote Tools for Microsoft Edge.
 
@@ -143,7 +143,7 @@ The following Reference sections are for Remote Tools for Microsoft Edge.
 <!-- ====================================================================== -->
 ## /msedge/json/list
 
-Provides a candidate list of all `msedge.exe` processes \(including [PWAs](../progressive-web-apps-chromium/index.md) and all tabs in all instances of Microsoft Edge\) on the Windows 10 and later device for debugging.
+Provides a candidate list of all `msedge.exe` processes \(including [PWAs](../progressive-web-apps-chromium/index.md) and all tabs in all instances of Microsoft Edge\) on the Windows 10 or later device for debugging.
 
 **Parameters**
 

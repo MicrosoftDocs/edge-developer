@@ -1,5 +1,5 @@
 ---
-description: Progressive Web Apps (Chromium) run natively on Windows 10 and later.  Here is everything you need to know as a web developer.
+description: Progressive Web Apps (Chromium) run natively on Windows 10 or later.  Here is everything you need to know as a web developer.
 title: Progressive Web Apps on Windows
 author: MSEdgeTeam
 ms.author: msedgedevrel
