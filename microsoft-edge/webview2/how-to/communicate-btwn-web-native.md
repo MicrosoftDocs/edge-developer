@@ -296,8 +296,7 @@ Congratulations. You've successfully embedded web content into native applicatio
 
 [!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
-<!-- links -->  
-<!-- [CreateButtonWin32]: ../../../../windows/win32/controls/create-a-button "How to Create a Button - Win32 apps | Microsoft Docs"   -->
+<!-- links -->
 
 [ScenarioWebMessageHTML]: https://github.com/MicrosoftEdge/WebView2Samples/blob/a12bfcc2bc8a1155529c35c7bd4645036f492ca0/SampleApps/WebView2APISample/assets/ScenarioWebMessage.html "ScenarioWebMessage HTML | GitHub Microsoft Edge WebView2 Samples"
 
@@ -313,6 +312,6 @@ Congratulations. You've successfully embedded web content into native applicatio
 
 [WebView2Samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - Microsoft Edge | GitHub Repo"
 
-[NativeObjectsReference]: reference/win32/icorewebview2?view=webview2-1.0.992.28#addhostobjecttoscript "WebView Win32 C++ ICoreWebView2 | Microsoft Docs"
+[NativeObjectsReference]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.992.28#addhostobjecttoscript "WebView Win32 C++ ICoreWebView2 | Microsoft Docs"
 
-[interfaceICoreWebView2]: reference/win32/icorewebview2 "WebView Win32 C++ ICoreWebView2 | Microsoft Docs"
+[interfaceICoreWebView2]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.992.28 "WebView Win32 C++ ICoreWebView2 | Microsoft Docs"
