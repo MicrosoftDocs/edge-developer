@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright Kayce Basques 
+<!-- Copyright Kayce Basques
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -21,29 +21,29 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Console API reference  
+# Console API reference
 
-The **Console** tool is helpful when you complete multiple tasks in the DevTools.  APIs are available to include in your scripts. Convenience methods are only available for use in the **Console** tool, such as the `debug()` and `monitorEvents()` methods.  For more information on getting started with the **Console**, navigate to [Get started with logging messages to the Console][DevtoolsConsoleConsoleLog].  For more information on the convenience methods in the **Console**, navigate to [Console Utilities API Reference][DevtoolConsoleUtilities].  
+The **Console** tool is helpful when you complete multiple tasks in the DevTools.  APIs are available to include in your scripts. Convenience methods are only available for use in the **Console** tool, such as the `debug()` and `monitorEvents()` methods.  For more information on getting started with the **Console**, navigate to [Get started with logging messages to the Console][DevtoolsConsoleConsoleLog].  For more information on the convenience methods in the **Console**, navigate to [Console Utilities API Reference][DevtoolConsoleUtilities].
 
----  
+---
 
-## assert  
+## assert
 
-This method writes an [error](#error) to the **Console** when `expression` evaluates to `false`.  
+This method writes an [error](#error) to the **Console** when `expression` evaluates to `false`.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.assert(expression, object)
 ```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Error`  
+[Log level][DevtoolsConsoleReferencePersist]: `Error`
 
-### JavaScript example  
+### JavaScript example
 
 :::row:::
    :::column span="1":::
-      Input  
+      Input
    :::column-end:::
    :::column span="3":::
       ```javascript
@@ -51,78 +51,78 @@ console.assert(expression, object)
       const y = 3;
       const reason = 'x is expected to be less than y';
       console.assert(x < y, {x, y, reason});
-      ```  
+      ```
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 :::row:::
    :::column span="1":::
       Output
    :::column-end:::
    :::column span="3":::
       :::image type="complex" source="../media/console-demo-assert-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-assert-button.msft.png":::
-         The result of the `console.assert()` example  
-      :::image-end:::  
+         The result of the `console.assert()` example
+      :::image-end:::
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
----  
+---
 
-## clear  
+## clear
 
-This method clears the **Console**.  
+This method clears the **Console**.
 
-If [Preserve Log][DevtoolsConsoleReferenceFilter] is turned on, the [clear](#clear) method is turned off.  
+If [Preserve Log][DevtoolsConsoleReferenceFilter] is turned on, the [clear](#clear) method is turned off.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.clear()
 ```
 
-### JavaScript example  
+### JavaScript example
 
 :::row:::
    :::column span="1":::
-      Input  
+      Input
    :::column-end:::
    :::column span="3":::
       ```javascript
-      console.clear();  
-      ```  
+      console.clear();
+      ```
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 :::row:::
    :::column span="1":::
       Output
    :::column-end:::
    :::column span="3":::
-      
+
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
-### See also  
+### See also
 
-*   [Clear the Console][DevtoolsConsoleReferenceClear]  
+*   [Clear the Console][DevtoolsConsoleReferenceClear]
 
----  
+---
 
-## count  
+## count
 
-This method writes the number of times that the [count](#count) method has been invoked at the same line and with the same `label`.  Use the [countReset](#countreset) method to reset the count.  
+This method writes the number of times that the [count](#count) method has been invoked at the same line and with the same `label`.  Use the [countReset](#countreset) method to reset the count.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.count([label])
-```  
+```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`
 
-### JavaScript example  
+### JavaScript example
 
 :::row:::
    :::column span="1":::
-      Input  
+      Input
    :::column-end:::
    :::column span="3":::
       ```javascript
@@ -130,219 +130,219 @@ console.count([label])
       console.count('coffee');
       console.count();
       console.count();
-      ```  
+      ```
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 :::row:::
    :::column span="1":::
       Output
    :::column-end:::
    :::column span="3":::
       :::image type="complex" source="../media/console-demo-count-button.msft.png" alt-text="The result of the console.count() example" lightbox="../media/console-demo-count-button.msft.png":::
-         The result of the `console.count()` example  
-      :::image-end:::  
+         The result of the `console.count()` example
+      :::image-end:::
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
----  
+---
 
-## countReset  
+## countReset
 
-This method resets a count.  
+This method resets a count.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.countReset([label])
-```  
+```
 
-### JavaScript example  
+### JavaScript example
 
 :::row:::
    :::column span="1":::
-      Input  
+      Input
    :::column-end:::
    :::column span="3":::
       ```javascript
       console.countReset();
       console.countReset('coffee');
-      ```  
+      ```
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 :::row:::
    :::column span="1":::
       Output
    :::column-end:::
    :::column span="3":::
-      
+
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
----  
+---
 
-## debug  
+## debug
 
-This method is identical to the [log](#log) method, except different log level.  
+This method is identical to the [log](#log) method, except different log level.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.debug(object [, object, ...])
-```  
+```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Verbose`  
+[Log level][DevtoolsConsoleReferencePersist]: `Verbose`
 
-### JavaScript example  
+### JavaScript example
 
 :::row:::
    :::column span="1":::
-      Input  
+      Input
    :::column-end:::
    :::column span="3":::
       ```javascript
-      console.debug('debug');  
-      ```  
+      console.debug('debug');
+      ```
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 :::row:::
    :::column span="1":::
       Output
    :::column-end:::
    :::column span="3":::
       :::image type="complex" source="../media/console-demo-debug-button.msft.png" alt-text="The result of the console.debug() example" lightbox="../media/console-demo-debug-button.msft.png":::
-         The result of the `console.debug()` example  
-      :::image-end:::  
+         The result of the `console.debug()` example
+      :::image-end:::
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
----  
+---
 
-## dir  
+## dir
 
-This method prints a JSON representation of the specified object.  
+This method prints a JSON representation of the specified object.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.dir(object)
-```  
+```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`
 
-### JavaScript example  
+### JavaScript example
 
 :::row:::
    :::column span="1":::
-      Input  
+      Input
    :::column-end:::
    :::column span="3":::
       ```javascript
       console.dir(document.head);
-      ```  
+      ```
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 :::row:::
    :::column span="1":::
       Output
    :::column-end:::
    :::column span="3":::
       :::image type="complex" source="../media/console-demo-dir-button.msft.png" alt-text="The result of the console.dir() example" lightbox="../media/console-demo-dir-button.msft.png":::
-         The result of the `console.dir()` example  
-      :::image-end:::  
+         The result of the `console.dir()` example
+      :::image-end:::
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
----  
+---
 
-## dirxml  
+## dirxml
 
-This method prints an XML representation of the descendants of `node`.  
+This method prints an XML representation of the descendants of `node`.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.dirxml(node)
-```  
+```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`
 
-### JavaScript example  
+### JavaScript example
 
 :::row:::
    :::column span="1":::
-      Input  
+      Input
    :::column-end:::
    :::column span="3":::
       ```javascript
       console.dirxml(document);
-      ```  
+      ```
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 :::row:::
    :::column span="1":::
       Output
    :::column-end:::
    :::column span="3":::
       :::image type="complex" source="../media/console-demo-dirxml-button.msft.png" alt-text="The result of the console.dirxml() example" lightbox="../media/console-demo-dirxml-button.msft.png":::
-         The result of the `console.dirxml()` example  
-      :::image-end:::  
+         The result of the `console.dirxml()` example
+      :::image-end:::
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
----  
+---
 
-## error  
+## error
 
-This method prints the `object` to the **Console**, formats it as an error, and includes a stack trace.  
+This method prints the `object` to the **Console**, formats it as an error, and includes a stack trace.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.error(object [, object, ...])
-```  
+```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Error`  
+[Log level][DevtoolsConsoleReferencePersist]: `Error`
 
-### JavaScript example  
+### JavaScript example
 
 :::row:::
    :::column span="1":::
-      Input  
+      Input
    :::column-end:::
    :::column span="3":::
       ```javascript
       console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
-      ```  
+      ```
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 :::row:::
    :::column span="1":::
       Output
    :::column-end:::
    :::column span="3":::
       :::image type="complex" source="../media/console-demo-error-button.msft.png" alt-text="The result of the console.error() example" lightbox="../media/console-demo-error-button.msft.png":::
-         The result of the `console.error()` example  
-      :::image-end:::  
+         The result of the `console.error()` example
+      :::image-end:::
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
----  
+---
 
-## group  
+## group
 
-This method visually groups messages together until the [groupEnd](#groupend) method is used.  Use the [groupCollapsed](#groupcollapsed) method to collapse the group when it initially logs to the **Console**.  
+This method visually groups messages together until the [groupEnd](#groupend) method is used.  Use the [groupCollapsed](#groupcollapsed) method to collapse the group when it initially logs to the **Console**.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.group(label)
-```  
+```
 
-### JavaScript example  
+### JavaScript example
 
 :::row:::
    :::column span="1":::
-      Input  
+      Input
    :::column-end:::
    :::column span="3":::
       ```javascript
@@ -353,137 +353,137 @@ console.group(label)
       console.info('Don');
       console.info('Raph');
       console.groupEnd(label);
-      ```  
+      ```
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 :::row:::
    :::column span="1":::
       Output
    :::column-end:::
    :::column span="3":::
       :::image type="complex" source="../media/console-demo-group-button.msft.png" alt-text="The result of the console.group() example" lightbox="../media/console-demo-group-button.msft.png":::
-         The result of the `console.group()` example  
-      :::image-end:::  
+         The result of the `console.group()` example
+      :::image-end:::
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
----  
+---
 
-## groupCollapsed  
+## groupCollapsed
 
-This method is identical to the [log](#log) method, except the group is initially collapsed when it logs to the **Console**.  
+This method is identical to the [log](#log) method, except the group is initially collapsed when it logs to the **Console**.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.groupCollapsed(label)
-```  
+```
 
----  
+---
 
-## groupEnd  
+## groupEnd
 
-This method stops visually grouping messages.  Navigate to the [group](#group) method.  
+This method stops visually grouping messages.  Navigate to the [group](#group) method.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.groupEnd(label)
-```  
+```
 
----  
+---
 
-## info  
+## info
 
-This method is identical to the [log](#log) method.  
+This method is identical to the [log](#log) method.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.info(object [, object, ...])
-```  
+```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`
 
-### JavaScript example  
+### JavaScript example
 
 :::row:::
    :::column span="1":::
-      Input  
+      Input
    :::column-end:::
    :::column span="3":::
       ```javascript
       console.info('info');
-      ```  
+      ```
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 :::row:::
    :::column span="1":::
       Output
    :::column-end:::
    :::column span="3":::
       :::image type="complex" source="../media/console-demo-info-button.msft.png" alt-text="The result of the console.info() example" lightbox="../media/console-demo-info-button.msft.png":::
-         The result of the `console.info()` example  
-      :::image-end:::  
+         The result of the `console.info()` example
+      :::image-end:::
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
----  
+---
 
-## log  
+## log
 
-This method prints a message to the **Console**.  
+This method prints a message to the **Console**.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.log(object [, object, ...])
-```  
+```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`
 
-### JavaScript example  
+### JavaScript example
 
 :::row:::
    :::column span="1":::
-      Input  
+      Input
    :::column-end:::
    :::column span="3":::
       ```javascript
       console.log('log');
-      ```  
+      ```
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 :::row:::
    :::column span="1":::
       Output
    :::column-end:::
    :::column span="3":::
       :::image type="complex" source="../media/console-demo-log-button.msft.png" alt-text="The result of the console.log() example" lightbox="../media/console-demo-log-button.msft.png":::
-         The result of the `console.log()` example  
-      :::image-end:::  
+         The result of the `console.log()` example
+      :::image-end:::
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
----  
+---
 
-## table  
+## table
 
-This method logs an array of objects as a table.  
+This method logs an array of objects as a table.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.table(array)
-```  
+```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`
 
-### JavaScript example  
+### JavaScript example
 
 :::row:::
    :::column span="1":::
-      Input  
+      Input
    :::column-end:::
    :::column span="3":::
       ```javascript
@@ -502,37 +502,37 @@ console.table(array)
               last: 'Matisse',
           }
       ]);
-      ```  
+      ```
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 :::row:::
    :::column span="1":::
       Output
    :::column-end:::
    :::column span="3":::
       :::image type="complex" source="../media/console-demo-table-button.msft.png" alt-text="The result of the console.table() example" lightbox="../media/console-demo-table-button.msft.png":::
-         The result of the `console.table()` example  
-      :::image-end:::  
+         The result of the `console.table()` example
+      :::image-end:::
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
----  
+---
 
-## time  
+## time
 
-This method starts a new timer.  Use the [timeEnd](#timeend) method to stop the timer and print the elapsed time to the **Console**.  
+This method starts a new timer.  Use the [timeEnd](#timeend) method to stop the timer and print the elapsed time to the **Console**.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.time([label])
-```  
+```
 
-### JavaScript example  
+### JavaScript example
 
 :::row:::
    :::column span="1":::
-      Input  
+      Input
    :::column-end:::
    :::column span="3":::
       ```javascript
@@ -543,51 +543,51 @@ console.time([label])
       console.timeEnd();
       ```
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 :::row:::
    :::column span="1":::
       Output
    :::column-end:::
    :::column span="3":::
       :::image type="complex" source="../media/console-demo-time-button.msft.png" alt-text="The result of the console.time() example" lightbox="../media/console-demo-time-button.msft.png":::
-         The result of the `console.time()` example  
-      :::image-end:::  
+         The result of the `console.time()` example
+      :::image-end:::
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
----  
+---
 
-## timeEnd  
+## timeEnd
 
-This method stops a timer.  For more information, navigate to the [time](#time) method.  
+This method stops a timer.  For more information, navigate to the [time](#time) method.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.timeEnd([label])
-```  
+```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`
 
----  
+---
 
-## trace  
+## trace
 
-This method prints a stack trace to the **Console**.  
+This method prints a stack trace to the **Console**.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.trace()
-```  
+```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Info`  
+[Log level][DevtoolsConsoleReferencePersist]: `Info`
 
-### JavaScript example  
+### JavaScript example
 
 :::row:::
    :::column span="1":::
-      Input  
+      Input
    :::column-end:::
    :::column span="3":::
       ```javascript
@@ -596,81 +596,77 @@ console.trace()
       const third = () => { fourth(); };
       const fourth = () => { console.trace(); };
       first();
-      ```  
+      ```
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 :::row:::
    :::column span="1":::
       Output
    :::column-end:::
    :::column span="3":::
       :::image type="complex" source="../media/console-demo-trace-button.msft.png" alt-text="The result of the console.trace() example" lightbox="../media/console-demo-trace-button.msft.png":::
-         The result of the `console.trace()` example  
-      :::image-end:::  
+         The result of the `console.trace()` example
+      :::image-end:::
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
----  
+---
 
-## warn  
+## warn
 
-This method prints a warning to the **Console**.  
+This method prints a warning to the **Console**.
 
-### JavaScript syntax  
+### JavaScript syntax
 
 ```javascript
 console.warn(object [, object, ...])
-```  
+```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Warning`  
+[Log level][DevtoolsConsoleReferencePersist]: `Warning`
 
-### JavaScript example  
+### JavaScript example
 
 :::row:::
    :::column span="1":::
-      Input  
+      Input
    :::column-end:::
    :::column span="3":::
       ```javascript
       console.warn('warn');
       ```
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 :::row:::
    :::column span="1":::
       Output
    :::column-end:::
    :::column span="3":::
       :::image type="complex" source="../media/console-demo-warn-button.msft.png" alt-text="The result of the console.warn() example" lightbox="../media/console-demo-warn-button.msft.png":::
-         The result of the `console.warn()` example  
-      :::image-end:::  
+         The result of the `console.warn()` example
+      :::image-end:::
    :::column-end:::
-:::row-end:::  
+:::row-end:::
 
----  
+---
 
-## Getting in touch with the Microsoft Edge DevTools team  
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-<!-- links -->  
-
-[DevtoolsConsoleConsoleLog]: ./console-log.md "Logs in the Console tool | Microsoft Docs"  
-[DevtoolConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"  
-[DevtoolsConsoleReferenceClear]: ./reference.md#clear-the-console "Clear the Console - Console reference | Microsoft Docs"  
-[DevtoolsConsoleReferenceFilter]: ./reference.md#filter-by-log-level "Filter by log level - Console reference | Microsoft Docs"  
-[DevtoolsConsoleReferencePersist]: ./reference.md#persist-messages-across-page-loads "Persist messages across page loads - Console reference | Microsoft Docs"  
-
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge (Chromium) Developer Tools overview | Microsoft Docs"  
+<!-- ====================================================================== -->
+<!-- links -->
+[DevtoolsConsoleConsoleLog]: ./console-log.md "Logs in the Console tool | Microsoft Docs"
+[DevtoolConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"
+[DevtoolsConsoleReferenceClear]: ./reference.md#clear-the-console "Clear the Console - Console features reference | Microsoft Docs"
+[DevtoolsConsoleReferenceFilter]: ./reference.md#filter-by-log-level "Filter by log level - Console features reference | Microsoft Docs"
+[DevtoolsConsoleReferencePersist]: ./reference.md#persist-messages-across-page-loads "Persist messages across page loads - Console features reference | Microsoft Docs"
+[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge Developer Tools overview | Microsoft Docs"
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/api) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/api) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques

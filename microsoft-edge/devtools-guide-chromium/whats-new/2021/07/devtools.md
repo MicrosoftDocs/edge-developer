@@ -44,7 +44,7 @@ For more information, navigate to [Apply color themes to DevTools][CustomizeDark
 
 ## Debug DOM node memory leaks with the new Detached Elements tool
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::  
+:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
 <!-- Title: Introducing the Detached Elements tool -->
 <!-- Subtitle: Use the Detached Elements tool to find and fix DOM node memory leaks. -->
@@ -134,7 +134,7 @@ Now in Microsoft Edge version 93, you can copy a single CSS declaration or all t
    Context menu for a style rule, including **Copy declaration as JS** and **Copy all declarations as JS** commands
 :::image-end:::
 
-To learn more about viewing and changing CSS, navigate to [CSS reference][CssReference].
+To learn more about viewing and changing CSS, navigate to [CSS features reference][CssReference].
 
 
 ## Easier customization of User-Agent Client Hints
@@ -176,7 +176,7 @@ Now in Microsoft Edge version 93, screen readers correctly announce the type and
 
 <!-- It'd be good to have a video of this a11y fix where the text that the screen reader announces is displayed -->
 
-For information about debugging Console errors, navigate to [Debug errors reported in Console][ConsoleConsoleDebugJavascript].  For information about issues found by DevTools and improvements you can make to a webpage, navigate to [Find and fix problems using the Issues tool][IssuesIndex].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1223208][CR1223208].
+For information about debugging Console errors, navigate to [Fixing JavaScript errors that are reported in the Console][ConsoleConsoleDebugJavascript].  For information about issues found by DevTools and improvements you can make to a webpage, navigate to [Find and fix problems using the Issues tool][IssuesIndex].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1223208][CR1223208].
 
 
 ## Copy as PowerShell in the Network tool now includes cookies
@@ -200,20 +200,16 @@ For more information about the Network Activity Log, navigate to [Network Analys
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
-## Getting in touch with Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
-
+<!-- ====================================================================== -->
 <!-- links -->
 [CustomizeDarkTheme]: ../../../customize/theme.md "Apply color themes to DevTools | Microsoft Docs"
 <!-- todo: link directly to the subheading in the page, when available; test the subheading link:
 [ExperimentalFeaturesDetachedElements]: ../../../experimental-features/index.md#detached-elements "Detached elements | Microsoft Docs" -->
 [CustomizeLocalization]: ../../../customize/localization.md "Change DevTools language settings | Microsoft Docs"
-[CssReference]: ../../../css/reference.md "CSS reference | Microsoft Docs"
+[CssReference]: ../../../css/reference.md "CSS features reference | Microsoft Docs"
 [DeviceModeIndexSetUach]: ../../../device-mode/index.md#set-user-agent-client-hints "Set user agent client hints | Microsoft Docs"
 [NetworkReferenceSetUach]: ../../../network/reference.md#set-user-agent-client-hints "Set user agent client hints | Microsoft Docs"
-[ConsoleConsoleDebugJavascript]: ../../../console/console-debug-javascript.md "Debug errors reported in Console | Microsoft Docs"
+[ConsoleConsoleDebugJavascript]: ../../../console/console-debug-javascript.md "Fixing JavaScript errors that are reported in the Console | Microsoft Docs"
 [IssuesIndex]: ../../../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
 [NetworkReference]: ../../../network/reference.md "Network Analysis reference | Microsoft Docs"
 
@@ -238,7 +234,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-xx) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-93) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

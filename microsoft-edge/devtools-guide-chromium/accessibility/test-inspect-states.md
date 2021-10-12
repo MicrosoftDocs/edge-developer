@@ -35,7 +35,7 @@ For example, the links in the sidebar navigation menu have enough contrast.  But
         :::image-end:::
     :::column-end:::
 :::row-end:::
-        
+
 
 ## Hovering when the Inspect tool is active doesn't show the text-color contrast for the hover state
 
@@ -48,11 +48,11 @@ The **Inspect** tool's information overlay only represents a single state.  Elem
     :::image type="complex" source="../media/a11y-testing-hover.msft.png" alt-text="The menu item showing different colors when the mouse pointer is over it" lightbox="../media/a11y-testing-hover.msft.png":::
         The menu item showing different colors when the mouse pointer is over it
     :::image-end:::
-    
-Now, use the Inspect tool. When the Inspect tool is used, animations on the menu items won't run when you hover over them.  When using the Inspect tool, you can't reach the `hover` state on menu items to test the contrast ratio, because the `hover` state in your styles isn't triggered.  
-    
+
+Now, use the Inspect tool. When the Inspect tool is used, animations on the menu items won't run when you hover over them.  When using the Inspect tool, you can't reach the `hover` state on menu items to test the contrast ratio, because the `hover` state in your styles isn't triggered.
+
 To confirm that your animations don't run, perform the following steps.
-    
+
 1.  Select the **Inspect** \(![the Inspect button](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
 1.  Hover over the blue links on the sidebar navigation menu.  The animations for the menu items don't run. Instead, the menu items are displayed using colors and highlights for the flexbox overlay.
@@ -60,7 +60,7 @@ To confirm that your animations don't run, perform the following steps.
 Checking for sufficient text contrast this way isn't enough, because the elements on the page could have different states.
 
 
-## Use state simulation to simulate the hover state of an animated menu item 
+## Use state simulation to simulate the hover state of an animated menu item
 
 <!-- Elements tool: Styles pane: Toggle Element State -->
 
@@ -78,7 +78,7 @@ To turn on the hover state while using the Inspect tool:
         Inspecting the element that has a hover state in the Elements tool
     :::image-end:::
 
-1.  Select the **Styles** tab.  The selected `a` element has a `hover` state in the CSS that is applied to it, but that's not visible in the **Styles** pane. 
+1.  Select the **Styles** tab.  The selected `a` element has a `hover` state in the CSS that is applied to it, but that's not visible in the **Styles** pane.
 
 1.  In the **Styles** pane, to the right of the style rule `#sidebar nav li a`, select the `styles.css` link.  The **Sources** tool opens.  Then find the CSS pseudo-class rule `#sidebar nav li a:hover`.  This rule doesn't run when the **Inspect** tool is active.  We'll simulate running this state rule in the next steps.
 
@@ -107,15 +107,12 @@ To turn on the hover state while using the Inspect tool:
 State simulation is also a good way to check whether you considered different user needs, such as the needs of keyboard users.  By using the **Force element state** checkboxes, you can simulate the `:focus` state to discover that the UI remains unchanged when it has focus. This lack of an indicator when an element has focus is a problem.
 
 
+<!-- ====================================================================== -->
 ## See also
 
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
 
-## Getting in touch with the Microsoft Edge DevTools team  
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-
+<!-- ====================================================================== -->
 <!-- links -->
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"
