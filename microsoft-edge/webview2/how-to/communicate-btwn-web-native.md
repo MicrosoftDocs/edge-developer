@@ -3,7 +3,7 @@ description: Embed web content into native applications using WebView2
 title: Embed web content into native applications
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2021
+ms.date: 10/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -16,32 +16,33 @@ The Microsoft Edge WebView2 control lets you embed web content into native appli
 Some common use cases include:
 * Update the native host window title after navigating to a different website.
 * Send a native camera object and use its methods from a web app.
+* Run a dedicated JavaScript file on the web side of an application.
 
 ## Before you begin
 
-In this tutorial we will walk through code in the Sample App to demonstrate some of the communication capabilties in WebView2. Clone the [WebView2 Samples App][WebView2Samples], build, and run to follow along. 
+This tutorial steps through the Sample App code to demonstrate some of the communication capabilities in WebView2. Clone the [WebView2 Samples App][WebView2Samples], build, and run to follow along.
 
 ## Scenario: Simple Messaging
 
 WebView2 controls let you exchange simple messages between web and native sides of an application. You can use data types such as `JSON` or `String` to send messages between the host application and WebView2.
 
-### Sending Messages from the host app to WebView2
+### Send Messages from the host app to WebView2
 
-This example shows how the sample app changes the color of text in the front end based on a message from the host app.
+This example shows how the sample app changes the color of text in the front end, based on a message from the host app.
 
-To demo this functionality run the sample app, click on the Scenario tab, and click on the Web Messaging option. You should see a screen like below:
+To see messaging in action, run the sample app, then select the **Scenario** tab and select the **Web Messaging** option. You should see a screen like below:
   
 :::image type="complex" source="../media/ScenarioWebMessaging.png" alt-text="Web Messaging Demo" lightbox="../media/ScenarioWebMessaging.png":::
     Web Messaging Demo
 :::image-end:::      
 
-Notice the first section titled Posting Messages. Lets follow this instruction by clicking Script -> Post Message JSON. And clicking OK in the popup that comes up. You'll notice that the message turns blue. 
+Notice the first section titled `Posting Messages`. Follow the instruction and select **Script** > **Post Message JSON**. Select **OK** from the dialog box. The message turns blue. 
 
 :::image type="complex" source="../media/postmessagejson.png" alt-text="Post Message JSON Demo" lightbox="../media/postmessagejson.png":::
     Post Message JSON Demo
 :::image-end:::      
 
-Let's dive deeper into how we were able to accomplish this. The sample starts by creating a button on the native side to send a web message. Then it adds the code (provided below) to post the web message to change the color of the web text to blue.
+How were we able to change text color? The sample starts by creating a button on the native side to send a web message. Then it adds the following code to post the web message that changes the color of the web text to blue.
 
 1. The example includes C++ code to create a Windows button that calls `SendJsonWebMessage()` when selected.
 
@@ -112,11 +113,12 @@ Let's dive deeper into how we were able to accomplish this. The sample starts by
         SendJsonWebMessage();
         return true;
     ```
-Done! That is how WebView2 communicates through simple messages.
 
-### Receiving message strings via postMessage
+That completes the example showing how WebView2 communicates through simple messages.
 
-This example follows the 'Recieving Messages section' to change the text of the title bar. The host app receives a message from WebView2 with the new title bar text.
+### Receive message strings via postMessage
+
+This example follows the `Receiving Messages` section to change the text of the title bar. The host app receives a message from WebView2 with the new title bar text.
 
 The C++ file handles the title text and communicates it to the host app as a string.
 
@@ -182,13 +184,13 @@ The C++ file handles the title text and communicates it to the host app as a str
     }).Get(), &m_webMessageReceivedToken));
     ```
 
-### Round-trip messages:
+### Round-trip messages
 
-This example follows the section in the WebMessage sample page titled 'Round Trip' and shows a round-trip message from WebView2 to the host app, and back. The host app receives a request from WebView2 and returns the bounds of the active window.
+This example follows the [Round trip section of the WebMessage sample page][ScenarioWebMessageHTML]. It shows a round-trip message from WebView2 to the host app, and back. The host app receives a request from WebView2 and returns the bounds of the active window.
 
 When requested by the host app, the C++ file gets the window bounds and sends the data to WebView2 as a JSON web message.
 
-1. When the button is selected, WebView2 transmits a message from the web page to the native application using `window.chrome.webview.postMessage` in [ScenarioWebMessage.html][ScenarioWebMessageHTML].
+1. When the user selects the button, WebView2 transmits a message from the web page to the native application using `window.chrome.webview.postMessage`.
 
     ```html
     function GetWindowBounds() {
@@ -200,9 +202,7 @@ When requested by the host app, the C++ file gets the window bounds and sends th
 
     ```html
     <h2>Round trip</h2>
-    <p>The host app can send messages back in response to received messages. If you click
-    "Get window bounds", the host app will report back the bounds of its window, which will
-    appear in the text box.</p>
+    <p>The host app can send messages back in response to received messages. If you select <b>Get window bounds</b>, the host app reports back the bounds of its window, which will appear in the text box.</p>
     <button onclick="GetWindowBounds()">Get window bounds</button><br>
     <textarea id="window-bounds" rows="4" readonly></textarea>
     ```
@@ -249,13 +249,13 @@ When requested by the host app, the C++ file gets the window bounds and sends th
     ```
 
     <!-- Not sure if this step is accurate or how it works -->
-1. The host app uses the `Inject Script` menu item is in the Microsoft Visual C++ generated resource script file [WebView2APISample.rc][WebView2APISampleRC] to send the window bounds back to the web page.
+1. The host app uses the `Inject Script` menu item in the Microsoft Visual C++ generated resource script file [WebView2APISample.rc][WebView2APISampleRC] to send the window bounds back to the web page.
 
     ```xml
         MENUITEM "Inject Script",               IDM_INJECT_SCRIPT
     ```
  
-1. The script file in turn calls the case `IDM_INJECT_SCRIPT` in the C++ file [ScriptComponent.cpp][ScriptComponentCPP].
+1. The script file in turn calls the case `IDM_INJECT_SCRIPT` in the C++ file.[ScriptComponent.cpp][ScriptComponentCPP].
 
     ```cpp
         case IDM_INJECT_SCRIPT:
@@ -265,20 +265,20 @@ When requested by the host app, the C++ file gets the window bounds and sends th
 
 1. The window bounds display on the web page.
 
-## Scenario: Sending JavaScript Code
+## Scenario: Send JavaScript Code
 
-Set up the host app run JavaScript on the web side. The host app specifies the code to run and passes it to the WebView control. 
+Set up the host app to run JavaScript on the web side. The host app specifies the code to run and passes it to the WebView control. 
 
-1. Send JavaScript code to execute on web side using `ExecuteScriptAsync`.
+Send JavaScript code to execute on web side using `ExecuteScriptAsync`.
 
-    If you want to send JavaScript information to the page using WebView2, use the `ExecuteScriptAsync` function, which returns the JavaScript result back to the `ExecuteScript` caller. 
+If you want to send JavaScript information to the page using WebView2, use the `ExecuteScriptAsync` function, which returns the JavaScript result back to the `ExecuteScript` caller. 
 
-    This method is often used to send code that executes on the web.
+This method is often used to send code that executes on the web.
 
-    For more information navigate to: [Use JavaScript in WebView2 apps][UseJavaScriptInWebView2Apps].
+For more information navigate to: [Use JavaScript in WebView2 apps][UseJavaScriptInWebView2Apps].
 
 
-## Scenario: Sending Native Objects
+## Scenario: Send Native Objects
 
 Pass the native object to the web. Then call the object's methods from the web.
 
@@ -286,11 +286,11 @@ Pass the native object to the web. Then call the object's methods from the web.
 
 `AddHostObjectToScript`
 
-To use messages that represent method calls, use the `AddHostObjectToScript` API. At a high level, this API lets you expose native (host) objects into the web side and act as a proxy. You may access these objects using `window.chrome.webview.hostObjects.{name}`.
+To use messages that represent method calls, use the `AddHostObjectToScript` API. At a high level, this API lets you expose native (host) objects into the web side and act as a proxy. Access these objects using `window.chrome.webview.hostObjects.{name}`.
 
-1. Full tutorial TBD
+Passing a native object to the web side of an application is described in the [AddHostObjectToScript][NativeObjectsReference] section of the [interface ICoreWebView2 Reference][interfaceICoreWebView2] document.
 
-Congratulations.  You've successfully embedded web content into native applications.  
+Congratulations. You've successfully embedded web content into native applications.  
     
 ## Getting in touch with the Microsoft Edge WebView team  
 
@@ -312,3 +312,7 @@ Congratulations.  You've successfully embedded web content into native applicati
 [ScenarioWebMessageCPP]: https://github.com/MicrosoftEdge/WebView2Samples/blob/a12bfcc2bc8a1155529c35c7bd4645036f492ca0/SampleApps/WebView2APISample/ScenarioWebMessage.cpp "ScenarioWebMessage C++ | GitHub Microsoft Edge WebView2 Samples"
 
 [WebView2Samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - Microsoft Edge | GitHub Repo"
+
+[NativeObjectsReference]: ../reference/win32/icorewebview2?view=webview2-1.0.992.28#addhostobjecttoscript "WebView Win32 C++ ICoreWebView2 | Microsoft Docs"
+
+[interfaceICoreWebView2]: ../reference/win32/icorewebview2 "WebView Win32 C++ ICoreWebView2 | Microsoft Docs"
