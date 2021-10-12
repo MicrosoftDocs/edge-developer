@@ -290,11 +290,8 @@ To use messages that represent method calls, use the `AddHostObjectToScript` API
 
 Passing a native object to the web side of an application is described in the [AddHostObjectToScript][NativeObjectsReference] section of the [interface ICoreWebView2 Reference][interfaceICoreWebView2] document.
 
-Congratulations. You've successfully embedded web content into native applications.  
+Congratulations! You've successfully embedded web content into native applications.  
     
-## Getting in touch with the Microsoft Edge WebView team  
-
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
 
 <!-- links -->
 
