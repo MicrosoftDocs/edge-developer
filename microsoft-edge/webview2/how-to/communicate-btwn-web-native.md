@@ -309,6 +309,6 @@ Congratulations! You've successfully embedded web content into native applicatio
 
 [WebView2Samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - Microsoft Edge | GitHub Repo"
 
-[NativeObjectsReference]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.992.28#addhostobjecttoscript "WebView Win32 C++ ICoreWebView2 | Microsoft Docs"
+[NativeObjectsReference]: /microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript "WebView Win32 C++ ICoreWebView2 | Microsoft Docs"
 
-[interfaceICoreWebView2]: /microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.992.28 "WebView Win32 C++ ICoreWebView2 | Microsoft Docs"
+[interfaceICoreWebView2]: /microsoft-edge/webview2/reference/win32/icorewebview2 "WebView Win32 C++ ICoreWebView2 | Microsoft Docs"
