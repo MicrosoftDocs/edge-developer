@@ -36,7 +36,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 ### General
 
 #### Bug Fixes
-*   Fixed missing WebView2 DLLs (leading to initialization failure) when PlatformTarget isn't set in user's .NET project. \([\#1061][GithubMicrosoftedgeWebviewfeedbackIssue1061]\)
+*   Fixed missing WebView2 DLLs (leading to initialization failure) when `PlatformTarget` isn't set in user's .NET project. \([\#1061][GithubMicrosoftedgeWebviewfeedbackIssue1061]\)
 
 #### Promotions
 The following items are now stable:
