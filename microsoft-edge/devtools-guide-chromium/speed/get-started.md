@@ -512,14 +512,11 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 *   Please leave [feedback](#feedback) on this tutorial.  I really do use the data to make better tutorials for you.
 -->
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsEvaluatePerformanceReference]: ../evaluate-performance/reference.md "Performance analysis reference | Microsoft Docs"
-
+<!-- external links -->
 [CourseraIntroductionWebDevelopmentClass]: https://www.coursera.org/learn/web-development#syllabus "Introduction to Web Development class | Coursera"
 
 [EssentialImageOptimization]: https://images.guide "Essential Image Optimization"
@@ -529,6 +526,8 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 
 [WebpackTreeShaking]: https://webpack.js.org/guides/tree-shaking "Tree Shaking | webpack"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/speed/get-started) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
