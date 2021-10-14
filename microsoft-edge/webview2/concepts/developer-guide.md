@@ -71,12 +71,23 @@ WebView2 apps are supported by a collection of runtime processes that run alongs
 
 <!-- is the Ref link enough, or link to a long section in regular docs? -->
 
+## Event handlers on the environment object
+
+If any of your app's event handlers on the [environment object][CreateCoreWebView2Environment] hold a reference to the environment object, and the app simply releases the reference to the environment and event handlers without removing the event handlers, there might be a circular reference between the environment object and handler objects, which will leak memory.
+
+To prevent such a memory leak:
+*  For any added event handler, remove the event handler before releasing the environment object.
+*  Avoid holding a reference to the environment object in an event handler.  Instead, the event handler can access the environment object from the `sender` argument of the "event completed" callback.
+*  If you want the app to hold a reference to a WebView2 object, use a weak reference whenever possible.
+
 
 ## Follow recommended WebView2 security best practices
 
 For any WebView2 app, make sure to follow our recommended WebView2 security best practices.  For more information, navigate to [Best practices for developing secure WebView2 applications][Webview2ConceptsSecurity].
 
 
+
+<!-- ====================================================================== -->
 <!-- links -->
 [Webview2ConceptsDistributionDeployingEvergreenWebview2Runtime]: ../concepts/distribution.md#deploying-the-evergreen-webview2-runtime "Deploying the Evergreen WebView2 Runtime - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
 [Webview2ConceptsDistributionFixedVersionDistributionMode]: ../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode "Details about the Fixed Version Runtime distribution mode - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
@@ -95,3 +106,5 @@ For any WebView2 app, make sure to follow our recommended WebView2 security best
 [WebView2ProcessFailedEvent]: /microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs "ICoreWebView2ProcessFailedEventArgs | Microsoft Docs"
 
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
+
+[CreateCoreWebView2Environment]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment "CreateCoreWebView2Environment | Microsoft Docs"

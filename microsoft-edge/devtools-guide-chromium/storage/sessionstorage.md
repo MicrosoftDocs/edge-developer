@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright Kayce Basques 
+<!-- Copyright Kayce Basques
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -21,99 +21,98 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# View and edit Session Storage with Microsoft Edge DevTools  
+# View and edit Session Storage with Microsoft Edge DevTools
 
-This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view, edit, and delete [sessionStorage][MDNSessionStorage] key-value pairs.  
+This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view, edit, and delete [sessionStorage][MDNSessionStorage] key-value pairs.
 
-## View sessionStorage keys and values  
+## View sessionStorage keys and values
 
-1.  Choose the **Application** tab to open the **Application** tool.  The **Manifest** panel is shown by default.  
-    
+1.  Choose the **Application** tab to open the **Application** tool.  The **Manifest** panel is shown by default.
+
     :::image type="complex" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane" lightbox="../media/storage-application-manifest.msft.png":::
-       The **Manifest** pane  
-    :::image-end:::  
-    
-1.  Expand the **Session Storage** menu.  
-    
+       The **Manifest** pane
+    :::image-end:::
+
+1.  Expand the **Session Storage** menu.
+
     :::image type="complex" source="../media/storage-application-storage-session-storage.msft.png" alt-text="The Session Storage Menu" lightbox="../media/storage-application-storage-session-storage.msft.png":::
-       The **Session Storage** Menu  
-    :::image-end:::  
-    
-1.  Choose a domain to view the key-value pairs.  
-    
+       The **Session Storage** Menu
+    :::image-end:::
+
+1.  Choose a domain to view the key-value pairs.
+
     :::image type="complex" source="../media/storage-application-storage-session-storage-domain.msft.png" alt-text="The sessionStorage key-value pairs" lightbox="../media/storage-application-storage-session-storage-domain.msft.png":::
-       The `sessionStorage` key-value pairs  
-    :::image-end:::  
-    
-1.  Choose a row of the table to view the value in the viewer below the table.  
-    
+       The `sessionStorage` key-value pairs
+    :::image-end:::
+
+1.  Choose a row of the table to view the value in the viewer below the table.
+
     :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="View the value of the x-sid key" lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
-       View the value of the `x-sid` key  
-    :::image-end:::  
-    
-## Create a new sessionStorage key-value pair  
+       View the value of the `x-sid` key
+    :::image-end:::
 
-1.  [View the sessionStorage key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
-1.  Double-click the empty part of the table.  DevTools creates a new row and focuses your cursor in the **Key** column.  
-    
+## Create a new sessionStorage key-value pair
+
+1.  [View the sessionStorage key-value pairs of a domain](#view-sessionstorage-keys-and-values).
+1.  Double-click the empty part of the table.  DevTools creates a new row and focuses your cursor in the **Key** column.
+
     :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="The empty part of the table to double-click in order to create a new key-value pair" lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
-       The empty part of the table to double-click in order to create a new key-value pair  
-    :::image-end:::  
-    
-## Edit sessionStorage keys or values  
+       The empty part of the table to double-click in order to create a new key-value pair
+    :::image-end:::
 
-1.  [View the sessionStorage key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
-1.  Double-click a cell in the **Key** or **Value** column to edit that key or value.  
-    
+## Edit sessionStorage keys or values
+
+1.  [View the sessionStorage key-value pairs of a domain](#view-sessionstorage-keys-and-values).
+1.  Double-click a cell in the **Key** or **Value** column to edit that key or value.
+
     :::image type="complex" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="Edit a sessionStorage key" lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
-       Edit a `sessionStorage` key  
-    :::image-end:::  
-    
-## Delete sessionStorage key-value pairs  
+       Edit a `sessionStorage` key
+    :::image-end:::
 
-1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
-1.  Choose the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.  
-1.  Select the `Delete` key or choose **Delete Selected** \(![Delete Selected](../media/delete-icon.msft.png)\).  
-    
-## Delete all sessionStorage key-value pairs for a domain  
+## Delete sessionStorage key-value pairs
 
-1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).  
-1.  Choose **Clear All** \(![Clear All](../media/clear-icon.msft.png)\).  
-    
-## Interact with sessionStorage from the Console  
+1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).
+1.  Choose the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.
+1.  Select the `Delete` key or choose **Delete Selected** \(![Delete Selected](../media/delete-icon.msft.png)\).
 
-Since you may run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it is possible to interact with `sessionStorage` from the **Console**.  
+## Delete all sessionStorage key-value pairs for a domain
 
-1.  Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `sessionStorage` key-value pairs of a domain other than the page you are on.  
-    
+1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).
+1.  Choose **Clear All** \(![Clear All](../media/clear-icon.msft.png)\).
+
+## Interact with sessionStorage from the Console
+
+Since you may run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it is possible to interact with `sessionStorage` from the **Console**.
+
+1.  Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `sessionStorage` key-value pairs of a domain other than the page you are on.
+
     :::image type="complex" source="../media/storage-console-domain-selection.msft.png" alt-text="Change the JavaScript context of the Console" lightbox="../media/storage-console-domain-selection.msft.png":::
-       Change the JavaScript context of the **Console**  
-    :::image-end:::  
-    
-1.  Run your `sessionStorage` expressions in the **Console**, the same as your JavaScript.  
-    
+       Change the JavaScript context of the **Console**
+    :::image-end:::
+
+1.  Run your `sessionStorage` expressions in the **Console**, the same as your JavaScript.
+
     :::image type="complex" source="../media/storage-console-session-storage-keys.msft.png" alt-text="Interact with sessionStorage from the Console" lightbox="../media/storage-console-session-storage-keys.msft.png":::
-       Interact with `sessionStorage` from the **Console**  
-    :::image-end:::  
-    
-## Getting in touch with the Microsoft Edge DevTools team  
+       Interact with `sessionStorage` from the **Console**
+    :::image-end:::
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- links -->  
+<!-- ====================================================================== -->
+<!-- links -->
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"
+<!-- external links -->
+[MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "Window.sessionStorage | MDN"
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"  
 
-[MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "Window.sessionStorage | MDN"  
-
+<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/sessionstorage) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/sessionstorage) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques

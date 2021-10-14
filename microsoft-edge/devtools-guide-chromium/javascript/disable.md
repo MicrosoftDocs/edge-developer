@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
-<!-- Copyright Kayce Basques 
+<!-- Copyright Kayce Basques
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -21,56 +21,55 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Disable JavaScript with Microsoft Edge DevTools  
+# Disable JavaScript with Microsoft Edge DevTools
 
 To review how your webpage renders when a browser doesn't have JavaScript support, temporarily turn off JavaScript.
 
-Complete the following actions to examine how a webpage displays and behaves when you turn off JavaScript.  
+Complete the following actions to examine how a webpage displays and behaves when you turn off JavaScript.
 
-1.  [Open Microsoft Edge DevTools][DevToolsOpen].  
-1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.  
-    
+1.  [Open Microsoft Edge DevTools][DevToolsOpen].
+1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.
+
     :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="The Command Menu" lightbox="../media/javascript-console-command.msft.png":::
-       The **Command Menu**  
-    :::image-end:::  
-    
-1.  Start typing `javascript`, choose **Disable JavaScript**, and then select `Enter` to run the command.  JavaScript is now disabled.  
-    
+       The **Command Menu**
+    :::image-end:::
+
+1.  Start typing `javascript`, choose **Disable JavaScript**, and then select `Enter` to run the command.  JavaScript is now disabled.
+
     :::image type="complex" source="../media/javascript-console-command-javascript.msft.png" alt-text="Choose Disable JavaScript in the Command Menu" lightbox="../media/javascript-console-command-javascript.msft.png":::
-       Choose **Disable JavaScript** in the **Command Menu**  
-    :::image-end:::  
-    
-    The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.  
-    
+       Choose **Disable JavaScript** in the **Command Menu**
+    :::image-end:::
+
+    The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.
+
     :::image type="complex" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="The warning icon next to Sources" lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
-       The warning icon next to **Sources**  
-    :::image-end:::  
-    
-JavaScript remains disabled in the tab for as long as you have DevTools open.  
+       The warning icon next to **Sources**
+    :::image-end:::
 
-You may want to refresh the page to review if and how the webpage depends on JavaScript while loading.  
+JavaScript remains disabled in the tab for as long as you have DevTools open.
 
-To re-enable JavaScript, complete the following actions.  
+You may want to refresh the page to review if and how the webpage depends on JavaScript while loading.
 
-*   Open the **Command Menu** again and run the `Enable JavaScript` command.  
-*   Close DevTools.  
+To re-enable JavaScript, complete the following actions.
 
-## Getting in touch with the Microsoft Edge DevTools team  
+*   Open the **Command Menu** again and run the `Enable JavaScript` command.
+*   Close DevTools.
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
 
-<!-- links -->  
+<!-- ====================================================================== -->
+<!-- links -->
+[DevToolsOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
 
-[DevToolsOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"  
 
+<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/disable) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/disable) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies  
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
