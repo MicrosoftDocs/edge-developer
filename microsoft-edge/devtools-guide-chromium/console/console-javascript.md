@@ -104,12 +104,9 @@ copy(await (await fetch(
 
 Use the **Console** as a great way to practice JavaScript functionality and to do some quick calculations.  The real power is the fact that you have access to the [window][MdnDocsWebApiWindow] object.  You can [interact with the DOM in Console][DevtoolsConsoleConsoleDomInteraction].
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "Use the Console to interact with the DOM | Microsoft Docs"
 [DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"
 

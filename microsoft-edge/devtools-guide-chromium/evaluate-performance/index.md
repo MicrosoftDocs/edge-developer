@@ -238,12 +238,9 @@ Last, there are many ways to improve runtime performance.  This article focused 
 *   [Debounce Your Input Handlers][RenderingDebounceInputs]
 -->
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsCustomizePlacement]: ../customize/placement.md "Change DevTools Placement (Undock, Dock To Bottom, Dock To Left)"
 [DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimize Website Speed With Microsoft Edge DevTools"
 

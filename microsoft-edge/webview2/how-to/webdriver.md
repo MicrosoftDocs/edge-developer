@@ -140,21 +140,21 @@ By this point, you've installed the WebView2 Runtime, built a WebView2 project, 
        Selenium running WebView2
     :::image-end:::
 
-Congratulations.  You've successfully automated a WebView2 project and driven WebView2 by using Selenium and Microsoft Edge Driver.
+Congratulations!  You've successfully automated a WebView2 project and driven WebView2 by using Selenium and Microsoft Edge Driver.
 
 > [!Note]
 > [edge-selenium-tools][GithubSeleniumProject] is a project that the Microsoft Edge team created to allow Selenium 3 users to drive Edge Chromium and WebView2 using the same API that's provided in Selenium 4.
 
+
+<!-- ====================================================================== -->
 ## See also
 
-*   For a comprehensive look at how the APIs Selenium drives WebView2 or Microsoft Edge \(Chromium\), navigate to [WebDriver on Selenium documentation][SeleniumWebdriver].
-*   To learn more about the WebView2 control and how to use it when embedding web content in your native app, navigate to [Introduction to Microsoft Edge WebView2][WebViewIndex].
-*   To learn more about automating Microsoft Edge \(Chromium\), navigate to [Use WebDriver (Chromium) for test automation][WebdriverChromium].
+*  [WebDriver on Selenium documentation][SeleniumWebdriver] - a comprehensive look at how the APIs Selenium drives WebView2 or Microsoft Edge.
+*  [Introduction to Microsoft Edge WebView2][WebViewIndex] - using the WebView2 control to embed web content in your native app.
+*  [Use WebDriver for test automation][WebdriverChromium] - automating Microsoft Edge.
 
-## Getting in touch with the Microsoft Edge WebView team
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 [WebdriverChromium]: ../../webdriver-chromium/index.md "Use WebDriver (Chromium) for test automation | Microsoft Docs"
 [WebdriverChromiumDownloadMicrosoftEdgeDriver]: ../../webdriver-chromium/index.md#download-microsoft-edge-driver "Download Microsoft Edge Driver - Use WebDriver (Chromium) for test automation | Microsoft Docs"

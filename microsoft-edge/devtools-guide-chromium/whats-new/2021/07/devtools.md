@@ -134,7 +134,7 @@ Now in Microsoft Edge version 93, you can copy a single CSS declaration or all t
    Context menu for a style rule, including **Copy declaration as JS** and **Copy all declarations as JS** commands
 :::image-end:::
 
-To learn more about viewing and changing CSS, navigate to [CSS features][CssReference].
+To learn more about viewing and changing CSS, see [CSS features][CssReference].
 
 
 ## Easier customization of User-Agent Client Hints
@@ -200,11 +200,7 @@ For more information about the Network Activity Log, navigate to [Network Analys
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
-## Getting in touch with Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
-
+<!-- ====================================================================== -->
 <!-- links -->
 [CustomizeDarkTheme]: ../../../customize/theme.md "Apply color themes to DevTools | Microsoft Docs"
 <!-- todo: link directly to the subheading in the page, when available; test the subheading link:
