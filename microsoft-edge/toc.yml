@@ -43,20 +43,20 @@
 # =============================================================================
         - name: Get started
           items:
-                - name: DevTools overview
-                  href: devtools-guide-chromium/index.md
-                - name: Open DevTools
-                  href: devtools-guide-chromium/open/index.md
-                - name: Get started with CSS
-                  href: devtools-guide-chromium/beginners/css.md # in toc twice
-                - name: Get started with viewing and changing CSS
-                  href: devtools-guide-chromium/css/index.md # in toc twice
-                - name: Get started with debugging JavaScript
-                  href: devtools-guide-chromium/javascript/index.md
-                - name: Get started with analyzing runtime performance
-                  href: devtools-guide-chromium/evaluate-performance/index.md
-                - name: View page resources
-                  href: devtools-guide-chromium/resources/index.md
+            - name: DevTools overview
+              href: devtools-guide-chromium/index.md
+            - name: Open DevTools
+              href: devtools-guide-chromium/open/index.md
+            - name: Get started with CSS
+              href: devtools-guide-chromium/beginners/css.md # in toc twice
+            - name: Get started with viewing and changing CSS
+              href: devtools-guide-chromium/css/index.md # in toc twice
+            - name: Get started with debugging JavaScript
+              href: devtools-guide-chromium/javascript/index.md
+            - name: Get started with analyzing runtime performance
+              href: devtools-guide-chromium/evaluate-performance/index.md
+            - name: View page resources
+              href: devtools-guide-chromium/resources/index.md
             - name: Edit files with Workspaces
               href: devtools-guide-chromium/workspaces/index.md
             - name: Inspect network activity
