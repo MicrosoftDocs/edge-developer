@@ -23,6 +23,7 @@ Unfortunately, User Agent strings will not be updated to differentiate Windows 1
 
 ## Browsers Supporting User-Agent Client Hints 
 The following table reflects browsers which enable differentiation, and how OS platform information can be accessed:
+
 | Browser | Supports Client Hints | Alternative Detection Methods |
 |:--- |:--- |:--- |
 | Microsoft Edge 94+ | Yes | - |
@@ -57,7 +58,7 @@ navigator.userAgentData.getHighEntropyValues(
 ## Previous Windows Versions
 To detect older Windows versions, the following table lists corresponding values for PlatformVersion in User-Agent Client Hints: 
 
-|Version	| PlatformVersion
+|Version	| PlatformVersion |
 |:--- |:--- |:--- |
 | Win7/8/8.1 |	0 |
 | Win10 1507 |	1 |
