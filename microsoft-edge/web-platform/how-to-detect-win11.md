@@ -10,7 +10,7 @@ keywords: microsoft edge, compatibility, web platform, user-agent string, ua str
 ---
 # Detecting Windows 11 using User-Agent Client Hints
 
-Sites can use User Agent information sent from the browser to detect information such as browser brand, version, platform, and more. Today, there are two methods for sites to access user agent info: via User Agent Strings (legacy), and User Agent Client Hints (recommended). For detailed documentation on these mechanisms, please see [How to detect Microsoft Edge](UserAgentGuidance) .
+Sites can use User Agent information sent from the browser to detect information such as browser brand, version, platform, and more. Today, there are two methods for sites to access user agent info: via User Agent Strings (legacy), and User Agent Client Hints (recommended). For detailed documentation on these mechanisms, please see [How to detect Microsoft Edge](user-agent-guidance.md) .
 
 To differentiate users using Windows 11 vs Windows 10, starting in Edge94 UA Client Hints will reflect the following:
 
