@@ -46,8 +46,6 @@ The following table shows which browsers support differentiating between Windows
 | Opera | Yes | - |
 | Firefox | No | None |
 | Internet Explorer 11 | No | None |
-| Microsoft Edge Legacy | No | window.external.getHostEnvironmentValue |
-| Safari | No | Not Applicable |
 
 
 <!-- ====================================================================== -->
