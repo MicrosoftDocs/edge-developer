@@ -74,7 +74,7 @@ navigator.userAgentData.getHighEntropyValues(
 
 
 <!-- ====================================================================== -->
-## Previous Windows versions
+## Detecting previous Windows versions
 
 To detect older versions of Windows, use the following values for `platformVersion` in User-Agent Client Hints:
 
