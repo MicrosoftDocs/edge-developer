@@ -23,14 +23,14 @@ Websites can use user agent information sent from the browser to detect brand, v
 
 For details about these two approaches, see [Detecting Microsoft Edge from your website](user-agent-guidance.md).
 
-To differentiate between users who are using Windows 11 and Windows 10, starting in Microsoft Edge version 94 and Chrome version 95, User-Agent Client Hints reflects the following header-field values:
+Starting in Microsoft Edge version 94 and Chrome version 95, sites can differentiate between users on Windows 11 and Windows 10 via User-Agent Client Hints (UA-CH). This information can be found in the following UA-CH request headers:
 
-| Header field | Values that indicate Windows 10 | Value that indicates Windows 11 |
+| Header field | Values that indicate Windows 10 | Values that indicate Windows 11 |
 | --- | --- | --- |
 | `Sec-CH-UA-Platform` | `Windows` | `Windows` |
 | `Sec-CH-UA-Platform-Version` | values between `1.0.0` and `10.0.0` | `13.0.0` and above |
 
-User-Agent strings won't be updated to differentiate between Windows 11 and Windows 10.  We don't recommend using User-Agent strings to retrieve user agent data.  Browsers that do not support User-Agent Client Hints will not be able to differentiate between Windows 10 and Windows 11.
+User-Agent strings won't be updated to differentiate between Windows 11 and Windows 10.  We don't recommend using User-Agent strings to retrieve user agent data.  Browsers that do not support User-Agent Client Hints will not be able to differentiate between Windows 11 and Windows 10.
 
 
 <!-- ====================================================================== -->
@@ -55,20 +55,18 @@ The following table shows which browsers support differentiating between Windows
 The following code detects Windows 11:
 
 ```javascript
-navigator.userAgentData.getHighEntropyValues(
- ["platform",
-  "platformVersion"])
+navigator.userAgentData.getHighEntropyValues(["platformVersion"])
  .then(ua => {
-   if (ua.platform === "Windows") {
-     const majorPlatformVersion = ua.platformVersion.split('.')[0];
+   if (navigator.userAgentData.platform === "Windows") {
+     const majorPlatformVersion = parseInt(ua.platformVersion.split('.')[0]);
      if (majorPlatformVersion >= 13) {
-       console.log("Windows 11+");
+       console.log("Windows 11 or later");
       }
       else if (majorPlatformVersion > 0) {
         console.log("Windows 10");
       }
       else {
-        console.log("Pre-Windows 10");
+        console.log("Windows 10 or earlier");
       }
    }
    else {
@@ -80,9 +78,9 @@ navigator.userAgentData.getHighEntropyValues(
 
 
 <!-- ====================================================================== -->
-## Detecting previous Windows versions
+## Detecting specific Windows versions
 
-To detect older versions of Windows, use the following values for `platformVersion` in User-Agent Client Hints:
+To detect specific versions of Windows, use the following values for `platformVersion` in User-Agent Client Hints:
 
 | Version | `platformVersion` |
 | --- | --- | --- |
