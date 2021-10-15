@@ -1,5 +1,5 @@
 ---
-description: How to detect Microsoft Edge data with User-Agent Client Hints and User-Agent strings.
+description: How to differentiate Windows 10 and Windows 11 using User-Agent Client Hints
 title: Detecting Windows 11 using User-Agent Client Hints
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -17,20 +17,20 @@ user agent string
 User-Agent Client Hints
 -->
 
-Websites can use User Agent information that's sent from the browser to detect information such as browser brand, version, and platform. There are two approaches for sites to access User Agent information:
+Websites can use user agent information sent from the browser to detect brand, version, device platform, and more. There are two approaches for sites to access user agent information:
 *  User-Agent strings (legacy).
 *  User-Agent Client Hints (recommended).
 
 For details about these two approaches, see [Detecting Microsoft Edge from your website](user-agent-guidance.md).
 
-To differentiate between users who are using Windows 11 and Windows 10, starting in Microsoft Edge version 94, User-Agent Client Hints reflects the following header-field values:
+To differentiate between users who are using Windows 11 and Windows 10, starting in Microsoft Edge version 94 and Chrome version 95, User-Agent Client Hints reflects the following header-field values:
 
-| Header field | Value that indicates Windows 10 | Value that indicates Windows 11 |
+| Header field | Values that indicate Windows 10 | Value that indicates Windows 11 |
 | --- | --- | --- |
 | `Sec-CH-UA-Platform` | `Windows` | `Windows` |
-| `Sec-CH-UA-PlatformVersion` | `10.0.0` and above | `13.0.0` and above |
+| `Sec-CH-UA-Platform-Version` | values between `1.0.0` and `10.0.0` | `13.0.0` and above |
 
-Unfortunately, User-Agent strings won't be updated to differentiate between Windows 11 and Windows 10.  We don't recommend using User-Agent strings to retrieve user agent data.  For browsers which don't support User-Agent Client Hints, sites won't be able to differentiate between Windows 11 and Windows 10.
+User-Agent strings won't be updated to differentiate between Windows 11 and Windows 10.  We don't recommend using User-Agent strings to retrieve user agent data.  Browsers that do not support User-Agent Client Hints will not be able to differentiate between Windows 10 and Windows 11.
 
 
 <!-- ====================================================================== -->
@@ -38,15 +38,15 @@ Unfortunately, User-Agent strings won't be updated to differentiate between Wind
 
 The following table shows which browsers support differentiating between Windows 11 and Windows 10.
 
-| Browser | Supports User-Agent Client Hints? | Alternative detection methods |
+| Browser | Supports differentiation via User-Agent Client Hints? | Alternative detection methods |
 | --- | --- | --- |
 | Microsoft Edge 94+ | Yes | - |
-| Chrome 94+ | Yes | - |
+| Chrome 95+ | Yes | - |
 | Opera | Yes | - |
 | Firefox | No | None |
 | Internet Explorer 11 | No | None |
 | Microsoft Edge Legacy | No | window.external.getHostEnvironmentValue |
-| Safari | No | N/A |
+| Safari | No | Not Applicable |
 
 
 <!-- ====================================================================== -->
@@ -59,18 +59,24 @@ navigator.userAgentData.getHighEntropyValues(
  ["platform",
   "platformVersion"])
  .then(ua => {
-   if (ua.platform === "Windows" && ua.platformVersion.split('.')[0] >= 13) {
-     console.log("Windows 11+");
+   if (ua.platform === "Windows") {
+     const majorPlatformVersion = ua.platformVersion.split('.')[0];
+     if (majorPlatformVersion >= 13) {
+       console.log("Windows 11+");
+      }
+      else if (majorPlatformVersion > 0) {
+        console.log("Windows 10");
+      }
+      else {
+        console.log("Pre-Windows 10");
+      }
    }
-   else if (ua.platform === "Windows") {
-     console.log("Windows 10 or lower");
+   else {
+     console.log("Not running on Windows");
    }
  });
 
 ```
-
-> [!NOTE]
-> We recommend that you don't use `parseFloat()` to perform `platformVersion` checks, because potential formatting changes could lead to incorrect results.
 
 
 <!-- ====================================================================== -->
