@@ -35,14 +35,7 @@ Service workers are available for testing in Canary.  To migrate your extensions
 
 ## When are these changes available in Microsoft Edge
 
-The current declarative net request API implementation is available in our Stable and Beta channels.  Test the changes, and provide feedback.  The Microsoft Edge extensions team contributes to development efforts and investigate further changes.
-
-| Channel name | Details |
-|:--- |:--- |
-| Microsoft Edge 84 Stable | DNR API is available for testing |
-| Microsoft Edge 85 Beta | Header modification support is available|
-
-When the changes are made to Chromium, the Microsoft Edge extensions team shares timelines so that you may update your code and republish extensions to the store.
+The current declarative net request API implementation is available in our Stable and Beta channels. Test the changes, and provide feedback.
 
 The Microsoft Edge extensions team continues publishing updates on the blog.  You may provide your feedback on the changes through [Tech Community][MicrosoftTechcommunityT5ArticlesManifestV3ChnagesAreNowAvailableInMicrosoftEdgeMP1780254].
 
