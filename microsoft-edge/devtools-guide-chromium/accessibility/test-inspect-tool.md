@@ -107,6 +107,7 @@ To configure the grid overlay or flexbox overlay, in the **Elements** tool, sele
 After selecting an element in the rendered page, you could then use the **Accessibility** tab (near the **Styles** tab) to view the **Accessibility Tree** and use the **Source Order Viewer**.
 
 
+<!-- ====================================================================== -->
 ## See also
 
 *  [Inspect a node](../dom/index.md#inspect-a-node)
@@ -114,11 +115,7 @@ After selecting an element in the rendered page, you could then use the **Access
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
 
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-
+<!-- ====================================================================== -->
 <!-- links -->
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"
 [W3CContrastRatio]: https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio "contrast ratio | W3C"

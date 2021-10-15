@@ -80,12 +80,9 @@ To filter more and expand the choice, choose the triangle icon next to it.  That
     Choose any of the new options to filter using type and source
 :::image-end:::
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"
 
 [MdnDocsWebJavascriptGuideRegularExpressions]: https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions "Regular Expressions | MDN"

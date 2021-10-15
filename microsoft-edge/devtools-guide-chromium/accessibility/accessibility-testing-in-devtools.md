@@ -513,14 +513,6 @@ Another way to find out what to do to improve your web product is to use the [we
     Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem
 :::image-end:::
 
-We're constantly working on new accessibility features for DevTools.  If there is anything you are missing, send us a message and tell us what we can do.
-
-
-<!-- ====================================================================== -->
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
 
 <!-- ====================================================================== -->
 <!-- links -->

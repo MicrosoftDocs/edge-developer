@@ -158,11 +158,12 @@ The **Audits** tool, the **3D View** tool, the **Emulated Devices** section in *
 
 The file explorer does not launch from the DevTools in the **Sources** tool or in the **Security** panel when you remote debug.  The team plans to fix the tools in a future update of Microsoft Edge.
 
-<!-- links -->
 
+<!-- ====================================================================== -->
+<!-- links -->
 [DevtoolsIndex]: ../index.md "Microsoft Edge Developer Tools overview | Microsoft Docs"
 [DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Debug Progressive Web Apps | Microsoft Docs"
-
+<!-- external links -->
 [DotnetFrameworkWcfFeatureDetailsHowToViewCertificatesWithMmcSnapInViewCertificatesWithCertificateManagerTool]: /dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in#view-certificates-with-the-certificate-manager-tool "View certificates with the Certificate Manager tool - How to: View certificates with the MMC snap-in | Microsoft Docs"
 
 [WindowsAppsGetStartedEnableYourDeviceForDevelopment]: /windows/apps/get-started/enable-your-device-for-development "Enable your device for development | Microsoft Docs"

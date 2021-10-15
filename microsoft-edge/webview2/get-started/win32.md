@@ -166,7 +166,7 @@ To build and run the app, select `F5`.  Now you have a WebView window displaying
 
 ## Step 4 - Navigation events
 
-The WebView team already covered navigating to URL using the `ICoreWebView2::Navigate` method in the last step.  During navigation, WebView fires a sequence of events to which the host may listen.
+The WebView2 team already covered navigating to URL using the `ICoreWebView2::Navigate` method in the last step.  During navigation, WebView fires a sequence of events to which the host may listen.
 
 1.  `NavigationStarting`
 1.  `SourceChanged`
@@ -278,10 +278,12 @@ To build and run the app, select `F5`.  The URL appears in a pop-up window befor
    Display url
 :::image-end:::
 
-Congratulations, you built your first WebView2 app.
+Congratulations, you built your first WebView2 app!
 
 
+<!-- ====================================================================== -->
 ## Next steps
+
 
 *  [MicrosoftEdge/WebView2Samples repo][Win32GithubCode] - the code used in this tutorial.
 *  [WebView2 development best practices][WV2BestPractices]
@@ -290,12 +292,9 @@ Congratulations, you built your first WebView2 app.
 *  [WebView2 API reference][Webview2ReferenceWin32]
 
 
-## Getting in touch with the Microsoft Edge WebView team
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Microsoft Edge Developer"
 
