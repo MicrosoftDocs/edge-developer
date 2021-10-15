@@ -34,7 +34,7 @@ Unfortunately, User-Agent strings won't be updated to differentiate between Wind
 
 
 <!-- ====================================================================== -->
-## Browsers supporting User-Agent Client Hints
+## Browsers that support User-Agent Client Hints
 
 The following table shows which browsers support differentiating between Windows 11 and Windows 10.
 
@@ -50,7 +50,7 @@ The following table shows which browsers support differentiating between Windows
 
 
 <!-- ====================================================================== -->
-## Code Sample
+## Sample code for detecting Windows 11
 
 The following code detects Windows 11:
 
