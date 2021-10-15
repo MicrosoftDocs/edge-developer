@@ -15,6 +15,7 @@ Restrict the lexicon to these forms:
 User-Agent string
 user agent string
 User-Agent Client Hints
+user agent information
 -->
 
 Websites can use user agent information sent from the browser to detect brand, version, device platform, and more. There are two approaches for sites to access user agent information:
@@ -66,7 +67,7 @@ navigator.userAgentData.getHighEntropyValues(["platformVersion"])
         console.log("Windows 10");
       }
       else {
-        console.log("Windows 10 or earlier");
+        console.log("Before Windows 10");
       }
    }
    else {
