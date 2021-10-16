@@ -396,7 +396,7 @@
             - name: WebAuthn
               href: devtools-guide-chromium/webauthn/index.md
     # Welcome
-            - name: Welcome
+            - name: Welcome*
               href: devtools-guide-chromium/welcome/index.md
         - name: Contact the DevTools team
           href: devtools-guide-chromium/contact.md
