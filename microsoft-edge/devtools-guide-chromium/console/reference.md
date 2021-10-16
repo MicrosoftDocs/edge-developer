@@ -1,6 +1,6 @@
 ---
 description: A comprehensive reference for every feature and behavior of the Console UI in Microsoft Edge DevTools.
-title: Console reference
+title: Console features reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Console reference
+# Console features reference
 
 This article is a reference of features related to the Microsoft Edge DevTools Console.  It assumes you're already familiar with using the Console to view logged messages and run JavaScript.  If not, navigate to [Get started with running JavaScript in the Console][DevtoolsConsoleConsoleJavascript] and [Get started with logging messages in the Console][DevtoolsConsoleConsoleLog].
 
