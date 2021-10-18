@@ -3,7 +3,7 @@ description: Get started guide with WebView2 for Win32 apps
 title: Get started with WebView2 in Win32 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 09/09/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -13,6 +13,11 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  For more information about individual WebView2 APIs, navigate to [API reference][Webview2ReferenceWin32].
 
+> [!NOTE]
+> This tutorial refers to WebView2 samples. To view or copy sample code, navigate to [WebView2 Sample Code][GithubMicrosoftedgeWebview2samplesMain].
+
+
+<!-- ====================================================================== -->
 ## Prerequisites
 
 Ensure you install the following list of prerequisites before proceeding.
@@ -21,6 +26,8 @@ Ensure you install the following list of prerequisites before proceeding.
 
 *   [Visual Studio][MicrosoftVisualstudioMain] 2015 or later with C++ support installed.
 
+
+<!-- ====================================================================== -->
 ## Step 1 - Create a single-window app
 
 Start with a basic desktop project that contains a single main window.
@@ -37,6 +44,8 @@ Start with a basic desktop project that contains a single main window.
 
 Visual Studio may display errors, because your project is missing the WebView2 header file.  The errors should be fixed after [Step 2](#step-2---install-webview2-sdk).
 
+
+<!-- ====================================================================== -->
 ## Step 2 - Install WebView2 SDK
 
 Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
@@ -100,6 +109,8 @@ To build and run the sample app, select `F5`.  Your app displays an empty window
    Empty app
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 3 - Create a single WebView within the parent window
 
 Add a WebView to the main window.
@@ -161,6 +172,8 @@ To build and run the app, select `F5`.  Now you have a WebView window displaying
    Bing window
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 4 - Navigation events
 
 The WebView2 team already covered navigating to URL using the `ICoreWebView2::Navigate` method in the last step.  During navigation, WebView fires a sequence of events to which the host may listen.
@@ -206,6 +219,8 @@ webviewWindow->add_NavigationStarting(Callback<ICoreWebView2NavigationStartingEv
 
 Now the app does not navigate to any non-https sites.  You may use similar mechanism to accomplish other tasks, such as restricting navigation to within your own domain.
 
+
+<!-- ====================================================================== -->
 ## Step 5 - Scripting
 
 You may use host apps to inject JavaScript code into WebView2 controls at runtime.  You may task WebView to run arbitrary JavaScript or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run with specific timing.
@@ -232,6 +247,8 @@ Now, WebView should always freeze the `Object` object and returns the page docum
 > [!NOTE]
 > The script injection APIs \(and some other WebView2 APIs\) are asynchronous, you should use callbacks if code is must be run in a specific order.
 
+
+<!-- ====================================================================== -->
 ## Step 6 - Communication between host and web content
 
 The host and the web content may also communicate with each other through the `postMessage` method.  The web content running within a WebView may post to the host through the `window.chrome.webview.postMessage` method, and the message is handled by any registered the `ICoreWebView2WebMessageReceivedEventHandler` event handler on the host.  Likewise, the host may message the web content through `ICoreWebView2::PostWebMessageAsString` or `ICoreWebView2::PostWebMessageAsJSON` method, which is caught by handlers added from `window.chrome.webview.addEventListener` listener.  The communication mechanism allows the web content to use native capabilities by passing messages to ask the host to run native APIs.
@@ -279,12 +296,14 @@ Congratulations, you built your first WebView2 app!
 
 
 <!-- ====================================================================== -->
-## See also
+## Next steps
+
+For additional WebView2 functionality that isn't covered in this article, see the following resources.
 
 *  [MicrosoftEdge/WebView2Samples repo][Win32GithubCode] - the code used in this tutorial.
 *  [WebView2 development best practices][WV2BestPractices]
 *  [WebView2 API Sample][GithubMicrosoftedgeWebview2samplesApisample] - a comprehensive example of WebView2 capabilities.
-*  [WebView2Browser][GithubMicrosoftedgeWebview2browser] - a sample app built using WebView2.
+*  [WebView2Browser][GithubMicrosoftedgeWebview2browser] - a WebView2 sample app.
 *  [WebView2 API reference][Webview2ReferenceWin32]
 
 
