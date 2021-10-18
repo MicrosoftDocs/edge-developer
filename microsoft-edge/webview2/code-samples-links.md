@@ -45,7 +45,7 @@ See the [Get started with WebView2 in WinUI 2 apps guide](./get-started/winui2.m
 
 WebView2 sample apps include solutions for Win32, WPF, WinForms, and WinUI.
 
-* The Microsoft Visual Studio solution file [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln) is a collection that uses the following samples.
+The Microsoft Visual Studio solution file [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln) is a collection that uses the following samples.
 
 ### Win32 C++ samples
 
