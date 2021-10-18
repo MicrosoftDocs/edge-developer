@@ -39,13 +39,13 @@ User-Agent strings won't be updated to differentiate between Windows 11 and Wind
 
 The following table shows which browsers support differentiating between Windows 11 and Windows 10.
 
-| Browser | Supports differentiation via User-Agent Client Hints? | Alternative detection methods |
-| --- | --- | --- |
-| Microsoft Edge 94+ | Yes | - |
-| Chrome 95+ | Yes | - |
-| Opera | Yes | - |
-| Firefox | No | None |
-| Internet Explorer 11 | No | None |
+| Browser | Supports differentiation via User-Agent Client Hints? |
+| --- | --- |
+| Microsoft Edge 94+ | Yes |
+| Chrome 95+ | Yes |
+| Opera | Yes |
+| Firefox | No |
+| Internet Explorer 11 | No |
 
 
 <!-- ====================================================================== -->
