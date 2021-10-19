@@ -1,14 +1,14 @@
 ---
 description: Get started with Remote Debugging Windows 10 or later devices
-title: Get started with remote debugging Windows devices
+title: Get started with remote debugging Windows 10 or later devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, remote, debugging, windows 10, Windows 10 or later, windows, device portal
+keywords: microsoft edge, web development, f12 tools, devtools, remote, debugging, windows 10, Windows 10 and later, Windows 11, windows, device portal
 ---
-# Get started with remote debugging Windows devices
+# Get started with remote debugging Windows 10 or later devices
 
 Remote debug live content on a Windows 10 or later device from your Windows or macOS computer.  This tutorial teaches you the following tasks.
 
