@@ -74,7 +74,7 @@
                 - name: Get started with remote debugging Android WebViews
                   href: devtools-guide-chromium/remote-debugging/webviews.md
 # =============================================================================
-        - name: Features
+        - name: How to
           items:
 # Command Menu
             - name: Command menu
@@ -218,8 +218,6 @@
 # DevTools Protocol
             - name: DevTools Protocol
               href: devtools-protocol-chromium/index.md
-            - name: Keyboard shortcuts
-              href: devtools-guide-chromium/shortcuts/index.md
 # =============================================================================
         - name: Tools
           items:
