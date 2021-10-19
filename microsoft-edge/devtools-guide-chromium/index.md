@@ -93,7 +93,7 @@ To change where DevTools is placed within the browser window:
 
 :::image type="content" source="./media/devtools-intro-docking-menu.msft.png" alt-text="Screenshot of the Dock side menu in DevTools.":::
 
-**Dock to left** or **Dock to right** keeps DevTools side-by-side with your web product, and is excellent when you [emulate mobile devices][DevtoolsGuideDeviceModeIndex].  The **Dock to left** and **Dock to right** options work best with high-resolution displays.
+**Dock to left** or **Dock to right** keeps DevTools side-by-side with your web product, and is excellent when you [emulate mobile devices](device-mode/index.md).  The **Dock to left** and **Dock to right** options work best with high-resolution displays.
 
 **Dock to right** is the default placement of DevTools:
 
@@ -111,7 +111,7 @@ To change where DevTools is placed within the browser window:
 
 :::image type="content" source="media/devtools-intro-docking-own-window.msft.png" alt-text="Screenshot of DevTools undocked into a separate window.":::
 
-See also [Change DevTools placement (Undock, Dock To bottom, Dock To left)][DevtoolsGuideCustomizePlacement].
+See also [Change DevTools placement (Undock, Dock to bottom, Dock to left)](customize/placement.md).
 
 
 <!-- ====================================================================== -->
@@ -128,7 +128,7 @@ There are two toolbars: the main toolbar at the top of DevTools, and the **Drawe
 
 Next, the following tools are always present on the toolbar and cannot be closed:
 *  **Elements**.  Allows you to edit or inspect HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.
-*  [Console][DevtoolsGuideConsoleIndex].  Allows you to display and filter log messages.  Log messages are automated logs of the browser like network requests and developer-generated logs.  You can also run JavaScript directly in the **Console** in the context of the current window or frame.
+*  [Console](console/index.md).  Allows you to display and filter log messages.  Log messages are automated logs of the browser like network requests and developer-generated logs.  You can also run JavaScript directly in the **Console** in the context of the current window or frame.
 *  [Sources][DevtoolsGuideSourcesIndex].  A code editor and JavaScript debugger.  You can edit projects, maintain snippets, and debug your current project.
 *  [Network][DevtoolsGuideNetworkIndex].  Allows you to monitor and inspect requests or responses from the network and browser cache.  You can filter requests and responses to fit your needs and simulate different network conditions.
 
@@ -157,13 +157,13 @@ The main toolbar in DevTools has the following sections:
 
     :::image type="content" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="The Inspect tool while hovering over with the first headline of this article.":::
 
-*   The [Device Emulation][DevtoolsGuideDeviceModeIndex] tool displays the current web product in an emulated device mode.  The **Device Emulation** tool allows you to run and test how your product reacts when you resize the browser.  It also gives you an estimation of the layout and behavior on a mobile device.
+*   The [Device Emulation](device-mode/index.md) tool displays the current web product in an emulated device mode.  The **Device Emulation** tool allows you to run and test how your product reacts when you resize the browser.  It also gives you an estimation of the layout and behavior on a mobile device.
 
     :::image type="content" source="./media/devtools-intro-device-emulation.msft.png" alt-text="DevTools display of this article in an emulated mobile phone.":::
 
 *   The main toolbar contains tabs for tools that are used in various scenarios.  You can customize each of the tools, and the content of a tool can change based on the context.  To show a tool that is on a tab that's hidden, select the **More tabs** (`>>`) button.   To add a tool to the main toolbar or to the drawer's toolbar, select the **More tools** (`+`) button.  Each tool is introduced below.
 
-*   Next to the Tools tab group are optional error and issues shortcuts.  The shortcuts display when JavaScript errors or issues occur on the current webpage.  The **Open Console to view # errors, # warnings** (**JavaScript Errors**) button displays a red circle with an `X`, followed by the number of JavaScript errors.  To open the [Console][DevtoolsGuideConsoleIndex] and learn about the error, select the **JavaScript Errors** button.  The **Open Issues to view # issues** (**Issues**) button is a blue message icon followed by the number of issues.  To open the [Issues][DevtoolsGuideIssuesIndex] tool, select the **Issues** button.
+*   Next to the Tools tab group are optional error and issues shortcuts.  The shortcuts display when JavaScript errors or issues occur on the current webpage.  The **Open Console to view # errors, # warnings** (**JavaScript Errors**) button displays a red circle with an `X`, followed by the number of JavaScript errors.  To open the [Console](console/index.md) and learn about the error, select the **JavaScript Errors** button.  The **Open Issues to view # issues** (**Issues**) button is a blue message icon followed by the number of issues.  To open the [Issues][DevtoolsGuideIssuesIndex] tool, select the **Issues** button.
 
 *   The **Settings** button displays a gear icon.  To open DevTools **Settings** webpage, select the **Settings** button.  The **Settings** webpage displays a menu to change **Preferences**, turn on **Experiments**, and much more.
 
@@ -213,7 +213,7 @@ In the **Preferences** section, you can change several parts of DevTools.  For e
 You can also change the settings of advanced features, such as:
 *   [Workspaces][DevtoolsGuideWorkspacesIndex].
 *   Filter library code with the **Ignore List**.
-*   Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices in Microsoft Edge DevTools][DevtoolsGuideDeviceModeIndex].
+*   Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices in Microsoft Edge DevTools](device-mode/index.md).
 *   Select a network **Throttling** profile.
 *   Define simulated **Locations**.
 *   Customize keyboard **Shortcuts**.  For example, to use the same shortcuts in DevTools as in Visual Studio Code, select **Match shortcuts from preset** > **Visual Studio Code**.
@@ -224,7 +224,7 @@ You can also change the settings of advanced features, such as:
 <!-- ====================================================================== -->
 ## Trying experimental features
 
-The DevTools team provides new features as _experiments_ in DevTools.  You can turn each of the experiments on or off.  To see the full list of [Experimental features][DevtoolsGuideExperimentalFeaturesIndex], in DevTools, select **Settings** (the gear icon), and then select **Experiments**.
+The DevTools team provides new features as _experiments_ in DevTools.  You can turn each of the experiments on or off.  To see the full list of [Experimental features](experimental-features/index.md), in DevTools, select **Settings** (the gear icon), and then select **Experiments**.
 
 To preview the [latest features coming to DevTools][DevtoolsGuideWhatsNew202102Devtools], download [Microsoft Edge Canary][MicrosoftedgeinsiderDownload], which builds nightly.
 
@@ -233,16 +233,16 @@ To preview the [latest features coming to DevTools][DevtoolsGuideWhatsNew202102D
 ## See also
 
 *   [DevTools for beginners: Get Started with HTML and the DOM](beginners/html.md)
-*   [Inspect and change the current webpage][DevtoolsGuideDomIndex]
-*   [Emulate how your product behaves on different devices][DevtoolsGuideDeviceModeIndex]
+*   [Inspect and change the current webpage](dom/index.md)
+*   [Emulate how your product behaves on different devices](device-mode/index.md)
 *   [Inspect, tweak, and change the styles of elements][DevtoolsGuideInspectStylesEditFonts]
 *   [Debug your JavaScript][DevtoolsGuideJavascriptIndex]
-*   [live console][DevtoolsGuideConsoleIndex]
+*   [live console](console/index.md)
 *   [accessibility, performance, compatibility, and security issues][DevtoolsGuideIssuesIndex]
 *   [Inspect the network traffic][DevtoolsGuideNetworkIndex]
 *   [Inspect where the browser stored content][DevtoolsGuideStorageSessionstorage]
-*   [Evaluate the performance][DevtoolsGuideEvaluatePerformanceIndex]
-*   [memory problems][DevtoolsGuideMemoryProblemsIndex]
+*   [Evaluate the performance](evaluate-performance/index.md)
+*   [memory problems](memory-problems/index.md)
 *   [rendering issues][DevtoolsGuideRenderingToolsIndex]
 *   [Use a development environment][DevtoolsGuideSourcesIndex]
 *   [sync changes in DevTools with the file system][DevtoolsGuideWorkspacesIndex]
@@ -251,13 +251,6 @@ To preview the [latest features coming to DevTools][DevtoolsGuideWhatsNew202102D
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsGuideConsoleIndex]: ./console/index.md "Console overview | Microsoft Docs"
-[DevtoolsGuideCustomizePlacement]: ./customize/placement.md "Change DevTools placement (Undock, Dock To bottom, Dock To left) | Microsoft Docs"
-[DevtoolsGuideDeviceModeIndex]: ./device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsGuideDomIndex]: ./dom/index.md "Get started with viewing and changing the DOM | Microsoft Docs"
-[DevtoolsGuideEvaluatePerformanceIndex]: ./evaluate-performance/index.md "Get started with analyzing Runtime performance | Microsoft Docs"
-[DevtoolsGuideExperimentalFeaturesIndex]: ./experimental-features/index.md "Experimental features | Microsoft Docs"
-[DevtoolsGuideMemoryProblemsIndex]: ./memory-problems/index.md "Fix memory problems | Microsoft Docs"
 [DevtoolsGuideInspectStylesEditFonts]: ./inspect-styles/edit-fonts.md "Edit CSS font styles and settings in the Styles pane | Microsoft Docs"
 [DevtoolsGuideIssuesIndex]: ./issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
 [DevtoolsGuideJavascriptIndex]: ./javascript/index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"
