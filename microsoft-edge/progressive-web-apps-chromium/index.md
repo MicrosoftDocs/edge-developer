@@ -11,6 +11,8 @@ keywords: progressive web apps, PWA, Edge, JavaScript, UWP, Microsoft Store
 ---
 # Overview of Progressive Web Apps (PWAs)
 
+<!-- preserve trailing spaces -->
+
 **[Progressive Web Apps][MDNApps]** (PWAs) provide access to open web technologies for cross-platform interoperability and provide your users with an app-like experience customized for their devices.
 
 PWAs are websites that are **[progressively enhanced][AListApartUnderstandingProgressiveEnhancement]** to function like installed apps on supporting platforms, and like regular web sites on other browsers.
@@ -27,7 +29,10 @@ PWAs can also be **submitted to the Microsoft Store** where millions of Windows 
 
 PWAs have the same reach as websites: they can be indexed by search engines, can be linked to, and work on all devices from the same codebase. As such they have a much lower development cost than compiled apps that require a specific codebase for Android, iOS, and various desktop operating systems.
 
-<!-- in the below table, keep two trailing spaces after each image line's ::: to keep card elements tight but not concat'd -->
+<!--
+In the below table, keep two trailing spaces after each image line and after each heading line, to keep card elements tight but not concatenated.
+Similar table: [Introduction to Microsoft Edge WebView2](..\webview2\index.md#webview2-benefits)
+-->
 
 :::row:::
     :::column:::
@@ -77,6 +82,8 @@ PWAs have the same reach as websites: they can be indexed by search engines, can
     :::column:::
     :::column-end:::
 :::row-end:::
+
+<!-- In the above table, keep two trailing spaces after each image line and after each heading line, to keep card elements tight but not concatenated. -->
 
 
 <!-- ====================================================================== -->

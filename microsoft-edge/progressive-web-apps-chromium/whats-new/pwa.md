@@ -25,11 +25,11 @@ You can sort your apps by any of the following:
 *  Alphabetically, based on title.
 *  Date of installation.
 
-You can also arrange apps in a list or grid view. 
+You can also arrange apps in a list or grid view.
 
 :::image type="content" source="media/edgeapps-redesign.jpg" alt-text="Microsoft Edge now has a new app management page." lightbox="media/edgeapps-redesign.jpg":::
 
-Additionally, you can easily pin apps to the taskbar or **Start** menu.  You can create a shortcut, and enable apps to run on user login. 
+Additionally, you can easily pin apps to the taskbar or **Start** menu.  You can create a shortcut, and enable apps to run on user login.
 
 Also, there's now a way to easily access the following:
 *  Permissions and privacy details for the associated origin.
@@ -41,7 +41,7 @@ Also, there's now a way to easily access the following:
 <!-- ====================================================================== -->
 ## What's New in Microsoft Edge 95
 
-Microsoft Edge version 95 moved to Beta channel on September 28, 2021. 
+Microsoft Edge version 95 moved to Beta channel on September 28, 2021.
 The origin trials remain active for the following features:
 *  [Window Controls Overlay for desktop PWAs](#window-controls-overlay-origin-trials).
 *  [URL Handlers](#url-handlers-origin-trial).
