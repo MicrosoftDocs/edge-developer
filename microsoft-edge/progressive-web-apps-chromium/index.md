@@ -27,7 +27,7 @@ PWAs can also be **submitted to the Microsoft Store** where millions of Windows 
 
 PWAs have the same reach as websites: they can be indexed by search engines, can be linked to, and work on all devices from the same codebase. As such they have a much lower development cost than compiled apps that require a specific codebase for Android, iOS, and various desktop operating systems.
 
-<!-- in the below table, keep two trailing spaces after each image line's ::: to keep card elements tight but not concat'd -->
+<!-- in the below table, keep two trailing spaces after each image line and after each heading line, to keep card elements tight but not concat'd -->
 
 :::row:::
     :::column:::
