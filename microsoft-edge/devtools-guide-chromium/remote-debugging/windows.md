@@ -1,6 +1,6 @@
 ---
-description: Get started with Remote Debugging Windows 10 or later devices
-title: Get started with remote debugging Windows 10 or later devices
+description: Get started with Remote Debugging Windows devices
+title: Get started with remote debugging Windows devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/23/2021
@@ -8,14 +8,16 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, remote, debugging, windows 10, Windows 10 and later, Windows 11, windows, device portal
 ---
-# Get started with remote debugging Windows 10 or later devices
+# Get started with remote debugging Windows devices
 
-Remote debug live content on a Windows 10 or later device from your Windows or macOS computer.  This tutorial teaches you the following tasks.
+Remote debug live content on a Windows 10 or later device from your Windows or macOS computer.  This tutorial teaches you the following tasks:
 
 *   Set up your Windows device for remote debugging and connect to it from your development machine.
 *   Inspect and debug live content on your Windows device from your development machine.
 *   Screencast content from your Windows device onto a DevTools instance on your development machine.
 
+
+<!-- ====================================================================== -->
 ## Step 1: Set up the host (debuggee machine)
 
 The host or debuggee machine is the Windows 10 or later device that you want to debug.  It may be a remote device that is hard for you to physically access or it may not have keyboard and mouse peripherals, making it difficult to interact with the Microsoft Edge DevTools on that device.  To set up the host \(debuggee\) machine, you need to complete the following actions.
@@ -70,6 +72,8 @@ Note the machine IP address and connection port displayed under **Connect using:
 
 You enter the information on the client \(debugger\) device in the [next section](#step-2-set-up-the-client-debugger-machine).  Open tabs in Microsoft Edge and [Progressive Web Apps (PWAs)][DevtoolsProgressiveWebApps] on the host \(debuggee\) machine that you want to debug from the client \(debugger\) machine.
 
+
+<!-- ====================================================================== -->
 ## Step 2: Set up the client (debugger machine)
 
 The client or debugger machine is the device you want to debug from.  This device may be your daily development machine or it may just be your PC or MacBook when working from home.
@@ -103,6 +107,8 @@ Now, when connecting to the host \(debuggee\) machine from the client \(debugger
 > [!NOTE]
 > The default port for `http` is `50080` and the default port for `https` is `50043` but this is not always the case as Device Portal on desktop claims ports in the ephemeral range \(\>50,000\) to prevent collisions with existing port claims on the device.  To learn more, navigate to the  [Port Settings][WindowsUwpDebugTestPerfDevicePortalDesktopRegistryBasedConfigurationForDevicePortal] section for Device Portal on Windows desktop.
 
+
+<!-- ====================================================================== -->
 ## Step 3: Debug content on the host from the client
 
 If the client \(debugger\) machine successfully connects to the host \(debuggee\) machine, the `edge://inspect` page on the client now displays a list of the tabs in Microsoft Edge and any open PWAs on the host.
@@ -129,6 +135,8 @@ You may also tap an element on your host device screen to choose it in the **Ele
 > [!IMPORTANT]
 > The **Event Listeners** pane in the **Elements** tool is blank on Windows 10 version 1903.  This is a known issue and the team plans to fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.
 
+
+<!-- ====================================================================== -->
 ## Step 4: Screencast your host screen to your client device
 
 By default, the DevTools instance on the client have screencasting turned on, which allows you to view the content on the host device in your DevTools instance on your client device.  Choose **Toggle Screencast** to turn off or on this feature.
@@ -148,6 +156,8 @@ Some notes on screencasts:
 *   Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of the performance of your page.
 *   If your host device screen locks, the content of your screencast disappears.  Unlock your host device screen to automatically resume the screencast.
 
+
+<!-- ====================================================================== -->
 ## Known Issues
 
 The **Event Listeners** pane in the **Elements** tool is blank on Windows 10 version 1903.  The team plans to fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.

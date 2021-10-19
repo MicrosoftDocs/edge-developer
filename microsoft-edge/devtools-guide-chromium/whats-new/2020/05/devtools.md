@@ -284,7 +284,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsNetworkLog]: ../../../network/index.md#log-network-activity "Log network activity | Microsoft Docs"
 [DevtoolsRemoteDebugAndroid]: ../../../remote-debugging/index.md "Get Started with Remote Debugging Android Devices | Microsoft Docs"
 [DevtoolsRemoteDebugDuoEmulator]: ../../../remote-debugging/surface-duo-emulator.md "Get Started with Remote Debugging Surface Duo emulators | Microsoft Docs"
-[DevtoolsRemoteDebugWindows]: ../../../remote-debugging/windows.md "Get Started with Remote Debugging Windows 10 Devices | Microsoft Docs"
+[DevtoolsRemoteDebugWindows]: ../../../remote-debugging/windows.md "Get Started with Remote Debugging Windows devices | Microsoft Docs"
 
 [PwaIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"
 

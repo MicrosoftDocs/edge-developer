@@ -284,7 +284,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: ../../../evaluate-performance/reference.md#view-main-thread-activity "View main thread activity | Microsoft Docs"
 [DevtoolsJavascriptBreakpointsLineCode]: ../../../javascript/breakpoints.md#line-of-code-breakpoints "Line-of-code breakpoints - How To Pause Your Code With Breakpoints In Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsNetworkReferenceFilterRequestsProperties]: ../../../network/reference.md#filter-requests-by-properties "Filter requests by properties - Network analysis reference | Microsoft Docs"
-[DevtoolsRemoteDebuggingWindows]: ../../../remote-debugging/windows.md "Get Started with Remote Debugging Windows 10 Devices | Microsoft Docs"
+[DevtoolsRemoteDebuggingWindows]: ../../../remote-debugging/windows.md "Get Started with Remote Debugging Windows devices | Microsoft Docs"
 
 [ProgressiveWebAppsChromiumIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"
 
