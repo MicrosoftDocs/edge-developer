@@ -203,9 +203,6 @@
                   href: devtools-guide-chromium/remote-debugging/windows.md
                 - name: Get started with remote debugging Android WebViews
                   href: devtools-guide-chromium/remote-debugging/webviews.md
-# Keyboard shortcuts
-            - name: Keyboard shortcuts
-              href: devtools-guide-chromium/shortcuts/index.md
 # Page resources
             - name: View page resources
               href: devtools-guide-chromium/resources/index.md
@@ -218,6 +215,9 @@
 # DevTools Protocol
             - name: DevTools Protocol
               href: devtools-protocol-chromium/index.md
+# Keyboard shortcuts
+            - name: Keyboard shortcuts
+              href: devtools-guide-chromium/shortcuts/index.md
 # =============================================================================
         - name: Tools
           items:
