@@ -60,11 +60,11 @@ To show the outcome:
 <!-- Title: When adding a custom device to emulate in DevTools, specify user agent client hints more easily -->
 <!-- Subtitle: We've improved keyboard access when navigating to user agent clients from Settings. -->
 
-Starting with [Microsoft Edge version 92](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2021/05/devtools#user-agent-client-hints-for-devices-in-the-network-conditions-tab), you're able to specify User-Agent Client Hints when defining the user agent string in the **Network conditions** tool or when adding a custom device to emulate in **Settings**.
+Starting with [Microsoft Edge version 92](../05/devtools.md#user-agent-client-hints-for-devices-in-the-network-conditions-tab), you can specify User-Agent Client Hints when defining the user agent string in the **Network conditions** tool or when adding a custom device to emulate in **Settings**.
 
 In earlier versions of Microsoft Edge, when adding a custom device to emulate from the **Devices** section of **Settings**, selecting the **User agent client hints** button with the keyboard moved focus to the **Add custom device** button and a new device would be added automatically.
 
-In Microsoft Edge version 95, this issue has been fixed. Selecting the **User agent client hints** button now expands into a form where you can specify client hints for the custom device.
+In Microsoft Edge version 95, this issue has been fixed.  Clicking the **User agent client hints** button now expands into a form where you can specify client hints for the custom device.
 
 To view the history of this feature in the Chromium open-source project, see [Issue 1243827: User agent client hints form accessibility](https://bugs.chromium.org/p/chromium/issues/detail?id=1243827).
 
@@ -79,9 +79,9 @@ Navigate to bing.com.
 Press ‘F12’ or press ‘Ctrl +Shift +I ’to open DevTools.
 Open Settings with the gear icon.
 Navigate to the Devices section of Settings.
-With the keyboard, tab to focus the "Add custom device..." button. Select `Enter`.
+With the keyboard, tab to focus the "Add custom device..." button.  Press `Enter`.
 Provide a device name in the Device Name textbox.
-Tab to User agent client hints button. Select `Enter`.
+Tab to User agent client hints button.  Press `Enter`.
 
 To see the fix:
 Open Edge Beta.
@@ -101,10 +101,9 @@ In earlier versions of Microsoft Edge, there were several problems when trying t
 
 In Microsoft Edge version 95, these problems have been fixed.  Filtering to a label now displays the group label and the individual messages inside of the group.  When the filter doesn't match the group label, the entire group is hidden.
 
-To learn more about the `group()` API for the Console in DevTools, navigate to [Console API reference: group](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/api#group).
+To learn more about the `group()` API for the Console in DevTools, navigate to [Console API reference: group](../../../../devtools-guide-chromium/console/api.md#group).
 
-To view the history of this feature in the Chromium open-source project, see [Issue 363796: ☂ Console filter inappropriately hides grouped content and doesn't hide group titles
-](https://bugs.chromium.org/p/chromium/issues/detail?id=363796).
+To view the history of this feature in the Chromium open-source project, see [Issue 363796: ☂ Console filter inappropriately hides grouped content and doesn't hide group titles](https://bugs.chromium.org/p/chromium/issues/detail?id=363796).
 
 <!-- :::image type="content" source="../../media/2021/10/filename.msft.png" alt-text="Description" lightbox="../../media/2021/10/filename.msft.png"::: -->
 <!-- 
@@ -112,7 +111,7 @@ To view the history of this feature in the Chromium open-source project, see [Is
 2.  Make sure you're on version 94 or earlier.
 3.  Open DevTools against bing.com.
 4.  Navigate to Console.
-5.  Paste the following into the Console and select `Enter`:
+5.  Paste the following into the Console and press `Enter`:
 
     ```javascript
     console.group('My Custom Heading 1');
