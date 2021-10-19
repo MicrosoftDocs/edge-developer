@@ -209,22 +209,19 @@ Ensuring the target function is in scope is tricky if you are running the `debug
 1.  Trigger the breakpoint.
 1.  Run the `debug()` method in the DevTools Console while the code is still paused on your line-of-code breakpoint.
 
-## Related articles
 
-*   [Use the debugger features][DevtoolsJavascriptReference] - Using the UI of the debugger in the **Sources** tool.
-*   [Get started with debugging JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex] - An introductory tutorial using an existing webpage.
-*   [Sources tool overview][DevtoolsSourcesIndex] - The debugger is part of the **Sources** tool, which includes a JavaScript editor.
+<!-- ====================================================================== -->
+## See also
 
-## Getting in touch with the Microsoft Edge DevTools team
+*  [Use the debugger features][DevtoolsJavascriptReference] - Using the UI of the debugger in the **Sources** tool.
+*  [Get started with debugging JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex] - An introductory tutorial using an existing webpage.
+*  [Sources tool overview][DevtoolsSourcesIndex] - The debugger is part of the **Sources** tool, which includes a JavaScript editor.
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsJavascriptReference]: ./reference.md "Use the debugger features | Microsoft Docs"
-
 [DevtoolsJavascriptIndex]: index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"
-
 [DevtoolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"
 
 [MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "Fetch API | MDN"
