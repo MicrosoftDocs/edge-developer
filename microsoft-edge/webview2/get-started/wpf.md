@@ -327,23 +327,20 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
        addressBar
     :::image-end:::
 
-Congratulations, you built your first WebView2 app.
+Congratulations, you built your first WebView2 app!
 
-## Next steps
 
-To continue learning more about WebView2, navigate to the following resources.
+<!-- ====================================================================== -->
+## See also
 
-*   To learn more about building WebView2 applications, navigate to [WebView2 development best practices][WV2BestPractices].
-*   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain] on GitHub.
-*   For more detailed information about WebView2 API, navigate to [API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2).
-*   For more information about  WebView2, navigate to [WebView2 Resources](../index.md#next-steps).
+*  [WebView2 development best practices][WV2BestPractices]
+*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain] - a comprehensive example of WebView2 capabilities.
+*  [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
+*  [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
 
-## Getting in touch with the Microsoft Edge WebView team
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"
 

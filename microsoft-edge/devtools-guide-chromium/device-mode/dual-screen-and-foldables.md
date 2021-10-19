@@ -60,7 +60,8 @@ The **Experimental Web Platform features** \(![ExperimentalApis](../media/experi
 > [!NOTE]
 > The following is a list of current known issues.
 >
-> *   When you use a [Microsoft Remote Desktop client][RemoteDesktopClientDocs] to connect to a remote PC and emulate the [Surface Duo][SurfaceDevicesDuo] or [Samsung Galaxy Fold][SamsungMobileGalaxyFold], the pointer may shake or stutter.  If you run into the issue, [send feedback](#getting-in-touch-with-the-microsoft-edge-devtools-team).
+> *   When you use a [Microsoft Remote Desktop client][RemoteDesktopClientDocs] to connect to a remote PC and emulate the [Surface Duo][SurfaceDevicesDuo] or [Samsung Galaxy Fold][SamsungMobileGalaxyFold], the pointer may shake or stutter.  If you run into the issue, contact the Microsoft Edge DevTools team.
+
 
 ## Additional Resources
 
@@ -69,12 +70,9 @@ Here are additional resources that may help you enhance your website \(or app\) 
 *   For more information about web development on dual-screen devices, navigate to [Dual-screen web experiences][DualScreenWebIndex].
 *   Install the [Surface Duo emulator][DualScreenAndroidUseEmulator].  The Surface Duo emulator is different from the emulator in Microsoft Edge, runs Android, and integrates with [Android Studio][AndroidDeveloperStudio].  For more information, navigate to [Get the Surface Duo SDK][DualScreenAndroidGetDuoSdk].
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools | Microsoft Edge"
 
 [DualScreenWebIndex]: /dual-screen/web/index "Dual-screen web experiences | Microsoft Docs"

@@ -37,31 +37,8 @@ To test your webpages for accessibility, first make a checklist of accessibility
 <!-- ====================================================================== -->
 ## See also
 
-Articles about DevTools:
-*   [Overview of accessibility testing using DevTools][DevtoolsAccessibilityAccessibilitytestingindevtools]
-*   [Navigate Microsoft Edge DevTools with assistive technology][DevtoolsAccessibilityNavigation]
-
-General articles:
-*   [Accessibility overview][DevtoolsAccessibilityOverview]
-*   [Accessibility testing][DevtoolsAccessibilityTest]
-
-External articles:
-*   [Accessibility principles and best practices][MDNAccessibility]
-*   [Screen reader][MDNScreenReader]
-
-
-<!-- ====================================================================== -->
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsAccessibilityOverview]: ../../accessibility/index.md "Accessibility overview | Microsoft Docs"
-[DevtoolsAccessibilityTest]: ../../accessibility/test.md "Resources for accessibility testing | Microsoft Docs"
-[DevtoolsAccessibilityAccessibilitytestingindevtools]: accessibility-testing-in-devtools.md "Overview of accessibility testing using DevTools | Microsoft Docs"
-[DevtoolsAccessibilityNavigation]: ./navigation.md "Navigate Microsoft Edge DevTools with assistive technology | Microsoft Docs"
-<!-- external -->
-[MDNAccessibility]: https://developer.mozilla.org/docs/Web/Accessibility "Accessibility | MDN"
-[MDNScreenReader]: https://developer.mozilla.org/docs/Glossary/Screen_reader "Screen reader | MDN"
+*  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
+*  [Navigate Microsoft Edge DevTools with assistive technology](navigation.md)
+*  [Accessibility testing](../../accessibility/test.md)
+*  [Accessibility principles and best practices](https://developer.mozilla.org/docs/Web/Accessibility)
+*  [Screen reader](https://developer.mozilla.org/docs/Glossary/Screen_reader)
