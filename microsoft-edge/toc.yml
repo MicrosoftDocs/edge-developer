@@ -98,19 +98,19 @@
                 - name: Accessibility-testing features in DevTools
                   href: devtools-guide-chromium/accessibility/reference.md
                 - name: Overview of accessibility testing using DevTools
-                  href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md # multiple times
+                  href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md
                 - name: Navigate DevTools with assistive technology
                   href: devtools-guide-chromium/accessibility/navigation.md
 # Accessibility - Alt-text for images
                 - name: Alt-text for images
                   items:
                     - name: Automatically test a webpage for accessibility issues
-                      href: devtools-guide-chromium/accessibility/test-issues-tool.md # multiple times
+                      href: devtools-guide-chromium/accessibility/test-issues-tool.md # multiple times in TOC
 # Accessibility - Keyboard support
                 - name: Keyboard support
                   items:
                     - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage
-                      href: devtools-guide-chromium/accessibility/test-inspect-tool.md # multiple times
+                      href: devtools-guide-chromium/accessibility/test-inspect-tool.md # multiple times in TOC
                     - name: Check for keyboard support by using the Tab and Enter keys
                       href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
                     - name: Analyze the lack of indication of keyboard focus in a sidebar menu
@@ -123,11 +123,11 @@
                 - name: Text contrast
                   items:
                     - name: Automatically test a webpage for accessibility issues
-                      href: devtools-guide-chromium/accessibility/test-issues-tool.md # multiple times
+                      href: devtools-guide-chromium/accessibility/test-issues-tool.md # multiple times in TOC
                     - name: Test text-color contrast using the Color Picker
                       href: devtools-guide-chromium/accessibility/color-picker.md
                     - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage
-                      href: devtools-guide-chromium/accessibility/test-inspect-tool.md # multiple times
+                      href: devtools-guide-chromium/accessibility/test-inspect-tool.md # multiple times in TOC
                     - name: Verify accessibility of all states of elements
                       href: devtools-guide-chromium/accessibility/test-inspect-states.md
                     - name: Check for contrast issues with dark theme and light theme
@@ -136,9 +136,9 @@
                 - name: Screen reader support
                   items:
                     - name: Automatically test a webpage for accessibility issues
-                      href: devtools-guide-chromium/accessibility/test-issues-tool.md # multiple times
+                      href: devtools-guide-chromium/accessibility/test-issues-tool.md # multiple times in TOC
                     - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage
-                      href: devtools-guide-chromium/accessibility/test-inspect-tool.md # multiple times
+                      href: devtools-guide-chromium/accessibility/test-inspect-tool.md # multiple times in TOC
                     - name: Check the Accessibility Tree for keyboard and screen reader support
                       href: devtools-guide-chromium/accessibility/test-accessibility-tree.md
                     - name: Test accessibility using the Accessibility tab
@@ -155,10 +155,8 @@
 # Accessibility - Usable when narrow
                 - name: Usable when narrow
                   items:
-                    - name: Overview of accessibility testing using DevTools
-                      href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md # multiple times
-                    - name: Emulation overview
-                      href: devtools-guide-chromium/device-mode/index.md # multiple times
+                    - name: Verify that the webpage layout is usable when narrow
+                      href: devtools-guide-chromium/accessibility/narrow.md
 # Accessibility - misc.
                 - name: Test accessibility using Lighthouse
                   href: devtools-guide-chromium/accessibility/lighthouse.md
@@ -168,7 +166,7 @@
             - name: Device testing and emulation
               items:
                 - name: Emulation overview
-                  href: devtools-guide-chromium/device-mode/index.md # multiple times
+                  href: devtools-guide-chromium/device-mode/index.md
                 - name: Emulate dual-screen and foldable devices
                   href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
                 - name: Emulate and test other browsers
