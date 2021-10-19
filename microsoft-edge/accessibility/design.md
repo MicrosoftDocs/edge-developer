@@ -17,7 +17,7 @@ Creating an inclusive design makes technology usable by all people no matter the
 <!-- ====================================================================== -->
 ## Screen readers
 
-Users who are blind or visually impaired rely on screen readers to interpret and interact with the UI of your app.  Interpreting involves reading the UI element names, roles, and values.  Interacting with the UI involves moving the focus from one element to another and invoking functionality such as clicking an element.
+Users who are blind or who have low vision rely on screen readers to interpret and interact with the UI of your app.  Interpreting involves reading the UI element names, roles, and values.  Interacting with the UI involves moving the focus from one element to another and invoking functionality such as clicking an element.
 
 
 <!-- ====================================================================== -->
@@ -37,7 +37,7 @@ Many accessibility users rely on the keyboard to navigate and operate the UI by:
 <!-- ====================================================================== -->
 ## Accessible visual experience
 
-Users who are visually impaired need a sufficient text contrast ratio for text content, and a good visual experience with high contrast themes overall.  Users who are color blind need information to be conveyed in ways other than through color.
+Users who have low vision need a sufficient text contrast ratio for text content, and a good visual experience with high contrast themes overall.  Users who are color blind need information to be conveyed in ways other than through color.
 
 Many common accessibility issues on the web can be solved through good coding practice.  The [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20) documentation provides techniques and best practices to help you design more accessible dynamic web applications.  For more information, go to [Resources about building accessible websites](./build/index.md).
 

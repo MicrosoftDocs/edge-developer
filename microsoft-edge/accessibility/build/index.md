@@ -22,7 +22,7 @@ Visit [HTML5Accessibility](https://html5accessibility.com) for information on wh
 <!-- ====================================================================== -->
 ## How accessibility works
 
-Assistive technologies add capabilities that computers don't usually have.  For example, a visually impaired user might use their keyboard in combination with assistive technology such as a screen reader, rather than directly using the browser with the mouse and screen.  
+Assistive technologies add capabilities that computers don't usually have.  For example, a user who has low vision might use their keyboard in combination with assistive technology such as a screen reader, rather than directly using the browser with the mouse and screen.  
 
 For applications on Microsoft platforms and on the web, the assistive technology interacts with any combination of:
 *  Microsoft [UI Automation](/windows/win32/winauto/uiauto-specandcommunitypromise).
