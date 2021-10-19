@@ -17,7 +17,7 @@ Creating an inclusive design makes technology usable by all people no matter the
 <!-- ====================================================================== -->
 ## Screen readers
 
-Users who are blind or visually impaired rely on screen readers to interpret and interact with the UI of your app.  Interpreting involves reading the UI element names, roles, values, and so on, and interacting with the UI involves moving the focus from one element to another and invoking functionality.
+Users who are blind or visually impaired rely on screen readers to interpret and interact with the UI of your app.  Interpreting involves reading the UI element names, roles, and values.  Interacting with the UI involves moving the focus from one element to another and invoking functionality such as clicking an element.
 
 
 <!-- ====================================================================== -->

@@ -38,7 +38,7 @@ The [Core Accessibility API Mappings](https://w3.org/TR/core-aam-1.1/) specifica
 <!-- ====================================================================== -->
 ## Computing descriptions of accessible objects given the HTML and ARIA elements
 
-The [Accessible Name and Description: Computation and API Mappings](https://w3.org/TR/accname-aam-1.1/) specification defines how to compute the name and description of accessible objects given the HTML and the ARIA elements and attributes values available for the accessible elements.
+The [Accessible Name and Description: Computation and API Mappings](https://w3.org/TR/accname-aam-1.1/) specification defines how to compute the name and description of accessible objects, given the HTML and given the ARIA elements and attribute values that are available for the accessible elements.
 * [Working draft](https://w3.org/TR/accname-aam-1.1/) - stable version of the specification.
 * [Editor's draft](https://w3c.github.io/accname/) - work in progress.  Note that while this spec has the latest changes, the changes may not be available in Microsoft Edge yet.
 
