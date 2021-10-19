@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 When you install Microsoft Edge, you not only get a browser, you also get Developer Tools, providing a powerful way to inspect, debug, and even create web projects.  The Developer Tools shipped with the browser are partly based on the tools in the Chromium open-source project, so you might already be familiar with some of these tools.  The Microsoft Edge Developer Tools are also called `Microsoft Edge DevTools`, or simply `DevTools`.
 
-With DevTools, you can:
+With DevTools, you can do the following:
 *   Inspect and change the current webpage] live in the browser.
 *   Emulate how your product behaves on different devices and simulate a mobile environment, complete with different network conditions.
 *   Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.
@@ -28,15 +28,15 @@ With DevTools, you can:
 <!-- ====================================================================== -->
 ## Opening DevTools
 
-To open DevTools, do any of the following:
+To open DevTools, right-click any item on a webpage and then click **Inspect**.
 
-*   Hover on any element on the webpage, open the context menu (right-click), and then select **Inspect**.  DevTools opens, with the **Elements** tool selected.
-*   Select `F12`.
-*   Select `Ctrl`+`Shift`+`I` on Windows/Linux or `Command`+`Option`+`I` on macOS.
+*  Or, press `F12`, or press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
 
-:::image type="content" source="./media/devtools-intro-inspect.msft.png" alt-text="Select Inspect from the context menu on any element.":::
+DevTools opens, with the **Elements** tool selected.
 
-:::image type="content" source="./media/devtools-intro-inspect-devtools-open.png" alt-text="DevTools opens with the chosen element highlighted.":::
+:::image type="content" source="./media/devtools-intro-inspect.msft.png" alt-text="To open DevTools, right-click any item on a webpage and then click Inspect.":::
+
+:::image type="content" source="./media/devtools-intro-inspect-devtools-open.png" alt-text="DevTools opens, with the right-clicked element highlighted in the Elements tool.":::
 
 There are two main ways to interact with DevTools.
 *   Use the mouse.
@@ -46,9 +46,9 @@ See also [Open Microsoft Edge DevTools][DevtoolsGuideOpenIndex] - how to open th
 
 
 <!-- ====================================================================== -->
-## Tools in DevTools
-
-Tools are also called panels.  Most tools have a tab on the toolbar.
+<!-- ## Tools in DevTools -->
+<!-- pending PR 1504, which adds destination articles -->
+<!-- Tools are also called panels.  Most tools have a tab on the toolbar.
 
 | Tool | Purpose | Article |
 |---|---|---|
@@ -81,7 +81,7 @@ Tools are also called panels.  Most tools have a tab on the toolbar.
 | Sensors |  |  |
 | WebAudio |  |  |
 | WebAuthn |  |  |
-| Inspect |  |  |
+| Inspect |  |  | -->
  
 
 <!-- ====================================================================== -->
@@ -99,7 +99,7 @@ To change where DevTools is placed within the browser window:
 
 :::image type="content" source="media/devtools-intro-docking-right.msft.png" alt-text="Screenshot of DevTools docked to the right.":::
 
-**Dock to left** is an another side-by-side option:
+**Dock to left** is another side-by-side option:
 
 :::image type="content" source="media/devtools-intro-docking-left.msft.png" alt-text="Screenshot of DevTools docked to the left.":::
 
@@ -177,12 +177,12 @@ The main toolbar in DevTools has the following sections:
 
 DevTools provides lots of features and functionality to use with your web product.  You can access the different parts of DevTools in many ways, but often a fast way is to use the command menu.
 
-In the command menu, the tools are called "panels"; for example, the **Elements** tool is called the **Elements** panel.  To switch to the the **Elements** tool, you select the **Elements** tab.
+In the command menu, the tools are called "panels"; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you select the **Elements** tab.
 
 To open the command menu, do any of the following:
 
-*   Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
-*   Select **Customize And Control DevTools** (`...`), and then select **Run Command**.
+*   Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
+*   Click **Customize and control DevTools** (`...`), and then select **Run command**.
 
 :::image type="content" source="./media/devtools-intro-command-menu.msft.png" alt-text="Screenshot of the command menu in DevTools.":::
 
