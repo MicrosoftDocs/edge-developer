@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, UWP, Microsoft Store
 ---
 # Overview of Progressive Web Apps (PWAs)
 
-<!-- special handling for this .md file: uses 2 trailing spaces for card layout; preserve trailing spaces -->
+<!-- preserve trailing spaces -->
 
 **[Progressive Web Apps][MDNApps]** (PWAs) provide access to open web technologies for cross-platform interoperability and provide your users with an app-like experience customized for their devices.
 
@@ -82,6 +82,8 @@ Similar table: [Introduction to Microsoft Edge WebView2](..\webview2\index.md#we
     :::column:::
     :::column-end:::
 :::row-end:::
+
+<!-- In the above table, keep two trailing spaces after each image line and after each heading line, to keep card elements tight but not concatenated. -->
 
 
 <!-- ====================================================================== -->

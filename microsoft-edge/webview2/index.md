@@ -11,7 +11,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 ---
 # Introduction to Microsoft Edge WebView2
 
-<!-- special handling for this .md file: uses 2 trailing spaces for card layout; preserve trailing spaces -->
+<!-- preserve trailing spaces -->
 
 The Microsoft Edge WebView2 control allows you to embed web technologies \(HTML, CSS, and JavaScript\) in your native apps.  The WebView2 control uses [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native apps.  With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView instance.  For information on how to start building a WebView2 app, navigate to [Get Started](#get-started).
 
@@ -93,6 +93,8 @@ Similar table: [Overview of Progressive Web Apps (PWAs)](..\progressive-web-apps
         Add web components piece-by-piece to your app.
     :::column-end:::
 :::row-end:::
+
+<!-- In the above table, keep two trailing spaces after each image line and after each heading line, to keep card elements tight but not concatenated. -->
 
 
 <!-- ====================================================================== -->
