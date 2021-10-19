@@ -141,7 +141,7 @@
                   href: devtools-guide-chromium/customize/placement.md
                 - name: Match browser language
                   href: devtools-guide-chromium/customize/localization.md
-                - name: Customize shortcuts
+                - name: Customize keyboard shortcuts
                   href: devtools-guide-chromium/customize/shortcuts.md
             - name: Device testing and emulation
               items:

@@ -28,6 +28,9 @@ This article is a reference of keyboard shortcuts in Microsoft Edge DevTools.
 You may also find shortcuts in tooltips.  Hover on a UI element of DevTools
 to display the tooltip.  If the element has a shortcut, the tooltip includes it.
 
+See also [Customize keyboard shortcuts in DevTools](../customize/shortcuts.md).
+
+
 ## Keyboard shortcuts for opening DevTools
 
 To open DevTools, select the following keyboard shortcuts while your cursor is focused on the browser viewport.
