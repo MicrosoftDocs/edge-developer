@@ -1,5 +1,5 @@
 ---
-description: Progressive Web Apps run on Windows 10. Here is everything you need to know as a web developer.
+description: Progressive Web Apps run natively on Windows 10 or later.  Here is everything you need to know as a web developer.
 title: Overview of Progressive Web Apps (PWAs)
 author: MSEdgeTeam
 ms.author: msedgedevrel

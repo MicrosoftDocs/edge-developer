@@ -1013,6 +1013,16 @@
         "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests",
         "redirect_document_id": false
       },
+      {
+        "source_path": "microsoft-edge/progressive-web-apps-chromium/get-started.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/progressive-web-apps-chromium/experimental-features/index.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/origin-trials",
+        "redirect_document_id": false
+      },
       /* redirect to visual studio code */
       {
         "source_path": "microsoft-edge/visual-studio-code/elements-for-edge.md",

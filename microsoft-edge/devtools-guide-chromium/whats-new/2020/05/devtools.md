@@ -100,7 +100,7 @@ Chromium issue [#1076112][CR1076112]
 
 ### Screencasting navigation buttons display focus
 
-When remote debugging an [Android device][DevtoolsRemoteDebugAndroid], a [Windows 10 device][DevtoolsRemoteDebugWindows], or a [Surface Duo emulator][DevtoolsRemoteDebugDuoEmulator], you are able to toggle screencasting with the ![Toggle Screencast](../../../media/toggle-screencast-icon.msft.png) icon in the top-left corner of the DevTools.  With screencasting enabled, you are able to navigate the tab in Microsoft Edge on the remote device from the DevTools window.  In Microsoft Edge 84, these navigation buttons are now also keyboard accessible.
+When remote debugging an [Android device][DevtoolsRemoteDebugAndroid], a [Windows 10 or later device][DevtoolsRemoteDebugWindows], or a [Surface Duo emulator][DevtoolsRemoteDebugDuoEmulator], you are able to toggle screencasting with the ![Toggle Screencast](../../../media/toggle-screencast-icon.msft.png) icon in the top-left corner of the DevTools.  With screencasting enabled, you are able to navigate the tab in Microsoft Edge on the remote device from the DevTools window.  In Microsoft Edge 84, these navigation buttons are now also keyboard accessible.
 
 :::image type="complex" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="Select Shift+Tab from the screencasted URL bar shows focus on the Refresh button" lightbox="../../media/2020/05/screencasting-nav.msft.png":::
    Select `Shift`+`Tab` from the screencasted URL bar shows focus on the **Refresh** button
@@ -284,7 +284,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsNetworkLog]: ../../../network/index.md#log-network-activity "Log network activity | Microsoft Docs"
 [DevtoolsRemoteDebugAndroid]: ../../../remote-debugging/index.md "Get Started with Remote Debugging Android Devices | Microsoft Docs"
 [DevtoolsRemoteDebugDuoEmulator]: ../../../remote-debugging/surface-duo-emulator.md "Get Started with Remote Debugging Surface Duo emulators | Microsoft Docs"
-[DevtoolsRemoteDebugWindows]: ../../../remote-debugging/windows.md "Get Started with Remote Debugging Windows 10 Devices | Microsoft Docs"
+[DevtoolsRemoteDebugWindows]: ../../../remote-debugging/windows.md "Get Started with Remote Debugging Windows devices | Microsoft Docs"
 
 [PwaIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"
 

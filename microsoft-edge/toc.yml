@@ -71,7 +71,7 @@
                   href: devtools-guide-chromium/remote-debugging/index.md
                 - name: Get started with remote debugging with Surface Duo emulators
                   href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
-                - name: Get started with remote debugging Windows 10 devices
+                - name: Get started with remote debugging Windows devices
                   href: devtools-guide-chromium/remote-debugging/windows.md
                 - name: Get started with remote debugging Android WebViews
                   href: devtools-guide-chromium/remote-debugging/webviews.md
