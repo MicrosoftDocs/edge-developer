@@ -533,6 +533,8 @@
           href: web-platform/user-agent-guidance.md
         - name: Customize the password reveal button
           href: web-platform/password-reveal.md
+        - name: Detecting Windows 11 using User-Agent Client Hints
+          href: web-platform/how-to-detect-win11.md
 # =============================================================================
     - name: Microsoft Edge IDE integration
       items:
