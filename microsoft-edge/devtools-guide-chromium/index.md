@@ -196,7 +196,7 @@ DevTools with the **Changes** tool open:
 
 :::image type="content" source="./media/devtools-intro-showing-changes.msft.png" alt-text="DevTools with the Changes tool open.":::
 
-See also [Run commands with the Microsoft Edge DevTools Command menu][DevtoolsGuideCommandMenuIndex].
+See also [Run commands with the Microsoft Edge DevTools Command menu](command-menu/index.md).
 
 
 <!-- ====================================================================== -->
@@ -226,19 +226,13 @@ You can also change the settings of advanced features, such as:
 
 The DevTools team provides new features as _experiments_ in DevTools.  You can turn each of the experiments on or off.  To see the full list of [Experimental features][DevtoolsGuideExperimentalFeaturesIndex], in DevTools, select **Settings** (the gear icon), and then select **Experiments**.
 
-
-<!-- ====================================================================== -->
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]
-
 To preview the [latest features coming to DevTools][DevtoolsGuideWhatsNew202102Devtools], download [Microsoft Edge Canary][MicrosoftedgeinsiderDownload], which builds nightly.
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*   [DevTools for beginners: Get Started with HTML and the DOM][DevtoolsGuideBeginnersHtml]
+*   [DevTools for beginners: Get Started with HTML and the DOM](beginners/html.md)
 *   [Inspect and change the current webpage][DevtoolsGuideDomIndex]
 *   [Emulate how your product behaves on different devices][DevtoolsGuideDeviceModeIndex]
 *   [Inspect, tweak, and change the styles of elements][DevtoolsGuideInspectStylesEditFonts]
@@ -257,8 +251,6 @@ To preview the [latest features coming to DevTools][DevtoolsGuideWhatsNew202102D
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsGuideBeginnersHtml]: ./beginners/html.md "DevTools for beginners: Get started with HTML and the DOM | Microsoft Docs"
-[DevtoolsGuideCommandMenuIndex]: ./command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"
 [DevtoolsGuideConsoleIndex]: ./console/index.md "Console overview | Microsoft Docs"
 [DevtoolsGuideCustomizePlacement]: ./customize/placement.md "Change DevTools placement (Undock, Dock To bottom, Dock To left) | Microsoft Docs"
 [DevtoolsGuideDeviceModeIndex]: ./device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
@@ -280,7 +272,5 @@ To preview the [latest features coming to DevTools][DevtoolsGuideWhatsNew202102D
 [DevtoolsGuideWorkspacesIndex]: ./workspaces/index.md "Edit files with Workspaces | Microsoft Docs"
 <!-- external links -->
 [MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge Add-ons"
-
 [MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
-
 [GoogleChromeWebstoreExtensions]: https://chrome.google.com/webstore/category/extensions "Extensions | Chrome Web Store"

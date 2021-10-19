@@ -38,14 +38,10 @@ If you are building a UI that changes depending on where the user is located, yo
 
     :::image type="content" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="Screenshot of selecting Tokyo from the Geolocation list.":::
 
-## Getting in touch with the Microsoft Edge DevTools team
+<!-- /web/fundamentals/native-hardware/user-location/index -->
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
-<!-- links -->
-
-<!--[WebFundamentalsNativeHardwareUserLocationIndex]: /web/fundamentals/native-hardware/user-location/index "User Location"  -->
-
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/geolocation) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).

@@ -172,14 +172,9 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 > [!Note]
 > To customize any of the keys individually, use the [AcceleratorKeyPressed][DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444] event.
 
-## Getting in touch with the Microsoft Edge WebView2 team
 
-[!INCLUDE [contact WebView2 team note](../includes/contact-webview-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
-<!--[Webview2ReferenceDownloadApi]: ./download-api.md "download API | Microsoft Docs"  -->
-
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true "CoreWebView2Controller.AcceleratorKeyPressed Event | Microsoft Docs"
 
 [DevtoolsShortcutsIndex]: ../../devtools-guide-chromium/shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
@@ -187,3 +182,5 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 [GithubMicrosoftedgeWebview2feedbackIssues308]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/308 "Add support for HTML5 Notification API (#308) | GitHub"
 
 [PeterExperimentsChromiumCommandLineSwitches]: https://peter.sh/experiments/chromium-command-line-switches "List of Chromium Command Line Switches | Peter Beverloo"
+
+<!-- [Webview2ReferenceDownloadApi]: ./download-api.md "download API | Microsoft Docs" -->
