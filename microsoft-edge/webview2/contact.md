@@ -29,7 +29,7 @@ To enter a GitHub issue from within a documentation article, in the **Feedback**
 <!-- ====================================================================== -->
 ## Subscribe to the WebView2Announcements repo
 
-To get the latest news, API proposals, and SDK Release announcements, subscribe to the [WebView2Announcements][WebView2AnnouncementsRepo] repo.  
+To get the latest news, API proposals, and SDK Release announcements, subscribe to the [WebView2Announcements][WebView2AnnouncementsRepo] repo.
 
 
 <!-- ====================================================================== -->

@@ -134,7 +134,7 @@ Once you've completed these initial steps to either launch an app or attach to a
 ## Step 4a: Letting Microsoft Edge Driver launch your WebView2 app
 <!-- old title: Drive WebView2 with Selenium and Microsoft Edge Driver -->
 
-Use this "launch" approach if you have a simple app that creates a single WebView2 instance and that instance is active immediately upon launch.  In this scenario, there's one WebView2 instance, and it is available upon launch without needing to navigate through any native UI.  
+Use this "launch" approach if you have a simple app that creates a single WebView2 instance and that instance is active immediately upon launch.  In this scenario, there's one WebView2 instance, and it is available upon launch without needing to navigate through any native UI.
 
 To drive WebView2 with Selenium and Microsoft Edge Driver:
 
@@ -204,7 +204,7 @@ Microsoft Edge Driver doesn't handle native UI automation, but here are some oth
 
 * Use a flag such as a command-line parameter or an environment variable to tell your app to launch directly to the WebView2 instance, to avoid the need for navigating native UI.  Depending on your scenario, this might make it possible to use the "launch" approach described in [Step 4a: Letting Microsoft Edge Driver launch your WebView2 app](#step-4a-letting-microsoft-edge-driver-launch-your-webview2-app).  <!-- create a special test mode that displays __. -->
 
-In addition to ensuring the WebView2 instance is activated, you need to set its `--remote-debugging-port` command-line parameter.  We'll do this in the steps below.  Microsoft Edge Driver will use this remote debugging port to connect to your WebView2 instance.  
+In addition to ensuring the WebView2 instance is activated, you need to set its `--remote-debugging-port` command-line parameter.  We'll do this in the steps below.  Microsoft Edge Driver will use this remote debugging port to connect to your WebView2 instance.
 
 ### Launching the WebView2 app with remote debugging enabled
 
