@@ -138,6 +138,23 @@ To view the history of this feature in the Chromium open-source project, see [Is
 todo: Check attachments for a GIF of the bug. -->
 
 
+
+
+<!--
+Chrome What's New items to add:
+
+New CSS length authoring tools
+
+Improved the display of properties
+
+Sort snippets in the Sources panel
+
+Improved UI for DevTools command menu
+
+
+
+-->
+
 <!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
