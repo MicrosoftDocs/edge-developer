@@ -26,7 +26,7 @@ To provide feedback, in Visual Studio Code, in the **Activity Bar**, click **Mic
 
 For more information, see [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#syncing-live-changes-from-the-styles-tool-by-using-css-mirror-editing).
 
-:::image type="content" source="../../media/2021/10/css-mirroring.gif" alt-text="Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code." lightbox="../../media/2021/10/css-mirroring.gif":::
+<!-- :::image type="content" source="../../media/2021/10/css-mirroring.gif" alt-text="Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code." lightbox="../../media/2021/10/css-mirroring.gif"::: -->
 
 
 <!-- ====================================================================== -->
