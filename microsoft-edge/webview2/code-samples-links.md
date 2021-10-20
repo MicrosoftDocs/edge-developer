@@ -11,41 +11,27 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, source code, sample co
 ---
 # WebView2 sample code
 
-This article provides descriptions and links for the [WebView2 Samples repo](https://github.com/MicrosoftEdge/WebView2Samples). These samples are covered in the WebView2 "Get started" guides.
+Many WebView2 samples are available, in the [WebView2 Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
 
 
 <!-- ====================================================================== -->
-## Get started guides sample code
+## Sample code for Get Started guides
 
 The WebView2 "Get started" guides use starter code for Win32, Windows Presentation Foundation (WPF), WinForms, and WinUI.
 
-### Create a WebView in a Win32 application
-
-Read [Get started with WebView2 in Win32 apps](./get-started/win32.md) and use the starter code at [WebView2 Samples Win32 Getting Started (github.com)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted).
-
-### Set up a WebView in a WPF application
-
-See [Get started with WebView2 in WPF apps](./get-started/wpf.md) to use the .NET starter code at [WebView2 Samples WPF Getting Started (github.com)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WPF_GettingStarted).
-
-### Create a WebView in a WinForms application
-
-Read [Get started with WebView2 in WinForms apps](./get-started/winforms.md) and use the .NET starter code at [WebView2 Samples WinForms Getting Started (github.com)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted).
-
-### Set up a WebView in a WinUI 3 application
-
-Read [Get started with WebView2 in WinUI 3 (Windows App SDK)](./get-started/winui.md) and use the starter code at [WebView2 Samples WinUI Getting Started (github.com)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinUI3_GettingStarted).
-
-### Create a WebView2 in WinUI 2 application
-
-See the [Get started with WebView2 in WinUI 2 apps guide](./get-started/winui2.md) that uses the WinUI 2 NuGet package, and has no sample code.
+| Task | Article | Code |
+|---|---|---|
+| Create a WebView2 in a Win32 application | [Get started with WebView2 in Win32 apps](./get-started/win32.md) | Starter code at [WebView2 Samples Win32 Getting Started (github.com)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted) |
+| Set up a WebView2 in a WPF application | [Get started with WebView2 in WPF apps](./get-started/wpf.md) | .NET starter code at [WebView2 Samples WPF Getting Started (github.com)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WPF_GettingStarted) |
+| Create a WebView2 in a WinForms application | [Get started with WebView2 in WinForms apps](./get-started/winforms.md) | .NET starter code at [WebView2 Samples WinForms Getting Started (github.com)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted) |
+| Set up a WebView2 in a WinUI 3 application | [Get started with WebView2 in WinUI 3 (Windows App SDK)](./get-started/winui.md) | Starter code at [WebView2 Samples WinUI Getting Started (github.com)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinUI3_GettingStarted) |
+| Create a WebView2 in WinUI 2 application | [Get started with WebView2 in WinUI 2 apps guide](./get-started/winui2.md) | Uses the WinUI 2 NuGet package.  Has no sample code. |
 
 
 <!-- ====================================================================== -->
-## WebView2 sample apps code
+## WebView2 sample apps
 
-WebView2 sample apps include solutions for Win32, WPF, WinForms, and WinUI.
-
-The Microsoft Visual Studio solution file [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln) is a collection that uses the following samples.
+WebView2 sample apps include solutions for Win32, WPF, WinForms, and WinUI.  The Microsoft Visual Studio solution file [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln) gathers the following samples.
 
 ### Win32 C++ samples
 
@@ -55,9 +41,9 @@ Includes the code in [WebView2APISample](https://github.com/MicrosoftEdge/WebVie
 
 Uses code in the [WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser) folder. The .NET Windows Forms Sample is in the [WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WindowsFormsBrowser) folder.
 
-### UWP / WinUI samples
+### UWP/WinUI samples
 
-Are available from the [WinUI Controls Gallery](https://github.com/microsoft/Xaml-Controls-Gallery/tree/winui3preview).
+UWP/WinUI samples are available from the [WinUI Controls Gallery](https://github.com/microsoft/Xaml-Controls-Gallery/tree/winui3preview).
 
 ### Deploy the evergreen WebView2 Runtime
 
