@@ -12,7 +12,7 @@ no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Paymen
 ---
 # Feature differences between Microsoft Edge and WebView2
 
-WebView2 is based on the new Microsoft Edge browser.  You have the opportunity to extend features from the browser to WebView2-based apps, which is useful.  However, since WebView2 isn't limited to browser-like apps, there are some browser features that need to be modified or removed.  This article provides the following information.
+WebView2 is based on the Microsoft Edge browser.  You have the opportunity to extend features from the browser to WebView2-based apps, which is useful.  However, since WebView2 isn't limited to browser-like apps, there are some browser features that need to be modified or removed.  This article provides the following information.
 
 *   The modified browser features and supporting information.
 *   The ability to turn on or off the feature.

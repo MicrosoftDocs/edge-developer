@@ -145,7 +145,8 @@ IndexedDB keys and values are not editable from the **Application** tool.  Since
 
 <!-- ====================================================================== -->
 <!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"
+
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge  Developer tools | Microsoft Docs"
 [DevtoolsJavascriptSnippets]: ../javascript/snippets.md "Run snippets of JavaScript on any page with Microsoft Edge DevTools | Microsoft Docs"
 <!-- external links -->
 [ChromiumIssue943770]: https://crbug.com/943770 "943770 - DevTools: Show iframe IndexedDB databases - chromium - Monorail"

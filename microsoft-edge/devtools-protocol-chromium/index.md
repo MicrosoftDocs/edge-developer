@@ -12,9 +12,9 @@ ms.prod: microsoft-edge
 Use the DevTools Protocol to instrument, inspect, debug, and profile browsers including Microsoft Edge.  The Microsoft Edge DevTools Protocol matches the APIs of the Chrome DevTools Protocol.  For reference documentation, navigate to [Chrome DevTools Protocol Viewer](https://chromedevtools.github.io/devtools-protocol/tot).
 
 > [!NOTE]
-> With the shift in the underlying web platform of Microsoft Edge to Chromium, the [Microsoft Edge (EdgeHTML) DevTools Protocol](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) will not be receiving any further updates.  The Microsoft Edge \(Chromium\) DevTools Protocol will match the APIs of the Chrome DevTools Protocol going forward.
+> With the shift in the underlying web platform of Microsoft Edge to Chromium, the [Microsoft Edge (EdgeHTML) DevTools Protocol](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) will not be receiving any further updates.  The Microsoft Edge DevTools Protocol will match the APIs of the Chrome DevTools Protocol going forward.
 >
-> Any methods that were prefixed with `ms` in the [Microsoft Edge (EdgeHTML) DevTools Protocol](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) are no longer supported in the Microsoft Edge \(Chromium\) DevTools Protocol.
+> Any methods that were prefixed with `ms` in the [Microsoft Edge (EdgeHTML) DevTools Protocol](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) are no longer supported in the Microsoft Edge DevTools Protocol.
 
 
 <!-- ====================================================================== -->
@@ -30,7 +30,7 @@ To attach a custom tooling client to the DevTools Server in Microsoft Edge:
     msedge.exe --remote-debugging-port=9222
     ```
 
-1.  Optionally, you can start a separate instance of Edge using a distinct user profile.
+1.  Optionally, you can start a separate instance of Microsoft Edge using a distinct user profile.
 
     ```shell
     msedge.exe --user-data-dir=<some directory>

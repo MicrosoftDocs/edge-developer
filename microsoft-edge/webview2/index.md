@@ -11,9 +11,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 ---
 # Introduction to Microsoft Edge WebView2
 
-<!-- preserve trailing spaces -->
-
-The Microsoft Edge WebView2 control allows you to embed web technologies \(HTML, CSS, and JavaScript\) in your native apps.  The WebView2 control uses [Microsoft Edge (Chromium)][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native apps.  With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView instance.  For information on how to start building a WebView2 app, navigate to [Get Started](#get-started).
+The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps.  The WebView2 control uses [Microsoft Edge][MicrosoftedgeinsiderMain] as the rendering engine to display the web content in native apps.  With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView instance.  For information on how to start building a WebView2 app, navigate to [Get Started](#get-started).
 
 :::image type="complex" source="./media/WebView2/what-webview.png" alt-text="What is WebView?" lightbox="./media/WebView2/what-webview.png":::
    What is WebView?
@@ -100,7 +98,7 @@ Similar table: [Overview of Progressive Web Apps (PWAs)](..\progressive-web-apps
 <!-- ====================================================================== -->
 ## Get started
 
-To build and test your app using the WebView2 control, you need to have <!--both [Microsoft Edge (Chromium)][MicrosoftedgeinsiderDownload] and -->the [WebView2 SDK][NugetPackagesMicrosoftWebWebView2] installed.  Select one of the following options to get started.
+To build and test your app using the WebView2 control, you need to have <!--both [Microsoft Edge][MicrosoftedgeinsiderDownload] and -->the [WebView2 SDK][NugetPackagesMicrosoftWebWebView2] installed.  Select one of the following options to get started.
 
 *   [Get started with WebView2 in Win32 apps][Webview2GetStartedWin32]
 *   [Get started with WebView2 in WPF apps][Webview2GetStartedWpf]

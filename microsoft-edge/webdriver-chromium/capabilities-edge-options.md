@@ -1,5 +1,5 @@
 ---
-description: A reference for WebDriver capabilities and Microsoft Edge-specific options supported by EdgeDriver (Chromium).
+description: A reference for WebDriver capabilities and Microsoft Edge-specific options supported by EdgeDriver.
 title: Capabilities and EdgeOptions
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -11,8 +11,7 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 ---
 # Capabilities and EdgeOptions
 
-Capabilities are options that you can use to customize and configure an `EdgeDriver` session.  To learn about starting a new `EdgeDriver` session, navigate to [Automating Microsoft Edge][WebdriverIndexAutomateMicrosoftEdgeChromium].  This article describes all supported capabilities for Microsoft Edge and provides details about passing the capabilities to `EdgeDriver` sessions.
-
+Capabilities are options that you can use to customize and configure an `EdgeDriver` session.  To learn about starting a new `EdgeDriver` session, navigate to [Automating Microsoft Edge][WebdriverIndexAutomateMicrosoftEdge].  This article describes all supported capabilities for Microsoft Edge and provides details about passing the capabilities to `EdgeDriver` sessions.
 
 Capabilities are passed to a WebDriver session as a JSON map.  A WebDriver testing framework provides a WebDriver language binding.  WebDriver language bindings typically provide type-safe convenience methods so you don't need to configure the JSON map yourself.  Different WebDriver language bindings use different mechanisms to configure capabilities.  [Selenium][SeleniumMain] configures capabilities through the `EdgeOptions` class.
 
@@ -85,7 +84,7 @@ The following list contains all of the Microsoft Edge-specific capabilities that
 <!-- links -->
 [DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Get started with Remote Debugging Windows devices | Microsoft Docs"
 [WebdriverIndexChooseAWebdriverTestingFramework]: ./index.md#choose-a-webdriver-testing-framework "Choose a WebDriver testing framework - Use WebDriver (Chromium) for test automation | Microsoft Docs"
-[WebdriverIndexAutomateMicrosoftEdgeChromium]: ./index.md#automate-microsoft-edge-chromium "Automate Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"
+[WebdriverIndexAutomateMicrosoftEdge]: ./index.md#automate-microsoft-edge "Automate Microsoft Edge - WebDriver (Chromium) | Microsoft Docs"
 <!-- external links -->
 [SeleniumMain]: https://www.selenium.dev "SeleniumHQ Browser Automation"
 [SharedCapabilitiesSeleniumDocumentation]: https://www.selenium.dev/documentation/en/driver_idiosyncrasies/shared_capabilities/ "Shared capabilities | Selenium Documentation"

@@ -23,7 +23,7 @@ A great place to get started with Web Authentication is the [Web Authentication 
     [webauthndemo.appspot.com][AppspotWebauthndemo]
 
 1.  Sign into the website.
-1.  [Open DevTools][DevtoolsGuideChromiumOpen].
+1.  [Open DevTools][DevtoolsGuideOpen].
 1.  To open the **WebAuthn** tool, choose the **Customize and control DevTools** \(`...`\) icon > **More tools** > **WebAuthn**.
 
     :::image type="complex" source="../media/webauthn-webauthn-tab.msft.png" alt-text="WebAuthn tool" lightbox="../media/webauthn-webauthn-tab.msft.png":::
@@ -113,8 +113,9 @@ To remove a virtual authenticator, next to the authenticator, choose the **Remov
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-<!-- external links -->
+
+[DevtoolsGuideOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
+
 [AppspotWebauthndemo]: https://webauthndemo.appspot.com "Webauthn demo | Appspot"
 
 [FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml]: https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html "Client to Authenticator Protocol (CTAP) | fido alliance"
