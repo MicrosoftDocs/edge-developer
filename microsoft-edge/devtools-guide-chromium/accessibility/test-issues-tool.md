@@ -130,17 +130,14 @@ The DOM tree in the **Elements** tool flags issues directly in the HTML with wav
     :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## See also
 
 *  [Find and fix problems using the Issues tool][DevToolsIssuesTool]
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
 
 
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-
+<!-- ====================================================================== -->
 <!-- links -->
 [DevToolsIssuesTool]: ../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
 [DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

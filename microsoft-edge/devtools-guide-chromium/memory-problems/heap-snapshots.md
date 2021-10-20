@@ -245,12 +245,9 @@ To read more about DOM leaks and memory analysis fundamentals checkout [Finding 
 
 <!--todo: add heap profiling dom leaks section when available  -->
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsMemoryProblems101ObjectSizes]: ./memory-101.md#object-sizes "Object sizes - Memory Terminology | Microsoft Docs"
 [DevtoolsMemoryProblems101ObjectsRetainingTree]: ./memory-101.md#objects-retaining-tree "Objects retaining tree - Memory Terminology | Microsoft Docs"
 
@@ -269,6 +266,8 @@ To read more about DOM leaks and memory analysis fundamentals checkout [Finding 
 
 [GonzaloRuizdeVillaMemory]: https://slid.es/gruizdevilla/memory "memory | Slides"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) and is authored by [Meggin Kearney][MegginKearney] \(Technical Writer\).

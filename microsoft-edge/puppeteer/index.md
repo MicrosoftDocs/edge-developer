@@ -88,15 +88,9 @@ node example.js
 
 This is just a simple example of the automation and testing scenarios enabled by Puppeteer and `puppeteer-core`.  For more information about Puppeteer and how it works, navigate to [Puppeteer][PuppeteerMain].
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-The Microsoft Edge Developer team is eager to hear your feedback about using Puppeteer, `puppeteer-core`, and Microsoft Edge.  Use the **Send Feedback** icon in the Microsoft Edge DevTools or tweet [@EdgeDevTools][TwitterIntentTweetEdgedevtools] to let the Microsoft Edge team know what you think.
-
-:::image type="complex" source="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools" lightbox="../devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png":::
-   The **Send Feedback** icon in the Microsoft Edge DevTools
-:::image-end:::
-
-<!--## See also
+<!-- ====================================================================== -->
+## See also
 
 *   [WebDriver][WebdriverChromiumMain]
 *   [WebDriver (EdgeHTML)][ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]
@@ -108,14 +102,16 @@ The Microsoft Edge Developer team is eager to hear your feedback about using Pup
 *   [Puppeteer][PuppeteerMain]
 *   [puppeteer vs. puppeteer-core][PuppeteerApivscore]
 *   [page.setViewport() on Puppeteer][PuppeteerApipagesetviewport]
-*   [Headless browser on Wikipedia][WikiHeadlessBrowser]  -->
+*   [Headless browser on Wikipedia][WikiHeadlessBrowser]
+-->
+*  [Contact the Microsoft Edge DevTools team](../devtools-guide-chromium/contact.md) to send feedback about using Puppeteer, puppeteer-core, and Microsoft Edge.
 
+
+<!-- ====================================================================== -->
 <!-- links -->
-
 [WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver | Microsoft Docs"
-
+<!-- external links -->
 <!--  [ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->
-
 [GithubChromedevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Chrome DevTools Protocol Viewer | GitHub"
 
 [MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge:  Making the web better through more open-source collaboration | Microsoft Experience Blog"
@@ -135,3 +131,5 @@ The Microsoft Edge Developer team is eager to hear your feedback about using Pup
 [TwitterIntentTweetEdgedevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools - Post a Tweet | Twitter"
 
 [WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "Headless browser | Wikipedia"
+
+<!--  [ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->

@@ -172,12 +172,9 @@ If you want to debug or test the Media Queries you defined in your CSS, use the 
        Reveal Media Queries in Sources Editor
     :::image-end:::
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Change DevTools Placement (Undock, Dock To Bottom, Dock To Left)"
 
 [GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "CSS Examples - Microsoft Edge DevTools | Glitch"

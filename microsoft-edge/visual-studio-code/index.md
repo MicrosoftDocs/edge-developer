@@ -10,12 +10,10 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual 
 ---
 # Visual Studio Code overview
 
-Visual Studio Code is a lightweight but powerful source code editor.  Visual Studio Code is available for Windows, Linux, and macOS.  It includes built-in support for JavaScript, TypeScript, and Node.js, so it is a great tool for web developers.
+Visual Studio Code includes built-in support for JavaScript, TypeScript, and Node.js, so it is a great tool for web developers.  Visual Studio Code is a lightweight but powerful source code editor that's available for Windows, Linux, and macOS.  This article gives an overview of extensions for Visual Studio Code that add features for users of Microsoft Edge DevTools.
 
 *  [Download Visual Studio Code][VisualstudioCode]
 *  [Getting Started][VisualStudioCodeDocs] - Documentation for Visual Studio Code
-
-This article gives an overview of extensions for Visual Studio Code that add features for users of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->

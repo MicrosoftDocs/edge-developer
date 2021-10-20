@@ -31,15 +31,15 @@ Here are the new features available in the DevTools in Microsoft Edge 83.
 
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].
 
-### Remotely debug Microsoft Edge on Windows 10 Devices
+### Remotely debug Microsoft Edge on Windows 10 or later Devices
 
-The [Remote Tools for Microsoft Edge \(Beta\)][RemoteTools] app is now available in the [Microsoft Store][MicrosoftStore].  Using this app, which extends the [Windows Device Portal][WindowsUwpDebugTestPerfDevicePortal], you are able to connect from the instance of Microsoft Edge running on your development machine to a remote Windows 10 device, display a list of targets \(all tabs in Microsoft Edge and [PWAs][ProgressiveWebAppsIndex] open on the Windows 10 device\), and use the DevTools on your development machine against a target running on the remote Windows 10 device.
+The [Remote Tools for Microsoft Edge (Beta)][RemoteTools] app is now available in the [Microsoft Store][MicrosoftStore]. This app extends the [Windows Device Portal][WindowsUwpDebugTestPerfDevicePortal]. You can connect from Microsoft Edge running on your development machine to a remote Windows 10 or later device and display a list of targets. This list of targets includes all tabs in Microsoft Edge and [PWAs][ProgressiveWebAppsChromiumIndex] open on the Windows device. Use the DevTools on your development machine against a target running on the remote Windows device.
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/remote-tools.msft.png":::
    The [Remote Tools for Microsoft Edge (Beta)][RemoteTools] app available in the [Microsoft Store][MicrosoftStore]
 :::image-end:::
 
-[Read our guide for setting up your Windows 10 device and your development machine for remote debugging][DevtoolsRemoteDebuggingWindows].  Let us know about your remote debugging experience by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!
+[Read our guide for setting up your Windows 10 device and your development machine for remote debugging][DevtoolsRemoteDebuggingWindows].  Let us know about your remote debugging experience by [tweeting][PostTweetEdgeDevTools] or choosing the [Send Feedback][Contact] icon!
 
 ### New ways to access Settings
 
@@ -107,7 +107,7 @@ When you have made a change to a minified file, the **Changes tool** enables you
    In Microsoft Edge 83, you may scroll horizontally with the arrow keys to display the changes you made to your minified code in the **Changes tool**
 :::image-end:::
 
-If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!
+If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or choosing the [Send Feedback][Contact] icon!
 
 Chromium issue [#963183][CR963183]
 
@@ -137,7 +137,7 @@ For example, protanomaly is a reduced sensitivity to red light (as opposed to pr
 
 By designing for the more extreme simulations in DevTools, your web apps are guaranteed to be accessible to people with protanomaly, deuteranomaly, tritanomaly, and achromatomaly as well.
 
-Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or choosing the [Send Feedback][Contact] icon!
 
 Chromium issue [#1003700][CR1003700]
 
@@ -177,7 +177,7 @@ The **Response Headers** section of the **Headers** tab provides more guidance o
    More guidance in the **Response Headers** section
 :::image-end:::
 
-Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or choosing the [Send Feedback][Contact] icon!
 
 Chromium issue [#1051466][CR1051466]
 
@@ -211,7 +211,7 @@ Open the [Command Menu][DevtoolsCommandMenuIndex] and run the `Dock to left` com
 > [!NOTE]
 > The **Dock to left** feature has been available since Microsoft Edge 75, but it was previously only accessible from the [Main Menu][DevtoolsCustomizePlacementsChangeMainMenu].  The new feature in Microsoft Edge 83 is that you may now access this feature from the Command Menu.
 
-Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or choosing the [Send Feedback][Contact] icon!
 
 Chromium issue [#1011679][CR1011679]
 
@@ -234,7 +234,7 @@ After setting up **Local Overrides** you may hover on a directory, open the cont
    Delete all overrides
 :::image-end:::
 
-Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or choosing the [Send Feedback][Contact] icon!
 
 Chromium issue [#1016501][CR1016501]
 
@@ -248,7 +248,7 @@ You have been able to [visualize Long Tasks in the Performance panel][DevtoolsEv
    The new Long Task UI
 :::image-end:::
 
-Send your feedback by [tweeting][PostTweetEdgeDevTools] orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!
+Send your feedback by [tweeting][PostTweetEdgeDevTools] or choosing the [Send Feedback][Contact] icon!
 
 Chromium issue [#1054447][CR1054447]
 
@@ -271,14 +271,10 @@ Enable the new **Show only the minimum safe area for maskable icons** checkbox i
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
 
-## Getting in touch with Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [WhatsNew81]: ../01/devtools.md "What's New In DevTools (Microsoft Edge 81) | Microsoft Docs"
-
 [DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"
 [DevtoolsCssIndex]: ../../../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"
 [DevtoolsCssReferenceColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "Change colors with the Color Picker | Microsoft Docs"
@@ -288,7 +284,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: ../../../evaluate-performance/reference.md#view-main-thread-activity "View main thread activity | Microsoft Docs"
 [DevtoolsJavascriptBreakpointsLineCode]: ../../../javascript/breakpoints.md#line-of-code-breakpoints "Line-of-code breakpoints - How To Pause Your Code With Breakpoints In Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsNetworkReferenceFilterRequestsProperties]: ../../../network/reference.md#filter-requests-by-properties "Filter requests by properties - Network analysis reference | Microsoft Docs"
-[DevtoolsRemoteDebuggingWindows]: ../../../remote-debugging/windows.md "Get Started with Remote Debugging Windows 10 Devices | Microsoft Docs"
+[DevtoolsRemoteDebuggingWindows]: ../../../remote-debugging/windows.md "Get Started with Remote Debugging Windows devices | Microsoft Docs"
 
 [ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"
 
