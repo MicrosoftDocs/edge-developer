@@ -1,5 +1,5 @@
 ---
-description: Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code.  All console errors and warnings now have a Search Web button.  Improved keyboard access for defining User-Agent Client Hints.  Improved filtering for grouped messages in the Console.
+description: Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code.  All console errors and warnings now have a Search Web icon.  Improved keyboard access for defining User-Agent Client Hints.  Improved filtering for grouped messages in the Console.
 title: What's new in DevTools (Microsoft Edge 95)
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -16,12 +16,12 @@ keywords: microsoft edge, web development, f12 tools, devtools
 <!-- ====================================================================== -->
 ## Sync live changes from the Styles tool by using CSS Mirror Editing
 
-<!-- Title: CSS Mirror Editing in VS Code -->
+<!-- Title: CSS Mirror Editing in Visual Studio Code -->
 <!-- Subtitle: Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code. -->
 
-The Microsoft Edge DevTools extension for Visual Studio Code now features an experiment called **CSS Mirror Editing**.  Using this feature, you can use the **Styles** tool to adjust your CSS, and the changes you apply are automatically added to the CSS source files in the editor.  You can toggle this functionality on and off.
+The Microsoft Edge DevTools extension for Visual Studio Code now features an experiment called **CSS Mirror Editing**.  Using this feature, you can use the **Styles** tool to adjust your CSS, and the changes you apply are automatically added to the CSS source files in the Visual Studio Code editor.  You can toggle this functionality on and off.
 
-For more information, see [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#syncing-live-changes-from-the-styles-tool-by-using-css-mirror-editing).
+For more information, see [Syncing live changes from the Styles tool by using CSS Mirror Editing](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#syncing-live-changes-from-the-styles-tool-by-using-css-mirror-editing).
 
 To provide feedback, in Visual Studio Code, in the **Activity Bar**, click **Microsoft Edge Tools**, and then in the **CSS Mirror Editing** section, click the **leaving feedback here** link.
 
@@ -29,23 +29,23 @@ To provide feedback, in Visual Studio Code, in the **Activity Bar**, click **Mic
 
 
 <!-- ====================================================================== -->
-## All error and warning messages in the Console now have a Search Web button
+## All error and warning messages in the Console now have a Search Web icon
 
-<!-- Title: All console errors and warnings now have a Search Web button -->
+<!-- Title: All console errors and warnings now have a Search Web icon -->
 <!-- Subtitle: You can now search for any of your console errors and warnings right from DevTools. -->
 
-The **Search for this message on the Web** button is now available on all errors and warnings in the **Console**.  Previously, this button only appeared on some of the common errors and warnings.  Now the button has been added on the remaining errors and warnings.  The relevant error or warning string is used as the search string.
+The **Search for this message on the Web** icon is now available on all errors and warnings in the **Console**.  Previously, this icon only appeared on some of the common errors and warnings.  Now the icon has been added on the remaining errors and warnings.  The relevant error or warning string is used as the search string.
 
 For more information, see [Search for Console errors on the web](../09/devtools.md#search-for-console-errors-on-the-web).
 
-:::image type="content" source="../../media/2021/10/console-message-search-web-button.png" alt-text="All error and warning messages in the Console now have a Search Web button." lightbox="../../media/2021/10/console-message-search-web-button.png":::
+:::image type="content" source="../../media/2021/10/console-message-search-web-button.png" alt-text="All error and warning messages in the Console now have a Search Web icon." lightbox="../../media/2021/10/console-message-search-web-button.png":::
 
 
 <!-- ====================================================================== -->
 ## Improved keyboard access for defining User-Agent Client Hints
 
-<!-- Title: When adding a custom device to emulate in DevTools, specify user agent client hints more easily -->
-<!-- Subtitle: We've improved keyboard access when navigating to user agent clients from Settings. -->
+<!-- Title: Improved keyboard access when navigating to User agent client hints in Settings -->
+<!-- Subtitle: When adding a custom device to emulate in DevTools, you can now expand the User agent client hints section more easily. -->
 
 Starting with [Microsoft Edge version 92](../05/devtools.md#user-agent-client-hints-for-devices-in-the-network-conditions-tab), you can specify User-Agent Client Hints when defining the user agent string in the **Network conditions** tool or when adding a custom device to emulate in **Settings**.
 
@@ -53,11 +53,11 @@ In earlier versions of Microsoft Edge, when adding a custom device to emulate fr
 
 In Microsoft Edge version 95, this issue has been fixed.  Selecting the **User agent client hints** button by using the keyboard now expands a form, in which you can specify client hints for the custom device.
 
-To view the history of this feature in the Chromium open-source project, see [Issue 1243827: User agent client hints form accessibility](https://bugs.chromium.org/p/chromium/issues/detail?id=1243827).
-
 To learn more about User-Agent Client Hints, see [Detecting Microsoft Edge from your website](../../../../web-platform/user-agent-guidance.md#user-agent-client-hints).
 
 :::image type="content" source="../../media/2021/10/keyboard-define-ua-client-hints.png" alt-text="Description" lightbox="../../media/2021/10/keyboard-define-ua-client-hints.png":::
+
+To view the history of this feature in the Chromium open-source project, see [Issue 1243827: User agent client hints form accessibility](https://bugs.chromium.org/p/chromium/issues/detail?id=1243827).
 
 
 <!-- ====================================================================== -->
@@ -72,8 +72,6 @@ In Microsoft Edge version 95, these problems have been fixed.  Filtering to a la
 
 To learn more about the `group()` API for the Console in DevTools, navigate to [Console API reference: group](../../../../devtools-guide-chromium/console/api.md#group).
 
-To view the history of this feature in the Chromium open-source project, see [Issue 363796: ☂ Console filter inappropriately hides grouped content and doesn't hide group titles](https://bugs.chromium.org/p/chromium/issues/detail?id=363796).
-
 When the filter string matches a group label, the group and its members are displayed:
 
 :::image type="content" source="../../media/2021/10/filter-matches-group-label.png" alt-text="When the filter string matches a group label, the group and its members are displayed." lightbox="../../media/2021/10/filter-matches-group-label.png":::
@@ -81,6 +79,8 @@ When the filter string matches a group label, the group and its members are disp
 When the filter string doesn't match a group label, neither the group nor its members are displayed:
 
 :::image type="content" source="../../media/2021/10/filter-matches-group-label-asdf.png" alt-text="When the filter string doesn't match a group label, neither the group nor its members are displayed." lightbox="../../media/2021/10/filter-matches-group-label-asdf.png":::
+
+To view the history of this feature in the Chromium open-source project, see [Issue 363796: ☂ Console filter inappropriately hides grouped content and doesn't hide group titles](https://bugs.chromium.org/p/chromium/issues/detail?id=363796).
 
 
 <!-- ====================================================================== -->
