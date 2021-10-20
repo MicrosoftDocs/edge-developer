@@ -51,7 +51,7 @@ Starting with [Microsoft Edge version 92](../05/devtools.md#user-agent-client-hi
 
 In earlier versions of Microsoft Edge, when adding a custom device to emulate from the **Devices** section of **Settings**, selecting the **User agent client hints** button with the keyboard moved focus to the **Add custom device** button and a new device would be added automatically.
 
-In Microsoft Edge version 95, this issue has been fixed.  Clicking the **User agent client hints** button now expands into a form where you can specify client hints for the custom device.
+In Microsoft Edge version 95, this issue has been fixed.  Selecting the **User agent client hints** button now expands into a form where you can specify client hints for the custom device.
 
 To view the history of this feature in the Chromium open-source project, see [Issue 1243827: User agent client hints form accessibility](https://bugs.chromium.org/p/chromium/issues/detail?id=1243827).
 
