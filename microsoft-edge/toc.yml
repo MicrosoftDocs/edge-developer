@@ -49,11 +49,11 @@
               href: devtools-guide-chromium/open/index.md
             - name: Get started with CSS
               href: devtools-guide-chromium/beginners/css.md # in toc twice
-            - name: Get started with viewing and changing CSS
+            - name: Get started viewing and changing CSS
               href: devtools-guide-chromium/css/index.md # in toc twice
-            - name: Get started with debugging JavaScript
+            - name: Get started debugging JavaScript
               href: devtools-guide-chromium/javascript/index.md
-            - name: Get started with analyzing runtime performance
+            - name: Get started analyzing runtime performance
               href: devtools-guide-chromium/evaluate-performance/index.md
             - name: View page resources
               href: devtools-guide-chromium/resources/index.md
@@ -65,33 +65,17 @@
               href: devtools-guide-chromium/speed/get-started.md
             - name: Remote debugging
               items:
-                - name: Get started with remote debugging Android devices
+                - name: Get started remote debugging Android devices
                   href: devtools-guide-chromium/remote-debugging/index.md
-                - name: Get started with remote debugging with Surface Duo emulators
+                - name: Get started remote debugging Surface Duo
                   href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
-                - name: Get started with remote debugging Windows 10 devices
+                - name: Get started remote debugging Windows devices
                   href: devtools-guide-chromium/remote-debugging/windows.md
-                - name: Get started with remote debugging Android WebViews
+                - name: Get started remote debugging Android WebViews
                   href: devtools-guide-chromium/remote-debugging/webviews.md
 # =============================================================================
         - name: How to
           items:
-# Command Menu
-            - name: Command menu
-              href: devtools-guide-chromium/command-menu/index.md
-# Customization, themes, docking
-            - name: Customizing DevTools
-              items:
-                - name: Overview
-                  href: devtools-guide-chromium/customize/index.md
-                - name: Apply a color theme
-                  href: devtools-guide-chromium/customize/theme.md
-                - name: Change DevTools placement
-                  href: devtools-guide-chromium/customize/placement.md
-                - name: Match browser language
-                  href: devtools-guide-chromium/customize/localization.md
-                - name: Customize shortcuts
-                  href: devtools-guide-chromium/customize/shortcuts.md
 # Accessibility (cross-tools)
             - name: Accessibility testing
               items:
@@ -162,6 +146,22 @@
                   href: devtools-guide-chromium/accessibility/lighthouse.md
                 - name: Track which element has focus
                   href: devtools-guide-chromium/accessibility/focus.md
+# Command Menu
+            - name: Command Menu
+              href: devtools-guide-chromium/command-menu/index.md
+# Customization, themes, docking
+            - name: Customize DevTools #1
+              items:
+                - name: Overview
+                  href: devtools-guide-chromium/customize/index.md
+                - name: Apply a color theme
+                  href: devtools-guide-chromium/customize/theme.md
+                - name: Change DevTools placement
+                  href: devtools-guide-chromium/customize/placement.md
+                - name: Match browser language
+                  href: devtools-guide-chromium/customize/localization.md
+                - name: Customize keyboard shortcuts
+                  href: devtools-guide-chromium/customize/shortcuts.md
 # Device Emulation
             - name: Device testing and emulation
               items:
@@ -562,7 +562,7 @@
               href: webview2/concepts/distribution.md
             - name: Manage the user data folder
               href: webview2/concepts/user-data-folder.md
-            - name: Managing WebView2 applications
+            - name: Manage WebView2 applications
               href: webview2/concepts/enterprise.md
             - name: Navigation events
               href: webview2/concepts/navigation-events.md
@@ -632,7 +632,7 @@
               href: webdriver-chromium/index.md
             - name: Capabilities and EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
-            - name: Verifying downloads of Selenium Tools for Microsoft Edge
+            - name: Verify downloads of Selenium Tools for Microsoft Edge
               href: webdriver-chromium/verify-selenium-tools.md
         - name: webhint
           href: test-and-automation/webhint-aux-node.md
@@ -641,14 +641,16 @@
       items:
         - name: Site compatibility-impacting changes coming to Microsoft Edge
           href: web-platform/site-impacting-changes.md
-        - name: Moving users to Microsoft Edge from IE
+        - name: Move users to Microsoft Edge from IE
           href: web-platform/ie-to-microsoft-edge-redirection.md
         - name: Tracking prevention in Microsoft Edge
           href: web-platform/tracking-prevention.md
-        - name: Detecting Microsoft Edge from your website
+        - name: Detect Microsoft Edge from your website
           href: web-platform/user-agent-guidance.md
         - name: Customize the password reveal button
           href: web-platform/password-reveal.md
+        - name: Detect Windows 11 using User-Agent Client Hints
+          href: web-platform/how-to-detect-win11.md
 # =============================================================================
     - name: Microsoft Edge IDE integration
       items:
@@ -671,9 +673,9 @@
       items:
         - name: Accessibility overview
           href: accessibility/index.md
-        - name: Designing accessible websites
+        - name: Design accessible websites
           href: accessibility/design.md
-        - name: Building accessible websites
+        - name: Build accessible websites
           href: accessibility/build/index.md
         - name: ARIA and UI automation
           href: accessibility/build/ARIA-and-UI-Automation.md

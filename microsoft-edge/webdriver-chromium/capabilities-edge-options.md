@@ -83,7 +83,7 @@ The following list contains all of the Microsoft Edge-specific capabilities that
 | msedge.userDataDir | string | The path to the user data folder used by the Microsoft Edge instance. |
 
 <!-- links -->
-[DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Get started with Remote Debugging Windows 10 devices | Microsoft Docs"
+[DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Get started with Remote Debugging Windows devices | Microsoft Docs"
 [WebdriverIndexChooseAWebdriverTestingFramework]: ./index.md#choose-a-webdriver-testing-framework "Choose a WebDriver testing framework - Use WebDriver (Chromium) for test automation | Microsoft Docs"
 [WebdriverIndexAutomateMicrosoftEdgeChromium]: ./index.md#automate-microsoft-edge-chromium "Automate Microsoft Edge (Chromium) - WebDriver (Chromium) | Microsoft Docs"
 <!-- external links -->

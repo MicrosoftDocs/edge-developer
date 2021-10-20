@@ -35,7 +35,7 @@ See also [Customize keyboard shortcuts in DevTools](../customize/shortcuts.md).
 
 To open DevTools, select the following keyboard shortcuts while your cursor is focused on the browser viewport.
 
-| Action | Windows\/Linux | macOS |
+| Action | Windows/Linux | macOS |
 |:--- |:--- |:--- |
 | Open whatever panel you used last | `F12` or `Control`+`Shift`+`I` | `Command`+`Option`+`I` |
 | Open the **Console** tool | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |
@@ -106,7 +106,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 | Action | Windows\/Linux | macOS |
 |:--- |:--- |:--- |
-| Pause script runtime \(if currently running\) or resume \(if currently paused\) | `F8` or `Control`+`\` | `F8` or `Command`+`\` |
+| Pause script runtime (if currently running) or resume (if currently paused) | `F8` or `Control`+`\` | `F8` or `Command`+`\` |
 | Step over next function call | `F10` or `Control`+`'` | `F10` or `Command`+`'` |
 | Step into next function call | `F11` or `Control`+`;` | `F11` or `Command`+`;` |
 | Step out of current function | `Shift`+`F11` or `Control`+`Shift`+`;` | `Shift`+`F11` or `Command`+`Shift`+`;` |
@@ -116,7 +116,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Save all changes | `Control`+`Alt`+`S` | `Command`+`Option`+`S` |
 | Navigate to line | `Control`+`G` | `Control`+`G` |
 | Jump to a line number of the currently open file | Select `Control`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:` followed by the line number, then select `Enter` | Select `Command`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:` followed by the line number, then select `Enter` |
-| Jump to a column of the currently open file \(for example line 5, column 9\) | Select `Control`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:`, then the line number, then another `:`, then the column number, then select `Enter` | Select `Command`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:`, then the line number, then another `:`, then the column number, then select `Enter` |
+| Jump to a column of the currently open file (for example line 5, column 9) | Select `Control`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:`, then the line number, then another `:`, then the column number, then select `Enter` | Select `Command`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:`, then the line number, then another `:`, then the column number, then select `Enter` |
 | Navigate to a function declaration, if the current file is HTML or a script.  <br />  Navigate to a rule set, if the current file is a stylesheet.  | Select `Control`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options | Select `Command`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options |
 | Close the active tab | `Alt`+`W` | `Option`+`W` |
 
@@ -162,7 +162,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Clear the **Console** | `Control`+`L` | `Command`+`K` or `Option`+`L` |
 | Force a multi-line entry.  This shortcut is mostly unnecessary, because DevTools should detect multi-line scenarios by default | `Shift`+`Enter` | `Command`+`Return` |
 | Run | `Enter` | `Return` |
-| Expand all subproperties of an object that are logged to the Console | Hold `Alt`, then choose **Expand** \(![Expand](../media/expand-icon.msft.png)\) | Hold `Alt`, then choose **Expand** \(![Expand](../media/expand-icon.msft.png)\) |
+| Expand all subproperties of an object that are logged to the Console | Hold `Alt`, then click **Expand** (![Expand](../media/expand-icon.msft.png)) | Hold `Alt`, then click **Expand** (![Expand](../media/expand-icon.msft.png)). |
 
 
 <!-- ====================================================================== -->
@@ -179,7 +179,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/shortcuts) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/shortcuts) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
