@@ -33,6 +33,20 @@ The WebView2 "Get started" guides use starter code for Win32, Windows Presentati
 
 WebView2 sample apps include solutions for Win32, WPF, WinForms, and WinUI.  The Microsoft Visual Studio solution file [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln) gathers the following samples.
 
+
+When you load `WebView2Samples.sln` into Visual Studio, the following folders appear in Solution Explorer:
+
+*  WebView2APISample <!-- below, section 1 -->
+*  WebView2SampleWinComp <!-- below, section 1 -->
+
+*  WebView2WindowsFormsBrowser <!-- below, section 2 -->
+*  WebView2WpfBrowser <!-- below, section 2 -->
+
+*  WV2CDPExtensionWPFSample <!-- not mentioned in this article -->
+*  WV2DeploymentWiXBurnBundleSample <!-- below, section "__" -->
+*  WV2DeploymentWiXCustomActionSample <!-- below, section "__" -->
+
+
 ### Win32 C++ samples
 
 Includes the code in [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample) and [WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2SampleWinComp) folders.
