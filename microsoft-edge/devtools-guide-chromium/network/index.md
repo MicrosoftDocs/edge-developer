@@ -351,14 +351,10 @@ Congratulations, you have completed the tutorial.  You now know how to use the *
 
 Navigate to the [Network Reference][DevtoolsNetworkReference] to discover more DevTools features related to inspecting network activity.
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->
-
 [DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"
 [DevtoolsNetworkReference]: ./reference.md "Network analysis reference | Microsoft Docs"
 [DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Filter requests - Network analysis reference | Microsoft Docs"

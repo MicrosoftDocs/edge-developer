@@ -1,10 +1,7 @@
-# - name: Microsoft Edge documentation # hub page, uncommenting causes 2 landing nodes with all docs pushed right
-#  href: index.yml
 - name: Microsoft Edge Developer documentation #landing page
   href: developer/index.yml
-#  expanded: true
   items:
-# equivalent card: DevTools ===================================================
+# =============================================================================
     - name: Microsoft Edge DevTools
       items:
         - name: DevTools overview
@@ -41,7 +38,8 @@
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
-        - name: Tutorials
+# =============================================================================
+        - name: Get started
           items:
             - name: For beginners
               items:
@@ -73,11 +71,12 @@
                   href: devtools-guide-chromium/remote-debugging/index.md
                 - name: Get started with remote debugging with Surface Duo emulators
                   href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
-                - name: Get started with remote debugging Windows 10 devices
+                - name: Get started with remote debugging Windows devices
                   href: devtools-guide-chromium/remote-debugging/windows.md
                 - name: Get started with remote debugging Android WebViews
                   href: devtools-guide-chromium/remote-debugging/webviews.md
-        - name: How-to guides
+# =============================================================================
+        - name: Features
           items:
             - name: Accessibility
               items:
@@ -141,7 +140,7 @@
                   href: devtools-guide-chromium/customize/placement.md
                 - name: Match browser language
                   href: devtools-guide-chromium/customize/localization.md
-                - name: Customize shortcuts
+                - name: Customize keyboard shortcuts
                   href: devtools-guide-chromium/customize/shortcuts.md
             - name: Device testing and emulation
               items:
@@ -183,7 +182,12 @@
                   href: devtools-guide-chromium/evaluate-performance/performance-reference.md
             - name: Service worker troubleshooting
               href: devtools-guide-chromium/service-workers/index.md
-        - name: Concepts
+            - name: DevTools Protocol
+              href: devtools-protocol-chromium/index.md
+            - name: Keyboard shortcuts
+              href: devtools-guide-chromium/shortcuts/index.md
+# =============================================================================
+        - name: Tools
           items:
             - name: 3D View
               href: devtools-guide-chromium/3d-view/index.md
@@ -213,10 +217,14 @@
                   href: devtools-guide-chromium/console/index.md
                 - name: Log messages
                   href: devtools-guide-chromium/console/console-log.md
-                - name: Run JavaScript
+                - name: Run JavaScript in the Console
                   href: devtools-guide-chromium/console/console-javascript.md
-                - name: Reference
+                - name: Console features reference
                   href: devtools-guide-chromium/console/reference.md
+                - name: Console API reference
+                  href: devtools-guide-chromium/console/api.md
+                - name: Console Utilities API reference
+                  href: devtools-guide-chromium/console/utilities.md
                 - name: Watch JavaScript expressions in real time
                   href: devtools-guide-chromium/console/live-expressions.md
                 - name: Fix JavaScript Console errors
@@ -229,7 +237,7 @@
               href: devtools-guide-chromium/coverage/index.md
             - name: Elements
               items:
-                - name: CSS reference
+                - name: CSS features reference
                   href: devtools-guide-chromium/css/reference.md
                 - name: Edit CSS font styles and settings
                   href: devtools-guide-chromium/inspect-styles/edit-fonts.md
@@ -281,6 +289,8 @@
               items:
                 - name: Sources tool overview
                   href: devtools-guide-chromium/sources/index.md
+                - name: Open source files in Visual Studio Code
+                  href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
                 - name: Overrides
                   href: devtools-guide-chromium/javascript/overrides.md
                 - name: Snippets
@@ -289,17 +299,9 @@
                   href: devtools-guide-chromium/javascript/disable.md
             - name: WebAuthn
               href: devtools-guide-chromium/webauthn/index.md
-        - name: Reference
-          items:
-            - name: Console API reference
-              href: devtools-guide-chromium/console/api.md
-            - name: Console Utilities API reference
-              href: devtools-guide-chromium/console/utilities.md
-            - name: DevTools Protocol
-              href: devtools-protocol-chromium/index.md
-            - name: Keyboard shortcuts
-              href: devtools-guide-chromium/shortcuts/index.md
-# equivalent card: Extensions =================================================
+        - name: Contact the DevTools team
+          href: devtools-guide-chromium/contact.md
+# =============================================================================
     - name: Microsoft Edge extensions
       items:
         - name: Overview of Microsoft Edge extensions
@@ -370,26 +372,52 @@
               href: extensions-chromium/enterprise/hosting-and-updating.md
             - name: Auto-update
               href: extensions-chromium/enterprise/auto-update.md
-# equivalent card: Progressive Web Apps =======================================
+# =============================================================================
     - name: Progressive Web Apps
       items:
-        - name: Progressive Web Apps overview
+        - name: Overview of Progressive Web Apps (PWAs)
           href: progressive-web-apps-chromium/index.md
+        - name: The user experience of PWAs
+          href: progressive-web-apps-chromium/ux.md
+        - name: How to
+          items:
+            - name: Get started with PWAs
+              href: progressive-web-apps-chromium/how-to/index.md
+            - name: Web app manifest
+              href: progressive-web-apps-chromium/how-to/web-app-manifests.md
+            - name: Service Workers
+              href: progressive-web-apps-chromium/how-to/service-workers.md
+            - name: Offline scenarios
+              href: progressive-web-apps-chromium/how-to/offline.md
+            - name: Publish PWAs to the Microsoft Store
+              href: progressive-web-apps-chromium/how-to/microsoft-store.md
+            - name: Experimental features and origin trials
+              href: progressive-web-apps-chromium/how-to/origin-trials.md
+            - name: Integrate PWAs on desktop
+              items:
+                - name: Define icons and a theme color
+                  href: progressive-web-apps-chromium/how-to/icon-theme-color.md
+                - name: Re-engage users with notifications, push messages, and badges
+                  href: progressive-web-apps-chromium/how-to/notifications-badges.md
+                - name: Handle files
+                  href: progressive-web-apps-chromium/how-to/handle-files.md
+                - name: Handle URLs
+                  href: progressive-web-apps-chromium/how-to/handle-urls.md
+                - name: Handle protocols
+                  href: progressive-web-apps-chromium/how-to/handle-protocols.md
+                - name: Display content in the title bar
+                  href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
+                - name: Share with other apps
+                  href: progressive-web-apps-chromium/how-to/share.md
+                - name: Define app shortcuts
+                  href: progressive-web-apps-chromium/how-to/shortcuts.md
+                - name: Synchronize and update in the background
+                  href: progressive-web-apps-chromium/how-to/background-syncs.md
         - name: What's new
           href: progressive-web-apps-chromium/whats-new/pwa.md
-        - name: Get started with PWAs
-          href: progressive-web-apps-chromium/get-started.md
-        - name: Offline scenarios
-          href: progressive-web-apps-chromium/offline.md
-        - name: Service Workers
-          href: progressive-web-apps-chromium/serviceworker.md
-        - name: Web app manifests
-          href: progressive-web-apps-chromium/webappmanifests.md
-        - name: Experimental features
-          href: progressive-web-apps-chromium/experimental-features/index.md
-        - name: Publish a PWA to the Microsoft Store
-          href: progressive-web-apps-chromium/microsoft-store.md
-# equivalent card: WebView2 ===================================================
+        - name: Sample PWAs
+          href: progressive-web-apps-chromium/demo-pwas.md
+# =============================================================================
     - name: WebView2
       items:
         - name: WebView2 overview
@@ -467,7 +495,9 @@
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
                 - name: COM Interop
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
-# equivalent card: Test and automation ==========================================
+        - name: Contact the WebView2 team
+          href: webview2/contact.md
+# =============================================================================
     - name: Test and automation
       items:
         - name: DevTools Protocol
@@ -487,8 +517,8 @@
             - name: Verifying downloads of Selenium Tools for Microsoft Edge
               href: webdriver-chromium/verify-selenium-tools.md
         - name: webhint
-          href: visual-studio-code/webhint.md
-# equivalent card: Web platform ===============================================
+          href: test-and-automation/webhint-aux-node.md
+# =============================================================================
     - name: Web platform
       items:
         - name: Site compatibility-impacting changes coming to Microsoft Edge
@@ -501,7 +531,9 @@
           href: web-platform/user-agent-guidance.md
         - name: Customize the password reveal button
           href: web-platform/password-reveal.md
-# equivalent card: Microsoft Edge IDE integration =============================
+        - name: Detecting Windows 11 using User-Agent Client Hints
+          href: web-platform/how-to-detect-win11.md
+# =============================================================================
     - name: Microsoft Edge IDE integration
       items:
         - name: Visual Studio overview
@@ -510,13 +542,15 @@
           items:
             - name: Visual Studio Code overview
               href: visual-studio-code/index.md
+            - name: Open source files in Visual Studio Code
+              href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
             - name: Debugger for Edge
               href: visual-studio-code/debugger-for-edge.md
             - name: Microsoft Edge DevTools extension
               href: visual-studio-code/microsoft-edge-devtools-extension.md
             - name: webhint extension
               href: visual-studio-code/webhint.md
-# equivalent card: Accessibility ==============================================
+# =============================================================================
     - name: Accessibility in Microsoft Edge
       items:
         - name: Accessibility overview
@@ -529,7 +563,7 @@
           href: accessibility/build/ARIA-and-UI-Automation.md
         - name: Accessibility testing
           href: accessibility/test.md
-# SORT into the above card sections ===========================================
+# =============================================================================
     - name: Privacy whitepaper
       href: privacy-whitepaper/index.md
     - name: The Web We Want initiative

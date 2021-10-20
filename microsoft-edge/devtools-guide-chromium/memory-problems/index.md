@@ -230,18 +230,13 @@ You are able to use either the Microsoft Edge Browser Task Manager or Performanc
 
 After you have identified the problem, you are able to use an **Allocation instrumentation on timeline** recording to find out where memory is being allocated and which functions are causing the allocations.
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
+<!-- links -->
+[DevtoolsEvaluatePerformanceReferenceRecord]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-performance "Record performance - Performance Analysis Reference"
 <!-- image links -->
-
 [ImageForceGarbageCollectionIcon]: ../media/collect-garbage-icon.msft.png
 [ImageStopRecordingIcon]: ../media/stop-recording-icon.msft.png
-
-<!-- links -->
-
-[DevtoolsEvaluatePerformanceReferenceRecord]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-performance "Record performance - Performance Analysis Reference"
 
 <!--[RAIL]: /profile/evaluate-performance/rail  -->
 <!--[recording]: /profile/evaluate-performance/timeline-tool#make-a-recording ""  -->

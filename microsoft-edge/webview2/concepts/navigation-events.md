@@ -51,21 +51,20 @@ Track navigation events to each new document using the navigation ID \(`Navigati
 
 To monitor or cancel navigation events inside subframes in a WebView2 instance, use the `FrameNavigationStarting` and `FrameNavigationCompleted` events that act just like the equivalent non-frame counterpart events.
 
+
+<!-- ====================================================================== -->
 ## See also
 
-*   To get started using WebView2, navigate to [WebView2 Get Started Guides][Webview2IndexGetStarted] guides.
-*   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] on GitHub.
-*   For more detailed information about WebView2 APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2WpfWebview2].
-*   For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].
+*  [WebView2 Get Started Guides][Webview2IndexGetStarted]
+*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] - a comprehensive example of WebView2 capabilities.
+*  [WebView2 API reference][DotnetApiMicrosoftWebWebview2WpfWebview2]
+*  [See also][Webview2IndexNextSteps] in _Introduction to Microsoft Edge WebView2_.
 
-## Getting in touch with the Microsoft Edge WebView team
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [Webview2IndexGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
-[Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
+[Webview2IndexNextSteps]: ../index.md#see-also "See also - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
 
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 Class | Microsoft Docs"
 

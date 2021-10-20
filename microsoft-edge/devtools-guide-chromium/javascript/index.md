@@ -218,26 +218,26 @@ For more information about when and how to use each type, navigate to [Pause you
 
 A couple of code stepping controls aren't explained in this article.  For more information, navigate to [Step over line of code][DevToolsJavascriptReferenceStepThroughCode] in the "Use the debugger features" article.
 
-### See also
 
-*   [Use the debugger features][DevToolsJavascriptReference] - Using the UI of the debugger in the Sources tool.
-*   [Sources tool overview][DevToolsSourcesIndex] - Introduces the JavaScript debugger and code editor.
+<!-- ====================================================================== -->
+## See also
 
-## Getting in touch with the Microsoft Edge DevTools team
+*  [Use the debugger features][DevToolsJavascriptReference] - Using the UI of the debugger in the Sources tool.
+*  [Sources tool overview][DevToolsSourcesIndex] - Introduces the JavaScript debugger and code editor.
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevToolsJavascriptReference]: ./reference.md "Use the debugger features | Microsoft Docs"
 [DevToolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"
 [DevToolsJavscriptBreakpoints]: ./breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
 [DevToolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "Step through code - Use the debugger features | Microsoft Docs"
-
+<!-- external links -->
+[OpenDebugJSDemo]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "Open Demo | Glitch"
 <!--[inPrivate]: https://support.alphabet.com/alphabet-browser/answer/95464  -->
 
-[OpenDebugJSDemo]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "Open Demo | Glitch"
 
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).

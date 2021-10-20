@@ -77,6 +77,7 @@ If your automation application doesn't require IE mode for the website (or app) 
 Applications that require IE mode for the website (or app) content to function correctly should use the `WebBrowser` control.  The `WebBrowser` control uses the Internet Explorer platform (MSHTML/Trident) to render web content, and will work even if the Internet Explorer 11 desktop application isn't available.
 
 
+<!-- ====================================================================== -->
 ## See also
 
 *  [What is Internet Explorer (IE) mode?][EnterpriseWhatIsIEMode]
@@ -84,11 +85,7 @@ Applications that require IE mode for the website (or app) content to function c
 *  [Fix web compatibility issues using document modes and the Enterprise Mode site list][IEDocumentModes]
 
 
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-
+<!-- ====================================================================== -->
 <!-- links -->
 [PlaywrightIndex]: ../../playwright/index.md "Use Playwright to automate and test in Microsoft Edge | Microsoft Edge Developer docs"
 [WebDriverIndex]: ../../webdriver-chromium/index.md "Use WebDriver to automate Microsoft Edge | Microsoft Edge Developer docs"

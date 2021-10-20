@@ -167,12 +167,9 @@ Each **native objects** group is made up of objects that hold mutual references 
 
 Each wrapper object holds a reference to the corresponding native object, for redirecting commands to it.  In turn, an object group holds wrapper objects.  However, this does not create an uncollectable cycle, as Garbage Collector is smart enough to release object groups whose wrappers are no longer referenced.  But forgetting to release a single wrapper holds the whole group and associated wrappers.
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "How to Record Heap Snapshots | Microsoft Docs"
 
 [V8FastProperties]: https://v8.dev/blog/fast-properties "Fast properties in V8 | V8"
