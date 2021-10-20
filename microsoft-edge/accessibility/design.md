@@ -17,7 +17,7 @@ Creating an inclusive design makes technology usable by all people no matter the
 <!-- ====================================================================== -->
 ## Screen readers
 
-Users who are blind or who have low vision rely on screen readers to interpret and interact with the UI of your app.  Interpreting involves reading the UI element names, roles, and values.  Interacting with the UI involves moving the focus from one element to another and invoking functionality such as clicking an element.
+Users who are blind or who have low vision rely on screen readers to interpret and interact with the UI of your app.  Interpreting involves reading the UI element names, roles, and values.  Interacting with the UI involves moving the focus from one element to another and invoking functionality such as clicking a UI element.
 
 
 <!-- ====================================================================== -->
@@ -25,11 +25,11 @@ Users who are blind or who have low vision rely on screen readers to interpret a
 
 Many accessibility users rely on the keyboard to navigate and operate the UI by:
 
-*  Moving focus among elements by using the Tab key.
+*  Moving focus among elements by using the `Tab` key.
 
 *  Navigating in container elements such as lists, grids, and tree views by using the arrow keys.
 
-*  Activating functionality (invoking actions) by using the Enter or Space key.
+*  Invoking actions by pressing the `Enter` key or Spacebar.
 
 *  Using shortcut keys to efficiently access other app functionality.
 

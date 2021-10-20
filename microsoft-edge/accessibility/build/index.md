@@ -44,19 +44,21 @@ The [Accessible Rich Internet Applications (ARIA)](https://www.w3.org/TR/wai-ari
 
 ### Roles, properties, and states
 
-ARIA roles are set on elements using the [role](https://developer.mozilla.org/docs/Web/HTML/Reference) attribute to give assistive technologies and accessibility APIs information about the element.  For example, the below `<li>` element is assigned `role="menuitem"` to signify it's an item in a menu.
+ARIA roles are set on elements using the [role](https://developer.mozilla.org/docs/Web/HTML/Reference) attribute to give assistive technologies and accessibility APIs information about the element.  For example, the below `<li>` element is assigned `role="menuitem"` to signify that it's an item in a menu.
 
 ```html
 <li role="menuitem">Home</li>
 ```
 
-ARIA states and properties are aria-prefixed attributes that provide specific information about an object to help form the definition of the nature of roles.  Properties are attributes that are essential to the nature of an object, like [aria-readonly](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) and [aria-haspopup](https://developer.mozilla.org/docs/Web/Accessibility/ARIA).  Changing a property affects the meaning of the object.  In the example below, the property `aria-haspopup="true"` is set on a `<li>` menu item to signify it has a popup.
+ARIA states and properties are aria-prefixed attributes that provide specific information about an object to help form the definition of the nature of roles.  Properties are attributes that are essential to the nature of an object, like [aria-readonly](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) and [aria-haspopup](https://developer.mozilla.org/docs/Web/Accessibility/ARIA).  Changing a property affects the meaning of the object.
+
+In the example below, the property `aria-haspopup="true"` is set on a `<li>` menu item to signify that it has a popup:
 
 ```html
 <li role="menuitem" aria-haspopup="true">Open</li>
 ```
 
-States do not change the nature of the object, but represent information associated with the object or user interaction with the object, like [aria-hidden](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) or [aria-checked](https://developer.mozilla.org/docs/Web/Accessibility/ARIA).  For example, the state `aria-checked="false"` in the example below represents that the checkbox is not checked.
+States don't change the nature of the object, but represent information that's associated with the object, or user interaction with the object, like [aria-hidden](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) or [aria-checked](https://developer.mozilla.org/docs/Web/Accessibility/ARIA).  For example, the state `aria-checked="false"` in the example below represents that the checkbox is cleared, rather than selected:
 
 ```html
 <div role="checkbox" aria-checked="false">Accept</div>
@@ -72,7 +74,7 @@ Verifying that the website you are building works with real assistive technologi
 
 [Keyboard compatibility testing](https://www.w3.org/WAI/perspective-videos/keyboard) validates that users have access to all interactive controls without requiring a mouse.  Microsoft [Accessibility Insights for Web](https://accessibilityinsights.io/docs/web/overview) is a browser extension for Microsoft Edge and Chrome that guides you and reveals several common issues.
 
-Once you are confident that your website works well with a keyboard, try it with other assistive technologies, such as screen readers.  It uncover issues in the following.
+Once you are confident that your website works well with a keyboard, try it with other assistive technologies, such as screen readers.  This testing can uncover issues in the following:
 
 *   Your HTML, ARIA, and CSS.
 *   The level of support of an assistive technology for a feature or technique.
@@ -83,7 +85,7 @@ WebAIM conducts surveys with [screen reader](https://webaim.org/projects/screenr
 
 ### Learning how to test
 
-Assistive technologies are sophisticated tools.  Do not assume that you are able to immediately start testing with an assistive technology without first learning about how it works.  Learning to test with a screen reader has an especially steep learning curve.  A novice user of screen readers might think that a screen reader has a bug, while the issue might actually be an error in using the screen reader.
+Assistive technologies are sophisticated tools.  Don't assume that you're able to immediately start testing with an assistive technology without first learning about how it works.  Learning to test with a screen reader has an especially steep learning curve.  A novice user of screen readers might think that a screen reader has a bug, while the issue might actually be an error in using the screen reader.
 
 [Testing with Screen Readers](https://webaim.org/articles/screenreader_testing) at WebAIM provides more information about learning to test with assistive technologies.
 
@@ -95,7 +97,7 @@ Most devices include assistive technology that is built-in to the OS.  Microsoft
 
 Under macOS, if you want to test with an assistive technology only available for Windows, like Windows Narrator or NVDA, create a Windows virtual machine.  Virtual machines with Microsoft Edge (EdgeHTML) and IE are available for VirtualBox and VMWare on the [Virtual Machines download page](https://developer.microsoft.com/microsoft-edge/tools/vms).
 
-[Android Studio](https://developer.android.com/sdk/installing/studio.html) includes an emulator that for you to test assistive technologies in the [Android Accessibility Suite](https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback).  Follow the instructions to [set up a virtual device](https://developer.android.com/tools/devices/managing-avds.html) and [start the emulator](https://developer.android.com/tools/devices/emulator.html), then install [Android Accessibility Suite][GooglePlayStoreAndroidAccessibilitySuite] from the GooglePlay store.
+[Android Studio](https://developer.android.com/sdk/installing/studio.html) includes an emulator that for you to test assistive technologies in the [Android Accessibility Suite](https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback).  Follow the instructions to [set up a virtual device](https://developer.android.com/tools/devices/managing-avds.html) and [start the emulator](https://developer.android.com/tools/devices/emulator.html), then install [Android Accessibility Suite](https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback) from the GooglePlay store.
 
 > [!NOTE]
 > The iOS Simulator does not currently include VoiceOver.
@@ -104,11 +106,15 @@ Under macOS, if you want to test with an assistive technology only available for
 
 If an assistive technology is not available on your OS or you not possible to install one on a virtual machine or emulator, cloud-based assistive technology testing tools are the next best thing.
 
-*   [Assistiv Labs (commercial)](https://assistivlabs.com) enables you to manually test with assistive technologies through any modern web browser.  Select an assistive technology and browser and it connects you with a virtual machine, emulator, or real device that you can interact with.
+*  [Assistiv Labs](https://assistivlabs.com) (a commercial product) enables you to manually test with assistive technologies through any modern web browser.  Select an assistive technology and browser and it connects you with a virtual machine, emulator, or real device that you can interact with.
+
+See also [Cloud-based emulators and simulators](../../devtools-guide-chromium/device-mode/testing-other-browsers.md#cloud-based-emulators-and-simulators).
 
 
 <!-- ====================================================================== -->
 ## Resources for accessibility basics
+
+These are projects and initiatives for accessibility.
 
 ### The A11Y project
 
@@ -119,9 +125,10 @@ If an assistive technology is not available on your OS or you not possible to in
 The W3C [Web Accessibility Initiative (WAI)](https://w3.org/WAI) is an effort to help improve the accessibility of the web.  Their site provides a variety of resources for [Getting Started with Web Accessibility](https://www.w3.org/WAI/gettingstarted/Overview.html), [Designing for Inclusion](https://www.w3.org/WAI/users/Overview.html), [tutorials and presentations](https://www.w3.org/WAI/train.html), and more.
 
 
-
 <!-- ====================================================================== -->
 ## Accessibility blogs
+
+These are blogs about accessibility.
 
 ### TPGi, LLC
 
@@ -139,6 +146,8 @@ The W3C [Web Accessibility Initiative (WAI)](https://w3.org/WAI) is an effort to
 <!-- ====================================================================== -->
 ## Accessible examples
 
+These are libraries and examples for accessibility.
+
 ### ally.js - Tutorials
 
 JavaScript library to help modern web applications with accessibility concerns by making accessibility simpler.  For more information, go to [ally.js - Tutorials](http://allyjs.io/tutorials).
@@ -154,6 +163,8 @@ The [OpenAjax Alliance website](http://oaa-accessibility.org) is an excellent re
 
 <!-- ====================================================================== -->
 ## Accessibility techniques and tools
+
+These are techniques and tools for improving accessibility.
 
 ### Accessibility: Creating accessible extension icons for Microsoft Edge
 
