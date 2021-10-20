@@ -79,19 +79,13 @@ All processes that are associated with the browser process of your WebView2 are 
 *  [WebView2 Get Started Guides][Webview2IndexGetStarted]
 *  [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] - a comprehensive example of WebView2 capabilities.
 *  [WebView2 API reference][DotnetApiMicrosoftWebWebview2WpfWebview2]
-*  [Next steps][Webview2IndexNextSteps] in _Introduction to Microsoft Edge WebView2_.
-
-
-<!-- ====================================================================== -->
-## Getting in touch with the Microsoft Edge WebView team
-
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
+*  [See also][Webview2IndexNextSteps] in _Introduction to Microsoft Edge WebView2_.
 
 
 <!-- ====================================================================== -->
 <!-- links -->
 [Webview2IndexGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
-[Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
+[Webview2IndexNextSteps]: ../index.md#see-also "See also - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
 [WebView2ManageUDF]: ./user-data-folder.md "Manage the user data folder | Microsoft Docs"
 <!-- external links -->
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 Class | Microsoft Docs"

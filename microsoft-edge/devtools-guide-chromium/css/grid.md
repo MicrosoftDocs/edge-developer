@@ -24,7 +24,7 @@ CSS Grid is a powerful layout paradigm for the web.  A great place to get starte
 
 ## Discover CSS grids
 
-When an HTML element on your page has `display: grid` or `display: inline-grid` applied to it, a `grid` badge is displayed next to it in the [Elements][DevtoolsGuideChromiumOpen] panel.
+When an HTML element on your page has `display: grid` or `display: inline-grid` applied to it, a `grid` badge is displayed next to it in the [Elements][DevtoolsGuideOpen] panel.
 
 :::image type="complex" source="../media/grid-discover-grid.msft.png" alt-text="Discover grid" lightbox="../media/grid-discover-grid.msft.png":::
    Discover grid
@@ -177,13 +177,10 @@ To highlight the HTML element in the **Elements** tool and scroll to it on the w
    Highlight the grid
 :::image-end:::
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsGuideOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
 
 [JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "CSS grid | jec.fyi"
 [JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "CSS grid | jec.fyi"

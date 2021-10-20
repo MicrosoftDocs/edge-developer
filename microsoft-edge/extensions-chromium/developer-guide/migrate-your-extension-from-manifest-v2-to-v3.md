@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, edge extensions, browser extensions, addons, developer, manifest v3, migrate to manifest v3
+keywords: microsoft edge, extensions development, edge extensions, browser extensions, addons, developer, manifest v3, migrate to manifest v3
 ---
 # Prepare to update your extensions from Manifest v2 to v3
 

@@ -37,7 +37,7 @@ The DevTools team has contributed 170 changes to Chromium to address high-impact
 
 Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.
 
-If you use screen readers or the keyboard to navigate around the DevTools, send your feedback by [tweeting][PostTweetEdgeDevTools] at us orchoosing the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon!
+If you use screen readers or the keyboard to navigate around the DevTools, send your feedback by [tweeting][PostTweetEdgeDevTools] at us or selecting the [Send Feedback][Contact] icon!
 
 Chromium issue [#963183][CR963183]
 
@@ -102,7 +102,7 @@ Navigate to `edge://flags` and set the **Enable localized Developer Tools** flag
    The DevTools in German
 :::image-end:::
 
-If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or choose the [Send Feedback](#getting-in-touch-with-microsoft-edge-devtools-team) icon.
+If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or choose the [Send Feedback][Contact] icon.
 
 Chromium issue [#941561][CR941561]
 
@@ -126,7 +126,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 
 To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Select `F1` in the DevTools or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.  Now, select `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.
 
-We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team).
+We're working on the UI and adding more functionality to the 3D View so please send us your [feedback][Contact].
 
 Chromium issue [#987787][CR987787]
 
@@ -136,7 +136,7 @@ The DevTools team has also released some extensions for [Visual Studio Code][Vis
 
 #### Elements for Microsoft Edge
 
-Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge (Chromium)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code extension.
+Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge ][VisualStudioMarketplaceElementsMicrosoftEdgeExtension] Visual Studio Code extension.
 
 :::image type="complex" source="../../images/2019/12/elements-for-edge.msft.png" alt-text="The Elements tool in Visual Studio Code using the Elements for Microsoft Edge extension" lightbox="../../images/2019/12/elements-for-edge.msft.png":::
    The **Elements** tool in Visual Studio Code using the Elements for Microsoft Edge extension
@@ -316,12 +316,9 @@ Chromium issue [#1004203][CR1004203]
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
 
-## Getting in touch with Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevToolsCommandMenuIndex]: ../../../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"
 [DevToolsCoverageIndex]: ../../../coverage/index.md "Find unused JavaScript and CSS code with the Coverage tool in Microsoft Edge DevTools | Microsoft Docs"
 [DevToolsDeviceModeIndex]: ../../../device-mode/index.md#simulate-a-mobile-viewport "Simulate a mobile viewport - Simulate mobile devices with Device Mode in Microsoft Edge DevTools | Microsoft Docs"
@@ -329,9 +326,8 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevToolsNetworkReferenceDisplayInitiatorsDependencies]: ../../../network/reference.md#display-initiators-and-dependencies "Display initiators and dependencies - Network Analysis Reference | Microsoft Docs"
 [VisualStudioCodeDebuggerEdgeExtension]: ../../../../visual-studio-code/debugger-for-edge.md "Debugger for Microsoft Edge Visual Studio Code extension | Microsoft Docs"
 [VisualStudioCodeElementEdgeExtension]: ../../../../visual-studio-code/elements-for-edge.md "Elements for Microsoft Edge Visual Studio Code extension | Microsoft Docs"
-
 <!--  [201912Webassembly]: webassembly.md "Improved WebAssembly debugging in Microsoft Edge DevTools"  -->
-
+<!-- external links -->
 [CR842488]: https://crbug.com/842488 "Add the Initiator field to the Headers tab | Chromium Bugs"
 [CR988253]: https://crbug.com/988253 "Bug DevTools - No Association between Network request and the Timeline Graph | Chromium Bugs"
 [CR993366]: https://crbug.com/993366 "Please show path part of URL in network panel requests list | Chromium Bugs"
@@ -357,7 +353,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter account"
 [VisualStudioCode]: https://aka.ms/vscode "Visual Studio Code"
 [VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Debugger for Microsoft Edge - Visual Studio Marketplace"
-[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Elements for Microsoft Edge \(Chromium\) - Visual Studio Marketplace"
+[VisualStudioMarketplaceElementsMicrosoftEdgeExtension]: https://aka.ms/elements4code "Elements for Microsoft Edge - Visual Studio Marketplace"
 [VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code "webhint - Visual Studio Marketplace"
 [Webhint]: https://aka.ms/webhint "webhint"
 [WebhintBrowserExtension]: https://aka.ms/webhint/browser-extension "Webhint Browser Extension | webhint documentation"
@@ -365,6 +361,8 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [TrackingPrevention]: https://aka.ms/microsoftedge/tracking-prevention-blog "Improving Tracking Prevention in Microsoft Edge blog post"
 [TheWebWeWant]: https://aka.ms/webwewant "The Web We Want"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-80) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).

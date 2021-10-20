@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, web development, html, css, javascript, developer, extensions, mv2, mv3, manifest
+keywords: microsoft edge, web development, html, css, javascript, developer, extensions, mv2, mv3, manifest
 ---
 
 # Manifest file format for extensions
 
-Every extension for Microsoft Edge (Chromium) has a JSON-formatted manifest file, named `manifest.json`.  The manifest file is the blueprint of your extension.  The manifest file includes information such as:
+Every extension for Microsoft Edge has a JSON-formatted manifest file, named `manifest.json`.  The manifest file is the blueprint of your extension.  The manifest file includes information such as:
 
 *  The version number of the extension.
 *  The title of the extension.

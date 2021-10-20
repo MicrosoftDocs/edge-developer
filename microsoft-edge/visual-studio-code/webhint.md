@@ -86,7 +86,7 @@ If you want more control over the hints and parsers that get activated, create a
 <!-- ====================================================================== -->
 ## Getting in touch with the webhint team
 
-Send your feedback by [filing an issue][GithubWebhintioIssuesNew] in the [webhint GitHub repo][GithubWebhintio].
+Send your feedback by [filing an issue][GithubWebhintioIssuesNew] in the [webhintio/hint][GithubWebhintio] repo.
 
 To contribute to the extension, navigate to [Contributing][GithubWebhintioExtensionVscodeContributing] at the `webhintio/hint` repo.
 
@@ -99,7 +99,7 @@ To contribute to the extension, navigate to [Contributing][GithubWebhintioExtens
 
 
 <!-- ====================================================================== -->
-<!--links -->
+<!-- links -->
 [AccessibilityIndex]: /microsoft-edge/accessibility "Accessibility | Microsoft Docs"
 [VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Visual Studio Code | Microsoft Docs"
 <!-- external links -->

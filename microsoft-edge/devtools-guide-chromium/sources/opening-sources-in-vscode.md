@@ -84,12 +84,3 @@ The **Settings** > **Workspace** page lists your workspaces, along with configur
 *  To exclude a folder from a specific workspace, next to **Excluded folders**, select the **Add** button.
 
 *  To add an additional workspace, select the **Add folder** button.
-
-
-<!-- ====================================================================== -->
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-<!-- links -->
-<!-- external: -->

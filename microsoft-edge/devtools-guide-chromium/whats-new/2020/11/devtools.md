@@ -33,7 +33,7 @@ ms.localizationpriority: high
 
 Microsoft Edge Dev is now supported on Ubuntu, Debian, Fedora, and openSUSE distributions.  Download and install the Microsoft Edge Dev `.deb` or `.rpm` package directly from the [Microsoft Edge Insider site][MicrosoftinsiderDownloadPlatformLinux] or use the standard package management tools of your Linux distribution.
 
-If you are using a Linux environment in your continuous integration and delivery \(CI/CD\) solutions, Microsoft Edge Driver is also available on Linux.  To get started automating Microsoft Edge Dev with Microsoft Edge Driver, navigate to [Microsoft Edge Driver Downloads page][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads].  For help with automating Microsoft Edge Dev along with Microsoft Edge Driver, navigate to [Use WebDriver (Chromium) for test automation][WebdriverChromiumMain].
+If you are using a Linux environment in your continuous integration and delivery \(CI/CD\) solutions, Microsoft Edge Driver is also available on Linux.  To get started automating Microsoft Edge Dev with Microsoft Edge Driver, navigate to [Microsoft Edge Driver Downloads page][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads].  For help with automating Microsoft Edge Dev along with Microsoft Edge Driver, navigate to [Use WebDriver for test automation][WebdriverMain].
 
 :::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="DevTools in Microsoft Edge on Linux" lightbox="../../media/2020/11/edge-on-linux.msft.png":::
    DevTools in Microsoft Edge on Linux
@@ -340,12 +340,9 @@ For example, the **Network** tool previously used `kB` in the labels, but used `
 
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
 
-## Getting in touch with Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: ../10/devtools.md#customize-keyboard-shortcuts-in-settings "Customize keyboard shortcuts in Settings - What's New In DevTools (Microsoft Edge 87) | Microsoft Docs"
 [WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: ../06/devtools.md#webhint-feedback-in-the-issues-panel "webhint feedback in the Issues panel - What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"
 
@@ -361,11 +358,11 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: ../../../network/reference.md#copy-formatted-response-json-to-the-clipboard "Copy formatted response JSON to the clipboard - Network Analysis reference | Microsoft Docs"
 [DevtoolsNetworkReferenceDisplayTimingBreakdownRequest]: ../../../network/reference.md#display-the-timing-breakdown-of-a-request "Display the timing breakdown of a request - Network Analysis reference | Microsoft Docs"
 
-<!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: ../../../css/reference.md#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->
+<!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: ../../../css/reference.md#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS features reference | Microsoft Docs"  -->
 
 [ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"
 
-[WebdriverChromiumMain]: ../../../../webdriver-chromium/index.md "Use WebDriver (Chromium) for test automation | Microsoft Docs"
+[WebdriverMain]: ../../../../webdriver-chromium/index.md "Use WebDriver for test automation | Microsoft Docs"
 
 [MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "Download WebDriver | Microsoft Developer"
 

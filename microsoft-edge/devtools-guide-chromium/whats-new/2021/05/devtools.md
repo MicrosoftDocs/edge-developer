@@ -14,7 +14,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 > [!TIP]
 > The **Microsoft Build 2021** conference was on May 25-27.  Here's a video from Build about the updates to DevTools:
-> [Microsoft Edge | State of the Platform][YoutubeEdgeStateOfThePlatform] - Microsoft Edge brings a compelling and consistent platform with tools for developers.  As our legacy browsers phase out of support, Edge will soon be the only supported browser from Microsoft on Windows 10.  Join us to learn about the latest across the Edge platform, tools, and web apps.
+> [Microsoft Edge | State of the Platform][YoutubeEdgeStateOfThePlatform] - Microsoft Edge brings a compelling and consistent platform with tools for developers.  As our legacy browsers phase out of support, Edge will soon be the only supported browser from Microsoft on Windows 10 or later.  Join us to learn about the latest across the Edge platform, tools, and web apps.
 
 
 ## The Close button is no longer hidden when DevTools is narrow
@@ -278,11 +278,7 @@ For more about intersection observers, navigate to [Trust is good, observation i
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
-## Getting in touch with Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
-
+<!-- ====================================================================== -->
 <!-- links -->
 [DevtoolsEvaluatePerfRefAnalyzeAPerfRecording]: ../../../evaluate-performance/reference.md#analyze-a-performance-recording "Analyze a performance recording | Microsoft Docs"
 <!-- external links -->

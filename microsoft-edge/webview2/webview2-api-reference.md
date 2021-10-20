@@ -11,7 +11,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 ---
 # Microsoft Edge WebView2 API Reference
 
-The Microsoft Edge WebView2 control enables you to host web content in your application using [Microsoft Edge (Chromium)](https://www.microsoftedgeinsider.com) as the rendering engine.  For more information, navigate to [Overview of Microsoft Edge WebView2](./index.md) and [Get started with WebView2](./get-started/win32.md).
+The Microsoft Edge WebView2 control enables you to host web content in your application using Chromium-based [Microsoft Edge](https://www.microsoftedgeinsider.com) as the rendering engine.  For more information, navigate to [Overview of Microsoft Edge WebView2](./index.md) and [Get started with WebView2](./get-started/win32.md).
 <!-- linking to a parent node of the TOC ("Get started with WebView2") isn't supported, so the above link goes to the first child article, but with link text of the parent TOC node. -->
 
 
@@ -26,8 +26,9 @@ WebView2 is available for the following languages and frameworks.
     *   [Core][WinrtMicrosoftWebWebview2CoreNamespace]
     *   [COM Interop][WinrtComInteropInterfaces]
 
-<!-- links -->
 
+<!-- ====================================================================== -->
+<!-- links -->
 [DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Microsoft.Web.WebView2.Core Namespace | Microsoft Docs"
 [DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf Namespace | Microsoft Docs"
 [DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"
