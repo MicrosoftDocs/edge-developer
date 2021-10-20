@@ -21,7 +21,7 @@ the articles only seem to cover one aspect, look for overall coverage, check oth
 <!-- ====================================================================== -->
 ## See also
 
-* [Set user agent string](../device-mode/index.md#set-user-agent-string), in _Emulate mobile devices in Microsoft Edge DevTools_.
+* [Set user agent string](../device-mode/index.md#set-the-user-agent-string), in _Emulate mobile devices in Microsoft Edge DevTools_.
 
 * [Network Analysis reference](../network/reference.md)
 
