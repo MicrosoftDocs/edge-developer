@@ -241,9 +241,9 @@ Microsoft Edge generates a new random ID when making requests to the location se
 
 ## Import browser data
 
-Microsoft Edge offers an interactive and seamless experience when you launch the browser for the first time. You can import your browser data to Microsoft Edge from another browser. During import, you may either keep your existing data or delete it and start fresh. The data includes your favorites, browsing history, autofill data, extensions, settings, and other browsing data.
+Microsoft Edge offers an interactive and seamless experience when you launch the browser for the first time.  You can import your browser data to Microsoft Edge from another browser.  During import, you can either keep your existing data, or delete it and start fresh.  The data includes your favorites, browsing history, autofill data, extensions, settings, and other browsing data.
 
-Your browsing data from older versions of Microsoft Edge is automatically imported when you update Microsoft Edge. With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system. Importing your data is completed locally on your device, stored locally, and is not sent to Microsoft unless you agree to sync your browsing data.
+Your browsing data from older versions of Microsoft Edge is automatically imported when you update Microsoft Edge.  With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  Importing your data is completed locally on your device, and is stored locally, and is not sent to Microsoft unless you agree to sync your browsing data.
 
 :::image type="complex" source="./media/migration.png" alt-text="Import" lightbox="./media/migration.png":::
    Import

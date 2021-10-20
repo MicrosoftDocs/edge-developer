@@ -81,7 +81,8 @@ You are able to view memory allocation by JavaScript function.  For more informa
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevToolsOpenIndex]: ../open/index.md "Open Microsoft Edge (Chromium) DevTools | Microsoft Docs"
+
+[DevToolsOpenIndex]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Investigate memory allocation by function - Fix Memory Problems | Microsoft Docs"
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->

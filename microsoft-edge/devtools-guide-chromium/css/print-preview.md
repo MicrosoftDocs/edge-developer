@@ -43,7 +43,7 @@ From here, you may display and change your CSS, like any other web page.  Naviga
 
 <!-- ====================================================================== -->
 <!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge Developer tools | Microsoft Docs"
 [DevToolsCSSGetStarted]: ./index.md "Get started with viewing and changing CSS | Microsoft Docs"
 
 [MDNUsingMediaQueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Using media queries | MDN"
