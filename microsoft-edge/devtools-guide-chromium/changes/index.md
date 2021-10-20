@@ -40,13 +40,13 @@ Either way will open the the **Changes tool** in the DevTools drawer.
 
 ## Using the Changes tool
 
-Each modified file is listed in the side pane and activating it shows the modifications as a `diff` view. You won't see the whole file you changes using any of the tools available in DevTools but only the parts that have change with a few lines before and after displayed to provide context. 
+Each modified file is listed in the side pane and activating it shows the modifications as a `diff` view. You won't see the whole file you changed using any of the tools available in DevTools but only the parts that have changed with a few lines before and after displayed to provide context. 
 
 :::image type="content" source="media/changes-tool-diff-view.msft.png" alt-text="A diff view of the file showing that there were two modifications in differnt parts of the file, one of them with a deletion and an insertion and one with a deleted line":::
 
-Each line that was removed from the code is preceeded by a `-` and colored red and each new line has a `+` in front of it and is colored green. You can also see the changes in the line numbers and clicking any of the modified items will take you to the **Sources** tool and to the location in the original file. 
+Each line that was removed from the code is preceeded by a `-` and colored red and each new line has a `+` in front of it and is colored green. You can also see the changes in the line numbers. Clicking any of the modified items will take you to the **Sources** tool to the location in the original file. 
 
-You also get an overview on insertions and deletions happened to the current file. Activating the `Revert all changes to the current file` button shown as a circular arrow will undo all changes.
+You also get an overview on insertions and deletions that happened to the current file. Activating the `Revert all changes to the current file` button shown as a circular arrow will undo all changes.
  
 :::image type="content" source="media/changes-tool-undo-all.msft.png" alt-text="The Revert all changes to the current file button will allow you to undo everything that was done to the current file":::
 
