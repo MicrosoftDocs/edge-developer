@@ -45,7 +45,9 @@ When you load `WebView2Samples.sln` into Visual Studio, the following projects a
 | Deploying the Evergreen WebView2 Runtime | `WV2DeploymentWiXBurnBundleSample` <!-- below, section "Deploy the evergreen WebView2 Runtime", 2nd bullet --> | To learn about deploying [Evergreen WebView2 Runtime](concepts/distribution.md) with your applications, use the two `WV2Deployment*` samples.  The Burn Bundle sample, [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WV2DeploymentWiXBurnBundleSample/README.md), creates a [WiX](https://wixtoolset.org/) installer for [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) and uses [WiX Burn Bundle](https://wixtoolset.org/documentation/manual/v3/bundle/) to chain-install the Evergreen WebView2 Runtime. |
 | Deploy the Evergreen WebView2 Runtime | `WV2DeploymentWiXCustomActionSample` <!-- below, section "__" --> | The Custom Action sample, [WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WV2DeploymentWiXCustomActionSample/README.md), creates a [WiX](https://wixtoolset.org/) installer for [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) and uses [WiX Custom Action](https://wixtoolset.org/documentation/manual/v3/wixdev/extensions/authoring_custom_actions.html) to chain-install the Evergreen WebView2 Runtime. |
 
-:::image type="content" source="media/solution-file-webview2samples.png" alt-text="Solution File for WebView2Samples repo" lightbox="media/solution-file-webview2samples.png":::
+Solution Explorer for the `WebView2Samples` repo, showing the WebView2 samples as projects:
+
+:::image type="content" source="media/solution-file-webview2samples.png" alt-text="Solution Explorer for the WebView2Samples repo, showing the WebView2 samples as projects." lightbox="media/solution-file-webview2samples.png":::
 
 ### UWP/WinUI samples
 
