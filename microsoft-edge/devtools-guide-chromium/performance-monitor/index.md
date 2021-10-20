@@ -1,5 +1,5 @@
 ---
-description: The Performance monitor tool in Microsoft Edge DevTools.
+description: The Performance monitor tool provides real-time performance metrics to help investigate performance issues.
 title: Performance monitor
 author: MSEdgeTeam
 ms.author: msedgedevrel

@@ -372,7 +372,6 @@
                       href: devtools-guide-chromium/evaluate-performance/reference.md
                     - name: Timeline event reference
                       href: devtools-guide-chromium/evaluate-performance/performance-reference.md
-    # Performance monitor
             - name: Performance monitor
               href: devtools-guide-chromium/performance-monitor/index.md
     # Quick source
