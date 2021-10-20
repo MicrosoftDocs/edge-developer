@@ -18,11 +18,15 @@ Some common use cases include:
 * Send a native camera object and use its methods from a web app.
 * Run a dedicated JavaScript file on the web side of an application.
 
+
+<!-- ====================================================================== -->
 ## Before you begin
 
 This tutorial steps through the Sample App code to demonstrate some of the communication capabilities in WebView2. Clone the [WebView2 Samples App][WebView2Samples], build, and run to follow along.
 
-## Scenario: Simple Messaging
+
+<!-- ====================================================================== -->
+## Scenario: Simple messaging
 
 WebView2 controls let you exchange simple messages between web and native sides of an application. You can use data types such as `JSON` or `String` to send messages between the host application and WebView2.
 
@@ -265,7 +269,9 @@ When requested by the host app, the C++ file gets the window bounds and sends th
 
 1. The window bounds display on the web page.
 
-## Scenario: Send JavaScript Code
+
+<!-- ====================================================================== -->
+## Scenario: Send JavaScript code
 
 Set up the host app to run JavaScript on the web side. The host app specifies the code to run and passes it to the WebView control. 
 
@@ -275,10 +281,11 @@ If you want to send JavaScript information to the page using WebView2, use the `
 
 This method is often used to send code that executes on the web.
 
-For more information navigate to: [Use JavaScript in WebView2 apps][UseJavaScriptInWebView2Apps].
+For more information navigate to: [Use JavaScript in WebView2 apps](javascript.md).
 
 
-## Scenario: Send Native Objects
+<!-- ====================================================================== -->
+## Scenario: Send native objects
 
 Pass the native object to the web. Then call the object's methods from the web.
 
@@ -293,11 +300,9 @@ Passing a native object to the web side of an application is described in the [A
 Congratulations! You've successfully embedded web content into native applications.  
     
 
+<!-- ====================================================================== -->
 <!-- links -->
-
 [ScenarioWebMessageHTML]: https://github.com/MicrosoftEdge/WebView2Samples/blob/a12bfcc2bc8a1155529c35c7bd4645036f492ca0/SampleApps/WebView2APISample/assets/ScenarioWebMessage.html "ScenarioWebMessage HTML | GitHub Microsoft Edge WebView2 Samples"
-
-[UseJavaScriptInWebView2Apps]: /javascript "Use JavaScript in WebView2 apps - Microsoft Edge Development | Microsoft Docs"
 
 [WebView2inWin32apps]: ../get-started/win32.md "Get Started with WebView2 in Win32 apps | Microsoft Edge Development"
 
