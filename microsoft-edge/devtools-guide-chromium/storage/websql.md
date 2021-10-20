@@ -95,8 +95,9 @@ DevTools does not update tables in real-time.  To update the data in a table, co
 
 <!-- ====================================================================== -->
 <!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
-<!-- external links -->
+
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge  Developer Tools | Microsoft Docs"
+
 [W3CWebSQLStatus]: https://w3.org/TR/webdatabase/#status-of-this-document "Web SQL database | W3C"
 
 

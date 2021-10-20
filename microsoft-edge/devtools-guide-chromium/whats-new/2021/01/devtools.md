@@ -426,7 +426,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "Simulate a mobile viewport - Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: ../../../evaluate-performance/reference.md#record-load-performance "Record load performance - Performance analysis reference | Microsoft Docs"
-[DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) Developer Tools overview | Microsoft Docs"
+[DevtoolsIndex]: ../../../index.md "Microsoft Edge Developer Tools overview | Microsoft Docs"
 [DevtoolsInspectStylesEditFonts]: ../../../inspect-styles/edit-fonts.md "Edit CSS font styles and settings in the Styles pane in DevTools | Microsoft Docs"
 
 [DualScreenIntroductionHowToWorkWithSeam]: /dual-screen/introduction#how-to-work-with-the-seam "How to work with the seam - Introduction to dual-screen devices | Microsoft Docs"

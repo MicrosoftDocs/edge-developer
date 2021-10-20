@@ -1,5 +1,5 @@
 ---
-description: Microsoft Edge (Chromium) and Visual Studio Code.
+description: Microsoft Edge and Visual Studio Code.
 title: Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel

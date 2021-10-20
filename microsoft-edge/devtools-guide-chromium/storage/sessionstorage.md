@@ -99,8 +99,9 @@ Since you may run JavaScript in the **Console**, and since the **Console** has a
 
 <!-- ====================================================================== -->
 <!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"
-<!-- external links -->
+
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge  Developer tools | Microsoft Docs"
+
 [MDNSessionStorage]: https://developer.mozilla.org/docs/Web/API/Window/sessionStorage "Window.sessionStorage | MDN"
 
 

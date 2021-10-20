@@ -100,7 +100,7 @@ Chromium issue [#1076112][CR1076112]
 
 ### Screencasting navigation buttons display focus
 
-When remote debugging an [Android device][DevtoolsRemoteDebugAndroid], a [Windows 10 device][DevtoolsRemoteDebugWindows], or a [Surface Duo emulator][DevtoolsRemoteDebugDuoEmulator], you are able to toggle screencasting with the ![Toggle Screencast](../../../media/toggle-screencast-icon.msft.png) icon in the top-left corner of the DevTools.  With screencasting enabled, you are able to navigate the tab in Microsoft Edge on the remote device from the DevTools window.  In Microsoft Edge 84, these navigation buttons are now also keyboard accessible.
+When remote debugging an [Android device][DevtoolsRemoteDebugAndroid], a [Windows 10 or later device][DevtoolsRemoteDebugWindows], or a [Surface Duo emulator][DevtoolsRemoteDebugDuoEmulator], you are able to toggle screencasting with the ![Toggle Screencast](../../../media/toggle-screencast-icon.msft.png) icon in the top-left corner of the DevTools.  With screencasting enabled, you are able to navigate the tab in Microsoft Edge on the remote device from the DevTools window.  In Microsoft Edge 84, these navigation buttons are now also keyboard accessible.
 
 :::image type="complex" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="Select Shift+Tab from the screencasted URL bar shows focus on the Refresh button" lightbox="../../media/2020/05/screencasting-nav.msft.png":::
    Select `Shift`+`Tab` from the screencasted URL bar shows focus on the **Refresh** button
@@ -278,13 +278,13 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]: ../../../console/utilities.md#recently-chosen-element-or-javascript-object "Recently chosen element or JavaScript object - Console Utilities API Reference | Microsoft Docs"
 [DevtoolsCssReferenceColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "Change colors with the Color Picker - CSS features reference | Microsoft Docs"
 [DevtoolsDrawer]: ../../../customize/index.md#drawer "Drawer - Customize Overview | Microsoft Docs"
-[DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
+[DevtoolsIndex]: ../../../index.md "Microsoft Edge Developer Tools | Microsoft Docs"
 [DevtoolsIssuesIndex]: ../../../issues/index.md "Find And Fix Problems With The Microsoft Edge DevTools Issues Tab | Microsoft Docs"
 [DevtoolsNetworkDetails]: ../../../network/index.md#inspect-the-details-of-the-resource "Inspect the details of the resource | Microsoft Docs"
 [DevtoolsNetworkLog]: ../../../network/index.md#log-network-activity "Log network activity | Microsoft Docs"
 [DevtoolsRemoteDebugAndroid]: ../../../remote-debugging/index.md "Get Started with Remote Debugging Android Devices | Microsoft Docs"
 [DevtoolsRemoteDebugDuoEmulator]: ../../../remote-debugging/surface-duo-emulator.md "Get Started with Remote Debugging Surface Duo emulators | Microsoft Docs"
-[DevtoolsRemoteDebugWindows]: ../../../remote-debugging/windows.md "Get Started with Remote Debugging Windows 10 Devices | Microsoft Docs"
+[DevtoolsRemoteDebugWindows]: ../../../remote-debugging/windows.md "Get Started with Remote Debugging Windows devices | Microsoft Docs"
 
 [PwaIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"
 
@@ -312,7 +312,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [CSSWGDraftsColor4Changes3]: https://drafts.csswg.org/css-color#changes-from-3 "Changes from Colors 3 - CSS Color Module Level 4 | W3C CSS Working Group Editor Drafts"
 [CSSWGDraftsColor4Property]: https://drafts.csswg.org/css-color#the-color-property "3.  Foreground Color: the 'color'  - CSS Color Module Level 4 | W3C CSS Working Group Editor Drafts"
 
-[DesktopEdge]: https://www.microsoft.com/edge/ "Introducing the new Microsoft Edge"
+[DesktopEdge]: https://www.microsoft.com/edge/ "Download Microsoft Edge Browser | Microsoft"
 
 [GithubDomenicPromiseUnwrappingStatesFates]: https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md "States and Fates - domenic/promises-unwrapping | GitHub"
 

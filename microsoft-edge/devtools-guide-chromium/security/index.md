@@ -92,7 +92,8 @@ Choose one of the entries in the left-hand nav to view the details of the origin
 
 <!-- ====================================================================== -->
 <!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"
+
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge  Developer tools | Microsoft Docs"
 [DevToolsOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
 <!-- external links -->
 [LetsEncrypt]: https://letsencrypt.org "Let's Encrypt - Free SSL/TLS certificates"
