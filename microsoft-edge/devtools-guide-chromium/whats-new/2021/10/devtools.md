@@ -84,13 +84,83 @@ To view the history of this feature in the Chromium open-source project, see [Is
 
 
 <!-- ====================================================================== -->
-<!--
-Chrome What's New items to add:
+## Announcements from the Chromium project
+
+The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.
+
+
+<!-- ====================================================================== -->
 ## New CSS length authoring tools
+
+DevTools added an easier yet more flexible way to update lengths in CSS.
+
+In the Styles pane, look for any CSS property with length, such as as `height` or `padding`.
+
+Hover over the unit type, and notice that the unit type is underlined.  Click the unit type to select a unit type from the dropdown.
+
+Hover over the unit value, and your mouse pointer is changed to a horizontal cursor.  Drag horizontally to increase or decrease the value.  To adjust the value by 10, hold the `Shift` key while dragging.
+
+You can still edit the unit value as text — just click the value and start editing.
+
+Chromium issues: [1126178](https://crbug.com/1126178), [1172993](https://crbug.com/1172993).
+
+
+<!-- ====================================================================== -->
 ## Improved the display of properties
-## Sort snippets in the Sources panel
+
+DevTools improves the display of properties by:
+*  Always bolding and sorting own properties first, in the **Console**, **Sources** panel, and **Properties** pane.
+*  Flattening the properties display in the **Properties** pane.
+
+For example, the snippet below creates an [URL](https://developer.mozilla.org/docs/Web/API/URL) object `link` with 2 own properties: `user` and `access`, and updates the value of an inherited property `search`.
+
+```javascript
+/* example.js */
+
+const link = new URL('https://goo.gle/devtools-blog');
+
+link.user = { id: 1, name: 'Jane Doe' };
+link.access = 'admin';
+link.search = `?access=${link.access}`;
+```
+
+Try logging `link` in the **Console**.  Own properties are now bold and are first in the sort order.  These changes make it easier to spot custom properties, especially for [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) (such as `URL`) that have many inherited properties.
+
+Caption: Own properties are bold and sorted first
+
+Apart from these changes, the properties in the Properties pane are also flattened now for better DOM properties debugging experience, especially for [Web components](https://www.webcomponents.org/introduction).
+
+Caption: Flatten properties
+
+Chromium issues: [1076820](https://crbug.com/1076820), [1119900](https://crbug.com/1119900).
+
+
+<!-- ====================================================================== -->
+## Snippets are now sorted in the Sources panel
+
+Snippets in the **Snippets** pane in the **Sources** panel are now sorted alphabetically.  Previously, the snippets weren't sorted.
+
+Use the snippets feature to run commands quicker.  Watch this video for a tip!  [Chrome 85 - What’s New in DevTools](https://youtu.be/NOal2gTzftI?t=176)
+
+Caption: Sorted snippets in the Sources panel
+
+For more information about snippets, see [Run snippets of JavaScript on any webpage with Microsoft Edge DevTools](../../../javascript/snippets.md).
+
+Chromium issue: [1243976](https://crbug.com/1243976).
+
+
+<!-- ====================================================================== -->
 ## Improved UI for DevTools command menu
--->
+
+Do you find it hard to search for a file in the [Command Menu](../../../command-menu/index.md)?  Good news: the **Command Menu** user interface has been enhanced.
+
+Open the **Command Menu** to search for a file with keyboard shortcut `Control+P` in Windows and Linux, or `Command+P` in macOS.
+
+The UI improvements of the Command Menu are still ongoing; stay tuned for more updates.
+
+Caption: Command Menu
+
+Chromium issue: [1201997](https://crbug.com/1201997).
 
 
 <!-- ====================================================================== -->
