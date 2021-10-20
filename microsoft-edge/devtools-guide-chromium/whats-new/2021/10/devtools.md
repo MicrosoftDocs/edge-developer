@@ -1,9 +1,9 @@
 ---
-description: Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code.  All console errors and warnings now have a Search Web link.  Improved keyboard access for defining User-Agent Client Hints.  Improved filtering for grouped messages in the Console.
+description: Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code.  All console errors and warnings now have a Search Web button.  Improved keyboard access for defining User-Agent Client Hints.  Improved filtering for grouped messages in the Console.
 title: What's new in DevTools (Microsoft Edge 95)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/06/2021
+ms.date: 10/20/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -29,16 +29,16 @@ To provide feedback, in Visual Studio Code, in the **Activity Bar**, click **Mic
 
 
 <!-- ====================================================================== -->
-## All error and warning messages in the Console now have a Search Web link
+## All error and warning messages in the Console now have a Search Web button
 
-<!-- Title: All console errors and warnings now have a Search Web link -->
+<!-- Title: All console errors and warnings now have a Search Web button -->
 <!-- Subtitle: You can now search for any of your console errors and warnings right from DevTools. -->
 
-The **Search for this message on the Web** link is now available on all errors and warnings in the **Console**.  Previously, this link only appeared on some of the common errors and warnings.  Now the link has been added on the remaining errors and warnings.  The relevant error or warning string is used as the search string.
+The **Search for this message on the Web** button is now available on all errors and warnings in the **Console**.  Previously, this button only appeared on some of the common errors and warnings.  Now the button has been added on the remaining errors and warnings.  The relevant error or warning string is used as the search string.
 
 For more information, see [Search for Console errors on the web](../09/devtools.md#search-for-console-errors-on-the-web).
 
-:::image type="content" source="../../media/2021/10/console-message-search-web-link.png" alt-text="All error and warning messages in the Console now have a Search Web link." lightbox="../../media/2021/10/console-message-search-web-link.png":::
+:::image type="content" source="../../media/2021/10/console-message-search-web-button.png" alt-text="All error and warning messages in the Console now have a Search Web button." lightbox="../../media/2021/10/console-message-search-web-button.png":::
 
 
 <!-- ====================================================================== -->
