@@ -88,14 +88,13 @@ As an alternative approach, you can use **Command Menu** to access the different
 <!-- ====================================================================== -->
 ## See also
 
-* [Verify that the page is usable with blurred vision](test-blurred-vision.md)
+*  [Verify that the page is usable with blurred vision](test-blurred-vision.md)
 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevToolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
+[DevToolsIndex]: ../index.md "Microsoft Edge Developer Tools | Microsoft Docs"
 [DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analyze runtime performance | Microsoft Docs"
-
 [ColorblindawarenessMain]: https://www.colourblindawareness.org "The Colour Blind Awareness organisation"
 
 [AmfcbMain]: https://www.amfcb.org "The American Foundation for the Color Blind (AFCB)"

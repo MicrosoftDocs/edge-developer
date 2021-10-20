@@ -162,12 +162,9 @@ By default, Snippets are only available within DevTools, but you can also save t
 1.  Hover on the Snippet name, open the contextual menu \(right-click\), and select **Save as**.
 1.  Choose a file name and location when prompted.
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsConsoleIndex]: ../console/index.md "Console overview | Microsoft Docs"
 [DevToolsSourcesTool]: ../sources/index.md "Sources tool overview | Microsoft Docs"
 [DevtoolsJavascriptOverrides]: ./overrides.md "Overrides | Microsoft Docs"
@@ -175,6 +172,8 @@ By default, Snippets are only available within DevTools, but you can also save t
 [MDNScratchpad]: https://developer.mozilla.org/docs/Tools/Scratchpad "Scratchpad | MDN"
 [WikiBookmarklet]: https://en.wikipedia.org/wiki/Bookmarklet "Bookmarklet | Wikipedia"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).

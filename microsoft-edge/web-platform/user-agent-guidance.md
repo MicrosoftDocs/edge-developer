@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 09/22/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, compatibility, web platform, user-agent string, ua string, ua overrides, user-agent client hints, user agent client hints, ua client hints, ua ch, feature detection, browser identification, browser detection, header, https header, verify chromium, detect microsoft edge, detecting microsoft edge
+keywords: microsoft edge, compatibility, web platform, user-agent string, ua string, ua overrides, user-agent client hints, user agent client hints, ua client hints, ua ch, feature detection, browser identification, browser detection, header, https header, detect microsoft edge, detecting microsoft edge
 ---
 # Detecting Microsoft Edge from your website
 
@@ -108,7 +108,7 @@ To receive the following response.
 For more information, navigate to [getHighEntropyValues()][GithubWicgUaClientHintsGethighentropyvalues].
 
 ### platformVersion Hint
-The operating system version token in the `User-Agent` header hasn't been updated for Windows 11, and still reports `Windows NT 10.0`. 
+The operating system version token in the `User-Agent` header hasn't been updated for Windows 11, and still reports `Windows NT 10.0`.
 
 
 To distinguish between Windows 10 and Windows 11, request the `platformVersion` client hint in Microsoft Edge version 95 or later. Values between and including `1.0.0` and `12.0.0` represent releases of Windows 10, while values of `14.0.0` or later represent releases of Windows 11.
@@ -174,7 +174,7 @@ Map the user-agent string tokens to human-readable browser names to use in code.
 
 ## User-Agent overrides
 
-Sometimes, a website doesn't recognize the new Microsoft Edge user agent. As a result, a set of the features of the website may not work correctly. When Microsoft is notified about the types of issues, Microsoft contacts you \(a website owner\) and informs you about the updated user agent.
+Sometimes, a website doesn't recognize the Microsoft Edge user agent. As a result, a set of the features of the website may not work correctly. When Microsoft is notified about the types of issues, Microsoft contacts you \(a website owner\) and informs you about the updated user agent.
 
 You may need more time to update and test the user agent detection logic for your website to address the issues reported by Microsoft. To maximize compatibility for your users, the Microsoft Edge Beta and Stable channels use a list of user agent overrides. Use the user agent overrides while you update your website. The list of user agent overrides is provided by Microsoft.
 

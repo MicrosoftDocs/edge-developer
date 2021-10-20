@@ -50,7 +50,7 @@ For more information about automatic updating of the Evergreen Runtime, navigate
 
 ## Release cadence
 
-New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge \(Chromium\) browser, which has been approximately every six weeks.  This cadence is planned to change to every four weeks starting with Microsoft Edge version 94.
+New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge browser, which has been approximately every six weeks.  This cadence is planned to change to every four weeks starting with Microsoft Edge version 94.
 
 
 ## Minimum version and build number to instantiate WebView2
@@ -126,7 +126,8 @@ If your code determines that an API is unavailable in the client's installed Web
 This technique is listed as a WebView2 development best practice, at [Test whether APIs are supported by the installed WebView2 Runtime][Webview2ConceptsDevguideTestAPIs].
 
 
-<!--links -->
+<!-- ====================================================================== -->
+<!-- links -->
 [Webview2ConceptsDistribution]: ./distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
 [Webview2ReleaseNotes]: ../release-notes.md "Release notes for WebView2 SDK | Microsoft Docs"
 [Webview2ReleaseNotes1062222]: ../release-notes.md#1062222 "1.0.622.22 - Release notes for WebView2 SDK | Microsoft Docs"

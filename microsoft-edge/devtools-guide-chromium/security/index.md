@@ -89,15 +89,13 @@ Choose one of the entries in the left-hand nav to view the details of the origin
    Main origin details
 :::image-end:::
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge  Developer tools | Microsoft Docs"
 [DevToolsOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-
+<!-- external links -->
 [LetsEncrypt]: https://letsencrypt.org "Let's Encrypt - Free SSL/TLS certificates"
 
 [Webhint]: https://webhint.io "webhint"
@@ -105,6 +103,8 @@ Choose one of the entries in the left-hand nav to view the details of the origin
 
 <!--[mixed]: /web/fundamentals/security/prevent-mixed-content/what-is-mixed-content ""  -->
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/security/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).

@@ -23,7 +23,7 @@ A great place to get started with Web Authentication is the [Web Authentication 
     [webauthndemo.appspot.com][AppspotWebauthndemo]
 
 1.  Sign into the website.
-1.  [Open DevTools][DevtoolsGuideChromiumOpen].
+1.  [Open DevTools][DevtoolsGuideOpen].
 1.  To open the **WebAuthn** tool, choose the **Customize and control DevTools** \(`...`\) icon > **More tools** > **WebAuthn**.
 
     :::image type="complex" source="../media/webauthn-webauthn-tab.msft.png" alt-text="WebAuthn tool" lightbox="../media/webauthn-webauthn-tab.msft.png":::
@@ -110,13 +110,11 @@ To remove a virtual authenticator, next to the authenticator, choose the **Remov
    Remove authenticator
 :::image-end:::
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsGuideOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
 
 [AppspotWebauthndemo]: https://webauthndemo.appspot.com "Webauthn demo | Appspot"
 
@@ -145,6 +143,8 @@ Level 2 | GitHub"
 An API for accessing Public Key Credentials
 Level 2 | GitHub"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/webauthn/index) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).

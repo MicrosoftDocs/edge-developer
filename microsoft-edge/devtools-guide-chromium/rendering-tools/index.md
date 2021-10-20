@@ -151,7 +151,7 @@ Compositing is where the painted parts of the page are put together for displayi
 
 ### Paint and composite: Tools
 
-Want to know how long painting takes or how often painting occurs?  Check the [Enable advanced paint instrumentation][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] setting in the **Performance** panel and then take a recording.  If most of your rendering time is spent painting, you have paint problems.
+Want to know how long painting takes or how often painting occurs?  Check the [Enable advanced paint instrumentation][DevtoolsEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] setting in the **Performance** panel and then take a recording.  If most of your rendering time is spent painting, you have paint problems.
 
 <!--
 :::image type="complex" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording" lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
@@ -176,14 +176,11 @@ The following table describes some common paint and composite problems and poten
 <!--todo: add Simplify paint complexity and reduce paint areas section when available  -->
 <!--todo: add Stick to compositor-only properties and manage layer count section when available  -->
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Speed up JavaScript runtime | Microsoft Docs"
-[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "Turn on advanced paint instrumentation - Performance analysis reference | Microsoft Docs"
+[DevtoolsEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "Turn on advanced paint instrumentation - Performance analysis reference | Microsoft Docs"
 
 <!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: ./rendering-tools/forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts | Microsoft Docs"  -->
 
@@ -207,6 +204,8 @@ The following table describes some common paint and composite problems and poten
 
 [GitHubWilsonpageFastdom]: https://github.com/wilsonpage/fastdom "wilsonpage/fastdom | GitHub"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) and [Meggin Kearney][MegginKearney] \(Tech Writer\).

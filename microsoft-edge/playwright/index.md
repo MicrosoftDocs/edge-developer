@@ -15,7 +15,7 @@ keywords: microsoft edge, web development, developer, tools, automation, test, p
 
 Playwright launches [headless browsers][WikiHeadlessBrowser] by default.  Headless browsers do not display a UI, so instead you must use the command line.  You may also configure Playwright to run full \(non-headless\) Microsoft Edge as well.
 
-By default, when you install Playwright, the installer downloads [Chromium][ChromiumHome], [Firefox][FirefoxMain], and [WebKit][WebKitMain].  If you have Microsoft Edge \(Chromium\) installed as well, Playwright just needs a one-line code change to test your website or app in Microsoft Edge.  To download Microsoft Edge \(Chromium\), navigate to [Download Microsoft Edge][MicrosoftEdgeDownload].
+By default, when you install Playwright, the installer downloads [Chromium][ChromiumHome], [Firefox][FirefoxMain], and [WebKit][WebKitMain].  If you have Microsoft Edge installed as well, Playwright just needs a one-line code change to test your website or app in Microsoft Edge.  To download Microsoft Edge, navigate to [Download Microsoft Edge][MicrosoftEdgeDownload].
 
 ## Installing Playwright
 
@@ -30,7 +30,7 @@ npm i playwright
 > [!NOTE]
 > [Playwright][PlaywrightMain] requires Node.js version 10.17 or above. Run `node -v` from the command line to ensure you have a compatible version of Node.js.  The browser binaries for Chromium, Firefox and WebKit work across Windows, macOS, and Linux. For more information, navigate to [Playwright System Requirements][PlaywrightSystemRequirements].
 
-Playwright should be familiar to users of other browser-testing frameworks like [WebDriver][WebDriverChromiumMain] or [Puppeteer][PuppeteerMain].  You create an instance of the browser, open a page, and then manipulate it with the [Playwright API][PlaywrightAPIReference].  In the following code snippet, Playwright launches Microsoft Edge \(Chromium\), navigates to `https://www.microsoft.com/edge`, and saves a screenshot as `example.png`.
+Playwright should be familiar to users of other browser-testing frameworks like [WebDriver][WebDriverChromiumMain] or [Puppeteer][PuppeteerMain].  You create an instance of the browser, open a page, and then manipulate it with the [Playwright API][PlaywrightAPIReference].  In the following code snippet, Playwright launches Microsoft Edge, navigates to `https://www.microsoft.com/edge`, and saves a screenshot as `example.png`.
 
 Copy the following code snippet and save it as `example.js`.
 
@@ -49,13 +49,13 @@ const { chromium } = require('playwright');
 })();
 ```
 
-Change `executablePath` to point to your installation of Microsoft Edge \(Chromium\).  For example, on macOS, the `executablePath` for Microsoft Edge Canary should be set to `/Applications/Microsoft\ Edge\ Canary.app/`.  To find the `executablePath`, navigate to `edge://version` and copy the **Executable path** on that page or install the [edge-paths][npmEdgePaths] package with the following command.
+Change `executablePath` to point to your installation of Microsoft Edge.  For example, on macOS, the `executablePath` for Microsoft Edge Canary should be set to `/Applications/Microsoft\ Edge\ Canary.app/`.  To find the `executablePath`, navigate to `edge://version` and copy the **Executable path** on that page or install the [edge-paths][npmEdgePaths] package with the following command.
 
 ```shell
 npm i edge-paths
 ```
 
-The following code snippet uses the [edge-paths][npmEdgePaths] package to programmatically find the path to your installation of Microsoft Edge \(Chromium\) on your OS.
+The following code snippet uses the [edge-paths][npmEdgePaths] package to programmatically find the path to your installation of Microsoft Edge on your OS.
 
 ```javascript
 const edgePaths = require("edge-paths");
@@ -66,7 +66,7 @@ const EDGE_PATH = edgePaths.getEdgePath();
 Finally, set `executablePath: EDGE_PATH` in `example.js`.  Save your changes.
 
 > [!NOTE]
-> Microsoft Edge \(EdgeHTML\) does not work with Playwright.  You must install [Microsoft Edge \(Chromium\)][MicrosoftEdgeDownload] to continue following this example.
+> Microsoft Edge \(EdgeHTML\) doesn't work with Playwright.  You must install [Microsoft Edge \(Chromium\)][MicrosoftEdgeDownload] to continue following this example.
 
 Now run `example.js` from the command line.
 
@@ -88,13 +88,11 @@ Playwright launches Microsoft Edge, navigates to `https://www.microsoft.com/edge
 
 For more information about Playwright, navigate to the [Playwright website][PlaywrightMain].  Check out the  [Playwright repo][PlaywrightRepo] on GitHub.  To share your feedback on automating and testing your website or app with Playwright, [file an issue][PlaywrightRepoNewIssue].
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../devtools-guide-chromium/includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 
-[WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver (Chromium) | Microsoft Docs"
+[WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver | Microsoft Docs"
 [PuppeteerMain]: ../puppeteer/index.md "Puppeteer | Microsoft Docs"
 
 [MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge: Making the web better through more open-source collaboration | Microsoft Experience Blog"

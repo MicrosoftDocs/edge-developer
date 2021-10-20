@@ -91,12 +91,6 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 
 <!-- ====================================================================== -->
-## Getting in touch with Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
-
-<!-- ====================================================================== -->
 <!-- links -->
 [EdgeDevToolsExtensionForVSCode]: ../../../../visual-studio-code/microsoft-edge-devtools-extension.md "Microsoft Edge DevTools extension for Visual Studio Code | Microsoft Docs"
 [LookupErrorsWebFromConsole]: ../../../console/index.md#look-up-error-messages-on-the-web-from-the-console "Look up error messages on the web from the Console - Use the Console | Microsoft Docs"

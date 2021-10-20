@@ -1,34 +1,36 @@
 ---
-description: Get started with Remote Debugging Windows 10 devices
-title: Get started with remote debugging Windows 10 Devices
+description: Get started with Remote Debugging Windows devices
+title: Get started with remote debugging Windows devices
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, remote, debugging, windows 10, windows, device portal
+keywords: microsoft edge, web development, f12 tools, devtools, remote, debugging, windows 10, Windows 10 and later, Windows 11, windows, device portal
 ---
-# Get started with remote debugging Windows 10 Devices
+# Get started with remote debugging Windows devices
 
-Remote debug live content on a Windows 10 device from your Windows or macOS computer.  This tutorial teaches you the following tasks.
+Remote debug live content on a Windows 10 or later device from your Windows or macOS computer.  This tutorial teaches you the following tasks:
 
-*   Set up your Windows 10 device for remote debugging and connect to it from your development machine.
-*   Inspect and debug live content on your Windows 10 device from your development machine.
-*   Screencast content from your Windows 10 device onto a DevTools instance on your development machine.
+*   Set up your Windows device for remote debugging and connect to it from your development machine.
+*   Inspect and debug live content on your Windows device from your development machine.
+*   Screencast content from your Windows device onto a DevTools instance on your development machine.
 
+
+<!-- ====================================================================== -->
 ## Step 1: Set up the host (debuggee machine)
 
-The host or debuggee machine is the Windows 10 device that you want to debug.  It may be a remote device that is hard for you to physically access or it may not have keyboard and mouse peripherals, making it difficult to interact with the Microsoft Edge DevTools on that device.  To set up the host \(debuggee\) machine, you need to complete the following actions.
+The host or debuggee machine is the Windows 10 or later device that you want to debug.  It may be a remote device that is hard for you to physically access or it may not have keyboard and mouse peripherals, making it difficult to interact with the Microsoft Edge DevTools on that device.  To set up the host \(debuggee\) machine, you need to complete the following actions.
 
-*   Install and configure [Microsoft Edge (Chromium)][MicrosoftEdgeMain]
+*   Install and configure [Microsoft Edge][MicrosoftEdgeMain]
 *   Install the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] from the [Microsoft Store][MicrosoftStoreAppsWindows]
 *   Activate [Developer Mode][WindowsAppsGetStartedEnableYourDeviceForDevelopment] and enable [Device Portal][WindowsUwpDebugTestPerfDevicePortal]
 
-### Install and configure Microsoft Edge (Chromium)
+### Install and configure Microsoft Edge
 
-If you have not already, install Microsoft Edge \(Chromium\) from [this page][MicrosoftEdgeMain].  If you are using a pre-installed version of Microsoft Edge on the host \(debuggee\) machine, verify that you have Microsoft Edge \(Chromium\) and not Microsoft Edge \(EdgeHTML\).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.
+If you have not already, install Microsoft Edge from [this page][MicrosoftEdgeMain].  If you are using a pre-installed version of Microsoft Edge on the host \(debuggee\) machine, verify that you have Microsoft Edge and not Microsoft Edge \(EdgeHTML\).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.
 
-Now navigate to `edge://flags` in Microsoft Edge \(Chromium\).  In **Search flags**, type in **Enable remote debugging through Windows Device Portal**.  Set that flag to **Enabled**.  Then, choose the **Restart** button to restart Microsoft Edge \(Chromium\).
+Now navigate to `edge://flags` in Microsoft Edge.  In **Search flags**, type in **Enable remote debugging through Windows Device Portal**.  Set that flag to **Enabled**.  Then, choose the **Restart** button to restart Microsoft Edge.
 
 :::image type="complex" source="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png" alt-text="Setting the Enable remote debugging through Windows Device Portal flag to Enabled" lightbox="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png":::
    Setting the **Enable remote debugging through Windows Device Portal** flag to **Enabled**
@@ -39,7 +41,7 @@ Now navigate to `edge://flags` in Microsoft Edge \(Chromium\).  In **Search flag
 Install the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] from the [Microsoft Store][MicrosoftStoreAppsWindows].
 
 > [!NOTE]
-> The **Get** button for the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] may be disabled if you are on Windows 10 version 1809 or earlier.  To set up the host \(debuggee\) machine, it must be running Windows 10 version 1903 or later.  Update the host \(debuggee\) machine to acquire the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt].
+> The **Get** button for the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] may be disabled if you are on Windows 10 or later version 1809 or earlier.  To set up the host \(debuggee\) machine, it must be running Windows 10 version 1903 or later.  Update the host \(debuggee\) machine to acquire the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt].
 
 :::image type="complex" source="../media/remote-debugging-windows-media-remote-tools-in-store.msft.png" alt-text="The Remote Tools for Microsoft Edge \(Beta\) in the Microsoft Store" lightbox="../media/remote-debugging-windows-media-remote-tools-in-store.msft.png":::
    The [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt] in the [Microsoft Store][MicrosoftStoreAppsWindows]
@@ -56,7 +58,7 @@ If it is listed as **Public**, navigate to **Settings** > **Network & Internet**
 Now, open the **Settings** app.  In **Find a setting**, enter `Developer settings` and choose it.  Toggle on **Developer Mode**.  You may now turn on the **Device Portal** by setting **Turn on remote diagnostics over local area network connections** to **On**.  You may then optionally turn **Authentication** on so that the client \(debugger\) device must provide the correct credentials to connect to this device.
 
 > [!NOTE]
-> If **Turn on remote diagnostics over local area network connections.** was previously turned on, you must turn it off and turn it on again for **Device Portal** to work with the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt].  If  a **For developers** section is not displayed in **Settings**, **Device Portal** may already be turned on so try restarting the Windows 10 device instead.
+> If **Turn on remote diagnostics over local area network connections.** was previously turned on, you must turn it off and turn it on again for **Device Portal** to work with the [Remote Tools for Microsoft Edge (Beta)][MicrosoftStoreApps9p6cmfv44zlt].  If  a **For developers** section is not displayed in **Settings**, **Device Portal** may already be turned on so try restarting the Windows 10 or later device instead.
 
 :::image type="complex" source="../media/remote-debugging-windows-media-host-settings.msft.png" alt-text="The Settings app with Developer Mode and Device Portal configured" lightbox="../media/remote-debugging-windows-media-host-settings.msft.png":::
    The **Settings** app with **Developer Mode** and **Device Portal** configured
@@ -70,19 +72,21 @@ Note the machine IP address and connection port displayed under **Connect using:
 
 You enter the information on the client \(debugger\) device in the [next section](#step-2-set-up-the-client-debugger-machine).  Open tabs in Microsoft Edge and [Progressive Web Apps (PWAs)][DevtoolsProgressiveWebApps] on the host \(debuggee\) machine that you want to debug from the client \(debugger\) machine.
 
+
+<!-- ====================================================================== -->
 ## Step 2: Set up the client (debugger machine)
 
 The client or debugger machine is the device you want to debug from.  This device may be your daily development machine or it may just be your PC or MacBook when working from home.
 
-To set up the client \(debugger\) machine, install Microsoft Edge \(Chromium\) from [this page][MicrosoftEdgeMain] if you have not already.  If you are using a pre-installed version of Microsoft Edge on the host \(debuggee\) machine, verify that you have Microsoft Edge \(Chromium\) and not Microsoft Edge \(EdgeHTML\).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.
+To set up the client \(debugger\) machine, install Microsoft Edge from [this page][MicrosoftEdgeMain] if you have not already.  If you are using a pre-installed version of Microsoft Edge on the host \(debuggee\) machine, verify that you have Microsoft Edge and not Microsoft Edge \(EdgeHTML\).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.
 
-Now navigate to `edge://flags` in Microsoft Edge \(Chromium\).  In **Search flags**, type in **Enable remote Windows device debugging in edge://inspect**.  Set that flag to **Enabled**.  Then, choose the **Restart** button to restart Microsoft Edge \(Chromium\).
+Now navigate to `edge://flags` in Microsoft Edge.  In **Search flags**, type in **Enable remote Windows device debugging in edge://inspect**.  Set that flag to **Enabled**.  Then, choose the **Restart** button to restart Microsoft Edge.
 
 :::image type="complex" source="../media/remote-debugging-windows-media-edge-flags-on-client.msft.png" alt-text="Setting the Enable remote Windows device debugging through edge://inspect flag to Enabled" lightbox="../media/remote-debugging-windows-media-edge-flags-on-client.msft.png":::
    Setting the **Enable remote Windows device debugging through edge://inspect** flag to **Enabled**
 :::image-end:::
 
-Now navigate to the `edge://inspect` page in Microsoft Edge \(Chromium\).  By default, you should be on the **Devices** section.  Under **Connect to a remote Windows device**, enter the IP address and the connection port of the host \(debuggee\) machine in the textbox following this pattern: http://`IP address`:`connection port`.  Now choose **Connect to Device**.
+Now navigate to the `edge://inspect` page in Microsoft Edge.  By default, you should be on the **Devices** section.  Under **Connect to a remote Windows device**, enter the IP address and the connection port of the host \(debuggee\) machine in the textbox following this pattern: http://`IP address`:`connection port`.  Now choose **Connect to Device**.
 
 :::image type="complex" source="../media/remote-debugging-windows-media-edge-inspect.msft.png" alt-text="The edge://inspect page on the client" lightbox="../media/remote-debugging-windows-media-edge-inspect.msft.png":::
    The `edge://inspect` page on the client
@@ -103,6 +107,8 @@ Now, when connecting to the host \(debuggee\) machine from the client \(debugger
 > [!NOTE]
 > The default port for `http` is `50080` and the default port for `https` is `50043` but this is not always the case as Device Portal on desktop claims ports in the ephemeral range \(\>50,000\) to prevent collisions with existing port claims on the device.  To learn more, navigate to the  [Port Settings][WindowsUwpDebugTestPerfDevicePortalDesktopRegistryBasedConfigurationForDevicePortal] section for Device Portal on Windows desktop.
 
+
+<!-- ====================================================================== -->
 ## Step 3: Debug content on the host from the client
 
 If the client \(debugger\) machine successfully connects to the host \(debuggee\) machine, the `edge://inspect` page on the client now displays a list of the tabs in Microsoft Edge and any open PWAs on the host.
@@ -129,6 +135,8 @@ You may also tap an element on your host device screen to choose it in the **Ele
 > [!IMPORTANT]
 > The **Event Listeners** pane in the **Elements** tool is blank on Windows 10 version 1903.  This is a known issue and the team plans to fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.
 
+
+<!-- ====================================================================== -->
 ## Step 4: Screencast your host screen to your client device
 
 By default, the DevTools instance on the client have screencasting turned on, which allows you to view the content on the host device in your DevTools instance on your client device.  Choose **Toggle Screencast** to turn off or on this feature.
@@ -144,10 +152,12 @@ You are able to interact with the screencast in multiple ways:
 *   To scroll, use your trackpad or mouse wheel, or fling with your mouse pointer.
 
 Some notes on screencasts:
-*   Screencasts only display page content.  Transparent portions of the screencast represent device interfaces, such as the Microsoft Edge address bar, the Windows 10 taskbar, or the Windows 10 keyboard.
+*   Screencasts only display page content.  Transparent portions of the screencast represent device interfaces, such as the Microsoft Edge address bar, the Windows 10 or later taskbar, and the Windows 10 or later keyboard.
 *   Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of the performance of your page.
 *   If your host device screen locks, the content of your screencast disappears.  Unlock your host device screen to automatically resume the screencast.
 
+
+<!-- ====================================================================== -->
 ## Known Issues
 
 The **Event Listeners** pane in the **Elements** tool is blank on Windows 10 version 1903.  The team plans to fix the **Event Listeners** pane in a servicing update to Windows 10 version 1903.
@@ -158,11 +168,12 @@ The **Audits** tool, the **3D View** tool, the **Emulated Devices** section in *
 
 The file explorer does not launch from the DevTools in the **Sources** tool or in the **Security** panel when you remote debug.  The team plans to fix the tools in a future update of Microsoft Edge.
 
-<!-- links -->
 
+<!-- ====================================================================== -->
+<!-- links -->
 [DevtoolsIndex]: ../index.md "Microsoft Edge Developer Tools overview | Microsoft Docs"
 [DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Debug Progressive Web Apps | Microsoft Docs"
-
+<!-- external links -->
 [DotnetFrameworkWcfFeatureDetailsHowToViewCertificatesWithMmcSnapInViewCertificatesWithCertificateManagerTool]: /dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in#view-certificates-with-the-certificate-manager-tool "View certificates with the Certificate Manager tool - How to: View certificates with the MMC snap-in | Microsoft Docs"
 
 [WindowsAppsGetStartedEnableYourDeviceForDevelopment]: /windows/apps/get-started/enable-your-device-for-development "Enable your device for development | Microsoft Docs"
@@ -171,7 +182,7 @@ The file explorer does not launch from the DevTools in the **Sources** tool or i
 [WindowsUwpDebugTestPerfDevicePortalSetup]: /windows/uwp/debug-test-perf/device-portal#setup "Setup - Windows Device Portal overview | Microsoft Docs"
 [WindowsUwpDebugTestPerfDevicePortalDesktopRegistryBasedConfigurationForDevicePortal]: /windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration-for-device-portal "Registry-based configuration for Device Portal - Device Portal for Windows Desktop | Microsoft Docs"
 
-[MicrosoftEdgeMain]: https://www.microsoft.com/edge "Download New Microsoft Edge Browser"
+[MicrosoftEdgeMain]: https://www.microsoft.com/edge "Download Microsoft Edge Browser | Microsoft"
 
 [MicrosoftStoreAppsWindows]: https://www.microsoft.com/store/apps/windows "Windows Apps | Microsoft Store"
 

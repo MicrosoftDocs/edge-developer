@@ -649,18 +649,14 @@ console.warn(object [, object, ...])
 
 ---
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsConsoleConsoleLog]: ./console-log.md "Logs in the Console tool | Microsoft Docs"
 [DevtoolConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"
-[DevtoolsConsoleReferenceClear]: ./reference.md#clear-the-console "Clear the Console - Console reference | Microsoft Docs"
-[DevtoolsConsoleReferenceFilter]: ./reference.md#filter-by-log-level "Filter by log level - Console reference | Microsoft Docs"
-[DevtoolsConsoleReferencePersist]: ./reference.md#persist-messages-across-page-loads "Persist messages across page loads - Console reference | Microsoft Docs"
-
+[DevtoolsConsoleReferenceClear]: ./reference.md#clear-the-console "Clear the Console - Console features reference | Microsoft Docs"
+[DevtoolsConsoleReferenceFilter]: ./reference.md#filter-by-log-level "Filter by log level - Console features reference | Microsoft Docs"
+[DevtoolsConsoleReferencePersist]: ./reference.md#persist-messages-across-page-loads "Persist messages across page loads - Console features reference | Microsoft Docs"
 [MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge Developer Tools overview | Microsoft Docs"
 
 > [!NOTE]

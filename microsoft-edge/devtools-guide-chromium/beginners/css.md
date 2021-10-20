@@ -599,15 +599,12 @@ Congratulations, you're done!
 *   To learn more about styling web pages, navigate to [Introduction to CSS][MDNCssFirstSteps].
 *   To learn more about how to experiment with CSS in DevTools, navigate to [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-<!--- links  --->
-
+<!-- ====================================================================== -->
+<!-- links -->
 [DevtoolsBeginnersHtml]: ./html.md "DevTools for Beginners: Get Started with HTML and the DOM | Microsoft Docs"
 [DevtoolsCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"
-
+<!-- external links -->
 [MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"
 
 [GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index.html - cooked-amphibian | Glitch"

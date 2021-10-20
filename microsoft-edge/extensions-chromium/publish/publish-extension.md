@@ -1,12 +1,12 @@
 ---
-description: Publish Microsoft Edge (Chromium) extensions to Microsoft Edge Add-ons website
+description: Publish Microsoft Edge extensions to Microsoft Edge Add-ons website
 title: Publish a Microsoft Edge extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 08/25/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
+keywords: microsoft edge, extensions development, browser extensions, addons, partner center, developer
 ---
 # Publish a Microsoft Edge extension
 

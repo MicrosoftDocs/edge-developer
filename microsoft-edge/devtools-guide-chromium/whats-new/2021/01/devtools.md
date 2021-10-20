@@ -413,23 +413,20 @@ To turn on this experiment, navigate to [Settings][DevtoolsCustomizeIndexSetting
 
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
 
-## Getting in touch with Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsWhatsNew85]: ../../2020/06/devtools.md "What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"
 
 [DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/color-picker.md "Test text-color contrast using the Color Picker | Microsoft Docs"
-[DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Change CSS - CSS reference | Microsoft Docs"
+[DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Change CSS - CSS features reference | Microsoft Docs"
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Customize keyboard shortcuts in DevTools | Microsoft Docs"
 [DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices "Test on foldable and dual-screen devices - Emulate dual-screen and foldable devices in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "Simulate a mobile viewport - Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: ../../../evaluate-performance/reference.md#record-load-performance "Record load performance - Performance analysis reference | Microsoft Docs"
-[DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) Developer Tools overview | Microsoft Docs"
+[DevtoolsIndex]: ../../../index.md "Microsoft Edge Developer Tools overview | Microsoft Docs"
 [DevtoolsInspectStylesEditFonts]: ../../../inspect-styles/edit-fonts.md "Edit CSS font styles and settings in the Styles pane in DevTools | Microsoft Docs"
 
 [DualScreenIntroductionHowToWorkWithSeam]: /dual-screen/introduction#how-to-work-with-the-seam "How to work with the seam - Introduction to dual-screen devices | Microsoft Docs"

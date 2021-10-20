@@ -180,7 +180,7 @@ The **Accessibility** part of the **Inspect** overlay is described in the follow
 
 The **Accessibility** section of the **Inspect** overlay contains the following rows:
 
-*   **Contrast** defines whether an element can be understood by people with impaired vision.
+*   **Contrast** defines whether an element can be understood by people with low vision.
     *   The [contrast ratio][W3CContrastRatio] as defined by the [WCAG Guidelines][WCAG] indicates whether there is enough contrast between text and background colors.  A green check mark icon indicates there's enough contrast, and an orange exclamation-point icon indicates there's not enough contrast.
 
 *   **Name** and **Role** indicate what information assistive technology, such as screen readers, will report about the element.
@@ -512,14 +512,6 @@ Another way to find out what to do to improve your web product is to use the [we
 :::image type="complex" source="../media/a11y-testing-webhint-in-vs-code.msft.png" alt-text="Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem" lightbox="../media/a11y-testing-webhint-in-vs-code.msft.png":::
     Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem
 :::image-end:::
-
-We're constantly working on new accessibility features for DevTools.  If there is anything you are missing, send us a message and tell us what we can do.
-
-
-<!-- ====================================================================== -->
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
 
 
 <!-- ====================================================================== -->

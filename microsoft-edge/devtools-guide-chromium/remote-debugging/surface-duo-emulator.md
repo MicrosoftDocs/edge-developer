@@ -73,22 +73,20 @@ The web is a great platform for the new class of foldable and dual-screen device
 *   [The Microsoft Edge web platform explainer for new APIs to build web experiences on foldable and dual-screen devices][GithubMicrosoftedgeMsedgeexplainersFoldablesExplainer]
 *   [Recording of Microsoft 365 Developer Day session: How to build dual-screen experiences for websites and web apps][YoutubeDxrzwsqxpvc]
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 
-[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
+[DevtoolsIndex]: ../index.md "Microsoft Edge Developer Tools | Microsoft Docs"
 [ProgressiveWebAppsIndex]: ../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"
 [DevtoolsRemoteDebuggingMain]: ./index.md "Get started with remote debugging Android devices | Microsoft Docs"
 [DevtoolsRemoteDebuggingIndexTroubleshootingDevtoolsIsNotDetectingAndroidDevice]: ./index.md#troubleshooting-devtools-is-not-detecting-the-android-device "Troubleshooting: DevTools is not detecting the Android device - Get started with remote debugging Android devices | Microsoft Docs"
-
+<!-- external links -->
 [DualScreenIndex]: /dual-screen/index "Create apps for dual-screen devices | Microsoft Docs"
 [DualScreenAndroidUseEmulator]: /dual-screen/android/use-emulator "Use the Surface DUo emulator | Microsoft Docs"
 [DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Get the Surface Duo SDK | Microsoft Docs"
 
-[MicrosoftEdge]: https://www.microsoft.com/edge "Introducing the new Microsoft Edge"
+[MicrosoftEdge]: https://www.microsoft.com/edge "Download Microsoft Edge Browser | Microsoft"
 [MicrosoftSurfaceDevicesSurfaceDuo]: https://www.microsoft.com/surface/devices/surface-duo "The new Surface Duo | Microsoft Surface"
 [MicrosoftDownload100847]: https://www.microsoft.com/download/details.aspx?id=100847 "Download Surface Duo SDK Preview Release | Microsoft Download Center"
 
