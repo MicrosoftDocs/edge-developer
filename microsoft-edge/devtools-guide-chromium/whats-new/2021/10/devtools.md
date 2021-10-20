@@ -47,10 +47,10 @@ For more information, see [Search for Console errors on the web](../09/devtools.
 <!-- Title: Improved keyboard access when navigating to User agent client hints in Settings -->
 <!-- Subtitle: When adding a custom device to emulate in DevTools, you can now expand the User agent client hints section more easily. -->
 
-Starting with [Microsoft Edge version 92](../05/devtools.md#user-agent-client-hints-for-devices-in-the-network-conditions-tab), you can specify User-Agent Client Hints.  You can specify User-Agent Client Hints in either of two contexts:
+Starting with [Microsoft Edge version 92](../05/devtools.md#user-agent-client-hints-for-devices-in-the-network-conditions-tab), you can specify User-Agent Client Hints.  You can specify User-Agent Client Hints in either of two places:
 
-*  When [defining the user agent string in the Network conditions tool](../../../device-mode/override-user-agent.md).
-*  When [adding a custom device to emulate in Settings](../../../device-mode/index.md#add-a-custom-mobile-device).
+*  [When defining the user agent string in the Network conditions tool](../../../device-mode/override-user-agent.md).
+*  [When adding a custom device to emulate in Settings](../../../device-mode/index.md#add-a-custom-mobile-device).
 
 In Microsoft Edge prior to version 95, when adding a custom device to emulate from the **Devices** section of **Settings**, selecting the **User agent client hints** button with the keyboard caused the incorrect UI item to be activated.  Instead of expanding the **User agent client hints** section for you to fill it in, it selected the **Add** button.  The device you were starting to define was immediately added, using empty fields in the **User agent client hints** section.
 
