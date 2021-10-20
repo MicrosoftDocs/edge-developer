@@ -278,7 +278,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]: ../../../console/utilities.md#recently-chosen-element-or-javascript-object "Recently chosen element or JavaScript object - Console Utilities API Reference | Microsoft Docs"
 [DevtoolsCssReferenceColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "Change colors with the Color Picker - CSS features reference | Microsoft Docs"
 [DevtoolsDrawer]: ../../../customize/index.md#drawer "Drawer - Customize Overview | Microsoft Docs"
-[DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
+[DevtoolsIndex]: ../../../index.md "Microsoft Edge Developer Tools | Microsoft Docs"
 [DevtoolsIssuesIndex]: ../../../issues/index.md "Find And Fix Problems With The Microsoft Edge DevTools Issues Tab | Microsoft Docs"
 [DevtoolsNetworkDetails]: ../../../network/index.md#inspect-the-details-of-the-resource "Inspect the details of the resource | Microsoft Docs"
 [DevtoolsNetworkLog]: ../../../network/index.md#log-network-activity "Log network activity | Microsoft Docs"
@@ -312,7 +312,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [CSSWGDraftsColor4Changes3]: https://drafts.csswg.org/css-color#changes-from-3 "Changes from Colors 3 - CSS Color Module Level 4 | W3C CSS Working Group Editor Drafts"
 [CSSWGDraftsColor4Property]: https://drafts.csswg.org/css-color#the-color-property "3.  Foreground Color: the 'color'  - CSS Color Module Level 4 | W3C CSS Working Group Editor Drafts"
 
-[DesktopEdge]: https://www.microsoft.com/edge/ "Introducing the new Microsoft Edge"
+[DesktopEdge]: https://www.microsoft.com/edge/ "Download Microsoft Edge Browser | Microsoft"
 
 [GithubDomenicPromiseUnwrappingStatesFates]: https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md "States and Fates - domenic/promises-unwrapping | GitHub"
 

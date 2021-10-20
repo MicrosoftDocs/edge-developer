@@ -1,5 +1,5 @@
 ---
-description: An overview of building and publishing Microsoft Edge (Chromium) Extensions.
+description: An overview of building and publishing Microsoft Edge Extensions.
 title: Overview of Microsoft Edge extensions
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -10,20 +10,20 @@ keywords: edge, extensions development, browser extensions, addons, partner cent
 ---
 # Overview of Microsoft Edge extensions
 
-A _Microsoft Edge extension_ is a small program that you (a developer) use to add or modify features of Microsoft Edge (Chromium).  An extension is intended to improve a user's day-to-day browsing experience.  It provides niche functionality that is important to a target audience.
+A Microsoft Edge *extension* is a small program that developers use to add or modify features of Microsoft Edge.  An extension improves a user's browsing experience.  It usually provides a niche function that is important to a target audience.
 
-You can create a Microsoft Edge extension if you have an idea or product that is based upon either a specific web browser, or improvements to features of specific webpages.  Examples of _companion experiences_ include ad blockers and password managers.
+You can create a Microsoft Edge extension if you have an idea or product that is based upon either a specific web browser, or improvements to features of specific webpages.  Examples of *companion experiences* include ad blockers and password managers.
 
 An extension is structured similar to a regular web app.  An extension should include at least the following features:
 
 *   An app manifest JSON file that contains basic platform information.
-*   A JavaScript file that defines functionality.
+*   A JavaScript file that defines the function.
 *   HTML and CSS files that define the user interface.
 
 To work directly with part of the browser, such as a window or tab, you must send API requests and must often reference the browser by name.
 
-:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="A Microsoft Edge (Chromium) extension" lightbox="./media/example-extension-screenshot.png":::
-  A Microsoft Edge (Chromium) extension
+:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="A Microsoft Edge extension" lightbox="./media/example-extension-screenshot.png":::
+  A Microsoft Edge extension
 :::image-end:::
 
 
@@ -39,7 +39,7 @@ Some of the most popular browsers to build extensions for include Safari, Firefo
 | Chrome | Yes | [developer.chrome.com/extensions][ChromeDeveloperExtensions] |
 | Opera | Yes | [dev.opera.com/extensions][OperaDevExtensions] |
 | Brave | Yes | Uses [Chrome Web Store][GoogleChromeWebstoreCategoryExtensions] |
-| new Microsoft Edge | Yes | [developer.microsoft.com/microsoft-edge/extensions][MicrosoftDeveloperEdgeExtensions] |
+| Microsoft Edge | Yes | [developer.microsoft.com/microsoft-edge/extensions][MicrosoftDeveloperEdgeExtensions] |
 
 > [!IMPORTANT]
 > Many of the tutorials of the sites use browser-specific APIs that might not match the browser for which you develop.  In most cases, a Chromium extension works as-is in different Chromium browsers and the APIs work as expected.  Some less-common APIs might be browser-specific.  For links to the tutorials, navigate to [See also](#see-also).
@@ -62,7 +62,7 @@ Occasionally, API parity doesn't exist between Chromium browsers.  For example, 
 
 *   [Chrome APIs][ChromeDeveloperExtensionsApiIndex]
 *   [Extension APIs supported in Opera][OperaDevExtensionsApis]
-*   [Port Chrome extension to Microsoft Edge (Chromium)][ExtensionsChromiumDeveloperGuidePortChrome]
+*   [Port Chrome extension to Microsoft Edge][ExtensionsDeveloperGuidePortChrome]
 
 The APIs that you require define the changes that you must make to address the differences between each browser.  You might need to create slightly different code packages with small differences for each store.
 
@@ -87,7 +87,7 @@ Users might need to install your extension in different browsers. In this scenar
 
 If you've already developed an extension for another Chromium-based browser, you can submit it to the Microsoft Edge Add-ons website. You don't need to rewrite your extension, and must verify it works in Microsoft Edge.  When you migrate an existing Chromium extension to other Chromium browsers, make sure the same APIs or alternatives are available for your target browser.
 
-For more information on porting your Chrome extension to Microsoft Edge, navigate to [Port Chrome extensions to Microsoft Edge (Chromium)][ExtensionsChromiumDeveloperGuidePortChrome]. After you port your extension to the target browser, the next step is to publish it.
+For more information on porting your Chrome extension to Microsoft Edge, navigate to [Port Chrome extensions to Microsoft Edge][ExtensionsDeveloperGuidePortChrome]. After you port your extension to the target browser, the next step is to publish it.
 
 ### Publish to the Microsoft Edge Add-ons website
 
@@ -101,7 +101,7 @@ To submit your extension to the store, you need to provide the following items:
 *   Information that describes your extension such as the name, short description, and a privacy policy link.
 
 > [!NOTE]
-> Different stores might have different submission requirements.  The above list summarizes the [requirements][ExtensionsChromiumPublish] to publish an extension for Microsoft Edge.
+> Different stores might have different submission requirements.  The above list summarizes the [requirements][ExtensionsPublish] to publish an extension for Microsoft Edge.
 
 After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.  Owners are notified of the outcome and given next steps as required.  If you submit an extension update to the store, a new review process is started.
 
@@ -109,7 +109,7 @@ After you've successfully submitted your extension, your extension undergoes a r
 <!-- ====================================================================== -->
 ## See also
 
-*  [Extension concepts and architecture][ExtensionsChromiumGettingStartedIndex]
+*  [Extension concepts and architecture][ExtensionsGettingStartedIndex]
 *  [Manage Microsoft Edge extensions in the enterprise][ManageExtensionsEnterprise]
 
 External links:
@@ -126,9 +126,10 @@ Extensions for Visual Studio Code rather than for Microsoft Edge:
 
 <!-- ====================================================================== -->
 <!-- links -->
-[ExtensionsChromiumDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md "Port a Chrome extension to Microsoft Edge | Microsoft Docs"
-[ExtensionsChromiumGettingStartedIndex]: ./getting-started/index.md "Extension concepts and architecture | Microsoft Docs"
-[ExtensionsChromiumPublish]: ./publish/publish-extension.md "Publish a Microsoft Edge extension | Microsoft Docs"
+[ExtensionsGettingStartedIndex]: ./getting-started/index.md "Extension concepts and architecture | Microsoft Docs"
+[ExtensionsDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md "Port Chrome Extension To Microsoft Edge | Microsoft Docs"
+
+[ExtensionsPublish]: ./publish/publish-extension.md "Publish a Microsoft Edge extension | Microsoft Docs"
 [EdgeDevToolsVSCode]: ../visual-studio-code/microsoft-edge-devtools-extension.md "Microsoft Edge DevTools extension for Visual Studio Code | Microsoft Docs"
 [WebhintVSCode]: ../visual-studio-code/webhint.md "webhint extension for Visual Studio Code | Microsoft Docs"
 <!-- external links -->

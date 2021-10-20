@@ -61,7 +61,7 @@ This article is about changing the appearance of the webpage under development. 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
+[DevtoolsIndex]: ../index.md "Microsoft Edge Developer Tools | Microsoft Docs"
 [DevtoolsCustomizeTheme]: ../customize/theme.md "Apply color themes to DevTools | Microsoft Docs"
 [DevtoolsCssIndex]: ../css/index.md "Get started with viewing and changing CSS | Microsoft Docs"
 <!-- external links -->

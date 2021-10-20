@@ -136,7 +136,7 @@ The DevTools team has also released some extensions for [Visual Studio Code][Vis
 
 #### Elements for Microsoft Edge
 
-Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge (Chromium)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code extension.
+Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge ][VisualStudioMarketplaceElementsMicrosoftEdgeExtension] Visual Studio Code extension.
 
 :::image type="complex" source="../../images/2019/12/elements-for-edge.msft.png" alt-text="The Elements tool in Visual Studio Code using the Elements for Microsoft Edge extension" lightbox="../../images/2019/12/elements-for-edge.msft.png":::
    The **Elements** tool in Visual Studio Code using the Elements for Microsoft Edge extension
@@ -353,7 +353,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter account"
 [VisualStudioCode]: https://aka.ms/vscode "Visual Studio Code"
 [VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Debugger for Microsoft Edge - Visual Studio Marketplace"
-[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://aka.ms/elements4code "Elements for Microsoft Edge \(Chromium\) - Visual Studio Marketplace"
+[VisualStudioMarketplaceElementsMicrosoftEdgeExtension]: https://aka.ms/elements4code "Elements for Microsoft Edge - Visual Studio Marketplace"
 [VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code "webhint - Visual Studio Marketplace"
 [Webhint]: https://aka.ms/webhint "webhint"
 [WebhintBrowserExtension]: https://aka.ms/webhint/browser-extension "Webhint Browser Extension | webhint documentation"

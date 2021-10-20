@@ -33,7 +33,7 @@ The following sections are a list of announcements you may have missed from the 
 
 ### Remotely debug Microsoft Edge on Windows 10 or later Devices
 
-The [Remote Tools for Microsoft Edge \(Beta\)][RemoteTools] app is now available in the [Microsoft Store][MicrosoftStore]. This app extends the [Windows Device Portal][WindowsUwpDebugTestPerfDevicePortal]. You can connect from Microsoft Edge running on your development machine to a remote Windows 10 or later device and display a list of targets. This list of targets includes all tabs in Microsoft Edge and [PWAs][ProgressiveWebAppsChromiumIndex] open on the Windows device. Use the DevTools on your development machine against a target running on the remote Windows device.
+The [Remote Tools for Microsoft Edge (Beta)][RemoteTools] app is now available in the [Microsoft Store][MicrosoftStore]. This app extends the [Windows Device Portal][WindowsUwpDebugTestPerfDevicePortal]. You can connect from Microsoft Edge running on your development machine to a remote Windows 10 or later device and display a list of targets. This list of targets includes all tabs in Microsoft Edge and [PWAs][ProgressiveWebAppsChromiumIndex] open on the Windows device. Use the DevTools on your development machine against a target running on the remote Windows device.
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/remote-tools.msft.png":::
    The [Remote Tools for Microsoft Edge (Beta)][RemoteTools] app available in the [Microsoft Store][MicrosoftStore]
@@ -254,7 +254,7 @@ Chromium issue [#1054447][CR1054447]
 
 ### Maskable icon support in the Manifest pane
 
-Android Oreo introduced adaptive icons, which display app icons in a variety of shapes across different device models.  **Maskable icons** are a new icon format that support adaptive icons, which enable you to ensure that your [PWA][ProgressiveWebAppsChromiumIndex] icon looks good on devices that support the maskable icons standard.
+Android Oreo introduced adaptive icons, which display app icons in a variety of shapes across different device models.  **Maskable icons** are a new icon format that support adaptive icons, which enable you to ensure that your [PWA][ProgressiveWebAppsIndex] icon looks good on devices that support the maskable icons standard.
 
 Enable the new **Show only the minimum safe area for maskable icons** checkbox in the **Manifest** pane to check that your maskable icon looks good on Android Oreo devices.
 
@@ -286,7 +286,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [DevtoolsNetworkReferenceFilterRequestsProperties]: ../../../network/reference.md#filter-requests-by-properties "Filter requests by properties - Network analysis reference | Microsoft Docs"
 [DevtoolsRemoteDebuggingWindows]: ../../../remote-debugging/windows.md "Get Started with Remote Debugging Windows devices | Microsoft Docs"
 
-[ProgressiveWebAppsChromiumIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"
+[ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"
 
 [WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows Device Portal overview"
 

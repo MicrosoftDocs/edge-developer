@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
+keywords: microsoft edge, extensions development, browser extensions, addons, partner center, developer
 ---
 # Native messaging
 

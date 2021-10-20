@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.date: 02/17/2021
 ms.topic: support
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer, support
+keywords: microsoft edge, extensions development, browser extensions, add-ons, partner center, developer, support
 ---
 # Contact Microsoft Edge extensions support
 
