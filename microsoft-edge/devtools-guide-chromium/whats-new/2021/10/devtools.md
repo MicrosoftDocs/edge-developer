@@ -14,12 +14,12 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 
 <!-- ====================================================================== -->
-## Sync live changes from the Styles tool by using CSS Mirror Editing
+## Sync live changes from the Styles tool in the Visual Studio Code extension
 
 <!-- Title: CSS Mirror Editing in Visual Studio Code -->
 <!-- Subtitle: Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code. -->
 
-The Microsoft Edge DevTools extension for Visual Studio Code now features an experiment called **CSS Mirror Editing**.  Using this feature, you can use the **Styles** tool to adjust your CSS, and the changes you apply are automatically added to the CSS source files in the Visual Studio Code editor.  You can toggle this functionality on and off.
+The [Microsoft Edge DevTools extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) now features an experiment called **CSS Mirror Editing**.  Using this feature, you can use the **Styles** tool to adjust your CSS, and the changes you apply are automatically added to the CSS source files in the Visual Studio Code editor.  You can toggle this functionality on and off.
 
 For more information, see [Syncing live changes from the Styles tool by using CSS Mirror Editing](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#syncing-live-changes-from-the-styles-tool-by-using-css-mirror-editing).
 
@@ -34,7 +34,7 @@ To provide feedback, in Visual Studio Code, in the **Activity Bar**, click **Mic
 <!-- Title: All console errors and warnings now have a Search Web icon -->
 <!-- Subtitle: You can now search for any of your console errors and warnings right from DevTools. -->
 
-The **Search for this message on the Web** icon is now available on all errors and warnings in the **Console**.  Previously, this icon only appeared on some of the common errors and warnings.  Now the icon has been added on the remaining errors and warnings.  The relevant error or warning string is used as the search string.
+The **Search for this message on the Web** icon is now available for all errors and warnings in the **Console**.  Previously, this icon only appeared for some of the common errors and warnings.  Now the icon has been added on the remaining errors and warnings.  Click the **Search for this message on the Web** icon to search the web using the relevant error or warning string.
 
 For more information, see [Search for Console errors on the web](../09/devtools.md#search-for-console-errors-on-the-web).
 
@@ -47,9 +47,12 @@ For more information, see [Search for Console errors on the web](../09/devtools.
 <!-- Title: Improved keyboard access when navigating to User agent client hints in Settings -->
 <!-- Subtitle: When adding a custom device to emulate in DevTools, you can now expand the User agent client hints section more easily. -->
 
-Starting with [Microsoft Edge version 92](../05/devtools.md#user-agent-client-hints-for-devices-in-the-network-conditions-tab), you can specify User-Agent Client Hints when defining the user agent string in the **Network conditions** tool or when adding a custom device to emulate in **Settings**.
+Starting with [Microsoft Edge version 92](../05/devtools.md#user-agent-client-hints-for-devices-in-the-network-conditions-tab), you can specify User-Agent Client Hints.  You can specify User-Agent Client Hints in either of two contexts:
 
-In earlier versions of Microsoft Edge, when adding a custom device to emulate from the **Devices** section of **Settings**, selecting the **User agent client hints** button with the keyboard caused the incorrect UI item to be activated.  Instead of expanding the **User agent client hints** section for you to fill it in, it selected the **Add** button.  The device you were starting to define was immediately added, using empty fields in the **User agent client hints** section.
+*  When [defining the user agent string in the Network conditions tool](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/device-mode/override-user-agent).
+*  When [adding a custom device to emulate in Settings](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/device-mode/#add-a-custom-mobile-device).
+
+In Microsoft Edge prior to version 95, when adding a custom device to emulate from the **Devices** section of **Settings**, selecting the **User agent client hints** button with the keyboard caused the incorrect UI item to be activated.  Instead of expanding the **User agent client hints** section for you to fill it in, it selected the **Add** button.  The device you were starting to define was immediately added, using empty fields in the **User agent client hints** section.
 
 In Microsoft Edge version 95, this issue has been fixed.  Selecting the **User agent client hints** button by using the keyboard now expands a form, in which you can specify client hints for the custom device.
 
@@ -66,7 +69,7 @@ To view the history of this feature in the Chromium open-source project, see [Is
 <!-- Title: Improved filtering for grouped messages in the Console -->
 <!-- Subtitle: Filters in the Console is now more intuitive, displaying grouped messages only when the filter matches the group label. -->
 
-In earlier versions of Microsoft Edge, there were several problems when trying to filter grouped messages in the Console. You can use `console.group()` to label a group of messages and provide some organization for Console messages. However, when filtering to a group label, the Console wouldn't display individual messages inside the group.  Also, filtering wouldn't hide group labels, even if the label didn't match the filter.
+You can use `console.group()` to label a group of messages and provide some organization for Console messages.  In earlier versions of Microsoft Edge, there were several problems when trying to filter grouped messages in the Console.  When filtering to a group label, the Console wouldn't display individual messages inside the group.  Also, filtering wouldn't hide group labels, even if the label didn't match the filter.
 
 In Microsoft Edge version 95, these problems have been fixed.  Filtering to a label now displays the group label and the individual messages inside of the group.  When the filter doesn't match the group label, the entire group is hidden.
 
