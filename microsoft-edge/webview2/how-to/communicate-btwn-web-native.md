@@ -297,7 +297,7 @@ Congratulations! You've successfully embedded web content into native applicatio
 
 [ScenarioWebMessageHTML]: https://github.com/MicrosoftEdge/WebView2Samples/blob/a12bfcc2bc8a1155529c35c7bd4645036f492ca0/SampleApps/WebView2APISample/assets/ScenarioWebMessage.html "ScenarioWebMessage HTML | GitHub Microsoft Edge WebView2 Samples"
 
-[UseJavaScriptInWebView2Apps]: /javascript "Use JavaScript in WebView2 apps - Microsoft Edge Development | Microsoft Docs"
+[UseJavaScriptInWebView2Apps]: javascript "Use JavaScript in WebView2 apps - Microsoft Edge Development | Microsoft Docs"
 
 [WebView2inWin32apps]: ../get-started/win32.md "Get Started with WebView2 in Win32 apps | Microsoft Edge Development"
 
