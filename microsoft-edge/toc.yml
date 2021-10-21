@@ -10,6 +10,8 @@
           items:
             - name: Experimental features
               href: devtools-guide-chromium/experimental-features/index.md
+            - name: Microsoft Edge 95
+              href: devtools-guide-chromium/whats-new/2021/10/devtools.md
             - name: Microsoft Edge 94
               href: devtools-guide-chromium/whats-new/2021/09/devtools.md
             - name: Microsoft Edge 93
