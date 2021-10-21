@@ -31,13 +31,13 @@ The WebView2 "Get started" guides use starter code for Win32, Windows Presentati
 <!-- ====================================================================== -->
 ## Apps in the WebView2 Samples repo
 
-The [WebView2 Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) includes sample projects for Win32, WPF, WinForms, and WinUI.  The Microsoft Visual Studio solution file [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln) gathers the following samples.  These samples are hybrid applications that use the Microsoft Edge WebView2 control.
+The [WebView2 Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) includes sample projects for Win32, WPF, WinForms, and WinUI.  These samples are hybrid applications that use the Microsoft Edge WebView2 control.
 
-When you open `WebView2Samples.sln` in Visual Studio, Solution Explorer contains the following WebView2 samples, as project folders:
+Clone the WebView2 Samples repo and then open the solution file [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln) in Microsoft Visual Studio.  When you open the solution file in Visual Studio, **Solution Explorer** contains the following WebView2 samples, as projects:
 
 :::image type="content" source="media/solution-file-webview2samples.png" alt-text="Solution Explorer for the WebView2Samples repo, showing the WebView2 samples as projects." lightbox="media/solution-file-webview2samples.png":::
 
-The following are descriptions of the samples that are included in the [WebView2 Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
+The WebView2 Samples repo contains the following projects, in `WebView2Samples.sln`:
 
 | Type of sample | Sample Project | Description |
 |---|---|---|
