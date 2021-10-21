@@ -3,7 +3,7 @@ description: Links to WebView2 sample code hosted on GitHub.
 title: WebView2 sample code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/18/2021
+ms.date: 10/21/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -17,7 +17,7 @@ The following WebView2 samples are available in the Get Started guides for WebVi
 <!-- ====================================================================== -->
 ## Sample code for Get Started guides
 
-The WebView2 "Get started" guides use starter code for Win32, Windows Presentation Foundation (WPF), WinForms, and WinUI.
+The WebView2 Get Started guides use starter code for Win32, Windows Presentation Foundation (WPF), WinForms, and WinUI.
 
 | Platform | Article | Code |
 |---|---|---|
@@ -41,13 +41,13 @@ The WebView2 Samples repo contains the following projects, in `WebView2Samples.s
 
 | Type of sample | Sample Project | Description |
 |---|---|---|
-| Win32 C++ | [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample) | Embeds a WebView2 within a Win32 native application.  Showcases a selection of WebView2's event handlers and API methods that allow a native Win32 application to directly interact with a WebView and vice versa.<br/><br/>  Built as a Win32 project in [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).  Uses C++ and HTML/CSS/JavaScript in the WebView2 environment. |
-| Win32 C++ with Visual Composition | [WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2SampleWinComp) | Embeds a WebView2 within a Win32 native application.  Uses [Windows Runtime Composition APIs](/uwp/api/windows.ui.composition) (also called the Visual layer) to take advantage of the latest Windows 10 UI features and create better look, feel, and functionality in C++ Win32 applications.<br/><br/>  Built as a Win32 project in Visual Studio 2019.  Uses C++ and HTML/CSS/JavaScript in the WebView2 environment. |
+| Win32 C++ | [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample) | Embeds a WebView2 within a Win32 native application.  Illustrates a selection of WebView2 event handlers and API methods that allow a native Win32 application to directly interact with a WebView and vice versa.<br/><br/>  Built as a Win32 project in [Visual Studio 2019](https://visualstudio.microsoft.com/vs/).  Uses C++ and HTML/CSS/JavaScript in the WebView2 environment. |
+| Win32 C++ with Visual Composition | [WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2SampleWinComp) | Embeds a WebView2 within a Win32 native application.  Uses [Windows Runtime Composition APIs](/uwp/api/windows.ui.composition), also called the Visual layer, to take advantage of the latest Windows 10 or later UI features and create better look, feel, and functionality in C++ Win32 applications.<br/><br/>  Built as a Win32 project in Visual Studio 2019.  Uses C++ and HTML/CSS/JavaScript in the WebView2 environment. |
 | WinForms | [WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WindowsFormsBrowser) | Embeds a WebView2 within a Windows Forms application.<br/><br/>  Built as a Windows Forms project in Visual Studio 2019.  Uses C# and HTML/CSS/JavaScript in the WebView2 environment. |
 | Windows Presentation Foundation (WPF) .NET | [WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser) | Embeds a WebView2 within a WPF application.<br/><br/>  Built as a WPF project in Visual Studio 2019.  Uses C# and HTML/CSS/JavaScript in the WebView2 environment. |
 | Chrome DevTools Protocol (CDP) in WPF | [WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2CDPExtensionWPFSample) | Uses Chrome [DevTools Protocol](../devtools-protocol-chromium\index.md) functions using a `DevToolsProtocolHelper` object in WebView2.  Demonstrates the usage patterns of the WebView2 CDP extension in WPF.  This application is built with the [WebView2 CDP Extension](https://aka.ms/webviewcdp) that defines all CDP methods, events, and types.<br/><br/>  Built as a WPF project in Visual Studio 2019.  Uses C# in the WebView2 environment. |
-| WiX Burn Bundle to deploy Runtime | [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WV2DeploymentWiXBurnBundleSample/README.md) | Creates a [WiX](https://wixtoolset.org/) installer for the [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) and uses [WiX Burn Bundle](https://wixtoolset.org/documentation/manual/v3/bundle/) to chain-install the Evergreen WebView2 Runtime.<br/><br/>  For deploying the [Evergreen WebView2 Runtime](concepts/distribution.md) with your app. |
-| WiX Custom Action to deploy Runtime | [WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WV2DeploymentWiXCustomActionSample/README.md) | Creates a WiX installer for the `WebView2APISample` and uses [WiX Custom Action](https://wixtoolset.org/documentation/manual/v3/wixdev/extensions/authoring_custom_actions.html) to chain-install the Evergreen WebView2 Runtime.<br/><br/>  For deploying the Evergreen WebView2 Runtime with your app. |
+| WiX Burn Bundle to deploy Runtime | [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WV2DeploymentWiXBurnBundleSample/README.md) | Creates a [WiX](https://wixtoolset.org/) installer for the [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) and uses [WiX Burn Bundle](https://wixtoolset.org/documentation/manual/v3/bundle/) to chain-install the Evergreen WebView2 Runtime.<br/><br/>  Used when deploying the [Evergreen WebView2 Runtime](concepts/distribution.md) with your app. |
+| WiX Custom Action to deploy Runtime | [WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WV2DeploymentWiXCustomActionSample/README.md) | Creates a WiX installer for the `WebView2APISample` and uses [WiX Custom Action](https://wixtoolset.org/documentation/manual/v3/wixdev/extensions/authoring_custom_actions.html) to chain-install the Evergreen WebView2 Runtime.<br/><br/>  Used when deploying the Evergreen WebView2 Runtime with your app. |
 
 
 <!-- ====================================================================== -->
@@ -63,4 +63,4 @@ This WinUI Controls Gallery sample shows all of the XAML controls in an interact
 
 The [WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WV2DeploymentVSInstallerSample/README.md) uses the [Microsoft Visual Studio Installer Projects](https://marketplace.visualstudio.com/items?itemName=visualstudioclient.MicrosoftVisualStudio2017InstallerProjects) extension for Visual Studio, to create an installer for [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) and chain-install the Evergreen WebView2 Runtime.
 
-This sample is a separate installer sample; it's not part of the `WebView2Samples` repo.
+This sample is a separate installer. It is not part of the `WebView2Samples` repo.
