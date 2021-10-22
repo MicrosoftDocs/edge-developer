@@ -10,7 +10,7 @@ keywords: microsoft edge, JavaScript, web development, f12 tools, devtools
 ---
 # The Console as a JavaScript environment
 
-The **Console** tool inside the browser DevTools is a [REPL][WikiReadEvalPrintLoop] environment.  It means that you may write any JavaScript in the **Console** that runs immediately.
+The **Console** tool inside the browser DevTools is a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  It means that you may write any JavaScript in the **Console** that runs immediately.
 
 To try it, complete the following actions.
 
@@ -49,7 +49,7 @@ To try it, complete the following actions.
 
 As with many other command-line experiences, you also have a history of commands.  Select `Arrow Up` to display the commands you entered before.  Autocompletion also keeps a history of the commands you previously typed.  You may type the first few letters of earlier commands and your previous choices display in a textbox.
 
-Also, the **Console** also offers quite a few [utility methods][DevtoolsConsoleUtilities] that make your life easier.  For example, `$_` always contains the result of the last expression you ran in the **Console**.
+Also, the **Console** also offers quite a few [utility methods](utilities.md) that make your life easier.  For example, `$_` always contains the result of the last expression you ran in the **Console**.
 
 :::image type="complex" source="../media/console-javascript-console-history.msft.png" alt-text="The $_ expression in the Console always contains the last result" lightbox="../media/console-javascript-console-history.msft.png":::
     The `$_` expression in the **Console** always contains the last result
@@ -71,9 +71,9 @@ If you start a multiline statement in the **Console**, it gets automatically rec
 
 ## Network requests using top-level await()
 
-Other than in your own scripts, **Console** supports [top level await][GithubTc39ProposalTopLevelAwait] to run arbitrary asynchronous JavaScript in it.  For example, use the `fetch` API without wrapping the `await` statement with an async function.
+Other than in your own scripts, **Console** supports [top level await](https://github.com/tc39/proposal-top-level-await) to run arbitrary asynchronous JavaScript in it.  For example, use the `fetch` API without wrapping the `await` statement with an async function.
 
-To get the last 50 issues filed on the [Microsoft Edge Developer Tools for Visual Studio Code][GithubMicrosoftVscodeEdgeDevtools] GitHub repo, complete the following actions.
+To get the last 50 issues filed on the [Microsoft Edge Developer Tools for Visual Studio Code](https://github.com/microsoft/vscode-edge-devtools) GitHub repo, complete the following actions.
 
 1.  Open the **Console**.
 1.  Copy and paste the following code snippet to get an object that contains 10 entries.
@@ -102,18 +102,4 @@ copy(await (await fetch(
 )).json())
 ```
 
-Use the **Console** as a great way to practice JavaScript functionality and to do some quick calculations.  The real power is the fact that you have access to the [window][MdnDocsWebApiWindow] object.  You may [interact with the DOM in Console][DevtoolsConsoleConsoleDomInteraction].
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "Use the Console to interact with the DOM | Microsoft Docs"
-[DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"
-
-[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
-
-[GithubTc39ProposalTopLevelAwait]: https://github.com/tc39/proposal-top-level-await "ECMAScript proposal: Top-level await - tc39/proposal-top-level-await | GitHub"
-
-[MdnDocsWebApiWindow]: https://developer.mozilla.org/docs/Web/API/Window "Window | MDN"
-
-[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read–eval–print loop | Wikipedia"
+Use the **Console** as a great way to practice JavaScript functionality and to do some quick calculations.  The real power is the fact that you have access to the [window](https://developer.mozilla.org/docs/Web/API/Window) object.  You may [interact with the DOM in Console](console-dom-interaction.md).

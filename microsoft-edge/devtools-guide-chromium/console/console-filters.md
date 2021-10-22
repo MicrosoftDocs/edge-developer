@@ -14,7 +14,7 @@ When you surf the web, you may find the **Console** is flooded with all kinds of
 
 ## Filter by log level
 
-Each method of the `console` object has a severity level attached to it.  The severity levels are `Verbose`, `Info`, `Warning`, or `Error`.  Display the severity levels in the [API documentation][DevtoolsConsoleApi].  For example, `console.log()` is an `Info`-level message, but `console.error()` is an `Error`-level message.
+Each method of the `console` object has a severity level attached to it.  The severity levels are `Verbose`, `Info`, `Warning`, or `Error`.  Display the severity levels in the [API documentation](api.md).  For example, `console.log()` is an `Info`-level message, but `console.error()` is an `Error`-level message.
 
 To filter messages in the **Console**, use the **Log Level** dropdown menu.  You may toggle the state of each level.  To turn off each level, remove the checkmark next to each.
 
@@ -44,7 +44,7 @@ If you want to review more detail, to filter messages using text, type a string 
 
 ## Filter by regular expression
 
-[Regular expressions][MdnDocsWebJavascriptGuideRegularExpressions] are a powerful way to filter messages.  For example, type `/^Tracking/` into the **Filter** textbox to only displays messages that start with the term `Tracking`.  If you're unfamiliar with regular expressions, [RegExr][RegExrMain] is a great resource to learn about using regular expressions.
+[Regular expressions](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions) are a powerful way to filter messages.  For example, type `/^Tracking/` into the **Filter** textbox to only displays messages that start with the term `Tracking`.  If you're unfamiliar with regular expressions, [RegExr](https://regexr.com) is a great resource to learn about using regular expressions.
 
 :::image type="complex" source="../media/console-filter-regex.msft.png" alt-text="Displays the messages that start with the word filter using a regular expression in the Filter textbox" lightbox="../media/console-filter-regex.msft.png":::
     Displays the messages that start with the word `filter` using a regular expression in the **Filter** textbox
@@ -79,12 +79,3 @@ To filter more and expand the choice, choose the triangle icon next to it.  That
 :::image type="complex" source="../media/console-filter-user-message-by-source.msft.png" alt-text="Choose any of the new options to filter using type and source" lightbox="../media/console-filter-user-message-by-source.msft.png":::
     Choose any of the new options to filter using type and source
 :::image-end:::
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"
-
-[MdnDocsWebJavascriptGuideRegularExpressions]: https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions "Regular Expressions | MDN"
-
-[RegExrMain]: https://regexr.com "RegExr"

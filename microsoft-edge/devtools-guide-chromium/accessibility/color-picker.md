@@ -45,7 +45,7 @@ In DevTools, one way to view the contrast ratio of a text element is to use the 
        The `color` property of the element
     :::image-end:::
 
-1.  Examine the **Contrast Ratio** section of the Color Picker.  One check mark means that the element meets the [minimum recommendation][W3CContrastMinimum].  Two check marks means that it meets the [enhanced recommendation][W3CContrastEnhanced].
+1.  Examine the **Contrast Ratio** section of the Color Picker.  One check mark means that the element meets the [minimum recommendation](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum).  Two check marks means that it meets the [enhanced recommendation](https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced).
 
     :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="The Contrast Ratio section of the Color Picker shows 2 check marks and a value of 13.97" lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
        The **Contrast Ratio** section of the Color Picker shows 2 check marks and a value of `13.97`
@@ -61,26 +61,9 @@ In DevTools, one way to view the contrast ratio of a text element is to use the 
 
 
 <!-- ====================================================================== -->
-## See also
-
-*  [Contacting the Microsoft Edge team][Contact]
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer, Chrome DevTools & Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[Contact]: ../contact.md "Contacting the Microsoft Edge team | Microsoft Edge Developer documentation"
-[W3CContrastEnhanced]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced "Contrast (Enhanced) Level AAA | W3C"
-[W3CContrastMinimum]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum "Contrast (Minimum) Level AA | W3C"
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

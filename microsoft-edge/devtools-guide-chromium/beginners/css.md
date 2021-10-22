@@ -29,7 +29,7 @@ In this tutorial, you learn how to use CSS to style a web page.  You also learn 
 This article is part of a series of tutorials that teaches you the basics of web development and Microsoft Edge DevTools.  You gain hands-on experience by actually building your own website.  You don't have to complete the previous tutorials before doing this one.  [Set up your code](#set-up-your-code) shows you how to get set up.
 
 > [!NOTE]
-> This tutorial is designed for absolute beginners and focuses on both the **fundamentals of web development** and the basics of using DevTools to experiment with CSS.  If you want a tutorial that only focuses on DevTools, navigate to [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].
+> This tutorial is designed for absolute beginners and focuses on both the **fundamentals of web development** and the basics of using DevTools to experiment with CSS.  If you want a tutorial that only focuses on DevTools, navigate to [Get Started with Viewing and Changing CSS](../css/index.md).
 
 At the beginning of the tutorial, your site should look like the following figure.
 
@@ -57,17 +57,17 @@ You're building a real website.
 
 Complete the following prerequisites before doing this tutorial.
 
-*   Complete [Get Started with HTML and the DOM][DevtoolsBeginnersHtml] or make sure that you have understanding of HTML and the DOM already.
-*   Download the [Microsoft Edge][MicrosoftEdgeInsider] web browser.  The following tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.
+*   Complete [Get Started with HTML and the DOM](./html.md) or make sure that you have understanding of HTML and the DOM already.
+*   Download the [Microsoft Edge](https://www.microsoftedgeinsider.com) web browser.  The following tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.
 
 ## Set up your code
 
 To create your site, first do the following steps to set up your code.
 
 > [!NOTE]
-> If you have already completed the first tutorial in the series, skip to the next section.  Continue using your code from the last tutorial, [Get Started with HTML and the DOM][DevtoolsBeginnersHtml].
+> If you have already completed the first tutorial in the series, skip to the next section.  Continue using your code from the last tutorial, [Get Started with HTML and the DOM](./html.md).
 
-1.  Open the [source code][GlitchCookedAmphibianIndex].  The tab of your browser that's currently selected is called the **editing tab**.
+1.  Open the [source code](https://glitch.com/edit/#!/cooked-amphibian?path=index.html).  The tab of your browser that's currently selected is called the **editing tab**.
 
     :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="The editing tab" lightbox="../media/beginners-css-setup1.msft.png":::
        The **editing** tab
@@ -106,7 +106,7 @@ The following code snippet is the HTML and CSS code used to create the paragraph
 </p>
 ```
 
-The HTML attribute `style="border: 1px dashed red; padding: 5px;"` might look new to you.  The rest should look familiar.  If not, complete [Get Started with HTML and the DOM][DevtoolsBeginnersHtml] before attempting the following sections.
+The HTML attribute `style="border: 1px dashed red; padding: 5px;"` might look new to you.  The rest should look familiar.  If not, complete [Get Started with HTML and the DOM](./html.md) before attempting the following sections.
 
 ## Add inline styles
 
@@ -274,7 +274,7 @@ To add a declaration to an existing ruleset
        Inspect the Home link
     :::image-end:::
 
-    DevTools opens up alongside your page.  The code that represents the Home link, `<a href="/">Home</a>` is highlighted blue in the DOM Tree.  The code snippet and preview should be familiar from [Get Started with HTML and the DOM][DevtoolsBeginnersHtml].
+    DevTools opens up alongside your page.  The code that represents the Home link, `<a href="/">Home</a>` is highlighted blue in the DOM Tree.  The code snippet and preview should be familiar from [Get Started with HTML and the DOM](./html.md).
 
     :::row:::
        :::column span="":::
@@ -596,30 +596,14 @@ Complete the following steps to use other Bootstrap classes that are useful for 
 Congratulations, you're done!
 
 *   The best way to get better at web development is to build more sites.  Don't worry about breaking stuff.  Just have fun and learn as much as possible along the way.
-*   To learn more about styling web pages, navigate to [Introduction to CSS][MDNCssFirstSteps].
+*   To learn more about styling web pages, navigate to [Introduction to CSS](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS).
 *   To learn more about how to experiment with CSS in DevTools, navigate to [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsBeginnersHtml]: ./html.md "DevTools for Beginners: Get Started with HTML and the DOM | Microsoft Docs"
-[DevtoolsCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"
-<!-- external links -->
-[MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"
-
-[GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index.html - cooked-amphibian | Glitch"
-
-[MDNCssFirstSteps]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS "CSS first steps | MDN"
-
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page was found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/css) and was authored by [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/css) and is authored by [Katherine Jackson](https://developers.google.com/web/resources/contributors#katherine-jackson) (Technical Writer Intern, Chrome DevTools).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[KatherineJackson]: https://developers.google.com/web/resources/contributors
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
