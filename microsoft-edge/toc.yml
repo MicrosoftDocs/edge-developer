@@ -476,6 +476,8 @@
               href: webview2/how-to/chromium-devtools-protocol.md
             - name: Switch to a preview channel
               href: webview2/how-to/set-preview-channel.md
+            - name: Embed web content into native applications
+              href: webview2/how-to/communicate-btwn-web-native.md
         - name: Release notes
           href: webview2/release-notes.md
         - name: Roadmap
