@@ -518,8 +518,6 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 *   Make one change at a time, and audit the webpage after each change in order to display how that isolated change affects performance.
 
 <!--
-
-<!-- ====================================================================== -->
 ## Next steps
 
 *   Run audits on your own site!  If you need help interpreting your report, or finding ways to improve your load performance, check out [Feedback](#feedback) for ways to get help from the DevTools community.  Stack Overflow, the mailing list, or Twitter are probably best for these types of questions.
