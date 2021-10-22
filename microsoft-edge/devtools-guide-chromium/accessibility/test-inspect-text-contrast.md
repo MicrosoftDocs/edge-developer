@@ -43,6 +43,8 @@ As an example, on the demo page, the blue links of the sidebar navigation menu h
     :::image-end:::
 
 
+
+<!-- ====================================================================== -->
 ## Different options to inspect text-color contrast in DevTools
 
 Use the following DevTools features to inspect text-color contrast.

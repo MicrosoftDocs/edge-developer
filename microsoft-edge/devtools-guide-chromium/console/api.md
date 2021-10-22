@@ -27,6 +27,8 @@ The **Console** tool is helpful when you complete multiple tasks in the DevTools
 
 ---
 
+
+<!-- ====================================================================== -->
 ## assert
 
 This method writes an [error](#error) to the **Console** when `expression` evaluates to `false`.
@@ -67,6 +69,8 @@ console.assert(expression, object)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## clear
 
 This method clears the **Console**.
@@ -106,6 +110,8 @@ console.clear()
 
 ---
 
+
+<!-- ====================================================================== -->
 ## count
 
 This method writes the number of times that the [count](#count) method has been invoked at the same line and with the same `label`.  Use the [countReset](#countreset) method to reset the count.
@@ -146,6 +152,8 @@ console.count([label])
 
 ---
 
+
+<!-- ====================================================================== -->
 ## countReset
 
 This method resets a count.
@@ -180,6 +188,8 @@ console.countReset([label])
 
 ---
 
+
+<!-- ====================================================================== -->
 ## debug
 
 This method is identical to the [log](#log) method, except different log level.
@@ -217,6 +227,8 @@ console.debug(object [, object, ...])
 
 ---
 
+
+<!-- ====================================================================== -->
 ## dir
 
 This method prints a JSON representation of the specified object.
@@ -254,6 +266,8 @@ console.dir(object)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## dirxml
 
 This method prints an XML representation of the descendants of `node`.
@@ -291,6 +305,8 @@ console.dirxml(node)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## error
 
 This method prints the `object` to the **Console**, formats it as an error, and includes a stack trace.
@@ -328,6 +344,8 @@ console.error(object [, object, ...])
 
 ---
 
+
+<!-- ====================================================================== -->
 ## group
 
 This method visually groups messages together until the [groupEnd](#groupend) method is used.  Use the [groupCollapsed](#groupcollapsed) method to collapse the group when it initially logs to the **Console**.
@@ -369,6 +387,8 @@ console.group(label)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## groupCollapsed
 
 This method is identical to the [log](#log) method, except the group is initially collapsed when it logs to the **Console**.
@@ -381,6 +401,8 @@ console.groupCollapsed(label)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## groupEnd
 
 This method stops visually grouping messages.  Navigate to the [group](#group) method.
@@ -393,6 +415,8 @@ console.groupEnd(label)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## info
 
 This method is identical to the [log](#log) method.
@@ -430,6 +454,8 @@ console.info(object [, object, ...])
 
 ---
 
+
+<!-- ====================================================================== -->
 ## log
 
 This method prints a message to the **Console**.
@@ -467,6 +493,8 @@ console.log(object [, object, ...])
 
 ---
 
+
+<!-- ====================================================================== -->
 ## table
 
 This method logs an array of objects as a table.
@@ -518,6 +546,8 @@ console.table(array)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## time
 
 This method starts a new timer.  Use the [timeEnd](#timeend) method to stop the timer and print the elapsed time to the **Console**.
@@ -557,6 +587,8 @@ console.time([label])
 
 ---
 
+
+<!-- ====================================================================== -->
 ## timeEnd
 
 This method stops a timer.  For more information, navigate to the [time](#time) method.
@@ -571,6 +603,8 @@ console.timeEnd([label])
 
 ---
 
+
+<!-- ====================================================================== -->
 ## trace
 
 This method prints a stack trace to the **Console**.
@@ -612,6 +646,8 @@ console.trace()
 
 ---
 
+
+<!-- ====================================================================== -->
 ## warn
 
 This method prints a warning to the **Console**.

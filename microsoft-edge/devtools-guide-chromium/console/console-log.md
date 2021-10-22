@@ -37,6 +37,8 @@ Copy and paste the previous code snippet in the **Console** or navigate to [Cons
 
 It is, however, still a good idea to use `info()` and `log()` for different log tasks as that allows you to [filter using type in the Console][DevtoolsConsoleConsoleFilters].
 
+
+<!-- ====================================================================== -->
 ## Different types of logs
 
 Instead of log text you may send any valid JavaScript or DOM references to the **Console**.  The **Console** is elegant and it determines the type that you send it.  It then gives you the best possible representation.  Copy and paste the following code snippet in the **Console** or to display the results, navigate to [Console messages examples: logging different types][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingTypesHtml].
@@ -71,6 +73,8 @@ Each result is displayed in a different way.  Use the triangles to toggle the in
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Format and convert values with specifiers
 
 A special feature of all the log methods is that you may use specifiers in your log message.  Specifiers are part of a log message and start with a percentage sign \(`%`\) character and allow you to log certain values in different formats and even convert each.
@@ -112,6 +116,8 @@ The first example displays that the order of replacement of specifiers is the pa
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Group log messages
 
 If you log much information, you may use the `group` and `groupCollapsed` methods to display log messages as expandable and collapsible groups in the **Console**.  Groups may be nested and named to make the data much easier to understand.
@@ -154,6 +160,8 @@ Also in the second example, the group names may be optionally generated.  To dis
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Display complex data as tables
 
 The `console.table()` method logs complex data not as a collapsible and expandable object, but as a table that you may sort using different headers.  A sorted table makes it much easier for people to review the information.  To display it in an example, navigate to [Console messages examples: Using table][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithTableHtml].

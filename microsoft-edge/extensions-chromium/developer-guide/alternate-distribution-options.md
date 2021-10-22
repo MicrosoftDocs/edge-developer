@@ -20,6 +20,8 @@ Extensions that are not loaded from the Edge Add-ons store are referred to as ex
 *   Use the Windows registry (Windows only).
 *   Use a preferences JSON file (macOS and Linux).
 
+
+<!-- ====================================================================== -->
 ## Before you begin
 
 Ensure that you publish your extension in the Microsoft Edge Add-ons website, or package a `.crx` file and ensure that it installs successfully on your computer.  If you install the `.crx` file using the `update_URL`, ensure you can navigate to your extension at that URL.
@@ -33,6 +35,8 @@ Also, ensure that you have the following information.
 > [!NOTE]
 > The following examples use `1.0` as the version, and `aaaaaaaaaabbbbbbbbbbcccccccccc` for the ID.
 
+
+<!-- ====================================================================== -->
 ## Use the Windows registry (Windows only)
 
 To distribute your extension using the Windows registry, perform the following steps.
@@ -54,6 +58,8 @@ To distribute your extension using the Windows registry, perform the following s
 
 1.  Verify that your extension is listed in Microsoft Edge by navigating to `edge://extensions`.
 
+
+<!-- ====================================================================== -->
 ## Use a preferences JSON file (macOS and Linux)
 
 To distribute your extension using a preferences JSON file, perform the following steps.
@@ -114,6 +120,8 @@ To distribute your extension using a preferences JSON file, perform the followin
 
 1.  Verify that your extension is installed in Microsoft Edge by navigating to `edge://extensions`.
 
+
+<!-- ====================================================================== -->
 ## Update and uninstall externally installed extensions
 
 Microsoft Edge scans the metadata entries in the registry each time the browser starts, and makes any changes to the externally installed extensions.

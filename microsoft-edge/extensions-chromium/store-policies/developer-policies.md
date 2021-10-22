@@ -10,6 +10,8 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 ---
 # Microsoft Edge Add-ons store developer policies
 
+
+<!-- ====================================================================== -->
 ## Introduction and Objective of this document
 
 Thank you for your interest in developing extensions for the Microsoft Edge Add-ons store.  The Microsoft Edge Add-ons store developer policies \(Add-ons store developer policies\) apply to your extensions, including your submission of extensions through [Partner Center][MicrosoftPartnerCenter] and the provision of such extensions through the Microsoft Edge Add-ons.
@@ -17,6 +19,8 @@ Thank you for your interest in developing extensions for the Microsoft Edge Add-
 The _Microsoft Edge Add-ons store_ is also called the _Microsoft Edge Add-ons website_.  The _Microsoft Edge Add-ons store developer policies_ are also called the _Microsoft Edge Add-ons website developer policies_.
 
 
+
+<!-- ====================================================================== -->
 ## Principles
 
 A few principles to get you started:
@@ -29,6 +33,8 @@ Adhering to the Microsoft Edge Add-ons store developer policies should help you 
 
 Your extensions are crucial to the experience of hundreds of millions of users.  We look forward to experiencing what you create and are thrilled to help deliver your extensions to the world.
 
+
+<!-- ====================================================================== -->
 ## 1. Product Policies
 
 ### 1.1 Distinct Function & Value; Accurate Representation
@@ -240,6 +246,8 @@ Your privacy statement or terms of use must let users know you plan to send Pers
 
 If your extension is directed at children under the age of 13, as defined in the [Children's Online Privacy Protection Act][FTCChildrensPrivacy]; you must notify Microsoft of this fact in [Partner Center][MicrosoftPartnerCenter] and ensure that all ad content displayed in your extension is appropriate for children under the age of 13.
 
+
+<!-- ====================================================================== -->
 ## 2 Content Policies
 
 The following policies apply to content and metadata \(including publisher name, extension name, extension icon, extension description, extension screenshots, extension trailers and trailer thumbnails, and any other extension metadata\) offered for distribution in Microsoft Edge Add-ons.  Content means the images, sounds, videos and text contained in your extension, the tiles, notifications, error messages or ads exposed through your extension, and anything delivered from a server or to which your extension connects.  Because extensions and Microsoft Edge Add-ons are used around the world, these requirements are interpreted and applied in the context of regional and cultural norms.
@@ -322,6 +330,8 @@ If your extension provides content \(such as user-generated, retail, or other we
 If you submit a promotional video in the listing, it should follow all the content guidelines mentioned in this policy.  If you choose to provide a YouTube link, you must ensure that advertisements are turned off for the specific videos that you want to embed.  For more information on turning on or off ads on YouTube, navigate to [Set your default ad formats][GoogleYoutubeAnswer2531367Topic7072227] and [Ads on embedded videos][GoogleYoutubeAnswer132596].
 
 
+
+<!-- ====================================================================== -->
 ## Certification Appeal Process
 
 All the extensions should adhere to the store policies listed above. If your extension failed in the review process, please review the store policies to understand the reason for failure. After submitting your extension using Partner Center, to ask a question about the review or certification status of it, navigate to [New Support Request][MicrosoftSupportSupportrequestformE7a381be9c9aFafbEd76262bc93fd9e4] and complete the form.

@@ -65,6 +65,8 @@ The following table provides a list of APIs that you can use when building exten
 
 
 
+
+<!-- ====================================================================== -->
 ## Unsupported extension APIs
 
 Microsoft Edge doesn't support the following Extension APIs:
@@ -75,6 +77,8 @@ Microsoft Edge doesn't support the following Extension APIs:
 * `chrome.instanceID`.
 
 
+
+<!-- ====================================================================== -->
 ## Additional considerations for supported APIs
 
 *  The user must be signed into Microsoft Edge using a Microsoft account (MSA) or Azure Active Directory account to use `chrome.identity.getProfileUserInfo`. If the user is signed into Microsoft Edge using an on-premises Active Directory account, the API returns `null` for the email and ID values.

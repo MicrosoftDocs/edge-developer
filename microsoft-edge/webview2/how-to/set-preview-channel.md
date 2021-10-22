@@ -24,6 +24,8 @@ The prerelease SDK works together with a preview channel as follows:
 For more information about how SDK versions works in conjunction with the WebView2 Runtime or preview channels of Microsoft Edge, navigate to [Understand WebView2 SDK versions][WebView2ConceptsVersioning].
 
 
+
+<!-- ====================================================================== -->
 ## Downloading the prerelease SDK and a preview channel
 
 To use experimental APIs, download a prerelease version of the WebView2 SDK from [Microsoft.Web.WebView2 package](https://www.nuget.org/packages/Microsoft.Web.WebView2).
@@ -32,6 +34,8 @@ To get a Microsoft Edge preview channel, navigate to [Download Microsoft Edge In
 
 
 <!-- intro/overview of 4 approaches -->
+
+<!-- ====================================================================== -->
 ## Approaches to making your app use a specific browser channel
 
 There are several ways to make your WebView2 app use a specified preview channel of Microsoft Edge:
@@ -58,6 +62,8 @@ If you set the release channel preference by using a group policy, registry over
 
 
 <!-- 1. Code ===============================================================-->
+
+<!-- ====================================================================== -->
 ## Using code
 
 If you want to make your application use a Microsoft Edge preview channel by calling a function, complete the following steps.
@@ -130,6 +136,8 @@ Refer to [CoreWebView2CreationProperties.BrowserExecutableFolder Property](/dotn
 
 
 <!-- 2. Group Policy =======================================================-->
+
+<!-- ====================================================================== -->
 ## Using a group policy
 
 If you want to make your application use a Microsoft Edge preview channel by using a group policy, copy ADMX and ADML files to the `PolicyDefinitions` folder, as follows.
@@ -168,6 +176,8 @@ For more information, see [Configure Microsoft Edge policy settings](/deployedge
 
 
 <!-- 3. Registry Override ==================================================-->
+
+<!-- ====================================================================== -->
 ## Using a registry override
 
 When specifying a preview channel by using a registry override, there are two options:
@@ -216,6 +226,8 @@ To delete the `ReleaseChannelPreference` registry override, run the command:
 
 
 <!-- 4. Environment Variable ========================================================================-->
+
+<!-- ====================================================================== -->
 ## Using an environment variable
 
 To make your application use a Microsoft Edge preview channel by using an environment variable:

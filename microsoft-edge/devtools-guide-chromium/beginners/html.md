@@ -27,6 +27,8 @@ This is the first in a series of tutorials that teach you the basics of web deve
 
 This tutorial describes HTML and the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \(DOM\). HTML is one of the core technologies of web development. It is the language that controls the structure and content of webpages. The DOM is also related to the structure and content of webpages, which we learn more about later.
 
+
+<!-- ====================================================================== -->
 ## Goals
 
 You're going to learn web development by building a website.  By the time you complete all of the tutorials in the **DevTools for Beginners** series, your finished site will look like the following figure.
@@ -43,6 +45,8 @@ By the end of this tutorial, you should understand the following concepts.
 
 You will also have a working website. You can use the site to host your resume or blog.
 
+
+<!-- ====================================================================== -->
 ## Prerequisites
 
 Before attempting this tutorial, complete the following prerequisites:
@@ -50,6 +54,8 @@ Before attempting this tutorial, complete the following prerequisites:
 *   If you are unfamiliar with HTML, read [Getting Started with HTML][MDNGettingStartedHtml].
 *   Download the [Microsoft Edge][MicrosoftEdgeInsider] web browser.  This tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.
 
+
+<!-- ====================================================================== -->
 ## Set up your code
 
 You are going to build a site in the Glitch online code editor.
@@ -80,6 +86,8 @@ You are going to build a site in the Glitch online code editor.
        The live tab
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Add content
 
 Your site needs more information. Complete the following steps to add some content.
@@ -149,6 +157,8 @@ Your site needs more information. Complete the following steps to add some conte
        The new list is visible in the live tab
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Experiment with content changes in Microsoft Edge DevTools
 
 If you are developing a page with a lot of HTML, it becomes tedious to go back-and-forth between the editor tab and the live tab to see your changes. Microsoft Edge DevTools helps you experiment with content changes without ever leaving the **live tab**.
@@ -220,6 +230,8 @@ If you want to quickly experiment with content changes without ever leaving the 
 
 This workflow is only suitable for experimenting with content changes. If you refresh the page or close the tab, your changes are lost. If you want to save your changes, manually copy the code to your HTML file. The next couple of sections show you some more ways to change content from the DOM Tree.
 
+
+<!-- ====================================================================== -->
 ## Reorder nodes
 
 You can also change the order of DOM nodes. For example, on your web page the navigation menu is near the bottom. To move it to the top, perform the following steps.
@@ -248,6 +260,8 @@ You can also remove nodes from the DOM Tree. Perform the following steps.
        The node has been deleted
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Copy your changes
 
 You're almost done. You made a few changes to the page in DevTools, but they're not saved to your source code.
@@ -299,6 +313,8 @@ You're almost done. You made a few changes to the page in DevTools, but they're 
     :::image-end:::
 
 
+
+<!-- ====================================================================== -->
 ## Next steps
 
 *   Complete the next tutorial in this series, [Get Started with CSS][DevToolsBeginnersCss], to learn how to style your page and experiment with style changes in Microsoft Edge DevTools.

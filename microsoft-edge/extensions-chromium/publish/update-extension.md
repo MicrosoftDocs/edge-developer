@@ -15,6 +15,8 @@ You can update a submitted extension or remove a published extension listing fro
 > [!NOTE]
 > The certification process for an update to an extension can take from a few hours to a few days.
 
+
+<!-- ====================================================================== -->
 ## Update an existing extension in the Microsoft Edge Add-ons website
 
 To update your extension on the store:
@@ -32,6 +34,8 @@ After your extension has been initially created, you will be able to update it p
 -->
 
 
+
+<!-- ====================================================================== -->
 ## Update your extension during the certification step
 
 While your extension is still in the certification stage, and before it gets published to the Microsoft Edge Add-ons website, you can update it. If your extension fails the certification process, you might also need to update your extension.
@@ -52,6 +56,8 @@ To edit your submission:
 > The process stops and removes your current submission from the Microsoft Edge extensions certification pipeline and a new review starts with the latest submission.
 
 
+
+<!-- ====================================================================== -->
 ## Update your extension after it failed the certification
 
 After your extension failed the certification process, you need to update your extension and resubmit your extension that incorporates the feedback.
@@ -65,6 +71,8 @@ To edit your extension:
 1.  After making changes, select **Save** > **Publish**.
 
 
+
+<!-- ====================================================================== -->
 ## Remove an extension from the Microsoft Edge Add-ons website
 
 To remove an extension from the Microsoft Edge Add-ons website:

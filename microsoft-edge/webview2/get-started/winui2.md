@@ -17,6 +17,8 @@ In this article, get started creating your first WebView2 app and learn about th
 > The WinUI 2 package takes a dependency on a prerelease WebView2 package.  For full API compatibility, use a preview browser channel as your runtime (that is, the Beta, Dev, or Canary channel of Microsoft Edge).
 
 
+
+<!-- ====================================================================== -->
 ## Step 1\: Install Visual Studio
 
 1.  Install Visual Studio version 16.9 or later.  You can accept the defaults.
@@ -24,6 +26,8 @@ In this article, get started creating your first WebView2 app and learn about th
 1.  By default, Visual Studio doesn't show line numbers in the code editor.  To turn on line numbers, select **Tools** > **Options** > **Text Editor** > **All Languages** > **Line numbers**.  Then select **OK**.
 
 
+
+<!-- ====================================================================== -->
 ## Step 2\: Install workloads
 
 1.  In Visual Studio, select **Tools** > **Get Tools and Features**.  The **Visual Studio Installer** window opens.
@@ -43,6 +47,8 @@ In this article, get started creating your first WebView2 app and learn about th
 1.  Select the **Modify** button.  Visual Studio installs the selected features.
 
 
+
+<!-- ====================================================================== -->
 ## Step 3\: Create a UWP app
 
 1.  In Visual Studio, select **File** > **New** > **Project**.  Or use the startup screen of Visual Studio, then select **Create a new project**.  The **Create a new project** dialog box appears.
@@ -82,6 +88,8 @@ The solution and project is displayed.
 :::image-end:::
 
 
+
+<!-- ====================================================================== -->
 ## Step 4\: Install the WinUI 2 NuGet package
 
 1.  Right-click the project in Solution Explorer, and then select **Manage NuGet Packages**.
@@ -105,6 +113,8 @@ The solution and project is displayed.
 <!-- note: install halted after only WinUI 2 component, it didn't seem to install WebView2 even though that was the 2nd item listed.  assume that's ok now on my machine. -->
 
 
+
+<!-- ====================================================================== -->
 ## Step 5\: Instantiate the WebView2 control in XAML code
 
 ### Add the project reference for the WebView2 control

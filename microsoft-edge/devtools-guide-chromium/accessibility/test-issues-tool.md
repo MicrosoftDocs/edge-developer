@@ -18,6 +18,8 @@ There are several ways to open the **Issues** tool, such as:
 *  In the **Command Menu**, type `issues`, and then select **Show Issues**.
 
 
+
+<!-- ====================================================================== -->
 ## View the Accessibility section of the Issues tool
 
 1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.  In the upper right, the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears.  The **Issues counter** is a speech-bubble icon along with the number of automatically detected issues.
@@ -37,6 +39,8 @@ There are several ways to open the **Issues** tool, such as:
 1.  On the **Issues** tab, expand the **Accessibility** section.
 
 
+
+<!-- ====================================================================== -->
 ## Verify that input fields have labels
 
 To check whether input fields have labels connected to them, use the **Issues** tool, which automatically checks the entire webpage and reports this issue in the **Accessibility** section.
@@ -78,6 +82,8 @@ To check whether input fields have labels connected to them, use the **Issues** 
     :::image-end:::
 
 
+
+<!-- ====================================================================== -->
 ## Verify that images have alt text
 
 Basic accessibility testing requires making sure alternative text (also called _alt text_) is provided for images.
@@ -97,6 +103,8 @@ To automatically check whether alt text is provided for images, use the **Issues
 For more information, navigate to [Images must have alternate text](https://dequeuniversity.com/rules/axe/4.1/image-alt).
 
 
+
+<!-- ====================================================================== -->
 ## Verify that text colors have enough contrast
 
 To automatically check whether text colors have enough contrast, use the **Issues** tool, which has an **Accessibility** section.  The **Issues** tool is located in the **Drawer** at the bottom of DevTools.

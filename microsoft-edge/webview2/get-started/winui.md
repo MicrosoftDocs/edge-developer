@@ -14,6 +14,8 @@ keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWeb
 In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Your first WebView2 app uses WinUI 3.  For more information on individual APIs, navigate to [API reference][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].
 
 
+
+<!-- ====================================================================== -->
 ## Step 0 - Set Up Development Environment
 
 1. Follow steps 1-4 of [Set up your development environment][WindowsAppsWinui3ConfigureYourDevEnvironment] to install Visual Studio, configure the NuGet package source, and install the Windows App SDK Extension for Visual Studio.
@@ -21,6 +23,8 @@ In this article, get started creating your first WebView2 app and learn about th
 1.  To access all developer-specific Visual Studio features, turn on [Developer Mode][WindowsUwpGetStartedEnableYourDeviceForDevelopment].
 
 
+
+<!-- ====================================================================== -->
 ## Step 1 - Create Project
 
 Start with a basic desktop project that contains a single main window.
@@ -49,6 +53,8 @@ Start with a basic desktop project that contains a single main window.
     *   **Your project name (Package)**.  The Package project is a Windows Application Packaging Project that is configured to build the app into an MSIX package for deployment.  The project contains the package manifest for your app, and is the startup project for your solution by default.  For more information, navigate to [Set up your desktop application for MSIX packaging in Visual Studio][WindowsMsixDesktopToUwpPackagingDotNet] and [Package manifest schema reference for Windows 10][UwpSchemasAppxpackageUapmanifestRoot].
 1.  In the Solution Explorer, to display the code, open the `MainWindow.xaml` file.  To run your project and display a window with a button, select `F5`.
 
+
+<!-- ====================================================================== -->
 ## Step 2 - Add a WebView2 control to your project
 
 Add a WebView2 control to your project.
@@ -112,6 +118,8 @@ Add a WebView2 control to your project.
        WebView2 control displays microsoft.com
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 3 - Add navigation controls
 
 To allow users to control the webpage that is displayed in your WebView2 control, add an address bar to your app.
@@ -172,6 +180,8 @@ To allow users to control the webpage that is displayed in your WebView2 control
        bing.com
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 4 - Navigation events
 
 For this step, we need to import the WebView2 Core library.
@@ -229,6 +239,8 @@ To build and run your project, select `F5`.  Ensure navigation is blocked to HTT
 > The WinRT `CoreWebView2` object might not be available with the release of the WebView2 API.  The [WebView2 Spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] lists which of the APIs are available for WebView2.
 
 
+
+<!-- ====================================================================== -->
 ## Step 5 - Scripting
 
 You may use host apps to inject JavaScript code into WebView2 controls at runtime.  You may task WebView to run arbitrary JavaScript or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run with specific timing.

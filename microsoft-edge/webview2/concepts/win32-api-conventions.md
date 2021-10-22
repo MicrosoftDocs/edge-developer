@@ -14,10 +14,14 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 Supported platforms: Win32.
 
 
+
+<!-- ====================================================================== -->
 ## Prerequisites
 
 *   Experience using the Win32 API.
 
+
+<!-- ====================================================================== -->
 ## Async methods
 
 Asynchronous methods in the WebView2 Win32 C++ API use a delegate interface to contact you for the following reasons.
@@ -65,6 +69,8 @@ void ScriptComponent::InjectScript()
 }
 ```
 
+
+<!-- ====================================================================== -->
 ## Events
 
 Events in the WebView2 Win32 C++ API use the `add_EventName` and `remove_EventName` method pair to subscribe and unsubscribe from events.  The `add_EventName` method takes an event handler delegate interface and gives back an `EventRegistrationToken` token as an output parameter.  The `remove_EventName` method takes an `EventRegistrationToken` token and unsubscribes the corresponding event subscription.
@@ -109,12 +115,16 @@ CHECK_FAILURE(m_webView->add_NavigationCompleted(
     &m_navigationCompletedToken));
 ```
 
+
+<!-- ====================================================================== -->
 ## Strings
 
 String output parameters are `LPWSTR` null-terminated strings.  The requester provides the string using `CoTaskMemAlloc`.  Ownership is transferred to the requester and it is up to the requester to free the memory using `CoTaskMemFree`.
 
 String input parameters are `LPCWSTR` null-terminated strings.  The requester ensures the string is valid for the duration of the synchronous function request.  If the receiver must store the value to some point after the function request completes, the receiver must give an associated copy of the string value.
 
+
+<!-- ====================================================================== -->
 ## URI and JSON parsing
 
 Various methods provide or accept URIs and JSON as strings.  Use your preferred library for parsing and generating the strings.

@@ -100,6 +100,8 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Increment / decrement a property value by 10 | Choose a value, then select `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Choose a value, then select `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |
 | Increment / decrement a property value by 100 | Choose a value, then select `Control`+`Up Arrow` / `Control`+`Down Arrow` | Choose a value, then select `Command`+`Up Arrow` / `Command`+`Down Arrow` |
 
+
+<!-- ====================================================================== -->
 ## Sources tool keyboard shortcuts
 
 | Action | Windows\/Linux | macOS |

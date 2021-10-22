@@ -12,6 +12,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 The **Console** tool isn't only for [logging information][DevtoolsConsoleConsoleLog] or to [run arbitrary JavaScript][DevtoolsConsoleConsoleJavascript].  It also is a great way to interact with the webpage in the browser.  Consider it a script-environment version of the **Inspect** tool.
 
+
+<!-- ====================================================================== -->
 ## Read from the DOM
 
 To reference the header of the webpage, complete the following actions.
@@ -34,6 +36,8 @@ If you select `Shift`+`Tab` or move your mouse cursor over the HTML result, DevT
     DevTools highlights the section you choose in the **Console**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Manipulate the DOM
 
 You may manipulate the webpage, too.  For example, if you copy and paste or type the following into the **Console**, a green border displays around the header.
@@ -83,6 +87,8 @@ To change the text of the link to `My Playground`, add `.textContent = "My Playg
 
 Use any JavaScript DOM manipulations you want to do in the **Console**.  To make it more convenient, the **Console** comes with a few helper methods.
 
+
+<!-- ====================================================================== -->
 ## Helpful Console utility methods
 
 Many convenience methods and shortcuts are available to you as [Console Utilities][DevtoolsConsoleUtilities].  Some of the methods are incredibly powerful and are things you probably wrote as a series of `console.log()` statements in the past.
@@ -248,6 +254,8 @@ unmonitorEvents(window, ['resize', 'scroll']);
 unmonitorEvents($0, 'key');
 ```
 
+
+<!-- ====================================================================== -->
 ## Reuse DOM manipulation scripts
 
 You may find it useful to manipulate the DOM from the **Console**.  You may soon run into the limitations of the **Console** as a development platform.  The good news is that the [Sources][DevtoolsSourcesIndex] tool in DevTools offers a fully featured development environment.  In the **Sources** tool, you may complete the following actions.

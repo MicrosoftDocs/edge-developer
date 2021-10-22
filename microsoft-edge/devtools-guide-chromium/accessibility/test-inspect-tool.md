@@ -22,6 +22,8 @@ When the **Inspect** tool is active, hovering over any element on the rendered w
 :::image-end:::
 
 
+
+<!-- ====================================================================== -->
 ## Check individual elements for text contrast, screen reader text, and keyboard support
 
 <!-- Inspect tool: Accessibility section of overlay -->
@@ -53,6 +55,8 @@ The bottom part of the **Inspect** overlay has an **Accessibility** section that
     *   A gray circle with diagonal line indicates that the element isn't keyboard-focusable.
 
 
+
+<!-- ====================================================================== -->
 ## Additional information in the Inspect overlay
 
 <!-- general info about the Inspect tool, not particularly focused on accessibility -->
@@ -67,6 +71,8 @@ The top part of the **Inspect** overlay, which is above the **Accessibility** se
 *   Margin and padding in pixels.
 
 
+
+<!-- ====================================================================== -->
 ## Identify nested regions using color highlighting
 
 <!-- general info about the Inspect tool, not particularly focused on accessibility -->
@@ -86,6 +92,8 @@ In addition to the information overlay, the **Inspect** tool also provides regio
 To configure the grid overlay or flexbox overlay, in the **Elements** tool, select the **Layout** tab.  For more information, navigate to [Inspect CSS Grid](..\css\grid.md).
 
 
+
+<!-- ====================================================================== -->
 ## Use the Inspect tool to hover over the webpage to highlight the DOM and CSS
 
 <!-- general info about the Inspect tool, not particularly focused on accessibility -->

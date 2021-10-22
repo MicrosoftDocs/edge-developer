@@ -29,6 +29,8 @@ The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI 
    Using the Command Menu to disable JavaScript
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Open the Command Menu
 
 Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\). Or choose **Customize And Control DevTools** \(`...`\) > **Run Command**.
@@ -37,6 +39,8 @@ Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS
    Run Command
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Display other available actions
 
 If you use the workflow outlined in [Open the Command Menu](#open-the-command-menu), the Command Menu opens with a `>` character pre-pended to the Command Menu text box.

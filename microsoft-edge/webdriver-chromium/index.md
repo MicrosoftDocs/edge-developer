@@ -19,6 +19,8 @@ WebDriver allows developers to automate Microsoft Edge by simulating user intera
 *   Runs multiple sessions of Microsoft Edge on a specific machine.
 
 
+
+<!-- ====================================================================== -->
 ## Relationship between WebDriver and other software
 
 To automate Microsoft Edge with WebDriver to simulate user interaction, you need three components:
@@ -39,6 +41,8 @@ The functional relationship between these components is as follows.
 The following sections describe how to get started with WebDriver for Microsoft Edge.
 
 
+
+<!-- ====================================================================== -->
 ## Download Microsoft Edge Driver
 
 To begin automating tests, use the following steps to ensure that the WebDriver version you install matches your browser version.
@@ -59,6 +63,8 @@ To begin automating tests, use the following steps to ensure that the WebDriver 
     :::image-end:::
 
 
+
+<!-- ====================================================================== -->
 ## Choose a WebDriver testing framework
 
 After downloading Microsoft Edge Driver, the last component you must download is a WebDriver testing framework. Test authors use WebDriver testing frameworks to write end-to-end tests and automate browsers. The framework provides a language-specific interface that translates your code (such as Python, Java, C#, Ruby, or JavaScript) into commands that Microsoft Edge Driver runs in Microsoft Edge. WebDriver testing frameworks exist for all major platforms and languages.
@@ -128,6 +134,8 @@ npm install @microsoft/edge-selenium-tools selenium-webdriver
 * * *
 
 
+
+<!-- ====================================================================== -->
 ## Automate Microsoft Edge with WebDriver
 
 To automate a browser using WebDriver, you must first start a WebDriver session using your preferred WebDriver testing framework.  A session is a single running instance of a browser controlled using WebDriver commands.  Start a WebDriver session to launch a new browser instance.  The launched browser instance remains open until you close the WebDriver session.
@@ -356,6 +364,8 @@ options.addArguments("disable-gpu");
 > If the `UseChromium` property is set to `true`, you are not able to use properties and methods for Microsoft Edge \(EdgeHTML\).
 
 
+
+<!-- ====================================================================== -->
 ## Other WebDriver installation options
 
 ### Docker
@@ -369,11 +379,15 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 For more information, navigate to the [msedgedriver container on Docker Hub][DockerHubMsedgedriver].
 
 
+
+<!-- ====================================================================== -->
 ## Testing Internet Explorer
 
 To test sites that require Internet Explorer, use [Internet Explorer Driver][GithubSeleniumHqWikiIEDriver] with Internet Explorer.  Internet Explorer Driver is maintained by the Selenium project.  Even though Microsoft Edge supports IE Mode, you can't use Microsoft Edge Driver with Microsoft Edge to test sites in IE Mode.
 
 
+
+<!-- ====================================================================== -->
 ## Application Guard
 
 Trusted sites that use Microsoft Defender Application Guard (Application Guard) can be automated using Microsoft Edge Driver.
@@ -388,6 +402,8 @@ For more information about Application Guard, navigate to:
 *  [Microsoft Defender Application Guard overview][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10]
 
 
+
+<!-- ====================================================================== -->
 ## Opt out of diagnostic data collection
 
 By default, Microsoft Edge Driver sends diagnostic data such as the status of the [New Session WebDriver command][WebDriverProtocolNewSession] to Microsoft.  To turn off the diagnostic data collection for Microsoft Edge Driver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1`.  For more information about the data that Microsoft Edge Driver collects, navigate to the [Microsoft Edge Privacy Whitepaper][MicrosoftEdgePrivacyWhitepaper].

@@ -31,6 +31,8 @@ The `password` input type in Microsoft Edge includes a **password reveal** contr
 
 By default, the **password reveal** button inserts into the Shadow DOM of all HTML `input` elements with the `type` set to `"password"`.  Starting with Microsoft Edge Version 87, users or [enterprises][DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled] may disable this feature globally.  You, web designers and developers, should expect most Microsoft Edge users to have the default experience.
 
+
+<!-- ====================================================================== -->
 ## Remove the password reveal control
 
 You may completely remove the **password reveal** button by targeting the `::-ms-reveal` pseudo element.
@@ -43,6 +45,8 @@ You may completely remove the **password reveal** button by targeting the `::-ms
 
 However, you should consider taking advantage of the **password reveal** button.  The native **password reveal** button has important [security measures](#visibility-of-the-control) built into the behavior.
 
+
+<!-- ====================================================================== -->
 ## Customize the control style
 
 Instead of fully removing the control, you may instead modify the styling of the **password reveal** button to better match the visual language of the website.  The following snippet provides an example of such styling.
@@ -65,6 +69,8 @@ Keep the following things in mind when you style the **password reveal** button.
 
 *   Currently, no state selectors are available to style the toggled state of the **password reveal** button.
 
+
+<!-- ====================================================================== -->
 ## Visibility of the control
 
 The **password reveal** button is unavailable until the user enters text into the **password** field.  To help keep the user's password entry secure, the browser suppresses the button in the following scenarios.

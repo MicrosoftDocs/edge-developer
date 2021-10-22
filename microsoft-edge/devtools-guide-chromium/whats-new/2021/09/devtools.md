@@ -13,6 +13,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 [!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)]
 
 
+
+<!-- ====================================================================== -->
 ## Search for Console errors on the web
 
 <!-- Title: Quickly debug console errors with our new integrated search feature -->
@@ -27,6 +29,8 @@ For more information, navigate to [Look up error messages on the web from the Co
 :::image-end:::
 
 
+
+<!-- ====================================================================== -->
 ## DevTools extension for Visual Studio Code includes the latest tools, theme support, and helpful links
 
 <!-- Title: Edge DevTools for VS Code now supports themes and uses the most recent codebase -->
@@ -52,6 +56,8 @@ Light themes from Visual Studio Code are also supported.
 :::image-end:::
 
 
+
+<!-- ====================================================================== -->
 ## Breakpoint icons are now displayed when using Visual Studio Code themes
 
 <!-- Title: Breakpoint icons are now displayed when using themes from Visual Studio Code -->
@@ -68,6 +74,8 @@ To learn more about using breakpoints for debugging JavaScript code, navigate to
 :::image-end:::
 
 
+
+<!-- ====================================================================== -->
 ## Navigate to the More Tools button with the keyboard
 
 <!-- Title: Use the arrow keys to navigate to the + button to open more tools -->
