@@ -1,5 +1,8 @@
 // This script can be used to insert missing h2 headings separator comments.
-// These separators are useful to us, maintainers of the docs repo, to make it easier to read markdown files.
+// Why h2 comment dividers (with two blank lines above) are important:
+// - These separators facilitate authoring and maintenance of docs, for the Docs team and for all contributors, by making it easier to read the source files, by providing a kind of Preview view right within the source files. These separators help fulfill the intent of Markdown, of being easy to read, like WYSIWYG page layout.
+// - This facilitates and encourages contributions, and reduces the cognitive overhead that's required to answer "Where am I in the source file?", to free up mental focus for the content and flow.
+// - This h2 divider helps contributors think in terms of Doc Design, to cast the structure of pages into the form of a series of h2 sections, leveraging h2's for navigation in the "In this article" nav feature.
 
 const glob = require('glob');
 const fs = require('fs').promises;
