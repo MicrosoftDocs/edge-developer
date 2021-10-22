@@ -63,4 +63,4 @@ This WinUI Controls Gallery sample shows all of the XAML controls in an interact
 
 The [WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WV2DeploymentVSInstallerSample/README.md) uses the [Microsoft Visual Studio Installer Projects](https://marketplace.visualstudio.com/items?itemName=visualstudioclient.MicrosoftVisualStudio2017InstallerProjects) extension for Visual Studio, to create an installer for [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) and chain-install the Evergreen WebView2 Runtime.
 
-This sample is a separate installer. It is not part of the `WebView2Samples` repo.
+This sample is a separate installer. It's not part of the `WebView2Samples` repo.
