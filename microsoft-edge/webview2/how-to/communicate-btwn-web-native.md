@@ -267,7 +267,7 @@ When requested by the host app, the C++ file gets the window bounds and sends th
             return true;
     ```
 
-1. The window bounds display on the web page.
+1. The window bounds are displayed on the web page.
 
 
 <!-- ====================================================================== -->
