@@ -122,7 +122,7 @@ That completes the example showing how WebView2 communicates through simple mess
 
 ### Receive message strings via postMessage
 
-This example follows the `Receiving Messages` section to change the text of the title bar. The host app receives a message from WebView2 with the new title bar text.
+This example follows the `Receiving Messages` section of the webpage, to change the text of the title bar. The host app receives a message from WebView2 with the new title bar text.
 
 The C++ file handles the title text and communicates it to the host app as a string.
 
@@ -150,7 +150,7 @@ The C++ file handles the title text and communicates it to the host app as a str
 1. The event handler in the [ScenarioWebMessage C++ file][ScenarioWebMessageCPP] processes the new title text string and communicates it to the host app as a string.
     <!-- Is this accurate?  And complete? -->
 
-    ```CPP
+    ```cpp
     // Setup the web message received event handler before navigating to
     // ensure we don't miss any messages.
     CHECK_FAILURE(m_webView->add_WebMessageReceived(
@@ -214,7 +214,7 @@ When requested by the host app, the C++ file gets the window bounds and sends th
 1. The event handler in the [ScenarioWebMessage C++ file][ScenarioWebMessageCPP] gets the window bounds and sends the data to the host app using web message as string.
     <!-- Not sure web message as string is accurate -->
 
-     ```CPP
+     ```cpp
     // Setup the web message received event handler before navigating to
     // ensure we don't miss any messages.
     CHECK_FAILURE(m_webView->add_WebMessageReceived(
@@ -289,9 +289,7 @@ For more information navigate to: [Use JavaScript in WebView2 apps](javascript.m
 
 Pass the native object to the web. Then call the object's methods from the web.
 
-<!-- "Allow web to access native objects" note from Jason -->
-
-`AddHostObjectToScript`
+<!-- "Allow web to access native objects" note from SME -->
 
 To use messages that represent method calls, use the `AddHostObjectToScript` API. At a high level, this API lets you expose native (host) objects into the web side and act as a proxy. Access these objects using `window.chrome.webview.hostObjects.{name}`.
 
