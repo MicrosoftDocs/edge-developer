@@ -436,6 +436,8 @@
               href: webview2/get-started/winui.md
             - name: WPF
               href: webview2/get-started/wpf.md
+        - name: Sample code
+          href: webview2/code-samples-links.md
         - name: Concepts
           items:
             - name: Differences between Microsoft Edge and WebView2
