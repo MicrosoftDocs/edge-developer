@@ -65,7 +65,6 @@ The following table provides a list of APIs that you can use when building exten
 
 
 
-
 <!-- ====================================================================== -->
 ## Unsupported extension APIs
 
@@ -75,7 +74,6 @@ Microsoft Edge doesn't support the following Extension APIs:
 * `chrome.identity.getAccounts`.
 * `chrome.identity.getAuthToken` - As an alternate, you may use `launchWebAuthFlow` to fetch an OAuth2 token to authenticate users.
 * `chrome.instanceID`.
-
 
 
 <!-- ====================================================================== -->

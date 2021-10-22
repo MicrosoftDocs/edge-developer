@@ -124,7 +124,6 @@ private async void WebView2WebResourceRequestedHandler(CoreWebView2 sender,
 ```
 
 
-
 <!-- ====================================================================== -->
 ## Block the UI thread
 

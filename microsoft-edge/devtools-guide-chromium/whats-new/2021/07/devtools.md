@@ -13,7 +13,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 [!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)]
 
 
-
 <!-- ====================================================================== -->
 ## Apply themes from Visual Studio Code to DevTools
 
@@ -44,7 +43,6 @@ Dark themes:
 For more information, navigate to [Apply color themes to DevTools][CustomizeDarkTheme].
 
 
-
 <!-- ====================================================================== -->
 ## Debug DOM node memory leaks with the new Detached Elements tool
 
@@ -66,7 +64,6 @@ To turn on this experiment, navigate to **Settings** > **Experiments** and s
 
 <!-- For more information, navigate to [Detached elements][ExperimentalFeaturesDetachedElements]. -->
 <!-- todo: link directly to the subheading in the page, when available; test the subheading link -->
-
 
 
 <!-- ====================================================================== -->
@@ -97,7 +94,6 @@ For more details about improvements and fixes, check the [changelog file][Github
 For more information, navigate to [Launching Edge DevTools from the JS Debugger workflow][GithubVscodeEdgeDevtoolsDebuggerIntegration].  Get the [Microsoft Edge Developer Tools for Visual Studio Code extension][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools].  Microsoft Visual Studio Code updates extensions automatically; to update this extension manually instead, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools].
 
 
-
 <!-- ====================================================================== -->
 ## New Fluent UI icons for DevTools
 
@@ -109,7 +105,6 @@ Microsoft Edge DevTools has adopted [Fluent UI][FluentUI], giving buttons and me
 :::image type="complex" source="../../media/2021/07/fluent-ui.msft.png" alt-text="DevTools implemented with Fluent UI design" lightbox="../../media/2021/07/fluent-ui.msft.png":::
    DevTools implemented with Fluent UI design
 :::image-end:::
-
 
 
 <!-- ====================================================================== -->
@@ -125,7 +120,6 @@ Previously, to change the display language in DevTools, you had to change the br
 :::image-end:::
 
 By default, DevTools matches your browser's display language.  For more information, navigate to [Change DevTools language settings][CustomizeLocalization].  To review the history of this feature in the Chromium open-source project, navigate to Issue [2882756][CR2882756].
-
 
 
 <!-- ====================================================================== -->
@@ -147,7 +141,6 @@ Now in Microsoft Edge version 93, you can copy a single CSS declaration or all t
 :::image-end:::
 
 To learn more about viewing and changing CSS, navigate to [CSS features reference][CssReference].
-
 
 
 <!-- ====================================================================== -->
@@ -175,7 +168,6 @@ You can also override User-Agent Client Hints for the current page by using the 
 For more information about defining hints in the **Network conditions** tool, navigate to [Set user agent client hints][NetworkReferenceSetUach].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1174299][CR1174299].
 
 
-
 <!-- ====================================================================== -->
 ## Screen readers now announce errors, warnings, and issues in toolbar and Console
 
@@ -195,7 +187,6 @@ Now in Microsoft Edge version 93, screen readers correctly announce the type and
 For information about debugging Console errors, navigate to [Fixing JavaScript errors that are reported in the Console][ConsoleConsoleDebugJavascript].  For information about issues found by DevTools and improvements you can make to a webpage, navigate to [Find and fix problems using the Issues tool][IssuesIndex].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1223208][CR1223208].
 
 
-
 <!-- ====================================================================== -->
 ## Copy as PowerShell in the Network tool now includes cookies
 
@@ -211,7 +202,6 @@ Now in Microsoft Edge version 93, the **Copy as PowerShell** context menu option
 :::image-end:::
 
 For more information about the Network Activity Log, navigate to [Network Analysis reference][NetworkReference].  To review the history of this feature in the Chromium open-source project, navigate to Issue [932971][CR932971].
-
 
 
 <!-- ====================================================================== -->

@@ -13,7 +13,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 [!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)]
 
 
-
 <!-- ====================================================================== -->
 ## Search for Console errors on the web
 
@@ -27,7 +26,6 @@ For more information, navigate to [Look up error messages on the web from the Co
 :::image type="complex" source="../../media/2021/09/search-console-icon.msft.png" alt-text="The 'Search for this message on the Web' button on an error in the **Console**" lightbox="../../media/2021/09/search-console-icon.msft.png":::
    The **Search for this message on the Web** button on an error in the **Console**
 :::image-end:::
-
 
 
 <!-- ====================================================================== -->
@@ -56,7 +54,6 @@ Light themes from Visual Studio Code are also supported.
 :::image-end:::
 
 
-
 <!-- ====================================================================== -->
 ## Breakpoint icons are now displayed when using Visual Studio Code themes
 
@@ -72,7 +69,6 @@ To learn more about using breakpoints for debugging JavaScript code, navigate to
 :::image type="complex" source="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png" alt-text="Breakpoint icons are now displayed when using Visual Studio Code themes" lightbox="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png":::
    Breakpoint icons are now displayed when using Visual Studio Code themes
 :::image-end:::
-
 
 
 <!-- ====================================================================== -->

@@ -34,7 +34,6 @@ After your extension has been initially created, you will be able to update it p
 -->
 
 
-
 <!-- ====================================================================== -->
 ## Update your extension during the certification step
 
@@ -56,7 +55,6 @@ To edit your submission:
 > The process stops and removes your current submission from the Microsoft Edge extensions certification pipeline and a new review starts with the latest submission.
 
 
-
 <!-- ====================================================================== -->
 ## Update your extension after it failed the certification
 
@@ -69,7 +67,6 @@ To edit your extension:
 1.  Update either the extension package or the metadata incorporating the feedback received from the certification process.  If you update the extension package, make sure that you increase the version in the manifest file.
 
 1.  After making changes, select **Save** > **Publish**.
-
 
 
 <!-- ====================================================================== -->

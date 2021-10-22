@@ -40,7 +40,6 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 *  [webhint][webhintIo]
 
 
-
 <!-- ====================================================================== -->
 ## Opening the Issues tool
 
@@ -76,7 +75,6 @@ Within each category of issues, first the errors are listed, then warnings, and 
 To include issues that are caused by third-party sites, at the top of the **Issues** tool, select the **Include third-party issues** checkbox.
 
 
-
 <!-- ====================================================================== -->
 ## Expand entries in the Issues tool
 
@@ -99,7 +97,6 @@ Each displayed issue has the following components:
 *   Links to further documentation.
 
 
-
 <!-- ====================================================================== -->
 ## View issues in context of an associated tool
 
@@ -118,7 +115,6 @@ An issue in the **Issues** tool may include one or more links that open differen
     :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="The Network tool opens when you select a Network resource link" lightbox="../media/issues-tab-view-issue.msft.png":::
     The **Network** tool opens when you select a **Network** resource link
     :::image-end:::
-
 
 
 <!-- ====================================================================== -->

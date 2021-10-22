@@ -14,14 +14,12 @@ keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWeb
 In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Your first WebView2 app uses WinUI 3.  For more information on individual APIs, navigate to [API reference][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].
 
 
-
 <!-- ====================================================================== -->
 ## Step 0 - Set Up Development Environment
 
 1. Follow steps 1-4 of [Set up your development environment][WindowsAppsWinui3ConfigureYourDevEnvironment] to install Visual Studio, configure the NuGet package source, and install the Windows App SDK Extension for Visual Studio.
 1. Install the [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge non-stable channel][MicrosoftedgeinsiderDownload] installed on Windows 10 version 1803 (build 17134) or later.  For more information about Windows 10 or later, navigate to [Windows Update: FAQ][MicrosoftSupport12373].
 1.  To access all developer-specific Visual Studio features, turn on [Developer Mode][WindowsUwpGetStartedEnableYourDeviceForDevelopment].
-
 
 
 <!-- ====================================================================== -->
@@ -237,7 +235,6 @@ To build and run your project, select `F5`.  Ensure navigation is blocked to HTT
 
 > [!NOTE]
 > The WinRT `CoreWebView2` object might not be available with the release of the WebView2 API.  The [WebView2 Spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] lists which of the APIs are available for WebView2.
-
 
 
 <!-- ====================================================================== -->

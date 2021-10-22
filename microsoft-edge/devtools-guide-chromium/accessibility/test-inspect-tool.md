@@ -22,7 +22,6 @@ When the **Inspect** tool is active, hovering over any element on the rendered w
 :::image-end:::
 
 
-
 <!-- ====================================================================== -->
 ## Check individual elements for text contrast, screen reader text, and keyboard support
 
@@ -55,7 +54,6 @@ The bottom part of the **Inspect** overlay has an **Accessibility** section that
     *   A gray circle with diagonal line indicates that the element isn't keyboard-focusable.
 
 
-
 <!-- ====================================================================== -->
 ## Additional information in the Inspect overlay
 
@@ -69,7 +67,6 @@ The top part of the **Inspect** overlay, which is above the **Accessibility** se
 *   The color as a color swatch (or a small, colored square) and as a string (such as `#336699`).
 *   Font information, such as size and font families.
 *   Margin and padding in pixels.
-
 
 
 <!-- ====================================================================== -->
@@ -90,7 +87,6 @@ In addition to the information overlay, the **Inspect** tool also provides regio
 :::image-end:::
 
 To configure the grid overlay or flexbox overlay, in the **Elements** tool, select the **Layout** tab.  For more information, navigate to [Inspect CSS Grid](..\css\grid.md).
-
 
 
 <!-- ====================================================================== -->

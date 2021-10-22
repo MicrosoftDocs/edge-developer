@@ -13,7 +13,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 This article is about resolving JavaScript errors that are reported in the Console.  For general use of the **Console** to display and resolve error messages, navigate to [Use the Console](index.md).
 
 
-
 <!-- ====================================================================== -->
 ## Fix JavaScript errors
 
@@ -34,7 +33,6 @@ The information in this error message suggests that the error is on line 16 of t
 :::image-end:::
 
 The script tries to get the first `h2` element in the document and paint a red border around it.  But no `h2` element exists, so the script fails.
-
 
 
 <!-- ====================================================================== -->

@@ -19,7 +19,6 @@ Thank you for your interest in developing extensions for the Microsoft Edge Add-
 The _Microsoft Edge Add-ons store_ is also called the _Microsoft Edge Add-ons website_.  The _Microsoft Edge Add-ons store developer policies_ are also called the _Microsoft Edge Add-ons website developer policies_.
 
 
-
 <!-- ====================================================================== -->
 ## Principles
 
@@ -328,7 +327,6 @@ If your extension provides content \(such as user-generated, retail, or other we
 ### 2.13 Videos
 
 If you submit a promotional video in the listing, it should follow all the content guidelines mentioned in this policy.  If you choose to provide a YouTube link, you must ensure that advertisements are turned off for the specific videos that you want to embed.  For more information on turning on or off ads on YouTube, navigate to [Set your default ad formats][GoogleYoutubeAnswer2531367Topic7072227] and [Ads on embedded videos][GoogleYoutubeAnswer132596].
-
 
 
 <!-- ====================================================================== -->

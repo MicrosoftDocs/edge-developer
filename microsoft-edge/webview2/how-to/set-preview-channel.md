@@ -24,7 +24,6 @@ The prerelease SDK works together with a preview channel as follows:
 For more information about how SDK versions works in conjunction with the WebView2 Runtime or preview channels of Microsoft Edge, navigate to [Understand WebView2 SDK versions][WebView2ConceptsVersioning].
 
 
-
 <!-- ====================================================================== -->
 ## Downloading the prerelease SDK and a preview channel
 

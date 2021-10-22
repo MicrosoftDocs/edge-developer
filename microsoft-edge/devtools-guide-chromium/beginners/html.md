@@ -313,7 +313,6 @@ You're almost done. You made a few changes to the page in DevTools, but they're 
     :::image-end:::
 
 
-
 <!-- ====================================================================== -->
 ## Next steps
 

@@ -14,7 +14,6 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 Supported platforms: Win32.
 
 
-
 <!-- ====================================================================== -->
 ## Prerequisites
 

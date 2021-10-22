@@ -15,7 +15,6 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 [WebView2][WebView2Landing] is a component that developers use to build their applications, and the developers can deploy a self-updating Evergreen WebView2 Runtime onto user devices to power their applications.  This document discusses how IT admins can manage WebView2 applications and the WebView2 Runtime.  Feedback from both IT admins and developers is welcome on [WebView2 Feedback repo][GithubMicrosoftedgeWebviewfeddback].
 
 
-
 <!-- ====================================================================== -->
 ## Group policies for WebView2
 

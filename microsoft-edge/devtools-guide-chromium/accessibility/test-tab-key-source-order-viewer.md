@@ -15,7 +15,6 @@ The source order of a document is important for assistive technology, and can be
 To ensure that the document has a logical order, you can use the **Source Order Viewer** to label different page elements with numbers that specify the order in the source code of the document.  The **Source Order Viewer** is in the **Accessibility** tab (near the **Styles** tab).
 
 
-
 <!-- ====================================================================== -->
 ## Analyzing the order of keyboard access through sections of the page
 

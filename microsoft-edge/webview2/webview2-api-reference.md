@@ -15,7 +15,6 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 <!-- linking to a parent node of the TOC ("Get started with WebView2") isn't supported, so the above link goes to the first child article, but with link text of the parent TOC node. -->
 
 
-
 <!-- ====================================================================== -->
 ## Languages and Frameworks
 WebView2 is available for the following languages and frameworks.

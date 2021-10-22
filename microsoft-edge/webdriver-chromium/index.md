@@ -19,7 +19,6 @@ WebDriver allows developers to automate Microsoft Edge by simulating user intera
 *   Runs multiple sessions of Microsoft Edge on a specific machine.
 
 
-
 <!-- ====================================================================== -->
 ## Relationship between WebDriver and other software
 
@@ -41,7 +40,6 @@ The functional relationship between these components is as follows.
 The following sections describe how to get started with WebDriver for Microsoft Edge.
 
 
-
 <!-- ====================================================================== -->
 ## Download Microsoft Edge Driver
 
@@ -61,7 +59,6 @@ To begin automating tests, use the following steps to ensure that the WebDriver 
     :::image type="complex" source="./media/microsoft-edge-driver-install.msft.png" alt-text="The Get the latest version section on the Microsoft Edge Driver webpage" lightbox="./media/microsoft-edge-driver-install.msft.png":::
        The **Get the latest version** section on the [Microsoft Edge Driver][MicrosoftDeveloperMicrosoftEdgeToolsWebdriver] webpage
     :::image-end:::
-
 
 
 <!-- ====================================================================== -->
@@ -132,7 +129,6 @@ npm install @microsoft/edge-selenium-tools selenium-webdriver
 ```
 
 * * *
-
 
 
 <!-- ====================================================================== -->
@@ -364,7 +360,6 @@ options.addArguments("disable-gpu");
 > If the `UseChromium` property is set to `true`, you are not able to use properties and methods for Microsoft Edge \(EdgeHTML\).
 
 
-
 <!-- ====================================================================== -->
 ## Other WebDriver installation options
 
@@ -379,12 +374,10 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 For more information, navigate to the [msedgedriver container on Docker Hub][DockerHubMsedgedriver].
 
 
-
 <!-- ====================================================================== -->
 ## Testing Internet Explorer
 
 To test sites that require Internet Explorer, use [Internet Explorer Driver][GithubSeleniumHqWikiIEDriver] with Internet Explorer.  Internet Explorer Driver is maintained by the Selenium project.  Even though Microsoft Edge supports IE Mode, you can't use Microsoft Edge Driver with Microsoft Edge to test sites in IE Mode.
-
 
 
 <!-- ====================================================================== -->
@@ -400,7 +393,6 @@ For more information about Application Guard, navigate to:
 
 *  [Microsoft Edge support for Microsoft Defender Application Guard][DeployedgeMicrosoftEdgeSecurityWindowsDefenderApplicationGuard]
 *  [Microsoft Defender Application Guard overview][WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10]
-
 
 
 <!-- ====================================================================== -->

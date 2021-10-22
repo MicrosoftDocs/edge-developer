@@ -18,7 +18,6 @@ There are several ways to open the **Issues** tool, such as:
 *  In the **Command Menu**, type `issues`, and then select **Show Issues**.
 
 
-
 <!-- ====================================================================== -->
 ## View the Accessibility section of the Issues tool
 
@@ -37,7 +36,6 @@ There are several ways to open the **Issues** tool, such as:
     :::image-end:::
 
 1.  On the **Issues** tab, expand the **Accessibility** section.
-
 
 
 <!-- ====================================================================== -->
@@ -82,7 +80,6 @@ To check whether input fields have labels connected to them, use the **Issues** 
     :::image-end:::
 
 
-
 <!-- ====================================================================== -->
 ## Verify that images have alt text
 
@@ -101,7 +98,6 @@ To automatically check whether alt text is provided for images, use the **Issues
     :::image-end:::
 
 For more information, navigate to [Images must have alternate text](https://dequeuniversity.com/rules/axe/4.1/image-alt).
-
 
 
 <!-- ====================================================================== -->

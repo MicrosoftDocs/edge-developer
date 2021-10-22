@@ -46,7 +46,6 @@ The **Console** is the default place where JavaScript and connectivity errors ar
 :::image-end:::
 
 
-
 <!-- ====================================================================== -->
 ## Look up error messages on the web from the Console
 
@@ -63,7 +62,6 @@ For a `Failed to load resource` error, the new tab contains web search results f
 :::image-end:::
 
 This feature was introduced in Microsoft Edge version 94.
-
 
 
 <!-- ====================================================================== -->

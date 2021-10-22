@@ -15,7 +15,6 @@ In the **Shortcuts** page of **Settings**, you can view the defined shortcuts fo
 For an article listing all the default shortcut settings, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  See also [Customize DevTools][DevToolsCustomizeSettings].
 
 
-
 <!-- ====================================================================== -->
 ## Match keyboard shortcuts from Visual Studio Code
 
@@ -36,7 +35,6 @@ For example, to pause or continue running a script in Visual Studio Code, you se
 
 * [Microsoft Visual Studio Code][VisualStudioCode]
 * [Visual Studio Code Keyboard shortcuts for Windows][VisualStudioCodeShortcutsKeyboardWindows] (PDF file)
-
 
 
 <!-- ====================================================================== -->

@@ -17,7 +17,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 > [Microsoft Edge | State of the Platform][YoutubeEdgeStateOfThePlatform] - Microsoft Edge brings a compelling and consistent platform with tools for developers.  As our legacy browsers phase out of support, Edge will soon be the only supported browser from Microsoft on Windows 10 or later.  Join us to learn about the latest across the Edge platform, tools, and web apps.
 
 
-
 <!-- ====================================================================== -->
 ## The Close button is no longer hidden when DevTools is narrow
 
@@ -29,7 +28,6 @@ In Microsoft Edge version 91 or earlier, the **Close** button to close DevTools 
 :::image type="complex" source="../../media/2021/05/close-devtools-button-always-displayed.msft.png" alt-text="The Close DevTools button is now present even when the viewport is narrow" lightbox="../../media/2021/05/close-devtools-button-always-displayed.msft.png":::
    The **Close** DevTools button is now present even when the viewport is narrow
 :::image-end:::
-
 
 
 <!-- ====================================================================== -->
@@ -51,7 +49,6 @@ The **More Tools** menu was available as an experiment in Microsoft Edge version
 :::image type="complex" source="../../media/2021/05/more-tools-menu.msft.png" alt-text="The More Tools menu" lightbox="../../media/2021/05/more-tools-menu.msft.png":::
    The **More Tools** menu
 :::image-end:::
-
 
 
 <!-- ====================================================================== -->
@@ -91,7 +88,6 @@ These improvements are especially relevant for users of localized DevTools, in w
 We also made it easier to re-add a tool that you closed by adding a [More Tools menu](#add-tools-quickly-with-the-new-more-tools-button) to the main toolbar and drawer toolbar.
 
 
-
 <!-- ====================================================================== -->
 ## Better support for screen readers in the Console
 
@@ -114,7 +110,6 @@ Prior to Microsoft Edge version 92, in the **Console**, assistive technologies s
 :::row-end:::
 
 
-
 <!-- ====================================================================== -->
 ## Source Order Viewer
 
@@ -134,7 +129,6 @@ For more information, navigate to [Test keyboard support using the Source Order 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1094406][CR1094406].
 
 
-
 <!-- ====================================================================== -->
 ## User-Agent Client Hints for devices in the Network conditions tab
 
@@ -150,7 +144,6 @@ User-Agent Client Hints are now applied for devices in the **User agent** field 
 For more information, navigate to [User-Agent Client Hints](../../../../web-platform/user-agent-guidance.md#user-agent-client-hints).
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1174299][CR1174299].
-
 
 
 <!-- ====================================================================== -->
@@ -174,7 +167,6 @@ Version 1.1.8 of the [Microsoft Edge Developer Tools for Visual Studio Code][Vis
 *  The **Microsoft Edge Tools: Targets** panel now has a **Generate launch.json** button and instructions, to help launch your project for debugging in Microsoft Edge.
 
 For more information, navigate to [Using the tools][GithubIoDevToolsUsing].
-
 
 
 <!-- ====================================================================== -->
@@ -287,7 +279,6 @@ In the **Performance** tool, DevTools now displays **Compute Intersections** in 
 <!-- screenshot uses https://googlechrome.github.io/samples/intersectionobserver -->
 
 For more about intersection observers, navigate to [Trust is good, observation is better: Intersection Observer v2][WebDevIntersectionObserverV2].  For information about using the flame chart, navigate to [Analyze a performance recording][DevtoolsEvaluatePerfRefAnalyzeAPerfRecording].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1199137][CR1199137].
-
 
 
 <!-- ====================================================================== -->

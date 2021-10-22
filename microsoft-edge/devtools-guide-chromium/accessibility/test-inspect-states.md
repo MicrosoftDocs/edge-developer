@@ -15,7 +15,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 Check the accessibility of all states of elements, such as text color contrast during the `hover` state.  The **Inspect** tool reports accessibility issues for one state at a time.  To check accessibility of the various states of elements, in the **Styles** tab, select **\:hov** (**Toggle Element State**), as described in this article. We first show why state simulation is necessary using the **Inspect** tool, and then we show how to use state simulation.
 
 
-
 <!-- ====================================================================== -->
 ## Checking text color contrast in the default state
 
@@ -37,7 +36,6 @@ For example, the links in the sidebar navigation menu have enough contrast.  But
         :::image-end:::
     :::column-end:::
 :::row-end:::
-
 
 
 <!-- ====================================================================== -->
@@ -62,7 +60,6 @@ To confirm that your animations don't run, perform the following steps.
 1.  Hover over the blue links on the sidebar navigation menu.  The animations for the menu items don't run. Instead, the menu items are displayed using colors and highlights for the flexbox overlay.
 
 Checking for sufficient text contrast this way isn't enough, because the elements on the page could have different states.
-
 
 
 <!-- ====================================================================== -->

@@ -14,7 +14,6 @@ keywords: WebView2, webview2, WebView, webview, edge, best practices
 Every development team follows different practices when building their application.  When you build WebView2 production apps, we recommend following these recommendations and best practices.
 
 
-
 <!-- ====================================================================== -->
 ## Use the Evergreen Runtime (recommended)
 
@@ -23,14 +22,12 @@ We generally recommend using the Evergreen WebView2 Runtime.  Fixed Version runt
 If you use the Evergreen runtime, before running your WebView2 app, test whether the Evergreen WebView2 Runtime is installed on the client.  For more information, navigate to [Deploying the Evergreen WebView2 Runtime][Webview2ConceptsDistributionDeployingEvergreenWebview2Runtime].
 
 
-
 <!-- ====================================================================== -->
 ## Run compatibility tests regularly when using the Evergreen Runtime
 
 When using the Evergreen WebView2 Runtime, the runtime updates automatically, so you must regularly run compatibility tests.  To ensure that your WebView2 app will continue to work as expected, test your web content in the WebView2 control against [Microsoft Edge Insider (preview) Channels][MicrosoftedgeinsiderDownload] (Beta, Dev, or Canary).
 
 This guidance is similar to the guidance that we give to web developers.  For more information, navigate to [Test your app for forward-compatibility][Webview2ConceptsDistributionStayCompatibleEvergreenMode].
-
 
 
 <!-- ====================================================================== -->
@@ -50,12 +47,10 @@ To solve this situation, before your code calls a recently added WebView2 API, t
 For more information, navigate to [Feature-detecting to test whether the installed Runtime supports recently added APIs][Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement].
 
 
-
 <!-- ====================================================================== -->
 ## Update the Fixed Version Runtime
 
 If you use the Fixed Version WebView2 Runtime, make sure you regularly update the WebView2 Runtime that's packaged with your app, to reduce security risks.  When using 3rd-party content in Webview2 apps, always consider the content to be untrusted.  For more information, navigate to [Fixed Version distribution mode][Webview2ConceptsDistributionFixedVersionDistributionMode].
-
 
 
 <!-- ====================================================================== -->
@@ -68,12 +63,10 @@ When a new version of the runtime is available, your app can automatically take 
 <!-- are the Ref links enough, or link to a regular article or article subsection? -->
 
 
-
 <!-- ====================================================================== -->
 ## Manage the lifetime of the user data folder
 
 WebView2 apps create a user data folder to store data such as cookies, credentials, and permissions.  After creating the folder, your app is responsible for managing the lifetime of the user data folder.  For example, your app must do cleanup when the app is uninstalled.  For more information, navigate to [Managing the user data folder][Webview2ConceptsUserDataFolder].
-
 
 
 <!-- ====================================================================== -->
@@ -97,12 +90,10 @@ To prevent such a memory leak:
 *  If you want the app to hold a reference to a WebView2 object, use a weak reference whenever possible.
 
 
-
 <!-- ====================================================================== -->
 ## Follow recommended WebView2 security best practices
 
 For any WebView2 app, make sure to follow our recommended WebView2 security best practices.  For more information, navigate to [Best practices for developing secure WebView2 applications][Webview2ConceptsSecurity].
-
 
 
 <!-- ====================================================================== -->

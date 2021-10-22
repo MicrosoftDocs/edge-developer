@@ -32,7 +32,6 @@ You can apply various color themes to Microsoft Edge DevTools, including several
 This article is about changing the appearance of DevTools.  To instead change how the webpage under development is displayed, navigate to [Emulate dark or light schemes in the rendered page][AccessibilityPreferredColorSchemeSimulation].
 
 
-
 <!-- ====================================================================== -->
 ## Available themes
 
@@ -70,7 +69,6 @@ Dark themes:
     :::image type="complex" source="./media/customize-theme-setting.png" alt-text="Selecting a theme in Preferences" lightbox="./media/customize-theme-setting.png":::
        Selecting a theme in **Preferences**
     :::image-end:::
-
 
 
 <!-- ====================================================================== -->

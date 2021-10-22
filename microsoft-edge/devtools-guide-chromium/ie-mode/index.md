@@ -27,7 +27,6 @@ In IE mode, the rendering process is based on Internet Explorer 11.  The Microso
 IE mode is available on Windows 10 Version 1903 (May 2019 Update), and is coming to all supported Windows platforms.
 
 
-
 <!-- ====================================================================== -->
 ## Open DevTools on a tab in IE mode
 
@@ -55,7 +54,6 @@ If Internet Explorer isn't available on your computer, to debug the content of a
 1.  In IEChooser, select the entry for the IE mode tab.
 
 
-
 <!-- ====================================================================== -->
 ## Remote debugging in IE mode
 
@@ -68,7 +66,6 @@ start msedge --remote-debugging-port=9222
 After you launch Microsoft Edge using a command-line argument, IE mode is unavailable.  You can still navigate to websites (or apps) that are otherwise displayed in IE mode.  The website (or app) content renders using Chromium, not Internet Explorer 11.  Parts of the webpages that rely on Internet Explorer 11, such as ActiveX controls, might not render correctly.  The IE mode indicator icon doesn't appear in the address bar.
 
 IE mode remains unavailable until you close and restart Microsoft Edge.
-
 
 
 <!-- ====================================================================== -->

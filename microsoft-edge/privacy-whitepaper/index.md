@@ -312,7 +312,6 @@ Non-enterprise users on Windows devices may also access IE mode.  To turn on IE 
 Internet Explorer browsing data is stored locally in Microsoft Edge and Internet Explorer.  To delete browsing data while browsing in IE mode, navigate to `edge://settings/privacy` and clear the data from both **Clear browsing data** and **Clear browsing data for Internet Explorer**.
 
 
-
 <!-- ====================================================================== -->
 ## Intrusive ads
 
@@ -710,7 +709,6 @@ Microsoft Edge is made possible by the [Chromium][ChromiumMain] open-source proj
 Microsoft Edge is made possible by the [Chromium][ChromiumMain] open-source project and other open-source software.  To view all of the software credits, navigate to `edge://credits`.  [Google Chrome Privacy Whitepaper][GoogleChromePrivacyWhitepaper] was used as a source for gathering related information about the Chromium open-source project.
 
 <!-- Are we removing mentions of Chromium? Such as above? -->
-
 
 
 <!-- ====================================================================== -->
