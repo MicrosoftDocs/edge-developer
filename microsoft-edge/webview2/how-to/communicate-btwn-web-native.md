@@ -103,7 +103,6 @@ How were we able to change text color? The sample starts by creating a button on
     It should change the text color of this paragraph.</p>
     ```
 
-    <!-- Not sure if this step is accurate or how it works -->
 1. The `Post Message JSON` menu item is in the Microsoft Visual C++ generated resource script file [WebView2APISample.rc][WebView2APISampleRC].
 
     ```xml
@@ -148,7 +147,6 @@ The C++ file handles the title text and communicates it to the host app as a str
     ```
 
 1. The event handler in the [ScenarioWebMessage C++ file][ScenarioWebMessageCPP] processes the new title text string and communicates it to the host app as a string.
-    <!-- Is this accurate?  And complete? -->
 
     ```cpp
     // Setup the web message received event handler before navigating to
@@ -211,8 +209,7 @@ When requested by the host app, the C++ file gets the window bounds and sends th
     <textarea id="window-bounds" rows="4" readonly></textarea>
     ```
 
-1. The event handler in the [ScenarioWebMessage C++ file][ScenarioWebMessageCPP] gets the window bounds and sends the data to the host app using web message as string.
-    <!-- Not sure web message as string is accurate -->
+1. The event handler in the [ScenarioWebMessage C++ file][ScenarioWebMessageCPP] gets the window bounds and sends the data to the host app using `TryGetWebMessageAsString`.
 
      ```cpp
     // Setup the web message received event handler before navigating to
@@ -252,7 +249,6 @@ When requested by the host app, the C++ file gets the window bounds and sends th
     }).Get(), &m_webMessageReceivedToken));
     ```
 
-    <!-- Not sure if this step is accurate or how it works -->
 1. The host app uses the `Inject Script` menu item in the Microsoft Visual C++ generated resource script file [WebView2APISample.rc][WebView2APISampleRC] to send the window bounds back to the web page.
 
     ```xml
@@ -267,19 +263,13 @@ When requested by the host app, the C++ file gets the window bounds and sends th
             return true;
     ```
 
-1. The window bounds display on the web page.
+1. The window bounds are displayed on the web page.
 
 
 <!-- ====================================================================== -->
 ## Scenario: Send JavaScript code
 
-Set up the host app to run JavaScript on the web side. The host app specifies the code to run and passes it to the WebView control. 
-
-Send JavaScript code to execute on web side using `ExecuteScriptAsync`.
-
-If you want to send JavaScript information to the page using WebView2, use the `ExecuteScriptAsync` function, which returns the JavaScript result back to the `ExecuteScript` caller. 
-
-This method is often used to send code that executes on the web.
+This scenario shows how to run JavaScript on the web side.  In this approach, the host app specifies the JavaScript code to run, and passes the code to the web through `ExecuteScriptAsync`.  The `ExecuteScriptAsync` function returns the JavaScript result back to the `ExecuteScript` caller.
 
 For more information navigate to: [Use JavaScript in WebView2 apps](javascript.md).
 
@@ -288,8 +278,6 @@ For more information navigate to: [Use JavaScript in WebView2 apps](javascript.m
 ## Scenario: Send native objects
 
 Pass the native object to the web. Then call the object's methods from the web.
-
-<!-- "Allow web to access native objects" note from SME -->
 
 To use messages that represent method calls, use the `AddHostObjectToScript` API. At a high level, this API lets you expose native (host) objects into the web side and act as a proxy. Access these objects using `window.chrome.webview.hostObjects.{name}`.
 
