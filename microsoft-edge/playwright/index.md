@@ -17,7 +17,7 @@ Playwright launches [headless browsers](https://en.wikipedia.org/wiki/Headless_b
 
 
 <!-- ====================================================================== -->
-## Install Playwright and browser binaries
+## Install Playwright and browsers
 
 > [!NOTE]
 > [Playwright](https://playwright.dev/docs/intro) requires Node.js version 12 or above. Run `node -v` from the command line to make sure you have a compatible version of Node.js.  The browser binaries for Chromium, Firefox and WebKit work across Windows, macOS, and Linux. For more information, see [Playwright System Requirements](https://playwright.dev/docs/library#system-requirements).
@@ -86,7 +86,7 @@ const config: PlaywrightTestConfig = {
 export default config
 ```
 
-If Microsoft Edge isn't already installed on your system, install it through Playwright, as follows:
+If Microsoft Edge Beta isn't already installed on your system, install it through Playwright, as follows:
 
 ```shell
 npx playwright install msedge-beta
