@@ -66,7 +66,7 @@ You are not able to edit Web SQL data when viewing a Web SQL table, such as in p
 DevTools does not update tables in real-time.  To update the data in a table, complete the following actions.
 
 1.  [View the data in a Web SQL table](#view-web-sql-data).
-1.  Choose **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\).
+1.  Choose **Refresh** (![Refresh](../media/refresh-icon.msft.png)).
 
 ## Filter out columns in a Web SQL table
 

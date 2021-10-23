@@ -13,14 +13,14 @@ keywords: microsoft edge, web development, f12 tools, devtools
 The **Issues** tool includes an **Accessibility** section that automatically reports issues such as missing alternative text on images, missing labels on form fields, and insufficient contrast of text colors.  The **Issues** tool is within the **Drawer** at the bottom of DevTools.  This article uses the accessibility-testing demo webpage to step through using the **Accessibility** section of the **Issues** tool.
 
 There are several ways to open the **Issues** tool, such as:
-*  Select the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) in the upper right of DevTools.
+*  Select the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)) in the upper right of DevTools.
 *  In the **Elements** tool, in the DOM tree, **Shift+click** a wavy underline on an element.
 *  In the **Command Menu**, type `issues`, and then select **Show Issues**.
 
 
 ## View the Accessibility section of the Issues tool
 
-1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.  In the upper right, the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears.  The **Issues counter** is a speech-bubble icon along with the number of automatically detected issues.
+1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.  In the upper right, the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)) appears.  The **Issues counter** is a speech-bubble icon along with the number of automatically detected issues.
 
     :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="The Issues counter in DevTools, indicating how many problems there are in the current document" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
         The **Issues counter** in DevTools, indicating how many problems there are in the current document
@@ -43,7 +43,7 @@ To check whether input fields have labels connected to them, use the **Issues** 
 
 1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
 
-1.  In the upper right, select the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\).  The **Issues** tool opens, in the **Drawer** at the bottom of DevTools.
+1.  In the upper right, select the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)).  The **Issues** tool opens, in the **Drawer** at the bottom of DevTools.
 
 1.  On the **Issues** tab, expand the **Accessibility** section.
 

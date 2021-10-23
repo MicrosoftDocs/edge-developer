@@ -47,7 +47,7 @@ This command returns the value of the most recently evaluated expression.
 
 ### Console example
 
-In the following figure, a simple expression \(`2 + 2`\) is evaluated.  The `$_` property is then evaluated, which contains the same value.
+In the following figure, a simple expression (`2 + 2`) is evaluated.  The `$_` property is then evaluated, which contains the same value.
 
 :::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$_ is the most recently evaluated expression" lightbox="../media/console-arithmatic.msft.png":::
    `$_` is the most recently evaluated expression
@@ -141,7 +141,7 @@ In the following figure, a reference to the first `<img>` element in the webpage
 To find the first element in the DOM or to find and display it on the webpage, complete the following actions.
 
 1.  Hover on the returned result.
-1.  Open the contextual menu \(right-click\).
+1.  Open the contextual menu (right-click).
 1.  Choose **Reveal in Elements Panel**.
 
 In the following figure, a reference to the currently chosen element is returned and the `src` property is displayed.
@@ -388,7 +388,7 @@ When passing a method to inspect, the method opens the webpage in the **Sources*
 getEventListeners(object)
 ```
 
-This command returns the event listeners registered on the specified object.  The return value is an object that contains an array for each registered event type \(such as `click` or `keydown`\).  The members of each array are objects that describe the listener registered for each type.
+This command returns the event listeners registered on the specified object.  The return value is an object that contains an array for each registered event type (such as `click` or `keydown`).  The members of each array are objects that describe the listener registered for each type.
 
 ### Console example
 
@@ -434,7 +434,7 @@ For example, suppose your application defined the following object.
 var player1 = {"name": "Ted", "level": 42}
 ```
 
-In the following code samples and figure, the result assumes `player1` was defined in the global namespace \(for simplicity\) before you type `keys(player1)` and `values(player1)` in the console.
+In the following code samples and figure, the result assumes `player1` was defined in the global namespace (for simplicity) before you type `keys(player1)` and `values(player1)` in the console.
 
 ```console
 keys(player1)
@@ -727,7 +727,7 @@ For example, the following code snippet stops all event monitoring on the window
 unmonitorEvents(window);
 ```
 
-You may also selectively stop monitoring specific events on an object.  For example, the following code starts monitoring all `mouse` events on the currently chosen element, and then stops monitoring `mousemove` events \(perhaps to reduce noise in the console output\).
+You may also selectively stop monitoring specific events on an object.  For example, the following code starts monitoring all `mouse` events on the currently chosen element, and then stops monitoring `mousemove` events (perhaps to reduce noise in the console output).
 
 ```console
 monitorEvents($0, "mouse");

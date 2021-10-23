@@ -110,7 +110,7 @@ The following shortcuts are always turned off in WebView2.  An asterisk (`*`) in
 | Select Last Tab | `Ctrl`+`9` |
 | Select Next Tab | `Ctrl`+`Tab` |
 | Select Previous Tab | `Ctrl`+`Shift`+`Tab` |
-| Select Tab \(1 - 8\) | `Ctrl`+`(1-8)` |
+| Select Tab (1 - 8) | `Ctrl`+`(1-8)` |
 | Show Favorites Bar `*` | `Ctrl`+`Shift`+`B` |
 | Help | `F1` |
 | Focus Next Pane `*` | `F6` |

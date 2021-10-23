@@ -15,7 +15,7 @@ The **Console** tool inside the browser DevTools is a [REPL][WikiReadEvalPrintLo
 To try it, complete the following actions.
 
 1.  Open the **Console**.
-    *   Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).
+    *   Select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 1.  Type `2 + 2`.  The **Console** already displays the result `4` on the next line while you type it.  The `Eager evaluation` feature helps you write valid JavaScript.  It displays the result while you type whether it's wrong or if a valid result exists.
 
 :::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console displays the result of 2 + 2 live as you type it" lightbox="../media/console-javascript-eager-evaluation.msft.png":::

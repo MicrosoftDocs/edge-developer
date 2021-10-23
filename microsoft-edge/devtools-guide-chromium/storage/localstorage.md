@@ -73,12 +73,12 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).
 1.  Choose the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.
-1.  Select the `Delete` key or choose **Delete Selected** \(![Delete Selected](../media/delete-icon.msft.png)\).
+1.  Select the `Delete` key or choose **Delete Selected** (![Delete Selected](../media/delete-icon.msft.png)).
 
 ## Delete all `localStorage` key-value pairs for a domain
 
 1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).
-1.  Choose **Clear All** \(![Clear All](../media/clear-icon.msft.png)\).
+1.  Choose **Clear All** (![Clear All](../media/clear-icon.msft.png)).
 
 ## Interact with localStorage from the Console
 

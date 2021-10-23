@@ -24,7 +24,7 @@ A great place to get started with Web Authentication is the [Web Authentication 
 
 1.  Sign into the website.
 1.  [Open DevTools][DevtoolsGuideOpen].
-1.  To open the **WebAuthn** tool, choose the **Customize and control DevTools** \(`...`\) icon > **More tools** > **WebAuthn**.
+1.  To open the **WebAuthn** tool, choose the **Customize and control DevTools** (`...`) icon > **More tools** > **WebAuthn**.
 
     :::image type="complex" source="../media/webauthn-webauthn-tab.msft.png" alt-text="WebAuthn tool" lightbox="../media/webauthn-webauthn-tab.msft.png":::
        **WebAuthn** tool
@@ -43,8 +43,8 @@ A great place to get started with Web Authentication is the [Web Authentication 
     |:--- |:--- |:--- |
     | `Protocol` | [ctap2][FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml] or [u2f][FidoallianceSpecsU2fV12Ps20170411OverviewHtml] | The protocol the virtual authenticator uses for encoding and decoding |
     | `Transport` |   `usb`, `nfc`, `ble`, or `internal` | The virtual authenticator simulates the selected transport for communicating with clients in order to obtain an assertion for a specific credential.  For more information, navigate to [Authenticator Transport Enumeration][GithubW3cWebauthnEnumTransport] |
-    |  `Supports resident keys` | Turn on \(or off\) using the checkbox | Turn on if your web app relies on resident keys \(also known as client-side discoverable credentials\).  For more information, navigate to [Resident Key Requirement Enumeration][GithubW3cWebauthnEnumResidentkeyrequirement]. |
-    | `Supports user verification` | Turn on \(or off\) using the checkbox | Turn on if your web app relies on local authorization using gesture modalities like touch plus pin code, password entry, or biometric recognition.  For more information, navigate to [User Verification][GithubW3cWebauthnEnumUserverification] |
+    |  `Supports resident keys` | Turn on (or off) using the checkbox | Turn on if your web app relies on resident keys (also known as client-side discoverable credentials).  For more information, navigate to [Resident Key Requirement Enumeration][GithubW3cWebauthnEnumResidentkeyrequirement]. |
+    | `Supports user verification` | Turn on (or off) using the checkbox | Turn on if your web app relies on local authorization using gesture modalities like touch plus pin code, password entry, or biometric recognition.  For more information, navigate to [User Verification][GithubW3cWebauthnEnumUserverification] |
 
 1.  Choose the **Add** button.
 1.  A new section of your newly created authenticator is displayed.
@@ -147,7 +147,7 @@ Level 2 | GitHub"
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/webauthn/index) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/webauthn/index) and is authored by [Jecelyn Yeen][JecelynYeen] (Developer advocate, Chrome DevTools).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

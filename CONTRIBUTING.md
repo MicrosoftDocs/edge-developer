@@ -57,7 +57,7 @@ After you are ready to add your changes to the remote repo so that the changes a
 | 1 | `git status` | This command displays the files you have changed so that you can confirm that you intended to make those changes. |
 | 2 | `git add -A` | This command tells git to add all of your changes.  If you prefer to only add the changes you have made to one particular file, instead enter the command: `git add {file.md}`, where `file.md` represents the name the file containing your changes. |
 | 3 | `git commit -m "Fixed a few typos"` | This command tells git to commit the changes that you added in the previous step, along with a short message describing the changes that you made. |
-| 4 | `git push origin {your_branch_name}` | This command pushes your changes to the remote repo that you forked on GitHub \(the `origin`\) into the branch that you have specified.  Because you have forked the repo to your own GitHub account, you are welcome to do your work in the `master` branch. |
+| 4 | `git push origin {your_branch_name}` | This command pushes your changes to the remote repo that you forked on GitHub (the `origin`) into the branch that you have specified.  Because you have forked the repo to your own GitHub account, you are welcome to do your work in the `master` branch. |
 
 When you are happy with your changes and ready to submit a PR:
 
@@ -67,7 +67,7 @@ When you are happy with your changes and ready to submit a PR:
     https://github.com/{your_github_alias}/edge-developer
     ```
 
-1.  Select the **New pull request** button.  \(The `base fork` is listed as `MicrosoftDocs/edge-developer`, the `head fork` should show your fork of the repo, and the branch in which you made your changes.\)  You can review your changes here as well.
+1.  Select the **New pull request** button.  (The `base fork` is listed as `MicrosoftDocs/edge-developer`, the `head fork` should show your fork of the repo, and the branch in which you made your changes.)  You can review your changes here as well.
 1.  Select the green **Create pull request** button.  You must give your Pull Request a title and description, then select the **Create pull request** button again.
 1.  After pushing your contribution to the remote repo, you are sent an email from **Open Publishing Build Service** informing whether your contribution built successfully and linking to any error warnings such as broken links, select the links to see your content staged on the site.
 1.  After your PR is submitted, a member of the Microsoft Edge docs team reviews it.
@@ -83,7 +83,7 @@ The [Microsoft Edge Docs GitHub repository][GithubMicrosoftdocsEdgedeveloperMain
 | [master][GithubMicrosoftdocsEdgedeveloperMaster]  | The content is internally reviewed.  |
 | [live][GithubMicrosoftdocsEdgedeveloperLive]  |  The content has been published on the [live site][Main].  |
 
-When making contributions, please submit your Pull Request \(PR\) to the `master` branch.  This branch is viewable internally and should only contain contributions that are ready to publish live.
+When making contributions, please submit your Pull Request (PR) to the `master` branch.  This branch is viewable internally and should only contain contributions that are ready to publish live.
 
 
 <!-- ====================================================================== -->

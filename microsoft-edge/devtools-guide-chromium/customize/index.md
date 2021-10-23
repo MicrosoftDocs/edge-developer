@@ -31,7 +31,7 @@ This page lists the ways to customize Microsoft Edge DevTools.
 
 There are two ways to open Settings.
 
-*   Select the **Settings** icon \(![Settings icon](../media/settings-icon-dark.msft.png)\).
+*   Select the **Settings** icon (![Settings icon](../media/settings-icon-dark.msft.png)).
 *   While DevTools has focus, select `F1`.
 
 :::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Settings" lightbox="../media/customize-settings-preferences.msft.png":::
@@ -42,7 +42,7 @@ There are two ways to open Settings.
 
 The **Drawer** is a second panel where you can choose which tools to display.
 
-To open \(or close\) the **Drawer**, select `Escape`.
+To open (or close) the **Drawer**, select `Escape`.
 
 :::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="The Drawer" lightbox="../media/customize-drawer-open.msft.png":::
    The **Drawer**
@@ -50,13 +50,13 @@ To open \(or close\) the **Drawer**, select `Escape`.
 
 You can move tools between the main panel and the drawer.
 
-*   To move a tool from the drawer to the main panel, hover on a tool, open the contextual menu \(right-click\) and select **Move to top**.
+*   To move a tool from the drawer to the main panel, hover on a tool, open the contextual menu (right-click) and select **Move to top**.
 
     :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="Move tool from the Drawer to the main panel" lightbox="../media/move-from-drawer.msft.png":::
        Move tool from the **Drawer** to the main panel
     :::image-end:::
 
-*   To move a tool from the main panel to the drawer, hover on a tool, open the contextual menu \(right-click\) and select **Move to bottom**.
+*   To move a tool from the main panel to the drawer, hover on a tool, open the contextual menu (right-click) and select **Move to bottom**.
 
     :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="Move tool from the main panel to the Drawer" lightbox="../media/move-to-drawer.msft.png":::
        Move tool from the main panel to the **Drawer**
@@ -75,13 +75,13 @@ Select and drag a tool to change the ordering.  Your custom tool order persists 
 
 ## Open and close tools
 
-To keep the DevTools interface streamlined, many of the tools aren't opened by default. To open a tool in the main panel or the **Drawer**, select the **More Tools** \(![More Tools](../media/open-tab-icon.png)\) button to the right of the tabs, and then select a tool from the list.
+To keep the DevTools interface streamlined, many of the tools aren't opened by default. To open a tool in the main panel or the **Drawer**, select the **More Tools** (![More Tools](../media/open-tab-icon.png)) button to the right of the tabs, and then select a tool from the list.
 
 :::image type="complex" source="../media/open-tool-in-main-panel-or-drawer.png" alt-text="The More Tools (+) button to open a new tool" lightbox="../media/open-tool-in-main-panel-or-drawer.png":::
    The **More Tools** (`+`) button to open a new tool
 :::image-end:::
 
-To close a tool, select the **Close** \(![Close Tool](../media/close-tab-icon.png)\) button in the tool's tab.
+To close a tool, select the **Close** (![Close Tool](../media/close-tab-icon.png)) button in the tool's tab.
 
 :::image type="complex" source="../media/close-tool-in-main-panel-or-drawer.png" alt-text="The tab's Close button" lightbox="../media/close-tool-in-main-panel-or-drawer.png":::
    The tab's **Close** button

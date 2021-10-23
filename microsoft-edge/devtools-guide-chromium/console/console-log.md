@@ -73,7 +73,7 @@ Each result is displayed in a different way.  Use the triangles to toggle the in
 
 ## Format and convert values with specifiers
 
-A special feature of all the log methods is that you may use specifiers in your log message.  Specifiers are part of a log message and start with a percentage sign \(`%`\) character and allow you to log certain values in different formats and even convert each.
+A special feature of all the log methods is that you may use specifiers in your log message.  Specifiers are part of a log message and start with a percentage sign (`%`) character and allow you to log certain values in different formats and even convert each.
 
 *   `%s` logs as Strings
 *   `%i` or `%d` logs as Integers

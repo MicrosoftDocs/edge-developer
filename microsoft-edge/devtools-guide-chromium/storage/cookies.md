@@ -53,7 +53,7 @@ The **Cookies** table contains the following fields.
 *   **HTTP**.  If true, this field indicates that the cookie should only be used over HTTP and JavaScript modification is not allowed.  Navigate to [HttpOnly cookies][MDNHTTPCookiesSecure].
 *   **Secure**.  If true, this field indicates that the cookie must be sent to the server only over a secure, HTTPS connection.  Navigate to [Secure cookies][MDNHTTPCookiesSecure].
 *   **SameSite**.  Contains `strict` or `lax` if the cookie is using the experimental [Samesite][MDNHTTPCookiesSamesite] attribute.
-*   **Priority**.  Contains `low`, `medium` \(default\), or `high` if the cookie is using the deprecated [cookie Priority][ChromiumIssue232693] attribute.
+*   **Priority**.  Contains `low`, `medium` (default), or `high` if the cookie is using the deprecated [cookie Priority][ChromiumIssue232693] attribute.
 
 ## Filter cookies
 
@@ -74,13 +74,13 @@ Double-click a field to edit it.
 
 ## Delete cookies
 
-Choose a cookie and choose **Delete Selected** \(![Delete Selected](../media/delete-icon.msft.png)\) to delete the specific cookie.
+Choose a cookie and choose **Delete Selected** (![Delete Selected](../media/delete-icon.msft.png)) to delete the specific cookie.
 
 :::image type="complex" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Deleting a specific cookie" lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
    Figure 5:  Deleting a specific cookie
 :::image-end:::
 
-Choose **Clear All** \(![Clear All](../media/clear-icon.msft.png)\) to delete all cookies.
+Choose **Clear All** (![Clear All](../media/clear-icon.msft.png)) to delete all cookies.
 
 :::image type="complex" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Clearing all cookies" lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
    Figure 6:  Clearing all cookies

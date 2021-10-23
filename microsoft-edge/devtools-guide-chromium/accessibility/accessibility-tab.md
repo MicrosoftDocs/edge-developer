@@ -30,7 +30,7 @@ To open the **Accessibility** tab:
 
 1.  Select the **Elements** tool.
 1.  In the **DOM Tree**, select the element which you want to inspect.
-1.  Select the **Accessibility** tab.  You might need to first select the **More tabs** \(![the More tabs button](../media/more-tabs-icon.msft.png)\) button to the right of the **Styles** tab.
+1.  Select the **Accessibility** tab.  You might need to first select the **More tabs** (![the More tabs button](../media/more-tabs-icon.msft.png)) button to the right of the **Styles** tab.
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspect the h1 element of the DevTools homepage in the Accessibility tab" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    Inspect the `h1` element of the DevTools homepage in the **Accessibility** tab

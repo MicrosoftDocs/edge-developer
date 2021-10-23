@@ -153,7 +153,7 @@ Chromium issue [#1040025][CR1040025]
 
 #### View Total Blocking Time information in the footer
 
-After recording your load performance, the **Performance** panel now shows Total Blocking Time \(TBT\) information in the footer.  TBT is a load performance metric that helps quantify how long a page takes to become usable.  It essentially measures how long a page appears to be usable \(because the content is rendered to the screen\); but is not actually usable, because JavaScript is blocking the main thread and therefore the page does not respond to user input.  TBT is the main metric for approximating First Input Delay.
+After recording your load performance, the **Performance** panel now shows Total Blocking Time (TBT) information in the footer.  TBT is a load performance metric that helps quantify how long a page takes to become usable.  It essentially measures how long a page appears to be usable (because the content is rendered to the screen); but is not actually usable, because JavaScript is blocking the main thread and therefore the page does not respond to user input.  TBT is the main metric for approximating First Input Delay.
 
 <!--todo:  add link Total Blocking Time (TBT) (WebdevTbt) when section is live  -->
 <!--todo:  add link lab metric (WebdevMeasureSpeedLabField) when section is live  -->
@@ -173,7 +173,7 @@ Chromium issue [#1054381][CR1054381]
 
 #### Layout Shift events in the new Experience section
 
-The new **Experience** section of the **Performance** panel helps you detect layout shifts.  Cumulative Layout Shift \(CLS\) is a metric that helps you quantify unwanted visual instability.
+The new **Experience** section of the **Performance** panel helps you detect layout shifts.  Cumulative Layout Shift (CLS) is a metric that helps you quantify unwanted visual instability.
 
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->
 <!--todo:  add link layout shifts (WebdevCls) when section is live  -->

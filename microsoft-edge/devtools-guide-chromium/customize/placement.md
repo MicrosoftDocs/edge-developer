@@ -71,7 +71,7 @@ DevTools may be undocked to a separate window, which you may move to a separate 
 
 ## Change placement from the main menu
 
-1.  Choose **Customize and control DevTools** \(`...`\) and choose **Undock into separate window** \(![Undock](../media/undock-icon.msft.png)\), **Dock to bottom** \(![Dock to bottom](../media/bottom-icon.msft.png)\), or **Dock to left** \(![Dock to left](../media/left-icon.msft.png)\).
+1.  Choose **Customize and control DevTools** (`...`) and choose **Undock into separate window** (![Undock](../media/undock-icon.msft.png)), **Dock to bottom** (![Dock to bottom](../media/bottom-icon.msft.png)), or **Dock to left** (![Dock to left](../media/left-icon.msft.png)).
 
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Choose Undock Into Separate Window" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
        Choose **Undock into separate window**

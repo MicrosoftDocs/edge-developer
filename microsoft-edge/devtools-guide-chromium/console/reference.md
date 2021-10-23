@@ -33,7 +33,7 @@ You may open the **Console** as a [tool in the upper pane](#open-the-console-too
 
 ### Open the Console tool
 
-Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).
+Select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
 :::image type="complex" source="../media/console-hello-console.msft.png" alt-text="The Console tool" lightbox="../media/console-hello-console.msft.png":::
    The **Console** tool
@@ -47,7 +47,7 @@ To open the **Console** tool from the [Command Menu][DevtoolsCommandMenuIndex], 
 
 ### Open the Console tool in the Drawer
 
-Select `Esc` or choose **Customize and control DevTools** \(`...`\) and then choose **Show console drawer**.
+Select `Esc` or choose **Customize and control DevTools** (`...`) and then choose **Show console drawer**.
 
 :::image type="complex" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="Show console drawer" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
    **Show console drawer**
@@ -67,7 +67,7 @@ To open the **Console** tool from the [Command Menu][DevtoolsCommandMenuIndex], 
 
 ### Open Console Settings
 
-Choose the **Console Settings** \(![Console Settings icon](../media/settings-button-icon.msft.png)\) button.
+Choose the **Console Settings** (![Console Settings icon](../media/settings-button-icon.msft.png)) button.
 
 :::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Console Settings" lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **Console Settings**
@@ -86,7 +86,7 @@ The following links explain each setting.
 
 ### Open the Console Sidebar
 
-To display the **Sidebar**, choose **Show console sidebar** \(![Show console sidebar](../media/show-console-sidebar-icon.msft.png)\).  The **Sidebar** is helps you filter.
+To display the **Sidebar**, choose **Show console sidebar** (![Show console sidebar](../media/show-console-sidebar-icon.msft.png)).  The **Sidebar** is helps you filter.
 
 :::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Console Sidebar" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
    **Console Sidebar**
@@ -198,7 +198,7 @@ To display messages from a single URL, complete the following actions.
 
 ### Filter out messages from different contexts
 
-Suppose that you have an advertisement \(ad\) on your webpage.  The ad is embedded in an `<iframe>` and generates many messages in your **Console**.  Because the ad is running in a different [JavaScript context](#choose-javascript-context), one way to hide the messages is to [open Console Settings](#open-console-settings) and choose the checkbox next to **Selected Context Only**.
+Suppose that you have an advertisement (ad) on your webpage.  The ad is embedded in an `<iframe>` and generates many messages in your **Console**.  Because the ad is running in a different [JavaScript context](#choose-javascript-context), one way to hide the messages is to [open Console Settings](#open-console-settings) and choose the checkbox next to **Selected Context Only**.
 
 ### Filter out messages that don't match a regular expression pattern
 
@@ -256,8 +256,8 @@ Suppose you have an ad on your webpage embedded in an `<iframe>`.  You want to r
 
 To clear the **Console**, complete any of the following workflows.
 
-*   Choose the **Clear Console** \(![Clear Console](../media/clear-console-button-icon.msft.png)\) button.
-*   Hover on a message, open the contextual menu \(right-click\), and choose **Clear Console**.
+*   Choose the **Clear Console** (![Clear Console](../media/clear-console-button-icon.msft.png)) button.
+*   Hover on a message, open the contextual menu (right-click), and choose **Clear Console**.
 *   Enter `clear()` in the **Console** and select `Enter`.
 *   Run `console.clear()` from the JavaScript for your webpage.
 *   Select `Control`+`L` while the **Console** is in focus.

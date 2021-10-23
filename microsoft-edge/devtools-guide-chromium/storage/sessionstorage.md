@@ -73,12 +73,12 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).
 1.  Choose the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.
-1.  Select the `Delete` key or choose **Delete Selected** \(![Delete Selected](../media/delete-icon.msft.png)\).
+1.  Select the `Delete` key or choose **Delete Selected** (![Delete Selected](../media/delete-icon.msft.png)).
 
 ## Delete all sessionStorage key-value pairs for a domain
 
 1.  [View the `sessionStorage` key-value pairs of a domain](#view-sessionstorage-keys-and-values).
-1.  Choose **Clear All** \(![Clear All](../media/clear-icon.msft.png)\).
+1.  Choose **Clear All** (![Clear All](../media/clear-icon.msft.png)).
 
 ## Interact with sessionStorage from the Console
 

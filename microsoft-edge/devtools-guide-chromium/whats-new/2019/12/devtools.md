@@ -47,10 +47,10 @@ Many developers use other developer tools, like StackOverflow and Visual Studio 
 
 :::row:::
    :::column span="":::
-      Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+      Chinese (Simplified) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
    :::column-end:::
    :::column span="":::
-      Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
+      Chinese (Traditional) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -118,7 +118,7 @@ The webhint Microsoft Edge extension allows you to easily scan your web page and
 
 ### 3D View
 
-Use the **3D View** to debug your web application by navigating through the [Document Object Model \(DOM\)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.
+Use the **3D View** to debug your web application by navigating through the [Document Object Model (DOM)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.
 
 :::image type="complex" source="../../images/2019/12/3dview.msft.png" alt-text="The 3D View in the DevTools" lightbox="../../images/2019/12/3dview.msft.png":::
    The **3D View** in the DevTools
@@ -227,7 +227,7 @@ DevTools has started to support the DWARF Debugging Standard, which means increa
 
 #### Request Initiator Chains in the Initiator panel
 
-You are now able to view the initiators and dependencies of a network request as a nested list.  This may help you understand why a resource was requested, or what network activity a certain resource \(such as a script\) caused.
+You are now able to view the initiators and dependencies of a network request as a nested list.  This may help you understand why a resource was requested, or what network activity a certain resource (such as a script) caused.
 
 :::image type="complex" source="../../images/2019/12/initiators.msft.png" alt-text="A Request Initiator Chain in the Initiator panel" lightbox="../../images/2019/12/initiators.msft.png":::
    A Request Initiator Chain in the **Initiator** panel
@@ -262,7 +262,7 @@ Use the new **Path** and **URL** columns in the **Network** tool to display the 
    The new Path and URL columns in the **Network** tool
 :::image-end:::
 
-To display the new columns, hover on the **Waterfall** table header, open the contextual menu \(righ-click\), and choose **Path** or **URL**.
+To display the new columns, hover on the **Waterfall** table header, open the contextual menu (righ-click), and choose **Path** or **URL**.
 
 Chromium issue [#993366][CR993366]
 

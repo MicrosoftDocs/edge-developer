@@ -43,7 +43,7 @@ Firefox has a [responsive design view][MDNResponsiveDesignMode] that encourages 
 
 ### EdgeHTML emulation
 
-To emulate Windows Phones, use the Microsoft Edge \(EdgeHTML\) [built-in emulation][ArchiveMicrosoftEdgeDevtoolsEmulation].
+To emulate Windows Phones, use the Microsoft Edge (EdgeHTML) [built-in emulation][ArchiveMicrosoftEdgeDevtoolsEmulation].
 
 Use [IE 11 Emulation][Ie11DevToolsEmulation] to simulate how your page might look in older versions of Internet Explorer.
 
@@ -109,7 +109,7 @@ The iOS simulator for Mac OS X comes with Xcode, which you [install from the App
 When you are done, learn how to work with the simulator through [Apple Developer documentation][AppleSimulatorHelp].
 
 > [!NOTE]
-> To avoid having to open Xcode every time you want to use the iOS Simulator, open it, hover on the iOS Simulator icon in your dock, open the contextual menu \(right-click\), and choose **Keep in Dock**.  Now just choose the icon whenever you need it.
+> To avoid having to open Xcode every time you want to use the iOS Simulator, open it, hover on the iOS Simulator icon in your dock, open the contextual menu (right-click), and choose **Keep in Dock**.  Now just choose the icon whenever you need it.
 
 ### Microsoft Edge (EdgeHTML)
 
@@ -117,7 +117,7 @@ When you are done, learn how to work with the simulator through [Apple Developer
    Modern IE VM
 :::image-end:::
 
-Microsoft Edge \(EdgeHTML\) Virtual Machines \(VMs\) enable you to access different versions of EdgeHTML and Internet Explorer on your computer through VirtualBox \(or VMWare\).  Select a [virtual machine on the download page][MicrosoftDeveloperEdgeVms].
+Microsoft Edge (EdgeHTML) Virtual Machines (VMs) enable you to access different versions of EdgeHTML and Internet Explorer on your computer through VirtualBox (or VMWare).  Select a [virtual machine on the download page][MicrosoftDeveloperEdgeVms].
 
 
 <!-- ====================================================================== -->
@@ -165,7 +165,7 @@ The following products are examples of cloud-based emulators and related product
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\) and [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate at Google | Tools, Performance, Animation, UX\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) and is authored by [Meggin Kearney][MegginKearney] (Tech Writer) and [Paul Bakaus][PaulBakaus] (Open Web Developer Advocate at Google | Tools, Performance, Animation, UX).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

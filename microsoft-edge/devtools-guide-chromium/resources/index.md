@@ -31,7 +31,7 @@ This guide assumes that you are familiar with the basics of [web development][MD
 
 When you know the name of the resource that you want to inspect, the **Command Menu** provides a fast way of opening the resource.
 
-1.  Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\).  The **Open File** dialog opens.
+1.  Select `Control`+`P` (Windows, Linux) or `Command`+`P` (macOS).  The **Open File** dialog opens.
 
     :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-command-menu-empty.msft.png":::
        The **Open File** dialog
@@ -53,7 +53,7 @@ Navigate to [Inspect the details of a resource][DevtoolsNetworkInspectDetailsRes
 
 ### Reveal resources in the Network tool from other panels
 
-The [Browse resources](#browse-resources) section below shows you how to view resources from various parts of the DevTools UI.  If you ever want to inspect a resource in the **Network** tool,  hover on the resource, open the contextual menu \(right-click\), and choose **Reveal in Network panel**.
+The [Browse resources](#browse-resources) section below shows you how to view resources from various parts of the DevTools UI.  If you ever want to inspect a resource in the **Network** tool,  hover on the resource, open the contextual menu (right-click), and choose **Reveal in Network panel**.
 
 :::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Reveal in Network panel" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **Reveal in Network panel**

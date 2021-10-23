@@ -28,7 +28,7 @@ Use the following functions to begin embedding JavaScript in your WebView app.
 | API  | Description  |
 |:--- |:--- |
 | [ExecuteScriptAsync][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | Run JavaScript in a WebView control. For more information, navigate to the Get Started tutorial. |
-| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | Runs when the Document Object Model \(DOM\) is created. |
+| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | Runs when the Document Object Model (DOM) is created. |
 
 
 <!-- ====================================================================== -->
@@ -98,7 +98,7 @@ In this section, remove the default context menu from your WebView2 control.
 To begin, explore the current contextual menu functionality.
 
 1.  Run your project.
-1.  Hover anywhere on the WebView2 control and open the context menu \(right-click\).  The context menu displays the default choices.
+1.  Hover anywhere on the WebView2 control and open the context menu (right-click).  The context menu displays the default choices.
 
     :::image type="complex" source="./media/context-menu.png" alt-text="The context menu showing the default choices" lightbox="./media/context-menu.png":::
        The context menu showing the default choices
@@ -112,7 +112,7 @@ Now add code to remove the contextual menu functionality from the WebView2 contr
     await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
     ```
 
-1.  Run the code again.  Confirm that you're not able to open a context menu \(right-click\).
+1.  Run the code again.  Confirm that you're not able to open a context menu (right-click).
 
 
 <!-- ====================================================================== -->

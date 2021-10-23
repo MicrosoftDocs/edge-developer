@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, developer, tools, automation, test, p
 
 [Playwright][PlaywrightMain] is a [Node.js][NodejsMain] library to automate [Chromium][ChromiumHome], [Firefox][FirefoxMain], and [WebKit][WebKitMain] with a single API.  Playwright is built to enable cross-browser web automation that is ever-green, capable, reliable, and fast.  Since [Microsoft Edge is built on the open-source Chromium web platform][MicrosoftBlogsWindowsExperience20181206], Playwright is also able to automate Microsoft Edge.
 
-Playwright launches [headless browsers][WikiHeadlessBrowser] by default.  Headless browsers do not display a UI, so instead you must use the command line.  You may also configure Playwright to run full \(non-headless\) Microsoft Edge as well.
+Playwright launches [headless browsers][WikiHeadlessBrowser] by default.  Headless browsers do not display a UI, so instead you must use the command line.  You may also configure Playwright to run full (non-headless) Microsoft Edge as well.
 
 By default, when you install Playwright, the installer downloads [Chromium][ChromiumHome], [Firefox][FirefoxMain], and [WebKit][WebKitMain].  If you have Microsoft Edge installed as well, Playwright just needs a one-line code change to test your website or app in Microsoft Edge.  To download Microsoft Edge, navigate to [Download Microsoft Edge][MicrosoftEdgeDownload].
 
@@ -66,7 +66,7 @@ const EDGE_PATH = edgePaths.getEdgePath();
 Finally, set `executablePath: EDGE_PATH` in `example.js`.  Save your changes.
 
 > [!NOTE]
-> Microsoft Edge \(EdgeHTML\) doesn't work with Playwright.  You must install [Microsoft Edge \(Chromium\)][MicrosoftEdgeDownload] to continue following this example.
+> Microsoft Edge (EdgeHTML) doesn't work with Playwright.  You must install [Microsoft Edge (Chromium)][MicrosoftEdgeDownload] to continue following this example.
 
 Now run `example.js` from the command line.
 

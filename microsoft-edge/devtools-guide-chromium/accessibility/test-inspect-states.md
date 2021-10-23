@@ -53,7 +53,7 @@ Now, use the Inspect tool. When the Inspect tool is used, animations on the menu
 
 To confirm that your animations don't run, perform the following steps.
 
-1.  Select the **Inspect** \(![the Inspect button](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
+1.  Select the **Inspect** (![the Inspect button](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
 1.  Hover over the blue links on the sidebar navigation menu.  The animations for the menu items don't run. Instead, the menu items are displayed using colors and highlights for the flexbox overlay.
 
@@ -70,7 +70,7 @@ To turn on the hover state while using the Inspect tool:
 
 1.  If it's not open already, open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
 
-1.  Select the **Inspect** \(![Inspect tool button](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
+1.  Select the **Inspect** (![Inspect tool button](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
 1.  In the rendered webpage, select the blue **Cats** link in the sidebar navigation menu.  The **Elements** tool opens, with the element `<a href="#cats">Cats</a>` selected.
 
@@ -96,7 +96,7 @@ To turn on the hover state while using the Inspect tool:
 
     After the simulated state is applied, you can use the **Inspect** tool again to check the contrast of the element when the user hovers over it, as follows.
 
-1.  Select the **Inspect** \(![Inspector icon](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
+1.  Select the **Inspect** (![Inspector icon](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
 1.  Hover over the blue **Cats** link in the sidebar navigation menu.  The link is now light blue, because of the simulated hover animation.  The **Inspect** tool's information overlay appears, showing an orange exclamation point in the **Contrast** row, indicating that the contrast isn't high enough.
 

@@ -47,10 +47,10 @@ Many developers use other developer tools, like StackOverflow and Visual Studio 
 
 :::row:::
    :::column span="":::
-      Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+      Chinese (Simplified) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
    :::column-end:::
    :::column span="":::
-      Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
+      Chinese (Traditional) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -122,7 +122,7 @@ The webhint Microsoft Edge extension allows you to easily scan your web page and
 
 ### 3D View
 
-Use the **3D View** to debug your web application by navigating through the [Document Object Model \(DOM\)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.
+Use the **3D View** to debug your web application by navigating through the [Document Object Model (DOM)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.
 
 :::image type="complex" source="../../images/2020/01/3dview.msft.png" alt-text="The 3D View in the DevTools" lightbox="../../images/2020/01/3dview.msft.png":::
    The 3D View in the DevTools
@@ -244,7 +244,7 @@ All cells in the Cookie tables are editable now, except cells in the **Size** co
 
 #### Copy as Node.js fetch to include cookie data
 
-To get a `fetch` expression that includes cookie data, hover on a network request, open the contextual menu \(right-click\), and choose **Copy** > **Copy as Node.js fetch**.
+To get a `fetch` expression that includes cookie data, hover on a network request, open the contextual menu (right-click), and choose **Copy** > **Copy as Node.js fetch**.
 
 :::image type="complex" source="../../images/2020/01/fetchcookies.msft.png" alt-text="Copy as Node.js fetch" lightbox="../../images/2020/01/fetchcookies.msft.png":::
    Copy as Node.js fetch

@@ -68,7 +68,7 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        Choose a resource to refresh
     :::image-end:::
 
-1.  Choose **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\).
+1.  Choose **Refresh** (![Refresh](../media/refresh-icon.msft.png)).
 
 ## Filter resources
 
@@ -88,7 +88,7 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        Choose a resource to delete
     :::image-end:::
 
-1.  Choose **Delete Selected** \(![Delete Selected](../media/delete-icon.msft.png)\).
+1.  Choose **Delete Selected** (![Delete Selected](../media/delete-icon.msft.png)).
 
 ## Delete all cache data
 

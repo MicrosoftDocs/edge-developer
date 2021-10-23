@@ -27,17 +27,17 @@ Complete these interactive tutorials to learn the basics of viewing and changing
 
 ## Open CSS Examples
 
-1.  Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and choose **CSS Examples** to open in a new window.
+1.  Hold `Control` (Windows, Linux) or `Command` (macOS) and choose **CSS Examples** to open in a new window.
 
     [CSS Examples][GlitchDevToolsCssExamples]
 
     > [!NOTE]
-    > If you want to [dock your DevTools window][DevToolsCustomizePlacement] to the right of your viewport \(displayed in the following figure\), choose **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, choose **Dock to right**.
+    > If you want to [dock your DevTools window][DevToolsCustomizePlacement] to the right of your viewport (displayed in the following figure), choose **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, choose **Dock to right**.
 
 ## View the CSS for an element
 
 1.  [Open CSS Examples](#open-css-examples).
-1.  Hover on the `Inspect Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.
+1.  Hover on the `Inspect Me!` text, open the contextual menu (right-click), and choose **Inspect**.
     1.  In DevTools, on the **Elements** tool, in the **DOM Tree** panel, the `Inspect Me!` element is highlighted.
 
         :::image type="complex" source="../media/css-elements-inspect-me.msft.png" alt-text="The inspected element is highlighted in the DOM Tree" lightbox="../media/css-elements-inspect-me.msft.png":::
@@ -46,7 +46,7 @@ Complete these interactive tutorials to learn the basics of viewing and changing
 
     1.  In the `Inspect Me!` element, find the value of the `data-message` attribute and copy it.
 1.  On the page, in the **Value of `data-message`:** textbox, enter the value.
-1.  Hover on the `Inspect Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.
+1.  Hover on the `Inspect Me!` text, open the contextual menu (right-click), and choose **Inspect**.
     1.  In DevTools, on the **Elements** tool, select the **Styles** panel.
     1.  In the **Styles** panel, the `Inspect Me!` element is highlighted.
     1.  In the `Inspect Me!` element, find the `aloha` class rule.
@@ -70,7 +70,7 @@ Use the **Styles** panel when you want to change or add CSS declarations to an e
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.
 
 1.  [Open CSS Examples](#open-css-examples).
-1.  Hover on the `Add A Background Color To Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.
+1.  Hover on the `Add A Background Color To Me!` text, open the contextual menu (right-click), and choose **Inspect**.
 1.  Choose `element.style` near the top of the **Styles** panel.
 1.  Type `background-color` and select `Enter`.
 1.  Type `honeydew` and select `Enter`.  In the **DOM Tree**, an inline style declaration applied to the element is displayed.
@@ -87,7 +87,7 @@ To display how an element looks when a CSS class is applied to or removed from a
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.
 
 1.  [Open CSS Examples](#open-css-examples).
-1.  Hover on the `Add A Class To Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.
+1.  Hover on the `Add A Class To Me!` text, open the contextual menu (right-click), and choose **Inspect**.
 1.  Choose **.cls**.  DevTools reveals a text box where you may add classes to the selected element.
 1.  Type `color_me` in the **Add new class** text box and then select `Enter`.  A checkbox appears below the **Add new class** text box, where you may toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you are also able to toggle each from here.
 
@@ -104,7 +104,7 @@ Use the **Styles** panel to permanently apply a CSS pseudostate to an element.  
 
 1.  [Open CSS Examples](#open-css-examples).
 1.  Hover on the `Hover Over Me!` text.  The background color changes.
-1.  Hover on the `Hover Over Me!` text, open the contextual menu \(right-click\), and choose **Inspect**.
+1.  Hover on the `Hover Over Me!` text, open the contextual menu (right-click), and choose **Inspect**.
 1.  In the **Styles** panel, choose **:hov**.
 1.  Check the **:hover** checkbox.  The background color changes like before, even though you are not actually hovering over the element.
 
@@ -120,7 +120,7 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.
 
 1.  [Open CSS Examples](#open-css-examples).
-1.  Hover on the `Change My Margin!` text, open the contextual menu \(right-click\), and choose **Inspect**.
+1.  Hover on the `Change My Margin!` text, open the contextual menu (right-click), and choose **Inspect**.
 1.  In the **Box Model** diagram in the **Styles** panel, hover on **padding**.  The padding of an element is highlighted in the viewport.
 
     > [!NOTE]
@@ -148,7 +148,7 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 
 If you want to debug or test the Media Queries you defined in your CSS, use the following steps.
 
-1.  Open the developer tools and select the **Toggle device toolbar** icon second on the top-left, or select `Ctrl`+`Shift`+`M` \(`Cmd`+`Shift`+`M` on macOS\).
+1.  Open the developer tools and select the **Toggle device toolbar** icon second on the top-left, or select `Ctrl`+`Shift`+`M` (`Cmd`+`Shift`+`M` on macOS).
 
     :::image type="complex" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="Open the device toolbar" lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
        Open the device toolbar
@@ -166,7 +166,7 @@ If you want to debug or test the Media Queries you defined in your CSS, use the 
        Choose Media Query from preview bar
     :::image-end:::
 
-1.  To debug media queries and open the CSS file in the `Sources` editor; hover on any of the bar segments, open the contextual menu \(right-click\), and select `reveal in source code`.
+1.  To debug media queries and open the CSS file in the `Sources` editor; hover on any of the bar segments, open the contextual menu (right-click), and select `reveal in source code`.
 
     :::image type="complex" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="Reveal Media Queries in Sources Editor" lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
        Reveal Media Queries in Sources Editor

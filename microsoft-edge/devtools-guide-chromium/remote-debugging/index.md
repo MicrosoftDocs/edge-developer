@@ -77,7 +77,7 @@ Use the following tips to help you troubleshoot the correct settings for your ha
 Use the following tips to help you verify that your software is set up correctly.
 
 *   If your development machine is running Windows, try manually installing the USB drivers for your Android device.  For more information, navigate to [Install OEM USB Drivers][AndroidDeveloperToolsOemUsb].
-*   Some combinations of Windows and Android devices \(especially Samsung\) require additional settings.  For more information, navigate to [DevTools Devices does not detect device when plugged in][Stackoverflow21925992].
+*   Some combinations of Windows and Android devices (especially Samsung) require additional settings.  For more information, navigate to [DevTools Devices does not detect device when plugged in][Stackoverflow21925992].
 
 Use the following tips to help you troubleshoot if the **Allow USB Debugging** prompt is not displayed on your Android device.
 
@@ -119,14 +119,14 @@ Choose **focus tab**, **reload**, or **close** next to the tab that you want to 
 
 Navigate to the **Elements** tool of your DevTools instance, and hover on an element to highlight it in the viewport of your Android device.
 
-You may also select an element on your Android device screen to select it in the **Elements** tool.  Choose **Select Element** \(![Select Element](../media/select-element-icon.msft.png)\) icon on your DevTools instance, and then select the element on your Android device screen.
+You may also select an element on your Android device screen to select it in the **Elements** tool.  Choose **Select Element** (![Select Element](../media/select-element-icon.msft.png)) icon on your DevTools instance, and then select the element on your Android device screen.
 
 > [!NOTE]
 > **Select Element** is disabled after the first selection, so you must re-enable it every time you want to use the feature.
 
 ### Screencast your Android screen to your development machine
 
-Choose **Toggle Screencast** \(![Toggle Screencast](../media/toggle-screencast-icon.msft.png)\) icon to view the content of your Android device in your DevTools instance.
+Choose **Toggle Screencast** (![Toggle Screencast](../media/toggle-screencast-icon.msft.png)) icon to view the content of your Android device in your DevTools instance.
 
 You are able to interact with the screencast in the following ways.
 

@@ -12,7 +12,7 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 
 ## Introduction and Objective of this document
 
-Thank you for your interest in developing extensions for the Microsoft Edge Add-ons store.  The Microsoft Edge Add-ons store developer policies \(Add-ons store developer policies\) apply to your extensions, including your submission of extensions through [Partner Center][MicrosoftPartnerCenter] and the provision of such extensions through the Microsoft Edge Add-ons.
+Thank you for your interest in developing extensions for the Microsoft Edge Add-ons store.  The Microsoft Edge Add-ons store developer policies (Add-ons store developer policies) apply to your extensions, including your submission of extensions through [Partner Center][MicrosoftPartnerCenter] and the provision of such extensions through the Microsoft Edge Add-ons.
 
 The _Microsoft Edge Add-ons store_ is also called the _Microsoft Edge Add-ons website_.  The _Microsoft Edge Add-ons store developer policies_ are also called the _Microsoft Edge Add-ons website developer policies_.
 
@@ -21,7 +21,7 @@ The _Microsoft Edge Add-ons store_ is also called the _Microsoft Edge Add-ons we
 
 A few principles to get you started:
 
-*   You should offer unique and distinct value within your extensions for Microsoft Edge.  Provide a compelling reason to download your extensions from the Microsoft Edge Add-ons store \(Microsoft Edge Add-ons\).
+*   You should offer unique and distinct value within your extensions for Microsoft Edge.  Provide a compelling reason to download your extensions from the Microsoft Edge Add-ons store (Microsoft Edge Add-ons).
 *   You must not mislead our joint users about what your extension does, who is offering it, and so on.
 *   You must not attempt to cheat users, the system or the ecosystem.  There is no place in our Microsoft Edge Add-ons for any kind of fraud; be it ratings and review manipulation, credit card fraud or other fraudulent activity.
 
@@ -53,7 +53,7 @@ Search terms may not exceed seven unique terms and should be relevant to your ex
 
 #### 1.1.5 Provide appropriate details
 
-You must provide distinct and informative details about your extension and the functionality in listing \(metadata\) for your extension.  Your extension must provide a valuable and quality user experience.  Your extension must also have an active presence in Microsoft Edge Add-ons.
+You must provide distinct and informative details about your extension and the functionality in listing (metadata) for your extension.  Your extension must provide a valuable and quality user experience.  Your extension must also have an active presence in Microsoft Edge Add-ons.
 
 #### 1.1.6 Stability and Performance
 
@@ -69,7 +69,7 @@ Your extension must not, without appropriate user consent, alter, or appear to a
 
 Any alteration to the browser settings should be explicitly documented in the description of your extension.
 
-Your extension may only revise key settings to replace a Microsoft webpage or service with that of a third-party \(such as require use of a third-party search engine or set the home page to a third-party web property\) if you are employed by or otherwise associated with such third-party.
+Your extension may only revise key settings to replace a Microsoft webpage or service with that of a third-party (such as require use of a third-party search engine or set the home page to a third-party web property) if you are employed by or otherwise associated with such third-party.
 
 ### 1.2 Security
 
@@ -86,7 +86,7 @@ Your extension must not contain or enable malware as defined by the Microsoft cr
 
 #### 1.2.3 Dependency on other software
 
-Your extension may depend on non-integrated software \(such as another product, module, or service\) to deliver the primary functionality, provided you disclose the dependency in the description
+Your extension may depend on non-integrated software (such as another product, module, or service) to deliver the primary functionality, provided you disclose the dependency in the description
 
 #### 1.2.4 Extensions Update
 
@@ -122,7 +122,7 @@ The following requirements apply to extensions that access Personal Information.
 
 #### 1.5.1 Collect Personal Information only when necessary
 
-Your extension may collect, access, use, or transmit Personal Information \(including web browsing activity\); only if required by and only for use in a prominently disclosed, user-facing feature.
+Your extension may collect, access, use, or transmit Personal Information (including web browsing activity); only if required by and only for use in a prominently disclosed, user-facing feature.
 
 #### 1.5.2 Maintain a privacy policy
 
@@ -176,13 +176,13 @@ You must use a secure third-party purchase API for purchases of physical goods o
 
 *   If your extension is used to facilitate or collect charitable contributions or to conduct a promotional sweepstakes or contest, you must do so in compliance with applicable law.
 *   You must also state clearly that Microsoft is not the fundraiser or sponsor of the promotion.
-*   In-product offerings sold in your extension must not be converted to any legally valid currency \(such as USD, Euro, and so on\) or any physical goods or services.
+*   In-product offerings sold in your extension must not be converted to any legally valid currency (such as USD, Euro, and so on) or any physical goods or services.
 
 The following requirements apply to your use of a secure third-party purchase API:
 
 *   At the time of the transaction or when you collect any payment or financial information from the user; your extension must identify the commerce transaction provider, authenticate the user, and obtain user confirmation for the transaction.  A commerce transaction provider maintains a secure platform for financial exchanges.
 *   Your extension may offer users the ability to save this authentication, but users must have the ability to either require an authentication on every transaction or to turn off in-product transactions.
-*   If your extension collects credit card information or uses a third-party payment processor that collects credit card information, the payment processing must meet the current PCI Data Security Standard \(PCI DSS\).
+*   If your extension collects credit card information or uses a third-party payment processor that collects credit card information, the payment processing must meet the current PCI Data Security Standard (PCI DSS).
 
 #### 1.8.2 Disclosing paid features
 
@@ -190,7 +190,7 @@ Your extension and associated metadata must provide information about the types 
 
 ### 1.9 Notifications
 
-Your extension must respect system settings for notifications.  This means any presentation of ads and notifications to users must be consistent with user preferences, regardless of whether the notifications are provided by the Microsoft Push Notification Service \(MPNS\), Windows Push Notification Service \(WNS\), or any other service.  If the user disables notifications, either on a product-specific or system-wide basis, your extension must remain functional.
+Your extension must respect system settings for notifications.  This means any presentation of ads and notifications to users must be consistent with user preferences, regardless of whether the notifications are provided by the Microsoft Push Notification Service (MPNS), Windows Push Notification Service (WNS), or any other service.  If the user disables notifications, either on a product-specific or system-wide basis, your extension must remain functional.
 
 If your product uses MPNS or WNS to transmit notifications, it must comply with the following requirements:
 
@@ -242,7 +242,7 @@ If your extension is directed at children under the age of 13, as defined in the
 
 ## 2 Content Policies
 
-The following policies apply to content and metadata \(including publisher name, extension name, extension icon, extension description, extension screenshots, extension trailers and trailer thumbnails, and any other extension metadata\) offered for distribution in Microsoft Edge Add-ons.  Content means the images, sounds, videos and text contained in your extension, the tiles, notifications, error messages or ads exposed through your extension, and anything delivered from a server or to which your extension connects.  Because extensions and Microsoft Edge Add-ons are used around the world, these requirements are interpreted and applied in the context of regional and cultural norms.
+The following policies apply to content and metadata (including publisher name, extension name, extension icon, extension description, extension screenshots, extension trailers and trailer thumbnails, and any other extension metadata) offered for distribution in Microsoft Edge Add-ons.  Content means the images, sounds, videos and text contained in your extension, the tiles, notifications, error messages or ads exposed through your extension, and anything delivered from a server or to which your extension connects.  Because extensions and Microsoft Edge Add-ons are used around the world, these requirements are interpreted and applied in the context of regional and cultural norms.
 
 ### 2.1 Content Requirements for Microsoft Edge Addon Catalog Listing
 
@@ -257,11 +257,11 @@ All content in your extension and associated metadata must be either originally 
 
 #### 2.3.1 Requirements
 
-Your extension must not contain any content that facilitates or glamorizes the following real world activities: \(a\) extreme or gratuitous violence; \(b\) human rights violations; \(c\) the creation of illegal weapons; or \(d\) the use of weapons against a person, animal, or real or personal property.
+Your extension must not contain any content that facilitates or glamorizes the following real world activities: (a) extreme or gratuitous violence; (b) human rights violations; (c) the creation of illegal weapons; or (d) the use of weapons against a person, animal, or real or personal property.
 
 #### 2.3.2 Responsibility
 
-Your extension must not: \(a\) pose a safety risk to, nor result in discomfort, injury or any other harm to end users or to any other person or animal; or \(b\) pose a risk of or result in damage to real or personal property.  You are solely responsible for all extension safety testing, certificate acquisition, and implementation of any appropriate feature safeguards.  You must not disable any platform safety or comfort features and you must include all applicable legally required and industry-standard warnings, notices, and disclaimers in your extension.
+Your extension must not: (a) pose a safety risk to, nor result in discomfort, injury or any other harm to end users or to any other person or animal; or (b) pose a risk of or result in damage to real or personal property.  You are solely responsible for all extension safety testing, certificate acquisition, and implementation of any appropriate feature safeguards.  You must not disable any platform safety or comfort features and you must include all applicable legally required and industry-standard warnings, notices, and disclaimers in your extension.
 
 ### 2.4 Defamatory, Libelous, Slanderous, and Threatening
 
@@ -315,7 +315,7 @@ When you submit your extension to [Partner Center][MicrosoftPartnerCenter], you 
 
 #### 2.12.2 Ratings Change
 
-If your extension provides content \(such as user-generated, retail, or other web-based content\) that might be appropriate for a higher age rating than the assigned rating, you must require users to opt into receiving such content by using a content filter or by signing in with a pre-existing account.
+If your extension provides content (such as user-generated, retail, or other web-based content) that might be appropriate for a higher age rating than the assigned rating, you must require users to opt into receiving such content by using a content filter or by signing in with a pre-existing account.
 
 ### 2.13 Videos
 
@@ -335,7 +335,7 @@ All the extensions should adhere to the store policies listed above. If your ext
 
 <!-- links -->
 
-[MicrosoftEdgeContentSecurityPolicyRemoteScript]: ./csp.md#relaxing-the-default-policy "Relaxing the default policy - Content Security Policy \(CSP\) | Microsoft Docs"
+[MicrosoftEdgeContentSecurityPolicyRemoteScript]: ./csp.md#relaxing-the-default-policy "Relaxing the default policy - Content Security Policy (CSP) | Microsoft Docs"
 
 [MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"
 [MicrosoftIdentifiesMalwareUnwantedApplications]: /windows/security/threat-protection/intelligence/criteria "How Microsoft identifies malware and potentially unwanted applications | Microsoft Docs"

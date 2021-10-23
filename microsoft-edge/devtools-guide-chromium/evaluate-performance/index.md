@@ -44,7 +44,7 @@ In the following tutorial, you open DevTools on a live page and use the **Perfor
     https://microsoft-edge-chromium-devtools.glitch.me/sluggish/
     ```
 
-1.  Select `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\) to open DevTools.
+1.  Select `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS) to open DevTools.
 
     :::image type="complex" source="../media/evaluate-performance-get-started-side-by-side.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-get-started-side-by-side.msft.png":::
        The demo on the left, and DevTools on the right
@@ -59,7 +59,7 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 1.  In DevTools, choose the **Performance** tool.
 1.  Ensure the you choose the checkbox next to **Screenshots**.
-1.  Choose **Capture Settings** \(![Capture Settings](../media/capture-settings-icon.msft.png)\).  DevTools reveals settings related to how it captures performance metrics.
+1.  Choose **Capture Settings** (![Capture Settings](../media/capture-settings-icon.msft.png)).  DevTools reveals settings related to how it captures performance metrics.
 1.  For **CPU**, choose **4x slowdown**.  DevTools throttles your CPU so that it is 4 times slower than usual.
 
     :::image type="complex" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="CPU throttle" lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
@@ -87,7 +87,7 @@ ensure that your experience is relatively consistent with the screenshots and de
 
 When you ran the optimized version of the page, the blue icons move faster.  Why is that?  Both versions are supposed to move the icons the same amount of space in the same amount of time.  Take a recording in the Performance panel to learn how to detect the performance bottleneck in the un-optimized version.
 
-1.  In DevTools, choose **Record** \(![Record](../media/record-icon.msft.png)\).  DevTools captures performance metrics as the page runs.
+1.  In DevTools, choose **Record** (![Record](../media/record-icon.msft.png)).  DevTools captures performance metrics as the page runs.
 
     :::image type="complex" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="Profile the page" lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
        Profile the page
@@ -108,7 +108,7 @@ After you record the performance of the page, measure the quality of the perform
 
 ### Analyze frames per second
 
-The main metric for measuring the performance of any animation is frames per second \(FPS\).  Users are happy when animations run at 60 FPS.
+The main metric for measuring the performance of any animation is frames per second (FPS).  Users are happy when animations run at 60 FPS.
 
 1.  Review the **FPS** chart.  Whenever a red bar is displayed above **FPS**, it means that the framerate dropped so low that it is probably harming the user experience.  In general, the higher the green bar, the higher the FPS.
 
@@ -140,7 +140,7 @@ Of course, the display indicates that the webpage is not performing well.  But i
 
 Another handy tool is the FPS meter, which provides real-time estimates for FPS as the page runs.
 
-1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.
+1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 1.  Start typing `Rendering` in the **Command Menu** and choose **Show Rendering**.
 1.  In the **Rendering** tool, turn on **FPS Meter**.  A new overlay appears in the top-right of your viewport.
 
@@ -190,7 +190,7 @@ After you measured and verified that the animation is not performing well, the n
     > After choosing an event, use the arrow keys to select the events next to it.
 
 1.  Under the **app.update** event, there is a bunch of purple events.  If each purple event was wider, it looks as though each one may have a red triangle on it.
-1.  Choose one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** panel.  Indeed, there is a warning about forced reflows \(another word for layout\).
+1.  Choose one of the purple **Layout** events.  DevTools provides more information about the event in the **Summary** panel.  Indeed, there is a warning about forced reflows (another word for layout).
 
 1.  In the **Summary** panel, choose the **app.js:71** link under **Layout Forced**.  DevTools takes you to the line of code that forced the layout.
 
@@ -219,7 +219,7 @@ Using the workflows and tools that you just learned, choose **Optimize** on the 
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.
 To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->
 
-To get more comfortable with the **Performance** tool, practice makes perfect.  Try profiling your pages and analyzing the results.  If you have any questions about your results, use the **Send Feedback** icon, select `Alt`+`Shift`+`I` \(Windows, Linux\), select `Option`+`Shift`+`I` \(macOS\), or [tweet the DevTools team][TwitterEdgeDevtools].  Include screenshots or links to reproducible pages, if possible.
+To get more comfortable with the **Performance** tool, practice makes perfect.  Try profiling your pages and analyzing the results.  If you have any questions about your results, use the **Send Feedback** icon, select `Alt`+`Shift`+`I` (Windows, Linux), select `Option`+`Shift`+`I` (macOS), or [tweet the DevTools team][TwitterEdgeDevtools].  Include screenshots or links to reproducible pages, if possible.
 
 :::image type="complex" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="The **Feedback** icon in the Microsoft Edge DevTools" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
    The **Send Feedback** icon in the Microsoft Edge DevTools

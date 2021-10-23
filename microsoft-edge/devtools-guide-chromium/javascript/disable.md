@@ -28,7 +28,7 @@ To review how your webpage renders when a browser doesn't have JavaScript suppor
 Complete the following actions to examine how a webpage displays and behaves when you turn off JavaScript.
 
 1.  [Open Microsoft Edge DevTools][DevToolsOpen].
-1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.
+1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
     :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="The Command Menu" lightbox="../media/javascript-console-command.msft.png":::
        The **Command Menu**

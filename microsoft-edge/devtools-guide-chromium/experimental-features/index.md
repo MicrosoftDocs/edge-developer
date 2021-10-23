@@ -35,7 +35,7 @@ As of Microsoft Edge 94, the following experimental features are turned on by de
 <!-- ====================================================================== -->
 ## Turning on experimental features
 
-To turn on \(or off\) experimental features in Microsoft Edge:
+To turn on (or off) experimental features in Microsoft Edge:
 
 1.  [Open DevTools][DevtoolsOpenIndex].  To do this, in Microsoft Edge, select the **Settings and more** button, which is an ellipses (three dots).  Then hover over **More tools**, and then select **Developer tools**.
 
@@ -125,7 +125,7 @@ This experiment is available starting with Microsoft Edge version 85 and is turn
 ## Enable Composited Layers in 3D View
 <!-- on by default in 94 -->
 
-You can visualize Layers alongside z-indexes and the Document Object Model \(DOM\).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.
+You can visualize Layers alongside z-indexes and the Document Object Model (DOM).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.
 
 To use **Composited Layers**, complete the following steps.
 
@@ -148,7 +148,7 @@ To use the **Network Console**, complete the following steps.
 
 1.  Open the **Network** pane.
 1.  Find the network request that you want to change and resend.
-1.  Open the contextual menu \(right-click\), and select **Edit and Replay**.
+1.  Open the contextual menu (right-click), and select **Edit and Replay**.
 1.  When the **Network Console** opens, edit the network request information.
 1.  Select **Send**.
 
@@ -194,7 +194,7 @@ These features have been promoted from Experimental to regular features, and hav
 
 This was an Experiment starting with Microsoft Edge version 89, and is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
 
-You can now open more tools using the new **More Tools** \(`+`\) icon.  After you turn on the **Enable + button tab menus to open more tools** experiment and reload DevTools, a plus sign \(`+`\) displays to the right of the tab group at the top of the DevTools.  To display a list of other tools that you can add to the tab bar, select the **More Tools** \(`+`\) icon.
+You can now open more tools using the new **More Tools** (`+`) icon.  After you turn on the **Enable + button tab menus to open more tools** experiment and reload DevTools, a plus sign (`+`) displays to the right of the tab group at the top of the DevTools.  To display a list of other tools that you can add to the tab bar, select the **More Tools** (`+`) icon.
 
 :::image type="content" source="../media/experiments-more-tools-button.msft.png" alt-text="More Tools in the top pane" lightbox="../media/experiments-more-tools-button.msft.png":::
 
@@ -227,7 +227,7 @@ This feature provides many new visualizations to help you debug CSS Flexbox layo
 
 #### Displaying persistent overlays on Flexbox layouts with the Inspect tool
 
-The **Inspect** tool provides a quick way to identify and visualize CSS Flexbox layouts in a website by hovering on them with the mouse.  Select the **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.  Then, while debugging the website, hover on a flex container to display outlines around the flex container.
+The **Inspect** tool provides a quick way to identify and visualize CSS Flexbox layouts in a website by hovering on them with the mouse.  Select the **Inspect** (![Inspect](../media/inspect-icon.msft.png)) icon in the top-left corner of DevTools.  Then, while debugging the website, hover on a flex container to display outlines around the flex container.
 
 :::image type="content" source="../media/flexbox-hover.msft.png" alt-text="Display Flexbox containers with the Inspect tool" lightbox="../media/flexbox-hover.msft.png":::
 

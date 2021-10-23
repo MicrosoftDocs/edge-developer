@@ -109,7 +109,7 @@ Complete the following actions, to get hands-on experience with Workspaces.
 
 ### Set up DevTools
 
-1.  Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\) to open the **Console** panel of DevTools.
+1.  Select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS) to open the **Console** panel of DevTools.
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="The Console panel" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        The **Console** panel
@@ -199,7 +199,7 @@ If you want to save a change to the HTML of the webpage, use the **Sources** too
 1.  In the **Navigator** pane (on the left), choose the **Page** tab.
 1.  Choose **(index)**.  The HTML for the page opens.
 1.  Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  Review the following figure.
-1.  Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.
+1.  Select `Control`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change.
 1.  Refresh the page.  The `<h1>` element continues to display the new text after the page is refreshed.
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Change HTML from the Sources tool" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
@@ -215,14 +215,14 @@ The main place to use the code editor of DevTools is the **Sources** tool.  But 
 To open the DevTools code editor alongside other tools, do the following:
 
 1.  Navigate to the **Elements** tool.
-1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  The **Command Menu** opens.
+1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  The **Command Menu** opens.
 1.  Type `Quick Source`, and then choose **Show Quick Source**.  At the bottom of the DevTools window, the **Quick Source** tool appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Open the Quick Source tool by using the Command Menu" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
        Open the **Quick Source** tool by using the **Command Menu**
     :::image-end:::
 
-1.  Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  Review the following figure.
+1.  Select `Control`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog.  Review the following figure.
 1.  Type `script`, then choose **app/script.js**.
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Open script.js using the Open File dialog" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
@@ -239,7 +239,7 @@ To open the DevTools code editor alongside other tools, do the following:
     document.querySelector('a').style = 'font-style:italic';
     ```
 
-1.  Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.
+1.  Select `Control`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change.
 1.  Refresh the page.
 
     > [!NOTE]
@@ -278,9 +278,9 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 [TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "An Introduction to Source Maps | Treehouse Blog"
 
-<!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
+<!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools (@AlphabetBrowserDevTools) | Twitter"  -->
 
-[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \(computer networking\) - Wikipedia"
+[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port (computer networking) - Wikipedia"
 
 
 <!-- ====================================================================== -->

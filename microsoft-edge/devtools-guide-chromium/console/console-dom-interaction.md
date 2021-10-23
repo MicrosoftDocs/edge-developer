@@ -17,7 +17,7 @@ The **Console** tool isn't only for [logging information][DevtoolsConsoleConsole
 To reference the header of the webpage, complete the following actions.
 
 1.  Open the **Console**.
-    *   Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).
+    *   Select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 1.  Type or copy and paste the following code snippet in the **Console**.
 
     ```javascript
@@ -96,7 +96,7 @@ The `$` has special powers in **Console** and you may remember that from jQuery.
 *   `$x()` allows you to choose DOM elements using XPATH.
 *   `$()` and `$$()` are shorter versions of for `document.querySelector()` and `document.querySelectorAll()`.
 
-For example, the following code snippet retrieves all the links in the webpage \(as `$$('a')` is short for `document.querySelectorAll('a')`\) and displays the links as a sortable table to copy and paste, for example, into Excel.
+For example, the following code snippet retrieves all the links in the webpage (as `$$('a')` is short for `document.querySelectorAll('a')`) and displays the links as a sortable table to copy and paste, for example, into Excel.
 
 ```javascript
 console.table($$('a'),['href','text']);

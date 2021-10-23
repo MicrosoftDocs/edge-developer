@@ -10,7 +10,7 @@ keywords: microsoft edge, compatibility, web platform, internet explorer
 ---
 # Moving users to Microsoft Edge from Internet Explorer
 
-Many modern websites have designs that are incompatible with Internet Explorer \(IE\).  When an IE user visits an incompatible public website, the user may get a message.  The message states that the website is incompatible with the browser.  After the message is displayed, the user is expected to manually switch to a modern browser.  To minimize disruptions, starting with version 84, Microsoft Edge supports a new capability that automatically redirects users.  When an IE user navigates to a website that is incompatible with IE, Windows automatically redirects the user to Microsoft Edge.  To review the websites on the list, navigate to [Need Microsoft Edge list][MicrosoftEdgeNeededgeV1].
+Many modern websites have designs that are incompatible with Internet Explorer (IE).  When an IE user visits an incompatible public website, the user may get a message.  The message states that the website is incompatible with the browser.  After the message is displayed, the user is expected to manually switch to a modern browser.  To minimize disruptions, starting with version 84, Microsoft Edge supports a new capability that automatically redirects users.  When an IE user navigates to a website that is incompatible with IE, Windows automatically redirects the user to Microsoft Edge.  To review the websites on the list, navigate to [Need Microsoft Edge list][MicrosoftEdgeNeededgeV1].
 
 This article describes the following concepts.
 

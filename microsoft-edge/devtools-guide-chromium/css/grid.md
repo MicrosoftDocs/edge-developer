@@ -58,16 +58,16 @@ The **Overlay display settings** consists of following 2 parts.
     | Line option | Details |
     |:--- |:--- |
     | **Hide line labels** | Hide the labels of the lines for each grid overlay. |
-    | **Show line numbers** | Display the numbers of the lines for each grid overlay \(selected by default\). |
+    | **Show line numbers** | Display the numbers of the lines for each grid overlay (selected by default). |
     | **Show line names** | Display the names of the lines for each grid overlay when names are provided. |
 
 *  Choose the checkbox next the following options.
 
     | Option | Details |
     |:--- |:--- |
-    | **Show track sizes**  | Display \(or hide\) the sizes of the tracks. |
-    | **Show area names** | Display \(or hide\) the names of the area, when names are provided. |
-    | **Extend grid lines** | Displays \(or hides\) the extensions of the grid dimensions along each axis.  By default, grid lines are only shown inside the element with `display: grid` or `display: inline-grid` CSS set on it. |
+    | **Show track sizes**  | Display (or hide) the sizes of the tracks. |
+    | **Show area names** | Display (or hide) the names of the area, when names are provided. |
+    | **Extend grid lines** | Displays (or hides) the extensions of the grid dimensions along each axis.  By default, grid lines are only shown inside the element with `display: grid` or `display: inline-grid` CSS set on it. |
 
 The following sections provide details for each of the **Overlay display settings**.
 
@@ -109,7 +109,7 @@ DevTools displays `[authored size]` and `[computed size]` in each line label.
 
 | Size | Details |
 |:--- |:--- |
-| **authored size** | The size defined in stylesheet \(omitted if not defined\). |
+| **authored size** | The size defined in stylesheet (omitted if not defined). |
 | **computed size** | The actual size on screen. |
 
 In the demo, the `snack-box` column sizes are defined in the `grid-template-columns:1fr 2fr;` CSS.  Therefore, the column line labels display both authored and computed sizes.
@@ -171,7 +171,7 @@ To open the color picker and customize the grid overlay color, choose the box ne
 
 ### Highlight the grid
 
-To highlight the HTML element in the **Elements** tool and scroll to it on the webpage, choose the **Show element in the Elements panel** \(![Show element in the Elements panel icon](../media/show-element-in-element-panel-icon.msft.png)\) icon.
+To highlight the HTML element in the **Elements** tool and scroll to it on the webpage, choose the **Show element in the Elements panel** (![Show element in the Elements panel icon](../media/show-element-in-element-panel-icon.msft.png)) icon.
 
 :::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Highlight the grid" lightbox="../media/grid-grid-overlays-highlight.msft.png":::
    Highlight the grid
@@ -191,7 +191,7 @@ To highlight the HTML element in the **Elements** tool and scroll to it on the w
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/grid) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/grid) and is authored by [Jecelyn Yeen][JecelynYeen] (Developer advocate, Chrome DevTools).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

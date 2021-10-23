@@ -36,7 +36,7 @@ To view and edit a JavaScript file:
 1.  Navigate to the **Sources** tool.
 1.  In the **Navigator** pane, select your file, to open it in the **Editor** pane.
 1.  In the **Editor** pane, edit your file.
-1.  Select `Ctrl`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save.  DevTools then loads the JavaScript file into the JavaScript engine of Microsoft Edge.
+1.  Select `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save.  DevTools then loads the JavaScript file into the JavaScript engine of Microsoft Edge.
 
     :::image type="complex" source="../media/javascript-sources-html-minified.msft.png" alt-text="The Editor pane" lightbox="../media/javascript-sources-html-minified.msft.png":::
        The **Editor** pane
@@ -44,7 +44,7 @@ To view and edit a JavaScript file:
 
 ## Reformat a minified JavaScript file with pretty-print
 
-To make a minified file human-readable, choose the **Format** \(![Format](../media/format-icon.msft.png)\) button at the bottom of the **Editor** pane.
+To make a minified file human-readable, choose the **Format** (![Format](../media/format-icon.msft.png)) button at the bottom of the **Editor** pane.
 
 :::image type="complex" source="../media/javascript-sources-html-non-minified.msft.png" alt-text="The Format button" lightbox="../media/javascript-sources-html-non-minified.msft.png":::
    The **Format** button
@@ -74,7 +74,7 @@ After your code is paused at a breakpoint, step through the code, one line at a 
 
 ### Step over line of code
 
-When paused on a line of code containing a function that isn't relevant to the problem you are debugging, choose the **Step over** \(![Step over](../media/step-over-icon.msft.png)\) button to run the function without stepping into it.
+When paused on a line of code containing a function that isn't relevant to the problem you are debugging, choose the **Step over** (![Step over](../media/step-over-icon.msft.png)) button to run the function without stepping into it.
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png" alt-text="Choose Step over" lightbox="../media/javascript-source-page-debugger-step-over-next-function-call.msft.png":::
    Choose **Step over**
@@ -98,7 +98,7 @@ You are paused on `A`.  After you choose **Step over**, DevTools runs all the co
 
 ### Step into line of code
 
-When paused on a line of code containing a function call that is related to the problem you are debugging, choose the **Step into** \(![Step into](../media/step-into-icon.msft.png)\) button to investigate that function further.
+When paused on a line of code containing a function call that is related to the problem you are debugging, choose the **Step into** (![Step into](../media/step-into-icon.msft.png)) button to investigate that function further.
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png" alt-text="Choose Step into" lightbox="../media/javascript-source-page-debugger-step-into-next-function-call.msft.png":::
    Choose **Step into**
@@ -122,7 +122,7 @@ You are paused on `A`.  After you choose **Step into**, DevTools runs this line 
 
 ### Step out of line of code
 
-When paused inside of a function that isn't related to the problem you are debugging, choose the **Step out** \(![Step out](../media/step-out-icon.msft.png)\) button to run the rest of the code of the function.
+When paused inside of a function that isn't related to the problem you are debugging, choose the **Step out** (![Step out](../media/step-out-icon.msft.png)) button to run the rest of the code of the function.
 
 :::image type="complex" source="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png" alt-text="Choose Step out" lightbox="../media/javascript-source-page-debugger-step-out-of-current-function.msft.png":::
    Choose **Step out**
@@ -148,9 +148,9 @@ You are paused on `A`.  After you choose **Step out**, DevTools runs the rest of
 
 When debugging a long function, there may be a lot of code that isn't related to the problem you are debugging.
 
-You may choose to step through all the lines, but that is tedious.  You may choose to set a line-of-code breakpoint on the line in which you are interested and then choose the **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\) button, but there is a faster way.
+You may choose to step through all the lines, but that is tedious.  You may choose to set a line-of-code breakpoint on the line in which you are interested and then choose the **Resume script execution** (![Resume script execution](../media/resume-script-run-icon.msft.png)) button, but there is a faster way.
 
-Hover on the line of code in which you are interested, open the contextual menu \(right-click\), and choose **Continue to here**.  DevTools runs all of the code up to that point, and then pauses on that line.
+Hover on the line of code in which you are interested, open the contextual menu (right-click), and choose **Continue to here**.  DevTools runs all of the code up to that point, and then pauses on that line.
 
 :::image type="complex" source="../media/javascript-source-page-continue-to-here.msft.png" alt-text="Choose Continue to here" lightbox="../media/javascript-source-page-continue-to-here.msft.png":::
    Choose **Continue to here**
@@ -158,7 +158,7 @@ Hover on the line of code in which you are interested, open the contextual menu 
 
 ### Restart the top function of the call stack
 
-To pause on the first line of the top function in your call stack, while paused on a line of code, hover anywhere in the **Call Stack** pane, open the contextual menu \(right-click\), and choose **Restart frame**.  The top function is the last function that was run.
+To pause on the first line of the top function in your call stack, while paused on a line of code, hover anywhere in the **Call Stack** pane, open the contextual menu (right-click), and choose **Restart frame**.  The top function is the last function that was run.
 
 The following code snippet is an example for you to step-through.
 
@@ -180,7 +180,7 @@ You are paused on `A`.  After choosing **Restart frame**, you should be paused o
 
 ### Resume script runtime
 
-To continue the runtime after a pause of your script, choose the **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\) button.  DevTools runs the script up until the next breakpoint, if any.
+To continue the runtime after a pause of your script, choose the **Resume script execution** (![Resume script execution](../media/resume-script-run-icon.msft.png)) button.  DevTools runs the script up until the next breakpoint, if any.
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png" alt-text="Choose Resume script execution" lightbox="../media/javascript-sources-get-started-js-resume-script-runtime.msft.png":::
    Choose **Resume script execution**
@@ -188,7 +188,7 @@ To continue the runtime after a pause of your script, choose the **Resume script
 
 #### Force script runtime
 
-To ignore all breakpoints and force your script to continue to run, choose and hold the **Resume script execution** \(![Resume script execution](../media/resume-script-run-icon.msft.png)\) button and then choose the **Force script execution** \(![Force script execution](../media/force-script-run-icon.msft.png)\) button.
+To ignore all breakpoints and force your script to continue to run, choose and hold the **Resume script execution** (![Resume script execution](../media/resume-script-run-icon.msft.png)) button and then choose the **Force script execution** (![Force script execution](../media/force-script-run-icon.msft.png)) button.
 
 :::image type="complex" source="../media/javascript-sources-get-started-js-force-script-runtime.msft.png" alt-text="Choose Force script execution" lightbox="../media/javascript-sources-get-started-js-force-script-runtime.msft.png":::
    Choose **Force script execution**
@@ -223,9 +223,9 @@ Use the **Watch** pane to watch the values of custom expressions.  You can watch
    The **Watch** pane
 :::image-end:::
 
-*   To create a new watch expression, select the **Add watch expression** \(![Add watch expression](../media/add-expression-icon.msft.png)\) button.
-*   To refresh the values of all existing expressions, select the **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\) button.  Values automatically refresh while stepping through code.
-*   To delete a watch expression, right-click the expression and then select **Delete watch expression** \(![Delete watch expression](../media/delete-expression-icon.msft.png)\).
+*   To create a new watch expression, select the **Add watch expression** (![Add watch expression](../media/add-expression-icon.msft.png)) button.
+*   To refresh the values of all existing expressions, select the **Refresh** (![Refresh](../media/refresh-icon.msft.png)) button.  Values automatically refresh while stepping through code.
+*   To delete a watch expression, right-click the expression and then select **Delete watch expression** (![Delete watch expression](../media/delete-expression-icon.msft.png)).
 
 ## View the call stack
 
@@ -248,7 +248,7 @@ Choose an entry to jump to the line of code where that function was called.  The
 This should be moved to an "Export debug data" H2 section when there is enough content for that, but there is not right now, so it is here.
 -->
 
-To copy the current call stack to the clipboard, hover anywhere in the **Call Stack** pane, open the contextual menu \(right-click\), and choose **Copy stack trace**.
+To copy the current call stack to the clipboard, hover anywhere in the **Call Stack** pane, open the contextual menu (right-click), and choose **Copy stack trace**.
 
 :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png" alt-text="Choose Copy Stack Trace" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-copy-stack-trace.msft.png":::
    Choose **Copy Stack Trace**
@@ -281,7 +281,7 @@ function animate() {
 To mark a script as **Library code** from the **Editor** pane:
 
 1.  Open the file.
-1.  Hover anywhere and open the contextual menu \(right-click\).
+1.  Hover anywhere and open the contextual menu (right-click).
 1.  Choose **Add script to ignore list** (previously shown as **Mark as Library code**).
 
     :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="Mark a script as Library code from the Editor pane" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
@@ -292,7 +292,7 @@ To mark a script as **Library code** from the **Editor** pane:
 
 To mark a script as **Library code** from the **Call Stack** pane:
 
-1.  Hover on a function from the script and open the contextual menu \(right-click\).
+1.  Hover on a function from the script and open the contextual menu (right-click).
 1.  Choose **Add script to ignore list** (previously shown as **Mark as Library code**).
 
     :::image type="complex" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Mark a script as Library code from the Call Stack pane" lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
