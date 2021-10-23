@@ -11,9 +11,7 @@ keywords: microsoft edge, web development, developer, tools, automation, test, p
 ---
 # Use Playwright to automate and test in Microsoft Edge
 
-[Playwright](https://playwright.dev/docs/intro) is a [Node.js](https://nodejs.org) library to automate [Chromium](https://www.chromium.org/Home), [Firefox](https://www.mozilla.org/firefox), and [WebKit](https://webkit.org) with a single API.  Playwright is built to enable cross-browser web automation that is evergreen, capable, reliable, and fast.
-
-Because [Microsoft Edge is built on the open-source Chromium web platform](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration), Playwright is also able to automate Microsoft Edge.
+[Playwright](https://playwright.dev/docs/intro) is a [Node.js](https://nodejs.org) library to automate [Chromium](https://www.chromium.org/Home), [Firefox](https://www.mozilla.org/firefox), and [WebKit](https://webkit.org) with a single API.  Playwright is built to enable cross-browser web automation that is evergreen, capable, reliable, and fast.  Because [Microsoft Edge is built on the open-source Chromium web platform](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration), Playwright is also able to automate Microsoft Edge.
 
 Playwright launches [headless browsers](https://en.wikipedia.org/wiki/Headless_browser) by default.  Headless browsers don't display a UI, so instead you must use the command line.  You can also configure Playwright to run full (non-headless) Microsoft Edge as well.
 
@@ -40,9 +38,7 @@ npx playwright install
 <!-- ====================================================================== -->
 ## First test
 
-The approach used by Playwright will be familiar to users of other browser-testing frameworks, such as [WebDriver](../webdriver-chromium/index.md) or [Puppeted](../puppeteer/index.md).
-
-You can create an instance of the browser, open a page in the browser, and then manipulate the page by using the [Playwright API](https://playwright.dev/docs/api/class-playwright).
+The approach used by Playwright will be familiar to users of other browser-testing frameworks, such as [WebDriver](../webdriver-chromium/index.md) or [Puppeteer](../puppeteer/index.md).  You can create an instance of the browser, open a page in the browser, and then manipulate the page by using the [Playwright API](https://playwright.dev/docs/api/class-playwright).
 
 [Playwright Test](https://playwright.dev/docs/intro), which is Playwright's test-runner, launches a browser and context for you. An isolated page is then passed into every test, as shown in the following test:
 
