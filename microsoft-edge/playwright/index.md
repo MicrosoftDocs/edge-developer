@@ -17,7 +17,7 @@ Playwright launches [headless browsers](https://en.wikipedia.org/wiki/Headless_b
 
 
 <!-- ====================================================================== -->
-## Writing tests
+## Install Playwright and browser binaries
 
 > [!NOTE]
 > [Playwright](https://playwright.dev/docs/intro) requires Node.js version 12 or above. Run `node -v` from the command line to make sure you have a compatible version of Node.js.  The browser binaries for Chromium, Firefox and WebKit work across Windows, macOS, and Linux. For more information, see [Playwright System Requirements](https://playwright.dev/docs/library#system-requirements).
@@ -36,11 +36,11 @@ npx playwright install
 
 
 <!-- ====================================================================== -->
-## First test
+## Run a basic test
 
 The approach used by Playwright will be familiar to users of other browser-testing frameworks, such as [WebDriver](../webdriver-chromium/index.md) or [Puppeteer](../puppeteer/index.md).  You can create an instance of the browser, open a page in the browser, and then manipulate the page by using the [Playwright API](https://playwright.dev/docs/api/class-playwright).
 
-[Playwright Test](https://playwright.dev/docs/intro), which is Playwright's test-runner, launches a browser and context for you. An isolated page is then passed into every test, as shown in the following test:
+[Playwright Test](https://playwright.dev/docs/intro), which is Playwright's test-runner, launches a browser and context for you. An isolated page is then passed into every test, as shown in the following, basic test:
 
 ```ts
 // tests/foo.spec.ts
@@ -63,7 +63,7 @@ For more information about running tests, see [Playwright > Getting started](htt
 
 
 <!-- ====================================================================== -->
-## Running tests in Microsoft Edge
+## Run tests in Microsoft Edge
 
 To run your tests in Microsoft Edge, you need to create a config file for Playwright Test, such as `playwright.config.ts`.  Inside the config file, create one project, using the Beta channel of Microsoft Edge. (Currently, there isn't a Stable channel of Microsoft Edge for Linux.)
 
@@ -86,7 +86,7 @@ const config: PlaywrightTestConfig = {
 export default config
 ```
 
-If Microsoft Edge isn't already installed on your system, install Microsoft Edge through Playwright, as follows:
+If Microsoft Edge isn't already installed on your system, install it through Playwright, as follows:
 
 ```shell
 npx playwright install msedge-beta
@@ -100,7 +100,7 @@ npx playwright test --headed
 
 
 <!-- ====================================================================== -->
-## Playwright as a library
+## Use Playwright as a library
 
 You can also consume Playwright as a library, as shown in the following code.  This approach allows you to use a different test-runner.
 
