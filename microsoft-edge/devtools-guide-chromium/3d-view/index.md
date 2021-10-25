@@ -10,14 +10,14 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # 3D View
 
-Use the **3D View** to debug your web app by navigating through the [Document Object Model (DOM)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.  Use **3D View** to do the following:
+Use the **3D View** to debug your web app by navigating through the [Document Object Model (DOM)](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) or the [z-index](https://developer.mozilla.org/docs/Web/CSS/z-index) stacking context.  Use **3D View** to do the following:
 *   [Explore the web page translated into a 3D perspective](#3d-dom).
 *   [Debug based on z-index stacking context](#z-index).
 *   [Access the Layers tool functionality from 3D View with composited layers](#composited-layers).
 *   [Clear some of the clutter on the DOM pane](#changing-your-view) or the [z-index pane](#change-the-scope-of-your-exploration).
 *   [Pick the color scheme to best debug your DOM problems](#dom-color-type) or [z-index problems](#z-index-color-type).
 
-To explore an early prototype of 3D View project and run the code yourself, navigate to [3D View Sample][GithubMicrosoftedgeDevtoolssamples3dview].
+To explore an early prototype of 3D View project and run the code yourself, navigate to [3D View Sample](https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView).
 
 On the left side, there are three panes that you can use for your debugging experience:
 *   The [Z-index](#z-index) pane.  Navigate through the different elements in the web app with the z-index context in mind.  The **Z-index** pane is the default pane.
@@ -137,10 +137,3 @@ The **Use screen texture** option adds context to your debugging experience.  It
 :::image-end:::
 
 The **Composited Layers** pane opens the elements of the **Layers** tool without changing contexts.  You can still access the details of each of the layers and have the **Slow scroll rects** and **Paint**.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[GithubMicrosoftedgeDevtoolssamples3dview]: https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView "Microsoft Edge DevTools 3D View - MicrosoftEdge/DevToolsSamples | GitHub"
-[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Document Object Model (DOM) | MDN"
-[MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"

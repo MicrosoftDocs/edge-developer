@@ -12,7 +12,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Animation in web products may be an accessibility problem.  Operating systems deal with this problem by including an option to turn off animations to avoid user confusion and potential health-related problems, such as triggering seizures.
 
-On a webpage, you can use the [prefers-reduced-motion][MDNPrefersReducedMotion] CSS media query to detect whether the user prefers to display any animations.  Then wrap your animation code in a test, to conditionally run animations.
+On a webpage, you can use the [prefers-reduced-motion](https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion) CSS media query to detect whether the user prefers to display any animations.  Then wrap your animation code in a test, to conditionally run animations.
 
 ```css
 @media (prefers-reduced-motion: reduce) {
@@ -47,9 +47,3 @@ To simulate the operating system's reduced motion setting, without having to cha
 ## See also
 
 *  [Verify that the page is usable with UI animation turned off](test-reduced-ui-motion.md) - A walkthrough using a demo page, with explanations.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsIndex]: ../index.md "Microsoft Edge Developer Tools | Microsoft Docs"
-[MDNPrefersReducedMotion]: https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion "prefers-reduced-motion | MDN"
