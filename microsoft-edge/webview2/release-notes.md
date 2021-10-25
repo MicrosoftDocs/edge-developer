@@ -29,31 +29,10 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to
 
 
 <!-- ====================================================================== -->
-## 1.0.1020.30
 
-Release Date: October 25, 2021
+<!-- ## 1.0.1053-prerelease
 
-[NuGet package for WebView2 SDK 1.0.1020.30](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1020.30)
-
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 95.1020.30 or higher.
-
-### General
-
-#### Bug Fixes
-
-*   Updated `EnsureCoreWebView2Async` to not throw exceptions when the WPF `source`<!-- assuming 'source' is a property name --> property is set.  GH 1781
-*   Fixed a bug where WebView2 crashes after interacting with multiple windows that show a download UI.  GH 1723
-
-#### Promotions
-
-The following items are now stable:
-*   [PrintToPdf API]().
-
-
-<!-- ====================================================================== -->
-## 1.0.1053-prerelease
-
-Release Date: October 25, 2021
+Release Date: October 27, 2021
 
 [NuGet package for WebView2 SDK 1.0.1053](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1053-prerelease)
 
@@ -72,9 +51,30 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 *   The real process exit code is now provided as `ExitCode` in `ICoreWebView2ProcessFailedEventArgs2` for `COREWEBVIEW2_PROCESS_FAILED_KIND_BROWSER_PROCESS_EXITED` process failure.
 *   The `--js-flags` switch is now honored in `AdditionalBrowserArguments` that are provided in `CoreWebView2EnvironmentOptions`.
-*   Fixed access to the `name` property for host objects in JavaScript.  GH 641
-*   Fix an `InvalidCastException` in the WPF control when it's implicitly initialized prior to the event loop starting.  GH 1577
+*   Fixed access to the `name` property for host objects in JavaScript. ([\#641][https://github.com/MicrosoftEdge/WebView2Feedback/issues/641]\)
+*   Fix an `InvalidCastException` in the WPF control when it's implicitly initialized prior to the event loop starting. ([\#1577][https://github.com/MicrosoftEdge/WebView2Feedback/issues/1577]\) -->
 
+
+<!-- ====================================================================== -->
+## 1.0.1020.30
+
+Release Date: October 25, 2021
+
+[NuGet package for WebView2 SDK 1.0.1020.30](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1020.30)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 95.1020.30 or higher.
+
+### General
+
+#### Bug Fixes
+
+*   Updated `EnsureCoreWebView2Async` to not throw exceptions when the WPF source property is set. ([\#1781][https://github.com/MicrosoftEdge/WebView2Feedback/issues/1781]\)
+*   Fixed a bug where WebView2 crashes after interacting with multiple windows that show a download UI. ([\#1723][https://github.com/MicrosoftEdge/WebView2Feedback/issues/1723]\)
+
+#### Promotions
+
+The following items are now stable:
+*   [PrintToPdf API](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_7?view=webview2-1.0.1020.30#printtopdf).
 
 <!-- ====================================================================== -->
 ## 1.0.992.28
@@ -661,7 +661,7 @@ This prerelease version of the WebView2 SDK requires WebView2 Runtime version 86
 
 
 <!-- ====================================================================== -->
-1.0.622.22
+## 1.0.622.22
 
 Release Date: October 19, 2020
 
@@ -797,7 +797,7 @@ This prerelease version of the WebView2 SDK requires Microsoft Edge version 84.0
 
 
 <!-- ====================================================================== -->
-0.9.488
+## 0.9.488
 
 [NuGet package for WebView2 SDK 0.9.488][NuGetGallery0.9.488]
 
