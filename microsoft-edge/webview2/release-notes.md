@@ -25,6 +25,50 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to [Switch to a preview channel to test upcoming APIs and features][SwitchToPreviewChannel].
 
+------------------------------------
+
+## 1.0.1020.30
+  
+Release Date: October 25, 2021  
+  
+[NuGet package for WebView2 SDK 1.0.1020.30][NuGetGallery1.0.1020.30]  
+  
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 95.1020.30 or higher.  
+
+### General
+
+#### Bug Fixes
+  
+*   Updated EnsureCoreWebView2Async to not throw exceptions when WPF source property is set. GH 1781
+*   Fixed bug where webview2 crashes after interaction with multiple windows showing download UI. GH 1723
+
+#### Promotions
+The following items are now stable:
+*   [PrintToPdf API](). 
+
+## 1.0.1053-prerelease
+  
+Release Date: October 25, 2021  
+  
+[NuGet package for WebView2 SDK 1.0.1053][NuGetGallery1.0.1053]  
+  
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 96.0.1053.0 or higher.  
+
+### General
+*   General reliability improvements.  
+
+#### Experimental Features
+*   [Download Positioning and Anchoring API](). 
+*   [HTTP Authentication API]().
+
+#### Bug Fixes
+*   Real process exit code is provided as ExitCode in ICoreWebView2ProcessFailedEventArgs2 for 
+COREWEBVIEW2_PROCESS_FAILED_KIND_BROWSER_PROCESS_EXITED process failure  
+*   Now honor --js-flags switch in AdditionalBrowserArguments provided in CoreWebView2EnvironmentOptions  
+*   Fixed access to `name` property for host objects in JavaScript. GH 641  
+*   Fix InvalidCastException in WPF control when it's implicitly initialized prior to the event loop starting.  GH 1577
+
+------------------------------------
 ## 1.0.992.28
 
 Release Date: September 27, 2021
@@ -1172,6 +1216,7 @@ Initial developer preview release.
 [GithubMicrosoftedgeWebviewfeedbackIssue1061]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1061 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1061"
 [GithubMicrosoftedgeWebviewfeedbackIssue730]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/730 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 730"
 [GithubMicrosoftedgeWebviewfeedbackIssue1548]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1548 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1548"
+[GithubMicrosoftedgeWebviewfeedbackIssue1577]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1577 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1577"
 [WebView2UDFAnnouncement]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1410 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1410"
 
 [MicrosoftDevblogDotnetAnnouncingGeneralAvailabilityForMicrosoftEdgeWebview2ForNetFixedDistributionMethod]: https://devblogs.microsoft.com/dotnet/announcing-general-availability-for-microsoft-edge-webview2-for-net-and-fixed-distribution-method "Announcing General Availability for Microsoft Edge WebView2 for .NET and Fixed Distribution Method | .NET Blog"
