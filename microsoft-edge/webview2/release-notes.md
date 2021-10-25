@@ -68,8 +68,8 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 #### Bug Fixes
 
-*   Updated `EnsureCoreWebView2Async` to not throw exceptions when the WPF source property is set. ([\#1781][https://github.com/MicrosoftEdge/WebView2Feedback/issues/1781]\)
-*   Fixed a bug where WebView2 crashes after interacting with multiple windows that show a download UI. ([\#1723][https://github.com/MicrosoftEdge/WebView2Feedback/issues/1723]\)
+*   Updated `EnsureCoreWebView2Async` to not throw exceptions when the WPF source property is set. ([\#1781](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1781))
+*   Fixed a bug where WebView2 crashes after interacting with multiple windows that show a download UI. ([\#1723](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1723))
 
 #### Promotions
 
