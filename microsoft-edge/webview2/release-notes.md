@@ -74,7 +74,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 #### Promotions
 
 The following items are now stable:
-*   [PrintToPdf API](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_7?view=webview2-1.0.1020.30#printtopdf).
+*   [PrintToPdf API](/microsoft-edge/webview2/reference/win32/icorewebview2_7?view=webview2-1.0.1020.30&preserve-view=true#printtopdf).
 
 <!-- ====================================================================== -->
 ## 1.0.992.28
