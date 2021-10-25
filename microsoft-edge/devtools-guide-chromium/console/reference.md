@@ -23,9 +23,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Console features reference
 
-This article is a reference of features related to the Microsoft Edge DevTools Console.  It assumes you're already familiar with using the Console to view logged messages and run JavaScript.  If not, navigate to [Get started with running JavaScript in the Console][DevtoolsConsoleConsoleJavascript] and [Get started with logging messages in the Console][DevtoolsConsoleConsoleLog].
+This article is a reference of features related to the Microsoft Edge DevTools Console.  It assumes you're already familiar with using the Console to view logged messages and run JavaScript.  If not, navigate to [Get started with running JavaScript in the Console](console-javascript.md) and [Get started with logging messages in the Console](console-log.md).
 
-If you're looking for the API reference on functions like `console.log()`, navigate to [Console API Reference][DevToolsConsoleApi].  For the reference on functions like `monitorEvents()`, navigate to [Console Utilities API Reference][DevToolsConsoleUtilities].
+If you're looking for the API reference on functions like `console.log()`, navigate to [Console API Reference](api.md).  For the reference on functions like `monitorEvents()`, navigate to [Console Utilities API Reference](utilities.md).
 
 ## Open the Console
 
@@ -39,7 +39,7 @@ Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macO
    The **Console** tool
 :::image-end:::
 
-To open the **Console** tool from the [Command Menu][DevtoolsCommandMenuIndex], type `Console` and then run the **Show Console** command that has the **Panel** badge next to it.
+To open the **Console** tool from the [Command Menu](../command-menu/index.md), type `Console` and then run the **Show Console** command that has the **Panel** badge next to it.
 
 :::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Run the command to display the Console tool" lightbox="../media/console-command-menu-show-console.msft.png":::
    Run the command to display the **Console** tool
@@ -59,7 +59,7 @@ The Drawer pops up at the bottom of your DevTools window, with the **Console** t
    The **Console** tool in the **Drawer**
 :::image-end:::
 
-To open the **Console** tool from the [Command Menu][DevtoolsCommandMenuIndex], type `Console` and then run the **Show Console** command that has the **Drawer** badge next to it.
+To open the **Console** tool from the [Command Menu](../command-menu/index.md), type `Console` and then run the **Show Console** command that has the **Drawer** badge next to it.
 
 :::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Run the command to display the **Console** tool in the Drawer" lightbox="../media/console-command-menu-show-console.msft.png":::
    Run the command to display the **Console** tool in the **Drawer**
@@ -94,7 +94,7 @@ To display the **Sidebar**, choose **Show console sidebar** \(![Show console sid
 
 ## View messages
 
-This section contains features that change how messages are presented in the Console.  For a hands-on walkthrough, navigate to [View messages][DevtoolsConsoleIndexInspectFilterInformationOnCurrentWebpage].
+This section contains features that change how messages are presented in the Console.  For a hands-on walkthrough, navigate to [View messages](index.md#inspect-and-filter-information-on-the-current-webpage).
 
 ### Turn off message grouping
 
@@ -158,7 +158,7 @@ DevTools assigns each `console.*` method one of the four severity levels.
 *   `Verbose`
 *   `Warning`
 
-For example, `console.log()` is in the `Info` group, but `console.error()` is in the `Error` group.  The [Console API Reference][DevToolsConsoleApi] describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  You may hide any level of messages that you're not interested in.  For example, if you're only interested in `Error` messages, you may hide the other three groups.
+For example, `console.log()` is in the `Info` group, but `console.error()` is in the `Error` group.  The [Console API Reference](api.md) describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  You may hide any level of messages that you're not interested in.  For example, if you're only interested in `Error` messages, you may hide the other three groups.
 
 To filter the messages, choose the **Log Levels** dropdown and choose `Verbose`, `Info`, `Warning`, or `Error`.
 
@@ -210,7 +210,7 @@ Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** textbox to 
 
 ## Run JavaScript
 
-This section contains features related to running JavaScript in the **Console**.  For a hands-on walkthrough, navigate to [Run JavaScript][DevtoolsConsoleConsoleJavascript].
+This section contains features related to running JavaScript in the **Console**.  For a hands-on walkthrough, navigate to [Run JavaScript](console-javascript.md).
 
 ### Rerun expressions from history
 
@@ -218,7 +218,7 @@ Select `Up Arrow` to cycle through the history of JavaScript expressions that yo
 
 ### Watch the value of an expression in real time with Live Expressions
 
-If you find yourself typing the same JavaScript expression in the **Console** repeatedly, you may find it easier to create a **Live Expression**.  With **Live Expressions**, you type an expression once and then pin it to the top of your **Console**.  The value of the expression updates in near real time.  Navigate to [Watch JavaScript Expression Values In Real-Time With Live Expressions][DevToolsConsoleLiveExpressions].
+If you find yourself typing the same JavaScript expression in the **Console** repeatedly, you may find it easier to create a **Live Expression**.  With **Live Expressions**, you type an expression once and then pin it to the top of your **Console**.  The value of the expression updates in near real time.  Navigate to [Watch JavaScript Expression Values In Real-Time With Live Expressions](live-expressions.md).
 
 ### Turn off Eager Evaluation
 
@@ -240,7 +240,7 @@ As you type out an expression, the autocomplete popup window for the **Console**
 
 ### Choose JavaScript context
 
-The default option for the **JavaScript Context** dropdown is **top**, which represents the [browsing context][MdnDocsGlossaryBrowsingContext] of the main webpage.
+The default option for the **JavaScript Context** dropdown is **top**, which represents the [browsing context](https://developer.mozilla.org/docs/Glossary/Browsing_context) of the main webpage.
 
 :::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="The JavaScript Context dropdown" lightbox="../media/console-dom-level-top.msft.png":::
    The **JavaScript Context** dropdown
@@ -264,26 +264,9 @@ To clear the **Console**, complete any of the following workflows.
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"
-[DevtoolsConsoleConsoleLog]: ./console-log.md "Log messages in the Console tool | Microsoft Docs"
-[DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Console as a JavaScript environment | Microsoft Docs"
-[DevtoolsConsoleIndex]: .index.md "Use the Console | Microsoft Docs"
-[DevtoolsConsoleIndexInspectFilterInformationOnCurrentWebpage]: ./index.md#inspect-and-filter-information-on-the-current-webpage "Inspect and filter information on the current webpage | Microsoft Docs"
-[DevtoolsConsoleLiveExpressions]: ./live-expressions.md "Monitor changes in JavaScript using Live Expressions | Microsoft Docs"
-[DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"
-
-[MdnDocsGlossaryBrowsingContext]: https://developer.mozilla.org/docs/Glossary/Browsing_context "Browsing context | MDN"
-
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) \(Technical Writer, Chrome DevTools \& Lighthouse\).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

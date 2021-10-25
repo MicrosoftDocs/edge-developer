@@ -20,7 +20,7 @@ This analysis finds that the lack of indication of keyboard focus in the links o
 
 To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue link on the sidebar navigation menu, and then view the DOM tree and CSS for the `a` element that defines that link.
 
-1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  Select the **Inspect** \(![Inspect icon](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
@@ -52,8 +52,3 @@ Also, notice that the links have a CSS property setting of `outline: none`.  Thi
 
 *  [Track which element has focus](focus.md)
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

@@ -47,14 +47,14 @@ You will also have a working website. You can use the site to host your resume o
 
 Before attempting this tutorial, complete the following prerequisites:
 
-*   If you are unfamiliar with HTML, read [Getting Started with HTML][MDNGettingStartedHtml].
-*   Download the [Microsoft Edge][MicrosoftEdgeInsider] web browser.  This tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.
+*   If you are unfamiliar with HTML, read [Getting Started with HTML](https://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/Getting_started).
+*   Download the [Microsoft Edge](https://www.microsoftedgeinsider.com) web browser.  This tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.
 
 ## Set up your code
 
 You are going to build a site in the Glitch online code editor.
 
-1.  Open the [source code][GlitchAlluringShockIndex]. This tab is called the **editor tab** throughout this tutorial.
+1.  Open the [source code](https://glitch.com/edit/#!/alluring-shock?path=index.html). This tab is called the **editor tab** throughout this tutorial.
 
     :::image type="complex" source="media/beginners-html-setup1.msft.png" alt-text="The editor tab" lightbox="media/beginners-html-setup1.msft.png":::
        The editor tab
@@ -301,33 +301,15 @@ You're almost done. You made a few changes to the page in DevTools, but they're 
 
 ## Next steps
 
-*   Complete the next tutorial in this series, [Get Started with CSS][DevToolsBeginnersCss], to learn how to style your page and experiment with style changes in Microsoft Edge DevTools.
-*   Read [Introduction to the DOM][MDNIntroductionDom] to learn more about the DOM.
-*   Check out a course like [Introduction to Web Development][CourseraIntroductionToWebDevelopment] for more hands-on web development experience.
+*   Complete the next tutorial in this series, [Get Started with CSS](css.md), to learn how to style your page and experiment with style changes in Microsoft Edge DevTools.
+*   Read [Introduction to the DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction) to learn more about the DOM.
+*   Check out a course like [Introduction to Web Development](https://www.coursera.org/learn/web-development) for more hands-on web development experience.
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevToolsBeginnersCss]: ./css.md "DevTools For Beginners: Get Started with CSS | Microsoft Docs"
-
-[MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"
-
-[CourseraIntroductionToWebDevelopment]: https://www.coursera.org/learn/web-development "Introduction to Web Development | Coursera"
-
-[GlitchAlluringShockIndex]: https://glitch.com/edit/#!/alluring-shock?path=index.html "index.html - alluring-shock | Glitch"
-
-[MDNGettingStartedHtml]: https://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/Getting_started "Getting started with HTML | MDN"
-[MDNIntroductionDom]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introduction to the DOM | MDN"
-
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page was found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/html) and was authored by [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/html) and is authored by [Katherine Jackson](https://developers.google.com/web/resources/contributors#katherine-jackson) (Technical Writer Intern, Chrome DevTools).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[KatherineJackson]: https://developers.google.com/web/resources/contributors
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
