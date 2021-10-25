@@ -381,16 +381,16 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
 1. In the `Form1.cs` file, update `InitializeAsync` to match the following code snippet.
 
-```csharp
-async void InitializeAsync()
-{
-    await webView.EnsureCoreWebView2Async(null);
-    webView.CoreWebView2.WebMessageReceived += UpdateAddressBar;
+    ```csharp
+    async void InitializeAsync()
+    {
+        await webView.EnsureCoreWebView2Async(null);
+        webView.CoreWebView2.WebMessageReceived += UpdateAddressBar;
 
-    await webView.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync("window.chrome.webview.postMessage(window.document.URL);");
-    await webView.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync("window.chrome.webview.addEventListener(\'message\', event => alert(event.data));");
-}
-```
+        await webView.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync("window.chrome.webview.postMessage(window.document.URL);");
+        await webView.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync("window.chrome.webview.addEventListener(\'message\', event => alert(event.data));");
+    }
+    ```
 
 1. Select **Save All (Ctrl+Shift+S)** to save the project.
 
