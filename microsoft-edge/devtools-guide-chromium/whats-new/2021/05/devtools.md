@@ -17,6 +17,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 > [Microsoft Edge | State of the Platform][YoutubeEdgeStateOfThePlatform] - Microsoft Edge brings a compelling and consistent platform with tools for developers.  As our legacy browsers phase out of support, Edge will soon be the only supported browser from Microsoft on Windows 10 or later.  Join us to learn about the latest across the Edge platform, tools, and web apps.
 
 
+<!-- ====================================================================== -->
 ## The Close button is no longer hidden when DevTools is narrow
 
 <!-- Title: DevTools is now easier to close -->
@@ -29,6 +30,7 @@ In Microsoft Edge version 91 or earlier, the **Close** button to close DevTools 
 :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## Add tools quickly with the new More Tools button
 
 <!-- Title: Add tools quickly with the new More Tools button -->
@@ -49,6 +51,7 @@ The **More Tools** menu was available as an experiment in Microsoft Edge version
 :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## Improvements for hovering, selecting, and closing tools
 
 <!-- Title: Improvements to tab interactions -->
@@ -85,6 +88,7 @@ These improvements are especially relevant for users of localized DevTools, in w
 We also made it easier to re-add a tool that you closed by adding a [More Tools menu](#add-tools-quickly-with-the-new-more-tools-button) to the main toolbar and drawer toolbar.
 
 
+<!-- ====================================================================== -->
 ## Better support for screen readers in the Console
 
 <!-- Title: Better screen reader support in the Console -->
@@ -106,6 +110,7 @@ Prior to Microsoft Edge version 92, in the **Console**, assistive technologies s
 :::row-end:::
 
 
+<!-- ====================================================================== -->
 ## Source Order Viewer
 
 <!--  Title: Source Order Viewer -->
@@ -124,6 +129,7 @@ For more information, navigate to [Test keyboard support using the Source Order 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1094406][CR1094406].
 
 
+<!-- ====================================================================== -->
 ## User-Agent Client Hints for devices in the Network conditions tab
 
 <!--  Title: User-Agent Client Hints -->
@@ -140,6 +146,7 @@ For more information, navigate to [User-Agent Client Hints](../../../../web-plat
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1174299][CR1174299].
 
 
+<!-- ====================================================================== -->
 ## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.8
 
 The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extension version 1.1.8 for Microsoft Visual Studio Code has the following changes since the previous release.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.8, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].
@@ -162,6 +169,7 @@ Version 1.1.8 of the [Microsoft Edge Developer Tools for Visual Studio Code][Vis
 For more information, navigate to [Using the tools][GithubIoDevToolsUsing].
 
 
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
@@ -273,6 +281,7 @@ In the **Performance** tool, DevTools now displays **Compute Intersections** in 
 For more about intersection observers, navigate to [Trust is good, observation is better: Intersection Observer v2][WebDevIntersectionObserverV2].  For information about using the flame chart, navigate to [Analyze a performance recording][DevtoolsEvaluatePerfRefAnalyzeAPerfRecording].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1199137][CR1199137].
 
 
+<!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.

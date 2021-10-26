@@ -14,6 +14,8 @@ Sometimes you need to try out some possible fixes for a webpage, but you don't h
 
 You may now take a resource of the current webpage and store it locally.  When you refresh the webpage, the browser does not load the resource from the server.  Instead the browser replaces it with your local copy of the resource.
 
+
+<!-- ====================================================================== -->
 ## Setting up your local folder to store Overrides
 
 1.  Navigate to the **Sources** tool.
@@ -51,6 +53,8 @@ You may now take a resource of the current webpage and store it locally.  When y
        Successful setup of an overrides folder
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Adding files to your Overrides folder
 
 To add files to your overrides folder, open the **Elements** tool and inspect the webpage.  To edit, choose the name of the CSS file in the **Styles** inspector.
@@ -109,6 +113,8 @@ The file is stored in your overrides folder.  Verify that DevTools create a fold
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Two-way interaction of overrides
 
 Use the editor provided with the **Sources** tool of DevTools or any editor you want to change the files.  Changes are synced across all the products that access the files in the overrides folder.

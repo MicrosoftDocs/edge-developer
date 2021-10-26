@@ -27,6 +27,8 @@ This guide teaches you how to use Microsoft Edge DevTools to view the resources 
 
 This guide assumes that you are familiar with the basics of [web development][MDNLearnWebDevelopment] and [Microsoft Edge DevTools][MicrosoftEdgeDevTools].
 
+
+<!-- ====================================================================== -->
 ## Open resources
 
 When you know the name of the resource that you want to inspect, the **Command Menu** provides a fast way of opening the resource.
@@ -59,6 +61,8 @@ The [Browse resources](#browse-resources) section below shows you how to view re
    **Reveal in Network panel**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Browse resources
 
 ### Browse resources in the Network panel

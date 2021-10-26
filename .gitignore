@@ -3,6 +3,7 @@ obj/
 _site/
 .DS_Store
 .optemp/
+.vscode/
 _themes*/
 .idea
 

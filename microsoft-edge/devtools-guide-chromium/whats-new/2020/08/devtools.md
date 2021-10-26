@@ -23,6 +23,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # What's New In DevTools (Microsoft Edge 86)
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Microsoft Edge DevTools team
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
@@ -175,6 +177,8 @@ The issue is now fixed in all versions of Microsoft Edge.
 
 Chromium issue: [#1103316][CR1103316]
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
@@ -446,6 +450,8 @@ Choose the **Clear** button to remove any inputted text.
 
 Chromium issue: [#1067184][CR1067184]
 
+
+<!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.

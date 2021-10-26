@@ -34,6 +34,8 @@ Keep your client-side code readable and debuggable even after you combine, minif
 <!--todo: add link to preprocessors capable of producing Source Maps when section is available -->
 <!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->
 
+
+<!-- ====================================================================== -->
 ## Get started with preprocessors
 
 This article explains how to interact with JavaScript Source Maps in the DevTools Sources tool.  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->
@@ -41,6 +43,8 @@ This article explains how to interact with JavaScript Source Maps in the DevTool
 <!--todo: add link to Set Up CSS & JS Preprocessors when section is available -->
 <!--[]: /web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content ""  -->
 
+
+<!-- ====================================================================== -->
 ## Use a supported preprocessor
 
 Use a minifier that is capable of creating source maps.  <!--For the most popular options, navigate to preprocessor support section.  -->  For an extended view, navigate to [Source maps: languages, tools and other info][GitHubWikiSourceMapsLanguagesTools] wiki page.
@@ -54,6 +58,8 @@ The following types of preprocessors are commonly used in combination with Sourc
 *   Compilers \([Closure Compiler][GitHubGoogleClosureCompiler], [TypeScript][TypeScriptMain], [CoffeeScript][CoffeeScriptMain], [Dart][DartMain]\)
 *   Minifiers \([UglifyJS][GitHubMishooUglifyJS]\)
 
+
+<!-- ====================================================================== -->
 ## Source Maps in DevTools Sources tool
 
 Source Maps from preprocessors cause DevTools to load your original files in addition to your minified ones.  You then use the originals to set breakpoints and step through code.  Meanwhile, Microsoft Edge is actually running your minified code.  The running of the code gives you the illusion of running a development site in production.
@@ -78,6 +84,8 @@ When debugging your code and Source Maps enabled, Source Maps show in two places
 <!--todo: add link to debugging your code when section is available -->
 <!--[DebugBreakpointsStepCode]: ../debug/breakpoints/step-code.md ""  -->
 
+
+<!-- ====================================================================== -->
 ## @sourceURL and displayName
 
 While not part of the Source Map spec, the `@sourceURL` allows you to make development much easier when working with evals.  The helper is displayed similar to the `//# sourceMappingURL` property and is mentioned in the Source Map V3 specifications.
