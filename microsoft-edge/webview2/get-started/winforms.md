@@ -381,7 +381,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
 1. Press **F5** to build and run the project.
 
-Now the address bar displays the URI in the WebView2 control.  When you successfully navigate to a new URL, WebView alerts the user of the URL displayed in the WebView.
+Now the address bar displays the URI in the WebView2 control.  When you successfully go to a new URL, WebView alerts the user of the URL displayed in the WebView.
 
 :::image type="content" source="./media/winforms-final-app.png" alt-text="Final app" lightbox="./media/winforms-final-app.png":::
 
