@@ -12,11 +12,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 The **Console** tool of the DevTools helps you with several tasks.  The following list includes some of the tasks.
 
-*   Find out why something isn't working in the current project and [track down problems][DevtoolsConsoleConsoleDebugJavascript].
-*   [Get information about the web project][DevtoolsConsoleConsoleFilters] in the browser as log messages.
-*   [Log information][DevtoolsConsoleConsoleLog] in scripts for debugging purposes.
-*   [Try JavaScript expressions][DevtoolsConsoleConsoleJavascript] live in a [REPL][WikiReadEvalPrintLoop] environment.
-*   [Interact with the web project in the browser][DevtoolsConsoleConsoleDomInteraction] using JavaScript.
+*   Find out why something isn't working in the current project and [track down problems](console-debug-javascript.md).
+*   [Get information about the web project](console-filters.md) in the browser as log messages.
+*   [Log information](console-log.md) in scripts for debugging purposes.
+*   [Try JavaScript expressions](console-javascript.md) live in a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.
+*   [Interact with the web project in the browser](console-dom-interaction.md) using JavaScript.
 
 The **Console** is a great companion tool to use with others tools.  The **Console** provides a powerful way to script functionality, inspect, and manipulate the current webpage using JavaScript.
 
@@ -35,15 +35,18 @@ The **Console** is a great companion tool to use with others tools.  The **Conso
 
 The fastest way to directly open the **Console** is to select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
+
+<!-- ====================================================================== -->
 ## Error reports and the Console
 
-The **Console** is the default place where JavaScript and connectivity errors are reported.  If any errors occur, the **Issues counter** is displayed next to the **Settings** icon in DevTools that provides the number of errors and warnings.  Select the **Issues counter** to open the **Issues** tool and display the problem.  For more information, navigate to [Fixing JavaScript errors that are reported in the Console][DevtoolsConsoleConsoleDebugJavascript].
+The **Console** is the default place where JavaScript and connectivity errors are reported.  If any errors occur, the **Issues counter** is displayed next to the **Settings** icon in DevTools that provides the number of errors and warnings.  Select the **Issues counter** to open the **Issues** tool and display the problem.  For more information, navigate to [Fixing JavaScript errors that are reported in the Console](console-debug-javascript.md).
 
 :::image type="complex" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools gives detailed information about the error in the Console" lightbox="../media/console-debug-displays-error.msft.png":::
    DevTools gives detailed information about the error in the **Console**
 :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## Look up error messages on the web from the Console
 
 Search the web for your **Console** error messages, right from within DevTools.  In the **Console**, many error messages have a **Search for this message on the Web** button, shown as a magnifying glass.  When you select the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error message.
@@ -61,22 +64,25 @@ For a `Failed to load resource` error, the new tab contains web search results f
 This feature was introduced in Microsoft Edge version 94.
 
 
+<!-- ====================================================================== -->
 ## Inspect and filter information on the current webpage
 
-When you open DevTools on a webpage, there may be an overwhelming amount of information in the **Console**.  The amount of information becomes a problem when you need to identify important information.  To view the important information that needs action, use the [Issues][DevtoolsIssuesIndex] tool in DevTools.
+When you open DevTools on a webpage, there may be an overwhelming amount of information in the **Console**.  The amount of information becomes a problem when you need to identify important information.  To view the important information that needs action, use the [Issues](../issues/index.md) tool in DevTools.
 
-Issues are gradually being moved from the **Console** to the **Issues** tool.  However, there's still a lot of information in the **Console**, which is why it's a good idea to know about the automated log and filter options in the **Console**.  For more information, navigate to [Filter Console messages][DevtoolsConsoleConsoleFilters].
+Issues are gradually being moved from the **Console** to the **Issues** tool.  However, there's still a lot of information in the **Console**, which is why it's a good idea to know about the automated log and filter options in the **Console**.  For more information, navigate to [Filter Console messages](console-filters.md).
 
 :::image type="complex" source="../media/console-intro-noise.msft.png" alt-text="DevTools with a Console full of messages" lightbox="../media/console-intro-noise.msft.png":::
    DevTools with a **Console** full of messages
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Log information to display in the Console
 
-The most popular use case for the **Console** is logging information from your scripts using the `console.log()` method or other similar methods.  To try it, complete the following actions.
+The most popular use case for the **Console** is logging information from your scripts using the `console.log()` method or other similar methods.  To try it:
 
 1.  To open the **Console**, select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
-1.  Navigate to [Console messages examples: log, info, error and warn][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml], or copy and run the following code snippet in the **Console**.
+1.  Navigate to [Console messages examples: log, info, error and warn](https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html), or copy and run the following code snippet in the **Console**.
 
     ```javascript
     console.log('This is a log message');
@@ -97,11 +103,13 @@ The most popular use case for the **Console** is logging information from your s
        **Console** full of messages caused by demo code
     :::image-end:::
 
-Many useful methods are available when you work with the **Console**.  For more information, navigate to [Log messages in the Console tool][DevtoolsConsoleConsoleLog].
+Many useful methods are available when you work with the **Console**.  For more information, navigate to [Log messages in the Console tool](console-log.md).
 
+
+<!-- ====================================================================== -->
 ## Try your JavaScript live in the Console
 
-The **Console** isn't only a place to log information.  The **Console** is a [REPL][WikiReadEvalPrintLoop] environment.  When you write any JavaScript in the **Console**, the code runs immediately.  You may find it useful to test some new JavaScript features or to do some quick calculations.  Also, you get all of the features you expect from a modern editing environment, such as autocompletion, syntax highlighting, and history.  To try it, complete the following actions.
+The **Console** isn't only a place to log information.  The **Console** is a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  When you write any JavaScript in the **Console**, the code runs immediately.  You may find it useful to test some new JavaScript features or to do some quick calculations.  Also, you get all of the features you expect from a modern editing environment, such as autocompletion, syntax highlighting, and history.  To try it, complete the following actions.
 
 1.  Navigate to the **Console**.
 1.  Type `2 + 2`.
@@ -128,15 +136,17 @@ By default, you run JavaScript code on a single line.  To run a line, type your 
 1.  Select `tab` to get `document.body`.
 1.  Type another `.` to display the complete list of properties and methods available on the body of the current webpage.
 
-For more information about all the ways to work with **Console**, navigate to [Console as a JavaScript environment][DevtoolsConsoleConsoleJavascript].
+For more information about all the ways to work with **Console**, navigate to [Console as a JavaScript environment](console-javascript.md).
 
 :::image type="complex" source="../media/console-javascript-autocomplete.msft.png" alt-text="Console autocompletion of JavaScript expressions" lightbox="../media/console-javascript-autocomplete.msft.png":::
    **Console** autocompletion of JavaScript expressions
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Interact with the current webpage in the browser
 
-The **Console** has access to the [Window][MdnDocsWebApiWindow] object of the browser.  You can write scripts that interact with the current webpage.  To try it, complete the following actions.
+The **Console** has access to the [Window](https://developer.mozilla.org/docs/Web/API/Window) object of the browser.  You can write scripts that interact with the current webpage.  To try it, complete the following actions.
 
 1.  Open the **Console**.
 1.  Copy and paste the following code snippet.
@@ -162,7 +172,7 @@ Instead of only reading from the webpage, you can also change it.  To try changi
    Write text to the DOM in the **Console**
 :::image-end:::
 
-You changed the main heading of the webpage to **Rocking the Console**.  The **Console Utility** methods make it easy to access and manipulate the current webpage.  For more information, navigate to [Console Utilities API reference][DevtoolsConsoleUtilities].  For example, to add a green border around all the links in the current webpage, complete the following actions.
+You changed the main heading of the webpage to **Rocking the Console**.  The **Console Utility** methods make it easy to access and manipulate the current webpage.  For more information, navigate to [Console Utilities API reference](utilities.md).  For example, to add a green border around all the links in the current webpage, complete the following actions.
 
 1.  Open the **Console**.
 1.  Copy and paste the following code snippet.
@@ -179,24 +189,7 @@ You changed the main heading of the webpage to **Rocking the Console**.  The **C
 <!-- ====================================================================== -->
 ## See also
 
-*  [Use the Console to interact with the DOM][DevtoolsConsoleConsoleDomInteraction].
-*  [Console features reference][DevtoolsConsoleReference]
-*  [Console Utilities API reference][DevtoolsConsoleUtilities]
-*  [Console API reference][DevtoolsConsoleApi]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"
-[DevtoolsConsoleConsoleDebugJavascript]: ./console-debug-javascript.md "Fixing JavaScript errors that are reported in the Console | Microsoft Docs"
-[DevtoolsConsoleConsoleDomInteraction]: ./console-dom-interaction.md "Use the Console to interact with the DOM | Microsoft Docs"
-[DevtoolsConsoleConsoleFilters]: ./console-filters.md "Filter Console messages | Microsoft Docs"
-[DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Console as a JavaScript environment | Microsoft Docs"
-[DevtoolsConsoleConsoleLog]: ./console-log.md "Log messages in the Console tool | Microsoft Docs"
-[DevtoolsConsoleReference]: ./reference.md "Console features reference | Microsoft Docs"
-[DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"
-[DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
-<!-- external links -->
-[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingDemoHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html "Console messages examples: log, info, error, and warn | GitHub"
-[MdnDocsWebApiWindow]: https://developer.mozilla.org/docs/Web/API/Window "Window | MDN"
-[WikiReadEvalPrintLoop]: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop "Read–eval–print loop | Wikipedia"
+*  [Use the Console to interact with the DOM](console-dom-interaction.md).
+*  [Console features reference](reference.md)
+*  [Console Utilities API reference](utilities.md)
+*  [Console API reference](api.md)

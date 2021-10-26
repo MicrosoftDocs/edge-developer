@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view and change [IndexedDB][MDNIndexedDBAPI] data.  It assumes you are familiar with DevTools.  It also assumes you are familiar with IndexedDB.  If not, navigate to [Using IndexedDB][MDNUsingIndexedDB].
 
+
+<!-- ====================================================================== -->
 ## View IndexedDB data
 
 1.  Choose the **Application** tab to open the **Application** tool.  The **Manifest** pane usually opens by default.
@@ -76,6 +78,8 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
        Sort an object store by an index
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Refresh IndexedDB data
 
 IndexedDB values in the **Application** tool do not update in real-time.  Choose **Refresh** (![Refresh](../media/reload-icon.msft.png)) when viewing an object store to refresh the data, or view a database and choose **Refresh database** to refresh all data.
@@ -84,6 +88,8 @@ IndexedDB values in the **Application** tool do not update in real-time.  Choose
    View a database
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Edit IndexedDB data
 
 IndexedDB keys and values are not editable from the **Application** tool.  Since DevTools has access to page context, however, you may run JavaScript code within DevTools to edit IndexedDB data.
@@ -96,6 +102,8 @@ IndexedDB keys and values are not editable from the **Application** tool.  Since
    Use a Snippet to interact with IndexedDB
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Delete IndexedDB data
 
 ### Delete an IndexedDB key-value pair

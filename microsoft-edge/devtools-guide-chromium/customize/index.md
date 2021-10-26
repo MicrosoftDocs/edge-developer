@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This page lists the ways to customize Microsoft Edge DevTools.
 
+
+<!-- ====================================================================== -->
 ## Settings
 
 **Settings** > **Preferences** contains many options for customizing DevTools.
@@ -38,6 +40,8 @@ There are two ways to open Settings.
    **Settings**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Drawer
 
 The **Drawer** is a second panel where you can choose which tools to display.
@@ -62,6 +66,8 @@ You can move tools between the main panel and the drawer.
        Move tool from the main panel to the **Drawer**
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Reorder tools
 
 Select and drag a tool to change the ordering.  Your custom tool order persists across DevTools sessions.
@@ -73,6 +79,8 @@ Select and drag a tool to change the ordering.  Your custom tool order persists 
    Custom order of Devtools in a panel
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Open and close tools
 
 To keep the DevTools interface streamlined, many of the tools aren't opened by default. To open a tool in the main panel or the **Drawer**, select the **More Tools** (![More Tools](../media/open-tab-icon.png)) button to the right of the tabs, and then select a tool from the list.
@@ -87,6 +95,8 @@ To close a tool, select the **Close** (![Close Tool](../media/close-tab-icon.png
    The tab's **Close** button
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Change DevTools placement
 
 Navigate to [Change DevTools placement (Undock, Dock to bottom, Dock to left)][DevToolsPlacement].
@@ -95,6 +105,8 @@ Navigate to [Change DevTools placement (Undock, Dock to bottom, Dock to left)][D
    Undocked DevTools
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Color themes
 
 Navigate to [Apply color themes to DevTools][Theme].
@@ -103,6 +115,8 @@ Navigate to [Apply color themes to DevTools][Theme].
    Selecting a different color theme
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Restore default settings
 
 To restore the default theme, placement, tools order, and any other customized settings, select **Settings** > **Preferences** > **Restore defaults and refresh**.

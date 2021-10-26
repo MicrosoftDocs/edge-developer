@@ -27,6 +27,8 @@ This article describes common terms used in memory analysis, and is applicable t
 
 The terms and notions described here refer to the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots].  If you have ever worked with either the Java, .NET, or some other memory profiler, then this article may be a refresher.
 
+
+<!-- ====================================================================== -->
 ## Object sizes
 
 Think of memory as a graph with primitive types (like numbers and strings) and objects (associative arrays).  It may display as a graph with many interconnected points such as following figure.
@@ -80,6 +82,8 @@ Whatever is not reachable from the root gets garbage collected.
 > [!NOTE]
 > Both the [Shallow size](#shallow-size) and [Retained size](#retained-size) columns represent data in bytes.
 
+
+<!-- ====================================================================== -->
 ## Objects retaining tree
 
 The heap is a network of interconnected objects.  In the mathematical world, this structure is called a **graph** or memory graph.  A graph is constructed from **nodes** connected by means of **edges**, both of which are given labels.
@@ -93,6 +97,8 @@ Learn [how to record a profile using the Heap Profiler][DevtoolsMemoryProblemsHe
    Distance from root
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Dominators
 
 Dominator objects are comprised of a tree structure because each object has exactly one dominator.  A dominator of an object may lack direct references to an object it dominates; that is, the tree of the dominator is not a spanning tree of the graph.
@@ -115,6 +121,8 @@ In the following figure, node `#3` is the dominator of `#10`, but `#7` also exis
    Animated dominator illustration
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## V8 specifics
 
 When profiling memory, it is helpful to understand why heap snapshots look a certain way.  This section describes some memory-related topics specifically corresponding to the **V8 JavaScript virtual machine** (V8 VM or VM).

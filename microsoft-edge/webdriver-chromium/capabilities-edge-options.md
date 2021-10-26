@@ -17,6 +17,8 @@ Capabilities are passed to a WebDriver session as a JSON map.  A WebDriver testi
 
 To learn more about how to configure capabilities, consult the documentation for your preferred WebDriver testing framework.  For more information, navigate to [Choose a WebDriver testing framework][WebdriverIndexChooseAWebdriverTestingFramework].
 
+
+<!-- ====================================================================== -->
 ## Using the EdgeOptions class
 
 Create an instance of `EdgeOptions`, which provides convenience methods to set Microsoft Edge-specific capabilities.  After you configure the `EdgeOptions` object, pass `EdgeOptions` into the `EdgeDriver` constructor.
@@ -34,10 +36,14 @@ To use capabilities that don't have an associated convenience method, use the `A
 options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 ```
 
+
+<!-- ====================================================================== -->
 ## Recognized Capabilities
 
 For standard capabilities that `EdgeDriver` accepts, navigate to [Selenium documentation][SharedCapabilitiesSeleniumDocumentation] and the [W3C WebDriver standard][CapabilitiesW3cWebdriver].  This article only lists capabilities specific to Microsoft Edge.
 
+
+<!-- ====================================================================== -->
 ## EdgeOptions object
 
 Most Microsoft Edge-specific capabilities are exposed through the `EdgeOptions` object.  In some languages, the capabilities are implemented by the `EdgeOptions` class.  In other languages, the capabilities are stored under the `ms:edgeOptions` dictionary in `DesiredCapabilities`.
@@ -61,6 +67,8 @@ Most Microsoft Edge-specific capabilities are exposed through the `EdgeOptions` 
 | windowsApp | string |  | Application user model ID of a Microsoft Edge app package to launch, for example `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE`.  Use `windowsApp` instead of `binary` when connecting to a Windows 10X device or emulator using Windows Device Portal. |
 | windowTypes | list of strings |  | A list of window types that are displayed in the list of window handles.  For access to Android webview elements, include `webview` in the list. |
 
+
+<!-- ====================================================================== -->
 ## perfLoggingPrefs object
 
 The `perfLoggingPrefs` dictionary has the following format (all keys are optional).
@@ -72,6 +80,8 @@ The `perfLoggingPrefs` dictionary has the following format (all keys are optiona
 | enablePage | boolean | true | To collect (or not collect) events from Page domain. |
 | traceCategories | string | (empty) | A comma-separated string of Microsoft Edge tracing categories for which trace events should be collected.  An unspecified or empty string disables tracing. |
 
+
+<!-- ====================================================================== -->
 ## Returned capabilities
 
 The following list contains all of the Microsoft Edge-specific capabilities that `EdgeDriver` returns when you create a new session.

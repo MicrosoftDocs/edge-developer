@@ -18,10 +18,14 @@ The examples used in the figures in this article are taken from the following we
 *   [Fruit box][JecFyiDemoCssGridFruit]
 *   [Snack box][JecFyiDemoCssGridSnack]
 
+
+<!-- ====================================================================== -->
 ## Before you begin
 
 CSS Grid is a powerful layout paradigm for the web.  A great place to get started learning about CSS Grid and the many features is the [CSS Grid Layout guide][MdnCssGridLayout] on MDN.
 
+
+<!-- ====================================================================== -->
 ## Discover CSS grids
 
 When an HTML element on your page has `display: grid` or `display: inline-grid` applied to it, a `grid` badge is displayed next to it in the [Elements][DevtoolsGuideOpen] panel.
@@ -49,6 +53,8 @@ The **Grid** section in the **Layout** pane contains the following 2 sub-section
 
 <!--todo: @zoher verify the details for each of the sub-sections.  -->
 
+
+<!-- ====================================================================== -->
 ## Overlay display settings
 
 The **Overlay display settings** consists of following 2 parts.
@@ -146,6 +152,8 @@ Enable the **Extend grid lines** checkbox to extend the grid lines to the edge o
    **Extend grid lines**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Grid overlays
 
 The **Grid overlays** section contains a list of grids that are present on the page, each with a checkbox, along with various options.

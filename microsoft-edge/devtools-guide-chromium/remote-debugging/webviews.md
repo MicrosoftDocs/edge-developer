@@ -33,6 +33,8 @@ On Android 4.4 (KitKat) or later, use DevTools to debug WebView content in nativ
 *   To display the list of the Android WebViews with debugging turned on, navigate to `edge://inspect`.
 *   Debug Android WebViews in the same way you debug a webpage through [remote debugging][RemoteDebuggingGettingStarted].
 
+
+<!-- ====================================================================== -->
 ## Configure Android WebViews to debug
 
 Android WebView debugging must be turned on within your app.  To turn on Android WebView debugging, run the [setWebContentsDebuggingEnabled][AndroidDeveloperWebViewsSetWebContentsDebuggingEnabled] static method on the `WebView` class.
@@ -55,6 +57,8 @@ The setting applies to all of the Android WebViews of the app.
 > }
 > ```
 
+
+<!-- ====================================================================== -->
 ## Open an Android WebView in DevTools
 
 To display a list of the Android WebViews with debugging turned on that run on your device, navigate to `edge://inspect`.
@@ -69,6 +73,8 @@ To start debugging, under the Android WebView you want to debug, choose **inspec
 The gray graphics listed with the Android WebView represent its size and position relative to the screen of the device.  If your Android WebViews have titles set, the titles are listed as well.
 -->
 
+
+<!-- ====================================================================== -->
 ## Troubleshoot
 
 Your Android WebViews aren't displayed on the `edge://inspect` page?

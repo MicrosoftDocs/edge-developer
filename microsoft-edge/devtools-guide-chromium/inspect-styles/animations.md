@@ -35,6 +35,8 @@ Inspect and modify animations with the Microsoft Edge DevTools Animation Inspect
 *   Inspect animations by slowing down each one, replaying each one, or viewing the source code.
 *   Modify animations by changing the timing, delay, duration, or keyframe offsets.
 
+
+<!-- ====================================================================== -->
 ## Overview
 
 The Microsoft Edge DevTools Animation Inspector has two main purposes.
@@ -49,6 +51,8 @@ The Animation Inspector supports CSS animations, CSS transitions, and web animat
 An Animation Group is a group of animations that may be related to each other.  Currently, the web has no real concept of a group animation, so motion designers and developers have to compose and time individual animations so that the animations render as one coherent visual effect.  The Animation Inspector predicts which animations are related based on start time (excluding delays, and so on).  The Animation Inspector also groups the animations side-by-side.
 In other words, a set of animations that are all triggered in the same script block are grouped together.  If an animation is asynchronous, it is placed in a separate group.
 
+
+<!-- ====================================================================== -->
 ## Get started
 
 There are two ways to open the Animation Inspector:
@@ -91,6 +95,8 @@ To capture an animation, just perform the interaction that triggers the animatio
 
 <!--  > [!VIDEO animations/capture-animations.mp4]  -->
 
+
+<!-- ====================================================================== -->
 ## Inspect animations
 
 After you capture an animation, there are a few ways to replay it:
@@ -125,6 +131,8 @@ If two elements have the same animation applied, the Animation Inspector assigns
    Color-coded animations
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Modify animations
 
 There are three ways you are able to modify an animation with the Animation Inspector.

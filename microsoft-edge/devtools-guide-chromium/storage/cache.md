@@ -27,6 +27,8 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the guide you want.  Look for the information in the **Size** column of the **Network Log**.  Navigate to [Log network activity][DevtoolsNetworkLogActivity].
 
+
+<!-- ====================================================================== -->
 ## View cache data
 
 1.  Choose the **Application** tab to open the **Application** panel.  The **Manifest** pane usually opens by default.
@@ -59,6 +61,8 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        View the content of a resource
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Refresh a resource
 
 1.  [View the data for a cache](#view-cache-data).
@@ -70,6 +74,8 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
 
 1.  Choose **Refresh** (![Refresh](../media/refresh-icon.msft.png)).
 
+
+<!-- ====================================================================== -->
 ## Filter resources
 
 1.  [View the data for a cache](#view-cache-data).
@@ -79,6 +85,8 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        Filter out resources that do not match the specified path
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Delete a resource
 
 1.  [View the data for a cache](#view-cache-data).
@@ -90,6 +98,8 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
 
 1.  Choose **Delete Selected** (![Delete Selected](../media/delete-icon.msft.png)).
 
+
+<!-- ====================================================================== -->
 ## Delete all cache data
 
 1.  Open **Application** > **Clear Storage**.

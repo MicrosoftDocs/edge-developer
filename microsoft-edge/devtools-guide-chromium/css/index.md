@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Complete these interactive tutorials to learn the basics of viewing and changing the CSS for a page using Microsoft Edge DevTools.
 
+
+<!-- ====================================================================== -->
 ## Open CSS Examples
 
 1.  Hold `Control` (Windows, Linux) or `Command` (macOS) and choose **CSS Examples** to open in a new window.
@@ -34,6 +36,8 @@ Complete these interactive tutorials to learn the basics of viewing and changing
     > [!NOTE]
     > If you want to [dock your DevTools window][DevToolsCustomizePlacement] to the right of your viewport (displayed in the following figure), choose **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, choose **Dock to right**.
 
+
+<!-- ====================================================================== -->
 ## View the CSS for an element
 
 1.  [Open CSS Examples](#open-css-examples).
@@ -62,6 +66,8 @@ Complete these interactive tutorials to learn the basics of viewing and changing
 
 1.  On the page, in the **Value of `padding`:** textbox, enter the value.
 
+
+<!-- ====================================================================== -->
 ## Add a CSS declaration to an element
 
 Use the **Styles** panel when you want to change or add CSS declarations to an element.
@@ -79,6 +85,8 @@ Use the **Styles** panel when you want to change or add CSS declarations to an e
        The `background-color:honeydew` declaration is applied to the element using the `element.style` section of the **Styles** panel
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Add a CSS class to an element
 
 To display how an element looks when a CSS class is applied to or removed from an element, navigate to the **Styles** panel.
@@ -95,6 +103,8 @@ To display how an element looks when a CSS class is applied to or removed from a
        The `color_me` class is applied to the element using the **.cls** section of the **Styles** panel
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Add a pseudostate to a class
 
 Use the **Styles** panel to permanently apply a CSS pseudostate to an element.  DevTools supports `:active`, `:focus`, `:hover`, and `:visited`.
@@ -112,6 +122,8 @@ Use the **Styles** panel to permanently apply a CSS pseudostate to an element.  
        Toggle the `:hover` pseudostate on an element
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Change the dimensions of an element
 
 Use the **Box Model** interactive diagram in the **Styles** panel to change the width, height, padding, margin, or border length of an element.
@@ -142,6 +154,8 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
        :::column-end:::
     :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Debugging Media Queries
 
 [Media Queries][MDNUsingMediaGueries] are a way to make your web product react to changes in the configuration settings for each user.  The most significant use case is to provide your product a different CSS layout depending on the dimensions of the viewport.  Using separate layouts allows for a one-column layout for mobile devices and multi-column layouts when there is more screen estate available.

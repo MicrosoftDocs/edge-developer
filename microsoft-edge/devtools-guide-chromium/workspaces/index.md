@@ -32,6 +32,8 @@ This tutorial provides hands-on practice in setting up and using a Workspace.  A
 > *   [Use DevTools to make basic changes to CSS][DevToolsCssIndex]
 > *   [Run a local HTTP web server][MDNSimpleLocalHTTPServer]
 
+
+<!-- ====================================================================== -->
 ## Overview
 
 Workspaces enable you to save a change that you make in Devtools to a local copy of the same file on your computer.  For this tutorial, you should have the following settings on your machine.
@@ -42,6 +44,8 @@ Workspaces enable you to save a change that you make in Devtools to a local copy
 
 With Workspaces enabled, the CSS changes that you make within DevTools are saved to the source code on your desktop.
 
+
+<!-- ====================================================================== -->
 ## Limitations
 
 If you are using a modern framework, it probably transforms your source code from a format that is easy to maintain into a format that is optimized to run as quickly as possible.
@@ -54,12 +58,16 @@ Workspaces is known to not work with the following framework.
 
     <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
 
+
+<!-- ====================================================================== -->
 ## Related feature: Local overrides
 
 **Local Overrides** is another DevTools feature that is similar to Workspaces.  Use Local Overrides when you want to experiment with changes to a webpage, and you need to display the changes across webpage loads, but you do not care about mapping your changes to the source code of the webpage.
 
 <!--Todo: add section when content is ready  -->
 
+
+<!-- ====================================================================== -->
 ## Step 1: Set up
 
 Complete the following actions, to get hands-on experience with Workspaces.
@@ -131,6 +139,8 @@ Complete the following actions, to get hands-on experience with Workspaces.
        The **Filesystem** tab now indicates a mapping between the local files and the network ones
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 2: Save a CSS change to disk
 
 1.  Open `styles.css`.
@@ -153,6 +163,8 @@ Complete the following actions, to get hands-on experience with Workspaces.
 1.  Open `styles.css` in a text editor again.  The `color` property is now set to your favorite color.
 1.  Refresh the page.  The color of the `<h1>` element is still set to your favorite color.  The change remains across a refresh, because when you made the change DevTools saved the change to disk.  And then, when you refreshed the page, your local server served the modified copy of the file from disk.
 
+
+<!-- ====================================================================== -->
 ## Step 3: Save an HTML change to disk
 
 ### Change HTML from the Elements Panel
@@ -208,6 +220,8 @@ If you want to save a change to the HTML of the webpage, use the **Sources** too
 
 1.  Open `~/Desktop/app/index.html`.  The `<h1>` element contains the new text.
 
+
+<!-- ====================================================================== -->
 ## Step 4: Save a JavaScript change to disk
 
 The main place to use the code editor of DevTools is the **Sources** tool.  But sometimes you need to access other tools, such as the **Elements** tool or the **Console** panel, while editing files.  The **Quick Source** tool gives you just the editor from the **Sources** tool, while any tool is open.
@@ -249,6 +263,8 @@ To open the DevTools code editor alongside other tools, do the following:
        The link on the page is now italicized
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Next steps
 
 Use what you have learned in this tutorial to set up Workspaces in your own project.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->

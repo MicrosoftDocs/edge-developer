@@ -14,6 +14,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 A WebView2 app depends on the WebView2 Runtime on client machines.  When you distribute your WebView2 app, you need to take into account how the WebView2 Runtime is distributed to and updated on client machines.
 
 
+<!-- ====================================================================== -->
 ## Introduction to the Runtime, Evergreen distribution, and Fixed Version distribution
 
 ### The WebView2 Runtime
@@ -47,6 +48,7 @@ Cons:
 *  The Fixed Version runtime can't be installed by using an installer.
 
 
+<!-- ====================================================================== -->
 ## Understanding the options at the Runtime download page
 
 The [Download the WebView2 Runtime][Webview2Installer] section of the **Microsoft Edge WebView2** page provides several options for distributing the WebView2 Runtime onto client machines.  Understanding the options at this page provides a good introduction, to help decide which approach you want to use.

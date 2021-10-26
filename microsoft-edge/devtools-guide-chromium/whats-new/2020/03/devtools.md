@@ -27,6 +27,8 @@ Following the updated Chromium schedule, we are adjusting our schedule for upcom
 
 Here are the new features available in the DevTools in Microsoft Edge 83.
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Microsoft Edge DevTools team
 
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].
@@ -111,6 +113,8 @@ If you use screen readers or the keyboard to navigate around the DevTools, send 
 
 Chromium issue [#963183][CR963183]
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 The following sections announce additional features available in Microsoft Edge 83 that were contributed to the open source Chromium project.
@@ -267,6 +271,8 @@ Enable the new **Show only the minimum safe area for maskable icons** checkbox i
 > [!NOTE]
 > This feature launched in Microsoft Edge 81.  The updates covered here in Microsoft Edge 83 were not covered in [What's New In DevTools (Microsoft Edge 81)][WhatsNew81].
 
+
+<!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.

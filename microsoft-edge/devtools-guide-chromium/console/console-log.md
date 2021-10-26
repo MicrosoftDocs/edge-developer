@@ -16,7 +16,7 @@ Ever since browsers started to offer developer tools, the **Console** is a favor
 
 Before the DevTools, you were limited to an `alert()` or `document.write()` statement to debug in the browser.
 
-If you want to log information in the **Console**, lots of methods are available to you.  Review all of available methods in the [API reference][DevtoolsConsoleApi].  The following code snippet lists the most important methods.
+If you want to log information in the **Console**, lots of methods are available to you.  Review all of available methods in the [API reference](api.md).  The following code snippet lists the most important methods.
 
 ```javascript
 // prints the text to the console as  a log message
@@ -29,17 +29,19 @@ console.error('This is an error')
 console.warn('This is a warning')
 ```
 
-Copy and paste the previous code snippet in the **Console** or navigate to [Console messages examples: log, info, error, and warn][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingExamplesHtml].  When you try any method in the **Console**, the `log()` and `info()` methods seem to do the same thing, while the `error()` and `warn()` methods display an icon next to the message and a way to inspect the [stack trace][WikiStackTrace] of the message.
+Copy and paste the previous code snippet in the **Console** or navigate to [Console messages examples: log, info, error, and warn](https://microsoftedge.github.io/DevToolsSamples/console/logging-examples.html).  When you try any method in the **Console**, the `log()` and `info()` methods seem to do the same thing, while the `error()` and `warn()` methods display an icon next to the message and a way to inspect the [stack trace](https://en.wikipedia.org/wiki/Stack_trace) of the message.
 
 :::image type="complex" source="../media/console-log-examples.msft.png" alt-text="The Console displays the messages from different log APIs" lightbox="../media/console-log-examples.msft.png":::
    The **Console** displays the messages from different log APIs
 :::image-end:::
 
-It is, however, still a good idea to use `info()` and `log()` for different log tasks as that allows you to [filter using type in the Console][DevtoolsConsoleConsoleFilters].
+It is, however, still a good idea to use `info()` and `log()` for different log tasks as that allows you to [filter using type in the Console](console-filters.md).
 
+
+<!-- ====================================================================== -->
 ## Different types of logs
 
-Instead of log text you may send any valid JavaScript or DOM references to the **Console**.  The **Console** is elegant and it determines the type that you send it.  It then gives you the best possible representation.  Copy and paste the following code snippet in the **Console** or to display the results, navigate to [Console messages examples: logging different types][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingTypesHtml].
+Instead of log text you may send any valid JavaScript or DOM references to the **Console**.  The **Console** is elegant and it determines the type that you send it.  It then gives you the best possible representation.  Copy and paste the following code snippet in the **Console** or to display the results, navigate to [Console messages examples: logging different types](https://microsoftedge.github.io/DevToolsSamples/console/logging-types.html).
 
 ```javascript
 let x = 2;
@@ -71,6 +73,8 @@ Each result is displayed in a different way.  Use the triangles to toggle the in
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Format and convert values with specifiers
 
 A special feature of all the log methods is that you may use specifiers in your log message.  Specifiers are part of a log message and start with a percentage sign (`%`) character and allow you to log certain values in different formats and even convert each.
@@ -97,7 +101,7 @@ console.log('%O', document.body);
 console.log('%cImportant message follows','color:red;font-size:40px');
 ```
 
-The first example displays that the order of replacement of specifiers is the parameter order following the string.  To display the results, copy and paste the previous code snippet in the **Console** or navigate to [Console messages examples: Logging with specifiers][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithSpecifiersHtml].  Expand the information in the log to display the huge difference between `%o` and `%O`.
+The first example displays that the order of replacement of specifiers is the parameter order following the string.  To display the results, copy and paste the previous code snippet in the **Console** or navigate to [Console messages examples: Logging with specifiers](https://microsoftedge.github.io/DevToolsSamples/console/logging-with-specifiers.html).  Expand the information in the log to display the huge difference between `%o` and `%O`.
 
 :::row:::
    :::column span="":::
@@ -112,6 +116,8 @@ The first example displays that the order of replacement of specifiers is the pa
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Group log messages
 
 If you log much information, you may use the `group` and `groupCollapsed` methods to display log messages as expandable and collapsible groups in the **Console**.  Groups may be nested and named to make the data much easier to understand.
@@ -139,7 +145,7 @@ for (tech in technologies) {
 }
 ```
 
-Also in the second example, the group names may be optionally generated.  To display the results, copy and paste the previous code snippet in the **Console** or navigate to [Console messages examples: grouping logs][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithGroupsHtml].  You may expand and collapse each of the sections.
+Also in the second example, the group names may be optionally generated.  To display the results, copy and paste the previous code snippet in the **Console** or navigate to [Console messages examples: grouping logs](https://microsoftedge.github.io/DevToolsSamples/console/logging-with-groups.html).  You may expand and collapse each of the sections.
 
 :::row:::
    :::column span="":::
@@ -154,9 +160,11 @@ Also in the second example, the group names may be optionally generated.  To dis
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Display complex data as tables
 
-The `console.table()` method logs complex data not as a collapsible and expandable object, but as a table that you may sort using different headers.  A sorted table makes it much easier for people to review the information.  To display it in an example, navigate to [Console messages examples: Using table][GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithTableHtml].
+The `console.table()` method logs complex data not as a collapsible and expandable object, but as a table that you may sort using different headers.  A sorted table makes it much easier for people to review the information.  To display it in an example, navigate to [Console messages examples: Using table](https://microsoftedge.github.io/DevToolsSamples/console/logging-with-table.html).
 
 ```javascript
 let technologies = {
@@ -199,20 +207,4 @@ console.table(contentElements,['nodeName', 'innerText', 'offsetHeight'])
    Filter information that `console.table` displays and provide an array of properties to display as a second parameter
 :::image-end:::
 
-You may be tempted to use the log methods as your main means to debug webpages, because log methods are simple to use.  Consider the result of any `console.log()` request.  Live products shouldn't use any log that was used to debug.  It may reveal inside information to people.  And the noise created in the **Console** is overwhelming.  When you use [Breakpoint Debugging][DevtoolsJavascriptBreakpoints] or [Live Expressions][DevtoolsConsoleLiveExpressions], you may find that your workflows are more effective and you get better results.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"
-[DevtoolsConsoleConsoleFilters]: ./console-filters.md "Filter Console messages | Microsoft Docs"
-[DevtoolsConsoleLiveExpressions]: ./live-expressions.md "Monitor changes in JavaScript using Live Expressions | Microsoft Docs"
-[DevtoolsJavascriptBreakpoints]: ../javascript/breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
-
-[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingExamplesHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-examples.html "Console messages examples: log, info, error, and warn | GitHub"
-[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingTypesHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-types.html "Console messages examples: logging different types | GitHub"
-[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithGroupsHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-with-groups.html "Console messages examples: grouping logs | GitHub"
-[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithSpecifiersHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-with-specifiers.html "Console messages examples: Logging with specifiers | GitHub"
-[GithubMicrosoftedgeDevtoolssamplesConsoleLoggingWithTableHtml]: https://microsoftedge.github.io/DevToolsSamples/console/logging-with-table.html "Console messages examples: Using table | GitHub"
-
-[WikiStackTrace]: https://en.wikipedia.org/wiki/Stack_trace "Stack trace | Wikipedia"
+You may be tempted to use the log methods as your main means to debug webpages, because log methods are simple to use.  Consider the result of any `console.log()` request.  Live products shouldn't use any log that was used to debug.  It may reveal inside information to people.  And the noise created in the **Console** is overwhelming.  When you use [Breakpoint Debugging](../javascript/breakpoints.md) or [Live Expressions](live-expressions.md), you may find that your workflows are more effective and you get better results.

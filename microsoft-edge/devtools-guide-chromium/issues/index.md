@@ -40,6 +40,7 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 *  [webhint][webhintIo]
 
 
+<!-- ====================================================================== -->
 ## Opening the Issues tool
 
 1.  Navigate to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page][A11ytestingPagewitherrors] in a new tab or window.
@@ -74,6 +75,7 @@ Within each category of issues, first the errors are listed, then warnings, and 
 To include issues that are caused by third-party sites, at the top of the **Issues** tool, select the **Include third-party issues** checkbox.
 
 
+<!-- ====================================================================== -->
 ## Expand entries in the Issues tool
 
 The **Issues** tool presents additional documentation and recommended fixes to apply to each issue.  To expand an issue to get this additional information, select an issue, as follows.
@@ -95,6 +97,7 @@ Each displayed issue has the following components:
 *   Links to further documentation.
 
 
+<!-- ====================================================================== -->
 ## View issues in context of an associated tool
 
 An issue in the **Issues** tool may include one or more links that open different tools, such as the **Elements**, **Sources**, or **Network** tool. You can open one of these tools to perform additional troubleshooting steps. To open a linked tool from the **Issues** tool, perform the following steps.
@@ -114,6 +117,7 @@ An issue in the **Issues** tool may include one or more links that open differen
     :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## Open issues from the DOM tree
 
 If an element has an associated issue, the DOM tree in the **Elements** tool shows a wavy underline under the element name.  You can open the context menu (right-click) on the element and then select **View issues**, or select `Shift` and left-click the element with the wavy underline.

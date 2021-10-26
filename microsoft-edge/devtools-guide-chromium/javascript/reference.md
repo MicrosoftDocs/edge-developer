@@ -27,6 +27,8 @@ This article covers how to use the debugger in Microsoft Edge DevTools, includin
 
 To learn the basics of debugging, navigate to [Get started with debugging JavaScript in Microsoft Edge DevTools][DevToolsJavascriptGetStarted], which is a tutorial that uses an existing, form-based webpage.  The tutorial has screen captures, so you can skim it.  You can easily try out the debugger features by using the demo webpage.
 
+
+<!-- ====================================================================== -->
 ## View and edit JavaScript code
 
 When fixing a bug, you often want to try out some changes to your JavaScript code.  You don't need to make the changes in an external editor or IDE, re-upload the file to the server, and then refresh the page; instead, to test changes, you can edit your JavaScript code directly in DevTools and see the result immediately.
@@ -42,6 +44,8 @@ To view and edit a JavaScript file:
        The **Editor** pane
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Reformat a minified JavaScript file with pretty-print
 
 To make a minified file human-readable, choose the **Format** (![Format](../media/format-icon.msft.png)) button at the bottom of the **Editor** pane.
@@ -50,6 +54,8 @@ To make a minified file human-readable, choose the **Format** (![Format](../medi
    The **Format** button
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Set a breakpoint, to pause code
 
 To pause your code in the middle of the runtime, set a breakpoint.  The most basic and well-known type of breakpoint is a line-of-code breakpoint.
@@ -68,6 +74,8 @@ To set a line-of-code breakpoint:
 
 Line-of-code breakpoints may be inefficient to set, especially if you do not know exactly where to look, or if your codebase is large.  To save time when debugging, learn how and when to use the other types of breakpoints.  For more information, navigate to [Pause your code with breakpoints][DevToolsJavascriptBreakpoints].
 
+
+<!-- ====================================================================== -->
 ## Step through code
 
 After your code is paused at a breakpoint, step through the code, one line at a time, investigating control flow and property values along the way.
@@ -204,6 +212,8 @@ When working with web workers or service workers, choose on a context listed in 
 
 For example, suppose that you are paused on a breakpoint in both your main script and your service worker script.  You want to view the local and global properties for the service worker context, but the **Sources** tool is showing the main script context.  To switch to the service worker context, in the **Threads** pane, choose the service worker entry.
 
+
+<!-- ====================================================================== -->
 ## View and edit properties and variables
 
 While paused on a line of code, use the **Scope** pane to view and edit the values of properties and variables in the local, closure, and global scopes.
@@ -215,6 +225,8 @@ While paused on a line of code, use the **Scope** pane to view and edit the valu
    The **Scope** pane
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Watch the values of JavaScript expressions
 
 Use the **Watch** pane to watch the values of custom expressions.  You can watch any valid JavaScript expression.
@@ -227,6 +239,8 @@ Use the **Watch** pane to watch the values of custom expressions.  You can watch
 *   To refresh the values of all existing expressions, select the **Refresh** (![Refresh](../media/refresh-icon.msft.png)) button.  Values automatically refresh while stepping through code.
 *   To delete a watch expression, right-click the expression and then select **Delete watch expression** (![Delete watch expression](../media/delete-expression-icon.msft.png)).
 
+
+<!-- ====================================================================== -->
 ## View the call stack
 
 While paused on a line of code, use the **Call Stack** pane to view the call stack that got you to this point.
@@ -262,6 +276,8 @@ inputsAreEmpty (get-started.js:22)
 onChoose (get-started.js:15)
 ```
 
+
+<!-- ====================================================================== -->
 ## Ignore a script or pattern of scripts
 
 Mark a script as Library code when you want to ignore that script while debugging.  When marked as Library code, a script is obscured in the **Call Stack** pane, and you never step into the functions of the script when you step through your code.
@@ -313,6 +329,8 @@ To mark a single script or pattern of scripts from **Settings**:
        Mark a script as **Library code** from **Settings**
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Run snippets of debug code from any page
 
 If you find yourself running the same debug code in the Console over and over, consider Snippets.  Snippets are runtime scripts that you author, store, and run within DevTools.

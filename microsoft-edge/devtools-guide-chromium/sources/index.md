@@ -47,6 +47,8 @@ To maximize the size of the Sources tool, undock DevTools into a separate window
 
 To load the debugging demo webpage that's shown above, see [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger), below.
 
+
+<!-- ====================================================================== -->
 ## Using the Navigator pane to select files
 
 Use the **Navigator** pane (on the left) to navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.
@@ -196,6 +198,8 @@ If you type `?`, the Command Menu shows several commands, including **... Open f
 
 For more information, see [Run commands with the Microsoft Edge DevTools Command Menu][DevToolsCommandMenuIndex].
 
+
+<!-- ====================================================================== -->
 ## Using the Editor pane to view or edit files
 
 Use the **Editor** pane to view the front-end files that are returned from the server to compose the current webpage, including JavaScript, HTML, CSS, and image files.  When you edit the front-end files in the **Editor** pane, DevTools updates the webpage to run the modified code.
@@ -390,6 +394,8 @@ The main place to view source files in the DevTools is within the **Sources** to
 1.  Type `Quick Source`, and then select **Show Quick Source**.  At the bottom of the DevTools window, the Drawer appears, with the **Quick Source** panel selected.  The **Quick Source** panel contains the last file you edited in the **Sources** tool, within a compact version of the DevTools code editor.
 1.  Select `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog.
 
+
+<!-- ====================================================================== -->
 ## Using the Debugger pane to debug JavaScript code
 
 Use the JavaScript debugger to step through the JavaScript code that's returned by the server.

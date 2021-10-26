@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Use **Allocation instrumentation on timeline** to find objects that are not being properly garbage collected, and continue to retain memory.
 
+
+<!-- ====================================================================== -->
 ## How Allocation instrumentation on timeline works
 
 **Allocation instrumentation on timeline** combines the detailed snapshot information of the **heap profiler** with the incremental updating and tracking of the **Performance** panel.  Similarly, tracking heap allocation for objects involves starting a recording, performing a sequence of actions, and stopping the recording for analysis.
@@ -41,6 +43,8 @@ Use **Allocation instrumentation on timeline** to find objects that are not bein
 > [!NOTE]
 > The number after the `@` is an object ID that persists across the multiple snapshots taken during the recording session.  The persistent object ID enables precise comparison between heap states.  Objects are moved during garbage collections, so displaying the address of an object makes no sense.
 
+
+<!-- ====================================================================== -->
 ## Enable Allocation Instrumentation on Timeline
 
 Complete the following actions to begin using **Allocation instrumentation on timeline**.
@@ -53,6 +57,8 @@ Complete the following actions to begin using **Allocation instrumentation on ti
        Record heap allocations profiler
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Read a heap allocation timeline
 
 The heap allocation timeline shows where objects are being created and identifies the retaining path.  In the following figure, the bars at the top indicate when new objects are found in the heap.
@@ -74,6 +80,8 @@ You are able to use the sliders in the timeline above to zoom into that particul
 
 Choosing on a specific object in the heap shows the retaining tree in the bottom portion of the heap snapshot.  Examining the retaining path to the object should give you enough information to understand why the object was not collected, and you should make the necessary code changes to remove the unnecessary reference.
 
+
+<!-- ====================================================================== -->
 ## View memory allocation by function
 
 You are able to view memory allocation by JavaScript function.  For more information, navigate to [Investigate memory allocation by function][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].

@@ -10,6 +10,8 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 ---
 # App Developer Agreement Addendum for Microsoft Edge program users
 
+
+<!-- ====================================================================== -->
 ## Exhibit G: Terms and Conditions for Microsoft Edge Extensions
 
 These Terms and Conditions for Microsoft Edge Extensions (the "Extensions Addendum") is a supplement to the terms and conditions of the App Developer Agreement, the current version of which can be found at [https://go.microsoft.com/fwlink/p/?LinkID=221922][ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies].  This Addendum applies if you have submitted or are making available Microsoft Edge Extensions (each, an "Extension") through Microsoft Edge Add-ons.  Except as expressly modified by this Extensions Addendum, all of the terms and conditions in the App Developer Agreement, which is incorporated by reference herein, apply to the offering and distribution of your Microsoft Edge Extensions.  Except where expressly modified by this Addendum, the terms and conditions that apply to an "Application" or "App" under the App Developer Agreement will apply to an Extension as defined in this Addendum and all references to "Store" or "Microsoft Store" under the App Developer Agreement will apply to Microsoft Edge Add-ons as defined in this Addendum.

@@ -12,6 +12,8 @@ keywords: microsoft edge, web development, html, css, javascript, developer, ext
 
 [Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart2]
 
+
+<!-- ====================================================================== -->
 ## Overview
 
 This tutorial covers the following extension technologies.

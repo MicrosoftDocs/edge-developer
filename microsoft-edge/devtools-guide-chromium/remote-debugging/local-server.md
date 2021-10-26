@@ -32,6 +32,8 @@ With a USB cable and Microsoft Edge DevTools, run a site from a development mach
 *   Port forwarding enables you to view content hosted by the web server running in your development machine on your Android device.
 *   If your web server is using a custom domain, set up your Android device to access the content at that domain with custom domain mapping.
 
+
+<!-- ====================================================================== -->
 ## Set up port forwarding
 
 Port forwarding enables your Android device to access content that is being hosted on the web server running in your development machine.  Port forwarding works by creating a listening TCP port on your Android device that maps to a TCP port on your development machine.  Traffic between the ports travel through the USB connection between your Android device and development machine, so the connection does not depend on your network configuration.
@@ -58,6 +60,8 @@ Port forwarding is now set up.  Review the status indicator for the port forward
 
 To view the content, open up Microsoft Edge on your Android device and go to the `localhost` port that you specified in the **Device port** field.  For example, if you entered `5000` in the field, visit `localhost:5000`.
 
+
+<!-- ====================================================================== -->
 ## Map to custom local domains
 
 Custom domain mapping enables you to view content on an Android device from a web server on your development machine that is using a custom domain.

@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Use the **Media** tool in Microsoft Edge DevTools to view information and debug the media players per browser tab.
 
+
+<!-- ====================================================================== -->
 ## Open the Media tool
 
 The **Media** tool is the main place in DevTools for inspecting the media player of a webpage.
@@ -36,6 +38,8 @@ The **Media** tool is the main place in DevTools for inspecting the media player
        **Media** panel
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## View media players information
 
 1.  Navigate to a webpage with a media player, such as the following webpage.
@@ -81,6 +85,8 @@ View the media players information on an Android device from your Windows or mac
     :::image-end:::
     -->
 
+
+<!-- ====================================================================== -->
 ## Hide and show media players
 
 Sometimes you run more than one media player on a webpage, or use the same browser tab to browse different webpages, each with media players.
@@ -96,6 +102,8 @@ You may choose to hide (or show) each media player for an easier debugging exper
        Hide media players
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Export media player information
 
 1.  To download the media player info as a JSON file, hover on a media player, open the contextual menu (right-click), and choose **Save player info**.

@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view, edit, and delete [localStorage][MDNWindowsLocalStorage] key-value pairs.
 
+
+<!-- ====================================================================== -->
 ## View localStorage keys and values
 
 1.  Choose the **Application** tab to open the **Application** tool.  The **Manifest** pane is shown by default.
@@ -51,6 +53,8 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
        View the value of the `eventLogQueue_Online` key
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Create a new localStorage key-value pair
 
 1.  [View the localStorage key-value pairs of a domain](#view-localstorage-keys-and-values).
@@ -60,6 +64,8 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
        The empty part of the table to double-click in order to create a new key-value pair
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Edit localStorage keys or values
 
 1.  [View the localStorage key-value pairs of a domain](#view-localstorage-keys-and-values).
@@ -69,17 +75,23 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
        Edit a `localStorage` key
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Delete localStorage key-value pairs
 
 1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).
 1.  Choose the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.
 1.  Select the `Delete` key or choose **Delete Selected** (![Delete Selected](../media/delete-icon.msft.png)).
 
+
+<!-- ====================================================================== -->
 ## Delete all `localStorage` key-value pairs for a domain
 
 1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).
 1.  Choose **Clear All** (![Clear All](../media/clear-icon.msft.png)).
 
+
+<!-- ====================================================================== -->
 ## Interact with localStorage from the Console
 
 Since you are able to run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it is possible to interact with `localStorage` from the **Console**.

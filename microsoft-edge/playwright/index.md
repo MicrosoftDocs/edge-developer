@@ -17,6 +17,8 @@ Playwright launches [headless browsers][WikiHeadlessBrowser] by default.  Headle
 
 By default, when you install Playwright, the installer downloads [Chromium][ChromiumHome], [Firefox][FirefoxMain], and [WebKit][WebKitMain].  If you have Microsoft Edge installed as well, Playwright just needs a one-line code change to test your website or app in Microsoft Edge.  To download Microsoft Edge, navigate to [Download Microsoft Edge][MicrosoftEdgeDownload].
 
+
+<!-- ====================================================================== -->
 ## Installing Playwright
 
 Install [Playwright][PlaywrightMain] to test your website or app with the following command.
@@ -25,6 +27,8 @@ Install [Playwright][PlaywrightMain] to test your website or app with the follow
 npm i playwright
 ```
 
+
+<!-- ====================================================================== -->
 ## Launch Microsoft Edge with Playwright
 
 > [!NOTE]

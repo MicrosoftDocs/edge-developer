@@ -27,6 +27,8 @@ Discover new workflows in the following comprehensive reference of Microsoft Edg
 
 To learn the basics, navigate to [Get Started with Viewing and Changing CSS][DevToolsCSSGetStarted].
 
+
+<!-- ====================================================================== -->
 ## Choose an element
 
 The **Elements** tool of DevTools lets you view or change the CSS of one element at a time.  The selected element is highlighted in the **DOM Tree**.  The styles of the element are shown in the **Styles** pane.  For a tutorial, navigate to [View the CSS for an element][DevToolsCSSGetStartedTutorial].
@@ -45,6 +47,8 @@ Use one the following actions to select an element.
 *   In DevTools, choose the element in the **DOM Tree**.
 *   In DevTools, run a query like `document.querySelector('p')` in the **Console**, hover on the result, open the contextual menu (right-click), and choose **Reveal in Elements panel**.
 
+
+<!-- ====================================================================== -->
 ## View CSS
 
 ### View the external stylesheet where a rule is defined
@@ -187,6 +191,8 @@ The **Coverage** tool shows you what CSS a page actually uses.
 
 Navigate to [Force DevTools into Print Preview mode][DevToolsCssPrintPreview].
 
+
+<!-- ====================================================================== -->
 ## Change CSS
 
 <!-- todo s/CSS declaration/declaration/ -->

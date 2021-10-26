@@ -13,6 +13,8 @@ keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView
 
 In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  For more information on individual APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2Wpf].
 
+
+<!-- ====================================================================== -->
 ## Prerequisites
 
 Ensure you install the following list of prerequisites before proceeding.
@@ -20,6 +22,8 @@ Ensure you install the following list of prerequisites before proceeding.
 *   The [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] must be installed on a supported OS (currently Windows 10, Windows 8.1, and Windows 7).
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 or later.
 
+
+<!-- ====================================================================== -->
 ## Step 1 - Create a single-window app
 
 Start with a basic desktop project that contains a single main window.
@@ -56,6 +60,8 @@ Start with a basic desktop project that contains a single main window.
 
 1.  To create your project, choose **Create**.
 
+
+<!-- ====================================================================== -->
 ## Step 2 - Install WebView2 SDK
 
 Use NuGet to add the WebView2 SDK to the project.
@@ -78,6 +84,8 @@ Use NuGet to add the WebView2 SDK to the project.
        Empty app
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 3 - Create a single WebView
 
 Next add a WebView to your app.
@@ -125,6 +133,8 @@ Next add a WebView to your app.
        Microsoft.com
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 4 - Navigation
 
 Add the ability to allow users to change the URL that the WebView2 control displays by adding an address bar to the app.
@@ -183,6 +193,8 @@ Add the ability to allow users to change the URL that the WebView2 control displ
        bing.com
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 5 - Navigation events
 
 During webpage navigation, the WebView2 control raises events.  The app that hosts WebView2 controls listens for the following events.
@@ -233,6 +245,8 @@ In the constructor, `EnsureHttps` is registered as the event handler on the `Nav
 
 To build and run the project, select `F5`.  Ensure when navigating to an HTTP site, the WebView remains unchanged.  However, the WebView navigates to HTTPS sites.
 
+
+<!-- ====================================================================== -->
 ## Step 6 - Scripting
 
 You may use host apps to inject JavaScript code into WebView2 controls at runtime.  You may task WebView to run arbitrary JavaScript or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run with specific timing.
@@ -260,6 +274,8 @@ To build and run the project, select `F5`.  Ensure the app displays an alert whe
    HTTPS
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 7 - Communication between host and web content
 
 The host and web content may communicate in the following ways using `postMessage`.

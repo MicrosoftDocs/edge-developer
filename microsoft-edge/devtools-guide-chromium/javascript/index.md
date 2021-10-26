@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This article teaches you the basic workflow for debugging any JavaScript issue in DevTools.
 
+
+<!-- ====================================================================== -->
 ## Step 1: Reproduce the bug
 
 Finding a series of actions that consistently reproduce a bug is always the first step to debugging.
@@ -41,6 +43,8 @@ Finding a series of actions that consistently reproduce a bug is always the firs
        `5 + 1` results in `51`, but should be `6`
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 2: Get familiar with the Sources tool UI
 
 DevTools provides many different tools for different tasks.  Different tasks include changing CSS, profiling page-load performance, and monitoring network requests.  The **Sources** tool is where you debug JavaScript.
@@ -67,6 +71,8 @@ The **Sources** tool UI has three parts.
 *  The **Editor** pane (in the upper right corner).  After you choose a file in the **Navigator** pane, this pane displays the contents of the file.
 *  The **Debugger** pane (at the bottom).  This pane provides tools for inspecting the JavaScript for the webpage.  If your DevTools window is wide, this pane is displayed to the right of the **Editor** pane.
 
+
+<!-- ====================================================================== -->
 ## Step 3: Pause the code with a breakpoint
 
 A common method for debugging this type of problem is to insert several `console.log()` statements into the code and then to inspect values as the script runs.  For example:
@@ -115,6 +121,8 @@ If you step back and think about how the app works, you may make an educated gue
 
 **Event Listener Breakpoints** are just one of many types of breakpoints available in DevTools.  Memorize all the different types to help you debug different scenarios as quickly as possible.  <!--  To learn when and how to use each type, navigate to [Pause your code with breakpoints][JSBreakpoints].  -->
 
+
+<!-- ====================================================================== -->
 ## Step 4: Step through the code
 
 One common cause of bugs is when a script runs in the wrong order.  Stepping through your code allows you to walk through the runtime of your code.  You walk through one line at a time to help you figure out exactly where your code is running in a different order than you expect.  Try it now:
@@ -132,6 +140,8 @@ One common cause of bugs is when a script runs in the wrong order.  Stepping thr
 
 Reviewing one line at a time is the basic idea of stepping through code.  If you review the code in `get-started.js`, the bug is probably somewhere in the `updateLabel()` function.  Rather than stepping through every line of code, you may use another type of breakpoint to pause the code closer to the probable location of the bug.
 
+
+<!-- ====================================================================== -->
 ## Step 5: Set a line-of-code breakpoint
 
 Line-of-code breakpoints are the most common type of breakpoint.  When you get to the specific line of code you want to pause, use a line-of-code breakpoint.
@@ -149,6 +159,8 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
        DevTools pauses on the line-of-code breakpoint on line 34
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 6: Check variable values
 
 The values of `addend1`, `addend2`, and `sum` look suspicious.  The values are wrapped in quotes.  The quotations mean that the value is a string, which is a good hypothesis to explain the cause of the bug.  Gather more information about the situation.  DevTools provides many tools for examining variable values.
@@ -191,6 +203,8 @@ The **Console** allows you to view `console.log()` output.  You can also use the
        The **Console** tool, after evaluating `parseInt(addend1) + parseInt(addend2)`
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 7: Apply a fix
 
 We've identified a possible fix for the bug.  Next, edit the JavaScript code directly within the DevTools UI and then rerun the demo to test the fix, as follows.
@@ -204,6 +218,8 @@ We've identified a possible fix for the bug.  Next, edit the JavaScript code dir
 > [!CAUTION]
 > This workflow only applies a fix to a local copy of the code sent from the server.  When debugging your project, after you identify the fix, you still need to apply that fix to the code on the server, such as by editing your local source code and then re-deploying your fixed code to the server.
 
+
+<!-- ====================================================================== -->
 ## Next steps
 
 Congratulations!  You now know how to make the most of Microsoft Edge DevTools when debugging JavaScript.  The tools and methods you learned in this article may save you countless hours.

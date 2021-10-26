@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 [HTTP Cookies][MDNHTTPCookies] are mainly used to manage user sessions, store user personalization preferences, and track user behavior.  Cookies are also the cause of all of the annoying **this page uses cookies** consent forms that are found across the web.  The following guide teaches you how to view, edit, and delete the HTTP cookies for a webpage with [Microsoft Edge DevTools][MicrosoftEdgeDevTools].
 
+
+<!-- ====================================================================== -->
 ## Open the Cookies pane
 
 1.  [Open DevTools][DevToolsOpen].
@@ -40,6 +42,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
        Figure 2:  The Cookies pane
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Fields
 
 The **Cookies** table contains the following fields.
@@ -55,6 +59,8 @@ The **Cookies** table contains the following fields.
 *   **SameSite**.  Contains `strict` or `lax` if the cookie is using the experimental [Samesite][MDNHTTPCookiesSamesite] attribute.
 *   **Priority**.  Contains `low`, `medium` (default), or `high` if the cookie is using the deprecated [cookie Priority][ChromiumIssue232693] attribute.
 
+
+<!-- ====================================================================== -->
 ## Filter cookies
 
 Use the **Filter** text box to filter cookies by **Name** or **Value**.  Filtering by other fields is not supported.
@@ -63,6 +69,8 @@ Use the **Filter** text box to filter cookies by **Name** or **Value**.  Filteri
    Figure 3:  Filtering out any cookies that do not contain the text `ID`
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Edit a cookie
 
 The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields are editable.
@@ -72,6 +80,8 @@ Double-click a field to edit it.
    Figure 4:  Setting the name of a cookie to `DEVTOOLS!`
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Delete cookies
 
 Choose a cookie and choose **Delete Selected** (![Delete Selected](../media/delete-icon.msft.png)) to delete the specific cookie.

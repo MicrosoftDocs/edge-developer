@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 There are many ways to open Microsoft Edge DevTools, helping you quickly access different parts of the DevTools UI.
 
+
+<!-- ====================================================================== -->
 ## Open Microsoft Edge DevTools
 
 To open DevTools, use either of the following options.
@@ -41,6 +43,8 @@ For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][D
    Open DevTools from the Microsoft Edge main menu
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Open the Elements panel to inspect the DOM or CSS
 
 Either of the following tasks allow you to inspect the styles or attributes of a [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) node.
@@ -54,16 +58,22 @@ Either of the following tasks allow you to inspect the styles or attributes of a
 
 <!--Navigate to [Get Started With Viewing And Changing CSS][GetStartedCSS].  -->
 
+
+<!-- ====================================================================== -->
 ## Open the Console panel
 
 To open the [Console][DevtoolsConsoleIndex] panel to view logged messages or run JavaScript, select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS). For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].
 
 <!--Navigate to [Get Started With The Console][ConsoleGetStarted].  -->
 
+
+<!-- ====================================================================== -->
 ## Open the previous panel
 
 To jump to the previously open panel, select `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevtoolsShortcutsIndex].
 
+
+<!-- ====================================================================== -->
 ## Auto-open DevTools on every new tab
 
 To auto-open DevTools on every new tab, open Microsoft Edge from the command line and pass the `--auto-open-devtools-for-tabs` flag.
@@ -102,6 +112,8 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 
 * * *
 
+
+<!-- ====================================================================== -->
 ## Toggle the F12 keyboard shortcut on or off
 
 To change the `F12` keyboard shortcut setting that opens the DevTools, complete the following actions:

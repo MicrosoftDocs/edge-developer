@@ -18,6 +18,8 @@ This article describes the following concepts.
 *   The user experience for redirection
 *   Request an update to the list
 
+
+<!-- ====================================================================== -->
 ## Why is a website added to the IE compatibility list?
 
 The IE compatibility List only adds a website when the following actions occur.
@@ -25,6 +27,8 @@ The IE compatibility List only adds a website when the following actions occur.
 *   Shows an IE user a message suggesting the user should use a different browser for compatibility reasons.
 *   Owner requests to add the website to the IE compatibility list.
 
+
+<!-- ====================================================================== -->
 ## Redirection experience
 
 On redirection to Microsoft Edge, the user is shown the one-time dialog in the next screenshot.  The dialog provides the user with the following information.
@@ -74,6 +78,8 @@ When a website is redirected from Internet Explorer to Microso
 > [!NOTE]
 > After a redirection, users may continue to use IE for websites that are not on the IE compatibility list.
 
+
+<!-- ====================================================================== -->
 ## Request an update to the IE compatibility list
 
 The IE compatibility list is an XML file on [microsoft.com][MicrosoftOfficialHome].  The list is regularly updated in response to user and website developer requests to have websites added or removed.  Updates to the list are automatically downloaded to user machines.

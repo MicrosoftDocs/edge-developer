@@ -27,12 +27,16 @@ Complete these interactive tutorials to learn the basics of viewing and changing
 
 This tutorial assumes that you know the difference between the DOM and HTML. Navigate to [Appendix: HTML versus the DOM](#appendix-html-versus-the-dom) for an explanation.
 
+
+<!-- ====================================================================== -->
 ## Open DOM examples
 
 1.  Hold `Control` (Windows, Linux) or `Command` (macOS) and choose **DOM Examples** to open in a new tab.
 
     [DOM Examples][GlitchDomExamples]
 
+
+<!-- ====================================================================== -->
 ## View DOM nodes
 
 The DOM Tree of the Elements panel is where you do all DOM-related activities in DevTools.
@@ -114,6 +118,8 @@ You may search the DOM Tree by string, CSS selector, or XPath selector.
 
 As mentioned above, the Search bar also supports CSS and XPath selectors.
 
+
+<!-- ====================================================================== -->
 ## Edit the DOM
 
 You may edit the DOM on the fly and review how the changes affect the page.
@@ -211,6 +217,8 @@ Select `Delete` to delete a node.
     1.  Select the `Delete` key.  The node is deleted.
     1.  Select `Control`+`Z` (Windows, Linux) or `Command`+`Z` (macOS).  The last action is undone and the node reappears.
 
+
+<!-- ====================================================================== -->
 ## Access nodes in the Console
 
 DevTools provides a few shortcuts for accessing DOM nodes from the Console, or getting JavaScript references to each one.
@@ -262,6 +270,8 @@ Copy the JavaScript path to a node when you need to reference it in an automated
            The result of the **Copy JS Path** expression
         :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Break on DOM changes
 
 DevTools enables you to pause the JavaScript of a page when the JavaScript modifies the DOM.
@@ -307,6 +317,8 @@ After you put a subtree modification breakpoint on a node, DevTools pauses the p
     1.  Choose **Add Child**.  The code pauses because a `<li>` node was added to the list.
     1.  Choose **Resume Script** (![Resume Script](../media/resume-script-icon.msft.png)).
 
+
+<!-- ====================================================================== -->
 ## Next steps
 
 That covers most of the DOM-related features in DevTools.  You are able to discover the rest of the features by hovering on nodes in the DOM Tree, opening the contextual menu (right-click), and experimenting with the other options that were not covered in this tutorial.  Navigate to [Elements panel keyboard shortcuts][DevToolsShortcutsElements].
@@ -315,6 +327,8 @@ Check out the [Microsoft Edge DevTools homepage][MicrosoftEdgeDevTools] to disco
 
 <!--Navigate to [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->
 
+
+<!-- ====================================================================== -->
 ## Appendix: HTML versus the DOM
 
 The following section quickly explains the difference between HTML and the DOM.
@@ -386,6 +400,8 @@ The HTML for the page is now different than the DOM.  In other words, HTML repre
 Navigate to [Introduction to the DOM][MDNIntroductionToDOM] to learn more.
 
 <!--
+
+<!-- ====================================================================== -->
 ## Appendix: Scroll into view
 
 This is a continuation of the [Scroll into view](#scroll-into-view) section.  Follow the instructions below to complete the section.
@@ -398,6 +414,8 @@ This is a continuation of the [Scroll into view](#scroll-into-view) section.  Fo
     :::image-end:::
     -->
 
+
+<!-- ====================================================================== -->
 ## Appendix: Missing options
 
 Many of the instructions in this tutorial instruct you to hover on a node in the DOM Tree, open the contextual menu (right-click), and then choose an option from the context menu that pops up.  If the specified option in the context menu is not displayed, try hovering away from the node text and opening the contextual menu (right-click).

@@ -26,6 +26,8 @@ ms.localizationpriority: high
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
+
+<!-- ====================================================================== -->
 ## Group tools together in Focus Mode
 
 <!-- Title: Grouping the tools in Focus Mode  -->
@@ -39,6 +41,8 @@ To turn on the experiment, navigate to [Turning on experimental features][Devtoo
    Display the **Activity Bar**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Learn about DevTools with informative tooltips
 
 <!-- Title: DevTools Tooltips  -->
@@ -50,6 +54,8 @@ The DevTools Tooltips feature helps you learn about all the different tools and 
    Choose the Help (`?`) icon in the **Activity Bar** to display tooltips
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Customize keyboard shortcuts in Settings
 
 <!-- Title: Change keyboard shortcuts in Settings  -->
@@ -70,6 +76,8 @@ For more information about customizing and editing shortcuts, navigate to [Custo
    Customize keyboard shortcuts in the [DevTools Settings][DevtoolsCustomizeIndexSettings] on Shortcuts with a shortcut in edit mode
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Microsoft Edge DevTools for Visual Studio Code extension update 1.1.4
 
 <!-- Title: Edge Devtools for Visual Studio code extension update 1.1.4  -->
@@ -98,6 +106,8 @@ The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketpl
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Improved CSS flexbox editing with visual flexbox editor and multiple overlays
 
 <!-- Title: Try different CSS flexbox layouts with the visual flexbox editor  -->
@@ -126,6 +136,8 @@ DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` 
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Keyboard navigation improvements for network requests
 
 <!-- Title: Navigate the request initiator chain in the Network tool with the keyboard  -->
@@ -148,6 +160,8 @@ In Microsoft Edge version 90, you may expand or collapse the chain of requests u
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Filtering in the Console is more consistent
 
 <!-- Title: Console improvements make filtering more consistent  -->
@@ -168,6 +182,8 @@ While you filter with the [Console Sidebar][DevtoolsConsoleReferenceOpenConsoleS
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
@@ -290,6 +306,8 @@ To turn on the experiment, navigate to [Turning on experimental features][Devtoo
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.

@@ -28,6 +28,8 @@ The tracking prevention feature in Microsoft Edge is made up of three main compo
 
 Each of the components are explored and explained in detail on this page.
 
+
+<!-- ====================================================================== -->
 ## Classification
 
 The first component of the tracking prevention feature in Microsoft Edge is classification.  To classify online trackers and group them into categories, Microsoft Edge uses the [Disconnect][DisconnectMain] open source [tracking protection lists][GitHubDisconnectMeTrackingProtection].  The lists are delivered via the "Trust Protection Lists" component, which is viewable at `edge://components`.  After being downloaded, the lists are stored on disk where you may use them to determine whether/how a particular URL is classified.
@@ -48,6 +50,8 @@ To determine if a URL is considered a tracker by the classification system in Mi
 
 If any of those host names match with a host name on the [Disconnect][DisconnectMain] [lists][GitHubDisconnectMeTrackingProtection], Microsoft Edge proceeds with evaluating enforcement actions to prevent users from being tracked.
 
+
+<!-- ====================================================================== -->
 ## Enforcement
 
 To provide protection from tracking actions on the web, Microsoft Edge takes two enforcement actions against classified trackers:
@@ -61,6 +65,8 @@ A user may choose the page info flyout icon on the left side of the address bar 
 
 How the enforcements are applied depends on what level of tracking prevention the user selected and the mitigations that may apply.
 
+
+<!-- ====================================================================== -->
 ## Mitigations
 
 To ensure that web compatibility is preserved as much as possible, Microsoft Edge has three mitigations to help balance enforcements in specific situations.  These are the [Org Relationship mitigation](#org-relationship-mitigation), the [Org Engagement mitigation](#org-engagement-mitigation), and the [CompatExceptions List](#the-compatexceptions-list).
@@ -101,6 +107,8 @@ To avoid maintaining this list moving forwards, Microsoft is currently working o
 
 After the [Storage Access API][GitHubMsExplainersStorageAccessApi] is implemented, Microsoft will deprecate the CompatExceptions list and reach out to the affected sites both to make them aware of the issues, and to request that they use the [Storage Access API][GitHubMsExplainersStorageAccessApi] moving forward.
 
+
+<!-- ====================================================================== -->
 ## Current tracking prevention behavior
 
 The following table shows the enforcement actions and mitigations that are applied to each category of classified tracker in Microsoft Edge.
@@ -130,6 +138,8 @@ The following table shows the enforcement actions and mitigations that are appli
 
 In Microsoft Edge 79, the default behavior was to apply Strict mode protections in InPrivate.  In Microsoft Edge 80, this behavior was replaced by a switch in `edge://settings/privacy` that allows users to decide whether to apply Strict mode protections or to keep their regular settings while browsing InPrivate.
 
+
+<!-- ====================================================================== -->
 ## Determining whether/how a particular URL is classified
 
 The easiest way to determine whether a specific URL is classified as a known tracker is to perform the following steps.
@@ -156,6 +166,8 @@ The easiest way to determine whether a specific URL is classified as a known tra
 >
 > macOS: `/Applications/Microsoft Edge.app/Contents/Frameworks/Microsoft Edge Framework.framework/Libraries/Trust Protection Lists`
 
+
+<!-- ====================================================================== -->
 ## Frequently Asked Questions
 
 The following section contains answers to frequently asked questions about the tracking prevention feature in Microsoft Edge.

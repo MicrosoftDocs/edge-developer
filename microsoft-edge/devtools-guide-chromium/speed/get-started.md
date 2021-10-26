@@ -23,15 +23,21 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Optimize website speed with Microsoft Edge DevTools
 
+
+<!-- ====================================================================== -->
 ## Goal of tutorial
 
 This tutorial teaches you how to use Microsoft Edge DevTools to find ways to make your websites load faster.
 
+
+<!-- ====================================================================== -->
 ## Prerequisites
 
 *   You should have basic web development experience, similar to what is taught in this [Introduction to Web Development class][CourseraIntroductionWebDevelopmentClass].
 *   You do not need to know anything about load performance.  You learn about it in this tutorial.
 
+
+<!-- ====================================================================== -->
 ## Introduction
 
 This is Tony.  Tony is very famous in cat society.  He has built a website so that his fans are able to learn about his favorite foods.  His fans love the site, but Tony keeps hearing complaints that the site loads slowly.  Tony has asked you to help him speed the site up.
@@ -40,6 +46,8 @@ This is Tony.  Tony is very famous in cat society.  He has built a website so th
    Tony the cat
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 1: Audit the site
 
 Whenever you set out to improve the load performance of a site, **always start with an audit**.
@@ -178,6 +186,8 @@ The **Passed Audits** section shows you what the site is doing correctly.  Choos
    The **Passed Audits** section
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 2: Experiment
 
 The Opportunities section of your audit report gives you tips on how to improve the performance of the page.  In this section, you implement the recommended changes to the codebase, auditing the site after each change to measure how it affects site speed.
@@ -500,6 +510,8 @@ In general, the **Performance** tool is the most common way to understand what a
 
 If you prefer an approach that feels more like `console.log()`, the [User Timing API][MDNUserTimingApi] enables you to arbitrarily mark up certain phases of your app lifecycle, in order to track how long each of those phases takes.
 
+
+<!-- ====================================================================== -->
 ## Summary
 
 *   Whenever you set out to optimize the load performance of a site, always start with an audit.  The audit establishes a baseline, and gives you tips on how to improve.

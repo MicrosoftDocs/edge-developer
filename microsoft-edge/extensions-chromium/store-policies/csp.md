@@ -27,6 +27,8 @@ On the web, such a policy is defined via an HTTP header or `meta` element.  Insi
 
 > For full details regarding the CSP syntax, please take a look at the [Content Security Policy specification][W3CContentSecurityPolicy] , and the ["An Introduction to Content Security Policy"][HTML5RocksIntroductionContentSecurityPolicy] article on HTML5Rocks.
 
+
+<!-- ====================================================================== -->
 ## Default Policy Restrictions
 
 Packages that do not define a `manifest_version` do not have a default content security policy.  Packages that choose `manifest_version` 2, have a the follwoing default content security policy.
@@ -181,6 +183,8 @@ Download the file, include it in your package, and write:
 </html>
 ```
 
+
+<!-- ====================================================================== -->
 ## Relaxing the default policy
 
 **Inline Script**
@@ -223,12 +227,16 @@ The policy against `eval()` and related functions like `setTimeout(String)`, `se
 
 However, you should avoid relaxing policies.  The functions are notorious XSS attack vectors.
 
+
+<!-- ====================================================================== -->
 ## Tightening the default policy
 
 You may, of course, tighten this policy to whatever extent your Extension allows in order to increase security at the expense of convenience.  To specify that your Extension are able to only load resources of any type (images, and so on) from the associated Extension package, for example, a policy of `default-src 'self'` may be appropriate.
 
 <!-- The Mappy sample Extension is a good example of an Extension that is been locked down above and beyond the defaults.  -->
 
+
+<!-- ====================================================================== -->
 ## Content Scripts
 
 The policy being discussing applies to the background pages and event pages of the Extension.  How the content scripts apply to the content scripts of the Extension is more complicated.

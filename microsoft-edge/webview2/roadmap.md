@@ -28,16 +28,20 @@ The WebView2 team is planning the following major efforts for future updates.
 * Xbox Preview
 * HoloLens Preview
 
+
+<!-- ====================================================================== -->
 ## WebView2 Runtime and Installer
 
 Evergreen distribution mode allows you to target or chain-install the WebView2 Runtime onto your user's machine.  The Evergreen WebView2 Runtime and installer has reached General Availability (GA).  For more information, navigate to [Distribute a WebView2 app and the WebView2 Runtime][ConceptDistribution].
 
 
+<!-- ====================================================================== -->
 ## Fixed version
 
 Fixed version distribution mode allows you to package the Microsoft Edge binaries <!--(a specific version of the WebView2 Runtime)--> inside your native application.  The Fixed Version has reached General Availability (GA).  For more information, navigate to [Distribute a WebView2 app and the WebView2 Runtime][ConceptDistribution].
 
 
+<!-- ====================================================================== -->
 ## General availability
 
 ### Win32 C/C++

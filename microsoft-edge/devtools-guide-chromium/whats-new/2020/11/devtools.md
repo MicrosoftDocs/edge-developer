@@ -26,6 +26,8 @@ ms.localizationpriority: high
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
+
+<!-- ====================================================================== -->
 ## Microsoft Edge and Microsoft Edge Driver now available on Linux
 
 <!-- Title: Microsoft Edge and Microsoft Edge Driver on Linux  -->
@@ -39,6 +41,8 @@ If you are using a Linux environment in your continuous integration and delivery
    DevTools in Microsoft Edge on Linux
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Improved webhint and platform tips in the Issues tool
 
 <!-- Title: Improvements to Issues tool and webhint integration  -->
@@ -65,6 +69,8 @@ To help you review issues revealed by [webhint][WebhintMain], the **Issues** too
    **Issues** tool
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Composited Layers are now in 3D View
 
 <!-- Title: 3D View is now integrated with Composited Layers  -->
@@ -78,6 +84,8 @@ You may now visualize **Layers** content alongside z-index values and the Docume
    **Composited Layers** pane
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## CSS variable definitions in Styles pane
 
 <!-- Title: Jump to CSS variable definitions  -->
@@ -101,6 +109,8 @@ In the **Styles** pane, [CSS variables][MdnUsingCssCustomProperties] now link di
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Service worker debugging improvements
 
 <!-- Title:  Service worker debugging improvements in the Network, Application, and Sources tools  -->
@@ -168,6 +178,8 @@ To locate the initiator of the request, use the call stack of your JavaScript co
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Copy property value of a network request
 
 <!-- Title: Copy response JSON in Network tool using the contextual menu  -->
@@ -193,6 +205,8 @@ To copy the property value to your clipboard, navigate to [Copy formatted respon
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Customize multi-press keyboard shortcuts
 
 <!-- Title: Customize multi-press keyboard shortcuts  -->
@@ -208,6 +222,8 @@ For example, the red highlight displays a multi-press keyboard shortcut customiz
    Multi-press keyboard shortcuts
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## DevTools now match browser language
 
 In Microsoft Edge version 87, if you turned on the **Match browser language** setting in [DevTools Settings][DevtoolsCustomizeIndexSettings], DevTools did not match the browser language.  In Microsoft Edge version 88, DevTools now matches the browser language if you turn on the **Match browser language** setting.  For more information about the **Match browser language** DevTools Setting, navigate to [Change DevTools language settings][DevtoolsCustomizeLocalization].
@@ -216,6 +232,8 @@ In Microsoft Edge version 87, if you turned on the **Match browser language** se
    **Match browser language** DevTools setting in Japanese
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
@@ -336,6 +354,8 @@ DevTools now consistently use `kB` for displaying sizes of files and memory.  Pr
 
 For example, the **Network** tool previously used `kB` in the labels, but used `KiB` in calculations.  Your feedback showed that this inconsistency caused confusion.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1035309][CR1035309].
 
+
+<!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.

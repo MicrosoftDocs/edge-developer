@@ -34,6 +34,8 @@ Identify expensive functions using the **Memory** tool.
 *   Record exactly which functions were called and how much memory each requires with Allocation Sampling in the **Memory** tool.
 *   Visualize your profiles as a flame chart.
 
+
+<!-- ====================================================================== -->
 ## Record a Sampling Profile
 
 If you notice jank in your JavaScript, collect a Sampling Profile.  Sampling Profiles show where running time is spent on functions in your page.
@@ -47,6 +49,8 @@ If you notice jank in your JavaScript, collect a Sampling Profile.  Sampling Pro
 > [!NOTE]
 > You may also use the [Console Utilities API][DevtoolsConsoleUtilities] to record and group profiles from the command line.
 
+
+<!-- ====================================================================== -->
 ## View Sampling Profile
 
 When you finish recording, DevTools automatically populates the **Memory** panel under **SAMPLING PROFILES** with the data from your recording.
@@ -81,6 +85,8 @@ To exclude a function from your Sampling Profile, choose it and then choose the 
 
 Choose the **restore all functions** (![restore all functions](../media/restore-icon.msft.png)) button to restore all excluded functions back into the recording.
 
+
+<!-- ====================================================================== -->
 ## View Sampling Profile as Chart
 
 The Chart view provides a visual representation of the Sampling Profile over time.

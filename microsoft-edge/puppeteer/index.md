@@ -15,6 +15,8 @@ keywords: microsoft edge, web development, developer, tools, automation, test
 
 By default, when you install Puppeteer, the installer downloads a recent version of [Chromium][ChromiumHome], the open-source browser that [Microsoft Edge is also built upon][MicrosoftBlogsWindowsExperience20181206].  If you have Microsoft Edge  installed, you may use [puppeteer-core][PuppeteerApivscore].  `puppeteer-core` is a lightweight version of Puppeteer that launches an existing browser installation, like Microsoft Edge.  To download Microsoft Edge, navigate to [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload].
 
+
+<!-- ====================================================================== -->
 ## Installing puppeteer-core
 
 You may add `puppeteer-core` to your website or app with one of the following commands.
@@ -27,6 +29,8 @@ npm i puppeteer-core
 yarn add puppeteer-core
 ```
 
+
+<!-- ====================================================================== -->
 ## Launch Microsoft Edge with puppeteer-core
 
 > [!NOTE]

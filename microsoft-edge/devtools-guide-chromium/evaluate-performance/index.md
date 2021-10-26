@@ -30,6 +30,8 @@ Runtime performance is how your page performs when it is running, as opposed to 
 
 <!--todo: add rail link when section is ready -->
 
+
+<!-- ====================================================================== -->
 ## Get started
 
 In the following tutorial, you open DevTools on a live page and use the **Performance** panel to find a performance bottleneck on the page.
@@ -102,6 +104,8 @@ When you ran the optimized version of the page, the blue icons move faster.  Why
 
 Wow, that is an overwhelming amount of data.  do not worry, soon the process makes more sense.
 
+
+<!-- ====================================================================== -->
 ## Analyze the results
 
 After you record the performance of the page, measure the quality of the performance of the page and find the any causes.
@@ -214,6 +218,8 @@ Using the workflows and tools that you just learned, choose **Optimize** on the 
 
 <!--todo: add rendering section when available -->
 
+
+<!-- ====================================================================== -->
 ## Next steps
 
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.

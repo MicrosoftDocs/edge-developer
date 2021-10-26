@@ -19,6 +19,8 @@ To acquire the extension and native app host, you have two distribution models.
 
 To create your extension to send and receive messages with native app hosts, complete the following steps.
 
+
+<!-- ====================================================================== -->
 ## Step 1 - Add permissions to the extension manifest
 
 Add the `nativeMessaging` permission to the **manifest.json** file of the extension.  The following code snippet is an example of **manifest.json**.
@@ -41,6 +43,8 @@ Add the `nativeMessaging` permission to the **manifest.json** file of the extens
 }
 ```
 
+
+<!-- ====================================================================== -->
 ## Step 2 - Create your native messaging host manifest file
 
 Native apps must provide a native messaging host manifest file.  The manifest file contains the following information.
@@ -157,6 +161,8 @@ To sideload your extension during development and retrieve `microsoft_catalog_ex
 
 When you're ready to distribute your extension to users, publish your extension to the Microsoft Edge Add-ons website.  The extension ID of the published extension may differ from the ID used while sideloading your extension.  If the ID changed, update `allowed_origins` in the host manifest file with the ID of your published extension.
 
+
+<!-- ====================================================================== -->
 ## Step 3 - Copy the native messaging host manifest file to your system
 
 The final step involves copying the native messaging host manifest file to your computer, and ensuring the manifest file is correctly configured.  To ensure your manifest file is placed in the expected location, complete the following the actions.  The location varies by platform.

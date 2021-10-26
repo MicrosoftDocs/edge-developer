@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
+
+<!-- ====================================================================== -->
 ## Improving DevTools localization
 
 To meet your translation needs, the Microsoft Edge DevTools team is focused on improving translation quality.  Starting in Microsoft Edge version 87, several strings and terms are locked and do not change even when the rest of the DevTools are displayed in other languages.  The list of affected strings and terms include the following.
@@ -40,6 +42,8 @@ To meet your translation needs, the Microsoft Edge DevTools team is focused on i
    **Network** pane with non-localized filters
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Move tools between top and bottom panels
 
 DevTools now supports moving tools between the top and bottom panels.  Customize your DevTools and improve your productivity by viewing any combination of two tools at the same time.  For example, view the **Elements** and the **Sources** tools at the same time (by moving the **Sources** tool to the bottom).  To review the history of this feature in the Chromium open-source project, navigate to Issue [#1075732][CR1075732].
@@ -61,6 +65,8 @@ DevTools now supports moving tools between the top and bottom panels.  Customize
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Save and export using the Network Console
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature":::
@@ -87,6 +93,8 @@ To review real-time updates on this feature in the Chromium open-source project,
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Improved CSS Grid tooling
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature":::
@@ -106,6 +114,8 @@ The features are turned on by default.  For more information about the features,
    **Layout** tool with grids
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Customize keyboard shortcuts in Settings
 
 :::image type="complex" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature":::
@@ -120,6 +130,8 @@ To enable the experiment, navigate to [Turning on Experimental features][Devtool
    Custom shortcut for pausing a script
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Introducing the Microsoft Edge Tools for Visual Studio Code extension
 
 The **Elements for Visual Studio Code** and **Network for Visual Studio Code** extensions are now merged into the new [Microsoft Edge Developer Tools for Visual Studio Code][VisualStudioCodeMarketplaceMsEdgedevtools] extension.  Use the Microsoft Edge DevTools for the following activities without leaving Microsoft Visual Studio Code.
@@ -143,6 +155,8 @@ With the extension, launch Microsoft Edge, connect to an existing instance of th
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
@@ -265,6 +279,8 @@ To enable this experiment, under **Settings** > **Experiments**, choose the **CS
    Low color contrast issues
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.

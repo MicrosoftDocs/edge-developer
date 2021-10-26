@@ -36,6 +36,8 @@ If you want to browse features, navigate to [Network Reference][DevtoolsNetworkR
 > [!VIDEO embed/e1gAyQuIFQo]
 -->
 
+
+<!-- ====================================================================== -->
 ## When to use the Network panel
 
 In general, use the Network panel when you need to make sure that resources are being downloaded or uploaded as expected.  The most common use cases for the Network panel are:
@@ -45,6 +47,8 @@ In general, use the Network panel when you need to make sure that resources are 
 
 If you are looking for ways to improve page load performance, **do not** start with the **Network** tool.  There are many types of load performance issues that are not related to network activity.  Start with the Audits panel because it gives you targeted suggestions on how to improve your page.  Navigate to [Optimize Website Speed][DevtoolsSpeedGetStarted].
 
+
+<!-- ====================================================================== -->
 ## Open the Network panel
 
 To get the most out of this tutorial, open up the demo and try out the features on the demo page.
@@ -84,6 +88,8 @@ To get the most out of this tutorial, open up the demo and try out the features 
 
 Right now the **Network** tool is empty.  DevTools only logs network activity after you open it and no network activity has occurred since you opened DevTools.
 
+
+<!-- ====================================================================== -->
 ## Log network activity
 
 To view the network activity that a page causes:
@@ -116,6 +122,8 @@ To view the network activity that a page causes:
        A new resource in the **Network Log**
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Show more information
 
 The columns of the Network Log are configurable.  You can hide columns that you are not using.
@@ -130,6 +138,8 @@ There are also many columns that are hidden by default which you might find usef
     > [!TIP]
     > To review the full URL of a resource, hover on the cell in the **Name** column.
 
+
+<!-- ====================================================================== -->
 ## Simulate a slower network connection
 
 The network connection of the computer that you use to build sites is probably faster than the network connections of the mobile devices of your users.  By throttling the page, you get a better idea of how long a page takes to load on a mobile device.
@@ -153,6 +163,8 @@ The network connection of the computer that you use to build sites is probably f
     > [!NOTE]
     > The **Empty Cache And Hard Reload** workflow is only available when DevTools is open.
 
+
+<!-- ====================================================================== -->
 ## Capture screenshots
 
 Screenshots display how a webpage looks over time while it loads.
@@ -179,6 +191,8 @@ Screenshots display how a webpage looks over time while it loads.
 1.  Select (![Network settings](../media/settings-icon.msft.png)) again and turn off the **Capture screenshots** checkbox to close the Screenshots pane.
 1.  Refresh the page again.
 
+
+<!-- ====================================================================== -->
 ## Inspect the details of the resource
 
 Select a resource to learn more information about it.
@@ -218,6 +232,8 @@ Select a resource to learn more information about it.
        The **Close** button
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Search network headers and responses
 
 Use the **Search** pane when you need to search the HTTP headers and responses of all resources for a certain string or regular expression.
@@ -246,6 +262,8 @@ For example, suppose you want to verify that your resources are using reasonable
 
 1.  Close the Search pane and the **Headers** panel.
 
+
+<!-- ====================================================================== -->
 ## Filter resources
 
 DevTools provides numerous workflows for filtering out resources that are not relevant to the task at hand.
@@ -310,6 +328,8 @@ To focus in on a certain type of file, such as stylesheets:
 
 For other filtering workflows, navigate to [Filter requests][DevtoolsNetworkReferenceFilter].
 
+
+<!-- ====================================================================== -->
 ## Block requests
 
 How does a page look and behave when some of the page resources are not available?  Does it fail completely, or is it still somewhat functional?  Block requests to find out:
@@ -345,6 +365,8 @@ How does a page look and behave when some of the page resources are not availabl
 
 1.  Deselect the **Enable request blocking** checkbox.
 
+
+<!-- ====================================================================== -->
 ## Conclusion
 
 Congratulations, you have completed the tutorial.  You now know how to use the **Network** tool in the Microsoft Edge DevTools!
