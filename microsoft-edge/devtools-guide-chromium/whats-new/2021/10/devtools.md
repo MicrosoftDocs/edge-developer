@@ -93,9 +93,97 @@ If you are on Windows, Linux, or macOS, consider using the [Canary preview chann
 
 
 <!-- ====================================================================== -->
-> [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New In DevTools (Chrome 95)](https://developer.chrome.com/blog/new-in-devtools-95) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors/jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
+## Announcements from the Chromium project
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
-This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+The following are some of the additional features that are available in Microsoft Edge version 95 that were contributed to the open-source Chromium project.
+
+
+<!-- ====================================================================== -->
+## New CSS length authoring tools
+
+DevTools added an easier yet more flexible way to update lengths in CSS.
+
+In the Styles pane, look for any CSS property with length, such as `height` or `padding`.
+
+Hover over the unit type, and notice that the unit type is underlined.  Click the unit type to select a unit type from the dropdown.
+
+<!-- mp4 video here, with no alt text -->
+
+When you hover over the unit value, the mouse pointer changes to a horizontal cursor.  Drag horizontally to increase or decrease the value.  To adjust the value by 10, hold the `Shift` key while dragging.
+
+<!-- mp4 video here, with no alt text -->
+
+You can still edit the unit value as text—just<!-- em dash --> click the value and start editing.
+
+<!-- mp4 video here, with no alt text -->
+
+For videos demonstrating this feature, see [New CSS length authoring tools](https://developer.chrome.com/blog/new-in-devtools-95/#length) at _What's New In DevTools (Chrome 95)_.
+
+Chromium issues: [1126178](https://crbug.com/1126178), [1172993](https://crbug.com/1172993).
+
+
+<!-- ====================================================================== -->
+## Improved the display of properties
+
+DevTools improves the display of properties by:
+*  Always bolding and sorting own properties first, in the **Console**, **Sources** panel, and **Properties** pane.
+*  Flattening the properties display in the **Properties** pane.
+
+For example, the snippet below creates an [URL](https://developer.mozilla.org/docs/Web/API/URL) object `link` with two own properties: `user` and `access`, and then updates the value of an inherited property, `search`.
+
+```javascript
+/* example.js */
+const link = new URL('https://goo.gle/devtools-blog');
+link.user = { id: 1, name: 'Jane Doe' };
+link.access = 'admin';
+link.search = `?access=${link.access}`;
+```
+
+Try logging `link` in the **Console**.  Own properties are now bold and are first in the sort order.  These changes make it easier to spot custom properties, especially for [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) (such as `URL`) that have many inherited properties.
+
+<!-- image here, with alt text = "Own properties are bold and sorted first" -->
+
+Apart from these changes, the properties in the Properties pane are also flattened now for a better experience when debugging DOM properties, especially for [Web components](https://www.webcomponents.org/introduction).
+
+<!-- image here, with alt text = "Flatten properties" -->
+
+For Chrome screen captures, see [Improved the display of properties](https://developer.chrome.com/blog/new-in-devtools-95/#properties) at _What's New In DevTools (Chrome 95)_.
+
+Chromium issues: [1076820](https://crbug.com/1076820), [1119900](https://crbug.com/1119900).
+
+
+<!-- ====================================================================== -->
+## Snippets are now sorted in the Sources panel
+
+Snippets in the **Snippets** pane in the **Sources** panel are now sorted alphabetically.  Previously, the snippets weren't sorted.
+
+Use the snippets feature to run commands quicker.  Watch this video for a tip!  [Chrome 85 - What's New in DevTools](https://youtu.be/NOal2gTzftI?t=176)
+
+<!-- image here, with alt text = "Sorted snippets in the Sources panel" -->
+
+For more information about snippets, see [Run snippets of JavaScript on any webpage with Microsoft Edge DevTools](../../../javascript/snippets.md).
+
+For Chrome screen captures, see [Sort snippets in the Sources panel](https://developer.chrome.com/blog/new-in-devtools-95/#snippets) at _What's New In DevTools (Chrome 95)_.
+
+Chromium issue: [1243976](https://crbug.com/1243976).
+
+
+<!-- ====================================================================== -->
+## Improved UI for DevTools command menu
+
+Do you find it hard to search for a file in the [Command Menu](../../../command-menu/index.md)?  Good news: the **Command Menu** user interface has been enhanced.
+
+Open the **Command Menu** to search for a file with keyboard shortcut `Control+P` in Windows and Linux, or `Command+P` in macOS.
+
+The UI improvements of the Command Menu are still ongoing; stay tuned for more updates.
+
+<!-- image here, with alt text = "Command Menu" -->
+
+For Chrome screen captures, see [Improved UI for DevTools command menu](https://developer.chrome.com/blog/new-in-devtools-95/#command-menu) at _What's New In DevTools (Chrome 95)_.
+
+Chromium issue: [1201997](https://crbug.com/1201997).
+
+
+<!-- ====================================================================== -->
+> [!NOTE]
+> [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)  The "Announcements from the Chromium project" section is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).  That section of this page is a modification based on work that is created and shared by Google per [Site Policies](https://developers.google.com/terms/site-policies).  The original page for those announcements is [What's New In DevTools (Chrome 95)](https://developer.chrome.com/blog/new-in-devtools-95), authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors/jecelynyeen), a Developer advocate working on Chrome DevTools at Google.
