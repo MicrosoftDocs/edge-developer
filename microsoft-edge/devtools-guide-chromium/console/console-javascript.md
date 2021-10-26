@@ -28,6 +28,8 @@ If you select `Enter`, the **Console** runs the JavaScript command, gives you th
    Run several JavaScript expressions in succession
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Autocompletion to write complex expressions
 
 The last example may seem scary, but the **Console** helps you write complex JavaScript using an excellent autocompletion feature.  This feature is a great way to learn about methods you didn't know before.
@@ -45,6 +47,8 @@ To try it, complete the following actions.
    **Console** autocompletion of JavaScript expressions
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Console history
 
 As with many other command-line experiences, you also have a history of commands.  Select `Arrow Up` to display the commands you entered before.  Autocompletion also keeps a history of the commands you previously typed.  You may type the first few letters of earlier commands and your previous choices display in a textbox.
@@ -55,6 +59,8 @@ Also, the **Console** also offers quite a few [utility methods](utilities.md) th
     The `$_` expression in the **Console** always contains the last result
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Multiline edits
 
 By default, the **Console** only gives you one line to write your JavaScript expression.  You code runs when you select `Enter`. The one line limitation may frustrate you.  To work around the one line limitation, select `Shift`+`Enter` instead of `Enter`.  In the following example, the value displayed is the result of all the lines run in order.
@@ -69,6 +75,8 @@ If you start a multiline statement in the **Console**, it gets automatically rec
     **Console** already recognizes multiline expressions using curly braces and indents each for you
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Network requests using top-level await()
 
 Other than in your own scripts, **Console** supports [top level await](https://github.com/tc39/proposal-top-level-await) to run arbitrary asynchronous JavaScript in it.  For example, use the `fetch` API without wrapping the `await` statement with an async function.

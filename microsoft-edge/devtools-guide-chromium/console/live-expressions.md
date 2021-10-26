@@ -12,6 +12,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 **Live Expressions** are an excellent way to monitor JavaScript expressions that change a lot.    Instead of having many Console messages to read and navigate, you may pin your specific JavaScript expressions to the top of the **Console**.
 
+
+<!-- ====================================================================== -->
 ## Add a new live expression
 
 To start, choose the **Create live expression** \(eye\) button next to the **Filter** textbox.  After you choose it, a textbox is displayed for you to enter your new expression in it.
@@ -46,6 +48,8 @@ To change the value again, open and choose the Search textbox on the webpage.
     Navigate to a different element in the webpage to update the **Live Expression**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Remove Live Expressions
 
 A **Live Expression** is available as long as you keep it active.  To get rid of a **Live Expression**, choose the `x` next to it.
@@ -54,6 +58,8 @@ A **Live Expression** is available as long as you keep it active.  To get rid of
     To remove **Live Expressions**, choose the `x` next to it
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Replace Console logging with Live Expressions
 
 You may create as many expressions as you want and persist each across browser sessions and windows.  **Live Expressions** are a way to cut down on noise in your debugging workflow.

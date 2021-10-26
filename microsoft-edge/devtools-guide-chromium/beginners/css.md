@@ -43,6 +43,8 @@ After you complete the tutorial, your site should look like the following figure
    What your site should look like at the end of the tutorial
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Goals
 
 Follow this tutorial to better understand the following concepts and tasks.
@@ -53,6 +55,8 @@ Follow this tutorial to better understand the following concepts and tasks.
 
 You're building a real website.
 
+
+<!-- ====================================================================== -->
 ## Prerequisites
 
 Complete the following prerequisites before doing this tutorial.
@@ -60,6 +64,8 @@ Complete the following prerequisites before doing this tutorial.
 *   Complete [Get Started with HTML and the DOM](./html.md) or make sure that you have understanding of HTML and the DOM already.
 *   Download the [Microsoft Edge](https://www.microsoftedgeinsider.com) web browser.  The following tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.
 
+
+<!-- ====================================================================== -->
 ## Set up your code
 
 To create your site, first do the following steps to set up your code.
@@ -90,6 +96,8 @@ To create your site, first do the following steps to set up your code.
        The **live tab**
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Understand CSS
 
 **CSS** is a computer language that controls the layout and styling of web pages.  The following figure is a paragraph with a border.
@@ -108,6 +116,8 @@ The following code snippet is the HTML and CSS code used to create the paragraph
 
 The HTML attribute `style="border: 1px dashed red; padding: 5px;"` might look new to you.  The rest should look familiar.  If not, complete [Get Started with HTML and the DOM](./html.md) before attempting the following sections.
 
+
+<!-- ====================================================================== -->
 ## Add inline styles
 
 You can use **inline styles** to apply styles to a single element.
@@ -138,6 +148,8 @@ You can use **inline styles** to apply styles to a single element.
        The background color behind the **Home** and **Contact** links is now blue
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Reuse styles on a single page with internal stylesheets
 
 In a previous code snippet, an inline style applied a style to a single `<p>` tag.
@@ -260,6 +272,8 @@ The following steps describe how you can use commas to add multiple selectors to
        The text **Contact Me!** now has the same font as the **Home** and **Contact** links
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Experiment with DevTools
 
 As you continue your journey to become an expert in web development, you may find that CSS is tricky.  You might write some code that doesn't display what you intended.  Microsoft Edge DevTools makes it easy to experiment by displaying your changes in the page in real time.
@@ -365,6 +379,8 @@ To add new rulesets in DevTools
        Hover on the Home link to reveal its green background
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Reuse styles across pages with external stylesheets
 
 In a previous step, you added the following code snippet as an internal stylesheet to `contact.html`.
@@ -474,6 +490,8 @@ What if you wanted to style `index.html` the same way?  What if you had a large 
        The contact page
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Use a CSS framework
 
 **CSS frameworks** are collections of styles built by other developers that make it easier to create attractive web sites.  Instead of defining styles yourself, a framework provides you a collection of styles that you are able to use on your page elements.
@@ -591,6 +609,8 @@ Complete the following steps to use other Bootstrap classes that are useful for 
        The nav content is now to the left of the main content
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Next steps
 
 Congratulations, you're done!

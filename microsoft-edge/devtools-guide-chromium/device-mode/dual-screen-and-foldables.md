@@ -26,6 +26,8 @@ Emulate the devices and toggle between the following postures.
    Emulate Surface Duo in Microsoft Edge
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Turn on experimental APIs
 
 To use the [CSS media screen-spanning feature][DualScreenDocsCssMedia] and [JavaScript getWindowSegments API][DualScreenDocsJSAPI], turn on the `Experimental Web Platform features` flag in Microsoft Edge.  Complete the following steps.
@@ -43,6 +45,8 @@ To use the [CSS media screen-spanning feature][DualScreenDocsCssMedia] and [Java
 >
 > If the **Experimental Web Platform features** flag is turned on in [desktop Microsoft Edge][MicrosoftEdge] and turned off in the [Android Microsoft Edge app][GooglePlayMicrosoftEdge], the behavior of your website or app in the Surface Duo emulator in desktop Microsoft Edge does not match with the [Android Microsoft Edge app][GooglePlayMicrosoftEdge] on [Surface Duo][SurfaceDevicesDuo].  Ensure that the flags match across Android and desktop Microsoft Edge to successfully use the Surface Duo emulator in [desktop Microsoft Edge][MicrosoftEdge].
 
+
+<!-- ====================================================================== -->
 ## Test on foldable and dual-screen devices
 
 When you emulate the [Surface Duo][SurfaceDevicesDuo] in a dual-screen posture in Microsoft Edge, the seam \(the space between the two screens\) is drawn over your website or app.
@@ -63,6 +67,7 @@ The **Experimental Web Platform features** \(![ExperimentalApis](../media/experi
 > *   When you use a [Microsoft Remote Desktop client][RemoteDesktopClientDocs] to connect to a remote PC and emulate the [Surface Duo][SurfaceDevicesDuo] or [Samsung Galaxy Fold][SamsungMobileGalaxyFold], the pointer may shake or stutter.  If you run into the issue, contact the Microsoft Edge DevTools team.
 
 
+<!-- ====================================================================== -->
 ## Additional Resources
 
 Here are additional resources that may help you enhance your website \(or app\) for dual-screen devices.

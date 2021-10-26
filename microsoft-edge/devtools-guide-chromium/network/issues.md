@@ -27,6 +27,8 @@ This guide shows you how to detect network issues or optimization opportunities 
 
 To learn the basics of the **Network** tool, navigate to [Get Started][NetworkPerformance].
 
+
+<!-- ====================================================================== -->
 ## Queued or stalled requests
 
 **Symptoms**
@@ -49,6 +51,8 @@ Too many requests are being made on a single domain.  On HTTP/1.0 or HTTP/1.1 co
 *   Use HTTP/2.  Do not use domain sharding with HTTP/2.
 *   Remove or defer unnecessary requests so that critical requests download earlier.
 
+
+<!-- ====================================================================== -->
 ## Slow Time To First Byte (TTFB)
 
 **Symptoms**
@@ -71,6 +75,8 @@ In the following figure, the long, green bar in the **Waterfall** indicates that
 *   If the connection is slow, consider hosting your content on a CDN or changing hosting providers.
 *   If the server is slow, consider optimizing database queries, implementing a cache, or modifying your server configuration.
 
+
+<!-- ====================================================================== -->
 ## Slow content download
 
 **Symptoms**
