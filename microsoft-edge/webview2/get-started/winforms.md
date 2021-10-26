@@ -189,7 +189,7 @@ Add more controls to your Windows forms from the toolbox, and then process windo
 <!-- ====================================================================== -->
 ## Step 5 - Navigation
 
-Enable users to change the URL that the WebView2 control displays by adding an address bar to the app.
+Enable users to change the URL that the WebView2 control displays, by adding an address bar to the app.
 
 1.  Make sure the app displays `Form1` as shown in the previous section.
 
