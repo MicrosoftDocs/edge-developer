@@ -364,7 +364,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
     1.  Send the URL to the host using `postMessage`.
     1.  Register an event handler to print a message sent from the host.
 
-1. In the `Form1.cs` file, update `InitializeAsync` to match the following code snippet.
+1. In the `Form1.cs` file, update `InitializeAsync` to match the following code snippet:
 
     ```csharp
     async void InitializeAsync()
