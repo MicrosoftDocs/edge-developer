@@ -10,6 +10,8 @@ keywords: microsoft edge, web development, html, css, javascript, developer, ext
 ---
 # Create an extension tutorial - Part 1
 
+
+<!-- ====================================================================== -->
 ## Overview
 
 The goal for this tutorial is to build a Microsoft Edge extension, starting with an empty directory.  You are building an extension that pops up the NASA picture of the day.  In this tutorial, you'll learn how to create an extension by:
@@ -18,10 +20,14 @@ The goal for this tutorial is to build a Microsoft Edge extension, starting with
 *   Adding icons.
 *   Opening a default pop-up dialog.
 
+
+<!-- ====================================================================== -->
 ## Before you begin
 
 To test out the completed extension that you are building in this tutorial, download the [source code][ArchiveExtensionGettingStartedPart1].
 
+
+<!-- ====================================================================== -->
 ## Step 1: Create a manifest.json file
 
 Every extension package must have a `manifest.json` file at the root.  The manifest provides details of your extension, the extension package version, the extension name and description, and so on.
@@ -37,6 +43,8 @@ The following code snippet outlines the basic information needed in your `manife
 }
 ```
 
+
+<!-- ====================================================================== -->
 ## Step 2: Add icons
 
 Start by creating the `icons` directory in your project to store the icon image files.  The icons are used for the background image of the button that users select to launch the extension.
@@ -78,6 +86,8 @@ Next, add the icons to the `manifest.json` file. Update your `manifest.json` fil
 }
 ```
 
+
+<!-- ====================================================================== -->
 ## Step 3: Open a default pop-up dialog
 
 Now, create a `HTML` file to run when the user launches your extension.  Create the HTML file named `popup.html` in a directory named `popup`.  When users select the icon to launch the extension, `popup/popup.html` is displayed as a modal dialog.
@@ -134,6 +144,8 @@ Finally, ensure you register the pop-up in `manifest.json` under `browser_action
 }
 ```
 
+
+<!-- ====================================================================== -->
 ## Next steps
 That is everything you need to develop a working extension.  Now, continue on to sideload and test your extension. For more information, navigate to [Sideload an extension][TestExtensionSideload].
 

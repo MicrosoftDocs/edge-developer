@@ -32,6 +32,8 @@ Learn how to use Microsoft Edge and DevTools to find memory issues that affect p
 *   Identify detached DOM trees \(a common cause of memory leaks\) with **Heap snapshot**.
 *   Find out when new memory is being allocated in your JavaScript heap \(JS heap\) with **Allocation instrumentation on timeline**.
 
+
+<!-- ====================================================================== -->
 ## Overview
 
 In the spirit of the **RAIL** performance model, the focus of your performance efforts should be your users.
@@ -54,6 +56,8 @@ runs smoothly on a high-end smartphone may crash on a low-end smartphone.
 
 The key here is to use the RAIL model and focus on your users.  Find out what devices are popular with your users, and then test out your page on those devices.  If the experience is consistently bad, the page may be exceeding the memory capabilities of those devices.
 
+
+<!-- ====================================================================== -->
 ## Monitor memory use in realtime with the Microsoft Edge Browser Task Manager
 
 Use the Microsoft Edge Browser Task Manager as a starting point to your memory issue investigation.  The Microsoft Edge Browser Task Manager is a realtime monitor that tells you how much memory a page is currently using.
@@ -77,6 +81,8 @@ These two columns tell you different things about how your page is using memory.
 
 <!--*   live number reference: https://groups.google.com/d/msg/google-chrome-developer-tools/aTMVGoNM0VY/bLmf3l2CpJ8J  -->
 
+
+<!-- ====================================================================== -->
 ## Visualize memory leaks with Performance panel
 
 You may also use the Performance panel as another starting point in your investigation.  The Performance panel helps you visualize the memory use of a page over time.
@@ -113,6 +119,8 @@ Now, an analysis of the code compared with the previous figure.  If you review t
 
 <!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->
 
+
+<!-- ====================================================================== -->
 ## Discover detached DOM tree memory leaks with Heap Snapshots
 
 A DOM node is only garbage collected when there are no references to the node from either the DOM tree or JavaScript code running on the page.  A node is said to be "detached" when it is removed from the DOM tree but some JavaScript still references it.  Detached DOM nodes are a common cause of memory leaks.  This section teaches you how to use the heap profilers in DevTools to identify detached nodes.
@@ -167,6 +175,8 @@ Choose a node to investigate it further.  In the **Objects** pane, you may revie
 
 <!--todo: the allocation timeline does not appear in the DevTools in Edge  -->
 
+
+<!-- ====================================================================== -->
 ## Identify JS heap memory leaks with Allocation instrumentation on timeline
 
 **Allocation instrumentation on timeline** is another tool that may help you track down memory leaks in your JS heap.
@@ -203,6 +213,8 @@ Expand the object and select the value to view more details in the **Object** pa
    Figure 10:  Object details
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Investigate memory allocation by function
 
 Use the **Allocation sampling** profiling type to view memory allocation by JavaScript function.
@@ -222,6 +234,8 @@ DevTools shows you a breakdown of memory allocation by function.  The default vi
    Figure 12:  Allocation sampling
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Spot frequent garbage collections
 
 If your page appears to pause frequently, then you may have garbage collection issues.

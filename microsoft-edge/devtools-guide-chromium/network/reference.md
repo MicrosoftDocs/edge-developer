@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Discover new ways to analyze how your page loads in this comprehensive reference of Microsoft Edge DevTools network analysis features.
 
+
+<!-- ====================================================================== -->
 ## Record network requests
 
 By default, DevTools record all network requests in the **Network** tool, so long as DevTools is open.
@@ -88,6 +90,8 @@ After capturing a screenshot, you interact with it in the following ways.
 :::image-end:::
 -->
 
+
+<!-- ====================================================================== -->
 ## Change loading behavior
 
 ### Emulate a first-time visitor by disabling the browser cache
@@ -164,6 +168,8 @@ To manually override the user agent, use the following steps.
 1.  Clear the **Select automatically** checkbox.
 1.  Choose a user agent option from the menu, or enter a custom user agent in the text box.
 
+
+<!-- ====================================================================== -->
 ## Set user agent client hints
 
 If your site employs [user agent client hints](../../web-platform/user-agent-guidance.md), use the **Network conditions** panel to provide different user agent client hints.
@@ -192,6 +198,8 @@ If your site employs [user agent client hints](../../web-platform/user-agent-gui
 
 You may also set user agent client hints in [Emulate mobile devices in Microsoft Edge](../device-mode/index.md).
 
+
+<!-- ====================================================================== -->
 ## Filter requests
 
 ### Filter requests by properties
@@ -336,6 +344,8 @@ To hide the requests, turn off the **Hide data URLs** checkbox.
    The **Hide Data URLs** checkbox
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Sort requests
 
 By default, the requests in the Requests table are sorted by initiation time, but you may sort the table using other criteria.
@@ -395,6 +405,8 @@ These descriptions assume that each respective option is ranked from shortest to
    Sort the Waterfall by total duration  \(The lighter portion of each bar is time spent waiting and the darker portion is time spent downloading bytes\)
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Analyze requests
 
 So long as DevTools are open, it logs all requests in the **Network** tool.
@@ -819,6 +831,8 @@ Turn on the **Use large request rows** checkbox and then review the bottom value
    An example of uncompressed resources  \(The compressed size of the `jquery-3.3.1.min.js` file that was sent over the network was `29.9 KB`, whereas the uncompressed size was `84.9 KB`\)
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Export requests data
 
 ### Save all network requests to a HAR file
@@ -945,6 +959,8 @@ To copy property values from network requests to your clipboard, complete the fo
     *   Response Headers
 1.  Open the contextual menu \(right-click\) > **Copy value**.  You may now paste the value into any editor to review it.
 
+
+<!-- ====================================================================== -->
 ## Change the layout of the Network panel
 
 You may expand or collapse sections of the **Network** tool UI to focus important information.

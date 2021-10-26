@@ -28,6 +28,8 @@ To port your Chrome extension, complete the following steps.
     > [!NOTE]
     > If your extension exchanges messages with a native app using `chrome.runtime.connectNative`, ensure that you set `allowed_origins` to `extension://[Microsoft-Catalog-extensionID]` in your native messaging host manifest file.  The setting allows the app to identify your extension.
 
+
+<!-- ====================================================================== -->
 ## Next steps
 
 After your extension package is ready to publish in the Microsoft Edge Add-ons website, [create a developer account][ExtensionsPublishCreateDevAccount] and [publish your extension][ExtensionsPublishPublishExtension].
