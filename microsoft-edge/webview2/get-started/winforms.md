@@ -324,7 +324,7 @@ The communication mechanism passes messages from web content to the host using n
 
 In your project, when the WebView2 control navigates to a URL, it displays the URL in the address bar and alerts the user of the URL displayed in the WebView2 control.
 
-1.  In the `Form1.cs` file, update the constructor and create an `InitializeAsync` function to match the following code snippet as follows.
+1.  In the `Form1.cs` file, update the constructor and create an `InitializeAsync` function to match the following code snippet:
 
     ```csharp
     public Form1()
