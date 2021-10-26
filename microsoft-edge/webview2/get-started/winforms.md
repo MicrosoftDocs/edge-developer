@@ -278,7 +278,7 @@ To demonstrate how to use the events, start by registering a handler for `Naviga
 
 1.  Press **F5** to build and run the project.
 
-1.  Make sure the WebView remains unchanged when navigating to an HTTP site. Navigate to an HTTPS site and notice that WebView opens HTTPS sites.
+1.  Make sure the WebView remains unchanged when navigating to an HTTP site. Go to an HTTPS site and notice that WebView opens HTTPS sites.
 
 
 <!-- ====================================================================== -->
