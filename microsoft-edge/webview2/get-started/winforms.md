@@ -193,7 +193,7 @@ Enable users to change the URL that the WebView2 control displays, by adding an 
 
 1.  Make sure the app displays `Form1` as shown in the previous section.
 
-1.  In the `Form1.cs` file add the `CoreWebView2` namespace by insert the following code snippet at the top.
+1.  In `Form1.cs`, add the `CoreWebView2` namespace by inserting the following code at the top:
 
     ```csharp
     using Microsoft.Web.WebView2.Core;
