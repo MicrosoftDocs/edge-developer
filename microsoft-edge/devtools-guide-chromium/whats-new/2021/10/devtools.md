@@ -10,7 +10,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # What's New in DevTools (Microsoft Edge 95)
 
-[!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)]
+The top of this page lists announcements from the Microsoft Edge DevTools team, and then the bottom of this page describes selected features from the Chromium project.  To try new features in Microsoft Edge DevTools, including in the DevTools extension for Visual Studio Code, read these announcements.
+
+To stay up to date with the latest and greatest features, follow the Microsoft Edge DevTools team on [Twitter](https://twitter.com/EdgeDevTools).
+
+If you are on Windows, Linux, or macOS, consider using the [Canary preview channel of Microsoft Edge](https://www.microsoftedgeinsider.com/download) as your default development browser.  The preview channels (Beta, Dev, and Canary) give you access to the latest features of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
@@ -84,12 +88,6 @@ When the filter string doesn't match a group label, neither the group nor its me
 :::image type="content" source="../../media/2021/10/filter-matches-group-label-asdf.png" alt-text="When the filter string doesn't match a group label, neither the group nor its members are displayed." lightbox="../../media/2021/10/filter-matches-group-label-asdf.png":::
 
 To view the history of this feature in the Chromium open-source project, see [Issue 363796: ☂ Console filter inappropriately hides grouped content and doesn't hide group titles](https://bugs.chromium.org/p/chromium/issues/detail?id=363796).
-
-
-<!-- ====================================================================== -->
-## Download the Microsoft Edge preview channels
-
-If you are on Windows, Linux, or macOS, consider using the [Canary preview channel of Microsoft Edge](https://www.microsoftedgeinsider.com/download) as your default development browser.  The preview channels give you access to the latest features of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
