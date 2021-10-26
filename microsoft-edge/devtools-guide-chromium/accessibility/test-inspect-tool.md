@@ -27,7 +27,7 @@ When the **Inspect** tool is active, hovering over any element on the rendered w
 
 <!-- Inspect tool: Accessibility section of overlay -->
 
-1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  Select the **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
@@ -43,7 +43,7 @@ When the **Inspect** tool is active, hovering over any element on the rendered w
 
 The bottom part of the **Inspect** overlay has an **Accessibility** section that contains the following information:
 
-*   **Contrast** defines whether an element can be understood by people with low vision.  The [contrast ratio][W3CContrastRatio] as defined by the [WCAG Guidelines][WCAG] indicates whether there is enough contrast (a green check mark icon) or not enough (an orange exclamation-point icon).
+*   **Contrast** defines whether an element can be understood by people with low vision.  The [contrast ratio](https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio) as defined by the [WCAG Guidelines](https://www.w3.org/TR/WCAG21/) indicates whether there is enough contrast (a green check mark icon) or not enough (an orange exclamation-point icon).
 
 *   **Name** and **Role** are what assistive technology such as screen readers will report about the element.
     *   The **Name** is the text content of an `a` element.  For the element `<a href="/">About Us</a>`, the **Name** shown in the Inspect tool is "About Us".
@@ -76,7 +76,7 @@ The top part of the **Inspect** overlay, which is above the **Accessibility** se
 
 In addition to the information overlay, the **Inspect** tool also provides region-coloring that's similar to hovering in the DOM tree in the **Elements** tool.
 
-1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  Select the **Inspect** button \(![Inspect tool icon](../media/inspect-icon.msft.png)\) in the top-left corner of DevTools, so that the button is highlighted (blue).
 
@@ -94,7 +94,7 @@ To configure the grid overlay or flexbox overlay, in the **Elements** tool, sele
 
 <!-- general info about the Inspect tool, not particularly focused on accessibility -->
 
-1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser, and then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  Select the **Inspect** button \(![the Inspect tool](../media/inspect-icon.msft.png)\) in the top-left corner of DevTools, so that the button is highlighted (blue).
 
@@ -117,10 +117,3 @@ After selecting an element in the rendered page, you could then use the **Access
 *  [Inspect a node](../dom/index.md#inspect-a-node)
 *  [Check text-color contrast in the default state using the Inspect tool](test-inspect-text-contrast.md)
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"
-[W3CContrastRatio]: https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio "contrast ratio | W3C"
-[WCAG]: https://www.w3.org/TR/WCAG21/ "Web Content Accessibility Guidelines | W3C"

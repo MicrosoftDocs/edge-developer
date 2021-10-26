@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Use the Console to interact with the DOM
 
-The **Console** tool isn't only for [logging information][DevtoolsConsoleConsoleLog] or to [run arbitrary JavaScript][DevtoolsConsoleConsoleJavascript].  It also is a great way to interact with the webpage in the browser.  Consider it a script-environment version of the **Inspect** tool.
+The **Console** tool isn't only for [logging information](console-log.md) or to [run arbitrary JavaScript](console-javascript.md).  It also is a great way to interact with the webpage in the browser.  Consider it a script-environment version of the **Inspect** tool.
 
 
 <!-- ====================================================================== -->
@@ -91,7 +91,7 @@ Use any JavaScript DOM manipulations you want to do in the **Console**.  To make
 <!-- ====================================================================== -->
 ## Helpful Console utility methods
 
-Many convenience methods and shortcuts are available to you as [Console Utilities][DevtoolsConsoleUtilities].  Some of the methods are incredibly powerful and are things you probably wrote as a series of `console.log()` statements in the past.
+Many convenience methods and shortcuts are available to you as [Console Utilities](utilities.md).  Some of the methods are incredibly powerful and are things you probably wrote as a series of `console.log()` statements in the past.
 
 ### The power to the $
 
@@ -258,17 +258,7 @@ unmonitorEvents($0, 'key');
 <!-- ====================================================================== -->
 ## Reuse DOM manipulation scripts
 
-You may find it useful to manipulate the DOM from the **Console**.  You may soon run into the limitations of the **Console** as a development platform.  The good news is that the [Sources][DevtoolsSourcesIndex] tool in DevTools offers a fully featured development environment.  In the **Sources** tool, you may complete the following actions.
+You may find it useful to manipulate the DOM from the **Console**.  You may soon run into the limitations of the **Console** as a development platform.  The good news is that the [Sources](../sources/index.md) tool in DevTools offers a fully featured development environment.  In the **Sources** tool, you may complete the following actions.
 
-*   Store your scripts for the **Console** as [Snippets][DevToolsJavascriptSnippets].
+*   Store your scripts for the **Console** as [Snippets](../javascript/snippets.md).
 *   Run the scripts in a webpage using a keyboard shortcut or the editor.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsConsoleConsoleJavascript]: ./console-javascript.md "Console as a JavaScript environment | Microsoft Docs"
-[DevtoolsConsoleConsoleLog]: ./console-log.md "Logs in the Console tool | Microsoft Docs"
-[DevtoolsConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"
-
-[DevToolsJavascriptSnippets]: ../javascript/snippets.md "Run snippets of JavaScript on any page with Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"
