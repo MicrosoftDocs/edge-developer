@@ -11,7 +11,7 @@ keywords: WebView2, webview2, WebView, webview, winforms apps, winforms, edge, C
 ---
 # Get started with WebView2 in WinForms apps
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2](https://developer.microsoft.com/microsoft-edge/webview2). For more information on individual APIs, navigate to [API reference](/dotnet/api/microsoft.web.webview2.winforms).
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2](https://developer.microsoft.com/microsoft-edge/webview2). For more information on individual APIs, see [API reference](/dotnet/api/microsoft.web.webview2.winforms).
 
 <!-- ====================================================================== -->
 ## Prerequisites
