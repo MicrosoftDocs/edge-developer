@@ -51,8 +51,8 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 *   The real process exit code is now provided as `ExitCode` in `ICoreWebView2ProcessFailedEventArgs2` for `COREWEBVIEW2_PROCESS_FAILED_KIND_BROWSER_PROCESS_EXITED` process failure.
 *   The `--js-flags` switch is now honored in `AdditionalBrowserArguments` that are provided in `CoreWebView2EnvironmentOptions`.
-*   Fixed access to the `name` property for host objects in JavaScript. ([\#641][https://github.com/MicrosoftEdge/WebView2Feedback/issues/641]\)
-*   Fix an `InvalidCastException` in the WPF control when it's implicitly initialized prior to the event loop starting. ([\#1577][https://github.com/MicrosoftEdge/WebView2Feedback/issues/1577]\) -->
+*   Fixed access to the `name` property for host objects in JavaScript. ([\#641](https://github.com/MicrosoftEdge/WebView2Feedback/issues/641))
+*   Fixed an `InvalidCastException` in the WPF control when it's implicitly initialized prior to the event loop starting. ([\#1577](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1577)) -->
 
 
 <!-- ====================================================================== -->
