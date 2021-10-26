@@ -138,7 +138,7 @@ If you expand the **Sources** sub-panel you now display a new file with the cust
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) and is authored by [Meggin Kearney][MegginKearney] (Tech Writer) and [Paul Bakaus][PaulBakaus] (Open Web Developer Advocate, Google: Tools, Performance, Animation, and UX).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) and is authored by [Meggin Kearney][MegginKearney] (Technical Writer) and [Paul Bakaus][PaulBakaus] (Open Web Developer Advocate, Google: Tools, Performance, Animation, and UX).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

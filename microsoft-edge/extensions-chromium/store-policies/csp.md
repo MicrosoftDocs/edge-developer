@@ -98,7 +98,7 @@ The first restriction wipes out a huge class of cross-site scripting attacks by 
 
 Three things must change in order to make this work the way you expect it to:
 
-*   The `clickHandler` definition must be moved into an external JavaScript file \(`popup.js` may be a good target).
+*   The `clickHandler` definition must be moved into an external JavaScript file (`popup.js` may be a good target).
 *   The inline event handler definitions must be rewritten in terms of `addEventListener` and extracted into `popup.js`.
     If you are currently starting your program using code like `<body onload="main();">`, consider replacing it by hooking into the `DOMContentLoaded` event of the document, or the `load` event of the window, depending on your requirements.  Use the former, since it generally triggers more quickly.
 

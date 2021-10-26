@@ -75,6 +75,7 @@ The host manifest file must be a valid JSON file that contains the following key
    :::column-end:::
    :::column span="3":::
       **Details**
+   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
@@ -117,7 +118,7 @@ The host manifest file must be a valid JSON file that contains the following key
       *   On Windows devices, you may use relative paths to the directory that contains the manifest file.
       *   On macOS and Linux, the path must be absolute.
 
-      The host process starts with the current directory set to the directory that contains the host binary.  For example (Windows), if the parameter is set to `C:\App\nm_host.exe`, the binary is started using the current directory \(`C:\App\`\).
+      The host process starts with the current directory set to the directory that contains the host binary.  For example (Windows), if the parameter is set to `C:\App\nm_host.exe`, the binary is started using the current directory (`C:\App\`).
    :::column-end:::
 :::row-end:::
 :::row:::
