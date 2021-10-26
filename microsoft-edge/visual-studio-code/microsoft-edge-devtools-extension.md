@@ -3,7 +3,7 @@ description: Using the Microsoft Edge Developer Tools extension for Visual Studi
 title: Microsoft Edge DevTools extension for Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/21/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, microsoft edge developer tools, microsoft edge developer tools extension
@@ -246,6 +246,54 @@ You can enable and disable CSS Mirror Editing using the button in the targets pa
 
 We are continuing to improve this feature and have set up a tracking issue on GitHub, [CSS Mirror Editing][CSSMirrorEditingTracking], where we welcome your feedback.
 
+<!-- ====================================================================== -->
+## Device emulation in the screencast
+
+Device emulation is now a feature of the screencast.  This allows you to emulate a device such as a phone or tablet.  This is useful for testing the layout of your website on different devices.
+
+:::image type="complex" source="./media/edge-devtools-for-vscode-device-dropdown.msft.png" alt-text="Visual Studio Code with the extension open showing a screencast with the Device dropdown highlighted." lightbox="./media/edge-devtools-for-vscode-device-dropdown.msft.png":::
+   Visual Studio Code with the extension open showing a screencast with the Device dropdown highlighted.
+:::image-end:::
+
+You can select from a list of different devices to emulate in the screencast next to the location field.  The default device is a desktop computer.
+
+:::image type="complex" source="./media/edge-devtools-for-vscode-device-list.msft.png" alt-text="The list of devices that can be emulated open in the screencast of the extension" lightbox="./media/edge-devtools-for-vscode-device-list.msft.png":::
+   The list of devices that can be emulated open in the screencast of the extension
+:::image-end:::
+
+If the device you chose to emulate is a touch device, the screencast will automatically switch to the touch screen mode. You can also rotate the orientation of the simulated device by using the button next to the list.
+
+:::image type="complex" source="./media/edge-devtools-for-vscode-simulated-iphone.msft.png" alt-text="The screencast showing the current document in an emulated iPhone 5 in the correct size and with emulated touch interface." lightbox="./media/edge-devtools-for-vscode-simulated-iphone.msft.png":::
+   The screencast showing the current document in an emulated iPhone 5 in the correct size and with emulated touch interface.
+:::image-end:::
+
+
+<!-- ====================================================================== -->
+## Inline and live issue analysis
+
+Issues in your source code are now highlighted with wavy underline. You can inspect the issue and get detailed information what the problem is, how to fix it and where to find more information. 
+
+:::image type="complex" source="./media/edge-devtools-for-vscode-inline-issue-reporting.msft.png" alt-text="An accessibility issue reported inside a piece of code showing how to fix the problem, and where to find more information" lightbox="./media/edge-devtools-for-vscode-inline-issue-reporting.msft.png":::
+   An accessibility issue reported inside a piece of code showing how to fix the problem, and where to find more information
+:::image-end:::
+
+You can also choose the `View Issue` option to navigate all the issues in the file. 
+
+:::image type="complex" source="./media/edge-devtools-for-vscode-navigating-issues.msft.png" alt-text="A highlighted issue in the source code with a navigation bar explaining the problem and buttons to move to the next and previous issues." lightbox="./media/edge-devtools-for-vscode-navigating-issues.msft.png":::
+   A highlighted issue in the source code with a navigation bar explaining the problem and buttons to move to the next and previous issues.
+:::image-end:::
+
+The `Problems` tab in the lower panel lists all the issues found in the current project. 
+
+:::image type="complex" source="./media/edge-devtools-for-vscode-issues-in-lower-panel.msft.png" alt-text="Visual Studio Code with an open lower panel listing various issues in different files of the project" lightbox="./media/edge-devtools-for-vscode-issues-in-lower-panel.msft.png":::
+   Visual Studio Code with an open lower panel listing various issues in different files of the project
+:::image-end:::
+
+Issues are being evaluated live. This means you get feedback whilst you type your code what the issue is and how to fix it.
+
+:::image type="complex" source="./media/edge-devtools-for-vscode-live-issue-reporting.msft.png" alt-text="A possible issue being explained on an output element" lightbox="./media/edge-devtools-for-vscode-live-issue-reporting.msft.png":::
+   A possible issue being explained on an output element
+:::image-end:::
 
 <!-- ====================================================================== -->
 ## Browser debugging with Microsoft Edge DevTools integration in Visual Studio Code
