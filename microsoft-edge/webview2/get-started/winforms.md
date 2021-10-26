@@ -307,7 +307,7 @@ You can use host apps to inject JavaScript code into WebView2 controls at runtim
 
 1.  Press **F5** to build and run the project.
 
-1.  Make sure the app displays an alert when you navigate to a website that doesn't use HTTPS.
+1.  Make sure the app displays an alert when you go to a website that doesn't use HTTPS.
 
 :::image type="content" source="./media/winforms-https.png" alt-text="https" lightbox="./media/winforms-https.png":::
 
