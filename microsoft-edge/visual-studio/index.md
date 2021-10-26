@@ -21,6 +21,8 @@ If you are not already using Visual Studio, navigate to [Download Visual Studio]
 
 Currently, Visual Studio 2019 supports debugging JavaScript in Microsoft Edge for your ASP.NET Framework and ASP.NET Core apps.  Complete the following steps to use Visual Studio to debug Microsoft Edge.
 
+
+<!-- ====================================================================== -->
 ## Launch Microsoft Edge
 
 Visual Studio can build your ASP.NET and ASP.NET Core app, start a web server, launch Microsoft Edge, and connect the Visual Studio debugger with a single button.
@@ -97,6 +99,8 @@ Switch back to Visual Studio to set a breakpoint.
 
 The example was just a minor demonstration of the functionality available in Visual Studio.  For more information about the functionality in Visual Studio 2019, navigate to [Visual Studio documentation][VisualStudioWindowsIndex].
 
+
+<!-- ====================================================================== -->
 ## Attach to Microsoft Edge
 
 Previously, you launched Microsoft Edge from Visual Studio.  Alternatively, you can attach the Visual Studio debugger to an instance of Microsoft Edge that's already running, as follows.

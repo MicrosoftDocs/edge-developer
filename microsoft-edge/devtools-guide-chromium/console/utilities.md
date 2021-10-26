@@ -35,6 +35,8 @@ The Console Utilities API contains a collection of convenience commands to compl
 
 For more information about the `console.log()` and `console.error()` methods and the rest of the `console.*` methods, navigate to [Console API Reference](api.md).
 
+
+<!-- ====================================================================== -->
 ## Recently evaluated expression
 
 ### Console syntax
@@ -61,6 +63,8 @@ In the following figure, the evaluated expression initially contains an array of
 
 ---
 
+
+<!-- ====================================================================== -->
 ## Recently chosen element or JavaScript object
 
 ### Console syntax
@@ -120,6 +124,8 @@ In the following figure, the image displays a different element chosen in the sa
 
 ---
 
+
+<!-- ====================================================================== -->
 ## Query selector
 
 ### Console syntax
@@ -163,6 +169,8 @@ In the following figure, the first `img` element after the `title--image` elemen
 
 ---
 
+
+<!-- ====================================================================== -->
 ## Query selector all
 
 ### Console syntax
@@ -208,6 +216,8 @@ for (each in images) {
 
 ---
 
+
+<!-- ====================================================================== -->
 ## XPath
 
 ### Console syntax
@@ -248,6 +258,8 @@ Similar to the other selector commands, `$x(path)` has an optional second parame
 
 ---
 
+
+<!-- ====================================================================== -->
 ## clear
 
 ### Console syntax
@@ -264,6 +276,8 @@ This commnad clears the console of the history.
 clear()
 ```
 
+
+<!-- ====================================================================== -->
 ## copy
 
 ### Console syntax
@@ -282,6 +296,8 @@ copy($0)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## debug
 
 ### Console syntax
@@ -311,6 +327,8 @@ For more information on breakpoints, navigate to [How to pause your code with br
 
 ---
 
+
+<!-- ====================================================================== -->
 ## dir
 
 ### Console syntax
@@ -340,6 +358,8 @@ For more information, navigate to [console.dir()](api.md#dir) in the Console API
 
 ---
 
+
+<!-- ====================================================================== -->
 ## dirxml
 
 ### Console syntax
@@ -352,6 +372,8 @@ This command prints an XML representation of the specified object, as displayed 
 
 ---
 
+
+<!-- ====================================================================== -->
 ## inspect
 
 ### Console syntax
@@ -380,6 +402,8 @@ When passing a method to inspect, the method opens the webpage in the **Sources*
 
 ---
 
+
+<!-- ====================================================================== -->
 ## getEventListeners
 
 ### Console syntax
@@ -416,6 +440,8 @@ You may further expand each of the following objects to explore the properties.
 
 ---
 
+
+<!-- ====================================================================== -->
 ## keys
 
 ### Console syntax
@@ -448,6 +474,8 @@ values(player1)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## monitor
 
 ### Console syntax
@@ -475,6 +503,8 @@ Use `unmonitor(method)` to end monitoring.
 
 ---
 
+
+<!-- ====================================================================== -->
 ## monitorEvents
 
 ### Console syntax
@@ -528,6 +558,8 @@ In the following figure, the sample output after typing a character in the text 
 
 ---
 
+
+<!-- ====================================================================== -->
 ## profile
 
 ### Console syntax
@@ -562,6 +594,8 @@ profileEnd('B');
 
 ---
 
+
+<!-- ====================================================================== -->
 ## profileEnd
 
 ### Console syntax
@@ -601,6 +635,8 @@ The result appears as a Heap Snapshot in the **Memory** tool.
 
 ---
 
+
+<!-- ====================================================================== -->
 ## queryObjects
 
 ### Console syntax
@@ -639,6 +675,8 @@ This command returns an array of objects created with the specified constructor.
 
 ---
 
+
+<!-- ====================================================================== -->
 ## table
 
 ### Console syntax
@@ -673,6 +711,8 @@ table(names);
 
 ---
 
+
+<!-- ====================================================================== -->
 ## undebug
 
 ### Console syntax
@@ -691,6 +731,8 @@ undebug(getData);
 
 ---
 
+
+<!-- ====================================================================== -->
 ## unmonitor
 
 ### Console syntax
@@ -709,6 +751,8 @@ unmonitor(getData);
 
 ---
 
+
+<!-- ====================================================================== -->
 ## unmonitorEvents
 
 ### Console syntax
@@ -736,6 +780,8 @@ unmonitorEvents($0, "mousemove");
 
 ---
 
+
+<!-- ====================================================================== -->
 ## values
 
 ### Console syntax

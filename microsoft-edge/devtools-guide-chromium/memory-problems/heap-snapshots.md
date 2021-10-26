@@ -28,6 +28,8 @@ Learn how to record heap snapshots with the Microsoft Edge DevTools heap profile
 The Microsoft Edge DevTools heap profiler shows memory distribution by the JavaScript objects and related DOM nodes
 of your page.  Use it to take JavaScript heap \(JS heap\) snapshots, analyze memory graphs, compare snapshots, and find memory leaks.  Navigate to [Objects retaining tree][DevtoolsMemoryProblems101ObjectsRetainingTree].
 
+
+<!-- ====================================================================== -->
 ## Take a snapshot
 
 On the **Memory** panel, choose **Take snapshot**, then choose **Start**.  You may also select `Ctrl`+`E` \(Windows, Linux\) or `Cmd`+`E` \(macOS\).
@@ -47,6 +49,8 @@ After the snapshot has been loaded into DevTools and has been parsed, the number
 > [!NOTE]
 > Only reachable objects are included in snapshots.  Also, taking a snapshot always starts with a garbage collection.
 
+
+<!-- ====================================================================== -->
 ## Clear snapshots
 
 Choose **Clear all profiles** icon to remove snapshots \(both from DevTools and any memory associated with the renderer process\).
@@ -60,6 +64,8 @@ Closing the DevTools window does not delete profiles from the memory associated 
 > [!NOTE]
 > Try out this example of [scattered objects][GlitchDevtoolsMemoryExample03] and profile it using the Heap Profiler.  A number of \(object\) item allocations are displayed.
 
+
+<!-- ====================================================================== -->
 ## View snapshots
 
 View snapshots from different perspectives for different tasks.
@@ -189,6 +195,8 @@ The **Containment** view is essentially a "bird's eye view" of the objects struc
 > > Try out this example of [why `eval` is evil][GlitchDevtoolsMemoryExample07] to analyze the impact of closures on memory.  You may also be interested in following it up with this example that takes you through recording [heap allocations][GlitchDevtoolsMemoryExample08].
 >
 
+
+<!-- ====================================================================== -->
 ## Look up color coding
 
 Properties and property values of objects have different types and are colored accordingly.  Each property has one of four types.
@@ -202,10 +210,14 @@ Properties and property values of objects have different types and are colored a
 
 Objects designated as `System` do not have a corresponding JavaScript type.  Each is part of the object system implementation of the Javascript VM.  V8 allocates most of the internal objects in the same heap as the user's JS objects.  So these are just V8 internals.
 
+
+<!-- ====================================================================== -->
 ## Find a specific object
 
 To find an object in the collected heap you may search using `Ctrl`+`F` and give the object ID.
 
+
+<!-- ====================================================================== -->
 ## Uncover DOM leaks
 
 The heap profiler has the ability to reflect bidirectional dependencies between browser native objects \(DOM nodes, CSS rules\) and JavaScript objects.

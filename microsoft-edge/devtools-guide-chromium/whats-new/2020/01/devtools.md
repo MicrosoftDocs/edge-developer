@@ -23,6 +23,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # What's New In DevTools (Microsoft Edge 81)
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Microsoft Edge DevTools team
 
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].
@@ -188,6 +190,8 @@ Tracking prevention is a unique feature in Microsoft Edge that protects you from
 
 [Read more about tracking prevention and the balance between privacy and web compatibility][TrackingPrevention].
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 The following sections announce additional features available in Microsoft Edge 81 that were contributed to the open source Chromium project.
@@ -298,6 +302,8 @@ Open [Settings][DevtoolsCustomizeIndexSettings] and then disable **Preferences**
    Scrolling past the end of a file is now disabled in the Sources panel
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.

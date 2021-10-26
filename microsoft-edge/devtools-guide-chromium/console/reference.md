@@ -27,6 +27,8 @@ This article is a reference of features related to the Microsoft Edge DevTools C
 
 If you're looking for the API reference on functions like `console.log()`, navigate to [Console API Reference](api.md).  For the reference on functions like `monitorEvents()`, navigate to [Console Utilities API Reference](utilities.md).
 
+
+<!-- ====================================================================== -->
 ## Open the Console
 
 You may open the **Console** as a [tool in the upper pane](#open-the-console-tool) or as a [tool in the Drawer](#open-the-console-tool-in-the-drawer).
@@ -92,6 +94,8 @@ To display the **Sidebar**, choose **Show console sidebar** \(![Show console sid
    **Console Sidebar**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## View messages
 
 This section contains features that change how messages are presented in the Console.  For a hands-on walkthrough, navigate to [View messages](index.md#inspect-and-filter-information-on-the-current-webpage).
@@ -137,6 +141,8 @@ To hide network messages, complete the following actions.
 1.  [Open Console Settings](#open-console-settings).
 1.  Choose the checkbox next to **Hide Network**.
 
+
+<!-- ====================================================================== -->
 ## Filter messages
 
 Many ways exist to filter out messages in the **Console**.
@@ -208,6 +214,8 @@ Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** textbox to 
    Filter out any messages that don't match the `/[gm][ta][mi]/` regex expression
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Run JavaScript
 
 This section contains features related to running JavaScript in the **Console**.  For a hands-on walkthrough, navigate to [Run JavaScript](console-javascript.md).
@@ -252,6 +260,8 @@ Suppose you have an ad on your webpage embedded in an `<iframe>`.  You want to r
    Choose a different JavaScript context
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Clear the Console
 
 To clear the **Console**, complete any of the following workflows.

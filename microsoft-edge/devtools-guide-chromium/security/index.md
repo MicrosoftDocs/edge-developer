@@ -27,6 +27,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 <!--todo: add section when why-https is available -->
 
+
+<!-- ====================================================================== -->
 ## Open the Security panel
 
 The **Security** panel is the main place in DevTools for inspecting the security of a page.
@@ -38,6 +40,8 @@ The **Security** panel is the main place in DevTools for inspecting the security
        The **Security** panel
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Common problems
 
 ### Non-secure main origins
@@ -71,6 +75,8 @@ In the previous figure, choose **View 1 request in Network panel** to open the *
    Mixed resources in the **Network Log**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## View details
 
 ### View main origin certificate

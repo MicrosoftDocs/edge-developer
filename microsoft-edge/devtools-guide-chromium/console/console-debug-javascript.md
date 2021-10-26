@@ -13,6 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 This article is about resolving JavaScript errors that are reported in the Console.  For general use of the **Console** to display and resolve error messages, navigate to [Use the Console](index.md).
 
 
+<!-- ====================================================================== -->
 ## Fix JavaScript errors
 
 The first experience you have with the **Console** is probably an error in a script.  To try it, navigate to [JavaScript error reported in the Console tool](https://microsoftedge.github.io/DevToolsSamples/console/error.html).
@@ -34,6 +35,7 @@ The information in this error message suggests that the error is on line 16 of t
 The script tries to get the first `h2` element in the document and paint a red border around it.  But no `h2` element exists, so the script fails.
 
 
+<!-- ====================================================================== -->
 ## Find and debug network issues
 
 Other errors that the **Console** reports are network errors.  To display it in action, navigate to the [Network error reported in Console](https://microsoftedge.github.io/DevToolsSamples/console/network-error.html).
@@ -120,6 +122,8 @@ const handleErrors = (response) => {
 };
 ```
 
+
+<!-- ====================================================================== -->
 ## Create errors and traces in the Console
 
 Besides the `throw Error` example in the previous section, you can also create different errors and trace problems in the **Console**.

@@ -35,6 +35,8 @@ The **Console** is a great companion tool to use with others tools.  The **Conso
 
 The fastest way to directly open the **Console** is to select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).
 
+
+<!-- ====================================================================== -->
 ## Error reports and the Console
 
 The **Console** is the default place where JavaScript and connectivity errors are reported.  If any errors occur, the **Issues counter** is displayed next to the **Settings** icon in DevTools that provides the number of errors and warnings.  Select the **Issues counter** to open the **Issues** tool and display the problem.  For more information, navigate to [Fixing JavaScript errors that are reported in the Console](console-debug-javascript.md).
@@ -44,6 +46,7 @@ The **Console** is the default place where JavaScript and connectivity errors ar
 :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## Look up error messages on the web from the Console
 
 Search the web for your **Console** error messages, right from within DevTools.  In the **Console**, many error messages have a **Search for this message on the Web** button, shown as a magnifying glass.  When you select the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error message.
@@ -61,6 +64,7 @@ For a `Failed to load resource` error, the new tab contains web search results f
 This feature was introduced in Microsoft Edge version 94.
 
 
+<!-- ====================================================================== -->
 ## Inspect and filter information on the current webpage
 
 When you open DevTools on a webpage, there may be an overwhelming amount of information in the **Console**.  The amount of information becomes a problem when you need to identify important information.  To view the important information that needs action, use the [Issues](../issues/index.md) tool in DevTools.
@@ -71,6 +75,8 @@ Issues are gradually being moved from the **Console** to the **Issues** tool.  H
    DevTools with a **Console** full of messages
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Log information to display in the Console
 
 The most popular use case for the **Console** is logging information from your scripts using the `console.log()` method or other similar methods.  To try it, complete the following actions.
@@ -99,6 +105,8 @@ The most popular use case for the **Console** is logging information from your s
 
 Many useful methods are available when you work with the **Console**.  For more information, navigate to [Log messages in the Console tool](console-log.md).
 
+
+<!-- ====================================================================== -->
 ## Try your JavaScript live in the Console
 
 The **Console** isn't only a place to log information.  The **Console** is a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  When you write any JavaScript in the **Console**, the code runs immediately.  You may find it useful to test some new JavaScript features or to do some quick calculations.  Also, you get all of the features you expect from a modern editing environment, such as autocompletion, syntax highlighting, and history.  To try it, complete the following actions.
@@ -134,6 +142,8 @@ For more information about all the ways to work with **Console**, navigate to [C
    **Console** autocompletion of JavaScript expressions
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Interact with the current webpage in the browser
 
 The **Console** has access to the [Window](https://developer.mozilla.org/docs/Web/API/Window) object of the browser.  You can write scripts that interact with the current webpage.  To try it, complete the following actions.

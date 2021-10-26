@@ -32,6 +32,8 @@ The **Coverage** panel in Microsoft Edge DevTools helps you find unused JavaScri
 > [!WARNING]
 > Finding unused code is relatively easy.  But refactoring a codebase so that each page only ships the JavaScript and CSS that it needs may be difficult.  This guide does not cover how to refactor a codebase to avoid unused code because these refactors depend highly on your technology stack.
 
+
+<!-- ====================================================================== -->
 ## Overview
 
 Shipping unused JavaScript or CSS is a common problem in web development.  For example, suppose that you want to use [Bootstrap button component][BootstrapButtons] on your page.  To use the button component you need to add a link to the Bootstrap stylesheet in your HTML, like this:
@@ -53,6 +55,8 @@ This stylesheet does not just include the code for the button component.  It con
 
 <!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->
 
+
+<!-- ====================================================================== -->
 ## Open the Coverage panel
 
 1.  [Open the Command Menu][DevToolsCommandMenu].
@@ -62,6 +66,8 @@ This stylesheet does not just include the code for the button component.  It con
        The **Coverage** panel
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Record code coverage
 
 1.  Choose one of the following buttons in the **Coverage** panel.
@@ -69,6 +75,8 @@ This stylesheet does not just include the code for the button component.  It con
     *   Choose **Instrument Coverage** \(![Instrument Coverage](../media/record-icon.msft.png)\) if you want to review what code is used after interacting with the page.
 1.  Choose **Stop Instrumenting Coverage And Show Results** \(![Stop Instrumenting Coverage And Show Results](../media/stop-icon.msft.png)\) when you want to stop recording code coverage.
 
+
+<!-- ====================================================================== -->
 ## Analyze code coverage
 
 The table in the **Coverage** panel displays the resources that were analyzed, and how much code is used within each resource.  Choose a row to open that resource in the **Sources** tool and review a line-by-line breakdown of used code and unused code.

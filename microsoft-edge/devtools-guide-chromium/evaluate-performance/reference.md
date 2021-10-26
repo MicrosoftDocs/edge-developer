@@ -27,6 +27,8 @@ This page is a comprehensive reference of Microsoft Edge DevTools features relat
 
 Navigate to [Get Started With Analyzing Runtime Performance][DevtoolsEvaluatePerformanceGettingStarted] for a guided tutorial on how to analyze the performance of a page using [Microsoft Edge DevTools][MicrosoftEdgeDevTools].
 
+
+<!-- ====================================================================== -->
 ## Record performance
 
 ### Record runtime performance
@@ -136,6 +138,8 @@ To view detailed paint instrumentation:
 
 To learn how to interact with the paint information, navigate to [View layers](#view-layers-information) and [View paint profiler](#view-paint-profiler).
 
+
+<!-- ====================================================================== -->
 ## Save a recording
 
 To save a recording, open the contextual menu \(right-click\), and choose **Save Profile**.
@@ -144,6 +148,8 @@ To save a recording, open the contextual menu \(right-click\), and choose **Save
    **Save Profile**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Load a recording
 
 To load a recording, open the contextual menu \(right-click\), and choose **Load Profile**.
@@ -152,6 +158,8 @@ To load a recording, open the contextual menu \(right-click\), and choose **Load
    **Load Profile**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Clear the previous recording
 
 After making a recording, choose **Clear recording** \(![Clear recording icon](../media/clear-recording-icon.msft.png)\) to clear that recording from the **Performance** panel.
@@ -160,6 +168,8 @@ After making a recording, choose **Clear recording** \(![Clear recording icon](.
    **Clear recording**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Analyze a performance recording
 
 After you [record runtime performance](#record-runtime-performance) or [record load performance](#record-load-performance), the **Performance** panel provides a lot of data for analyzing the performance of what just happened.
@@ -498,6 +508,8 @@ To view advanced information about a paint event:
        The **Paint Profiler** panel
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Analyze rendering performance with the Rendering tool
 
 Use the features of the **Rendering** panel to help visualize the rendering performance of your page.

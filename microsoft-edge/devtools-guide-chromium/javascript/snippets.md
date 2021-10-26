@@ -56,6 +56,8 @@ In the following figure, the webpage appears after running the Snippet.  The **C
    The webpage after running the Snippet
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Open the Snippets tab
 
 The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets.  When you want to edit a Snippet, you need to open it from the **Snippets** tab.
@@ -84,6 +86,8 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
        The **Show Snippets** command
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Create Snippets
 
 ### Create a Snippet through the Sources tool
@@ -108,6 +112,8 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 
 To rename your new Snippet with a custom name, navigate to [Rename Snippets](#rename-snippets).
 
+
+<!-- ====================================================================== -->
 ## Edit Snippets
 
 1.  [Open the Snippets tab](#open-the-snippets-tab).
@@ -124,6 +130,8 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
        An asterisk next to the Snippet name indicates unsaved code
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Run Snippets
 
 ### Run a Snippet from the Sources tool
@@ -144,16 +152,22 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
 
 1.  Select `Enter` to run the Snippet.
 
+
+<!-- ====================================================================== -->
 ## Rename Snippets
 
 1.  [Open the Snippets tab](#open-the-snippets-tab).
 1.  Hover on the Snippet name, open the contextual menu \(right-click\), and select **Rename**.
 
+
+<!-- ====================================================================== -->
 ## Delete Snippets
 
 1.  [Open the Snippets tab](#open-the-snippets-tab).
 1.  Hover on the Snippet name, open the contextual menu \(right-click\), and select **Remove**.
 
+
+<!-- ====================================================================== -->
 ## Save Snippets
 
 By default, Snippets are only available within DevTools, but you can also save them to disk.
