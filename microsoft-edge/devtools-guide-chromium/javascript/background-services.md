@@ -55,7 +55,7 @@ The **Background Fetch API** enables a **service worker** to reliably download l
        The **Background Fetch** panel
     :::image-end:::
 
-1.  Choose **Record** \(![Record](../media/record-icon.msft.png)\).
+1.  Choose **Record** (![Record](../media/record-icon.msft.png)).
    After triggering some Background Fetch activity, DevTools logs the events to the table.
 
     :::image type="complex" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="A log of events in the Background Fetch panel" lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
@@ -84,7 +84,7 @@ The **Background Sync API** enables an offline **service worker** to send data t
        The **Background Sync** pane
     :::image-end:::
 
-1.  Choose **Record** \(![Record](../media/record-icon.msft.png)\).
+1.  Choose **Record** (![Record](../media/record-icon.msft.png)).
    After triggering some Background Sync activity, DevTools logs the events to the table.
 
     :::image type="complex" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="A log of events in the Background Sync pane" lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
@@ -111,7 +111,7 @@ After a **service worker** has received a [Push Message][MDNPush] from a server,
        The **Notifications** pane
     :::image-end:::
 
-1.  Choose **Record** \(![Record](../media/record-icon.msft.png)\).
+1.  Choose **Record** (![Record](../media/record-icon.msft.png)).
    After triggering some Notifications activity, DevTools logs the events to the table.
 
     :::image type="complex" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="A log of events in the Notifications pane" lightbox="../media/javascript-application-background-services-notifications.msft.png":::
@@ -138,7 +138,7 @@ To display a push notification to a user, a **service worker** must first use th
        Open the **Push Messaging** pane
     :::image-end:::
 
-1.  Choose **Record** \(![Record](../media/record-icon.msft.png)\).
+1.  Choose **Record** (![Record](../media/record-icon.msft.png)).
     After triggering some Push Message activity, DevTools logs the events to the table.
 
     :::image type="complex" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="A log of events in the Push Messaging pane" lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
@@ -165,7 +165,7 @@ To display a push notification to a user, a **service worker** must first use th
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
 

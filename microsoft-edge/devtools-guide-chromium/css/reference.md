@@ -42,10 +42,10 @@ The **Elements** tool of DevTools lets you view or change the CSS of one element
 
 Use one the following actions to select an element.
 
-*   In your viewport, hover on the element, open the contextual menu \(right-click\), and choose **Inspect**.
-*   In DevTools, choose **Select an element** \(![Select an element](../media/select-an-element-icon.msft.png)\) or select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Shift`+`C` \(macOS\), and then choose the element in the viewport.
+*   In your viewport, hover on the element, open the contextual menu (right-click), and choose **Inspect**.
+*   In DevTools, choose **Select an element** (![Select an element](../media/select-an-element-icon.msft.png)) or select `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Shift`+`C` (macOS), and then choose the element in the viewport.
 *   In DevTools, choose the element in the **DOM Tree**.
-*   In DevTools, run a query like `document.querySelector('p')` in the **Console**, hover on the result, open the contextual menu \(right-click\), and choose **Reveal in Elements panel**.
+*   In DevTools, run a query like `document.querySelector('p')` in the **Console**, hover on the result, open the contextual menu (right-click), and choose **Reveal in Elements panel**.
 
 
 <!-- ====================================================================== -->
@@ -55,7 +55,7 @@ Use one the following actions to select an element.
 
 In the **Styles** pane, choose the link next to a CSS rule to open the external stylesheet that defines the rule.  The stylesheet opens in the **Editor** pane of the **Sources** tool.
 
-If the stylesheet is minified, choose the **Format** \(![Format](../media/format-icon.msft.png)\) button, at the bottom of the **Editor** pane.  For more information, navigate to [Reformat a minified JavaScript file with pretty-print][DevToolsJavascriptReferenceFormat].
+If the stylesheet is minified, choose the **Format** (![Format](../media/format-icon.msft.png)) button, at the bottom of the **Editor** pane.  For more information, navigate to [Reformat a minified JavaScript file with pretty-print][DevToolsJavascriptReferenceFormat].
 
 > [!NOTE]
 > In the following figure, after you choose `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` you are taken to line 2 of `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.
@@ -156,7 +156,7 @@ Complete the following actions to view a page in print mode.
 
 The **Coverage** tool shows you what CSS a page actually uses.
 
-1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) while DevTools is in focus to [open the Command Menu][DevToolsCommandMenu].
+1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) while DevTools is in focus to [open the Command Menu][DevToolsCommandMenu].
 1.  Start typing `coverage` and choose **Show Coverage**.  The **Coverage** tool appears.
 
     :::row:::
@@ -172,10 +172,10 @@ The **Coverage** tool shows you what CSS a page actually uses.
        :::column-end:::
     :::row-end:::
 
-1.  Choose **Start instrumenting coverage and refresh the page** \(![Start instrumenting coverage and refresh the page](../media/refresh-icon.msft.png)\).  The page refreshes and the **Coverage** tool provides an overview of how much CSS \(and JavaScript\) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.
+1.  Choose **Start instrumenting coverage and refresh the page** (![Start instrumenting coverage and refresh the page](../media/refresh-icon.msft.png)).  The page refreshes and the **Coverage** tool provides an overview of how much CSS (and JavaScript) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.
 
     :::image type="complex" source="../media/css-console-qs-coverage-run.msft.png" alt-text="An overview of how much CSS (and JavaScript) is used and unused" lightbox="../media/css-console-qs-coverage-run.msft.png":::
-       An overview of how much CSS \(and JavaScript\) is used and unused
+       An overview of how much CSS (and JavaScript) is used and unused
     :::image-end:::
 
 1.  To display a line-by-line breakdown of what CSS is used, choose a CSS file.
@@ -249,10 +249,10 @@ Choose and edit the name or value of a declaration to change it.  For shortcuts 
 
 While editing the value of a declaration, you may use the following keyboard shortcuts to increment the value by a specific amount.
 
-*   Select `Alt`+`Up` \(Windows, Linux\) or `Option`+`Up` \(macOS\) to increment by `0.1`.
+*   Select `Alt`+`Up` (Windows, Linux) or `Option`+`Up` (macOS) to increment by `0.1`.
 *   Select `Up` to change the value by `1`, or by `0.1` if the current value is between `-1` and `1`.
 *   Select `Shift`+`Up` to increment by `10`.
-*   Select `Shift`+`Page Up` \(Windows, Linux\) or `Shift`+`Command`+`Up` \(macOS\) to increment the value by `100`.
+*   Select `Shift`+`Page Up` (Windows, Linux) or `Shift`+`Command`+`Up` (macOS) to increment the value by `100`.
 
 Decrementing also works.  Just replace each instance of `Up` mentioned above with `Down`.
 
@@ -282,7 +282,7 @@ Complete the following actions to enable or disable a class on an element.
 Complete the following actions to add a new style rule.
 
 1.  [Select an element](#choose-an-element).
-1.  Choose **New Style Rule** \(![New Style Rule](../media/new-style-rule-icon.msft.png)\).  DevTools inserts a new rule beneath the **element.style** rule.
+1.  Choose **New Style Rule** (![New Style Rule](../media/new-style-rule-icon.msft.png)).  DevTools inserts a new rule beneath the **element.style** rule.
 
 > [!NOTE]
 > In the following figure, DevTools adds the `h1.devsite-page-title` style rule after you choose **New Style Rule**.
@@ -293,7 +293,7 @@ Complete the following actions to add a new style rule.
 
 #### Choose which stylesheet to add a rule to
 
-When [adding a new style rule](#add-a-style-rule), choose and hold **New Style Rule** \(![New Style Rule](../media/new-style-rule-icon.msft.png)\) to choose which stylesheet to add the style rule to.
+When [adding a new style rule](#add-a-style-rule), choose and hold **New Style Rule** (![New Style Rule](../media/new-style-rule-icon.msft.png)) to choose which stylesheet to add the style rule to.
 
 :::image type="complex" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Choose a stylesheet" lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
    Choose a stylesheet
@@ -305,7 +305,7 @@ Complete the following actions to add a style rule to a specific location in the
 
 1.  Hover on the style rule that is directly above where you want to add your new style rule.
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).
-1.  Choose **Insert Style Rule Below** \(![Insert Style Rule Below icon](../media/new-style-rule-icon.msft.png)\).
+1.  Choose **Insert Style Rule Below** (![Insert Style Rule Below icon](../media/new-style-rule-icon.msft.png)).
 
 :::image type="complex" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Insert Style Rule Below" lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
    **Insert Style Rule Below**
@@ -320,16 +320,16 @@ The **More Actions** toolbar lets you perform the following actions.
 
 Complete the following actions to reveal the **More Actions** toolbar.
 
-1.  In the **Styles** panel, hover on a style rule.  **More Actions** \(`...`\) is revealed in the bottom-right of the style rule section.
+1.  In the **Styles** panel, hover on a style rule.  **More Actions** (`...`) is revealed in the bottom-right of the style rule section.
 
     > [!NOTE]
     > In the following figure, hover on the `.header-holder.has-default-focus` style rule and **More Actions** is revealed in the bottom-right of the style rule section.
 
     :::image type="complex" source="../media/css-elements-styles-new-rule-styles.msft.png" alt-text="Reveal More Actions" lightbox="../media/css-elements-styles-new-rule-styles.msft.png":::
-       Reveal **More Actions** \(`...`\)
+       Reveal **More Actions** (`...`)
     :::image-end:::
 
-1.  Hover on **More Actions** \(`...`\) to reveal the actions mentioned above.
+1.  Hover on **More Actions** (`...`) to reveal the actions mentioned above.
 
     > [!NOTE]
     > The **Insert Style Rule Below** action is revealed after hovering over **More Actions**.
@@ -340,11 +340,11 @@ Complete the following actions to reveal the **More Actions** toolbar.
 
 ### Toggle a declaration
 
-Complete the folllwoing actions to toggle a single declaration on \(or off\).
+Complete the folllwoing actions to toggle a single declaration on (or off).
 
 1.  [Select an element](#choose-an-element).
 1.  In the **Styles** pane, hover on the rule that defines the declaration.  A checkbox appears next to each declaration.
-1.  Check \(or uncheck\) the checkbox next to the declaration.  When you uncheck a declaration, DevTools crosses it out to indicate that it is no longer active.
+1.  Check (or uncheck) the checkbox next to the declaration.  When you uncheck a declaration, DevTools crosses it out to indicate that it is no longer active.
 
 > [!NOTE]
 > In the following figure, the `margin-top` property for the currently selected element has been toggled off.
@@ -359,7 +359,7 @@ Complete the following actions to add a `background-color` declaration to an ele
 
 1.  Hover on the style rule that you want to add the `background-color` declaration to.
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).
-1.  Choose **Add Background Color** \(![Add Background Color icon](../media/add-background-color-icon.msft.png)\).
+1.  Choose **Add Background Color** (![Add Background Color icon](../media/add-background-color-icon.msft.png)).
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Add Background Color" lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
    **Add Background Color**
@@ -371,7 +371,7 @@ Complete the following actions to add a `color` declaration to an element.
 
 1.  Hover on the style rule that you want to add the `color` declaration to.
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).
-1.  Choose **Add Color** \(![Add Color icon](../media/add-color-icon.msft.png)\).
+1.  Choose **Add Color** (![Add Color icon](../media/add-color-icon.msft.png)).
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Add Color" lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
    **Add Color**
@@ -383,7 +383,7 @@ Complete the follwoing actions to add a `box-shadow` declaration to an element.
 
 1.  Hover on the style rule that you want to add the `box-shadow` declaration to.
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).
-1.  Choose **Add Box Shadow** \(![Add Box Shadow icon](../media/add-box-shadow-icon.msft.png)\).
+1.  Choose **Add Box Shadow** (![Add Box Shadow icon](../media/add-box-shadow-icon.msft.png)).
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Add Box Shadow" lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
    **Add Box Shadow**
@@ -395,7 +395,7 @@ Complete the following actions to add a `text-shadow` declaration to an element.
 
 1.  Hover on the style rule that you want to add the `text-shadow` declaration to.
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).
-1.  Choose **Add Text Shadow** \(![Add Text Shadow icon](../media/add-text-shadow-icon.msft.png)\).
+1.  Choose **Add Text Shadow** (![Add Text Shadow icon](../media/add-text-shadow-icon.msft.png)).
 
 :::image type="complex" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Add Text Shadow" lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
    **Add Text Shadow**
@@ -531,7 +531,7 @@ The following figure and list descries of each of the UI elements of the **Color
 
 #### Sample a color off the page with the Eyedropper
 
-When you open the **Color Picker**, the **Eyedropper** \(![Eyedropper](../media/eyedropper-icon.msft.png)\) is on by default.  Complete the following actions to change the selected color to some other color on the page.
+When you open the **Color Picker**, the **Eyedropper** (![Eyedropper](../media/eyedropper-icon.msft.png)) is on by default.  Complete the following actions to change the selected color to some other color on the page.
 
 1.  Hover on the target color in the viewport.
 1.  Choose to confirm.
@@ -561,7 +561,7 @@ When you open the **Color Picker**, the **Eyedropper** \(![Eyedropper](../media/
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/reference) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

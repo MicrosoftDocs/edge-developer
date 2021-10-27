@@ -33,7 +33,7 @@ The **Console** is a great companion tool to use with others tools.  The **Conso
    :::column-end:::
 :::row-end:::
 
-The fastest way to directly open the **Console** is to select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).
+The fastest way to directly open the **Console** is to select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
 
 <!-- ====================================================================== -->
@@ -79,9 +79,9 @@ Issues are gradually being moved from the **Console** to the **Issues** tool.  H
 <!-- ====================================================================== -->
 ## Log information to display in the Console
 
-The most popular use case for the **Console** is logging information from your scripts using the `console.log()` method or other similar methods.  To try it, complete the following actions.
+The most popular use case for the **Console** is logging information from your scripts using the `console.log()` method or other similar methods.  To try it:
 
-1.  To open the **Console**, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).
+1.  To open the **Console**, select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 1.  Navigate to [Console messages examples: log, info, error and warn](https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html), or copy and run the following code snippet in the **Console**.
 
     ```javascript
@@ -156,7 +156,7 @@ The **Console** has access to the [Window](https://developer.mozilla.org/docs/We
     ```
 
 :::image type="complex" source="../media/console-intro-reading-DOM.msft.png" alt-text="Copying the top heading (h1) content from the DOM and displaying the expression evaluation result in the Console" lightbox="../media/console-intro-reading-DOM.msft.png":::
-   Copying the top heading \(`h1`\) content from the DOM and displaying the expression evaluation result in the **Console**
+   Copying the top heading (`h1`) content from the DOM and displaying the expression evaluation result in the **Console**
 :::image-end:::
 
 Instead of only reading from the webpage, you can also change it.  To try changing the webpage, complete the following actions.
