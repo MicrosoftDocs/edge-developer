@@ -3,8 +3,10 @@ obj/
 _site/
 .DS_Store
 .optemp/
+.vscode/
 _themes*/
 .idea
 
 .openpublishing.buildcore.ps1
 .DS_Store
+node_modules

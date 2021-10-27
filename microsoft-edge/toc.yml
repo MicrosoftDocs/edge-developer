@@ -1,23 +1,8 @@
-- name: Microsoft Edge documentation
-  href: index.yml
-  expanded: true
+- name: Microsoft Edge Developer documentation #landing page
+  href: developer/index.yml
   items:
-    # - name: Microsoft Edge developer documentation
-    #   href: developer/index.yml
-    - name: Accessibility
-      items:
-        - name: Accessibility overview
-          href: accessibility/index.md
-        - name: Design
-          href: accessibility/design.md
-        - name: Build
-          href: accessibility/build/index.md
-          items:
-            - name: ARIA and UI automation
-              href: accessibility/build/ARIA-and-UI-Automation.md
-        - name: Test
-          href: accessibility/test.md
-    - name: DevTools
+# =============================================================================
+    - name: Microsoft Edge DevTools
       items:
         - name: DevTools overview
           href: devtools-guide-chromium/index.md
@@ -25,6 +10,14 @@
           items:
             - name: Experimental features
               href: devtools-guide-chromium/experimental-features/index.md
+            - name: Microsoft Edge 95
+              href: devtools-guide-chromium/whats-new/2021/10/devtools.md
+            - name: Microsoft Edge 94
+              href: devtools-guide-chromium/whats-new/2021/09/devtools.md
+            - name: Microsoft Edge 93
+              href: devtools-guide-chromium/whats-new/2021/07/devtools.md
+            - name: Microsoft Edge 92
+              href: devtools-guide-chromium/whats-new/2021/05/devtools.md
             - name: Microsoft Edge 91
               href: devtools-guide-chromium/whats-new/2021/04/devtools.md
             - name: Microsoft Edge 90
@@ -47,7 +40,8 @@
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
-        - name: Tutorials
+# =============================================================================
+        - name: Get started
           items:
             - name: For beginners
               items:
@@ -79,16 +73,59 @@
                   href: devtools-guide-chromium/remote-debugging/index.md
                 - name: Get started with remote debugging with Surface Duo emulators
                   href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
-                - name: Get started with remote debugging Windows 10 devices
+                - name: Get started with remote debugging Windows devices
                   href: devtools-guide-chromium/remote-debugging/windows.md
                 - name: Get started with remote debugging Android WebViews
                   href: devtools-guide-chromium/remote-debugging/webviews.md
-        - name: How-to guides
+# =============================================================================
+        - name: Features
           items:
             - name: Accessibility
               items:
-                - name: Accessibility reference
+                - name: Accessibility-testing features in DevTools
                   href: devtools-guide-chromium/accessibility/reference.md
+                - name: Overview of accessibility testing using DevTools
+                  href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md
+                - name: Issues tool
+                  items:
+                    - name: Automatically test a webpage for accessibility issues
+                      href: devtools-guide-chromium/accessibility/test-issues-tool.md
+                - name: Inspect tool
+                  items:
+                    - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage
+                      href: devtools-guide-chromium/accessibility/test-inspect-tool.md
+                    - name: Check for keyboard support by using the Tab and Enter keys
+                      href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
+                    - name: Analyze the lack of indication of keyboard focus in a sidebar menu
+                      href: devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
+                    - name: Analyze the lack of keyboard support in a form
+                      href: devtools-guide-chromium/accessibility/test-analyze-no-keyboard-support.md
+                - name: Accessibility tab
+                  items:
+                    - name: Check the Accessibility Tree for keyboard and screen reader support
+                      href: devtools-guide-chromium/accessibility/test-accessibility-tree.md
+                    - name: Test keyboard support using the Source Order Viewer
+                      href: devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md
+                    - name: Test accessibility using the Accessibility tab
+                      href: devtools-guide-chromium/accessibility/accessibility-tab.md
+                - name: Styles tab
+                  items:
+                    - name: Verify accessibility of all states of elements
+                      href: devtools-guide-chromium/accessibility/test-inspect-states.md
+                    - name: Test text-color contrast using the Color Picker
+                      href: devtools-guide-chromium/accessibility/color-picker.md
+                - name: Rendering tool
+                  items:
+                    - name: Check for contrast issues with dark theme and light theme
+                      href: devtools-guide-chromium/accessibility/test-dark-mode.md
+                    - name: Verify that the page is usable by people with color blindness
+                      href: devtools-guide-chromium/accessibility/test-color-blindness.md
+                    - name: Verify that the page is usable with blurred vision
+                      href: devtools-guide-chromium/accessibility/test-blurred-vision.md
+                    - name: Verify that the page is usable with UI animation turned off
+                      href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
+                - name: Test accessibility using Lighthouse
+                  href: devtools-guide-chromium/accessibility/lighthouse.md
                 - name: Navigate DevTools with assistive technology
                   href: devtools-guide-chromium/accessibility/navigation.md
                 - name: Track which element has focus
@@ -99,13 +136,13 @@
               items:
                 - name: Overview
                   href: devtools-guide-chromium/customize/index.md
-                - name: Dark theme
-                  href: devtools-guide-chromium/customize/dark-theme.md
-                - name: Change placement
+                - name: Apply a color theme
+                  href: devtools-guide-chromium/customize/theme.md
+                - name: Change DevTools placement
                   href: devtools-guide-chromium/customize/placement.md
                 - name: Match browser language
                   href: devtools-guide-chromium/customize/localization.md
-                - name: Customize shortcuts
+                - name: Customize keyboard shortcuts
                   href: devtools-guide-chromium/customize/shortcuts.md
             - name: Device testing and emulation
               items:
@@ -127,7 +164,7 @@
               items:
                 - name: Use the debugger features
                   href: devtools-guide-chromium/javascript/reference.md
-                - name: Pause your code with breakpoints
+                - name: Pause code with breakpoints
                   href: devtools-guide-chromium/javascript/breakpoints.md
                 - name: Map pre-processed code to source code
                   href: devtools-guide-chromium/javascript/source-maps.md
@@ -147,16 +184,19 @@
                   href: devtools-guide-chromium/evaluate-performance/performance-reference.md
             - name: Service worker troubleshooting
               href: devtools-guide-chromium/service-workers/index.md
-        - name: Concepts
+            - name: DevTools Protocol
+              href: devtools-protocol-chromium/index.md
+            - name: Keyboard shortcuts
+              href: devtools-guide-chromium/shortcuts/index.md
+# =============================================================================
+        - name: Tools
           items:
-            - name: 3D view
+            - name: 3D View
               href: devtools-guide-chromium/3d-view/index.md
             - name: Animations
               href: devtools-guide-chromium/inspect-styles/animations.md
             - name: Application
               items:
-                - name: Application cache
-                  href: devtools-guide-chromium/storage/applicationcache.md
                 - name: Cache
                   href: devtools-guide-chromium/storage/cache.md
                 - name: Cookies
@@ -179,13 +219,17 @@
                   href: devtools-guide-chromium/console/index.md
                 - name: Log messages
                   href: devtools-guide-chromium/console/console-log.md
-                - name: Run JavaScript
+                - name: Run JavaScript in the Console
                   href: devtools-guide-chromium/console/console-javascript.md
-                - name: Reference
+                - name: Console features reference
                   href: devtools-guide-chromium/console/reference.md
+                - name: Console API reference
+                  href: devtools-guide-chromium/console/api.md
+                - name: Console Utilities API reference
+                  href: devtools-guide-chromium/console/utilities.md
                 - name: Watch JavaScript expressions in real time
                   href: devtools-guide-chromium/console/live-expressions.md
-                - name: Debug Console errors
+                - name: Fix JavaScript Console errors
                   href: devtools-guide-chromium/console/console-debug-javascript.md
                 - name: Interact with the DOM
                   href: devtools-guide-chromium/console/console-dom-interaction.md
@@ -195,12 +239,14 @@
               href: devtools-guide-chromium/coverage/index.md
             - name: Elements
               items:
-                - name: CSS reference
+                - name: CSS features reference
                   href: devtools-guide-chromium/css/reference.md
                 - name: Edit CSS font styles and settings
                   href: devtools-guide-chromium/inspect-styles/edit-fonts.md
                 - name: Inspect CSS grid
                   href: devtools-guide-chromium/css/grid.md
+                - name: CSS-in-JS
+                  href: devtools-guide-chromium/css/css-in-js.md
                 - name: Force DevTools into Print Preview mode
                   href: devtools-guide-chromium/css/print-preview.md
             - name: Issues
@@ -235,7 +281,7 @@
               items:
                 - name: Emulate vision deficiencies
                   href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
-                - name: Simulate color schemes
+                - name: Emulate dark or light scheme
                   href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
                 - name: Simulate reduced motion
                   href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
@@ -247,6 +293,8 @@
               items:
                 - name: Sources tool overview
                   href: devtools-guide-chromium/sources/index.md
+                - name: Open source files in Visual Studio Code
+                  href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
                 - name: Overrides
                   href: devtools-guide-chromium/javascript/overrides.md
                 - name: Snippets
@@ -255,19 +303,12 @@
                   href: devtools-guide-chromium/javascript/disable.md
             - name: WebAuthn
               href: devtools-guide-chromium/webauthn/index.md
-        - name: Reference
-          items:
-            - name: Console API reference
-              href: devtools-guide-chromium/console/api.md
-            - name: Console Utilities API reference
-              href: devtools-guide-chromium/console/utilities.md
-            - name: DevTools Protocol overview
-              href: devtools-protocol-chromium/index.md
-            - name: Keyboard shortcuts
-              href: devtools-guide-chromium/shortcuts/index.md
-    - name: Extensions
+        - name: Contact the DevTools team
+          href: devtools-guide-chromium/contact.md
+# =============================================================================
+    - name: Microsoft Edge extensions
       items:
-        - name: Extensions overview
+        - name: Overview of Microsoft Edge extensions
           href: extensions-chromium/index.md
         - name: Getting started
           items:
@@ -277,27 +318,35 @@
               href: extensions-chromium/getting-started/part1-simple-extension.md
             - name: Create an extension tutorial (part 2)
               href: extensions-chromium/getting-started/part2-content-scripts.md
+            - name: Manifest file format
+              href: extensions-chromium/getting-started/manifest-format.md
             - name: Sideload an extension
               href: extensions-chromium/getting-started/extension-sideloading.md
         - name: Developer Guide
           items:
             - name: API support
               href: extensions-chromium/developer-guide/api-support.md
-            - name: Port Chromium Extension to Microsoft Edge
+            - name: Declare permissions
+              href: extensions-chromium/enterprise/declare-permissions.md
+            - name: Port a Chrome extension to Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
-            - name: Migrate your extension from manifest v2 to v3
+            - name: Migrate an extension from manifest v2 to v3
               href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
             - name: Alternate methods of distributing extensions
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
             - name: Native messaging
               href: extensions-chromium/developer-guide/native-messaging.md
-        - name: Publish to Microsoft Store
+        - name: Publish to the Add-ons website
           items:
-            - name: Developer registration
+            - name: Register as an extension developer
               href: extensions-chromium/publish/create-dev-account.md
-            - name: Publish your extension
+            - name: Publish extensions using a GitHub account
+              href: extensions-chromium/publish/github.md
+            - name: Add users to the Microsoft Edge program
+              href: extensions-chromium/publish/aad-account.md
+            - name: Publish an extension
               href: extensions-chromium/publish/publish-extension.md
-            - name: Update your extension
+            - name: Update an extension
               href: extensions-chromium/publish/update-extension.md
             - name: Submission states
               href: extensions-chromium/publish/submission-states.md
@@ -305,14 +354,20 @@
               href: extensions-chromium/publish/manage-settings.md
             - name: Contact extensions support
               href: extensions-chromium/publish/contact-extensions-team.md
-        - name: Microsoft Edge Add-ons policies
-          items:
-            - name: Content security policy
-              href: extensions-chromium/store-policies/csp.md
-            - name: Microsoft Edge developer ADA addendum
-              href: extensions-chromium/store-policies/ada-addendum.md
-            - name: Microsoft Edge Add-ons store developer policies
-              href: extensions-chromium/store-policies/developer-policies.md
+            - name: Policies for Microsoft Edge Add-ons
+              items:
+                - name: Content security policy
+                  href: extensions-chromium/store-policies/csp.md
+                - name: Microsoft Edge developer ADA addendum
+                  href: extensions-chromium/store-policies/ada-addendum.md
+                - name: Developer policies
+                  href: extensions-chromium/store-policies/developer-policies.md
+            - name: Microsoft Edge Add-ons API
+              items:
+                - name: Using the Add-ons API
+                  href: extensions-chromium/publish/api/using-addons-api.md
+                - name: Add-ons API Reference
+                  href: extensions-chromium/publish/api/addons-api-reference.md
         - name: Extensions for enterprise
           items:
             - name: Match patterns
@@ -321,66 +376,52 @@
               href: extensions-chromium/enterprise/hosting-and-updating.md
             - name: Auto-update
               href: extensions-chromium/enterprise/auto-update.md
-            - name: Declare permissions
-              href: extensions-chromium/enterprise/declare-permissions.md
-    - name: Origin Trials overview
-      href: origin-trials/index.md
-    - name: Privacy whitepaper
-      href: privacy-whitepaper/index.md
+# =============================================================================
     - name: Progressive Web Apps
       items:
-        - name: Progressive Web Apps overview
+        - name: Overview of Progressive Web Apps (PWAs)
           href: progressive-web-apps-chromium/index.md
-        - name: Get started with PWAs
-          href: progressive-web-apps-chromium/get-started.md
-        - name: Offline scenarios
-          href: progressive-web-apps-chromium/offline.md
-        - name: Service Workers
-          href: progressive-web-apps-chromium/serviceworker.md
-        - name: Web app manifests
-          href: progressive-web-apps-chromium/webappmanifests.md
-        - name: Experimental features
-          href: progressive-web-apps-chromium/experimental-features/index.md
-        - name: Publish your PWA to the Microsoft Store
-          href: progressive-web-apps-chromium/microsoft-store.md
-    - name: Playwright overview
-      href: playwright/index.md
-    - name: Puppeteer overview
-      href: puppeteer/index.md
-    - name: Visual Studio overview
-      href: visual-studio/index.md
-    - name: Visual Studio Code
-      items:
-        - name: Visual Studio Code overview
-          href: visual-studio-code/index.md
-        - name: Debugger for Edge extension
-          href: visual-studio-code/debugger-for-edge.md
-        - name: Microsoft Edge Devtools extension
-          href: visual-studio-code/microsoft-edge-devtools-extension.md
-        - name: webhint extension
-          href: visual-studio-code/webhint.md
-    - name: Web platform
-      items:
-        - name: Site compatibility-impacting changes coming to Microsoft Edge
-          href: web-platform/site-impacting-changes.md
-        - name: Moving users to Microsoft Edge from IE
-          href: web-platform/ie-to-microsoft-edge-redirection.md
-        - name: Tracking prevention in Microsoft Edge
-          href: web-platform/tracking-prevention.md
-        - name: Microsoft Edge user agent string
-          href: web-platform/user-agent-string.md
-        - name: Customize the password reveal button
-          href: web-platform/password-reveal.md
-    - name: Web We Want overview
-      href: web-we-want/index.md
-    - name: WebDriver
-      items:
-        - name: WebDriver overview
-          href: webdriver-chromium/index.md
-        - name: Capabilities and EdgeOptions
-          href: webdriver-chromium/capabilities-edge-options.md
-        - name: Verifying downloads of Selenium Tools for Microsoft Edge
-          href: webdriver-chromium/verify-selenium-tools.md
+        - name: The user experience of PWAs
+          href: progressive-web-apps-chromium/ux.md
+        - name: How to
+          items:
+            - name: Get started with PWAs
+              href: progressive-web-apps-chromium/how-to/index.md
+            - name: Web app manifest
+              href: progressive-web-apps-chromium/how-to/web-app-manifests.md
+            - name: Service Workers
+              href: progressive-web-apps-chromium/how-to/service-workers.md
+            - name: Offline scenarios
+              href: progressive-web-apps-chromium/how-to/offline.md
+            - name: Publish PWAs to the Microsoft Store
+              href: progressive-web-apps-chromium/how-to/microsoft-store.md
+            - name: Experimental features and origin trials
+              href: progressive-web-apps-chromium/how-to/origin-trials.md
+            - name: Integrate PWAs on desktop
+              items:
+                - name: Define icons and a theme color
+                  href: progressive-web-apps-chromium/how-to/icon-theme-color.md
+                - name: Re-engage users with notifications, push messages, and badges
+                  href: progressive-web-apps-chromium/how-to/notifications-badges.md
+                - name: Handle files
+                  href: progressive-web-apps-chromium/how-to/handle-files.md
+                - name: Handle URLs
+                  href: progressive-web-apps-chromium/how-to/handle-urls.md
+                - name: Handle protocols
+                  href: progressive-web-apps-chromium/how-to/handle-protocols.md
+                - name: Display content in the title bar
+                  href: progressive-web-apps-chromium/how-to/window-controls-overlay.md
+                - name: Share with other apps
+                  href: progressive-web-apps-chromium/how-to/share.md
+                - name: Define app shortcuts
+                  href: progressive-web-apps-chromium/how-to/shortcuts.md
+                - name: Synchronize and update in the background
+                  href: progressive-web-apps-chromium/how-to/background-syncs.md
+        - name: What's new
+          href: progressive-web-apps-chromium/whats-new/pwa.md
+        - name: Sample PWAs
+          href: progressive-web-apps-chromium/demo-pwas.md
+# =============================================================================
     - name: WebView2
       items:
         - name: WebView2 overview
@@ -389,19 +430,23 @@
           items:
             - name: Win32
               href: webview2/get-started/win32.md
+            - name: WinForms
+              href: webview2/get-started/winforms.md
+            - name: WinUI 2
+              href: webview2/get-started/winui2.md
+            - name: WinUI 3
+              href: webview2/get-started/winui.md
             - name: WPF
               href: webview2/get-started/wpf.md
-            - name: Windows Forms
-              href: webview2/get-started/winforms.md
-            - name: WinUI 3.0
-              href: webview2/get-started/winui.md
+        - name: Sample code
+          href: webview2/code-samples-links.md
         - name: Concepts
           items:
             - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
-            - name: Distributing my app
+            - name: Distribute a WebView2 app and Runtime
               href: webview2/concepts/distribution.md
-            - name: Managing User Data Folders
+            - name: Manage the user data folder
               href: webview2/concepts/user-data-folder.md
             - name: Managing WebView2 applications
               href: webview2/concepts/enterprise.md
@@ -409,20 +454,16 @@
               href: webview2/concepts/navigation-events.md
             - name: Process model
               href: webview2/concepts/process-model.md
-            - name: Security Best Practices
+            - name: Security best practices
               href: webview2/concepts/security.md
             - name: Versioning
               href: webview2/concepts/versioning.md
             - name: Threading model
               href: webview2/concepts/threading-model.md
-            - name: WebView2 development best practices  
+            - name: Development best practices
               href: webview2/concepts/developer-guide.md
             - name: Win32 API conventions
               href: webview2/concepts/win32-api-conventions.md
-        - name: Release notes
-          href: webview2/release-notes.md
-        - name: Roadmap
-          href: webview2/roadmap.md
         - name: How to
           items:
             - name: Extended JavaScript scenarios in WebView2
@@ -433,8 +474,16 @@
               href: webview2/how-to/debug.md
             - name: Automate with Edge Driver
               href: webview2/how-to/webdriver.md
-            - name: Use Chromium DevTools Protocol in WebView2
+            - name: Use Chrome DevTools Protocol in WebView2
               href: webview2/how-to/chromium-devtools-protocol.md
+            - name: Switch to a preview channel
+              href: webview2/how-to/set-preview-channel.md
+            - name: Embed web content into native applications
+              href: webview2/how-to/communicate-btwn-web-native.md
+        - name: Release notes
+          href: webview2/release-notes.md
+        - name: Roadmap
+          href: webview2/roadmap.md
         - name: Reference
           href: webview2/webview2-api-reference.md
           items:
@@ -444,7 +493,86 @@
               items:
                 - name: Microsoft.Web.WebView2.Core
                   href: /dotnet/api/microsoft.web.webview2.core
-                - name: Microsoft.Web.WebView2.WPF
+                - name: Microsoft.Web.WebView2.Wpf
                   href: /dotnet/api/microsoft.web.webview2.wpf
                 - name: Microsoft.Web.WebView2.WinForms
                   href: /dotnet/api/microsoft.web.webview2.winforms
+            - name: WinRT
+              items:
+                - name: Microsoft.Web.WebView2.Core
+                  href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
+                - name: COM Interop
+                  href: /microsoft-edge/webview2/reference/winrt/interop/index
+        - name: Contact the WebView2 team
+          href: webview2/contact.md
+# =============================================================================
+    - name: Test and automation
+      items:
+        - name: DevTools Protocol
+          href: test-and-automation/devtools-protocol-overview-aux-node.md
+        - name: Origin Trials
+          href: origin-trials/index.md
+        - name: Playwright
+          href: playwright/index.md
+        - name: Puppeteer
+          href: puppeteer/index.md
+        - name: WebDriver
+          items:
+            - name: WebDriver overview
+              href: webdriver-chromium/index.md
+            - name: Capabilities and EdgeOptions
+              href: webdriver-chromium/capabilities-edge-options.md
+            - name: Verifying downloads of Selenium Tools for Microsoft Edge
+              href: webdriver-chromium/verify-selenium-tools.md
+        - name: webhint
+          href: test-and-automation/webhint-aux-node.md
+# =============================================================================
+    - name: Web platform
+      items:
+        - name: Site compatibility-impacting changes coming to Microsoft Edge
+          href: web-platform/site-impacting-changes.md
+        - name: Moving users to Microsoft Edge from IE
+          href: web-platform/ie-to-microsoft-edge-redirection.md
+        - name: Tracking prevention in Microsoft Edge
+          href: web-platform/tracking-prevention.md
+        - name: Detecting Microsoft Edge from your website
+          href: web-platform/user-agent-guidance.md
+        - name: Customize the password reveal button
+          href: web-platform/password-reveal.md
+        - name: Detecting Windows 11 using User-Agent Client Hints
+          href: web-platform/how-to-detect-win11.md
+# =============================================================================
+    - name: Microsoft Edge IDE integration
+      items:
+        - name: Visual Studio overview
+          href: visual-studio/index.md
+        - name: Visual Studio Code
+          items:
+            - name: Visual Studio Code overview
+              href: visual-studio-code/index.md
+            - name: Open source files in Visual Studio Code
+              href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
+            - name: Debugger for Edge
+              href: visual-studio-code/debugger-for-edge.md
+            - name: Microsoft Edge DevTools extension
+              href: visual-studio-code/microsoft-edge-devtools-extension.md
+            - name: webhint extension
+              href: visual-studio-code/webhint.md
+# =============================================================================
+    - name: Accessibility in Microsoft Edge
+      items:
+        - name: Accessibility overview
+          href: accessibility/index.md
+        - name: Designing accessible websites
+          href: accessibility/design.md
+        - name: Building accessible websites
+          href: accessibility/build/index.md
+        - name: ARIA and UI automation
+          href: accessibility/build/ARIA-and-UI-Automation.md
+        - name: Accessibility testing
+          href: accessibility/test.md
+# =============================================================================
+    - name: Privacy whitepaper
+      href: privacy-whitepaper/index.md
+    - name: Web We Want overview
+      href: web-we-want/index.md
