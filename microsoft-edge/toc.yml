@@ -285,7 +285,7 @@
                   href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
                 - name: Simulate reduced motion
                   href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
-                - name: Simulate High Contrast
+                - name: Simulate High Contrast Mode
                   href: devtools-guide-chromium/accessibility/forced-color-simulation.md
             - name: Security
               href: devtools-guide-chromium/security/index.md

@@ -1,100 +1,76 @@
 ---
-description: Display the current web site in high contrast mode (CSS Forced Color)
+description: Displaying the current webpage in high contrast mode (CSS Forced Color).
 title: High Contrast simulation
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/30/2020
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
+# Simulate High Contrast Mode
 
-# High Contrast simulation  
+Windows and other operating systems (OSs) contain a [setting that allows users to show the interface with a set of reduced colors](https://support.microsoft.com/help/13862).  The setting is called **High Contrast Mode**.  The setting may use either pre-set color schemes or settings that are defined by the user.  The setting helps people with several needs including those with limited vision, suffering from migraines, suffering from [Irlen Syndrome](https://en.wikipedia.org/wiki/Irlen_syndrome), or living with [Dyslexia](https://en.wikipedia.org/wiki/Dyslexia).
 
-Windows and other operating systems \(OSs\) contain a [setting that allows users to show the interface with a set of reduced colors][WindowsHighContrastMode].  The setting is called **High Contrast Mode**.  The setting may use either pre-set color schemes or settings that are defined by the user.  The setting helps people with several needs including those with limited vision, suffering from migraines, suffering from [Irlen Syndrome][WikiIrlenSyndrome], or living with [Dyslexia][WikiDyslexia].  
+The exact numbers are not available, but roughly 4% of all Windows users use display settings with reduced color settings.  According to the [2018 Survey of Users with low Vision](https://webaim.org/projects/lowvisionsurvey2#contrastMode) provided by WebAIM, more than half of low vision users use **High Contrast Mode**.
 
-The exact numbers are not available, but roughly 4% of all Windows users use display settings with reduced color settings.  According to the [2018 Survey of Users with low Vision][WebaimProjectsLowvisionsurvey2Contrastmode] provided by WebAIM, more than half of low vision users use **High Contrast Mode**.  
+To make it easier for you (the developer) to test how your products appear in **High Contrast Mode**, [Microsoft Edge DevTools](../index.md) includes a way to simulate it without changing your Operating System settings.  The simulation also helps users of other OSs that do not have the same functionality and therefore are not able to test it.
 
-To make it easier for you \(the developer\) to test how your products appear in **High Contrast Mode**, [Microsoft Edge DevTools][DevtoolsGuideChromiumMain] includes a way to simulate it without changing your Operating System settings.  The simulation also helps users of other OSs that do not have the same functionality and therefore are not able to test it.  
-
-The [CSS Media Queries Level 5 specification][CsswgDraftsMediaqueries5ForcedColors] also defines a programmatic way for you to cater for scenarios when the setting is active.  
+The [CSS Media Queries Level 5 specification](https://drafts.csswg.org/mediaqueries-5#forced-colors) also defines a programmatic way for you to cater for scenarios when the setting is active.
 
 ```css
 @media (forced-colors: active) {
   /* Apply these overrides in high contrast mode. */
 }
-```  
+```
 
 > [!IMPORTANT]
-> While defining your own settings for High Contrast Mode is allowed, we recommend using the colors defined in [CSS System Color keywords][CsswgDraftsColorsSystem].  
+> While defining your own settings for High Contrast Mode is allowed, we recommend using the colors defined in [CSS System Color keywords](https://drafts.csswg.org/css-color#css-system-colors).
 
-## Use the Rendering Tools  
 
-To simulate what your web product looks like in High Contrast mode, open the [Rendering Tools][DevtoolsGuideChromiumRenderingTools].  
+<!-- ====================================================================== -->
+## By using the Rendering tool
 
-1.  To open the **Rendering Tools**, select the `...` menu item in the toolbar  
-1.  Select `More tools`  
-1.  Select `Rendering`  
-    
-    :::image type="complex" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Open the Rendering Tools" lightbox="../media/getting-to-the-rendering-tools.msft.png":::
-       Open the **Rendering Tools**  
-    :::image-end:::  
+For information about the Rendering tool, see [Analyze runtime performance](../rendering-tools/index.md).
 
-1.  In **Rendering**, choose the drop down in **Emulate CSS media feature forced-colors**.  
-    
-    :::image type="complex" source="../media/accessibility-forced-colors-rendering-dropdown.msft.png" alt-text="The forced colors menu on the Rendering drawer" lightbox="../media/accessibility-forced-colors-rendering-dropdown.msft.png":::
-       The forced colors menu on the **Rendering** drawer  
-    :::image-end:::  
-    
-1.  Choose either `No emulation` or `forced-colors: active`.  
-    
-1.  The current page in the main window now displays the selected simulation.  
-    
-    :::row:::
-       :::column span="":::
-          :::image type="complex" source="../media/accessibility-forced-colors-rendering-no-modification.msft.png" alt-text="Display a web site without high contrast simulation" lightbox="../media/accessibility-forced-colors-rendering-no-modification.msft.png":::
-             Display a web site without high contrast simulation  
-          :::image-end:::  
-       :::column-end:::
-       :::column span="":::
-          :::image type="complex" source="../media/accessibility-forced-colors-rendering-dropdown-active.msft.png" alt-text="Display a web site in high contrast simulation" lightbox="../media/accessibility-forced-colors-rendering-dropdown-active.msft.png":::
-             Display a web site in high contrast simulation  
-          :::image-end:::  
-       :::column-end:::
-    :::row-end:::
-    
-## Use the Command Menu  
+To simulate what your web product looks like in High Contrast mode:
 
-1.  [Open the Command Menu][DevtoolsGuideChromiumCommandMenuIndexOpen].  
-1.  Type `forced-c`, select either **Emulate CSS forced-colors: active** or **Do not emulate CSS forced-colors**  and then select `Enter`.  
-    :::row:::
-       :::column span="":::
-          :::image type="complex" source="../media/accessibility-forced-colors-command-menu-emulate.msft.png" alt-text="Turn on high contrast simulation using the command menu" lightbox="../media/accessibility-forced-colors-command-menu-emulate.msft.png":::
-              Turn on high contrast simulation using the command menu  
-          :::image-end:::  
-       :::column-end:::
-       :::column span="":::
-          :::image type="complex" source="../media/accessibility-forced-colors-command-menu-donotemulate.msft.png" alt-text="Turn off high contrast simulation using the command menu" lightbox="../media/accessibility-forced-colors-command-menu-donotemulate.msft.png":::
-             Turn off high contrast simulation using the command menu  
-          :::image-end:::  
-       :::column-end:::
-    :::row-end:::  
+1.  Open DevTools, such as by pressing `F12`.
 
-View and change your CSS like any other web page.  For more information, see [Get Started With Viewing And Changing CSS][DevtoolsGuideChromiumCssIndex].  
+1.  Open the **Rendering** tool.  For example, click **Customize and control DevTools** (...), point to **More tools**, and then select **Rendering**.
 
-<!-- links --> 
+    :::image type="content" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Open the Rendering Tools." lightbox="../media/getting-to-the-rendering-tools.msft.png":::
 
-[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"  
-[DevtoolsGuideChromiumCommandMenuIndexOpen]: ../command-menu/index.md#open-the-command-menu "Open the Command Menu - Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"  
-[DevtoolsGuideChromiumCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"  
-[DevtoolsGuideChromiumRenderingTools]: ../rendering-tools/index.md "Microsoft Edge (Chromium) Rendering Tools | Microsoft Docs"  
+1.  In **Rendering**, select the dropdown list in **Emulate CSS media feature forced-colors**.<!-- not found in v97 -->
 
-[CsswgDraftsColorsSystem]: https://drafts.csswg.org/css-color#css-system-colors "CSS System Colors"  
-[CsswgDraftsMediaqueries5ForcedColors]: https://drafts.csswg.org/mediaqueries-5#forced-colors "CSS Media Queries Specification on forced colors"  
+    :::image type="content" source="../media/accessibility-forced-colors-rendering-dropdown.msft.png" alt-text="The forced-colors menu on the Rendering drawer." lightbox="../media/accessibility-forced-colors-rendering-dropdown.msft.png":::
 
-[WebaimProjectsLowvisionsurvey2Contrastmode]: https://webaim.org/projects/lowvisionsurvey2#contrastMode "High Contrast Modes - Survey of Users with Low Vision #2 Results | WebAIM"  
+1.  Choose either `No emulation` or `forced-colors: active`.
 
-[WindowsHighContrastMode]: https://support.microsoft.com/help/13862 "How to enable high contrast mode in Windows 10"  
+1.  The current page in the main window now displays the selected simulation.
 
-[WikiDyslexia]: https://en.wikipedia.org/wiki/Dyslexia "Dyslexia | Wikipedia"  
-[WikiIrlenSyndrome]: https://en.wikipedia.org/wiki/Irlen_syndrome "Irlen Syndrome | Wikipedia"  
+Displaying a web site without high-contrast simulation:
+
+:::image type="content" source="../media/accessibility-forced-colors-rendering-no-modification.msft.png" alt-text="Displaying a web site without high-contrast simulation." lightbox="../media/accessibility-forced-colors-rendering-no-modification.msft.png":::
+
+Displaying a web site with high-contrast simulation:
+
+:::image type="content" source="../media/accessibility-forced-colors-rendering-dropdown-active.msft.png" alt-text="Displaying a web site with high-contrast simulation." lightbox="../media/accessibility-forced-colors-rendering-dropdown-active.msft.png":::
+
+
+<!-- ====================================================================== -->
+## By using the Command Menu
+
+1.  [Open the Command Menu](../command-menu/index.md#open-the-command-menu).
+
+1.  Type `forced-c`, select either **Emulate CSS forced-colors: active** or **Do not emulate CSS forced-colors**  and then select `Enter`.<!-- "forced" not found in v97 -->
+
+Turning on high-contrast simulation by using the command menu:
+
+:::image type="content" source="../media/accessibility-forced-colors-command-menu-emulate.msft.png" alt-text="Turning on high-contrast simulation by using the command menu." lightbox="../media/accessibility-forced-colors-command-menu-emulate.msft.png":::
+
+Turning off high-contrast simulation by using the command menu:
+
+:::image type="content" source="../media/accessibility-forced-colors-command-menu-donotemulate.msft.png" alt-text="Turning off high-contrast simulation by using the command menu." lightbox="../media/accessibility-forced-colors-command-menu-donotemulate.msft.png":::
+
+View and change your CSS like for any other web page.  For more information, see [Get Started With Viewing And Changing CSS](../css/index.md).
