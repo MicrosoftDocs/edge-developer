@@ -27,6 +27,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 <!--todo: add section when why-https is available -->
 
+
+<!-- ====================================================================== -->
 ## Open the Security panel
 
 The **Security** panel is the main place in DevTools for inspecting the security of a page.
@@ -38,6 +40,8 @@ The **Security** panel is the main place in DevTools for inspecting the security
        The **Security** panel
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Common problems
 
 ### Non-secure main origins
@@ -71,6 +75,8 @@ In the previous figure, choose **View 1 request in Network panel** to open the *
    Mixed resources in the **Network Log**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## View details
 
 ### View main origin certificate
@@ -92,7 +98,8 @@ Choose one of the entries in the left-hand nav to view the details of the origin
 
 <!-- ====================================================================== -->
 <!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"
+
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge  Developer tools | Microsoft Docs"
 [DevToolsOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
 <!-- external links -->
 [LetsEncrypt]: https://letsencrypt.org "Let's Encrypt - Free SSL/TLS certificates"
@@ -106,7 +113,7 @@ Choose one of the entries in the left-hand nav to view the details of the origin
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/security/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/security/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

@@ -35,6 +35,8 @@ Inspect and modify animations with the Microsoft Edge DevTools Animation Inspect
 *   Inspect animations by slowing down each one, replaying each one, or viewing the source code.
 *   Modify animations by changing the timing, delay, duration, or keyframe offsets.
 
+
+<!-- ====================================================================== -->
 ## Overview
 
 The Microsoft Edge DevTools Animation Inspector has two main purposes.
@@ -46,9 +48,11 @@ The Animation Inspector supports CSS animations, CSS transitions, and web animat
 
 ### What is an Animation Group?
 
-An Animation Group is a group of animations that may be related to each other.  Currently, the web has no real concept of a group animation, so motion designers and developers have to compose and time individual animations so that the animations render as one coherent visual effect.  The Animation Inspector predicts which animations are related based on start time \(excluding delays, and so on\).  The Animation Inspector also groups the animations side-by-side.
+An Animation Group is a group of animations that may be related to each other.  Currently, the web has no real concept of a group animation, so motion designers and developers have to compose and time individual animations so that the animations render as one coherent visual effect.  The Animation Inspector predicts which animations are related based on start time (excluding delays, and so on).  The Animation Inspector also groups the animations side-by-side.
 In other words, a set of animations that are all triggered in the same script block are grouped together.  If an animation is asynchronous, it is placed in a separate group.
 
+
+<!-- ====================================================================== -->
 ## Get started
 
 There are two ways to open the Animation Inspector:
@@ -70,7 +74,7 @@ The Animation Inspector opens next to the **Console** tool.  Since the Animation
    Empty Animation Inspector
 :::image-end:::
 
-The Animation Inspector is grouped into four main sections \(or panes\).  This guide refers to each pane as follows:
+The Animation Inspector is grouped into four main sections (or panes).  This guide refers to each pane as follows:
 
 | Index | Pane | Description |
 |:--- |:--- |:--- |
@@ -91,12 +95,14 @@ To capture an animation, just perform the interaction that triggers the animatio
 
 <!--  > [!VIDEO animations/capture-animations.mp4]  -->
 
+
+<!-- ====================================================================== -->
 ## Inspect animations
 
 After you capture an animation, there are a few ways to replay it:
 
 *   Hover on the thumbnail in the **Overview** pane to view a preview of it.
-*   Choose the Animation Group from the **Overview** pane \(so that it is displayed in the **Details** pane\) and choose the **replay** \(![replay icon](../media/replay-button-icon.msft.png)\) icon.  The animation is replayed in the viewport.  Choose the **animation speed** \(![animation speed icons](../media/animation-speed-buttons-icon.msft.png)\) icons to change the preview speed of the currently selected Animation Group.  You may use the red vertical bar to change your current position.
+*   Choose the Animation Group from the **Overview** pane (so that it is displayed in the **Details** pane) and choose the **replay** (![replay icon](../media/replay-button-icon.msft.png)) icon.  The animation is replayed in the viewport.  Choose the **animation speed** (![animation speed icons](../media/animation-speed-buttons-icon.msft.png)) icons to change the preview speed of the currently selected Animation Group.  You may use the red vertical bar to change your current position.
 *   Choose and drag the red vertical bar to scrub the viewport animation.
 
 ### View animation details
@@ -119,12 +125,14 @@ The leftmost, darker section of an animation is the definition.  The right, more
    Diagram of animation iterations
 :::image-end:::
 
-If two elements have the same animation applied, the Animation Inspector assigns the same color to the elements.  The color is random and has no significance.  For example, in the following figure, the two elements `div.cwccw.earlier` and `div.cwccw.later` have the same animation \(`spinrightleft`\) applied, as do the `div.ccwcw.earlier` and `div.ccwcw.later` elements.
+If two elements have the same animation applied, the Animation Inspector assigns the same color to the elements.  The color is random and has no significance.  For example, in the following figure, the two elements `div.cwccw.earlier` and `div.cwccw.later` have the same animation (`spinrightleft`) applied, as do the `div.ccwcw.earlier` and `div.ccwcw.later` elements.
 
 :::image type="complex" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="Color-coded animations" lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
    Color-coded animations
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Modify animations
 
 There are three ways you are able to modify an animation with the Animation Inspector.
@@ -161,7 +169,7 @@ To add a delay to an animation, choose and drag it anywhere except the circles.
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

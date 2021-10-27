@@ -23,6 +23,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # What's New In DevTools (Microsoft Edge 81)
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Microsoft Edge DevTools team
 
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].
@@ -37,7 +39,7 @@ The DevTools team has contributed 170 changes to Chromium to address high-impact
 
 Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights][AccessibilityInsights] and [webhint][WebhintBrowserExtension] extensions for Microsoft Edge to get started.
 
-If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or choosing the [Send Feedback][Contact] icon!
+If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting][PostTweetEdgeDevTools] at us or clicking the **Send Feedback** icon!
 
 Chromium issue [#963183][CR963183]
 
@@ -47,10 +49,10 @@ Many developers use other developer tools, like StackOverflow and Visual Studio 
 
 :::row:::
    :::column span="":::
-      Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+      Chinese (Simplified) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
    :::column-end:::
    :::column span="":::
-      Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
+      Chinese (Traditional) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -106,7 +108,7 @@ If you want Microsoft Edge to be in one language and your DevTools to remain in 
 
 **Console** messages are not localized.  Only the strings used in the DevTools UI are displayed in the language you use for Microsoft Edge.
 
-If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or choose the [Send Feedback][Contact] icon.
+If you want to use the DevTools in a different language than the ones that are available, [tweet][PostTweetEdgeDevTools] at us or choose the **Send Feedback** icon.
 
 Chromium issue [#941561][CR941561]
 
@@ -122,7 +124,7 @@ The webhint Microsoft Edge extension allows you to easily scan your web page and
 
 ### 3D View
 
-Use the **3D View** to debug your web application by navigating through the [Document Object Model \(DOM\)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.
+Use the **3D View** to debug your web application by navigating through the [Document Object Model (DOM)][MDNDocumentObjectModel] or the [z-index][MDNZIndex] stacking context.
 
 :::image type="complex" source="../../images/2020/01/3dview.msft.png" alt-text="The 3D View in the DevTools" lightbox="../../images/2020/01/3dview.msft.png":::
    The 3D View in the DevTools
@@ -130,7 +132,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 
 To access the 3D View, select `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.
 
-The Microsoft Edge team is working with the Chromium team on the UI and adding more functionality to the 3D View, so please send your [feedback][Contact].
+The Microsoft Edge team is working with the Chromium team on the UI and adding more functionality to the 3D View, so please use the **Send Feedback** icon!
 
 Chromium issue [#987787][CR987787]
 
@@ -140,7 +142,7 @@ The DevTools team has also released some extensions for [Visual Studio Code][Vis
 
 #### Elements for Microsoft Edge
 
-Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge \(Chromium\)][VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension] Visual Studio Code extension.
+Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge][VisualStudioMarketplaceElementsMicrosoftEdgeExtension] Visual Studio Code extension.
 
 :::image type="complex" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="The Elements tool in Visual Studio Code using the Elements for Microsoft Edge extension" lightbox="../../images/2020/01/elements-for-edge.msft.png":::
    The **Elements** tool in Visual Studio Code using the Elements for Microsoft Edge extension
@@ -188,6 +190,8 @@ Tracking prevention is a unique feature in Microsoft Edge that protects you from
 
 [Read more about tracking prevention and the balance between privacy and web compatibility][TrackingPrevention].
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 The following sections announce additional features available in Microsoft Edge 81 that were contributed to the open source Chromium project.
@@ -244,7 +248,7 @@ All cells in the Cookie tables are editable now, except cells in the **Size** co
 
 #### Copy as Node.js fetch to include cookie data
 
-To get a `fetch` expression that includes cookie data, hover on a network request, open the contextual menu \(right-click\), and choose **Copy** > **Copy as Node.js fetch**.
+To get a `fetch` expression that includes cookie data, hover on a network request, open the contextual menu (right-click), and choose **Copy** > **Copy as Node.js fetch**.
 
 :::image type="complex" source="../../images/2020/01/fetchcookies.msft.png" alt-text="Copy as Node.js fetch" lightbox="../../images/2020/01/fetchcookies.msft.png":::
    Copy as Node.js fetch
@@ -298,6 +302,8 @@ Open [Settings][DevtoolsCustomizeIndexSettings] and then disable **Preferences**
    Scrolling past the end of a file is now disabled in the Sources panel
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
@@ -321,7 +327,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 [VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"
 [VisualStudioMarketplaceDebuggerEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Debugger for Microsoft Edge | Visual Studio Marketplace"
-[VisualStudioMarketplaceElementsMicrosoftEdgeChromiumExtension]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Elements for Microsoft Edge \(Chromium\) | Visual Studio Marketplace"
+[VisualStudioMarketplaceElementsMicrosoftEdgeExtension]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Elements for Microsoft Edge | Visual Studio Marketplace"
 [VisualStudioMarketplaceWebhintExtension]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint | Visual Studio Marketplace"
 
 [TrackingPrevention]: https://blogs.windows.com/msedgedev/2019/12/03/improving-tracking-prevention-microsoft-edge-79 "Improving Tracking Prevention in Microsoft Edge blog post"
@@ -359,7 +365,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-81) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-81) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
@@ -367,4 +373,4 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
