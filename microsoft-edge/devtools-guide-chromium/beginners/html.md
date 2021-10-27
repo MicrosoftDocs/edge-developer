@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, devtools for beg
 
 This is the first in a series of tutorials that teach you the basics of web development. Learn about a set of web developer tools, named Microsoft Edge DevTools, that will increase your productivity.
 
-This tutorial describes HTML and the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \(DOM\). HTML is one of the core technologies of web development. It is the language that controls the structure and content of webpages. The DOM is also related to the structure and content of webpages, which we learn more about later.
+This tutorial describes HTML and the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM). HTML is one of the core technologies of web development. It is the language that controls the structure and content of webpages. The DOM is also related to the structure and content of webpages, which we learn more about later.
 
 
 <!-- ====================================================================== -->
@@ -222,7 +222,7 @@ If you want to quickly experiment with content changes without ever leaving the 
     Updating the node as HTML
 ::image-end:::
 
-1.  Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save your changes, or select outside the box. Your changes automatically show up in the live view of your page. The text `Your site!` has been replaced with the new content.
+1.  Select `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to save your changes, or select outside the box. Your changes automatically show up in the live view of your page. The text `Your site!` has been replaced with the new content.
 
     :::image type="complex" source="media/beginners-html-edit3.msft.png" alt-text="The new content shows up immediately on the page" lightbox="media/beginners-html-edit3.msft.png":::
        The new content shows up immediately on the page
@@ -324,7 +324,7 @@ You're almost done. You made a few changes to the page in DevTools, but they're 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/html) and is authored by [Katherine Jackson](https://developers.google.com/web/resources/contributors#katherine-jackson) (Technical Writer Intern, Chrome DevTools).
+> The original page was found at https://developers.google.com/web/tools/chrome-devtools/beginners/html <!-- 404 now --> and was authored by [Katherine Jackson](https://developers.google.com/web/resources/contributors#katherine-jackson) (Technical Writer Intern, Chrome DevTools).
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

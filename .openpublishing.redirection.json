@@ -1023,6 +1023,11 @@
         "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/origin-trials",
         "redirect_document_id": false
       },
+      {
+        "source_path": "microsoft-edge/progressive-web-apps-chromium/offline.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/offline",
+        "redirect_document_id": false
+      },
       /* redirect to visual studio code */
       {
         "source_path": "microsoft-edge/visual-studio-code/elements-for-edge.md",

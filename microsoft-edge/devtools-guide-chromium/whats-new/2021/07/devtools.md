@@ -132,7 +132,7 @@ Previously, when using CSS-in-JS libraries, you were not able to copy CSS declar
 
 Now in Microsoft Edge version 93, you can copy a single CSS declaration or all the declarations in a style rule and paste them directly into a JavaScript file without having syntax issues. To try this feature:
 
-1. In the **Styles** pane of the **Elements** tool, open the contextual menu \(right-click\) on a declaration in a style rule.
+1. In the **Styles** pane of the **Elements** tool, open the contextual menu (right-click) on a declaration in a style rule.
 1. Select **Copy declaration as JS** or **Copy all declarations as JS**.
 1. Paste the copied CSS into a JavaScript file in your text editor, such as Visual Studio Code.  For example: `'--more-link': 'lime'`.
 
@@ -244,7 +244,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-93) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-93) and is authored by [Jecelyn Yeen][JecelynYeen] (Developer advocate, Chrome DevTools).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
@@ -252,4 +252,4 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors/jecelynyeen
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelynyeen

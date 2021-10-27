@@ -54,9 +54,9 @@ Use a minifier that is capable of creating source maps.  <!--For the most popula
 
 The following types of preprocessors are commonly used in combination with Source Maps:
 
-*   Transpilers \([Babel][BabelJS], [Traceur][GitHubWikiGoogleTraceurCompiler]\)
-*   Compilers \([Closure Compiler][GitHubGoogleClosureCompiler], [TypeScript][TypeScriptMain], [CoffeeScript][CoffeeScriptMain], [Dart][DartMain]\)
-*   Minifiers \([UglifyJS][GitHubMishooUglifyJS]\)
+*   Transpilers ([Babel][BabelJS], [Traceur][GitHubWikiGoogleTraceurCompiler])
+*   Compilers ([Closure Compiler][GitHubGoogleClosureCompiler], [TypeScript][TypeScriptMain], [CoffeeScript][CoffeeScriptMain], [Dart][DartMain])
+*   Minifiers ([UglifyJS][GitHubMishooUglifyJS])
 
 
 <!-- ====================================================================== -->
@@ -68,7 +68,7 @@ When running Source Maps in DevTools, you should notice that the JavaScript is n
 
 ### Enable Source Maps in settings
 
-Source Maps are enabled by default<!-- \(as of Microsoft Edge 39\)-->, but if you want to double-check or enable them; first open DevTools, choose **Customize and control DevTools** \(`...`\) > **Settings**.  On the **Preferences** pane, under **Sources**, turn on **Enable JavaScript Source Maps**.  You may also turn on the **Enable CSS Source Maps**.
+Source Maps are enabled by default<!-- (as of Microsoft Edge 39)-->, but if you want to double-check or enable them; first open DevTools, choose **Customize and control DevTools** (`...`) > **Settings**.  On the **Preferences** pane, under **Sources**, turn on **Enable JavaScript Source Maps**.  You may also turn on the **Enable CSS Source Maps**.
 
 :::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Enable Source Maps" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
    **Enable JavaScript Source Maps**
@@ -78,8 +78,8 @@ Source Maps are enabled by default<!-- \(as of Microsoft Edge 39\)-->, but if yo
 
 When debugging your code and Source Maps enabled, Source Maps show in two places:
 
-1.  In the console \(the link to source should be the original file, not the generated one\)
-1.  When stepping through code \(the links in the call stack should open the original source file\)
+1.  In the console (the link to source should be the original file, not the generated one)
+1.  When stepping through code (the links in the call stack should open the original source file)
 
 <!--todo: add link to debugging your code when section is available -->
 <!--[DebugBreakpointsStepCode]: ../debug/breakpoints/step-code.md ""  -->
@@ -138,7 +138,7 @@ If you expand the **Sources** sub-panel you now display a new file with the cust
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\) and [Paul Bakaus][PaulBakaus] \(Open Web Developer Advocate, Google: Tools, Performance, Animation, and UX\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) and is authored by [Meggin Kearney][MegginKearney] (Technical Writer) and [Paul Bakaus][PaulBakaus] (Open Web Developer Advocate, Google: Tools, Performance, Animation, and UX).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

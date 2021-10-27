@@ -57,8 +57,8 @@ You can move among the tools by using the keyboard navigation keys or by using t
 
 ### Navigate by keyboard
 
-*   With DevTools open, select `Control`+`]` \(Windows, Linux\) or `Command`+`]` \(macOS\) to move focus to the next tool on the main toolbar.
-*   Select `Control`+`[` \(Windows, Linux\) or `Command`+`[` \(macOS\) to move focus to the previous tool on the main toolbar.
+*   With DevTools open, select `Control`+`]` (Windows, Linux) or `Command`+`]` (macOS) to move focus to the next tool on the main toolbar.
+*   Select `Control`+`[` (Windows, Linux) or `Command`+`[` (macOS) to move focus to the previous tool on the main toolbar.
 *   Select `Tab` or `Shift`+`Tab` repeatedly until focus moves to the tabs of the main toolbar or drawer toolbar, and then use the arrow keys to move among the tools.
 
 **Known issues**
@@ -70,7 +70,7 @@ You can move among the tools by using the keyboard navigation keys or by using t
 
 To select a specific tool, use the [Command Menu](../command-menu/index.md).  In the Command Menu, a tool is called a _panel_.
 
-1.  With DevTools open, select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.
+1.  With DevTools open, select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
     The **Command Menu** is a fuzzy-search autocomplete combobox.
 1.  Type the name of a panel (tool), and then use the `Down Arrow` on the keyboard to navigate to the correct option.
 1.  Select `Enter` to run a command.
@@ -97,7 +97,7 @@ The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.
 
 ### Copy the code for an element in the DOM Tree
 
-1.  With focus on a node in the **DOM Tree**, hover on the node and open the contextual menu \(right-click\).
+1.  With focus on a node in the **DOM Tree**, hover on the node and open the contextual menu (right-click).
 1.  Expand the **Copy** option.
 1.  Choose **Copy outerHTML**.
 
@@ -140,9 +140,9 @@ The **DOM Breakpoints** and **Properties** tabs are not keyboard-accessible.
 
 ### Styles pane
 
-In the **Styles** pane find controls for filtering styles, toggling element states \(such as [:active](https://developer.mozilla.org/docs/Web/CSS/:active) and [:focus](https://developer.mozilla.org/docs/Web/CSS/:focus)\), toggling classes, and adding new classes.  There is also a powerful style inspection tool to explore and modify styles currently applied to the element that is in focus in the **DOM Tree**.
+In the **Styles** pane find controls for filtering styles, toggling element states (such as [:active](https://developer.mozilla.org/docs/Web/CSS/:active) and [:focus](https://developer.mozilla.org/docs/Web/CSS/:focus)), toggling classes, and adding new classes.  There is also a powerful style inspection tool to explore and modify styles currently applied to the element that is in focus in the **DOM Tree**.
 
-The key concept to understand about the **Styles** pane is that it only shows styles for the currently-selected node in the **DOM Tree**.  For example, suppose you are done inspecting the styles of a `<header>` node, and now you want to look at the styles for a `<footer>` node.  To do that, you first need to select the `<footer>` node in the **DOM Tree**.  You may find it faster to use the [Inspect](#inspect-an-element-on-the-page) workflow to inspect a node that is in the general vicinity of the `footer` node \(such as a link within the footer\), which focuses the **DOM Tree**, and then use your keyboard to navigate to the exact node in which you are interested.
+The key concept to understand about the **Styles** pane is that it only shows styles for the currently-selected node in the **DOM Tree**.  For example, suppose you are done inspecting the styles of a `<header>` node, and now you want to look at the styles for a `<footer>` node.  To do that, you first need to select the `<footer>` node in the **DOM Tree**.  You may find it faster to use the [Inspect](#inspect-an-element-on-the-page) workflow to inspect a node that is in the general vicinity of the `footer` node (such as a link within the footer), which focuses the **DOM Tree**, and then use your keyboard to navigate to the exact node in which you are interested.
 
 #### Navigate the Styles pane
 

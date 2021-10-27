@@ -143,7 +143,7 @@ The following Reference sections are for Remote Tools for Microsoft Edge.
 <!-- ====================================================================== -->
 ## /msedge/json/list
 
-Provides a candidate list of all `msedge.exe` processes \(including [PWAs](../progressive-web-apps-chromium/index.md) and all tabs in all instances of Microsoft Edge\) on the Windows 10 or later device for debugging.
+Provides a candidate list of all `msedge.exe` processes (including [PWAs](../progressive-web-apps-chromium/index.md) and all tabs in all instances of Microsoft Edge) on the Windows 10 or later device for debugging.
 
 **Parameters**
 

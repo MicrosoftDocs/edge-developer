@@ -71,9 +71,9 @@ This stylesheet does not just include the code for the button component.  It con
 ## Record code coverage
 
 1.  Choose one of the following buttons in the **Coverage** panel.
-    *   Choose **Start Instrumenting Coverage And Reload Page** \(![Start Instrumenting Coverage And Reload Page](../media/reload-icon.msft.png)\) if you want to review what code is needed to load the page.
-    *   Choose **Instrument Coverage** \(![Instrument Coverage](../media/record-icon.msft.png)\) if you want to review what code is used after interacting with the page.
-1.  Choose **Stop Instrumenting Coverage And Show Results** \(![Stop Instrumenting Coverage And Show Results](../media/stop-icon.msft.png)\) when you want to stop recording code coverage.
+    *   Choose **Start Instrumenting Coverage And Reload Page** (![Start Instrumenting Coverage And Reload Page](../media/reload-icon.msft.png)) if you want to review what code is needed to load the page.
+    *   Choose **Instrument Coverage** (![Instrument Coverage](../media/record-icon.msft.png)) if you want to review what code is used after interacting with the page.
+1.  Choose **Stop Instrumenting Coverage And Show Results** (![Stop Instrumenting Coverage And Show Results](../media/stop-icon.msft.png)) when you want to stop recording code coverage.
 
 
 <!-- ====================================================================== -->
@@ -99,7 +99,7 @@ The table in the **Coverage** panel displays the resources that were analyzed, a
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/coverage/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/coverage/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
