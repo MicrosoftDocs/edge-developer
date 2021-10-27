@@ -174,8 +174,18 @@ The response value from `navigator.userAgent` method uses the following format.
 
 Platform identifiers change based on the operating system, and version numbers increment over time. The format is the same as the Chromium user agent with the addition of a new `Edg` token at the end. Microsoft chose the `Edg` token to avoid compatibility issues caused by `Edge` string, which was previously used for the legacy Microsoft Edge browser based on EdgeHTML. The `Edg` token is also consistent with [existing tokens][WindowsBlogsMsedgedev20171005MicrosoftEdgeIosAndroidDeveloper] used for iOS and Android.
 
+## Edge identifiers on various platforms
+On desktop, Edge is commonly identified by an "Edg" token in the user-agent string. However, this token might change for various devices/platforms, here are a few common ones: 
 
-<!-- ====================================================================== -->
+| Platform | Edge identifier |
+|:--- |:--- |
+| Desktop (Windows/Mac/Linux) | `Edg` |
+| iPhone/iPad | `EdgiOS` |
+| Android (Mobile/tablet) | `EdgA`|
+
+> [!NOTE]
+> Values in above table refer to Chromium-based Edge only, and does not include EdgeHTML-based Edge browser, which has identifier `Edge` in the user-agent string.  
+
 ## Map the User-Agent string to browser name
 
 Map the user-agent string tokens to human-readable browser names to use in code. This practice is common across the web. When you map the new `Edg` token to a browser name, Microsoft recommends using a different name than the one used for the legacy Microsoft EdgeHTML browser to avoid accidentally applying legacy workarounds that do not apply to Chromium-based browsers.
