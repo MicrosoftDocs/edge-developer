@@ -1260,7 +1260,6 @@ Initial developer preview release.
 [GithubMicrosoftedgeWebviewfeedbackIssue1061]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1061 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1061"
 [GithubMicrosoftedgeWebviewfeedbackIssue730]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/730 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 730"
 [GithubMicrosoftedgeWebviewfeedbackIssue1548]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1548 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1548"
-[GithubMicrosoftedgeWebviewfeedbackIssue1577]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1577 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1577"
 [WebView2UDFAnnouncement]: https://github.com/MicrosoftEdge/WebViewFeedback/issues/1410 "Feedback repo for MicrosoftEdge/WebViewFeedback Issue 1410"
 
 [MicrosoftDevblogDotnetAnnouncingGeneralAvailabilityForMicrosoftEdgeWebview2ForNetFixedDistributionMethod]: https://devblogs.microsoft.com/dotnet/announcing-general-availability-for-microsoft-edge-webview2-for-net-and-fixed-distribution-method "Announcing General Availability for Microsoft Edge WebView2 for .NET and Fixed Distribution Method | .NET Blog"
