@@ -18,8 +18,8 @@ Mechanisms for browser detection:
 
 | Mechanism | Server-side | Client-side |
 |:--- |:--- |:--- |
-| **User-Agent Client Hints** \(recommended\) | `Sec-CH-UA` HTTPS header | `navigator.userAgentData` JavaScript method |
-| **User-Agent string** \(legacy\) | `User-Agent` HTTPS header | `navigator.userAgent` JavaScript method |
+| **User-Agent Client Hints** (recommended) | `Sec-CH-UA` HTTPS header | `navigator.userAgentData` JavaScript method |
+| **User-Agent string** (legacy) | `User-Agent` HTTPS header | `navigator.userAgent` JavaScript method |
 
 This article describes the methods Microsoft Edge supports for retrieving user agent information.
 
@@ -184,7 +184,7 @@ Map the user-agent string tokens to human-readable browser names to use in code.
 <!-- ====================================================================== -->
 ## User-Agent overrides
 
-Sometimes, a website doesn't recognize the Microsoft Edge user agent. As a result, a set of the features of the website may not work correctly. When Microsoft is notified about the types of issues, Microsoft contacts you \(a website owner\) and informs you about the updated user agent.
+Sometimes, a website doesn't recognize the Microsoft Edge user agent. As a result, a set of the features of the website may not work correctly. When Microsoft is notified about the types of issues, Microsoft contacts you (a website owner) and informs you about the updated user agent.
 
 You may need more time to update and test the user agent detection logic for your website to address the issues reported by Microsoft. To maximize compatibility for your users, the Microsoft Edge Beta and Stable channels use a list of user agent overrides. Use the user agent overrides while you update your website. The list of user agent overrides is provided by Microsoft.
 

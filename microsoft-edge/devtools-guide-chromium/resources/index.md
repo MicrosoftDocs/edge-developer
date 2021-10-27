@@ -33,7 +33,7 @@ This guide assumes that you are familiar with the basics of [web development][MD
 
 When you know the name of the resource that you want to inspect, the **Command Menu** provides a fast way of opening the resource.
 
-1.  Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\).  The **Open File** dialog opens.
+1.  Select `Control`+`P` (Windows, Linux) or `Command`+`P` (macOS).  The **Open File** dialog opens.
 
     :::image type="complex" source="../media/resources-command-menu-empty.msft.png" alt-text="The Open File dialog" lightbox="../media/resources-command-menu-empty.msft.png":::
        The **Open File** dialog
@@ -55,7 +55,7 @@ Navigate to [Inspect the details of a resource][DevtoolsNetworkInspectDetailsRes
 
 ### Reveal resources in the Network tool from other panels
 
-The [Browse resources](#browse-resources) section below shows you how to view resources from various parts of the DevTools UI.  If you ever want to inspect a resource in the **Network** tool,  hover on the resource, open the contextual menu \(right-click\), and choose **Reveal in Network panel**.
+The [Browse resources](#browse-resources) section below shows you how to view resources from various parts of the DevTools UI.  If you ever want to inspect a resource in the **Network** tool,  hover on the resource, open the contextual menu (right-click), and choose **Reveal in Network panel**.
 
 :::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Reveal in Network panel" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **Reveal in Network panel**
@@ -166,7 +166,7 @@ Navigate to [Filter by resource type][DevtoolsNetworkFilterByResourceType].
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/resources/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/resources/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

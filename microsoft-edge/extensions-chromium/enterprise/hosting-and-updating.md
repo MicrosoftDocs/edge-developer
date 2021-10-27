@@ -16,7 +16,7 @@ Most extensions are published to the [Microsoft Edge Add-ons website][MicrosoftM
 <!-- ====================================================================== -->
 ## Publish options for extensions
 
-All extensions are distributed to users as a special archive \(`.zip`\) file with a `.crx` suffix.  Extensions published to the Microsoft Edge Add-ons website are uploaded as `.zip` files.  The publishing process automatically converts the `.zip` file into a `.crx` file.
+All extensions are distributed to users as a special archive (`.zip`) file with a `.crx` suffix.  Extensions published to the Microsoft Edge Add-ons website are uploaded as `.zip` files.  The publishing process automatically converts the `.zip` file into a `.crx` file.
 
 The following two scenarios don't require you to publish your extension in the Microsoft Edge Add-ons website.
 

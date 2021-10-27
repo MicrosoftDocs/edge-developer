@@ -20,7 +20,7 @@ In this article, we cover some of the features you can use in DevTools to test f
 <!-- ====================================================================== -->
 ## Automated testing by using the Issues tool
 
-When you open the demo page in the browser and open DevTools, notice that some issues are automatically detected in the **Issues counter**.  Select the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) to open the [Issues tool](../issues/index.md) to view the issues and more information.
+When you open the demo page in the browser and open DevTools, notice that some issues are automatically detected in the **Issues counter**.  Select the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)) to open the [Issues tool](../issues/index.md) to view the issues and more information.
 
 :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="The Issues counter shows how many problems there are in the current webpage, and opens the Issues tool" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
     The Issues counter shows how many problems there are in the current webpage, and opens the Issues tool
@@ -143,7 +143,7 @@ One of those issues is the donation form.  When you use a mouse, you can click t
 <!-- ====================================================================== -->
 ## Using the Inspect tool to detect accessibility issues
 
-Use the **Inspect** tool to detect accessibility issues by hovering over parts of the webpage.  The **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) tool is in the top-left corner of DevTools.  Turn on the Inspect tool by selecting the **Inspect** tool button.
+Use the **Inspect** tool to detect accessibility issues by hovering over parts of the webpage.  The **Inspect** (![Inspect](../media/inspect-icon.msft.png)) tool is in the top-left corner of DevTools.  Turn on the Inspect tool by selecting the **Inspect** tool button.
 
 :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="Turn on the Inspect tool by selecting the Inspect tool button" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
     Turn on the **Inspect** tool by selecting the **Inspect** tool button
@@ -166,7 +166,7 @@ For detailed walkthrough steps, navigate to [Identify nested regions using color
 
 The upper section of the **Inspect** tool's information overlay displays the following information:
 
-* Layout type; if the element is positioned using a flexbox or grid, you see an appropriate icon \(![Grid layout icon](../media/grid-icon.msft.png)\).
+* Layout type; if the element is positioned using a flexbox or grid, you see an appropriate icon (![Grid layout icon](../media/grid-icon.msft.png)).
 * The name of the element, such as **a**, **h1**, or **div**.
 * The dimensions of the element, in pixels.
 * The color, as a color swatch (a small, colored square) and as a formatted value (such as `#336699`).

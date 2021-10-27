@@ -45,7 +45,7 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 
 1.  Navigate to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page][A11ytestingPagewitherrors] in a new tab or window.
 
-1.  Open DevTools.  After a few seconds, the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears in the upper right corner of DevTools.
+1.  Open DevTools.  After a few seconds, the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)) appears in the upper right corner of DevTools.
 
 1.  Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.
 
@@ -82,7 +82,7 @@ The **Issues** tool presents additional documentation and recommended fixes to a
 
 1.  Open the [demo page][A11ytestingPagewitherrors] in a new window or tab, and then open DevTools.
 
-1.  Open the **Issues** tool by selecting the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\).
+1.  Open the **Issues** tool by selecting the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)).
 
 1.  Select an issue to expand the issue.
 
@@ -160,7 +160,7 @@ To display an issue for elements with wavy underlines in the DOM tree, perform t
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton][SamDutton] \(Developer Advocate\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton][SamDutton] (Developer Advocate).
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
 

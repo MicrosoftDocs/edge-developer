@@ -282,7 +282,7 @@ As you continue your journey to become an expert in web development, you may fin
 
 To add a declaration to an existing ruleset
 
-1.  Hover on the **Home** link, open the contextual menu \(right-click\), and select **Inspect**.
+1.  Hover on the **Home** link, open the contextual menu (right-click), and select **Inspect**.
 
     :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="Inspect the Home link" lightbox="../media/beginners-css-add1.msft.png":::
        Inspect the Home link
@@ -345,7 +345,7 @@ To edit existing declarations in DevTools
 
 To add new rulesets in DevTools
 
-1.  Select **New Style Rule** \(![New Style Rule](../media/new-style-rule-icon.msft.png)\) which is next to **.cls**.  An empty ruleset appears with `a` as the selector.
+1.  Select **New Style Rule** (![New Style Rule](../media/new-style-rule-icon.msft.png)) which is next to **.cls**.  An empty ruleset appears with `a` as the selector.
 
     :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="Add a new rule" lightbox="../media/beginners-css-rule1.msft.png":::
        Add a new rule

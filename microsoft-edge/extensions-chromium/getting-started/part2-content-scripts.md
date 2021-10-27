@@ -125,7 +125,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 The reason is that you're injecting the image using the `src` attribute of the `img` element into the content page.  The content page is running on a unique thread that isn't the same as the thread running the Extension.  You must expose the static image file as a web asset for it to work correctly.
 
-Add another entry in the `manifest.json` file to declare that the image is available to all browser tabs.  That entry is as follows \(you should see it in the full `manifest.json` file below when you add the content script declaration coming up\).
+Add another entry in the `manifest.json` file to declare that the image is available to all browser tabs.  That entry is as follows (you should see it in the full `manifest.json` file below when you add the content script declaration coming up).
 
 ```json
 "web_accessible_resources": [
@@ -172,7 +172,7 @@ The section you added is `content_scripts`.  The `matches` attribute is set to `
 
 6. Add jQuery and understanding the associated thread
 
-In the content scripts that you're injecting, plan on using jQuery \(`$`\).  You added a minified version of jQuery and put it in your Extension package as `lib\jquery.min.js`.  These content scripts run in individual sandboxes, which means that the jQuery injected into the `popup.js` page isn't shared with the content.
+In the content scripts that you're injecting, plan on using jQuery (`$`).  You added a minified version of jQuery and put it in your Extension package as `lib\jquery.min.js`.  These content scripts run in individual sandboxes, which means that the jQuery injected into the `popup.js` page isn't shared with the content.
 
 Keep in mind that even if the browser tab has JavaScript running on it on the loaded web page, any content injected doesn't have access to that.  That injected JavaScript just has access to the actual DOM loaded in that browser tab.
 
@@ -209,7 +209,7 @@ When an event is processed by the listener, the function that is the first param
 
 *   The first script line dynamically inserts into the DOM header a **\<style\>** section that you must assign as a `slide-image` class to your `img` element.
 *   The second script line appends an `img` element right below the `body` of your browser tab that has the `slide-image` class assigned as well as the `imageDivId` as the ID of that image element.
-*   The third script line adds a `click` event that covers the entire image allowing the user to select anywhere on the image and that image is removed from the page \(along with it is event listener\).
+*   The third script line adds a `click` event that covers the entire image allowing the user to select anywhere on the image and that image is removed from the page (along with it is event listener).
 
 8. Add functionality to remove the displayed image when selected
 

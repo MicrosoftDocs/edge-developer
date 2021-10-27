@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs, visual studi
 ---
 # Visual Studio for web development
 
-Microsoft [Visual Studio][MicrosoftVisualstudioVs] is an integrated development environment \(IDE\).   Use it to edit, debug, build, and publish your web apps.  It is a feature-rich program that can be used for many aspects of your web development.  Over and above the standard editor and debugger that most IDEs provide, Visual Studio includes the following features to ease your development process.
+Microsoft [Visual Studio][MicrosoftVisualstudioVs] is an integrated development environment (IDE).   Use it to edit, debug, build, and publish your web apps.  It is a feature-rich program that can be used for many aspects of your web development.  Over and above the standard editor and debugger that most IDEs provide, Visual Studio includes the following features to ease your development process.
 
 *   Compilers
 *   Code completion tools

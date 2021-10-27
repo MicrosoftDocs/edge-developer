@@ -72,7 +72,7 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        Choose a resource to refresh
     :::image-end:::
 
-1.  Choose **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\).
+1.  Choose **Refresh** (![Refresh](../media/refresh-icon.msft.png)).
 
 
 <!-- ====================================================================== -->
@@ -96,7 +96,7 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        Choose a resource to delete
     :::image-end:::
 
-1.  Choose **Delete Selected** \(![Delete Selected](../media/delete-icon.msft.png)\).
+1.  Choose **Delete Selected** (![Delete Selected](../media/delete-icon.msft.png)).
 
 
 <!-- ====================================================================== -->
@@ -129,7 +129,7 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/cache) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/cache) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

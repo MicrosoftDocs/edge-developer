@@ -39,7 +39,7 @@ The normal sequence of navigation events is `NavigationStarting`, `SourceChanged
    :::column-end:::
 :::row-end:::
 
-Track navigation events to each new document using the navigation ID \(`NavigationId` event\).  The `NavigationId` event of WebView changes every time a successful navigation to a new document completes.
+Track navigation events to each new document using the navigation ID (`NavigationId` event).  The `NavigationId` event of WebView changes every time a successful navigation to a new document completes.
 
  Navigation events with different instances of `NavigationId` event may overlap.  For instance, when you start a navigation event, you must wait for the related `NavigationStarting` event.  If you then start another navigation, you should see the `NavigationStarting` event for the first navigate followed by the `NavigationStarting` event for the second navigate, followed by the `NavigationCompleted` event for the first navigation and then all the rest of the appropriate navigation events for the second navigation.
 

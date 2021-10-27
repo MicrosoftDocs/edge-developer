@@ -9,9 +9,9 @@ ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ---
 
-# Content Security Policy \(CSP\)
+# Content Security Policy (CSP)
 
-In order to mitigate a large class of potential cross-site scripting issues, the Microsoft Edge Extension system has incorporated the general concept of [Content Security Policy \(CSP\)][W3CContentSecurityPolicy].  This introduces some fairly strict policies that make Extensions more secure by default, and provides you with the ability to create and enforce rules governing the types of content that may be loaded and run by your Extensions and applications.
+In order to mitigate a large class of potential cross-site scripting issues, the Microsoft Edge Extension system has incorporated the general concept of [Content Security Policy (CSP)][W3CContentSecurityPolicy].  This introduces some fairly strict policies that make Extensions more secure by default, and provides you with the ability to create and enforce rules governing the types of content that may be loaded and run by your Extensions and applications.
 
 In general, CSP works as a block/allowlisting mechanism for resources loaded or run by your Extensions.  Defining a reasonable policy for your Extension enables you to carefully consider the resources that your Extension requires, and to ask the browser to ensure that those are the only resources your Extension has access to.  The policies provide security over and above the host permissions your Extension requests; they are an additional layer of protection, not a replacement.
 
@@ -63,7 +63,7 @@ function() { return foo && foo.bar && foo.bar.baz };
 
 Inline JavaScript are not run.  This restriction bans both inline `<script>` blocks and inline event handlers, such as `<button onclick="...">`.
 
-The first restriction wipes out a huge class of cross-site scripting attacks by making it impossible for you to accidentally run the script provided by a malicious third-party.  It does, however, require you to write your code with a clean separation between content and behavior \(which you should of course do anyway, right?\).  An example may make this clearer.  You may try to write a Browser Action pop-up as a single `pop-up.html` containing:
+The first restriction wipes out a huge class of cross-site scripting attacks by making it impossible for you to accidentally run the script provided by a malicious third-party.  It does, however, require you to write your code with a clean separation between content and behavior (which you should of course do anyway, right?).  An example may make this clearer.  You may try to write a Browser Action pop-up as a single `pop-up.html` containing:
 
 ```html
 <!doctype html>
@@ -98,7 +98,7 @@ The first restriction wipes out a huge class of cross-site scripting attacks by 
 
 Three things must change in order to make this work the way you expect it to:
 
-*   The `clickHandler` definition must be moved into an external JavaScript file \(`popup.js` may be a good target).
+*   The `clickHandler` definition must be moved into an external JavaScript file (`popup.js` may be a good target).
 *   The inline event handler definitions must be rewritten in terms of `addEventListener` and extracted into `popup.js`.
     If you are currently starting your program using code like `<body onload="main();">`, consider replacing it by hooking into the `DOMContentLoaded` event of the document, or the `load` event of the window, depending on your requirements.  Use the former, since it generally triggers more quickly.
 
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 Script and object resources are only able to be loaded from the Extension package, not from the web at large.  This ensures that your Extension only runs the code you specifically approved, preventing an active network attacker from maliciously redirecting your request for a resource.
 
-Instead of writing code that depends on jQuery \(or any other library\) loading from an external CDN, consider including the specific version of jQuery in your Extension package.  That is, instead of:
+Instead of writing code that depends on jQuery (or any other library) loading from an external CDN, consider including the specific version of jQuery in your Extension package.  That is, instead of:
 
 ```html
 <!doctype html>
@@ -193,7 +193,7 @@ Download the file, include it in your package, and write:
 
 As of Chrome 46, -->
 
-Inline scripts are able to be allowed by specifying the base64-encoded hash of the source code in the policy.  This hash must be prefixed by the used hash algorithm \(sha256, sha384 or sha512\).  For an example, navigate to [Hash usage for \<script\> elements][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage].
+Inline scripts are able to be allowed by specifying the base64-encoded hash of the source code in the policy.  This hash must be prefixed by the used hash algorithm (sha256, sha384 or sha512).  For an example, navigate to [Hash usage for \<script\> elements][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage].
 
 **Remote Script**
 
@@ -213,7 +213,7 @@ A relaxed policy definition which allows script resources to be loaded from `exa
 ```
 
 > [!NOTE]
-> Both `script-src` and `object-src` are defined by the policy.  Microsoft Edge does not accept a policy that does not limit each of these values to \(at least\) '`self`'.
+> Both `script-src` and `object-src` are defined by the policy.  Microsoft Edge does not accept a policy that does not limit each of these values to (at least) '`self`'.
 
 <!-- Making use of Google Analytics is the canonical example for this sort of policy definition.  It is common enough that an Analytics boilerplate of sorts is provided in the Event Tracking with Google Analytics sample Extension, and a brief tutorial that goes into more detail.  -->
 
@@ -231,7 +231,7 @@ However, you should avoid relaxing policies.  The functions are notorious XSS at
 <!-- ====================================================================== -->
 ## Tightening the default policy
 
-You may, of course, tighten this policy to whatever extent your Extension allows in order to increase security at the expense of convenience.  To specify that your Extension are able to only load resources of any type \(images, and so on\) from the associated Extension package, for example, a policy of `default-src 'self'` may be appropriate.
+You may, of course, tighten this policy to whatever extent your Extension allows in order to increase security at the expense of convenience.  To specify that your Extension are able to only load resources of any type (images, and so on) from the associated Extension package, for example, a policy of `default-src 'self'` may be appropriate.
 
 <!-- The Mappy sample Extension is a good example of an Extension that is been locked down above and beyond the defaults.  -->
 
@@ -256,7 +256,7 @@ However, the behavior becomes more complicated both inside that DOM injected scr
 document.write("<button onclick='alert(1);'>click me</button>'");
 ```
 
-If a user chooses that button, the `onclick` script does not run.  This is because the script did not immediately run and code is not interpreted until the `click` event occurs is not considered part of the content script, so the CSP of the page \(not of the Extension\) restricts the behavior.  And since that CSP does not specify `unsafe-inline`, the inline event handler is blocked.
+If a user chooses that button, the `onclick` script does not run.  This is because the script did not immediately run and code is not interpreted until the `click` event occurs is not considered part of the content script, so the CSP of the page (not of the Extension) restricts the behavior.  And since that CSP does not specify `unsafe-inline`, the inline event handler is blocked.
 The correct way to implement the desired behavior in this case may be to add the `onclick` handler as a function from the content script as follows:
 
 ```javascript

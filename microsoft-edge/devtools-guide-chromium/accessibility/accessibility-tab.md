@@ -30,7 +30,7 @@ To open the **Accessibility** tab:
 
 1.  Select the **Elements** tool.
 1.  In the **DOM Tree**, select the element which you want to inspect.
-1.  Select the **Accessibility** tab.  You might need to first select the **More tabs** \(![the More tabs button](../media/more-tabs-icon.msft.png)\) button to the right of the **Styles** tab.
+1.  Select the **Accessibility** tab.  You might need to first select the **More tabs** (![the More tabs button](../media/more-tabs-icon.msft.png)) button to the right of the **Styles** tab.
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspect the h1 element of the DevTools homepage in the Accessibility tab" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    Inspect the `h1` element of the DevTools homepage in the **Accessibility** tab
@@ -79,7 +79,7 @@ View the computed accessibility properties of an element in the **Accessibility*
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

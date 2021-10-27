@@ -84,7 +84,7 @@ In **Guest** mode, autofill is not available and new autofill entries are not ad
 <!-- ====================================================================== -->
 ## Cast
 
-Cast in Microsoft Edge lets you display your media to another screen using Google Cast.  To access Cast, open **Settings and more \(...\)** > **More tools** > **Cast media to device**.  Cast relies on the Media Router extension not automatically installed with Microsoft Edge.  When you first use Cast, Microsoft Edge prompts for permission to install the Media Router extension.
+Cast in Microsoft Edge lets you display your media to another screen using Google Cast.  To access Cast, open **Settings and more (...)** > **More tools** > **Cast media to device**.  Cast relies on the Media Router extension not automatically installed with Microsoft Edge.  When you first use Cast, Microsoft Edge prompts for permission to install the Media Router extension.
 
 Select **restart** to install the Media Router extensions from the Chrome Web Store. On startup and at regular intervals, Microsoft Edge sends update requests to the Chrome Web Store. Update requests include basic data about your version of Microsoft Edge. Regular update requests keep the Media Router extension up to date.
 
@@ -154,7 +154,7 @@ Diagnostic data is sent using HTTPS and stored on Microsoft servers. On Windows 
 
 The Microsoft Edge team respects the sensitivity of diagnostic data by restricting data access or removing personal information. To reset the identifier unique to your browser on Windows 10 and later devices, navigate to **Start** > **Settings** > **Privacy** > **Diagnostics & feedback** and select **Delete** under **Delete diagnostic data**, or change your setting under **Diagnostic data** from **Full** to **Basic** or turn off **Optional diagnostic data**.
 
-On other platforms, to generate a new resettable identifier \(ID\) that is unique to your browser, navigate to `edge://settings/privacy` and turn off the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting. The reset \(ID\) functionality may be different for devices managed with group policies set by your organization.
+On other platforms, to generate a new resettable identifier (ID) that is unique to your browser, navigate to `edge://settings/privacy` and turn off the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting. The reset (ID) functionality may be different for devices managed with group policies set by your organization.
 
 If you're using Windows 10 version 1803 (April 2018 Update) or later, to view product data shared with Microsoft in the Diagnostic Data Viewer, navigate to **Start** > **Settings** > **Privacy** > **Diagnostics & feedback** and select **Open Diagnostic Data Viewer** under **View diagnostic data**.
 
@@ -168,11 +168,11 @@ For Microsoft Edge on Windows 10 and later, sending Optional diagnostic data is 
 <!-- ====================================================================== -->
 ## Digital Rights Management and Media Licenses
 
-When a website offers media content that is protected by Digital Rights Management \(DRM\), Microsoft Edge uses a secure playback pipeline to make sure the content is not improperly viewed or copied. As part of the feature, Microsoft Edge may store DRM-related data on your device, including a unique identifier and media licenses. Microsoft Edge may also transmit the unique identifier to a media licensing server specified by the content provider. When you use the website, Microsoft Edge retrieves the DRM information to make sure you have permission to use the content. The data helps to validate access to the protected content and ensure a seamless media experience.
+When a website offers media content that is protected by Digital Rights Management (DRM), Microsoft Edge uses a secure playback pipeline to make sure the content is not improperly viewed or copied. As part of the feature, Microsoft Edge may store DRM-related data on your device, including a unique identifier and media licenses. Microsoft Edge may also transmit the unique identifier to a media licensing server specified by the content provider. When you use the website, Microsoft Edge retrieves the DRM information to make sure you have permission to use the content. The data helps to validate access to the protected content and ensure a seamless media experience.
 
-Microsoft Edge supports DRM using the Encrypted Media Extensions API \(EME API\) for HTML5 sites.  The EME API allows websites to communicate with a DRM provider called a Content Decryption Module \(CDM\). Different DRM systems, such as Widevine by Google or PlayReady by Microsoft, may be supported by the CDM implementation of the developer.  Content providers may choose to support one or more potential DRM systems. Providers may use the function of the EME API to decide which DRM system to use for a specific client. For more information about EME privacy, navigate to [Encrypted Media Extensions Privacy][W3cEncryptedMediaPrivacy].
+Microsoft Edge supports DRM using the Encrypted Media Extensions API (EME API) for HTML5 sites.  The EME API allows websites to communicate with a DRM provider called a Content Decryption Module (CDM). Different DRM systems, such as Widevine by Google or PlayReady by Microsoft, may be supported by the CDM implementation of the developer.  Content providers may choose to support one or more potential DRM systems. Providers may use the function of the EME API to decide which DRM system to use for a specific client. For more information about EME privacy, navigate to [Encrypted Media Extensions Privacy][W3cEncryptedMediaPrivacy].
 
-Microsoft Edge supports PlayReady DRM only on Windows 10 and later. PlayReady is a DRM implementation to deliver media experiences such as 4K video and Dolby Atmos audio.  Microsoft Edge uses the Windows Platform Media Foundation APIs to support PlayReady.  To validate access to protected content, Microsoft Edge uses the Windows 10 or Windows 11 operating system. Windows uses a unique identifier \(ID\) and communicates the ID with the PlayReady service.  All EME, CDM, and browser data for PlayReady that persists on the device is stored and maintained on Microsoft Edge.  For more information about PlayReady, navigate to [Simple End to End System][PlayreadyOverviewSimpleEndSystem].
+Microsoft Edge supports PlayReady DRM only on Windows 10 and later. PlayReady is a DRM implementation to deliver media experiences such as 4K video and Dolby Atmos audio.  Microsoft Edge uses the Windows Platform Media Foundation APIs to support PlayReady.  To validate access to protected content, Microsoft Edge uses the Windows 10 or Windows 11 operating system. Windows uses a unique identifier (ID) and communicates the ID with the PlayReady service.  All EME, CDM, and browser data for PlayReady that persists on the device is stored and maintained on Microsoft Edge.  For more information about PlayReady, navigate to [Simple End to End System][PlayreadyOverviewSimpleEndSystem].
 
 Microsoft Edge supports Widevine by Google DRM and the option is on by default.  Microsoft Edge periodically fetches updates for Widevine from Google servers.  The use of Widevine may include communications to Google.  To opt-out of using Widevine in Microsoft Edge, navigate to `edge://flags/#edge-widevine-drm` and turn off the Widevine DRM setting.  Widevine has the capability to create a unique device identifier and transmit it to Google.  For more specific information on Widevine and privacy, navigate to the Google privacy policy.
 
@@ -297,7 +297,7 @@ Automatic updates are turned on by default for all Microsoft Edge users.  On all
 <!-- ====================================================================== -->
 ## Internet Explorer mode
 
-Microsoft Edge offers a simplified experience with the integration of Internet Explorer \(IE\).  Microsoft Edge only supports IE 11, and IE mode is only available on Windows.  The IE mode feature is available for organizations through group policies.  The administrator chooses to open certain sites in IE mode in Microsoft Edge.
+Microsoft Edge offers a simplified experience with the integration of Internet Explorer (IE).  Microsoft Edge only supports IE 11, and IE mode is only available on Windows.  The IE mode feature is available for organizations through group policies.  The administrator chooses to open certain sites in IE mode in Microsoft Edge.
 
 :::image type="complex" source="./media/ie-mode.png" alt-text="IE mode" lightbox="./media/ie-mode.png":::
    IE mode
@@ -321,7 +321,7 @@ To provide a better browsing experience, Microsoft Edge offers to block advertis
 <!-- ====================================================================== -->
 ## Jump list
 
-The jump list in Microsoft Edge lets you easily find your most recently closed sites by hovering on the Microsoft Edge icon in the task bar and opening a contextual menu \(right-click\). The last three closed tabs are stored locally for each profile.  To delete sites from the jump list in Windows 10 and later, hover on each site and open a contextual menu \(right-click\).
+The jump list in Microsoft Edge lets you easily find your most recently closed sites by hovering on the Microsoft Edge icon in the task bar and opening a contextual menu (right-click). The last three closed tabs are stored locally for each profile.  To delete sites from the jump list in Windows 10 and later, hover on each site and open a contextual menu (right-click).
 
 You can clear or change the display of your recently closed tabs in the jump list. Navigate to `edge://settings/privacy`, and select the **Choose what to clear every time you close the browser** setting. When using an **InPrivate** window, Microsoft Edge does not add closed tab information to the jump list.  When using **Guest** mode, the jump list is not available.  For more information about clearing your browsing data, navigate to [View and delete browser history in Microsoft Edge][MicrosoftSupport10607].
 
@@ -354,7 +354,7 @@ Microsoft Edge Driver allows developers to drive the Microsoft Edge browser usin
 <!-- ====================================================================== -->
 ## Network time
 
-Microsoft Edge uses a Microsoft network time service to track time from an external source such as a time server.  At random intervals or when Microsoft Edge encounters an expired SSL certificate, Microsoft Edge may send requests to Microsoft to obtain the time from a trusted source.  The requests occur more frequently if Microsoft Edge detects the system clock is inaccurate.  A system clock inaccuracy happens if the user changes the time on the operating system and that conflicts with the correct time zone.  The Microsoft network time service is used to get the Coordinated Universal Time \(UTC\).  The requests contain no cookies or user identifiers, and no data is logged.
+Microsoft Edge uses a Microsoft network time service to track time from an external source such as a time server.  At random intervals or when Microsoft Edge encounters an expired SSL certificate, Microsoft Edge may send requests to Microsoft to obtain the time from a trusted source.  The requests occur more frequently if Microsoft Edge detects the system clock is inaccurate.  A system clock inaccuracy happens if the user changes the time on the operating system and that conflicts with the correct time zone.  The Microsoft network time service is used to get the Coordinated Universal Time (UTC).  The requests contain no cookies or user identifiers, and no data is logged.
 
 
 <!-- ====================================================================== -->
@@ -436,7 +436,7 @@ Your browsing history is collected and used for personalization only if all four
 
 * You are signed in to a non-child Microsoft account.
 * You gave permission for the collection and use of the data for personalization.
-* Your group policies managed by an organization \(employer, school, and so on\) allow personalization.
+* Your group policies managed by an organization (employer, school, and so on) allow personalization.
 * You not using the browser in **Guest** or **InPrivate** modes.
 
 Your browsing history and other data are transferred over HTTPS and attached to your Microsoft account information.  Your browsing history is stored on secure Microsoft servers.  You may view and delete previously shared browsing history by going to the [Microsoft privacy dashboard][MicrosoftAccountPrivacy].  Your browsing history is stored on secure Microsoft servers for up to 45 days.  After 45 days, the data is deleted and not used for personalization.
@@ -470,17 +470,17 @@ However, users are able to easily switch between existing profiles in Microsoft 
 
 By default, while browsing **InPrivate**, Microsoft does not collect any information about websites you visit for product improvement purposes. Your school, workplace, or internet service provider may still be able to see your browsing activity.
 
-Browsing data for the specific **InPrivate** session is cleared after all **InPrivate** windows are closed.  When using the Windows Input Method Editor \(IME\) keyboard for typing and inking, data may be collected to improve language recognition and suggestion capabilities.  You can stop inking and typing data from being collected by Microsoft while using the Windows IME keyboard during **InPrivate** and normal browsing. Open **Start** > **Settings** > **Privacy** and turn off **Inking & typing personalization**.  For more information about **InPrivate** browsing, navigate to [Browse InPrivate in Microsoft Edge][MicrosoftSupport4533513].
+Browsing data for the specific **InPrivate** session is cleared after all **InPrivate** windows are closed.  When using the Windows Input Method Editor (IME) keyboard for typing and inking, data may be collected to improve language recognition and suggestion capabilities.  You can stop inking and typing data from being collected by Microsoft while using the Windows IME keyboard during **InPrivate** and normal browsing. Open **Start** > **Settings** > **Privacy** and turn off **Inking & typing personalization**.  For more information about **InPrivate** browsing, navigate to [Browse InPrivate in Microsoft Edge][MicrosoftSupport4533513].
 
 
 <!-- ====================================================================== -->
 ## Read aloud
 
-Microsoft Edge offers Read aloud, which reads the content of a webpage to the user.  To start Read aloud, hover anywhere on the page and open the contextual menu \(right-click\) or open **Settings and more (...)** and select **Read aloud**.  Read aloud offers multiple voices to read the webpage content.  If you are using voices that are [installed on Windows 10 and later][OfficeSupport4c83a8d8748642f78e462b0fdf753130] under the **Time & Language** section of Windows Settings and want to clear the local cache for any voices you previously used, navigate to `edge://settings/clearBrowserData`.
+Microsoft Edge offers Read aloud, which reads the content of a webpage to the user.  To start Read aloud, hover anywhere on the page and open the contextual menu (right-click) or open **Settings and more (...)** and select **Read aloud**.  Read aloud offers multiple voices to read the webpage content.  If you are using voices that are [installed on Windows 10 and later][OfficeSupport4c83a8d8748642f78e462b0fdf753130] under the **Time & Language** section of Windows Settings and want to clear the local cache for any voices you previously used, navigate to `edge://settings/clearBrowserData`.
 
-When you start Read aloud, Microsoft Edge uses the [Web Speech API][GithubW3cIncubatorCommunityGroupSpeechApi]. Depending on the voice you select, the contents of the page are converted from text to speech using either a platform-supplied, client-side library \(for example, one specific to your operating system\) or a server-side library powered by Azure Cognitive Services.
+When you start Read aloud, Microsoft Edge uses the [Web Speech API][GithubW3cIncubatorCommunityGroupSpeechApi]. Depending on the voice you select, the contents of the page are converted from text to speech using either a platform-supplied, client-side library (for example, one specific to your operating system) or a server-side library powered by Azure Cognitive Services.
 
-If your content is converted to speech using a client-side library, no information is sent to Microsoft servers. If your content is converted to speech using Azure Cognitive Services \(as indicated by the word "Online" in any of the voice names\), the text, along with a randomly generated token, is sent to Microsoft.  Once conversion is complete, the service returns the spoken text in an audio file to your device.  All data is encrypted while being transferred from your device to Microsoft and vice versa.  The text that is sent to Microsoft and the audio file that is generated are both deleted immediately after conversion occurs; no other data about your web content is stored for any period of time.
+If your content is converted to speech using a client-side library, no information is sent to Microsoft servers. If your content is converted to speech using Azure Cognitive Services (as indicated by the word "Online" in any of the voice names), the text, along with a randomly generated token, is sent to Microsoft.  Once conversion is complete, the service returns the spoken text in an audio file to your device.  All data is encrypted while being transferred from your device to Microsoft and vice versa.  The text that is sent to Microsoft and the audio file that is generated are both deleted immediately after conversion occurs; no other data about your web content is stored for any period of time.
 
 
 <!-- ====================================================================== -->
@@ -684,7 +684,7 @@ To enable diagnostic data collection, navigate to `edge://settings/privacy`. Tur
 <!-- ====================================================================== -->
 ## Windows Defender Application Guard
 
-Windows Defender Application Guard \(WDAG\) is a feature available for organizations.  When Windows Defender Application Guard is turned on, Microsoft Edge opens untrusted sites inside an isolated container. The use of a container helps protect the resources in your organization from malicious sites or phishing attacks. The feature is only turned on with group policies that are managed by your organization. It is only available on recent versions of Windows 10 and later. WDAG collects product improvement diagnostic data about opening untrusted sites in the isolated container, such as how long it takes to open a new Application Guard window.
+Windows Defender Application Guard (WDAG) is a feature available for organizations.  When Windows Defender Application Guard is turned on, Microsoft Edge opens untrusted sites inside an isolated container. The use of a container helps protect the resources in your organization from malicious sites or phishing attacks. The feature is only turned on with group policies that are managed by your organization. It is only available on recent versions of Windows 10 and later. WDAG collects product improvement diagnostic data about opening untrusted sites in the isolated container, such as how long it takes to open a new Application Guard window.
 
 With your permission, WDAG also collects information about how you use the browser and information about sites you visit.  To turn off the diagnostic data collection for Microsoft Edge on Windows 10 and later, open **Start** > **Settings** > **Privacy** and select **Diagnostics & feedback**.  To disable diagnostic data collection for all other platforms, navigate to `edge://settings/privacy` in a normal browsing session and turn off the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting.
 
@@ -692,7 +692,7 @@ With your permission, WDAG also collects information about how you use the brows
 <!-- ====================================================================== -->
 ## Windows Information Protection
 
-Windows Information Protection \(WIP\) helps prevent accidental leaking of corporate information. It is only available for organizations through group policies managed by your organization. WIP is enabled for those sites identified as corporate assets. Identify which sites are corporate assets from the management icon in the address bar. WIP prevents copying and pasting from the browser or uploading certain files to sites outside your organization.
+Windows Information Protection (WIP) helps prevent accidental leaking of corporate information. It is only available for organizations through group policies managed by your organization. WIP is enabled for those sites identified as corporate assets. Identify which sites are corporate assets from the management icon in the address bar. WIP prevents copying and pasting from the browser or uploading certain files to sites outside your organization.
 
 :::image type="complex" source="./media/w-i-p.png" alt-text="Windows Information Protection" lightbox="./media/w-i-p.png":::
    Windows Information Protection
@@ -714,7 +714,7 @@ Microsoft Edge is made possible by the [Chromium][ChromiumMain] open-source proj
 <!-- ====================================================================== -->
 ## Getting in touch with the Microsoft Edge team
 
-The Microsoft Edge team is always listening to customers and values your feedback.  To provide feedback in Microsoft Edge, open **Settings and more** > **Help and feedback** and select **Send feedback**.  For Progressive Web Apps \(PWAs\), open **Settings and more (...)** and select **Send feedback to Microsoft**.  Provide details about the feedback, but all other information is optional.
+The Microsoft Edge team is always listening to customers and values your feedback.  To provide feedback in Microsoft Edge, open **Settings and more** > **Help and feedback** and select **Send feedback**.  For Progressive Web Apps (PWAs), open **Settings and more (...)** and select **Send feedback to Microsoft**.  Provide details about the feedback, but all other information is optional.
 
 If an email is detected from your Microsoft Edge profile, it is pre-populated with the URL of the current site and relevant diagnostic data. The diagnostic data can include data about Microsoft Edge features you turned on and your browser use. You may optionally include a screenshot, files from your device, and recording of your browser may also be optionally included. If you provide optional content, it can include personal data. The data is only used for diagnostic and product improvement purposes.
 

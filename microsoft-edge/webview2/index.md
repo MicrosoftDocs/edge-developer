@@ -71,7 +71,7 @@ Similar table: [Overview of Progressive Web Apps (PWAs)](..\progressive-web-apps
     :::column:::
         :::image type="icon" source="./media/webview-reasons-microsoft-support-small.msft.png":::  
         **Microsoft support**  
-        Microsoft provides support and adds new feature requests when WebView2 releases at Generally Availability \(GA\).
+        Microsoft provides support and adds new feature requests when WebView2 releases at Generally Availability (GA).
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -112,9 +112,9 @@ The [WebView2 Samples][GithubMicrosoftedgeWebview2samples] repository contains s
 <!-- ====================================================================== -->
 ## Supported platforms
 
-A General Availability \(GA\) or Preview version of WebView2 is available for the following programming environments.
+A General Availability (GA) or Preview version of WebView2 is available for the following programming environments.
 
-*   Win32 C/C++ \(GA\)
+*   Win32 C/C++ (GA)
 *   .NET Framework 4.5 or later
 *   .NET Core 3.1 or later
 *   .NET 5

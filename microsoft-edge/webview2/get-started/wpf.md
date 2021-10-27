@@ -19,7 +19,7 @@ In this article, get started creating your first WebView2 app and learn about th
 
 Ensure you install the following list of prerequisites before proceeding.
 
-*   The [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] must be installed on a supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).
+*   The [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] must be installed on a supported OS (currently Windows 10, Windows 8.1, and Windows 7).
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 or later.
 
 
@@ -28,7 +28,7 @@ Ensure you install the following list of prerequisites before proceeding.
 
 Start with a basic desktop project that contains a single main window.
 
-1.  In Visual Studio, choose **WPF .NET Core App** \(or **WPF .NET Framework App**\) > **Next**.
+1.  In Visual Studio, choose **WPF .NET Core App** (or **WPF .NET Framework App**) > **Next**.
 
     :::row:::
        :::column span="1":::
@@ -43,7 +43,7 @@ Start with a basic desktop project that contains a single main window.
        :::column-end:::
     :::row-end:::
 
-1.  Enter values for **Project name** and **Location**.  Choose **.NET Framework 4.6.2** or later \(or **.NET Core 3.0** or later\).
+1.  Enter values for **Project name** and **Location**.  Choose **.NET Framework 4.6.2** or later (or **.NET Core 3.0** or later).
 
     :::row:::
        :::column span="1":::
@@ -66,7 +66,7 @@ Start with a basic desktop project that contains a single main window.
 
 Use NuGet to add the WebView2 SDK to the project.
 
-1.  Hover on the project, open the contextual menu \(right-click\), and choose **Manage NuGet Packages...**.
+1.  Hover on the project, open the contextual menu (right-click), and choose **Manage NuGet Packages...**.
 
     :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="Manage NuGet packages" lightbox="./media/wpf-getting-started-mng-nuget.png":::
        Manage NuGet packages
