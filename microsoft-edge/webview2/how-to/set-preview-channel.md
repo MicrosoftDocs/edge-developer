@@ -24,6 +24,7 @@ The prerelease SDK works together with a preview channel as follows:
 For more information about how SDK versions works in conjunction with the WebView2 Runtime or preview channels of Microsoft Edge, navigate to [Understand WebView2 SDK versions][WebView2ConceptsVersioning].
 
 
+<!-- ====================================================================== -->
 ## Downloading the prerelease SDK and a preview channel
 
 To use experimental APIs, download a prerelease version of the WebView2 SDK from [Microsoft.Web.WebView2 package](https://www.nuget.org/packages/Microsoft.Web.WebView2).
@@ -31,7 +32,7 @@ To use experimental APIs, download a prerelease version of the WebView2 SDK from
 To get a Microsoft Edge preview channel, navigate to [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload].
 
 
-<!-- intro/overview of 4 approaches -->
+<!-- intro/overview of 4 approaches ======================================= -->
 ## Approaches to making your app use a specific browser channel
 
 There are several ways to make your WebView2 app use a specified preview channel of Microsoft Edge:
@@ -57,7 +58,7 @@ If you set the browser executable folder, that overrides the above search order.
 If you set the release channel preference by using a group policy, registry override, or environment variable, that will use the reverse of the default search order.
 
 
-<!-- 1. Code ===============================================================-->
+<!-- 1. Code ============================================================== -->
 ## Using code
 
 If you want to make your application use a Microsoft Edge preview channel by calling a function, complete the following steps.
@@ -129,7 +130,7 @@ WPF uses an approach similar to the Win32/C++ approach described above.
 Refer to [CoreWebView2CreationProperties.BrowserExecutableFolder Property](/dotnet/api/microsoft.web.webview2.wpf.corewebview2creationproperties.browserexecutablefolder#Microsoft_Web_WebView2_Wpf_CoreWebView2CreationProperties_BrowserExecutableFolder).
 
 
-<!-- 2. Group Policy =======================================================-->
+<!-- 2. Group Policy ====================================================== -->
 ## Using a group policy
 
 If you want to make your application use a Microsoft Edge preview channel by using a group policy, copy ADMX and ADML files to the `PolicyDefinitions` folder, as follows.
@@ -167,7 +168,7 @@ If you want to make your application use a Microsoft Edge preview channel by usi
 For more information, see [Configure Microsoft Edge policy settings](/deployedge/configure-microsoft-edge).
 
 
-<!-- 3. Registry Override ==================================================-->
+<!-- 3. Registry Override ================================================= -->
 ## Using a registry override
 
 When specifying a preview channel by using a registry override, there are two options:
@@ -215,7 +216,7 @@ To delete the `ReleaseChannelPreference` registry override, run the command:
 `REG DELETE HKLM\Software\Policies\Microsoft\Edge\WebView2\ReleaseChannelPreference /f`
 
 
-<!-- 4. Environment Variable ========================================================================-->
+<!-- 4. Environment Variable ============================================== -->
 ## Using an environment variable
 
 To make your application use a Microsoft Edge preview channel by using an environment variable:
@@ -251,11 +252,7 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 > After setting an environment variable this way, the environment variable is applied to any new processes that are created.  The environment variable doesn't apply to processes which are already running.  To ensure that all processes use the new environment variable, you may need to restart Visual Studio or log out of Windows and then log in again.
 
 
-<!--========================================================================-->
-## Getting in touch with the Microsoft Edge WebView team
-
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 [WebView2ConceptsVersioning]: ../concepts/versioning.md "Understand WebView2 SDK versions | Microsoft Docs"
 <!-- external links -->

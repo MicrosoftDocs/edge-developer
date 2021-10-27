@@ -1,5 +1,5 @@
 ---
-description: Microsoft Edge (Chromium) and Visual Studio Code.
+description: Microsoft Edge and Visual Studio Code.
 title: Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -10,12 +10,10 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual 
 ---
 # Visual Studio Code overview
 
-Visual Studio Code is a lightweight but powerful source code editor.  Visual Studio Code is available for Windows, Linux, and macOS.  It includes built-in support for JavaScript, TypeScript, and Node.js, so it is a great tool for web developers.
+Visual Studio Code includes built-in support for JavaScript, TypeScript, and Node.js, so it is a great tool for web developers.  Visual Studio Code is a lightweight but powerful source code editor that's available for Windows, Linux, and macOS.  This article gives an overview of extensions for Visual Studio Code that add features for users of Microsoft Edge DevTools.
 
 *  [Download Visual Studio Code][VisualstudioCode]
 *  [Getting Started][VisualStudioCodeDocs] - Documentation for Visual Studio Code
-
-This article gives an overview of extensions for Visual Studio Code that add features for users of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
@@ -32,7 +30,7 @@ With the **Microsoft Edge DevTools** extension for Visual Studio Code, you can u
 :::image-end:::
 
 To install the Microsoft Edge DevTools extension:
-1. In Visual Studio Code, navigate to **Extensions** \(select `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS\).
+1. In Visual Studio Code, navigate to **Extensions** (select `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS).
 1. Search the Marketplace for the extension **Microsoft Edge Tools for VS Code**, select the extension, and then select **Install**.
 
 :::image type="complex" source="./media/vscode-edge-tools-install.png" alt-text="Installing the Microsoft Edge DevTools extension for Visual Studio Code" lightbox="./media/vscode-edge-tools-install.png":::
@@ -65,7 +63,7 @@ Identify and fix problems in your website by adding the [webhint extension for V
 :::image-end:::
 
 To install the webhint extension:
-1. In Visual Studio Code, navigate to **Extensions** \(select `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS\).
+1. In Visual Studio Code, navigate to **Extensions** (select `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS).
 1. Search the Marketplace for the **webhint** extension, select the extension, and then select **Install**.
 
 :::image type="complex" source="./media/visual-studio-code-extension-webhint.msft.png" alt-text="The webhint Visual Studio Code extension" lightbox="./media/visual-studio-code-extension-webhint.msft.png":::

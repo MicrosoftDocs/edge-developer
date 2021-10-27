@@ -20,7 +20,7 @@ You can test the usability of a webpage for keyboard users in several ways:
 
 To check the demo page for accessibility issues by using a keyboard rather than a mouse, perform the following steps:
 
-1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab of the browser.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser.
 
 1.  Use a keyboard to navigate the demo document, using the `Tab` and `Shift`+`Tab` keys to jump from element to element.  On the demo webpage, the `Tab` key first moves focus to the search form in the `header` section.
 
@@ -61,15 +61,7 @@ Based on the above walkthrough, we found the following issues that need to be fi
 *  The order of the keyboard access through sections of the page is not correct.  You navigate through all the **More** links in the document before you reach the sidebar navigation menu.  By the time the `Tab` key puts focus on the sidebar navigation menu, you have already traversed all the page content. The sidebar navigation menu was intended to provide easy access to the page content.  For more information on how to solve this issue, navigate to [Test keyboard support using the Source Order Viewer](test-tab-key-source-order-viewer.md).
 
 
+<!-- ====================================================================== -->
 ## See also
 
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
-
-
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-
-<!-- links -->
-[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

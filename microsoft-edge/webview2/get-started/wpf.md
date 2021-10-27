@@ -13,18 +13,22 @@ keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView
 
 In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  For more information on individual APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2Wpf].
 
+
+<!-- ====================================================================== -->
 ## Prerequisites
 
 Ensure you install the following list of prerequisites before proceeding.
 
-*   The [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] must be installed on a supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).
+*   The [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] must be installed on a supported OS (currently Windows 10, Windows 8.1, and Windows 7).
 *   [Visual Studio][MicrosoftVisualstudioMain] 2017 or later.
 
+
+<!-- ====================================================================== -->
 ## Step 1 - Create a single-window app
 
 Start with a basic desktop project that contains a single main window.
 
-1.  In Visual Studio, choose **WPF .NET Core App** \(or **WPF .NET Framework App**\) > **Next**.
+1.  In Visual Studio, choose **WPF .NET Core App** (or **WPF .NET Framework App**) > **Next**.
 
     :::row:::
        :::column span="1":::
@@ -39,7 +43,7 @@ Start with a basic desktop project that contains a single main window.
        :::column-end:::
     :::row-end:::
 
-1.  Enter values for **Project name** and **Location**.  Choose **.NET Framework 4.6.2** or later \(or **.NET Core 3.0** or later\).
+1.  Enter values for **Project name** and **Location**.  Choose **.NET Framework 4.6.2** or later (or **.NET Core 3.0** or later).
 
     :::row:::
        :::column span="1":::
@@ -56,11 +60,13 @@ Start with a basic desktop project that contains a single main window.
 
 1.  To create your project, choose **Create**.
 
+
+<!-- ====================================================================== -->
 ## Step 2 - Install WebView2 SDK
 
 Use NuGet to add the WebView2 SDK to the project.
 
-1.  Hover on the project, open the contextual menu \(right-click\), and choose **Manage NuGet Packages...**.
+1.  Hover on the project, open the contextual menu (right-click), and choose **Manage NuGet Packages...**.
 
     :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="Manage NuGet packages" lightbox="./media/wpf-getting-started-mng-nuget.png":::
        Manage NuGet packages
@@ -78,6 +84,8 @@ Use NuGet to add the WebView2 SDK to the project.
        Empty app
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 3 - Create a single WebView
 
 Next add a WebView to your app.
@@ -125,6 +133,8 @@ Next add a WebView to your app.
        Microsoft.com
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 4 - Navigation
 
 Add the ability to allow users to change the URL that the WebView2 control displays by adding an address bar to the app.
@@ -183,6 +193,8 @@ Add the ability to allow users to change the URL that the WebView2 control displ
        bing.com
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 5 - Navigation events
 
 During webpage navigation, the WebView2 control raises events.  The app that hosts WebView2 controls listens for the following events.
@@ -233,6 +245,8 @@ In the constructor, `EnsureHttps` is registered as the event handler on the `Nav
 
 To build and run the project, select `F5`.  Ensure when navigating to an HTTP site, the WebView remains unchanged.  However, the WebView navigates to HTTPS sites.
 
+
+<!-- ====================================================================== -->
 ## Step 6 - Scripting
 
 You may use host apps to inject JavaScript code into WebView2 controls at runtime.  You may task WebView to run arbitrary JavaScript or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run with specific timing.
@@ -260,6 +274,8 @@ To build and run the project, select `F5`.  Ensure the app displays an alert whe
    HTTPS
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 7 - Communication between host and web content
 
 The host and web content may communicate in the following ways using `postMessage`.
@@ -327,23 +343,20 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
        addressBar
     :::image-end:::
 
-Congratulations, you built your first WebView2 app.
+Congratulations, you built your first WebView2 app!
 
-## Next steps
 
-To continue learning more about WebView2, navigate to the following resources.
+<!-- ====================================================================== -->
+## See also
 
-*   To learn more about building WebView2 applications, navigate to [WebView2 development best practices][WV2BestPractices].
-*   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain] on GitHub.
-*   For more detailed information about WebView2 API, navigate to [API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2).
-*   For more information about  WebView2, navigate to [WebView2 Resources](../index.md#next-steps).
+*  [WebView2 development best practices][WV2BestPractices]
+*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain] - a comprehensive example of WebView2 capabilities.
+*  [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
+*  [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
 
-## Getting in touch with the Microsoft Edge WebView team
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"
 [Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"
 

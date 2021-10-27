@@ -15,6 +15,8 @@ Supported platforms: Win32, Windows Forms, WinUi, WPF.
 
 The WebView2 control is based on the [Component Object Model (COM)][WindowsWin32ComTheComponentObjectModel] and must run on a [Single Threaded Apartments (STA)][WindowsWin32ComSingleThreadedApartments] thread.
 
+
+<!-- ====================================================================== -->
 ## Thread safety
 
 The WebView2 must be created on a UI thread that uses a message pump.  All callbacks occur on that thread, and requests into the WebView2 must be done on that thread.  It isn't safe to use the WebView2 from another thread.
@@ -24,6 +26,8 @@ The only exception is for the `Content` property of `CoreWebView2WebResourceRequ
 > [!NOTE]
 > Object properties are single-threaded.  For example, calling `CoreWebView2CookieManager.GetCookiesAsync(null)` from a thread other than `Main` will succeed (that is, cookies are returned); however, attempting to access the cookies' properties (such as `c.Domain`) after such a call will throw an exception.
 
+
+<!-- ====================================================================== -->
 ## Reentrancy
 
 Callbacks, including event handlers and completion handlers, run serially.  After you run an event handler and begin a message loop, an event handler or completion callback cannot be run in a re-entrant manner.  If a WebView2 app tries to create a nested message loop or modal UI synchronously within a WebView event handler, this approach leads to attempted reentrancy.  Such reentrancy isn't supported in WebView2 and would leave the event handler in the stack indefinitely.
@@ -76,6 +80,8 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
    Enabling native code debugging in Visual Studio
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Deferrals
 
 Some WebView2 events read values that are set on the related event arguments, or start some action after the event handler completes.  If you also need to run an asynchronous operation, such as an event handler, use the `GetDeferral` method on the event arguments of the associated events.  The returned `Deferral` object ensures that the event handler isn't considered complete until the `Complete` method of the `Deferral` is requested.
@@ -118,6 +124,7 @@ private async void WebView2WebResourceRequestedHandler(CoreWebView2 sender,
 ```
 
 
+<!-- ====================================================================== -->
 ## Block the UI thread
 
 WebView2 relies on the message pump of the UI thread to run event handler callbacks and async method completion callbacks.  If you use methods that block the message pump, such as `Task.Result` or `WaitForSingleObject`, then your WebView2 event handlers and async-method completion handlers don't run.  For example, the following code doesn't complete, because `Task.Result` stops the message pump while it waits for `ExecuteScriptAsync` to complete.  Because the message pump is blocked, the `ExecuteScriptAsync` isn't able to complete.
@@ -142,20 +149,20 @@ private async void Button_Click(object sender, EventArgs e)
 }
 ```
 
+
+<!-- ====================================================================== -->
 ## See also
 
-*   To get started using WebView2, navigate to [WebView2 Get Started Guides][Webview2IndexGetStarted].
-*   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] on GitHub.
-*   For more detailed information about WebView2 APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2WpfWebview2].
-*   For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].
+*  [WebView2 Get Started Guides][Webview2IndexGetStarted]
+*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] - a comprehensive example of WebView2 capabilities.
+*  [WebView2 API reference][DotnetApiMicrosoftWebWebview2WpfWebview2]
+*  [See also][Webview2IndexNextSteps] - in _Introduction to Microsoft Edge WebView2_.
 
-## Getting in touch with the Microsoft Edge WebView team
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 [Webview2IndexGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
-[Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
+[Webview2IndexNextSteps]: ../index.md#see-also "See also - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
 <!-- external links -->
 [DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 Class | Microsoft Docs"
 

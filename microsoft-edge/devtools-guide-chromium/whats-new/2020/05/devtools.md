@@ -23,6 +23,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # What's new in DevTools (Microsoft Edge 84)
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Microsoft Edge DevTools team
 
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].
@@ -44,7 +46,7 @@ Chromium issue [#1048378][CR1048378]
 
 ### Match keyboard shortcuts in the DevTools to Visual Studio Code
 
-From your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team) and the [Chromium public issue tracker][CRIssuesList], the Microsoft Edge DevTools team learned that you wanted the ability to customize keyboard shortcuts in the DevTools.  In Microsoft Edge 84, you are now able to match keyboard shortcuts in the DevTools to [Visual Studio Code][VisualStudioCodeMain], which is just one of the features the team is working on for shortcut customization.
+From your [feedback][Contact] and the [Chromium public issue tracker][CRIssuesList], the Microsoft Edge DevTools team learned that you wanted the ability to customize keyboard shortcuts in the DevTools.  In Microsoft Edge 84, you are now able to match keyboard shortcuts in the DevTools to [Visual Studio Code][VisualStudioCodeMain], which is just one of the features the team is working on for shortcut customization.
 
 :::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
    The Microsoft Edge DevTools in high contrast mode
@@ -56,7 +58,7 @@ Choose **DevTools (Default)** in the **Match shortcuts from preset** dropdown an
 
 For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code][VisualStudioCodeShortcuts] is `F5`.  With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8` but with the **Visual Studio Code** preset, that shortcut is now also `F5`.
 
-The feature is currently available in Microsoft Edge 84 as an experiment, so please share your [feedback](#getting-in-touch-with-microsoft-edge-devtools-team) with the team!
+The feature is currently available in Microsoft Edge 84 as an experiment, so please share your [feedback][Contact] with the team!
 
 Chromium issue [#174309][CR174309]
 
@@ -100,7 +102,7 @@ Chromium issue [#1076112][CR1076112]
 
 ### Screencasting navigation buttons display focus
 
-When remote debugging an [Android device][DevtoolsRemoteDebugAndroid], a [Windows 10 device][DevtoolsRemoteDebugWindows], or a [Surface Duo emulator][DevtoolsRemoteDebugDuoEmulator], you are able to toggle screencasting with the ![Toggle Screencast](../../../media/toggle-screencast-icon.msft.png) icon in the top-left corner of the DevTools.  With screencasting enabled, you are able to navigate the tab in Microsoft Edge on the remote device from the DevTools window.  In Microsoft Edge 84, these navigation buttons are now also keyboard accessible.
+When remote debugging an [Android device][DevtoolsRemoteDebugAndroid], a [Windows 10 or later device][DevtoolsRemoteDebugWindows], or a [Surface Duo emulator][DevtoolsRemoteDebugDuoEmulator], you are able to toggle screencasting with the ![Toggle Screencast](../../../media/toggle-screencast-icon.msft.png) icon in the top-left corner of the DevTools.  With screencasting enabled, you are able to navigate the tab in Microsoft Edge on the remote device from the DevTools window.  In Microsoft Edge 84, these navigation buttons are now also keyboard accessible.
 
 :::image type="complex" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="Select Shift+Tab from the screencasted URL bar shows focus on the Refresh button" lightbox="../../media/2020/05/screencasting-nav.msft.png":::
    Select `Shift`+`Tab` from the screencasted URL bar shows focus on the **Refresh** button
@@ -118,6 +120,8 @@ In Microsoft Edge 84, the [Details pane][DevtoolsNetworkDetails] in the **Networ
 
 Chromium issue [#963183][CR963183]
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 The following sections announce additional features available in Microsoft Edge 84 that were contributed to the open source Chromium project.
@@ -153,7 +157,7 @@ Chromium issue [#1040025][CR1040025]
 
 #### View Total Blocking Time information in the footer
 
-After recording your load performance, the **Performance** panel now shows Total Blocking Time \(TBT\) information in the footer.  TBT is a load performance metric that helps quantify how long a page takes to become usable.  It essentially measures how long a page appears to be usable \(because the content is rendered to the screen\); but is not actually usable, because JavaScript is blocking the main thread and therefore the page does not respond to user input.  TBT is the main metric for approximating First Input Delay.
+After recording your load performance, the **Performance** panel now shows Total Blocking Time (TBT) information in the footer.  TBT is a load performance metric that helps quantify how long a page takes to become usable.  It essentially measures how long a page appears to be usable (because the content is rendered to the screen); but is not actually usable, because JavaScript is blocking the main thread and therefore the page does not respond to user input.  TBT is the main metric for approximating First Input Delay.
 
 <!--todo:  add link Total Blocking Time (TBT) (WebdevTbt) when section is live  -->
 <!--todo:  add link lab metric (WebdevMeasureSpeedLabField) when section is live  -->
@@ -173,7 +177,7 @@ Chromium issue [#1054381][CR1054381]
 
 #### Layout Shift events in the new Experience section
 
-The new **Experience** section of the **Performance** panel helps you detect layout shifts.  Cumulative Layout Shift \(CLS\) is a metric that helps you quantify unwanted visual instability.
+The new **Experience** section of the **Performance** panel helps you detect layout shifts.  Cumulative Layout Shift (CLS) is a metric that helps you quantify unwanted visual instability.
 
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->
 <!--todo:  add link layout shifts (WebdevCls) when section is live  -->
@@ -266,29 +270,27 @@ App shortcuts help users quickly start common or recommended tasks within a web 
   App shortcuts in the **Manifest** pane
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
 
-## Getting in touch with Microsoft Edge Devtools team
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 <!--[DevtoolsWhatsNew201901Inspect]: ../../../whats-new/2019/01/devtools.md#inspect "Detailed tooltips in Inspect Mode - What's New In DevTools (Edge 73) | Microsoft Docs"  -->
-
 [DevtoolsConsoleApiDir]: ../../../console/api.md#dir "dir - Console API Reference | Microsoft Docs"
 [DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]: ../../../console/utilities.md#recently-chosen-element-or-javascript-object "Recently chosen element or JavaScript object - Console Utilities API Reference | Microsoft Docs"
-[DevtoolsCssReferenceColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "Change colors with the Color Picker - CSS Reference | Microsoft Docs"
+[DevtoolsCssReferenceColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "Change colors with the Color Picker - CSS features reference | Microsoft Docs"
 [DevtoolsDrawer]: ../../../customize/index.md#drawer "Drawer - Customize Overview | Microsoft Docs"
-[DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
+[DevtoolsIndex]: ../../../index.md "Microsoft Edge Developer Tools | Microsoft Docs"
 [DevtoolsIssuesIndex]: ../../../issues/index.md "Find And Fix Problems With The Microsoft Edge DevTools Issues Tab | Microsoft Docs"
 [DevtoolsNetworkDetails]: ../../../network/index.md#inspect-the-details-of-the-resource "Inspect the details of the resource | Microsoft Docs"
 [DevtoolsNetworkLog]: ../../../network/index.md#log-network-activity "Log network activity | Microsoft Docs"
 [DevtoolsRemoteDebugAndroid]: ../../../remote-debugging/index.md "Get Started with Remote Debugging Android Devices | Microsoft Docs"
 [DevtoolsRemoteDebugDuoEmulator]: ../../../remote-debugging/surface-duo-emulator.md "Get Started with Remote Debugging Surface Duo emulators | Microsoft Docs"
-[DevtoolsRemoteDebugWindows]: ../../../remote-debugging/windows.md "Get Started with Remote Debugging Windows 10 Devices | Microsoft Docs"
+[DevtoolsRemoteDebugWindows]: ../../../remote-debugging/windows.md "Get Started with Remote Debugging Windows devices | Microsoft Docs"
 
 [PwaIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"
 
@@ -316,7 +318,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [CSSWGDraftsColor4Changes3]: https://drafts.csswg.org/css-color#changes-from-3 "Changes from Colors 3 - CSS Color Module Level 4 | W3C CSS Working Group Editor Drafts"
 [CSSWGDraftsColor4Property]: https://drafts.csswg.org/css-color#the-color-property "3.  Foreground Color: the 'color'  - CSS Color Module Level 4 | W3C CSS Working Group Editor Drafts"
 
-[DesktopEdge]: https://www.microsoft.com/edge/ "Introducing the new Microsoft Edge"
+[DesktopEdge]: https://www.microsoft.com/edge/ "Download Microsoft Edge Browser | Microsoft"
 
 [GithubDomenicPromiseUnwrappingStatesFates]: https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md "States and Fates - domenic/promises-unwrapping | GitHub"
 
@@ -347,7 +349,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-84) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-84) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

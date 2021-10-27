@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view, edit, and delete [localStorage][MDNWindowsLocalStorage] key-value pairs.
 
+
+<!-- ====================================================================== -->
 ## View localStorage keys and values
 
 1.  Choose the **Application** tab to open the **Application** tool.  The **Manifest** pane is shown by default.
@@ -51,6 +53,8 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
        View the value of the `eventLogQueue_Online` key
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Create a new localStorage key-value pair
 
 1.  [View the localStorage key-value pairs of a domain](#view-localstorage-keys-and-values).
@@ -60,6 +64,8 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
        The empty part of the table to double-click in order to create a new key-value pair
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Edit localStorage keys or values
 
 1.  [View the localStorage key-value pairs of a domain](#view-localstorage-keys-and-values).
@@ -69,17 +75,23 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
        Edit a `localStorage` key
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Delete localStorage key-value pairs
 
 1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).
 1.  Choose the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.
-1.  Select the `Delete` key or choose **Delete Selected** \(![Delete Selected](../media/delete-icon.msft.png)\).
+1.  Select the `Delete` key or choose **Delete Selected** (![Delete Selected](../media/delete-icon.msft.png)).
 
+
+<!-- ====================================================================== -->
 ## Delete all `localStorage` key-value pairs for a domain
 
 1.  [View the `localStorage` key-value pairs of a domain](#view-localstorage-keys-and-values).
-1.  Choose **Clear All** \(![Clear All](../media/clear-icon.msft.png)\).
+1.  Choose **Clear All** (![Clear All](../media/clear-icon.msft.png)).
 
+
+<!-- ====================================================================== -->
 ## Interact with localStorage from the Console
 
 Since you are able to run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it is possible to interact with `localStorage` from the **Console**.
@@ -96,19 +108,19 @@ Since you are able to run JavaScript in the **Console**, and since the **Console
        Interact with `localStorage` from the **Console**
     :::image-end:::
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge  Developer tools | Microsoft Docs"
 
 [MDNWindowsLocalStorage]: https://developer.mozilla.org/docs/Web/API/Window/localStorage "Window.localStorage | MDN"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

@@ -109,7 +109,7 @@ The tagging is as follows:
 
 ![Note patterns](./media/notes.png)
 
-For multi-line blockquote notes, use a greater-than \(`>`\) character in front of each line of the notes as displayed in the following example.
+For multi-line blockquote notes, use a greater-than (`>`) character in front of each line of the notes as displayed in the following example.
 
 ```md
 > This is a line in a blockquote.

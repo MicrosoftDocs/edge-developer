@@ -27,6 +27,8 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
 If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the guide you want.  Look for the information in the **Size** column of the **Network Log**.  Navigate to [Log network activity][DevtoolsNetworkLogActivity].
 
+
+<!-- ====================================================================== -->
 ## View cache data
 
 1.  Choose the **Application** tab to open the **Application** panel.  The **Manifest** pane usually opens by default.
@@ -59,6 +61,8 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        View the content of a resource
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Refresh a resource
 
 1.  [View the data for a cache](#view-cache-data).
@@ -68,8 +72,10 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        Choose a resource to refresh
     :::image-end:::
 
-1.  Choose **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\).
+1.  Choose **Refresh** (![Refresh](../media/refresh-icon.msft.png)).
 
+
+<!-- ====================================================================== -->
 ## Filter resources
 
 1.  [View the data for a cache](#view-cache-data).
@@ -79,6 +85,8 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        Filter out resources that do not match the specified path
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Delete a resource
 
 1.  [View the data for a cache](#view-cache-data).
@@ -88,8 +96,10 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        Choose a resource to delete
     :::image-end:::
 
-1.  Choose **Delete Selected** \(![Delete Selected](../media/delete-icon.msft.png)\).
+1.  Choose **Delete Selected** (![Delete Selected](../media/delete-icon.msft.png)).
 
+
+<!-- ====================================================================== -->
 ## Delete all cache data
 
 1.  Open **Application** > **Clear Storage**.
@@ -105,21 +115,21 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
        The **Clear Site Data** button
     :::image-end:::
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer tools | Microsoft Docs"
+[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge  Developer tools | Microsoft Docs"
 [DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Log network activity | Microsoft Docs"
-
+<!-- external links -->
 [MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"
 [MDNHTTPCaching]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP caching | MDN"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/cache) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/cache) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

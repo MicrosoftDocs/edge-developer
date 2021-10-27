@@ -15,7 +15,7 @@ The [Chrome DevTools Protocol][GitHubChromedevtoolsDevtoolsProtocol] provides AP
 
 To use the Chrome DevTools Protocol API in a WebView2 app, do either of the following:
 
-*   Install and use the [Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview)][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] NuGet package \(.NET\).
+*   Install and use the [Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview)][NugetPackagesMicrosoftWebWebView2DevToolsprotocolextension] NuGet package (.NET).
 *   Run one of the following methods.
     *   .NET:  [CallDevToolsProtocolAsync][DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString], [GetDevToolsProtocolEventReceiver][DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]
     *   Win32 C/C++:  [CallDevToolsProtocolMethod][Webview2ReferenceWin32Icorewebview2ViewWebview21077444Calldevtoolsprotocolmethod], [ICoreWebView2DevToolsProtocolEventReceiver][Webview2ReferenceWin32Icorewebview2devtoolsprotocoleventreceiverViewWebview21077444]
@@ -35,7 +35,7 @@ To use the Chrome DevTools Protocol API in a WebView2 app, do either of the foll
 
 To create an `HTML file` to find your geolocation, complete following the actions.
 
-1.  Open Visual Studio Code \(or an IDE of your choice\).
+1.  Open Visual Studio Code (or an IDE of your choice).
 1.  Create a new `.html` file.
 1.  Copy and paste the following code snippet in your new `.html` file.
 
@@ -180,7 +180,7 @@ The Chrome DevTools Protocol is maintained by the open source Chromium project, 
 
 
 <!-- ====================================================================== -->
- <!-- links -->
+<!-- links -->
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2GetdevtoolsprotocoleventreceiverViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver?view=webview2-dotnet-1.0.774.44&preserve-view=true "CoreWebView2.GetDevToolsProtocolEventReceiver(String) Method | Microsoft Docs"
 [DotnetApiMicrosoftWebWebview2CoreCorewebview2CalldevtoolsprotocolmethodasyncViewWebview2Dotnet1077444MicrosoftWebWebView2CoreCorewebview2CalldevtoolsprotocolmethodsyncSystemStringSystemString]: /dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync?view=webview2-dotnet-1.0.774.44&preserve-view=true#Microsoft_Web_WebView2_Core_CoreWebView2_CallDevToolsProtocolMethodAsync_System_String_System_String_ "CoreWebView2.CallDevToolsProtocolMethodAsync(String, String) Method | Microsoft Docs"
 

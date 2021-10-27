@@ -26,6 +26,8 @@ ms.localizationpriority: high
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
+
+<!-- ====================================================================== -->
 ## What's New is now Welcome
 
 <!--  Title: What's New is now Welcome  -->
@@ -39,6 +41,8 @@ The **What's New** tool in the Microsoft Edge DevTools now has a new appearance 
    The **Welcome** tool is highlighted
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Visual Font Editor in the Styles pane
 
 <!--  Title: Visual font editor in the Styles pane  -->
@@ -59,6 +63,8 @@ To turn on this experiment, navigate to [Settings][DevtoolsCustomizeIndexSetting
    The visual **Font editor** is highlighted in the **Styles** pane
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## CSS Flexbox debugging tools
 
 Flexbox debugging features are in active development.  To turn on the experiment for the following two features, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments** and choose the checkbox next to **Enable new CSS Flexbox debugging features**.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1136394][CR1136394] and [1139949][CR1139949].
@@ -70,11 +76,11 @@ Flexbox debugging features are in active development.  To turn on the experiment
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-In the **Elements** tool, the new Flexbox (flex) icon helps you identify Flexbox containers in your code.  Choose the Flexbox \(flex\) icon to turn on or off the overlay effect that outlines a Flexbox container.  You may customize the color of the overlay in the **Layout** pane, which is located next to **Styles** and **Computed**.
+In the **Elements** tool, the new Flexbox (flex) icon helps you identify Flexbox containers in your code.  Choose the Flexbox (flex) icon to turn on or off the overlay effect that outlines a Flexbox container.  You may customize the color of the overlay in the **Layout** pane, which is located next to **Styles** and **Computed**.
 
 :::row:::
    :::column span="":::
-      To turn on and off the overlay effect that outlines the Flexbox container, choose the Flexbox \(`flex`\) icon.
+      To turn on and off the overlay effect that outlines the Flexbox container, choose the Flexbox (`flex`) icon.
    :::column-end:::
    :::column span="":::
       You may customize the color of the overlay in the **Layout** pane next to **Styles** and **Computed**.
@@ -83,7 +89,7 @@ In the **Elements** tool, the new Flexbox (flex) icon helps you identify Flexbox
 :::row:::
    :::column span="":::
       :::image type="complex" source="../../media/2021/01/elements-flex-container.msft.png" alt-text="The Flexbox (flex) icon and webpage highlighted" lightbox="../../media/2021/01/elements-flex-container.msft.png":::
-         The **Flexbox** \(`flex`\) icon and webpage highlighted
+         The **Flexbox** (`flex`) icon and webpage highlighted
       :::image-end:::
    :::column-end:::
    :::column span="":::
@@ -123,6 +129,8 @@ When you edit CSS for your Flexbox layout, CSS autocompletes in the **Styles** p
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Add tools quickly with new More Tools button
 
 <!--  Title: Add tools quickly with new More Tools button  -->
@@ -130,12 +138,14 @@ When you edit CSS for your Flexbox layout, CSS autocompletes in the **Styles** p
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-You now have a new way to open more tools in the Microsoft Edge DevTools.  After you turn on this experiment, the **More Tools** icon displays as a plus sign (`+`) to the right of the main panel.  To display a list of other tools to add to the main panel, choose the **More Tools** \(`+`\) icon.  To turn on this experiment, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments**, and then choose the checkbox next to **Enable + button tab menus to open more tools**.
+You now have a new way to open more tools in the Microsoft Edge DevTools.  After you turn on this experiment, the **More Tools** icon displays as a plus sign (`+`) to the right of the main panel.  To display a list of other tools to add to the main panel, choose the **More Tools** (`+`) icon.  To turn on this experiment, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments**, and then choose the checkbox next to **Enable + button tab menus to open more tools**.
 
 :::image type="complex" source="../../media/2021/01/more-tools.msft.png" alt-text="More Tools highlighted in DevTools" lightbox="../../media/2021/01/more-tools.msft.png":::
    **More Tools** highlighted in DevTools
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Assistive technologies now announce position and count of CSS suggestions
 
 <!--  Title: Assistive technologies now announce position and count of CSS suggestions  -->
@@ -149,6 +159,8 @@ To view a video that displays and reads aloud several suggestions with this expe
    The `suggestion` list highlighted in the **Styles** pane
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Emulate Surface Duo and Samsung Galaxy Fold
 
 <!--  Title: Emulate new dual-screen and foldable devices  -->
@@ -161,7 +173,7 @@ Test the appearance of your website or app on the following devices in Microsoft
 
 Turn on **Experimental Web Platform features** to access the new [CSS media screen-spanning feature][DualScreenWebCssMediaSpanning] and [getWindowSegments JavaScript API][DualScreenWebJavascriptGetwindowsegments].  Navigate to `edge://flags` and toggle the flag next to **Experimental Web Platform features**.  To help enhance your website or app for the dual-screen and foldable devices, use the following features when [emulating the device][DevtoolsDeviceModeIndex].
 
-*   [Spanning][DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices], which is when your website \(or app\) appears across both screens.
+*   [Spanning][DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices], which is when your website (or app) appears across both screens.
 *   [Rendering the seam][DualScreenIntroductionHowToWorkWithSeam], which is the space between the two screens.
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1054281][CR1054281].
@@ -170,24 +182,28 @@ To review the history of this feature in the Chromium open-source project, navig
    Emulate dual-screen
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.2
 
 The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extension version 1.1.2 for Microsoft Visual Studio Code has the following changes since the previous release.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.2, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].
 
-*   Added a **Close instance** button to each item on the target list \([#248][GithubMicrosoftVscodeEdgeDevtoolsPull248]\)
-*   Bumped [Microsoft Edge DevTools][DevtoolsIndex] version from 84.0.522.63 to [85.0.564.40][DevtoolsWhatsNew85] \([#235][GithubMicrosoftVscodeEdgeDevtoolsPull235]\)
-*   Included [Debugger for Microsoft Edge][VisualstudioMarketplaceMsjsdiagDebuggerMicrosoftEdge] as a dependency  \([#233][GithubMicrosoftVscodeEdgeDevtoolsPull233]\)
-*   Implemented settings option to change extension themes \([#229][GithubMicrosoftVscodeEdgeDevtoolsPull229]\)
+*   Added a **Close instance** button to each item on the target list ([#248][GithubMicrosoftVscodeEdgeDevtoolsPull248])
+*   Bumped [Microsoft Edge DevTools][DevtoolsIndex] version from 84.0.522.63 to [85.0.564.40][DevtoolsWhatsNew85] ([#235][GithubMicrosoftVscodeEdgeDevtoolsPull235])
+*   Included [Debugger for Microsoft Edge][VisualstudioMarketplaceMsjsdiagDebuggerMicrosoftEdge] as a dependency  ([#233][GithubMicrosoftVscodeEdgeDevtoolsPull233])
+*   Implemented settings option to change extension themes ([#229][GithubMicrosoftVscodeEdgeDevtoolsPull229])
 
 You may file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools].
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
 
 ### Capture node screenshot beyond viewport
 
-In Microsoft Edge version 89, node screenshots are more accurate, capturing the full node even if content from the node is not visible in the viewport.  In the **Elements** tool, hover  on an element, open the contextual menu \(right-click\), and choose **Capture node screenshot**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1003629][CR1003629].
+In Microsoft Edge version 89, node screenshots are more accurate, capturing the full node even if content from the node is not visible in the viewport.  In the **Elements** tool, hover  on an element, open the contextual menu (right-click), and choose **Capture node screenshot**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1003629][CR1003629].
 
 :::image type="complex" source="../../media/2021/01/capture-node-screenshot.msft.png" alt-text="Capture node screenshot highlighted on the context menu in the Elements tool" lightbox="../../media/2021/01/capture-node-screenshot.msft.png":::
    **Capture node screenshot** highlighted on the context menu in the **Elements** tool
@@ -197,7 +213,7 @@ In Microsoft Edge version 89, node screenshots are more accurate, capturing the 
 
 #### Support forcing the :target CSS state
 
-You may now use DevTools to force the [:target][MdnDocsWebCssTarget] CSS pseudo-class.  The `:target` pseudo-class is triggered when a unique element \(the target element\) has an `id` that matches a fragment of the URL.  For example, the `http://www.example.com/index.html#section1` URL triggers the `:target` pseudo-class on an HTML element with `id="section1"`.  To try a demo with section 1 highlighted, navigate to [CSS :target demo][GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtmlSection1].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1156628][CR1156628].
+You may now use DevTools to force the [:target][MdnDocsWebCssTarget] CSS pseudo-class.  The `:target` pseudo-class is triggered when a unique element (the target element) has an `id` that matches a fragment of the URL.  For example, the `http://www.example.com/index.html#section1` URL triggers the `:target` pseudo-class on an HTML element with `id="section1"`.  To try a demo with section 1 highlighted, navigate to [CSS :target demo][GithubMicrosoftedgeDevtoolssamplesWhatsNew89TargetCssDemoHtmlSection1].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1156628][CR1156628].
 
 :::row:::
    :::column span="":::
@@ -214,7 +230,7 @@ You may now use DevTools to force the [:target][MdnDocsWebCssTarget] CSS pseudo-
 
 #### Use Duplicate elements to copy elements
 
-Use the new **Duplicate element** shortcut to clone an element.  In the **Elements** tool, hover on an element, open the contextual menu \(right-click\), choose **Duplicate element**.  A new element is created under the selected element.  To duplicate the element with a keyboard shortcut, select `Shift`+`Alt`+`Down Arrow` \(Windows/Linux\) or `Shift`+`Option`+`Down Arrow` \(macOS\).  To review the history of this feature in the Chromium open-source project, navigate to Issue [1150797][CR1150797].
+Use the new **Duplicate element** shortcut to clone an element.  In the **Elements** tool, hover on an element, open the contextual menu (right-click), choose **Duplicate element**.  A new element is created under the selected element.  To duplicate the element with a keyboard shortcut, select `Shift`+`Alt`+`Down Arrow` (Windows/Linux) or `Shift`+`Option`+`Down Arrow` (macOS).  To review the history of this feature in the Chromium open-source project, navigate to Issue [1150797][CR1150797].
 
 :::image type="complex" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="The Duplicate element is highlighted in the context menu on an element in the Elements tool" lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
    The **Duplicate element** is highlighted in the context menu on an element in the **Elements** tool
@@ -230,7 +246,7 @@ The **Styles** pane now displays color pickers for custom CSS properties.  To cy
 
 #### Copy CSS classes and properties
 
-You may now copy CSS properties quicker with a few new options in the contextual menu.  In the **Elements** tool, choose an element.  To copy the value, in the **Styles** pane, hover on a CSS class or a CSS property, open a contextual menu \(right-click\), and choose the copy option.
+You may now copy CSS properties quicker with a few new options in the contextual menu.  In the **Elements** tool, choose an element.  To copy the value, in the **Styles** pane, hover on a CSS class or a CSS property, open a contextual menu (right-click), and choose the copy option.
 
 :::row:::
    :::column span="":::
@@ -323,10 +339,10 @@ You may now copy object values in the **Console** and **Sources** tools.  The ab
 
 :::row:::
    :::column span="":::
-      In the **Console** tool, hover on an object, open the contextual menu \(right-click\), and then choose **Copy object**.
+      In the **Console** tool, hover on an object, open the contextual menu (right-click), and then choose **Copy object**.
    :::column-end:::
    :::column span="":::
-      In the **Sources** tool, on a breakpoint, hover on an object, in the **Object** popup window, highlight an object, open the contextual menu \(right-click\), and then choose **Copy object**.
+      In the **Sources** tool, on a breakpoint, hover on an object, in the **Object** popup window, highlight an object, open the contextual menu (right-click), and then choose **Copy object**.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -348,10 +364,10 @@ You may now copy a file name using the contextual menu.  To review the history o
 
 :::row:::
    :::column span="":::
-      In the **Sources** tool, hover on a file name, open the contextual menu \(right-click\), and then choose **Copy file name**.
+      In the **Sources** tool, hover on a file name, open the contextual menu (right-click), and then choose **Copy file name**.
    :::column-end:::
    :::column span="":::
-      In the **Elements** tool > **Styles** pane, hover on a file name, open the contextual menu \(right-click\), and then choose **Copy file name**.
+      In the **Elements** tool > **Styles** pane, hover on a file name, open the contextual menu (right-click), and then choose **Copy file name**.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -409,27 +425,26 @@ To turn on this experiment, navigate to [Settings][DevtoolsCustomizeIndexSetting
    APCA in the Color Picker
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
 
-## Getting in touch with Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsWhatsNew85]: ../../2020/06/devtools.md "What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"
 
 [DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/color-picker.md "Test text-color contrast using the Color Picker | Microsoft Docs"
-[DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Change CSS - CSS reference | Microsoft Docs"
+[DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Change CSS - CSS features reference | Microsoft Docs"
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Customize keyboard shortcuts in DevTools | Microsoft Docs"
 [DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices "Test on foldable and dual-screen devices - Emulate dual-screen and foldable devices in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "Simulate a mobile viewport - Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsEvaluatePerformanceReferenceRecordLoadPerformance]: ../../../evaluate-performance/reference.md#record-load-performance "Record load performance - Performance analysis reference | Microsoft Docs"
-[DevtoolsIndex]: ../../../index.md "Microsoft Edge (Chromium) Developer Tools overview | Microsoft Docs"
+[DevtoolsIndex]: ../../../index.md "Microsoft Edge Developer Tools overview | Microsoft Docs"
 [DevtoolsInspectStylesEditFonts]: ../../../inspect-styles/edit-fonts.md "Edit CSS font styles and settings in the Styles pane in DevTools | Microsoft Docs"
 
 [DualScreenIntroductionHowToWorkWithSeam]: /dual-screen/introduction#how-to-work-with-the-seam "How to work with the seam - Introduction to dual-screen devices | Microsoft Docs"
@@ -487,7 +502,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-89) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-89) and is authored by [Jecelyn Yeen][JecelynYeen] (Developer advocate, Chrome DevTools).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

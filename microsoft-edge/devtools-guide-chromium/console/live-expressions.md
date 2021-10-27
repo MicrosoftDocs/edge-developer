@@ -12,9 +12,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 **Live Expressions** are an excellent way to monitor JavaScript expressions that change a lot.    Instead of having many Console messages to read and navigate, you may pin your specific JavaScript expressions to the top of the **Console**.
 
+
+<!-- ====================================================================== -->
 ## Add a new live expression
 
-To start, choose the **Create live expression** \(eye\) button next to the **Filter** textbox.  After you choose it, a textbox is displayed for you to enter your new expression in it.
+To start, choose the **Create live expression** (eye) button next to the **Filter** textbox.  After you choose it, a textbox is displayed for you to enter your new expression in it.
 
 :::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="Choose the New live expression button to open a textbox to type an expression" lightbox="../media/console-live-expressions-new.msft.png":::
     Choose the `New live expression` button to open a textbox to type an expression
@@ -25,7 +27,7 @@ To start, choose the **Create live expression** \(eye\) button next to the **Fil
 1.  Open the **Live Expression** textbox.
 1.  Type `document.activeElement`.
 1.  To save the expression, complete one of the following actions.
-    *   Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\).
+    *   Select `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS).
     *   Choose outside the **Live Expression** textbox.
 
 The expression is now live and displays `body` as the result.
@@ -46,6 +48,8 @@ To change the value again, open and choose the Search textbox on the webpage.
     Navigate to a different element in the webpage to update the **Live Expression**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Remove Live Expressions
 
 A **Live Expression** is available as long as you keep it active.  To get rid of a **Live Expression**, choose the `x` next to it.
@@ -54,11 +58,13 @@ A **Live Expression** is available as long as you keep it active.  To get rid of
     To remove **Live Expressions**, choose the `x` next to it
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Replace Console logging with Live Expressions
 
 You may create as many expressions as you want and persist each across browser sessions and windows.  **Live Expressions** are a way to cut down on noise in your debugging workflow.
 
-For example, you want to monitor the mouse movement in the current webpage.  Navigate to [Logging Mouse Movement demo][GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml], open the **Console**, and move your mouse around to display the logs with a lot of information.
+For example, you want to monitor the mouse movement in the current webpage.  Navigate to [Logging Mouse Movement demo](https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html), open the **Console**, and move your mouse around to display the logs with a lot of information.
 
 :::image type="complex" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="Console displays much information on mouse position" lightbox="../media/console-live-expression-mouse-logging.msft.png":::
     **Console** displays much information on mouse position
@@ -68,7 +74,7 @@ The large amount of information not only slows your debug process, but also make
 
 To try **Live Expressions** as an alternative, complete the following actions.
 
-1.  Navigate to the [Mouse movement without logging demo][GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml].
+1.  Navigate to the [Mouse movement without logging demo](https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html).
 1.  Create **Live Expressions** for `x` and `y`.
 
 When you use **Live Expressions**, you always get the information on the same part of your screen and keep **Console** logs for values that don't change as much.
@@ -78,12 +84,3 @@ When you use **Live Expressions**, you always get the information on the same pa
 :::image-end:::
 
 **Live Expressions** run exclusively on your computer and you don't need to change anything in your code to display.  **Live Expressions** are a great way to ensure that you only display the information you want to debug.  Also, **Live Expressions** help you limit the noise on your users' computers.
-
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-<!-- links -->
-
-[GithubMicrosoftedgeDevtoolssamplesConsoleMousemoveHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html "Console messages examples: Using table | GitHub"
-[GithubMicrosoftedgeDevtoolssamplesConsoleMouseNoLogHtml]: https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html "Mouse movement without logging | GitHub"
