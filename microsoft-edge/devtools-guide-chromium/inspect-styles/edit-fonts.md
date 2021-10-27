@@ -40,6 +40,8 @@ All fields in the visual **Font Editor** are populated from the values in the CS
 
 The **Font Editor** consists of two parts:  the Font Family selector, and the CSS Properties editor.
 
+
+<!-- ====================================================================== -->
 ## The Font Family selector
 
 The Font Family selector is the upper part of the visual **Font Editor**.  To choose the fonts of the CSS rule, in the CSS editor, use the **Font Family** selector.  You may choose main and fallback fonts for each CSS rule.
@@ -68,6 +70,8 @@ After you choose a font, another dropdown menu is displayed for you to choose fa
 > [!NOTE]
 > If you choose a global value for font family, you do not get another dropdown since there is no fallback for it in CSS.
 
+
+<!-- ====================================================================== -->
 ## The CSS Properties editor
 
 You may change CSS font properties in the lower part of the visual **Font Editor**.  You may change the font size, line height, font weight, and letter spacing using any of the UI controls.  Your changes are applied immediately in the browser.
@@ -102,6 +106,6 @@ The CSS Properties editor also includes preset keywords.  To use the preset keyw
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsIndex]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
+[DevtoolsIndex]: ../index.md "Microsoft Edge Developer Tools | Microsoft Docs"
 [DevtoolsExperimentalFeaturesIndex]: ../experimental-features/index.md "Experimental features | Microsoft Docs"
 [DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../experimental-features/index.md#turning-on-experimental-features "Turning on experimental features - Experimental features | Microsoft Docs"

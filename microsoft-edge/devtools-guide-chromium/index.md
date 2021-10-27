@@ -7,14 +7,14 @@ ms.date: 09/23/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge, web development, f12 tools, devtools
+keywords: microsoft edge, web development, f12 tools, devtools, microsoft edge developer tools
 ---
 # Microsoft Edge Developer Tools overview
 
-When you install Microsoft Edge, you not only get a browser, you also get Developer Tools, providing a powerful way to inspect, debug, and even create web projects.  The Developer Tools shipped with the browser are partly based on the tools in the Chromium open-source project, so you might already be familiar with some of these tools.  The Microsoft Edge Developer Tools are also called `Microsoft Edge DevTools`, or simply `DevTools`.
+When you install Microsoft Edge, you not only get a browser, you also get Developer Tools, which provide a powerful way to inspect, debug, and even create web projects.  The Developer Tools that are shipped with Microsoft Edge are partly based on the tools in the Chromium open-source project, so you may already be familiar with some of these tools.  The Microsoft Edge Developer Tools are also called _Microsoft Edge DevTools_, or simply _DevTools_.
 
 With DevTools, you can do the following:
-*   Inspect and change the current webpage] live in the browser.
+*   Inspect and change the current webpage live in the browser.
 *   Emulate how your product behaves on different devices and simulate a mobile environment, complete with different network conditions.
 *   Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.
 *   Debug your JavaScript using breakpoint debugging and with the live console.
@@ -237,16 +237,16 @@ To preview the [latest features coming to DevTools][DevtoolsGuideWhatsNew202102D
 *   [Emulate how your product behaves on different devices](device-mode/index.md)
 *   [Inspect, tweak, and change the styles of elements][DevtoolsGuideInspectStylesEditFonts]
 *   [Debug your JavaScript][DevtoolsGuideJavascriptIndex]
-*   [live console](console/index.md)
-*   [accessibility, performance, compatibility, and security issues][DevtoolsGuideIssuesIndex]
+*   [Live console](console/index.md)
+*   [Accessibility, performance, compatibility, and security issues][DevtoolsGuideIssuesIndex]
 *   [Inspect the network traffic][DevtoolsGuideNetworkIndex]
 *   [Inspect where the browser stored content][DevtoolsGuideStorageSessionstorage]
 *   [Evaluate the performance](evaluate-performance/index.md)
-*   [memory problems](memory-problems/index.md)
-*   [rendering issues][DevtoolsGuideRenderingToolsIndex]
+*   [Memory problems](memory-problems/index.md)
+*   [Rendering issues][DevtoolsGuideRenderingToolsIndex]
 *   [Use a development environment][DevtoolsGuideSourcesIndex]
-*   [sync changes in DevTools with the file system][DevtoolsGuideWorkspacesIndex]
-*   [override files from the web][DevtoolsGuideJavascriptOverrides]
+*   [Sync changes in DevTools with the file system][DevtoolsGuideWorkspacesIndex]
+*   [Override files from the web][DevtoolsGuideJavascriptOverrides]
 
 
 <!-- ====================================================================== -->

@@ -12,6 +12,8 @@
           items:
             - name: Experimental features
               href: devtools-guide-chromium/experimental-features/index.md
+            - name: Microsoft Edge 95
+              href: devtools-guide-chromium/whats-new/2021/10/devtools.md
             - name: Microsoft Edge 94
               href: devtools-guide-chromium/whats-new/2021/09/devtools.md
             - name: Microsoft Edge 93
@@ -554,8 +556,10 @@
               href: webview2/get-started/winui.md
             - name: WPF
               href: webview2/get-started/wpf.md
-        - name: Concepts and how-to
-          items:
+        - name: Sample code
+          href: webview2/code-samples-links.md
+        - name: How to
+          items: # todo: put in linear grouped order, then minimally nest per natural groupings
             - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
             - name: Distribute a WebView2 app and Runtime
@@ -590,6 +594,8 @@
               href: webview2/how-to/chromium-devtools-protocol.md
             - name: Switch to a preview channel
               href: webview2/how-to/set-preview-channel.md
+            - name: Embed web content into native applications
+              href: webview2/how-to/communicate-btwn-web-native.md
         - name: Release notes
           href: webview2/release-notes.md
         - name: Roadmap

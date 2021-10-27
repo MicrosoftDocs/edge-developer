@@ -23,6 +23,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # What's New In DevTools (Microsoft Edge 86)
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Microsoft Edge DevTools team
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
@@ -51,7 +53,7 @@ You are now able to test the look and feel of your website or app on two new dev
 
 To help enhance your website or app for the dual-screen and foldable devices, use the following features when [emulating the device][DevtoolsDeviceModeIndex].
 
-*   [Spanning][DevtoolsDeviceModeDualScreenAndFoldables], which is when your website \(or app\) appears across both screens.
+*   [Spanning][DevtoolsDeviceModeDualScreenAndFoldables], which is when your website (or app) appears across both screens.
 *   [Rendering the seam][DualScreenIntroductionHowWorkSeam], which is the space between the two screens.
 *   Enabling experimental Web Platform APIs to access the new [CSS media screen-spanning feature][DualScreenWebCssMediaSpanning] and [JavaScript getWindowSegments API][DualScreenWebJavascriptGetwindowsegments].
 
@@ -175,6 +177,8 @@ The issue is now fixed in all versions of Microsoft Edge.
 
 Chromium issue: [#1103316][CR1103316]
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
@@ -185,7 +189,7 @@ DevTools now displays media players information in the [Media][DevtoolsMediaPane
 
 To open the new **Media** tool, complete the following step.
 
-1.  Choose **Customize and control DevTools** \(`...`\) > **More tools** > **Media**.
+1.  Choose **Customize and control DevTools** (`...`) > **More tools** > **Media**.
 
     :::image type="complex" source="../../media/2020/08/media-panel.msft.png" alt-text="New Media tool" lightbox="../../media/2020/08/media-panel.msft.png":::
        New **Media** tool
@@ -202,7 +206,7 @@ View live content and inspect potential issues more quickly, including the follo
 
 You may now capture node screenshots using the context menu in the **Elements** tool.
 
-For example, to take a screenshot of the table of contents, hover on the element, open the contextual menu \(right-click\), and select **Capture node screenshot**.
+For example, to take a screenshot of the table of contents, hover on the element, open the contextual menu (right-click), and select **Capture node screenshot**.
 
 :::image type="complex" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="Capture node screenshots" lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
    Capture node screenshots
@@ -297,7 +301,7 @@ Chromium issue: [#772558][CR772558]
 
 ### Deprecation of other origins listing in the Service Workers pane
 
-DevTools now provides a link from the **Service workers** pane \(**Application** tool > **Service workers** pane\) to view the full list of service workers from other origins.  To access the list without opening the DevTools, navigate to `edge://service-worker-internals/?devtools`.
+DevTools now provides a link from the **Service workers** pane (**Application** tool > **Service workers** pane) to view the full list of service workers from other origins.  To access the list without opening the DevTools, navigate to `edge://service-worker-internals/?devtools`.
 
 Previously DevTools displayed a list nested under the **Application** tool > **Service workers** pane.
 
@@ -412,7 +416,7 @@ Chromium issue: [#1106221][CR1106221]
 
 #### Consistently display resource type in Network panel
 
-DevTools now consistently display the same resource type as the original network request and appends `/ Redirect` to the **Type** column value when redirection \(HTTP status code 302\) happens.
+DevTools now consistently display the same resource type as the original network request and appends `/ Redirect` to the **Type** column value when redirection (HTTP status code 302) happens.
 
 Previously DevTools changed the type to `Other` sometimes.
 
@@ -446,6 +450,8 @@ Choose the **Clear** button to remove any inputted text.
 
 Chromium issue: [#1067184][CR1067184]
 
+
+<!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
@@ -531,7 +537,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-86) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-86) and is authored by [Jecelyn Yeen][JecelynYeen] (Developer advocate, Chrome DevTools).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

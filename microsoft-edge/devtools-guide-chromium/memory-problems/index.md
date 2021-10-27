@@ -29,9 +29,11 @@ Learn how to use Microsoft Edge and DevTools to find memory issues that affect p
 
 *   Find out how much memory your page is currently using with the Microsoft Edge Browser Task Manager.
 *   Visualize memory usage over time with the **Memory** panel.
-*   Identify detached DOM trees \(a common cause of memory leaks\) with **Heap snapshot**.
-*   Find out when new memory is being allocated in your JavaScript heap \(JS heap\) with **Allocation instrumentation on timeline**.
+*   Identify detached DOM trees (a common cause of memory leaks) with **Heap snapshot**.
+*   Find out when new memory is being allocated in your JavaScript heap (JS heap) with **Allocation instrumentation on timeline**.
 
+
+<!-- ====================================================================== -->
 ## Overview
 
 In the spirit of the **RAIL** performance model, the focus of your performance efforts should be your users.
@@ -54,6 +56,8 @@ runs smoothly on a high-end smartphone may crash on a low-end smartphone.
 
 The key here is to use the RAIL model and focus on your users.  Find out what devices are popular with your users, and then test out your page on those devices.  If the experience is consistently bad, the page may be exceeding the memory capabilities of those devices.
 
+
+<!-- ====================================================================== -->
 ## Monitor memory use in realtime with the Microsoft Edge Browser Task Manager
 
 Use the Microsoft Edge Browser Task Manager as a starting point to your memory issue investigation.  The Microsoft Edge Browser Task Manager is a realtime monitor that tells you how much memory a page is currently using.
@@ -64,7 +68,7 @@ Use the Microsoft Edge Browser Task Manager as a starting point to your memory i
        Figure 1:  Opening the Microsoft Edge Browser Task Manager
     :::image-end:::
 
-1.  Hover on the table header of the Microsoft Edge Browser Task Manager, open the contextual menu \(right-click\), and enable **JavaScript memory**.
+1.  Hover on the table header of the Microsoft Edge Browser Task Manager, open the contextual menu (right-click), and enable **JavaScript memory**.
 
     :::image type="complex" source="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png" alt-text="Enable JavaScript memory" lightbox="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png":::
        Figure 2:  Enable JavaScript memory
@@ -73,10 +77,12 @@ Use the Microsoft Edge Browser Task Manager as a starting point to your memory i
 These two columns tell you different things about how your page is using memory.
 
 *   The **Memory** column represents native memory.  DOM nodes are stored in native memory.  If this value is increasing, DOM nodes are getting created.
-*   The **JavaScript Memory** column represents the JS heap.  This column contains two values.  The value you are interested in is the live number \(the number in parentheses\).  The live number represents how much memory the reachable objects on your page are using.  If this number is increasing, either new objects are being created, or the existing objects are growing.
+*   The **JavaScript Memory** column represents the JS heap.  This column contains two values.  The value you are interested in is the live number (the number in parentheses).  The live number represents how much memory the reachable objects on your page are using.  If this number is increasing, either new objects are being created, or the existing objects are growing.
 
 <!--*   live number reference: https://groups.google.com/d/msg/google-chrome-developer-tools/aTMVGoNM0VY/bLmf3l2CpJ8J  -->
 
+
+<!-- ====================================================================== -->
 ## Visualize memory leaks with Performance panel
 
 You may also use the Performance panel as another starting point in your investigation.  The Performance panel helps you visualize the memory use of a page over time.
@@ -107,12 +113,14 @@ Every time that the button referenced in the code is chosen, ten thousand `div` 
    Figure 3:  Simple growth
 :::image-end:::
 
-First, an explanation of the user interface.  The **HEAP** graph in the **Overview** pane \(below **NET**\) represents the JS heap.  Below the **Overview** pane is the **Counter** pane.  The memory usage is broken down by JS heap \(same as **HEAP** graph in the **Overview** pane\), documents, DOM nodes, listeners, and GPU memory.  Turn off a checkbox to hide it from the graph.
+First, an explanation of the user interface.  The **HEAP** graph in the **Overview** pane (below **NET**) represents the JS heap.  Below the **Overview** pane is the **Counter** pane.  The memory usage is broken down by JS heap (same as **HEAP** graph in the **Overview** pane), documents, DOM nodes, listeners, and GPU memory.  Turn off a checkbox to hide it from the graph.
 
-Now, an analysis of the code compared with the previous figure.  If you review the node counter \(the green graph\), it matches up cleanly with the code.  The node count increases in discrete steps.  You may presume that each increase in the node count is a call to `grow()`.  The JS heap graph \(the blue graph\) is not as straightforward.  In keeping with best practices, the first dip is actually a forced garbage collection \(choose the  **collect garbage** ![force garbage collection][ImageForceGarbageCollectionIcon] button\).  As the recording progresses, the JS heap size spikes are displayed.  This is natural and expected:  the JavaScript code is creating the DOM nodes on every button you choose and doing a lot of work when it creates the string of one million characters.  The key thing here is the fact that the JS heap ends higher than it began \(the "beginning" here being the point after the forced garbage collection\).  In the real world, if you saw this pattern of increasing JS heap size or node size, it may potentially define a memory leak.
+Now, an analysis of the code compared with the previous figure.  If you review the node counter (the green graph), it matches up cleanly with the code.  The node count increases in discrete steps.  You may presume that each increase in the node count is a call to `grow()`.  The JS heap graph (the blue graph) is not as straightforward.  In keeping with best practices, the first dip is actually a forced garbage collection (choose the  **collect garbage** ![force garbage collection][ImageForceGarbageCollectionIcon] button).  As the recording progresses, the JS heap size spikes are displayed.  This is natural and expected:  the JavaScript code is creating the DOM nodes on every button you choose and doing a lot of work when it creates the string of one million characters.  The key thing here is the fact that the JS heap ends higher than it began (the "beginning" here being the point after the forced garbage collection).  In the real world, if you saw this pattern of increasing JS heap size or node size, it may potentially define a memory leak.
 
 <!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->
 
+
+<!-- ====================================================================== -->
 ## Discover detached DOM tree memory leaks with Heap Snapshots
 
 A DOM node is only garbage collected when there are no references to the node from either the DOM tree or JavaScript code running on the page.  A node is said to be "detached" when it is removed from the DOM tree but some JavaScript still references it.  Detached DOM nodes are a common cause of memory leaks.  This section teaches you how to use the heap profilers in DevTools to identify detached nodes.
@@ -143,7 +151,7 @@ To create a snapshot, open DevTools and navigate to the **Memory** panel, choose
    Figure 4:  Take heap snapshot
 :::image-end:::
 
-The snapshot may take some time to process and load.  After it is finished, select it from the left-hand panel \(named **HEAP SNAPSHOTS**\).
+The snapshot may take some time to process and load.  After it is finished, select it from the left-hand panel (named **HEAP SNAPSHOTS**).
 
 Type `Detached` in the **Class filter** textbox to search for detached DOM trees.
 
@@ -167,6 +175,8 @@ Choose a node to investigate it further.  In the **Objects** pane, you may revie
 
 <!--todo: the allocation timeline does not appear in the DevTools in Edge  -->
 
+
+<!-- ====================================================================== -->
 ## Identify JS heap memory leaks with Allocation instrumentation on timeline
 
 **Allocation instrumentation on timeline** is another tool that may help you track down memory leaks in your JS heap.
@@ -203,6 +213,8 @@ Expand the object and select the value to view more details in the **Object** pa
    Figure 10:  Object details
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Investigate memory allocation by function
 
 Use the **Allocation sampling** profiling type to view memory allocation by JavaScript function.
@@ -222,11 +234,13 @@ DevTools shows you a breakdown of memory allocation by function.  The default vi
    Figure 12:  Allocation sampling
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Spot frequent garbage collections
 
 If your page appears to pause frequently, then you may have garbage collection issues.
 
-You are able to use either the Microsoft Edge Browser Task Manager or Performance memory recordings to spot frequent garbage collection.  In the Microsoft Edge Browser Task Manager, frequently rising and falling **Memory** or **JavaScript Memory** values represent frequent garbage collection.  In Performance recordings, frequent changes \(rising and falling\) to the JS heap or node count graphs indicate frequent garbage collection.
+You are able to use either the Microsoft Edge Browser Task Manager or Performance memory recordings to spot frequent garbage collection.  In the Microsoft Edge Browser Task Manager, frequently rising and falling **Memory** or **JavaScript Memory** values represent frequent garbage collection.  In Performance recordings, frequent changes (rising and falling) to the JS heap or node count graphs indicate frequent garbage collection.
 
 After you have identified the problem, you are able to use an **Allocation instrumentation on timeline** recording to find out where memory is being allocated and which functions are causing the allocations.
 
@@ -245,7 +259,7 @@ After you have identified the problem, you are able to use an **Allocation instr
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

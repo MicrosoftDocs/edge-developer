@@ -40,11 +40,12 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 *  [webhint][webhintIo]
 
 
+<!-- ====================================================================== -->
 ## Opening the Issues tool
 
 1.  Navigate to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page][A11ytestingPagewitherrors] in a new tab or window.
 
-1.  Open DevTools.  After a few seconds, the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) appears in the upper right corner of DevTools.
+1.  Open DevTools.  After a few seconds, the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)) appears in the upper right corner of DevTools.
 
 1.  Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.
 
@@ -74,13 +75,14 @@ Within each category of issues, first the errors are listed, then warnings, and 
 To include issues that are caused by third-party sites, at the top of the **Issues** tool, select the **Include third-party issues** checkbox.
 
 
+<!-- ====================================================================== -->
 ## Expand entries in the Issues tool
 
 The **Issues** tool presents additional documentation and recommended fixes to apply to each issue.  To expand an issue to get this additional information, select an issue, as follows.
 
 1.  Open the [demo page][A11ytestingPagewitherrors] in a new window or tab, and then open DevTools.
 
-1.  Open the **Issues** tool by selecting the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\).
+1.  Open the **Issues** tool by selecting the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)).
 
 1.  Select an issue to expand the issue.
 
@@ -95,6 +97,7 @@ Each displayed issue has the following components:
 *   Links to further documentation.
 
 
+<!-- ====================================================================== -->
 ## View issues in context of an associated tool
 
 An issue in the **Issues** tool may include one or more links that open different tools, such as the **Elements**, **Sources**, or **Network** tool. You can open one of these tools to perform additional troubleshooting steps. To open a linked tool from the **Issues** tool, perform the following steps.
@@ -114,6 +117,7 @@ An issue in the **Issues** tool may include one or more links that open differen
     :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## Open issues from the DOM tree
 
 If an element has an associated issue, the DOM tree in the **Elements** tool shows a wavy underline under the element name.  You can open the context menu (right-click) on the element and then select **View issues**, or select `Shift` and left-click the element with the wavy underline.
@@ -156,7 +160,7 @@ To display an issue for elements with wavy underlines in the DOM tree, perform t
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton][SamDutton] \(Developer Advocate\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton][SamDutton] (Developer Advocate).
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
 

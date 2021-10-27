@@ -44,7 +44,7 @@ For example, to pause or continue running a script in Visual Studio Code, you se
 1.  Open [Settings][DevToolsCustomizeSettings], such as by selecting the gear icon in the main toolbar, or by selecting `Shift`+`?`.
 1.  Select the **Shortcuts** settings page.
 1.  Select the action you want to customize.  For example, in the **Debugger** section, select the **Pause script execution** action.
-1.  Select the **Edit** \(![EditKeyboardShortcut](../media/edit-keyboard-shortcut-icon.msft.png)\) icon.
+1.  Select the **Edit** (![EditKeyboardShortcut](../media/edit-keyboard-shortcut-icon.msft.png)) icon.
 
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Select the action to customize from the Shortcuts page in Settings" lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
        Select the action to customize from the **Shortcuts** page in **Settings**
@@ -57,7 +57,7 @@ For example, to pause or continue running a script in Visual Studio Code, you se
        Select the keys you want to assign to the action
     :::image-end:::
 
-1.  To save your new keyboard shortcut, select the checkmark \(![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)\) icon.
+1.  To save your new keyboard shortcut, select the checkmark (![CheckmarkKeyboardShortcut](../media/checkmark-keyboard-shortcut-icon.msft.png)) icon.
 
     :::image type="complex" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Select the checkmark icon to save your new keyboard shortcut" lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
        Select the checkmark icon to save your new keyboard shortcut

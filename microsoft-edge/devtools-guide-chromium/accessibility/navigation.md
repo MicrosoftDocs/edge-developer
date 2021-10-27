@@ -25,15 +25,15 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This article helps users who primarily rely on assistive technology such as screen readers use [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  DevTools is a suite of web developer tools built into the Microsoft Edge browser.
 
-For DevTools features related to improving the accessibility of a web page, see [Accessibility-testing features in DevTools][DevtoolsAccessibilityReference] and [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md).
+For DevTools features related to improving the accessibility of a web page, see [Accessibility-testing features in DevTools](reference.md) and [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md).
 
 This guide walks you through the tools and tabs which are the most accessible, and highlights issues you may encounter.
 
-DevTools is divided into a series of tools.  (Within the **Command Menu**, tools are referred to as _panels_.)  Tools are organized into an [ARIA tablist][W3CWaiAriaTablist] on the main toolbar and on the drawer toolbar.
+DevTools is divided into a series of tools.  (Within the **Command Menu**, tools are referred to as _panels_.)  Tools are organized into an [ARIA tablist](https://www.w3.org/TR/wai-aria-1.1/#tablist) on the main toolbar and on the drawer toolbar.
 
 The following are examples of tools:
-*   The **Elements** tool lets you [view and change DOM nodes][DevtoolsDomIndexNavigateDomTreeKeyboard] or [CSS][DevtoolsCssIndex].
-*   The **Console** tool lets you read JavaScript logs and live-edit objects.  For more information, navigate to [Use the Console][DevtoolsConsoleIndex].
+*   The **Elements** tool lets you [view and change DOM nodes](../dom/index.md#navigate-the-dom-tree-with-a-keyboard) or [CSS](../css/index.md).
+*   The **Console** tool lets you read JavaScript logs and live-edit objects.  For more information, navigate to [Use the Console](../console/index.md).
 
 Within each tool, there are one or more sets of tabs.  For example, the **Elements** tool contains a set of tabs including **Styles**, **Event Listeners**, and **Accessibility**.
 
@@ -41,13 +41,13 @@ Within each tool, there are one or more sets of tabs.  For example, the **Elemen
 <!-- ====================================================================== -->
 ## Keyboard shortcuts
 
-For the default keyboard shortcuts for DevTools, see [Keyboard shortcuts][DevtoolsShortcuts].  Be sure to bookmark it and refer back to it as you explore the different tools.
+For the default keyboard shortcuts for DevTools, see [Keyboard shortcuts](../shortcuts/index.md).  Be sure to bookmark it and refer back to it as you explore the different tools.
 
 
 <!-- ====================================================================== -->
 ## Open DevTools
 
-To get started, navigate to [Open Microsoft Edge DevTools][DevtoolsOpen].  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.
+To get started, navigate to [Open Microsoft Edge DevTools](../open/index.md).  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.
 
 
 <!-- ====================================================================== -->
@@ -57,8 +57,8 @@ You can move among the tools by using the keyboard navigation keys or by using t
 
 ### Navigate by keyboard
 
-*   With DevTools open, select `Control`+`]` \(Windows, Linux\) or `Command`+`]` \(macOS\) to move focus to the next tool on the main toolbar.
-*   Select `Control`+`[` \(Windows, Linux\) or `Command`+`[` \(macOS\) to move focus to the previous tool on the main toolbar.
+*   With DevTools open, select `Control`+`]` (Windows, Linux) or `Command`+`]` (macOS) to move focus to the next tool on the main toolbar.
+*   Select `Control`+`[` (Windows, Linux) or `Command`+`[` (macOS) to move focus to the previous tool on the main toolbar.
 *   Select `Tab` or `Shift`+`Tab` repeatedly until focus moves to the tabs of the main toolbar or drawer toolbar, and then use the arrow keys to move among the tools.
 
 **Known issues**
@@ -68,9 +68,9 @@ You can move among the tools by using the keyboard navigation keys or by using t
 
 ### Navigate by Command Menu
 
-To select a specific tool, use the [Command Menu][DevtoolsCommandMenuIndex].  In the Command Menu, a tool is called a _panel_.
+To select a specific tool, use the [Command Menu](../command-menu/index.md).  In the Command Menu, a tool is called a _panel_.
 
-1.  With DevTools open, select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.
+1.  With DevTools open, select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
     The **Command Menu** is a fuzzy-search autocomplete combobox.
 1.  Type the name of a panel (tool), and then use the `Down Arrow` on the keyboard to navigate to the correct option.
 1.  Select `Enter` to run a command.
@@ -91,13 +91,13 @@ Opening a tool this way puts focus in the content area of the tool.  In the case
 
 1.  Navigate to the element you want to inspect, using the cursor in the screen reader.
 1.  Simulate a right-click on the element, to open the context menu.
-1.  Choose the **Inspect** option.  This [opens the Elements tool and focuses the element in the DOM Tree][DevtoolsDomIndexViewDomNodes].
+1.  Choose the **Inspect** option.  This [opens the Elements tool and focuses the element in the DOM Tree](../dom/index.md#view-dom-nodes).
 
-The **DOM Tree** is laid out as an [ARIA tree][W3CWaiAriaTree].  For an example, navigate to [Navigate the **DOM Tree** with a keyboard][DevtoolsDomIndexNavigateDomTreeKeyboard].
+The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  For an example, navigate to [Navigate the **DOM Tree** with a keyboard][DevtoolsDomIndexNavigateDomTreeKeyboard].
 
 ### Copy the code for an element in the DOM Tree
 
-1.  With focus on a node in the **DOM Tree**, hover on the node and open the contextual menu \(right-click\).
+1.  With focus on a node in the **DOM Tree**, hover on the node and open the contextual menu (right-click).
 1.  Expand the **Copy** option.
 1.  Choose **Copy outerHTML**.
 
@@ -140,9 +140,9 @@ The **DOM Breakpoints** and **Properties** tabs are not keyboard-accessible.
 
 ### Styles pane
 
-In the **Styles** pane find controls for filtering styles, toggling element states \(such as [:active][MDNActive] and [:focus][MDNFocus]\), toggling classes, and adding new classes.  There is also a powerful style inspection tool to explore and modify styles currently applied to the element that is in focus in the **DOM Tree**.
+In the **Styles** pane find controls for filtering styles, toggling element states (such as [:active](https://developer.mozilla.org/docs/Web/CSS/:active) and [:focus](https://developer.mozilla.org/docs/Web/CSS/:focus)), toggling classes, and adding new classes.  There is also a powerful style inspection tool to explore and modify styles currently applied to the element that is in focus in the **DOM Tree**.
 
-The key concept to understand about the **Styles** pane is that it only shows styles for the currently-selected node in the **DOM Tree**.  For example, suppose you are done inspecting the styles of a `<header>` node, and now you want to look at the styles for a `<footer>` node.  To do that, you first need to select the `<footer>` node in the **DOM Tree**.  You may find it faster to use the [Inspect](#inspect-an-element-on-the-page) workflow to inspect a node that is in the general vicinity of the `footer` node \(such as a link within the footer\), which focuses the **DOM Tree**, and then use your keyboard to navigate to the exact node in which you are interested.
+The key concept to understand about the **Styles** pane is that it only shows styles for the currently-selected node in the **DOM Tree**.  For example, suppose you are done inspecting the styles of a `<header>` node, and now you want to look at the styles for a `<footer>` node.  To do that, you first need to select the `<footer>` node in the **DOM Tree**.  You may find it faster to use the [Inspect](#inspect-an-element-on-the-page) workflow to inspect a node that is in the general vicinity of the `footer` node (such as a link within the footer), which focuses the **DOM Tree**, and then use your keyboard to navigate to the exact node in which you are interested.
 
 #### Navigate the Styles pane
 
@@ -156,7 +156,7 @@ Because all of the style tools connect in one way or another back to the **Style
 *   Select `Tab` to move between editable versions of each CSS property and the corresponding values.  At the end of each style block is a blank editable text field which you can use to add additional CSS properties.
 *   You can continue to select `Tab` to move through the list of styles, or select `Escape` to exit the mode and go back to navigating by arrow keys.
 
-For additional shortcuts, navigate to [Styles pane keyboard reference][DevtoolsShortcutsStylesPaneKeyboard].
+For additional shortcuts, navigate to [Styles pane keyboard reference](../shortcuts/index.md#styles-panel-keyboard-shortcuts).
 
 **Known issues**
 
@@ -191,7 +191,7 @@ With focus on the **Computed** tab, select `Tab` to move focus inside and explor
 
 #### Explore all computed styles
 
-Select `Tab` until you reach the collection of computed styles.  These are presented as an [ARIA tree][W3CWaiAriaTree].  Expanding a listbox reveals which CSS selectors are applying the computed style.  These selectors are organized by specificity.  A screen reader announces the computed value, which CSS selector is currently matching, the filename of the stylesheet that contains the selector, and the line number for the selector.
+Select `Tab` until you reach the collection of computed styles.  These are presented as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  Expanding a listbox reveals which CSS selectors are applying the computed style.  These selectors are organized by specificity.  A screen reader announces the computed value, which CSS selector is currently matching, the filename of the stylesheet that contains the selector, and the line number for the selector.
 
 **Known issues**
 
@@ -203,23 +203,22 @@ To inspect the event listeners that are applied to an element, select the **Elem
 
 #### Explore event listeners
 
-Event listeners are presented as an [ARIA tree][W3CWaiAriaTree].  You can use the arrow keys to navigate them.  A screen reader announces the name of the DOM object that the event listener is attached to, as well as the file name where the event listener is defined and the line number.
+Event listeners are presented as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  You can use the arrow keys to navigate them.  A screen reader announces the name of the DOM object that the event listener is attached to, as well as the file name where the event listener is defined and the line number.
 
 ### Accessibility tab
 
 Select the `Tab` key to move around within the **Accessibility** tab in the **Elements** tool.
 
-The **Accessibility** tab is near the **Styles** tab. On the Accessibility tab, there are controls for exploring the accessibility tree, the ARIA attributes applied to an element, and the computed accessibility properties.  For more information, navigate to [Test accessibility using the Accessibility tab][DevtoolsAccessibilityTab].
+The **Accessibility** tab is near the **Styles** tab. On the Accessibility tab, there are controls for exploring the accessibility tree, the ARIA attributes applied to an element, and the computed accessibility properties.  For more information, navigate to [Test accessibility using the Accessibility tab](accessibility-tab.md).
 
 #### Accessibility Tree
 
-The **Accessibility Tree** is presented as an [ARIA tree][W3CWaiAriaTree] where each `treeitem` corresponds to an element in the DOM.  The tree announces the computed role for the selected node.  Generic elements like `div` and `span` are announced as "GenericContainer" in the tree.  Use the arrow keys to traverse the tree and explore parent-child relationships.
+The **Accessibility Tree** is presented as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree) where each `treeitem` corresponds to an element in the DOM.  The tree announces the computed role for the selected node.  Generic elements like `div` and `span` are announced as "GenericContainer" in the tree.  Use the arrow keys to traverse the tree and explore parent-child relationships.
 
 **Known issues**
 
-*   The type of [ARIA tree][W3CWaiAriaTree] used by the **Accessibility** tab may not be properly exposed in Microsoft Edge for macOS screen readers like VoiceOver.  Subscribe to [Chromium issue #868480][ChromiumIssues868480]
-  to be informed about progress on this issue.
-*   Each of the **ARIA Attributes** and **Computed Properties** sections are marked up as an [ARIA tree][W3CWaiAriaTree], but each does not currently have focus management and is not keyboard operable.
+*   The type of [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree) used by the **Accessibility** tab may not be properly exposed in Microsoft Edge for macOS screen readers like VoiceOver.  Subscribe to [Chromium issue #868480](https://bugs.chromium.org/p/chromium/issues/detail?id=868480) to be informed about progress on this issue.
+*   Each of the **ARIA Attributes** and **Computed Properties** sections are marked up as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree), but each does not currently have focus management and is not keyboard operable.
 
 
 <!-- ====================================================================== -->
@@ -247,42 +246,9 @@ To run a new audit, use `Shift`+`Tab` to exit the report and select the **Genera
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsAccessibilityReference]: reference.md "Accessibility-testing features in DevTools | Microsoft Docs"
-[DevtoolsAccessibilityTab]: accessibility-tab.md "Test accessibility using the Accessibility tab | Microsoft Docs"
-[MicrosoftEdgeDevtoolsMain]: ../../devtools-guide-chromium/index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"
-[DevtoolsConsoleIndex]: ../console/index.md "Console Overview | Microsoft Docs"
-[DevtoolsCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"
-<!--[DevtoolsCssReferenceViewAppliedElement]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "CSS features reference - View only the CSS that is actually applied to an element | Microsoft Docs"  -->
-<!--[DevtoolsDomIndex]: ../dom/index.md "Get started with viewing and changing the DOM | Microsoft Docs"  -->
-[DevtoolsDomIndexViewDomNodes]: ../dom/index.md#view-dom-nodes "View DOM nodes - Get started with viewing and changing the DOM | Microsoft Docs"
-[DevtoolsDomIndexNavigateDomTreeKeyboard]: ../dom/index.md#navigate-the-dom-tree-with-a-keyboard "Navigate the DOM Tree with a keyboard - Get started with viewing and changing the DOM | Microsoft Docs"
-[DevtoolsOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsShortcuts]: ../shortcuts/index.md "Keyboard shortcuts | Microsoft Docs"
-[DevtoolsShortcutsStylesPaneKeyboard]: ../shortcuts/index.md#styles-panel-keyboard-shortcuts "Styles panel keyboard shortcuts - Keyboard shortcuts | Microsoft Docs"
-
-[ChromiumIssues868480]: https://bugs.chromium.org/p/chromium/issues/detail?id=868480 "Issue 868480 - Expose ARIA trees as tables in Mac accessibility"
-
-[GithubEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Docs%20Feedback%5D "New Issue - MicrosoftDocs/edge-developer | GitHub"
-
-[MDNActive]: https://developer.mozilla.org/docs/Web/CSS/:active ":active | MDN"
-[MDNFocus]: https://developer.mozilla.org/docs/Web/CSS/:focus ":focus | MDN"
-
-[MonorailChromiumIssues]: https://crbug.com "Issues - chromium - Monorail"
-
-[W3CWaiAriaTablist]: https://www.w3.org/TR/wai-aria-1.1/#tablist "tablist (role) - Accessible Rich Internet Applications (WAI-ARIA) 1.1 | W3C"
-[W3CWaiAriaTree]: https://www.w3.org/TR/wai-aria-1.1/#tree "tree (role) - Accessible Rich Internet Applications (WAI-ARIA) 1.1 | W3C"
-
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) and is authored by [Rob Dodson][RobDodson] \(Contributor, Google WebFundamentals\).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) and is authored by [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (Contributor, Google WebFundamentals).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[RobDodson]: https://developers.google.com/web/resources/contributors#rob-dodson
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

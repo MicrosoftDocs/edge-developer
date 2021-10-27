@@ -47,6 +47,8 @@ To maximize the size of the Sources tool, undock DevTools into a separate window
 
 To load the debugging demo webpage that's shown above, see [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger), below.
 
+
+<!-- ====================================================================== -->
 ## Using the Navigator pane to select files
 
 Use the **Navigator** pane (on the left) to navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.
@@ -112,7 +114,7 @@ In contrast, when you use a Workspace, changes that you make to your front-end c
 
 Workspaces work well when the JavaScript code that's returned by the server is the same as your local JavaScript source code.  Workspaces don't work as well when your workflow involves transformations on your source code, such as minification or [TypeScript][TypescriptlangMain] compilation.
 
-For more information, see the tutorial [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex].
+For more information, see the tutorial [Edit files with Workspaces][DevtoolsGuideWorkspacesIndex].
 
 ### Using the Overrides tab to override server files with local files
 
@@ -147,7 +149,7 @@ When the debugger steps into code that you don't recognize, you might want to ma
 #### See also
 
 *   [Content scripts][MDNContentScripts]
-*   [Create an extension tutorial Part 2][ExtensionsChromiumGetstartPart2ContentScripts]
+*   [Create an extension tutorial Part 2][ExtensionsGetstartPart2ContentScripts]
 
 ### Using the Snippets tab to run JavaScript code snippets on any webpage
 
@@ -167,17 +169,17 @@ script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
 document.head.appendChild(script);
 ```
 
-Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.  When you select `Ctrl`+`S` \(Windows/Linux\) or `Command`+`S` \(macOS\), DevTools saves the **Snippet** to your file system.
+Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.  When you select `Ctrl`+`S` (Windows/Linux) or `Command`+`S` (macOS), DevTools saves the **Snippet** to your file system.
 
 There are multiple ways to run a Snippet:
-*   In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** \(![The Run button](../media/run-snippet-icon.msft.png)\).
-*   When DevTools has focus, select `Ctrl`+`P` \(Windows/Linux\) or `Command`+`P` \(macOS\) to open the [Command Menu][DevToolsCommandMenuIndex], and then type `!`.
+*   In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** (![The Run button](../media/run-snippet-icon.msft.png)).
+*   When DevTools has focus, select `Ctrl`+`P` (Windows/Linux) or `Command`+`P` (macOS) to open the [Command Menu][DevToolsCommandMenuIndex], and then type `!`.
 
 Snippets are similar to bookmarklets.
 
 #### See also
 
-*   [Run snippets of JavaScript on any webpage with Microsoft Edge DevTools][DevtoolsGuideChromiumJavascriptSnippets]
+*   [Run snippets of JavaScript on any webpage with Microsoft Edge DevTools][DevtoolsGuideJavascriptSnippets]
 
 ### Using the Command Menu to open files
 
@@ -196,6 +198,8 @@ If you type `?`, the Command Menu shows several commands, including **... Open f
 
 For more information, see [Run commands with the Microsoft Edge DevTools Command Menu][DevToolsCommandMenuIndex].
 
+
+<!-- ====================================================================== -->
 ## Using the Editor pane to view or edit files
 
 Use the **Editor** pane to view the front-end files that are returned from the server to compose the current webpage, including JavaScript, HTML, CSS, and image files.  When you edit the front-end files in the **Editor** pane, DevTools updates the webpage to run the modified code.
@@ -233,17 +237,17 @@ To edit a JavaScript file in DevTools, use the **Editor** pane, within the **Sou
    Editing JavaScript in the **Editor** pane
 :::image-end:::
 
-To load a file into the Editor pane, use the **Page** tab in the **Navigator** pane (on the left).  Or use the **Command Menu**, as follows: in the upper right of DevTools, select **Customize and control DevTools** \(`...`\) and then select **Open File**.
+To load a file into the Editor pane, use the **Page** tab in the **Navigator** pane (on the left).  Or use the **Command Menu**, as follows: in the upper right of DevTools, select **Customize and control DevTools** (`...`) and then select **Open File**.
 
 #### Save and Undo
 
-For JavaScript changes to take effect, select `Ctrl`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\).
+For JavaScript changes to take effect, select `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS).
 
 If you change a file, an asterisk appears next to the file name.
 *   To save changes, select `Ctrl`+`S` on Windows/Linux or `Command`+`S` on macOS.
 *   To undo a change, select `Ctrl`+`Z` on Windows/Linux or `Command`+`Z` on macOS.
 
-By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex].
+By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit files with Workspaces][DevtoolsGuideWorkspacesIndex].
 
 #### Find and Replace
 
@@ -280,7 +284,7 @@ After submitting the form, `console.log('A')`, which is at global scope, doesn't
 
 ### Reformatting a minified JavaScript file with pretty-print
 
-To use pretty-print to reformat a file to make it readable, select the **Pretty print** button \(![Format](../media/format-icon.msft.png)\), which is shown as braces, at the bottom of the Editor pane.  Or, if a **Pretty-print** button appears at the top of the Editor pane, you can select that button.
+To use pretty-print to reformat a file to make it readable, select the **Pretty print** button (![Format](../media/format-icon.msft.png)), which is shown as braces, at the bottom of the Editor pane.  Or, if a **Pretty-print** button appears at the top of the Editor pane, you can select that button.
 
 :::image type="complex" source="../media/minified.msft.png" alt-text="The Pretty print button" lightbox="../media/minified.msft.png":::
    The **Pretty print** button
@@ -323,7 +327,7 @@ There are two ways to edit CSS in DevTools:
 *   In the **Elements** tool, you work with one CSS setting at a time, through user interface controls.  This approach is recommended in most cases.  For more information, see [Edit CSS font styles and settings in the Styles pane][DevToolsInspectStylesEditFonts].
 *   In the **Sources** tool, you use a text editor.
 
-The Sources tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit files with Workspaces][DevtoolsGuideChromiumWorkspacesIndex] to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
+The Sources tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit files with Workspaces][DevtoolsGuideWorkspacesIndex] to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
 
 ```css
 h1 {
@@ -386,10 +390,12 @@ For more information, see [Run commands with the Microsoft Edge DevTools Command
 The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  Use the **Quick Sources** tool in the [Drawer][DevtoolsCustomizeIndexDrawer].
 
 1.  Select a tool other than the **Sources** tool, such as the **Elements** tool.
-1.  Select `Ctrl`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  The Command Menu opens.
+1.  Select `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  The Command Menu opens.
 1.  Type `Quick Source`, and then select **Show Quick Source**.  At the bottom of the DevTools window, the Drawer appears, with the **Quick Source** panel selected.  The **Quick Source** panel contains the last file you edited in the **Sources** tool, within a compact version of the DevTools code editor.
-1.  Select `Ctrl`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.
+1.  Select `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog.
 
+
+<!-- ====================================================================== -->
 ## Using the Debugger pane to debug JavaScript code
 
 Use the JavaScript debugger to step through the JavaScript code that's returned by the server.
@@ -422,7 +428,7 @@ To troubleshoot JavaScript code, you can insert `console.log()` statements in th
 
 To use a debugger on a webpage, you typically set a breakpoint and then send a form from the webpage, as follows:
 
-1.  Open the webpage in a new tab of the browser.  For example, open this form webpage in a new tab: [Demo: Get Started Debugging JavaScript with Microsoft Edge (Chromium) DevTools][DevtoolsGlitchMeDebugJsGetStarted].
+1.  Open the webpage in a new tab of the browser.  For example, open this form webpage in a new tab: [Demo: Get Started Debugging JavaScript with Microsoft Edge DevTools][DevtoolsGlitchMeDebugJsGetStarted].
 
 1.  Select `F12` to open the **DevTools** window, and then select the **Sources** tab.
 
@@ -446,7 +452,7 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
 
 #### See also
 
-*   [Get started with debugging JavaScript][DevtoolsGuideChromiumJavascriptIndex] - a tutorial using an existing, simple webpage that contains a few form controls.
+*   [Get started with debugging JavaScript][DevtoolsGuideJavascriptIndex] - a tutorial using an existing, simple webpage that contains a few form controls.
 
 ### Advantages of the debugger\'s Watch and Scope over console\.log
 
@@ -478,7 +484,7 @@ For more information, see [Visual Studio Code overview][DevToolsVSCodeIndex] and
 
 The following articles cover the **Debugger** pane and breakpoints:
 
-*   [Get started with debugging JavaScript in Microsoft Edge DevTools][DevtoolsGuideChromiumJavascriptIndex] - A tutorial (with screen captures), using an existing, simple project.
+*   [Get started with debugging JavaScript in Microsoft Edge DevTools][DevtoolsGuideJavascriptIndex] - A tutorial (with screen captures), using an existing, simple project.
 
 *   [Use the debugger features][DevToolsJavaScriptReference] - How to use the debugger to set breakpoints, step through code, view and modify variable values, watch JavaScript expressions, and view the call stack.
 
@@ -492,9 +498,9 @@ The following articles cover the **Debugger** pane and breakpoints:
 [DevToolsCommandMenuIndex]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"
 [DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"
 [DevToolsCustomizePlacement]: ../customize/placement.md "Change DevTools placement (Undock, Dock to bottom, Dock to left) | Microsoft Docs"
-[DevtoolsGuideChromiumJavascriptIndex]: ../javascript/index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsGuideChromiumJavascriptSnippets]: ../javascript/snippets.md "Run snippets of JavaScript on any webpage with Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsGuideChromiumWorkspacesIndex]: ../workspaces/index.md "Edit files with Workspaces | Microsoft Docs"
+[DevtoolsGuideJavascriptIndex]: ../javascript/index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsGuideJavascriptSnippets]: ../javascript/snippets.md "Run snippets of JavaScript on any webpage with Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsGuideWorkspacesIndex]: ../workspaces/index.md "Edit files with Workspaces | Microsoft Docs"
 [DevToolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Edit CSS font styles and settings in the Styles pane | Microsoft Docs"
 [DevToolsJavaScriptBreakpoints]: ../javascript/breakpoints.md "Pause your code with breakpoints | Microsoft Docs"
 [DevToolsJavaScriptGuidesMarkContentScriptsLibraryCode]: ../javascript/guides/mark-content-scripts-library-code.md "Mark content scripts as Library code | Microsoft Docs"
@@ -503,12 +509,12 @@ The following articles cover the **Debugger** pane and breakpoints:
 [DevToolsJavaScriptReferenceReformat]: ../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print "Reformat a minified JavaScript file with pretty-print - Use the debugger features | Microsoft Docs"
 [DevToolsJavaScriptSourceMaps]: ../javascript/source-maps.md "Map preprocessed code to source code | Microsoft Docs"
 [DevToolsVSCodeIndex]: ../../visual-studio-code/index.md "Visual Studio Code overview | Microsoft Docs"
-[ExtensionsChromiumGetstartPart2ContentScripts]: ../../extensions-chromium/getting-started/part2-content-scripts.md "Create an extension tutorial Part 2 | Microsoft Docs"
+[ExtensionsGetstartPart2ContentScripts]: ../../extensions-chromium/getting-started/part2-content-scripts.md "Create an extension tutorial Part 2 | Microsoft Docs"
 <!-- external: -->
 [CodeVisualStudioComDocsEditorDebugging]: https://code.visualstudio.com/docs/editor/debugging "Debugging - Visual Studio Code | Microsoft Docs"
 [DMCVisualStudioDebuggerNavigatingThroughCodeWithTheDebugger]: /visualstudio/debugger/navigating-through-code-with-the-debugger "Navigate through code with the Visual Studio debugger | Microsoft Docs"
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "Microsoft Edge Developer Tools for Visual Studio Code | GitHub"
-[DevtoolsGlitchMeDebugJsGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "Demo: Get Started Debugging JavaScript with Microsoft Edge (Chromium) DevTools | Microsoft Docs"
+[DevtoolsGlitchMeDebugJsGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "Demo: Get Started Debugging JavaScript with Microsoft Edge DevTools | Microsoft Docs"
 [HtmlstandardOrigin]: https://html.spec.whatwg.org/multipage/origin.html#origin "Origin | HTML Standard"
 [W3CHtml4Frames]: https://w3.org/TR/html401/present/frames.html "Frames | W3C"
 [MDNContentScripts]: https://developer.mozilla.org/Add-ons/WebExtensions/Content_scripts "Content scripts | MDN"
@@ -518,7 +524,7 @@ The following articles cover the **Debugger** pane and breakpoints:
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/sources) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/sources) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

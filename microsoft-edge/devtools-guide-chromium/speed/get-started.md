@@ -23,15 +23,21 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Optimize website speed with Microsoft Edge DevTools
 
+
+<!-- ====================================================================== -->
 ## Goal of tutorial
 
 This tutorial teaches you how to use Microsoft Edge DevTools to find ways to make your websites load faster.
 
+
+<!-- ====================================================================== -->
 ## Prerequisites
 
 *   You should have basic web development experience, similar to what is taught in this [Introduction to Web Development class][CourseraIntroductionWebDevelopmentClass].
 *   You do not need to know anything about load performance.  You learn about it in this tutorial.
 
+
+<!-- ====================================================================== -->
 ## Introduction
 
 This is Tony.  Tony is very famous in cat society.  He has built a website so that his fans are able to learn about his favorite foods.  His fans love the site, but Tony keeps hearing complaints that the site loads slowly.  Tony has asked you to help him speed the site up.
@@ -40,6 +46,8 @@ This is Tony.  Tony is very famous in cat society.  He has built a website so th
    Tony the cat
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 1: Audit the site
 
 Whenever you set out to improve the load performance of a site, **always start with an audit**.
@@ -71,13 +79,13 @@ First, you must set up the site so that you are able to make changes to it later
        The demo tab
     :::image-end:::
 
-1.  Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).  Microsoft Edge DevTools opens up alongside the demo.
+1.  Select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  Microsoft Edge DevTools opens up alongside the demo.
 
     :::image type="complex" source="../media/speed-glitch-tony-show-live-console.msft.png" alt-text="DevTools and the demo" lightbox="../media/speed-glitch-tony-show-live-console.msft.png":::
        DevTools and the demo
     :::image-end:::
 
-For the rest of the screenshots in this tutorial, DevTools is shown in a separate window.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, typing `Undock`, and then selecting **Undock into separate window**.
+For the rest of the screenshots in this tutorial, DevTools is shown in a separate window.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu, typing `Undock`, and then selecting **Undock into separate window**.
 
 :::image type="complex" source="../media/speed-console.msft.png" alt-text="Undocked DevTools" lightbox="../media/speed-console.msft.png":::
    Undocked DevTools
@@ -87,7 +95,7 @@ For the rest of the screenshots in this tutorial, DevTools is shown in a separat
 
 The baseline is a record of how the site performed before you made any performance improvements.
 
-1.  Choose the **Audits** tool.  It may be hidden behind the **More Panels** \(![More Panels](../media/more-panels-icon.msft.png)\) button.  There is a Lighthouse on this panel because the project that powers the Audits panel is named **Lighthouse**.
+1.  Choose the **Audits** tool.  It may be hidden behind the **More Panels** (![More Panels](../media/more-panels-icon.msft.png)) button.  There is a Lighthouse on this panel because the project that powers the Audits panel is named **Lighthouse**.
 
     [!INCLUDE [audits-panel-note](../includes/audits-panel-note.md)]
 
@@ -178,6 +186,8 @@ The **Passed Audits** section shows you what the site is doing correctly.  Choos
    The **Passed Audits** section
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 2: Experiment
 
 The Opportunities section of your audit report gives you tips on how to improve the performance of the page.  In this section, you implement the recommended changes to the codebase, auditing the site after each change to measure how it affects site speed.
@@ -271,7 +281,7 @@ Use the workflows that you learned earlier to manually check that the compressio
 Audit the page again to measure what kind of impact text compression has on the load performance of the page:
 
 1.  Choose the **Audits** tool.
-1.  Choose **Perform an audit** \(![Perform an audit](../media/perform-icon.msft.png)\).
+1.  Choose **Perform an audit** (![Perform an audit](../media/perform-icon.msft.png)).
 1.  Leave the settings the same as before.
 1.  Choose **Run audit**.
 
@@ -336,7 +346,7 @@ The first task, then, is to find code that you do not need to run on page load.
        More information about the **Eliminate render-blocking resources** opportunity
     :::image-end:::
 
-1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu, start typing `Coverage`, and then choose **Show Coverage**.
+1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu, start typing `Coverage`, and then choose **Show Coverage**.
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="Open the Command Menu from the Audits panel" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
        Open the Command Menu from the **Audits** panel
@@ -346,7 +356,7 @@ The first task, then, is to find code that you do not need to run on page load.
        The **Coverage** tool
     :::image-end:::
 
-1.  Choose **Refresh** \(![Refresh](../media/reload-icon.msft.png)\).  The **Coverage** tool provides an overview of how much of the code in `bundle.js`, `jquery.js`, and `lodash.js` runs while the page loads.  In the figure after the following, about 76% and 30% of the jQuery and Lodash files are not used, respectively.
+1.  Choose **Refresh** (![Refresh](../media/reload-icon.msft.png)).  The **Coverage** tool provides an overview of how much of the code in `bundle.js`, `jquery.js`, and `lodash.js` runs while the page loads.  In the figure after the following, about 76% and 30% of the jQuery and Lodash files are not used, respectively.
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="The Coverage report" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
        The Coverage report
@@ -365,14 +375,14 @@ In short, when you are working with your own code, the **Coverage** tool helps y
 Are the `jquery.js` and `lodash.js` files even needed to load the page?  The **Request blocking** tool displays what happens when resources are not available.
 
 1.  Choose the **Network** tool.
-1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the Command Menu again.
+1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu again.
 1.  Start typing `blocking` and then choose **Show Request Blocking**.
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="The Request blocking tool" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::
        The **Request blocking** tool
     :::image-end:::
 
-1.  Choose **Add Pattern** \(![Add Pattern](../media/add-pattern-icon.msft.png)\), type `/libs/*`, and then select `Enter` to confirm.
+1.  Choose **Add Pattern** (![Add Pattern](../media/add-pattern-icon.msft.png)), type `/libs/*`, and then select `Enter` to confirm.
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png" alt-text="Add a pattern to block any request to the libs directory" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png":::
        Add a pattern to block any request to the `libs` directory
@@ -384,7 +394,7 @@ Are the `jquery.js` and `lodash.js` files even needed to load the page?  The **R
        The **Network** tool shows that the requests have been blocked
     :::image-end:::
 
-1.  Choose **Remove all patterns** \(![Remove all patterns](../media/remove-icon.msft.png)\) to delete the `/libs/*` blocking pattern.
+1.  Choose **Remove all patterns** (![Remove all patterns](../media/remove-icon.msft.png)) to delete the `/libs/*` blocking pattern.
 
 In general, the **Request blocking** tool is useful for simulating how your page behaves when any given resource is not available.
 
@@ -419,9 +429,9 @@ The main thread is where the browser does most of the work needed to display a p
 The goal is to use the Performance panel to analyze what work the main thread is doing while the page loads, and find ways to defer or remove unnecessary work.
 
 1.  Choose the **Performance** tool.
-1.  Choose **Capture Settings** \(![Capture Settings](../media/capture-icon.msft.png)\).
+1.  Choose **Capture Settings** (![Capture Settings](../media/capture-icon.msft.png)).
 1.  Set **Network** to **Slow 3G** and **CPU** to **6x slowdown**.  Mobile devices typically have more hardware constraints than laptops or desktops, so these settings let you experience the page load as if you were using a less powerful device.
-1.  Choose **Refresh** \(![Refresh](../media/reload-icon.msft.png)\).  DevTools refreshes the page and then produces a visualization of all the work performed in order to load the page.  This visualization is referred to as the **trace**.
+1.  Choose **Refresh** (![Refresh](../media/reload-icon.msft.png)).  DevTools refreshes the page and then produces a visualization of all the work performed in order to load the page.  This visualization is referred to as the **trace**.
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="The Performance tool trace of the page load" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
        The **Performance** tool trace of the page load
@@ -500,6 +510,8 @@ In general, the **Performance** tool is the most common way to understand what a
 
 If you prefer an approach that feels more like `console.log()`, the [User Timing API][MDNUserTimingApi] enables you to arbitrarily mark up certain phases of your app lifecycle, in order to track how long each of those phases takes.
 
+
+<!-- ====================================================================== -->
 ## Summary
 
 *   Whenever you set out to optimize the load performance of a site, always start with an audit.  The audit establishes a baseline, and gives you tips on how to improve.
@@ -530,7 +542,7 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/speed/get-started) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/speed/get-started) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

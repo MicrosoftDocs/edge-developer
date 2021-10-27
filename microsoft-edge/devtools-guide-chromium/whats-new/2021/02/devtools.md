@@ -26,12 +26,14 @@ ms.localizationpriority: high
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
+
+<!-- ====================================================================== -->
 ## Group tools together in Focus Mode
 
 <!-- Title: Grouping the tools in Focus Mode  -->
 <!-- Subtitle: Organize your favorite tools into groups with the new Focus Mode UI.  -->
 
-Focus Mode is an experimental interface that allows you to group different tools together based on your own debugging scenarios.  The new **Activity Bar** displayed on the left includes predefined tool groups such as **Layout** and **Debugging**.  To customize each tool group, close tools with the **Close** \(`X`\) icon or add new tools with the **More tools** \(`+`\) icon.
+Focus Mode is an experimental interface that allows you to group different tools together based on your own debugging scenarios.  The new **Activity Bar** displayed on the left includes predefined tool groups such as **Layout** and **Debugging**.  To customize each tool group, close tools with the **Close** (`X`) icon or add new tools with the **More tools** (`+`) icon.
 
 To turn on the experiment, navigate to [Turning on experimental features][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].
 
@@ -39,17 +41,21 @@ To turn on the experiment, navigate to [Turning on experimental features][Devtoo
    Display the **Activity Bar**
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Learn about DevTools with informative tooltips
 
 <!-- Title: DevTools Tooltips  -->
 <!-- Subtitle: Learn more about how to use DevTools with informative DevTools tooltips.  -->
 
-The DevTools Tooltips feature helps you learn about all the different tools and panes.  Choose the Help \(`?`\) icon at the bottom of the **Activity Bar** to toggle tooltips in the DevTools.  When tooltips are on, hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on the experiment, navigate to [Turning on experimental features][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].
+The DevTools Tooltips feature helps you learn about all the different tools and panes.  Choose the Help (`?`) icon at the bottom of the **Activity Bar** to toggle tooltips in the DevTools.  When tooltips are on, hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on the experiment, navigate to [Turning on experimental features][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures] and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI][GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer].
 
 :::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="Choose the Help (?) icon in the Activity Bar to display tooltips" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
-   Choose the Help \(`?`\) icon in the **Activity Bar** to display tooltips
+   Choose the Help (`?`) icon in the **Activity Bar** to display tooltips
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Customize keyboard shortcuts in Settings
 
 <!-- Title: Change keyboard shortcuts in Settings  -->
@@ -60,9 +66,9 @@ You may now customize the keyboard shortcut for any action in the DevTools.  To 
 
 1.  Open the DevTools, and then choose **Settings** > **Shortcuts**.
 1.  Choose the action you want to customize.
-1.  Choose the Edit \(![Edit Keyboard Shortcut icon](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)\) icon.
+1.  Choose the Edit (![Edit Keyboard Shortcut icon](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)) icon.
 1.  Select the keys you want to bind to the action.
-1.  Choose the checkmark \(![Checkmark Keyboard Shortcut icon](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)\) icon.
+1.  Choose the checkmark (![Checkmark Keyboard Shortcut icon](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)) icon.
 
 For more information about customizing and editing shortcuts, navigate to [Customize keyboard shortcuts in DevTools][DevtoolsCustomizeShortcuts].  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [174309][CR174309].
 
@@ -70,6 +76,8 @@ For more information about customizing and editing shortcuts, navigate to [Custo
    Customize keyboard shortcuts in the [DevTools Settings][DevtoolsCustomizeIndexSettings] on Shortcuts with a shortcut in edit mode
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Microsoft Edge DevTools for Visual Studio Code extension update 1.1.4
 
 <!-- Title: Edge Devtools for Visual Studio code extension update 1.1.4  -->
@@ -98,12 +106,14 @@ The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketpl
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Improved CSS flexbox editing with visual flexbox editor and multiple overlays
 
 <!-- Title: Try different CSS flexbox layouts with the visual flexbox editor  -->
 <!-- Subtitle: In the Styles pane, choose the icon that appears next to display: flex to try different layout properties for flex containers.  -->
 
-DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` or `display: inline-flex` CSS style is applied to an HTML element, a `flex` icon displays next to that element in the **Elements** tool.  To display \(or hide\) a flex overlay on the webpage, choose the `flex` icon.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1166710][CR1166710] and [1175699][CR1175699].
+DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` or `display: inline-flex` CSS style is applied to an HTML element, a `flex` icon displays next to that element in the **Elements** tool.  To display (or hide) a flex overlay on the webpage, choose the `flex` icon.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1166710][CR1166710] and [1175699][CR1175699].
 
 :::row:::
    :::column span="":::
@@ -126,6 +136,8 @@ DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` 
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Keyboard navigation improvements for network requests
 
 <!-- Title: Navigate the request initiator chain in the Network tool with the keyboard  -->
@@ -148,6 +160,8 @@ In Microsoft Edge version 90, you may expand or collapse the chain of requests u
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Filtering in the Console is more consistent
 
 <!-- Title: Console improvements make filtering more consistent  -->
@@ -168,16 +182,18 @@ While you filter with the [Console Sidebar][DevtoolsConsoleReferenceOpenConsoleS
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
 
 ### The Console now escapes double quote characters
 
-Previously, the **Console** did not output valid double quote \(`"`\) characters in JavaScript strings.  Starting in Microsoft Edge version 90, the **Console** outputs JavaScript strings using escaped double quote \(`"`\) characters.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1178530][CR1178530].
+Previously, the **Console** did not output valid double quote (`"`) characters in JavaScript strings.  Starting in Microsoft Edge version 90, the **Console** outputs JavaScript strings using escaped double quote (`"`) characters.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1178530][CR1178530].
 
 :::image type="complex" source="../../media/2021/02/console-string-formatted-double-quotes.msft.png" alt-text="The Console outputs JavaScript strings using escaped double quote (&#0022;) characters" lightbox="../../media/2021/02/console-string-formatted-double-quotes.msft.png":::
-   The **Console** outputs JavaScript strings using escaped double quote \(`"`\) characters
+   The **Console** outputs JavaScript strings using escaped double quote (`"`) characters
 :::image-end:::
 
 ### Emulate the CSS color-gamut media feature
@@ -223,7 +239,7 @@ To review the history of this feature in the Chromium open-source project, navig
 The new **Remote Address Space** column displays the network IP address space of each network resource.  To display the new Remote Address Space column, complete the following actions.
 
 1.  Navigate to the **Network** tool.
-1.  In the Requests table, hover on the header row, and open the contextual menu \(right-click\).  To learn how to add or remove columns from the Requests table, navigate to [Add or remove columns][DevtoolsNetworkReferenceAddRemoveColumns].
+1.  In the Requests table, hover on the header row, and open the contextual menu (right-click).  To learn how to add or remove columns from the Requests table, navigate to [Add or remove columns][DevtoolsNetworkReferenceAddRemoveColumns].
 1.  Choose **Remote Address Space**.
 
 The Requests table now displays a new column with the header named **Remote Address Space**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1128885][CR1128885].
@@ -243,7 +259,7 @@ The Requests table now displays a new column with the header named **Remote Addr
 
 ### Display allowed and disallowed features in the Frame details view
 
-The Frame details view now displays a list of allowed and disallowed browser features controlled by the [Permissions Policy][GithubW3cWebappsecPermissionsPolicyBlobMainPermissionsPolicyExplainer].  Permissions Policy is a web platform API that allows \(or blocks\) a webpage the use of browser features in an individual frame or in iframes that it embeds.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1158827][CR1158827].
+The Frame details view now displays a list of allowed and disallowed browser features controlled by the [Permissions Policy][GithubW3cWebappsecPermissionsPolicyBlobMainPermissionsPolicyExplainer].  Permissions Policy is a web platform API that allows (or blocks) a webpage the use of browser features in an individual frame or in iframes that it embeds.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1158827][CR1158827].
 
 :::image type="complex" source="../../media/2021/02/application-frames-permissions-policy.msft.png" alt-text="Allowed and disallowed features based on the Permission Policy" lightbox="../../media/2021/02/application-frames-permissions-policy.msft.png":::
    Allowed and disallowed features based on the Permission Policy
@@ -290,6 +306,8 @@ To turn on the experiment, navigate to [Turning on experimental features][Devtoo
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
@@ -352,7 +370,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-90) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-90) and is authored by [Jecelyn Yeen][JecelynYeen] (Developer advocate, Chrome DevTools).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

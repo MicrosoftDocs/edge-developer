@@ -14,6 +14,8 @@ Sometimes you need to try out some possible fixes for a webpage, but you don't h
 
 You may now take a resource of the current webpage and store it locally.  When you refresh the webpage, the browser does not load the resource from the server.  Instead the browser replaces it with your local copy of the resource.
 
+
+<!-- ====================================================================== -->
 ## Setting up your local folder to store Overrides
 
 1.  Navigate to the **Sources** tool.
@@ -51,6 +53,8 @@ You may now take a resource of the current webpage and store it locally.  When y
        Successful setup of an overrides folder
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Adding files to your Overrides folder
 
 To add files to your overrides folder, open the **Elements** tool and inspect the webpage.  To edit, choose the name of the CSS file in the **Styles** inspector.
@@ -59,7 +63,7 @@ To add files to your overrides folder, open the **Elements** tool and inspect th
    Choose a file in the **Styles** inspector
 :::image-end:::
 
-On the **Sources** editor, hover on the file name of your chosen file, open the contextual menu \(right-click\), and choose **Save for overrides**.
+On the **Sources** editor, hover on the file name of your chosen file, open the contextual menu (right-click), and choose **Save for overrides**.
 
 :::image type="complex" source="../media/javascript-overrides-file-name.msft.png" alt-text="In the Sources editor, add the name of the file to overrides" lightbox="../media/javascript-overrides-file-name.msft.png":::
    In the **Sources** editor, add the name of the file to overrides
@@ -94,14 +98,14 @@ The file is stored in your overrides folder.  Verify that DevTools create a fold
 
 :::row:::
    :::column span="":::
-      On the **Sources** tool, in the **Page** section, hover on any file, open the contextual menu \(right-click\), and add it to overrides.  Again, files that are already in your overrides folder have a purple dot on the icon.
+      On the **Sources** tool, in the **Page** section, hover on any file, open the contextual menu (right-click), and add it to overrides.  Again, files that are already in your overrides folder have a purple dot on the icon.
 
       :::image type="complex" source="../media/javascript-overrides-safe-from-sources.msft.png" alt-text="Choose a file from the Sources tool for overrides" lightbox="../media/javascript-overrides-safe-from-sources.msft.png":::
          Choose a file from the **Sources** tool for overrides
       :::image-end:::
    :::column-end:::
    :::column span="":::
-      Alternatively, on the **Network** tool, hover on any file, open the contextual menu \(right-click\), and add it to overrides.  When overrides are in effect, files that are located on your computer and not from the live webpage.  When overrides are in effect, on the **Network** tool, locate a warning icon next to the file name.
+      Alternatively, on the **Network** tool, hover on any file, open the contextual menu (right-click), and add it to overrides.  When overrides are in effect, files that are located on your computer and not from the live webpage.  When overrides are in effect, on the **Network** tool, locate a warning icon next to the file name.
 
       :::image type="complex" source="../media/javascript-overrides-network.msft.png" alt-text="Choose a file from the Network tool for overrides" lightbox="../media/javascript-overrides-network.msft.png":::
          Choose a file from the **Network** tool for overrides
@@ -109,6 +113,8 @@ The file is stored in your overrides folder.  Verify that DevTools create a fold
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Two-way interaction of overrides
 
 Use the editor provided with the **Sources** tool of DevTools or any editor you want to change the files.  Changes are synced across all the products that access the files in the overrides folder.

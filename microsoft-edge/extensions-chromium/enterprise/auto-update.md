@@ -36,6 +36,8 @@ Now, the Microsoft Edge Add-ons website hosts your extensions and you update you
 > [!NOTE]
 > This article does not apply to extensions that you publish using the [Partner Center][MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd] dashboard.  You may use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons website.  For more information, navigate to [Update a Microsoft Edge extension][ExtensionsPublishUpdateExtension].
 
+
+<!-- ====================================================================== -->
 ## Overview
 
 Every few hours, Microsoft Edge checks whether each installed extension or app has an update URL.  To specify an update URL for your extension, use the `update_url` field in the manifest.  The `update_url` field in the manifest points to a location to complete an update check.  For each `update_url`, it sends requests for updated manifest XML files.  If the update manifest XML file lists a newer version than that installed, Microsoft Edge downloads and installs the newer version.  The same process works for manual updates, where the new `.crx` file must be signed with the same private key as the currently installed version.
@@ -43,6 +45,8 @@ Every few hours, Microsoft Edge checks whether each installed extension or app h
 > [!NOTE]
 > In order to maintain user privacy, Microsoft Edge does not send any `Cookie` headers with auto-update manifest requests, and ignores any `Set-Cookie` headers in the responses to those requests.
 
+
+<!-- ====================================================================== -->
 ## Update URL
 
 If you host your own extension or app, you must add the `update_url` field to your `manifest.json` file.  Review the following code snippet for an example of the `update_url`.
@@ -56,6 +60,8 @@ If you host your own extension or app, you must add the `update_url` field to yo
 }
 ```
 
+
+<!-- ====================================================================== -->
 ## Update manifest
 
 The updated manifest returned by the server should be an XML document.  Review the following code snippet for an example of the updated manifest XML file.
@@ -79,10 +85,14 @@ The following table describes attributes of the updated manifest XML file.
 
 The update manifest XML file may contain information about multiple extensions by including multiple elements.
 
+
+<!-- ====================================================================== -->
 ## Testing
 
 The default update check frequency is several hours.  To force an update, navigate to `edge://extensions` and choose the **Update extensions now** button.
 
+
+<!-- ====================================================================== -->
 ## Advanced usage: request parameters
 
 The basic mechanism is simple.  To automatically update your extension:
@@ -137,6 +147,8 @@ If you send a single request and the number of installed extensions that use the
 > [!NOTE]
 > In the future, a single `POST` request may replace multiple `GET` requests.  The `POST` request may contain the request parameters in the `POST` body.
 
+
+<!-- ====================================================================== -->
 ## Advanced usage: minimum browser version
 
 As new APIs release for the Microsoft Edge extensions system, you may release an updated version of your extension or app that only works with newer Microsoft Edge versions.  When Microsoft Edge is automatically updated, it may take a few days before most of your users update to that new release.

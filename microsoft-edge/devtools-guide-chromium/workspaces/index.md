@@ -32,6 +32,8 @@ This tutorial provides hands-on practice in setting up and using a Workspace.  A
 > *   [Use DevTools to make basic changes to CSS][DevToolsCssIndex]
 > *   [Run a local HTTP web server][MDNSimpleLocalHTTPServer]
 
+
+<!-- ====================================================================== -->
 ## Overview
 
 Workspaces enable you to save a change that you make in Devtools to a local copy of the same file on your computer.  For this tutorial, you should have the following settings on your machine.
@@ -42,6 +44,8 @@ Workspaces enable you to save a change that you make in Devtools to a local copy
 
 With Workspaces enabled, the CSS changes that you make within DevTools are saved to the source code on your desktop.
 
+
+<!-- ====================================================================== -->
 ## Limitations
 
 If you are using a modern framework, it probably transforms your source code from a format that is easy to maintain into a format that is optimized to run as quickly as possible.
@@ -54,12 +58,16 @@ Workspaces is known to not work with the following framework.
 
     <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
 
+
+<!-- ====================================================================== -->
 ## Related feature: Local overrides
 
 **Local Overrides** is another DevTools feature that is similar to Workspaces.  Use Local Overrides when you want to experiment with changes to a webpage, and you need to display the changes across webpage loads, but you do not care about mapping your changes to the source code of the webpage.
 
 <!--Todo: add section when content is ready  -->
 
+
+<!-- ====================================================================== -->
 ## Step 1: Set up
 
 Complete the following actions, to get hands-on experience with Workspaces.
@@ -109,7 +117,7 @@ Complete the following actions, to get hands-on experience with Workspaces.
 
 ### Set up DevTools
 
-1.  Select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\) to open the **Console** panel of DevTools.
+1.  Select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS) to open the **Console** panel of DevTools.
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="The Console panel" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        The **Console** panel
@@ -131,6 +139,8 @@ Complete the following actions, to get hands-on experience with Workspaces.
        The **Filesystem** tab now indicates a mapping between the local files and the network ones
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 2: Save a CSS change to disk
 
 1.  Open `styles.css`.
@@ -153,6 +163,8 @@ Complete the following actions, to get hands-on experience with Workspaces.
 1.  Open `styles.css` in a text editor again.  The `color` property is now set to your favorite color.
 1.  Refresh the page.  The color of the `<h1>` element is still set to your favorite color.  The change remains across a refresh, because when you made the change DevTools saved the change to disk.  And then, when you refreshed the page, your local server served the modified copy of the file from disk.
 
+
+<!-- ====================================================================== -->
 ## Step 3: Save an HTML change to disk
 
 ### Change HTML from the Elements Panel
@@ -199,7 +211,7 @@ If you want to save a change to the HTML of the webpage, use the **Sources** too
 1.  In the **Navigator** pane (on the left), choose the **Page** tab.
 1.  Choose **(index)**.  The HTML for the page opens.
 1.  Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  Review the following figure.
-1.  Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.
+1.  Select `Control`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change.
 1.  Refresh the page.  The `<h1>` element continues to display the new text after the page is refreshed.
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Change HTML from the Sources tool" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
@@ -208,6 +220,8 @@ If you want to save a change to the HTML of the webpage, use the **Sources** too
 
 1.  Open `~/Desktop/app/index.html`.  The `<h1>` element contains the new text.
 
+
+<!-- ====================================================================== -->
 ## Step 4: Save a JavaScript change to disk
 
 The main place to use the code editor of DevTools is the **Sources** tool.  But sometimes you need to access other tools, such as the **Elements** tool or the **Console** panel, while editing files.  The **Quick Source** tool gives you just the editor from the **Sources** tool, while any tool is open.
@@ -215,14 +229,14 @@ The main place to use the code editor of DevTools is the **Sources** tool.  But 
 To open the DevTools code editor alongside other tools, do the following:
 
 1.  Navigate to the **Elements** tool.
-1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  The **Command Menu** opens.
+1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  The **Command Menu** opens.
 1.  Type `Quick Source`, and then choose **Show Quick Source**.  At the bottom of the DevTools window, the **Quick Source** tool appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Open the Quick Source tool by using the Command Menu" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
        Open the **Quick Source** tool by using the **Command Menu**
     :::image-end:::
 
-1.  Select `Control`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.  Review the following figure.
+1.  Select `Control`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog.  Review the following figure.
 1.  Type `script`, then choose **app/script.js**.
 
     :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Open script.js using the Open File dialog" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
@@ -239,7 +253,7 @@ To open the DevTools code editor alongside other tools, do the following:
     document.querySelector('a').style = 'font-style:italic';
     ```
 
-1.  Select `Control`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\) to save the change.
+1.  Select `Control`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change.
 1.  Refresh the page.
 
     > [!NOTE]
@@ -249,6 +263,8 @@ To open the DevTools code editor alongside other tools, do the following:
        The link on the page is now italicized
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Next steps
 
 Use what you have learned in this tutorial to set up Workspaces in your own project.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
@@ -278,15 +294,15 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 [TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "An Introduction to Source Maps | Treehouse Blog"
 
-<!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools \(@AlphabetBrowserDevTools\) | Twitter"  -->
+<!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools (@AlphabetBrowserDevTools) | Twitter"  -->
 
-[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port \(computer networking\) - Wikipedia"
+[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port (computer networking) - Wikipedia"
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

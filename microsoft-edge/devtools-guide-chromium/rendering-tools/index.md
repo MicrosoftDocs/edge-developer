@@ -32,6 +32,8 @@ Users expects interactive and smooth pages.  Each stage in the pixel pipeline re
 *   Avoid layout as much as possible.  Choose CSS that does not trigger layout at all.
 *   Painting may take up more time than any other rendering activity.  Watch out for paint bottlenecks.
 
+
+<!-- ====================================================================== -->
 ## JavaScript
 
 JavaScript calculations, especially ones that trigger extensive visual changes, may stall application performance.  Do not let badly-timed or long-running JavaScript interfere with user interactions.
@@ -58,6 +60,8 @@ The following table describes some common JavaScript problems and potential solu
 
 <!--todo: add Optimize JavaScript runtime section when available  -->
 
+
+<!-- ====================================================================== -->
 ## Style
 
 Style changes are costly, especially if those changes affect more than one element in the DOM.  Any time you apply styles to an element, the browser figures out the impact on all related elements, recalculates the layout, and repaints.
@@ -71,7 +75,7 @@ Style changes are costly, especially if those changes affect more than one eleme
 
 ### Style: Tools
 
-Take a recording in the **Performance** tool.  Check the recording for large `Recalculate Style` events \(displayed in purple\).
+Take a recording in the **Performance** tool.  Check the recording for large `Recalculate Style` events (displayed in purple).
 
 <!--todo: add Recording section when available  -->
 
@@ -106,6 +110,8 @@ The following table describes some common style problems and potential solutions
 
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations section when available -->
 
+
+<!-- ====================================================================== -->
 ## Layout
 
 Layout (or reflow in Firefox) is the process by which the browser calculates the positions and sizes of all the elements on a page.  The layout model of the web means that one element may affect others; for example, the width of the `<body>` element typically affects the widths of any child elements, and so on, all the way up and down the tree.  The process may be quite involved for the browser.
@@ -141,6 +147,8 @@ The following table describes some common layout problems and potential solution
 
 <!--todo: add Avoid CSS that triggers layouts (Avoid large, complex layouts and layout thrashing) section when available -->
 
+
+<!-- ====================================================================== -->
 ## Paint and composite
 
 Paint is the process of filling in pixels.  It is often the most costly part of the rendering process.  If you noticed that your page is not working as designed in any way, it is likely that you have paint problems.
@@ -151,7 +159,7 @@ Compositing is where the painted parts of the page are put together for displayi
 
 ### Paint and composite: Tools
 
-Want to know how long painting takes or how often painting occurs?  Check the [Enable advanced paint instrumentation][DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] setting in the **Performance** panel and then take a recording.  If most of your rendering time is spent painting, you have paint problems.
+Want to know how long painting takes or how often painting occurs?  Check the [Enable advanced paint instrumentation][DevtoolsEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation] setting in the **Performance** panel and then take a recording.  If most of your rendering time is spent painting, you have paint problems.
 
 <!--
 :::image type="complex" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording" lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
@@ -180,7 +188,7 @@ The following table describes some common paint and composite problems and poten
 <!-- ====================================================================== -->
 <!-- links -->
 [DevtoolsRenderingToolsJavascriptRuntime]: ./js-runtime.md "Speed up JavaScript runtime | Microsoft Docs"
-[DevtoolsChromiumEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "Turn on advanced paint instrumentation - Performance analysis features | Microsoft Docs"
+[DevtoolsEvaluatePerformanceReferenceEnableadvancedpaintinstrumentation]: ../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation "Turn on advanced paint instrumentation - Performance analysis reference | Microsoft Docs"
 
 <!--[DevtoolsRenderingToolsForcedSynchronousLayouts]: ./rendering-tools/forced-synchronous-layouts.md "Diagnose Forced Synchronous Layouts | Microsoft Docs"  -->
 
@@ -208,7 +216,7 @@ The following table describes some common paint and composite problems and poten
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) and [Meggin Kearney][MegginKearney] \(Tech Writer\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse) and [Meggin Kearney][MegginKearney] (Technical Writer).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

@@ -25,15 +25,17 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 There are many ways to open Microsoft Edge DevTools, helping you quickly access different parts of the DevTools UI.
 
+
+<!-- ====================================================================== -->
 ## Open Microsoft Edge DevTools
 
 To open DevTools, use either of the following options.
 
 *   Use the Microsoft Edge UI.
-    *  Choose the **Settings and more** \(`...`\) icon >  **More Tools** >  **Developer Tools**.
+    *  Choose the **Settings and more** (`...`) icon >  **More Tools** >  **Developer Tools**.
 
 *   Use the keyboard.
-    *   Select `F12` or `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).
+    *   Select `F12` or `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
 See [Keyboard shortcuts][DevtoolsShortcutsIndex].
 
@@ -41,29 +43,33 @@ See [Keyboard shortcuts][DevtoolsShortcutsIndex].
    Open DevTools from the Microsoft Edge main menu
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Open the Elements panel to inspect the DOM or CSS
 
-Either of the following tasks allow you to inspect the styles or attributes of a [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \(DOM\) node.
+To inspect the styles or attributes of a [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) node, do either of the following:
+*   Right-click the element and select **Inspect**.
+*   Press `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS).  See [Keyboard shortcuts][DevtoolsShortcutsIndex].
 
-*   Hover on the element, open the contextual menu \(right-click\), and choose **Inspect**.
-*   Select `Control`+`Shift`+`C` \(Windows, Linux\) or `Command`+`Option`+`C` \(macOS\).  See [keyboard shortcuts][DevtoolsShortcutsIndex].
+<!-- :::image type="content" source="../media/bing-right-click-inspect.msft.png" alt-text="The Inspect option" lightbox="../media/bing-right-click-inspect.msft.png"::: -->
 
-<!-- :::image type="complex" source="../media/bing-right-click-inspect.msft.png" alt-text="The Inspect option" lightbox="../media/bing-right-click-inspect.msft.png":::
-   The **Inspect** option
-:::image-end:::  -->
+<!-- See [Get Started With Viewing And Changing CSS][GetStartedCSS]. -->
 
-<!--Navigate to [Get Started With Viewing And Changing CSS][GetStartedCSS].  -->
 
+<!-- ====================================================================== -->
 ## Open the Console panel
 
-To open the [Console][DevtoolsConsoleIndex] panel to view logged messages or run JavaScript, select `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).  See [keyboard shortcuts][DevtoolsShortcutsIndex].
+To open the [Console][DevtoolsConsoleIndex] panel to view logged messages or run JavaScript, press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  See [keyboard shortcuts][DevtoolsShortcutsIndex].
 
 <!--Navigate to [Get Started With The Console][ConsoleGetStarted].  -->
 
+
+<!-- ====================================================================== -->
 ## Open the previous panel
 
-To jump to the previously open panel, select `Control`+`Shift`+`I` \(Windows, Linux\) or `Command`+`Option`+`I` \(macOS\).  See [Keyboard shortcuts][DevtoolsShortcutsIndex].
+To jump to the previously open panel, select `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  See [Keyboard shortcuts][DevtoolsShortcutsIndex].
 
+<!-- ====================================================================== -->
 ## Auto-open DevTools on every new tab
 
 To auto-open DevTools on every new tab, open Microsoft Edge from the command line and pass the `--auto-open-devtools-for-tabs` flag.
@@ -102,6 +108,8 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 
 * * *
 
+
+<!-- ====================================================================== -->
 ## Toggle the F12 keyboard shortcut on or off
 
 To change the `F12` keyboard shortcut setting that opens the DevTools, complete the following actions:
@@ -114,7 +122,7 @@ To change the `F12` keyboard shortcut setting that opens the DevTools, complete 
     > After turning off **Open the DevTools when the F12 key is pressed**, perform one of the following actions to open the DevTools.
     >
     > *   Select `Ctrl`+`Shift`+`I`.
-    > *   Open the contextual menu \(right-click\) > **Inspect**.
+    > *   Open the contextual menu (right-click) > **Inspect**.
 
 
 <!-- ====================================================================== -->
@@ -129,7 +137,7 @@ To change the `F12` keyboard shortcut setting that opens the DevTools, complete 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/open) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/open) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
