@@ -35,7 +35,7 @@ When using CSS-in-JS libraries, you can copy CSS declarations (a CSS property an
 
 To copy a style rule as JavaScript:
 
-1. In the **Styles** pane of the **Elements** tool, open the contextual menu \(right-click\) on a declaration in a style rule.
+1. In the **Styles** pane of the **Elements** tool, open the contextual menu (right-click) on a declaration in a style rule.
 
 1. Select **Copy declaration as JS** or **Copy all declarations as JS**.
 
@@ -146,7 +146,7 @@ The **Styles** pane supports CSS rules that you can modify by using the CSS Obje
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/css-in-js/) and is authored by [Alex Rudenko][AlexRudenko] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developer.chrome.com/blog/css-in-js/) and is authored by [Alex Rudenko][AlexRudenko] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

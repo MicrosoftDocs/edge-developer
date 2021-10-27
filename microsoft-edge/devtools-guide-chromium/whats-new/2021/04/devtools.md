@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
+
+<!-- ====================================================================== -->
 ## Wavy underlines highlight code issues and improvements in Elements tool
 
 <!--  Title: Get code hints in Elements tool  -->
@@ -37,7 +39,7 @@ To open the **Issues** tool and learn more about the issue and how to fix it, co
 *   Select and hold `Shift`, and then choose any wavy underline.
 *   Complete the following actions.
     1.  Hover on any wavy underline.
-    1.  Open the contextual menu \(right-click\).
+    1.  Open the contextual menu (right-click).
     1.  Choose **Show in Issues**.
 
 :::row:::
@@ -53,6 +55,8 @@ To open the **Issues** tool and learn more about the issue and how to fix it, co
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Learn about DevTools with informative tooltips
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
@@ -62,11 +66,11 @@ To open the **Issues** tool and learn more about the issue and how to fix it, co
 
 The DevTools Tooltips feature helps you learn about all the different tools and panes in DevTools.  To turn off Tooltips, select `Esc`.  To turn on Tooltips, complete one of the following actions.
 
-*   Select `Ctrl`+`Shift`+`H` \(Windows/Linux\) or `Cmd`+`Shift`+`H` \(macOS\).
+*   Select `Ctrl`+`Shift`+`H` (Windows/Linux) or `Cmd`+`Shift`+`H` (macOS).
 *   [Open the Command Menu][DevtoolsCommandMenuIndexOpenCommandMenu] and then type `tooltips`.
-*   Choose **Customize and control DevTools** \(`...`\) > **Help** > **Toggle the DevTools Tooltips**.
+*   Choose **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
 
-Also, if you turn on the [Focus Mode and DevTools Tooltips][DevtoolsWhatsNew202102DevtoolsGroupToolsTogetherInFocusMode] experiment, you may also choose the **Toggle the DevTools Tooltips** \(`?`\) button at the bottom of the **Activity Bar**.
+Also, if you turn on the [Focus Mode and DevTools Tooltips][DevtoolsWhatsNew202102DevtoolsGroupToolsTogetherInFocusMode] experiment, you may also choose the **Toggle the DevTools Tooltips** (`?`) button at the bottom of the **Activity Bar**.
 
 To display more information about how to use the DevTools, turn on Tooltips, and then hover on each outlined region of the DevTools.
 
@@ -74,6 +78,8 @@ To display more information about how to use the DevTools, turn on Tooltips, and
    Hover on anywhere in the highlighted region of the **Issues** tool to display more details
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Service worker update timeline
 
 <!--todo:  Update the linked [Service Worker improvements][DevtoolsServiceWorkerIndex] article.  -->
@@ -93,6 +99,8 @@ In Microsoft Edge version 91 or later, if you're a Progressive Web App or Servic
 
 For more information about the lifecycle of your Service Workers, navigate to [The Service Worker lifecycle][ProgressiveWebAppsServiceworkerServiceWorkerLifecycle].  For more information about debugging tools for Progressive Web Apps and Service Workers in the DevTools, navigate to [Service Worker improvements][DevtoolsServiceWorkerIndex].  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [1066604][CR1066604].
 
+
+<!-- ====================================================================== -->
 ## Progressive Web Apps no longer display warnings for non-square icons
 
 <!--  Title: Non-square icons in app manifest no longer produce warnings  -->
@@ -119,6 +127,8 @@ Most operating systems require square icons.  Please include at least one square
 
 To review errors and warnings in your Web App Manifest, navigate to the **Application** tool and choose the **Manifest** section.  Errors and warnings are listed under the **Errors and Warnings** heading.  For more information about the Web App Manifest, navigate to [Use the Web App Manifest to integrate your Progressive Web App into the Operating System][ProgressiveWebAppsWebappmanifests].  To create icons to include in your Web App Manifest, navigate to the [PWABuilder Image Generator][PwabuilderImagegenerator].  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [1185945][CR1185945].
 
+
+<!-- ====================================================================== -->
 ## Localized DevTools now supported in Chromium-based browsers
 
 <!--  Title: Localization for all  -->
@@ -130,6 +140,8 @@ Starting in [Microsoft Edge version 81][DevtoolsWhatsNew202001DevtoolsUsingDevto
    Microsoft Edge browser and DevTools set to Japanese
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Use the keyboard to navigate to CSS variables
 
 <!--  Title: Navigate to CSS variables with the arrow keys  -->
@@ -141,6 +153,8 @@ Starting in [Microsoft Edge version 88][DevtoolsWhatsNew202011DevtoolsCssVariabl
    The `--theme-body-background` CSS variable highlighted in the **Styles** pane
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Issues are automatically sorted by severity
 
 <!-- Title: Display Issues in severity order  -->
@@ -152,6 +166,8 @@ The **Issues** tool displays recommendations to improve your website, including 
    The **Issues** tool displays sorted issues by severity
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.7
 
 <!-- Title: Microsoft Edge DevTools for Visual Studio version 1.1.7  -->
@@ -166,13 +182,15 @@ The [Microsoft Edge Tools for Visual Studio Code extension][VisualstudioMarketpl
 
 To manually update to version 1.1.7, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  You may file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools].
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
 
 ### Visualize CSS scroll-snap
 
-You may now toggle the `scroll-snap` badge in the **Elements** tool to inspect the CSS scroll-snap alignment.  When an HTML element on your webpage has `scroll-snap-type` applied to it, a `scroll-snap` badge displays next to it in the **Elements** tool.  Choose the badge to turn on \(or off\) the display of a scroll-snap overlay on the webpage.  To review an example webpage, navigate to [Scroll Snap Demo][GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml].  In the example, dots display on snap edges.  The scroll port has a solid outline while the snap items have dash outlines.  The scroll padding is filled in green while the scroll margin is filled in orange.  To review the history of this feature in the Chromium open-source project, navigate to Issue [862450][CR862450].
+You may now toggle the `scroll-snap` badge in the **Elements** tool to inspect the CSS scroll-snap alignment.  When an HTML element on your webpage has `scroll-snap-type` applied to it, a `scroll-snap` badge displays next to it in the **Elements** tool.  Choose the badge to turn on (or off) the display of a scroll-snap overlay on the webpage.  To review an example webpage, navigate to [Scroll Snap Demo][GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml].  In the example, dots display on snap edges.  The scroll port has a solid outline while the snap items have dash outlines.  The scroll padding is filled in green while the scroll margin is filled in orange.  To review the history of this feature in the Chromium open-source project, navigate to Issue [862450][CR862450].
 
 :::image type="complex" source="../../media/2021/04/elements-scroll-snap-highlight.msft.png" alt-text="CSS scroll-snap" lightbox="../../media/2021/04/elements-scroll-snap-highlight.msft.png":::
    CSS scroll-snap
@@ -190,13 +208,13 @@ To learn more about debugging in the **Sources** tool, navigate to [Using the De
 
 ### New Badge settings pane in the Elements tool
 
-Now, use the **Badge settings** in the **Elements** tool to turn on \(or off\) individual badges.  Use this feature to customize and stay focused on important badges while you inspect webpages.  To display the badge settings pane at the top of the **Elements** tool, complete the following actions.
+Now, use the **Badge settings** in the **Elements** tool to turn on (or off) individual badges.  Use this feature to customize and stay focused on important badges while you inspect webpages.  To display the badge settings pane at the top of the **Elements** tool, complete the following actions.
 
 1.  Hover on any element.
-1.  Open the contextual menu \(right-click\).
+1.  Open the contextual menu (right-click).
 1.  Choose **Badge settings...**.
 
-To display \(or hide\) the badges, choose \(or remove\) the checkbox next to the badge name.
+To display (or hide) the badges, choose (or remove) the checkbox next to the badge name.
 
 <!--  To review the history of this feature in the Chromium open-source project, navigate to Issue [1066772][CR1066772].  -->
 
@@ -260,7 +278,7 @@ To review the history of this feature in the Chromium open-source project, navig
 Now, to display the computed CSS value in the **Styles** pane, complete the following actions.
 
 1.  Hover on a CSS property.
-1.  Open the contextual menu \(right-click\).
+1.  Open the contextual menu (right-click).
 1.  Choose **View computed value**.
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1076198][CR1076198].
@@ -346,7 +364,7 @@ DevTools now support hover preview on JavaScript member expressions that use the
 
 #### Improved outline of HTML files
 
-DevTools now has better outline support for `.html` files.  In the **Sources** tool, open the `.html` file.  To turn on \(or off\) the code outline, select `Ctrl`+`Shift`+`O` on Windows/Linux or `Cmd`+`Shift`+`O` on macOS.  In the following figure, DevTools now correctly list all functions in the outline.  Previously, DevTools only displayed some of the functions.  To review the history of this feature in the Chromium open-source project, navigate to Issues [761019][CR761019] and [1191465][CR1191465].
+DevTools now has better outline support for `.html` files.  In the **Sources** tool, open the `.html` file.  To turn on (or off) the code outline, select `Ctrl`+`Shift`+`O` on Windows/Linux or `Cmd`+`Shift`+`O` on macOS.  In the following figure, DevTools now correctly list all functions in the outline.  Previously, DevTools only displayed some of the functions.  To review the history of this feature in the Chromium open-source project, navigate to Issues [761019][CR761019] and [1191465][CR1191465].
 
 :::image type="complex" source="../../media/2021/04/sources-page-jobobbx-at.msft.png" alt-text=" Improved outline of HTML files" lightbox="../../media/2021/04/sources-page-jobobbx-at.msft.png":::
    Improved outline of HTML files
@@ -381,6 +399,8 @@ In Microsoft Edge version 91 or later, DevTools resolves inline function request
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1189161][CR1189161].
 
+
+<!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
@@ -474,7 +494,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-91) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-91) and is authored by [Jecelyn Yeen][JecelynYeen] (Developer advocate, Chrome DevTools).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

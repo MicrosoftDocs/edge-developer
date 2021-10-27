@@ -30,7 +30,7 @@ To open the **Accessibility** tab:
 
 1.  Select the **Elements** tool.
 1.  In the **DOM Tree**, select the element which you want to inspect.
-1.  Select the **Accessibility** tab.  You might need to first select the **More tabs** \(![the More tabs button](../media/more-tabs-icon.msft.png)\) button to the right of the **Styles** tab.
+1.  Select the **Accessibility** tab.  You might need to first select the **More tabs** (![the More tabs button](../media/more-tabs-icon.msft.png)) button to the right of the **Styles** tab.
 
 :::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspect the h1 element of the DevTools homepage in the Accessibility tab" lightbox="../media/accessibility-elements-accessibility.msft.png":::
    Inspect the `h1` element of the DevTools homepage in the **Accessibility** tab
@@ -40,7 +40,7 @@ To open the **Accessibility** tab:
 <!-- ====================================================================== -->
 ## View the position of an element in the Accessibility Tree
 
-The [accessibility tree][MDNAccessibilityTree] is a subset of the DOM tree.  The accessibility tree only contains elements from the DOM tree that are relevant and useful for displaying the contents of a page through assistive technologies such as screen readers.
+The [accessibility tree](https://developer.mozilla.org/docs/Glossary/AOM) is a subset of the DOM tree.  The accessibility tree only contains elements from the DOM tree that are relevant and useful for displaying the contents of a page through assistive technologies such as screen readers.
 
 Inspect the position of an element in the accessibility tree from the **Accessibility** tab.
 
@@ -69,7 +69,7 @@ Some accessibility properties are dynamically calculated by the browser.  These 
 View the computed accessibility properties of an element in the **Accessibility** tab.
 
 > [!NOTE]
-> For computed CSS properties, use the [Computed][DevtoolsCssReferenceViewActuallyAppliedElements] tab.
+> For computed CSS properties, use the [Computed](../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) tab.
 
 :::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="The Computed Properties section of the Accessibility tab" lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
    The **Computed Properties** section of the **Accessibility** tab
@@ -77,18 +77,9 @@ View the computed accessibility properties of an element in the **Accessibility*
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsCssReferenceViewActuallyAppliedElements]: ../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element "View only the CSS that is actually applied to an element - CSS features reference | Microsoft Docs"
-[MDNAccessibilityTree]: https://developer.mozilla.org/docs/Glossary/AOM "Accessibility tree (AOM) | MDN"
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[KayceBasques]: https://developers.google.com/web/resources/contributors/kaycebasques
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

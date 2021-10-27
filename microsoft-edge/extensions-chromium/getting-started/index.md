@@ -12,6 +12,8 @@ keywords: microsoft edge, web development, html, css, javascript, developer, ext
 
 This article introduces concepts that will help you build a Microsoft Edge extension.  Follow along to understand how multi-tab browsers work.
 
+
+<!-- ====================================================================== -->
 ## Understand how browsers work
 
 The following list outlines helpful information to understand before building your extension.
@@ -32,11 +34,13 @@ The following list outlines helpful information to understand before building yo
        Extensions use a different communication model
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Extension architecture
 
 The following list outlines helpful information as it relates to the architecture of an extension.
 
-1.  The Extension web server bundle.  An extension is a bundle of web resources.  The web resources are similar to other resources that you \(the web developer\) publish to web servers.  You bundle the web resources into a zip file when building an extension.
+1.  The Extension web server bundle.  An extension is a bundle of web resources.  The web resources are similar to other resources that you (the web developer) publish to web servers.  You bundle the web resources into a zip file when building an extension.
 
     The zip file includes HTML, CSS, JavaScript, and image files.  One more file is required in the root of the zip file.  The other file is the manifest file that is named `manifest.json`.  The manifest file is the blueprint of your extension and includes the version of your extension, the title, permissions needed for the extension to run, and so on.
 
@@ -50,6 +54,8 @@ The following list outlines helpful information as it relates to the architectur
 
 1.  An extension provides opt-in permissions at install time.  You specify the extension permissions in the `manifest.json` file.  When a user installs an extension, information about the permissions that the extension requires is displayed.  Based on the type of permission required, the extension may extract and use information from the browser.
 
+
+<!-- ====================================================================== -->
 ## Next steps
 
 For information on getting started with your extension, navigate to [Create an extension tutorial][CreateAnExtensionPart1].

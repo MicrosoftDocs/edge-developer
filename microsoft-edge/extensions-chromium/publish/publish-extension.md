@@ -70,7 +70,7 @@ On the **Availability** webpage, enter the following information about the avail
 
 Select one of the following visibility options to define whether your extension is discoverable in the Microsoft Edge Add-ons website.
 
-*   `Public` \(default\)
+*   `Public` (default)
     Public allows everyone to discover your extension through search, browsing in the Microsoft Edge Add-ons website, or using the listing URL to your extension in the Microsoft Edge Add-ons website.  The listing URL is available on your Partner Center dashboard on the Extension **Overview** webpage.
 *   `Hidden`
     Hidden removes extensions from search results or browsing in the Microsoft Edge Add-ons website.  To distribute hidden extensions in the Microsoft Edge Add-ons website, you must share the listing URL to the extension with your customers.
@@ -95,8 +95,8 @@ On the **Properties** webpage, enter the following information to specify proper
 
 | Extension property name | Description |
 |:--- |:--- |
-| Category \(required\) | The category that best describes your extension.  Listing your extension in the right category helps users find your extension easily and understand more about it.  |
-| Privacy policy requirements \(required\) | Indicate if your extension accesses, collects, or transmits any personal information.  Your extension might fail the certification step if you select **Yes** and you don't provide a `Privacy policy URL`.  |
+| Category (required) | The category that best describes your extension.  Listing your extension in the right category helps users find your extension easily and understand more about it.  |
+| Privacy policy requirements (required) | Indicate if your extension accesses, collects, or transmits any personal information.  Your extension might fail the certification step if you select **Yes** and you don't provide a `Privacy policy URL`.  |
 | Privacy policy URL | A valid privacy policy URL to communicate how your extension follows privacy laws and regulations.  You're responsible for ensuring your extension follows privacy laws and regulations.  You're also responsible for providing a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension.  To determine if your extension requires a privacy policy, navigate to [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement] and [Microsoft Edge Add-ons website developer policies][MicrosoftEdgeAddonsCatalogDeveloperPolicies].  |
 | Website URL | A webpage that provides additional information about your extension.  The `Website URL` must point to a webpage on your own website, not the web listing for your extension in the Microsoft Edge Add-ons website.  The `Website URL` helps users learn more about your extension, its features, and any other relevant information.  |
 | Support contact details | The URL to your support webpage, or the email address to contact your support team.  |
@@ -121,15 +121,15 @@ The information provided in the following section is displayed to users who revi
 
 | Language details property name | Description |
 |:--- |:--- |
-| Display name \(required\) | The `name` of your extension specified in the manifest file of your extension.  To change the store display name after submission, you can update the name in the manifest file, create a new extension package, and then reupload it.  |
-| Description \(required\) | The `description` field focuses on explaining what your extension does, why users should install it, or other relevant information that users need to know.  It should be less than 10,000 characters.  |
-| Extension Store logo \(required\) | An image that represents your company or `extension logo` with an aspect ratio of 1, and recommended size of 300 x 300 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  This button is found following the field after you upload your logo for the language.  |
-| Small promotional tile \(optional\) | The `Small promotional tile` image is used to display your extension alongside other extensions in the store.  The size of the image should be 440 x 280 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  The button is found following the field after you upload a promotional tile for the language.  |
-| Screenshots \(optional\) | You can submit a maximum of 10 `screenshots` describing the functionality of your extension in detail.  The size of the screenshots must be either 640 x 480 pixels or 1280 x 800 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  The button is found following the field after you upload at least one for the language.|
-| Large promotional tile \(optional\) | `Large promotion tiles` are used in the store to feature extensions more prominently in the Microsoft Edge Add-ons website.  The images, if submitted, are visible to the users.  The size of the PNG files must be 1400 x 560 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  The button is found following the field after you upload a promotional tile for the language.  |
-| YouTube video URL \(optional\) | You can include a promotional YouTube video of your extension.  The `YouTube video URL` video is displayed on the store listing webpage of your extension.  |
-| Short description \(required\) | To edit the `short description`, you must update the description field in your manifest file of your extension package and re-upload it.  |
-| Search terms \(optional\) | `Search terms` are single words or phrases that help discover your extension when a user searches in the Microsoft Edge Add-ons website.  The search terms aren't displayed to users.  |
+| Display name (required) | The `name` of your extension specified in the manifest file of your extension.  To change the store display name after submission, you can update the name in the manifest file, create a new extension package, and then reupload it.  |
+| Description (required) | The `description` field focuses on explaining what your extension does, why users should install it, or other relevant information that users need to know.  It should be less than 10,000 characters.  |
+| Extension Store logo (required) | An image that represents your company or `extension logo` with an aspect ratio of 1, and recommended size of 300 x 300 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  This button is found following the field after you upload your logo for the language.  |
+| Small promotional tile (optional) | The `Small promotional tile` image is used to display your extension alongside other extensions in the store.  The size of the image should be 440 x 280 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  The button is found following the field after you upload a promotional tile for the language.  |
+| Screenshots (optional) | You can submit a maximum of 10 `screenshots` describing the functionality of your extension in detail.  The size of the screenshots must be either 640 x 480 pixels or 1280 x 800 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  The button is found following the field after you upload at least one for the language.|
+| Large promotional tile (optional) | `Large promotion tiles` are used in the store to feature extensions more prominently in the Microsoft Edge Add-ons website.  The images, if submitted, are visible to the users.  The size of the PNG files must be 1400 x 560 pixels.  Additionally, you can copy the asset from one language to all other languages using the Duplicate button.  The button is found following the field after you upload a promotional tile for the language.  |
+| YouTube video URL (optional) | You can include a promotional YouTube video of your extension.  The `YouTube video URL` video is displayed on the store listing webpage of your extension.  |
+| Short description (required) | To edit the `short description`, you must update the description field in your manifest file of your extension package and re-upload it.  |
+| Search terms (optional) | `Search terms` are single words or phrases that help discover your extension when a user searches in the Microsoft Edge Add-ons website.  The search terms aren't displayed to users.  |
 
 ### YouTube video URL requirements
 

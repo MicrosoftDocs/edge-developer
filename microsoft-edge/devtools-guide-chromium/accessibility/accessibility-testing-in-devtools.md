@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Overview of accessibility testing using DevTools
 
-In this article, we cover some of the features you can use in DevTools to test for accessibility problems.  We go through using different features of DevTools to detect the accessibility problems in a demo page, and we discuss how to fix them.  Open the [demo page][DevToolsA11yErrorsDemopage] in a new tab to try it out yourself and you can test along.
+In this article, we cover some of the features you can use in DevTools to test for accessibility problems.  We go through using different features of DevTools to detect the accessibility problems in a demo page, and we discuss how to fix them.  Open the [demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab to try it out yourself and you can test along.
 
 :::image type="complex" source="../media/a11y-testing-basics-demopage.msft.png" alt-text="The demo page used in this article with a few accessibility issues" lightbox="../media/a11y-testing-basics-demopage.msft.png":::
     The demo page used in this article with a few accessibility issues
@@ -20,7 +20,7 @@ In this article, we cover some of the features you can use in DevTools to test f
 <!-- ====================================================================== -->
 ## Automated testing by using the Issues tool
 
-When you open the demo page in the browser and open DevTools, notice that some issues are automatically detected in the **Issues counter**.  Select the **Issues counter** \(![Issues counter](../media/issues-counter-icon.msft.png)\) to open the [Issues tool][DevToolsIssuesTool] to view the issues and more information.
+When you open the demo page in the browser and open DevTools, notice that some issues are automatically detected in the **Issues counter**.  Select the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)) to open the [Issues tool](../issues/index.md) to view the issues and more information.
 
 :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="The Issues counter shows how many problems there are in the current webpage, and opens the Issues tool" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
     The Issues counter shows how many problems there are in the current webpage, and opens the Issues tool
@@ -32,14 +32,14 @@ For this article, we'll focus on the **Accessibility** section of the **Issues**
     Accessibility warnings displayed in the Issues tool
 :::image-end:::
 
-For detailed walkthrough steps, navigate to [View the Accessibility section of the Issues tool][DevToolsAccessibilityTestIssuesToolViewAccSection].
+For detailed walkthrough steps, navigate to [View the Accessibility section of the Issues tool](test-issues-tool.md#view-the-accessibility-section-of-the-issues-tool).
 
 
 ### Automatically checking that input fields have labels
 
 The first warning displayed is `Form elements must have labels: Element has no title attribute. Element has no placeholder attribute`.  When you expand this section and then select the **Open in Elements** link, the **Elements** tool opens, with the element highlighted in the DOM tree.  The **Styles** tab shows the CSS that's applied to the element.
 
-For detailed walkthrough steps, navigate to [Verify that input fields have labels][DevtoolsAccessibilityTestIssuesToolCheckFieldsLabels].
+For detailed walkthrough steps, navigate to [Verify that input fields have labels](test-issues-tool.md#verify-that-input-fields-have-labels).
 
 :::image type="complex" source="../media/a11y-testing-inspect-problematic-element.msft.png" alt-text="Elements tool showing the problematic HTML after selecting the link in the Issues tool" lightbox="../media/a11y-testing-inspect-problematic-element.msft.png":::
     Elements tool showing the problematic HTML after selecting the link in the Issues tool
@@ -72,7 +72,7 @@ The other automatically detected problem is that many of the images in the page 
     The **Issues** tool, reporting images with missing alternative text
 :::image-end:::
 
-For detailed walkthrough steps, navigate to [Verify that images have alt text][DevtoolsAccessibilityTestIssuesToolCheckAltText].
+For detailed walkthrough steps, navigate to [Verify that images have alt text](test-issues-tool.md#verify-that-images-have-alt-text).
 
 
 ### Automatically checking that text colors have enough contrast
@@ -89,7 +89,7 @@ The **Issues** tool provides detailed explanations of the warning.  When you dri
     Element in the page highlighted after selecting the link to it
 :::image-end:::
 
-For detailed walkthrough steps, navigate to [Verify that text colors have enough contrast][DevtoolsAccessibilityTestIssuesToolCheckContrast].
+For detailed walkthrough steps, navigate to [Verify that text colors have enough contrast](test-issues-tool.md#verify-that-text-colors-have-enough-contrast).
 
 
 ### Verify that the webpage layout is usable when narrow
@@ -102,12 +102,12 @@ By making the browser window narrow and using the arrow keys to scroll the page,
 
 You can simulate a narrow viewport by resizing the browser window, but a better way to test the responsiveness of your design is to use the **Device Emulation** tool.  Here are some features of the **Device Emulation** tool that help you find accessibility issues of any website:
 
-*  Without resizing the browser window, resize the page and test whether your [CSS media queries][DevToolsMediaQueries] trigger a change in layout.
+*  Without resizing the browser window, resize the page and test whether your [CSS media queries](../device-mode/index.md#show-media-queries) trigger a change in layout.
 *  Check for dependencies that use a mouse. By default, device emulation assumes a touch device. This means that any functionality of your product that relies on hover interaction will not work.
 *  Do visual testing by simulating different devices, zoom levels, and pixel ratios.
 *  Test how your product behaves on unreliable connections or when the user is offline.  Showing the most important interactions to a user on a slow connection is also an accessibility consideration.
 
-To learn more about the **Device Emulation** tool, navigate to [Emulate mobile devices in Microsoft Edge DevTools][DevToolsDeviceModeIndex].
+To learn more about the **Device Emulation** tool, navigate to [Emulate mobile devices in Microsoft Edge DevTools](../device-mode/index.md).
 
 
 ### Wavy underlines in the DOM tree indicate automatically detected issues
@@ -124,7 +124,7 @@ These issues that were found by the **Issues** tool are some relatively obvious 
 <!-- ====================================================================== -->
 ## Limits of automated testing
 
-The [Issues tool][DevToolsIssuesTool], [Accessibility Insights][AccessibilityInsights], and [Lighthouse][Lighthouse] are tools that automatically generate an accessibility report for a webpage.  Getting an automated report from such tools is only the beginning of your accessibility-testing journey.
+The [Issues tool](../issues/index.md), [Accessibility Insights](https://accessibilityinsights.io), and [Lighthouse](https://developers.google.com/web/tools/lighthouse/) are tools that automatically generate an accessibility report for a webpage.  Getting an automated report from such tools is only the beginning of your accessibility-testing journey.
 
 Accessibility is about human interaction—people with different needs using your products within various technical environments.  This testing can't be fully automated, but needs verification by a human navigating the product.  In the best scenario, you'd have access to testers with different accessibility needs, and testers using various environments.  But you can already do a lot yourself by using the keyboard to navigate and by inspecting different parts of the page.
 
@@ -143,7 +143,7 @@ One of those issues is the donation form.  When you use a mouse, you can click t
 <!-- ====================================================================== -->
 ## Using the Inspect tool to detect accessibility issues
 
-Use the **Inspect** tool to detect accessibility issues by hovering over parts of the webpage.  The **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) tool is in the top-left corner of DevTools.  Turn on the Inspect tool by selecting the **Inspect** tool button.
+Use the **Inspect** tool to detect accessibility issues by hovering over parts of the webpage.  The **Inspect** (![Inspect](../media/inspect-icon.msft.png)) tool is in the top-left corner of DevTools.  Turn on the Inspect tool by selecting the **Inspect** tool button.
 
 :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="Turn on the Inspect tool by selecting the Inspect tool button" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
     Turn on the **Inspect** tool by selecting the **Inspect** tool button
@@ -161,12 +161,12 @@ The Inspect tool's **Accessibility** section includes a **Contrast** line, when 
     The Inspect tool's **Accessibility** section includes a **Contrast** line, when applicable
 :::image-end:::
 
-For detailed walkthrough steps, navigate to [Identify nested regions using color highlighting][DevtoolsAccessibilityTestInspectToolColorHighlighting].
+For detailed walkthrough steps, navigate to [Identify nested regions using color highlighting](test-inspect-tool.md#identify-nested-regions-using-color-highlighting).
 <!-- = test-inspect-tool.md##identify-nested-regions-using-color-highlighting -->
 
 The upper section of the **Inspect** tool's information overlay displays the following information:
 
-* Layout type; if the element is positioned using a flexbox or grid, you see an appropriate icon \(![Grid layout icon](../media/grid-icon.msft.png)\).
+* Layout type; if the element is positioned using a flexbox or grid, you see an appropriate icon (![Grid layout icon](../media/grid-icon.msft.png)).
 * The name of the element, such as **a**, **h1**, or **div**.
 * The dimensions of the element, in pixels.
 * The color, as a color swatch (a small, colored square) and as a formatted value (such as `#336699`).
@@ -181,7 +181,7 @@ The **Accessibility** part of the **Inspect** overlay is described in the follow
 The **Accessibility** section of the **Inspect** overlay contains the following rows:
 
 *   **Contrast** defines whether an element can be understood by people with low vision.
-    *   The [contrast ratio][W3CContrastRatio] as defined by the [WCAG Guidelines][WCAG] indicates whether there is enough contrast between text and background colors.  A green check mark icon indicates there's enough contrast, and an orange exclamation-point icon indicates there's not enough contrast.
+    *   The [contrast ratio](https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio) as defined by the [WCAG Guidelines](https://www.w3.org/TR/WCAG21/) indicates whether there is enough contrast between text and background colors.  A green check mark icon indicates there's enough contrast, and an orange exclamation-point icon indicates there's not enough contrast.
 
 *   **Name** and **Role** indicate what information assistive technology, such as screen readers, will report about the element.
     *   The **Name** is the text content of an `a` element.  For the element `<a href="/">About Us</a>`, the **Name** shown in the Inspect tool is "About Us".
@@ -191,7 +191,7 @@ The **Accessibility** section of the **Inspect** overlay contains the following 
     *   A green check mark icon indicates that the element is keyboard-focusable.
     *   A gray circle with diagonal line indicates that the element isn't keyboard-focusable.
 
-For detailed walkthrough steps, navigate to [Check individual elements for text contrast, screen reader text, and keyboard support][DevtoolsAccessibilityTestInspectToolIndivElems].
+For detailed walkthrough steps, navigate to [Check individual elements for text contrast, screen reader text, and keyboard support](test-inspect-tool.md#check-individual-elements-for-text-contrast-screen-reader-text-and-keyboard-support).
 <!-- = test-inspect-tool.md#check-individual-elements-for-text-contrast-screen-reader-text-and-keyboard-support -->
 
 
@@ -205,7 +205,7 @@ When using the **Inspect** tool, selecting an element on the rendered page opens
 
 When using the **Inspect** tool, as you hover over different parts of the rendered page with **Elements** open, you'll notice that the DOM tree automatically refreshes.
 
-For detailed walkthrough steps, navigate to [Use the Inspect tool to hover over the webpage to highlight the DOM and CSS][DevtoolsAccessibilityTestInspectToolDomCss].
+For detailed walkthrough steps, navigate to [Use the Inspect tool to hover over the webpage to highlight the DOM and CSS](test-inspect-tool.md#use-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css).
 <!-- = test-inspect-tool.md#use-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css -->
 
 
@@ -428,7 +428,7 @@ State simulation is also a good way to check whether you considered different us
 
 Another consideration when it comes to color accessibility is that there could be different themes that you need to test for contrast issues.  Most operating systems have a dark mode and a light mode.  Your webpage can react to these different settings using CSS media queries.
 
-This demo page has a light and a dark theme.  You can test both themes without changing your operating system, by using [Dark or light color scheme simulation][DevToolsColorSchemeSimulation] in the **Rendering** tool.  So far, this article looked at the demo page with an operating system using a dark theme setting.  If we instead simulate a light scheme and then refresh the page, the **Issues** tool shows six color contrast problems instead of two.
+This demo page has a light and a dark theme.  You can test both themes without changing your operating system, by using [Dark or light color scheme simulation](./preferred-color-scheme-simulation.md) in the **Rendering** tool.  So far, this article looked at the demo page with an operating system using a dark theme setting.  If we instead simulate a light scheme and then refresh the page, the **Issues** tool shows six color contrast problems instead of two.
 
 For detailed walkthrough steps, navigate to [Check for contrast issues with dark theme and light theme](test-dark-mode.md).
 
@@ -454,7 +454,7 @@ When switching to a light theme in the **Rendering** tool, notice the following 
 
 ### Verify that the webpage is usable by people with color blindness
 
-The different donation states use color (red, green, yellow) as the only means to differentiate between the states of funding.  You can't expect all of your users to experience these colors as intended, though.  If you use the [vision deficiencies emulation][DevToolsVisionDeficiencies] feature of DevTools, you can find out that this is not good enough, by simulating how people with different vision would perceive your design.
+The different donation states use color (red, green, yellow) as the only means to differentiate between the states of funding.  You can't expect all of your users to experience these colors as intended, though.  If you use the [vision deficiencies emulation](./emulate-vision-deficiencies.md) feature of DevTools, you can find out that this is not good enough, by simulating how people with different vision would perceive your design.
 For detailed walkthrough steps, navigate to [Verify that the page is usable by people with color blindness](test-color-blindness.md).
 :::image type="complex" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="Showing the page as someone with protanopia (red color blindness) would see it" lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
     Showing the page as if someone with protanopia (red color blindness) would see it
@@ -474,7 +474,7 @@ For detailed walkthrough steps, navigate to [Verify that the page is usable with
 
 ### Verify that the page is usable with UI animation turned off (reduced motion)
 
-Another setting that operating systems come with these days are a way to turn off animations.  Animations can help the usability of a product, but they can also cause a lot of problems, ranging from confusion to nausea. That's why your products should not show animations to users who turned them off in the operating system.  By using a CSS media query, you can check whether the user wants to see animations, and turn them off accordingly.  And, much like with dark and light mode, there is a way to [simulate reduced motion using DevTools][DevToolsReducedMotion].
+Another setting that operating systems come with these days are a way to turn off animations.  Animations can help the usability of a product, but they can also cause a lot of problems, ranging from confusion to nausea. That's why your products should not show animations to users who turned them off in the operating system.  By using a CSS media query, you can check whether the user wants to see animations, and turn them off accordingly.  And, much like with dark and light mode, there is a way to [simulate reduced motion using DevTools](./reduced-motion-simulation.md).
 
 In the demo page here, turning off animations will stop the smooth scrolling of the page when you select different parts of the sidebar navigation menu.  This is achieved by wrapping the smooth scrolling setting in CSS in a media query:
 
@@ -500,43 +500,15 @@ For detailed walkthrough steps, navigate to [Verify that the page is usable with
 
 We've covered quite a few tools you can use to make sure that you catch accessibility problems in your products.  Such tools range from automated checks and manual detail checks to simulation of different states and environments.  These tools are summarized in [Accessibility-testing features in DevTools](reference.md).  Automated tools can't find all the problems in a product, because many of the accessibility barriers show up only during interactive use.
 
-None of these tools can replace a proper round of testing your products with people that use assistive technologies and following a plan to check for all the required tests. You can also use the [Assessments][AccessibilityInsightsAssessment] feature of [Accessibility Insights][AccessibilityInsights].  You may need to perform additional checks such as:
+None of these tools can replace a proper round of testing your products with people that use assistive technologies and following a plan to check for all the required tests. You can also use the [Assessments](https://accessibilityinsights.io/docs/en/web/getstarted/assessment/) feature of [Accessibility Insights](https://accessibilityinsights.io).  You may need to perform additional checks such as:
 
 * Testing when zoomed-in.
 * Testing with screen readers.
 * Testing with voice recognition.
 * Testing in high-contrast mode.
 
-Another way to find out what to do to improve your web product is to use the [webhint extension for Visual Studio Code][WebhintForCode].  This extension flags the readily detectable accessibility problems in your source code and gives insights on how to fix them.
+Another way to find out what to do to improve your web product is to use the [webhint extension for Visual Studio Code](https://aka.ms/webhint4code).  This extension flags the readily detectable accessibility problems in your source code and gives insights on how to fix them.
 
 :::image type="complex" source="../media/a11y-testing-webhint-in-vs-code.msft.png" alt-text="Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem" lightbox="../media/a11y-testing-webhint-in-vs-code.msft.png":::
     Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem
 :::image-end:::
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevToolsMediaQueries]: ../device-mode/index.md#show-media-queries "Show media queries - Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
-[DevToolsDeviceModeIndex]: ../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsAccessibilityReference]: reference.md "Accessibility-testing features in DevTools | Microsoft Docs"
-[DevToolsColorSchemeSimulation]: ./preferred-color-scheme-simulation.md "Emulate dark or light schemes in the rendered page | Microsoft Docs"
-[DevToolsIssuesTool]: ../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
-[DevToolsReducedMotion]: ./reduced-motion-simulation.md "Reduced motion simulation | Microsoft Docs"
-[DevToolsVisionDeficiencies]: ./emulate-vision-deficiencies.md "Emulate vision deficiencies | Microsoft Docs"
-<!-- links into test-issues-tool.md -->
-[DevToolsAccessibilityTestIssuesToolViewAccSection]: test-issues-tool.md#view-the-accessibility-section-of-the-issues-tool "View the Accessibility section of the Issues tool - Automatically test a webpage for accessibility issues | Microsoft Docs"
-[DevtoolsAccessibilityTestIssuesToolCheckFieldsLabels]: test-issues-tool.md#verify-that-input-fields-have-labels "Verify that input fields have labels - Automatically test a webpage for accessibility issues | Microsoft Docs"
-[DevtoolsAccessibilityTestIssuesToolCheckAltText]: test-issues-tool.md#verify-that-images-have-alt-text "Verify that images have alt text - Automatically test a webpage for accessibility issues | Microsoft Docs "
-[DevtoolsAccessibilityTestIssuesToolCheckContrast]: test-issues-tool.md#verify-that-text-colors-have-enough-contrast "Verify that text colors have enough contrast - Automatically test a webpage for accessibility issues | Microsoft Docs"
-<!-- links into test-inspect-tool.md -->
-[DevtoolsAccessibilityTestInspectToolColorHighlighting]: test-inspect-tool.md#identify-nested-regions-using-color-highlighting "Identify nested regions using color highlighting - Use the Inspect tool to detect accessibility issues by hovering over the webpage | Microsoft Docs"
-[DevtoolsAccessibilityTestInspectToolIndivElems]: test-inspect-tool.md#check-individual-elements-for-text-contrast-screen-reader-text-and-keyboard-support "Check individual elements for text contrast, screen reader text, and keyboard support - Use the Inspect tool to detect accessibility issues by hovering over the webpage | Microsoft Docs"
-[DevtoolsAccessibilityTestInspectToolDomCss]: test-inspect-tool.md#use-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css "Use the Inspect tool to hover over the webpage to highlight the DOM and CSS - Use the Inspect tool to detect accessibility issues by hovering over the webpage | Microsoft Docs"
-<!-- external links -->
-[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"
-[W3CContrastRatio]: https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio "contrast ratio | W3C"
-[WCAG]: https://www.w3.org/TR/WCAG21/ "Web Content Accessibility Guidelines | W3C"
-[AccessibilityInsightsAssessment]: https://accessibilityinsights.io/docs/en/web/getstarted/assessment/ "Assessment in Accessibility Insights for Web | Accessibility Insights"
-[AccessibilityInsights]: https://accessibilityinsights.io "Accessibility Insights"
-[Lighthouse]: https://developers.google.com/web/tools/lighthouse/ "Lighthouse | Google"
-[WebhintForCode]:https://aka.ms/webhint4code "webhint | Visual Studio Marketplace"

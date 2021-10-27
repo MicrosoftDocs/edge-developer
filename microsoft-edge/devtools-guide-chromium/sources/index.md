@@ -47,6 +47,8 @@ To maximize the size of the Sources tool, undock DevTools into a separate window
 
 To load the debugging demo webpage that's shown above, see [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger), below.
 
+
+<!-- ====================================================================== -->
 ## Using the Navigator pane to select files
 
 Use the **Navigator** pane (on the left) to navigate among the resources that are returned from the server to construct the current webpage.  Select files, images, and other resources, and view their paths.
@@ -167,11 +169,11 @@ script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
 document.head.appendChild(script);
 ```
 
-Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.  When you select `Ctrl`+`S` \(Windows/Linux\) or `Command`+`S` \(macOS\), DevTools saves the **Snippet** to your file system.
+Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.  When you select `Ctrl`+`S` (Windows/Linux) or `Command`+`S` (macOS), DevTools saves the **Snippet** to your file system.
 
 There are multiple ways to run a Snippet:
-*   In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** \(![The Run button](../media/run-snippet-icon.msft.png)\).
-*   When DevTools has focus, select `Ctrl`+`P` \(Windows/Linux\) or `Command`+`P` \(macOS\) to open the [Command Menu][DevToolsCommandMenuIndex], and then type `!`.
+*   In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** (![The Run button](../media/run-snippet-icon.msft.png)).
+*   When DevTools has focus, select `Ctrl`+`P` (Windows/Linux) or `Command`+`P` (macOS) to open the [Command Menu][DevToolsCommandMenuIndex], and then type `!`.
 
 Snippets are similar to bookmarklets.
 
@@ -196,6 +198,8 @@ If you type `?`, the Command Menu shows several commands, including **... Open f
 
 For more information, see [Run commands with the Microsoft Edge DevTools Command Menu][DevToolsCommandMenuIndex].
 
+
+<!-- ====================================================================== -->
 ## Using the Editor pane to view or edit files
 
 Use the **Editor** pane to view the front-end files that are returned from the server to compose the current webpage, including JavaScript, HTML, CSS, and image files.  When you edit the front-end files in the **Editor** pane, DevTools updates the webpage to run the modified code.
@@ -233,11 +237,11 @@ To edit a JavaScript file in DevTools, use the **Editor** pane, within the **Sou
    Editing JavaScript in the **Editor** pane
 :::image-end:::
 
-To load a file into the Editor pane, use the **Page** tab in the **Navigator** pane (on the left).  Or use the **Command Menu**, as follows: in the upper right of DevTools, select **Customize and control DevTools** \(`...`\) and then select **Open File**.
+To load a file into the Editor pane, use the **Page** tab in the **Navigator** pane (on the left).  Or use the **Command Menu**, as follows: in the upper right of DevTools, select **Customize and control DevTools** (`...`) and then select **Open File**.
 
 #### Save and Undo
 
-For JavaScript changes to take effect, select `Ctrl`+`S` \(Windows, Linux\) or `Command`+`S` \(macOS\).
+For JavaScript changes to take effect, select `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS).
 
 If you change a file, an asterisk appears next to the file name.
 *   To save changes, select `Ctrl`+`S` on Windows/Linux or `Command`+`S` on macOS.
@@ -280,7 +284,7 @@ After submitting the form, `console.log('A')`, which is at global scope, doesn't
 
 ### Reformatting a minified JavaScript file with pretty-print
 
-To use pretty-print to reformat a file to make it readable, select the **Pretty print** button \(![Format](../media/format-icon.msft.png)\), which is shown as braces, at the bottom of the Editor pane.  Or, if a **Pretty-print** button appears at the top of the Editor pane, you can select that button.
+To use pretty-print to reformat a file to make it readable, select the **Pretty print** button (![Format](../media/format-icon.msft.png)), which is shown as braces, at the bottom of the Editor pane.  Or, if a **Pretty-print** button appears at the top of the Editor pane, you can select that button.
 
 :::image type="complex" source="../media/minified.msft.png" alt-text="The Pretty print button" lightbox="../media/minified.msft.png":::
    The **Pretty print** button
@@ -386,10 +390,12 @@ For more information, see [Run commands with the Microsoft Edge DevTools Command
 The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  Use the **Quick Sources** tool in the [Drawer][DevtoolsCustomizeIndexDrawer].
 
 1.  Select a tool other than the **Sources** tool, such as the **Elements** tool.
-1.  Select `Ctrl`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\).  The Command Menu opens.
+1.  Select `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  The Command Menu opens.
 1.  Type `Quick Source`, and then select **Show Quick Source**.  At the bottom of the DevTools window, the Drawer appears, with the **Quick Source** panel selected.  The **Quick Source** panel contains the last file you edited in the **Sources** tool, within a compact version of the DevTools code editor.
-1.  Select `Ctrl`+`P` \(Windows, Linux\) or `Command`+`P` \(macOS\) to open the **Open File** dialog.
+1.  Select `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog.
 
+
+<!-- ====================================================================== -->
 ## Using the Debugger pane to debug JavaScript code
 
 Use the JavaScript debugger to step through the JavaScript code that's returned by the server.
@@ -518,7 +524,7 @@ The following articles cover the **Debugger** pane and breakpoints:
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/sources) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/sources) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

@@ -69,14 +69,18 @@ DevTools may be undocked to a separate window, which you may move to a separate 
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Change placement from the main menu
 
-1.  Choose **Customize and control DevTools** \(`...`\) and choose **Undock into separate window** \(![Undock](../media/undock-icon.msft.png)\), **Dock to bottom** \(![Dock to bottom](../media/bottom-icon.msft.png)\), or **Dock to left** \(![Dock to left](../media/left-icon.msft.png)\).
+1.  Choose **Customize and control DevTools** (`...`) and choose **Undock into separate window** (![Undock](../media/undock-icon.msft.png)), **Dock to bottom** (![Dock to bottom](../media/bottom-icon.msft.png)), or **Dock to left** (![Dock to left](../media/left-icon.msft.png)).
 
     :::image type="complex" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Choose Undock Into Separate Window" lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
        Choose **Undock into separate window**
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Change placement from the Command Menu
 
 1.  [Open the Command Menu][DevtoolsCommandMenu], by selecting `Shift`+`Ctrl`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS.
@@ -108,7 +112,7 @@ DevTools may be undocked to a separate window, which you may move to a separate 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/placement) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/placement) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

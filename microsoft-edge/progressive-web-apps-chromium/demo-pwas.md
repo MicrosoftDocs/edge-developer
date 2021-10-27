@@ -12,6 +12,8 @@ keywords: progressive web apps, PWA, demos, samples
 
 Use this list of sample apps to learn more about how to use PWA features and APIs.
 
+
+<!-- ====================================================================== -->
 ## Webboard
 
 Intelligent whiteboarding app.
@@ -26,6 +28,8 @@ Features:
 
 :::image type="content" source="./media/webboard.png" alt-text="The Webboard drawing app." lightbox="./media/webboard.png":::
 
+
+<!-- ====================================================================== -->
 ## DevTools Tips
 
 List of tips and tricks for DevTools.
@@ -42,6 +46,8 @@ Features:
 
 :::image type="content" source="./media/devtools-tips.png" alt-text="The devtools-tips app." lightbox="./media/devtools-tips.png":::
 
+
+<!-- ====================================================================== -->
 ## My Tracks
 
 GPS tracks visualization app.
@@ -57,6 +63,8 @@ Features:
 
 :::image type="content" source="./media/my-tracks.png" alt-text="The My Tracks app." lightbox="./media/my-tracks.png":::
 
+
+<!-- ====================================================================== -->
 ## My Movies
 
 Search and store movies.

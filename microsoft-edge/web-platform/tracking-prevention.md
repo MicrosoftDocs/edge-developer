@@ -28,6 +28,8 @@ The tracking prevention feature in Microsoft Edge is made up of three main compo
 
 Each of the components are explored and explained in detail on this page.
 
+
+<!-- ====================================================================== -->
 ## Classification
 
 The first component of the tracking prevention feature in Microsoft Edge is classification.  To classify online trackers and group them into categories, Microsoft Edge uses the [Disconnect][DisconnectMain] open source [tracking protection lists][GitHubDisconnectMeTrackingProtection].  The lists are delivered via the "Trust Protection Lists" component, which is viewable at `edge://components`.  After being downloaded, the lists are stored on disk where you may use them to determine whether/how a particular URL is classified.
@@ -48,6 +50,8 @@ To determine if a URL is considered a tracker by the classification system in Mi
 
 If any of those host names match with a host name on the [Disconnect][DisconnectMain] [lists][GitHubDisconnectMeTrackingProtection], Microsoft Edge proceeds with evaluating enforcement actions to prevent users from being tracked.
 
+
+<!-- ====================================================================== -->
 ## Enforcement
 
 To provide protection from tracking actions on the web, Microsoft Edge takes two enforcement actions against classified trackers:
@@ -61,6 +65,8 @@ A user may choose the page info flyout icon on the left side of the address bar 
 
 How the enforcements are applied depends on what level of tracking prevention the user selected and the mitigations that may apply.
 
+
+<!-- ====================================================================== -->
 ## Mitigations
 
 To ensure that web compatibility is preserved as much as possible, Microsoft Edge has three mitigations to help balance enforcements in specific situations.  These are the [Org Relationship mitigation](#org-relationship-mitigation), the [Org Engagement mitigation](#org-engagement-mitigation), and the [CompatExceptions List](#the-compatexceptions-list).
@@ -69,7 +75,7 @@ Before diving into the mitigations, it is worth defining the concept of an "Orga
 
 ### Org Relationship Mitigation
 
-Several popular websites maintain both websites and Content Delivery Networks \(CDNs\) to serve static resources and content to those sites.  To ensure that these types of scenarios are not affected by tracking prevention, Microsoft Edge exempts a site from tracking prevention when the site is making third-party requests to other sites owned by the same parent organization \(as defined in the [Disconnect entities.json list][GitHubDisconnectMeTrackingProtectionEntitiesJson]\).  This is best illustrated by an example.
+Several popular websites maintain both websites and Content Delivery Networks (CDNs) to serve static resources and content to those sites.  To ensure that these types of scenarios are not affected by tracking prevention, Microsoft Edge exempts a site from tracking prevention when the site is making third-party requests to other sites owned by the same parent organization (as defined in the [Disconnect entities.json list][GitHubDisconnectMeTrackingProtectionEntitiesJson]).  This is best illustrated by an example.
 
 > **Example:**
 >
@@ -79,7 +85,7 @@ Several popular websites maintain both websites and Content Delivery Networks \(
 
 ### Org Engagement Mitigation
 
-The org engagement mitigation was created to minimize compatibility risks introduced by tracking prevention by ensuring that sites owned by organizations that users sufficiently engage with continue to work as expected across the web.  It makes use of [site engagement][ChromiumDesignDocsSiteEngagement] to relax enforcements whenever a user has established an ongoing relationship \(currently defined by a site engagement score of 4.1 or greater\) with a given site.  This again is best illustrated by an example:
+The org engagement mitigation was created to minimize compatibility risks introduced by tracking prevention by ensuring that sites owned by organizations that users sufficiently engage with continue to work as expected across the web.  It makes use of [site engagement][ChromiumDesignDocsSiteEngagement] to relax enforcements whenever a user has established an ongoing relationship (currently defined by a site engagement score of 4.1 or greater) with a given site.  This again is best illustrated by an example:
 
 > **Example:**
 >
@@ -87,7 +93,7 @@ The org engagement mitigation was created to minimize compatibility risks introd
 >
 > Users are considered to have a relationship with Social Org if they have established a site engagement score of 4.1 or greater with any one of domains owned by Social Org.
 >
-> If another site, `https://content-embedder.example`, includes third-party content \(say an embedded video from `social-videos.example`\) from any of the domains owned by Social Org that would normally be restricted by tracking prevention enforcements, the site is exempt from tracking prevention enforcements as long as the user's site engagement score with domains owned by Social Org is maintained above the threshold.
+> If another site, `https://content-embedder.example`, includes third-party content (say an embedded video from `social-videos.example`) from any of the domains owned by Social Org that would normally be restricted by tracking prevention enforcements, the site is exempt from tracking prevention enforcements as long as the user's site engagement score with domains owned by Social Org is maintained above the threshold.
 >
 > If a site does not belong to an organization, a user must establish a site engagement score of 4.1 or greater with it directly before any storage access/resource load blocks imposed by tracking prevention are relaxed.
 
@@ -95,21 +101,23 @@ The org engagement mitigation is currently only applied in Balanced mode so that
 
 ### The CompatExceptions List
 
-Based on recent user feedback Microsoft received, Microsoft Edge maintains a small list of sites \(most of which are in the Disconnect Content category\) that were breaking due to tracking prevention despite having the above two mitigations in place. Sites on this list are exempt from tracking prevention enforcements.  The list can be found on disk at the [locations](#determining-whetherhow-a-particular-url-is-classified) described below.  Users may override entries on it using the **Block** option in `edge://settings/content/cookies`.
+Based on recent user feedback Microsoft received, Microsoft Edge maintains a small list of sites (most of which are in the Disconnect Content category) that were breaking due to tracking prevention despite having the above two mitigations in place. Sites on this list are exempt from tracking prevention enforcements.  The list can be found on disk at the [locations](#determining-whetherhow-a-particular-url-is-classified) described below.  Users may override entries on it using the **Block** option in `edge://settings/content/cookies`.
 
 To avoid maintaining this list moving forwards, Microsoft is currently working on the [Storage Access API][GitHubMsExplainersStorageAccessApi] in the open-source codebase.  The [Storage Access API][GitHubMsExplainersStorageAccessApi] gives site developers a way to request storage access from users directly, providing users with more transparency into how their privacy settings are affecting their browsing experience, and giving site developers controls to quickly and intuitively unblock themselves.
 
 After the [Storage Access API][GitHubMsExplainersStorageAccessApi] is implemented, Microsoft will deprecate the CompatExceptions list and reach out to the affected sites both to make them aware of the issues, and to request that they use the [Storage Access API][GitHubMsExplainersStorageAccessApi] moving forward.
 
+
+<!-- ====================================================================== -->
 ## Current tracking prevention behavior
 
 The following table shows the enforcement actions and mitigations that are applied to each category of classified tracker in Microsoft Edge.
 
 *   Along the top are the categories of trackers as defined by [Disconnect tracking protection list categories][GitHubDisconnectTrackingProtectionCategories].
-*   Along the left side are the three levels of tracking prevention in Microsoft Edge \(Basic, Balanced, and Strict\).
+*   Along the left side are the three levels of tracking prevention in Microsoft Edge (Basic, Balanced, and Strict).
 *   The letter `S` indicates that storage access is blocked.
-*   The letter `B` indicates that both storage access and resource loads \(such as network requests\) are blocked.
-*   A hyphen \(`-`\) indicates that no block is applied to either storage access or resource loads.
+*   The letter `B` indicates that both storage access and resource loads (such as network requests) are blocked.
+*   A hyphen (`-`) indicates that no block is applied to either storage access or resource loads.
 
 | | Advertizing | Analytics | Content | Cryptomining | Fingerprinting | Social | Other | Same Org Mitigation | Org Engagement Mitigation |
 | - | - | - | - | - | - | - | - | - | - | - |
@@ -130,6 +138,8 @@ The following table shows the enforcement actions and mitigations that are appli
 
 In Microsoft Edge 79, the default behavior was to apply Strict mode protections in InPrivate.  In Microsoft Edge 80, this behavior was replaced by a switch in `edge://settings/privacy` that allows users to decide whether to apply Strict mode protections or to keep their regular settings while browsing InPrivate.
 
+
+<!-- ====================================================================== -->
 ## Determining whether/how a particular URL is classified
 
 The easiest way to determine whether a specific URL is classified as a known tracker is to perform the following steps.
@@ -156,6 +166,8 @@ The easiest way to determine whether a specific URL is classified as a known tra
 >
 > macOS: `/Applications/Microsoft Edge.app/Contents/Frameworks/Microsoft Edge Framework.framework/Libraries/Trust Protection Lists`
 
+
+<!-- ====================================================================== -->
 ## Frequently Asked Questions
 
 The following section contains answers to frequently asked questions about the tracking prevention feature in Microsoft Edge.

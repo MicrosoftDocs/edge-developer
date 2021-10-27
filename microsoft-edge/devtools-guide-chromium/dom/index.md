@@ -23,16 +23,20 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Get started with viewing and changing the DOM
 
-Complete these interactive tutorials to learn the basics of viewing and changing the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \(DOM\) of a page using Microsoft Edge DevTools.
+Complete these interactive tutorials to learn the basics of viewing and changing the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) of a page using Microsoft Edge DevTools.
 
 This tutorial assumes that you know the difference between the DOM and HTML. Navigate to [Appendix: HTML versus the DOM](#appendix-html-versus-the-dom) for an explanation.
 
+
+<!-- ====================================================================== -->
 ## Open DOM examples
 
-1.  Hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and choose **DOM Examples** to open in a new tab.
+1.  Hold `Control` (Windows, Linux) or `Command` (macOS) and choose **DOM Examples** to open in a new tab.
 
     [DOM Examples][GlitchDomExamples]
 
+
+<!-- ====================================================================== -->
 ## View DOM nodes
 
 The DOM Tree of the Elements panel is where you do all DOM-related activities in DevTools.
@@ -54,7 +58,7 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
            Highlight the `Michelangelo` node
         :::image-end:::
 
-        1.  Choose the **Inspect** \(![Inspect](../media/inspect-icon.msft.png)\) icon in the top-left corner of DevTools.
+        1.  Choose the **Inspect** (![Inspect](../media/inspect-icon.msft.png)) icon in the top-left corner of DevTools.
 
             :::image type="complex" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="The Inspect icon" lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
                The **Inspect** icon
@@ -94,7 +98,7 @@ When viewing the DOM Tree, you may find yourself interested in a DOM node that i
 1.  Under **Scroll into View**, right-choose **Magritte** and choose **Inspect**.
 1.  Scroll to the bottom of the DOM Examples page.
 1.  The `<li>Magritte</li>` node should still be selected in your DOM Tree.  If not, go back to [Scroll into view](#scroll-into-view) and start over.
-1.  Hover on the `<li>Magritte</li>` node, open the contextual menu \(right-click\), and choose **Scroll into view**.  Your viewport scrolls back up so that you may review the **Magritte** node.  Navigate to [Appendix: Missing options](#appendix-missing-options) if you are not able to review the **Scroll into view** option.
+1.  Hover on the `<li>Magritte</li>` node, open the contextual menu (right-click), and choose **Scroll into view**.  Your viewport scrolls back up so that you may review the **Magritte** node.  Navigate to [Appendix: Missing options](#appendix-missing-options) if you are not able to review the **Scroll into view** option.
 
     :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Scroll into view" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
        **Scroll into view**
@@ -105,7 +109,7 @@ When viewing the DOM Tree, you may find yourself interested in a DOM node that i
 You may search the DOM Tree by string, CSS selector, or XPath selector.
 
 1.  Focus your cursor on the **Elements** tool.
-1.  Select `Control`+`F` \(Windows, Linux\) or `Command`+`F` \(macOS\).  The Search bar opens at the bottom of the DOM Tree.
+1.  Select `Control`+`F` (Windows, Linux) or `Command`+`F` (macOS).  The Search bar opens at the bottom of the DOM Tree.
 1.  Type `The Moon is a Harsh Mistress`.  The last sentence is highlighted in the DOM Tree.
 
     :::image type="complex" source="../media/dom-elements-highlighted-search-nodes-highlight.msft.png" alt-text="Highlight the query in the Search bar" lightbox="../media/dom-elements-highlighted-search-nodes-highlight.msft.png":::
@@ -114,6 +118,8 @@ You may search the DOM Tree by string, CSS selector, or XPath selector.
 
 As mentioned above, the Search bar also supports CSS and XPath selectors.
 
+
+<!-- ====================================================================== -->
 ## Edit the DOM
 
 You may edit the DOM on the fly and review how the changes affect the page.
@@ -185,8 +191,8 @@ You are able to force nodes to remain in states including `:active`, `:hover`, `
 
 1.  [Open DOM Examples](#open-dom-examples).
 1.  Under **Force state**, hover on **The Lord of the Flies**.  The background color becomes orange.
-    1.  Hover on **The Lord of the Flies**, open the contextual menu \(right-click\), and choose **Inspect**.
-    1.  Hover on `<li class="demo--hover">The Lord of the Flies</li>`, open the contextual menu \(right-click\), and choose **Force State** > **:hover**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.  The background color remains orange even though you are not actually hovering over the node.
+    1.  Hover on **The Lord of the Flies**, open the contextual menu (right-click), and choose **Inspect**.
+    1.  Hover on `<li class="demo--hover">The Lord of the Flies</li>`, open the contextual menu (right-click), and choose **Force State** > **:hover**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.  The background color remains orange even though you are not actually hovering over the node.
 
 ### Hide a node
 
@@ -209,8 +215,10 @@ Select `Delete` to delete a node.
 1.  [Open DOM Examples](#open-dom-examples).
 1.  Under **Delete a Node**, right-choose **Foundation** and choose **Inspect**.
     1.  Select the `Delete` key.  The node is deleted.
-    1.  Select `Control`+`Z` \(Windows, Linux\) or `Command`+`Z` \(macOS\).  The last action is undone and the node reappears.
+    1.  Select `Control`+`Z` (Windows, Linux) or `Command`+`Z` (macOS).  The last action is undone and the node reappears.
 
+
+<!-- ====================================================================== -->
 ## Access nodes in the Console
 
 DevTools provides a few shortcuts for accessing DOM nodes from the Console, or getting JavaScript references to each one.
@@ -240,8 +248,8 @@ When you inspect a node, the `== $0` text next to the node means that you may re
 If you need to refer back to a node many times, store it as a global variable.
 
 1.  [Open DOM Examples](#open-dom-examples).
-1.  Under **Store as global variable**, hover on **The Big Sleep**, open the contextual menu \(right-click\), and choose **Inspect**.
-    1.  Hover on `<li>The Big Sleep</li>` in the DOM Tree, open the contextual menu \(right-click\), and choose **Store as global variable**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.
+1.  Under **Store as global variable**, hover on **The Big Sleep**, open the contextual menu (right-click), and choose **Inspect**.
+    1.  Hover on `<li>The Big Sleep</li>` in the DOM Tree, open the contextual menu (right-click), and choose **Store as global variable**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.
     1.  Type `temp1` in the Console and then select `Enter`.  The result of the expression shows that the variable evaluates to the node.
 
         :::image type="complex" source="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png" alt-text="The result of the temp1 expression" lightbox="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png":::
@@ -253,15 +261,17 @@ If you need to refer back to a node many times, store it as a global variable.
 Copy the JavaScript path to a node when you need to reference it in an automated test.
 
 1.  [Open DOM Examples](#open-dom-examples).
-1.  Under **Copy JS path**, hover on **The Brothers Karamazov**, open the contextual menu \(right-click\), and choose **Inspect**.
-    1.  Hover on `<li>The Brothers Karamazov</li>` in the DOM Tree, open the contextual menu \(right-click\), and choose **Copy** > **Copy JS Path**.  A `document.querySelector()` expression that resolves to the node has been copied to your clipboard.
-    1.  Select `Control`+`V` \(Windows, Linux\) or `Command`+`V` \(macOS\) to paste the expression into the Console.
+1.  Under **Copy JS path**, hover on **The Brothers Karamazov**, open the contextual menu (right-click), and choose **Inspect**.
+    1.  Hover on `<li>The Brothers Karamazov</li>` in the DOM Tree, open the contextual menu (right-click), and choose **Copy** > **Copy JS Path**.  A `document.querySelector()` expression that resolves to the node has been copied to your clipboard.
+    1.  Select `Control`+`V` (Windows, Linux) or `Command`+`V` (macOS) to paste the expression into the Console.
     1.  Select `Enter` to evaluate the expression.
 
         :::image type="complex" source="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png" alt-text="The result of the Copy JS Path expression" lightbox="../media/dom-elements-highlighted-copy-js-path-console-query-selector.msft.png":::
            The result of the **Copy JS Path** expression
         :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Break on DOM changes
 
 DevTools enables you to pause the JavaScript of a page when the JavaScript modifies the DOM.
@@ -272,20 +282,20 @@ Use attribute modification breakpoints when you want to pause the JavaScript tha
 
 1.  [Open DOM Examples](#open-dom-examples).
 1.  Under **Break on attribute modifications**, right-choose **Sauerkraut** and choose **Inspect**.
-    1.  In the DOM Tree, hover on `<li id="target">Sauerkraut</li>`, open the contextual menu \(right-click\), and choose **Break On** > **Attribute Modifications**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.
+    1.  In the DOM Tree, hover on `<li id="target">Sauerkraut</li>`, open the contextual menu (right-click), and choose **Break On** > **Attribute Modifications**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.
 
         :::image type="complex" source="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png" alt-text="Break on attribute modifications" lightbox="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png":::
            **Break on attribute modifications**
         :::image-end:::
 
-    1.  In the next step you are going to be instructed to choose a button that pauses the code of the page.  After the page is paused you are no longer able to scroll the page.  You must choose **Resume Script** \(![Resume Script](../media/resume-script-icon.msft.png)\) in order to make the page scrollable again.
+    1.  In the next step you are going to be instructed to choose a button that pauses the code of the page.  After the page is paused you are no longer able to scroll the page.  You must choose **Resume Script** (![Resume Script](../media/resume-script-icon.msft.png)) in order to make the page scrollable again.
 
         :::image type="complex" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="Where to resume script running" lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
            Where to resume script running
         :::image-end:::
 
     1.  Choose the **Set Background** button above.  This sets the `style` attribute of the node to `background-color:thistle`.  DevTools pauses the page and highlights the code that caused the attribute to change.
-    1.  Choose **Resume Script** \(![Resume Script](../media/resume-script-icon.msft.png)\), as mentioned earlier.
+    1.  Choose **Resume Script** (![Resume Script](../media/resume-script-icon.msft.png)), as mentioned earlier.
 
 ### Break on node removal
 
@@ -293,9 +303,9 @@ If you want to pause when a particular node is removed, use node removal breakpo
 
 1.  [Open DOM Examples](#open-dom-examples).
 1.  Under **Break on Node Removal**, right-choose **Neuromancer** and choose **Inspect**.
-    1.  In the DOM Tree, hover on `<li id="target">Neuromancer</li>`, open the contextual menu \(right-click\), and choose **Break On** > **Node Removal**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.
+    1.  In the DOM Tree, hover on `<li id="target">Neuromancer</li>`, open the contextual menu (right-click), and choose **Break On** > **Node Removal**.  Navigate to [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.
     1.  Choose the **Delete** button above.  DevTools pauses the page and highlights the code that caused the node to be removed.
-    1.  Choose **Resume Script** \(![Resume Script](../media/resume-script-icon.msft.png)\).
+    1.  Choose **Resume Script** (![Resume Script](../media/resume-script-icon.msft.png)).
 
 ### Break on subtree modifications
 
@@ -303,18 +313,22 @@ After you put a subtree modification breakpoint on a node, DevTools pauses the p
 
 1.  [Open DOM Examples](#open-dom-examples).
 1.  Under **Break on Subtree Modifications**, right-choose **A Fire Upon The Deep** and choose **Inspect**.
-    1.  In the DOM Tree, hover on `<ul id="target">`, which is the node above `<li>A Fire Upon the Deep</li>`, open the contextual menu \(right-click\), and choose **Break On** > **Subtree Modifications**.  If the option is not displayed, navigate to [Appendix: Missing options](#appendix-missing-options).
+    1.  In the DOM Tree, hover on `<ul id="target">`, which is the node above `<li>A Fire Upon the Deep</li>`, open the contextual menu (right-click), and choose **Break On** > **Subtree Modifications**.  If the option is not displayed, navigate to [Appendix: Missing options](#appendix-missing-options).
     1.  Choose **Add Child**.  The code pauses because a `<li>` node was added to the list.
-    1.  Choose **Resume Script** \(![Resume Script](../media/resume-script-icon.msft.png)\).
+    1.  Choose **Resume Script** (![Resume Script](../media/resume-script-icon.msft.png)).
 
+
+<!-- ====================================================================== -->
 ## Next steps
 
-That covers most of the DOM-related features in DevTools.  You are able to discover the rest of the features by hovering on nodes in the DOM Tree, opening the contextual menu \(right-click\), and experimenting with the other options that were not covered in this tutorial.  Navigate to [Elements panel keyboard shortcuts][DevToolsShortcutsElements].
+That covers most of the DOM-related features in DevTools.  You are able to discover the rest of the features by hovering on nodes in the DOM Tree, opening the contextual menu (right-click), and experimenting with the other options that were not covered in this tutorial.  Navigate to [Elements panel keyboard shortcuts][DevToolsShortcutsElements].
 
 Check out the [Microsoft Edge DevTools homepage][MicrosoftEdgeDevTools] to discover everything else you are able to do with DevTools.
 
 <!--Navigate to [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->
 
+
+<!-- ====================================================================== -->
 ## Appendix: HTML versus the DOM
 
 The following section quickly explains the difference between HTML and the DOM.
@@ -386,21 +400,25 @@ The HTML for the page is now different than the DOM.  In other words, HTML repre
 Navigate to [Introduction to the DOM][MDNIntroductionToDOM] to learn more.
 
 <!--
+
+<!-- ====================================================================== -->
 ## Appendix: Scroll into view
 
 This is a continuation of the [Scroll into view](#scroll-into-view) section.  Follow the instructions below to complete the section.
 
 1.  The `<li>Magritte</li>` node should still be selected in your DOM Tree.  If not, go back to [Scroll into view](#scroll-into-view) and start over.
-1.  Hover on the `<li>Magritte</li>` node, open the contextual menu \(right-click\), and choose **Scroll into view**.  Your viewport scrolls back up so that the **Magritte** node is displayed.  If you the **Scroll into view** option is not displayed, navigate to [Appendix: Missing options](#appendix-missing-options).
+1.  Hover on the `<li>Magritte</li>` node, open the contextual menu (right-click), and choose **Scroll into view**.  Your viewport scrolls back up so that the **Magritte** node is displayed.  If you the **Scroll into view** option is not displayed, navigate to [Appendix: Missing options](#appendix-missing-options).
 
     :::image type="complex" source="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png" alt-text="Scroll into view" lightbox="../media/dom-elements-highlighted-scroll-into-view-dropdown.msft.png":::
        Scroll into view
     :::image-end:::
     -->
 
+
+<!-- ====================================================================== -->
 ## Appendix: Missing options
 
-Many of the instructions in this tutorial instruct you to hover on a node in the DOM Tree, open the contextual menu \(right-click\), and then choose an option from the context menu that pops up.  If the specified option in the context menu is not displayed, try hovering away from the node text and opening the contextual menu \(right-click\).
+Many of the instructions in this tutorial instruct you to hover on a node in the DOM Tree, open the contextual menu (right-click), and then choose an option from the context menu that pops up.  If the specified option in the context menu is not displayed, try hovering away from the node text and opening the contextual menu (right-click).
 
 :::image type="complex" source="../media/dom-elements-highlighted-right-click-right-side.msft.png" alt-text="Where to choose if all of the options are not displayed" lightbox="../media/dom-elements-highlighted-right-click-right-side.msft.png":::
    Where to choose if all of the options are not displayed
@@ -419,7 +437,7 @@ Many of the instructions in this tutorial instruct you to hover on a node in the
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/dom/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/dom/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

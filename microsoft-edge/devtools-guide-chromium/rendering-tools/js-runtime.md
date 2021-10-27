@@ -34,6 +34,8 @@ Identify expensive functions using the **Memory** tool.
 *   Record exactly which functions were called and how much memory each requires with Allocation Sampling in the **Memory** tool.
 *   Visualize your profiles as a flame chart.
 
+
+<!-- ====================================================================== -->
 ## Record a Sampling Profile
 
 If you notice jank in your JavaScript, collect a Sampling Profile.  Sampling Profiles show where running time is spent on functions in your page.
@@ -47,15 +49,17 @@ If you notice jank in your JavaScript, collect a Sampling Profile.  Sampling Pro
 > [!NOTE]
 > You may also use the [Console Utilities API][DevtoolsConsoleUtilities] to record and group profiles from the command line.
 
+
+<!-- ====================================================================== -->
 ## View Sampling Profile
 
 When you finish recording, DevTools automatically populates the **Memory** panel under **SAMPLING PROFILES** with the data from your recording.
 
-The default view is **Heavy \(Bottom Up\)**.  This view allows you to review which functions had the most impact on performance and examine the requesting path for each function.
+The default view is **Heavy (Bottom Up)**.  This view allows you to review which functions had the most impact on performance and examine the requesting path for each function.
 
 ### Change sort order
 
-To change the sorting order, select the dropdown menu next to the **focus selected function** \(![focus selected function](../media/focus-icon.msft.png)\) icon and then choose one of the following options.
+To change the sorting order, select the dropdown menu next to the **focus selected function** (![focus selected function](../media/focus-icon.msft.png)) icon and then choose one of the following options.
 
 **Chart**.  Displays a chronological chart of the recording.
 
@@ -63,13 +67,13 @@ To change the sorting order, select the dropdown menu next to the **focus select
    Flame chart
 :::image-end:::
 
-**Heavy \(Bottom Up\)**.  Lists functions by impact on performance and enables you to examine the calling paths to the functions.  This is the default view.
+**Heavy (Bottom Up)**.  Lists functions by impact on performance and enables you to examine the calling paths to the functions.  This is the default view.
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Heavy chart" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
    Heavy chart
 :::image-end:::
 
-**Tree \(Top Down\)**.  Shows an overall picture of the calling structure, starting at the top of the call stack.
+**Tree (Top Down)**.  Shows an overall picture of the calling structure, starting at the top of the call stack.
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png" alt-text="Tree chart" lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png":::
    Tree chart
@@ -77,10 +81,12 @@ To change the sorting order, select the dropdown menu next to the **focus select
 
 ### Exclude functions
 
-To exclude a function from your Sampling Profile, choose it and then choose the **exclude selected function** \(![exclude selected function](../media/exclude-icon.msft.png)\) button.  The requesting function \(parent\) of the excluded function \(child\) is charged with the allocated memory assigned to the excluded function \(child\).
+To exclude a function from your Sampling Profile, choose it and then choose the **exclude selected function** (![exclude selected function](../media/exclude-icon.msft.png)) button.  The requesting function (parent) of the excluded function (child) is charged with the allocated memory assigned to the excluded function (child).
 
-Choose the **restore all functions** \(![restore all functions](../media/restore-icon.msft.png)\) button to restore all excluded functions back into the recording.
+Choose the **restore all functions** (![restore all functions](../media/restore-icon.msft.png)) button to restore all excluded functions back into the recording.
 
+
+<!-- ====================================================================== -->
 ## View Sampling Profile as Chart
 
 The Chart view provides a visual representation of the Sampling Profile over time.
@@ -145,7 +151,7 @@ Hover on a function to display the name and timing data.  The following informat
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) and [Meggin Kearney][MegginKearney] \(Tech Writer\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/js-execution) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse) and [Meggin Kearney][MegginKearney] (Technical Writer).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

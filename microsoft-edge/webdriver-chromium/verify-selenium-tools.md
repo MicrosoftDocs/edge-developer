@@ -17,6 +17,8 @@ The [Java releases][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava]
 
 Use the following keys to verify the signature of packages provided by the [Microsoft Edge Developer Tools team][TwitterEdgeDevTools].
 
+
+<!-- ====================================================================== -->
 ## Public key for verifying Selenium Tools for Microsoft Edge
 
 *   **Public Key ID**: Microsoft Edge Developer Tools Team [EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)

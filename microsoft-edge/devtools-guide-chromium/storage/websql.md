@@ -28,6 +28,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect Web SQL data.
 
+
+<!-- ====================================================================== -->
 ## View Web SQL Data
 
 1.  Choose the **Sources** tool to open the **Sources** tool.  The **Manifest** pane usually opens by default.
@@ -48,10 +50,14 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
        View the data of a Web SQL table
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Edit Web SQL data
 
 You are not able to edit Web SQL data when viewing a Web SQL table, such as in previous above.  But you may run statements from the Web SQL Console that edit or delete tables.  Navigate to [Run Web SQL queries](#run-web-sql-queries).
 
+
+<!-- ====================================================================== -->
 ## Run Web SQL queries
 
 1.  Choose a database to open a console for that database.
@@ -61,13 +67,17 @@ You are not able to edit Web SQL data when viewing a Web SQL table, such as in p
        Use the Web SQL Console to delete a row from a table
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Refresh a Web SQL table
 
 DevTools does not update tables in real-time.  To update the data in a table, complete the following actions.
 
 1.  [View the data in a Web SQL table](#view-web-sql-data).
-1.  Choose **Refresh** \(![Refresh](../media/refresh-icon.msft.png)\).
+1.  Choose **Refresh** (![Refresh](../media/refresh-icon.msft.png)).
 
+
+<!-- ====================================================================== -->
 ## Filter out columns in a Web SQL table
 
 1.  [View the data in a Web SQL table](#view-web-sql-data).
@@ -77,6 +87,8 @@ DevTools does not update tables in real-time.  To update the data in a table, co
        Use the **Visible Columns** text box to reduce the number of columns shown
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Delete all Web SQL data
 
 1.  Open the **Clear Storage** pane.
@@ -104,7 +116,7 @@ DevTools does not update tables in real-time.  To update the data in a table, co
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/websql) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/websql) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

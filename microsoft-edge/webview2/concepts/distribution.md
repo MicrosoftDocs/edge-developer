@@ -14,6 +14,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 A WebView2 app depends on the WebView2 Runtime on client machines.  When you distribute your WebView2 app, you need to take into account how the WebView2 Runtime is distributed to and updated on client machines.
 
 
+<!-- ====================================================================== -->
 ## Introduction to the Runtime, Evergreen distribution, and Fixed Version distribution
 
 ### The WebView2 Runtime
@@ -47,6 +48,7 @@ Cons:
 *  The Fixed Version runtime can't be installed by using an installer.
 
 
+<!-- ====================================================================== -->
 ## Understanding the options at the Runtime download page
 
 The [Download the WebView2 Runtime][Webview2Installer] section of the **Microsoft Edge WebView2** page provides several options for distributing the WebView2 Runtime onto client machines.  Understanding the options at this page provides a good introduction, to help decide which approach you want to use.
@@ -115,7 +117,7 @@ For more information, navigate to [Understanding browser versions and WebView2][
 
 Only one installation of the Evergreen WebView2 Runtime is needed for all Evergreen apps on the device.  Several tools are available at [Download the WebView2 Runtime][Webview2Installer] to help you deploy the Evergreen Runtime.
 
-*   For online clients: _WebView2 Runtime Bootstrapper_ is a tiny \(approximately 2 MB\) installer.  The WebView2 Runtime Bootstrapper downloads and installs the Evergreen Runtime from Microsoft servers that matches the user's device architecture.
+*   For online clients: _WebView2 Runtime Bootstrapper_ is a tiny (approximately 2 MB) installer.  The WebView2 Runtime Bootstrapper downloads and installs the Evergreen Runtime from Microsoft servers that matches the user's device architecture.
     *   In the setup part of your WebView2 app, link to the bootstrapper.  Use a link to programmatically download the bootstrapper; select the **Get the Link** button at the above download page.
     *   Or, download the bootstrapper and package it with your WebView2 app.
 
@@ -195,7 +197,7 @@ If you have an offline deployment scenario, where app deployment has to work ent
 
 The Web is constantly evolving.  In the Evergreen distribution mode, the WebView2 Runtime is automatically kept up to date on the client to provide the latest features and security fixes.  If you use Evergreen distribution, to ensure that your WebView2 app stays compatible with the web, you should set up testing infrastructure.
 
-Microsoft Edge preview channels \(Beta, Dev, and Canary\) provide a sneak peek into what is coming next in the WebView2 Runtime.  Test your WebView2 app regularly against a  Microsoft Edge preview channel, and update your app or [report issues][GithubMicrosoftedgeWebviewfeedback] if issues arise.  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.
+Microsoft Edge preview channels (Beta, Dev, and Canary) provide a sneak peek into what is coming next in the WebView2 Runtime.  Test your WebView2 app regularly against a  Microsoft Edge preview channel, and update your app or [report issues][GithubMicrosoftedgeWebviewfeedback] if issues arise.  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.
 
 To help you decide which channel is right, navigate to [Overview of the Microsoft Edge channels][DeployEdgeMicrosoftEdgeChannels].  You can [Download Microsoft Edge Insider Channels][MicrosoftEdgeInsiderDownload] on your test environment, and use `regkey` or environment variables to indicate the channel preference for your testing app.
 
@@ -239,9 +241,9 @@ To use the Fixed Version distribution mode:
 
     *   For .NET, you must specify the environment before the WebView2 `Source` property takes effect.  For .NET, you can use either of the following approaches to specify the environment:
 
-        *   Set the `CreationProperties` \([WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Creationproperties]/[WinForms][ReferenceWinFormsMicrosoftWebWebview2WinFormsWebview2]\) property on the `WebView2` element.  Use the `BrowserExecutableFolder` member in the `CoreWebView2CreationProperties` \([WPF][ReferenceWpfMicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties]/[WinForms][ReferenceWinFormsMicrosoftWebWebview2WinForms]\) class to indicate the path to the Fixed Version binaries.
+        *   Set the `CreationProperties` ([WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Creationproperties]/[WinForms][ReferenceWinFormsMicrosoftWebWebview2WinFormsWebview2]) property on the `WebView2` element.  Use the `BrowserExecutableFolder` member in the `CoreWebView2CreationProperties` ([WPF][ReferenceWpfMicrosoftWebWebview2WpfCorewebview2creationpropertiesCorewebview2creationproperties]/[WinForms][ReferenceWinFormsMicrosoftWebWebview2WinForms]) class to indicate the path to the Fixed Version binaries.
 
-        *   Alternatively, use `EnsureCoreWebView2Async` \([WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]/[WinForms][ReferenceWinformsMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]\) to specify the environment.  Use the `browserExecutableFolder` parameter in [CoreWebView2Environment.CreateAsync][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentCreateasync] to indicate the path to the Fixed Version binaries.
+        *   Alternatively, use `EnsureCoreWebView2Async` ([WPF][ReferenceWpfMicrosoftWebWebview2WpfWebview2Ensurecorewebview2async]/[WinForms][ReferenceWinformsMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]) to specify the environment.  Use the `browserExecutableFolder` parameter in [CoreWebView2Environment.CreateAsync][ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentCreateasync] to indicate the path to the Fixed Version binaries.
 
 1.  Package and ship the Fixed Version binaries with your app.  Update the binaries as appropriate.
 
