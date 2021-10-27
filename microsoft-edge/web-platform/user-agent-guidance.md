@@ -127,7 +127,7 @@ To distinguish between Windows 10 and Windows 11, request the `platformVersion` 
 Combining User-Agent Client Hints with [feature detection](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) is an effective way to deliver compatible web content. Microsoft recommends using this pattern to:
 * Improve code maintainability.
 * Reduce code fragility.
-* Reduce code breakage from changes to the User-Agent String.
+* Reduce code breakage from changes to the User-Agent string.
 
 If you need to check for a Chrome-like browser, Microsoft recommends detecting `Chromium`, which is the engine that powers Microsoft Edge.
 
@@ -154,7 +154,7 @@ If you can't use [feature detection](https://developer.mozilla.org/docs/Learn/To
 
 User-Agent strings are outdated and have a long history of causing website compatibility issues.
 
-Wherever possible, Microsoft recommends minimizing use of Microsoft Edge browser detection logic based on the User-Agent String. If you have a good reason to detect the browser, the Microsoft Edge team recommends using [User-Agent Client Hints](#user-agent-client-hints) as the primary detection logic. [User-Agent Client Hints](#user-agent-client-hints) also reduces the complexity of browser detection code.
+Wherever possible, Microsoft recommends minimizing use of Microsoft Edge browser detection logic based on the User-Agent string. If you have a good reason to detect the browser, the Microsoft Edge team recommends using [User-Agent Client Hints](#user-agent-client-hints) as the primary detection logic. [User-Agent Client Hints](#user-agent-client-hints) also reduces the complexity of browser detection code.
 
 For legacy reference, the following format was used for User-Agent string.
 
