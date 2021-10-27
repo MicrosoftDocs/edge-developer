@@ -26,6 +26,8 @@ ms.localizationpriority: high
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
+
+<!-- ====================================================================== -->
 ## Microsoft Edge and Microsoft Edge Driver now available on Linux
 
 <!-- Title: Microsoft Edge and Microsoft Edge Driver on Linux  -->
@@ -33,12 +35,14 @@ ms.localizationpriority: high
 
 Microsoft Edge Dev is now supported on Ubuntu, Debian, Fedora, and openSUSE distributions.  Download and install the Microsoft Edge Dev `.deb` or `.rpm` package directly from the [Microsoft Edge Insider site][MicrosoftinsiderDownloadPlatformLinux] or use the standard package management tools of your Linux distribution.
 
-If you are using a Linux environment in your continuous integration and delivery \(CI/CD\) solutions, Microsoft Edge Driver is also available on Linux.  To get started automating Microsoft Edge Dev with Microsoft Edge Driver, navigate to [Microsoft Edge Driver Downloads page][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads].  For help with automating Microsoft Edge Dev along with Microsoft Edge Driver, navigate to [Use WebDriver (Chromium) for test automation][WebdriverChromiumMain].
+If you are using a Linux environment in your continuous integration and delivery (CI/CD) solutions, Microsoft Edge Driver is also available on Linux.  To get started automating Microsoft Edge Dev with Microsoft Edge Driver, navigate to [Microsoft Edge Driver Downloads page][MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads].  For help with automating Microsoft Edge Dev along with Microsoft Edge Driver, navigate to [Use WebDriver for test automation][WebdriverMain].
 
 :::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="DevTools in Microsoft Edge on Linux" lightbox="../../media/2020/11/edge-on-linux.msft.png":::
    DevTools in Microsoft Edge on Linux
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Improved webhint and platform tips in the Issues tool
 
 <!-- Title: Improvements to Issues tool and webhint integration  -->
@@ -65,6 +69,8 @@ To help you review issues revealed by [webhint][WebhintMain], the **Issues** too
    **Issues** tool
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Composited Layers are now in 3D View
 
 <!-- Title: 3D View is now integrated with Composited Layers  -->
@@ -72,12 +78,14 @@ To help you review issues revealed by [webhint][WebhintMain], the **Issues** too
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-You may now visualize **Layers** content alongside z-index values and the Document Object Model \(DOM\).  This feature helps you debug without switching between the [3D view][Devtools3dViewIndex] and **Layers** tools as often.  For a comprehensive visual debugging experience, the [3D View and Composited Layers are now combined][Devtools3dViewIndex].
+You may now visualize **Layers** content alongside z-index values and the Document Object Model (DOM).  This feature helps you debug without switching between the [3D view][Devtools3dViewIndex] and **Layers** tools as often.  For a comprehensive visual debugging experience, the [3D View and Composited Layers are now combined][Devtools3dViewIndex].
 
 :::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Composited Layers pane" lightbox="../../media/2020/11/experiments-layers.msft.png":::
    **Composited Layers** pane
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## CSS variable definitions in Styles pane
 
 <!-- Title: Jump to CSS variable definitions  -->
@@ -101,6 +109,8 @@ In the **Styles** pane, [CSS variables][MdnUsingCssCustomProperties] now link di
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Service worker debugging improvements
 
 <!-- Title:  Service worker debugging improvements in the Network, Application, and Sources tools  -->
@@ -168,6 +178,8 @@ To locate the initiator of the request, use the call stack of your JavaScript co
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Copy property value of a network request
 
 <!-- Title: Copy response JSON in Network tool using the contextual menu  -->
@@ -193,6 +205,8 @@ To copy the property value to your clipboard, navigate to [Copy formatted respon
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Customize multi-press keyboard shortcuts
 
 <!-- Title: Customize multi-press keyboard shortcuts  -->
@@ -208,6 +222,8 @@ For example, the red highlight displays a multi-press keyboard shortcut customiz
    Multi-press keyboard shortcuts
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## DevTools now match browser language
 
 In Microsoft Edge version 87, if you turned on the **Match browser language** setting in [DevTools Settings][DevtoolsCustomizeIndexSettings], DevTools did not match the browser language.  In Microsoft Edge version 88, DevTools now matches the browser language if you turn on the **Match browser language** setting.  For more information about the **Match browser language** DevTools Setting, navigate to [Change DevTools language settings][DevtoolsCustomizeLocalization].
@@ -216,6 +232,8 @@ In Microsoft Edge version 87, if you turned on the **Match browser language** se
    **Match browser language** DevTools setting in Japanese
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
@@ -263,7 +281,7 @@ Try out this feature by navigating to [CORS error demo][GlitchCorsErrors].  Open
 
 #### Cross-origin isolation information in the Frame details view
 
-The cross-origin isolated status is now displayed under the **Security & Isolation** section.  The new **API availability** section displays the availability of `SharedArrayBuffer`s \(SAB\) and whether the buffers may be shared using `postMessage()`.  A deprecation warning displays if the SAB and `postMessage()` is currently available, but the context is not cross-origin isolated.  For more information about cross-origin isolation and why it is required for features like `SharedArrayBuffers`, navigate to [WindowOrWorkerGlobalScope.crossOriginIsolated][MdnWindoworworkerglobalscopeCrossoriginisolated].  To review real-time updates of this feature in the Chromium open-source project, navigate to Issue [1139899][CR1139899].
+The cross-origin isolated status is now displayed under the **Security & Isolation** section.  The new **API availability** section displays the availability of `SharedArrayBuffer`s (SAB) and whether the buffers may be shared using `postMessage()`.  A deprecation warning displays if the SAB and `postMessage()` is currently available, but the context is not cross-origin isolated.  For more information about cross-origin isolation and why it is required for features like `SharedArrayBuffers`, navigate to [WindowOrWorkerGlobalScope.crossOriginIsolated][MdnWindoworworkerglobalscopeCrossoriginisolated].  To review real-time updates of this feature in the Chromium open-source project, navigate to Issue [1139899][CR1139899].
 
 :::image type="complex" source="../../media/2020/11/frame-cross-origin-isolated-api.msft.png" alt-text="Cross-origin information" lightbox="../../media/2020/11/frame-cross-origin-isolated-api.msft.png":::
    Cross-origin information
@@ -310,7 +328,7 @@ To review the history of this feature in the Chromium open-source project, navig
 
 To copy the stacktrace to your clipboard, complete the following actions.
 
-1.  Open the contextual menu \(right-click\).
+1.  Open the contextual menu (right-click).
 1.  Choose **Copy** > **Copy stacktrace**.
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1139615][CR1139615].
@@ -321,7 +339,7 @@ To review the history of this feature in the Chromium open-source project, navig
 
 ### Preview Wasm variable value on mouseover
 
-Use this feature to review the value of a WebAssembly \(Wasm\) variable when your code is paused.  To display the current value of a variable, hover on a variable.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [1058836][CR1058836] and [1071432][CR1071432].
+Use this feature to review the value of a WebAssembly (Wasm) variable when your code is paused.  To display the current value of a variable, hover on a variable.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [1058836][CR1058836] and [1071432][CR1071432].
 
 :::image type="complex" source="../../media/2020/11/wasm-mouseover.msft.png" alt-text="Preview Wasm variable on mouseover" lightbox="../../media/2020/11/wasm-mouseover.msft.png":::
    Preview Wasm variable on mouseover
@@ -331,21 +349,20 @@ Use this feature to review the value of a WebAssembly \(Wasm\) variable when you
 
 DevTools now consistently use `kB` for displaying sizes of files and memory.  Previously DevTools mixed `kB` and `KiB`.
 
-*   `kB` or kilobyte \(10^3 or 1000 bytes\)
-*   `KiB` or kibibyte \(2^10 or 1024 bytes\)
+*   `kB` or kilobyte (10^3 or 1000 bytes)
+*   `KiB` or kibibyte (2^10 or 1024 bytes)
 
 For example, the **Network** tool previously used `kB` in the labels, but used `KiB` in calculations.  Your feedback showed that this inconsistency caused confusion.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1035309][CR1035309].
 
+
+<!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
 
-## Getting in touch with Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../../includes/contact-whats-new-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [WhatsNew202010DevtoolsCustomizeKeyboardShortcutsSettings]: ../10/devtools.md#customize-keyboard-shortcuts-in-settings "Customize keyboard shortcuts in Settings - What's New In DevTools (Microsoft Edge 87) | Microsoft Docs"
 [WhatsNew202006DevtoolsWebhintFeedbackInTheIssuesPanel]: ../06/devtools.md#webhint-feedback-in-the-issues-panel "webhint feedback in the Issues panel - What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"
 
@@ -361,11 +378,11 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [DevtoolsNetworkReferenceCopyFormattedResponseJsonClipboard]: ../../../network/reference.md#copy-formatted-response-json-to-the-clipboard "Copy formatted response JSON to the clipboard - Network Analysis reference | Microsoft Docs"
 [DevtoolsNetworkReferenceDisplayTimingBreakdownRequest]: ../../../network/reference.md#display-the-timing-breakdown-of-a-request "Display the timing breakdown of a request - Network Analysis reference | Microsoft Docs"
 
-<!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: ../../../css/reference.md#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS reference | Microsoft Docs"  -->
+<!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: ../../../css/reference.md#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS features reference | Microsoft Docs"  -->
 
 [ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"
 
-[WebdriverChromiumMain]: ../../../../webdriver-chromium/index.md "Use WebDriver (Chromium) for test automation | Microsoft Docs"
+[WebdriverMain]: ../../../../webdriver-chromium/index.md "Use WebDriver for test automation | Microsoft Docs"
 
 [MicrosoftDeveloperMicrosoftEdgeToolsWebdriverDownloads]: https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads "Download WebDriver | Microsoft Developer"
 
@@ -416,7 +433,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-88) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-88) and is authored by [Jecelyn Yeen][JecelynYeen] (Developer advocate, Chrome DevTools).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

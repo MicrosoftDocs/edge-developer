@@ -27,9 +27,11 @@ This article describes common terms used in memory analysis, and is applicable t
 
 The terms and notions described here refer to the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots].  If you have ever worked with either the Java, .NET, or some other memory profiler, then this article may be a refresher.
 
+
+<!-- ====================================================================== -->
 ## Object sizes
 
-Think of memory as a graph with primitive types \(like numbers and strings\) and objects \(associative arrays\).  It may display as a graph with many interconnected points such as following figure.
+Think of memory as a graph with primitive types (like numbers and strings) and objects (associative arrays).  It may display as a graph with many interconnected points such as following figure.
 
 :::image type="complex" source="../media/memory-problems-thinkgraph.msft.png" alt-text="Visual representation of memory" lightbox="../media/memory-problems-thinkgraph.msft.png":::
    Visual representation of memory
@@ -40,7 +42,7 @@ An object may hold memory in two ways:
 *   Directly by the object.
 *   Implicitly by holding references to other objects, and therefore preventing those objects from being automatically disposed by a garbage collector.
 
-When working with the [Memory][DevtoolsMemoryProblemsHeapSnapshots] panel in DevTools \(a tool for investigating memory issues found under **Memory**\), you may find yourself looking at a few different columns of information.  Two that stand out are **Shallow Size** and **Retained Size**, but what do these represent?
+When working with the [Memory][DevtoolsMemoryProblemsHeapSnapshots] panel in DevTools (a tool for investigating memory issues found under **Memory**), you may find yourself looking at a few different columns of information.  Two that stand out are **Shallow Size** and **Retained Size**, but what do these represent?
 
 :::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="Shallow and Retained Size" lightbox="../media/memory-problems-shallow-retained.msft.png":::
    Shallow and Retained Size
@@ -58,11 +60,11 @@ Renderer memory is all memory of the process where an inspected page is rendered
 
 This is the size of memory that is freed once the object is deleted along with the dependent objects that were made unreachable from **Garbage Collector roots**.
 
-**Garbage Collector roots** are made up of **handles** that are created \(either local or global\) when making a reference from native code to a JavaScript object outside of V8.  All such handles may be found within a heap snapshot under **GC roots** > **Handle scope** and **GC roots** > **Global handles**.  Describing the handles in this documentation without diving into details of the browser implementation may be confusing.  Both Garbage Collector roots and the handles are not something you need to worry about.
+**Garbage Collector roots** are made up of **handles** that are created (either local or global) when making a reference from native code to a JavaScript object outside of V8.  All such handles may be found within a heap snapshot under **GC roots** > **Handle scope** and **GC roots** > **Global handles**.  Describing the handles in this documentation without diving into details of the browser implementation may be confusing.  Both Garbage Collector roots and the handles are not something you need to worry about.
 
 There are lots of internal Garbage Collector roots, most of which are not interesting for the users.  From the applications standpoint, there are the following kinds of roots.
 
-*   Window global object \(in each iframe\).  In the heap snapshots, the `distance` field indicates the number of property references on the shortest retaining path from the window.
+*   Window global object (in each iframe).  In the heap snapshots, the `distance` field indicates the number of property references on the shortest retaining path from the window.
 *   The document DOM tree, consisting of all native DOM nodes that are reachable by traversing the document.  Not all of the nodes have JavaScript wrappers, but if a node has a wrapper, the node is alive while the document is alive.
 *   Sometimes objects are retained by the debug context in the **Sources** tool and the **Console**, such as after Console evaluation.  Create heap snapshots with a cleared **Console** tool and no active breakpoints in the debugger in the **Sources** tool.
 
@@ -80,11 +82,13 @@ Whatever is not reachable from the root gets garbage collected.
 > [!NOTE]
 > Both the [Shallow size](#shallow-size) and [Retained size](#retained-size) columns represent data in bytes.
 
+
+<!-- ====================================================================== -->
 ## Objects retaining tree
 
 The heap is a network of interconnected objects.  In the mathematical world, this structure is called a **graph** or memory graph.  A graph is constructed from **nodes** connected by means of **edges**, both of which are given labels.
 
-*   **Nodes** \(or **objects**\) are labelled using the name of the **constructor** function that was used to build them.
+*   **Nodes** (or **objects**) are labelled using the name of the **constructor** function that was used to build them.
 *   **Edges** are labelled using the names of **properties**.
 
 Learn [how to record a profile using the Heap Profiler][DevtoolsMemoryProblemsHeapSnapshots].  In the following figure, some of the notable things in the Heap Snapshot recording in the [Memory][DevtoolsMemoryProblemsHeapSnapshots] tool include distance:  the distance from the Garbage Collector root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that is something worth investigating.
@@ -93,6 +97,8 @@ Learn [how to record a profile using the Heap Profiler][DevtoolsMemoryProblemsHe
    Distance from root
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Dominators
 
 Dominator objects are comprised of a tree structure because each object has exactly one dominator.  A dominator of an object may lack direct references to an object it dominates; that is, the tree of the dominator is not a spanning tree of the graph.
@@ -115,23 +121,25 @@ In the following figure, node `#3` is the dominator of `#10`, but `#7` also exis
    Animated dominator illustration
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## V8 specifics
 
-When profiling memory, it is helpful to understand why heap snapshots look a certain way.  This section describes some memory-related topics specifically corresponding to the **V8 JavaScript virtual machine** \(V8 VM or VM\).
+When profiling memory, it is helpful to understand why heap snapshots look a certain way.  This section describes some memory-related topics specifically corresponding to the **V8 JavaScript virtual machine** (V8 VM or VM).
 
 ### JavaScript object representation
 
 There are three primitive types:
 
-*   Numbers \(for example `3.14159...`\)
-*   Booleans \(`true` or `false`\)
-*   Strings \(for example `"Werner Heisenberg"`\)
+*   Numbers (for example `3.14159...`)
+*   Booleans (`true` or `false`)
+*   Strings (for example `"Werner Heisenberg"`)
 
 Primitives are not able to reference other values and are always leafs or terminating nodes.
 
 **Numbers** are able to be stored as either:
 
-*   an immediate 31-bit integer values called **small integers** \(**SMI**s\), or
+*   an immediate 31-bit integer values called **small integers** (**SMI**s), or
 *   heap objects, referred to as **heap numbers**. Heap numbers are used for storing values that do not fit into the SMI form, such as **doubles**, or when a value needs to be **boxed**, such as setting properties on it.
 
 **Strings** are able to be stored in either:
@@ -139,7 +147,7 @@ Primitives are not able to reference other values and are always leafs or termin
 *   the **VM heap**, or
 *   externally in the **memory of the renderer**.  A **wrapper object** is created and used for accessing external storage where, for example, script sources and other content that is received from the Web is stored, rather than copied onto the VM heap.
 
-Memory for new JavaScript objects is allocated from a dedicated JavaScript heap \(or **VM heap**\).  These objects are managed by the garbage collector in V8 and therefore, stay alive as long as there is at least one strong reference to them.
+Memory for new JavaScript objects is allocated from a dedicated JavaScript heap (or **VM heap**).  These objects are managed by the garbage collector in V8 and therefore, stay alive as long as there is at least one strong reference to them.
 
 Anything not in the JavaScript heap is called a **native object**.  Native objects, in contrast to heap objects, are not managed by the V8 garbage collector throughout their lifetime, and may only be accessed from JavaScript using the JavaScript wrapper object.
 
@@ -167,19 +175,16 @@ Each **native objects** group is made up of objects that hold mutual references 
 
 Each wrapper object holds a reference to the corresponding native object, for redirecting commands to it.  In turn, an object group holds wrapper objects.  However, this does not create an uncollectable cycle, as Garbage Collector is smart enough to release object groups whose wrappers are no longer referenced.  But forgetting to release a single wrapper holds the whole group and associated wrappers.
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "How to Record Heap Snapshots | Microsoft Docs"
 
 [V8FastProperties]: https://v8.dev/blog/fast-properties "Fast properties in V8 | V8"
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) and is authored by [Meggin Kearney][MegginKearney] \(Technical Writer\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) and is authored by [Meggin Kearney][MegginKearney] (Technical Writer).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

@@ -32,6 +32,8 @@ With a USB cable and Microsoft Edge DevTools, run a site from a development mach
 *   Port forwarding enables you to view content hosted by the web server running in your development machine on your Android device.
 *   If your web server is using a custom domain, set up your Android device to access the content at that domain with custom domain mapping.
 
+
+<!-- ====================================================================== -->
 ## Set up port forwarding
 
 Port forwarding enables your Android device to access content that is being hosted on the web server running in your development machine.  Port forwarding works by creating a listening TCP port on your Android device that maps to a TCP port on your development machine.  Traffic between the ports travel through the USB connection between your Android device and development machine, so the connection does not depend on your network configuration.
@@ -58,11 +60,13 @@ Port forwarding is now set up.  Review the status indicator for the port forward
 
 To view the content, open up Microsoft Edge on your Android device and go to the `localhost` port that you specified in the **Device port** field.  For example, if you entered `5000` in the field, visit `localhost:5000`.
 
+
+<!-- ====================================================================== -->
 ## Map to custom local domains
 
 Custom domain mapping enables you to view content on an Android device from a web server on your development machine that is using a custom domain.
 
-For example, suppose that your site uses a third-party JavaScript library that only works on the domain `microsoft-edge.devtools`.  So, you create an entry in your `hosts` file on your development machine to map this domain to `localhost` \(for example, `127.0.0.1 microsoft-edge.devtools`\).  After setting up custom domain mapping and port forwarding, view the site on your Android device at the URL `microsoft-edge.devtools`.
+For example, suppose that your site uses a third-party JavaScript library that only works on the domain `microsoft-edge.devtools`.  So, you create an entry in your `hosts` file on your development machine to map this domain to `localhost` (for example, `127.0.0.1 microsoft-edge.devtools`).  After setting up custom domain mapping and port forwarding, view the site on your Android device at the URL `microsoft-edge.devtools`.
 
 ### Set up port forwarding to proxy server
 
@@ -103,23 +107,20 @@ If your web server is running off of a non-standard port, remember to specify th
 > [!TIP]
 > To resume normal browsing, remember to revert the proxy settings on your Android device after you disconnect from the development machine.
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [RemoteDebuggingGettingStarted]: ./index.md "Get started with remote debugging Android devices | Microsoft Docs"
-
+<!-- external links -->
 [CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Charles Web Debugging Proxy"
-
 [SquidCacheWiki]: https://wiki.squid-cache.org "Squid Wiki Proxy Wiki"
-
 [TelerikFiddler]: https://www.telerik.com/fiddler "Fiddler - Free Web Debugging Proxy"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) and [Meggin Kearney][MegginKearney] \(Tech Writer\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse) and [Meggin Kearney][MegginKearney] (Technical Writer).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

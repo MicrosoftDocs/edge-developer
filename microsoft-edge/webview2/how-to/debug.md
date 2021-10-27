@@ -13,13 +13,15 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 The goal of the Microsoft Edge WebView2 control is to combine the best of both the web and native app development features and tools.  When you develop your WebView2 app, you should debug your app.  This article outlines the different tools to use to debug both your web and native code in your WebView2 app.
 
+
+<!-- ====================================================================== -->
 ## [Microsoft Edge DevTools](#tab/devtools)
 
-Use [Microsoft Edge (Chromium) Developer Tools][DevtoolsGuideChromiumMain] to debug web content displayed in WebView2 controls, in the same way that you may debug for another webpage displayed in Microsoft Edge.  To open the DevTools, set focus on the WebView control and then use one of the following actions.
+Use [Microsoft Edge Developer Tools][DevtoolsGuideChromiumMain] to debug web content displayed in WebView2 controls, in the same way that you may debug for another webpage displayed in Microsoft Edge.  To open the DevTools, set focus on the WebView control and then use one of the following actions.
 
 *   Select `F12`.
 *   Select `Ctrl`+`Shift`+`I`.
-*   Open the context menu \(right-click\) and choose `Inspect`.
+*   Open the context menu (right-click) and choose `Inspect`.
 
 For more information, navigate to [DevTools overview][DevtoolsGuideChromiumMain].
 
@@ -27,12 +29,14 @@ For more information, navigate to [DevTools overview][DevtoolsGuideChromiumMain]
    DevTools debugging
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## [Visual Studio](#tab/visualstudio)
 
 Visual Studio provides various debugging tools for web and native code in WebView2 apps.  In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available as usual.  Use the following process to debug web and native code in Win32 apps or Office Add-ins only.
 
 > [!IMPORTANT]
-> When you debug your app in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.  Select `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.
+> When you debug your app in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.  Select `Ctrl`+`Shift`+`I`, or use the context menu (right-click) to avoid the situation.
 
 Before you begin, ensure the following requirements are met.
 
@@ -62,7 +66,7 @@ Install and set up the script debugger tools in Visual Studio.
         :::image-end:::
 
 1.  Enable script debugging for WebView2 apps.
-    1.  In your WebView2 project, open the context menu \(right-click\), and choose **Properties**.
+    1.  In your WebView2 project, open the context menu (right-click), and choose **Properties**.
     1.  Under the **Configuration Properties**, choose **Debugging**.
     1.  Under the **Debugger Type**, choose **JavaScript (WebView2)**.
 
@@ -93,6 +97,8 @@ Complete the following actions to debug your WebView2 app.
 > [!NOTE]
 > If you use the WebView2 [SetVirtualHostNameToFolderMapping][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Setvirtualhostnametofoldermapping] method, the debugger in Visual Studio 2019 doesn't understand the virtual source path mapping, so breakpoints don't work correctly.  This source path mapping works when you use the debugger in Visual Studio Code.
 
+
+<!-- ====================================================================== -->
 ## [Visual Studio Code](#tab/visualstudiocode)
 
 Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.  <!--Ensure that you're using Visual Studio Code version [insert build here] or later.  -->
@@ -239,26 +245,26 @@ In Visual Studio Code, complete the following actions to debug your code.
 
 * * *
 
+
+<!-- ====================================================================== -->
 ## See also
 
-*   To get started using WebView2, navigate to [WebView2 Get Started Guides][Webview2MainGetStarted].
-*   For a comprehensive example of WebView2 capabilities, navigate to the [WebView2Samples][GithubMicrosoftedgeWebview2samples] repo on GitHub.
-*   For more detailed information about WebView2 APIs, navigate to [API reference][Webview2ApiReference].
-*   For more information about WebView2, navigate to [WebView2 Resources][Webview2MainNextSteps].
+*  [WebView2 Get Started Guides][Webview2MainGetStarted]
+*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] - a comprehensive example of WebView2 capabilities.
+*  [WebView2 API reference][Webview2ApiReference]
+*  [See also][Webview2MainNextSteps] in _Introduction to Microsoft Edge WebView2_.
 
-## Getting in touch with the Microsoft Edge WebView team
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 
-[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge (Chromium) Developer Tools | Microsoft Docs"
+[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge Developer Tools | Microsoft Docs"
 
 [Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Setvirtualhostnametofoldermapping]: /dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping "CoreWebView2.SetVirtualHostNameToFolderMapping(String, String, CoreWebView2HostResourceAccessKind) Method (Microsoft.Web.WebView2.Core) | Microsoft Docs"
 [Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: /dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments "CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property (Microsoft.Web.WebView2.Core) | Microsoft Docs"
 [Webview2ReferenceWin32Webview2IdlParameters]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions  "CreateCoreWebView2Environment - Globals | Microsoft Docs"
 [Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"
-[Webview2MainNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
+[Webview2MainNextSteps]: ../index.md#see-also "See also - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
 [Webview2MainGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
 
 [GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"

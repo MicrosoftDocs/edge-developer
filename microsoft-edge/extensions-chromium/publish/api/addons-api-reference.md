@@ -357,6 +357,7 @@ Here are a list of common error codes and possible reasons.  For a full list, na
 | 500 Internal Server Error | The request wasn't completed. | The server met an unexpected condition. |
 
 
+<!-- ====================================================================== -->
 ## See also
 
 *  [Using the Microsoft Edge Add-ons API][UsingAddonsAPI]

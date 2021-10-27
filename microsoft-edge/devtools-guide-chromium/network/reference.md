@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Discover new ways to analyze how your page loads in this comprehensive reference of Microsoft Edge DevTools network analysis features.
 
+
+<!-- ====================================================================== -->
 ## Record network requests
 
 By default, DevTools record all network requests in the **Network** tool, so long as DevTools is open.
@@ -37,12 +39,12 @@ By default, DevTools record all network requests in the **Network** tool, so lon
 
 To stop recording requests, complete the following steps.
 
-1.  On the **Network** tool, choose **Stop recording network log** \(![Stop recording network log](../media/record-on-icon.msft.png)\).  It turns grey to indicate that DevTools is no longer recording requests.
-1.  Select `Control`+`E` \(Windows, Linux\) or `Command`+`E` \(macOS\) while the **Network** tool is in focus.
+1.  On the **Network** tool, choose **Stop recording network log** (![Stop recording network log](../media/record-on-icon.msft.png)).  It turns grey to indicate that DevTools is no longer recording requests.
+1.  Select `Control`+`E` (Windows, Linux) or `Command`+`E` (macOS) while the **Network** tool is in focus.
 
 ### Clear requests
 
-Choose **Clear** \(![Clear](../media/clear-requests-icon.msft.png)\) on the **Network** tool to clear all requests from the Requests table.
+Choose **Clear** (![Clear](../media/clear-requests-icon.msft.png)) on the **Network** tool to clear all requests from the Requests table.
 
 :::image type="complex" source="../media/network-network-clear-button.msft.png" alt-text="The Clear button" lightbox="../media/network-network-clear-button.msft.png":::
    The **Clear** button
@@ -80,7 +82,7 @@ After capturing a screenshot, you interact with it in the following ways.
 
 <!--  ### Replay XHR request  -->
 
-<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu \(right-click\), and choose **Replay XHR**.  -->
+<!--  To replay an XHR request, hover on the request in the Requests table, open the contextual menu (right-click), and choose **Replay XHR**.  -->
 
 <!--
 :::image type="complex" source="../media/network-replay-xhr.msft.png" alt-text="Choose Replay XHR" lightbox="../media/network-replay-xhr.msft.png":::
@@ -88,6 +90,8 @@ After capturing a screenshot, you interact with it in the following ways.
 :::image-end:::
 -->
 
+
+<!-- ====================================================================== -->
 ## Change loading behavior
 
 ### Emulate a first-time visitor by disabling the browser cache
@@ -103,13 +107,13 @@ To emulate how a first-time user experiences your site, turn on the **Disable ca
 If you want to disable the cache while working in other DevTools panels, use the Network Conditions drawer.
 
 1.  Open the **Network Conditions** drawer.
-1.  Turn on \(or off\) the **Disable cache** checkbox.
+1.  Turn on (or off) the **Disable cache** checkbox.
 
 <!--todo: add network condition section when available -->
 
 ### Manually clear the browser cache
 
-To manually clear the browser cache at any time, open the contextual menu \(right-click\) anywhere in the Requests table and choose **Clear Browser Cache**.
+To manually clear the browser cache at any time, open the contextual menu (right-click) anywhere in the Requests table and choose **Clear Browser Cache**.
 
 :::image type="complex" source="../media/network-network-clear-browser-cache.msft.png" alt-text="Choose Clear Browser Cache" lightbox="../media/network-network-clear-browser-cache.msft.png":::
    Choose **Clear Browser Cache**
@@ -150,7 +154,7 @@ If you want to throttle the network connection while working in other DevTools p
 
 ### Manually clear browser cookies
 
-To manually clear browser cookies at any time, hover anywhere in the Requests table, open the contextual menu \(right-click\), and choose **Clear Browser Cookies**.
+To manually clear browser cookies at any time, hover anywhere in the Requests table, open the contextual menu (right-click), and choose **Clear Browser Cookies**.
 
 :::image type="complex" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="Choose Clear Browser Cookies" lightbox="../media/network-network-clear-browser-cookies.msft.png":::
    Choose **Clear Browser Cookies**
@@ -164,6 +168,8 @@ To manually override the user agent, use the following steps.
 1.  Clear the **Select automatically** checkbox.
 1.  Choose a user agent option from the menu, or enter a custom user agent in the text box.
 
+
+<!-- ====================================================================== -->
 ## Set user agent client hints
 
 If your site employs [user agent client hints](../../web-platform/user-agent-guidance.md), use the **Network conditions** panel to provide different user agent client hints.
@@ -192,6 +198,8 @@ If your site employs [user agent client hints](../../web-platform/user-agent-gui
 
 You may also set user agent client hints in [Emulate mobile devices in Microsoft Edge](../device-mode/index.md).
 
+
+<!-- ====================================================================== -->
 ## Filter requests
 
 ### Filter requests by properties
@@ -211,14 +219,14 @@ The complete list of supported properties.
 
 | Property | Details |
 |:--- | :--- |
-| `domain` | Only display resources from the specified domain.  You may use a wildcard character \(`*`\) to include multiple domains.  For example, `*.com` displays resources from all domain names ending in `.com`.  DevTools populate the autocomplete dropdown menu with all of the domains that are found. |
+| `domain` | Only display resources from the specified domain.  You may use a wildcard character (`*`) to include multiple domains.  For example, `*.com` displays resources from all domain names ending in `.com`.  DevTools populate the autocomplete dropdown menu with all of the domains that are found. |
 | `has-response-header` | Displays the resources that contain the specified HTTP response header.  DevTools populate the autocomplete dropdown with all of the response headers that are found. |
 | `is` | Use `is:running` to find `WebSocket` resources. |
 | `larger-than` | Displays resources that are larger than the specified size, in bytes.  Setting a value of `1000` is equivalent to setting a value of `1k`. |
 | `method` | Displays resources that were retrieved over a specified HTTP method type.  DevTools populate the dropdown with all of the HTTP methods  that are found. |
 | `mime-type` | Displays resources of a specified MIME type.  DevTools populate the dropdown with all MIME types  that are found. |
-| `mixed-content` | Show all mixed content resources \(`mixed-content:all`\) or just the ones that are currently displayed \(`mixed-content:displayed`\). |
-| `scheme` | Displays resources retrieved over unprotected HTTP \(`scheme:http`\) or protected HTTPS \(`scheme:https`\). |
+| `mixed-content` | Show all mixed content resources (`mixed-content:all`) or just the ones that are currently displayed (`mixed-content:displayed`). |
+| `scheme` | Displays resources retrieved over unprotected HTTP (`scheme:http`) or protected HTTPS (`scheme:https`). |
 | `set-cookie-domain` | Displays resources that have a `Set-Cookie` header with a `Domain` attribute that matches the specified value.  DevTools populate the autocomplete with all of the cookie domains that are found. |
 | `set-cookie-name` | Displays resources that have a `Set-Cookie` header with a name that matches the specified value.  DevTools populate the autocomplete with all of the cookie names that are found. |
 | `set-cookie-value` | Displays resources that have a `Set-Cookie` header with a value that matches the specified value.  DevTools populate the autocomplete with all of the cookie values that are found. |
@@ -312,7 +320,7 @@ To filter requests by request type, choose the one of the following buttons on t
 If the buttons do not display, the **Filters** pane may be hidden.
 For more information, navigate to [Hide the Filters pane](#hide-the-filters-pane).
 
-To enable multiple type filters simultaneously, hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and then choose.
+To enable multiple type filters simultaneously, hold `Control` (Windows, Linux) or `Command` (macOS) and then choose.
 
 :::image type="complex" source="../media/network-network-type-filters.msft.png" alt-text="Use the Type filters to display JS, CSS, and Document resources" lightbox="../media/network-network-type-filters.msft.png":::
    Use the Type filters to display JS, CSS, and Document resources
@@ -336,6 +344,8 @@ To hide the requests, turn off the **Hide data URLs** checkbox.
    The **Hide Data URLs** checkbox
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Sort requests
 
 By default, the requests in the Requests table are sorted by initiation time, but you may sort the table using other criteria.
@@ -346,7 +356,7 @@ Choose the header of any column in the Requests to sort requests by that column.
 
 ### Sort by activity phase
 
-To change how the Waterfall sorts requests, hover on the header of the Requests table, open the contextual menu \(right-click\), hover on **Waterfall**, and choose one of the following options.
+To change how the Waterfall sorts requests, hover on the header of the Requests table, open the contextual menu (right-click), hover on **Waterfall**, and choose one of the following options.
 
 :::row:::
    :::column span="1":::
@@ -392,9 +402,11 @@ To change how the Waterfall sorts requests, hover on the header of the Requests 
 These descriptions assume that each respective option is ranked from shortest to longest.  Choose the header of the **Waterfall** column to reverse the order.
 
 :::image type="complex" source="../media/network-network-waterfall-total-duration.msft.png" alt-text="Sort the Waterfall by total duration" lightbox="../media/network-network-waterfall-total-duration.msft.png":::
-   Sort the Waterfall by total duration  \(The lighter portion of each bar is time spent waiting and the darker portion is time spent downloading bytes\)
+   Sort the Waterfall by total duration  (The lighter portion of each bar is time spent waiting and the darker portion is time spent downloading bytes)
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Analyze requests
 
 So long as DevTools are open, it logs all requests in the **Network** tool.
@@ -474,7 +486,7 @@ The Requests table displays the following columns by default.
 
 #### Add or remove columns
 
-Hover on the header of the Requests table, open the contextual menu \(right-click\), and choose an option to hide or show it.  Currently displayed options have checkmarks next to each item.
+Hover on the header of the Requests table, open the contextual menu (right-click), and choose an option to hide or show it.  Currently displayed options have checkmarks next to each item.
 
 :::image type="complex" source="../media/network-network-requests-add-column.msft.png" alt-text="Add a column to the Requests table" lightbox="../media/network-network-requests-add-column.msft.png":::
    Add a column to the Requests table
@@ -482,7 +494,7 @@ Hover on the header of the Requests table, open the contextual menu \(right-clic
 
 #### Add custom columns
 
-To add a custom column to the Requests table, hover on the header of the Requests table, open the contextual menu \(right-click\), and choose **Response Headers** > **Manage Header Columns**.
+To add a custom column to the Requests table, hover on the header of the Requests table, open the contextual menu (right-click), and choose **Response Headers** > **Manage Header Columns**.
 
 :::image type="complex" source="../media/network-network-requests-add-custom.msft.png" alt-text="Add a custom column to the Requests table" lightbox="../media/network-network-requests-add-custom.msft.png":::
    Add a custom column to the Requests table
@@ -714,7 +726,7 @@ More information about each of the phases that may display in the **Timing** pan
 :::row-end:::
 :::row:::
    :::column span="1":::
-      **Waiting \(TTFB\)**
+      **Waiting (TTFB)**
    :::column-end:::
    :::column span="2":::
       The browser is waiting for the first byte of a response.  TTFB stands for Time To First Byte.  This timing includes one round trip of latency and the time the server took to prepare the response.
@@ -816,16 +828,18 @@ init();
 Turn on the **Use large request rows** checkbox and then review the bottom value of the **Size** column.
 
 :::image type="complex" source="../media/network-network-requests-uncompressed-compare.msft.png" alt-text="An example of uncompressed resources" lightbox="../media/network-network-requests-uncompressed-compare.msft.png":::
-   An example of uncompressed resources  \(The compressed size of the `jquery-3.3.1.min.js` file that was sent over the network was `29.9 KB`, whereas the uncompressed size was `84.9 KB`\)
+   An example of uncompressed resources  (The compressed size of the `jquery-3.3.1.min.js` file that was sent over the network was `29.9 KB`, whereas the uncompressed size was `84.9 KB`)
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Export requests data
 
 ### Save all network requests to a HAR file
 
 To save all network requests to a HAR file, complete the following steps.
 
-1.  Hover on any request in the Requests table and open the contextual menu \(right-click\).
+1.  Hover on any request in the Requests table and open the contextual menu (right-click).
 1.  Choose **Save as HAR with Content**.  DevTools saves all requests that have occurred since you opened DevTools to the HAR file.  You are not able to filter requests.  You are also not able to save a single request.
 
 Once you save a HAR file, you may import it back into DevTools for analysis.  Just drag-and-drop the HAR file into the Requests table.
@@ -840,7 +854,7 @@ Once you save a HAR file, you may import it back into DevTools for analysis.  Ju
 
 ### Copy one or more requests to the clipboard
 
-Under the **Name** column of the Requests table, hover on a request, open the contextual menu \(right-click\), hover on **Copy**, and choose one of the following options.
+Under the **Name** column of the Requests table, hover on a request, open the contextual menu (right-click), hover on **Copy**, and choose one of the following options.
 
 | Name | Details |
 |:--- |:--- |
@@ -917,7 +931,7 @@ Under the **Name** column of the Requests table, hover on a request, open the co
 
 ### Copy formatted response JSON to the clipboard
 
-Choose a network request and navigate to the **Headers** pane.  To copy the JSON value of a response, navigate to **Request payload**, hover on the JSON response content, open the contextual menu \(right-click\), and choose **Copy Value**.
+Choose a network request and navigate to the **Headers** pane.  To copy the JSON value of a response, navigate to **Request payload**, hover on the JSON response content, open the contextual menu (right-click), and choose **Copy Value**.
 
 :::row:::
    :::column span="":::
@@ -938,13 +952,15 @@ To copy property values from network requests to your clipboard, complete the fo
 
 1.  Open the **Headers** pane.
 1.  Open one of the following header sections.
-    *   Request payload \(JSON\)
+    *   Request payload (JSON)
     *   Form Data
     *   Query String Parameters
     *   Request Headers
     *   Response Headers
-1.  Open the contextual menu \(right-click\) > **Copy value**.  You may now paste the value into any editor to review it.
+1.  Open the contextual menu (right-click) > **Copy value**.  You may now paste the value into any editor to review it.
 
+
+<!-- ====================================================================== -->
 ## Change the layout of the Network panel
 
 You may expand or collapse sections of the **Network** tool UI to focus important information.
@@ -952,7 +968,7 @@ You may expand or collapse sections of the **Network** tool UI to focus importan
 ### Hide the Filters pane
 
 By default, DevTools show the **Filters** pane.
-Choose **Filter** \(![Filter](../media/filter-icon.msft.png)\) to hide it.
+Choose **Filter** (![Filter](../media/filter-icon.msft.png)) to hide it.
 
 :::image type="complex" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="The Hide Filters button" lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
    The Hide Filters button
@@ -976,23 +992,20 @@ By default, DevTools displays the **Overview** pane.  To hide it, turn off the *
    The **Show Overview** checkbox
 :::image-end:::
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Debug Progressive Web Apps | Microsoft Docs"
-
 <!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->
-
+<!-- external links -->
 [MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "Data URLs | MDN"
-
 [WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Proxy server - Wikipedia"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/reference) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/reference) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

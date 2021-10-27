@@ -39,6 +39,8 @@ Remote debug live content on an Android device from your Windows or macOS comput
 > Remote debugging the Microsoft Edge app on iOS devices is not currently supported.  The following guide is specifically focused on remote debugging Microsoft Edge on Android devices.
 > If you have a macOS device, follow the [Brightcove Debugging guide][BrightcoveSupportDebuggingMobileDevices] to remotely debug Microsoft Edge on an iOS device using Safari.  For more information about the Web Inspector tool in Safari, navigate to [Safari Web Development Tools][AppleDeveloperSafariTools].
 
+
+<!-- ====================================================================== -->
 ## Step 1: Discover your Android device
 
 The workflow below works for most users.  For more help, navigate to [Troubleshooting: DevTools is not detecting the Android device](#troubleshooting-devtools-is-not-detecting-the-android-device) section.
@@ -77,7 +79,7 @@ Use the following tips to help you troubleshoot the correct settings for your ha
 Use the following tips to help you verify that your software is set up correctly.
 
 *   If your development machine is running Windows, try manually installing the USB drivers for your Android device.  For more information, navigate to [Install OEM USB Drivers][AndroidDeveloperToolsOemUsb].
-*   Some combinations of Windows and Android devices \(especially Samsung\) require additional settings.  For more information, navigate to [DevTools Devices does not detect device when plugged in][Stackoverflow21925992].
+*   Some combinations of Windows and Android devices (especially Samsung) require additional settings.  For more information, navigate to [DevTools Devices does not detect device when plugged in][Stackoverflow21925992].
 
 Use the following tips to help you troubleshoot if the **Allow USB Debugging** prompt is not displayed on your Android device.
 
@@ -92,6 +94,8 @@ Use the following tips to help you troubleshoot if the **Allow USB Debugging** p
 
 If you find a solution that is not mentioned on this page or in [DevTools Devices does not detect device when plugged in][Stackoverflow21925992] on Stack Overflow, please add your solution to the Stack Overflow question<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->.
 
+
+<!-- ====================================================================== -->
 ## Step 2: Debug content on your Android device from your development machine
 
 1.  Open Microsoft Edge on your Android device.
@@ -119,14 +123,14 @@ Choose **focus tab**, **reload**, or **close** next to the tab that you want to 
 
 Navigate to the **Elements** tool of your DevTools instance, and hover on an element to highlight it in the viewport of your Android device.
 
-You may also select an element on your Android device screen to select it in the **Elements** tool.  Choose **Select Element** \(![Select Element](../media/select-element-icon.msft.png)\) icon on your DevTools instance, and then select the element on your Android device screen.
+You may also select an element on your Android device screen to select it in the **Elements** tool.  Choose **Select Element** (![Select Element](../media/select-element-icon.msft.png)) icon on your DevTools instance, and then select the element on your Android device screen.
 
 > [!NOTE]
 > **Select Element** is disabled after the first selection, so you must re-enable it every time you want to use the feature.
 
 ### Screencast your Android screen to your development machine
 
-Choose **Toggle Screencast** \(![Toggle Screencast](../media/toggle-screencast-icon.msft.png)\) icon to view the content of your Android device in your DevTools instance.
+Choose **Toggle Screencast** (![Toggle Screencast](../media/toggle-screencast-icon.msft.png)) icon to view the content of your Android device in your DevTools instance.
 
 You are able to interact with the screencast in the following ways.
 
@@ -142,12 +146,10 @@ You are able to interact with the screencast in the following ways.
 > *   Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of the performance of your page.
 > *   If your Android device screen locks, the content of your screencast disappears.  Unlock your Android device screen to automatically resume the screencast.
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
+<!-- external links -->
 [AndroidDeveloperStudioDevOptions]: https://developer.android.com/studio/debug/dev-options "Configure on-device developer options | Android Developer"
 [AndroidDeveloperToolsOemUsb]: https://developer.android.com/tools/extras/oem-usb.html "Install OEM USB drivers | Android Developers"
 
@@ -161,9 +163,11 @@ You are able to interact with the screencast in the following ways.
 
 [Stackoverflow21925992]: https://stackoverflow.com/questions/21925992 "DevTools Devices does not detect device when plugged in - Stack Overflow"
 
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

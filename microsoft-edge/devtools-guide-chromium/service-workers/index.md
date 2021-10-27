@@ -26,6 +26,8 @@ The experiences span three different developer tools.
 1.  The [Application](#application) tool.  To debug the service workers, navigate to the **Service Workers** tool.
 1.  The [Sources](#sources) tool.  Access page script information when stepping into fetch event handlers.
 
+
+<!-- ====================================================================== -->
 ## Network
 
 :::image type="complex" source="../media/sw-network-timeline.msft.png" alt-text="Service worker timeline in the Network tool" lightbox="../media/sw-network-timeline.msft.png":::
@@ -48,6 +50,8 @@ To make request routing easier to visualize, timelines now display the service w
 
 To learn more about the `respondWith` fetch events, choose the dropdown arrow to the left of the `respondWith`.  To find more details about the **Original Request** and **Response Received**, use the corresponding dropdown arrows.
 
+
+<!-- ====================================================================== -->
 ## Application
 
 :::image type="complex" source="../media/sw-application-timeline.msft.png" alt-text="Application view" lightbox="../media/sw-application-timeline.msft.png":::
@@ -68,6 +72,8 @@ You may now access the service worker timelines through the **Network** tool in 
 
 The **Network** tool displays the network requests that went through the service worker you are debugging.  The automatic filter is a way to narrow down your exploration.
 
+
+<!-- ====================================================================== -->
 ## Sources
 
 :::image type="complex" source="../media/sw-sources.msft.png" alt-text="DOM tree" lightbox="../media/sw-sources.msft.png":::
@@ -80,12 +86,9 @@ To find more stack information, set a break point in the fetch handler.  The det
 
 The Microsoft Edge DevTools team plans to further develop the cache detail and are investigating more ways to improve the service worker debugging experience for [Progressive Web Application][MdnProgressiveWebApps] developers.
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [MdnFetchEvent]: https://developer.mozilla.org/docs/Web/API/FetchEvent "FetchEvent | MDN"
 [MdnProgressiveWebApps]: https://developer.mozilla.org/docs/Web/Progressive_web_apps "Progressive web apps (PWAs) | MDN"
 [MdnServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "Service Worker API | MDN"

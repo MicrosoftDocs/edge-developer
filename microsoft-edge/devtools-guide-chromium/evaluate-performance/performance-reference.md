@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 The timeline events mode displays all events triggered while making a recording.  Use the timeline event reference to learn more about each timeline event type.
 
+
+<!-- ====================================================================== -->
 ## Common timeline event properties
 
 Certain details are present in events of all types, while some only apply to certain event types.  This section lists properties common to different event types.  Properties specific to certain event types are listed in the references for those event types that follow.
@@ -35,12 +37,14 @@ Certain details are present in events of all types, while some only apply to cer
 | Call Stack | For events with **child events**, the time taken by each category of events. |
 | CPU time | How much CPU time the recorded event took. |
 | Details | Other details about the event. |
-| Duration \(at time-stamp\) | How long it took the event with all of its children to complete; timestamp is the time at which the event occurred, relative to when the recording started. |
+| Duration (at time-stamp) | How long it took the event with all of its children to complete; timestamp is the time at which the event occurred, relative to when the recording started. |
 | Self time | How long the event took without any of its children. |
-| Used Heap Size | Amount of memory being used by the application when the event was recorded, and the delta \(+/-\) change in used heap size since the last sampling. |
+| Used Heap Size | Amount of memory being used by the application when the event was recorded, and the delta (+/-) change in used heap size since the last sampling. |
 
 <!--todo: add nested and child events (timelinetool) section when available -->
 
+
+<!-- ====================================================================== -->
 ## Loading events
 
 This section lists events that belong to Loading category and their properties.
@@ -58,12 +62,14 @@ This section lists events that belong to Loading category and their properties.
 | Property | Description |
 |:--- |:--- |
 | Resource | The URL of the requested resource. |
-| Preview | Preview of the requested resource \(images only\). |
-| Request Method | HTTP method used for the request \(`GET` or `POST`, for example\). |
+| Preview | Preview of the requested resource (images only). |
+| Request Method | HTTP method used for the request (`GET` or `POST`, for example). |
 | Status Code | HTTP response code. |
 | MIME Type | MIME type of the requested resource. |
 | Encoded Data Length | Length of requested resource in bytes. |
 
+
+<!-- ====================================================================== -->
 ## Scripting events
 
 This section lists events that belong to the Scripting category and their properties.
@@ -75,8 +81,8 @@ This section lists events that belong to the Scripting category and their proper
 | GC Event |  Garbage collection occurred. |
 | DOMContentLoaded |  The [DOMContentLoaded event][MDNWindowDOMContentLoadedEvent] was fired by the browser.  This event is fired when all of the DOM content of the page is loaded and parsed. |
 | Evaluate Script | A script was evaluated. |
-| Event | A JavaScript event \(for example, `mousedown`, or `key`\). |
-| Function Call | A top-level JavaScript function call was made \(only appears when browser enters JavaScript engine\). |
+| Event | A JavaScript event (for example, `mousedown`, or `key`). |
+| Function Call | A top-level JavaScript function call was made (only appears when browser enters JavaScript engine). |
 | Install Timer | A timer was created with [setInterval()][MDNWindowOrWorkerGlobalScopeSetInterval] or [setTimeout()][MDNWindowOrWorkerGlobalScopeSetTimeout]. |
 | Request Animation Frame | A `requestAnimationFrame()` call scheduled a new frame. |
 | Remove Timer | A previously created timer was cleared. |
@@ -95,6 +101,8 @@ This section lists events that belong to the Scripting category and their proper
 | Repeats | Boolean that specifies if the timer repeats. |
 | Function Call | A function that was invoked. |
 
+
+<!-- ====================================================================== -->
 ## Rendering events
 
 This section lists events that belong to Rendering category and their properties.
@@ -112,11 +120,13 @@ This section lists events that belong to Rendering category and their properties
 |:--- |:--- |
 | Layout invalidated | For Layout records, the stack trace of the code that caused the layout to be invalidated. |
 | Nodes that need layout | For Layout records, the number of nodes that were marked as needing layout before the relayout started.  These are normally those nodes that were invalidated by developer code, plus a path upward to relayout root. |
-| Layout tree size | For Layout records, the total number of nodes under the relayout root \(the node that Microsoft Edge starts the relayout\). |
-| Layout scope | Possible values are `Partial` \(the re-layout boundary is a portion of the DOM\) or `Whole document`. |
+| Layout tree size | For Layout records, the total number of nodes under the relayout root (the node that Microsoft Edge starts the relayout). |
+| Layout scope | Possible values are `Partial` (the re-layout boundary is a portion of the DOM) or `Whole document`. |
 | Elements affected | For Recalculate style records, the number of elements affected by a style recalculation. |
 | Styles invalidated | For Recalculate style records, provides the stack trace of the code that caused the style invalidation. |
 
+
+<!-- ====================================================================== -->
 ## Painting events
 
 This section lists events that belong to Painting category and their properties.
@@ -135,12 +145,9 @@ This section lists events that belong to Painting category and their properties.
 | Location | For Paint events, the x and y coordinates of the paint rectangle. |
 | Dimensions | For Paint events, the height and width of the painted region. |
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 [ConsoleApiTime]: /microsoft-edge/devtools-guide-chromium/console/api#time "time - Console API Reference"
 [ConsoleApiTimeEnd]: /microsoft-edge/devtools-guide-chromium/console/api#timeend "timeEnd - Console API Reference"
 <!--[EvaluatePerformanceTimelineTool]: timeline-tool "How to Use the Timeline Tool"  -->
@@ -151,7 +158,7 @@ This section lists events that belong to Painting category and their properties.
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\) and [Flavio Copes][FlavioCopes] \(Full Stack Developer\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference) and is authored by [Meggin Kearney][MegginKearney] (Technical Writer) and [Flavio Copes][FlavioCopes] (Full Stack Developer).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

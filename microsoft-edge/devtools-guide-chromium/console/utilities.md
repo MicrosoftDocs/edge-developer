@@ -33,8 +33,10 @@ The Console Utilities API contains a collection of convenience commands to compl
 > [!WARNING]
 > The following commands only work in the Microsoft Edge DevTools **Console**.  The commands do not work if run from your scripts.
 
-For more information about the `console.log()` and `console.error()` methods and the rest of the `console.*` methods, navigate to [Console API Reference][DevToolsConsoleApi].
+For more information about the `console.log()` and `console.error()` methods and the rest of the `console.*` methods, navigate to [Console API Reference](api.md).
 
+
+<!-- ====================================================================== -->
 ## Recently evaluated expression
 
 ### Console syntax
@@ -47,7 +49,7 @@ This command returns the value of the most recently evaluated expression.
 
 ### Console example
 
-In the following figure, a simple expression \(`2 + 2`\) is evaluated.  The `$_` property is then evaluated, which contains the same value.
+In the following figure, a simple expression (`2 + 2`) is evaluated.  The `$_` property is then evaluated, which contains the same value.
 
 :::image type="complex" source="../media/console-arithmatic.msft.png" alt-text="$_ is the most recently evaluated expression" lightbox="../media/console-arithmatic.msft.png":::
    `$_` is the most recently evaluated expression
@@ -61,6 +63,8 @@ In the following figure, the evaluated expression initially contains an array of
 
 ---
 
+
+<!-- ====================================================================== -->
 ## Recently chosen element or JavaScript object
 
 ### Console syntax
@@ -120,6 +124,8 @@ In the following figure, the image displays a different element chosen in the sa
 
 ---
 
+
+<!-- ====================================================================== -->
 ## Query selector
 
 ### Console syntax
@@ -128,7 +134,7 @@ In the following figure, the image displays a different element chosen in the sa
 $(selector, [startNode])
 ```
 
-This command returns the reference to the first DOM element with the specified CSS selector.  This method is an alias for the [document.querySelector()][MdnDocsWebApiDocumentQueryselector] method.
+This command returns the reference to the first DOM element with the specified CSS selector.  This method is an alias for the [document.querySelector()](https://developer.mozilla.org/docs/Web/API/Document/querySelector) method.
 
 ### Console example
 
@@ -141,7 +147,7 @@ In the following figure, a reference to the first `<img>` element in the webpage
 To find the first element in the DOM or to find and display it on the webpage, complete the following actions.
 
 1.  Hover on the returned result.
-1.  Open the contextual menu \(right-click\).
+1.  Open the contextual menu (right-click).
 1.  Choose **Reveal in Elements Panel**.
 
 In the following figure, a reference to the currently chosen element is returned and the `src` property is displayed.
@@ -163,6 +169,8 @@ In the following figure, the first `img` element after the `title--image` elemen
 
 ---
 
+
+<!-- ====================================================================== -->
 ## Query selector all
 
 ### Console syntax
@@ -171,7 +179,7 @@ In the following figure, the first `img` element after the `title--image` elemen
 $$(selector, [startNode])
 ```
 
-This command returns an array of elements that match the specified CSS selector.  This method is equivalent to running the [document.querySelectorAll()][MdnDocsWebApiDocumentQueryselectorall] method.
+This command returns an array of elements that match the specified CSS selector.  This method is equivalent to running the [document.querySelectorAll()](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll) method.
 
 ### Console example
 
@@ -208,6 +216,8 @@ for (each in images) {
 
 ---
 
+
+<!-- ====================================================================== -->
 ## XPath
 
 ### Console syntax
@@ -248,6 +258,8 @@ Similar to the other selector commands, `$x(path)` has an optional second parame
 
 ---
 
+
+<!-- ====================================================================== -->
 ## clear
 
 ### Console syntax
@@ -264,6 +276,8 @@ This commnad clears the console of the history.
 clear()
 ```
 
+
+<!-- ====================================================================== -->
 ## copy
 
 ### Console syntax
@@ -282,6 +296,8 @@ copy($0)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## debug
 
 ### Console syntax
@@ -291,7 +307,7 @@ debug(method)
 ```
 
 >[!NOTE]
-> The [Chromium issue #1050237][CR1050237] is tracking a bug with the `debug()` function.  If you encounter the issue, try using [breakpoints][DevtoolsJavascriptBreakpoints] instead.
+> The [Chromium issue #1050237](https://crbug.com/1050237) is tracking a bug with the `debug()` function.  If you encounter the issue, try using [breakpoints](../javascript/breakpoints.md) instead.
 
 When you request the specified method, the debugger invokes and breaks inside the method on the **Sources** tool.  It allows you to step through and debug the code.
 
@@ -307,10 +323,12 @@ debug("debug");
 
 Use `undebug(method)` to stop breaking on the method, or use the UI to turn off all breakpoints.
 
-For more information on breakpoints, navigate to [How to pause your code with breakpoints in Microsoft Edge DevTools][DevtoolsJavascriptBreakpoints].
+For more information on breakpoints, navigate to [How to pause your code with breakpoints in Microsoft Edge DevTools](../javascript/breakpoints.md).
 
 ---
 
+
+<!-- ====================================================================== -->
 ## dir
 
 ### Console syntax
@@ -319,7 +337,7 @@ For more information on breakpoints, navigate to [How to pause your code with br
 dir(object)
 ```
 
-This command displays an object-style listing of all of the properties for the specified object.  This method is an alias for the [console.dir()][MdnDocsWebApiConsoleDir] method.
+This command displays an object-style listing of all of the properties for the specified object.  This method is an alias for the [console.dir()](https://developer.mozilla.org/docs/Web/API/Console/dir) method.
 
 Evaluate `document.head` in the **Console** to display the HTML between the `<head>` and `</head>` tags.
 
@@ -336,10 +354,12 @@ dir(document.head);
    Logging `document.head` with `dir()` method
 :::image-end:::
 
-For more information, navigate to [console.dir()][DevToolsConsoleApiConsoleDirObject] in the Console API.
+For more information, navigate to [console.dir()](api.md#dir) in the Console API.
 
 ---
 
+
+<!-- ====================================================================== -->
 ## dirxml
 
 ### Console syntax
@@ -348,10 +368,12 @@ For more information, navigate to [console.dir()][DevToolsConsoleApiConsoleDirOb
 dirxml(object)
 ```
 
-This command prints an XML representation of the specified object, as displayed in the **Elements** tool.  This method is equivalent to the [console.dirxml()][MdnDocsWebApiConsoleDirxml] method.
+This command prints an XML representation of the specified object, as displayed in the **Elements** tool.  This method is equivalent to the [console.dirxml()](https://developer.mozilla.org/docs/Web/API/Console/dirxml) method.
 
 ---
 
+
+<!-- ====================================================================== -->
 ## inspect
 
 ### Console syntax
@@ -380,6 +402,8 @@ When passing a method to inspect, the method opens the webpage in the **Sources*
 
 ---
 
+
+<!-- ====================================================================== -->
 ## getEventListeners
 
 ### Console syntax
@@ -388,7 +412,7 @@ When passing a method to inspect, the method opens the webpage in the **Sources*
 getEventListeners(object)
 ```
 
-This command returns the event listeners registered on the specified object.  The return value is an object that contains an array for each registered event type \(such as `click` or `keydown`\).  The members of each array are objects that describe the listener registered for each type.
+This command returns the event listeners registered on the specified object.  The return value is an object that contains an array for each registered event type (such as `click` or `keydown`).  The members of each array are objects that describe the listener registered for each type.
 
 ### Console example
 
@@ -416,6 +440,8 @@ You may further expand each of the following objects to explore the properties.
 
 ---
 
+
+<!-- ====================================================================== -->
 ## keys
 
 ### Console syntax
@@ -434,7 +460,7 @@ For example, suppose your application defined the following object.
 var player1 = {"name": "Ted", "level": 42}
 ```
 
-In the following code samples and figure, the result assumes `player1` was defined in the global namespace \(for simplicity\) before you type `keys(player1)` and `values(player1)` in the console.
+In the following code samples and figure, the result assumes `player1` was defined in the global namespace (for simplicity) before you type `keys(player1)` and `values(player1)` in the console.
 
 ```console
 keys(player1)
@@ -448,6 +474,8 @@ values(player1)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## monitor
 
 ### Console syntax
@@ -475,6 +503,8 @@ Use `unmonitor(method)` to end monitoring.
 
 ---
 
+
+<!-- ====================================================================== -->
 ## monitorEvents
 
 ### Console syntax
@@ -528,6 +558,8 @@ In the following figure, the sample output after typing a character in the text 
 
 ---
 
+
+<!-- ====================================================================== -->
 ## profile
 
 ### Console syntax
@@ -536,7 +568,7 @@ In the following figure, the sample output after typing a character in the text 
 profile([name])
 ```
 
-This command starts a JavaScript CPU profiling session with an optional name.  The [profileEnd()](#profileend) method completes the profile and displays the results in the **Memory** tool.  <!--Navigate to [Speed Up JavaScript Runtime][DevtoolsRenderingToolsJsRuntime].  -->
+This command starts a JavaScript CPU profiling session with an optional name.  The [profileEnd()](#profileend) method completes the profile and displays the results in the **Memory** tool.  <!--Navigate to [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
 
 ### Console example
 
@@ -562,6 +594,8 @@ profileEnd('B');
 
 ---
 
+
+<!-- ====================================================================== -->
 ## profileEnd
 
 ### Console syntax
@@ -570,7 +604,7 @@ profileEnd('B');
 profileEnd([name])
 ```
 
-This command completes a JavaScript CPU profiling session and displays the results in the **Memory** tool.  You must be running the [profile()](#profile) method.  <!--Navigate to [Speed Up JavaScript Runtime][DevtoolsRenderingToolsJsRuntime].  -->
+This command completes a JavaScript CPU profiling session and displays the results in the **Memory** tool.  You must be running the [profile()](#profile) method.  <!--Navigate to [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
 
 ### Console example
 
@@ -601,6 +635,8 @@ The result appears as a Heap Snapshot in the **Memory** tool.
 
 ---
 
+
+<!-- ====================================================================== -->
 ## queryObjects
 
 ### Console syntax
@@ -639,6 +675,8 @@ This command returns an array of objects created with the specified constructor.
 
 ---
 
+
+<!-- ====================================================================== -->
 ## table
 
 ### Console syntax
@@ -673,6 +711,8 @@ table(names);
 
 ---
 
+
+<!-- ====================================================================== -->
 ## undebug
 
 ### Console syntax
@@ -691,6 +731,8 @@ undebug(getData);
 
 ---
 
+
+<!-- ====================================================================== -->
 ## unmonitor
 
 ### Console syntax
@@ -709,6 +751,8 @@ unmonitor(getData);
 
 ---
 
+
+<!-- ====================================================================== -->
 ## unmonitorEvents
 
 ### Console syntax
@@ -727,7 +771,7 @@ For example, the following code snippet stops all event monitoring on the window
 unmonitorEvents(window);
 ```
 
-You may also selectively stop monitoring specific events on an object.  For example, the following code starts monitoring all `mouse` events on the currently chosen element, and then stops monitoring `mousemove` events \(perhaps to reduce noise in the console output\).
+You may also selectively stop monitoring specific events on an object.  For example, the following code starts monitoring all `mouse` events on the currently chosen element, and then stops monitoring `mousemove` events (perhaps to reduce noise in the console output).
 
 ```console
 monitorEvents($0, "mouse");
@@ -736,6 +780,8 @@ unmonitorEvents($0, "mousemove");
 
 ---
 
+
+<!-- ====================================================================== -->
 ## values
 
 ### Console syntax
@@ -754,34 +800,11 @@ values(object);
 
 ---
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-<!-- links -->
-
-[DevtoolsConsoleApi]: ./api.md "Console API reference | Microsoft Docs"
-[DevToolsConsoleApiConsoleDirObject]: ./api.md#dir "dir - Console API reference | Microsoft Docs"
-
-[DevtoolsJavascriptBreakpoints]: ../javascript/breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
-
-[DevtoolsRenderingToolsJsRuntime]: ../rendering-tools/js-runtime.md "Speed up JavaScript runtime | Microsoft Docs"
-
-[CR1050237]: https://crbug.com/1050237 "Issue 1050237: debug(function) not working | Chromium bugs"
-
-[MdnDocsWebApiConsoleDir]: https://developer.mozilla.org/docs/Web/API/Console/dir "Console.dir() | MDN"
-[MdnDocsWebApiConsoleDirxml]: https://developer.mozilla.org/docs/Web/API/Console/dirxml "Console.dirxml() | MDN"
-[MdnDocsWebApiDocumentQueryselector]: https://developer.mozilla.org/docs/Web/API/Document/querySelector "Document.querySelector() | MDN"
-[MdnDocsWebApiDocumentQueryselectorall]: https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll "Document.querySelectorAll() | MDN"
-
+<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/utilities) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/utilities) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -13,12 +13,16 @@ keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWeb
 
 In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  Your first WebView2 app uses WinUI 3.  For more information on individual APIs, navigate to [API reference][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].
 
+
+<!-- ====================================================================== -->
 ## Step 0 - Set Up Development Environment
 
 1. Follow steps 1-4 of [Set up your development environment][WindowsAppsWinui3ConfigureYourDevEnvironment] to install Visual Studio, configure the NuGet package source, and install the Windows App SDK Extension for Visual Studio.
-1. Install the [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge (Chromium) non-stable channel][MicrosoftedgeinsiderDownload] installed on Windows 10 version 1803 \(build 17134\) or later.  For more information about Windows 10, navigate to [Windows Update: FAQ][MicrosoftSupport12373].
+1. Install the [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge non-stable channel][MicrosoftedgeinsiderDownload] installed on Windows 10 version 1803 (build 17134) or later.  For more information about Windows 10 or later, navigate to [Windows Update: FAQ][MicrosoftSupport12373].
 1.  To access all developer-specific Visual Studio features, turn on [Developer Mode][WindowsUwpGetStartedEnableYourDeviceForDevelopment].
 
+
+<!-- ====================================================================== -->
 ## Step 1 - Create Project
 
 Start with a basic desktop project that contains a single main window.
@@ -47,6 +51,8 @@ Start with a basic desktop project that contains a single main window.
     *   **Your project name (Package)**.  The Package project is a Windows Application Packaging Project that is configured to build the app into an MSIX package for deployment.  The project contains the package manifest for your app, and is the startup project for your solution by default.  For more information, navigate to [Set up your desktop application for MSIX packaging in Visual Studio][WindowsMsixDesktopToUwpPackagingDotNet] and [Package manifest schema reference for Windows 10][UwpSchemasAppxpackageUapmanifestRoot].
 1.  In the Solution Explorer, to display the code, open the `MainWindow.xaml` file.  To run your project and display a window with a button, select `F5`.
 
+
+<!-- ====================================================================== -->
 ## Step 2 - Add a WebView2 control to your project
 
 Add a WebView2 control to your project.
@@ -110,6 +116,8 @@ Add a WebView2 control to your project.
        WebView2 control displays microsoft.com
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 3 - Add navigation controls
 
 To allow users to control the webpage that is displayed in your WebView2 control, add an address bar to your app.
@@ -170,6 +178,8 @@ To allow users to control the webpage that is displayed in your WebView2 control
        bing.com
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 4 - Navigation events
 
 For this step, we need to import the WebView2 Core library.
@@ -223,6 +233,11 @@ private void EnsureHttps(WebView2 sender, CoreWebView2NavigationStartingEventArg
 
 To build and run your project, select `F5`.  Ensure navigation is blocked to HTTP sites, and allowed for HTTPS sites.
 
+> [!NOTE]
+> The WinRT `CoreWebView2` object might not be available with the release of the WebView2 API.  The [WebView2 Spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] lists which of the APIs are available for WebView2.
+
+
+<!-- ====================================================================== -->
 ## Step 5 - Scripting
 
 You may use host apps to inject JavaScript code into WebView2 controls at runtime.  You may task WebView to run arbitrary JavaScript or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.  The injected JavaScript is run with specific timing.
@@ -254,32 +269,25 @@ To build and run your project, select `F5`.  Ensure your app displays an alert w
    WebView2 control displays an alert dialog
 :::image-end:::
 
-Congratulations, you built your first WebView2 app.
+Congratulations, you built your first WebView2 app!
 
-## Next steps
 
-To continue learning more about WebView2, navigate to the following resources.
+<!-- ====================================================================== -->
+## See also
 
-*   To learn more about building WebView2 applications, navigate to [WebView2 development best practices][WV2BestPractices].
-*   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples][GithubMicrosoftedgeWebview2samplesMain].
-*   For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].
+*  [WebView2 development best practices][WV2BestPractices]
+*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain] - a comprehensive example of WebView2 capabilities.
+*  [See also][Webview2IndexNextSteps] in _Introduction to Microsoft Edge WebView2_.
+*  [WebView2 spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] - detailed information about the WebView2 API.
+*  [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
 
-    > [!NOTE]
-    > The WinRT CoreWebView2 object may not be available with the release of the WebView2 API.  To understand which APIs are available to WebView2 controls, navigate to [WebView2 Spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2] for a list of the APIs that are available.
 
-*   For detailed information about the WebView2 API, navigate to [WebView2 spec][GithubMicrosoftMicrosoftUiXamlSpecsWebview2].
-
-## Getting in touch with the Microsoft Edge WebView team
-
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]
-
-To send your WinUI-specific feature requests or bugs, navigate to [Issues - microsoft/microsoft-ui-xaml][GithubMicrosoftMicrosoftUiXamlIssues] and choose **New issue**.
-
+<!-- ====================================================================== -->
 <!-- links -->
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"
 [Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Introduction to Microsoft Edge WebView2 | Microsoft Docs"
-[Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
+[Webview2IndexNextSteps]: ../index.md#see-also "See also - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
 
 [Webviews2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.ExecuteScriptAsync(String) Method (Microsoft.Web.WebView2.Wpf) | Microsoft Docs"
 
@@ -294,7 +302,6 @@ To send your WinUI-specific feature requests or bugs, navigate to [Issues - micr
 [WindowsMsixDesktopToUwpPackagingDotNet]: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net "Set up your desktop application for MSIX packaging in Visual Studio | Microsoft Docs"
 [WindowsUwpGetStartedEnableYourDeviceForDevelopment]: /windows/uwp/get-started/enable-your-device-for-development "Enable your device for development | Microsoft Docs"
 
-[GithubMicrosoftMicrosoftUiXamlIssues]: https://github.com/microsoft/microsoft-ui-xaml/issues "Issues - microsoft/microsoft-ui-xaml | GitHub"
 [GithubMicrosoftMicrosoftUiXamlSpecsWebview2]: https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md "WebView2 spec - microsoft/microsoft-ui-xaml-specs | GitHub"
 
 [GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"

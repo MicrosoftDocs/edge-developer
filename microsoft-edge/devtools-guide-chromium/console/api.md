@@ -23,10 +23,12 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Console API reference
 
-The **Console** tool is helpful when you complete multiple tasks in the DevTools.  APIs are available to include in your scripts. Convenience methods are only available for use in the **Console** tool, such as the `debug()` and `monitorEvents()` methods.  For more information on getting started with the **Console**, navigate to [Get started with logging messages to the Console][DevtoolsConsoleConsoleLog].  For more information on the convenience methods in the **Console**, navigate to [Console Utilities API Reference][DevtoolConsoleUtilities].
+The **Console** tool is helpful when you complete multiple tasks in the DevTools.  APIs are available to include in your scripts. Convenience methods are only available for use in the **Console** tool, such as the `debug()` and `monitorEvents()` methods.  For more information on getting started with the **Console**, navigate to [Get started with logging messages to the Console](console-log.md).  For more information on the convenience methods in the **Console**, navigate to [Console Utilities API Reference](utilities.md).
 
 ---
 
+
+<!-- ====================================================================== -->
 ## assert
 
 This method writes an [error](#error) to the **Console** when `expression` evaluates to `false`.
@@ -37,7 +39,7 @@ This method writes an [error](#error) to the **Console** when `expression` evalu
 console.assert(expression, object)
 ```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Error`
+[Log level](reference.md#persist-messages-across-page-loads): `Error`
 
 ### JavaScript example
 
@@ -67,11 +69,13 @@ console.assert(expression, object)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## clear
 
 This method clears the **Console**.
 
-If [Preserve Log][DevtoolsConsoleReferenceFilter] is turned on, the [clear](#clear) method is turned off.
+If [Preserve Log](reference.md#filter-by-log-level) is turned on, the [clear](#clear) method is turned off.
 
 ### JavaScript syntax
 
@@ -102,10 +106,12 @@ console.clear()
 
 ### See also
 
-*   [Clear the Console][DevtoolsConsoleReferenceClear]
+*   [Clear the Console](reference.md#clear-the-console)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## count
 
 This method writes the number of times that the [count](#count) method has been invoked at the same line and with the same `label`.  Use the [countReset](#countreset) method to reset the count.
@@ -116,7 +122,7 @@ This method writes the number of times that the [count](#count) method has been 
 console.count([label])
 ```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Info`
+[Log level](reference.md#persist-messages-across-page-loads): `Info`
 
 ### JavaScript example
 
@@ -146,6 +152,8 @@ console.count([label])
 
 ---
 
+
+<!-- ====================================================================== -->
 ## countReset
 
 This method resets a count.
@@ -180,6 +188,8 @@ console.countReset([label])
 
 ---
 
+
+<!-- ====================================================================== -->
 ## debug
 
 This method is identical to the [log](#log) method, except different log level.
@@ -190,7 +200,7 @@ This method is identical to the [log](#log) method, except different log level.
 console.debug(object [, object, ...])
 ```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Verbose`
+[Log level](reference.md#persist-messages-across-page-loads): `Verbose`
 
 ### JavaScript example
 
@@ -217,6 +227,8 @@ console.debug(object [, object, ...])
 
 ---
 
+
+<!-- ====================================================================== -->
 ## dir
 
 This method prints a JSON representation of the specified object.
@@ -227,7 +239,7 @@ This method prints a JSON representation of the specified object.
 console.dir(object)
 ```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Info`
+[Log level](reference.md#persist-messages-across-page-loads): `Info`
 
 ### JavaScript example
 
@@ -254,6 +266,8 @@ console.dir(object)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## dirxml
 
 This method prints an XML representation of the descendants of `node`.
@@ -264,7 +278,7 @@ This method prints an XML representation of the descendants of `node`.
 console.dirxml(node)
 ```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Info`
+[Log level](reference.md#persist-messages-across-page-loads): `Info`
 
 ### JavaScript example
 
@@ -291,6 +305,8 @@ console.dirxml(node)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## error
 
 This method prints the `object` to the **Console**, formats it as an error, and includes a stack trace.
@@ -301,7 +317,7 @@ This method prints the `object` to the **Console**, formats it as an error, and 
 console.error(object [, object, ...])
 ```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Error`
+[Log level](reference.md#persist-messages-across-page-loads): `Error`
 
 ### JavaScript example
 
@@ -328,6 +344,8 @@ console.error(object [, object, ...])
 
 ---
 
+
+<!-- ====================================================================== -->
 ## group
 
 This method visually groups messages together until the [groupEnd](#groupend) method is used.  Use the [groupCollapsed](#groupcollapsed) method to collapse the group when it initially logs to the **Console**.
@@ -369,6 +387,8 @@ console.group(label)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## groupCollapsed
 
 This method is identical to the [log](#log) method, except the group is initially collapsed when it logs to the **Console**.
@@ -381,6 +401,8 @@ console.groupCollapsed(label)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## groupEnd
 
 This method stops visually grouping messages.  Navigate to the [group](#group) method.
@@ -393,6 +415,8 @@ console.groupEnd(label)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## info
 
 This method is identical to the [log](#log) method.
@@ -403,7 +427,7 @@ This method is identical to the [log](#log) method.
 console.info(object [, object, ...])
 ```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Info`
+[Log level](reference.md#persist-messages-across-page-loads): `Info`
 
 ### JavaScript example
 
@@ -430,6 +454,8 @@ console.info(object [, object, ...])
 
 ---
 
+
+<!-- ====================================================================== -->
 ## log
 
 This method prints a message to the **Console**.
@@ -440,7 +466,7 @@ This method prints a message to the **Console**.
 console.log(object [, object, ...])
 ```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Info`
+[Log level](reference.md#persist-messages-across-page-loads): `Info`
 
 ### JavaScript example
 
@@ -467,6 +493,8 @@ console.log(object [, object, ...])
 
 ---
 
+
+<!-- ====================================================================== -->
 ## table
 
 This method logs an array of objects as a table.
@@ -477,7 +505,7 @@ This method logs an array of objects as a table.
 console.table(array)
 ```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Info`
+[Log level](reference.md#persist-messages-across-page-loads): `Info`
 
 ### JavaScript example
 
@@ -518,6 +546,8 @@ console.table(array)
 
 ---
 
+
+<!-- ====================================================================== -->
 ## time
 
 This method starts a new timer.  Use the [timeEnd](#timeend) method to stop the timer and print the elapsed time to the **Console**.
@@ -557,6 +587,8 @@ console.time([label])
 
 ---
 
+
+<!-- ====================================================================== -->
 ## timeEnd
 
 This method stops a timer.  For more information, navigate to the [time](#time) method.
@@ -567,10 +599,12 @@ This method stops a timer.  For more information, navigate to the [time](#time) 
 console.timeEnd([label])
 ```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Info`
+[Log level](reference.md#persist-messages-across-page-loads): `Info`
 
 ---
 
+
+<!-- ====================================================================== -->
 ## trace
 
 This method prints a stack trace to the **Console**.
@@ -581,7 +615,7 @@ This method prints a stack trace to the **Console**.
 console.trace()
 ```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Info`
+[Log level](reference.md#persist-messages-across-page-loads): `Info`
 
 ### JavaScript example
 
@@ -612,6 +646,8 @@ console.trace()
 
 ---
 
+
+<!-- ====================================================================== -->
 ## warn
 
 This method prints a warning to the **Console**.
@@ -622,7 +658,7 @@ This method prints a warning to the **Console**.
 console.warn(object [, object, ...])
 ```
 
-[Log level][DevtoolsConsoleReferencePersist]: `Warning`
+[Log level](reference.md#persist-messages-across-page-loads): `Warning`
 
 ### JavaScript example
 
@@ -649,28 +685,11 @@ console.warn(object [, object, ...])
 
 ---
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-<!-- links -->
-
-[DevtoolsConsoleConsoleLog]: ./console-log.md "Logs in the Console tool | Microsoft Docs"
-[DevtoolConsoleUtilities]: ./utilities.md "Console Utilities API reference | Microsoft Docs"
-[DevtoolsConsoleReferenceClear]: ./reference.md#clear-the-console "Clear the Console - Console reference | Microsoft Docs"
-[DevtoolsConsoleReferenceFilter]: ./reference.md#filter-by-log-level "Filter by log level - Console reference | Microsoft Docs"
-[DevtoolsConsoleReferencePersist]: ./reference.md#persist-messages-across-page-loads "Persist messages across page loads - Console reference | Microsoft Docs"
-
-[MicrosoftEdgeDevTools]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge Developer Tools overview | Microsoft Docs"
-
+<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/api) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/api) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer, Chrome DevTools & Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

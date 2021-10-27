@@ -29,7 +29,7 @@ In this tutorial, you learn how to use CSS to style a web page.  You also learn 
 This article is part of a series of tutorials that teaches you the basics of web development and Microsoft Edge DevTools.  You gain hands-on experience by actually building your own website.  You don't have to complete the previous tutorials before doing this one.  [Set up your code](#set-up-your-code) shows you how to get set up.
 
 > [!NOTE]
-> This tutorial is designed for absolute beginners and focuses on both the **fundamentals of web development** and the basics of using DevTools to experiment with CSS.  If you want a tutorial that only focuses on DevTools, navigate to [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].
+> This tutorial is designed for absolute beginners and focuses on both the **fundamentals of web development** and the basics of using DevTools to experiment with CSS.  If you want a tutorial that only focuses on DevTools, navigate to [Get Started with Viewing and Changing CSS](../css/index.md).
 
 At the beginning of the tutorial, your site should look like the following figure.
 
@@ -43,6 +43,8 @@ After you complete the tutorial, your site should look like the following figure
    What your site should look like at the end of the tutorial
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Goals
 
 Follow this tutorial to better understand the following concepts and tasks.
@@ -53,21 +55,25 @@ Follow this tutorial to better understand the following concepts and tasks.
 
 You're building a real website.
 
+
+<!-- ====================================================================== -->
 ## Prerequisites
 
 Complete the following prerequisites before doing this tutorial.
 
-*   Complete [Get Started with HTML and the DOM][DevtoolsBeginnersHtml] or make sure that you have understanding of HTML and the DOM already.
-*   Download the [Microsoft Edge][MicrosoftEdgeInsider] web browser.  The following tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.
+*   Complete [Get Started with HTML and the DOM](./html.md) or make sure that you have understanding of HTML and the DOM already.
+*   Download the [Microsoft Edge](https://www.microsoftedgeinsider.com) web browser.  The following tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.
 
+
+<!-- ====================================================================== -->
 ## Set up your code
 
 To create your site, first do the following steps to set up your code.
 
 > [!NOTE]
-> If you have already completed the first tutorial in the series, skip to the next section.  Continue using your code from the last tutorial, [Get Started with HTML and the DOM][DevtoolsBeginnersHtml].
+> If you have already completed the first tutorial in the series, skip to the next section.  Continue using your code from the last tutorial, [Get Started with HTML and the DOM](./html.md).
 
-1.  Open the [source code][GlitchCookedAmphibianIndex].  The tab of your browser that's currently selected is called the **editing tab**.
+1.  Open the [source code](https://glitch.com/edit/#!/cooked-amphibian?path=index.html).  The tab of your browser that's currently selected is called the **editing tab**.
 
     :::image type="complex" source="../media/beginners-css-setup1.msft.png" alt-text="The editing tab" lightbox="../media/beginners-css-setup1.msft.png":::
        The **editing** tab
@@ -90,6 +96,8 @@ To create your site, first do the following steps to set up your code.
        The **live tab**
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Understand CSS
 
 **CSS** is a computer language that controls the layout and styling of web pages.  The following figure is a paragraph with a border.
@@ -106,8 +114,10 @@ The following code snippet is the HTML and CSS code used to create the paragraph
 </p>
 ```
 
-The HTML attribute `style="border: 1px dashed red; padding: 5px;"` might look new to you.  The rest should look familiar.  If not, complete [Get Started with HTML and the DOM][DevtoolsBeginnersHtml] before attempting the following sections.
+The HTML attribute `style="border: 1px dashed red; padding: 5px;"` might look new to you.  The rest should look familiar.  If not, complete [Get Started with HTML and the DOM](./html.md) before attempting the following sections.
 
+
+<!-- ====================================================================== -->
 ## Add inline styles
 
 You can use **inline styles** to apply styles to a single element.
@@ -138,6 +148,8 @@ You can use **inline styles** to apply styles to a single element.
        The background color behind the **Home** and **Contact** links is now blue
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Reuse styles on a single page with internal stylesheets
 
 In a previous code snippet, an inline style applied a style to a single `<p>` tag.
@@ -260,6 +272,8 @@ The following steps describe how you can use commas to add multiple selectors to
        The text **Contact Me!** now has the same font as the **Home** and **Contact** links
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Experiment with DevTools
 
 As you continue your journey to become an expert in web development, you may find that CSS is tricky.  You might write some code that doesn't display what you intended.  Microsoft Edge DevTools makes it easy to experiment by displaying your changes in the page in real time.
@@ -268,13 +282,13 @@ As you continue your journey to become an expert in web development, you may fin
 
 To add a declaration to an existing ruleset
 
-1.  Hover on the **Home** link, open the contextual menu \(right-click\), and select **Inspect**.
+1.  Hover on the **Home** link, open the contextual menu (right-click), and select **Inspect**.
 
     :::image type="complex" source="../media/beginners-css-add1.msft.png" alt-text="Inspect the Home link" lightbox="../media/beginners-css-add1.msft.png":::
        Inspect the Home link
     :::image-end:::
 
-    DevTools opens up alongside your page.  The code that represents the Home link, `<a href="/">Home</a>` is highlighted blue in the DOM Tree.  The code snippet and preview should be familiar from [Get Started with HTML and the DOM][DevtoolsBeginnersHtml].
+    DevTools opens up alongside your page.  The code that represents the Home link, `<a href="/">Home</a>` is highlighted blue in the DOM Tree.  The code snippet and preview should be familiar from [Get Started with HTML and the DOM](./html.md).
 
     :::row:::
        :::column span="":::
@@ -331,7 +345,7 @@ To edit existing declarations in DevTools
 
 To add new rulesets in DevTools
 
-1.  Select **New Style Rule** \(![New Style Rule](../media/new-style-rule-icon.msft.png)\) which is next to **.cls**.  An empty ruleset appears with `a` as the selector.
+1.  Select **New Style Rule** (![New Style Rule](../media/new-style-rule-icon.msft.png)) which is next to **.cls**.  An empty ruleset appears with `a` as the selector.
 
     :::image type="complex" source="../media/beginners-css-rule1.msft.png" alt-text="Add a new rule" lightbox="../media/beginners-css-rule1.msft.png":::
        Add a new rule
@@ -365,6 +379,8 @@ To add new rulesets in DevTools
        Hover on the Home link to reveal its green background
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Reuse styles across pages with external stylesheets
 
 In a previous step, you added the following code snippet as an internal stylesheet to `contact.html`.
@@ -474,6 +490,8 @@ What if you wanted to style `index.html` the same way?  What if you had a large 
        The contact page
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Use a CSS framework
 
 **CSS frameworks** are collections of styles built by other developers that make it easier to create attractive web sites.  Instead of defining styles yourself, a framework provides you a collection of styles that you are able to use on your page elements.
@@ -591,38 +609,21 @@ Complete the following steps to use other Bootstrap classes that are useful for 
        The nav content is now to the left of the main content
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Next steps
 
 Congratulations, you're done!
 
 *   The best way to get better at web development is to build more sites.  Don't worry about breaking stuff.  Just have fun and learn as much as possible along the way.
-*   To learn more about styling web pages, navigate to [Introduction to CSS][MDNCssFirstSteps].
+*   To learn more about styling web pages, navigate to [Introduction to CSS](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS).
 *   To learn more about how to experiment with CSS in DevTools, navigate to [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
-<!--- links  --->
-
-[DevtoolsBeginnersHtml]: ./html.md "DevTools for Beginners: Get Started with HTML and the DOM | Microsoft Docs"
-[DevtoolsCssIndex]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"
-
-[MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"
-
-[GlitchCookedAmphibianIndex]: https://glitch.com/edit/#!/cooked-amphibian?path=index.html "index.html - cooked-amphibian | Glitch"
-
-[MDNCssFirstSteps]: https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS "CSS first steps | MDN"
-
+<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page was found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/css) and was authored by [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/css) and is authored by [Katherine Jackson](https://developers.google.com/web/resources/contributors#katherine-jackson) (Technical Writer Intern, Chrome DevTools).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[KatherineJackson]: https://developers.google.com/web/resources/contributors
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

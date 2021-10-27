@@ -10,14 +10,14 @@ keywords: microsoft edge, web development, f12 tools, devtools, localization, lo
 ---
 # Change DevTools language settings
 
-Your Developer Tools matches your browser language by default, if it is one of the ten languages currently supported \(in addition to English\).
+Your Developer Tools matches your browser language by default, if it is one of the ten languages currently supported (in addition to English).
 
 :::row:::
    :::column span="2":::
-      Chinese \(Simplified\) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+      Chinese (Simplified) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
    :::column-end:::
    :::column span="2":::
-      Chinese \(Traditional\) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
+      Chinese (Traditional) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -59,6 +59,7 @@ Your Developer Tools matches your browser language by default, if it is one of t
 
 If you want to revert DevTools to English, navigate to [DevTools Settings][DevtoolsCustomizeIndexSettings] or select `F1`, choose **Preferences**, and turn off the **Match browser language** checkbox.
 
-<!-- links -->
 
+<!-- ====================================================================== -->
+<!-- links -->
 [DevtoolsCustomizeIndexSettings]: ./index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"

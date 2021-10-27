@@ -36,6 +36,8 @@ If you want to browse features, navigate to [Network Reference][DevtoolsNetworkR
 > [!VIDEO embed/e1gAyQuIFQo]
 -->
 
+
+<!-- ====================================================================== -->
 ## When to use the Network panel
 
 In general, use the Network panel when you need to make sure that resources are being downloaded or uploaded as expected.  The most common use cases for the Network panel are:
@@ -45,6 +47,8 @@ In general, use the Network panel when you need to make sure that resources are 
 
 If you are looking for ways to improve page load performance, **do not** start with the **Network** tool.  There are many types of load performance issues that are not related to network activity.  Start with the Audits panel because it gives you targeted suggestions on how to improve your page.  Navigate to [Optimize Website Speed][DevtoolsSpeedGetStarted].
 
+
+<!-- ====================================================================== -->
 ## Open the Network panel
 
 To get the most out of this tutorial, open up the demo and try out the features on the demo page.
@@ -63,8 +67,8 @@ To get the most out of this tutorial, open up the demo and try out the features 
     :::image-end:::
     -->
 
-1.  To [Open DevTools][DevToolsOpen], select `Control`+`Shift`+`J` \(Windows, Linux\) or
-   `Command`+`Option`+`J` \(macOS\).  The **Console** tool opens.
+1.  To [Open DevTools][DevToolsOpen], select `Control`+`Shift`+`J` (Windows, Linux) or
+   `Command`+`Option`+`J` (macOS).  The **Console** tool opens.
 
     :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="The Console" lightbox="../media/network-glitch-console.msft.png":::
        The **Console**
@@ -84,6 +88,8 @@ To get the most out of this tutorial, open up the demo and try out the features 
 
 Right now the **Network** tool is empty.  DevTools only logs network activity after you open it and no network activity has occurred since you opened DevTools.
 
+
+<!-- ====================================================================== -->
 ## Log network activity
 
 To view the network activity that a page causes:
@@ -116,12 +122,14 @@ To view the network activity that a page causes:
        A new resource in the **Network Log**
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Show more information
 
 The columns of the Network Log are configurable.  You can hide columns that you are not using.
 There are also many columns that are hidden by default which you might find useful.
 
-1.  Hover on the header of the Network Log table, open the contextual menu \(right-click\), and select **Domain**.  The domain of each resource is now shown.
+1.  Hover on the header of the Network Log table, open the contextual menu (right-click), and select **Domain**.  The domain of each resource is now shown.
 
     :::image type="complex" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Enable the Domain column" lightbox="../media/network-glitch-network-edit-column.msft.png":::
        Enable the Domain column
@@ -130,6 +138,8 @@ There are also many columns that are hidden by default which you might find usef
     > [!TIP]
     > To review the full URL of a resource, hover on the cell in the **Name** column.
 
+
+<!-- ====================================================================== -->
 ## Simulate a slower network connection
 
 The network connection of the computer that you use to build sites is probably faster than the network connections of the mobile devices of your users.  By throttling the page, you get a better idea of how long a page takes to load on a mobile device.
@@ -142,7 +152,7 @@ The network connection of the computer that you use to build sites is probably f
        Select Slow 3G
     :::image-end:::
 
-1.  Long-press **Reload** \(![Reload](../media/refresh-icon.msft.png)\) and select **Empty Cache And Hard Reload**.
+1.  Long-press **Reload** (![Reload](../media/refresh-icon.msft.png)) and select **Empty Cache And Hard Reload**.
 
     :::image type="complex" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="Empty Cache And Hard Reload" lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
        **Empty Cache And Hard Reload**
@@ -153,11 +163,13 @@ The network connection of the computer that you use to build sites is probably f
     > [!NOTE]
     > The **Empty Cache And Hard Reload** workflow is only available when DevTools is open.
 
+
+<!-- ====================================================================== -->
 ## Capture screenshots
 
 Screenshots display how a webpage looks over time while it loads.
 
-1.  Select \(![Network settings](../media/settings-icon.msft.png)\) and turn on the **Capture screenshots** checkbox.
+1.  Select (![Network settings](../media/settings-icon.msft.png)) and turn on the **Capture screenshots** checkbox.
 
     :::image type="complex" source="../media/network-glitch-network-screenshots-setting.msft.png" alt-text="The Capture Screenshot checkbox in the Network settings" lightbox="../media/network-glitch-network-screenshots-setting.msft.png":::
        Select **Capture screenshots**
@@ -176,9 +188,11 @@ Screenshots display how a webpage looks over time while it loads.
        The network activity that was happening during the first screenshot
     :::image-end:::
 
-1.  Select \(![Network settings](../media/settings-icon.msft.png)\) again and turn off the **Capture screenshots** checkbox to close the Screenshots pane.
+1.  Select (![Network settings](../media/settings-icon.msft.png)) again and turn off the **Capture screenshots** checkbox to close the Screenshots pane.
 1.  Refresh the page again.
 
+
+<!-- ====================================================================== -->
 ## Inspect the details of the resource
 
 Select a resource to learn more information about it.
@@ -204,7 +218,7 @@ Select a resource to learn more information about it.
     :::image-end:::
 
     > [!TIP]
-    > When a file is minified, select the **Format** \(![Format](../media/format-icon.msft.png)\) button at the bottom of the **Response** panel to re-format the contents of the file for readability.
+    > When a file is minified, select the **Format** (![Format](../media/format-icon.msft.png)) button at the bottom of the **Response** panel to re-format the contents of the file for readability.
 
 1.  Select the **Timing** panel.  A breakdown of the network activity for the resource is displayed.
 
@@ -212,12 +226,14 @@ Select a resource to learn more information about it.
        The **Timing** panel
     :::image-end:::
 
-1.  Select **Close** \(![Close](../media/close-icon.msft.png)\) to view the Network Log again.
+1.  Select **Close** (![Close](../media/close-icon.msft.png)) to view the Network Log again.
 
     :::image type="complex" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="The Close button" lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
        The **Close** button
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Search network headers and responses
 
 Use the **Search** pane when you need to search the HTTP headers and responses of all resources for a certain string or regular expression.
@@ -226,7 +242,7 @@ For example, suppose you want to verify that your resources are using reasonable
 
 <!--TODO: add cache policies section when available  -->
 
-1.  Select **Search** \(![Search](../media/search-icon.msft.png)\).  The Search pane opens to the left of the Network log.
+1.  Select **Search** (![Search](../media/search-icon.msft.png)).  The Search pane opens to the left of the Network log.
 
     :::image type="complex" source="../media/network-glitch-network-search-empty.msft.png" alt-text="The Search pane" lightbox="../media/network-glitch-network-search-empty.msft.png":::
        The **Search** pane
@@ -246,6 +262,8 @@ For example, suppose you want to verify that your resources are using reasonable
 
 1.  Close the Search pane and the **Headers** panel.
 
+
+<!-- ====================================================================== -->
 ## Filter resources
 
 DevTools provides numerous workflows for filtering out resources that are not relevant to the task at hand.
@@ -256,7 +274,7 @@ DevTools provides numerous workflows for filtering out resources that are not re
 
 The **Filters** toolbar should be turned on by default.  If not:
 
-1.  Select **Filter** \(![Filter](../media/filter-icon.msft.png)\) to show it.
+1.  Select **Filter** (![Filter](../media/filter-icon.msft.png)) to show it.
 
 ### Filter by string, regular expression, or property
 
@@ -300,7 +318,7 @@ To focus in on a certain type of file, such as stylesheets:
        Show CSS files only
     :::image-end:::
 
-1.  To also display scripts, select and hold `Control` \(Windows, Linux\) or `Command` \(macOS\) and then select **JS**.
+1.  To also display scripts, select and hold `Control` (Windows, Linux) or `Command` (macOS) and then select **JS**.
 
     :::image type="complex" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="Show CSS and JS files only" lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
        Show CSS and JS files only
@@ -310,11 +328,13 @@ To focus in on a certain type of file, such as stylesheets:
 
 For other filtering workflows, navigate to [Filter requests][DevtoolsNetworkReferenceFilter].
 
+
+<!-- ====================================================================== -->
 ## Block requests
 
 How does a page look and behave when some of the page resources are not available?  Does it fail completely, or is it still somewhat functional?  Block requests to find out:
 
-1.  Select `Control`+`Shift`+`P` \(Windows, Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.
+1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
     :::image type="complex" source="../media/network-glitch-network-cli-empty.msft.png" alt-text="The Command Menu" lightbox="../media/network-glitch-network-cli-empty.msft.png":::
        The **Command Menu**
@@ -326,7 +346,7 @@ How does a page look and behave when some of the page resources are not availabl
        **Show Request Blocking**
     :::image-end:::
 
-1.  Select **Add Pattern** \(![Add Pattern](../media/add-icon.msft.png)\).
+1.  Select **Add Pattern** (![Add Pattern](../media/add-icon.msft.png)).
 1.  Type `main.css`.
 
     :::image type="complex" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="Blocking main.css" lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
@@ -345,20 +365,18 @@ How does a page look and behave when some of the page resources are not availabl
 
 1.  Deselect the **Enable request blocking** checkbox.
 
+
+<!-- ====================================================================== -->
 ## Conclusion
 
 Congratulations, you have completed the tutorial.  You now know how to use the **Network** tool in the Microsoft Edge DevTools!
 
 Navigate to the [Network Reference][DevtoolsNetworkReference] to discover more DevTools features related to inspecting network activity.
 
-## Getting in touch with the Microsoft Edge DevTools team
 
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
-
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->
-
 [DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"
 [DevtoolsNetworkReference]: ./reference.md "Network analysis reference | Microsoft Docs"
 [DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Filter requests - Network analysis reference | Microsoft Docs"
@@ -373,7 +391,7 @@ Navigate to the [Network Reference][DevtoolsNetworkReference] to discover more D
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/index) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

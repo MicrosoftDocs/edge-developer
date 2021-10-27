@@ -32,6 +32,7 @@ You can apply various color themes to Microsoft Edge DevTools, including several
 This article is about changing the appearance of DevTools.  To instead change how the webpage under development is displayed, navigate to [Emulate dark or light schemes in the rendered page][AccessibilityPreferredColorSchemeSimulation].
 
 
+<!-- ====================================================================== -->
 ## Available themes
 
 By default, the DevTools theme is set to **System preference** (also called **system preferred color theme**).  If your operating system is set to Light theme, DevTools uses the **Light+** theme.  If your operating system is set to Dark theme, DevTools uses the **Dark+** theme.  However, you can change DevTools to any of several other themes, so that DevTools isn't affected when you set the operating system to Light or Dark theme.
@@ -53,6 +54,8 @@ Dark themes:
 - Solarized Dark
 - Tomorrow Night Blue
 
+
+<!-- ====================================================================== -->
 ## Changing the color theme from Settings
 
 1.  Open DevTools, and then select **Settings** (the gear icon).
@@ -68,6 +71,7 @@ Dark themes:
     :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## Changing the color theme from the Command Menu
 
 To use the Command Menu to change which color theme is applied to DevTools:
@@ -82,23 +86,22 @@ To use the Command Menu to change which color theme is applied to DevTools:
     :::image-end:::
 
 
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]
-
+<!-- ====================================================================== -->
 <!-- links -->
 [DevtoolsCommandMenu]: ../command-menu/index.md "Command Menu | Microsoft Docs"
 [WhatsNew93]: ../whats-new/2021/07/devtools.md "What's New In DevTools (Microsoft Edge 93) | Microsoft Docs"
 [VSCode]: https://code.visualstudio.com
 [AccessibilityPreferredColorSchemeSimulation]: ../accessibility/preferred-color-scheme-simulation.md "Emulate dark or light schemes in the rendered page | Microsoft Docs"
 
-> [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies
 [KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+
+
+<!-- ====================================================================== -->
+> [!NOTE]
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/dark-theme) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+[![Creative Commons License][CCby4Image]][CCA4IL]
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
