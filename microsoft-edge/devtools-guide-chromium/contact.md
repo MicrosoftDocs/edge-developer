@@ -59,7 +59,7 @@ You can follow the Web We Want initiative on Twitter or LinkedIn, and participat
 
 <!-- ====================================================================== -->
 <!-- links -->
-[OpeningDevTools]: index.md#opening-devtools "OpeningDevTools - Microsoft Edge Developer Tools overview | Microsoft Edge Developer documentation"
+[OpeningDevTools]: devtools-overview.md#opening-devtools "OpeningDevTools - Microsoft Edge Developer Tools overview | Microsoft Edge Developer documentation"
 [WebWeWant]: ../web-we-want/index.md "The Web We Want initiative | Microsoft Edge Developer documentation"
 <!-- external links -->
 [PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a Tweet"
