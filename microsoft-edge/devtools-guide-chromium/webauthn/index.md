@@ -12,10 +12,14 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Instead of debugging Web Authentication in your website or app with physical authenticators, use the **WebAuthn** tool in Microsoft Edge DevTools to create and interact with software-based virtual authenticators.
 
+
+<!-- ====================================================================== -->
 ## Before you begin
 
 A great place to get started with Web Authentication is the [Web Authentication API specification][GithubW3cWebauthn].
 
+
+<!-- ====================================================================== -->
 ## Set up the WebAuthn tool
 
 1.  Navigate to a webpage that uses WebAuthn, such as the following demo website.
@@ -59,6 +63,8 @@ The **Authenticator** section includes a **Credentials** table.  The table is em
    No credentials
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Register a new credential
 
 To register a new credential, complete the following steps.  For more information about what the [Web Authentication API][GithubW3cWebauthn] is doing when registering a new credential, navigate to [Create a New Credential][GithubW3cWebauthnSctnCreatecredential].
@@ -72,6 +78,8 @@ To register a new credential, complete the following steps.  For more informatio
 
 On the demo website, choose the **Authenticate** button.  Verify that the [Sign Count][GithubW3cWebauthnSctnSignCounter] of the credential in the **Credentials** table increased by 1, which marks a successful [authenticatorGetAssertion][GithubW3cWebauthnAuthenticatorgetassertion] operation.
 
+
+<!-- ====================================================================== -->
 ## Export and remove credentials
 
 To export or remove a credential, choose the **Export** or **Remove** button.
@@ -80,6 +88,8 @@ To export or remove a credential, choose the **Export** or **Remove** button.
    Export or remove a credential
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Rename an authenticator
 
 To rename an authenticator, complete the following steps.
@@ -91,6 +101,8 @@ To rename an authenticator, complete the following steps.
    Rename an authenticator
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Set the active authenticator
 
 A newly created authenticator is automatically activated.  To use another virtual authenticator, choose the **Active** radio button next to the authenticator.
@@ -102,6 +114,8 @@ A newly created authenticator is automatically activated.  To use another virtua
    Set active authenticator
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Remove a virtual authenticator
 
 To remove a virtual authenticator, next to the authenticator, choose the **Remove** button.

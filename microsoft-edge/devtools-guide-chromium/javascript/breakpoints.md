@@ -27,6 +27,8 @@ Use breakpoints to pause your JavaScript code.  This article explains each type 
 
 For an introductory tutorial using an existing webpage, navigate to [Get started with debugging JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex].
 
+
+<!-- ====================================================================== -->
 ## Overview of when to use each breakpoint type
 
 The most well-known type of breakpoint is line-of-code.  But line-of-code breakpoints may be inefficient to set, especially if you do not know exactly where to look, or if you are working with a large codebase.  You may save yourself time when debugging by knowing how and when to use the other types of breakpoints.
@@ -41,6 +43,8 @@ The most well-known type of breakpoint is line-of-code.  But line-of-code breakp
 | [Exception](#exception-breakpoints) | On the line of code that is throwing a caught or uncaught exception.  |
 | [Function](#function-breakpoints) | Whenever a specific command, function, or method is run.  |
 
+
+<!-- ====================================================================== -->
 ## Line-of-code breakpoints
 
 Use a line-of-code breakpoint when you know the exact region of code that you need to investigate.  DevTools always pauses before this line of code is run.
@@ -101,6 +105,8 @@ Use the **Breakpoints** pane to disable or remove line-of-code breakpoints from 
        Deactivated breakpoints in the **Breakpoints** pane
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## DOM change breakpoints
 
 Use a DOM change breakpoint when you want to pause on the code that changes a DOM node or the children.
@@ -122,6 +128,8 @@ To set a DOM change breakpoint:
 *   **Attributes modifications**: Triggered when an attribute is added or removed on the currently-selected node, or when an attribute value changes.
 *   **Node Removal**: Triggered when the currently-selected node is removed.
 
+
+<!-- ====================================================================== -->
 ## XHR/Fetch breakpoints
 
 Use an XHR breakpoint when you want to break when the request URL of an XHR contains a specified string.  DevTools pauses on the line of code where the XHR runs the `send()` method.
@@ -143,6 +151,8 @@ To set an XHR breakpoint:
        Create an XHR breakpoint
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Event listener breakpoints
 
 Use event listener breakpoints when you want to pause on the event listener code that runs after an event is fired.  You are able to select specific events, such as `click`, or categories of events, such as all mouse events.
@@ -155,6 +165,8 @@ Use event listener breakpoints when you want to pause on the event listener code
        Create an event listener breakpoint
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Exception breakpoints
 
 Use exception breakpoints when you want to pause on the line of code that is throwing a caught or uncaught exception.
@@ -172,6 +184,8 @@ Use exception breakpoints when you want to pause on the line of code that is thr
        Paused on an uncaught exception
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Function breakpoints
 
 Run the `debug(method)` method, where `method` is the command, function, or method you want to debug, when you want to pause whenever a specific function is run.  You may insert `debug()` into your code (like a `console.log()` statement) or run the method from the DevTools Console.  `debug()` is equivalent to setting a [line-of-code breakpoint](#line-of-code-breakpoints) on the first line of the function.

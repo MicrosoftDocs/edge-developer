@@ -26,7 +26,7 @@ In some cases, contrast is affected by setting the browser to light theme or dar
 
 As an example, on the demo page, the blue links of the sidebar navigation menu have enough contrast, but the green **Dogs** link in the **Donation status** section does not have enough contrast.  Review those elements using the **Inspect** tool, as follows:
 
-1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.  Then select **F12** to open DevTools.
 
 1.  Select the **Inspect** \(![Inspect button](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
@@ -43,6 +43,7 @@ As an example, on the demo page, the blue links of the sidebar navigation menu h
     :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## Different options to inspect text-color contrast in DevTools
 
 Use the following DevTools features to inspect text-color contrast.
@@ -57,12 +58,6 @@ Use the following DevTools features to inspect text-color contrast.
 <!-- ====================================================================== -->
 ## See also
 
-*  [Verify accessibility of all states of elements][DevtoolsAccessibilityTestInspectStates]
+*  [Verify accessibility of all states of elements](test-inspect-states.md)
 *  [Use the Inspect tool to detect accessibility issues by hovering over the webpage](test-inspect-tool.md)
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsAccessibilityTestInspectStates]: test-inspect-states.md "Verify accessibility of all states of elements | Microsoft Docs"
-[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

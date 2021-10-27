@@ -42,6 +42,8 @@ This guide only discusses the Progressive Web App features of the **Application*
 *   View your service worker cache from the **Cache Storage** pane.
 *   Unregister a service worker and clear all storage and caches with a single button choose from the **Clear storage** pane.
 
+
+<!-- ====================================================================== -->
 ## Web app manifest
 
 If you want your users to be able to add your app to their mobile homescreens, you need a web app manifest.  The manifest defines how the app appears on the homescreen, where to direct the user when launching from homescreen, and what the app looks like on launch.
@@ -89,6 +91,8 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
+
+<!-- ====================================================================== -->
 ## Service workers
 
 Service workers are a fundamental technology in the future web platform.  They are scripts that the browser runs in the background, separate from a web page.  The scripts allow you to access features that without the need of a web page or user interaction, like push notifications, background sync, and offline experiences.
@@ -130,6 +134,8 @@ up.
 <!--TODO:  Capture Service Worker Errors sample when available. -->
 <!--TODO:  Link Web "How tickle works" sections when available. -->
 
+
+<!-- ====================================================================== -->
 ## Service worker caches
 
 The **Cache Storage** pane provides a read-only list of resources that have been cached using the \(service worker\) [Cache API][MDNWebCacheAPI].
@@ -147,6 +153,8 @@ If you have two or more caches open, the caches display under the following **Ca
    The **Cache Storage** dropdown
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Quota usage
 
 Some responses within the **Cache Storage** pane may be flagged as being "opaque".  This refers to a response retrieved from a different origin, like from a **CDN** or remote API, when [CORS][FetchHttpCorsProtocol] is not enabled.
@@ -167,6 +175,8 @@ Related Guides:
 
 <!--TODO:  Link Work container storage quota for opaque responses section when available. -->
 
+
+<!-- ====================================================================== -->
 ## Clear storage
 
 The **Clear Storage** pane is a very useful feature when developing progressive web apps.  This pane lets you unregister service workers and clear all caches and storage with a single button choose.  <!--Check out the section below to learn more.  -->

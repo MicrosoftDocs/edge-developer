@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 The timeline events mode displays all events triggered while making a recording.  Use the timeline event reference to learn more about each timeline event type.
 
+
+<!-- ====================================================================== -->
 ## Common timeline event properties
 
 Certain details are present in events of all types, while some only apply to certain event types.  This section lists properties common to different event types.  Properties specific to certain event types are listed in the references for those event types that follow.
@@ -41,6 +43,8 @@ Certain details are present in events of all types, while some only apply to cer
 
 <!--todo: add nested and child events (timelinetool) section when available -->
 
+
+<!-- ====================================================================== -->
 ## Loading events
 
 This section lists events that belong to Loading category and their properties.
@@ -64,6 +68,8 @@ This section lists events that belong to Loading category and their properties.
 | MIME Type | MIME type of the requested resource. |
 | Encoded Data Length | Length of requested resource in bytes. |
 
+
+<!-- ====================================================================== -->
 ## Scripting events
 
 This section lists events that belong to the Scripting category and their properties.
@@ -95,6 +101,8 @@ This section lists events that belong to the Scripting category and their proper
 | Repeats | Boolean that specifies if the timer repeats. |
 | Function Call | A function that was invoked. |
 
+
+<!-- ====================================================================== -->
 ## Rendering events
 
 This section lists events that belong to Rendering category and their properties.
@@ -117,6 +125,8 @@ This section lists events that belong to Rendering category and their properties
 | Elements affected | For Recalculate style records, the number of elements affected by a style recalculation. |
 | Styles invalidated | For Recalculate style records, provides the stack trace of the code that caused the style invalidation. |
 
+
+<!-- ====================================================================== -->
 ## Painting events
 
 This section lists events that belong to Painting category and their properties.

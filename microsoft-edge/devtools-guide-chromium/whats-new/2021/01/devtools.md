@@ -26,6 +26,8 @@ ms.localizationpriority: high
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
+
+<!-- ====================================================================== -->
 ## What's New is now Welcome
 
 <!--  Title: What's New is now Welcome  -->
@@ -39,6 +41,8 @@ The **What's New** tool in the Microsoft Edge DevTools now has a new appearance 
    The **Welcome** tool is highlighted
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Visual Font Editor in the Styles pane
 
 <!--  Title: Visual font editor in the Styles pane  -->
@@ -59,6 +63,8 @@ To turn on this experiment, navigate to [Settings][DevtoolsCustomizeIndexSetting
    The visual **Font editor** is highlighted in the **Styles** pane
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## CSS Flexbox debugging tools
 
 Flexbox debugging features are in active development.  To turn on the experiment for the following two features, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments** and choose the checkbox next to **Enable new CSS Flexbox debugging features**.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1136394][CR1136394] and [1139949][CR1139949].
@@ -123,6 +129,8 @@ When you edit CSS for your Flexbox layout, CSS autocompletes in the **Styles** p
    :::column-end:::
 :::row-end:::
 
+
+<!-- ====================================================================== -->
 ## Add tools quickly with new More Tools button
 
 <!--  Title: Add tools quickly with new More Tools button  -->
@@ -136,6 +144,8 @@ You now have a new way to open more tools in the Microsoft Edge DevTools.  After
    **More Tools** highlighted in DevTools
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Assistive technologies now announce position and count of CSS suggestions
 
 <!--  Title: Assistive technologies now announce position and count of CSS suggestions  -->
@@ -149,6 +159,8 @@ To view a video that displays and reads aloud several suggestions with this expe
    The `suggestion` list highlighted in the **Styles** pane
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Emulate Surface Duo and Samsung Galaxy Fold
 
 <!--  Title: Emulate new dual-screen and foldable devices  -->
@@ -170,6 +182,8 @@ To review the history of this feature in the Chromium open-source project, navig
    Emulate dual-screen
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.2
 
 The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extension version 1.1.2 for Microsoft Visual Studio Code has the following changes since the previous release.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.2, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].
@@ -181,6 +195,8 @@ The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketpl
 
 You may file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools].
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
@@ -409,6 +425,8 @@ To turn on this experiment, navigate to [Settings][DevtoolsCustomizeIndexSetting
    APCA in the Color Picker
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.

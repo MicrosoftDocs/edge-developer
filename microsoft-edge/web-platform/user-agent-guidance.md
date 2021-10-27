@@ -23,12 +23,16 @@ Mechanisms for browser detection:
 
 This article describes the methods Microsoft Edge supports for retrieving user agent information.
 
+
+<!-- ====================================================================== -->
 ## Feature detection
 
 Microsoft recommends [detecting if a feature is supported][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] in your browser whenever possible instead of detecting the browser.
 
 If you must detect browsers, Microsoft recommends using client hints as follows.
 
+
+<!-- ====================================================================== -->
 ## User-Agent Client Hints
 
 Microsoft Edge supports User-Agent Client Hints starting with version 90.
@@ -140,6 +144,8 @@ Use the above method to avoid hard-coding checks for brands at specific indices.
 
 If you cannot use [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection], don't use a hardcoded list of known Chromium-based browsers for verification. Examples of hardcoded browser names include `Microsoft Edge` and `Google Chrome`. [Feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] may not be available because a fix for a Chromium bug in later versions must be avoided and the affected browsers are difficult to detect.
 
+
+<!-- ====================================================================== -->
 ## User-Agent strings
 
 User-Agent strings are outdated and have a long history of causing website compatibility issues.
@@ -168,10 +174,14 @@ The response value from `navigator.userAgent` method uses the following format.
 
 Platform identifiers change based on the operating system, and version numbers increment over time. The format is the same as the Chromium user agent with the addition of a new `Edg` token at the end. Microsoft chose the `Edg` token to avoid compatibility issues caused by `Edge` string, which was previously used for the legacy Microsoft Edge browser based on EdgeHTML. The `Edg` token is also consistent with [existing tokens][WindowsBlogsMsedgedev20171005MicrosoftEdgeIosAndroidDeveloper] used for iOS and Android.
 
+
+<!-- ====================================================================== -->
 ## Map the User-Agent string to browser name
 
 Map the user-agent string tokens to human-readable browser names to use in code. This practice is common across the web. When you map the new `Edg` token to a browser name, Microsoft recommends using a different name than the one used for the legacy Microsoft EdgeHTML browser to avoid accidentally applying legacy workarounds that do not apply to Chromium-based browsers.
 
+
+<!-- ====================================================================== -->
 ## User-Agent overrides
 
 Sometimes, a website doesn't recognize the Microsoft Edge user agent. As a result, a set of the features of the website may not work correctly. When Microsoft is notified about the types of issues, Microsoft contacts you \(a website owner\) and informs you about the updated user agent.
