@@ -91,7 +91,7 @@ For more details about improvements and fixes, check the [changelog file][Github
    DevTools extension integrated with Visual Studio Code Debugger workflow
 :::image-end:::
 
-For more information, navigate to [Launching Edge DevTools from the JS Debugger workflow][GithubVscodeEdgeDevtoolsDebuggerIntegration].  Get the [Microsoft Edge Developer Tools for Visual Studio Code extension][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools].  Microsoft Visual Studio Code updates extensions automatically; to update this extension manually instead, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools].
+For more information, see [Browser debugging with Microsoft Edge DevTools integration in Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code).  Get the [Microsoft Edge Developer Tools for Visual Studio Code extension][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools].  Microsoft Visual Studio Code updates extensions automatically; to update this extension manually instead, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools].
 
 
 <!-- ====================================================================== -->
@@ -230,8 +230,6 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [CR2882756]: https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756 "Issue 2882756: \[l10n\] Add setting for users to choose DevTools locale | Chromium bugs"
 [CR1223208]: https://bugs.chromium.org/p/chromium/issues/detail?id=1223208 "Inappropriate information is announced by screen reader for the Errors and Warnings in the header | Chromium bugs"
 [CR932971]: https://bugs.chromium.org/p/chromium/issues/detail?id=932971 "932971 - Network tab, Copy as Powershell == doesn't send cookies properly | Chromium bugs"
-
-[GithubVscodeEdgeDevtoolsDebuggerIntegration]: https://microsoft.github.io/vscode-edge-devtools/debugger-integration.html "Launching Edge DevTools from the JS Debugger workflow - vscode-edge-devtools | GitHub"
 
 [GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
 [GithubMicrosoftVscodeEdgeDevtoolsChangelog]: https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md "Changelog file - vscode-edge-devtools | GitHub"
