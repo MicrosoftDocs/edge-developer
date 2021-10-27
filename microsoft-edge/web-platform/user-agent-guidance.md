@@ -1,5 +1,5 @@
 ---
-description: This article describes how to detect Microsoft Edge data with user-agent client hints and the user-agent string
+description: This article describes how to detect Microsoft Edge data with User-Agent Client Hints and the User-Agent string.
 title: Detecting Microsoft Edge from your website
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -9,6 +9,12 @@ ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, user-agent string, ua string, ua overrides, user-agent client hints, user agent client hints, ua client hints, ua ch, feature detection, browser identification, browser detection, header, https header, detect microsoft edge, detecting microsoft edge
 ---
 # Detecting Microsoft Edge from your website
+
+<!-- restricted lexicon to use:
+User-Agent Client Hints
+User-Agent string
+user agent string - not used
+-->
 
 This article describes the methods Microsoft Edge supports for retrieving user agent information.
 
@@ -176,7 +182,7 @@ Platform identifiers change based on the operating system, and version numbers i
 <!-- ====================================================================== -->
 ## Identifiers for Microsoft Edge on various platforms
 
-On desktop operating systems, Microsoft Edge is commonly identified by an `Edg` token in the user-agent string.  However, a different token for Microsoft Edge is used on some device platforms, as follows:
+On desktop operating systems, Microsoft Edge is commonly identified by the `Edg` token in the User-Agent string.  However, a different token for Microsoft Edge is used on some device platforms, as follows:
 
 
 | Platform | Identifier token |
@@ -186,14 +192,14 @@ On desktop operating systems, Microsoft Edge is commonly identified by an `Edg` 
 | Android (Mobile/tablet) | `EdgA`|
 
 > [!NOTE]
-> Values in the above table refer to Chromium-based Microsoft Edge only.  EdgeHTML-based Microsoft Edge has the identifier `Edge` in the user-agent string.  
+> Values in the above table refer to Chromium-based Microsoft Edge only.  EdgeHTML-based Microsoft Edge has the identifier `Edge` in the User-Agent string.  
 
 
 <!-- ====================================================================== -->
 ## Map the User-Agent string to an expanded browser name
 
 
-Map the user-agent string tokens to human-readable browser names to use in code. This practice is common across the web. When you map the new `Edg` token to a browser name, Microsoft recommends using a different name than the one used for the legacy Microsoft EdgeHTML browser, to avoid accidentally applying legacy workarounds that don't apply to Chromium-based browsers.
+Map the User-Agent string tokens to human-readable browser names to use in code. This practice is common across the web. When you map the new `Edg` token to a browser name, Microsoft recommends using a different name than the one used for the legacy Microsoft EdgeHTML browser, to avoid accidentally applying legacy workarounds that don't apply to Chromium-based browsers.
 
 
 <!-- ====================================================================== -->
