@@ -82,17 +82,17 @@ landingContent:
           - text: Progressive Web Apps overview
             url: /microsoft-edge/progressive-web-apps-chromium/index
           - text: Get started with Progressive Web Apps
-            url: /microsoft-edge/progressive-web-apps-chromium/get-started
+            url: /microsoft-edge/progressive-web-apps-chromium/how-to/index
           - text: Using DevTools with Progressive Web Apps
             url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
       - linkListType: concept
         links:
           - text: Offline scenarios
-            url: /microsoft-edge/progressive-web-apps-chromium/offline
+            url: /microsoft-edge/progressive-web-apps-chromium/how-to/offline
           - text: Service Workers
-            url: /microsoft-edge/progressive-web-apps-chromium/serviceworker
+            url: /microsoft-edge/progressive-web-apps-chromium/how-to/service-workers
           - text: Web App Manifests
-            url: /microsoft-edge/progressive-web-apps-chromium/webappmanifests
+            url: /microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests
   # Card
   - title: WebView2
     linkLists:
