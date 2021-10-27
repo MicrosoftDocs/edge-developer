@@ -190,9 +190,7 @@ On desktop operating systems, Microsoft Edge is commonly identified by the `Edg`
 | Desktop (Windows/Mac/Linux) | `Edg` |
 | iPhone/iPad | `EdgiOS` |
 | Android (Mobile/tablet) | `EdgA`|
-
-> [!NOTE]
-> Values in the above table refer to Chromium-based Microsoft Edge only.  EdgeHTML-based Microsoft Edge has the identifier `Edge` in the User-Agent string.  
+| EdgeHTML on Windows | `Edge` |
 
 
 <!-- ====================================================================== -->
