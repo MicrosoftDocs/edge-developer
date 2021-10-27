@@ -238,6 +238,7 @@ To use only the screencast browser inside Visual Studio Code, select Settings > 
 :::image type="content" source="./media/edge-devtools-for-vscode-device-dropdown.msft.png" alt-text="The Device dropdown list in the 'Edge DevTools: Screencast' tab." lightbox="./media/edge-devtools-for-vscode-device-dropdown.msft.png":::
 
 You can select from a list of different devices to emulate in the screencast next to the Address bar.  The default device is a desktop computer.
+<!-- todo: what is the tooltip for Rotate/Orientation? -->
 
 :::image type="content" source="./media/edge-devtools-for-vscode-device-list.msft.png" alt-text="The list of devices that can be emulated open in the screencast of the extension" lightbox="./media/edge-devtools-for-vscode-device-list.msft.png":::
 
@@ -261,7 +262,7 @@ The **Problems** tab in the lower panel lists all the issues that are found in t
 
 :::image type="content" source="./media/edge-devtools-for-vscode-issues-in-lower-panel.msft.png" alt-text="The Problems tab in the lower panel of Visual Studio Code, listing all the issues that are found in the project's files" lightbox="./media/edge-devtools-for-vscode-issues-in-lower-panel.msft.png":::
 
-Issues are being evaluated live. This means that while editing your code, you get feedback about any issues that are found, and how to fix them.
+Issues are evaluated live while you edit your code.  As you type, you get feedback about any issues that are found, and how to fix them.
 
 :::image type="content" source="./media/edge-devtools-for-vscode-live-issue-reporting.msft.png" alt-text="A possible issue being explained on an output element" lightbox="./media/edge-devtools-for-vscode-live-issue-reporting.msft.png":::
 
