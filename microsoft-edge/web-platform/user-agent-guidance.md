@@ -176,7 +176,8 @@ Platform identifiers change based on the operating system, and version numbers i
 <!-- ====================================================================== -->
 ## Identifiers for Microsoft Edge on various platforms
 
-On desktop operating systems, Microsoft Edge is commonly identified by an "Edg" token in the user-agent string.  However, this token might change for various devices or platforms.  The following token is used for several common devices or platforms:
+On desktop operating systems, Microsoft Edge is commonly identified by an `Edg` token in the user-agent string.  However, this token might change for various devices or platforms.  The following token is used for several common devices or platforms:
+
 
 | Platform | Identifier token |
 |:--- |:--- |
