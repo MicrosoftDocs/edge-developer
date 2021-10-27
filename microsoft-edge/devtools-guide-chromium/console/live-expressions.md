@@ -16,7 +16,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 <!-- ====================================================================== -->
 ## Add a new live expression
 
-To start, choose the **Create live expression** \(eye\) button next to the **Filter** textbox.  After you choose it, a textbox is displayed for you to enter your new expression in it.
+To start, choose the **Create live expression** (eye) button next to the **Filter** textbox.  After you choose it, a textbox is displayed for you to enter your new expression in it.
 
 :::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="Choose the New live expression button to open a textbox to type an expression" lightbox="../media/console-live-expressions-new.msft.png":::
     Choose the `New live expression` button to open a textbox to type an expression
@@ -27,7 +27,7 @@ To start, choose the **Create live expression** \(eye\) button next to the **Fil
 1.  Open the **Live Expression** textbox.
 1.  Type `document.activeElement`.
 1.  To save the expression, complete one of the following actions.
-    *   Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\).
+    *   Select `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS).
     *   Choose outside the **Live Expression** textbox.
 
 The expression is now live and displays `body` as the result.
