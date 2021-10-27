@@ -1,79 +1,95 @@
 ---
-description: Process model
-title: Process model | WebView 2
+description: The WebView2 Runtime process model, and how it works with the user data folder and site isolation.
+title: The WebView2 process model
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 09/21/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ---
-# Process model  
+# The WebView2 process model
 
-:::row:::
-   :::column span="1":::
-      Supported platforms:
-   :::column-end:::
-   :::column span="2":::
-      Win32, Windows Forms, WinUi, WPF
-   :::column-end:::
-:::row-end:::  
+Supported platforms: Win32, Windows Forms, WinUI, WPF.
 
-WebView2 uses the same process model as the Microsoft Edge browser.  For more information about the browser process model, navigate to [Browser Architecture - Inside look at modern web browser][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture].  
+The WebView2 Runtime uses the same process model as the Microsoft Edge browser.  This browser process model is described at [Inside look at modern web browser (part 1)][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture].
 
-One browser process is associated with the renderer processes and other utility processes as described in that article.  Additionally, if WebView2 is specified, the host app requesting processes use WebView2.  
+
+<!-- ====================================================================== -->
+## Processes in the WebView2 Runtime
+
+A _WebView2 process group_ is a collection of WebView2 Runtime processes.  A WebView2 process group includes the following:
+*  A single browser process.
+*  One or more renderer processes.
+*  Other helper processes, such as the GPU process and the Audio service process.
 
 :::image type="complex" source="../media/process-model-1.png" alt-text="Process 1" lightbox="../media/process-model-1.png":::
-   Process 1  
-:::image-end:::    
+   Process 1
+:::image-end:::
 
-A browser process is associated with only one user data folder.  A request process may specify more than one user data folder.  A request process that specifies more than one user data folder is associated with the same number of browser processes.  
-For example, a request process that requests access to two user data folders uses two browser processes.  
+The number and presence of processes in a WebView2 process group can change as a WebView2 application makes use of WebView2 features.  (However, there's only a single, specific browser process in a WebView2 process group.)  For example, creating a new WebView from the same `CoreWebView2Environment`, but with a different domain in the `Source` property, will usually start a new renderer process.
+
+The number of renderer processes can vary based on the following conditions:
+*   Use of the _Site Isolation_ feature in the WebView2 Runtime.  See [Per-frame renderer processes - Site Isolation](https://developers.google.com/web/updates/2018/09/inside-browser-part1#site-isolation).
+*   The number of distinct disconnected origins that are rendered in instances of WebView2 that use the same user data folder.
+
+The logic that controls when these extra processes are created depends on the Chromium architecture, and is beyond the scope of the WebView2 Runtime.
+
+
+<!-- ====================================================================== -->
+## WebView2 Runtime processes and the user data folder
+
+All processes in a WebView2 Runtime processes collection are tied to the browser process, which in turn is associated with a single user data folder (UDF).  If an application makes use of multiple user data folders, a collection of WebView2 Runtime processes will be created for each of these user data folders.
+
+A user data folder can be shared by multiple applications, but be sure to consider the implications on performance and management, as described in [Manage the user data folder][WebView2ManageUDF].
 
 :::image type="complex" source="../media/process-model-2.png" alt-text="Process 2" lightbox="../media/process-model-2.png":::
-   Process 2  
-:::image-end:::    
+   Process 2
+:::image-end:::
 
-A browser process is associated with several renderer processes.  A WebView 2 instance creates a browser process to service frames.  A browser process may be associated with multiple frames.  A browser process may be associated with different instances of WebView2.  The number of render processes varies based on the following conditions.  
+To make use of multiple user data folders, a WebView2 application needs to create different `CoreWebView2Environment` objects.  A `WebView2` instance is created for a given user data folder through the configured `CoreWebView2Environment` object.  Each `CoreWebView2Environment` object needs to be configured with a different user data folder value.
 
-*   Use of the website isolation feature in your browser.  
-*   The number of distinct disconnected origins rendered in associated instances of WebView2.  
-    
-The website isolation browser feature is described in the previous content. 
-<!--todo:  which previous content?  -->  
+When the first `WebView2` instance is created for a given user data folder, the browser process for the WebView2 Runtime processes collection that is associated with that UDF will be started.  All additional processes will be managed by the lifetime of that browser process.
 
-The `CoreWebView2Environment` represents a user data folder and browser process.  The `CoreWebView2` does not directly correspond to any one set of processes since various renderer processes are used by a WebView2 depending on website isolation as previously described.  
+<!-- TODO: update with profile info -->
+The `CoreWebView2Environment` represents a user data folder and the collection of processes associated with it.  A given renderer process is not associated with a single `CoreWebView2` instance, because the renderer process can serve frames in multiple `CoreWebView2` instances that use the same user data folder, depending on website isolation.  See [Per-frame renderer processes - Site Isolation](https://developers.google.com/web/updates/2018/09/inside-browser-part1#site-isolation).
 
-To react to crashes and hangs in the browser and renderer processes, use the `ProcessFailed` event of `CoreWebView2`.  
 
-To safely shut down associated browser and renderer processes, use the `Close` method of `CoreWebView2Controller`.  
+<!-- ====================================================================== -->
+## Handling process events and lifetime
 
-To open the Browser Task Manager window from the **DevTools** window of a WebView2 instance, complete on of the following actions.  
+To react to crashes and hangs in the browser and renderer processes, use the `ProcessFailed` event of `CoreWebView2`.
 
-*   Select `Shift`+`Escape`.  
-*   Hover on the DevTools window title bar, open the contextual menu \(right-click\), and choose `Browser task manager`.  
-    
-All processes associated with the browser process of your WebView2 are displayed including associated purposes.  
+<!-- todo: add info about the new APIs BrowserProcessExited and ProcessInfo -->
 
-## See also  
+To safely shut down associated browser and renderer processes, use the `Close` method of `CoreWebView2Controller`.
 
-*   To Get Started using WebView2, navigate to [WebView2 Get Started Guides][Webview2IndexGetStarted] guides.  
-*   For a comprehensive example of WebView2 capabilities, navigate to [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] on GitHub.  
-*   For more detailed information about WebView2 APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2WpfWebview2].  
-*   For more information about WebView2, navigate to [WebView2 Resources][Webview2IndexNextSteps].  
-    
-## Getting in touch with the Microsoft Edge WebView team  
+To open the **Browser Task Manager** window from the **DevTools** window of a WebView2 instance, do either of the following:
+*   Select `Shift`+`Escape`.
+*   Hover on the DevTools window title bar, open the contextual menu (right-click), and select `Browser task manager`.
 
-[!INCLUDE [contact WebView team note](../includes/contact-webview-team-note.md)]  
+All processes that are associated with the browser process of your WebView2 are displayed, including their associated purposes.
 
-<!-- links -->  
 
-[Webview2IndexGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
-[Webview2IndexNextSteps]: ../index.md#next-steps "Next steps - Introduction to Microsoft Edge WebView2 | Microsoft Docs"  
+<!-- ====================================================================== -->
+## See also
 
-[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 Class | Microsoft Docs"  
+*  [Inside look at modern web browser (part 1)][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture] - the browser process model that's used by the WebView2 Runtime and the Microsoft Edge browser.
+*  [WebView2 Get Started Guides][Webview2IndexGetStarted]
+*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] - a comprehensive example of WebView2 capabilities.
+*  [WebView2 API reference][DotnetApiMicrosoftWebWebview2WpfWebview2]
+*  [See also][Webview2IndexNextSteps] in _Introduction to Microsoft Edge WebView2_.
 
-[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"  
 
-[GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]: https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture "Browser Architecture - Inside look at modern web browser (part 1)"  
+<!-- ====================================================================== -->
+<!-- links -->
+[Webview2IndexGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
+[Webview2IndexNextSteps]: ../index.md#see-also "See also - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
+[WebView2ManageUDF]: ./user-data-folder.md "Manage the user data folder | Microsoft Docs"
+<!-- external links -->
+[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 Class | Microsoft Docs"
+
+[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"
+
+[GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]: https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture "Inside look at modern web browser (part 1)"

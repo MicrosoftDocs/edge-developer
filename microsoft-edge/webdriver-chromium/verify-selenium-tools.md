@@ -9,18 +9,20 @@ ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, html, css, javascript, developer, webdriver, selenium, testing, tools, automation, test
 ---
-# Verify downloads of Selenium Tools for Microsoft Edge  
+# Verify downloads of Selenium Tools for Microsoft Edge
 
-This article provides the public key to use when verifying the signature of releases of the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases].  
+This article provides the public key to use when verifying the signature of releases of the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases].
 
-The [Java releases][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] of [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases] are signed using [GPG][Gnupg].  
+The [Java releases][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] of [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases] are signed using [GPG][Gnupg].
 
-Use the following keys to verify the signature of packages provided by the [Microsoft Edge Developer Tools team][TwitterEdgeDevTools].  
+Use the following keys to verify the signature of packages provided by the [Microsoft Edge Developer Tools team][TwitterEdgeDevTools].
 
-## Public key for verifying Selenium Tools for Microsoft Edge  
 
-*   **Public Key ID**: Microsoft Edge Developer Tools Team [EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)  
-*   **Public Key Fingerprint**: `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`  
+<!-- ====================================================================== -->
+## Public key for verifying Selenium Tools for Microsoft Edge
+
+*   **Public Key ID**: Microsoft Edge Developer Tools Team [EdgeDevToolsOSS@microsoft.com](mailto:edgedevtoolsoss@microsoft.com)
+*   **Public Key Fingerprint**: `46EE EB3F 4028 B5CE A4E8  E6F5 A6DC D211 6D3A 3A7A`
 
 ```output
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -42,14 +44,14 @@ ptJfPKT84TtqmRoJApBgxAsnD4t4JiuvnHkYHgzAzwcXFiofj2cCeJZf1tzIk6+Z
 1lg+9MXF2PDDom1+ieCUBXFdRq6fMKldXM0V7yBOUeY=
 =0iMW
 -----END PGP PUBLIC KEY BLOCK-----
-```  
+```
 
-<!-- links -->  
+<!-- links -->
 
-[GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases "microsoft/edge-selenium-tools | GitHub"  
+[GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases "microsoft/edge-selenium-tools | GitHub"
 
-[Gnupg]: https://gnupg.org "The GNU Privacy Guard | GnuPG"  
+[Gnupg]: https://gnupg.org "The GNU Privacy Guard | GnuPG"
 
-[MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava]:https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java "com.microsoft.edge:msedge-selenium-tools-java | sonatype Maven Central Repository Search"  
+[MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava]:https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java "com.microsoft.edge:msedge-selenium-tools-java | sonatype Maven Central Repository Search"
 
-[TwitterEdgeDevTools]: https://twitter.com/edgedevtools "Microsoft Edge DevTools | Twitter"  
+[TwitterEdgeDevTools]: https://twitter.com/edgedevtools "Microsoft Edge DevTools | Twitter"

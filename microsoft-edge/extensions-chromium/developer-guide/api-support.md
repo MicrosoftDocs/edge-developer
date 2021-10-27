@@ -10,9 +10,9 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, ex
 ---
 # Supported APIs for Microsoft Edge extensions
 
-The following table provides a list of APIs that you can use when building extensions for the Microsoft Edge \(Chromium\) browser.
+The following table provides a list of APIs that you can use when building extensions for the Microsoft Edge browser.
 
-| API                                   | Description                                            
+| API                                   | Description
 |---------------------------------------|----------------------------------------------------------|
 | [alarms](https://developer.chrome.com/extensions/alarms) | Schedule code to run periodically or at a specified time in the future. |
 | [bookmarks](https://developer.chrome.com/extensions/bookmarks) | Create, organize, and manipulate bookmarks. |
@@ -65,6 +65,7 @@ The following table provides a list of APIs that you can use when building exten
 
 
 
+<!-- ====================================================================== -->
 ## Unsupported extension APIs
 
 Microsoft Edge doesn't support the following Extension APIs:
@@ -75,22 +76,25 @@ Microsoft Edge doesn't support the following Extension APIs:
 * `chrome.instanceID`.
 
 
+<!-- ====================================================================== -->
 ## Additional considerations for supported APIs
 
-* The user must be signed into Microsoft Edge using an MSA or Azure Active Directory account to use `chrome.identity.getProfileUserInfo`. If the user is signed into Microsoft Edge using an on-premises Active Directory account, the API returns `null` for the email and ID values.
+*  The user must be signed into Microsoft Edge using a Microsoft account (MSA) or Azure Active Directory account to use `chrome.identity.getProfileUserInfo`. If the user is signed into Microsoft Edge using an on-premises Active Directory account, the API returns `null` for the email and ID values.
 
-* Microsoft Edge doesn't support extensions that use Chrome Web Store payments because it uses `identity.getAuthtoken` to request tokens for signed-in users. These tokens are sent to the REST-based licensing API. 
+   A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account.
+
+*  Microsoft Edge doesn't support extensions that use Chrome Web Store payments because it uses `identity.getAuthtoken` to request tokens for signed-in users.  These tokens are sent to the REST-based licensing API.
 
 
-<!-- links -->  
+<!-- links -->
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developer.chrome.com/apps/external_extensions).  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
+> The original page is found [here](https://developer.chrome.com/apps/external_extensions).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies

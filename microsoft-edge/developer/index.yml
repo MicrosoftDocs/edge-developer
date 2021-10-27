@@ -1,0 +1,168 @@
+### YamlMime:Landing
+
+title: Microsoft Edge Developer documentation # < 60 chars
+summary: Development using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more. # < 160 chars
+
+metadata:
+  # title: default to root title above. # Required; page title displayed in search results. Include the brand. < 60 chars.
+  # description: default to root title above. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: websites #Required; service per approved list. service slug assigned to your service by ACOM.
+  # ms.subservice: subservice # Optional; Remove if no subservice is used.
+  ms.topic: landing-page # Required
+  # ms.collection: collection # Optional; Remove if no collection is used.
+  author: MSEdgeTeam #Required; your GitHub user alias, with correct capitalization.
+  ms.author: msedgedevrel #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/02/2021 #Required; mm/dd/yyyy format.
+
+      # - linkListType: architecture
+      # - linkListType: concept
+      # - linkListType: deploy
+      # - linkListType: download
+      # - linkListType: get-started
+      # - linkListType: how-to-guide
+      # - linkListType: learn
+      # - linkListType: overview
+      # - linkListType: quickstart
+      # - linkListType: reference
+      # - linkListType: sample
+      # - linkListType: tutorial
+      # - linkListType: video
+      # - linkListType: whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: Microsoft Edge DevTools
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: DevTools overview
+            url: /microsoft-edge/devtools-guide-chromium
+          - text: DevTools for beginners
+            url: /microsoft-edge/devtools-guide-chromium/beginners/html
+      - linkListType: how-to-guide
+        links:
+          - text: Command menu
+            url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+          - text: Open DevTools
+            url: /microsoft-edge/devtools-guide-chromium/open
+          - text: View and change CSS
+            url: /microsoft-edge/devtools-guide-chromium/css/index
+      - linkListType: reference
+        links:
+          - text: Keyboard shortcuts
+            url: /microsoft-edge/devtools-guide-chromium/shortcuts
+  # Card
+  - title: Microsoft Edge extensions
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Extensions overview
+            url: /microsoft-edge/extensions-chromium/index
+          - text: Getting started tutorial
+            url: /microsoft-edge/extensions-chromium/getting-started/index
+          - text: Port a Chromium extension to Microsoft Edge
+            url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
+      - linkListType: how-to-guide
+        links:
+          - text: Alternate methods of distributing extensions
+            url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
+          - text: Step-wise publishing process
+            url: /microsoft-edge/extensions-chromium/publish/publish-extension
+          - text: Register as a Microsoft Edge extension developer
+            url: /microsoft-edge/extensions-chromium/publish/create-dev-account
+          - text: Create a simple extension
+            url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
+  # Card
+  - title: Progressive Web Apps
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Progressive Web Apps overview
+            url: /microsoft-edge/progressive-web-apps-chromium/index
+          - text: Get started with Progressive Web Apps
+            url: /microsoft-edge/progressive-web-apps-chromium/get-started
+          - text: Using DevTools with Progressive Web Apps
+            url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
+      - linkListType: concept
+        links:
+          - text: Offline scenarios
+            url: /microsoft-edge/progressive-web-apps-chromium/offline
+          - text: Service Workers
+            url: /microsoft-edge/progressive-web-apps-chromium/serviceworker
+          - text: Web App Manifests
+            url: /microsoft-edge/progressive-web-apps-chromium/webappmanifests
+  # Card
+  - title: WebView2
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: WebView2 overview
+            url: /microsoft-edge/webview2/index
+      - linkListType: get-started
+        links:
+          - text: Getting Started with WebView2
+            url: /microsoft-edge/webview2/gettingstarted/win32
+          - text: Getting started with WebView2 in WPF
+            url: /microsoft-edge/webview2/gettingstarted/wpf
+          - text: Getting started with WebView2 in Windows Forms apps
+            url: /microsoft-edge/webview2/gettingstarted/winforms
+      - linkListType: reference
+        links:
+          - text: Microsoft Edge WebView2 API Reference
+            url: /microsoft-edge/webview2/webview2-api-reference
+  # Card
+  - title: Test and automation
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: DevTools Protocol
+            url: /microsoft-edge/devtools-protocol-chromium
+          - text: Origin Trials
+            url: /microsoft-edge/origin-trials/index
+          - text: Playwright
+            url: /microsoft-edge/playwright/index
+          - text: Puppeteer
+            url: /microsoft-edge/puppeteer
+          - text: WebDriver
+            url: /microsoft-edge/webdriver-chromium
+          - text: webhint extension for Visual Studio Code
+            url: /microsoft-edge/visual-studio-code/webhint
+  # Card
+  - title: Web platform
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Detecting Microsoft Edge from your website
+            url: /microsoft-edge/web-platform/user-agent-guidance
+          - text: Site compatibility-impacting changes
+            url: /microsoft-edge/web-platform/site-impacting-changes
+  # Card
+  - title: Microsoft Edge IDE integration
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Visual Studio
+            url: /microsoft-edge/visual-studio/
+          - text: Visual Studio Code overview
+            url: /microsoft-edge/visual-studio-code/
+          - text: DevTools extension for Visual Studio Code
+            url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
+          - text: webhint extension for Visual Studio Code
+            url: /microsoft-edge/visual-studio-code/webhint
+  # Card
+  - title: Accessibility in Microsoft Edge
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Accessibility-testing features in DevTools
+            url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
+          - text: Accessibility overview
+            url: /microsoft-edge/accessibility/
+      - linkListType: how-to-guide
+        links:
+          - text: Overview of accessibility testing using DevTools
+            url: /microsoft-edge/devtools-guide-chromium/accessibility/accessibility-testing-in-devtools
+          - text: Accessibility testing
+            url: /microsoft-edge/accessibility/test

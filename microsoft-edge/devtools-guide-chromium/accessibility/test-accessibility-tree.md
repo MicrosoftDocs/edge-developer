@@ -16,12 +16,11 @@ Several DevTools features check for keyboard and screen reader support.  Using t
 
 The **Accessibility Tree** is a subset of the DOM tree, which contains elements from the DOM tree that are relevant and useful for displaying the contents of a page in a screen reader.  The **Accessibility Tree** is in the **Accessibility** tab of the **Elements** tool (near the **Styles** tab).
 
-
 To explore using the Accessibility Tree with the demo page:
 
-1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.  Then select **F12** to open DevTools.
 
-1.  Select the **Inspect** \(![the Inspect icon](../media/inspect-icon.msft.png)\) button in the top-left corner of DevTools so that the button is highlighted (blue).
+1.  Select the **Inspect** (![the Inspect icon](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
 1.  In the rendered webpage, in the **Donation** section, hover over the **100** button.  The **Inspect** tool overlay appears.
 
@@ -36,17 +35,8 @@ To explore using the Accessibility Tree with the demo page:
 Any element in the tree that doesn't have a name, or has a role of `generic` (such as the `div` element) is a problem, because that element won't be available to keyboard users, or to users who are using assistive technology.
 
 
+<!-- ====================================================================== -->
 ## See also
 
-*  [View the position of an element in the Accessibility Tree][DevtoolsAccessibilityAccessibilityTabViewTree]
+*  [View the position of an element in the Accessibility Tree](accessibility-tab.md#view-the-position-of-an-element-in-the-accessibility-tree)
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
-
-
-## Getting in touch with the Microsoft Edge DevTools team  
-
-[!INCLUDE [contact DevTools team note](../includes/contact-devtools-team-note.md)]  
-
-
-<!-- links -->
-[DevtoolsAccessibilityAccessibilityTabViewTree]: accessibility-tab.md#view-the-position-of-an-element-in-the-accessibility-tree "View the position of an element in the Accessibility Tree - Test accessibility using the Accessibility tab | Microsoft Docs"
-[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"
