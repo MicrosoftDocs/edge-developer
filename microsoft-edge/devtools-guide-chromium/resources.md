@@ -44,9 +44,3 @@ This is only a sampling.  There are many more posts at the [Microsoft Edge blog]
 ## See also
 
 *   [Resources, talks, videos, and blogs about Microsoft Edge WebView 2](../webview2/resources.md) -->
-
-
-<!-- ====================================================================== -->
-## Getting in touch with the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](./includes/contact-devtools-team-note.md)]
