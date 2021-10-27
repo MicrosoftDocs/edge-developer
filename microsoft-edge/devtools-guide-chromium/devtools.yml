@@ -1,0 +1,61 @@
+### YamlMime:Landing
+
+title: Microsoft Edge DevTools # < 60 chars
+summary: Development using Microsoft Edge DevTools. # < 160 chars
+
+metadata:
+  # title: default to root title above. # Required; page title displayed in search results. Include the brand. < 60 chars.
+  # description: default to root title above. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: websites #Required; service per approved list. service slug assigned to your service by ACOM.
+  # ms.subservice: subservice # Optional; Remove if no subservice is used.
+  ms.topic: landing-page # Required
+  # ms.collection: collection # Optional; Remove if no collection is used.
+  author: MSEdgeTeam #Required; your GitHub user alias, with correct capitalization.
+  ms.author: msedgedevrel #Required; microsoft alias of author; optional team alias.
+  ms.date: 10/27/2021 #Required; mm/dd/yyyy format.
+
+      # - linkListType: architecture
+      # - linkListType: concept
+      # - linkListType: deploy
+      # - linkListType: download
+      # - linkListType: get-started
+      # - linkListType: how-to-guide
+      # - linkListType: learn
+      # - linkListType: overview
+      # - linkListType: quickstart
+      # - linkListType: reference
+      # - linkListType: sample
+      # - linkListType: tutorial
+      # - linkListType: video
+      # - linkListType: whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: Overview
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: DevTools overview
+            url: /microsoft-edge/devtools-guide-chromium
+          - text: DevTools for beginners
+            url: /microsoft-edge/devtools-guide-chromium/beginners/html
+  # Card
+  - title: How to
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Command menu
+            url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+          - text: Open DevTools
+            url: /microsoft-edge/devtools-guide-chromium/open
+          - text: View and change CSS
+            url: /microsoft-edge/devtools-guide-chromium/css/index
+  # Card
+  - title: Reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Keyboard shortcuts
+            url: /microsoft-edge/devtools-guide-chromium/shortcuts

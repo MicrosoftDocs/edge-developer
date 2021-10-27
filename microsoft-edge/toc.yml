@@ -4,8 +4,12 @@
 # =============================================================================
     - name: Microsoft Edge DevTools
       items:
-        - name: DevTools overview
+        - name: DevTools landing page (YAML)
+          href: devtools-guide-chromium/devtools.yml
+        - name: DevTools landing page (Markdown)
           href: devtools-guide-chromium/index.md
+        - name: DevTools overview
+          href: devtools-guide-chromium/devtools-overview.md
         - name: What's new
           items:
             - name: Experimental features
