@@ -6,7 +6,8 @@ const fetch = require('node-fetch');
 const FILES_TO_INCLUDE = '../microsoft-edge/**/*.md';
 const FILES_TO_IGNORE = [
     '../microsoft-edge/devtools-guide-chromium/whats-new/**/*.md',
-    '../microsoft-edge/webview2/release-notes.md'
+    '../microsoft-edge/webview2/release-notes.md',
+    '../microsoft-edge/progressive-web-apps-chromium/whats-new/*.md'
 ];
 // This script attempts to find the current edge release version by looking at this page and finding the first version header occurrence.
 const RELEASE_NOTES_PAGE = 'https://docs.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel';
@@ -66,7 +67,7 @@ async function findMatchingPatternsInAllSourceFiles() {
 async function findCurrentEdgeVersion() {
     const response = await fetch(RELEASE_NOTES_PAGE);
     const content = await response.text();
-    
+
     const match = content.match(/<h2[^>]*>Version ([0-9]+)/);
     if (match && match.length === 2) {
         return parseInt(match[1], 10);

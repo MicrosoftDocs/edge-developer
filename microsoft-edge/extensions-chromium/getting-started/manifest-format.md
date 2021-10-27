@@ -6,12 +6,12 @@ ms.author: msedgedevrel
 ms.date: 06/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, web development, html, css, javascript, developer, extensions, mv2, mv3, manifest
+keywords: microsoft edge, web development, html, css, javascript, developer, extensions, mv2, mv3, manifest
 ---
 
 # Manifest file format for extensions
 
-Every extension for Microsoft Edge (Chromium) has a JSON-formatted manifest file, named `manifest.json`.  The manifest file is the blueprint of your extension.  The manifest file includes information such as:
+Every extension for Microsoft Edge has a JSON-formatted manifest file, named `manifest.json`.  The manifest file is the blueprint of your extension.  The manifest file includes information such as:
 
 *  The version number of the extension.
 *  The title of the extension.
@@ -20,6 +20,7 @@ Every extension for Microsoft Edge (Chromium) has a JSON-formatted manifest file
 The format for `manifest.json` for extensions is moving from Manifest V2 to Manifest V3.  Both formats are shown here.  To migrate a Manifest V2 extension to Manifest V3, navigate to [Prepare to update your extensions from Manifest v2 to v3][MigrateToMV3].
 
 
+<!-- ====================================================================== -->
 ## Format of manifest\.json for extensions using Manifest V3
 
 The following code shows the fields that are supported in `manifest.json` for extensions, for a Manifest V3 package.
@@ -105,6 +106,8 @@ For reference information about each field, navigate to [Manifest file format (V
 }
 ```
 
+
+<!-- ====================================================================== -->
 ## Format of manifest\.json for extensions using Manifest V2
 
 The following code shows the fields that are supported in `manifest.json` for extensions, for a Manifest V2 package.
@@ -196,14 +199,14 @@ For reference information about each field, navigate to [Manifest file format (V
 ```
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].  
-> The original page is found [here](https://developer.chrome.com/docs/extensions/mv3/manifest/).  
+> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
+> The original page is found [here](https://developer.chrome.com/docs/extensions/mv3/manifest/).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]  
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].  
+[![Creative Commons License][CCby4Image]][CCA4IL]
+This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0  
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png  
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [GoogleSitePolicies]: https://developers.google.com/terms/site-policies
 
 

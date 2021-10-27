@@ -24,9 +24,9 @@ The Web We Want initiative is the place to let browser vendors and standards gro
 
 *   Stay in touch by following the initiative on [Twitter][TwitterWebWeWant] or [LinkedIn][LinkedInWebWeWant] to keep up-to-date on what's in development, or to participate in surveys that help us prioritize submitted Wants.
 
-We've successfully shipped a few Wants into the Chromium DevTools, such as the Source Order Viewer \([Want][WebWeWantWants64], [Docs][DevtoolsExperimentalFeaturesIndexSourceOrderViewer]\) and [3D View][Devtools3DViewIndex], similar to what was in the Firefox DevTools. There are also a handful of other Wants that have previous proposals in standards groups. Join us in driving the future of the web forward with the Web We Want!
+We've successfully shipped a few Wants into the Chromium DevTools, such as the Source Order Viewer ([Want][WebWeWantWants64], [Docs][DevtoolsExperimentalFeaturesIndexSourceOrderViewer]) and [3D View][Devtools3DViewIndex], similar to what was in the Firefox DevTools. There are also a handful of other Wants that have previous proposals in standards groups. Join us in driving the future of the web forward with the Web We Want!
 
-<!-- links -->  
+<!-- links -->
 
 [Devtools3DViewIndex]: ../devtools-guide-chromium/3d-view/index.md "3D View | Microsoft Docs"
 

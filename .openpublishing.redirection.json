@@ -972,12 +972,12 @@
         "redirect_document_id": false
       },
       {
-        "source_path": "microsoft-edge/devtools-guide-chromium/storage/applicationcache.md",   
+        "source_path": "microsoft-edge/devtools-guide-chromium/storage/applicationcache.md",
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/index",
         "redirect_document_id": false
       },
       {
-        "source_path": "microsoft-edge/devtools-guide-chromium/customize/dark-theme.md",   
+        "source_path": "microsoft-edge/devtools-guide-chromium/customize/dark-theme.md",
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/customize/theme",
         "redirect_document_id": false
       },
@@ -1001,6 +1001,26 @@
       {
         "source_path": "microsoft-edge/progressive-web-apps/index.md",
         "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/progressive-web-apps-chromium/serviceworker.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/service-workers",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/progressive-web-apps-chromium/webappmanifests.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/progressive-web-apps-chromium/get-started.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/index",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/progressive-web-apps-chromium/experimental-features/index.md",
+        "redirect_url": "/microsoft-edge/progressive-web-apps-chromium/how-to/origin-trials",
         "redirect_document_id": false
       },
       /* redirect to visual studio code */
