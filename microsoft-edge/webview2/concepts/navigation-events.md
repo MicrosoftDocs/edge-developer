@@ -35,7 +35,8 @@ The normal sequence of navigation events is `NavigationStarting`, `SourceChanged
       | 2 | `SourceChanged`  |  The source of WebView2 changes to a new URL.  The event may result from a navigation action that does not cause a network request such as a fragment navigation.  |
       | 3 | `ContentLoading`  |  WebView starts loading content for the new page.  |
       | 4 | `HistoryChanged`  |  The navigation causes the history of WebView2 to update.  |
-      | 5 | `NavigationCompleted`  |  WebView2 completes loading content on the new page.  |
+      | 5 | `DOMContentLoaded`  |  WebView finishes parsing the DOM content but hasn't finished loading all images, script, and other content on the page.  |
+      | 6 | `NavigationCompleted`  |  WebView2 completes loading content on the new page.  |
    :::column-end:::
 :::row-end:::
 
