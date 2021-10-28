@@ -45,7 +45,7 @@ The following events describe the state of WebView2 during each navigation actio
 
 The above figure shows navigation events that have the same `NavigationId` property on the respective event argument.
 
-Track navigation events to each new document by using the navigation ID (which is provided in the `NavigationId` event).  The `NavigationId` event of WebView changes every time a successful navigation to a new document completes.
+Track navigation events to each new document by using the navigation ID (which is provided in the `NavigationId` event).  The `NavigationId` event of WebView2 changes every time a successful navigation to a new document completes.
 
 Navigation events with different instances of `NavigationId` event may overlap.  For instance, when you start a navigation event, you must wait for the related `NavigationStarting` event.  If you then start another navigation, you'll see the following sequence:
 1. The `NavigationStarting` event for the first navigation.
