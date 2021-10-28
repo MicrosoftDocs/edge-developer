@@ -184,7 +184,7 @@ The WebView2 team already covered navigating to URL using the `ICoreWebView2::Na
 1.  `HistoryChanged`
 1.  `NavigationCompleted`
 
-For more information, navigate to [Navigation events][Webview2ConceptsNavigationEvents].
+For more information, see [Navigation events for WebView2][Webview2ConceptsNavigationEvents].
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="Navigation events" lightbox="../media/navigation-events.png":::
    Navigation events
@@ -313,7 +313,7 @@ For additional WebView2 functionality that isn't covered in this article, see th
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Microsoft Edge Developer"
 
 [Webview2ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ Reference | Microsoft Docs"
-[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"
+[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events for WebView2 | Microsoft Docs"
 
 [CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true "Windows Runtime C++ Template Library (WRL) | Microsoft Docs"
 [CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019&preserve-view=true "Walkthrough: Create a traditional Windows Desktop application (C++) | Microsoft Docs"
