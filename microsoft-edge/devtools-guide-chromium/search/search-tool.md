@@ -10,29 +10,30 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Search
 
-Use the **Search** tool in Microsoft Edge DevTools to find source files on a webpage.
+Use the **Search** tool to find specific source files for a webpage.
 
-At a minimum, a webpage is an HTML document used by the browser to display content. But webpages commonly require other resources on top of the HTML document, such as CSS, JavaScript, or image files, to provide richer content.
+A webpage is mainly an HTML file that's used by the browser to display content.  But webpages commonly require other resources in addition to the HTML file, such as CSS, JavaScript, or image files, to provide richer content.
 
-The [**Sources**](../sources/index.md) tool shows all the resources downloaded by a webpage in the **Navigator** pane, but when there are many resources, it can become useful search through them.
-
-The **Search** tool makes it possible to do text and regular expression searches across all resources.
+In the [**Sources**](../sources/index.md) tool, the **Page** tab of the **Navigator** pane shows all the resources that are downloaded by a webpage.  But when there are many resources, it can become useful to _search_ through them.  To do text and regular expression searches across all the resources of a webpage, use the **Search** tool.
 
 
 <!-- ====================================================================== -->
 ## Open the Search tool
 
-To open the **Search** tool:
+To quickly open the **Search** tool, press `Control`+`Shift`+`F` (Windows/Linux) or `Command`+`Option`+`F` (Mac).
 
+The **Search** tool appears in the **Drawer** and shows the search toolbar:
+
+:::image type="content" source="../media/search-tool/search-tool-first-open.png" alt-text="The Search tool, with the search toolbar.":::
+
+To open the **Search** tool from the **Command Menu**:
 1. [Open DevTools](../open/index.md) (`F12`).
-1. Open the [Command Menu](../command-menu/index.md), `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
-1. Type `search` and press `Enter`.
+1. Open the [Command Menu](../command-menu/index.md), by pressing `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
+1. Type `search` and then press `Enter`.
 
 :::image type="content" source="../media/search-tool/open-search-tool.png" alt-text="The Command Menu with the Show Search item selected.":::
 
-The **Search** tool appears in the **Drawer** and shows the search toolbar.
-
-:::image type="content" source="../media/search-tool/search-tool-first-open.png" alt-text="The Search tool, with the search toolbar.":::
+<!-- See also [Global keyboard shortcuts](../shortcuts/index.md#global-keyboard-shortcuts). -->
 
 
 <!-- ====================================================================== -->
@@ -44,21 +45,19 @@ To search for text in the webpage resources:
 1. Type the text you want to search.
 1. Press `Enter`.
 
-The tool shows the list of resources that contain the searched text and highlights the lines that contain the text for each resource.
-
-The number of matching files and lines is also indicated at the bottom of the tool.
+The **Search** tool shows the list of matching resources, and highlights the corresponding lines of text.  The number of matching files and lines is also indicated at the bottom of the tool.
 
 :::image type="content" source="../media/search-tool/search-tool-search-results.png" alt-text="Search results displayed in the search tool, with matching text highlighted in yellow.":::
+
+<!-- The search results are pretty-printed. -->
 
 
 <!-- ====================================================================== -->
 ## Match case and search for regular expressions
 
-By default, the **Search** tool is not case sensitive. This means that a search for a term matches occurrences of that term regardless of their case.
+By default, the **Search** tool is not case-sensitive.  A search for a term matches occurrences of that term, regardless of lowercase or uppercase characters.  To only find results that match a particular case (lowercase or uppercase characters), click the **Match Case** (`Aa`) button in the toolbar.
 
-Click the **Match Case** button (`Aa`) in the toolbar to only find results that match a particular case.
-
-You can also use [JavaScript regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) to find matching results. To use a regular expression, click the **Use Regular Expression** button (`.*`) in the toolbar and enter a valid regular expression in the search input field.
+You can also use [JavaScript regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) to find matching results. To use a regular expression, click the **Use Regular Expression** (`.*`) button in the toolbar and enter a valid regular expression in the search input field.
 
 :::image type="content" source="../media/search-tool/search-tool-regexp.png" alt-text="Searching for a regular expression.":::
 
@@ -66,7 +65,7 @@ You can also use [JavaScript regular expressions](https://developer.mozilla.org/
 <!-- ====================================================================== -->
 ## Navigate to the Sources tool
 
-Click on any of the result lines to navigate to the corresponding resource. The **Sources** tool opens in the main panel and loads the resource, scrolled at the right line.
+Click on any of the result lines to navigate to the corresponding resource.  The **Sources** tool opens in the main panel and loads the resource, scrolled to the matching line.
 
 :::image type="content" source="../media/search-tool/search-tool-open-in-sources.png" alt-text="Clicking on a search line opens the Sources tool and loads the corresponding resource." lightbox="../media/search-tool/search-tool-open-in-sources.png":::
 
@@ -74,9 +73,10 @@ Click on any of the result lines to navigate to the corresponding resource. The 
 <!-- ====================================================================== -->
 ## Update and clear search
 
-A webpage can continue to request resources after it has finished loading, so the results displayed in the **Search** panel may become stale after a while. To update the search results:
+A webpage can continue to request resources after it has finished loading, so the results displayed in the **Search** panel may become stale after a while.
 
-* Either search again by typing a term in the search input field.
-* Or click the **Refresh** button in the toolbar (![Refresh search button](../media/search-tool/search-tool-refresh.png)).
+To update the search results, do either of the following:
+*  Search again by typing a term in the search input field.
+*  Click the **Refresh** (![Refresh search button](../media/search-tool/search-tool-refresh.png)) button in the toolbar.
 
-You can also clear the search results by clicking the **Clear** button in the toolbar (![Clear search button](../media/search-tool/search-tool-clear.png)).
+You can also clear the search results by clicking the **Clear** (![Clear search button](../media/search-tool/search-tool-clear.png)) button in the toolbar.
