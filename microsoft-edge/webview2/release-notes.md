@@ -33,13 +33,13 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to
 
 
 <!-- ====================================================================== -->
-## 1.0.1053-prerelease
+## 1.0.1056-prerelease
 
 Release Date: October 27, 2021
 
-[NuGet package for WebView2 SDK 1.0.1053-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1053-prerelease)
+[NuGet package for WebView2 SDK 1.0.1056-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1056-prerelease)
 
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 97.0.1053.0 or higher.
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 97.0.1056.0 or higher.
 
 ### General
 
