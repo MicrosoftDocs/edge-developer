@@ -22,7 +22,7 @@ In DevTools, use any of the following ways to open the **Changes** tool.  The **
 
 In the **Sources** tool, right-click any file that shows that it was changed, and then select **Local modifications**:
 
-:::image type="content" source="../media/changes-tool/changes-tool-from-sources-reduced.msft.png" alt-text="The DevTools Sources tool showing a modified file and the open context menu offering the link to the Local Modifications option." lightbox="../media/changes-tool/changes-tool-from-sources.msft.png":::
+:::image type="content" source="../media/changes-tool/changes-tool-from-sources-reduced.msft.png" alt-text="To open the Changes tool, right-click a modified file in the Sources tool, then select the 'Local Modifications' command." lightbox="../media/changes-tool/changes-tool-from-sources.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -40,7 +40,7 @@ The **Changes** tool appears in the main toolbar or in the **Drawer**, depending
 
 Click **Customize and control DevTools** (`...`), point to **More tools**, and then select **Changes**:
 
-:::image type="content" source="../media/changes-tool/changes-tool-via-overflow-menu-reduced.msft.png" alt-text="DevTools with an open overflow menu showing the More Tools and Changes options." lightbox="../media/changes-tool/changes-tool-via-overflow-menu.msft.png":::
+:::image type="content" source="../media/changes-tool/changes-tool-via-overflow-menu-reduced.msft.png" alt-text="Click 'Customize and control DevTools' (...), point to 'More tools', and then select 'Changes'." lightbox="../media/changes-tool/changes-tool-via-overflow-menu.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -48,7 +48,7 @@ Click **Customize and control DevTools** (`...`), point to **More tools**, and t
 
 Open the [Command Menu](../command-menu/index.md) by pressing `Ctrl`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on Mac, and then type `changes`.  The **Show Changes** command is highlighted; press `Enter`.
 
-:::image type="content" source="../media/changes-tool/changes-tool-command-menu-reduced.msft.png" alt-text="The Command Menu open on top of DevTools showing the Show Changes option." lightbox="../media/changes-tool/changes-tool-command-menu.msft.png":::
+:::image type="content" source="../media/changes-tool/changes-tool-command-menu-reduced.msft.png" alt-text="In the Command Menu, start typing 'changes', and then select the 'Show Changes' command." lightbox="../media/changes-tool/changes-tool-command-menu.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -56,7 +56,7 @@ Open the [Command Menu](../command-menu/index.md) by pressing `Ctrl`+`Shift`+`P`
 
 Each modified file is listed in the side pane.  Selecting a file shows the modifications as a `diff` view.  You won't see the entire file, but only the lines that have changed, along with a few lines above and below the changed lines, for context.
 
-:::image type="content" source="../media/changes-tool/changes-tool-diff-view-reduced.msft.png" alt-text="A diff view of the file showing that there were two modifications in different parts of the file, one of them with a deletion and an insertion and one with a deleted line." lightbox="../media/changes-tool/changes-tool-diff-view.msft.png":::
+:::image type="content" source="../media/changes-tool/changes-tool-diff-view-reduced.msft.png" alt-text="A diff view of the file showing that there were two modifications in different parts of the file.  One change is a deletion and an insertion, and one change is a deleted line." lightbox="../media/changes-tool/changes-tool-diff-view.msft.png":::
 
 | Type of change | Indicator |
 |---|--|
@@ -80,7 +80,7 @@ You also get an overview <!-- in Sources tool? move this sentence into section "
 
 To undo all changes, click the `Revert all changes to the current file` button, shown as a circular arrow.
 
-:::image type="content" source="../media/changes-tool/changes-tool-undo-all-reduced.msft.png" alt-text="To undo all changes that you made to the current file, click the 'Revert all changes to the current file' button." lightbox="../media/changes-tool/changes-tool-undo-all.msft.png":::
+:::image type="content" source="../media/changes-tool/changes-tool-undo-all-reduced.msft.png" alt-text="To undo all changes that you made to the current file, click the button 'Revert all changes to the current file'." lightbox="../media/changes-tool/changes-tool-undo-all.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -88,4 +88,4 @@ To undo all changes, click the `Revert all changes to the current file` button, 
 
 When you have made a change to a minified file, the **Changes tool** enables you to scroll horizontally to display all of your minified code.  To scroll horizontally, click the horizontal scrollbar or press the arrow keys.
 
-:::image type="content" source="../media/changes-tool/changes-reduced.msft.png" alt-text="Scrolling horizontally with arrow keys to display minified code in the Changes tool." lightbox="../media/changes-tool/changes.msft.png":::
+:::image type="content" source="../media/changes-tool/changes-reduced.msft.png" alt-text="To display a long line of code in the Changes tool, press the arrow keys." lightbox="../media/changes-tool/changes.msft.png":::
