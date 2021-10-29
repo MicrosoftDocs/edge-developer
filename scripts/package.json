@@ -1,8 +1,14 @@
 {
   "name": "edge-developer",
   "version": "1.0.0",
+  "scripts": {
+    "lint": "eslint find-references-to-old-versions.js"
+  },
   "dependencies": {
     "glob": "^7.1.7",
     "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.1.0"
   }
 }
