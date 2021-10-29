@@ -10,13 +10,11 @@ keywords: microsoft edge, web development, f12 tools, devtools, changes
 ---
 # Changes tool
 
-The **Changes tool** tracks any changes you have made to CSS or JavaScript in DevTools.  Use the **Changes tool** to quickly display all your changes in order to re-apply those changes to the actual source files in your editor (in your Integrated Development Environment; IDE).  This helps you create the necessary changes in your actual source files after you've successfully used DevTools to investigate and fix a problem.
-
-The **Changes tool** is a **Drawer** tool; by default, it opens in the DevTools drawer:
+The **Changes tool** tracks any changes you have made to CSS or JavaScript in DevTools.  Use the **Changes** tool to quickly display all your changes in order to re-apply those changes to the actual source files in your editor (in your Integrated Development Environment; IDE).  The **Changes** tool shows you what changes to make to your actual source files after you've successfully used DevTools to investigate and fix a problem.
 
 :::image type="content" source="../media/changes-tool/changes-tool-open-reduced.msft.png" alt-text="Developer tools with the Changes tool open in the drawer showing three files that have been modified and the modifications of the selected file." lightbox="../media/changes-tool/changes-tool-open.msft.png":::
 
-In DevTools, use any of the following ways to open the **Changes** tool.  By default, the **Changes** tool appears in the **Drawer**.
+In DevTools, use any of the following ways to open the **Changes** tool.  The **Changes tool** is a **Drawer** tool; by default, it opens in the **Drawer**.
 
 
 <!-- ====================================================================== -->
