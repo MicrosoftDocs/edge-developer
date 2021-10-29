@@ -18,7 +18,7 @@ To suggest a change to the docs:
 
 1.  If you are viewing the [docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge) page, click the **Edit** button in the upper right of the page.  You are redirected to the corresponding Markdown source file in the [GitHub repository](https://github.com/MicrosoftDocs/edge-developer).  If you are already in the GitHub repo, just navigate to the source file that you are changing.
 
-1.  If you do not already have a GitHub account, click **Sign Up** in the upper-right and create a new account.
+1.  If you do not already have a GitHub account, click **Sign Up** in the upper-right corner and create a new account.
 
 1.  From the GitHub page you are changing, click the **pencil** icon.
 
@@ -75,7 +75,7 @@ When you are happy with your changes and ready to submit a PR:
 
 1.  Click the **New pull request** button.  (The `base fork` is listed as `MicrosoftDocs/edge-developer`, the `head fork` should show your fork of the repo, and the branch in which you made your changes.)  You can review your changes here as well.
 
-1.  Click the green **Create pull request** button.  You must give your Pull Request a title and description, then click the **Create pull request** button again.
+1.  Click the green **Create pull request** button.  Give your Pull Request a title and description, then click the **Create pull request** button again.
 
 1.  After pushing your contribution to the remote repo, you are sent an email from **Open Publishing Build Service** informing whether your contribution built successfully.  The email contains links to any error warnings such as broken links.  Click the links to see your content staged on the `review.docs.microsoft.com` site.
 
@@ -116,7 +116,7 @@ The series of branches is as follows:
 <!-- ====================================================================== -->
 ## Using issues to provide feedback on Microsoft Edge documentation
 
-To provide feedback rather than directly modifying actual documentation pages, [create an issue](https://github.com/MicrosoftDocs/edge-developer/issues/new).
+To provide feedback, rather than directly modifying actual documentation pages, [create an issue](https://github.com/MicrosoftDocs/edge-developer/issues/new).
 
 Be sure to include the topic title and the URL for the page.
 
