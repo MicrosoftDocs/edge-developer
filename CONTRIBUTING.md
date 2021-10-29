@@ -8,7 +8,7 @@ Thank you for your interest in the Microsoft Edge Developer documentation.  The 
 
 If you want to contribute more than a couple lines and you are not a Microsoft employee, you must [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.opensource.microsoft.com).
 
-If you are a Microsoft Employee, please follow the internal guidance.
+If you are a Microsoft Employee, follow the internal guidance.
 
 
 <!-- ====================================================================== -->
@@ -16,7 +16,7 @@ If you are a Microsoft Employee, please follow the internal guidance.
 
 To suggest a change to the docs:
 
-1.  If you are viewing the [docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge) page, click the **Edit** button in the upper right of the page.  You are redirected to the corresponding Markdown source file in the [GitHub repository](https://github.com/MicrosoftDocs/edge-developer).  If you are already in the GitHub repo, just navigate to the source file that you are changing.
+1.  If you are viewing the [docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge) page, click the **Edit** button in the upper right of the page.  You are redirected to the corresponding Markdown source file in the [GitHub repository](https://github.com/MicrosoftDocs/edge-developer).  If you are already in the GitHub repo, navigate to the source file that you are changing.
 
 1.  If you do not already have a GitHub account, click **Sign Up** in the upper-right corner and create a new account.
 
@@ -77,15 +77,15 @@ When you are happy with your changes and ready to submit a PR:
 
 1.  Click the green **Create pull request** button.  Give your Pull Request a title and description, then click the **Create pull request** button again.
 
-1.  After pushing your contribution to the remote repo, you are sent an email from **Open Publishing Build Service** informing whether your contribution built successfully.  The email contains links to any error warnings such as broken links.  Click the links to see your content staged on the `review.docs.microsoft.com` site.
+1.  After pushing your contribution to the remote repo, you receive an email from **Open Publishing Build Service** indicating whether your commit built successfully.  The email contains links to any errors or warnings, such as broken links.  Click the **View** links to see your content staged on the `review.docs.microsoft.com` site.
 
-1.  After your PR is submitted, a member of the Microsoft Edge Developer Docs team reviews it.
+1.  After your PR is submitted, the Microsoft Edge Developer Docs team reviews the PR, approves the PR, merges the PR into the `master` branch, and then merges the PR's commits into the `live` branch.
 
 
 <!-- ====================================================================== -->
 ## Working with Branches
 
-When making contributions, please submit your Pull Request (PR), requesting to merge from your working branch (such as a branch in your forked copy of the repo) into the `master` branch of the `edge-developer` repo.
+When making contributions, submit your Pull Request (PR), requesting to merge from your working branch (such as a branch in your forked copy of the repo) into the `master` branch of the `edge-developer` repo.
 
 The [Microsoft Edge Docs GitHub repository](https://github.com/MicrosoftDocs/edge-developer) uses the following two main parent branches:
 
@@ -98,7 +98,7 @@ The series of branches is as follows:
 
 1. Fork the `edge-developer` repo, using GitHub.com.
 
-1. Create a working branch and make your changes there, rather than making your changes in the `master` branch of a fork of the repo.  (It works OK, though, if you do end up using the `master` branch of a fork of the repo.)
+1. Create a working branch and make your changes there, rather than making your changes in the `master` branch of a fork of the repo.  It works OK, though, if you do end up using the `master` branch of a fork of the repo.
 
 1. Edit a `.md` file.  If you create a new `.md` file, add it to `toc.yml`.
 
