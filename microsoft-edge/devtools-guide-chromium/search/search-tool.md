@@ -32,7 +32,7 @@ To open the **Search** tool:
 
 <!-- todo: try lightbox in rendered page at full width & half width, given that it's same as inline -->
 
-The **Search** tool appears in the [**Drawer**](../about-panel-drawer-tools.md) and shows the search toolbar.
+The **Search** tool appears in the **Drawer** and shows the search toolbar.
 
 :::image type="content" source="../media/search-tool/search-tool-first-open.png" alt-text="The Search tool, with the search toolbar" lightbox="../media/search-tool/search-tool-first-open.png":::
 
