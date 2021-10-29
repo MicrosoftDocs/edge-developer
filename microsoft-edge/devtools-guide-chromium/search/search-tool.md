@@ -28,15 +28,11 @@ To open the **Search** tool:
 1. Open the [Command Menu](../command-menu/index.md), `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
 1. Type `search` and press `Enter`.
 
-:::image type="content" source="../media/search-tool/open-search-tool.png" alt-text="The Command Menu with the Show Search item selected" lightbox="../media/search-tool/open-search-tool.png":::
-
-<!-- todo: try lightbox in rendered page at full width & half width, given that it's same as inline -->
+:::image type="content" source="../media/search-tool/open-search-tool.png" alt-text="The Command Menu with the Show Search item selected.":::
 
 The **Search** tool appears in the **Drawer** and shows the search toolbar.
 
-:::image type="content" source="../media/search-tool/search-tool-first-open.png" alt-text="The Search tool, with the search toolbar" lightbox="../media/search-tool/search-tool-first-open.png":::
-
-<!-- todo: try lightbox in rendered page at full width & half width, given that it's same as inline -->
+:::image type="content" source="../media/search-tool/search-tool-first-open.png" alt-text="The Search tool, with the search toolbar.":::
 
 
 <!-- ====================================================================== -->
@@ -52,9 +48,7 @@ The tool shows the list of resources that contain the searched text and highligh
 
 The number of matching files and lines is also indicated at the bottom of the tool.
 
-:::image type="content" source="../media/search-tool/search-tool-search-results.png" alt-text="Search results displayed in the search tool, with matching text highlighted in yellow" lightbox="../media/search-tool/search-tool-search-results.png":::
-
-<!-- todo: try lightbox in rendered page at full width & half width, given that it's same as inline -->
+:::image type="content" source="../media/search-tool/search-tool-search-results.png" alt-text="Search results displayed in the search tool, with matching text highlighted in yellow.":::
 
 
 <!-- ====================================================================== -->
@@ -66,9 +60,7 @@ Click the **Match Case** button (`Aa`) in the toolbar to only find results that 
 
 You can also use [JavaScript regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) to find matching results. To use a regular expression, click the **Use Regular Expression** button (`.*`) in the toolbar and enter a valid regular expression in the search input field.
 
-:::image type="content" source="../media/search-tool/search-tool-regexp.png" alt-text="Searching for a regular expression" lightbox="../media/search-tool/search-tool-regexp.png":::
-
-<!-- todo: try lightbox in rendered page at full width & half width, given that it's same as inline -->
+:::image type="content" source="../media/search-tool/search-tool-regexp.png" alt-text="Searching for a regular expression.":::
 
 
 <!-- ====================================================================== -->
@@ -76,9 +68,7 @@ You can also use [JavaScript regular expressions](https://developer.mozilla.org/
 
 Click on any of the result lines to navigate to the corresponding resource. The **Sources** tool opens in the main panel and loads the resource, scrolled at the right line.
 
-:::image type="content" source="../media/search-tool/search-tool-open-in-sources.png" alt-text="Clicking on a search line opens the Sources tool and loads the corresponding resource" lightbox="../media/search-tool/search-tool-open-in-sources.png":::
-
-<!-- todo: try lightbox in rendered page at full width & half width, given that it's same as inline -->
+:::image type="content" source="../media/search-tool/search-tool-open-in-sources.png" alt-text="Clicking on a search line opens the Sources tool and loads the corresponding resource." lightbox="../media/search-tool/search-tool-open-in-sources.png":::
 
 
 <!-- ====================================================================== -->

@@ -27,15 +27,11 @@ To open the Performance monitor:
 
 1. Click **More Tools** (`+`), and then select **Performance monitor**.
 
-:::image type="content" source="../media/performance-monitor-tool/open-performance-monitor.png" alt-text="The More Tools menu, showing the Performance monitor menu command." lightbox="../media/performance-monitor-tool/open-performance-monitor.png":::
-
-<!-- todo: try lightbox in rendered page at full width & half width, given that it's same as inline -->
+:::image type="content" source="../media/performance-monitor-tool/open-performance-monitor.png" alt-text="The More Tools menu, showing the Performance monitor menu command.":::
 
 The Performance monitor shows graphs of various performance metrics that update in real time.
 
 :::image type="content" source="../media/performance-monitor-tool/performance-monitor-first-open.png" alt-text="What the Performance monitor tool looks like when it is first opened." lightbox="../media/performance-monitor-tool/performance-monitor-first-open.png":::
-
-<!-- todo: try lightbox in rendered page at full width & half width, given that it's same as inline -->
 
 
 <!-- ====================================================================== -->
@@ -57,5 +53,3 @@ The **Performance monitor** tool shows three performance metrics by default, and
 To enable or disable any of the available performance metrics, click the labels in the side bar.
 
 :::image type="content" source="../media/performance-monitor-tool/performance-monitor-metrics.png" alt-text="The Performance monitor sidebar, showing various metrics that can be toggled." lightbox="../media/performance-monitor-tool/performance-monitor-metrics.png":::
-
-<!-- todo: try lightbox in rendered page at full width & half width, given that it's same as inline -->
