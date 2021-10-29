@@ -20,15 +20,15 @@ In the [**Sources**](../sources/index.md) tool, the **Page** tab of the **Naviga
 <!-- ====================================================================== -->
 ## Open the Search tool
 
-To quickly open the **Search** tool, press `Control`+`Shift`+`F` (Windows/Linux) or `Command`+`Option`+`F` (Mac).
+To quickly open the **Search** tool, press `Control`+`Shift`+`F` (Windows/Linux) or `Command`+`Option`+`F` (macOS).
 
-The **Search** tool appears in the **Drawer** and shows the search toolbar:
+The **Search** tool appears in the **Drawer**, and shows the search toolbar:
 
-:::image type="content" source="../media/search-tool/search-tool-first-open.png" alt-text="The Search tool, with the search toolbar.":::
+:::image type="content" source="../media/search-tool/search-tool-first-open-reduced.png" alt-text="The Search tool, with the search toolbar." lightbox="../media/search-tool/search-tool-first-open.png":::
 
 To open the **Search** tool from the **Command Menu**:
 1. [Open DevTools](../open/index.md) (`F12`).
-1. Open the [Command Menu](../command-menu/index.md), by pressing `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
+1. Open the [Command Menu](../command-menu/index.md), by pressing `Control`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS).
 1. Type `search` and then press `Enter`.
 
 :::image type="content" source="../media/search-tool/open-search-tool.png" alt-text="The Command Menu with the Show Search item selected.":::
@@ -65,7 +65,7 @@ You can also use [JavaScript regular expressions](https://developer.mozilla.org/
 <!-- ====================================================================== -->
 ## Navigate to the Sources tool
 
-Click on any of the result lines to navigate to the corresponding resource.  The **Sources** tool opens in the main panel and loads the resource, scrolled to the matching line.
+After doing a search, click a result line to open the corresponding file.  The **Sources** tool opens in the main panel and loads the resource file, scrolled to the matching line.
 
 :::image type="content" source="../media/search-tool/search-tool-open-in-sources.png" alt-text="Clicking on a search line opens the Sources tool and loads the corresponding resource." lightbox="../media/search-tool/search-tool-open-in-sources.png":::
 
