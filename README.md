@@ -40,7 +40,7 @@ Find the data for the [Status](https://developer.microsoft.com/microsoft-edge/st
 
 This repo uses simple Markdown tagging that's standard for docs.microsoft.com per the _Docs Contributor Guide_.
 
-*  [Docs markdown reference](https://docs.microsoft.com/contribute/markdown-reference) - in _Docs Contributor Guide_.
+*  [Docs Markdown reference](https://docs.microsoft.com/contribute/markdown-reference) - in _Docs Contributor Guide_.
 *  [Writing on GitHub](https://docs.github.com/en/github/writing-on-github) - GitHub Flavored Markdown, in _GitHub Docs_.
 
 
