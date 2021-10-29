@@ -18,30 +18,39 @@ In the **Sources** tool, the **Page** tab of the [Navigator pane](../sources/ind
 
 
 <!-- ====================================================================== -->
-## Open the Search tool
+## Open the Search tool by using a keyboard shortcut
 
-To quickly open the **Search** tool, press `Control`+`Shift`+`F` (Windows/Linux) or `Command`+`Option`+`F` (macOS).
+To quickly open the **Search** tool:
+
+1.  [Open DevTools](../open/index.md) (`F12`).
+
+1.  Press `Control`+`Shift`+`F` (Windows/Linux) or `Command`+`Option`+`F` (macOS).
 
 The **Search** tool appears in the **Drawer**, and shows the search toolbar:
 
 :::image type="content" source="../media/search-tool/search-tool-first-open-reduced.png" alt-text="The Search tool, with the search toolbar." lightbox="../media/search-tool/search-tool-first-open.png":::
 
-<!-- the screenshot's mention of 'search' in Console in Welcome is unrelated - a bit confusing -->
+See also [Global keyboard shortcuts](../shortcuts/index.md#global-keyboard-shortcuts).
+
+
+<!-- ====================================================================== -->
+## Open the Search tool by using the Command Menu
 
 To open the **Search** tool from the **Command Menu**:
-1. [Open DevTools](../open/index.md) (`F12`).
-1. Open the [Command Menu](../command-menu/index.md), by pressing `Control`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS).
-1. Type `search` and then press `Enter`.
+
+1.  [Open DevTools](../open/index.md) (`F12`).
+
+1.  Open the [Command Menu](../command-menu/index.md), by pressing `Control`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS).
+
+1.  Type `search`, and then press `Enter`.
 
 :::image type="content" source="../media/search-tool/open-search-tool.png" alt-text="The Command Menu with the Show Search item selected.":::
-
-<!-- See also [Global keyboard shortcuts](../shortcuts/index.md#global-keyboard-shortcuts). -->
 
 
 <!-- ====================================================================== -->
 ## Search for text
 
-To search for text in the webpage resources:
+To search for text in the current webpage and its resource files:
 
 1. Focus the search input field.
 1. Type the text you want to search.
@@ -71,7 +80,7 @@ You can use regular expressions, including [JavaScript regular expressions](http
 
 
 <!-- ====================================================================== -->
-## Navigate to the Sources tool
+## Open a found file in the Sources tool
 
 After doing a search, click a result line to open the corresponding file.  The **Sources** tool opens in the main panel and loads the resource file, scrolled to the matching line.
 
@@ -79,7 +88,7 @@ After doing a search, click a result line to open the corresponding file.  The *
 
 
 <!-- ====================================================================== -->
-## Update and clear search
+## Update search results
 
 A webpage can continue to request resources after it has finished loading, so the results displayed in the **Search** panel may become stale after a while.
 
@@ -87,4 +96,8 @@ To update the search results, do either of the following:
 *  Search again by typing a term in the search input field.
 *  Click the **Refresh** (![Refresh search button](../media/search-tool/search-tool-refresh.png)) button in the toolbar.
 
-You can also clear the search results by clicking the **Clear** (![Clear search button](../media/search-tool/search-tool-clear.png)) button in the toolbar.
+
+<!-- ====================================================================== -->
+## Clear a search
+
+To clear the search results, click the **Clear** (![Clear search button](../media/search-tool/search-tool-clear.png)) button in the toolbar.
