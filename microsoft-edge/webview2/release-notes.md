@@ -20,8 +20,7 @@ The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence
 >
 > For more information, see [Matching the Runtime version with the SDK version][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].
 
-> [!NOTE]
-> WebView2 bug fixes are either Runtime-specific or SDK-specific.
+WebView2 bug fixes are either Runtime-specific or SDK-specific.
 
 
 <!-- ====================================================================== -->
