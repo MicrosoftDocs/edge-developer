@@ -33,13 +33,13 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to
 
 
 <!-- ====================================================================== -->
-<!-- ## 1.0.1053-prerelease
+## 1.0.1053-prerelease
 
 Release Date: October 27, 2021
 
 [NuGet package for WebView2 SDK 1.0.1053-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1053-prerelease)
 
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 96.0.1053.0 or higher.
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 97.0.1053.0 or higher.
 
 ### General
 
@@ -47,15 +47,15 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 #### Experimental Features
 
-*   [Download Positioning and Anchoring API]().
-*   [HTTP Authentication API]().
+*   [Download Positioning and Anchoring API](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimental11?view=webview2-1.0.1056-prerelease&preserve-view=true).
+*   [HTTP Authentication API](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimental10?view=webview2-1.0.1056-prerelease&preserve-view=true#add_basicauthenticationrequested).
 
 #### Bug Fixes
 
 *   The real process exit code is now provided as `ExitCode` in `ICoreWebView2ProcessFailedEventArgs2` for `COREWEBVIEW2_PROCESS_FAILED_KIND_BROWSER_PROCESS_EXITED` process failure.
 *   The `--js-flags` switch is now honored in the `AdditionalBrowserArguments` that are provided in `CoreWebView2EnvironmentOptions`.
 *   Fixed access to the `name` property for host objects in JavaScript. ([Issue #641](https://github.com/MicrosoftEdge/WebView2Feedback/issues/641))
-*   Fixed an `InvalidCastException` in the WPF control when it's implicitly initialized prior to the event loop starting. ([Issue 1577](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1577)) -->
+*   Fixed an `InvalidCastException` in the WPF control when it's implicitly initialized prior to the event loop starting. ([Issue 1577](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1577))
 
 
 <!-- ====================================================================== -->
