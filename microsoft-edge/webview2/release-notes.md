@@ -55,7 +55,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 *   The real process exit code is now provided as `ExitCode` in `ICoreWebView2ProcessFailedEventArgs2` for `COREWEBVIEW2_PROCESS_FAILED_KIND_BROWSER_PROCESS_EXITED` process failure.
 *   The `--js-flags` switch is now honored in the `AdditionalBrowserArguments` that are provided in `CoreWebView2EnvironmentOptions`.
 *   Fixed access to the `name` property for host objects in JavaScript. ([Issue #641](https://github.com/MicrosoftEdge/WebView2Feedback/issues/641))
-*   Fixed an `InvalidCastException` in the WPF control when it's implicitly initialized prior to the event loop starting. ([Issue 1577](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1577))
+*   Fixed an `InvalidCastException` in the WPF control when it's implicitly initialized prior to the event loop starting. ([Issue #1577](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1577))
 
 
 <!-- ====================================================================== -->
@@ -71,8 +71,8 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 #### Bug Fixes
 
-*   Updated `EnsureCoreWebView2Async` to not throw exceptions when the WPF source property is set. ([Issue 1781](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1781))
-*   Fixed a bug where WebView2 crashes after interacting with multiple windows that show a download UI. ([Issue 1723](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1723))
+*   Updated `EnsureCoreWebView2Async` to not throw exceptions when the WPF source property is set. ([Issue #1781](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1781))
+*   Fixed a bug where WebView2 crashes after interacting with multiple windows that show a download UI. ([Issue #1723](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1723))
 
 #### Promotions
 
