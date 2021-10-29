@@ -14,7 +14,7 @@ Use the **Search** tool to find specific source files for a webpage.
 
 A webpage is mainly an HTML file that's used by the browser to display content.  But webpages commonly require other resources in addition to the HTML file, such as CSS, JavaScript, or image files, to provide richer content.
 
-In the [**Sources**](../sources/index.md) tool, the **Page** tab of the **Navigator** pane shows all the resources that are downloaded by a webpage.  But when there are many resources, it can become useful to _search_ through them.  To do text and regular expression searches across all the resources of a webpage, use the **Search** tool.
+In the **Sources** tool, the **Page** tab of the [Navigator pane](../sources/index.md#using-the-navigator-pane-to-select-files) shows all the resources that are downloaded by a webpage.  But when there are many resources, it can become useful to _search_ through them.  To do text and regular expression searches across all the resources of a webpage, use the **Search** tool.
 
 
 <!-- ====================================================================== -->
@@ -25,6 +25,8 @@ To quickly open the **Search** tool, press `Control`+`Shift`+`F` (Windows/Linux)
 The **Search** tool appears in the **Drawer**, and shows the search toolbar:
 
 :::image type="content" source="../media/search-tool/search-tool-first-open-reduced.png" alt-text="The Search tool, with the search toolbar." lightbox="../media/search-tool/search-tool-first-open.png":::
+
+<!-- the screenshot's mention of 'search' in Console in Welcome is unrelated - a bit confusing -->
 
 To open the **Search** tool from the **Command Menu**:
 1. [Open DevTools](../open/index.md) (`F12`).
@@ -53,11 +55,17 @@ The **Search** tool shows the list of matching resources, and highlights the cor
 
 
 <!-- ====================================================================== -->
-## Match case and search for regular expressions
+## Match case (lowercase or uppercase characters)
 
-By default, the **Search** tool is not case-sensitive.  A search for a term matches occurrences of that term, regardless of lowercase or uppercase characters.  To only find results that match a particular case (lowercase or uppercase characters), click the **Match Case** (`Aa`) button in the toolbar.
+By default, the **Search** tool is not case-sensitive.  A search for a term matches occurrences of that term, regardless of lowercase or uppercase characters.
 
-You can also use [JavaScript regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) to find matching results. To use a regular expression, click the **Use Regular Expression** (`.*`) button in the toolbar and enter a valid regular expression in the search input field.
+To only find results that match a particular case (lowercase or uppercase characters), click the **Match Case** (`Aa`) button in the search toolbar.
+
+
+<!-- ====================================================================== -->
+## Search for regular expressions
+
+You can use regular expressions, including [JavaScript regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions), to find matching results.  To use a regular expression, click the **Use Regular Expression** (`.*`) button in the toolbar and enter a valid regular expression in the search input field.
 
 :::image type="content" source="../media/search-tool/search-tool-regexp.png" alt-text="Searching for a regular expression.":::
 
