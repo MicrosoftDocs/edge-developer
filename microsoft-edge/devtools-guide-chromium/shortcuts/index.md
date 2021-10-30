@@ -87,7 +87,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Hide the currently selected element | `H` | `H` |
 | Toggle **Edit as HTML** mode on the currently selected element | `Function`+`F2` | `F2` |
 
-### Styles panel keyboard shortcuts
+### Styles pane keyboard shortcuts
 
 | Action | Windows\/Linux | macOS |
 |:--- |:--- |:--- |
