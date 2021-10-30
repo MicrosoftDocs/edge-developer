@@ -21,7 +21,7 @@ Use [Microsoft Edge Developer Tools][DevtoolsGuideChromiumMain] to debug web con
 
 *   Select `F12`.
 *   Select `Ctrl`+`Shift`+`I`.
-*   Open the context menu \(right-click\) and choose `Inspect`.
+*   Open the context menu (right-click) and choose `Inspect`.
 
 For more information, navigate to [DevTools overview][DevtoolsGuideChromiumMain].
 
@@ -36,7 +36,7 @@ For more information, navigate to [DevTools overview][DevtoolsGuideChromiumMain]
 Visual Studio provides various debugging tools for web and native code in WebView2 apps.  In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available as usual.  Use the following process to debug web and native code in Win32 apps or Office Add-ins only.
 
 > [!IMPORTANT]
-> When you debug your app in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.  Select `Ctrl`+`Shift`+`I`, or use the context menu \(right-click\) to avoid the situation.
+> When you debug your app in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.  Select `Ctrl`+`Shift`+`I`, or use the context menu (right-click) to avoid the situation.
 
 Before you begin, ensure the following requirements are met.
 
@@ -66,7 +66,7 @@ Install and set up the script debugger tools in Visual Studio.
         :::image-end:::
 
 1.  Enable script debugging for WebView2 apps.
-    1.  In your WebView2 project, open the context menu \(right-click\), and choose **Properties**.
+    1.  In your WebView2 project, open the context menu (right-click), and choose **Properties**.
     1.  Under the **Configuration Properties**, choose **Debugging**.
     1.  Under the **Debugger Type**, choose **JavaScript (WebView2)**.
 

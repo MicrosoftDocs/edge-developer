@@ -61,7 +61,7 @@ After you have your manifest set up, you may use the **Manifest** pane of the **
    The **Manifest** Pane
 :::image-end:::
 
-*   To look at the manifest source, choose the link below **App Manifest** label \(`https://airhorner.com/manifest.json` in the previous figure\).
+*   To look at the manifest source, choose the link below **App Manifest** label (`https://airhorner.com/manifest.json` in the previous figure).
 <!-- *   Choose the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->
 *   The **Identity** and **Presentation** sections just display fields from the manifest source in a more user-friendly display.
 *   The **Icons** section displays every icon that you've specified.
@@ -87,7 +87,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!-- TODO: Rework content after sample app is created. -->
 
-<!--If you want to test out the genuine mobile experience, you may connect a real mobile device to DevTools via **remote debugging**, and then choose the **Add to Homescreen** button \(on DevTools\) to trigger the "add to homescreen" prompt on the connected mobile device.  -->
+<!--If you want to test out the genuine mobile experience, you may connect a real mobile device to DevTools via **remote debugging**, and then choose the **Add to Homescreen** button (on DevTools) to trigger the "add to homescreen" prompt on the connected mobile device.  -->
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
@@ -115,11 +115,11 @@ The **Service Workers** pane in the **Application** panel is the main place in D
 *   The **Update on reload** checkbox forces the service worker to update on every page load.
 *   The **Bypass for network** checkbox bypasses the service worker and forces the browser to go to the network for requested resources.
 *   The **Update** button performs a one-time update of the specified service worker.
-*   The **Push** button emulates a push notification without a payload \(also known as a **tickle**\).
+*   The **Push** button emulates a push notification without a payload (also known as a **tickle**).
 *   The **Sync** button emulates a background sync event.
 *   The **Unregister** button unregisters the specified service worker.  Check out [Clear storage](#clear-storage) for a way to unregister a service worker and wipe storage and caches with a single button choose.
 *   The **Source** line tells you when the currently running service worker was installed.  The link is the name of the source file of the service worker.  Choosing on the link sends you to the source of the service worker.
-*   The **Status** line tells you the status of the service worker.  The ID number next to the green status indicator \(`#36` in previous figure\) is for the currently active Service Worker.  Next to the status, a **start** button \(if the service worker is stopped\) or a **stop** button \(if the service worker is running\) is displayed.  Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button may simulate that.  Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.
+*   The **Status** line tells you the status of the service worker.  The ID number next to the green status indicator (`#36` in previous figure) is for the currently active Service Worker.  Next to the status, a **start** button (if the service worker is stopped) or a **stop** button (if the service worker is running) is displayed.  Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button may simulate that.  Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.
 *   The **Clients** line tells you the origin that the service worker is scoped to.  The **focus** button is mostly useful when you've enabled the **show all** checkbox.  When that checkbox is enabled, all registered service workers are listed.  If you choose on the **focus** button next to a service worker that is running in a different tab, Microsoft Edge focuses on that tab.
 
 If the service worker causes any errors, a new label called **Errors** shows
@@ -138,7 +138,7 @@ up.
 <!-- ====================================================================== -->
 ## Service worker caches
 
-The **Cache Storage** pane provides a read-only list of resources that have been cached using the \(service worker\) [Cache API][MDNWebCacheAPI].
+The **Cache Storage** pane provides a read-only list of resources that have been cached using the (service worker) [Cache API][MDNWebCacheAPI].
 
 :::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="The Cache Storage Pane" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
    The **Cache Storage** Pane
@@ -162,7 +162,7 @@ Some responses within the **Cache Storage** pane may be flagged as being "opaque
 <!--TODO:  Link Web "CDN" section when available. -->
 <!--TODO:  Link Web "opaque" section when available. -->
 
-In order to avoid leakage of cross-domain information, significant padding is added to the size of an opaque response used for calculating storage quota limits \(for example whether a `QuotaExceeded` exception is thrown\) and reported by the `navigator.storage` API.
+In order to avoid leakage of cross-domain information, significant padding is added to the size of an opaque response used for calculating storage quota limits (for example whether a `QuotaExceeded` exception is thrown) and reported by the `navigator.storage` API.
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
 
@@ -220,7 +220,7 @@ Related Guides:
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

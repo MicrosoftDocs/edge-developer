@@ -68,7 +68,7 @@ In the following figure, the long, green bar in the **Waterfall** indicates that
 **Causes**
 
 *   The connection between the client and server is slow.
-*   The server is slow to respond.  Host the server locally to determine if it is the connection or server that is slow.  If you still get a slow Time To First Byte \(TTFB\) when accessing a local server, then the server is slow.
+*   The server is slow to respond.  Host the server locally to determine if it is the connection or server that is slow.  If you still get a slow Time To First Byte (TTFB) when accessing a local server, then the server is slow.
 
 **Fixes**
 
@@ -104,7 +104,7 @@ In the following figure, the long, blue bar in the **Waterfall** next to the png
 Do you have a network issue that should be added to this guide?
 
 *   Send a tweet to [@EdgeDevTools][MicrosoftEdgeTweet].
-*   Choose **Send Feedback** \(![Send Feedback](../media/smile-icon.msft.png)\) in the DevTools or select `Alt`+`Shift`+`I` \(Windows, Linux\) or `Option`+`Shift`+`I` \(macOS\) to provide feedback or feature requests.
+*   Choose **Send Feedback** (![Send Feedback](../media/smile-icon.msft.png)) in the DevTools or select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS) to provide feedback or feature requests.
 *   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->
 
 
@@ -120,7 +120,7 @@ Do you have a network issue that should be added to this guide?
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/issues) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\) and [Jonathan Garbee][JonathanGarbee] \(Google Developer Expert for Web Technology\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/issues) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse) and [Jonathan Garbee][JonathanGarbee] (Google Developer Expert for Web Technology).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

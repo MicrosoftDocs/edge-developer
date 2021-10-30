@@ -24,13 +24,13 @@ Playwright launches [headless browsers](https://en.wikipedia.org/wiki/Headless_b
 
 First, install [Playwright Test](https://playwright.dev/docs/intro) to test your website or app:
 
-```shell
+```console
 npm i -D @playwright/test
 ```
 
 To install browsers, run the following command, which downloads [Chromium](https://www.chromium.org/Home), [Firefox](https://www.mozilla.org/firefox), and [WebKit](https://webkit.org):
 
-```shell
+```console
 npx playwright install 
 ```
 
@@ -42,7 +42,7 @@ The approach used by Playwright will be familiar to users of other browser-testi
 
 [Playwright Test](https://playwright.dev/docs/intro), which is Playwright's test-runner, launches a browser and context for you. An isolated page is then passed into every test, as shown in the following, basic test:
 
-```ts
+```typescript
 // tests/foo.spec.ts
 import { test, expect } from '@playwright/test';
 
@@ -55,7 +55,7 @@ test('basic test', async ({ page }) => {
 
 Now run your tests, as follows:
 
-```shell
+```console
 npx playwright test
 ```
 
@@ -67,7 +67,7 @@ For more information about running tests, see [Playwright > Getting started](htt
 
 To run your tests in Microsoft Edge, you need to create a config file for Playwright Test, such as `playwright.config.ts`.  Inside the config file, create one project, using the Beta channel of Microsoft Edge. (Currently, there isn't a Stable channel of Microsoft Edge for Linux.)
 
-```ts
+```typescript
 // playwright.config.ts
 import { PlaywrightTestConfig } from '@playwright/test';
 
@@ -88,13 +88,13 @@ export default config
 
 If Microsoft Edge Beta isn't already installed on your system, install it through Playwright, as follows:
 
-```shell
+```console
 npx playwright install msedge-beta
 ```
 
 When using the above `playwright.config.ts` file, Playwright Test uses Microsoft Edge to run your tests, as follows:
 
-```shell
+```console
 npx playwright test --headed
 ```
 
