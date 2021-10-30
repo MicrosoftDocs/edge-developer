@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Debug Android WebViews in your native Android apps using Microsoft Edge Developer Tools.
 
-On Android 4.4 \(KitKat\) or later, use DevTools to debug WebView content in native Android apps.
+On Android 4.4 (KitKat) or later, use DevTools to debug WebView content in native Android apps.
 
 ### Summary
 
@@ -93,7 +93,7 @@ Your Android WebViews aren't displayed on the `edge://inspect` page?
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) and is authored by [Meggin Kearney][MegginKearney] \(Tech Writer\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) and is authored by [Meggin Kearney][MegginKearney] (Technical Writer).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

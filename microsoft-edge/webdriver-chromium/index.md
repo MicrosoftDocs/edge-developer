@@ -171,7 +171,7 @@ driver = Edge(options = options)
 
 <a id="drive-microsoft-edge-chromium-code"></a>
 
-The `EdgeDriver` class only supports Microsoft Edge, and doesn't support Microsoft Edge \(EdgeHTML\).  For basic usage, you can create an `EdgeDriver` without providing `EdgeOptions`.
+The `EdgeDriver` class only supports Microsoft Edge, and doesn't support Microsoft Edge (EdgeHTML).  For basic usage, you can create an `EdgeDriver` without providing `EdgeOptions`.
 
 ```java
 EdgeDriver driver = new EdgeDriver();
@@ -297,7 +297,7 @@ EdgeDriver driver = new EdgeDriver(service, options);
 
 <a id="customize-microsoft-edge-driver-services-code"></a>
 
-When you use JavaScript, create and configure a `Service` with the `ServiceBuilder` class.  Optionally, you can pass the `Service` object to the `Driver` object, which starts \(and stops\) the service for you.
+When you use JavaScript, create and configure a `Service` with the `ServiceBuilder` class.  Optionally, you can pass the `Service` object to the `Driver` object, which starts (and stops) the service for you.
 To configure the `Service`, run another method in the `ServiceBuilder` class before you use the `build()` method.  Then pass the `service` as a parameter in the `Driver.createSession()` method.
 
 ```javascript
@@ -357,7 +357,7 @@ options.addArguments("disable-gpu");
 * * *
 
 > [!NOTE]
-> If the `UseChromium` property is set to `true`, you are not able to use properties and methods for Microsoft Edge \(EdgeHTML\).
+> If the `UseChromium` property is set to `true`, you are not able to use properties and methods for Microsoft Edge (EdgeHTML).
 
 
 <!-- ====================================================================== -->

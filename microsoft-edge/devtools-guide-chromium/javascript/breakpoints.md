@@ -80,7 +80,7 @@ To set a conditional line-of-code breakpoint:
 1.  Choose the **Sources** tool.
 1.  Open the file containing the line of code on which you want to break.
 1.  Go the line of code.
-1.  To the left of the line of code is the line number column.  Hover on the line number and open the contextual menu \(right-click\).
+1.  To the left of the line of code is the line number column.  Hover on the line number and open the contextual menu (right-click).
 1.  Choose **Add conditional breakpoint**.  A dialog displays underneath the line of code.
 1.  Enter your condition in the dialog.
 1.  Select `Enter` to activate the breakpoint.  An icon next to the line number column.
@@ -98,8 +98,8 @@ Use the **Breakpoints** pane to disable or remove line-of-code breakpoints from 
 :::image-end:::
 
 *   Check the checkbox next to an entry to disable that breakpoint.
-*   Hover on an entry and open the contextual menu \(right-click\) to remove that breakpoint.
-*   Hover anywhere in the **Breakpoints** pane and open the contextual menu \(right-click\) to deactivate all breakpoints, disable all breakpoints, or remove all breakpoints.  Disabling all breakpoints is equivalent to unchecking each one.  Deactivating all breakpoints instructs DevTools to ignore all line-of-code breakpoints, but to also maintain the enabled state so that each are in the same state as before when you reactivate each one.
+*   Hover on an entry and open the contextual menu (right-click) to remove that breakpoint.
+*   Hover anywhere in the **Breakpoints** pane and open the contextual menu (right-click) to deactivate all breakpoints, disable all breakpoints, or remove all breakpoints.  Disabling all breakpoints is equivalent to unchecking each one.  Deactivating all breakpoints instructs DevTools to ignore all line-of-code breakpoints, but to also maintain the enabled state so that each are in the same state as before when you reactivate each one.
 
     :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="Deactivated breakpoints in the Breakpoints pane" lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
        Deactivated breakpoints in the **Breakpoints** pane
@@ -115,7 +115,7 @@ To set a DOM change breakpoint:
 
 1.  Choose the **Elements** tool.
 1.  Go the element on which you want to set the breakpoint.
-1.  Hover on the element and open the contextual menu \(right-click\).
+1.  Hover on the element and open the contextual menu (right-click).
 1.  Hover on **Break on**, then choose **Subtree modifications**, **Attribute modifications**, or **Node removal**.
 
     :::image type="complex" source="../media/javascript-elements-break-on-subtree-modifications.msft.png" alt-text="The context menu for creating a DOM change breakpoint" lightbox="../media/javascript-elements-break-on-subtree-modifications.msft.png":::
@@ -172,7 +172,7 @@ Use event listener breakpoints when you want to pause on the event listener code
 Use exception breakpoints when you want to pause on the line of code that is throwing a caught or uncaught exception.
 
 1.  Choose the **Sources** tool.
-1.  Choose **Pause on exceptions** \(![Pause on exceptions](../media/pause-on-exceptions-icon.msft.png)\).  The icon turns blue when enabled.
+1.  Choose **Pause on exceptions** (![Pause on exceptions](../media/pause-on-exceptions-icon.msft.png)).  The icon turns blue when enabled.
 
     :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="The Pause on exceptions button" lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
        The **Pause on exceptions** button
@@ -242,7 +242,7 @@ Ensuring the target function is in scope is tricky if you are running the `debug
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

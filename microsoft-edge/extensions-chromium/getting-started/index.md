@@ -40,7 +40,7 @@ The following list outlines helpful information to understand before building yo
 
 The following list outlines helpful information as it relates to the architecture of an extension.
 
-1.  The Extension web server bundle.  An extension is a bundle of web resources.  The web resources are similar to other resources that you \(the web developer\) publish to web servers.  You bundle the web resources into a zip file when building an extension.
+1.  The Extension web server bundle.  An extension is a bundle of web resources.  The web resources are similar to other resources that you (the web developer) publish to web servers.  You bundle the web resources into a zip file when building an extension.
 
     The zip file includes HTML, CSS, JavaScript, and image files.  One more file is required in the root of the zip file.  The other file is the manifest file that is named `manifest.json`.  The manifest file is the blueprint of your extension and includes the version of your extension, the title, permissions needed for the extension to run, and so on.
 

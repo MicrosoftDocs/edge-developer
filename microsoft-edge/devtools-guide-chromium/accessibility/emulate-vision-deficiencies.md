@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Emulate vision deficiencies
 
-To better meet the needs of your users with [color vision deficiency](https://www.colourblindawareness.org) \(color blindness\) or blurred vision, [Microsoft Edge DevTools](../index.md) allow you to simulate blurred vision and specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories.
+To better meet the needs of your users with [color vision deficiency](https://www.colourblindawareness.org) (color blindness) or blurred vision, [Microsoft Edge DevTools](../index.md) allows you to simulate blurred vision and specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories:
 
 | Color vision deficiency | Details |
 |:--- |:--- |
@@ -69,7 +69,7 @@ The **Rendering** menu appears in the drawer.
 
 As an alternative approach, you can use **Command Menu** to access the different simulations.
 
-1.  Select `Ctrl`+`Shift`+`P` \(Windows/Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.
+1.  Select `Ctrl`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="The Command Menu" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        The **Command Menu**

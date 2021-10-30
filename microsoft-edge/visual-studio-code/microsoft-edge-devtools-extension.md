@@ -10,6 +10,12 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual 
 ---
 # Microsoft Edge DevTools extension for Visual Studio Code
 
+<!-- restrict lexicon to:
+Microsoft Edge DevTools extension for Visual Studio Code
+Microsoft Edge DevTools extension
+(except when quoting a UI string)
+-->
+
 The Microsoft Edge DevTools extension for Visual Studio Code lets you use the browser's **Elements** tool and **Network** tool from within Visual Studio Code.  Without leaving Visual Studio Code, use Microsoft Edge DevTools to connect to an instance of Microsoft Edge with the following functionality:
 * View the runtime HTML structure.
 * Change the layout.
@@ -31,7 +37,6 @@ In Visual Studio Code, this extension is referred to by several variations:
 *  **Edge DevTools** - the tab name.
 
 This article uses the name "the Microsoft Edge DevTools extension", except for UI text.
-<!-- follow this global convention for consistency; this is a quote of the UI tab name "Edge DevTools", but adding "Microsoft" -->
 
 
 <!-- ====================================================================== -->
@@ -89,7 +94,7 @@ To open a browser instance from Visual Studio Code:
 
 1. On the **Activity Bar**, select **Microsoft Edge Tools**.
 
-1. On the **Microsoft Edge Tools: Targets** panel, select **Launch Instance**.  Microsoft Edge opens, displaying a default page with guidance for more information.  Also, the **Edge DevTools** panel is displayed in Visual Studio Code, containing the **Welcome**, **Elements**, and **Network** tools.
+1. On the **Microsoft Edge Tools: Targets** panel, select **Launch Instance**.  Microsoft Edge opens, displaying a default page with guidance for more information.  Also, the **Edge DevTools** tab and panel is displayed in Visual Studio Code, containing the **Welcome**, **Elements**, and **Network** tools.
 
     :::image type="complex" source="./media/edge-devtools-for-vscode-targets-launch.png" alt-text="Microsoft Edge and DevTools panel open in Visual Studio Code" lightbox="./media/edge-devtools-for-vscode-targets-launch.png":::
        Microsoft Edge and DevTools panel open in Visual Studio Code
@@ -130,7 +135,7 @@ To debug your project, you might want to change the default page that opens in M
 <!-- ====================================================================== -->
 ## Changing the extension settings
 
-In version 1.1.6 or later, you can customize DevTools in the Visual Studio Code extension.
+You can customize DevTools in the Visual Studio Code extension.
 
 To customize the settings:
 
@@ -154,7 +159,9 @@ Some settings have a note that reads **(reload required after changing)**.  For 
 <!-- ====================================================================== -->
 ## Viewing the changelog for changes made to the extension
 
-You can view the changes made to the extension. To view the changelog, perform the following steps.
+You can view the changes that have been made to the extension.
+
+To view the changelog:
 
 1.  In Visual Studio Code, on the **Activity Bar**, select **Microsoft Edge Tools**.
 
@@ -222,7 +229,7 @@ The Styles tool in Microsoft Edge DevTools is excellent for debugging and tweaki
 
 CSS Mirror Editing is an experimental feature of the Microsoft Edge DevTools extension that works around that problem.  When you turn on Mirror Editing, any change that's made in the Styles tool of DevTools also changes the file that's in your workspace.
 
-In the following example, we have `index.html` currently open in Visual Studio Code, and the Edge DevTools extension is open.  When we select the flexbox icon in the `.searchbar` CSS selector and change the `flex-direction` to `column`, we not only see the change in the browser and in DevTools, but VS Code also automatically navigates to the correct style sheet file and the appropriate line number, and inserts the `flex-direction: column` CSS code.
+In the following example, we have `index.html` currently open in Visual Studio Code, and the Microsoft Edge DevTools extension is open.  When we select the flexbox icon in the `.searchbar` CSS selector and change the `flex-direction` to `column`, we not only see the change in the browser and in DevTools, but Visual Studio Code also automatically navigates to the correct style sheet file and the appropriate line number, and inserts the `flex-direction: column` CSS code. 
 
 :::image type="complex" source="./media/css-mirror-editing-start.msft.png" alt-text="Selecting the flexbox icon in the Styles tool to create a CSS change" lightbox="./media/css-mirror-editing-start.msft.png":::
    Selecting the flexbox icon in the Styles tool to create a CSS change
@@ -232,7 +239,7 @@ In the following example, we have `index.html` currently open in Visual Studio C
    Changing the CSS setting created a new line of code in the correct CSS source file
 :::image-end:::
 
-You can edit any selector or create new ones in the Styles tool and all changes will get mirrored in the right CSS source file. The extension only changes the file, it doesn't automatically save the changes back to your harddrive. This is a security measure to make sure you don't accidentally overwrite any of your code.
+You can edit any selector or create new ones in the Styles tool and all changes will get mirrored in the right CSS source file. The extension only changes the file, it doesn't automatically save the changes back to your hard drive. This is a security measure to make sure you don't accidentally overwrite any of your code.
 
 You can enable and disable CSS Mirror Editing using the button in the targets pane of the extension or by using the Command Menu and looking for `mirror`.
 
@@ -252,7 +259,7 @@ We are continuing to improve this feature and have set up a tracking issue on Gi
 
 JavaScript debugging is now built in to Visual Studio Code.  Starting with Version 1.5.7 of Visual Studio Code, you can debug in Chrome, Microsoft Edge, or Node.js without installing any other extensions.  If you debug using Microsoft Edge, you can start Microsoft Edge DevTools from the JavaScript debugger.
 
-1. To start a session, use either of the following methods:
+1.  To start debugging, do either of the following:
     * Select **F5**, or on the menu bar select the **Debug** icon and then select **Run and debug**.
     * Open the Visual Studio Code command palette and then select **Debug: Open Link**.
 
@@ -260,13 +267,14 @@ JavaScript debugging is now built in to Visual Studio Code.  Starting with Versi
        Start Microsoft Edge DevTools from the JavaScript debugger
     :::image-end:::
 
-1. Select **Edge**.  On the debug toolbar, notice the **Inspect** button.
+1.  Select **Edge**.  On the debug toolbar, notice the **Inspect** button.
 
     :::image type="complex" source="./media/edge-devtools-for-vscode-inspect-button.png" alt-text="The Inspect button on the debug toolbar" lightbox="./media/edge-devtools-for-vscode-inspect-button.png":::
        The **Inspect** button on the debug toolbar
     :::image-end:::
 
-1. Select **Inspect** to open Microsoft Edge DevTools inside Visual Studio Code.
+1.  Select **Inspect** to open Microsoft Edge DevTools inside Visual Studio Code.
+
     The first time you select **Inspect**, the editor prompts you to install the [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceElementsMicrosoftEdgeChromium] extension.
 
     After the Microsoft Edge DevTools extension is installed, when you select **Inspect**, Microsoft Edge DevTools opens inside of Visual Studio Code.
@@ -275,7 +283,7 @@ JavaScript debugging is now built in to Visual Studio Code.  Starting with Versi
        The **Inspect** button opens Microsoft Edge DevTools inside Visual Studio Code
     :::image-end:::
 
-    Now you can inspect the DOM, change CSS, and see network requests of your project running in the browser without leaving Visual Studio Code.
+    Now you can inspect the DOM, change CSS, and see network requests of your project running in the browser, without leaving Visual Studio Code.
 
     You can also use the Debug Console in the editor to interact with the document in the browser.  You have full access to the window object and can use the [Console Utilities API][ConsoleUtilitiesAPI].
 

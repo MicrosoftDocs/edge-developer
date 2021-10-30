@@ -60,7 +60,7 @@ You are now able to use **Edit and Replay** on requests in the [Network Log][Dev
    Edit and Replay a request in the [NetworkLog][DevtoolsNetworkIndexLogActivity] with the **Network Console**
 :::image-end:::
 
-A new panel, the **Network Console** opens in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer] and automatically populates with information for the HTTP request.  To display the response returned from the server, edit the request \(if needed\) and select **Send**.
+A new panel, the **Network Console** opens in the [DevTools Drawer][DevtoolsCustomizeIndexDrawer] and automatically populates with information for the HTTP request.  To display the response returned from the server, edit the request (if needed) and select **Send**.
 
 You may also use the **Network Console** to create and send HTTP requests directly from the DevTools.
 
@@ -69,12 +69,12 @@ You may also use the **Network Console** to create and send HTTP requests direct
 :::image-end:::
 
 > [!TIP]
-> To display **Network Console** in the main \(top\) panel instead of the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], navigate to [moving tools between panels](#move-tools-between-panels).
+> To display **Network Console** in the main (top) panel instead of the [DevTools Drawer][DevtoolsCustomizeIndexDrawer], navigate to [moving tools between panels](#move-tools-between-panels).
 
 > [!NOTE]
 > To enable the experiment, navigate to [Turning on experimental features][DevtoolsExperimentalFeaturesTurnOn] and choose the checkbox next to **Enable Network Console**.
 >
-> Open the [Network Log][DevtoolsNetworkIndexLogActivity], open the contextual menu \(right-click\), and choose **Edit and Replay**.
+> Open the [Network Log][DevtoolsNetworkIndexLogActivity], open the contextual menu (right-click), and choose **Edit and Replay**.
 
 Chromium issue [#1093687][CR1093687]
 
@@ -119,7 +119,7 @@ Chromium issue [#1070378][CR1070378]
    Experimental feature
 :::image-end:::
 
-Normally, tools such as **Elements** and **Network** may only be opened in the main \(top\) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer \(bottom\) panel of DevTools.  You are now able to customize your DevTools layout by moving tools between the top and bottom panels.
+Normally, tools such as **Elements** and **Network** may only be opened in the main (top) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer (bottom) panel of DevTools.  You are now able to customize your DevTools layout by moving tools between the top and bottom panels.
 
 :::image type="complex" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Move tools between panels" lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
    Move tools between panels
@@ -158,7 +158,7 @@ The **Styles** pane now has better support for editing styles that were created 
 
 You are now able to edit styles added in JavaScript using [Constructable Stylesheets][WicgConstructStylesheet].  Constructable Stylesheets are a new way to create and distribute reusable styles when using [Shadow DOM][MdnShadowDom].
 
-For example, the `h1` styles added with `CSSStyleSheet` \(CSSOM APIs\) were not editable previously.  The styles are editable now in the **Styles** panel.
+For example, the `h1` styles added with `CSSStyleSheet` (CSSOM APIs) were not editable previously.  The styles are editable now in the **Styles** panel.
 
 :::image type="complex" source="../../media/2020/06/css-in-js.msft.png" alt-text="Changing the background property of the h1 styles added with CSSStyleSheet from pink to lightblue" lightbox="../../media/2020/06/css-in-js.msft.png":::
    Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.
@@ -172,7 +172,7 @@ Chromium issue [#946975][CR946975]
 
 The **Lighthouse** panel is now running Lighthouse 6.  For a full list of all changes, navigate to [v6.0.0 release notes][GithubGoogleChromeLighthouse600].
 
-Lighthouse 6.0 introduces three new metrics to the report:  Largest Contentful Paint \(LCP\), Cumulative Layout Shift \(CLS\), and Total Blocking Time \(TBT\).
+Lighthouse 6.0 introduces three new metrics to the report:  Largest Contentful Paint (LCP), Cumulative Layout Shift (CLS), and Total Blocking Time (TBT).
 
 The performance score formula has also been reweighted to better reflect the loading experience of the user.
 
@@ -180,7 +180,7 @@ Chromium issue [#772558][CR772558]
 
 #### First Meaningful Paint deprecation
 
-First Meaningful Paint \(FMP\) is deprecated in Lighthouse 6.0.  FMP has also been removed from the **Performance** panel.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->
+First Meaningful Paint (FMP) is deprecated in Lighthouse 6.0.  FMP has also been removed from the **Performance** panel.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->
 
 <!--todo: add Largest Contentful Paint when section available  -->
 <!--todo: add First Meaningful Paint link and note when available  -->
@@ -227,7 +227,7 @@ Chromium issues [#1073903][CR1073903], [#1083214][CR1083214], [#1083797][CR10837
 The **Manifest** pane now shows warnings for the following conditions.
 
 * The app shortcut icons are smaller than 96x96 pixels
-* The app shortcut icons and manifest icons are not square \(since the icons are ignored\)
+* The app shortcut icons and manifest icons are not square (since the icons are ignored)
 
 :::image type="complex" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="App shortcut warnings" lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
    App shortcut warnings
@@ -410,7 +410,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-85) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-85) and is authored by [Jecelyn Yeen][JecelynYeen] (Developer advocate, Chrome DevTools).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

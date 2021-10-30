@@ -28,7 +28,7 @@ Use the following functions to begin embedding JavaScript in your WebView app.
 | API  | Description  |
 |:--- |:--- |
 | [ExecuteScriptAsync][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | Run JavaScript in a WebView control. For more information, navigate to the Get Started tutorial. |
-| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | Runs when the Document Object Model \(DOM\) is created. |
+| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | Runs when the Document Object Model (DOM) is created. |
 
 
 <!-- ====================================================================== -->
@@ -112,7 +112,7 @@ Now add code to remove the contextual menu functionality from the WebView2 contr
     await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
     ```
 
-1.  Run the code again.  Confirm that you're not able to open a context menu \(right-click\).
+1.  Run the code again.  Confirm that you're not able to open a context menu (right-click).
 
 
 <!-- ====================================================================== -->

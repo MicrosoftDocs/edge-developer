@@ -49,7 +49,7 @@ The table displays `loading`, but nothing changes on the webpage because the dat
 *   A network error that starts with `GET` HTTP method followed by a URI.
 *   An `Uncaught (in promise) TypeError: data.forEach is not a function` error.
 
-Select the `network-error.html:40` link in the **Console**.  The **Sources** tool opens.  The problematic line of code is highlighted and followed by an `error` \(`x`\) button.  To display the `Failed to load resource: the server responded with a status of 404 ()` error message, select the **error** \(`x`\) button.
+Select the `network-error.html:40` link in the **Console**.  The **Sources** tool opens.  The problematic line of code is highlighted and followed by an `error` (`x`) button.  To display the `Failed to load resource: the server responded with a status of 404 ()` error message, select the **error** (`x`) button.
 
 :::row:::
    :::column span="":::
@@ -86,7 +86,7 @@ In the example, the error informs you that the requested URL isn't found.  Next,
     :::column-end:::
 :::row-end:::
 
-What was the problem?  Two slash characters \(`//`\) occur in the requested URI after the word `repos`.  Open the **Sources** tool and inspect line 26.  A trailing slash character \(`/`\) occurs at the end of the base URI.
+What was the problem?  Two slash characters (`//`) occur in the requested URI after the word `repos`.  Open the **Sources** tool and inspect line 26.  A trailing slash character (`/`) occurs at the end of the base URI.
 
 :::image type="complex" source="../media/console-debug-network-error-code-error.msft.png" alt-text="The Sources tool displays the line of code with the error" lightbox="../media/console-debug-network-error-code-error.msft.png":::
    The **Sources** tool displays the line of code with the error
